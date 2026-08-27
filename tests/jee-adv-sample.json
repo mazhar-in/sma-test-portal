@@ -1,0 +1,50 @@
+{
+  "testId": "jee-adv-sample",
+  "title": "JEE Advanced Physics & Maths Drill",
+  "exam": "JEE Advanced",
+  "durationMinutes": 60,
+  "totalMarks": 12,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "ja-phy-01",
+          "type": "multiple_choice",
+          "marking": { "full": 4, "partial": 1, "incorrect": -2 },
+          "question": "Which of the following thermodynamic processes have $\\Delta Q = 0$ or $\\Delta W = 0$?",
+          "options": [
+            "Adiabatic process has $\\Delta Q = 0$",
+            "Isochoric process has $\\Delta W = 0$",
+            "Isothermal process has $\\Delta Q = 0$",
+            "Isobaric process has $\\Delta W = 0$"
+          ],
+          "correctOptions": [0, 1],
+          "solution": "Adiabatic means no heat exchange ($\\Delta Q = 0$). Isochoric means constant volume ($dV=0 \\implies \\Delta W = 0$)."
+        }
+      ]
+    },
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "ja-math-01",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "If $\\int_{0}^{\\pi/2} \\frac{\\sin^n(x)}{\\sin^n(x) + \\cos^n(x)} dx = \\frac{\\pi}{k}$, find the integer value of $k$.",
+          "correctValue": 4,
+          "solution": "By King's Property, $2I = \\int_{0}^{\\pi/2} 1 \\, dx = \\frac{\\pi}{2} \\implies I = \\frac{\\pi}{4}$. Thus, $k = 4$."
+        },
+        {
+          "id": "ja-math-02",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The number of real solutions of the equation $e^x + x = 0$ is:",
+          "options": ["$0$", "$1$", "$2$", "Infinitely many"],
+          "correctOption": 1,
+          "solution": "$f(x) = e^x + x$ has $f'(x) = e^x + 1 > 0$, so $f$ is strictly increasing. Since it spans $(-\\infty, \\infty)$, it intersects the x-axis exactly once."
+        }
+      ]
+    }
+  ]
+}

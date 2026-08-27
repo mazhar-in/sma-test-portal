@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMA Test Portal | Results</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'media', theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } } }</script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+  <header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-10">
+    <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-sm">SMA</div>
+        <span class="font-bold text-lg tracking-tight">Result Analysis</span>
+      </div>
+      <a href="../../index.html" class="text-sm font-semibold px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white">Back to Home</a>
+    </div>
+  </header>
+
+  <main id="result-main" class="max-w-5xl mx-auto px-4 py-8 flex-1 w-full space-y-8">
+    <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 md:p-8 shadow-sm">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-slate-100 dark:border-slate-800 pb-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Scorecard</span>
+          <h2 id="res-test-title" class="text-2xl md:text-3xl font-bold mt-1 text-slate-900 dark:text-white">Test Results</h2>
+          <p id="res-submitted-at" class="text-xs text-slate-500 dark:text-slate-400 mt-1"></p>
+        </div>
+        <div class="flex items-baseline gap-2 bg-indigo-50 dark:bg-indigo-950/50 border border-indigo-100 dark:border-indigo-900/50 px-6 py-4 rounded-xl">
+          <span class="text-3xl md:text-4xl font-black text-indigo-600 dark:text-indigo-400" id="res-score">0</span>
+          <span class="text-slate-400 font-semibold" id="res-total-marks">/ 0</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
+        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 text-center"><span class="text-xs text-slate-500">Accuracy</span><div class="text-xl font-bold mt-1" id="res-accuracy">0%</div></div>
+        <div class="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 text-center"><span class="text-xs text-emerald-600">Correct</span><div class="text-xl font-bold mt-1 text-emerald-600" id="res-correct-count">0</div></div>
+        <div class="p-4 rounded-xl bg-rose-50 dark:bg-rose-950/30 text-center"><span class="text-xs text-rose-600">Incorrect</span><div class="text-xl font-bold mt-1 text-rose-600" id="res-incorrect-count">0</div></div>
+        <div class="p-4 rounded-xl bg-amber-50 dark:bg-amber-950/30 text-center"><span class="text-xs text-amber-600">Unattempted</span><div class="text-xl font-bold mt-1 text-amber-600" id="res-unattempted-count">0</div></div>
+      </div>
+    </div>
+
+    <section class="space-y-6">
+      <h3 class="text-xl font-bold text-slate-900 dark:text-white">Question Breakdown & Solutions</h3>
+      <div id="questions-review-container" class="space-y-6"></div>
+    </section>
+  </main>
+
+  <script src="../../assets/result.js"></script>
+  <script>window.addEventListener('DOMContentLoaded', initResultView);</script>
+</body>
+</html>

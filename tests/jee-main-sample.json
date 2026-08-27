@@ -1,0 +1,45 @@
+{
+  "testId": "jee-main-sample",
+  "title": "JEE Main Full Practice Test",
+  "exam": "JEE Main",
+  "durationMinutes": 180,
+  "totalMarks": 12,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "jm-phy-01",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves in a straight line with constant acceleration $a = 2\\text{ m/s}^2$. If its initial velocity is $u = 3\\text{ m/s}$, find the displacement $s$ after $t = 4\\text{ s}$.",
+          "options": ["$20\\text{ m}$", "$28\\text{ m}$", "$16\\text{ m}$", "$32\\text{ m}$"],
+          "correctOption": 1,
+          "solution": "Using $s = ut + \\frac{1}{2}at^2 = (3)(4) + \\frac{1}{2}(2)(4)^2 = 12 + 16 = 28\\text{ m}$."
+        },
+        {
+          "id": "jm-phy-02",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "The de Broglie wavelength of an electron accelerated through a potential difference of $100\\text{ V}$ is $\\lambda = \\frac{x}{\\sqrt{V}}\\text{ nm}$, where $x = 1.227$. What is the value of $\\lambda$ in $\\text{nm}$ (rounded to 3 decimals)?",
+          "correctValue": 0.123,
+          "solution": "$\\lambda = \\frac{1.227}{\\sqrt{100}} = 0.1227 \\approx 0.123\\text{ nm}$."
+        }
+      ]
+    },
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "jm-math-01",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Evaluate $\\lim_{x \\to 0} \\frac{\\sin(5x)}{x}$.",
+          "options": ["$0$", "$1$", "$5$", "Does not exist"],
+          "correctOption": 2,
+          "solution": "$\\lim_{x \\to 0} \\frac{\\sin(5x)}{5x} \\times 5 = 1 \\times 5 = 5$."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "testId": "neet-sample",
+  "title": "NEET PCB Concept Drill",
+  "exam": "NEET",
+  "durationMinutes": 200,
+  "totalMarks": 12,
+  "sections": [
+    {
+      "subject": "Biology",
+      "questions": [
+        {
+          "id": "neet-bio-01",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which cell organelle is commonly known as the 'Powerhouse of the Cell'?",
+          "options": ["Ribosome", "Mitochondria", "Golgi Apparatus", "Lysosome"],
+          "correctOption": 1,
+          "solution": "Mitochondria are the sites of cellular respiration and ATP generation."
+        }
+      ]
+    },
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "neet-chem-01",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "What is the oxidation state of Chromium in $\\text{K}_2\\text{Cr}_2\\text{O}_7$?",
+          "options": ["$+3$", "$+6$", "$+7$", "$+4$"],
+          "correctOption": 1,
+          "solution": "$2(+1) + 2(x) + 7(-2) = 0 \\implies 2 + 2x - 14 = 0 \\implies 2x = 12 \\implies x = +6$."
+        }
+      ]
+    },
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "neet-phy-01",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimensional formula for universal gravitational constant $G$ is:",
+          "options": ["$[M^{-1} L^3 T^{-2}]$", "$[M^1 L^2 T^{-2}]$", "$[M^{-1} L^2 T^{-1}]$", "$[M^0 L^3 T^{-2}]$"],
+          "correctOption": 0,
+          "solution": "$F = \\frac{G m_1 m_2}{r^2} \\implies G = \\frac{F r^2}{m^2} = \\frac{[M L T^{-2}][L^2]}{[M^2]} = [M^{-1} L^3 T^{-2}]$."
+        }
+      ]
+    }
+  ]
+}

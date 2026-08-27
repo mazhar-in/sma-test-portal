@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  
+  <!-- Primary SEO -->
+  <title>SMA Test Portal | Free Online Mock Tests for JEE Main, JEE Advanced & NEET</title>
+  <meta name="description" content="Practice scheduled and archived NTA-pattern mock tests for JEE Main, JEE Advanced, and NEET. Complete with LaTeX formula rendering, instant scoring, and step-by-step solutions." />
+  <meta name="keywords" content="JEE Main Mock Test, JEE Advanced Test Series, NEET Practice Paper, NTA Pattern Test, SMA Test Portal, Physics Mock Test" />
+  <meta name="author" content="SMA Test Portal" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SMA Test Portal | JEE & NEET Mock Test Platform" />
+  <meta property="og:description" content="Attempt timed mock tests with KaTeX math rendering, automatic score evaluation, and full solution keys." />
+  <meta property="og:site_name" content="SMA Test Portal" />
+
+  <!-- Google Schema JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "SMA Test Portal",
+    "description": "Online assessment portal for competitive exam preparation including JEE Main, JEE Advanced, and NEET.",
+    "educationalCredentialAwarded": "Competitive Exam Mock Assessment"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'media',
+      theme: {
+        extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } }
+      }
+    }
+  </script>
+
+  <style>
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .badge-jee-main { background-color: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
+    .badge-jee-adv  { background-color: #fef3c7; color: #b45309; border: 1px solid #fde68a; }
+    .badge-neet     { background-color: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
+    @media (prefers-color-scheme: dark) {
+      .badge-jee-main { background-color: rgba(3, 105, 161, 0.2); color: #7dd3fc; border-color: rgba(56, 189, 248, 0.3); }
+      .badge-jee-adv  { background-color: rgba(180, 83, 9, 0.2); color: #fcd34d; border-color: rgba(251, 191, 36, 0.3); }
+      .badge-neet     { background-color: rgba(21, 128, 61, 0.2); color: #86efac; border-color: rgba(74, 222, 128, 0.3); }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col antialiased">
+
+<!-- Header with Clickable Branding -->
+  <header class="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 sticky top-0 z-30">
+    <div class="max-w-6xl mx-auto px-4 h-14 md:h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-2.5 group focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-lg p-1 -ml-1 transition-transform active:scale-95" aria-label="SMA Test Portal Home">
+        <div class="w-8 h-8 rounded-lg bg-indigo-600 group-hover:bg-indigo-500 text-white flex items-center justify-center font-extrabold text-sm shadow-sm transition-colors">
+          SMA
+        </div>
+        <span class="font-bold text-lg md:text-xl tracking-tight group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+          SMA Test Portal
+        </span>
+      </a>
+      <span class="text-[11px] md:text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-full border border-slate-200 dark:border-slate-700">
+        NTA Mock Series
+      </span>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-4 py-6 md:py-8 flex-1 w-full space-y-8 md:space-y-10">
+
+    <!-- Section 1: Latest Test Hero -->
+    <section aria-labelledby="latest-drop-heading">
+      <div class="flex items-center space-x-2 mb-3">
+        <span class="relative flex h-2.5 w-2.5">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+        </span>
+        <h2 id="latest-drop-heading" class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+          Featured / Latest Drop
+        </h2>
+      </div>
+      <div id="latest-test-container">
+        <div class="p-6 md:p-8 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 animate-pulse h-44"></div>
+      </div>
+    </section>
+
+    <!-- Section 2: Archive & Mobile Scrollable Filters -->
+    <section class="space-y-4 md:space-y-6" aria-labelledby="archive-heading">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-slate-200 dark:border-slate-800 pb-3">
+        <div>
+          <h3 id="archive-heading" class="text-xl md:text-2xl font-bold tracking-tight">Mock Test Archive</h3>
+          <p class="text-xs md:text-sm text-slate-500 dark:text-slate-400">Attempt practice tests or check detailed solutions.</p>
+        </div>
+
+        <!-- Filter Buttons: Horizontal scroll on mobile -->
+        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 -mx-4 px-4 sm:mx-0 sm:px-0" id="filter-buttons">
+          <button onclick="filterTests('all')" class="filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-slate-900 dark:bg-indigo-600 text-white shadow-sm" data-filter="all">All Tests</button>
+          <button onclick="filterTests('jee-main')" class="filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800" data-filter="jee-main">JEE Main</button>
+          <button onclick="filterTests('jee-adv')" class="filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800" data-filter="jee-adv">JEE Advanced</button>
+          <button onclick="filterTests('neet')" class="filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800" data-filter="neet">NEET</button>
+        </div>
+      </div>
+
+      <!-- Test Cards Grid -->
+      <div id="archive-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        <!-- Injected via JavaScript -->
+      </div>
+    </section>
+
+  </main>
+
+<!-- Footer with Clickable Branding & Author Attribution -->
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-6 text-center text-xs md:text-sm text-slate-500 dark:text-slate-400">
+    <div class="max-w-6xl mx-auto px-4 space-y-1">
+      <p>
+        <a href="index.html" class="font-semibold text-slate-800 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+          SMA Test Portal
+        </a> 
+        • Assessment Series for JEE & NEET
+      </p>
+      <p class="text-[11px] text-slate-400 dark:text-slate-500">
+        Designed by <a href="https://instagram.com/mazharin" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-500 transition-colors underline decoration-dotted">Syed Mazhar Ali</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    let allTests = [];
+
+    function getBadgeClass(examType) {
+      if (examType === 'jee-main') return 'badge-jee-main';
+      if (examType === 'jee-adv') return 'badge-jee-adv';
+      if (examType === 'neet') return 'badge-neet';
+      return 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300';
+    }
+
+    function renderLatestTest(test) {
+      const container = document.getElementById('latest-test-container');
+      if (!test) return;
+      container.innerHTML = `
+        <div class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white rounded-2xl p-5 md:p-8 shadow-xl border border-indigo-900/50">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-5">
+            <div class="space-y-2.5">
+              <span class="inline-block text-[11px] md:text-xs font-bold px-2.5 py-0.5 rounded bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+                ${test.badge}
+              </span>
+              <h3 class="text-xl md:text-3xl font-bold tracking-tight">${test.title}</h3>
+              <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs md:text-sm text-slate-300">
+                <span>⏱ ${test.duration}</span>
+                <span>•</span>
+                <span>📝 ${test.questionsCount} Qs</span>
+                <span>•</span>
+                <span>📅 ${test.date}</span>
+              </div>
+            </div>
+            <div>
+              <a href="${test.testUrl}" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-bold text-sm bg-indigo-600 hover:bg-indigo-500 active:scale-95 text-white shadow-lg transition-transform">
+                Start Test Now →
+              </a>
+            </div>
+          </div>
+        </div>`;
+    }
+
+    function renderArchive(tests) {
+      const grid = document.getElementById('archive-grid');
+      grid.innerHTML = '';
+      if (tests.length === 0) {
+        grid.innerHTML = `<p class="col-span-full text-center py-8 text-slate-400 text-sm">No tests found for this category.</p>`;
+        return;
+      }
+      tests.forEach(test => {
+        const card = document.createElement('article');
+        card.className = "bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-4 md:p-5 shadow-sm flex flex-col justify-between space-y-4";
+        card.innerHTML = `
+          <div class="space-y-2">
+            <div class="flex justify-between items-start">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded ${getBadgeClass(test.exam)}">${test.badge}</span>
+              <span class="text-xs text-slate-400">${test.date}</span>
+            </div>
+            <h4 class="font-bold text-base md:text-lg leading-snug text-slate-900 dark:text-slate-100">${test.title}</h4>
+            <div class="text-xs text-slate-500 dark:text-slate-400 flex gap-2">
+              <span>⏱ ${test.duration}</span> • <span>📝 ${test.questionsCount} Questions</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+            <a href="${test.testUrl}" class="text-xs md:text-sm font-bold text-indigo-600 dark:text-indigo-400 py-1 hover:underline">
+              Take Test →
+            </a>
+            <a href="${test.resultUrl}" class="text-xs font-semibold text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 py-1">
+              Solutions
+            </a>
+          </div>`;
+        grid.appendChild(card);
+      });
+    }
+
+    function filterTests(category) {
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        const active = btn.getAttribute('data-filter') === category;
+        btn.className = active
+          ? "filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-slate-900 dark:bg-indigo-600 text-white shadow-sm"
+          : "filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800";
+      });
+      renderArchive(category === 'all' ? allTests : allTests.filter(t => t.exam === category));
+    }
+
+    async function loadTests() {
+      try {
+        const res = await fetch('assets/tests-manifest.json');
+        allTests = await res.json();
+        renderLatestTest(allTests.find(t => t.isLatest) || allTests[0]);
+        renderArchive(allTests);
+      } catch (err) {
+        console.error("Failed to load test manifest:", err);
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', loadTests);
+  </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMA Test Engine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'media', theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } } }</script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+</head>
+<body class="bg-slate-100 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col select-none">
+  <header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 py-3 flex items-center justify-between sticky top-0 z-20">
+    <div class="flex items-center space-x-3">
+      <a href="../../index.html" class="text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">← Exit</a>
+      <span class="text-slate-300 dark:text-slate-700">|</span>
+      <h1 id="test-title" class="font-bold text-base md:text-lg truncate max-w-xs md:max-w-md">Loading Test...</h1>
+    </div>
+    <div class="flex items-center space-x-4">
+      <div class="bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 font-mono font-bold text-sm text-indigo-600 dark:text-indigo-400">
+        ⏱ <span id="timer-display">--:--</span>
+      </div>
+      <button onclick="confirmSubmit()" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs md:text-sm font-semibold px-4 py-2 rounded-lg">Submit Test</button>
+    </div>
+  </header>
+
+  <div class="flex-1 flex flex-col lg:flex-row overflow-hidden">
+    <main class="flex-1 flex flex-col justify-between p-4 md:p-6 overflow-y-auto">
+      <div class="space-y-6">
+        <div class="flex items-center justify-between text-xs font-semibold text-slate-500 dark:text-slate-400">
+          <span id="question-meta">Question --</span>
+          <span id="marking-scheme">Marks: +4, -1</span>
+        </div>
+        <div id="question-text" class="text-base md:text-lg text-slate-800 dark:text-slate-100 leading-relaxed"></div>
+        <div id="options-container" class="space-y-3 pt-2"></div>
+      </div>
+      <div class="mt-8 pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-wrap gap-3 items-center justify-between">
+        <div class="flex flex-wrap gap-2">
+          <button onclick="saveAndNext()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg text-sm font-medium">Save & Next</button>
+          <button onclick="markForReviewAndNext()" class="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-white rounded-lg text-sm font-medium">Mark for Review</button>
+          <button onclick="clearResponse()" class="px-3 py-2 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">Clear</button>
+        </div>
+        <div class="flex gap-2">
+          <button onclick="prevQuestion()" class="px-3 py-2 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg text-sm">Previous</button>
+          <button onclick="nextQuestion()" class="px-3 py-2 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg text-sm">Next</button>
+        </div>
+      </div>
+    </main>
+    <aside class="w-full lg:w-80 bg-white dark:bg-slate-900 border-t lg:border-t-0 lg:border-l border-slate-200 dark:border-slate-800 p-4 flex flex-col justify-between">
+      <div>
+        <h3 class="font-bold text-sm mb-3">Question Palette</h3>
+        <div id="palette-grid" class="grid grid-cols-5 gap-2 max-h-64 lg:max-h-96 overflow-y-auto p-1"></div>
+      </div>
+      <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 grid grid-cols-2 gap-2 text-xs text-slate-600 dark:text-slate-400">
+        <div class="flex items-center gap-1.5"><span class="w-3.5 h-3.5 rounded bg-emerald-500 inline-block"></span> Answered</div>
+        <div class="flex items-center gap-1.5"><span class="w-3.5 h-3.5 rounded bg-amber-500 inline-block"></span> Marked</div>
+        <div class="flex items-center gap-1.5"><span class="w-3.5 h-3.5 rounded bg-rose-500 inline-block"></span> Not Answered</div>
+        <div class="flex items-center gap-1.5"><span class="w-3.5 h-3.5 rounded bg-slate-200 dark:bg-slate-700 inline-block"></span> Not Visited</div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="../../assets/engine.js"></script>
+  <script>window.addEventListener('DOMContentLoaded', initExamEngine);</script>
+</body>
+</html>

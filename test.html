@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMA Test Engine</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'media',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+</head>
+<body class="bg-slate-100 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col select-none">
+
+  <!-- Header -->
+  <header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 py-3 flex items-center justify-between sticky top-0 z-20">
+    <div class="flex items-center space-x-3">
+      <a href="index.html" class="text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">← Exit</a>
+      <span class="text-slate-300 dark:text-slate-700">|</span>
+      <h1 id="test-title" class="font-bold text-base md:text-lg truncate max-w-xs md:max-w-md">Loading Test...</h1>
+    </div>
+    <div class="flex items-center space-x-4">
+      <div class="bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 font-mono font-bold text-sm text-indigo-600 dark:text-indigo-400">
+        ⏱ <span id="timer-display">--:--</span>
+      </div>
+      <button onclick="confirmSubmit()" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs md:text-sm font-semibold px-4 py-2 rounded-lg shadow-sm">
+        Submit Test
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Engine View -->
+  <div class="flex-1 flex flex-col lg:flex-row overflow-hidden">
+    
+    <!-- Question Area -->
+    <main class="flex-1 flex flex-col justify-between p-4 md:p-6 overflow-y-auto">
+      <div class="space-y-6">
+        <div class="flex items-center justify-between text-xs font-semibold text-slate-500 dark:text-slate-400">
+          <span id="question-meta">Question --</span>
+          <span id="marking-scheme">Marks: +4, -1</span>
+        </div>
+
+        <div id="question-text" class="text-base md:text-lg text-slate-800 dark:text-slate-100 leading-relaxed"></div>
+        <div id="options-container" class="space-y-3 pt-2"></div>
+      </div>
+
+      <!-- Footer Actions -->
+      <div class="mt-8 pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-wrap gap-3 items-center justify-between">
+        <div class="flex flex-wrap gap-2">
+          <button onclick="saveAndNext()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg text-sm font-medium">Save & Next</button>
+          <button onclick="markForReviewAndNext()" class="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-white rounded-lg text-sm font-medium">Mark for Review</button>
+          <button onclick="clearResponse()" class="px-3 py-2 bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">Clear</button>
+        </div>
+        <div class="flex gap-2">
+          <button onclick="prevQuestion()" class="px-3 py-2 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg text-sm">Previous</button>
+          <button onclick="nextQuestion()" class="px-3 py-2 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg text-sm">Next</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Palette Sidebar -->
+    <aside class="w-full lg:w-80 bg-white dark:bg-slate-900 border-t lg:border-t-0 lg:border-l border-slate-200 dark:border-slate-800 p-4 flex flex-col justify-between">
+      <div>
+        <h3 class="font-bold text-sm mb-3">Question Palette</h3>
+        <div id="palette-grid" class="grid grid-cols-5 gap-2 max-h-64 lg:max-h-96 overflow-y-auto p-1"></div>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 grid grid-cols-2 gap-2 text-xs text-slate-600 dark:text-slate-400">
+        <div class="flex items-center gap-1.5"><span class="w-3.5 h-3.5 rounded bg-emerald-500 inline-block"></span> Answered</div>
+        <div class="flex items-center gap-1.5"><span class="w-3.5 h-3.5 rounded bg-amber-500 inline-block"></span> Marked</div>
+        <div class="flex items-center gap-1.5"><span class="w-3.5 h-3.5 rounded bg-rose-500 inline-block"></span> Not Answered</div>
+        <div class="flex items-center gap-1.5"><span class="w-3.5 h-3.5 rounded bg-slate-200 dark:bg-slate-700 inline-block"></span> Not Visited</div>
+      </div>
+    </aside>
+
+  </div>
+
+  <script>
+    let testData = null;
+    let questions = [];
+    let currentIndex = 0;
+    let userResponses = {}; // { qId: { value: any, status: string } }
+    let timerInterval = null;
+    let timeRemaining = 0;
+
+    // Fisher-Yates Shuffle
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    // Shuffles options and updates correct index mappings
+    function processAndShuffleOptions(q) {
+      if (!q.options || q.type === 'numerical') return q;
+
+      const mappedOptions = q.options.map((text, originalIndex) => ({
+        text,
+        originalIndex
+      }));
+
+      shuffle(mappedOptions);
+
+      const newOptions = mappedOptions.map(o => o.text);
+
+      if (q.type === 'single_choice') {
+        const newCorrectOption = mappedOptions.findIndex(o => o.originalIndex === q.correctOption);
+        return { ...q, options: newOptions, correctOption: newCorrectOption, originalOptions: q.options };
+      }
+
+      if (q.type === 'multiple_choice') {
+        const newCorrectOptions = q.correctOptions
+          .map(orig => mappedOptions.findIndex(o => o.originalIndex === orig))
+          .sort();
+        return { ...q, options: newOptions, correctOptions: newCorrectOptions, originalOptions: q.options };
+      }
+
+      return q;
+    }
+
+    async function init() {
+      const params = new URLSearchParams(window.location.search);
+      const filePath = params.get('file');
+
+      if (!filePath) {
+        document.body.innerHTML = `<div class="p-8 text-center text-red-500">Error: No test file specified.</div>`;
+        return;
+      }
+
+      try {
+        const res = await fetch(filePath);
+        if (!res.ok) throw new Error("Could not find test file.");
+        testData = await res.json();
+
+        // 1. Flatten all questions across subjects
+        let rawQuestions = [];
+        testData.sections.forEach(sec => {
+          sec.questions.forEach(q => {
+            rawQuestions.push({ ...q, subject: sec.subject });
+          });
+        });
+
+        // 2. Shuffle Questions Array
+        rawQuestions = shuffle(rawQuestions);
+
+        // 3. Shuffle Options within each question
+        questions = rawQuestions.map(q => processAndShuffleOptions(q));
+
+        // 4. Initialize Response Registry
+        questions.forEach(q => {
+          userResponses[q.id] = { value: null, status: 'not_visited' };
+        });
+
+        document.getElementById('test-title').innerText = testData.title;
+        timeRemaining = (testData.durationMinutes || 60) * 60;
+
+        startTimer();
+        renderPalette();
+        loadQuestion(0);
+      } catch (err) {
+        document.body.innerHTML = `<div class="p-8 text-center text-red-500">Failed to load test: ${err.message}</div>`;
+      }
+    }
+
+    function renderMath() {
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '$', right: '$', display: false }
+          ],
+          throwOnError: false
+        });
+      }
+    }
+
+    function loadQuestion(index) {
+      if (index < 0 || index >= questions.length) return;
+      currentIndex = index;
+      const q = questions[index];
+
+      if (userResponses[q.id].status === 'not_visited') {
+        userResponses[q.id].status = 'not_answered';
+      }
+
+      document.getElementById('question-meta').innerText = `Subject: ${q.subject} | Question ${index + 1} of ${questions.length}`;
+      
+      const marks = q.marking?.correct || q.marking?.full || 4;
+      const neg = q.marking?.incorrect !== undefined ? q.marking.incorrect : 0;
+      document.getElementById('marking-scheme').innerText = `Marks: +${marks}, ${neg}`;
+
+      document.getElementById('question-text').innerHTML = q.question;
+      const container = document.getElementById('options-container');
+      container.innerHTML = '';
+
+      const resp = userResponses[q.id].value;
+
+      if (q.type === 'single_choice') {
+        q.options.forEach((opt, idx) => {
+          const isChecked = resp === idx ? 'checked' : '';
+          container.innerHTML += `
+            <label class="flex items-center gap-3 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors">
+              <input type="radio" name="opt" value="${idx}" ${isChecked} onchange="recordChoice(${idx})" class="w-4 h-4 text-indigo-600">
+              <span class="text-sm font-medium">(${String.fromCharCode(65 + idx)}) ${opt}</span>
+            </label>`;
+        });
+      } else if (q.type === 'multiple_choice') {
+        const checkedArr = Array.isArray(resp) ? resp : [];
+        q.options.forEach((opt, idx) => {
+          const isChecked = checkedArr.includes(idx) ? 'checked' : '';
+          container.innerHTML += `
+            <label class="flex items-center gap-3 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors">
+              <input type="checkbox" value="${idx}" ${isChecked} onchange="recordMultiChoice(${idx})" class="w-4 h-4 text-indigo-600 rounded">
+              <span class="text-sm font-medium">(${String.fromCharCode(65 + idx)}) ${opt}</span>
+            </label>`;
+        });
+      } else if (q.type === 'numerical') {
+        const val = resp !== null ? resp : '';
+        container.innerHTML = `
+          <div class="max-w-xs pt-2">
+            <input type="number" step="any" placeholder="Enter numerical answer" value="${val}" oninput="recordNumerical(this.value)"
+              class="w-full px-4 py-2.5 border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 text-base">
+          </div>`;
+      }
+
+      renderPalette();
+      setTimeout(renderMath, 10);
+    }
+
+    function recordChoice(val) {
+      userResponses[questions[currentIndex].id].value = val;
+    }
+
+    function recordMultiChoice(idx) {
+      const qId = questions[currentIndex].id;
+      let curr = userResponses[qId].value || [];
+      if (curr.includes(idx)) {
+        curr = curr.filter(i => i !== idx);
+      } else {
+        curr.push(idx);
+      }
+      userResponses[qId].value = curr;
+    }
+
+    function recordNumerical(val) {
+      userResponses[questions[currentIndex].id].value = val === '' ? null : Number(val);
+    }
+
+    function saveAndNext() {
+      const qId = questions[currentIndex].id;
+      const resp = userResponses[qId].value;
+      if (resp !== null && (!Array.isArray(resp) || resp.length > 0)) {
+        userResponses[qId].status = 'answered';
+      } else {
+        userResponses[qId].status = 'not_answered';
+      }
+      nextQuestion();
+    }
+
+    function markForReviewAndNext() {
+      userResponses[questions[currentIndex].id].status = 'marked';
+      nextQuestion();
+    }
+
+    function clearResponse() {
+      const qId = questions[currentIndex].id;
+      userResponses[qId].value = null;
+      userResponses[qId].status = 'not_answered';
+      loadQuestion(currentIndex);
+    }
+
+    function nextQuestion() {
+      if (currentIndex < questions.length - 1) loadQuestion(currentIndex + 1);
+      else renderPalette();
+    }
+
+    function prevQuestion() {
+      if (currentIndex > 0) loadQuestion(currentIndex - 1);
+    }
+
+    function renderPalette() {
+      const palette = document.getElementById('palette-grid');
+      palette.innerHTML = '';
+
+      questions.forEach((q, idx) => {
+        const st = userResponses[q.id].status;
+        let color = 'bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300';
+        if (st === 'answered') color = 'bg-emerald-500 text-white';
+        else if (st === 'marked') color = 'bg-amber-500 text-white';
+        else if (st === 'not_answered') color = 'bg-rose-500 text-white';
+
+        const isCurrent = idx === currentIndex ? 'ring-2 ring-indigo-500 ring-offset-2 dark:ring-offset-slate-900 font-black' : '';
+
+        palette.innerHTML += `
+          <button onclick="loadQuestion(${idx})" class="h-9 w-9 rounded-lg font-semibold text-xs flex items-center justify-center ${color} ${isCurrent}">
+            ${idx + 1}
+          </button>`;
+      });
+    }
+
+    function startTimer() {
+      const display = document.getElementById('timer-display');
+      timerInterval = setInterval(() => {
+        if (timeRemaining <= 0) {
+          clearInterval(timerInterval);
+          submitTest();
+          return;
+        }
+        timeRemaining--;
+        const m = Math.floor(timeRemaining / 60);
+        const s = timeRemaining % 60;
+        display.innerText = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+      }, 1000);
+    }
+
+    function confirmSubmit() {
+      if (confirm("Are you sure you want to submit the test?")) {
+        submitTest();
+      }
+    }
+
+    function submitTest() {
+      clearInterval(timerInterval);
+
+      // Package everything into sessionStorage for the result view
+      const submissionPackage = {
+        testTitle: testData.title,
+        exam: testData.exam,
+        totalMarks: testData.totalMarks || (questions.length * 4),
+        questions: questions,
+        userResponses: userResponses,
+        submittedAt: new Date().toLocaleString()
+      };
+
+      sessionStorage.setItem('sma_active_result', JSON.stringify(submissionPackage));
+      window.location.href = 'result.html';
+    }
+
+    window.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
