@@ -1,6 +1,6 @@
 {
   "testId": "jee-main-01",
-  "title": "JEE Main Full Practice Test",
+  "title": "JEE Main Physics & Chemistry Mock",
   "exam": "JEE Main",
   "durationMinutes": 180,
   "totalMarks": 12,
@@ -12,21 +12,21 @@
           "id": "jm-phy-01",
           "type": "single_choice",
           "marking": { "correct": 4, "incorrect": -1 },
-          "question": "For the circuit shown in the diagram, find the equivalent resistance between terminals $A$ and $B$.",
-          "image": "images/circuit-diagram.png",
-          "options": ["$2\\,\\Omega$", "$4\\,\\Omega$", "$8\\,\\Omega$", "$1\\,\\Omega$"],
+          "question": "In the circuit diagram shown below, find the steady-state potential difference across the $4\\,\\mu\\text{F}$ capacitor.",
+          "image": "images/circuit.png",
+          "options": ["$4\\text{ V}$", "$8\\text{ V}$", "$12\\text{ V}$", "$2\\text{ V}$"],
           "correctOption": 1,
-          "solution": "The two $8\\,\\Omega$ resistors in parallel give $4\\,\\Omega$, which is in series with the internal resistance.",
-          "solutionImage": "images/circuit-solution.png"
+          "solution": "In steady state, no current flows through the capacitor branch. The potential across the branch is given by voltage divider.",
+          "solutionImage": "images/solution-optics.png"
         },
         {
           "id": "jm-phy-02",
           "type": "numerical",
           "marking": { "correct": 4, "incorrect": 0 },
-          "question": "A ray of light is incident at an angle $\\theta = 45^\\circ$ on a prism as shown. If the refractive index $\\mu = \\sqrt{2}$, find the angle of emergence (in degrees).",
-          "image": "images/prism-ray.png",
+          "question": "A ray of light enters a prism as depicted in the figure with angle of incidence $i = 45^\\circ$. If refractive index $\\mu = \\sqrt{2}$, find the angle of emergence $e$ in degrees.",
+          "image": "images/prism.png",
           "correctValue": 45,
-          "solution": "Using Snell's law at both interfaces: $\\sin(45^\\circ) = \\sqrt{2}\\sin(r_1) \\implies r_1 = 30^\\circ$."
+          "solution": "Applying Snell's law at both faces yields $r_1 = 30^\\circ$ and $e = 45^\\circ$."
         }
       ]
     },
@@ -37,11 +37,11 @@
           "id": "jm-chem-01",
           "type": "single_choice",
           "marking": { "correct": 4, "incorrect": -1 },
-          "question": "Identify the major product $\\mathbf{(P)}$ formed in the following reaction sequence:",
-          "image": "images/reaction-mechanism.png",
-          "options": ["Benzoic Acid", "Benzaldehyde", "Acetophenone", "Phenol"],
-          "correctOption": 0,
-          "solution": "Alkaline $\\text{KMnO}_4$ oxidizes any alkyl side chain containing benzylic hydrogens directly to benzoic acid."
+          "question": "Identify the major product $\\mathbf{(P)}$ formed in the reaction given below:",
+          "image": "images/reaction.png",
+          "options": ["Benzaldehyde", "Benzoic acid", "Acetophenone", "Benzyl alcohol"],
+          "correctOption": 1,
+          "solution": "Vigorous oxidation with alkaline $\\text{KMnO}_4$ converts the alkyl side chain into a carboxylic group."
         }
       ]
     }
