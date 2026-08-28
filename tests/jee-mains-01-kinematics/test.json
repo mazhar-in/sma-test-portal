@@ -1,0 +1,389 @@
+{
+  "testId": "jee-mains-01-kinematics",
+  "title": "JEE Mains Kinematics Drill 01",
+  "examCategory": "jee-main",
+  "badgeName": "JEE Mains",
+  "durationMinutes": 50,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A hall has the dimensions $10\\text{ m} \\times 10\\text{ m} \\times 10\\text{ m}$. A fly starting at one corner ends up at a farthest corner. The magnitude of its displacement is:",
+          "image": "",
+          "options": [
+            "$5\\sqrt{3}\\text{ m}$",
+            "$10\\sqrt{3}\\text{ m}$",
+            "$20\\sqrt{3}\\text{ m}$",
+            "$30\\sqrt{3}\\text{ m}$"
+          ],
+          "correctOption": 1,
+          "solution": "Displacement magnitude across space diagonal $= \\sqrt{l^2 + b^2 + h^2} = \\sqrt{10^2 + 10^2 + 10^2} = 10\\sqrt{3}\\text{ m}$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves along a path ABCD as shown in the figure. Then the magnitude of net displacement of the particle from position A to D is:",
+          "image": "images/q2.png",
+          "options": [
+            "$10\\text{ m}$",
+            "$5\\sqrt{2}\\text{ m}$",
+            "$9\\text{ m}$",
+            "$7\\sqrt{2}\\text{ m}$"
+          ],
+          "correctOption": 3,
+          "solution": "Displacement $\\vec{r} = (3 + 5\\cos 37^\\circ)\\hat{i} + (4 + 5\\sin 37^\\circ)\\hat{j} = (3 + 4)\\hat{i} + (4 + 3)\\hat{j} = 7\\hat{i} + 7\\hat{j}$. Magnitude $= \\sqrt{7^2 + 7^2} = 7\\sqrt{2}\\text{ m}$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A car starts from P and follows the path as shown in figure. Finally car stops at R. Find the distance travelled and displacement of the car if $a=7\\text{ m}$, $b=8\\text{ m}$ and $r=\\frac{11}{\\pi}\\text{ m}$? [Take $\\pi=\\frac{22}{7}$]",
+          "image": "images/q3.png",
+          "options": [
+            "$15\\text{ m}, 36\\text{ m}$",
+            "$48\\text{ m}, 25\\text{ m}$",
+            "$35\\text{ m}, 28\\text{ m}$",
+            "$48\\text{ m}, 36\\text{ m}$"
+          ],
+          "correctOption": 3,
+          "solution": "Distance $= a + \\pi r + b + \\pi (2r) = 7 + \\pi\\left(\\frac{11}{\\pi}\\right) + 8 + 2\\pi\\left(\\frac{11}{\\pi}\\right) = 7 + 11 + 8 + 22 = 48\\text{ m}$. Displacement $= a + 2r + b + 4r = a + b + 6r = 7 + 8 + 6\\left(\\frac{11}{22/7}\\right) = 15 + 21 = 36\\text{ m}$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A car travels from A to B at a speed of $20\\text{ km h}^{-1}$ and returns at a speed of $30\\text{ km h}^{-1}$. The average speed of the car for the whole journey is:",
+          "image": "",
+          "options": [
+            "$5\\text{ km h}^{-1}$",
+            "$24\\text{ km h}^{-1}$",
+            "$25\\text{ km h}^{-1}$",
+            "$50\\text{ km h}^{-1}$"
+          ],
+          "correctOption": 1,
+          "solution": "$v_{\\text{avg}} = \\frac{2v_1 v_2}{v_1 + v_2} = \\frac{2(20)(30)}{20 + 30} = 24\\text{ km/h}$."
+        },
+        {
+          "id": "q5",
+          "type": "multiple_choice",
+          "marking": { "full": 4, "partial": 1, "incorrect": -2 },
+          "question": "A person travelling on a straight line without changing direction moves with a uniform speed $v_1$ for half distance and next half distance he covers with uniform speed $v_2$. The average speed $v$ is given by:",
+          "image": "",
+          "options": [
+            "$v = \\frac{2v_1 v_2}{v_1 + v_2}$",
+            "$v = \\sqrt{v_1 v_2}$",
+            "$\\frac{2}{v} = \\frac{1}{v_1} + \\frac{1}{v_2}$",
+            "$\\frac{1}{v} = \\frac{1}{v_1} + \\frac{1}{v_2}$"
+          ],
+          "correctOptions": [0, 2],
+          "solution": "Average speed for equal distance intervals is harmonic mean: $v = \\frac{2v_1 v_2}{v_1 + v_2}$, which can be rearranged as $\\frac{2}{v} = \\frac{1}{v_1} + \\frac{1}{v_2}$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A car covers a distance of $2\\text{ km}$ in $2.5\\text{ minutes}$. If it covers half of the distance with speed $40\\text{ km/hr}$, the rest distance it shall cover with a speed of:",
+          "image": "",
+          "options": [
+            "$56\\text{ km/hr}$",
+            "$60\\text{ km/hr}$",
+            "$48\\text{ km/hr}$",
+            "$50\\text{ km/hr}$"
+          ],
+          "correctOption": 1,
+          "solution": "Total time $= 2.5\\text{ min} = \\frac{2.5}{60}\\text{ hr} = \\frac{1}{24}\\text{ hr}$. $t_1 = \\frac{1\\text{ km}}{40\\text{ km/hr}} = \\frac{1}{40}\\text{ hr}$. Remaining time $t_2 = \\frac{1}{24} - \\frac{1}{40} = \\frac{5 - 3}{120} = \\frac{1}{60}\\text{ hr}$. Speed for second half $= \\frac{1\\text{ km}}{1/60\\text{ hr}} = 60\\text{ km/hr}$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body covers first $\\frac{1}{3}$ part of its journey with a velocity of $2\\text{ m/s}$, next $\\frac{1}{3}$ part with a velocity of $3\\text{ m/s}$ and rest of the journey with a velocity $6\\text{ m/s}$. The average velocity of the body will be:",
+          "image": "",
+          "options": [
+            "$3\\text{ m/s}$",
+            "$\\frac{11}{3}\\text{ m/s}$",
+            "$\\frac{8}{3}\\text{ m/s}$",
+            "$\\frac{4}{3}\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "$v_{\\text{avg}} = \\frac{s}{\\frac{s/3}{2} + \\frac{s/3}{3} + \\frac{s/3}{6}} = \\frac{1}{\\frac{1}{6} + \\frac{1}{9} + \\frac{1}{18}} = \\frac{18}{3 + 2 + 1} = 3\\text{ m/s}$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A car runs at constant speed on a circular track of radius $100\\text{ m}$ taking $62.8\\text{ s}$ on each lap. What is the average speed and average velocity on each complete lap? $(\\pi=3.14)$",
+          "image": "",
+          "options": [
+            "velocity $10\\text{ m/s}$, speed $10\\text{ m/s}$",
+            "velocity zero, speed $10\\text{ m/s}$",
+            "velocity zero, speed zero",
+            "velocity $10\\text{ m/s}$, speed zero"
+          ],
+          "correctOption": 1,
+          "solution": "Distance $= 2\\pi R = 2(3.14)(100) = 628\\text{ m}$. Average speed $= \\frac{628}{62.8} = 10\\text{ m/s}$. Displacement $= 0 \\implies$ Average velocity $= 0$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A train travels $5\\text{ km}$ in the north-east direction at the rate of $40\\text{ km h}^{-1}$ and then $5\\text{ km}$ at the rate of $40\\text{ km h}^{-1}$ in the north-west direction. What is its average speed during the whole journey and what is its average velocity?",
+          "image": "",
+          "options": [
+            "$15\\text{ kmph}, \\frac{40}{\\sqrt{2}}\\text{ kmph}$",
+            "$25\\text{ kmph}, \\frac{40}{\\sqrt{2}}\\text{ kmph}$",
+            "$40\\text{ kmph}, \\frac{40}{\\sqrt{2}}\\text{ kmph}$",
+            "$45\\text{ kmph}, \\frac{40}{\\sqrt{2}}\\text{ kmph}$"
+          ],
+          "correctOption": 2,
+          "solution": "Average speed is constant $= 40\\text{ km/h}$. Total displacement magnitude $= \\sqrt{5^2 + 5^2} = 5\\sqrt{2}\\text{ km}$. Total time $= \\frac{5}{40} + \\frac{5}{40} = \\frac{1}{4}\\text{ hr}$. Average velocity $= \\frac{5\\sqrt{2}}{1/4} = 20\\sqrt{2} = \\frac{40}{\\sqrt{2}}\\text{ km/h}$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The displacement of a body is given by $2s = gt^2$ where $g$ is a constant. The velocity of the body at any time $t$ is:",
+          "image": "",
+          "options": [
+            "$gt$",
+            "$gt/2$",
+            "$gt^2/2$",
+            "$gt^3/6$"
+          ],
+          "correctOption": 0,
+          "solution": "$s = \\frac{1}{2}gt^2 \\implies v = \\frac{ds}{dt} = gt$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A truck travelling due north at $50\\text{ km/hr}$ turns west and travels at the same speed. What is the change in magnitude of velocity?",
+          "image": "",
+          "options": [
+            "$1$",
+            "$2$",
+            "$5$",
+            "$0$"
+          ],
+          "correctOption": 3,
+          "solution": "Change in magnitude of velocity $= |\\vec{v}_f| - |\\vec{v}_i| = 50 - 50 = 0$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Find the velocity as a function of time if $x = At + Bt^{-3}$, where $A$ and $B$ are constants, $x$ is position and $t$ is time.",
+          "image": "",
+          "options": [
+            "$A - 1 Bt^{-4}$",
+            "$A - 2 Bt^{-4}$",
+            "$A - 3 Bt^{-4}$",
+            "$A - 5 Bt^{-4}$"
+          ],
+          "correctOption": 2,
+          "solution": "$v = \\frac{dx}{dt} = \\frac{d}{dt}(At + Bt^{-3}) = A - 3Bt^{-4}$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An athlete takes $2\\text{ s}$ to reach his maximum speed of $18\\text{ km/h}$ after starting from rest. What is the magnitude of his average acceleration?",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}\\text{ m/s}^2$",
+            "$\\frac{5}{2}\\text{ m/s}^2$",
+            "$\\frac{2}{5}\\text{ m/s}^2$",
+            "$\\frac{3}{5}\\text{ m/s}^2$"
+          ],
+          "correctOption": 1,
+          "solution": "$v = 18\\text{ km/h} = 18 \\times \\frac{5}{18} = 5\\text{ m/s}$. $a_{\\text{avg}} = \\frac{\\Delta v}{\\Delta t} = \\frac{5 - 0}{2} = \\frac{5}{2}\\text{ m/s}^2$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle performs rectilinear motion in such a way that its initial velocity has opposite direction with its uniform acceleration. Let $X_A$ and $X_B$ be the magnitude of displacements in the first $10\\text{ seconds}$ and the next $10\\text{ seconds}$, then:",
+          "image": "",
+          "options": [
+            "$X_A < X_B$",
+            "$X_A = X_B$",
+            "$X_A > X_B$",
+            "the information is insufficient to decide the relation of $X_A$ with $X_B$"
+          ],
+          "correctOption": 3,
+          "solution": "The turning point depends on the ratio $u/a$. Without knowing when the particle stops and turns, the relation between $X_A$ and $X_B$ cannot be uniquely determined."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves rectilinearly with a constant acceleration $1\\text{ m/s}^2$. Its speed after $10\\text{ seconds}$ is $5\\text{ m/s}$. The distance covered by the particle in this duration is (Initial & final velocities are in opposite direction):",
+          "image": "",
+          "options": [
+            "$20\\text{ m}$",
+            "$25\\text{ m}$",
+            "$30\\text{ m}$",
+            "$50\\text{ m}$"
+          ],
+          "correctOption": 1,
+          "solution": "$v = u + at \\implies 5 = -u + 1(10) \\implies u = 5\\text{ m/s}$. Time to stop $= \\frac{u}{a} = 5\\text{ s}$. Distance in first $5\\text{ s} = \\frac{u^2}{2a} = 12.5\\text{ m}$. Distance in next $5\\text{ s} = \\frac{1}{2}a t^2 = 12.5\\text{ m}$. Total distance $= 25\\text{ m}$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ball is dropped from the top of a building. The ball takes $0.5\\text{ s}$ to fall past the $3\\text{ m}$ height of a window some distance from the top of the building. If the speed of the ball at the top and at the bottom of the window are $v_T$ and $v_B$ respectively, then $(g=9.8\\text{ m/sec}^2)$:",
+          "image": "",
+          "options": [
+            "$v_T + v_B = 12\\text{ m s}^{-1}$",
+            "$v_T - v_B = 4.9\\text{ m s}^{-1}$",
+            "$v_B v_T = 1\\text{ m s}^{-1}$",
+            "$\\frac{v_B}{v_T} = 1\\text{ m s}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "$h = \\left(\\frac{v_T + v_B}{2}\\right)t \\implies 3 = \\left(\\frac{v_T + v_B}{2}\\right)(0.5) \\implies v_T + v_B = 12\\text{ m/s}$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A stone is released from an elevator going up with an acceleration $a$ and speed $u$. The acceleration and speed of the stone just after the release is:",
+          "image": "",
+          "options": [
+            "$a$ upward, zero",
+            "$(g-a)$ upward, $u$",
+            "$(g-a)$ downward, zero",
+            "$g$ downward, $u$"
+          ],
+          "correctOption": 3,
+          "solution": "Once released, only gravity acts on the stone ($g$ downward), and by inertia, it retains the instantaneous velocity of the lift ($u$ upward)."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle is thrown upwards from ground. It experiences a constant air resistance force which can produce a retardation of $2\\text{ m/s}^2$. The ratio of time of ascent to the time of descent is: $[g=10\\text{ m/s}^2]$",
+          "image": "",
+          "options": [
+            "$1:1$",
+            "$\\sqrt{\\frac{2}{3}}$",
+            "$\\frac{2}{3}$",
+            "$\\sqrt{\\frac{3}{2}}$"
+          ],
+          "correctOption": 1,
+          "solution": "$a_{\\text{up}} = g + a_r = 10 + 2 = 12\\text{ m/s}^2$. $a_{\\text{down}} = g - a_r = 10 - 2 = 8\\text{ m/s}^2$. Since $h = \\frac{1}{2}at^2$, $\\frac{t_{\\text{ascent}}}{t_{\\text{descent}}} = \\sqrt{\\frac{a_{\\text{down}}}{a_{\\text{up}}}} = \\sqrt{\\frac{8}{12}} = \\sqrt{\\frac{2}{3}}$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The initial velocity of a particle is given by $u$ (at $t=0$) and the acceleration by $f$, where $f = at$ (here $t$ is time and $a$ is constant). Which of the following relation is valid?",
+          "image": "",
+          "options": [
+            "$v = u + at^2$",
+            "$v = u + \\frac{at^2}{2}$",
+            "$v = u + at$",
+            "$v = u$"
+          ],
+          "correctOption": 1,
+          "solution": "$\\frac{dv}{dt} = at \\implies \\int_u^v dv = \\int_0^t at \\, dt \\implies v - u = \\frac{at^2}{2} \\implies v = u + \\frac{at^2}{2}$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A student determined to test the law of gravity for himself walks off a skyscraper $320\\text{ m}$ high with a stopwatch in hand and starts his free fall (zero initial velocity). $5\\text{ second}$ later, superman arrives at the scene and dives off the roof to save the student. What must be superman's initial velocity in order that he catches the student just before reaching the ground? [Assume that the superman's acceleration is that of any freely falling body.] $(g=10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$98\\text{ m/s}$",
+            "$\\frac{275}{3}\\text{ m/s}$",
+            "$\\frac{187}{2}\\text{ m/s}$",
+            "It is not possible"
+          ],
+          "correctOption": 1,
+          "solution": "Total time for student to reach ground: $320 = \\frac{1}{2}(10)t^2 \\implies t = 8\\text{ s}$. Time available for superman $= 8 - 5 = 3\\text{ s}$. $h = ut + \\frac{1}{2}gt^2 \\implies 320 = u(3) + \\frac{1}{2}(10)(3)^2 \\implies 320 = 3u + 45 \\implies 3u = 275 \\implies u = \\frac{275}{3}\\text{ m/s}$."
+        },
+        {
+          "id": "q21",
+          "type": "multiple_choice",
+          "marking": { "full": 4, "partial": 1, "incorrect": -2 },
+          "question": "Figure shows position-time graph of two cars A and B. Lines are parallel.",
+          "image": "images/q21.png",
+          "options": [
+            "Car A is faster than car B.",
+            "Car A always leads Car B.",
+            "Both cars are moving with same velocity.",
+            "Both cars have positive acceleration."
+          ],
+          "correctOptions": [1, 2],
+          "solution": "Parallel straight lines on an $x-t$ graph mean equal slopes (same constant velocity), and car A has a larger position coordinate throughout, so Car A always leads Car B."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Figure shows the position time graph of a particle moving on the X-axis.",
+          "image": "images/q22.png",
+          "options": [
+            "the particle is continuously going in positive x direction",
+            "area under x-t curve shows the displacement of particle",
+            "the velocity increases up to a time $t_o$ and then becomes constant.",
+            "the particle moves at a constant velocity up to a time $t_o$, and then stops."
+          ],
+          "correctOption": 3,
+          "solution": "Slope is constant and positive up to $t_o$ (constant velocity), and slope is zero after $t_o$ (particle is at rest/stopped)."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle is moving along a straight line whose velocity displacement curve is as shown in figure. What will be the acceleration of particle when its displacement is $3\\text{ m}$?",
+          "image": "images/q23.png",
+          "options": [
+            "$2\\sqrt{3}\\text{ ms}^{-2}$",
+            "$4\\sqrt{3}\\text{ ms}^{-2}$",
+            "$-2\\sqrt{3}\\text{ ms}^{-2}$",
+            "$\\sqrt{3}\\text{ ms}^{-2}$"
+          ],
+          "correctOption": 2,
+          "solution": "$a = v \\frac{dv}{ds}$. At $s = 3\\text{ m}$, $v = 2\\text{ m/s}$. Slope $\\frac{dv}{ds} = -\\tan 60^\\circ = -\\sqrt{3}$. Thus, $a = 2(-\\sqrt{3}) = -2\\sqrt{3}\\text{ ms}^{-2}$."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the displacement-time graph of a moving particle shown, the instantaneous velocity of the particle is negative at the point:",
+          "image": "images/q24.png",
+          "options": [
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "correctOption": 2,
+          "solution": "Instantaneous velocity is the slope $\\frac{dx}{dt}$. At point E, the tangent has a negative slope."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The variation of velocity of a particle moving along a straight line is shown in the figure. The distance travelled by the particle in $4\\text{ s}$ is:",
+          "image": "images/q25.png",
+          "options": [
+            "$25\\text{ m}$",
+            "$30\\text{ m}$",
+            "$55\\text{ m}$",
+            "$60\\text{ m}$"
+          ],
+          "correctOption": 2,
+          "solution": "Distance is the area under the $v-t$ curve: $\\text{Area}_1 (0-1\\text{s}) = \\frac{1}{2}(1)(20) = 10\\text{ m}$; $\\text{Area}_2 (1-2\\text{s}) = 1 \\times 20 = 20\\text{ m}$; $\\text{Area}_3 (2-3\\text{s}) = \\frac{1}{2}(20 + 10)(1) = 15\\text{ m}$; $\\text{Area}_4 (3-4\\text{s}) = 1 \\times 10 = 10\\text{ m}$. Total distance $= 10 + 20 + 15 + 10 = 55\\text{ m}$."
+        }
+      ]
+    }
+  ]
+}
