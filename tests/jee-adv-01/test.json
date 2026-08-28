@@ -1,47 +1,48 @@
 {
-  "testId": "jee-main-01",
-  "title": "JEE Main Physics & Chemistry Mock",
-  "exam": "JEE Main",
-  "durationMinutes": 180,
+  "testId": "jee-adv-01",
+  "title": "JEE Advanced Physics & Maths Drill",
+  "exam": "JEE Advanced",
+  "durationMinutes": 60,
   "totalMarks": 12,
   "sections": [
     {
       "subject": "Physics",
       "questions": [
         {
-          "id": "jm-phy-01",
-          "type": "single_choice",
-          "marking": { "correct": 4, "incorrect": -1 },
-          "question": "In the circuit diagram shown below, find the steady-state potential difference across the $4\\,\\mu\\text{F}$ capacitor.",
-          "image": "images/circuit.png",
-          "options": ["$4\\text{ V}$", "$8\\text{ V}$", "$12\\text{ V}$", "$2\\text{ V}$"],
-          "correctOption": 1,
-          "solution": "In steady state, no current flows through the capacitor branch. The potential across the branch is given by voltage divider.",
-          "solutionImage": "images/solution-optics.png"
-        },
-        {
-          "id": "jm-phy-02",
-          "type": "numerical",
-          "marking": { "correct": 4, "incorrect": 0 },
-          "question": "A ray of light enters a prism as depicted in the figure with angle of incidence $i = 45^\\circ$. If refractive index $\\mu = \\sqrt{2}$, find the angle of emergence $e$ in degrees.",
-          "image": "images/prism.png",
-          "correctValue": 45,
-          "solution": "Applying Snell's law at both faces yields $r_1 = 30^\\circ$ and $e = 45^\\circ$."
+          "id": "ja-phy-01",
+          "type": "multiple_choice",
+          "marking": { "full": 4, "partial": 1, "incorrect": -2 },
+          "question": "Which of the following thermodynamic processes have $\\Delta Q = 0$ or $\\Delta W = 0$?",
+          "options": [
+            "Adiabatic process has $\\Delta Q = 0$",
+            "Isochoric process has $\\Delta W = 0$",
+            "Isothermal process has $\\Delta Q = 0$",
+            "Isobaric process has $\\Delta W = 0$"
+          ],
+          "correctOptions": [0, 1],
+          "solution": "Adiabatic means $\\Delta Q = 0$. Isochoric means $dV = 0 \\implies \\Delta W = 0$."
         }
       ]
     },
     {
-      "subject": "Chemistry",
+      "subject": "Mathematics",
       "questions": [
         {
-          "id": "jm-chem-01",
+          "id": "ja-math-01",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "If $\\int_{0}^{\\pi/2} \\frac{\\sin^n(x)}{\\sin^n(x) + \\cos^n(x)} dx = \\frac{\\pi}{k}$, find the integer value of $k$.",
+          "correctValue": 4,
+          "solution": "Using King's property, $2I = \\frac{\\pi}{2} \\implies I = \\frac{\\pi}{4}$, so $k = 4$."
+        },
+        {
+          "id": "ja-math-02",
           "type": "single_choice",
           "marking": { "correct": 4, "incorrect": -1 },
-          "question": "Identify the major product $\\mathbf{(P)}$ formed in the reaction given below:",
-          "image": "images/reaction.png",
-          "options": ["Benzaldehyde", "Benzoic acid", "Acetophenone", "Benzyl alcohol"],
+          "question": "The number of real solutions of $e^x + x = 0$ is:",
+          "options": ["$0$", "$1$", "$2$", "Infinitely many"],
           "correctOption": 1,
-          "solution": "Vigorous oxidation with alkaline $\\text{KMnO}_4$ converts the alkyl side chain into a carboxylic group."
+          "solution": "$f(x) = e^x + x$ has $f'(x) > 0$. It is strictly increasing and crosses the x-axis once."
         }
       ]
     }
