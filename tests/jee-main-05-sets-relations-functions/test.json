@@ -1,0 +1,359 @@
+{
+  "testId": "jee-main-05-sets-relations-functions",
+  "title": "Sets, Relations & Functions",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following is correct for sets $A$, $B$ and $C$?",
+          "image": "",
+          "options": [
+            "$A - B = A - (A \\cap B)$",
+            "$A - B = A - (A \\cup B)$",
+            "$A - (B \\cup C) = (A - B) \\cup (A - C)$",
+            "$A - B = A \\cup B'$"
+          ],
+          "correctOption": 0,
+          "solution": "By standard set identities:\n$A - B = A \\cap B' = A - (A \\cap B)$.\nOption (2) gives $A - (A \\cup B) = \\phi$.\nOption (3) by De Morgan's Law gives $A - (B \\cup C) = (A - B) \\cap (A - C)$.\nOption (4) is false since $A - B = A \\cap B'$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a certain town, 25% of the families own a phone and 15% own a car; 65% families own neither a phone nor a car and 2,000 families own both a car and a phone. Consider the following three statements:\n(i) 5% families own both a car and a phone\n(ii) 35% families own either a car or a phone\n(iii) 40,000 families live in the town\n\nThen:",
+          "image": "",
+          "options": [
+            "Only (ii) and (iii) are correct",
+            "Only (i) and (iii) are correct",
+            "All (i), (ii) and (iii) are correct",
+            "Only (i) and (ii) are correct"
+          ],
+          "correctOption": 2,
+          "solution": "Let total percentage be 100%[cite: 4].\n$P(\\text{neither}) = 65\\% \\implies P(P \\cup C) = 100\\% - 65\\% = 35\\%$ (Statement (ii) is correct)[cite: 4].\n$P(P \\cup C) = P(P) + P(C) - P(P \\cap C) \\implies 35\\% = 25\\% + 15\\% - P(P \\cap C) \\implies P(P \\cap C) = 5\\%$ (Statement (i) is correct)[cite: 4].\nGiven $5\\%$ of total families $= 2000 \\implies \\text{Total families} = \\frac{2000}{0.05} = 40,000$ (Statement (iii) is correct)[cite: 4].\nThus, all (i), (ii), and (iii) are correct[cite: 4]."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Let $A = \\{(x, y) : x > 0, y > 0, x^2 + y^2 = 1\\}$ and let $B = \\{(x, y) : x > 0, y > 0, x^6 + y^6 \\ge 1\\}$. Then $A \\cap B =$",
+          "image": "",
+          "options": [
+            "$A$",
+            "$B$",
+            "$\\phi$",
+            "\\{(0, 1), (1, 0)\\}"
+          ],
+          "correctOption": 2,
+          "solution": "For $(x, y) \\in A$, since $x > 0$ and $y > 0$ with $x^2 + y^2 = 1$, we have $0 < x^2 < 1$ and $0 < y^2 < 1$[cite: 4].\nTherefore, $(x^2)^3 < x^2$ and $(y^2)^3 < y^2$.\nAdding these gives $x^6 + y^6 < x^2 + y^2 = 1$.\nThus, for all points in $A$, $x^6 + y^6 < 1$, which strictly contradicts the condition $x^6 + y^6 \\ge 1$ for set $B$[cite: 4].\nHence, $A \\cap B = \\phi$[cite: 4]."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Let $X$ be the set of all persons living in a state. Elements $x$ and $y$ in $X$ are said to be related whenever $y$ is 5 years older than $x$. The relation is:",
+          "image": "",
+          "options": [
+            "reflexive only",
+            "symmetric only",
+            "symmetric & transitive",
+            "none of these"
+          ],
+          "correctOption": 3,
+          "solution": "Let $R = \\{(x, y) : y - x = 5\\}$[cite: 4].\n- Reflexive: $x - x = 0 \\neq 5 \\implies (x, x) \\notin R$ (not reflexive).\n- Symmetric: If $y - x = 5$, then $x - y = -5 \\neq 5 \\implies (y, x) \\notin R$ (not symmetric).\n- Transitive: If $y - x = 5$ and $z - y = 5$, then $z - x = 10 \\neq 5 \\implies (x, z) \\notin R$ (not transitive).\nHence, the relation is none of these[cite: 4]."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Let $P = \\{(x, y) : x^2 + y^2 = 1, x \\in \\mathbb{R}, y \\in \\mathbb{R}\\}$ be a relation in $\\mathbb{R}$ (the set of real numbers). Then the relation $P$ is:",
+          "image": "",
+          "options": [
+            "reflexive only",
+            "symmetric only",
+            "transitive only",
+            "reflexive and transitive only"
+          ],
+          "correctOption": 1,
+          "solution": "- Reflexive: $x^2 + x^2 = 2x^2 \\neq 1$ for all $x \\in \\mathbb{R}$ (e.g. $x = 0$)[cite: 4].\n- Symmetric: $x^2 + y^2 = 1 \\implies y^2 + x^2 = 1$, so $(x, y) \\in P \\implies (y, x) \\in P$ (symmetric)[cite: 4].\n- Transitive: $(0, 1) \\in P$ and $(1, 0) \\in P$, but $(0, 0) \\notin P$ since $0^2 + 0^2 = 0 \\neq 1$ (not transitive).\nHence, $P$ is symmetric only[cite: 4]."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $A = \\{1, 2, 3, 4\\}$, then the relation $R = \\{(1, 3), (2, 4), (2, 3), (3, 1)\\}$ defined on set $A$ is:",
+          "image": "",
+          "options": [
+            "reflexive",
+            "symmetric",
+            "transitive",
+            "none of these"
+          ],
+          "correctOption": 3,
+          "solution": "- Not reflexive since $(1, 1) \\notin R$[cite: 4].\n- Not symmetric since $(2, 4) \\in R$ but $(4, 2) \\notin R$[cite: 4].\n- Not transitive since $(2, 3) \\in R$ and $(3, 1) \\in R$, but $(2, 1) \\notin R$[cite: 4].\nHence, $R$ is none of these[cite: 4]."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Let $P$ be the relation on the set of all real numbers such that $P = \\{(a, b) : \\sec^2 a - \\tan^2 b = 1\\}$. Then $P$ is:",
+          "image": "",
+          "options": [
+            "reflexive and symmetric but not transitive",
+            "reflexive and transitive but not symmetric",
+            "symmetric and transitive but not reflexive",
+            "an equivalence relation"
+          ],
+          "correctOption": 2,
+          "solution": "Condition: $\\sec^2 a - \\tan^2 b = 1 \\implies (1 + \\tan^2 a) - \\tan^2 b = 1 \\implies \\tan^2 a = \\tan^2 b$ (where defined)[cite: 4].\nFor all $a, b \\neq (2n+1)\\frac{\\pi}{2}$:\n- Reflexive for domain elements: $\\tan^2 a = \\tan^2 a$, but $\\sec a$ is not defined for odd multiples of $\\pi/2$, failing total reflexivity on $\\mathbb{R}$[cite: 4].\n- Symmetric: $\\tan^2 a = \\tan^2 b \\implies \\tan^2 b = \\tan^2 a$[cite: 4].\n- Transitive: $\\tan^2 a = \\tan^2 b$ and $\\tan^2 b = \\tan^2 c \\implies \\tan^2 a = \\tan^2 c$[cite: 4].\nHence, it is symmetric and transitive but not reflexive on $\\mathbb{R}$[cite: 4]."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Let $N_1$ be the number of injective mappings from a set with $m$ elements to a set with $n$ elements when $m \\le n$. Now let number of injective mappings when $m > n$ be $N_2$. Then:",
+          "image": "",
+          "options": [
+            "$N_1 > N_2$",
+            "$N_1 < N_2$",
+            "$N_1 = N_2$",
+            "$N_1 + N_2 = m + n$"
+          ],
+          "correctOption": 0,
+          "solution": "For $m \\le n$, the number of injective mappings is $N_1 = \\,^n\\text{P}_m = \\frac{n!}{(n-m)!} \\ge 1$[cite: 4].\nFor $m > n$, by the Pigeonhole Principle, no injective mapping can exist, so $N_2 = 0$[cite: 4].\nThus, $N_1 > N_2$[cite: 4]."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The function $f: \\mathbb{R} \\rightarrow \\mathbb{R}$ defined by $f(x) = (x - a)(x - b)(x - c)$ where $a, b, c \\in \\mathbb{R}$ is:",
+          "image": "",
+          "options": [
+            "not one-one but onto",
+            "one-one but not onto",
+            "both one-one and onto",
+            "neither one-one nor onto"
+          ],
+          "correctOption": 0,
+          "solution": "$f(x)$ is a cubic polynomial with real roots $a, b, c$[cite: 4].\nSince $f(a) = f(b) = f(c) = 0$, multiple domain values produce the same output, so $f$ is many-one (not one-one)[cite: 4].\nBeing an odd-degree polynomial with real coefficients, $\\lim_{x \\to \\infty} f(x) = \\infty$ and $\\lim_{x \\to -\\infty} f(x) = -\\infty$, spanning all real numbers ($R_f = \\mathbb{R}$), so $f$ is onto[cite: 4].\nThus, $f$ is not one-one but onto[cite: 4]."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Let $f: \\mathbb{R} \\rightarrow \\mathbb{R}$ be defined as\n$$f(x) = \\begin{cases} 2x + a^2, & x \\ge 2 \\\\ \\frac{ax}{2} + 10, & x < 2 \\end{cases}$$\nIf $f(x)$ is an onto function, then the set of values of $a$ is:",
+          "image": "",
+          "options": [
+            "[1, 4]",
+            "[-2, 3]",
+            "(0, 3)",
+            "[2, 5]"
+          ],
+          "correctOption": 2,
+          "solution": "For $x \\ge 2$, $f(x) = 2x + a^2$ covers the interval $[4 + a^2, \\infty)$[cite: 4].\nFor $f(x)$ to be onto, the branch for $x < 2$ must cover $(-\\infty, 4 + a^2]$[cite: 4].\nThus, the linear function $\\frac{ax}{2} + 10$ must have a positive slope ($a > 0$) so that $\\lim_{x \\to -\\infty} f(x) = -\\infty$, and its supremum value at $x \\to 2^-$ must satisfy:\n$\\lim_{x \\to 2^-} f(x) \\ge 4 + a^2 \\implies \\frac{a(2)}{2} + 10 \\ge 4 + a^2 \\implies a + 10 \\ge 4 + a^2 \\implies a^2 - a - 6 \\le 0 \\implies (a - 3)(a + 2) \\le 0$.\nCombining with $a > 0$, we get $a \\in (0, 3]$ (represented as $(0, 3)$)[cite: 4]."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $f(x) = 1 + |x - 1|$, $-1 \\le x \\le 3$ and $g(x) = 2 - |x + 1|$, $-2 \\le x \\le 2$, then choose the appropriate option:",
+          "image": "",
+          "options": [
+            "$fog(x) = x - 1$ for $x \\in (0, 1)$",
+            "$fof(x) = x$ for $x \\in (-1, 1)$",
+            "$gog(x) = x$ for $x \\in (-1, 2)$",
+            "all of these"
+          ],
+          "correctOption": 2,
+          "solution": "For $x \\in (-1, 2)$, $|x + 1| = x + 1$, so $g(x) = 2 - (x + 1) = 1 - x$[cite: 4].\nSince $x \\in (-1, 2) \\implies 1 - x \\in (-1, 2)$, $g(x) > -1$.\nThen $g(g(x)) = 2 - |(1 - x) + 1| = 2 - |2 - x|$.\nFor $x < 2$, $2 - x > 0 \\implies g(g(x)) = 2 - (2 - x) = x$[cite: 4].\nThus, $g(g(x)) = x$ holds for $x \\in (-1, 2)$[cite: 4]."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Domain of $y = \\sqrt{\\log_2\\left(\\frac{x}{x+3}\\right)}$ is:",
+          "image": "",
+          "options": [
+            "$(-\\infty, -3)$",
+            "$(-\\infty, -3) \\cup (0, \\infty)$",
+            "$(0, \\infty)$",
+            "$(-\\infty, \\infty)$"
+          ],
+          "correctOption": 0,
+          "solution": "For the square root and log to be valid[cite: 4]:\n1) Argument of log $> 0$: $\\frac{x}{x+3} > 0 \\implies x \\in (-\\infty, -3) \\cup (0, \\infty)$[cite: 4].\n2) $\\log_2\\left(\\frac{x}{x+3}\\right) \\ge 0 \\implies \\frac{x}{x+3} \\ge 1 \\implies \\frac{x}{x+3} - 1 \\ge 0 \\implies \\frac{-3}{x+3} \\ge 0 \\implies x + 3 < 0 \\implies x < -3$[cite: 4].\nTaking intersection gives $x \\in (-\\infty, -3)$[cite: 4]."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Domain of $f(x) = \\frac{1}{[\\log_x 2]}$, where $[.]$ is the greatest integer function, contains the set:",
+          "image": "",
+          "options": [
+            "(1, 3)",
+            "$[2, \\infty)$",
+            "(0, 1)",
+            "(1, 3]"
+          ],
+          "correctOption": 2,
+          "solution": "For base $x$: $x > 0$ and $x \\neq 1$[cite: 4].\nDenominator must not be zero: $[\\log_x 2] \\neq 0 \\implies \\log_x 2 \\notin [0, 1)$[cite: 4].\n- For $x \\in (0, 1)$, $\\log_x 2 < 0$, so $[\\log_x 2] \\le -1 \\neq 0$, which is completely valid[cite: 4].\n- For $x > 1$, $\\log_x 2 \\ge 1 \\implies x \\le 2$. Thus for $x \\in (1, 2]$, $[\\log_x 2] \\ge 1 \\neq 0$, but for $x > 2$, $\\log_x 2 \\in (0, 1) \\implies [\\log_x 2] = 0$ (undefined).\nTherefore, the domain is $(0, 1) \\cup (1, 2]$, which fully contains the set $(0, 1)$[cite: 4]."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Let $f$ be a function such that $f(x) = f(2 - x)$ and $g(x) = f(x + 1)$, then:",
+          "image": "",
+          "options": [
+            "$g(x)$ is an odd function",
+            "$g(x)$ is an even function",
+            "graph of $g(x)$ is symmetrical about $x = 1$",
+            "graph of $f(x)$ is symmetrical about (1, 0)"
+          ],
+          "correctOption": 1,
+          "solution": "$g(-x) = f(-x + 1) = f(1 - x)$[cite: 4].\nUsing the given property $f(z) = f(2 - z)$ with $z = 1 - x$[cite: 4]:\n$f(1 - x) = f(2 - (1 - x)) = f(1 + x) = g(x)$[cite: 4].\nSince $g(-x) = g(x)$, $g(x)$ is an even function[cite: 4]."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The number of points at which the two curves $y = \\frac{x}{99}$ and $y = \\sin \\pi x$ intersect is:",
+          "image": "",
+          "options": [
+            "199",
+            "198",
+            "200",
+            "201"
+          ],
+          "correctOption": 0,
+          "solution": "Since $|\\sin \\pi x| \\le 1$, intersections can only occur where $\\left|\\frac{x}{99}\\right| \\le 1 \\implies x \\in [-99, 99]$[cite: 4].\n- At $x = 0$, both are $0$ (1 point)[cite: 4].\n- For $x > 0$: on each interval $[2k, 2k+2]$, $\\sin \\pi x$ completes 1 full period and intersects the line $y = \\frac{x}{99}$ at 2 points. For $k = 0, 1, \\dots, 48$ ($x \\in (0, 98]$), there are $49 \\times 2 = 98$ intersections[cite: 4]. On $(98, 99]$, $\\sin \\pi x$ rises from $0$ to a maximum of $1$ and meets $\\frac{x}{99} = 1$ at $x = 99$, giving 1 intersection[cite: 4]. Total for $x > 0$ is $98 + 1 = 99$ points[cite: 4].\n- By symmetry ($y = \\sin \\pi x$ and $y = x/99$ are both odd functions), there are $99$ negative intersections[cite: 4].\nTotal intersections $= 99 + 1 + 99 = 199$[cite: 4]."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Let $f: [0, \\infty) \\rightarrow \\mathbb{R}$ be a function such that $f(x) = x^2 - x\\sin x - \\cos x$. Then:",
+          "image": "",
+          "options": [
+            "$f(x)$ is one-one",
+            "$f(x)$ is onto",
+            "$f(x) = -2$ has one solution",
+            "$f(x)$ is many-one"
+          ],
+          "correctOption": 0,
+          "solution": "Differentiating $f(x)$ for $x > 0$[cite: 4]:\n$f'(x) = 2x - (\\sin x + x\\cos x) - (-\\sin x) = 2x - x\\cos x = x(2 - \\cos x)$[cite: 4].\nSince $-1 \\le \\cos x \\le 1$, $2 - \\cos x \\ge 1 > 0$ for all $x$[cite: 4].\nThus, $f'(x) > 0$ for all $x \\in (0, \\infty)$, meaning $f(x)$ is strictly increasing on $[0, \\infty)$[cite: 4].\nTherefore, $f(x)$ is strictly one-one[cite: 4]."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The function $f(x) = |\\sin 4x| + |\\cos 2x|$ is a periodic function with fundamental period:",
+          "image": "",
+          "options": [
+            "$2\\pi$",
+            "$\\pi$",
+            "$\\frac{\\pi}{2}$",
+            "$\\frac{\\pi}{4}$"
+          ],
+          "correctOption": 2,
+          "solution": "Period of $|\\sin 4x|$ is $\\frac{\\pi}{4}$[cite: 4].\nPeriod of $|\\cos 2x|$ is $\\frac{\\pi}{2}$[cite: 4].\n$\\text{LCM}\\left(\\frac{\\pi}{4}, \\frac{\\pi}{2}\\right) = \\frac{\\pi}{2}$[cite: 4].\nChecking $T = \\frac{\\pi}{4}$:\n$f\\left(x + \\frac{\\pi}{4}\\right) = |\\sin(4x + \\pi)| + |\\cos(2x + \\pi/2)| = |\\sin 4x| + |\\sin 2x| \\neq f(x)$.\nHence, the fundamental period is $\\frac{\\pi}{2}$[cite: 4]."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Let $A = \\{x_1, x_2, \\dots, x_7\\}$ and $B = \\{y_1, y_2, y_3\\}$ be two sets containing seven and three distinct elements respectively. The total number of functions $f: A \\rightarrow B$ that are onto, if there exist exactly three elements $x$ in $A$ such that $f(x) = y_2$, is equal to:",
+          "image": "",
+          "options": [
+            "$14 \\cdot \\,^7\\text{C}_3$",
+            "$16 \\cdot \\,^7\\text{C}_3$",
+            "$14 \\cdot \\,^7\\text{C}_2$",
+            "$12 \\cdot \\,^7\\text{C}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "Step 1: Choose 3 elements from $A$ to map to $y_2$ in $\\,^7\\text{C}_3$ ways[cite: 4].\nStep 2: The remaining 4 elements of $A$ must be mapped onto the remaining 2 elements $\\{y_1, y_3\\}$ of $B$[cite: 4].\nNumber of onto functions from a set of 4 elements to a set of 2 elements is $2^4 - 2 = 16 - 2 = 14$[cite: 4].\nTotal number of such onto functions $= 14 \\cdot \\,^7\\text{C}_3$[cite: 4]."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For $x \\in \\mathbb{R}, x \\neq 0, x \\neq 1$, let $f_0(x) = \\frac{1}{1 - x}$ and $f_{n+1}(x) = f_0(f_n(x))$, $n = 0, 1, 2, \\dots$ Then the value of $f_{100}(3) + f_1\\left(\\frac{2}{3}\\right) + f_2\\left(\\frac{3}{2}\\right)$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{4}{3}$",
+            "$\\frac{1}{3}$",
+            "$\\frac{5}{3}$",
+            "$\\frac{8}{3}$"
+          ],
+          "correctOption": 2,
+          "solution": "Iterating the composition[cite: 4]:\n$f_0(x) = \\frac{1}{1 - x}$\n$f_1(x) = f_0(f_0(x)) = \\frac{1}{1 - \\frac{1}{1-x}} = \\frac{x - 1}{x}$\n$f_2(x) = f_0(f_1(x)) = \\frac{1}{1 - \\frac{x-1}{x}} = x$\n$f_3(x) = f_0(x)$, so the sequence is periodic with period 3[cite: 4].\n1) $f_{100}(3) = f_{100 \\bmod 3}(3) = f_1(3) = \\frac{3 - 1}{3} = \\frac{2}{3}$[cite: 4].\n2) $f_1(2/3) = \\frac{2/3 - 1}{2/3} = -\\frac{1/3}{2/3} = -\\frac{1}{2}$[cite: 4].\n3) $f_2(3/2) = \\frac{3}{2}$[cite: 4].\nSum $= \\frac{2}{3} + \\left(-\\frac{1}{2}\\right) + \\frac{3}{2} = \\frac{2}{3} + 1 = \\frac{5}{3}$[cite: 4]."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the function $f: [1, \\infty) \\rightarrow [1, \\infty)$ is defined by $f(x) = 3^{x(x-1)}$, then $f^{-1}(x)$ is:",
+          "image": "",
+          "options": [
+            "$(\\frac{1}{3})^{x(x-1)}$",
+            "$\\frac{1}{2}(1 - \\sqrt{1 + 4\\log_3 x})$",
+            "$\\frac{1}{2}(1 + \\sqrt{1 + 4\\log_3 x})$",
+            "not defined"
+          ],
+          "correctOption": 2,
+          "solution": "Let $y = 3^{x(x-1)} \\implies \\log_3 y = x^2 - x \\implies x^2 - x - \\log_3 y = 0$[cite: 4].\nUsing quadratic formula: $x = \\frac{1 \\pm \\sqrt{1 + 4\\log_3 y}}{2}$[cite: 4].\nSince domain of $f$ is $[1, \\infty)$, we have $x \\ge 1$, so we take the positive root[cite: 4]:\n$x = \\frac{1 + \\sqrt{1 + 4\\log_3 y}}{2}$[cite: 4].\nHence, $f^{-1}(x) = \\frac{1}{2}\\left(1 + \\sqrt{1 + 4\\log_3 x}\\right)$[cite: 4]."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "$A$, $B$, $C$ are sets of letters needed to spell the words STUDENT, PROGRESS and CONGRUENT respectively. Then $n(A \\cup B \\cup C) =$",
+          "image": "",
+          "correctValue": 11.0,
+          "solution": "Finding the letter sets[cite: 4]:\n$A = \\text{letters in STUDENT} = \\{S, T, U, D, E, N\\}$[cite: 4]\n$B = \\text{letters in PROGRESS} = \\{P, R, O, G, E, S\\}$[cite: 4]\n$C = \\text{letters in CONGRUENT} = \\{C, O, N, G, R, U, E, T\\}$[cite: 4]\n$A \\cup B \\cup C = \\{C, D, E, G, N, O, P, R, S, T, U\\}$[cite: 4].\nCounting the distinct letters gives $n(A \\cup B \\cup C) = 11$[cite: 4]."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "A relation on the set $A = \\{x : |x| < 3, x \\in \\mathbb{Z}\\}$ (where $\\mathbb{Z}$ is the set of integers) is defined by $R = \\{(x, y) : y = |x|, x \\neq -1\\}$. Then the number of elements in the power set of $R$ is:",
+          "image": "",
+          "correctValue": 16.0,
+          "solution": "Set $A = \\{-2, -1, 0, 1, 2\\}$[cite: 4].\nElements of $R$ for $x \\in A, x \\neq -1$[cite: 4]:\n- For $x = -2 \\implies y = |-2| = 2 \\implies (-2, 2) \\in R$\n- For $x = 0 \\implies y = |0| = 0 \\implies (0, 0) \\in R$\n- For $x = 1 \\implies y = |1| = 1 \\implies (1, 1) \\in R$\n- For $x = 2 \\implies y = |2| = 2 \\implies (2, 2) \\in R$\nThus, $R = \\{(-2, 2), (0, 0), (1, 1), (2, 2)\\}$, so $n(R) = 4$[cite: 4].\nNumber of elements in power set $P(R) = 2^{n(R)} = 2^4 = 16$[cite: 4]."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "Consider functions:\n$$f_1(x) = \\frac{1 - \\sin x}{1 + \\sin x}, \\quad f_2(x) = \\frac{1 - x}{1 + x}, \\quad f_3(x) = 1 - x, \\quad f_4(x) = \\ln\\left(\\frac{e^x + e^{-x}}{e^x - e^{-x}}\\right)$$\nHow many of these functions are an inverse of itself?",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "A function is its own inverse if $f(f(x)) = x$[cite: 4]:\n1) $f_2(x) = \\frac{1 - x}{1 + x} \\implies f_2(f_2(x)) = \\frac{1 - \\frac{1-x}{1+x}}{1 + \\frac{1-x}{1+x}} = \\frac{2x}{2} = x$ (Self-inverse)[cite: 4].\n2) $f_3(x) = 1 - x \\implies f_3(f_3(x)) = 1 - (1 - x) = x$ (Self-inverse)[cite: 4].\n3) $f_1(x)$ and $f_4(x)$ do not satisfy $f(f(x)) = x$[cite: 4].\nThus, exactly 2 functions ($f_2$ and $f_3$) are inverses of themselves[cite: 4]."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "If $f: \\mathbb{R} \\rightarrow \\mathbb{R}$, $f(x) = x^3 + 3$ and $g: \\mathbb{R} \\rightarrow \\mathbb{R}$, $g(x) = 2x + 1$, then $f^{-1}(g^{-1}(23))$ is equal to:",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "1) Find $g^{-1}(23)$: Let $g(x) = 2x + 1 = 23 \\implies 2x = 22 \\implies x = 11$, so $g^{-1}(23) = 11$[cite: 4].\n2) Find $f^{-1}(11)$: Let $f(x) = x^3 + 3 = 11 \\implies x^3 = 8 \\implies x = 2$[cite: 4].\nThus, $f^{-1}(g^{-1}(23)) = 2$[cite: 4]."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "Let $f$ be a function defined from $\\mathbb{R}^+$ to $\\mathbb{R}^+$ and $(f(xy))^2 = x(f(y))^2$ for all $x, y \\in \\mathbb{R}^+$. If $f(2) = 6$, then $f(50) =$",
+          "image": "",
+          "correctValue": 30.0,
+          "solution": "Taking square roots (since $f: \\mathbb{R}^+ \\rightarrow \\mathbb{R}^+$): $f(xy) = \\sqrt{x} f(y)$[cite: 4].\nSetting $y = 1$: $f(x) = \\sqrt{x} f(1)$[cite: 4].\nGiven $f(2) = 6 \\implies \\sqrt{2} f(1) = 6 \\implies f(1) = \\frac{6}{\\sqrt{2}} = 3\\sqrt{2}$[cite: 4].\nThen $f(50) = \\sqrt{50} f(1) = (5\\sqrt{2})(3\\sqrt{2}) = 15 \\times 2 = 30$[cite: 4]."
+        }
+      ]
+    }
+  ]
+}
