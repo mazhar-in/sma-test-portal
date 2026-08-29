@@ -4,7 +4,7 @@ import json
 import datetime
 import subprocess
 
-# --- HTML Template: Self-Contained Test Engine ---
+# --- HTML Template: Self-Contained Test Engine (with whitespace-pre-line) ---
 TEST_HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,7 +65,7 @@ TEST_HTML_TEMPLATE = """<!DOCTYPE html>
           <span id="marking-scheme" class="text-indigo-600 dark:text-indigo-400">Marks: +4, -1</span>
         </div>
 
-        <div id="question-text" class="text-sm md:text-lg text-slate-900 dark:text-slate-100 leading-relaxed font-normal">
+        <div id="question-text" class="text-sm md:text-lg text-slate-900 dark:text-slate-100 leading-relaxed font-normal whitespace-pre-line">
           <div class="p-8 text-center text-slate-400 animate-pulse">Loading question...</div>
         </div>
         
@@ -223,7 +223,7 @@ TEST_HTML_TEMPLATE = """<!DOCTYPE html>
       const markingEl = document.getElementById('marking-scheme');
       if (markingEl) markingEl.innerText = `Marks: +${marks}, ${neg}`;
 
-      let questionHTML = `<div class="mb-3">${q.question || ''}</div>`;
+      let questionHTML = `<div class="mb-3 whitespace-pre-line">${q.question || ''}</div>`;
       if (q.image) {
         questionHTML += `
           <div class="my-3 max-w-lg">
@@ -372,7 +372,7 @@ TEST_HTML_TEMPLATE = """<!DOCTYPE html>
 </body>
 </html>"""
 
-# --- HTML Template: Self-Contained Result Engine With Rank Predictor ---
+# --- HTML Template: Self-Contained Result Engine (with whitespace-pre-line & Rank Predictor) ---
 RESULT_HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -776,7 +776,7 @@ RESULT_HTML_TEMPLATE = """<!DOCTYPE html>
         const card = document.createElement('div');
         card.className = `bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-4 md:p-6 shadow-xs ${border} space-y-4`;
 
-        let questionContent = `<div class="text-slate-900 dark:text-slate-100 text-sm md:text-base leading-relaxed">${q.question || ''}</div>`;
+        let questionContent = `<div class="text-slate-900 dark:text-slate-100 text-sm md:text-base leading-relaxed whitespace-pre-line">${q.question || ''}</div>`;
         if (q.image) {
           questionContent += `
             <div class="my-3 max-w-md">
@@ -815,7 +815,7 @@ RESULT_HTML_TEMPLATE = """<!DOCTYPE html>
           ${(q.solution || q.solutionImage) ? `
             <div class="mt-4 p-4 rounded-xl bg-indigo-50/40 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900/40 text-xs md:text-sm space-y-2">
               <span class="font-bold text-indigo-600 dark:text-indigo-400 block">Explanation & Solution:</span>
-              ${q.solution ? `<div class="text-slate-700 dark:text-slate-300 leading-relaxed">${q.solution}</div>` : ''}
+              ${q.solution ? `<div class="text-slate-700 dark:text-slate-300 leading-relaxed whitespace-pre-line">${q.solution}</div>` : ''}
               ${q.solutionImage ? `
                 <div class="pt-2 max-w-md">
                   <div class="inline-block rounded-lg border border-slate-200 dark:border-slate-800 bg-white p-1.5">
@@ -852,7 +852,7 @@ def run_git_command(args):
 def sync_and_push_test(folder_name):
     """
     1. Reads tests/<folder_name>/test.json
-    2. Writes self-contained index.html & result.html (with rank predictor)
+    2. Writes self-contained index.html & result.html (with rank predictor & multi-line support)
     3. Updates assets/tests-manifest.json
     4. Automatically commits and pushes to GitHub
     """
@@ -944,6 +944,6 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         target_folder = sys.argv[1]
     else:
-        target_folder = input("Enter test folder name under tests/ (e.g. aits-03-dropper-neet-physics): ").strip()
+        target_folder = input("Enter test folder name under tests/ (e.g. aits-ft-i-pcm-jee-main-2021-physics): ").strip()
 
     sync_and_push_test(target_folder)

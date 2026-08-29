@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-dpp-01-fom-trig",
+  "title": "Fundamentals of Mathematics - Trigonometry",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The least integral value of '$a$' such that $(a-2)x^2 + 8x + a + 4 > 0$ for all $x \\in \\mathbb{R}$ is:",
+          "image": "",
+          "options": [
+            "3",
+            "5",
+            "4",
+            "6"
+          ],
+          "correctOption": 1,
+          "solution": "For the quadratic expression to be positive for all $x \\in \\mathbb{R}$:\n1) Leading coefficient $a - 2 > 0 \\implies a > 2$.\n2) Discriminant $D < 0 \\implies 8^2 - 4(a - 2)(a + 4) < 0$\n$64 - 4(a^2 + 2a - 8) < 0$\n$16 - (a^2 + 2a - 8) < 0$\n$a^2 + 2a - 24 > 0 \\implies (a + 6)(a - 4) > 0$.\nSince $a > 2$, we get $a > 4$. Thus, the least integral value is $a = 5$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The number of real solutions of the equation $2^{x/2} + (\\sqrt{2} + 1)^x = (5 + 2\\sqrt{2})^{x/2}$ is:",
+          "image": "",
+          "options": [
+            "1",
+            "2",
+            "4",
+            "infinite"
+          ],
+          "correctOption": 0,
+          "solution": "Notice that $(\\sqrt{2})^2 + (\\sqrt{2}+1)^2 = 2 + (2 + 1 + 2\\sqrt{2}) = 5 + 2\\sqrt{2}$.\nLetting $u = \\sqrt{2}$, $v = \\sqrt{2}+1$, and $w = \\sqrt{5+2\\sqrt{2}}$, we have $u^2 + v^2 = w^2$.\nThe given equation can be written as $\\left(\\frac{\\sqrt{2}}{\\sqrt{5+2\\sqrt{2}}}\\right)^x + \\left(\\frac{\\sqrt{2}+1}{\\sqrt{5+2\\sqrt{2}}}\\right)^x = 1$.\nSince both bases are in $(0, 1)$, the left-hand side is strictly decreasing with respect to $x$. Hence, there exists exactly 1 unique real solution ($x = 2$)."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $y \\neq 0$, then the number of values of the pair $(x, y)$ such that\n$$x + y + \\frac{x}{y} = \\frac{1}{2} \\quad \\text{and} \\quad (x + y)\\frac{x}{y} = -\\frac{1}{2}$$\nis:",
+          "image": "",
+          "options": [
+            "1",
+            "2",
+            "0",
+            "3"
+          ],
+          "correctOption": 1,
+          "solution": "Let $u = x + y$ and $v = x/y$.\nThen $u + v = \\frac{1}{2}$ and $uv = -\\frac{1}{2}$.\n$u, v$ are roots of $t^2 - \\frac{1}{2}t - \\frac{1}{2} = 0 \\implies 2t^2 - t - 1 = 0 \\implies (2t + 1)(t - 1) = 0 \\implies t = 1, -\\frac{1}{2}$.\nCase 1: $u = 1, v = -1/2 \\implies x/y = -1/2 \\implies x = -y/2$. Then $x + y = 1 \\implies y/2 = 1 \\implies y = 2, x = -1$. (Valid pair: $(-1, 2)$)\nCase 2: $u = -1/2, v = 1 \\implies x = y$. Then $x + y = 2x = -1/2 \\implies x = -1/4, y = -1/4$. (Valid pair: $(-1/4, -1/4)$).\nThus, there are 2 valid pairs."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the number of consecutive odd integers whose sum can be expressed as $50^2 - 13^2$ is $k$, then $k$ can be:",
+          "image": "",
+          "options": [
+            "33",
+            "35",
+            "37",
+            "39"
+          ],
+          "correctOption": 2,
+          "solution": "Sum $S = 50^2 - 13^2 = (50 - 13)(50 + 13) = 37 \\times 63 = 2331$.\nThe sum of $k$ consecutive odd integers starting at $2a + 1$ is $S = k(2a + k)$.\nHence, $k$ must divide $S = 37 \\times 63 = 3^2 \\times 7 \\times 37$.\nAmong the given options (33, 35, 37, 39), $37$ is a direct divisor of $2331$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\alpha, \\beta$ are the roots of the quadratic equation\n$$x^2 - \\left(3 + 2^{\\sqrt{\\log_2 3}} - 3^{\\sqrt{\\log_3 2}}\\right)x - 2\\left(3^{\\log_3 2} - 2^{\\log_2 3}\\right) = 0$$\nthen the value of $\\alpha^2 + \\alpha\\beta + \\beta^2$ is equal to:",
+          "image": "",
+          "options": [
+            "11",
+            "7",
+            "3",
+            "5"
+          ],
+          "correctOption": 1,
+          "solution": "Using properties of logarithms:\n$2^{\\sqrt{\\log_2 3}} = 2^{(\\log_2 3)/\\sqrt{\\log_2 3}} = (2^{\\log_2 3})^{1/\\sqrt{\\log_2 3}} = 3^{\\sqrt{\\log_3 2}}$, so $2^{\\sqrt{\\log_2 3}} - 3^{\\sqrt{\\log_3 2}} = 0$.\nAlso, $3^{\\log_3 2} = 2$ and $2^{\\log_2 3} = 3$.\nThe equation reduces to $x^2 - 3x - 2(2 - 3) = 0 \\implies x^2 - 3x + 2 = 0$.\nHere, sum $\\alpha + \\beta = 3$ and product $\\alpha\\beta = 2$.\n$\\alpha^2 + \\alpha\\beta + \\beta^2 = (\\alpha + \\beta)^2 - \\alpha\\beta = 3^2 - 2 = 7$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The factors of $\\sin\\theta + \\sin\\phi - \\cos\\theta \\sin(\\theta + \\phi)$ are:",
+          "image": "",
+          "options": [
+            "$\\sin\\phi$ and $1 + \\sin(\\theta + \\phi)$",
+            "$\\sin\\phi$ and $1 - \\cos(\\theta + \\phi)$",
+            "$\\sin\\theta$ and $1 + \\cos(\\theta + \\phi)$",
+            "None of the above"
+          ],
+          "correctOption": 1,
+          "solution": "Expression $E = \\sin\\theta + \\sin\\phi - \\cos\\theta(\\sin\\theta\\cos\\phi + \\cos\\theta\\sin\\phi)$\n$= \\sin\\theta(1 - \\cos^2\\theta\\frac{\\sin\\phi}{\\sin\\theta} - \\dots)$\nAlternatively, expand: $\\sin\\theta - \\cos\\theta\\sin(\\theta+\\phi) + \\sin\\phi = \\sin((\\theta+\\phi)-\\phi) - \\cos\\theta\\sin(\\theta+\\phi) + \\sin\\phi$\n$= \\sin(\\theta+\\phi)\\cos\\phi - \\cos(\\theta+\\phi)\\sin\\phi - \\cos\\theta\\sin(\\theta+\\phi) + \\sin\\phi$\n$= \\sin(\\theta+\\phi)(\\cos\\phi - \\cos\\theta) + \\sin\\phi(1 - \\cos(\\theta+\\phi)) = \\sin\\phi(1 - \\cos(\\theta+\\phi))$ upon factoring."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The coefficient of $x$ in the polynomial $(x - \\alpha)(x - \\beta)(x - \\gamma)$ where $\\alpha = \\cos 75^\\circ$, $\\beta = \\cos 45^\\circ$ and $\\gamma = \\cos 165^\\circ$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{2\\sqrt{2}+1}{4}$",
+            "$\\frac{-2\\sqrt{2}+1}{4}$",
+            "$\\frac{3}{4}$",
+            "$-\\frac{3}{4}$"
+          ],
+          "correctOption": 3,
+          "solution": "The coefficient of $x$ is $\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha$.\nNote that $\\gamma = \\cos 165^\\circ = -\\cos 15^\\circ$, $\\alpha = \\cos 75^\\circ = \\sin 15^\\circ$, $\\beta = \\frac{1}{\\sqrt{2}}$.\n$\\alpha + \\gamma = \\sin 15^\\circ - \\cos 15^\\circ = -\\sqrt{2}\\cos 60^\\circ = -\\frac{1}{\\sqrt{2}}$.\n$\\alpha\\gamma = -\\sin 15^\\circ\\cos 15^\\circ = -\\frac{1}{2}\\sin 30^\\circ = -\\frac{1}{4}$.\n$\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = \\beta(\\alpha + \\gamma) + \\alpha\\gamma = \\frac{1}{\\sqrt{2}}\\left(-\\frac{1}{\\sqrt{2}}\\right) - \\frac{1}{4} = -\\frac{1}{2} - \\frac{1}{4} = -\\frac{3}{4}$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which one of the following is correct?",
+          "image": "",
+          "options": [
+            "$6\\cos 20^\\circ - 8\\cos^3 20^\\circ = 1$",
+            "$8\\sin^3 10^\\circ - 6\\sin 10^\\circ = -1$",
+            "$6\\cos^3 20^\\circ - 8\\cos 20^\\circ = 1$",
+            "$8\\sin 10^\\circ - 6\\sin^3 30^\\circ = 1$"
+          ],
+          "correctOption": 1,
+          "solution": "Using the triple angle formula: $\\sin 3\\theta = 3\\sin\\theta - 4\\sin^3\\theta$.\nMultiply by $-2$: $-2\\sin 3\\theta = 8\\sin^3\\theta - 6\\sin\\theta$.\nFor $\\theta = 10^\\circ$: $8\\sin^3 10^\\circ - 6\\sin 10^\\circ = -2\\sin 30^\\circ = -2\\left(\\frac{1}{2}\\right) = -1$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\cos(\\alpha + \\beta) = 0$, then $\\operatorname{cosec}(\\alpha - \\beta) =$",
+          "image": "",
+          "options": [
+            "$\\cos 2\\beta$",
+            "$\\sec 2\\beta$",
+            "$-\\sec 2\\beta$",
+            "$\\pm\\sec 2\\beta$"
+          ],
+          "correctOption": 3,
+          "solution": "$\\cos(\\alpha + \\beta) = 0 \\implies \\alpha + \\beta = (2n + 1)\\frac{\\pi}{2} \\implies \\alpha = (2n + 1)\\frac{\\pi}{2} - \\beta$.\n$\\alpha - \\beta = (2n + 1)\\frac{\\pi}{2} - 2\\beta$.\n$\\sin(\\alpha - \\beta) = \\sin\\left((2n + 1)\\frac{\\pi}{2} - 2\\beta\\right) = \\pm\\cos 2\\beta$.\nTherefore, $\\operatorname{cosec}(\\alpha - \\beta) = \\frac{1}{\\sin(\\alpha - \\beta)} = \\pm\\frac{1}{\\cos 2\\beta} = \\pm\\sec 2\\beta$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\tan\\alpha = \\frac{1 + \\sqrt{1 + \\sin 2\\theta}}{1 - \\sqrt{1 - \\sin 2\\theta}}$ where $0 < \\theta < \\frac{\\pi}{4}$, then the value of $\\alpha$ can be:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{2} - \\frac{\\theta}{2}$",
+            "$\\frac{\\pi}{4} + \\frac{\\theta}{2}$",
+            "$\\pi + \\theta$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "For $0 < \\theta < \\frac{\\pi}{4}$, $\\cos\\theta > \\sin\\theta > 0$.\n$\\sqrt{1 + \\sin 2\\theta} = \\cos\\theta + \\sin\\theta$ and $\\sqrt{1 - \\sin 2\\theta} = \\cos\\theta - \\sin\\theta$.\n$\\tan\\alpha = \\frac{1 + \\cos\\theta + \\sin\\theta}{1 - (\\cos\\theta - \\sin\\theta)} = \\frac{1 + \\cos\\theta + \\sin\\theta}{1 - \\cos\\theta + \\sin\\theta} = \\frac{2\\cos^2(\\theta/2) + 2\\sin(\\theta/2)\\cos(\\theta/2)}{2\\sin^2(\\theta/2) + 2\\sin(\\theta/2)\\cos(\\theta/2)}$\n$= \\frac{2\\cos(\\theta/2)[\\cos(\\theta/2) + \\sin(\\theta/2)]}{2\\sin(\\theta/2)[\\sin(\\theta/2) + \\cos(\\theta/2)]} = \\cot\\left(\\frac{\\theta}{2}\\right) = \\tan\\left(\\frac{\\pi}{2} - \\frac{\\theta}{2}\\right)$.\nThus, $\\alpha = \\frac{\\pi}{2} - \\frac{\\theta}{2}$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $a \\le 3\\cos x + 5\\sin\\left(x - \\frac{\\pi}{6}\\right) \\le b$ holds good for all $x$, where the length of interval $[a, b]$ is minimum, then $a + 2b =$",
+          "image": "",
+          "options": [
+            "$\\sqrt{19}$",
+            "$\\sqrt{34}$",
+            "4",
+            "8"
+          ],
+          "correctOption": 0,
+          "solution": "$E = 3\\cos x + 5\\left(\\sin x\\cos\\frac{\\pi}{6} - \\cos x\\sin\\frac{\\pi}{6}\\right) = 3\\cos x + \\frac{5\\sqrt{3}}{2}\\sin x - \\frac{5}{2}\\cos x = \\frac{1}{2}\\cos x + \\frac{5\\sqrt{3}}{2}\\sin x$.\nMaximum value $b = \\sqrt{\\left(\\frac{1}{2}\\right)^2 + \\left(\\frac{5\\sqrt{3}}{2}\\right)^2} = \\sqrt{\\frac{1 + 75}{4}} = \\sqrt{\\frac{76}{4}} = \\sqrt{19}$.\nMinimum value $a = -\\sqrt{19}$.\nThen $a + 2b = -\\sqrt{19} + 2\\sqrt{19} = \\sqrt{19}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $2\\cos\\theta + \\sin\\theta = 1$ (where $\\theta \\neq \\frac{\\pi}{2}$), then $7\\cos\\theta + 6\\sin\\theta$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}$",
+            "2",
+            "$\\frac{11}{2}$",
+            "$\\frac{46}{5}$"
+          ],
+          "correctOption": 1,
+          "solution": "Express in terms of $t = \\tan(\\theta/2)$:\n$2\\left(\\frac{1 - t^2}{1 + t^2}\\right) + \\frac{2t}{1 + t^2} = 1 \\implies 2 - 2t^2 + 2t = 1 + t^2 \\implies 3t^2 - 2t - 1 = 0 \\implies (3t + 1)(t - 1) = 0$.\nSince $\\theta \\neq \\pi/2$, $t \\neq 1$, so $t = -1/3$.\nThen $\\cos\\theta = \\frac{1 - (-1/3)^2}{1 + (-1/3)^2} = \\frac{8/9}{10/9} = \\frac{4}{5}$ and $\\sin\\theta = \\frac{2(-1/3)}{10/9} = -\\frac{3}{5}$.\n$7\\cos\\theta + 6\\sin\\theta = 7\\left(\\frac{4}{5}\\right) + 6\\left(-\\frac{3}{5}\\right) = \\frac{28 - 18}{5} = \\frac{10}{5} = 2$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\sin 75^\\circ - \\cos 105^\\circ \\neq \\cos\\theta$, then:",
+          "image": "",
+          "options": [
+            "$\\theta \\in (0, 60^\\circ)$",
+            "$\\theta \\in (0, \\frac{\\pi}{2})$",
+            "$\\theta \\in \\mathbb{I}$",
+            "$\\theta \\in \\mathbb{R}$"
+          ],
+          "correctOption": 3,
+          "solution": "LHS $= \\sin 75^\\circ - \\cos(180^\\circ - 75^\\circ) = \\sin 75^\\circ + \\cos 75^\\circ = \\sqrt{2}\\sin(75^\\circ + 45^\\circ) = \\sqrt{2}\\sin 120^\\circ = \\sqrt{2}\\left(\\frac{\\sqrt{3}}{2}\\right) = \\sqrt{\\frac{3}{2}} \\approx 1.225$.\nSince $-1 \\le \\cos\\theta \\le 1$ for all real $\\theta$, $\\cos\\theta$ can never equal $\\sqrt{1.5}$.\nHence, the inequality holds for all $\\theta \\in \\mathbb{R}$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $E = \\sin\\theta + \\cos\\theta$, then:",
+          "image": "",
+          "options": [
+            "$E < 1$ for $\\theta \\in (\\frac{\\pi}{4}, \\frac{\\pi}{2})$",
+            "$E > \\sqrt{2}$ for $\\theta \\in (\\frac{\\pi}{4}, \\frac{\\pi}{2})$",
+            "$1 < E \\le \\sqrt{2}$ for $\\theta \\in (0, \\frac{\\pi}{4})$",
+            "For $\\theta \\in (0, \\frac{\\pi}{4})$, range of $E$ is $(0, \\sqrt{2})$"
+          ],
+          "correctOption": 2,
+          "solution": "$E = \\sqrt{2}\\sin\\left(\\theta + \\frac{\\pi}{4}\\right)$.\nFor $\\theta \\in \\left(0, \\frac{\\pi}{4}\\right)$, $\\theta + \\frac{\\pi}{4} \\in \\left(\\frac{\\pi}{4}, \\frac{\\pi}{2}\\right)$.\nThus, $\\sin\\left(\\theta + \\frac{\\pi}{4}\\right) \\in \\left(\\frac{1}{\\sqrt{2}}, 1\\right]$, meaning $E \\in (1, \\sqrt{2}]$. Hence, $1 < E \\le \\sqrt{2}$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\alpha, \\beta$ are acute angles and $\\tan(\\alpha + \\beta) = 1$ and $\\sec(\\alpha - \\beta) = 2$, then $\\tan 2\\alpha =$ (where $\\alpha < \\beta$)",
+          "image": "",
+          "options": [
+            "$\\cot\\frac{7\\pi}{12}$",
+            "$\\tan\\frac{\\pi}{12}$",
+            "$\\cot\\frac{\\pi}{12}$",
+            "$-\\cot\\frac{\\pi}{12}$"
+          ],
+          "correctOption": 0,
+          "solution": "Given $\\tan(\\alpha + \\beta) = 1 \\implies \\alpha + \\beta = \\frac{\\pi}{4}$.\n$\\sec(\\alpha - \\beta) = 2 \\implies \\cos(\\alpha - \\beta) = \\frac{1}{2}$.\nSince $\\alpha < \\beta$, $\\alpha - \\beta = -\\frac{\\pi}{3}$.\nAdding equations: $2\\alpha = \\frac{\\pi}{4} - \\frac{\\pi}{3} = -\\frac{\\pi}{12}$.\n$\\tan 2\\alpha = \\tan\\left(-\\frac{\\pi}{12}\\right) = -\\tan\\frac{\\pi}{12} = \\cot\\left(\\frac{\\pi}{2} + \\frac{\\pi}{12}\\right) = \\cot\\frac{7\\pi}{12}$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Statement-1: The maximum value of $\\frac{1}{3\\cos x + 4\\sin x + 1}$ is $\\frac{1}{6}$.\nStatement-2: $-\\sqrt{a^2 + b^2} \\le a\\sin x + b\\cos x \\le \\sqrt{a^2 + b^2}$.",
+          "image": "",
+          "options": [
+            "Statement-1 is True, Statement-2 is True; Statement-2 is a correct explanation for Statement-1",
+            "Statement-1 is True, Statement-2 is True; Statement-2 is NOT a correct explanation for Statement-1",
+            "Statement-1 is True, Statement-2 is False",
+            "Statement-1 is False, Statement-2 is True"
+          ],
+          "correctOption": 3,
+          "solution": "The expression $3\\cos x + 4\\sin x$ ranges from $-5$ to $5$.\nThus $3\\cos x + 4\\sin x + 1$ can be zero (e.g. when $3\\cos x + 4\\sin x = -1$), so the reciprocal function goes to $\\pm\\infty$ and has no finite upper bound.\nThus, Statement-1 is False, and Statement-2 is standard and True."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $f(\\theta) = \\cos^2\\theta + \\sin^4\\theta$, then the minimum value of $f(\\theta)$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{4}$",
+            "$\\frac{3}{4}$",
+            "1",
+            "$\\frac{1}{2}$"
+          ],
+          "correctOption": 1,
+          "solution": "$f(\\theta) = 1 - \\sin^2\\theta + \\sin^4\\theta = \\left(\\sin^2\\theta - \\frac{1}{2}\\right)^2 + \\frac{3}{4}$.\nThe minimum occurs when $\\sin^2\\theta = \\frac{1}{2}$, giving minimum value $\\frac{3}{4}$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\cos\\alpha + \\cos\\beta = \\frac{3}{2}$ and $\\sin\\alpha + \\sin\\beta = \\frac{1}{2}$ and $\\theta$ is the arithmetic mean of $\\alpha$ and $\\beta$, then $\\sin 2\\theta + \\cos 2\\theta$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{3}{5}$",
+            "$\\frac{7}{5}$",
+            "$\\frac{4}{5}$",
+            "$\\frac{8}{5}$"
+          ],
+          "correctOption": 1,
+          "solution": "Here $\\theta = \\frac{\\alpha + \\beta}{2}$.\n$\\cos\\alpha + \\cos\\beta = 2\\cos\\left(\\frac{\\alpha+\\beta}{2}\\right)\\cos\\left(\\frac{\\alpha-\\beta}{2}\\right) = 2\\cos\\theta\\cos\\left(\\frac{\\alpha-\\beta}{2}\\right) = \\frac{3}{2}$.\n$\\sin\\alpha + \\sin\\beta = 2\\sin\\left(\\frac{\\alpha+\\beta}{2}\\right)\\cos\\left(\\frac{\\alpha-\\beta}{2}\\right) = 2\\sin\\theta\\cos\\left(\\frac{\\alpha-\\beta}{2}\\right) = \\frac{1}{2}$.\nDividing gives $\\tan\\theta = \\frac{1/2}{3/2} = \\frac{1}{3}$.\nThen $\\sin 2\\theta = \\frac{2\\tan\\theta}{1 + \\tan^2\\theta} = \\frac{2(1/3)}{1 + 1/9} = \\frac{2/3}{10/9} = \\frac{6}{10} = \\frac{3}{5}$.\n$\\cos 2\\theta = \\frac{1 - \\tan^2\\theta}{1 + \\tan^2\\theta} = \\frac{1 - 1/9}{1 + 1/9} = \\frac{8/9}{10/9} = \\frac{8}{10} = \\frac{4}{5}$.\n$\\sin 2\\theta + \\cos 2\\theta = \\frac{3}{5} + \\frac{4}{5} = \\frac{7}{5}$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The value of $\\frac{1}{\\cos 285^\\circ} + \\frac{1}{\\sqrt{3}\\sin 255^\\circ}$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{3} - \\sqrt{2}$",
+            "$2\\sqrt{2}$",
+            "$\\frac{4\\sqrt{2}}{\\sqrt{3}}$",
+            "$\\frac{2\\sqrt{2}}{3}$"
+          ],
+          "correctOption": 2,
+          "solution": "$\\cos 285^\\circ = \\cos(360^\\circ - 75^\\circ) = \\cos 75^\\circ = \\sin 15^\\circ$.\n$\\sin 255^\\circ = \\sin(270^\\circ - 15^\\circ) = -\\cos 15^\\circ$.\nExpression $= \\frac{1}{\\sin 15^\\circ} - \\frac{1}{\\sqrt{3}\\cos 15^\\circ} = \\frac{\\sqrt{3}\\cos 15^\\circ - \\sin 15^\\circ}{\\sqrt{3}\\sin 15^\\circ\\cos 15^\\circ} = \\frac{2\\left(\\frac{\\sqrt{3}}{2}\\cos 15^\\circ - \\frac{1}{2}\\sin 15^\\circ\\right)}{\\frac{\\sqrt{3}}{2}(2\\sin 15^\\circ\\cos 15^\\circ)}$\n$= \\frac{2\\sin(60^\\circ - 15^\\circ)}{\\frac{\\sqrt{3}}{2}\\sin 30^\\circ} = \\frac{2\\sin 45^\\circ}{\\frac{\\sqrt{3}}{2}\\left(\\frac{1}{2}\\right)} = \\frac{2(1/\\sqrt{2})}{\\sqrt{3}/4} = \\frac{\\sqrt{2}}{\\sqrt{3}/4} = \\frac{4\\sqrt{2}}{\\sqrt{3}}$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Let $P$ denote the value of $\\cos\\alpha - \\cos 2\\alpha + \\cos 3\\alpha$ where $\\alpha = \\frac{\\pi}{7}$ and $Q$ denote the value of $8\\cos\\alpha\\cos 2\\alpha\\cos 4\\alpha$ where $\\alpha = \\frac{\\pi}{7}$. Then $P^2 + Q^2$ equals:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{4}$",
+            "$\\frac{3}{4}$",
+            "$\\frac{5}{4}$",
+            "$\\frac{7}{4}$"
+          ],
+          "correctOption": 2,
+          "solution": "For $\\alpha = \\frac{\\pi}{7}$, $P = \\cos\\frac{\\pi}{7} + \\cos\\frac{3\\pi}{7} + \\cos\\frac{5\\pi}{7} = \\frac{\\sin(3\\pi/7)}{2\\sin(\\pi/7)} = \\frac{1}{2}$.\n$Q = 8\\cos\\frac{\\pi}{7}\\cos\\frac{2\\pi}{7}\\cos\\frac{4\\pi}{7} = 8\\left(-\\frac{1}{8}\\right) = -1$.\nThen $P^2 + Q^2 = \\left(\\frac{1}{2}\\right)^2 + (-1)^2 = \\frac{1}{4} + 1 = \\frac{5}{4}$."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "Find the number of real solutions of the equation:\n$$\\sqrt{x^2 - 4x + 3} + \\sqrt{x^2 - 9} = \\sqrt{4x^2 - 14x + 6}$$",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Factoring the terms:\n$x^2 - 4x + 3 = (x - 1)(x - 3)$\n$x^2 - 9 = (x - 3)(x + 3)$\n$4x^2 - 14x + 6 = 2(2x^2 - 7x + 3) = 2(x - 3)(2x - 1)$.\nFor all radicals to be simultaneously defined, $x = 3$ is a common root.\nFor $x \\ge 3$: $\\sqrt{x - 3}[\\sqrt{x - 1} + \\sqrt{x + 3}] = \\sqrt{x - 3}\\sqrt{4x - 2}$.\n$x = 3$ is 1 solution. Canceling $\\sqrt{x - 3}$ and squaring gives $\\sqrt{x^2 + 2x - 3} = x - 3 \\implies x^2 + 2x - 3 = x^2 - 6x + 9 \\implies 8x = 12 \\implies x = 1.5$ (rejected since $x \\ge 3$).\nThus, there is only 1 real solution ($x = 3$)."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "The number of positive integers satisfying the equation $x + \\log_{10}(2^x + 1) = x\\log_{10} 5 + \\log_{10} 6$ is:",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Rewrite the equation:\n$\\log_{10}(10^x) + \\log_{10}(2^x + 1) = \\log_{10}(5^x) + \\log_{10} 6$\n$\\log_{10}\\left[10^x(2^x + 1)\\right] = \\log_{10}\\left[6 \\cdot 5^x\\right]$\n$10^x(2^x + 1) = 6 \\cdot 5^x \\implies 2^x(2^x + 1) = 6$\n$(2^x)^2 + (2^x) - 6 = 0 \\implies (2^x + 3)(2^x - 2) = 0$.\nSince $2^x > 0$, we have $2^x = 2 \\implies x = 1$.\nThus, exactly 1 positive integer satisfies the equation."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "For how many distinct values of $A$ between $0^\\circ$ and $360^\\circ$ is the expression $\\frac{\\sin A + \\sin 2A + \\sin 3A}{\\cos A + \\cos 2A + \\cos 3A}$ undefined?",
+          "image": "",
+          "correctValue": 6.0,
+          "solution": "The expression is undefined when denominator is zero:\n$\\cos A + \\cos 2A + \\cos 3A = 0$\n$2\\cos 2A\\cos A + \\cos 2A = \\cos 2A(2\\cos A + 1) = 0$.\n1) $\\cos 2A = 0 \\implies 2A = 90^\\circ, 270^\\circ, 450^\\circ, 630^\\circ \\implies A = 45^\\circ, 135^\\circ, 225^\\circ, 315^\\circ$ (4 values).\n2) $2\\cos A + 1 = 0 \\implies \\cos A = -1/2 \\implies A = 120^\\circ, 240^\\circ$ (2 values).\nNone of these make the numerator simultaneously vanish in a way to form removable singularities.\nTotal distinct values in $(0^\\circ, 360^\\circ)$ is $4 + 2 = 6$."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "If $3\\tan(\\theta - 30^\\circ) = \\tan(\\theta + 120^\\circ)$, then the value of $\\cos 2\\theta$ equals:",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Notice that $(\\theta + 120^\\circ) - (\\theta - 30^\\circ) = 150^\\circ$.\nLet $\\alpha = \\theta - 30^\\circ$, then $\\theta + 120^\\circ = 180^\\circ + \\theta - 60^\\circ = \\dots$\nUsing $\\frac{\\tan(\\theta + 120^\\circ)}{\\tan(\\theta - 30^\\circ)} = 3 \\implies \\frac{\\sin(\\theta+120^\\circ)\\cos(\\theta-30^\\circ)}{\\cos(\\theta+120^\\circ)\\sin(\\theta-30^\\circ)} = \\frac{3}{1}$.\nApplying componendo and dividendo:\n$\\frac{\\sin(2\\theta + 90^\\circ)}{\\sin(150^\\circ)} = \\frac{3 + 1}{3 - 1} = 2 \\implies \\frac{\\cos 2\\theta}{1/2} = 2 \\implies \\cos 2\\theta = 1$."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "If $\\cos A = \\frac{3}{4}$, then the value of $16\\cos^2\\left(\\frac{A}{2}\\right) - 32\\sin\\left(\\frac{A}{2}\\right)\\sin\\left(\\frac{5A}{2}\\right)$ is:",
+          "image": "",
+          "options": [],
+          "correctValue": 3.0,
+          "solution": "Using $2\\cos^2(A/2) = 1 + \\cos A$:\n$16\\cos^2(A/2) = 8(1 + \\cos A) = 8 + 8\\cos A$.\nUsing $2\\sin(5A/2)\\sin(A/2) = \\cos 2A - \\cos 3A$:\n$32\\sin(A/2)\\sin(5A/2) = 16(\\cos 2A - \\cos 3A)$.\nSubstituting $\\cos A = 3/4$:\n$\\cos 2A = 2\\cos^2 A - 1 = 2(9/16) - 1 = 1/8$.\n$\\cos 3A = 4\\cos^3 A - 3\\cos A = 4(27/64) - 3(3/4) = 27/16 - 36/16 = -9/16$.\nThen $16(\\cos 2A - \\cos 3A) = 16(1/8 - (-9/16)) = 16(11/16) = 11$.\nTotal value $= (8 + 8(3/4)) - 11 = (8 + 6) - 11 = 14 - 11 = 3$."
+        }
+      ]
+    }
+  ]
+}

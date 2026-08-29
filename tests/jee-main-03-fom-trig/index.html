@@ -216,7 +216,7 @@
       const markingEl = document.getElementById('marking-scheme');
       if (markingEl) markingEl.innerText = `Marks: +${marks}, ${neg}`;
 
-      let questionHTML = `<div class="mb-3">${q.question || ''}</div>`;
+      let questionHTML = `<div class="mb-3 whitespace-pre-line">${q.question || ''}</div>`;
       if (q.image) {
         questionHTML += `
           <div class="my-3 max-w-lg">
