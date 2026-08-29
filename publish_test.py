@@ -372,7 +372,7 @@ TEST_HTML_TEMPLATE = """<!DOCTYPE html>
 </body>
 </html>"""
 
-# --- HTML Template: Self-Contained Result Engine (with whitespace-pre-line & Rank Predictor) ---
+# --- HTML Template: Self-Contained Result Engine ---
 RESULT_HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -838,23 +838,21 @@ RESULT_HTML_TEMPLATE = """<!DOCTYPE html>
 
 
 def run_git_command(args):
-    """Runs a git command and prints output."""
+    """Runs a git command allowing interactive terminal prompts without hanging."""
     try:
-        res = subprocess.run(args, check=True, text=True, capture_output=True)
-        if res.stdout.strip():
-            print(res.stdout.strip())
-        return True
+        res = subprocess.run(args, check=True)
+        return res.returncode == 0
     except subprocess.CalledProcessError as e:
-        print(f"⚠️ Git Error ({' '.join(args)}):\n{e.stderr.strip()}")
+        print(f"⚠️ Git Error: Command '{' '.join(args)}' returned non-zero exit status {e.returncode}")
         return False
 
 
 def sync_and_push_test(folder_name):
     """
     1. Reads tests/<folder_name>/test.json
-    2. Writes self-contained index.html & result.html (with rank predictor & multi-line support)
+    2. Writes self-contained index.html & result.html
     3. Updates assets/tests-manifest.json
-    4. Automatically commits (if changes exist) and pushes to GitHub
+    4. Commits and pushes changes interactively to GitHub
     """
     base_dir = os.path.dirname(os.path.abspath(__file__))
     test_dir = os.path.join(base_dir, 'tests', folder_name)
@@ -933,14 +931,14 @@ def sync_and_push_test(folder_name):
         commit_msg = f"Publish test: {title} ({folder_name})"
         run_git_command(["git", "commit", "-m", commit_msg])
     else:
-        print("ℹ️ Working tree clean — no new changes to commit.")
+        print("ℹ️ Working tree clean — no new file changes to commit.")
     
     push_success = run_git_command(["git", "push", "origin", "main"])
     if push_success:
         print(f"\n🎉 Test '{title}' successfully synced and deployed to GitHub!")
         print("Render will deploy the updates in ~20 seconds.")
     else:
-        print("\n⚠️ Files were generated locally, but Git push encountered an issue. Verify remote branch and connection.")
+        print("\n⚠️ Push encountered an issue. Check connection or branch credentials.")
 
     return True
 
