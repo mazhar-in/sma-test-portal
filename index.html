@@ -57,10 +57,10 @@
 </head>
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col antialiased">
 
-  <!-- Header with Clickable Branding -->
+  <!-- Header with Clickable Branding & Category Portals Nav -->
   <header class="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 sticky top-0 z-30">
-    <div class="max-w-6xl mx-auto px-4 h-14 md:h-16 flex items-center justify-between">
-      <a href="index.html" class="flex items-center space-x-2.5 group focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-lg p-1 -ml-1 transition-transform active:scale-95" aria-label="SMA Test Portal Home">
+    <div class="max-w-6xl mx-auto px-4 h-14 md:h-16 flex items-center justify-between gap-2">
+      <a href="index.html" class="flex items-center space-x-2.5 group focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-lg p-1 -ml-1 transition-transform active:scale-95 shrink-0" aria-label="SMA Test Portal Home">
         <div class="w-8 h-8 rounded-lg bg-indigo-600 group-hover:bg-indigo-500 text-white flex items-center justify-center font-extrabold text-sm shadow-sm transition-colors">
           SMA
         </div>
@@ -68,9 +68,19 @@
           SMA Test Portal
         </span>
       </a>
-      <span class="text-[11px] md:text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-full border border-slate-200 dark:border-slate-700">
-        NTA Mock Series
-      </span>
+
+      <!-- Dedicated Category Hubs -->
+      <nav class="flex items-center space-x-1.5 sm:space-x-2 text-xs font-semibold overflow-x-auto no-scrollbar py-1">
+        <a href="jee-main.html" class="px-2.5 py-1 rounded-lg bg-sky-50 dark:bg-sky-950/60 text-sky-700 dark:text-sky-300 border border-sky-200 dark:border-sky-800/80 hover:bg-sky-100 transition-colors shrink-0">
+          JEE Main
+        </a>
+        <a href="jee-advanced.html" class="px-2.5 py-1 rounded-lg bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800/80 hover:bg-amber-100 transition-colors shrink-0">
+          JEE Adv
+        </a>
+        <a href="neet.html" class="px-2.5 py-1 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/80 hover:bg-emerald-100 transition-colors shrink-0">
+          NEET
+        </a>
+      </nav>
     </div>
   </header>
 
@@ -93,7 +103,7 @@
       </div>
     </section>
 
-    <!-- Section 2: Archive & Filters -->
+    <!-- Section 2: Archive & Filter Buttons -->
     <section class="space-y-4 md:space-y-6" aria-labelledby="archive-heading">
       <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-slate-200 dark:border-slate-800 pb-3">
         <div>
@@ -103,10 +113,10 @@
 
         <!-- Filter Controls -->
         <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 -mx-4 px-4 sm:mx-0 sm:px-0" id="filter-buttons">
-          <button onclick="filterTests('all')" class="filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-slate-900 dark:bg-indigo-600 text-white shadow-sm" data-filter="all">All Tests</button>
-          <button onclick="filterTests('jee-main')" class="filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800" data-filter="jee-main">JEE Main</button>
-          <button onclick="filterTests('jee-adv')" class="filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800" data-filter="jee-adv">JEE Advanced</button>
-          <button onclick="filterTests('neet')" class="filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800" data-filter="neet">NEET</button>
+          <button onclick="filterTests('all')" class="filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-slate-900 dark:bg-indigo-600 text-white shadow-sm transition-colors" data-filter="all">All Tests</button>
+          <button onclick="filterTests('jee-main')" class="filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" data-filter="jee-main">JEE Main</button>
+          <button onclick="filterTests('jee-adv')" class="filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" data-filter="jee-adv">JEE Advanced</button>
+          <button onclick="filterTests('neet')" class="filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" data-filter="neet">NEET</button>
         </div>
       </div>
 
@@ -118,7 +128,7 @@
 
   </main>
 
-  <!-- Footer with Clickable Branding & Attribution -->
+  <!-- Footer with Clickable Branding & Author Attribution -->
   <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-6 text-center text-xs md:text-sm text-slate-500 dark:text-slate-400">
     <div class="max-w-6xl mx-auto px-4 space-y-1">
       <p>
@@ -146,7 +156,10 @@
 
     function renderLatestTest(test) {
       const container = document.getElementById('latest-test-container');
-      if (!test) return;
+      if (!test) {
+        container.innerHTML = `<div class="p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 text-center text-slate-500 text-sm">No active tests available right now.</div>`;
+        return;
+      }
       container.innerHTML = `
         <div class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white rounded-2xl p-5 md:p-8 shadow-xl border border-indigo-900/50">
           <div class="flex flex-col md:flex-row md:items-center justify-between gap-5">
@@ -217,8 +230,8 @@
       document.querySelectorAll('.filter-btn').forEach(btn => {
         const active = btn.getAttribute('data-filter') === category;
         btn.className = active
-          ? "filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-slate-900 dark:bg-indigo-600 text-white shadow-sm"
-          : "filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800";
+          ? "filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-slate-900 dark:bg-indigo-600 text-white shadow-sm transition-colors"
+          : "filter-btn shrink-0 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors";
       });
       renderArchive(category === 'all' ? allTests : allTests.filter(t => t.exam === category));
     }

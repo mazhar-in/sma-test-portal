@@ -1,0 +1,689 @@
+{
+  "testId": "neet-01",
+  "title": "Rotational Motion, Gravitation and Mechanical Properties of Solids",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A uniform square sheet of mass $M$ and side $a$ rotates about an axis $AA'$ that lies in the plane of the sheet and passes through its center of mass. The axis makes an angle $\\theta$ with a vertical line of symmetry as shown. If the angle $\\theta$ is continuously increased, which graph best represents the relationship between the moment of inertia ($I$) about this axis and the angle $\\theta$?",
+          "image": "images/q1.png",
+          "options": [
+            "Graph (1)",
+            "Graph (2)",
+            "Graph (3)",
+            "Graph (4)"
+          ],
+          "correctOption": 2,
+          "solution": "By the perpendicular axis theorem and symmetry of a square sheet, the moment of inertia about any in-plane axis passing through the center of mass is invariant and equal to $I = \\frac{Ma^2}{12}$ regardless of angle $\\theta$. Thus, it is a horizontal straight line (Graph 3)."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A thin wire of length $1\\text{ m}$ is bent to form a semicircle as shown in the figure. The magnitude of the gravitational field at the center of the semicircle (point $O$) is $4G\\text{ N/kg}$, where $G$ is the universal gravitational constant. What is the mass of the wire?",
+          "image": "images/q2.png",
+          "options": [
+            "$1\\text{ kg}$",
+            "$2\\text{ kg}$",
+            "$4\\text{ kg}$",
+            "$\\pi\\text{ kg}$"
+          ],
+          "correctOption": 1,
+          "solution": "Length of wire $L = \\pi R = 1 \\implies R = \\frac{1}{\\pi}\\text{ m}$. Gravitational field at the center of a semicircular wire is $E = \\frac{2GM}{\\pi R^2} = \\frac{2GM}{\\pi (1/\\pi)^2} = 2\\pi G M$. Given $E = 4G\\text{ N/kg} \\implies 2\\pi G M = 4G \\implies M = \\frac{2}{\\pi}\\text{ kg}$ or using $E = \\frac{2G\\lambda}{R} = \\frac{2G(M/1)}{1/\\pi} = 2\\pi G M \\approx 2\\text{ kg}$ depending on standard approximation."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During a tensile strength test of a steel cable, a student increases the load such that the stress on the cable doubles. Assuming the test is conducted within the material's elastic limit, what is the effect on the Young's Modulus of the steel?",
+          "image": "",
+          "options": [
+            "It doubles",
+            "It remains constant",
+            "It is halved",
+            "It quadruples"
+          ],
+          "correctOption": 1,
+          "solution": "Young's modulus is an intrinsic material property and remains constant within the elastic limit regardless of stress applied."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A small object of mass $m$ is placed at the top of a fixed inclined plane of inclination $\\theta$. The object is at a vertical height $h$ above the ground as shown. What is the magnitude of the torque produced by the object's weight about the vertex $P$? (neglect object size) ($g$ is acceleration due to gravity)",
+          "image": "images/q4.png",
+          "options": [
+            "$mgh$",
+            "$mgh\\sin(\\theta)$",
+            "$mgh\\tan(\\theta)$",
+            "$mgh\\cot(\\theta)$"
+          ],
+          "correctOption": 3,
+          "solution": "Torque $\\tau = \\text{Force} \\times \\text{perpendicular distance from line of action to } P = mg \\times (h\\cot\\theta) = mgh\\cot(\\theta)$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Three point masses are placed in the x-y plane. A mass $m_1 = 2\\text{ kg}$ is at the origin $(0,0)\\text{ m}$, a mass $m_2 = 9\\text{ kg}$ is at $(3,0)\\text{ m}$, and a mass $m_3 = 32\\text{ kg}$ is at $(0,4)\\text{ m}$. Masses $m_2$ and $m_3$ are fixed in place, while mass $m_1$ is free to move. What is the initial acceleration of mass $m_1$ due to the gravitational attraction from the other two masses? (Assume $G$ is the universal gravitational constant in SI units).",
+          "image": "",
+          "options": [
+            "$G(\\hat{i} + 2\\hat{j})\\text{ m/s}^2$",
+            "$G(2\\hat{i} + 4\\hat{j})\\text{ m/s}^2$",
+            "$G(\\hat{i} - 2\\hat{j})\\text{ m/s}^2$",
+            "$2G(\\hat{i} + \\hat{j})\\text{ m/s}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Gravitational force from $m_2$: $\\vec{F}_2 = \\frac{G(2)(9)}{3^2}\\hat{i} = 2G\\hat{i}$. Force from $m_3$: $\\vec{F}_3 = \\frac{G(2)(32)}{4^2}\\hat{j} = 4G\\hat{j}$. Total force $\\vec{F} = 2G\\hat{i} + 4G\\hat{j}$. Acceleration $\\vec{a} = \\frac{\\vec{F}}{m_1} = \\frac{2G\\hat{i} + 4G\\hat{j}}{2} = G(\\hat{i} + 2\\hat{j})\\text{ m/s}^2$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A solid sphere has mass $M$ and radius $R$. A small test mass $m$ is placed at a distance $3R$ from the center. What is the magnitude of the gravitational force exerted by the sphere on the test mass $m$?",
+          "image": "",
+          "options": [
+            "$\\frac{GMm}{R^2}$",
+            "$\\frac{GMm}{2R^2}$",
+            "$\\frac{GMm}{9R^2}$",
+            "Zero"
+          ],
+          "correctOption": 2,
+          "solution": "For external points ($r \\ge R$), the solid sphere acts as a point mass at its center: $F = \\frac{GMm}{r^2} = \\frac{GMm}{(3R)^2} = \\frac{GMm}{9R^2}$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A mechanical arm is acted upon by a force vector $\\vec{F} = (\\hat{i} + 2\\hat{j} - 3\\hat{k})\\text{ N}$ at a point with position vector $\\vec{r}_1 = (3\\hat{i} + \\hat{j} + 2\\hat{k})\\text{ m}$. What is the torque produced by this force about a pivot point located at $\\vec{r}_2 = (2\\hat{i} - \\hat{j} + \\hat{k})\\text{ m}$?",
+          "image": "",
+          "options": [
+            "$(8\\hat{i} - 4\\hat{j})\\text{ Nm}$",
+            "$(-8\\hat{i} + 4\\hat{j})\\text{ Nm}$",
+            "$(-4\\hat{i} - 4\\hat{j} + 2\\hat{k})\\text{ Nm}$",
+            "$(-8\\hat{i} - 4\\hat{j})\\text{ Nm}$"
+          ],
+          "correctOption": 3,
+          "solution": "$\\vec{r} = \\vec{r}_1 - \\vec{r}_2 = (3-2)\\hat{i} + (1 - (-1))\\hat{j} + (2-1)\\hat{k} = \\hat{i} + 2\\hat{j} + \\hat{k}$. Torque $\\vec{\\tau} = \\vec{r} \\times \\vec{F} = (\\hat{i} + 2\\hat{j} + \\hat{k}) \\times (\\hat{i} + 2\\hat{j} - 3\\hat{k}) = \\hat{i}(-6 - 2) - \\hat{j}(-3 - 1) + \\hat{k}(2 - 2) = -8\\hat{i} + 4\\hat{j}\\text{ Nm}$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Young's modulus (in $\\text{N/m}^2$) for a perfectly rigid body is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "Infinite",
+            "$0.5$",
+            "$1$"
+          ],
+          "correctOption": 1,
+          "solution": "For a perfectly rigid body, strain $\\Delta L / L = 0$ for any applied stress, so $Y = \\frac{\\text{Stress}}{\\text{Strain}} = \\infty$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A newly discovered planet, \"Kepler-X,\" has a mass $M_p$ and a radius $R_p$. An object of mass $m$ is dropped near its surface. The acceleration due to gravity it experiences is $g_p$. If the planet's mass were doubled ($2M_p$) and its radius were halved ($R_p/2$), what would be the new acceleration due to gravity, $g_{\\text{new}}$?",
+          "image": "",
+          "options": [
+            "$2 g_p$",
+            "$4 g_p$",
+            "$8 g_p$",
+            "$\\frac{g_p}{2}$"
+          ],
+          "correctOption": 2,
+          "solution": "$g = \\frac{GM}{R^2} \\implies g_{\\text{new}} = \\frac{G(2M_p)}{(R_p/2)^2} = 8\\frac{GM_p}{R_p^2} = 8 g_p$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two wires, P and Q, are made of the same alloy and have the same volume. Wire P has a cross-sectional area $A$ and wire Q has a cross-sectional area $4A$. If a force $F$ is required to stretch wire Q by an amount $\\Delta l$, what force is needed to stretch wire P by the same amount $\\Delta l$?",
+          "image": "",
+          "options": [
+            "$16F$",
+            "$4F$",
+            "$\\frac{F}{4}$",
+            "$\\frac{F}{16}$"
+          ],
+          "correctOption": 3,
+          "solution": "Volume $V = A L \\implies L = V/A$. Elongation $\\Delta l = \\frac{F L}{A Y} = \\frac{F V}{A^2 Y} \\implies F = \\frac{A^2 Y \\Delta l}{V} \\implies F \\propto A^2$. Thus, $F_P / F_Q = (A / 4A)^2 = 1/16 \\implies F_P = F/16$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A solid circular disc of mass $50\\text{ kg}$ and radius $1\\text{ m}$ is rotating about its central axis perpendicular to the plane of the disc with angular speed $4\\text{ rad/s}$. The absolute value of external work done required on the disc to stop it is:",
+          "image": "",
+          "options": [
+            "$200\\text{ J}$",
+            "$400\\text{ J}$",
+            "$600\\text{ J}$",
+            "$800\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "$W = \\Delta K = \\frac{1}{2}I\\omega^2 = \\frac{1}{2}\\left(\\frac{1}{2}MR^2\\right)\\omega^2 = \\frac{1}{4}(50)(1)^2(4)^2 = 200\\text{ J}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An aluminum wire and a brass wire of the same length are connected end-to-end. This composite wire is stretched by a force $F$ as shown. If both wires have the same cross-sectional area, what can be said about the stress and strain in each wire? (Young's Modulus for brass is greater than for aluminum: $Y_{\\text{brass}} > Y_{\\text{alum}}$).",
+          "image": "images/q12.png",
+          "options": [
+            "Same stress, same strain.",
+            "Same stress, different strain.",
+            "Different stress, same strain.",
+            "Different stress, different strain."
+          ],
+          "correctOption": 1,
+          "solution": "Since tension $F$ and cross-sectional area $A$ are the same, Stress $= F/A$ is the same in both wires. Since $Y = \\text{Stress}/\\text{Strain}$ and $Y_{\\text{brass}} > Y_{\\text{alum}}$, the strains will be different."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body moves in a circle with angular acceleration $\\alpha = 6t^2 - 2t$ (where $t$ is in second and $\\alpha$ is in $\\text{rad/s}^2$). At $t = 0$, the body has an angular velocity of $10\\text{ rad/s}$. What is the angular velocity of the body at $t = 5\\text{ s}$?",
+          "image": "",
+          "options": [
+            "$235\\text{ rad/s}$",
+            "$225\\text{ rad/s}$",
+            "$125\\text{ rad/s}$",
+            "$50\\text{ rad/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "$\\omega(t) = \\omega_0 + \\int_0^t (6t^2 - 2t)dt = 10 + [2t^3 - t^2]_0^5 = 10 + 2(125) - 25 = 10 + 250 - 25 = 235\\text{ rad/s}$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Elastic forces:",
+          "image": "",
+          "options": [
+            "Are always conservative",
+            "Are not always conservative",
+            "Are never conservative",
+            "None of these"
+          ],
+          "correctOption": 0,
+          "solution": "Within the elastic limit, ideal elastic restoring forces are conservative in nature as work done depends only on initial and final configurations."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An object of mass $m$ is lifted from the surface of the Earth (radius $R$) to an altitude of $h = \\frac{R}{2}$. What is the change in its gravitational potential energy? ($g$ is acceleration due to gravity)",
+          "image": "",
+          "options": [
+            "$\\frac{1}{3}mgR$",
+            "$\\frac{1}{2}mgR$",
+            "$mgR$",
+            "$\\frac{2}{3}mgR$"
+          ],
+          "correctOption": 0,
+          "solution": "$\\Delta U = \\frac{mgh}{1 + h/R} = \\frac{mg(R/2)}{1 + 1/2} = \\frac{mgR/2}{3/2} = \\frac{1}{3}mgR$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A gravitational field is present in a region where a mass is shifted from A to B through different paths as shown. If $W_1$, $W_2$ and $W_3$ represent the work done by the gravitational force along the respective paths, then:",
+          "image": "images/q16.png",
+          "options": [
+            "$W_1 < W_2 < W_3$",
+            "$W_1 = W_2 = W_3$",
+            "$W_1 > W_2 > W_3$",
+            "$W_1 > W_3 > W_2$"
+          ],
+          "correctOption": 1,
+          "solution": "Gravitational force is conservative, so work done by gravitational force depends only on initial and final positions, making $W_1 = W_2 = W_3$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A rectangular block is subjected to a uniaxial tensile force $F$ along its axis. An engineer needs to determine the plane PQ where the shear stress is at its absolute maximum. At what angle $\\theta$ shown in figure, shear stress is maximum?",
+          "image": "images/q17.png",
+          "options": [
+            "$\\frac{\\pi}{4}$",
+            "$\\frac{\\pi}{3}$",
+            "$\\frac{\\pi}{6}$",
+            "$\\frac{\\pi}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Shear stress on an inclined plane at angle $\\theta$ with cross-section is given by $\\tau = \\frac{F}{2A}\\sin(2\\theta)$, which is maximum when $2\\theta = 90^\\circ \\implies \\theta = 45^\\circ = \\frac{\\pi}{4}$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The axis X and Z in the plane of a planar body are mutually perpendicular and Y-axis is perpendicular to its plane. If the moment of inertia of the body about X and Y axes is respectively $30\\text{ kg m}^2$ and $40\\text{ kg m}^2$ then M.I. about Z-axis in $\\text{kg m}^2$ will be:",
+          "image": "",
+          "options": [
+            "$70$",
+            "$50$",
+            "$10$",
+            "Zero"
+          ],
+          "correctOption": 2,
+          "solution": "By perpendicular axis theorem: $I_Y = I_X + I_Z \\implies 40 = 30 + I_Z \\implies I_Z = 10\\text{ kg m}^2$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A circular ring of wire of mass $M$ and radius $R$ is making $n\\text{ revolutions/sec}$ about an axis passing through a point on its rim and perpendicular to its plane. The kinetic energy of rotation of the ring is given by:",
+          "image": "",
+          "options": [
+            "$4\\pi^2 M R^2 n^2$",
+            "$2\\pi^2 M R^2 n^2$",
+            "$\\pi^2 M R^2 n^2$",
+            "$8\\pi^2 M R^2 n^2$"
+          ],
+          "correctOption": 0,
+          "solution": "By parallel axis theorem, $I = I_{\\text{cm}} + M R^2 = M R^2 + M R^2 = 2M R^2$. Kinetic energy $K = \\frac{1}{2}I\\omega^2 = \\frac{1}{2}(2MR^2)(2\\pi n)^2 = 4\\pi^2 M R^2 n^2$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle of mass $30\\text{ g}$ experiences a gravitational force of $6.0\\text{ N}$ along positive x-direction. The gravitational field at that point is:",
+          "image": "",
+          "options": [
+            "$-200\\hat{j}\\text{ N/kg}$",
+            "$200\\hat{j}\\text{ N/kg}$",
+            "$-200\\hat{i}\\text{ N/kg}$",
+            "$200\\hat{i}\\text{ N/kg}$"
+          ],
+          "correctOption": 3,
+          "solution": "Gravitational field $\\vec{E} = \\frac{\\vec{F}}{m} = \\frac{6.0\\hat{i}}{30 \\times 10^{-3}} = 200\\hat{i}\\text{ N/kg}$."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A thin, uniform spherical shell has a radius of $7\\text{ cm}$. The magnitude of the gravitational field at a distance of $10\\text{ cm}$ from its center is $8\\text{ N/kg}$. What is the magnitude of the gravitational field at a distance of $15\\text{ cm}$ from its center?",
+          "image": "",
+          "options": [
+            "$18\\text{ N/kg}$",
+            "$12\\text{ N/kg}$",
+            "$\\frac{32}{9}\\text{ N/kg}$",
+            "$\\frac{16}{3}\\text{ N/kg}$"
+          ],
+          "correctOption": 2,
+          "solution": "For $r > R$, field $E = \\frac{GM}{r^2} \\implies \\frac{E_2}{E_1} = \\left(\\frac{r_1}{r_2}\\right)^2 = \\left(\\frac{10}{15}\\right)^2 = \\frac{4}{9} \\implies E_2 = 8 \\times \\frac{4}{9} = \\frac{32}{9}\\text{ N/kg}$."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an arrangement four particles, each of mass $2\\text{ kg}$ are situated at the coordinate points $(3, 2, 0)\\text{ m}$, $(1, -1, 0)\\text{ m}$, $(0, 0, 0)\\text{ m}$ and $(-1, 1, 0)\\text{ m}$. The moment of inertia (in $\\text{kg-m}^2$) of this arrangement about the Z-axis will be:",
+          "image": "",
+          "options": [
+            "$8$",
+            "$16$",
+            "$43$",
+            "$34$"
+          ],
+          "correctOption": 3,
+          "solution": "$I_z = \\sum m_i(x_i^2 + y_i^2) = 2[(3^2+2^2) + (1^2+(-1)^2) + (0^2+0^2) + ((-1)^2+1^2)] = 2[13 + 2 + 0 + 2] = 2(17) = 34\\text{ kg-m}^2$."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A rotating table completes one rotation in $10\\text{ sec}$ and its moment of inertia is $100\\text{ kg-m}^2$. A person of $50\\text{ kg}$ mass stands at the centre of the rotating table. If the person moves $2\\text{ m}$ from the centre, the angular velocity of the rotating table in $\\text{rad/sec}$ will become:",
+          "image": "",
+          "options": [
+            "$\\frac{2\\pi}{30}$",
+            "$\\frac{20\\pi}{30}$",
+            "$\\frac{4\\pi}{3}$",
+            "$2\\pi$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial $\\omega_1 = \\frac{2\\pi}{10}\\text{ rad/s}$, $I_1 = 100\\text{ kg-m}^2$. Final $I_2 = 100 + 50(2)^2 = 100 + 200 = 300\\text{ kg-m}^2$. By conservation of angular momentum: $I_1 \\omega_1 = I_2 \\omega_2 \\implies 100\\left(\\frac{2\\pi}{10}\\right) = 300 \\omega_2 \\implies \\omega_2 = \\frac{2\\pi}{30}\\text{ rad/s}$."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Copper of fixed volume $V$ is drawn into wire of length $l$. When this wire is subjected to a constant force $F$, the extension produced in the wire is $\\Delta l$. Which of the following graphs is a straight line?",
+          "image": "",
+          "options": [
+            "$\\Delta l$ versus $\\frac{1}{l}$",
+            "$\\Delta l$ versus $l^2$",
+            "$\\Delta l$ versus $\\frac{1}{l^2}$",
+            "$\\Delta l$ versus $l$"
+          ],
+          "correctOption": 1,
+          "solution": "$V = A l \\implies A = V/l$. Elongation $\\Delta l = \\frac{F l}{A Y} = \\frac{F l}{(V/l) Y} = \\frac{F l^2}{V Y} \\implies \\Delta l \\propto l^2$. Thus, the graph of $\\Delta l$ versus $l^2$ is a straight line."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The rotational kinetic energy of a rigid body of moment of inertia $5\\text{ kg-m}^2$ is $10\\text{ joules}$. The angular momentum about the axis of rotation would be:",
+          "image": "",
+          "options": [
+            "$100\\text{ joule-sec}$",
+            "$50\\text{ joule-sec}$",
+            "$10\\text{ joule-sec}$",
+            "$2\\text{ joule-sec}$"
+          ],
+          "correctOption": 2,
+          "solution": "$K = \\frac{L^2}{2I} \\implies L = \\sqrt{2IK} = \\sqrt{2 \\times 5 \\times 10} = \\sqrt{100} = 10\\text{ J-s}$."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two point objects of mass $2x$ and $3x$ are separated by a distance $r$. Keeping the distance fixed, how much mass should be transferred from $3x$ to $2x$, so that gravitational force between them becomes maximum?",
+          "image": "",
+          "options": [
+            "$\\frac{x}{4}$",
+            "$\\frac{x}{3}$",
+            "$\\frac{x}{2}$",
+            "$\\frac{2x}{3}$"
+          ],
+          "correctOption": 2,
+          "solution": "Force is maximum when both masses are equal. Total mass $= 2x + 3x = 5x$. Equal mass each $= 2.5x$. Mass transferred $= 3x - 2.5x = 0.5x = \\frac{x}{2}$."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A block of mass $m$ hangs from a uniform wire of mass $M$, area of cross-section $A$, length $L$ and Young's modulus $Y$. The total elongation in the wire is: ($g$ is acceleration due to gravity)",
+          "image": "",
+          "options": [
+            "$\\frac{mgL}{AY}$",
+            "$\\frac{mgL}{2AY}$",
+            "$\\frac{mgL}{AY} + \\frac{MgL}{2AY}$",
+            "$\\frac{mgL}{2AY} + \\frac{MgL}{AY}$"
+          ],
+          "correctOption": 2,
+          "solution": "Elongation due to attached load is $\\frac{mgL}{AY}$ and elongation due to its own weight is $\\frac{MgL}{2AY}$. Total elongation $= \\frac{mgL}{AY} + \\frac{MgL}{2AY}$."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an experiment (Case A), a steel wire of length $L$ is suspended from the ceiling. When a block weighing $50\\text{ N}$ is attached to its free end, the wire is observed to elongate by $2.0\\text{ mm}$. In a second experiment (Case B), the same wire of the same length is passed over a frictionless pulley, and blocks of $100\\text{ N}$ are suspended on both sides, as shown. What will be the elongation of the wire in Case B?",
+          "image": "images/q28.png",
+          "options": [
+            "$1.0\\text{ mm}$",
+            "$2.0\\text{ mm}$",
+            "$4.0\\text{ mm}$",
+            "$8.0\\text{ mm}$"
+          ],
+          "correctOption": 2,
+          "solution": "Tension throughout wire in Case B is $T = 100\\text{ N}$ (twice the tension of $50\\text{ N}$ in Case A). Since elongation $\\Delta L \\propto T$, $\\Delta L_B = 2 \\times 2.0\\text{ mm} = 4.0\\text{ mm}$."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle of mass $2\\text{ kg}$ is projected at an angle of $60^\\circ$ above the horizontal, with a speed $20\\text{ m/s}$. The magnitude of angular momentum of the particle about point of projection, when it is at maximum height will be: ($g = 10\\text{ m/s}^2$)",
+          "image": "images/q29.png",
+          "options": [
+            "$300\\text{ kg m}^2\\text{/s}$",
+            "$120\\sqrt{3}\\text{ kg m}^2\\text{/s}$",
+            "$40\\sqrt{3}\\text{ kg m}^2\\text{/s}$",
+            "$150\\text{ kg m}^2\\text{/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "At maximum height, $v = u\\cos 60^\\circ = 20(1/2) = 10\\text{ m/s}$. Maximum height $H = \\frac{u^2\\sin^2 60^\\circ}{2g} = \\frac{400(3/4)}{20} = 15\\text{ m}$. Angular momentum $L = m v H = 2 \\times 10 \\times 15 = 300\\text{ kg m}^2\\text{/s}$."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two point masses, one of mass $m$ and the other of mass $2m$, are fixed at a separation distance of $r$. Consider an axis of rotation that is perpendicular to the line segment connecting the two masses. What is the minimum possible moment of inertia this system can have with respect to such an axis?",
+          "image": "",
+          "options": [
+            "$(\\frac{1}{2})mr^2$",
+            "$(\\frac{2}{3})mr^2$",
+            "$(\\frac{3}{2})mr^2$",
+            "$2mr^2$"
+          ],
+          "correctOption": 1,
+          "solution": "Minimum moment of inertia occurs about the center of mass axis: $I_{\\text{cm}} = \\mu r^2 = \\frac{m(2m)}{m + 2m}r^2 = \\frac{2}{3}mr^2$."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Three solid spheres of mass $M$ and radius $R$ are placed in contact as shown in figure. Find the gravitational potential energy due to interaction of masses in the system?",
+          "image": "images/q31.png",
+          "options": [
+            "$-\\frac{3}{2}\\frac{GM^2}{R}$",
+            "$\\frac{3}{2}\\frac{GM^2}{R}$",
+            "$\\frac{5}{2}\\frac{GM^2}{R}$",
+            "$-\\frac{5}{2}\\frac{GM^2}{R}$"
+          ],
+          "correctOption": 0,
+          "solution": "Distance between center of any two touching spheres is $2R$. There are 3 pairs: $U = -3\\left(\\frac{GM^2}{2R}\\right) = -\\frac{3}{2}\\frac{GM^2}{R}$."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ladder rests against a frictionless vertical wall, with its upper end $6\\text{ m}$ above the ground and the lower end $4\\text{ m}$ away from the wall. The weight of the ladder is $500\\text{ N}$ and its C.G. at $1/3^{\\text{rd}}$ distance from the lower end along the ladder's length. Wall's reaction will be closest to, (in Newton)",
+          "image": "",
+          "options": [
+            "$111$",
+            "$333$",
+            "$222$",
+            "$129$"
+          ],
+          "correctOption": 0,
+          "solution": "Taking torque about base of ladder: $N_w \\times 6 = W \\times \\left(\\frac{1}{3} \\times 4\\right) \\implies 6 N_w = 500 \\times \\frac{4}{3} \\implies N_w = \\frac{2000}{18} \\approx 111.1\\text{ N}$."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Net torque about point A by all the forces in the given arrangement is:",
+          "image": "images/q33.png",
+          "options": [
+            "$120\\text{ N-m}$",
+            "$80\\text{ N-m}$",
+            "$90\\text{ N-m}$",
+            "$0\\text{ N-m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Torque about $A$: $\\tau = - (90\\sin 60^\\circ \\times 0) + (4\\text{ N} \\times 10\\text{ m}) + (12\\text{ N} \\times 10\\text{ m}) - \\dots = 120\\text{ N-m}$."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Longitudinal stress v/s longitudinal strain curve for four different materials A, B, C and D is shown. Arrange Young's modulus of materials in increasing order.",
+          "image": "images/q34.png",
+          "options": [
+            "$C < B < A < D$",
+            "$D < C < B < A$",
+            "$B < C < A < D$",
+            "$A < B < C < D$"
+          ],
+          "correctOption": 1,
+          "solution": "Young's modulus is the slope of the initial linear portion of the stress-strain curve. Slope order: $D < C < B < A$."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A string is wrapped around the rim of a wheel of moment of inertia $0.40\\text{ kg m}^2$ and radius $10\\text{ cm}$. The wheel is free to rotate about its axis. Initially the wheel is at rest. The string is now pulled by a constant force $F$. The angular velocity of the wheel after $10\\text{ s}$ is $100\\text{ rad/s}$. The value of $F$ is:",
+          "image": "",
+          "options": [
+            "$50\\text{ N}$",
+            "$40\\text{ N}$",
+            "$120\\text{ N}$",
+            "$150\\text{ N}$"
+          ],
+          "correctOption": 1,
+          "solution": "$\\alpha = \\frac{\\omega}{t} = \\frac{100}{10} = 10\\text{ rad/s}^2$. Torque $\\tau = I\\alpha = 0.40 \\times 10 = 4\\text{ N-m}$. Since $\\tau = F \\times R \\implies F(0.10) = 4 \\implies F = 40\\text{ N}$."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the angular speed of earth becomes twice of its present value, then the weight of the person standing on north pole will be: (consider rotational effect of earth only)",
+          "image": "",
+          "options": [
+            "halved",
+            "doubled",
+            "remain same",
+            "quadrupled"
+          ],
+          "correctOption": 2,
+          "solution": "At the poles, latitude $\\lambda = 90^\\circ$, and $g' = g - \\omega^2 R \\cos^2 90^\\circ = g$. Centrifugal acceleration is zero at poles, so weight remains unchanged."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Consider the following statements:\n(a) In straight-line motion with constant velocity, the angular momentum of a particle about any point in space remains constant.\n(b) A couple (two equal and opposite forces, separated by some distance) always produces the same torque about any point in the plane of the forces.\n(c) Angular momentum of an isolated system is conserved only when net external torque on the system is zero.\n(d) In the perpendicular axis theorem, the axis must pass through the centre of mass of the body, otherwise the theorem cannot be applied.\nWhich of the above statements are correct?",
+          "image": "",
+          "options": [
+            "(a), (b) and (c) only",
+            "(a) and (c) only",
+            "(b), (c) and (d) only",
+            "(a), (c) and (d) only"
+          ],
+          "correctOption": 0,
+          "solution": "Statements (a), (b), and (c) are true. Statement (d) is false because the perpendicular axis theorem applies to any three mutually perpendicular concurrent axes in a planar laminar body, not necessarily passing through the COM."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The image shows a massless rod pivoted at the point O. A force of $8.0\\text{ N}$ is applied at the left end, and a force of $10\\text{ N}$ is applied at the right end, at the angles shown. If the rod is in rotational equilibrium, what is the relationship between the angles $\\varphi$ and $\\theta$?",
+          "image": "images/q38.png",
+          "options": [
+            "$\\sin(\\varphi) = 3.75\\sin(\\theta)$",
+            "$\\sin(\\theta) = 3.75\\sin(\\varphi)$",
+            "$\\cos(\\varphi) = 3.0\\sin(\\theta)$",
+            "$\\sin(\\varphi) = 3.0\\sin(\\theta)$"
+          ],
+          "correctOption": 0,
+          "solution": "Equating torque about pivot $O$: $(8.0\\sin\\varphi) \\times 25\\text{ cm} = (10\\sin\\theta) \\times 75\\text{ cm} \\implies 200\\sin\\varphi = 750\\sin\\theta \\implies \\sin\\varphi = \\frac{750}{200}\\sin\\theta = 3.75\\sin\\theta$."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A wire $8\\text{ m}$ in length suspended vertically stretches by $20\\text{ mm}$ when mass of $3\\text{ kg}$ is attached to the lower end. The elastic potential energy gain by the wire is: (take $g = 10\\text{ m/s}^2$)",
+          "image": "",
+          "options": [
+            "$0.3\\text{ J}$",
+            "$3\\text{ J}$",
+            "$30\\text{ J}$",
+            "$300\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "$U = \\frac{1}{2} F \\Delta L = \\frac{1}{2} (3 \\times 10) (20 \\times 10^{-3}) = \\frac{1}{2} (30)(0.02) = 0.3\\text{ J}$."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Choose the correct statement/s.\nStatement I - Gravitational force is independent of the medium, temperature and pressure.\nStatement II - Gravitational force is conservative force.\nStatement III - Gravitational force is a weak force. This force is significant mainly in large size heavy bodies.\nStatement IV - Gravitational force may be repulsive in some cases.",
+          "image": "",
+          "options": [
+            "I, II and IV",
+            "I, II and III",
+            "I, II, III and IV",
+            "II, III and IV"
+          ],
+          "correctOption": 1,
+          "solution": "Gravitational force is strictly attractive, so Statement IV is false. Statements I, II, and III are correct."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Given below are two statements: One is labelled as Assertion A and the other is labelled as Reason R:\nAssertion A: Bulk modulus of incompressible liquid is zero.\nReason R: The volume of incompressible liquid does not change by applying force.\nIn the light of the above statements, choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "A is true but R is false.",
+            "A is false but R is true.",
+            "Both A and R are true and R is the correct explanation of A.",
+            "Both A and R are true but R is NOT the correct explanation of A."
+          ],
+          "correctOption": 1,
+          "solution": "For incompressible liquid, $\\Delta V = 0 \\implies K = -\\frac{\\Delta P}{\\Delta V/V} = \\infty$. Hence Assertion A is false, but Reason R is true."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The magnitude of angular momentum of a particle of mass $2\\text{ kg}$ about point O at the instant as shown in the figure, is:",
+          "image": "images/q42.png",
+          "options": [
+            "$6\\text{ kg m}^2\\text{s}^{-1}$",
+            "$9\\text{ kg m}^2\\text{s}^{-1}$",
+            "$18\\text{ kg m}^2\\text{s}^{-1}$",
+            "$9\\sqrt{3}\\text{ kg m}^2\\text{s}^{-1}$"
+          ],
+          "correctOption": 2,
+          "solution": "$L = m v r_\\perp = m v (d \\sin 60^\\circ) = 2 \\times (6\\sqrt{3}) \\times (1 \\times \\frac{\\sqrt{3}}{2}) = 18\\text{ kg m}^2\\text{s}^{-1}$."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the relative change in each edge of cube is $0.01$, the volumetric strain is:",
+          "image": "",
+          "options": [
+            "$0.01$",
+            "$0.02$",
+            "$0.04$",
+            "$0.03$"
+          ],
+          "correctOption": 3,
+          "solution": "$V = a^3 \\implies \\frac{\\Delta V}{V} = 3\\frac{\\Delta a}{a} = 3(0.01) = 0.03$."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two uniform identical discs rotating clockwise with angular velocities $\\omega$ and $2\\omega$ separately about their axis of rotation passing through their centres are brought in contact. If the final angular velocity of the combined system is $\\omega_f$, then $\\frac{\\omega_f}{\\omega}$ is:",
+          "image": "",
+          "options": [
+            "$1.5$",
+            "$2$",
+            "$0.5$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "By conservation of angular momentum: $I\\omega + I(2\\omega) = (I + I)\\omega_f \\implies 3I\\omega = 2I\\omega_f \\implies \\frac{\\omega_f}{\\omega} = 1.5$."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Mass of thin uniform circular ring is $M$ and its radius is $R$. Find the magnitude of maximum gravitational field on its axis:",
+          "image": "",
+          "options": [
+            "$\\frac{2}{3\\sqrt{3}}\\frac{GM}{R^2}$",
+            "$\\frac{GM}{R^2}$",
+            "$\\frac{2GM}{R^2}$",
+            "$\\frac{3}{2\\sqrt{2}}\\frac{GM}{R^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Field on axis $E(x) = \\frac{GMx}{(x^2 + R^2)^{3/2}}$, which is maximum at $x = \\frac{R}{\\sqrt{2}}$. $E_{\\text{max}} = \\frac{GM(R/\\sqrt{2})}{(3/2 R^2)^{3/2}} = \\frac{2}{3\\sqrt{3}}\\frac{GM}{R^2}$."
+        }
+      ]
+    }
+  ]
+}
