@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-04-itf-sot",
+  "title": "Inverse Trigonometric Functions & SOT",
+  "syllabus": "Inverse Trigonometric Functions (Properties, Principal Values, Equations & Inequalities), Solution of Triangles",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $f(x) = 2\\tan^{-1}x + \\sin^{-1}\\left(\\frac{2x}{1+x^2}\\right)$, then for $x > 1$, $f(x) =$",
+          "image": "",
+          "options": [
+            "$\\sec^{-1}x$",
+            "$4\\sin^{-1}x$",
+            "$\\pi$",
+            "$\\frac{\\pi}{2}$"
+          ],
+          "correctOption": 2,
+          "solution": "For $x > 1$, the standard identity is $\\sin^{-1}\\left(\\frac{2x}{1+x^2}\\right) = \\pi - 2\\tan^{-1}x$.\nTherefore, $f(x) = 2\\tan^{-1}x + (\\pi - 2\\tan^{-1}x) = \\pi$[cite: 3]."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\cos^{-1}\\left(-\\frac{\\sqrt{3}}{2}\\right) \\sin^{-1}x = \\frac{5\\pi^2}{36}$, then which of the following is true?",
+          "image": "",
+          "options": [
+            "$0 < x < \\frac{1}{\\sqrt{2}}$",
+            "$x = \\frac{1}{2}\\sqrt{2 - \\sqrt{\\frac{3}{2}} + \\frac{1}{\\sqrt{2}}}$",
+            "$x > \\frac{1}{2}$",
+            "$\\sqrt{2}x = \\sqrt{1 + \\sin\\frac{\\pi}{12}}$"
+          ],
+          "correctOption": 0,
+          "solution": "$\\cos^{-1}\\left(-\\frac{\\sqrt{3}}{2}\\right) = \\pi - \\frac{\\pi}{6} = \\frac{5\\pi}{6}$[cite: 3].\nGiven $\\left(\\frac{5\\pi}{6}\\right)\\sin^{-1}x = \\frac{5\\pi^2}{36} \\implies \\sin^{-1}x = \\frac{\\pi}{6} \\implies x = \\sin\\frac{\\pi}{6} = \\frac{1}{2}$[cite: 3].\nSince $0 < \\frac{1}{2} < \\frac{1}{\\sqrt{2}} \\approx 0.707$, option (1) is true[cite: 3]."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Range of function $f(x) = \\cos^{-1}(-\\{x\\})$, where $\\{x\\}$ denotes the fractional part of $x$, is:",
+          "image": "",
+          "options": [
+            "$(\\frac{\\pi}{2}, \\pi)$",
+            "$(\\frac{\\pi}{2}, \\pi]$",
+            "$(\\frac{\\pi}{2}, \\pi]$",
+            "$(0, \\frac{\\pi}{2}]$"
+          ],
+          "correctOption": 2,
+          "solution": "Fractional part $\\{x\\} \\in [0, 1) \\implies -\\{x\\} \\in (-1, 0]$[cite: 3].\nSince $\\cos^{-1}t$ is a decreasing function on $[-1, 1]$:\nFor $t \\in (-1, 0]$, $\\cos^{-1}t \\in [\\cos^{-1}(0), \\cos^{-1}(-1)) = [\\pi/2, \\pi)$ or $(\\pi/2, \\pi]$[cite: 3].\nAt $\\{x\\} = 0$, $f(x) = \\cos^{-1}(0) = \\pi/2$.\nAs $\\{x\\} \\to 1^-$, $-\\{x\\} \\to -1^+ \\implies f(x) \\to \\pi$.\nThus, range is $(\\frac{\\pi}{2}, \\pi]$[cite: 3]."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Solution of $3(\\cot^{-1}x)^2 - 4\\sqrt{3}\\cot^{-1}x + 3 > 0$ is:",
+          "image": "",
+          "options": [
+            "$(\\frac{\\pi}{6}, \\frac{\\pi}{3})$",
+            "$(-\\infty, \\frac{\\pi}{6}) \\cup (\\frac{\\pi}{3}, \\infty)$",
+            "$(-\\infty, \\cot\\sqrt{3}) \\cup (\\cot\\frac{1}{\\sqrt{3}}, \\infty)$",
+            "$(0, \\pi)$"
+          ],
+          "correctOption": 2,
+          "solution": "Factoring the quadratic: $(3\\cot^{-1}x - \\sqrt{3})(\\cot^{-1}x - \\sqrt{3}) > 0 \\implies (\\cot^{-1}x - \\frac{1}{\\sqrt{3}})(\\cot^{-1}x - \\sqrt{3}) > 0$[cite: 3].\nSince $\\cot^{-1}x \\in (0, \\pi)$, we have $\\cot^{-1}x < \\frac{1}{\\sqrt{3}}$ or $\\cot^{-1}x > \\sqrt{3}$[cite: 3].\nSince $\\cot^{-1}x$ is strictly decreasing:\n$\\cot^{-1}x < \\frac{1}{\\sqrt{3}} \\implies x > \\cot\\left(\\frac{1}{\\sqrt{3}}\\right)$[cite: 3].\n$\\cot^{-1}x > \\sqrt{3} \\implies x < \\cot(\\sqrt{3})$[cite: 3].\nThus, $x \\in (-\\infty, \\cot\\sqrt{3}) \\cup (\\cot\\frac{1}{\\sqrt{3}}, \\infty)$[cite: 3]."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "$\\sum_{n=1}^{10} \\tan(\\tan^{-1}(2^n - 2)) =$",
+          "image": "",
+          "options": [
+            "2046",
+            "2026",
+            "2016",
+            "2006"
+          ],
+          "correctOption": 1,
+          "solution": "For any real $y$, $\\tan(\\tan^{-1}y) = y$[cite: 3].\nThus, $\\sum_{n=1}^{10} (2^n - 2) = \\sum_{n=1}^{10} 2^n - \\sum_{n=1}^{10} 2 = \\frac{2(2^{10} - 1)}{2 - 1} - 2(10) = 2(1023) - 20 = 2046 - 20 = 2026$[cite: 3]."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following functions pair is identical?",
+          "image": "",
+          "options": [
+            "$f(x) = x, \\quad g(x) = \\frac{1}{1/x}$",
+            "$f(x) = \\cos x, \\quad g(x) = \\frac{1}{\\sqrt{1+\\tan^2 x}}$",
+            "$f(x) = \\tan^{-1}x + \\tan^{-1}\\frac{1}{x}, \\quad g(x) = \\sin^{-1}x + \\cos^{-1}x$",
+            "$f(x) = \\cos(\\sin^{-1}x), \\quad g(x) = \\sqrt{1-x^2}$"
+          ],
+          "correctOption": 3,
+          "solution": "- Option (1): Domain of $f$ is $\\mathbb{R}$, domain of $g$ is $\\mathbb{R} - \\{0\\}$ (not identical)[cite: 3].\n- Option (2): $g(x) = \\frac{1}{|\\sec x|} = |\\cos x| \\neq \\cos x$ when $\\cos x < 0$ (not identical)[cite: 3].\n- Option (3): Domain of $g$ is $[-1, 1]$, domain of $f$ is $\\mathbb{R} - \\{0\\}$ (not identical)[cite: 3].\n- Option (4): Domain of $\\sin^{-1}x$ is $[-1, 1]$. For $x \\in [-1, 1]$, $\\cos(\\sin^{-1}x) = \\sqrt{1-x^2}$. Domains and ranges match identically[cite: 3]."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For $x \\in (0, 1)$, let $\\alpha = \\sin^{-1}x,$ $\\beta = x,$ $\\gamma = \\tan^{-1}x,$ and $\\delta = \\cot^{-1}x - \\frac{\\pi}{2}$. Which of the following is true?",
+          "image": "",
+          "options": [
+            "$\\delta > \\alpha > \\beta > \\gamma$",
+            "$\\beta > \\alpha > \\gamma > \\delta$",
+            "$\\alpha > \\beta > \\gamma > \\delta$",
+            "$\\beta > \\alpha > \\delta > \\gamma$"
+          ],
+          "correctOption": 2,
+          "solution": "For $x \\in (0, 1)$:\n1) $\\sin^{-1}x > x > \\tan^{-1}x$, so $\\alpha > \\beta > \\gamma$[cite: 3].\n2) $\\delta = \\cot^{-1}x - \\frac{\\pi}{2} = (\\frac{\\pi}{2} - \\tan^{-1}x) - \\frac{\\pi}{2} = -\\tan^{-1}x < 0$[cite: 3].\nSince $\\alpha, \\beta, \\gamma > 0$ and $\\delta < 0$, we have $\\alpha > \\beta > \\gamma > \\delta$[cite: 3]."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The value of $\\sin\\left(\\frac{1}{4}\\sin^{-1}\\frac{\\sqrt{63}}{8}\\right)$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}$",
+            "$\\frac{1}{3}$",
+            "$\\frac{1}{2\\sqrt{2}}$",
+            "$\\frac{1}{5}$"
+          ],
+          "correctOption": 2,
+          "solution": "Let $\\theta = \\sin^{-1}\\frac{\\sqrt{63}}{8} \\implies \\sin\\theta = \\frac{\\sqrt{63}}{8}, \\cos\\theta = \\sqrt{1 - \\frac{63}{64}} = \\frac{1}{8}$[cite: 3].\n$\\cos\\frac{\\theta}{2} = \\sqrt{\\frac{1 + \\cos\\theta}{2}} = \\sqrt{\\frac{1 + 1/8}{2}} = \\sqrt{\\frac{9}{16}} = \\frac{3}{4}$[cite: 3].\nNow, $\\sin\\frac{\\theta}{4} = \\sqrt{\\frac{1 - \\cos(\\theta/2)}{2}} = \\sqrt{\\frac{1 - 3/4}{2}} = \\sqrt{\\frac{1}{8}} = \\frac{1}{2\\sqrt{2}}$[cite: 3]."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The value of $\\sec\\left[\\sin^{-1}\\left(-\\sin\\frac{50\\pi}{9}\\right) + \\cos^{-1}\\left(\\cos\\frac{-31\\pi}{9}\\right)\\right]$ is:",
+          "image": "",
+          "options": [
+            "$\\sec(\\frac{10\\pi}{9})$",
+            "$\\sec(\\frac{\\pi}{9})$",
+            "1",
+            "-1"
+          ],
+          "correctOption": 3,
+          "solution": "1) $\\frac{50\\pi}{9} = 5\\pi + \\frac{5\\pi}{9} \\implies \\sin\\left(\\frac{50\\pi}{9}\\right) = -\\sin\\frac{5\\pi}{9}$[cite: 3].\nSo $\\sin^{-1}\\left(-\\sin\\frac{50\\pi}{9}\\right) = \\sin^{-1}\\left(\\sin\\frac{5\\pi}{9}\\right) = \\pi - \\frac{5\\pi}{9} = \\frac{4\\pi}{9}$[cite: 3].\n2) $\\cos\\left(-\\frac{31\\pi}{9}\\right) = \\cos\\left(\\frac{31\\pi}{9}\\right) = \\cos\\left(3\\pi + \\frac{4\\pi}{9}\\right) = -\\cos\\frac{4\\pi}{9} = \\cos\\left(\\pi - \\frac{4\\pi}{9}\\right) = \\cos\\frac{5\\pi}{9}$[cite: 3].\nSo $\\cos^{-1}\\left(\\cos\\frac{5\\pi}{9}\\right) = \\frac{5\\pi}{9}$[cite: 3].\nArgument of $\\sec$ $= \\frac{4\\pi}{9} + \\frac{5\\pi}{9} = \\pi$[cite: 3].\n$\\sec(\\pi) = -1$[cite: 3]."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "$2\\cot^{-1}(7) + \\cos^{-1}\\left(\\frac{3}{5}\\right)$ in principal value is equal to:",
+          "image": "",
+          "options": [
+            "$\\tan^{-1}(\\frac{41}{117})$",
+            "$\\tan^{-1}(\\frac{117}{125})$",
+            "$\\cos^{-1}(\\frac{44}{125})$",
+            "$\\cos^{-1}(\\frac{44}{117})$"
+          ],
+          "correctOption": 2,
+          "solution": "$2\\cot^{-1}(7) = 2\\tan^{-1}\\left(\\frac{1}{7}\\right) = \\tan^{-1}\\left(\\frac{2(1/7)}{1 - 1/49}\\right) = \\tan^{-1}\\left(\\frac{2/7}{48/49}\\right) = \\tan^{-1}\\left(\\frac{7}{24}\\right)$[cite: 3].\nIn terms of cosine: $\\tan^{-1}(7/24) = \\cos^{-1}\\left(\\frac{24}{25}\\right)$[cite: 3].\nGiven $\\cos^{-1}(3/5) + \\cos^{-1}(24/25) = \\cos^{-1}\\left(\\frac{3}{5}\\cdot\\frac{24}{25} - \\frac{4}{5}\\cdot\\frac{7}{25}\\right) = \\cos^{-1}\\left(\\frac{72 - 28}{125}\\right) = \\cos^{-1}\\left(\\frac{44}{125}\\right)$[cite: 3]."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The solution set of the inequality $\\tan^{-1}x + \\sin^{-1}x \\ge \\frac{\\pi}{2}$ is:",
+          "image": "",
+          "options": [
+            "[-1, 1]",
+            "$\\left[\\sqrt{\\frac{\\sqrt{5}-1}{4}}, 1\\right]$",
+            "$\\left[\\sqrt{\\frac{\\sqrt{5}-1}{2}}, 1\\right]$",
+            "$\\left[\\frac{\\sqrt{5}-1}{2}, 1\\right]$"
+          ],
+          "correctOption": 2,
+          "solution": "Domain for $\\sin^{-1}x$ is $[-1, 1]$[cite: 3].\n$\\tan^{-1}x \\ge \\frac{\\pi}{2} - \\sin^{-1}x = \\cos^{-1}x$[cite: 3].\nFor $x \\in (0, 1]$, $\\tan^{-1}x = \\cos^{-1}\\left(\\frac{1}{\\sqrt{1+x^2}}\\right)$[cite: 3].\nSince $\\cos^{-1}$ is decreasing: $\\frac{1}{\\sqrt{1+x^2}} \\le x \\implies 1 \\le x^2(1+x^2) \\implies x^4 + x^2 - 1 \\ge 0$[cite: 3].\n$x^2 \\ge \\frac{-1 + \\sqrt{5}}{2} \\implies x \\in \\left[\\sqrt{\\frac{\\sqrt{5}-1}{2}}, 1\\right]$[cite: 3]."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The algebraic expression for $\\tan\\left(\\sin^{-1}\\left(\\cos\\left(\\tan^{-1}\\frac{x}{2}\\right)\\right)\\right)$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{2}{x}$",
+            "$\\frac{x}{2}$",
+            "$\\frac{1}{x}$",
+            "$\\frac{2}{|x|}$"
+          ],
+          "correctOption": 3,
+          "solution": "Let $\\theta = \\tan^{-1}\\frac{x}{2} \\implies \\cos\\theta = \\frac{1}{\\sqrt{1 + (x/2)^2}} = \\frac{2}{\\sqrt{4+x^2}}$[cite: 3].\nNow $\\phi = \\sin^{-1}\\left(\\frac{2}{\\sqrt{4+x^2}}\\right) \\implies \\tan\\phi = \\frac{2}{\\sqrt{(4+x^2) - 4}} = \\frac{2}{\\sqrt{x^2}} = \\frac{2}{|x|}$[cite: 3]."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The expression $\\sum_{n=1}^{\\infty} \\cot^{-1}(n^2 - 3n + 3)$ simplifies to:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{4}$",
+            "$\\frac{\\pi}{2}$",
+            "$\\frac{3\\pi}{4}$",
+            "$\\pi$"
+          ],
+          "correctOption": 2,
+          "solution": "$\\cot^{-1}(n^2 - 3n + 3) = \\tan^{-1}\\left(\\frac{1}{1 + (n-1)(n-2)}\\right) = \\tan^{-1}\\left(\\frac{(n-1) - (n-2)}{1 + (n-1)(n-2)}\\right)$[cite: 3]\n$= \\tan^{-1}(n-1) - \\tan^{-1}(n-2)$[cite: 3].\nWriting terms:\nFor $n=1$: $\\tan^{-1}(0) - \\tan^{-1}(-1) = 0 - (-\\pi/4) = \\pi/4$.\nFor $n=2$: $\\tan^{-1}(1) - \\tan^{-1}(0) = \\pi/4 - 0$.\nSum of telescopic series as $N \\to \\infty$:\n$S = \\lim_{N \\to \\infty} [\\tan^{-1}(N-1) - \\tan^{-1}(-1)] = \\frac{\\pi}{2} - \\left(-\\frac{\\pi}{4}\\right) = \\frac{3\\pi}{4}$[cite: 3]."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\sin^{-1}x + \\sin^{-1}y + \\sin^{-1}z = \\frac{3\\pi}{2}$ and $f(1) = 2, f(p+q) = f(p)f(q) \\;\\forall p, q \\in \\mathbb{R}$, then $x^{f(1)} + y^{f(2)} + z^{f(3)} - \\frac{x+y+z}{x^{f(1)} + y^{f(2)} + z^{f(3)}} =$",
+          "image": "",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "correctOption": 2,
+          "solution": "Since $\\sin^{-1}t \\le \\pi/2$, maximum is achieved when $\\sin^{-1}x = \\sin^{-1}y = \\sin^{-1}z = \\pi/2 \\implies x = y = z = 1$[cite: 3].\nGiven $f(p+q) = f(p)f(q)$ and $f(1) = 2 \\implies f(n) = 2^n$[cite: 3].\n$f(1) = 2, f(2) = 4, f(3) = 8$.\nSince $x=y=z=1$, $x^{f(1)} + y^{f(2)} + z^{f(3)} = 1^2 + 1^4 + 1^8 = 3$[cite: 3].\nValue $= 3 - \\frac{1+1+1}{3} = 3 - \\frac{3}{3} = 3 - 1 = 2$[cite: 3]."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $A = 2\\tan^{-1}(2\\sqrt{2} - 1)$ and $B = 3\\sin^{-1}\\left(\\frac{1}{3}\\right) + \\sin^{-1}\\left(\\frac{3}{5}\\right)$, then:",
+          "image": "",
+          "options": [
+            "$A = B$",
+            "$A < B$",
+            "$A > B$",
+            "None of these"
+          ],
+          "correctOption": 2,
+          "solution": "1) $2\\sqrt{2} - 1 \\approx 2.828 - 1 = 1.828 > \\sqrt{3} \\approx 1.732 \\implies \\tan^{-1}(2\\sqrt{2}-1) > \\frac{\\pi}{3}$[cite: 3].\nSo $A = 2\\tan^{-1}(2\\sqrt{2}-1) > 2\\left(\\frac{\\pi}{3}\\right) = \\frac{2\\pi}{3}$[cite: 3].\n2) $3\\sin^{-1}(1/3) = \\sin^{-1}\\left(3(1/3) - 4(1/27)\\right) = \\sin^{-1}\\left(\\frac{23}{27}\\right)$[cite: 3].\n$B = \\sin^{-1}\\left(\\frac{23}{27}\\right) + \\sin^{-1}\\left(\\frac{3}{5}\\right) < \\frac{\\pi}{2} + \\frac{\\pi}{6} = \\frac{2\\pi}{3}$[cite: 3].\nThus, $A > B$[cite: 3]."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following is negative?",
+          "image": "",
+          "options": [
+            "$\\cos(\\tan^{-1}(\\tan 4))$",
+            "$\\sin(\\cot^{-1}(\\cot 4))$",
+            "$\\tan(\\cos^{-1}(\\cos 5))$",
+            "$\\cot(\\sin^{-1}(\\sin 4))$"
+          ],
+          "correctOption": 3,
+          "solution": "For $\\cot(\\sin^{-1}(\\sin 4))$:\nSince $\\pi < 4 < 3\\pi/2$, $\\sin^{-1}(\\sin 4) = \\pi - 4 \\in (-\\pi/2, 0)$ (negative)[cite: 3].\nSince $\\theta \\in (-\\pi/2, 0)$, $\\cot\\theta < 0$[cite: 3].\nHence, $\\cot(\\sin^{-1}(\\sin 4))$ is negative[cite: 3]."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The number of solutions of the equation $\\tan^{-1}(4\\{x\\}) + \\cot^{-1}(x + [x]) = \\frac{\\pi}{2}$ is (where $[.]$ denotes greatest integer and $\\{.\\}$ fractional part function):",
+          "image": "",
+          "options": [
+            "2",
+            "3",
+            "1",
+            "4"
+          ],
+          "correctOption": 0,
+          "solution": "$\\tan^{-1}(4\\{x\\}) = \\frac{\\pi}{2} - \\cot^{-1}(x + [x]) = \\tan^{-1}(x + [x])$[cite: 3].\n$\\implies 4\\{x\\} = x + [x] = 2[x] + \\{x\\} \\implies 3\\{x\\} = 2[x] \\implies \\{x\\} = \\frac{2[x]}{3}$[cite: 3].\nSince $0 \\le \\{x\\} < 1$, we have $0 \\le \\frac{2[x]}{3} < 1 \\implies 0 \\le [x] < 1.5$.\nSince $[x]$ is an integer:\n- If $[x] = 0 \\implies \\{x\\} = 0 \\implies x = 0$.\n- If $[x] = 1 \\implies \\{x\\} = 2/3 \\implies x = 1 + 2/3 = 5/3$.\nThus, there are exactly 2 solutions[cite: 3]."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Number of integers in domain of $f(x) = \\log\\left(\\tan^{-1}\\left(\\frac{x^3 - 6x^2 + 11x - 6}{x(e^x - 1)}\\right)\\right) + \\sqrt{10 - x}$ is:",
+          "image": "",
+          "options": [
+            "5",
+            "6",
+            "8",
+            "7"
+          ],
+          "correctOption": 3,
+          "solution": "1) For square root: $10 - x \\ge 0 \\implies x \\le 10$[cite: 3].\n2) For log: $\\tan^{-1}\\left(\\frac{(x-1)(x-2)(x-3)}{x(e^x-1)}\\right) > 0 \\implies \\frac{(x-1)(x-2)(x-3)}{x(e^x-1)} > 0$[cite: 3].\nSince $x(e^x - 1) > 0$ for all $x \\neq 0$, we require $(x-1)(x-2)(x-3) > 0$[cite: 3].\nWavy curve method gives $x \\in (1, 2) \\cup (3, \\infty)$[cite: 3].\nIntersection with $x \\le 10$ and $x \\neq 0$: $x \\in (1, 2) \\cup (3, 10]$[cite: 3].\nInteger values of $x$ are $\\{4, 5, 6, 7, 8, 9, 10\\}$[cite: 3].\nTotal integers $= 7$[cite: 3]."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Range of $\\sin^{-1}\\left[x^2 + \\frac{1}{2}\\right] + \\cos^{-1}\\left[x^2 - \\frac{1}{2}\\right]$, where $[.]$ denotes the greatest integer function, is:",
+          "image": "",
+          "options": [
+            "$\\{\\frac{\\pi}{2}, \\pi\\}$",
+            "$\\{\\pi\\}$",
+            "$\\{\\frac{\\pi}{2}\\}$",
+            "None of these"
+          ],
+          "correctOption": 1,
+          "solution": "For $\\sin^{-1}A$ and $\\cos^{-1}B$ to be defined, $A, B \\in \\{-1, 0, 1\\}$ as integers[cite: 3].\n$x^2 \\ge 0 \\implies x^2 + 1/2 \\ge 1/2 \\implies [x^2 + 1/2] \\ge 0$.\nFor $\\sin^{-1}[x^2 + 1/2]$ to be defined, $[x^2 + 1/2]$ can only be $0$ or $1$[cite: 3].\n- If $[x^2 + 1/2] = 0 \\implies 1/2 \\le x^2 + 1/2 < 1 \\implies 0 \\le x^2 < 1/2$.\nThen $-1/2 \\le x^2 - 1/2 < 0 \\implies [x^2 - 1/2] = -1$.\nExpression $= \\sin^{-1}(0) + \\cos^{-1}(-1) = 0 + \\pi = \\pi$[cite: 3].\n- If $[x^2 + 1/2] = 1 \\implies 1 \\le x^2 + 1/2 < 2 \\implies 1/2 \\le x^2 < 3/2$.\nThen $0 \\le x^2 - 1/2 < 1 \\implies [x^2 - 1/2] = 0$.\nExpression $= \\sin^{-1}(1) + \\cos^{-1}(0) = \\frac{\\pi}{2} + \\frac{\\pi}{2} = \\pi$[cite: 3].\nHence, range is the singleton set $\\{\\pi\\}$[cite: 3]."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $[x]$ denotes the integral part of $x$ and $k = \\sin^{-1}\\left(\\frac{1+t^2}{2t}\\right) > 0$, then the integral value of $\\alpha$ for which the equation $(x - [k])(x + \\alpha) - 1 = 0$ has integral roots is:",
+          "image": "",
+          "options": [
+            "-1",
+            "1",
+            "2",
+            "None of these"
+          ],
+          "correctOption": 0,
+          "solution": "By AM-GM, $\\left|\\frac{1+t^2}{2t}\\right| \\ge 1$. For $\\sin^{-1}$ to be defined and positive, $\\frac{1+t^2}{2t} = 1 \\implies k = \\sin^{-1}(1) = \\frac{\\pi}{2} \\approx 1.57$[cite: 3].\nThus, $[k] = 1$[cite: 3].\nThe equation becomes $(x - 1)(x + \\alpha) = 1$[cite: 3].\nFor integral roots, factors of 1 must be $(1, 1)$ or $(-1, -1)$:\n- Case 1: $x - 1 = 1 \\implies x = 2 \\implies 2 + \\alpha = 1 \\implies \\alpha = -1$[cite: 3].\n- Case 2: $x - 1 = -1 \\implies x = 0 \\implies 0 + \\alpha = -1 \\implies \\alpha = -1$[cite: 3].\nThus, the integral value of $\\alpha$ is $-1$[cite: 3]."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "If $1 \\le x \\le y \\le z$ and $\\sin^{-1}x + \\sec^{-1}y - \\cot^{-1}z = \\frac{\\pi}{4}$, then $x^2 - yz + z^2 =$",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Since domain of $\\sin^{-1}x$ requires $x \\le 1$, and $1 \\le x \\implies x = 1$[cite: 3].\nThen $\\sin^{-1}(1) = \\frac{\\pi}{2}$[cite: 3].\n$\\frac{\\pi}{2} + \\sec^{-1}y - \\cot^{-1}z = \\frac{\\pi}{4} \\implies \\cot^{-1}z - \\sec^{-1}y = \\frac{\\pi}{4}$[cite: 3].\nSince $1 \\le y \\le z$, maximum of $\\cot^{-1}z$ is $\\pi/4$ (at $z=1$), and minimum of $\\sec^{-1}y$ is $0$ (at $y=1$)[cite: 3].\nThus equality holds only when $x = y = z = 1$[cite: 3].\n$x^2 - yz + z^2 = 1^2 - (1)(1) + 1^2 = 1$[cite: 3]."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "The number of roots of the equation $\\sin^{-1}(1-x) + 2\\sin^{-1}x = \\frac{\\pi}{2}$ is:",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "$\\sin^{-1}(1-x) = \\frac{\\pi}{2} - 2\\sin^{-1}x$[cite: 3].\nTaking sine of both sides: $1 - x = \\cos(2\\sin^{-1}x) = 1 - 2x^2$[cite: 3].\n$1 - x = 1 - 2x^2 \\implies 2x^2 - x = 0 \\implies x(2x - 1) = 0 \\implies x = 0 \\text{ or } x = 1/2$[cite: 3].\nChecking validity:\n- $x = 0$: $\\sin^{-1}(1) + 0 = \\pi/2$ (Valid)\n- $x = 1/2$: $\\sin^{-1}(1/2) + 2\\sin^{-1}(1/2) = 3(\\pi/6) = \\pi/2$ (Valid)\nThus, there are exactly 2 roots[cite: 3]."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "If $\\sum_{\\alpha=1}^{\\infty} \\csc^{-1}\\sqrt{1+4\\alpha^4} = \\frac{a\\pi}{b}$ (where $a, b$ are coprime numbers), then $(a+b)$ is equal to:",
+          "image": "",
+          "correctValue": 5.0,
+          "solution": "$\\csc^{-1}\\sqrt{1+4\\alpha^4} = \\tan^{-1}\\left(\\frac{1}{2\\alpha^2}\\right) = \\tan^{-1}\\left(\\frac{2}{4\\alpha^2}\\right) = \\tan^{-1}\\left(\\frac{(2\\alpha+1) - (2\\alpha-1)}{1 + (2\\alpha+1)(2\\alpha-1)}\\right)$[cite: 3]\n$= \\tan^{-1}(2\\alpha+1) - \\tan^{-1}(2\\alpha-1)$[cite: 3].\nSumming from $\\alpha = 1$ to $\\infty$ telescopically[cite: 3]:\n$S = \\lim_{N \\to \\infty} [\\tan^{-1}(2N+1) - \\tan^{-1}(1)] = \\frac{\\pi}{2} - \\frac{\\pi}{4} = \\frac{\\pi}{4}$[cite: 3].\nHere $a = 1, b = 4 \\implies a + b = 1 + 4 = 5$[cite: 3]."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "If $\\sin^{-1}(\\sin 5) > x^2 - 4x$, then the number of possible integral values of $x$ is:",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "Since $3\\pi/2 < 5 < 2\\pi$, $\\sin^{-1}(\\sin 5) = 5 - 2\\pi \\approx 5 - 6.283 = -1.283$[cite: 3].\n$x^2 - 4x < 5 - 2\\pi \\implies (x - 2)^2 - 4 < 5 - 2\\pi \\implies (x - 2)^2 < 9 - 2\\pi \\approx 9 - 6.283 = 2.717$[cite: 3].\n$-\\sqrt{2.717} < x - 2 < \\sqrt{2.717} \\implies -1.648 < x - 2 < 1.648 \\implies 0.352 < x < 3.648$.\nPossible integral values of $x$ are $\\{1, 2, 3\\}$[cite: 3].\nTotal count $= 3$[cite: 3]."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "If $\\sin(\\sin^{-1}(1/5) + \\cos^{-1}x) = 1$, then $5x$ equals:",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "$\\sin^{-1}(1/5) + \\cos^{-1}x = \\sin^{-1}(1) = \\frac{\\pi}{2}$[cite: 3].\n$\\cos^{-1}x = \\frac{\\pi}{2} - \\sin^{-1}(1/5) = \\cos^{-1}(1/5)$[cite: 3].\n$\\implies x = 1/5 \\implies 5x = 1$[cite: 3]."
+        }
+      ]
+    }
+  ]
+}
