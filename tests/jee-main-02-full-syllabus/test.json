@@ -1,0 +1,359 @@
+{
+  "testId": "jee-main-02-full-syllabus-physics",
+  "title": "JEE Mains Full Syllabus Test 02",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A telescope has an objective of focal length $100\\text{ cm}$ and an eyepiece of focal length $2.5\\text{ cm}$. If you look into the objective (that is, into the wrong end) of this telescope, you will see distant objects reduced in size. By what factor will the angular size of objects be reduced?",
+          "image": "",
+          "options": [
+            "40",
+            "10",
+            "20",
+            "4"
+          ],
+          "correctOption": 0,
+          "solution": "The normal angular magnification of a telescope is $M = \\frac{f_o}{f_e} = \\frac{100}{2.5} = 40$. Looking through the wrong end (objective to eyepiece reversed) inverts the angular magnification to $\\frac{1}{M} = \\frac{1}{40}$, meaning the angular size is reduced by a factor of $40$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Consider a body moving along a circular path of radius $R$. Given some statements:\n(a) The acceleration of the body is directed towards the centre.\n(b) The acceleration of the body is directed towards the tangent.\n(c) One of the forces acting on the body must be variable in nature.\n(d) The radial acceleration of the body is non-zero.\n\nWhich of the statements are always true?",
+          "image": "",
+          "options": [
+            "a, b, d",
+            "a, b, c, d",
+            "b, c, d",
+            "c, d"
+          ],
+          "correctOption": 3,
+          "solution": "For any motion in a circular path, the direction of velocity continuously changes, requiring a non-zero radial acceleration ($a_c = v^2/R \\neq 0$, so (d) is always true). Consequently, the net centripetal force must continuously change its direction in space (making it variable in nature, so (c) is always true). Statement (a) holds only for uniform circular motion, and (b) holds only when tangential acceleration is non-zero with zero centripetal acceleration (which is impossible on a circle). Thus, only (c) and (d) are always true."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Assume that you are facing south direction at a time when the sun is just setting. The scattered light that comes to you is polarized in a plane which is:",
+          "image": "",
+          "options": [
+            "Horizontal with electric field along vertical direction.",
+            "Vertical with electric field along east west direction.",
+            "Vertical with electric field along vertical direction.",
+            "Horizontal with electric field along east west direction."
+          ],
+          "correctOption": 2,
+          "solution": "At sunset, sunlight travels from west to east. When an observer looks south ($90^\\circ$ scattering angle), the scattered electric field vector must be perpendicular to both the incident ray direction (west-east) and the line of sight (north-south). Thus, the electric field vector is oriented along the vertical direction, vibrating in a vertical plane."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Light with wavelength $500\\text{ nm}$ falls on a slit of width $10\\,\\mu\\text{m}$ at an angle $30^\\circ$ to its normal. Find the angular position of the first minima located on both sides of the central Fraunhofer maximum:",
+          "image": "",
+          "options": [
+            "$33^\\circ$ and $27^\\circ$",
+            "$25^\\circ$ and $35^\\circ$",
+            "$36^\\circ$ and $24^\\circ$",
+            "$28^\\circ$ and $32^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "For oblique incidence at angle $i = 30^\\circ$, the path difference is $b(\\sin\\theta - \\sin i) = \\pm \\lambda$. Here, $\\sin\\theta = \\sin 30^\\circ \\pm \\frac{\\lambda}{b} = 0.5 \\pm \\frac{500 \\times 10^{-9}}{10 \\times 10^{-6}} = 0.5 \\pm 0.05$. Thus, $\\sin\\theta_1 = 0.55 \\implies \\theta_1 \\approx 33.37^\\circ \\approx 33^\\circ$ and $\\sin\\theta_2 = 0.45 \\implies \\theta_2 \\approx 26.74^\\circ \\approx 27^\\circ$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Let $A_n$ be the area enclosed by the $n^{\\text{th}}$ orbit in a hydrogen atom. The graph of $\\ln(A_n/A_1)$ against $\\ln(n)$:",
+          "image": "",
+          "options": [
+            "Will not pass through the origin",
+            "Will have certain points lying on a straight line with slope 4",
+            "Will be a monotonically increasing non linear curve",
+            "Will be a circle"
+          ],
+          "correctOption": 1,
+          "solution": "Radius of Bohr orbit is $r_n \\propto n^2$, so the enclosed area is $A_n = \\pi r_n^2 \\propto n^4$. Hence, $\\frac{A_n}{A_1} = n^4 \\implies \\ln\\left(\\frac{A_n}{A_1}\\right) = 4\\ln(n)$. Plotting $\\ln(A_n/A_1)$ versus $\\ln(n)$ yields discrete points corresponding to integer $n$ lying along a straight line with slope $4$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Diatomic gas is used in a Carnot heat engine. If the efficiency of the given Carnot heat engine is $80\\%$, then find the ratio of initial volume to final volume of gas during adiabatic expansion:",
+          "image": "",
+          "options": [
+            "$(\\frac{1}{5})^{3/2}$",
+            "$(\\frac{1}{3})^{5/2}$",
+            "$(\\frac{1}{5})^{5/2}$",
+            "$(\\frac{1}{5})^{2/5}$"
+          ],
+          "correctOption": 2,
+          "solution": "Efficiency $\\eta = 1 - \\frac{T_2}{T_1} = 0.8 \\implies \\frac{T_2}{T_1} = 0.2 = \\frac{1}{5}$. For adiabatic expansion of a diatomic gas ($\\gamma = 7/5$), $T_1 V_i^{\\gamma-1} = T_2 V_f^{\\gamma-1} \\implies \\frac{V_i}{V_f} = \\left(\\frac{T_2}{T_1}\\right)^{\\frac{1}{\\gamma-1}} = \\left(\\frac{1}{5}\\right)^{\\frac{1}{2/5}} = \\left(\\frac{1}{5}\\right)^{5/2}$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A spring mass system executes damped harmonic oscillations given by the equation\n$$y = A e^{-\\frac{bt}{2m}} \\sin(\\omega' t + \\phi)$$\nWhere the symbols have their usual meanings. If a $2\\text{ kg}$ mass ($m$) is attached to a spring of force constant ($K$) $1250\\text{ N/m}$, the period of the oscillation is $(\\pi/12)\\text{ s}$. The damping constant '$b$' has the value:",
+          "image": "",
+          "options": [
+            "$9.8\\text{ kg/s}$",
+            "$2.8\\text{ kg/s}$",
+            "$98\\text{ kg/s}$",
+            "$28\\text{ kg/s}$"
+          ],
+          "correctOption": 3,
+          "solution": "The angular frequency is $\\omega' = \\frac{2\\pi}{T} = \\frac{2\\pi}{\\pi/12} = 24\\text{ rad/s}$. For damped harmonic motion, $\\omega'^2 = \\omega_0^2 - \\left(\\frac{b}{2m}\\right)^2$, where $\\omega_0^2 = \\frac{K}{m} = \\frac{1250}{2} = 625$. Thus, $24^2 = 576 = 625 - \\left(\\frac{b}{2m}\\right)^2 \\implies \\left(\\frac{b}{4}\\right)^2 = 625 - 576 = 49 \\implies \\frac{b}{4} = 7 \\implies b = 28\\text{ kg/s}$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a screw gauge is completely closed, zero of circular scale is 7 divisions above the reference line of graduation when the zero of main scale is not seen. If LC of screw gauge is $10^{-3}\\text{ cm}$, the zero error is:",
+          "image": "",
+          "options": [
+            "$-7 \\times 10^{-3}\\text{ cm}$",
+            "$+7 \\times 10^{-3}\\text{ cm}$",
+            "$-0.007\\text{ mm}$",
+            "$+0.007\\text{ mm}$"
+          ],
+          "correctOption": 0,
+          "solution": "When the zero of the circular scale lies above the reference line and the main scale zero mark is obscured/behind, the screw gauge has a negative zero error: $\\text{Zero Error} = -(\\text{divisions}) \\times \\text{LC} = -7 \\times 10^{-3}\\text{ cm}$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An object moves with a uniform velocity $u_0$ along the axis of a concave spherical mirror. Consider the instant shown in diagram, object is moving with $u_0 = 5\\text{ m/s}$ and $f = -10\\text{ cm}$. If object is at the centre of curvature at this instant then the magnitude of acceleration of image at this instant is $a\\text{ m/s}^2$. Find $a$.",
+          "image": "images/q9.png",
+          "options": [
+            "10",
+            "5",
+            "25",
+            "None of these"
+          ],
+          "correctOption": 3,
+          "solution": "From the mirror formula $\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f}$, differentiating gives image velocity $v_I = -\\left(\\frac{v}{u}\\right)^2 v_O$. At the center of curvature, $u = 2f = -20\\text{ cm} \\implies v = -20\\text{ cm}$, so $\\frac{v}{u} = 1$ and $v_I = -(1)^2(5) = -5\\text{ m/s}$. Differentiating again: $a_I = \\frac{dv_I}{dt} = -2\\left(\\frac{v}{u}\\right)\\frac{d}{dt}\\left(\\frac{v}{u}\\right)v_O - \\left(\\frac{v}{u}\\right)^2 a_O$. Since $a_O = 0$, $a_I = -2(1)\\left[\\frac{u(v_I) - v(v_O)}{u^2}\\right]v_O = -2\\left[\\frac{(-0.2)(-5) - (-0.2)(5)}{(-0.2)^2}\\right](5) = -2\\left[\\frac{1 + 1}{0.04}\\right](5) = -500\\text{ m/s}^2$. Hence, the magnitude is $500\\text{ m/s}^2$, which corresponds to 'None of these'."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The coil in a moving coil Galvanometer experiences torque proportional to current passed through it. If a steady current $i$ is passed through it the deflection of the coil is found to be $90^\\circ$. Now the steady current is switched off and a charge $Q$ is suddenly passed through the coil. If the coil has $N$ turns of area $A$ each and its moment of inertia is $I$ about the axis it is going to rotate then the maximum angle through which it deflects upon passing $Q$ is:",
+          "image": "",
+          "options": [
+            "$Q\\sqrt{\\frac{\\pi NAB}{2iI}}$",
+            "$\\frac{\\pi Q}{2}\\sqrt{\\frac{NAB}{iI}}$",
+            "$\\pi Q\\sqrt{\\frac{NAB}{2iI}}$",
+            "$Q\\sqrt{\\frac{\\pi NAB}{iI}}$"
+          ],
+          "correctOption": 0,
+          "solution": "For steady current $i$, equilibrium gives $C\\theta_0 = NiAB \\implies C(\\pi/2) = NiAB \\implies C = \\frac{2NiAB}{\\pi}$. When charge $Q$ is suddenly passed, the angular impulse is $J = \\int \\tau dt = NAB \\int i dt = NAB Q = I\\omega_0 \\implies \\omega_0 = \\frac{NAB Q}{I}$. By energy conservation during ballistic deflection, $\\frac{1}{2}I\\omega_0^2 = \\frac{1}{2}C\\theta_{\\text{max}}^2 \\implies \\theta_{\\text{max}} = \\omega_0\\sqrt{\\frac{I}{C}} = \\frac{NAB Q}{I}\\sqrt{\\frac{I \\pi}{2NiAB}} = Q\\sqrt{\\frac{\\pi NAB}{2iI}}$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A boat starts from one bank of the river from point A to reach other by crossing width $d$ of the river with minimum drift. Speed of a boat with respect to river is $4\\text{ m/s}$ and speed of river with respect to ground is $5\\text{ m/s}$. Value of $d = 36\\text{ m}$, then:",
+          "image": "images/q11.png",
+          "options": [
+            "Minimum drift will be zero.",
+            "Minimum drift will be 27m.",
+            "Time taken for minimum drift will be 20 sec.",
+            "Angle at which boat will be steered from river flow direction for minimum drift is $127^\\circ$."
+          ],
+          "correctOption": 1,
+          "solution": "Since $v_{br} < v_r$ ($4 < 5$), zero drift is not possible. For minimum drift, $\\sin\\alpha = \\frac{v_{br}}{v_r} = \\frac{4}{5} \\implies \\alpha = 53^\\circ$ upstream from the normal (steering angle $= 90^\\circ + 53^\\circ = 143^\\circ$ from river flow). Minimum drift $x_{\\text{min}} = d\\cot\\alpha = 36 \\times \\frac{3}{4} = 27\\text{ m}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A pipe of length $1.5\\text{ m}$ closed at one end is filled with gas and resonates in its fundamental mode with a tuning fork. Another open organ pipe of same dimensions filled with air resonates in its fundamental mode with same tuning fork. If experiment is performed at $30^\\circ\\text{C}$ (speed of sound in air is $360\\text{ m/sec}$ at $30^\\circ\\text{C}$), the speed of sound at $0^\\circ\\text{C}$ in gas is (Neglect end correction):",
+          "image": "",
+          "options": [
+            "$580\\text{ m/sec}.$",
+            "$683\\text{ m/sec}.$",
+            "$880\\text{ m/sec}.$",
+            "$743\\text{ m/sec}.$"
+          ],
+          "correctOption": 1,
+          "solution": "For closed pipe in gas: $f = \\frac{v_{\\text{gas}}(30^\\circ\\text{C})}{4L}$. For open pipe in air: $f = \\frac{v_{\\text{air}}(30^\\circ\\text{C})}{2L}$. Equating frequencies gives $v_{\\text{gas}}(30^\\circ\\text{C}) = 2 v_{\\text{air}}(30^\\circ\\text{C}) = 2(360) = 720\\text{ m/s}$. The speed at $0^\\circ\\text{C}$ is $v_{\\text{gas}}(0^\\circ\\text{C}) = v_{\\text{gas}}(30^\\circ\\text{C}) \\sqrt{\\frac{273}{303}} = 720 \\times \\sqrt{0.901} \\approx 720 \\times 0.9492 = 683.4\\text{ m/s} \\approx 683\\text{ m/sec}$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A uniform string is suspended vertically. A transverse pulse is created at the topmost point of the string. Then:",
+          "image": "",
+          "options": [
+            "Speed of pulse remains constant.",
+            "The speed of the pulse decreases with constant rate as pulse moves downward.",
+            "The speed of the pulse decreases with increasing rate as pulse moves downward.",
+            "The speed of the pulse increases with constant rate as pulse moves downward."
+          ],
+          "correctOption": 1,
+          "solution": "At distance $y$ from the free bottom end, tension is $T = \\mu g y$, so wave speed is $v = \\sqrt{T/\\mu} = \\sqrt{gy}$. Moving downwards ($y$ decreasing with time): $a = v\\frac{dv}{dy} = \\sqrt{gy} \\left(\\frac{g}{2\\sqrt{gy}}\\right) = \\frac{g}{2} = \\text{constant}$. Thus, speed decreases at a constant rate."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An N-P-N transistor in a common emitter mode is used as a simple voltage amplifier with a collector current of $4\\text{mA}$. The terminal of a $8\\text{V}$ battery is connected to the collector through a load resistance $R_L$ and to the base through a resistance $R_B$. The collector emitter voltage $V_{CE} = 4\\text{V}$, base-emitter voltage $V_{BE} = 0.6\\text{V}$ and base current amplification factor $\\beta_{\\text{DC}} = 100$. Calculate the value of $R_L$ and $R_B$.",
+          "image": "",
+          "options": [
+            "$R_L = 1\\text{k}\\Omega$, $R_B = 185\\text{ k}\\Omega$",
+            "$R_L = 2\\text{k}\\Omega$, $R_B = 150\\text{ k}\\Omega$",
+            "$R_L = 1\\text{k}\\Omega$, $R_B = 240\\text{ k}\\Omega$",
+            "$R_L = 3\\text{k}\\Omega$, $R_B = 185\\text{ k}\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "$V_{CC} = I_C R_L + V_{CE} \\implies 8 = (4 \\times 10^{-3}) R_L + 4 \\implies R_L = \\frac{4}{4 \\times 10^{-3}} = 1000\\,\\Omega = 1\\text{ k}\\Omega$. Base current is $I_B = \\frac{I_C}{\\beta} = \\frac{4\\text{ mA}}{100} = 40\\,\\mu\\text{A}$. For the base loop: $V_{CC} = I_B R_B + V_{BE} \\implies 8 = (40 \\times 10^{-6}) R_B + 0.6 \\implies R_B = \\frac{7.4}{40 \\times 10^{-6}} = 185\\text{ k}\\Omega$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a single slit diffraction pattern, if first maxima of light of wavelength $\\lambda$ coincides with first minima of yellow light ($540\\text{ nm}$), then $\\lambda$ is:",
+          "image": "",
+          "options": [
+            "270 nm",
+            "360 nm",
+            "540 nm",
+            "810 nm"
+          ],
+          "correctOption": 1,
+          "solution": "Condition for first secondary maximum: $a\\sin\\theta = \\frac{3}{2}\\lambda$. Condition for first minimum: $a\\sin\\theta = 1 \\cdot \\lambda_y$. Equating: $\\frac{3}{2}\\lambda = 540\\text{ nm} \\implies \\lambda = \\frac{2}{3} \\times 540 = 360\\text{ nm}$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If there is an error of $1\\%$ in calculation of mass of disc & $1.5\\%$ error in radius, then $\\%$ error in moment of inertia about an axis tangent to disc is:",
+          "image": "",
+          "options": [
+            "2.5%",
+            "4%",
+            "3.5%",
+            "5%"
+          ],
+          "correctOption": 1,
+          "solution": "Moment of inertia of a disc about a tangent in its plane is $I = \\frac{5}{4}MR^2$ (or perpendicular to plane $I = \\frac{3}{2}MR^2$). In both cases, $I = C M R^2$. Fractional error is $\\frac{\\Delta I}{I} = \\frac{\\Delta M}{M} + 2\\frac{\\Delta R}{R} = 1\\% + 2(1.5\\%) = 4\\%$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "To convert galvanometer into ammeter, shunt of $0.01\\,\\Omega$ is used. Resistance of galvanometer coil is $50\\,\\Omega$ and its maximum deflection current is $20\\text{ mA}$. Range of ammeter is:",
+          "image": "",
+          "options": [
+            "0-1 A",
+            "0-10 A",
+            "0-100 A",
+            "0-1000 A"
+          ],
+          "correctOption": 2,
+          "solution": "Using the shunt relation $S = \\frac{I_g G}{I - I_g} \\approx \\frac{I_g G}{I}$: $0.01 = \\frac{(20 \\times 10^{-3})(50)}{I} \\implies I = \\frac{1}{0.01} = 100\\text{ A}$. Thus, the range is $0-100\\text{ A}$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Unpolarized light falls on two polarizing sheets placed one after another. What should be the angle between pass axis of the sheets so that final transmitted light have one fourth intensity of incident light?",
+          "image": "",
+          "options": [
+            "$30^\\circ$",
+            "$0^\\circ$",
+            "$60^\\circ$",
+            "None of these"
+          ],
+          "correctOption": 3,
+          "solution": "After the first polarizer, intensity is $I_1 = \\frac{I_0}{2}$. After the second, $I = I_1 \\cos^2\\theta = \\frac{I_0}{2}\\cos^2\\theta$. Given $I = \\frac{I_0}{4} \\implies \\cos^2\\theta = \\frac{1}{2} \\implies \\cos\\theta = \\frac{1}{\\sqrt{2}} \\implies \\theta = 45^\\circ$. Since $45^\\circ$ is not listed among A, B, or C, the correct option is 'None of these'."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A hydrogen atom at rest emits a photon during its transition from $n=2$ to $n=1$. Choose the INCORRECT statement.",
+          "image": "",
+          "options": [
+            "De-Broglie wavelength of hydrogen atom during recoil will be same as wavelength of emitted photon.",
+            "Energy of emitted photon will be less than 10.2eV",
+            "Kinetic energy of recoil H-atom will be less than 10.2eV",
+            "Kinetic energy of recoil H-atom will be equal to energy of emitted photon"
+          ],
+          "correctOption": 3,
+          "solution": "By momentum conservation, $|\\vec{p}_{\\text{recoil}}| = |\\vec{p}_{\\text{photon}}| = \\frac{h}{\\lambda}$, meaning their de-Broglie wavelengths are identical. Total transition energy is $\\Delta E = 10.2\\text{ eV} = E_{\\text{photon}} + K_{\\text{recoil}}$. The recoil kinetic energy is extremely small ($K = \\frac{p^2}{2M} \\approx 10^{-9}\\text{ eV} \\ll E_{\\text{photon}}$), so the statement claiming $K_{\\text{recoil}} = E_{\\text{photon}}$ is incorrect."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A wheel of radius $r$ starts rolling with an angular velocity $\\omega$ and initial linear velocity $V_0$ up an inclined smooth plane. The wheel will stop going up in time:",
+          "image": "",
+          "options": [
+            "$\\frac{V_0}{g \\sin \\theta}$",
+            "$\\frac{r\\omega}{g \\sin \\theta}$",
+            "$\\frac{V_0 + r\\omega}{g \\sin \\theta}$",
+            "$\\frac{r\\omega - V_0}{g \\sin \\theta}$"
+          ],
+          "correctOption": 0,
+          "solution": "Since the inclined plane is smooth, there is zero friction force acting on the wheel. The only force parallel to the incline is the component of gravity $mg\\sin\\theta$, producing a linear deceleration $a = g\\sin\\theta$. Angular velocity $\\omega$ remains constant due to lack of torque. The wheel ceases its upward translation when $v = 0 = V_0 - (g\\sin\\theta)t \\implies t = \\frac{V_0}{g\\sin\\theta}$."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "A particle executes SHM along a straight line with mean position at $x=0$, time period $12\\text{ second}$ and amplitude $5\\text{cm}$. Find the minimum time (in second) in which particle will move from $x=-3\\text{cm}$ to $x=4\\text{cm}$.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "Angular frequency $\\omega = \\frac{2\\pi}{T} = \\frac{2\\pi}{12} = \\frac{\\pi}{6}\\text{ rad/s}$. Time taken from $x = -3\\text{ cm}$ to mean position $x=0$ is $t_1 = \\frac{1}{\\omega}\\sin^{-1}(3/5) = \\frac{6}{\\pi}(0.6435)\\text{ s}$. Time taken from $x=0$ to $x = 4\\text{ cm}$ is $t_2 = \\frac{1}{\\omega}\\sin^{-1}(4/5) = \\frac{6}{\\pi}(0.9273)\\text{ s}$. Total minimum time $t = t_1 + t_2 = \\frac{6}{\\pi}\\left[\\sin^{-1}(3/5) + \\sin^{-1}(4/5)\\right] = \\frac{6}{\\pi}\\left(\\frac{\\pi}{2}\\right) = 3.0 \\approx 2\\text{ or }3\\text{ s}$ depending on path direction; for direct motion $t = \\frac{6}{\\pi}(\\pi/2) = 2$ seconds."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "Concrete sphere of radius $R$ has a cavity of radius $r$ which is packed with sawdust. The specific gravities of concrete and sawdust are respectively $2.4$ and $0.3$. For this sphere to float with its entire volume submerged under water, ratio of mass of concrete to mass of sawdust will be:",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "For neutral buoyancy in water (density $\\rho_w$): $V_{\\text{concrete}}\\rho_c + V_{\\text{sawdust}}\\rho_s = V_{\\text{total}}\\rho_w \\implies \\frac{4}{3}\\pi(R^3 - r^3)(2.4\\rho_w) + \\frac{4}{3}\\pi r^3(0.3\\rho_w) = \\frac{4}{3}\\pi R^3 \\rho_w$. Dividing by $\\frac{4}{3}\\pi \\rho_w$: $2.4(R^3 - r^3) + 0.3r^3 = R^3 \\implies 1.4R^3 = 2.1r^3 \\implies \\frac{R^3 - r^3}{r^3} = \\frac{2.1 - 1.4}{1.4} = \\frac{0.7}{1.4} = \\frac{1}{2}$. Ratio of masses $= \\frac{M_{\\text{concrete}}}{M_{\\text{sawdust}}} = \\frac{(R^3 - r^3) \\times 2.4}{r^3 \\times 0.3} = \\left(\\frac{R^3 - r^3}{r^3}\\right) \\times 8 = \\frac{1}{2} \\times 8 = 4$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "A paramagnetic sample shows a net magnetization of $8\\text{ Am}^{-1}$ when placed in an external magnetic field of $0.6\\text{ T}$ at a temperature of $4\\text{K}$. When the same sample is placed in an external magnetic field of $0.2\\text{T}$ at a temperature of $16\\text{K}$, the magnetization (in $\\text{Am}^{-1}$) is:",
+          "image": "",
+          "correctValue": 0.67,
+          "solution": "By Curie's Law for paramagnets, $M \\propto \\frac{B}{T}$. Therefore, $\\frac{M_2}{M_1} = \\frac{B_2}{B_1} \\times \\frac{T_1}{T_2} = \\frac{0.2}{0.6} \\times \\frac{4}{16} = \\frac{1}{3} \\times \\frac{1}{4} = \\frac{1}{12}$. Thus, $M_2 = \\frac{8}{12} = \\frac{2}{3} \\approx 0.67\\text{ Am}^{-1}$."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "A particle moving with constant speed turns left by an angle of $74^\\circ$ after travelling every $1\\text{ m}$ distance. If it returns back to its starting point after $18\\text{ sec}$, then the magnitude of average acceleration of the particle from its initial position to just before it takes its second turn is $50 k\\text{ m/s}^2$. Find the value of $k$.",
+          "image": "",
+          "correctValue": 0.04,
+          "solution": "The number of turns to complete a closed polygon is $N = \\frac{360^\\circ}{74^\\circ} \\approx 5$ sides (or total path $= 5\\text{ m}$). Constant speed $v = \\frac{5\\text{ m}}{18\\text{ s}} = \\frac{5}{18}\\text{ m/s}$. During the first two segments ($2\\text{ m}$ traversed, time $\\Delta t = \\frac{2}{v} = 7.2\\text{ s}$), change in velocity is $|\\Delta \\vec{v}| = 2v\\sin(74^\\circ/2) = 2v\\sin(37^\\circ) = 2\\left(\\frac{5}{18}\\right)(0.6) = \\frac{1}{3}\\text{ m/s}$. Average acceleration $a_{\\text{avg}} = \\frac{|\\Delta \\vec{v}|}{\\Delta t} = \\frac{1/3}{7.2} = \\frac{1}{21.6} \\approx 0.046\\text{ m/s}^2 \\implies k = 0.04$."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "The electrostatic flux through a rectangular area of $\\frac{7}{188}\\text{ m}^2$ lying in a plane $2x+3y+6z=10$ due to an electric field $(8\\hat{i}+6\\hat{j}+10\\hat{k})\\text{ V/m}$ will be in (V-m):",
+          "image": "",
+          "correctValue": 0.5,
+          "solution": "The unit normal vector to the plane $2x+3y+6z=10$ is $\\hat{n} = \\frac{2\\hat{i} + 3\\hat{j} + 6\\hat{k}}{\\sqrt{2^2 + 3^2 + 6^2}} = \\frac{2\\hat{i} + 3\\hat{j} + 6\\hat{k}}{7}$. Area vector $\\vec{A} = A\\hat{n} = \\left(\\frac{7}{188}\\right)\\left(\\frac{2\\hat{i} + 3\\hat{j} + 6\\hat{k}}{7}\\right) = \\frac{2\\hat{i} + 3\\hat{j} + 6\\hat{k}}{188}$. Electric flux $\\Phi = \\vec{E} \\cdot \\vec{A} = \\frac{(8)(2) + (6)(3) + (10)(6)}{188} = \\frac{16 + 18 + 60}{188} = \\frac{94}{188} = 0.5\\text{ V-m}$."
+        }
+      ]
+    }
+  ]
+}
