@@ -4,7 +4,7 @@ import json
 import datetime
 import subprocess
 
-# --- HTML Template: Self-Contained Test Engine (with whitespace-pre-line) ---
+# --- HTML Template: Self-Contained Test Engine ---
 TEST_HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -854,7 +854,7 @@ def sync_and_push_test(folder_name):
     1. Reads tests/<folder_name>/test.json
     2. Writes self-contained index.html & result.html (with rank predictor & multi-line support)
     3. Updates assets/tests-manifest.json
-    4. Automatically commits and pushes to GitHub
+    4. Automatically commits (if changes exist) and pushes to GitHub
     """
     base_dir = os.path.dirname(os.path.abspath(__file__))
     test_dir = os.path.join(base_dir, 'tests', folder_name)
@@ -924,18 +924,23 @@ def sync_and_push_test(folder_name):
 
     print(f"✅ Generated HTML & updated manifest for '{title}'")
 
-    # 3. Bake in Git Commit & Push
-    print("\n🚀 Pushing changes to GitHub...")
+    # 3. Clean Git Staging, Commit & Push
+    print("\n🚀 Syncing changes with GitHub...")
     run_git_command(["git", "add", "-A"])
-    commit_msg = f"Publish test: {title} ({folder_name})"
-    run_git_command(["git", "commit", "-m", commit_msg])
+    
+    status_res = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
+    if status_res.stdout.strip():
+        commit_msg = f"Publish test: {title} ({folder_name})"
+        run_git_command(["git", "commit", "-m", commit_msg])
+    else:
+        print("ℹ️ Working tree clean — no new changes to commit.")
     
     push_success = run_git_command(["git", "push", "origin", "main"])
     if push_success:
-        print(f"\n🎉 Test '{title}' successfully published and pushed to GitHub!")
-        print("Render will deploy the new test automatically in ~20 seconds.")
+        print(f"\n🎉 Test '{title}' successfully synced and deployed to GitHub!")
+        print("Render will deploy the updates in ~20 seconds.")
     else:
-        print("\n⚠️ Files were generated locally, but Git push encountered an issue. Check your connection or branch name.")
+        print("\n⚠️ Files were generated locally, but Git push encountered an issue. Verify remote branch and connection.")
 
     return True
 
@@ -944,6 +949,6 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         target_folder = sys.argv[1]
     else:
-        target_folder = input("Enter test folder name under tests/ (e.g. aits-ft-i-pcm-jee-main-2021-physics): ").strip()
+        target_folder = input("Enter test folder name under tests/ (e.g. jee-main-03-fom-trig): ").strip()
 
     sync_and_push_test(target_folder)
