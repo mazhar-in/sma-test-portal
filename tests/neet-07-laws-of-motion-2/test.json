@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-05-nlm-part-2",
+  "title": "Laws of Motion Part 2: Friction & Circular Dynamics",
+  "syllabus": "Static and Kinetic friction, Laws of friction, Rolling friction, Dynamics of uniform circular motion, Centripetal force and its applications, Vehicle on a level circular road, Vehicle on a banked road",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A block of mass $m$ is placed on a smooth inclined wedge $ABC$ of inclination $\\theta$ as shown in the figure. The wedge is given an acceleration $a$ towards the right. The relation between $a$ and $\\theta$ for the block to remain stationary on the wedge is: (NEET 2018)",
+          "image": "",
+          "options": [
+            "$a = \\frac{g}{\\text{cosec}\\,\\theta}$",
+            "$a = \\frac{g}{\\sin\\theta}$",
+            "$a = g\\cos\\theta$",
+            "$a = g\\tan\\theta$"
+          ],
+          "correctOption": 3,
+          "solution": "In the non-inertial frame of the accelerating wedge, pseudo force $ma$ acts horizontally to the left on the block.\nBalancing forces along the incline plane:\n$$mg\\sin\\theta = ma\\cos\\theta \\implies a = g\\tan\\theta$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which one of the following statements is INCORRECT? (NEET 2018)",
+          "image": "",
+          "options": [
+            "Frictional force opposes the relative motion.",
+            "Limiting value of static friction is directly proportional to normal reaction.",
+            "Rolling friction is smaller than sliding friction.",
+            "Coefficient of sliding friction has dimensions of length."
+          ],
+          "correctOption": 3,
+          "solution": "Coefficient of friction $\\mu = \\frac{f}{N} = \\frac{[\\text{M}\\text{L}\\text{T}^{-2}]}{[\\text{M}\\text{L}\\text{T}^{-2}]} = [\\text{M}^0\\text{L}^0\\text{T}^0]$. It is a dimensionless quantity, so option (4) is incorrect."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two stones of masses $m$ and $2m$ are whirled in horizontal circles, the heavier one in a radius $r/2$ and the lighter one in radius $r$. The tangential speed of lighter stone is $n$ times that of the value of heavier stone when they experience same centripetal forces. The value of $n$ is: (NEET 2015)",
+          "image": "",
+          "options": [
+            "$1$",
+            "$2$",
+            "$3$",
+            "$4$"
+          ],
+          "correctOption": 1,
+          "solution": "Centripetal force $F_c = \\frac{mv^2}{r}$.\nGiven $F_{c1} = F_{c2}$:\n$$\\frac{m v_1^2}{r} = \\frac{(2m) v_2^2}{(r/2)} = \\frac{4m v_2^2}{r}$$\n$$v_1^2 = 4v_2^2 \\implies v_1 = 2v_2$$\nSince $v_1 = n v_2$, we get $n = 2$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A car is negotiating a curved level road of radius $R$. If the coefficient of friction between the tyres and the road is $\\mu_s$, the maximum safe speed of the car is: (NEET 2016)",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\mu_s R g}$",
+            "$\\sqrt{\\frac{R g}{\\mu_s}}$",
+            "$\\sqrt{\\frac{\\mu_s g}{R}}$",
+            "$\\mu_s \\sqrt{R g}$"
+          ],
+          "correctOption": 0,
+          "solution": "Centripetal force is provided by the static friction force:\n$$\\frac{m v_{\\text{max}}^2}{R} = f_{\\text{max}} = \\mu_s N = \\mu_s mg \\implies v_{\\text{max}} = \\sqrt{\\mu_s R g}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A block $A$ of mass $m_1$ rests on a horizontal table. A light string connected to it passes over a frictionless pulley at the edge of the table and carries another block $B$ of mass $m_2$ hanging vertically. The coefficient of kinetic friction between the block and table is $\\mu_k$. When the system is released, the acceleration of block $A$ is: (NEET 2015)",
+          "image": "",
+          "options": [
+            "$\\frac{(m_2 - \\mu_k m_1)g}{m_1 + m_2}$",
+            "$\\frac{(m_2 + \\mu_k m_1)g}{m_1 + m_2}$",
+            "$\\frac{(m_1 - \\mu_k m_2)g}{m_1 + m_2}$",
+            "$\\frac{m_2 g}{m_1 + m_2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Equations of motion:\nFor hanging block $B$: $m_2 g - T = m_2 a$\nFor sliding block $A$: $T - f_k = m_1 a \\implies T - \\mu_k m_1 g = m_1 a$\nAdding both equations:\n$$m_2 g - \\mu_k m_1 g = (m_1 + m_2)a \\implies a = \\frac{(m_2 - \\mu_k m_1)g}{m_1 + m_2}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A plank with a box on it at one end is gradually raised about the other end. As the angle of inclination with the horizontal reaches $30^\\circ$, the box starts to slip and slides $4.0\\text{ m}$ down the plank in $4.0\\text{ s}$. The coefficients of static and kinetic friction between the box and the plank will be, respectively: (NEET 2015)",
+          "image": "",
+          "options": [
+            "$0.58$ and $0.53$",
+            "$0.60$ and $0.50$",
+            "$0.40$ and $0.30$",
+            "$0.58$ and $0.60$"
+          ],
+          "correctOption": 0,
+          "solution": "1) Coefficient of static friction $\\mu_s = \\tan\\theta_s = \\tan 30^\\circ = \\frac{1}{\\sqrt{3}} \\approx 0.577 \\approx 0.58$.\n2) Using $s = \\frac{1}{2}at^2 \\implies 4.0 = \\frac{1}{2}a(4.0)^2 \\implies a = 0.5\\text{ m/s}^2$.\nAcceleration down an incline: $a = g(\\sin\\theta - \\mu_k\\cos\\theta)$.\n$$0.5 = 9.8(\\sin 30^\\circ - \\mu_k\\cos 30^\\circ) = 9.8(0.5 - 0.866\\mu_k)$$\n$$0.5 - 0.866\\mu_k = \\frac{0.5}{9.8} \\approx 0.051 \\implies 0.866\\mu_k = 0.449 \\implies \\mu_k \\approx 0.528 \\approx 0.53$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The maximum speed that can be achieved without skidding by a car on a circular unbanked road of radius $R$ and coefficient of static friction $\\mu$ is $v$. If both the radius and the coefficient of friction are halved, the new maximum speed will be:",
+          "image": "",
+          "options": [
+            "$v/2$",
+            "$v/4$",
+            "$v$",
+            "$2v$"
+          ],
+          "correctOption": 0,
+          "solution": "$v = \\sqrt{\\mu R g}$.\nWhen $\\mu' = \\mu/2$ and $R' = R/2$:\n$$v' = \\sqrt{\\left(\\frac{\\mu}{2}\\right)\\left(\\frac{R}{2}\\right)g} = \\sqrt{\\frac{\\mu R g}{4}} = \\frac{v}{2}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A gramophone record is revolving with an angular velocity $\\omega$. A coin is placed at a distance $r$ from the axis of rotation. The coin will not slip off if the coefficient of static friction $\\mu_s$ satisfies:",
+          "image": "",
+          "options": [
+            "$r \\le \\frac{\\mu_s g}{\\omega^2}$",
+            "$r \\ge \\frac{\\mu_s g}{\\omega^2}$",
+            "$r \\le \\frac{\\mu_s \\omega^2}{g}$",
+            "$r = \\frac{g}{\\mu_s \\omega}$"
+          ],
+          "correctOption": 0,
+          "solution": "For no slipping, required centripetal force must not exceed maximum static friction:\n$$m\\omega^2 r \\le \\mu_s mg \\implies r \\le \\frac{\\mu_s g}{\\omega^2}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A vehicle of mass $m$ is moving on a curved road of radius $r$ banked at an angle $\\theta$. If the coefficient of friction is negligible, the optimum speed $v_0$ of the vehicle to avoid wear and tear of tyres is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{rg\\tan\\theta}$",
+            "$\\sqrt{rg\\cot\\theta}$",
+            "$\\sqrt{rg\\sin\\theta}$",
+            "$\\sqrt{rg\\cos\\theta}$"
+          ],
+          "correctOption": 0,
+          "solution": "On a banked road without friction, horizontal component of normal force provides centripetal acceleration:\n$N\\sin\\theta = \\frac{m v_0^2}{r}$ and $N\\cos\\theta = mg$.\nDividing the two yields $\\tan\\theta = \\frac{v_0^2}{rg} \\implies v_0 = \\sqrt{rg\\tan\\theta}$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A block of mass $10\\text{ kg}$ is in contact against the inner wall of a hollow cylindrical drum of radius $1\\text{ m}$. The coefficient of friction between the block and the inner wall of the cylinder is $0.1$. The minimum angular velocity of the cylinder required to keep the block stuck to the wall without falling when the cylinder is vertical and rotating is: $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$10\\text{ rad/s}$",
+            "$100\\text{ rad/s}$",
+            "$1\\text{ rad/s}$",
+            "$14.14\\text{ rad/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Normal force provides centripetal force: $N = m\\omega^2 r$.\nFor the block not to slide down: $f_s = mg \\le \\mu_s N = \\mu_s (m\\omega^2 r)$.\n$$\\omega_{\\text{min}} = \\sqrt{\\frac{g}{\\mu_s r}} = \\sqrt{\\frac{10}{0.1 \\times 1}} = \\sqrt{100} = 10\\text{ rad/s}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $2\\text{ kg}$ rests on a rough horizontal surface with coefficient of static friction $\\mu_s = 0.5$. If a horizontal force of $5\\text{ N}$ is applied to the body, the magnitude of the frictional force acting on the body is: $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$5\\text{ N}$",
+            "$10\\text{ N}$",
+            "$2\\text{ N}$",
+            "$0\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Limiting static friction $f_L = \\mu_s mg = 0.5 \\times 2 \\times 10 = 10\\text{ N}$.\nSince applied force $F_{\\text{app}} = 5\\text{ N} < f_L$, the body does not move.\nStatic friction is self-adjusting, so $f_s = F_{\\text{app}} = 5\\text{ N}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The angle of banking $\\theta$ for a curved road of radius $r$ designed for speed $v$ is given by:",
+          "image": "",
+          "options": [
+            "$\\theta = \\tan^{-1}\\left(\\frac{v^2}{rg}\\right)$",
+            "$\\theta = \\sin^{-1}\\left(\\frac{v^2}{rg}\\right)$",
+            "$\\theta = \\cos^{-1}\\left(\\frac{rg}{v^2}\\right)$",
+            "$\\theta = \\tan^{-1}\\left(\\frac{rg}{v^2}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "In equilibrium on a banked road without friction:\n$N\\sin\\theta = \\frac{m v^2}{r}$ and $N\\cos\\theta = mg \\implies \\tan\\theta = \\frac{v^2}{rg} \\implies \\theta = \\tan^{-1}\\left(\\frac{v^2}{rg}\\right)$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Why is it easier to pull a lawn roller than to push it?",
+          "image": "",
+          "options": [
+            "Pulling decreases the normal reaction and hence reduces friction",
+            "Pulling increases the normal reaction",
+            "Pushing decreases effective weight",
+            "Friction is zero during pulling"
+          ],
+          "correctOption": 0,
+          "solution": "When pulling with an inclined force, the vertical component $F\\sin\\theta$ acts upwards, reducing normal force to $N = mg - F\\sin\\theta$, thereby decreasing friction $f = \\mu N$. When pushing, $N = mg + F\\sin\\theta$, increasing friction."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A cyclist turns around a curve at $15\\text{ miles/hour}$. If he turns at double the speed, the tendency to overturn becomes:",
+          "image": "",
+          "options": [
+            "Doubled",
+            "Quadrupled",
+            "Halved",
+            "Unchanged"
+          ],
+          "correctOption": 1,
+          "solution": "Overturning torque depends on centripetal force $F_c = \\frac{mv^2}{r} \\propto v^2$.\nWhen speed is doubled ($v \\to 2v$), the tendency to overturn increases by $2^2 = 4$ times (quadrupled)."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The maximum velocity (in $\\text{m/s}$) with which a car driver can traverse a flat circular curve of radius $20\\text{ m}$ without skidding on a wet road where $\\mu_s = 0.2$ is: $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$\\sqrt{40}$",
+            "$20$",
+            "$\\sqrt{20}$",
+            "$40$"
+          ],
+          "correctOption": 0,
+          "solution": "$$v_{\\text{max}} = \\sqrt{\\mu_s R g} = \\sqrt{0.2 \\times 20 \\times 10} = \\sqrt{40}\\text{ m/s}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The angle of repose $\\alpha$ and the angle of static friction $\\lambda$ for a given pair of rough surfaces are related as:",
+          "image": "",
+          "options": [
+            "$\\alpha = \\lambda$",
+            "$\\alpha > \\lambda$",
+            "$\\alpha < \\lambda$",
+            "$\\alpha + \\lambda = 90^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "Angle of friction is defined by $\\tan\\lambda = \\mu_s$. Angle of repose is the maximum inclination angle before sliding occurs, which satisfies $\\tan\\alpha = \\mu_s$. Thus, $\\alpha = \\lambda$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A conveyor belt is moving horizontally with a constant velocity of $2\\text{ m/s}$. A box is gently dropped on it. If coefficient of kinetic friction is $\\mu_k = 0.5$, how far will the box slip on the belt before coming to rest relative to the belt? $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$0.4\\text{ m}$",
+            "$0.2\\text{ m}$",
+            "$0.8\\text{ m}$",
+            "$1.2\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Acceleration of the box due to friction: $a = \\mu_k g = 0.5 \\times 10 = 5\\text{ m/s}^2$.\nUsing $v^2 = u^2 + 2as$ with $u = 0$ and $v = 2\\text{ m/s}$:\n$$2^2 = 0 + 2(5)s \\implies 4 = 10s \\implies s = 0.4\\text{ m}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A string breaks under a tension of $100\\text{ N}$. A mass of $1\\text{ kg}$ is attached to this string of length $1\\text{ m}$ and whirled in a horizontal circle on a frictionless table. The maximum angular speed with which the mass can be rotated is:",
+          "image": "",
+          "options": [
+            "$10\\text{ rad/s}$",
+            "$100\\text{ rad/s}$",
+            "$5\\text{ rad/s}$",
+            "$14.14\\text{ rad/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Tension provides centripetal force: $T = m\\omega^2 r$.\n$$100 = (1) \\omega_{\\text{max}}^2 (1) \\implies \\omega_{\\text{max}}^2 = 100 \\implies \\omega_{\\text{max}} = 10\\text{ rad/s}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A vehicle of mass $1000\\text{ kg}$ takes a turn on a circular banked road of radius $50\\text{ m}$ at an angle of $45^\\circ$. What is the banking design speed of the road? $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$22.36\\text{ m/s}$",
+            "$50.0\\text{ m/s}$",
+            "$10.0\\text{ m/s}$",
+            "$15.81\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$v = \\sqrt{rg\\tan\\theta} = \\sqrt{50 \\times 10 \\times \\tan 45^\\circ} = \\sqrt{500} = 10\\sqrt{5} \\approx 22.36\\text{ m/s}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a body rolls without slipping on a horizontal surface, the work done by the force of static friction is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "Positive",
+            "Negative",
+            "Dependent on the mass of the body"
+          ],
+          "correctOption": 0,
+          "solution": "In pure rolling motion without slipping, the instantaneous velocity of the point of contact with respect to the ground is zero. Since displacement of the point of application of friction is zero, work done by static friction is zero."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A block of mass $4\\text{ kg}$ is placed on another block of mass $6\\text{ kg}$ which rests on a smooth floor. The coefficient of friction between the two blocks is $0.4$. The maximum horizontal force that can be applied to the lower block so that both blocks move together without slipping is: $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$40\\text{ N}$",
+            "$24\\text{ N}$",
+            "$16\\text{ N}$",
+            "$60\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Maximum acceleration the upper block can achieve without slipping:\n$$a_{\\text{max}} = \\mu_s g = 0.4 \\times 10 = 4\\text{ m/s}^2$$\nForce applied to the entire system for this acceleration:\n$$F_{\\text{max}} = (m_1 + m_2)a_{\\text{max}} = (4 + 6) \\times 4 = 40\\text{ N}$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A block slides down an inclined plane of slope $45^\\circ$ with an acceleration equal to $g/(2\\sqrt{2})$. The coefficient of kinetic friction between the block and the plane is:",
+          "image": "",
+          "options": [
+            "$0.5$",
+            "$0.25$",
+            "$0.75$",
+            "$0.8$"
+          ],
+          "correctOption": 0,
+          "solution": "Acceleration down an incline: $a = g(\\sin\\theta - \\mu_k\\cos\\theta)$.\n$$\\frac{g}{2\\sqrt{2}} = g(\\sin 45^\\circ - \\mu_k\\cos 45^\\circ) = g\\left(\\frac{1}{\\sqrt{2}} - \\mu_k\\frac{1}{\\sqrt{2}}\\right)$$\n$$\\frac{1}{2\\sqrt{2}} = \\frac{1 - \\mu_k}{\\sqrt{2}} \\implies 1 - \\mu_k = \\frac{1}{2} \\implies \\mu_k = 0.5$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A car of mass $m$ travels around a banked curve of radius $r$ with banking angle $\\theta$ and coefficient of static friction $\\mu_s$. The maximum safe velocity $v_{\\text{max}}$ is given by:",
+          "image": "",
+          "options": [
+            "$\\sqrt{rg\\left(\\frac{\\tan\\theta + \\mu_s}{1 - \\mu_s\\tan\\theta}\\right)}$",
+            "$\\sqrt{rg\\left(\\frac{\\tan\\theta - \\mu_s}{1 + \\mu_s\\tan\\theta}\\right)}$",
+            "$\\sqrt{rg\\left(\\frac{1 + \\mu_s\\tan\\theta}{\\tan\\theta - \\mu_s}\\right)}$",
+            "$\\sqrt{\\mu_s rg\\tan\\theta}$"
+          ],
+          "correctOption": 0,
+          "solution": "At maximum safe speed, limiting friction acts downwards along the inclined surface of the banked track:\n$$v_{\\text{max}} = \\sqrt{rg\\left(\\frac{\\tan\\theta + \\mu_s}{1 - \\mu_s\\tan\\theta}\\right)}$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A car travels on a banked circular road with coefficient of static friction $\\mu_s$. The minimum speed $v_{\\text{min}}$ below which the car starts slipping inwards down the banking is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{rg\\left(\\frac{\\tan\\theta - \\mu_s}{1 + \\mu_s\\tan\\theta}\\right)}$",
+            "$\\sqrt{rg\\left(\\frac{\\tan\\theta + \\mu_s}{1 - \\mu_s\\tan\\theta}\\right)}$",
+            "$\\sqrt{rg\\tan\\theta}$",
+            "$\\sqrt{\\mu_s rg}$"
+          ],
+          "correctOption": 0,
+          "solution": "At minimum speed, limiting friction acts upwards along the incline to prevent the car from slipping down:\n$$v_{\\text{min}} = \\sqrt{rg\\left(\\frac{\\tan\\theta - \\mu_s}{1 + \\mu_s\\tan\\theta}\\right)}$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The coefficient of rolling friction is typically:",
+          "image": "",
+          "options": [
+            "Much smaller than the coefficient of sliding friction",
+            "Much greater than the coefficient of static friction",
+            "Equal to the coefficient of kinetic friction",
+            "Independent of surface deformations"
+          ],
+          "correctOption": 0,
+          "solution": "Rolling friction arises primarily from momentary surface deformations at the point of contact. The area of contact is minimal during rolling, making the coefficient of rolling friction $\\mu_r$ significantly smaller than sliding friction ($\\mu_r \\ll \\mu_k < \\mu_s$)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A cyclist negotiating a sharp curve of radius $r$ at a speed $v$ bends inwards through an angle $\\theta$ with the vertical. The angle $\\theta$ is given by:",
+          "image": "",
+          "options": [
+            "$\\tan\\theta = \\frac{v^2}{rg}$",
+            "$\\tan\\theta = \\frac{rg}{v^2}$",
+            "$\\sin\\theta = \\frac{v^2}{rg}$",
+            "$\\cos\\theta = \\frac{v^2}{rg}$"
+          ],
+          "correctOption": 0,
+          "solution": "For torque balance about the centre of mass: $N\\sin\\theta = f = \\frac{m v^2}{r}$ and $N\\cos\\theta = mg$.\nDividing the two yields $\\tan\\theta = \\frac{v^2}{rg}$."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A block of mass $m$ is pressed against a vertical rough wall with a horizontal force $F$. If the coefficient of static friction between the wall and block is $\\mu_s$, the minimum force $F$ needed to keep the block stationary is:",
+          "image": "",
+          "options": [
+            "$\\frac{mg}{\\mu_s}$",
+            "$\\mu_s mg$",
+            "$\\frac{\\mu_s}{mg}$",
+            "$mg$"
+          ],
+          "correctOption": 0,
+          "solution": "Normal force is $N = F$.\nFor vertical equilibrium: $f_s = mg \\le \\mu_s N = \\mu_s F$.\n$$F_{\\text{min}} = \\frac{mg}{\\mu_s}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $5\\text{ kg}$ is moving with a velocity of $10\\text{ m/s}$ along a rough horizontal plane. If the coefficient of kinetic friction is $0.2$, the distance travelled by the body before coming to rest is: $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$25\\text{ m}$",
+            "$50\\text{ m}$",
+            "$12.5\\text{ m}$",
+            "$10\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Retardation $a = \\mu_k g = 0.2 \\times 10 = 2\\text{ m/s}^2$.\nUsing stopping distance formula:\n$$s = \\frac{u^2}{2a} = \\frac{10^2}{2(2)} = \\frac{100}{4} = 25\\text{ m}$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The centripetal force acting on an object of mass $m$ in uniform circular motion of radius $r$ at speed $v$ is $F$. If the speed is doubled and radius is halved, the new centripetal force will be:",
+          "image": "",
+          "options": [
+            "$8F$",
+            "$4F$",
+            "$2F$",
+            "$16F$"
+          ],
+          "correctOption": 0,
+          "solution": "$$F = \\frac{m v^2}{r}$$\n$$F' = \\frac{m(2v)^2}{(r/2)} = \\frac{4m v^2}{r/2} = 8\\left(\\frac{m v^2}{r}\\right) = 8F$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The limiting friction between two contact surfaces does NOT depend on:",
+          "image": "",
+          "options": [
+            "Apparent area of contact",
+            "Nature of the surfaces in contact",
+            "Material of the surfaces",
+            "Normal reaction force"
+          ],
+          "correctOption": 0,
+          "solution": "According to the laws of friction, limiting friction is independent of the apparent area of contact as long as the normal reaction remains unchanged."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle of mass $m$ is revolving in a horizontal circle of radius $r$ attached to a string of length $L$ that makes an angle $\\theta$ with the vertical (conical pendulum). The time period of the pendulum is:",
+          "image": "",
+          "options": [
+            "$2\\pi\\sqrt{\\frac{L\\cos\\theta}{g}}$",
+            "$2\\pi\\sqrt{\\frac{L}{g}}$",
+            "$2\\pi\\sqrt{\\frac{L\\sin\\theta}{g}}$",
+            "$2\\pi\\sqrt{\\frac{L\\tan\\theta}{g}}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a conical pendulum:\n$T\\cos\\theta = mg$ and $T\\sin\\theta = m\\omega^2 r = m\\omega^2 (L\\sin\\theta) \\implies T = m\\omega^2 L$.\nSubstituting $T$: $(m\\omega^2 L)\\cos\\theta = mg \\implies \\omega = \\sqrt{\\frac{g}{L\\cos\\theta}}$.\n$$\\text{Period } T_p = \\frac{2\\pi}{\\omega} = 2\\pi\\sqrt{\\frac{L\\cos\\theta}{g}}$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A block of mass $m$ is resting on an inclined plane. If the angle of inclination $\\theta$ is slowly increased, the contact force exerted by the plane on the block before it starts slipping is:",
+          "image": "",
+          "options": [
+            "Constant and equal to $mg$",
+            "Decreases continuously",
+            "Increases continuously",
+            "$mg\\cos\\theta$"
+          ],
+          "correctOption": 0,
+          "solution": "Before slipping occurs, the block is in static equilibrium under gravity $mg$ and the total contact force $\\vec{R}$ (vector sum of normal reaction $N$ and static friction $f_s$).\nSince the net force is zero, $\\vec{R} + m\\vec{g} = 0 \\implies |\\vec{R}| = mg$ in magnitude, remaining constant."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A coin placed on a rotating horizontal turntable just slips when it is placed at a distance $4\\text{ cm}$ from the center. If the angular velocity of the turntable is doubled, the coin will just slip when placed at a distance of:",
+          "image": "",
+          "options": [
+            "$1\\text{ cm}$",
+            "$2\\text{ cm}$",
+            "$8\\text{ cm}$",
+            "$16\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Condition for slipping: $m\\omega^2 r = \\mu_s mg \\implies r \\omega^2 = \\text{constant}$.\n$$r_1 \\omega_1^2 = r_2 \\omega_2^2 \\implies 4 \\times \\omega^2 = r_2 (2\\omega)^2 \\implies 4\\omega^2 = 4r_2 \\omega^2 \\implies r_2 = 1\\text{ cm}$$"
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A block of mass $1\\text{ kg}$ is pushed against a rough vertical wall with a horizontal force $F = 20\\text{ N}$. If $\\mu_s = 0.6$ and $\\mu_k = 0.4$, the magnitude of the frictional force acting on the block is: $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$10\\text{ N}$",
+            "$12\\text{ N}$",
+            "$8\\text{ N}$",
+            "$20\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Normal force $N = F = 20\\text{ N}$.\nLimiting friction $f_L = \\mu_s N = 0.6 \\times 20 = 12\\text{ N}$.\nDownward force due to gravity $W = mg = 1 \\times 10 = 10\\text{ N}$.\nSince $W < f_L$, the block does not slide down. Static friction adjusts to balance gravity: $f_s = 10\\text{ N}$."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A circular racetrack of radius $300\\text{ m}$ is banked at an angle of $15^\\circ$. If the coefficient of friction between the wheels of a race-car and the road is $0.2$, the optimum speed of the car to avoid any wear and tear of tyres is: $(\\tan 15^\\circ \\approx 0.27, g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$28.46\\text{ m/s}$",
+            "$38.1\\text{ m/s}$",
+            "$20.0\\text{ m/s}$",
+            "$15.5\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$v_0 = \\sqrt{rg\\tan\\theta} = \\sqrt{300 \\times 10 \\times 0.27} = \\sqrt{810} \\approx 28.46\\text{ m/s}$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A small body of mass $m$ is placed on the top of a smooth hemisphere of radius $R$. If it is slightly disturbed, at what height $h$ from the base will it lose contact with the hemisphere?",
+          "image": "",
+          "options": [
+            "$\\frac{2}{3}R$",
+            "$\\frac{1}{3}R$",
+            "$\\frac{1}{2}R$",
+            "$\\frac{3}{4}R$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $\\theta$ be the angle with the vertical where contact is lost ($N = 0$).\nConservation of energy: $mg R(1 - \\cos\\theta) = \\frac{1}{2}mv^2 \\implies v^2 = 2gR(1 - \\cos\\theta)$.\nEquation of motion along radius: $mg\\cos\\theta - N = \\frac{mv^2}{R} \\implies mg\\cos\\theta = 2mg(1 - \\cos\\theta)$.\n$$3\\cos\\theta = 2 \\implies \\cos\\theta = \\frac{2}{3}$$\nHeight from base $h = R\\cos\\theta = \\frac{2}{3}R$."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A car of mass $m$ negotiates a flat level turn of radius $R$ on a friction coefficient $\\mu$. If the center of gravity of the car is at a height $h$ above the road and the distance between its wheels is $2a$, the maximum speed to prevent overturning is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{gRa}{h}}$",
+            "$\\sqrt{\\frac{gRh}{a}}$",
+            "$\\sqrt{gR\\mu}$",
+            "$\\sqrt{\\frac{2gRa}{h}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Taking torque about the outer wheels at the brink of overturning ($N_{\\text{inner}} = 0$):\nCentrifugal force torque balances gravity torque:\n$$(m a_c) h = (mg) a \\implies \\left(\\frac{m v^2}{R}\\right)h = mga \\implies v = \\sqrt{\\frac{gRa}{h}}$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A heavy uniform chain of length $L$ and mass $M$ lies on a horizontal table. If the coefficient of static friction between the table and chain is $\\mu_s$, the maximum fraction of length $\\eta = l/L$ that can hang over the edge without sliding is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\mu_s}{1 + \\mu_s}$",
+            "$\\frac{\\mu_s}{1 - \\mu_s}$",
+            "$\\frac{1}{1 + \\mu_s}$",
+            "$\\mu_s$"
+          ],
+          "correctOption": 0,
+          "solution": "Hanging length is $l$, length on table is $(L - l)$.\nHanging weight $W = \\left(\\frac{M}{L}\\right)lg$.\nLimiting friction on table $f_L = \\mu_s N = \\mu_s \\left(\\frac{M}{L}\\right)(L - l)g$.\nFor equilibrium: $l = \\mu_s(L - l) \\implies l(1 + \\mu_s) = \\mu_s L \\implies \\frac{l}{L} = \\frac{\\mu_s}{1 + \\mu_s}$."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A block of mass $m$ slides down a rough incline of inclination $30^\\circ$ with constant velocity. If it is projected up the same inclined plane with an initial velocity $u$, the distance it travels along the incline before stopping is:",
+          "image": "",
+          "options": [
+            "$\\frac{u^2}{2g}$",
+            "$\\frac{u^2}{4g}$",
+            "$\\frac{u^2}{g}$",
+            "$\\frac{u^2}{2g\\sin 30^\\circ}$"
+          ],
+          "correctOption": 0,
+          "solution": "Downhill constant velocity implies $mg\\sin 30^\\circ = f_k = \\mu_k mg\\cos 30^\\circ \\implies \\mu_k\\cos 30^\\circ = \\sin 30^\\circ = 0.5$.\nDuring upward motion, retardation is:\n$$a = g(\\sin 30^\\circ + \\mu_k\\cos 30^\\circ) = g(0.5 + 0.5) = g$$\nDistance travelled $s = \\frac{u^2}{2a} = \\frac{u^2}{2g}$."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $m$ is tied to a string of length $l$ and rotated in a vertical circle. The minimum speed required at the lowest point so that the string does not slacken at the top is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{5gl}$",
+            "$\\sqrt{3gl}$",
+            "$\\sqrt{gl}$",
+            "$\\sqrt{2gl}$"
+          ],
+          "correctOption": 0,
+          "solution": "At top point, critical speed is $v_{\\text{top}} = \\sqrt{gl}$.\nBy conservation of energy between lowest and highest points:\n$$\\frac{1}{2}m v_{\\text{low}}^2 = \\frac{1}{2}m v_{\\text{top}}^2 + mg(2l) = \\frac{1}{2}m(gl) + 2mgl = \\frac{5}{2}mgl \\implies v_{\\text{low}} = \\sqrt{5gl}$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When an automobile moving at $60\\text{ km/h}$ brakes with maximum force, it skids to a stop in $20\\text{ m}$. If the car is carrying a heavy load that doubles its total mass, under the same braking condition on the same road, the stopping distance will be:",
+          "image": "",
+          "options": [
+            "$20\\text{ m}$",
+            "$40\\text{ m}$",
+            "$10\\text{ m}$",
+            "$80\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Retardation $a = \\frac{f_k}{m} = \\frac{\\mu_k mg}{m} = \\mu_k g$ is independent of the mass of the vehicle. Thus, stopping distance $s = \\frac{u^2}{2\\mu_k g}$ remains identical at $20\\text{ m}$."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A motorcyclist moves in a horizontal circle inside a cylindrical vertical wall of radius $r$ (well of death). If the coefficient of static friction between tyres and wall is $\\mu_s$, the minimum speed to prevent slipping down is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{rg}{\\mu_s}}$",
+            "$\\sqrt{\\mu_s rg}$",
+            "$\\sqrt{\\frac{\\mu_s g}{r}}$",
+            "$\\sqrt{\\frac{g}{\\mu_s r}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Normal force $N = \\frac{m v^2}{r}$.\nFriction balances weight: $f_s = mg \\le \\mu_s N = \\mu_s \\left(\\frac{m v^2}{r}\\right)$.\n$$v_{\\text{min}} = \\sqrt{\\frac{rg}{\\mu_s}}$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The work done by centripetal force during one complete revolution of a particle in a circle of radius $R$ is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$2\\pi R F_c$",
+            "$\\pi R F_c$",
+            "$\\frac{m v^2}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Centripetal force is always perpendicular to the instantaneous displacement vector ($\\vec{F}_c \\perp d\\vec{r}$). Therefore, instantaneous power and work done $W = \\int \\vec{F}_c \\cdot d\\vec{r} = 0$ at every instant."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A block of mass $m$ placed on an inclined plane of angle $\\theta$ is just on the verge of sliding down. The coefficient of static friction is:",
+          "image": "",
+          "options": [
+            "$\\tan\\theta$",
+            "$\\sin\\theta$",
+            "$\\cos\\theta$",
+            "$\\cot\\theta$"
+          ],
+          "correctOption": 0,
+          "solution": "At the verge of slipping: $mg\\sin\\theta = f_L = \\mu_s mg\\cos\\theta \\implies \\mu_s = \\frac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta$."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A block of mass $2\\text{ kg}$ is resting on a rough horizontal surface $(\\mu_s = 0.5, \\mu_k = 0.4)$. A horizontal force $F = 12\\text{ N}$ is applied to it. The acceleration produced in the block is: $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$2\\text{ m/s}^2$",
+            "$1\\text{ m/s}^2$",
+            "$3\\text{ m/s}^2$",
+            "$0\\text{ m/s}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Limiting static friction $f_L = \\mu_s mg = 0.5 \\times 2 \\times 10 = 10\\text{ N}$.\nSince $F = 12\\text{ N} > f_L$, the block moves and kinetic friction acts: $f_k = \\mu_k mg = 0.4 \\times 2 \\times 10 = 8\\text{ N}$.\n$$a = \\frac{F - f_k}{m} = \\frac{12 - 8}{2} = \\frac{4}{2} = 2\\text{ m/s}^2$$"
+        }
+      ]
+    }
+  ]
+}
