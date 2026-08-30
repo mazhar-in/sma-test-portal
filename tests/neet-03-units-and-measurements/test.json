@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-03-units-and-measurements",
+  "title": "Units and Measurements",
+  "syllabus": "Units of measurements, System of Units, SI Units, Fundamental and Derived units, Least count, Significant figures, Errors in measurements, Dimensions of Physical quantities, Dimensional analysis and its applications",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following pairs of physical quantities have the same dimensions? (NEET/AIPMT)",
+          "image": "",
+          "options": [
+            "Force and Power",
+            "Stress and Pressure",
+            "Work and Power",
+            "Momentum and Energy"
+          ],
+          "correctOption": 1,
+          "solution": "$\\text{Stress} = \\frac{\\text{Force}}{\\text{Area}} = \\frac{[\\text{M}\\text{L}\\text{T}^{-2}]}{[\\text{L}^2]} = [\\text{M}\\text{L}^{-1}\\text{T}^{-2}]$\n$\\text{Pressure} = \\frac{\\text{Force}}{\\text{Area}} = [\\text{M}\\text{L}^{-1}\\text{T}^{-2}]$\nHence, Stress and Pressure have identical dimensions."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimensions of universal gravitational constant $G$ are: (NEET/AIPMT)",
+          "image": "",
+          "options": [
+            "$[\\text{M}^{-1}\\text{L}^3\\text{T}^{-2}]$",
+            "$[\\text{M}\\text{L}^2\\text{T}^{-1}]$",
+            "$[\\text{M}^{-2}\\text{L}^3\\text{T}^{-1}]$",
+            "$[\\text{M}^{-1}\\text{L}^2\\text{T}^{-2}]$"
+          ],
+          "correctOption": 0,
+          "solution": "From Newton's law of gravitation, $F = \\frac{G m_1 m_2}{r^2} \\implies G = \\frac{F r^2}{m_1 m_2}$\n$$[G] = \\frac{[\\text{M}\\text{L}\\text{T}^{-2}][\\text{L}^2]}{[\\text{M}^2]} = [\\text{M}^{-1}\\text{L}^3\\text{T}^{-2}]$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimensions of Planck's constant are the same as that of: (NEET)",
+          "image": "",
+          "options": [
+            "Linear momentum",
+            "Angular momentum",
+            "Work",
+            "Energy"
+          ],
+          "correctOption": 1,
+          "solution": "Energy of a photon is $E = h\\nu \\implies h = \\frac{E}{\\nu} = \\frac{[\\text{M}\\text{L}^2\\text{T}^{-2}]}{[\\text{T}^{-1}]} = [\\text{M}\\text{L}^2\\text{T}^{-1}]$\nAngular momentum $L = mvr = [\\text{M}][\\text{L}\\text{T}^{-1}][\\text{L}] = [\\text{M}\\text{L}^2\\text{T}^{-1}]$\nThus, Planck's constant has the dimensions of angular momentum."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A physical quantity $X$ is given by $X = \\frac{a^2 b^3}{c \\sqrt{d}}$. The percentage errors in the measurement of $a, b, c$ and $d$ are $1\\%$, $2\\%$, $3\\%$ and $4\\%$ respectively. The percentage error in $X$ is: (NEET)",
+          "image": "",
+          "options": [
+            "$16\\%$",
+            "$13\\%$",
+            "$14\\%$",
+            "$10\\%$"
+          ],
+          "correctOption": 1,
+          "solution": "Relative error in $X$ is given by:\n$$\\frac{\\Delta X}{X} = 2\\left(\\frac{\\Delta a}{a}\\right) + 3\\left(\\frac{\\Delta b}{b}\\right) + 1\\left(\\frac{\\Delta c}{c}\\right) + \\frac{1}{2}\\left(\\frac{\\Delta d}{d}\\right)$$\nPercentage error:\n$$\\%\\Delta X = 2(1\\%) + 3(2\\%) + 1(3\\%) + \\frac{1}{2}(4\\%) = 2\\% + 6\\% + 3\\% + 2\\% = 13\\%$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the error in the measurement of the radius of a sphere is $2\\%$, then the percentage error in the determination of its volume is: (NEET)",
+          "image": "",
+          "options": [
+            "$8\\%$",
+            "$2\\%$",
+            "$4\\%$",
+            "$6\\%$"
+          ],
+          "correctOption": 3,
+          "solution": "Volume of a sphere is $V = \\frac{4}{3}\\pi r^3$.\n$$\\frac{\\Delta V}{V} = 3 \\left(\\frac{\\Delta r}{r}\\right)$$\n$$\\%\\Delta V = 3 \\times 2\\% = 6\\%$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimensional formula of permittivity of free space $(\\varepsilon_0)$ is: (NEET)",
+          "image": "",
+          "options": [
+            "$[\\text{M}^{-1}\\text{L}^{-3}\\text{T}^4\\text{A}^2]$",
+            "$[\\text{M}^{-1}\\text{L}^3\\text{T}^2\\text{A}^{-2}]$",
+            "$[\\text{M}\\text{L}^{-3}\\text{T}^4\\text{A}^2]$",
+            "$[\\text{M}^{-1}\\text{L}^{-3}\\text{T}^2\\text{A}^2]$"
+          ],
+          "correctOption": 0,
+          "solution": "From Coulomb's Law: $F = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q^2}{r^2} \\implies \\varepsilon_0 = \\frac{q^2}{4\\pi F r^2}$\n$$[\\varepsilon_0] = \\frac{[\\text{A}\\text{T}]^2}{[\\text{M}\\text{L}\\text{T}^{-2}][\\text{L}^2]} = \\frac{[\\text{A}^2\\text{T}^2]}{[\\text{M}\\text{L}^3\\text{T}^{-2}]} = [\\text{M}^{-1}\\text{L}^{-3}\\text{T}^4\\text{A}^2]$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A screw gauge has least count of $0.01\\text{ mm}$ and there are 50 divisions in its circular scale. The pitch of the screw gauge is: (NEET)",
+          "image": "",
+          "options": [
+            "$0.25\\text{ mm}$",
+            "$0.5\\text{ mm}$",
+            "$1.0\\text{ mm}$",
+            "$0.05\\text{ mm}$"
+          ],
+          "correctOption": 1,
+          "solution": "Least count (L.C.) $= \\frac{\\text{Pitch}}{\\text{Total circular scale divisions}}$\n$$\\text{Pitch} = \\text{L.C.} \\times N = 0.01\\text{ mm} \\times 50 = 0.5\\text{ mm}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a vernier calliper, $N$ divisions of the vernier scale coincide with $(N-1)$ divisions of the main scale (in which 1 division equals $1\\text{ mm}$). The least count of the instrument is: (NEET)",
+          "image": "",
+          "options": [
+            "$N\\text{ mm}$",
+            "$(N-1)\\text{ mm}$",
+            "$\\frac{1}{N}\\text{ mm}$",
+            "$\\frac{1}{N-1}\\text{ mm}$"
+          ],
+          "correctOption": 2,
+          "solution": "Given $N\\text{ VSD} = (N-1)\\text{ MSD} \\implies 1\\text{ VSD} = \\frac{N-1}{N}\\text{ MSD}$\n$$\\text{L.C.} = 1\\text{ MSD} - 1\\text{ VSD} = 1\\text{ MSD} - \\left(\\frac{N-1}{N}\\right)\\text{ MSD} = \\frac{1}{N}\\text{ MSD} = \\frac{1}{N}\\text{ mm}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Taking into account the significant figures, what is the value of $9.99\\text{ m} - 0.0099\\text{ m}$? (NEET)",
+          "image": "",
+          "options": [
+            "$9.980\\text{ m}$",
+            "$9.98\\text{ m}$",
+            "$9.9801\\text{ m}$",
+            "$9.9\\text{ m}$"
+          ],
+          "correctOption": 1,
+          "solution": "Direct subtraction gives: $9.99 - 0.0099 = 9.9801\\text{ m}$.\nIn subtraction, the result should have decimal places equal to the measurement with the least decimal places (which is 9.99 having 2 decimal places).\nRounding off $9.9801$ to 2 decimal places yields $9.98\\text{ m}$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The number of significant figures in the numbers $0.002030$, $4.00$, and $2.0010$ are respectively:",
+          "image": "",
+          "options": [
+            "4, 3, 5",
+            "6, 1, 5",
+            "4, 1, 4",
+            "3, 3, 4"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $0.002030$: Leading zeroes are non-significant; trailing zeroes in decimal part are significant $\\implies$ 4 significant figures ($2, 0, 3, 0$).\n2. For $4.00$: Trailing zeroes after decimal are significant $\\implies$ 3 significant figures.\n3. For $2.0010$: All non-zero digits, intervening zeroes, and trailing decimal zeroes are significant $\\implies$ 5 significant figures."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If force $[F]$, velocity $[v]$, and time $[T]$ are taken as fundamental physical quantities, the dimensions of mass are: (NEET)",
+          "image": "",
+          "options": [
+            "$[\\text{F}\\text{v}\\text{T}^{-1}]$",
+            "$[\\text{F}\\text{v}^{-1}\\text{T}]$",
+            "$[\\text{F}\\text{v}^{-1}\\text{T}^{-1}]$",
+            "$[\\text{F}\\text{v}^{-2}\\text{T}]$"
+          ],
+          "correctOption": 1,
+          "solution": "Force $F = \\text{mass} \\times \\text{acceleration} = m \\times \\frac{v}{T}$\n$$m = \\frac{F \\cdot T}{v} = [\\text{F}\\text{v}^{-1}\\text{T}]$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The velocity $v$ of a particle at time $t$ is given by the relation $v = at + \\frac{b}{t + c}$. The dimensions of $a, b$ and $c$ are respectively: (NEET/AIPMT)",
+          "image": "",
+          "options": [
+            "$[\\text{L}\\text{T}^{-2}]$, $[\\text{L}]$, $[\\text{T}]$",
+            "$[\\text{L}]$, $[\\text{T}]$, $[\\text{L}\\text{T}]$",
+            "$[\\text{L}\\text{T}^2]$, $[\\text{L}\\text{T}]$, $[\\text{T}]$",
+            "$[\\text{L}\\text{T}^{-1}]$, $[\\text{L}]$, $[\\text{T}^2]$"
+          ],
+          "correctOption": 0,
+          "solution": "By the principle of homogeneity:\n1) $[c] = [t] = [\\text{T}]$\n2) $[at] = [v] \\implies [a][\\text{T}] = [\\text{L}\\text{T}^{-1}] \\implies [a] = [\\text{L}\\text{T}^{-2}]$\n3) $\\left[\\frac{b}{t+c}\\right] = [v] \\implies \\frac{[b]}{[\\text{T}]} = [\\text{L}\\text{T}^{-1}] \\implies [b] = [\\text{L}]$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimensions of $\\frac{1}{\\sqrt{\\mu_0 \\varepsilon_0}}$ are: (NEET)",
+          "image": "",
+          "options": [
+            "$[\\text{L}^{-1}\\text{T}]$",
+            "$[\\text{L}\\text{T}^{-1}]$",
+            "$[\\text{L}^2\\text{T}^{-2}]$",
+            "$[\\text{L}^{-1/2}\\text{T}^{1/2}]$"
+          ],
+          "correctOption": 1,
+          "solution": "The speed of light in vacuum is given by $c = \\frac{1}{\\sqrt{\\mu_0 \\varepsilon_0}}$.\nThus, its dimensional formula is the same as velocity: $[\\text{L}\\text{T}^{-1}]$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following is NOT a fundamental SI unit?",
+          "image": "",
+          "options": [
+            "Candela",
+            "Kelvin",
+            "Joule",
+            "Ampere"
+          ],
+          "correctOption": 2,
+          "solution": "The 7 SI base units are metre (m), kilogram (kg), second (s), ampere (A), kelvin (K), mole (mol), and candela (cd). Joule is a derived unit of energy ($1\\text{ J} = 1\\text{ kg}\\cdot\\text{m}^2/\\text{s}^2$)."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimensions of coefficient of viscosity $(\\eta)$ are: (NEET)",
+          "image": "",
+          "options": [
+            "$[\\text{M}\\text{L}\\text{T}^{-1}]$",
+            "$[\\text{M}\\text{L}^{-1}\\text{T}^{-1}]$",
+            "$[\\text{M}\\text{L}^{-1}\\text{T}^{-2}]$",
+            "$[\\text{M}^{-1}\\text{L}\\text{T}^{-1}]$"
+          ],
+          "correctOption": 1,
+          "solution": "According to Stokes' Law, $F = 6\\pi\\eta r v$\n$$[\\eta] = \\frac{[F]}{[r][v]} = \\frac{[\\text{M}\\text{L}\\text{T}^{-2}]}{[\\text{L}][\\text{L}\\text{T}^{-1}]} = [\\text{M}\\text{L}^{-1}\\text{T}^{-1}]$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The length, breadth, and thickness of a rectangular block are measured as $4.234\\text{ m}$, $1.005\\text{ m}$, and $2.01\\text{ cm}$ respectively. The volume of the block to correct significant figures is:",
+          "image": "",
+          "options": [
+            "$0.0855\\text{ m}^3$",
+            "$0.08552\\text{ m}^3$",
+            "$0.086\\text{ m}^3$",
+            "$0.085528\\text{ m}^3$"
+          ],
+          "correctOption": 0,
+          "solution": "Length $l = 4.234\\text{ m}$ (4 sig figs), breadth $b = 1.005\\text{ m}$ (4 sig figs), thickness $t = 0.0201\\text{ m}$ (3 sig figs).\nVolume $V = 4.234 \\times 1.005 \\times 0.0201 = 0.0855289\\dots\\text{ m}^3$.\nThe result must be rounded to 3 significant figures $\\implies 0.0855\\text{ m}^3$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A student measures the period of oscillation of a simple pendulum. In successive measurements, the readings turn out to be $2.63\\text{ s}$, $2.56\\text{ s}$, $2.42\\text{ s}$, $2.71\\text{ s}$, and $2.80\\text{ s}$. The mean absolute error is:",
+          "image": "",
+          "options": [
+            "$0.11\\text{ s}$",
+            "$0.15\\text{ s}$",
+            "$0.22\\text{ s}$",
+            "$0.08\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Mean period $T_m = \\frac{2.63 + 2.56 + 2.42 + 2.71 + 2.80}{5} = \\frac{13.12}{5} = 2.624\\text{ s} \\approx 2.62\\text{ s}$.\nAbsolute errors: $|2.63-2.62|=0.01$, $|2.56-2.62|=0.06$, $|2.42-2.62|=0.20$, $|2.71-2.62|=0.09$, $|2.80-2.62|=0.18$.\nMean absolute error $\\Delta T_m = \\frac{0.01 + 0.06 + 0.20 + 0.09 + 0.18}{5} = \\frac{0.54}{5} = 0.108\\text{ s} \\approx 0.11\\text{ s}$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following is a dimensionless quantity?",
+          "image": "",
+          "options": [
+            "Specific heat capacity",
+            "Strain",
+            "Gravitational potential",
+            "Angular acceleration"
+          ],
+          "correctOption": 1,
+          "solution": "$\\text{Strain} = \\frac{\\Delta L}{L} = \\frac{[\\text{L}]}{[\\text{L}]} = [\\text{M}^0\\text{L}^0\\text{T}^0]$. It is dimensionless."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The frequency of vibration $f$ of a stretched string depends upon its length $l$, tension $T$, and linear mass density $\\mu$ as $f \\propto l^a T^b \\mu^c$. The values of $a, b, c$ are:",
+          "image": "",
+          "options": [
+            "$a = -1, b = \\frac{1}{2}, c = -\\frac{1}{2}$",
+            "$a = 1, b = -\\frac{1}{2}, c = \\frac{1}{2}$",
+            "$a = -1, b = 1, c = -1$",
+            "$a = -\\frac{1}{2}, b = \\frac{1}{2}, c = 1$"
+          ],
+          "correctOption": 0,
+          "solution": "$[f] = [\\text{T}^{-1}]$, $[l] = [\\text{L}]$, $[T] = [\\text{M}\\text{L}\\text{T}^{-2}]$, $[\\mu] = [\\text{M}\\text{L}^{-1}]$\n$$[\\text{T}^{-1}] = [\\text{L}]^a [\\text{M}\\text{L}\\text{T}^{-2}]^b [\\text{M}\\text{L}^{-1}]^c = [\\text{M}^{b+c} \\text{L}^{a+b-c} \\text{T}^{-2b}]$$\nEquating powers: $-2b = -1 \\implies b = 1/2$; $b+c = 0 \\implies c = -1/2$; $a+b-c = 0 \\implies a + 1/2 - (-1/2) = 0 \\implies a = -1$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The resistance $R = \\frac{V}{I}$ where $V = (100 \\pm 5)\\text{ V}$ and $I = (10 \\pm 0.2)\\text{ A}$. The percentage error in $R$ is: (NEET/AIPMT)",
+          "image": "",
+          "options": [
+            "$5\\%$",
+            "$2\\%$",
+            "$7\\%$",
+            "$3\\%$"
+          ],
+          "correctOption": 2,
+          "solution": "$$\\frac{\\Delta R}{R} \\times 100 = \\left(\\frac{\\Delta V}{V} + \\frac{\\Delta I}{I}\\right) \\times 100$$\n$$\\% \\Delta R = \\left(\\frac{5}{100} + \\frac{0.2}{10}\\right) \\times 100 = (0.05 + 0.02) \\times 100 = 7\\%$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Dimensions of magnetic flux are: (NEET)",
+          "image": "",
+          "options": [
+            "$[\\text{M}\\text{L}^2\\text{T}^{-2}\\text{A}^{-1}]$",
+            "$[\\text{M}\\text{L}^0\\text{T}^{-2}\\text{A}^{-1}]$",
+            "$[\\text{M}\\text{L}^2\\text{T}^{-1}\\text{A}^{-2}]$",
+            "$[\\text{M}\\text{L}^{-2}\\text{T}^{-2}\\text{A}^{-1}]$"
+          ],
+          "correctOption": 0,
+          "solution": "Induced EMF $\\varepsilon = \\frac{d\\Phi}{dt} \\implies \\Phi = \\varepsilon \\cdot t = \\left(\\frac{\\text{Work}}{\\text{Charge}}\\right) t$\n$$[\\Phi] = \\frac{[\\text{M}\\text{L}^2\\text{T}^{-2}]}{[\\text{A}\\text{T}]} [\\text{T}] = [\\text{M}\\text{L}^2\\text{T}^{-2}\\text{A}^{-1}]$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If energy $E$, velocity $V$, and time $T$ are chosen as the fundamental units, the dimensional formula for surface tension is: (NEET)",
+          "image": "",
+          "options": [
+            "$[\\text{E}\\text{V}^{-2}\\text{T}^{-1}]$",
+            "$[\\text{E}\\text{V}^{-1}\\text{T}^{-2}]$",
+            "$[\\text{E}\\text{V}^{-2}\\text{T}^{-2}]$",
+            "$[\\text{E}^2\\text{V}^{-1}\\text{T}^{-2}]$"
+          ],
+          "correctOption": 2,
+          "solution": "Surface tension $[S] = \\frac{\\text{Force}}{\\text{Length}} = \\frac{[\\text{M}\\text{L}\\text{T}^{-2}]}{[\\text{L}]} = [\\text{M}\\text{T}^{-2}]$\nLet $S = E^a V^b T^c = [\\text{M}\\text{L}^2\\text{T}^{-2}]^a [\\text{L}\\text{T}^{-1}]^b [\\text{T}]^c = [\\text{M}^a \\text{L}^{2a+b} \\text{T}^{-2a-b+c}]$\nEquating powers: $a = 1$; $2(1) + b = 0 \\implies b = -2$; $-2(1) - (-2) + c = -2 \\implies c = -2$.\nTherefore, $[S] = [\\text{E}\\text{V}^{-2}\\text{T}^{-2}]$."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The damping force on an oscillator is directly proportional to the velocity. The units of the constant of proportionality are:",
+          "image": "",
+          "options": [
+            "$\\text{kg}\\cdot\\text{m}\\cdot\\text{s}^{-1}$",
+            "$\\text{kg}\\cdot\\text{s}^{-1}$",
+            "$\\text{kg}\\cdot\\text{m}\\cdot\\text{s}^{-2}$",
+            "$\\text{kg}\\cdot\\text{s}$"
+          ],
+          "correctOption": 1,
+          "solution": "$F = -b v \\implies b = \\frac{F}{v}$\n$$\\text{Unit of } b = \\frac{\\text{N}}{\\text{m/s}} = \\frac{\\text{kg}\\cdot\\text{m}\\cdot\\text{s}^{-2}}{\\text{m}\\cdot\\text{s}^{-1}} = \\text{kg}\\cdot\\text{s}^{-1}$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the relation $P = \\frac{\\alpha}{\\beta} e^{-\\frac{\\alpha z}{k_B T}}$, where $P$ is pressure, $z$ is distance, $k_B$ is Boltzmann constant, and $T$ is temperature, the dimensional formula of $\\beta$ will be: (NEET)",
+          "image": "",
+          "options": [
+            "$[\\text{M}^0\\text{L}^2\\text{T}^0]$",
+            "$[\\text{M}\\text{L}^0\\text{T}^{-1}]$",
+            "$[\\text{M}^0\\text{L}\\text{T}^0]$",
+            "$[\\text{M}^0\\text{L}^{-2}\\text{T}^0]$"
+          ],
+          "correctOption": 0,
+          "solution": "The exponent must be dimensionless: $\\left[\\frac{\\alpha z}{k_B T}\\right] = [\\text{M}^0\\text{L}^0\\text{T}^0]$.\nSince $k_B T$ has the dimensions of energy $[\\text{M}\\text{L}^2\\text{T}^{-2}]$:\n$$[\\alpha][\\text{L}] = [\\text{M}\\text{L}^2\\text{T}^{-2}] \\implies [\\alpha] = [\\text{M}\\text{L}\\text{T}^{-2}]$$\nNow, $[P] = \\left[\\frac{\\alpha}{\\beta}\\right] \\implies [\\beta] = \\frac{[\\alpha]}{[P]} = \\frac{[\\text{M}\\text{L}\\text{T}^{-2}]}{[\\text{M}\\text{L}^{-1}\\text{T}^{-2}]} = [\\text{L}^2] = [\\text{M}^0\\text{L}^2\\text{T}^0]$."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following physical quantities has the unit $\\text{J}\\cdot\\text{s}$?",
+          "image": "",
+          "options": [
+            "Power",
+            "Planck's constant",
+            "Energy",
+            "Linear momentum"
+          ],
+          "correctOption": 1,
+          "solution": "$E = h\\nu \\implies h = \\frac{E}{\\nu}$. The SI unit is $\\frac{\\text{J}}{\\text{s}^{-1}} = \\text{J}\\cdot\\text{s}$."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The unit of thermal conductivity is: (NEET)",
+          "image": "",
+          "options": [
+            "$\\text{W}\\cdot\\text{m}^{-1}\\cdot\\text{K}^{-1}$",
+            "$\\text{J}\\cdot\\text{m}\\cdot\\text{K}^{-1}$",
+            "$\\text{W}\\cdot\\text{m}\\cdot\\text{K}^{-1}$",
+            "$\\text{J}\\cdot\\text{m}^{-1}\\cdot\\text{K}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Rate of heat flow $\\frac{Q}{t} = \\frac{K A \\Delta T}{d} \\implies K = \\frac{(Q/t) \\cdot d}{A \\cdot \\Delta T}$\n$$\\text{Unit of } K = \\frac{\\text{W} \\cdot \\text{m}}{\\text{m}^2 \\cdot \\text{K}} = \\text{W}\\cdot\\text{m}^{-1}\\cdot\\text{K}^{-1}$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A screw gauge gives the following readings when used to measure the diameter of a wire: Main scale reading $= 0\\text{ mm}$, Circular scale reading $= 52\\text{ divisions}$. Given that $1\\text{ mm}$ on main scale corresponds to 100 divisions on the circular scale. The diameter of the wire is: (NEET)",
+          "image": "",
+          "options": [
+            "$0.52\\text{ cm}$",
+            "$0.052\\text{ cm}$",
+            "$0.026\\text{ cm}$",
+            "$0.0052\\text{ cm}$"
+          ],
+          "correctOption": 1,
+          "solution": "Least count $= \\frac{1\\text{ mm}}{100} = 0.01\\text{ mm} = 0.001\\text{ cm}$.\n$$\\text{Diameter} = \\text{MSR} + (\\text{CSR} \\times \\text{L.C.}) = 0 + (52 \\times 0.01\\text{ mm}) = 0.52\\text{ mm} = 0.052\\text{ cm}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimensions of self-inductance $L$ are:",
+          "image": "",
+          "options": [
+            "$[\\text{M}\\text{L}^2\\text{T}^{-2}\\text{A}^{-2}]$",
+            "$[\\text{M}\\text{L}^2\\text{T}^{-1}\\text{A}^{-2}]$",
+            "$[\\text{M}\\text{L}^0\\text{T}^{-2}\\text{A}^{-2}]$",
+            "$[\\text{M}\\text{L}^2\\text{T}^{-2}\\text{A}^{-1}]$"
+          ],
+          "correctOption": 0,
+          "solution": "Energy stored in an inductor $U = \\frac{1}{2} L I^2 \\implies L = \\frac{2U}{I^2}$\n$$[L] = \\frac{[\\text{M}\\text{L}^2\\text{T}^{-2}]}{[\\text{A}^2]} = [\\text{M}\\text{L}^2\\text{T}^{-2}\\text{A}^{-2}]$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two resistors of resistances $R_1 = (100 \\pm 3)\\,\\Omega$ and $R_2 = (200 \\pm 4)\\,\\Omega$ are connected in series. The equivalent resistance of the combination is:",
+          "image": "",
+          "options": [
+            "$(300 \\pm 7)\\,\\Omega$",
+            "$(300 \\pm 1)\\,\\Omega$",
+            "$(300 \\pm 3.5)\\,\\Omega$",
+            "$(300 \\pm 12)\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "In series connection, $R_s = R_1 + R_2 = 100 + 200 = 300\\,\\Omega$.\nAbsolute error $\\Delta R_s = \\Delta R_1 + \\Delta R_2 = 3 + 4 = 7\\,\\Omega$.\nThus, $R_s = (300 \\pm 7)\\,\\Omega$."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following pairs has dimensions different from each other?",
+          "image": "",
+          "options": [
+            "Impulse and Linear momentum",
+            "Torque and Work",
+            "Electric potential and Voltage",
+            "Dipole moment and Electric flux"
+          ],
+          "correctOption": 3,
+          "solution": "Electric dipole moment $p = q \\cdot d = [\\text{L}\\text{T}\\text{A}]$.\nElectric flux $\\Phi_E = E \\cdot A = \\frac{F}{q} \\cdot A = \\frac{[\\text{M}\\text{L}\\text{T}^{-2}][\\text{L}^2]}{[\\text{A}\\text{T}]} = [\\text{M}\\text{L}^3\\text{T}^{-3}\\text{A}^{-1}]$.\nThey have completely different dimensions."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The main scale of a vernier callipers has $n$ divisions/cm. $n$ divisions of the vernier scale coincide with $(n-1)$ divisions of main scale. The least count of the vernier callipers is: (NEET)",
+          "image": "",
+          "options": [
+            "$\\frac{1}{n(n+1)}\\text{ cm}$",
+            "$\\frac{1}{n^2}\\text{ cm}$",
+            "$\\frac{1}{n(n-1)}\\text{ cm}$",
+            "$\\frac{1}{n}\\text{ cm}$"
+          ],
+          "correctOption": 1,
+          "solution": "$1\\text{ MSD} = \\frac{1}{n}\\text{ cm}$.\n$n\\text{ VSD} = (n-1)\\text{ MSD} \\implies 1\\text{ VSD} = \\frac{n-1}{n}\\text{ MSD}$.\n$$\\text{L.C.} = 1\\text{ MSD} - 1\\text{ VSD} = \\frac{1}{n}\\text{ MSD} = \\frac{1}{n}\\left(\\frac{1}{n}\\right) = \\frac{1}{n^2}\\text{ cm}$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimension of $\\frac{R}{L}$ (where $R$ is resistance and $L$ is inductance) is:",
+          "image": "",
+          "options": [
+            "$[\\text{T}^{-1}]$",
+            "$[\\text{T}]$",
+            "$[\\text{T}^{-2}]$",
+            "$[\\text{M}^0\\text{L}^0\\text{T}^0]$"
+          ],
+          "correctOption": 0,
+          "solution": "The inductive time constant is $\\tau = \\frac{L}{R}$, which has dimension of time $[\\text{T}]$.\nTherefore, $\\left[\\frac{R}{L}\\right] = \\frac{1}{[\\text{T}]} = [\\text{T}^{-1}]$."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force is given by $F = at + bt^2$, where $t$ is time. What are the dimensions of $a$ and $b$?",
+          "image": "",
+          "options": [
+            "$[\\text{M}\\text{L}\\text{T}^{-3}]$ and $[\\text{M}\\text{L}\\text{T}^{-4}]$",
+            "$[\\text{M}\\text{L}\\text{T}^{-1}]$ and $[\\text{M}\\text{L}\\text{T}^0]$",
+            "$[\\text{M}\\text{L}\\text{T}^{-2}]$ and $[\\text{M}\\text{L}\\text{T}^{-3}]$",
+            "$[\\text{M}\\text{L}^2\\text{T}^{-3}]$ and $[\\text{M}\\text{L}^2\\text{T}^{-4}]$"
+          ],
+          "correctOption": 0,
+          "solution": "By dimensional homogeneity:\n$[at] = [F] = [\\text{M}\\text{L}\\text{T}^{-2}] \\implies [a] = [\\text{M}\\text{L}\\text{T}^{-3}]$\n$[bt^2] = [F] = [\\text{M}\\text{L}\\text{T}^{-2}] \\implies [b] = [\\text{M}\\text{L}\\text{T}^{-4}]$"
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The value of Stefan's constant in SI units is $\\sigma = 5.67 \\times 10^{-8}\\text{ W}\\cdot\\text{m}^{-2}\\cdot\\text{K}^{-4}$. Its dimensional formula is:",
+          "image": "",
+          "options": [
+            "$[\\text{M}\\text{L}^0\\text{T}^{-3}\\text{K}^{-4}]$",
+            "$[\\text{M}\\text{L}^2\\text{T}^{-3}\\text{K}^{-4}]$",
+            "$[\\text{M}\\text{L}\\text{T}^{-3}\\text{K}^{-4}]$",
+            "$[\\text{M}\\text{L}^{-1}\\text{T}^{-2}\\text{K}^{-4}]$"
+          ],
+          "correctOption": 0,
+          "solution": "From Stefan-Boltzmann Law: $E = \\sigma T^4$ where $E$ is energy radiated per unit area per unit time $\\left([E] = \\frac{[\\text{M}\\text{L}^2\\text{T}^{-2}]}{[\\text{L}^2][\\text{T}]} = [\\text{M}\\text{T}^{-3}]\\right)$.\n$$[\\sigma] = \\frac{[E]}{[T^4]} = \\frac{[\\text{M}\\text{T}^{-3}]}{[\\text{K}^4]} = [\\text{M}\\text{L}^0\\text{T}^{-3}\\text{K}^{-4}]$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an experiment, four quantities $a, b, c$ and $d$ are measured with percentage error $1\\%$, $2\\%$, $3\\%$, and $4\\%$ respectively. Quantity $P$ is calculated as $P = \\frac{a^3 b^2}{c d}$. The maximum percentage error in $P$ is: (NEET)",
+          "image": "",
+          "options": [
+            "$14\\%$",
+            "$10\\%$",
+            "$7\\%$",
+            "$4\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\frac{\\Delta P}{P} \\times 100 = 3\\left(\\frac{\\Delta a}{a}\\times 100\\right) + 2\\left(\\frac{\\Delta b}{b}\\times 100\\right) + 1\\left(\\frac{\\Delta c}{c}\\times 100\\right) + 1\\left(\\frac{\\Delta d}{d}\\times 100\\right)$$\n$$\\%\\Delta P = 3(1\\%) + 2(2\\%) + 1(3\\%) + 1(4\\%) = 3 + 4 + 3 + 4 = 14\\%$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Solid angle is measured in which of the following units?",
+          "image": "",
+          "options": [
+            "Radian",
+            "Steradian",
+            "Degree",
+            "Candela"
+          ],
+          "correctOption": 1,
+          "solution": "Steradian (sr) is the SI supplementary/derived unit of solid angle."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimensional formula of capacitance $C$ is:",
+          "image": "",
+          "options": [
+            "$[\\text{M}^{-1}\\text{L}^{-2}\\text{T}^4\\text{A}^2]$",
+            "$[\\text{M}\\text{L}^{-2}\\text{T}^4\\text{A}^2]$",
+            "$[\\text{M}^{-1}\\text{L}^2\\text{T}^{-4}\\text{A}^{-2}]$",
+            "$[\\text{M}\\text{L}^2\\text{T}^{-2}\\text{A}^2]$"
+          ],
+          "correctOption": 0,
+          "solution": "$C = \\frac{Q}{V} = \\frac{Q^2}{W} = \\frac{[\\text{A}\\text{T}]^2}{[\\text{M}\\text{L}^2\\text{T}^{-2}]} = [\\text{M}^{-1}\\text{L}^{-2}\\text{T}^4\\text{A}^2]$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Round off the number $2.745$ and $2.735$ to 3 significant figures:",
+          "image": "",
+          "options": [
+            "2.74 and 2.74",
+            "2.75 and 2.74",
+            "2.74 and 2.73",
+            "2.75 and 2.73"
+          ],
+          "correctOption": 0,
+          "solution": "By round-off convention: if the digit to be dropped is 5, the preceding digit is left unchanged if it is even, and increased by 1 if it is odd.\n- In $2.745$, 4 is even $\\implies 2.74$\n- In $2.735$, 3 is odd $\\implies 2.74$\nBoth round off to 2.74."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The time period of a soap bubble of radius $r$, density $\\rho$, and surface tension $S$ is given by $T = k r^a \\rho^b S^c$, where $k$ is a dimensionless constant. The values of $a, b, c$ are:",
+          "image": "",
+          "options": [
+            "$a = \\frac{3}{2}, b = \\frac{1}{2}, c = -\\frac{1}{2}$",
+            "$a = 1, b = 1, c = -1$",
+            "$a = \\frac{1}{2}, b = \\frac{3}{2}, c = -\\frac{1}{2}$",
+            "$a = 2, b = 1, c = -2$"
+          ],
+          "correctOption": 0,
+          "solution": "$[T] = [\\text{T}]^1$, $[r] = [\\text{L}]$, $[\\rho] = [\\text{M}\\text{L}^{-3}]$, $[S] = [\\text{M}\\text{T}^{-2}]$\n$$[\\text{M}^0\\text{L}^0\\text{T}^1] = [\\text{L}]^a [\\text{M}\\text{L}^{-3}]^b [\\text{M}\\text{T}^{-2}]^c = [\\text{M}^{b+c} \\text{L}^{a-3b} \\text{T}^{-2c}]$$\nComparing powers: $-2c = 1 \\implies c = -1/2$; $b+c = 0 \\implies b = 1/2$; $a-3b = 0 \\implies a = 3(1/2) = 3/2$."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following is a systematic error?",
+          "image": "",
+          "options": [
+            "Random voltage fluctuations during an experiment",
+            "Zero error in a screw gauge",
+            "Human reaction time variations",
+            "Unpredictable temperature fluctuations"
+          ],
+          "correctOption": 1,
+          "solution": "Zero error of an instrument is an instrumental error, which is a type of systematic error (it consistently shifts measurements in one direction)."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $x = a - b$, where $a = (10.0 \\pm 0.1)\\text{ cm}$ and $b = (6.0 \\pm 0.2)\\text{ cm}$, the value of $x$ with error limits is:",
+          "image": "",
+          "options": [
+            "$(4.0 \\pm 0.3)\\text{ cm}$",
+            "$(4.0 \\pm 0.1)\\text{ cm}$",
+            "$(4.0 \\pm 0.2)\\text{ cm}$",
+            "$(4.0 \\pm 0.02)\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "For subtraction $x = a - b = 10.0 - 6.0 = 4.0\\text{ cm}$.\nAbsolute errors always add: $\\Delta x = \\Delta a + \\Delta b = 0.1 + 0.2 = 0.3\\text{ cm}$.\nThus, $x = (4.0 \\pm 0.3)\\text{ cm}$."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimensional formula of solar constant (energy received per unit area per unit time) is:",
+          "image": "",
+          "options": [
+            "$[\\text{M}\\text{L}^0\\text{T}^{-3}]$",
+            "$[\\text{M}\\text{L}^2\\text{T}^{-2}]$",
+            "$[\\text{M}\\text{L}^{-1}\\text{T}^{-2}]$",
+            "$[\\text{M}\\text{L}^0\\text{T}^{-2}]$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\text{Solar Constant} = \\frac{\\text{Energy}}{\\text{Area} \\times \\text{Time}} = \\frac{[\\text{M}\\text{L}^2\\text{T}^{-2}]}{[\\text{L}^2][\\text{T}]} = [\\text{M}\\text{T}^{-3}] = [\\text{M}\\text{L}^0\\text{T}^{-3}]$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "1 unified atomic mass unit ($1\\text{ u}$) is approximately equal to:",
+          "image": "",
+          "options": [
+            "$1.66 \\times 10^{-27}\\text{ kg}$",
+            "$1.66 \\times 10^{-24}\\text{ kg}$",
+            "$9.11 \\times 10^{-31}\\text{ kg}$",
+            "$6.022 \\times 10^{-23}\\text{ kg}$"
+          ],
+          "correctOption": 0,
+          "solution": "$1\\text{ u} = \\frac{1}{12} \\times \\text{mass of one }^{12}\\text{C atom} = \\frac{10^{-3}\\text{ kg}}{6.022 \\times 10^{23}} \\approx 1.66 \\times 10^{-27}\\text{ kg}$."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimension of magnetic permeability of vacuum $(\\mu_0)$ is:",
+          "image": "",
+          "options": [
+            "$[\\text{M}\\text{L}\\text{T}^{-2}\\text{A}^{-2}]$",
+            "$[\\text{M}\\text{L}^2\\text{T}^{-2}\\text{A}^{-1}]$",
+            "$[\\text{M}\\text{L}^{-1}\\text{T}^{-2}\\text{A}^{-2}]$",
+            "$[\\text{M}\\text{L}\\text{T}^{-1}\\text{A}^{-1}]$"
+          ],
+          "correctOption": 0,
+          "solution": "From the force per unit length between parallel currents: $\\frac{F}{L} = \\frac{\\mu_0 I_1 I_2}{2\\pi d} \\implies \\mu_0 = \\frac{2\\pi d (F/L)}{I_1 I_2}$\n$$[\\mu_0] = \\frac{[\\text{L}] \\left(\\frac{[\\text{M}\\text{L}\\text{T}^{-2}]}{[\\text{L}]}\\right)}{[\\text{A}^2]} = [\\text{M}\\text{L}\\text{T}^{-2}\\text{A}^{-2}]$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the length of a rod is measured as $l = (25.2 \\pm 0.1)\\text{ cm}$, the relative error and percentage error in length are respectively:",
+          "image": "",
+          "options": [
+            "$0.004$ and $0.4\\%$",
+            "$0.04$ and $4\\%$",
+            "$0.01$ and $1\\%$",
+            "$0.002$ and $0.2\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\text{Relative error} = \\frac{\\Delta l}{l} = \\frac{0.1}{25.2} \\approx 0.003968 \\approx 0.004$$\n$$\\text{Percentage error} = \\text{Relative error} \\times 100 = 0.4\\%$$"
+        }
+      ]
+    }
+  ]
+}
