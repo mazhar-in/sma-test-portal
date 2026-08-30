@@ -26,6 +26,21 @@
   <style>
     .katex-display { overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
     .safe-bottom { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+
+    /* Mobile font enhancement */
+    @media (max-width: 640px) {
+      #question-text {
+        font-size: 1.05rem !important;
+        line-height: 1.65 !important;
+      }
+      #options-container label span {
+        font-size: 0.95rem !important;
+        line-height: 1.5 !important;
+      }
+      .katex {
+        font-size: 1.1em !important;
+      }
+    }
   </style>
 </head>
 <body class="bg-slate-100 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col select-none antialiased">
@@ -58,7 +73,7 @@
           <span id="marking-scheme" class="text-indigo-600 dark:text-indigo-400">Marks: +4, -1</span>
         </div>
 
-        <div id="question-text" class="text-sm md:text-lg text-slate-900 dark:text-slate-100 leading-relaxed font-normal whitespace-pre-line">
+        <div id="question-text" class="text-base md:text-lg text-slate-900 dark:text-slate-100 leading-relaxed font-normal whitespace-pre-line">
           <div class="p-8 text-center text-slate-400 animate-pulse">Loading question...</div>
         </div>
         

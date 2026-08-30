@@ -270,10 +270,10 @@
           "question": "Let $A = \\{x_1, x_2, \\dots, x_7\\}$ and $B = \\{y_1, y_2, y_3\\}$ be two sets containing seven and three distinct elements respectively. The total number of functions $f: A \\rightarrow B$ that are onto, if there exist exactly three elements $x$ in $A$ such that $f(x) = y_2$, is equal to:",
           "image": "",
           "options": [
-            "$14 \\cdot \\,^7\\text{C}_3$",
-            "$16 \\cdot \\,^7\\text{C}_3$",
-            "$14 \\cdot \\,^7\\text{C}_2$",
-            "$12 \\cdot \\,^7\\text{C}_2$"
+            "$14\\cdot ^7C_3$",
+            "$16 \\cdot ^7C_3$",
+            "$14 \\cdot ^7C_2$",
+            "$12 \\cdot ^7C_2$"
           ],
           "correctOption": 0,
           "solution": "Step 1: Choose 3 elements from $A$ to map to $y_2$ in $\\,^7\\text{C}_3$ ways[cite: 4].\nStep 2: The remaining 4 elements of $A$ must be mapped onto the remaining 2 elements $\\{y_1, y_3\\}$ of $B$[cite: 4].\nNumber of onto functions from a set of 4 elements to a set of 2 elements is $2^4 - 2 = 16 - 2 = 14$[cite: 4].\nTotal number of such onto functions $= 14 \\cdot \\,^7\\text{C}_3$[cite: 4]."
