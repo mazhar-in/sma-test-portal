@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-03-kinematics-2d-vectors",
+  "title": "Motion in a Plane and Vectors",
+  "syllabus": "Scalars and Vectors, Vector addition and subtraction, Scalar and vector products, Unit vector, Resolution of a vector, Relative velocity, Motion in a plane, Projectile motion, Uniform circular motion",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A bullet is fired from a gun at the speed of $280\\text{ m/s}$ in the direction $30^\\circ$ above the horizontal. The maximum height attained by the bullet is: (Take $g = 9.8\\text{ m/s}^2, \\sin 30^\\circ = 0.5$) (NEET 2023)",
+          "image": "",
+          "options": [
+            "$2000\\text{ m}$",
+            "$1000\\text{ m}$",
+            "$3000\\text{ m}$",
+            "$2800\\text{ m}$"
+          ],
+          "correctOption": 1,
+          "solution": "Maximum height $H = \\frac{u^2 \\sin^2\\theta}{2g} = \\frac{(280)^2 \\times (0.5)^2}{2 \\times 9.8} = \\frac{78400 \\times 0.25}{19.6} = \\frac{19600}{19.6} = 1000\\text{ m}$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ball is projected from point $A$ with velocity $20\\text{ m/s}$ at an angle $60^\\circ$ to the horizontal direction. At the highest point of the path, the velocity of the ball will be: (NEET 2023)",
+          "image": "",
+          "options": [
+            "$20\\text{ m/s}$",
+            "$10\\sqrt{3}\\text{ m/s}$",
+            "Zero",
+            "$10\\text{ m/s}$"
+          ],
+          "correctOption": 3,
+          "solution": "At the highest point, vertical component of velocity becomes zero ($v_y = 0$) and horizontal component remains constant: $v = u_x = u\\cos\\theta = 20\\cos 60^\\circ = 20 \\times 0.5 = 10\\text{ m/s}$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ball is projected with a velocity of $10\\text{ m/s}$ at an angle of $60^\\circ$ with the vertical direction. Its speed at the highest point of its trajectory will be: (NEET 2022)",
+          "image": "",
+          "options": [
+            "$10\\text{ m/s}$",
+            "Zero",
+            "$5\\sqrt{3}\\text{ m/s}$",
+            "$5\\text{ m/s}$"
+          ],
+          "correctOption": 2,
+          "solution": "Angle with horizontal is $\\theta = 90^\\circ - 60^\\circ = 30^\\circ$.\nSpeed at highest point $= u\\cos\\theta = 10\\cos 30^\\circ = 10 \\times \\frac{\\sqrt{3}}{2} = 5\\sqrt{3}\\text{ m/s}$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A cricket ball is thrown by a player at a speed of $20\\text{ m/s}$ in a direction $30^\\circ$ above the horizontal. The maximum height attained by the ball during its motion is: (Take $g = 10\\text{ m/s}^2$) (NEET 2022)",
+          "image": "",
+          "options": [
+            "$5\\text{ m}$",
+            "$10\\text{ m}$",
+            "$15\\text{ m}$",
+            "$20\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "$H = \\frac{u^2 \\sin^2\\theta}{2g} = \\frac{(20)^2 \\sin^2 30^\\circ}{2 \\times 10} = \\frac{400 \\times (1/4)}{20} = \\frac{100}{20} = 5\\text{ m}$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moving in a circle of radius $R$ with a uniform speed takes a time $T$ to complete one revolution. If this particle were projected with the same speed at an angle $\\theta$ to the horizontal, the maximum height attained by it equals $4R$. The angle of projection $\\theta$ is then given by: (NEET 2021)",
+          "image": "",
+          "options": [
+            "$\\theta = \\sin^{-1}\\left(\\frac{2gT^2}{\\pi^2 R}\\right)^{1/2}$",
+            "$\\theta = \\sin^{-1}\\left(\\frac{\\pi^2 R}{gT^2}\\right)^{1/2}$",
+            "$\\theta = \\cos^{-1}\\left(\\frac{gT^2}{\\pi^2 R}\\right)^{1/2}$",
+            "$\\theta = \\cos^{-1}\\left(\\frac{\\pi^2 R}{gT^2}\\right)^{1/2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Speed in circular motion: $v = \\frac{2\\pi R}{T}$.\nMaximum height: $H = \\frac{v^2 \\sin^2\\theta}{2g} = 4R$.\n$$\\frac{\\left(\\frac{2\\pi R}{T}\\right)^2 \\sin^2\\theta}{2g} = 4R \\implies \\frac{4\\pi^2 R^2 \\sin^2\\theta}{2g T^2} = 4R$$\n$$\\sin^2\\theta = \\frac{2g T^2}{\\pi^2 R} \\implies \\theta = \\sin^{-1}\\left(\\frac{2gT^2}{\\pi^2 R}\\right)^{1/2}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A car starts from rest and accelerates at $5\\text{ m/s}^2$. At $t = 4\\text{ s}$, a ball is dropped out of a window by a person sitting in the car. What is the velocity and acceleration of the ball at $t = 6\\text{ s}$? (Take $g = 10\\text{ m/s}^2$) (NEET 2021)",
+          "image": "",
+          "options": [
+            "$20\\sqrt{2}\\text{ m/s},\\; 0\\text{ m/s}^2$",
+            "$20\\sqrt{2}\\text{ m/s},\\; 10\\text{ m/s}^2$",
+            "$20\\text{ m/s},\\; 5\\text{ m/s}^2$",
+            "$20\\text{ m/s},\\; 0\\text{ m/s}^2$"
+          ],
+          "correctOption": 1,
+          "solution": "At $t = 4\\text{ s}$, horizontal velocity of car $v_x = at = 5 \\times 4 = 20\\text{ m/s}$.\nAfter release, horizontal velocity remains constant: $v_x = 20\\text{ m/s}$.\nTime elapsed in air $\\Delta t = 6 - 4 = 2\\text{ s}$.\nVertical velocity $v_y = g \\Delta t = 10 \\times 2 = 20\\text{ m/s}$.\nResultant speed $v = \\sqrt{v_x^2 + v_y^2} = \\sqrt{(20)^2 + (20)^2} = 20\\sqrt{2}\\text{ m/s}$.\nOnce dropped, the only acceleration acting on the ball is gravity: $a = g = 10\\text{ m/s}^2$ downward."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moving with velocity $\\vec{v}$ is acted upon by three forces shown by the vector triangle $PQR$ in cyclic order. The velocity of the particle will: (NEET 2019)",
+          "image": "",
+          "options": [
+            "Increase",
+            "Decrease",
+            "Remain constant",
+            "Change according to largest force"
+          ],
+          "correctOption": 2,
+          "solution": "Vectors representing the three forces form a closed cyclic triangle, so $\\vec{F}_{\\text{net}} = \\vec{F}_1 + \\vec{F}_2 + \\vec{F}_3 = \\vec{0}$. Since net force is zero, acceleration is zero and the velocity remains constant."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The $x$ and $y$ coordinates of a particle at any time are $x = 5t - 2t^2$ and $y = 10t$ respectively, where $x$ and $y$ are in metres and $t$ in seconds. The acceleration of the particle at $t = 2\\text{ s}$ is: (NEET 2017)",
+          "image": "",
+          "options": [
+            "$-4\\text{ m/s}^2$",
+            "$-8\\text{ m/s}^2$",
+            "$0$",
+            "$5\\text{ m/s}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "$v_x = \\frac{dx}{dt} = 5 - 4t \\implies a_x = \\frac{dv_x}{dt} = -4\\text{ m/s}^2$.\n$v_y = \\frac{dy}{dt} = 10 \\implies a_y = \\frac{dv_y}{dt} = 0$.\nTotal acceleration $\\vec{a} = a_x\\hat{i} + a_y\\hat{j} = -4\\hat{i}\\text{ m/s}^2$. Its magnitude is $-4\\text{ m/s}^2$ along the x-direction."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the magnitude of sum of two vectors is equal to the magnitude of difference of the two vectors, the angle between these vectors is: (NEET 2016)",
+          "image": "",
+          "options": [
+            "$0^\\circ$",
+            "$90^\\circ$",
+            "$45^\\circ$",
+            "$180^\\circ$"
+          ],
+          "correctOption": 1,
+          "solution": "$|\\vec{A} + \\vec{B}| = |\\vec{A} - \\vec{B}|$\n$$A^2 + B^2 + 2AB\\cos\\theta = A^2 + B^2 - 2AB\\cos\\theta$$\n$$4AB\\cos\\theta = 0 \\implies \\cos\\theta = 0 \\implies \\theta = 90^\\circ$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves so that its position vector is given by $\\vec{r} = \\cos\\omega t\\,\\hat{x} + \\sin\\omega t\\,\\hat{y}$, where $\\omega$ is a constant. Which of the following is true? (NEET 2016)",
+          "image": "",
+          "options": [
+            "Velocity is perpendicular to $\\vec{r}$ and acceleration is directed towards origin",
+            "Velocity and acceleration are both perpendicular to $\\vec{r}$",
+            "Velocity and acceleration are both parallel to $\\vec{r}$",
+            "Velocity is directed towards the origin and acceleration is perpendicular to $\\vec{r}$"
+          ],
+          "correctOption": 0,
+          "solution": "$\\vec{v} = \\frac{d\\vec{r}}{dt} = -\\omega\\sin\\omega t\\,\\hat{x} + \\omega\\cos\\omega t\\,\\hat{y}$.\n$\\vec{v} \\cdot \\vec{r} = -\\omega\\sin\\omega t\\cos\\omega t + \\omega\\cos\\omega t\\sin\\omega t = 0 \\implies \\vec{v} \\perp \\vec{r}$.\n$\\vec{a} = \\frac{d\\vec{v}}{dt} = -\\omega^2(\\cos\\omega t\\,\\hat{x} + \\sin\\omega t\\,\\hat{y}) = -\\omega^2\\vec{r}$.\nThus, acceleration is directed opposite to $\\vec{r}$ (towards the origin)."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two projectiles of same mass and with same initial velocity are thrown at an angle $60^\\circ$ and $30^\\circ$ with the horizontal. Which of the following will be the same for both projectiles?",
+          "image": "",
+          "options": [
+            "Time of flight",
+            "Maximum height",
+            "Horizontal range",
+            "Total energy at highest point"
+          ],
+          "correctOption": 2,
+          "solution": "Horizontal range is $R = \\frac{u^2 \\sin 2\\theta}{g}$.\nFor complementary angles $(\\theta_1 + \\theta_2 = 60^\\circ + 30^\\circ = 90^\\circ)$, $\\sin(2 \\times 60^\\circ) = \\sin 120^\\circ = \\sin 60^\\circ = \\sin(2 \\times 30^\\circ)$. Thus, horizontal range is identical."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A unit vector is represented by $a\\hat{i} + b\\hat{j} + c\\hat{k}$. If $a = 0.6$ and $b = 0.8$, the value of $c$ must be:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$0.1$",
+            "$\\sqrt{0.02}$",
+            "$0.5$"
+          ],
+          "correctOption": 0,
+          "solution": "For a unit vector, $|\\hat{u}| = 1 \\implies a^2 + b^2 + c^2 = 1$.\n$$(0.6)^2 + (0.8)^2 + c^2 = 1 \\implies 0.36 + 0.64 + c^2 = 1 \\implies 1.0 + c^2 = 1 \\implies c = 0$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two vectors $\\vec{A} = 2\\hat{i} + 3\\hat{j} + 8\\hat{k}$ and $\\vec{B} = 4\\hat{j} - 4\\hat{i} + \\alpha\\hat{k}$ are perpendicular to each other. The value of $\\alpha$ is:",
+          "image": "",
+          "options": [
+            "$-1/2$",
+            "$1/2$",
+            "$-1$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "For perpendicular vectors, $\\vec{A} \\cdot \\vec{B} = 0$.\n$$\\vec{A} \\cdot \\vec{B} = (2)(-4) + (3)(4) + (8)(\\alpha) = 0$$\n$$-8 + 12 + 8\\alpha = 0 \\implies 4 + 8\\alpha = 0 \\implies \\alpha = -\\frac{4}{8} = -\\frac{1}{2}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The angle between vectors $(\\vec{A} \\times \\vec{B})$ and $(\\vec{B} \\times \\vec{A})$ is:",
+          "image": "",
+          "options": [
+            "$0^\\circ$",
+            "$\\pi\\text{ radian}$",
+            "$\\pi/2\\text{ radian}$",
+            "$\\pi/4\\text{ radian}$"
+          ],
+          "correctOption": 1,
+          "solution": "Since cross product is anti-commutative, $(\\vec{B} \\times \\vec{A}) = -(\\vec{A} \\times \\vec{B})$. The two vectors are equal in magnitude but point in exactly opposite directions, making the angle between them $\\pi\\text{ radian}$ ($180^\\circ$)."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $|\\vec{A} \\times \\vec{B}| = \\sqrt{3}\\,(\\vec{A} \\cdot \\vec{B})$, then the magnitude of $(\\vec{A} + \\vec{B})$ is:",
+          "image": "",
+          "options": [
+            "$(A^2 + B^2 + AB)^{1/2}$",
+            "$\\left(A^2 + B^2 + \\frac{AB}{\\sqrt{3}}\\right)^{1/2}$",
+            "$A + B$",
+            "$(A^2 + B^2 + \\sqrt{3}AB)^{1/2}$"
+          ],
+          "correctOption": 0,
+          "solution": "$AB\\sin\\theta = \\sqrt{3} AB\\cos\\theta \\implies \\tan\\theta = \\sqrt{3} \\implies \\theta = 60^\\circ$.\n$$|\\vec{A} + \\vec{B}| = \\sqrt{A^2 + B^2 + 2AB\\cos 60^\\circ} = \\sqrt{A^2 + B^2 + 2AB(1/2)} = (A^2 + B^2 + AB)^{1/2}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves in $x\\text{-}y$ plane according to the rule $x = a\\sin\\omega t$ and $y = a\\cos\\omega t$. The path of the particle is:",
+          "image": "",
+          "options": [
+            "An ellipse",
+            "A circle",
+            "A parabola",
+            "A straight line"
+          ],
+          "correctOption": 1,
+          "solution": "$x^2 + y^2 = a^2\\sin^2\\omega t + a^2\\cos^2\\omega t = a^2(\\sin^2\\omega t + \\cos^2\\omega t) = a^2$, which represents the equation of a circle of radius $a$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The linear velocity of a rotating body is given by $\\vec{v} = \\vec{\\omega} \\times \\vec{r}$. If $\\vec{\\omega} = \\hat{i} - 2\\hat{j} + 2\\hat{k}$ and $\\vec{r} = 4\\hat{j} - 3\\hat{k}$, then the magnitude of $\\vec{v}$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{29}$",
+            "$\\sqrt{31}$",
+            "$\\sqrt{17}$",
+            "$\\sqrt{37}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\vec{v} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & -2 & 2 \\\\ 0 & 4 & -3 \\end{vmatrix} = \\hat{i}(6 - 8) - \\hat{j}(-3 - 0) + \\hat{k}(4 - 0) = -2\\hat{i} + 3\\hat{j} + 4\\hat{k}$$\n$$|\\vec{v}| = \\sqrt{(-2)^2 + 3^2 + 4^2} = \\sqrt{4 + 9 + 16} = \\sqrt{29}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A boat crosses a river of width $1\\text{ km}$ along the shortest possible path in $15\\text{ minutes}$. If the speed of the river stream is $3\\text{ km/h}$, the speed of the boat in still water is:",
+          "image": "",
+          "options": [
+            "$5\\text{ km/h}$",
+            "$4\\text{ km/h}$",
+            "$3\\text{ km/h}$",
+            "$\\sqrt{41}\\text{ km/h}$"
+          ],
+          "correctOption": 0,
+          "solution": "For shortest path (straight across), resultant velocity $v_R = \\frac{\\text{width}}{\\text{time}} = \\frac{1\\text{ km}}{15/60\\text{ h}} = 4\\text{ km/h}$.\nSince $v_R = \\sqrt{v_b^2 - v_r^2} \\implies 4 = \\sqrt{v_b^2 - 3^2} \\implies v_b^2 = 16 + 9 = 25 \\implies v_b = 5\\text{ km/h}$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A person aiming to reach the exactly opposite point on the bank of a stream is swimming at a speed of $0.5\\text{ m/s}$ at an angle of $120^\\circ$ with the direction of flow of water. The speed of water in the stream is:",
+          "image": "",
+          "options": [
+            "$1\\text{ m/s}$",
+            "$0.5\\text{ m/s}$",
+            "$0.25\\text{ m/s}$",
+            "$0.433\\text{ m/s}$"
+          ],
+          "correctOption": 2,
+          "solution": "Angle with downstream is $120^\\circ$, so angle with upstream/normal is $\\theta = 120^\\circ - 90^\\circ = 30^\\circ$.\nTo cancel drift: $v_r = v_m \\sin 30^\\circ = 0.5 \\times \\frac{1}{2} = 0.25\\text{ m/s}$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Rain is falling vertically downwards with a speed of $35\\text{ m/s}$. A woman rides a bicycle with a speed of $12\\text{ m/s}$ in east to west direction. What is the direction in which she should hold her umbrella to protect herself from rain?",
+          "image": "",
+          "options": [
+            "$\\tan^{-1}(12/35)$ towards West",
+            "$\\tan^{-1}(12/35)$ towards East",
+            "$\\tan^{-1}(35/12)$ towards West",
+            "$\\tan^{-1}(35/12)$ towards East"
+          ],
+          "correctOption": 0,
+          "solution": "Relative velocity of rain with respect to woman: $\\vec{v}_{rw} = \\vec{v}_r - \\vec{v}_w = -35\\hat{j} - (-12\\hat{i}) = 12\\hat{i} - 35\\hat{j}$.\nShe must hold umbrella in opposite direction to relative velocity, making angle $\\theta = \\tan^{-1}\\left(\\frac{v_w}{v_r}\\right) = \\tan^{-1}\\left(\\frac{12}{35}\\right)$ with the vertical towards the West."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The equation of trajectory of a projectile is given by $y = \\sqrt{3}x - \\frac{g x^2}{2}$. The angle of projection with the horizontal is:",
+          "image": "",
+          "options": [
+            "$30^\\circ$",
+            "$45^\\circ$",
+            "$60^\\circ$",
+            "$90^\\circ$"
+          ],
+          "correctOption": 2,
+          "solution": "Comparing with $y = x\\tan\\theta - \\frac{g x^2}{2u^2\\cos^2\\theta}$:\n$\\tan\\theta = \\sqrt{3} \\implies \\theta = 60^\\circ$."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For a projectile, the ratio of maximum height $H$ to the square of time of flight $T^2$ is: (Take $g = 10\\text{ m/s}^2$)",
+          "image": "",
+          "options": [
+            "$5 : 4$",
+            "$5 : 2$",
+            "$5 : 1$",
+            "$10 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "$H = \\frac{u^2 \\sin^2\\theta}{2g}$ and $T = \\frac{2u\\sin\\theta}{g} \\implies T^2 = \\frac{4u^2 \\sin^2\\theta}{g^2}$.\n$$\\frac{H}{T^2} = \\frac{u^2 \\sin^2\\theta / 2g}{4u^2 \\sin^2\\theta / g^2} = \\frac{g}{8} = \\frac{10}{8} = \\frac{5}{4}$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A projectile is thrown with an initial velocity $\\vec{u} = a\\hat{i} + b\\hat{j}$. If the range of the projectile is equal to twice the maximum height, then:",
+          "image": "",
+          "options": [
+            "$b = a$",
+            "$b = 2a$",
+            "$a = 2b$",
+            "$b = 4a$"
+          ],
+          "correctOption": 0,
+          "solution": "Range $R = \\frac{2 u_x u_y}{g} = \\frac{2ab}{g}$. Maximum height $H = \\frac{u_y^2}{2g} = \\frac{b^2}{2g}$.\nGiven $R = 2H \\implies \\frac{2ab}{g} = 2\\left(\\frac{b^2}{2g}\\right) = \\frac{b^2}{g} \\implies 2ab = b^2 \\implies b = 2a$ (or $\\tan\\theta = 2$). For $R = 4H \\implies b=a$; here $R=2H \\implies b=2a$."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The angular speed of the minute hand of a clock in $\\text{rad/s}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{1800}$",
+            "$\\frac{\\pi}{3600}$",
+            "$\\frac{\\pi}{60}$",
+            "$\\frac{\\pi}{30}$"
+          ],
+          "correctOption": 0,
+          "solution": "Minute hand completes 1 rotation ($2\\pi\\text{ rad}$) in $60\\text{ minutes} = 3600\\text{ seconds}$.\n$$\\omega = \\frac{2\\pi}{3600} = \\frac{\\pi}{1800}\\text{ rad/s}$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves along a circular path of radius $r$ with uniform angular velocity $\\omega$. Its centripetal acceleration is:",
+          "image": "",
+          "options": [
+            "$\\omega^2 r$ directed away from center",
+            "$\\omega^2 r$ directed towards center",
+            "$\\omega r^2$ directed towards center",
+            "$\\frac{\\omega^2}{r}$ directed away from center"
+          ],
+          "correctOption": 1,
+          "solution": "For uniform circular motion, the acceleration is purely centripetal with magnitude $a_c = \\omega^2 r = \\frac{v^2}{r}$, pointing radially inwards towards the center."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body executes uniform circular motion in a horizontal plane. Which of the following physical quantities remains CONSTANT during the motion?",
+          "image": "",
+          "options": [
+            "Velocity",
+            "Acceleration",
+            "Kinetic energy",
+            "Linear momentum"
+          ],
+          "correctOption": 2,
+          "solution": "In uniform circular motion, speed $v$ is constant. Kinetic energy $K = \\frac{1}{2}mv^2$ is a scalar and depends only on speed, hence remains constant. Velocity, acceleration, and momentum are vectors and constantly change direction."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves in a circle of radius $5\\text{ cm}$ with constant speed and time period $0.2\\pi\\text{ s}$. The acceleration of the particle is:",
+          "image": "",
+          "options": [
+            "$5\\text{ m/s}^2$",
+            "$25\\text{ m/s}^2$",
+            "$0.25\\text{ m/s}^2$",
+            "$50\\text{ m/s}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "$\\omega = \\frac{2\\pi}{T} = \\frac{2\\pi}{0.2\\pi} = 10\\text{ rad/s}$.\nRadius $r = 5\\text{ cm} = 0.05\\text{ m}$.\n$$a = \\omega^2 r = (10)^2 \\times 0.05 = 100 \\times 0.05 = 5\\text{ m/s}^2$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two vectors of equal magnitude $P$ have a resultant of magnitude $P$. The angle between the two vectors is:",
+          "image": "",
+          "options": [
+            "$30^\\circ$",
+            "$60^\\circ$",
+            "$90^\\circ$",
+            "$120^\\circ$"
+          ],
+          "correctOption": 3,
+          "solution": "$R = 2P\\cos(\\theta/2) \\implies P = 2P\\cos(\\theta/2) \\implies \\cos(\\theta/2) = 1/2 \\implies \\theta/2 = 60^\\circ \\implies \\theta = 120^\\circ$."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The area of a parallelogram whose adjacent sides are determined by the vectors $\\vec{a} = \\hat{i} - \\hat{j} + 3\\hat{k}$ and $\\vec{b} = 2\\hat{i} - 7\\hat{j} + \\hat{k}$ is:",
+          "image": "",
+          "options": [
+            "$15$",
+            "$15\\sqrt{2}$",
+            "$30$",
+            "$10\\sqrt{3}$"
+          ],
+          "correctOption": 1,
+          "solution": "$$\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & -1 & 3 \\\\ 2 & -7 & 1 \\end{vmatrix} = \\hat{i}(-1 + 21) - \\hat{j}(1 - 6) + \\hat{k}(-7 + 2) = 20\\hat{i} + 5\\hat{j} - 5\\hat{k}$$\n$$\\text{Area} = |\\vec{a} \\times \\vec{b}| = \\sqrt{(20)^2 + 5^2 + (-5)^2} = \\sqrt{400 + 25 + 25} = \\sqrt{450} = 15\\sqrt{2}$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A vector $\\vec{A}$ makes angles $30^\\circ$ and $60^\\circ$ with the x-axis and y-axis respectively. The angle it makes with the z-axis is:",
+          "image": "",
+          "options": [
+            "$0^\\circ$",
+            "$90^\\circ$",
+            "$45^\\circ$",
+            "$60^\\circ$"
+          ],
+          "correctOption": 1,
+          "solution": "Direction cosines satisfy $\\cos^2\\alpha + \\cos^2\\beta + \\cos^2\\gamma = 1$.\n$$\\cos^2(30^\\circ) + \\cos^2(60^\\circ) + \\cos^2\\gamma = 1 \\implies \\left(\\frac{\\sqrt{3}}{2}\\right)^2 + \\left(\\frac{1}{2}\\right)^2 + \\cos^2\\gamma = 1$$\n$$\\frac{3}{4} + \\frac{1}{4} + \\cos^2\\gamma = 1 \\implies 1 + \\cos^2\\gamma = 1 \\implies \\cos\\gamma = 0 \\implies \\gamma = 90^\\circ$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body is projected with kinetic energy $K$ at an angle of $45^\\circ$ with the horizontal. Its kinetic energy at the highest point of its trajectory is:",
+          "image": "",
+          "options": [
+            "$K$",
+            "Zero",
+            "$K/2$",
+            "$K/4$"
+          ],
+          "correctOption": 2,
+          "solution": "Speed at highest point is $v = u\\cos 45^\\circ = \\frac{u}{\\sqrt{2}}$.\n$$K' = \\frac{1}{2}m v^2 = \\frac{1}{2}m \\left(\\frac{u}{\\sqrt{2}}\\right)^2 = \\frac{1}{2}\\left(\\frac{1}{2}mu^2\\right) = \\frac{K}{2}$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The speed of a projectile at its maximum height is $\\frac{\\sqrt{3}}{2}$ times its initial speed. The horizontal range of the projectile is:",
+          "image": "",
+          "options": [
+            "$\\frac{u^2}{2g}$",
+            "$\\frac{\\sqrt{3} u^2}{2g}$",
+            "$\\frac{3u^2}{2g}$",
+            "$\\frac{u^2}{g}$"
+          ],
+          "correctOption": 1,
+          "solution": "$u\\cos\\theta = \\frac{\\sqrt{3}}{2} u \\implies \\cos\\theta = \\frac{\\sqrt{3}}{2} \\implies \\theta = 30^\\circ$.\n$$R = \\frac{u^2 \\sin 2\\theta}{g} = \\frac{u^2 \\sin 60^\\circ}{g} = \\frac{\\sqrt{3} u^2}{2g}$$"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two cars $A$ and $B$ are travelling in the same direction with velocities $v_A = 80\\text{ km/h}$ and $v_B = 60\\text{ km/h}$. The relative velocity of car $A$ with respect to car $B$ is:",
+          "image": "",
+          "options": [
+            "$140\\text{ km/h}$ in opposite direction",
+            "$20\\text{ km/h}$ in direction of motion of car $A$",
+            "$20\\text{ km/h}$ in opposite direction",
+            "$140\\text{ km/h}$ in direction of motion of car $A$"
+          ],
+          "correctOption": 1,
+          "solution": "$\\vec{v}_{AB} = \\vec{v}_A - \\vec{v}_B = 80 - 60 = +20\\text{ km/h}$ along the direction of motion of car $A$."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body is projected horizontally from the top of a tower of height $80\\text{ m}$ with a velocity of $20\\text{ m/s}$. The horizontal distance from the foot of tower where the body hits the ground is: (Take $g = 10\\text{ m/s}^2$)",
+          "image": "",
+          "options": [
+            "$40\\text{ m}$",
+            "$60\\text{ m}$",
+            "$80\\text{ m}$",
+            "$100\\text{ m}$"
+          ],
+          "correctOption": 2,
+          "solution": "Time to fall: $t = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2 \\times 80}{10}} = \\sqrt{16} = 4\\text{ s}$.\nHorizontal range: $x = u_x t = 20 \\times 4 = 80\\text{ m}$."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The horizontal range and maximum height of a projectile are equal when the angle of projection is:",
+          "image": "",
+          "options": [
+            "$\\theta = \\tan^{-1}(4)$",
+            "$\\theta = \\tan^{-1}(1/4)$",
+            "$\\theta = \\tan^{-1}(2)$",
+            "$\\theta = 45^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "Relation between $R$ and $H$: $R = 4H\\cot\\theta \\implies \\frac{R}{H} = \\frac{4}{\\tan\\theta}$.\nGiven $R = H \\implies \\tan\\theta = 4 \\implies \\theta = \\tan^{-1}(4)$."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves in a circle of radius $r = 2\\text{ m}$ with a constant tangential speed of $4\\text{ m/s}$. The net acceleration of the particle is:",
+          "image": "",
+          "options": [
+            "$8\\text{ m/s}^2$",
+            "$4\\text{ m/s}^2$",
+            "$2\\text{ m/s}^2$",
+            "$16\\text{ m/s}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Since speed is constant, tangential acceleration $a_t = 0$.\nCentripetal acceleration $a_c = \\frac{v^2}{r} = \\frac{4^2}{2} = \\frac{16}{2} = 8\\text{ m/s}^2$.\nNet acceleration $= a_c = 8\\text{ m/s}^2$."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If vector $\\vec{A} = 3\\hat{i} + 4\\hat{j}$ and vector $\\vec{B} = 7\\hat{i} + 24\\hat{j}$, the vector having the same magnitude as $\\vec{B}$ and parallel to $\\vec{A}$ is:",
+          "image": "",
+          "options": [
+            "$15\\hat{i} + 20\\hat{j}$",
+            "$20\\hat{i} + 15\\hat{j}$",
+            "$5\\hat{i} + 12\\hat{j}$",
+            "$7\\hat{i} + 24\\hat{j}$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnitude of $\\vec{B}$: $|\\vec{B}| = \\sqrt{7^2 + 24^2} = \\sqrt{49 + 576} = \\sqrt{625} = 25$.\nUnit vector along $\\vec{A}$: $\\hat{A} = \\frac{3\\hat{i} + 4\\hat{j}}{\\sqrt{3^2 + 4^2}} = \\frac{3\\hat{i} + 4\\hat{j}}{5}$.\nRequired vector $= |\\vec{B}|\\hat{A} = 25 \\left(\\frac{3\\hat{i} + 4\\hat{j}}{5}\\right) = 5(3\\hat{i} + 4\\hat{j}) = 15\\hat{i} + 20\\hat{j}$."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The angle between the two vectors $\\vec{A} = 2\\hat{i} + 2\\hat{j} - \\hat{k}$ and $\\vec{B} = 6\\hat{i} - 3\\hat{j} + 2\\hat{k}$ is:",
+          "image": "",
+          "options": [
+            "$\\cos^{-1}\\left(\\frac{4}{21}\\right)$",
+            "$\\cos^{-1}\\left(\\frac{2}{7}\\right)$",
+            "$\\cos^{-1}\\left(\\frac{1}{21}\\right)$",
+            "$\\cos^{-1}\\left(\\frac{5}{21}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\vec{A} \\cdot \\vec{B} = (2)(6) + (2)(-3) + (-1)(2) = 12 - 6 - 2 = 4$$\n$$|\\vec{A}| = \\sqrt{4+4+1} = 3, \\quad |\\vec{B}| = \\sqrt{36+9+4} = 7$$\n$$\\cos\\theta = \\frac{\\vec{A} \\cdot \\vec{B}}{|\\vec{A}||\\vec{B}|} = \\frac{4}{3 \\times 7} = \\frac{4}{21} \\implies \\theta = \\cos^{-1}\\left(\\frac{4}{21}\\right)$$"
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A stone is tied to one end of a string of length $0.5\\text{ m}$ and whirled in a horizontal circle with a constant speed. If the stone makes 10 revolutions in $2\\pi\\text{ seconds}$, its acceleration is:",
+          "image": "",
+          "options": [
+            "$50\\text{ m/s}^2$",
+            "$25\\text{ m/s}^2$",
+            "$100\\text{ m/s}^2$",
+            "$10\\text{ m/s}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Frequency $f = \\frac{10}{2\\pi}\\text{ rev/s} \\implies \\omega = 2\\pi f = 2\\pi \\left(\\frac{10}{2\\pi}\\right) = 10\\text{ rad/s}$.\n$$a = \\omega^2 r = (10)^2 \\times 0.5 = 100 \\times 0.5 = 50\\text{ m/s}^2$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "What is the projection of vector $\\vec{A} = 2\\hat{i} + 3\\hat{j} + 2\\hat{k}$ on vector $\\vec{B} = \\hat{i} + 2\\hat{j} + \\hat{k}$?",
+          "image": "",
+          "options": [
+            "$\\frac{10}{\\sqrt{6}}$",
+            "$\\frac{5}{\\sqrt{6}}$",
+            "$\\frac{10}{\\sqrt{17}}$",
+            "$\\frac{6}{\\sqrt{10}}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\text{Projection} = \\frac{\\vec{A} \\cdot \\vec{B}}{|\\vec{B}|} = \\frac{(2)(1) + (3)(2) + (2)(1)}{\\sqrt{1^2 + 2^2 + 1^2}} = \\frac{2 + 6 + 2}{\\sqrt{6}} = \\frac{10}{\\sqrt{6}}$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A bomber plane flies horizontally at a height of $500\\text{ m}$ with velocity $100\\text{ m/s}$. It releases a bomb to hit a target on the ground. At what horizontal distance from the target should the bomb be released? (Take $g = 10\\text{ m/s}^2$)",
+          "image": "",
+          "options": [
+            "$500\\text{ m}$",
+            "$1000\\text{ m}$",
+            "$1500\\text{ m}$",
+            "$2000\\text{ m}$"
+          ],
+          "correctOption": 1,
+          "solution": "Time to fall: $t = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2 \\times 500}{10}} = 10\\text{ s}$.\nHorizontal distance $x = u t = 100 \\times 10 = 1000\\text{ m}$."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following vectors is perpendicular to $\\vec{A} = 3\\hat{i} - 2\\hat{j}$?",
+          "image": "",
+          "options": [
+            "$2\\hat{i} + 3\\hat{j}$",
+            "$3\\hat{i} + 2\\hat{j}$",
+            "$-2\\hat{i} + 3\\hat{j}$",
+            "$3\\hat{i} - 2\\hat{j}$"
+          ],
+          "correctOption": 0,
+          "solution": "Dot product with option (1): $(3\\hat{i} - 2\\hat{j}) \\cdot (2\\hat{i} + 3\\hat{j}) = (3)(2) + (-2)(3) = 6 - 6 = 0$. Hence, it is perpendicular."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In uniform circular motion, the angle between velocity vector and acceleration vector at any instant is:",
+          "image": "",
+          "options": [
+            "$0^\\circ$",
+            "$45^\\circ$",
+            "$90^\\circ$",
+            "$180^\\circ$"
+          ],
+          "correctOption": 2,
+          "solution": "Velocity is tangential to the circular trajectory while centripetal acceleration is directed along the radius towards the centre. The angle between them is always $90^\\circ$."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The maximum range of a projectile fired with velocity $u$ is $R_{\\text{max}}$. The maximum height attained corresponding to this maximum range is:",
+          "image": "",
+          "options": [
+            "$R_{\\text{max}}$",
+            "$\\frac{R_{\\text{max}}}{2}$",
+            "$\\frac{R_{\\text{max}}}{4}$",
+            "$2R_{\\text{max}}$"
+          ],
+          "correctOption": 2,
+          "solution": "Maximum range occurs at $\\theta = 45^\\circ$, where $R_{\\text{max}} = \\frac{u^2}{g}$.\nHeight attained at $\\theta = 45^\\circ$: $H = \\frac{u^2 \\sin^2 45^\\circ}{2g} = \\frac{u^2(1/2)}{2g} = \\frac{u^2}{4g} = \\frac{R_{\\text{max}}}{4}$."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Three concurrent forces $\\vec{F}_1 = 2\\hat{i} + 3\\hat{j}$, $\\vec{F}_2 = -5\\hat{i} + \\hat{j}$, and $\\vec{F}_3$ keep a particle in equilibrium. The force $\\vec{F}_3$ is:",
+          "image": "",
+          "options": [
+            "$3\\hat{i} - 4\\hat{j}$",
+            "$-3\\hat{i} + 4\\hat{j}$",
+            "$7\\hat{i} - 2\\hat{j}$",
+            "$-7\\hat{i} + 2\\hat{j}$"
+          ],
+          "correctOption": 0,
+          "solution": "For equilibrium: $\\vec{F}_1 + \\vec{F}_2 + \\vec{F}_3 = \\vec{0}$.\n$$\\vec{F}_3 = -(\\vec{F}_1 + \\vec{F}_2) = -[(2-5)\\hat{i} + (3+1)\\hat{j}] = -[-3\\hat{i} + 4\\hat{j}] = 3\\hat{i} - 4\\hat{j}$$"
+        }
+      ]
+    }
+  ]
+}
