@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-04-nlm-part-1",
+  "title": "NLM Part 1",
+  "syllabus": "Force and inertia, Newton's First law of motion, Momentum, Newton's Second Law of motion, Impulses, Newton's Third Law of motion, Law of conservation of linear momentum and its applications, Equilibrium of concurrent forces",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $60\\text{ g}$ is in motion and its displacement $x$ at any time $t$ is given by $x = (3t - 4t^2 + t^3)\\text{ m}$. The magnitude of the force acting on the body at $t = 2\\text{ s}$ is:",
+          "image": "",
+          "options": [
+            "$0.24\\text{ N}$",
+            "$0.48\\text{ N}$",
+            "$0.96\\text{ N}$",
+            "$1.20\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Displacement $x = 3t - 4t^2 + t^3$\nVelocity $v = \\frac{dx}{dt} = 3 - 8t + 3t^2$\nAcceleration $a = \\frac{dv}{dt} = -8 + 6t$\nAt $t = 2\\text{ s}$, $a = -8 + 6(2) = 4\\text{ m/s}^2$\nForce $F = m a = \\left(\\frac{60}{1000}\\text{ kg}\\right) \\times 4\\text{ m/s}^2 = 0.24\\text{ N}$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle of mass $m$ is moving with a constant speed $v$ along a circle of radius $r$. What is the magnitude of change in linear momentum when the particle moves through an angle $\\theta = 60^\\circ$? (NEET 2013)",
+          "image": "",
+          "options": [
+            "$mv$",
+            "$2mv$",
+            "$\\sqrt{3}mv$",
+            "$mv/\\sqrt{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Change in linear momentum magnitude is given by:\n$$|\\Delta \\vec{p}| = 2mv\\sin\\left(\\frac{\\theta}{2}\\right)$$\nFor $\\theta = 60^\\circ$:\n$$|\\Delta \\vec{p}| = 2mv\\sin(30^\\circ) = 2mv\\left(\\frac{1}{2}\\right) = mv$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A rigid ball of mass $m$ strikes a rigid vertical wall at $60^\\circ$ with the normal and gets reflected without any loss of speed, as shown. The value of impulse imparted by the wall on the ball is: (NEET 2016)",
+          "image": "",
+          "options": [
+            "$mv$",
+            "$2mv$",
+            "$mv/2$",
+            "$mv/3$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial momentum component normal to wall: $p_{i,x} = mv\\cos 60^\\circ$.\nFinal momentum component normal to wall: $p_{f,x} = -mv\\cos 60^\\circ$.\nParallel components remain unchanged ($p_{i,y} = p_{f,y} = mv\\sin 60^\\circ$).\n$$\\text{Impulse } J = |\\Delta p_x| = 2mv\\cos 60^\\circ = 2mv\\left(\\frac{1}{2}\\right) = mv$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $M$ hits normally a rigid wall with velocity $v$ and bounces back with the same velocity. The impulse experienced by the body is: (NEET 2011)",
+          "image": "",
+          "options": [
+            "$1.5 Mv$",
+            "$2Mv$",
+            "$Mv$",
+            "Zero"
+          ],
+          "correctOption": 1,
+          "solution": "Impulse $J = \\Delta p = p_f - p_i = (-Mv) - (Mv) = -2Mv$.\nMagnitude of impulse $= 2Mv$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An explosion breaks a rock into three parts in a horizontal plane. Two of them fly off at right angles to each other: $1\\text{ kg}$ first part moves with a speed of $12\\text{ m/s}$ and $2\\text{ kg}$ second part moves with $8\\text{ m/s}$. If the third part flies off with a speed of $4\\text{ m/s}$, its mass is: (NEET 2013)",
+          "image": "",
+          "options": [
+            "$7\\text{ kg}$",
+            "$17\\text{ kg}$",
+            "$3\\text{ kg}$",
+            "$5\\text{ kg}$"
+          ],
+          "correctOption": 3,
+          "solution": "By conservation of linear momentum: $\\vec{p}_1 + \\vec{p}_2 + \\vec{p}_3 = \\vec{0} \\implies \\vec{p}_3 = -(\\vec{p}_1 + \\vec{p}_2)$.\nSince $\\vec{p}_1 \\perp \\vec{p}_2$:\n$$p_3 = \\sqrt{p_1^2 + p_2^2} = \\sqrt{(1 \\times 12)^2 + (2 \\times 8)^2} = \\sqrt{144 + 256} = \\sqrt{400} = 20\\text{ kg}\\cdot\\text{m/s}$$\n$$m_3 v_3 = 20 \\implies m_3(4) = 20 \\implies m_3 = 5\\text{ kg}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force $\\vec{F} = (6\\hat{i} - 8\\hat{j} + 10\\hat{k})\\text{ N}$ produces an acceleration of $1\\text{ m/s}^2$ in a body. The mass of the body is: (NEET 2009)",
+          "image": "",
+          "options": [
+            "$10\\sqrt{2}\\text{ kg}$",
+            "$2\\sqrt{10}\\text{ kg}$",
+            "$10\\text{ kg}$",
+            "$20\\text{ kg}$"
+          ],
+          "correctOption": 0,
+          "solution": "$|\\vec{F}| = \\sqrt{6^2 + (-8)^2 + 10^2} = \\sqrt{36 + 64 + 100} = \\sqrt{200} = 10\\sqrt{2}\\text{ N}$.\nMass $m = \\frac{|\\vec{F}|}{a} = \\frac{10\\sqrt{2}}{1} = 10\\sqrt{2}\\text{ kg}$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A $0.5\\text{ kg}$ ball moving with a speed of $12\\text{ m/s}$ strikes a hard wall at an angle of $30^\\circ$ with the wall. It is reflected with the same speed and at the same angle. If the ball is in contact with the wall for $0.25\\text{ s}$, the average force acting on the wall is: (NEET 2006)",
+          "image": "",
+          "options": [
+            "$24\\text{ N}$",
+            "$12\\text{ N}$",
+            "$48\\text{ N}$",
+            "$6\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "The angle with the wall is $30^\\circ$, so the angle with the normal is $\\theta = 90^\\circ - 30^\\circ = 60^\\circ$ (or $\\sin 30^\\circ$ normal component).\nChange in momentum $\\Delta p = 2mv\\sin(30^\\circ) = 2(0.5)(12)(0.5) = 6\\text{ kg}\\cdot\\text{m/s}$.\n$$F_{\\text{avg}} = \\frac{\\Delta p}{\\Delta t} = \\frac{6}{0.25} = 24\\text{ N}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ball of mass $0.15\\text{ kg}$ is dropped from a height $10\\text{ m}$, strikes the ground and rebounds to the same height. The magnitude of impulse imparted to the ball is: $(g = 10\\text{ m/s}^2)$ (NEET 2021)",
+          "image": "",
+          "options": [
+            "$2.1\\text{ kg}\\cdot\\text{m/s}$",
+            "$4.2\\text{ kg}\\cdot\\text{m/s}$",
+            "$1.4\\text{ kg}\\cdot\\text{m/s}$",
+            "$0\\text{ kg}\\cdot\\text{m/s}$"
+          ],
+          "correctOption": 1,
+          "solution": "Speed just before collision $v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 10} = 10\\sqrt{2}\\text{ m/s}$.\nRebound speed $v' = 10\\sqrt{2}\\text{ m/s}$ (upwards).\n$$\\text{Impulse} = m(v' - (-v)) = 2mv = 2(0.15)(10\\sqrt{2}) = 3\\sqrt{2} \\approx 3 \\times 1.414 = 4.24\\text{ kg}\\cdot\\text{m/s} \\approx 4.2\\text{ kg}\\cdot\\text{m/s}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Physical independence of force is a consequence of:",
+          "image": "",
+          "options": [
+            "Third law of motion",
+            "Second law of motion",
+            "First law of motion",
+            "All the laws of motion"
+          ],
+          "correctOption": 2,
+          "solution": "Newton's First Law of motion states that an object continues in its state of rest or uniform motion in the absence of an external force, establishing the concept of inertia and defining force independently of the acceleration it causes."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A cricketer catches a ball of mass $150\\text{ g}$ in $0.1\\text{ s}$ moving with a speed of $20\\text{ m/s}$. The force exerted by the cricketer on the ball is:",
+          "image": "",
+          "options": [
+            "$300\\text{ N}$",
+            "$30\\text{ N}$",
+            "$3\\text{ N}$",
+            "$0.3\\text{ N}$"
+          ],
+          "correctOption": 1,
+          "solution": "Change in momentum $\\Delta p = m(v - u) = 0.15(0 - 20) = -3.0\\text{ kg}\\cdot\\text{m/s}$.\n$$F = \\left|\\frac{\\Delta p}{\\Delta t}\\right| = \\frac{3.0}{0.1} = 30\\text{ N}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A machine gun fires a bullet of mass $40\\text{ g}$ with a velocity of $1200\\text{ m/s}$. The man holding it can exert a maximum average force of $144\\text{ N}$ on the gun. How many bullets can he fire per second at the most?",
+          "image": "",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correctOption": 2,
+          "solution": "Momentum of one bullet $p = mv = 0.040\\text{ kg} \\times 1200\\text{ m/s} = 48\\text{ kg}\\cdot\\text{m/s}$.\nIf $n$ bullets are fired per second, $F = n \\times p$.\n$$144 = n(48) \\implies n = \\frac{144}{48} = 3\\text{ bullets/s}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Three concurrent forces $\\vec{F}_1$, $\\vec{F}_2$, and $\\vec{F}_3$ are acting on a particle of mass $m$ such that $\\vec{F}_1 + \\vec{F}_2 + \\vec{F}_3 = \\vec{0}$. If the force $\\vec{F}_1$ is now removed, the acceleration of the particle will be:",
+          "image": "",
+          "options": [
+            "$\\vec{F}_1 / m$",
+            "$-\\vec{F}_1 / m$",
+            "$(\\vec{F}_2 - \\vec{F}_3) / m$",
+            "Zero"
+          ],
+          "correctOption": 1,
+          "solution": "Given $\\vec{F}_1 + \\vec{F}_2 + \\vec{F}_3 = \\vec{0} \\implies \\vec{F}_2 + \\vec{F}_3 = -\\vec{F}_1$.\nWhen $\\vec{F}_1$ is removed, the remaining net force is $\\vec{F}_{\\text{net}} = \\vec{F}_2 + \\vec{F}_3 = -\\vec{F}_1$.\nAcceleration $\\vec{a} = \\frac{\\vec{F}_{\\text{net}}}{m} = -\\frac{\\vec{F}_1}{m}$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force-time $(F\\text{-}t)$ graph for a linear motion is a triangle with base from $t = 0$ to $t = 4\\text{ s}$ and height $F = 10\\text{ N}$ at $t = 2\\text{ s}$. The impulse of this force is:",
+          "image": "",
+          "options": [
+            "$10\\text{ N}\\cdot\\text{s}$",
+            "$20\\text{ N}\\cdot\\text{s}$",
+            "$40\\text{ N}\\cdot\\text{s}$",
+            "$5\\text{ N}\\cdot\\text{s}$"
+          ],
+          "correctOption": 1,
+          "solution": "Impulse is equal to the area under the $F\\text{-}t$ graph.\n$$\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 4 \\times 10 = 20\\text{ N}\\cdot\\text{s}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Newton's third law of motion leads to the law of conservation of:",
+          "image": "",
+          "options": [
+            "Energy",
+            "Mass",
+            "Linear momentum",
+            "Angular momentum"
+          ],
+          "correctOption": 2,
+          "solution": "Action and reaction are equal and opposite ($\\vec{F}_{12} = -\\vec{F}_{21}$). Integrating with respect to time gives $\\Delta \\vec{p}_1 = -\\Delta \\vec{p}_2 \\implies \\Delta(\\vec{p}_1 + \\vec{p}_2) = \\vec{0}$, which is the law of conservation of linear momentum."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A shell of mass $200\\text{ g}$ is ejected from a gun of mass $4\\text{ kg}$ by an explosion that generates $1.05\\text{ kJ}$ of kinetic energy. The initial recoil velocity of the gun is:",
+          "image": "",
+          "options": [
+            "$5\\text{ m/s}$",
+            "$10\\text{ m/s}$",
+            "$1.5\\text{ m/s}$",
+            "$2.5\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let mass of shell be $m = 0.2\\text{ kg}$ and mass of gun $M = 4\\text{ kg}$.\nBy momentum conservation, $M V = m v \\implies v = \\frac{M}{m}V = 20V$.\nTotal K.E. $= \\frac{1}{2}MV^2 + \\frac{1}{2}mv^2 = \\frac{1}{2}(4)V^2 + \\frac{1}{2}(0.2)(20V)^2 = 2V^2 + 40V^2 = 42V^2$.\n$$42V^2 = 1050\\text{ J} \\implies V^2 = \\frac{1050}{42} = 25 \\implies V = 5\\text{ m/s}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Action and reaction forces do not balance each other because they:",
+          "image": "",
+          "options": [
+            "Act on different bodies",
+            "Act in same direction",
+            "Are not equal in magnitude",
+            "Act along different lines"
+          ],
+          "correctOption": 0,
+          "solution": "Action and reaction forces act simultaneously on two different interacting bodies, hence they never cancel each other out."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle of mass $m$ is at rest at the origin. At $t = 0$, a force $\\vec{F}(t) = F_0 e^{-bt} \\hat{i}$ is applied to the particle. Its velocity $v(t)$ as a function of time is:",
+          "image": "",
+          "options": [
+            "$\\frac{F_0}{mb}(1 - e^{-bt})\\hat{i}$",
+            "$\\frac{F_0}{m} e^{-bt}\\hat{i}$",
+            "$\\frac{F_0}{b} e^{-bt}\\hat{i}$",
+            "$\\frac{F_0}{mb} e^{-bt}\\hat{i}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$m \\frac{dv}{dt} = F_0 e^{-bt} \\implies dv = \\frac{F_0}{m} e^{-bt} dt$$\n$$v(t) = \\int_0^t \\frac{F_0}{m} e^{-bt} dt = \\frac{F_0}{m} \\left[ -\\frac{e^{-bt}}{b} \\right]_0^t = \\frac{F_0}{mb} (1 - e^{-bt})$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $5\\text{ kg}$ is suspended by two light ropes making angles $30^\\circ$ and $60^\\circ$ with the horizontal ceiling. The tensions $T_1$ and $T_2$ in the ropes are: $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$25\\text{ N}, 25\\sqrt{3}\\text{ N}$",
+            "$25\\sqrt{3}\\text{ N}, 25\\text{ N}$",
+            "$50\\text{ N}, 50\\sqrt{3}\\text{ N}$",
+            "$50\\text{ N}, 25\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Horizontal equilibrium: $T_1\\cos 30^\\circ = T_2\\cos 60^\\circ \\implies T_1\\frac{\\sqrt{3}}{2} = T_2\\frac{1}{2} \\implies T_2 = \\sqrt{3}T_1$.\nVertical equilibrium: $T_1\\sin 30^\\circ + T_2\\sin 60^\\circ = W = 50\\text{ N}$.\n$$T_1\\left(\\frac{1}{2}\\right) + (\\sqrt{3}T_1)\\left(\\frac{\\sqrt{3}}{2}\\right) = 50 \\implies 2T_1 = 50 \\implies T_1 = 25\\text{ N}$$\n$$T_2 = 25\\sqrt{3}\\text{ N}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A rocket of initial mass $6000\\text{ kg}$ ejects gas at a constant rate of $16\\text{ kg/s}$ with a constant relative speed of $11\\text{ km/s}$. The initial acceleration of the rocket is: $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$19.3\\text{ m/s}^2$",
+            "$29.3\\text{ m/s}^2$",
+            "$9.3\\text{ m/s}^2$",
+            "$39.3\\text{ m/s}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Thrust force $F_{\\text{thrust}} = u_{\\text{rel}} \\frac{dm}{dt} = 11000\\text{ m/s} \\times 16\\text{ kg/s} = 176000\\text{ N}$.\nInitial acceleration $a = \\frac{F_{\\text{thrust}} - mg}{m} = \\frac{176000 - 6000(10)}{6000} = \\frac{116000}{6000} = 19.33\\text{ m/s}^2$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force $\\vec{F} = (2t\\hat{i} + 3t^2\\hat{j})\\text{ N}$ acts on an object of mass $1\\text{ kg}$ initially at rest. The velocity of the object at $t = 2\\text{ s}$ will be:",
+          "image": "",
+          "options": [
+            "$(4\\hat{i} + 8\\hat{j})\\text{ m/s}$",
+            "$(2\\hat{i} + 6\\hat{j})\\text{ m/s}$",
+            "$(4\\hat{i} + 12\\hat{j})\\text{ m/s}$",
+            "$(8\\hat{i} + 4\\hat{j})\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\vec{a} = \\frac{\\vec{F}}{m} = 2t\\hat{i} + 3t^2\\hat{j}$$\n$$\\vec{v}(2) = \\int_0^2 (2t\\hat{i} + 3t^2\\hat{j})\\,dt = \\left[ t^2\\hat{i} + t^3\\hat{j} \\right]_0^2 = 4\\hat{i} + 8\\hat{j}\\text{ m/s}$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A mass of $10\\text{ kg}$ is suspended vertically by a light rope of length $2\\text{ m}$ from a ceiling. A horizontal force $F$ is applied at the midpoint of the rope so that the upper half makes an angle of $45^\\circ$ with the vertical in equilibrium. The magnitude of $F$ is: $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$100\\text{ N}$",
+            "$50\\text{ N}$",
+            "$100\\sqrt{2}\\text{ N}$",
+            "$50\\sqrt{2}\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Tension in the lower half supports the mass: $T_2 = mg = 10 \\times 10 = 100\\text{ N}$.\nAt the midpoint, under concurrent forces:\n$T_1\\cos 45^\\circ = T_2 = 100\\text{ N}$\n$T_1\\sin 45^\\circ = F$\nDividing the two equations gives $\\tan 45^\\circ = \\frac{F}{100} \\implies F = 100\\text{ N}$."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If three forces $\\vec{F}_1 = 3\\hat{i} - 4\\hat{j}$, $\\vec{F}_2 = 2\\hat{i} + 5\\hat{j}$, and $\\vec{F}_3 = a\\hat{i} + b\\hat{j}$ act on a body keeping it in equilibrium, then $(a, b)$ is:",
+          "image": "",
+          "options": [
+            "$(-5, -1)$",
+            "$(5, 1)$",
+            "$(-5, 1)$",
+            "$(5, -1)$"
+          ],
+          "correctOption": 0,
+          "solution": "For equilibrium: $\\sum \\vec{F} = \\vec{0} \\implies (3+2+a)\\hat{i} + (-4+5+b)\\hat{j} = \\vec{0}$.\n$5 + a = 0 \\implies a = -5$\n$1 + b = 0 \\implies b = -1$\nThus, $(a, b) = (-5, -1)$."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A stationary body of mass $3m$ explodes into three equal pieces. Two pieces fly off with speeds $v$ along the x and y axes respectively. The speed of the third piece is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{2}v$",
+            "$v/\\sqrt{2}$",
+            "$2v$",
+            "$v$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial momentum is zero. Each piece has mass $m$.\n$$\\vec{p}_1 + \\vec{p}_2 + \\vec{p}_3 = \\vec{0} \\implies m v\\hat{i} + m v\\hat{j} + m \\vec{v}_3 = \\vec{0}$$\n$$\\vec{v}_3 = -(v\\hat{i} + v\\hat{j}) \\implies |\\vec{v}_3| = \\sqrt{v^2 + v^2} = \\sqrt{2}v$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a passenger jumps out of a moving bus, he tends to fall in the forward direction. This is due to:",
+          "image": "",
+          "options": [
+            "Inertia of rest",
+            "Inertia of motion",
+            "Inertia of direction",
+            "Gravitational pull"
+          ],
+          "correctOption": 1,
+          "solution": "When his feet touch the ground, they immediately come to rest while his upper body continues moving forward due to inertia of motion."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A garden water hose ejects water at a rate of $1.5\\text{ kg/s}$ with a speed of $6\\text{ m/s}$. The water strikes a vertical wall normally and stops without splashing back. The force exerted on the wall is:",
+          "image": "",
+          "options": [
+            "$9\\text{ N}$",
+            "$4\\text{ N}$",
+            "$0.25\\text{ N}$",
+            "$18\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Force $F = v \\frac{dm}{dt} = 6\\text{ m/s} \\times 1.5\\text{ kg/s} = 9\\text{ N}$."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A constant retarding force of $50\\text{ N}$ is applied to a body of mass $20\\text{ kg}$ moving initially with a speed of $15\\text{ m/s}$. How long does the body take to stop?",
+          "image": "",
+          "options": [
+            "$6\\text{ s}$",
+            "$4\\text{ s}$",
+            "$8\\text{ s}$",
+            "$10\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Retardation $a = \\frac{F}{m} = \\frac{50}{20} = 2.5\\text{ m/s}^2$.\nUsing $v = u - at \\implies 0 = 15 - 2.5t \\implies t = 6\\text{ s}$."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An open carriage of mass $M$ is coasting along a frictionless horizontal track with a constant velocity $v_0$. Rain begins to fall vertically down into the carriage at a constant mass rate $r = \\frac{dm}{dt}$. The velocity of the carriage after time $t$ will be:",
+          "image": "",
+          "options": [
+            "$\\frac{M v_0}{M + rt}$",
+            "$v_0 - \\frac{rt}{M}$",
+            "$\\frac{(M + rt)v_0}{M}$",
+            "$v_0$"
+          ],
+          "correctOption": 0,
+          "solution": "Since no external horizontal force acts on the system, horizontal linear momentum is conserved.\n$$P_{\\text{initial}} = M v_0$$\n$$P_{\\text{final}} = (M + rt) v(t)$$\n$$v(t) = \\frac{M v_0}{M + rt}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A block of mass $m$ is suspended by a light string from the ceiling of an elevator. When the elevator accelerates downwards with acceleration $a$ ($a < g$), the tension in the string is:",
+          "image": "",
+          "options": [
+            "$m(g - a)$",
+            "$m(g + a)$",
+            "$mg$",
+            "$ma$"
+          ],
+          "correctOption": 0,
+          "solution": "Equation of motion inside an elevator accelerating downwards: $mg - T = ma \\implies T = m(g - a)$."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "According to Lami's theorem, if three coplanar concurrent forces $\\vec{F}_1, \\vec{F}_2, \\vec{F}_3$ keep a body in equilibrium, and $\\alpha, \\beta, \\gamma$ are the angles opposite to these forces, then:",
+          "image": "",
+          "options": [
+            "$\\frac{F_1}{\\sin\\alpha} = \\frac{F_2}{\\sin\\beta} = \\frac{F_3}{\\sin\\gamma}$",
+            "$\\frac{F_1}{\\cos\\alpha} = \\frac{F_2}{\\cos\\beta} = \\frac{F_3}{\\cos\\gamma}$",
+            "$F_1\\sin\\alpha = F_2\\sin\\beta = F_3\\sin\\gamma$",
+            "$\\frac{F_1}{\\tan\\alpha} = \\frac{F_2}{\\tan\\beta} = \\frac{F_3}{\\tan\\gamma}$"
+          ],
+          "correctOption": 0,
+          "solution": "Lami's Theorem states that for three concurrent coplanar forces in equilibrium, the magnitude of each force is directly proportional to the sine of the angle between the other two forces: $\\frac{F_1}{\\sin\\alpha} = \\frac{F_2}{\\sin\\beta} = \\frac{F_3}{\\sin\\gamma}$."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A hockey player strikes a stationary puck of mass $0.16\\text{ kg}$ so that it leaves the stick with a velocity of $30\\text{ m/s}$. If the stick was in contact with the puck for $0.02\\text{ s}$, the average force exerted on the puck is:",
+          "image": "",
+          "options": [
+            "$240\\text{ N}$",
+            "$120\\text{ N}$",
+            "$480\\text{ N}$",
+            "$60\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\text{Impulse } J = \\Delta p = m v = 0.16 \\times 30 = 4.8\\text{ N}\\cdot\\text{s}$$\n$$F_{\\text{avg}} = \\frac{J}{\\Delta t} = \\frac{4.8}{0.02} = 240\\text{ N}$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A gun fires $N$ bullets per second, each of mass $m$ with velocity $v$ into a wooden block where they come to rest. The average force exerted by the stream of bullets on the block is:",
+          "image": "",
+          "options": [
+            "$Nmv$",
+            "$\\frac{1}{2}Nmv$",
+            "$2Nmv$",
+            "$Nmv^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Momentum lost by each bullet $= mv$.\nTotal momentum imparted per second $= N \\times mv$.\n$$F_{\\text{avg}} = \\frac{\\Delta P}{\\Delta t} = Nmv$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A man of mass $70\\text{ kg}$ stands on a weighing scale in a lift which is moving upwards with a uniform speed of $10\\text{ m/s}$. What would be the reading on the scale? $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$700\\text{ N}$",
+            "$0\\text{ N}$",
+            "$1400\\text{ N}$",
+            "$350\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Since the lift is moving with uniform speed, its acceleration is zero ($a = 0$).\nReading $N = m(g + a) = 70(10 + 0) = 700\\text{ N}$."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $2\\text{ kg}$ is initially at rest. A time-dependent force $F(t) = 6t\\text{ N}$ acts on it. The momentum of the body at $t = 3\\text{ s}$ is:",
+          "image": "",
+          "options": [
+            "$27\\text{ kg}\\cdot\\text{m/s}$",
+            "$18\\text{ kg}\\cdot\\text{m/s}$",
+            "$54\\text{ kg}\\cdot\\text{m/s}$",
+            "$9\\text{ kg}\\cdot\\text{m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\Delta p = \\int_0^3 F(t)\\,dt = \\int_0^3 6t\\,dt = \\left[ 3t^2 \\right]_0^3 = 3(9) = 27\\text{ kg}\\cdot\\text{m/s}$$"
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a game of tug-of-war, team A exerts a force on team B through the connecting rope. The team that wins is the one that:",
+          "image": "",
+          "options": [
+            "Exerts a greater force on the ground than the other team",
+            "Exerts a greater force on the rope than the other team",
+            "Pulls the rope with higher speed",
+            "Has greater total body mass"
+          ],
+          "correctOption": 0,
+          "solution": "The tension in the rope is the same at both ends by Newton's third law. The winning team is the one that exerts a larger horizontal frictional force on the ground, thereby receiving a larger reaction force from the ground to overcome the other team."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A bullet of mass $10\\text{ g}$ travelling horizontally with a velocity of $150\\text{ m/s}$ strikes a stationary wooden block and comes to rest in $0.03\\text{ s}$. The magnitude of the average force exerted on the block is:",
+          "image": "",
+          "options": [
+            "$50\\text{ N}$",
+            "$100\\text{ N}$",
+            "$25\\text{ N}$",
+            "$15\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Change in momentum $\\Delta p = 0.010\\text{ kg} \\times 150\\text{ m/s} = 1.5\\text{ kg}\\cdot\\text{m/s}$.\n$$F_{\\text{avg}} = \\frac{1.5}{0.03} = 50\\text{ N}$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body under the action of a force $\\vec{F} = 6\\hat{i} - 8\\hat{j}\\text{ N}$ acquires an acceleration of $5\\text{ m/s}^2$. The mass of the body must be:",
+          "image": "",
+          "options": [
+            "$2\\text{ kg}$",
+            "$5\\text{ kg}$",
+            "$10\\text{ kg}$",
+            "$1.4\\text{ kg}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$|\\vec{F}| = \\sqrt{6^2 + (-8)^2} = 10\\text{ N}$$\n$$m = \\frac{F}{a} = \\frac{10}{5} = 2\\text{ kg}$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following demonstrates the application of impulse to minimize injury?",
+          "image": "",
+          "options": [
+            "A fielder pulling his hands backwards while catching a fast-moving cricket ball",
+            "A person jumping on a hard concrete floor with stiff legs",
+            "A hammer striking a hard iron nail",
+            "A bullet hitting a rigid steel plate"
+          ],
+          "correctOption": 0,
+          "solution": "By pulling his hands backwards, the fielder increases the time duration $(\\Delta t)$ of the catch. Since $\\text{Impulse} = F_{\\text{avg}} \\times \\Delta t = \\Delta p$, increasing $\\Delta t$ significantly reduces the impact force $F_{\\text{avg}}$ on his hands."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force $\\vec{F} = (2\\hat{i} + 3\\hat{j})\\,\\text{N}$ acts on a particle of mass $1\\text{ kg}$. If the particle starts from rest at the origin, its position vector at $t = 2\\text{ s}$ will be:",
+          "image": "",
+          "options": [
+            "$(4\\hat{i} + 6\\hat{j})\\text{ m}$",
+            "$(2\\hat{i} + 3\\hat{j})\\text{ m}$",
+            "$(8\\hat{i} + 12\\hat{j})\\text{ m}$",
+            "$(4\\hat{i} + 3\\hat{j})\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Acceleration $\\vec{a} = \\frac{\\vec{F}}{m} = (2\\hat{i} + 3\\hat{j})\\text{ m/s}^2$ (constant).\n$$\\vec{r} = \\frac{1}{2}\\vec{a}t^2 = \\frac{1}{2}(2\\hat{i} + 3\\hat{j})(2)^2 = 2(2\\hat{i} + 3\\hat{j}) = 4\\hat{i} + 6\\hat{j}\\text{ m}$$"
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two masses $m_1 = 3\\text{ kg}$ and $m_2 = 5\\text{ kg}$ are connected by a light string passing over a frictionless pulley. If the system is released from rest, the acceleration of the masses is: $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$2.5\\text{ m/s}^2$",
+            "$5.0\\text{ m/s}^2$",
+            "$1.25\\text{ m/s}^2$",
+            "$3.3\\text{ m/s}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "$$a = \\frac{(m_2 - m_1)g}{m_1 + m_2} = \\frac{(5 - 3)10}{3 + 5} = \\frac{20}{8} = 2.5\\text{ m/s}^2$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $2\\text{ kg}$ is sliding with a constant velocity of $4\\text{ m/s}$ on a frictionless horizontal table. The net external force acting on the body is:",
+          "image": "",
+          "options": [
+            "$0\\text{ N}$",
+            "$8\\text{ N}$",
+            "$2\\text{ N}$",
+            "$0.5\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Velocity is constant, so acceleration $a = 0$. By Newton's second law, $F_{\\text{net}} = ma = 0\\text{ N}$."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force vector $\\vec{F}$ of magnitude $10\\text{ N}$ acts at an angle of $30^\\circ$ north of east. What force must be added to it to make the resultant force zero?",
+          "image": "",
+          "options": [
+            "$10\\text{ N}$ at $30^\\circ$ south of west",
+            "$10\\text{ N}$ at $60^\\circ$ south of west",
+            "$10\\text{ N}$ due west",
+            "$10\\text{ N}$ due south"
+          ],
+          "correctOption": 0,
+          "solution": "To make the resultant zero, the balancing force must be equal in magnitude and exactly opposite in direction: $10\\text{ N}$ at $30^\\circ$ south of west."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The momentum $p$ of a body moving in one dimension varies with time $t$ as $p = 2t^2 + 3t + 4$. The force acting on the body at $t = 2\\text{ s}$ is:",
+          "image": "",
+          "options": [
+            "$11\\text{ N}$",
+            "$18\\text{ N}$",
+            "$7\\text{ N}$",
+            "$14\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Force $F = \\frac{dp}{dt} = 4t + 3$.\nAt $t = 2\\text{ s}$, $F = 4(2) + 3 = 11\\text{ N}$."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A disc of mass $10\\text{ g}$ is kept floating horizontally in air by firing bullets of mass $5\\text{ g}$ vertically upwards against it at the rate of 10 bullets per second. The bullets rebound vertically downwards with the same speed. The speed of the bullets is: $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$1.0\\text{ m/s}$",
+            "$2.0\\text{ m/s}$",
+            "$0.5\\text{ m/s}$",
+            "$5.0\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Downward weight of the disc $W = M g = 0.010 \\times 10 = 0.1\\text{ N}$.\nRate of change of momentum of bullets $= n \\times (2mv) = 10 \\times (2 \\times 0.005 \\times v) = 0.1v$.\nFor floating equilibrium: $0.1v = 0.1 \\implies v = 1.0\\text{ m/s}$."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A helicopter of mass $1000\\text{ kg}$ rises with a vertical acceleration of $15\\text{ m/s}^2$. The crew and the passengers weigh $300\\text{ kg}$. What is the magnitude of force on the floor by the crew and passengers? $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$7500\\text{ N}$",
+            "$3000\\text{ N}$",
+            "$4500\\text{ N}$",
+            "$32500\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Normal contact force on the floor by the occupants:\n$$N = m(g + a) = 300(10 + 15) = 300 \\times 25 = 7500\\text{ N}$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A bird is sitting on the floor of a wire mesh cage which is in the hand of a boy. When the bird starts flying inside the cage, the boy feels that the cage is:",
+          "image": "",
+          "options": [
+            "Lighter",
+            "Heavier",
+            "Unchanged in weight",
+            "Lighter only if moving downwards"
+          ],
+          "correctOption": 0,
+          "solution": "In a wire mesh cage, the downward air stream generated by the flapping wings easily escapes into the surroundings rather than pushing against the cage floor. Hence, the boy supports only the cage and feels it become lighter."
+        }
+      ]
+    }
+  ]
+}
