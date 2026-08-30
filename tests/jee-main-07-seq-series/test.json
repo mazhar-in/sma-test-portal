@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-07-sequence-and-series",
+  "title": "Sequence and Series",
+  "syllabus": "Arithmetic Progression (AP), Geometric Progression (GP), Harmonic Progression (HP), Arithmetic-Geometric Series (AGP), AM-GM-HM Inequalities, Telescopic Series & Special Sequences",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The sum of $n$ terms of the series $1 + (1+x) + (1+x+x^2) + (1+x+x^2+x^3) + \\dots$, where $x \\ne 1$, is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{1-x}$",
+            "$\\frac{n}{1-x}$",
+            "$\\frac{n}{1-x} - \\frac{x(1-x^n)}{(1-x)^2}$",
+            "$n$"
+          ],
+          "correctOption": 2,
+          "solution": "The $k^{\\text{th}}$ term is $T_k = 1 + x + x^2 + \\dots + x^{k-1} = \\frac{1 - x^k}{1 - x}$.\nSum of $n$ terms:\n$$S_n = \\sum_{k=1}^{n} \\frac{1 - x^k}{1 - x} = \\frac{1}{1-x} \\sum_{k=1}^{n} 1 - \\frac{1}{1-x} \\sum_{k=1}^{n} x^k$$\n$$S_n = \\frac{n}{1-x} - \\frac{x(1-x^n)}{(1-x)^2}$$[cite: 3]."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Let $a_1, a_2, a_3, \\dots$ be a sequence of real numbers such that $|a_i| = |a_{i-1} + 1|$ for $i \\ge 2$ and $a_1 = 0$. If $A$ denotes the arithmetic mean of $a_1, a_2, \\dots, a_n$, then which one of the following is correct?",
+          "image": "",
+          "options": [
+            "$2nA = a_{n+1}^2 - n$",
+            "$2nA = a_n^2 - n$",
+            "$2nA = a_{n+1}^2 - n - 1$",
+            "$2nA = a_n^2 - n - 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Squaring the given relation: $a_i^2 = (a_{i-1} + 1)^2 = a_{i-1}^2 + 2a_{i-1} + 1 \\implies a_i^2 - a_{i-1}^2 - 1 = 2a_{i-1}$[cite: 3].\nSumming for $i = 2$ to $n+1$:\n$$\\sum_{i=2}^{n+1} (a_i^2 - a_{i-1}^2) - \\sum_{i=2}^{n+1} 1 = 2 \\sum_{i=2}^{n+1} a_{i-1}$$\n$$(a_{n+1}^2 - a_1^2) - n = 2(a_1 + a_2 + \\dots + a_n)$[cite: 3].\nSince $a_1 = 0$ and $A = \\frac{1}{n}\\sum_{k=1}^n a_k \\implies 2nA = a_{n+1}^2 - n$[cite: 3]."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $a, b, c$ are sides of a triangle, then $(b + c - a)(c + a - b)(a + b - c) - abc$ is:",
+          "image": "",
+          "options": [
+            "positive",
+            "negative",
+            "non-positive",
+            "non-negative"
+          ],
+          "correctOption": 2,
+          "solution": "Let $x = b+c-a > 0$, $y = c+a-b > 0$, $z = a+b-c > 0$[cite: 3].\nThen $a = \\frac{y+z}{2}$, $b = \\frac{z+x}{2}$, $c = \\frac{x+y}{2}$[cite: 3].\nBy AM-GM inequality:\n$$\\frac{y+z}{2} \\ge \\sqrt{yz}, \\quad \\frac{z+x}{2} \\ge \\sqrt{zx}, \\quad \\frac{x+y}{2} \\ge \\sqrt{xy}$$\nMultiplying these inequalities: $abc \\ge xyz = (b+c-a)(c+a-b)(a+b-c)$[cite: 3].\nTherefore, $(b+c-a)(c+a-b)(a+b-c) - abc \\le 0$ (non-positive)[cite: 3]."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $a, x, b$ are in H.P. and $a, y, z, b$ are in G.P., then the value of $\\frac{yz}{x(y^3 + z^3)}$ is:",
+          "image": "",
+          "options": [
+            "$ab$",
+            "$\\frac{1}{2ab}$",
+            "$\\frac{1}{2}ab$",
+            "$2ab$"
+          ],
+          "correctOption": 1,
+          "solution": "1) $a, x, b$ in H.P. $\\implies x = \\frac{2ab}{a+b}$[cite: 3].\n2) $a, y, z, b$ in G.P. with common ratio $r$: $y = ar$, $z = ar^2$, $b = ar^3$[cite: 3].\n$yz = a^2 r^3 = a(ar^3) = ab$[cite: 3].\n$y^3 + z^3 = a^3 r^3 + a^3 r^6 = a^3 r^3(1 + r^3) = ab(a + ar^3) = ab(a + b)$[cite: 3].\nThus, $\\frac{yz}{x(y^3 + z^3)} = \\frac{ab}{\\left(\\frac{2ab}{a+b}\\right)[ab(a+b)]} = \\frac{ab}{2a^2 b^2} = \\frac{1}{2ab}$[cite: 3]."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $a, b, c$ are in A.P. with non-zero common difference and $x, y, z$ are in G.P., then the points $(a, x)$, $(b, y)$ and $(c, z)$ are collinear if:",
+          "image": "",
+          "options": [
+            "$y^2 = z$",
+            "$x = z^2$",
+            "$x^2 = y$",
+            "$x = y = z$"
+          ],
+          "correctOption": 3,
+          "solution": "Points $(a, x)$, $(b, y)$, $(c, z)$ are collinear if $\\frac{y - x}{b - a} = \\frac{z - y}{c - b}$[cite: 3].\nSince $a, b, c$ are in A.P., $b - a = c - b = d \\neq 0$[cite: 3].\nThus, $y - x = z - y \\implies 2y = x + z$, meaning $x, y, z$ are in A.P.[cite: 3]\nSince $x, y, z$ are also in G.P., three positive numbers form both an A.P. and G.P. if and only if $x = y = z$[cite: 3]."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Let $a, b, c, d$ and $e$ be real numbers such that $a > b > 0$ and $c > 0$. If $\\frac{1}{a}, \\frac{1}{b}, \\frac{1}{c}$ are in A.P., $b, c, d$ are in G.P., and $c, d, e$ are in A.P., then $\\frac{ab^2}{(2a - b)^2}$ is equal to:",
+          "image": "",
+          "options": [
+            "$c$",
+            "$\\sqrt{de}$",
+            "$e$",
+            "$d$"
+          ],
+          "correctOption": 2,
+          "solution": "1) $\\frac{1}{a}, \\frac{1}{b}, \\frac{1}{c}$ in A.P. $\\implies \\frac{2}{b} = \\frac{1}{a} + \\frac{1}{c} = \\frac{a+c}{ac} \\implies 2ac = ab + bc \\implies c(2a - b) = ab \\implies c = \\frac{ab}{2a - b}$[cite: 3].\n2) $b, c, d$ in G.P. $\\implies c^2 = bd \\implies d = \\frac{c^2}{b}$[cite: 3].\n3) $c, d, e$ in A.P. $\\implies 2d = c + e \\implies e = 2d - c = \\frac{2c^2}{b} - c = c\\left(\\frac{2c - b}{b}\\right)$[cite: 3].\nSubstitute $c = \\frac{ab}{2a - b}$:\n$$e = \\frac{ab}{2a-b} \\left(\\frac{\\frac{2ab}{2a-b} - b}{b}\\right) = \\frac{ab}{2a-b} \\left(\\frac{2ab - 2ab + b^2}{b(2a-b)}\\right) = \\frac{ab}{2a-b} \\left(\\frac{b}{2a-b}\\right) = \\frac{ab^2}{(2a-b)^2}$$\nThus, $\\frac{ab^2}{(2a-b)^2} = e$[cite: 3]."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the sum of $n$, $2n$, $3n$ terms of an A.P. are $S_1, S_2, S_3$ respectively, then the value of $\\frac{S_3}{S_2 - S_1}$ is equal to:",
+          "image": "",
+          "options": [
+            "4",
+            "5",
+            "2",
+            "3"
+          ],
+          "correctOption": 3,
+          "solution": "Let the A.P. have first term $a$ and common difference $d$[cite: 3].\n$S_1 = \\frac{n}{2}[2a + (n-1)d]$\n$S_2 = \\frac{2n}{2}[2a + (2n-1)d] = n[2a + (2n-1)d]$\n$S_2 - S_1 = \\frac{n}{2}[2(2a + (2n-1)d) - (2a + (n-1)d)] = \\frac{n}{2}[2a + (3n-1)d]$[cite: 3].\nNow, $S_3 = \\frac{3n}{2}[2a + (3n-1)d] = 3(S_2 - S_1)$[cite: 3].\nTherefore, $\\frac{S_3}{S_2 - S_1} = 3$[cite: 3]."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an arithmetic series of 16 terms with first term 16, the sum is equal to the square of the last term. The common difference of the series may be:",
+          "image": "",
+          "options": [
+            "$\\frac{8}{5}$",
+            "$-\\frac{4}{5}$",
+            "0",
+            "$\\frac{2}{5}$"
+          ],
+          "correctOption": 2,
+          "solution": "Given $n = 16$, $a = 16$. Last term $T_{16} = 16 + 15d$[cite: 3].\nSum $S_{16} = \\frac{16}{2}[16 + (16 + 15d)] = 8[32 + 15d] = 256 + 120d$[cite: 3].\nGiven $S_{16} = (T_{16})^2$:\n$$256 + 120d = (16 + 15d)^2 = 256 + 480d + 225d^2$$\n$$225d^2 + 360d = 0 \\implies 45d(5d + 8) = 0$$\n$$d = 0 \\quad \\text{or} \\quad d = -\\frac{8}{5}$$\nFrom the given options, $d = 0$ is correct[cite: 3]."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the $3^{\\text{rd}}$, $6^{\\text{th}}$ and last term of an H.P. are $\\frac{1}{3}, \\frac{1}{5}, \\frac{3}{203}$, then the number of terms in the H.P. is:",
+          "image": "",
+          "options": [
+            "100",
+            "150",
+            "200",
+            "250"
+          ],
+          "correctOption": 0,
+          "solution": "The corresponding A.P. has $T_3 = 3$, $T_6 = 5$, and $T_n = \\frac{203}{3}$[cite: 3].\n$T_6 - T_3 = 3d \\implies 5 - 3 = 2 \\implies d = \\frac{2}{3}$[cite: 3].\nFirst term: $a + 2d = 3 \\implies a + 2(2/3) = 3 \\implies a = 3 - \\frac{4}{3} = \\frac{5}{3}$[cite: 3].\nLast term: $T_n = a + (n-1)d = \\frac{203}{3}$:\n$$\\frac{5}{3} + (n-1)\\frac{2}{3} = \\frac{203}{3} \\implies 5 + 2(n-1) = 203 \\implies 2(n-1) = 198 \\implies n-1 = 99 \\implies n = 100$$[cite: 3]."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Sum of an infinite number of terms of a G.P. is 20 and the sum of their squares is 100. The common ratio of the G.P. is:",
+          "image": "",
+          "options": [
+            "1/5",
+            "8/5",
+            "3/5",
+            "5"
+          ],
+          "correctOption": 2,
+          "solution": "Let the G.P. be $a, ar, ar^2, \\dots$ with $|r| < 1$[cite: 3].\n1) $S_\\infty = \\frac{a}{1-r} = 20 \\implies a = 20(1-r)$[cite: 3].\n2) Sum of squares $= \\frac{a^2}{1-r^2} = 100$[cite: 3].\nSubstitute $a^2 = 400(1-r)^2$:\n$$\\frac{400(1-r)^2}{(1-r)(1+r)} = 100 \\implies \\frac{4(1-r)}{1+r} = 1 \\implies 4 - 4r = 1 + r \\implies 5r = 3 \\implies r = \\frac{3}{5}$$[cite: 3]."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If 8 AMs are placed between 2 and 17, then the $5^{\\text{th}}$ AM is:",
+          "image": "",
+          "options": [
+            "61/3",
+            "76/3",
+            "31/3",
+            "None"
+          ],
+          "correctOption": 2,
+          "solution": "Let $a = 2$, $b = 17$, $n = 8$[cite: 3].\nCommon difference $d = \\frac{b - a}{n + 1} = \\frac{17 - 2}{8 + 1} = \\frac{15}{9} = \\frac{5}{3}$[cite: 3].\nThe $5^{\\text{th}}$ AM is $A_5 = a + 5d = 2 + 5\\left(\\frac{5}{3}\\right) = 2 + \\frac{25}{3} = \\frac{31}{3}$[cite: 3]."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the sum of $n$ terms of two Arithmetic series are in the ratio $(7n + 1) : (4n + 27)$, then their $11^{\\text{th}}$ terms are in the ratio:",
+          "image": "",
+          "options": [
+            "3/4",
+            "4/3",
+            "78/61",
+            "None"
+          ],
+          "correctOption": 1,
+          "solution": "Ratio of $n^{\\text{th}}$ terms is obtained by replacing $n$ with $2k - 1$[cite: 3].\nFor $k = 11$, replace $n = 2(11) - 1 = 21$:\n$$\\frac{T_{11}}{T'_{11}} = \\frac{7(21) + 1}{4(21) + 27} = \\frac{147 + 1}{84 + 27} = \\frac{148}{111}$$\nDividing numerator and denominator by 37 gives $\\frac{148}{111} = \\frac{4}{3}$[cite: 3]."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $A, B, C$ are acute positive angles such that $A + B + C = \\pi$ and $\\cot A \\cot B \\cot C = k$, then:",
+          "image": "",
+          "options": [
+            "$k \\le \\frac{1}{3\\sqrt{3}}$",
+            "$k \\ge \\frac{1}{3\\sqrt{3}}$",
+            "$k < \\frac{1}{9}$",
+            "$k > \\frac{1}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "In any triangle, $\\cot A \\cot B + \\cot B \\cot C + \\cot C \\cot A = 1$[cite: 3].\nBy the AM-GM inequality on the three positive terms:\n$$\\frac{\\cot A \\cot B + \\cot B \\cot C + \\cot C \\cot A}{3} \\ge \\sqrt[3]{(\\cot A \\cot B \\cot C)^2}$$\n$$\\frac{1}{3} \\ge (k^2)^{1/3} \\implies k^2 \\le \\frac{1}{27} \\implies k \\le \\frac{1}{3\\sqrt{3}}$$[cite: 3]."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $a, b, c$ are in A.P., $a + b + c = 60$, and $(a-2), b, (c+3)$ are in G.P., then a possible value of $a^2 + b^2 + c^2$ is:",
+          "image": "",
+          "options": [
+            "1218",
+            "1208",
+            "1288",
+            "1296"
+          ],
+          "correctOption": 1,
+          "solution": "Since $a, b, c$ are in A.P. and sum $= 60 \\implies 3b = 60 \\implies b = 20$[cite: 3].\nLet $a = 20 - d$ and $c = 20 + d$[cite: 3].\nGiven $(a-2), b, (c+3)$ are in G.P. $\\implies (18 - d), 20, (23 + d)$ are in G.P.[cite: 3]\n$$20^2 = (18 - d)(23 + d) \\implies 400 = 414 - 5d - d^2 \\implies d^2 + 5d - 14 = 0$$\n$$(d + 7)(d - 2) = 0 \\implies d = 2 \\quad \\text{or} \\quad d = -7$$\nFor $d = 2$: $a = 18, b = 20, c = 22 \\implies a^2 + b^2 + c^2 = 18^2 + 20^2 + 22^2 = 324 + 400 + 484 = 1208$[cite: 3]."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The sum of 3 numbers in G.P. is 42. If the first two numbers are increased by 2 and the third is decreased by 4, the resulting numbers form an A.P. Then the numbers in G.P. are:",
+          "image": "",
+          "options": [
+            "3, 6, 12",
+            "6, 12, 24",
+            "4, 8, 16",
+            "None"
+          ],
+          "correctOption": 1,
+          "solution": "Testing option (2): Numbers are $6, 12, 24$[cite: 3].\n1) G.P. check: $6 \\times 2 = 12, 12 \\times 2 = 24$ (Valid G.P. with $r = 2$)[cite: 3].\n2) Sum: $6 + 12 + 24 = 42$ (Valid)[cite: 3].\n3) Transformed numbers: $6 + 2 = 8$, $12 + 2 = 14$, $24 - 4 = 20$[cite: 3].\nSince $14 - 8 = 6$ and $20 - 14 = 6$, $8, 14, 20$ form an A.P. with common difference 6[cite: 3].\nThus, the numbers are $6, 12, 24$[cite: 3]."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\log_2(a+b) + \\log_2(c+d) \\ge 4$, then the minimum value of the expression $a + b + c + d$ is:",
+          "image": "",
+          "options": [
+            "2",
+            "4",
+            "8",
+            "None of these"
+          ],
+          "correctOption": 2,
+          "solution": "$\\log_2[(a+b)(c+d)] \\ge 4 \\implies (a+b)(c+d) \\ge 2^4 = 16$[cite: 3].\nBy the AM-GM inequality for positive quantities $(a+b)$ and $(c+d)$:\n$$\\frac{(a+b) + (c+d)}{2} \\ge \\sqrt{(a+b)(c+d)} \\ge \\sqrt{16} = 4$$\n$$a + b + c + d \\ge 8$$[cite: 3].\nMinimum value is 8 (achieved when $a+b = 4$ and $c+d = 4$)[cite: 3]."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the reciprocals of the roots of the equation $10x^3 - cx^2 - 54x - 27 = 0$ are in arithmetic progression, then the value of $c$ is:",
+          "image": "",
+          "options": [
+            "5",
+            "6",
+            "8",
+            "9"
+          ],
+          "correctOption": 3,
+          "solution": "Substitute $x = 1/y$ to find the equation whose roots are in A.P.[cite: 3]:\n$$\\frac{10}{y^3} - \\frac{c}{y^2} - \\frac{54}{y} - 27 = 0 \\implies 27y^3 + 54y^2 + cy - 10 = 0$$[cite: 3]\nLet the roots in A.P. be $\\alpha - d, \\alpha, \\alpha + d$[cite: 3].\nSum of roots: $3\\alpha = -\\frac{54}{27} = -2 \\implies \\alpha = -\\frac{2}{3}$[cite: 3].\nSince $\\alpha = -2/3$ is a root, it must satisfy the equation[cite: 3]:\n$$27\\left(-\\frac{2}{3}\\right)^3 + 54\\left(-\\frac{2}{3}\\right)^2 + c\\left(-\\frac{2}{3}\\right) - 10 = 0$$\n$$27\\left(-\\frac{8}{27}\\right) + 54\\left(\\frac{4}{9}\\right) - \\frac{2c}{3} - 10 = 0$$\n$$-8 + 24 - \\frac{2c}{3} - 10 = 0 \\implies 6 - \\frac{2c}{3} = 0 \\implies \\frac{2c}{3} = 6 \\implies c = 9$$[cite: 3]."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $p$ and $q$ are positive real numbers such that $p^2 + q^2 = 1$, then the maximum value of $p + q$ is:",
+          "image": "",
+          "options": [
+            "1.5",
+            "1.42",
+            "1.40",
+            "1.41"
+          ],
+          "correctOption": 3,
+          "solution": "By Cauchy-Schwarz inequality (or Root-Mean-Square inequality)[cite: 3]:\n$$(p + q)^2 \\le (1^2 + 1^2)(p^2 + q^2) = 2(1) = 2$$\n$$p + q \\le \\sqrt{2} \\approx 1.414$$[cite: 3].\nRounding to two decimal places gives 1.41[cite: 3]."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $a, b, c$ are positive numbers and $ab^2 c^3 = 64$, then the least value of $\\left(\\frac{1}{a} + \\frac{2}{b} + \\frac{3}{c}\\right)$ is:",
+          "image": "",
+          "options": [
+            "2",
+            "3",
+            "1",
+            "4"
+          ],
+          "correctOption": 1,
+          "solution": "Split the sum into 6 terms: $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{b} + \\frac{1}{c} + \\frac{1}{c} + \\frac{1}{c}$[cite: 3].\nApplying the AM-GM inequality on these 6 positive numbers[cite: 3]:\n$$\\frac{\\frac{1}{a} + \\frac{2}{b} + \\frac{3}{c}}{6} \\ge \\left(\\frac{1}{a} \\cdot \\frac{1}{b^2} \\cdot \\frac{1}{c^3}\\right)^{1/6} = \\left(\\frac{1}{ab^2 c^3}\\right)^{1/6}$$\n$$\\frac{\\frac{1}{a} + \\frac{2}{b} + \\frac{3}{c}}{6} \\ge \\left(\\frac{1}{64}\\right)^{1/6} = \\frac{1}{2}$$\n$$\\frac{1}{a} + \\frac{2}{b} + \\frac{3}{c} \\ge 6 \\times \\frac{1}{2} = 3$$[cite: 3]."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the sum of the first $n$ terms of the series $\\sqrt{3} + \\sqrt{75} + \\sqrt{243} + \\sqrt{507} + \\dots$ is $435\\sqrt{3}$, then $n =$ ",
+          "image": "",
+          "options": [
+            "12",
+            "14",
+            "18",
+            "15"
+          ],
+          "correctOption": 3,
+          "solution": "Simplifying the radical terms:\n$T_1 = \\sqrt{3} = 1\\sqrt{3}$\n$T_2 = \\sqrt{75} = \\sqrt{25 \\times 3} = 5\\sqrt{3}$\n$T_3 = \\sqrt{243} = \\sqrt{81 \\times 3} = 9\\sqrt{3}$\n$T_4 = \\sqrt{507} = \\sqrt{169 \\times 3} = 13\\sqrt{3}$[cite: 3]\nThis is an A.P. of multiples of $\\sqrt{3}$ with sequence $1, 5, 9, 13, \\dots$, where $a = 1, d = 4$[cite: 3].\n$$S_n = \\sqrt{3} \\sum_{k=1}^n [1 + 4(k-1)] = \\sqrt{3} \\left(\\frac{n}{2}[2(1) + (n-1)4]\\right) = \\sqrt{3} n(2n - 1)$$\nGiven $S_n = 435\\sqrt{3} \\implies n(2n - 1) = 435 \\implies 2n^2 - n - 435 = 0$[cite: 3].\n$$(n - 15)(2n + 29) = 0 \\implies n = 15$$[cite: 3]."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "Let $A_n = \\left(\\frac{3}{4}\\right) - \\left(\\frac{3}{4}\\right)^2 + \\left(\\frac{3}{4}\\right)^3 - \\dots + (-1)^{n-1}\\left(\\frac{3}{4}\\right)^n$ and $B_n = 1 - A_n$. Then find the least odd natural number $p$, so that $B_n > A_n$ for all $n \\ge p$.",
+          "image": "",
+          "correctValue": 7.0,
+          "solution": "$A_n$ is the sum of a G.P. with first term $a = 3/4$ and common ratio $r = -3/4$[cite: 3]:\n$$A_n = \\frac{3/4 (1 - (-3/4)^n)}{1 - (-3/4)} = \\frac{3/4}{7/4} (1 - (-3/4)^n) = \\frac{3}{7}\\left(1 - \\left(-\\frac{3}{4}\\right)^n\\right)$$\nWe want $B_n > A_n \\implies 1 - A_n > A_n \\implies 2A_n < 1 \\implies A_n < \\frac{1}{2}$[cite: 3].\n$$\\frac{3}{7}\\left(1 - \\left(-\\frac{3}{4}\\right)^n\\right) < \\frac{1}{2} \\implies 1 - \\left(-\\frac{3}{4}\\right)^n < \\frac{7}{6} \\implies \\left(-\\frac{3}{4}\\right)^n > -\\frac{1}{6}$$\nFor odd $n = 2m+1$, this becomes $\\left(\\frac{3}{4}\\right)^n < \\frac{1}{6}$[cite: 3].\n- For $n = 1$: $3/4 = 0.75 \\not< 1/6$\n- For $n = 3$: $27/64 \\approx 0.422 \\not< 1/6$\n- For $n = 5$: $243/1024 \\approx 0.237 \\not< 1/6 \\approx 0.167$\n- For $n = 7$: $2187/16384 \\approx 0.133 < 0.167$ (Satisfied)[cite: 3].\nThus, the least odd natural number $p = 7$[cite: 3]."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "If $x_1, x_2, \\dots, x_n$ and $\\frac{1}{h_1}, \\frac{1}{h_2}, \\dots, \\frac{1}{h_n}$ are two A.P.s such that $x_3 = h_2 = 8$ and $x_8 = h_7 = 20$, then find the value of $\\frac{x_5 h_{10}}{100}$.",
+          "image": "",
+          "correctValue": 25.6,
+          "solution": "1) For A.P. sequence $x_n$: $x_3 = 8$, $x_8 = 20 \\implies 5d_x = 12 \\implies d_x = 2.4$[cite: 3].\n$x_5 = x_3 + 2d_x = 8 + 2(2.4) = 12.8$[cite: 3].\n2) For H.P. sequence $h_n$, let $y_n = 1/h_n$ be an A.P.:\n$y_2 = 1/8$, $y_7 = 1/20 \\implies 5d_y = \\frac{1}{20} - \\frac{1}{8} = -\\frac{3}{40} \\implies d_y = -\\frac{3}{200}$[cite: 3].\n$y_{10} = y_7 + 3d_y = \\frac{1}{20} + 3\\left(-\\frac{3}{200}\\right) = \\frac{10 - 9}{200} = \\frac{1}{200} \\implies h_{10} = 200$[cite: 3].\n3) Expression value $= \\frac{x_5 h_{10}}{100} = \\frac{12.8 \\times 200}{100} = 25.6$[cite: 3]."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "If $a_1, a_2, a_3, \\dots$ and $b_1, b_2, b_3, \\dots$ are two A.P.s with common differences $\\alpha, \\beta$ respectively, and $a_1 b_1 = 120, \\alpha\\beta = -6, a_1\\beta + b_1\\alpha = 29$, then $a_7 b_7$ is equal to:",
+          "image": "",
+          "correctValue": 78.0,
+          "solution": "$a_7 = a_1 + 6\\alpha$ and $b_7 = b_1 + 6\\beta$[cite: 3].\n$$a_7 b_7 = (a_1 + 6\\alpha)(b_1 + 6\\beta) = a_1 b_1 + 6(a_1\\beta + b_1\\alpha) + 36\\alpha\\beta$$[cite: 3]\nSubstitute given values:\n$$a_7 b_7 = 120 + 6(29) + 36(-6) = 120 + 174 - 216 = 294 - 216 = 78$$[cite: 3]."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "A tree, in each year, grows 5 cm less than it grew in the previous year. If it grew half a metre in the first year, then find the height of the tree (in metres), when it ceases to grow.",
+          "image": "",
+          "correctValue": 2.75,
+          "solution": "First year growth $a = 0.5\\text{ m} = 50\\text{ cm}$[cite: 3].\nDecrease per year $d = -5\\text{ cm}$[cite: 3].\nThe tree ceases to grow when the yearly growth becomes zero: $T_n = a + (n-1)d = 0 \\implies 50 - 5(n-1) = 0 \\implies n = 11$ years[cite: 3].\nTotal growth in 11 years (in cm):\n$$S_{11} = \\frac{11}{2}[2(50) + 10(-5)] = \\frac{11}{2}[100 - 50] = \\frac{11 \\times 50}{2} = 275\\text{ cm}$$[cite: 3]\nHeight in metres $= \\frac{275}{100} = 2.75\\text{ m}$[cite: 3]."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "Let $a_1, a_2, a_3, a_4, a_5$ be a G.P. of positive real numbers such that the A.M. of $a_2$ and $a_4$ is 117 and the G.M. of $a_2$ and $a_4$ is 108. If the A.M. of $a_1$ and $a_5$ is $A$, then find $\\frac{A}{10}$.",
+          "image": "",
+          "correctValue": 14.55,
+          "solution": "1) $\\frac{a_2 + a_4}{2} = 117 \\implies a_2 + a_4 = 234$[cite: 3].\n2) $\\sqrt{a_2 a_4} = 108 \\implies a_2 a_4 = 108^2 = 11664$[cite: 3].\nRoots of $t^2 - 234t + 11664 = 0$ are $t = 162, 72$[cite: 3].\nLet $a_2 = 72, a_4 = 162 \\implies r^2 = \\frac{a_4}{a_2} = \\frac{162}{72} = \\frac{9}{4} \\implies r = \\frac{3}{2}$[cite: 3].\nThen $a_1 = \\frac{a_2}{r} = \\frac{72}{3/2} = 48$[cite: 3].\n$a_5 = a_4 r = 162 \\times \\frac{3}{2} = 243$[cite: 3].\n3) $A = \\frac{a_1 + a_5}{2} = \\frac{48 + 243}{2} = \\frac{291}{2} = 145.5$[cite: 3].\nThus, $\\frac{A}{10} = \\frac{145.5}{10} = 14.55$[cite: 3]."
+        }
+      ]
+    }
+  ]
+}
