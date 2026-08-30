@@ -3,8 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SMA Test Portal | Online CBT Mock Tests</title>
-  <meta name="description" content="NTA-standard computer-based test portal for JEE Main, JEE Advanced, and NEET aspirants with instant scoring and rank analytics." />
+  <title>SMA Test Portal | Free Online CBT Mock Tests for JEE Main, Advanced & NEET</title>
+  <meta name="description" content="NTA standard Computer Based Mock Test portal for JEE Main, JEE Advanced, and NEET aspirants. Practice chapter-wise DPPs and full mocks with instant scoring, rank predictions, and step-by-step solutions." />
+  <link rel="canonical" href="https://tests.smaphysics.com/index.html" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tests.smaphysics.com/" />
+  <meta property="og:title" content="SMA Test Portal | Free Online CBT Mock Tests for JEE & NEET" />
+  <meta property="og:description" content="NTA-standard computer-based mock tests with instant score analysis, rank prediction, and comprehensive step-by-step mathematical solutions." />
+  <meta property="og:site_name" content="SMA Physics Test Portal" />
+
+  <!-- Twitter Meta Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SMA Test Portal | CBT Mock Tests for JEE & NEET" />
+  <meta name="twitter:description" content="Practice chapter DPPs and full mock tests with instant percentile calculation and detailed step-by-step solutions." />
+
+  <!-- Google Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalApplication",
+    "name": "SMA Test Portal",
+    "url": "https://tests.smaphysics.com",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "All",
+    "description": "NTA-pattern online examination test portal for JEE Main, JEE Advanced, and NEET aspirants.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "SMA Physics",
+      "url": "https://smaphysics.com"
+    }
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -97,11 +128,26 @@
     let visibleCount = 9;
     const PAGE_SIZE = 9;
 
+    function extractTestNum(title, id) {
+      const match = (title + ' ' + id).match(/(?:DPP|Test|No)[\s\-_]*(\d+)/i);
+      return match ? parseInt(match[1], 10) : 0;
+    }
+
     async function initPortal() {
       try {
         const res = await fetch(`./assets/tests-manifest.json?t=${new Date().getTime()}`);
         if (!res.ok) throw new Error("Could not load tests-manifest.json");
-        allTests = await res.json();
+        const raw = await res.json();
+        
+        // Guarantee descending sort: newest date and highest DPP number first
+        allTests = raw.sort((a, b) => {
+          const dateDiff = (b.date || '').localeCompare(a.date || '');
+          if (dateDiff !== 0) return dateDiff;
+          const numDiff = extractTestNum(b.title, b.id) - extractTestNum(a.title, a.id);
+          if (numDiff !== 0) return numDiff;
+          return (b.title || '').localeCompare(a.title || '');
+        });
+
         applyFilters();
       } catch (err) {
         console.error(err);
@@ -176,11 +222,11 @@
               </div>
               <div>
                 <a href="${t.testUrl}" class="group block">
-  <h3 class="font-bold text-sm md:text-base text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 line-clamp-2 leading-snug transition-colors">
-    ${t.title}
-  </h3>
-</a>
-                ${t.syllabus ? `<p class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2 leading-relaxed">📚 <span class="font-semibold text-slate-700 dark:text-slate-300">Syllabus:</span> ${t.syllabus}</p>` : ''}
+                  <h3 class="font-bold text-sm md:text-base text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 line-clamp-2 leading-snug transition-colors">
+                    ${t.title}
+                  </h3>
+                </a>
+                ${t.syllabus ? `<p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5 line-clamp-2 leading-relaxed">📚 <span class="font-semibold text-slate-700 dark:text-slate-300">Syllabus:</span> ${t.syllabus}</p>` : ''}
               </div>
             </div>
             

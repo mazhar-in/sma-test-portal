@@ -1,8 +1,11 @@
 import os
 import sys
 import json
+import re
 import datetime
 import subprocess
+
+DOMAIN = "https://tests.smaphysics.com"
 
 # --- HTML Template: Self-Contained Test Engine ---
 TEST_HTML_TEMPLATE = """<!DOCTYPE html>
@@ -33,6 +36,12 @@ TEST_HTML_TEMPLATE = """<!DOCTYPE html>
   <style>
     .katex-display { overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
     .safe-bottom { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+
+    @media (max-width: 640px) {
+      #question-text { font-size: 1.05rem !important; line-height: 1.65 !important; }
+      #options-container label span { font-size: 0.95rem !important; line-height: 1.5 !important; }
+      .katex { font-size: 1.1em !important; }
+    }
   </style>
 </head>
 <body class="bg-slate-100 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col select-none antialiased">
@@ -65,7 +74,7 @@ TEST_HTML_TEMPLATE = """<!DOCTYPE html>
           <span id="marking-scheme" class="text-indigo-600 dark:text-indigo-400">Marks: +4, -1</span>
         </div>
 
-        <div id="question-text" class="text-sm md:text-lg text-slate-900 dark:text-slate-100 leading-relaxed font-normal whitespace-pre-line">
+        <div id="question-text" class="text-base md:text-lg text-slate-900 dark:text-slate-100 leading-relaxed font-normal whitespace-pre-line">
           <div class="p-8 text-center text-slate-400 animate-pulse">Loading question...</div>
         </div>
         
@@ -372,24 +381,59 @@ TEST_HTML_TEMPLATE = """<!DOCTYPE html>
 </body>
 </html>"""
 
-# --- HTML Template: Self-Contained Result Engine ---
-RESULT_HTML_TEMPLATE = """<!DOCTYPE html>
+
+def get_result_html(test_title, syllabus, exam_badge, folder_name):
+    """Generates SEO-optimized Result and Answer Key Template."""
+    canonical_url = f"{DOMAIN}/tests/{folder_name}/result.html"
+    meta_desc = f"Complete answer key and step-by-step solutions for {test_title}. Syllabus: {syllabus} - SMA Physics CBT Examination Portal."
+    
+    schema_json = {
+        "@context": "https://schema.org",
+        "@type": "Quiz",
+        "name": f"{test_title} - Answer Key & Solutions",
+        "description": meta_desc,
+        "educationalLevel": "Higher Secondary / Competitive Exam",
+        "about": {
+            "@type": "Thing",
+            "name": f"{exam_badge} Examination Preparation"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "SMA Physics Test Portal",
+            "url": DOMAIN
+        }
+    }
+
+    return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scorecard & Solutions | SMA Test Portal</title>
-  <meta name="robots" content="noindex, follow" />
+  <title>{test_title} | Solutions & Answer Key - SMA Portal</title>
+  <meta name="description" content="{meta_desc}" />
+  <link rel="canonical" href="{canonical_url}" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{canonical_url}" />
+  <meta property="og:title" content="{test_title} Solutions | SMA Test Portal" />
+  <meta property="og:description" content="{meta_desc}" />
+  <meta property="og:site_name" content="SMA Physics Test Portal" />
+
+  <!-- Structured Data / Schema.org -->
+  <script type="application/ld+json">
+  {json.dumps(schema_json, indent=2)}
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {
+    tailwind.config = {{
       darkMode: 'media',
-      theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } }
-    }
+      theme: {{ extend: {{ fontFamily: {{ sans: ['Inter', 'sans-serif'] }} }} }}
+    }}
   </script>
 
   <!-- KaTeX -->
@@ -398,7 +442,12 @@ RESULT_HTML_TEMPLATE = """<!DOCTYPE html>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
 
   <style>
-    .katex-display { overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
+    .katex-display {{ overflow-x: auto; overflow-y: hidden; padding: 4px 0; }}
+    @media (max-width: 640px) {{
+      .question-body {{ font-size: 1.05rem !important; line-height: 1.65 !important; }}
+      .solution-text {{ font-size: 0.95rem !important; line-height: 1.6 !important; }}
+      .katex {{ font-size: 1.1em !important; }}
+    }}
   </style>
 </head>
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col antialiased">
@@ -423,7 +472,7 @@ RESULT_HTML_TEMPLATE = """<!DOCTYPE html>
     <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 md:p-8 shadow-sm">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800 pb-5">
         <div>
-          <span class="text-[11px] font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400" id="res-exam-badge">Scorecard</span>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400" id="res-exam-badge">{exam_badge}</span>
           <h2 id="res-test-title" class="text-xl md:text-2xl font-bold mt-0.5 text-slate-900 dark:text-white">Calculating Result...</h2>
           <p id="res-submitted-at" class="text-xs text-slate-500 dark:text-slate-400 mt-1"></p>
         </div>
@@ -453,7 +502,7 @@ RESULT_HTML_TEMPLATE = """<!DOCTYPE html>
       </div>
     </div>
 
-    <!-- 2. Automatic All India Rank & Percentile Predictor -->
+    <!-- 2. Automatic Rank Predictor -->
     <div id="rank-predictor-card" class="bg-gradient-to-br from-indigo-950 via-slate-900 to-slate-900 text-white rounded-2xl p-5 md:p-7 shadow-lg border border-indigo-900/60 space-y-4">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-indigo-900/50 pb-3">
         <div>
@@ -495,23 +544,23 @@ RESULT_HTML_TEMPLATE = """<!DOCTYPE html>
   </main>
 
   <script>
-    function renderMathSafe() {
-      if (typeof window.renderMathInElement === 'function') {
-        try {
-          window.renderMathInElement(document.body, {
+    function renderMathSafe() {{
+      if (typeof window.renderMathInElement === 'function') {{
+        try {{
+          window.renderMathInElement(document.body, {{
             delimiters: [
-              { left: '$$', right: '$$', display: true },
-              { left: '$', right: '$', display: false }
+              {{ left: '$$', right: '$$', display: true }},
+              {{ left: '$', right: '$', display: false }}
             ],
             throwOnError: false
-          });
-        } catch (e) {
+          }});
+        }} catch (e) {{
           console.warn("KaTeX render note:", e);
-        }
-      }
-    }
+        }}
+      }}
+    }}
 
-    function calculatePredictedRank(examType, score, totalMarks) {
+    function calculatePredictedRank(examType, score, totalMarks) {{
       if (totalMarks <= 0) return;
       const percentage = Math.max(0, Math.min(100, (score / totalMarks) * 100));
       const exam = (examType || 'JEE Main').toLowerCase();
@@ -522,9 +571,9 @@ RESULT_HTML_TEMPLATE = """<!DOCTYPE html>
       let prospect = "State Colleges";
       let scaledText = "";
 
-      if (exam.includes('adv')) {
+      if (exam.includes('adv')) {{
         const scaled360 = Math.round((percentage / 100) * 360);
-        scaledText = `Scaled: ${scaled360} / 360`;
+        scaledText = `Scaled: ${{scaled360}} / 360`;
 
         if (scaled360 >= 280) estimatedRank = Math.round(1 + ((360 - scaled360) / 80) * 100);
         else if (scaled360 >= 220) estimatedRank = Math.round(100 + ((280 - scaled360) / 60) * 900);
@@ -541,9 +590,9 @@ RESULT_HTML_TEMPLATE = """<!DOCTYPE html>
         else if (estimatedRank <= 10000) prospect = "Gen IITs (Core)";
         else prospect = "Preparatory / Borderline";
 
-      } else if (exam.includes('neet')) {
+      }} else if (exam.includes('neet')) {{
         const scaled720 = Math.round((percentage / 100) * 720);
-        scaledText = `Scaled: ${scaled720} / 720`;
+        scaledText = `Scaled: ${{scaled720}} / 720`;
 
         if (scaled720 >= 700) estimatedRank = Math.round(1 + ((720 - scaled720) / 20) * 200);
         else if (scaled720 >= 650) estimatedRank = Math.round(200 + ((700 - scaled720) / 50) * 4500);
@@ -560,9 +609,9 @@ RESULT_HTML_TEMPLATE = """<!DOCTYPE html>
         else if (estimatedRank <= 35000) prospect = "Govt MBBS (State)";
         else prospect = "BDS / Semi-Govt";
 
-      } else {
+      }} else {{
         const scaled300 = Math.round((percentage / 100) * 300);
-        scaledText = `Scaled: ${scaled300} / 300`;
+        scaledText = `Scaled: ${{scaled300}} / 300`;
 
         if (scaled300 >= 280) percentile = 99.95 + ((scaled300 - 280) / 20) * 0.05;
         else if (scaled300 >= 240) percentile = 99.50 + ((scaled300 - 240) / 40) * 0.45;
@@ -579,72 +628,72 @@ RESULT_HTML_TEMPLATE = """<!DOCTYPE html>
         else if (estimatedRank <= 20000) prospect = "Top NITs / IIITs";
         else if (estimatedRank <= 45000) prospect = "Mid NITs / GFTIs";
         else prospect = "State Colleges / Core";
-      }
+      }}
 
       document.getElementById('pred-scaled-score').innerText = scaledText;
-      document.getElementById('pred-percentile').innerText = `${percentile.toFixed(2)} %ile`;
-      document.getElementById('pred-air').innerText = `~ ${estimatedRank.toLocaleString()}`;
+      document.getElementById('pred-percentile').innerText = `${{percentile.toFixed(2)}} %ile`;
+      document.getElementById('pred-air').innerText = `~ ${{estimatedRank.toLocaleString()}}`;
       document.getElementById('pred-status').innerText = status;
       document.getElementById('pred-prospect').innerText = prospect;
-      document.getElementById('pred-exam-header').innerText = `${examType || 'Exam'} Rank & Percentile Prediction`;
-    }
+      document.getElementById('pred-exam-header').innerText = `${{examType || 'Exam'}} Rank & Percentile Prediction`;
+    }}
 
-    async function loadResultPage() {
-      try {
+    async function loadResultPage() {{
+      try {{
         const res = await fetch('./test.json');
         if (!res.ok) throw new Error("HTTP " + res.status + ": test.json not found");
         const localTestData = await res.json();
 
-        const storageKey = `sma_result_${localTestData.testId}`;
+        const storageKey = `sma_result_${{localTestData.testId}}`;
         let rawData = sessionStorage.getItem(storageKey);
 
         let sessionData;
         let isPracticeMode = false;
 
-        if (rawData) {
+        if (rawData) {{
           sessionData = JSON.parse(rawData);
-        } else {
+        }} else {{
           isPracticeMode = true;
           let rawQuestions = [];
-          (localTestData.sections || []).forEach(sec => {
-            (sec.questions || []).forEach(q => rawQuestions.push({ ...q, subject: sec.subject || 'General' }));
-          });
+          (localTestData.sections || []).forEach(sec => {{
+            (sec.questions || []).forEach(q => rawQuestions.push({{ ...q, subject: sec.subject || 'General' }}));
+          }});
 
-          sessionData = {
+          sessionData = {{
             testId: localTestData.testId,
             testTitle: localTestData.title,
             exam: localTestData.exam || 'Assessment',
             totalMarks: localTestData.totalMarks || (rawQuestions.length * 4),
             questions: rawQuestions,
-            userResponses: {},
+            userResponses: {{}},
             submittedAt: 'Solutions / Practice Mode'
-          };
-        }
+          }};
+        }}
 
         evaluateAndRender(sessionData, isPracticeMode);
-      } catch (err) {
+      }} catch (err) {{
         console.error("Result Engine Error:", err);
         const container = document.getElementById('result-main');
-        if (container) {
+        if (container) {{
           container.innerHTML = `
             <div class="p-8 text-center bg-white dark:bg-slate-900 rounded-2xl border border-rose-200 dark:border-rose-900/50 shadow-sm space-y-3">
               <div class="text-rose-500 font-bold text-lg">⚠️ Unable to Load Results</div>
-              <p class="text-xs text-slate-500 font-mono">${err.message}</p>
+              <p class="text-xs text-slate-500 font-mono">${{err.message}}</p>
               <a href="../../index.html" class="inline-block mt-3 px-4 py-2 bg-indigo-600 text-white rounded-lg text-xs font-semibold">
                 Return to Portal Home
               </a>
             </div>`;
-        }
-      }
-    }
+        }}
+      }}
+    }}
 
-    function evaluateAndRender(data, isPracticeMode) {
+    function evaluateAndRender(data, isPracticeMode) {{
       let totalScore = 0;
       let correct = 0;
       let incorrect = 0;
       let unattempted = 0;
 
-      const evaluated = (data.questions || []).map((q, idx) => {
+      const evaluated = (data.questions || []).map((q, idx) => {{
         const userResp = data.userResponses[q.id]?.value;
         let status = 'unattempted';
         let marksScored = 0;
@@ -654,187 +703,239 @@ RESULT_HTML_TEMPLATE = """<!DOCTYPE html>
         const pos = q.marking?.correct || q.marking?.full || 4;
         const neg = q.marking?.incorrect !== undefined ? q.marking.incorrect : 0;
 
-        if (q.type === 'single_choice') {
+        if (q.type === 'single_choice') {{
           const correctIdx = q.correctOption !== undefined ? q.correctOption : 0;
           formattedCorrectAnswer = q.options && q.options[correctIdx] 
-            ? `(${String.fromCharCode(65 + correctIdx)}) ${q.options[correctIdx]}` 
+            ? `(${{String.fromCharCode(65 + correctIdx)}}) ${{q.options[correctIdx]}}` 
             : 'N/A';
 
-          if (userResp !== null && userResp !== undefined) {
+          if (userResp !== null && userResp !== undefined) {{
             formattedUserAnswer = q.options && q.options[userResp] 
-              ? `(${String.fromCharCode(65 + userResp)}) ${q.options[userResp]}` 
+              ? `(${{String.fromCharCode(65 + userResp)}}) ${{q.options[userResp]}}` 
               : 'Selected';
-            if (userResp === correctIdx) {
+            if (userResp === correctIdx) {{
               status = 'correct';
               marksScored = pos;
               correct++;
-            } else {
+            }} else {{
               status = 'incorrect';
               marksScored = neg;
               incorrect++;
-            }
-          } else {
+            }}
+          }} else {{
             unattempted++;
-          }
-        } else if (q.type === 'multiple_choice') {
+          }}
+        }} else if (q.type === 'multiple_choice') {{
           const correctArr = q.correctOptions || [];
           const sortedCorrect = [...correctArr].sort();
           formattedCorrectAnswer = sortedCorrect
-            .map(i => `(${String.fromCharCode(65 + i)}) ${q.options ? q.options[i] : ''}`)
+            .map(i => `(${{String.fromCharCode(65 + i)}}) ${{q.options ? q.options[i] : ''}}`)
             .join(', ');
 
-          if (Array.isArray(userResp) && userResp.length > 0) {
+          if (Array.isArray(userResp) && userResp.length > 0) {{
             const sortedUser = [...userResp].sort();
             formattedUserAnswer = sortedUser
-              .map(i => `(${String.fromCharCode(65 + i)}) ${q.options ? q.options[i] : ''}`)
+              .map(i => `(${{String.fromCharCode(65 + i)}}) ${{q.options ? q.options[i] : ''}}`)
               .join(', ');
 
-            if (JSON.stringify(sortedUser) === JSON.stringify(sortedCorrect)) {
+            if (JSON.stringify(sortedUser) === JSON.stringify(sortedCorrect)) {{
               status = 'correct';
               marksScored = pos;
               correct++;
-            } else {
+            }} else {{
               status = 'incorrect';
               marksScored = neg;
               incorrect++;
-            }
-          } else {
+            }}
+          }} else {{
             unattempted++;
-          }
-        } else if (q.type === 'numerical') {
-          formattedCorrectAnswer = `${q.correctValue}`;
-          if (userResp !== null && userResp !== undefined && userResp !== '') {
-            formattedUserAnswer = `${userResp}`;
-            if (Number(userResp) === Number(q.correctValue)) {
+          }}
+        }} else if (q.type === 'numerical') {{
+          formattedCorrectAnswer = `${{q.correctValue}}`;
+          if (userResp !== null && userResp !== undefined && userResp !== '') {{
+            formattedUserAnswer = `${{userResp}}`;
+            if (Number(userResp) === Number(q.correctValue)) {{
               status = 'correct';
               marksScored = pos;
               correct++;
-            } else {
+            }} else {{
               status = 'incorrect';
               marksScored = neg;
               incorrect++;
-            }
-          } else {
+            }}
+          }} else {{
             unattempted++;
-          }
-        }
+          }}
+        }}
 
         totalScore += marksScored;
 
-        return {
+        return {{
           ...q,
           index: idx + 1,
           status,
           marksScored,
           formattedUserAnswer,
           formattedCorrectAnswer
-        };
-      });
+        }};
+      }});
 
       const attempted = correct + incorrect;
       const accuracy = attempted > 0 ? Math.round((correct / attempted) * 100) : 0;
 
       document.getElementById('res-test-title').innerText = data.testTitle || 'Assessment Results';
-      document.getElementById('res-submitted-at').innerText = isPracticeMode ? 'Mode: Complete Solutions & Answer Key' : `Submitted on ${data.submittedAt}`;
+      document.getElementById('res-submitted-at').innerText = isPracticeMode ? 'Mode: Complete Solutions & Answer Key' : `Submitted on ${{data.submittedAt}}`;
       document.getElementById('res-score').innerText = isPracticeMode ? '--' : totalScore;
-      document.getElementById('res-total-marks').innerText = `/ ${data.totalMarks}`;
-      document.getElementById('res-accuracy').innerText = isPracticeMode ? '--' : `${accuracy}%`;
+      document.getElementById('res-total-marks').innerText = `/ ${{data.totalMarks}}`;
+      document.getElementById('res-accuracy').innerText = isPracticeMode ? '--' : `${{accuracy}}%`;
       document.getElementById('res-correct-count').innerText = isPracticeMode ? '--' : correct;
       document.getElementById('res-incorrect-count').innerText = isPracticeMode ? '--' : incorrect;
       document.getElementById('res-unattempted-count').innerText = isPracticeMode ? evaluated.length : unattempted;
 
-      if (!isPracticeMode) {
+      if (!isPracticeMode) {{
         calculatePredictedRank(data.exam, totalScore, data.totalMarks);
-      } else {
+      }} else {{
         const predCard = document.getElementById('rank-predictor-card');
         if (predCard) predCard.style.display = 'none';
-      }
+      }}
 
       const container = document.getElementById('questions-review-container');
       if (!container) return;
       container.innerHTML = '';
 
-      evaluated.forEach(q => {
+      evaluated.forEach(q => {{
         let badge = '';
         let border = 'border-l-4 border-l-slate-400';
 
-        if (!isPracticeMode) {
-          if (q.status === 'correct') {
-            badge = `<span class="px-2.5 py-1 bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-400 font-bold text-xs rounded-full border border-emerald-200 dark:border-emerald-800">Correct (+${q.marksScored})</span>`;
+        if (!isPracticeMode) {{
+          if (q.status === 'correct') {{
+            badge = `<span class="px-2.5 py-1 bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-400 font-bold text-xs rounded-full border border-emerald-200 dark:border-emerald-800">Correct (+${{q.marksScored}})</span>`;
             border = 'border-l-4 border-l-emerald-500';
-          } else if (q.status === 'incorrect') {
-            badge = `<span class="px-2.5 py-1 bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-400 font-bold text-xs rounded-full border border-rose-200 dark:border-rose-800">Incorrect (${q.marksScored})</span>`;
+          }} else if (q.status === 'incorrect') {{
+            badge = `<span class="px-2.5 py-1 bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-400 font-bold text-xs rounded-full border border-rose-200 dark:border-rose-800">Incorrect (${{q.marksScored}})</span>`;
             border = 'border-l-4 border-l-rose-500';
-          } else {
+          }} else {{
             badge = `<span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-bold text-xs rounded-full border border-slate-200 dark:border-slate-700">Unattempted (0)</span>`;
-          }
-        } else {
+          }}
+        }} else {{
           badge = `<span class="px-2.5 py-1 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-400 font-bold text-xs rounded-full border border-indigo-200 dark:border-indigo-800">Answer Key</span>`;
           border = 'border-l-4 border-l-indigo-500';
-        }
+        }}
 
         const card = document.createElement('div');
-        card.className = `bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-4 md:p-6 shadow-xs ${border} space-y-4`;
+        card.className = `bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-4 md:p-6 shadow-xs ${{border}} space-y-4`;
 
-        let questionContent = `<div class="text-slate-900 dark:text-slate-100 text-sm md:text-base leading-relaxed whitespace-pre-line">${q.question || ''}</div>`;
-        if (q.image) {
+        let questionContent = `<div class="question-body text-slate-900 dark:text-slate-100 text-base md:text-lg leading-relaxed whitespace-pre-line">${{q.question || ''}}</div>`;
+        if (q.image) {{
           questionContent += `
             <div class="my-3 max-w-md">
               <div class="inline-block rounded-xl border border-slate-200 dark:border-slate-800 bg-white p-2 shadow-xs">
-                <img src="${q.image}" alt="Question Diagram" class="max-h-52 w-auto object-contain rounded-lg" onerror="this.parentElement.style.display='none'" />
+                <img src="${{q.image}}" alt="Question Diagram" class="max-h-52 w-auto object-contain rounded-lg" onerror="this.parentElement.style.display='none'" />
               </div>
             </div>`;
-        }
+        }}
 
         card.innerHTML = `
           <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">${q.subject} • Question ${q.index}</span>
-            ${badge}
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">${{q.subject}} • Question ${{q.index}}</span>
+            ${{badge}}
           </div>
 
-          ${questionContent}
+          ${{questionContent}}
 
-          <div class="grid grid-cols-1 ${!isPracticeMode ? 'sm:grid-cols-2' : ''} gap-3 pt-2 text-xs md:text-sm">
-            ${!isPracticeMode ? `
+          <div class="grid grid-cols-1 ${{!isPracticeMode ? 'sm:grid-cols-2' : ''}} gap-3 pt-2 text-xs md:text-sm">
+            ${{!isPracticeMode ? `
               <div class="p-3 rounded-lg bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800">
                 <span class="text-[11px] font-semibold text-slate-400 block mb-1">Your Answer</span>
-                <div class="font-medium ${q.status === 'correct' ? 'text-emerald-600 dark:text-emerald-400' : q.status === 'incorrect' ? 'text-rose-600 dark:text-rose-400' : 'text-slate-500'}">
-                  ${q.formattedUserAnswer}
+                <div class="font-medium ${{q.status === 'correct' ? 'text-emerald-600 dark:text-emerald-400' : q.status === 'incorrect' ? 'text-rose-600 dark:text-rose-400' : 'text-slate-500'}}">
+                  ${{q.formattedUserAnswer}}
                 </div>
               </div>
-            ` : ''}
+            ` : ''}}
 
             <div class="p-3 rounded-lg bg-emerald-50/50 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/40">
               <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 block mb-1">Correct Answer</span>
               <div class="font-medium text-emerald-700 dark:text-emerald-300">
-                ${q.formattedCorrectAnswer}
+                ${{q.formattedCorrectAnswer}}
               </div>
             </div>
           </div>
 
-          ${(q.solution || q.solutionImage) ? `
+          ${{(q.solution || q.solutionImage) ? `
             <div class="mt-4 p-4 rounded-xl bg-indigo-50/40 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900/40 text-xs md:text-sm space-y-2">
               <span class="font-bold text-indigo-600 dark:text-indigo-400 block">Explanation & Solution:</span>
-              ${q.solution ? `<div class="text-slate-700 dark:text-slate-300 leading-relaxed whitespace-pre-line">${q.solution}</div>` : ''}
-              ${q.solutionImage ? `
+              ${{q.solution ? `<div class="solution-text text-slate-700 dark:text-slate-300 leading-relaxed whitespace-pre-line">${{q.solution}}</div>` : ''}}
+              ${{q.solutionImage ? `
                 <div class="pt-2 max-w-md">
                   <div class="inline-block rounded-lg border border-slate-200 dark:border-slate-800 bg-white p-1.5">
-                    <img src="${q.solutionImage}" alt="Solution Diagram" class="max-h-48 w-auto object-contain rounded" onerror="this.parentElement.style.display='none'" />
+                    <img src="${{q.solutionImage}}" alt="Solution Diagram" class="max-h-48 w-auto object-contain rounded" onerror="this.parentElement.style.display='none'" />
                   </div>
-                </div>` : ''}
-            </div>` : ''}
+                </div>` : ''}}
+            </div>` : ''}}
         `;
 
         container.appendChild(card);
-      });
+      }});
 
       setTimeout(renderMathSafe, 40);
-    }
+    }}
 
     window.addEventListener('DOMContentLoaded', loadResultPage);
   </script>
 </body>
 </html>"""
+
+
+def generate_sitemap(base_dir, manifest):
+    """Generates an XML sitemap for SEO."""
+    today = datetime.date.today().strftime("%Y-%m-%d")
+    sitemap_path = os.path.join(base_dir, 'sitemap.xml')
+    
+    xml_entries = [
+        f"""  <url>
+    <loc>{DOMAIN}/index.html</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>""",
+        f"""  <url>
+    <loc>{DOMAIN}/jee-main.html</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>""",
+        f"""  <url>
+    <loc>{DOMAIN}/jee-advanced.html</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>""",
+        f"""  <url>
+    <loc>{DOMAIN}/neet.html</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>"""
+    ]
+
+    for item in manifest:
+        res_url = item.get('resultUrl')
+        if res_url:
+            xml_entries.append(f"""  <url>
+    <loc>{DOMAIN}/{res_url}</loc>
+    <lastmod>{item.get('date', today)}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>""")
+
+    sitemap_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{chr(10).join(xml_entries)}
+</urlset>"""
+
+    with open(sitemap_path, 'w', encoding='utf-8') as f:
+        f.write(sitemap_content)
+    print(f"🗺️  Updated sitemap.xml with {len(xml_entries)} URLs.")
 
 
 def run_git_command(args):
@@ -843,21 +944,149 @@ def run_git_command(args):
         res = subprocess.run(args, check=True)
         return res.returncode == 0
     except subprocess.CalledProcessError as e:
-        print(f"⚠️ Git Error: Command '{' '.join(args)}' returned non-zero exit status {e.returncode}")
+        print(f"⚠️ Git Note: Command '{' '.join(args)}' returned exit status {e.returncode}")
         return False
 
 
+def extract_sort_key(item):
+    """Extracts a numeric sequence or fallback title/date for descending sort."""
+    date_str = item.get('date', '')
+    title_str = item.get('title', '')
+    folder_str = item.get('id', '')
+    
+    # Try finding DPP number or test number
+    match = re.search(r'(?:DPP|Test|No)[\s\-_]*(\d+)', title_str + ' ' + folder_str, re.IGNORECASE)
+    num = int(match.group(1)) if match else 0
+    return (date_str, num, title_str)
+
+
+def build_all_tests():
+    """Batch updates all tests with reverse chronological sorting."""
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    tests_root = os.path.join(base_dir, 'tests')
+    manifest_path = os.path.join(base_dir, 'assets', 'tests-manifest.json')
+    sitemap_path = os.path.join(base_dir, 'sitemap.xml')
+
+    if not os.path.exists(tests_root):
+        print("❌ Error: 'tests' directory not found.")
+        return
+
+    existing_dates = {}
+    if os.path.exists(manifest_path):
+        try:
+            with open(manifest_path, 'r', encoding='utf-8') as f:
+                old_m = json.load(f)
+                for item in old_m:
+                    if 'id' in item and 'date' in item:
+                        existing_dates[item['id']] = item['date']
+        except Exception:
+            pass
+
+    test_folders = [d for d in os.listdir(tests_root) if os.path.isdir(os.path.join(tests_root, d))]
+    manifest = []
+    staged_dirs = []
+
+    print(f"🔄 Found {len(test_folders)} test folders. Starting batch update...\n")
+
+    for folder_name in test_folders:
+        test_dir = os.path.join(tests_root, folder_name)
+        test_json_path = os.path.join(test_dir, 'test.json')
+
+        if not os.path.exists(test_json_path):
+            continue
+
+        try:
+            with open(test_json_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+        except Exception as e:
+            print(f"❌ Error in '{folder_name}': {e}")
+            continue
+
+        test_id = data.get('testId', folder_name)
+        title = data.get('title', 'Untitled Test')
+        exam_badge = data.get('exam', 'JEE Main')
+        duration_mins = data.get('durationMinutes', 60)
+        syllabus = data.get('syllabus') or data.get('description', '')
+
+        badge_lower = exam_badge.lower()
+        if 'adv' in badge_lower:
+            exam_cat = 'jee-adv'
+        elif 'neet' in badge_lower:
+            exam_cat = 'neet'
+        else:
+            exam_cat = 'jee-main'
+
+        total_questions = sum(len(sec.get('questions', [])) for sec in data.get('sections', []))
+
+        with open(os.path.join(test_dir, 'index.html'), 'w', encoding='utf-8') as f:
+            f.write(TEST_HTML_TEMPLATE)
+
+        with open(os.path.join(test_dir, 'result.html'), 'w', encoding='utf-8') as f:
+            f.write(get_result_html(title, syllabus, exam_badge, folder_name))
+
+        item_date = existing_dates.get(test_id, datetime.date.today().strftime("%Y-%m-%d"))
+
+        new_entry = {
+            "id": test_id,
+            "title": title,
+            "syllabus": syllabus,
+            "exam": exam_cat,
+            "badge": exam_badge,
+            "date": item_date,
+            "duration": f"{duration_mins} mins",
+            "questionsCount": total_questions,
+            "testUrl": f"tests/{folder_name}/index.html",
+            "resultUrl": f"tests/{folder_name}/result.html",
+            "isLatest": False
+        }
+        manifest.append(new_entry)
+        staged_dirs.append(os.path.relpath(test_dir, base_dir))
+        print(f"✅ Processed: [{exam_badge}] {title}")
+
+    # Sort descending: newest date/DPP number at the top
+    manifest.sort(key=extract_sort_key, reverse=True)
+
+    if manifest:
+        manifest[0]['isLatest'] = True
+
+    with open(manifest_path, 'w', encoding='utf-8') as f:
+        json.dump(manifest, f, indent=2, ensure_ascii=False)
+    print(f"\n📑 Master manifest written ({len(manifest)} tests, newest at top).")
+
+    generate_sitemap(base_dir, manifest)
+
+    print("\n🚀 Syncing batch updates with GitHub...")
+    rel_manifest = os.path.relpath(manifest_path, base_dir)
+    rel_sitemap = os.path.relpath(sitemap_path, base_dir)
+
+    run_git_command(["git", "add", rel_manifest, rel_sitemap] + staged_dirs)
+
+    status_res = subprocess.run(["git", "status", "--porcelain", rel_manifest, rel_sitemap] + staged_dirs, capture_output=True, text=True)
+    if status_res.stdout.strip():
+        commit_msg = f"Batch update: Regenerated {len(manifest)} tests with reverse order sorting and SEO"
+        run_git_command(["git", "commit", "-m", commit_msg])
+
+    stash_needed = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True).stdout.strip() != ""
+    if stash_needed:
+        subprocess.run(["git", "stash"], capture_output=True)
+
+    run_git_command(["git", "pull", "--rebase", "origin", "main"])
+
+    if stash_needed:
+        subprocess.run(["git", "stash", "pop"], capture_output=True)
+
+    push_success = run_git_command(["git", "push", "origin", "main"])
+    if push_success:
+        print(f"\n🎉 All {len(manifest)} tests successfully deployed!")
+
+
 def sync_and_push_test(folder_name):
-    """
-    1. Reads tests/<folder_name>/test.json
-    2. Writes self-contained index.html & result.html
-    3. Updates assets/tests-manifest.json
-    4. Commits and pushes changes interactively to GitHub
-    """
+    """Publish a single test and insert at the top of the manifest."""
     base_dir = os.path.dirname(os.path.abspath(__file__))
     test_dir = os.path.join(base_dir, 'tests', folder_name)
     test_json_path = os.path.join(test_dir, 'test.json')
     manifest_path = os.path.join(base_dir, 'assets', 'tests-manifest.json')
+    sitemap_path = os.path.join(base_dir, 'sitemap.xml')
 
     if not os.path.exists(test_json_path):
         print(f"❌ Error: {test_json_path} does not exist.")
@@ -870,6 +1099,7 @@ def sync_and_push_test(folder_name):
     title = data.get('title', 'Untitled Test')
     exam_badge = data.get('exam', 'JEE Main')
     duration_mins = data.get('durationMinutes', 60)
+    syllabus = data.get('syllabus') or data.get('description', '')
     
     badge_lower = exam_badge.lower()
     if 'adv' in badge_lower:
@@ -881,14 +1111,12 @@ def sync_and_push_test(folder_name):
 
     total_questions = sum(len(sec.get('questions', [])) for sec in data.get('sections', []))
 
-    # 1. Write HTML files
     with open(os.path.join(test_dir, 'index.html'), 'w', encoding='utf-8') as f:
         f.write(TEST_HTML_TEMPLATE)
 
     with open(os.path.join(test_dir, 'result.html'), 'w', encoding='utf-8') as f:
-        f.write(RESULT_HTML_TEMPLATE)
+        f.write(get_result_html(title, syllabus, exam_badge, folder_name))
 
-    # 2. Update Manifest
     manifest = []
     if os.path.exists(manifest_path):
         try:
@@ -897,15 +1125,12 @@ def sync_and_push_test(folder_name):
         except Exception:
             manifest = []
 
-    # Clean previous duplicate entries
     manifest = [item for item in manifest if item.get('id') != test_id and item.get('testUrl') != f"tests/{folder_name}/index.html"]
-
-    for item in manifest:
-        item['isLatest'] = False
 
     new_entry = {
         "id": test_id,
         "title": title,
+        "syllabus": syllabus,
         "exam": exam_cat,
         "badge": exam_badge,
         "date": datetime.date.today().strftime("%Y-%m-%d"),
@@ -913,40 +1138,53 @@ def sync_and_push_test(folder_name):
         "questionsCount": total_questions,
         "testUrl": f"tests/{folder_name}/index.html",
         "resultUrl": f"tests/{folder_name}/result.html",
-        "isLatest": True
+        "isLatest": False
     }
-    manifest.insert(0, new_entry)
+    manifest.append(new_entry)
+    manifest.sort(key=extract_sort_key, reverse=True)
+
+    for idx, item in enumerate(manifest):
+        item['isLatest'] = (idx == 0)
 
     with open(manifest_path, 'w', encoding='utf-8') as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
 
-    print(f"✅ Generated HTML & updated manifest for '{title}'")
+    generate_sitemap(base_dir, manifest)
 
-    # 3. Clean Git Staging, Commit & Push
-    print("\n🚀 Syncing changes with GitHub...")
-    run_git_command(["git", "add", "-A"])
+    print(f"✅ Published: '{title}' at top of feed.")
+    rel_test_dir = os.path.relpath(test_dir, base_dir)
+    rel_manifest = os.path.relpath(manifest_path, base_dir)
+    rel_sitemap = os.path.relpath(sitemap_path, base_dir)
     
-    status_res = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
+    run_git_command(["git", "add", rel_manifest, rel_sitemap, rel_test_dir])
+    
+    status_res = subprocess.run(["git", "status", "--porcelain", rel_manifest, rel_sitemap, rel_test_dir], capture_output=True, text=True)
     if status_res.stdout.strip():
-        commit_msg = f"Publish test: {title} ({folder_name})"
+        commit_msg = f"Publish test: {title} ({folder_name}) [SEO Updated]"
         run_git_command(["git", "commit", "-m", commit_msg])
-    else:
-        print("ℹ️ Working tree clean — no new file changes to commit.")
-    
-    push_success = run_git_command(["git", "push", "origin", "main"])
-    if push_success:
-        print(f"\n🎉 Test '{title}' successfully synced and deployed to GitHub!")
-        print("Render will deploy the updates in ~20 seconds.")
-    else:
-        print("\n⚠️ Push encountered an issue. Check connection or branch credentials.")
 
-    return True
+    stash_needed = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True).stdout.strip() != ""
+    if stash_needed:
+        subprocess.run(["git", "stash"], capture_output=True)
+        
+    run_git_command(["git", "pull", "--rebase", "origin", "main"])
+    
+    if stash_needed:
+        subprocess.run(["git", "stash", "pop"], capture_output=True)
+    
+    run_git_command(["git", "push", "origin", "main"])
 
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
-        target_folder = sys.argv[1]
+        arg = sys.argv[1].strip()
+        if arg in ['--all', '-a', 'all']:
+            build_all_tests()
+        else:
+            sync_and_push_test(arg)
     else:
-        target_folder = input("Enter test folder name under tests/ (e.g. jee-main-03-fom-trig): ").strip()
-
-    sync_and_push_test(target_folder)
+        ans = input("Enter test folder name (or type 'all' to rebuild entire test archive): ").strip()
+        if ans.lower() == 'all':
+            build_all_tests()
+        else:
+            sync_and_push_test(ans)
