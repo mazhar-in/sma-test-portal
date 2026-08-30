@@ -3,9 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scorecard & Solutions | SMA Test Portal</title>
+  <title>JEE Advanced Physics & Maths Drill | Solutions & Answer Key - SMA Portal</title>
+  <meta name="description" content="Complete answer key and step-by-step solutions for JEE Advanced Physics & Maths Drill. Syllabus:  - SMA Physics CBT Examination Portal." />
+  <link rel="canonical" href="https://tests.smaphysics.com/tests/jee-adv-01/result.html" />
 
-  <!-- Tailwind CSS & Inter Font -->
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://tests.smaphysics.com/tests/jee-adv-01/result.html" />
+  <meta property="og:title" content="JEE Advanced Physics & Maths Drill Solutions | SMA Test Portal" />
+  <meta property="og:description" content="Complete answer key and step-by-step solutions for JEE Advanced Physics & Maths Drill. Syllabus:  - SMA Physics CBT Examination Portal." />
+  <meta property="og:site_name" content="SMA Physics Test Portal" />
+
+  <!-- Structured Data / Schema.org -->
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Quiz",
+  "name": "JEE Advanced Physics & Maths Drill - Answer Key & Solutions",
+  "description": "Complete answer key and step-by-step solutions for JEE Advanced Physics & Maths Drill. Syllabus:  - SMA Physics CBT Examination Portal.",
+  "educationalLevel": "Higher Secondary / Competitive Exam",
+  "about": {
+    "@type": "Thing",
+    "name": "JEE Advanced Examination Preparation"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "SMA Physics Test Portal",
+    "url": "https://tests.smaphysics.com"
+  }
+}
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -24,11 +52,15 @@
 
   <style>
     .katex-display { overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
+    @media (max-width: 640px) {
+      .question-body { font-size: 1.05rem !important; line-height: 1.65 !important; }
+      .solution-text { font-size: 0.95rem !important; line-height: 1.6 !important; }
+      .katex { font-size: 1.1em !important; }
+    }
   </style>
 </head>
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col antialiased">
 
-  <!-- Header -->
   <header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-10 shadow-xs">
     <div class="max-w-4xl mx-auto px-4 h-14 md:h-16 flex items-center justify-between">
       <div class="flex items-center space-x-2">
@@ -43,14 +75,13 @@
     </div>
   </header>
 
-  <!-- Main Analysis Container -->
   <main id="result-main" class="max-w-4xl mx-auto px-4 py-6 md:py-8 flex-1 w-full space-y-6 md:space-y-8">
-
-    <!-- Scorecard Banner -->
+    
+    <!-- 1. Scorecard Banner -->
     <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 md:p-8 shadow-sm">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800 pb-5">
         <div>
-          <span class="text-[11px] font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Scorecard</span>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400" id="res-exam-badge">JEE Advanced</span>
           <h2 id="res-test-title" class="text-xl md:text-2xl font-bold mt-0.5 text-slate-900 dark:text-white">Calculating Result...</h2>
           <p id="res-submitted-at" class="text-xs text-slate-500 dark:text-slate-400 mt-1"></p>
         </div>
@@ -60,7 +91,6 @@
         </div>
       </div>
 
-      <!-- Performance Grid -->
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-5">
         <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800 text-center">
           <span class="text-[11px] text-slate-500">Accuracy</span>
@@ -81,17 +111,47 @@
       </div>
     </div>
 
-    <!-- Questions Breakdown & Explanations -->
+    <!-- 2. Automatic Rank Predictor -->
+    <div id="rank-predictor-card" class="bg-gradient-to-br from-indigo-950 via-slate-900 to-slate-900 text-white rounded-2xl p-5 md:p-7 shadow-lg border border-indigo-900/60 space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-indigo-900/50 pb-3">
+        <div>
+          <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+            Performance Projection
+          </span>
+          <h3 class="text-lg md:text-xl font-bold mt-1 text-white" id="pred-exam-header">Estimated All India Rank & Percentile</h3>
+        </div>
+        <span class="text-xs text-slate-400" id="pred-scaled-score">Scaled Equivalent: --</span>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center pt-1">
+        <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700/60">
+          <span class="text-[11px] text-slate-400">Est. Percentile</span>
+          <div class="text-lg md:text-xl font-black text-indigo-400 mt-0.5" id="pred-percentile">--</div>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700/60">
+          <span class="text-[11px] text-slate-400">Predicted AIR / CRL</span>
+          <div class="text-lg md:text-xl font-black text-amber-400 mt-0.5" id="pred-air">--</div>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700/60">
+          <span class="text-[11px] text-slate-400">Qualification Status</span>
+          <div class="text-sm md:text-base font-bold text-emerald-400 mt-1" id="pred-status">--</div>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700/60">
+          <span class="text-[11px] text-slate-400">Prospect / Tier</span>
+          <div class="text-xs md:text-sm font-semibold text-slate-200 mt-1" id="pred-prospect">--</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Solutions Section -->
     <section class="space-y-4">
       <h3 class="text-lg md:text-xl font-bold">Solutions & Step-by-Step Analysis</h3>
       <div id="questions-review-container" class="space-y-4 md:space-y-6">
         <div class="p-8 text-center text-slate-400 animate-pulse">Loading solutions...</div>
       </div>
     </section>
-
   </main>
 
-  <!-- Self-Contained Result Engine Script -->
   <script>
     function renderMathSafe() {
       if (typeof window.renderMathInElement === 'function') {
@@ -109,13 +169,90 @@
       }
     }
 
+    function calculatePredictedRank(examType, score, totalMarks) {
+      if (totalMarks <= 0) return;
+      const percentage = Math.max(0, Math.min(100, (score / totalMarks) * 100));
+      const exam = (examType || 'JEE Main').toLowerCase();
+
+      let percentile = 0;
+      let estimatedRank = 0;
+      let status = "Not Qualified";
+      let prospect = "State Colleges";
+      let scaledText = "";
+
+      if (exam.includes('adv')) {
+        const scaled360 = Math.round((percentage / 100) * 360);
+        scaledText = `Scaled: ${scaled360} / 360`;
+
+        if (scaled360 >= 280) estimatedRank = Math.round(1 + ((360 - scaled360) / 80) * 100);
+        else if (scaled360 >= 220) estimatedRank = Math.round(100 + ((280 - scaled360) / 60) * 900);
+        else if (scaled360 >= 170) estimatedRank = Math.round(1000 + ((220 - scaled360) / 50) * 2500);
+        else if (scaled360 >= 130) estimatedRank = Math.round(3500 + ((170 - scaled360) / 40) * 4500);
+        else if (scaled360 >= 100) estimatedRank = Math.round(8000 + ((130 - scaled360) / 30) * 7000);
+        else estimatedRank = Math.round(15000 + ((100 - scaled360) / 100) * 20000);
+
+        percentile = Math.max(10, 100 - (estimatedRank / 180000) * 100);
+        status = scaled360 >= 90 ? "Qualified for IITs" : "Below Cutoff";
+
+        if (estimatedRank <= 1000) prospect = "Top 7 IITs (CSE/ECE)";
+        else if (estimatedRank <= 4000) prospect = "Top IITs / High Branches";
+        else if (estimatedRank <= 10000) prospect = "Gen IITs (Core)";
+        else prospect = "Preparatory / Borderline";
+
+      } else if (exam.includes('neet')) {
+        const scaled720 = Math.round((percentage / 100) * 720);
+        scaledText = `Scaled: ${scaled720} / 720`;
+
+        if (scaled720 >= 700) estimatedRank = Math.round(1 + ((720 - scaled720) / 20) * 200);
+        else if (scaled720 >= 650) estimatedRank = Math.round(200 + ((700 - scaled720) / 50) * 4500);
+        else if (scaled720 >= 600) estimatedRank = Math.round(4700 + ((650 - scaled720) / 50) * 15000);
+        else if (scaled720 >= 550) estimatedRank = Math.round(20000 + ((600 - scaled720) / 50) * 30000);
+        else if (scaled720 >= 450) estimatedRank = Math.round(50000 + ((550 - scaled720) / 100) * 80000);
+        else estimatedRank = Math.round(130000 + ((450 - scaled720) / 450) * 500000);
+
+        percentile = Math.max(5, 100 - (estimatedRank / 2200000) * 100);
+        status = scaled720 >= 610 ? "AIQ 15% Safe" : scaled720 >= 530 ? "State Quota Safe" : "Private / BDS / AYUSH";
+
+        if (estimatedRank <= 1500) prospect = "AIIMS / Top Govt Medical";
+        else if (estimatedRank <= 15000) prospect = "Top State Govt MBBS";
+        else if (estimatedRank <= 35000) prospect = "Govt MBBS (State)";
+        else prospect = "BDS / Semi-Govt";
+
+      } else {
+        const scaled300 = Math.round((percentage / 100) * 300);
+        scaledText = `Scaled: ${scaled300} / 300`;
+
+        if (scaled300 >= 280) percentile = 99.95 + ((scaled300 - 280) / 20) * 0.05;
+        else if (scaled300 >= 240) percentile = 99.50 + ((scaled300 - 240) / 40) * 0.45;
+        else if (scaled300 >= 200) percentile = 99.00 + ((scaled300 - 200) / 40) * 0.50;
+        else if (scaled300 >= 160) percentile = 97.50 + ((scaled300 - 160) / 40) * 1.50;
+        else if (scaled300 >= 120) percentile = 94.00 + ((scaled300 - 120) / 40) * 3.50;
+        else if (scaled300 >= 80) percentile = 87.00 + ((scaled300 - 80) / 40) * 7.00;
+        else percentile = Math.max(10, (scaled300 / 80) * 87.00);
+
+        estimatedRank = Math.max(1, Math.round(((100 - percentile) / 100) * 1400000));
+        status = percentile >= 93.5 ? "JEE Adv Qualified" : "Below Gen Cutoff";
+
+        if (estimatedRank <= 6000) prospect = "Top NITs (CSE/ECE)";
+        else if (estimatedRank <= 20000) prospect = "Top NITs / IIITs";
+        else if (estimatedRank <= 45000) prospect = "Mid NITs / GFTIs";
+        else prospect = "State Colleges / Core";
+      }
+
+      document.getElementById('pred-scaled-score').innerText = scaledText;
+      document.getElementById('pred-percentile').innerText = `${percentile.toFixed(2)} %ile`;
+      document.getElementById('pred-air').innerText = `~ ${estimatedRank.toLocaleString()}`;
+      document.getElementById('pred-status').innerText = status;
+      document.getElementById('pred-prospect').innerText = prospect;
+      document.getElementById('pred-exam-header').innerText = `${examType || 'Exam'} Rank & Percentile Prediction`;
+    }
+
     async function loadResultPage() {
       try {
         const res = await fetch('./test.json');
-        if (!res.ok) throw new Error(`HTTP ${res.status}: test.json not found`);
+        if (!res.ok) throw new Error("HTTP " + res.status + ": test.json not found");
         const localTestData = await res.json();
 
-        // 1. Try to read active session from sessionStorage
         const storageKey = `sma_result_${localTestData.testId}`;
         let rawData = sessionStorage.getItem(storageKey);
 
@@ -125,7 +262,6 @@
         if (rawData) {
           sessionData = JSON.parse(rawData);
         } else {
-          // Fallback: If student opened result page directly to study solutions
           isPracticeMode = true;
           let rawQuestions = [];
           (localTestData.sections || []).forEach(sec => {
@@ -135,7 +271,7 @@
           sessionData = {
             testId: localTestData.testId,
             testTitle: localTestData.title,
-            exam: localTestData.exam,
+            exam: localTestData.exam || 'Assessment',
             totalMarks: localTestData.totalMarks || (rawQuestions.length * 4),
             questions: rawQuestions,
             userResponses: {},
@@ -256,7 +392,6 @@
       const attempted = correct + incorrect;
       const accuracy = attempted > 0 ? Math.round((correct / attempted) * 100) : 0;
 
-      // Populate DOM elements safely
       document.getElementById('res-test-title').innerText = data.testTitle || 'Assessment Results';
       document.getElementById('res-submitted-at').innerText = isPracticeMode ? 'Mode: Complete Solutions & Answer Key' : `Submitted on ${data.submittedAt}`;
       document.getElementById('res-score').innerText = isPracticeMode ? '--' : totalScore;
@@ -265,6 +400,13 @@
       document.getElementById('res-correct-count').innerText = isPracticeMode ? '--' : correct;
       document.getElementById('res-incorrect-count').innerText = isPracticeMode ? '--' : incorrect;
       document.getElementById('res-unattempted-count').innerText = isPracticeMode ? evaluated.length : unattempted;
+
+      if (!isPracticeMode) {
+        calculatePredictedRank(data.exam, totalScore, data.totalMarks);
+      } else {
+        const predCard = document.getElementById('rank-predictor-card');
+        if (predCard) predCard.style.display = 'none';
+      }
 
       const container = document.getElementById('questions-review-container');
       if (!container) return;
@@ -292,7 +434,7 @@
         const card = document.createElement('div');
         card.className = `bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-4 md:p-6 shadow-xs ${border} space-y-4`;
 
-        let questionContent = `<div class="text-slate-900 dark:text-slate-100 text-sm md:text-base leading-relaxed">${q.question || ''}</div>`;
+        let questionContent = `<div class="question-body text-slate-900 dark:text-slate-100 text-base md:text-lg leading-relaxed whitespace-pre-line">${q.question || ''}</div>`;
         if (q.image) {
           questionContent += `
             <div class="my-3 max-w-md">
@@ -331,7 +473,7 @@
           ${(q.solution || q.solutionImage) ? `
             <div class="mt-4 p-4 rounded-xl bg-indigo-50/40 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900/40 text-xs md:text-sm space-y-2">
               <span class="font-bold text-indigo-600 dark:text-indigo-400 block">Explanation & Solution:</span>
-              ${q.solution ? `<div class="text-slate-700 dark:text-slate-300 leading-relaxed">${q.solution}</div>` : ''}
+              ${q.solution ? `<div class="solution-text text-slate-700 dark:text-slate-300 leading-relaxed whitespace-pre-line">${q.solution}</div>` : ''}
               ${q.solutionImage ? `
                 <div class="pt-2 max-w-md">
                   <div class="inline-block rounded-lg border border-slate-200 dark:border-slate-800 bg-white p-1.5">
@@ -344,7 +486,7 @@
         container.appendChild(card);
       });
 
-      setTimeout(renderMathSafe, 50);
+      setTimeout(renderMathSafe, 40);
     }
 
     window.addEventListener('DOMContentLoaded', loadResultPage);
