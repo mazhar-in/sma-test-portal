@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-02-kinematics-1d",
+  "title": "Motion in a Straight Line (Kinematics Part 1)",
+  "syllabus": "Frame of reference, Motion in a straight line, Position-time graph, Speed and velocity, Uniform and non-uniform motion, Average speed and instantaneous velocity, Uniformly accelerated motion, Velocity-time graph, Position-time graph, Relations for uniformly accelerated motion",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A person travelling in a straight line moves with a constant velocity $v_1$ for certain distance $x$ and with a constant velocity $v_2$ for next equal distance. The average velocity $v$ is given by the relation: (NEET 2019)",
+          "image": "",
+          "options": [
+            "$\\frac{v}{2} = \\frac{v_1 + v_2}{2}$",
+            "$v = \\sqrt{v_1 v_2}$",
+            "$\\frac{2}{v} = \\frac{1}{v_1} + \\frac{1}{v_2}$",
+            "$\\frac{1}{v} = \\frac{1}{v_1} + \\frac{1}{v_2}$"
+          ],
+          "correctOption": 2,
+          "solution": "Total displacement $= 2x$.\nTime taken for first half: $t_1 = \\frac{x}{v_1}$.\nTime taken for second half: $t_2 = \\frac{x}{v_2}$.\n$$v = \\frac{2x}{t_1 + t_2} = \\frac{2x}{\\frac{x}{v_1} + \\frac{x}{v_2}} = \\frac{2}{\\frac{1}{v_1} + \\frac{1}{v_2}} \\implies \\frac{2}{v} = \\frac{1}{v_1} + \\frac{1}{v_2}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A vehicle travels half the distance with speed $v$ and the remaining distance with speed $2v$. Its average speed is: (NEET 2023)",
+          "image": "",
+          "options": [
+            "$\\frac{4v}{3}$",
+            "$\\frac{3v}{4}$",
+            "$\\frac{v}{3}$",
+            "$\\frac{2v}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$v_{\\text{avg}} = \\frac{2 v_1 v_2}{v_1 + v_2} = \\frac{2(v)(2v)}{v + 2v} = \\frac{4v^2}{3v} = \\frac{4v}{3}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ball is thrown vertically downward with a velocity of $20\\text{ m/s}$ from the top of a tower. It hits the ground after some time with a velocity of $80\\text{ m/s}$. The height of the tower is: (Take $g = 10\\text{ m/s}^2$) (NEET 2020)",
+          "image": "",
+          "options": [
+            "$360\\text{ m}$",
+            "$340\\text{ m}$",
+            "$320\\text{ m}$",
+            "$300\\text{ m}$"
+          ],
+          "correctOption": 3,
+          "solution": "Using third equation of motion: $v^2 = u^2 + 2gh$\n$$(80)^2 = (20)^2 + 2(10)h$$\n$$6400 = 400 + 20h \\implies 20h = 6000 \\implies h = 300\\text{ m}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle of unit mass undergoes one-dimensional motion such that its velocity varies according to $v(x) = \\beta x^{-2n}$, where $\\beta$ and $n$ are constants and $x$ is the position of the particle. The acceleration of the particle as a function of $x$ is: (AIPMT 2015)",
+          "image": "",
+          "options": [
+            "$-2n\\beta^2 x^{-4n-1}$",
+            "$-2n\\beta^2 x^{-2n-1}$",
+            "$-2n\\beta^2 x^{-4n+1}$",
+            "$-2\\beta^2 x^{-2n+1}$"
+          ],
+          "correctOption": 0,
+          "solution": "$a = v \\frac{dv}{dx} = (\\beta x^{-2n}) \\frac{d}{dx}(\\beta x^{-2n}) = (\\beta x^{-2n}) [\\beta (-2n) x^{-2n-1}] = -2n\\beta^2 x^{-4n-1}$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle starts its motion from rest under the action of a constant force. If the distance covered in first 10 seconds is $S_1$ and that covered in the first 20 seconds is $S_2$, then: (NEET 2011)",
+          "image": "",
+          "options": [
+            "$S_2 = 2S_1$",
+            "$S_2 = 3S_1$",
+            "$S_2 = 4S_1$",
+            "$S_2 = S_1$"
+          ],
+          "correctOption": 2,
+          "solution": "Distance from rest under constant acceleration: $S = \\frac{1}{2}at^2$\n$$S_1 = \\frac{1}{2}a(10)^2 = 50a$$\n$$S_2 = \\frac{1}{2}a(20)^2 = 200a = 4(50a) = 4S_1$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A boy standing at the top of a tower of $20\\text{ m}$ height drops a stone. Assuming $g = 10\\text{ m/s}^2$, the velocity with which it hits the ground is: (AIPMT 2011)",
+          "image": "",
+          "options": [
+            "$10.0\\text{ m/s}$",
+            "$20.0\\text{ m/s}$",
+            "$40.0\\text{ m/s}$",
+            "$5.0\\text{ m/s}$"
+          ],
+          "correctOption": 1,
+          "solution": "Using $v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 20} = \\sqrt{400} = 20\\text{ m/s}$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ball is dropped from a high rise platform at $t = 0$ starting from rest. After 6 seconds another ball is thrown downwards from the same platform with a speed $v$. The two balls meet at $t = 18\\text{ s}$. What is the value of $v$? (Take $g = 10\\text{ m/s}^2$) (AIPMT 2010)",
+          "image": "",
+          "options": [
+            "$75\\text{ m/s}$",
+            "$55\\text{ m/s}$",
+            "$40\\text{ m/s}$",
+            "$60\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Distance travelled by 1st ball in $18\\text{ s}$: $h = \\frac{1}{2}g(18)^2 = \\frac{1}{2}(10)(324) = 1620\\text{ m}$.\nTime of flight for 2nd ball: $t = 18 - 6 = 12\\text{ s}$.\n$$h = vt + \\frac{1}{2}gt^2 \\implies 1620 = v(12) + \\frac{1}{2}(10)(12)^2$$\n$$1620 = 12v + 720 \\implies 12v = 900 \\implies v = 75\\text{ m/s}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves along a straight line such that its displacement $x$ at any time $t$ is given by $x = (t^3 - 6t^2 + 3t + 4)\\text{ m}$. The velocity when acceleration is zero is: (AIPMT 1994)",
+          "image": "",
+          "options": [
+            "$3\\text{ m/s}$",
+            "$-12\\text{ m/s}$",
+            "$42\\text{ m/s}$",
+            "$-9\\text{ m/s}$"
+          ],
+          "correctOption": 3,
+          "solution": "$v = \\frac{dx}{dt} = 3t^2 - 12t + 3$\n$a = \\frac{dv}{dt} = 6t - 12$\nFor $a = 0 \\implies 6t - 12 = 0 \\implies t = 2\\text{ s}$.\nAt $t = 2\\text{ s}$: $v = 3(2)^2 - 12(2) + 3 = 12 - 24 + 3 = -9\\text{ m/s}$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The displacement $x$ of a particle moving in one dimension under the action of a constant force is related to time $t$ by $t = \\sqrt{x} + 3$, where $x$ is in metres and $t$ in seconds. Find the displacement of the particle when its velocity is zero: (AIPMT 2007)",
+          "image": "",
+          "options": [
+            "$0\\text{ m}$",
+            "$6\\text{ m}$",
+            "$12\\text{ m}$",
+            "$4\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Given $\\sqrt{x} = t - 3 \\implies x = (t - 3)^2 = t^2 - 6t + 9$.\nVelocity $v = \\frac{dx}{dt} = 2t - 6$.\n$v = 0 \\implies 2t - 6 = 0 \\implies t = 3\\text{ s}$.\nAt $t = 3\\text{ s}$, displacement $x = (3 - 3)^2 = 0\\text{ m}$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves a distance $x$ in time $t$ according to the equation $x = (t + 5)^{-1}$. The acceleration of particle is proportional to: (AIPMT 2010)",
+          "image": "",
+          "options": [
+            "$(\\text{velocity})^{3/2}$",
+            "$(\\text{distance})^2$",
+            "$(\\text{distance})^{-2}$",
+            "$(\\text{velocity})^{2/3}$"
+          ],
+          "correctOption": 0,
+          "solution": "$v = \\frac{dx}{dt} = -(t + 5)^{-2} = -x^2 \\implies x = (-v)^{1/2}$\n$a = \\frac{d^2x}{dt^2} = 2(t + 5)^{-3} = 2x^3 = 2[(-v)^{1/2}]^3 = 2(-v)^{3/2} \\propto (\\text{velocity})^{3/2}$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of the distances travelled by a freely falling body in the $1^{\\text{st}}$, $2^{\\text{nd}}$, $3^{\\text{rd}}$ and $4^{\\text{th}}$ second is: (NEET 2022)",
+          "image": "",
+          "options": [
+            "$1 : 2 : 3 : 4$",
+            "$1 : 4 : 9 : 16$",
+            "$1 : 3 : 5 : 7$",
+            "$1 : 1 : 1 : 1$"
+          ],
+          "correctOption": 2,
+          "solution": "Distance travelled in $n^{\\text{th}}$ second: $S_n = u + \\frac{a}{2}(2n - 1)$.\nFor body released from rest ($u = 0$): $S_n \\propto (2n - 1)$.\nRatio for $n = 1, 2, 3, 4$ is $1 : 3 : 5 : 7$ (Galileo's law of odd numbers)."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A car accelerates from rest at a constant rate $\\alpha$ for some time, after which it decelerates at a constant rate $\\beta$ and comes to rest. If total time elapsed is $t$, then the maximum velocity acquired by the car is: (AIPMT 1994)",
+          "image": "",
+          "options": [
+            "$\\left(\\frac{\\alpha^2 + \\beta^2}{\\alpha\\beta}\\right)t$",
+            "$\\left(\\frac{\\alpha^2 - \\beta^2}{\\alpha\\beta}\\right)t$",
+            "$\\left(\\frac{\\alpha + \\beta}{\\alpha\\beta}\\right)t$",
+            "$\\left(\\frac{\\alpha\\beta}{\\alpha + \\beta}\\right)t$"
+          ],
+          "correctOption": 3,
+          "solution": "$v_{\\text{max}} = \\alpha t_1 = \\beta t_2 \\implies t_1 = \\frac{v_{\\text{max}}}{\\alpha},\\; t_2 = \\frac{v_{\\text{max}}}{\\beta}$.\nTotal time $t = t_1 + t_2 = v_{\\text{max}}\\left(\\frac{1}{\\alpha} + \\frac{1}{\\beta}\\right) = v_{\\text{max}}\\left(\\frac{\\alpha+\\beta}{\\alpha\\beta}\\right) \\implies v_{\\text{max}} = \\left(\\frac{\\alpha\\beta}{\\alpha+\\beta}\\right)t$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The total distance travelled by the car in the above question (accelerating at $\\alpha$ and decelerating at $\\beta$ for total time $t$) is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}\\left(\\frac{\\alpha\\beta}{\\alpha + \\beta}\\right)t^2$",
+            "$\\frac{1}{2}\\left(\\frac{\\alpha + \\beta}{\\alpha\\beta}\\right)t^2$",
+            "$\\left(\\frac{\\alpha\\beta}{\\alpha + \\beta}\\right)t^2$",
+            "$\\frac{1}{4}\\left(\\frac{\\alpha\\beta}{\\alpha + \\beta}\\right)t^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Area under $v\\text{-}t$ triangle graph: $S = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times t \\times v_{\\text{max}} = \\frac{1}{2}\\left(\\frac{\\alpha\\beta}{\\alpha + \\beta}\\right)t^2$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The displacement-time graph of two moving particles make angles of $30^\\circ$ and $45^\\circ$ with the time-axis. The ratio of their velocities is: (NEET 2022)",
+          "image": "",
+          "options": [
+            "$1 : \\sqrt{3}$",
+            "$\\sqrt{3} : 1$",
+            "$1 : 3$",
+            "$3 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Velocity is given by the slope of position-time graph ($v = \\tan\\theta$).\n$$\\frac{v_1}{v_2} = \\frac{\\tan 30^\\circ}{\\tan 45^\\circ} = \\frac{1/\\sqrt{3}}{1} = 1 : \\sqrt{3}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following graphs cannot possibly represent one-dimensional motion of a particle?",
+          "image": "",
+          "options": [
+            "Position-time graph where a single time corresponds to two distinct positions",
+            "Velocity-time graph with a continuous single value at every instant",
+            "Position-time graph with positive constant slope",
+            "Speed-time graph where speed is strictly positive"
+          ],
+          "correctOption": 0,
+          "solution": "A particle cannot be present at two different positions at the exact same instant of time in one-dimensional motion."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body is thrown vertically upwards with velocity $u$. The distance travelled by it in the fifth and sixth seconds are equal. The velocity of projection $u$ is: (Take $g = 9.8\\text{ m/s}^2$)",
+          "image": "",
+          "options": [
+            "$49.0\\text{ m/s}$",
+            "$98.0\\text{ m/s}$",
+            "$24.5\\text{ m/s}$",
+            "$19.6\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Distance in 5th sec (ascending) equals distance in 6th sec (descending) means the particle reaches maximum height at exactly $t = 5\\text{ s}$.\nAt max height $v = 0 = u - gt \\implies u = g \\times 5 = 9.8 \\times 5 = 49\\text{ m/s}$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ball is thrown vertically upward. It has a speed of $10\\text{ m/s}$ when it has reached one half of its maximum height. How high does the ball rise? (Take $g = 10\\text{ m/s}^2$) (AIPMT 2005)",
+          "image": "",
+          "options": [
+            "$10\\text{ m}$",
+            "$15\\text{ m}$",
+            "$20\\text{ m}$",
+            "$25\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let max height be $H$. At $h = H/2$, velocity $v = 10\\text{ m/s}$.\nUsing $v^2 = u^2 - 2g(H/2) \\implies 100 = u^2 - gH$.\nSince at max height $0 = u^2 - 2gH \\implies u^2 = 2gH$.\n$$100 = 2gH - gH = gH \\implies H = \\frac{100}{10} = 10\\text{ m}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A car moves from $X$ to $Y$ with a uniform speed $v_u$ and returns to $X$ with a uniform speed $v_d$. The average speed for this round trip is: (AIPMT 2007)",
+          "image": "",
+          "options": [
+            "$\\sqrt{v_u v_d}$",
+            "$\\frac{v_u v_d}{v_u + v_d}$",
+            "$\\frac{v_u + v_d}{2}$",
+            "$\\frac{2v_u v_d}{v_u + v_d}$"
+          ],
+          "correctOption": 3,
+          "solution": "Harmonic mean of speeds for equal forward and backward distances: $v_{\\text{avg}} = \\frac{2 v_u v_d}{v_u + v_d}$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The position $x$ of a particle with respect to time $t$ along the x-axis is given by $x = 9t^2 - t^3$ where $x$ is in metres and $t$ in seconds. What will be the position of this particle when it achieves maximum speed along the positive x-direction? (AIPMT 2007)",
+          "image": "",
+          "options": [
+            "$54\\text{ m}$",
+            "$81\\text{ m}$",
+            "$24\\text{ m}$",
+            "$32\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "$v = \\frac{dx}{dt} = 18t - 3t^2$.\nFor maximum speed, $\\frac{dv}{dt} = 0 \\implies 18 - 6t = 0 \\implies t = 3\\text{ s}$.\nAt $t = 3\\text{ s}$, position $x = 9(3)^2 - (3)^3 = 81 - 27 = 54\\text{ m}$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves along the x-axis. Its coordinate is given by $x = 2 - 5t + 6t^2$. The initial velocity of the particle is:",
+          "image": "",
+          "options": [
+            "$-5\\text{ m/s}$",
+            "$2\\text{ m/s}$",
+            "$6\\text{ m/s}$",
+            "$12\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Velocity $v = \\frac{dx}{dt} = -5 + 12t$.\nInitial velocity is at $t = 0$: $v(0) = -5\\text{ m/s}$."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the velocity of a particle is $v = At + Bt^2$, where $A$ and $B$ are constants, then the distance travelled by it between $1\\text{ s}$ and $2\\text{ s}$ is: (NEET 2016)",
+          "image": "",
+          "options": [
+            "$\\frac{3}{2}A + 4B$",
+            "$3A + 7B$",
+            "$\\frac{3}{2}A + \\frac{7}{3}B$",
+            "$\\frac{A}{2} + \\frac{B}{3}$"
+          ],
+          "correctOption": 2,
+          "solution": "$$S = \\int_{1}^{2} v\\,dt = \\int_{1}^{2} (At + Bt^2)\\,dt = \\left[ \\frac{At^2}{2} + \\frac{Bt^3}{3} \\right]_1^2 = \\frac{A}{2}(4-1) + \\frac{B}{3}(8-1) = \\frac{3}{2}A + \\frac{7}{3}B$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A stone falls freely under gravity. It covers distances $h_1, h_2$ and $h_3$ in the first 5 seconds, the next 5 seconds and the next 5 seconds respectively. The relation between $h_1, h_2$ and $h_3$ is: (NEET 2013)",
+          "image": "",
+          "options": [
+            "$h_1 = 2h_2 = 3h_3$",
+            "$h_1 = \\frac{h_2}{3} = \\frac{h_3}{5}$",
+            "$h_2 = 3h_1$ and $h_3 = 3h_2$",
+            "$h_1 = h_2 = h_3$"
+          ],
+          "correctOption": 1,
+          "solution": "Distances covered in consecutive equal time intervals starting from rest are in ratio $1 : 3 : 5$.\n$$h_1 : h_2 : h_3 = 1 : 3 : 5 \\implies h_1 = \\frac{h_2}{3} = \\frac{h_3}{5}$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two bodies $A$ (of mass $1\\text{ kg}$) and $B$ (of mass $3\\text{ kg}$) are dropped from heights of $16\\text{ m}$ and $25\\text{ m}$ respectively. The ratio of the time taken by them to reach the ground is: (AIPMT 2006)",
+          "image": "",
+          "options": [
+            "$4 : 5$",
+            "$5 : 4$",
+            "$12 : 5$",
+            "$5 : 12$"
+          ],
+          "correctOption": 0,
+          "solution": "Time of free fall from rest is independent of mass and given by $t = \\sqrt{\\frac{2h}{g}}$.\n$$\\frac{t_A}{t_B} = \\sqrt{\\frac{h_A}{h_B}} = \\sqrt{\\frac{16}{25}} = \\frac{4}{5}$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body starts from rest and moves with uniform acceleration. Which of the following graphs represents the variation of its kinetic energy ($K$) with distance covered ($s$)?",
+          "image": "",
+          "options": [
+            "A straight line passing through origin with positive slope",
+            "A parabola opening upward",
+            "A rectangular hyperbola",
+            "A horizontal straight line parallel to distance axis"
+          ],
+          "correctOption": 0,
+          "solution": "From work-energy theorem or $v^2 = 2as$:\n$K = \\frac{1}{2}mv^2 = \\frac{1}{2}m(2as) = (ma)s = F \\cdot s$.\nThus, $K \\propto s$, which represents a straight line passing through the origin."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body moving with uniform acceleration has a velocity of $12\\text{ cm/s}$ when its x-coordinate is $3.00\\text{ cm}$. If its x-coordinate $2\\text{ s}$ later is $-5.00\\text{ cm}$, what is its acceleration?",
+          "image": "",
+          "options": [
+            "$-16\\text{ cm/s}^2$",
+            "$-8\\text{ cm/s}^2$",
+            "$8\\text{ cm/s}^2$",
+            "$16\\text{ cm/s}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Displacement $S = x_f - x_i = -5.00 - 3.00 = -8.00\\text{ cm}$.\nUsing $S = ut + \\frac{1}{2}at^2$:\n$$-8 = 12(2) + \\frac{1}{2}a(2)^2 \\implies -8 = 24 + 2a \\implies 2a = -32 \\implies a = -16\\text{ cm/s}^2$$"
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The area under the acceleration-time graph represents:",
+          "image": "",
+          "options": [
+            "Displacement",
+            "Change in velocity",
+            "Instantaneous velocity",
+            "Distance travelled"
+          ],
+          "correctOption": 1,
+          "solution": "Since $a = \\frac{dv}{dt} \\implies \\Delta v = \\int a\\,dt$. Thus, the area under the $a\\text{-}t$ curve gives the change in velocity."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A bullet from a gun is fired on a rectangular wooden block with velocity $u$. When the bullet travels $24\\text{ cm}$ through the block, its velocity becomes $u/3$. If the block offers constant resistance, how much further does it penetrate before coming to rest?",
+          "image": "",
+          "options": [
+            "$3\\text{ cm}$",
+            "$6\\text{ cm}$",
+            "$9\\text{ cm}$",
+            "$12\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using $v^2 - u^2 = 2as$:\n$(u/3)^2 - u^2 = 2a(24) \\implies -\\frac{8}{9}u^2 = 48a \\implies 2a = -\\frac{u^2}{27}$.\nFor the remaining distance $x$ to stop ($0^2 - (u/3)^2 = 2ax$):\n$$-\\frac{u^2}{9} = 2ax = \\left(-\\frac{u^2}{27}\\right)x \\implies x = 3\\text{ cm}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body is dropped from height $H$. If $t_1$ is the time taken to fall through first half of the height and $t_2$ is the time taken to fall through second half, then:",
+          "image": "",
+          "options": [
+            "$t_1 = t_2$",
+            "$t_1 > t_2$",
+            "$t_1 < t_2$",
+            "$t_1 = 2t_2$"
+          ],
+          "correctOption": 1,
+          "solution": "For first half: $H/2 = \\frac{1}{2}gt_1^2 \\implies t_1 = \\sqrt{\\frac{H}{g}}$.\nTotal time: $t_1 + t_2 = \\sqrt{\\frac{2H}{g}} = \\sqrt{2}t_1 \\implies t_2 = (\\sqrt{2} - 1)t_1 \\approx 0.414 t_1$.\nHence, $t_1 > t_2$ because the body speeds up continuously under gravity."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An object accelerates uniformly from rest at $2\\text{ m/s}^2$ for $5\\text{ s}$, then travels at constant speed for $10\\text{ s}$, and finally decelerates uniformly to rest in $5\\text{ s}$. The total distance travelled is:",
+          "image": "",
+          "options": [
+            "$150\\text{ m}$",
+            "$125\\text{ m}$",
+            "$100\\text{ m}$",
+            "$175\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Max velocity $v = 0 + 2(5) = 10\\text{ m/s}$.\n$s_1 = \\frac{1}{2}(2)(5)^2 = 25\\text{ m}$.\n$s_2 = 10 \\times 10 = 100\\text{ m}$.\n$s_3 = \\frac{1}{2}(10)(5) = 25\\text{ m}$.\nTotal distance $S = 25 + 100 + 25 = 150\\text{ m}$."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following statements is ALWAYS TRUE for a body moving along a straight line?",
+          "image": "",
+          "options": [
+            "If speed is zero, acceleration must be zero",
+            "Magnitude of displacement is equal to total distance travelled",
+            "Magnitude of instantaneous velocity is equal to instantaneous speed",
+            "Average velocity is equal to average speed"
+          ],
+          "correctOption": 2,
+          "solution": "Instantaneous speed is defined as $|\\vec{v}| = |\\frac{d\\vec{r}}{dt}| = \\frac{ds}{dt}$, which is always equal to the magnitude of instantaneous velocity."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves along straight line such that its velocity is given by $v = 3t^2 - 6t$. The total distance travelled by the particle from $t = 0$ to $t = 3\\text{ s}$ is:",
+          "image": "",
+          "options": [
+            "$0\\text{ m}$",
+            "$4\\text{ m}$",
+            "$8\\text{ m}$",
+            "$12\\text{ m}$"
+          ],
+          "correctOption": 2,
+          "solution": "$v = 3t(t - 2) = 0$ at $t = 2\\text{ s}$. Velocity changes direction at $t = 2\\text{ s}$.\n$s(t) = \\int (3t^2 - 6t)\\,dt = t^3 - 3t^2$.\nAt $t = 0$: $s = 0\\text{ m}$.\nAt $t = 2$: $s = 8 - 12 = -4\\text{ m} \\implies \\text{distance}_1 = 4\\text{ m}$.\nAt $t = 3$: $s = 27 - 27 = 0\\text{ m} \\implies \\text{distance}_2 = |-4 - 0| = 4\\text{ m}$.\nTotal distance $= 4 + 4 = 8\\text{ m}$."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The displacement of a particle is given by $y = a + bt + ct^2 - dt^4$. The initial acceleration of the particle is:",
+          "image": "",
+          "options": [
+            "$2c$",
+            "$-4d$",
+            "$b$",
+            "$2c - 12d$"
+          ],
+          "correctOption": 0,
+          "solution": "$v = \\frac{dy}{dt} = b + 2ct - 4dt^3$.\n$a = \\frac{dv}{dt} = 2c - 12dt^2$.\nAt $t = 0$, $a_0 = 2c$."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body thrown vertically up with initial velocity $u$ reaches maximum height $h$. The time taken to reach a height equal to $\\frac{3}{4}h$ during its upward journey is:",
+          "image": "",
+          "options": [
+            "$\\frac{u}{2g}$",
+            "$\\frac{u}{g}$",
+            "$\\frac{u}{4g}$",
+            "$\\frac{3u}{4g}$"
+          ],
+          "correctOption": 0,
+          "solution": "$h = \\frac{u^2}{2g}$. Height $s = \\frac{3}{4}h = \\frac{3u^2}{8g}$.\nUsing $v^2 = u^2 - 2gs = u^2 - 2g\\left(\\frac{3u^2}{8g}\\right) = u^2 - \\frac{3}{4}u^2 = \\frac{u^2}{4} \\implies v = \\frac{u}{2}$.\nUsing $v = u - gt \\implies \\frac{u}{2} = u - gt \\implies gt = \\frac{u}{2} \\implies t = \\frac{u}{2g}$."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A car travelling at a speed of $60\\text{ km/h}$ can be stopped by brakes after at least $20\\text{ m}$. What will be the minimum stopping distance if the same car is travelling at $120\\text{ km/h}$ under the same braking force?",
+          "image": "",
+          "options": [
+            "$40\\text{ m}$",
+            "$60\\text{ m}$",
+            "$80\\text{ m}$",
+            "$100\\text{ m}$"
+          ],
+          "correctOption": 2,
+          "solution": "Stopping distance $s = \\frac{u^2}{2a} \\propto u^2$.\nWhen speed is doubled ($120/60 = 2$), the stopping distance increases by a factor of $2^2 = 4$.\n$$s = 4 \\times 20\\text{ m} = 80\\text{ m}$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The velocity-time graph of a body is a straight line not parallel to the time axis. This indicates that the body is moving with:",
+          "image": "",
+          "options": [
+            "Uniform acceleration",
+            "Non-uniform acceleration",
+            "Uniform velocity",
+            "Zero acceleration"
+          ],
+          "correctOption": 0,
+          "solution": "Slope of $v\\text{-}t$ graph gives acceleration. A straight line has a constant non-zero slope, implying uniform acceleration."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A balloon is rising vertically upwards with a constant velocity of $10\\text{ m/s}$. When it is at a height of $40\\text{ m}$ from the ground, a stone is dropped from it. The time taken by stone to reach the ground is: (Take $g = 10\\text{ m/s}^2$)",
+          "image": "",
+          "options": [
+            "$4\\text{ s}$",
+            "$2\\text{ s}$",
+            "$5\\text{ s}$",
+            "$8\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Taking upward direction as positive: $u = +10\\text{ m/s}$, $s = -40\\text{ m}$, $a = -g = -10\\text{ m/s}^2$.\n$$s = ut + \\frac{1}{2}at^2 \\implies -40 = 10t - 5t^2$$\n$$5t^2 - 10t - 40 = 0 \\implies t^2 - 2t - 8 = 0$$\n$$(t - 4)(t + 2) = 0 \\implies t = 4\\text{ s}$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body is moving with uniform acceleration along a straight line. If its velocities at points $A$ and $B$ are $u$ and $v$ respectively, then its velocity at the midpoint of $AB$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{u + v}{2}$",
+            "$\\sqrt{\\frac{u^2 + v^2}{2}}$",
+            "$\\sqrt{uv}$",
+            "$\\sqrt{\\frac{v^2 - u^2}{2}}$"
+          ],
+          "correctOption": 1,
+          "solution": "Let distance between $A$ and $B$ be $2s$, so midpoint is at distance $s$.\n$v_m^2 - u^2 = 2as$ and $v^2 - v_m^2 = 2as$.\nEquating both: $v_m^2 - u^2 = v^2 - v_m^2 \\implies 2v_m^2 = u^2 + v^2 \\implies v_m = \\sqrt{\\frac{u^2 + v^2}{2}}$."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body covers $12\\text{ m}$ in the $2^{\\text{nd}}$ second and $20\\text{ m}$ in the $4^{\\text{th}}$ second of its motion with uniform acceleration. How much distance will it cover in the $5^{\\text{th}}$ second?",
+          "image": "",
+          "options": [
+            "$24\\text{ m}$",
+            "$28\\text{ m}$",
+            "$32\\text{ m}$",
+            "$26\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "$S_n = u + \\frac{a}{2}(2n - 1)$.\n$S_2 = u + \\frac{3}{2}a = 12$\n$S_4 = u + \\frac{7}{2}a = 20$\nSubtracting: $2a = 8 \\implies a = 4\\text{ m/s}^2$.\n$u = 12 - \\frac{3}{2}(4) = 6\\text{ m/s}$.\n$$S_5 = u + \\frac{a}{2}(2 \\times 5 - 1) = 6 + \\frac{4}{2}(9) = 6 + 18 = 24\\text{ m}$$"
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves in a straight line with uniform acceleration. If it covers equal distances in successive time intervals $t_1, t_2, t_3$, then the ratio $\\frac{1}{t_1} - \\frac{1}{t_2} + \\frac{1}{t_3}$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{t_1 + t_2 + t_3}$",
+            "$0$",
+            "$\\frac{3}{t_1 + t_2 + t_3}$",
+            "$\\frac{2}{t_2}$"
+          ],
+          "correctOption": 1,
+          "solution": "For equal displacements $d$ covered in successive times $t_1, t_2, t_3$ with uniform acceleration $a$:\nAverage velocities are $v_1 = d/t_1$, $v_2 = d/t_2$, $v_3 = d/t_3$. Since average velocities over equal displacement intervals form an A.P. with respect to the reciprocal times, $\\frac{1}{t_1} - \\frac{1}{t_2} + \\frac{1}{t_3} = 0$ holds identically under the property of symmetric interval divisions."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves such that its position $x$ is given by $x = t^3 - 3t^2 + 2$. The acceleration of the particle when it momentarily comes to rest ($v = 0$) at $t > 0$ is:",
+          "image": "",
+          "options": [
+            "$6\\text{ m/s}^2$",
+            "$-6\\text{ m/s}^2$",
+            "$12\\text{ m/s}^2$",
+            "$0\\text{ m/s}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "$v = \\frac{dx}{dt} = 3t^2 - 6t = 3t(t - 2)$.\nFor $t > 0$, $v = 0 \\implies t = 2\\text{ s}$.\n$a = \\frac{dv}{dt} = 6t - 6$.\nAt $t = 2\\text{ s}$, $a = 6(2) - 6 = 6\\text{ m/s}^2$."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following frames of reference is non-inertial?",
+          "image": "",
+          "options": [
+            "A train moving with constant velocity on a straight horizontal track",
+            "A car rounding a sharp curved bend with constant speed",
+            "A space shuttle moving in deep space with its engines switched off",
+            "A stationary laboratory frame"
+          ],
+          "correctOption": 1,
+          "solution": "A car rounding a curve has centripetal acceleration ($a = v^2/R \\neq 0$). Any accelerated frame of reference is a non-inertial frame."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The displacement-time equation of a particle is given by $x = 4\\cos(\\pi t)$. What is the distance covered by the particle in the first $1.5\\text{ seconds}$?",
+          "image": "",
+          "options": [
+            "$4\\text{ m}$",
+            "$8\\text{ m}$",
+            "$12\\text{ m}$",
+            "$16\\text{ m}$"
+          ],
+          "correctOption": 2,
+          "solution": "At $t = 0$: $x = 4\\text{ m}$.\nAt $t = 1\\text{ s}$ (turns at extreme): $x = 4\\cos(\\pi) = -4\\text{ m} \\implies \\text{distance} = 8\\text{ m}$.\nAt $t = 1.5\\text{ s}$: $x = 4\\cos(1.5\\pi) = 0\\text{ m} \\implies \\text{distance} = |-4 - 0| = 4\\text{ m}$.\nTotal distance covered $= 8 + 4 = 12\\text{ m}$."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Water drops fall at regular intervals from a tap $5\\text{ m}$ above the ground. The third drop is leaving the tap at the instant the first drop touches the ground. How high is the second drop above the ground at that instant? (Take $g = 10\\text{ m/s}^2$)",
+          "image": "",
+          "options": [
+            "$1.25\\text{ m}$",
+            "$2.50\\text{ m}$",
+            "$3.75\\text{ m}$",
+            "$4.00\\text{ m}$"
+          ],
+          "correctOption": 2,
+          "solution": "Time for first drop to reach ground: $h = \\frac{1}{2}gt^2 \\implies 5 = 5t^2 \\implies t = 1\\text{ s}$.\nSince drops fall at equal intervals $\\Delta t$, 1st drop fell $2\\Delta t = 1\\text{ s} \\implies \\Delta t = 0.5\\text{ s}$.\nAt this instant, 2nd drop has been falling for $t = 0.5\\text{ s}$:\nDistance fallen $= \\frac{1}{2}(10)(0.5)^2 = 1.25\\text{ m}$.\nHeight above ground $= 5 - 1.25 = 3.75\\text{ m}$."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves with constant acceleration and $v_1, v_2, v_3$ are the average velocities in three consecutive equal time intervals $t$. The ratio $(v_1 - v_2) : (v_2 - v_3)$ is:",
+          "image": "",
+          "options": [
+            "$1 : 1$",
+            "$1 : 2$",
+            "$2 : 1$",
+            "$1 : 3$"
+          ],
+          "correctOption": 0,
+          "solution": "Let initial velocity be $u$ and acceleration be $a$.\nAverage velocity in an interval is the instantaneous velocity at the midpoint of that interval.\n$v_1 = u + a(t/2)$\n$v_2 = u + a(3t/2) \\implies v_2 - v_1 = at$\n$v_3 = u + a(5t/2) \\implies v_3 - v_2 = at$\nThus, $(v_1 - v_2) : (v_2 - v_3) = (-at) : (-at) = 1 : 1$."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle is thrown vertically upwards. Its velocity at half of the maximum height is $10\\sqrt{2}\\text{ m/s}$. The maximum height attained by it is: (Take $g = 10\\text{ m/s}^2$)",
+          "image": "",
+          "options": [
+            "$20\\text{ m}$",
+            "$10\\text{ m}$",
+            "$15\\text{ m}$",
+            "$25\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "At half maximum height $(h = H/2)$: $v = \\frac{u}{\\sqrt{2}}$.\nGiven $v = 10\\sqrt{2}\\text{ m/s} \\implies u = 10\\sqrt{2} \\times \\sqrt{2} = 20\\text{ m/s}$.\nMaximum height $H = \\frac{u^2}{2g} = \\frac{(20)^2}{2(10)} = \\frac{400}{20} = 20\\text{ m}$."
+        }
+      ]
+    }
+  ]
+}
