@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-10-rotational-motion-2",
+  "title": "Rotational Motion - 2",
+  "syllabus": "Moment of inertia, Radius of gyration, Values of moments of inertia for simple geometrical objects, Parallel and perpendicular axes theorems and their applications, Equilibrium of rigid bodies, Rigid body rotation and equations of rotational motion, Comparison of linear and rotational motions",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of the radius of gyration of a thin uniform disc about an axis passing through its centre and normal to its plane to the radius of gyration of the disc about its diameter is: (NEET 2022)",
+          "image": "",
+          "options": [
+            "$2 : 1$",
+            "$\\sqrt{2} : 1$",
+            "$4 : 1$",
+            "$1 : \\sqrt{2}$"
+          ],
+          "correctOption": 1,
+          "solution": "1) About axis passing through centre and perpendicular to plane: $I_1 = \\frac{1}{2}MR^2 = M k_1^2 \\implies k_1 = \\frac{R}{\\sqrt{2}}$.\n2) About a diameter: $I_2 = \\frac{1}{4}MR^2 = M k_2^2 \\implies k_2 = \\frac{R}{2}$.\n$$\\frac{k_1}{k_2} = \\frac{R/\\sqrt{2}}{R/2} = \\frac{2}{\\sqrt{2}} = \\frac{\\sqrt{2}}{1} = \\sqrt{2} : 1$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of the radius of gyration of a solid sphere of mass $M$ and radius $R$ about its own axis to the radius of gyration of the thin hollow sphere of same mass and radius about its axis is: (NEET 2023)",
+          "image": "",
+          "options": [
+            "$\\sqrt{3} : \\sqrt{5}$",
+            "$3 : 5$",
+            "$5 : 3$",
+            "$\\sqrt{5} : \\sqrt{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "For solid sphere: $I_1 = \\frac{2}{5}MR^2 = M k_1^2 \\implies k_1 = \\sqrt{\\frac{2}{5}}R$.\nFor thin hollow sphere: $I_2 = \\frac{2}{3}MR^2 = M k_2^2 \\implies k_2 = \\sqrt{\\frac{2}{3}}R$.\n$$\\frac{k_1}{k_2} = \\frac{\\sqrt{2/5}}{\\sqrt{2/3}} = \\sqrt{\\frac{3}{5}} = \\sqrt{3} : \\sqrt{5}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A solid sphere is rotating freely about its symmetry axis in free space. The radius of the sphere is increased keeping its mass constant. Which of the following physical quantities would remain constant for the sphere? (NEET 2018)",
+          "image": "",
+          "options": [
+            "Angular velocity",
+            "Moment of inertia",
+            "Rotational kinetic energy",
+            "Angular momentum"
+          ],
+          "correctOption": 3,
+          "solution": "Since no external torque acts on the system in free space ($\\tau_{\\text{ext}} = 0$), the total angular momentum $L = I\\omega$ remains strictly conserved."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The radius of gyration of a uniform circular disc of radius $R$ about an axis touching its edge and perpendicular to the plane of the disc is: (NEET 2021)",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{3}{2}} R$",
+            "$\\sqrt{\\frac{2}{3}} R$",
+            "$\\frac{R}{\\sqrt{2}}$",
+            "$\\frac{\\sqrt{3}}{2} R$"
+          ],
+          "correctOption": 0,
+          "solution": "By parallel axes theorem:\n$$I = I_{\\text{cm}} + M d^2 = \\frac{1}{2}MR^2 + MR^2 = \\frac{3}{2}MR^2$$\n$$M k^2 = \\frac{3}{2}MR^2 \\implies k = \\sqrt{\\frac{3}{2}}R$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Three identical thin rods, each of mass $M$ and length $L$, are joined together to form an equilateral triangle $ABC$. The moment of inertia of the system about an axis coinciding with one side ($AB$) of the triangle is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}ML^2$",
+            "$\\frac{2}{3}ML^2$",
+            "$\\frac{3}{4}ML^2$",
+            "$ML^2$"
+          ],
+          "correctOption": 0,
+          "solution": "1) For rod $AB$ lying along the axis: $I_1 = 0$.\n2) For rods $AC$ and $BC$, each inclined at $60^\\circ$ to the axis and attached at one end:\n$$I_2 = I_3 = \\frac{1}{3}ML^2\\sin^2 60^\\circ = \\frac{1}{3}ML^2\\left(\\frac{\\sqrt{3}}{2}\\right)^2 = \\frac{1}{3}ML^2\\left(\\frac{3}{4}\\right) = \\frac{1}{4}ML^2$$\n$$I_{\\text{total}} = I_1 + I_2 + I_3 = 0 + \\frac{1}{4}ML^2 + \\frac{1}{4}ML^2 = \\frac{1}{2}ML^2$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The moment of inertia of a uniform circular ring of mass $M$ and radius $R$ about a tangent in the plane of the ring is: (NEET 2011)",
+          "image": "",
+          "options": [
+            "$\\frac{3}{2}MR^2$",
+            "$\\frac{1}{2}MR^2$",
+            "$2MR^2$",
+            "$\\frac{5}{4}MR^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Moment of inertia of a ring about a diameter: $I_{\\text{dia}} = \\frac{1}{2}MR^2$.\nBy parallel axes theorem, about a tangent in the plane of the ring:\n$$I = I_{\\text{dia}} + MR^2 = \\frac{1}{2}MR^2 + MR^2 = \\frac{3}{2}MR^2$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A solid cylinder of mass $M$ and radius $R$ has moment of inertia $I_1$ about its own geometrical axis and $I_2$ about an axis perpendicular to its length and passing through its centre of mass. If length of cylinder is $L = \\sqrt{3}R$, the ratio $I_1 / I_2$ is:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$2$",
+            "$\\frac{1}{2}$",
+            "$\\frac{4}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "$I_1 = \\frac{1}{2}MR^2$.\n$I_2 = M\\left(\\frac{R^2}{4} + \\frac{L^2}{12}\\right) = M\\left(\\frac{R^2}{4} + \\frac{3R^2}{12}\\right) = M\\left(\\frac{R^2}{4} + \\frac{R^2}{4}\\right) = \\frac{1}{2}MR^2$.\n$$\\frac{I_1}{I_2} = \\frac{\\frac{1}{2}MR^2}{\\frac{1}{2}MR^2} = 1$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A wheel starts from rest and rotates with constant angular acceleration to reach an angular velocity of $20\\text{ rad/s}$ in $4\\text{ s}$. The total angle turned by the wheel in this interval is:",
+          "image": "",
+          "options": [
+            "$40\\text{ rad}$",
+            "$80\\text{ rad}$",
+            "$20\\text{ rad}$",
+            "$10\\text{ rad}$"
+          ],
+          "correctOption": 0,
+          "solution": "Angular acceleration $\\alpha = \\frac{\\omega - \\omega_0}{t} = \\frac{20 - 0}{4} = 5\\text{ rad/s}^2$.\n$$\\theta = \\omega_0 t + \\frac{1}{2}\\alpha t^2 = 0 + \\frac{1}{2}(5)(4)^2 = \\frac{1}{2}(5)(16) = 40\\text{ rad}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The perpendicular axes theorem of moment of inertia is applicable to:",
+          "image": "",
+          "options": [
+            "Planar lamina only",
+            "3D spherical bodies only",
+            "Any 3D object of arbitrary shape",
+            "Cylindrical bodies only"
+          ],
+          "correctOption": 0,
+          "solution": "The theorem of perpendicular axes ($I_z = I_x + I_y$) is valid strictly for two-dimensional planar laminar bodies."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Four identical solid spheres each of mass $M$ and radius $R$ are placed at the four corners of a square of side $a$. The moment of inertia of the system about one side of the square as axis is:",
+          "image": "",
+          "options": [
+            "$\\frac{8}{5}MR^2 + 2Ma^2$",
+            "$\\frac{8}{5}MR^2 + 4Ma^2$",
+            "$\\frac{4}{5}MR^2 + 2Ma^2$",
+            "$\\frac{8}{5}MR^2 + Ma^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Two spheres lie on the chosen side axis: $I_1 = 2 \\times \\left(\\frac{2}{5}MR^2\\right) = \\frac{4}{5}MR^2$.\nTwo spheres are at a perpendicular distance $a$ from the axis: $I_2 = 2 \\times \\left(\\frac{2}{5}MR^2 + Ma^2\\right) = \\frac{4}{5}MR^2 + 2Ma^2$.\n$$I_{\\text{total}} = I_1 + I_2 = \\frac{8}{5}MR^2 + 2Ma^2$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The moment of inertia of a uniform thin rod of mass $M$ and length $L$ about an axis perpendicular to the rod and passing through one of its ends is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{3}ML^2$",
+            "$\\frac{1}{12}ML^2$",
+            "$\\frac{1}{2}ML^2$",
+            "$\\frac{7}{12}ML^2$"
+          ],
+          "correctOption": 0,
+          "solution": "By parallel axes theorem:\n$$I_{\\text{end}} = I_{\\text{cm}} + M\\left(\\frac{L}{2}\\right)^2 = \\frac{1}{12}ML^2 + \\frac{1}{4}ML^2 = \\frac{4}{12}ML^2 = \\frac{1}{3}ML^2$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A constant torque of $1000\\text{ N}\\cdot\\text{m}$ turns a wheel of moment of inertia $200\\text{ kg}\\cdot\\text{m}^2$ about an axis through its center. Its angular velocity after $3\\text{ s}$ starting from rest is:",
+          "image": "",
+          "options": [
+            "$15\\text{ rad/s}$",
+            "$10\\text{ rad/s}$",
+            "$5\\text{ rad/s}$",
+            "$30\\text{ rad/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Angular acceleration $\\alpha = \\frac{\\tau}{I} = \\frac{1000}{200} = 5\\text{ rad/s}^2$.\nUsing $\\omega = \\omega_0 + \\alpha t = 0 + 5(3) = 15\\text{ rad/s}$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following physical quantities is the rotational analogue of mass in linear motion?",
+          "image": "",
+          "options": [
+            "Moment of Inertia",
+            "Torque",
+            "Angular momentum",
+            "Radius of gyration"
+          ],
+          "correctOption": 0,
+          "solution": "Moment of inertia measures the rotational inertia of a rigid body, serving as the rotational counterpart to inertial mass."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The moment of inertia of a uniform circular disc of radius $R$ and mass $M$ about an axis passing through its diameter is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{4}MR^2$",
+            "$\\frac{1}{2}MR^2$",
+            "$MR^2$",
+            "$\\frac{5}{4}MR^2$"
+          ],
+          "correctOption": 0,
+          "solution": "By the perpendicular axes theorem, for a flat circular disc: $I_z = I_x + I_y = 2 I_{\\text{dia}}$.\n$$I_{\\text{dia}} = \\frac{I_z}{2} = \\frac{\\frac{1}{2}MR^2}{2} = \\frac{1}{4}MR^2$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The radius of gyration of a solid sphere of radius $R$ about a tangential axis is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{7}{5}} R$",
+            "$\\sqrt{\\frac{2}{5}} R$",
+            "$\\sqrt{\\frac{5}{7}} R$",
+            "$\\frac{7}{5} R$"
+          ],
+          "correctOption": 0,
+          "solution": "About a tangential axis, by parallel axes theorem:\n$$I = I_{\\text{cm}} + MR^2 = \\frac{2}{5}MR^2 + MR^2 = \\frac{7}{5}MR^2$$\n$$M k^2 = \\frac{7}{5}MR^2 \\implies k = \\sqrt{\\frac{7}{5}} R$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A thin uniform rectangular plate of mass $M$ has sides of length $a$ and $b$. Its moment of inertia about an axis passing through its centre of mass and perpendicular to its plane is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{12}M(a^2 + b^2)$",
+            "$\\frac{1}{6}M(a^2 + b^2)$",
+            "$\\frac{1}{3}M(a^2 + b^2)$",
+            "$\\frac{1}{4}M(a^2 + b^2)$"
+          ],
+          "correctOption": 0,
+          "solution": "By perpendicular axes theorem: $I_x = \\frac{1}{12}Mb^2$ and $I_y = \\frac{1}{12}Ma^2$.\n$$I_z = I_x + I_y = \\frac{1}{12}M(a^2 + b^2)$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A flywheel rotates with a uniform angular deceleration. Its angular speed decreases from $600\\text{ rpm}$ to $300\\text{ rpm}$ in $10\\text{ s}$. The number of revolutions made by it during this time is:",
+          "image": "",
+          "options": [
+            "$75$",
+            "$100$",
+            "$50$",
+            "$150$"
+          ],
+          "correctOption": 0,
+          "solution": "Average angular speed $\\omega_{\\text{avg}} = \\frac{\\omega_1 + \\omega_2}{2} = \\frac{600 + 300}{2} = 450\\text{ rpm}$.\nNumber of revolutions $N = \\omega_{\\text{avg}} \\times t = 450\\text{ rpm} \\times \\left(\\frac{10}{60}\\text{ min}\\right) = \\frac{450}{6} = 75\\text{ revolutions}$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For a rigid body in complete mechanical equilibrium:",
+          "image": "",
+          "options": [
+            "Both net external force and net external torque must be zero",
+            "Only net external force must be zero",
+            "Only net external torque must be zero",
+            "Rotational kinetic energy must be constant and non-zero"
+          ],
+          "correctOption": 0,
+          "solution": "Complete mechanical equilibrium requires translational equilibrium ($\\sum \\vec{F}_{\\text{ext}} = \\vec{0}$) and rotational equilibrium ($\\sum \\vec{\\tau}_{\\text{ext}} = \\vec{0}$)."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two circular discs $A$ and $B$ have equal masses and equal thicknesses. If $d_A$ and $d_B$ are their respective densities with $d_A > d_B$, then the moments of inertia $I_A$ and $I_B$ about their central normal axes are related as:",
+          "image": "",
+          "options": [
+            "$I_A < I_B$",
+            "$I_A > I_B$",
+            "$I_A = I_B$",
+            "$I_A / I_B = d_A / d_B$"
+          ],
+          "correctOption": 0,
+          "solution": "Mass $M = \\pi R^2 t d \\implies R^2 = \\frac{M}{\\pi t d} \\propto \\frac{1}{d}$.\nMoment of inertia $I = \\frac{1}{2}MR^2 \\propto R^2 \\propto \\frac{1}{d}$.\nSince $d_A > d_B \\implies I_A < I_B$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A thin wire of length $L$ and uniform mass $M$ is bent into a circular ring. The moment of inertia of this ring about a tangential axis in its plane is:",
+          "image": "",
+          "options": [
+            "$\\frac{3ML^2}{8\\pi^2}$",
+            "$\\frac{ML^2}{2\\pi^2}$",
+            "$\\frac{3ML^2}{4\\pi^2}$",
+            "$\\frac{ML^2}{8\\pi^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Circumference $2\\pi R = L \\implies R = \\frac{L}{2\\pi}$.\nMoment of inertia of ring about tangent in its plane: $I = \\frac{3}{2}MR^2$.\n$$I = \\frac{3}{2}M\\left(\\frac{L}{2\\pi}\\right)^2 = \\frac{3ML^2}{8\\pi^2}$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The moment of inertia of a hollow sphere of mass $M$ and radius $R$ about an axis tangential to its surface is:",
+          "image": "",
+          "options": [
+            "$\\frac{5}{3}MR^2$",
+            "$\\frac{2}{3}MR^2$",
+            "$\\frac{7}{5}MR^2$",
+            "$\\frac{4}{3}MR^2$"
+          ],
+          "correctOption": 0,
+          "solution": "By parallel axes theorem:\n$$I = I_{\\text{cm}} + MR^2 = \\frac{2}{3}MR^2 + MR^2 = \\frac{5}{3}MR^2$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A light rigid rod of length $L$ has two point masses $m$ and $2m$ attached at its two ends. The moment of inertia of the system about an axis perpendicular to the rod and passing through its center of mass is:",
+          "image": "",
+          "options": [
+            "$\\frac{2}{3}mL^2$",
+            "$\\frac{1}{3}mL^2$",
+            "$\\frac{1}{2}mL^2$",
+            "$mL^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Position of CM from mass $m$: $r_1 = \\frac{2m}{m + 2m}L = \\frac{2}{3}L$.\nPosition of CM from mass $2m$: $r_2 = \\frac{m}{m + 2m}L = \\frac{1}{3}L$.\n$$I = m r_1^2 + (2m) r_2^2 = m\\left(\\frac{2}{3}L\\right)^2 + 2m\\left(\\frac{1}{3}L\\right)^2 = m\\frac{4L^2}{9} + 2m\\frac{L^2}{9} = \\frac{6}{9}mL^2 = \\frac{2}{3}mL^2$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A uniform meter scale of mass $m$ is balanced on a knife edge placed at the $50\\text{ cm}$ mark. When two coins, each of mass $5\\text{ g}$, are put on top of the scale at the $12\\text{ cm}$ mark, the scale is found to be balanced at $45\\text{ cm}$. The mass $m$ of the meter scale is:",
+          "image": "",
+          "options": [
+            "$66.0\\text{ g}$",
+            "$55.0\\text{ g}$",
+            "$72.5\\text{ g}$",
+            "$45.0\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "Fulcrum is at $45\\text{ cm}$.\nDistance of coins (mass $= 10\\text{ g}$) from fulcrum: $45 - 12 = 33\\text{ cm}$.\nCenter of gravity of meter scale ($50\\text{ cm}$) from fulcrum: $50 - 45 = 5\\text{ cm}$.\nBalancing torques about fulcrum:\n$$10\\text{ g} \\times 33\\text{ cm} = m \\times 5\\text{ cm} \\implies 5m = 330 \\implies m = 66\\text{ g}$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following objects of same mass $M$ and radius $R$ has the LARGEST moment of inertia about its symmetry axis?",
+          "image": "",
+          "options": [
+            "Thin circular ring (about central normal axis)",
+            "Circular disc (about central normal axis)",
+            "Solid cylinder (about geometrical axis)",
+            "Solid sphere (about diameter)"
+          ],
+          "correctOption": 0,
+          "solution": "- Thin ring: $I = 1.0 MR^2$\n- Disc / Solid cylinder: $I = 0.5 MR^2$\n- Solid sphere: $I = 0.4 MR^2$\nThus, the ring has the largest moment of inertia."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A solid disc of mass $2\\text{ kg}$ and radius $0.2\\text{ m}$ is rotating at $600\\text{ rpm}$. The kinetic energy of rotation of the disc is: $(\\pi^2 \\approx 10)$",
+          "image": "",
+          "options": [
+            "$80\\text{ J}$",
+            "$40\\text{ J}$",
+            "$160\\text{ J}$",
+            "$20\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\omega = 600 \\times \\frac{2\\pi}{60} = 20\\pi\\text{ rad/s}$$\n$$I = \\frac{1}{2}MR^2 = \\frac{1}{2}(2)(0.2)^2 = 0.04\\text{ kg}\\cdot\\text{m}^2$$\n$$K_{\\text{rot}} = \\frac{1}{2}I\\omega^2 = \\frac{1}{2}(0.04)(20\\pi)^2 = 0.02(400\\pi^2) = 8\\pi^2 \\approx 8(10) = 80\\text{ J}$$"
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A wheel having moment of inertia $2\\text{ kg}\\cdot\\text{m}^2$ about its axis has an initial angular velocity of $50\\text{ rad/s}$. A constant tangential braking force brings it to rest in $10\\text{ s}$. The work done by the braking torque is:",
+          "image": "",
+          "options": [
+            "$-2500\\text{ J}$",
+            "$-5000\\text{ J}$",
+            "$2500\\text{ J}$",
+            "$-1250\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "By Work-Energy Theorem for rotational motion:\n$$W = \\Delta K = K_f - K_i = 0 - \\frac{1}{2}I\\omega_0^2 = -\\frac{1}{2}(2)(50)^2 = -2500\\text{ J}$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The moment of inertia of a uniform circular disc about an axis passing through its centre and perpendicular to its plane is $I_0$. Its moment of inertia about an axis passing through a point on its edge and in its plane is:",
+          "image": "",
+          "options": [
+            "$\\frac{5}{2}I_0$",
+            "$\\frac{5}{4}I_0$",
+            "$3I_0$",
+            "$\\frac{3}{2}I_0$"
+          ],
+          "correctOption": 1,
+          "solution": "Given $I_0 = \\frac{1}{2}MR^2 \\implies MR^2 = 2I_0$.\nMoment of inertia about a diameter: $I_{\\text{dia}} = \\frac{1}{4}MR^2 = \\frac{I_0}{2}$.\nBy parallel axes theorem, about a tangent in its plane:\n$$I = I_{\\text{dia}} + MR^2 = \\frac{I_0}{2} + 2I_0 = \\frac{5}{2}I_0 = \\frac{5}{4}(2I_0) = \\frac{5}{4}MR^2 = \\frac{5}{4}(2I_0) \\implies \\frac{5}{4}MR^2 = \\frac{5}{2}I_0$$ (written as $\\frac{5}{4}MR^2$). In terms of $I_0$, $I = \\frac{I_0}{2} + 2I_0 = \\frac{5}{2}I_0$, which equals $\\frac{5}{4}(2I_0) = \\frac{5}{4}MR^2$."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If a ladder of mass $M$ and length $L$ leans against a frictionless vertical wall at an angle $\\theta$ with the horizontal floor, the minimum coefficient of static friction $\\mu_s$ at the floor to prevent slipping is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2\\tan\\theta}$",
+            "$\\frac{1}{\\tan\\theta}$",
+            "$\\frac{\\tan\\theta}{2}$",
+            "$\\frac{2}{\\tan\\theta}$"
+          ],
+          "correctOption": 0,
+          "solution": "Vertical force balance: $N_f = Mg$.\nHorizontal force balance: $f_s = N_w$.\nTorque about base on the floor: $N_w (L\\sin\\theta) - Mg\\left(\\frac{L}{2}\\cos\\theta\\right) = 0 \\implies N_w = \\frac{Mg}{2\\tan\\theta}$.\nFor no slipping: $f_s \\le \\mu_s N_f \\implies \\frac{Mg}{2\\tan\\theta} \\le \\mu_s Mg \\implies \\mu_s \\ge \\frac{1}{2\\tan\\theta}$."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A motor rotates an axle with a constant power $P$. The torque $\\tau$ delivered by the motor when the axle rotates at angular speed $\\omega$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{P}{\\omega}$",
+            "$P\\omega$",
+            "$\\frac{P}{\\omega^2}$",
+            "$P^2\\omega$"
+          ],
+          "correctOption": 0,
+          "solution": "Rotational power is given by $P = \\tau\\omega \\implies \\tau = \\frac{P}{\\omega}$."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The moment of inertia of a solid cone of mass $M$ and base radius $R$ about its central vertical symmetry axis is:",
+          "image": "",
+          "options": [
+            "$\\frac{3}{10}MR^2$",
+            "$\\frac{1}{2}MR^2$",
+            "$\\frac{3}{5}MR^2$",
+            "$\\frac{1}{10}MR^2$"
+          ],
+          "correctOption": 0,
+          "solution": "By integration of circular disc elements along the height of the cone, the moment of inertia of a uniform solid cone about its central axis is $I = \\frac{3}{10}MR^2$."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The radius of gyration $k$ of a rigid body depends upon:",
+          "image": "",
+          "options": [
+            "Distribution of mass and location of axis of rotation",
+            "Total mass of the body only",
+            "Angular velocity of the body",
+            "Magnitude of applied torque"
+          ],
+          "correctOption": 0,
+          "solution": "$k = \\sqrt{I/M}$. It depends strictly on the geometric distribution of mass relative to the chosen axis of rotation and is independent of the body's total mass, speed, or applied forces."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A circular ring of mass $M$ and radius $R$ is rotating about its central normal axis with angular speed $\\omega$. Two point bodies each of mass $m$ are gently attached to diametrically opposite points of the ring. The new angular speed of the ring is:",
+          "image": "",
+          "options": [
+            "$\\left(\\frac{M}{M + 2m}\\right)\\omega$",
+            "$\\left(\\frac{M + 2m}{M}\\right)\\omega$",
+            "$\\left(\\frac{M}{M + m}\\right)\\omega$",
+            "$\\left(\\frac{m}{M + 2m}\\right)\\omega$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial angular momentum $L_i = (MR^2)\\omega$.\nFinal moment of inertia $I_f = MR^2 + 2(mR^2) = (M + 2m)R^2$.\nBy conservation of angular momentum:\n$$(MR^2)\\omega = (M + 2m)R^2 \\omega' \\implies \\omega' = \\left(\\frac{M}{M + 2m}\\right)\\omega$$"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A solid sphere and a solid cylinder of same mass and radius are rotating about their natural axes of symmetry with same angular speed. The ratio of their rotational kinetic energies is:",
+          "image": "",
+          "options": [
+            "$4 : 5$",
+            "$5 : 4$",
+            "$2 : 5$",
+            "$1 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\frac{K_{\\text{sphere}}}{K_{\\text{cylinder}}} = \\frac{\\frac{1}{2}I_s\\omega^2}{\\frac{1}{2}I_c\\omega^2} = \\frac{\\frac{2}{5}MR^2}{\\frac{1}{2}MR^2} = \\frac{4}{5} = 4 : 5$$"
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A thin hollow cylinder open at both ends has mass $M$ and radius $R$. Its moment of inertia about its longitudinal cylinder axis is:",
+          "image": "",
+          "options": [
+            "$MR^2$",
+            "$\\frac{1}{2}MR^2$",
+            "$\\frac{2}{3}MR^2$",
+            "$\\frac{3}{2}MR^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Every mass element $dm$ of the hollow thin cylinder is located at the exact same perpendicular distance $R$ from the axis. Thus, $I = \\int R^2\\,dm = R^2 \\int dm = MR^2$."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves with uniform speed along a straight line. What is the relation between its linear displacement $s$ and its angular displacement $\\theta$ measured from an axis passing through the point of closest approach $d$?",
+          "image": "",
+          "options": [
+            "$s = d\\tan\\theta$",
+            "$s = d\\sin\\theta$",
+            "$s = d\\theta$",
+            "$s = d\\cos\\theta$"
+          ],
+          "correctOption": 0,
+          "solution": "From trigonometry of right triangle formed by point of closest approach $d$, position $s$, and angle $\\theta$: $\\tan\\theta = \\frac{s}{d} \\implies s = d\\tan\\theta$."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ring and a disc of same mass and same radius have radii of gyration $k_r$ and $k_d$ about their respective central perpendicular axes. The ratio $k_r / k_d$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{2} : 1$",
+            "$1 : \\sqrt{2}$",
+            "$2 : 1$",
+            "$1 : 2$"
+          ],
+          "correctOption": 0,
+          "solution": "For ring: $I_r = MR^2 = M k_r^2 \\implies k_r = R$.\nFor disc: $I_d = \\frac{1}{2}MR^2 = M k_d^2 \\implies k_d = \\frac{R}{\\sqrt{2}}$.\n$$\\frac{k_r}{k_d} = \\frac{R}{R/\\sqrt{2}} = \\sqrt{2} : 1$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two thin uniform identical rods, each of mass $M$ and length $L$, are joined perpendicularly at their ends to form a 'T' shape. The moment of inertia of this composite system about the axis coinciding with the top bar of the T is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{3}ML^2$",
+            "$\\frac{1}{12}ML^2$",
+            "$\\frac{5}{12}ML^2$",
+            "$\\frac{2}{3}ML^2$"
+          ],
+          "correctOption": 0,
+          "solution": "1) For the horizontal top bar lying along the axis: $I_1 = 0$.\n2) For the vertical stem of length $L$ attached at its end to the axis: $I_2 = \\frac{1}{3}ML^2$.\n$$I_{\\text{total}} = I_1 + I_2 = \\frac{1}{3}ML^2$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The angular speed of a motor increases from $1200\\text{ rpm}$ to $3120\\text{ rpm}$ in $16\\text{ s}$. The angular acceleration of the motor assuming it is uniform is:",
+          "image": "",
+          "options": [
+            "$4\\pi\\text{ rad/s}^2$",
+            "$2\\pi\\text{ rad/s}^2$",
+            "$8\\pi\\text{ rad/s}^2$",
+            "$1\\pi\\text{ rad/s}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\omega_0 = 1200 \\times \\frac{2\\pi}{60} = 40\\pi\\text{ rad/s}$$\n$$\\omega = 3120 \\times \\frac{2\\pi}{60} = 104\\pi\\text{ rad/s}$$\n$$\\alpha = \\frac{\\omega - \\omega_0}{t} = \\frac{104\\pi - 40\\pi}{16} = \\frac{64\\pi}{16} = 4\\pi\\text{ rad/s}^2$$"
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Theorem of parallel axes states that $I = I_{\\text{cm}} + M d^2$, where $d$ is the perpendicular distance between two parallel axes. This theorem is valid for:",
+          "image": "",
+          "options": [
+            "Bodies of any shape (1D, 2D, or 3D)",
+            "2D planar laminas only",
+            "1D thin rods only",
+            "Symmetrical spherical bodies only"
+          ],
+          "correctOption": 0,
+          "solution": "Parallel axes theorem is universal and valid for rigid bodies of any shape and dimensionality (1D, 2D, and 3D), provided one of the parallel axes passes through the centre of mass of the body."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A uniform square plate of side $a$ and mass $M$ has moment of inertia $I_0$ about an axis passing through its centre and perpendicular to its plane. Its moment of inertia about one of its diagonals is:",
+          "image": "",
+          "options": [
+            "$\\frac{I_0}{2}$",
+            "$I_0$",
+            "$\\frac{I_0}{4}$",
+            "$2I_0$"
+          ],
+          "correctOption": 0,
+          "solution": "By symmetry and perpendicular axes theorem: $I_z = I_{\\text{diag1}} + I_{\\text{diag2}} = 2 I_{\\text{diag}}$.\n$$I_{\\text{diag}} = \\frac{I_z}{2} = \\frac{I_0}{2} = \\frac{1}{12}Ma^2$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A uniform rod of length $L$ and mass $M$ is pivoted at one end and held horizontally. When released from rest, the initial angular acceleration of the rod is:",
+          "image": "",
+          "options": [
+            "$\\frac{3g}{2L}$",
+            "$\\frac{g}{L}$",
+            "$\\frac{2g}{3L}$",
+            "$\\frac{3g}{L}$"
+          ],
+          "correctOption": 0,
+          "solution": "Torque about pivot due to gravity: $\\tau = Mg\\left(\\frac{L}{2}\\right)$.\nMoment of inertia about end: $I = \\frac{1}{3}ML^2$.\n$$\\alpha = \\frac{\\tau}{I} = \\frac{Mg(L/2)}{\\frac{1}{3}ML^2} = \\frac{3g}{2L}$$"
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The moment of inertia of a uniform thin rectangular sheet of mass $M$, length $a$, and breadth $b$ about an axis in its plane passing through its center and parallel to breadth $b$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{12}Ma^2$",
+            "$\\frac{1}{12}Mb^2$",
+            "$\\frac{1}{3}Ma^2$",
+            "$\\frac{1}{12}M(a^2 + b^2)$"
+          ],
+          "correctOption": 0,
+          "solution": "An axis parallel to side $b$ slices across length $a$. The sheet behaves as a collection of thin rods of length $a$, giving $I = \\frac{1}{12}Ma^2$."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A wheel of radius $0.4\\text{ m}$ can rotate freely about its horizontal axis. A string wrapped around its circumference is pulled with a constant force of $20\\text{ N}$. If the rotational kinetic energy after $50\\text{ revolutions}$ is $1256\\text{ J}$, the moment of inertia of the wheel is: $(\\pi \\approx 3.14)$",
+          "image": "",
+          "options": [
+            "Directly verifiable by Work-Energy theorem ($W = \\tau\\theta = 2512\\text{ J}$)",
+            "$W = \\tau\\theta = 20 \\times 0.4 \\times 100\\pi \\approx 2512\\text{ J}$",
+            "$W = 1256\\text{ J}$ when force acts for $25\\text{ revolutions}$",
+            "$0.5\\text{ kg}\\cdot\\text{m}^2$"
+          ],
+          "correctOption": 1,
+          "solution": "Torque $\\tau = F \\cdot R = 20 \\times 0.4 = 8\\text{ N}\\cdot\\text{m}$.\nAngular displacement $\\theta = 50 \\times 2\\pi = 100\\pi\\text{ rad}$.\nWork done by torque $W = \\tau\\theta = 8 \\times 100\\pi = 800\\pi \\approx 2513.27\\text{ J}$."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following pairs correctly matches a linear quantity with its rotational analogue?",
+          "image": "",
+          "options": [
+            "Mass $\\leftrightarrow$ Moment of Inertia",
+            "Linear momentum $\\leftrightarrow$ Torque",
+            "Force $\\leftrightarrow$ Angular momentum",
+            "Linear velocity $\\leftrightarrow$ Angular acceleration"
+          ],
+          "correctOption": 0,
+          "solution": "Mass ($m$) corresponds directly to Moment of Inertia ($I$) in rotational kinematics and dynamics."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A uniform thin bar of mass $M$ and length $L$ is bent into a semi-circle. The moment of inertia of this semi-circular wire about an axis passing through the center of the semi-circle and perpendicular to its plane is:",
+          "image": "",
+          "options": [
+            "$\\frac{ML^2}{\\pi^2}$",
+            "$\\frac{ML^2}{2\\pi^2}$",
+            "$\\frac{ML^2}{4\\pi^2}$",
+            "$\\frac{2ML^2}{\\pi^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Length of semi-circle: $\\pi R = L \\implies R = \\frac{L}{\\pi}$.\nEvery element of mass $dm$ is at distance $R$ from the center of curvature.\n$$I = \\int R^2\\,dm = R^2 M = M\\left(\\frac{L}{\\pi}\\right)^2 = \\frac{ML^2}{\\pi^2}$$"
+        }
+      ]
+    }
+  ]
+}
