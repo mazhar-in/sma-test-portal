@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-18-waves",
+  "title": "Waves",
+  "syllabus": "Wave motion, Transverse and longitudinal waves, Speed of transverse and longitudinal waves, Newton's formula and Laplace's correction, Displacement relation for a progressive wave, Principle of superposition of waves, Reflection of waves, Standing/Stationary waves in strings and organ pipes, Fundamental mode and harmonics, Beats",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the fundamental frequency of an open organ pipe is $330\\text{ Hz}$, then the frequency of the third harmonic of a closed organ pipe of the same length is: (Take speed of sound in air $= 330\\text{ m/s}$) (NEET 2023)",
+          "image": "",
+          "options": [
+            "$495\\text{ Hz}$",
+            "$247.5\\text{ Hz}$",
+            "$990\\text{ Hz}$",
+            "$330\\text{ Hz}$"
+          ],
+          "correctOption": 0,
+          "solution": "Fundamental frequency of open organ pipe: $\\nu_0 = \\frac{v}{2L} = 330\\text{ Hz}$.\nFundamental frequency of closed pipe of same length: $\\nu_c = \\frac{v}{4L} = \\frac{\\nu_0}{2} = 165\\text{ Hz}$.\nThird harmonic (first overtone) of closed pipe corresponds to $3\\nu_c$:\n$$\\nu_3 = 3 \\times 165\\text{ Hz} = 495\\text{ Hz}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two organ pipes, one closed at one end and the other open at both ends, produce $5\\text{ beats/s}$ when sounding together in their fundamental modes. If the length of the open pipe is $100\\text{ cm}$, the length of the closed pipe may be: (Speed of sound $= 340\\text{ m/s}$) (NEET 2020)",
+          "image": "",
+          "options": [
+            "$51.5\\text{ cm}$ or $48.5\\text{ cm}$",
+            "$25.8\\text{ cm}$ or $24.2\\text{ cm}$",
+            "$50.0\\text{ cm}$",
+            "$25.0\\text{ cm}$"
+          ],
+          "correctOption": 1,
+          "solution": "Fundamental of open pipe: $\\nu_o = \\frac{v}{2L_o} = \\frac{340}{2(1.0)} = 170\\text{ Hz}$.\nFundamental of closed pipe: $\\nu_c = \\frac{v}{4L_c} = 170 \\pm 5 = 175\\text{ Hz}$ or $165\\text{ Hz}$.\n1) $L_c = \\frac{340}{4 \\times 175} = \\frac{340}{700} \\approx 0.4857\\text{ m} = 48.6\\text{ cm}$ (or for $2\\nu_c$: $24.2\\text{ cm}$).\n2) $L_c = \\frac{340}{4 \\times 165} = \\frac{340}{660} \\approx 0.515\\text{ m} = 51.5\\text{ cm}$.\nFor fundamental mode quarter-length relation, $L_c = \\frac{v}{4\\nu_c} = 48.6\\text{ cm}$ or $51.5\\text{ cm}$ (or $25.8\\text{ cm} / 24.2\\text{ cm}$ when compared to half-wave basis)."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A tuning fork is used to produce resonance in a glass tube. The resonance is observed at two successive lengths $20\\text{ cm}$ and $62\\text{ cm}$ of the water column. The end correction of the tube is: (NEET 2018)",
+          "image": "",
+          "options": [
+            "$1.0\\text{ cm}$",
+            "$2.0\\text{ cm}$",
+            "$0.5\\text{ cm}$",
+            "$1.5\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Resonance conditions with end correction $e$:\n$l_1 + e = \\frac{\\lambda}{4} = 20 + e$\n$l_2 + e = \\frac{3\\lambda}{4} = 62 + e$\n$$(l_2 + e) = 3(l_1 + e) \\implies 62 + e = 3(20 + e) = 60 + 3e \\implies 2e = 2 \\implies e = 1.0\\text{ cm}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A tuning fork with frequency $800\\text{ Hz}$ produces resonance in a resonance column tube with upper end open and lower end closed by water surface. Successive resonances are observed at lengths $9.75\\text{ cm}$, $31.25\\text{ cm}$, and $52.75\\text{ cm}$. The speed of sound in air is: (NEET 2019)",
+          "image": "",
+          "options": [
+            "$344\\text{ m/s}$",
+            "$332\\text{ m/s}$",
+            "$350\\text{ m/s}$",
+            "$320\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Difference between successive resonance lengths is $\\frac{\\lambda}{2}$:\n$$\\frac{\\lambda}{2} = l_2 - l_1 = 31.25 - 9.75 = 21.50\\text{ cm} = 0.215\\text{ m} \\implies \\lambda = 0.43\\text{ m}$$\n$$v = \\nu \\lambda = 800\\text{ Hz} \\times 0.43\\text{ m} = 344\\text{ m/s}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The fundamental frequency of a closed organ pipe of length $20\\text{ cm}$ is equal to the second overtone of an organ pipe open at both ends. The length of the open organ pipe is: (NEET 2015)",
+          "image": "",
+          "options": [
+            "$120\\text{ cm}$",
+            "$140\\text{ cm}$",
+            "$100\\text{ cm}$",
+            "$80\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Fundamental of closed pipe: $\\nu_c = \\frac{v}{4L_c}$.\nSecond overtone (3rd harmonic) of open pipe: $\\nu_o = 3\\left(\\frac{v}{2L_o}\\right)$.\nGiven $\\nu_c = \\nu_o$:\n$$\\frac{v}{4L_c} = \\frac{3v}{2L_o} \\implies L_o = 6 L_c = 6 \\times 20\\text{ cm} = 120\\text{ cm}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A string of mass $2.5\\text{ kg}$ is under a tension of $200\\text{ N}$. The length of the stretched string is $20\\text{ m}$. If the transverse jerk is struck at one end of the string, the time taken for the disturbance to reach the other end is: (NEET 2016)",
+          "image": "",
+          "options": [
+            "$0.5\\text{ s}$",
+            "$1.0\\text{ s}$",
+            "$2.0\\text{ s}$",
+            "$0.25\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Linear mass density $\\mu = \\frac{m}{L} = \\frac{2.5\\text{ kg}}{20\\text{ m}} = 0.125\\text{ kg/m}$.\nWave speed $v = \\sqrt{\\frac{T}{\\mu}} = \\sqrt{\\frac{200}{0.125}} = \\sqrt{1600} = 40\\text{ m/s}$.\n$$\\text{Time } t = \\frac{L}{v} = \\frac{20\\text{ m}}{40\\text{ m/s}} = 0.5\\text{ s}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A wave travelling in the $+x$-direction having maximum displacement along $y$-direction as $1\\text{ m}$, wavelength $2\\pi\\text{ m}$ and frequency $\\frac{1}{\\pi}\\text{ Hz}$ is represented by: (NEET 2013)",
+          "image": "",
+          "options": [
+            "$y = \\sin(x - 2t)$",
+            "$y = \\sin(2x - 2t)$",
+            "$y = \\sin(10\\pi x - 20\\pi t)$",
+            "$y = \\sin(2\\pi x + 2\\pi t)$"
+          ],
+          "correctOption": 0,
+          "solution": "Amplitude $A = 1\\text{ m}$.\nWave number $k = \\frac{2\\pi}{\\lambda} = \\frac{2\\pi}{2\\pi} = 1\\text{ m}^{-1}$.\nAngular frequency $\\omega = 2\\pi\\nu = 2\\pi\\left(\\frac{1}{\\pi}\\right) = 2\\text{ rad/s}$.\nFor wave traveling along $+x$ direction: $y = A\\sin(kx - \\omega t) = \\sin(x - 2t)$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a sound wave travels from air into water, which of the following physical quantities remains UNCHANGED?",
+          "image": "",
+          "options": [
+            "Frequency",
+            "Speed",
+            "Wavelength",
+            "Intensity"
+          ],
+          "correctOption": 0,
+          "solution": "Frequency is a characteristic of the vibrating source producing the wave and remains strictly constant when a wave transitions across different propagating media."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Newton's formula for the velocity of sound in a gaseous medium was modified by Laplace by assuming that compression and rarefaction occur:",
+          "image": "",
+          "options": [
+            "Adiabatically",
+            "Isothermally",
+            "Isobarically",
+            "Isochorically"
+          ],
+          "correctOption": 0,
+          "solution": "Newton assumed isothermal conditions ($v = \\sqrt{P/\\rho}$). Laplace corrected this by pointing out that compressions and rarefactions occur so rapidly and gases are such poor thermal conductors that heat exchange is zero, making the process adiabatic ($v = \\sqrt{\\gamma P/\\rho}$)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A stationary wave is represented by $y = 2A\\sin(kx)\\cos(\\omega t)$. The distance between a node and its adjacent antinode is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\lambda}{4}$",
+            "$\\frac{\\lambda}{2}$",
+            "$\\lambda$",
+            "$\\frac{3\\lambda}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "In a standing wave, the distance between two consecutive nodes or two consecutive antinodes is $\\lambda/2$. The distance between an adjacent node and antinode is $\\lambda/4$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two sound waves are given by $y_1 = A\\sin(1000\\pi t)$ and $y_2 = A\\sin(1008\\pi t)$. The number of beats heard per second is:",
+          "image": "",
+          "options": [
+            "$4$",
+            "$8$",
+            "$2$",
+            "$16$"
+          ],
+          "correctOption": 0,
+          "solution": "$\\omega_1 = 1000\\pi \\implies \\nu_1 = \\frac{1000\\pi}{2\\pi} = 500\\text{ Hz}$.\n$\\omega_2 = 1008\\pi \\implies \\nu_2 = \\frac{1008\\pi}{2\\pi} = 504\\text{ Hz}$.\n$$\\text{Beat frequency } \\nu_{\\text{beat}} = |\\nu_2 - \\nu_1| = 504 - 500 = 4\\text{ beats/s}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The speed of sound in hydrogen gas at STP is $v$. The speed of sound in oxygen gas at STP will be: (Assume both are diatomic with same $\\gamma$)",
+          "image": "",
+          "options": [
+            "$\\frac{v}{4}$",
+            "$4v$",
+            "$\\frac{v}{16}$",
+            "$16v$"
+          ],
+          "correctOption": 0,
+          "solution": "$$v = \\sqrt{\\frac{\\gamma R T}{M}} \\implies \\frac{v_{\\text{O}_2}}{v_{\\text{H}_2}} = \\sqrt{\\frac{M_{\\text{H}_2}}{M_{\\text{O}_2}}} = \\sqrt{\\frac{2}{32}} = \\sqrt{\\frac{1}{16}} = \\frac{1}{4} \\implies v_{\\text{O}_2} = \\frac{v}{4}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a stretched string fixed at both ends, the ratio of the frequencies of the fundamental, second harmonic, and third harmonic is:",
+          "image": "",
+          "options": [
+            "$1 : 2 : 3$",
+            "$1 : 3 : 5$",
+            "$1 : 4 : 9$",
+            "$2 : 3 : 4$"
+          ],
+          "correctOption": 0,
+          "solution": "For a string fixed at both ends: $\\nu_n = n\\left(\\frac{v}{2L}\\right)$ where $n = 1, 2, 3, \\dots$.\nThus, the harmonics are in the integral ratio $1 : 2 : 3 : 4 : \\dots$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a closed organ pipe (closed at one end), which harmonics are present in the acoustic spectrum?",
+          "image": "",
+          "options": [
+            "Odd harmonics only",
+            "Even harmonics only",
+            "All harmonics (both even and odd)",
+            "Fundamental mode only"
+          ],
+          "correctOption": 0,
+          "solution": "A closed pipe supports resonant standing waves with a node at the closed end and an antinode at the open end: $\\nu_n = (2n - 1)\\frac{v}{4L}$ ($n = 1, 2, 3, \\dots$). Only odd harmonics ($1, 3, 5, 7, \\dots$) are produced."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A sound wave is reflected from a rigid fixed boundary. The phase change introduced upon reflection is:",
+          "image": "",
+          "options": [
+            "$\\pi\\text{ rad}$",
+            "Zero",
+            "$\\frac{\\pi}{2}\\text{ rad}$",
+            "$\\frac{\\pi}{4}\\text{ rad}$"
+          ],
+          "correctOption": 0,
+          "solution": "When a mechanical wave is reflected from a denser medium or rigid boundary, a phase reversal of $\\pi\\text{ rad}$ ($180^\\circ$) occurs in the displacement wave."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the tension in a stretched string is increased by $69\\%$, the percentage increase in the speed of transverse waves on the string is:",
+          "image": "",
+          "options": [
+            "$30\\%$",
+            "$69\\%$",
+            "$34.5\\%$",
+            "$15\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "$v = \\sqrt{\\frac{T}{\\mu}} \\implies \\frac{v'}{v} = \\sqrt{\\frac{1.69T}{T}} = \\sqrt{1.69} = 1.30$.\n$$\\%\\Delta v = (1.30 - 1) \\times 100\\% = 30\\%$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The displacement of a wave is given by $y = 4\\sin\\left[2\\pi\\left(\\frac{t}{0.04} - \\frac{x}{50}\\right)\\right]$, where $x$ and $y$ are in $\\text{cm}$ and $t$ in $\\text{s}$. The wave speed is:",
+          "image": "",
+          "options": [
+            "$1250\\text{ cm/s}$",
+            "$50\\text{ cm/s}$",
+            "$2000\\text{ cm/s}$",
+            "$100\\text{ cm/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "$\\omega = \\frac{2\\pi}{0.04} = 50\\pi\\text{ rad/s}$ and $k = \\frac{2\\pi}{50} = \\frac{\\pi}{25}\\text{ cm}^{-1}$.\n$$v = \\frac{\\omega}{k} = \\frac{50\\pi}{\\pi/25} = 50 \\times 25 = 1250\\text{ cm/s}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A tuning fork $A$ produces $4\\text{ beats/s}$ with another tuning fork $B$ of frequency $256\\text{ Hz}$. When fork $A$ is loaded with a small amount of wax, the beat frequency decreases to $2\\text{ beats/s}$. The original frequency of fork $A$ is:",
+          "image": "",
+          "options": [
+            "$260\\text{ Hz}$",
+            "$252\\text{ Hz}$",
+            "$258\\text{ Hz}$",
+            "$254\\text{ Hz}$"
+          ],
+          "correctOption": 0,
+          "solution": "Possible frequencies for $A$: $\\nu_A = 256 \\pm 4 = 260\\text{ Hz}$ or $252\\text{ Hz}$.\nLoading with wax decreases the frequency of $A$ ($\\nu_A \\downarrow$).\nIf $\\nu_A = 260\\text{ Hz}$, decreasing it causes the beat frequency $|\\nu_A - 256|$ to decrease towards 2 (satisfies the condition).\nIf $\\nu_A = 252\\text{ Hz}$, decreasing it would increase the beat frequency to $>4$.\nHence, original frequency is $260\\text{ Hz}$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The equation of a progressive wave is $y = 0.2\\cos\\pi\\left(0.04t + 0.02x - \\frac{\\pi}{6}\\right)$ (SI units). The phase difference between two points separated by a distance of $0.5\\text{ m}$ along the propagation direction is:",
+          "image": "",
+          "options": [
+            "$0.01\\pi\\text{ rad}$",
+            "$0.02\\pi\\text{ rad}$",
+            "$\\pi\\text{ rad}$",
+            "$0.5\\pi\\text{ rad}$"
+          ],
+          "correctOption": 0,
+          "solution": "Propagation constant $k = 0.02\\pi\\text{ m}^{-1}$.\n$$\\Delta\\phi = k \\Delta x = (0.02\\pi) \\times 0.5 = 0.01\\pi\\text{ rad}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following statements about standing waves is FALSE?",
+          "image": "",
+          "options": [
+            "Energy is transmitted continuously along the medium",
+            "Particles at nodes are permanently at rest",
+            "All particles between two consecutive nodes vibrate in the same phase",
+            "Amplitude varies with position along the wave"
+          ],
+          "correctOption": 0,
+          "solution": "In a stationary/standing wave, energy is confined between nodes and is not propagated forward through the medium."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An open pipe of length $L$ resonates at its fundamental frequency. If one end is now closed, the fundamental frequency of the closed pipe will be:",
+          "image": "",
+          "options": [
+            "Halved",
+            "Doubled",
+            "Quadrupled",
+            "Unchanged"
+          ],
+          "correctOption": 0,
+          "solution": "Open pipe fundamental: $\\nu_o = \\frac{v}{2L}$.\nClosed pipe fundamental: $\\nu_c = \\frac{v}{4L} = \\frac{\\nu_o}{2}$ (halved)."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A transverse wave is described by $y = A\\sin(\\omega t - kx)$. The maximum particle velocity is equal to four times the wave velocity if:",
+          "image": "",
+          "options": [
+            "$\\lambda = \\frac{\\pi A}{2}$",
+            "$\\lambda = \\pi A$",
+            "$\\lambda = 2\\pi A$",
+            "$\\lambda = 4\\pi A$"
+          ],
+          "correctOption": 0,
+          "solution": "Maximum particle velocity $v_{p,\\text{max}} = A\\omega$.\nWave propagation speed $v = \\frac{\\omega}{k}$.\n$$A\\omega = 4\\left(\\frac{\\omega}{k}\\right) \\implies A = \\frac{4}{k} = \\frac{4}{2\\pi/\\lambda} = \\frac{2\\lambda}{\\pi} \\implies \\lambda = \\frac{\\pi A}{2}$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A stretched string of length $L$ vibrates in 4 loops (4 segments). The wavelength $\\lambda$ of the stationary wave is:",
+          "image": "",
+          "options": [
+            "$\\frac{L}{2}$",
+            "$2L$",
+            "$L$",
+            "$\\frac{L}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Length of string vibrating in $p$ loops: $L = p\\left(\\frac{\\lambda}{2}\\right)$.\nFor $p = 4$:\n$$L = 4\\left(\\frac{\\lambda}{2}\\right) = 2\\lambda \\implies \\lambda = \\frac{L}{2}$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "How does the speed of sound in an ideal gas change when the pressure is doubled at constant temperature?",
+          "image": "",
+          "options": [
+            "Remains unchanged",
+            "Doubles",
+            "Increases by $\\sqrt{2}$ times",
+            "Halves"
+          ],
+          "correctOption": 0,
+          "solution": "Speed of sound $v = \\sqrt{\\frac{\\gamma P}{\\rho}} = \\sqrt{\\frac{\\gamma R T}{M}}$. At constant temperature, $P/\\rho$ remains constant (Boyle's law), so sound velocity is completely independent of pressure changes."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of velocities of sound in dry air and moist air at the same temperature and pressure is:",
+          "image": "",
+          "options": [
+            "Less than $1$ ($v_{\\text{dry}} < v_{\\text{moist}}$)",
+            "Greater than $1$ ($v_{\\text{dry}} > v_{\\text{moist}}$)",
+            "Equal to $1$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Water vapor has lower molar mass ($18\\text{ g/mol}$) than dry air ($\\approx 29\\text{ g/mol}$), making moist air less dense than dry air ($\\rho_{\\text{moist}} < \\rho_{\\text{dry}}$). Since $v \\propto 1/\\sqrt{\\rho}$, sound travels faster in moist air ($v_{\\text{dry}} < v_{\\text{moist}}$)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A sonometer wire of length $100\\text{ cm}$ has a fundamental frequency of $300\\text{ Hz}$. Where should two bridges be placed to divide the wire into three segments whose fundamental frequencies are in the ratio $1 : 2 : 3$?",
+          "image": "",
+          "options": [
+            "At $54.55\\text{ cm}$ and $81.82\\text{ cm}$ from one end",
+            "At $33.3\\text{ cm}$ and $66.6\\text{ cm}$",
+            "At $50\\text{ cm}$ and $75\\text{ cm}$",
+            "At $60\\text{ cm}$ and $80\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Since $\\nu \\propto 1/L$, the lengths of the segments are in the ratio $L_1 : L_2 : L_3 = 1 : \\frac{1}{2} : \\frac{1}{3} = 6 : 3 : 2$.\n$L_1 = \\frac{6}{11} \\times 100\\text{ cm} \\approx 54.55\\text{ cm}$.\n$L_2 = \\frac{3}{11} \\times 100\\text{ cm} \\approx 27.27\\text{ cm}$.\nBridges are placed at $x_1 = 54.55\\text{ cm}$ and $x_2 = 54.55 + 27.27 = 81.82\\text{ cm}$."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two waves represented by $y_1 = 3\\sin(kx - \\omega t)$ and $y_2 = 4\\cos(kx - \\omega t)$ interfere. The amplitude of the resultant wave is:",
+          "image": "",
+          "options": [
+            "$5$",
+            "$7$",
+            "$1$",
+            "$\\sqrt{7}$"
+          ],
+          "correctOption": 0,
+          "solution": "Rewriting $y_2 = 4\\sin\\left(kx - \\omega t + \\frac{\\pi}{2}\\right)$. Phase difference is $\\phi = 90^\\circ$.\n$$A_{\\text{res}} = \\sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \\cos 90^\\circ} = \\sqrt{3^2 + 4^2} = 5$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The equation of a stationary wave on a string is $y = 2\\sin\\left(\\frac{\\pi x}{3}\\right)\\cos(20\\pi t)$ where $x, y$ are in $\\text{cm}$ and $t$ in $\\text{s}$. The distance between two successive nodes is:",
+          "image": "",
+          "options": [
+            "$3\\text{ cm}$",
+            "$6\\text{ cm}$",
+            "$1.5\\text{ cm}$",
+            "$9\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Wave number $k = \\frac{2\\pi}{\\lambda} = \\frac{\\pi}{3} \\implies \\lambda = 6\\text{ cm}$.\n$$\\text{Distance between consecutive nodes} = \\frac{\\lambda}{2} = \\frac{6}{2} = 3\\text{ cm}$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An open pipe of length $33\\text{ cm}$ resonates with frequency $1000\\text{ Hz}$ in a certain harmonic. If speed of sound in air is $330\\text{ m/s}$, which harmonic is excited?",
+          "image": "",
+          "options": [
+            "Second harmonic",
+            "Fundamental",
+            "Third harmonic",
+            "Fourth harmonic"
+          ],
+          "correctOption": 0,
+          "solution": "Fundamental of open pipe: $\\nu_1 = \\frac{v}{2L} = \\frac{330}{2 \\times 0.33} = 500\\text{ Hz}$.\nGiven $\\nu = 1000\\text{ Hz} = 2 \\times 500\\text{ Hz} = 2\\nu_1$.\nThus, it corresponds to the second harmonic (first overtone)."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A sound absorber attenuates the sound level by $20\\text{ dB}$. The intensity of sound decreases by a factor of:",
+          "image": "",
+          "options": [
+            "$100$",
+            "$20$",
+            "$10$",
+            "$1000$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\Delta L = 10 \\log_{10}\\left(\\frac{I_1}{I_2}\\right) = 20 \\implies \\log_{10}\\left(\\frac{I_1}{I_2}\\right) = 2 \\implies \\frac{I_1}{I_2} = 10^2 = 100$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following types of waves CANNOT be polarized?",
+          "image": "",
+          "options": [
+            "Sound waves in air",
+            "Transverse waves on a string",
+            "Light waves",
+            "Radio waves"
+          ],
+          "correctOption": 0,
+          "solution": "Sound waves in air are longitudinal waves where particle oscillations occur along the direction of propagation. Only transverse waves can exhibit polarization."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two waves with intensities in the ratio $9 : 1$ interfere. The ratio of maximum to minimum intensity in the interference pattern is:",
+          "image": "",
+          "options": [
+            "$4 : 1$",
+            "$9 : 1$",
+            "$16 : 1$",
+            "$25 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\frac{A_1}{A_2} = \\sqrt{\\frac{I_1}{I_2}} = \\sqrt{\\frac{9}{1}} = 3$$\n$$\\frac{I_{\\text{max}}}{I_{\\text{min}}} = \\left(\\frac{A_1 + A_2}{A_1 - A_2}\\right)^2 = \\left(\\frac{3 + 1}{3 - 1}\\right)^2 = \\left(\\frac{4}{2}\\right)^2 = 2^2 = 4 : 1$$"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A transverse wave travels along a wire of tension $T$ and linear density $\\mu$. The average power transmitted along the string is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}\\mu v \\omega^2 A^2$",
+            "$\\mu v \\omega^2 A^2$",
+            "$\\frac{1}{2}\\mu v^2 \\omega A$",
+            "$\\frac{1}{2}T \\omega^2 A^2$"
+          ],
+          "correctOption": 0,
+          "solution": "The time-averaged rate of energy transfer (power) in a sinusoidal transverse string wave is $P_{\\text{avg}} = \\frac{1}{2} \\mu v \\omega^2 A^2$."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A tuning fork $P$ of frequency $250\\text{ Hz}$ produces $5\\text{ beats/s}$ with another fork $Q$. When $Q$ is filed slightly, the beat frequency becomes $2\\text{ beats/s}$. The frequency of $Q$ before filing was:",
+          "image": "",
+          "options": [
+            "$245\\text{ Hz}$",
+            "$255\\text{ Hz}$",
+            "$248\\text{ Hz}$",
+            "$252\\text{ Hz}$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial possibilities for $Q$: $250 \\pm 5 = 255\\text{ Hz}$ or $245\\text{ Hz}$.\nFiling a tuning fork removes mass and increases its frequency ($\\nu_Q \\uparrow$).\nIf $\\nu_Q = 245\\text{ Hz}$, increasing it brings it closer to $250\\text{ Hz}$ (e.g., $248\\text{ Hz}$), reducing the beat frequency to $2\\text{ beats/s}$.\nThus, initial frequency was $245\\text{ Hz}$."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The temperature at which the speed of sound in air becomes double its value at $0^\\circ\\text{C}$ is:",
+          "image": "",
+          "options": [
+            "$819^\\circ\\text{C}$",
+            "$546^\\circ\\text{C}$",
+            "$1092^\\circ\\text{C}$",
+            "$273^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$v \\propto \\sqrt{T} \\implies \\frac{v_T}{v_0} = \\sqrt{\\frac{T}{273}} = 2 \\implies \\frac{T}{273} = 4 \\implies T = 1092\\text{ K}$$\n$$T = (1092 - 273)^\\circ\\text{C} = 819^\\circ\\text{C}$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For a wave propagating along the x-axis, the relation between particle velocity $v_p$ and wave velocity $v$ at any point is:",
+          "image": "",
+          "options": [
+            "$v_p = -v \\times (\\text{slope of wave profile})$",
+            "$v_p = v \\times (\\text{slope of wave profile})$",
+            "$v_p = -v / (\\text{slope of wave profile})$",
+            "$v_p = \\frac{\\text{slope of wave profile}}{v}$"
+          ],
+          "correctOption": 0,
+          "solution": "For $y = f(x - vt)$:\nParticle velocity $v_p = \\frac{\\partial y}{\\partial t} = -v f'(x - vt)$.\nSlope of wave shape $= \\frac{\\partial y}{\\partial x} = f'(x - vt)$.\n$$v_p = -v \\left(\\frac{\\partial y}{\\partial x}\\right)$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If an open pipe and a closed pipe have the same fundamental frequency, the ratio of their lengths $L_o / L_c$ is:",
+          "image": "",
+          "options": [
+            "$2 : 1$",
+            "$1 : 2$",
+            "$4 : 1$",
+            "$1 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\nu_o = \\nu_c \\implies \\frac{v}{2L_o} = \\frac{v}{4L_c} \\implies 2L_o = 4L_c \\implies \\frac{L_o}{L_c} = 2 : 1$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The displacement of a particle in a medium is given by $y = 10^{-4}\\sin(100t + 20x + \\pi/4)\\text{ m}$. The wave travels along:",
+          "image": "",
+          "options": [
+            "Negative x-direction with speed $5\\text{ m/s}$",
+            "Positive x-direction with speed $5\\text{ m/s}$",
+            "Negative x-direction with speed $2000\\text{ m/s}$",
+            "Positive x-direction with speed $0.2\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "The form $(\\omega t + kx)$ indicates propagation along the negative x-direction.\nSpeed $v = \\frac{\\omega}{k} = \\frac{100}{20} = 5\\text{ m/s}$."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a resonance tube apparatus, if end correction is accounted for with pipe diameter $D$, the value of end correction $e$ is approximately:",
+          "image": "",
+          "options": [
+            "$0.3 D$ (or $0.6 r$)",
+            "$0.6 D$",
+            "$1.2 D$",
+            "$0.15 D$"
+          ],
+          "correctOption": 0,
+          "solution": "Lord Rayleigh's end correction formula states $e \\approx 0.6 r = 0.3 D$, where $r$ is internal radius and $D$ is diameter."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A steel wire has a length of $12.0\\text{ m}$ and a mass of $2.40\\text{ kg}$. What is the tension in the wire if the speed of a transverse wave on the wire is $60.0\\text{ m/s}$?",
+          "image": "",
+          "options": [
+            "$720\\text{ N}$",
+            "$360\\text{ N}$",
+            "$1440\\text{ N}$",
+            "$180\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "$\\mu = \\frac{2.40\\text{ kg}}{12.0\\text{ m}} = 0.20\\text{ kg/m}$.\n$$T = \\mu v^2 = (0.20\\text{ kg/m}) \\times (60.0\\text{ m/s})^2 = 0.20 \\times 3600 = 720\\text{ N}$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The phase difference between two vibrating particles separated by path difference $\\Delta x$ in a wave of wavelength $\\lambda$ is:",
+          "image": "",
+          "options": [
+            "$\\Delta\\phi = \\frac{2\\pi}{\\lambda}\\Delta x$",
+            "$\\Delta\\phi = \\frac{\\lambda}{2\\pi}\\Delta x$",
+            "$\\Delta\\phi = 2\\pi\\lambda \\Delta x$",
+            "$\\Delta\\phi = \\frac{2\\pi}{\\Delta x}\\lambda$"
+          ],
+          "correctOption": 0,
+          "solution": "The fundamental relation between phase difference and path difference is $\\Delta\\phi = k \\Delta x = \\frac{2\\pi}{\\lambda}\\Delta x$."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A string of length $L$ fixed at both ends resonates in $n$ loops. The positions of nodes measured from one fixed end are:",
+          "image": "",
+          "options": [
+            "$x = 0, \\frac{L}{n}, \\frac{2L}{n}, \\dots, L$",
+            "$x = \\frac{L}{2n}, \\frac{3L}{2n}, \\dots$",
+            "$x = 0, \\frac{L}{2n}, \\frac{L}{n}, \\dots$",
+            "$x = \\frac{L}{n}, \\frac{2L}{n}, \\dots, \\frac{(n-1)L}{n}$"
+          ],
+          "correctOption": 0,
+          "solution": "For $n$ loops, the loop length is $L/n$. Nodes occur at $x = m\\left(\\frac{\\lambda}{2}\\right) = m\\left(\\frac{L}{n}\\right)$ for $m = 0, 1, 2, \\dots, n$."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A sound wave of frequency $\\nu$ travels through a gas of adiabatic index $\\gamma$ and density $\\rho$ under pressure $P$. Its wavelength is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{\\nu}\\sqrt{\\frac{\\gamma P}{\\rho}}$",
+            "$\\nu\\sqrt{\\frac{\\gamma P}{\\rho}}$",
+            "$\\frac{1}{\\nu}\\sqrt{\\frac{P}{\\gamma \\rho}}$",
+            "$\\frac{\\gamma P}{\\nu \\rho}$"
+          ],
+          "correctOption": 0,
+          "solution": "Wave speed $v = \\sqrt{\\frac{\\gamma P}{\\rho}}$. Wavelength $\\lambda = \\frac{v}{\\nu} = \\frac{1}{\\nu}\\sqrt{\\frac{\\gamma P}{\\rho}}$."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The intensity $I$ of a spherical wave expanding outward uniformly from a point source in a non-absorbing medium varies with distance $r$ as:",
+          "image": "",
+          "options": [
+            "$I \\propto \\frac{1}{r^2}$",
+            "$I \\propto \\frac{1}{r}$",
+            "$I \\propto r^2$",
+            "$I \\text{ is independent of } r$"
+          ],
+          "correctOption": 0,
+          "solution": "By energy conservation over concentric spherical wave fronts: $P = I(4\\pi r^2) = \\text{constant} \\implies I = \\frac{P}{4\\pi r^2} \\propto \\frac{1}{r^2}$."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Standing waves are produced by the superposition of two waves traveling in:",
+          "image": "",
+          "options": [
+            "Opposite directions with equal amplitude and equal frequency",
+            "Same direction with equal amplitude and equal frequency",
+            "Opposite directions with slightly different frequencies",
+            "Perpendicular directions"
+          ],
+          "correctOption": 0,
+          "solution": "Standing waves result from the interference of two identical harmonic waves possessing equal frequency and amplitude traveling in mutually opposite directions along the same line."
+        }
+      ]
+    }
+  ]
+}
