@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-11-gravitation",
+  "title": "Gravitation",
+  "syllabus": "Universal law of gravitation, Acceleration due to gravity and its variation with altitude and depth, Kepler's laws of planetary motion, Gravitational potential energy, Gravitational potential, Escape velocity, Motion of a satellite, Orbital velocity, Time period and energy of a satellite",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body weighs $200\\text{ N}$ on the surface of the earth. How much will it weigh half way down to the centre of the earth? (NEET 2019)",
+          "image": "",
+          "options": [
+            "$100\\text{ N}$",
+            "$150\\text{ N}$",
+            "$200\\text{ N}$",
+            "$250\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Variation of $g$ with depth: $g_d = g\\left(1 - \\frac{d}{R}\\right)$.\nAt depth $d = R/2$:\n$$g_d = g\\left(1 - \\frac{R/2}{R}\\right) = \\frac{g}{2}$$\n$$\\text{Weight } W' = m g_d = \\frac{mg}{2} = \\frac{200}{2} = 100\\text{ N}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The work done to raise a mass $m$ from the surface of the earth to a height $h$, which is equal to the radius of the earth, is: (NEET 2019)",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}mgR$",
+            "$mgR$",
+            "$2mgR$",
+            "$\\frac{3}{2}mgR$"
+          ],
+          "correctOption": 0,
+          "solution": "Work done $W = \\Delta U = U_f - U_i = -\\frac{GMm}{R + h} - \\left(-\\frac{GMm}{R}\\right)$.\nFor $h = R$:\n$$W = GMm\\left(\\frac{1}{R} - \\frac{1}{2R}\\right) = \\frac{GMm}{2R} = \\frac{1}{2}\\left(\\frac{GM}{R^2}\\right)mR = \\frac{1}{2}mgR$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The escape velocity from the Earth's surface is $v$. The escape velocity from the surface of another planet having a radius, four times that of Earth and same mass density is: (NEET 2021)",
+          "image": "",
+          "options": [
+            "$4v$",
+            "$2v$",
+            "$v$",
+            "$\\frac{v}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Escape velocity $v_e = \\sqrt{\\frac{2GM}{R}} = \\sqrt{\\frac{2G(\\frac{4}{3}\\pi R^3 \\rho)}{R}} = R\\sqrt{\\frac{8\\pi G \\rho}{3}} \\propto R\\sqrt{\\rho}$.\nFor same density $\\rho$, $v_e \\propto R$.\nWhen radius is quadrupled ($R' = 4R$), $v_e' = 4v$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A satellite is orbiting just above the surface of the earth with period $T$. If $d$ is the density of the earth and $G$ is the universal gravitational constant, the quantity $\\frac{3\\pi}{Gd}$ represents: (NEET 2023)",
+          "image": "",
+          "options": [
+            "$T^2$",
+            "$T^3$",
+            "$\\sqrt{T}$",
+            "$T$"
+          ],
+          "correctOption": 0,
+          "solution": "Time period of a satellite near the Earth's surface is:\n$$T = 2\\pi \\sqrt{\\frac{R^3}{GM}} = 2\\pi \\sqrt{\\frac{R^3}{G(\\frac{4}{3}\\pi R^3 d)}} = 2\\pi \\sqrt{\\frac{3}{4\\pi G d}} = \\sqrt{\\frac{3\\pi}{Gd}}$$\nSquaring both sides gives $T^2 = \\frac{3\\pi}{Gd}$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of escape velocity at earth $(v_e)$ to the escape velocity at a planet $(v_p)$ whose radius and mean density are twice as that of earth is: (NEET 2016)",
+          "image": "",
+          "options": [
+            "$1 : 2\\sqrt{2}$",
+            "$1 : 4$",
+            "$1 : \\sqrt{2}$",
+            "$2 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "$$v_e = R\\sqrt{\\frac{8\\pi G \\rho}{3}} \\implies \\frac{v_e}{v_p} = \\frac{R_e}{R_p}\\sqrt{\\frac{\\rho_e}{\\rho_p}} = \\frac{1}{2}\\sqrt{\\frac{1}{2}} = \\frac{1}{2\\sqrt{2}} = 1 : 2\\sqrt{2}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the mass of the Sun were ten times smaller and the universal gravitational constant were ten times larger in magnitude, which of the following is not correct? (NEET 2018)",
+          "image": "",
+          "options": [
+            "Raindrops will fall faster",
+            "Walking on the ground would become more difficult",
+            "Time period of a simple pendulum on the Earth would decrease",
+            "$g$ on the Earth will not change"
+          ],
+          "correctOption": 3,
+          "solution": "$g = \\frac{GM_e}{R_e^2}$. If $G$ increases 10 times while Earth's mass remains the same, $g$ on Earth will increase by a factor of 10. Hence, stating that '$g$ on the Earth will not change' is incorrect."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A planet moving along an elliptical orbit is closest to the Sun at a distance $r_1$ and farthest at a distance $r_2$. If $v_1$ and $v_2$ are the linear velocities at these points respectively, then the ratio $v_1 / v_2$ is: (NEET 2011)",
+          "image": "",
+          "options": [
+            "$\\frac{r_2}{r_1}$",
+            "$\\left(\\frac{r_2}{r_1}\\right)^2$",
+            "$\\frac{r_1}{r_2}$",
+            "$\\left(\\frac{r_1}{r_2}\\right)^2$"
+          ],
+          "correctOption": 0,
+          "solution": "By Kepler's second law (conservation of angular momentum about the Sun):\n$$m v_1 r_1 = m v_2 r_2 \\implies \\frac{v_1}{v_2} = \\frac{r_2}{r_1}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "At what height from the surface of the earth the gravitation potential and the value of $g$ are $-5.4 \\times 10^7\\text{ J/kg}$ and $6.0\\text{ m/s}^2$ respectively? Take the radius of the earth as $6400\\text{ km}$: (NEET 2016)",
+          "image": "",
+          "options": [
+            "$2600\\text{ km}$",
+            "$1600\\text{ km}$",
+            "$1400\\text{ km}$",
+            "$2000\\text{ km}$"
+          ],
+          "correctOption": 0,
+          "solution": "Gravitational potential $V = -\\frac{GM}{R+h} = -5.4 \\times 10^7\\text{ J/kg}$.\nAcceleration due to gravity $g' = \\frac{GM}{(R+h)^2} = 6.0\\text{ m/s}^2$.\n$$\\frac{|V|}{g'} = \\frac{GM/(R+h)}{GM/(R+h)^2} = R + h = \\frac{5.4 \\times 10^7}{6.0} = 9.0 \\times 10^6\\text{ m} = 9000\\text{ km}$$\n$$h = 9000\\text{ km} - 6400\\text{ km} = 2600\\text{ km}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The kinetic energies of a planet in an elliptical orbit about the Sun, at positions $A, B$ and $C$ are $K_A, K_B$ and $K_C$ respectively. $A$ is the perihelion and $C$ is the aphelion. Then: (NEET 2018)",
+          "image": "",
+          "options": [
+            "$K_A > K_B > K_C$",
+            "$K_B < K_A < K_C$",
+            "$K_A < K_B < K_C$",
+            "$K_B > K_A > K_C$"
+          ],
+          "correctOption": 0,
+          "solution": "From conservation of angular momentum, $v \\propto \\frac{1}{r}$.\nSince distance from Sun is $r_A < r_B < r_C$, the orbital speeds follow $v_A > v_B > v_C$, and kinetic energy $K \\propto v^2 \\implies K_A > K_B > K_C$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Kepler's third law states that $T^2 \\propto r^3$, where $T$ is the time period of a planet and $r$ is the semi-major axis of its orbit. The constant of proportionality depends on:",
+          "image": "",
+          "options": [
+            "Mass of the Sun only",
+            "Mass of the planet only",
+            "Both mass of Sun and mass of planet",
+            "Neither mass of Sun nor mass of planet"
+          ],
+          "correctOption": 0,
+          "solution": "From $T^2 = \\left(\\frac{4\\pi^2}{GM_s}\\right)r^3$, the constant of proportionality $\\frac{4\\pi^2}{GM_s}$ depends solely on universal constant $G$ and the mass of the central attracting body (the Sun)."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The value of acceleration due to gravity $g$ at the equator is less than that at the poles due to:",
+          "image": "",
+          "options": [
+            "Earth's rotation and equatorial bulge",
+            "Earth's rotation only",
+            "Earth's equatorial bulge only",
+            "Variation in solar distance"
+          ],
+          "correctOption": 0,
+          "solution": "$g(\\lambda) = g - R\\omega^2\\cos^2\\lambda$. At equator ($\\lambda = 0^\\circ$), centrifugal reduction $R\\omega^2$ is maximum, and the equatorial radius is also larger by $\\approx 21\\text{ km}$ ($g \\propto 1/R^2$)."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two spherical bodies of masses $M$ and $5M$ and radii $R$ and $2R$ are released in free space with initial separation between their centers equal to $12R$. If they attract each other due to gravitational force only, the distance covered by the smaller body just before collision is:",
+          "image": "",
+          "options": [
+            "$7.5R$",
+            "$4.5R$",
+            "$1.5R$",
+            "$2.5R$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial distance between surfaces $= 12R - (R + 2R) = 9R$.\nSince center of mass remains stationary: $M x_1 = 5M x_2 \\implies x_1 = 5x_2$.\n$$x_1 + x_2 = 9R \\implies 6x_2 = 9R \\implies x_2 = 1.5R$$\n$$x_1 = 5(1.5R) = 7.5R$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A geostationary satellite orbits around the Earth in a circular orbit of radius $36000\\text{ km}$. The time period of a spy satellite orbiting a few hundred kilometers above the Earth's surface ($R_{\\text{orbit}} \\approx 6400\\text{ km}$) is approximately:",
+          "image": "",
+          "options": [
+            "$\\approx 1.4\\text{ hours}$",
+            "$\\approx 2\\text{ hours}$",
+            "$\\approx 6\\text{ hours}$",
+            "$\\approx 12\\text{ hours}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using $T = 2\\pi \\sqrt{\\frac{R}{g}} = 2\\pi \\sqrt{\\frac{6.4 \\times 10^6}{9.8}} \\approx 5078\\text{ s} \\approx 84.6\\text{ minutes} \\approx 1.41\\text{ hours}$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The total energy of an Earth satellite orbiting in a circular path of radius $r$ is $E$. Its kinetic energy is:",
+          "image": "",
+          "options": [
+            "$-E$",
+            "$E$",
+            "$2E$",
+            "$-E/2$"
+          ],
+          "correctOption": 0,
+          "solution": "For a circular orbit: $K = \\frac{GMm}{2r}$, $U = -\\frac{GMm}{r}$, and $E = -\\frac{GMm}{2r}$.\nThus, $K = -E$ (since total energy $E$ is negative, $K = |E|$ is positive)."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the acceleration due to gravity at a height $h$ above the earth's surface is the same as that at a depth $d$ below the surface (where $h \\ll R$), then:",
+          "image": "",
+          "options": [
+            "$d = 2h$",
+            "$d = h$",
+            "$d = h/2$",
+            "$d = 4h$"
+          ],
+          "correctOption": 0,
+          "solution": "For $h \\ll R$: $g_h = g\\left(1 - \\frac{2h}{R}\\right)$.\nAt depth $d$: $g_d = g\\left(1 - \\frac{d}{R}\\right)$.\nEquating both: $1 - \\frac{2h}{R} = 1 - \\frac{d}{R} \\implies d = 2h$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The escape speed of a body on the earth's surface is $11.2\\text{ km/s}$. A body is projected with thrice this speed. What is the speed of the body when it escapes to infinity?",
+          "image": "",
+          "options": [
+            "$22.4\\sqrt{2}\\text{ km/s}$",
+            "$33.6\\text{ km/s}$",
+            "$11.2\\sqrt{2}\\text{ km/s}$",
+            "$22.4\\text{ km/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "By conservation of mechanical energy:\n$$\\frac{1}{2}m v_0^2 - \\frac{GMm}{R} = \\frac{1}{2}m v_\\infty^2 \\implies v_\\infty = \\sqrt{v_0^2 - v_e^2}$$\n$$v_\\infty = \\sqrt{(3v_e)^2 - v_e^2} = \\sqrt{8v_e^2} = 2\\sqrt{2}v_e = 2\\sqrt{2}(11.2) = 22.4\\sqrt{2}\\text{ km/s}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The time period of a simple pendulum inside a satellite orbiting the earth in a circular path is:",
+          "image": "",
+          "options": [
+            "Infinite",
+            "Zero",
+            "$2\\text{ seconds}$",
+            "$2\\pi\\sqrt{\\frac{L}{g}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Inside an orbiting satellite, there is an effective state of weightlessness ($g_{\\text{eff}} = 0$).\n$$T = 2\\pi \\sqrt{\\frac{L}{g_{\\text{eff}}}} = 2\\pi \\sqrt{\\frac{L}{0}} = \\infty$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The gravitational potential due to a uniform solid sphere of mass $M$ and radius $R$ at its centre is:",
+          "image": "",
+          "options": [
+            "$-\\frac{3}{2}\\frac{GM}{R}$",
+            "$-\\frac{GM}{R}$",
+            "$-\\frac{1}{2}\\frac{GM}{R}$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Potential inside a solid sphere is $V(r) = -\\frac{GM}{2R^3}(3R^2 - r^2)$.\nAt the centre ($r = 0$):\n$$V_{\\text{centre}} = -\\frac{3GM}{2R} = 1.5 V_{\\text{surface}}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the distance between the Earth and the Sun were halved, the duration of one year would become:",
+          "image": "",
+          "options": [
+            "$129\\text{ days}$",
+            "$182\\text{ days}$",
+            "$365\\text{ days}$",
+            "$730\\text{ days}$"
+          ],
+          "correctOption": 0,
+          "solution": "From Kepler's Third Law: $T^2 \\propto r^3 \\implies T' = T\\left(\\frac{r'}{r}\\right)^{3/2}$.\n$$T' = 365 \\times \\left(\\frac{1}{2}\\right)^{3/2} = \\frac{365}{2\\sqrt{2}} = \\frac{365}{2.828} \\approx 129\\text{ days}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "What is the binding energy of a satellite of mass $m$ in a circular orbit of radius $r$ around the Earth of mass $M$?",
+          "image": "",
+          "options": [
+            "$\\frac{GMm}{2r}$",
+            "$\\frac{GMm}{r}$",
+            "$-\\frac{GMm}{2r}$",
+            "$\\frac{2GMm}{r}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total energy of satellite is $E = -\\frac{GMm}{2r}$.\nBinding energy is the minimum energy required to liberate it to infinity:\n$$\\text{B.E.} = -E = \\frac{GMm}{2r}$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body is projected vertically upwards with a speed equal to $\\frac{v_e}{2}$ from the surface of the earth ($v_e$ is escape speed). The maximum height attained by the body above the surface is:",
+          "image": "",
+          "options": [
+            "$\\frac{R}{3}$",
+            "$\\frac{R}{2}$",
+            "$R$",
+            "$3R$"
+          ],
+          "correctOption": 0,
+          "solution": "Using conservation of mechanical energy:\n$$\\frac{1}{2}m\\left(\\frac{v_e}{2}\\right)^2 - \\frac{GMm}{R} = 0 - \\frac{GMm}{R+h}$$\nSince $v_e^2 = \\frac{2GM}{R}$:\n$$\\frac{1}{2}\\left(\\frac{2GM}{4R}\\right) - \\frac{GM}{R} = -\\frac{GM}{R+h} \\implies \\frac{1}{4R} - \\frac{1}{R} = -\\frac{1}{R+h}$$\n$$-\\frac{3}{4R} = -\\frac{1}{R+h} \\implies 3(R+h) = 4R \\implies 3h = R \\implies h = \\frac{R}{3}$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A geostationary satellite revolves around the earth in:",
+          "image": "",
+          "options": [
+            "Equatorial plane from West to East",
+            "Equatorial plane from East to West",
+            "Polar plane from North to South",
+            "Any plane inclined at $45^\\circ$ to the equator"
+          ],
+          "correctOption": 0,
+          "solution": "A geostationary satellite must orbit in the equatorial plane in the same sense as Earth's rotation (from West to East) with a time period of $24\\text{ hours}$."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The areal velocity of a planet revolving around the sun in an elliptical orbit is proportional to its:",
+          "image": "",
+          "options": [
+            "Angular momentum",
+            "Linear momentum",
+            "Total energy",
+            "Potential energy"
+          ],
+          "correctOption": 0,
+          "solution": "Areal velocity is given by $\\frac{dA}{dt} = \\frac{L}{2m}$, where $L$ is the angular momentum of the planet about the Sun."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $g$ is the acceleration due to gravity on the earth's surface, the gain in potential energy of an object of mass $m$ raised from the surface to a height $h = 2R$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{2}{3}mgR$",
+            "$\\frac{1}{3}mgR$",
+            "$2mgR$",
+            "$\\frac{1}{2}mgR$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\Delta U = \\frac{mgh}{1 + h/R} = \\frac{mg(2R)}{1 + 2R/R} = \\frac{2mgR}{3} = \\frac{2}{3}mgR$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The orbital speed of an artificial satellite in a circular orbit just above the earth's surface is $v_0$. For a satellite orbiting at an altitude equal to the earth's radius, its orbital speed is:",
+          "image": "",
+          "options": [
+            "$\\frac{v_0}{\\sqrt{2}}$",
+            "$\\frac{v_0}{2}$",
+            "$\\sqrt{2}v_0$",
+            "$2v_0$"
+          ],
+          "correctOption": 0,
+          "solution": "Orbital velocity $v = \\sqrt{\\frac{GM}{r}}$.\nNear surface ($r = R$): $v_0 = \\sqrt{\\frac{GM}{R}}$.\nAt altitude $h = R$ ($r = 2R$):\n$$v' = \\sqrt{\\frac{GM}{2R}} = \\frac{v_0}{\\sqrt{2}}$$"
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The gravitational force between two point masses $m_1$ and $m_2$ separated by a distance $r$ inside a medium of dielectric constant $K$ is:",
+          "image": "",
+          "options": [
+            "Independent of the intervening medium",
+            "Decreased by factor $K$",
+            "Increased by factor $K$",
+            "Decreased by factor $K^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Gravitational force is purely universal and depends only on the masses and separation ($F = \\frac{G m_1 m_2}{r^2}$). It is completely independent of the intervening physical medium."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the earth ceases to rotate about its axis, the value of acceleration due to gravity at the equator will:",
+          "image": "",
+          "options": [
+            "Increase by $R\\omega^2$",
+            "Decrease by $R\\omega^2$",
+            "Remain unchanged",
+            "Become zero"
+          ],
+          "correctOption": 0,
+          "solution": "Apparent $g$ at the equator is $g' = g - R\\omega^2$. If rotation stops ($\\omega = 0$), $g'$ increases to $g$, which is an increase of $R\\omega^2$."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A tunnel is dug across the diameter of the earth. A ball of mass $m$ is dropped into the tunnel. The motion of the ball is:",
+          "image": "",
+          "options": [
+            "Simple harmonic with time period $T = 2\\pi\\sqrt{\\frac{R}{g}}$",
+            "Parabolic motion",
+            "Rotational motion with period $24\\text{ hours}$",
+            "Comes to rest permanently at the center"
+          ],
+          "correctOption": 0,
+          "solution": "Force inside the Earth at distance $r$ from center is $F = -\\left(\\frac{GMm}{R^3}\\right)r = -\\left(\\frac{mg}{R}\\right)r$, which is linear restoring force. The body executes SHM with $T = 2\\pi\\sqrt{\\frac{R}{g}} \\approx 84.6\\text{ minutes}$."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two satellites $A$ and $B$ of masses $m$ and $2m$ revolve around the earth in circular orbits of radii $r$ and $2r$ respectively. The ratio of their orbital speeds $v_A / v_B$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{2} : 1$",
+            "$1 : \\sqrt{2}$",
+            "$1 : 2$",
+            "$2 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Orbital velocity $v = \\sqrt{\\frac{GM}{r}}$ (independent of the mass of satellite).\n$$\\frac{v_A}{v_B} = \\sqrt{\\frac{r_B}{r_A}} = \\sqrt{\\frac{2r}{r}} = \\sqrt{2} : 1$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of the kinetic energy required to be given to a satellite to escape from earth's surface to the kinetic energy required to put it into an orbit close to earth's surface is:",
+          "image": "",
+          "options": [
+            "$2 : 1$",
+            "$1 : 2$",
+            "$4 : 1$",
+            "$\\sqrt{2} : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "$$K_{\\text{escape}} = \\frac{1}{2}m v_e^2 = \\frac{1}{2}m\\left(\\frac{2GM}{R}\\right) = \\frac{GMm}{R}$$\n$$K_{\\text{orbit}} = \\frac{1}{2}m v_0^2 = \\frac{1}{2}m\\left(\\frac{GM}{R}\\right) = \\frac{GMm}{2R}$$\n$$\\frac{K_{\\text{escape}}}{K_{\\text{orbit}}} = \\frac{GMm/R}{GMm/2R} = 2 : 1$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The gravitational potential at a point in space is $V = -\\frac{K}{r}$ where $K$ is a constant. The gravitational field intensity $\\vec{E}$ at that point is:",
+          "image": "",
+          "options": [
+            "$-\\frac{K}{r^2}\\hat{r}$",
+            "$\\frac{K}{r^2}\\hat{r}$",
+            "$-\\frac{K}{r}\\hat{r}$",
+            "$\\frac{K}{r^3}\\hat{r}$"
+          ],
+          "correctOption": 0,
+          "solution": "Gravitational field is negative gradient of potential:\n$$\\vec{E} = -\\frac{dV}{dr}\\hat{r} = -\\frac{d}{dr}\\left(-\\frac{K}{r}\\right)\\hat{r} = -\\left(\\frac{K}{r^2}\\right)\\hat{r} = -\\frac{K}{r^2}\\hat{r}$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the density of a planet is doubled keeping its radius constant, the acceleration due to gravity on its surface becomes:",
+          "image": "",
+          "options": [
+            "Doubled",
+            "Halved",
+            "Four times",
+            "Unchanged"
+          ],
+          "correctOption": 0,
+          "solution": "$g = \\frac{4}{3}\\pi G \\rho R \\propto \\rho R$.\nKeeping $R$ constant, doubling density ($\\rho' = 2\\rho$) doubles the surface gravity ($g' = 2g$)."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A rocket is launched vertically from the surface of the earth with an initial velocity $v = \\sqrt{\\frac{GM}{R}}$. The maximum distance from the centre of the earth reached by the rocket is:",
+          "image": "",
+          "options": [
+            "$2R$",
+            "$\\frac{3}{2}R$",
+            "$3R$",
+            "$4R$"
+          ],
+          "correctOption": 0,
+          "solution": "By conservation of mechanical energy:\n$$\\frac{1}{2}m v^2 - \\frac{GMm}{R} = -\\frac{GMm}{r_{\\text{max}}}$$\n$$\\frac{1}{2}m\\left(\\frac{GM}{R}\\right) - \\frac{GMm}{R} = -\\frac{GMm}{r_{\\text{max}}} \\implies -\\frac{GMm}{2R} = -\\frac{GMm}{r_{\\text{max}}} \\implies r_{\\text{max}} = 2R$$"
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The period of revolution of planet $A$ around the Sun is 8 times that of planet $B$. The distance of $A$ from the Sun is how many times the distance of $B$ from the Sun?",
+          "image": "",
+          "options": [
+            "4",
+            "2",
+            "8",
+            "16"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\frac{r_A}{r_B} = \\left(\\frac{T_A}{T_B}\\right)^{2/3} = (8)^{2/3} = (2^3)^{2/3} = 2^2 = 4$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "What is the percentage decrease in the weight of a body when it is taken to a height of $32\\text{ km}$ above the surface of the earth? $(R = 6400\\text{ km})$",
+          "image": "",
+          "options": [
+            "$1\\%$",
+            "$0.5\\%$",
+            "$2\\%$",
+            "$4\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "Fractional decrease in weight for $h \\ll R$:\n$$\\frac{\\Delta W}{W} = \\frac{2h}{R} = \\frac{2 \\times 32\\text{ km}}{6400\\text{ km}} = \\frac{64}{6400} = 0.01 = 1\\%$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Three equal masses $M$ are situated at the three corners of an equilateral triangle of side $a$. The gravitational potential at the centroid of the triangle is:",
+          "image": "",
+          "options": [
+            "$-3\\sqrt{3}\\frac{GM}{a}$",
+            "$-\\sqrt{3}\\frac{GM}{a}$",
+            "$-3\\frac{GM}{a}$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Distance from each vertex to centroid is $r = \\frac{a}{\\sqrt{3}}$.\nTotal potential $V = 3 \\times \\left(-\\frac{GM}{r}\\right) = 3 \\left(-\\frac{GM}{a/\\sqrt{3}}\\right) = -3\\sqrt{3}\\frac{GM}{a}$."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The orbital angular momentum of a satellite of mass $m$ revolving in a circular orbit of radius $r$ around the Earth of mass $M$ is proportional to:",
+          "image": "",
+          "options": [
+            "$\\sqrt{r}$",
+            "$r$",
+            "$r^{3/2}$",
+            "$r^{-1/2}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$L = m v r = m \\left(\\sqrt{\\frac{GM}{r}}\\right) r = m\\sqrt{G M r} \\propto \\sqrt{r}$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "At what depth below the surface of the earth does the acceleration due to gravity reduce to $25\\%$ of its value on the surface? $(R = 6400\\text{ km})$",
+          "image": "",
+          "options": [
+            "$4800\\text{ km}$",
+            "$1600\\text{ km}$",
+            "$3200\\text{ km}$",
+            "$2400\\text{ km}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$g_d = g\\left(1 - \\frac{d}{R}\\right) = 0.25g \\implies 1 - \\frac{d}{R} = 0.25 \\implies \\frac{d}{R} = 0.75$$\n$$d = 0.75 R = 0.75 \\times 6400\\text{ km} = 4800\\text{ km}$$"
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The escape velocity of a body from the earth depends on:",
+          "image": "",
+          "options": [
+            "Mass and radius of the earth only",
+            "Mass of the projected body",
+            "Angle of projection with horizontal",
+            "Direction of projection"
+          ],
+          "correctOption": 0,
+          "solution": "$v_e = \\sqrt{\\frac{2GM}{R}}$. It depends only on the mass $M$ and radius $R$ of the planet and is independent of the mass or projection angle of the body."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If an artificial satellite is orbiting very close to the surface of the earth, its orbital velocity is roughly:",
+          "image": "",
+          "options": [
+            "$7.92\\text{ km/s}$",
+            "$11.2\\text{ km/s}$",
+            "$9.8\\text{ km/s}$",
+            "$5.6\\text{ km/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$v_0 = \\sqrt{gR} = \\sqrt{9.8 \\times 6.4 \\times 10^6} \\approx 7.92 \\times 10^3\\text{ m/s} = 7.92\\text{ km/s}$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $m$ is placed on the surface of a spherical shell of mass $M$ and radius $R$. The gravitational force exerted on the body by the shell is:",
+          "image": "",
+          "options": [
+            "$\\frac{GMm}{R^2}$",
+            "Zero",
+            "$\\frac{GMm}{2R^2}$",
+            "$\\frac{2GMm}{R^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "For any point situated on or outside a spherical shell, the shell acts gravitationally as if its entire mass is concentrated at its centre: $F = \\frac{GMm}{R^2}$."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of the orbital radius of two satellites around a planet is $1 : 4$. The ratio of their orbital time periods is:",
+          "image": "",
+          "options": [
+            "$1 : 8$",
+            "$1 : 4$",
+            "$1 : 2$",
+            "$1 : 16$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\frac{T_1}{T_2} = \\left(\\frac{r_1}{r_2}\\right)^{3/2} = \\left(\\frac{1}{4}\\right)^{3/2} = \\frac{1}{8} = 1 : 8$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the gravitational acceleration at latitude $\\lambda$ is given by $g' = g - R\\omega^2\\cos^2\\lambda$, what is the change in value of $g$ at the poles as Earth rotates?",
+          "image": "",
+          "options": [
+            "Zero",
+            "$R\\omega^2$",
+            "$\\frac{1}{2}R\\omega^2$",
+            "$2R\\omega^2$"
+          ],
+          "correctOption": 0,
+          "solution": "At the poles, latitude $\\lambda = 90^\\circ \\implies \\cos 90^\\circ = 0$. Thus, $g_{\\text{pole}} = g$, meaning rotation does not affect gravity at the poles."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An astronaut inside an earth satellite experiences weightlessness because:",
+          "image": "",
+          "options": [
+            "The astronaut is in a state of free fall towards the earth with the satellite",
+            "Gravitational pull of earth is zero in orbit",
+            "Centrifugal force exactly destroys gravitational mass",
+            "No atmosphere is present in outer space"
+          ],
+          "correctOption": 0,
+          "solution": "The satellite and the astronaut accelerate towards Earth with the same centripetal acceleration ($a = g_{\\text{orbit}}$). Since both are in continuous free fall together, the normal contact force between the astronaut and the satellite floor is zero."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The escape velocity from the surface of Earth is $v_e$. If a satellite is moving in a circular orbit close to the surface of Earth with speed $v_0$, the relation between $v_e$ and $v_0$ is:",
+          "image": "",
+          "options": [
+            "$v_e = \\sqrt{2}v_0$",
+            "$v_e = 2v_0$",
+            "$v_0 = \\sqrt{2}v_e$",
+            "$v_e = v_0$"
+          ],
+          "correctOption": 0,
+          "solution": "$$v_e = \\sqrt{\\frac{2GM}{R}} = \\sqrt{2} \\sqrt{\\frac{GM}{R}} = \\sqrt{2} v_0$$"
+        }
+      ]
+    }
+  ]
+}
