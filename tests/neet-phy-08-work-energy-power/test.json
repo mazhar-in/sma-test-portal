@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-08-work-energy-power",
+  "title": "Work, Energy, Power & Collisions",
+  "syllabus": "Work done by a constant force and a variable force, Kinetic and potential energies, Work-energy theorem, Power, Potential energy of a spring, Conservation of mechanical energy, Conservative and non-conservative forces, Motion in a vertical circle, Elastic and inelastic collisions in one and two dimensions",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle of mass $m$ is moving in a circular path of constant radius $r$ such that its centripetal acceleration $a_c$ varies with time $t$ as $a_c = k^2 r t^2$, where $k$ is a constant. The power delivered to the particle by the forces acting on it is: (NEET 2018)",
+          "image": "",
+          "options": [
+            "$2\\pi m k^2 r^2 t$",
+            "$m k^2 r^2 t$",
+            "$\\frac{m k^4 r^2 t^5}{3}$",
+            "Zero"
+          ],
+          "correctOption": 1,
+          "solution": "Centripetal acceleration $a_c = \\frac{v^2}{r} = k^2 r t^2 \\implies v = k r t$.\nTangential acceleration $a_t = \\frac{dv}{dt} = k r$.\nTangential force $F_t = m a_t = m k r$.\nSince centripetal force does no work, total power delivered is by tangential force:\n$$P = F_t v = (m k r)(k r t) = m k^2 r^2 t$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $1\\text{ kg}$ begins to move under the action of a time dependent force $\\vec{F} = (2t\\hat{i} + 3t^2\\hat{j})\\text{ N}$, where $\\hat{i}$ and $\\hat{j}$ are unit vectors along x and y axis. What power will be developed by the force at the time $t$? (NEET 2016)",
+          "image": "",
+          "options": [
+            "$(2t^2 + 3t^3)\\text{ W}$",
+            "$(2t^3 + 3t^4)\\text{ W}$",
+            "$(2t^3 + 3t^5)\\text{ W}$",
+            "$(2t + 3t^2)\\text{ W}$"
+          ],
+          "correctOption": 2,
+          "solution": "Acceleration $\\vec{a} = \\frac{\\vec{F}}{m} = (2t\\hat{i} + 3t^2\\hat{j})\\text{ m/s}^2$.\nVelocity $\\vec{v} = \\int \\vec{a}\\,dt = \\left(t^2\\hat{i} + t^3\\hat{j}\\right)\\text{ m/s}$.\nPower $P = \\vec{F} \\cdot \\vec{v} = (2t)(t^2) + (3t^2)(t^3) = (2t^3 + 3t^5)\\text{ W}$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A moving block having mass $m$, collides with another stationary block having mass $4m$. The lighter block comes to rest after collision. When the initial velocity of the lighter block is $v$, then the value of coefficient of restitution $(e)$ will be: (NEET 2018)",
+          "image": "",
+          "options": [
+            "$0.5$",
+            "$0.25$",
+            "$0.8$",
+            "$0.4$"
+          ],
+          "correctOption": 1,
+          "solution": "Conservation of linear momentum:\n$$m v + 4m(0) = m(0) + 4m v_2 \\implies v_2 = \\frac{v}{4}$$\nCoefficient of restitution:\n$$e = \\frac{\\text{Velocity of separation}}{\\text{Velocity of approach}} = \\frac{v_2 - 0}{v - 0} = \\frac{v/4}{v} = 0.25$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A bullet of mass $10\\text{ g}$ leaves a rifle at an initial velocity of $1000\\text{ m/s}$ and strikes the earth at the same level with a velocity of $500\\text{ m/s}$. The work done in overcoming the resistance of air will be: (NEET 2022)",
+          "image": "",
+          "options": [
+            "$-3750\\text{ J}$",
+            "$-5000\\text{ J}$",
+            "$3750\\text{ J}$",
+            "$-1250\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "By Work-Energy Theorem:\n$$W_{\\text{air}} = \\Delta K = \\frac{1}{2}m(v_f^2 - v_i^2) = \\frac{1}{2}(0.010)\\left(500^2 - 1000^2\\right)$$\n$$W_{\\text{air}} = 0.005(250000 - 1000000) = 0.005(-750000) = -3750\\text{ J}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two similar springs $P$ and $Q$ have spring constants $k_P$ and $k_Q$, such that $k_P > k_Q$. They are stretched, first by the same amount (case a,) and then by the same force (case b). The work done by the springs $W_P$ and $W_Q$ are related as, in case (a) and case (b), respectively: (NEET 2015)",
+          "image": "",
+          "options": [
+            "$W_P > W_Q$; $W_Q > W_P$",
+            "$W_P < W_Q$; $W_Q < W_P$",
+            "$W_P = W_Q$; $W_P > W_Q$",
+            "$W_P = W_Q$; $W_P < W_Q$"
+          ],
+          "correctOption": 0,
+          "solution": "Case (a): Same elongation $x$. $W = \\frac{1}{2}kx^2 \\propto k$. Since $k_P > k_Q \\implies W_P > W_Q$.\nCase (b): Same force $F$. $W = \\frac{F^2}{2k} \\propto \\frac{1}{k}$. Since $k_P > k_Q \\implies W_Q > W_P$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force $F = 20 + 10y$ acts on a particle in $y$-direction where $F$ is in newton and $y$ in meter. Work done by this force to move the particle from $y = 0$ to $y = 1\\text{ m}$ is: (NEET 2019)",
+          "image": "",
+          "options": [
+            "$30\\text{ J}$",
+            "$25\\text{ J}$",
+            "$20\\text{ J}$",
+            "$5\\text{ J}$"
+          ],
+          "correctOption": 1,
+          "solution": "$$W = \\int_{0}^{1} F\\,dy = \\int_{0}^{1} (20 + 10y)\\,dy = \\left[ 20y + 5y^2 \\right]_0^1 = 20(1) + 5(1)^2 = 25\\text{ J}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An engine pumps water continuously through a hose. Water leaves the hose with a velocity $v$ and $m$ is the mass per unit length of the water jet. What is the rate at which kinetic energy is imparted to water? (NEET 2020)",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2} m v^2$",
+            "$\\frac{1}{2} m v^3$",
+            "$m v^3$",
+            "$\\frac{1}{2} m^2 v^2$"
+          ],
+          "correctOption": 1,
+          "solution": "Mass flow rate $\\frac{dM}{dt} = m \\cdot \\frac{dx}{dt} = m v$.\nRate of kinetic energy imparted (Power):\n$$P = \\frac{dK}{dt} = \\frac{1}{2} \\left(\\frac{dM}{dt}\\right) v^2 = \\frac{1}{2} (m v) v^2 = \\frac{1}{2} m v^3$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $(4m)$ is lying in $x\\text{-}y$ plane at rest. It suddenly explodes into three pieces. Two pieces, each of mass $(m)$ move along the perpendicular axes with equal speed $(v)$. The total kinetic energy generated due to explosion is: (NEET 2014)",
+          "image": "",
+          "options": [
+            "$m v^2$",
+            "$\\frac{3}{2} m v^2$",
+            "$2 m v^2$",
+            "$4 m v^2$"
+          ],
+          "correctOption": 1,
+          "solution": "Remaining third piece has mass $M_3 = 4m - m - m = 2m$.\nBy linear momentum conservation: $\\vec{p}_3 = -(mv\\hat{i} + mv\\hat{j}) \\implies p_3 = \\sqrt{(mv)^2 + (mv)^2} = \\sqrt{2}mv$.\nVelocity of 3rd piece $v_3 = \\frac{\\sqrt{2}mv}{2m} = \\frac{v}{\\sqrt{2}}$.\n$$K_{\\text{total}} = \\frac{1}{2}m v^2 + \\frac{1}{2}m v^2 + \\frac{1}{2}(2m)\\left(\\frac{v}{\\sqrt{2}}\\right)^2 = mv^2 + \\frac{1}{2}mv^2 = \\frac{3}{2}mv^2$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A block of mass $M$ is attached to the lower end of a vertical spring. The spring is hung from a ceiling and has force constant value $k$. The mass is released from rest with the spring initially unstretched. The maximum extension produced in the length of the spring will be:",
+          "image": "",
+          "options": [
+            "$\\frac{2Mg}{k}$",
+            "$\\frac{Mg}{k}$",
+            "$\\frac{Mg}{2k}$",
+            "$\\frac{4Mg}{k}$"
+          ],
+          "correctOption": 0,
+          "solution": "By conservation of mechanical energy between initial unstretched state and lowest extreme point:\n$$\\Delta U_{\\text{grav}} + \\Delta U_{\\text{spring}} = 0 \\implies -Mg x_{\\text{max}} + \\frac{1}{2}k x_{\\text{max}}^2 = 0$$\n$$x_{\\text{max}} = \\frac{2Mg}{k}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force $\\vec{F} = (5\\hat{i} + 3\\hat{j} + 2\\hat{k})\\text{ N}$ is applied over a particle which displaces it from its origin to the point $\\vec{r} = (2\\hat{i} - \\hat{j})\\text{ m}$. The work done on the particle in joules is:",
+          "image": "",
+          "options": [
+            "$-7$",
+            "$7$",
+            "$10$",
+            "$13$"
+          ],
+          "correctOption": 1,
+          "solution": "$$W = \\vec{F} \\cdot \\vec{r} = (5)(2) + (3)(-1) + (2)(0) = 10 - 3 + 0 = 7\\text{ J}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A uniform chain of length $L$ and mass $M$ is lying on a smooth horizontal table and one-third of its length is hanging vertically down over the edge of the table. If $g$ is acceleration due to gravity, the work required to pull the hanging part on to the table is:",
+          "image": "",
+          "options": [
+            "$\\frac{MgL}{18}$",
+            "$\\frac{MgL}{9}$",
+            "$\\frac{MgL}{6}$",
+            "$\\frac{MgL}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "Hanging mass $m = \\frac{M}{3}$. Its center of mass is at a depth $h_{\\text{cm}} = \\frac{L/3}{2} = \\frac{L}{6}$ below the table.\nWork required to pull the chain onto the table:\n$$W = m g h_{\\text{cm}} = \\left(\\frac{M}{3}\\right) g \\left(\\frac{L}{6}\\right) = \\frac{MgL}{18}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The potential energy of a particle in a force field is $U = \\frac{A}{r^2} - \\frac{B}{r}$, where $A$ and $B$ are positive constants and $r$ is the distance of particle from the center of the field. For stable equilibrium, the distance of the particle is:",
+          "image": "",
+          "options": [
+            "$\\frac{2A}{B}$",
+            "$\\frac{A}{B}$",
+            "$\\frac{B}{2A}$",
+            "$\\frac{B}{A}$"
+          ],
+          "correctOption": 0,
+          "solution": "For equilibrium, $F = -\\frac{dU}{dr} = 0$.\n$$-\\frac{dU}{dr} = -\\left(-\\frac{2A}{r^3} + \\frac{B}{r^2}\\right) = \\frac{2A}{r^3} - \\frac{B}{r^2} = 0 \\implies \\frac{2A}{r^3} = \\frac{B}{r^2} \\implies r = \\frac{2A}{B}$$\nSince $\\left.\\frac{d^2U}{dr^2}\\right|_{r=2A/B} > 0$, this point represents stable equilibrium."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $m$ tied to a string of length $L$ is whirled in a vertical circle. The difference between the tension in the string at the lowest point and the highest point is:",
+          "image": "",
+          "options": [
+            "$6mg$",
+            "$4mg$",
+            "$2mg$",
+            "$3mg$"
+          ],
+          "correctOption": 0,
+          "solution": "Tension at lowest point: $T_L = \\frac{m v_L^2}{L} + mg$.\nTension at highest point: $T_H = \\frac{m v_H^2}{L} - mg$.\nFrom conservation of energy: $v_L^2 - v_H^2 = 4gL$.\n$$T_L - T_H = \\frac{m(v_L^2 - v_H^2)}{L} + 2mg = \\frac{m(4gL)}{L} + 2mg = 4mg + 2mg = 6mg$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A mass $m$ moving horizontally with velocity $v$ collides elastically with another identical mass $m$ at rest. After collision, the velocity of the first mass becomes:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$v$",
+            "$v/2$",
+            "$-v$"
+          ],
+          "correctOption": 0,
+          "solution": "In a 1D head-on elastic collision between two equal masses ($m_1 = m_2$), they completely exchange their velocities.\nTherefore, $v_1' = u_2 = 0$ and $v_2' = u_1 = v$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the kinetic energy of a body is increased by $300\\%$, the percentage increase in its momentum will be:",
+          "image": "",
+          "options": [
+            "$100\\%$",
+            "$200\\%$",
+            "$150\\%$",
+            "$300\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "$p = \\sqrt{2mK}$.\nWhen kinetic energy increases by $300\\%$, $K' = K + 3K = 4K$.\nNew momentum $p' = \\sqrt{2m(4K)} = 2\\sqrt{2mK} = 2p$.\nPercentage increase in momentum $= \\frac{2p - p}{p} \\times 100\\% = 100\\%$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following forces is NON-CONSERVATIVE in nature?",
+          "image": "",
+          "options": [
+            "Friction force",
+            "Gravitational force",
+            "Electrostatic force",
+            "Spring restoring force"
+          ],
+          "correctOption": 0,
+          "solution": "Friction force is non-conservative because the work done by friction along a closed path is non-zero (work is dissipated as thermal energy)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves from point $P(1, 2, 3)$ to point $Q(2, 4, 6)$ under a constant force $\\vec{F} = (3\\hat{i} + 2\\hat{j} + 4\\hat{k})\\text{ N}$. The work done by the force is:",
+          "image": "",
+          "options": [
+            "$19\\text{ J}$",
+            "$15\\text{ J}$",
+            "$23\\text{ J}$",
+            "$7\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "Displacement vector $\\Delta\\vec{r} = \\vec{r}_Q - \\vec{r}_P = (2-1)\\hat{i} + (4-2)\\hat{j} + (6-3)\\hat{k} = \\hat{i} + 2\\hat{j} + 3\\hat{k}$.\n$$W = \\vec{F} \\cdot \\Delta\\vec{r} = (3)(1) + (2)(2) + (4)(3) = 3 + 4 + 12 = 19\\text{ J}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ball is dropped from a height $h$ on a horizontal floor. If the coefficient of restitution is $e$, the total distance travelled by the ball before coming to rest is:",
+          "image": "",
+          "options": [
+            "$h\\left(\\frac{1+e^2}{1-e^2}\\right)$",
+            "$h\\left(\\frac{1-e^2}{1+e^2}\\right)$",
+            "$\\frac{h}{1-e^2}$",
+            "$h\\left(\\frac{1+e}{1-e}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "$$H_{\\text{total}} = h + 2h_1 + 2h_2 + \\dots = h + 2(e^2 h) + 2(e^4 h) + \\dots$$\n$$H_{\\text{total}} = h + 2e^2 h(1 + e^2 + e^4 + \\dots) = h + \\frac{2e^2 h}{1 - e^2} = h\\left(1 + \\frac{2e^2}{1 - e^2}\\right) = h\\left(\\frac{1+e^2}{1-e^2}\\right)$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electric motor produces a tension of $4500\\text{ N}$ in a load-lifting cable and rolls it at the constant rate of $2\\text{ m/s}$. The power of the motor is:",
+          "image": "",
+          "options": [
+            "$9\\text{ kW}$",
+            "$4.5\\text{ kW}$",
+            "$18\\text{ kW}$",
+            "$2.25\\text{ kW}$"
+          ],
+          "correctOption": 0,
+          "solution": "Power $P = F \\cdot v = 4500\\text{ N} \\times 2\\text{ m/s} = 9000\\text{ W} = 9\\text{ kW}$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ball of mass $m$ moving with speed $u$ undergoes an oblique perfectly elastic collision with a smooth stationary identical ball. The angle between their final velocities after collision is:",
+          "image": "",
+          "options": [
+            "$90^\\circ$",
+            "$45^\\circ$",
+            "$60^\\circ$",
+            "$180^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "For two identical masses undergoing a non-head-on (oblique) elastic collision with one initially at rest, the angle between their final velocity vectors is always $90^\\circ$."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $2\\text{ kg}$ is thrown upward with an energy of $490\\text{ J}$. The height at which its kinetic energy becomes half of its initial value is: $(g = 9.8\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$12.5\\text{ m}$",
+            "$25\\text{ m}$",
+            "$50\\text{ m}$",
+            "$10\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "By conservation of mechanical energy:\n$$\\Delta U = \\Delta K = K_i - \\frac{1}{2}K_i = \\frac{1}{2}(490) = 245\\text{ J}$$\n$$mgh = 245 \\implies (2)(9.8)h = 245 \\implies 19.6h = 245 \\implies h = 12.5\\text{ m}$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A spring with spring constant $k$ is compressed by an amount $x$. A ball of mass $m$ held against it is released. The speed of the ball when the spring reaches its natural length is:",
+          "image": "",
+          "options": [
+            "$x\\sqrt{\\frac{k}{m}}$",
+            "$x\\sqrt{\\frac{m}{k}}$",
+            "$\\sqrt{\\frac{kx}{m}}$",
+            "$x\\frac{k}{m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Elastic potential energy is completely converted into kinetic energy:\n$$\\frac{1}{2}k x^2 = \\frac{1}{2}m v^2 \\implies v = x\\sqrt{\\frac{k}{m}}$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a perfectly inelastic collision between two bodies:",
+          "image": "",
+          "options": [
+            "Linear momentum is conserved but kinetic energy is not conserved",
+            "Both linear momentum and kinetic energy are conserved",
+            "Neither linear momentum nor kinetic energy is conserved",
+            "Kinetic energy is conserved but linear momentum is not conserved"
+          ],
+          "correctOption": 0,
+          "solution": "In any isolated collision, linear momentum is strictly conserved. In perfectly inelastic collisions, colliding bodies stick together and kinetic energy loss is maximized."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $0.5\\text{ kg}$ travels in a straight line with velocity $v = k x^{3/2}$ where $k = 5\\text{ m}^{-1/2}\\text{s}^{-1}$. The work done by the net force during its displacement from $x = 0$ to $x = 2\\text{ m}$ is:",
+          "image": "",
+          "options": [
+            "$50\\text{ J}$",
+            "$100\\text{ J}$",
+            "$25\\text{ J}$",
+            "$12.5\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "At $x = 0$, $v_i = 0$.\nAt $x = 2\\text{ m}$, $v_f = 5(2)^{3/2} = 5\\sqrt{8}\\text{ m/s} \\implies v_f^2 = 25 \\times 8 = 200\\text{ m}^2/\\text{s}^2$.\n$$W = \\Delta K = \\frac{1}{2}m(v_f^2 - v_i^2) = \\frac{1}{2}(0.5)(200 - 0) = 50\\text{ J}$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A bob attached to a light inextensible string of length $L$ is given a minimum horizontal speed $v_0$ at the lowest point such that the string becomes slack when the bob is at the level of the center of suspension (horizontal string position). The speed $v_0$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{3gL}$",
+            "$\\sqrt{2gL}$",
+            "$\\sqrt{5gL}$",
+            "$\\sqrt{gL}$"
+          ],
+          "correctOption": 0,
+          "solution": "At the horizontal level, $h = L$. For string to just become slack, tension $T = 0$.\nHorizontal radial force equation: $T = \\frac{m v^2}{L} = 0 \\implies v = 0$.\nBy conservation of energy: $\\frac{1}{2}m v_0^2 = mgL + 0 \\implies v_0 = \\sqrt{2gL}$ (for string slacking at angle $\\theta = 90^\\circ$). If it oscillates up to horizontal, $v_0 = \\sqrt{2gL}$. If string slackens at horizontal, $v_0 = \\sqrt{3gL}$."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force $\\vec{F} = -k(y\\hat{i} + x\\hat{j})$ (where $k$ is a positive constant) acts on a particle moving in the $x\\text{-}y$ plane. The force is:",
+          "image": "",
+          "options": [
+            "Conservative",
+            "Non-conservative",
+            "Centripetal",
+            "Frictional"
+          ],
+          "correctOption": 0,
+          "solution": "$$W = \\int \\vec{F} \\cdot d\\vec{r} = -k \\int (y\\,dx + x\\,dy) = -k \\int d(xy) = -k(x_f y_f - x_i y_i)$$\nSince the work done depends only on the initial and final coordinates (path independent), the force is conservative."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ball of mass $m$ hits a floor with speed $v$ at an angle of incidence $\\theta$ with the normal to the floor. If the coefficient of restitution is $e$, the angle of reflection $\\phi$ with the normal is given by:",
+          "image": "",
+          "options": [
+            "$\\tan\\phi = \\frac{\\tan\\theta}{e}$",
+            "$\\tan\\phi = e\\tan\\theta$",
+            "$\\tan\\phi = \\frac{e}{\\tan\\theta}$",
+            "$\\tan\\phi = \\tan\\theta$"
+          ],
+          "correctOption": 0,
+          "solution": "Parallel velocity component is unchanged: $v_t' = v\\sin\\theta$.\nNormal velocity component: $v_n' = e(v\\cos\\theta)$.\n$$\\tan\\phi = \\frac{v_t'}{v_n'} = \\frac{v\\sin\\theta}{e v\\cos\\theta} = \\frac{\\tan\\theta}{e}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle is released from height $S$ above the ground. At a certain height its kinetic energy is three times its potential energy. The height from the ground and its speed at that instant are respectively:",
+          "image": "",
+          "options": [
+            "$\\frac{S}{4}, \\sqrt{\\frac{3gS}{2}}$",
+            "$\\frac{S}{4}, \\frac{\\sqrt{3gS}}{2}$",
+            "$\\frac{S}{2}, \\sqrt{\\frac{3gS}{2}}$",
+            "$\\frac{S}{4}, \\sqrt{3gS}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total energy $E = mgS$.\nAt height $h$: $U = mgh$ and $K = 3U = 3mgh$.\n$E = K + U = 4mgh = mgS \\implies h = \\frac{S}{4}$.\n$$K = \\frac{1}{2}mv^2 = 3mg\\left(\\frac{S}{4}\\right) \\implies v^2 = \\frac{3gS}{2} \\implies v = \\sqrt{\\frac{3gS}{2}}$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A pump on the ground floor of a building can pump up water to fill a tank of volume $30\\text{ m}^3$ in $15\\text{ min}$. If the tank is $40\\text{ m}$ above the ground, and the efficiency of the pump is $30\\%$, how much electric power is consumed by the pump? $(g = 10\\text{ m/s}^2, \\rho = 1000\\text{ kg/m}^3)$",
+          "image": "",
+          "options": [
+            "$44.4\\text{ kW}$",
+            "$13.3\\text{ kW}$",
+            "$66.7\\text{ kW}$",
+            "$22.2\\text{ kW}$"
+          ],
+          "correctOption": 0,
+          "solution": "Mass of water $m = 30 \\times 1000 = 30000\\text{ kg}$.\nOutput power $P_{\\text{out}} = \\frac{mgh}{t} = \\frac{30000 \\times 10 \\times 40}{15 \\times 60} = \\frac{12000000}{900} = 13333.3\\text{ W}$.\n$$P_{\\text{in}} = \\frac{P_{\\text{out}}}{\\eta} = \\frac{13333.3}{0.30} \\approx 44444\\text{ W} = 44.4\\text{ kW}$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle of mass $m_1$ moving with velocity $u$ makes a head-on elastic collision with a stationary particle of mass $m_2$. The fraction of kinetic energy transferred to the second particle is:",
+          "image": "",
+          "options": [
+            "$\\frac{4m_1 m_2}{(m_1 + m_2)^2}$",
+            "$\\frac{m_1 m_2}{(m_1 + m_2)^2}$",
+            "$\\frac{2m_1 m_2}{(m_1 + m_2)^2}$",
+            "$\\frac{(m_1 - m_2)^2}{(m_1 + m_2)^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Final velocity of mass $m_2$: $v_2 = \\frac{2m_1}{m_1 + m_2}u$.\nFractional kinetic energy transferred:\n$$\\frac{K_2}{K_1} = \\frac{\\frac{1}{2}m_2 v_2^2}{\\frac{1}{2}m_1 u^2} = \\frac{m_2 \\left(\\frac{2m_1 u}{m_1 + m_2}\\right)^2}{m_1 u^2} = \\frac{4m_1 m_2}{(m_1 + m_2)^2}$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A vertical spring with force constant $k$ is fixed on a table. A ball of mass $m$ at a height $h$ above the free upper end of the spring falls vertically on the spring so that the spring is compressed by a distance $d$. The net work done in the whole process is:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$mg(h + d) - \\frac{1}{2}kd^2$",
+            "$mg(h + d) + \\frac{1}{2}kd^2$",
+            "$\\frac{1}{2}kd^2 - mg(h + d)$"
+          ],
+          "correctOption": 0,
+          "solution": "By Work-Energy Theorem: $W_{\\text{net}} = \\Delta K = K_f - K_i = 0 - 0 = 0$."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The relationship between conservative force $F$ and potential energy $U$ in one dimension is:",
+          "image": "",
+          "options": [
+            "$F = -\\frac{dU}{dx}$",
+            "$F = \\frac{dU}{dx}$",
+            "$F = -\\int U\\,dx$",
+            "$F = \\frac{d^2U}{dx^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Conservative force is defined as the negative gradient of potential energy: $F = -\\frac{dU}{dx}$."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle of mass $m$ is driven by a machine that delivers a constant power $k$ watts. If the particle starts from rest, the force on the particle at time $t$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{mk}{2}} t^{-1/2}$",
+            "$\\sqrt{2mk} t^{-1/2}$",
+            "$\\frac{1}{2}\\sqrt{mk} t^{-1/2}$",
+            "$\\sqrt{mk} t^{-1/2}$"
+          ],
+          "correctOption": 0,
+          "solution": "$P = k \\implies \\frac{1}{2}m v^2 = k t \\implies v = \\sqrt{\\frac{2kt}{m}} = \\sqrt{\\frac{2k}{m}} t^{1/2}$.\nAcceleration $a = \\frac{dv}{dt} = \\sqrt{\\frac{2k}{m}} \\left(\\frac{1}{2}t^{-1/2}\\right) = \\sqrt{\\frac{k}{2m}} t^{-1/2}$.\nForce $F = m a = m \\sqrt{\\frac{k}{2m}} t^{-1/2} = \\sqrt{\\frac{mk}{2}} t^{-1/2}$."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A light spring is compressed by $x_1$ and its stored elastic potential energy is $U_1$. When it is further compressed by another $x_1$ (total compression $2x_1$), the total stored energy becomes:",
+          "image": "",
+          "options": [
+            "$4U_1$",
+            "$2U_1$",
+            "$3U_1$",
+            "$8U_1$"
+          ],
+          "correctOption": 0,
+          "solution": "$U_1 = \\frac{1}{2}k x_1^2$.\nWhen total compression is $x_2 = 2x_1$:\n$$U_2 = \\frac{1}{2}k(2x_1)^2 = 4\\left(\\frac{1}{2}k x_1^2\\right) = 4U_1$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $m$ is suspended by a string of length $l$. What minimum horizontal velocity should be imparted to it at the lowest point so that it can just complete a full vertical circle?",
+          "image": "",
+          "options": [
+            "$\\sqrt{5gl}$",
+            "$\\sqrt{2gl}$",
+            "$\\sqrt{3gl}$",
+            "$\\sqrt{4gl}$"
+          ],
+          "correctOption": 0,
+          "solution": "To loop the loop, the critical velocity at the highest point must be $v_{\\text{top}} = \\sqrt{gl}$.\nBy conservation of mechanical energy:\n$$\\frac{1}{2}m v_{\\text{low}}^2 = \\frac{1}{2}m(gl) + mg(2l) = \\frac{5}{2}mgl \\implies v_{\\text{low}} = \\sqrt{5gl}$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force $F = -k x^2$ acts on a particle moving along the x-axis. The work done by this force in moving the particle from $x = 0$ to $x = d$ is:",
+          "image": "",
+          "options": [
+            "$-\\frac{kd^3}{3}$",
+            "$\\frac{kd^3}{3}$",
+            "$-\\frac{kd^2}{2}$",
+            "$-kd^3$"
+          ],
+          "correctOption": 0,
+          "solution": "$$W = \\int_{0}^{d} (-k x^2)\\,dx = -k \\left[ \\frac{x^3}{3} \\right]_0^d = -\\frac{kd^3}{3}$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ball of mass $m$ moving with speed $v$ collides head-on with an identical ball at rest. If the coefficient of restitution is $e$, the ratio of velocities of the two balls after collision $(v_1 / v_2)$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1-e}{1+e}$",
+            "$\\frac{1+e}{1-e}$",
+            "$\\frac{e-1}{e+1}$",
+            "$\\frac{1-e^2}{1+e^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "By conservation of momentum: $v_1 + v_2 = v$.\nBy Newton's restitution law: $v_2 - v_1 = e v$.\nSolving both equations gives $v_1 = \\frac{v(1-e)}{2}$ and $v_2 = \\frac{v(1+e)}{2}$.\n$$\\frac{v_1}{v_2} = \\frac{1-e}{1+e}$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The work done in stretching a spring by an additional extension $x$ from an initial stretched state of $x$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{3}{2}kx^2$",
+            "$\\frac{1}{2}kx^2$",
+            "$kx^2$",
+            "$2kx^2$"
+          ],
+          "correctOption": 0,
+          "solution": "$$W = U_f - U_i = \\frac{1}{2}k(2x)^2 - \\frac{1}{2}kx^2 = \\frac{1}{2}k(4x^2 - x^2) = \\frac{3}{2}kx^2$$"
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body is moved along a closed loop path in a gravitational field. The total work done by the gravitational force is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "Positive",
+            "Negative",
+            "Infinite"
+          ],
+          "correctOption": 0,
+          "solution": "Gravity is a conservative force field. The line integral of any conservative force over a closed path is identically zero: $\\oint \\vec{F}_g \\cdot d\\vec{r} = 0$."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two bodies with masses $m_1$ and $m_2$ have equal kinetic energies. If $p_1$ and $p_2$ are their respective linear momentums, then the ratio $p_1 / p_2$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{m_1}{m_2}}$",
+            "$\\frac{m_1}{m_2}$",
+            "$\\frac{m_2}{m_1}$",
+            "$\\sqrt{\\frac{m_2}{m_1}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Momentum $p = \\sqrt{2mK}$.\nSince $K_1 = K_2$:\n$$\\frac{p_1}{p_2} = \\frac{\\sqrt{2m_1 K}}{\\sqrt{2m_2 K}} = \\sqrt{\\frac{m_1}{m_2}}$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $2\\text{ kg}$ is sliding down an inclined plane of angle $30^\\circ$ from a height of $5\\text{ m}$. If the work done against friction is $20\\text{ J}$, the kinetic energy of the body at the bottom of the plane is: $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$80\\text{ J}$",
+            "$100\\text{ J}$",
+            "$60\\text{ J}$",
+            "$120\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total initial potential energy $U = mgh = 2 \\times 10 \\times 5 = 100\\text{ J}$.\nBy conservation of energy: $K_f = U - W_{\\text{friction}} = 100 - 20 = 80\\text{ J}$."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force $\\vec{F} = (2\\hat{i} + 4\\hat{j})\\text{ N}$ acts on a body of mass $2\\text{ kg}$ initially at rest. The instantaneous power delivered by the force at $t = 3\\text{ s}$ is:",
+          "image": "",
+          "options": [
+            "$30\\text{ W}$",
+            "$60\\text{ W}$",
+            "$15\\text{ W}$",
+            "$45\\text{ W}$"
+          ],
+          "correctOption": 0,
+          "solution": "Acceleration $\\vec{a} = \\frac{\\vec{F}}{m} = (\\hat{i} + 2\\hat{j})\\text{ m/s}^2$.\nAt $t = 3\\text{ s}$, velocity $\\vec{v} = \\vec{a}t = 3\\hat{i} + 6\\hat{j}\\text{ m/s}$.\nPower $P = \\vec{F} \\cdot \\vec{v} = (2)(3) + (4)(6) = 6 + 24 = 30\\text{ W}$."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A stone of mass $m$ tied to a string is rotated in a vertical circle of radius $R$. If the string just becomes slack at the top, the tension in the string when the stone is at the bottom of the circle is:",
+          "image": "",
+          "options": [
+            "$6mg$",
+            "$5mg$",
+            "$4mg$",
+            "$3mg$"
+          ],
+          "correctOption": 0,
+          "solution": "For string slacking at the top: $v_{\\text{top}} = \\sqrt{gR} \\implies v_{\\text{low}} = \\sqrt{5gR}$.\nAt the bottom point:\n$$T = \\frac{m v_{\\text{low}}^2}{R} + mg = \\frac{m(5gR)}{R} + mg = 5mg + mg = 6mg$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $m_1$ moving with speed $u$ collides head-on elastically with a stationary body of mass $m_2$. What is the condition for maximum transfer of kinetic energy from the first body to the second body?",
+          "image": "",
+          "options": [
+            "$m_1 = m_2$",
+            "$m_1 \\gg m_2$",
+            "$m_1 \\ll m_2$",
+            "$m_1 = 2m_2$"
+          ],
+          "correctOption": 0,
+          "solution": "Fractional energy transferred is $\\frac{4m_1 m_2}{(m_1 + m_2)^2}$. This expression reaches its maximum value of $1$ ($100\\%$ energy transfer) when $m_1 = m_2$."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force $F$ acting on a particle varies with displacement $x$ as shown by a trapezoid on an $F\\text{-}x$ graph, where $F$ increases linearly from $0$ to $10\\text{ N}$ between $x = 0$ and $x = 2\\text{ m}$, remains constant at $10\\text{ N}$ from $x = 2\\text{ m}$ to $x = 4\\text{ m}$, and decreases to $0$ at $x = 6\\text{ m}$. The total work done is:",
+          "image": "",
+          "options": [
+            "$40\\text{ J}$",
+            "$30\\text{ J}$",
+            "$50\\text{ J}$",
+            "$60\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "Work done is the area of the trapezoid under the $F\\text{-}x$ graph:\n$$\\text{Area} = \\frac{1}{2} \\times (\\text{sum of parallel sides}) \\times \\text{height} = \\frac{1}{2} \\times [(6 - 0) + (4 - 2)] \\times 10 = \\frac{1}{2} \\times (6 + 2) \\times 10 = 40\\text{ J}$$"
+        }
+      ]
+    }
+  ]
+}
