@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-19-electric-charges-and-fields",
+  "title": "Electric Charges and Fields",
+  "syllabus": "Electric charges: Conservation of charge, Coulomb's law-forces between two point charges, forces between multiple charges; superposition principle and continuous charge distribution. Electric field: Electric field due to a point charge, Electric field lines, Electric dipole, Electric field due to a dipole, Torque on a dipole in a uniform electric field. Electric flux, Statement of Gauss's theorem and its applications to find field due to infinitely long straight wire, uniformly charged infinite plane sheet, and uniformly charged thin spherical shell (field inside and outside).",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electric dipole is placed at an angle of $30^\\circ$ with an electric field intensity $2 \\times 10^5\\text{ N/C}$. It experiences a torque equal to $4\\text{ N}\\cdot\\text{m}$. The charge on the dipole, if the dipole length is $2\\text{ cm}$, is: (NEET 2016)",
+          "image": "",
+          "options": [
+            "$2\\text{ mC}$",
+            "$8\\text{ mC}$",
+            "$5\\text{ mC}$",
+            "$7\\text{ \\mu C}$"
+          ],
+          "correctOption": 0,
+          "solution": "Torque on a dipole in a uniform electric field is $\\tau = p E \\sin\\theta = (q \\cdot 2a) E \\sin\\theta$.\n$$4 = q \\times (0.02) \\times (2 \\times 10^5) \\times \\sin 30^\\circ$$\n$$4 = q \\times 2000 \\implies q = \\frac{4}{2000} = 2 \\times 10^{-3}\\text{ C} = 2\\text{ mC}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A spherical conductor of radius $10\\text{ cm}$ has a charge of $3.2 \\times 10^{-7}\\text{ C}$ distributed uniformly. What is the magnitude of electric field at a point $15\\text{ cm}$ from the centre of the sphere? $\\left(\\frac{1}{4\\pi\\varepsilon_0} = 9 \\times 10^9\\text{ N}\\cdot\\text{m}^2/\\text{C}^2\\right)$ (NEET 2020)",
+          "image": "",
+          "options": [
+            "$1.28 \\times 10^5\\text{ N/C}$",
+            "$1.28 \\times 10^6\\text{ N/C}$",
+            "$1.28 \\times 10^7\\text{ N/C}$",
+            "$1.28 \\times 10^4\\text{ N/C}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a point outside a uniformly charged spherical shell or conductor ($r > R$):\n$$E = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q}{r^2} = \\frac{(9 \\times 10^9) \\times (3.2 \\times 10^{-7})}{(0.15)^2} = \\frac{2880}{0.0225} = 1.28 \\times 10^5\\text{ N/C}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A hollow metal sphere of radius $R$ is uniformly charged. The electric field $E$ due to the sphere at a distance $r$ from the centre: (NEET 2019)",
+          "image": "",
+          "options": [
+            "Zero as $r$ increases for $r < R$, decreases as $r$ increases for $r > R$",
+            "Zero as $r$ increases for $r < R$, increases as $r$ increases for $r > R$",
+            "Decreases as $r$ increases for $r < R$ and for $r > R$",
+            "Increases as $r$ increases for $r < R$ and for $r > R$"
+          ],
+          "correctOption": 0,
+          "solution": "Inside a uniformly charged hollow spherical shell ($r < R$), the enclosed charge is zero, so $E = 0$ by Gauss's law. Outside the shell ($r > R$), $E = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q}{r^2}$, which decreases inversely as $r^2$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two point charges $-q$ and $+q$ are placed at a distance of $L$, as shown in the figure. The magnitude of electric field intensity at a distance $r$ ($r \\gg L$) on the axial line varies as: (NEET 2022)",
+          "image": "",
+          "options": [
+            "$\\frac{1}{r^3}$",
+            "$\\frac{1}{r^2}$",
+            "$\\frac{1}{r}$",
+            "$\\frac{1}{r^4}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a short electric dipole ($r \\gg L$), the electric field along the axial line is $E_{\\text{axial}} = \\frac{1}{4\\pi\\varepsilon_0}\\frac{2p}{r^3} \\propto \\frac{1}{r^3}$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electric dipole placed in a non-uniform electric field experiences: (NEET 2021)",
+          "image": "",
+          "options": [
+            "Both a net force and a torque",
+            "Only a force but no torque",
+            "Only a torque but no net force",
+            "Neither a force nor a torque"
+          ],
+          "correctOption": 0,
+          "solution": "In a non-uniform electric field, the unequal electric fields at the locations of $+q$ and $-q$ result in unequal forces ($F_+ \\neq F_-$), creating a non-zero net translational force $\\vec{F}_{\\text{net}} \\neq 0$. In general, a net torque $\\vec{\\tau} = \\vec{p} \\times \\vec{E} \\neq 0$ is also experienced."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A square surface of side $L\\text{ metres}$ in the plane of the paper is placed in a uniform electric field $E\\text{ (V/m)}$ acting along the same plane at an angle $\\theta$ with the horizontal edge of the square. The electric flux linked with the surface is: (NEET 2016)",
+          "image": "",
+          "options": [
+            "Zero",
+            "$E L^2$",
+            "$E L^2 \\cos\\theta$",
+            "$E L^2 \\sin\\theta$"
+          ],
+          "correctOption": 0,
+          "solution": "The electric field lies entirely in the plane of the square, while the area vector $\\vec{A}$ points perpendicular (normal) to the plane of the square. Thus, $\\vec{E} \\perp \\vec{A}$ (angle between them is $90^\\circ$), giving $\\Phi = \\vec{E} \\cdot \\vec{A} = E A \\cos 90^\\circ = 0$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "What is the flux through a cube of side $a$ if a point charge $q$ is placed at one of its corners? (NEET 2012)",
+          "image": "",
+          "options": [
+            "$\\frac{q}{8\\varepsilon_0}$",
+            "$\\frac{q}{\\varepsilon_0}$",
+            "$\\frac{q}{2\\varepsilon_0}$",
+            "$\\frac{q}{6\\varepsilon_0}$"
+          ],
+          "correctOption": 0,
+          "solution": "A corner charge is shared symmetrically among 8 identical adjacent cubes to form a closed Gaussian surface enclosing charge $q$. By Gauss's Law, the flux through one single cube is $\\Phi = \\frac{q}{8\\varepsilon_0}$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two parallel infinite plane sheets of charge with uniform surface charge densities $+\\sigma$ and $-\\sigma$ are separated by a distance. The electric field in the region between the sheets is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\sigma}{\\varepsilon_0}$",
+            "$\\frac{\\sigma}{2\\varepsilon_0}$",
+            "Zero",
+            "$\\frac{2\\sigma}{\\varepsilon_0}$"
+          ],
+          "correctOption": 0,
+          "solution": "Between the two oppositely charged sheets, the electric fields due to both sheets point in the same direction (from positive towards negative):\n$$E_{\\text{net}} = E_1 + E_2 = \\frac{\\sigma}{2\\varepsilon_0} + \\frac{\\sigma}{2\\varepsilon_0} = \\frac{\\sigma}{\\varepsilon_0}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An infinite line charge produces an electric field of $9 \\times 10^4\\text{ N/C}$ at a radial distance of $2\\text{ cm}$. The linear charge density $\\lambda$ is:",
+          "image": "",
+          "options": [
+            "$0.1\\text{ \\mu C/m}$",
+            "$0.2\\text{ \\mu C/m}$",
+            "$1.0\\text{ \\mu C/m}$",
+            "$0.05\\text{ \\mu C/m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Electric field due to an infinitely long straight charged wire is $E = \\frac{\\lambda}{2\\pi\\varepsilon_0 r} = \\frac{2k\\lambda}{r}$.\n$$9 \\times 10^4 = \\frac{2 \\times (9 \\times 10^9) \\times \\lambda}{0.02}$$\n$$\\lambda = \\frac{(9 \\times 10^4) \\times 0.02}{18 \\times 10^9} = 10^{-7}\\text{ C/m} = 0.1\\text{ \\mu C/m}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two identical positive point charges $q$ each are fixed at separation $2a$. A third positive charge $q_0$ is placed at the midpoint of the line joining them. If $q_0$ is displaced slightly along the line joining the charges and released, it will:",
+          "image": "",
+          "options": [
+            "Execute simple harmonic motion about the midpoint",
+            "Move continuously in the direction of displacement without returning",
+            "Remain at rest at the new displaced position",
+            "Perform circular motion around the axis"
+          ],
+          "correctOption": 0,
+          "solution": "When displaced by $x$ along the axial line ($x \\ll a$), the net restoring force is $F_{\\text{net}} = \\frac{kq q_0}{(a-x)^2} - \\frac{kq q_0}{(a+x)^2} \\approx -\\left(\\frac{4kq q_0}{a^3}\\right)x$. Because $F_{\\text{net}} \\propto -x$, the charge undergoes stable simple harmonic oscillations."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following statements about electric field lines is INCORRECT?",
+          "image": "",
+          "options": [
+            "Electrostatic field lines can form continuous closed loops.",
+            "Field lines start from positive charges and end at negative charges.",
+            "Tangent to a field line at any point gives the direction of electric field at that point.",
+            "Two electric field lines can never cross each other."
+          ],
+          "correctOption": 0,
+          "solution": "Electrostatic fields are conservative force fields ($\\oint \\vec{E}\\cdot d\\vec{l} = 0$), so electrostatic field lines never form closed loops."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two point charges $q_1 = +2\\text{ \\mu C}$ and $q_2 = +6\\text{ \\mu C}$ repel each other with a force of $12\\text{ N}$. If an additional charge of $-4\\text{ \\mu C}$ is given to each of them, the new force between them will be:",
+          "image": "",
+          "options": [
+            "$4\\text{ N (attractive)}$",
+            "$4\\text{ N (repulsive)}$",
+            "$8\\text{ N (attractive)}$",
+            "$12\\text{ N (attractive)}$"
+          ],
+          "correctOption": 0,
+          "solution": "New charges: $q_1' = 2 - 4 = -2\\text{ \\mu C}$ and $q_2' = 6 - 4 = +2\\text{ \\mu C}$.\n$$\\frac{F'}{F} = \\frac{|q_1' q_2'|}{|q_1 q_2|} = \\frac{|(-2)(+2)|}{|(2)(6)|} = \\frac{4}{12} = \\frac{1}{3}$$\n$$F' = \\frac{1}{3} \\times 12\\text{ N} = 4\\text{ N}$$\nBecause the new charges have opposite signs, the force is attractive."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of the magnitude of electric field due to a short electric dipole at the same distance $r$ on the axial line to that on the equatorial line is:",
+          "image": "",
+          "options": [
+            "$2 : 1$",
+            "$1 : 2$",
+            "$4 : 1$",
+            "$1 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "For a short dipole: $E_{\\text{axial}} = \\frac{2kp}{r^3}$ and $E_{\\text{equatorial}} = \\frac{kp}{r^3}$.\n$$\\frac{E_{\\text{axial}}}{E_{\\text{equatorial}}} = \\frac{2kp/r^3}{kp/r^3} = 2 : 1$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A charge $Q$ is enclosed by a Gaussian spherical surface of radius $R$. If the radius is doubled, the outward electric flux through the surface will:",
+          "image": "",
+          "options": [
+            "Remain unchanged",
+            "Be doubled",
+            "Be halved",
+            "Be quadrupled"
+          ],
+          "correctOption": 0,
+          "solution": "According to Gauss's Law, the total electric flux depends solely on the net charge enclosed inside the closed surface ($\\Phi = \\frac{Q_{\\text{enclosed}}}{\\varepsilon_0}$) and is completely independent of the size or radius of the Gaussian surface."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electron of mass $m_e$ and a proton of mass $m_p$ are released from rest in the same uniform electric field. The ratio of acceleration of the electron to that of the proton is:",
+          "image": "",
+          "options": [
+            "$\\frac{m_p}{m_e}$",
+            "$\\frac{m_e}{m_p}$",
+            "$1$",
+            "$\\sqrt{\\frac{m_p}{m_e}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnitude of electric force on both is identical: $F = eE$.\nAcceleration $a = \\frac{eE}{m} \\propto \\frac{1}{m}$.\n$$\\frac{a_e}{a_p} = \\frac{m_p}{m_e}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the electric flux entering and leaving a closed surface are $\\Phi_1$ and $\\Phi_2$ respectively, the net electric charge enclosed inside the surface is:",
+          "image": "",
+          "options": [
+            "$(\\Phi_2 - \\Phi_1)\\varepsilon_0$",
+            "$(\\Phi_1 + \\Phi_2)\\varepsilon_0$",
+            "$\\frac{\\Phi_2 - \\Phi_1}{\\varepsilon_0}$",
+            "$\\frac{\\Phi_1 + \\Phi_2}{\\varepsilon_0}$"
+          ],
+          "correctOption": 0,
+          "solution": "Net outward electric flux through the closed surface is $\\Phi_{\\text{net}} = \\Phi_2 - \\Phi_1$.\nBy Gauss's Law: $\\Phi_{\\text{net}} = \\frac{q_{\\text{enclosed}}}{\\varepsilon_0} \\implies q_{\\text{enclosed}} = (\\Phi_2 - \\Phi_1)\\varepsilon_0$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The work done in rotating an electric dipole of dipole moment $p$ in a uniform electric field $E$ from stable equilibrium position ($\\theta = 0^\\circ$) to unstable equilibrium position ($\\theta = 180^\\circ$) is:",
+          "image": "",
+          "options": [
+            "$2pE$",
+            "$pE$",
+            "$-2pE$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "$$W = pE(\\cos\\theta_1 - \\cos\\theta_2) = pE(\\cos 0^\\circ - \\cos 180^\\circ) = pE(1 - (-1)) = 2pE$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A dielectric medium of dielectric constant $K$ is introduced between two point charges placed at a fixed distance in air. The electrostatic force between them:",
+          "image": "",
+          "options": [
+            "Decreases by a factor of $K$",
+            "Increases by a factor of $K$",
+            "Decreases by a factor of $K^2$",
+            "Remains unchanged"
+          ],
+          "correctOption": 0,
+          "solution": "Electrostatic force in a medium of dielectric constant $K$ is $F_{\\text{med}} = \\frac{1}{4\\pi\\varepsilon_0 K}\\frac{q_1 q_2}{r^2} = \\frac{F_{\\text{air}}}{K}$, which decreases by a factor of $K$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A charge $q$ is placed at the center of the open mouth of a cylindrical vessel. The electric flux through the surface of the vessel is:",
+          "image": "",
+          "options": [
+            "$\\frac{q}{2\\varepsilon_0}$",
+            "$\\frac{q}{\\varepsilon_0}$",
+            "$\\frac{2q}{\\varepsilon_0}$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "By constructing an identical symmetrical cylinder above the given vessel, the total closed surface encloses charge $q$. Total flux is $\\frac{q}{\\varepsilon_0}$, so the flux through one half (the vessel) is $\\frac{q}{2\\varepsilon_0}$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The quantization of electric charge $q = ne$ implies that:",
+          "image": "",
+          "options": [
+            "Charge can only exist in integral multiples of elementary electronic charge $e$",
+            "Charge is continuous in microscopic domains",
+            "Charge cannot be created or destroyed",
+            "All atomic particles carry neutral charge"
+          ],
+          "correctOption": 0,
+          "solution": "Quantization of charge states that the observable charge $q$ of any body is always an integral multiple of the basic quantum of charge $e = 1.6 \\times 10^{-19}\\text{ C}$ ($q = \\pm ne$ where $n = 1, 2, 3, \\dots$)."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The electric field at a distance $r$ from an infinitely long uniformly charged thin plane sheet of surface charge density $\\sigma$ is:",
+          "image": "",
+          "options": [
+            "Independent of $r$",
+            "Proportional to $1/r$",
+            "Proportional to $1/r^2$",
+            "Proportional to $r$"
+          ],
+          "correctOption": 0,
+          "solution": "Electric field due to an infinite plane sheet of charge is $E = \\frac{\\sigma}{2\\varepsilon_0}$, which is uniform and completely independent of the distance $r$ from the sheet."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Three charges $+4q, Q,$ and $+q$ are placed in a straight line of length $l$ at points distance $0, l/2,$ and $l$ respectively. What should be the value of $Q$ in order to make the net force on charge $+q$ equal to zero?",
+          "image": "",
+          "options": [
+            "$-q$",
+            "$-2q$",
+            "$+q$",
+            "$-4q$"
+          ],
+          "correctOption": 0,
+          "solution": "Force on $+q$ at $x = l$ is $F = \\frac{k(4q)(q)}{l^2} + \\frac{k(Q)(q)}{(l/2)^2} = 0$.\n$$\\frac{4kq^2}{l^2} + \\frac{4kQq}{l^2} = 0 \\implies 4q + 4Q = 0 \\implies Q = -q$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Total electric flux emerging through the six faces of a cube enclosing a net dipole of moment $\\vec{p}$ is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$\\frac{p}{\\varepsilon_0}$",
+            "$\\frac{2p}{\\varepsilon_0}$",
+            "$\\frac{p}{6\\varepsilon_0}$"
+          ],
+          "correctOption": 0,
+          "solution": "An electric dipole consists of two equal and opposite charges $(+q$ and $-q)$. The net charge enclosed inside the Gaussian surface is $Q_{\\text{enclosed}} = +q - q = 0$. By Gauss's Law, total flux $\\Phi = \\frac{0}{\\varepsilon_0} = 0$."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An oil drop of mass $m$ carrying charge $q$ is balanced in stationary equilibrium between two horizontal parallel plates under an electric field $E$. The magnitude of the electric field is:",
+          "image": "",
+          "options": [
+            "$\\frac{mg}{q}$",
+            "$\\frac{q}{mg}$",
+            "$\\frac{q g}{m}$",
+            "$q m g$"
+          ],
+          "correctOption": 0,
+          "solution": "For vertical equilibrium: upward electrostatic force balances downward gravity ($qE = mg \\implies E = \\frac{mg}{q}$)."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "What is the angle between the electric dipole moment vector $\\vec{p}$ and the electric field $\\vec{E}_{\\text{eq}}$ at an equatorial point of a dipole?",
+          "image": "",
+          "options": [
+            "$180^\\circ$",
+            "$0^\\circ$",
+            "$90^\\circ$",
+            "$45^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "The electric field at an equatorial point is $\\vec{E}_{\\text{eq}} = -\\frac{1}{4\\pi\\varepsilon_0}\\frac{\\vec{p}}{r^3}$. The negative sign indicates that $\\vec{E}_{\\text{eq}}$ is antiparallel to the dipole moment $\\vec{p}$, making the angle between them $180^\\circ$."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A point charge $q$ is placed at the center of a hemisphere of radius $R$. The electric flux passing through the curved surface of the hemisphere is:",
+          "image": "",
+          "options": [
+            "$\\frac{q}{2\\varepsilon_0}$",
+            "$\\frac{q}{\\varepsilon_0}$",
+            "$\\frac{q}{4\\varepsilon_0}$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Completing the sphere by adding a symmetrical lower hemisphere encloses charge $q$ entirely (total flux $= q/\\varepsilon_0$). Flux through one hemisphere is $\\Phi = \\frac{q}{2\\varepsilon_0}$."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two charges $+q$ and $-3q$ are placed at a distance $d$ apart. The point along the line joining the charges where the net electric field is zero is located:",
+          "image": "",
+          "options": [
+            "Outside the segment, on the side of $+q$",
+            "Outside the segment, on the side of $-3q$",
+            "Between $+q$ and $-3q$",
+            "At infinity only"
+          ],
+          "correctOption": 0,
+          "solution": "For two opposite charges of unequal magnitude, the null point (where fields cancel in magnitude and oppose in direction) lies on the axial line outside the charges, closer to the charge of smaller magnitude (i.e., on the side of $+q$)."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimensional formula of electric permittivity of free space $\\varepsilon_0$ is:",
+          "image": "",
+          "options": [
+            "$[\\text{M}^{-1}\\text{L}^{-3}\\text{T}^4\\text{A}^2]$",
+            "$[\\text{M}\\text{L}^3\\text{T}^{-4}\\text{A}^{-2}]$",
+            "$[\\text{M}^{-1}\\text{L}^{-2}\\text{T}^4\\text{A}^2]$",
+            "$[\\text{M}^{-1}\\text{L}^{-3}\\text{T}^2\\text{A}^2]$"
+          ],
+          "correctOption": 0,
+          "solution": "From Coulomb's law: $\\varepsilon_0 = \\frac{q^2}{4\\pi F r^2} = \\frac{[\\text{A}\\text{T}]^2}{[\\text{M}\\text{L}\\text{T}^{-2}][\\text{L}^2]} = [\\text{M}^{-1}\\text{L}^{-3}\\text{T}^4\\text{A}^2]$."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A charged particle of mass $m$ and charge $q$ enters perpendicularly into a uniform electric field $E$ with initial speed $v_x$. The vertical deflection $y$ after traversing a horizontal length $x$ inside the field is:",
+          "image": "",
+          "options": [
+            "$\\frac{q E x^2}{2 m v_x^2}$",
+            "$\\frac{q E x}{m v_x^2}$",
+            "$\\frac{q E x^2}{m v_x}$",
+            "$\\frac{2 q E x^2}{m v_x^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Horizontal transit time $t = \\frac{x}{v_x}$.\nVertical acceleration $a_y = \\frac{qE}{m}$.\nVertical deflection $y = \\frac{1}{2}a_y t^2 = \\frac{1}{2}\\left(\\frac{qE}{m}\\right)\\left(\\frac{x}{v_x}\\right)^2 = \\frac{q E x^2}{2 m v_x^2}$."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A thin semi-circular ring of radius $R$ carries a uniform linear charge density $\\lambda$. The electric field at the center of curvature is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\lambda}{2\\pi\\varepsilon_0 R}$",
+            "$\\frac{\\lambda}{4\\pi\\varepsilon_0 R}$",
+            "$\\frac{\\lambda}{\\pi\\varepsilon_0 R}$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "By integrating the symmetric horizontal and vertical components along the semi-circular arc of angle $\\pi$, the net electric field at the center is $E = \\frac{2k\\lambda}{R} = \\frac{2\\lambda}{4\\pi\\varepsilon_0 R} = \\frac{\\lambda}{2\\pi\\varepsilon_0 R}$."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If a body contains $n_1$ protons and $n_2$ electrons, the total net charge on the body is:",
+          "image": "",
+          "options": [
+            "$(n_1 - n_2)e$",
+            "$(n_1 + n_2)e$",
+            "$(n_2 - n_1)e$",
+            "$n_1 e / n_2$"
+          ],
+          "correctOption": 0,
+          "solution": "By the additive property of electric charge: $q = (+n_1 e) + (-n_2 e) = (n_1 - n_2)e$."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The electric field intensity $\\vec{E}$ at an arbitrary point $(r, \\theta)$ due to a short dipole $\\vec{p}$ has magnitude:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{p}{r^3}\\sqrt{1 + 3\\cos^2\\theta}$",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{p}{r^3}\\sqrt{1 + 3\\sin^2\\theta}$",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{2p}{r^3}\\cos\\theta$",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{p}{r^2}\\sqrt{1 + 3\\cos^2\\theta}$"
+          ],
+          "correctOption": 0,
+          "solution": "Resolving dipole along and perpendicular to radial line: $E_r = \\frac{2kp\\cos\\theta}{r^3}$ and $E_\\theta = \\frac{kp\\sin\\theta}{r^3}$.\n$$E = \\sqrt{E_r^2 + E_\\theta^2} = \\frac{kp}{r^3}\\sqrt{4\\cos^2\\theta + \\sin^2\\theta} = \\frac{1}{4\\pi\\varepsilon_0}\\frac{p}{r^3}\\sqrt{1 + 3\\cos^2\\theta}$$"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A cylinder of radius $R$ and length $L$ is placed in a uniform electric field $E$ parallel to the cylinder axis. The total flux through the complete surface of the cylinder is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$2\\pi R^2 E$",
+            "$\\pi R^2 E$",
+            "$(2\\pi R L) E$"
+          ],
+          "correctOption": 0,
+          "solution": "Flux through flat left face is $-E(\\pi R^2)$, flux through flat right face is $+E(\\pi R^2)$, and flux through curved side is zero ($\\vec{E} \\perp \\vec{A}$). Net flux $\\Phi_{\\text{total}} = -\\pi R^2 E + \\pi R^2 E + 0 = 0$."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two small identical metal spheres having charges $+10\\text{ \\mu C}$ and $-20\\text{ \\mu C}$ are brought into contact and then separated to their initial distance. The ratio of initial force to final force between them is:",
+          "image": "",
+          "options": [
+            "$8 : 1$",
+            "$4 : 1$",
+            "$2 : 1$",
+            "$16 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial product: $|q_1 q_2| = 10 \\times 20 = 200\\text{ (}\\mu\\text{C)}^2$.\nAfter contact, charge divides equally: $q_1' = q_2' = \\frac{+10 - 20}{2} = -5\\text{ \\mu C}$.\nFinal product: $|q_1' q_2'| = (-5)(-5) = 25\\text{ (}\\mu\\text{C)}^2$.\n$$\\frac{F_i}{F_f} = \\frac{200}{25} = 8 : 1$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The electric field inside a uniformly charged thin spherical shell of radius $R$ at a distance $r = R/2$ from the centre is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{q}{R^2}$",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{2q}{R^2}$",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{q}{4R^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "By Gauss's theorem, any Gaussian surface drawn inside a uniformly charged spherical shell encloses zero net charge, hence $E = 0$ everywhere inside."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Electric field lines are crowded close together in regions where:",
+          "image": "",
+          "options": [
+            "The electric field is strong",
+            "The electric field is weak",
+            "The electric potential is zero",
+            "No charges are present"
+          ],
+          "correctOption": 0,
+          "solution": "The spatial density of electric field lines (number of lines passing per unit cross-sectional area) is directly proportional to the magnitude (strength) of the electric field."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A point charge $q$ is placed at the center of a cube of edge length $a$. The electric flux passing through ANY ONE face of the cube is:",
+          "image": "",
+          "options": [
+            "$\\frac{q}{6\\varepsilon_0}$",
+            "$\\frac{q}{\\varepsilon_0}$",
+            "$\\frac{q}{3\\varepsilon_0}$",
+            "$\\frac{q}{8\\varepsilon_0}$"
+          ],
+          "correctOption": 0,
+          "solution": "The charge is symmetrically enclosed by the 6 identical planar faces of the cube. Total flux is $\\frac{q}{\\varepsilon_0}$, so the flux emerging through one single face is $\\frac{q}{6\\varepsilon_0}$."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The potential energy $U$ of an electric dipole of moment $\\vec{p}$ placed in a uniform electric field $\\vec{E}$ is:",
+          "image": "",
+          "options": [
+            "$-\\vec{p} \\cdot \\vec{E}$",
+            "$\\vec{p} \\times \\vec{E}$",
+            "$\\vec{p} \\cdot \\vec{E}$",
+            "$p E \\sin\\theta$"
+          ],
+          "correctOption": 0,
+          "solution": "The potential energy of a dipole in a uniform external field is given by $U = -\\vec{p} \\cdot \\vec{E} = -p E \\cos\\theta$."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "What is the nature of electrostatic force between two protons separated by a distance of $10^{-15}\\text{ m}$ (within nuclear dimensions)?",
+          "image": "",
+          "options": [
+            "Repulsive following Coulomb's inverse-square law",
+            "Attractive following inverse-square law",
+            "Zero due to nuclear shielding",
+            "Independent of charge"
+          ],
+          "correctOption": 0,
+          "solution": "The electrostatic force between two positive like charges is always repulsive and governed by Coulomb's law ($F_e = \\frac{1}{4\\pi\\varepsilon_0}\\frac{e^2}{r^2}$). (Although strong nuclear force is attractive, the electrostatic force itself remains repulsive)."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A charged sphere of radius $R$ has a surface charge density $\\sigma$. The electric field on the outer surface of the sphere is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\sigma}{\\varepsilon_0}$",
+            "$\\frac{\\sigma}{2\\varepsilon_0}$",
+            "$\\frac{2\\sigma}{\\varepsilon_0}$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "$$E = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q}{R^2} = \\frac{1}{4\\pi\\varepsilon_0}\\frac{\\sigma (4\\pi R^2)}{R^2} = \\frac{\\sigma}{\\varepsilon_0}$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A metallic solid sphere is placed in a uniform electric field. The lines of force follow the path(s) shown in which lines enter and leave the metallic surface:",
+          "image": "",
+          "options": [
+            "Normally to the surface with zero lines inside the metal",
+            "Passing straight through the interior of the metal",
+            "Tangential to the metal boundary",
+            "Curving into closed loops inside the sphere"
+          ],
+          "correctOption": 0,
+          "solution": "In electrostatic equilibrium, the interior of a conductor has zero electric field ($E = 0$), and the electric field lines must meet the conducting equipotential surface perpendicularly (normal at every point)."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A point charge $+q$ is placed at the origin $(0, 0)$. The electric field vector at position vector $\\vec{r} = x\\hat{i} + y\\hat{j}$ is given by:",
+          "image": "",
+          "options": [
+            "$\\frac{q}{4\\pi\\varepsilon_0}\\frac{x\\hat{i} + y\\hat{j}}{(x^2 + y^2)^{3/2}}$",
+            "$\\frac{q}{4\\pi\\varepsilon_0}\\frac{x\\hat{i} + y\\hat{j}}{(x^2 + y^2)}$",
+            "$\\frac{q}{4\\pi\\varepsilon_0}\\frac{x\\hat{i} + y\\hat{j}}{(x^2 + y^2)^{1/2}}$",
+            "$\\frac{q}{4\\pi\\varepsilon_0}\\frac{-x\\hat{i} - y\\hat{j}}{(x^2 + y^2)^{3/2}}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\vec{E} = \\frac{q}{4\\pi\\varepsilon_0}\\frac{\\vec{r}}{|\\vec{r}|^3} = \\frac{q}{4\\pi\\varepsilon_0}\\frac{x\\hat{i} + y\\hat{j}}{\\left(\\sqrt{x^2 + y^2}\\right)^3} = \\frac{q}{4\\pi\\varepsilon_0}\\frac{x\\hat{i} + y\\hat{j}}{(x^2 + y^2)^{3/2}}$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a glass rod is rubbed with silk, the glass rod becomes positively charged because:",
+          "image": "",
+          "options": [
+            "Electrons are transferred from the glass rod to silk",
+            "Protons are transferred from silk to glass rod",
+            "Electrons are transferred from silk to glass rod",
+            "Protons are created on the glass rod"
+          ],
+          "correctOption": 0,
+          "solution": "During triboelectric charging, electrons have lower work function in glass and transfer to the silk cloth, leaving the glass rod with a net positive deficit of electrons."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two infinite parallel sheets carry uniform surface charge densities $+\\sigma$ and $+\\sigma$. The electric field in the region between the sheets is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$\\frac{\\sigma}{\\varepsilon_0}$",
+            "$\\frac{\\sigma}{2\\varepsilon_0}$",
+            "$\\frac{2\\sigma}{\\varepsilon_0}$"
+          ],
+          "correctOption": 0,
+          "solution": "Between two identically charged sheets of density $+\\sigma$, the fields are equal in magnitude and directed opposite to each other:\n$$E_{\\text{net}} = \\frac{\\sigma}{2\\varepsilon_0} - \\frac{\\sigma}{2\\varepsilon_0} = 0$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electric dipole consists of charges $\\pm 1.0\\text{ nC}$ separated by a distance of $2.0\\text{ mm}$. The dipole is placed in an electric field of $1.0 \\times 10^5\\text{ N/C}$. The maximum torque experienced by the dipole is:",
+          "image": "",
+          "options": [
+            "$2.0 \\times 10^{-7}\\text{ N}\\cdot\\text{m}$",
+            "$4.0 \\times 10^{-7}\\text{ N}\\cdot\\text{m}$",
+            "$1.0 \\times 10^{-7}\\text{ N}\\cdot\\text{m}$",
+            "$2.0 \\times 10^{-4}\\text{ N}\\cdot\\text{m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Dipole moment $p = q \\cdot (2a) = (1.0 \\times 10^{-9}\\text{ C}) \\times (2.0 \\times 10^{-3}\\text{ m}) = 2.0 \\times 10^{-12}\\text{ C}\\cdot\\text{m}$.\nMaximum torque occurs at $\\theta = 90^\\circ$:\n$$\\tau_{\\text{max}} = p E = (2.0 \\times 10^{-12}) \\times (1.0 \\times 10^5) = 2.0 \\times 10^{-7}\\text{ N}\\cdot\\text{m}$$"
+        }
+      ]
+    }
+  ]
+}
