@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-27-ray-optics-and-optical-instruments",
+  "title": "Ray Optics and Optical Instruments",
+  "syllabus": "Reflection of light, Spherical mirrors, Mirror formula; Refraction of light, Total internal reflection and its applications, Optical fibres; Refraction at spherical surfaces, Lenses, Thin lens formula, Lensmaker's formula, Magnification, Power of a lens, Combination of thin lenses in contact; Refraction and dispersion of light through a prism; Optical instruments - Microscopes and Astronomical Telescopes (reflecting and refracting) and their magnifying powers.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A biconvex lens has radii of curvature $20\\text{ cm}$ each. If the refractive index of the material of the lens is $1.5$, the power of the lens is: (NEET 2022)",
+          "image": "",
+          "options": [
+            "$+5\\text{ D}$",
+            "$+20\\text{ D}$",
+            "$+2\\text{ D}$",
+            "$+10\\text{ D}$"
+          ],
+          "correctOption": 0,
+          "solution": "By Lensmaker's formula: $\\frac{1}{f} = (\\mu - 1)\\left(\\frac{1}{R_1} - \\frac{1}{R_2}\\right)$.\nHere, $R_1 = +0.2\\text{ m}$, $R_2 = -0.2\\text{ m}$, and $\\mu = 1.5$.\n$$P = \\frac{1}{f} = (1.5 - 1)\\left(\\frac{1}{0.2} - \\left(-\\frac{1}{0.2}\\right)\\right) = 0.5 \\times \\left(\\frac{2}{0.2}\\right) = 0.5 \\times 10 = +5\\text{ D}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An astronomical refracting telescope has an objective of focal length $20\\text{ m}$ and an eyepiece of focal length $2\\text{ cm}$. In normal adjustment, the length of the telescope tube and its magnifying power are respectively: (NEET 2020)",
+          "image": "",
+          "options": [
+            "$20.02\\text{ m}, 1000$",
+            "$20.02\\text{ m}, 100$",
+            "$10.01\\text{ m}, 1000$",
+            "$20.00\\text{ m}, 1000$"
+          ],
+          "correctOption": 0,
+          "solution": "Given $f_o = 20\\text{ m} = 2000\\text{ cm}$ and $f_e = 2\\text{ cm} = 0.02\\text{ m}$.\nMagnifying power in normal adjustment: $m = \\frac{f_o}{f_e} = \\frac{2000\\text{ cm}}{2\\text{ cm}} = 1000$.\nTube length in normal adjustment: $L = f_o + f_e = 20\\text{ m} + 0.02\\text{ m} = 20.02\\text{ m}$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The angle of a prism is $A$. One of its refracting surfaces is silvered. Light rays falling at an angle of incidence $2A$ on the first surface return back through the same path after suffering reflection at the silvered surface. The refractive index $\\mu$ of the prism is: (NEET 2014)",
+          "image": "",
+          "options": [
+            "$2\\cos A$",
+            "$2\\sin A$",
+            "$\\frac{1}{2}\\cos A$",
+            "$\\tan A$"
+          ],
+          "correctOption": 0,
+          "solution": "For the ray to retrace its path, it must strike the silvered second face normally ($r_2 = 0$).\nSince $A = r_1 + r_2 = r_1 + 0 \\implies r_1 = A$.\nBy Snell's law at the first surface:\n$$\\mu = \\frac{\\sin i}{\\sin r_1} = \\frac{\\sin(2A)}{\\sin A} = \\frac{2\\sin A\\cos A}{\\sin A} = 2\\cos A$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A person can see clearly objects only when they lie between $50\\text{ cm}$ and $400\\text{ cm}$ from his eyes. In order to increase the maximum distance of distinct vision to infinity, the type and power of the correcting lens required is: (NEET 2016)",
+          "image": "",
+          "options": [
+            "Concave, $-0.25\\text{ D}$",
+            "Convex, $+0.25\\text{ D}$",
+            "Concave, $-0.2\\text{ D}$",
+            "Convex, $+2.0\\text{ D}$"
+          ],
+          "correctOption": 0,
+          "solution": "To correct myopia (far point $= 400\\text{ cm} = 4\\text{ m}$), an object at $u = -\\infty$ must form a virtual image at the far point $v = -4\\text{ m}$.\n$$\\frac{1}{f} = \\frac{1}{v} - \\frac{1}{u} = \\frac{1}{-4} - \\frac{1}{-\\infty} = -\\frac{1}{4}\\text{ m}^{-1} \\implies P = -0.25\\text{ D}$$\nA concave lens of power $-0.25\\text{ D}$ is required."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A point object is placed at a distance of $60\\text{ cm}$ from a convex lens of focal length $30\\text{ cm}$. If a plane mirror were put perpendicular to the principal axis at a distance of $40\\text{ cm}$ behind the lens, the final image will be formed at: (NEET 2021)",
+          "image": "",
+          "options": [
+            "$20\\text{ cm}$ in front of the convex lens",
+            "$30\\text{ cm}$ behind the plane mirror",
+            "$40\\text{ cm}$ in front of the convex lens",
+            "At the optical centre of the lens"
+          ],
+          "correctOption": 0,
+          "solution": "By thin lens formula: $\\frac{1}{v} - \\frac{1}{-60} = \\frac{1}{30} \\implies \\frac{1}{v} = \\frac{1}{30} - \\frac{1}{60} = \\frac{1}{60} \\implies v = +60\\text{ cm}$ (behind the lens).\nThe plane mirror is placed $40\\text{ cm}$ behind the lens, so the converging rays form a virtual object at $x = 60 - 40 = 20\\text{ cm}$ behind the mirror.\nThe plane mirror forms a real image $20\\text{ cm}$ in front of the mirror (which is at a distance of $40 - 20 = 20\\text{ cm}$ behind the lens, traveling towards the front of the lens)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The refractive index of the material of a prism is $\\sqrt{2}$ and the angle of the prism is $30^\\circ$. One of the two refracting surfaces of the prism is made a mirror inwards by silver coating. A beam of monochromatic light entering the other face will retrace its path after reflection from the silvered surface if its angle of incidence is: (NEET 2018)",
+          "image": "",
+          "options": [
+            "$45^\\circ$",
+            "$60^\\circ$",
+            "$30^\\circ$",
+            "$0^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "Retracing path means normal incidence on the silvered surface: $r_2 = 0$.\n$r_1 = A - r_2 = 30^\\circ - 0 = 30^\\circ$.\nBy Snell's Law:\n$$\\sin i = \\mu \\sin r_1 = \\sqrt{2} \\sin 30^\\circ = \\sqrt{2} \\times \\frac{1}{2} = \\frac{1}{\\sqrt{2}} \\implies i = 45^\\circ$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two thin convex lenses of focal lengths $f_1$ and $f_2$ are placed in coaxial contact with each other. The power of the combination is:",
+          "image": "",
+          "options": [
+            "$\\frac{f_1 + f_2}{f_1 f_2}$",
+            "$\\frac{f_1 f_2}{f_1 + f_2}$",
+            "$f_1 + f_2$",
+            "$\\sqrt{f_1 f_2}$"
+          ],
+          "correctOption": 0,
+          "solution": "For two thin lenses in contact: $P = P_1 + P_2 = \\frac{1}{f_1} + \\frac{1}{f_2} = \\frac{f_1 + f_2}{f_1 f_2}$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Optical fibres transmit light signals across long distances without significant loss based on the phenomenon of:",
+          "image": "",
+          "options": [
+            "Total internal reflection",
+            "Refraction",
+            "Diffraction",
+            "Scattering"
+          ],
+          "correctOption": 0,
+          "solution": "Optical fibres consist of a core with a higher refractive index surrounded by cladding of a lower refractive index. Light entering the core undergoes repeated total internal reflections ($i > i_c$), guiding signals over long distances with minimal loss."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ray of light is incident at an angle of $60^\\circ$ on one face of an equilateral prism. If the ray undergoes minimum deviation, the angle of minimum deviation $\\delta_m$ is:",
+          "image": "",
+          "options": [
+            "$60^\\circ$",
+            "$30^\\circ$",
+            "$45^\\circ$",
+            "$90^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "For an equilateral prism, prism angle $A = 60^\\circ$.\nAt minimum deviation: $i = e$.\n$$\\delta_m = 2i - A = 2(60^\\circ) - 60^\\circ = 120^\\circ - 60^\\circ = 60^\\circ$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A convex lens of glass ($\\mu_g = 1.5$) has a focal length of $20\\text{ cm}$ in air. When it is completely immersed in water ($\\mu_w = 4/3$), its new focal length will be:",
+          "image": "",
+          "options": [
+            "$80\\text{ cm}$",
+            "$40\\text{ cm}$",
+            "$20\\text{ cm}$",
+            "$10\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "In air: $\\frac{1}{f_a} = (\\mu_g - 1)\\left(\\frac{1}{R_1} - \\frac{1}{R_2}\\right) = (1.5 - 1) K = 0.5 K$.\nIn water: $\\frac{1}{f_w} = \\left(\\frac{\\mu_g}{\\mu_w} - 1\\right) K = \\left(\\frac{1.5}{4/3} - 1\\right) K = \\left(\\frac{9}{8} - 1\\right) K = \\frac{1}{8} K$.\n$$\\frac{f_w}{f_a} = \\frac{0.5}{1/8} = 4 \\implies f_w = 4 f_a = 4 \\times 20\\text{ cm} = 80\\text{ cm}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A concave mirror of focal length $f$ produces an erect, magnified image of an object that is twice the size of the object. The distance of the object from the mirror is:",
+          "image": "",
+          "options": [
+            "$\\frac{f}{2}$",
+            "$\\frac{f}{4}$",
+            "$2f$",
+            "$\\frac{3f}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnification for a mirror: $m = \\frac{f}{f - u}$.\nFor a virtual, erect image, $m = +2$, and for a concave mirror, focal length is $-f$:\n$$+2 = \\frac{-f}{-f - u} \\implies -2f - 2u = -f \\implies -2u = f \\implies u = -\\frac{f}{2}$$\nThe object is placed at a distance of $f/2$ in front of the mirror."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A small coin is resting at the bottom of a beaker filled with water ($\\mu = 4/3$) to a depth of $12\\text{ cm}$. The apparent shift in the position of the coin when viewed normally from above is:",
+          "image": "",
+          "options": [
+            "$3\\text{ cm}$",
+            "$9\\text{ cm}$",
+            "$4\\text{ cm}$",
+            "$6\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Apparent shift is given by:\n$$\\Delta t = t\\left(1 - \\frac{1}{\\mu}\\right) = 12\\left(1 - \\frac{1}{4/3}\\right) = 12\\left(1 - \\frac{3}{4}\\right) = 12 \\times \\frac{1}{4} = 3\\text{ cm}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The critical angle for total internal reflection for a glass-air interface is $\\theta_c$. If a ray of light is incident from glass to air at an angle equal to the critical angle $\\theta_c$, the angle of refraction is:",
+          "image": "",
+          "options": [
+            "$90^\\circ$",
+            "$0^\\circ$",
+            "$45^\\circ$",
+            "$180^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "By definition of the critical angle, when the angle of incidence equals the critical angle ($i = \\theta_c$), the refracted ray grazes the interface at an angle of refraction $r = 90^\\circ$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A compound microscope consists of an objective lens of focal length $2.0\\text{ cm}$ and an eyepiece of focal length $6.25\\text{ cm}$ separated by a distance of $15\\text{ cm}$. If the final image is formed at the least distance of distinct vision ($D = 25\\text{ cm}$), the magnifying power of the microscope is:",
+          "image": "",
+          "options": [
+            "$20$",
+            "$25$",
+            "$30$",
+            "$15$"
+          ],
+          "correctOption": 0,
+          "solution": "For the eyepiece: $v_e = -25\\text{ cm}, f_e = +6.25\\text{ cm}$.\n$$\\frac{1}{u_e} = \\frac{1}{v_e} - \\frac{1}{f_e} = -\\frac{1}{25} - \\frac{1}{6.25} = -\\frac{5}{25} = -\\frac{1}{5} \\implies |u_e| = 5\\text{ cm}$$\nDistance between lenses: $L = v_o + |u_e| \\implies 15 = v_o + 5 \\implies v_o = 10\\text{ cm}$.\nFor the objective: $\\frac{1}{u_o} = \\frac{1}{v_o} - \\frac{1}{f_o} = \\frac{1}{10} - \\frac{1}{2} = -\\frac{4}{10} \\implies |u_o| = 2.5\\text{ cm}$.\n$$m = \\left(\\frac{v_o}{|u_o|}\\right)\\left(1 + \\frac{D}{f_e}\\right) = \\left(\\frac{10}{2.5}\\right)\\left(1 + \\frac{25}{6.25}\\right) = 4 \\times (1 + 4) = 20$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A plano-convex lens of focal length $f$ is made of glass of refractive index $1.5$. The radius of curvature of its curved surface is:",
+          "image": "",
+          "options": [
+            "$R = \\frac{f}{2}$",
+            "$R = f$",
+            "$R = 2f$",
+            "$R = \\frac{f}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a plano-convex lens: $\\frac{1}{f} = (\\mu - 1)\\left(\\frac{1}{R} - \\frac{1}{\\infty}\\right) = \\frac{\\mu - 1}{R}$.\n$$\\frac{1}{f} = \\frac{1.5 - 1}{R} = \\frac{0.5}{R} = \\frac{1}{2R} \\implies R = \\frac{f}{2}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A Cassegrain reflecting telescope uses:",
+          "image": "",
+          "options": [
+            "A large concave parabolic primary mirror and a small convex secondary mirror",
+            "A large convex primary mirror and a concave secondary mirror",
+            "Two convex lenses",
+            "A plane mirror and a convex lens only"
+          ],
+          "correctOption": 0,
+          "solution": "In a Cassegrain reflecting telescope, light is collected by a primary concave paraboloidal mirror and reflected towards a secondary convex mirror, which focuses the beam through a central hole in the primary mirror to an eyepiece."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the critical angle for a given medium is $45^\\circ$, the speed of light in that medium is:",
+          "image": "",
+          "options": [
+            "$2.12 \\times 10^8\\text{ m/s}$",
+            "$3.00 \\times 10^8\\text{ m/s}$",
+            "$1.50 \\times 10^8\\text{ m/s}$",
+            "$2.50 \\times 10^8\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\mu = \\frac{1}{\\sin\\theta_c} = \\frac{1}{\\sin 45^\\circ} = \\sqrt{2} \\approx 1.414$$\n$$v = \\frac{c}{\\mu} = \\frac{3 \\times 10^8}{\\sqrt{2}} \\approx 2.12 \\times 10^8\\text{ m/s}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A convex lens forms a real, inverted image of the same size as the object when the object is placed at:",
+          "image": "",
+          "options": [
+            "$2f$",
+            "$f$",
+            "Between $f$ and $2f$",
+            "At infinity"
+          ],
+          "correctOption": 0,
+          "solution": "When an object is placed at the center of curvature ($u = -2f$) of a convex lens, a real, inverted image of equal size ($m = -1$) is formed at $v = +2f$ on the opposite side."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When white light passes through a glass prism, which colour suffers the MAXIMUM deviation?",
+          "image": "",
+          "options": [
+            "Violet",
+            "Red",
+            "Yellow",
+            "Green"
+          ],
+          "correctOption": 0,
+          "solution": "According to Cauchy's dispersion formula, $\\mu$ decreases as wavelength increases ($\\mu_{\\text{violet}} > \\mu_{\\text{red}}$). Since $\\delta \\approx (\\mu - 1)A$, violet light suffers the maximum deviation."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An equiconcave lens of focal length $f$ is cut along its principal axis into two identical symmetrical halves. The focal length of each half is:",
+          "image": "",
+          "options": [
+            "$f$",
+            "$2f$",
+            "$\\frac{f}{2}$",
+            "$4f$"
+          ],
+          "correctOption": 0,
+          "solution": "Cutting a lens along its principal axis does not change the radii of curvature ($R_1, R_2$) or the refractive index of the surfaces. Hence, the focal length of each half remains $f$ (though intensity is halved)."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An object is placed at a distance of $10\\text{ cm}$ in front of a convex mirror of radius of curvature $20\\text{ cm}$. The magnification produced by the mirror is:",
+          "image": "",
+          "options": [
+            "$+0.5$",
+            "$-0.5$",
+            "$+1.0$",
+            "$+2.0$"
+          ],
+          "correctOption": 0,
+          "solution": "Focal length of convex mirror: $f = +R/2 = +10\\text{ cm}$.\n$$m = \\frac{f}{f - u} = \\frac{10}{10 - (-10)} = \\frac{10}{20} = +0.5$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The magnifying power of an astronomical telescope in normal adjustment can be increased by:",
+          "image": "",
+          "options": [
+            "Increasing focal length of objective and decreasing focal length of eyepiece",
+            "Decreasing focal length of objective and increasing focal length of eyepiece",
+            "Increasing focal lengths of both objective and eyepiece",
+            "Decreasing focal lengths of both objective and eyepiece"
+          ],
+          "correctOption": 0,
+          "solution": "In normal adjustment, magnifying power is $m = \\frac{f_o}{f_e}$. Thus, $m$ increases when $f_o$ is increased and $f_e$ is decreased."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ray of light traveling in air enters a medium of refractive index $\\mu = \\sqrt{3}$. If the angle of incidence is $60^\\circ$, the angle of deviation produced is:",
+          "image": "",
+          "options": [
+            "$30^\\circ$",
+            "$60^\\circ$",
+            "$45^\\circ$",
+            "$15^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "By Snell's law: $1 \\times \\sin 60^\\circ = \\sqrt{3} \\sin r \\implies \\frac{\\sqrt{3}}{2} = \\sqrt{3} \\sin r \\implies \\sin r = \\frac{1}{2} \\implies r = 30^\\circ$.\n$$\\delta = i - r = 60^\\circ - 30^\\circ = 30^\\circ$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Chromatic aberration in lenses is caused by:",
+          "image": "",
+          "options": [
+            "Dispersion of light, because focal length varies with wavelength",
+            "Spherical geometry of lens surfaces",
+            "Total internal reflection inside the lens",
+            "Unequal reflection from the two faces"
+          ],
+          "correctOption": 0,
+          "solution": "Because refractive index $\\mu$ varies with wavelength, a single lens bends different colors to different focal points ($f_{\\text{red}} > f_{\\text{violet}}$), producing chromatic aberration."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A thin prism of prism angle $A = 6^\\circ$ made of glass of refractive index $\\mu = 1.5$ produces a deviation of:",
+          "image": "",
+          "options": [
+            "$3^\\circ$",
+            "$6^\\circ$",
+            "$1.5^\\circ$",
+            "$4.5^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "For a thin prism with small angle $A$:\n$$\\delta = (\\mu - 1)A = (1.5 - 1) \\times 6^\\circ = 0.5 \\times 6^\\circ = 3^\\circ$$"
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A convex lens of focal length $f = 25\\text{ cm}$ is used as a simple magnifying glass. The magnifying power when the image is formed at the near point ($D = 25\\text{ cm}$) is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$1$",
+            "$1.5$",
+            "$3$"
+          ],
+          "correctOption": 0,
+          "solution": "$$m = 1 + \\frac{D}{f} = 1 + \\frac{25\\text{ cm}}{25\\text{ cm}} = 1 + 1 = 2$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Refraction at a single spherical surface of radius $R$ separating media of refractive indices $\\mu_1$ and $\\mu_2$ satisfies the relation:",
+          "image": "",
+          "options": [
+            "$\\frac{\\mu_2}{v} - \\frac{\\mu_1}{u} = \\frac{\\mu_2 - \\mu_1}{R}$",
+            "$\\frac{\\mu_1}{v} - \\frac{\\mu_2}{u} = \\frac{\\mu_2 - \\mu_1}{R}$",
+            "$\\frac{\\mu_2}{v} + \\frac{\\mu_1}{u} = \\frac{\\mu_2 - \\mu_1}{R}$",
+            "$\\frac{\\mu_2}{u} - \\frac{\\mu_1}{v} = \\frac{\\mu_2 - \\mu_1}{R}$"
+          ],
+          "correctOption": 0,
+          "solution": "The standard Gaussian formula for refraction at a spherical interface of radius $R$ is $\\frac{\\mu_2}{v} - \\frac{\\mu_1}{u} = \\frac{\\mu_2 - \\mu_1}{R}$."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ray of light enters a glass slab of thickness $t$ and refractive index $\\mu$ at an angle of incidence $i$. The lateral displacement $d$ of the emergent ray is given by:",
+          "image": "",
+          "options": [
+            "$\\frac{t\\sin(i - r)}{\\cos r}$",
+            "$\\frac{t\\cos(i - r)}{\\sin r}$",
+            "$t\\sin(i - r)\\cos r$",
+            "$\\frac{t\\sin i}{\\cos r}$"
+          ],
+          "correctOption": 0,
+          "solution": "Geometry of refraction through a parallel-sided transparent slab yields lateral shift $d = \\frac{t\\sin(i - r)}{\\cos r}$."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dispersive power $\\omega$ of a prism material is defined in terms of refractive indices $\\mu_v, \\mu_r,$ and $\\mu_y$ as:",
+          "image": "",
+          "options": [
+            "$\\frac{\\mu_v - \\mu_r}{\\mu_y - 1}$",
+            "$\\frac{\\mu_y - 1}{\\mu_v - \\mu_r}$",
+            "$\\frac{\\mu_v + \\mu_r}{\\mu_y - 1}$",
+            "$(\\mu_v - \\mu_r)(\\mu_y - 1)$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\omega = \\frac{\\text{Angular Dispersion}}{\\text{Mean Deviation}} = \\frac{\\delta_v - \\delta_r}{\\delta_y} = \\frac{(\\mu_v - \\mu_r)A}{(\\mu_y - 1)A} = \\frac{\\mu_v - \\mu_r}{\\mu_y - 1}$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An equiconvex lens of focal length $f$ is cut perpendicularly to its principal axis into two equal plano-convex lenses. The focal length of each plano-convex half is:",
+          "image": "",
+          "options": [
+            "$2f$",
+            "$\\frac{f}{2}$",
+            "$f$",
+            "$4f$"
+          ],
+          "correctOption": 0,
+          "solution": "Original equiconvex lens: $\\frac{1}{f} = (\\mu - 1)\\left(\\frac{1}{R} - \\left(-\\frac{1}{R}\\right)\\right) = \\frac{2(\\mu - 1)}{R}$.\nEach plano-convex piece: $\\frac{1}{f'} = (\\mu - 1)\\left(\\frac{1}{R} - \\frac{1}{\\infty}\\right) = \\frac{\\mu - 1}{R} = \\frac{1}{2f} \\implies f' = 2f$."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two thin lenses of powers $+4\\text{ D}$ and $-2\\text{ D}$ are placed in contact. The focal length of the combination is:",
+          "image": "",
+          "options": [
+            "$+50\\text{ cm}$",
+            "$-50\\text{ cm}$",
+            "$+25\\text{ cm}$",
+            "$+100\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Equivalent power $P = P_1 + P_2 = +4 - 2 = +2\\text{ D}$.\n$$f = \\frac{1}{P} = \\frac{1}{+2\\text{ D}} = +0.5\\text{ m} = +50\\text{ cm}$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ray of light traveling in a medium of refractive index $\\mu_1$ strikes a boundary with another medium of refractive index $\\mu_2$ ($\\mu_1 > \\mu_2$). The critical angle $i_c$ is given by:",
+          "image": "",
+          "options": [
+            "$\\sin^{-1}\\left(\\frac{\\mu_2}{\\mu_1}\\right)$",
+            "$\\sin^{-1}\\left(\\frac{\\mu_1}{\\mu_2}\\right)$",
+            "$\\cos^{-1}\\left(\\frac{\\mu_2}{\\mu_1}\\right)$",
+            "$\\tan^{-1}\\left(\\frac{\\mu_2}{\\mu_1}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "Applying Snell's law at the critical angle: $\\mu_1 \\sin i_c = \\mu_2 \\sin 90^\\circ \\implies \\sin i_c = \\frac{\\mu_2}{\\mu_1} \\implies i_c = \\sin^{-1}\\left(\\frac{\\mu_2}{\\mu_1}\\right)$."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The focal length of a spherical mirror of radius of curvature $R$ is:",
+          "image": "",
+          "options": [
+            "$f = \\frac{R}{2}$",
+            "$f = 2R$",
+            "$f = R$",
+            "$f = \\frac{R}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "For paraxial rays incident on a spherical mirror, the focal length is half the radius of curvature: $f = R/2$."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an astronomical telescope, the aperture of the objective lens is kept large in order to:",
+          "image": "",
+          "options": [
+            "Increase resolving power and light-gathering capacity",
+            "Reduce chromatic aberration",
+            "Decrease magnification",
+            "Shorten the telescope length"
+          ],
+          "correctOption": 0,
+          "solution": "A large objective aperture collects more photons from distant faint stars, providing higher image brightness, and yields a smaller diffraction limit ($\\,\\theta = 1.22\\lambda/D$), thereby increasing resolving power."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A prism of angle $A$ has refractive index $\\mu = \\cot(A/2)$. The angle of minimum deviation $\\delta_m$ is:",
+          "image": "",
+          "options": [
+            "$180^\\circ - 2A$",
+            "$180^\\circ - A$",
+            "$90^\\circ - A$",
+            "$2A$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\mu = \\frac{\\sin\\left(\\frac{A + \\delta_m}{2}\\right)}{\\sin(A/2)} = \\cot(A/2) = \\frac{\\cos(A/2)}{\\sin(A/2)}$$\n$$\\sin\\left(\\frac{A + \\delta_m}{2}\\right) = \\cos(A/2) = \\sin\\left(90^\\circ - \\frac{A}{2}\\right)$$\n$$\\frac{A + \\delta_m}{2} = 90^\\circ - \\frac{A}{2} \\implies A + \\delta_m = 180^\\circ - A \\implies \\delta_m = 180^\\circ - 2A$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A fish looking up through water ($\\mu = 4/3$) sees the entire outside world contained within a circular horizon of radius $R$ at depth $h$. The radius $R$ of the circle is:",
+          "image": "",
+          "options": [
+            "$\\frac{h}{\\sqrt{\\mu^2 - 1}}$",
+            "$h\\sqrt{\\mu^2 - 1}$",
+            "$\\frac{h}{\\mu}$",
+            "$\\frac{\\mu h}{\\sqrt{\\mu^2 + 1}}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\tan i_c = \\frac{R}{h} \\implies R = h\\tan i_c = h\\left(\\frac{\\sin i_c}{\\cos i_c}\\right) = h\\left(\\frac{1/\\mu}{\\sqrt{1 - 1/\\mu^2}}\\right) = \\frac{h}{\\sqrt{\\mu^2 - 1}}$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A real object is placed $20\\text{ cm}$ in front of a concave mirror of focal length $15\\text{ cm}$. The image formed is:",
+          "image": "",
+          "options": [
+            "Real, inverted, and located at $60\\text{ cm}$ in front of the mirror",
+            "Virtual, erect, and located at $60\\text{ cm}$ behind the mirror",
+            "Real, erect, and located at $30\\text{ cm}$",
+            "Virtual, inverted, and located at $30\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Mirror formula: $\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f} \\implies \\frac{1}{v} + \\frac{1}{-20} = \\frac{1}{-15}$.\n$$\\frac{1}{v} = -\\frac{1}{15} + \\frac{1}{20} = \\frac{-4 + 3}{60} = -\\frac{1}{60} \\implies v = -60\\text{ cm}$$\nMagnification $m = -\\frac{v}{u} = -\\frac{-60}{-20} = -3$ (real and inverted)."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A transparent glass sphere of radius $R$ and refractive index $\\mu = 1.5$ has a small air bubble at its center. The apparent distance of the bubble when viewed from outside the sphere is:",
+          "image": "",
+          "options": [
+            "$R$ from the surface",
+            "$\\frac{R}{1.5}$ from the surface",
+            "$1.5 R$ from the surface",
+            "At the opposite surface"
+          ],
+          "correctOption": 0,
+          "solution": "Rays originating from the center strike the spherical glass-air interface at normal incidence ($i = 0$). They pass straight through without deviation, so the bubble appears at its actual physical distance $R$ from the surface."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For a telescope in normal adjustment, the distance between the objective lens and eyepiece lens is:",
+          "image": "",
+          "options": [
+            "$f_o + f_e$",
+            "$f_o - f_e$",
+            "$\\frac{f_o + f_e}{2}$",
+            "$f_o \\times f_e$"
+          ],
+          "correctOption": 0,
+          "solution": "In normal adjustment of an astronomical telescope, the real intermediate image formed at the focal plane of the objective ($f_o$) coincides with the principal focus of the eyepiece ($f_e$), so the separation is $L = f_o + f_e$."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An illuminated object and a screen are placed a fixed distance $D$ apart. A convex lens of focal length $f$ produces sharp images on the screen at two distinct positions separated by displacement $d$. The focal length $f$ is given by:",
+          "image": "",
+          "options": [
+            "$\\frac{D^2 - d^2}{4D}$",
+            "$\\frac{D^2 + d^2}{4D}$",
+            "$\\frac{D^2 - d^2}{2D}$",
+            "$\\frac{D - d}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "By the lens displacement method:\n$$f = \\frac{D^2 - d^2}{4D}$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A convex lens of power $+6\\text{ D}$ is held in contact with a concave lens of power $-4\\text{ D}$. The nature and focal length of the combined lens system are:",
+          "image": "",
+          "options": [
+            "Convex, $+50\\text{ cm}$",
+            "Concave, $-50\\text{ cm}$",
+            "Convex, $+20\\text{ cm}$",
+            "Concave, $-20\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total power $P = P_1 + P_2 = +6 - 4 = +2\\text{ D}$.\n$$f = \\frac{1}{P} = \\frac{1}{+2\\text{ D}} = +0.5\\text{ m} = +50\\text{ cm}$$\nBecause $f > 0$, the combination behaves as a converging (convex) lens."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following mirrors always forms a virtual, erect, and diminished image of a real object for all object positions?",
+          "image": "",
+          "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic concave mirror"
+          ],
+          "correctOption": 0,
+          "solution": "A convex mirror diverges incident light rays, forming a virtual, erect, and diminished image behind the mirror regardless of where the real object is located in front of it."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The condition for dispersion without average deviation for a combination of two thin prisms of angles $A$ and $A'$ and refractive indices $\\mu$ and $\\mu'$ is:",
+          "image": "",
+          "options": [
+            "$(\\mu - 1)A + (\\mu' - 1)A' = 0$",
+            "$(\\mu_v - \\mu_r)A + (\\mu_v' - \\mu_r')A' = 0$",
+            "$\\mu A = \\mu' A'$",
+            "$(\\mu + 1)A = (\\mu' + 1)A'$"
+          ],
+          "correctOption": 0,
+          "solution": "For zero net deviation: $\\delta_{\\text{net}} = \\delta_1 + \\delta_2 = (\\mu - 1)A + (\\mu' - 1)A' = 0$."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When the lower half of a convex lens is covered with black paper:",
+          "image": "",
+          "options": [
+            "A complete image is formed with reduced intensity",
+            "Only the upper half of the image is formed",
+            "Only the lower half of the image is formed",
+            "No image is formed"
+          ],
+          "correctOption": 0,
+          "solution": "Light rays from every point of the object still pass through the uncovered upper half of the lens to construct the full image, but the total collected light energy is halved, reducing image brightness/intensity."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ray of light is incident normally on one face of an equilateral glass prism ($\\mu = 1.5$). The ray will undergo total internal reflection at the second face if the critical angle $\\theta_c$ is:",
+          "image": "",
+          "options": [
+            "Less than $60^\\circ$ (since $i_2 = 60^\\circ > \\theta_c \\approx 41.8^\\circ$)",
+            "Greater than $60^\\circ$",
+            "Equal to $60^\\circ$",
+            "Independent of refractive index"
+          ],
+          "correctOption": 0,
+          "solution": "Critical angle for glass with $\\mu = 1.5$: $\\sin\\theta_c = \\frac{1}{1.5} = 0.667 \\implies \\theta_c \\approx 41.8^\\circ$.\nFor normal incidence on face 1, the ray hits face 2 at $i_2 = 60^\\circ$. Since $i_2 = 60^\\circ > \\theta_c = 41.8^\\circ$, total internal reflection occurs."
+        }
+      ]
+    }
+  ]
+}
