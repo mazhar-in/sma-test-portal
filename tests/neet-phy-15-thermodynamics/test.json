@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-15-thermodynamics",
+  "title": "Thermodynamics",
+  "syllabus": "Thermal equilibrium, Zeroth law of thermodynamics, Concept of temperature, Heat, Work and internal energy, First law of thermodynamics, Isothermal and adiabatic processes, Isobaric and isochoric processes, Cyclic and non-cyclic processes, Second law of thermodynamics, Reversible and irreversible processes, Heat engines and refrigerators",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an adiabatic process, the pressure is found to be proportional to the cube of its absolute temperature. The ratio $\\gamma = C_p / C_v$ for the gas is: (NEET 2023)",
+          "image": "",
+          "options": [
+            "$\\frac{4}{3}$",
+            "$\\frac{5}{3}$",
+            "$\\frac{3}{2}$",
+            "$\\frac{7}{5}$"
+          ],
+          "correctOption": 2,
+          "solution": "In an adiabatic process: $P^{1-\\gamma} T^\\gamma = \\text{constant} \\implies P \\propto T^{\\frac{\\gamma}{\\gamma - 1}}$.\nGiven $P \\propto T^3 \\implies \\frac{\\gamma}{\\gamma - 1} = 3 \\implies \\gamma = 3\\gamma - 3 \\implies 2\\gamma = 3 \\implies \\gamma = \\frac{3}{2}$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An ideal gas undergoes four different processes from the same initial state as shown in the $P\\text{-}V$ diagram. Which curve represents the adiabatic process? (NEET 2022)",
+          "image": "",
+          "options": [
+            "Curve with slope steeper than isothermal curve but with expansion",
+            "Horizontal line parallel to volume axis",
+            "Vertical line parallel to pressure axis",
+            "Hyperbola with slope equal to $-P/V$"
+          ],
+          "correctOption": 0,
+          "solution": "The slope of an adiabatic process on a $P\\text{-}V$ indicator diagram is $\\left(\\frac{dP}{dV}\\right)_{\\text{ad}} = -\\gamma \\frac{P}{V}$, which is $\\gamma$ times steeper than the slope of an isothermal process $\\left(\\frac{dP}{dV}\\right)_{\\text{iso}} = -\\frac{P}{V}$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A sample of $0.1\\text{ g}$ of water at $100^\\circ\\text{C}$ and normal atmospheric pressure ($1.013 \\times 10^5\\text{ N/m}^2$) requires $54\\text{ cal}$ of heat energy to convert to steam at $100^\\circ\\text{C}$. If the volume of the steam produced is $167.1\\text{ cc}$, the change in internal energy of the sample is: ($1\\text{ cal} = 4.184\\text{ J}$) (NEET 2018)",
+          "image": "",
+          "options": [
+            "$208.7\\text{ J}$",
+            "$42.2\\text{ J}$",
+            "$226.7\\text{ J}$",
+            "$84.5\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "Heat supplied $\\Delta Q = 54 \\times 4.184 = 225.94\\text{ J}$.\nInitial volume of liquid $V_1 = 0.1\\text{ cc} = 0.1 \\times 10^{-6}\\text{ m}^3$.\nFinal volume of steam $V_2 = 167.1\\text{ cc} = 167.1 \\times 10^{-6}\\text{ m}^3$.\n$$\\Delta W = P(V_2 - V_1) = 1.013 \\times 10^5 \\times (167.1 - 0.1) \\times 10^{-6} = 1.013 \\times 10^5 \\times 167 \\times 10^{-6} \\approx 16.92\\text{ J}$$\nBy First Law of Thermodynamics: $\\Delta U = \\Delta Q - \\Delta W = 225.94 - 16.92 = 209.02\\text{ J} \\approx 208.7\\text{ J}$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "One mole of an ideal monoatomic gas undergoes a process described by the equation $P V^3 = \\text{constant}$. The molar heat capacity of the gas during this process is: (NEET 2016)",
+          "image": "",
+          "options": [
+            "$R$",
+            "$2R$",
+            "$\\frac{3}{2}R$",
+            "$\\frac{5}{2}R$"
+          ],
+          "correctOption": 0,
+          "solution": "For a polytropic process $P V^x = \\text{constant}$, molar heat capacity is $C = C_v + \\frac{R}{1 - x}$.\nFor monoatomic gas, $C_v = \\frac{3}{2}R$ and here $x = 3$.\n$$C = \\frac{3}{2}R + \\frac{R}{1 - 3} = \\frac{3}{2}R - \\frac{R}{2} = R$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A Carnot engine having an efficiency of $\\eta = 1/10$ as heat engine, is used as a refrigerator. If the work done on the system is $10\\text{ J}$, the amount of energy absorbed from the cold reservoir at lower temperature is: (NEET 2017)",
+          "image": "",
+          "options": [
+            "$90\\text{ J}$",
+            "$99\\text{ J}$",
+            "$100\\text{ J}$",
+            "$1\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "Coefficient of performance $\\beta = \\frac{1 - \\eta}{\\eta} = \\frac{1 - 0.1}{0.1} = 9$.\n$$\\beta = \\frac{Q_2}{W} \\implies Q_2 = \\beta W = 9 \\times 10\\text{ J} = 90\\text{ J}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The efficiency of an ideal heat engine working between the freezing point and boiling point of water is: (NEET 2018)",
+          "image": "",
+          "options": [
+            "$26.8\\%$",
+            "$20.0\\%$",
+            "$6.25\\%$",
+            "$12.5\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "$T_1 = 100^\\circ\\text{C} = 373\\text{ K}$ and $T_2 = 0^\\circ\\text{C} = 273\\text{ K}$.\n$$\\eta = 1 - \\frac{T_2}{T_1} = 1 - \\frac{273}{373} = \\frac{100}{373} \\approx 0.2681 = 26.8\\%$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Zeroth law of thermodynamics forms the fundamental basis for the measurement of:",
+          "image": "",
+          "options": [
+            "Temperature",
+            "Internal energy",
+            "Entropy",
+            "Work done"
+          ],
+          "correctOption": 0,
+          "solution": "The Zeroth Law of Thermodynamics establishes that if two systems are each in thermal equilibrium with a third system, they are in thermal equilibrium with each other, defining temperature as a valid physical property."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following is NOT a state function?",
+          "image": "",
+          "options": [
+            "Work",
+            "Internal energy",
+            "Enthalpy",
+            "Temperature"
+          ],
+          "correctOption": 0,
+          "solution": "Work and heat are path-dependent functions, whereas internal energy, enthalpy, entropy, pressure, volume, and temperature depend solely on the thermodynamic state of the system."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an isothermal expansion of an ideal gas, the work done by the gas is equal to:",
+          "image": "",
+          "options": [
+            "Heat absorbed by the gas",
+            "Change in internal energy",
+            "Zero",
+            "Negative of heat absorbed"
+          ],
+          "correctOption": 0,
+          "solution": "For an ideal gas undergoing an isothermal process ($T = \\text{constant}$), internal energy change is zero ($\\Delta U = n C_v \\Delta T = 0$). By the First Law: $\\Delta Q = \\Delta U + W \\implies W = \\Delta Q$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An ideal gas expands isothermally from volume $V_1$ to $V_2$ and then is compressed adiabatically to its original volume $V_1$. If $W_1$ is the work done in the first process and $W_2$ is the work done in the second process, then:",
+          "image": "",
+          "options": [
+            "$|W_2| > |W_1|$",
+            "$|W_1| > |W_2|$",
+            "$|W_1| = |W_2|$",
+            "$W_1 = W_2 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "The adiabatic curve on a $P\\text{-}V$ diagram lies above the isothermal curve during compression ($P_{\\text{adiabatic}} > P_{\\text{isothermal}}$ for the same volume). Hence, the area under the adiabatic compression curve is greater, meaning $|W_2| > |W_1|$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During an adiabatic process, the equation relating temperature $T$ and volume $V$ for an ideal gas of ratio $\\gamma$ is:",
+          "image": "",
+          "options": [
+            "$T V^{\\gamma - 1} = \\text{constant}$",
+            "$T V^{\\gamma} = \\text{constant}$",
+            "$T^{\\gamma} V = \\text{constant}$",
+            "$T V^{1 - \\gamma} = \\text{constant}$"
+          ],
+          "correctOption": 0,
+          "solution": "From $P V^\\gamma = \\text{constant}$ and ideal gas equation $P = \\frac{nRT}{V}$, substituting $P$ gives $\\left(\\frac{T}{V}\\right) V^\\gamma = \\text{constant} \\implies T V^{\\gamma - 1} = \\text{constant}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The internal energy of an ideal gas depends ONLY upon its:",
+          "image": "",
+          "options": [
+            "Absolute temperature",
+            "Volume",
+            "Pressure",
+            "Molecular size"
+          ],
+          "correctOption": 0,
+          "solution": "By Joule's law, there are no intermolecular attractive forces in an ideal gas, so its internal energy consists purely of kinetic energy and is solely a function of absolute temperature ($U = n C_v T$)."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two moles of an ideal monoatomic gas ($\\gamma = 5/3$) are compressed adiabatically from temperature $27^\\circ\\text{C}$ to $127^\\circ\\text{C}$. The work done on the gas during this process is: ($R = 8.31\\text{ J/mol}\\cdot\\text{K}$)",
+          "image": "",
+          "options": [
+            "$2493\\text{ J}$",
+            "$-2493\\text{ J}$",
+            "$4986\\text{ J}$",
+            "$1246.5\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$W = \\frac{n R (T_1 - T_2)}{\\gamma - 1} = \\frac{2 \\times 8.31 \\times (300 - 400)}{5/3 - 1} = \\frac{2 \\times 8.31 \\times (-100)}{2/3} = -3 \\times 831 = -2493\\text{ J}$$\nWork done ON the gas is $|W| = 2493\\text{ J}$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The Second Law of Thermodynamics rules out the existence of:",
+          "image": "",
+          "options": [
+            "A $100\\%$ efficient heat engine operating in a cycle",
+            "An adiabatic process",
+            "A reversible isothermal expansion",
+            "An isobaric expansion"
+          ],
+          "correctOption": 0,
+          "solution": "The Kelvin-Planck statement of the Second Law dictates that it is impossible to construct a cyclic heat engine whose sole effect is to absorb heat from a reservoir and convert it completely into mechanical work without rejecting any heat ($\\eta < 100\\%$ always)."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A thermodynamic system is taken through a cyclic process $ABCA$. If the net heat absorbed in the cycle is $+50\\text{ J}$, the net work done by the system during the cycle is:",
+          "image": "",
+          "options": [
+            "$+50\\text{ J}$",
+            "$-50\\text{ J}$",
+            "$0\\text{ J}$",
+            "$+100\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "For any complete cycle, the initial and final states are identical, so change in internal energy $\\oint dU = 0$.\nBy the First Law: $W_{\\text{net}} = Q_{\\text{net}} = +50\\text{ J}$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For an isobaric expansion of an ideal monoatomic gas, what fraction of the total heat supplied is converted into external work?",
+          "image": "",
+          "options": [
+            "$\\frac{2}{5}$",
+            "$\\frac{3}{5}$",
+            "$\\frac{1}{2}$",
+            "$\\frac{2}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "For isobaric process: $\\Delta Q = n C_p \\Delta T$ and $\\Delta W = n R \\Delta T$.\n$$\\frac{\\Delta W}{\\Delta Q} = \\frac{n R \\Delta T}{n C_p \\Delta T} = \\frac{R}{C_p} = \\frac{R}{\\frac{5}{2}R} = \\frac{2}{5}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an isochoric process, which of the following quantities is strictly ZERO?",
+          "image": "",
+          "options": [
+            "Work done by the gas",
+            "Change in internal energy",
+            "Heat supplied to the gas",
+            "Change in temperature"
+          ],
+          "correctOption": 0,
+          "solution": "In an isochoric process, volume is held constant ($dV = 0$), so the boundary work $W = \\int P\\,dV = 0$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An ideal gas undergoes an adiabatic compression. Which of the following statements is TRUE?",
+          "image": "",
+          "options": [
+            "Temperature of the gas increases",
+            "Internal energy of the gas decreases",
+            "Heat is released to the surroundings",
+            "Work done on the gas is zero"
+          ],
+          "correctOption": 0,
+          "solution": "In an adiabatic compression, $\\Delta Q = 0$ and work is done ON the gas ($W < 0$).\nBy First Law: $\\Delta U = \\Delta Q - W = 0 - (-|W|) = +|W| > 0$.\nSince internal energy increases ($\\,n C_v \\Delta T > 0$), the temperature rises."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The work done in an isothermal expansion of $n$ moles of an ideal gas from volume $V_1$ to $V_2$ at temperature $T$ is given by:",
+          "image": "",
+          "options": [
+            "$n R T \\ln\\left(\\frac{V_2}{V_1}\\right)$",
+            "$n R T \\ln\\left(\\frac{V_1}{V_2}\\right)$",
+            "$\\frac{n R T}{\\gamma - 1}\\left(1 - \\frac{V_1}{V_2}\\right)$",
+            "$P(V_2 - V_1)$"
+          ],
+          "correctOption": 0,
+          "solution": "$$W = \\int_{V_1}^{V_2} P\\,dV = \\int_{V_1}^{V_2} \\frac{nRT}{V}\\,dV = n R T \\ln\\left(\\frac{V_2}{V_1}\\right)$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A Carnot engine works between two temperatures $T_1 = 500\\text{ K}$ and $T_2 = 300\\text{ K}$. If it absorbs $600\\text{ J}$ of heat from the source per cycle, the heat rejected to the sink per cycle is:",
+          "image": "",
+          "options": [
+            "$360\\text{ J}$",
+            "$240\\text{ J}$",
+            "$400\\text{ J}$",
+            "$120\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a reversible Carnot cycle: $\\frac{Q_2}{Q_1} = \\frac{T_2}{T_1}$.\n$$Q_2 = Q_1 \\left(\\frac{T_2}{T_1}\\right) = 600\\text{ J} \\times \\left(\\frac{300}{500}\\right) = 360\\text{ J}$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A gas is suddenly compressed to one-fourth of its original volume at constant temperature. If the initial pressure was $1\\text{ atm}$, the final pressure will be:",
+          "image": "",
+          "options": [
+            "$4\\text{ atm}$",
+            "$2\\text{ atm}$",
+            "$8\\text{ atm}$",
+            "$16\\text{ atm}$"
+          ],
+          "correctOption": 0,
+          "solution": "At constant temperature (isothermal process), $P_1 V_1 = P_2 V_2$.\n$$P_2 = P_1 \\left(\\frac{V_1}{V_2}\\right) = 1\\text{ atm} \\times \\left(\\frac{V_1}{V_1/4}\\right) = 4\\text{ atm}$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following processes is IRREVERSIBLE in nature?",
+          "image": "",
+          "options": [
+            "Free expansion of a gas into vacuum",
+            "Slow quasi-static isothermal compression",
+            "Slow quasi-static adiabatic expansion",
+            "Ideal frictionless pendulum oscillation"
+          ],
+          "correctOption": 0,
+          "solution": "Free expansion of a gas into an evacuated insulated container is an uncontrolled, non-equilibrium dissipative process and is completely irreversible."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The slope of an isothermal curve and an adiabatic curve on a $P\\text{-}V$ indicator diagram passing through the same $(P, V)$ point are related as:",
+          "image": "",
+          "options": [
+            "$\\text{Slope of adiabatic} = \\gamma \\times (\\text{Slope of isothermal})$",
+            "$\\text{Slope of isothermal} = \\gamma \\times (\\text{Slope of adiabatic})$",
+            "$\\text{Slope of adiabatic} = \\text{Slope of isothermal}$",
+            "$\\text{Slope of adiabatic} = \\gamma^2 \\times (\\text{Slope of isothermal})$"
+          ],
+          "correctOption": 0,
+          "solution": "For isothermal: $\\left(\\frac{dP}{dV}\\right)_T = -\\frac{P}{V}$.\nFor adiabatic: $\\left(\\frac{dP}{dV}\\right)_S = -\\gamma \\frac{P}{V} = \\gamma \\left(\\frac{dP}{dV}\\right)_T$."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A system absorbs $300\\text{ cal}$ of heat and at the same time does $400\\text{ J}$ of work on the surroundings. The change in internal energy of the system is: ($1\\text{ cal} = 4.184\\text{ J}$)",
+          "image": "",
+          "options": [
+            "$+855.2\\text{ J}$",
+            "$-100\\text{ J}$",
+            "$+1255.2\\text{ J}$",
+            "$-855.2\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "$\\Delta Q = 300 \\times 4.184 = 1255.2\\text{ J}$.\nWork done by system $W = +400\\text{ J}$.\n$$\\Delta U = \\Delta Q - W = 1255.2 - 400 = +855.2\\text{ J}$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If an open door of a working household refrigerator is left open in a closed room, the room temperature will:",
+          "image": "",
+          "options": [
+            "Gradually increase",
+            "Gradually decrease",
+            "Remain unchanged",
+            "Drop to freezing point"
+          ],
+          "correctOption": 0,
+          "solution": "A refrigerator extracts heat $Q_2$ from its interior and rejects heat $Q_1 = Q_2 + W$ into the room. Since work $W$ performed by the compressor motor is dissipated as additional thermal energy, net heat is added to the room, increasing its temperature."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During the free expansion of an ideal gas in an insulated container, which of the following remains constant?",
+          "image": "",
+          "options": [
+            "Internal energy and Temperature",
+            "Pressure and Volume",
+            "Pressure and Temperature",
+            "Volume and Entropy"
+          ],
+          "correctOption": 0,
+          "solution": "For adiabatic free expansion into vacuum, $Q = 0$ and $W = 0$. By the First Law, $\\Delta U = 0$. For an ideal gas ($U = f(T)$), $\\Delta U = 0$ implies temperature $T$ remains constant."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A monoatomic ideal gas undergoes a cyclic process represented by a circle on a $P\\text{-}V$ diagram. If the coordinates of the center are $(P_0, V_0)$ and radii along $P$ and $V$ axes are $P_0/2$ and $V_0/2$, the net work done per cycle is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{4} P_0 V_0$",
+            "$\\pi P_0 V_0$",
+            "$\\frac{\\pi}{2} P_0 V_0$",
+            "$4\\pi P_0 V_0$"
+          ],
+          "correctOption": 0,
+          "solution": "Area of an ellipse/circle on $P\\text{-}V$ diagram: $W = \\pi a b = \\pi \\left(\\frac{P_0}{2}\\right) \\left(\\frac{V_0}{2}\\right) = \\frac{\\pi}{4} P_0 V_0$."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The molar heat capacity for an ideal gas in an isothermal process is:",
+          "image": "",
+          "options": [
+            "Infinite",
+            "Zero",
+            "Equal to $C_v$",
+            "Equal to $C_p$"
+          ],
+          "correctOption": 0,
+          "solution": "$$C = \\frac{\\Delta Q}{n \\Delta T}$$\nIn an isothermal process, $\\Delta T = 0$, so $C = \\frac{\\Delta Q}{0} = \\infty$."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The molar heat capacity of an ideal gas in an adiabatic process is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "Infinite",
+            "Equal to $R$",
+            "Negative"
+          ],
+          "correctOption": 0,
+          "solution": "$$C = \\frac{\\Delta Q}{n \\Delta T}$$\nIn an adiabatic process, $\\Delta Q = 0$, so $C = \\frac{0}{n \\Delta T} = 0$."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A diatomic gas ($\\gamma = 1.4$) is compressed adiabatically to $\\frac{1}{32}$ of its initial volume. If the initial temperature was $27^\\circ\\text{C}$, the final temperature is:",
+          "image": "",
+          "options": [
+            "$927^\\circ\\text{C}$",
+            "$627^\\circ\\text{C}$",
+            "$1200^\\circ\\text{C}$",
+            "$300^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "$T_1 = 27 + 273 = 300\\text{ K}$.\n$$T_2 = T_1 \\left(\\frac{V_1}{V_2}\\right)^{\\gamma - 1} = 300 \\times (32)^{1.4 - 1} = 300 \\times (32)^{0.4} = 300 \\times (2^5)^{2/5} = 300 \\times 2^2 = 300 \\times 4 = 1200\\text{ K}$$\n$$T_2 = 1200 - 273 = 927^\\circ\\text{C}$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "First law of thermodynamics is an expression of the universal law of:",
+          "image": "",
+          "options": [
+            "Conservation of energy",
+            "Conservation of linear momentum",
+            "Conservation of mass",
+            "Conservation of entropy"
+          ],
+          "correctOption": 0,
+          "solution": "The First Law of Thermodynamics ($\\Delta Q = \\Delta U + \\Delta W$) is the statement of the principle of conservation of energy applied to thermodynamic systems."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A Carnot engine operates with sink at $27^\\circ\\text{C}$ with an efficiency of $40\\%$. By how much should the source temperature be increased to achieve an efficiency of $50\\%$?",
+          "image": "",
+          "options": [
+            "$100\\text{ K}$",
+            "$50\\text{ K}$",
+            "$150\\text{ K}$",
+            "$75\\text{ K}$"
+          ],
+          "correctOption": 0,
+          "solution": "$T_2 = 27 + 273 = 300\\text{ K}$.\nInitial: $\\eta_1 = 1 - \\frac{300}{T_1} = 0.40 \\implies \\frac{300}{T_1} = 0.60 \\implies T_1 = 500\\text{ K}$.\nTarget: $\\eta_2 = 1 - \\frac{300}{T_1'} = 0.50 \\implies \\frac{300}{T_1'} = 0.50 \\implies T_1' = 600\\text{ K}$.\n$$\\Delta T_1 = 600 - 500 = 100\\text{ K}$$"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When an ideal gas undergoes an isobaric process from temperature $T_1$ to $T_2$, the work done by $n$ moles of gas is:",
+          "image": "",
+          "options": [
+            "$n R(T_2 - T_1)$",
+            "$n C_p(T_2 - T_1)$",
+            "$n C_v(T_2 - T_1)$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "In an isobaric process: $W = P\\Delta V = P(V_2 - V_1) = nR(T_2 - T_1)$."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Clauseius statement of the Second Law of Thermodynamics deals with:",
+          "image": "",
+          "options": [
+            "Transfer of heat from a colder body to a hotter body without external work",
+            "Conversion of heat completely into work",
+            "Conservation of total energy",
+            "Measurement of temperature"
+          ],
+          "correctOption": 0,
+          "solution": "The Clausius statement asserts that it is impossible to construct a device operating in a cycle whose sole result is the transfer of heat from a cooler body to a hotter body without external work input."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Equal volumes of monoatomic ($\\gamma = 5/3$) and diatomic ($\\gamma = 7/5$) gases at the same initial temperature and pressure are expanded adiabatically to double their volumes. The final pressure is:",
+          "image": "",
+          "options": [
+            "Greater for the diatomic gas",
+            "Greater for the monoatomic gas",
+            "Equal for both gases",
+            "Zero for both gases"
+          ],
+          "correctOption": 0,
+          "solution": "$P_f = P_i\\left(\\frac{V_i}{V_f}\\right)^\\gamma = P_i\\left(\\frac{1}{2}\\right)^\\gamma$.\nSince $\\gamma_{\\text{mono}} (1.67) > \\gamma_{\\text{dia}} (1.40)$, $(1/2)^{1.67} < (1/2)^{1.40}$. Therefore, $P_{f,\\text{dia}} > P_{f,\\text{mono}}$."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A refrigerator works between $4^\\circ\\text{C}$ and $30^\\circ\\text{C}$. For every $1\\text{ J}$ of mechanical energy supplied, the heat extracted from the interior is approximately:",
+          "image": "",
+          "options": [
+            "$10.65\\text{ J}$",
+            "$5.32\\text{ J}$",
+            "$1.25\\text{ J}$",
+            "$20.5\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$T_2 = 4 + 273 = 277\\text{ K}, \\quad T_1 = 30 + 273 = 303\\text{ K}$$\n$$\\beta = \\frac{T_2}{T_1 - T_2} = \\frac{277}{303 - 277} = \\frac{277}{26} \\approx 10.65$$\n$$Q_2 = \\beta W = 10.65 \\times 1\\text{ J} = 10.65\\text{ J}$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An ideal gas is taken through a cycle $A \\to B \\to C \\to A$ where $AB$ is isothermal expansion at $T$, $BC$ is isochoric cooling, and $CA$ is adiabatic compression. The net change in internal energy over one complete cycle is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$n R T \\ln(V_B/V_A)$",
+            "$n C_v(T_A - T_C)$",
+            "Positive and non-zero"
+          ],
+          "correctOption": 0,
+          "solution": "Internal energy is a thermodynamic state function. For any closed cycle returning to the starting state $A$, $\\Delta U_{\\text{cycle}} = 0$ identically."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For an adiabatic expansion of an ideal gas, which relationship is CORRECT?",
+          "image": "",
+          "options": [
+            "$P^{1-\\gamma} T^{\\gamma} = \\text{constant}$",
+            "$P^{\\gamma} T^{1-\\gamma} = \\text{constant}$",
+            "$P T^{\\gamma} = \\text{constant}$",
+            "$P^{\\gamma - 1} T^{\\gamma} = \\text{constant}$"
+          ],
+          "correctOption": 0,
+          "solution": "Substituting $V = \\frac{nRT}{P}$ into $PV^\\gamma = \\text{constant}$ yields $P\\left(\\frac{T}{P}\\right)^\\gamma = \\text{constant} \\implies P^{1-\\gamma} T^\\gamma = \\text{constant}$."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\Delta Q$ is added heat, $\\Delta U$ is change in internal energy, and $\\Delta W$ is work done, then for an isochoric process:",
+          "image": "",
+          "options": [
+            "$\\Delta Q = \\Delta U$",
+            "$\\Delta Q = \\Delta W$",
+            "$\\Delta U = -\\Delta W$",
+            "$\\Delta Q = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "In an isochoric process, volume is fixed $\\implies \\Delta W = 0$. Hence, $\\Delta Q = \\Delta U$."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During an isothermal expansion of an ideal gas at temperature $T$, the entropy change of the gas when its volume doubles is:",
+          "image": "",
+          "options": [
+            "$n R \\ln 2$",
+            "Zero",
+            "$-n R \\ln 2$",
+            "$2 n R$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\Delta S = \\int \\frac{dQ_{\\text{rev}}}{T} = \\frac{W_{\\text{iso}}}{T} = \\frac{nRT \\ln(V_2/V_1)}{T} = n R \\ln(2)$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The total work done in the cyclic process shown in a $P\\text{-}V$ loop is equal to:",
+          "image": "",
+          "options": [
+            "Area enclosed by the $P\\text{-}V$ loop",
+            "Area under the expansion curve only",
+            "Zero always",
+            "Area under the compression curve only"
+          ],
+          "correctOption": 0,
+          "solution": "The net work done during a cyclic thermodynamic process is represented geometrically by the area enclosed by the closed curve on the $P\\text{-}V$ indicator diagram (positive if clockwise, negative if counter-clockwise)."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A heat engine rejects $600\\text{ J}$ of heat to the sink for every $1000\\text{ J}$ of heat absorbed from the source. The efficiency of the engine is:",
+          "image": "",
+          "options": [
+            "$40\\%$",
+            "$60\\%$",
+            "$66.7\\%$",
+            "$33.3\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\eta = 1 - \\frac{Q_2}{Q_1} = 1 - \\frac{600}{1000} = 1 - 0.60 = 0.40 = 40\\%$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For a polytropic process $P V^n = \\text{constant}$, the work done when an ideal gas goes from $(P_1, V_1, T_1)$ to $(P_2, V_2, T_2)$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{P_1 V_1 - P_2 V_2}{n - 1}$",
+            "$\\frac{P_2 V_2 - P_1 V_1}{n - 1}$",
+            "$\\frac{P_1 V_1 - P_2 V_2}{n + 1}$",
+            "$n(P_1 V_1 - P_2 V_2)$"
+          ],
+          "correctOption": 0,
+          "solution": "$$W = \\int_{V_1}^{V_2} C V^{-n}\\,dV = \\frac{C}{1-n}\\left(V_2^{1-n} - V_1^{1-n}\\right) = \\frac{P_2 V_2 - P_1 V_1}{1 - n} = \\frac{P_1 V_1 - P_2 V_2}{n - 1}$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following conditions ensures that a thermodynamic process is REVERSIBLE?",
+          "image": "",
+          "options": [
+            "The process must be quasi-static and completely free of dissipative forces",
+            "The process must be extremely rapid",
+            "There must be large temperature differences across boundaries",
+            "Viscous friction must be present"
+          ],
+          "correctOption": 0,
+          "solution": "A reversible process requires the system to pass infinitely slowly through a continuous sequence of equilibrium states (quasi-static) without any dissipative effects such as friction, viscosity, or inelasticity."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When $2\\text{ moles}$ of an ideal gas are heated at constant pressure from $300\\text{ K}$ to $400\\text{ K}$, the work done by the gas is: ($R = 8.31\\text{ J/mol}\\cdot\\text{K}$)",
+          "image": "",
+          "options": [
+            "$1662\\text{ J}$",
+            "$831\\text{ J}$",
+            "$3324\\text{ J}$",
+            "$2493\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$W = P\\Delta V = n R\\Delta T = 2 \\times 8.31 \\times (400 - 300) = 2 \\times 8.31 \\times 100 = 1662\\text{ J}$$"
+        }
+      ]
+    }
+  ]
+}
