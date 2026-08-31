@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-28-wave-optics",
+  "title": "Wave Optics",
+  "syllabus": "Wave front and Huygens' principle, reflection and refraction of plane wave at a plane surface using wave fronts. Proof of laws of reflection and refraction using Huygens' principle. Interference, Young's double slit experiment and expression for fringe width, coherent sources and sustained interference of light, diffraction due to a single slit, width of central maximum.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Young's double-slit experiment, if the separation between coherent sources is halved and the distance of the screen from the coherent sources is doubled, then the fringe width becomes: (NEET 2020)",
+          "image": "",
+          "options": [
+            "Four times",
+            "Double",
+            "Half",
+            "One-fourth"
+          ],
+          "correctOption": 0,
+          "solution": "Fringe width is given by $\\beta = \\frac{\\lambda D}{d}$.\nWhen $d' = \\frac{d}{2}$ and $D' = 2D$:\n$$\\beta' = \\frac{\\lambda (2D)}{d / 2} = 4\\left(\\frac{\\lambda D}{d}\\right) = 4\\beta$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a Young's double-slit experiment, a student observes 8 fringes in a certain segment of the screen when a monochromatic light of $600\\text{ nm}$ wavelength is used. If the wavelength of light is changed to $400\\text{ nm}$, then the number of fringes observed in the same segment of the screen is: (NEET 2022)",
+          "image": "",
+          "options": [
+            "$12$",
+            "$6$",
+            "$8$",
+            "$10$"
+          ],
+          "correctOption": 0,
+          "solution": "The length of the segment on the screen is constant: $y = n_1 \\beta_1 = n_2 \\beta_2$.\n$$n_1 \\left(\\frac{\\lambda_1 D}{d}\\right) = n_2 \\left(\\frac{\\lambda_2 D}{d}\\right) \\implies n_1 \\lambda_1 = n_2 \\lambda_2$$\n$$8 \\times 600\\text{ nm} = n_2 \\times 400\\text{ nm} \\implies n_2 = \\frac{4800}{400} = 12$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Young's double-slit experiment, using monochromatic light of wavelength $\\lambda$, the intensity of light at a point on the screen where path difference is $\\lambda$ is $K\\text{ units}$. The intensity of light at a point where path difference is $\\lambda/3$ will be: (NEET 2023)",
+          "image": "",
+          "options": [
+            "$\\frac{K}{4}$",
+            "$\\frac{K}{2}$",
+            "$K$",
+            "$\\frac{3K}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "For path difference $\\Delta x = \\lambda$, phase difference $\\phi = 2\\pi$.\nMaximum intensity $I_{\\text{max}} = 4I_0 \\cos^2(\\pi) = 4I_0 = K$.\nFor path difference $\\Delta x = \\lambda/3$, phase difference $\\phi = \\frac{2\\pi}{\\lambda}\\left(\\frac{\\lambda}{3}\\right) = \\frac{2\\pi}{3}$.\n$$I = 4I_0 \\cos^2\\left(\\frac{\\phi}{2}\\right) = K \\cos^2\\left(\\frac{\\pi}{3}\\right) = K \\left(\\frac{1}{2}\\right)^2 = \\frac{K}{4}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two coherent sources of light interfere and produce a fringe pattern on a screen. For the central maximum, the phase difference between the two interfering waves will be: (NEET 2024)",
+          "image": "",
+          "options": [
+            "Zero",
+            "$\\pi$",
+            "$\\frac{\\pi}{2}$",
+            "$2\\pi$"
+          ],
+          "correctOption": 0,
+          "solution": "At the central maximum, the optical path difference between waves arriving from the two coherent slits is zero ($\\Delta x = 0$), so the phase difference $\\phi = \\frac{2\\pi}{\\lambda}\\Delta x = 0$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a Fraunhofer single-slit diffraction experiment, the first minimum for light of wavelength $600\\text{ nm}$ is formed at an angle of diffraction $30^\\circ$. The width of the slit is: (NEET 2018)",
+          "image": "",
+          "options": [
+            "$1.2 \\times 10^{-6}\\text{ m}$",
+            "$2.4 \\times 10^{-6}\\text{ m}$",
+            "$0.6 \\times 10^{-6}\\text{ m}$",
+            "$3.0 \\times 10^{-6}\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Condition for minimum in single-slit diffraction: $a \\sin\\theta = n\\lambda$.\nFor the first minimum ($n = 1$):\n$$a \\sin 30^\\circ = 1 \\times (600 \\times 10^{-9}\\text{ m})$$\n$$a (0.5) = 600 \\times 10^{-9} \\implies a = 1200 \\times 10^{-9}\\text{ m} = 1.2 \\times 10^{-6}\\text{ m}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the monochromatic light source in Young's double-slit experiment is replaced by white light, then: (NEET 2024)",
+          "image": "",
+          "options": [
+            "There will be a central white fringe surrounded by a few coloured fringes",
+            "There will be a central dark fringe surrounded by coloured fringes",
+            "All fringes will be uniformly dark",
+            "No interference pattern will be observed at all"
+          ],
+          "correctOption": 0,
+          "solution": "At the central point, path difference is zero for all wavelengths, so all colors superpose constructively to form a central white fringe. Away from the center, different wavelengths satisfy constructive conditions at different positions, producing a few colored fringes before overlapping into uniform illumination."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Young's double-slit experiment, two statements are given:\nStatement I: If the screen is moved away from the plane of the slits, the angular separation of the fringes remains constant.\nStatement II: If the monochromatic source is replaced by another monochromatic source of larger wavelength, the angular separation of fringes decreases.\nIn the light of the above statements, choose the correct answer: (NEET 2023)",
+          "image": "",
+          "options": [
+            "Statement I is true but Statement II is false",
+            "Statement I is false but Statement II is true",
+            "Both Statement I and Statement II are true",
+            "Both Statement I and Statement II are false"
+          ],
+          "correctOption": 0,
+          "solution": "Angular fringe width is $\\theta = \\frac{\\beta}{D} = \\frac{\\lambda}{d}$.\n- Statement I: $\\theta$ is independent of $D$, so moving the screen leaves $\\theta$ constant (True).\n- Statement II: $\\theta \\propto \\lambda$, so increasing wavelength increases angular separation, making Statement II false."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The shape of the wavefront originating from a point source at a finite distance is:",
+          "image": "",
+          "options": [
+            "Spherical",
+            "Cylindrical",
+            "Plane",
+            "Hyperbolic"
+          ],
+          "correctOption": 0,
+          "solution": "According to Huygens' principle, waves expand uniformly in three dimensions from an isolated point source, forming concentric spherical wavefronts."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The shape of the wavefront emerging from a linear source (like a slit) at a finite distance is:",
+          "image": "",
+          "options": [
+            "Cylindrical",
+            "Spherical",
+            "Plane",
+            "Conical"
+          ],
+          "correctOption": 0,
+          "solution": "All points equidistant from a linear source lie on the surface of a cylinder coaxial with the source, producing cylindrical wavefronts."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A plane wave is incident on a thin convex lens of focal length $f$. The nature of the emergent wavefront is:",
+          "image": "",
+          "options": [
+            "Spherical converging towards the principal focus",
+            "Spherical diverging from the principal focus",
+            "Plane wavefront parallel to the lens",
+            "Cylindrical wavefront"
+          ],
+          "correctOption": 0,
+          "solution": "A convex lens converges an incident parallel plane wave towards its principal focus $F$, producing a spherical converging wavefront."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two independent monochromatic sodium lamps illuminating two close slits cannot produce a stationary interference pattern because:",
+          "image": "",
+          "options": [
+            "They do not have a constant phase relationship (incoherent sources)",
+            "They emit light of different wavelengths",
+            "Their amplitudes are unequal",
+            "Their intensities are very high"
+          ],
+          "correctOption": 0,
+          "solution": "Two independent light sources undergo random, rapid atomic transitions ($10^8\\text{ transitions/s}$), causing random phase fluctuations. Lacking a constant phase difference, they are incoherent and cannot produce sustained interference."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Young's double-slit experiment, the ratio of maximum to minimum intensity in the interference pattern is $25 : 9$. The ratio of the slit widths is:",
+          "image": "",
+          "options": [
+            "$16 : 1$",
+            "$4 : 1$",
+            "$5 : 3$",
+            "$25 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\frac{I_{\\text{max}}}{I_{\\text{min}}} = \\left(\\frac{a_1 + a_2}{a_1 - a_2}\\right)^2 = \\frac{25}{9} \\implies \\frac{a_1 + a_2}{a_1 - a_2} = \\frac{5}{3}$$\n$$3a_1 + 3a_2 = 5a_1 - 5a_2 \\implies 2a_1 = 8a_2 \\implies \\frac{a_1}{a_2} = \\frac{4}{1}$$\nSince slit width $w \\propto I \\propto a^2$:\n$$\\frac{w_1}{w_2} = \\left(\\frac{a_1}{a_2}\\right)^2 = \\left(\\frac{4}{1}\\right)^2 = 16 : 1$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Young's double-slit experiment, if the entire apparatus is immersed in water of refractive index $\\mu = 4/3$ without changing geometry, the fringe width becomes:",
+          "image": "",
+          "options": [
+            "$\\frac{3}{4}$ times its initial value",
+            "$\\frac{4}{3}$ times its initial value",
+            "$\\frac{9}{16}$ times its initial value",
+            "Unchanged"
+          ],
+          "correctOption": 0,
+          "solution": "In a medium of refractive index $\\mu$, wavelength becomes $\\lambda' = \\lambda / \\mu$.\n$$\\beta' = \\frac{\\lambda' D}{d} = \\frac{\\lambda D}{\\mu d} = \\frac{\\beta}{\\mu} = \\frac{\\beta}{4/3} = \\frac{3}{4}\\beta$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a single-slit Fraunhofer diffraction pattern, the angular width of the central maximum is:",
+          "image": "",
+          "options": [
+            "$\\frac{2\\lambda}{a}$",
+            "$\\frac{\\lambda}{a}$",
+            "$\\frac{\\lambda}{2a}$",
+            "$\\frac{4\\lambda}{a}$"
+          ],
+          "correctOption": 0,
+          "solution": "The first diffraction minima on either side of the central maximum occur at angular positions $\\theta = \\pm \\frac{\\lambda}{a}$. The total angular width of the central maximum is $2\\theta = \\frac{2\\lambda}{a}$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Young's double-slit experiment, the path difference corresponding to the $n^{\\text{th}}$ dark fringe from the central maximum is:",
+          "image": "",
+          "options": [
+            "$(2n - 1)\\frac{\\lambda}{2}$",
+            "$n\\lambda$",
+            "$(2n + 1)\\lambda$",
+            "$(n - 1)\\frac{\\lambda}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Destructive interference occurs when the optical path difference between the two waves is an odd half-integral multiple of the wavelength: $\\Delta x = (2n - 1)\\frac{\\lambda}{2}$ where $n = 1, 2, 3, \\dots$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two waves represented by $y_1 = a\\sin\\omega t$ and $y_2 = a\\sin(\\omega t + \\phi)$ interfere. The resultant intensity is proportional to:",
+          "image": "",
+          "options": [
+            "$\\cos^2\\left(\\frac{\\phi}{2}\\right)$",
+            "$\\cos\\phi$",
+            "$\\sin^2\\left(\\frac{\\phi}{2}\\right)$",
+            "$\\cos^2\\phi$"
+          ],
+          "correctOption": 0,
+          "solution": "$$I = I_1 + I_2 + 2\\sqrt{I_1 I_2}\\cos\\phi = I_0 + I_0 + 2I_0\\cos\\phi = 2I_0(1 + \\cos\\phi) = 4I_0\\cos^2\\left(\\frac{\\phi}{2}\\right) \\propto \\cos^2\\left(\\frac{\\phi}{2}\\right)$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A plane wave passes through a convex mirror of focal length $f$. The reflected wavefront is:",
+          "image": "",
+          "options": [
+            "Spherical diverging from the focus behind the mirror",
+            "Spherical converging to the focus",
+            "Plane wavefront",
+            "Cylindrical wavefront"
+          ],
+          "correctOption": 0,
+          "solution": "A convex mirror diverges an incident parallel beam of light such that the reflected rays appear to diverge from the virtual principal focus, producing a spherical diverging wavefront."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a Young's double-slit experiment, the separation between the slits is $0.2\\text{ mm}$ and the distance of the screen is $1.0\\text{ m}$. If the wavelength of light used is $500\\text{ nm}$, the distance of the $3^{\\text{rd}}$ bright fringe from the central maximum is:",
+          "image": "",
+          "options": [
+            "$7.5\\text{ mm}$",
+            "$2.5\\text{ mm}$",
+            "$5.0\\text{ mm}$",
+            "$1.5\\text{ mm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Position of $n^{\\text{th}}$ bright fringe: $y_n = \\frac{n\\lambda D}{d}$.\n$$y_3 = \\frac{3 \\times (500 \\times 10^{-9}\\text{ m}) \\times 1.0\\text{ m}}{0.2 \\times 10^{-3}\\text{ m}} = \\frac{1.5 \\times 10^{-6}}{0.2 \\times 10^{-3}} = 7.5 \\times 10^{-3}\\text{ m} = 7.5\\text{ mm}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a single-slit diffraction experiment, if the slit width $a$ is doubled, the linear width of the central maximum on the screen will:",
+          "image": "",
+          "options": [
+            "Be halved",
+            "Be doubled",
+            "Be quadrupled",
+            "Remain unchanged"
+          ],
+          "correctOption": 0,
+          "solution": "Linear width of central maximum is $\\beta_0 = \\frac{2\\lambda D}{a} \\propto \\frac{1}{a}$.\nDoubling the slit width ($a' = 2a$) halves the linear width of the central diffraction peak."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Huygens' wave theory of light could NOT successfully explain:",
+          "image": "",
+          "options": [
+            "Photoelectric effect",
+            "Refraction of light",
+            "Interference of light",
+            "Diffraction of light"
+          ],
+          "correctOption": 0,
+          "solution": "Huygens' classical wave theory accounts for wave phenomena (reflection, refraction, interference, diffraction), but cannot explain the quantum particle nature of light responsible for the photoelectric effect."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Young's double-slit experiment, the intensity at the central maximum is $I_0$. The distance between two slits is $d = 5\\lambda$ and distance of screen is $D = 10d$. The intensity at a point on the screen directly in front of one of the slits is:",
+          "image": "",
+          "options": [
+            "$\\frac{I_0}{2}$",
+            "$I_0$",
+            "$\\frac{I_0}{4}$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Position directly in front of one slit: $y = \\frac{d}{2}$.\nPath difference: $\\Delta x = \\frac{y d}{D} = \\frac{(d/2)d}{D} = \\frac{d^2}{2D} = \\frac{(5\\lambda)^2}{2(10 \\times 5\\lambda)} = \\frac{25\\lambda^2}{100\\lambda} = \\frac{\\lambda}{4}$.\nPhase difference: $\\phi = \\frac{2\\pi}{\\lambda}\\Delta x = \\frac{2\\pi}{\\lambda}\\left(\\frac{\\lambda}{4}\\right) = \\frac{\\pi}{2}$.\n$$I = I_0 \\cos^2\\left(\\frac{\\phi}{2}\\right) = I_0 \\cos^2\\left(\\frac{\\pi}{4}\\right) = I_0 \\left(\\frac{1}{\\sqrt{2}}\\right)^2 = \\frac{I_0}{2}$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following conditions is essential for observing sustained interference of light?",
+          "image": "",
+          "options": [
+            "Sources must be coherent with a constant phase difference",
+            "Sources must have very large physical separation",
+            "Light waves must have different frequencies",
+            "Sources must be completely independent"
+          ],
+          "correctOption": 0,
+          "solution": "For sustained interference, the interfering light waves must maintain a constant phase difference over time, which requires mutually coherent sources."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a single-slit diffraction pattern, the condition for secondary maxima is:",
+          "image": "",
+          "options": [
+            "$a \\sin\\theta = (2n + 1)\\frac{\\lambda}{2}$",
+            "$a \\sin\\theta = n\\lambda$",
+            "$a \\sin\\theta = 2n\\lambda$",
+            "$a \\sin\\theta = (n + 1)\\lambda$"
+          ],
+          "correctOption": 0,
+          "solution": "In Fraunhofer single-slit diffraction, secondary maxima occur where the slit divides into an odd number of half-wave zones: $a \\sin\\theta = (2n + 1)\\frac{\\lambda}{2}$ ($n = 1, 2, 3, \\dots$)."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ray of light is incident from air onto a medium of refractive index $\\mu$. According to wave theory, the ratio of speed of light in air to that in the medium is equal to:",
+          "image": "",
+          "options": [
+            "$\\mu$",
+            "$\\frac{1}{\\mu}$",
+            "$\\mu^2$",
+            "$\\sqrt{\\mu}$"
+          ],
+          "correctOption": 0,
+          "solution": "By definition of refractive index derived using Huygens' principle: $\\mu = \\frac{c}{v} \\implies \\frac{v_{\\text{air}}}{v_{\\text{medium}}} = \\mu$."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Young's double-slit experiment, two slits are illuminated by two beams of intensity ratio $9 : 1$. The ratio of intensities $\\frac{I_{\\text{max}} + I_{\\text{min}}}{I_{\\text{max}} - I_{\\text{min}}}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{5}{3}$",
+            "$\\frac{10}{6}$",
+            "$\\frac{5}{4}$",
+            "$\\frac{3}{5}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $a_1 = 3$ and $a_2 = 1$.\n$I_{\\text{max}} = (a_1 + a_2)^2 = (3 + 1)^2 = 16$.\n$I_{\\text{min}} = (a_1 - a_2)^2 = (3 - 1)^2 = 4$.\n$$\\frac{I_{\\text{max}} + I_{\\text{min}}}{I_{\\text{max}} - I_{\\text{min}}} = \\frac{16 + 4}{16 - 4} = \\frac{20}{12} = \\frac{5}{3}$$"
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The bending of light waves around the sharp corners of an obstacle or aperture is known as:",
+          "image": "",
+          "options": [
+            "Diffraction",
+            "Interference",
+            "Refraction",
+            "Dispersion"
+          ],
+          "correctOption": 0,
+          "solution": "Diffraction is the fundamental wave phenomenon where light waves bend into the geometrical shadow region when encountering an obstacle whose size is comparable to the wavelength of light."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Young's double-slit experiment, if one of the two slits is completely covered with an opaque shield, what will be observed on the screen?",
+          "image": "",
+          "options": [
+            "A single-slit diffraction pattern",
+            "Uniform darkness everywhere",
+            "Double-slit interference fringes with half intensity",
+            "A single sharp bright line"
+          ],
+          "correctOption": 0,
+          "solution": "Covering one slit eliminates double-slit interference, leaving light from the single open slit to produce a continuous single-slit Fraunhofer diffraction pattern."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Young's double-slit experiment, two coherent sources of equal intensity $I$ interfere. The intensity at a point on the screen where the path difference is $\\lambda/6$ is:",
+          "image": "",
+          "options": [
+            "$3I$",
+            "$2I$",
+            "$4I$",
+            "$1.5I$"
+          ],
+          "correctOption": 0,
+          "solution": "Phase difference: $\\phi = \\frac{2\\pi}{\\lambda}\\left(\\frac{\\lambda}{6}\\right) = \\frac{\\pi}{3}$.\n$$I_{\\text{net}} = 4I \\cos^2\\left(\\frac{\\phi}{2}\\right) = 4I \\cos^2\\left(\\frac{\\pi}{6}\\right) = 4I \\left(\\frac{\\sqrt{3}}{2}\\right)^2 = 4I \\left(\\frac{3}{4}\\right) = 3I$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The phase of a wavefront is:",
+          "image": "",
+          "options": [
+            "Constant at all points on the wavefront",
+            "Zero everywhere",
+            "Linearly increasing along the surface",
+            "Randomly distributed"
+          ],
+          "correctOption": 0,
+          "solution": "A wavefront is defined as the locus of all adjacent points in a medium that oscillate in the exact same phase ($\\phi = \\text{constant}$)."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Young's double-slit experiment with slit separation $d = 1\\text{ mm}$ and screen distance $D = 1\\text{ m}$, light of wavelength $600\\text{ nm}$ is used. The distance between the central maximum and the $5^{\\text{th}}$ dark fringe is:",
+          "image": "",
+          "options": [
+            "$2.7\\text{ mm}$",
+            "$3.0\\text{ mm}$",
+            "$2.4\\text{ mm}$",
+            "$1.5\\text{ mm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Position of $n^{\\text{th}}$ dark fringe: $y_n = (2n - 1)\\frac{\\lambda D}{2d}$.\nFor $n = 5$:\n$$y_5 = (2 \\times 5 - 1)\\frac{(600 \\times 10^{-9}) \\times 1}{2(10^{-3})} = 9 \\times \\frac{600 \\times 10^{-6}}{2} = 2.7 \\times 10^{-3}\\text{ m} = 2.7\\text{ mm}$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "How does the intensity of secondary maxima in a single-slit diffraction pattern compare to the central maximum?",
+          "image": "",
+          "options": [
+            "Decreases rapidly as the order of maxima increases",
+            "Remains equal for all maxima",
+            "Increases with order of maxima",
+            "Is zero for all secondary maxima"
+          ],
+          "correctOption": 0,
+          "solution": "In single-slit diffraction, the central maximum has intensity $I_0$, whereas successive secondary peaks have rapidly declining intensities roughly in the ratio $1 : \\frac{1}{22} : \\frac{1}{61} : \\dots$ due to progressive destructive cancellation."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Young's double-slit experiment, the fringe width $\\beta$ is independent of:",
+          "image": "",
+          "options": [
+            "Order of the fringe $n$",
+            "Wavelength of light $\\lambda$",
+            "Distance to screen $D$",
+            "Distance between slits $d$"
+          ],
+          "correctOption": 0,
+          "solution": "Fringe width is $\\beta = \\frac{\\lambda D}{d}$. It is constant across the entire pattern and does not depend on the fringe order $n$ (all fringes are equidistant)."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A parallel beam of light of wavelength $500\\text{ nm}$ falls on a narrow slit of width $0.1\\text{ mm}$. The distance between the first minima on either side of the central maximum on a screen placed $1\\text{ m}$ away is:",
+          "image": "",
+          "options": [
+            "$10\\text{ mm}$",
+            "$5\\text{ mm}$",
+            "$1\\text{ mm}$",
+            "$20\\text{ mm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Linear width of the central maximum is the separation between the two first-order minima:\n$$w_0 = \\frac{2\\lambda D}{a} = \\frac{2 \\times (500 \\times 10^{-9}\\text{ m}) \\times 1.0\\text{ m}}{0.1 \\times 10^{-3}\\text{ m}} = \\frac{10^{-6}}{10^{-4}} = 10^{-2}\\text{ m} = 10\\text{ mm}$$"
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a thin transparent mica sheet of thickness $t$ and refractive index $\\mu$ is introduced in the path of one of the interfering beams in Young's double-slit experiment, the entire fringe pattern:",
+          "image": "",
+          "options": [
+            "Shifts towards the side of the slit with the sheet by distance $y = \\frac{D}{d}(\\mu - 1)t$",
+            "Shifts in the opposite direction by $y = \\frac{D}{d}(\\mu - 1)t$",
+            "Disappears completely",
+            "Remains stationary while fringe width changes"
+          ],
+          "correctOption": 0,
+          "solution": "Introducing the sheet introduces an extra optical path difference $\\Delta x = (\\mu - 1)t$. To compensate, the central fringe and the whole pattern shift toward the covered slit by $y_0 = \\frac{D}{d}(\\mu - 1)t$ without changing the fringe width."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a double-slit experiment, the two slits are $1\\text{ mm}$ apart and illuminated with light of wavelength $500\\text{ nm}$. What should be the width of each slit so that 10 maxima of the double-slit pattern fit within the central maximum of the single-slit diffraction pattern?",
+          "image": "",
+          "options": [
+            "$0.2\\text{ mm}$",
+            "$0.1\\text{ mm}$",
+            "$0.5\\text{ mm}$",
+            "$0.02\\text{ mm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Width of central diffraction peak: $\\frac{2\\lambda D}{a}$.\nWidth of 10 double-slit interference fringes: $10\\beta = 10\\left(\\frac{\\lambda D}{d}\\right)$.\n$$\\frac{2\\lambda D}{a} = 10\\left(\\frac{\\lambda D}{d}\\right) \\implies \\frac{2}{a} = \\frac{10}{d} \\implies a = \\frac{2d}{10} = \\frac{2 \\times 1\\text{ mm}}{10} = 0.2\\text{ mm}$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Light travels from a denser medium of refractive index $\\mu_1$ to a rarer medium of refractive index $\\mu_2$. According to wave theory, the angle of incidence $i$ and angle of refraction $r$ satisfy:",
+          "image": "",
+          "options": [
+            "$\\frac{\\sin i}{\\sin r} = \\frac{v_1}{v_2} = \\frac{\\mu_2}{\\mu_1}$",
+            "$\\frac{\\sin i}{\\sin r} = \\frac{v_2}{v_1} = \\frac{\\mu_1}{\\mu_2}$",
+            "$\\frac{\\sin i}{\\sin r} = \\frac{\\mu_1}{\\mu_2}$",
+            "$\\sin i \\sin r = \\mu_1 \\mu_2$"
+          ],
+          "correctOption": 0,
+          "solution": "From Snell's law proven via Huygens' principle: $\\frac{\\sin i}{\\sin r} = \\frac{v_1}{v_2} = \\frac{c/\\mu_1}{c/\\mu_2} = \\frac{\\mu_2}{\\mu_1}$."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Young's double-slit experiment, the $4^{\\text{th}}$ bright fringe of light of wavelength $\\lambda_1$ coincides with the $5^{\\text{th}}$ bright fringe of light of unknown wavelength $\\lambda_2$. If $\\lambda_1 = 600\\text{ nm}$, then $\\lambda_2$ is:",
+          "image": "",
+          "options": [
+            "$480\\text{ nm}$",
+            "$750\\text{ nm}$",
+            "$500\\text{ nm}$",
+            "$400\\text{ nm}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$y_1 = y_2 \\implies 4\\left(\\frac{\\lambda_1 D}{d}\\right) = 5\\left(\\frac{\\lambda_2 D}{d}\\right) \\implies 4\\lambda_1 = 5\\lambda_2$$\n$$\\lambda_2 = \\frac{4}{5}\\lambda_1 = \\frac{4}{5} \\times 600\\text{ nm} = 480\\text{ nm}$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The fundamental difference between an interference pattern and a diffraction pattern is:",
+          "image": "",
+          "options": [
+            "Interference involves superposition of waves from two distinct wavefronts/slits, while diffraction involves superposition of secondary wavelets from different parts of the same wavefront",
+            "Interference fringes have variable widths, while diffraction fringes have uniform widths",
+            "Diffraction conserves energy, whereas interference violates energy conservation",
+            "Interference occurs only with sound waves, diffraction only with light"
+          ],
+          "correctOption": 0,
+          "solution": "Interference is the superposition of wave trains originating from two or more separate coherent sources, whereas diffraction is the interference of continuous secondary wavelets originating from different portions of a single wavefront."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If Young's double-slit experiment is performed using red light ($\\lambda_R = 700\\text{ nm}$) instead of blue light ($\\lambda_B = 400\\text{ nm}$), the fringe width will:",
+          "image": "",
+          "options": [
+            "Increase",
+            "Decrease",
+            "Remain unchanged",
+            "Drop to zero"
+          ],
+          "correctOption": 0,
+          "solution": "Fringe width is $\\beta = \\frac{\\lambda D}{d} \\propto \\lambda$. Since $\\lambda_{\\text{red}} > \\lambda_{\\text{blue}}$, the fringe width increases."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During the reflection of a plane wave at a plane reflecting surface, the angle of incidence equals the angle of reflection ($i = r$) because:",
+          "image": "",
+          "options": [
+            "Secondary wavelets from the incident wavefront travel with the same speed in the same medium",
+            "The medium absorbs the light completely",
+            "The frequency of light increases on reflection",
+            "Light rays refract across the boundary"
+          ],
+          "correctOption": 0,
+          "solution": "In Huygens' geometric construction for reflection, wavelets from the incident wavefront expand with identical speed $v$ in the original medium over time $\\tau$, forming congruent right-angled triangles that prove $i = r$."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Young's double-slit experiment, if the distance between the two slits $d$ is made smaller than the wavelength of light $\\lambda$ ($d < \\lambda$), then:",
+          "image": "",
+          "options": [
+            "Fringe width becomes larger than the screen size, so no interference pattern is discernible",
+            "Fringes become infinitely sharp and crowded",
+            "Central bright fringe turns dark",
+            "Fringes disappear due to absorption"
+          ],
+          "correctOption": 0,
+          "solution": "Angular fringe width is $\\theta = \\frac{\\lambda}{d}$. If $d < \\lambda$, $\\theta > 1\\text{ rad} \\approx 57.3^\\circ$. A single fringe expands across the entire field of view, making discrete fringes undetectable."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The intensity at the central maximum in a single-slit Fraunhofer diffraction pattern is $I_0$. If the slit width is doubled, the peak intensity of the central maximum will become:",
+          "image": "",
+          "options": [
+            "$4I_0$",
+            "$2I_0$",
+            "$I_0$",
+            "$\\frac{I_0}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "The resultant amplitude at the central diffraction peak is proportional to slit width $a$ ($E_0 \\propto a$). Since intensity $I \\propto E_0^2 \\propto a^2$, doubling the slit width quadruples the central peak intensity ($I' = 4I_0$)."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two coherent sources having intensities in the ratio $1 : 4$ produce an interference pattern. The visibility of the fringes $V = \\frac{I_{\\text{max}} - I_{\\text{min}}}{I_{\\text{max}} + I_{\\text{min}}}$ is:",
+          "image": "",
+          "options": [
+            "$0.8$",
+            "$0.6$",
+            "$1.0$",
+            "$0.5$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $I_1 = 1 \\implies a_1 = 1$, and $I_2 = 4 \\implies a_2 = 2$.\n$I_{\\text{max}} = (a_1 + a_2)^2 = (1 + 2)^2 = 9$.\n$I_{\\text{min}} = (a_1 - a_2)^2 = (2 - 1)^2 = 1$.\n$$V = \\frac{I_{\\text{max}} - I_{\\text{min}}}{I_{\\text{max}} + I_{\\text{min}}} = \\frac{9 - 1}{9 + 1} = \\frac{8}{10} = 0.8$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Young's double-slit experiment, if the slit widths are unequal, then in the interference pattern:",
+          "image": "",
+          "options": [
+            "Minima are not completely dark",
+            "Fringes disappear completely",
+            "Fringe width changes randomly",
+            "Maxima have zero intensity"
+          ],
+          "correctOption": 0,
+          "solution": "When slit widths are unequal, the wave amplitudes are unequal ($a_1 \\neq a_2$). The minimum intensity $I_{\\text{min}} = (a_1 - a_2)^2 > 0$, so destructive interference is not complete and dark fringes are not perfectly black."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an interference pattern, energy is:",
+          "image": "",
+          "options": [
+            "Conserved and redistributed from regions of destructive interference to regions of constructive interference",
+            "Created at maxima and destroyed at minima",
+            "Lost continuously across the screen",
+            "Increased overall"
+          ],
+          "correctOption": 0,
+          "solution": "Interference does not create or destroy energy. Energy that disappears from dark fringes ($I_{\\text{min}}$) is redistributed to bright fringes ($I_{\\text{max}}$), keeping the average spatial energy density strictly conserved."
+        }
+      ]
+    }
+  ]
+}
