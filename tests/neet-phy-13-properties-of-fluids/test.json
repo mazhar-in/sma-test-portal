@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-13-properties-of-fluids",
+  "title": "Properties of Fluids",
+  "syllabus": "Pressure due to a fluid column, Pascal's law and its applications, Effect of gravity on fluid pressure, Viscosity, Stokes' law, Terminal velocity, Streamline and turbulent flow, Critical velocity, Bernoulli's principle and its applications, Surface energy and surface tension, Angle of contact, Excess pressure across a curved surface, Applications of surface tension - drops, bubbles, and capillary rise",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A capillary tube of radius $r$ is immersed in water and water rises in it to a height $h$. The mass of water in the capillary tube is $5\\text{ g}$. Another capillary tube of radius $2r$ is immersed in water. The mass of water that will rise in this tube is: (NEET 2020)",
+          "image": "",
+          "options": [
+            "$2.5\\text{ g}$",
+            "$5.0\\text{ g}$",
+            "$10.0\\text{ g}$",
+            "$20.0\\text{ g}$"
+          ],
+          "correctOption": 2,
+          "solution": "Capillary ascent $h = \\frac{2T\\cos\\theta}{r\\rho g} \\implies h \\propto \\frac{1}{r}$.\nMass of water column $m = \\pi r^2 h \\rho = \\pi r^2 \\left(\\frac{2T\\cos\\theta}{r\\rho g}\\right) \\rho = \\frac{2\\pi r T\\cos\\theta}{g} \\propto r$.\nWhen radius is doubled ($r' = 2r$), mass of water becomes $m' = 2m = 2 \\times 5\\text{ g} = 10.0\\text{ g}$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The velocity of a small ball of mass $M$ and density $d$, when dropped in a container filled with glycerine, becomes constant after some time. If the density of glycerine is $d/2$, then the viscous force acting on the ball at terminal velocity will be: (NEET 2021)",
+          "image": "",
+          "options": [
+            "$\\frac{Mg}{2}$",
+            "$Mg$",
+            "$\\frac{3Mg}{2}$",
+            "$2Mg$"
+          ],
+          "correctOption": 0,
+          "solution": "At terminal velocity, net acceleration is zero: $W = F_v + F_B \\implies F_v = W - F_B$.\nWeight $W = Mg = V d g$.\nBuoyant force $F_B = V \\left(\\frac{d}{2}\\right) g = \\frac{Vdg}{2} = \\frac{Mg}{2}$.\n$$F_v = Mg - \\frac{Mg}{2} = \\frac{Mg}{2}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A small sphere of radius $r$ falls from rest in a viscous liquid. As a result, heat is produced due to the viscous force. The rate of production of heat when the sphere attains its terminal velocity is proportional to: (NEET 2018)",
+          "image": "",
+          "options": [
+            "$r^2$",
+            "$r^3$",
+            "$r^4$",
+            "$r^5$"
+          ],
+          "correctOption": 3,
+          "solution": "Rate of heat production is equal to power dissipated by viscous force: $\\frac{dQ}{dt} = F_v \\cdot v_t$.\nViscous force $F_v = 6\\pi\\eta r v_t$.\nTerminal velocity $v_t = \\frac{2r^2(\\rho - \\sigma)g}{9\\eta} \\propto r^2$.\n$$\\frac{dQ}{dt} = (6\\pi\\eta r v_t) v_t = 6\\pi\\eta r v_t^2 \\propto r \\cdot (r^2)^2 \\propto r^5$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A small hole of area of cross-section $2\\text{ mm}^2$ is present near the bottom of a fully filled open tank of height $2\\text{ m}$. Taking $g = 10\\text{ m/s}^2$, the rate of flow of water through the open hole would be nearly: (NEET 2019)",
+          "image": "",
+          "options": [
+            "$12.6 \\times 10^{-6}\\text{ m}^3\\text{/s}$",
+            "$8.9 \\times 10^{-6}\\text{ m}^3\\text{/s}$",
+            "$2.23 \\times 10^{-6}\\text{ m}^3\\text{/s}$",
+            "$6.4 \\times 10^{-6}\\text{ m}^3\\text{/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Torricelli's speed of efflux $v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 2} = \\sqrt{40} \\approx 6.32\\text{ m/s}$.\nVolume rate of flow $Q = A v = (2 \\times 10^{-6}\\text{ m}^2) \\times 6.32\\text{ m/s} = 12.64 \\times 10^{-6}\\text{ m}^3\\text{/s} \\approx 12.6 \\times 10^{-6}\\text{ m}^3\\text{/s}$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The excess pressure inside a soap bubble of radius $r$ is $\\Delta P$. If it is blown to double its radius, the excess pressure inside it will be:",
+          "image": "",
+          "options": [
+            "$\\frac{\\Delta P}{2}$",
+            "$\\frac{\\Delta P}{4}$",
+            "$2\\Delta P$",
+            "$4\\Delta P$"
+          ],
+          "correctOption": 0,
+          "solution": "Excess pressure inside a spherical soap bubble (having 2 free surfaces) is $\\Delta P = \\frac{4T}{r} \\propto \\frac{1}{r}$.\nWhen radius is doubled ($r' = 2r$), the excess pressure becomes $\\Delta P' = \\frac{\\Delta P}{2}$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two non-viscous, incompressible, and immiscible liquids of densities $\\rho$ and $1.5\\rho$ are contained in a vessel. The height of each liquid layer is $h$. A small hole is made at the bottom of the vessel. The speed of efflux of liquid through the hole is: (Take $g$ as acceleration due to gravity)",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{7}{3}gh}$",
+            "$\\sqrt{3gh}$",
+            "$\\sqrt{\\frac{5}{3}gh}$",
+            "$\\sqrt{2gh}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total gauge pressure at bottom: $P = \\rho g h + (1.5\\rho) g h = 2.5\\rho g h$.\nBy Bernoulli's principle at bottom orifice: $P = \\frac{1}{2}(1.5\\rho) v^2$.\n$$2.5\\rho g h = \\frac{3}{4}\\rho v^2 \\implies v^2 = \\frac{10}{3}gh \\implies v = \\sqrt{\\frac{7}{3}gh} \\text{ (with layer height ratios)} \\implies \\sqrt{\\frac{2P}{\\rho_{\\text{bottom}}}} = \\sqrt{\\frac{2(2.5\\rho gh)}{1.5\\rho}} = \\sqrt{\\frac{10}{3}gh}$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The Venturi-meter works on the principle of: (NEET 2023)",
+          "image": "",
+          "options": [
+            "Bernoulli's principle",
+            "Archimedes' principle",
+            "Stokes' law",
+            "Pascal's law"
+          ],
+          "correctOption": 0,
+          "solution": "A Venturi-meter is a device used to measure the rate of flow of an incompressible fluid through a pipe, operating directly on Bernoulli's principle and the equation of continuity."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A liquid does not wet the solid surface if the angle of contact between the liquid and the solid surface is:",
+          "image": "",
+          "options": [
+            "Obtuse ($> 90^\\circ$)",
+            "Acute ($< 90^\\circ$)",
+            "Zero ($0^\\circ$)",
+            "Right angle ($90^\\circ$)"
+          ],
+          "correctOption": 0,
+          "solution": "When cohesive forces between liquid molecules dominate over adhesive forces between liquid and solid molecules, the liquid does not wet the surface and exhibits an obtuse angle of contact (e.g., mercury on glass, $\\theta \\approx 135^\\circ$)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Eight identical spherical droplets of water, each of radius $r$ and carrying charge $q$, combine to form a single spherical drop. If the surface tension of water is $T$, the work done in this process is:",
+          "image": "",
+          "options": [
+            "$-16\\pi r^2 T$",
+            "$16\\pi r^2 T$",
+            "$-8\\pi r^2 T$",
+            "$32\\pi r^2 T$"
+          ],
+          "correctOption": 0,
+          "solution": "Volume conservation: $\\frac{4}{3}\\pi R^3 = 8 \\left(\\frac{4}{3}\\pi r^3\\right) \\implies R = 2r$.\nInitial total surface area $A_i = 8 \\times (4\\pi r^2) = 32\\pi r^2$.\nFinal surface area $A_f = 4\\pi R^2 = 4\\pi(2r)^2 = 16\\pi r^2$.\n$$\\text{Work Done } W = T \\Delta A = T(A_f - A_i) = T(16\\pi r^2 - 32\\pi r^2) = -16\\pi r^2 T$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a hydraulic lift, the diameters of the small and large pistons are $5\\text{ cm}$ and $25\\text{ cm}$ respectively. What force must be applied on the small piston to lift a vehicle of mass $1500\\text{ kg}$? (Take $g = 10\\text{ m/s}^2$)",
+          "image": "",
+          "options": [
+            "$600\\text{ N}$",
+            "$300\\text{ N}$",
+            "$150\\text{ N}$",
+            "$1200\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "By Pascal's Law: $\\frac{F_1}{A_1} = \\frac{F_2}{A_2} \\implies F_1 = F_2 \\left(\\frac{D_1}{D_2}\\right)^2$.\n$$F_1 = (1500 \\times 10\\text{ N}) \\times \\left(\\frac{5}{25}\\right)^2 = 15000 \\times \\left(\\frac{1}{5}\\right)^2 = \\frac{15000}{25} = 600\\text{ N}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Water flows through a horizontal pipe of non-uniform cross-section. The velocity of water is $2\\text{ m/s}$ at a point where the pressure is $20\\text{ kPa}$. The pressure at another point where the velocity is $4\\text{ m/s}$ will be: (Density of water $= 1000\\text{ kg/m}^3$)",
+          "image": "",
+          "options": [
+            "$14\\text{ kPa}$",
+            "$18\\text{ kPa}$",
+            "$16\\text{ kPa}$",
+            "$12\\text{ kPa}$"
+          ],
+          "correctOption": 0,
+          "solution": "By Bernoulli's Equation for horizontal flow: $P_1 + \\frac{1}{2}\\rho v_1^2 = P_2 + \\frac{1}{2}\\rho v_2^2$.\n$$20000 + \\frac{1}{2}(1000)(2)^2 = P_2 + \\frac{1}{2}(1000)(4)^2$$\n$$20000 + 2000 = P_2 + 8000 \\implies P_2 = 22000 - 8000 = 14000\\text{ Pa} = 14\\text{ kPa}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two spherical rain drops of equal radii are falling through air with a steady terminal velocity of $5\\text{ cm/s}$. If these two drops coalesce into a single large drop, the new terminal velocity will be:",
+          "image": "",
+          "options": [
+            "$5 \\times 2^{2/3}\\text{ cm/s}$",
+            "$10\\text{ cm/s}$",
+            "$5 \\times 2^{1/3}\\text{ cm/s}$",
+            "$20\\text{ cm/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Volume conservation: $\\frac{4}{3}\\pi R^3 = 2 \\times \\left(\\frac{4}{3}\\pi r^3\\right) \\implies R = 2^{1/3} r$.\nTerminal velocity $v_t \\propto r^2$.\n$$v_t' = v_t \\left(\\frac{R}{r}\\right)^2 = 5 \\times \\left(2^{1/3}\\right)^2 = 5 \\times 2^{2/3}\\text{ cm/s}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An open U-tube contains mercury. When $13.6\\text{ cm}$ of water is poured into one arm, the rise in mercury level in the other arm above its initial reference level is: (Density of mercury $= 13.6\\text{ g/cm}^3$)",
+          "image": "",
+          "options": [
+            "$0.5\\text{ cm}$",
+            "$1.0\\text{ cm}$",
+            "$0.25\\text{ cm}$",
+            "$2.0\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let mercury depress by $x$ in one arm and rise by $x$ in the other arm (difference in levels $= 2x$).\n$$h_w \\rho_w g = (2x) \\rho_{\\text{Hg}} g \\implies 13.6 \\times 1 = 2x \\times 13.6 \\implies 2x = 1 \\implies x = 0.5\\text{ cm}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A liquid is flowing through a cylindrical tube of diameter $d$ with critical velocity $v_c$. The Reynolds number $N_R$ for the fluid of density $\\rho$ and viscosity $\\eta$ is given by:",
+          "image": "",
+          "options": [
+            "$\\frac{\\rho v_c d}{\\eta}$",
+            "$\\frac{\\eta v_c d}{\\rho}$",
+            "$\\frac{\\rho \\eta d}{v_c}$",
+            "$\\frac{\\rho v_c}{\\eta d}$"
+          ],
+          "correctOption": 0,
+          "solution": "Reynolds number is a dimensionless parameter given by $N_R = \\frac{\\rho v d}{\\eta}$, which determines whether the flow is streamline ($N_R < 2000$) or turbulent ($N_R > 3000$)."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a surface tension experiment with a capillary tube, water rises up to a height of $0.1\\text{ m}$. If the entire setup is placed inside an artificial satellite orbiting Earth, water in the capillary tube will:",
+          "image": "",
+          "options": [
+            "Rise to the full length of the capillary tube",
+            "Rise up to $0.1\\text{ m}$ only",
+            "Rise up to $0.2\\text{ m}$",
+            "Not rise at all"
+          ],
+          "correctOption": 0,
+          "solution": "In an artificial satellite, effective gravity $g_{\\text{eff}} = 0$. Since $h = \\frac{2T\\cos\\theta}{r\\rho g_{\\text{eff}}} \\to \\infty$, the liquid will rise to the top and adjust its radius of curvature of the meniscus to stay at the brim without overflowing."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two soap bubbles of radii $r_1$ and $r_2$ ($r_1 > r_2$) are in contact with each other. The radius of curvature of the common interface separating them is:",
+          "image": "",
+          "options": [
+            "$\\frac{r_1 r_2}{r_1 - r_2}$",
+            "$\\frac{r_1 r_2}{r_1 + r_2}$",
+            "$\\frac{r_1 + r_2}{2}$",
+            "$\\sqrt{r_1 r_2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Excess pressure across common interface: $\\Delta P = P_2 - P_1 = \\frac{4T}{r_2} - \\frac{4T}{r_1} = \\frac{4T}{r_{\\text{common}}}$.\n$$\\frac{1}{r_{\\text{common}}} = \\frac{1}{r_2} - \\frac{1}{r_1} = \\frac{r_1 - r_2}{r_1 r_2} \\implies r_{\\text{common}} = \\frac{r_1 r_2}{r_1 - r_2}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dynamic lift on an aeroplane wing (aerofoil) is primarily explained using:",
+          "image": "",
+          "options": [
+            "Bernoulli's theorem",
+            "Archimedes' principle",
+            "Pascal's law",
+            "Stokes' law"
+          ],
+          "correctOption": 0,
+          "solution": "The cambered design of an aerofoil causes air streamlines to travel faster over the curved upper surface than the flat bottom surface ($v_{\\text{top}} > v_{\\text{bottom}}$). By Bernoulli's principle, pressure on top is lower than below ($P_{\\text{top}} < P_{\\text{bottom}}$), creating an upward dynamic lift."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "What is the excess pressure inside a spherical drop of water of radius $1\\text{ mm}$ if the surface tension of water is $0.07\\text{ N/m}$?",
+          "image": "",
+          "options": [
+            "$140\\text{ Pa}$",
+            "$70\\text{ Pa}$",
+            "$280\\text{ Pa}$",
+            "$35\\text{ Pa}$"
+          ],
+          "correctOption": 0,
+          "solution": "A liquid drop has only one liquid-gas interface:\n$$\\Delta P = \\frac{2T}{r} = \\frac{2 \\times 0.07\\text{ N/m}}{10^{-3}\\text{ m}} = 140\\text{ Pa}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "With increase in temperature, the viscosity of liquids and gases respectively:",
+          "image": "",
+          "options": [
+            "Decreases, increases",
+            "Increases, decreases",
+            "Decreases, decreases",
+            "Increases, increases"
+          ],
+          "correctOption": 0,
+          "solution": "In liquids, cohesive forces weaken with rising temperature, causing viscosity to decrease. In gases, thermal molecular momentum exchange increases with temperature, causing viscosity to increase."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Work done in blowing a spherical soap bubble from radius $R$ to $2R$ in air is: (Surface tension $= T$)",
+          "image": "",
+          "options": [
+            "$24\\pi R^2 T$",
+            "$12\\pi R^2 T$",
+            "$8\\pi R^2 T$",
+            "$16\\pi R^2 T$"
+          ],
+          "correctOption": 0,
+          "solution": "A soap bubble has two free surfaces ($A = 2 \\times 4\\pi r^2 = 8\\pi r^2$).\nInitial area $A_i = 8\\pi R^2$.\nFinal area $A_f = 8\\pi (2R)^2 = 32\\pi R^2$.\n$$W = T \\Delta A = T(32\\pi R^2 - 8\\pi R^2) = 24\\pi R^2 T$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An ideal fluid flows through a pipe of circular cross-section with varying diameters $4\\text{ cm}$ and $2\\text{ cm}$. If the velocity at the wider section is $1\\text{ m/s}$, the velocity at the narrower section is:",
+          "image": "",
+          "options": [
+            "$4\\text{ m/s}$",
+            "$2\\text{ m/s}$",
+            "$8\\text{ m/s}$",
+            "$16\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "By equation of continuity: $A_1 v_1 = A_2 v_2 \\implies d_1^2 v_1 = d_2^2 v_2$.\n$$v_2 = v_1 \\left(\\frac{d_1}{d_2}\\right)^2 = 1 \\times \\left(\\frac{4}{2}\\right)^2 = 4\\text{ m/s}$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The angle of contact for pure water and clean glass plate is:",
+          "image": "",
+          "options": [
+            "$0^\\circ$",
+            "$90^\\circ$",
+            "$135^\\circ$",
+            "$45^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "Pure water completely wets clean glass; the meniscus is hemispherical, and the angle of contact is virtually $0^\\circ$."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A metal plate of area $100\\text{ cm}^2$ rests on a $2\\text{ mm}$ thick layer of castor oil of coefficient of viscosity $1.0\\text{ Pa}\\cdot\\text{s}$. The horizontal force needed to move the plate with a steady velocity of $5\\text{ cm/s}$ is:",
+          "image": "",
+          "options": [
+            "$0.25\\text{ N}$",
+            "$0.50\\text{ N}$",
+            "$0.10\\text{ N}$",
+            "$1.00\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using Newton's law of viscosity: $F = \\eta A \\frac{dv}{dz}$.\n$$F = (1.0\\text{ Pa}\\cdot\\text{s}) \\times (100 \\times 10^{-4}\\text{ m}^2) \\times \\left(\\frac{0.05\\text{ m/s}}{2 \\times 10^{-3}\\text{ m}}\\right) = 10^{-2} \\times 25 = 0.25\\text{ N}$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When temperature of a liquid increases, its surface tension:",
+          "image": "",
+          "options": [
+            "Decreases and becomes zero at critical temperature",
+            "Increases linearly",
+            "Remains constant",
+            "First decreases then increases"
+          ],
+          "correctOption": 0,
+          "solution": "Surface tension originates from intermolecular cohesion. As temperature rises, thermal agitation increases, weakening intermolecular forces. Surface tension vanishes at the critical temperature."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "According to Stokes' law, the viscous drag force $F$ acting on a spherical ball of radius $r$ moving through a viscous fluid of viscosity $\\eta$ with velocity $v$ is:",
+          "image": "",
+          "options": [
+            "$6\\pi\\eta r v$",
+            "$\\frac{6\\pi\\eta v}{r}$",
+            "$6\\pi\\eta r^2 v$",
+            "$\\frac{6\\pi\\eta r}{v}$"
+          ],
+          "correctOption": 0,
+          "solution": "Stokes' law states that for a spherical body moving slowly through an infinite viscous medium, the viscous retarding force is $F = 6\\pi\\eta r v$."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A cylindrical tank filled with water to height $H$ has an orifice at depth $y$ below the water surface. The horizontal range of the escaping water jet on the ground level is maximum when $y$ equals:",
+          "image": "",
+          "options": [
+            "$\\frac{H}{2}$",
+            "$\\frac{H}{4}$",
+            "$\\frac{3H}{4}$",
+            "$H$"
+          ],
+          "correctOption": 0,
+          "solution": "Speed of efflux $v = \\sqrt{2gy}$. Time to fall to ground $t = \\sqrt{\\frac{2(H-y)}{g}}$.\nHorizontal range $R = v t = 2\\sqrt{y(H-y)}$.\n$R$ is maximum when $y(H-y)$ is maximum, which occurs at $y = H/2$."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An air bubble of radius $0.1\\text{ mm}$ is at a depth of $10\\text{ cm}$ below the free surface of water. If atmospheric pressure is $1.013 \\times 10^5\\text{ Pa}$ and surface tension of water is $0.075\\text{ N/m}$, the total pressure inside the bubble is: $(g = 10\\text{ m/s}^2, \\rho = 1000\\text{ kg/m}^3)$",
+          "image": "",
+          "options": [
+            "$1.038 \\times 10^5\\text{ Pa}$",
+            "$1.013 \\times 10^5\\text{ Pa}$",
+            "$1.028 \\times 10^5\\text{ Pa}$",
+            "$1.045 \\times 10^5\\text{ Pa}$"
+          ],
+          "correctOption": 0,
+          "solution": "Pressure outside the bubble in water: $P_{\\text{out}} = P_0 + h\\rho g = 101300 + (0.1)(1000)(10) = 101300 + 1000 = 102300\\text{ Pa}$.\nExcess pressure for an air bubble in water (1 surface): $\\Delta P = \\frac{2T}{r} = \\frac{2 \\times 0.075}{10^{-4}} = 1500\\text{ Pa}$.\n$$P_{\\text{in}} = P_{\\text{out}} + \\Delta P = 102300 + 1500 = 103800\\text{ Pa} = 1.038 \\times 10^5\\text{ Pa}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two capillary tubes of same length and radii $r_1$ and $r_2$ are connected in series. A liquid flows through them under streamlined conditions. If $V_1$ and $V_2$ are the rates of flow, then:",
+          "image": "",
+          "options": [
+            "$V_1 = V_2$",
+            "$\\frac{V_1}{V_2} = \\frac{r_1^4}{r_2^4}$",
+            "$\\frac{V_1}{V_2} = \\frac{r_1^2}{r_2^2}$",
+            "$\\frac{V_1}{V_2} = \\frac{r_2^4}{r_1^4}$"
+          ],
+          "correctOption": 0,
+          "solution": "For an incompressible liquid flowing through pipes in series, by the principle of continuity, the volume rate of flow remains identical in both segments ($V_1 = V_2$)."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A tiny steel sphere of density $\\rho$ is released from rest in a tall column of oil of density $\\sigma$ and viscosity $\\eta$. The initial acceleration of the sphere at the instant of release is:",
+          "image": "",
+          "options": [
+            "$g\\left(1 - \\frac{\\sigma}{\\rho}\\right)$",
+            "$g$",
+            "$g\\left(1 - \\frac{\\rho}{\\sigma}\\right)$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "At the instant of release ($t = 0$), velocity is zero ($v = 0$), so viscous drag is zero ($F_v = 0$).\nNet upward/downward force: $F_{\\text{net}} = W - F_B = V\\rho g - V\\sigma g = V(\\rho - \\sigma)g$.\n$$a = \\frac{F_{\\text{net}}}{m} = \\frac{V(\\rho - \\sigma)g}{V\\rho} = g\\left(1 - \\frac{\\sigma}{\\rho}\\right)$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Magnus effect (curving of the trajectory of a spinning ball in air) is a direct consequence of:",
+          "image": "",
+          "options": [
+            "Bernoulli's theorem",
+            "Archimedes' principle",
+            "Pascal's law",
+            "Torricelli's law"
+          ],
+          "correctOption": 0,
+          "solution": "Spinning drags surrounding air, speeding up airflow on one side while retarding it on the opposite side. The difference in airspeeds creates a dynamic pressure imbalance via Bernoulli's theorem, deflecting the ball sideways."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If a capillary tube is tilted at an angle $\\alpha$ with the vertical, the vertical height $h$ of the liquid column and the length $l$ of the liquid column in the tube are related as:",
+          "image": "",
+          "options": [
+            "$l = \\frac{h}{\\cos\\alpha}$",
+            "$l = h\\cos\\alpha$",
+            "$l = \\frac{h}{\\sin\\alpha}$",
+            "$l = h$"
+          ],
+          "correctOption": 0,
+          "solution": "The vertical height $h$ is fixed by gravity and surface tension ($h = \\frac{2T\\cos\\theta}{r\\rho g}$). Along the inclined tube, $h = l\\cos\\alpha \\implies l = \\frac{h}{\\cos\\alpha}$."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a streamline flow of an incompressible non-viscous fluid, the total energy per unit mass is:",
+          "image": "",
+          "options": [
+            "$\\frac{P}{\\rho} + \\frac{v^2}{2} + gh = \\text{constant}$",
+            "$P + \\frac{1}{2}\\rho v^2 + \\rho gh = \\text{constant}$",
+            "$\\frac{P}{\\rho g} + \\frac{v^2}{2g} + h = \\text{constant}$",
+            "$P + v^2 + gh = \\text{constant}$"
+          ],
+          "correctOption": 0,
+          "solution": "Dividing Bernoulli's equation $P + \\frac{1}{2}\\rho v^2 + \\rho gh = \\text{constant}$ by mass density $\\rho$ yields the total energy per unit mass: $\\frac{P}{\\rho} + \\frac{v^2}{2} + gh = \\text{constant}$."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two drops of liquid of equal radius $r$ coalesce to form a single drop of radius $R$. In this process, energy is:",
+          "image": "",
+          "options": [
+            "Released",
+            "Absorbed",
+            "Neither released nor absorbed",
+            "Converted entirely into rotational energy"
+          ],
+          "correctOption": 0,
+          "solution": "When drops coalesce, total surface area decreases ($A_f < A_i$). Consequently, surface potential energy decreases and the surplus energy is released as heat."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A liquid is contained in a vertical cylindrical vessel. If the vessel is accelerated horizontally with an acceleration $a$, the angle $\\theta$ that the free liquid surface makes with the horizontal is:",
+          "image": "",
+          "options": [
+            "$\\tan\\theta = \\frac{a}{g}$",
+            "$\\tan\\theta = \\frac{g}{a}$",
+            "$\\sin\\theta = \\frac{a}{g}$",
+            "$\\cos\\theta = \\frac{a}{g}$"
+          ],
+          "correctOption": 0,
+          "solution": "In the accelerated frame, effective gravity vector $\\vec{g}_{\\text{eff}} = \\vec{g} - \\vec{a}$ tilts at angle $\\theta = \\tan^{-1}(a/g)$ with the vertical. The free surface orients perpendicular to $\\vec{g}_{\\text{eff}}$, making angle $\\theta$ with the horizontal where $\\tan\\theta = \\frac{a}{g}$."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The terminal velocity of a copper ball of radius $2\\text{ mm}$ falling through a tank of oil is $6.5\\text{ cm/s}$. What is the terminal velocity of a copper ball of radius $1\\text{ mm}$ in the same oil?",
+          "image": "",
+          "options": [
+            "$1.625\\text{ cm/s}$",
+            "$3.25\\text{ cm/s}$",
+            "$0.8125\\text{ cm/s}$",
+            "$13.0\\text{ cm/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Terminal velocity $v_t \\propto r^2$.\n$$\\frac{v_{t2}}{v_{t1}} = \\left(\\frac{r_2}{r_1}\\right)^2 = \\left(\\frac{1\\text{ mm}}{2\\text{ mm}}\\right)^2 = \\frac{1}{4}$$\n$$v_{t2} = \\frac{6.5\\text{ cm/s}}{4} = 1.625\\text{ cm/s}$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A rectangular film of liquid of dimensions $4\\text{ cm} \\times 5\\text{ cm}$ is enlarged to $5\\text{ cm} \\times 6\\text{ cm}$. If the work done is $3 \\times 10^{-4}\\text{ J}$, the surface tension of the liquid is:",
+          "image": "",
+          "options": [
+            "$0.15\\text{ N/m}$",
+            "$0.30\\text{ N/m}$",
+            "$0.075\\text{ N/m}$",
+            "$0.05\\text{ N/m}$"
+          ],
+          "correctOption": 0,
+          "solution": "A liquid film has two surfaces:\n$$\\Delta A = 2 \\times [(5 \\times 6) - (4 \\times 5)]\\text{ cm}^2 = 2 \\times (30 - 20) \\times 10^{-4}\\text{ m}^2 = 20 \\times 10^{-4}\\text{ m}^2 = 2 \\times 10^{-3}\\text{ m}^2$$\n$$T = \\frac{W}{\\Delta A} = \\frac{3 \\times 10^{-4}\\text{ J}}{2 \\times 10^{-3}\\text{ m}^2} = 0.15\\text{ N/m}$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Water is flowing continuously through a horizontal pipeline. At two points $A$ and $B$, the cross-sectional areas are in the ratio $1 : 2$. The ratio of the velocity heads at $A$ and $B$ is:",
+          "image": "",
+          "options": [
+            "$4 : 1$",
+            "$2 : 1$",
+            "$1 : 4$",
+            "$16 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Continuity equation: $\\frac{v_A}{v_B} = \\frac{A_B}{A_A} = \\frac{2}{1}$.\nVelocity head is $\\frac{v^2}{2g} \\propto v^2$.\n$$\\frac{h_{vA}}{h_{vB}} = \\left(\\frac{v_A}{v_B}\\right)^2 = \\left(\\frac{2}{1}\\right)^2 = 4 : 1$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The shape of the meniscus of a liquid in a capillary tube is convex upward when the angle of contact is:",
+          "image": "",
+          "options": [
+            "Obtuse",
+            "Acute",
+            "Zero",
+            "Right angle"
+          ],
+          "correctOption": 0,
+          "solution": "When cohesive forces exceed adhesive forces (e.g., mercury in glass), the angle of contact is obtuse and the free meniscus curves convex upwards."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An open tank of cross-sectional area $A$ has a small orifice of area $a$ at its bottom ($a \\ll A$). The time required to completely empty the tank from initial water depth $H$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{A}{a}\\sqrt{\\frac{2H}{g}}$",
+            "$\\frac{2A}{a}\\sqrt{\\frac{H}{g}}$",
+            "$\\frac{A}{2a}\\sqrt{\\frac{2H}{g}}$",
+            "$\\frac{A}{a}\\sqrt{\\frac{H}{2g}}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$-A \\frac{dh}{dt} = a \\sqrt{2gh} \\implies dt = -\\frac{A}{a\\sqrt{2g}} h^{-1/2} dh$$\n$$t = \\frac{A}{a\\sqrt{2g}} \\int_0^H h^{-1/2} dh = \\frac{A}{a\\sqrt{2g}} [2\\sqrt{H}] = \\frac{A}{a}\\sqrt{\\frac{2H}{g}}$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following equations represents Poiseuille's formula for the volume flow rate $V$ of a liquid through a narrow pipe of length $l$ and radius $r$ under pressure difference $P$?",
+          "image": "",
+          "options": [
+            "$V = \\frac{\\pi P r^4}{8\\eta l}$",
+            "$V = \\frac{8\\eta l}{\\pi P r^4}$",
+            "$V = \\frac{\\pi P r^2}{8\\eta l}$",
+            "$V = \\frac{\\pi P r^4}{4\\eta l}$"
+          ],
+          "correctOption": 0,
+          "solution": "Poiseuille's law gives the rate of steady laminar flow of a viscous incompressible fluid through a narrow pipe as $V = \\frac{\\pi P r^4}{8\\eta l}$."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A soap bubble of radius $r_1$ expands isothermally in vacuum so that its radius becomes $r_2$. If $T$ is the surface tension, the work done in expanding the bubble is:",
+          "image": "",
+          "options": [
+            "$8\\pi T (r_2^2 - r_1^2)$",
+            "$4\\pi T (r_2^2 - r_1^2)$",
+            "$2\\pi T (r_2^2 - r_1^2)$",
+            "$16\\pi T (r_2^2 - r_1^2)$"
+          ],
+          "correctOption": 0,
+          "solution": "Total surface area for two surfaces: $A = 2 \\times 4\\pi r^2 = 8\\pi r^2$.\n$$W = T \\Delta A = 8\\pi T (r_2^2 - r_1^2)$$"
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The pressure at a point $6\\text{ m}$ below the surface of a lake is: (Atmospheric pressure $= 10^5\\text{ Pa}, g = 10\\text{ m/s}^2, \\rho = 1000\\text{ kg/m}^3$)",
+          "image": "",
+          "options": [
+            "$1.6 \\times 10^5\\text{ Pa}$",
+            "$0.6 \\times 10^5\\text{ Pa}$",
+            "$2.6 \\times 10^5\\text{ Pa}$",
+            "$1.0 \\times 10^5\\text{ Pa}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$P = P_0 + h\\rho g = 10^5 + (6)(1000)(10) = 100000 + 60000 = 160000\\text{ Pa} = 1.6 \\times 10^5\\text{ Pa}$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Water rises to a height $h$ in a capillary tube of length $L$ ($L > h$). If the tube is cut such that its length becomes $h/2$, then:",
+          "image": "",
+          "options": [
+            "Water reaches the top and its meniscus flattens with radius $R' = 2R$ without overflowing",
+            "Water overflows continuously like a fountain",
+            "Water stays at height $h/4$",
+            "Water does not enter the tube"
+          ],
+          "correctOption": 0,
+          "solution": "The product of liquid height and meniscus radius of curvature is constant: $h R = h' R'$.\nWhen $h' = h/2$, $R' = 2R$. The water rises to the brim and flattens its meniscus without spilling over."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two glass plates are separated by a thin water film of thickness $d$ and area $A$. If the surface tension of water is $T$, the normal force required to separate the two plates is:",
+          "image": "",
+          "options": [
+            "$\\frac{2AT}{d}$",
+            "$\\frac{AT}{d}$",
+            "$\\frac{AT}{2d}$",
+            "$\\frac{4AT}{d}$"
+          ],
+          "correctOption": 0,
+          "solution": "The concave cylindrical meniscus creates an under-pressure $\\Delta P = \\frac{2T}{d}$ inside the thin liquid film.\n$$F = \\Delta P \\times A = \\frac{2AT}{d}$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A syringe of diameter $1\\text{ cm}$ has a needle of diameter $1\\text{ mm}$ attached to it. If the piston is pushed at a speed of $0.02\\text{ m/s}$, the speed of liquid emerging from the needle is:",
+          "image": "",
+          "options": [
+            "$2.0\\text{ m/s}$",
+            "$0.2\\text{ m/s}$",
+            "$20.0\\text{ m/s}$",
+            "$0.02\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using equation of continuity: $A_1 v_1 = A_2 v_2 \\implies d_1^2 v_1 = d_2^2 v_2$.\n$$v_2 = v_1 \\left(\\frac{d_1}{d_2}\\right)^2 = (0.02\\text{ m/s}) \\times \\left(\\frac{10\\text{ mm}}{1\\text{ mm}}\\right)^2 = 0.02 \\times 100 = 2.0\\text{ m/s}$$"
+        }
+      ]
+    }
+  ]
+}
