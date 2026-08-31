@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-25-alternating-current",
+  "title": "Alternating Current",
+  "syllabus": "Alternating currents, Peak and RMS value of alternating current/voltage; Reactance and impedance; LCR series circuit, Resonance; Power in AC circuits, Wattless current; AC generator and transformer.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A series LCR circuit with $R = 20\\,\\Omega$, $L = 1.5\\text{ H}$ and $C = 35\\text{ \\mu F}$ is connected to a variable-frequency $200\\text{ V}$ ac supply. When the frequency of the supply equals the natural frequency of the circuit, what is the average power transferred to the circuit in one complete cycle? (NEET 2022)",
+          "image": "",
+          "options": [
+            "$2000\\text{ W}$",
+            "$200\\text{ W}$",
+            "$4000\\text{ W}$",
+            "$1000\\text{ W}$"
+          ],
+          "correctOption": 0,
+          "solution": "At resonance, the inductive and capacitive reactances cancel each other ($X_L = X_C$), so the impedance of the circuit is purely resistive: $Z = R = 20\\,\\Omega$.\nRMS current at resonance: $I_{\\text{rms}} = \\frac{V_{\\text{rms}}}{Z} = \\frac{200\\text{ V}}{20\\,\\Omega} = 10\\text{ A}$.\nPower factor $\\cos\\phi = 1$.\nAverage power dissipated: $P_{\\text{avg}} = V_{\\text{rms}} I_{\\text{rms}} \\cos\\phi = 200 \\times 10 \\times 1 = 2000\\text{ W}$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An inductor of inductance $L$, a capacitor of capacitance $C$ and a resistor of resistance $R$ are connected in series to an ac source of potential difference $V$ volts as shown in the figure. The potential differences across $L$, $C$ and $R$ are $40\\text{ V}$, $10\\text{ V}$ and $40\\text{ V}$, respectively. The amplitude of the voltage of the ac source $V$ is: (NEET 2021)",
+          "image": "",
+          "options": [
+            "$50\\sqrt{2}\\text{ V}$",
+            "$50\\text{ V}$",
+            "$70\\text{ V}$",
+            "$70\\sqrt{2}\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "The RMS value of the net voltage across the series LCR circuit is:\n$$V_{\\text{rms}} = \\sqrt{V_R^2 + (V_L - V_C)^2} = \\sqrt{40^2 + (40 - 10)^2} = \\sqrt{40^2 + 30^2} = \\sqrt{1600 + 900} = 50\\text{ V}$$\nThe peak value (amplitude) of the source voltage is:\n$$V_0 = \\sqrt{2} V_{\\text{rms}} = 50\\sqrt{2}\\text{ V}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The peak voltage of the ac source is equal to: (NEET 2020)",
+          "image": "",
+          "options": [
+            "$\\sqrt{2}$ times the rms value of the ac source",
+            "The rms value of the ac source",
+            "$\\frac{1}{\\sqrt{2}}$ times the rms value of the ac source",
+            "$2$ times the rms value of the ac source"
+          ],
+          "correctOption": 0,
+          "solution": "For a sinusoidal alternating voltage, $V_{\\text{rms}} = \\frac{V_0}{\\sqrt{2}} \\implies V_0 = \\sqrt{2} V_{\\text{rms}}$. Thus, the peak voltage is $\\sqrt{2}$ times the RMS voltage."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A $44\\text{ mH}$ inductor is connected to $220\\text{ V}, 50\\text{ Hz}$ ac supply. The rms value of the current in the circuit is: (NEET 2020)",
+          "image": "",
+          "options": [
+            "$15.9\\text{ A}$",
+            "$1.59\\text{ A}$",
+            "$159.2\\text{ A}$",
+            "$22.7\\text{ A}$"
+          ],
+          "correctOption": 0,
+          "solution": "Inductive reactance: $X_L = 2\\pi f L = 2 \\times 3.1416 \\times 50 \\times (44 \\times 10^{-3}) = 13.82\\,\\Omega$.\n$$I_{\\text{rms}} = \\frac{V_{\\text{rms}}}{X_L} = \\frac{220\\text{ V}}{13.82\\,\\Omega} \\approx 15.92\\text{ A} \\approx 15.9\\text{ A}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A step-down transformer connected to an ac mains supply of $220\\text{ V}$ is made to operate at $11\\text{ V}, 44\\text{ W}$ lamp. Ignoring power losses in the transformer, what is the current in the primary circuit? (NEET 2021)",
+          "image": "",
+          "options": [
+            "$0.2\\text{ A}$",
+            "$0.4\\text{ A}$",
+            "$2.0\\text{ A}$",
+            "$4.0\\text{ A}$"
+          ],
+          "correctOption": 0,
+          "solution": "For an ideal transformer (zero power loss): $P_{\\text{in}} = P_{\\text{out}} = 44\\text{ W}$.\n$$V_p I_p = P_{\\text{out}} \\implies 220 \\times I_p = 44 \\implies I_p = \\frac{44}{220} = 0.2\\text{ A}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An alternating current is given by the equation $i = i_1\\cos\\omega t + i_2\\sin\\omega t$. The rms value of current is: (NEET 2016)",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{i_1^2 + i_2^2}{2}}$",
+            "$\\frac{i_1 + i_2}{\\sqrt{2}}$",
+            "$\\sqrt{\\frac{i_1^2 + i_2^2}{3}}$",
+            "$\\frac{i_1 + i_2}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "The net amplitude of the resultant harmonic current is $i_0 = \\sqrt{i_1^2 + i_2^2}$.\n$$i_{\\text{rms}} = \\frac{i_0}{\\sqrt{2}} = \\sqrt{\\frac{i_1^2 + i_2^2}{2}}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A small signal voltage $V(t) = V_0\\sin\\omega t$ is applied across an ideal capacitor $C$. Over a complete cycle, the capacitor: (NEET 2016)",
+          "image": "",
+          "options": [
+            "Does not consume any energy from the voltage source",
+            "Consumes energy at a constant rate",
+            "Discharges completely without charging",
+            "Draws power proportional to $\\omega^2$"
+          ],
+          "correctOption": 0,
+          "solution": "In a purely capacitive circuit, current leads voltage by a phase angle of $90^\\circ$ ($\\phi = \\pi/2$).\nThe power factor is $\\cos\\phi = \\cos 90^\\circ = 0$, so average power consumed over a complete cycle is $P_{\\text{avg}} = V_{\\text{rms}} I_{\\text{rms}} \\cos 90^\\circ = 0$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The phase difference between alternating current and voltage in a purely inductive ac circuit is:",
+          "image": "",
+          "options": [
+            "Current lags voltage by $\\frac{\\pi}{2}$",
+            "Current leads voltage by $\\frac{\\pi}{2}$",
+            "Current and voltage are in phase",
+            "Current lags voltage by $\\pi$"
+          ],
+          "correctOption": 0,
+          "solution": "In a pure inductor, the back EMF opposes current growth, causing alternating current to lag behind alternating voltage by a phase difference of $\\frac{\\pi}{2}\\text{ rad}$ ($90^\\circ$)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The resonant frequency $\\omega_0$ of a series LCR circuit having inductance $L$ and capacitance $C$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{\\sqrt{LC}}$",
+            "$\\sqrt{LC}$",
+            "$\\frac{1}{LC}$",
+            "$\\frac{L}{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "At resonance: $X_L = X_C \\implies \\omega_0 L = \\frac{1}{\\omega_0 C} \\implies \\omega_0^2 = \\frac{1}{LC} \\implies \\omega_0 = \\frac{1}{\\sqrt{LC}}$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A wattless current flows through an ac circuit when the phase difference between current and voltage is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{2}$",
+            "$0$",
+            "$\\pi$",
+            "$\\frac{\\pi}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Average power is $P = V_{\\text{rms}} I_{\\text{rms}} \\cos\\phi$. When $\\phi = \\frac{\\pi}{2}$ ($90^\\circ$), $\\cos\\phi = 0$, so no power is dissipated in the circuit and the current is termed wattless."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The primary and secondary coils of a transformer have 500 and 5000 turns respectively. If the primary is connected to a $200\\text{ V}, 50\\text{ Hz}$ ac supply, the secondary output voltage and frequency are:",
+          "image": "",
+          "options": [
+            "$2000\\text{ V}, 50\\text{ Hz}$",
+            "$2000\\text{ V}, 500\\text{ Hz}$",
+            "$20\\text{ V}, 50\\text{ Hz}$",
+            "$200\\text{ V}, 50\\text{ Hz}$"
+          ],
+          "correctOption": 0,
+          "solution": "Voltage ratio: $\\frac{V_s}{V_p} = \\frac{N_s}{N_p} \\implies V_s = 200 \\times \\frac{5000}{500} = 2000\\text{ V}$.\nA transformer changes voltage and current levels without altering the supply frequency ($f = 50\\text{ Hz}$)."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a series LCR circuit, the voltage across $R, L,$ and $C$ are $V_R = 80\\text{ V}, V_L = 100\\text{ V},$ and $V_C = 40\\text{ V}$. The power factor of the circuit is:",
+          "image": "",
+          "options": [
+            "$0.8$",
+            "$0.6$",
+            "$1.0$",
+            "$0.5$"
+          ],
+          "correctOption": 0,
+          "solution": "Total circuit voltage $V = \\sqrt{V_R^2 + (V_L - V_C)^2} = \\sqrt{80^2 + (100 - 40)^2} = \\sqrt{6400 + 3600} = 100\\text{ V}$.\n$$\\text{Power factor } \\cos\\phi = \\frac{V_R}{V} = \\frac{80}{100} = 0.8$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An alternating current is given by $i = 10\\sqrt{2}\\sin(100\\pi t)\\text{ A}$. The frequency and the rms value of the current are:",
+          "image": "",
+          "options": [
+            "$50\\text{ Hz}$ and $10\\text{ A}$",
+            "$100\\text{ Hz}$ and $10\\text{ A}$",
+            "$50\\text{ Hz}$ and $10\\sqrt{2}\\text{ A}$",
+            "$100\\text{ Hz}$ and $5\\text{ A}$"
+          ],
+          "correctOption": 0,
+          "solution": "Peak current $i_0 = 10\\sqrt{2}\\text{ A} \\implies i_{\\text{rms}} = \\frac{i_0}{\\sqrt{2}} = 10\\text{ A}$.\nAngular frequency $\\omega = 100\\pi = 2\\pi f \\implies f = 50\\text{ Hz}$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the frequency of an ac supply in a purely capacitive circuit is doubled, the capacitive reactance of the circuit will:",
+          "image": "",
+          "options": [
+            "Be halved",
+            "Be doubled",
+            "Be quadrupled",
+            "Remain unchanged"
+          ],
+          "correctOption": 0,
+          "solution": "Capacitive reactance is $X_C = \\frac{1}{2\\pi f C} \\propto \\frac{1}{f}$. When frequency is doubled ($f' = 2f$), $X_C' = X_C / 2$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A capacitor blocks direct current (DC) because for DC:",
+          "image": "",
+          "options": [
+            "Frequency $f = 0$, so capacitive reactance $X_C = \\infty$",
+            "Capacitance $C = 0$",
+            "Impedance is purely resistive",
+            "Voltage is zero"
+          ],
+          "correctOption": 0,
+          "solution": "For steady DC, frequency is zero ($f = 0$). Thus, capacitive reactance $X_C = \\frac{1}{2\\pi f C} = \\frac{1}{0} = \\infty$, presenting infinite opposition and blocking DC completely."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The quality factor ($Q$-factor) of a series resonant LCR circuit is given by:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{R}\\sqrt{\\frac{L}{C}}$",
+            "$\\frac{1}{L}\\sqrt{\\frac{R}{C}}$",
+            "$R\\sqrt{\\frac{L}{C}}$",
+            "$\\frac{1}{C}\\sqrt{\\frac{L}{R}}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$Q = \\frac{\\omega_0 L}{R} = \\frac{1}{\\sqrt{LC}}\\left(\\frac{L}{R}\\right) = \\frac{1}{R}\\sqrt{\\frac{L}{C}}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An ac source of $e = 220\\sin(100t)\\text{ V}$ is connected across a resistor of $44\\,\\Omega$. The current reading in an ordinary AC ammeter connected in the circuit is:",
+          "image": "",
+          "options": [
+            "$\\frac{5}{\\sqrt{2}}\\text{ A}$",
+            "$5\\text{ A}$",
+            "$5\\sqrt{2}\\text{ A}$",
+            "$\\frac{220}{44\\sqrt{2}}\\text{ A}$"
+          ],
+          "correctOption": 0,
+          "solution": "Peak current $I_0 = \\frac{V_0}{R} = \\frac{220}{44} = 5\\text{ A}$.\nAn AC ammeter measures the RMS value of current:\n$$I_{\\text{rms}} = \\frac{I_0}{\\sqrt{2}} = \\frac{5}{\\sqrt{2}}\\text{ A}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an ac circuit, $V = 100\\sin(100t)\\text{ V}$ and $I = 100\\sin\\left(100t + \\frac{\\pi}{3}\\right)\\text{ mA}$. The power consumed in the circuit is:",
+          "image": "",
+          "options": [
+            "$2.5\\text{ W}$",
+            "$5.0\\text{ W}$",
+            "$10.0\\text{ W}$",
+            "$1.25\\text{ W}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$P_{\\text{avg}} = \\frac{1}{2} V_0 I_0 \\cos\\phi = \\frac{1}{2} \\times 100 \\times (100 \\times 10^{-3}) \\times \\cos\\left(\\frac{\\pi}{3}\\right) = \\frac{1}{2} \\times 10 \\times 0.5 = 2.5\\text{ W}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The core of a transformer is laminated to minimize energy loss due to:",
+          "image": "",
+          "options": [
+            "Eddy currents",
+            "Hysteresis",
+            "Flux leakage",
+            "Joule heating in copper windings"
+          ],
+          "correctOption": 0,
+          "solution": "Lamination of the iron core into thin sheets separated by insulating layers increases the electrical resistance across transverse loop paths, effectively minimizing eddy current losses."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A coil of resistance $30\\,\\Omega$ and inductive reactance $40\\,\\Omega$ is connected to a $100\\text{ V}$ ac supply. The impedance of the coil is:",
+          "image": "",
+          "options": [
+            "$50\\,\\Omega$",
+            "$70\\,\\Omega$",
+            "$10\\,\\Omega$",
+            "$1200\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "$$Z = \\sqrt{R^2 + X_L^2} = \\sqrt{30^2 + 40^2} = \\sqrt{900 + 1600} = \\sqrt{2500} = 50\\,\\Omega$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a series LCR circuit connected to an alternating voltage source, if $X_L > X_C$, the phase relationship is:",
+          "image": "",
+          "options": [
+            "Current lags voltage by angle $\\phi = \\tan^{-1}\\left(\\frac{X_L - X_C}{R}\\right)$",
+            "Current leads voltage by angle $\\phi = \\tan^{-1}\\left(\\frac{X_L - X_C}{R}\\right)$",
+            "Current and voltage are in phase",
+            "Current lags voltage by $90^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "When $X_L > X_C$, the circuit is predominantly inductive, so the alternating current lags behind the source voltage by phase angle $\\phi = \\tan^{-1}\\left(\\frac{X_L - X_C}{R}\\right)$."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An ac generator consists of a coil of 100 turns and cross-sectional area $0.1\\text{ m}^2$ rotating at $3000\\text{ rpm}$ in a uniform magnetic field of $0.05\\text{ T}$. The peak value of induced emf is:",
+          "image": "",
+          "options": [
+            "$50\\pi\\text{ V}$",
+            "$100\\pi\\text{ V}$",
+            "$25\\pi\\text{ V}$",
+            "$150\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "Angular speed $\\omega = 3000 \\times \\frac{2\\pi}{60} = 100\\pi\\text{ rad/s}$.\n$$\\varepsilon_0 = N B A \\omega = 100 \\times 0.05 \\times 0.1 \\times 100\\pi = 50\\pi\\text{ V}$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The mean (average) value of sinusoidal alternating current over a positive half-cycle ($0$ to $T/2$) is:",
+          "image": "",
+          "options": [
+            "$\\frac{2I_0}{\\pi} \\approx 0.637 I_0$",
+            "$\\frac{I_0}{\\sqrt{2}} \\approx 0.707 I_0$",
+            "Zero",
+            "$\\frac{I_0}{\\pi}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$I_{\\text{avg}} = \\frac{1}{T/2}\\int_0^{T/2} I_0\\sin(\\omega t)\\,dt = \\frac{2I_0}{\\pi} \\approx 0.637 I_0$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The mean (average) value of sinusoidal alternating current over one complete cycle ($0$ to $T$) is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$\\frac{2I_0}{\\pi}$",
+            "$\\frac{I_0}{\\sqrt{2}}$",
+            "$I_0$"
+          ],
+          "correctOption": 0,
+          "solution": "Over a full cycle, positive and negative half-cycles are symmetrical and cancel each other completely, giving an average value of zero."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A choke coil is preferred over a rheostat to reduce current in an AC circuit because:",
+          "image": "",
+          "options": [
+            "It has high inductance and low resistance, minimizing power wastage",
+            "It consumes power at a constant rate",
+            "It increases the power factor to unity",
+            "It completely blocks high frequency ac"
+          ],
+          "correctOption": 0,
+          "solution": "An ideal choke coil has large inductance $L$ and nearly zero resistance $R$. Its power factor $\\cos\\phi \\approx 0$, so it controls AC current through inductive reactance ($X_L = \\omega L$) with negligible Joule heating power loss."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a series LCR circuit, sharpness of resonance increases when:",
+          "image": "",
+          "options": [
+            "$R$ is decreased",
+            "$R$ is increased",
+            "$L$ is decreased",
+            "$C$ is increased"
+          ],
+          "correctOption": 0,
+          "solution": "Sharpness of resonance is measured by the $Q$-factor: $Q = \\frac{1}{R}\\sqrt{\\frac{L}{C}}$. Decreasing resistance $R$ narrows the bandwidth ($\\Delta\\omega = R/L$), making the resonance curve sharper."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An alternating voltage $V = 141.4\\sin(100\\pi t)\\text{ V}$ is applied across a $10\\,\\mu\\text{F}$ capacitor. The rms current in the circuit is:",
+          "image": "",
+          "options": [
+            "$0.314\\text{ A}$",
+            "$0.444\\text{ A}$",
+            "$3.14\\text{ A}$",
+            "$0.157\\text{ A}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$V_{\\text{rms}} = \\frac{V_0}{\\sqrt{2}} = \\frac{141.4}{1.414} = 100\\text{ V}$$\n$$X_C = \\frac{1}{\\omega C} = \\frac{1}{100\\pi \\times 10 \\times 10^{-6}} = \\frac{10^3}{\\pi}\\,\\Omega$$\n$$I_{\\text{rms}} = \\frac{V_{\\text{rms}}}{X_C} = \\frac{100}{1000/\\pi} = 0.1\\pi \\approx 0.314\\text{ A}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A transformer has an efficiency of $80\\%$ and operates on $4\\text{ kW}$ and $100\\text{ V}$. If the secondary voltage is $200\\text{ V}$, the primary and secondary currents are:",
+          "image": "",
+          "options": [
+            "$40\\text{ A}$ and $16\\text{ A}$",
+            "$40\\text{ A}$ and $20\\text{ A}$",
+            "$20\\text{ A}$ and $16\\text{ A}$",
+            "$50\\text{ A}$ and $25\\text{ A}$"
+          ],
+          "correctOption": 0,
+          "solution": "Input power: $P_{\\text{in}} = V_p I_p = 4000\\text{ W} \\implies 100 \\times I_p = 4000 \\implies I_p = 40\\text{ A}$.\nOutput power: $P_{\\text{out}} = 0.80 \\times 4000 = 3200\\text{ W}$.\n$$V_s I_s = 3200 \\implies 200 \\times I_s = 3200 \\implies I_s = 16\\text{ A}$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a series LR circuit, $R = 10\\,\\Omega$ and $L = 0.1\\text{ H}$. When connected to a $50\\text{ Hz}$ ac supply, the phase angle between voltage and current is:",
+          "image": "",
+          "options": [
+            "$\\tan^{-1}(\\pi)$",
+            "$\\tan^{-1}(2\\pi)$",
+            "$\\tan^{-1}(0.5\\pi)$",
+            "$\\frac{\\pi}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$X_L = 2\\pi f L = 2\\pi (50)(0.1) = 10\\pi\\,\\Omega$$\n$$\\tan\\phi = \\frac{X_L}{R} = \\frac{10\\pi}{10} = \\pi \\implies \\phi = \\tan^{-1}(\\pi)$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An ideal transformer cannot step up or step down:",
+          "image": "",
+          "options": [
+            "Direct current (DC) voltage",
+            "Alternating current (AC) voltage",
+            "Single phase AC",
+            "High frequency AC"
+          ],
+          "correctOption": 0,
+          "solution": "Transformers operate on the principle of mutual induction driven by changing magnetic flux. Direct current (DC) creates a static magnetic field ($\\frac{d\\Phi}{dt} = 0$), producing zero induced secondary voltage."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimensional formula of inductive reactance $X_L$ and capacitive reactance $X_C$ is identical to that of:",
+          "image": "",
+          "options": [
+            "Resistance",
+            "Inductance",
+            "Capacitance",
+            "Magnetic flux"
+          ],
+          "correctOption": 0,
+          "solution": "Reactance represents opposition to AC current flow ($X = V/I$) and is measured in ohms ($\\Omega$), sharing the dimensional formula of resistance: $[\\text{M}\\text{L}^2\\text{T}^{-3}\\text{A}^{-2}]$."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a series LCR circuit, at resonant frequency $\\omega_0$, the impedance $Z$ is:",
+          "image": "",
+          "options": [
+            "Minimum and equal to $R$",
+            "Maximum and equal to $R$",
+            "Zero",
+            "Infinite"
+          ],
+          "correctOption": 0,
+          "solution": "At resonance, $X_L = X_C$, so impedance $Z = \\sqrt{R^2 + (X_L - X_C)^2} = R$, which is the minimum possible impedance, resulting in maximum current amplitude."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A $100\\,\\Omega$ iron core inductor is connected across a $220\\text{ V}, 50\\text{ Hz}$ supply. If the iron core is withdrawn from the inductor, the current in the circuit will:",
+          "image": "",
+          "options": [
+            "Increase",
+            "Decrease",
+            "Remain unchanged",
+            "Drop to zero"
+          ],
+          "correctOption": 0,
+          "solution": "Removing the high-permeability iron core decreases the inductance ($L \\downarrow$), which decreases the inductive reactance ($X_L = 2\\pi f L \\downarrow$). Total impedance decreases, causing current $I = V/Z$ to increase."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If an alternating current of peak value $I_0$ passes through a pure resistor $R$, the heat produced in time $t$ ($t \\gg T$) is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2} I_0^2 R t$",
+            "$I_0^2 R t$",
+            "$\\frac{1}{4} I_0^2 R t$",
+            "$2 I_0^2 R t$"
+          ],
+          "correctOption": 0,
+          "solution": "$$H = I_{\\text{rms}}^2 R t = \\left(\\frac{I_0}{\\sqrt{2}}\\right)^2 R t = \\frac{1}{2} I_0^2 R t$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The power factor of a purely resistive circuit is:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$0$",
+            "$0.5$",
+            "$-1$"
+          ],
+          "correctOption": 0,
+          "solution": "In a purely resistive circuit, current and voltage are in phase ($\\phi = 0^\\circ$).\n$$\\text{Power factor } \\cos\\phi = \\cos 0^\\circ = 1$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A series LCR circuit has $L = 10\\text{ mH}$, $C = 1\\text{ \\mu F}$, and $R = 10\\,\\Omega$. The resonant angular frequency is:",
+          "image": "",
+          "options": [
+            "$10^4\\text{ rad/s}$",
+            "$10^5\\text{ rad/s}$",
+            "$10^3\\text{ rad/s}$",
+            "$10^6\\text{ rad/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\omega_0 = \\frac{1}{\\sqrt{LC}} = \\frac{1}{\\sqrt{(10 \\times 10^{-3}) \\times (10^{-6})}} = \\frac{1}{\\sqrt{10^{-8}}} = 10^4\\text{ rad/s}$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a step-up transformer, the transformation ratio $k = N_s / N_p$ is:",
+          "image": "",
+          "options": [
+            "Greater than $1$",
+            "Less than $1$",
+            "Equal to $1$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "A step-up transformer increases voltage ($V_s > V_p$), which requires a greater number of turns in the secondary coil ($N_s > N_p$), so $k = N_s / N_p > 1$."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a direct current $I_{\\text{dc}}$ and an alternating current of peak value $I_0$ produce heat in identical resistors at the same rate, then:",
+          "image": "",
+          "options": [
+            "$I_{\\text{dc}} = \\frac{I_0}{\\sqrt{2}}$",
+            "$I_{\\text{dc}} = I_0$",
+            "$I_{\\text{dc}} = 2 I_0$",
+            "$I_{\\text{dc}} = \\sqrt{2} I_0$"
+          ],
+          "correctOption": 0,
+          "solution": "By definition, the RMS value of AC is the equivalent DC current that produces heat at the exact same rate in a given resistor: $I_{\\text{dc}} = I_{\\text{rms}} = \\frac{I_0}{\\sqrt{2}}$."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an LCR series circuit, if the capacitance is made 4 times its initial value, what should be the new inductance to keep the resonant frequency unchanged?",
+          "image": "",
+          "options": [
+            "$\\frac{L}{4}$",
+            "$4L$",
+            "$\\frac{L}{2}$",
+            "$2L$"
+          ],
+          "correctOption": 0,
+          "solution": "Since $\\omega_0 = \\frac{1}{\\sqrt{LC}}$, the product $L C$ must remain constant.\n$$L' C' = L C \\implies L'(4C) = L C \\implies L' = \\frac{L}{4}$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A capacitor of capacitive reactance $30\\,\\Omega$ and a resistor of $40\\,\\Omega$ are connected in series across an AC source. The impedance of the circuit is:",
+          "image": "",
+          "options": [
+            "$50\\,\\Omega$",
+            "$70\\,\\Omega$",
+            "$10\\,\\Omega$",
+            "$120\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "$$Z = \\sqrt{R^2 + X_C^2} = \\sqrt{40^2 + 30^2} = \\sqrt{1600 + 900} = 50\\,\\Omega$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The wattless component of current in an AC circuit having current $I_{\\text{rms}}$ and phase difference $\\phi$ with voltage is:",
+          "image": "",
+          "options": [
+            "$I_{\\text{rms}}\\sin\\phi$",
+            "$I_{\\text{rms}}\\cos\\phi$",
+            "$I_{\\text{rms}}\\tan\\phi$",
+            "$I_{\\text{rms}}\\cot\\phi$"
+          ],
+          "correctOption": 0,
+          "solution": "Current resolves into an active (in-phase) component $I_{\\text{rms}}\\cos\\phi$ and a reactive (quadrature, out-of-phase by $90^\\circ$) component $I_{\\text{rms}}\\sin\\phi$, which consumes zero average power and is termed wattless current."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Copper loss in a transformer is caused by:",
+          "image": "",
+          "options": [
+            "Joule heating in the primary and secondary copper windings",
+            "Induced eddy currents in the iron core",
+            "Periodic reversal of magnetization in the core",
+            "Mechanical humming vibrations"
+          ],
+          "correctOption": 0,
+          "solution": "Copper loss ($I^2 R$ loss) refers to the electrical power dissipated as heat in the internal resistance of the copper wire windings carrying primary and secondary currents."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An alternating current is represented as $i = 6\\sin(100\\pi t) + 8\\cos(100\\pi t)\\text{ A}$. The rms value of current is:",
+          "image": "",
+          "options": [
+            "$\\frac{10}{\\sqrt{2}}\\text{ A}$",
+            "$10\\text{ A}$",
+            "$14\\text{ A}$",
+            "$7\\text{ A}$"
+          ],
+          "correctOption": 0,
+          "solution": "Resultant peak amplitude: $I_0 = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = 10\\text{ A}$.\n$$I_{\\text{rms}} = \\frac{I_0}{\\sqrt{2}} = \\frac{10}{\\sqrt{2}}\\text{ A} = 5\\sqrt{2}\\text{ A}$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an AC circuit with voltage $V$ and current $I$, the apparent power and true power are related by:",
+          "image": "",
+          "options": [
+            "$\\text{True Power} = \\text{Apparent Power} \\times \\cos\\phi$",
+            "$\\text{Apparent Power} = \\text{True Power} \\times \\cos\\phi$",
+            "$\\text{True Power} = \\text{Apparent Power} \\times \\sin\\phi$",
+            "$\\text{True Power} = \\text{Apparent Power}$"
+          ],
+          "correctOption": 0,
+          "solution": "Apparent power is $V_{\\text{rms}} I_{\\text{rms}}$, while true (active) power is $P = V_{\\text{rms}} I_{\\text{rms}} \\cos\\phi = \\text{Apparent Power} \\times \\cos\\phi$."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A series LCR circuit has $R = 10\\,\\Omega$, $X_L = 100\\,\\Omega$, and $X_C = 100\\,\\Omega$. When connected to a $200\\text{ V}, 50\\text{ Hz}$ supply, the current flowing in the circuit is:",
+          "image": "",
+          "options": [
+            "$20\\text{ A}$",
+            "$2\\text{ A}$",
+            "$10\\text{ A}$",
+            "$1.414\\text{ A}$"
+          ],
+          "correctOption": 0,
+          "solution": "Since $X_L = X_C = 100\\,\\Omega$, the circuit is in resonance ($Z = R = 10\\,\\Omega$).\n$$I = \\frac{V}{Z} = \\frac{200\\text{ V}}{10\\,\\Omega} = 20\\text{ A}$$"
+        }
+      ]
+    }
+  ]
+}
