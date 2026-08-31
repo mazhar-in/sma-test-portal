@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-22-moving-charges-and-magnetism",
+  "title": "Moving Charges and Magnetism",
+  "syllabus": "Concept of magnetic field, Oersted's experiment; Biot-Savart law and its application to current carrying circular loop; Ampere's law and its applications to infinitely long straight wire and solenoid; Force on a moving charge in uniform magnetic and electric fields, Lorentz force; Force on a current-carrying conductor in a uniform magnetic field; Force between two parallel current-carrying conductors-definition of ampere; Torque experienced by a current loop in uniform magnetic field; Current loop as a magnetic dipole and its magnetic moment; Moving coil galvanometer-its current sensitivity and conversion to ammeter and voltmeter.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A thick current-carrying cable of radius $R$ carries current $I$ uniformly distributed across its cross-section. The variation of magnetic field $B(r)$ with distance $r$ from the axis of the cable is correctly represented by: (NEET 2021)",
+          "image": "",
+          "options": [
+            "Linearly increasing ($B \\propto r$) for $r < R$ and inversely decreasing ($B \\propto 1/r$) for $r > R$",
+            "Inversely decreasing ($B \\propto 1/r$) for $r < R$ and linearly increasing for $r > R$",
+            "Zero for $r < R$ and $B \\propto 1/r$ for $r > R$",
+            "Constant for $r < R$ and $B \\propto 1/r^2$ for $r > R$"
+          ],
+          "correctOption": 0,
+          "solution": "By Ampere's Circuital Law:\nInside the wire ($r \\le R$): $B = \\frac{\\mu_0 I r}{2\\pi R^2} \\propto r$.\nOutside the wire ($r \\ge R$): $B = \\frac{\\mu_0 I}{2\\pi r} \\propto \\frac{1}{r}$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An ion enters a region of uniform magnetic field $B$ with velocity $v$ perpendicular to the field. If the radius of the circular path is $r$, the kinetic energy of the ion is: (NEET 2020)",
+          "image": "",
+          "options": [
+            "$\\frac{q^2 B^2 r^2}{2m}$",
+            "$\\frac{q B r^2}{2m}$",
+            "$\\frac{q^2 B^2 r}{2m}$",
+            "$\\frac{q B r}{2m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Radius of circular path: $r = \\frac{m v}{q B} \\implies p = m v = q B r$.\nKinetic energy $K = \\frac{p^2}{2m} = \\frac{(q B r)^2}{2m} = \\frac{q^2 B^2 r^2}{2m}$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A cylindrical conductor of radius $R$ carries a uniform current density. The ratio of the magnetic field at distance $R/2$ inside the conductor to that at distance $2R$ from the center is: (NEET 2019)",
+          "image": "",
+          "options": [
+            "$1 : 1$",
+            "$1 : 2$",
+            "$2 : 1$",
+            "$1 : 4$"
+          ],
+          "correctOption": 0,
+          "solution": "Inside ($r_1 = R/2$): $B_1 = \\frac{\\mu_0 I (R/2)}{2\\pi R^2} = \\frac{\\mu_0 I}{4\\pi R}$.\nOutside ($r_2 = 2R$): $B_2 = \\frac{\\mu_0 I}{2\\pi (2R)} = \\frac{\\mu_0 I}{4\\pi R}$.\n$$\\frac{B_1}{B_2} = \\frac{\\frac{\\mu_0 I}{4\\pi R}}{\\frac{\\mu_0 I}{4\\pi R}} = 1 : 1$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A galvanometer having a coil resistance of $100\\,\\Omega$ gives a full-scale deflection when a current of $1\\text{ mA}$ passes through it. The value of resistance which can convert this galvanometer into an ammeter reading up to $10\\text{ A}$ is: (NEET 2016)",
+          "image": "",
+          "options": [
+            "$0.01\\,\\Omega$",
+            "$0.1\\,\\Omega$",
+            "$0.001\\,\\Omega$",
+            "$1\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "Shunt resistance $S = \\frac{I_g G}{I - I_g}$.\nSince $I_g = 10^{-3}\\text{ A} \\ll I = 10\\text{ A}$:\n$$S \\approx \\frac{I_g G}{I} = \\frac{(10^{-3}\\text{ A}) \\times (100\\,\\Omega)}{10\\text{ A}} = 0.01\\,\\Omega$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A circular coil of radius $10\\text{ cm}$ having 500 turns and resistance $2\\,\\Omega$ is placed with its plane perpendicular to the horizontal component of the earth's magnetic field. If the current through the coil is $0.5\\text{ A}$, the magnetic dipole moment of the coil is: (NEET 2023)",
+          "image": "",
+          "options": [
+            "$7.85\\text{ A}\\cdot\\text{m}^2$",
+            "$1.57\\text{ A}\\cdot\\text{m}^2$",
+            "$3.14\\text{ A}\\cdot\\text{m}^2$",
+            "$0.785\\text{ A}\\cdot\\text{m}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic dipole moment $M = N I A = N I (\\pi r^2)$.\n$$M = 500 \\times 0.5 \\times \\pi (0.10)^2 = 250 \\times 3.1416 \\times 0.01 = 7.854\\text{ A}\\cdot\\text{m}^2$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A long solenoid of diameter $0.1\\text{ m}$ has $2 \\times 10^4\\text{ turns/m}$. At the centre of the solenoid, a coil of 100 turns and radius $0.01\\text{ m}$ is placed with its axis coinciding with the solenoid axis. The magnetic field at the centre of the solenoid when a current of $5\\text{ A}$ flows through it is: (NEET 2017)",
+          "image": "",
+          "options": [
+            "$4\\pi \\times 10^{-2}\\text{ T}$",
+            "$2\\pi \\times 10^{-2}\\text{ T}$",
+            "$4\\pi \\times 10^{-3}\\text{ T}$",
+            "$8\\pi \\times 10^{-2}\\text{ T}$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic field inside an ideal solenoid is $B = \\mu_0 n I$.\n$$B = (4\\pi \\times 10^{-7}) \\times (2 \\times 10^4) \\times 5 = 40\\pi \\times 10^{-3}\\text{ T} = 4\\pi \\times 10^{-2}\\text{ T}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A straight wire of length $0.5\\text{ m}$ and carrying a current of $1.2\\text{ A}$ is placed in uniform magnetic field of induction $2\\text{ T}$. The field is perpendicular to the length of the wire. The force on the wire is: (NEET 2022)",
+          "image": "",
+          "options": [
+            "$1.2\\text{ N}$",
+            "$2.4\\text{ N}$",
+            "$0.6\\text{ N}$",
+            "$3.0\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic force on a current-carrying wire: $F = I L B \\sin 90^\\circ = 1.2 \\times 0.5 \\times 2 = 1.2\\text{ N}$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two long parallel wires carrying equal current $I$ in the same direction are separated by distance $d$. The magnitude of magnetic field at a point midway between the wires is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$\\frac{2\\mu_0 I}{\\pi d}$",
+            "$\\frac{\\mu_0 I}{\\pi d}$",
+            "$\\frac{\\mu_0 I}{2\\pi d}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the right-hand thumb rule, the magnetic fields produced by the two parallel currents flowing in the same direction point in opposite directions at the midpoint between them:\n$$B_{\\text{net}} = B_1 - B_2 = \\frac{\\mu_0 I}{2\\pi(d/2)} - \\frac{\\mu_0 I}{2\\pi(d/2)} = 0$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A square loop of side $L$ carries a steady current $I$. The magnetic field at the centre of the loop is:",
+          "image": "",
+          "options": [
+            "$\\frac{2\\sqrt{2}\\mu_0 I}{\\pi L}$",
+            "$\\frac{\\sqrt{2}\\mu_0 I}{\\pi L}$",
+            "$\\frac{\\mu_0 I}{2\\pi L}$",
+            "$\\frac{4\\mu_0 I}{\\pi L}$"
+          ],
+          "correctOption": 0,
+          "solution": "For one side of length $L$ at perpendicular distance $d = L/2$, $\\theta_1 = \\theta_2 = 45^\\circ$:\n$$B_1 = \\frac{\\mu_0 I}{4\\pi(L/2)}(\\sin 45^\\circ + \\sin 45^\\circ) = \\frac{\\mu_0 I}{2\\pi L}\\left(\\frac{2}{\\sqrt{2}}\\right) = \\frac{\\sqrt{2}\\mu_0 I}{2\\pi L}$$\nTotal field for all 4 sides: $B_{\\text{total}} = 4 B_1 = 4 \\left(\\frac{\\sqrt{2}\\mu_0 I}{2\\pi L}\\right) = \\frac{2\\sqrt{2}\\mu_0 I}{\\pi L}$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A charged particle moves with velocity $\\vec{v}$ in a region containing mutually perpendicular electric field $\\vec{E}$ and magnetic field $\\vec{B}$. The particle passes undeflected through the region when its speed is:",
+          "image": "",
+          "options": [
+            "$\\frac{E}{B}$",
+            "$\\frac{B}{E}$",
+            "$\\sqrt{\\frac{E}{B}}$",
+            "$E B$"
+          ],
+          "correctOption": 0,
+          "solution": "In a velocity selector, the electric force balances the magnetic force ($qE = qvB$), so $v = \\frac{E}{B}$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electron enters a uniform magnetic field at an angle of $30^\\circ$ with the direction of the field. The trajectory of the electron is:",
+          "image": "",
+          "options": [
+            "A helix with uniform pitch",
+            "A circle",
+            "A straight line along the field",
+            "A parabola"
+          ],
+          "correctOption": 0,
+          "solution": "When velocity makes an acute angle $\\theta$ ($0^\\circ < \\theta < 90^\\circ$) with $\\vec{B}$, the perpendicular component $v_\\perp = v\\sin\\theta$ provides circular motion, while the parallel component $v_\\parallel = v\\cos\\theta$ causes uniform linear translation, creating a helical trajectory."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two parallel conductors separated by $1\\text{ m}$ in vacuum carry equal steady currents. The force experienced per unit length by each conductor is $2 \\times 10^{-7}\\text{ N/m}$. The current flowing through each conductor is:",
+          "image": "",
+          "options": [
+            "$1\\text{ A}$",
+            "$2\\text{ A}$",
+            "$0.5\\text{ A}$",
+            "$4\\text{ A}$"
+          ],
+          "correctOption": 0,
+          "solution": "By the standard SI definition of the ampere:\n$$\\frac{F}{L} = \\frac{\\mu_0 I_1 I_2}{2\\pi d} \\implies 2 \\times 10^{-7} = \\frac{(4\\pi \\times 10^{-7}) I^2}{2\\pi (1)} = 2 \\times 10^{-7} I^2 \\implies I = 1\\text{ A}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A circular current loop of radius $R$ carries current $I$. The ratio of the magnetic field at the centre of the loop to that at an axial point at a distance $x = \\sqrt{3}R$ from the centre is:",
+          "image": "",
+          "options": [
+            "$8 : 1$",
+            "$4 : 1$",
+            "$2\\sqrt{2} : 1$",
+            "$16 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Field at centre: $B_{\\text{centre}} = \\frac{\\mu_0 I}{2R}$.\nField on axis: $B_{\\text{axis}} = \\frac{\\mu_0 I R^2}{2(R^2 + x^2)^{3/2}} = \\frac{\\mu_0 I R^2}{2(R^2 + 3R^2)^{3/2}} = \\frac{\\mu_0 I R^2}{2(4R^2)^{3/2}} = \\frac{\\mu_0 I}{16R}$.\n$$\\frac{B_{\\text{centre}}}{B_{\\text{axis}}} = \\frac{\\mu_0 I / 2R}{\\mu_0 I / 16R} = 8 : 1$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A galvanometer of resistance $G$ is converted into a voltmeter of range $0$ to $V\\text{ volts}$ by connecting a resistance $R$ in series with it. The required value of $R$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{V}{I_g} - G$",
+            "$\\frac{V}{I_g} + G$",
+            "$\\frac{I_g}{V} - G$",
+            "$\\frac{V}{G} - I_g$"
+          ],
+          "correctOption": 0,
+          "solution": "Total resistance of the voltmeter is $(G + R)$.\n$$V = I_g(G + R) \\implies G + R = \\frac{V}{I_g} \\implies R = \\frac{V}{I_g} - G$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electron of charge $-e$ moves in a circular orbit of radius $r$ with orbital frequency $f$ around a nucleus. The equivalent magnetic dipole moment associated with this orbital motion is:",
+          "image": "",
+          "options": [
+            "$e f \\pi r^2$",
+            "$\\frac{e f \\pi r^2}{2}$",
+            "$2 e f \\pi r^2$",
+            "$\\frac{e \\pi r^2}{f}$"
+          ],
+          "correctOption": 0,
+          "solution": "Equivalent current $I = \\frac{q}{T} = e f$.\nArea of orbit $A = \\pi r^2$.\nMagnetic moment $M = I A = e f \\pi r^2$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The work done by a magnetic force $\\vec{F} = q(\\vec{v} \\times \\vec{B})$ on a charged particle moving through a pure magnetic field is:",
+          "image": "",
+          "options": [
+            "Always zero",
+            "Positive if charge is positive",
+            "Negative if charge is negative",
+            "Dependent on the field magnitude"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic force is always perpendicular to velocity ($\\vec{F}_m \\perp \\vec{v}$). Power $P = \\vec{F}_m \\cdot \\vec{v} = 0$, hence work done $W = \\int P\\,dt = 0$ at all instants."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Biot-Savart law for a differential current element $I\\,d\\vec{l}$ in vector form is given by:",
+          "image": "",
+          "options": [
+            "$d\\vec{B} = \\frac{\\mu_0}{4\\pi}\\frac{I(d\\vec{l} \\times \\hat{r})}{r^2} = \\frac{\\mu_0}{4\\pi}\\frac{I(d\\vec{l} \\times \\vec{r})}{r^3}$",
+            "$d\\vec{B} = \\frac{\\mu_0}{4\\pi}\\frac{I(d\\vec{l} \\cdot \\vec{r})}{r^3}$",
+            "$d\\vec{B} = \\frac{\\mu_0}{4\\pi}\\frac{I(d\\vec{l} \\times \\vec{r})}{r^2}$",
+            "$d\\vec{B} = \\frac{\\mu_0}{4\\pi}\\frac{I d\\vec{l}}{r^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "In vector notation: $d\\vec{B} = \\frac{\\mu_0}{4\\pi} \\frac{I(d\\vec{l} \\times \\hat{r})}{r^2} = \\frac{\\mu_0}{4\\pi} \\frac{I(d\\vec{l} \\times \\vec{r})}{r^3}$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A rectangular coil of $N$ turns, area $A$, and carrying current $I$ is placed in a uniform magnetic field $B$. The maximum torque experienced by the coil is:",
+          "image": "",
+          "options": [
+            "$N I A B$",
+            "$\\frac{N I A B}{2}$",
+            "$2 N I A B$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Torque on a planar coil is $\\tau = N I A B \\sin\\theta$. Maximum torque occurs when the plane of the coil is parallel to the magnetic field ($\\theta = 90^\\circ$), so $\\tau_{\\text{max}} = N I A B$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A proton and an alpha particle enter a uniform magnetic field with the same kinetic energy perpendicularly. The ratio of the radii of their circular paths $r_p / r_\\alpha$ is:",
+          "image": "",
+          "options": [
+            "$1 : 1$",
+            "$1 : 2$",
+            "$2 : 1$",
+            "$1 : 4$"
+          ],
+          "correctOption": 0,
+          "solution": "Radius in terms of kinetic energy: $r = \\frac{\\sqrt{2mK}}{qB} \\propto \\frac{\\sqrt{m}}{q}$.\n$$\\frac{r_p}{r_\\alpha} = \\left(\\frac{\\sqrt{m_p}}{\\sqrt{m_\\alpha}}\\right)\\left(\\frac{q_\\alpha}{q_p}\\right) = \\left(\\frac{\\sqrt{m}}{\\sqrt{4m}}\\right)\\left(\\frac{2e}{e}\\right) = \\left(\\frac{1}{2}\\right)(2) = 1 : 1$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A current-carrying circular arc of radius $R$ subtends an angle of $60^\\circ$ at its centre. The magnetic field at the centre of the arc carrying current $I$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\mu_0 I}{12 R}$",
+            "$\\frac{\\mu_0 I}{6 R}$",
+            "$\\frac{\\mu_0 I}{4 R}$",
+            "$\\frac{\\mu_0 I}{24 R}$"
+          ],
+          "correctOption": 0,
+          "solution": "Angle $\\theta = 60^\\circ = \\frac{\\pi}{3}\\text{ radians}$.\n$$B = \\frac{\\mu_0 I}{4\\pi R}\\theta = \\frac{\\mu_0 I}{4\\pi R}\\left(\\frac{\\pi}{3}\\right) = \\frac{\\mu_0 I}{12 R}$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "To increase the current sensitivity of a moving coil galvanometer by $50\\%$, the number of turns is increased. What is the effect on its voltage sensitivity if the resistance of the coil doubles?",
+          "image": "",
+          "options": [
+            "Decreases by $25\\%$",
+            "Increases by $50\\%$",
+            "Remains unchanged",
+            "Increases by $25\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "Current sensitivity $I_s = \\frac{NBA}{k} \\implies I_s' = 1.5 I_s$.\nVoltage sensitivity $V_s = \\frac{I_s}{R}$.\n$$V_s' = \\frac{I_s'}{R'} = \\frac{1.5 I_s}{2 R} = 0.75 V_s$$\nPercentage change $= (0.75 - 1) \\times 100\\% = -25\\%$ (decreases by $25\\%$)."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two long parallel wires carry currents $I_1$ and $I_2$ in opposite directions (antiparallel). The magnetic force between them is:",
+          "image": "",
+          "options": [
+            "Repulsive",
+            "Attractive",
+            "Zero",
+            "Rotational torque only"
+          ],
+          "correctOption": 0,
+          "solution": "Parallel currents in the same direction attract each other, whereas currents in opposite directions (antiparallel) repel each other."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A charged particle of mass $m$ and charge $q$ is accelerated through a potential difference $V$ from rest and then injected perpendicularly into a uniform magnetic field $B$. The radius of the circular path is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{B}\\sqrt{\\frac{2mV}{q}}$",
+            "$\\frac{B}{q}\\sqrt{2mV}$",
+            "$\\frac{1}{q}\\sqrt{\\frac{2mV}{B}}$",
+            "$\\frac{1}{B}\\sqrt{\\frac{mV}{2q}}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$K = qV \\implies p = \\sqrt{2mK} = \\sqrt{2mqV}$$\n$$r = \\frac{p}{qB} = \\frac{\\sqrt{2mqV}}{qB} = \\frac{1}{B}\\sqrt{\\frac{2mV}{q}}$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A straight wire carrying current $I$ is bent into a semicircle of radius $r$. The magnetic field at the center of the semicircle due to the curved portion only is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\mu_0 I}{4r}$",
+            "$\\frac{\\mu_0 I}{2r}$",
+            "$\\frac{\\mu_0 I}{8r}$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "For a complete circle, $B = \\frac{\\mu_0 I}{2r}$. For a semicircle, $B = \\frac{1}{2}\\left(\\frac{\\mu_0 I}{2r}\\right) = \\frac{\\mu_0 I}{4r}$."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A moving coil galvanometer is equipped with a soft iron core and concave magnetic pole pieces primarily to:",
+          "image": "",
+          "options": [
+            "Produce a strong radial magnetic field so that deflection $\\theta \\propto I$",
+            "Reduce the weight of the moving system",
+            "Increase the torsional constant of the spring",
+            "Eliminate electromagnetic damping"
+          ],
+          "correctOption": 0,
+          "solution": "The cylindrical soft iron core and concave pole pieces produce a radial magnetic field, ensuring that the plane of the coil is always parallel to the field lines ($\\,\\sin\\theta = 1$). This makes the deflecting torque independent of angle, yielding a linear scale where deflection $\\theta \\propto I$."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electron moves with a speed of $2 \\times 10^7\\text{ m/s}$ in a uniform magnetic field of $0.5\\text{ T}$ along the direction of the magnetic field. The magnetic force on the electron is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$1.6 \\times 10^{-12}\\text{ N}$",
+            "$3.2 \\times 10^{-12}\\text{ N}$",
+            "$0.8 \\times 10^{-12}\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic force is $\\vec{F} = q(\\vec{v} \\times \\vec{B}) \\implies F = q v B \\sin\\theta$.\nBecause the electron moves parallel to the field, $\\theta = 0^\\circ \\implies \\sin 0^\\circ = 0$, so $F = 0$."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A wire of length $L$ carrying current $I$ is bent first into a single circular turn and then into a circular coil of 2 turns. The ratio of magnetic field at the centre in the two cases $B_1 / B_2$ is:",
+          "image": "",
+          "options": [
+            "$1 : 4$",
+            "$1 : 2$",
+            "$4 : 1$",
+            "$1 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Case 1: $N_1 = 1, R_1 = \\frac{L}{2\\pi} \\implies B_1 = \\frac{\\mu_0 (1) I}{2 R_1} = \\frac{\\mu_0 \\pi I}{L}$.\nCase 2: $N_2 = 2, R_2 = \\frac{L}{4\\pi} = \\frac{R_1}{2} \\implies B_2 = \\frac{\\mu_0 (2) I}{2(R_1/2)} = 4 B_1$.\n$$\\frac{B_1}{B_2} = 1 : 4$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The time period of revolution of a charged particle in a uniform perpendicular magnetic field is independent of its:",
+          "image": "",
+          "options": [
+            "Speed and radius of the orbit",
+            "Charge",
+            "Magnetic field",
+            "Mass"
+          ],
+          "correctOption": 0,
+          "solution": "Time period $T = \\frac{2\\pi r}{v} = \\frac{2\\pi (m v / q B)}{v} = \\frac{2\\pi m}{q B}$, which depends only on $m, q,$ and $B$, and is completely independent of the particle's speed and orbital radius."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A galvanometer has resistance $G$ and full scale deflection current $I_g$. To convert it into an ammeter of range $n I_g$, the required shunt resistance $S$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{G}{n - 1}$",
+            "$\\frac{G}{n}$",
+            "$(n - 1)G$",
+            "$\\frac{G}{n + 1}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$S = \\frac{I_g G}{I - I_g} = \\frac{I_g G}{n I_g - I_g} = \\frac{G}{n - 1}$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A square current loop of area $A$ and carrying current $I$ is placed in a uniform magnetic field $\\vec{B}$. The potential energy of the magnetic dipole in the field is:",
+          "image": "",
+          "options": [
+            "$-\\vec{M} \\cdot \\vec{B}$",
+            "$\\vec{M} \\times \\vec{B}$",
+            "$\\vec{M} \\cdot \\vec{B}$",
+            "$M B \\sin\\theta$"
+          ],
+          "correctOption": 0,
+          "solution": "The potential energy of a magnetic dipole $\\vec{M}$ in a uniform magnetic field $\\vec{B}$ is given by $U = -\\vec{M} \\cdot \\vec{B} = -M B \\cos\\theta$."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Ampere's circuital law in integral form is expressed as:",
+          "image": "",
+          "options": [
+            "$\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_{\\text{enclosed}}$",
+            "$\\oint \\vec{B} \\cdot d\\vec{A} = \\mu_0 I_{\\text{enclosed}}$",
+            "$\\oint \\vec{B} \\times d\\vec{l} = \\mu_0 I_{\\text{enclosed}}$",
+            "$\\oint \\vec{B} \\cdot d\\vec{l} = \\frac{I_{\\text{enclosed}}}{\\mu_0}$"
+          ],
+          "correctOption": 0,
+          "solution": "Ampere's circuital law states that the line integral of magnetic field around any closed loop is equal to $\\mu_0$ times the total steady current enclosed by the loop: $\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_{\\text{enclosed}}$."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle with charge $q$ and mass $m$ moves along a helical path in a magnetic field $B$. If the velocity makes an angle $\\theta$ with the magnetic field, the pitch of the helix is:",
+          "image": "",
+          "options": [
+            "$\\frac{2\\pi m v\\cos\\theta}{qB}$",
+            "$\\frac{2\\pi m v\\sin\\theta}{qB}$",
+            "$\\frac{2\\pi m v}{qB}$",
+            "$\\frac{2\\pi m}{qB v\\cos\\theta}$"
+          ],
+          "correctOption": 0,
+          "solution": "Pitch is the linear distance traversed along the magnetic field during one full revolution:\n$$p = v_\\parallel \\times T = (v\\cos\\theta) \\times \\left(\\frac{2\\pi m}{qB}\\right) = \\frac{2\\pi m v\\cos\\theta}{qB}$$"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two circular concentric coils $X$ and $Y$ of radii $16\\text{ cm}$ and $10\\text{ cm}$ carry currents $0.75\\text{ A}$ and $1.0\\text{ A}$ in opposite directions. The net magnetic field at their common centre is: (Take $\\mu_0 = 4\\pi \\times 10^{-7}\\text{ T}\\cdot\\text{m/A}$)",
+          "image": "",
+          "options": [
+            "$\\approx 3.36 \\times 10^{-6}\\text{ T}$",
+            "$\\approx 9.28 \\times 10^{-6}\\text{ T}$",
+            "Zero",
+            "$\\approx 6.72 \\times 10^{-6}\\text{ T}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$B_X = \\frac{\\mu_0 I_X}{2 R_X} = \\frac{(4\\pi \\times 10^{-7}) \\times 0.75}{2 \\times 0.16} = 2.945 \\times 10^{-6}\\text{ T}$$\n$$B_Y = \\frac{\\mu_0 I_Y}{2 R_Y} = \\frac{(4\\pi \\times 10^{-7}) \\times 1.0}{2 \\times 0.10} = 6.283 \\times 10^{-6}\\text{ T}$$\n$$B_{\\text{net}} = B_Y - B_X = (6.283 - 2.945) \\times 10^{-6} \\approx 3.34 \\times 10^{-6}\\text{ T} \\approx 3.36 \\times 10^{-6}\\text{ T}$$"
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A charged particle of charge $q$ is projected into a region with velocity $\\vec{v} = 3\\hat{i} + 4\\hat{j}\\text{ m/s}$ in a magnetic field $\\vec{B} = 2\\hat{k}\\text{ T}$. The magnetic force acting on the particle is:",
+          "image": "",
+          "options": [
+            "$q(8\\hat{i} - 6\\hat{j})\\text{ N}$",
+            "$q(-8\\hat{i} + 6\\hat{j})\\text{ N}$",
+            "$q(6\\hat{i} + 8\\hat{j})\\text{ N}$",
+            "$q(8\\hat{i} + 6\\hat{j})\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\vec{F} = q(\\vec{v} \\times \\vec{B}) = q[(3\\hat{i} + 4\\hat{j}) \\times 2\\hat{k}] = q[6(\\hat{i} \\times \\hat{k}) + 8(\\hat{j} \\times \\hat{k})] = q[-6\\hat{j} + 8\\hat{i}] = q(8\\hat{i} - 6\\hat{j})\\text{ N}$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The gyromagnetic ratio $\\left(\\frac{\\mu_l}{L}\\right)$ of an electron orbiting a nucleus is a fundamental constant given by:",
+          "image": "",
+          "options": [
+            "$\\frac{e}{2m_e}$",
+            "$\\frac{e}{m_e}$",
+            "$\\frac{2e}{m_e}$",
+            "$\\frac{e}{4m_e}$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic dipole moment is $\\mu_l = I A = \\left(\\frac{e v}{2\\pi r}\\right)(\\pi r^2) = \\frac{e v r}{2}$.\nAngular momentum is $L = m_e v r$.\n$$\\frac{\\mu_l}{L} = \\frac{e v r / 2}{m_e v r} = \\frac{e}{2m_e} \\approx 8.8 \\times 10^{10}\\text{ C/kg}$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Bohr magneton $\\mu_B$ is the elementary magnetic moment associated with an atom and is defined as:",
+          "image": "",
+          "options": [
+            "$\\frac{e h}{4\\pi m_e}$",
+            "$\\frac{e h}{2\\pi m_e}$",
+            "$\\frac{e h}{4 m_e}$",
+            "$\\frac{e h}{8\\pi m_e}$"
+          ],
+          "correctOption": 0,
+          "solution": "From Bohr's postulate $L = \\frac{h}{2\\pi}$, the minimum orbital magnetic moment is $\\mu_B = \\left(\\frac{e}{2m_e}\\right)\\left(\\frac{h}{2\\pi}\\right) = \\frac{e h}{4\\pi m_e} \\approx 9.27 \\times 10^{-24}\\text{ A}\\cdot\\text{m}^2$."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A current $I$ flows in a conductor of arbitrary shape placed in a uniform magnetic field $\\vec{B}$. The net magnetic force on the closed circuit of any arbitrary shape is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$I B L$",
+            "$I \\oint d\\vec{l}$",
+            "$I B A$"
+          ],
+          "correctOption": 0,
+          "solution": "Total force $\\vec{F} = I \\left(\\oint d\\vec{l}\\right) \\times \\vec{B}$. Since the vector sum of line elements around any closed loop is identically zero ($\\oint d\\vec{l} = \\vec{0}$), the net force on any closed current loop in a uniform field is zero."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If an ammeter has a resistance $R_A$ and measuring range $I$, what resistance should be connected in parallel with it to extend its range to $n I$?",
+          "image": "",
+          "options": [
+            "$\\frac{R_A}{n - 1}$",
+            "$(n - 1)R_A$",
+            "$\\frac{R_A}{n}$",
+            "$n R_A$"
+          ],
+          "correctOption": 0,
+          "solution": "The shunt required across the ammeter of resistance $R_A$ is $S = \\frac{I R_A}{n I - I} = \\frac{R_A}{n - 1}$."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A long solenoid has 500 turns per unit length and carries a current of $2\\text{ A}$. The magnetic field at one of its extreme ends on the axis is:",
+          "image": "",
+          "options": [
+            "$\\pi \\times 10^{-4}\\text{ T}$",
+            "$2\\pi \\times 10^{-4}\\text{ T}$",
+            "$4\\pi \\times 10^{-4}\\text{ T}$",
+            "$\\frac{\\pi}{2} \\times 10^{-4}\\text{ T}$"
+          ],
+          "correctOption": 0,
+          "solution": "Field at the end of a long solenoid is half the field at the centre:\n$$B_{\\text{end}} = \\frac{1}{2}\\mu_0 n I = \\frac{1}{2}(4\\pi \\times 10^{-7}) \\times 500 \\times 2 = 2\\pi \\times 10^{-4} \\times 0.5 = \\pi \\times 10^{-4}\\text{ T}$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following particles will experience NO force when projected into a region containing a uniform magnetic field?",
+          "image": "",
+          "options": [
+            "Neutron",
+            "Proton",
+            "Electron",
+            "Alpha particle"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic force is $\\vec{F} = q(\\vec{v} \\times \\vec{B})$. Since a neutron is an uncharged neutral particle ($q = 0$), it experiences zero magnetic force."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A proton, a deuteron, and an alpha particle are accelerated through the same potential difference and enter a uniform magnetic field perpendicularly. The ratio of radii of their circular paths $r_p : r_d : r_\\alpha$ is:",
+          "image": "",
+          "options": [
+            "$1 : \\sqrt{2} : 1$",
+            "$1 : 2 : 4$",
+            "$1 : \\sqrt{2} : \\sqrt{2}$",
+            "$\\sqrt{2} : 1 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "$$r = \\frac{\\sqrt{2mqV}}{qB} \\propto \\frac{\\sqrt{m/q}}{1}$$\n- Proton: $\\sqrt{1/1} = 1$\n- Deuteron: $\\sqrt{2/1} = \\sqrt{2}$\n- Alpha particle: $\\sqrt{4/2} = \\sqrt{2} = 1\\cdot\\sqrt{2/2} = 1$\nRatio: $r_p : r_d : r_\\alpha = 1 : \\sqrt{2} : 1$."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The magnetic field at a distance $r$ from an infinitely long straight wire carrying steady current $I$ is inversely proportional to:",
+          "image": "",
+          "options": [
+            "$r$",
+            "$r^2$",
+            "$r^3$",
+            "$\\sqrt{r}$"
+          ],
+          "correctOption": 0,
+          "solution": "For an infinitely long straight wire: $B = \\frac{\\mu_0 I}{2\\pi r} \\propto \\frac{1}{r}$."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A galvanometer has a sensitivity of 60 divisions/volt. When a shunt is used, its sensitivity decreases to 10 divisions/volt. If the galvanometer resistance is $20\\,\\Omega$, the value of shunt resistance is:",
+          "image": "",
+          "options": [
+            "$4\\,\\Omega$",
+            "$5\\,\\Omega$",
+            "$2\\,\\Omega$",
+            "$2.5\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "Multiplying power $n = \\frac{60}{10} = 6$.\n$$S = \\frac{G}{n - 1} = \\frac{20}{6 - 1} = \\frac{20}{5} = 4\\,\\Omega$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two infinitely long straight wires carrying currents $I_1$ and $I_2$ intersect perpendicularly without touching at the origin in the $x\\text{-}y$ plane. The locus of points where the net magnetic field is zero lies along:",
+          "image": "",
+          "options": [
+            "Straight lines passing through the origin with slope $\\pm \\frac{I_2}{I_1}$",
+            "A circle centered at the origin",
+            "A parabola",
+            "An ellipse"
+          ],
+          "correctOption": 0,
+          "solution": "At point $(x, y)$, fields along the $z$-axis cancel when $B_1 = B_2 \\implies \\frac{\\mu_0 I_1}{2\\pi y} = \\frac{\\mu_0 I_2}{2\\pi x} \\implies y = \\pm \\left(\\frac{I_1}{I_2}\\right)x$, which describes straight lines passing through the origin."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A current loop placed in a magnetic field behaves like a magnetic dipole. The direction of its magnetic dipole moment vector is given by:",
+          "image": "",
+          "options": [
+            "Right-hand screw rule curled along the direction of current",
+            "Left-hand rule",
+            "Always along the positive z-axis",
+            "Opposite to the area normal vector"
+          ],
+          "correctOption": 0,
+          "solution": "According to the right-hand thumb rule, if the fingers of the right hand are curled in the direction of current flow around the loop, the outstretched thumb points in the direction of the magnetic dipole moment vector $\\vec{M}$."
+        }
+      ]
+    }
+  ]
+}
