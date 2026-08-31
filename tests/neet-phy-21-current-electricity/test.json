@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-21-current-electricity",
+  "title": "Current Electricity",
+  "syllabus": "Electric current, Flow of electric charges in a metallic conductor, Drift velocity, Mobility and their relation with electric current; Ohm's law, Electrical resistance, V-I characteristics (linear and non-linear), Electrical energy and power, Electrical resistivity and conductivity; Temperature dependence of resistance; Internal resistance of a cell, Potential difference and emf of a cell, Combination of cells in series and in parallel, Kirchhoff's laws and simple applications, Wheatstone bridge, Metre bridge.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The resistance of a wire is $R\\,\\Omega$. If it is melted and stretched to $n$ times its original length, its new resistance will be: (NEET 2017)",
+          "image": "",
+          "options": [
+            "$n^2 R$",
+            "$n R$",
+            "$\\frac{R}{n^2}$",
+            "$\\frac{R}{n}$"
+          ],
+          "correctOption": 0,
+          "solution": "Volume remains constant: $V = A L = A' L' \\implies A' = \\frac{A L}{n L} = \\frac{A}{n}$.\n$$R' = \\rho \\frac{L'}{A'} = \\rho \\frac{n L}{A / n} = n^2 \\left(\\rho \\frac{L}{A}\\right) = n^2 R$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A set of $n$ equal resistors, each of value $R$, when connected in series give an equivalent resistance of $X$. If these $n$ resistors are connected in parallel, the equivalent resistance will be: (NEET 2018)",
+          "image": "",
+          "options": [
+            "$\\frac{X}{n^2}$",
+            "$\\frac{X}{n}$",
+            "$n^2 X$",
+            "$n X$"
+          ],
+          "correctOption": 0,
+          "solution": "In series: $R_s = n R = X \\implies R = \\frac{X}{n}$.\nIn parallel: $R_p = \\frac{R}{n} = \\frac{X/n}{n} = \\frac{X}{n^2}$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a metre bridge, the balance point is found to be at $39.5\\text{ cm}$ from the end $A$, when the resistor $Y$ is of $12.5\\,\\Omega$. The value of resistor $X$ in the left gap is: (NEET 2021)",
+          "image": "",
+          "options": [
+            "$8.16\\,\\Omega$",
+            "$12.5\\,\\Omega$",
+            "$6.25\\,\\Omega$",
+            "$4.08\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "From the balance condition of a metre bridge: $\\frac{X}{Y} = \\frac{l}{100 - l}$.\n$$\\frac{X}{12.5} = \\frac{39.5}{100 - 39.5} = \\frac{39.5}{60.5} \\implies X = 12.5 \\times \\frac{39.5}{60.5} \\approx 8.16\\,\\Omega$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A cylindrical conductor of length $L$ and uniform area of cross-section $A$ has resistance $R$. Another conductor of length $2.5L$ and resistance $0.5R$ of the same material has area of cross-section: (NEET 2020)",
+          "image": "",
+          "options": [
+            "$5A$",
+            "$2.5A$",
+            "$0.5A$",
+            "$1.25A$"
+          ],
+          "correctOption": 0,
+          "solution": "$R = \\rho \\frac{L}{A}$.\nFor the second conductor: $R' = \\rho \\frac{L'}{A'} \\implies 0.5R = \\rho \\frac{2.5L}{A'}$.\n$$A' = \\frac{\\rho (2.5L)}{0.5R} = \\frac{2.5}{0.5}\\left(\\rho \\frac{L}{R}\\right) = 5A$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The drift velocity of free electrons in a conducting wire carrying a current $I$ is $v_d$. If both the current and the radius of the wire are doubled, the new drift velocity will be: (NEET 2022)",
+          "image": "",
+          "options": [
+            "$\\frac{v_d}{2}$",
+            "$v_d$",
+            "$2v_d$",
+            "$\\frac{v_d}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Current $I = n e A v_d = n e (\\pi r^2) v_d \\implies v_d = \\frac{I}{n e \\pi r^2} \\propto \\frac{I}{r^2}$.\n$$v_d' = \\frac{2I}{(2r)^2} v_d = \\frac{2}{4} v_d = \\frac{v_d}{2}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A battery of emf $E$ and internal resistance $r$ is connected across a variable external resistor $R$. The maximum power dissipated in the resistor $R$ is: (NEET 2016)",
+          "image": "",
+          "options": [
+            "$\\frac{E^2}{4r}$",
+            "$\\frac{E^2}{2r}$",
+            "$\\frac{E^2}{r}$",
+            "$\\frac{E^2}{8r}$"
+          ],
+          "correctOption": 0,
+          "solution": "By the Maximum Power Transfer Theorem, power delivered to the external load is maximum when $R = r$.\n$$P_{\\text{max}} = I^2 R = \\left(\\frac{E}{R + r}\\right)^2 R = \\left(\\frac{E}{2r}\\right)^2 r = \\frac{E^2}{4r}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The temperature coefficient of resistance of a wire is $0.00125^\\circ\\text{C}^{-1}$. At $300\\text{ K}$, its resistance is $1\\,\\Omega$. At what temperature will its resistance become $2\\,\\Omega$? (NEET 2019)",
+          "image": "",
+          "options": [
+            "$1127\\text{ K}$",
+            "$800\\text{ K}$",
+            "$827^\\circ\\text{C}$",
+            "$1100\\text{ K}$"
+          ],
+          "correctOption": 0,
+          "solution": "$T_0 = 300\\text{ K} = 27^\\circ\\text{C}$ where $R_0 = 1\\,\\Omega$.\n$$R_t = R_0[1 + \\alpha(t - 27)] \\implies 2 = 1[1 + 0.00125(t - 27)]$$\n$$0.00125(t - 27) = 1 \\implies t - 27 = \\frac{1}{0.00125} = 800 \\implies t = 827^\\circ\\text{C}$$\n$$T = 827 + 273 = 1100\\text{ K} \\text{ (or } 1127\\text{ K when referenced directly from } 0^\\circ\\text{C})$$\nReferenced from $0^\\circ\\text{C}$: $R_{27} = R_0(1 + 27\\alpha) = 1$, $R_t = R_0(1 + \\alpha t) = 2 \\implies \\frac{1 + \\alpha t}{1 + 27\\alpha} = 2 \\implies 1 + \\alpha t = 2 + 54\\alpha \\implies \\alpha t = 1 + 54(0.00125) = 1.0675 \\implies t = \\frac{1.0675}{0.00125} = 854^\\circ\\text{C} = 1127\\text{ K}$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two cells having the same emf $E$ but different internal resistances $r_1$ and $r_2$ are connected in series with an external resistance $R$. If the potential difference across the terminals of the first cell becomes zero, then $R$ is equal to: (NEET 2021)",
+          "image": "",
+          "options": [
+            "$r_1 - r_2$",
+            "$r_1 + r_2$",
+            "$\\frac{r_1 + r_2}{2}$",
+            "$\\frac{r_1 - r_2}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Circuit current $I = \\frac{2E}{R + r_1 + r_2}$.\nTerminal voltage of 1st cell $V_1 = E - I r_1 = 0 \\implies E = I r_1$.\n$$E = \\left(\\frac{2E}{R + r_1 + r_2}\\right)r_1 \\implies R + r_1 + r_2 = 2r_1 \\implies R = r_1 - r_2$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Kirchhoff's first law (Junction rule, $\\sum I = 0$) and second law (Loop rule, $\\sum \\Delta V = 0$) are based respectively on the conservation of: (NEET 2020)",
+          "image": "",
+          "options": [
+            "Charge and Energy",
+            "Energy and Charge",
+            "Energy and Momentum",
+            "Charge and Momentum"
+          ],
+          "correctOption": 0,
+          "solution": "Kirchhoff's Junction rule expresses conservation of electric charge, while the Loop rule expresses conservation of electrostatic energy in a closed circuit loop."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Mobility of free electrons is defined as the drift velocity per unit electric field ($\\mu = v_d / E$). Its SI unit is:",
+          "image": "",
+          "options": [
+            "$\\text{m}^2\\cdot\\text{V}^{-1}\\cdot\\text{s}^{-1}$",
+            "$\\text{m}\\cdot\\text{V}^{-1}\\cdot\\text{s}^{-1}$",
+            "$\\text{m}^2\\cdot\\text{V}\\cdot\\text{s}^{-1}$",
+            "$\\text{m}\\cdot\\text{V}\\cdot\\text{s}^{-2}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\text{Unit of } \\mu = \\frac{\\text{m/s}}{\\text{V/m}} = \\frac{\\text{m}}{\\text{s}} \\times \\frac{\\text{m}}{\\text{V}} = \\text{m}^2\\cdot\\text{V}^{-1}\\cdot\\text{s}^{-1}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A carbon resistor is marked with rings of colors in sequence: Brown, Black, Red, and Gold. The resistance value is:",
+          "image": "",
+          "options": [
+            "$(1.0 \\pm 0.05)\\,\\text{k}\\Omega$",
+            "$(10 \\pm 0.5)\\,\\Omega$",
+            "$(100 \\pm 5)\\,\\Omega$",
+            "$(1.0 \\pm 0.1)\\,\\text{k}\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "Color code values: Brown $= 1$, Black $= 0$, Red $= 10^2$, Gold $= \\pm 5\\%$.\n$$R = 10 \\times 10^2\\,\\Omega \\pm 5\\% = 1000\\,\\Omega \\pm 5\\% = (1.0 \\pm 0.05)\\,\\text{k}\\Omega$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a balanced Wheatstone bridge, the resistances in the four arms are $P = 10\\,\\Omega, Q = 20\\,\\Omega, R = 30\\,\\Omega,$ and $S = 60\\,\\Omega$. If the positions of the galvanometer and cell are interchanged, the balance condition:",
+          "image": "",
+          "options": [
+            "Remains unchanged and no current flows through the galvanometer",
+            "Changes and bridge becomes unbalanced",
+            "Requires changing resistance $S$",
+            "Doubles the current through all resistors"
+          ],
+          "correctOption": 0,
+          "solution": "By the conjugate arms property of a Wheatstone bridge, interchanging the battery and galvanometer branches leaves the bridge in exact balance."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two electric bulbs rated $220\\text{ V}, 40\\text{ W}$ and $220\\text{ V}, 60\\text{ W}$ are connected in series across a $220\\text{ V}$ mains supply. Which bulb will glow brighter?",
+          "image": "",
+          "options": [
+            "$40\\text{ W}$ bulb",
+            "$60\\text{ W}$ bulb",
+            "Both will glow with equal brightness",
+            "Neither will glow"
+          ],
+          "correctOption": 0,
+          "solution": "Resistance $R = \\frac{V^2}{P} \\implies R_{40} > R_{60}$.\nIn series, current $I$ is identical through both bulbs.\nPower dissipated $P = I^2 R \\propto R$. Since $R_{40} > R_{60}$, the $40\\text{ W}$ bulb dissipates more power and glows brighter."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Three identical cells each of emf $E$ and internal resistance $r$ are connected in parallel. The effective emf and internal resistance of the combination are:",
+          "image": "",
+          "options": [
+            "$E, \\frac{r}{3}$",
+            "$3E, 3r$",
+            "$E, 3r$",
+            "$3E, \\frac{r}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "For $n$ identical cells connected in parallel, equivalent emf remains $E_{\\text{eq}} = E$, and equivalent internal resistance is $r_{\\text{eq}} = \\frac{r}{n} = \\frac{r}{3}$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a current of $2\\text{ A}$ flows through a cell for $10\\text{ s}$, its terminal voltage is $4\\text{ V}$. If the emf of the cell is $6\\text{ V}$, the internal resistance of the cell is:",
+          "image": "",
+          "options": [
+            "$1.0\\,\\Omega$",
+            "$0.5\\,\\Omega$",
+            "$2.0\\,\\Omega$",
+            "$1.5\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "During discharging: $V = E - I r$.\n$$4 = 6 - (2)r \\implies 2r = 2 \\implies r = 1.0\\,\\Omega$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "As temperature increases, the electrical resistivity of a metallic conductor and a semiconductor respectively:",
+          "image": "",
+          "options": [
+            "Increases, decreases",
+            "Decreases, increases",
+            "Increases, increases",
+            "Decreases, decreases"
+          ],
+          "correctOption": 0,
+          "solution": "In metals, rising temperature increases thermal lattice vibrations, decreasing relaxation time $\\tau$ and increasing resistivity ($\\rho \\propto 1/\\tau$). In semiconductors, charge carrier density $n$ increases exponentially with temperature, decreasing resistivity ($\\rho \\propto 1/n$)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A wire of resistance $12\\,\\Omega$ is bent in the form of a complete circle. The effective resistance between two diametrically opposite points is:",
+          "image": "",
+          "options": [
+            "$3\\,\\Omega$",
+            "$6\\,\\Omega$",
+            "$12\\,\\Omega$",
+            "$1.5\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "The circular ring splits into two equal semicircular branches, each having resistance $R_1 = R_2 = \\frac{12}{2} = 6\\,\\Omega$ connected in parallel.\n$$R_{\\text{eq}} = \\frac{6 \\times 6}{6 + 6} = 3\\,\\Omega$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $n, e, A,$ and $v_d$ represent number density of free electrons, electronic charge, cross-sectional area, and drift velocity respectively, the current density $J$ is given by:",
+          "image": "",
+          "options": [
+            "$n e v_d$",
+            "$n e A v_d$",
+            "$\\frac{n e v_d}{A}$",
+            "$\\frac{n e}{v_d}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$J = \\frac{I}{A} = \\frac{n e A v_d}{A} = n e v_d$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a metre bridge experiment, null point is obtained at $20\\text{ cm}$ from one end when a resistance of $10\\,\\Omega$ is in the left gap and an unknown resistance $R$ is in the right gap. The value of $R$ is:",
+          "image": "",
+          "options": [
+            "$40\\,\\Omega$",
+            "$20\\,\\Omega$",
+            "$10\\,\\Omega$",
+            "$80\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\frac{10}{R} = \\frac{20}{100 - 20} = \\frac{20}{80} = \\frac{1}{4} \\implies R = 40\\,\\Omega$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A current of $5\\text{ A}$ passes through a copper wire of cross-sectional area $1\\text{ mm}^2$. If the number density of free electrons is $8.5 \\times 10^{28}\\text{ m}^{-3}$, the drift speed of electrons is approximately:",
+          "image": "",
+          "options": [
+            "$0.37\\text{ mm/s}$",
+            "$3.7\\text{ mm/s}$",
+            "$0.037\\text{ mm/s}$",
+            "$37\\text{ mm/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$v_d = \\frac{I}{n e A} = \\frac{5}{(8.5 \\times 10^{28}) \\times (1.6 \\times 10^{-19}) \\times (10^{-6})} = \\frac{5}{1.36 \\times 10^4} \\approx 3.68 \\times 10^{-4}\\text{ m/s} = 0.37\\text{ mm/s}$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electric heater is designed to operate on $220\\text{ V}$ with a power of $1100\\text{ W}$. The current drawn and the resistance of the heating coil are:",
+          "image": "",
+          "options": [
+            "$5\\text{ A}$ and $44\\,\\Omega$",
+            "$4\\text{ A}$ and $55\\,\\Omega$",
+            "$5\\text{ A}$ and $22\\,\\Omega$",
+            "$10\\text{ A}$ and $44\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "$$I = \\frac{P}{V} = \\frac{1100}{220} = 5\\text{ A}$$\n$$R = \\frac{V}{I} = \\frac{220}{5} = 44\\,\\Omega$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Twelve equal resistors, each of resistance $R$, are connected to form a skeleton cube. The equivalent resistance between two diagonally opposite corners of the cube is:",
+          "image": "",
+          "options": [
+            "$\\frac{5}{6}R$",
+            "$\\frac{6}{5}R$",
+            "$\\frac{3}{4}R$",
+            "$\\frac{7}{12}R$"
+          ],
+          "correctOption": 0,
+          "solution": "By symmetry and current distribution: $V = I\\left(\\frac{R}{3}\\right) + I\\left(\\frac{R}{6}\\right) + I\\left(\\frac{R}{3}\\right) = I R\\left(\\frac{2}{6} + \\frac{1}{6} + \\frac{2}{6}\\right) = \\frac{5}{6} I R \\implies R_{\\text{eq}} = \\frac{5}{6}R$."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The equivalent resistance between points $A$ and $B$ for a balanced Wheatstone bridge having $5\\,\\Omega$ resistors in all five branches (four arms and the central galvanometer branch) is:",
+          "image": "",
+          "options": [
+            "$5\\,\\Omega$",
+            "$10\\,\\Omega$",
+            "$2.5\\,\\Omega$",
+            "$20\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "Because the bridge is balanced ($5/5 = 5/5$), no current flows through the central branch. The circuit simplifies to two parallel branches of $(5 + 5) = 10\\,\\Omega$ each:\n$$R_{\\text{eq}} = \\frac{10 \\times 10}{10 + 10} = 5\\,\\Omega$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Under what condition is the terminal potential difference across a cell greater than its electromotive force ($V > E$)?",
+          "image": "",
+          "options": [
+            "When the cell is being charged by an external source",
+            "When the cell is discharging through an external resistance",
+            "When the cell is in an open circuit",
+            "When internal resistance is zero"
+          ],
+          "correctOption": 0,
+          "solution": "When a cell is charged, current is driven into its positive terminal from an external charging source: $V = E + I r > E$."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Relaxation time $\\tau$ of free electrons in a metallic conductor is related to electrical conductivity $\\sigma$ by:",
+          "image": "",
+          "options": [
+            "$\\sigma = \\frac{n e^2 \\tau}{m}$",
+            "$\\sigma = \\frac{n e \\tau}{m}$",
+            "$\\sigma = \\frac{m}{n e^2 \\tau}$",
+            "$\\sigma = \\frac{n e^2 m}{\\tau}$"
+          ],
+          "correctOption": 0,
+          "solution": "Drift velocity $v_d = \\frac{e E \\tau}{m}$.\nCurrent density $J = n e v_d = \\left(\\frac{n e^2 \\tau}{m}\\right)E = \\sigma E \\implies \\sigma = \\frac{n e^2 \\tau}{m}$."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two electric bulbs rated $25\\text{ W}, 220\\text{ V}$ and $100\\text{ W}, 220\\text{ V}$ are connected in parallel to a $220\\text{ V}$ supply line. The total power consumed by the combination is:",
+          "image": "",
+          "options": [
+            "$125\\text{ W}$",
+            "$20\\text{ W}$",
+            "$75\\text{ W}$",
+            "$50\\text{ W}$"
+          ],
+          "correctOption": 0,
+          "solution": "In parallel across the rated voltage, powers add directly:\n$$P_{\\text{total}} = P_1 + P_2 = 25\\text{ W} + 100\\text{ W} = 125\\text{ W}$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A cell of emf $E$ and internal resistance $r$ is connected to an external resistance $R$. The graph of terminal potential difference $V$ versus current $I$ drawn from the cell is:",
+          "image": "",
+          "options": [
+            "A straight line with negative slope $-r$ and intercept $E$",
+            "A straight line with positive slope $+r$",
+            "A parabola passing through the origin",
+            "A horizontal straight line parallel to the current axis"
+          ],
+          "correctOption": 0,
+          "solution": "The relation is $V = E - I r = (-r)I + E$. This represents a linear equation $y = mx + c$ with negative slope $m = -r$ and vertical intercept $c = E$."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Constantan and Manganin alloys are widely used to make standard resistance coils because they possess:",
+          "image": "",
+          "options": [
+            "High resistivity and nearly negligible temperature coefficient of resistance",
+            "Low resistivity and high temperature coefficient",
+            "Zero resistivity at room temperature",
+            "Low melting point and high ductility"
+          ],
+          "correctOption": 0,
+          "solution": "Standard resistors require values that remain stable despite operating temperature fluctuations. Manganin and constantan provide high electrical resistivity coupled with an exceptionally small temperature coefficient of resistance $\\alpha$."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A piece of copper and a piece of germanium are cooled from room temperature ($300\\text{ K}$) to liquid nitrogen temperature ($77\\text{ K}$). Their resistances:",
+          "image": "",
+          "options": [
+            "Decreases for copper and increases for germanium",
+            "Increases for copper and decreases for germanium",
+            "Decreases for both",
+            "Increases for both"
+          ],
+          "correctOption": 0,
+          "solution": "Copper is a metallic conductor (positive $\\alpha$), so cooling reduces lattice vibrations and decreases its resistance. Germanium is a semiconductor (negative $\\alpha$), so cooling decreases free carrier concentration and increases its resistance."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A wire of resistance $R$ is cut into 5 equal parts and these parts are connected in parallel. The equivalent resistance of the parallel combination is $R'$. The ratio $R / R'$ is:",
+          "image": "",
+          "options": [
+            "$25$",
+            "$5$",
+            "$\\frac{1}{25}$",
+            "$\\frac{1}{5}$"
+          ],
+          "correctOption": 0,
+          "solution": "Resistance of each part is $r = R/5$.\nWhen 5 such parts are placed in parallel: $R' = \\frac{r}{5} = \\frac{R/5}{5} = \\frac{R}{25}$.\n$$\\frac{R}{R'} = 25$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The V-I characteristic curve of a non-ohmic device (such as a semiconductor p-n junction diode) is:",
+          "image": "",
+          "options": [
+            "Non-linear and does not obey Ohm's law",
+            "A straight line passing through the origin",
+            "A straight line parallel to voltage axis",
+            "Independent of the sign of applied voltage"
+          ],
+          "correctOption": 0,
+          "solution": "Non-ohmic conductors exhibit non-linear $V\\text{-}I$ characteristics where the ratio $V/I$ is not constant and dynamic resistance varies with current and voltage polarity."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "$N$ identical cells each of emf $E$ and internal resistance $r$ are connected in series with an external resistance $R$. If the polarity of one cell is reversed by mistake, the effective emf and internal resistance of the combination are:",
+          "image": "",
+          "options": [
+            "$(N - 2)E$ and $N r$",
+            "$(N - 1)E$ and $N r$",
+            "$(N - 2)E$ and $(N - 2)r$",
+            "$N E$ and $N r$"
+          ],
+          "correctOption": 0,
+          "solution": "Reversing one cell opposes another cell, reducing total active aiding cells to $(N - 2)$, so $E_{\\text{net}} = (N - 2)E$. However, internal resistance is non-directional and all cells remain in series: $r_{\\text{net}} = N r$."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The resistance of a $100\\text{ W}, 200\\text{ V}$ lamp is:",
+          "image": "",
+          "options": [
+            "$400\\,\\Omega$",
+            "$200\\,\\Omega$",
+            "$100\\,\\Omega$",
+            "$800\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "$$R = \\frac{V^2}{P} = \\frac{(200)^2}{100} = \\frac{40000}{100} = 400\\,\\Omega$$"
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A fuse wire should have:",
+          "image": "",
+          "options": [
+            "High resistivity and low melting point",
+            "Low resistivity and high melting point",
+            "High resistivity and high melting point",
+            "Low resistivity and low melting point"
+          ],
+          "correctOption": 0,
+          "solution": "A fuse wire requires high resistivity to generate sufficient Joule heating ($H = I^2 R t$) during an overcurrent surge and a low melting point so it melts rapidly to break the circuit."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a metre bridge with resistances $P$ and $Q$ in the gaps, balance point is at $l_1 = 40\\text{ cm}$. When a resistance of $10\\,\\Omega$ is connected in series with $P$, the balance point shifts to $60\\text{ cm}$. The original value of $P$ is:",
+          "image": "",
+          "options": [
+            "$8\\,\\Omega$",
+            "$10\\,\\Omega$",
+            "$12\\,\\Omega$",
+            "$16\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "Case 1: $\\frac{P}{Q} = \\frac{40}{60} = \\frac{2}{3} \\implies Q = 1.5P$.\nCase 2: $\\frac{P + 10}{Q} = \\frac{60}{40} = \\frac{3}{2}$.\n$$\\frac{P + 10}{1.5P} = \\frac{3}{2} \\implies 2(P + 10) = 4.5P \\implies 2P + 20 = 4.5P \\implies 2.5P = 20 \\implies P = 8\\,\\Omega$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Three unequal resistors $R_1, R_2,$ and $R_3$ are connected in parallel across a battery. Which physical quantity is the SAME for all three resistors?",
+          "image": "",
+          "options": [
+            "Potential difference",
+            "Electric current",
+            "Power dissipated",
+            "Rate of heat production"
+          ],
+          "correctOption": 0,
+          "solution": "Components connected in parallel share common junction nodes at both terminals, maintaining the exact same potential difference across each component."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A total charge $Q$ flows through a resistor according to $q(t) = 2t^2 + 3t + 5\\text{ (in C)}$. The electric current at $t = 2\\text{ s}$ is:",
+          "image": "",
+          "options": [
+            "$11\\text{ A}$",
+            "$7\\text{ A}$",
+            "$19\\text{ A}$",
+            "$15\\text{ A}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$I(t) = \\frac{dq}{dt} = 4t + 3$$\nAt $t = 2\\text{ s}$: $I(2) = 4(2) + 3 = 11\\text{ A}$."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two copper wires of lengths $l$ and $2l$ have radii $r$ and $2r$ respectively. The ratio of their specific resistances (resistivities) is:",
+          "image": "",
+          "options": [
+            "$1 : 1$",
+            "$1 : 2$",
+            "$2 : 1$",
+            "$1 : 4$"
+          ],
+          "correctOption": 0,
+          "solution": "Specific resistance (resistivity $\\rho$) is an intensive property of the material and does not depend on the dimensions (length or radius) of the conductor."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A uniform wire of resistance $20\\,\\Omega$ is cut into two equal halves. These two halves are then joined in parallel. The equivalent resistance is:",
+          "image": "",
+          "options": [
+            "$5\\,\\Omega$",
+            "$10\\,\\Omega$",
+            "$2.5\\,\\Omega$",
+            "$20\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "Each half has resistance $R_1 = R_2 = 10\\,\\Omega$.\n$$R_{\\text{eq}} = \\frac{10 \\times 10}{10 + 10} = 5\\,\\Omega$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An ideal voltmeter and an ideal ammeter have internal resistances equal to:",
+          "image": "",
+          "options": [
+            "Infinite and Zero respectively",
+            "Zero and Infinite respectively",
+            "Zero and Zero respectively",
+            "Infinite and Infinite respectively"
+          ],
+          "correctOption": 0,
+          "solution": "An ideal voltmeter draws zero current from the branch it measures ($R_v = \\infty$). An ideal ammeter introduces zero series resistance drop ($R_a = 0$)."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A battery of emf $10\\text{ V}$ and internal resistance $3\\,\\Omega$ is connected to a resistor. If the current in the circuit is $0.5\\text{ A}$, the terminal voltage of the battery is:",
+          "image": "",
+          "options": [
+            "$8.5\\text{ V}$",
+            "$1.5\\text{ V}$",
+            "$10.0\\text{ V}$",
+            "$7.0\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$V = E - I r = 10 - (0.5 \\times 3) = 10 - 1.5 = 8.5\\text{ V}$$"
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A current of $1.6\\text{ mA}$ flows through a conductor. The number of electrons crossing any cross-section per second is:",
+          "image": "",
+          "options": [
+            "$1.0 \\times 10^{16}$",
+            "$1.0 \\times 10^{19}$",
+            "$6.25 \\times 10^{18}$",
+            "$1.6 \\times 10^{16}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$I = n e \\implies n = \\frac{I}{e} = \\frac{1.6 \\times 10^{-3}\\text{ A}}{1.6 \\times 10^{-19}\\text{ C}} = 1.0 \\times 10^{16}\\text{ electrons/s}$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a mixed grouping of $m$ rows, each containing $n$ identical cells of emf $E$ and internal resistance $r$, the current through external resistance $R$ is maximum when:",
+          "image": "",
+          "options": [
+            "$R = \\frac{n r}{m}$",
+            "$R = \\frac{m r}{n}$",
+            "$R = n m r$",
+            "$R = \\frac{r}{n m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total internal resistance of the bank is $r_{\\text{eq}} = \\frac{n r}{m}$. By the maximum power transfer condition, current delivered to external resistance $R$ is maximum when $R = r_{\\text{eq}} = \\frac{n r}{m}$."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Ohm's law is valid when the physical state of the conductor (such as temperature, strain) remains constant because:",
+          "image": "",
+          "options": [
+            "Ratio of electric field to current density remains constant",
+            "Drift velocity becomes infinite",
+            "Number density of electrons changes linearly",
+            "Resistance varies exponentially"
+          ],
+          "correctOption": 0,
+          "solution": "Ohm's law in microscopic vector form is $\\vec{J} = \\sigma \\vec{E}$. When temperature and strain are constant, conductivity $\\sigma = \\frac{n e^2 \\tau}{m}$ is constant, making current directly proportional to potential difference."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A wire of resistance $4\\,\\Omega$ is stretched uniformly to twice its original length. The percentage increase in its resistance is:",
+          "image": "",
+          "options": [
+            "$300\\%$",
+            "$100\\%$",
+            "$400\\%$",
+            "$200\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "$$R' = n^2 R = (2)^2 (4\\,\\Omega) = 16\\,\\Omega$$\n$$\\%\\text{Increase} = \\frac{R' - R}{R} \\times 100\\% = \\frac{16 - 4}{4} \\times 100\\% = \\frac{12}{4} \\times 100\\% = 300\\%$$"
+        }
+      ]
+    }
+  ]
+}
