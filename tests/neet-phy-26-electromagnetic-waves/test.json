@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-26-electromagnetic-waves",
+  "title": "Electromagnetic Waves",
+  "syllabus": "Electromagnetic waves and their characteristics, Transverse nature of electromagnetic waves; Electromagnetic spectrum (radio waves, microwaves, infrared, visible, ultraviolet, X-rays, gamma rays) including elementary facts about their uses; Displacement current.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A parallel plate capacitor of capacitance $20\\text{ \\mu F}$ is being charged by a voltage source whose potential is changing at the rate of $3\\text{ V/s}$. The conduction current through the connecting wires and the displacement current through the plates of the capacitor are, respectively: (NEET 2019)",
+          "image": "",
+          "options": [
+            "$60\\text{ \\mu A}, 60\\text{ \\mu A}$",
+            "$60\\text{ \\mu A}, 0\\text{ \\mu A}$",
+            "$0\\text{ \\mu A}, 60\\text{ \\mu A}$",
+            "$120\\text{ \\mu A}, 120\\text{ \\mu A}$"
+          ],
+          "correctOption": 0,
+          "solution": "Displacement current is $I_d = \\varepsilon_0 \\frac{d\\Phi_E}{dt} = C \\frac{dV}{dt}$.\n$$I_d = (20 \\times 10^{-6}\\text{ F}) \\times 3\\text{ V/s} = 60 \\times 10^{-6}\\text{ A} = 60\\text{ \\mu A}$$\nBy generalized Ampere-Maxwell law, conduction current equals displacement current: $I_c = I_d = 60\\text{ \\mu A}$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electromagnetic wave of frequency $\\nu = 3.0\\text{ MHz}$ passes from vacuum into a dielectric medium with relative permittivity $\\varepsilon_r = 4.0$ and relative permeability $\\mu_r = 1.0$. Then: (NEET 2021)",
+          "image": "",
+          "options": [
+            "Wavelength is halved and frequency remains unchanged",
+            "Wavelength is doubled and frequency becomes half",
+            "Wavelength is halved and frequency becomes half",
+            "Wavelength and frequency both remain unchanged"
+          ],
+          "correctOption": 0,
+          "solution": "Refractive index $n = \\sqrt{\\mu_r \\varepsilon_r} = \\sqrt{1.0 \\times 4.0} = 2.0$.\nWave speed in the medium is $v = \\frac{c}{n} = \\frac{c}{2}$.\nFrequency $\\nu$ is determined solely by the source and remains unchanged.\nWavelength in medium is $\\lambda' = \\frac{v}{\\nu} = \\frac{c/2}{\\nu} = \\frac{\\lambda}{2}$ (halved)."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following electromagnetic waves has the shortest wavelength? (NEET 2022)",
+          "image": "",
+          "options": [
+            "Gamma rays",
+            "X-rays",
+            "Ultraviolet rays",
+            "Microwaves"
+          ],
+          "correctOption": 0,
+          "solution": "In the electromagnetic spectrum ordered by decreasing wavelength: Radio waves $>$ Microwaves $>$ Infrared $>$ Visible $>$ Ultraviolet $>$ X-rays $>$ Gamma rays. Thus, gamma rays have the shortest wavelength (highest frequency)."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of amplitude of magnetic field to the amplitude of electric field for an electromagnetic wave propagating in vacuum is equal to: (NEET 2020)",
+          "image": "",
+          "options": [
+            "Reciprocal of speed of light in vacuum",
+            "Speed of light in vacuum",
+            "Ratio of magnetic permeability to electric permittivity",
+            "Unity"
+          ],
+          "correctOption": 0,
+          "solution": "For an electromagnetic wave in vacuum, $E_0 = c B_0 \\implies \\frac{B_0}{E_0} = \\frac{1}{c}$, which is the reciprocal of the speed of light in vacuum."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The magnetic field in a plane electromagnetic wave is given by $B_y = 2 \\times 10^{-7}\\sin(\\pi \\times 10^3 x + 3\\pi \\times 10^{11} t)\\text{ T}$. The peak value of the electric field associated with this wave is: (NEET 2016)",
+          "image": "",
+          "options": [
+            "$60\\text{ V/m}$",
+            "$30\\text{ V/m}$",
+            "$3 \\times 10^8\\text{ V/m}$",
+            "$2 \\times 10^{-7}\\text{ V/m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Wave speed $c = \\frac{\\omega}{k} = \\frac{3\\pi \\times 10^{11}}{\\pi \\times 10^3} = 3 \\times 10^8\\text{ m/s}$.\nPeak electric field is:\n$$E_0 = c B_0 = (3 \\times 10^8\\text{ m/s}) \\times (2 \\times 10^{-7}\\text{ T}) = 60\\text{ V/m}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimensions of $\\left[\\frac{1}{\\sqrt{\\mu_0 \\varepsilon_0}}\\right]$ are: (NEET 2011)",
+          "image": "",
+          "options": [
+            "$[\\text{L}\\text{T}^{-1}]$",
+            "$[\\text{L}^{-1}\\text{T}]$",
+            "$[\\text{L}^2\\text{T}^{-2}]$",
+            "$[\\text{M}^0\\text{L}^0\\text{T}^0]$"
+          ],
+          "correctOption": 0,
+          "solution": "By Maxwell's relation, the speed of light in vacuum is $c = \\frac{1}{\\sqrt{\\mu_0 \\varepsilon_0}}$. Therefore, its dimensions are those of velocity: $[\\text{L}\\text{T}^{-1}]$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a plane electromagnetic wave, the electric field oscillates sinusoidally at a frequency of $2.0 \\times 10^{10}\\text{ Hz}$ and amplitude $48\\text{ V/m}$. The amplitude of the oscillating magnetic field will be:",
+          "image": "",
+          "options": [
+            "$1.6 \\times 10^{-7}\\text{ T}$",
+            "$1.6 \\times 10^{-8}\\text{ T}$",
+            "$1.44 \\times 10^{-7}\\text{ T}$",
+            "$1.44 \\times 10^{-8}\\text{ T}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$B_0 = \\frac{E_0}{c} = \\frac{48\\text{ V/m}}{3 \\times 10^8\\text{ m/s}} = 1.6 \\times 10^{-7}\\text{ T}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The direction of propagation of an electromagnetic wave is given by the vector:",
+          "image": "",
+          "options": [
+            "$\\vec{E} \\times \\vec{B}$",
+            "$\\vec{B} \\times \\vec{E}$",
+            "$\\vec{E} \\cdot \\vec{B}$",
+            "Along $\\vec{E}$"
+          ],
+          "correctOption": 0,
+          "solution": "The Poynting vector $\\vec{S} = \\frac{1}{\\mu_0}(\\vec{E} \\times \\vec{B})$ points in the direction of energy transport and wave propagation. Thus, propagation is along $\\vec{E} \\times \\vec{B}$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The displacement current $I_d$ was introduced by Maxwell to resolve the inconsistency in:",
+          "image": "",
+          "options": [
+            "Ampere's Circuital Law for non-steady currents",
+            "Faraday's Law of induction",
+            "Coulomb's Law of electrostatics",
+            "Gauss's Law of magnetism"
+          ],
+          "correctOption": 0,
+          "solution": "Maxwell modified Ampere's circuital law by adding the displacement current term $I_d = \\varepsilon_0 \\frac{d\\Phi_E}{dt}$ to ensure continuity of current across the plates of a charging capacitor."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following electromagnetic radiations is used in radar systems for aircraft navigation?",
+          "image": "",
+          "options": [
+            "Microwaves",
+            "Ultraviolet rays",
+            "Infrared rays",
+            "X-rays"
+          ],
+          "correctOption": 0,
+          "solution": "Microwaves (wavelength range $1\\text{ mm}$ to $0.1\\text{ m}$) are short-wavelength radio waves used in radar systems for aircraft navigation and speed guns."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The total energy density $u$ of an electromagnetic wave in vacuum with peak electric field $E_0$ and peak magnetic field $B_0$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}\\varepsilon_0 E_0^2 = \\frac{B_0^2}{2\\mu_0}$",
+            "$\\varepsilon_0 E_0^2$",
+            "$\\frac{1}{4}\\varepsilon_0 E_0^2$",
+            "$\\frac{B_0^2}{\\mu_0}$"
+          ],
+          "correctOption": 0,
+          "solution": "Average electric energy density is $u_E = \\frac{1}{4}\\varepsilon_0 E_0^2$ and average magnetic energy density is $u_B = \\frac{B_0^2}{4\\mu_0} = u_E$. Total average energy density is $u = u_E + u_B = \\frac{1}{2}\\varepsilon_0 E_0^2 = \\frac{B_0^2}{2\\mu_0}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Greenhouse effect is mainly caused by the absorption and trapping of which part of the electromagnetic spectrum by atmospheric gases?",
+          "image": "",
+          "options": [
+            "Infrared waves",
+            "Ultraviolet waves",
+            "X-rays",
+            "Radio waves"
+          ],
+          "correctOption": 0,
+          "solution": "Earth radiates energy in the infrared region of the spectrum. Greenhouse gases ($\\,\\text{CO}_2, \\text{CH}_4, \\text{H}_2\\text{O}$ vapor) absorb these long-wavelength infrared (heat) radiations and re-emit them back, warming the planet."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electromagnetic wave propagating along the $+z$-axis has its electric field vector oscillating along the $+x$-axis. The magnetic field vector $\\vec{B}$ oscillates along the:",
+          "image": "",
+          "options": [
+            "$+y$-axis",
+            "$-y$-axis",
+            "$+x$-axis",
+            "$+z$-axis"
+          ],
+          "correctOption": 0,
+          "solution": "Propagation direction is $\\hat{k}$. Electric field is along $\\hat{i}$.\nSince $\\hat{E} \\times \\hat{B} = \\hat{k} \\implies \\hat{i} \\times \\hat{B} = \\hat{k}$, we must have $\\hat{B} = \\hat{j}$ ($+y$-axis)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following electromagnetic radiations is produced by transitions of inner-shell electrons in heavy metal target atoms bombarded by high-energy electrons?",
+          "image": "",
+          "options": [
+            "X-rays",
+            "Gamma rays",
+            "Ultraviolet rays",
+            "Infrared rays"
+          ],
+          "correctOption": 0,
+          "solution": "Characteristic X-rays are generated when high-speed bombarding electrons knock out inner-shell electrons of a heavy metal target (such as tungsten), followed by electronic transitions from higher to lower energy shells."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A plane electromagnetic wave of intensity $I = 600\\text{ W/m}^2$ falls perpendicularly on a perfectly reflecting surface of area $A = 0.5\\text{ m}^2$. The radiation force exerted on the surface is:",
+          "image": "",
+          "options": [
+            "$2.0 \\times 10^{-6}\\text{ N}$",
+            "$1.0 \\times 10^{-6}\\text{ N}$",
+            "$4.0 \\times 10^{-6}\\text{ N}$",
+            "$0.5 \\times 10^{-6}\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a perfectly reflecting surface, radiation pressure is $P_{\\text{rad}} = \\frac{2I}{c}$.\n$$F = P_{\\text{rad}} \\times A = \\frac{2 I A}{c} = \\frac{2 \\times 600 \\times 0.5}{3 \\times 10^8} = \\frac{600}{3 \\times 10^8} = 2.0 \\times 10^{-6}\\text{ N}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ozone layer in the Earth's upper stratosphere absorbs harmful solar radiation belonging to:",
+          "image": "",
+          "options": [
+            "Ultraviolet region",
+            "Infrared region",
+            "X-ray region",
+            "Microwave region"
+          ],
+          "correctOption": 0,
+          "solution": "The stratospheric ozone layer absorbs hazardous biological ultraviolet radiation (UV-B and UV-C) from the Sun, shielding life on Earth."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Electromagnetic waves are produced by:",
+          "image": "",
+          "options": [
+            "An accelerating or oscillating electric charge",
+            "A stationary electric charge",
+            "A charge moving with uniform constant velocity",
+            "An uncharged neutral particle moving with constant acceleration"
+          ],
+          "correctOption": 0,
+          "solution": "A stationary charge produces an electrostatic field only; a charge in uniform motion produces steady electric and magnetic fields without radiation. An accelerated or oscillating charge radiates electromagnetic waves continuously."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an electromagnetic wave in vacuum, the rms value of the electric field is $E_{\\text{rms}} = 6\\text{ V/m}$. The average energy density of the electromagnetic wave is: $(\\varepsilon_0 = 8.85 \\times 10^{-12}\\text{ C}^2/\\text{N}\\cdot\\text{m}^2)$",
+          "image": "",
+          "options": [
+            "$3.19 \\times 10^{-10}\\text{ J/m}^3$",
+            "$1.59 \\times 10^{-10}\\text{ J/m}^3$",
+            "$6.38 \\times 10^{-10}\\text{ J/m}^3$",
+            "$0.80 \\times 10^{-10}\\text{ J/m}^3$"
+          ],
+          "correctOption": 0,
+          "solution": "Average energy density in terms of $E_{\\text{rms}}$:\n$$u = \\varepsilon_0 E_{\\text{rms}}^2 = (8.85 \\times 10^{-12}\\text{ F/m}) \\times (6\\text{ V/m})^2 = 8.85 \\times 10^{-12} \\times 36 \\approx 3.19 \\times 10^{-10}\\text{ J/m}^3$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following electromagnetic waves is used in water purifiers to kill bacteria and germs?",
+          "image": "",
+          "options": [
+            "Ultraviolet rays",
+            "Infrared rays",
+            "Microwaves",
+            "Gamma rays"
+          ],
+          "correctOption": 0,
+          "solution": "Ultraviolet (UV) radiation has strong germicidal properties that destroy the molecular DNA bonds of bacteria and pathogens, making it standard for water purification systems."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A parallel plate capacitor consists of two circular plates of radius $R = 0.1\\text{ m}$. If the electric field between the plates changes at a rate of $\\frac{dE}{dt} = 10^{10}\\text{ V/m}\\cdot\\text{s}$, the displacement current between the plates is: $(\\varepsilon_0 = 8.85 \\times 10^{-12}\\text{ F/m})$",
+          "image": "",
+          "options": [
+            "$2.78\\text{ mA}$",
+            "$5.56\\text{ mA}$",
+            "$1.39\\text{ mA}$",
+            "$0.88\\text{ mA}$"
+          ],
+          "correctOption": 0,
+          "solution": "Area of plate $A = \\pi R^2 = \\pi (0.1)^2 = 0.01\\pi\\text{ m}^2$.\n$$I_d = \\varepsilon_0 \\frac{d\\Phi_E}{dt} = \\varepsilon_0 A \\frac{dE}{dt} = (8.85 \\times 10^{-12}) \\times (0.01\\pi) \\times 10^{10} = 0.0885\\pi \\approx 2.78 \\times 10^{-3}\\text{ A} = 2.78\\text{ mA}$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The phase difference between the oscillating electric field $\\vec{E}$ and oscillating magnetic field $\\vec{B}$ in an electromagnetic wave in vacuum is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$\\frac{\\pi}{2}\\text{ rad}$",
+            "$\\pi\\text{ rad}$",
+            "$\\frac{\\pi}{4}\\text{ rad}$"
+          ],
+          "correctOption": 0,
+          "solution": "In an electromagnetic wave in free space, the electric and magnetic fields reach their maximum, minimum, and zero values at the exact same point in space and instant in time, so they are in phase (phase difference is zero)."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which electromagnetic wave is emitted during the radioactive decay of unstable atomic nuclei?",
+          "image": "",
+          "options": [
+            "Gamma rays",
+            "X-rays",
+            "Ultraviolet rays",
+            "Microwaves"
+          ],
+          "correctOption": 0,
+          "solution": "Gamma rays are high-energy nuclear emissions resulting from de-excitation transitions of radioactive atomic nuclei."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The intensity $I$ of a plane electromagnetic wave with peak electric field $E_0$ propagating in vacuum is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}\\varepsilon_0 c E_0^2$",
+            "$\\varepsilon_0 c E_0^2$",
+            "$\\frac{1}{2}\\frac{\\varepsilon_0 E_0^2}{c}$",
+            "$\\frac{c E_0^2}{2\\mu_0}$"
+          ],
+          "correctOption": 0,
+          "solution": "Intensity is the average energy transmitted per unit area per unit time: $I = u_{\\text{avg}} c = \\left(\\frac{1}{2}\\varepsilon_0 E_0^2\\right) c = \\frac{1}{2}\\varepsilon_0 c E_0^2$."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "TV remote control devices use signals in which region of the electromagnetic spectrum?",
+          "image": "",
+          "options": [
+            "Infrared",
+            "Ultraviolet",
+            "Visible light",
+            "X-rays"
+          ],
+          "correctOption": 0,
+          "solution": "Infrared light-emitting diodes (LEDs) operating in the wavelength range of $\\sim 940\\text{ nm}$ are used in household remote controls."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A plane electromagnetic wave carries energy flux $S = 10\\text{ W/cm}^2$. If it falls on a completely absorbing surface of area $A = 20\\text{ cm}^2$ for $30\\text{ minutes}$, the total momentum delivered to the surface is:",
+          "image": "",
+          "options": [
+            "$1.2 \\times 10^{-3}\\text{ kg}\\cdot\\text{m/s}$",
+            "$2.4 \\times 10^{-3}\\text{ kg}\\cdot\\text{m/s}$",
+            "$0.6 \\times 10^{-3}\\text{ kg}\\cdot\\text{m/s}$",
+            "$3.6 \\times 10^{-3}\\text{ kg}\\cdot\\text{m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total energy delivered $U = S \\times A \\times t = (10\\text{ W/cm}^2) \\times (20\\text{ cm}^2) \\times (30 \\times 60\\text{ s}) = 200 \\times 1800 = 3.6 \\times 10^5\\text{ J}$.\nFor a perfectly absorbing surface:\n$$p = \\frac{U}{c} = \\frac{3.6 \\times 10^5\\text{ J}}{3 \\times 10^8\\text{ m/s}} = 1.2 \\times 10^{-3}\\text{ kg}\\cdot\\text{m/s}$$"
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following equations represents Maxwell's generalization of Ampere's law?",
+          "image": "",
+          "options": [
+            "$\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_c + \\mu_0 \\varepsilon_0 \\frac{d\\Phi_E}{dt}$",
+            "$\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_c$",
+            "$\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}$",
+            "$\\oint \\vec{B} \\cdot d\\vec{A} = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "The Ampere-Maxwell law incorporates displacement current $I_d = \\varepsilon_0 \\frac{d\\Phi_E}{dt}$:\n$$\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (I_c + I_d) = \\mu_0 I_c + \\mu_0 \\varepsilon_0 \\frac{d\\Phi_E}{dt}$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The correct sequence of electromagnetic waves in ORDER OF INCREASING FREQUENCY is:",
+          "image": "",
+          "options": [
+            "Radio waves $<$ Microwaves $<$ Infrared $<$ Visible $<$ Ultraviolet $<$ X-rays $<$ Gamma rays",
+            "Gamma rays $<$ X-rays $<$ Ultraviolet $<$ Visible $<$ Infrared $<$ Microwaves $<$ Radio waves",
+            "Radio waves $<$ Infrared $<$ Microwaves $<$ Visible $<$ Ultraviolet $<$ X-rays $<$ Gamma rays",
+            "Microwaves $<$ Radio waves $<$ Infrared $<$ Visible $<$ Ultraviolet $<$ Gamma rays $<$ X-rays"
+          ],
+          "correctOption": 0,
+          "solution": "Frequency increases in the order: Radio waves ($10^4\\text{ Hz}$) $<$ Microwaves ($10^9\\text{ Hz}$) $<$ Infrared ($10^{12}\\text{ Hz}$) $<$ Visible ($10^{14}\\text{ Hz}$) $<$ Ultraviolet ($10^{15}\\text{ Hz}$) $<$ X-rays ($10^{18}\\text{ Hz}$) $<$ Gamma rays ($10^{20}\\text{ Hz}$)."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electromagnetic wave has an electric field component given by $E_x = 0$, $E_y = 50\\sin(2\\pi \\times 10^8 t - k z)\\text{ V/m}$, $E_z = 0$. The wave is:",
+          "image": "",
+          "options": [
+            "Linearly polarized along the y-axis and propagating along the $+z$-direction",
+            "Linearly polarized along the z-axis and propagating along the $+y$-direction",
+            "Unpolarized and propagating along the $+z$-direction",
+            "Linearly polarized along the x-axis and propagating along the $+z$-direction"
+          ],
+          "correctOption": 0,
+          "solution": "The spatial argument $(kz)$ with negative sign denotes propagation along the $+z$-axis, while non-zero $E_y$ shows that electric vector oscillations are confined to the y-axis (linearly polarized along y)."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The velocity of an electromagnetic wave in a non-magnetic medium of relative permittivity $\\varepsilon_r = 2.25$ is:",
+          "image": "",
+          "options": [
+            "$2.0 \\times 10^8\\text{ m/s}$",
+            "$1.5 \\times 10^8\\text{ m/s}$",
+            "$3.0 \\times 10^8\\text{ m/s}$",
+            "$2.25 \\times 10^8\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$v = \\frac{c}{\\sqrt{\\mu_r \\varepsilon_r}} = \\frac{3 \\times 10^8\\text{ m/s}}{\\sqrt{1.0 \\times 2.25}} = \\frac{3 \\times 10^8}{1.5} = 2.0 \\times 10^8\\text{ m/s}$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Cellular mobile phones use electromagnetic waves belonging to which spectral band for wireless voice and data transmission?",
+          "image": "",
+          "options": [
+            "Ultra High Frequency (UHF) radio waves",
+            "Infrared waves",
+            "Ultraviolet waves",
+            "X-rays"
+          ],
+          "correctOption": 0,
+          "solution": "Mobile communication systems operate in the Ultra High Frequency (UHF) radio wave band ranging typically from $800\\text{ MHz}$ to $2.5\\text{ GHz}$."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of electric energy density $u_E$ to magnetic energy density $u_B$ in an electromagnetic wave in free space is:",
+          "image": "",
+          "options": [
+            "$1 : 1$",
+            "$2 : 1$",
+            "$1 : 2$",
+            "$c : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "$$u_E = \\frac{1}{4}\\varepsilon_0 E_0^2 = \\frac{1}{4}\\varepsilon_0 (c B_0)^2 = \\frac{1}{4}\\varepsilon_0 \\left(\\frac{1}{\\mu_0 \\varepsilon_0}\\right)B_0^2 = \\frac{B_0^2}{4\\mu_0} = u_B$$\nThus, energy is shared equally between electric and magnetic fields ($u_E : u_B = 1 : 1$)."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following electromagnetic rays has the highest penetrating power?",
+          "image": "",
+          "options": [
+            "Gamma rays",
+            "X-rays",
+            "Ultraviolet rays",
+            "Infrared rays"
+          ],
+          "correctOption": 0,
+          "solution": "Gamma rays have the highest frequency and photon energy in the electromagnetic spectrum, giving them the greatest penetrating power through matter."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A source of electromagnetic radiation has a power of $1500\\text{ W}$. The amplitude of the electric field at a distance of $3\\text{ m}$ from the source in vacuum is approximately: $(\\varepsilon_0 = 8.85 \\times 10^{-12}\\text{ F/m})$",
+          "image": "",
+          "options": [
+            "$100\\text{ V/m}$",
+            "$200\\text{ V/m}$",
+            "$50\\text{ V/m}$",
+            "$20\\text{ V/m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Intensity at distance $r = 3\\text{ m}$ is $I = \\frac{P}{4\\pi r^2} = \\frac{1500}{4\\pi (9)} = \\frac{1500}{113.1} \\approx 13.26\\text{ W/m}^2$.\n$$I = \\frac{1}{2}\\varepsilon_0 c E_0^2 \\implies E_0 = \\sqrt{\\frac{2I}{\\varepsilon_0 c}} = \\sqrt{\\frac{2 \\times 13.26}{(8.85 \\times 10^{-12}) \\times (3 \\times 10^8)}} = \\sqrt{\\frac{26.52}{2.655 \\times 10^{-3}}} = \\sqrt{10000} = 100\\text{ V/m}$$"
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Hertz's historical experiment produced and detected electromagnetic waves in which spectral band?",
+          "image": "",
+          "options": [
+            "Radio waves",
+            "X-rays",
+            "Infrared rays",
+            "Gamma rays"
+          ],
+          "correctOption": 0,
+          "solution": "Heinrich Hertz experimentally confirmed Maxwell's theory in 1887 by generating and detecting radio waves (wavelength $\\sim 6\\text{ m}$) using an LC spark-gap oscillator."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The radiation pressure exerted by a plane electromagnetic wave of intensity $I$ on a completely absorbing surface at normal incidence is:",
+          "image": "",
+          "options": [
+            "$\\frac{I}{c}$",
+            "$\\frac{2I}{c}$",
+            "$\\frac{I}{2c}$",
+            "$I c$"
+          ],
+          "correctOption": 0,
+          "solution": "For a totally absorbing surface, momentum absorbed per unit area per second is $P_{\\text{rad}} = \\frac{\\Delta p}{A \\Delta t} = \\frac{U/c}{A \\Delta t} = \\frac{I}{c}$."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Infrared radiation is often referred to as 'heat waves' because:",
+          "image": "",
+          "options": [
+            "Water molecules and other polar bonds in matter readily absorb them, increasing thermal vibrational motion",
+            "They have the highest frequency among all waves",
+            "They can ionize atoms easily",
+            "They travel faster than visible light"
+          ],
+          "correctOption": 0,
+          "solution": "Infrared photons match the natural vibrational frequencies of water molecules and many atomic bonds, causing strong resonant absorption that directly increases internal thermal energy."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The magnetic field in a plane electromagnetic wave is given by $\\vec{B} = (2 \\times 10^{-7}\\text{ T})\\sin(0.5 \\times 10^3 x + 1.5 \\times 10^{11} t)\\hat{j}$. The expression for the corresponding electric field $\\vec{E}$ is:",
+          "image": "",
+          "options": [
+            "$\\vec{E} = -(60\\text{ V/m})\\sin(0.5 \\times 10^3 x + 1.5 \\times 10^{11} t)\\hat{k}$",
+            "$\\vec{E} = (60\\text{ V/m})\\sin(0.5 \\times 10^3 x + 1.5 \\times 10^{11} t)\\hat{i}$",
+            "$\\vec{E} = (60\\text{ V/m})\\sin(0.5 \\times 10^3 x + 1.5 \\times 10^{11} t)\\hat{k}$",
+            "$\\vec{E} = -(60\\text{ V/m})\\sin(0.5 \\times 10^3 x + 1.5 \\times 10^{11} t)\\hat{i}$"
+          ],
+          "correctOption": 0,
+          "solution": "Wave propagates along $-\\hat{i}$ direction. $B_0 = 2 \\times 10^{-7}\\text{ T} \\implies E_0 = c B_0 = 60\\text{ V/m}$.\n$\\vec{B}$ is along $\\hat{j}$.\nSince $\\hat{E} \\times \\hat{B} = -\\hat{i} \\implies \\hat{E} \\times \\hat{j} = -\\hat{i} \\implies \\hat{E} = -\\hat{k}$.\n$$\\vec{E} = -(60\\text{ V/m})\\sin(0.5 \\times 10^3 x + 1.5 \\times 10^{11} t)\\hat{k}$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following physical quantities is NOT transported by an electromagnetic wave?",
+          "image": "",
+          "options": [
+            "Electric charge",
+            "Energy",
+            "Linear momentum",
+            "Angular momentum"
+          ],
+          "correctOption": 0,
+          "solution": "Electromagnetic waves carry and transmit energy, linear momentum, and angular momentum, but they do not carry or transport electric charge."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A laser beam of wavelength $600\\text{ nm}$ has an intensity of $3000\\text{ W/m}^2$. The peak amplitude of the magnetic field in the beam is: $(\\varepsilon_0 = 8.85 \\times 10^{-12}\\text{ F/m})$",
+          "image": "",
+          "options": [
+            "$5.0 \\times 10^{-6}\\text{ T}$",
+            "$2.5 \\times 10^{-6}\\text{ T}$",
+            "$1.0 \\times 10^{-5}\\text{ T}$",
+            "$7.5 \\times 10^{-6}\\text{ T}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$I = \\frac{B_0^2 c}{2\\mu_0} \\implies B_0 = \\sqrt{\\frac{2\\mu_0 I}{c}} = \\sqrt{\\frac{2(4\\pi \\times 10^{-7})(3000)}{3 \\times 10^8}} = \\sqrt{\\frac{2.4\\pi \\times 10^{-3}}{3 \\times 10^8}} = \\sqrt{2.513 \\times 10^{-11}} \\approx 5.0 \\times 10^{-6}\\text{ T}$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A typical diagnostic medical X-ray machine operates at wavelengths around:",
+          "image": "",
+          "options": [
+            "$0.1\\text{ nm}$",
+            "$100\\text{ nm}$",
+            "$10\\text{ \\mu m}$",
+            "$1\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Diagnostic X-rays occupy the wavelength band from $0.01\\text{ nm}$ to $10\\text{ nm}$ ($10^{-11}\\text{ m}$ to $10^{-8}\\text{ m}$), with typical diagnostic beams around $0.1\\text{ nm}$ ($1\\text{ \\AA}$)."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The transverse nature of electromagnetic waves is demonstrated by the phenomenon of:",
+          "image": "",
+          "options": [
+            "Polarization",
+            "Interference",
+            "Diffraction",
+            "Refraction"
+          ],
+          "correctOption": 0,
+          "solution": "Interference, diffraction, and refraction occur for both longitudinal and transverse waves. Only transverse waves exhibit polarization, confirming that $\\vec{E}$ and $\\vec{B}$ oscillate perpendicular to the direction of wave travel."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electromagnetic wave has a wavelength of $15\\text{ cm}$. This radiation belongs to the:",
+          "image": "",
+          "options": [
+            "Microwave region",
+            "Infrared region",
+            "Ultraviolet region",
+            "Visible region"
+          ],
+          "correctOption": 0,
+          "solution": "Microwaves span the wavelength range from $1\\text{ mm}$ to $0.3\\text{ m}$ ($30\\text{ cm}$). Therefore, a wavelength of $15\\text{ cm}$ lies in the microwave band."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During the charging of a parallel plate capacitor, the magnetic field produced between the circular plates at a radial distance $r$ from the central axis ($r < R$, where $R$ is plate radius) is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\mu_0 r}{2\\pi R^2} I_d$",
+            "$\\frac{\\mu_0 I_d}{2\\pi r}$",
+            "Zero",
+            "$\\frac{\\mu_0 R}{2\\pi r^2} I_d$"
+          ],
+          "correctOption": 0,
+          "solution": "Applying Ampere-Maxwell law for a circular path of radius $r < R$:\n$$\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_{d,\\text{enclosed}} \\implies B(2\\pi r) = \\mu_0 I_d \\left(\\frac{\\pi r^2}{\\pi R^2}\\right) \\implies B = \\frac{\\mu_0 r}{2\\pi R^2} I_d$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The frequency range of the visible spectrum of light is approximately:",
+          "image": "",
+          "options": [
+            "$4 \\times 10^{14}\\text{ Hz}$ to $8 \\times 10^{14}\\text{ Hz}$",
+            "$4 \\times 10^{10}\\text{ Hz}$ to $8 \\times 10^{10}\\text{ Hz}$",
+            "$4 \\times 10^{18}\\text{ Hz}$ to $8 \\times 10^{18}\\text{ Hz}$",
+            "$4 \\times 10^6\\text{ Hz}$ to $8 \\times 10^6\\text{ Hz}$"
+          ],
+          "correctOption": 0,
+          "solution": "The visible spectrum corresponds to wavelengths from $400\\text{ nm}$ (violet) to $750\\text{ nm}$ (red):\n$$\\nu = \\frac{c}{\\lambda} \\implies \\nu \\approx 4 \\times 10^{14}\\text{ Hz} \\text{ to } 7.5 \\times 10^{14}\\text{ Hz}$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\vec{E}$ and $\\vec{B}$ represent the electric and magnetic field vectors of an electromagnetic wave, the Poynting vector $\\vec{S}$ represents:",
+          "image": "",
+          "options": [
+            "Rate of energy flow per unit area",
+            "Total charge density",
+            "Magnetic flux linkage",
+            "Momentum per unit charge"
+          ],
+          "correctOption": 0,
+          "solution": "The Poynting vector $\\vec{S} = \\frac{1}{\\mu_0}(\\vec{E} \\times \\vec{B})$ defines the rate of electromagnetic energy transfer per unit cross-sectional area perpendicular to the direction of propagation (units of $\\text{W/m}^2$)."
+        }
+      ]
+    }
+  ]
+}
