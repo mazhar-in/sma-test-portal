@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-24-electromagnetic-induction",
+  "title": "Electromagnetic Induction",
+  "syllabus": "Electromagnetic induction; Faraday's laws, induced EMF and current; Lenz's Law, Eddy currents. Self and mutual induction, Motional electromotive force.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A uniform magnetic field is restricted within a region of radius $r$. The magnetic field changes with time at a rate $\\frac{dB}{dt}$. Loop 1 of radius $R > r$ encloses the region $r$ and loop 2 of radius $R$ is outside the region of magnetic field as shown in the figure. The emf generated is: (NEET 2016)",
+          "image": "",
+          "options": [
+            "$-\\frac{dB}{dt}\\pi r^2$ in loop 1 and zero in loop 2",
+            "$-\\frac{dB}{dt}\\pi R^2$ in loop 1 and zero in loop 2",
+            "Zero in loop 1 and zero in loop 2",
+            "$-\\frac{dB}{dt}\\pi r^2$ in loop 1 and $-\\frac{dB}{dt}\\pi r^2$ in loop 2"
+          ],
+          "correctOption": 0,
+          "solution": "For Loop 1: The magnetic flux linked with the loop is $\\Phi_1 = B(\\pi r^2)$ since magnetic field exists only up to radius $r$. Induced emf $\\varepsilon_1 = -\\frac{d\\Phi_1}{dt} = -\\frac{dB}{dt}\\pi r^2$.\nFor Loop 2: It does not enclose any magnetic field, so $\\Phi_2 = 0 \\implies \\varepsilon_2 = 0$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A long solenoid of diameter $0.1\\text{ m}$ has $2 \\times 10^4\\text{ turns per metre}$. At the centre of the solenoid, a coil of 100 turns and radius $0.01\\text{ m}$ is placed with its axis coinciding with the solenoid axis. The current in the solenoid reduces at a constant rate to $0\\text{ A}$ from $4\\text{ A}$ in $0.05\\text{ s}$. If the resistance of the coil is $10\\pi^2\\,\\Omega$, the total charge flowing through the coil during this time is: (NEET 2017)",
+          "image": "",
+          "options": [
+            "$32\\text{ \\mu C}$",
+            "$16\\text{ \\mu C}$",
+            "$32\\pi\\text{ \\mu C}$",
+            "$16\\pi\\text{ \\mu C}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total charge flow $q = \\frac{\\Delta\\Phi}{R}$.\nInitial field inside solenoid $B = \\mu_0 n I = (4\\pi \\times 10^{-7}) \\times (2 \\times 10^4) \\times 4 = 32\\pi \\times 10^{-3}\\text{ T}$.\nInitial flux linked with the small coil: $\\Phi = N B A = 100 \\times (32\\pi \\times 10^{-3}) \\times \\pi(0.01)^2 = 32\\pi^2 \\times 10^{-4}\\text{ Wb}$.\nFinal flux $\\Phi_f = 0$.\n$$q = \\frac{\\Delta\\Phi}{R} = \\frac{32\\pi^2 \\times 10^{-4}}{10\\pi^2} = 3.2 \\times 10^{-5}\\text{ C} = 32\\text{ \\mu C}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A pair of adjacent coils has a mutual inductance of $1.5\\text{ H}$. If the current in one coil changes from $0$ to $20\\text{ A}$ in $0.5\\text{ s}$, then the change of flux linkage with the other coil is: (NEET 2016)",
+          "image": "",
+          "options": [
+            "$30\\text{ Wb}$",
+            "$40\\text{ Wb}$",
+            "$1.5\\text{ Wb}$",
+            "$60\\text{ Wb}$"
+          ],
+          "correctOption": 0,
+          "solution": "Change in magnetic flux linkage $\\Delta\\Phi = M \\Delta I$.\n$$\\Delta\\Phi = (1.5\\text{ H}) \\times (20\\text{ A} - 0\\text{ A}) = 30\\text{ Wb}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The magnetic flux linked with a coil (in $\\text{Wb}$) is given by the equation $\\Phi = 5t^3 + 3t + 16$. The magnitude of induced electromotive force in the coil at fourth second ($t = 4\\text{ s}$) is: (NEET 2022)",
+          "image": "",
+          "options": [
+            "$243\\text{ V}$",
+            "$260\\text{ V}$",
+            "$108\\text{ V}$",
+            "$250\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "Induced EMF $\\varepsilon = -\\frac{d\\Phi}{dt} = -(15t^2 + 3)$.\nAt $t = 4\\text{ s}$:\n$$|\\varepsilon| = 15(4)^2 + 3 = 15(16) + 3 = 240 + 3 = 243\\text{ V}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A wheel with 20 metallic spokes each $1\\text{ m}$ long is rotated with a speed of $120\\text{ rpm}$ in a plane normal to a magnetic field of $0.4\\text{ G}$. The induced emf between the axle and the rim of the wheel is: ($1\\text{ G} = 10^{-4}\\text{ T}$) (NEET 2023)",
+          "image": "",
+          "options": [
+            "$2.51 \\times 10^{-4}\\text{ V}$",
+            "$2.51 \\times 10^{-5}\\text{ V}$",
+            "$4.0 \\times 10^{-5}\\text{ V}$",
+            "$1.25 \\times 10^{-4}\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "Angular velocity $\\omega = 120 \\times \\frac{2\\pi}{60} = 4\\pi\\text{ rad/s}$.\nMagnetic field $B = 0.4 \\times 10^{-4}\\text{ T}$.\nInduced EMF across each spoke (all spokes are in parallel, so net EMF is the EMF of one spoke):\n$$\\varepsilon = \\frac{1}{2} B \\omega L^2 = \\frac{1}{2} \\times (0.4 \\times 10^{-4}) \\times (4\\pi) \\times (1)^2 = 0.8\\pi \\times 10^{-4} \\approx 2.51 \\times 10^{-4}\\text{ V}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two coils of self-inductances $2\\text{ mH}$ and $8\\text{ mH}$ are placed so close together that the effective flux in one coil is completely linked with the other. The mutual inductance between these coils is: (NEET 2013)",
+          "image": "",
+          "options": [
+            "$4\\text{ mH}$",
+            "$16\\text{ mH}$",
+            "$10\\text{ mH}$",
+            "$6\\text{ mH}$"
+          ],
+          "correctOption": 0,
+          "solution": "For perfect coupling ($k = 1$):\n$$M = k\\sqrt{L_1 L_2} = 1 \\times \\sqrt{2\\text{ mH} \\times 8\\text{ mH}} = \\sqrt{16} = 4\\text{ mH}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Lenz's law is a direct consequence of the law of conservation of:",
+          "image": "",
+          "options": [
+            "Energy",
+            "Charge",
+            "Linear momentum",
+            "Angular momentum"
+          ],
+          "correctOption": 0,
+          "solution": "Lenz's law states that the polarity of induced EMF is such that it opposes the change in magnetic flux producing it. Mechanical work done in moving a magnet against this opposing electromagnetic force is converted into electrical energy, satisfying conservation of energy."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A conducting circular loop of area $A$ and resistance $R$ is placed perpendicular to a magnetic field $B$. If the loop is flipped by $180^\\circ$, the total charge that passes through any cross-section of the loop is:",
+          "image": "",
+          "options": [
+            "$\\frac{2BA}{R}$",
+            "$\\frac{BA}{R}$",
+            "Zero",
+            "$\\frac{BA}{2R}$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial flux $\\Phi_i = B A \\cos 0^\\circ = BA$.\nFinal flux $\\Phi_f = B A \\cos 180^\\circ = -BA$.\nChange in flux $\\Delta\\Phi = |\\Phi_f - \\Phi_i| = |-BA - BA| = 2BA$.\n$$q = \\frac{\\Delta\\Phi}{R} = \\frac{2BA}{R}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A metal conductor of length $1\\text{ m}$ rotates vertically about one of its ends at angular velocity $5\\text{ rad/s}$. If the horizontal component of Earth's magnetic field is $0.2 \\times 10^{-4}\\text{ T}$, the emf developed between the two ends of the conductor is:",
+          "image": "",
+          "options": [
+            "$50\\text{ \\mu V}$",
+            "$5\\text{ \\mu V}$",
+            "$5\\text{ mV}$",
+            "$50\\text{ mV}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\varepsilon = \\frac{1}{2} B \\omega L^2 = \\frac{1}{2} \\times (0.2 \\times 10^{-4}\\text{ T}) \\times 5\\text{ rad/s} \\times (1\\text{ m})^2 = 0.5 \\times 10^{-4}\\text{ V} = 50\\text{ \\mu V}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Eddy currents are produced in a material when:",
+          "image": "",
+          "options": [
+            "A bulk piece of metal is subjected to a changing magnetic flux",
+            "A steady direct current is passed through a conductor",
+            "A metal is kept in a uniform static electric field",
+            "A dielectric is placed in a static magnetic field"
+          ],
+          "correctOption": 0,
+          "solution": "Eddy currents are closed circulating loops of induced electric currents generated within bulk conductors when they experience time-varying magnetic flux."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The self-inductance $L$ of a long solenoid of length $l$, cross-sectional area $A$, and total number of turns $N$ is given by:",
+          "image": "",
+          "options": [
+            "$\\frac{\\mu_0 N^2 A}{l}$",
+            "$\\frac{\\mu_0 N A}{l}$",
+            "$\\frac{\\mu_0 N^2 A}{l^2}$",
+            "$\\mu_0 N^2 A l$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic field inside a solenoid: $B = \\mu_0 n I = \\mu_0 \\left(\\frac{N}{l}\\right)I$.\nTotal flux linkage: $N\\Phi = N(B A) = N\\left(\\mu_0 \\frac{N}{l} I\\right)A = \\left(\\frac{\\mu_0 N^2 A}{l}\\right)I$.\nSince $N\\Phi = L I \\implies L = \\frac{\\mu_0 N^2 A}{l}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A straight conducting rod of length $L$ moves with a uniform velocity $v$ perpendicular to its length and perpendicular to a uniform magnetic field $B$. The induced motional electromotive force developed across its ends is:",
+          "image": "",
+          "options": [
+            "$B v L$",
+            "$\\frac{1}{2}B v L$",
+            "$B v L^2$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Motional EMF for mutually orthogonal $\\vec{v}, \\vec{B},$ and $\\vec{L}$ vectors is given by $\\varepsilon = (\\vec{v} \\times \\vec{B})\\cdot \\vec{L} = B v L$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The energy stored in an inductor of self-inductance $L$ carrying a steady current $I$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2} L I^2$",
+            "$L I^2$",
+            "$\\frac{1}{2} L^2 I$",
+            "$\\frac{L I}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic potential energy stored in an inductor is $U = \\int_0^I L i\\,di = \\frac{1}{2} L I^2$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A bar magnet is dropped vertically along the central axis of a horizontal copper ring. The acceleration of the falling magnet is:",
+          "image": "",
+          "options": [
+            "Always less than $g$",
+            "Always equal to $g$",
+            "Always greater than $g$",
+            "Greater than $g$ while entering and less than $g$ while leaving"
+          ],
+          "correctOption": 0,
+          "solution": "By Lenz's Law, induced eddy currents in the copper ring oppose the motion of the magnet during both approach and departure, resulting in an upward repulsive/attractive retarding magnetic force that keeps acceleration $a < g$ throughout."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the current in an inductor of $2\\text{ H}$ decreases at a uniform rate of $5\\text{ A/s}$, the magnitude of induced electromotive force in the inductor is:",
+          "image": "",
+          "options": [
+            "$10\\text{ V}$",
+            "$2.5\\text{ V}$",
+            "$0.4\\text{ V}$",
+            "$20\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\varepsilon = -L \\frac{dI}{dt} = -(2\\text{ H})(-5\\text{ A/s}) = +10\\text{ V}$$\nMagnitude of induced EMF $= 10\\text{ V}$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The SI unit of magnetic flux is Weber ($\\text{Wb}$). $1\\text{ Wb}$ is equivalent to:",
+          "image": "",
+          "options": [
+            "$\\text{T}\\cdot\\text{m}^2\\text{ and V}\\cdot\\text{s}$",
+            "$\\text{T/m}^2$",
+            "$\\text{V/s}$",
+            "$\\text{N}\\cdot\\text{m/A}$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic flux $\\Phi = B \\cdot A \\implies 1\\text{ Wb} = 1\\text{ T}\\cdot\\text{m}^2$. From Faraday's law $\\varepsilon = \\frac{d\\Phi}{dt} \\implies 1\\text{ Wb} = 1\\text{ V}\\cdot\\text{s}$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A square loop of wire of side $a$ and resistance $R$ moves with constant velocity $v$ into a uniform transverse magnetic field region $B$. The external mechanical power required to maintain its motion at constant speed while entering the field is:",
+          "image": "",
+          "options": [
+            "$\\frac{B^2 a^2 v^2}{R}$",
+            "$\\frac{B a v}{R}$",
+            "$\\frac{B^2 a v^2}{R}$",
+            "$\\frac{B^2 a^2 v}{R}$"
+          ],
+          "correctOption": 0,
+          "solution": "Induced EMF $\\varepsilon = B a v \\implies$ Induced current $I = \\frac{B a v}{R}$.\nOpposing magnetic Lorentz force $F = I a B = \\frac{B^2 a^2 v}{R}$.\n$$P = F \\cdot v = \\frac{B^2 a^2 v^2}{R}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following does NOT employ eddy currents in its practical operation?",
+          "image": "",
+          "options": [
+            "Electric incandescent bulb",
+            "Electromagnetic damping in galvanometers",
+            "Induction furnace",
+            "Magnetic braking in trains"
+          ],
+          "correctOption": 0,
+          "solution": "An electric incandescent lamp works entirely on Joule heating of a resistive tungsten filament ($H = I^2 R t$) and does not utilize eddy currents."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If both the number of turns $N$ and the length $l$ of a solenoid are doubled keeping its cross-sectional area $A$ unchanged, its self-inductance will:",
+          "image": "",
+          "options": [
+            "Double",
+            "Quadruple",
+            "Halve",
+            "Remain unchanged"
+          ],
+          "correctOption": 0,
+          "solution": "$L = \\frac{\\mu_0 N^2 A}{l}$.\nWhen $N' = 2N$ and $l' = 2l$:\n$$L' = \\frac{\\mu_0 (2N)^2 A}{2l} = \\frac{4}{2}\\left(\\frac{\\mu_0 N^2 A}{l}\\right) = 2L$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A horizontal straight wire of length $L$ oriented along the East-West direction is falling freely under gravity in a region where the horizontal component of Earth's magnetic field is $B_H$. The induced electromotive force after falling through a height $h$ is:",
+          "image": "",
+          "options": [
+            "$B_H L \\sqrt{2gh}$",
+            "$B_H L (2gh)$",
+            "$B_H L g h$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Velocity acquired during free fall: $v = \\sqrt{2gh}$.\nThe wire falling vertically cuts across the horizontal component $B_H$ pointing North-South:\n$$\\varepsilon = B_H L v = B_H L \\sqrt{2gh}$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimensional formula of self-inductance $L$ is:",
+          "image": "",
+          "options": [
+            "$[\\text{M}\\text{L}^2\\text{T}^{-2}\\text{A}^{-2}]$",
+            "$[\\text{M}\\text{L}^2\\text{T}^{-1}\\text{A}^{-2}]$",
+            "$[\\text{M}\\text{L}\\text{T}^{-2}\\text{A}^{-2}]$",
+            "$[\\text{M}\\text{L}^2\\text{T}^{-2}\\text{A}^{-1}]$"
+          ],
+          "correctOption": 0,
+          "solution": "From energy stored $U = \\frac{1}{2} L I^2 \\implies [L] = \\frac{[U]}{[I^2]} = \\frac{[\\text{M}\\text{L}^2\\text{T}^{-2}]}{[\\text{A}^2]} = [\\text{M}\\text{L}^2\\text{T}^{-2}\\text{A}^{-2}]$."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A circular coil of 100 turns has an effective radius of $0.05\\text{ m}$ and resistance $10\\,\\Omega$. It is aligned with its plane perpendicular to a magnetic field of $0.1\\text{ T}$. If the field is uniformly reduced to zero in $0.01\\text{ s}$, the average induced current in the coil is:",
+          "image": "",
+          "options": [
+            "$0.785\\text{ A}$",
+            "$7.85\\text{ A}$",
+            "$0.0785\\text{ A}$",
+            "$1.57\\text{ A}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\Delta\\Phi = N A \\Delta B = 100 \\times \\pi(0.05)^2 \\times 0.1 = 100 \\times (2.5 \\times 10^{-3}\\pi) \\times 0.1 = 0.025\\pi\\text{ Wb}$$\n$$\\varepsilon_{\\text{avg}} = \\frac{\\Delta\\Phi}{\\Delta t} = \\frac{0.025\\pi}{0.01} = 2.5\\pi\\text{ V} \\approx 7.854\\text{ V}$$\n$$I_{\\text{avg}} = \\frac{\\varepsilon_{\\text{avg}}}{R} = \\frac{7.854\\text{ V}}{10\\,\\Omega} = 0.7854\\text{ A}$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two concentric coplanar circular loops of radii $r_1$ and $r_2$ ($r_2 \\gg r_1$) have mutual inductance $M$ proportional to:",
+          "image": "",
+          "options": [
+            "$\\frac{r_1^2}{r_2}$",
+            "$\\frac{r_2^2}{r_1}$",
+            "$\\frac{r_1}{r_2}$",
+            "$\\frac{r_1^2}{r_2^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Current $I_2$ in outer large loop produces field at center $B_2 = \\frac{\\mu_0 I_2}{2 r_2}$.\nFlux linked with inner small loop: $\\Phi_1 = B_2 A_1 = \\left(\\frac{\\mu_0 I_2}{2 r_2}\\right)(\\pi r_1^2)$.\n$$M = \\frac{\\Phi_1}{I_2} = \\frac{\\mu_0 \\pi r_1^2}{2 r_2} \\propto \\frac{r_1^2}{r_2}$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A rectangular coil of dimensions $10\\text{ cm} \\times 5\\text{ cm}$ having 50 turns is rotated at $60\\text{ rad/s}$ about an axis perpendicular to a uniform magnetic field $B = 0.2\\text{ T}$. The maximum induced emf is:",
+          "image": "",
+          "options": [
+            "$3.0\\text{ V}$",
+            "$6.0\\text{ V}$",
+            "$1.5\\text{ V}$",
+            "$0.3\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "Area $A = 0.10 \\times 0.05 = 5 \\times 10^{-3}\\text{ m}^2$.\n$$\\varepsilon_{\\text{max}} = N B A \\omega = 50 \\times 0.2 \\times (5 \\times 10^{-3}) \\times 60 = 50 \\times 10^{-3} \\times 60 = 3.0\\text{ V}$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The coefficient of coupling $k$ between two coils having self-inductances $L_1$ and $L_2$ satisfies the physical limits:",
+          "image": "",
+          "options": [
+            "$0 \\le k \\le 1$",
+            "$k \\ge 1$",
+            "$-1 \\le k \\le 1$",
+            "$0 \\le k \\le \\infty$"
+          ],
+          "correctOption": 0,
+          "solution": "Coefficient of coupling $k = \\frac{M}{\\sqrt{L_1 L_2}}$ ranges between $0$ (zero magnetic flux linkage) and $1$ (ideal $100\\%$ magnetic coupling)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A semi-circular conducting wire loop of radius $R$ is rotated with constant angular velocity $\\omega$ about its diameter which lies along the boundary of a uniform magnetic field $B$. The peak value of induced emf is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2} B \\omega R^2$",
+            "$B \\omega R^2$",
+            "$\\pi B \\omega R^2$",
+            "$\\frac{1}{4} B \\omega R^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Area inside the field at time $t$ is $A(t) = \\frac{1}{2} R^2 \\theta = \\frac{1}{2} R^2 \\omega t$.\n$$\\varepsilon = \\frac{d\\Phi}{dt} = B \\frac{dA}{dt} = \\frac{1}{2} B \\omega R^2$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "To minimize power loss due to eddy currents in the magnetic core of transformers and electrical machines, the iron core is constructed as:",
+          "image": "",
+          "options": [
+            "Thin laminated sheets insulated from each other by varnish",
+            "A solid continuous iron block",
+            "A porous hollow sphere",
+            "An open wire mesh"
+          ],
+          "correctOption": 0,
+          "solution": "Laminating the core into thin sheets separated by insulating varnish breaks the broad continuous loops of eddy currents, increasing total path resistance and drastically reducing $I^2 R$ heat dissipation."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A current $I = I_0 \\sin(\\omega t)$ flows through a primary coil of mutual inductance $M$. The induced emf in the secondary coil is:",
+          "image": "",
+          "options": [
+            "$-M I_0 \\omega \\cos(\\omega t)$",
+            "$M I_0 \\omega \\sin(\\omega t)$",
+            "$-M I_0 \\sin(\\omega t)$",
+            "$\\frac{M I_0}{\\omega}\\cos(\\omega t)$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\varepsilon_2 = -M \\frac{dI_1}{dt} = -M \\frac{d}{dt}[I_0 \\sin(\\omega t)] = -M I_0 \\omega \\cos(\\omega t)$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A magnetic flux of $5\\text{ mWb}$ linked with a coil of 100 turns is reversed in $0.1\\text{ s}$. The average induced electromotive force is:",
+          "image": "",
+          "options": [
+            "$10\\text{ V}$",
+            "$5\\text{ V}$",
+            "$1\\text{ V}$",
+            "$0.1\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial total flux $\\Phi_1 = 100 \\times (5 \\times 10^{-3}) = 0.5\\text{ Wb}$.\nReversed flux $\\Phi_2 = -0.5\\text{ Wb}$.\n$$\\Delta\\Phi = 0.5 - (-0.5) = 1.0\\text{ Wb}$$\n$$\\varepsilon_{\\text{avg}} = \\frac{\\Delta\\Phi}{\\Delta t} = \\frac{1.0\\text{ Wb}}{0.1\\text{ s}} = 10\\text{ V}$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Self-inductance of a coil is also referred to as the electromagnetic analogue of:",
+          "image": "",
+          "options": [
+            "Inertia (Mass)",
+            "Force",
+            "Velocity",
+            "Friction"
+          ],
+          "correctOption": 0,
+          "solution": "Self-inductance opposes any change (growth or decay) of electric current in the circuit, serving as electrical inertia directly analogous to inertial mass in mechanics."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A rod of length $l$ rotates with angular velocity $\\omega$ in a uniform magnetic field $B$ parallel to the axis of rotation. The potential difference between the midpoint of the rod and one of its ends is:",
+          "image": "",
+          "options": [
+            "$\\frac{3}{8} B \\omega l^2$",
+            "$\\frac{1}{2} B \\omega l^2$",
+            "$\\frac{1}{8} B \\omega l^2$",
+            "$\\frac{1}{4} B \\omega l^2$"
+          ],
+          "correctOption": 0,
+          "solution": "$$V_{\\text{end}} - V_{\\text{mid}} = \\int_{l/2}^l B \\omega r\\,dr = B \\omega \\left[ \\frac{r^2}{2} \\right]_{l/2}^l = \\frac{B \\omega}{2}\\left(l^2 - \\frac{l^2}{4}\\right) = \\frac{3}{8} B \\omega l^2$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a soft iron core of relative permeability $\\mu_r = 1000$ is inserted into a solenoid, its self-inductance:",
+          "image": "",
+          "options": [
+            "Increases by 1000 times",
+            "Decreases by 1000 times",
+            "Remains unchanged",
+            "Increases by $\\sqrt{1000}$ times"
+          ],
+          "correctOption": 0,
+          "solution": "Self-inductance with a core of relative permeability $\\mu_r$ is $L = \\mu_r L_0 = 1000 L_0$."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A copper disc of radius $0.1\\text{ m}$ is rotated at $20\\text{ rev/s}$ about its central axis perpendicular to a uniform field of $0.1\\text{ T}$. The potential difference between the center and the rim of the disc is:",
+          "image": "",
+          "options": [
+            "$0.0628\\text{ V}$",
+            "$0.628\\text{ V}$",
+            "$0.0314\\text{ V}$",
+            "$0.1256\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "Angular speed $\\omega = 2\\pi \\times 20 = 40\\pi\\text{ rad/s}$.\n$$\\varepsilon = \\frac{1}{2} B \\omega R^2 = \\frac{1}{2} \\times 0.1 \\times (40\\pi) \\times (0.1)^2 = 0.02\\pi \\approx 0.0628\\text{ V}$$"
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two coaxial solenoids $S_1$ and $S_2$ of equal length $l$ have turns $N_1$ and $N_2$ and radii $r_1$ and $r_2$ ($r_1 < r_2$). Their mutual inductance is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\mu_0 N_1 N_2 \\pi r_1^2}{l}$",
+            "$\\frac{\\mu_0 N_1 N_2 \\pi r_2^2}{l}$",
+            "$\\frac{\\mu_0 N_1 N_2 \\pi (r_1 + r_2)^2}{l}$",
+            "$\\frac{\\mu_0 N_1^2 \\pi r_1^2}{l}$"
+          ],
+          "correctOption": 0,
+          "solution": "Field of outer solenoid: $B_2 = \\mu_0 \\left(\\frac{N_2}{l}\\right)I_2$.\nFlux linked through inner solenoid: $\\Phi_1 = N_1 (B_2 A_1) = N_1 \\left(\\mu_0 \\frac{N_2}{l} I_2\\right)(\\pi r_1^2)$.\n$$M = \\frac{\\mu_0 N_1 N_2 \\pi r_1^2}{l}$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an LR circuit, the time constant $\\tau = L/R$ represents the time taken for current to build up to what percentage of its maximum steady-state value?",
+          "image": "",
+          "options": [
+            "$63.2\\%$",
+            "$50.0\\%$",
+            "$36.8\\%$",
+            "$90.0\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "Current growth: $I(t) = I_0(1 - e^{-t/\\tau})$. At $t = \\tau$:\n$$I(\\tau) = I_0(1 - e^{-1}) = I_0(1 - 0.368) = 0.632 I_0 = 63.2\\%$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A closed loop is held stationary in the magnetic field between the north and south poles of two fixed permanent magnets. The induced current generated in the loop is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "Proportional to field strength",
+            "Proportional to loop resistance",
+            "Alternating"
+          ],
+          "correctOption": 0,
+          "solution": "Because the magnetic field and loop position are static, the magnetic flux linked with the loop does not change with time ($\\frac{d\\Phi}{dt} = 0$), so the induced EMF and current are zero."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A square loop of side $10\\text{ cm}$ and resistance $0.5\\,\\Omega$ is placed vertically in the East-West plane. A uniform magnetic field of $0.10\\text{ T}$ is set up across the plane in the North-East direction. The magnetic field is decreased to zero in $0.70\\text{ s}$ at a steady rate. The magnitude of induced current during this time-interval is:",
+          "image": "",
+          "options": [
+            "$2.0\\text{ mA}$",
+            "$1.0\\text{ mA}$",
+            "$0.5\\text{ mA}$",
+            "$4.0\\text{ mA}$"
+          ],
+          "correctOption": 0,
+          "solution": "Area $A = (0.1\\text{ m})^2 = 0.01\\text{ m}^2$.\nAngle between normal to loop and North-East field is $\\theta = 45^\\circ$.\nInitial flux $\\Phi_i = B A \\cos 45^\\circ = (0.10) \\times (0.01) \\times \\frac{1}{\\sqrt{2}} = \\frac{10^{-3}}{\\sqrt{2}}\\text{ Wb} \\approx 0.707 \\times 10^{-3}\\text{ Wb}$.\n$$\\varepsilon = \\frac{\\Delta\\Phi}{\\Delta t} = \\frac{0.707 \\times 10^{-3}}{0.70} \\approx 1.01 \\times 10^{-3}\\text{ V}$$\n$$I = \\frac{\\varepsilon}{R} = \\frac{1.01 \\times 10^{-3}\\text{ V}}{0.5\\,\\Omega} \\approx 2.0 \\times 10^{-3}\\text{ A} = 2.0\\text{ mA}$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The total induced charge $q$ that flows through a closed circuit of resistance $R$ during a magnetic flux change $\\Delta\\Phi$ depends on:",
+          "image": "",
+          "options": [
+            "Total change in flux $\\Delta\\Phi$ and resistance $R$ only",
+            "Rate of change of magnetic flux",
+            "Time interval during which flux changes",
+            "Inductance of the circuit"
+          ],
+          "correctOption": 0,
+          "solution": "$$q = \\int I\\,dt = \\int \\frac{\\varepsilon}{R}\\,dt = \\frac{1}{R}\\int \\left(\\frac{d\\Phi}{dt}\\right)dt = \\frac{\\Delta\\Phi}{R}$$\nTotal charge depends solely on the net change in flux and resistance, and is independent of the time rate of change."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two coils have a mutual inductance of $0.005\\text{ H}$. The current changes in the first coil according to $I = I_0 \\sin\\omega t$, where $I_0 = 10\\text{ A}$ and $\\omega = 100\\pi\\text{ rad/s}$. The maximum value of induced emf in the second coil is:",
+          "image": "",
+          "options": [
+            "$5\\pi\\text{ V}$",
+            "$2\\pi\\text{ V}$",
+            "$\\pi\\text{ V}$",
+            "$10\\pi\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\varepsilon_2 = M \\frac{dI}{dt} = M I_0 \\omega \\cos\\omega t$$\n$$\\varepsilon_{2,\\text{max}} = M I_0 \\omega = (0.005\\text{ H}) \\times (10\\text{ A}) \\times (100\\pi\\text{ rad/s}) = 5\\pi\\text{ V}$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A conducting rod $PQ$ of length $L$ and mass $m$ slides down smoothly along two parallel vertical conducting rails separated by distance $L$ in a transverse horizontal magnetic field $B$. If the rails are connected at the top by a resistor $R$, the terminal velocity of the falling rod is:",
+          "image": "",
+          "options": [
+            "$\\frac{m g R}{B^2 L^2}$",
+            "$\\frac{B^2 L^2}{m g R}$",
+            "$\\frac{m g}{B L R}$",
+            "$\\frac{m g R^2}{B^2 L^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "At terminal speed $v_t$, upward magnetic retarding force balances gravity:\n$$F_m = I L B = \\left(\\frac{B L v_t}{R}\\right)L B = \\frac{B^2 L^2 v_t}{R} = mg \\implies v_t = \\frac{m g R}{B^2 L^2}$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two identical circular coils are arranged coaxially facing each other. If an increasing current flows clockwise in the first coil, the induced current in the second coil will flow:",
+          "image": "",
+          "options": [
+            "Counter-clockwise",
+            "Clockwise",
+            "Zero",
+            "Alternating"
+          ],
+          "correctOption": 0,
+          "solution": "By Lenz's law, the induced current in the second coil must oppose the increasing magnetic flux produced by the first coil, establishing an opposing magnetic field by circulating in the counter-clockwise direction."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A rectangular loop of area $0.2\\text{ m}^2$ is placed in a magnetic field which changes as $B = (2t^2 + 3)\\text{ T}$ perpendicular to the loop. If the loop resistance is $2\\,\\Omega$, the induced current at $t = 2\\text{ s}$ is:",
+          "image": "",
+          "options": [
+            "$0.8\\text{ A}$",
+            "$0.4\\text{ A}$",
+            "$1.6\\text{ A}$",
+            "$0.2\\text{ A}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\Phi(t) = B A = (2t^2 + 3) \\times 0.2 = 0.4t^2 + 0.6\\text{ Wb}$$\n$$\\varepsilon(t) = \\frac{d\\Phi}{dt} = 0.8t$$\nAt $t = 2\\text{ s}$: $\\varepsilon = 0.8(2) = 1.6\\text{ V} \\implies I = \\frac{\\varepsilon}{R} = \\frac{1.6\\text{ V}}{2\\,\\Omega} = 0.8\\text{ A}$."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following expressions represents the magnetic energy density $u_B$ stored in a magnetic field $B$?",
+          "image": "",
+          "options": [
+            "$\\frac{B^2}{2\\mu_0}$",
+            "$\\frac{\\mu_0 B^2}{2}$",
+            "$\\frac{B^2}{\\mu_0}$",
+            "$\\frac{B}{2\\mu_0}$"
+          ],
+          "correctOption": 0,
+          "solution": "The magnetic energy stored per unit volume in a magnetic field $B$ is given by $u_B = \\frac{B^2}{2\\mu_0}$."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A pure inductor of $25.0\\text{ mH}$ is connected to a source where current increases from $0$ to $10\\text{ A}$. The total work done by the source and stored in the inductor is:",
+          "image": "",
+          "options": [
+            "$1.25\\text{ J}$",
+            "$2.50\\text{ J}$",
+            "$0.25\\text{ J}$",
+            "$5.00\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$U = \\frac{1}{2} L I^2 = \\frac{1}{2} \\times (25.0 \\times 10^{-3}\\text{ H}) \\times (10\\text{ A})^2 = \\frac{1}{2} \\times 2.5 = 1.25\\text{ J}$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a metal ring is held horizontally and a bar magnet is dropped through it with its North pole downwards, the acceleration of the magnet after it completely passes through the ring and is falling away from it is:",
+          "image": "",
+          "options": [
+            "Less than $g$",
+            "Equal to $g$",
+            "Greater than $g$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "As the magnet falls away below the ring, the departing South pole induces a North polarity on the lower face of the ring to attract and retard it. This upward attractive force ensures that the acceleration remains less than $g$."
+        }
+      ]
+    }
+  ]
+}
