@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-28-dual-nature-of-matter-and-radiation",
+  "title": "Dual Nature of Matter and Radiation",
+  "syllabus": "Dual nature of radiation, Photoelectric effect, Hertz and Lenard's observations; Einstein's photoelectric equation-particle nature of light. Matter waves-wave nature of particles, de Broglie relation.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electron is accelerated through a potential difference of $10000\\text{ V}$. Its de Broglie wavelength is nearly: (Take $m_e = 9 \\times 10^{-31}\\text{ kg}$) (NEET 2019)",
+          "image": "",
+          "options": [
+            "$0.122 \\times 10^{-10}\\text{ m}$",
+            "$12.2 \\times 10^{-13}\\text{ m}$",
+            "$0.122 \\times 10^{-12}\\text{ m}$",
+            "$0.122 \\times 10^{-9}\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "The de Broglie wavelength of an electron accelerated through potential difference $V$ is:\n$$\\lambda = \\frac{1.227}{\\sqrt{V}}\\text{ nm} = \\frac{1.227}{\\sqrt{10000}}\\text{ nm} = \\frac{1.227}{100}\\text{ nm} = 0.01227\\text{ nm} = 0.1227 \\times 10^{-10}\\text{ m}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When the light of frequency $2\\nu_0$ (where $\\nu_0$ is threshold frequency) is incident on a metal plate, the maximum velocity of electrons emitted is $v_1$. When the frequency of the incident radiation is increased to $5\\nu_0$, the maximum velocity of electrons emitted is $v_2$. The ratio of $v_1$ to $v_2$ is: (NEET 2018)",
+          "image": "",
+          "options": [
+            "$1 : 2$",
+            "$1 : 4$",
+            "$1 : 8$",
+            "$1 : \\sqrt{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "From Einstein's photoelectric equation:\n$\\frac{1}{2} m v_1^2 = h(2\\nu_0) - h\\nu_0 = h\\nu_0$\n$\\frac{1}{2} m v_2^2 = h(5\\nu_0) - h\\nu_0 = 4h\\nu_0$\n$$\\frac{v_1^2}{v_2^2} = \\frac{h\\nu_0}{4h\\nu_0} = \\frac{1}{4} \\implies \\frac{v_1}{v_2} = \\frac{1}{2} = 1 : 2$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The threshold frequency of a photoelectric metal is $\\nu_0$. If light of frequency $\\nu = 2\\nu_0$ is incident on this metal, the maximum kinetic energy of the emitted photoelectrons is $K_1$. When the frequency of incident light is increased to $\\nu = 5\\nu_0$, the maximum kinetic energy of the emitted photoelectrons is $K_2$. The ratio of $K_1$ to $K_2$ is: (NEET 2023)",
+          "image": "",
+          "options": [
+            "$1 : 4$",
+            "$1 : 2$",
+            "$2 : 5$",
+            "$1 : 5$"
+          ],
+          "correctOption": 0,
+          "solution": "By Einstein's photoelectric equation:\n$K_1 = h(2\\nu_0) - h\\nu_0 = h\\nu_0$\n$K_2 = h(5\\nu_0) - h\\nu_0 = 4h\\nu_0$\n$$\\frac{K_1}{K_2} = \\frac{h\\nu_0}{4h\\nu_0} = 1 : 4$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electron of mass $m$ with an initial velocity $\\vec{v} = v_0\\hat{i}$ ($v_0 > 0$) enters an electric field $\\vec{E} = -E_0\\hat{i}$ ($E_0 = \\text{constant} > 0$) at $t = 0$. If $\\lambda_0$ is its de Broglie wavelength initially, then its de Broglie wavelength at time $t$ is: (NEET 2020)",
+          "image": "",
+          "options": [
+            "$\\frac{\\lambda_0}{\\left(1 + \\frac{e E_0 t}{m v_0}\\right)}$",
+            "$\\lambda_0\\left(1 + \\frac{e E_0 t}{m v_0}\\right)$",
+            "$\\lambda_0$",
+            "$\\frac{\\lambda_0}{t}$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial de Broglie wavelength: $\\lambda_0 = \\frac{h}{m v_0}$.\nAcceleration of electron: $\\vec{a} = \\frac{-e(-E_0\\hat{i})}{m} = +\\frac{e E_0}{m}\\hat{i}$.\nVelocity at time $t$: $v(t) = v_0 + a t = v_0 + \\frac{e E_0 t}{m} = v_0\\left(1 + \\frac{e E_0 t}{m v_0}\\right)$.\n$$\\lambda(t) = \\frac{h}{m v(t)} = \\frac{h}{m v_0\\left(1 + \\frac{e E_0 t}{m v_0}\\right)} = \\frac{\\lambda_0}{\\left(1 + \\frac{e E_0 t}{m v_0}\\right)}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Light of frequency $1.5$ times the threshold frequency is incident on a photosensitive material. What will be the photoelectric current if the frequency is halved and intensity is doubled? (NEET 2020)",
+          "image": "",
+          "options": [
+            "Zero",
+            "Doubled",
+            "Halved",
+            "Quadrupled"
+          ],
+          "correctOption": 0,
+          "solution": "Initial frequency $\\nu_1 = 1.5\\nu_0$.\nWhen frequency is halved: $\\nu_2 = \\frac{1.5\\nu_0}{2} = 0.75\\nu_0$.\nSince $\\nu_2 < \\nu_0$ (less than the threshold frequency), no photoelectric emission occurs regardless of the intensity. Hence, photoelectric current is zero."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The de Broglie wavelength of an electron, an $\\alpha$-particle and a proton all have the same kinetic energy. Which of the following represents the correct increasing order of their de Broglie wavelengths? (NEET 2022)",
+          "image": "",
+          "options": [
+            "$\\lambda_\\alpha < \\lambda_p < \\lambda_e$",
+            "$\\lambda_e < \\lambda_p < \\lambda_\\alpha$",
+            "$\\lambda_p < \\lambda_\\alpha < \\lambda_e$",
+            "$\\lambda_\\alpha < \\lambda_e < \\lambda_p$"
+          ],
+          "correctOption": 0,
+          "solution": "de Broglie wavelength is $\\lambda = \\frac{h}{\\sqrt{2mK}} \\propto \\frac{1}{\\sqrt{m}}$ for constant kinetic energy $K$.\nSince $m_\\alpha > m_p > m_e$, their wavelengths follow $\\lambda_\\alpha < \\lambda_p < \\lambda_e$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The work function of a photosensitive material is $4.0\\text{ eV}$. The longest wavelength of light that can cause photon emission from the substance is approximately: (NEET 2019)",
+          "image": "",
+          "options": [
+            "$310\\text{ nm}$",
+            "$400\\text{ nm}$",
+            "$3100\\text{ nm}$",
+            "$966\\text{ nm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Threshold (longest) wavelength is:\n$$\\lambda_0 = \\frac{h c}{\\phi_0} = \\frac{1240\\text{ eV}\\cdot\\text{nm}}{4.0\\text{ eV}} = 310\\text{ nm}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Photoelectric emission occurs only when the incident light has more than a certain minimum:",
+          "image": "",
+          "options": [
+            "Frequency",
+            "Wavelength",
+            "Intensity",
+            "Power"
+          ],
+          "correctOption": 0,
+          "solution": "Photoelectric emission requires incident photons to have energy greater than the work function ($h\\nu \\ge \\phi_0$), meaning the radiation must have a frequency exceeding the threshold frequency $\\nu_0$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a photoelectric experiment, the stopping potential $V_0$ is plotted against the frequency $\\nu$ of incident light. The slope of the resulting straight line is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{h}{e}$",
+            "$h$",
+            "$\\frac{e}{h}$",
+            "$\\frac{\\phi_0}{e}$"
+          ],
+          "correctOption": 0,
+          "solution": "From Einstein's photoelectric equation: $e V_0 = h\\nu - \\phi_0 \\implies V_0 = \\left(\\frac{h}{e}\\right)\\nu - \\frac{\\phi_0}{e}$.\nComparing with the linear equation $y = mx + c$, the slope is $m = \\frac{h}{e}$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If a photon has wavelength $\\lambda$, its momentum $p$ and energy $E$ are given respectively by:",
+          "image": "",
+          "options": [
+            "$p = \\frac{h}{\\lambda},\\; E = \\frac{h c}{\\lambda}$",
+            "$p = \\frac{h c}{\\lambda},\\; E = \\frac{h}{\\lambda}$",
+            "$p = h\\lambda,\\; E = \\frac{h c}{\\lambda}$",
+            "$p = \\frac{h}{\\lambda},\\; E = h c \\lambda$"
+          ],
+          "correctOption": 0,
+          "solution": "By Planck's and de Broglie's quantum relations for a photon: $p = \\frac{h}{\\lambda}$ and $E = h\\nu = \\frac{h c}{\\lambda}$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The de Broglie wavelength of a neutron at thermal equilibrium with heavy water at absolute temperature $T$ is proportional to:",
+          "image": "",
+          "options": [
+            "$T^{-1/2}$",
+            "$T^{1/2}$",
+            "$T^{-1}$",
+            "$T$"
+          ],
+          "correctOption": 0,
+          "solution": "Average kinetic energy of a thermal neutron is $K = \\frac{3}{2} k_B T$.\n$$\\lambda = \\frac{h}{\\sqrt{2mK}} = \\frac{h}{\\sqrt{3m k_B T}} \\propto T^{-1/2}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A $100\\text{ W}$ sodium vapor lamp radiates energy uniformly in all directions. If the wavelength of the emitted yellow light is $589\\text{ nm}$, the rate of emission of photons per second is approximately: (Take $h = 6.63 \\times 10^{-34}\\text{ J}\\cdot\\text{s}$)",
+          "image": "",
+          "options": [
+            "$3.0 \\times 10^{20}\\text{ s}^{-1}$",
+            "$3.0 \\times 10^{19}\\text{ s}^{-1}$",
+            "$1.5 \\times 10^{20}\\text{ s}^{-1}$",
+            "$6.0 \\times 10^{18}\\text{ s}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Energy of one photon: $E = \\frac{h c}{\\lambda} = \\frac{(6.63 \\times 10^{-34}) \\times (3 \\times 10^8)}{589 \\times 10^{-9}} = 3.377 \\times 10^{-19}\\text{ J}$.\n$$\\text{Number of photons per second } n = \\frac{P}{E} = \\frac{100\\text{ J/s}}{3.377 \\times 10^{-19}\\text{ J}} \\approx 2.96 \\times 10^{20}\\text{ s}^{-1} \\approx 3.0 \\times 10^{20}\\text{ s}^{-1}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When the intensity of incident monochromatic light on a photosensitive cathode is doubled, which of the following quantities also DOUBLES?",
+          "image": "",
+          "options": [
+            "Saturation photoelectric current",
+            "Stopping potential",
+            "Maximum kinetic energy of photoelectrons",
+            "Threshold frequency"
+          ],
+          "correctOption": 0,
+          "solution": "Intensity is directly proportional to the number of incident photons arriving per second. Doubling intensity doubles the number of ejected photoelectrons per second, doubling the saturation current, while individual photon energy and stopping potential remain unchanged."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A proton and an $\\alpha$-particle are accelerated from rest through the same potential difference $V$. The ratio of their de Broglie wavelengths $\\lambda_p / \\lambda_\\alpha$ is:",
+          "image": "",
+          "options": [
+            "$2\\sqrt{2} : 1$",
+            "$1 : 2\\sqrt{2}$",
+            "$2 : 1$",
+            "$4 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "de Broglie wavelength: $\\lambda = \\frac{h}{\\sqrt{2mqV}} \\propto \\frac{1}{\\sqrt{mq}}$.\n$$\\frac{\\lambda_p}{\\lambda_\\alpha} = \\sqrt{\\frac{m_\\alpha q_\\alpha}{m_p q_p}} = \\sqrt{\\frac{(4m)(2e)}{(m)(e)}} = \\sqrt{8} = 2\\sqrt{2} : 1$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The time lag between the incidence of light photons and the ejection of photoelectrons from a metal surface is of the order of:",
+          "image": "",
+          "options": [
+            "$10^{-9}\\text{ s}$ or less (nearly instantaneous)",
+            "$10^{-3}\\text{ s}$",
+            "$1\\text{ s}$",
+            "$10^{-6}\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Photoelectric emission is an instantaneous elastic single-photon collision process with an observed time lag of less than $10^{-9}\\text{ s}$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The de Broglie wavelength associated with a ball of mass $0.15\\text{ kg}$ moving with a speed of $30\\text{ m/s}$ is: ($h = 6.63 \\times 10^{-34}\\text{ J}\\cdot\\text{s}$)",
+          "image": "",
+          "options": [
+            "$1.47 \\times 10^{-34}\\text{ m}$",
+            "$1.47 \\times 10^{-32}\\text{ m}$",
+            "$2.01 \\times 10^{-34}\\text{ m}$",
+            "$3.31 \\times 10^{-34}\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\lambda = \\frac{h}{m v} = \\frac{6.63 \\times 10^{-34}\\text{ J}\\cdot\\text{s}}{0.15\\text{ kg} \\times 30\\text{ m/s}} = \\frac{6.63 \\times 10^{-34}}{4.5} \\approx 1.47 \\times 10^{-34}\\text{ m}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The work function of cesium is $2.14\\text{ eV}$. What is the threshold frequency for cesium?",
+          "image": "",
+          "options": [
+            "$5.16 \\times 10^{14}\\text{ Hz}$",
+            "$5.16 \\times 10^{15}\\text{ Hz}$",
+            "$2.14 \\times 10^{14}\\text{ Hz}$",
+            "$3.24 \\times 10^{14}\\text{ Hz}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\phi_0 = h\\nu_0 \\implies \\nu_0 = \\frac{\\phi_0}{h} = \\frac{2.14 \\times (1.6 \\times 10^{-19}\\text{ J})}{6.63 \\times 10^{-34}\\text{ J}\\cdot\\text{s}} = \\frac{3.424 \\times 10^{-19}}{6.63 \\times 10^{-34}} \\approx 5.16 \\times 10^{14}\\text{ Hz}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a photoelectric experiment, if the distance between the light source and the photocell is doubled, the saturation photoelectric current will:",
+          "image": "",
+          "options": [
+            "Decrease to one-fourth",
+            "Decrease to half",
+            "Remain unchanged",
+            "Double"
+          ],
+          "correctOption": 0,
+          "solution": "Intensity of light from a point source varies inversely with the square of distance: $I \\propto \\frac{1}{r^2}$.\nWhen distance is doubled ($r' = 2r$), intensity becomes $I' = I/4$, so the saturation current decreases to one-fourth."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For a moving particle of momentum $p$, the de Broglie wavelength is $\\lambda$. If the kinetic energy of the particle is quadrupled, its de Broglie wavelength becomes:",
+          "image": "",
+          "options": [
+            "$\\frac{\\lambda}{2}$",
+            "$2\\lambda$",
+            "$\\frac{\\lambda}{4}$",
+            "$4\\lambda$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\lambda = \\frac{h}{\\sqrt{2mK}} \\implies \\lambda' = \\frac{h}{\\sqrt{2m(4K)}} = \\frac{\\lambda}{\\sqrt{4}} = \\frac{\\lambda}{2}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following phenomena CANNOT be explained by the classical electromagnetic wave theory of light?",
+          "image": "",
+          "options": [
+            "Existence of a threshold frequency in photoelectric effect",
+            "Interference of light",
+            "Diffraction of light",
+            "Refraction of light"
+          ],
+          "correctOption": 0,
+          "solution": "Wave theory predicts that any frequency of light should eventually emit electrons if exposure time or intensity is sufficient. It cannot account for the instantaneous ejection or the strict threshold frequency $\\nu_0$ below which no emission occurs."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the momentum of an electron is increased by $\\Delta p$, its de Broglie wavelength changes by $0.5\\%$. The original momentum of the electron was:",
+          "image": "",
+          "options": [
+            "$200\\Delta p$",
+            "$100\\Delta p$",
+            "$0.005\\Delta p$",
+            "$50\\Delta p$"
+          ],
+          "correctOption": 0,
+          "solution": "Differentiating $\\lambda = \\frac{h}{p}$ gives $\\left|\\frac{\\Delta\\lambda}{\\lambda}\\right| = \\frac{\\Delta p}{p}$.\n$$\\frac{0.5}{100} = \\frac{\\Delta p}{p} \\implies p = \\frac{100}{0.5}\\Delta p = 200\\Delta p$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Light of wavelength $500\\text{ nm}$ falls on a metal surface of work function $1.9\\text{ eV}$. The kinetic energy of the fastest ejected photoelectrons is: ($h c \\approx 1240\\text{ eV}\\cdot\\text{nm}$)",
+          "image": "",
+          "options": [
+            "$0.58\\text{ eV}$",
+            "$2.48\\text{ eV}$",
+            "$1.24\\text{ eV}$",
+            "$0.90\\text{ eV}$"
+          ],
+          "correctOption": 0,
+          "solution": "Energy of incident photon: $E = \\frac{1240\\text{ eV}\\cdot\\text{nm}}{500\\text{ nm}} = 2.48\\text{ eV}$.\n$$K_{\\text{max}} = E - \\phi_0 = 2.48\\text{ eV} - 1.9\\text{ eV} = 0.58\\text{ eV}$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A photon and an electron have the same de Broglie wavelength $\\lambda$. The ratio of the kinetic energy of the photon to that of the electron is: ($c$ is speed of light, $m$ is electron mass)",
+          "image": "",
+          "options": [
+            "$\\frac{2\\lambda m c}{h}$",
+            "$\\frac{h}{2\\lambda m c}$",
+            "$\\frac{\\lambda m c}{2h}$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "Energy of photon: $E_{\\text{photon}} = \\frac{h c}{\\lambda}$.\nKinetic energy of electron: $K_{\\text{electron}} = \\frac{p^2}{2m} = \\frac{(h/\\lambda)^2}{2m} = \\frac{h^2}{2m\\lambda^2}$.\n$$\\frac{E_{\\text{photon}}}{K_{\\text{electron}}} = \\frac{h c / \\lambda}{h^2 / (2m\\lambda^2)} = \\frac{2\\lambda m c}{h}$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Lenard observed that when potential difference between the anode and cathode is made sufficiently negative (stopping potential), the photoelectric current drops to zero. The stopping potential depends on:",
+          "image": "",
+          "options": [
+            "Frequency of incident light and nature of cathode material",
+            "Intensity of incident light only",
+            "Distance between cathode and anode only",
+            "Surface area of the cathode only"
+          ],
+          "correctOption": 0,
+          "solution": "From $e V_0 = h\\nu - \\phi_0$, stopping potential $V_0$ is determined strictly by the frequency $\\nu$ of the incident radiation and the work function $\\phi_0$ of the metal cathode."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electron, a proton, and an $\\alpha$-particle have kinetic energies of $16E, 4E,$ and $E$ respectively. The qualitative relationship between their de Broglie wavelengths is:",
+          "image": "",
+          "options": [
+            "$\\lambda_e > \\lambda_p > \\lambda_\\alpha$",
+            "$\\lambda_\\alpha > \\lambda_p > \\lambda_e$",
+            "$\\lambda_p = \\lambda_\\alpha < \\lambda_e$",
+            "$\\lambda_e = \\lambda_p = \\lambda_\\alpha$"
+          ],
+          "correctOption": 2,
+          "solution": "$\\lambda = \\frac{h}{\\sqrt{2mK}}$.\n$\\lambda_p = \\frac{h}{\\sqrt{2(m)(4E)}} = \\frac{h}{2\\sqrt{2mE}}$.\n$\\lambda_\\alpha = \\frac{h}{\\sqrt{2(4m)(E)}} = \\frac{h}{2\\sqrt{2mE}} = \\lambda_p$.\nSince $m_e \\ll m_p$, $\\lambda_e = \\frac{h}{\\sqrt{2 m_e (16E)}} \\gg \\lambda_p$.\nThus, $\\lambda_e > \\lambda_p = \\lambda_\\alpha$."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The work function of a metal depends on:",
+          "image": "",
+          "options": [
+            "Nature of the metal and its surface cleanliness",
+            "Frequency of incident light",
+            "Intensity of incident light",
+            "Velocity of emitted electrons"
+          ],
+          "correctOption": 0,
+          "solution": "Work function $\\phi_0$ is an intrinsic property of the target metal and its surface condition, representing the minimum energy needed to liberate an electron from the surface."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle of mass $M$ at rest decays into two particles of masses $m_1$ and $m_2$ with non-zero velocities. The ratio of their de Broglie wavelengths $\\lambda_1 / \\lambda_2$ is:",
+          "image": "",
+          "options": [
+            "$1 : 1$",
+            "$m_1 : m_2$",
+            "$m_2 : m_1$",
+            "$\\sqrt{m_1} : \\sqrt{m_2}$"
+          ],
+          "correctOption": 0,
+          "solution": "By conservation of linear momentum, the two decayed particles must have equal and opposite momenta ($|p_1| = |p_2|$). Since $\\lambda = h/p$, their de Broglie wavelengths are identical ($\\lambda_1 / \\lambda_2 = 1 : 1$)."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The graph of maximum kinetic energy $K_{\\text{max}}$ of photoelectrons versus incident light frequency $\\nu$ is a straight line whose x-intercept represents:",
+          "image": "",
+          "options": [
+            "Threshold frequency $\\nu_0$",
+            "Work function $\\phi_0$",
+            "Planck's constant $h$",
+            "Stopping potential $V_0$"
+          ],
+          "correctOption": 0,
+          "solution": "Setting $K_{\\text{max}} = h\\nu - \\phi_0 = 0$ gives $\\nu = \\phi_0/h = \\nu_0$. Thus, the x-intercept corresponds directly to the threshold frequency $\\nu_0$."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a metal plate is illuminated with light of wavelength $\\lambda$, the stopping potential is $3V$. When the same plate is illuminated with light of wavelength $2\\lambda$, the stopping potential is $V$. The threshold wavelength for this metal surface is:",
+          "image": "",
+          "options": [
+            "$4\\lambda$",
+            "$3\\lambda$",
+            "$1.5\\lambda$",
+            "$6\\lambda$"
+          ],
+          "correctOption": 0,
+          "solution": "$e(3V) = \\frac{h c}{\\lambda} - \\phi_0$\n$e(V) = \\frac{h c}{2\\lambda} - \\phi_0$\nMultiplying the second equation by 3:\n$$3e V = \\frac{3hc}{2\\lambda} - 3\\phi_0$$\nEquating both:\n$$\\frac{hc}{\\lambda} - \\phi_0 = \\frac{3hc}{2\\lambda} - 3\\phi_0 \\implies 2\\phi_0 = \\frac{hc}{2\\lambda} \\implies \\phi_0 = \\frac{hc}{4\\lambda}$$\n$$\\lambda_0 = \\frac{hc}{\\phi_0} = 4\\lambda$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The de Broglie wavelength of an electron in the $n^{\\text{th}}$ Bohr orbit of radius $r_n$ in a hydrogen atom is:",
+          "image": "",
+          "options": [
+            "$\\frac{2\\pi r_n}{n}$",
+            "$2\\pi n r_n$",
+            "$\\frac{n r_n}{2\\pi}$",
+            "$\\frac{n^2}{r_n}$"
+          ],
+          "correctOption": 0,
+          "solution": "Bohr's quantization condition is $m v r_n = \\frac{n h}{2\\pi} \\implies 2\\pi r_n = n\\left(\\frac{h}{m v}\\right) = n\\lambda \\implies \\lambda = \\frac{2\\pi r_n}{n}$."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Photons of energy $5\\text{ eV}$ strike a metal surface. If the stopping potential is $3.2\\text{ V}$, the work function of the metal is:",
+          "image": "",
+          "options": [
+            "$1.8\\text{ eV}$",
+            "$3.2\\text{ eV}$",
+            "$8.2\\text{ eV}$",
+            "$0.64\\text{ eV}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$K_{\\text{max}} = e V_0 = 3.2\\text{ eV}$$\n$$\\phi_0 = E - K_{\\text{max}} = 5.0\\text{ eV} - 3.2\\text{ eV} = 1.8\\text{ eV}$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "What is the rest mass of a photon?",
+          "image": "",
+          "options": [
+            "Zero",
+            "$\\frac{h}{\\lambda c}$",
+            "$\\frac{h\\nu}{c^2}$",
+            "Infinite"
+          ],
+          "correctOption": 0,
+          "solution": "In relativistic mechanics, a photon travels at speed $c$ in vacuum and has an invariant rest mass of identically zero ($m_0 = 0$)."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two particles $A$ and $B$ have de Broglie wavelengths $\\lambda_A$ and $\\lambda_B$ with $\\lambda_A = 2\\lambda_B$. If the mass of $A$ is 4 times the mass of $B$, the ratio of their kinetic energies $K_A / K_B$ is:",
+          "image": "",
+          "options": [
+            "$1 : 16$",
+            "$1 : 4$",
+            "$1 : 8$",
+            "$1 : 2$"
+          ],
+          "correctOption": 0,
+          "solution": "$$K = \\frac{p^2}{2m} = \\frac{h^2}{2m\\lambda^2} \\propto \\frac{1}{m\\lambda^2}$$\n$$\\frac{K_A}{K_B} = \\left(\\frac{m_B}{m_A}\\right)\\left(\\frac{\\lambda_B}{\\lambda_A}\\right)^2 = \\left(\\frac{1}{4}\\right)\\left(\\frac{1}{2}\\right)^2 = \\frac{1}{4} \\times \\frac{1}{4} = \\frac{1}{16} = 1 : 16$$"
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Hertz's original spark-gap experiment, the production of electromagnetic spark discharges was enhanced when the detector loop terminals were illuminated with:",
+          "image": "",
+          "options": [
+            "Ultraviolet light",
+            "Infrared light",
+            "Radio waves",
+            "Microwaves"
+          ],
+          "correctOption": 0,
+          "solution": "Hertz observed that high-voltage electrical sparks occurred across the detector gap more readily when irradiated with ultraviolet (UV) light, which was the first historical observation of the photoelectric effect."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dynamic (effective) mass of a photon of frequency $\\nu$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{h\\nu}{c^2}$",
+            "$\\frac{h\\nu}{c}$",
+            "Zero",
+            "$\\frac{h}{\\nu c^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "From mass-energy equivalence $E = m c^2 = h\\nu$, the equivalent dynamic relativistic mass of a moving photon is $m = \\frac{h\\nu}{c^2}$."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A beam of electrons and a beam of protons have the same de Broglie wavelength. Which physical property is the SAME for both particles?",
+          "image": "",
+          "options": [
+            "Momentum",
+            "Speed",
+            "Kinetic energy",
+            "Frequency"
+          ],
+          "correctOption": 0,
+          "solution": "Since de Broglie wavelength is $\\lambda = \\frac{h}{p}$, having identical wavelengths implies that both particles possess the exact same linear momentum ($p = h/\\lambda$)."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the frequency of incident radiation falling on a photosensitive metal is doubled, the maximum kinetic energy of the emitted photoelectrons will:",
+          "image": "",
+          "options": [
+            "Become more than double",
+            "Double",
+            "Become less than double",
+            "Remain unchanged"
+          ],
+          "correctOption": 0,
+          "solution": "$K_1 = h\\nu - \\phi_0$.\nWhen frequency is doubled: $K_2 = h(2\\nu) - \\phi_0 = 2(h\\nu - \\phi_0) + \\phi_0 = 2K_1 + \\phi_0 > 2K_1$.\nThus, the new kinetic energy is more than double its initial value."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A radio transmitter operates at a frequency of $880\\text{ kHz}$ and a power of $10\\text{ kW}$. The number of photons emitted per second is: ($h = 6.63 \\times 10^{-34}\\text{ J}\\cdot\\text{s}$)",
+          "image": "",
+          "options": [
+            "$1.71 \\times 10^{31}$",
+            "$1.71 \\times 10^{28}$",
+            "$1.71 \\times 10^{34}$",
+            "$1.71 \\times 10^{25}$"
+          ],
+          "correctOption": 0,
+          "solution": "Energy of one radio photon: $E = h\\nu = (6.63 \\times 10^{-34}) \\times (880 \\times 10^3) = 5.834 \\times 10^{-28}\\text{ J}$.\n$$n = \\frac{P}{E} = \\frac{10^4\\text{ W}}{5.834 \\times 10^{-28}\\text{ J}} \\approx 1.71 \\times 10^{31}\\text{ photons/s}$$"
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Continuous increasing of the accelerating potential on an electron microscope leads to:",
+          "image": "",
+          "options": [
+            "Decreased de Broglie wavelength and increased resolving power",
+            "Increased de Broglie wavelength and increased resolving power",
+            "Decreased resolving power",
+            "No change in resolving power"
+          ],
+          "correctOption": 0,
+          "solution": "Since $\\lambda = \\frac{1.227}{\\sqrt{V}}\\text{ nm}$, higher potential $V$ reduces the electron wavelength $\\lambda$. Smaller wavelength minimizes diffraction blurring, thereby increasing the microscope's resolving power."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The work functions for three metals $A, B,$ and $C$ are $1.92\\text{ eV}, 2.0\\text{ eV},$ and $5.0\\text{ eV}$ respectively. Which of these metals will emit photoelectrons when irradiated with light of wavelength $414\\text{ nm}$?",
+          "image": "",
+          "options": [
+            "$A$ and $B$ only",
+            "$A$ only",
+            "All three ($A, B,$ and $C$)",
+            "None of them"
+          ],
+          "correctOption": 0,
+          "solution": "Photon energy: $E = \\frac{1242\\text{ eV}\\cdot\\text{nm}}{414\\text{ nm}} = 3.0\\text{ eV}$.\nEmission occurs when $E > \\phi_0$. Since $3.0\\text{ eV} > 1.92\\text{ eV}$ (Metal A) and $3.0\\text{ eV} > 2.0\\text{ eV}$ (Metal B), but $3.0\\text{ eV} < 5.0\\text{ eV}$ (Metal C), only metals $A$ and $B$ emit photoelectrons."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a photoelectric experiment, a negative saturation current is avoided and current reaches saturation at positive plate potential because:",
+          "image": "",
+          "options": [
+            "All photoelectrons emitted from the cathode are collected by the anode",
+            "Work function drops to zero",
+            "Frequency becomes infinite",
+            "Photons are reflected"
+          ],
+          "correctOption": 0,
+          "solution": "Saturation current is reached when the positive anode potential is sufficiently large to attract and collect all emitted photoelectrons per unit time."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The de Broglie wavelength of a gas molecule of mass $m$ at absolute temperature $T$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{h}{\\sqrt{3m k_B T}}$",
+            "$\\frac{h}{\\sqrt{2m k_B T}}$",
+            "$\\frac{h}{3m k_B T}$",
+            "$\\frac{h\\sqrt{3m k_B T}}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "RMS velocity of a gas molecule is $v_{\\text{rms}} = \\sqrt{\\frac{3k_B T}{m}}$.\n$$\\lambda = \\frac{h}{m v_{\\text{rms}}} = \\frac{h}{m\\sqrt{3k_B T / m}} = \\frac{h}{\\sqrt{3m k_B T}}$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The slope of the graph between de Broglie wavelength $\\lambda$ and $\\frac{1}{\\sqrt{V}}$ for a charged particle of mass $m$ and charge $q$ accelerated by potential $V$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{h}{\\sqrt{2mq}}$",
+            "$\\frac{h}{2mq}$",
+            "$\\frac{\\sqrt{2mq}}{h}$",
+            "$\\frac{h}{\\sqrt{mq}}$"
+          ],
+          "correctOption": 0,
+          "solution": "From $\\lambda = \\frac{h}{\\sqrt{2mqV}} = \\left(\\frac{h}{\\sqrt{2mq}}\\right)\\frac{1}{\\sqrt{V}}$, plotting $\\lambda$ versus $\\frac{1}{\\sqrt{V}}$ gives a straight line through the origin with slope equal to $\\frac{h}{\\sqrt{2mq}}$."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following particles moving with the same speed has the SHORTEST de Broglie wavelength?",
+          "image": "",
+          "options": [
+            "$\\alpha$-particle",
+            "Proton",
+            "Neutron",
+            "Electron"
+          ],
+          "correctOption": 0,
+          "solution": "At constant velocity $v$, de Broglie wavelength is $\\lambda = \\frac{h}{m v} \\propto \\frac{1}{m}$. An $\\alpha$-particle has the largest mass among the choices ($m_\\alpha \\approx 4u$), so it possesses the shortest wavelength."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the work function of a metal is $W_0$ and the wavelength of incident light is $\\lambda$, the threshold condition for the occurrence of photoelectric emission is:",
+          "image": "",
+          "options": [
+            "$\\lambda \\le \\frac{h c}{W_0}$",
+            "$\\lambda \\ge \\frac{h c}{W_0}$",
+            "$\\lambda = \\frac{W_0}{h c}$",
+            "$\\lambda \\le \\frac{W_0}{h c}$"
+          ],
+          "correctOption": 0,
+          "solution": "For photoemission to occur, photon energy must be at least equal to the work function: $\\frac{h c}{\\lambda} \\ge W_0 \\implies \\lambda \\le \\frac{h c}{W_0}$."
+        }
+      ]
+    }
+  ]
+}
