@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-16-ktg",
+  "title": "Kinetic Theory of Gases",
+  "syllabus": "Equation of state of a perfect gas, Work done on compressing a gas, Kinetic theory of gases - assumptions, Concept of pressure, Kinetic interpretation of temperature, RMS, average and most probable speeds of gas molecules, Degrees of freedom, Law of equipartition of energy and applications to specific heat capacities of gases (monoatomic, diatomic, polyatomic gases and mixtures), Mean free path, Avogadro's number",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The mean free path for a gas, with molecular diameter $d$ and number density $n$ can be expressed as: (NEET 2020)",
+          "image": "",
+          "options": [
+            "$\\frac{1}{\\sqrt{2}n\\pi d^2}$",
+            "$\\frac{1}{\\sqrt{2}n^2\\pi d^2}$",
+            "$\\frac{1}{\\sqrt{2}n^2\\pi^2 d^2}$",
+            "$\\frac{1}{\\sqrt{2}n\\pi d}$"
+          ],
+          "correctOption": 0,
+          "solution": "From kinetic theory of gases, the mean free path $\\lambda$ of gas molecules taking relative velocities into account is given by $\\lambda = \\frac{1}{\\sqrt{2} n \\pi d^2}$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The average thermal energy for a monoatomic gas is: ($k_B$ is Boltzmann constant and $T$ is absolute temperature) (NEET 2020)",
+          "image": "",
+          "options": [
+            "$\\frac{3}{2}k_B T$",
+            "$\\frac{5}{2}k_B T$",
+            "$\\frac{7}{2}k_B T$",
+            "$\\frac{1}{2}k_B T$"
+          ],
+          "correctOption": 0,
+          "solution": "A monoatomic gas molecule possesses 3 translational degrees of freedom ($f = 3$). By the law of equipartition of energy, average kinetic energy per molecule is $E = \\frac{f}{2}k_B T = \\frac{3}{2}k_B T$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Increase in temperature of a gas filled in a container would lead to: (NEET 2019)",
+          "image": "",
+          "options": [
+            "Increase in its kinetic energy",
+            "Decrease in its pressure",
+            "Decrease in intermolecular collisions",
+            "Increase in its mass"
+          ],
+          "correctOption": 0,
+          "solution": "The mean translational kinetic energy of gas molecules is directly proportional to the absolute temperature ($E_k = \\frac{3}{2}k_B T$). Thus, an increase in temperature directly increases the kinetic energy of the gas molecules."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "At what temperature will the rms speed of oxygen molecules become just sufficient for escaping from the Earth's atmosphere? (Given: Mass of oxygen molecule $m = 2.76 \\times 10^{-26}\\text{ kg}$, Boltzmann constant $k_B = 1.38 \\times 10^{-23}\\text{ J/K}$, Escape speed $v_e = 11.2\\text{ km/s}$) (NEET 2018)",
+          "image": "",
+          "options": [
+            "$8.36 \\times 10^4\\text{ K}$",
+            "$5.23 \\times 10^4\\text{ K}$",
+            "$1.25 \\times 10^5\\text{ K}$",
+            "$2.50 \\times 10^4\\text{ K}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$v_{\\text{rms}} = \\sqrt{\\frac{3k_B T}{m}} = v_e \\implies T = \\frac{m v_e^2}{3k_B}$$\n$$T = \\frac{(2.76 \\times 10^{-26}\\text{ kg}) \\times (11.2 \\times 10^3\\text{ m/s})^2}{3 \\times (1.38 \\times 10^{-23}\\text{ J/K})} = \\frac{(2.76 \\times 10^{-26}) \\times (1.2544 \\times 10^8)}{4.14 \\times 10^{-23}} = 8.36 \\times 10^4\\text{ K}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A gas mixture consists of 2 moles of $\\text{O}_2$ and 4 moles of $\\text{Ar}$ at temperature $T$. Neglecting all vibrational modes, the total internal energy of the system is: (NEET 2017)",
+          "image": "",
+          "options": [
+            "$11 R T$",
+            "$15 R T$",
+            "$9 R T$",
+            "$4 R T$"
+          ],
+          "correctOption": 0,
+          "solution": "For $\\text{O}_2$ (diatomic gas, $f_1 = 5$): $U_1 = n_1 \\left(\\frac{f_1}{2} R T\\right) = 2 \\times \\left(\\frac{5}{2} R T\\right) = 5 R T$.\nFor $\\text{Ar}$ (monoatomic gas, $f_2 = 3$): $U_2 = n_2 \\left(\\frac{f_2}{2} R T\\right) = 4 \\times \\left(\\frac{3}{2} R T\\right) = 6 R T$.\n$$U_{\\text{total}} = U_1 + U_2 = 5 R T + 6 R T = 11 R T$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The molecules of a given mass of a gas have rms velocity of $200\\text{ m/s}$ at $27^\\circ\\text{C}$ and $1.0 \\times 10^5\\text{ N/m}^2$ pressure. When the temperature and the pressure of the gas are respectively $127^\\circ\\text{C}$ and $0.05 \\times 10^5\\text{ N/m}^2$, the rms velocity of its molecules in $\\text{m/s}$ is: (NEET 2016)",
+          "image": "",
+          "options": [
+            "$\\frac{400}{\\sqrt{3}}$",
+            "$\\frac{100\\sqrt{2}}{3}$",
+            "$\\frac{100}{3}$",
+            "$100\\sqrt{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "RMS speed depends solely on absolute temperature ($v_{\\text{rms}} \\propto \\sqrt{T}$) and is independent of pressure.\n$T_1 = 27 + 273 = 300\\text{ K}$, $T_2 = 127 + 273 = 400\\text{ K}$.\n$$\\frac{v_2}{v_1} = \\sqrt{\\frac{T_2}{T_1}} = \\sqrt{\\frac{400}{300}} = \\frac{2}{\\sqrt{3}}$$\n$$v_2 = 200 \\times \\frac{2}{\\sqrt{3}} = \\frac{400}{\\sqrt{3}}\\text{ m/s}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The value of $\\gamma = C_p / C_v$ for hydrogen, helium, and another ideal diatomic gas $X$ (whose molecules are not rigid but have an additional vibrational mode) respectively, are equal to: (NEET 2021)",
+          "image": "",
+          "options": [
+            "$\\frac{7}{5}, \\frac{5}{3}, \\frac{9}{7}$",
+            "$\\frac{5}{3}, \\frac{7}{5}, \\frac{9}{7}$",
+            "$\\frac{5}{3}, \\frac{7}{5}, \\frac{7}{5}$",
+            "$\\frac{7}{5}, \\frac{5}{3}, \\frac{7}{5}$"
+          ],
+          "correctOption": 0,
+          "solution": "1) $\\text{H}_2$ (rigid diatomic, $f=5$): $\\gamma = 1 + 2/5 = 7/5$.\n2) $\\text{He}$ (monoatomic, $f=3$): $\\gamma = 1 + 2/3 = 5/3$.\n3) Diatomic gas with 1 vibrational mode ($f = 5 + 2 = 7$): $\\gamma = 1 + 2/7 = 9/7$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of the most probable speed ($v_{\\text{mp}}$), average speed ($v_{\\text{avg}}$), and root mean square speed ($v_{\\text{rms}}$) of molecules of an ideal gas at a given temperature is:",
+          "image": "",
+          "options": [
+            "$1 : \\sqrt{\\frac{8}{\\pi}} : \\sqrt{3}$",
+            "$\\sqrt{2} : \\sqrt{\\frac{8}{\\pi}} : \\sqrt{3}$",
+            "$\\sqrt{3} : \\sqrt{\\frac{8}{\\pi}} : \\sqrt{2}$",
+            "$\\sqrt{3} : \\sqrt{2} : \\sqrt{\\frac{8}{\\pi}}$"
+          ],
+          "correctOption": 1,
+          "solution": "$$v_{\\text{mp}} = \\sqrt{\\frac{2RT}{M}}, \\quad v_{\\text{avg}} = \\sqrt{\\frac{8RT}{\\pi M}}, \\quad v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M}}$$\n$$v_{\\text{mp}} : v_{\\text{avg}} : v_{\\text{rms}} = \\sqrt{2} : \\sqrt{\\frac{8}{\\pi}} : \\sqrt{3} \\approx 1 : 1.128 : 1.224$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Pressure exerted by a perfect gas on the walls of a container is given by:",
+          "image": "",
+          "options": [
+            "$P = \\frac{1}{3} \\rho v_{\\text{rms}}^2$",
+            "$P = \\frac{2}{3} \\rho v_{\\text{rms}}^2$",
+            "$P = \\frac{1}{2} \\rho v_{\\text{rms}}^2$",
+            "$P = \\rho v_{\\text{rms}}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "According to the kinetic theory of gases, the pressure exerted by an ideal gas of density $\\rho$ is $P = \\frac{1}{3} \\rho v_{\\text{rms}}^2$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $E$ is the total translational kinetic energy of all molecules in a unit volume of an ideal gas, then the pressure $P$ exerted by the gas is related to $E$ as:",
+          "image": "",
+          "options": [
+            "$P = \\frac{2}{3}E$",
+            "$P = \\frac{3}{2}E$",
+            "$P = \\frac{1}{3}E$",
+            "$P = \\frac{1}{2}E$"
+          ],
+          "correctOption": 0,
+          "solution": "$$P = \\frac{1}{3}\\rho v_{\\text{rms}}^2 = \\frac{2}{3}\\left(\\frac{1}{2}\\rho v_{\\text{rms}}^2\\right) = \\frac{2}{3}E$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A cylinder contains $10\\text{ kg}$ of gas at a pressure of $10^7\\text{ N/m}^2$. When an amount of gas is taken out, the pressure drops to $2.5 \\times 10^6\\text{ N/m}^2$ at the same temperature. The mass of the gas taken out from the cylinder is:",
+          "image": "",
+          "options": [
+            "$7.5\\text{ kg}$",
+            "$2.5\\text{ kg}$",
+            "$5.0\\text{ kg}$",
+            "$1.25\\text{ kg}$"
+          ],
+          "correctOption": 0,
+          "solution": "From $P V = \\frac{m}{M} R T \\implies P \\propto m$ at constant $V$ and $T$.\n$$\\frac{m_2}{m_1} = \\frac{P_2}{P_1} = \\frac{2.5 \\times 10^6}{10^7} = 0.25 \\implies m_2 = 0.25 \\times 10 = 2.5\\text{ kg}$$\n$$\\text{Mass removed} = m_1 - m_2 = 10 - 2.5 = 7.5\\text{ kg}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following assumptions of the kinetic theory of gases is strictly valid for an ideal gas?",
+          "image": "",
+          "options": [
+            "The volume occupied by the gas molecules is negligible compared to the total volume of the gas",
+            "Molecules attract each other with van der Waals forces",
+            "Collisions between molecules are completely inelastic",
+            "Molecules move with identical velocity in fixed directions"
+          ],
+          "correctOption": 0,
+          "solution": "In an ideal gas, molecules are point masses whose actual physical volume is negligibly small compared to the volume of the container, and intermolecular forces are assumed to be zero."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "At constant volume, the temperature of an ideal gas is increased from $27^\\circ\\text{C}$ to $927^\\circ\\text{C}$. The root mean square speed of its molecules becomes:",
+          "image": "",
+          "options": [
+            "Doubled",
+            "Quadrupled",
+            "Halved",
+            "Three times"
+          ],
+          "correctOption": 0,
+          "solution": "$T_1 = 27 + 273 = 300\\text{ K}$, $T_2 = 927 + 273 = 1200\\text{ K}$.\n$$\\frac{v_2}{v_1} = \\sqrt{\\frac{T_2}{T_1}} = \\sqrt{\\frac{1200}{300}} = \\sqrt{4} = 2$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two non-reactive ideal gases with molar masses $M_1$ and $M_2$ are at the same temperature $T$. The ratio of the average translational kinetic energy per molecule of gas 1 to gas 2 is:",
+          "image": "",
+          "options": [
+            "$1 : 1$",
+            "$M_1 : M_2$",
+            "$\\sqrt{M_1} : \\sqrt{M_2}$",
+            "$M_2 : M_1$"
+          ],
+          "correctOption": 0,
+          "solution": "Average translational kinetic energy per molecule is $\\bar{E} = \\frac{3}{2}k_B T$. It depends purely on the absolute temperature $T$ and is completely independent of the molar mass or chemical nature of the gas."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A vessel of volume $V$ contains $n_1$ moles of gas 1 and $n_2$ moles of gas 2 at absolute temperature $T$. The total pressure exerted by the mixture is: (Dalton's Law of partial pressures)",
+          "image": "",
+          "options": [
+            "$\\frac{(n_1 + n_2) R T}{V}$",
+            "$\\frac{(n_1 M_1 + n_2 M_2) R T}{V}$",
+            "$\\frac{\\sqrt{n_1 n_2} R T}{V}$",
+            "$\\frac{n_1 n_2 R T}{(n_1 + n_2)V}$"
+          ],
+          "correctOption": 0,
+          "solution": "By Dalton's Law: $P_{\\text{total}} = P_1 + P_2 = \\frac{n_1 R T}{V} + \\frac{n_2 R T}{V} = \\frac{(n_1 + n_2) R T}{V}$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "How does the mean free path $\\lambda$ of gas molecules depend on absolute temperature $T$ at constant pressure $P$?",
+          "image": "",
+          "options": [
+            "$\\lambda \\propto T$",
+            "$\\lambda \\propto \\frac{1}{T}$",
+            "$\\lambda \\propto \\sqrt{T}$",
+            "$\\lambda \\propto T^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Number density $n = \\frac{N}{V} = \\frac{P}{k_B T}$.\nMean free path $\\lambda = \\frac{1}{\\sqrt{2} n \\pi d^2} = \\frac{k_B T}{\\sqrt{2} \\pi d^2 P}$.\nAt constant pressure, $\\lambda \\propto T$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The total number of degrees of freedom of a non-linear triatomic gas molecule (like $\\text{H}_2\\text{O}$) at room temperature is:",
+          "image": "",
+          "options": [
+            "$6$",
+            "$5$",
+            "$3$",
+            "$7$"
+          ],
+          "correctOption": 0,
+          "solution": "A non-linear triatomic gas molecule has 3 translational and 3 rotational degrees of freedom, giving a total of $f = 3 + 3 = 6$ degrees of freedom at normal temperatures."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The molar specific heat capacity at constant volume $C_v$ for a rigid diatomic gas is:",
+          "image": "",
+          "options": [
+            "$\\frac{5}{2}R$",
+            "$\\frac{3}{2}R$",
+            "$\\frac{7}{2}R$",
+            "$3R$"
+          ],
+          "correctOption": 0,
+          "solution": "A rigid diatomic molecule has $f = 5$ (3 translational + 2 rotational).\n$$C_v = \\frac{f}{2}R = \\frac{5}{2}R$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "One mole of monoatomic gas is mixed with one mole of diatomic gas. The adiabatic exponent $\\gamma_{\\text{mix}}$ for the mixture is:",
+          "image": "",
+          "options": [
+            "$1.50$",
+            "$1.40$",
+            "$1.67$",
+            "$1.33$"
+          ],
+          "correctOption": 0,
+          "solution": "$$C_{v,\\text{mix}} = \\frac{n_1 C_{v1} + n_2 C_{v2}}{n_1 + n_2} = \\frac{1(\\frac{3}{2}R) + 1(\\frac{5}{2}R)}{2} = 2R$$\n$$C_{p,\\text{mix}} = C_{v,\\text{mix}} + R = 2R + R = 3R$$\n$$\\gamma_{\\text{mix}} = \\frac{C_{p,\\text{mix}}}{C_{v,\\text{mix}}} = \\frac{3R}{2R} = 1.5$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Avogadro's number $N_A$ is defined as the number of atoms present in exactly:",
+          "image": "",
+          "options": [
+            "$0.012\\text{ kg}$ of Carbon-12",
+            "$0.016\\text{ kg}$ of Oxygen-16",
+            "$0.001\\text{ kg}$ of Hydrogen-1",
+            "$0.014\\text{ kg}$ of Nitrogen-14"
+          ],
+          "correctOption": 0,
+          "solution": "Avogadro's constant ($N_A \\approx 6.022 \\times 10^{23}\\text{ mol}^{-1}$) is historically defined as the number of constituent carbon atoms in exactly $12\\text{ g}$ ($0.012\\text{ kg}$) of unbound Carbon-12 ($^{12}\\text{C}$) in its ground state."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The work done in compressing an ideal gas quasi-statically and isothermally from volume $V_1$ to volume $V_2$ ($V_2 < V_1$) at temperature $T$ is:",
+          "image": "",
+          "options": [
+            "$n R T \\ln\\left(\\frac{V_1}{V_2}\\right)$",
+            "$-n R T \\ln\\left(\\frac{V_1}{V_2}\\right)$",
+            "$n R T \\left(\\frac{V_1 - V_2}{V_1}\\right)$",
+            "$P(V_1 - V_2)$"
+          ],
+          "correctOption": 0,
+          "solution": "Work done ON the gas is $W_{\\text{on}} = -\\int_{V_1}^{V_2} P\\,dV = -n R T \\ln\\left(\\frac{V_2}{V_1}\\right) = n R T \\ln\\left(\\frac{V_1}{V_2}\\right)$."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A flask contains argon and chlorine in the ratio of $2 : 1$ by mass. The temperature of the mixture is $27^\\circ\\text{C}$. The ratio of average kinetic energy per molecule of argon to chlorine is: (Molar mass of $\\text{Ar} = 40$, $\\text{Cl}_2 = 71$)",
+          "image": "",
+          "options": [
+            "$1 : 1$",
+            "$2 : 1$",
+            "$40 : 71$",
+            "$71 : 40$"
+          ],
+          "correctOption": 0,
+          "solution": "Average translational kinetic energy per molecule depends solely on absolute temperature: $E = \\frac{3}{2}k_B T$. Since both gases are at the same temperature, the ratio of their molecular translational kinetic energies is $1 : 1$."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the mean free path of a gas is $\\lambda$ at pressure $P$, what will be the mean free path if the pressure is halved at constant temperature?",
+          "image": "",
+          "options": [
+            "$2\\lambda$",
+            "$\\lambda/2$",
+            "$4\\lambda$",
+            "$\\lambda$"
+          ],
+          "correctOption": 0,
+          "solution": "At constant temperature, $\\lambda = \\frac{k_B T}{\\sqrt{2} \\pi d^2 P} \\propto \\frac{1}{P}$.\nWhen pressure is halved ($P' = P/2$), the mean free path doubles: $\\lambda' = 2\\lambda$."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The universal gas constant $R$ and Boltzmann constant $k_B$ are interrelated by:",
+          "image": "",
+          "options": [
+            "$R = N_A k_B$",
+            "$k_B = N_A R$",
+            "$R = \\frac{k_B}{N_A}$",
+            "$R k_B = N_A$"
+          ],
+          "correctOption": 0,
+          "solution": "Boltzmann constant is the gas constant per molecule: $k_B = \\frac{R}{N_A} \\implies R = N_A k_B$."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "At what temperature is the rms speed of hydrogen gas molecules equal to that of oxygen molecules at $47^\\circ\\text{C}$?",
+          "image": "",
+          "options": [
+            "$20\\text{ K}$",
+            "$40\\text{ K}$",
+            "$80\\text{ K}$",
+            "$160\\text{ K}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M}} \\implies \\frac{T_{\\text{H}_2}}{M_{\\text{H}_2}} = \\frac{T_{\\text{O}_2}}{M_{\\text{O}_2}}$$\n$$T_{\\text{O}_2} = 47 + 273 = 320\\text{ K}$$\n$$\\frac{T_{\\text{H}_2}}{2} = \\frac{320}{32} = 10 \\implies T_{\\text{H}_2} = 20\\text{ K}$$"
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A real gas behaves most like an ideal gas at:",
+          "image": "",
+          "options": [
+            "Low pressure and high temperature",
+            "High pressure and low temperature",
+            "Low pressure and low temperature",
+            "High pressure and high temperature"
+          ],
+          "correctOption": 0,
+          "solution": "At low pressures, molecules are far apart (making molecular volume negligible). At high temperatures, high molecular kinetic energies dominate over weak intermolecular attractions, satisfying ideal gas assumptions."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The molar specific heat capacity at constant pressure $C_p$ for an ideal monoatomic gas is:",
+          "image": "",
+          "options": [
+            "$\\frac{5}{2}R$",
+            "$\\frac{3}{2}R$",
+            "$\\frac{7}{2}R$",
+            "$3R$"
+          ],
+          "correctOption": 0,
+          "solution": "For a monoatomic gas: $C_v = \\frac{3}{2}R$. Using Mayer's relation $C_p = C_v + R = \\frac{3}{2}R + R = \\frac{5}{2}R$."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An ideal gas has a density of $1.25\\text{ kg/m}^3$ at a pressure of $1.0 \\times 10^5\\text{ Pa}$. The root mean square speed of the gas molecules is:",
+          "image": "",
+          "options": [
+            "$490\\text{ m/s}$",
+            "$245\\text{ m/s}$",
+            "$346\\text{ m/s}$",
+            "$600\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$v_{\\text{rms}} = \\sqrt{\\frac{3P}{\\rho}} = \\sqrt{\\frac{3 \\times 10^5}{1.25}} = \\sqrt{240000} \\approx 489.9\\text{ m/s} \\approx 490\\text{ m/s}$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The degrees of freedom of a rigid linear triatomic molecule (such as $\\text{CO}_2$) at room temperature is:",
+          "image": "",
+          "options": [
+            "$5$",
+            "$6$",
+            "$7$",
+            "$3$"
+          ],
+          "correctOption": 0,
+          "solution": "A linear triatomic molecule has 3 translational and 2 rotational degrees of freedom about axes perpendicular to the molecular axis, yielding $f = 3 + 2 = 5$."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the absolute temperature of a gas is doubled and its volume is halved, the pressure exerted by the gas becomes:",
+          "image": "",
+          "options": [
+            "$4$ times",
+            "$2$ times",
+            "$8$ times",
+            "Unchanged"
+          ],
+          "correctOption": 0,
+          "solution": "$$P = \\frac{n R T}{V} \\implies P' = \\frac{n R (2T)}{(V/2)} = 4\\left(\\frac{n R T}{V}\\right) = 4P$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "What is the total internal energy of $1\\text{ mole}$ of a rigid diatomic gas at absolute temperature $T$?",
+          "image": "",
+          "options": [
+            "$\\frac{5}{2}RT$",
+            "$\\frac{3}{2}RT$",
+            "$\\frac{7}{2}RT$",
+            "$3RT$"
+          ],
+          "correctOption": 0,
+          "solution": "$$U = n \\left(\\frac{f}{2}\\right) R T = 1 \\times \\left(\\frac{5}{2}\\right) R T = \\frac{5}{2}RT$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The collision frequency $\\nu$ (number of collisions per unit time) of a gas molecule is related to the mean free path $\\lambda$ and average speed $\\bar{v}$ by:",
+          "image": "",
+          "options": [
+            "$\\nu = \\frac{\\bar{v}}{\\lambda}$",
+            "$\\nu = \\lambda \\bar{v}$",
+            "$\\nu = \\frac{\\lambda}{\\bar{v}}$",
+            "$\\nu = \\frac{\\bar{v}}{\\lambda^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "The collision frequency is the reciprocal of the mean free time $\\tau = \\frac{\\lambda}{\\bar{v}}$, giving $\\nu = \\frac{1}{\\tau} = \\frac{\\bar{v}}{\\lambda}$."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Four particles have speeds $2\\text{ m/s}, 3\\text{ m/s}, 4\\text{ m/s},$ and $5\\text{ m/s}$. The rms speed of the particles is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{13.5}\\text{ m/s}$",
+            "$3.5\\text{ m/s}$",
+            "$\\sqrt{14}\\text{ m/s}$",
+            "$\\sqrt{15}\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$v_{\\text{rms}} = \\sqrt{\\frac{v_1^2 + v_2^2 + v_3^2 + v_4^2}{4}} = \\sqrt{\\frac{2^2 + 3^2 + 4^2 + 5^2}{4}} = \\sqrt{\\frac{4 + 9 + 16 + 25}{4}} = \\sqrt{\\frac{54}{4}} = \\sqrt{13.5}\\text{ m/s} \\approx 3.67\\text{ m/s}$$"
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "According to Maxwell-Boltzmann distribution of molecular speeds, as the temperature of the gas increases:",
+          "image": "",
+          "options": [
+            "The peak of the distribution shifts to higher speeds and broadens downward",
+            "The peak shifts to lower speeds and sharpens upward",
+            "The distribution remains identical",
+            "The area under the curve increases"
+          ],
+          "correctOption": 0,
+          "solution": "As temperature increases, the most probable speed shifts to the right ($v_{\\text{mp}} \\propto \\sqrt{T}$). Because the total area under the probability density curve must remain normalized to 1, the curve broadens and its peak height decreases."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two containers $A$ and $B$ of equal volume contain helium at $2\\text{ atm}, 300\\text{ K}$ and oxygen at $1\\text{ atm}, 600\\text{ K}$ respectively. The ratio of the number of molecules in container $A$ to $B$ is:",
+          "image": "",
+          "options": [
+            "$4 : 1$",
+            "$1 : 4$",
+            "$2 : 1$",
+            "$1 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "From $P V = N k_B T \\implies N = \\frac{P V}{k_B T}$.\n$$\\frac{N_A}{N_B} = \\left(\\frac{P_A}{P_B}\\right) \\left(\\frac{T_B}{T_A}\\right) = \\left(\\frac{2\\text{ atm}}{1\\text{ atm}}\\right) \\left(\\frac{600\\text{ K}}{300\\text{ K}}\\right) = 2 \\times 2 = 4 : 1$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The value of specific heat capacity of a solid according to Dulong and Petit's law at high temperatures is:",
+          "image": "",
+          "options": [
+            "$3R$",
+            "$\\frac{3}{2}R$",
+            "$\\frac{5}{2}R$",
+            "$6R$"
+          ],
+          "correctOption": 0,
+          "solution": "In a crystal lattice, each atom has 3 vibrational modes, with each mode contributing $2 \\times \\frac{1}{2}k_B T = k_B T$ of energy (kinetic + potential). Total molar energy is $U = 3 N_A k_B T = 3RT$, giving molar heat capacity $C = \\frac{dU}{dT} = 3R$."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of molar specific heat capacities $\\gamma = C_p / C_v$ for a gas with $f$ degrees of freedom is:",
+          "image": "",
+          "options": [
+            "$1 + \\frac{2}{f}$",
+            "$1 + \\frac{f}{2}$",
+            "$\\frac{f}{f+2}$",
+            "$1 - \\frac{2}{f}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$C_v = \\frac{f}{2}R, \\quad C_p = C_v + R = \\left(\\frac{f}{2} + 1\\right)R$$\n$$\\gamma = \\frac{C_p}{C_v} = \\frac{\\frac{f}{2} + 1}{\\frac{f}{2}} = 1 + \\frac{2}{f}$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A closed vessel contains $8\\text{ g}$ of $\\text{O}_2$ and $7\\text{ g}$ of $\\text{N}_2$ at temperature $T$. The total kinetic energy of the gas mixture is:",
+          "image": "",
+          "options": [
+            "$\\frac{5}{4}RT$",
+            "$\\frac{5}{2}RT$",
+            "$\\frac{3}{2}RT$",
+            "$5RT$"
+          ],
+          "correctOption": 0,
+          "solution": "Number of moles of $\\text{O}_2$: $n_1 = \\frac{8}{32} = 0.25\\text{ mol}$.\nNumber of moles of $\\text{N}_2$: $n_2 = \\frac{7}{28} = 0.25\\text{ mol}$.\nTotal moles $n = 0.25 + 0.25 = 0.5\\text{ mol}$.\nBoth are diatomic gases ($f = 5$):\n$$U = n\\left(\\frac{5}{2}RT\\right) = 0.5 \\times \\frac{5}{2}RT = \\frac{5}{4}RT$$"
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The root mean square speed of the molecules of an enclosed gas is $v$. If the pressure is increased by $100\\%$ at constant temperature, the new rms speed will be:",
+          "image": "",
+          "options": [
+            "$v$",
+            "$2v$",
+            "$\\sqrt{2}v$",
+            "$v/2$"
+          ],
+          "correctOption": 0,
+          "solution": "RMS speed $v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M}}$ depends solely on absolute temperature. As long as temperature is held constant, changing pressure changes density proportionally ($P/\\rho = \\text{constant}$), leaving $v_{\\text{rms}}$ unchanged at $v$."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following expressions correctly represents the mean speed $\\bar{v}$ of gas molecules?",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{8RT}{\\pi M}}$",
+            "$\\sqrt{\\frac{3RT}{M}}$",
+            "$\\sqrt{\\frac{2RT}{M}}$",
+            "$\\sqrt{\\frac{8k_B T}{M}}$"
+          ],
+          "correctOption": 0,
+          "solution": "The mean (average) speed derived from the Maxwell-Boltzmann distribution is $\\bar{v} = \\sqrt{\\frac{8RT}{\\pi M}} = \\sqrt{\\frac{8k_B T}{\\pi m}}$."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $N$ is the total number of gas molecules each of mass $m$ in a volume $V$, the pressure is written as $P = \\frac{1}{3} m n v_{\\text{rms}}^2$. The quantity $m n$ represents:",
+          "image": "",
+          "options": [
+            "Mass density of the gas",
+            "Molar mass of the gas",
+            "Total mass of the gas",
+            "Number of moles"
+          ],
+          "correctOption": 0,
+          "solution": "$n = N/V$ is the number density (molecules per unit volume). Multiplying by mass per molecule $m$ gives total mass per unit volume, which is the mass density $\\rho = m n$."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A gas is filled in a closed vessel at $27^\\circ\\text{C}$. To what temperature must it be heated in order to double the pressure?",
+          "image": "",
+          "options": [
+            "$327^\\circ\\text{C}$",
+            "$54^\\circ\\text{C}$",
+            "$600^\\circ\\text{C}$",
+            "$108^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "At constant volume: $\\frac{P_1}{T_1} = \\frac{P_2}{T_2} \\implies T_2 = T_1\\left(\\frac{P_2}{P_1}\\right)$.\n$T_1 = 27 + 273 = 300\\text{ K}$.\n$$T_2 = 300 \\times 2 = 600\\text{ K} = (600 - 273)^\\circ\\text{C} = 327^\\circ\\text{C}$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The kinetic energy per unit mole of an ideal gas at absolute temperature $T$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{3}{2}RT$",
+            "$\\frac{3}{2}k_B T$",
+            "$\\frac{1}{2}RT$",
+            "$\\frac{5}{2}RT$"
+          ],
+          "correctOption": 0,
+          "solution": "For 1 mole of gas, translational kinetic energy is $E = N_A \\left(\\frac{3}{2}k_B T\\right) = \\frac{3}{2}(N_A k_B)T = \\frac{3}{2}RT$."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An ideal gas mixture consists of $n_1$ moles of a gas with adiabatic index $\\gamma_1$ and $n_2$ moles of a gas with adiabatic index $\\gamma_2$. The effective $C_v$ of the mixture is:",
+          "image": "",
+          "options": [
+            "$\\frac{R}{n_1 + n_2}\\left[\\frac{n_1}{\\gamma_1 - 1} + \\frac{n_2}{\\gamma_2 - 1}\\right]$",
+            "$\\frac{R}{n_1 + n_2}\\left[\\frac{n_1}{\\gamma_1 + 1} + \\frac{n_2}{\\gamma_2 + 1}\\right]$",
+            "$\\frac{n_1 \\gamma_1 + n_2 \\gamma_2}{n_1 + n_2}$",
+            "$\\frac{R}{\\gamma_1 + \\gamma_2 - 2}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$C_{v1} = \\frac{R}{\\gamma_1 - 1}, \\quad C_{v2} = \\frac{R}{\\gamma_2 - 1}$$\n$$C_{v,\\text{mix}} = \\frac{n_1 C_{v1} + n_2 C_{v2}}{n_1 + n_2} = \\frac{R}{n_1 + n_2}\\left[\\frac{n_1}{\\gamma_1 - 1} + \\frac{n_2}{\\gamma_2 - 1}\\right]$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the diameter of a gas molecule is $0.2\\text{ nm}$ and the number density is $3 \\times 10^{25}\\text{ m}^{-3}$, the mean free path is approximately: (Take $\\pi \\approx 3.14, \\sqrt{2} \\approx 1.414$)",
+          "image": "",
+          "options": [
+            "$1.88 \\times 10^{-7}\\text{ m}$",
+            "$3.76 \\times 10^{-7}\\text{ m}$",
+            "$0.94 \\times 10^{-7}\\text{ m}$",
+            "$5.64 \\times 10^{-7}\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\lambda = \\frac{1}{\\sqrt{2} n \\pi d^2} = \\frac{1}{1.414 \\times (3 \\times 10^{25}) \\times 3.14 \\times (0.2 \\times 10^{-9})^2}$$\n$$\\lambda = \\frac{1}{1.414 \\times 3 \\times 10^{25} \\times 3.14 \\times 4 \\times 10^{-20}} = \\frac{1}{5.33 \\times 10^6} \\approx 1.88 \\times 10^{-7}\\text{ m}$$"
+        }
+      ]
+    }
+  ]
+}
