@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-09-rotational-motion-1",
+  "title": "Rotational Motion - 1",
+  "syllabus": "Centre of mass of a two-particle system, Centre of mass of a rigid body, Basic concepts of rotational motion, Moment of a force, Torque, Angular momentum, Conservation of angular momentum and its applications",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two particles of mass $5\\text{ kg}$ and $10\\text{ kg}$ respectively are attached to the two ends of a rigid rod of length $1\\text{ m}$ with negligible mass. The centre of mass of the system from the $5\\text{ kg}$ particle is nearly at a distance of: (NEET 2020)",
+          "image": "",
+          "options": [
+            "$33\\text{ cm}$",
+            "$50\\text{ cm}$",
+            "$67\\text{ cm}$",
+            "$80\\text{ cm}$"
+          ],
+          "correctOption": 2,
+          "solution": "Taking the $5\\text{ kg}$ mass at the origin $(x_1 = 0)$ and the $10\\text{ kg}$ mass at $x_2 = 100\\text{ cm}$:\n$$x_{\\text{cm}} = \\frac{m_1 x_1 + m_2 x_2}{m_1 + m_2} = \\frac{(5)(0) + (10)(100)}{5 + 10} = \\frac{1000}{15} \\approx 66.67\\text{ cm} \\approx 67\\text{ cm}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A solid cylinder of mass $2\\text{ kg}$ and radius $4\\text{ cm}$ is rotating about its axis at the rate of $3\\text{ rpm}$. The torque required to stop it after $2\\pi\\text{ revolutions}$ is: (NEET 2019)",
+          "image": "",
+          "options": [
+            "$2 \\times 10^{-6}\\text{ N}\\cdot\\text{m}$",
+            "$2 \\times 10^{-3}\\text{ N}\\cdot\\text{m}$",
+            "$12 \\times 10^{-4}\\text{ N}\\cdot\\text{m}$",
+            "$2 \\times 10^{6}\\text{ N}\\cdot\\text{m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial angular velocity $\\omega_0 = 3\\text{ rpm} = 3 \\times \\frac{2\\pi}{60} = \\frac{\\pi}{10}\\text{ rad/s}$.\nAngular displacement $\\theta = 2\\pi \\times (2\\pi) = 4\\pi^2\\text{ rad}$.\nUsing $\\omega^2 = \\omega_0^2 - 2\\alpha\\theta \\implies 0 = \\left(\\frac{\\pi}{10}\\right)^2 - 2\\alpha(4\\pi^2) \\implies \\alpha = \\frac{\\pi^2/100}{8\\pi^2} = \\frac{1}{800}\\text{ rad/s}^2$.\nMoment of inertia of solid cylinder $I = \\frac{1}{2}MR^2 = \\frac{1}{2}(2)(0.04)^2 = 1.6 \\times 10^{-3}\\text{ kg}\\cdot\\text{m}^2$.\n$$\\tau = I\\alpha = (1.6 \\times 10^{-3}) \\times \\left(\\frac{1}{800}\\right) = 2 \\times 10^{-6}\\text{ N}\\cdot\\text{m}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A rope is wound around a hollow cylinder of mass $3\\text{ kg}$ and radius $40\\text{ cm}$. What is the angular acceleration of the cylinder if the rope is pulled with a force of $30\\text{ N}$? (NEET 2017)",
+          "image": "",
+          "options": [
+            "$0.25\\text{ rad/s}^2$",
+            "$25\\text{ rad/s}^2$",
+            "$5\\text{ rad/s}^2$",
+            "$25\\text{ m/s}^2$"
+          ],
+          "correctOption": 1,
+          "solution": "Moment of inertia of hollow cylinder $I = MR^2 = 3 \\times (0.4)^2 = 0.48\\text{ kg}\\cdot\\text{m}^2$.\nApplied torque $\\tau = F R = 30 \\times 0.4 = 12\\text{ N}\\cdot\\text{m}$.\n$$\\alpha = \\frac{\\tau}{I} = \\frac{12}{0.48} = 25\\text{ rad/s}^2$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two persons of masses $55\\text{ kg}$ and $65\\text{ kg}$ respectively are at the opposite ends of a boat. The length of the boat is $3.0\\text{ m}$ and weighs $100\\text{ kg}$. The $55\\text{ kg}$ man walks up to the $65\\text{ kg}$ man and sits with him. If the boat is in still water, the centre of mass of the system shifts by: (NEET 2012)",
+          "image": "",
+          "options": [
+            "$3.0\\text{ m}$",
+            "$2.3\\text{ m}$",
+            "Zero",
+            "$0.75\\text{ m}$"
+          ],
+          "correctOption": 2,
+          "solution": "Since the boat is in still water and there is no net external horizontal force acting on the entire system (two men + boat), the centre of mass of the system remains stationary relative to the water. The shift is zero."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Find the torque about the origin when a force $\\vec{F} = 3\\hat{j}\\text{ N}$ acts on a particle whose position vector is $\\vec{r} = 2\\hat{k}\\text{ m}$: (NEET 2020)",
+          "image": "",
+          "options": [
+            "$6\\hat{i}\\text{ N}\\cdot\\text{m}$",
+            "$-6\\hat{i}\\text{ N}\\cdot\\text{m}$",
+            "$6\\hat{k}\\text{ N}\\cdot\\text{m}$",
+            "$6\\hat{j}\\text{ N}\\cdot\\text{m}$"
+          ],
+          "correctOption": 1,
+          "solution": "$$\\vec{\\tau} = \\vec{r} \\times \\vec{F} = (2\\hat{k}) \\times (3\\hat{j}) = 6(\\hat{k} \\times \\hat{j}) = 6(-\\hat{i}) = -6\\hat{i}\\text{ N}\\cdot\\text{m}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A uniform rod of length $200\\text{ cm}$ and mass $500\\text{ g}$ is balanced on a wedge placed at $40\\text{ cm}$ mark. A mass of $2\\text{ kg}$ is suspended from the rod at $20\\text{ cm}$ and another unknown mass $m$ is suspended at $160\\text{ cm}$ mark as shown. To keep the rod in equilibrium, the value of $m$ is: (NEET 2021)",
+          "image": "",
+          "options": [
+            "$\\frac{1}{12}\\text{ kg}$",
+            "$\\frac{1}{6}\\text{ kg}$",
+            "$\\frac{1}{3}\\text{ kg}$",
+            "$\\frac{1}{2}\\text{ kg}$"
+          ],
+          "correctOption": 0,
+          "solution": "Wedge (fulcrum) is at $40\\text{ cm}$.\nCenter of gravity of the uniform rod is at its midpoint ($100\\text{ cm}$), which is at distance $(100 - 40) = 60\\text{ cm}$ to the right of fulcrum.\nSuspended mass $2\\text{ kg}$ is at distance $(40 - 20) = 20\\text{ cm}$ to the left of fulcrum.\nMass $m$ is at distance $(160 - 40) = 120\\text{ cm}$ to the right of fulcrum.\nTaking torque about the fulcrum in rotational equilibrium:\n$$(2\\text{ kg}) \\times 20 = (0.5\\text{ kg}) \\times 60 + m \\times 120$$\n$$40 = 30 + 120m \\implies 120m = 10 \\implies m = \\frac{10}{120} = \\frac{1}{12}\\text{ kg}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle of mass $m$ is projected with velocity $v$ making an angle of $45^\\circ$ with the horizontal. The magnitude of the angular momentum of the projectile about the point of projection when the particle is at its maximum height $h$ is: (NEET 2011)",
+          "image": "",
+          "options": [
+            "$\\frac{m v^3}{4\\sqrt{2} g}$",
+            "$\\frac{m v^3}{\\sqrt{2} g}$",
+            "$\\frac{m v^2}{4g}$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "At maximum height, vertical component of velocity is zero, and horizontal velocity is $v_x = v\\cos 45^\\circ = \\frac{v}{\\sqrt{2}}$.\nMaximum height $h = \\frac{v^2 \\sin^2 45^\\circ}{2g} = \\frac{v^2(1/2)}{2g} = \\frac{v^2}{4g}$.\nAngular momentum about the point of projection:\n$$L = m v_x h = m \\left(\\frac{v}{\\sqrt{2}}\\right) \\left(\\frac{v^2}{4g}\\right) = \\frac{m v^3}{4\\sqrt{2} g}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A circular platform is free to rotate in a horizontal plane about a vertical axis passing through its center. A tortoise is sitting at the edge of the platform. Now the platform is given an angular velocity $\\omega_0$. When the tortoise moves towards the center of the platform along a chord, the angular velocity of the platform will:",
+          "image": "",
+          "options": [
+            "Increase",
+            "Decrease",
+            "Remain unchanged",
+            "First decrease then increase"
+          ],
+          "correctOption": 0,
+          "solution": "As the tortoise moves towards the center of the platform, the distance $r$ of the tortoise from the axis of rotation decreases. Consequently, the total moment of inertia $I = I_{\\text{platform}} + m r^2$ decreases. Since no external torque acts on the system, angular momentum $L = I\\omega$ is conserved, meaning $\\omega$ must increase."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The center of mass of a system of particles does NOT depend on:",
+          "image": "",
+          "options": [
+            "Forces acting on the particles",
+            "Masses of the particles",
+            "Position of the particles",
+            "Relative distance between particles"
+          ],
+          "correctOption": 0,
+          "solution": "The center of mass is purely a geometrical property determined by the mass distribution and positions of the particles ($\\vec{R}_{\\text{cm}} = \\frac{\\sum m_i \\vec{r}_i}{\\sum m_i}$) and is completely independent of the forces acting between or upon them."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Three identical spheres, each of mass $M$, are situated at the vertices of an equilateral triangle of side $L$. The coordinates of the centre of mass of the system, taking one vertex at the origin and one side along the x-axis, are:",
+          "image": "",
+          "options": [
+            "$\\left(\\frac{L}{2}, \\frac{L}{2\\sqrt{3}}\\right)$",
+            "$\\left(\\frac{L}{2}, \\frac{L}{\\sqrt{3}}\\right)$",
+            "$\\left(\\frac{L}{3}, \\frac{L}{2\\sqrt{3}}\\right)$",
+            "$\\left(\\frac{L}{2}, \\frac{\\sqrt{3}L}{2}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "Positions of the three masses:\n$(x_1, y_1) = (0, 0)$, $(x_2, y_2) = (L, 0)$, $(x_3, y_3) = \\left(\\frac{L}{2}, \\frac{\\sqrt{3}L}{2}\\right)$.\n$$x_{\\text{cm}} = \\frac{M(0) + M(L) + M(L/2)}{3M} = \\frac{3L/2}{3} = \\frac{L}{2}$$\n$$y_{\\text{cm}} = \\frac{M(0) + M(0) + M(\\sqrt{3}L/2)}{3M} = \\frac{\\sqrt{3}L}{6} = \\frac{L}{2\\sqrt{3}}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force $\\vec{F} = (2\\hat{i} - 3\\hat{k})\\text{ N}$ acts on a point $\\vec{r} = (1\\hat{i} + 2\\hat{j} - \\hat{k})\\text{ m}$. The torque about the origin is:",
+          "image": "",
+          "options": [
+            "$-6\\hat{i} + \\hat{j} - 4\\hat{k}$",
+            "$-6\\hat{i} - \\hat{j} - 4\\hat{k}$",
+            "$6\\hat{i} - \\hat{j} + 4\\hat{k}$",
+            "$-6\\hat{i} + \\hat{j} + 4\\hat{k}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\vec{\\tau} = \\vec{r} \\times \\vec{F} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & 2 & -1 \\\\ 2 & 0 & -3 \\end{vmatrix} = \\hat{i}(-6 - 0) - \\hat{j}(-3 - (-2)) + \\hat{k}(0 - 4) = -6\\hat{i} + \\hat{j} - 4\\hat{k}\\text{ N}\\cdot\\text{m}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a net external torque acting on a rotating system is zero, which of the following quantities is conserved?",
+          "image": "",
+          "options": [
+            "Angular momentum",
+            "Linear momentum",
+            "Rotational kinetic energy",
+            "Angular velocity"
+          ],
+          "correctOption": 0,
+          "solution": "According to the rotational analogue of Newton's second law, $\\vec{\\tau}_{\\text{ext}} = \\frac{d\\vec{L}}{dt}$. When $\\vec{\\tau}_{\\text{ext}} = 0$, the total angular momentum $\\vec{L}$ remains constant (conserved)."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A thin uniform rod of length $L$ and mass $M$ is swinging freely about a horizontal axis through one of its ends. Its maximum angular velocity is $\\omega$. The maximum height to which its centre of mass rises above its lowest position is:",
+          "image": "",
+          "options": [
+            "$\\frac{L^2\\omega^2}{6g}$",
+            "$\\frac{L^2\\omega^2}{3g}$",
+            "$\\frac{L^2\\omega^2}{2g}$",
+            "$\\frac{L\\omega}{2g}$"
+          ],
+          "correctOption": 0,
+          "solution": "Moment of inertia about end axis: $I = \\frac{1}{3}ML^2$.\nRotational kinetic energy at lowest point: $K = \\frac{1}{2}I\\omega^2 = \\frac{1}{2}\\left(\\frac{1}{3}ML^2\\right)\\omega^2 = \\frac{1}{6}ML^2\\omega^2$.\nBy conservation of mechanical energy: $Mg h_{\\text{cm}} = \\frac{1}{6}ML^2\\omega^2 \\implies h_{\\text{cm}} = \\frac{L^2\\omega^2}{6g}$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A disc of mass $M$ and radius $R$ is rotating with angular velocity $\\omega_0$. Another identical disc at rest is placed coaxially onto it. If the two discs rotate together, the common angular velocity will be:",
+          "image": "",
+          "options": [
+            "$\\frac{\\omega_0}{2}$",
+            "$\\frac{\\omega_0}{4}$",
+            "$\\omega_0$",
+            "$2\\omega_0$"
+          ],
+          "correctOption": 0,
+          "solution": "By conservation of angular momentum about the common axis:\n$$I_1 \\omega_0 = (I_1 + I_2)\\omega \\implies I \\omega_0 = (I + I)\\omega = 2I\\omega \\implies \\omega = \\frac{\\omega_0}{2}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves in the $x\\text{-}y$ plane with a constant velocity $\\vec{v} = v\\hat{i}$ along the line $y = b$. Its angular momentum with respect to the origin:",
+          "image": "",
+          "options": [
+            "Remains constant in magnitude and direction",
+            "Increases linearly with time",
+            "Decreases linearly with time",
+            "Is zero at all instants"
+          ],
+          "correctOption": 0,
+          "solution": "Position vector $\\vec{r} = x\\hat{i} + b\\hat{j}$. Momentum $\\vec{p} = mv\\hat{i}$.\n$$\\vec{L} = \\vec{r} \\times \\vec{p} = (x\\hat{i} + b\\hat{j}) \\times (mv\\hat{i}) = -mvb\\,\\hat{k}$$\nSince $m, v,$ and $b$ are constants, the angular momentum vector remains strictly constant at all times."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "From a uniform circular disc of radius $R$, a circular hole of radius $R/2$ is cut out such that the rim of the hole touches the rim of the disc. The distance of the center of mass of the remaining part from the center of the original disc is:",
+          "image": "",
+          "options": [
+            "$\\frac{R}{6}$",
+            "$\\frac{R}{4}$",
+            "$\\frac{R}{3}$",
+            "$\\frac{R}{8}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the center of the original disc be at the origin $(0, 0)$ with mass $M_1 = \\sigma \\pi R^2 = M$.\nRemoved disc has radius $R/2$, area $\\pi(R/2)^2 = \\frac{\\pi R^2}{4}$, so mass $M_2 = M/4$ with center at $x_2 = R/2$.\n$$x_{\\text{cm}} = \\frac{M_1(0) - M_2(R/2)}{M_1 - M_2} = \\frac{-(M/4)(R/2)}{M - M/4} = \\frac{-MR/8}{3M/4} = -\\frac{R}{6}$$\nThus, the center of mass shifts by a distance of $R/6$ in the opposite direction."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The angular momentum of a system of particles is conserved:",
+          "image": "",
+          "options": [
+            "Only when the net external torque about the axis of rotation is zero",
+            "Always, under all conditions",
+            "When external force is zero",
+            "When internal forces are zero"
+          ],
+          "correctOption": 0,
+          "solution": "Conservation of angular momentum requires the net external torque about the chosen axis/reference point to be zero: $\\vec{\\tau}_{\\text{ext}} = \\frac{d\\vec{L}}{dt} = 0 \\implies \\vec{L} = \\text{constant}$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two bodies of masses $2\\text{ kg}$ and $4\\text{ kg}$ are moving with velocities $10\\text{ m/s}$ and $2\\text{ m/s}$ towards each other along a straight line. The velocity of the centre of mass of the system is:",
+          "image": "",
+          "options": [
+            "$2\\text{ m/s}$ in the direction of $2\\text{ kg}$ mass",
+            "$2\\text{ m/s}$ in the direction of $4\\text{ kg}$ mass",
+            "$6\\text{ m/s}$ in the direction of $2\\text{ kg}$ mass",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Taking direction of $2\\text{ kg}$ mass as positive:\n$$v_{\\text{cm}} = \\frac{m_1 v_1 + m_2 v_2}{m_1 + m_2} = \\frac{2(10) + 4(-2)}{2 + 4} = \\frac{20 - 8}{6} = \\frac{12}{6} = +2\\text{ m/s}$$\nThus, the velocity of the centre of mass is $2\\text{ m/s}$ along the direction of the $2\\text{ kg}$ mass."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A ballet dancer spins about a vertical axis at $2\\text{ rev/s}$ with her arms outstretched. When she folds her arms, her moment of inertia decreases to $40\\%$ of its initial value. Her new rotational speed will be:",
+          "image": "",
+          "options": [
+            "$5\\text{ rev/s}$",
+            "$4\\text{ rev/s}$",
+            "$2.5\\text{ rev/s}$",
+            "$8\\text{ rev/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "By conservation of angular momentum: $I_1 \\omega_1 = I_2 \\omega_2$.\nGiven $I_2 = 0.40 I_1$:\n$$I_1(2) = (0.40 I_1) \\omega_2 \\implies \\omega_2 = \\frac{2}{0.40} = 5\\text{ rev/s}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A couple produces:",
+          "image": "",
+          "options": [
+            "Purely rotational motion",
+            "Purely linear motion",
+            "Both linear and rotational motion",
+            "No motion"
+          ],
+          "correctOption": 0,
+          "solution": "A couple consists of two equal and opposite parallel forces whose lines of action do not coincide. The net resultant force is zero ($\\vec{F}_{\\text{net}} = 0$, so no translational acceleration), while the net torque is non-zero ($\\vec{\\tau} \\ne 0$), causing purely rotational motion."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A thin uniform rod of length $L$ is bent at its midpoint to form an L-shape at an angle of $90^\\circ$. The distance of the center of mass from the bend (corner) is:",
+          "image": "",
+          "options": [
+            "$\\frac{L}{4\\sqrt{2}}$",
+            "$\\frac{L}{2\\sqrt{2}}$",
+            "$\\frac{L}{4}$",
+            "$\\frac{L}{8}$"
+          ],
+          "correctOption": 0,
+          "solution": "Each segment has length $L/2$ and mass $M/2$.\nPlacing the corner at $(0, 0)$ with legs along the positive x and y axes:\nCenter of mass of segment 1 is at $(L/4, 0)$; center of mass of segment 2 is at $(0, L/4)$.\n$$x_{\\text{cm}} = \\frac{(M/2)(L/4) + 0}{M} = \\frac{L}{8}, \\quad y_{\\text{cm}} = \\frac{0 + (M/2)(L/4)}{M} = \\frac{L}{8}$$\nDistance from bend $= \\sqrt{x_{\\text{cm}}^2 + y_{\\text{cm}}^2} = \\sqrt{\\left(\\frac{L}{8}\\right)^2 + \\left(\\frac{L}{8}\\right)^2} = \\frac{\\sqrt{2}L}{8} = \\frac{L}{4\\sqrt{2}}$."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimensional formula of torque is identical to that of:",
+          "image": "",
+          "options": [
+            "Work",
+            "Power",
+            "Angular momentum",
+            "Force"
+          ],
+          "correctOption": 0,
+          "solution": "Torque $[\\tau] = [\\text{Force}][\\text{Distance}] = [\\text{M}\\text{L}\\text{T}^{-2}][\\text{L}] = [\\text{M}\\text{L}^2\\text{T}^{-2}]$.\nWork $[W] = [\\text{Force}][\\text{Distance}] = [\\text{M}\\text{L}^2\\text{T}^{-2}]$.\nThus, torque and work share identical dimensions."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the earth shrinks suddenly to half its present radius while its mass remains constant, the duration of a day will become:",
+          "image": "",
+          "options": [
+            "$6\\text{ hours}$",
+            "$12\\text{ hours}$",
+            "$3\\text{ hours}$",
+            "$48\\text{ hours}$"
+          ],
+          "correctOption": 0,
+          "solution": "Moment of inertia of solid sphere $I = \\frac{2}{5}MR^2 \\propto R^2$.\nWhen $R' = R/2 \\implies I' = I/4$.\nBy conservation of angular momentum: $I \\omega = I' \\omega' \\implies I\\left(\\frac{2\\pi}{T}\\right) = \\left(\\frac{I}{4}\\right)\\left(\\frac{2\\pi}{T'}\\right)$.\n$$T' = \\frac{T}{4} = \\frac{24\\text{ hours}}{4} = 6\\text{ hours}$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A projectile is launched from the ground. During its flight, the torque due to gravity about the point of projection:",
+          "image": "",
+          "options": [
+            "Increases continuously with time",
+            "Decreases continuously with time",
+            "Remains constant throughout",
+            "Is zero throughout the flight"
+          ],
+          "correctOption": 0,
+          "solution": "Position vector is $\\vec{r}(t) = (u_x t)\\hat{i} + \\left(u_y t - \\frac{1}{2}gt^2\\right)\\hat{j}$.\nForce due to gravity is $\\vec{F}_g = -mg\\hat{j}$.\nTorque about projection point $\\vec{\\tau} = \\vec{r} \\times \\vec{F}_g = (u_x t)\\hat{i} \\times (-mg\\hat{j}) = -(mg u_x t)\\hat{k}$.\nMagnitude of torque $\\tau = mg u_x t$, which increases linearly and continuously with time $t$."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A man of mass $M$ stands on a rotating horizontal turntable of moment of inertia $I$ which is rotating with angular speed $\\omega$. If the man walks towards the center of the turntable, the total kinetic energy of the system will:",
+          "image": "",
+          "options": [
+            "Increase",
+            "Decrease",
+            "Remain constant",
+            "Become zero"
+          ],
+          "correctOption": 0,
+          "solution": "Rotational kinetic energy can be written as $K = \\frac{L^2}{2I_{\\text{total}}}$.\nAs the man walks inward, $I_{\\text{total}}$ decreases. Since angular momentum $L$ is conserved, $K \\propto \\frac{1}{I_{\\text{total}}}$, so the kinetic energy increases (the work done by the man's muscles against the centrifugal force is converted into kinetic energy)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Internal forces in a system can change:",
+          "image": "",
+          "options": [
+            "Total kinetic energy but not total linear momentum",
+            "Total linear momentum but not total kinetic energy",
+            "Both total kinetic energy and total linear momentum",
+            "Neither total kinetic energy nor total linear momentum"
+          ],
+          "correctOption": 0,
+          "solution": "Internal forces always sum to zero in pairs by Newton's third law, so they cannot change the total linear momentum or velocity of the centre of mass. However, internal work can be done, which can alter the total kinetic energy (such as in an internal explosion or inelastic collision)."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force $\\vec{F} = (a\\hat{i} + 3\\hat{j} + 6\\hat{k})\\text{ N}$ is acting at a point $\\vec{r} = (2\\hat{i} - 6\\hat{j} - 12\\hat{k})\\text{ m}$. The value of $a$ for which angular momentum about the origin is conserved is:",
+          "image": "",
+          "options": [
+            "$-1$",
+            "$1$",
+            "$2$",
+            "$-2$"
+          ],
+          "correctOption": 0,
+          "solution": "Angular momentum is conserved when torque $\\vec{\\tau} = \\vec{r} \\times \\vec{F} = \\vec{0}$, meaning $\\vec{r}$ and $\\vec{F}$ must be parallel.\n$$\\frac{r_x}{F_x} = \\frac{r_y}{F_y} = \\frac{r_z}{F_z} \\implies \\frac{2}{a} = \\frac{-6}{3} = \\frac{-12}{6} = -2$$\n$$\\frac{2}{a} = -2 \\implies a = -1$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The center of mass of a non-uniform rod of length $L$ whose linear mass density varies as $\\lambda(x) = k x$ (where $k$ is a constant and $x$ is the distance from one end) is located at a distance of:",
+          "image": "",
+          "options": [
+            "$\\frac{2}{3}L$",
+            "$\\frac{1}{3}L$",
+            "$\\frac{3}{4}L$",
+            "$\\frac{1}{2}L$"
+          ],
+          "correctOption": 0,
+          "solution": "$$M = \\int_0^L \\lambda\\,dx = \\int_0^L k x\\,dx = \\frac{k L^2}{2}$$\n$$\\int_0^L x \\lambda\\,dx = \\int_0^L k x^2\\,dx = \\frac{k L^3}{3}$$\n$$x_{\\text{cm}} = \\frac{\\int x\\,dm}{M} = \\frac{k L^3 / 3}{k L^2 / 2} = \\frac{2}{3}L$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle of mass $m$ is moving in a circular path of radius $r$ with uniform speed $v$. The angular momentum of the particle about the center of the circle is:",
+          "image": "",
+          "options": [
+            "$mvr$",
+            "$\\frac{1}{2}mvr$",
+            "$mv/r$",
+            "$mvr^2$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\vec{L} = \\vec{r} \\times \\vec{p} \\implies |\\vec{L}| = r p \\sin 90^\\circ = r (mv) = mvr$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two particles of masses $m_1 = 1\\text{ kg}$ and $m_2 = 3\\text{ kg}$ are located at position vectors $\\vec{r}_1 = (2\\hat{i} + 3\\hat{j})\\text{ m}$ and $\\vec{r}_2 = (-2\\hat{i} - 5\\hat{j})\\text{ m}$. The position vector of their centre of mass is:",
+          "image": "",
+          "options": [
+            "$-1\\hat{i} - 3\\hat{j}$",
+            "$1\\hat{i} + 3\\hat{j}$",
+            "$-2\\hat{i} - 2\\hat{j}$",
+            "$0\\hat{i} - 1\\hat{j}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\vec{R}_{\\text{cm}} = \\frac{m_1 \\vec{r}_1 + m_2 \\vec{r}_2}{m_1 + m_2} = \\frac{1(2\\hat{i} + 3\\hat{j}) + 3(-2\\hat{i} - 5\\hat{j})}{1 + 3}$$\n$$\\vec{R}_{\\text{cm}} = \\frac{(2 - 6)\\hat{i} + (3 - 15)\\hat{j}}{4} = \\frac{-4\\hat{i} - 12\\hat{j}}{4} = -\\hat{i} - 3\\hat{j}\\text{ m}$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A wheel of moment of inertia $2.5\\text{ kg}\\cdot\\text{m}^2$ is rotating at an initial angular speed of $40\\text{ rad/s}$. A constant braking torque of $10\\text{ N}\\cdot\\text{m}$ is applied. The time required to bring the wheel to rest is:",
+          "image": "",
+          "options": [
+            "$10\\text{ s}$",
+            "$5\\text{ s}$",
+            "$20\\text{ s}$",
+            "$2.5\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Angular retardation $\\alpha = \\frac{\\tau}{I} = \\frac{10}{2.5} = 4\\text{ rad/s}^2$.\nUsing $\\omega = \\omega_0 - \\alpha t \\implies 0 = 40 - 4t \\implies t = 10\\text{ s}$."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following bodies has its centre of mass lying OUTSIDE the material body?",
+          "image": "",
+          "options": [
+            "A uniform metallic ring",
+            "A solid sphere",
+            "A solid cylinder",
+            "A rectangular wooden block"
+          ],
+          "correctOption": 0,
+          "solution": "For a uniform circular ring, the centre of mass is at its geometric centre, which lies in the open central space outside the solid material of the ring."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves with constant speed along an elliptical path. The angular momentum of the particle about one of the foci:",
+          "image": "",
+          "options": [
+            "Varies with its position along the orbit",
+            "Is strictly constant",
+            "Is always zero",
+            "Is maximum when the particle is closest to that focus"
+          ],
+          "correctOption": 0,
+          "solution": "$L = m v r_{\\perp}$. While moving along an ellipse at a constant speed, the perpendicular distance $r_{\\perp}$ from the focus to the velocity vector varies continuously. Thus, the angular momentum varies with position."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two masses $m_1 = 2\\text{ kg}$ and $m_2 = 8\\text{ kg}$ are separated by a distance of $10\\text{ cm}$. If the $2\\text{ kg}$ mass is shifted towards the centre of mass by $2\\text{ cm}$, by what distance must the $8\\text{ kg}$ mass be moved so that the position of the centre of mass remains unchanged?",
+          "image": "",
+          "options": [
+            "$0.5\\text{ cm}$ towards CM",
+            "$0.5\\text{ cm}$ away from CM",
+            "$2.0\\text{ cm}$ towards CM",
+            "$1.0\\text{ cm}$ away from CM"
+          ],
+          "correctOption": 0,
+          "solution": "For unchanged centre of mass position: $\\Delta x_{\\text{cm}} = \\frac{m_1 \\Delta x_1 + m_2 \\Delta x_2}{m_1 + m_2} = 0$.\n$$m_1 \\Delta x_1 + m_2 \\Delta x_2 = 0 \\implies 2(+2) + 8(\\Delta x_2) = 0 \\implies \\Delta x_2 = -\\frac{4}{8} = -0.5\\text{ cm}$$\nThus, the $8\\text{ kg}$ mass must be shifted $0.5\\text{ cm}$ towards the centre of mass."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force $\\vec{F} = (2\\hat{i} + 3\\hat{j} - 4\\hat{k})\\text{ N}$ produces a torque about a point. If the position vector with respect to that point is $\\vec{r} = (4\\hat{i} + 2\\hat{j} + 3\\hat{k})\\text{ m}$, the value of $\\vec{\\tau} \\cdot \\vec{F}$ is:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$29$",
+            "$-15$",
+            "$50$"
+          ],
+          "correctOption": 0,
+          "solution": "By vector properties, torque $\\vec{\\tau} = \\vec{r} \\times \\vec{F}$ is mutually perpendicular to both $\\vec{r}$ and $\\vec{F}$. Therefore, the scalar dot product $\\vec{\\tau} \\cdot \\vec{F} = 0$ identically."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle of mass $m$ is moving with constant velocity $v$ parallel to the x-axis along the line $y = 4\\text{ m}$. The magnitude of its angular momentum about the origin is:",
+          "image": "",
+          "options": [
+            "$4mv$",
+            "$2mv$",
+            "Dependent on $x$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "$$L = m v r_{\\perp} = m v (y) = 4mv$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A rod of weight $W$ is supported by two parallel knife edges $A$ and $B$ and is in equilibrium in a horizontal position. The knives are at a distance $d$ from each other. The centre of mass of the rod is at distance $x$ from $A$. The normal reaction at $A$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{W(d - x)}{d}$",
+            "$\\frac{Wx}{d}$",
+            "$\\frac{Wd}{x}$",
+            "$\\frac{W(d - x)}{x}$"
+          ],
+          "correctOption": 0,
+          "solution": "Taking torque about knife edge $B$ for rotational equilibrium:\n$$N_A \\times d - W \\times (d - x) = 0 \\implies N_A = \\frac{W(d - x)}{d}$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A bomb at rest explodes into two fragments of masses $M_1$ and $M_2$ with velocities $v_1$ and $v_2$ respectively. The ratio of their kinetic energies $K_1 / K_2$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{M_2}{M_1}$",
+            "$\\frac{M_1}{M_2}$",
+            "$\\frac{M_1^2}{M_2^2}$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "By conservation of linear momentum, $p_1 = p_2$.\nKinetic energy $K = \\frac{p^2}{2M}$.\n$$\\frac{K_1}{K_2} = \\frac{p_1^2 / (2M_1)}{p_2^2 / (2M_2)} = \\frac{M_2}{M_1}$$"
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A fly-wheel rotating about its fixed central axis has an angular momentum $L$. If its kinetic energy is reduced to half, its new angular momentum will be:",
+          "image": "",
+          "options": [
+            "$\\frac{L}{\\sqrt{2}}$",
+            "$\\frac{L}{2}$",
+            "$\\sqrt{2}L$",
+            "$2L$"
+          ],
+          "correctOption": 0,
+          "solution": "Rotational kinetic energy $K = \\frac{L^2}{2I} \\implies L = \\sqrt{2IK} \\propto \\sqrt{K}$.\nWhen $K' = K/2$:\n$$L' = \\sqrt{2I(K/2)} = \\frac{\\sqrt{2IK}}{\\sqrt{2}} = \\frac{L}{\\sqrt{2}}$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The rate of change of total angular momentum of a system of particles about a point is equal to:",
+          "image": "",
+          "options": [
+            "Net external torque on the system about that point",
+            "Net internal torque on the system",
+            "Net external force on the system",
+            "Total rotational kinetic energy"
+          ],
+          "correctOption": 0,
+          "solution": "According to the rotational form of Newton's second law for a system of particles: $\\frac{d\\vec{L}_{\\text{total}}}{dt} = \\vec{\\tau}_{\\text{ext}}$."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A uniform square sheet of side $a$ has a small square of side $a/2$ removed from one corner. The shift in the center of mass of the remaining portion from the original center is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\sqrt{2}a}{12}$",
+            "$\\frac{a}{12}$",
+            "$\\frac{\\sqrt{2}a}{6}$",
+            "$\\frac{a}{6}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let original square center be at $(0, 0)$ with mass $M$.\nRemoved corner square has mass $m = M/4$ with center at $(a/4, a/4)$.\n$$x_{\\text{cm}} = \\frac{M(0) - (M/4)(a/4)}{M - M/4} = \\frac{-Ma/16}{3M/4} = -\\frac{a}{12}$$\n$$y_{\\text{cm}} = -\\frac{a}{12}$$\nDistance of shift $= \\sqrt{x_{\\text{cm}}^2 + y_{\\text{cm}}^2} = \\sqrt{\\left(-\\frac{a}{12}\\right)^2 + \\left(-\\frac{a}{12}\\right)^2} = \\frac{\\sqrt{2}a}{12}$."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the polar ice caps of the earth melt and the resulting water flows towards the equator, then the length of the day will:",
+          "image": "",
+          "options": [
+            "Increase",
+            "Decrease",
+            "Remain unchanged",
+            "First decrease then increase"
+          ],
+          "correctOption": 0,
+          "solution": "When water redistributes towards the equator, mass shifts farther away from the Earth's rotational axis, increasing the moment of inertia $I$. By conservation of angular momentum ($L = I\\omega = \\text{constant}$), angular velocity $\\omega$ decreases, causing the time period of one rotation ($T = \\frac{2\\pi}{\\omega}$, length of the day) to increase."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two particles of masses $1\\text{ kg}$ and $2\\text{ kg}$ are projected vertically upwards simultaneously with speeds $20\\text{ m/s}$ and $10\\text{ m/s}$ respectively. The acceleration of their centre of mass during flight is: $(g = 10\\text{ m/s}^2)$",
+          "image": "",
+          "options": [
+            "$10\\text{ m/s}^2\\text{ downwards}$",
+            "$5\\text{ m/s}^2\\text{ downwards}$",
+            "$0\\text{ m/s}^2$",
+            "$15\\text{ m/s}^2\\text{ downwards}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$a_{\\text{cm}} = \\frac{m_1 a_1 + m_2 a_2}{m_1 + m_2} = \\frac{1(-g) + 2(-g)}{1 + 2} = \\frac{-3g}{3} = -g = 10\\text{ m/s}^2\\text{ downwards}$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body is in rotational equilibrium if:",
+          "image": "",
+          "options": [
+            "Vector sum of all external torques acting on it is zero",
+            "Vector sum of all external forces acting on it is zero",
+            "Total kinetic energy is zero",
+            "Angular momentum is zero"
+          ],
+          "correctOption": 0,
+          "solution": "Rotational equilibrium requires that the net external torque about any arbitrary point is zero: $\\sum \\vec{\\tau}_{\\text{ext}} = \\vec{0}$."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle of mass $m$ is moving with constant speed along a straight line. What is the torque acting on this particle about an arbitrary origin?",
+          "image": "",
+          "options": [
+            "Zero",
+            "Constant and non-zero",
+            "Varies linearly with time",
+            "Varies inversely with distance"
+          ],
+          "correctOption": 0,
+          "solution": "Moving with constant velocity means acceleration is zero ($\\vec{a} = 0$), so net external force $\\vec{F} = \\vec{0}$. Hence, torque $\\vec{\\tau} = \\vec{r} \\times \\vec{F} = \\vec{0}$."
+        }
+      ]
+    }
+  ]
+}
