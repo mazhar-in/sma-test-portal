@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-14-thermal-properties-of-matter",
+  "title": "Thermal Properties of Matter",
+  "syllabus": "Heat, Temperature, Thermal expansion, Specific heat capacity, Calorimetry, Change of state, Latent heat, Heat transfer - Conduction, Convection, Radiation, Newton's law of cooling, Stefan-Boltzmann law, Wien's displacement law",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A cup of coffee cools from $90^\\circ\\text{C}$ to $80^\\circ\\text{C}$ in $t\\text{ minutes}$, when the room temperature is $20^\\circ\\text{C}$. The time taken by a similar cup of coffee to cool from $80^\\circ\\text{C}$ to $60^\\circ\\text{C}$ at a room temperature of $20^\\circ\\text{C}$ is: (NEET 2021)",
+          "image": "",
+          "options": [
+            "$\\frac{13}{10}t$",
+            "$\\frac{13}{5}t$",
+            "$\\frac{10}{13}t$",
+            "$\\frac{5}{13}t$"
+          ],
+          "correctOption": 1,
+          "solution": "By Newton's Law of Cooling: $\\frac{T_1 - T_2}{\\Delta t} = K\\left(\\frac{T_1 + T_2}{2} - T_0\\right)$.\nCase 1: $\\frac{90 - 80}{t} = K(85 - 20) \\implies \\frac{10}{t} = 65K \\implies K = \\frac{10}{65t} = \\frac{2}{13t}$.\nCase 2: $\\frac{80 - 60}{t'} = K(70 - 20) \\implies \\frac{20}{t'} = 50K = 50\\left(\\frac{2}{13t}\\right) = \\frac{100}{13t}$.\n$$t' = \\frac{20 \\times 13t}{100} = \\frac{13}{5}t$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A spherical black body with a radius of $12\\text{ cm}$ radiates $450\\text{ W}$ power at $500\\text{ K}$. If the radius were halved and the temperature doubled, the power radiated in watt would be: (NEET 2017)",
+          "image": "",
+          "options": [
+            "$225$",
+            "$450$",
+            "$1800$",
+            "$900$"
+          ],
+          "correctOption": 2,
+          "solution": "From Stefan-Boltzmann Law: $P = \\sigma A T^4 = \\sigma (4\\pi R^2) T^4 \\propto R^2 T^4$.\n$$\\frac{P'}{P} = \\left(\\frac{R'}{R}\\right)^2 \\left(\\frac{T'}{T}\\right)^4 = \\left(\\frac{1}{2}\\right)^2 (2)^4 = \\frac{1}{4} \\times 16 = 4$$\n$$P' = 4 \\times 450\\text{ W} = 1800\\text{ W}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The power radiated by a black body is $P$ and it radiates maximum energy at wavelength $\\lambda_0$. If the temperature of the black body is now changed so that it radiates maximum energy at wavelength $\\frac{3}{4}\\lambda_0$, the power radiated by it becomes $n P$. The value of $n$ is: (NEET 2018)",
+          "image": "",
+          "options": [
+            "$\\frac{3}{4}$",
+            "$\\frac{4}{3}$",
+            "$\\frac{256}{81}$",
+            "$\\frac{81}{256}$"
+          ],
+          "correctOption": 2,
+          "solution": "By Wien's Displacement Law: $\\lambda_m T = \\text{constant} \\implies T \\propto \\frac{1}{\\lambda_m}$.\nWhen $\\lambda_m' = \\frac{3}{4}\\lambda_0 \\implies T' = \\frac{4}{3}T$.\nBy Stefan's Law: $P \\propto T^4$.\n$$P' = P\\left(\\frac{T'}{T}\\right)^4 = P\\left(\\frac{4}{3}\\right)^4 = \\frac{256}{81}P \\implies n = \\frac{256}{81}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two rods $A$ and $B$ of different materials are welded together end to end as shown in figure. Their thermal conductivities are $K_1$ and $K_2$. The composite rod is insulated on its sides and the two ends are maintained at temperatures $T_1$ and $T_2$ ($T_1 > T_2$). If the rods have the same length $L$ and same cross-sectional area $A$, the equivalent thermal conductivity $K$ of the composite rod in series is: (NEET 2017)",
+          "image": "",
+          "options": [
+            "$\\frac{2K_1 K_2}{K_1 + K_2}$",
+            "$\\frac{K_1 + K_2}{2}$",
+            "$\\frac{K_1 K_2}{K_1 + K_2}$",
+            "$\\frac{K_1 + K_2}{K_1 K_2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Thermal resistances in series: $R_{\\text{eq}} = R_1 + R_2$.\n$$\\frac{2L}{K A} = \\frac{L}{K_1 A} + \\frac{L}{K_2 A} \\implies \\frac{2}{K} = \\frac{1}{K_1} + \\frac{1}{K_2} = \\frac{K_1 + K_2}{K_1 K_2}$$\n$$K = \\frac{2K_1 K_2}{K_1 + K_2}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A piece of ice falls from a height $h$ so that it melts completely. Only one-quarter of the heat produced is absorbed by the ice and all energy of ice gets converted into heat during its fall. The value of $h$ is: (Latent heat of ice is $3.4 \\times 10^5\\text{ J/kg}$ and $g = 10\\text{ m/s}^2$) (NEET 2016)",
+          "image": "",
+          "options": [
+            "$136\\text{ km}$",
+            "$34\\text{ km}$",
+            "$544\\text{ km}$",
+            "$68\\text{ km}$"
+          ],
+          "correctOption": 0,
+          "solution": "Potential energy converted into heat $Q_{\\text{total}} = mgh$.\nHeat absorbed by ice: $Q_{\\text{absorbed}} = \\frac{1}{4}(mgh) = m L$.\n$$h = \\frac{4L}{g} = \\frac{4 \\times 3.4 \\times 10^5}{10} = 1.36 \\times 10^5\\text{ m} = 136\\text{ km}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The value of coefficient of volume expansion of glycerin is $5 \\times 10^{-4}\\text{ K}^{-1}$. The fractional change in the density of glycerin for a rise of $40^\\circ\\text{C}$ in its temperature is: (NEET 2015)",
+          "image": "",
+          "options": [
+            "$0.020$",
+            "$0.025$",
+            "$0.010$",
+            "$0.015$"
+          ],
+          "correctOption": 0,
+          "solution": "Density variation with temperature: $\\rho = \\frac{\\rho_0}{1 + \\gamma \\Delta T} \\approx \\rho_0 (1 - \\gamma \\Delta T)$.\n$$\\text{Fractional change in density } \\left|\\frac{\\Delta\\rho}{\\rho_0}\\right| = \\gamma \\Delta T = (5 \\times 10^{-4}\\text{ K}^{-1}) \\times 40 = 200 \\times 10^{-4} = 0.020$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\alpha, \\beta,$ and $\\gamma$ are coefficients of linear, superficial, and volume expansion of a solid respectively, then the relation between them is:",
+          "image": "",
+          "options": [
+            "$\\alpha : \\beta : \\gamma = 1 : 2 : 3$",
+            "$\\alpha : \\beta : \\gamma = 3 : 2 : 1$",
+            "$\\alpha : \\beta : \\gamma = 1 : 1 : 1$",
+            "$\\alpha : \\beta : \\gamma = 1 : 4 : 9$"
+          ],
+          "correctOption": 0,
+          "solution": "For an isotropic solid, $\\beta = 2\\alpha$ and $\\gamma = 3\\alpha$.\nTherefore, $\\frac{\\alpha}{1} = \\frac{\\beta}{2} = \\frac{\\gamma}{3} \\implies \\alpha : \\beta : \\gamma = 1 : 2 : 3$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A bimetallic strip made of aluminum ($\\alpha_{\\text{Al}} = 23 \\times 10^{-6}\\text{ K}^{-1}$) and steel ($\\alpha_{\\text{steel}} = 11 \\times 10^{-6}\\text{ K}^{-1}$) is heated. The strip will:",
+          "image": "",
+          "options": [
+            "Bend with aluminum on the outer convex side",
+            "Bend with steel on the outer convex side",
+            "Remain completely straight",
+            "Twist into a helix"
+          ],
+          "correctOption": 0,
+          "solution": "Since $\\alpha_{\\text{Al}} > \\alpha_{\\text{steel}}$, aluminum expands more than steel upon heating, forcing it to form the longer outer convex arc of the bent strip."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A pendulum clock shows correct time at $20^\\circ\\text{C}$. If the coefficient of linear expansion of the pendulum rod is $\\alpha = 1.2 \\times 10^{-5\\circ}\\text{C}^{-1}$, how many seconds will it gain or lose per day at $40^\\circ\\text{C}$?",
+          "image": "",
+          "options": [
+            "Lose $10.37\\text{ s/day}$",
+            "Gain $10.37\\text{ s/day}$",
+            "Lose $5.18\\text{ s/day}$",
+            "Gain $5.18\\text{ s/day}$"
+          ],
+          "correctOption": 0,
+          "solution": "Fractional change in period: $\\frac{\\Delta T}{T} = \\frac{1}{2}\\alpha \\Delta\\theta$.\n$$\\Delta t = \\frac{1}{2}\\alpha \\Delta\\theta \\times 86400 = \\frac{1}{2}(1.2 \\times 10^{-5})(40 - 20) \\times 86400 = 1.2 \\times 10^{-4} \\times 86400 = 10.368\\text{ s/day}$$\nAs temperature rises, length increases, time period increases, and the clock runs slow (loses time)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a water anomalous expansion experiment, as water is heated from $0^\\circ\\text{C}$ to $10^\\circ\\text{C}$, its volume:",
+          "image": "",
+          "options": [
+            "First decreases to a minimum at $4^\\circ\\text{C}$ and then increases",
+            "Increases continuously",
+            "Decreases continuously",
+            "First increases and then decreases"
+          ],
+          "correctOption": 0,
+          "solution": "Due to anomalous expansion, water contracts between $0^\\circ\\text{C}$ and $4^\\circ\\text{C}$ (maximum density at $4^\\circ\\text{C}$) and expands normally for temperatures above $4^\\circ\\text{C}$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "$100\\text{ g}$ of ice at $0^\\circ\\text{C}$ is mixed with $100\\text{ g}$ of water at $80^\\circ\\text{C}$. The final equilibrium temperature of the mixture is: (Latent heat of fusion of ice $= 80\\text{ cal/g}$, specific heat of water $= 1\\text{ cal/g}\\cdot^\\circ\\text{C}$)",
+          "image": "",
+          "options": [
+            "$0^\\circ\\text{C}$",
+            "$20^\\circ\\text{C}$",
+            "$40^\\circ\\text{C}$",
+            "$10^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "Heat lost by $100\\text{ g}$ water cooling from $80^\\circ\\text{C}$ to $0^\\circ\\text{C}$: $Q_{\\text{loss}} = 100 \\times 1 \\times 80 = 8000\\text{ cal}$.\nHeat required to melt all $100\\text{ g}$ ice at $0^\\circ\\text{C}$: $Q_{\\text{req}} = 100 \\times 80 = 8000\\text{ cal}$.\nSince $Q_{\\text{loss}} = Q_{\\text{req}}$, all ice melts into water at exactly $0^\\circ\\text{C}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "$1\\text{ g}$ of steam at $100^\\circ\\text{C}$ is passed into $1\\text{ g}$ of ice at $0^\\circ\\text{C}$. The mass of water present in the calorimeter at thermal equilibrium is: ($L_{\\text{vap}} = 540\\text{ cal/g}, L_{\\text{fus}} = 80\\text{ cal/g}$)",
+          "image": "",
+          "options": [
+            "$2.0\\text{ g}$",
+            "$1.33\\text{ g}$",
+            "$1.5\\text{ g}$",
+            "$1.0\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "Heat needed to melt $1\\text{ g}$ ice and warm to $100^\\circ\\text{C}$: $Q_1 = 1(80) + 1(1)(100) = 180\\text{ cal}$.\nHeat released by $1\\text{ g}$ steam condensing at $100^\\circ\\text{C}$: $Q_2 = 1 \\times 540 = 540\\text{ cal}$.\nSince $Q_2 > Q_1$, all ice melts into water and only a fraction $m_s = \\frac{180}{540} = \\frac{1}{3}\\text{ g}$ of steam condenses. The final equilibrium temperature is $100^\\circ\\text{C}$, and total water mass $= 1 + \\frac{1}{3} = 1.33\\text{ g}$ (or $2.0\\text{ g}$ total system mass)."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A cylindrical metallic rod of length $0.5\\text{ m}$ and cross-sectional area $10^{-4}\\text{ m}^2$ conducts heat at a rate of $20\\text{ W}$. If the thermal conductivity is $400\\text{ W/m}\\cdot\\text{K}$, the temperature difference across the rod ends is:",
+          "image": "",
+          "options": [
+            "$250\\text{ K}$",
+            "$500\\text{ K}$",
+            "$125\\text{ K}$",
+            "$50\\text{ K}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\frac{dQ}{dt} = \\frac{K A \\Delta T}{L} \\implies 20 = \\frac{400 \\times 10^{-4} \\times \\Delta T}{0.5}$$\n$$20 = 0.08 \\times \\Delta T \\implies \\Delta T = \\frac{20}{0.08} = 250\\text{ K}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two metallic spheres of radii $r_1$ and $r_2$ ($r_1 = 2r_2$) are made of the same material and have the same surface finish. Both are heated to the same initial temperature and left in the same surroundings. The ratio of their initial rates of cooling is:",
+          "image": "",
+          "options": [
+            "$1 : 2$",
+            "$2 : 1$",
+            "$1 : 4$",
+            "$4 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Rate of cooling $-\\frac{dT}{dt} = \\frac{\\sigma A e (T^4 - T_0^4)}{m s} = \\frac{\\sigma (4\\pi r^2) e (T^4 - T_0^4)}{(\\frac{4}{3}\\pi r^3 \\rho) s} \\propto \\frac{1}{r}$.\n$$\\frac{(-dT/dt)_1}{(-dT/dt)_2} = \\frac{r_2}{r_1} = \\frac{r_2}{2r_2} = 1 : 2$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "According to Prevost's theory of heat exchange:",
+          "image": "",
+          "options": [
+            "All bodies at temperatures above absolute zero radiate and absorb thermal energy simultaneously",
+            "Bodies radiate heat only when their temperature is higher than surroundings",
+            "Bodies absorb heat only when their temperature is lower than surroundings",
+            "Thermal radiation ceases at $0^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "Prevost's theory asserts that all bodies at all absolute temperatures above $0\\text{ K}$ emit thermal radiation constantly to their surroundings and absorb radiation from them at all times."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The spectral energy distribution curve of black body radiation at absolute temperature $T$ exhibits a peak at wavelength $\\lambda_m$. As $T$ increases, the peak shifts towards:",
+          "image": "",
+          "options": [
+            "Shorter wavelengths according to $\\lambda_m \\propto T^{-1}$",
+            "Longer wavelengths according to $\\lambda_m \\propto T$",
+            "Shorter wavelengths according to $\\lambda_m \\propto T^{-2}$",
+            "Longer wavelengths according to $\\lambda_m \\propto T^4$"
+          ],
+          "correctOption": 0,
+          "solution": "By Wien's displacement law, $\\lambda_m T = b = \\text{constant} \\implies \\lambda_m \\propto T^{-1}$. Increasing temperature shifts the emission peak towards shorter wavelengths."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which mode of heat transfer does NOT require any material medium for propagation?",
+          "image": "",
+          "options": [
+            "Radiation",
+            "Conduction",
+            "Convection",
+            "Advection"
+          ],
+          "correctOption": 0,
+          "solution": "Thermal radiation travels as electromagnetic waves in the infrared spectrum and propagates through vacuum without requiring a material medium."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A metal rod of length $100\\text{ cm}$ expands by $0.1\\text{ cm}$ when heated from $0^\\circ\\text{C}$ to $100^\\circ\\text{C}$. The coefficient of linear expansion $\\alpha$ of the metal is:",
+          "image": "",
+          "options": [
+            "$1.0 \\times 10^{-5\\circ}\\text{C}^{-1}$",
+            "$1.0 \\times 10^{-4\\circ}\\text{C}^{-1}$",
+            "$2.0 \\times 10^{-5\\circ}\\text{C}^{-1}$",
+            "$1.0 \\times 10^{-6\\circ}\\text{C}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\Delta L = L_0 \\alpha \\Delta T \\implies 0.1\\text{ cm} = 100\\text{ cm} \\times \\alpha \\times 100^\\circ\\text{C}$$\n$$\\alpha = \\frac{0.1}{10000} = 1.0 \\times 10^{-5\\circ}\\text{C}^{-1}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two slabs of equal thickness $d$ and thermal conductivities $K_1$ and $K_2$ are placed side-by-side in parallel. The equivalent thermal conductivity of the combination is:",
+          "image": "",
+          "options": [
+            "$\\frac{K_1 + K_2}{2}$",
+            "$\\frac{2K_1 K_2}{K_1 + K_2}$",
+            "$\\sqrt{K_1 K_2}$",
+            "$\\frac{K_1 K_2}{K_1 + K_2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Thermal resistances in parallel: $\\frac{1}{R_{\\text{eq}}} = \\frac{1}{R_1} + \\frac{1}{R_2}$.\n$$\\frac{K_{\\text{eq}}(2A)}{d} = \\frac{K_1 A}{d} + \\frac{K_2 A}{d} \\implies 2K_{\\text{eq}} = K_1 + K_2 \\implies K_{\\text{eq}} = \\frac{K_1 + K_2}{2}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Kirchhoff's law of thermal radiation states that at any given temperature, for all bodies, the ratio of emissive power to absorptive power is equal to:",
+          "image": "",
+          "options": [
+            "Emissive power of a perfectly black body at the same temperature",
+            "Absorptive power of a perfectly black body",
+            "Constant independent of wavelength and temperature",
+            "Total radiant energy of the surrounding enclosure"
+          ],
+          "correctOption": 0,
+          "solution": "Kirchhoff's law states that $\\frac{e_\\lambda}{a_\\lambda} = E_\\lambda$, where $E_\\lambda$ is the emissive power of a perfectly black body at that wavelength and temperature ('good absorbers are good emitters')."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A calorimeter contains $50\\text{ g}$ of water at $20^\\circ\\text{C}$. When $50\\text{ g}$ of water at $40^\\circ\\text{C}$ is added, the resulting temperature is $28^\\circ\\text{C}$. The water equivalent of the calorimeter is:",
+          "image": "",
+          "options": [
+            "$25\\text{ g}$",
+            "$10\\text{ g}$",
+            "$15\\text{ g}$",
+            "$20\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "Heat lost by warm water: $Q_{\\text{loss}} = 50 \\times 1 \\times (40 - 28) = 50 \\times 12 = 600\\text{ cal}$.\nHeat gained by cold water and calorimeter of water equivalent $W$:\n$$Q_{\\text{gain}} = (50 + W) \\times 1 \\times (28 - 20) = 8(50 + W)$$\n$$600 = 400 + 8W \\implies 8W = 200 \\implies W = 25\\text{ g}$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Solar constant $S$ is the solar radiation energy received per unit area per unit time at the Earth's mean distance $R_{\\text{SE}}$ from the Sun. If $R_s$ is the radius of Sun and $T$ is its surface temperature, then $S$ equals:",
+          "image": "",
+          "options": [
+            "$\\sigma T^4 \\left(\\frac{R_s}{R_{\\text{SE}}}\\right)^2$",
+            "$\\sigma T^4 \\left(\\frac{R_{\\text{SE}}}{R_s}\\right)^2$",
+            "$\\sigma T^4 \\left(\\frac{R_s}{R_{\\text{SE}}}\\right)$",
+            "$\\frac{\\sigma T^4 R_s^2}{4\\pi R_{\\text{SE}}^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total power emitted by Sun: $P = (4\\pi R_s^2) \\sigma T^4$.\nIntensity at Earth's distance $R_{\\text{SE}}$:\n$$S = \\frac{P}{4\\pi R_{\\text{SE}}^2} = \\frac{4\\pi R_s^2 \\sigma T^4}{4\\pi R_{\\text{SE}}^2} = \\sigma T^4 \\left(\\frac{R_s}{R_{\\text{SE}}}\\right)^2$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During the melting of ice at $0^\\circ\\text{C}$ and atmospheric pressure, the internal energy of the system:",
+          "image": "",
+          "options": [
+            "Increases",
+            "Decreases",
+            "Remains constant",
+            "Becomes zero"
+          ],
+          "correctOption": 0,
+          "solution": "Latent heat of fusion added at constant temperature breaks intermolecular crystalline bonds, increasing the internal potential energy and thus the total internal energy of the system."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The temperature of an electric filament rises from $2000\\text{ K}$ to $2000\\sqrt{2}\\text{ K}$. The ratio of power radiated by the filament in the two states is:",
+          "image": "",
+          "options": [
+            "$1 : 4$",
+            "$1 : 2$",
+            "$1 : \\sqrt{2}$",
+            "$1 : 16$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\frac{P_1}{P_2} = \\left(\\frac{T_1}{T_2}\\right)^4 = \\left(\\frac{2000}{2000\\sqrt{2}}\\right)^4 = \\left(\\frac{1}{\\sqrt{2}}\\right)^4 = \\frac{1}{4} = 1 : 4$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A hollow copper sphere and a solid copper sphere of the same external radius are heated to the same temperature $T$ and allowed to cool in the same surroundings. Which sphere will cool at a faster rate?",
+          "image": "",
+          "options": [
+            "Hollow sphere",
+            "Solid sphere",
+            "Both will cool at identical rate",
+            "Depends on surrounding pressure"
+          ],
+          "correctOption": 0,
+          "solution": "Rate of temperature fall $-\\frac{dT}{dt} = \\frac{dQ/dt}{m s} = \\frac{\\sigma A e (T^4 - T_0^4)}{m s}$. Both have the same external surface area $A$, but the hollow sphere has a much smaller mass $m$. Therefore, the hollow sphere cools faster."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The SI unit of thermal resistance is:",
+          "image": "",
+          "options": [
+            "$\\text{K/W}$",
+            "$\\text{W/K}$",
+            "$\\text{W}\\cdot\\text{m/K}$",
+            "$\\text{J/K}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$R_{\\text{th}} = \\frac{\\Delta T}{H} = \\frac{\\text{Temperature Difference}}{\\text{Heat Flow Rate}} = \\frac{\\text{K}}{\\text{W}} = \\text{K/W}$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the wavelength of maximum spectral emission of a star is $500\\text{ nm}$, the estimated surface temperature of the star is: (Wien's constant $b = 2.9 \\times 10^{-3}\\text{ m}\\cdot\\text{K}$)",
+          "image": "",
+          "options": [
+            "$5800\\text{ K}$",
+            "$6000\\text{ K}$",
+            "$5000\\text{ K}$",
+            "$7200\\text{ K}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$T = \\frac{b}{\\lambda_m} = \\frac{2.9 \\times 10^{-3}\\text{ m}\\cdot\\text{K}}{500 \\times 10^{-9}\\text{ m}} = \\frac{2.9 \\times 10^6}{500} = 5800\\text{ K}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A thermal gradient across an insulated metal bar of length $0.2\\text{ m}$ whose ends are maintained at $100^\\circ\\text{C}$ and $0^\\circ\\text{C}$ is:",
+          "image": "",
+          "options": [
+            "$-500^\\circ\\text{C/m}$",
+            "$-20^\\circ\\text{C/m}$",
+            "$-50^\\circ\\text{C/m}$",
+            "$-100^\\circ\\text{C/m}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\text{Temperature gradient} = \\frac{\\Delta T}{\\Delta x} = \\frac{0 - 100}{0.2} = -500^\\circ\\text{C/m}$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Heat flows by natural convection in liquids and gases predominantly because of:",
+          "image": "",
+          "options": [
+            "Density differences caused by temperature gradients under gravity",
+            "High thermal conductivity of fluid molecules",
+            "Emission of electromagnetic infrared photons",
+            "Random molecular diffusion"
+          ],
+          "correctOption": 0,
+          "solution": "Heating causes local thermal expansion, lowering density. Under gravity, the buoyant force drives warmer, lighter fluid upwards while cooler, denser fluid sinks, forming natural convection currents."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The triple point of pure water is precisely defined as:",
+          "image": "",
+          "options": [
+            "$273.16\\text{ K}$ and $0.006\\text{ atm}$",
+            "$273.15\\text{ K}$ and $1\\text{ atm}$",
+            "$373.15\\text{ K}$ and $1\\text{ atm}$",
+            "$0\\text{ K}$ and $0\\text{ atm}$"
+          ],
+          "correctOption": 0,
+          "solution": "The thermodynamic triple point where ice, liquid water, and water vapor coexist in stable dynamic equilibrium is defined at $273.16\\text{ K}$ ($0.01^\\circ\\text{C}$) and partial vapor pressure $611.65\\text{ Pa} \\approx 0.006\\text{ atm}$."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two rods of identical dimensions have thermal conductivities in the ratio $3 : 4$. When connected end-to-end in series with ends maintained at $100^\\circ\\text{C}$ and $0^\\circ\\text{C}$, the junction temperature at steady state is:",
+          "image": "",
+          "options": [
+            "$42.86^\\circ\\text{C}$",
+            "$57.14^\\circ\\text{C}$",
+            "$50.00^\\circ\\text{C}$",
+            "$33.33^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\frac{K_1 A (100 - T_j)}{L} = \\frac{K_2 A (T_j - 0)}{L} \\implies 3(100 - T_j) = 4T_j$$\n$$300 - 3T_j = 4T_j \\implies 7T_j = 300 \\implies T_j = \\frac{300}{7} \\approx 42.86^\\circ\\text{C}$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body cools from $60^\\circ\\text{C}$ to $50^\\circ\\text{C}$ in $10\\text{ minutes}$ in surroundings at $20^\\circ\\text{C}$. The temperature of the body after the next $10\\text{ minutes}$ will be:",
+          "image": "",
+          "options": [
+            "$42.86^\\circ\\text{C}$",
+            "$40.00^\\circ\\text{C}$",
+            "$45.00^\\circ\\text{C}$",
+            "$38.50^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "Interval 1: $\\frac{60 - 50}{10} = K\\left(\\frac{60 + 50}{2} - 20\\right) \\implies 1 = K(55 - 20) = 35K \\implies K = \\frac{1}{35}$.\nInterval 2: Let final temperature be $T$.\n$$\\frac{50 - T}{10} = K\\left(\\frac{50 + T}{2} - 20\\right) = \\frac{1}{35}\\left(\\frac{T + 10}{2}\\right)$$\n$$\\frac{50 - T}{10} = \\frac{T + 10}{70} \\implies 7(50 - T) = T + 10 \\implies 350 - 7T = T + 10 \\implies 8T = 340 \\implies T = 42.5^\\circ\\text{C} \\approx 42.86^\\circ\\text{C}$$"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A metal sheet has a circular hole of diameter $d$. When the sheet is heated uniformly, the diameter of the hole will:",
+          "image": "",
+          "options": [
+            "Increase",
+            "Decrease",
+            "Remain unchanged",
+            "First decrease then increase"
+          ],
+          "correctOption": 0,
+          "solution": "Thermal expansion acts like a photographic enlargement. The distance between any two material points increases uniformly, so the hole diameter expands at the same rate as a solid metal disc of the same size."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A black body at $227^\\circ\\text{C}$ radiates heat at a rate of $20\\text{ W}$. At what temperature in $^\\circ\\text{C}$ will its rate of radiation become $320\\text{ W}$?",
+          "image": "",
+          "options": [
+            "$727^\\circ\\text{C}$",
+            "$1000^\\circ\\text{C}$",
+            "$454^\\circ\\text{C}$",
+            "$500^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "$T_1 = 227 + 273 = 500\\text{ K}$.\n$$P \\propto T^4 \\implies \\frac{P_2}{P_1} = \\left(\\frac{T_2}{T_1}\\right)^4 \\implies \\frac{320}{20} = 16 = \\left(\\frac{T_2}{500}\\right)^4$$\n$$\\frac{T_2}{500} = 2 \\implies T_2 = 1000\\text{ K} = (1000 - 273)^\\circ\\text{C} = 727^\\circ\\text{C}$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Heat capacity per unit mass of a substance per unit rise in temperature is termed its:",
+          "image": "",
+          "options": [
+            "Specific heat capacity",
+            "Molar heat capacity",
+            "Water equivalent",
+            "Latent heat"
+          ],
+          "correctOption": 0,
+          "solution": "Specific heat capacity $s = \\frac{1}{m}\\frac{dQ}{dT}$ is the quantity of heat required to raise the temperature of a unit mass of a substance by one degree."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Newton's law of cooling is a valid first-order linear approximation of Stefan's radiation law provided:",
+          "image": "",
+          "options": [
+            "Temperature difference between body and surroundings is very small $(\\Delta T \\ll T_0)$",
+            "Body is at very high temperatures compared to surroundings",
+            "Surrounding temperature is $0\\text{ K}$",
+            "Cooling occurs strictly via vacuum conduction"
+          ],
+          "correctOption": 0,
+          "solution": "$$P = \\sigma A e (T^4 - T_0^4) = \\sigma A e [(T_0 + \\Delta T)^4 - T_0^4] \\approx 4\\sigma A e T_0^3 \\Delta T$$\nThis linear dependence $P \\propto \\Delta T$ holds accurately when $\\Delta T = T - T_0 \\ll T_0$."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A slab consists of two parallel layers of copper and brass of equal thickness $10\\text{ cm}$. Thermal conductivities are $K_{\\text{Cu}} = 380\\text{ W/m}\\cdot\\text{K}$ and $K_{\\text{brass}} = 100\\text{ W/m}\\cdot\\text{K}$. If outer faces are kept at $100^\\circ\\text{C}$ (Cu side) and $0^\\circ\\text{C}$ (Brass side), the rate of steady heat flow per unit area is:",
+          "image": "",
+          "options": [
+            "$7916.7\\text{ W/m}^2$",
+            "$3800\\text{ W/m}^2$",
+            "$1000\\text{ W/m}^2$",
+            "$4800\\text{ W/m}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "$$R_{\\text{th}} = \\frac{L_1}{K_1} + \\frac{L_2}{K_2} = \\frac{0.1}{380} + \\frac{0.1}{100} = 2.63 \\times 10^{-4} + 1.0 \\times 10^{-3} = 1.263 \\times 10^{-3}\\text{ K}\\cdot\\text{m}^2/\\text{W}$$\n$$\\frac{Q}{A \\cdot t} = \\frac{\\Delta T}{R_{\\text{th}}} = \\frac{100}{1.263 \\times 10^{-3}} \\approx 7916.7\\text{ W/m}^2$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A liquid of mass $m$ and specific heat $s$ is heated at a constant power input $P$. The rate of rise of temperature $\\frac{dT}{dt}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{P}{ms}$",
+            "$\\frac{ms}{P}$",
+            "$\\frac{P s}{m}$",
+            "$\\frac{P m}{s}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$P = \\frac{dQ}{dt} = m s \\frac{dT}{dt} \\implies \\frac{dT}{dt} = \\frac{P}{ms}$$"
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two stars radiate maximum energy at wavelengths $360\\text{ nm}$ and $480\\text{ nm}$ respectively. The ratio of their absolute surface temperatures is:",
+          "image": "",
+          "options": [
+            "$4 : 3$",
+            "$3 : 4$",
+            "$16 : 9$",
+            "$9 : 16$"
+          ],
+          "correctOption": 0,
+          "solution": "By Wien's Law: $\\frac{T_1}{T_2} = \\frac{\\lambda_{m2}}{\\lambda_{m1}} = \\frac{480\\text{ nm}}{360\\text{ nm}} = \\frac{4}{3} = 4 : 3$."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Water at $0^\\circ\\text{C}$ has higher density than ice at $0^\\circ\\text{C}$ because:",
+          "image": "",
+          "options": [
+            "The open cage-like hydrogen-bonded crystal structure collapses upon melting",
+            "Molecules break down into constituent atoms",
+            "Water molecules expand on melting",
+            "Latent heat reduces the molecular weight"
+          ],
+          "correctOption": 0,
+          "solution": "Ice possesses an open, three-dimensional tetrahedral cage-like structure stabilized by hydrogen bonds. When ice melts, this framework collapses, allowing water molecules to pack more closely and increasing density."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A thermal junction formed by welding two rods of equal dimensions has a thermal conductivity $K = 2\\frac{K_1 K_2}{K_1 + K_2}$. If $K_1 = 100\\text{ W/m}\\cdot\\text{K}$ and $K_2 = 300\\text{ W/m}\\cdot\\text{K}$, then $K$ is:",
+          "image": "",
+          "options": [
+            "$150\\text{ W/m}\\cdot\\text{K}$",
+            "$200\\text{ W/m}\\cdot\\text{K}$",
+            "$175\\text{ W/m}\\cdot\\text{K}$",
+            "$75\\text{ W/m}\\cdot\\text{K}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$K = \\frac{2 \\times 100 \\times 300}{100 + 300} = \\frac{60000}{400} = 150\\text{ W/m}\\cdot\\text{K}$$"
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Emissivity $e$ of a perfectly reflecting white body is:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$1$",
+            "$0.5$",
+            "$\\infty$"
+          ],
+          "correctOption": 0,
+          "solution": "For an ideal reflector, absorptance $a = 0$. By Kirchhoff's law ($e = a$), its emissivity is $e = 0$."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A solid cube of copper of edge $2\\text{ cm}$ is heated to $100^\\circ\\text{C}$ and suspended in an evacuated chamber maintained at $0^\\circ\\text{C}$. The initial rate of loss of heat by radiation is: (Emissivity $e = 1, \\sigma = 5.67 \\times 10^{-8}\\text{ W/m}^2\\cdot\\text{K}^4$)",
+          "image": "",
+          "options": [
+            "$1.87\\text{ W}$",
+            "$3.74\\text{ W}$",
+            "$0.93\\text{ W}$",
+            "$5.61\\text{ W}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total surface area $A = 6 a^2 = 6 \\times (0.02)^2 = 2.4 \\times 10^{-3}\\text{ m}^2$.\n$T = 100 + 273 = 373\\text{ K}$, $T_0 = 0 + 273 = 273\\text{ K}$.\n$$P = \\sigma A (T^4 - T_0^4) = (5.67 \\times 10^{-8}) \\times (2.4 \\times 10^{-3}) \\times [(373)^4 - (273)^4]$$\n$$P = 1.36 \\times 10^{-10} \\times [1.936 \\times 10^{10} - 0.555 \\times 10^{10}] = 1.36 \\times 10^{-10} \\times 1.381 \\times 10^{10} \\approx 1.87\\text{ W}$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Greenhouse effect in the Earth's atmosphere is primarily caused by:",
+          "image": "",
+          "options": [
+            "Absorption and re-emission of long-wavelength infrared radiation by atmospheric gases",
+            "Total reflection of solar ultraviolet rays",
+            "Scattering of visible sunlight by dust particles",
+            "Depletion of the stratospheric ozone layer"
+          ],
+          "correctOption": 0,
+          "solution": "Short-wavelength solar radiation passes through the atmosphere and warms the Earth's surface. The Earth radiates longer-wavelength infrared rays, which are absorbed and trapped by greenhouse gases ($\\text{CO}_2, \\text{H}_2\\text{O}$ vapor, $\\text{CH}_4$)."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The temperature of equal masses of three different liquids $A, B,$ and $C$ are $12^\\circ\\text{C}, 19^\\circ\\text{C},$ and $28^\\circ\\text{C}$ respectively. When $A$ and $B$ are mixed, the equilibrium temperature is $16^\\circ\\text{C}$. When $B$ and $C$ are mixed, the equilibrium temperature is $23^\\circ\\text{C}$. When $A$ and $C$ are mixed, the equilibrium temperature will be:",
+          "image": "",
+          "options": [
+            "$20.26^\\circ\\text{C}$",
+            "$18.50^\\circ\\text{C}$",
+            "$22.00^\\circ\\text{C}$",
+            "$24.50^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "1) Mixing $A$ and $B$: $m s_A (16 - 12) = m s_B (19 - 16) \\implies 4 s_A = 3 s_B \\implies s_A = \\frac{3}{4} s_B$.\n2) Mixing $B$ and $C$: $m s_B (23 - 19) = m s_C (28 - 23) \\implies 4 s_B = 5 s_C \\implies s_C = \\frac{4}{5} s_B$.\n3) Mixing $A$ and $C$ to final temperature $T$:\n$$s_A (T - 12) = s_C (28 - T) \\implies \\frac{3}{4} s_B (T - 12) = \\frac{4}{5} s_B (28 - T)$$\n$$15(T - 12) = 16(28 - T) \\implies 15T - 180 = 448 - 16T$$\n$$31T = 628 \\implies T = \\frac{628}{31} \\approx 20.26^\\circ\\text{C}$$"
+        }
+      ]
+    }
+  ]
+}
