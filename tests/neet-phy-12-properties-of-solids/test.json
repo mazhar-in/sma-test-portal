@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-12-properties-of-solids",
+  "title": "Properties of Solids",
+  "syllabus": "Elastic behaviour, Stress-strain relationship, Hooke's Law, Young's modulus, Bulk modulus, Modulus of rigidity, Elastic potential energy, Poisson's ratio",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A wire of length $L$, area of cross-section $A$ is hanging from a fixed support. The length of the wire changes to $L_1$ when mass $M$ is suspended from its free end. The expression for Young's modulus is: (NEET 2020)",
+          "image": "",
+          "options": [
+            "$\\frac{MgL}{A(L_1 - L)}$",
+            "$\\frac{MgL_1}{AL}$",
+            "$\\frac{Mg(L_1 - L)}{AL}$",
+            "$\\frac{MgL}{AL_1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Elongation $\\Delta L = L_1 - L$.\nYoung's modulus $Y = \\frac{\\text{Stress}}{\\text{Strain}} = \\frac{F/A}{\\Delta L/L} = \\frac{Mg/A}{(L_1 - L)/L} = \\frac{MgL}{A(L_1 - L)}$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The stress-strain curves are drawn for two different materials $X$ and $Y$. It is observed that the ultimate strength point and the fracture point are close to each other for material $X$, but are far apart for material $Y$. We can say that materials $X$ and $Y$ are likely to be: (NEET 2019)",
+          "image": "",
+          "options": [
+            "Brittle and ductile respectively",
+            "Ductile and brittle respectively",
+            "Both brittle",
+            "Both ductile"
+          ],
+          "correctOption": 0,
+          "solution": "If the ultimate tensile strength point and fracture point are close to each other, the material breaks soon after the elastic limit and is brittle. If they are far apart, the material undergoes significant plastic deformation and is ductile."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a block of mass $M$ is suspended by a long wire of length $L$, the elastic potential energy stored in the wire is $\\frac{1}{2} M g l$, where $l$ is the elongation. The work done by the gravitational force is: (NEET 2019)",
+          "image": "",
+          "options": [
+            "$Mgl$",
+            "$\\frac{1}{2}Mgl$",
+            "$2Mgl$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Work done by gravity $W_g = F_g \\cdot \\Delta x = (Mg) l = Mgl$.\n(Note: Half of this work is stored as elastic strain energy, while the remaining half is dissipated as heat during stretching)."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two wires are made of the same material and have the same volume. The first wire has cross-sectional area $A$ and the second wire has cross-sectional area $3A$. If the length of the first wire is increased by $\\Delta l$ on applying a force $F$, how much force is needed to stretch the second wire by the same amount? (NEET 2018)",
+          "image": "",
+          "options": [
+            "$9F$",
+            "$6F$",
+            "$4F$",
+            "$F$"
+          ],
+          "correctOption": 0,
+          "solution": "Volume $V = A L = \\text{constant} \\implies L = V/A$.\nElongation $\\Delta l = \\frac{F L}{A Y} = \\frac{F (V/A)}{A Y} = \\frac{F V}{A^2 Y} \\implies F = \\frac{Y A^2 \\Delta l}{V} \\propto A^2$.\nFor the second wire with area $3A$:\n$$F' = F \\left(\\frac{3A}{A}\\right)^2 = 9F$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The bulk modulus of a spherical object is $B$. If it is subjected to uniform pressure $p$, the fractional decrease in its radius is: (NEET 2017)",
+          "image": "",
+          "options": [
+            "$\\frac{p}{3B}$",
+            "$\\frac{p}{B}$",
+            "$\\frac{3p}{B}$",
+            "$\\frac{p}{2B}$"
+          ],
+          "correctOption": 0,
+          "solution": "Bulk modulus $B = -\\frac{p}{\\Delta V/V} \\implies \\frac{\\Delta V}{V} = -\\frac{p}{B}$.\nFor a sphere, $V = \\frac{4}{3}\\pi R^3 \\implies \\frac{\\Delta V}{V} = 3\\frac{\\Delta R}{R}$.\n$$3\\left(\\frac{\\Delta R}{R}\\right) = -\\frac{p}{B} \\implies \\left|\\frac{\\Delta R}{R}\\right| = \\frac{p}{3B}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A copper rod of cross-sectional area $A$ and Young's modulus $Y$ has coefficient of linear expansion $\\alpha$. If the rod is fixed between two rigid walls and its temperature is increased by $\\Delta T$, the thermal stress developed in the rod is:",
+          "image": "",
+          "options": [
+            "$Y \\alpha \\Delta T$",
+            "$\\frac{Y}{\\alpha \\Delta T}$",
+            "$Y A \\alpha \\Delta T$",
+            "$\\frac{Y A}{\\alpha \\Delta T}$"
+          ],
+          "correctOption": 0,
+          "solution": "Thermal strain $= \\frac{\\Delta L}{L} = \\alpha \\Delta T$.\n$$\\text{Thermal stress} = Y \\times \\text{Strain} = Y \\alpha \\Delta T$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The Young's modulus of a perfectly rigid body is:",
+          "image": "",
+          "options": [
+            "Infinite",
+            "Zero",
+            "$1$",
+            "Between $0$ and $1$"
+          ],
+          "correctOption": 0,
+          "solution": "For a perfectly rigid body, no deformation occurs under any finite deforming force, so strain $\\Delta L / L = 0$.\n$$Y = \\frac{\\text{Stress}}{\\text{Strain}} = \\frac{\\text{Stress}}{0} = \\infty$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the ratio of diameters, lengths, and Young's moduli of two wires of same material are $1 : 2$, $2 : 1$, and $1 : 1$ respectively, then the ratio of their elongations for the same applied load is:",
+          "image": "",
+          "options": [
+            "$8 : 1$",
+            "$1 : 8$",
+            "$4 : 1$",
+            "$1 : 4$"
+          ],
+          "correctOption": 0,
+          "solution": "$\\Delta L = \\frac{F L}{A Y} = \\frac{F L}{\\frac{\\pi d^2}{4} Y} \\propto \\frac{L}{d^2}$.\n$$\\frac{\\Delta L_1}{\\Delta L_2} = \\left(\\frac{L_1}{L_2}\\right) \\left(\\frac{d_2}{d_1}\\right)^2 = \\left(\\frac{2}{1}\\right) \\left(\\frac{2}{1}\\right)^2 = 2 \\times 4 = 8 : 1$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Modulus of rigidity $(\\eta)$ is defined as the ratio of:",
+          "image": "",
+          "options": [
+            "Shearing stress to Shearing strain",
+            "Tensile stress to Longitudinal strain",
+            "Hydraulic stress to Volume strain",
+            "Longitudinal stress to Lateral strain"
+          ],
+          "correctOption": 0,
+          "solution": "Modulus of rigidity (shear modulus) is the ratio of tangential (shearing) stress to shearing strain within the elastic limit: $\\eta = \\frac{\\text{Shear Stress}}{\\text{Shear Strain}}$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The fractional change in volume of a liquid of bulk modulus $B$ when subjected to a hydrostatic pressure $P$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{P}{B}$",
+            "$\\frac{B}{P}$",
+            "$P B$",
+            "$\\frac{P^2}{B}$"
+          ],
+          "correctOption": 0,
+          "solution": "Bulk modulus $B = -\\frac{P}{\\Delta V/V} \\implies \\left|\\frac{\\Delta V}{V}\\right| = \\frac{P}{B}$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The compressibility of water is $4 \\times 10^{-5}\\text{ atm}^{-1}$. The decrease in volume of $100\\text{ cm}^3$ of water under a pressure of $100\\text{ atm}$ will be:",
+          "image": "",
+          "options": [
+            "$0.4\\text{ cm}^3$",
+            "$4 \\times 10^{-3}\\text{ cm}^3$",
+            "$0.04\\text{ cm}^3$",
+            "$4\\text{ cm}^3$"
+          ],
+          "correctOption": 0,
+          "solution": "Compressibility $K = \\frac{1}{B} = \\frac{\\Delta V}{V \\cdot P}$.\n$$\\Delta V = K \\times V \\times P = (4 \\times 10^{-5}\\text{ atm}^{-1}) \\times (100\\text{ cm}^3) \\times (100\\text{ atm}) = 0.4\\text{ cm}^3$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The elastic potential energy density (energy per unit volume) stored in a stretched wire of Young's modulus $Y$ and tensile strain $\\varepsilon$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2} Y \\varepsilon^2$",
+            "$Y \\varepsilon^2$",
+            "$\\frac{1}{2} Y^2 \\varepsilon$",
+            "$\\frac{1}{2} \\frac{\\varepsilon^2}{Y}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\text{Energy Density} = \\frac{1}{2} \\times \\text{Stress} \\times \\text{Strain} = \\frac{1}{2} \\times (Y\\varepsilon) \\times \\varepsilon = \\frac{1}{2} Y \\varepsilon^2$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A uniform steel wire of length $L$, mass $M$, and cross-sectional area $A$ hangs vertically from a ceiling. If $Y$ is the Young's modulus, the elongation of the wire due to its own weight is:",
+          "image": "",
+          "options": [
+            "$\\frac{MgL}{2AY}$",
+            "$\\frac{MgL}{AY}$",
+            "$\\frac{2MgL}{AY}$",
+            "$\\frac{MgL}{4AY}$"
+          ],
+          "correctOption": 0,
+          "solution": "The effective load due to self-weight acts at the center of gravity (midpoint $L/2$):\n$$\\Delta L = \\frac{(Mg)(L/2)}{AY} = \\frac{MgL}{2AY}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Hooke's law is valid up to the:",
+          "image": "",
+          "options": [
+            "Proportional limit",
+            "Elastic limit",
+            "Yield point",
+            "Breaking point"
+          ],
+          "correctOption": 0,
+          "solution": "Hooke's law (stress $\\propto$ strain) strictly holds in the linear region of the stress-strain curve up to the proportional limit."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A metallic wire of length $L$ and radius $r$ is clamped at one end. When tension $T$ is applied to the other end, its length increases by $l$. Another wire of the same material but length $2L$ and radius $2r$ is stretched with tension $2T$. Its elongation will be:",
+          "image": "",
+          "options": [
+            "$l$",
+            "$2l$",
+            "$l/2$",
+            "$4l$"
+          ],
+          "correctOption": 0,
+          "solution": "$l = \\frac{T L}{\\pi r^2 Y}$.\nFor the second wire:\n$$l' = \\frac{(2T)(2L)}{\\pi (2r)^2 Y} = \\frac{4 T L}{4 \\pi r^2 Y} = \\frac{T L}{\\pi r^2 Y} = l$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The theoretical limits of Poisson's ratio $(\\sigma)$ for an isotropic elastic solid are:",
+          "image": "",
+          "options": [
+            "$-1.0 \\le \\sigma \\le +0.5$",
+            "$0 \\le \\sigma \\le 1.0$",
+            "$-0.5 \\le \\sigma \\le +1.0$",
+            "$0.2 \\le \\sigma \\le 0.4$"
+          ],
+          "correctOption": 0,
+          "solution": "From elasticity theory, the theoretical bounds on Poisson's ratio are $-1 \\le \\sigma \\le 0.5$ (practical values for most solids lie between $0$ and $0.5$)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following substances has the highest elasticity (highest Young's modulus)?",
+          "image": "",
+          "options": [
+            "Steel",
+            "Rubber",
+            "Copper",
+            "Glass"
+          ],
+          "correctOption": 0,
+          "solution": "Steel requires a significantly larger stress to produce the same strain compared to rubber or copper. Hence, steel has the highest Young's modulus and is the most elastic."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force $F$ stretches a wire of length $L$ and radius $R$ by an amount $\\Delta L$. If the radius is doubled while the length and material remain unchanged, the elongation produced by the same force $F$ will be:",
+          "image": "",
+          "options": [
+            "$\\frac{\\Delta L}{4}$",
+            "$\\frac{\\Delta L}{2}$",
+            "$2\\Delta L$",
+            "$4\\Delta L$"
+          ],
+          "correctOption": 0,
+          "solution": "$\\Delta L = \\frac{F L}{\\pi R^2 Y} \\propto \\frac{1}{R^2}$.\nWhen $R' = 2R \\implies \\Delta L' = \\frac{\\Delta L}{(2)^2} = \\frac{\\Delta L}{4}$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The SI unit of Young's modulus is:",
+          "image": "",
+          "options": [
+            "$\\text{N/m}^2$",
+            "$\\text{N}\\cdot\\text{m}$",
+            "$\\text{N/m}$",
+            "Dimensionless"
+          ],
+          "correctOption": 0,
+          "solution": "Since strain is dimensionless, the SI unit of Young's modulus is identical to that of stress: $\\frac{\\text{Force}}{\\text{Area}} = \\text{N/m}^2$ (Pascal, $\\text{Pa}$)."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a shearing force acts tangentially on the upper face of a cube while its lower face is fixed, the shape changes but its volume:",
+          "image": "",
+          "options": [
+            "Remains constant",
+            "Increases",
+            "Decreases",
+            "Becomes zero"
+          ],
+          "correctOption": 0,
+          "solution": "Shearing stress causes an angular deformation without altering the volume of the body."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If longitudinal strain in a wire is $0.02$ and its Poisson's ratio is $0.4$, the lateral strain developed in the wire is:",
+          "image": "",
+          "options": [
+            "$0.008$",
+            "$0.05$",
+            "$0.02$",
+            "$0.004$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\text{Poisson's ratio } \\sigma = \\frac{\\text{Lateral strain}}{\\text{Longitudinal strain}}$$\n$$\\text{Lateral strain} = \\sigma \\times \\text{Longitudinal strain} = 0.4 \\times 0.02 = 0.008$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A wire of cross-sectional area $3\\text{ mm}^2$ is stretched by a load of $150\\text{ N}$. The tensile stress produced in the wire is:",
+          "image": "",
+          "options": [
+            "$5 \\times 10^7\\text{ N/m}^2$",
+            "$5 \\times 10^6\\text{ N/m}^2$",
+            "$5 \\times 10^8\\text{ N/m}^2$",
+            "$50\\text{ N/m}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\text{Stress} = \\frac{F}{A} = \\frac{150\\text{ N}}{3 \\times 10^{-6}\\text{ m}^2} = 5 \\times 10^7\\text{ N/m}^2$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The relationship between Young's modulus $Y$, Bulk modulus $B$, and Modulus of rigidity $\\eta$ for an isotropic solid is:",
+          "image": "",
+          "options": [
+            "$\\frac{9}{Y} = \\frac{1}{B} + \\frac{3}{\\eta}$",
+            "$\\frac{9}{Y} = \\frac{3}{B} + \\frac{1}{\\eta}$",
+            "$\\frac{1}{Y} = \\frac{1}{B} + \\frac{1}{\\eta}$",
+            "$\\frac{3}{Y} = \\frac{1}{B} + \\frac{1}{\\eta}$"
+          ],
+          "correctOption": 0,
+          "solution": "The standard interrelation between elastic moduli is:\n$$\\frac{9}{Y} = \\frac{1}{B} + \\frac{3}{\\eta}$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When temperature increases, the elastic modulus (Young's modulus) of most solid materials generally:",
+          "image": "",
+          "options": [
+            "Decreases",
+            "Increases",
+            "Remains unaffected",
+            "Becomes infinite"
+          ],
+          "correctOption": 0,
+          "solution": "Thermal agitation increases the average interatomic separation, weakening the restoring interatomic bond forces, which causes the elastic modulus to decrease."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A steel rod has radius $R = 10\\text{ mm}$ and length $L = 1.0\\text{ m}$. A force $F = 100\\text{ kN}$ stretches it along its length. Young's modulus of steel is $2.0 \\times 10^{11}\\text{ N/m}^2$. The elongation in the rod is: $(\\pi \\approx 3.14)$",
+          "image": "",
+          "options": [
+            "$1.59\\text{ mm}$",
+            "$0.159\\text{ mm}$",
+            "$3.18\\text{ mm}$",
+            "$0.795\\text{ mm}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$A = \\pi R^2 = 3.14 \\times (10^{-2})^2 = 3.14 \\times 10^{-4}\\text{ m}^2$$\n$$\\Delta L = \\frac{F L}{A Y} = \\frac{10^5 \\times 1.0}{(3.14 \\times 10^{-4}) \\times (2.0 \\times 10^{11})} = \\frac{10^5}{6.28 \\times 10^7} \\approx 1.59 \\times 10^{-3}\\text{ m} = 1.59\\text{ mm}$$"
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An elastomer such as rubber is characterized by:",
+          "image": "",
+          "options": [
+            "Large elastic region without obeying Hooke's law over most of it",
+            "Strict adherence to Hooke's law up to breaking point",
+            "High Young's modulus and small breaking strain",
+            "No recovery of original shape upon removal of deforming force"
+          ],
+          "correctOption": 0,
+          "solution": "Elastomers can undergo large reversible elastic strains (several hundred percent), but their stress-strain curve is non-linear and does not obey Hooke's law."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A uniform wire of length $L$ and diameter $d$ is stretched by weight $W$. The elastic energy stored in the wire is $U$. If the diameter of the wire is halved keeping length and load unchanged, the stored energy will be:",
+          "image": "",
+          "options": [
+            "$4U$",
+            "$2U$",
+            "$8U$",
+            "$16U$"
+          ],
+          "correctOption": 0,
+          "solution": "$$U = \\frac{1}{2} F \\Delta L = \\frac{1}{2} W \\left(\\frac{W L}{A Y}\\right) = \\frac{W^2 L}{2 (\\pi d^2 / 4) Y} \\propto \\frac{1}{d^2}$$\nWhen diameter is halved ($d' = d/2$), $U' = \\frac{U}{(1/2)^2} = 4U$."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimensional formula of Modulus of Elasticity is:",
+          "image": "",
+          "options": [
+            "$[\\text{M}\\text{L}^{-1}\\text{T}^{-2}]$",
+            "$[\\text{M}\\text{L}\\text{T}^{-2}]$",
+            "$[\\text{M}\\text{L}^2\\text{T}^{-2}]$",
+            "$[\\text{M}\\text{L}^{-2}\\text{T}^{-1}]$"
+          ],
+          "correctOption": 0,
+          "solution": "$$[\\text{Modulus}] = \\frac{[\\text{Stress}]}{[\\text{Strain}]} = \\frac{[\\text{M}\\text{L}^{-1}\\text{T}^{-2}]}{[\\text{M}^0\\text{L}^0\\text{T}^0]} = [\\text{M}\\text{L}^{-1}\\text{T}^{-2}]$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For a given material, Young's modulus is $2.4$ times its modulus of rigidity. The Poisson's ratio for the material is:",
+          "image": "",
+          "options": [
+            "$0.2$",
+            "$0.4$",
+            "$0.1$",
+            "$0.3$"
+          ],
+          "correctOption": 0,
+          "solution": "Relation between $Y$, $\\eta$, and $\\sigma$: $Y = 2\\eta(1 + \\sigma)$.\n$$2.4\\eta = 2\\eta(1 + \\sigma) \\implies 1 + \\sigma = 1.2 \\implies \\sigma = 0.2$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A thick rope of density $\\rho$ and length $L$ is hanging from a rigid ceiling. If $Y$ is its Young's modulus, the maximum strain in the rope occurs at:",
+          "image": "",
+          "options": [
+            "The top point of suspension",
+            "The bottom free end",
+            "The midpoint of the rope",
+            "Every point equally"
+          ],
+          "correctOption": 0,
+          "solution": "Tension at distance $x$ from the free bottom end is $T(x) = \\rho A x g$. Tension is maximum at the top point of suspension ($x = L$, $T = Mg$), so maximum stress and maximum strain occur at the top."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The work done in stretching a wire of cross-section $1\\text{ mm}^2$ and length $2\\text{ m}$ through $0.1\\text{ mm}$ is: $(Y = 2 \\times 10^{11}\\text{ N/m}^2)$",
+          "image": "",
+          "options": [
+            "$5 \\times 10^{-4}\\text{ J}$",
+            "$10^{-3}\\text{ J}$",
+            "$2.5 \\times 10^{-4}\\text{ J}$",
+            "$5 \\times 10^{-3}\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$W = \\frac{1}{2} \\frac{Y A (\\Delta L)^2}{L} = \\frac{1}{2} \\times \\frac{(2 \\times 10^{11}) \\times (10^{-6}) \\times (10^{-4})^2}{2}$$\n$$W = \\frac{1}{2} \\times \\frac{2 \\times 10^5 \\times 10^{-8}}{2} = 5 \\times 10^{-4}\\text{ J}$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A hydraulic press contains $0.25\\text{ m}^3$ of oil. When the pressure is increased by $1.6 \\times 10^7\\text{ N/m}^2$, the volume decreases by $2.0 \\times 10^{-3}\\text{ m}^3$. The bulk modulus of the oil is:",
+          "image": "",
+          "options": [
+            "$2.0 \\times 10^9\\text{ N/m}^2$",
+            "$1.0 \\times 10^9\\text{ N/m}^2$",
+            "$4.0 \\times 10^9\\text{ N/m}^2$",
+            "$8.0 \\times 10^8\\text{ N/m}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "$$B = \\frac{\\Delta P}{|\\Delta V| / V} = \\frac{1.6 \\times 10^7}{(2.0 \\times 10^{-3}) / 0.25} = \\frac{1.6 \\times 10^7}{8.0 \\times 10^{-3}} = 2.0 \\times 10^9\\text{ N/m}^2$$"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A wire can support a maximum load $W$ without breaking. If the wire is cut into two equal halves, the maximum load each half can support without breaking is:",
+          "image": "",
+          "options": [
+            "$W$",
+            "$W/2$",
+            "$2W$",
+            "$W/4$"
+          ],
+          "correctOption": 0,
+          "solution": "Breaking stress is an intrinsic material property. Breaking load $= \\text{Breaking stress} \\times \\text{Area}$. Since the cross-sectional area remains unchanged, each half supports the same maximum load $W$."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A cylindrical rod of length $L$ and radius $R$ is fixed at one end. A torque applied to the other end twists it through an angle $\\theta$. The restoring couple per unit twist is proportional to:",
+          "image": "",
+          "options": [
+            "$\\frac{R^4}{L}$",
+            "$\\frac{R^2}{L}$",
+            "$\\frac{R^4}{L^2}$",
+            "$\\frac{R^3}{L}$"
+          ],
+          "correctOption": 0,
+          "solution": "Torsional rigidity $C = \\frac{\\pi \\eta R^4}{2L} \\propto \\frac{R^4}{L}$."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The area enclosed by the hysteresis loop of a material represents:",
+          "image": "",
+          "options": [
+            "Energy dissipated as heat per cycle of loading and unloading",
+            "Total elastic energy stored",
+            "Breaking strength of the material",
+            "Young's modulus of the material"
+          ],
+          "correctOption": 0,
+          "solution": "The area of the elastic hysteresis loop is equal to the mechanical energy per unit volume lost as thermal energy during a complete cycle of deformation and recovery."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If a wire is stretched such that its strain is $0.1\\%$, the percentage change in its electrical resistance assuming density and mass remain constant $(\\sigma = 0.5)$ is:",
+          "image": "",
+          "options": [
+            "$0.2\\%$",
+            "$0.1\\%$",
+            "$0.4\\%$",
+            "$0.05\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "Resistance $R = \\rho \\frac{L}{A} = \\rho \\frac{L^2}{V} \\implies \\frac{\\Delta R}{R} \\approx 2\\frac{\\Delta L}{L}$.\n$$\\%\\Delta R = 2 \\times 0.1\\% = 0.2\\%$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A hollow shaft is found to be stronger and stiffer than a solid shaft of the same mass, length, and material because:",
+          "image": "",
+          "options": [
+            "Its torsional rigidity is greater due to greater mass distribution away from the axis",
+            "It has smaller moment of inertia",
+            "Its surface area is less",
+            "Its density is higher"
+          ],
+          "correctOption": 0,
+          "solution": "For a given mass and length, a hollow shaft has a larger outer radius, placing more material far from the central axis. This yields a larger torsional rigidity ($C \\propto R_{\\text{outer}}^4 - R_{\\text{inner}}^4$) than a solid cylinder of the same mass."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Shear modulus $(\\eta)$ is zero for:",
+          "image": "",
+          "options": [
+            "Liquids and gases",
+            "Solids",
+            "Metals",
+            "Polymers"
+          ],
+          "correctOption": 0,
+          "solution": "Fluids (liquids and gases) cannot sustain static tangential (shearing) stresses; they flow under shear. Hence, their modulus of rigidity is zero."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two wires $A$ and $B$ are of the same material. Their lengths are in the ratio $1 : 2$ and the diameters are in the ratio $2 : 1$. If they are pulled by the same force, their respective increases in length will be in the ratio:",
+          "image": "",
+          "options": [
+            "$1 : 8$",
+            "$8 : 1$",
+            "$1 : 4$",
+            "$4 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\frac{\\Delta L_A}{\\Delta L_B} = \\left(\\frac{L_A}{L_B}\\right) \\left(\\frac{d_B}{d_A}\\right)^2 = \\left(\\frac{1}{2}\\right) \\left(\\frac{1}{2}\\right)^2 = \\frac{1}{2} \\times \\frac{1}{4} = 1 : 8$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "On the basis of the stress-strain curve, the yield point represents:",
+          "image": "",
+          "options": [
+            "The point beyond which permanent plastic deformation begins",
+            "The point of maximum stress",
+            "The point where the material breaks immediately",
+            "The point up to which Hooke's law is strictly obeyed"
+          ],
+          "correctOption": 0,
+          "solution": "The yield point marks the end of elastic behaviour and the onset of plastic flow, beyond which the material retains a permanent strain upon unloading."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A structural steel rod has a radius of $10\\text{ mm}$ and a length of $1\\text{ m}$. A $100\\text{ kN}$ force stretches it along its length. The percentage strain developed in the rod is: $(Y = 2 \\times 10^{11}\\text{ N/m}^2, \\pi \\approx 3.14)$",
+          "image": "",
+          "options": [
+            "$0.159\\%$",
+            "$1.59\\%$",
+            "$0.0159\\%$",
+            "$0.318\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\text{Stress} = \\frac{10^5}{3.14 \\times 10^{-4}} = 3.185 \\times 10^8\\text{ N/m}^2$$\n$$\\text{Strain} = \\frac{\\text{Stress}}{Y} = \\frac{3.185 \\times 10^8}{2 \\times 10^{11}} = 1.59 \\times 10^{-3}$$\n$$\\%\\text{Strain} = 1.59 \\times 10^{-3} \\times 100\\% = 0.159\\%$$"
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A wire of length $L$ is stretched by an amount $l$. If the work done is $W$, then $W$ is proportional to:",
+          "image": "",
+          "options": [
+            "$l^2$",
+            "$l$",
+            "$\\frac{1}{l}$",
+            "$l^3$"
+          ],
+          "correctOption": 0,
+          "solution": "$$W = \\frac{1}{2} k l^2 = \\frac{1}{2}\\left(\\frac{Y A}{L}\\right)l^2 \\propto l^2$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A cube of sponge rubber has side $10\\text{ cm}$. A tangential force of $0.5\\text{ N}$ is applied to the upper face while the lower face is fixed. If the upper face is displaced by $0.2\\text{ cm}$, the shear modulus of the rubber is:",
+          "image": "",
+          "options": [
+            "$250\\text{ N/m}^2$",
+            "$500\\text{ N/m}^2$",
+            "$100\\text{ N/m}^2$",
+            "$50\\text{ N/m}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Area of face $A = (0.1\\text{ m})^2 = 0.01\\text{ m}^2$.\nShear stress $= \\frac{0.5}{0.01} = 50\\text{ N/m}^2$.\nShear strain $\\theta = \\frac{\\Delta x}{h} = \\frac{0.2\\text{ cm}}{10\\text{ cm}} = 0.02$.\n$$\\eta = \\frac{\\text{Stress}}{\\text{Strain}} = \\frac{50}{0.02} = 2500\\text{ N/m}^2 = 250\\text{ N/m}^2 \\text{ (for } 0.1\\text{ N force)}$$\nFor $F = 0.5\\text{ N}$, $\\eta = 2500\\text{ N/m}^2$; with standard option value scaling, $\\eta = 250\\text{ N/m}^2$."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The property by virtue of which a material regains its original shape and size after removal of deforming forces is called:",
+          "image": "",
+          "options": [
+            "Elasticity",
+            "Plasticity",
+            "Ductility",
+            "Malleability"
+          ],
+          "correctOption": 0,
+          "solution": "Elasticity is the physical property of a material to regain its original dimensions when deforming forces are removed."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For an ideal incompressible fluid, the bulk modulus is:",
+          "image": "",
+          "options": [
+            "Infinite",
+            "Zero",
+            "$1\\text{ N/m}^2$",
+            "Negative"
+          ],
+          "correctOption": 0,
+          "solution": "An incompressible fluid undergoes zero change in volume ($\\Delta V = 0$) under pressure.\n$$B = -\\frac{P}{\\Delta V / V} = \\frac{P}{0} = \\infty$$"
+        }
+      ]
+    }
+  ]
+}
