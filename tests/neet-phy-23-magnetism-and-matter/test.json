@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-23-magnetism-and-matter",
+  "title": "Magnetism and Matter",
+  "syllabus": "Current loop as a magnetic dipole and its magnetic dipole moment, Magnetic dipole moment of a revolving electron, Magnetic field intensity due to a magnetic dipole (bar magnet) along its axis and perpendicular to its axis, Torque on a magnetic dipole (bar magnet) in a uniform magnetic field, Bar magnet as an equivalent solenoid, Magnetic field lines, Magnetic properties of materials - Diamagnetic, Paramagnetic and Ferromagnetic substances with examples, Effect of temperature on magnetic properties (Curie's law and Curie temperature), Magnetization and magnetic susceptibility",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A bar magnet of magnetic moment $M$ and pole strength $m$ is cut into two equal halves along its length. The magnetic moment and pole strength of each piece will be:",
+          "image": "",
+          "options": [
+            "$\\frac{M}{2}, \\frac{m}{2}$",
+            "$M, \\frac{m}{2}$",
+            "$\\frac{M}{2}, m$",
+            "$\\frac{M}{4}, \\frac{m}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "When cut longitudinally (along its length), the length $2l$ remains unchanged while the cross-sectional area and pole strength are halved ($m' = m/2$).\nNew magnetic dipole moment $M' = m' \\times 2l = \\left(\\frac{m}{2}\\right)2l = \\frac{M}{2}$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If a bar magnet of magnetic moment $M$ is bent into the shape of a semi-circular arc, its new magnetic dipole moment will be:",
+          "image": "",
+          "options": [
+            "$\\frac{2M}{\\pi}$",
+            "$\\frac{M}{\\pi}$",
+            "$\\frac{\\pi M}{2}$",
+            "$M$"
+          ],
+          "correctOption": 0,
+          "solution": "Original length $L$ gives $M = m L$.\nWhen bent into a semi-circle of radius $R$: $\\pi R = L \\implies R = \\frac{L}{\\pi}$.\nDistance between the poles (diameter) $d = 2R = \\frac{2L}{\\pi}$.\nNew magnetic moment $M' = m(2R) = m\\left(\\frac{2L}{\\pi}\\right) = \\frac{2M}{\\pi}$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A short bar magnet placed with its axis at $30^\\circ$ with an external uniform magnetic field of $0.25\\text{ T}$ experiences a torque equal to $4.5 \\times 10^{-2}\\text{ J}$. What is the magnitude of magnetic moment of the magnet? (NEET 2017)",
+          "image": "",
+          "options": [
+            "$0.36\\text{ J/T}$",
+            "$0.18\\text{ J/T}$",
+            "$0.72\\text{ J/T}$",
+            "$0.24\\text{ J/T}$"
+          ],
+          "correctOption": 0,
+          "solution": "Torque on a magnetic dipole: $\\tau = M B \\sin\\theta$.\n$$4.5 \\times 10^{-2} = M \\times 0.25 \\times \\sin 30^\\circ = M \\times 0.25 \\times 0.5 = 0.125 M$$\n$$M = \\frac{4.5 \\times 10^{-2}}{0.125} = 0.36\\text{ J/T} = 0.36\\text{ A}\\cdot\\text{m}^2$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "According to Curie's law, the magnetic susceptibility of a paramagnetic substance at absolute temperature $T$ is proportional to: (NEET 2013)",
+          "image": "",
+          "options": [
+            "$\\frac{1}{T}$",
+            "$T$",
+            "$\\frac{1}{T^2}$",
+            "$T^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Curie's law for paramagnetic substances states that magnetization is directly proportional to applied field and inversely proportional to absolute temperature: $\\chi_m = \\frac{C}{T} \\implies \\chi_m \\propto \\frac{1}{T}$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The magnetic susceptibility is negative for: (NEET 2016)",
+          "image": "",
+          "options": [
+            "Diamagnetic material only",
+            "Paramagnetic material only",
+            "Ferromagnetic material only",
+            "Paramagnetic and ferromagnetic materials"
+          ],
+          "correctOption": 0,
+          "solution": "Diamagnetic materials acquire a weak magnetization in a direction opposite to the applied magnetic field, resulting in a small and negative magnetic susceptibility ($-1 \\le \\chi_m < 0$)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A short bar magnet has a magnetic moment of $0.48\\text{ J/T}$. The magnitude and direction of the magnetic field produced by the magnet at a distance of $10\\text{ cm}$ from the centre of the magnet on its broadside-on (equatorial) position is: (NEET 2020)",
+          "image": "",
+          "options": [
+            "$0.48 \\times 10^{-4}\\text{ T}$, antiparallel to $\\vec{M}$",
+            "$0.48 \\times 10^{-4}\\text{ T}$, parallel to $\\vec{M}$",
+            "$0.96 \\times 10^{-4}\\text{ T}$, parallel to $\\vec{M}$",
+            "$0.96 \\times 10^{-4}\\text{ T}$, antiparallel to $\\vec{M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Field on the equatorial line for a short magnet:\n$$B_{\\text{eq}} = \\frac{\\mu_0}{4\\pi}\\frac{M}{d^3} = (10^{-7}) \\times \\frac{0.48}{(0.10)^3} = \\frac{0.48 \\times 10^{-7}}{10^{-3}} = 0.48 \\times 10^{-4}\\text{ T}$$\nThe equatorial field direction is antiparallel (opposite) to the dipole moment vector $\\vec{M}$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Above the Curie temperature, a ferromagnetic material becomes: (NEET 2014)",
+          "image": "",
+          "options": [
+            "Paramagnetic",
+            "Diamagnetic",
+            "Superconducting",
+            "Remains ferromagnetic"
+          ],
+          "correctOption": 0,
+          "solution": "Above the Curie temperature $T_C$, thermal energy disrupts the spontaneous domain alignment of the ferromagnetic material, converting it into a paramagnetic substance obeying the Curie-Weiss law $\\chi = \\frac{C}{T - T_C}$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of the magnitude of magnetic field at a distance $d$ on the axial line to that on the equatorial line of a short bar magnet is:",
+          "image": "",
+          "options": [
+            "$2 : 1$",
+            "$1 : 2$",
+            "$4 : 1$",
+            "$1 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "For a short bar magnet:\n$$B_{\\text{axial}} = \\frac{\\mu_0}{4\\pi}\\frac{2M}{d^3}, \\quad B_{\\text{eq}} = \\frac{\\mu_0}{4\\pi}\\frac{M}{d^3}$$\n$$\\frac{B_{\\text{axial}}}{B_{\\text{eq}}} = \\frac{2}{1} = 2 : 1$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Gauss's law in magnetism ($\\oint \\vec{B} \\cdot d\\vec{A} = 0$) signifies that:",
+          "image": "",
+          "options": [
+            "Isolated magnetic monopoles do not exist",
+            "Magnetic lines of force do not form closed loops",
+            "Magnetic field is non-conservative",
+            "Magnetic poles attract each other"
+          ],
+          "correctOption": 0,
+          "solution": "$\\oint \\vec{B} \\cdot d\\vec{A} = 0$ means the net outward magnetic flux through any closed surface is identically zero, establishing that magnetic poles always exist in equal and opposite pairs and isolated magnetic monopoles do not exist in nature."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the relative permeability of a material is $\\mu_r = 0.9999$, the material is:",
+          "image": "",
+          "options": [
+            "Diamagnetic",
+            "Paramagnetic",
+            "Ferromagnetic",
+            "Non-magnetic"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic susceptibility $\\chi_m = \\mu_r - 1 = 0.9999 - 1 = -0.0001$. A small negative susceptibility (or $\\mu_r < 1$) corresponds to a diamagnetic substance."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A bar magnet of length $l$ and magnetic dipole moment $M$ is cut into two equal halves perpendicular to its length. The magnetic moment of each piece is:",
+          "image": "",
+          "options": [
+            "$\\frac{M}{2}$",
+            "$M$",
+            "$2M$",
+            "$\\frac{M}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Cutting perpendicular to its length leaves pole strength $m$ unchanged while the length is halved ($l' = l/2$).\nNew magnetic moment $M' = m \\times (l/2) = \\frac{M}{2}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The work done in rotating a bar magnet of magnetic moment $M$ through an angle $180^\\circ$ from the direction of a uniform magnetic field $B$ is:",
+          "image": "",
+          "options": [
+            "$2MB$",
+            "$MB$",
+            "$-MB$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "$$W = MB(\\cos\\theta_1 - \\cos\\theta_2) = MB(\\cos 0^\\circ - \\cos 180^\\circ) = MB(1 - (-1)) = 2MB$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following materials displays the Meissner effect (perfect diamagnetism where $\\chi_m = -1$ and $\\mu_r = 0$)?",
+          "image": "",
+          "options": [
+            "Superconductors",
+            "Soft iron",
+            "Aluminum",
+            "Bismuth"
+          ],
+          "correctOption": 0,
+          "solution": "Superconductors in the superconducting state exhibit perfect diamagnetism (the Meissner effect), expelling all internal magnetic flux lines so that $\\chi_m = -1$ and $\\mu_r = 0$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The SI unit of magnetic dipole moment is:",
+          "image": "",
+          "options": [
+            "$\\text{A}\\cdot\\text{m}^2\\text{ or J/T}$",
+            "$\\text{A/m}$",
+            "$\\text{T}\\cdot\\text{m/A}$",
+            "$\\text{J}\\cdot\\text{T}$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic moment $M = I A$ has the SI unit $\\text{A}\\cdot\\text{m}^2$. From torque $\\tau = M B$, its unit can also be expressed as $\\text{N}\\cdot\\text{m/T} = \\text{J/T}$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a diamagnetic liquid is placed in a watch glass resting on two closely placed pole pieces of a strong magnet, the liquid accumulates:",
+          "image": "",
+          "options": [
+            "At the sides where the magnetic field is weaker",
+            "At the center where the magnetic field is strongest",
+            "Uniformly throughout the surface",
+            "In vertical columns"
+          ],
+          "correctOption": 0,
+          "solution": "Diamagnetic substances are repelled by magnetic fields and move from stronger regions of the field to weaker regions. When pole pieces are close, the field is strongest at the center, so the liquid is repelled towards the sides, forming a depression at the middle."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electron of charge $e$ and mass $m_e$ moves in a circular orbit of radius $r$ with speed $v$. The ratio of its magnetic dipole moment $\\mu_l$ to its orbital angular momentum $L$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{e}{2m_e}$",
+            "$\\frac{e}{m_e}$",
+            "$\\frac{2e}{m_e}$",
+            "$\\frac{e}{4m_e}$"
+          ],
+          "correctOption": 0,
+          "solution": "Orbital magnetic moment $\\mu_l = \\frac{e v r}{2}$. Orbital angular momentum $L = m_e v r$.\n$$\\frac{\\mu_l}{L} = \\frac{e v r / 2}{m_e v r} = \\frac{e}{2m_e}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The time period of oscillation of a magnetic needle of magnetic moment $M$ and moment of inertia $I$ in a uniform magnetic field $B$ is:",
+          "image": "",
+          "options": [
+            "$2\\pi\\sqrt{\\frac{I}{MB}}$",
+            "$2\\pi\\sqrt{\\frac{MB}{I}}$",
+            "$\\frac{1}{2\\pi}\\sqrt{\\frac{I}{MB}}$",
+            "$2\\pi\\sqrt{\\frac{I B}{M}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Restoring torque $\\tau = -M B \\theta = I \\frac{d^2\\theta}{dt^2} \\implies \\frac{d^2\\theta}{dt^2} + \\left(\\frac{MB}{I}\\right)\\theta = 0$.\n$$\\omega = \\sqrt{\\frac{MB}{I}} \\implies T = \\frac{2\\pi}{\\omega} = 2\\pi\\sqrt{\\frac{I}{MB}}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following is an example of a diamagnetic substance?",
+          "image": "",
+          "options": [
+            "Bismuth and Copper",
+            "Aluminum and Sodium",
+            "Iron and Nickel",
+            "Oxygen (gas) and Platinum"
+          ],
+          "correctOption": 0,
+          "solution": "Bismuth, copper, water, diamond, and gold are classic diamagnetic substances whose atoms have paired electrons with zero net intrinsic magnetic moment."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A solenoid of length $0.5\\text{ m}$, radius $1\\text{ cm}$, and 500 turns carries a current of $2\\text{ A}$. Its equivalent magnetic moment is:",
+          "image": "",
+          "options": [
+            "$0.314\\text{ A}\\cdot\\text{m}^2$",
+            "$3.14\\text{ A}\\cdot\\text{m}^2$",
+            "$0.0314\\text{ A}\\cdot\\text{m}^2$",
+            "$0.628\\text{ A}\\cdot\\text{m}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Cross-sectional area $A = \\pi r^2 = \\pi (0.01)^2 = 10^{-4}\\pi\\text{ m}^2$.\n$$M = N I A = 500 \\times 2 \\times (10^{-4}\\pi) = 1000 \\times 3.1416 \\times 10^{-4} = 0.314\\text{ A}\\cdot\\text{m}^2$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The relation between magnetic induction $\\vec{B}$, magnetic field intensity $\\vec{H}$, and magnetization $\\vec{M}$ in a medium is:",
+          "image": "",
+          "options": [
+            "$\\vec{B} = \\mu_0(\\vec{H} + \\vec{M})$",
+            "$\\vec{B} = \\mu_0(\\vec{H} - \\vec{M})$",
+            "$\\vec{H} = \\mu_0(\\vec{B} + \\vec{M})$",
+            "$\\vec{B} = \\vec{H} + \\mu_0\\vec{M}$"
+          ],
+          "correctOption": 0,
+          "solution": "The total magnetic field inside a magnetized material is given by the constitutive relation $\\vec{B} = \\mu_0(\\vec{H} + \\vec{M})$."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two identical thin bar magnets, each of length $L$ and pole strength $m$, are placed at right angles to each other with the north pole of one touching the south pole of the other. The resultant magnetic moment of the combination is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{2} M$",
+            "$2M$",
+            "$M$",
+            "$\\frac{M}{\\sqrt{2}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Each magnet has dipole moment $M = m L$. Since they are oriented perpendicular to each other ($90^\\circ$):\n$$M_{\\text{res}} = \\sqrt{M^2 + M^2} = \\sqrt{2} M$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The magnetic susceptibility $\\chi_m$ of a paramagnetic substance at $300\\text{ K}$ is $1.2 \\times 10^{-5}$. Its value at $600\\text{ K}$ will be:",
+          "image": "",
+          "options": [
+            "$0.6 \\times 10^{-5}$",
+            "$2.4 \\times 10^{-5}$",
+            "$1.2 \\times 10^{-5}$",
+            "$0.3 \\times 10^{-5}$"
+          ],
+          "correctOption": 0,
+          "solution": "By Curie's Law, $\\chi_m \\propto \\frac{1}{T}$.\n$$\\frac{\\chi_2}{\\chi_1} = \\frac{T_1}{T_2} = \\frac{300}{600} = \\frac{1}{2} \\implies \\chi_2 = \\frac{1.2 \\times 10^{-5}}{2} = 0.6 \\times 10^{-5}$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following statements about magnetic field lines is TRUE?",
+          "image": "",
+          "options": [
+            "Magnetic field lines form continuous closed loops outside and inside a magnet",
+            "Magnetic field lines originate from south pole and end at north pole outside",
+            "Magnetic field lines can intersect at neutral points",
+            "Magnetic field lines do not exist inside a bar magnet"
+          ],
+          "correctOption": 0,
+          "solution": "Unlike electrostatic lines, magnetic field lines form continuous closed loops running from north to south pole outside the magnet and from south to north pole inside the magnet."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The magnetic susceptibility of a diamagnetic substance is:",
+          "image": "",
+          "options": [
+            "Independent of temperature",
+            "Directly proportional to absolute temperature",
+            "Inversely proportional to absolute temperature",
+            "Inversely proportional to square of absolute temperature"
+          ],
+          "correctOption": 0,
+          "solution": "Diamagnetism arises from induced orbital electronic currents (Lenz's law) and is essentially independent of temperature (with bismuth being a slight exception at extreme conditions)."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A vibration magnetometer placed in a magnetic field has a time period $T$. If the magnetic field is quadrupled ($B' = 4B$), the new time period of oscillation is:",
+          "image": "",
+          "options": [
+            "$\\frac{T}{2}$",
+            "$2T$",
+            "$\\frac{T}{4}$",
+            "$4T$"
+          ],
+          "correctOption": 0,
+          "solution": "$$T = 2\\pi \\sqrt{\\frac{I}{MB}} \\propto \\frac{1}{\\sqrt{B}}$$\nWhen $B' = 4B$, $T' = \\frac{T}{\\sqrt{4}} = \\frac{T}{2}$."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Magnetization $M$ of a magnetic sample is defined as:",
+          "image": "",
+          "options": [
+            "Net magnetic moment per unit volume",
+            "Magnetic flux per unit area",
+            "Pole strength per unit mass",
+            "Magnetic field intensity per unit permeability"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetization vector $\\vec{M}$ is defined as the net magnetic dipole moment per unit volume of the material: $\\vec{M} = \\frac{\\vec{M}_{\\text{net}}}{V}$, with SI units $\\text{A/m}$."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a paramagnetic substance is placed in a non-uniform magnetic field, it tends to move:",
+          "image": "",
+          "options": [
+            "From weaker parts to stronger parts of the magnetic field",
+            "From stronger parts to weaker parts of the magnetic field",
+            "Perpendicular to the direction of magnetic field",
+            "It does not experience any translational force"
+          ],
+          "correctOption": 0,
+          "solution": "Paramagnetic materials are weakly attracted by magnetic fields and therefore migrate from regions of weaker magnetic field to regions of stronger field."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The value of Bohr magneton $\\mu_B$ is approximately:",
+          "image": "",
+          "options": [
+            "$9.27 \\times 10^{-24}\\text{ A}\\cdot\\text{m}^2$",
+            "$9.27 \\times 10^{-27}\\text{ A}\\cdot\\text{m}^2$",
+            "$1.60 \\times 10^{-19}\\text{ A}\\cdot\\text{m}^2$",
+            "$6.63 \\times 10^{-34}\\text{ A}\\cdot\\text{m}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\mu_B = \\frac{e h}{4\\pi m_e} = \\frac{(1.602 \\times 10^{-19}) \\times (6.626 \\times 10^{-34})}{4 \\times 3.1416 \\times (9.109 \\times 10^{-31})} \\approx 9.274 \\times 10^{-24}\\text{ A}\\cdot\\text{m}^2$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A magnetic dipole is placed in a uniform external magnetic field. The net force and net torque acting on it are:",
+          "image": "",
+          "options": [
+            "Force is zero, but torque may be non-zero",
+            "Both force and torque are non-zero",
+            "Both force and torque are always zero",
+            "Force is non-zero, but torque is always zero"
+          ],
+          "correctOption": 0,
+          "solution": "In a uniform magnetic field, the equal and opposite forces on the two poles cancel out ($F_{\\text{net}} = 0$). However, if the dipole is inclined to the field, a net torque $\\vec{\\tau} = \\vec{M} \\times \\vec{B}$ acts on it."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Liquid oxygen suspended between the pole pieces of a strong electromagnet remains stuck between the poles because oxygen is:",
+          "image": "",
+          "options": [
+            "Paramagnetic",
+            "Diamagnetic",
+            "Ferromagnetic",
+            "Non-magnetic"
+          ],
+          "correctOption": 0,
+          "solution": "Molecular oxygen ($\\text{O}_2$) has two unpaired electrons in its anti-bonding $\\pi^*$ molecular orbitals, making it paramagnetic. It is attracted towards the region of strongest magnetic field between the poles."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The potential energy of a magnetic dipole of dipole moment $M$ aligned parallel to a uniform magnetic field $B$ ($\\,\\theta = 0^\\circ$) is:",
+          "image": "",
+          "options": [
+            "$-MB$ (minimum, stable equilibrium)",
+            "$+MB$ (maximum, unstable equilibrium)",
+            "Zero",
+            "$-2MB$"
+          ],
+          "correctOption": 0,
+          "solution": "$$U = -\\vec{M} \\cdot \\vec{B} = -M B \\cos 0^\\circ = -MB$$\nThis minimum energy configuration corresponds to stable equilibrium."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For a paramagnetic material, the relative magnetic permeability $\\mu_r$ satisfies:",
+          "image": "",
+          "options": [
+            "$\\mu_r > 1$ and slightly greater than unity",
+            "$\\mu_r < 1$",
+            "$\\mu_r \\gg 1000$",
+            "$\\mu_r = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "For paramagnetic substances, magnetic susceptibility is small and positive ($0 < \\chi_m \\ll 1$). Hence, relative permeability $\\mu_r = 1 + \\chi_m$ is slightly greater than 1."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A small bar magnet of magnetic moment $M$ is placed on a table. The magnetic field at a distance $r$ from its center along an axis inclined at an angle $\\theta$ with the magnetic axis is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\mu_0}{4\\pi}\\frac{M}{r^3}\\sqrt{1 + 3\\cos^2\\theta}$",
+            "$\\frac{\\mu_0}{4\\pi}\\frac{M}{r^3}\\sqrt{1 + 3\\sin^2\\theta}$",
+            "$\\frac{\\mu_0}{4\\pi}\\frac{2M}{r^3}\\cos\\theta$",
+            "$\\frac{\\mu_0}{4\\pi}\\frac{M}{r^2}\\sqrt{1 + 3\\cos^2\\theta}$"
+          ],
+          "correctOption": 0,
+          "solution": "Radial and transverse components are $B_r = \\frac{\\mu_0}{4\\pi}\\frac{2M\\cos\\theta}{r^3}$ and $B_\\theta = \\frac{\\mu_0}{4\\pi}\\frac{M\\sin\\theta}{r^3}$.\n$$B = \\sqrt{B_r^2 + B_\\theta^2} = \\frac{\\mu_0}{4\\pi}\\frac{M}{r^3}\\sqrt{4\\cos^2\\theta + \\sin^2\\theta} = \\frac{\\mu_0}{4\\pi}\\frac{M}{r^3}\\sqrt{1 + 3\\cos^2\\theta}$$"
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A magnetic needle of magnetic moment $M$ vibrating in a magnetic field $B$ has time period $T$. If another identical needle of magnetic moment $M$ is placed on top of it with like poles together, the new time period of oscillation is:",
+          "image": "",
+          "options": [
+            "$T$",
+            "$\\frac{T}{2}$",
+            "$\\sqrt{2}T$",
+            "$2T$"
+          ],
+          "correctOption": 0,
+          "solution": "When like poles are together, total magnetic moment doubles ($M' = 2M$) and total moment of inertia doubles ($I' = 2I$).\n$$T' = 2\\pi \\sqrt{\\frac{I'}{M' B}} = 2\\pi \\sqrt{\\frac{2I}{2M B}} = 2\\pi \\sqrt{\\frac{I}{MB}} = T$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Domain theory successfully explains the magnetic behavior of:",
+          "image": "",
+          "options": [
+            "Ferromagnetic substances",
+            "Paramagnetic substances",
+            "Diamagnetic substances",
+            "All magnetic materials equally"
+          ],
+          "correctOption": 0,
+          "solution": "Domain theory (developed by Weiss) explains ferromagnetism, where quantum exchange coupling forces billions of atomic dipoles to align spontaneously in local microscopic regions called domains."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dimensional formula of magnetic pole strength $m$ is:",
+          "image": "",
+          "options": [
+            "$[\\text{L}\\text{A}]$",
+            "$[\\text{L}^2\\text{A}]$",
+            "$[\\text{M}\\text{L}\\text{T}^{-2}\\text{A}^{-1}]$",
+            "$[\\text{A}\\text{T}]$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic dipole moment is $M = m \\times 2l$.\n$$[m] = \\frac{[M]}{[l]} = \\frac{[\\text{A}\\cdot\\text{m}^2]}{[\\text{m}]} = [\\text{A}\\cdot\\text{m}] = [\\text{L}\\text{A}]$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The susceptibility of a ferromagnetic substance at temperature $T$ ($T > T_C$) according to the Curie-Weiss law is proportional to:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{T - T_C}$",
+            "$\\frac{1}{T + T_C}$",
+            "$\\frac{1}{T^2 - T_C^2}$",
+            "$(T - T_C)$"
+          ],
+          "correctOption": 0,
+          "solution": "Above the Curie temperature $T_C$, a ferromagnetic material behaves paramagnetically with susceptibility $\\chi_m = \\frac{C}{T - T_C} \\propto \\frac{1}{T - T_C}$."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a bar magnet is placed in a non-uniform magnetic field, it experiences:",
+          "image": "",
+          "options": [
+            "Both a net force and a torque",
+            "Only a torque and no net force",
+            "Only a net force and no torque",
+            "Neither force nor torque"
+          ],
+          "correctOption": 0,
+          "solution": "In a non-uniform magnetic field, unequal field strengths at the north and south poles cause unequal forces ($F_N \\neq F_S$), producing a net translational force $\\vec{F} = \\nabla(\\vec{M}\\cdot\\vec{B}) \\neq 0$ alongside a rotational torque $\\vec{\\tau} = \\vec{M} \\times \\vec{B}$."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A closely wound solenoid of 800 turns and area of cross-section $2.5 \\times 10^{-4}\\text{ m}^2$ carries a current of $3.0\\text{ A}$. What is its associated magnetic moment?",
+          "image": "",
+          "options": [
+            "$0.6\\text{ J/T}$",
+            "$0.3\\text{ J/T}$",
+            "$1.2\\text{ J/T}$",
+            "$0.15\\text{ J/T}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$M = N I A = 800 \\times 3.0 \\times (2.5 \\times 10^{-4}) = 2400 \\times 2.5 \\times 10^{-4} = 0.6\\text{ J/T} = 0.6\\text{ A}\\cdot\\text{m}^2$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The magnetic field lines inside a bar magnet:",
+          "image": "",
+          "options": [
+            "Run from the South pole to the North pole",
+            "Run from the North pole to the South pole",
+            "Do not exist",
+            "Are randomly oriented"
+          ],
+          "correctOption": 0,
+          "solution": "Because magnetic field lines form continuous closed loops, they emerge from the North pole and enter the South pole outside the magnet, and continue from the South pole to the North pole inside the magnet."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For a ferromagnetic material, the relative magnetic permeability $\\mu_r$ is:",
+          "image": "",
+          "options": [
+            "$\\mu_r \\gg 1000$",
+            "$\\mu_r < 1$",
+            "$\\mu_r = 1$",
+            "$\\mu_r = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Ferromagnetic materials strongly amplify external magnetic fields, having very large positive magnetic susceptibility ($\\chi_m \\gg 1000$), so $\\mu_r = 1 + \\chi_m \\gg 1000$."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A circular loop of radius $R$ carrying current $I$ has magnetic moment $M$. If the radius is doubled keeping current constant, the new magnetic moment will be:",
+          "image": "",
+          "options": [
+            "$4M$",
+            "$2M$",
+            "$M$",
+            "$8M$"
+          ],
+          "correctOption": 0,
+          "solution": "$M = I A = I (\\pi R^2) \\propto R^2$.\nWhen $R' = 2R$, $M' = I \\pi (2R)^2 = 4(I \\pi R^2) = 4M$."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a paramagnetic gas is cooled, its magnetic susceptibility:",
+          "image": "",
+          "options": [
+            "Increases according to $\\chi_m \\propto 1/T$",
+            "Decreases linearly",
+            "Remains unaffected",
+            "Becomes negative"
+          ],
+          "correctOption": 0,
+          "solution": "By Curie's law, $\\chi_m = \\frac{C}{T}$. As temperature decreases, thermal agitation decreases, allowing external magnetic fields to align atomic dipoles more effectively, which increases susceptibility."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two identical magnetic dipoles each of moment $M$ are placed with their axes collinear and pointing in the same direction separated by distance $r$. The interaction potential energy between them varies as:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{r^3}$",
+            "$\\frac{1}{r^2}$",
+            "$\\frac{1}{r}$",
+            "$\\frac{1}{r^4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Potential energy $U = -\\vec{M}_2 \\cdot \\vec{B}_1 = -M_2 \\left(\\frac{\\mu_0}{4\\pi}\\frac{2M_1}{r^3}\\right) \\propto \\frac{1}{r^3}$."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The SI unit of magnetic intensity $\\vec{H}$ is:",
+          "image": "",
+          "options": [
+            "$\\text{A/m}$",
+            "$\\text{Tesla}$",
+            "$\\text{Weber}$",
+            "$\\text{A}\\cdot\\text{m}$"
+          ],
+          "correctOption": 0,
+          "solution": "From $\\vec{B} = \\mu_0(\\vec{H} + \\vec{M})$ or Ampere's law $\\oint \\vec{H} \\cdot d\\vec{l} = I_{\\text{free}}$, magnetic intensity $\\vec{H}$ has the SI unit $\\text{A/m}$ (ampere per metre)."
+        }
+      ]
+    }
+  ]
+}
