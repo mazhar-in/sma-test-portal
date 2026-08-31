@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-20-electric-potential-and-capacitance",
+  "title": "Electric Potential and Capacitance",
+  "syllabus": "Electric potential, Potential difference, Electric potential due to a point charge, A dipole and system of charges; Equipotential surfaces, Electrical potential energy of a system of two point charges and of electric dipole in an electrostatic field. Conductors and dielectrics, Free charges and bound charges inside a conductor. Dielectrics and electric polarisation, Capacitors and capacitance, Combination of capacitors in series and in parallel, Capacitance of a parallel plate capacitor with and without dielectric medium between the plates, Energy stored in a capacitor.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A parallel plate capacitor has a uniform electric field $E$ in the space between the plates. If the distance between the plates is $d$ and area of each plate is $A$, the energy stored in the capacitor is: (NEET 2021)",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}\\varepsilon_0 E^2 A d$",
+            "$\\varepsilon_0 E A d$",
+            "$\\frac{1}{2}\\varepsilon_0 E^2$",
+            "$\\frac{E^2 A d}{\\varepsilon_0}$"
+          ],
+          "correctOption": 0,
+          "solution": "Energy density of electric field is $u = \\frac{1}{2}\\varepsilon_0 E^2$.\nTotal energy stored $U = u \\times \\text{Volume} = \\frac{1}{2}\\varepsilon_0 E^2 A d$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a certain region of space with volume $0.2\\text{ m}^3$, the electric potential is found to be $5\\text{ V}$ throughout. The magnitude of electric field in this region is: (NEET 2020)",
+          "image": "",
+          "options": [
+            "Zero",
+            "$0.5\\text{ N/C}$",
+            "$1\\text{ N/C}$",
+            "$5\\text{ N/C}$"
+          ],
+          "correctOption": 0,
+          "solution": "Electric field is related to potential gradient by $E = -\\frac{dV}{dr}$.\nSince $V = 5\\text{ V} = \\text{constant}$ throughout the volume, $\\frac{dV}{dr} = 0 \\implies E = 0$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The electrostatic potential of a uniformly charged thin spherical shell of charge $Q$ and radius $R$ at a distance $r$ from the centre ($r < R$) is: (NEET 2022)",
+          "image": "",
+          "options": [
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{Q}{R}$",
+            "Zero",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{Q}{r}$",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{Q r}{R^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Since the electric field inside a charged spherical shell is zero everywhere ($E = 0$), the electric potential inside is uniform and equal to its value on the surface: $V = \\frac{1}{4\\pi\\varepsilon_0}\\frac{Q}{R}$ for all $r \\le R$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The equivalent capacitance of the combination shown in the circuit between points $A$ and $B$, where three identical capacitors each of capacitance $C$ are connected in parallel, is: (NEET 2023)",
+          "image": "",
+          "options": [
+            "$3C$",
+            "$\\frac{C}{3}$",
+            "$\\frac{3}{2}C$",
+            "$\\frac{2}{3}C$"
+          ],
+          "correctOption": 0,
+          "solution": "For parallel combination of capacitors, equivalent capacitance is simply the arithmetic sum: $C_{\\text{eq}} = C_1 + C_2 + C_3 = C + C + C = 3C$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A capacitor of $20\\text{ \\mu F}$ is charged to $500\\text{ V}$ and then its plates are joined together through a resistance of $10\\,\\Omega$. The heat produced in the resistance is: (NEET 2013)",
+          "image": "",
+          "options": [
+            "$2.5\\text{ J}$",
+            "$5.0\\text{ J}$",
+            "$250\\text{ J}$",
+            "$1.25\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "All stored electrostatic potential energy is dissipated as heat in the resistor:\n$$H = U = \\frac{1}{2} C V^2 = \\frac{1}{2} \\times (20 \\times 10^{-6}\\text{ F}) \\times (500\\text{ V})^2 = 10^{-5} \\times 250000 = 2.5\\text{ J}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The electric potential at a point $(x, y, z)$ is given by $V = -x^2 y - x z^3 + 4$. The electric field $\\vec{E}$ at that point is: (NEET 2014)",
+          "image": "",
+          "options": [
+            "$\\vec{E} = (2xy + z^3)\\hat{i} + x^2\\hat{j} + 3xz^2\\hat{k}$",
+            "$\\vec{E} = 2xy\\hat{i} + (x^2 + y^2)\\hat{j} + (3xz - y^2)\\hat{k}$",
+            "$\\vec{E} = (x^2 + z^3)\\hat{i} + x^2\\hat{j} + z^3\\hat{k}$",
+            "$\\vec{E} = (2xy - z^3)\\hat{i} + x^2\\hat{j} + 3xz^2\\hat{k}$"
+          ],
+          "correctOption": 0,
+          "solution": "$E_x = -\\frac{\\partial V}{\\partial x} = -(-2xy - z^3) = 2xy + z^3$\n$E_y = -\\frac{\\partial V}{\\partial y} = -(-x^2) = x^2$\n$E_z = -\\frac{\\partial V}{\\partial z} = -(-3xz^2) = 3xz^2$\n$$\\vec{E} = (2xy + z^3)\\hat{i} + x^2\\hat{j} + 3xz^2\\hat{k}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A parallel plate air capacitor of capacitance $C$ is connected to a cell of emf $V$ and then disconnected from it. A dielectric slab of dielectric constant $K$, which can just fill the air gap of the capacitor, is now inserted in it. Which of the following is INCORRECT? (NEET 2016)",
+          "image": "",
+          "options": [
+            "The energy stored in the capacitor increases $K$ times.",
+            "The charge on the capacitor remains conserved.",
+            "The potential difference between the plates decreases $K$ times.",
+            "The capacitance increases $K$ times."
+          ],
+          "correctOption": 0,
+          "solution": "When disconnected from the battery, charge $Q$ is constant. Capacitance increases to $C' = KC$. Potential decreases to $V' = V/K$. Stored energy $U' = \\frac{Q^2}{2KC} = \\frac{U}{K}$ (decreases $K$ times). Thus, statement (1) is incorrect."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two metallic spheres of radii $1\\text{ cm}$ and $3\\text{ cm}$ are given charges of $-1 \\times 10^{-2}\\text{ C}$ and $5 \\times 10^{-2}\\text{ C}$ respectively. If these are connected by a conducting wire, the final charge on the bigger sphere is: (NEET 2012)",
+          "image": "",
+          "options": [
+            "$3 \\times 10^{-2}\\text{ C}$",
+            "$4 \\times 10^{-2}\\text{ C}$",
+            "$1 \\times 10^{-2}\\text{ C}$",
+            "$2 \\times 10^{-2}\\text{ C}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total charge $Q = q_1 + q_2 = (-1 + 5) \\times 10^{-2} = 4 \\times 10^{-2}\\text{ C}$.\nConnected spheres reach a common potential, sharing charge proportional to radii ($q \\propto R$):\n$$q_2' = \\left(\\frac{R_2}{R_1 + R_2}\\right) Q = \\left(\\frac{3}{1 + 3}\\right)(4 \\times 10^{-2}\\text{ C}) = 3 \\times 10^{-2}\\text{ C}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The work done in moving a test charge $q_0$ between two points on an equipotential surface is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$q_0 V$",
+            "$2 q_0 V$",
+            "Dependent on the path chosen"
+          ],
+          "correctOption": 0,
+          "solution": "On an equipotential surface, potential difference between any two points is zero ($\\Delta V = 0$). Work done $W = q_0 \\Delta V = 0$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The electric potential at an equatorial point of an electric dipole of dipole moment $p$ at a distance $r$ is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{p}{r^2}$",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{p}{r}$",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{2p}{r^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a dipole, $V = \\frac{1}{4\\pi\\varepsilon_0}\\frac{p\\cos\\theta}{r^2}$. At any equatorial point, $\\theta = 90^\\circ \\implies \\cos 90^\\circ = 0$, so $V = 0$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A parallel plate capacitor with plate area $A$ and separation $d$ is filled with two dielectric slabs of dielectric constants $K_1$ and $K_2$, each of thickness $d/2$. The equivalent capacitance is:",
+          "image": "",
+          "options": [
+            "$\\frac{2\\varepsilon_0 A}{d}\\left(\\frac{K_1 K_2}{K_1 + K_2}\\right)$",
+            "$\\frac{\\varepsilon_0 A}{d}\\left(\\frac{K_1 + K_2}{2}\\right)$",
+            "$\\frac{\\varepsilon_0 A}{d}\\left(\\frac{K_1 K_2}{K_1 + K_2}\\right)$",
+            "$\\frac{4\\varepsilon_0 A}{d}\\left(\\frac{K_1 K_2}{K_1 + K_2}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "The slabs form two capacitors in series: $C_1 = \\frac{K_1 \\varepsilon_0 A}{d/2} = \\frac{2K_1 \\varepsilon_0 A}{d}$ and $C_2 = \\frac{2K_2 \\varepsilon_0 A}{d}$.\n$$C_{\\text{eq}} = \\frac{C_1 C_2}{C_1 + C_2} = \\frac{2\\varepsilon_0 A}{d}\\left(\\frac{K_1 K_2}{K_1 + K_2}\\right)$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If 64 identical small mercury droplets each of capacitance $C$ and potential $V$ coalesce to form a single big droplet, the potential of the big droplet is:",
+          "image": "",
+          "options": [
+            "$16V$",
+            "$64V$",
+            "$4V$",
+            "$32V$"
+          ],
+          "correctOption": 0,
+          "solution": "Volume conservation: $\\frac{4}{3}\\pi R^3 = 64 \\left(\\frac{4}{3}\\pi r^3\\right) \\implies R = 4r$.\nTotal charge $Q = 64q = 64(CV)$.\nNew capacitance $C' = 4\\pi\\varepsilon_0 R = 4(4\\pi\\varepsilon_0 r) = 4C$.\n$$V' = \\frac{Q}{C'} = \\frac{64 q}{4 C} = 16 V$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A capacitor of capacitance $C_1 = 6\\text{ \\mu F}$ charged to a potential $V_1 = 120\\text{ V}$ is connected across an uncharged capacitor $C_2 = 3\\text{ \\mu F}$. The common potential acquired by the system is:",
+          "image": "",
+          "options": [
+            "$80\\text{ V}$",
+            "$60\\text{ V}$",
+            "$40\\text{ V}$",
+            "$90\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$V_{\\text{common}} = \\frac{C_1 V_1 + C_2 V_2}{C_1 + C_2} = \\frac{(6\\text{ \\mu F})(120\\text{ V}) + 0}{6\\text{ \\mu F} + 3\\text{ \\mu F}} = \\frac{720}{9} = 80\\text{ V}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The loss of electrostatic energy in sharing charges between the two capacitors in the above question is:",
+          "image": "",
+          "options": [
+            "$1.44 \\times 10^{-2}\\text{ J}$",
+            "$2.88 \\times 10^{-2}\\text{ J}$",
+            "$4.32 \\times 10^{-2}\\text{ J}$",
+            "$0.72 \\times 10^{-2}\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\Delta U = \\frac{1}{2}\\frac{C_1 C_2}{C_1 + C_2}(V_1 - V_2)^2 = \\frac{1}{2}\\frac{(6 \\times 10^{-6})(3 \\times 10^{-6})}{(6 + 3) \\times 10^{-6}}(120 - 0)^2$$\n$$\\Delta U = \\frac{1}{2}\\left(2 \\times 10^{-6}\\right)(14400) = 1.44 \\times 10^{-2}\\text{ J}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Equipotential surfaces associated with an isolated single point charge are:",
+          "image": "",
+          "options": [
+            "Concentric spheres centred at the charge",
+            "Concentric cylinders",
+            "Equispaced parallel planes",
+            "Hyperbolic sheets"
+          ],
+          "correctOption": 0,
+          "solution": "Electric potential due to a point charge is $V = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q}{r}$. For constant $V$, $r$ is constant, representing concentric spherical surfaces centred on the point charge."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Four point charges $+q, -q, +q,$ and $-q$ are placed respectively at the four corners $A, B, C,$ and $D$ of a square of side $a$. The electric potential at the centre of the square is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{4q}{a}$",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{4\\sqrt{2}q}{a}$",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{2q}{a}$"
+          ],
+          "correctOption": 0,
+          "solution": "Distance from each corner to the centre is $r = \\frac{a}{\\sqrt{2}}$.\n$$V_{\\text{centre}} = \\frac{1}{4\\pi\\varepsilon_0 r}\\left(+q - q + q - q\\right) = 0$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A parallel plate capacitor with plate separation $d$ is charged by a battery to potential $V$. While remaining connected to the battery, the plate separation is doubled ($d' = 2d$). What happens to the electric field $E$ and stored energy $U$?",
+          "image": "",
+          "options": [
+            "$E$ becomes $E/2$ and $U$ becomes $U/2$",
+            "$E$ remains same and $U$ doubles",
+            "$E$ becomes $E/2$ and $U$ doubles",
+            "$E$ becomes $E/4$ and $U$ becomes $U/4$"
+          ],
+          "correctOption": 0,
+          "solution": "Battery connected $\\implies V$ is constant.\nElectric field $E = \\frac{V}{d} \\implies E' = \\frac{V}{2d} = \\frac{E}{2}$.\nCapacitance $C = \\frac{\\varepsilon_0 A}{d} \\implies C' = \\frac{C}{2}$.\nStored energy $U = \\frac{1}{2} C V^2 \\implies U' = \\frac{1}{2}\\left(\\frac{C}{2}\\right)V^2 = \\frac{U}{2}$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Electric field lines and equipotential surfaces always intersect each other at an angle of:",
+          "image": "",
+          "options": [
+            "$90^\\circ$",
+            "$0^\\circ$",
+            "$45^\\circ$",
+            "$180^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "Since no work is done moving along an equipotential surface ($dW = \\vec{E} \\cdot d\\vec{r} = 0$), the electric field vector $\\vec{E}$ must be strictly perpendicular (orthogonal at $90^\\circ$) to the equipotential surface at all points."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Three capacitors of capacitances $2\\text{ \\mu F}, 3\\text{ \\mu F},$ and $6\\text{ \\mu F}$ are connected in series. The effective capacitance of the combination is:",
+          "image": "",
+          "options": [
+            "$1\\text{ \\mu F}$",
+            "$11\\text{ \\mu F}$",
+            "$0.5\\text{ \\mu F}$",
+            "$2\\text{ \\mu F}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\frac{1}{C_{\\text{eq}}} = \\frac{1}{C_1} + \\frac{1}{C_2} + \\frac{1}{C_3} = \\frac{1}{2} + \\frac{1}{3} + \\frac{1}{6} = \\frac{3 + 2 + 1}{6} = \\frac{6}{6} = 1\\text{ \\mu F}^{-1} \\implies C_{\\text{eq}} = 1\\text{ \\mu F}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An uncharged conducting slab of thickness $t$ ($t < d$) is placed between the plates of a parallel plate capacitor of plate separation $d$ and area $A$. The new capacitance is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\varepsilon_0 A}{d - t}$",
+            "$\\frac{\\varepsilon_0 A}{d + t}$",
+            "$\\frac{\\varepsilon_0 A}{d}$",
+            "$\\frac{\\varepsilon_0 A}{t}$"
+          ],
+          "correctOption": 0,
+          "solution": "Inside a conductor, $E = 0$ (equivalent to $K = \\infty$).\n$$C = \\frac{\\varepsilon_0 A}{d - t + \\frac{t}{K}} = \\frac{\\varepsilon_0 A}{d - t + 0} = \\frac{\\varepsilon_0 A}{d - t}$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two point charges $+3\\text{ \\mu C}$ and $+8\\text{ \\mu C}$ are placed at a separation of $10\\text{ cm}$. The work done in bringing them $4\\text{ cm}$ closer to each other is: $\\left(\\frac{1}{4\\pi\\varepsilon_0} = 9 \\times 10^9\\text{ N}\\cdot\\text{m}^2/\\text{C}^2\\right)$",
+          "image": "",
+          "options": [
+            "$1.44\\text{ J}$",
+            "$2.16\\text{ J}$",
+            "$3.60\\text{ J}$",
+            "$0.72\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial distance $r_1 = 0.10\\text{ m}$; final distance $r_2 = 0.10 - 0.04 = 0.06\\text{ m}$.\n$$W = \\Delta U = k q_1 q_2 \\left(\\frac{1}{r_2} - \\frac{1}{r_1}\\right) = (9 \\times 10^9)(3 \\times 10^{-6})(8 \\times 10^{-6})\\left(\\frac{1}{0.06} - \\frac{1}{0.10}\\right)$$\n$$W = 0.216 \\times \\left(\\frac{50}{3} - 10\\right) = 0.216 \\times \\frac{20}{3} = 1.44\\text{ J}$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dielectric strength of a medium is defined as:",
+          "image": "",
+          "options": [
+            "The maximum electric field the medium can withstand without dielectric breakdown",
+            "The ratio of electric flux to permittivity",
+            "The total charge stored per unit area",
+            "The electrostatic potential at the boundary"
+          ],
+          "correctOption": 0,
+          "solution": "Dielectric strength represents the maximum value of applied electric field that an insulating dielectric material can sustain without undergoing electrical breakdown and becoming conductive."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A charged particle of mass $m$ and charge $q$ is accelerated from rest through a potential difference $V$. The final de Broglie wavelength or kinetic energy of the particle is proportional to:",
+          "image": "",
+          "options": [
+            "Kinetic energy $= qV$",
+            "Kinetic energy $= \\frac{q}{V}$",
+            "Kinetic energy $= \\frac{V}{q}$",
+            "Kinetic energy $= qV^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Work done by the electrostatic field is fully converted into kinetic energy: $K = W = qV$."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A solid conducting sphere of radius $R_1$ is enclosed concentrically by a thin conducting spherical shell of radius $R_2$ ($R_2 > R_1$). The capacitance of the spherical capacitor is:",
+          "image": "",
+          "options": [
+            "$4\\pi\\varepsilon_0 \\left(\\frac{R_1 R_2}{R_2 - R_1}\\right)$",
+            "$4\\pi\\varepsilon_0 (R_2 - R_1)$",
+            "$4\\pi\\varepsilon_0 \\left(\\frac{R_1 R_2}{R_1 + R_2}\\right)$",
+            "$\\frac{4\\pi\\varepsilon_0}{R_2 - R_1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Potential difference between concentric conductors is $V = \\frac{q}{4\\pi\\varepsilon_0}\\left(\\frac{1}{R_1} - \\frac{1}{R_2}\\right) = \\frac{q(R_2 - R_1)}{4\\pi\\varepsilon_0 R_1 R_2}$.\n$$C = \\frac{q}{V} = 4\\pi\\varepsilon_0 \\left(\\frac{R_1 R_2}{R_2 - R_1}\\right)$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a parallel plate capacitor, the capacity increases when:",
+          "image": "",
+          "options": [
+            "Plate area is increased and plate separation is decreased",
+            "Plate area is decreased and plate separation is decreased",
+            "Plate area is increased and plate separation is increased",
+            "Dielectric is removed"
+          ],
+          "correctOption": 0,
+          "solution": "From $C = \\frac{K \\varepsilon_0 A}{d}$, capacitance is directly proportional to plate area $A$ and inversely proportional to plate separation distance $d$."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The electric potential in volts in a region is given by $V = 6x - 8x y^2 - 8y + 6yz - 4z^2$. The electric force experienced by a charge of $+2\\text{ C}$ situated at origin $(0, 0, 0)$ is:",
+          "image": "",
+          "options": [
+            "$20\\text{ N}$",
+            "$10\\text{ N}$",
+            "$12\\text{ N}$",
+            "$6\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "At $(0, 0, 0)$:\n$E_x = -\\frac{\\partial V}{\\partial x} = -(6 - 8y^2) = -6\\text{ V/m}$\n$E_y = -\\frac{\\partial V}{\\partial y} = -(-16xy - 8 + 6z) = +8\\text{ V/m}$\n$E_z = -\\frac{\\partial V}{\\partial z} = -(6y - 8z) = 0\\text{ V/m}$\n$$E = \\sqrt{(-6)^2 + (8)^2} = 10\\text{ V/m}$$\n$$F = q E = (2\\text{ C})(10\\text{ N/C}) = 20\\text{ N}$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Electric susceptibility $\\chi_e$ and dielectric constant $K$ of an isotropic dielectric material are related as:",
+          "image": "",
+          "options": [
+            "$K = 1 + \\chi_e$",
+            "$K = 1 - \\chi_e$",
+            "$\\chi_e = 1 + K$",
+            "$K = \\varepsilon_0 \\chi_e$"
+          ],
+          "correctOption": 0,
+          "solution": "Total electric displacement $\\vec{D} = \\varepsilon_0 \\vec{E} + \\vec{P} = \\varepsilon_0 \\vec{E} + \\varepsilon_0 \\chi_e \\vec{E} = \\varepsilon_0 (1 + \\chi_e)\\vec{E} = K \\varepsilon_0 \\vec{E}$, which yields $K = 1 + \\chi_e$."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electric dipole of moment $\\vec{p}$ is placed in a uniform electric field $\\vec{E}$. The dipole is in stable equilibrium when the angle between $\\vec{p}$ and $\\vec{E}$ is:",
+          "image": "",
+          "options": [
+            "$0^\\circ$",
+            "$180^\\circ$",
+            "$90^\\circ$",
+            "$45^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "Potential energy is $U = -pE\\cos\\theta$. Minimum potential energy corresponds to stable equilibrium, which occurs at $\\theta = 0^\\circ$ ($U = -pE$, torque $\\tau = 0$)."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A capacitor of $10\\text{ \\mu F}$ is connected across a $50\\text{ V}$ battery. The electrostatic energy stored in the capacitor is:",
+          "image": "",
+          "options": [
+            "$1.25 \\times 10^{-2}\\text{ J}$",
+            "$2.5 \\times 10^{-2}\\text{ J}$",
+            "$5.0 \\times 10^{-3}\\text{ J}$",
+            "$2.5 \\times 10^{-3}\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$U = \\frac{1}{2} C V^2 = \\frac{1}{2} \\times (10 \\times 10^{-6}) \\times (50)^2 = 5 \\times 10^{-6} \\times 2500 = 1.25 \\times 10^{-2}\\text{ J}$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The SI unit of electric potential and capacitance are respectively:",
+          "image": "",
+          "options": [
+            "Volt and Farad",
+            "Joule and Henry",
+            "Volt and Ohm",
+            "Newton/Coulomb and Farad"
+          ],
+          "correctOption": 0,
+          "solution": "Electric potential is measured in Volts ($1\\text{ V} = 1\\text{ J/C}$) and capacitance is measured in Farads ($1\\text{ F} = 1\\text{ C/V}$)."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two charges $+q$ and $-q$ are separated by distance $2a$. The electrostatic potential energy of the dipole system is:",
+          "image": "",
+          "options": [
+            "$-\\frac{1}{4\\pi\\varepsilon_0}\\frac{q^2}{2a}$",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{q^2}{2a}$",
+            "$-\\frac{1}{4\\pi\\varepsilon_0}\\frac{q^2}{a}$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "$$U = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q_1 q_2}{r} = \\frac{1}{4\\pi\\varepsilon_0}\\frac{(+q)(-q)}{2a} = -\\frac{1}{4\\pi\\varepsilon_0}\\frac{q^2}{2a}$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A parallel plate capacitor is charged and the charging battery is disconnected. If the plates are pulled further apart using insulating handles:",
+          "image": "",
+          "options": [
+            "Potential difference across plates increases",
+            "Capacitance increases",
+            "Charge on plates increases",
+            "Stored energy decreases"
+          ],
+          "correctOption": 0,
+          "solution": "Disconnected $\\implies Q$ is constant. Increasing $d$ decreases capacitance ($C = \\frac{\\varepsilon_0 A}{d}$). Thus, potential difference $V = \\frac{Q}{C}$ increases, and work done against electrostatic attraction increases stored energy ($U = \\frac{Q^2}{2C}$)."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The electric potential due to a point charge $Q$ at distance $r$ varies as:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{r}$",
+            "$\\frac{1}{r^2}$",
+            "$\\frac{1}{r^3}$",
+            "$r$"
+          ],
+          "correctOption": 0,
+          "solution": "Electric potential of a point charge is $V = \\frac{1}{4\\pi\\varepsilon_0}\\frac{Q}{r} \\propto \\frac{1}{r}$."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Polar molecules are those which possess:",
+          "image": "",
+          "options": [
+            "A permanent electric dipole moment due to non-coinciding centers of positive and negative charges",
+            "Zero dipole moment in the absence of an external electric field",
+            "Symmetrical non-polar geometric configuration",
+            "No valence electrons"
+          ],
+          "correctOption": 0,
+          "solution": "In polar molecules (such as $\\text{HCl}$ or $\\text{H}_2\\text{O}$), the centers of positive and negative charge distribution do not coincide, giving rise to an intrinsic permanent dipole moment."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A capacitor of capacitance $C$ is charged to potential $V$. The charging battery is kept connected and a dielectric slab of dielectric constant $K$ is inserted between the plates. The energy stored becomes:",
+          "image": "",
+          "options": [
+            "$K U_0$",
+            "$\\frac{U_0}{K}$",
+            "$K^2 U_0$",
+            "$U_0$"
+          ],
+          "correctOption": 0,
+          "solution": "With battery connected, $V$ remains constant. Capacitance increases to $C' = KC$.\n$$U' = \\frac{1}{2} C' V^2 = \\frac{1}{2}(KC)V^2 = K\\left(\\frac{1}{2}CV^2\\right) = K U_0$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The polarization vector $\\vec{P}$ of a dielectric material is defined as:",
+          "image": "",
+          "options": [
+            "Induced dipole moment per unit volume",
+            "Total surface charge per unit length",
+            "Ratio of electric field to permittivity",
+            "Potential gradient across the dielectric"
+          ],
+          "correctOption": 0,
+          "solution": "Electric polarization $\\vec{P}$ is defined as the net induced dipole moment per unit volume of the dielectric medium."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two charges $+q$ and $-q$ are situated at $(0, 0, -a)$ and $(0, 0, +a)$ respectively. The electric potential at any point on the $x\\text{-}y$ plane ($z = 0$) is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{q}{a}$",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{2q}{a}$",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{q}{\\sqrt{x^2 + y^2}}$"
+          ],
+          "correctOption": 0,
+          "solution": "The $x\\text{-}y$ plane ($z = 0$) represents the equatorial plane of this dipole. Any point on it is equidistant from both charges ($r_+ = r_-$), giving $V = \\frac{kq}{r_+} - \\frac{kq}{r_-} = 0$."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When two charged conductors having different potentials are connected together, energy is always lost unless:",
+          "image": "",
+          "options": [
+            "Their initial potentials are identical ($V_1 = V_2$)",
+            "Their capacitances are identical ($C_1 = C_2$)",
+            "Their charges are equal in magnitude",
+            "They have equal radii"
+          ],
+          "correctOption": 0,
+          "solution": "Energy loss is given by $\\Delta U = \\frac{1}{2}\\frac{C_1 C_2}{C_1 + C_2}(V_1 - V_2)^2$. $\\Delta U = 0$ strictly when $V_1 = V_2$ (no potential difference to drive charge redistribution)."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A parallel plate capacitor is constructed with plates of area $A = 0.04\\text{ m}^2$ separated by distance $d = 8.85\\text{ mm}$. The capacitance is: $(\\varepsilon_0 = 8.85 \\times 10^{-12}\\text{ F/m})$",
+          "image": "",
+          "options": [
+            "$40\\text{ pF}$",
+            "$80\\text{ pF}$",
+            "$20\\text{ pF}$",
+            "$4\\text{ pF}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$C = \\frac{\\varepsilon_0 A}{d} = \\frac{(8.85 \\times 10^{-12}) \\times 0.04}{8.85 \\times 10^{-3}} = 0.04 \\times 10^{-9}\\text{ F} = 40 \\times 10^{-12}\\text{ F} = 40\\text{ pF}$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Under electrostatic conditions, the net electric field inside the body of an isolated solid conductor is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "Uniform and directed outwards",
+            "Dependent on the shape of conductor",
+            "Infinite"
+          ],
+          "correctOption": 0,
+          "solution": "Free electrons in a conductor redistribute instantaneously until the internal electric field is completely canceled, resulting in $E = 0$ everywhere inside the bulk conductor in electrostatic equilibrium."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Equipotential surfaces for a uniform electric field directed along the $+z$-axis are:",
+          "image": "",
+          "options": [
+            "Planes parallel to the $x\\text{-}y$ plane",
+            "Planes parallel to the $y\\text{-}z$ plane",
+            "Planes parallel to the $x\\text{-}z$ plane",
+            "Concentric cylinders with axis along $z$"
+          ],
+          "correctOption": 0,
+          "solution": "Equipotential surfaces are always perpendicular to the direction of the electric field. For $\\vec{E} = E\\hat{k}$, the equipotential surfaces are planes parallel to the $x\\text{-}y$ plane ($z = \\text{constant}$)."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Three identical capacitors each of capacitance $C$ are connected such that two are in parallel and the third is in series with this combination. The equivalent capacitance is:",
+          "image": "",
+          "options": [
+            "$\\frac{2}{3}C$",
+            "$\\frac{3}{2}C$",
+            "$3C$",
+            "$\\frac{1}{3}C$"
+          ],
+          "correctOption": 0,
+          "solution": "Parallel combination: $C_p = C + C = 2C$.\nSeries with third capacitor: $C_{\\text{eq}} = \\frac{C_p \\times C}{C_p + C} = \\frac{2C \\times C}{2C + C} = \\frac{2}{3}C$."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An alpha particle ($q = +2e$) is accelerated from rest through a potential difference of $10^6\\text{ V}$ ($1\\text{ MV}$). Its acquired kinetic energy is:",
+          "image": "",
+          "options": [
+            "$2\\text{ MeV}$",
+            "$1\\text{ MeV}$",
+            "$4\\text{ MeV}$",
+            "$0.5\\text{ MeV}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$K = qV = (2e) \\times (10^6\\text{ V}) = 2 \\times 10^6\\text{ eV} = 2\\text{ MeV}$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A dielectric slab is inserted into a capacitor connected to a DC source. The induced surface bound charge density $\\sigma_b$ on the dielectric is related to free surface charge density $\\sigma$ on the capacitor plates as:",
+          "image": "",
+          "options": [
+            "$\\sigma_b = \\sigma\\left(1 - \\frac{1}{K}\\right)$",
+            "$\\sigma_b = \\sigma\\left(1 + \\frac{1}{K}\\right)$",
+            "$\\sigma_b = \\sigma K$",
+            "$\\sigma_b = \\frac{\\sigma}{K}$"
+          ],
+          "correctOption": 0,
+          "solution": "Inside the dielectric, reduced field is $E = E_0 - E_b \\implies \\frac{\\sigma}{K\\varepsilon_0} = \\frac{\\sigma}{\\varepsilon_0} - \\frac{\\sigma_b}{\\varepsilon_0} \\implies \\sigma_b = \\sigma\\left(1 - \\frac{1}{K}\\right)$."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The electrostatic potential $V$ as a function of distance $r$ inside a uniformly charged solid non-conducting sphere of radius $R$ and total charge $Q$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{Q(3R^2 - r^2)}{2R^3}$",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{Q}{R}$",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{Q}{r}$",
+            "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{Q r^2}{R^3}$"
+          ],
+          "correctOption": 0,
+          "solution": "Inside a uniformly charged solid sphere ($r \\le R$), integrating the radial electric field gives $V(r) = \\frac{1}{4\\pi\\varepsilon_0}\\frac{Q(3R^2 - r^2)}{2R^3}$."
+        }
+      ]
+    }
+  ]
+}
