@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /jee-main.html
+Allow: /jee-advanced.html
+Allow: /neet.html
+Allow: /tests/*/result.html
+Disallow: /tests/*/index.html
+Disallow: /assets/
+
+Sitemap: https://tests.smaphysics.com/sitemap.xml
