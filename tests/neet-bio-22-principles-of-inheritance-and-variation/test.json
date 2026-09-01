@@ -1,0 +1,690 @@
+{
+  "testId": "neet-bio-22-principles-of-inheritance-and-variation",
+  "title": "Principles of Inheritance and Variation",
+  "syllabus": "Mendelian Inheritance; Deviations from Mendelism - Incomplete dominance, Co-dominance, Multiple alleles and Inheritance of blood groups, Pleiotropy; Polygenic inheritance; Chromosomal theory of inheritance; Chromosomes and genes; Sex determination (humans, birds, honey bee); Linkage and crossing over; Sex-linked inheritance (Haemophilia, Colour blindness); Mendelian disorders in humans (Thalassemia, Sickle-cell anaemia, Phenylketonuria, Cystic fibrosis); Chromosomal disorders (Down's syndrome, Turner's syndrome, Klinefelter's syndrome).",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Biology",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Gregor Mendel conducted hybridisation experiments on garden peas (<i>Pisum sativum</i>) for how many years and during which period?",
+          "image": "",
+          "options": [
+            "7 years (1856 – 1863)",
+            "14 years (1840 – 1854)",
+            "10 years (1865 – 1875)",
+            "5 years (1850 – 1855)"
+          ],
+          "correctOption": 0,
+          "solution": "Gregor Mendel conducted hybridisation experiments on garden peas for seven years (1856–1863) and proposed the laws of inheritance in living organisms."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the dominant and recessive contrasting traits studied by Mendel in garden pea:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Pea Character)</th><th>List-II (Dominant / Recessive Phenotype)</th></tr></thead><tbody><tr><td>(A) Pod shape</td><td>(I) Yellow (Dominant) / Green (Recessive)</td></tr><tr><td>(B) Pod colour</td><td>(II) Inflated (Dominant) / Constricted (Recessive)</td></tr><tr><td>(C) Seed colour</td><td>(III) Axial (Dominant) / Terminal (Recessive)</td></tr><tr><td>(D) Flower position</td><td>(IV) Green (Dominant) / Yellow (Recessive)</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(IV), (C)-(I), (D)-(III)",
+            "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+            "(A)-(I), (B)-(IV), (C)-(II), (D)-(III)",
+            "(A)-(IV), (B)-(II), (C)-(I), (D)-(III)"
+          ],
+          "correctOption": 0,
+          "solution": "Pod shape: Inflated (dominant) / Constricted (recessive); Pod colour: Green (dominant) / Yellow (recessive); Seed colour: Yellow (dominant) / Green (recessive); Flower position: Axial (dominant) / Terminal (recessive)."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A test cross is performed to determine the genotype of a dominant phenotype plant by crossing it with:",
+          "image": "",
+          "options": [
+            "A homozygous recessive parent",
+            "A homozygous dominant parent",
+            "A heterozygous dominant plant",
+            "Another plant of unknown genotype"
+          ],
+          "correctOption": 0,
+          "solution": "A test cross involves crossing an individual with a dominant phenotype (whose genotype is unknown, whether homozygous or heterozygous) with a homozygous recessive parent. If all progeny show dominant trait, the parent is homozygous dominant; if 1:1 ratio is observed, it is heterozygous."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In snapdragon (<i>Antirrhinum majus</i>) and <i>Mirabilis jalapa</i>, a cross between true-breeding red-flowered ($RR$) and true-breeding white-flowered ($rr$) plants results in pink-flowered ($Rr$) $F_1$ progeny. What is the phenotypic and genotypic ratio in the $F_2$ generation?",
+          "image": "",
+          "options": [
+            "Both phenotypic and genotypic ratio are $1 : 2 : 1$ (1 Red : 2 Pink : 1 White)",
+            "Phenotypic ratio is $3 : 1$ and genotypic ratio is $1 : 2 : 1$",
+            "Phenotypic ratio is $9 : 3 : 3 : 1$ and genotypic ratio is $1 : 2 : 1$",
+            "Both phenotypic and genotypic ratio are $3 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "In incomplete dominance, the phenotypic ratio matches the genotypic ratio in $F_2$ generation: 1 Red ($RR$) : 2 Pink ($Rr$) : 1 White ($rr$), i.e., $1 : 2 : 1$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ABO blood grouping in humans exhibits which of the following genetic phenomena?",
+          "image": "",
+          "options": [
+            "Co-dominance, Multiple allelism, and Complete dominance",
+            "Incomplete dominance and Polygenic inheritance only",
+            "Pleiotropy and Sex linkage only",
+            "Polygenic inheritance and Environmental sex determination"
+          ],
+          "correctOption": 0,
+          "solution": "ABO blood grouping in humans illustrates: (1) Multiple allelism (three alleles $I^A, I^B, i$ in a population), (2) Complete dominance ($I^A$ and $I^B$ are dominant over $i$), and (3) Co-dominance ($I^A$ and $I^B$ are equally expressed in blood group AB)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If a father has blood group 'A' (heterozygous, $I^A i$) and the mother has blood group 'B' (heterozygous, $I^B i$), what are the possible blood groups of their biological offspring?",
+          "image": "",
+          "options": [
+            "A, B, AB, and O (all four phenotypes are possible)",
+            "Only AB",
+            "Only A and B",
+            "Only AB and O"
+          ],
+          "correctOption": 0,
+          "solution": "A cross between $I^A i$ and $I^B i$ produces offspring with genotypes: $I^A I^B$ (Group AB), $I^A i$ (Group A), $I^B i$ (Group B), and $ii$ (Group O). Thus, all four phenotypes are possible with equal probability ($25\\%$ each)."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Starch grain synthesis in garden pea seeds is controlled by a single gene with two alleles ($B$ and $b$). The heterozygous $Bb$ seeds produce intermediate-sized starch grains. This is an example of:",
+          "image": "",
+          "options": [
+            "Incomplete dominance at the phenotypic level of starch grain size",
+            "Co-dominance of starch branching enzymes",
+            "Recessive epistasis",
+            "Complete dominance of allele $b$"
+          ],
+          "correctOption": 0,
+          "solution": "While $BB$ produces large starch grains and $bb$ produces small starch grains, $Bb$ produces intermediate-sized starch grains. If starch grain size is considered as the phenotype, the alleles show incomplete dominance."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a single gene influences multiple unrelated phenotypic traits simultaneously, the gene and its inheritance pattern are described as:",
+          "image": "",
+          "options": [
+            "Pleiotropy (Pleiotropic gene)",
+            "Polygenic inheritance",
+            "Multiple allelism",
+            "Complementary gene interaction"
+          ],
+          "correctOption": 0,
+          "solution": "Pleiotropy occurs when a single gene product affects multiple metabolic pathways, manifesting in multiple distinct phenotypic traits (e.g., in Phenylketonuria, a single mutation causes mental retardation, reduced hair, and skin pigmentation)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Human skin colour and human height are classic examples of polygenic inheritance. In polygenic inheritance:",
+          "image": "",
+          "options": [
+            "Traits are controlled by three or more genes, and the phenotype reflects the cumulative/additive contribution of each dominant allele",
+            "Traits are controlled by a single pair of alleles with lethal effects",
+            "A single gene masks the expression of all other non-allelic genes",
+            "The phenotypic variation shows discrete, non-continuous steps"
+          ],
+          "correctOption": 0,
+          "solution": "Polygenic traits (e.g., human skin colour controlled by three genes $A, B, C$) are governed by multiple additive genes where each dominant allele adds a unit of phenotypic effect, resulting in a continuous bell-shaped distribution."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the historical milestones in Genetics:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Scientist)</th><th>List-II (Contribution)</th></tr></thead><tbody><tr><td>(A) de Vries, Correns, and von Tschermak (1900)</td><td>(I) Chromosomal Theory of Inheritance</td></tr><tr><td>(B) Walter Sutton and Theodore Boveri (1902)</td><td>(II) Rediscovered Mendel's laws of inheritance independently</td></tr><tr><td>(C) Thomas Hunt Morgan</td><td>(III) Utilized genetic map units (centimorgans) to map gene positions on chromosomes</td></tr><tr><td>(D) Alfred Sturtevant</td><td>(IV) Experimental verification of Chromosomal Theory using <i>Drosophila melanogaster</i></td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+            "(A)-(I), (B)-(II), (C)-(IV), (D)-(III)",
+            "(A)-(II), (B)-(IV), (C)-(I), (D)-(III)",
+            "(A)-(III), (B)-(I), (C)-(IV), (D)-(II)"
+          ],
+          "correctOption": 0,
+          "solution": "de Vries, Correns, Tschermak: Rediscovered Mendel's results in 1900; Sutton & Boveri: Formulated Chromosomal Theory of Inheritance (1902); T.H. Morgan: Experimental verification of linkage and sex-linkage in fruit flies; Alfred Sturtevant: Constructed the first genetic/chromosome map."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Thomas Hunt Morgan chose the fruit fly (<i>Drosophila melanogaster</i>) as the model organism for his genetic studies because of all of the following advantages EXCEPT:",
+          "image": "",
+          "options": [
+            "They have a very long life cycle of about 6 months, ensuring stable generations.",
+            "They could be easily grown on simple synthetic medium in the laboratory.",
+            "They complete their life cycle in about two weeks.",
+            "A single mating produces a large number of progeny flies, and clear sexual dimorphism is present."
+          ],
+          "correctOption": 0,
+          "solution": "<i>Drosophila</i> has a very short life cycle of about two weeks (not 6 months). It is easy to culture, produces hundreds of offspring per mating, has easily distinguishable male and female sexes, and exhibits many hereditary variations visible under low-power microscopes."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a dihybrid cross conducted by Morgan in <i>Drosophila</i> between yellow-bodied, white-eyed females ($yw/yw$) and brown-bodied, red-eyed males ($y^+w^+/Y$), the proportion of parental and recombinant phenotypes in $F_2$ generation were:",
+          "image": "",
+          "options": [
+            "$98.7\\%$ parental types and $1.3\\%$ recombinants (tight linkage)",
+            "$62.8\\%$ parental types and $37.2\\%$ recombinants",
+            "$50\\%$ parental types and $50\\%$ recombinants",
+            "$75\\%$ parental types and $25\\%$ recombinants"
+          ],
+          "correctOption": 0,
+          "solution": "When Morgan crossed yellow-bodied ($y$) and white-eyed ($w$) flies with wild-type ($y^+w^+$), the genes were very tightly linked on the X-chromosome and showed only $1.3\\%$ recombination ($98.7\\%$ parental types). In contrast, white eye ($w$) and miniature wing ($m$) showed $37.2\\%$ recombination."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The physical association of two or more genes located on the same chromosome is termed ________, while the generation of non-parental gene combinations is called ________:",
+          "image": "",
+          "options": [
+            "Linkage, Recombination",
+            "Recombination, Linkage",
+            "Pleiotropy, Epistasis",
+            "Synapsis, Non-disjunction"
+          ],
+          "correctOption": 0,
+          "solution": "Morgan coined the term 'linkage' to describe the physical association of genes on a chromosome and the term 'recombination' to describe the generation of non-parental gene combinations."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Henking (1891) traced a specific nuclear structure through spermatogenesis in insects and observed that $50\\%$ of sperms received it while $50\\%$ did not. He called this body:",
+          "image": "",
+          "options": [
+            "X-body (now known as X-chromosome)",
+            "Y-chromosome",
+            "Barr body",
+            "Centrosome"
+          ],
+          "correctOption": 0,
+          "solution": "Henking (1891) observed that a specific nuclear structure was received by $50\\%$ of sperms after spermatogenesis in insects. He named it the 'X-body', which was later established as the X-chromosome."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding sex determination mechanisms across different organisms:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Organism)</th><th>List-II (Sex Determination System)</th></tr></thead><tbody><tr><td>(A) Grasshopper</td><td>(I) Female heterogamety ($ZW$ female, $ZZ$ male)</td></tr><tr><td>(B) Birds (e.g., Fowl)</td><td>(II) $XO$ type male heterogamety ($XO$ male, $XX$ female)</td></tr><tr><td>(C) Humans and <i>Drosophila</i></td><td>(III) Haplodiploid system ($n = 16$ male drone, $2n = 32$ female queen/worker)</td></tr><tr><td>(D) Honeybee</td><td>(IV) $XY$ type male heterogamety ($XY$ male, $XX$ female)</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+            "(A)-(I), (B)-(II), (C)-(IV), (D)-(III)",
+            "(A)-(II), (B)-(IV), (C)-(I), (D)-(III)",
+            "(A)-(III), (B)-(I), (C)-(IV), (D)-(II)"
+          ],
+          "correctOption": 0,
+          "solution": "Grasshopper: $XO$ male heterogamety; Birds: $ZW$ female heterogamety (females have $ZW$, males have $ZZ$); Humans/<i>Drosophila</i>: $XY$ male heterogamety; Honeybee: Haplodiploidy (unfertilized egg develops into haploid male drone via parthenogenesis; fertilized egg develops into diploid female)."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Honeybees, male drones are produced by:",
+          "image": "",
+          "options": [
+            "Parthenogenesis from unfertilized haploid eggs ($n = 16$) and produce sperms by mitosis",
+            "Fertilization of eggs by diploid sperms",
+            "Meiotic division of unfertilized diploid eggs",
+            "Unequal fusion of two polar bodies"
+          ],
+          "correctOption": 0,
+          "solution": "In honeybees, males (drones) develop parthenogenetically from unfertilized eggs and are haploid ($n = 16$). Because they are already haploid, drones produce sperms by mitosis without meiosis. They have no father and cannot have sons, but have a grandfather and can have grandsons."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In standard human pedigree charts, a horizontal line connecting a square and a circle represents ________, while a double horizontal line represents ________:",
+          "image": "",
+          "options": [
+            "Mating, Consanguineous mating (mating between relatives)",
+            "Siblings, Parents",
+            "Consanguineous mating, Mating",
+            "Affected carrier status, Unaffected offspring"
+          ],
+          "correctOption": 0,
+          "solution": "In pedigree analysis symbols: A single horizontal line connecting a square (male) and circle (female) denotes mating; a double horizontal line indicates consanguineous mating (mating between biological relatives)."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Haemophilia is an X-linked recessive bleeding disorder. If a carrier female ($X^H X^h$) marries a normal male ($X^H Y$), what is the probability that their male child will be haemophilic?",
+          "image": "",
+          "options": [
+            "50%",
+            "25%",
+            "100%",
+            "0%"
+          ],
+          "correctOption": 0,
+          "solution": "Cross: Mother $X^H X^h \\times$ Father $X^H Y$. Sons inherit their single X-chromosome from their mother: $50\\%$ receive $X^H$ (normal son) and $50\\%$ receive $X^h$ (haemophilic son). Thus, among male children, the probability is $50\\%$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Why is haemophilia or red-green colour blindness rarely observed in human females compared to males?",
+          "image": "",
+          "options": [
+            "A female can be affected only if her mother is at least a carrier and her father is affected",
+            "Females inactivate both X-chromosomes simultaneously",
+            "The recessive mutant allele is lethal in all female embryos",
+            "The genes are located exclusively on the Y-chromosome"
+          ],
+          "correctOption": 0,
+          "solution": "Being X-linked recessive, a female must inherit mutant alleles on both of her X-chromosomes ($X^h X^h$) to express the disorder. This requires her mother to be at least a carrier and her father to be affected (hemizygous $X^h Y$)."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Sickle-cell anaemia is an autosomal recessive molecular disease caused by a point mutation in the $\\beta$-globin gene. The exact molecular change involves:",
+          "image": "",
+          "options": [
+            "Substitution of Glutamic acid (GAG) by Valine (GUG) at the 6th position of the $\\beta$-globin polypeptide chain",
+            "Substitution of Valine by Glutamic acid at the 6th position of $\\alpha$-globin chain",
+            "Deletion of 3 base pairs in the $\\beta$-globin promoter",
+            "Frameshift mutation at the 1st codon of $\\beta$-globin"
+          ],
+          "correctOption": 0,
+          "solution": "Sickle-cell anaemia is caused by a point mutation leading to transversion from GAG to GUG at the 6th codon of the $\\beta$-globin gene, replacing hydrophilic glutamic acid with hydrophobic valine at the 6th position of the $\\beta$-globin chain."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the genetic classification of Mendelian disorders in humans:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Genetic Disorder)</th><th>List-II (Mode of Inheritance)</th></tr></thead><tbody><tr><td>(A) Myotonic dystrophy</td><td>(I) Autosomal recessive inborn error of metabolism</td></tr><tr><td>(B) Phenylketonuria (PKU)</td><td>(II) Autosomal dominant trait</td></tr><tr><td>(C) Colour blindness</td><td>(III) Quantitative autosomal recessive blood disorder</td></tr><tr><td>(D) Thalassemia</td><td>(IV) X-linked recessive trait</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+            "(A)-(I), (B)-(II), (C)-(IV), (D)-(III)",
+            "(A)-(II), (B)-(IV), (C)-(I), (D)-(III)",
+            "(A)-(III), (B)-(I), (C)-(IV), (D)-(II)"
+          ],
+          "correctOption": 0,
+          "solution": "Myotonic dystrophy: Autosomal dominant; Phenylketonuria: Autosomal recessive inborn error; Colour blindness: X-linked recessive; Thalassemia: Autosomal recessive quantitative defect in globin chain synthesis."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Thalassemia differs from Sickle-cell anaemia because Thalassemia is a:",
+          "image": "",
+          "options": [
+            "Quantitative problem of synthesising too few globin molecules, whereas sickle-cell anaemia is a qualitative problem of synthesising an aberrantly functioning globin",
+            "Qualitative problem of globin chains, while sickle-cell anaemia is quantitative",
+            "Sex-linked recessive disorder, whereas sickle-cell anaemia is autosomal",
+            "Dominant chromosomal trisomy"
+          ],
+          "correctOption": 0,
+          "solution": "Thalassemia is a quantitative problem where too few globin chains (either $\\alpha$ or $\\beta$) are synthesized. Sickle-cell anaemia is a qualitative problem where an abnormal, malfunctioning $\\beta$-globin chain is synthesized."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Alpha ($\\alpha$) Thalassemia in humans is controlled by two closely linked genes, $HBA1$ and $HBA2$, located on which chromosome?",
+          "image": "",
+          "options": [
+            "Chromosome 16",
+            "Chromosome 11",
+            "Chromosome 21",
+            "X-chromosome"
+          ],
+          "correctOption": 0,
+          "solution": "$\\alpha$-Thalassemia is controlled by two closely linked genes, $HBA1$ and $HBA2$, on chromosome 16 of each parent. $\\beta$-Thalassemia is controlled by a single gene, $HBB$, on chromosome 11."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Phenylketonuria (PKU) is an inborn error of metabolism caused by the lack of which hepatic enzyme, leading to the accumulation of phenylalanine and phenylpyruvic acid?",
+          "image": "",
+          "options": [
+            "Phenylalanine hydroxylase",
+            "Tyrosinase",
+            "Homogentisate oxidase",
+            "Hexosaminidase"
+          ],
+          "correctOption": 0,
+          "solution": "Phenylketonuria is caused by a deficiency of the liver enzyme phenylalanine hydroxylase, which normally converts phenylalanine to tyrosine. Phenylalanine accumulates and converts into phenylpyruvic acid, causing severe mental retardation."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Failure of segregation of chromatids during cell division cycle results in the gain or loss of a chromosome(s), called:",
+          "image": "",
+          "options": [
+            "Aneuploidy",
+            "Polyploidy",
+            "Linkage",
+            "Pleiotropy"
+          ],
+          "correctOption": 0,
+          "solution": "Failure of segregation of sister chromatids or homologous chromosomes during cell division results in the gain or loss of one or more chromosomes, a condition called aneuploidy (e.g., Down's syndrome, Turner's syndrome)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Failure of cytokinesis after the telophase stage of cell division results in an increase in a whole set of chromosomes in an organism. This phenomenon is termed:",
+          "image": "",
+          "options": [
+            "Polyploidy (often seen in plants)",
+            "Aneuploidy",
+            "Monosomy",
+            "Trisomy"
+          ],
+          "correctOption": 0,
+          "solution": "Failure of cytokinesis after telophase results in an increase in a whole set of chromosomes ($3n, 4n$, etc.), termed polyploidy. It is common in cultivated plant crops."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the human Chromosomal Disorders:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Disorder)</th><th>List-II (Karyotype & Genetic Cause)</th></tr></thead><tbody><tr><td>(A) Down's syndrome</td><td>(I) $45$ with $XO$ (Monosomy of sex chromosome)</td></tr><tr><td>(B) Klinefelter's syndrome</td><td>(II) $47$ with Trisomy of Chromosome 21 ($47, +21$)</td></tr><tr><td>(C) Turner's syndrome</td><td>(III) $47$ with $XXY$ (Additional X-chromosome in male)</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(III), (C)-(I)",
+            "(A)-(I), (B)-(II), (C)-(III)",
+            "(A)-(II), (B)-(I), (C)-(III)",
+            "(A)-(III), (B)-(II), (C)-(I)"
+          ],
+          "correctOption": 0,
+          "solution": "Down's syndrome: Trisomy 21 ($47, +21$); Klinefelter's syndrome: $47, XXY$; Turner's syndrome: $45, XO$."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Down's syndrome was first described by Langdon Down in 1866. A child affected by Down's syndrome typically exhibits:",
+          "image": "",
+          "options": [
+            "Short stature with small round head, furrowed tongue, partially open mouth, broad palm with single simian crease, and retarded mental development",
+            "Tall stature with gynaecomastia and azoospermia",
+            "Sterile female with rudimentary ovaries and webbed neck",
+            "Severe hemolytic anemia with bronzed skin"
+          ],
+          "correctOption": 0,
+          "solution": "Down's syndrome ($47, +21$) features: short stature, small round head, furrowed tongue, partially open mouth, broad palm with characteristic palm/simian crease, congenital heart defects, and physical/mental retardation."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An individual with overall masculine development, but who also expresses feminine traits such as gynaecomastia (development of breasts) and is sterile, is suffering from:",
+          "image": "",
+          "options": [
+            "Klinefelter's syndrome ($47, XXY$)",
+            "Turner's syndrome ($45, XO$)",
+            "Down's syndrome ($47, +21$)",
+            "Cri-du-chat syndrome"
+          ],
+          "correctOption": 0,
+          "solution": "Klinefelter's syndrome is caused by the presence of an extra X-chromosome in males ($47, XXY$). Affected individuals have overall masculine development, along with feminine characteristics like gynaecomastia, and are sterile."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Turner's syndrome is a chromosomal disorder in human females caused by the absence of one of the X-chromosomes ($45, XO$). Affected females are characterized by:",
+          "image": "",
+          "options": [
+            "Sterility due to rudimentary ovaries, short stature, and lack of secondary sexual characters",
+            "Presence of gynaecomastia and masculine voice",
+            "Mental retardation with simian crease",
+            "Severe blood clotting failure"
+          ],
+          "correctOption": 0,
+          "solution": "Turner's syndrome ($45, XO$) results from sex chromosome monosomy. Affected females are sterile with rudimentary (streak) ovaries, short stature, webbed neck, and lack of secondary sexual characters."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Mendel's Law of Independent Assortment holds good for genes that are located on:",
+          "image": "",
+          "options": [
+            "Different non-homologous chromosomes or far apart on the same chromosome",
+            "Very close to each other on the same chromosome",
+            "The Y-chromosome exclusively",
+            "The same locus of a single homologous chromosome pair"
+          ],
+          "correctOption": 0,
+          "solution": "The Law of Independent Assortment applies only to genes located on different non-homologous chromosomes or situated far apart on the same chromosome. Tightly linked genes do not assort independently."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A cross between a pure tall plant with yellow seeds ($TTYY$) and a dwarf plant with green seeds ($ttyy$) produces $F_1$ dihybrids ($TtYy$). What is the expected proportion of $F_2$ plants that are phenotypically DWARF with YELLOW seeds?",
+          "image": "",
+          "options": [
+            "$\\frac{3}{16}$",
+            "$\\frac{9}{16}$",
+            "$\\frac{1}{16}$",
+            "$\\frac{6}{16}$"
+          ],
+          "correctOption": 0,
+          "solution": "In a standard Mendelian dihybrid cross: Tall Yellow = $\\frac{9}{16}$, Tall Green = $\\frac{3}{16}$, Dwarf Yellow = $\\frac{3}{16}$, Dwarf Green = $\\frac{1}{16}$. Therefore, dwarf with yellow seeds is $\\frac{3}{16}$."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "How many genetically distinct types of gametes can be produced by an individual with the genotype $AaBbCc$ (assuming all genes assort independently)?",
+          "image": "",
+          "options": [
+            "8",
+            "4",
+            "16",
+            "6"
+          ],
+          "correctOption": 0,
+          "solution": "The number of types of gametes is given by $2^n$, where $n$ is the number of heterozygous gene pairs. For $AaBbCc$, $n = 3$, so $2^3 = 8$ distinct gametic genotypes are formed."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Queen Victoria of England was a notable carrier of which hereditary disease, passing it down to several royal descendants throughout Europe?",
+          "image": "",
+          "options": [
+            "Haemophilia",
+            "Colour blindness",
+            "Thalassemia",
+            "Sickle-cell anaemia"
+          ],
+          "correctOption": 0,
+          "solution": "Queen Victoria was a carrier of haemophilia. A pedigree analysis of her family shows a large number of haemophilic descendants across European royal families."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Read the following statements regarding Chromosome Theory of Inheritance:<br><b>Statement I:</b> Sutton and Boveri argued that the pairing and separation of a pair of chromosomes would lead to the segregation of a pair of factors they carried.<br><b>Statement II:</b> Chromosomes as well as genes occur in pairs in diploid cells, and both segregate at the time of gamete formation.<br><br>Choose the correct option:",
+          "image": "",
+          "options": [
+            "Both Statement I and Statement II are correct",
+            "Both Statement I and Statement II are incorrect",
+            "Statement I is correct but Statement II is incorrect",
+            "Statement I is incorrect but Statement II is correct"
+          ],
+          "correctOption": 0,
+          "solution": "Both statements are correct according to NCERT. Sutton and Boveri united the principles of Mendelian segregation with chromosomal behavior during meiosis, establishing the Chromosomal Theory of Inheritance."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "One map unit (1 Centimorgan / cM) on a genetic chromosome map is defined as:",
+          "image": "",
+          "options": [
+            "$1\\%$ frequency of recombination between two gene loci",
+            "$10\\%$ frequency of crossing over",
+            "$50\\%$ independent assortment",
+            "$100\\%$ linkage between two genes"
+          ],
+          "correctOption": 0,
+          "solution": "Alfred Sturtevant defined one map unit (or 1 centimorgan) as equivalent to $1\\%$ recombination frequency between two linked gene loci on a chromosome."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the recombination frequency between gene A and gene B is $10\\%$, between gene B and gene C is $15\\%$, and between gene A and gene C is $5\\%$, what is the correct linear sequence of these genes on the chromosome?",
+          "image": "",
+          "options": [
+            "B – A – C (or C – A – B)",
+            "A – B – C",
+            "A – C – B",
+            "C – B – A"
+          ],
+          "correctOption": 0,
+          "solution": "Distance $B-A = 10\\text{ cM}$, Distance $A-C = 5\\text{ cM}$, Distance $B-C = 15\\text{ cM}$. Since $10 + 5 = 15$, gene A lies between B and C. The correct sequence is $B - A - C$."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A colour-blind man ($X^c Y$) marries a woman with normal vision whose father was colour-blind (carrier, $X^C X^c$). What percentage of their daughters is expected to be colour-blind?",
+          "image": "",
+          "options": [
+            "50%",
+            "100%",
+            "0%",
+            "25%"
+          ],
+          "correctOption": 0,
+          "solution": "Cross: Father $X^c Y \\times$ Mother $X^C X^c$. Daughters receive $X^c$ from father and either $X^C$ or $X^c$ from mother: $50\\% \\; X^C X^c$ (carrier daughter) and $50\\% \\; X^c X^c$ (colour-blind daughter). Thus, $50\\%$ of their daughters will be colour-blind."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a population, if three alleles ($I^A, I^B, i$) govern the ABO blood group system, how many different genotypes and phenotypes are possible in total?",
+          "image": "",
+          "options": [
+            "6 genotypes and 4 phenotypes",
+            "4 genotypes and 6 phenotypes",
+            "3 genotypes and 3 phenotypes",
+            "6 genotypes and 6 phenotypes"
+          ],
+          "correctOption": 0,
+          "solution": "The number of possible genotypes for $n$ alleles is $\\frac{n(n+1)}{2} = \\frac{3(4)}{2} = 6$ genotypes ($I^A I^A, I^A i, I^B I^B, I^B i, I^A I^B, ii$). These produce 4 distinct phenotypes (Blood groups A, B, AB, and O)."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following statements about sex determination in birds is CORRECT?",
+          "image": "",
+          "options": [
+            "Females are heterogametic ($ZW$) and males are homogametic ($ZZ$)",
+            "Males are heterogametic ($XY$) and females are homogametic ($XX$)",
+            "Females possess an extra X-chromosome",
+            "Sex is determined solely by incubation temperature"
+          ],
+          "correctOption": 0,
+          "solution": "In birds, sex determination involves female heterogamety: females have two different sex chromosomes ($ZW$), while males have a pair of identical sex chromosomes ($ZZ$)."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Cystic fibrosis is an autosomal recessive Mendelian disorder in humans caused by a defective gene encoding the CFTR protein. It primarily results in:",
+          "image": "",
+          "options": [
+            "Thick, sticky mucus blocking airways in the lungs and pancreatic ducts",
+            "Complete absence of blood clotting Factor VIII",
+            "Failure to convert tyrosine into melanin",
+            "Loss of red blood cell elasticity in high altitudes"
+          ],
+          "correctOption": 0,
+          "solution": "Cystic fibrosis is an autosomal recessive disorder caused by mutations in the CFTR chloride channel gene, causing production of abnormally thick, viscous mucus that obstructs the respiratory tract and pancreas."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A human female with Turner's syndrome ($45, XO$) has how many Barr bodies (inactive condensed X-chromosomes) in her somatic cells?",
+          "image": "",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "correctOption": 0,
+          "solution": "The number of Barr bodies is given by $(N - 1)$, where $N$ is the total number of X-chromosomes. For a Turner female ($XO$), $N = 1$, so the number of Barr bodies is $1 - 1 = 0$."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a dihybrid cross involving two genes that are completely linked (zero crossing over), the $F_2$ phenotypic ratio will be identical to a:",
+          "image": "",
+          "options": [
+            "Monohybrid ratio of $3 : 1$",
+            "Dihybrid ratio of $9 : 3 : 3 : 1$",
+            "Trihybrid test cross ratio",
+            "Ratio of $1 : 1 : 1 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "If two genes are completely linked without crossing over, they segregate together as a single unit, yielding an $F_2$ phenotypic ratio of $3 : 1$ (like a single monohybrid cross) instead of the $9 : 3 : 3 : 1$ ratio."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The Law of Segregation (Mendel's First Law) is based on the fact that:",
+          "image": "",
+          "options": [
+            "Alleles do not show any blending and both traits are recovered as such in the $F_2$ generation, with gametes receiving only one of the two alleles",
+            "Dominant alleles completely destroy the recessive alleles in $F_1$",
+            "Homologous chromosomes fail to separate during anaphase",
+            "Genes on the same chromosome always stay linked"
+          ],
+          "correctOption": 0,
+          "solution": "The Law of Segregation (purity of gametes) is based on the principle that the two alleles of a gene do not blend; they separate cleanly during meiosis so that each gamete receives only one allele of the pair."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Read the following statements:<br><b>Statement I:</b> A male child receives his X-chromosome from his mother and his Y-chromosome from his father.<br><b>Statement II:</b> Gynaecomastia is a characteristic feature of Turner's syndrome.<br><br>Choose the correct option:",
+          "image": "",
+          "options": [
+            "Statement I is correct but Statement II is incorrect",
+            "Both Statement I and Statement II are correct",
+            "Both Statement I and Statement II are incorrect",
+            "Statement I is incorrect but Statement II is correct"
+          ],
+          "correctOption": 0,
+          "solution": "Statement I is correct because fathers contribute the Y-chromosome to sons and the X-chromosome to daughters. Statement II is incorrect because gynaecomastia (development of breast tissue) is a characteristic symptom of Klinefelter's syndrome ($47, XXY$), not Turner's syndrome ($45, XO$)."
+        }
+      ]
+    }
+  ]
+}
