@@ -1,0 +1,690 @@
+{
+  "testId": "neet-bio-28-biotechnology-and-its-applications",
+  "title": "Biotechnology and its Applications",
+  "syllabus": "Application of Biotechnology in health and agriculture - Human insulin and vaccine production, gene therapy; Genetically modified organisms - Bt crops (Bt cotton, Bt corn), Pest resistant plants (RNA interference); Transgenic Animals (production and reasons for creation); Biosafety issues - Biopiracy and patents, GEAC.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Biology",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In 1983, which American pharmaceutical company used recombinant DNA technology to produce human insulin (Humulin) by preparing two separate DNA sequences corresponding to chains A and B of human insulin?",
+          "image": "",
+          "options": [
+            "Eli Lilly",
+            "Genentech",
+            "Pfizer",
+            "Biocon"
+          ],
+          "correctOption": 0,
+          "solution": "In 1983, Eli Lilly, an American company, prepared two DNA sequences corresponding to chains A and B of human insulin and introduced them in plasmids of <i>E. coli</i> to produce insulin chains separately. Chains A and B were extracted and combined by creating disulfide bonds to form human insulin."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Proinsulin in mammals differs from mature, functional insulin because proinsulin contains:",
+          "image": "",
+          "options": [
+            "An extra stretch of peptide called the C-peptide which is removed during maturation",
+            "Only chain A and lacks chain B",
+            "Chain A and chain B linked without disulfide bridges",
+            "An extra chain D that inhibits insulin activity"
+          ],
+          "correctOption": 0,
+          "solution": "Proinsulin contains an extra polypeptide segment called the C-peptide (connecting peptide). This C-peptide is not present in mature insulin and is removed during prohormone processing into active insulin."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The first clinical gene therapy was given in 1990 to a 4-year-old girl with which enzyme deficiency?",
+          "image": "",
+          "options": [
+            "Adenosine Deaminase (ADA) deficiency",
+            "Phenylalanine hydroxylase deficiency",
+            "Tyrosinase deficiency",
+            "Glucose-6-phosphate dehydrogenase deficiency"
+          ],
+          "correctOption": 0,
+          "solution": "The first clinical gene therapy was given in 1990 to a 4-year-old girl with Adenosine Deaminase (ADA) deficiency, a hereditary disorder that causes severe combined immunodeficiency (SCID) due to dysfunction of the immune system."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Why is the treatment of ADA deficiency using functional ADA cDNA transduced into patient lymphocytes not a permanent cure?",
+          "image": "",
+          "options": [
+            "Lymphocytes are not immortal cells and the patient requires periodic infusions of genetically engineered lymphocytes",
+            "Genetically engineered lymphocytes trigger severe graft-versus-host rejection",
+            "The cDNA cannot transcribe mRNA inside human cells",
+            "Retroviral vectors mutate the ADA gene inside lymphocytes"
+          ],
+          "correctOption": 0,
+          "solution": "Lymphocytes have a finite lifespan in circulation. Therefore, periodic infusion of genetically engineered lymphocytes is required. However, if the functional ADA gene from bone marrow cells is introduced into cells at early embryonic stages, it can provide a permanent cure."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the <i>cry</i> genes of <i>Bacillus thuringiensis</i> and the insect pests they control:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (<i>cry</i> Gene)</th><th>List-II (Target Insect Pest Controlled)</th></tr></thead><tbody><tr><td>(A) <i>cryIAc</i> and <i>cryIIAb</i></td><td>(I) Corn borer</td></tr><tr><td>(B) <i>cryIAb</i></td><td>(II) Cotton bollworms</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(I)",
+            "(A)-(I), (B)-(II)",
+            "(A)-(I), (B)-(I)",
+            "(A)-(II), (B)-(II)"
+          ],
+          "correctOption": 0,
+          "solution": "The proteins encoded by the genes <i>cryIAc</i> and <i>cryIIAb</i> control cotton bollworms, while that encoded by <i>cryIAb</i> controls the corn borer."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The insecticidal crystal protein (Bt toxin) produced by <i>Bacillus thuringiensis</i> does not kill the bacterium itself because:",
+          "image": "",
+          "options": [
+            "The toxin exists as an inactive crystalline protoxin inside the bacterium and requires alkaline pH of insect midgut for activation",
+            "The bacterium rapidly degrades the toxin using proteases",
+            "The bacterial cell wall is completely impermeable to the toxin",
+            "The toxin is activated only in the presence of mammalian hormones"
+          ],
+          "correctOption": 0,
+          "solution": "The Bt toxin protein exists as an inactive protoxin in <i>Bacillus thuringiensis</i>. Once an insect ingests the inactive protoxin, it is converted into an active form due to the alkaline pH of the gut, which solubilizes the crystals. The activated toxin binds to the surface of midgut epithelial cells, creates pores, causes cell swelling and lysis, and eventually kills the insect."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "RNA interference (RNAi) is a cellular defense mechanism used to make tobacco plants resistant to the root-knot nematode <i>Meloidogyne incognita</i>. RNAi involves:",
+          "image": "",
+          "options": [
+            "Silencing of a specific mRNA due to a complementary double-stranded RNA (dsRNA) molecule",
+            "Direct degradation of the nematode DNA by bacterial restriction endonucleases",
+            "Inactivation of plant ribosomes by small peptides",
+            "Inhibition of DNA replication by single-stranded cDNA"
+          ],
+          "correctOption": 0,
+          "solution": "RNA interference (RNAi) takes place in all eukaryotic organisms as a method of cellular defense. It involves silencing of a specific mRNA due to a complementary dsRNA molecule that binds to and prevents translation of the mRNA (silencing)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the production of nematode-resistant tobacco plants using RNAi, which vector was used to introduce nematode-specific genes into the host plant?",
+          "image": "",
+          "options": [
+            "<i>Agrobacterium tumefaciens</i>",
+            "Bacteriophage lambda",
+            "pBR322",
+            "Retrovirus"
+          ],
+          "correctOption": 0,
+          "solution": "Using <i>Agrobacterium</i> vectors, nematode-specific genes were introduced into the host plant. The introduction of DNA produced both sense and anti-sense RNA in the host cells. These two RNAs, being complementary to each other, formed a double-stranded RNA (dsRNA) that initiated RNAi."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "'Golden Rice' is a genetically engineered variety of rice (<i>Oryza sativa</i>) developed to combat dietary deficiencies, enriched with high levels of:",
+          "image": "",
+          "options": [
+            "$\beta$-Carotene (Pro-vitamin A)",
+            "Vitamin C",
+            "Vitamin B12",
+            "Iron and Lysine"
+          ],
+          "correctOption": 0,
+          "solution": "Golden rice is a genetically modified, biofortified rice variety enriched with $\beta$-carotene (a precursor of Vitamin A) designed to alleviate Vitamin A deficiency (VAD) in developing nations."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The first transgenic cow, Rosie (produced in 1997), produced human protein-enriched milk containing $2.4\\text{ grams}$ per litre of which human protein?",
+          "image": "",
+          "options": [
+            "Human alpha-lactalbumin",
+            "Human alpha-1-antitrypsin",
+            "Human serum albumin",
+            "Human lactoferrin"
+          ],
+          "correctOption": 0,
+          "solution": "In 1997, the first transgenic cow, Rosie, produced human protein-enriched milk ($2.4\\text{ g/L}$). The milk contained the human gene for alpha-lactalbumin and was nutritionally more balanced for human babies than natural cow milk."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Transgenic animals are produced to synthesize biological products. Human protein alpha-1-antitrypsin obtained from transgenic animals is clinically used to treat:",
+          "image": "",
+          "options": [
+            "Emphysema",
+            "Phenylketonuria (PKU)",
+            "Cystic fibrosis",
+            "Rheumatoid arthritis"
+          ],
+          "correctOption": 0,
+          "solution": "Transgenic animals are used to produce human proteins like alpha-1-antitrypsin, which is used for the clinical treatment of emphysema. Similar attempts are being made for the treatment of PKU and cystic fibrosis."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Transgenic mice are currently being developed and used as model systems for testing the safety of which human vaccine before it is administered to humans?",
+          "image": "",
+          "options": [
+            "Polio vaccine",
+            "Hepatitis-B vaccine",
+            "BCG vaccine",
+            "Tetanus toxoid"
+          ],
+          "correctOption": 0,
+          "solution": "Transgenic mice are developed for use in testing the safety of vaccines before they are used on humans. Transgenic mice are used to test the safety of the polio vaccine. If found reliable and successful, they could replace the use of monkeys to test vaccine safety."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Over 95 percent of all existing transgenic animals created for biomedical research are:",
+          "image": "",
+          "options": [
+            "Mice",
+            "Rats",
+            "Pigs",
+            "Cows"
+          ],
+          "correctOption": 0,
+          "solution": "Although transgenic rats, rabbits, pigs, sheep, cows, and fish have been produced, over 95 per cent of all existing transgenic animals are mice."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which Indian statutory government organization is authorized to make decisions regarding the validity of GM (genetically modified) research and the safety of introducing GM organisms for public services?",
+          "image": "",
+          "options": [
+            "Genetic Engineering Appraisal Committee (GEAC)",
+            "Indian Council of Agricultural Research (ICAR)",
+            "Department of Biotechnology (DBT)",
+            "National Biodiversity Authority (NBA)"
+          ],
+          "correctOption": 0,
+          "solution": "The Indian Government has set up organizations such as GEAC (Genetic Engineering Appraisal Committee), which makes decisions regarding the validity of GM research and the safety of introducing GM-organisms for public services."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Biopiracy is defined as:",
+          "image": "",
+          "options": [
+            "The use of bio-resources by multinational companies and other organizations without proper authorization from the countries and people concerned without compensatory payment",
+            "Illegal export of endangered wild animals across international borders",
+            "Cloning of human embryos for organ harvesting",
+            "The theft of laboratory equipment from research institutions"
+          ],
+          "correctOption": 0,
+          "solution": "Biopiracy is the term used to refer to the use of bio-resources by multinational companies and other organizations without proper authorization from the countries and people concerned without compensatory payment."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In 1997, an American company got patent rights on Basmati rice through the US Patent and Trademark Office. This 'new' variety of Basmati had actually been derived by crossing Indian Basmati with:",
+          "image": "",
+          "options": [
+            "Semi-dwarf varieties",
+            "Wild grass varieties",
+            "African rice varieties",
+            "Deep-water rice varieties"
+          ],
+          "correctOption": 0,
+          "solution": "In 1997, an American company got patent rights on Basmati rice through the US Patent and Trademark Office. This allowed the company to sell a 'new' variety of Basmati in the US and abroad. This 'new' variety of Basmati had actually been derived from Indian farmer's varieties by crossing Indian Basmati with semi-dwarf varieties."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Traditional Indian medicinal plants like Neem and Turmeric were subject to biopiracy attempts when foreign entities attempted to patent:",
+          "image": "",
+          "options": [
+            "Fungicidal properties of Neem and wound-healing properties of Turmeric",
+            "Antibiotic production from Neem leaves",
+            "Gene sequences for betalain pigments in Turmeric",
+            "Extraction of essential amino acids from roots"
+          ],
+          "correctOption": 0,
+          "solution": "Patents were claimed by foreign institutions on the wound-healing properties of Turmeric and fungicidal/pesticidal properties of Neem, which have been part of traditional Indian Ayurvedic medicine and indigenous knowledge for centuries."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Read the following statements regarding the benefits of Genetically Modified (GM) crops:<br><b>Statement I:</b> Genetic modification has made crops more tolerant to abiotic stresses (cold, drought, salt, heat).<br><b>Statement II:</b> GM crops help to reduce post-harvest losses and increase efficiency of mineral usage by plants.<br><br>Choose the correct option:",
+          "image": "",
+          "options": [
+            "Both Statement I and Statement II are correct",
+            "Both Statement I and Statement II are incorrect",
+            "Statement I is correct but Statement II is incorrect",
+            "Statement I is incorrect but Statement II is correct"
+          ],
+          "correctOption": 0,
+          "solution": "Both statements are correct according to NCERT. GM crops provide enhanced tolerance to abiotic stresses, reduce reliance on chemical pesticides, reduce post-harvest losses, increase mineral uptake efficiency, and enhance the nutritional value of food (e.g., Vitamin A-enriched Golden rice)."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following molecular diagnostic techniques enables early detection of pathogens (viruses/bacteria) before clinical symptoms appear, by amplifying minute amounts of pathogen nucleic acids?",
+          "image": "",
+          "options": [
+            "Polymerase Chain Reaction (PCR)",
+            "Serum biochemical analysis",
+            "Urine analysis",
+            "Stool culture test"
+          ],
+          "correctOption": 0,
+          "solution": "Conventional methods of diagnosis (serum/urine analysis) do not enable early detection. Low concentrations of a pathogen (when symptoms are not yet visible) can be detected by amplification of its nucleic acid by PCR (e.g., detecting HIV in suspected AIDS patients or gene mutations in cancer patients)."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In autoradiography used for detecting mutated genes, a single-stranded DNA or RNA probe tagged with a radioactive molecule is allowed to hybridize to its complementary DNA in a clone of cells. The mutated gene does not appear on photographic film because:",
+          "image": "",
+          "options": [
+            "The radioactive probe has no complementarity with the mutated gene",
+            "The mutated gene completely degrades the radioactive probe",
+            "The photographic film repels mutated DNA strands",
+            "Mutated genes cannot undergo base pairing under any conditions"
+          ],
+          "correctOption": 0,
+          "solution": "A single-stranded DNA or RNA tagged with a radioactive molecule (probe) is allowed to hybridize to complementary DNA. Because mutations alter nucleotide sequences, the probe fails to bind complementarily to the mutated gene, meaning no radioactive signal appears on the photographic film."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Enzyme-Linked Immunosorbent Assay (ELISA) is based on the principle of:",
+          "image": "",
+          "options": [
+            "Antigen-antibody interaction",
+            "Electrophoretic separation of nucleic acids",
+            "Denaturation of double-stranded DNA",
+            "Radioactive decay of isotopes"
+          ],
+          "correctOption": 0,
+          "solution": "ELISA is based on the principle of antigen-antibody interaction. Infection by a pathogen can be detected by the presence of antigens (proteins, glycoproteins, etc.) or by detecting the antibodies synthesized against the pathogen."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The insecticidal crystal proteins of <i>Bacillus thuringiensis</i> are effective against specific insect groups. Which of the following groups belongs to Lepidopterans?",
+          "image": "",
+          "options": [
+            "Tobacco budworm and Armyworm",
+            "Beetles",
+            "Flies and Mosquitoes",
+            "Aphids and Grasshoppers"
+          ],
+          "correctOption": 0,
+          "solution": "<i>Bacillus thuringiensis</i> produces crystal proteins toxic to specific insect orders: Lepidopterans (tobacco budworm, armyworm), Coleopterans (beetles), and Dipterans (flies, mosquitoes)."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Transgenic animals are designed to study how genes are regulated and how they affect the normal functioning of the body and its development. A classic example is the study of complex growth factors such as:",
+          "image": "",
+          "options": [
+            "Insulin-like Growth Factor (IGF)",
+            "Thyroxine",
+            "Adrenaline",
+            "Glucagon"
+          ],
+          "correctOption": 0,
+          "solution": "Transgenic animals are designed to allow the study of gene regulation and their effect on normal physiology and development (e.g., studying the biological roles of Insulin-like Growth Factor by introducing genes from other species)."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Chemical safety testing (toxicity testing) using transgenic animals is advantageous because:",
+          "image": "",
+          "options": [
+            "Transgenic animals are engineered to carry genes that make them more sensitive to toxic substances, yielding results in less time",
+            "Transgenic animals are completely immune to all toxins",
+            "They eliminate the need for statistical data",
+            "They live indefinitely without food"
+          ],
+          "correctOption": 0,
+          "solution": "Transgenic animals are made that carry genes which make them more sensitive to toxic substances than non-transgenic animals. They are then exposed to the toxic substances and the effects are studied, allowing toxicity testing results to be obtained in less time."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "India has an estimated 200,000 varieties of rice. How many documented varieties of Basmati rice are grown in India?",
+          "image": "",
+          "options": [
+            "27 documented varieties",
+            "200 documented varieties",
+            "1,000 documented varieties",
+            "50 documented varieties"
+          ],
+          "correctOption": 0,
+          "solution": "Basmati rice is distinct for its unique aroma and flavour, and 27 documented varieties of Basmati are grown in India."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The Indian Parliament has cleared which amendment of the Indian Patents Bill to take into account issues of biopiracy, patent terms, emergency provisions, and research and development initiatives?",
+          "image": "",
+          "options": [
+            "Second Amendment",
+            "First Amendment",
+            "Fifth Amendment",
+            "Tenth Amendment"
+          ],
+          "correctOption": 0,
+          "solution": "The Indian Parliament has cleared the second amendment of the Indian Patents Bill, which takes into consideration patent terms, emergency provisions, and research & development initiatives to safeguard bio-resources."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Before the availability of recombinant human insulin, diabetic patients were treated with insulin extracted from the pancreas of slaughtered cattle and pigs. A major drawback of this animal-derived insulin was that:",
+          "image": "",
+          "options": [
+            "It caused immune allergies and foreign protein reactions in some patients",
+            "It failed to lower blood glucose levels",
+            "It lacked chains A and B",
+            "It contained toxic C-peptide that caused permanent liver failure"
+          ],
+          "correctOption": 0,
+          "solution": "Insulin from animal sources (cattle and pigs) caused some patients to develop allergies or other types of immune reactions to the foreign animal protein."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In human insulin, chains A and B contain how many amino acid residues respectively, and how are they linked together?",
+          "image": "",
+          "options": [
+            "Chain A has 21 amino acids and Chain B has 30 amino acids, linked by disulfide bridges",
+            "Chain A has 30 amino acids and Chain B has 21 amino acids, linked by peptide bonds",
+            "Chain A has 51 amino acids and Chain B has 0 amino acids",
+            "Chain A has 20 amino acids and Chain B has 20 amino acids, linked by hydrogen bonds"
+          ],
+          "correctOption": 0,
+          "solution": "Mature human insulin consists of 51 amino acids arranged in two polypeptide chains: Chain A (21 amino acids) and Chain B (30 amino acids), interconnected by two interchain disulfide bridges."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Adenosine Deaminase (ADA) enzyme is crucial for the normal functioning of which human physiological system?",
+          "image": "",
+          "options": [
+            "Immune system (maturation and proliferation of lymphocytes)",
+            "Digestive system",
+            "Excretory system",
+            "Respiratory gas exchange"
+          ],
+          "correctOption": 0,
+          "solution": "Adenosine deaminase (ADA) is crucial for the survival and maturation of T and B lymphocytes. Deficiency of ADA leads to accumulation of toxic deoxyadenosine metabolites, destroying lymphocytes and crippling the immune system (SCID)."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following non-surgical approaches can be used as an alternative temporary treatment for ADA deficiency in children?",
+          "image": "",
+          "options": [
+            "Enzyme replacement therapy (periodic injection of functional ADA enzyme) and bone marrow transplantation",
+            "Daily administration of broad-spectrum antibiotics only",
+            "Subdermal estrogen implants",
+            "Insulin therapy"
+          ],
+          "correctOption": 0,
+          "solution": "In some children, ADA deficiency can be managed by bone marrow transplantation; in others, it can be treated by enzyme replacement therapy, in which functional ADA is given to the patient by regular injection."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Transgenic models currently exist for which of the following human diseases to enable the study of new treatments?",
+          "image": "",
+          "options": [
+            "Cancer, Cystic fibrosis, Rheumatoid arthritis, and Alzheimer's disease",
+            "Typhoid, Cholera, and Malaria only",
+            "Dengue and Chikungunya exclusively",
+            "Polio and Smallpox only"
+          ],
+          "correctOption": 0,
+          "solution": "Today transgenic models exist for many human diseases such as cancer, cystic fibrosis, rheumatoid arthritis, and Alzheimer's disease to serve as disease models for testing therapeutic drug candidates."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Bt cotton plants are resistant to cotton bollworms because:",
+          "image": "",
+          "options": [
+            "The plant tissues express Bt toxin proteins that lyse the midgut epithelium of feeding insect larvae",
+            "The plant produces a foul odor that repels all insects",
+            "The cotton fibers become too hard for larvae to chew",
+            "The plant secretes dsRNA that blocks insect respiration"
+          ],
+          "correctOption": 0,
+          "solution": "Bt cotton contains cloned <i>cry</i> genes from <i>Bacillus thuringiensis</i>. When bollworms feed on the plant, they ingest the protoxin, which is activated in their alkaline gut, creating pores that lyse epithelial cells and kill the larvae."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "What serves as the source of the complementary RNA in the process of RNA interference (RNAi)?",
+          "image": "",
+          "options": [
+            "Infection by viruses having RNA genomes or mobile genetic elements (transposons) that replicate via an RNA intermediate",
+            "Bacterial genomic DNA directly",
+            "Digested plant cell wall fragments",
+            "Transfer RNA molecules from the cytoplasm"
+          ],
+          "correctOption": 0,
+          "solution": "The source of this complementary RNA may be from an infection by viruses having RNA genomes or mobile genetic elements (transposons) that replicate via an RNA intermediate."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "About how many recombinant therapeutics have been approved for human use worldwide, and how many of these are currently marketed in India?",
+          "image": "",
+          "options": [
+            "About 30 approved worldwide, and 12 marketed in India",
+            "About 100 approved worldwide, and 50 marketed in India",
+            "About 12 approved worldwide, and 30 marketed in India",
+            "About 300 approved worldwide, and 100 marketed in India"
+          ],
+          "correctOption": 0,
+          "solution": "At present, about 30 recombinant therapeutics have been approved for human use the world over. In India, 12 of these are presently being marketed."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A transgenic plant created to synthesize Vitamin A (Golden Rice) was engineered by introducing genes encoding enzymes of the $\beta$-carotene biosynthetic pathway derived from:",
+          "image": "",
+          "options": [
+            "Daffodil (<i>Narcissus pseudonarcissus</i>) and the bacterium <i>Erwinia uredovora</i>",
+            "<i>Bacillus thuringiensis</i>",
+            "<i>Agrobacterium tumefaciens</i>",
+            "<i>Escherichia coli</i>"
+          ],
+          "correctOption": 0,
+          "solution": "Golden Rice was biofortified by transferring genes for phytoene synthase (from daffodil <i>Narcissus</i>) and phytoene desaturase (from the bacterium <i>Erwinia</i>) into the rice genome to synthesize $\beta$-carotene in the endosperm."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Read the following statements regarding the benefits of transgenic animals:<br><b>Statement I:</b> Transgenic animals can be specifically designed to allow the study of how genes are regulated and how they affect normal body functions.<br><b>Statement II:</b> Transgenic animals cannot be used for testing the safety of vaccines or chemical toxicity.<br><br>Choose the correct option:",
+          "image": "",
+          "options": [
+            "Statement I is correct but Statement II is incorrect",
+            "Both Statement I and Statement II are correct",
+            "Both Statement I and Statement II are incorrect",
+            "Statement I is incorrect but Statement II is correct"
+          ],
+          "correctOption": 0,
+          "solution": "Statement I is correct. Statement II is incorrect because transgenic animals are widely and routinely used for vaccine safety testing (e.g., transgenic mice for polio vaccine) and chemical toxicity testing."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following insect pests belongs to the order Diptera and is susceptible to Bt toxins?",
+          "image": "",
+          "options": [
+            "Flies and Mosquitoes",
+            "Cotton bollworms",
+            "Beetles",
+            "Corn borers"
+          ],
+          "correctOption": 0,
+          "solution": "Flies and mosquitoes belong to the order Diptera; beetles belong to Coleoptera; bollworms and corn borers belong to Lepidoptera."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The main challenge for the commercial production of recombinant human insulin using genetic engineering was:",
+          "image": "",
+          "options": [
+            "Getting insulin assembled into a mature form with proper disulfide bonds without the C-peptide",
+            "Synthesizing the C-peptide in large quantities",
+            "Extracting insulin from bacterial inclusion bodies",
+            "Preventing bacteria from degrading glucose"
+          ],
+          "correctOption": 0,
+          "solution": "The main challenge for the production of insulin using rDNA techniques was getting insulin assembled into a mature form. This was solved by synthesizing chain A and chain B separately and linking them with disulfide bonds."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In gene therapy for ADA deficiency, functional ADA cDNA is introduced into cultured lymphocytes using which vector?",
+          "image": "",
+          "options": [
+            "A retroviral vector",
+            "A bacteriophage vector",
+            "Ti plasmid of <i>Agrobacterium</i>",
+            "pBR322"
+          ],
+          "correctOption": 0,
+          "solution": "A functional ADA cDNA (using a retroviral vector) is introduced into the cultured lymphocytes of the patient, which are subsequently returned to the patient's body."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Transgenic plants engineered to produce hirudin (an anticoagulant protein originally found in leeches) were created by expressing the hirudin gene in the seeds of:",
+          "image": "",
+          "options": [
+            "<i>Brassica napus</i>",
+            "<i>Nicotiana tabacum</i>",
+            "<i>Zea mays</i>",
+            "<i>Oryza sativa</i>"
+          ],
+          "correctOption": 0,
+          "solution": "The gene coding for the anticoagulant protein hirudin was transferred into <i>Brassica napus</i> (canola/mustard), where hirudin accumulates in the seeds and can be extracted and purified."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following is a potential biosafety concern associated with the widespread environmental release of Genetically Modified (GM) crops?",
+          "image": "",
+          "options": [
+            "Gene transfer to wild weedy relatives (gene flow / superweeds) and unintended harm to non-target beneficial insects",
+            "Immediate extinction of all nitrogen-fixing bacteria",
+            "Complete destruction of soil fertility within one year",
+            "Permanent cessation of photosynthesis in surrounding plants"
+          ],
+          "correctOption": 0,
+          "solution": "Major biosafety concerns regarding GM crops include the possibility of outcrossing with wild relatives creating herbicide-resistant 'superweeds', potential allergenicity, and unintended negative ecological effects on non-target organisms."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A patent is an official right granted by a government to an inventor for:",
+          "image": "",
+          "options": [
+            "Exclusive commercial exploitation, manufacture, and sale of an invention for a specified period of time",
+            "Publishing scientific data in international journals without peer review",
+            "Using wild bio-resources freely without government authorization",
+            "Banning research in related scientific domains"
+          ],
+          "correctOption": 0,
+          "solution": "A patent is a set of exclusive intellectual property rights granted by a sovereign state to an inventor or assignee for a limited period in exchange for detailed public disclosure of an invention."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The nematode <i>Meloidogyne incognita</i> infects which anatomical part of tobacco plants, causing a great reduction in agricultural yield?",
+          "image": "",
+          "options": [
+            "Roots",
+            "Leaves",
+            "Floral buds",
+            "Stem xylem"
+          ],
+          "correctOption": 0,
+          "solution": "A nematode <i>Meloidogyne incognita</i> infects the roots of tobacco plants and causes root galls and root-knot disease, greatly reducing crop yield."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In developing countries, developing biofortified crops with higher levels of vitamins, minerals, or healthier fats is primarily aimed at eliminating:",
+          "image": "",
+          "options": [
+            "Hidden hunger (micronutrient malnutrition)",
+            "Plant fungal infections",
+            "Weed infestations in crop fields",
+            "Pesticide resistance"
+          ],
+          "correctOption": 0,
+          "solution": "Biofortification (breeding crops with higher levels of vitamins and minerals) is the most practical means to combat 'hidden hunger'—deficiencies in essential micronutrients like Vitamin A, iron, iodine, and zinc."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Read the following statements:<br><b>Statement I:</b> ELISA is based on the principle of antigen-antibody interaction.<br><b>Statement II:</b> Infection by a pathogen can be detected either by the presence of antigens or by detecting antibodies synthesised against the pathogen.<br><br>Choose the correct option:",
+          "image": "",
+          "options": [
+            "Both Statement I and Statement II are correct",
+            "Both Statement I and Statement II are incorrect",
+            "Statement I is correct but Statement II is incorrect",
+            "Statement I is incorrect but Statement II is correct"
+          ],
+          "correctOption": 0,
+          "solution": "Both statements are correct according to NCERT. ELISA detects pathogens either directly by identifying pathogen antigens or indirectly by testing for serum antibodies produced in response to the infection."
+        }
+      ]
+    }
+  ]
+}
