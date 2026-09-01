@@ -1,0 +1,690 @@
+{
+  "testId": "neet-bio-17-neural-control-and-coordination",
+  "title": "Neural Control and Coordination",
+  "syllabus": "Neuron and nerves; Nervous system in humans - Central Nervous System (Brain and Spinal Cord), Peripheral Nervous System (Somatic and Autonomic), and Visceral Nervous System; Generation and conduction of nerve impulse; Synaptic transmission.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Biology",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following structural parts of a neuron contains Nissl's granules?",
+          "image": "",
+          "options": [
+            "Cell body (Soma) and Dendrites",
+            "Axon and Axon terminals only",
+            "Node of Ranvier and Axon hillock",
+            "Synaptic knobs only"
+          ],
+          "correctOption": 0,
+          "solution": "Nissl's granules are granular bodies composed of rough endoplasmic reticulum and free ribosomes actively involved in protein synthesis. They are present in the cell body (cyton/soma) and dendrites, but are completely absent in the axon and axon hillock."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the types of neurons based on the number of axon and dendrites:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Neuron Type)</th><th>List-II (Location in Human Body)</th></tr></thead><tbody><tr><td>(A) Multipolar neuron</td><td>(I) Retina of eye</td></tr><tr><td>(B) Bipolar neuron</td><td>(II) Embryonic stage</td></tr><tr><td>(C) Unipolar neuron</td><td>(III) Cerebral cortex</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(III), (B)-(I), (C)-(II)",
+            "(A)-(I), (B)-(III), (C)-(II)",
+            "(A)-(III), (B)-(II), (C)-(I)",
+            "(A)-(II), (B)-(I), (C)-(III)"
+          ],
+          "correctOption": 0,
+          "solution": "Multipolar neurons (one axon and two or more dendrites) are found in the cerebral cortex; Bipolar neurons (one axon and one dendrite) are found in the retina of the eye and olfactory epithelium; Unipolar neurons (cell body with only one axon) are found usually in the early embryonic stage."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a resting axonal membrane (polarized state), the resting membrane potential is maintained primarily by:",
+          "image": "",
+          "options": [
+            "Sodium-potassium pump ($3\\,\\text{Na}^+$ pumped out for $2\\,\\text{K}^+$ pumped in using 1 ATP) and high resting permeability to $\\text{K}^+$",
+            "Equal permeability of the axolemma to both $\\text{Na}^+$ and $\\text{K}^+$ ions",
+            "Active pumping of $3\\,\\text{K}^+$ out and $2\\,\\text{Na}^+$ in",
+            "Complete impermeability of the axolemma to all ions"
+          ],
+          "correctOption": 0,
+          "solution": "At resting potential (approx. $-70\\text{ mV}$), the axolemma is more permeable to $\\text{K}^+$ and nearly impermeable to $\\text{Na}^+$ and negatively charged proteins in the axoplasm. The ionic gradients across the resting membrane are actively maintained by the $\\text{Na}^+/\\text{K}^+$ ATPase pump which transports $3\\,\\text{Na}^+$ outwards for $2\\,\\text{K}^+$ into the cell per ATP hydrolyzed."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a threshold stimulus is applied to a site (say site A) on a polarized axonal membrane, the sudden rapid depolarization is caused by:",
+          "image": "",
+          "options": [
+            "Rapid influx of $\\text{Na}^+$ ions into the axoplasm due to opening of voltage-gated sodium channels",
+            "Rapid efflux of $\\text{K}^+$ ions out of the axoplasm",
+            "Inactivation of the sodium-potassium pump only",
+            "Efflux of negatively charged intracellular proteins"
+          ],
+          "correctOption": 0,
+          "solution": "When a stimulus is applied at a site on a polarized membrane, the membrane becomes freely permeable to $\\text{Na}^+$. This leads to a rapid influx of $\\text{Na}^+$ followed by the reversal of polarity at that site (depolarization), generating an action potential (nerve impulse) of about $+30\\text{ mV}$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Repolarization of the excited axonal membrane back to its resting negative potential is achieved by:",
+          "image": "",
+          "options": [
+            "Closure of $\\text{Na}^+$ channels and rapid efflux of $\\text{K}^+$ ions to the outside of the membrane",
+            "Opening of voltage-gated $\\text{Na}^+$ channels",
+            "Influx of negatively charged chloride ions only",
+            "Pumping of $\\text{Ca}^{2+}$ into the axoplasm"
+          ],
+          "correctOption": 0,
+          "solution": "The rise in stimulus-induced permeability to $\\text{Na}^+$ is extremely short-lived. It is quickly followed by an increase in permeability to $\\text{K}^+$. Within a fraction of a millisecond, $\\text{K}^+$ diffuses outside the membrane and restores the resting potential of the membrane (repolarization)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the types of Synapses:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Synapse Type)</th><th>List-II (Defining Feature)</th></tr></thead><tbody><tr><td>(A) Electrical synapse</td><td>(I) Separated by fluid-filled synaptic cleft; utilizes neurotransmitters and synaptic delay occurs</td></tr><tr><td>(B) Chemical synapse</td><td>(II) Membranes of pre- and post-synaptic neurons in very close proximity; current flows directly via gap junctions</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(I)",
+            "(A)-(I), (B)-(II)",
+            "(A)-(I), (B)-(I)",
+            "(A)-(II), (B)-(II)"
+          ],
+          "correctOption": 0,
+          "solution": "Electrical synapses: Pre- and post-synaptic membranes are in very close physical proximity ($0.2\\text{ nm}$); electrical current flows directly through gap junctions, making impulse transmission faster (rare in human system). Chemical synapses: Separated by a fluid-filled synaptic cleft ($10-20\\text{ nm}$); uses chemical neurotransmitters released from synaptic vesicles."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During synaptic transmission at a chemical synapse, the arrival of an action potential at the axon terminal triggers the opening of voltage-gated channels for which ion, leading to the exocytosis of neurotransmitters into the synaptic cleft?",
+          "image": "",
+          "options": [
+            "$\\text{Ca}^{2+}$",
+            "$\\text{Na}^+$",
+            "$\\text{Cl}^-$",
+            "$\\text{Mg}^{2+}$"
+          ],
+          "correctOption": 0,
+          "solution": "When an impulse arrives at the axon terminal, it depolarizes the presynaptic membrane and opens voltage-gated $\\text{Ca}^{2+}$ channels. The influx of $\\text{Ca}^{2+}$ stimulates synaptic vesicles to fuse with the presynaptic plasma membrane and release their neurotransmitters into the synaptic cleft via exocytosis."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The myelin sheath around nerve fibers in the Peripheral Nervous System (PNS) and Central Nervous System (CNS) is produced by which glial cells respectively?",
+          "image": "",
+          "options": [
+            "Schwann cells in PNS and Oligodendrocytes in CNS",
+            "Oligodendrocytes in PNS and Schwann cells in CNS",
+            "Astrocytes in PNS and Microglia in CNS",
+            "Ependymal cells in both PNS and CNS"
+          ],
+          "correctOption": 0,
+          "solution": "In the PNS, myelin sheaths are formed by Schwann cells wrapped concentrically around axons (with gaps called Nodes of Ranvier). In the CNS, myelination is provided by oligodendrocytes."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Myelinated nerve fibers conduct impulses much faster than non-myelinated fibers because of:",
+          "image": "",
+          "options": [
+            "Saltatory conduction (action potential jumps from one Node of Ranvier to the next)",
+            "Absence of ion channels along the nodes",
+            "Continuous wave depolarization across the entire axon length",
+            "High electrical resistance at the Nodes of Ranvier"
+          ],
+          "correctOption": 0,
+          "solution": "Myelin acts as an electrical insulator. Depolarization and ionic exchange occur only at unmyelinated gaps called Nodes of Ranvier. The nerve impulse jumps from one node to the next (saltatory conduction), accelerating the conduction velocity."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the divisions of the Human Nervous System:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Division)</th><th>List-II (Constituent Organs / Innervation)</th></tr></thead><tbody><tr><td>(A) Central Nervous System (CNS)</td><td>(I) Relays impulses from CNS to skeletal (voluntary) muscles</td></tr><tr><td>(B) Somatic Neural System (SNS)</td><td>(II) Brain and Spinal cord; site of information processing and control</td></tr><tr><td>(C) Autonomic Neural System (ANS)</td><td>(III) Transmits impulses from CNS to involuntary organs and smooth muscles</td></tr><tr><td>(D) Visceral Nervous System</td><td>(IV) Part of PNS comprising nerves, fibers, ganglia, and plexuses that innervate viscera</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(I), (C)-(III), (D)-(IV)",
+            "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)",
+            "(A)-(II), (B)-(III), (C)-(I), (D)-(IV)",
+            "(A)-(III), (B)-(I), (C)-(II), (D)-(IV)"
+          ],
+          "correctOption": 0,
+          "solution": "CNS: Brain and spinal cord; SNS: Innervates voluntary skeletal muscles; ANS: Controls involuntary viscera and glands (sympathetic & parasympathetic); Visceral nervous system: Complex of nerves, fibers, ganglia, and plexuses connecting CNS with internal visceral organs."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The human brain is protected inside the cranial cavity and is covered by three cranial meninges. The correct sequence of meninges from OUTSIDE to INSIDE is:",
+          "image": "",
+          "options": [
+            "Dura mater $\\to$ Arachnoid mater $\\to$ Pia mater",
+            "Pia mater $\\to$ Arachnoid mater $\\to$ Dura mater",
+            "Arachnoid mater $\\to$ Dura mater $\\to$ Pia mater",
+            "Dura mater $\\to$ Pia mater $\\to$ Arachnoid mater"
+          ],
+          "correctOption": 0,
+          "solution": "The brain is covered by cranial meninges consisting of: (1) an outer tough fibrous layer called dura mater, (2) a very thin middle layer called arachnoid mater, and (3) an inner vascular layer called pia mater which is in direct contact with brain tissue."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A deep cleft divides the cerebrum longitudinally into two halves, which are termed the left and right cerebral hemispheres. These hemispheres are connected by a wide tract of nerve fibers called the:",
+          "image": "",
+          "options": [
+            "Corpus callosum",
+            "Corpora quadrigemina",
+            "Crura cerebri",
+            "Infundibulum"
+          ],
+          "correctOption": 0,
+          "solution": "The two cerebral hemispheres are interconnected by a thick transverse arched tract of myelinated nerve fibers called the corpus callosum, which is a characteristic feature of the mammalian brain."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The cerebral cortex is referred to as 'grey matter' because:",
+          "image": "",
+          "options": [
+            "Neuron cell bodies are concentrated here, giving it a grayish appearance",
+            "Myelin sheaths give it an opaque gray color",
+            "Cerebrospinal fluid stains the outer surface gray",
+            "It contains high concentrations of melanin pigment"
+          ],
+          "correctOption": 0,
+          "solution": "The cerebral cortex is referred to as grey matter due to its grayish appearance, which is imparted by the dense concentration of non-myelinated neuron cell bodies (somata) and dendrites. The inner medulla appears white (white matter) because of myelinated nerve fiber tracts."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Large regions in the cerebral cortex that are neither clearly sensory nor motor in function are called Association Areas. They are responsible for complex functions like:",
+          "image": "",
+          "options": [
+            "Intersensory associations, memory, and communication",
+            "Direct reflex control of heart rate and respiration",
+            "Maintenance of body temperature and osmoregulation",
+            "Coordination of involuntary peristalsis exclusively"
+          ],
+          "correctOption": 0,
+          "solution": "The association areas in the cerebral cortex are large areas that are neither purely sensory nor motor. They are responsible for complex integrative functions such as intersensory associations, memory, decision-making, and communication."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following structures acts as a major relay station for sensory and motor signals located at the center of the forebrain, wrapped by the cerebrum?",
+          "image": "",
+          "options": [
+            "Thalamus",
+            "Hypothalamus",
+            "Pons",
+            "Cerebellum"
+          ],
+          "correctOption": 0,
+          "solution": "The cerebrum wraps around a structure called the thalamus, which is a major coordinating and relay center for sensory and motor signaling in the brain."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The Hypothalamus lies at the base of the thalamus. Which of the following is NOT a primary function of the hypothalamus?",
+          "image": "",
+          "options": [
+            "Control of voluntary muscular locomotion and balance",
+            "Regulation of body temperature (thermostat of body)",
+            "Control of urges for eating (hunger) and drinking (thirst)",
+            "Secretion of neurohormones that regulate pituitary gland"
+          ],
+          "correctOption": 0,
+          "solution": "The hypothalamus contains centers that control body temperature, urge for eating (hunger) and drinking (thirst), and produces hypothalamic releasing/inhibiting hormones. Coordination of voluntary locomotion and body balance is performed by the cerebellum."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the functional regions of the Human Brain:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Brain Region)</th><th>List-II (Core Function)</th></tr></thead><tbody><tr><td>(A) Limbic system (Amygdala + Hippocampus)</td><td>(I) Highly convoluted surface; maintains equilibrium and body posture</td></tr><tr><td>(B) Corpora quadrigemina (Midbrain)</td><td>(II) Four round optic/auditory lobes on the dorsal surface of midbrain</td></tr><tr><td>(C) Medulla oblongata</td><td>(III) Centers for cardiovascular reflexes, respiration, and gastric secretions</td></tr><tr><td>(D) Cerebellum</td><td>(IV) Regulation of emotional reactions (pleasure, rage, fear) and motivation</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(IV), (B)-(II), (C)-(III), (D)-(I)",
+            "(A)-(II), (B)-(IV), (C)-(III), (D)-(I)",
+            "(A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+            "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)"
+          ],
+          "correctOption": 0,
+          "solution": "Limbic system + Hypothalamus: Regulates emotional reactions (excitement, pleasure, rage, fear) and sexual behavior; Corpora quadrigemina: Four round swellings on dorsal midbrain (visual/auditory reflexes); Medulla: Cardiovascular, respiratory rhythm, vomiting, and gastric secretions; Cerebellum: Coordinates voluntary muscle movements and posture."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A canal that passes longitudinally through the midbrain connecting the third and fourth ventricles of the brain is the:",
+          "image": "",
+          "options": [
+            "Cerebral aqueduct (Aqueduct of Sylvius)",
+            "Foramen of Monro",
+            "Central canal of spinal cord",
+            "Foramen magnum"
+          ],
+          "correctOption": 0,
+          "solution": "A canal called the cerebral aqueduct (iter/aqueduct of Sylvius) passes through the midbrain, connecting the third ventricle (in diencephalon) to the fourth ventricle (in hindbrain)."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The Brain Stem consists of which of the following three regions?",
+          "image": "",
+          "options": [
+            "Midbrain, Pons, and Medulla oblongata",
+            "Forebrain, Midbrain, and Hindbrain",
+            "Cerebrum, Cerebellum, and Medulla",
+            "Thalamus, Hypothalamus, and Pons"
+          ],
+          "correctOption": 0,
+          "solution": "The brain stem forms the connection between the brain and the spinal cord. Three regions make up the brain stem: (1) Midbrain, (2) Pons, and (3) Medulla oblongata."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Read the following statements regarding the Autonomic Nervous System (ANS):<br><b>Statement I:</b> The Sympathetic nervous system generally prepares the body for 'fight or flight' emergencies by increasing heart rate and pupil dilation.<br><b>Statement II:</b> The Parasympathetic nervous system promotes 'rest and digest' activities by slowing down heart rate and stimulating digestive secretions.<br><br>Choose the correct option:",
+          "image": "",
+          "options": [
+            "Both Statement I and Statement II are correct",
+            "Both Statement I and Statement II are incorrect",
+            "Statement I is correct but Statement II is incorrect",
+            "Statement I is incorrect but Statement II is correct"
+          ],
+          "correctOption": 0,
+          "solution": "Both statements are correct. The sympathetic system prepares the body for stress and emergency conditions ('fight or flight'), while the parasympathetic system conserves energy and restores vegetative functions ('rest and digest')."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Afferent (sensory) nerve fibers and Efferent (motor) nerve fibers perform which of the following functions respectively?",
+          "image": "",
+          "options": [
+            "Transmit impulses from tissues/organs to the CNS, and transmit regulatory impulses from CNS to peripheral effector tissues",
+            "Transmit impulses from CNS to tissues, and transmit impulses from tissues to CNS",
+            "Both transmit impulses exclusively within the spinal cord",
+            "Both carry impulses away from the brain to skeletal muscles"
+          ],
+          "correctOption": 0,
+          "solution": "The afferent (sensory) nerve fibers transmit regulatory impulses from peripheral tissues and sense organs to the CNS. The efferent (motor) nerve fibers transmit motor/regulatory impulses from the CNS to the peripheral effector tissues and organs."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "How many pairs of cranial nerves and spinal nerves constitute the human Peripheral Nervous System (PNS)?",
+          "image": "",
+          "options": [
+            "12 pairs of cranial nerves and 31 pairs of spinal nerves",
+            "10 pairs of cranial nerves and 10 pairs of spinal nerves",
+            "31 pairs of cranial nerves and 12 pairs of spinal nerves",
+            "12 pairs of cranial nerves and 12 pairs of spinal nerves"
+          ],
+          "correctOption": 0,
+          "solution": "In humans, the PNS comprises 12 pairs of cranial nerves arising from the brain and 31 pairs of spinal nerves arising from the spinal cord."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The resting membrane potential value in a typical mammalian neuron is approximately:",
+          "image": "",
+          "options": [
+            "$-70\\text{ mV}$",
+            "$+30\\text{ mV}$",
+            "$0\\text{ mV}$",
+            "$-120\\text{ mV}$"
+          ],
+          "correctOption": 0,
+          "solution": "In a resting neuron, the electrical potential difference across the resting plasma membrane is termed the resting membrane potential, which measures approximately $-70\\text{ mV}$ (inside negative relative to the outside)."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following neurotransmitters is an excitatory chemical messenger released at neuromuscular junctions of skeletal muscles?",
+          "image": "",
+          "options": [
+            "Acetylcholine",
+            "GABA (Gamma-aminobutyric acid)",
+            "Glycine",
+            "Dopamine in basal ganglia exclusively"
+          ],
+          "correctOption": 0,
+          "solution": "Acetylcholine (ACh) is the primary excitatory neurotransmitter released by somatic motor neurons at neuromuscular junctions to stimulate skeletal muscle contraction. GABA and Glycine are primary inhibitory neurotransmitters."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the ionic states of the axonal membrane during impulse transmission:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (State of Axolemma)</th><th>List-II (Electrical State / Relative Charge)</th></tr></thead><tbody><tr><td>(A) Polarized state (Resting)</td><td>(I) Outer surface negatively charged, inner surface positively charged ($+30\\text{ mV}$)</td></tr><tr><td>(B) Depolarized state (Action Potential)</td><td>(II) Outer surface positively charged, inner surface negatively charged ($-70\\text{ mV}$)</td></tr><tr><td>(C) Repolarized state</td><td>(III) Restoration of outer positive and inner negative charge via $\\text{K}^+$ efflux</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(I), (C)-(III)",
+            "(A)-(I), (B)-(II), (C)-(III)",
+            "(A)-(II), (B)-(III), (C)-(I)",
+            "(A)-(III), (B)-(I), (C)-(II)"
+          ],
+          "correctOption": 0,
+          "solution": "Polarized (resting) state: Outer positive, inner negative ($-70\\text{ mV}$); Depolarized state: Inward $\\text{Na}^+$ surge reverses polarity to outer negative, inner positive ($+30\\text{ mV}$); Repolarized state: $\\text{K}^+$ efflux restores the original outer positive, inner negative charge polarity."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Unmyelinated nerve fibers are enclosed by Schwann cells that do NOT form a myelin sheath around the axon. In humans, unmyelinated nerve fibers are commonly found in:",
+          "image": "",
+          "options": [
+            "Autonomous and Somatic neural systems",
+            "Spinal and Cranial nerves exclusively",
+            "Corpus callosum and cerebral cortex",
+            "Optic nerve exclusively"
+          ],
+          "correctOption": 0,
+          "solution": "Unmyelinated nerve fibers are enclosed by a Schwann cell that does not form a myelin sheath around the axon and lacks Nodes of Ranvier; they are commonly found in autonomous and somatic neural systems. Myelinated fibers are found in cranial and spinal nerves."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Short, branched processes that project out of the neuronal cell body, contain Nissl's granules, and transmit impulses TOWARDS the cell body are called:",
+          "image": "",
+          "options": [
+            "Dendrites",
+            "Axons",
+            "Telodendria",
+            "Synaptic knobs"
+          ],
+          "correctOption": 0,
+          "solution": "Dendrites are short, repeatedly branching processes projecting out of the cell body that contain Nissl's granules. They receive sensory inputs or synaptic signals and transmit impulses centripetally toward the cell body (cyton)."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Each branch of an axon terminates as a bulb-like structure called a synaptic knob, which possesses:",
+          "image": "",
+          "options": [
+            "Synaptic vesicles filled with chemical neurotransmitters",
+            "Nissl's granules and chromatin",
+            "Myelin fragments only",
+            "Free ribosomal clusters"
+          ],
+          "correctOption": 0,
+          "solution": "Axon terminals expand into bulbous structures called synaptic knobs, which contain numerous mitochondria and membrane-bound synaptic vesicles filled with neurotransmitter chemicals."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The threshold stimulus required to trigger an action potential in an axon follows which physiological principle?",
+          "image": "",
+          "options": [
+            "All-or-None Law",
+            "Starling's Law",
+            "Bohr Effect",
+            "Law of Mass Action"
+          ],
+          "correctOption": 0,
+          "solution": "Action potential generation follows the 'All-or-None Law': if a stimulus reaches the threshold potential ($\\,\\sim -55\\text{ mV}$), a full action potential of constant amplitude is produced; if the stimulus is sub-threshold, no action potential is generated."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During the absolute refractory period of a neuron:",
+          "image": "",
+          "options": [
+            "No second action potential can be initiated, regardless of the strength of the applied stimulus",
+            "A second action potential can be triggered by a normal stimulus",
+            "The axolemma becomes freely permeable to $\\text{K}^+$ only",
+            "$\\text{Na}^+/\\text{K}^+$ ATPase pumps stop operating permanently"
+          ],
+          "correctOption": 0,
+          "solution": "During the absolute refractory period (from onset of action potential until inactivation gates of $\\text{Na}^+$ channels reopen), the membrane cannot respond to any subsequent stimulus, ensuring unidirectional forward propagation of nerve impulses."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Pons consists of fibers that:",
+          "image": "",
+          "options": [
+            "Interconnect different regions of the brain",
+            "Secrete cerebrospinal fluid exclusively",
+            "Act as the master endocrine gland",
+            "Produce myoglobin for skeletal muscles"
+          ],
+          "correctOption": 0,
+          "solution": "The pons consists of fiber tracts that form a bridge interconnecting different anatomical regions of the brain (e.g., connecting cerebrum with cerebellum and medulla)."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the spinal cord, the anatomical distribution of grey matter and white matter is:",
+          "image": "",
+          "options": [
+            "Grey matter is located internally (H-shaped/butterfly shaped) and white matter is located externally",
+            "White matter is internal and grey matter is external (same as cerebral cortex)",
+            "Grey matter and white matter are completely mixed uniformly",
+            "White matter only is present throughout the spinal cord"
+          ],
+          "correctOption": 0,
+          "solution": "In the spinal cord, the grey matter (containing cell bodies and unmyelinated interneurons) is located centrally in an H-shaped or butterfly pattern, surrounded by an outer layer of white matter (containing ascending and descending myelinated nerve tracts). This is the reverse of the cerebral cortex."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The Cerebrospinal Fluid (CSF) is present in the subarachnoid space, central canal, and brain ventricles. A primary function of CSF is to:",
+          "image": "",
+          "options": [
+            "Cushion the brain against mechanical shocks, provide buoyancy, and maintain homeostatic exchange",
+            "Transmit action potentials between cerebral hemispheres",
+            "Generate electrical impulses like a pacemaker",
+            "Synthesize neurotransmitters directly"
+          ],
+          "correctOption": 0,
+          "solution": "CSF serves as a protective liquid cushion (shock absorber), supports brain weight via buoyancy, and facilitates nutrient delivery and metabolic waste removal between neural tissue and blood."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following statements regarding the Visceral Nervous System is CORRECT?",
+          "image": "",
+          "options": [
+            "It is a component of the peripheral nervous system comprising nerves, fibers, ganglia, and plexuses that convey impulses between the CNS and viscera.",
+            "It is independent of both the central and autonomic nervous systems.",
+            "It controls only skeletal striated muscles of limbs.",
+            "It lacks sensory afferent fibers."
+          ],
+          "correctOption": 0,
+          "solution": "According to NCERT, the visceral nervous system is the part of the peripheral nervous system that comprises the whole complex of nerves, fibers, ganglia, and plexuses by which impulses travel from the central nervous system to the viscera and from the viscera to the central nervous system."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Read the following statements:<br><b>Statement I:</b> Synaptic cleft is a fluid-filled gap separating the pre-synaptic and post-synaptic neurons at a chemical synapse.<br><b>Statement II:</b> Released neurotransmitters bind to specific receptor sites on the post-synaptic membrane, opening ion channels and generating a new potential.<br><br>Choose the correct option:",
+          "image": "",
+          "options": [
+            "Both Statement I and Statement II are correct",
+            "Both Statement I and Statement II are incorrect",
+            "Statement I is correct but Statement II is incorrect",
+            "Statement I is incorrect but Statement II is correct"
+          ],
+          "correctOption": 0,
+          "solution": "Both statements are correct. In a chemical synapse, neurotransmitters diffuse across the synaptic cleft and bind to specific receptor proteins on the postsynaptic membrane. This binding opens ion channels, allowing ions to enter and generate either an excitatory or inhibitory postsynaptic potential."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Hyperpolarization of a neuronal membrane refers to a state where the membrane potential becomes:",
+          "image": "",
+          "options": [
+            "More negative than the normal resting potential (e.g., $-80\\text{ to } -90\\text{ mV}$ due to prolonged $\\text{K}^+$ efflux)",
+            "Positive ($+30\\text{ mV}$)",
+            "Zero ($0\\text{ mV}$)",
+            "Depolarized to threshold"
+          ],
+          "correctOption": 0,
+          "solution": "Hyperpolarization occurs when the interior of the neuron becomes more negative than its normal resting potential (e.g., $-80\\text{ to } -90\\text{ mV}$), typically caused by prolonged opening of $\\text{K}^+$ channels or opening of $\\text{Cl}^-$ channels by inhibitory neurotransmitters (e.g., GABA)."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following structures contains neurosecretory cells called nuclei that produce hypothalamic hormones?",
+          "image": "",
+          "options": [
+            "Hypothalamus",
+            "Thalamus",
+            "Pons",
+            "Cerebellum"
+          ],
+          "correctOption": 0,
+          "solution": "The hypothalamus contains several groups of neurosecretory cells called nuclei which produce neurohormones that regulate the secretion of anterior pituitary hormones and are stored in the posterior pituitary."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The cerebrum is characterized by prominent outer folds or convolutions that increase its surface area. The upfolded ridges and downfolded grooves are called respectively:",
+          "image": "",
+          "options": [
+            "Gyri and Sulci",
+            "Sulci and Gyri",
+            "Fissures and Folia",
+            "Cisternae and Cristae"
+          ],
+          "correctOption": 0,
+          "solution": "The cerebral cortex exhibits prominent convolutions to accommodate billions of neurons; the elevated convex folds are called gyri and the shallow intervening grooves are called sulci."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following parts of the human brain maintains muscle tone, body posture, and equilibrium during walking?",
+          "image": "",
+          "options": [
+            "Cerebellum",
+            "Corpus callosum",
+            "Hypothalamus",
+            "Corpora quadrigemina"
+          ],
+          "correctOption": 0,
+          "solution": "The cerebellum has a highly convoluted surface to provide additional space for many more neurons. It integrates sensory inputs from the inner ear and proprioceptors in muscles to coordinate voluntary muscular movements, posture, and equilibrium."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The term 'Nerve' in the peripheral nervous system is defined anatomically as:",
+          "image": "",
+          "options": [
+            "A bundle of nerve fibers (axons) enclosed by protective connective tissue sheaths (epineurium, perineurium, endoneurium)",
+            "A cluster of neuron cell bodies inside the CNS",
+            "A single giant glial cell",
+            "A dendrite extending into muscle"
+          ],
+          "correctOption": 0,
+          "solution": "In the PNS, a nerve is a macroscopic cord-like structure consisting of bundles of nerve fibers (fascicles of axons) bound together by layers of connective tissue (endoneurium, perineurium, and epineurium)."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A collection or cluster of neuron cell bodies situated OUTSIDE the Central Nervous System in the PNS is called a:",
+          "image": "",
+          "options": [
+            "Ganglion (plural: Ganglia)",
+            "Nucleus",
+            "Tract",
+            "Nerve"
+          ],
+          "correctOption": 0,
+          "solution": "A cluster of neuron cell bodies located in the peripheral nervous system is called a ganglion (e.g., dorsal root ganglion, sympathetic ganglia). A cluster of cell bodies inside the CNS is called a nucleus."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A bundle of nerve fibers (axons) running within the Central Nervous System connecting different brain/spinal levels is called a:",
+          "image": "",
+          "options": [
+            "Tract",
+            "Nerve",
+            "Plexus",
+            "Ganglion"
+          ],
+          "correctOption": 0,
+          "solution": "Within the Central Nervous System, a bundle of axons running together is called a tract (e.g., corticospinal tract, corpus callosum). In the PNS, it is called a nerve."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The transmission of an impulse across an electrical synapse is always faster than that across a chemical synapse because:",
+          "image": "",
+          "options": [
+            "Direct flow of ionic current occurs across low-resistance gap junctions without the delay of neurotransmitter release, diffusion, and binding",
+            "Myelin is thicker in electrical synapses",
+            "Chemical synapses require ATP breakdown for every millisecond",
+            "Electrical synapses operate only at $+100\\text{ mV}$"
+          ],
+          "correctOption": 0,
+          "solution": "In electrical synapses, pre- and postsynaptic membranes are connected directly by gap junctions (connexons), allowing direct bidirectional flow of ionic currents with zero synaptic delay. Chemical synapses require neurotransmitter synthesis, release, diffusion across the cleft, and receptor activation."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following structures connects the third ventricle of the diencephalon with the lateral ventricles of the cerebral hemispheres?",
+          "image": "",
+          "options": [
+            "Foramen of Monro (Interventricular foramen)",
+            "Cerebral aqueduct",
+            "Foramen magnum",
+            "Central canal"
+          ],
+          "correctOption": 0,
+          "solution": "The lateral ventricles (first and second ventricles) located in the cerebral hemispheres communicate with the third ventricle (in the diencephalon) via the foramen of Monro (interventricular foramen)."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Read the following statements:<br><b>Statement I:</b> The peripheral nervous system comprises all the nerves of the body associated with the CNS.<br><b>Statement II:</b> The somatic neural system relays impulses from the CNS to involuntary organs and smooth muscles of the body.<br><br>Choose the correct option:",
+          "image": "",
+          "options": [
+            "Statement I is correct but Statement II is incorrect",
+            "Both Statement I and Statement II are correct",
+            "Both Statement I and Statement II are incorrect",
+            "Statement I is incorrect but Statement II is correct"
+          ],
+          "correctOption": 0,
+          "solution": "Statement I is correct. Statement II is incorrect because the somatic neural system relays impulses from the CNS to voluntary skeletal muscles, whereas the autonomic neural system (ANS) transmits impulses from the CNS to the involuntary organs and smooth muscles."
+        }
+      ]
+    }
+  ]
+}
