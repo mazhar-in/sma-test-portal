@@ -1,0 +1,690 @@
+{
+  "testId": "neet-bio-27-biotechnology-principles-and-processes",
+  "title": "Biotechnology: Principles and Processes",
+  "syllabus": "Principles of Biotechnology - Genetic engineering (Recombinant DNA technology) and Maintenance of sterile/bioprocess engineering; Tools of Recombinant DNA Technology - Restriction enzymes (Exonucleases and Endonucleases), Cloning vectors (Plasmids, Bacteriophages, pBR322, Ti plasmid), Competent host (Transformation, Micro-injection, Biolistics/Gene gun); Processes of Recombinant DNA Technology - Isolation of genetic material (DNA), Cutting of DNA at specific locations, Agarose gel electrophoresis, Amplification of gene of interest using Polymerase Chain Reaction (PCR), Insertion of recombinant DNA into host, Obtaining the foreign gene product (Bioreactors - Stirred tank and Sparged), Downstream processing.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Biology",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The European Federation of Biotechnology (EFB) defines biotechnology as:",
+          "image": "",
+          "options": [
+            "The integration of natural science and organisms, cells, parts thereof, and molecular analogues for products and services",
+            "The commercial exploitation of genetically engineered microorganisms for human welfare exclusively",
+            "The industrial production of antibiotics and alcoholic beverages using wild-type microbes",
+            "Techniques used to manipulate the genetic makeup of crops using ionizing radiation"
+          ],
+          "correctOption": 0,
+          "solution": "The European Federation of Biotechnology (EFB) has given a definition that encompasses both traditional view and modern molecular biotechnology: 'The integration of natural science and organisms, cells, parts thereof, and molecular analogues for products and services'."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The construction of the first recombinant DNA molecule was accomplished in 1972 by Stanley Cohen and Herbert Boyer by linking an antibiotic-resistance gene with a native plasmid of which bacterium?",
+          "image": "",
+          "options": [
+            "<i>Salmonella typhimurium</i>",
+            "<i>Escherichia coli</i>",
+            "<i>Agrobacterium tumefaciens</i>",
+            "<i>Bacillus thuringiensis</i>"
+          ],
+          "correctOption": 0,
+          "solution": "Stanley Cohen and Herbert Boyer accomplished the construction of the first recombinant DNA molecule in 1972 by isolating the antibiotic-resistance gene from a plasmid of <i>Salmonella typhimurium</i> and linking it to a plasmid vector."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The first isolated restriction endonuclease whose functioning depended on a specific DNA nucleotide sequence was:",
+          "image": "",
+          "options": [
+            "<i>Hind</i> II",
+            "<i>Eco</i> R I",
+            "<i>Bam</i> H I",
+            "<i>Sal</i> I"
+          ],
+          "correctOption": 0,
+          "solution": "The first restriction endonuclease isolated and characterized was <i>Hind</i> II (isolated from <i>Haemophilus influenzae</i> Rd), which cuts DNA molecules at a specific six-base-pair recognition sequence."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the nomenclature of restriction enzyme <i>Eco</i> R I, the letter 'R' and Roman numeral 'I' designate which of the following respectively?",
+          "image": "",
+          "options": [
+            "The name of the bacterial strain (RY 13) and the order in which the enzyme was isolated from that strain",
+            "The genus name and the number of restriction cutting sites",
+            "The species name and the year of discovery",
+            "The resistance gene locus and the type of endonuclease"
+          ],
+          "correctOption": 0,
+          "solution": "In <i>Eco</i> R I: 'E' comes from the genus <i>Escherichia</i>, 'co' from the species <i>coli</i>, 'R' is derived from the specific strain <i>RY 13</i>, and Roman numeral 'I' indicates the order in which the enzyme was isolated from that strain."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Restriction endonucleases recognize specific palindromic nucleotide sequences in DNA. The palindromic recognition sequence cleaved by the enzyme <i>Eco</i> R I is:",
+          "image": "",
+          "options": [
+            "$5'\\text{-GAATTC-}3' \\\\ 3'\\text{-CTTAAG-}5'$",
+            "$5'\\text{-AAGCTT-}3' \\\\ 3'\\text{-TTCGAA-}5'$",
+            "$5'\\text{-GGATCC-}3' \\\\ 3'\\text{-CCTAGG-}5'$",
+            "$5'\\text{-GTCGAC-}3' \\\\ 3'\\text{-CAGCTG-}5'$"
+          ],
+          "correctOption": 0,
+          "solution": "<i>Eco</i> R I recognizes the six-base-pair palindromic sequence $5'\\text{-GAATTC-}3' / 3'\\text{-CTTAAG-}5'$ and cuts the two strands between G and A, leaving single-stranded overhanging 'sticky ends'."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Restriction enzymes cut the DNA strands a little away from the centre of the palindrome sites between the same two bases on the opposite strands, leaving single-stranded overhangs called:",
+          "image": "",
+          "options": [
+            "Sticky ends",
+            "Blunt ends",
+            "Flush ends",
+            "Replication forks"
+          ],
+          "correctOption": 0,
+          "solution": "Restriction enzymes cut the strands a little away from the centre of the palindrome sites between the same two bases on both strands. This leaves single-stranded overhanging portions at the ends called 'sticky ends', which facilitate hydrogen bonding with complementary sequences."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During agarose gel electrophoresis, DNA fragments separate according to their size because:",
+          "image": "",
+          "options": [
+            "Negatively charged DNA fragments move towards the anode (+ve pole) through the sieving effect of the agarose gel matrix",
+            "Positively charged DNA fragments move towards the cathode (-ve pole)",
+            "Neutral DNA fragments diffuse under gravity alone",
+            "Large fragments migrate faster than smaller fragments"
+          ],
+          "correctOption": 0,
+          "solution": "DNA fragments are negatively charged due to phosphate backbones and migrate towards the positive anode under an electric field. The agarose matrix exerts a molecular sieving effect, allowing smaller fragments to travel farther than larger ones."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Separated DNA bands on an agarose gel can be visualized only after staining with ________ followed by exposure to ________:",
+          "image": "",
+          "options": [
+            "Ethidium bromide (EtBr), Ultraviolet (UV) light",
+            "Methylene blue, Visible light",
+            "Acetocarmine, Infrared light",
+            "Safranin, Fluorescent lamp"
+          ],
+          "correctOption": 0,
+          "solution": "Separated DNA fragments can be visualized only after staining with the intercalating dye Ethidium bromide (EtBr) followed by exposure to UV radiation, appearing as bright orange-colored bands."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The extraction and cutting out of separated DNA bands from the agarose gel piece followed by purification is termed:",
+          "image": "",
+          "options": [
+            "Elution",
+            "Blotting",
+            "Transformation",
+            "Sparging"
+          ],
+          "correctOption": 0,
+          "solution": "The separated band of DNA is cut out from the agarose gel slice and the DNA is extracted from the gel piece. This procedure is known as elution."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the essential features of a Cloning Vector:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Vector Feature)</th><th>List-II (Functional Significance)</th></tr></thead><tbody><tr><td>(A) Origin of replication (<i>ori</i>)</td><td>(I) Codes for proteins involved in the replication of the plasmid</td></tr><tr><td>(B) Selectable marker</td><td>(II) Sequence from where replication starts; controls copy number of linked DNA</td></tr><tr><td>(C) Cloning / Recognition site</td><td>(III) Identifies and eliminates non-transformants; selectively permits transformant growth</td></tr><tr><td>(D) <i>rop</i> gene</td><td>(IV) Unique site where foreign DNA is ligated using restriction enzyme</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(III), (C)-(IV), (D)-(I)",
+            "(A)-(I), (B)-(III), (C)-(IV), (D)-(II)",
+            "(A)-(II), (B)-(IV), (C)-(III), (D)-(I)",
+            "(A)-(III), (B)-(II), (C)-(IV), (D)-(I)"
+          ],
+          "correctOption": 0,
+          "solution": "Origin of replication (<i>ori</i>) initiates replication and controls copy number; Selectable markers select transformants (e.g., $amp^R, tet^R$); Cloning site provides a unique restriction site for ligation; <i>rop</i> codes for proteins involved in plasmid replication."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the cloning vector pBR322, the unique recognition site for restriction enzyme <i>Bam</i> H I is located within the coding sequence of which antibiotic-resistance gene?",
+          "image": "",
+          "options": [
+            "Tetracycline-resistance gene ($tet^R$)",
+            "Ampicillin-resistance gene ($amp^R$)",
+            "Kanamycin-resistance gene ($kan^R$)",
+            "Chloramphenicol-resistance gene ($cm^R$)"
+          ],
+          "correctOption": 0,
+          "solution": "In plasmid pBR322, the <i>Bam</i> H I and <i>Sal</i> I recognition sites are located within the tetracycline-resistance ($tet^R$) gene, while <i>Pst</i> I and <i>Pvu</i> I sites are situated within the ampicillin-resistance ($amp^R$) gene."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If a foreign gene of interest is ligated at the <i>Bam</i> H I site of plasmid pBR322, the resulting recombinant plasmid will impart to host <i>E. coli</i> cells:",
+          "image": "",
+          "options": [
+            "Resistance to Ampicillin, but sensitivity to Tetracycline (insertional inactivation)",
+            "Resistance to Tetracycline, but sensitivity to Ampicillin",
+            "Resistance to both Ampicillin and Tetracycline",
+            "Sensitivity to both Ampicillin and Tetracycline"
+          ],
+          "correctOption": 0,
+          "solution": "Ligating foreign DNA into the <i>Bam</i> H I site disrupts the $tet^R$ gene (insertional inactivation). Hence, the recombinant will be resistant to ampicillin ($amp^R$) but will lose its resistance to tetracycline ($tet^S$)."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In recombinant selection using chromogenic substrates, recombinant colonies appear WHITE while non-recombinant colonies appear BLUE because:",
+          "image": "",
+          "options": [
+            "Insertion of foreign DNA into the $\\beta$-galactosidase gene ($lacZ$) inactivates the enzyme (insertional inactivation), preventing blue colour formation",
+            "The recombinant bacteria produce excessive $\\beta$-galactosidase",
+            "Non-recombinants lack the $\\beta$-galactosidase gene entirely",
+            "The chromogenic substrate X-gal selectively kills non-recombinant bacteria"
+          ],
+          "correctOption": 0,
+          "solution": "Insertional inactivation of the $\\beta$-galactosidase gene ($lacZ$) by foreign DNA insertion prevents the synthesis of functional $\\beta$-galactosidase. In the presence of a chromogenic substrate (X-gal), recombinants form white colonies, while non-recombinants with an intact $lacZ$ gene produce blue colonies."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following soil bacteria is widely utilized as a natural genetic engineer for delivering T-DNA into plant cells using its modified Ti-plasmid?",
+          "image": "",
+          "options": [
+            "<i>Agrobacterium tumefaciens</i>",
+            "<i>Bacillus thuringiensis</i>",
+            "<i>Thermus aquaticus</i>",
+            "<i>Rhizobium leguminosarum</i>"
+          ],
+          "correctOption": 0,
+          "solution": "<i>Agrobacterium tumefaciens</i>, a pathogen of several dicot plants, transfers a piece of DNA (T-DNA) via its tumor-inducing (Ti) plasmid. Disarmed Ti-plasmids are modified into effective cloning vectors for plants."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which vectors are commonly disarmed and utilized for transferring beneficial foreign genes into animal cells?",
+          "image": "",
+          "options": [
+            "Retroviruses",
+            "Bacteriophage lambda",
+            "Ti plasmid",
+            "pBR322"
+          ],
+          "correctOption": 0,
+          "solution": "Retroviruses in animals have the ability to transform normal cells into cancerous cells. Disarmed retroviruses are now used as vectors to deliver desirable genes into mammalian/animal host cells."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Bacterial cells are made 'competent' to take up hydrophilic foreign plasmid DNA by treating them with a specific concentration of a divalent cation, such as:",
+          "image": "",
+          "options": [
+            "Calcium ($\\text{Ca}^{2+}$)",
+            "Sodium ($\\text{Na}^+$)",
+            "Potassium ($\\text{K}^+$)",
+            "Iron ($\\text{Fe}^{3+}$)"
+          ],
+          "correctOption": 0,
+          "solution": "Since DNA is a hydrophilic molecule, it cannot pass through cell membranes. Treating bacterial cells with a specific concentration of a divalent cation, such as calcium ($\\text{Ca}^{2+}$), increases the efficiency with which DNA enters the bacterium through pores in its cell wall."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the chemical heat-shock method of bacterial transformation, the cells are subjected to which temperature sequence?",
+          "image": "",
+          "options": [
+            "Incubation on ice $\\to$ Heat shock at $42^\\circ\\text{C} \\to$ Return to ice",
+            "Heat shock at $100^\\circ\\text{C} \\to$ Incubation on ice",
+            "Incubation at $37^\\circ\\text{C} \\to$ Freezing at $-20^\\circ\\text{C}$",
+            "Continuous boiling at $72^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "Recombinant DNA can be forced into competent cells by incubating the cells with recombinant DNA on ice, followed by placing them briefly at $42^\\circ\\text{C}$ (heat shock), and then putting them back on ice, allowing the bacterium to take up the plasmid."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding vectorless (direct) gene transfer methods:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Method)</th><th>List-II (Target Host & Technique)</th></tr></thead><tbody><tr><td>(A) Micro-injection</td><td>(I) Plant cells bombarded with high-velocity micro-particles of gold or tungsten coated with DNA</td></tr><tr><td>(B) Biolistics / Gene gun</td><td>(II) Direct injection of recombinant DNA into the nucleus of an animal egg or embryonic cell</td></tr><tr><td>(C) Disarmed pathogen vectors</td><td>(III) Cells infected with non-pathogenic modified viruses or <i>Agrobacterium</i></td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(I), (C)-(III)",
+            "(A)-(I), (B)-(II), (C)-(III)",
+            "(A)-(II), (B)-(III), (C)-(I)",
+            "(A)-(III), (B)-(I), (C)-(II)"
+          ],
+          "correctOption": 0,
+          "solution": "Micro-injection directly introduces DNA into the nucleus of animal cells using glass micropipettes; Biolistics/gene gun bombards plant cells with DNA-coated gold/tungsten microprojectiles; Disarmed pathogens deliver genes via natural infection."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "To isolate pure genomic DNA from bacterial, plant, and fungal cells, their respective cell walls are enzymatically digested using which enzymes respectively?",
+          "image": "",
+          "options": [
+            "Lysozyme (bacteria), Cellulase (plants), and Chitinase (fungi)",
+            "Cellulase (bacteria), Chitinase (plants), and Lysozyme (fungi)",
+            "Chitinase (bacteria), Lysozyme (plants), and Cellulase (fungi)",
+            "Protease (bacteria), Lipase (plants), and Pectinase (fungi)"
+          ],
+          "correctOption": 0,
+          "solution": "Cell walls are degraded enzymatically: Lysozyme digests bacterial peptidoglycan walls; Cellulase digests plant cellulose walls; Chitinase digests fungal chitin walls."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During the isolation of pure DNA from a cell lysate, RNA and proteins are removed by treating with ________ and ________ respectively:",
+          "image": "",
+          "options": [
+            "Ribonuclease (RNase), Protease",
+            "Protease, Ribonuclease",
+            "DNase, Lysozyme",
+            "Lipase, Cellulase"
+          ],
+          "correctOption": 0,
+          "solution": "RNA is removed by treatment with ribonuclease (RNase), whereas proteins are removed by treatment with proteases, ensuring purified DNA remains intact."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In DNA isolation protocols, pure DNA ultimately precipitates out as fine spoolable threads after the addition of:",
+          "image": "",
+          "options": [
+            "Chilled ethanol",
+            "Warm methanol",
+            "Concentrated sulfuric acid",
+            "Liquid nitrogen"
+          ],
+          "correctOption": 0,
+          "solution": "Purified DNA ultimately precipitates out after the addition of chilled ethanol. This can be seen as a collection of fine threads in the suspension and is removed by spooling."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Polymerase Chain Reaction (PCR) was developed by Kary Mullis (1983). It accomplishes in vitro:",
+          "image": "",
+          "options": [
+            "Amplification of a specific gene of interest into billions of copies",
+            "Digestion of DNA into restriction fragments",
+            "Splicing of introns from eukaryotic hnRNA",
+            "Ligation of plasmid vectors into host chromosomes"
+          ],
+          "correctOption": 0,
+          "solution": "PCR stands for Polymerase Chain Reaction. In this reaction, multiple copies of the gene (or DNA) of interest are synthesised in vitro using two sets of primers and the enzyme DNA polymerase."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the three sequential steps of a single PCR cycle and their operating temperatures:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (PCR Step)</th><th>List-II (Process & Temperature)</th></tr></thead><tbody><tr><td>(A) Denaturation</td><td>(I) Extension of primers by thermostable DNA polymerase ($\\sim 72^\\circ\\text{C}$)</td></tr><tr><td>(B) Annealing</td><td>(II) Separation of double-stranded DNA into single strands ($\\sim 94 - 96^\\circ\\text{C}$)</td></tr><tr><td>(C) Extension</td><td>(III) Binding of oligonucleotide primers to complementary templates ($\\sim 50 - 60^\\circ\\text{C}$)</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(III), (C)-(I)",
+            "(A)-(I), (B)-(II), (C)-(III)",
+            "(A)-(II), (B)-(I), (C)-(III)",
+            "(A)-(III), (B)-(I), (C)-(II)"
+          ],
+          "correctOption": 0,
+          "solution": "A single cycle of PCR involves: (1) Denaturation ($94-96^\\circ\\text{C}$) to separate dsDNA; (2) Annealing ($50-60^\\circ\\text{C}$) where synthetic primers pair with template strands; (3) Extension ($72^\\circ\\text{C}$) where Taq polymerase synthesizes new DNA strands."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The thermostable DNA polymerase (<i>Taq</i> polymerase) used in PCR is isolated from which thermophilic bacterium?",
+          "image": "",
+          "options": [
+            "<i>Thermus aquaticus</i>",
+            "<i>Bacillus thuringiensis</i>",
+            "<i>Streptomyces coelicolor</i>",
+            "<i>Methanobacterium</i>"
+          ],
+          "correctOption": 0,
+          "solution": "<i>Taq</i> polymerase is a heat-stable DNA polymerase isolated from the thermophilic bacterium <i>Thermus aquaticus</i>, which remains active during high-temperature denaturation steps ($94-96^\\circ\\text{C}$)."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If 30 repeated amplification cycles are completed in a PCR machine, how many copies of the target DNA segment are produced approximately?",
+          "image": "",
+          "options": [
+            "Approximately 1 billion copies ($2^{30} \\approx 10^9$)",
+            "30,000 copies",
+            "300 copies",
+            "1 million copies"
+          ],
+          "correctOption": 0,
+          "solution": "If the process of replication of DNA is repeated many times, the segment of DNA can be amplified to approximately a billion times ($10^9$ copies), that is, $2^{30}$ copies made after 30 cycles."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A recombinant protein is defined as a protein that is produced by:",
+          "image": "",
+          "options": [
+            "Expressing a foreign coding gene in a heterologous host organism",
+            "Synthesizing amino acids non-enzymatically in a test tube",
+            "Purifying wild-type enzymes from native bacteria",
+            "Denaturing natural immunoglobulins with urea"
+          ],
+          "correctOption": 0,
+          "solution": "When a protein encoding foreign gene is expressed in a heterologous host (an organism other than its natural source), it is called a recombinant protein."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In continuous culture systems used for commercial recombinant protein production, cells are maintained in their physiologically most active phase, which is the:",
+          "image": "",
+          "options": [
+            "Logarithmic (exponential) phase",
+            "Lag phase",
+            "Stationary phase",
+            "Decline (death) phase"
+          ],
+          "correctOption": 0,
+          "solution": "In a continuous culture system, fresh nutrient medium is continuously added from one side while used medium is drained from the other to maintain cells in their physiologically most active log/exponential growth phase, producing higher biomass and product yields."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Bioreactors are vessels in which raw materials are biologically converted into specific products using microbial, plant, or animal cells. A standard stirred-tank bioreactor is typically equipped with:",
+          "image": "",
+          "options": [
+            "An agitator system, oxygen delivery system, foam control system, temperature/pH control systems, and sampling ports",
+            "A high-pressure autoclave chamber with zero oxygen access",
+            "Agarose gel columns and UV sensors",
+            "Electrodes for electroporation only"
+          ],
+          "correctOption": 0,
+          "solution": "A stirred-tank bioreactor is usually cylindrical with a curved base to facilitate mixing. It is equipped with an agitator system, an oxygen delivery system, a foam control system, temperature and pH control systems, and sampling ports for periodically withdrawing small volumes of culture."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a sparged stirred-tank bioreactor, sterile air bubbles are sparged through the liquid culture medium to:",
+          "image": "",
+          "options": [
+            "Dramatically increase the surface area available for oxygen transfer",
+            "Inactivate the foam control system",
+            "Cool down the motor impeller shaft",
+            "Precipitate the recombinant protein product"
+          ],
+          "correctOption": 0,
+          "solution": "In sparged stirred-tank bioreactors, sterile air is bubbled (sparged) through the broth, creating tiny bubbles that dramatically increase the surface area for oxygen transfer across the medium."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Downstream processing of a recombinant product involves all of the following steps EXCEPT:",
+          "image": "",
+          "options": [
+            "Amplification of gene of interest using PCR",
+            "Separation and purification of the biosynthesized product",
+            "Formulation with suitable preservatives",
+            "Strict quality control testing and clinical trials (for therapeutics)"
+          ],
+          "correctOption": 0,
+          "solution": "Downstream processing refers to the post-biosynthetic recovery stages, which include separation, purification, addition of preservatives, quality control testing, and clinical trials. PCR gene amplification is an upstream tool of genetic engineering."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following enzymes is used to join the sticky or blunt ends of two separate DNA fragments by catalyzing the formation of phosphodiester bonds?",
+          "image": "",
+          "options": [
+            "DNA Ligase",
+            "DNA Polymerase I",
+            "Exonuclease",
+            "Alkaline phosphatase"
+          ],
+          "correctOption": 0,
+          "solution": "DNA ligase (often called 'molecular glue') seals nicks in the phosphodiester backbone by linking the $3'-\\text{OH}$ group of one nucleotide to the $5'-\\text{phosphate}$ group of an adjacent nucleotide."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Exonucleases differ from Endonucleases because Exonucleases:",
+          "image": "",
+          "options": [
+            "Remove nucleotides sequentially from the free ends of the DNA molecule",
+            "Make cuts at specific palindromic positions within the DNA sequence",
+            "Synthesize complementary RNA strands",
+            "Ligate circular plasmids into linear chromosomes"
+          ],
+          "correctOption": 0,
+          "solution": "Exonucleases remove nucleotides from the terminal ends ($5'$ or $3'$) of the DNA, whereas endonucleases make cuts at specific internal positions within DNA."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Plasmids are considered suitable cloning vectors because they are:",
+          "image": "",
+          "options": [
+            "Autonomously replicating, extra-chromosomal, circular double-stranded DNA molecules",
+            "Linear single-stranded RNA molecules that code for ribosomes",
+            "Non-replicating segments of the main bacterial chromosome",
+            "Infectious protein capsids"
+          ],
+          "correctOption": 0,
+          "solution": "Plasmids are extrachromosomal, circular, double-stranded DNA molecules found in bacteria that replicate autonomously and independently of chromosomal DNA control."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Bacteriophages (viruses that infect bacteria) have an advantage over standard plasmids as cloning vectors because bacteriophages:",
+          "image": "",
+          "options": [
+            "Have very high copy numbers per cell and can accommodate larger foreign DNA fragments",
+            "Do not require a host bacterium for replication",
+            "Lack protein coats and contain single-stranded DNA only",
+            "Incorporate reverse transcriptase into plant chromosomes"
+          ],
+          "correctOption": 0,
+          "solution": "Bacteriophages because of their high number per cell, have very high copy numbers of their genome within the bacterial cells, and some can clone large DNA fragments more efficiently than small plasmids."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The natural function of restriction endonucleases in bacterial cells is to:",
+          "image": "",
+          "options": [
+            "Degrade and restrict foreign bacteriophage DNA, serving as a bacterial defense mechanism",
+            "Replicate the bacterial chromosomal genome",
+            "Translate mRNA into polypeptide chains",
+            "Form cross-links between cell wall peptidoglycans"
+          ],
+          "correctOption": 0,
+          "solution": "In nature, restriction enzymes function as a bacterial immune/defense mechanism that recognizes and cleaves invading foreign bacteriophage DNA, while host bacterial DNA is protected by methylation."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following is a common selectable marker used in cloning vectors for selecting transformants of <i>E. coli</i>?",
+          "image": "",
+          "options": [
+            "Genes encoding resistance to antibiotics like ampicillin, chloramphenicol, tetracycline, or kanamycin",
+            "Genes encoding ribosomal 16S RNA",
+            "Genes producing toxic endotoxins",
+            "Genes synthesizing flagellar proteins"
+          ],
+          "correctOption": 0,
+          "solution": "Normally, the genes encoding resistance to antibiotics such as ampicillin, chloramphenicol, tetracycline, or kanamycin are considered useful selectable markers for <i>E. coli</i>, as normal <i>E. coli</i> cells do not carry resistance against these antibiotics."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If a cloning vector has multiple recognition sites for a single restriction enzyme, what will be the complication during cloning?",
+          "image": "",
+          "options": [
+            "It will generate several fragments, which complicates gene cloning",
+            "It will prevent ligation completely",
+            "It will double the replication speed of the plasmid",
+            "It will convert the plasmid into linear RNA"
+          ],
+          "correctOption": 0,
+          "solution": "In order to link the alien DNA, the vector needs to have very few, preferably single, recognition sites for commonly used restriction enzymes. Presence of more than one recognition site within the vector will generate several fragments, which will complicate the gene cloning process."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The tumor-inducing (Ti) plasmid of <i>Agrobacterium tumefaciens</i> induces which abnormal growth in infected dicotyledonous plants?",
+          "image": "",
+          "options": [
+            "Crown gall tumors",
+            "Root galls caused by nematodes",
+            "Mosaic leaf variegation",
+            "Witches' broom disease"
+          ],
+          "correctOption": 0,
+          "solution": "<i>Agrobacterium tumefaciens</i> transfers its T-DNA from the Ti plasmid into dicot plant cells, directing the plant cells to proliferate into unorganized tumorous tissue called crown galls."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Read the following statements regarding Gel Electrophoresis:<br><b>Statement I:</b> DNA fragments move towards the anode because they are negatively charged molecules.<br><b>Statement II:</b> Smaller DNA fragments resolve closer to the wells, while larger fragments move farthest towards the positive pole.<br><br>Choose the correct option:",
+          "image": "",
+          "options": [
+            "Statement I is correct but Statement II is incorrect",
+            "Both Statement I and Statement II are correct",
+            "Both Statement I and Statement II are incorrect",
+            "Statement I is incorrect but Statement II is correct"
+          ],
+          "correctOption": 0,
+          "solution": "Statement I is correct because DNA is negatively charged and migrates to the anode. Statement II is incorrect because smaller DNA fragments experience less resistance and move farthest away from the wells, while larger fragments remain closer to the wells."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "What is the role of oligonucleotide primers in Polymerase Chain Reaction (PCR)?",
+          "image": "",
+          "options": [
+            "Provide free $3'-\\text{OH}$ groups for DNA polymerase to initiate chain extension complementary to the template strands",
+            "Denature double-stranded DNA at low temperature",
+            "Ligate Okazaki fragments on the lagging strand",
+            "Inactivate the thermostable enzyme at the end of the cycle"
+          ],
+          "correctOption": 0,
+          "solution": "Primers are small chemically synthesized oligonucleotides of about 10–20 nucleotides that are complementary to the regions of DNA and provide a free $3'-\\text{OH}$ end for DNA polymerase to begin nucleotide addition."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a continuous culture bioreactor, why is the yield of the desired recombinant protein higher than in a closed batch system?",
+          "image": "",
+          "options": [
+            "Cells are continuously maintained in their exponential/log growth phase with fresh nutrient supply and removal of toxic metabolites",
+            "Bioreactors operate under zero sterile conditions",
+            "The cells are allowed to reach nutrient depletion and stationary phase quickly",
+            "Downstream processing is performed inside the bioreactor simultaneously"
+          ],
+          "correctOption": 0,
+          "solution": "Continuous culture systems maintain optimal physiological growth conditions by continuously replenishing fresh medium and eliminating waste, preventing nutrient exhaustion and keeping cells actively dividing in log phase."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Natural genetic transformation cannot occur easily in plant cells because of the presence of a rigid cellulose cell wall. Which physical method bombards plant cells with micro-projectiles of gold or tungsten to overcome this barrier?",
+          "image": "",
+          "options": [
+            "Biolistics (Gene gun)",
+            "Micro-injection",
+            "Heat shock method",
+            "Electroporation without enzymes"
+          ],
+          "correctOption": 0,
+          "solution": "In biolistics or gene gun method, plant cells are bombarded with high-velocity micro-projectiles of gold or tungsten coated with foreign DNA to achieve direct nuclear penetration."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following is an example of an autonomous autonomously replicating extrachromosomal element derived from yeast used to clone extremely large segments of eukaryotic DNA?",
+          "image": "",
+          "options": [
+            "Yeast Artificial Chromosome (YAC)",
+            "pBR322",
+            "Ti plasmid",
+            "Bacteriophage M13"
+          ],
+          "correctOption": 0,
+          "solution": "Yeast Artificial Chromosomes (YACs) and Bacterial Artificial Chromosomes (BACs) are high-capacity cloning vectors capable of propagating very large segments (hundreds of kilobases) of foreign DNA."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following statements regarding the enzyme DNA Ligase is INCORRECT?",
+          "image": "",
+          "options": [
+            "It breaks phosphodiester bonds during restriction digestion.",
+            "It forms covalent phosphodiester bonds between adjacent nucleotides.",
+            "It requires ATP or $\\text{NAD}^+$ as an energy cofactor.",
+            "It joins sticky or blunt ends produced by restriction endonucleases."
+          ],
+          "correctOption": 0,
+          "solution": "DNA ligase does NOT break phosphodiester bonds; it seals and forms phosphodiester bonds between adjacent $3'-\\text{OH}$ and $5'-\\text{phosphate}$ ends of DNA fragments."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Read the following statements:<br><b>Statement I:</b> Maintenance of sterile (microbial contamination-free) ambience in chemical engineering processes enables growth of only the desired microbe/eukaryotic cell in large quantities.<br><b>Statement II:</b> A simple stirred-tank bioreactor has a curved base and an impeller to facilitate even mixing and oxygen availability throughout the reactor.<br><br>Choose the correct option:",
+          "image": "",
+          "options": [
+            "Both Statement I and Statement II are correct",
+            "Both Statement I and Statement II are incorrect",
+            "Statement I is correct but Statement II is incorrect",
+            "Statement I is incorrect but Statement II is correct"
+          ],
+          "correctOption": 0,
+          "solution": "Both statements are correct. Maintenance of sterile conditions is one of the two core principles of modern biotechnology (along with genetic engineering), and a curved-base stirred tank ensures homogeneous mixing, nutrient dispersion, and continuous aeration."
+        }
+      ]
+    }
+  ]
+}
