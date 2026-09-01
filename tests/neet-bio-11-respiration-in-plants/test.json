@@ -1,0 +1,690 @@
+{
+  "testId": "neet-bio-11-respiration-in-plants",
+  "title": "Respiration in Plants and Cellular Respiration",
+  "syllabus": "Exchange of gases; Cellular respiration - glycolysis, fermentation (anaerobic), TCA cycle (Krebs cycle) and electron transport system (aerobic); Energy relations - Number of ATP molecules generated; Amphibolic pathways; Respiratory quotient.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Biology",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The scheme of glycolysis was given by Gustav Embden, Otto Meyerhof, and J. Parnas (EMP pathway). In which cellular compartment does glycolysis take place in all living organisms?",
+          "image": "",
+          "options": [
+            "Cytoplasm",
+            "Mitochondrial matrix",
+            "Inner mitochondrial membrane",
+            "Peroxisome"
+          ],
+          "correctOption": 0,
+          "solution": "Glycolysis occurs in the cytoplasm of the cell and is present in all living organisms. In this process, glucose undergoes partial oxidation to form two molecules of pyruvic acid."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the respiratory quotients (RQ) of different substrates:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Respiratory Substrate)</th><th>List-II (Respiratory Quotient Value)</th></tr></thead><tbody><tr><td>(A) Carbohydrates (e.g., Glucose)</td><td>(I) 0.7</td></tr><tr><td>(B) Fats / Fatty acids (e.g., Tripalmitin)</td><td>(II) 0.9</td></tr><tr><td>(C) Proteins</td><td>(III) 1.0</td></tr><tr><td>(D) Organic acids (e.g., Malic acid)</td><td>(IV) More than 1.0 (approx. 1.33)</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(III), (B)-(I), (C)-(II), (D)-(IV)",
+            "(A)-(I), (B)-(III), (C)-(II), (D)-(IV)",
+            "(A)-(III), (B)-(II), (C)-(I), (D)-(IV)",
+            "(A)-(IV), (B)-(I), (C)-(II), (D)-(III)"
+          ],
+          "correctOption": 0,
+          "solution": "RQ is the ratio of volume of $\\text{CO}_2$ evolved to volume of $\\text{O}_2$ consumed. For carbohydrates $\\text{RQ} = 1.0$; for fats (tripalmitin) $\\text{RQ} = 0.7$; for proteins $\\text{RQ} \\approx 0.9$; for organic acids like malic acid $\\text{RQ} > 1.0$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following enzymes catalyzes the irreversible first committed regulatory step of glycolysis converting Fructose-6-phosphate to Fructose-1,6-bisphosphate?",
+          "image": "",
+          "options": [
+            "Phosphofructokinase",
+            "Hexokinase",
+            "Aldolase",
+            "Pyruvate kinase"
+          ],
+          "correctOption": 0,
+          "solution": "Phosphofructokinase (PFK) catalyzes the phosphorylation of fructose-6-phosphate to fructose-1,6-bisphosphate using one molecule of ATP. This is the primary pacemaker (regulatory/committed) step of glycolysis."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During the conversion of Glyceraldehyde-3-phosphate (PGAL) to 1,3-bisphosphoglyceric acid (BPGA) in glycolysis, which of the following events occurs?",
+          "image": "",
+          "options": [
+            "Oxidation accompanied by reduction of $\\text{NAD}^+$ to $\\text{NADH} + \\text{H}^+$",
+            "Hydrolysis accompanied by ATP synthesis",
+            "Decarboxylation with the release of $\\text{CO}_2$",
+            "Direct substrate-level phosphorylation of ADP"
+          ],
+          "correctOption": 0,
+          "solution": "In glycolysis, two redox equivalents are removed (in the form of two hydrogen atoms) from PGAL and transferred to a molecule of $\\text{NAD}^+$, forming $\\text{NADH} + \\text{H}^+$ catalyzed by glyceraldehyde-3-phosphate dehydrogenase."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the Complexes of the Mitochondrial Electron Transport System (ETS):<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (ETS Complex)</th><th>List-II (Name / Prosthetic Component)</th></tr></thead><tbody><tr><td>(A) Complex I</td><td>(I) Succinate dehydrogenase ($\\text{FADH}_2$ dehydrogenase)</td></tr><tr><td>(B) Complex II</td><td>(II) $\\text{NADH}$ dehydrogenase (FMN and Fe-S)</td></tr><tr><td>(C) Complex III</td><td>(III) Cytochrome $c$ oxidase (Cyt $a, a_3$ and two Cu centres)</td></tr><tr><td>(D) Complex IV</td><td>(IV) Cytochrome $bc_1$ complex</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+            "(A)-(I), (B)-(II), (C)-(IV), (D)-(III)",
+            "(A)-(II), (B)-(IV), (C)-(I), (D)-(III)",
+            "(A)-(III), (B)-(I), (C)-(IV), (D)-(II)"
+          ],
+          "correctOption": 0,
+          "solution": "Complex I: $\\text{NADH}$ dehydrogenase; Complex II: Succinate dehydrogenase / $\\text{FADH}_2$ dehydrogenase; Complex III: Cytochrome $bc_1$ complex; Complex IV: Cytochrome $c$ oxidase (contains cytochromes $a$ and $a_3$, and two copper centres); Complex V: ATP synthase."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During aerobic respiration, how many molecules of $\\text{CO}_2$ are released per molecule of glucose oxidized through the link reaction and TCA cycle?",
+          "image": "",
+          "options": [
+            "6 (2 in link reaction + 4 in TCA cycle)",
+            "4 (all in TCA cycle)",
+            "2 (all in link reaction)",
+            "8 (4 in link reaction + 4 in TCA cycle)"
+          ],
+          "correctOption": 0,
+          "solution": "One molecule of glucose yields 2 molecules of pyruvic acid. During the link reaction (oxidative decarboxylation), $2\\text{ CO}_2$ are released. The two acetyl-CoA molecules enter the Krebs cycle, where each cycle releases $2\\text{ CO}_2$ ($4\\text{ CO}_2$ total). Total $\\text{CO}_2 = 2 + 4 = 6$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The mobile electron carrier located on the outer surface of the inner mitochondrial membrane that transfers electrons between Complex III and Complex IV is:",
+          "image": "",
+          "options": [
+            "Cytochrome $c$",
+            "Ubiquinone (Coenzyme Q)",
+            "Plastocyanin",
+            "Ferredoxin"
+          ],
+          "correctOption": 0,
+          "solution": "Cytochrome $c$ is a small, water-soluble, mobile protein attached to the outer surface of the inner mitochondrial membrane that acts as a mobile carrier for transferring electrons from Complex III (Cyt $bc_1$) to Complex IV (Cyt $c$ oxidase)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Read the following statements regarding Fermentation:<br><b>Statement I:</b> In both alcoholic and lactic acid fermentation, less than 7% of the energy in glucose is released.<br><b>Statement II:</b> Yeasts poison themselves to death when the concentration of alcohol reaches about 13%.<br><br>Choose the correct option:",
+          "image": "",
+          "options": [
+            "Both Statement I and Statement II are correct",
+            "Both Statement I and Statement II are incorrect",
+            "Statement I is correct but Statement II is incorrect",
+            "Statement I is incorrect but Statement II is correct"
+          ],
+          "correctOption": 0,
+          "solution": "Both statements are correct according to NCERT. Less than 7 per cent of the total energy in glucose is released in anaerobic fermentation, and yeast cells undergo auto-intoxication (death) when alcohol levels reach approximately 13 percent."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Substrate-level phosphorylation in the tricarboxylic acid (TCA) cycle takes place during the conversion of:",
+          "image": "",
+          "options": [
+            "Succinyl-CoA to Succinic acid",
+            "$\\alpha$-Ketoglutaric acid to Succinyl-CoA",
+            "Succinic acid to Fumaric acid",
+            "Citric acid to Isocitric acid"
+          ],
+          "correctOption": 0,
+          "solution": "During the conversion of succinyl-CoA to succinic acid, a molecule of GTP is synthesized by substrate-level phosphorylation. In a coupled reaction, GTP transfers its terminal phosphate to ADP, generating ATP."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the enzymes of the Krebs cycle and their localized sites/cofactors:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Enzyme)</th><th>List-II (Site / Reaction Feature)</th></tr></thead><tbody><tr><td>(A) Citrate synthase</td><td>(I) Bound to the inner mitochondrial membrane</td></tr><tr><td>(B) Succinate dehydrogenase</td><td>(II) Catalyzes reduction of $\\text{NAD}^+$ and release of first $\\text{CO}_2$</td></tr><tr><td>(C) Isocitrate dehydrogenase</td><td>(III) Condensation of acetyl group with oxaloacetic acid</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(III), (B)-(I), (C)-(II)",
+            "(A)-(I), (B)-(III), (C)-(II)",
+            "(A)-(III), (B)-(II), (C)-(I)",
+            "(A)-(II), (B)-(I), (C)-(III)"
+          ],
+          "correctOption": 0,
+          "solution": "Citrate synthase catalyzes the condensation of acetyl-CoA with OAA; Succinate dehydrogenase is the only TCA cycle enzyme bound to the inner mitochondrial membrane (Complex II); Isocitrate dehydrogenase carries out oxidative decarboxylation forming $\\alpha$-ketoglutarate."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The respiratory pathway is referred to as an 'amphibolic pathway' rather than solely a catabolic pathway because:",
+          "image": "",
+          "options": [
+            "It involves both catabolism of substrates for ATP generation and anabolism of precursors for biomolecule synthesis",
+            "It operates under both aerobic and anaerobic conditions simultaneously",
+            "It functions in both plants and animals",
+            "It utilizes carbohydrates as well as mineral salts"
+          ],
+          "correctOption": 0,
+          "solution": "Respiratory intermediates are drawn off for the biosynthesis of other compounds (e.g., acetyl-CoA for fatty acids, $\\alpha$-ketoglutarate/OAA for amino acids, succinyl-CoA for chlorophyll/cytochromes) while breakdown occurs simultaneously. Thus, respiration is amphibolic (both catabolic and anabolic)."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "What is the net gain of ATP molecules directly synthesized via substrate-level phosphorylation during the complete oxidation of ONE molecule of glucose in aerobic respiration?",
+          "image": "",
+          "options": [
+            "4 ATP (2 in glycolysis + 2 in TCA cycle)",
+            "2 ATP (glycolysis only)",
+            "36 ATP",
+            "6 ATP"
+          ],
+          "correctOption": 0,
+          "solution": "Substrate-level phosphorylation yields: (1) Glycolysis: 4 produced $- 2$ invested $= 2\\text{ ATP}$; (2) TCA Cycle: $2\\text{ GTP} \\equiv 2\\text{ ATP}$ per glucose. Net direct substrate-level ATP $= 2 + 2 = 4\\text{ ATP}$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During oxidative phosphorylation in the electron transport chain, how many ATP molecules are produced from the oxidation of ONE molecule of $\\text{NADH} + \\text{H}^+$ and ONE molecule of $\\text{FADH}_2$ respectively?",
+          "image": "",
+          "options": [
+            "3 ATP and 2 ATP",
+            "2 ATP and 3 ATP",
+            "1 ATP and 2 ATP",
+            "3 ATP and 3 ATP"
+          ],
+          "correctOption": 0,
+          "solution": "According to standard NCERT energetics, oxidation of 1 molecule of $\\text{NADH}$ gives rise to 3 molecules of ATP, while that of 1 molecule of $\\text{FADH}_2$ produces 2 molecules of ATP."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the steps of Glycolysis and their corresponding ATP transactions per glucose molecule:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Glycolytic Step)</th><th>List-II (ATP / NADH Event)</th></tr></thead><tbody><tr><td>(A) Glucose $\\to$ Glucose-6-phosphate</td><td>(I) $1\\text{ ATP}$ consumed</td></tr><tr><td>(B) Fructose-6-phosphate $\\to$ Fructose-1,6-bisphosphate</td><td>(II) $1\\text{ ATP}$ consumed</td></tr><tr><td>(C) $2\\times(1,3\\text{-BPGA} \\to 3\\text{-PGA})$</td><td>(III) $2\\text{ ATP}$ synthesized</td></tr><tr><td>(D) $2\\times(\\text{PEP} \\to \\text{Pyruvate})$</td><td>(IV) $2\\text{ ATP}$ synthesized</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)",
+            "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+            "(A)-(I), (B)-(III), (C)-(II), (D)-(IV)",
+            "(A)-(IV), (B)-(III), (C)-(II), (D)-(I)"
+          ],
+          "correctOption": 0,
+          "solution": "In glycolysis, ATP is consumed at two steps: (1) Glucose $\\to$ G-6-P, and (2) F-6-P $\\to$ F-1,6-BP. ATP is generated at two steps: (3) 1,3-BPGA $\\to$ 3-PGA ($2\\text{ ATP}$), and (4) PEP $\\to$ Pyruvate ($2\\text{ ATP}$). Total produced $= 4\\text{ ATP}$, Net gain $= 2\\text{ ATP}$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The final electron acceptor in the mitochondrial electron transport system during aerobic respiration is:",
+          "image": "",
+          "options": [
+            "Molecular Oxygen ($\\text{O}_2$)",
+            "Cytochrome $a_3$",
+            "$\\text{NAD}^+$",
+            "Ubiquinone"
+          ],
+          "correctOption": 0,
+          "solution": "Oxygen acts as the final terminal acceptor of electrons in the mitochondrial ETS. It combines with electrons from Complex IV (cytochrome $a_3$) and protons to form metabolic water: $\\frac{1}{2}\\text{O}_2 + 2\\text{H}^+ + 2e^- \\to \\text{H}_2\\text{O}$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the oxidative decarboxylation of pyruvic acid to acetyl-CoA (Link reaction), which multi-enzyme complex and coenzymes are involved?",
+          "image": "",
+          "options": [
+            "Pyruvate dehydrogenase, requiring $\\text{Mg}^{2+}$, $\\text{NAD}^+$, and Coenzyme A",
+            "Pyruvate kinase requiring ATP",
+            "Lactate dehydrogenase requiring $\\text{FAD}$",
+            "Pyruvate decarboxylase requiring Biotin only"
+          ],
+          "correctOption": 0,
+          "solution": "Pyruvate enters the mitochondrial matrix and undergoes oxidative decarboxylation catalyzed by the pyruvate dehydrogenase complex: $$\\text{Pyruvate} + \\text{CoA} + \\text{NAD}^+ \\xrightarrow{\\text{Mg}^{2+}, \\text{Pyruvate dehydrogenase}} \\text{Acetyl-CoA} + \\text{CO}_2 + \\text{NADH} + \\text{H}^+$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Lactic acid fermentation occurs in certain bacteria and in animal skeletal muscles during strenuous exercise. The enzyme responsible is:",
+          "image": "",
+          "options": [
+            "Lactate dehydrogenase",
+            "Pyruvate decarboxylase",
+            "Alcohol dehydrogenase",
+            "Succinate dehydrogenase"
+          ],
+          "correctOption": 0,
+          "solution": "In lactic acid fermentation, pyruvic acid is reduced to lactic acid by the enzyme lactate dehydrogenase with the oxidation of $\\text{NADH} + \\text{H}^+$ to $\\text{NAD}^+$, without any release of $\\text{CO}_2$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In alcoholic fermentation by yeast, the conversion of pyruvic acid to ethanol and $\\text{CO}_2$ is catalyzed sequentially by which two enzymes?",
+          "image": "",
+          "options": [
+            "Pyruvate decarboxylase and Alcohol dehydrogenase",
+            "Hexokinase and Aldolase",
+            "Lactate dehydrogenase and Enolase",
+            "Citrate synthase and Aconitase"
+          ],
+          "correctOption": 0,
+          "solution": "Pyruvic acid is first decarboxylated to acetaldehyde by the enzyme pyruvate decarboxylase (releasing $\\text{CO}_2$), and acetaldehyde is then reduced to ethanol by alcohol dehydrogenase utilizing $\\text{NADH} + \\text{H}^+$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For the passage of every $2\\text{H}^+$ (protons) through the $F_0$ channel of ATP synthase (Complex V) from the intermembrane space back into the matrix:",
+          "image": "",
+          "options": [
+            "1 molecule of ATP is synthesized from ADP and Pi",
+            "2 molecules of ATP are synthesized",
+            "3 molecules of ATP are synthesized",
+            "1 molecule of $\\text{NADH}$ is oxidized"
+          ],
+          "correctOption": 0,
+          "solution": "According to NCERT, for each ATP produced, $2\\text{H}^+$ pass through $F_0$ from the intermembrane space to the matrix down the electrochemical proton gradient."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When fats are utilized as respiratory substrates, they are first broken down into glycerol and fatty acids. Fatty acids enter the respiratory pathway after being converted to:",
+          "image": "",
+          "options": [
+            "Acetyl-CoA (via $\\beta$-oxidation)",
+            "Dihydroxyacetone phosphate (DHAP)",
+            "Pyruvate directly",
+            "$\\alpha$-Ketoglutaric acid"
+          ],
+          "correctOption": 0,
+          "solution": "Fats are cleaved into glycerol and fatty acids. Glycerol enters glycolysis after conversion to PGAL/DHAP. Fatty acids undergo $\\beta$-oxidation to form acetyl-CoA, which enters the Krebs cycle."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding intermediate carbon compounds in the Krebs cycle:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Krebs Cycle Intermediate)</th><th>List-II (Number of Carbon Atoms)</th></tr></thead><tbody><tr><td>(A) Acetyl-CoA</td><td>(I) 6 carbons</td></tr><tr><td>(B) Citric acid</td><td>(II) 5 carbons</td></tr><tr><td>(C) $\\alpha$-Ketoglutaric acid</td><td>(III) 4 carbons</td></tr><tr><td>(D) Oxaloacetic acid (OAA)</td><td>(IV) 2 carbons</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(IV), (B)-(I), (C)-(II), (D)-(III)",
+            "(A)-(IV), (B)-(II), (C)-(I), (D)-(III)",
+            "(A)-(III), (B)-(I), (C)-(II), (D)-(IV)",
+            "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)"
+          ],
+          "correctOption": 0,
+          "solution": "Acetyl-CoA is a $2\\text{C}$ acetyl unit attached to coenzyme A; Citric acid and Isocitric acid are $6\\text{C}$; $\\alpha$-Ketoglutaric acid is a $5\\text{C}$ dicarboxylic intermediate; Succinate, Fumarate, Malate, and OAA are $4\\text{C}$ compounds."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "How many total molecules of $\\text{NADH} + \\text{H}^+$ and $\\text{FADH}_2$ are generated in the Krebs cycle per molecule of glucose?",
+          "image": "",
+          "options": [
+            "$6\\text{ NADH} + \\text{H}^+$ and $2\\text{ FADH}_2$",
+            "$3\\text{ NADH} + \\text{H}^+$ and $1\\text{ FADH}_2$",
+            "$8\\text{ NADH} + \\text{H}^+$ and $2\\text{ FADH}_2$",
+            "$10\\text{ NADH} + \\text{H}^+$ and $2\\text{ FADH}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "For one turn of the Krebs cycle (1 pyruvate): $3\\text{ NADH} + 1\\text{ FADH}_2$. For 1 glucose molecule (2 pyruvates = 2 turns of the TCA cycle): $3 \\times 2 = 6\\text{ NADH} + \\text{H}^+$ and $1 \\times 2 = 2\\text{ FADH}_2$."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In plants, gaseous exchange occurs through stomata and specialized loosely arranged parenchymatous openings in woody bark called:",
+          "image": "",
+          "options": [
+            "Lenticels",
+            "Hydathodes",
+            "Pneumatophores",
+            "Casparies"
+          ],
+          "correctOption": 0,
+          "solution": "In stems of woody trees, gaseous exchange takes place through lenticels (lens-shaped openings formed by phellogen cutting complementary cells in bark) and through stomata in leaves."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Sucrose is converted into glucose and fructose by the enzyme:",
+          "image": "",
+          "options": [
+            "Invertase",
+            "Zymase",
+            "Hexokinase",
+            "Amylase"
+          ],
+          "correctOption": 0,
+          "solution": "In plants, sucrose (the transport carbohydrate) is converted into glucose and fructose by the enzyme invertase (sucrase), and these two monosaccharides then enter the glycolytic pathway."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following statements regarding the respiratory quotient (RQ) of anaerobic respiration is CORRECT?",
+          "image": "",
+          "options": [
+            "RQ is infinite ($\\infty$) because $\\text{CO}_2$ is evolved without consumption of $\\text{O}_2$",
+            "RQ is zero because no $\\text{CO}_2$ is produced",
+            "RQ is equal to 1.0",
+            "RQ is less than 0.7"
+          ],
+          "correctOption": 0,
+          "solution": "In anaerobic respiration, $\\text{CO}_2$ is evolved without any uptake of $\\text{O}_2$ ($$\\text{RQ} = \\frac{\\text{Volume of CO}_2}{\\text{Volume of O}_2} = \\frac{2}{0} = \\infty$$)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Ubiquinone (Coenzyme Q) receives reducing equivalents via Complex I from $\\text{NADH}$ and via Complex II from:",
+          "image": "",
+          "options": [
+            "$\\text{FADH}_2$ (generated during oxidation of succinate)",
+            "Cytochrome $c$",
+            "Water directly",
+            "Molecular oxygen"
+          ],
+          "correctOption": 0,
+          "solution": "Ubiquinone receives reducing equivalents from $\\text{NADH}$ via Complex I and from $\\text{FADH}_2$ (generated during oxidation of succinate in the TCA cycle) via Complex II (succinate dehydrogenase), forming ubiquinol ($\\text{QH}_2$)."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The theoretical total net yield of ATP molecules per molecule of glucose completely oxidized during aerobic cellular respiration is:",
+          "image": "",
+          "options": [
+            "36 or 38 ATP",
+            "2 ATP",
+            "18 ATP",
+            "4 ATP"
+          ],
+          "correctOption": 0,
+          "solution": "Complete oxidation of 1 glucose molecule theoretically yields 36 or 38 ATP (Glycolysis: $2\\text{ ATP} + 2\\text{ NADH} \\to 8\\text{ ATP}$; Link reaction: $2\\text{ NADH} \\to 6\\text{ ATP}$; Krebs cycle: $2\\text{ GTP} + 6\\text{ NADH} + 2\\text{ FADH}_2 \\to 24\\text{ ATP}$; Total $= 38\\text{ ATP}$, or 36 depending on glycerol-phosphate vs malate-aspartate shuttle)."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Enolase catalyzes which of the following reactions during glycolysis?",
+          "image": "",
+          "options": [
+            "Conversion of 2-Phosphoglycerate to Phosphoenolpyruvate (releasing $\\text{H}_2\\text{O}$)",
+            "Conversion of 3-PGA to 2-PGA",
+            "Conversion of PEP to Pyruvate",
+            "Cleavage of Fructose-1,6-bisphosphate into DHAP and PGAL"
+          ],
+          "correctOption": 0,
+          "solution": "The enzyme enolase (in the presence of $\\text{Mg}^{2+}$) catalyzes the dehydration of 2-phosphoglycerate (2-PGA) to phosphoenolpyruvate (PEP), releasing a molecule of water."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Read the following statements regarding the amphibolic nature of the respiratory pathway:<br><b>Statement I:</b> When the body requires fatty acids, acetyl-CoA is withdrawn from the respiratory pathway to synthesize them.<br><b>Statement II:</b> Proteins enter the respiratory pathway only as pyruvate and never as acetyl-CoA or TCA cycle intermediates.<br><br>Choose the correct option:",
+          "image": "",
+          "options": [
+            "Statement I is correct but Statement II is incorrect",
+            "Both Statement I and Statement II are correct",
+            "Both Statement I and Statement II are incorrect",
+            "Statement I is incorrect but Statement II is correct"
+          ],
+          "correctOption": 0,
+          "solution": "Statement I is correct because acetyl-CoA is the starting material for fatty acid synthesis. Statement II is incorrect because deaminated amino acids can enter respiration at different points: as pyruvate, as acetyl-CoA, or as Krebs cycle intermediates (e.g., $\\alpha$-ketoglutarate, succinyl-CoA, oxaloacetate)."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During the complete combustion of one molecule of tripalmitin ($\\text{C}_{51}\\text{H}_{98}\\text{O}_6$), the balanced chemical equation is:<br>$$2(\\text{C}_{51}\\text{H}_{98}\\text{O}_6) + 145\\text{ O}_2 \\to 102\\text{ CO}_2 + 98\\text{ H}_2\\text{O} + \\text{energy}$$<br>What is the calculated respiratory quotient (RQ)?",
+          "image": "",
+          "options": [
+            "$\\text{RQ} = \\frac{102\\text{ CO}_2}{145\\text{ O}_2} \\approx 0.7$",
+            "$\\text{RQ} = \\frac{145\\text{ O}_2}{102\\text{ CO}_2} \\approx 1.4$",
+            "$\\text{RQ} = 1.0$",
+            "$\\text{RQ} = 0.9$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\text{RQ} = \\frac{\\text{Volume of } \\text{CO}_2 \\text{ evolved}}{\\text{Volume of } \\text{O}_2 \\text{ consumed}} = \\frac{102}{145} \\approx 0.7$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following components of the ETS contains two copper centres and cytochromes $a$ and $a_3$?",
+          "image": "",
+          "options": [
+            "Complex IV (Cytochrome $c$ oxidase)",
+            "Complex III (Cytochrome $bc_1$)",
+            "Complex II (Succinate dehydrogenase)",
+            "Complex I (NADH dehydrogenase)"
+          ],
+          "correctOption": 0,
+          "solution": "Complex IV refers to cytochrome $c$ oxidase complex containing cytochromes $a$ and $a_3$, and two copper centres ($\\,\\text{Cu}_A$ and $\\text{Cu}_B$)."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Why do plants not require specialized respiratory organs (like lungs or gills) as seen in higher animals?",
+          "image": "",
+          "options": [
+            "Each plant part takes care of its own gas exchange needs, plants have lower metabolic demands, and distance of diffusion is small in loosely packed parenchymatous tissues",
+            "Plants do not respire at night",
+            "Plants perform photosynthesis at all times of the day",
+            "Plant cell walls are permeable to nitrogen only"
+          ],
+          "correctOption": 0,
+          "solution": "Plants lack specialized respiratory organs because: (1) each plant organ takes care of its own gas exchange needs, (2) plants do not present great demands for gas exchange compared to animals, and (3) loose packing of parenchyma with air spaces ensures that almost all living cells are located close to the surface."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The phosphorylation of glucose to glucose-6-phosphate in the first step of glycolysis is catalyzed by:",
+          "image": "",
+          "options": [
+            "Hexokinase",
+            "Phosphofructokinase",
+            "Phosphoglucomutase",
+            "Glucose-6-phosphatase"
+          ],
+          "correctOption": 0,
+          "solution": "Glucose is phosphorylated to glucose-6-phosphate by the enzyme hexokinase using one molecule of ATP."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In glycolysis, the enzyme aldolase cleaves Fructose-1,6-bisphosphate ($6\\text{C}$) into:",
+          "image": "",
+          "options": [
+            "Glyceraldehyde-3-phosphate ($3\\text{C}$) and Dihydroxyacetone phosphate ($3\\text{C}$)",
+            "Two molecules of 3-Phosphoglyceric acid ($3\\text{C}$)",
+            "Two molecules of Pyruvate ($3\\text{C}$)",
+            "Glucose-6-phosphate and Fructose-6-phosphate"
+          ],
+          "correctOption": 0,
+          "solution": "Fructose-1,6-bisphosphate is cleaved by the enzyme aldolase into two triose phosphates: dihydroxyacetone phosphate (DHAP) and 3-phosphoglyceraldehyde (PGAL), which are interconvertible by triose phosphate isomerase."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "How many oxidative decarboxylation steps occur in ONE complete turn of the citric acid (TCA) cycle?",
+          "image": "",
+          "options": [
+            "Two steps (Isocitrate $\\to \\alpha$-KG and $\\alpha$-KG $\\to$ Succinyl-CoA)",
+            "One step only",
+            "Three steps",
+            "Four steps"
+          ],
+          "correctOption": 0,
+          "solution": "There are two oxidative decarboxylation steps in each turn of the TCA cycle: (1) Isocitrate ($6\\text{C}$) to $\\alpha$-Ketoglutarate ($5\\text{C}$) releasing $\\text{CO}_2$ and forming $\\text{NADH}$, and (2) $\\alpha$-Ketoglutarate ($5\\text{C}$) to Succinyl-CoA ($4\\text{C}$) releasing $\\text{CO}_2$ and forming $\\text{NADH}$."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During aerobic respiration, protons ($H^+$) are pumped across the inner mitochondrial membrane into the:",
+          "image": "",
+          "options": [
+            "Intermembrane space (perimitochondrial space)",
+            "Mitochondrial matrix",
+            "Outer mitochondrial membrane",
+            "Cytosol"
+          ],
+          "correctOption": 0,
+          "solution": "As electrons move through Complexes I, III, and IV of the ETS, protons are pumped from the mitochondrial matrix into the intermembrane space, creating an electrochemical proton gradient across the inner membrane."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "What is the primary factor that prevents anaerobic glycolysis from continuing indefinitely in human muscle cells during prolonged sprint exercise?",
+          "image": "",
+          "options": [
+            "Accumulation of lactic acid causing muscle fatigue and acidosis",
+            "Complete depletion of cellular water",
+            "Overproduction of $\\text{CO}_2$",
+            "Inactivation of hexokinase by oxygen"
+          ],
+          "correctOption": 0,
+          "solution": "During strenuous exercise when oxygen supply is insufficient, pyruvate is reduced to lactic acid. The accumulation of lactic acid decreases intracellular pH (acidosis) and leads to muscle fatigue and cramping."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following compounds is the initial four-carbon acceptor that condenses with acetyl-CoA to initiate the Krebs cycle?",
+          "image": "",
+          "options": [
+            "Oxaloacetic acid (OAA)",
+            "Malic acid",
+            "Succinic acid",
+            "Fumaric acid"
+          ],
+          "correctOption": 0,
+          "solution": "The TCA cycle starts with the condensation of the acetyl group ($2\\text{C}$) of acetyl-CoA with oxaloacetic acid (OAA, $4\\text{C}$) and water to yield citric acid ($6\\text{C}$), catalyzed by citrate synthase."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the electron transport chain, how many protons ($H^+$) are pumped from the matrix to the intermembrane space for each pair of electrons transferred from $\\text{NADH}$ to $\\text{O}_2$?",
+          "image": "",
+          "options": [
+            "$10\\text{ H}^+$ ($4\\text{ H}^+$ at Complex I, $4\\text{ H}^+$ at Complex III, $2\\text{ H}^+$ at Complex IV)",
+            "$4\\text{ H}^+$",
+            "$6\\text{ H}^+$",
+            "$2\\text{ H}^+$"
+          ],
+          "correctOption": 0,
+          "solution": "For each pair of electrons from $\\text{NADH}$: Complex I pumps $4\\text{ H}^+$, Complex III pumps $4\\text{ H}^+$, and Complex IV pumps $2\\text{ H}^+$, making a total of $10\\text{ H}^+$ translocated across the inner membrane."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following respiratory substrates has an RQ value of approximately 0.9?",
+          "image": "",
+          "options": [
+            "Proteins",
+            "Glucose",
+            "Tripalmitin",
+            "Oxalic acid"
+          ],
+          "correctOption": 0,
+          "solution": "When proteins are used as respiratory substrates, the respiratory quotient is approximately 0.9."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following substances can serve as a link between carbohydrate metabolism and lipid metabolism in the amphibolic pathway?",
+          "image": "",
+          "options": [
+            "Acetyl-CoA",
+            "Citric acid",
+            "Pyruvic acid",
+            "Succinyl-CoA"
+          ],
+          "correctOption": 0,
+          "solution": "Acetyl-CoA is the key intermediate connecting carbohydrate, fat, and amino acid metabolism. Carbohydrates are converted to acetyl-CoA via pyruvate; fatty acids undergo $\\beta$-oxidation to acetyl-CoA; and excess acetyl-CoA can be used to synthesize fatty acids."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The oxidation of one molecule of $\\text{FADH}_2$ in the electron transport chain begins by transferring its electrons directly to:",
+          "image": "",
+          "options": [
+            "Ubiquinone via Complex II (Succinate dehydrogenase)",
+            "Complex I (NADH dehydrogenase)",
+            "Cytochrome $c$ directly",
+            "Complex IV directly"
+          ],
+          "correctOption": 0,
+          "solution": "$\\text{FADH}_2$ is oxidized at Complex II (succinate dehydrogenase), transferring its electrons to ubiquinone without passing through Complex I (which is why fewer protons are pumped, yielding 2 ATP instead of 3 ATP)."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The conversion of Phosphoenolpyruvate (PEP) to Pyruvate is catalyzed by pyruvate kinase with the generation of:",
+          "image": "",
+          "options": [
+            "1 molecule of ATP per PEP (substrate-level phosphorylation)",
+            "1 molecule of $\\text{NADH}$",
+            "1 molecule of $\\text{CO}_2$",
+            "1 molecule of GTP"
+          ],
+          "correctOption": 0,
+          "solution": "Pyruvate kinase transfers the high-energy phosphate group from phosphoenolpyruvate (PEP) to ADP, producing pyruvate and 1 molecule of ATP (yielding 2 ATP per glucose molecule)."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In germinating castor seeds rich in fats, the respiratory quotient during initial germination is expected to be:",
+          "image": "",
+          "options": [
+            "Less than 1.0 (approx. 0.7)",
+            "Equal to 1.0",
+            "More than 1.0",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Castor seeds store fat reserves (lipids). When fats are oxidized during early germination, more oxygen is required relative to the $\\text{CO}_2$ produced because fats are poorer in oxygen than carbohydrates, giving an $\\text{RQ} < 1.0$ (approx. 0.7)."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding cellular respiratory processes and their cellular locations:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Pathway / Reaction)</th><th>List-II (Site of Occurrence)</th></tr></thead><tbody><tr><td>(A) Glycolysis (EMP pathway)</td><td>(I) Mitochondrial matrix</td></tr><tr><td>(B) Oxidative decarboxylation of Pyruvate</td><td>(II) Cytosol</td></tr><tr><td>(C) Krebs cycle (TCA cycle)</td><td>(III) Inner mitochondrial membrane</td></tr><tr><td>(D) Electron Transport System (ETS)</td><td>(IV) Mitochondrial matrix</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+            "(A)-(I), (B)-(II), (C)-(IV), (D)-(III)",
+            "(A)-(II), (B)-(III), (C)-(I), (D)-(IV)",
+            "(A)-(III), (B)-(I), (C)-(IV), (D)-(II)"
+          ],
+          "correctOption": 0,
+          "solution": "Glycolysis: Cytosol; Link reaction (oxidative decarboxylation): Mitochondrial matrix; Krebs cycle: Mitochondrial matrix (except succinate dehydrogenase on inner membrane); ETS and ATP synthase: Inner mitochondrial membrane."
+        }
+      ]
+    }
+  ]
+}
