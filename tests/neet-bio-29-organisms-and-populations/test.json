@@ -1,0 +1,690 @@
+{
+  "testId": "neet-bio-29-organisms-and-populations",
+  "title": "Organisms and Populations",
+  "syllabus": "Organisms and Environment: Population interactions - mutualism, competition, predation, parasitism, commensalism, amensalism; Population attributes - population growth, birth rate (natality) and death rate (mortality), sex ratio, age distribution, population density, growth models (Exponential and Logistic growth).",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Biology",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If in a pond there were 20 lotus plants last year and through reproduction 8 new plants are added, taking the current population to 28, what is the birth rate of the lotus population in units of offspring per lotus per year?",
+          "image": "",
+          "options": [
+            "0.4 offspring per lotus per year",
+            "0.28 offspring per lotus per year",
+            "0.8 offspring per lotus per year",
+            "4.0 offspring per lotus per year"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\text{Birth rate} = \\frac{\\text{Number of new individuals added}}{\\text{Initial population}} = \\frac{8}{20} = 0.4\\text{ offspring per lotus per year.}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If 4 individuals in a laboratory population of 40 fruit flies (<i>Drosophila</i>) died during a specified time interval (say, a week), the death rate in the population during that period is:",
+          "image": "",
+          "options": [
+            "0.1 individuals per fruit fly per week",
+            "0.4 individuals per fruit fly per week",
+            "0.01 individuals per fruit fly per week",
+            "1.0 individuals per fruit fly per week"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\text{Death rate} = \\frac{\\text{Number of deaths}}{\\text{Initial population}} = \\frac{4}{40} = 0.1\\text{ individuals per fruit fly per week.}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the shape of age pyramids and their corresponding population growth status:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Age Pyramid Shape)</th><th>List-II (Population Growth Status)</th></tr></thead><tbody><tr><td>(A) Triangular pyramid with broad base</td><td>(I) Stable population (pre-reproductive and reproductive individuals almost equal)</td></tr><tr><td>(B) Bell-shaped pyramid</td><td>(II) Declining population (pre-reproductive individuals fewer than reproductive)</td></tr><tr><td>(C) Urn-shaped pyramid</td><td>(III) Expanding / Growing population (high proportion of pre-reproductive individuals)</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(III), (B)-(I), (C)-(II)",
+            "(A)-(I), (B)-(II), (C)-(III)",
+            "(A)-(III), (B)-(II), (C)-(I)",
+            "(A)-(II), (B)-(I), (C)-(III)"
+          ],
+          "correctOption": 0,
+          "solution": "A triangular age pyramid (broad base) represents an expanding population; a bell-shaped pyramid represents a stable population; an urn-shaped age pyramid (narrow base) represents a declining population."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For a population of size $N$, if the population density at time $t$ is $N_t$, then its density at time $t+1$ is given by the formula:",
+          "image": "",
+          "options": [
+            "$N_{t+1} = N_t + [(B + I) - (D + E)]$",
+            "$N_{t+1} = N_t + [(B + E) - (D + I)]$",
+            "$N_{t+1} = N_t + [(B + D) - (I + E)]$",
+            "$N_{t+1} = N_t - [(B + I) + (D + E)]$"
+          ],
+          "correctOption": 0,
+          "solution": "Population density increases due to Natality ($B$) and Immigration ($I$), and decreases due to Mortality ($D$) and Emigration ($E$). Hence, $N_{t+1} = N_t + [(B + I) - (D + E)]$, where $(B+I)$ are additions and $(D+E)$ are deletions."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Under what conditions does Immigration ($I$) play the most significant role in determining population growth compared to Natality ($B$)?",
+          "image": "",
+          "options": [
+            "When a new habitat is being newly colonized",
+            "When a population reaches its carrying capacity",
+            "During extreme severe winter dormancy",
+            "When the intrinsic rate of natural increase ($r$) is zero"
+          ],
+          "correctOption": 0,
+          "solution": "Under normal conditions, births and deaths are the most important factors influencing population density. But if a new habitat is just being colonized, immigration may contribute more significantly to population growth than birth rates."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When resources (food and space) in a habitat are UNLIMITED, the population growth curve is characteristically:",
+          "image": "",
+          "options": [
+            "J-shaped exponential growth curve ($\\frac{dN}{dt} = rN$)",
+            "S-shaped sigmoid logistic curve ($\\frac{dN}{dt} = rN\\left(\\frac{K-N}{K}\\right)$)",
+            "Bell-shaped normal curve",
+            "Linear horizontal line"
+          ],
+          "correctOption": 0,
+          "solution": "When resources are unlimited, each species realizes fully its innate potential to grow exponentially without competition, resulting in a J-shaped curve described by the differential equation $\\frac{dN}{dt} = rN$ (or in integral form, $N_t = N_0 e^{rt}$)."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The intrinsic rate of natural increase is designated by '$r$'. Which of the following statements is TRUE regarding '$r$'?",
+          "image": "",
+          "options": [
+            "It is a very important parameter chosen for assessing impacts of any biotic or abiotic factor on population growth",
+            "It is equal to $(d - b)$ where $d$ is death rate and $b$ is birth rate",
+            "Its value for human population in India in 1981 was 0.205",
+            "It represents the carrying capacity of the environment"
+          ],
+          "correctOption": 0,
+          "solution": "The parameter $r$ (intrinsic rate of natural increase, $r = b - d$) is a measure of the inherent potential of a population to grow and is an important parameter for assessing the impacts of biotic and abiotic factors on population growth. (In 1981, $r$ for India was 0.0205; for Norway rat it is 0.015, for flour beetle it is 0.12)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the Verhulst-Pearl Logistic Growth equation $\\frac{dN}{dt} = rN\\left(\\frac{K-N}{K}\\right)$, the term '$\\left(\\frac{K-N}{K}\\right)$' represents:",
+          "image": "",
+          "options": [
+            "Environmental resistance to population growth",
+            "Carrying capacity of the ecosystem",
+            "Biotic potential of the species",
+            "Intrinsic rate of natural increase"
+          ],
+          "correctOption": 0,
+          "solution": "In logistic growth, $K$ is carrying capacity and $N$ is population density. The term $\\left(\\frac{K-N}{K}\\right)$ or $(1 - N/K)$ represents environmental resistance—the fraction of unused resources available for further growth, which approaches zero as $N \\to K$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A population growing in a habitat with limited resources exhibits an S-shaped (sigmoid) curve. What is the correct sequence of phases in logistic growth?",
+          "image": "",
+          "options": [
+            "Lag phase $\\to$ Phase of acceleration $\\to$ Phase of deceleration $\\to$ Asymptote",
+            "Phase of acceleration $\\to$ Lag phase $\\to$ Deceleration $\\to$ Asymptote",
+            "Lag phase $\\to$ Asymptote $\\to$ Exponential phase $\\to$ Decline",
+            "Exponential phase $\\to$ Lag phase $\\to$ Deceleration $\\to$ Death"
+          ],
+          "correctOption": 0,
+          "solution": "A population exhibiting logistic growth shows an initial Lag phase, followed by phases of acceleration and deceleration, and finally an Asymptote when the population density reaches the Carrying capacity ($K$)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following organisms breeds only ONCE in its lifetime and dies shortly thereafter?",
+          "image": "",
+          "options": [
+            "Pacific salmon fish and Bamboo",
+            "Oysters and Pelagic marine fishes",
+            "Birds and Mammals",
+            "Pelicans and Frogs"
+          ],
+          "correctOption": 0,
+          "solution": "Organisms evolve life-history traits to maximize reproductive fitness. Pacific salmon fish and bamboo plants breed only once in their lifetime (semelparity) and die, while most birds, mammals, and oysters breed many times (iteroparity)."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the types of population interactions and their symbolic effects on interacting species ($+ =$ benefit, $- =$ detriment, $0 =$ neutral):<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Interaction Type)</th><th>List-II (Species A / Species B Effect)</th></tr></thead><tbody><tr><td>(A) Mutualism</td><td>(I) $(+ \\;/\\; -)$</td></tr><tr><td>(B) Competition</td><td>(II) $(+ \\;/\\; +)$</td></tr><tr><td>(C) Predation / Parasitism</td><td>(III) $(- \\;/\\; -)$</td></tr><tr><td>(D) Commensalism</td><td>(IV) $(+ \\;/\\; 0)$</td></tr><tr><td>(E) Amensalism</td><td>(V) $(- \\;/\\; 0)$</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(III), (C)-(I), (D)-(IV), (E)-(V)",
+            "(A)-(II), (B)-(I), (C)-(III), (D)-(IV), (E)-(V)",
+            "(A)-(I), (B)-(III), (C)-(II), (D)-(IV), (E)-(V)",
+            "(A)-(II), (B)-(III), (C)-(IV), (D)-(I), (E)-(V)"
+          ],
+          "correctOption": 0,
+          "solution": "Mutualism: $(+/+)$; Competition: $(-/-)$; Predation & Parasitism: $(+/-)$; Commensalism: $(+/0)$; Amensalism: $(-/0)$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Predators play several key ecological roles in ecosystems. Which of the following is NOT a functional role of predators?",
+          "image": "",
+          "options": [
+            "Over-exploiting prey populations to extinction in natural balanced ecosystems",
+            "Acting as 'conduits' for energy transfer across trophic levels",
+            "Keeping prey populations under control",
+            "Maintaining species diversity in a community by reducing competition among competing prey species"
+          ],
+          "correctOption": 0,
+          "solution": "Predators in nature are 'prudent' and do not overexploit their prey to extinction (because if a predator overexploits and destroys its prey, it would starve to death). They transfer energy across trophic levels, control prey numbers, and maintain diversity."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The prickly pear cactus introduced into Australia in the early 1920s caused havoc by spreading over millions of hectares of rangeland. It was finally brought under control by introducing a:",
+          "image": "",
+          "options": [
+            "Cactus-feeding moth (<i>Cactoblastis cactorum</i>) from its natural habitat",
+            "Herbivorous rabbit",
+            "Parasitic roundworm",
+            "Broad-spectrum synthetic herbicide"
+          ],
+          "correctOption": 0,
+          "solution": "In the early 1920s, the invasive prickly pear cactus was brought under control in Australia only after a cactus-feeding predator (a moth, <i>Cactoblastis cactorum</i>) from its natural habitat was introduced into the country."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the rocky intertidal communities of the American Pacific Coast, when the predatory starfish <i>Pisaster</i> was experimentally removed from enclosed areas, what was the ecological consequence?",
+          "image": "",
+          "options": [
+            "More than 10 species of invertebrates became extinct within a year due to interspecific competition",
+            "The invertebrate diversity doubled immediately",
+            "The algal biomass declined to zero",
+            "Barnacles developed heavy spines to repel fishes"
+          ],
+          "correctOption": 0,
+          "solution": "In a field experiment by Robert Paine, when all <i>Pisaster</i> starfish were removed from an enclosed intertidal area, more than 10 species of invertebrates became extinct within a year because of unchecked interspecific competition among the prey species."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The Monarch butterfly is highly distasteful to its predatory birds because:",
+          "image": "",
+          "options": [
+            "It acquires a special toxic chemical during its caterpillar stage by feeding on a poisonous weed",
+            "It secretes cyanide from its salivary glands upon capture",
+            "It produces formic acid from its wings",
+            "It mimics the colour pattern of the Queen butterfly"
+          ],
+          "correctOption": 0,
+          "solution": "The Monarch butterfly is highly distasteful to its predator (birds) because of a special chemical present in its body. The butterfly acquires this chemical during its caterpillar stage by feeding on a poisonous weed (milkweed)."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Nearly what percentage of all known insects are phytophagous (feeding on plant sap and other tissues)?",
+          "image": "",
+          "options": [
+            "Nearly 25%",
+            "About 50%",
+            "Less than 5%",
+            "Over 75%"
+          ],
+          "correctOption": 0,
+          "solution": "Nearly 25 per cent of all insects are known to be phytophagous (feeding on plant sap and other plant parts), making herbivory a major ecological predatory pressure on plants."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The weed <i>Calotropis</i> growing in abandoned fields is never browsed by cattle or goats because the plant produces:",
+          "image": "",
+          "options": [
+            "Highly poisonous cardiac glycosides",
+            "Opioid alkaloids that paralyze the rumen",
+            "Hydrocyanic acid gas",
+            "Strychnine and cocaine"
+          ],
+          "correctOption": 0,
+          "solution": "The weed <i>Calotropis</i> produces highly poisonous cardiac glycosides. That is why cattle or goats are never seen browsing on this plant."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Nicotine, caffeine, quinine, strychnine, and opium are commercially extracted chemicals produced by plants. Ecologically, these chemicals are synthesized by plants as:",
+          "image": "",
+          "options": [
+            "Defenses against herbivores and grazing animals",
+            "Attractants for pollinating insects",
+            "Hormones promoting seed germination",
+            "Storage reserves for carbon fixation"
+          ],
+          "correctOption": 0,
+          "solution": "A wide variety of chemical substances that we extract from plants on a commercial scale (nicotine, caffeine, quinine, strychnine, opium, etc.) are produced by them actually as chemical defenses against grazers and browsers."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the Galápagos Islands, the Abingdon tortoise became completely extinct within a decade after goats were introduced on the island. This was due to:",
+          "image": "",
+          "options": [
+            "The greater browsing efficiency of the goats outcompeting the tortoises for grass",
+            "Direct predation of tortoise eggs by goats",
+            "Transmission of a lethal bacterial disease from goats",
+            "Destruction of tortoise nesting sites by goat hooves"
+          ],
+          "correctOption": 0,
+          "solution": "The Abingdon tortoise in Galápagos Islands became extinct within a decade after goats were introduced on the island, apparently due to the greater browsing efficiency of the goats in competing for limited food resources."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Connell's elegant field experiments on the rocky sea coasts of Scotland demonstrated that:",
+          "image": "",
+          "options": [
+            "The larger and competitively superior barnacle <i>Balanus</i> dominates the intertidal area and excludes the smaller barnacle <i>Chthamalus</i>",
+            "The smaller barnacle <i>Chthamalus</i> eliminates <i>Balanus</i> through interference",
+            "Both barnacles share resources by feeding at different depths",
+            "Predation by sea gulls eliminates both barnacle species"
+          ],
+          "correctOption": 0,
+          "solution": "Connell's field experiments on the rocky sea coast of Scotland showed that the superior barnacle <i>Balanus</i> dominates the intertidal zone and excludes the smaller barnacle <i>Chthamalus</i> from that zone, illustrating competitive exclusion in nature."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Gause's 'Competitive Exclusion Principle' states that:",
+          "image": "",
+          "options": [
+            "Two closely related species competing for the same limiting resources cannot co-exist indefinitely and the competitively inferior one will be eliminated eventually",
+            "Two species competing for unlimited resources will always diverge into different habitats",
+            "Superior competitors always mutate into carnivores",
+            "Competitors divide resources equally without any niche overlap"
+          ],
+          "correctOption": 0,
+          "solution": "Gause's Competitive Exclusion Principle states that two closely related species competing for the same limiting resources cannot co-exist indefinitely and the competitively inferior one will be eliminated eventually (assuming resources remain limiting)."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "MacArthur showed that five closely related species of warblers living on the same spruce tree were able to avoid competition and co-exist peacefully due to:",
+          "image": "",
+          "options": [
+            "Behavioural differences in their foraging activities and resource partitioning",
+            "Feeding on different tree species in different seasons",
+            "One species becoming nocturnal and the others diurnal",
+            "Predation suppressing their population densities"
+          ],
+          "correctOption": 0,
+          "solution": "MacArthur showed that five closely related species of warblers living on the same spruce tree were able to avoid competition and co-exist due to behavioural differences in their foraging activities (resource partitioning)."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Parasites have evolved special adaptations in accordance with their life cycles. Which of the following is NOT a typical parasitic adaptation?",
+          "image": "",
+          "options": [
+            "Development of complex, well-developed sensory organs and high locomotion capability",
+            "Loss of unnecessary sense organs",
+            "Presence of adhesive suckers or hooks to cling to the host",
+            "Loss of digestive system and high reproductive capacity"
+          ],
+          "correctOption": 0,
+          "solution": "Parasitic adaptations include: loss of unnecessary sense organs, presence of adhesive organs/suckers, loss of digestive system, and high reproductive capacity. They do NOT have well-developed complex sensory or locomotion organs."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The human liver fluke (a trematode parasite) depends on which two intermediate hosts to complete its complex life cycle?",
+          "image": "",
+          "options": [
+            "A snail and a fish",
+            "A mosquito and a pig",
+            "A housefly and a dog",
+            "A copepod and a bird"
+          ],
+          "correctOption": 0,
+          "solution": "The human liver fluke (<i>Fasciola hepatica</i> / <i>Opisthorchis</i>) is a trematode parasite that depends on two intermediate hosts—a snail and a fish—to complete its life cycle."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "<i>Cuscuta</i> (Dodder) is a parasitic plant that grows on hedge plants. It is classified as an ectoparasite that has lost its:",
+          "image": "",
+          "options": [
+            "Chlorophyll and leaves during evolution",
+            "Flowers and seeds",
+            "Haustoria roots",
+            "Stem and nodes"
+          ],
+          "correctOption": 0,
+          "solution": "<i>Cuscuta</i> is a parasitic non-green plant commonly found growing on hedge plants. It has lost its chlorophyll and leaves during the course of evolution and derives its nutrition from the host plant via specialized absorbing roots called haustoria."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Brood parasitism in birds is a fascinating phenomenon in which the parasitic bird lays its eggs in the nest of its host. A classic example is observed between:",
+          "image": "",
+          "options": [
+            "Cuckoo (Koel) and Crow",
+            "Sparrow and Pigeon",
+            "Eagle and Vulture",
+            "Penguin and Seagull"
+          ],
+          "correctOption": 0,
+          "solution": "Brood parasitism is seen in the cuckoo (koel) and the crow. The parasitic koel lays its eggs in the crow's nest, and the host crow incubates them because the parasitic eggs have evolved to resemble the host's eggs in size and colour to prevent detection."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding examples of Commensalism ($(+/0)$ interaction):<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Commensal Partner A)</th><th>List-II (Neutral Partner B)</th></tr></thead><tbody><tr><td>(A) Orchid growing as an epiphyte</td><td>(I) Sea anemone with stinging tentacles</td></tr><tr><td>(B) Barnacles growing on the body</td><td>(II) Mango tree branch</td></tr><tr><td>(C) Cattle egret foraging close to</td><td>(III) Whale</td></tr><tr><td>(D) Clownfish hiding among</td><td>(IV) Grazing cattle stirring up hidden insects</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(III), (C)-(IV), (D)-(I)",
+            "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)",
+            "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+            "(A)-(III), (B)-(IV), (C)-(II), (D)-(I)"
+          ],
+          "correctOption": 0,
+          "solution": "Orchid on mango tree: Epiphyte $(+/0)$; Barnacles on whale: $(+/0)$; Cattle egret and grazing cattle: $(+/0)$; Clownfish and sea anemone: $(+/0)$."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The Mediterranean orchid <i>Ophrys</i> employs 'sexual deceit' to get pollinated by a species of bee (<i>Colletes</i>). It achieves pollination because:",
+          "image": "",
+          "options": [
+            "One petal of its flower bears an uncanny resemblance to the female bee in size, colour, and markings, attracting the male bee for pseudocopulation",
+            "It secretes sweet nectar identical to bee honey",
+            "It traps the male bee in a pitcher and forces it out through pollen sacs",
+            "It emits a light flash mimicking female bioluminescence"
+          ],
+          "correctOption": 0,
+          "solution": "The Mediterranean orchid <i>Ophrys</i> employs sexual deceit. One petal of its flower bears an uncanny resemblance to the female bee in size, colour, and markings. The male bee is attracted, 'pseudocopulates' with the flower, and during that process dusts pollen on its body, transferring it to another flower."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The mutualistic relationship between a Fig tree (<i>Ficus</i>) and its pollinator Wasp is an example of co-evolution because:",
+          "image": "",
+          "options": [
+            "A given fig species can be pollinated only by its 'partner' wasp species, which uses the fruit for oviposition (egg laying) and larval nourishment",
+            "The wasp feeds on fig leaves and kills other herbivorous insects",
+            "The fig seeds germinate only inside the wasp's digestive tract",
+            "The wasp produces toxic alkaloids that protect the fig plant from fungi"
+          ],
+          "correctOption": 0,
+          "solution": "Fig species and partner wasp species exhibit tight one-to-one mutualism: the wasp pollinates the fig inflorescence while searching for egg-laying sites, and the developing seeds inside the fig nourish the emerging wasp larvae."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Lichens represent an intimate mutualistic relationship between:",
+          "image": "",
+          "options": [
+            "A fungus and photosynthesising algae or cyanobacteria",
+            "A fungus and roots of higher plants",
+            "A virus and an alga",
+            "Two different species of heterotrophic bacteria"
+          ],
+          "correctOption": 0,
+          "solution": "Lichens represent an intimate mutualistic relationship between a fungus (mycobiont) and photosynthesising algae or cyanobacteria (phycobiont)."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Amensalism is an ecological interaction where:",
+          "image": "",
+          "options": [
+            "One species is harmed ($-$) while the other is unaffected ($0$)",
+            "Both species are benefited ($+/+$)",
+            "One species is benefited ($+$) while the other is unaffected ($0$)",
+            "Both species are harmed ($-/-$)"
+          ],
+          "correctOption": 0,
+          "solution": "Amensalism is an interaction in which one species is inhibited or harmed ($-$), while the other species is unaffected ($0$). A classic example is <i>Penicillium</i> producing penicillin that inhibits bacterial growth without being affected itself."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Female mosquitoes feed on human blood but are NOT considered true parasites because:",
+          "image": "",
+          "options": [
+            "Blood is required only as a source of protein for egg development, not for living on or inside the host",
+            "They do not transmit any pathogens",
+            "They live inside human blood vessels permanently",
+            "They form a mutualistic relationship with human skin"
+          ],
+          "correctOption": 0,
+          "solution": "The female mosquito is not considered a true parasite. Although it needs human blood for reproduction (protein for egg maturation), it does not live on or in the host organism."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Read the following statements regarding population attributes:<br><b>Statement I:</b> An individual may have births and deaths, but a population has birth rates and death rates.<br><b>Statement II:</b> An individual is either a male or a female, but a population has a sex ratio.<br><br>Choose the correct option:",
+          "image": "",
+          "options": [
+            "Both Statement I and Statement II are correct",
+            "Both Statement I and Statement II are incorrect",
+            "Statement I is correct but Statement II is incorrect",
+            "Statement I is incorrect but Statement II is correct"
+          ],
+          "correctOption": 0,
+          "solution": "Both statements are correct according to NCERT. Population attributes (birth rate, death rate, sex ratio, age distribution, population density) are statistical properties of a group of individuals, not of an individual organism."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a forest, if there are 200 Parthenium plants and 1 single huge Banyan tree with a large canopy, measuring population density purely in terms of total number of individuals gives a misleading impression of their ecological role. In such cases, population size is more meaningfully measured as:",
+          "image": "",
+          "options": [
+            "Biomass or percentage cover",
+            "Pug marks and fecal pellets",
+            "Relative density per trap",
+            "Number of seeds produced per day"
+          ],
+          "correctOption": 0,
+          "solution": "In instances where an enormous Banyan tree provides massive ecological impact compared to hundreds of tiny herbs, estimating population size as percent cover or total biomass is much more meaningful than raw individual numbers."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The tiger census in our national parks and tiger reserves is often conducted based on:",
+          "image": "",
+          "options": [
+            "Pug marks and fecal pellets",
+            "Direct counting using helicopters only",
+            "Total number of prey killed per day",
+            "DNA sequencing of all forest soil"
+          ],
+          "correctOption": 0,
+          "solution": "In national parks and tiger reserves, the tiger census is often conducted indirectly based on identifying pug marks and evaluating fecal pellets."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The integral form of the exponential growth equation is:",
+          "image": "",
+          "options": [
+            "$N_t = N_0 e^{rt}$",
+            "$N_t = N_0 + rt$",
+            "$N_t = N_0 \\left(\\frac{K-N}{K}\\right)$",
+            "$N_t = N_0 \\ln(rt)$"
+          ],
+          "correctOption": 0,
+          "solution": "The integral form of the exponential growth equation is $N_t = N_0 e^{rt}$, where $N_t = \\text{population density after time } t$, $N_0 = \\text{initial population density}$, $r = \\text{intrinsic rate of natural increase}$, and $e = \\text{base of natural logarithms (2.71828)}$."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following growth models is considered biologically MORE REALISTIC for populations living in nature?",
+          "image": "",
+          "options": [
+            "Logistic growth model (because resources for growth are finite and limiting)",
+            "Exponential growth model (because resources never run out in nature)",
+            "Geometric growth with infinite carrying capacity",
+            "Arithmetic growth with constant division"
+          ],
+          "correctOption": 0,
+          "solution": "Since resources in nature are finite and limiting for any population, competition sets in and growth reaches an asymptote at carrying capacity ($K$). Hence, the logistic growth model is considered biologically more realistic than exponential growth."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Copepods (small crustaceans) parasitizing the skin and gills of marine fishes are categorized as:",
+          "image": "",
+          "options": [
+            "Ectoparasites",
+            "Endoparasites",
+            "Hyperparasites",
+            "Brood parasites"
+          ],
+          "correctOption": 0,
+          "solution": "Ectoparasites feed on the external surface of the host organism. Examples include lice on humans, ticks on dogs, marine copepods on fishes, and <i>Cuscuta</i> on hedge plants."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Endoparasites differ from Ectoparasites because Endoparasites:",
+          "image": "",
+          "options": [
+            "Live inside the host body at different sites (liver, kidney, lungs, RBCs) and have highly specialized, morphologically simplified structures with complex life cycles",
+            "Feed only on host hair and skin flakes",
+            "Have highly developed wings and locomotory appendages",
+            "Live in a $(+/0)$ commensal relationship"
+          ],
+          "correctOption": 0,
+          "solution": "Endoparasites live inside the host's body at various anatomical sites (e.g., gut, liver, RBCs). Their morphological and anatomical features are greatly simplified while emphasizing complex life cycles and high reproductive rates."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Flamingos and resident fishes competing for the common food resource (zooplankton) in shallow South American lakes illustrate that:",
+          "image": "",
+          "options": [
+            "Competition can occur between totally unrelated species for the same limiting resource",
+            "Competition occurs only between members of the same species",
+            "Predation is absent in freshwater lakes",
+            "Flamingos feed only when fishes are extinct"
+          ],
+          "correctOption": 0,
+          "solution": "Competition is not confined to closely related species. Unrelated species can compete for the same resource; for example, visiting flamingos and resident fish compete for the common zooplankton food in shallow South American lakes."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "'Interference competition' refers to a situation where:",
+          "image": "",
+          "options": [
+            "The feeding efficiency of one species is reduced due to the interfering and inhibitory presence of another species, even if resources are abundant",
+            "Resources must always be severely limited for competition to occur",
+            "Two species fuse into a single hybrid species",
+            "Parasites interfere with host mating behaviour"
+          ],
+          "correctOption": 0,
+          "solution": "In interference competition, the feeding efficiency of one species might be significantly reduced due to the interfering and inhibitory presence of the other species, even if resources (food and space) are not limited."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When does a population density reach an asymptote (plateau) in a logistic growth curve?",
+          "image": "",
+          "options": [
+            "When population size ($N$) equals the carrying capacity ($K$)",
+            "When birth rate is twice the death rate",
+            "When the intrinsic rate of increase ($r$) reaches infinity",
+            "When resources become unlimited"
+          ],
+          "correctOption": 0,
+          "solution": "In a logistic growth curve, when $N = K$, the term $\\left(\\frac{K-N}{K}\\right) = 0$, which makes $\\frac{dN}{dt} = 0$. The population growth rate drops to zero, and the population stabilizes at an asymptote equal to the carrying capacity."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Mycorrhizae are associations between fungi and the roots of higher plants. The plant gains ________, while the fungus receives ________:",
+          "image": "",
+          "options": [
+            "Essential mineral nutrients (like phosphorus) absorbed from soil; Energy-yielding carbohydrates from the plant",
+            "Protection from herbivores; Nitrogen gas",
+            "Direct sunlight; Soil moisture",
+            "Carbon dioxide; Oxygen"
+          ],
+          "correctOption": 0,
+          "solution": "Mycorrhizae represent mutualism: the fungi help the plant in the absorption of essential nutrients (particularly phosphorus) from the soil, while the plant in turn provides the fungi with energy-rich carbohydrates."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If a population exhibits an age pyramid where the pre-reproductive age group is smaller than the reproductive age group, the population is:",
+          "image": "",
+          "options": [
+            "Declining (urn-shaped pyramid)",
+            "Growing rapidly (triangular pyramid)",
+            "Stable (bell-shaped pyramid)",
+            "Undergoing exponential explosion"
+          ],
+          "correctOption": 0,
+          "solution": "When pre-reproductive individuals are fewer in number than the reproductive age group, fewer individuals will enter the reproductive stage in the next generation, leading to an urn-shaped age pyramid and a declining population."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Read the following statements:<br><b>Statement I:</b> In mutualism, both interacting species derive mutual benefits from each other.<br><b>Statement II:</b> In amensalism, one species is benefited while the other remains completely unharmed.<br><br>Choose the correct option:",
+          "image": "",
+          "options": [
+            "Statement I is correct but Statement II is incorrect",
+            "Both Statement I and Statement II are correct",
+            "Both Statement I and Statement II are incorrect",
+            "Statement I is incorrect but Statement II is correct"
+          ],
+          "correctOption": 0,
+          "solution": "Statement I is correct because mutualism is a $(+/+)$ interaction. Statement II is incorrect because amensalism is a $(-/0)$ interaction where one species is harmed or inhibited while the other is unaffected. (A $(+/0)$ interaction is commensalism)."
+        }
+      ]
+    }
+  ]
+}
