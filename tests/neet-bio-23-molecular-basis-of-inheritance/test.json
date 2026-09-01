@@ -1,0 +1,690 @@
+{
+  "testId": "neet-bio-23-molecular-basis-of-inheritance",
+  "title": "Molecular Basis of Inheritance",
+  "syllabus": "Search for genetic material and DNA as genetic material; Structure of DNA and RNA; DNA packaging; DNA replication; Central dogma; Transcription, genetic code, translation; Gene expression and regulation - Lac Operon; Genome and Human Genome Project (HGP); DNA fingerprinting; Protein biosynthesis.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Biology",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Frederick Griffith (1928) conducted transformation experiments with <i>Streptococcus pneumoniae</i>. Which of the following series of injections resulted in the death of mice due to pneumonia?",
+          "image": "",
+          "options": [
+            "Heat-killed S strain + Live R strain injected into mice",
+            "Heat-killed S strain alone injected into mice",
+            "Live R strain alone injected into mice",
+            "Heat-killed R strain alone injected into mice"
+          ],
+          "correctOption": 0,
+          "solution": "When Griffith injected a mixture of heat-killed smooth (S) virulent strain and live rough (R) non-virulent strain into mice, the mice died of pneumonia, and living virulent S strain bacteria were recovered from their blood due to genetic transformation of the R strain."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding landmark experiments in identifying DNA as the genetic material:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Scientist / Group)</th><th>List-II (Experimental Contribution)</th></tr></thead><tbody><tr><td>(A) Avery, MacLeod, and McCarty (1944)</td><td>(I) Unequivocal proof that DNA is the genetic material using bacteriophage T2 and $^{35}\\text{S}/^{32}\\text{P}$</td></tr><tr><td>(B) Hershey and Chase (1952)</td><td>(II) Experimental proof for semi-conservative replication of DNA using $^{15}\\text{N}$ in <i>E. coli</i></td></tr><tr><td>(C) Meselson and Stahl (1958)</td><td>(III) Discovered transforming principle is DNA by using Proteases, RNases, and DNases</td></tr><tr><td>(D) Taylor and colleagues (1958)</td><td>(IV) Proved semi-conservative replication on chromosomes using tritiated thymidine in <i>Vicia faba</i></td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(III), (B)-(I), (C)-(II), (D)-(IV)",
+            "(A)-(I), (B)-(III), (C)-(II), (D)-(IV)",
+            "(A)-(III), (B)-(II), (C)-(I), (D)-(IV)",
+            "(A)-(IV), (B)-(I), (C)-(II), (D)-(III)"
+          ],
+          "correctOption": 0,
+          "solution": "Avery, MacLeod, McCarty showed that only DNase inhibited transformation; Hershey & Chase used radioactive isotopes $^{32}\\text{P}$ (DNA) and $^{35}\\text{S}$ (protein) to give unequivocal proof; Meselson & Stahl used $^{15}\\text{NH}_4\\text{Cl}$ to show semi-conservative replication in <i>E. coli</i>; Taylor used $^{3}\\text{H}$-thymidine in <i>Vicia faba</i>."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "According to Erwin Chargaff's rules of base pairing for double-stranded DNA (dsDNA), which of the following ratios is always equal to 1?",
+          "image": "",
+          "options": [
+            "$\\frac{\\text{A} + \\text{G}}{\\text{T} + \\text{C}}$",
+            "$\\frac{\\text{A} + \\text{T}}{\\text{G} + \\text{C}}$",
+            "$\\frac{\\text{A}}{\\text{C}}$",
+            "$\\frac{\\text{G}}{\\text{T}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Chargaff's rules state that in double-stranded DNA, Purines = Pyrimidines ($\\,\\text{A} = \\text{T}$ and $\\text{G} = \\text{C}$). Therefore, $\\frac{\\text{A} + \\text{G}}{\\text{T} + \\text{C}} = 1$. The ratio $\\frac{\\text{A} + \\text{T}}{\\text{G} + \\text{C}}$ varies across species."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If a double-stranded DNA molecule has $20\\%$ Cytosine, what will be the percentage of Adenine in this DNA sample?",
+          "image": "",
+          "options": [
+            "$30\\%$",
+            "$20\\%$",
+            "$40\\%$",
+            "$60\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "By Chargaff's rule: $\\%\\text{C} = \\%\\text{G} = 20\\%$. Therefore, $\\%(\\text{C} + \\text{G}) = 40\\%$. The remaining is $\\%(\\text{A} + \\text{T}) = 100 - 40 = 60\\%$. Since $\\%\\text{A} = \\%\\text{T}$, $\\%\\text{A} = \\frac{60}{2} = 30\\%$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a nucleosome core particle, the negatively charged DNA is wrapped around a positively charged histone octamer. The histone octamer is composed of two copies of each of:",
+          "image": "",
+          "options": [
+            "$\\text{H}_2\\text{A}, \\text{H}_2\\text{B}, \\text{H}_3, \\text{ and } \\text{H}_4$",
+            "$\\text{H}_1, \\text{H}_2\\text{A}, \\text{H}_2\\text{B}, \\text{ and } \\text{H}_3$",
+            "$\\text{H}_1, \\text{H}_2, \\text{H}_3, \\text{ and } \\text{H}_4$",
+            "$\\text{H}_1\\text{A}, \\text{H}_1\\text{B}, \\text{H}_2\\text{A}, \\text{ and } \\text{H}_2\\text{B}$"
+          ],
+          "correctOption": 0,
+          "solution": "The core of a nucleosome consists of a histone octamer containing two molecules each of $\\text{H}_2\\text{A}, \\text{H}_2\\text{B}, \\text{H}_3,$ and $\\text{H}_4$. Histone $\\text{H}_1$ is the linker histone bound to the outside of the nucleosome."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A typical nucleosome contains approximately how many base pairs of DNA helix wrapped around the core?",
+          "image": "",
+          "options": [
+            "$200\\text{ bp}$",
+            "$146\\text{ bp}$",
+            "$400\\text{ bp}$",
+            "$20\\text{ bp}$"
+          ],
+          "correctOption": 0,
+          "solution": "According to NCERT, a typical nucleosome contains $200\\text{ base pairs (bp)}$ of DNA helix."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Histone proteins are rich in which basic amino acid residues that carry positive charges in their side chains?",
+          "image": "",
+          "options": [
+            "Lysine and Arginine",
+            "Glutamic acid and Aspartic acid",
+            "Valine and Proline",
+            "Tryptophan and Tyrosine"
+          ],
+          "correctOption": 0,
+          "solution": "Histones are basic proteins rich in the basic amino acid residues lysine and arginine, both of which carry positive charges on their side chains at physiological pH, allowing them to bind tightly to negatively charged DNA."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Read the following statements regarding the stability of genetic material:<br><b>Statement I:</b> RNA is chemically more reactive and structurally less stable than DNA because of the presence of a $2'-\\text{OH}$ group on the ribose sugar.<br><b>Statement II:</b> Presence of Thymine (5-methyl uracil) instead of Uracil confers additional stability to DNA.<br><br>Choose the correct option:",
+          "image": "",
+          "options": [
+            "Both Statement I and Statement II are correct",
+            "Both Statement I and Statement II are incorrect",
+            "Statement I is correct but Statement II is incorrect",
+            "Statement I is incorrect but Statement II is correct"
+          ],
+          "correctOption": 0,
+          "solution": "Both statements are correct. The $2'-\\text{OH}$ group in ribose makes RNA catalytic and labile. DNA is less reactive, double-stranded, resistant to nucleases, and contains thymine instead of uracil, imparting higher biochemical stability."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Meselson and Stahl's experiment, <i>E. coli</i> grown in $^{15}\\text{N}$ medium was transferred to a $^{14}\\text{N}$ medium. After 40 minutes (two generations of division), what will be the proportion of hybrid ($^{15}\\text{N}/^{14}\\text{N}$) and light ($^{14}\\text{N}/^{14}\\text{N}$) DNA molecules respectively?",
+          "image": "",
+          "options": [
+            "$50\\%$ hybrid and $50\\%$ light ($1 : 1$)",
+            "$100\\%$ hybrid",
+            "$25\\%$ hybrid and $75\\%$ light",
+            "$75\\%$ hybrid and $25\\%$ light"
+          ],
+          "correctOption": 0,
+          "solution": "After 20 min (Gen 1): $100\\%$ are hybrid ($^{15}\\text{N}/^{14}\\text{N}$). After 40 min (Gen 2): 4 DNA molecules formed $\\implies 2$ hybrid ($^{15}\\text{N}/^{14}\\text{N}$) and $2$ light ($^{14}\\text{N}/^{14}\\text{N}$), resulting in a $1 : 1$ ($50\\% : 50\\%$) ratio."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "DNA-dependent DNA Polymerase catalyzes polymerization of deoxynucleotides exclusively in which direction?",
+          "image": "",
+          "options": [
+            "$5' \\to 3'$ direction only",
+            "$3' \\to 5'$ direction only",
+            "Both $5' \\to 3'$ and $3' \\to 5'$ simultaneously",
+            "Randomly in any direction"
+          ],
+          "correctOption": 0,
+          "solution": "DNA-dependent DNA polymerases can catalyze polymerization of deoxynucleotides only in one direction, that is $5' \\to 3'$. This creates continuous synthesis on the leading strand ($3' \\to 5'$ template) and discontinuous synthesis of Okazaki fragments on the lagging strand ($5' \\to 3'$ template)."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The discontinuous Okazaki fragments synthesized on the lagging template strand during DNA replication are joined together by the enzyme:",
+          "image": "",
+          "options": [
+            "DNA Ligase",
+            "DNA Helicase",
+            "Topoisomerase",
+            "RNA Primase"
+          ],
+          "correctOption": 0,
+          "solution": "The short Okazaki fragments synthesized on the lagging strand are joined covalently by the enzyme DNA ligase to form a continuous DNA strand."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During replication, deoxynucleoside triphosphates (dATP, dGTP, dCTP, dTTP) serve a dual purpose by acting as:",
+          "image": "",
+          "options": [
+            "Substrates for DNA synthesis and providing energy for polymerisation via high-energy terminal phosphates",
+            "Enzymes and structural histones",
+            "Primers and RNA polymerases",
+            "Transcription terminators and promoters"
+          ],
+          "correctOption": 0,
+          "solution": "Deoxynucleoside triphosphates (dNTPs) serve two purposes: they act as building-block substrates and their two terminal phosphates provide the activation energy for polymerization, analogous to ATP."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The Central Dogma of molecular biology was proposed by Francis Crick. It states that genetic information flows as:",
+          "image": "",
+          "options": [
+            "$\\text{DNA} \\xrightarrow{\\text{Transcription}} \\text{mRNA} \\xrightarrow{\\text{Translation}} \\text{Protein}$",
+            "$\\text{Protein} \\to \\text{RNA} \\to \\text{DNA}$",
+            "$\\text{mRNA} \\to \\text{tRNA} \\to \\text{Protein} \\to \\text{DNA}$",
+            "$\\text{DNA} \\to \\text{Protein} \\to \\text{RNA}$"
+          ],
+          "correctOption": 0,
+          "solution": "Francis Crick proposed the Central Dogma in molecular biology, which states that genetic information flows from $\\text{DNA} \\to \\text{mRNA}$ (transcription) and from $\\text{mRNA} \\to \\text{Protein}$ (translation)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In retroviruses (such as HIV), genetic information flows in reverse from RNA to DNA. This process is called Reverse Transcription and is catalyzed by:",
+          "image": "",
+          "options": [
+            "Reverse transcriptase (RNA-dependent DNA polymerase)",
+            "DNA-dependent RNA polymerase",
+            "RNA replicase",
+            "DNA ligase"
+          ],
+          "correctOption": 0,
+          "solution": "In some viruses (retroviruses), the flow of information is reversed from RNA to DNA (Teminism/Reverse Transcription), catalyzed by the enzyme reverse transcriptase (RNA-dependent DNA polymerase)."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the sequence of the coding strand in a transcription unit is $5'\\text{-ATGCATGCATGC-}3'$, what will be the corresponding sequence of the synthesized mRNA?",
+          "image": "",
+          "options": [
+            "$5'\\text{-AUGCAUGCAUGC-}3'$",
+            "$3'\\text{-UACGUACGUACG-}5'$",
+            "$5'\\text{-UACGUACGUACG-}3'$",
+            "$3'\\text{-AUGCAUGCAUGC-}5'$"
+          ],
+          "correctOption": 0,
+          "solution": "The sequence of the synthesized mRNA is identical to the coding strand in the $5' \\to 3'$ direction, except that Thymine (T) is replaced by Uracil (U). Thus, $5'\\text{-ATGCATGCATGC-}3'$ becomes $5'\\text{-AUGCAUGCAUGC-}3'$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In bacteria, transcription of all types of RNA (mRNA, tRNA, rRNA) is catalyzed by a single RNA polymerase. Initiation and termination of transcription are facilitated by the binding of which factors respectively?",
+          "image": "",
+          "options": [
+            "Sigma ($\\sigma$) factor for initiation and Rho ($\\rho$) factor for termination",
+            "Rho ($\\rho$) factor for initiation and Sigma ($\\sigma$) factor for termination",
+            "TATA-binding protein and Primase",
+            "Release factor and Peptidyl transferase"
+          ],
+          "correctOption": 0,
+          "solution": "In prokaryotes, RNA polymerase core enzyme associates transiently with the initiation factor sigma ($\\sigma$) to bind the promoter and initiate transcription, and with the termination factor rho ($\\rho$) to terminate transcription."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the three distinct RNA Polymerases in Eukaryotes and their transcriptional products:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (RNA Polymerase)</th><th>List-II (Transcribed RNA)</th></tr></thead><tbody><tr><td>(A) RNA Polymerase I</td><td>(I) Precursor of mRNA (heterogeneous nuclear RNA / hnRNA)</td></tr><tr><td>(B) RNA Polymerase II</td><td>(II) 28S, 18S, and 5.8S rRNAs</td></tr><tr><td>(C) RNA Polymerase III</td><td>(III) tRNA, 5S rRNA, and snRNAs (small nuclear RNAs)</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(I), (C)-(III)",
+            "(A)-(I), (B)-(II), (C)-(III)",
+            "(A)-(II), (B)-(III), (C)-(I)",
+            "(A)-(III), (B)-(I), (C)-(II)"
+          ],
+          "correctOption": 0,
+          "solution": "RNA Pol I: Transcribes rRNAs (28S, 18S, 5.8S); RNA Pol II: Transcribes hnRNA (precursor of mRNA); RNA Pol III: Transcribes tRNA, 5S rRNA, and snRNAs."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Post-transcriptional modification of eukaryotic hnRNA involves splicing, capping, and tailing. Capping involves the addition of:",
+          "image": "",
+          "options": [
+            "Methyl guanosine triphosphate to the $5'$-end of hnRNA",
+            "Adenylate residues (200-300) to the $3'$-end",
+            "Poly-U residues to the $5'$-end",
+            "Introns to the $3'$-end"
+          ],
+          "correctOption": 0,
+          "solution": "In capping, an unusual nucleotide (methyl guanosine triphosphate / $\\text{m}^7\\text{Gppp}$) is added to the $5'$-end of hnRNA. In tailing, adenylate residues (200–300) are added at the $3'$-end in a template-independent manner."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During RNA splicing, which non-coding intervening sequences are excised and which coding sequences are joined in a defined order?",
+          "image": "",
+          "options": [
+            "Introns are removed and exons are joined together",
+            "Exons are removed and introns are joined together",
+            "Promoters are removed and operators are joined",
+            "Cistrons are removed and poly-A tails are joined"
+          ],
+          "correctOption": 0,
+          "solution": "In eukaryotic pre-mRNA/hnRNA, introns (non-functional intervening sequences) are removed by the spliceosome complex, and exons (expressed coding sequences) are spliced together in a defined sequence."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following scientists constructed the genetic code dictionary by deciphering codons using chemically synthesized homopolymers and copolymers of RNA?",
+          "image": "",
+          "options": [
+            "Har Gobind Khorana and Marshall Nirenberg (along with Severo Ochoa)",
+            "Watson and Crick",
+            "Hershey and Chase",
+            "Jacob and Monod"
+          ],
+          "correctOption": 0,
+          "solution": "George Gamow proposed triplet codons. Har Gobind Khorana synthesized defined RNA polymers, Marshall Nirenberg developed cell-free systems for protein synthesis, and Severo Ochoa discovered polynucleotide phosphorylase (template-independent RNA synthesis)."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following triplets acts as an initiator codon and codes for the amino acid Methionine?",
+          "image": "",
+          "options": [
+            "AUG",
+            "UAA",
+            "UAG",
+            "UGA"
+          ],
+          "correctOption": 0,
+          "solution": "AUG has a dual function: it codes for Methionine (Met) and acts as the initiator codon for translation."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following sets of codons are non-sense / STOP codons that signal the termination of polypeptide synthesis?",
+          "image": "",
+          "options": [
+            "UAA (Ochre), UAG (Amber), and UGA (Opal)",
+            "AUG, GUG, and UGG",
+            "UUU, UUC, and UUA",
+            "AAA, AAG, and AAC"
+          ],
+          "correctOption": 0,
+          "solution": "UAA, UAG, and UGA do not code for any amino acid and are known as stop or termination codons."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The genetic code is described as 'degenerate' because:",
+          "image": "",
+          "options": [
+            "Some amino acids are coded by more than one codon",
+            "One codon codes for several different amino acids",
+            "The code is read with commas and pauses",
+            "Codons overlap with adjacent codons"
+          ],
+          "correctOption": 0,
+          "solution": "Since there are 61 codons for 20 amino acids, most amino acids are specified by more than one codon. This property is known as the degeneracy of the genetic code."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The cloverleaf 2D secondary structure of tRNA has an anticodon loop that binds to mRNA and an amino acid acceptor end. The amino acid binds to which terminal sequence of tRNA?",
+          "image": "",
+          "options": [
+            "$3'\\text{-CCA}$ end",
+            "$5'\\text{-G}$ end",
+            "Anticodon loop",
+            "T$\\psi$C loop"
+          ],
+          "correctOption": 0,
+          "solution": "In tRNA (the adapter molecule), the amino acid attachment site is located at the unpaired $3'-\\text{OH}$ terminal sequence ($5'\\text{-CCA-}3'$ end)."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Activation of amino acids (aminoacylation of tRNA or charging of tRNA) requires:",
+          "image": "",
+          "options": [
+            "Amino acid, ATP, and Aminoacyl-tRNA synthetase enzyme in the presence of $\\text{Mg}^{2+}$",
+            "GTP and Peptidyl transferase only",
+            "DNA ligase and $\\text{NADP}^+$",
+            "RNA polymerase and release factors"
+          ],
+          "correctOption": 0,
+          "solution": "Charging of tRNA (aminoacylation) is a two-step reaction where an amino acid is activated by ATP to form aminoacyl-AMP, which is transferred to the specific tRNA by the enzyme aminoacyl-tRNA synthetase."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In bacteria, the catalytic 23S rRNA component of the 50S large ribosomal subunit functions as a ribozyme for:",
+          "image": "",
+          "options": [
+            "Peptide bond formation (Peptidyl transferase activity)",
+            "Binding to the shine-dalgarno sequence",
+            "Initiator codon recognition",
+            "Unwinding mRNA secondary structures"
+          ],
+          "correctOption": 0,
+          "solution": "In prokaryotes, the 23S rRNA acts as a catalytic RNA (ribozyme) with peptidyl transferase activity that catalyzes peptide bond formation between adjacent amino acids."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Untranslated Regions (UTRs) present on mRNA molecules are located:",
+          "image": "",
+          "options": [
+            "At both the $5'$-end (before start codon) and at the $3'$-end (after stop codon)",
+            "Exclusively within the coding sequence between exons",
+            "Attached to the poly-A tail only",
+            "Inside the anticodon arm of tRNA"
+          ],
+          "correctOption": 0,
+          "solution": "UTRs are sequences of mRNA that are not translated. They are present at both the $5'$-end (before the start codon) and at the $3'$-end (after the stop codon) and are required for efficient translation."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The <i>Lac</i> Operon in <i>E. coli</i> was elucidated by Francois Jacob and Jacques Monod. It is a classic model of:",
+          "image": "",
+          "options": [
+            "An inducible, negative transcriptional regulation system",
+            "A permanently constitutive anabolic system",
+            "A repressible system with positive feedback only",
+            "Post-translational proteolytic cleavage"
+          ],
+          "correctOption": 0,
+          "solution": "The <i>lac</i> operon is an inducible operon under negative regulation by a repressor protein (and positive regulation by cAMP-CAP). In the presence of lactose (allolactose/inducer), the repressor is inactivated, turning on transcription."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Match List-I with List-II regarding the structural genes of the <i>Lac</i> Operon and their enzymatic products:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse; text-align: left;'><thead><tr><th>List-I (Structural Gene)</th><th>List-II (Enzyme Product)</th></tr></thead><tbody><tr><td>(A) $z$ gene</td><td>(I) Permease (increases membrane permeability to $\\beta$-galactosides)</td></tr><tr><td>(B) $y$ gene</td><td>(II) $\\beta$-Galactosidase (hydrolyzes lactose into glucose and galactose)</td></tr><tr><td>(C) $a$ gene</td><td>(III) Transacetylase</td></tr><tr><td>(D) $i$ gene</td><td>(IV) Lac repressor protein</td></tr></tbody></table><br>Choose the correct answer from the options given below:",
+          "image": "",
+          "options": [
+            "(A)-(II), (B)-(I), (C)-(III), (D)-(IV)",
+            "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)",
+            "(A)-(II), (B)-(III), (C)-(I), (D)-(IV)",
+            "(A)-(III), (B)-(I), (C)-(II), (D)-(IV)"
+          ],
+          "correctOption": 0,
+          "solution": "Gene $z$: $\\beta$-galactosidase; Gene $y$: Permease; Gene $a$: Transacetylase; Gene $i$: Constitutively synthesizes the Lac repressor protein."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the <i>Lac</i> Operon, lactose (or allolactose) acts as the inducer by:",
+          "image": "",
+          "options": [
+            "Binding to the repressor protein, causing conformational change and preventing it from binding to the operator",
+            "Directly binding to RNA polymerase to stimulate promoter clearance",
+            "Inactivating the permease enzyme",
+            "Cleaving the operator DNA region"
+          ],
+          "correctOption": 0,
+          "solution": "The inducer (allolactose) binds to the active repressor protein produced by the $i$ gene. This causes an allosteric change that prevents the repressor from binding to the operator locus ($o$), allowing RNA polymerase to access the promoter and transcribe the $z, y, a$ polycistronic mRNA."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The Human Genome Project (HGP) was coordinated by the US Department of Energy and National Institutes of Health. It was a 13-year mega project launched in 1990 and completed in:",
+          "image": "",
+          "options": [
+            "2003 (with Chromosome 1 sequencing completed in May 2006)",
+            "1998",
+            "2010",
+            "1995"
+          ],
+          "correctOption": 0,
+          "solution": "The HGP was launched in 1990 and completed in 2003. Sequencing of the last chromosome, human Chromosome 1 (the largest with 2,968 genes), was completed in May 2006."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Expressed Sequence Tags (ESTs) as a methodological approach in the Human Genome Project refers to:",
+          "image": "",
+          "options": [
+            "Identifying and sequencing all the genes that are expressed as RNA",
+            "Blind sequencing of both coding and non-coding regions followed by assembly",
+            "Sequencing only non-coding satellite DNA",
+            "Mapping single nucleotide polymorphisms using RFLP"
+          ],
+          "correctOption": 0,
+          "solution": "The HGP used two main approaches: (1) Expressed Sequence Tags (ESTs), focused on identifying and sequencing all the genes that are expressed as RNA, and (2) Sequence Annotation, which involved blind sequencing of the whole genome (coding and non-coding) followed by assembling and assigning functions."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following vectors were commonly utilized in the Human Genome Project for cloning large genomic DNA fragments in host cells?",
+          "image": "",
+          "options": [
+            "Bacterial Artificial Chromosomes (BAC) and Yeast Artificial Chromosomes (YAC)",
+            "pBR322 and Ti plasmid",
+            "Retroviruses and Adenoviruses",
+            "Bacteriophage lambda only"
+          ],
+          "correctOption": 0,
+          "solution": "For sequencing the human genome, large fragments of DNA were cloned in specialized host cells (bacteria and yeast) using vectors called BAC (Bacterial Artificial Chromosomes) and YAC (Yeast Artificial Chromosomes)."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "According to the salient features of the Human Genome Project, the total number of base pairs in the human genome is estimated to be approximately:",
+          "image": "",
+          "options": [
+            "$3.1647 \\times 10^9\\text{ bp}$ ($3164.7\\text{ million bp}$)",
+            "$6.6 \\times 10^9\\text{ bp}$",
+            "$1.4 \\times 10^6\\text{ bp}$",
+            "$30,000\\text{ bp}$"
+          ],
+          "correctOption": 0,
+          "solution": "The human genome contains $3164.7\\text{ million base pairs}$ ($3.1647 \\times 10^9\\text{ bp}$). The total number of genes is estimated at around 30,000."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "According to the findings of the Human Genome Project, which human chromosome has the MOST number of genes and which has the FEWEST genes?",
+          "image": "",
+          "options": [
+            "Chromosome 1 has 2968 genes and Y-chromosome has 231 genes",
+            "Chromosome 1 has 231 genes and Y-chromosome has 2968 genes",
+            "X-chromosome has 2000 genes and Y-chromosome has 50 genes",
+            "Chromosome 21 has the fewest and Chromosome 11 has the most"
+          ],
+          "correctOption": 0,
+          "solution": "Chromosome 1 has the most genes (2968), and the Y-chromosome has the fewest genes (231)."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Single Nucleotide Polymorphisms (SNPs / 'snips') identified in the human genome occur at approximately how many locations?",
+          "image": "",
+          "options": [
+            "1.4 million locations",
+            "30,000 locations",
+            "3.1 billion locations",
+            "200 locations"
+          ],
+          "correctOption": 0,
+          "solution": "Scientists have identified about 1.4 million locations where single-base DNA differences (SNPs - Single Nucleotide Polymorphisms) occur in humans. These are valuable for finding chromosomal locations associated with diseases and tracing human history."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "DNA Fingerprinting was developed by Sir Alec Jeffreys (1984). It is based on identifying variations in:",
+          "image": "",
+          "options": [
+            "Satellite DNA showing high degree of polymorphism (Variable Number of Tandem Repeats / VNTRs)",
+            "Coding exon sequences of housekeeping genes",
+            "rRNA sequences in nucleolus",
+            "Single-stranded mRNA molecules"
+          ],
+          "correctOption": 0,
+          "solution": "DNA fingerprinting is based on detecting high degrees of polymorphism in non-coding repetitive DNA sequences called satellite DNA or VNTRs (Variable Number of Tandem Repeats / minisatellites)."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In density gradient centrifugation (CsCl), satellite DNA separates from bulk genomic DNA as minor peaks because:",
+          "image": "",
+          "options": [
+            "It consists of highly repetitive sequences with differing base composition (A:T or G:C rich) and density",
+            "It contains only single-stranded RNA fragments",
+            "It is tightly attached to histone octamers",
+            "It is completely degraded by restriction endonucleases"
+          ],
+          "correctOption": 0,
+          "solution": "During density gradient centrifugation, bulk genomic DNA forms a major peak, while repetitive satellite DNA forms smaller separate peaks depending on length, G:C vs A:T base ratio, and copy number."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following represents the correct sequential order of steps involved in DNA Fingerprinting using the Southern Blot hybridization technique?",
+          "image": "",
+          "options": [
+            "Isolation of DNA $\\to$ Digestion by restriction endonucleases $\\to$ Gel electrophoresis $\\to$ Blotting onto nitrocellulose/nylon membrane $\\to$ Hybridization using labelled VNTR probe $\\to$ Detection by autoradiography",
+            "Isolation of DNA $\\to$ Autoradiography $\\to$ Gel electrophoresis $\\to$ Restriction digestion $\\to$ Hybridization",
+            "Gel electrophoresis $\\to$ Isolation of DNA $\\to$ Blotting $\\to$ Hybridization $\\to$ Autoradiography",
+            "Digestion of DNA $\\to$ PCR $\\to$ Autoradiography $\\to$ Blotting"
+          ],
+          "correctOption": 0,
+          "solution": "The correct sequence is: (1) Isolation of DNA, (2) Digestion by restriction endonucleases, (3) Separation of fragments by agarose gel electrophoresis, (4) Transfer (blotting) onto nitrocellulose or nylon membrane, (5) Hybridisation using labelled VNTR probe, and (6) Detection of hybridized fragments by autoradiography."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A Variable Number Tandem Repeat (VNTR) belongs to a class of satellite DNA referred to as:",
+          "image": "",
+          "options": [
+            "Minisatellite (tandem repeats of $0.1\\text{ to } 20\\text{ kb}$)",
+            "Microsatellite (1 to 6 bp repeats)",
+            "Transposons",
+            "Expressed Sequence Tags"
+          ],
+          "correctOption": 0,
+          "solution": "VNTRs belong to minisatellite DNA. A small DNA sequence is arranged tandemly in many copy numbers. The copy number varies from chromosome to chromosome in an individual, and size ranges from $0.1\\text{ to } 20\\text{ kb}$."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Why is DNA from an individual's hair follicle, blood, saliva, or bone identical in forensic DNA fingerprinting?",
+          "image": "",
+          "options": [
+            "Every somatic cell in an individual inherits the same genomic DNA and exhibits the same degree of polymorphism",
+            "Forensic enzymes convert all DNA into identical sizes",
+            "Satellite DNA is synthesized only in blood",
+            "VNTR probes recognize only keratin"
+          ],
+          "correctOption": 0,
+          "solution": "Because DNA from every tissue (such as blood, hair follicles, skin, bone, saliva, sperm) of an individual shows the exact same degree of polymorphism, it serves as an infallible forensic identification tool."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following automated sequencing methods was used by Frederick Sanger to determine the amino acid sequences in proteins and nucleotide sequences in DNA?",
+          "image": "",
+          "options": [
+            "Sanger's chain termination method (using dideoxynucleotides)",
+            "Maxam-Gilbert chemical degradation method",
+            "Meselson-Stahl density method",
+            "Southern blotting"
+          ],
+          "correctOption": 0,
+          "solution": "Frederick Sanger developed the dideoxy chain-termination sequencing method for DNA and methods for sequencing amino acids in proteins. The automated DNA sequencers in the HGP worked on Sanger's principles."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Less than what percentage of the human genome codes for functional proteins?",
+          "image": "",
+          "options": [
+            "Less than 2%",
+            "About 20%",
+            "About 50%",
+            "More than 80%"
+          ],
+          "correctOption": 0,
+          "solution": "According to the findings of the Human Genome Project, less than 2 per cent of the human genome codes for proteins; the vast majority consists of repetitive, non-coding sequences."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Read the following statements:<br><b>Statement I:</b> DNA replication in eukaryotes takes place at the S-phase of the cell-cycle.<br><b>Statement II:</b> A failure in cell division after DNA replication results in polyploidy.<br><br>Choose the correct option:",
+          "image": "",
+          "options": [
+            "Both Statement I and Statement II are correct",
+            "Both Statement I and Statement II are incorrect",
+            "Statement I is correct but Statement II is incorrect",
+            "Statement I is incorrect but Statement II is correct"
+          ],
+          "correctOption": 0,
+          "solution": "Both statements are correct according to NCERT. DNA replication occurs during the S-phase of interphase. If cell division (mitosis/cytokinesis) fails following DNA replication, polyploidy (an increase in whole chromosomal sets) occurs."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During translation, the termination of polypeptide synthesis occurs when a stop codon (UAA, UAG, or UGA) reaches the A-site of the ribosome because:",
+          "image": "",
+          "options": [
+            "A Release Factor (RF) binds to the stop codon, terminating translation and releasing the complete polypeptide",
+            "No more ATP is available in the cytoplasm",
+            "The mRNA is degraded instantly by RNase",
+            "The tRNA forms a covalent bond with the stop codon permanently"
+          ],
+          "correctOption": 0,
+          "solution": "At the stop codon, no tRNA binds (there are no tRNAs for stop codons); instead, a protein called a Release Factor binds to the stop codon at the A-site, releasing the complete polypeptide chain from the ribosome."
+        }
+      ]
+    }
+  ]
+}
