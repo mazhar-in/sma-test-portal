@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-32-semiconductor-electronics",
+  "title": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+  "syllabus": "Energy bands in conductors, semiconductors and insulators (qualitative ideas only); Intrinsic and extrinsic semiconductors (n-type and p-type); p-n junction diode: I-V characteristics in forward and reverse bias; Application of junction diode as a rectifier (half-wave and full-wave rectification).",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The energy band gap is maximum in: (NEET 2021)",
+          "image": "",
+          "options": [
+            "Insulators",
+            "Semiconductors",
+            "Metals",
+            "Superconductors"
+          ],
+          "correctOption": 0,
+          "solution": "In insulators, the forbidden energy band gap ($E_g$) between the valence band and conduction band is very wide ($E_g > 3\\text{ eV}$), making electrical conduction negligible under normal conditions."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a half-wave rectifier, if the input ac frequency is $50\\text{ Hz}$, then the output ripple frequency is: (NEET 2022)",
+          "image": "",
+          "options": [
+            "$50\\text{ Hz}$",
+            "$100\\text{ Hz}$",
+            "$25\\text{ Hz}$",
+            "$0\\text{ Hz}$"
+          ],
+          "correctOption": 0,
+          "solution": "A half-wave rectifier conducts only during one half of each input alternating cycle. Hence, the output ripple frequency equals the input AC frequency ($f_{\\text{out}} = f_{\\text{in}} = 50\\text{ Hz}$)."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a full-wave rectifier circuit operating from $50\\text{ Hz}$ mains frequency, the fundamental ripple frequency in the output is: (NEET 2020)",
+          "image": "",
+          "options": [
+            "$100\\text{ Hz}$",
+            "$50\\text{ Hz}$",
+            "$25\\text{ Hz}$",
+            "$200\\text{ Hz}$"
+          ],
+          "correctOption": 0,
+          "solution": "In a full-wave rectifier, both positive and negative half-cycles of input AC are rectified in the same direction, making the output ripple frequency twice the input AC frequency ($f_{\\text{out}} = 2 f_{\\text{in}} = 2 \\times 50 = 100\\text{ Hz}$)."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An intrinsic semiconductor is converted into an n-type extrinsic semiconductor by doping with: (NEET 2023)",
+          "image": "",
+          "options": [
+            "Phosphorus",
+            "Indium",
+            "Boron",
+            "Aluminum"
+          ],
+          "correctOption": 0,
+          "solution": "Doping tetravalent semiconductor crystals (Si or Ge) with pentavalent donor impurities (such as Phosphorus, Arsenic, or Antimony) creates n-type semiconductors with electrons as majority carriers."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a p-n junction diode is forward biased, the width of the depletion layer and the potential barrier height respectively: (NEET 2013)",
+          "image": "",
+          "options": [
+            "Decreases, decreases",
+            "Increases, increases",
+            "Decreases, increases",
+            "Increases, decreases"
+          ],
+          "correctOption": 0,
+          "solution": "In forward bias, the applied external voltage opposes the built-in barrier potential ($V_{\\text{barrier}} = V_0 - V$), reducing the electric field in the transition region and narrowing the depletion layer."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A p-n junction diode is connected to a battery across its terminals. The current in the reverse biased condition is predominantly due to: (NEET 2018)",
+          "image": "",
+          "options": [
+            "Drift of minority charge carriers across the junction",
+            "Diffusion of majority charge carriers across the junction",
+            "Thermal emission of electrons from the battery",
+            "Recombination of electrons and holes"
+          ],
+          "correctOption": 0,
+          "solution": "In reverse bias, the barrier potential prevents majority carrier diffusion, and only thermally generated minority carriers (electrons from p-side and holes from n-side) drift across the junction, constituting the reverse saturation current."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "At absolute zero temperature ($T = 0\\text{ K}$), an intrinsic semiconductor behaves as a: (NEET 2017)",
+          "image": "",
+          "options": [
+            "Perfect insulator",
+            "Superconductor",
+            "Good conductor",
+            "Semimetal"
+          ],
+          "correctOption": 0,
+          "solution": "At $0\\text{ K}$, all covalent valence bonds are intact, the valence band is completely filled, and the conduction band is completely empty with zero thermally excited free carriers, behaving as an insulator."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an unbiased p-n junction, holes diffuse from the p-region to the n-region because: (NEET 2011)",
+          "image": "",
+          "options": [
+            "Hole concentration in p-region is more as compared to n-region",
+            "Free electrons in the n-region attract them",
+            "They are driven across by internal electric field",
+            "Potential barrier pushes them"
+          ],
+          "correctOption": 0,
+          "solution": "Diffusion of charge carriers across an unbiased junction is driven purely by the concentration gradient (carriers diffuse from regions of higher concentration to regions of lower concentration)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a p-type semiconductor, which of the following statements is TRUE? (NEET 2019)",
+          "image": "",
+          "options": [
+            "Holes are the majority carriers and trivalent atoms are the dopants",
+            "Electrons are the majority carriers and trivalent atoms are the dopants",
+            "Holes are the minority carriers and pentavalent atoms are the dopants",
+            "Electrons are the majority carriers and pentavalent atoms are the dopants"
+          ],
+          "correctOption": 0,
+          "solution": "p-type semiconductors are formed by doping intrinsic silicon or germanium with trivalent acceptor impurities (like B, Al, Ga, In), making holes the majority charge carriers ($n_h \\gg n_e$)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The electrical conductivity $\\sigma$ of a semiconductor with electron density $n_e$, hole density $n_h$, electron mobility $\\mu_e$, and hole mobility $\\mu_h$ is given by:",
+          "image": "",
+          "options": [
+            "$e(n_e \\mu_e + n_h \\mu_h)$",
+            "$e(n_e \\mu_e - n_h \\mu_h)$",
+            "$\\frac{e}{n_e \\mu_e + n_h \\mu_h}$",
+            "$e\\left(\\frac{\\mu_e}{n_e} + \\frac{\\mu_h}{n_h}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "Total current density in a semiconductor is $J = J_e + J_h = e(n_e v_e + n_h v_h) = e(n_e \\mu_e + n_h \\mu_h)E$. Hence, conductivity is $\\sigma = e(n_e \\mu_e + n_h \\mu_h)$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The barrier potential $V_0$ of a silicon p-n junction at room temperature is approximately:",
+          "image": "",
+          "options": [
+            "$0.7\\text{ V}$",
+            "$0.3\\text{ V}$",
+            "$1.1\\text{ V}$",
+            "$0.1\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "At room temperature, the typical built-in barrier potential is $\\approx 0.7\\text{ V}$ for Silicon and $\\approx 0.3\\text{ V}$ for Germanium."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the forward bias voltage across a p-n junction diode is increased from $0.6\\text{ V}$ to $0.7\\text{ V}$, the current changes from $2\\text{ mA}$ to $12\\text{ mA}$. The dynamic forward resistance of the diode is:",
+          "image": "",
+          "options": [
+            "$10\\,\\Omega$",
+            "$100\\,\\Omega$",
+            "$50\\,\\Omega$",
+            "$20\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "$$r_d = \\frac{\\Delta V_f}{\\Delta I_f} = \\frac{0.7\\text{ V} - 0.6\\text{ V}}{(12 - 2) \\times 10^{-3}\\text{ A}} = \\frac{0.1\\text{ V}}{10 \\times 10^{-3}\\text{ A}} = \\frac{0.1}{10^{-2}} = 10\\,\\Omega$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Carbon, Silicon, and Germanium have 4 valence electrons each and possess diamond crystal lattice structures. At room temperature, the band gaps follow the relation:",
+          "image": "",
+          "options": [
+            "$(E_g)_\\text{C} > (E_g)_\\text{Si} > (E_g)_\\text{Ge}$",
+            "$(E_g)_\\text{C} < (E_g)_\\text{Si} < (E_g)_\\text{Ge}$",
+            "$(E_g)_\\text{C} = (E_g)_\\text{Si} = (E_g)_\\text{Ge}$",
+            "$(E_g)_\\text{Si} > (E_g)_\\text{C} > (E_g)_\\text{Ge}$"
+          ],
+          "correctOption": 0,
+          "solution": "Band gap decreases down the group as atomic radius increases and valence electrons become less tightly bound: $(E_g)_\\text{C} \\approx 5.4\\text{ eV} > (E_g)_\\text{Si} \\approx 1.1\\text{ eV} > (E_g)_\\text{Ge} \\approx 0.7\\text{ eV}$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The mass action law for a semiconductor in thermal equilibrium is given by:",
+          "image": "",
+          "options": [
+            "$n_e \\cdot n_h = n_i^2$",
+            "$n_e + n_h = n_i$",
+            "$n_e \\cdot n_h = n_i$",
+            "$\\frac{n_e}{n_h} = n_i^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Under thermal equilibrium, the product of free electron concentration ($n_e$) and hole concentration ($n_h$) is constant and equal to the square of the intrinsic carrier concentration: $n_e \\cdot n_h = n_i^2$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an n-type silicon crystal, the donor energy level $E_d$ lies:",
+          "image": "",
+          "options": [
+            "Just below the bottom of the conduction band",
+            "Just above the top of the valence band",
+            "In the middle of the forbidden gap",
+            "Inside the valence band"
+          ],
+          "correctOption": 0,
+          "solution": "In n-type semiconductors, donor impurity levels lie just below the conduction band edge ($\\approx 0.05\\text{ eV}$ below $E_c$ in Si), enabling easy thermal ionization of donor electrons into the conduction band."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The main cause of the depletion layer in a p-n junction is:",
+          "image": "",
+          "options": [
+            "Diffusion of majority charge carriers across the junction leaving unneutralized immobile ionized dopant cores",
+            "Drift of holes due to external potential",
+            "Recombination of all atoms",
+            "Thermal generation of electron-hole pairs"
+          ],
+          "correctOption": 0,
+          "solution": "When a junction is formed, electrons and holes diffuse across the interface and recombine, exposing uncompensated positive donor ions on the n-side and negative acceptor ions on the p-side to form the space-charge depletion layer."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A silicon diode has a threshold voltage of $0.7\\text{ V}$. If it is connected in series with a resistor of $200\\,\\Omega$ across a $5.7\\text{ V}$ DC battery in forward bias, the forward current through the circuit is:",
+          "image": "",
+          "options": [
+            "$25\\text{ mA}$",
+            "$28.5\\text{ mA}$",
+            "$3.5\\text{ mA}$",
+            "$50\\text{ mA}$"
+          ],
+          "correctOption": 0,
+          "solution": "Voltage across the series resistor $V_R = V - V_{\\text{diode}} = 5.7\\text{ V} - 0.7\\text{ V} = 5.0\\text{ V}$.\n$$I = \\frac{V_R}{R} = \\frac{5.0\\text{ V}}{200\\,\\Omega} = 0.025\\text{ A} = 25\\text{ mA}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A p-type semiconductor as a whole carries a net electric charge equal to:",
+          "image": "",
+          "options": [
+            "Zero (electrically neutral)",
+            "Positive",
+            "Negative",
+            "Dependent on doping density"
+          ],
+          "correctOption": 0,
+          "solution": "Although holes are majority carriers, each mobile hole is paired with an immobile negatively charged acceptor nucleus, maintaining overall macroscopic electrical neutrality."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The direction of the built-in barrier electric field in the depletion layer of a p-n junction is from:",
+          "image": "",
+          "options": [
+            "n-region to p-region",
+            "p-region to n-region",
+            "Anode to cathode",
+            "Random directions"
+          ],
+          "correctOption": 0,
+          "solution": "The depletion layer consists of uncompensated positive donor ions on the n-side and negative acceptor ions on the p-side, setting up an internal barrier electric field pointing from the n-region to the p-region."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The maximum theoretical rectification efficiency of a half-wave rectifier and a full-wave rectifier are respectively:",
+          "image": "",
+          "options": [
+            "$40.6\\%$ and $81.2\\%$",
+            "$50.0\\%$ and $100\\%$",
+            "$81.2\\%$ and $40.6\\%$",
+            "$40.6\\%$ and $50.0\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "The maximum rectification efficiency is $\\eta_{\\text{max}} = \\frac{4}{\\pi^2} \\approx 40.6\\%$ for a half-wave rectifier, and $\\eta_{\\text{max}} = \\frac{8}{\\pi^2} \\approx 81.2\\%$ for a full-wave rectifier."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an extrinsic semiconductor, if the ratio of electron concentration to hole concentration is $7/5$ and the ratio of currents carried by them is $7/4$, the ratio of their drift velocities is:",
+          "image": "",
+          "options": [
+            "$5 : 4$",
+            "$4 : 5$",
+            "$1 : 1$",
+            "$7 : 5$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\frac{I_e}{I_h} = \\frac{n_e e A v_e}{n_h e A v_h} = \\left(\\frac{n_e}{n_h}\\right)\\left(\\frac{v_e}{v_h}\\right)$$\n$$\\frac{7}{4} = \\left(\\frac{7}{5}\\right)\\left(\\frac{v_e}{v_h}\\right) \\implies \\frac{v_e}{v_h} = \\frac{7}{4} \\times \\frac{5}{7} = \\frac{5}{4} = 5 : 4$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following circuits correctly represents a bridge full-wave rectifier?",
+          "image": "",
+          "options": [
+            "Four diodes connected in a closed ring loop with alternate pairs pointing towards common load terminals",
+            "Single diode in series with load",
+            "Two diodes connected with opposite polarities to a single AC phase",
+            "Four diodes all pointing in the same clockwise direction around the ring"
+          ],
+          "correctOption": 0,
+          "solution": "A bridge rectifier consists of four diodes arranged in a bridge loop so that two diodes conduct during the positive half-cycle and the other two conduct during the negative half-cycle, directing current through the load in a single direction."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When temperature increases, the electrical resistance of an intrinsic semiconductor:",
+          "image": "",
+          "options": [
+            "Decreases exponentially",
+            "Increases linearly",
+            "Remains constant",
+            "First increases then decreases"
+          ],
+          "correctOption": 0,
+          "solution": "Semiconductors have a negative temperature coefficient of resistance ($\\alpha < 0$). Rising temperature breaks more covalent bonds, increasing intrinsic carrier concentration $n_i$ exponentially ($n_i \\propto T^{3/2} e^{-E_g/2k_B T}$) and lowering resistance."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An ideal junction diode has:",
+          "image": "",
+          "options": [
+            "Zero resistance in forward bias and infinite resistance in reverse bias",
+            "Infinite resistance in forward bias and zero in reverse bias",
+            "Zero resistance in both biases",
+            "Equal non-zero resistance in both biases"
+          ],
+          "correctOption": 0,
+          "solution": "An ideal diode behaves as a closed switch with zero resistance ($R_f = 0$) during forward bias and an open switch with infinite resistance ($R_r = \\infty$) during reverse bias."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The number density of electrons in an intrinsic semiconductor is $n_i = 1.5 \\times 10^{16}\\text{ m}^{-3}$. On doping with a trivalent impurity, the hole concentration becomes $n_h = 4.5 \\times 10^{22}\\text{ m}^{-3}$. The electron concentration in the doped semiconductor is:",
+          "image": "",
+          "options": [
+            "$5.0 \\times 10^9\\text{ m}^{-3}$",
+            "$3.0 \\times 10^9\\text{ m}^{-3}$",
+            "$5.0 \\times 10^{10}\\text{ m}^{-3}$",
+            "$1.5 \\times 10^{16}\\text{ m}^{-3}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the law of mass action: $n_e \\cdot n_h = n_i^2$.\n$$n_e = \\frac{n_i^2}{n_h} = \\frac{(1.5 \\times 10^{16})^2}{4.5 \\times 10^{22}} = \\frac{2.25 \\times 10^{32}}{4.5 \\times 10^{22}} = 5.0 \\times 10^9\\text{ m}^{-3}$$"
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a full-wave center-tapped rectifier using two diodes, if the peak voltage across each half of the secondary winding is $V_m$, the peak inverse voltage (PIV) rating for each diode must be at least:",
+          "image": "",
+          "options": [
+            "$2 V_m$",
+            "$V_m$",
+            "$\\frac{V_m}{2}$",
+            "$\\sqrt{2} V_m$"
+          ],
+          "correctOption": 0,
+          "solution": "In a center-tapped full-wave rectifier, during the non-conducting half-cycle, the non-conducting diode experiences a reverse voltage equal to the sum of the secondary half-winding voltage and the peak load voltage: $\\text{PIV} = 2V_m$."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For a pure silicon crystal, the energy band gap $E_g$ at room temperature is approximately:",
+          "image": "",
+          "options": [
+            "$1.1\\text{ eV}$",
+            "$0.7\\text{ eV}$",
+            "$5.4\\text{ eV}$",
+            "$0.05\\text{ eV}$"
+          ],
+          "correctOption": 0,
+          "solution": "At room temperature ($300\\text{ K}$), the band gap is $E_g \\approx 1.1\\text{ eV}$ for Silicon and $E_g \\approx 0.72\\text{ eV}$ for Germanium."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The reverse saturation current of a p-n junction diode:",
+          "image": "",
+          "options": [
+            "Doubles for approximately every $10^\\circ\\text{C}$ rise in temperature",
+            "Is independent of temperature",
+            "Decreases with increasing temperature",
+            "Increases linearly with applied reverse voltage"
+          ],
+          "correctOption": 0,
+          "solution": "The reverse saturation current $I_0$ is caused by thermally generated minority carriers, roughly doubling for every $10^\\circ\\text{C}$ increase in operating temperature."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a semiconductor, the mobility of electrons is higher than that of holes because:",
+          "image": "",
+          "options": [
+            "Electrons move in the conduction band requiring less energy than bound valence electrons jumping between vacancies",
+            "Electrons have higher mass than holes",
+            "Holes carry negative charge",
+            "Electrons experience stronger electrostatic attraction"
+          ],
+          "correctOption": 0,
+          "solution": "Conduction-band electrons move freely in empty quantum states, whereas hole transport involves the movement of bound valence electrons into neighboring covalent vacancies against higher lattice resistance, resulting in lower hole mobility ($\\mu_e > \\mu_h$)."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A capacitor filter connected in parallel across the load resistor of a rectifier smooths the pulsating output voltage because the capacitor:",
+          "image": "",
+          "options": [
+            "Charges to peak voltage during conduction and discharges slowly through the load during non-conduction",
+            "Blocks AC and passes DC directly to ground",
+            "Converts DC into high frequency AC",
+            "Reduces the peak transformer voltage"
+          ],
+          "correctOption": 0,
+          "solution": "A shunt capacitor charges rapidly to the peak input voltage through the low-resistance diode, and then discharges slowly through the load resistor ($R_L C \\gg T$) when diode conduction ceases, smoothing voltage ripple."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The acceptor energy level $E_a$ in a p-type semiconductor lies:",
+          "image": "",
+          "options": [
+            "Just above the top of the valence band",
+            "Just below the bottom of the conduction band",
+            "In the middle of the forbidden gap",
+            "Inside the conduction band"
+          ],
+          "correctOption": 0,
+          "solution": "Acceptor energy levels lie slightly above the valence band ($\\approx 0.01\\text{ to } 0.05\\text{ eV}$ above $E_v$), so valence electrons can be easily excited into these levels at room temperature, leaving mobile holes in the valence band."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following diode circuits is FORWARD BIASED?",
+          "image": "",
+          "options": [
+            "p-terminal at $+2\\text{ V}$ and n-terminal at $-2\\text{ V}$",
+            "p-terminal at $-3\\text{ V}$ and n-terminal at $-1\\text{ V}$",
+            "p-terminal at $0\\text{ V}$ and n-terminal at $+3\\text{ V}$",
+            "p-terminal at $-4\\text{ V}$ and n-terminal at $+2\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "A p-n junction is forward biased when the potential at the p-side is higher than the potential at the n-side ($V_p > V_n$). For option (1), $V_p = +2\\text{ V} > V_n = -2\\text{ V}$."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When an electron-hole pair recombines in a semiconductor, the energy released is roughly equal to:",
+          "image": "",
+          "options": [
+            "Band gap energy $E_g$",
+            "Thermal kinetic energy $k_B T$",
+            "Zero",
+            "$2E_g$"
+          ],
+          "correctOption": 0,
+          "solution": "When a conduction-band electron drops into a valence-band hole vacancy, it releases energy equal to the band gap ($E = E_g$) as a photon or lattice phonon."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a full-wave rectifier without a filter, the output voltage waveform across the load is:",
+          "image": "",
+          "options": [
+            "Unidirectional pulsating DC with ripple",
+            "Pure smooth DC",
+            "Bidirectional alternating AC",
+            "Constant square wave"
+          ],
+          "correctOption": 0,
+          "solution": "A full-wave rectifier inverts negative half-cycles to produce unidirectional pulsating DC containing an average DC component along with AC ripple harmonics."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $N_D$ is the donor concentration and $N_A$ is the acceptor concentration in an n-type semiconductor where $N_D \\gg N_A$, the majority electron concentration is approximately:",
+          "image": "",
+          "options": [
+            "$n_e \\approx N_D$",
+            "$n_e \\approx N_A$",
+            "$n_e \\approx n_i$",
+            "$n_e \\approx N_D + N_A$"
+          ],
+          "correctOption": 0,
+          "solution": "At room temperature, virtually all donor atoms are ionized, so majority electron concentration is determined by the net donor doping density: $n_e \\approx N_D - N_A \\approx N_D$."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The thickness of the depletion layer in an ordinary silicon p-n junction diode is of the order of:",
+          "image": "",
+          "options": [
+            "$10^{-6}\\text{ m} \\text{ (}1\\,\\mu\\text{m)}$",
+            "$10^{-2}\\text{ m}$",
+            "$10^{-9}\\text{ m}$",
+            "$10^{-4}\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "The physical width of the depletion layer in typical silicon p-n junctions is on the order of a fraction of a micrometer ($10^{-6}\\text{ m} = 1\\,\\mu\\text{m}$)."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If a potential barrier of $0.5\\text{ V}$ exists across a depletion layer of thickness $5 \\times 10^{-7}\\text{ m}$, the average electric field in the depletion layer is:",
+          "image": "",
+          "options": [
+            "$1.0 \\times 10^6\\text{ V/m}$",
+            "$2.5 \\times 10^6\\text{ V/m}$",
+            "$1.0 \\times 10^5\\text{ V/m}$",
+            "$2.0 \\times 10^7\\text{ V/m}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$E = \\frac{V}{d} = \\frac{0.5\\text{ V}}{5 \\times 10^{-7}\\text{ m}} = 1.0 \\times 10^6\\text{ V/m}$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A semiconductor device is connected in series with a battery and a resistance. When polarity of the battery is reversed, the current drops to almost zero. The device is:",
+          "image": "",
+          "options": [
+            "A p-n junction diode",
+            "An intrinsic semiconductor rod",
+            "A carbon resistor",
+            "A metallic conductor"
+          ],
+          "correctOption": 0,
+          "solution": "A p-n junction diode exhibits unilateral conductivity, conducting high current in forward bias and negligible saturation current in reverse bias."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ripple factor $\\gamma$ for a full-wave rectifier without filter is:",
+          "image": "",
+          "options": [
+            "$0.482$",
+            "$1.21$",
+            "$0.812$",
+            "$0.50$"
+          ],
+          "correctOption": 0,
+          "solution": "Ripple factor is $\\gamma = \\sqrt{\\left(\\frac{I_{\\text{rms}}}{I_{\\text{dc}}}\\right)^2 - 1} = \\sqrt{\\left(\\frac{I_m / \\sqrt{2}}{2I_m / \\pi}\\right)^2 - 1} = \\sqrt{\\frac{\\pi^2}{8} - 1} \\approx 0.482$."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a good conductor, the valence band and conduction band:",
+          "image": "",
+          "options": [
+            "Overlap each other or the conduction band is partially filled",
+            "Are separated by a large forbidden gap of $6\\text{ eV}$",
+            "Are separated by a small gap of $1\\text{ eV}$",
+            "Are completely empty"
+          ],
+          "correctOption": 0,
+          "solution": "In metallic conductors, the conduction band overlaps with the valence band or the valence band is partially filled, allowing electrons to move freely under minimal electric fields."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When an intrinsic semiconductor is doped with a small amount of Arsenic (pentavalent), the Fermi energy level:",
+          "image": "",
+          "options": [
+            "Shifts upwards towards the conduction band",
+            "Shifts downwards towards the valence band",
+            "Remains exactly in the middle of the band gap",
+            "Disappears completely"
+          ],
+          "correctOption": 0,
+          "solution": "Adding pentavalent donor impurities introduces electron-rich donor states near the conduction band, shifting the Fermi level $E_F$ upward toward the conduction band."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Diffusion current in a p-n junction flows in the direction:",
+          "image": "",
+          "options": [
+            "From p-side to n-side",
+            "From n-side to p-side",
+            "From cathode to anode",
+            "Opposite to the majority carrier gradient"
+          ],
+          "correctOption": 0,
+          "solution": "Holes diffuse from p-to-n and electrons diffuse from n-to-p (producing conventional current from p-to-n). Therefore, diffusion current flows from the p-side to the n-side."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Drift current in an unbiased p-n junction flows in the direction:",
+          "image": "",
+          "options": [
+            "From n-side to p-side",
+            "From p-side to n-side",
+            "Along the diffusion current",
+            "Circular loops"
+          ],
+          "correctOption": 0,
+          "solution": "The barrier electric field in the depletion zone points from n-to-p, sweeping minority holes to the p-side and minority electrons to the n-side, creating a drift current that flows from the n-side to the p-side."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an unbiased p-n junction in steady-state dynamic equilibrium:",
+          "image": "",
+          "options": [
+            "Diffusion current is equal and opposite to drift current",
+            "Diffusion current is greater than drift current",
+            "Drift current is greater than diffusion current",
+            "Both diffusion and drift currents are zero independently"
+          ],
+          "correctOption": 0,
+          "solution": "In an open-circuit equilibrium junction, the built-in electric field adjusts until the forward diffusion current of majority carriers is balanced by the reverse drift current of minority carriers ($I_{\\text{diff}} = I_{\\text{drift}}$), resulting in zero net current."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A full-wave rectifier circuit using two identical diodes has an AC input voltage of $V = V_m\\sin\\omega t$. If the forward resistance of each diode is $r_f$ and the load resistance is $R_L$, the average DC output current $I_{\\text{dc}}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{2 V_m}{\\pi (r_f + R_L)}$",
+            "$\\frac{V_m}{\\pi (r_f + R_L)}$",
+            "$\\frac{V_m}{\\sqrt{2}(r_f + R_L)}$",
+            "$\\frac{2 V_m}{\\pi R_L}$"
+          ],
+          "correctOption": 0,
+          "solution": "Peak current during each half-cycle is $I_m = \\frac{V_m}{r_f + R_L}$.\nFor a full-wave rectifier, the average (DC) current is:\n$$I_{\\text{dc}} = \\frac{2 I_m}{\\pi} = \\frac{2 V_m}{\\pi (r_f + R_L)}$$"
+        }
+      ]
+    }
+  ]
+}
