@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-30-atoms",
+  "title": "Atoms",
+  "syllabus": "Alpha-particle scattering experiment; Rutherford's model of atom; Bohr model of hydrogen atom, Expression for radius of nth possible orbit, Velocity and energy of electron in nth orbit, Hydrogen line spectra (Lyman, Balmer, Paschen, Brackett, and Pfund series), De Broglie's explanation of Bohr's second postulate of quantization.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of the radius of the $1^{\\text{st}}$ orbit of hydrogen atom to the radius of the $1^{\\text{st}}$ orbit of $\\text{He}^+$ ion is: (NEET 2023)",
+          "image": "",
+          "options": [
+            "$2 : 1$",
+            "$1 : 2$",
+            "$4 : 1$",
+            "$1 : 4$"
+          ],
+          "correctOption": 0,
+          "solution": "Radius of $n^{\\text{th}}$ Bohr orbit is $r_n \\propto \\frac{n^2}{Z}$.\nFor hydrogen ($Z = 1, n = 1$): $r_{\\text{H}} \\propto \\frac{1^2}{1} = 1$.\nFor helium ion $\\text{He}^+$ ($Z = 2, n = 1$): $r_{\\text{He}^+} \\propto \\frac{1^2}{2} = \\frac{1}{2}$.\n$$\\frac{r_{\\text{H}}}{r_{\\text{He}^+}} = \\frac{1}{1/2} = 2 : 1$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of maximum to minimum wavelength in the Balmer series of hydrogen spectrum is: (NEET 2023)",
+          "image": "",
+          "options": [
+            "$\\frac{9}{5}$",
+            "$\\frac{5}{9}$",
+            "$\\frac{4}{3}$",
+            "$\\frac{36}{5}$"
+          ],
+          "correctOption": 0,
+          "solution": "For Balmer series: $\\frac{1}{\\lambda} = R\\left(\\frac{1}{2^2} - \\frac{1}{n^2}\\right)$.\nMaximum wavelength occurs for transition $n = 3 \\to 2$:\n$$\\frac{1}{\\lambda_{\\text{max}}} = R\\left(\\frac{1}{4} - \\frac{1}{9}\\right) = \\frac{5R}{36} \\implies \\lambda_{\\text{max}} = \\frac{36}{5R}$$\nMinimum wavelength (series limit) occurs for transition $n = \\infty \\to 2$:\n$$\\frac{1}{\\lambda_{\\text{min}}} = R\\left(\\frac{1}{4} - 0\\right) = \\frac{R}{4} \\implies \\lambda_{\\text{min}} = \\frac{4}{R}$$\n$$\\frac{\\lambda_{\\text{max}}}{\\lambda_{\\text{min}}} = \\frac{36/(5R)}{4/R} = \\frac{36}{20} = \\frac{9}{5}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The total energy of an electron in an atom in an orbit is $-3.4\\text{ eV}$. Its kinetic and potential energies are, respectively: (NEET 2019)",
+          "image": "",
+          "options": [
+            "$3.4\\text{ eV}, -6.8\\text{ eV}$",
+            "$-3.4\\text{ eV}, -3.4\\text{ eV}$",
+            "$-3.4\\text{ eV}, -6.8\\text{ eV}$",
+            "$3.4\\text{ eV}, 3.4\\text{ eV}$"
+          ],
+          "correctOption": 0,
+          "solution": "For an electron revolving in an orbit under Coulombic attraction:\nKinetic energy $K = -E = -(-3.4\\text{ eV}) = +3.4\\text{ eV}$.\nPotential energy $U = 2E = 2(-3.4\\text{ eV}) = -6.8\\text{ eV}$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When an electron in hydrogen atom transitions from $n = 4$ to $n = 1$, the frequency of the emitted radiation is: (Given ionization energy of $\\text{H} = 13.6\\text{ eV}$ and $h = 6.63 \\times 10^{-34}\\text{ J}\\cdot\\text{s}$) (NEET 2016)",
+          "image": "",
+          "options": [
+            "$3.08 \\times 10^{15}\\text{ Hz}$",
+            "$2.03 \\times 10^{15}\\text{ Hz}$",
+            "$1.05 \\times 10^{15}\\text{ Hz}$",
+            "$4.12 \\times 10^{15}\\text{ Hz}$"
+          ],
+          "correctOption": 0,
+          "solution": "Energy emitted: $\\Delta E = 13.6\\left(\\frac{1}{1^2} - \\frac{1}{4^2}\\right) = 13.6\\left(1 - \\frac{1}{16}\\right) = 13.6 \\times \\frac{15}{16} = 12.75\\text{ eV}$.\n$$\\nu = \\frac{\\Delta E}{h} = \\frac{12.75 \\times (1.6 \\times 10^{-19}\\text{ J})}{6.63 \\times 10^{-34}\\text{ J}\\cdot\\text{s}} = \\frac{2.04 \\times 10^{-18}}{6.63 \\times 10^{-34}} \\approx 3.08 \\times 10^{15}\\text{ Hz}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The radius of the innermost electron orbit of a hydrogen atom is $5.3 \\times 10^{-11}\\text{ m}$. What is the radius of the $n = 3$ orbit? (NEET 2021)",
+          "image": "",
+          "options": [
+            "$4.77 \\times 10^{-10}\\text{ m}$",
+            "$1.59 \\times 10^{-10}\\text{ m}$",
+            "$2.12 \\times 10^{-10}\\text{ m}$",
+            "$4.77 \\times 10^{-11}\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Radius of $n^{\\text{th}}$ orbit: $r_n = n^2 r_1$.\n$$r_3 = 3^2 \\times (5.3 \\times 10^{-11}\\text{ m}) = 9 \\times (5.3 \\times 10^{-11}) = 47.7 \\times 10^{-11}\\text{ m} = 4.77 \\times 10^{-10}\\text{ m}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An $\\alpha$-particle of mass $m$ and charge $2e$ is projected with velocity $v$ directly towards a heavy nucleus of atomic number $Z$. The distance of closest approach $r_0$ is proportional to: (NEET 2016)",
+          "image": "",
+          "options": [
+            "$\\frac{1}{v^2}$",
+            "$\\frac{1}{m^2}$",
+            "$v^2$",
+            "$\\frac{1}{\\sqrt{v}}$"
+          ],
+          "correctOption": 0,
+          "solution": "At closest approach, all initial kinetic energy transforms into electrostatic potential energy:\n$$\\frac{1}{2} m v^2 = \\frac{1}{4\\pi\\varepsilon_0}\\frac{(2e)(Ze)}{r_0} \\implies r_0 = \\frac{1}{4\\pi\\varepsilon_0}\\frac{4Ze^2}{m v^2} \\propto \\frac{1}{v^2}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The spectral line of shortest wavelength in the Lyman series of hydrogen atom spectrum corresponds to the transition:",
+          "image": "",
+          "options": [
+            "$n = \\infty \\to n = 1$",
+            "$n = 2 \\to n = 1$",
+            "$n = \\infty \\to n = 2$",
+            "$n = 3 \\to n = 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Shortest wavelength (maximum photon energy) in the Lyman series occurs when an electron transitions from the outermost unbounded level $n = \\infty$ directly to the ground state $n = 1$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "According to Bohr's quantization condition, the orbital angular momentum $L$ of an electron in the $n^{\\text{th}}$ stationary orbit is:",
+          "image": "",
+          "options": [
+            "$\\frac{n h}{2\\pi}$",
+            "$\\frac{n h}{\\pi}$",
+            "$\\frac{2\\pi}{n h}$",
+            "$\\frac{n^2 h}{2\\pi}$"
+          ],
+          "correctOption": 0,
+          "solution": "Bohr's second postulate states that an electron can only revolve in non-radiating orbits where its orbital angular momentum is an integral multiple of $\\frac{h}{2\\pi}$: $L = m v r = \\frac{n h}{2\\pi}$ ($n = 1, 2, 3, \\dots$)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "De Broglie explained Bohr's angular momentum quantization by viewing the electron in an orbit as a:",
+          "image": "",
+          "options": [
+            "Stationary standing matter wave forming an integral number of wavelengths: $2\\pi r = n\\lambda$",
+            "Particle moving along a straight path",
+            "Continuous progressive wave of infinite frequency",
+            "Localized wave packet without periodic boundary"
+          ],
+          "correctOption": 0,
+          "solution": "De Broglie proposed that circular orbits are stable resonant standing matter waves where the circumference fits an integral number of wavelengths ($2\\pi r = n\\lambda = n\\frac{h}{mv} \\implies mvr = \\frac{nh}{2\\pi}$)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the Geiger-Marsden $\\alpha$-particle scattering experiment, the fraction of incident $\\alpha$-particles deflected by more than $90^\\circ$ by the gold foil is approximately:",
+          "image": "",
+          "options": [
+            "$1$ in $8000$",
+            "$1$ in $100$",
+            "$1$ in $10$",
+            "$1$ in $10^6$"
+          ],
+          "correctOption": 0,
+          "solution": "In Rutherford's gold foil experiment, only about 1 in 8000 incident $\\alpha$-particles suffered deflections greater than $90^\\circ$, demonstrating that most atomic volume is empty space and positive charge is concentrated in a tiny nucleus."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of the speed of an electron in the ground state ($n = 1$) of a hydrogen atom to the speed of light $c$ in vacuum is approximately:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{137}$",
+            "$\\frac{1}{274}$",
+            "$\\frac{1}{68}$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "The fine-structure constant is $\\alpha = \\frac{v_1}{c} = \\frac{e^2}{2\\varepsilon_0 h c} \\approx \\frac{1}{137}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a hydrogen atom in the ground state absorbs a photon of energy $12.1\\text{ eV}$, its orbital angular momentum increases by:",
+          "image": "",
+          "options": [
+            "$\\frac{h}{\\pi}$",
+            "$\\frac{h}{2\\pi}$",
+            "$\\frac{2h}{\\pi}$",
+            "$\\frac{3h}{2\\pi}$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial energy $E_1 = -13.6\\text{ eV}$. Final energy $E_n = -13.6 + 12.1 = -1.5\\text{ eV} = E_3 \\implies n = 3$.\nIncrease in angular momentum: $\\Delta L = L_3 - L_1 = 3\\left(\\frac{h}{2\\pi}\\right) - 1\\left(\\frac{h}{2\\pi}\\right) = 2\\left(\\frac{h}{2\\pi}\\right) = \\frac{h}{\\pi}$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The velocity of an electron in the $n^{\\text{th}}$ Bohr orbit of a hydrogen-like atom of atomic number $Z$ varies as:",
+          "image": "",
+          "options": [
+            "$v_n \\propto \\frac{Z}{n}$",
+            "$v_n \\propto \\frac{n}{Z}$",
+            "$v_n \\propto \\frac{Z^2}{n}$",
+            "$v_n \\propto \\frac{Z}{n^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "The orbital speed derived from Bohr's postulates is $v_n = \\frac{e^2}{2\\varepsilon_0 h}\\left(\\frac{Z}{n}\\right) \\propto \\frac{Z}{n}$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following spectral series of the hydrogen atom spectrum falls exclusively in the visible region?",
+          "image": "",
+          "options": [
+            "Balmer series",
+            "Lyman series",
+            "Paschen series",
+            "Pfund series"
+          ],
+          "correctOption": 0,
+          "solution": "Transitions ending on $n = 2$ form the Balmer series, which lies predominantly in the visible range ($400\\text{ nm}$ to $700\\text{ nm}$). Lyman lies in UV, while Paschen, Brackett, and Pfund lie in the infrared."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If Rydberg's constant is $R$, the wave number of the first line of the Lyman series is:",
+          "image": "",
+          "options": [
+            "$\\frac{3R}{4}$",
+            "$\\frac{R}{4}$",
+            "$\\frac{5R}{36}$",
+            "$\\frac{8R}{9}$"
+          ],
+          "correctOption": 0,
+          "solution": "First line of Lyman series corresponds to transition $n = 2 \\to n = 1$:\n$$\\bar{\\nu} = \\frac{1}{\\lambda} = R\\left(\\frac{1}{1^2} - \\frac{1}{2^2}\\right) = R\\left(1 - \\frac{1}{4}\\right) = \\frac{3R}{4}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The time period of revolution of an electron in the $n^{\\text{th}}$ Bohr orbit of a hydrogen atom is proportional to:",
+          "image": "",
+          "options": [
+            "$n^3$",
+            "$n^2$",
+            "$n$",
+            "$n^4$"
+          ],
+          "correctOption": 0,
+          "solution": "$$T_n = \\frac{2\\pi r_n}{v_n} \\propto \\frac{n^2}{1/n} = n^3$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ionization potential of a hydrogen atom in its ground state is $13.6\\text{ V}$. What is the energy required to excite an electron from the ground state to the second excited state ($n = 3$)?",
+          "image": "",
+          "options": [
+            "$12.09\\text{ eV}$",
+            "$10.20\\text{ eV}$",
+            "$1.51\\text{ eV}$",
+            "$13.60\\text{ eV}$"
+          ],
+          "correctOption": 0,
+          "solution": "Ground state ($n = 1$): $E_1 = -13.6\\text{ eV}$.\nSecond excited state ($n = 3$): $E_3 = -\\frac{13.6}{3^2} = -1.51\\text{ eV}$.\n$$\\Delta E = E_3 - E_1 = -1.51 - (-13.6) = +12.09\\text{ eV}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The impact parameter $b$ in Rutherford scattering is related to scattering angle $\\theta$ by:",
+          "image": "",
+          "options": [
+            "$b \\propto \\cot\\left(\\frac{\\theta}{2}\\right)$",
+            "$b \\propto \\tan\\left(\\frac{\\theta}{2}\\right)$",
+            "$b \\propto \\sin\\left(\\frac{\\theta}{2}\\right)$",
+            "$b \\propto \\cos\\left(\\frac{\\theta}{2}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "Rutherford's scattering formula gives $b = \\frac{1}{4\\pi\\varepsilon_0}\\frac{Z e^2 \\cot(\\theta/2)}{\\frac{1}{2}mv^2} \\implies b \\propto \\cot\\left(\\frac{\\theta}{2}\\right)$.\nFor head-on collisions ($b = 0$), $\\cot(\\theta/2) = 0 \\implies \\theta = 180^\\circ$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An electron makes a transition from $n = 3$ to $n = 2$ in a hydrogen atom. The emitted photon has energy equal to:",
+          "image": "",
+          "options": [
+            "$1.89\\text{ eV}$",
+            "$10.2\\text{ eV}$",
+            "$0.66\\text{ eV}$",
+            "$3.4\\text{ eV}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$E_3 = -\\frac{13.6}{3^2} = -1.51\\text{ eV}, \\quad E_2 = -\\frac{13.6}{2^2} = -3.40\\text{ eV}$$\n$$\\Delta E = E_3 - E_2 = -1.51 - (-3.40) = 1.89\\text{ eV}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "How many distinct spectral emission lines can be observed when an electron in a hydrogen sample relaxes from $n = 5$ to the ground state ($n = 1$)?",
+          "image": "",
+          "options": [
+            "$10$",
+            "$15$",
+            "$6$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "Total number of emission spectral lines: $N = \\frac{n(n - 1)}{2} = \\frac{5(5 - 1)}{2} = \\frac{20}{2} = 10$."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of kinetic energy to total energy for an electron revolving in any Bohr orbit of a hydrogen atom is:",
+          "image": "",
+          "options": [
+            "$-1$",
+            "$+1$",
+            "$-2$",
+            "$+2$"
+          ],
+          "correctOption": 0,
+          "solution": "For hydrogen-like orbits, $K = +\\frac{kZe^2}{2r}$ and $E = -\\frac{kZe^2}{2r} = -K$.\n$$\\frac{K}{E} = \\frac{K}{-K} = -1$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The electric current $I$ associated with the revolving electron in the $n^{\\text{th}}$ orbit of a hydrogen atom is proportional to:",
+          "image": "",
+          "options": [
+            "$n^{-3}$",
+            "$n^{-2}$",
+            "$n^{-1}$",
+            "$n^{-5}$"
+          ],
+          "correctOption": 0,
+          "solution": "Current $I = \\frac{e}{T_n} \\propto \\frac{1}{n^3} = n^{-3}$."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Rutherford's nuclear model of the atom could NOT explain:",
+          "image": "",
+          "options": [
+            "Stability of the atom and discrete atomic line spectra",
+            "Existence of the positively charged nucleus",
+            "Large angle scattering of $\\alpha$-particles",
+            "Mass distribution within the atom"
+          ],
+          "correctOption": 0,
+          "solution": "Classical electrodynamics requires an accelerating orbiting electron to radiate energy continuously and spiral into the nucleus in $\\sim 10^{-10}\\text{ s}$, creating a continuous spectrum. Rutherford's model could not explain atomic stability or discrete line spectra."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the energy of a hydrogen atom in the ground state is $-13.6\\text{ eV}$, the energy of $\\text{Li}^{2+}$ ion in its first excited state ($n = 2$) is:",
+          "image": "",
+          "options": [
+            "$-30.6\\text{ eV}$",
+            "$-13.6\\text{ eV}$",
+            "$-122.4\\text{ eV}$",
+            "$-3.4\\text{ eV}$"
+          ],
+          "correctOption": 0,
+          "solution": "For $\\text{Li}^{2+}$, atomic number $Z = 3$. First excited state is $n = 2$.\n$$E_2 = -13.6 \\times \\frac{Z^2}{n^2} = -13.6 \\times \\frac{3^2}{2^2} = -13.6 \\times \\frac{9}{4} = -30.6\\text{ eV}$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The de Broglie wavelength of an electron in the first Bohr orbit ($n = 1$) of radius $r_1$ in a hydrogen atom is:",
+          "image": "",
+          "options": [
+            "$2\\pi r_1$",
+            "$\\pi r_1$",
+            "$4\\pi r_1$",
+            "$\\frac{r_1}{2\\pi}$"
+          ],
+          "correctOption": 0,
+          "solution": "From $2\\pi r_n = n\\lambda$, for $n = 1$:\n$$2\\pi r_1 = 1 \\times \\lambda \\implies \\lambda = 2\\pi r_1$$"
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the Bohr model of the hydrogen atom, the magnetic field produced at the nucleus by the circulating electron in the $n^{\\text{th}}$ orbit is proportional to:",
+          "image": "",
+          "options": [
+            "$n^{-5}$",
+            "$n^{-3}$",
+            "$n^{-2}$",
+            "$n^{-4}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$B = \\frac{\\mu_0 I}{2r_n} \\propto \\frac{n^{-3}}{n^2} = n^{-5}$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of the longest wavelength in the Lyman series to the longest wavelength in the Balmer series of hydrogen spectrum is:",
+          "image": "",
+          "options": [
+            "$\\frac{5}{27}$",
+            "$\\frac{27}{5}$",
+            "$\\frac{4}{9}$",
+            "$\\frac{1}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Lyman longest ($n = 2 \\to 1$): $\\frac{1}{\\lambda_{L}} = R\\left(1 - \\frac{1}{4}\\right) = \\frac{3R}{4} \\implies \\lambda_L = \\frac{4}{3R}$.\nBalmer longest ($n = 3 \\to 2$): $\\frac{1}{\\lambda_{B}} = R\\left(\\frac{1}{4} - \\frac{1}{9}\\right) = \\frac{5R}{36} \\implies \\lambda_B = \\frac{36}{5R}$.\n$$\\frac{\\lambda_L}{\\lambda_B} = \\frac{4/(3R)}{36/(5R)} = \\frac{4}{3} \\times \\frac{5}{36} = \\frac{5}{27}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Bohr's atomic model is strictly applicable to:",
+          "image": "",
+          "options": [
+            "Single-electron (hydrogen-like) species only",
+            "Multi-electron atoms like neutral Carbon",
+            "All diatomic molecules",
+            "Neutral Helium atoms only"
+          ],
+          "correctOption": 0,
+          "solution": "Bohr's simple electrostatic orbit model accounts only for two-body single-electron systems ($\\text{H}, \\text{He}^+, \\text{Li}^{2+}, \\text{Be}^{3+}$) and fails to account for electron-electron repulsion in multi-electron atoms."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "What is the orbital radius of an electron in $\\text{He}^+$ ion in its ground state? ($a_0 = 0.529\\text{ \\AA}$)",
+          "image": "",
+          "options": [
+            "$0.265\\text{ \\AA}$",
+            "$0.529\\text{ \\AA}$",
+            "$1.058\\text{ \\AA}$",
+            "$0.132\\text{ \\AA}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$r = \\frac{n^2 a_0}{Z} = \\frac{1^2 \\times 0.529\\text{ \\AA}}{2} = 0.2645\\text{ \\AA} \\approx 0.265\\text{ \\AA}$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When an electron jumps from a higher orbit $n_2$ to a lower orbit $n_1$ in a hydrogen atom, the orbital speed of the electron:",
+          "image": "",
+          "options": [
+            "Increases",
+            "Decreases",
+            "Remains constant",
+            "Becomes zero"
+          ],
+          "correctOption": 0,
+          "solution": "Orbital speed is $v_n \\propto \\frac{1}{n}$. When jumping to a lower orbit ($n_1 < n_2$), the principal quantum number decreases, so the orbital velocity increases."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The series limit of the Paschen series in a hydrogen atom spectrum occurs at wavelength: (Take $R = 1.097 \\times 10^7\\text{ m}^{-1}$)",
+          "image": "",
+          "options": [
+            "$820.4\\text{ nm}$",
+            "$91.2\\text{ nm}$",
+            "$364.6\\text{ nm}$",
+            "$1458\\text{ nm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Paschen series limit ($n = \\infty \\to n = 3$):\n$$\\frac{1}{\\lambda} = R\\left(\\frac{1}{3^2} - 0\\right) = \\frac{R}{9} \\implies \\lambda = \\frac{9}{R} = \\frac{9}{1.097 \\times 10^7\\text{ m}^{-1}} \\approx 8.204 \\times 10^{-7}\\text{ m} = 820.4\\text{ nm}$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "An $\\alpha$-particle approaches a target nucleus with kinetic energy $K$. If the initial kinetic energy is doubled ($2K$), the distance of closest approach becomes:",
+          "image": "",
+          "options": [
+            "$\\frac{r_0}{2}$",
+            "$2r_0$",
+            "$\\frac{r_0}{4}$",
+            "$\\sqrt{2}r_0$"
+          ],
+          "correctOption": 0,
+          "solution": "$$r_0 = \\frac{1}{4\\pi\\varepsilon_0}\\frac{2Ze^2}{K} \\propto \\frac{1}{K}$$\nDoubling kinetic energy halves the distance of closest approach ($r_0' = r_0 / 2$)."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a hydrogen atom, the transition that results in emission of radiation with the HIGHEST frequency is:",
+          "image": "",
+          "options": [
+            "$n = 2 \\to n = 1$",
+            "$n = 3 \\to n = 2$",
+            "$n = 4 \\to n = 3$",
+            "$n = 5 \\to n = 4$"
+          ],
+          "correctOption": 0,
+          "solution": "Energy emitted: $\\Delta E_{2\\to 1} = 13.6(1 - 1/4) = 10.2\\text{ eV}$.\n$\\Delta E_{3\\to 2} = 1.89\\text{ eV}$, $\\Delta E_{4\\to 3} = 0.66\\text{ eV}$, $\\Delta E_{5\\to 4} = 0.31\\text{ eV}$.\nSince $\\Delta E = h\\nu$, the $n = 2 \\to n = 1$ transition has the largest energy change and highest frequency."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of the angular momentum of an electron in the $2^{\\text{nd}}$ orbit to that in the $4^{\\text{th}}$ orbit of a hydrogen atom is:",
+          "image": "",
+          "options": [
+            "$1 : 2$",
+            "$1 : 4$",
+            "$2 : 1$",
+            "$1 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Angular momentum $L_n = \\frac{n h}{2\\pi} \\propto n$.\n$$\\frac{L_2}{L_4} = \\frac{2}{4} = 1 : 2$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The Brackett spectral series of hydrogen corresponds to electronic transitions ending on quantum level:",
+          "image": "",
+          "options": [
+            "$n = 4$",
+            "$n = 3$",
+            "$n = 5$",
+            "$n = 2$"
+          ],
+          "correctOption": 0,
+          "solution": "In the hydrogen spectrum, Brackett series lines arise from transitions from higher levels ($n = 5, 6, 7, \\dots$) down to $n = 4$."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The acceleration of an electron in the $n^{\\text{th}}$ orbit of a hydrogen atom is proportional to:",
+          "image": "",
+          "options": [
+            "$n^{-4}$",
+            "$n^{-2}$",
+            "$n^{-3}$",
+            "$n^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$a_n = \\frac{v_n^2}{r_n} \\propto \\frac{(1/n)^2}{n^2} = \\frac{1/n^2}{n^2} = n^{-4}$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the wavelength of the first line of the Balmer series is $\\lambda$, the wavelength of the second line of the Balmer series is:",
+          "image": "",
+          "options": [
+            "$\\frac{20}{27}\\lambda$",
+            "$\\frac{27}{20}\\lambda$",
+            "$\\frac{3}{4}\\lambda$",
+            "$\\frac{5}{9}\\lambda$"
+          ],
+          "correctOption": 0,
+          "solution": "Line 1 ($n = 3 \\to 2$): $\\frac{1}{\\lambda_1} = R\\left(\\frac{1}{4} - \\frac{1}{9}\\right) = \\frac{5R}{36} \\implies \\lambda = \\frac{36}{5R}$.\nLine 2 ($n = 4 \\to 2$): $\\frac{1}{\\lambda_2} = R\\left(\\frac{1}{4} - \\frac{1}{16}\\right) = \\frac{3R}{16} \\implies \\lambda_2 = \\frac{16}{3R}$.\n$$\\frac{\\lambda_2}{\\lambda} = \\frac{16/(3R)}{36/(5R)} = \\frac{16}{3} \\times \\frac{5}{36} = \\frac{20}{27} \\implies \\lambda_2 = \\frac{20}{27}\\lambda$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The binding energy of an electron in the first excited state of a hydrogen atom is:",
+          "image": "",
+          "options": [
+            "$3.4\\text{ eV}$",
+            "$13.6\\text{ eV}$",
+            "$1.51\\text{ eV}$",
+            "$0.85\\text{ eV}$"
+          ],
+          "correctOption": 0,
+          "solution": "First excited state corresponds to $n = 2$.\nTotal energy $E_2 = -\\frac{13.6}{2^2} = -3.4\\text{ eV}$.\nBinding energy is the energy required to remove the electron to infinity: $\\text{B.E.} = -E_2 = +3.4\\text{ eV}$."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following transitions in a hydrogen atom emits a photon of MINIMUM wavelength?",
+          "image": "",
+          "options": [
+            "$n = 4 \\to n = 1$",
+            "$n = 2 \\to n = 1$",
+            "$n = 4 \\to n = 3$",
+            "$n = 3 \\to n = 2$"
+          ],
+          "correctOption": 0,
+          "solution": "Minimum wavelength corresponds to maximum energy change $\\Delta E = \\frac{hc}{\\lambda}$. Transition $n = 4 \\to 1$ releases $\\Delta E = 13.6(1 - 1/16) = 12.75\\text{ eV}$, which is the largest energy difference among the options."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The total energy of an electron in a stationary orbit of radius $r$ in a hydrogen atom is given by:",
+          "image": "",
+          "options": [
+            "$-\\frac{e^2}{8\\pi\\varepsilon_0 r}$",
+            "$-\\frac{e^2}{4\\pi\\varepsilon_0 r}$",
+            "$+\\frac{e^2}{8\\pi\\varepsilon_0 r}$",
+            "$-\\frac{e^2}{2\\pi\\varepsilon_0 r}$"
+          ],
+          "correctOption": 0,
+          "solution": "Kinetic energy $K = \\frac{e^2}{8\\pi\\varepsilon_0 r}$ and Potential energy $U = -\\frac{e^2}{4\\pi\\varepsilon_0 r}$.\n$$E = K + U = \\frac{e^2}{8\\pi\\varepsilon_0 r} - \\frac{e^2}{4\\pi\\varepsilon_0 r} = -\\frac{e^2}{8\\pi\\varepsilon_0 r}$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If an electron in a hydrogen atom drops from $n = 2$ to $n = 1$, the recoil momentum of the hydrogen atom is: ($R$ is Rydberg constant)",
+          "image": "",
+          "options": [
+            "$\\frac{3}{4}h R$",
+            "$\\frac{1}{4}h R$",
+            "$\\frac{4}{3}h R$",
+            "$h R$"
+          ],
+          "correctOption": 0,
+          "solution": "Wavelength of emitted photon: $\\frac{1}{\\lambda} = R\\left(1 - \\frac{1}{4}\\right) = \\frac{3R}{4}$.\nMomentum of emitted photon: $p = \\frac{h}{\\lambda} = \\frac{3}{4}h R$.\nBy conservation of momentum, the recoil momentum of the atom is $\\frac{3}{4}h R$."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of the area of the orbit of $n = 2$ to $n = 1$ of a hydrogen atom is:",
+          "image": "",
+          "options": [
+            "$16 : 1$",
+            "$4 : 1$",
+            "$8 : 1$",
+            "$2 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Orbit radius $r_n \\propto n^2$. Area of orbit $A_n = \\pi r_n^2 \\propto (n^2)^2 = n^4$.\n$$\\frac{A_2}{A_1} = \\left(\\frac{2}{1}\\right)^4 = 16 : 1$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In Rutherford's $\\alpha$-particle scattering experiment, the number of $\\alpha$-particles $N(\\theta)$ scattered at angle $\\theta$ is proportional to:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{\\sin^4(\\theta/2)}$",
+            "$\\frac{1}{\\sin^2(\\theta/2)}$",
+            "$\\sin^4\\left(\\frac{\\theta}{2}\\right)$",
+            "$\\frac{1}{\\cos^4(\\theta/2)}$"
+          ],
+          "correctOption": 0,
+          "solution": "Rutherford's differential scattering formula establishes that $N(\\theta) \\propto \\frac{1}{\\sin^4(\\theta/2)}$."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ratio of the transition frequency for $n = 3 \\to 1$ to that for $n = 2 \\to 1$ in a hydrogen atom is:",
+          "image": "",
+          "options": [
+            "$\\frac{32}{27}$",
+            "$\\frac{27}{32}$",
+            "$\\frac{8}{3}$",
+            "$\\frac{3}{8}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\nu_{3\\to 1} = R c\\left(1 - \\frac{1}{9}\\right) = \\frac{8}{9}Rc$$\n$$\\nu_{2\\to 1} = R c\\left(1 - \\frac{1}{4}\\right) = \\frac{3}{4}Rc$$\n$$\\frac{\\nu_{3\\to 1}}{\\nu_{2\\to 1}} = \\frac{8/9}{3/4} = \\frac{8}{9} \\times \\frac{4}{3} = \\frac{32}{27}$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When an electron in a hydrogen atom is excited from the ground state $n = 1$ to $n = 4$, its kinetic energy and potential energy respectively:",
+          "image": "",
+          "options": [
+            "Kinetic energy decreases and potential energy increases",
+            "Kinetic energy increases and potential energy decreases",
+            "Both kinetic and potential energy decrease",
+            "Both kinetic and potential energy increase"
+          ],
+          "correctOption": 0,
+          "solution": "As $n$ increases, radius $r$ increases. Kinetic energy $K = +\\frac{kZe^2}{2r}$ decreases, while potential energy $U = -\\frac{kZe^2}{r}$ becomes less negative (increases towards 0)."
+        }
+      ]
+    }
+  ]
+}
