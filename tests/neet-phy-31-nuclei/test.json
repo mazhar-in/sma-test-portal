@@ -1,0 +1,690 @@
+{
+  "testId": "neet-phy-31-nuclei",
+  "title": "Nuclei",
+  "syllabus": "Composition and size of nucleus, atomic masses, isotopes, isobars; isotones. Mass-energy relation, mass defect; binding energy per nucleon and its variation with mass number, nuclear fission, and nuclear fusion.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the nuclear radius of $^{27}\\text{Al}$ is $3.6\\text{ fm}$, the approximate nuclear radius of $^{64}\\text{Cu}$ is: (NEET 2020)",
+          "image": "",
+          "options": [
+            "$4.8\\text{ fm}$",
+            "$2.4\\text{ fm}$",
+            "$1.2\\text{ fm}$",
+            "$3.6\\text{ fm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Nuclear radius is $R = R_0 A^{1/3}$.\n$$\\frac{R_{\\text{Cu}}}{R_{\\text{Al}}} = \\left(\\frac{A_{\\text{Cu}}}{A_{\\text{Al}}}\\right)^{1/3} = \\left(\\frac{64}{27}\\right)^{1/3} = \\frac{4}{3}$$\n$$R_{\\text{Cu}} = \\frac{4}{3} \\times 3.6\\text{ fm} = 4.8\\text{ fm}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A nucleus with mass number $A = 240$ and binding energy per nucleon of $7.6\\text{ MeV}$ breaks into two fragments each of $A = 120$ with binding energy per nucleon of $8.5\\text{ MeV}$. The total gain in binding energy (energy released) is: (NEET 2021)",
+          "image": "",
+          "options": [
+            "$216\\text{ MeV}$",
+            "$0.9\\text{ MeV}$",
+            "$9.4\\text{ MeV}$",
+            "$804\\text{ MeV}$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial binding energy: $E_i = 240 \\times 7.6\\text{ MeV} = 1824\\text{ MeV}$.\nFinal binding energy: $E_f = 2 \\times (120 \\times 8.5\\text{ MeV}) = 240 \\times 8.5\\text{ MeV} = 2040\\text{ MeV}$.\n$$\\text{Energy released } Q = E_f - E_i = 2040 - 1824 = 216\\text{ MeV}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The energy equivalent of $0.5\\text{ g}$ of a substance is: (NEET 2020)",
+          "image": "",
+          "options": [
+            "$4.5 \\times 10^{13}\\text{ J}$",
+            "$1.5 \\times 10^{13}\\text{ J}$",
+            "$0.5 \\times 10^{13}\\text{ J}$",
+            "$4.5 \\times 10^{16}\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "From Einstein's mass-energy equation:\n$$E = m c^2 = (0.5 \\times 10^{-3}\\text{ kg}) \\times (3 \\times 10^8\\text{ m/s})^2 = 0.5 \\times 10^{-3} \\times 9 \\times 10^{16} = 4.5 \\times 10^{13}\\text{ J}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The binding energy per nucleon of $_{3}^{7}\\text{Li}$ and $_{2}^{4}\\text{He}$ nuclei are $5.60\\text{ MeV}$ and $7.06\\text{ MeV}$ respectively. In the reaction $_{3}^{7}\\text{Li} + _{1}^{1}\\text{H} \\to 2\\,_{2}^{4}\\text{He}$, the energy of reaction $Q$ is: (NEET 2014)",
+          "image": "",
+          "options": [
+            "$17.28\\text{ MeV}$",
+            "$19.6\\text{ MeV}$",
+            "$8.4\\text{ MeV}$",
+            "$1.46\\text{ MeV}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total binding energy of reactants: $E_{\\text{reactants}} = 7 \\times 5.60\\text{ MeV} + 0 = 39.20\\text{ MeV}$.\nTotal binding energy of products: $E_{\\text{products}} = 2 \\times (4 \\times 7.06\\text{ MeV}) = 8 \\times 7.06 = 56.48\\text{ MeV}$.\n$$Q = E_{\\text{products}} - E_{\\text{reactants}} = 56.48 - 39.20 = 17.28\\text{ MeV}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The mass density of a nucleus of mass number $A$ is proportional to: (NEET 2023)",
+          "image": "",
+          "options": [
+            "$A^0$ (independent of $A$)",
+            "$A^{1/3}$",
+            "$A^{2/3}$",
+            "$A^{-1/3}$"
+          ],
+          "correctOption": 0,
+          "solution": "Nuclear mass $M \\approx m A$ (where $m$ is average nucleon mass).\nNuclear volume $V = \\frac{4}{3}\\pi R^3 = \\frac{4}{3}\\pi (R_0 A^{1/3})^3 = \\frac{4}{3}\\pi R_0^3 A$.\n$$\\rho = \\frac{M}{V} = \\frac{m A}{\\frac{4}{3}\\pi R_0^3 A} = \\frac{3m}{4\\pi R_0^3} = \\text{constant} \\propto A^0$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two nuclei have mass numbers in the ratio $1 : 8$. The ratio of their nuclear radii is:",
+          "image": "",
+          "options": [
+            "$1 : 2$",
+            "$1 : 4$",
+            "$1 : 8$",
+            "$1 : \\sqrt{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\frac{R_1}{R_2} = \\left(\\frac{A_1}{A_2}\\right)^{1/3} = \\left(\\frac{1}{8}\\right)^{1/3} = \\frac{1}{2} = 1 : 2$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following pairs represents ISOBARS?",
+          "image": "",
+          "options": [
+            "$_{18}^{40}\\text{Ar}$ and $_{20}^{40}\\text{Ca}$",
+            "$_{6}^{12}\\text{C}$ and $_{6}^{14}\\text{C}$",
+            "$_{1}^{1}\\text{H}$ and $_{1}^{2}\\text{H}$",
+            "$_{7}^{14}\\text{N}$ and $_{8}^{16}\\text{O}$"
+          ],
+          "correctOption": 0,
+          "solution": "Isobars are atomic species having the same mass number ($A = 40$) but different atomic numbers ($Z = 18$ and $Z = 20$)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The pair of nuclei $_{6}^{13}\\text{C}$ and $_{7}^{14}\\text{N}$ are examples of:",
+          "image": "",
+          "options": [
+            "Isotones",
+            "Isotopes",
+            "Isobars",
+            "Isomers"
+          ],
+          "correctOption": 0,
+          "solution": "For $_{6}^{13}\\text{C}$: Neutron number $N = 13 - 6 = 7$.\nFor $_{7}^{14}\\text{N}$: Neutron number $N = 14 - 7 = 7$.\nNuclei having identical numbers of neutrons ($N$) are called isotones."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The energy equivalent of $1\\text{ unified atomic mass unit (1 u)}$ is approximately:",
+          "image": "",
+          "options": [
+            "$931.5\\text{ MeV}$",
+            "$93.15\\text{ MeV}$",
+            "$13.6\\text{ eV}$",
+            "$1.6 \\times 10^{-19}\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$1\\text{ u} = 1.6605 \\times 10^{-27}\\text{ kg}$$\n$$E = m c^2 = (1.6605 \\times 10^{-27}) \\times (2.9979 \\times 10^8)^2 \\approx 1.4924 \\times 10^{-10}\\text{ J} \\approx 931.5\\text{ MeV}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The peak of the binding energy per nucleon curve occurs around mass number $A = 56$ ($_{26}^{56}\\text{Fe}$), where the maximum value of $E_{bn}$ is approximately:",
+          "image": "",
+          "options": [
+            "$8.75\\text{ MeV/nucleon}$",
+            "$7.60\\text{ MeV/nucleon}$",
+            "$1.11\\text{ MeV/nucleon}$",
+            "$13.6\\text{ MeV/nucleon}$"
+          ],
+          "correctOption": 0,
+          "solution": "The binding energy curve reaches its maximum plateau at $_{26}^{56}\\text{Fe}$ with a value of approximately $8.75\\text{ MeV/nucleon}$, representing the most tightly bound and stable nucleus."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The nuclear force between two nucleons is characterized by which of the following properties?",
+          "image": "",
+          "options": [
+            "Strongest fundamental force in nature, short-ranged, and charge-independent",
+            "Long-ranged and inverse-square dependent",
+            "Strongly dependent on electric charge",
+            "Weaker than electrostatic forces"
+          ],
+          "correctOption": 0,
+          "solution": "The strong nuclear force is the strongest interaction in nature, operates over very short distances ($\\sim 1\\text{ to } 2\\text{ fm}$), saturates, and acts equally between $p\\text{-}p, n\\text{-}n,$ and $p\\text{-}n$ (charge independent)."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a nuclear reactor, heavy water ($\\text{D}_2\\text{O}$) or graphite is used as a moderator to:",
+          "image": "",
+          "options": [
+            "Slow down fast-moving fission neutrons to thermal energies",
+            "Absorb excess neutrons to stop the reaction",
+            "Cool down the reactor core only",
+            "Accelerate secondary neutrons"
+          ],
+          "correctOption": 0,
+          "solution": "Moderators undergo elastic collisions with fast fission neutrons ($E \\sim 2\\text{ MeV}$), slowing them down to thermal neutrons ($E \\sim 0.025\\text{ eV}$) suitable for inducing further $^{235}\\text{U}$ fission."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Nuclear fusion reactions require extremely high temperatures of the order of $10^7\\text{ K}$ to $10^8\\text{ K}$ primarily to:",
+          "image": "",
+          "options": [
+            "Provide sufficient kinetic energy to overcome the repulsive electrostatic Coulomb barrier between nuclei",
+            "Break all nuclear bonds",
+            "Ionize surrounding atoms",
+            "Increase the speed of light"
+          ],
+          "correctOption": 0,
+          "solution": "Positively charged nuclei experience strong electrostatic Coulomb repulsion at close range. Extreme thermal kinetic energies allow colliding nuclei to overcome this potential barrier and reach the short range of attractive nuclear forces."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Cadmium or Boron rods are inserted into a nuclear reactor as control rods because they:",
+          "image": "",
+          "options": [
+            "Have a very high cross-section for absorbing thermal neutrons",
+            "Slow down fast neutrons",
+            "Produce additional neutrons",
+            "Act as nuclear fuel"
+          ],
+          "correctOption": 0,
+          "solution": "Control rods made of cadmium or boron have very high neutron-absorption cross-sections and are raised or lowered to control the multiplication factor $k$ of the chain reaction."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The mass defect $\\Delta M$ of a nucleus $_{Z}^{A}\\text{X}$ having nuclear mass $M$ is given by:",
+          "image": "",
+          "options": [
+            "$[Z m_p + (A - Z)m_n] - M$",
+            "$M - [Z m_p + (A - Z)m_n]$",
+            "$[Z m_p + A m_n] - M$",
+            "$[(A - Z)m_p + Z m_n] - M$"
+          ],
+          "correctOption": 0,
+          "solution": "Mass defect is the difference between the total mass of individual constituent nucleons and the actual mass of the bound nucleus: $\\Delta M = [Z m_p + (A - Z)m_n] - M$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Nuclear density is of the order of:",
+          "image": "",
+          "options": [
+            "$10^{17}\\text{ kg/m}^3$",
+            "$10^{3}\\text{ kg/m}^3$",
+            "$10^{10}\\text{ kg/m}^3$",
+            "$10^{27}\\text{ kg/m}^3$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\rho = \\frac{3 m}{4\\pi R_0^3} = \\frac{3(1.66 \\times 10^{-27}\\text{ kg})}{4\\pi (1.2 \\times 10^{-15}\\text{ m})^3} \\approx 2.3 \\times 10^{17}\\text{ kg/m}^3$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "On the average, the number of neutrons released per fission of a $^{235}\\text{U}$ nucleus induced by a thermal neutron is approximately:",
+          "image": "",
+          "options": [
+            "$2.5$",
+            "$1.0$",
+            "$4.5$",
+            "$6.0$"
+          ],
+          "correctOption": 0,
+          "solution": "The thermal fission of $^{235}\\text{U}$ yields on average $2.5$ fast neutrons along with two intermediate-mass fission fragments and $\\approx 200\\text{ MeV}$ of energy."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The primary source of stellar energy in the interior of the Sun is:",
+          "image": "",
+          "options": [
+            "Thermonuclear proton-proton fusion cycle",
+            "Fission of Uranium-235",
+            "Gravitational contraction only",
+            "Combustion of hydrogen gas"
+          ],
+          "correctOption": 0,
+          "solution": "The Sun generates energy primarily via the multi-step proton-proton ($p\\text{-}p$) thermonuclear fusion cycle, fusing four protons into a helium nucleus ($_{2}^{4}\\text{He}$) with release of $\\approx 26.7\\text{ MeV}$ energy."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A complete nuclear fission of $1\\text{ kg}$ of $^{235}\\text{U}$ generates energy equivalent to approximately: (Assume $200\\text{ MeV}$ per fission)",
+          "image": "",
+          "options": [
+            "$8.2 \\times 10^{13}\\text{ J}$",
+            "$8.2 \\times 10^{10}\\text{ J}$",
+            "$1.2 \\times 10^{16}\\text{ J}$",
+            "$5.1 \\times 10^{12}\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "Number of nuclei in $1\\text{ kg}$: $N = \\frac{1000}{235} \\times 6.022 \\times 10^{23} \\approx 2.56 \\times 10^{24}$.\nTotal energy: $E = (2.56 \\times 10^{24}) \\times (200 \\times 10^6 \\times 1.6 \\times 10^{-19}\\text{ J}) \\approx 8.2 \\times 10^{13}\\text{ J}$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The saturation property of nuclear forces means that:",
+          "image": "",
+          "options": [
+            "A nucleon interacts only with its immediate neighboring nucleons",
+            "Nuclear force acts over infinite range",
+            "Nuclear density depends on mass number",
+            "Binding energy per nucleon increases linearly with $A$"
+          ],
+          "correctOption": 0,
+          "solution": "Nuclear forces have short range and exhibit saturation, meaning each nucleon interacts solely with adjacent neighboring nucleons within its immediate sphere of influence, keeping $E_{bn}$ roughly constant for medium-heavy nuclei."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following nuclei has the LOWEST binding energy per nucleon?",
+          "image": "",
+          "options": [
+            "$_{1}^{2}\\text{H}$ (Deuteron)",
+            "$_{2}^{4}\\text{He}$",
+            "$_{26}^{56}\\text{Fe}$",
+            "$_{92}^{238}\\text{U}$"
+          ],
+          "correctOption": 0,
+          "solution": "Deuteron ($_{1}^{2}\\text{H}$) has a total binding energy of only $2.224\\text{ MeV}$, giving a very low binding energy per nucleon of $\\frac{2.224}{2} = 1.112\\text{ MeV/nucleon}$."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When two light nuclei ($A \\le 10$) combine to form a heavier nucleus, the binding energy per nucleon of the product nucleus:",
+          "image": "",
+          "options": [
+            "Increases, leading to release of energy",
+            "Decreases, leading to absorption of energy",
+            "Remains unchanged",
+            "Becomes zero"
+          ],
+          "correctOption": 0,
+          "solution": "In nuclear fusion of light nuclei, the binding energy per nucleon increases as the system moves toward the more stable peak of the $E_{bn}$ curve, releasing the difference as kinetic energy and radiation."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The nuclear potential energy $V(r)$ between two nucleons as a function of separation distance $r$ is:",
+          "image": "",
+          "options": [
+            "Strongly repulsive for $r < r_0$ ($r_0 \\approx 0.8\\text{ fm}$) and attractive for $r > r_0$",
+            "Attractive for all values of $r$",
+            "Repulsive for all values of $r$",
+            "Zero for $r < 0.8\\text{ fm}$"
+          ],
+          "correctOption": 0,
+          "solution": "The nuclear potential is attractive at separations $r > 0.8\\text{ fm}$ to bind nucleons together, but becomes strongly repulsive for $r < 0.8\\text{ fm}$, preventing the nucleus from collapsing."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The mass of a $_{3}^{7}\\text{Li}$ nucleus is $0.042\\text{ u}$ less than the sum of masses of its free nucleons. The binding energy per nucleon of $_{3}^{7}\\text{Li}$ is:",
+          "image": "",
+          "options": [
+            "$5.6\\text{ MeV}$",
+            "$39.2\\text{ MeV}$",
+            "$2.8\\text{ MeV}$",
+            "$7.0\\text{ MeV}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total binding energy: $E_b = \\Delta m \\times 931.5\\text{ MeV} = 0.042 \\times 931.5 \\approx 39.12\\text{ MeV}$.\n$$\\text{Binding energy per nucleon } E_{bn} = \\frac{E_b}{A} = \\frac{39.12}{7} \\approx 5.59\\text{ MeV/nucleon} \\approx 5.6\\text{ MeV}$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For maintaining a controlled, sustained nuclear fission chain reaction at steady power output, the neutron multiplication factor $k$ must be exactly equal to:",
+          "image": "",
+          "options": [
+            "$1.0$",
+            "$0.5$",
+            "$2.0$",
+            "$0.0$"
+          ],
+          "correctOption": 0,
+          "solution": "For critical (steady-state) operation of a nuclear reactor, the reproduction factor must be $k = 1$. If $k > 1$, the reactor is supercritical (diverging), and if $k < 1$, it is subcritical (dying out)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The radius of a $_{6}^{12}\\text{C}$ nucleus is $R_1$ and that of a $_{56}^{137}\\text{Ba}$ nucleus is $R_2$. The ratio $R_2 / R_1$ is approximately:",
+          "image": "",
+          "options": [
+            "$2.25$",
+            "$11.4$",
+            "$1.50$",
+            "$4.50$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\frac{R_2}{R_1} = \\left(\\frac{137}{12}\\right)^{1/3} \\approx (11.417)^{1/3} \\approx 2.25$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a nuclear fission reaction: $^{235}\\text{U} + n \\to \\,^{144}\\text{Ba} + \\,^{89}\\text{Kr} + x\\,n$, the value of $x$ (number of released neutrons) is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$2$",
+            "$1$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "Balancing mass numbers: $235 + 1 = 144 + 89 + x \\implies 236 = 233 + x \\implies x = 3$."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following is a major advantage of nuclear fusion over nuclear fission as an energy source?",
+          "image": "",
+          "options": [
+            "Fusion fuel (hydrogen isotopes) is virtually unlimited and produces non-radioactive waste products",
+            "Fusion reactions occur spontaneously at room temperature",
+            "Fusion produces zero kinetic energy",
+            "Fusion does not require plasma confinement"
+          ],
+          "correctOption": 0,
+          "solution": "Fusion uses abundant fuels like deuterium from sea water and yields inert helium ($_{2}^{4}\\text{He}$), avoiding long-lived radioactive actinide waste typical of fission."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a typical nuclear fission event, the largest fraction of released energy ($\\,\\approx 80\\%$) appears in the form of:",
+          "image": "",
+          "options": [
+            "Kinetic energy of the fission fragments",
+            "Kinetic energy of prompt neutrons",
+            "Energy of prompt gamma-ray photons",
+            "Neutrino energy"
+          ],
+          "correctOption": 0,
+          "solution": "Out of $\\approx 200\\text{ MeV}$ per fission, about $165\\text{ to } 170\\text{ MeV}$ ($\\,\\approx 80\\%$) is released as kinetic energy of the two massive fission fragments."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Heavy nuclei with $A > 200$ undergo fission because:",
+          "image": "",
+          "options": [
+            "Electrostatic repulsion between a large number of protons reduces overall binding energy per nucleon",
+            "Nuclear forces become completely repulsive",
+            "They have fewer neutrons than protons",
+            "Their nuclear density drops to zero"
+          ],
+          "correctOption": 0,
+          "solution": "In heavy nuclei, the long-range Coulomb repulsion among numerous protons builds up and opposes the short-range nuclear attraction, lowering $E_{bn}$ from $8.75\\text{ MeV}$ down to $\\approx 7.6\\text{ MeV}$, making fission energetically favorable."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The isotopes $_{1}^{1}\\text{H}, _{1}^{2}\\text{H},$ and $_{1}^{3}\\text{H}$ have:",
+          "image": "",
+          "options": [
+            "Same number of protons but different numbers of neutrons",
+            "Same number of neutrons but different numbers of protons",
+            "Same mass number",
+            "Different chemical properties"
+          ],
+          "correctOption": 0,
+          "solution": "Isotopes are atoms of the same chemical element having the identical atomic number ($Z = 1$, same number of protons) but different mass numbers ($A = 1, 2, 3$, containing $0, 1,$ and $2$ neutrons)."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the binding energy of a deuteron ($_{1}^{2}\\text{H}$) is $2.22\\text{ MeV}$, the minimum energy of a $\\gamma$-ray photon needed to split a deuteron into a free proton and neutron is:",
+          "image": "",
+          "options": [
+            "$2.22\\text{ MeV}$",
+            "$1.11\\text{ MeV}$",
+            "$4.44\\text{ MeV}$",
+            "$0.51\\text{ MeV}$"
+          ],
+          "correctOption": 0,
+          "solution": "To disintegrate a bound deuteron (photodisintegration: $\\gamma + d \\to p + n$), the incident photon must supply at least the binding energy: $E_\\gamma \\ge 2.22\\text{ MeV}$."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Nuclear fusion is NOT possible at normal room temperatures because:",
+          "image": "",
+          "options": [
+            "Thermal velocity of nuclei is insufficient to penetrate the Coulomb barrier",
+            "Nuclear force is zero at room temperature",
+            "Mass defect becomes negative",
+            "Electrons absorb all emitted energy"
+          ],
+          "correctOption": 0,
+          "solution": "At room temperature, the average thermal energy ($\\,\\sim 0.025\\text{ eV}$) is negligible compared to the Coulomb repulsion barrier ($\\sim 0.1\\text{ to } 1\\text{ MeV}$), preventing nuclei from coming within nuclear interaction distance."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The mass of $_{8}^{16}\\text{O}$ nucleus is $15.99053\\text{ u}$. If mass of a proton is $1.00728\\text{ u}$ and that of a neutron is $1.00866\\text{ u}$, the mass defect of the oxygen nucleus is:",
+          "image": "",
+          "options": [
+            "$0.1370\\text{ u}$",
+            "$0.0137\\text{ u}$",
+            "$1.3700\\text{ u}$",
+            "$0.2740\\text{ u}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\Delta m = [8(1.00728) + 8(1.00866)] - 15.99053 = [8.05824 + 8.06928] - 15.99053 = 16.12752 - 15.99053 = 0.13699\\text{ u} \\approx 0.1370\\text{ u}$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The charge on an atomic nucleus containing $Z$ protons and $N$ neutrons is:",
+          "image": "",
+          "options": [
+            "$+Z e$",
+            "$+(Z + N)e$",
+            "$+N e$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Neutrons are electrically neutral, so the net positive nuclear charge is due to the $Z$ protons: $q = +Z e$."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a nuclear reaction, which of the following conservation laws MUST be strictly obeyed?",
+          "image": "",
+          "options": [
+            "Conservation of total mass-energy, total charge, and total nucleon number",
+            "Conservation of rest mass independently",
+            "Conservation of kinetic energy independently",
+            "Conservation of atomic number alone"
+          ],
+          "correctOption": 0,
+          "solution": "All nuclear reactions strictly conserve total relativistic mass-energy, electric charge, linear momentum, angular momentum, and total baryon/nucleon number ($A$)."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The binding energy per nucleon for a stable nucleus with mass number $30 < A < 170$ is roughly constant and equal to approximately:",
+          "image": "",
+          "options": [
+            "$8.5\\text{ MeV}$",
+            "$1.1\\text{ MeV}$",
+            "$13.6\\text{ eV}$",
+            "$200\\text{ MeV}$"
+          ],
+          "correctOption": 0,
+          "solution": "Over the broad middle range of the periodic table ($30 < A < 170$), the binding energy curve remains nearly flat at around $8.0\\text{ to } 8.7\\text{ MeV/nucleon}$ due to the saturation of short-range nuclear forces."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A nuclear reactor generating thermal power of $300\\text{ MW}$ operates on $^{235}\\text{U}$ fission ($200\\text{ MeV}$ per fission). The number of fissions occurring per second is:",
+          "image": "",
+          "options": [
+            "$9.375 \\times 10^{18}$",
+            "$1.5 \\times 10^{18}$",
+            "$3.125 \\times 10^{19}$",
+            "$6.25 \\times 10^{17}$"
+          ],
+          "correctOption": 0,
+          "solution": "Energy per fission $= 200 \\times 10^6 \\times 1.6 \\times 10^{-19}\\text{ J} = 3.2 \\times 10^{-11}\\text{ J}$.\n$$\\text{Fissions per second } n = \\frac{P}{E_{\\text{fission}}} = \\frac{300 \\times 10^6\\text{ W}}{3.2 \\times 10^{-11}\\text{ J}} = 9.375 \\times 10^{18}\\text{ s}^{-1}$$"
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "When a neutron is captured by a $_{92}^{235}\\text{U}$ nucleus, the compound nucleus formed before fission occurs is:",
+          "image": "",
+          "options": [
+            "$_{92}^{236}\\text{U}^*$",
+            "$_{92}^{234}\\text{U}$",
+            "$_{93}^{236}\\text{Np}$",
+            "$_{90}^{232}\\text{Th}$"
+          ],
+          "correctOption": 0,
+          "solution": "$$_{92}^{235}\\text{U} + \\,_{0}^{1}n \\to \\,_{92}^{236}\\text{U}^*$$\nThe highly excited compound nucleus $_{92}^{236}\\text{U}^*$ rapidly oscillates, deforms, and splits into two fission fragments."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two protons are separated by a distance of $1\\text{ fm}$ ($10^{-15}\\text{ m}$). The ratio of nuclear force $F_n$ to electrostatic repulsive force $F_e$ between them is of the order of:",
+          "image": "",
+          "options": [
+            "$10^2$",
+            "$10^{-2}$",
+            "$10^{-38}$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "At separations of $\\approx 1\\text{ fm}$, the strong nuclear force is approximately 50 to 100 times ($10^2$) stronger than the electrostatic Coulomb repulsive force between two protons."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The pair of nuclei $_{1}^{3}\\text{H}$ and $_{2}^{3}\\text{He}$ are:",
+          "image": "",
+          "options": [
+            "Isobars and mirror nuclei",
+            "Isotopes",
+            "Isotones",
+            "Isomers"
+          ],
+          "correctOption": 0,
+          "solution": "Both have the same mass number $A = 3$ (isobars). Since the numbers of protons and neutrons are interchanged ($_{1}^{3}\\text{H}$ has $1p, 2n$; $_{2}^{3}\\text{He}$ has $2p, 1n$), they are also mirror nuclei."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The energy released during the fusion of four protons into one helium nucleus ($4\\,_{1}^{1}\\text{H} \\to \\,_{2}^{4}\\text{He} + 2e^+ + 2\\nu + 26.7\\text{ MeV}$) per unit mass is roughly how many times that of $^{235}\\text{U}$ fission?",
+          "image": "",
+          "options": [
+            "$\\approx 7$ times higher",
+            "$\\approx 7$ times lower",
+            "Equal",
+            "$\\approx 1000$ times lower"
+          ],
+          "correctOption": 0,
+          "solution": "Energy released per unit mass in fusion: $\\frac{26.7\\text{ MeV}}{4\\text{ u}} \\approx 6.7\\text{ MeV/u}$.\nEnergy released per unit mass in fission: $\\frac{200\\text{ MeV}}{235\\text{ u}} \\approx 0.85\\text{ MeV/u}$.\n$$\\frac{\\text{Fusion yield/mass}}{\\text{Fission yield/mass}} = \\frac{6.7}{0.85} \\approx 7.8 \\approx 7\\text{ times}$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the nuclear radius of $_{6}^{12}\\text{C}$ is $R_C$, the nuclear radius of $_{79}^{197}\\text{Au}$ is:",
+          "image": "",
+          "options": [
+            "$\\approx 2.54 R_C$",
+            "$\\approx 16.4 R_C$",
+            "$\\approx 4.0 R_C$",
+            "$\\approx 1.5 R_C$"
+          ],
+          "correctOption": 0,
+          "solution": "$$\\frac{R_{\\text{Au}}}{R_C} = \\left(\\frac{197}{12}\\right)^{1/3} = (16.417)^{1/3} \\approx 2.541 \\implies R_{\\text{Au}} \\approx 2.54 R_C$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The stability of an atomic nucleus depends primarily on its:",
+          "image": "",
+          "options": [
+            "Binding energy per nucleon ($E_{bn}$)",
+            "Total binding energy only",
+            "Total number of nucleons $A$",
+            "Total mass defect alone"
+          ],
+          "correctOption": 0,
+          "solution": "The binding energy per nucleon ($E_{bn} = E_b / A$) measures the average stability of a bound nucleon; a higher $E_{bn}$ indicates a more stable nucleus."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "During a typical D-T thermonuclear fusion reaction $_{1}^{2}\\text{H} + \\,_{1}^{3}\\text{H} \\to \\,_{2}^{4}\\text{He} + n + 17.6\\text{ MeV}$, the neutron carries away an energy of approximately:",
+          "image": "",
+          "options": [
+            "$14.1\\text{ MeV}$",
+            "$3.5\\text{ MeV}$",
+            "$8.8\\text{ MeV}$",
+            "$17.6\\text{ MeV}$"
+          ],
+          "correctOption": 0,
+          "solution": "By conservation of linear momentum: $K_n / K_\\alpha = m_\\alpha / m_n \\approx 4 / 1$.\n$$K_n = \\frac{4}{4 + 1} \\times 17.6\\text{ MeV} = \\frac{4}{5} \\times 17.6 = 14.08\\text{ MeV} \\approx 14.1\\text{ MeV}$$\nThe remaining $3.5\\text{ MeV}$ is carried by the $\\alpha$-particle."
+        }
+      ]
+    }
+  ]
+}
