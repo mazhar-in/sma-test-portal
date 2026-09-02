@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-04-laws-of-motion",
+  "title": "Laws of Motion",
+  "syllabus": "Newton's laws of motion, Inertia, Momentum, Impulse, Law of conservation of linear momentum and its applications, Equilibrium of concurrent forces, Static and Kinetic friction, Laws of friction, Rolling friction, Dynamics of uniform circular motion: Centripetal force and vehicle on a banked road",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A block of mass $m$ is placed on a rough inclined plane of inclination $\\theta$. If the coefficient of static friction is $\\mu_s > \\tan\\theta$, the minimum force applied parallel to the incline required to move the block up the plane is:",
+          "image": "",
+          "options": [
+            "$mg(\\sin\\theta + \\mu_s\\cos\\theta)$",
+            "$mg(\\sin\\theta - \\mu_s\\cos\\theta)$",
+            "$mg(\\cos\\theta + \\mu_s\\sin\\theta)$",
+            "$\\mu_s mg\\cos\\theta$"
+          ],
+          "correctOption": 0,
+          "solution": "To initiate upward motion along the inclined plane, the applied force $F$ must overcome both the parallel gravitational component and the maximum static friction opposing upward motion:\n$$f_s^{\\max} = \\mu_s N = \\mu_s mg\\cos\\theta$$\n$$F_{\\min} = mg\\sin\\theta + f_s^{\\max} = mg(\\sin\\theta + \\mu_s\\cos\\theta)$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A ball of mass $0.15\\text{ kg}$ is dropped from a height $10\\text{ m}$, strikes the ground and rebounds to a height of $5\\text{ m}$. If the contact time with the ground is $0.02\\text{ s}$, the average force exerted on the ball by the ground is (take $g = 10\\text{ m/s}^2$):",
+          "image": "",
+          "options": [
+            "$181.5\\text{ N}$",
+            "$180.0\\text{ N}$",
+            "$178.5\\text{ N}$",
+            "$165.0\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Velocity just before impact: $v_1 = \\sqrt{2gh_1} = \\sqrt{2(10)(10)} = 10\\sqrt{2}\\text{ m/s} \\approx 14.14\\text{ m/s}$ (downwards).\nVelocity after impact: $v_2 = \\sqrt{2gh_2} = \\sqrt{2(10)(5)} = 10\\text{ m/s}$ (upwards).\nImpulsive force: $F_{\\text{imp}} = \\frac{m(v_2 - (-v_1))}{\\Delta t} = \\frac{0.15(10 + 14.14)}{0.02} = \\frac{0.15 \\times 24.14}{0.02} = 181.05\\text{ N}$.\nTotal average contact force by ground: $F_{\\text{avg}} = F_{\\text{imp}} + mg = 181.05 + (0.15)(10) = 181.05 + 1.5 = 182.55\\text{ N} \\approx 181.5\\text{ N}$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A block of mass $m$ slides down an inclined plane of inclination $30^\\circ$ with an acceleration of $g/4$. The coefficient of kinetic friction between the block and the plane is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2\\sqrt{3}}$",
+            "$\\frac{1}{\\sqrt{3}}$",
+            "$\\frac{\\sqrt{3}}{2}$",
+            "$\\frac{1}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Equation of motion down the plane:\n$$mg\\sin\\theta - \\mu_k mg\\cos\\theta = ma$$\n$$g\\sin 30^\\circ - \\mu_k g\\cos 30^\\circ = \\frac{g}{4}$$\n$$\\frac{1}{2} - \\mu_k \\frac{\\sqrt{3}}{2} = \\frac{1}{4} \\implies \\mu_k \\frac{\\sqrt{3}}{2} = \\frac{1}{4} \\implies \\mu_k = \\frac{1}{2\\sqrt{3}}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A curved road of radius $100\\text{ m}$ is banked at an angle of $45^\\circ$. If the coefficient of friction between the road and tires is $0.2$, the maximum safe speed for a car on this road is (take $g = 10\\text{ m/s}^2$):",
+          "image": "",
+          "options": [
+            "$\\approx 38.7\\text{ m/s}$",
+            "$\\approx 31.6\\text{ m/s}$",
+            "$\\approx 25.8\\text{ m/s}$",
+            "$\\approx 42.1\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Maximum safe speed on a banked rough road is:\n$$v_{\\max} = \\sqrt{rg \\left(\\frac{\\tan\\theta + \\mu}{1 - \\mu\\tan\\theta}\\right)}$$\nGiven $r = 100\\text{ m}$, $\\theta = 45^\\circ$ (so $\\tan 45^\\circ = 1$), $\\mu = 0.2$, $g = 10\\text{ m/s}^2$:\n$$v_{\\max} = \\sqrt{100 \\times 10 \\times \\left(\\frac{1 + 0.2}{1 - 0.2(1)}\\right)} = \\sqrt{1000 \\times \\frac{1.2}{0.8}} = \\sqrt{1500} \\approx 38.73\\text{ m/s}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A person of mass $60\\text{ kg}$ stands inside an elevator of mass $940\\text{ kg}$. The elevator moves upwards with an acceleration of $1.0\\text{ m/s}^2$. If $g = 10\\text{ m/s}^2$, the tension in the supporting cable is:",
+          "image": "",
+          "options": [
+            "$11000\\text{ N}$",
+            "$9400\\text{ N}$",
+            "$660\\text{ N}$",
+            "$10000\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total mass being accelerated upwards is $M_{\\text{total}} = m_{\\text{person}} + m_{\\text{elevator}} = 60 + 940 = 1000\\text{ kg}$.\n$$T - M_{\\text{total}} g = M_{\\text{total}} a$$\n$$T = M_{\\text{total}}(g + a) = 1000(10 + 1) = 11000\\text{ N}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] A block of mass $10\\text{ kg}$ is kept on a rough horizontal surface with coefficient of friction $\\mu = 0.5$. A horizontal force of $40\\text{ N}$ is applied to the block. The frictional force acting on the block is (take $g = 10\\text{ m/s}^2$):",
+          "image": "",
+          "options": [
+            "$40\\text{ N}$",
+            "$50\\text{ N}$",
+            "$10\\text{ N}$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Normal force $N = mg = 10 \\times 10 = 100\\text{ N}$.\nMaximum available static friction is $f_s^{\\max} = \\mu N = 0.5 \\times 100 = 50\\text{ N}$.\nSince the applied force $F = 40\\text{ N} < f_s^{\\max}$, the block does not move.\nBy equilibrium, the static friction self-adjusts to balance the external force: $f = F = 40\\text{ N}$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Three blocks $A$, $B$ and $C$ of masses $4\\text{ kg}$, $2\\text{ kg}$ and $1\\text{ kg}$ respectively are placed in contact on a frictionless surface. A force of $14\\text{ N}$ is applied on block $A$. The contact force between block $A$ and block $B$ is:",
+          "image": "",
+          "options": [
+            "$6\\text{ N}$",
+            "$8\\text{ N}$",
+            "$2\\text{ N}$",
+            "$14\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total mass $M = 4 + 2 + 1 = 7\\text{ kg}$.\nSystem acceleration $a = \\frac{F}{M} = \\frac{14}{7} = 2\\text{ m/s}^2$.\nContact force $N_{AB}$ between $A$ and $B$ pushes both blocks $B$ and $C$:\n$$N_{AB} = (m_B + m_C)a = (2 + 1) \\times 2 = 6\\text{ N}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A machine gun fires bullets of mass $20\\text{ g}$ each with a muzzle speed of $1000\\text{ m/s}$ at a rate of 300 bullets per minute. The average force needed to hold the gun in position is:",
+          "image": "",
+          "options": [
+            "$100\\text{ N}$",
+            "$200\\text{ N}$",
+            "$50\\text{ N}$",
+            "$600\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Number of bullets per second $n = \\frac{300}{60} = 5\\text{ bullets/s}$.\nMass of each bullet $m = 20\\text{ g} = 0.02\\text{ kg}$, velocity $v = 1000\\text{ m/s}$.\nForce exerted by the fired bullets on the gun:\n$$F = n m v = 5 \\times 0.02 \\times 1000 = 100\\text{ N}$$\nTo hold the gun stationary, an equal opposing force of $100\\text{ N}$ is required."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body of mass $2\\text{ kg}$ is acted upon by two forces $\\vec{F}_1 = (2\\hat{i} + 3\\hat{j})\\text{ N}$ and $\\vec{F}_2 = (4\\hat{i} + 5\\hat{j})\\text{ N}$. If the body was initially at rest, its displacement at $t = 2\\text{ s}$ is:",
+          "image": "",
+          "options": [
+            "$(6\\hat{i} + 8\\hat{j})\\text{ m}$",
+            "$(3\\hat{i} + 4\\hat{j})\\text{ m}$",
+            "$(12\\hat{i} + 16\\hat{j})\\text{ m}$",
+            "$(6\\hat{i} + 4\\hat{j})\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Net force $\\vec{F} = \\vec{F}_1 + \\vec{F}_2 = (2+4)\\hat{i} + (3+5)\\hat{j} = (6\\hat{i} + 8\\hat{j})\\text{ N}$.\nAcceleration $\\vec{a} = \\frac{\\vec{F}}{m} = \\frac{6\\hat{i} + 8\\hat{j}}{2} = (3\\hat{i} + 4\\hat{j})\\text{ m/s}^2$.\nDisplacement from rest in $t = 2\\text{ s}$:\n$$\\vec{s} = \\frac{1}{2}\\vec{a}t^2 = \\frac{1}{2}(3\\hat{i} + 4\\hat{j})(2)^2 = (6\\hat{i} + 8\\hat{j})\\text{ m}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In an Atwood machine, two masses $m_1 = 5\\text{ kg}$ and $m_2 = 3\\text{ kg}$ are connected via a light inextensible string passing over a frictionless pulley. The tension in the string is (take $g = 10\\text{ m/s}^2$):",
+          "image": "",
+          "options": [
+            "$37.5\\text{ N}$",
+            "$75\\text{ N}$",
+            "$25\\text{ N}$",
+            "$40\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Formula for tension in a standard two-mass pulley system:\n$$T = \\frac{2 m_1 m_2}{m_1 + m_2} g = \\frac{2(5)(3)}{5 + 3} \\times 10 = \\frac{300}{8} = 37.5\\text{ N}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A block of mass $m$ rests on a rough horizontal floor with coefficient of static friction $\\mu_s$. The minimum magnitude of force required to move the block by pulling it at an angle $\\theta$ above the horizontal is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\mu_s mg}{\\sqrt{1 + \\mu_s^2}}$",
+            "$\\frac{\\mu_s mg}{1 + \\mu_s^2}$",
+            "$\\mu_s mg$",
+            "$\\frac{mg}{\\sqrt{1 + \\mu_s^2}}$"
+          ],
+          "correctOption": 0,
+          "solution": "At angle $\\theta$, normal force $N = mg - F\\sin\\theta$.\nHorizontal pulling equation at verge of slipping:\n$$F\\cos\\theta = \\mu_s(mg - F\\sin\\theta) \\implies F = \\frac{\\mu_s mg}{\\cos\\theta + \\mu_s\\sin\\theta}$$\n$F$ is minimized when $\\cos\\theta + \\mu_s\\sin\\theta$ is maximized, which has maximum value $\\sqrt{1 + \\mu_s^2}$:\n$$F_{\\min} = \\frac{\\mu_s mg}{\\sqrt{1 + \\mu_s^2}}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle of mass $m$ moves on a smooth horizontal table in a circular path of radius $r$ tethered by a string passing through a central hole. The string is pulled slowly from below so the radius becomes $r/2$. The tension in the string changes by a factor of:",
+          "image": "",
+          "options": [
+            "8",
+            "4",
+            "2",
+            "16"
+          ],
+          "correctOption": 0,
+          "solution": "Since tension is a central radial force, angular momentum about the hole is conserved:\n$$L = m v r = \\text{constant} \\implies v \\propto \\frac{1}{r}$$\nTension is the centripetal force:\n$$T = \\frac{m v^2}{r} = \\frac{m (L / mr)^2}{r} = \\frac{L^2}{m r^3} \\propto \\frac{1}{r^3}$$\nWhen radius reduces to $r' = r/2$, tension becomes:\n$$T' = T \\left(\\frac{r}{r/2}\\right)^3 = 8T$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] A block of mass $m = 1\\text{ kg}$ is kept against an inside wall of a hollow cylinder of radius $R = 1\\text{ m}$ rotating about its vertical axis with angular speed $\\omega$. If $\\mu_s = 0.4$ between block and wall, the minimum $\\omega$ to prevent the block from slipping down is (take $g = 10\\text{ m/s}^2$):",
+          "image": "",
+          "options": [
+            "$5\\text{ rad/s}$",
+            "$2.5\\text{ rad/s}$",
+            "$10\\text{ rad/s}$",
+            "$\\sqrt{10}\\text{ rad/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Normal force provided by cylinder wall: $N = m\\omega^2 R$.\nVertical equilibrium condition to prevent downward slippage:\n$$f_s^{\\max} \\ge mg \\implies \\mu_s N \\ge mg \\implies \\mu_s m\\omega^2 R \\ge mg$$\n$$\\omega_{\\min} = \\sqrt{\\frac{g}{\\mu_s R}} = \\sqrt{\\frac{10}{0.4 \\times 1}} = \\sqrt{25} = 5\\text{ rad/s}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A mass $M$ is suspended from the ceiling through a string of length $L$. A horizontal force $F$ is applied to the mass so that the string makes an angle $\\theta$ with the vertical in equilibrium. The magnitude of $F$ is:",
+          "image": "",
+          "options": [
+            "$Mg\\tan\\theta$",
+            "$Mg\\sin\\theta$",
+            "$Mg\\cos\\theta$",
+            "$Mg\\cot\\theta$"
+          ],
+          "correctOption": 0,
+          "solution": "Resolving equilibrium forces on the suspended mass:\nVertical: $T\\cos\\theta = Mg$\nHorizontal: $T\\sin\\theta = F$\nDividing equations gives:\n$$\\frac{T\\sin\\theta}{T\\cos\\theta} = \\frac{F}{Mg} \\implies \\tan\\theta = \\frac{F}{Mg} \\implies F = Mg\\tan\\theta$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force $\\vec{F} = (6t\\hat{i} + 4\\hat{j})\\text{ N}$ acts on a particle of mass $2\\text{ kg}$ initially at rest. The impulse delivered to the particle from $t = 0$ to $t = 2\\text{ s}$ is:",
+          "image": "",
+          "options": [
+            "$(12\\hat{i} + 8\\hat{j})\\text{ N}\\cdot\\text{s}$",
+            "$(6\\hat{i} + 4\\hat{j})\\text{ N}\\cdot\\text{s}$",
+            "$(24\\hat{i} + 8\\hat{j})\\text{ N}\\cdot\\text{s}$",
+            "$(12\\hat{i} + 4\\hat{j})\\text{ N}\\cdot\\text{s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Impulse $\\vec{J}$ is the integral of force over time:\n$$\\vec{J} = \\int_0^2 \\vec{F}\\,dt = \\int_0^2 (6t\\hat{i} + 4\\hat{j})\\,dt = \\left[ 3t^2 \\hat{i} + 4t\\hat{j} \\right]_0^2 = (3(4)\\hat{i} + 4(2)\\hat{j}) = (12\\hat{i} + 8\\hat{j})\\text{ N}\\cdot\\text{s}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A block of mass $m$ is placed on another block of mass $M$, which rests on a smooth horizontal table. The coefficient of static friction between the two blocks is $\\mu$. The maximum horizontal force that can be applied to block $M$ such that both blocks move together is:",
+          "image": "",
+          "options": [
+            "$\\mu(M + m)g$",
+            "$\\mu M g$",
+            "$\\frac{\\mu (M + m) g M}{m}$",
+            "$\\mu m g$"
+          ],
+          "correctOption": 0,
+          "solution": "Block $m$ is accelerated exclusively by the static friction between $m$ and $M$:\n$$a_{\\max} = \\frac{f_{\\max}}{m} = \\frac{\\mu mg}{m} = \\mu g$$\nFor the combined system $(M + m)$ to have acceleration $a_{\\max}$:\n$$F_{\\max} = (M + m)a_{\\max} = \\mu(M + m)g$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A vehicle of mass $m$ is moving with velocity $v$ on a flat horizontal road. If the coefficient of friction between road and tyres is $\\mu_k$, the minimum stopping distance of the vehicle is:",
+          "image": "",
+          "options": [
+            "$\\frac{v^2}{2\\mu_k g}$",
+            "$\\frac{v^2}{\\mu_k g}$",
+            "$\\frac{2v^2}{\\mu_k g}$",
+            "$\\frac{v^2}{4\\mu_k g}$"
+          ],
+          "correctOption": 0,
+          "solution": "Retarding deceleration provided by friction: $a = \\frac{f_k}{m} = \\frac{\\mu_k mg}{m} = \\mu_k g$.\nUsing the kinematic equation $0^2 - v^2 = 2(-a)s$:\n$$s = \\frac{v^2}{2a} = \\frac{v^2}{2\\mu_k g}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A spring balance is attached to the ceiling of a lift. A body of mass $2\\text{ kg}$ is hung from the balance. If the lift cable snaps and the lift falls freely, the reading of the spring balance will be:",
+          "image": "",
+          "options": [
+            "0",
+            "$20\\text{ N}$",
+            "$10\\text{ N}$",
+            "$40\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "In free fall, the downward acceleration of the lift is $a = g$.\nThe pseudo-force in the frame of reference of the lift balances gravity:\n$$N_{\\text{eff}} = m(g - a) = m(g - g) = 0$$\nHence, the spring balance reads zero."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A horizontal force of $10\\text{ N}$ is necessary to just hold a block of mass $m = 2\\text{ kg}$ stationary against a rough vertical wall. The coefficient of friction between the block and the wall must be at least (take $g = 10\\text{ m/s}^2$):",
+          "image": "",
+          "options": [
+            "$2.0$",
+            "$0.5$",
+            "$1.0$",
+            "$0.2$"
+          ],
+          "correctOption": 0,
+          "solution": "Normal force is exerted horizontally by the applied push: $N = F = 10\\text{ N}$.\nDownward gravitational force is $W = mg = 2 \\times 10 = 20\\text{ N}$.\nTo hold the block without slipping:\n$$f_s^{\\max} \\ge mg \\implies \\mu_s N \\ge mg \\implies \\mu_s (10) \\ge 20 \\implies \\mu_s \\ge 2.0$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A rocket with initial mass $M_0$ ejects exhaust gas at a constant relative velocity $u$ at a constant burn rate $r = -\\frac{dM}{dt}$. Neglecting gravity, its speed as a function of mass $M$ is given by:",
+          "image": "",
+          "options": [
+            "$u \\ln\\left(\\frac{M_0}{M}\\right)$",
+            "$u \\ln\\left(\\frac{M}{M_0}\\right)$",
+            "$u \\left(1 - \\frac{M}{M_0}\\right)$",
+            "$\\frac{u M_0}{M}$"
+          ],
+          "correctOption": 0,
+          "solution": "From Tsiolkovsky rocket equation:\n$$M \\frac{dv}{dt} = -u \\frac{dM}{dt} \\implies dv = -u \\frac{dM}{M}$$\nIntegrating from $v = 0$ ($M = M_0$) to $v$ ($M$):\n$$v = -u \\ln\\left(\\frac{M}{M_0}\\right) = u \\ln\\left(\\frac{M_0}{M}\\right)$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A block of mass $2\\text{ kg}$ is placed on an inclined plane of inclination $30^\\circ$. The coefficient of friction between the block and the plane is $\\mu = 0.2$. The acceleration (in $\\text{m/s}^2$) of the block sliding down the plane is $a$. Take $g = 10\\text{ m/s}^2$ and $\\sqrt{3} = 1.73$. Find the value of $a$ rounded to two decimal places.",
+          "image": "",
+          "correctValue": 3.27,
+          "solution": "Acceleration sliding down an inclined plane:\n$$a = g(\\sin\\theta - \\mu\\cos\\theta) = 10(\\sin 30^\\circ - 0.2\\cos 30^\\circ)$$\n$$a = 10\\left(0.5 - 0.2 \\times \\frac{1.73}{2}\\right) = 10(0.5 - 0.173) = 10(0.327) = 3.27\\text{ m/s}^2$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Two masses $m_1 = 4\\text{ kg}$ and $m_2 = 6\\text{ kg}$ are connected by a massless string passing over a frictionless pulley. When the system is released from rest, find the magnitude of acceleration (in $\\text{m/s}^2$) of the masses (take $g = 10\\text{ m/s}^2$).",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "Acceleration in Atwood machine:\n$$a = \\frac{m_2 - m_1}{m_1 + m_2} g = \\frac{6 - 4}{6 + 4} \\times 10 = \\frac{2}{10} \\times 10 = 2.0\\text{ m/s}^2$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A block of mass $m = 5\\text{ kg}$ is resting on a rough horizontal surface with coefficient of friction $\\mu_k = 0.4$. A horizontal force of $30\\text{ N}$ acts on the block. The distance travelled (in meters) by the block in $4\\text{ s}$ starting from rest is (take $g = 10\\text{ m/s}^2$).",
+          "image": "",
+          "correctValue": 16.0,
+          "solution": "Normal reaction $N = mg = 5 \\times 10 = 50\\text{ N}$.\nFrictional force $f_k = \\mu_k N = 0.4 \\times 50 = 20\\text{ N}$.\nNet accelerating force $F_{\\text{net}} = F - f_k = 30 - 20 = 10\\text{ N}$.\nAcceleration $a = \\frac{F_{\\text{net}}}{m} = \\frac{10}{5} = 2\\text{ m/s}^2$.\nDistance moved in $4\\text{ s}$ from rest:\n$$s = \\frac{1}{2} a t^2 = \\frac{1}{2}(2)(4^2) = 16.0\\text{ m}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A particle of mass $0.5\\text{ kg}$ moves along a circle of radius $2\\text{ m}$ with constant speed $4\\text{ m/s}$. The magnitude of centripetal force (in $\\text{N}$) acting on the particle is:",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "Centripetal force is given by:\n$$F_c = \\frac{m v^2}{r} = \\frac{0.5 \\times 4^2}{2} = \\frac{0.5 \\times 16}{2} = 4.0\\text{ N}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] A bullet of mass $10\\text{ g}$ moving horizontally at $400\\text{ m/s}$ penetrates a stationary block of wood of mass $3.99\\text{ kg}$ suspended by a long cord and stays embedded in it. Find the common velocity (in $\\text{m/s}$) of the combined system immediately after impact.",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Mass of bullet $m = 10\\text{ g} = 0.01\\text{ kg}$, initial speed $u = 400\\text{ m/s}$.\nMass of block $M = 3.99\\text{ kg}$.\nBy conservation of linear momentum along horizontal:\n$$m u + 0 = (m + M) v$$\n$$(0.01)(400) = (0.01 + 3.99) v$$\n$$4 = 4.00 v \\implies v = 1.0\\text{ m/s}$$"
+        }
+      ]
+    }
+  ]
+}
