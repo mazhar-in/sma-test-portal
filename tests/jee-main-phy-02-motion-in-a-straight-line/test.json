@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-02-motion-in-a-straight-line",
+  "title": "Motion in a Straight Line",
+  "syllabus": "Frame of reference, Motion in a straight line: Position-time graph, speed and velocity; Uniform and non-uniform motion, average speed and instantaneous velocity; Uniformly accelerated motion, velocity-time and position-time graphs, relations for uniformly accelerated motion; Free fall under gravity; Relative velocity in one dimension",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A car covers the first half of the distance between two places at $40\\text{ km/h}$ and the remaining half at $60\\text{ km/h}$. The average speed of the car is:",
+          "image": "",
+          "options": [
+            "$48\\text{ km/h}$",
+            "$50\\text{ km/h}$",
+            "$45\\text{ km/h}$",
+            "$52\\text{ km/h}$"
+          ],
+          "correctOption": 0,
+          "solution": "For two equal halves of distance traveled at speeds $v_1$ and $v_2$, average speed is the harmonic mean:\n$$v_{\\text{avg}} = \\frac{2 v_1 v_2}{v_1 + v_2} = \\frac{2 \\times 40 \\times 60}{40 + 60} = \\frac{4800}{100} = 48\\text{ km/h}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A particle starts from rest and moves with acceleration $a$ which varies with time as $a = 3t + 4\\text{ m/s}^2$. The velocity of the particle at $t = 2\\text{ s}$ is:",
+          "image": "",
+          "options": [
+            "$10\\text{ m/s}$",
+            "$14\\text{ m/s}$",
+            "$18\\text{ m/s}$",
+            "$12\\text{ m/s}$"
+          ],
+          "correctOption": 1,
+          "solution": "Acceleration is $a = \\frac{dv}{dt} = 3t + 4$.\nIntegrating with initial condition $v(0) = 0$:\n$$v = \\int_0^2 (3t + 4)\\,dt = \\left[ \\frac{3t^2}{2} + 4t \\right]_0^2 = \\frac{3(4)}{2} + 4(2) = 6 + 8 = 14\\text{ m/s}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A ball is thrown vertically upwards with a velocity of $19.6\\text{ m/s}$ from the top of a tower. The ball strikes the ground after $6\\text{ s}$. The height of the tower is (take $g = 9.8\\text{ m/s}^2$):",
+          "image": "",
+          "options": [
+            "$58.8\\text{ m}$",
+            "$68.6\\text{ m}$",
+            "$78.4\\text{ m}$",
+            "$98.0\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Taking upward direction as positive:\n$u = +19.6\\text{ m/s}$, $a = -9.8\\text{ m/s}^2$, $t = 6\\text{ s}$.\nUsing the displacement relation $s = ut + \\frac{1}{2}at^2$:\n$$s = (19.6)(6) - \\frac{1}{2}(9.8)(6)^2 = 117.6 - 4.9(36) = 117.6 - 176.4 = -58.8\\text{ m}$$\nHeight of tower $h = |s| = 58.8\\text{ m}$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A bullet loses $\\frac{1}{20}$ of its velocity in passing through a wooden plank. The least number of such identical planks required to stop the bullet completely is:",
+          "image": "",
+          "options": [
+            "10",
+            "11",
+            "20",
+            "19"
+          ],
+          "correctOption": 1,
+          "solution": "Let initial velocity be $u$ and thickness of one plank be $x$.\nVelocity after passing through one plank is $v = u - \\frac{u}{20} = \\frac{19}{20}u$.\nUsing $v^2 - u^2 = 2ax$:\n$$\\left(\\frac{19}{20}u\\right)^2 - u^2 = 2ax \\implies 2ax = -u^2\\left(1 - \\frac{361}{400}\\right) = -\\frac{39}{400}u^2$$\nIf $n$ planks stop the bullet ($v_f = 0$ after distance $nx$):\n$$0^2 - u^2 = 2a(nx) = n(2ax) = n\\left(-\\frac{39}{400}u^2\\right)$$\n$$1 = n\\left(\\frac{39}{400}\\right) \\implies n = \\frac{400}{39} \\approx 10.256$$\nThus, the least integer number of planks required is 11."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The relation between position $x$ and time $t$ of a particle moving along a straight line is given by $t = \\alpha x^2 + \\beta x$, where $\\alpha$ and $\\beta$ are constants. The acceleration of the particle is:",
+          "image": "",
+          "options": [
+            "$-2\\alpha v^3$",
+            "$2\\alpha v^3$",
+            "$-2\\beta v^3$",
+            "$2\\alpha\\beta v^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Differentiating both sides with respect to time $t$:\n$$1 = 2\\alpha x \\frac{dx}{dt} + \\beta \\frac{dx}{dt} = v(2\\alpha x + \\beta) \\implies v = \\frac{1}{2\\alpha x + \\beta}$$\nDifferentiating velocity with respect to time:\n$$a = \\frac{dv}{dt} = -\\frac{1}{(2\\alpha x + \\beta)^2} \\cdot 2\\alpha \\frac{dx}{dt} = -v^2 \\cdot 2\\alpha v = -2\\alpha v^3$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A body is released from a height $h$. The ratio of distances travelled by the body in the $1^{\\text{st}}$, $2^{\\text{nd}}$ and $3^{\\text{rd}}$ second of its motion is:",
+          "image": "",
+          "options": [
+            "$1 : 3 : 5$",
+            "$1 : 2 : 3$",
+            "$1 : 4 : 9$",
+            "$1 : \\sqrt{2} : \\sqrt{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "Distance traversed in $n^{\\text{th}}$ second for motion starting from rest ($u = 0$):\n$$S_n = u + \\frac{a}{2}(2n - 1) = \\frac{g}{2}(2n - 1)$$\nFor $n = 1, 2, 3$:\n$$S_1 : S_2 : S_3 = [2(1) - 1] : [2(2) - 1] : [2(3) - 1] = 1 : 3 : 5$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves along the x-axis with velocity $v = \\sqrt{4x + 16}$. The acceleration of the particle is:",
+          "image": "",
+          "options": [
+            "$2\\text{ m/s}^2$",
+            "$4\\text{ m/s}^2$",
+            "$1\\text{ m/s}^2$",
+            "Variable depending on $x$"
+          ],
+          "correctOption": 0,
+          "solution": "Squaring the velocity relation:\n$$v^2 = 4x + 16$$\nDifferentiating both sides with respect to $x$:\n$$2v\\frac{dv}{dx} = 4 \\implies v\\frac{dv}{dx} = 2$$\nSince $a = v\\frac{dv}{dx}$, the acceleration is constant and equals $2\\text{ m/s}^2$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Two stones are thrown up simultaneously from the edge of a cliff $240\\text{ m}$ high with initial speeds of $10\\text{ m/s}$ and $40\\text{ m/s}$ respectively. Which graph correctly represents the time variation of relative position of the second stone with respect to the first (taking $g = 10\\text{ m/s}^2$)?",
+          "image": "",
+          "options": [
+            "A straight line passing through origin up to $8\\text{ s}$, then a parabolic curve up to $12\\text{ s}$",
+            "A straight line up to $12\\text{ s}$",
+            "A parabola from $t = 0$ to $t = 12\\text{ s}$",
+            "A straight line up to $4\\text{ s}$, then constant horizontal line"
+          ],
+          "correctOption": 0,
+          "solution": "For stone 1: $y_1 = 10t - 5t^2$. It strikes the ground when $y_1 = -240 \\implies 5t^2 - 10t - 240 = 0 \\implies t^2 - 2t - 48 = 0 \\implies (t - 8)(t + 6) = 0 \\implies t = 8\\text{ s}$.\nFor stone 2: $y_2 = 40t - 5t^2$. It strikes the ground when $5t^2 - 40t - 240 = 0 \\implies t^2 - 8t - 48 = 0 \\implies t = 12\\text{ s}$.\nBetween $0 \\le t \\le 8\\text{ s}$, both stones are in flight: $y_2 - y_1 = (40t - 5t^2) - (10t - 5t^2) = 30t$ (a linear function through the origin).\nFor $8 < t \\le 12\\text{ s}$, stone 1 is stationary at the ground ($-240\\text{ m}$): $y_2 - y_1 = (40t - 5t^2) - (-240) = 240 + 40t - 5t^2$ (a parabolic segment)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A car accelerates from rest at a constant rate $\\alpha$ for some time, after which it decelerates at a constant rate $\\beta$ to come to rest. If total time elapsed is $T$, then maximum velocity attained by the car is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\alpha\\beta}{\\alpha + \\beta} T$",
+            "$\\frac{\\alpha + \\beta}{\\alpha\\beta} T$",
+            "$\\frac{\\alpha^2}{\\alpha + \\beta} T$",
+            "$\\frac{\\beta^2}{\\alpha + \\beta} T$"
+          ],
+          "correctOption": 0,
+          "solution": "Let acceleration last for time $t_1$ and deceleration last for time $t_2$. Then $t_1 + t_2 = T$.\nPeak velocity $v_{\\text{max}} = \\alpha t_1 = \\beta t_2$.\n$$t_1 = \\frac{v_{\\text{max}}}{\\alpha}, \\quad t_2 = \\frac{v_{\\text{max}}}{\\beta}$$\n$$T = v_{\\text{max}} \\left(\\frac{1}{\\alpha} + \\frac{1}{\\beta}\\right) = v_{\\text{max}} \\left(\\frac{\\alpha + \\beta}{\\alpha\\beta}\\right) \\implies v_{\\text{max}} = \\frac{\\alpha\\beta}{\\alpha + \\beta} T$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves with uniform acceleration along a straight line $AB$. Its velocities at $A$ and $B$ are $u$ and $v$ respectively. If $C$ is the midpoint of $AB$, the velocity of the particle at $C$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{u^2 + v^2}{2}}$",
+            "$\\frac{u + v}{2}$",
+            "$\\sqrt{uv}$",
+            "$\\sqrt{\\frac{v^2 - u^2}{2}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the distance between $A$ and $B$ be $2s$, so distance $AC = CB = s$.\nFor section $AC$: $v_c^2 - u^2 = 2as \\implies v_c^2 = u^2 + 2as$\nFor section $CB$: $v^2 - v_c^2 = 2as \\implies v^2 - v_c^2 = v_c^2 - u^2$\n$$2v_c^2 = u^2 + v^2 \\implies v_c = \\sqrt{\\frac{u^2 + v^2}{2}}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A ball is dropped from a height of $100\\text{ m}$. At the same instant, another ball is thrown upwards from the ground with a velocity of $50\\text{ m/s}$. Both move along the same vertical line. The time after which the two balls meet is (take $g = 10\\text{ m/s}^2$):",
+          "image": "",
+          "options": [
+            "$2\\text{ s}$",
+            "$3\\text{ s}$",
+            "$4\\text{ s}$",
+            "$1.5\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider relative motion between the two balls:\nRelative acceleration $a_{\\text{rel}} = (-g) - (-g) = 0$.\nRelative velocity of approach $v_{\\text{rel}} = u_2 - u_1 = 50 - 0 = 50\\text{ m/s}$.\nInitial separation $S_{\\text{rel}} = 100\\text{ m}$.\n$$t = \\frac{S_{\\text{rel}}}{v_{\\text{rel}}} = \\frac{100}{50} = 2\\text{ s}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The position of an object is given by $x(t) = 8t - 3t^2$, where $x$ is in meters and $t$ is in seconds. The distance travelled by the object from $t = 0$ to $t = 2\\text{ s}$ is:",
+          "image": "",
+          "options": [
+            "$6\\text{ m}$",
+            "$\\frac{20}{3}\\text{ m}$",
+            "$\\frac{16}{3}\\text{ m}$",
+            "$4\\text{ m}$"
+          ],
+          "correctOption": 1,
+          "solution": "Velocity is $v(t) = \\frac{dx}{dt} = 8 - 6t$.\nThe particle stops when $v(t) = 0 \\implies 8 - 6t = 0 \\implies t = \\frac{4}{3}\\text{ s}$.\nSince $t = \\frac{4}{3}\\text{ s}$ lies within $[0, 2]$, the direction of motion reverses.\nPositions:\n$x(0) = 0$\n$x(4/3) = 8\\left(\\frac{4}{3}\\right) - 3\\left(\\frac{4}{3}\\right)^2 = \\frac{32}{3} - \\frac{16}{3} = \\frac{16}{3}\\text{ m}$\n$x(2) = 8(2) - 3(4) = 16 - 12 = 4\\text{ m}$\n$$\\text{Distance} = |x(4/3) - x(0)| + |x(2) - x(4/3)| = \\frac{16}{3} + \\left|4 - \\frac{16}{3}\\right| = \\frac{16}{3} + \\frac{4}{3} = \\frac{20}{3}\\text{ m}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] A particle starts from origin at $t = 0$ and moves along the positive x-axis. The graph of velocity with respect to position $x$ is a parabola with equation $v^2 = 4x$. The acceleration of the particle is:",
+          "image": "",
+          "options": [
+            "$2\\text{ m/s}^2$",
+            "$4\\text{ m/s}^2$",
+            "$1\\text{ m/s}^2$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Differentiating the relation $v^2 = 4x$ with respect to $x$:\n$$2v\\frac{dv}{dx} = 4 \\implies v\\frac{dv}{dx} = 2$$\nSince acceleration $a = v\\frac{dv}{dx}$, we get $a = 2\\text{ m/s}^2$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A balloon starts rising from the ground with an upward acceleration of $1.25\\text{ m/s}^2$. After $8\\text{ s}$, a stone is released from the balloon. The time taken by the stone to reach the ground is (take $g = 10\\text{ m/s}^2$):",
+          "image": "",
+          "options": [
+            "$4\\text{ s}$",
+            "$2\\text{ s}$",
+            "$6\\text{ s}$",
+            "$8\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "At $t = 8\\text{ s}$:\nVelocity of balloon $u = at = (1.25)(8) = 10\\text{ m/s}$ (upward).\nHeight reached by balloon $h = \\frac{1}{2}at^2 = \\frac{1}{2}(1.25)(64) = 40\\text{ m}$.\nFor the released stone:\nInitial position $y_0 = 40\\text{ m}$, initial velocity $u = +10\\text{ m/s}$, $a = -10\\text{ m/s}^2$.\nWhen it strikes the ground ($y = 0$):\n$$0 = 40 + 10t - 5t^2 \\implies 5t^2 - 10t - 40 = 0 \\implies t^2 - 2t - 8 = 0$$\n$$(t - 4)(t + 2) = 0 \\implies t = 4\\text{ s}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A train of length $200\\text{ m}$ is moving with a constant speed of $20\\text{ m/s}$. A bird starts flying from the back of the train to the front engine at a speed of $30\\text{ m/s}$ relative to the ground, and returns back to the tail at the same speed. The total time taken by the bird for the round trip is:",
+          "image": "",
+          "options": [
+            "$24\\text{ s}$",
+            "$20\\text{ s}$",
+            "$16\\text{ s}$",
+            "$32\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "1) While moving from rear to front:\nRelative speed $v_1 = 30 - 20 = 10\\text{ m/s}$.\nTime $t_1 = \\frac{L}{v_1} = \\frac{200}{10} = 20\\text{ s}$.\n2) While moving from front to rear:\nRelative speed $v_2 = 30 + 20 = 50\\text{ m/s}$.\nTime $t_2 = \\frac{L}{v_2} = \\frac{200}{50} = 4\\text{ s}$.\n$$\\text{Total time } T = t_1 + t_2 = 20 + 4 = 24\\text{ s}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A body is dropped from the top of a tower of height $H$. It covers a distance of $\\frac{9H}{25}$ in the last second of its fall. The height $H$ of the tower is (take $g = 10\\text{ m/s}^2$):",
+          "image": "",
+          "options": [
+            "$125\\text{ m}$",
+            "$100\\text{ m}$",
+            "$80\\text{ m}$",
+            "$150\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total time of fall $T = \\sqrt{\\frac{2H}{g}}$.\nDistance fallen in the last second is:\n$$S_{\\text{last}} = \\frac{g}{2}(2T - 1) = \\frac{9}{25}H$$\nSince $H = \\frac{1}{2}gT^2$:\n$$\\frac{g}{2}(2T - 1) = \\frac{9}{25}\\left(\\frac{1}{2}gT^2\\right) \\implies 2T - 1 = \\frac{9}{25}T^2$$\n$$9T^2 - 50T + 25 = 0 \\implies (9T - 5)(T - 5) = 0$$\nSince $T > 1\\text{ s}$, we have $T = 5\\text{ s}$.\n$$H = \\frac{1}{2}gT^2 = \\frac{1}{2}(10)(25) = 125\\text{ m}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A particle moves in a straight line with deceleration proportional to its displacement. The loss of kinetic energy for any displacement $x$ is proportional to:",
+          "image": "",
+          "options": [
+            "$x^2$",
+            "$x$",
+            "$x^3$",
+            "$e^{-x}$"
+          ],
+          "correctOption": 0,
+          "solution": "Given $a = v\\frac{dv}{dx} = -kx$.\n$$v\\,dv = -kx\\,dx$$\nIntegrating from initial velocity $u$ to velocity $v$ over displacement $x$:\n$$\\int_u^v v\\,dv = -k \\int_0^x x\\,dx \\implies \\frac{v^2 - u^2}{2} = -\\frac{kx^2}{2}$$\n$$\\Delta K = \\frac{1}{2}m(v^2 - u^2) = -\\frac{1}{2}mkx^2$$\nHence, the loss in kinetic energy is proportional to $x^2$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The velocity-time graph of a linear motion is shown. If the velocity is positive along the x-direction, the area under the $v-t$ curve with signs represents:",
+          "image": "",
+          "options": [
+            "Displacement",
+            "Distance travelled",
+            "Acceleration",
+            "Change in acceleration"
+          ],
+          "correctOption": 0,
+          "solution": "By definition of velocity $v = \\frac{dx}{dt}$, the integral with signs $\\int v\\,dt$ gives the displacement $\\Delta x$.\nThe absolute sum of the areas $\\int |v|\\,dt$ would give the total distance."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A ball is thrown vertically upwards with speed $u$. If it passes a point at height $h$ above the projection point at times $t_1$ and $t_2$, then $t_1 + t_2$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{2u}{g}$",
+            "$\\frac{u}{g}$",
+            "$\\frac{u}{2g}$",
+            "$\\sqrt{\\frac{2h}{g}}$"
+          ],
+          "correctOption": 0,
+          "solution": "The displacement equation is $h = ut - \\frac{1}{2}gt^2$, which rearranges to:\n$$\\frac{1}{2}gt^2 - ut + h = 0 \\implies gt^2 - 2ut + 2h = 0$$\nThe roots of this quadratic equation are the two times $t_1$ and $t_2$ at which the ball is at height $h$.\nBy Vieta's formulas, sum of roots is:\n$$t_1 + t_2 = -\\frac{-2u}{g} = \\frac{2u}{g}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An elevator is descending with an acceleration of $2\\text{ m/s}^2$. A person in the elevator drops a coin from a height of $1.6\\text{ m}$ above the elevator floor. The time taken by the coin to hit the floor is (take $g = 10\\text{ m/s}^2$):",
+          "image": "",
+          "options": [
+            "$\\sqrt{0.4}\\text{ s}$",
+            "$\\sqrt{0.32}\\text{ s}$",
+            "$0.4\\text{ s}$",
+            "$0.8\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "In the frame of reference of the elevator:\nInitial relative velocity of the coin $u_{\\text{rel}} = 0$.\nRelative acceleration of the coin $a_{\\text{rel}} = g - a_{\\text{lift}} = 10 - 2 = 8\\text{ m/s}^2$ (downwards).\nUsing $s = \\frac{1}{2} a_{\\text{rel}} t^2$:\n$$1.6 = \\frac{1}{2}(8)t^2 = 4t^2 \\implies t^2 = \\frac{1.6}{4} = 0.4 \\implies t = \\sqrt{0.4}\\text{ s} \\approx 0.632\\text{ s}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A car travels the first third of a journey with a speed of $10\\text{ km/h}$, the second third with $20\\text{ km/h}$, and the last third with $60\\text{ km/h}$. The average speed of the car for the entire journey is $v\\text{ km/h}$. Find the value of $v$.",
+          "image": "",
+          "correctValue": 18.0,
+          "solution": "Let total distance be $3s$. Each section is of distance $s$.\nTimes taken for each section:\n$t_1 = \\frac{s}{10}$, $t_2 = \\frac{s}{20}$, $t_3 = \\frac{s}{60}$.\n$$t_{\\text{total}} = s\\left(\\frac{1}{10} + \\frac{1}{20} + \\frac{1}{60}\\right) = s\\left(\\frac{6 + 3 + 1}{60}\\right) = s\\left(\\frac{10}{60}\\right) = \\frac{s}{6}$$\n$$v_{\\text{avg}} = \\frac{3s}{t_{\\text{total}}} = \\frac{3s}{s/6} = 18\\text{ km/h}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A ball is dropped from a height $h = 45\\text{ m}$. After striking the ground, it rebounds with a speed equal to $\\frac{2}{3}$ of its striking speed. Find the maximum height (in meters) reached by the ball after the bounce (take $g = 10\\text{ m/s}^2$).",
+          "image": "",
+          "correctValue": 20.0,
+          "solution": "Velocity just before striking ground:\n$$v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 45} = \\sqrt{900} = 30\\text{ m/s}$$\nVelocity immediately after rebound:\n$$v' = \\frac{2}{3}v = \\frac{2}{3}(30) = 20\\text{ m/s}$$\nMaximum rebound height:\n$$h' = \\frac{v'^2}{2g} = \\frac{20^2}{2 \\times 10} = \\frac{400}{20} = 20\\text{ m}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A particle starts from the origin with an initial velocity $u = 5\\text{ m/s}$ along the x-axis and moves with constant acceleration $a = -2\\text{ m/s}^2$. The total distance travelled by the particle in the first $4\\text{ s}$ of its motion is $d\\text{ m}$. Find the value of $d$ (expressed in meters).",
+          "image": "",
+          "correctValue": 8.5,
+          "solution": "The particle comes to a momentary stop when $v = 0$:\n$$v = u + at \\implies 0 = 5 - 2t \\implies t = 2.5\\text{ s}$$\nSince $t = 2.5\\text{ s}$ lies within the interval $[0, 4\\text{ s}]$, motion reverses direction.\n1) Distance covered during $0$ to $2.5\\text{ s}$:\n$$s_1 = \\frac{u^2}{2|a|} = \\frac{5^2}{2(2)} = \\frac{25}{4} = 6.25\\text{ m}$$\n2) Distance covered during $2.5\\text{ s}$ to $4\\text{ s}$ (interval $\\Delta t = 1.5\\text{ s}$ starting from rest):\n$$s_2 = \\frac{1}{2}|a|(\\Delta t)^2 = \\frac{1}{2}(2)(1.5)^2 = 2.25\\text{ m}$$\n$$\\text{Total distance } d = s_1 + s_2 = 6.25 + 2.25 = 8.5\\text{ m}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Two trains $A$ and $B$, each of length $150\\text{ m}$, are travelling on parallel tracks in opposite directions with uniform speeds of $36\\text{ km/h}$ and $54\\text{ km/h}$ respectively. The time taken (in seconds) for them to completely cross each other is:",
+          "image": "",
+          "correctValue": 12.0,
+          "solution": "Speeds in SI units:\n$v_A = 36 \\times \\frac{5}{18} = 10\\text{ m/s}$\n$v_B = 54 \\times \\frac{5}{18} = 15\\text{ m/s}$\nRelative speed when moving in opposite directions:\n$$v_{\\text{rel}} = v_A + v_B = 10 + 15 = 25\\text{ m/s}$$\nTotal relative distance to clear each other:\n$$s_{\\text{rel}} = L_A + L_B = 150 + 150 = 300\\text{ m}$$\n$$t = \\frac{s_{\\text{rel}}}{v_{\\text{rel}}} = \\frac{300}{25} = 12\\text{ s}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A particle moves along a straight line such that its displacement from origin is given by $x = t^3 - 6t^2 + 9t + 2$ (where $x$ is in meters and $t$ in seconds). Find the magnitude of acceleration (in $\\text{m/s}^2$) of the particle at the instant when its velocity is zero for the second time.",
+          "image": "",
+          "correctValue": 6.0,
+          "solution": "Velocity of the particle is:\n$$v = \\frac{dx}{dt} = 3t^2 - 12t + 9$$\nSetting $v = 0$:\n$$3(t^2 - 4t + 3) = 0 \\implies 3(t - 1)(t - 3) = 0$$\nVelocity is zero at $t = 1\\text{ s}$ and for the second time at $t = 3\\text{ s}$.\nAcceleration of the particle:\n$$a = \\frac{dv}{dt} = 6t - 12$$\nAt $t = 3\\text{ s}$:\n$$a = 6(3) - 12 = 18 - 12 = 6\\text{ m/s}^2$$"
+        }
+      ]
+    }
+  ]
+}
