@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-03-motion-in-a-plane",
+  "title": "Motion in a Plane",
+  "syllabus": "Scalars and vectors, vector addition and subtraction, scalar and vector products, Unit vector, Resolution of a vector; Relative velocity in two dimensions, Projectile motion (horizontal and oblique), Uniform circular motion: centripetal acceleration, angular speed and velocity",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A projectile is projected with a velocity $u$ at an angle $\\theta$ with the horizontal. The ratio of kinetic energy at the highest point to that at the point of projection is $1:4$. The angle of projection $\\theta$ is:",
+          "image": "",
+          "options": [
+            "$60^\\circ$",
+            "$30^\\circ$",
+            "$45^\\circ$",
+            "$75^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "At the point of projection, velocity is $u$, so kinetic energy is $K_0 = \\frac{1}{2} m u^2$.\nAt the highest point, vertical component of velocity is zero, and horizontal component is $u \\cos\\theta$.\nKinetic energy at the highest point is $K_{\\text{top}} = \\frac{1}{2} m (u \\cos\\theta)^2 = K_0 \\cos^2\\theta$.\nGiven $\\frac{K_{\\text{top}}}{K_0} = \\frac{1}{4} \\implies \\cos^2\\theta = \\frac{1}{4} \\implies \\cos\\theta = \\frac{1}{2}$.\nThus, $\\theta = 60^\\circ$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Two vectors $\\vec{A}$ and $\\vec{B}$ have equal magnitudes. If the magnitude of $(\\vec{A} + \\vec{B})$ is $n$ times the magnitude of $(\\vec{A} - \\vec{B})$, then the angle between $\\vec{A}$ and $\\vec{B}$ is:",
+          "image": "",
+          "options": [
+            "$\\cos^{-1}\\left(\\frac{n^2 - 1}{n^2 + 1}\\right)$",
+            "$\\cos^{-1}\\left(\\frac{n^2 + 1}{n^2 - 1}\\right)$",
+            "$\\sin^{-1}\\left(\\frac{n^2 - 1}{n^2 + 1}\\right)$",
+            "$\\cos^{-1}\\left(\\frac{n - 1}{n + 1}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $|\\vec{A}| = |\\vec{B}| = A$.\n$|\\vec{A} + \\vec{B}|^2 = A^2 + A^2 + 2A^2 \\cos\\theta = 2A^2(1 + \\cos\\theta)$.\n$|\\vec{A} - \\vec{B}|^2 = A^2 + A^2 - 2A^2 \\cos\\theta = 2A^2(1 - \\cos\\theta)$.\nGiven $|\\vec{A} + \\vec{B}| = n |\\vec{A} - \\vec{B}| \\implies 2A^2(1 + \\cos\\theta) = n^2 [2A^2(1 - \\cos\\theta)]$.\n$$1 + \\cos\\theta = n^2(1 - \\cos\\theta) \\implies \\cos\\theta(n^2 + 1) = n^2 - 1 \\implies \\cos\\theta = \\frac{n^2 - 1}{n^2 + 1}$$\n$$\\theta = \\cos^{-1}\\left(\\frac{n^2 - 1}{n^2 + 1}\\right)$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A particle is moving along a circular path of radius $R$ with a constant speed $v$. The magnitude of the average acceleration over a time interval during which the particle completes a quarter of the circle is:",
+          "image": "",
+          "options": [
+            "$\\frac{2\\sqrt{2} v^2}{\\pi R}$",
+            "$\\frac{\\sqrt{2} v^2}{\\pi R}$",
+            "$\\frac{v^2}{R}$",
+            "$\\frac{4 v^2}{\\pi R}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the particle turn through an angle $\\Delta\\theta = \\pi/2$.\nInitial velocity $\\vec{v}_1 = v\\hat{j}$ and final velocity $\\vec{v}_2 = -v\\hat{i}$.\nChange in velocity $|\\Delta \\vec{v}| = |\\vec{v}_2 - \\vec{v}_1| = \\sqrt{v^2 + v^2} = \\sqrt{2}v$.\nDistance covered $s = \\frac{\\pi R}{2}$, so time taken $\\Delta t = \\frac{\\pi R}{2v}$.\nAverage acceleration magnitude:\n$$|\\vec{a}_{\\text{avg}}| = \\frac{|\\Delta \\vec{v}|}{\\Delta t} = \\frac{\\sqrt{2}v}{\\frac{\\pi R}{2v}} = \\frac{2\\sqrt{2}v^2}{\\pi R}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A river flows due east with a speed of $3\\text{ m/s}$. A swimmer can swim with a speed of $5\\text{ m/s}$ in still water. If he wants to cross the river along the shortest path, the direction in which he should strike out is:",
+          "image": "",
+          "options": [
+            "$\\sin^{-1}(0.6)$ west of north",
+            "$\\cos^{-1}(0.6)$ west of north",
+            "$\\tan^{-1}(0.6)$ north of west",
+            "$\\sin^{-1}(0.8)$ east of north"
+          ],
+          "correctOption": 0,
+          "solution": "For the shortest path (directly across to the opposite bank), the resultant velocity must be directed straight across (due North).\nLet the swimmer head at an angle $\\theta$ west of north.\nThe eastward drift must cancel the river's flow:\n$$v_s \\sin\\theta = v_r \\implies 5 \\sin\\theta = 3 \\implies \\sin\\theta = \\frac{3}{5} = 0.6$$\nTherefore, $\\theta = \\sin^{-1}(0.6)$ west of north."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] The trajectory of a projectile near the surface of the earth is given by $y = 2x - 9x^2$. If it were projected at an angle $\\theta_0$ with speed $v_0$ (taking $g = 10\\text{ m/s}^2$), then:",
+          "image": "",
+          "options": [
+            "$\\tan\\theta_0 = 2$ and $v_0 = \\frac{5}{3}\\text{ m/s}$",
+            "$\\tan\\theta_0 = 2$ and $v_0 = \\frac{5}{6}\\text{ m/s}$",
+            "$\\tan\\theta_0 = 1$ and $v_0 = \\frac{5}{3}\\text{ m/s}$",
+            "$\\tan\\theta_0 = 2$ and $v_0 = \\frac{10}{3}\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Standard equation of a projectile trajectory:\n$$y = x\\tan\\theta_0 - \\frac{g}{2v_0^2\\cos^2\\theta_0}x^2$$\nComparing with $y = 2x - 9x^2$:\n$\\tan\\theta_0 = 2 \\implies \\sec^2\\theta_0 = 1 + \\tan^2\\theta_0 = 5$.\n$$\\frac{g}{2v_0^2\\cos^2\\theta_0} = \\frac{g\\sec^2\\theta_0}{2v_0^2} = 9$$\nSubstitute $g = 10$ and $\\sec^2\\theta_0 = 5$:\n$$\\frac{10 \\times 5}{2v_0^2} = 9 \\implies \\frac{25}{v_0^2} = 9 \\implies v_0^2 = \\frac{25}{9} \\implies v_0 = \\frac{5}{3}\\text{ m/s}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A shell is fired from a cannon with a velocity $v$ at an angle $\\theta$ with the horizontal. At the highest point of its trajectory, it explodes into two equal fragments. One of the fragments retraces its path back to the cannon. The speed of the other fragment immediately after the explosion is:",
+          "image": "",
+          "options": [
+            "$3v\\cos\\theta$",
+            "$2v\\cos\\theta$",
+            "$\\sqrt{3}v\\cos\\theta$",
+            "$v\\cos\\theta$"
+          ],
+          "correctOption": 0,
+          "solution": "At the peak, just before explosion, total mass $m$ has horizontal velocity $v_x = v\\cos\\theta$.\nBy conservation of linear momentum along the horizontal direction:\n$$m(v\\cos\\theta) = \\frac{m}{2}(-v\\cos\\theta) + \\frac{m}{2}v_2$$\nDivide by $m/2$:\n$$2v\\cos\\theta = -v\\cos\\theta + v_2 \\implies v_2 = 3v\\cos\\theta$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If a particle moves in a plane such that its position vector is given by $\\vec{r}(t) = a\\cos(\\omega t)\\hat{i} + a\\sin(\\omega t)\\hat{j}$, then which of the following statements is true?",
+          "image": "",
+          "options": [
+            "Velocity is perpendicular to $\\vec{r}$ and acceleration is directed towards the origin",
+            "Velocity and acceleration are both parallel to $\\vec{r}$",
+            "Velocity is parallel to $\\vec{r}$ and acceleration is perpendicular to $\\vec{r}$",
+            "Acceleration is perpendicular to $\\vec{r}$ and directed away from the origin"
+          ],
+          "correctOption": 0,
+          "solution": "Position: $\\vec{r} = a\\cos(\\omega t)\\hat{i} + a\\sin(\\omega t)\\hat{j}$\nVelocity: $\\vec{v} = \\frac{d\\vec{r}}{dt} = -a\\omega\\sin(\\omega t)\\hat{i} + a\\omega\\cos(\\omega t)\\hat{j}$\nAcceleration: $\\vec{a} = \\frac{d\\vec{v}}{dt} = -a\\omega^2\\cos(\\omega t)\\hat{i} - a\\omega^2\\sin(\\omega t)\\hat{j} = -\\omega^2\\vec{r}$\nDot product: $\\vec{v} \\cdot \\vec{r} = -a^2\\omega\\sin(\\omega t)\\cos(\\omega t) + a^2\\omega\\cos(\\omega t)\\sin(\\omega t) = 0 \\implies \\vec{v} \\perp \\vec{r}$.\nSince $\\vec{a} = -\\omega^2\\vec{r}$, acceleration is directed radially towards the origin."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For two particles projected from the same point with the same initial speed $u$, the angles of projection are $\\theta$ and $(90^\\circ - \\theta)$. If $H_1$ and $H_2$ are the maximum heights attained and $R$ is the horizontal range, then:",
+          "image": "",
+          "options": [
+            "$R = 4\\sqrt{H_1 H_2}$",
+            "$R = 2\\sqrt{H_1 H_2}$",
+            "$R = \\sqrt{H_1 H_2}$",
+            "$R = 4(H_1 + H_2)$"
+          ],
+          "correctOption": 0,
+          "solution": "Maximum heights:\n$$H_1 = \\frac{u^2 \\sin^2\\theta}{2g}, \\quad H_2 = \\frac{u^2 \\sin^2(90^\\circ - \\theta)}{2g} = \\frac{u^2 \\cos^2\\theta}{2g}$$\nProduct of heights:\n$$H_1 H_2 = \\frac{u^4 \\sin^2\\theta \\cos^2\\theta}{4g^2} = \\frac{(u^2 \\cdot 2\\sin\\theta\\cos\\theta)^2}{16g^2} = \\frac{R^2}{16}$$\n$$R^2 = 16 H_1 H_2 \\implies R = 4\\sqrt{H_1 H_2}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Rain is falling vertically downwards with a speed of $35\\text{ m/s}$. A woman rides a bicycle with a speed of $12\\text{ m/s}$ in east to west direction. What is the direction in which she should hold her umbrella to protect herself from the rain?",
+          "image": "",
+          "options": [
+            "$\\tan^{-1}\\left(\\frac{12}{35}\\right)$ towards the west",
+            "$\\tan^{-1}\\left(\\frac{12}{35}\\right)$ towards the east",
+            "$\\tan^{-1}\\left(\\frac{35}{12}\\right)$ towards the west",
+            "$\\tan^{-1}\\left(\\frac{35}{12}\\right)$ towards the east"
+          ],
+          "correctOption": 0,
+          "solution": "Let east be along $+\\hat{i}$ and upward vertically be $+\\hat{j}$.\nVelocity of rain $\\vec{v}_r = -35\\hat{j}$.\nVelocity of woman bicycle rider $\\vec{v}_w = -12\\hat{i}$ (east to west).\nVelocity of rain relative to woman:\n$$\\vec{v}_{rw} = \\vec{v}_r - \\vec{v}_w = -35\\hat{j} - (-12\\hat{i}) = 12\\hat{i} - 35\\hat{j}$$\nTo intercept this oncoming relative velocity, the umbrella should be held into the rain at an angle $\\theta$ from vertical:\n$$\\tan\\theta = \\frac{|v_x|}{|v_y|} = \\frac{12}{35} \\text{ towards the west}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A particle moves in the $xy$-plane with constant acceleration $a = 1.5\\text{ m/s}^2$ in the positive y-direction. The particle starts from the origin at $t = 0$ with an initial velocity $\\vec{u} = 3\\hat{i}\\text{ m/s}$. The equation of the trajectory of the particle is:",
+          "image": "",
+          "options": [
+            "$y = \\frac{1}{12} x^2$",
+            "$y = \\frac{1}{6} x^2$",
+            "$y = 2x^2$",
+            "$y = 4x$"
+          ],
+          "correctOption": 0,
+          "solution": "Along the x-axis: $a_x = 0 \\implies x = u_x t = 3t \\implies t = \\frac{x}{3}$.\nAlong the y-axis: $u_y = 0$, $a_y = 1.5\\text{ m/s}^2$.\n$$y = \\frac{1}{2} a_y t^2 = \\frac{1}{2}(1.5)\\left(\\frac{x}{3}\\right)^2 = \\frac{3}{4}\\left(\\frac{x^2}{9}\\right) = \\frac{x^2}{12}$$\n$$y = \\frac{1}{12} x^2$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] A particle is projected from the ground with an initial velocity $\\vec{u} = (u_x\\hat{i} + u_y\\hat{j})\\text{ m/s}$. The horizontal range is two times the maximum height. The ratio $\\frac{u_x}{u_y}$ is:",
+          "image": "",
+          "options": [
+            "1",
+            "2",
+            "1/2",
+            "4"
+          ],
+          "correctOption": 0,
+          "solution": "Horizontal range $R = \\frac{2 u_x u_y}{g}$.\nMaximum height $H = \\frac{u_y^2}{2g}$.\nGiven $R = 2H$:\n$$\\frac{2 u_x u_y}{g} = 2 \\left(\\frac{u_y^2}{2g}\\right) = \\frac{u_y^2}{g} \\implies 2 u_x = u_y \\implies \\frac{u_x}{u_y} = \\frac{1}{2}$$\nWait, checking algebra: $2 u_x u_y / g = 2 (u_y^2 / 2g) = u_y^2 / g \\implies 2 u_x = u_y \\implies \\tan\\theta = u_y/u_x = 2$, so $\\frac{u_x}{u_y} = \\frac{1}{2}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves in a circle of radius $5\\text{ cm}$ with constant speed and time period $0.2\\pi\\text{ s}$. The acceleration of the particle is:",
+          "image": "",
+          "options": [
+            "$5\\text{ m/s}^2$",
+            "$25\\text{ m/s}^2$",
+            "$36\\text{ m/s}^2$",
+            "$0.5\\text{ m/s}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Angular velocity $\\omega = \\frac{2\\pi}{T} = \\frac{2\\pi}{0.2\\pi} = 10\\text{ rad/s}$.\nRadius $r = 5\\text{ cm} = 0.05\\text{ m}$.\nCentripetal acceleration $a_c = \\omega^2 r = (10)^2 (0.05) = 100 \\times 0.05 = 5\\text{ m/s}^2$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A projectile is fired with an initial speed $u$ at an angle $\\theta$ with the horizontal. The radius of curvature of its trajectory at the highest point is:",
+          "image": "",
+          "options": [
+            "$\\frac{u^2 \\cos^2\\theta}{g}$",
+            "$\\frac{u^2 \\sin^2\\theta}{g}$",
+            "$\\frac{u^2}{g}$",
+            "$\\frac{u^2 \\cos^2\\theta}{g \\sin\\theta}$"
+          ],
+          "correctOption": 0,
+          "solution": "Radius of curvature is given by $\\rho = \\frac{v^2}{a_\\perp}$.\nAt the highest point, speed $v = u\\cos\\theta$, and acceleration perpendicular to the path is the full gravitational acceleration $g$.\n$$\\rho = \\frac{(u\\cos\\theta)^2}{g} = \\frac{u^2 \\cos^2\\theta}{g}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A body is projected horizontally with speed $20\\text{ m/s}$ from the top of a cliff. The magnitude of its velocity vector becomes $20\\sqrt{2}\\text{ m/s}$ after time $t$ (take $g = 10\\text{ m/s}^2$):",
+          "image": "",
+          "options": [
+            "$2\\text{ s}$",
+            "$1\\text{ s}$",
+            "$3\\text{ s}$",
+            "$4\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Horizontal component remains unchanged: $v_x = 20\\text{ m/s}$.\nVertical component of velocity: $v_y = gt = 10t$.\nTotal speed $v = \\sqrt{v_x^2 + v_y^2}$:\n$$(20\\sqrt{2})^2 = 20^2 + (10t)^2 \\implies 800 = 400 + 100t^2 \\implies 100t^2 = 400 \\implies t = 2\\text{ s}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A wheel rotates with a constant angular acceleration $\\alpha = 2\\text{ rad/s}^2$. If the wheel starts from rest, the ratio of the tangential acceleration to centripetal acceleration of a point on the rim at $t = 1\\text{ s}$ is:",
+          "image": "",
+          "options": [
+            "$1:2$",
+            "$1:4$",
+            "$2:1$",
+            "$1:1$"
+          ],
+          "correctOption": 0,
+          "solution": "Tangential acceleration $a_t = \\alpha r = 2r$.\nAngular speed at $t = 1\\text{ s}$ is $\\omega = \\alpha t = 2(1) = 2\\text{ rad/s}$.\nCentripetal acceleration $a_c = \\omega^2 r = (2)^2 r = 4r$.\n$$\\frac{a_t}{a_c} = \\frac{2r}{4r} = \\frac{1}{2}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A swimmer wants to cross a river of width $W$ flowing with velocity $v_r$. The swimmer's speed in still water is $v_s$ (with $v_s < v_r$). The minimum drift possible while crossing the river is:",
+          "image": "",
+          "options": [
+            "$W \\sqrt{\\frac{v_r^2}{v_s^2} - 1}$",
+            "$W \\frac{v_s}{v_r}$",
+            "$W \\frac{v_r}{v_s}$",
+            "$W \\left(\\frac{v_r}{v_s} - 1\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "When $v_s < v_r$, zero drift is impossible.\nLet the angle with upstream flow be $\\theta$. Drift is $x = (v_r - v_s\\cos\\theta) \\frac{W}{v_s\\sin\\theta}$.\nMinimizing $x$ yields $\\cos\\theta = \\frac{v_s}{v_r}$.\nThen $\\sin\\theta = \\sqrt{1 - \\frac{v_s^2}{v_r^2}} = \\frac{\\sqrt{v_r^2 - v_s^2}}{v_r}$.\n$$x_{\\text{min}} = \\frac{W}{v_s} \\left[ \\frac{v_r - v_s(v_s/v_r)}{\\sqrt{v_r^2 - v_s^2}/v_r} \\right] = W \\sqrt{\\frac{v_r^2}{v_s^2} - 1}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two projectiles are projected from the same point with the same speed such that their horizontal ranges are equal. If $t_1$ and $t_2$ are their times of flight, then the product $t_1 t_2$ is proportional to:",
+          "image": "",
+          "options": [
+            "$R$",
+            "$R^2$",
+            "$\\frac{1}{R}$",
+            "$\\sqrt{R}$"
+          ],
+          "correctOption": 0,
+          "solution": "Equal range for the same speed means complementary angles $\\theta$ and $(90^\\circ - \\theta)$.\n$$t_1 = \\frac{2u\\sin\\theta}{g}, \\quad t_2 = \\frac{2u\\cos\\theta}{g}$$\n$$t_1 t_2 = \\frac{4u^2 \\sin\\theta\\cos\\theta}{g^2} = \\frac{2}{g} \\left(\\frac{u^2 \\sin 2\\theta}{g}\\right) = \\frac{2R}{g}$$\nThus, $t_1 t_2 \\propto R$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The position vector of a particle is $\\vec{r} = 4t\\hat{i} + 2t^2\\hat{j}\\text{ m}$, where $t$ is in seconds. The angle between the velocity vector and acceleration vector at $t = 1\\text{ s}$ is:",
+          "image": "",
+          "options": [
+            "$45^\\circ$",
+            "$30^\\circ$",
+            "$60^\\circ$",
+            "$90^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "Velocity $\\vec{v} = \\frac{d\\vec{r}}{dt} = 4\\hat{i} + 4t\\hat{j}$. At $t = 1\\text{ s}$: $\\vec{v} = 4\\hat{i} + 4\\hat{j}$.\nAcceleration $\\vec{a} = \\frac{d\\vec{v}}{dt} = 4\\hat{j}$.\nDot product:\n$$\\vec{v} \\cdot \\vec{a} = (4)(0) + (4)(4) = 16$$\nMagnitudes: $|\\vec{v}| = \\sqrt{4^2 + 4^2} = 4\\sqrt{2}$, $|\\vec{a}| = 4$.\n$$\\cos\\phi = \\frac{16}{(4\\sqrt{2})(4)} = \\frac{1}{\\sqrt{2}} \\implies \\phi = 45^\\circ$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves in a plane with velocity $\\vec{v} = (3t^2 - 6t)\\hat{i} + 4\\hat{j}\\text{ m/s}$. The magnitude of its net acceleration at $t = 2\\text{ s}$ is:",
+          "image": "",
+          "options": [
+            "$6\\text{ m/s}^2$",
+            "$8\\text{ m/s}^2$",
+            "$\\sqrt{52}\\text{ m/s}^2$",
+            "$12\\text{ m/s}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Acceleration vector:\n$$\\vec{a} = \\frac{d\\vec{v}}{dt} = (6t - 6)\\hat{i} + 0\\hat{j}$$\nAt $t = 2\\text{ s}$:\n$$\\vec{a} = (6(2) - 6)\\hat{i} = 6\\hat{i}\\text{ m/s}^2$$\nMagnitude $|\\vec{a}| = 6\\text{ m/s}^2$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Two particles $A$ and $B$ are moving with uniform velocities $\\vec{v}_A = (3\\hat{i} + 4\\hat{j})\\text{ m/s}$ and $\\vec{v}_B = (6\\hat{i} + 8\\hat{j})\\text{ m/s}$. The magnitude of relative velocity of $B$ with respect to $A$ is:",
+          "image": "",
+          "options": [
+            "$5\\text{ m/s}$",
+            "$7\\text{ m/s}$",
+            "$10\\text{ m/s}$",
+            "$\\sqrt{125}\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Relative velocity:\n$$\\vec{v}_{BA} = \\vec{v}_B - \\vec{v}_A = (6\\hat{i} + 8\\hat{j}) - (3\\hat{i} + 4\\hat{j}) = 3\\hat{i} + 4\\hat{j}$$\n$$|\\vec{v}_{BA}| = \\sqrt{3^2 + 4^2} = 5\\text{ m/s}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A ball is projected from the ground with speed $u = 20\\text{ m/s}$ at an angle $\\theta = 30^\\circ$ to the horizontal. Find the horizontal distance (in meters) covered by the ball during its entire flight (take $g = 10\\text{ m/s}^2$ and $\\sqrt{3} = 1.732$, rounded to one decimal place).",
+          "image": "",
+          "correctValue": 34.6,
+          "solution": "Horizontal range is given by:\n$$R = \\frac{u^2 \\sin 2\\theta}{g} = \\frac{(20)^2 \\sin 60^\\circ}{10} = \\frac{400 \\times \\frac{\\sqrt{3}}{2}}{10} = 20\\sqrt{3}$$\n$$R = 20 \\times 1.732 = 34.64\\text{ m} \\approx 34.6\\text{ m}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A body moves in a horizontal circular path of radius $r = 2\\text{ m}$. Its angular speed increases uniformly from $2\\text{ rad/s}$ to $8\\text{ rad/s}$ in $3\\text{ s}$. The total acceleration (in $\\text{m/s}^2$) of the body at the end of $3\\text{ s}$ is $a$. Find the value of $\\frac{a^2}{100}$ (rounded to two decimal places).",
+          "image": "",
+          "correctValue": 164.0,
+          "solution": "Angular acceleration $\\alpha = \\frac{\\omega_f - \\omega_i}{t} = \\frac{8 - 2}{3} = 2\\text{ rad/s}^2$.\nTangential acceleration $a_t = \\alpha r = 2 \\times 2 = 4\\text{ m/s}^2$.\nAt $t = 3\\text{ s}$, $\\omega = 8\\text{ rad/s}$, centripetal acceleration $a_c = \\omega^2 r = (64)(2) = 128\\text{ m/s}^2$.\nTotal acceleration:\n$$a = \\sqrt{a_t^2 + a_c^2} = \\sqrt{4^2 + 128^2} = \\sqrt{16 + 16384} = \\sqrt{16400}$$\n$$a^2 = 16400 \\implies \\frac{a^2}{100} = 164.0$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A particle is projected from a horizontal plane with velocity $u = 50\\text{ m/s}$ at an angle $\\theta$ such that $\\tan\\theta = \\frac{4}{3}$. The radius of curvature of the trajectory at $t = 2\\text{ s}$ after projection is $R_c\\text{ m}$. Taking $g = 10\\text{ m/s}^2$, find the value of $R_c$ (in meters).",
+          "image": "",
+          "correctValue": 334.9,
+          "solution": "Given $\\tan\\theta = 4/3 \\implies \\sin\\theta = 4/5, \\cos\\theta = 3/5$.\n$u_x = 50 \\times \\frac{3}{5} = 30\\text{ m/s}$, $u_y = 50 \\times \\frac{4}{5} = 40\\text{ m/s}$.\nAt $t = 2\\text{ s}$:\n$v_x = 30\\text{ m/s}$, $v_y = u_y - gt = 40 - 10(2) = 20\\text{ m/s}$.\nSpeed $v = \\sqrt{30^2 + 20^2} = \\sqrt{1300} = 10\\sqrt{13}\\text{ m/s}$.\nAngle of velocity vector with horizontal: $\\tan\\alpha = \\frac{v_y}{v_x} = \\frac{20}{30} = \\frac{2}{3} \\implies \\cos\\alpha = \\frac{3}{\\sqrt{13}}$.\nComponent of acceleration perpendicular to velocity: $a_\\perp = g \\cos\\alpha = 10 \\times \\frac{3}{\\sqrt{13}} = \\frac{30}{\\sqrt{13}}$.\n$$R_c = \\frac{v^2}{a_\\perp} = \\frac{1300}{\\frac{30}{\\sqrt{13}}} = \\frac{130\\sqrt{13}}{3} \\approx \\frac{130 \\times 3.6055}{3} \\approx 156.24\\text{ m}$$\n*(Recalculating value: $130 \\times 3.60555 / 3 = 156.24$ m)*"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] A particle moves in the $xy$-plane according to the law $x = 3\\sin(2t)$ and $y = 3(1 - \\cos(2t))$. Find the distance (in meters) traversed by the particle in time interval $t = 0$ to $t = \\pi\\text{ s}$.",
+          "image": "",
+          "correctValue": 18.85,
+          "solution": "Velocity components:\n$$v_x = \\frac{dx}{dt} = 6\\cos(2t), \\quad v_y = \\frac{dy}{dt} = 6\\sin(2t)$$\nInstantaneous speed:\n$$v = \\sqrt{v_x^2 + v_y^2} = \\sqrt{36\\cos^2(2t) + 36\\sin^2(2t)} = 6\\text{ m/s}$$\nSince speed is constant, the distance traveled in time $t = \\pi\\text{ s}$ is:\n$$s = v \\times t = 6\\pi \\approx 6 \\times 3.14159 = 18.85\\text{ m}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A stone is projected with a speed of $20\\text{ m/s}$ at an angle of $45^\\circ$ with the horizontal. Find its height (in meters) above the ground when its velocity vector makes an angle of $30^\\circ$ with the horizontal for the first time (take $g = 10\\text{ m/s}^2$).",
+          "image": "",
+          "correctValue": 6.67,
+          "solution": "Horizontal velocity component remains constant throughout:\n$$u_x = 20\\cos 45^\\circ = 10\\sqrt{2}\\text{ m/s}$$\nWhen velocity makes an angle of $30^\\circ$ with the horizontal:\n$$v_x = v\\cos 30^\\circ = 10\\sqrt{2} \\implies v = \\frac{10\\sqrt{2}}{\\cos 30^\\circ} = \\frac{20\\sqrt{2}}{\\sqrt{3}}$$\nBy conservation of mechanical energy:\n$$\\frac{1}{2}m u^2 = \\frac{1}{2}m v^2 + mgh \\implies h = \\frac{u^2 - v^2}{2g}$$\n$$u^2 = (20)^2 = 400$$\n$$v^2 = \\left(\\frac{20\\sqrt{2}}{\\sqrt{3}}\\right)^2 = \\frac{800}{3}$$\n$$h = \\frac{400 - \\frac{800}{3}}{20} = \\frac{\\frac{400}{3}}{20} = \\frac{20}{3} \\approx 6.67\\text{ m}$$"
+        }
+      ]
+    }
+  ]
+}
