@@ -123,25 +123,26 @@
     let timeRemaining = 0;
 
     function shuffle(array) {
-      for (let i = array.length - 1; i > 0; i--) {
+      const copy = [...array];
+      for (let i = copy.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
+        [copy[i], copy[j]] = [copy[j], copy[i]];
       }
-      return array;
+      return copy;
     }
 
     function processAndShuffleOptions(q) {
       if (!q.options || q.type === 'numerical') return q;
       const mapped = q.options.map((text, idx) => ({ text, originalIndex: idx }));
-      shuffle(mapped);
-      const newOptions = mapped.map(o => o.text);
+      const shuffledMapped = shuffle(mapped);
+      const newOptions = shuffledMapped.map(o => o.text);
 
       if (q.type === 'single_choice') {
-        const newCorrect = mapped.findIndex(o => o.originalIndex === q.correctOption);
+        const newCorrect = shuffledMapped.findIndex(o => o.originalIndex === q.correctOption);
         return { ...q, options: newOptions, correctOption: newCorrect };
       }
       if (q.type === 'multiple_choice') {
-        const newCorrect = (q.correctOptions || []).map(orig => mapped.findIndex(o => o.originalIndex === orig)).sort();
+        const newCorrect = (q.correctOptions || []).map(orig => shuffledMapped.findIndex(o => o.originalIndex === orig)).sort();
         return { ...q, options: newOptions, correctOptions: newCorrect };
       }
       return q;
@@ -154,14 +155,27 @@
         if (!res.ok) throw new Error("HTTP " + res.status + ": Could not find test.json");
         testData = await res.json();
 
-        let rawQuestions = [];
+        let processedQuestions = [];
+
         (testData.sections || []).forEach(sec => {
-          (sec.questions || []).forEach(q => rawQuestions.push({ ...q, subject: sec.subject || 'General' }));
+          const secSubject = sec.subject || 'General';
+          const secQuestions = sec.questions || [];
+
+          // Separate MCQs/multi-choice from numerical/integer types
+          const mcqs = secQuestions.filter(q => q.type !== 'numerical');
+          const numericals = secQuestions.filter(q => q.type === 'numerical');
+
+          // Shuffle each group independently
+          const shuffledMcqs = shuffle(mcqs).map(q => processAndShuffleOptions({ ...q, subject: secSubject }));
+          const shuffledNumericals = shuffle(numericals).map(q => ({ ...q, subject: secSubject }));
+
+          // Append: MCQs first (1-20), Numericals at end (21-25)
+          processedQuestions = processedQuestions.concat(shuffledMcqs, shuffledNumericals);
         });
 
-        if (rawQuestions.length === 0) throw new Error("No questions found in test.json.");
+        if (processedQuestions.length === 0) throw new Error("No questions found in test.json.");
 
-        questions = shuffle(rawQuestions).map(q => processAndShuffleOptions(q));
+        questions = processedQuestions;
         questions.forEach(q => {
           userResponses[q.id] = { value: null, status: 'not_visited' };
         });
