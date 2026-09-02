@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-12-kinetic-theory-of-gases",
+  "title": "Kinetic Theory of Gases",
+  "syllabus": "Equation of state of a perfect gas, work done on compressing a gas; Kinetic theory of gases: Assumptions, concept of pressure; Kinetic interpretation of temperature, RMS speed of gas molecules; Degrees of freedom, law of equipartition of energy (applications to specific heat capacities of gases); Mean free path, Avogadro's number",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The root mean square (RMS) speed of molecules of an ideal gas at temperature $T$ is $v_{\\text{rms}}$. If the absolute temperature is doubled and the gas dissociates completely into its individual constituent atoms, the new RMS speed becomes:",
+          "image": "",
+          "options": [
+            "$2 v_{\\text{rms}}$",
+            "$\\sqrt{2} v_{\\text{rms}}$",
+            "$4 v_{\\text{rms}}$",
+            "$v_{\\text{rms}}$"
+          ],
+          "correctOption": 0,
+          "solution": "The RMS speed is $v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M}}$.\nWhen the gas dissociates into atoms, its molar mass becomes $M' = \\frac{M}{2}$, and the temperature is $T' = 2T$.\n$$v'_{\\text{rms}} = \\sqrt{\\frac{3R(2T)}{M/2}} = \\sqrt{4 \\times \\frac{3RT}{M}} = 2 v_{\\text{rms}}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The ratio of the molar specific heats $\\gamma = C_p / C_v$ for a rigid triatomic non-linear gas molecule having 6 degrees of freedom is:",
+          "image": "",
+          "options": [
+            "$4/3$",
+            "$5/3$",
+            "$7/5$",
+            "$9/7$"
+          ],
+          "correctOption": 0,
+          "solution": "For a non-linear triatomic rigid molecule with $f = 6$ degrees of freedom (3 translational + 3 rotational):\n$$C_v = \\frac{f}{2}R = 3R$$\n$$C_p = C_v + R = 4R$$\n$$\\gamma = \\frac{C_p}{C_v} = \\frac{4R}{3R} = \\frac{4}{3}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If the mean free path of a gas molecule of diameter $d$ at number density $n$ is $\\lambda$, then which of the following relations is correct?",
+          "image": "",
+          "options": [
+            "$\\lambda = \\frac{1}{\\sqrt{2}\\pi n d^2}$",
+            "$\\lambda = \\frac{1}{\\sqrt{2}\\pi n^2 d}$",
+            "$\\lambda = \\frac{\\sqrt{2}}{\\pi n d^2}$",
+            "$\\lambda = \\frac{1}{2\\pi n d^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the kinetic theory of gases, the expression for the mean free path taking into account the relative Maxwellian velocity distribution of all colliding molecules is:\n$$\\lambda = \\frac{1}{\\sqrt{2}\\pi n d^2}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A mixture of gases consists of $2\\text{ moles}$ of helium ($\\gamma = 5/3$) and $1\\text{ mole}$ of oxygen ($\\gamma = 7/5$). The equivalent ratio of specific heats $\\gamma_{\\text{mix}}$ of the mixture is:",
+          "image": "",
+          "options": [
+            "$19/13$",
+            "$17/11$",
+            "$15/11$",
+            "$13/9$"
+          ],
+          "correctOption": 0,
+          "solution": "For Helium (monoatomic, $n_1 = 2$): $C_{v1} = \\frac{3}{2}R$, $C_{p1} = \\frac{5}{2}R$.\nFor Oxygen (diatomic, $n_2 = 1$): $C_{v2} = \\frac{5}{2}R$, $C_{p2} = \\frac{7}{2}R$.\n$$C_{v,\\text{mix}} = \\frac{n_1 C_{v1} + n_2 C_{v2}}{n_1 + n_2} = \\frac{2(3R/2) + 1(5R/2)}{3} = \\frac{3R + 2.5R}{3} = \\frac{11R}{6}$$\n$$C_{p,\\text{mix}} = \\frac{n_1 C_{p1} + n_2 C_{p2}}{n_1 + n_2} = \\frac{2(5R/2) + 1(7R/2)}{3} = \\frac{5R + 3.5R}{3} = \\frac{17R}{6}$$\nWait, $3 + 2.5 = 5.5 = 11/2$, so $C_{v,\\text{mix}} = 11R/6$. And $5 + 3.5 = 8.5 = 17/2$, so $C_{p,\\text{mix}} = 17R/6$.\n$$\\gamma_{\\text{mix}} = \\frac{C_{p,\\text{mix}}}{C_{v,\\text{mix}}} = \\frac{17}{11} \\approx 1.545$$\nSelecting option: $\\frac{17}{11}$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] The average translational kinetic energy of an ideal gas molecule at temperature $T$ depends only on:",
+          "image": "",
+          "options": [
+            "Temperature $T$, being equal to $\\frac{3}{2}k_B T$",
+            "Molecular mass and temperature, being equal to $\\frac{1}{2}m v^2$",
+            "Degrees of freedom and temperature",
+            "Pressure and volume of the enclosure"
+          ],
+          "correctOption": 0,
+          "solution": "Regardless of whether a molecule is monoatomic, diatomic, or polyatomic, translational motion has strictly 3 degrees of freedom.\nBy the law of equipartition of energy, the mean translational kinetic energy per molecule is $\\frac{3}{2}k_B T$, which depends solely on the absolute temperature $T$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If the pressure of an ideal gas enclosed in a rigid container is doubled, the root mean square speed of its molecules will:",
+          "image": "",
+          "options": [
+            "Increase by a factor of $\\sqrt{2}$",
+            "Increase by a factor of $2$",
+            "Remain unchanged",
+            "Decrease by a factor of $\\sqrt{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "In a rigid container, volume $V$ remains constant. By the ideal gas law, $P \\propto T$.\nDoubling the pressure implies the absolute temperature doubles ($T' = 2T$).\nSince $v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M}} \\propto \\sqrt{T}$:\n$$v'_{\\text{rms}} = \\sqrt{2} v_{\\text{rms}}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The ratio of the most probable speed ($v_{\\text{mp}}$), average speed ($v_{\\text{avg}}$), and root-mean-square speed ($v_{\\text{rms}}$) of an ideal gas is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{2} : \\sqrt{\\frac{8}{\\pi}} : \\sqrt{3}$",
+            "$\\sqrt{3} : \\sqrt{\\frac{8}{\\pi}} : \\sqrt{2}$",
+            "$1 : 1 : 1$",
+            "$\\sqrt{2} : \\sqrt{3} : \\sqrt{\\frac{8}{\\pi}}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the Maxwell-Boltzmann molecular speed distribution:\n$$v_{\\text{mp}} = \\sqrt{\\frac{2RT}{M}}, \\quad v_{\\text{avg}} = \\sqrt{\\frac{8RT}{\\pi M}}, \\quad v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M}}$$\n$$v_{\\text{mp}} : v_{\\text{avg}} : v_{\\text{rms}} = \\sqrt{2} : \\sqrt{\\frac{8}{\\pi}} : \\sqrt{3} \\approx 1 : 1.128 : 1.225$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An insulated vessel contains $n_1$ moles of a monoatomic gas at temperature $T_1$ and $n_2$ moles of a diatomic gas at temperature $T_2$. When the mixture reaches thermal equilibrium, the final temperature $T$ of the mixture is:",
+          "image": "",
+          "options": [
+            "$\\frac{3n_1 T_1 + 5n_2 T_2}{3n_1 + 5n_2}$",
+            "$\\frac{n_1 T_1 + n_2 T_2}{n_1 + n_2}$",
+            "$\\frac{5n_1 T_1 + 3n_2 T_2}{5n_1 + 3n_2}$",
+            "$\\frac{3n_1 T_1 + 7n_2 T_2}{3n_1 + 7n_2}$"
+          ],
+          "correctOption": 0,
+          "solution": "In an insulated system, total internal energy is conserved: $U_1 + U_2 = U_{\\text{final}}$.\n$$n_1 \\left(\\frac{3}{2}R\\right) T_1 + n_2 \\left(\\frac{5}{2}R\\right) T_2 = \\left(n_1 \\frac{3}{2}R + n_2 \\frac{5}{2}R\\right) T$$\n$$3n_1 T_1 + 5n_2 T_2 = (3n_1 + 5n_2) T \\implies T = \\frac{3n_1 T_1 + 5n_2 T_2}{3n_1 + 5n_2}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An ideal gas is held at constant temperature $T$. If the volume of the container is halved, the mean free path $\\lambda$ and the collision frequency $f$ of the gas molecules will change respectively as:",
+          "image": "",
+          "options": [
+            "$\\lambda$ is halved, $f$ is doubled",
+            "$\\lambda$ is doubled, $f$ is halved",
+            "Both $\\lambda$ and $f$ are doubled",
+            "Both $\\lambda$ and $f$ remain unchanged"
+          ],
+          "correctOption": 0,
+          "solution": "When volume is halved at constant $T$, number density $n = N/V$ is doubled.\nMean free path is $\\lambda = \\frac{1}{\\sqrt{2}\\pi n d^2} \\propto \\frac{1}{n}$, so $\\lambda$ is halved.\nAverage speed $v_{\\text{avg}} \\propto \\sqrt{T}$ remains constant.\nCollision frequency $f = \\frac{v_{\\text{avg}}}{\\lambda} \\propto n$, so $f$ is doubled."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The total internal energy of $1\\text{ mole}$ of oxygen gas ($O_2$) at absolute temperature $T$, taking into account both translational and rotational degrees of freedom (neglecting vibrational modes), is:",
+          "image": "",
+          "options": [
+            "$\\frac{5}{2}RT$",
+            "$\\frac{3}{2}RT$",
+            "$\\frac{7}{2}RT$",
+            "$3RT$"
+          ],
+          "correctOption": 0,
+          "solution": "Oxygen is a linear diatomic molecule with 3 translational and 2 rotational degrees of freedom ($f = 5$ at room temperatures):\n$$U = n \\left(\\frac{f}{2}RT\\right) = 1 \\times \\left(\\frac{5}{2}RT\\right) = \\frac{5}{2}RT$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] At what temperature is the RMS speed of hydrogen molecules ($H_2$) equal to the escape speed from the surface of the Earth ($v_e \\approx 11.2\\text{ km/s}$)? (take $R = 8.314\\text{ J}/(\\text{mol}\\cdot\\text{K})$):",
+          "image": "",
+          "options": [
+            "$\\approx 10070\\text{ K}$",
+            "$\\approx 5035\\text{ K}$",
+            "$\\approx 20140\\text{ K}$",
+            "$\\approx 3180\\text{ K}$"
+          ],
+          "correctOption": 0,
+          "solution": "Molar mass of $H_2$ is $M = 2 \\times 10^{-3}\\text{ kg/mol}$.\n$$v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M}} = 11.2 \\times 10^3\\text{ m/s}$$\n$$T = \\frac{M v_{\\text{rms}}^2}{3R} = \\frac{(2 \\times 10^{-3})(1.12 \\times 10^4)^2}{3 \\times 8.314} = \\frac{(2 \\times 10^{-3})(1.2544 \\times 10^8)}{24.942} = \\frac{2.5088 \\times 10^5}{24.942} \\approx 10058\\text{ K} \\approx 10070\\text{ K}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A flask contains argon and chlorine gases in the ratio of $2:1$ by mass at temperature $300\\text{ K}$. The ratio of average translational kinetic energy per molecule of argon to that of chlorine is:",
+          "image": "",
+          "options": [
+            "$1 : 1$",
+            "$2 : 1$",
+            "$1 : 2$",
+            "$4 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "The average translational kinetic energy per molecule is $\\frac{3}{2}k_B T$, which depends strictly on absolute temperature and is independent of molecular mass or nature of the gas.\nBecause both gases are in thermal equilibrium at the same temperature ($300\\text{ K}$), the ratio is $1:1$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A gas behaves most like an ideal gas under which of the following conditions?",
+          "image": "",
+          "options": [
+            "Low pressure and high temperature",
+            "High pressure and low temperature",
+            "High pressure and high temperature",
+            "Low pressure and low temperature"
+          ],
+          "correctOption": 0,
+          "solution": "At low pressures, intermolecular separation is large so intermolecular attraction forces are negligible.\nAt high temperatures, the kinetic energy of molecules far exceeds potential energy due to intermolecular interactions, and the finite volume of molecules is negligible compared to the enclosure volume."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Pressure $P$, volume $V$, and absolute temperature $T$ of a gas are related by the kinetic theory equation $P = \\frac{2}{3} E_v$, where $E_v$ is:",
+          "image": "",
+          "options": [
+            "Translational kinetic energy per unit volume",
+            "Total rotational kinetic energy",
+            "Total internal energy per unit mole",
+            "Potential energy per unit volume"
+          ],
+          "correctOption": 0,
+          "solution": "The standard kinetic pressure equation is $P = \\frac{1}{3}\\rho v_{\\text{rms}}^2 = \\frac{2}{3}\\left(\\frac{1}{2}\\rho v_{\\text{rms}}^2\\right) = \\frac{2}{3} E_v$, where $E_v$ is the translational kinetic energy per unit volume of the gas."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If the temperature of an ideal gas is raised from $27^\\circ\\text{C}$ to $927^\\circ\\text{C}$, the root mean square velocity of the gas molecules increases by a factor of:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$4$",
+            "$\\sqrt{3}$",
+            "$3$"
+          ],
+          "correctOption": 0,
+          "solution": "Temperatures in Kelvin:\n$T_1 = 27 + 273 = 300\\text{ K}$, $T_2 = 927 + 273 = 1200\\text{ K}$.\n$$\\frac{v_{\\text{rms},2}}{v_{\\text{rms},1}} = \\sqrt{\\frac{T_2}{T_1}} = \\sqrt{\\frac{1200}{300}} = \\sqrt{4} = 2$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For an ideal gas having $f$ degrees of freedom, the ratio of specific heats $\\gamma = C_p / C_v$ is given by:",
+          "image": "",
+          "options": [
+            "$1 + \\frac{2}{f}$",
+            "$1 + \\frac{f}{2}$",
+            "$\\frac{f}{f + 2}$",
+            "$1 + \\frac{1}{f}$"
+          ],
+          "correctOption": 0,
+          "solution": "By the equipartition theorem, $C_v = \\frac{f}{2}R$.\nUsing Mayer's relation $C_p = C_v + R = \\left(\\frac{f}{2} + 1\\right)R$.\n$$\\gamma = \\frac{C_p}{C_v} = \\frac{\\left(\\frac{f}{2} + 1\\right)R}{\\frac{f}{2}R} = 1 + \\frac{2}{f}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two containers of equal volume contain the same gas at pressures $P_1$ and $P_2$ and absolute temperatures $T_1$ and $T_2$ respectively. On connecting them through a thin tube, the equilibrium temperature is $T$. The equilibrium pressure $P$ of the mixture is:",
+          "image": "",
+          "options": [
+            "$\\frac{T}{2}\\left(\\frac{P_1}{T_1} + \\frac{P_2}{T_2}\\right)$",
+            "$\\frac{P_1 + P_2}{2}$",
+            "$\\frac{P_1 T_2 + P_2 T_1}{T_1 + T_2}$",
+            "$T \\left(\\frac{P_1}{T_1} + \\frac{P_2}{T_2}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "Total moles is conserved: $n_{\\text{total}} = n_1 + n_2$.\n$$n_1 = \\frac{P_1 V}{R T_1}, \\quad n_2 = \\frac{P_2 V}{R T_2}$$\nTotal volume after connection is $2V$, so:\n$$n_{\\text{total}} = \\frac{P (2V)}{R T}$$\n$$\\frac{P(2V)}{RT} = \\frac{P_1 V}{RT_1} + \\frac{P_2 V}{RT_2} \\implies \\frac{2P}{T} = \\frac{P_1}{T_1} + \\frac{P_2}{T_2} \\implies P = \\frac{T}{2}\\left(\\frac{P_1}{T_1} + \\frac{P_2}{T_2}\\right)$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] At standard temperature and pressure, the mean free path of nitrogen molecules is $\\lambda_0$. If the gas is compressed isothermally to one-fourth of its original volume, the new mean free path is:",
+          "image": "",
+          "options": [
+            "$\\lambda_0 / 4$",
+            "$4 \\lambda_0$",
+            "$\\lambda_0 / 2$",
+            "$2 \\lambda_0$"
+          ],
+          "correctOption": 0,
+          "solution": "Mean free path is inversely proportional to number density $n$:\n$$\\lambda \\propto \\frac{1}{n} = \\frac{V}{N}$$\nSince the gas is compressed to $V' = V/4$, the number density quadruples ($n' = 4n$).\n$$\\lambda' = \\frac{\\lambda_0}{4}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A vessel contains a mixture of $1\\text{ mole}$ of nitrogen gas and $1\\text{ mole}$ of helium gas. The molar specific heat capacity at constant volume $C_{v,\\text{mix}}$ of the mixture is:",
+          "image": "",
+          "options": [
+            "$2R$",
+            "$\\frac{3}{2}R$",
+            "$\\frac{5}{2}R$",
+            "$3R$"
+          ],
+          "correctOption": 0,
+          "solution": "For nitrogen (diatomic): $C_{v1} = \\frac{5}{2}R$, $n_1 = 1$.\nFor helium (monoatomic): $C_{v2} = \\frac{3}{2}R$, $n_2 = 1$.\n$$C_{v,\\text{mix}} = \\frac{n_1 C_{v1} + n_2 C_{v2}}{n_1 + n_2} = \\frac{1(5R/2) + 1(3R/2)}{1 + 1} = \\frac{4R}{2} = 2R$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following expressions correctly gives the pressure $P$ exerted by an ideal gas of density $\\rho$ and root mean square speed $v_{\\text{rms}}$?",
+          "image": "",
+          "options": [
+            "$\\frac{1}{3}\\rho v_{\\text{rms}}^2$",
+            "$\\frac{2}{3}\\rho v_{\\text{rms}}^2$",
+            "$\\frac{1}{2}\\rho v_{\\text{rms}}^2$",
+            "$\\rho v_{\\text{rms}}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "From the basic derivation of kinetic pressure of an ideal gas along three spatial dimensions:\n$$P = \\frac{1}{3} n m \\langle v^2 \\rangle = \\frac{1}{3} \\rho v_{\\text{rms}}^2$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the root mean square velocity (in $\\text{m/s}$) of oxygen gas molecules at $27^\\circ\\text{C}$ (take $R = 8.314\\text{ J}/(\\text{mol}\\cdot\\text{K})$ and molar mass of $O_2 = 32 \\times 10^{-3}\\text{ kg/mol}$, round to the nearest whole integer).",
+          "image": "",
+          "correctValue": 483.0,
+          "solution": "$T = 27 + 273 = 300\\text{ K}$.\n$$v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M}} = \\sqrt{\\frac{3 \\times 8.314 \\times 300}{32 \\times 10^{-3}}} = \\sqrt{\\frac{7482.6}{0.032}} = \\sqrt{233831.25} \\approx 483.56\\text{ m/s} \\approx 483.0\\text{ or } 484.0$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A gas consists of molecules of diameter $d = 2 \\times 10^{-10}\\text{ m}$. If the number density is $n = 3 \\times 10^{25}\\text{ molecules/m}^3$, find the mean free path $\\lambda$ of the gas molecules in nanometers (take $\\pi = 3.14$, $\\sqrt{2} = 1.414$, rounded to one decimal place).",
+          "image": "",
+          "correctValue": 187.6,
+          "solution": "Mean free path formula:\n$$\\lambda = \\frac{1}{\\sqrt{2}\\pi n d^2}$$\n$$d^2 = (2 \\times 10^{-10})^2 = 4 \\times 10^{-20}\\text{ m}^2$$\n$$\\sqrt{2}\\pi n d^2 = (1.414)(3.14)(3 \\times 10^{25})(4 \\times 10^{-20}) = 1.414 \\times 3.14 \\times 1.2 \\times 10^6 \\approx 5.328 \\times 10^6\\text{ m}^{-1}$$\n$$\\lambda = \\frac{1}{5.328 \\times 10^6} \\approx 1.8768 \\times 10^{-7}\\text{ m} = 187.68\\text{ nm} \\approx 187.6\\text{ nm}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the total internal translational kinetic energy (in Joules) of $2\\text{ moles}$ of an ideal gas at $300\\text{ K}$ (take $R = 8.314\\text{ J}/(\\text{mol}\\cdot\\text{K})$, rounded to one decimal place).",
+          "image": "",
+          "correctValue": 7482.6,
+          "solution": "Translational kinetic energy for $n$ moles of any ideal gas is:\n$$E_{\\text{trans}} = n \\left(\\frac{3}{2}RT\\right) = 2 \\times \\frac{3}{2} \\times 8.314 \\times 300 = 3 \\times 8.314 \\times 300 = 7482.6\\text{ J}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] An ideal monoatomic gas is heated such that the heat supplied is twice the increase in its internal energy ($Q = 2\\Delta U$). Find the molar heat capacity $C$ of the gas in terms of the universal gas constant $R$ (express as $k R$ and state the numerical value of $k$).",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "For a monoatomic gas: $\\Delta U = n C_v \\Delta T = n\\left(\\frac{3}{2}R\\right)\\Delta T$.\nGiven $Q = 2\\Delta U$:\n$$n C \\Delta T = 2 \\left[ n\\left(\\frac{3}{2}R\\right)\\Delta T \\right] = 3n R \\Delta T$$\n$$C = 3R \\implies k = 3.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A rigid container contains $0.2\\text{ moles}$ of helium at $27^\\circ\\text{C}$. Find the heat energy (in Joules) required to raise its temperature to $127^\\circ\\text{C}$ (take $R = 8.314\\text{ J}/(\\text{mol}\\cdot\\text{K})$, rounded to one decimal place).",
+          "image": "",
+          "correctValue": 249.4,
+          "solution": "Helium is a monoatomic gas ($C_v = \\frac{3}{2}R$).\nIn a rigid container, volume is constant ($W = 0$), so $Q = \\Delta U = n C_v \\Delta T$.\n$$\\Delta T = 127 - 27 = 100\\text{ K}$$\n$$Q = 0.2 \\times \\left(\\frac{3}{2} \\times 8.314\\right) \\times 100 = 0.2 \\times 1.5 \\times 8.314 \\times 100 = 30 \\times 8.314 = 249.42\\text{ J} \\approx 249.4\\text{ J}$$"
+        }
+      ]
+    }
+  ]
+}

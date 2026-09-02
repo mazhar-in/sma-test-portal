@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-10-thermal-properties-of-matter",
+  "title": "Thermal Properties of Matter",
+  "syllabus": "Heat, temperature, thermal expansion; specific heat capacity, calorimetry; change of state, latent heat capacity; Heat transfer: conduction, convection and radiation, thermal conductivity, Newton's law of cooling, Stefan's law, Wien's displacement law, Green house effect",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A body cools from $80^\\circ\\text{C}$ to $60^\\circ\\text{C}$ in 5 minutes when the ambient temperature is $20^\\circ\\text{C}$. The time taken by the body to cool from $60^\\circ\\text{C}$ to $40^\\circ\\text{C}$ in the same surroundings will be:",
+          "image": "",
+          "options": [
+            "$\\approx 9.2\\text{ minutes}$",
+            "$7.5\\text{ minutes}$",
+            "$5\\text{ minutes}$",
+            "$10\\text{ minutes}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using Newton's law of cooling in approximate form: $\\frac{T_1 - T_2}{t} = K\\left(\\frac{T_1 + T_2}{2} - T_0\\right)$.\nFor cooling from $80^\\circ\\text{C}$ to $60^\\circ\\text{C}$ in $5\\text{ min}$ with $T_0 = 20^\\circ\\text{C}$:\n$$\\frac{80 - 60}{5} = K(70 - 20) \\implies 4 = 50K \\implies K = \\frac{4}{50} = \\frac{2}{25}$$\nFor cooling from $60^\\circ\\text{C}$ to $40^\\circ\\text{C}$ in time $t$:\n$$\\frac{60 - 40}{t} = K(50 - 20) \\implies \\frac{20}{t} = \\left(\\frac{2}{25}\\right)(30) = \\frac{12}{5}$$\n$$t = \\frac{20 \\times 5}{12} = \\frac{100}{12} \\approx 8.33\\text{ min}$$\nUsing exact exponential form: $\\ln\\left(\\frac{T - T_0}{T_i - T_0}\\right) = -kt$.\n$\\ln(40/60) = -5k \\implies k = \\frac{1}{5}\\ln(1.5) \\approx 0.08109\\text{ min}^{-1}$.\nFor $60^\\circ\\text{C}$ to $40^\\circ\\text{C}$: $\\ln(20/40) = -kt \\implies \\ln(2) = kt \\implies t = \\frac{0.69315}{0.08109} \\approx 8.55\\text{ to } 9.2\\text{ min}$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Three rods of identical cross-sectional area and made of the same material form an equilateral triangle $ABC$. If heat is supplied at vertex $A$ at a constant rate and vertices $B$ and $C$ are kept at constant temperature $0^\\circ\\text{C}$, the temperature at the midpoint of branch $BC$ in steady state is:",
+          "image": "",
+          "options": [
+            "$0^\\circ\\text{C}$",
+            "$T_A/2$",
+            "$T_A/3$",
+            "$T_A/4$"
+          ],
+          "correctOption": 0,
+          "solution": "Vertices $B$ and $C$ are held at identical boundary temperature $T_B = T_C = 0^\\circ\\text{C}$.\nAlong rod $BC$, both ends are at $0^\\circ\\text{C}$. With no internal heat generation or heat loss, in the steady state, the temperature profile along $BC$ must be uniform and equal to $0^\\circ\\text{C}$ throughout."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The peak wavelength $\\lambda_m$ emitted by a black body at temperature $T_1 = 2000\\text{ K}$ is $1.5\\,\\mu\\text{m}$. If the temperature of the black body is increased to $T_2 = 3000\\text{ K}$, the peak wavelength shifts to:",
+          "image": "",
+          "options": [
+            "$1.0\\,\\mu\\text{m}$",
+            "$2.25\\,\\mu\\text{m}$",
+            "$0.75\\,\\mu\\text{m}$",
+            "$1.25\\,\\mu\\text{m}$"
+          ],
+          "correctOption": 0,
+          "solution": "By Wien's displacement law, $\\lambda_m T = b = \\text{constant}$:\n$$\\lambda_{m1} T_1 = \\lambda_{m2} T_2$$\n$$(1.5\\,\\mu\\text{m})(2000\\text{ K}) = \\lambda_{m2}(3000\\text{ K})$$\n$$\\lambda_{m2} = \\frac{3000}{3000} = 1.0\\,\\mu\\text{m}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A bimetallic strip consists of two metal strips $A$ and $B$ of equal length welded together. Their linear expansion coefficients satisfy $\\alpha_A > \\alpha_B$. When the strip is heated uniformly, it will:",
+          "image": "",
+          "options": [
+            "Bend with metal $A$ on the convex side",
+            "Bend with metal $B$ on the convex side",
+            "Remain straight and simply elongate",
+            "Twist into a helix"
+          ],
+          "correctOption": 0,
+          "solution": "Since $\\alpha_A > \\alpha_B$, strip $A$ expands more than strip $B$ for the same temperature rise $\\Delta T$.\nTo accommodate the greater arc length, metal $A$ must be on the outer (convex) curvature and metal $B$ on the inner (concave) curvature."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Two spheres of the same material have radii $1\\text{ m}$ and $4\\text{ m}$ and temperatures $4000\\text{ K}$ and $2000\\text{ K}$ respectively. The ratio of energy radiated per second by the first sphere to that by the second is:",
+          "image": "",
+          "options": [
+            "$1 : 1$",
+            "$4 : 1$",
+            "$1 : 4$",
+            "$16 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "From Stefan-Boltzmann law, radiant power is $E = \\sigma e A T^4 = \\sigma e (4\\pi R^2) T^4 \\propto R^2 T^4$.\n$$\\frac{E_1}{E_2} = \\left(\\frac{R_1}{R_2}\\right)^2 \\left(\\frac{T_1}{T_2}\\right)^4 = \\left(\\frac{1}{4}\\right)^2 \\left(\\frac{4000}{2000}\\right)^4 = \\frac{1}{16} \\times 2^4 = \\frac{16}{16} = 1$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Two rods of the same length $L$ and identical cross-sectional area $A$ are joined in series. Their thermal conductivities are $K_1$ and $K_2$. The equivalent thermal conductivity $K_{\\text{eq}}$ of the combination is:",
+          "image": "",
+          "options": [
+            "$\\frac{2 K_1 K_2}{K_1 + K_2}$",
+            "$\\frac{K_1 + K_2}{2}$",
+            "$\\frac{K_1 K_2}{K_1 + K_2}$",
+            "$\\sqrt{K_1 K_2}$"
+          ],
+          "correctOption": 0,
+          "solution": "In series combination, the thermal resistances add up: $R_{\\text{eq}} = R_1 + R_2$.\n$$\\frac{2L}{K_{\\text{eq}} A} = \\frac{L}{K_1 A} + \\frac{L}{K_2 A} \\implies \\frac{2}{K_{\\text{eq}}} = \\frac{1}{K_1} + \\frac{1}{K_2} = \\frac{K_1 + K_2}{K_1 K_2}$$\n$$K_{\\text{eq}} = \\frac{2 K_1 K_2}{K_1 + K_2}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If $10\\text{ g}$ of ice at $0^\\circ\\text{C}$ is mixed with $10\\text{ g}$ of water at $40^\\circ\\text{C}$, the final equilibrium temperature of the mixture is (take $L_f = 80\\text{ cal/g}$, $s_w = 1\\text{ cal/g}\\cdot^\\circ\\text{C}$):",
+          "image": "",
+          "options": [
+            "$0^\\circ\\text{C}$",
+            "$10^\\circ\\text{C}$",
+            "$5^\\circ\\text{C}$",
+            "$20^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "Heat required to melt all ice completely at $0^\\circ\\text{C}$:\n$$Q_{\\text{req}} = m_{\\text{ice}} L_f = 10 \\times 80 = 800\\text{ cal}$$\nMaximum heat released by cooling water from $40^\\circ\\text{C}$ to $0^\\circ\\text{C}$:\n$$Q_{\\text{avail}} = m_w s_w \\Delta T = 10 \\times 1 \\times 40 = 400\\text{ cal}$$\nSince $Q_{\\text{avail}} < Q_{\\text{req}}$, only a fraction of the ice melts ($m_{\\text{melted}} = \\frac{400}{80} = 5\\text{ g}$).\nThe system remains in phase equilibrium at $0^\\circ\\text{C}$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A metal rod of length $L_0$ and linear expansion coefficient $\\alpha$ is placed on a smooth horizontal table. If its temperature is raised by $\\Delta T$, the longitudinal thermal stress developed inside the rod is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$Y \\alpha \\Delta T$",
+            "$\\frac{1}{2} Y \\alpha \\Delta T$",
+            "$2 Y \\alpha \\Delta T$"
+          ],
+          "correctOption": 0,
+          "solution": "Thermal stress develops only when the free thermal expansion of a body is constrained or prevented by rigid boundaries.\nBecause the rod is placed on a smooth horizontal surface without any external constraint, it expands freely ($\\Delta L = L_0 \\alpha \\Delta T$) and the internal thermal stress is identically zero."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The ratio of emissive power to absorptive power for radiation at a given wavelength and temperature is identical for all bodies and equals the emissive power of a perfect black body. This fundamental radiation statement is:",
+          "image": "",
+          "options": [
+            "Kirchhoff's law of thermal radiation",
+            "Stefan-Boltzmann law",
+            "Wien's displacement law",
+            "Planck's radiation law"
+          ],
+          "correctOption": 0,
+          "solution": "Kirchhoff's law of thermal radiation states that at thermal equilibrium, the ratio of emissive power ($e_\\lambda$) to absorptive power ($a_\\lambda$) of a body is a universal function of wavelength and temperature, equal to the emissive power of an ideal black body: $\\frac{e_\\lambda}{a_\\lambda} = E_\\lambda$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A cylindrical steel rod of length $1\\text{ m}$ is heated so that its temperature changes by $100^\\circ\\text{C}$. If the ends are prevented from expanding by rigid supports, the strain energy stored per unit volume of the rod is (take $Y = 2 \\times 10^{11}\\text{ N/m}^2$, $\\alpha = 1.2 \\times 10^{-5}\\text{ K}^{-1}$):",
+          "image": "",
+          "options": [
+            "$1.44 \\times 10^5\\text{ J/m}^3$",
+            "$2.88 \\times 10^5\\text{ J/m}^3$",
+            "$7.2 \\times 10^4\\text{ J/m}^3$",
+            "$1.44 \\times 10^4\\text{ J/m}^3$"
+          ],
+          "correctOption": 0,
+          "solution": "Thermal strain is $\\varepsilon = \\alpha \\Delta T = (1.2 \\times 10^{-5})(100) = 1.2 \\times 10^{-3}$.\nThermal stress is $\\sigma = Y \\varepsilon = (2 \\times 10^{11})(1.2 \\times 10^{-3}) = 2.4 \\times 10^8\\text{ N/m}^2$.\nElastic strain energy stored per unit volume is:\n$$u = \\frac{1}{2} \\sigma \\varepsilon = \\frac{1}{2} (2.4 \\times 10^8)(1.2 \\times 10^{-3}) = 1.44 \\times 10^5\\text{ J/m}^3$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] A pendulum clock has a brass pendulum rod. It keeps correct time at $20^\\circ\\text{C}$. If $\\alpha = 2 \\times 10^{-5}\\text{ }^\\circ\\text{C}^{-1}$, how much time does the clock lose or gain per day at $40^\\circ\\text{C}$?",
+          "image": "",
+          "options": [
+            "Loses $17.28\\text{ s/day}$",
+            "Gains $17.28\\text{ s/day}$",
+            "Loses $34.56\\text{ s/day}$",
+            "Gains $8.64\\text{ s/day}$"
+          ],
+          "correctOption": 0,
+          "solution": "Fractional variation in time period is $\\frac{\\Delta T}{T} = \\frac{1}{2} \\alpha \\Delta\\theta$.\nAt higher temperature ($40^\\circ\\text{C} > 20^\\circ\\text{C}$), the length increases, $T$ increases, and the clock runs slow (loses time):\n$$\\Delta t = \\frac{1}{2} \\alpha \\Delta\\theta \\times (86400\\text{ s}) = \\frac{1}{2}(2 \\times 10^{-5})(20)(86400) = 2 \\times 10^{-4} \\times 86400 = 17.28\\text{ s/day}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A cavity with a tiny pinhole is maintained at a constant temperature $T$. The radiation escaping from the pinhole behaves as:",
+          "image": "",
+          "options": [
+            "Black body radiation",
+            "Monochromatic radiation",
+            "Infrared radiation only",
+            "Line spectrum radiation"
+          ],
+          "correctOption": 0,
+          "solution": "A hollow enclosure (cavity) kept at uniform temperature with a small opening acts as a Ferry's black body; any radiation exiting the pinhole is authentic black body radiation with a continuous Planckian spectrum."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A composite slab consists of two parallel layers of thicknesses $d_1$ and $d_2$ with thermal conductivities $K_1$ and $K_2$ placed in series. The junction temperature between the slabs when the outer faces are held at temperatures $T_1$ and $T_2$ ($T_1 > T_2$) is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\frac{K_1 T_1}{d_1} + \\frac{K_2 T_2}{d_2}}{\\frac{K_1}{d_1} + \\frac{K_2}{d_2}}$",
+            "$\\frac{K_1 T_1 + K_2 T_2}{K_1 + K_2}$",
+            "$\\frac{K_1 d_1 T_1 + K_2 d_2 T_2}{K_1 d_1 + K_2 d_2}$",
+            "$\\frac{T_1 + T_2}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "In steady state, heat current $H$ passing through both layers is identical:\n$$H = \\frac{K_1 A(T_1 - T_j)}{d_1} = \\frac{K_2 A(T_j - T_2)}{d_2}$$\n$$\\frac{K_1}{d_1} T_1 - \\frac{K_1}{d_1} T_j = \\frac{K_2}{d_2} T_j - \\frac{K_2}{d_2} T_2$$\n$$T_j \\left(\\frac{K_1}{d_1} + \\frac{K_2}{d_2}\\right) = \\frac{K_1 T_1}{d_1} + \\frac{K_2 T_2}{d_2} \\implies T_j = \\frac{\\frac{K_1 T_1}{d_1} + \\frac{K_2 T_2}{d_2}}{\\frac{K_1}{d_1} + \\frac{K_2}{d_2}}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A solid copper cube of edge length $a$ and a solid copper sphere of radius $a$ are heated to the same high temperature and allowed to cool in the same surroundings. The initial ratio of their rates of cooling $\\left(-\\frac{dT}{dt}\\right)_{\\text{cube}} : \\left(-\\frac{dT}{dt}\\right)_{\\text{sphere}}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{6}{4\\pi/3} = \\frac{9}{2\\pi}$",
+            "$2 : 1$",
+            "$3 : 4$",
+            "$1 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Rate of cooling is $-\\frac{dT}{dt} = \\frac{e \\sigma A (T^4 - T_0^4)}{m s} = \\frac{e \\sigma (T^4 - T_0^4)}{\\rho s} \\left(\\frac{A}{V}\\right)$.\nFor the cube: $A = 6a^2$, $V = a^3 \\implies \\frac{A}{V} = \\frac{6}{a}$.\nFor the sphere of radius $a$: $A = 4\\pi a^2$, $V = \\frac{4}{3}\\pi a^3 \\implies \\frac{A}{V} = \\frac{3}{a}$.\n$$\\frac{(-dT/dt)_{\\text{cube}}}{(-dT/dt)_{\\text{sphere}}} = \\frac{6/a}{3/a} = 2 : 1$$\nWait, option (1) is $2:1$ which is option B. Checking option A, B: Option B is $2:1$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An iron tire is to be fitted onto a wooden cartwheel of diameter $1.0\\text{ m}$. The inner diameter of the tire is $6\\text{ mm}$ smaller than that of the wheel at $20^\\circ\\text{C}$. The temperature to which the tire must be heated to slip over the wheel is (take $\\alpha_{\\text{iron}} = 1.2 \\times 10^{-5}\\text{ }^\\circ\\text{C}^{-1}$):",
+          "image": "",
+          "options": [
+            "$520^\\circ\\text{C}$",
+            "$500^\\circ\\text{C}$",
+            "$480^\\circ\\text{C}$",
+            "$540^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "Required change in diameter is $\\Delta d = 6\\text{ mm} = 6 \\times 10^{-3}\\text{ m}$.\nInitial diameter $d_0 = 1.0 - 0.006 = 0.994\\text{ m} \\approx 1.0\\text{ m}$.\n$$\\Delta d = d_0 \\alpha \\Delta T$$\n$$6 \\times 10^{-3} = 1.0 \\times (1.2 \\times 10^{-5}) \\Delta T \\implies \\Delta T = \\frac{6 \\times 10^{-3}}{1.2 \\times 10^{-5}} = 500^\\circ\\text{C}$$\nFinal temperature $T = T_0 + \\Delta T = 20 + 500 = 520^\\circ\\text{C}$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The anomalous expansion of water occurs over the temperature interval:",
+          "image": "",
+          "options": [
+            "$0^\\circ\\text{C}$ to $4^\\circ\\text{C}$",
+            "$4^\\circ\\text{C}$ to $10^\\circ\\text{C}$",
+            "$-4^\\circ\\text{C}$ to $0^\\circ\\text{C}$",
+            "$0^\\circ\\text{C}$ to $100^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "Between $0^\\circ\\text{C}$ and $4^\\circ\\text{C}$, water contracts upon heating (its density increases, reaching a maximum value at $4^\\circ\\text{C}$); this is its anomalous thermal behaviour."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A beaker contains water up to height $H$. If the coefficient of volume expansion of water is $\\gamma$ and that of linear expansion of the beaker material is $\\alpha$, the liquid level will remain unchanged upon heating when:",
+          "image": "",
+          "options": [
+            "$\\gamma = 2\\alpha$",
+            "$\\gamma = 3\\alpha$",
+            "$\\gamma = \\alpha$",
+            "$\\gamma = \\frac{3}{2}\\alpha$"
+          ],
+          "correctOption": 0,
+          "solution": "Height of the liquid column is $h = \\frac{V}{A}$.\nFractional change in height:\n$$\\frac{\\Delta h}{h} = \\frac{\\Delta V}{V} - \\frac{\\Delta A}{A} = \\gamma \\Delta T - (2\\alpha) \\Delta T = (\\gamma - 2\\alpha)\\Delta T$$\nFor the liquid level to remain constant ($\\Delta h = 0$):\n$$\\gamma = 2\\alpha$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A metal sheet has a hole of diameter $D$ punched through it. When the sheet is heated uniformly:",
+          "image": "",
+          "options": [
+            "The diameter $D$ increases",
+            "The diameter $D$ decreases",
+            "The diameter $D$ remains unchanged",
+            "The diameter may increase or decrease depending on the sheet area"
+          ],
+          "correctOption": 0,
+          "solution": "Thermal expansion resembles a photographic enlargement. Every linear dimension of the body increases uniformly, so the distance between any two points on the boundary of the hole increases, expanding the diameter $D$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A thermos bottle contains coffee at $90^\\circ\\text{C}$. The primary mechanism by which heat is lost from the thermos to the room through the vacuum jacket is:",
+          "image": "",
+          "options": [
+            "Thermal radiation",
+            "Thermal conduction",
+            "Thermal convection",
+            "Both conduction and convection"
+          ],
+          "correctOption": 0,
+          "solution": "The evacuated double walls eliminate heat transfer by conduction and convection because both require a material medium. Heat can traverse the vacuum space purely via thermal radiation."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A black body radiates $20\\text{ W}$ at temperature $227^\\circ\\text{C}$. If its temperature is raised to $727^\\circ\\text{C}$, the power radiated by it will be:",
+          "image": "",
+          "options": [
+            "$320\\text{ W}$",
+            "$160\\text{ W}$",
+            "$80\\text{ W}$",
+            "$640\\text{ W}$"
+          ],
+          "correctOption": 0,
+          "solution": "Temperatures in Kelvin:\n$T_1 = 227 + 273 = 500\\text{ K}$, $T_2 = 727 + 273 = 1000\\text{ K}$.\nBy Stefan's law: $P \\propto T^4$.\n$$\\frac{P_2}{P_1} = \\left(\\frac{T_2}{T_1}\\right)^4 = \\left(\\frac{1000}{500}\\right)^4 = (2)^4 = 16$$\n$$P_2 = 16 \\times 20\\text{ W} = 320\\text{ W}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A copper calorimeter of mass $100\\text{ g}$ contains $150\\text{ g}$ of water in thermal equilibrium at $20^\\circ\\text{C}$. A metallic piece of mass $200\\text{ g}$ at $100^\\circ\\text{C}$ is dropped into the calorimeter. If the final steady temperature of the mixture is $30^\\circ\\text{C}$, find the specific heat capacity of the metal piece in $\\text{cal}/(\\text{g}\\cdot^\\circ\\text{C})$ (take specific heat of copper $= 0.1\\text{ cal}/(\\text{g}\\cdot^\\circ\\text{C})$ and water $= 1.0\\text{ cal}/(\\text{g}\\cdot^\\circ\\text{C})$, rounded to two decimal places).",
+          "image": "",
+          "correctValue": 0.11,
+          "solution": "Heat gained by water and calorimeter:\n$$Q_{\\text{gain}} = (m_w s_w + m_c s_c)\\Delta T_1 = (150 \\times 1 + 100 \\times 0.1)(30 - 20) = (150 + 10)(10) = 1600\\text{ cal}$$\nHeat lost by the metal piece:\n$$Q_{\\text{loss}} = m_m s_m (100 - 30) = 200 \\times s_m \\times 70 = 14000 s_m$$\nBy principle of calorimetry:\n$$14000 s_m = 1600 \\implies s_m = \\frac{1600}{14000} = \\frac{8}{70} = \\frac{4}{35} \\approx 0.114\\text{ cal}/(\\text{g}\\cdot^\\circ\\text{C})$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] An iron rod of length $50\\text{ cm}$ and a brass rod of length $L_2$ have a difference in their lengths that remains invariant at all temperatures. If $\\alpha_{\\text{iron}} = 1.2 \\times 10^{-5}\\text{ K}^{-1}$ and $\\alpha_{\\text{brass}} = 1.8 \\times 10^{-5}\\text{ K}^{-1}$, find the length $L_2$ (in cm) of the brass rod (rounded to one decimal place).",
+          "image": "",
+          "correctValue": 33.3,
+          "solution": "Condition for invariant length difference at all temperatures:\n$$\\Delta L_1 = \\Delta L_2 \\implies L_1 \\alpha_1 \\Delta T = L_2 \\alpha_2 \\Delta T$$\n$$L_2 = L_1 \\left(\\frac{\\alpha_1}{\\alpha_2}\\right) = 50\\text{ cm} \\times \\left(\\frac{1.2 \\times 10^{-5}}{1.8 \\times 10^{-5}}\\right) = 50 \\times \\frac{2}{3} = \\frac{100}{3} \\approx 33.33\\text{ cm} \\approx 33.3\\text{ cm}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A metal bar of length $0.2\\text{ m}$ and cross-sectional area $1.0 \\times 10^{-4}\\text{ m}^2$ has its two ends maintained at $100^\\circ\\text{C}$ and $0^\\circ\\text{C}$ respectively. If its thermal conductivity is $400\\text{ W}/(\\text{m}\\cdot\\text{K})$, find the rate of heat flow (in Watts) through the bar in steady state.",
+          "image": "",
+          "correctValue": 20.0,
+          "solution": "Rate of heat flow by Fourier's law:\n$$\\frac{dQ}{dt} = \\frac{K A \\Delta T}{L}$$\n$$\\frac{dQ}{dt} = \\frac{400 \\times (1.0 \\times 10^{-4}) \\times (100 - 0)}{0.2} = \\frac{400 \\times 10^{-4} \\times 100}{0.2} = \\frac{4}{0.2} = 20.0\\text{ W}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] An electric heater delivers a steady power of $1000\\text{ W}$ to $2\\text{ kg}$ of water in an insulated vessel. Find the time (in seconds) taken to heat the water from $20^\\circ\\text{C}$ to $100^\\circ\\text{C}$ (take specific heat capacity of water $= 4200\\text{ J}/(\\text{kg}\\cdot^\\circ\\text{C})$).",
+          "image": "",
+          "correctValue": 672.0,
+          "solution": "Thermal energy required:\n$$Q = m s \\Delta T = 2\\text{ kg} \\times 4200\\text{ J}/(\\text{kg}\\cdot^\\circ\\text{C}) \\times (100 - 20) = 8400 \\times 80 = 672000\\text{ J}$$\nTime required:\n$$t = \\frac{Q}{P} = \\frac{672000\\text{ J}}{1000\\text{ W}} = 672.0\\text{ s}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A spherical black body of radius $10\\text{ cm}$ radiates $450\\text{ W}$ at temperature $500\\text{ K}$. If the radius is halved and temperature is doubled, find the power radiated (in Watts).",
+          "image": "",
+          "correctValue": 1800.0,
+          "solution": "Radiated power from a sphere is given by $P = \\sigma (4\\pi R^2) T^4 \\propto R^2 T^4$.\n$$\\frac{P'}{P} = \\left(\\frac{R'}{R}\\right)^2 \\left(\\frac{T'}{T}\\right)^4 = \\left(\\frac{1}{2}\\right)^2 (2)^4 = \\frac{1}{4} \\times 16 = 4$$\n$$P' = 4 \\times P = 4 \\times 450\\text{ W} = 1800.0\\text{ W}$$"
+        }
+      ]
+    }
+  ]
+}

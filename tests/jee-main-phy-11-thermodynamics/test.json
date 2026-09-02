@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-11-thermodynamics",
+  "title": "Thermodynamics",
+  "syllabus": "Thermal equilibrium, Zeroth law of thermodynamics, Concept of temperature; First law of thermodynamics, Internal energy, Work done and heat absorbed in thermodynamic processes (isothermal, adiabatic, isobaric, isochoric); Cyclic and non-cyclic processes, Indicator diagrams (P-V, P-T, V-T); Second law of thermodynamics: Reversible and irreversible processes, Carnot engine and its efficiency, Heat pumps and refrigerators",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] An ideal gas undergoes an isothermal expansion from volume $V_1$ to $V_2$ and then undergoes an adiabatic compression back to its original volume $V_1$. If $W_1$ and $W_2$ are the magnitudes of work done in the respective processes, then:",
+          "image": "",
+          "options": [
+            "$W_1 < W_2$",
+            "$W_1 > W_2$",
+            "$W_1 = W_2$",
+            "$W_1 = 2W_2$"
+          ],
+          "correctOption": 0,
+          "solution": "On a $P-V$ diagram, the adiabatic curve is steeper than the isothermal curve by a factor of $\\gamma > 1$ $\\left(\\left|\\frac{dP}{dV}\\right|_{\\text{ad}} = \\gamma \\left|\\frac{dP}{dV}\\right|_{\\text{iso}}\\right)$.\nDuring the return compression from $V_2$ to $V_1$ along the adiabatic path, the curve lies entirely above the forward isothermal expansion curve.\nTherefore, the area under the adiabatic compression curve is larger than the area under the isothermal expansion curve, which means $W_2 > W_1$ ($W_1 < W_2$)."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A Carnot engine operates between temperatures $T_1 = 500\\text{ K}$ and $T_2 = 300\\text{ K}$. If the source temperature is kept constant and the engine efficiency is to be increased by $10\\%$ of its original value, the new sink temperature should be:",
+          "image": "",
+          "options": [
+            "$280\\text{ K}$",
+            "$270\\text{ K}$",
+            "$260\\text{ K}$",
+            "$250\\text{ K}$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial efficiency:\n$$\\eta = 1 - \\frac{T_2}{T_1} = 1 - \\frac{300}{500} = 1 - 0.6 = 0.40$$\nIncreased efficiency by $10\\%$ of its initial value:\n$$\\eta' = \\eta + 0.10 \\times \\eta = 0.40 + 0.04 = 0.44$$\nNew sink temperature $T'_2$:\n$$0.44 = 1 - \\frac{T'_2}{500} \\implies \\frac{T'_2}{500} = 0.56 \\implies T'_2 = 500 \\times 0.56 = 280\\text{ K}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] One mole of an ideal monoatomic gas ($\\gamma = 5/3$) is heated at constant pressure from temperature $T$ to $2T$. The heat supplied to the gas is $Q$, the work done by the gas is $W$, and the change in internal energy is $\\Delta U$. The ratio $\\Delta U : W : Q$ is:",
+          "image": "",
+          "options": [
+            "$3 : 2 : 5$",
+            "$5 : 2 : 7$",
+            "$3 : 5 : 8$",
+            "$2 : 3 : 5$"
+          ],
+          "correctOption": 0,
+          "solution": "For an isobaric process on an ideal monoatomic gas:\n$$\\Delta U = n C_v \\Delta T = 1 \\times \\left(\\frac{3}{2}R\\right)\\Delta T = \\frac{3}{2}R \\Delta T$$\n$$W = n R \\Delta T = R \\Delta T = \\frac{2}{3}\\Delta U$$\n$$Q = n C_p \\Delta T = 1 \\times \\left(\\frac{5}{2}R\\right)\\Delta T = \\frac{5}{2}R \\Delta T$$\nDividing each term by $\\frac{1}{2}R\\Delta T$ gives:\n$$\\Delta U : W : Q = 3 : 2 : 5$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An ideal gas undergoes a polytropic process $P V^n = \\text{constant}$. The molar heat capacity $C$ of the gas during this process is given by:",
+          "image": "",
+          "options": [
+            "$C_v + \\frac{R}{1 - n}$",
+            "$C_v - \\frac{R}{1 - n}$",
+            "$C_p + \\frac{R}{1 - n}$",
+            "$C_v + \\frac{R}{n - 1}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the first law of thermodynamics, $dQ = dU + dW$:\n$$n_{\\text{moles}} C dT = n_{\\text{moles}} C_v dT + \\frac{n_{\\text{moles}} R dT}{1 - n}$$\nDividing by $n_{\\text{moles}} dT$:\n$$C = C_v + \\frac{R}{1 - n}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] In an adiabatic expansion of an ideal gas, the absolute temperature $T$ and volume $V$ are related as $T V^{\\gamma - 1} = \\text{constant}$. If the volume of a diatomic gas ($\\gamma = 1.4$) becomes 32 times its initial volume, the final temperature becomes what fraction of its initial temperature?",
+          "image": "",
+          "options": [
+            "$1/4$",
+            "$1/8$",
+            "$1/2$",
+            "$1/16$"
+          ],
+          "correctOption": 0,
+          "solution": "From the adiabatic relation:\n$$\\frac{T_2}{T_1} = \\left(\\frac{V_1}{V_2}\\right)^{\\gamma - 1} = \\left(\\frac{1}{32}\\right)^{1.4 - 1} = \\left(2^{-5}\\right)^{0.4} = 2^{-2} = \\frac{1}{4}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In a cyclic process shown on a $P-V$ diagram, an ideal gas traces a clockwise circular cycle of radius $r_0$ with pressure coordinates in units of $P_0$ and volume coordinates in units of $V_0$. If the circle is defined by $(P - 2P_0)^2 + (V - 2V_0)^2 = R^2$ where $R$ corresponds to $\\Delta P = P_0$ and $\\Delta V = V_0$, the net work done per cycle is:",
+          "image": "",
+          "options": [
+            "$\\pi P_0 V_0$",
+            "$2\\pi P_0 V_0$",
+            "$\\frac{\\pi}{4} P_0 V_0$",
+            "$4\\pi P_0 V_0$"
+          ],
+          "correctOption": 0,
+          "solution": "Work done in a cyclic process equals the enclosed area on the $P-V$ indicator diagram.\nFor an ellipse (or scaled circle) with semi-axes $a = P_0$ along the pressure axis and $b = V_0$ along the volume axis:\n$$W = \\text{Area} = \\pi a b = \\pi P_0 V_0$$\nSince the cycle is clockwise, the net work done is positive: $W = +\\pi P_0 V_0$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A refrigerator has a coefficient of performance $\\beta = 5$. If it absorbs $250\\text{ J}$ of heat from the cold reservoir per cycle, the mechanical work required per cycle is:",
+          "image": "",
+          "options": [
+            "$50\\text{ J}$",
+            "$1250\\text{ J}$",
+            "$200\\text{ J}$",
+            "$300\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "The coefficient of performance (COP) of a refrigerator is:\n$$\\beta = \\frac{Q_2}{W}$$\n$$W = \\frac{Q_2}{\\beta} = \\frac{250\\text{ J}}{5} = 50\\text{ J}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] During an adiabatic process, the pressure of a gas is observed to be proportional to the cube of its absolute temperature ($P \\propto T^3$). The ratio of specific heats $\\gamma = C_p / C_v$ of the gas is:",
+          "image": "",
+          "options": [
+            "$1.5$",
+            "$1.4$",
+            "$1.67$",
+            "$1.33$"
+          ],
+          "correctOption": 0,
+          "solution": "Standard $P-T$ relation for an adiabatic process:\n$$P^{1 - \\gamma} T^\\gamma = \\text{constant} \\implies P \\propto T^{\\frac{\\gamma}{\\gamma - 1}}$$\nGiven $P \\propto T^3$:\n$$\\frac{\\gamma}{\\gamma - 1} = 3 \\implies \\gamma = 3\\gamma - 3 \\implies 2\\gamma = 3 \\implies \\gamma = 1.5$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A sample of an ideal gas is taken through an isobaric compression, reducing its volume by half. Which of the following quantities must decrease?",
+          "image": "",
+          "options": [
+            "Internal energy",
+            "Molar heat capacity",
+            "Specific gas constant",
+            "Ratio of specific heats $\\gamma$"
+          ],
+          "correctOption": 0,
+          "solution": "For an ideal gas at constant pressure $P$, by Charles's Law $V \\propto T$.\nHalving the volume ($V_f = V_i/2$) implies the absolute temperature is halved ($T_f = T_i/2$).\nInternal energy $U = n C_v T$ is a function purely of temperature, so $U$ decreases by half.\nMolar heat capacity, specific gas constant, and $\\gamma$ are state-independent parameters of the gas."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Two cylinders $A$ and $B$ of equal capacity are connected to each other via a stopcock. $A$ contains an ideal gas at standard temperature and pressure ($STP$), while $B$ is completely evacuated. The stopcock is suddenly opened. The process is:",
+          "image": "",
+          "options": [
+            "Adiabatic and non-quasistatic with $\\Delta U = 0$ and $W = 0$",
+            "Isothermal and quasistatic with $W = nRT \\ln 2$",
+            "Isobaric with $W = P\\Delta V$",
+            "Adiabatic with $\\Delta T < 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Free expansion into vacuum is an unresisted rapid expansion without external work ($W = 0$).\nBecause the system is insulated from the environment during the rapid event, $Q = 0$.\nBy the First Law of Thermodynamics, $\\Delta U = Q - W = 0$.\nSince $\\Delta U = 0$ for an ideal gas, initial and final temperatures are identical, but the process is irreversible and non-quasistatic."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] One mole of an ideal gas with adiabatic exponent $\\gamma$ undergoes an expansion according to the process $P = \\alpha V$, where $\\alpha$ is a constant. The molar heat capacity of the gas in this process is:",
+          "image": "",
+          "options": [
+            "$C_v + \\frac{R}{2}$",
+            "$C_v + R$",
+            "$C_v - \\frac{R}{2}$",
+            "$C_p + R$"
+          ],
+          "correctOption": 0,
+          "solution": "Rearranging the equation of state: $P V^{-1} = \\alpha = \\text{constant}$.\nComparing with the standard polytropic index form $P V^n = \\text{constant}$, we have $n = -1$.\nUsing the molar heat capacity formula for a polytropic process:\n$$C = C_v + \\frac{R}{1 - n} = C_v + \\frac{R}{1 - (-1)} = C_v + \\frac{R}{2}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A system absorbs $300\\text{ cal}$ of heat and at the same time does $400\\text{ J}$ of work on the surroundings. The change in internal energy of the system is (take $1\\text{ cal} = 4.184\\text{ J}$):",
+          "image": "",
+          "options": [
+            "$+855.2\\text{ J}$",
+            "$-855.2\\text{ J}$",
+            "$+100\\text{ J}$",
+            "$-100\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "Heat supplied to the system:\n$$Q = +300\\text{ cal} = 300 \\times 4.184\\text{ J} = 1255.2\\text{ J}$$\nWork done by the system: $W = +400\\text{ J}$.\nBy the First Law of Thermodynamics:\n$$\\Delta U = Q - W = 1255.2 - 400 = +855.2\\text{ J}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A Carnot engine absorbs $1000\\text{ J}$ of heat from a heat reservoir at $127^\\circ\\text{C}$ and rejects heat to a sink at $27^\\circ\\text{C}$. The amount of heat rejected to the sink per cycle is:",
+          "image": "",
+          "options": [
+            "$750\\text{ J}$",
+            "$250\\text{ J}$",
+            "$800\\text{ J}$",
+            "$600\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "Temperatures in Kelvin:\n$T_1 = 127 + 273 = 400\\text{ K}$, $T_2 = 27 + 273 = 300\\text{ K}$.\nFor a reversible Carnot engine:\n$$\\frac{Q_2}{Q_1} = \\frac{T_2}{T_1}$$\n$$Q_2 = Q_1 \\left(\\frac{T_2}{T_1}\\right) = 1000 \\times \\left(\\frac{300}{400}\\right) = 750\\text{ J}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An ideal diatomic gas expands at constant pressure when $Q$ amount of heat is supplied. The fraction of heat that is converted into external mechanical work done by the gas is:",
+          "image": "",
+          "options": [
+            "$2/7$",
+            "$5/7$",
+            "$3/5$",
+            "$2/5$"
+          ],
+          "correctOption": 0,
+          "solution": "For an isobaric expansion:\n$$W = n R \\Delta T, \\quad Q = n C_p \\Delta T$$\nFor a diatomic gas, $C_p = \\frac{7}{2}R$.\n$$\\frac{W}{Q} = \\frac{n R \\Delta T}{n \\left(\\frac{7}{2}R\\right) \\Delta T} = \\frac{2}{7}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An ideal gas is taken through four processes: Isothermal, Isobaric, Isochoric, and Adiabatic, from the same initial state $(P_0, V_0)$ to double its initial volume ($2V_0$). The maximum work is done in:",
+          "image": "",
+          "options": [
+            "Isobaric process",
+            "Isothermal process",
+            "Adiabatic process",
+            "Isochoric process"
+          ],
+          "correctOption": 0,
+          "solution": "During expansion from $V_0$ to $2V_0$:\n1) Isochoric work is zero ($dV = 0$).\n2) Adiabatic expansion has pressure dropping fastest ($P \\propto V^{-\\gamma}$).\n3) Isothermal expansion has pressure dropping as $P \\propto V^{-1}$.\n4) Isobaric expansion maintains maximum constant pressure $P = P_0$.\nThe curve for the isobaric process lies highest on the $P-V$ diagram throughout the expansion, enclosing the greatest area under the path."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In an isochoric process, heat supplied to $2\\text{ moles}$ of a monoatomic gas causes its temperature to rise by $50\\text{ K}$. If the universal gas constant is $R$, the work done by the gas in this process is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$150 R$",
+            "$100 R$",
+            "$250 R$"
+          ],
+          "correctOption": 0,
+          "solution": "An isochoric process is characterized by constant volume ($dV = 0$).\nBecause work done is $W = \\int P\\,dV$, the external work done by the gas is identically zero."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A heat engine operating between two given temperatures cannot have an efficiency greater than a reversible engine operating between the same two temperatures. This is a direct statement of:",
+          "image": "",
+          "options": [
+            "Carnot's theorem",
+            "Clausius statement",
+            "Kelvin-Planck statement",
+            "Zeroth law of thermodynamics"
+          ],
+          "correctOption": 0,
+          "solution": "Carnot's theorem asserts that no engine operating between two specified heat reservoirs can be more efficient than a Carnot (reversible) engine operating between the same two thermal reservoirs."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following thermodynamic variables is not an intensive property?",
+          "image": "",
+          "options": [
+            "Internal energy",
+            "Pressure",
+            "Temperature",
+            "Density"
+          ],
+          "correctOption": 0,
+          "solution": "Intensive properties do not depend on system mass or size (e.g., pressure, temperature, density).\nInternal energy depends directly on the total quantity of matter in the system, making it an extensive property."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An ideal gas is compressed adiabatically to $\\frac{1}{8}^{\\text{th}}$ of its initial volume. If its initial temperature was $300\\text{ K}$ and $\\gamma = 5/3$, the final temperature of the gas is:",
+          "image": "",
+          "options": [
+            "$1200\\text{ K}$",
+            "$600\\text{ K}$",
+            "$2400\\text{ K}$",
+            "$900\\text{ K}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the relation $T_1 V_1^{\\gamma - 1} = T_2 V_2^{\\gamma - 1}$:\n$$T_2 = T_1 \\left(\\frac{V_1}{V_2}\\right)^{\\gamma - 1} = 300 \\times (8)^{\\frac{5}{3} - 1} = 300 \\times (8)^{2/3} = 300 \\times (2)^2 = 300 \\times 4 = 1200\\text{ K}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] In a thermodynamic process, the internal energy of a closed system decreases by $300\\text{ J}$ while $120\\text{ J}$ of work is done on the system. The amount of heat transferred is:",
+          "image": "",
+          "options": [
+            "$-420\\text{ J}$ (released)",
+            "$+420\\text{ J}$ (absorbed)",
+            "$-180\\text{ J}$ (released)",
+            "$+180\\text{ J}$ (absorbed)"
+          ],
+          "correctOption": 0,
+          "solution": "Given: $\\Delta U = -300\\text{ J}$.\nWork done on the system means $W = -120\\text{ J}$.\nFrom the First Law of Thermodynamics:\n$$Q = \\Delta U + W = (-300) + (-120) = -420\\text{ J}$$\nThe negative sign indicates that $420\\text{ J}$ of heat is released to the surroundings."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Two moles of an ideal monoatomic gas are expanded isothermally at $300\\text{ K}$ from an initial volume $V_0$ to a final volume $4V_0$. Find the work done by the gas in Joules (take $R = 8.314\\text{ J}/(\\text{mol}\\cdot\\text{K})$ and $\\ln 2 = 0.693$, rounded to one decimal place).",
+          "image": "",
+          "correctValue": 3456.9,
+          "solution": "Work done in an isothermal expansion:\n$$W = n R T \\ln\\left(\\frac{V_f}{V_i}\\right)$$\nSubstitute $n = 2$, $T = 300\\text{ K}$, and $\\frac{V_f}{V_i} = 4$:\n$$W = 2 \\times 8.314 \\times 300 \\times \\ln(4) = 4988.4 \\times 2\\ln(2)$$\n$$W = 4988.4 \\times 2(0.693) = 4988.4 \\times 1.386 = 3456.95\\text{ J} \\approx 3456.9\\text{ J}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A Carnot refrigerator operates between $-23^\\circ\\text{C}$ and $27^\\circ\\text{C}$. If the mechanical power required to drive the compressor is $100\\text{ W}$, find the rate at which heat is extracted from the cold compartment (in Watts).",
+          "image": "",
+          "correctValue": 500.0,
+          "solution": "Temperatures in Kelvin:\n$T_2 = -23 + 273 = 250\\text{ K}$, $T_1 = 27 + 273 = 300\\text{ K}$.\nCoefficient of performance of Carnot refrigerator:\n$$\\beta = \\frac{T_2}{T_1 - T_2} = \\frac{250}{300 - 250} = \\frac{250}{50} = 5$$\nRate of heat extraction:\n$$\\frac{dQ_2}{dt} = \\beta \\times P = 5 \\times 100\\text{ W} = 500.0\\text{ W}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] An ideal gas expands from an initial state $(P_1 = 1.0 \\times 10^5\\text{ Pa}, V_1 = 2.0\\text{ m}^3)$ to a final state $(P_2 = 3.0 \\times 10^5\\text{ Pa}, V_2 = 4.0\\text{ m}^3)$ along a path that is represented by a straight line on a $P-V$ diagram. Find the work done by the gas (in $\\text{kJ}$).",
+          "image": "",
+          "correctValue": 400.0,
+          "solution": "Work done along a straight-line path on a $P-V$ diagram equals the area of a trapezoid:\n$$W = \\frac{P_1 + P_2}{2} (V_2 - V_1)$$\n$$W = \\frac{(1.0 \\times 10^5 + 3.0 \\times 10^5)}{2} \\times (4.0 - 2.0) = (2.0 \\times 10^5) \\times 2.0 = 4.0 \\times 10^5\\text{ J} = 400.0\\text{ kJ}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] A Carnot engine has an efficiency of $25\\%$. When the temperature of the sink is reduced by $50\\text{ K}$, its efficiency increases to $40\\%$. Find the temperature (in Kelvin) of the source reservoir.",
+          "image": "",
+          "correctValue": 333.33,
+          "solution": "From the efficiency formulas:\n$$\\eta_1 = 1 - \\frac{T_2}{T_1} = 0.25 \\implies \\frac{T_2}{T_1} = 0.75$$\n$$\\eta_2 = 1 - \\frac{T_2 - 50}{T_1} = 0.40 \\implies \\frac{T_2 - 50}{T_1} = 0.60$$\nSubtracting the second equation from the first:\n$$\\frac{T_2}{T_1} - \\frac{T_2 - 50}{T_1} = 0.75 - 0.60$$\n$$\\frac{50}{T_1} = 0.15 \\implies T_1 = \\frac{50}{0.15} = \\frac{1000}{3} \\approx 333.33\\text{ K}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Three moles of an ideal diatomic gas undergo an adiabatic expansion where the gas does $900\\text{ J}$ of external work. Find the change in internal energy $\\Delta U$ of the gas (in Joules).",
+          "image": "",
+          "correctValue": -900.0,
+          "solution": "In an adiabatic process, no heat is exchanged with the surroundings: $Q = 0$.\nApplying the First Law of Thermodynamics:\n$$\\Delta U = Q - W = 0 - 900\\text{ J} = -900.0\\text{ J}$$"
+        }
+      ]
+    }
+  ]
+}

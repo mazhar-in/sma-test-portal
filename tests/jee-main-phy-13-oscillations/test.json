@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-13-oscillations",
+  "title": "Oscillations",
+  "syllabus": "Periodic and oscillatory motions, period, frequency, displacement as a function of time, periodic functions; Simple Harmonic Motion (S.H.M.) and its equation; Phase; Oscillations of a spring: restoring force and force constant; Energy in S.H.M.: Kinetic and potential energies; Simple pendulum: derivation of expression for its time period; Free, forced and damped oscillations, resonance",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A particle executes simple harmonic motion with an amplitude $A$. The displacement from the mean position where its kinetic energy is equal to its potential energy is:",
+          "image": "",
+          "options": [
+            "$\\frac{A}{\\sqrt{2}}$",
+            "$\\frac{A}{2}$",
+            "$\\frac{\\sqrt{3}}{2}A$",
+            "$\\frac{A}{2\\sqrt{2}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Kinetic energy in SHM is $K = \\frac{1}{2}m\\omega^2(A^2 - x^2)$ and potential energy is $U = \\frac{1}{2}m\\omega^2 x^2$.\nSetting $K = U$:\n$$\\frac{1}{2}m\\omega^2(A^2 - x^2) = \\frac{1}{2}m\\omega^2 x^2$$\n$$A^2 - x^2 = x^2 \\implies 2x^2 = A^2 \\implies x = \\frac{A}{\\sqrt{2}}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A particle executes SHM along the x-axis according to $x = 5\\sin\\left(\\pi t + \\frac{\\pi}{3}\\right)\\text{ cm}$. The speed of the particle at $t = 1\\text{ s}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{5\\pi}{2}\\text{ cm/s}$",
+            "$5\\pi\\text{ cm/s}$",
+            "$\\frac{5\\sqrt{3}\\pi}{2}\\text{ cm/s}$",
+            "$\\frac{5\\pi}{4}\\text{ cm/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Velocity is given by $v(t) = \\frac{dx}{dt} = 5\\pi \\cos\\left(\\pi t + \\frac{\\pi}{3}\\right)$.\nAt $t = 1\\text{ s}$:\n$$v(1) = 5\\pi \\cos\\left(\\pi + \\frac{\\pi}{3}\\right) = 5\\pi \\cos\\left(\\frac{4\\pi}{3}\\right) = 5\\pi \\left(-\\frac{1}{2}\\right) = -\\frac{5\\pi}{2}\\text{ cm/s}$$\nMagnitude of speed is $\\frac{5\\pi}{2}\\text{ cm/s}$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A light spring of spring constant $k$ is cut into two pieces such that the length of one piece is twice that of the other. The spring constant of the shorter piece is:",
+          "image": "",
+          "options": [
+            "$3k$",
+            "$\\frac{3}{2}k$",
+            "$2k$",
+            "$\\frac{k}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "The force constant of a spring is inversely proportional to its natural length: $k \\cdot L = \\text{constant}$.\nGiven $L_1 : L_2 = 1 : 2$, the length of the shorter piece is $L_1 = \\frac{1}{3}L$.\n$$k_1 L_1 = k L \\implies k_1 \\left(\\frac{L}{3}\\right) = k L \\implies k_1 = 3k$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Two simple harmonic motions are represented by $y_1 = 10\\sin\\left(3\\pi t + \\frac{\\pi}{3}\\right)$ and $y_2 = 5(\\sin 3\\pi t + \\sqrt{3}\\cos 3\\pi t)$. The ratio of the amplitudes of $y_1$ and $y_2$ is:",
+          "image": "",
+          "options": [
+            "$1 : 1$",
+            "$1 : 2$",
+            "$2 : 1$",
+            "$1 : \\sqrt{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "For $y_1$, amplitude is $A_1 = 10$.\nFor $y_2$, rewrite using $R = \\sqrt{A^2 + B^2}$:\n$$y_2 = 5\\sin 3\\pi t + 5\\sqrt{3}\\cos 3\\pi t$$\n$$A_2 = \\sqrt{5^2 + (5\\sqrt{3})^2} = \\sqrt{25 + 75} = \\sqrt{100} = 10$$\n$$\\frac{A_1}{A_2} = \\frac{10}{10} = 1$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] A simple pendulum has a time period $T$ in air. When the pendulum bob of density $\\rho_b$ is completely immersed in a non-viscous liquid of density $\\rho_l$ ($\\rho_l < \\rho_b$), its new time period $T'$ will be:",
+          "image": "",
+          "options": [
+            "$T \\sqrt{\\frac{\\rho_b}{\\rho_b - \\rho_l}}$",
+            "$T \\sqrt{\\frac{\\rho_b - \\rho_l}{\\rho_b}}$",
+            "$T \\left(\\frac{\\rho_b}{\\rho_b - \\rho_l}\\right)$",
+            "$T \\sqrt{\\frac{\\rho_l}{\\rho_b}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Effective acceleration due to gravity in liquid:\n$$g_{\\text{eff}} = g\\left(1 - \\frac{\\rho_l}{\\rho_b}\\right) = g\\left(\\frac{\\rho_b - \\rho_l}{\\rho_b}\\right)$$\nTime period of pendulum is $T = 2\\pi \\sqrt{\\frac{L}{g}}$.\n$$T' = 2\\pi \\sqrt{\\frac{L}{g_{\\text{eff}}}} = 2\\pi \\sqrt{\\frac{L}{g \\left(\\frac{\\rho_b - \\rho_l}{\\rho_b}\\right)}} = T \\sqrt{\\frac{\\rho_b}{\\rho_b - \\rho_l}}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A block of mass $m$ is suspended from two identical vertical springs connected in parallel, each having spring constant $k$. The time period of vertical oscillation is:",
+          "image": "",
+          "options": [
+            "$2\\pi \\sqrt{\\frac{m}{2k}}$",
+            "$2\\pi \\sqrt{\\frac{2m}{k}}$",
+            "$2\\pi \\sqrt{\\frac{m}{k}}$",
+            "$\\pi \\sqrt{\\frac{m}{2k}}$"
+          ],
+          "correctOption": 0,
+          "solution": "For two springs connected in parallel, effective stiffness is $k_{\\text{eq}} = k + k = 2k$.\nTime period of oscillation:\n$$T = 2\\pi \\sqrt{\\frac{m}{k_{\\text{eq}}}} = 2\\pi \\sqrt{\\frac{m}{2k}}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A body executing linear simple harmonic motion has velocities $v_1$ and $v_2$ at displacements $x_1$ and $x_2$ from the mean position respectively. The angular frequency $\\omega$ of the motion is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{v_1^2 - v_2^2}{x_2^2 - x_1^2}}$",
+            "$\\sqrt{\\frac{v_1^2 + v_2^2}{x_1^2 + x_2^2}}$",
+            "$\\sqrt{\\frac{x_2^2 - x_1^2}{v_1^2 - v_2^2}}$",
+            "$\\sqrt{\\frac{v_1^2 - v_2^2}{x_1^2 - x_2^2}}$"
+          ],
+          "correctOption": 0,
+          "solution": "From $v^2 = \\omega^2(A^2 - x^2)$:\n$$v_1^2 = \\omega^2(A^2 - x_1^2)$$\n$$v_2^2 = \\omega^2(A^2 - x_2^2)$$\nSubtracting the two equations:\n$$v_1^2 - v_2^2 = \\omega^2(x_2^2 - x_1^2) \\implies \\omega = \\sqrt{\\frac{v_1^2 - v_2^2}{x_2^2 - x_1^2}}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A particle performs SHM with a time period of $8\\text{ s}$. The minimum time taken by the particle to travel from its mean position to half of its amplitude ($x = A/2$) is:",
+          "image": "",
+          "options": [
+            "$\\frac{2}{3}\\text{ s}$",
+            "$\\frac{4}{3}\\text{ s}$",
+            "$1\\text{ s}$",
+            "$\\frac{1}{2}\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Starting from the mean position: $x(t) = A\\sin(\\omega t)$.\nFor $x = A/2$:\n$$\\frac{A}{2} = A\\sin(\\omega t) \\implies \\sin(\\omega t) = \\frac{1}{2} \\implies \\omega t = \\frac{\\pi}{6}$$\nSince $\\omega = \\frac{2\\pi}{T}$:\n$$\\left(\\frac{2\\pi}{T}\\right) t = \\frac{\\pi}{6} \\implies t = \\frac{T}{12} = \\frac{8}{12} = \\frac{2}{3}\\text{ s}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In a damped harmonic oscillator, the amplitude of oscillation drops to $0.9$ times its initial value in 5 seconds. The amplitude after an additional 10 seconds will be:",
+          "image": "",
+          "options": [
+            "$0.729 A_0$",
+            "$0.81 A_0$",
+            "$0.70 A_0$",
+            "$0.60 A_0$"
+          ],
+          "correctOption": 0,
+          "solution": "In damped oscillations, amplitude decays exponentially: $A(t) = A_0 e^{-\\gamma t}$.\nAt $t = 5\\text{ s}$, $A(5) = A_0 e^{-5\\gamma} = 0.9 A_0 \\implies e^{-5\\gamma} = 0.9$.\nTotal elapsed time is $t = 5 + 10 = 15\\text{ s}$:\n$$A(15) = A_0 e^{-15\\gamma} = A_0 (e^{-5\\gamma})^3 = A_0 (0.9)^3 = 0.729 A_0$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The total mechanical energy of a particle executing simple harmonic motion of amplitude $A$ and angular frequency $\\omega$ is $E$. If the amplitude is doubled and frequency is halved, the new total mechanical energy is:",
+          "image": "",
+          "options": [
+            "$E$",
+            "$2E$",
+            "$4E$",
+            "$E/2$"
+          ],
+          "correctOption": 0,
+          "solution": "Total energy in SHM is given by $E = \\frac{1}{2}m\\omega^2 A^2$.\nIf $A' = 2A$ and $\\omega' = \\omega/2$:\n$$E' = \\frac{1}{2}m (\\omega')^2 (A')^2 = \\frac{1}{2}m \\left(\\frac{\\omega}{2}\\right)^2 (2A)^2 = \\frac{1}{2}m \\left(\\frac{\\omega^2}{4}\\right) (4A^2) = \\frac{1}{2}m\\omega^2 A^2 = E$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] A mass $M$ attached to a horizontal spring executes SHM with amplitude $A_1$. When the mass passes through its mean position, a smaller mass $m$ is placed gently on it, and both move together with amplitude $A_2$. The ratio $\\frac{A_2}{A_1}$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{M}{M + m}}$",
+            "$\\sqrt{\\frac{M + m}{M}}$",
+            "$\\frac{M}{M + m}$",
+            "$\\frac{M + m}{M}$"
+          ],
+          "correctOption": 0,
+          "solution": "At the mean position, speed of mass $M$ is maximum: $v_1 = A_1 \\omega_1 = A_1 \\sqrt{\\frac{k}{M}}$.\nBy conservation of linear momentum at the mean position:\n$$M v_1 = (M + m) v_2 \\implies v_2 = \\frac{M}{M + m} v_1$$\nFor the new combined system, maximum speed is $v_2 = A_2 \\omega_2 = A_2 \\sqrt{\\frac{k}{M + m}}$:\n$$A_2 \\sqrt{\\frac{k}{M + m}} = \\left(\\frac{M}{M + m}\\right) A_1 \\sqrt{\\frac{k}{M}}$$\n$$A_2 = A_1 \\frac{M}{M + m} \\sqrt{\\frac{M + m}{M}} = A_1 \\sqrt{\\frac{M}{M + m}} \\implies \\frac{A_2}{A_1} = \\sqrt{\\frac{M}{M + m}}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The phase difference between the instantaneous velocity and displacement vectors of a particle executing simple harmonic motion is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{2}\\text{ rad}$",
+            "$\\pi\\text{ rad}$",
+            "$0\\text{ rad}$",
+            "$\\frac{\\pi}{4}\\text{ rad}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let displacement be $x = A\\sin(\\omega t)$.\nVelocity is $v = \\frac{dx}{dt} = A\\omega \\cos(\\omega t) = A\\omega \\sin\\left(\\omega t + \\frac{\\pi}{2}\\right)$.\nTherefore, velocity leads displacement by a phase angle of $\\pi/2\\text{ rad}$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A simple pendulum is hanging from the ceiling of an elevator. When the elevator is stationary, its period of oscillation is $T_0$. If the elevator accelerates upwards with an acceleration $a = g/3$, the new time period is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\sqrt{3}}{2} T_0$",
+            "$\\frac{2}{\\sqrt{3}} T_0$",
+            "$\\frac{\\sqrt{3}}{4} T_0$",
+            "$\\frac{4}{3} T_0$"
+          ],
+          "correctOption": 0,
+          "solution": "Effective gravity in an upward accelerating frame: $g_{\\text{eff}} = g + a = g + \\frac{g}{3} = \\frac{4g}{3}$.\n$$T = 2\\pi \\sqrt{\\frac{L}{g_{\\text{eff}}}} = 2\\pi \\sqrt{\\frac{L}{4g/3}} = \\sqrt{\\frac{3}{4}} \\left(2\\pi \\sqrt{\\frac{L}{g}}\\right) = \\frac{\\sqrt{3}}{2} T_0$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A particle moves such that its acceleration is given by $a = -16 x$, where $x$ is displacement from origin. The time period of oscillation of the particle is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{2}\\text{ s}$",
+            "$\\pi\\text{ s}$",
+            "$2\\pi\\text{ s}$",
+            "$\\frac{\\pi}{4}\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Comparing $a = -16x$ with standard SHM equation $a = -\\omega^2 x$:\n$$\\omega^2 = 16 \\implies \\omega = 4\\text{ rad/s}$$\nTime period:\n$$T = \\frac{2\\pi}{\\omega} = \\frac{2\\pi}{4} = \\frac{\\pi}{2}\\text{ s}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The potential energy of a particle of mass $1\\text{ kg}$ executing SHM along the x-axis is given by $U(x) = (20 + 8x^2)\\text{ J}$, where $x$ is in meters. The period of oscillation is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{2}\\text{ s}$",
+            "$\\pi\\text{ s}$",
+            "$2\\pi\\text{ s}$",
+            "$\\frac{\\pi}{4}\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Force acting on particle: $F = -\\frac{dU}{dx} = -\\frac{d}{dx}(20 + 8x^2) = -16x$.\nEffective force constant $k = 16\\text{ N/m}$.\nMass $m = 1\\text{ kg}$.\nAngular frequency: $\\omega = \\sqrt{\\frac{k}{m}} = \\sqrt{\\frac{16}{1}} = 4\\text{ rad/s}$.\n$$T = \\frac{2\\pi}{\\omega} = \\frac{2\\pi}{4} = \\frac{\\pi}{2}\\text{ s}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A uniform solid disc of radius $R$ is suspended in a vertical plane from a horizontal axis passing through a point on its circumference. The time period of small oscillations about this pivot is:",
+          "image": "",
+          "options": [
+            "$2\\pi \\sqrt{\\frac{3R}{2g}}$",
+            "$2\\pi \\sqrt{\\frac{R}{g}}$",
+            "$2\\pi \\sqrt{\\frac{2R}{3g}}$",
+            "$2\\pi \\sqrt{\\frac{R}{2g}}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a physical pendulum, $T = 2\\pi \\sqrt{\\frac{I}{mgd}}$.\nPivot is at the rim, so distance to centre of mass is $d = R$.\nMoment of inertia about the rim by parallel axes theorem:\n$$I = I_{\\text{cm}} + m R^2 = \\frac{1}{2}m R^2 + m R^2 = \\frac{3}{2}m R^2$$\n$$T = 2\\pi \\sqrt{\\frac{\\frac{3}{2}m R^2}{mg R}} = 2\\pi \\sqrt{\\frac{3R}{2g}}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] In forced oscillations, the amplitude of the system becomes exceedingly large when the driving frequency $\\omega$ approaches the natural frequency $\\omega_0$ in the limit of small damping. This phenomenon is termed:",
+          "image": "",
+          "options": [
+            "Resonance",
+            "Beats",
+            "Diffraction",
+            "Interference"
+          ],
+          "correctOption": 0,
+          "solution": "When the frequency of an external driving periodic force matches the natural frequency of an oscillating system, the energy transfer is maximized and the amplitude increases sharply to a peak, known as resonance."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle executing simple harmonic motion has maximum velocity $v_0$ and maximum acceleration $a_0$. Its amplitude of oscillation is:",
+          "image": "",
+          "options": [
+            "$\\frac{v_0^2}{a_0}$",
+            "$\\frac{a_0^2}{v_0}$",
+            "$\\frac{v_0}{a_0}$",
+            "$\\frac{v_0^2}{2a_0}$"
+          ],
+          "correctOption": 0,
+          "solution": "Maximum velocity is $v_0 = A\\omega$.\nMaximum acceleration is $a_0 = A\\omega^2$.\nDividing the square of maximum velocity by acceleration:\n$$\\frac{v_0^2}{a_0} = \\frac{(A\\omega)^2}{A\\omega^2} = \\frac{A^2\\omega^2}{A\\omega^2} = A$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A body of mass $m$ is suspended from a vertical spring of spring constant $k$. When pulled down slightly and released, it oscillates with time period $T$. If another identical spring is connected in series with the first, the new time period becomes:",
+          "image": "",
+          "options": [
+            "$\\sqrt{2} T$",
+            "$\\frac{T}{\\sqrt{2}}$",
+            "$2T$",
+            "$T/2$"
+          ],
+          "correctOption": 0,
+          "solution": "For two identical springs connected in series, the equivalent spring constant is $k_{\\text{eq}} = \\frac{k}{2}$.\n$$T' = 2\\pi \\sqrt{\\frac{m}{k_{\\text{eq}}}} = 2\\pi \\sqrt{\\frac{m}{k/2}} = \\sqrt{2} \\left(2\\pi \\sqrt{\\frac{m}{k}}\\right) = \\sqrt{2} T$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] A U-tube of uniform cross-sectional area contains a column of liquid of total length $L$ and density $\\rho$. If the liquid is depressed slightly in one limb and released, it executes SHM with period:",
+          "image": "",
+          "options": [
+            "$2\\pi \\sqrt{\\frac{L}{2g}}$",
+            "$2\\pi \\sqrt{\\frac{L}{g}}$",
+            "$\\pi \\sqrt{\\frac{L}{g}}$",
+            "$2\\pi \\sqrt{\\frac{2L}{g}}$"
+          ],
+          "correctOption": 0,
+          "solution": "When the liquid is depressed by displacement $y$, difference in heights between the two limbs is $2y$.\nRestoring force: $F = - (2y A \\rho) g = -2A\\rho g y$.\nTotal mass of liquid column: $m = A L \\rho$.\nAcceleration: $a = \\frac{F}{m} = -\\frac{2A\\rho g y}{AL\\rho} = -\\left(\\frac{2g}{L}\\right) y$.\nComparing with $a = -\\omega^2 y$ gives $\\omega = \\sqrt{\\frac{2g}{L}}$:\n$$T = \\frac{2\\pi}{\\omega} = 2\\pi \\sqrt{\\frac{L}{2g}}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A particle of mass $m = 0.5\\text{ kg}$ executes SHM with an amplitude of $0.1\\text{ m}$ and time period $T = 0.2\\pi\\text{ s}$. Find the total mechanical energy of the particle in Joules.",
+          "image": "",
+          "correctValue": 0.25,
+          "solution": "Angular frequency:\n$$\\omega = \\frac{2\\pi}{T} = \\frac{2\\pi}{0.2\\pi} = 10\\text{ rad/s}$$\nTotal energy formula:\n$$E = \\frac{1}{2} m \\omega^2 A^2 = \\frac{1}{2}(0.5)(10)^2(0.1)^2 = \\frac{1}{2}(0.5)(100)(0.01) = 0.25\\text{ J}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A simple pendulum has a length $L = 1.0\\text{ m}$. Take acceleration due to gravity $g = \\pi^2\\text{ m/s}^2$. Find the time period of the pendulum in seconds.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "Time period of a simple pendulum:\n$$T = 2\\pi \\sqrt{\\frac{L}{g}}$$\nSubstitute $L = 1.0\\text{ m}$ and $g = \\pi^2\\text{ m/s}^2$:\n$$T = 2\\pi \\sqrt{\\frac{1.0}{\\pi^2}} = 2\\pi \\left(\\frac{1}{\\pi}\\right) = 2.0\\text{ s}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A block of mass $m = 2\\text{ kg}$ is attached to a horizontal spring of stiffness $k = 200\\text{ N/m}$. The other end of the spring is fixed to a wall. The block is pulled by $5\\text{ cm}$ from equilibrium and released. Find the maximum speed (in $\\text{m/s}$) attained by the block.",
+          "image": "",
+          "correctValue": 0.5,
+          "solution": "Angular frequency:\n$$\\omega = \\sqrt{\\frac{k}{m}} = \\sqrt{\\frac{200}{2}} = \\sqrt{100} = 10\\text{ rad/s}$$\nAmplitude $A = 5\\text{ cm} = 0.05\\text{ m}$.\nMaximum speed:\n$$v_{\\max} = A\\omega = 0.05 \\times 10 = 0.5\\text{ m/s}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] A particle executes SHM with an amplitude of $10\\text{ cm}$. At what displacement from the mean position (in cm) is its kinetic energy three times its potential energy?",
+          "image": "",
+          "correctValue": 5.0,
+          "solution": "Given $K = 3U$:\n$$\\frac{1}{2}m\\omega^2(A^2 - x^2) = 3 \\left(\\frac{1}{2}m\\omega^2 x^2\\right)$$\n$$A^2 - x^2 = 3x^2 \\implies 4x^2 = A^2 \\implies x = \\frac{A}{2}$$\nWith $A = 10\\text{ cm}$:\n$$x = \\frac{10}{2} = 5.0\\text{ cm}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Two linear simple harmonic motions along the same line are given by $x_1 = 3\\sin(10t)\\text{ cm}$ and $x_2 = 4\\cos(10t)\\text{ cm}$. Find the resultant amplitude (in cm) of the combined motion.",
+          "image": "",
+          "correctValue": 5.0,
+          "solution": "Rewrite $x_2$ in sine form:\n$$x_2 = 4\\cos(10t) = 4\\sin\\left(10t + \\frac{\\pi}{2}\\right)$$\nPhase difference between the two motions is $\\Delta\\phi = \\frac{\\pi}{2}$.\nResultant amplitude:\n$$A_{\\text{res}} = \\sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \\cos(\\pi/2)} = \\sqrt{3^2 + 4^2 + 0} = \\sqrt{9 + 16} = \\sqrt{25} = 5.0\\text{ cm}$$"
+        }
+      ]
+    }
+  ]
+}

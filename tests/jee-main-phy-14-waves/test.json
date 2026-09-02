@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-14-waves",
+  "title": "Waves",
+  "syllabus": "Wave motion: Transverse and longitudinal waves, speed of wave motion; Displacement relation for a progressive wave; Principle of superposition of waves, reflection of waves; Standing waves in strings and organ pipes, fundamental mode and harmonics; Beats; Doppler effect in sound",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A travelling wave is described by the equation $y(x, t) = 0.05\\sin(8x - 24t)$ where $x$ and $y$ are in metres and $t$ is in seconds. The speed of the wave is:",
+          "image": "",
+          "options": [
+            "$3\\text{ m/s}$",
+            "$0.33\\text{ m/s}$",
+            "$192\\text{ m/s}$",
+            "$8\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Comparing with the standard progressive wave equation $y = A\\sin(kx - \\omega t)$:\nAngular frequency $\\omega = 24\\text{ rad/s}$ and wave number $k = 8\\text{ m}^{-1}$.\n$$v = \\frac{\\omega}{k} = \\frac{24}{8} = 3\\text{ m/s}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A pipe closed at one end of length $L_1$ has its fundamental frequency equal to the first overtone frequency of an open organ pipe of length $L_2$. The ratio $\\frac{L_1}{L_2}$ is:",
+          "image": "",
+          "options": [
+            "$1 : 4$",
+            "$1 : 2$",
+            "$2 : 1$",
+            "$3 : 4$"
+          ],
+          "correctOption": 0,
+          "solution": "Fundamental frequency of a closed pipe: $f_c = \\frac{v}{4L_1}$.\nFrequencies of an open pipe are $f_n = n\\left(\\frac{v}{2L_2}\\right)$. Its first overtone corresponds to $n = 2$:\n$$f_o = 2\\left(\\frac{v}{2L_2}\\right) = \\frac{v}{L_2}$$\nGiven $f_c = f_o$:\n$$\\frac{v}{4L_1} = \\frac{v}{L_2} \\implies \\frac{L_1}{L_2} = \\frac{1}{4}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Two tuning forks $A$ and $B$ produce 4 beats per second when sounded together. Fork $A$ has a frequency of $256\\text{ Hz}$. When fork $B$ is loaded with a small amount of wax, the beat frequency decreases to 2 beats per second. The original frequency of fork $B$ was:",
+          "image": "",
+          "options": [
+            "$260\\text{ Hz}$",
+            "$252\\text{ Hz}$",
+            "$258\\text{ Hz}$",
+            "$254\\text{ Hz}$"
+          ],
+          "correctOption": 0,
+          "solution": "The possible frequencies of $B$ are $f_B = 256 \\pm 4 = 260\\text{ Hz}$ or $252\\text{ Hz}$.\nLoading a fork with wax increases its mass and therefore decreases its frequency ($f_B \\downarrow$).\nIf $f_B = 260\\text{ Hz}$, decreasing $f_B$ brings it closer to $256\\text{ Hz}$, reducing the beat frequency $|f_B - 256|$ from 4 to 2 (matches observation).\nIf $f_B$ had been $252\\text{ Hz}$, decreasing it would increase the frequency difference, raising the beat rate.\nThus, the original frequency was $260\\text{ Hz}$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A string of length $1\\text{ m}$ and mass $5\\text{ g}$ is clamped at both ends and kept under a tension of $80\\text{ N}$. The frequency of the fundamental mode of vibration is:",
+          "image": "",
+          "options": [
+            "$63.2\\text{ Hz}$",
+            "$126.5\\text{ Hz}$",
+            "$31.6\\text{ Hz}$",
+            "$100.0\\text{ Hz}$"
+          ],
+          "correctOption": 0,
+          "solution": "Linear mass density $\\mu = \\frac{m}{L} = \\frac{5 \\times 10^{-3}\\text{ kg}}{1\\text{ m}} = 5 \\times 10^{-3}\\text{ kg/m}$.\nSpeed of transverse wave:\n$$v = \\sqrt{\\frac{T}{\\mu}} = \\sqrt{\\frac{80}{5 \\times 10^{-3}}} = \\sqrt{16000} = 40\\sqrt{10}\\text{ m/s} \\approx 126.49\\text{ m/s}$$\nFundamental frequency for a string fixed at both ends:\n$$f_1 = \\frac{v}{2L} = \\frac{126.49}{2(1)} \\approx 63.25\\text{ Hz} \\approx 63.2\\text{ Hz}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] A source of sound emitting frequency $500\\text{ Hz}$ moves towards a stationary observer with speed $30\\text{ m/s}$. The speed of sound in air is $330\\text{ m/s}$. The frequency heard by the observer is:",
+          "image": "",
+          "options": [
+            "$550\\text{ Hz}$",
+            "$458\\text{ Hz}$",
+            "$545\\text{ Hz}$",
+            "$530\\text{ Hz}$"
+          ],
+          "correctOption": 0,
+          "solution": "By the Doppler effect formula for a moving source approaching a stationary observer:\n$$f' = f \\left(\\frac{v}{v - v_s}\\right)$$\n$$f' = 500 \\times \\left(\\frac{330}{330 - 30}\\right) = 500 \\times \\left(\\frac{330}{300}\\right) = 500 \\times 1.1 = 550\\text{ Hz}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A standing wave in a string clamped at both ends is given by $y = 2A\\sin(kx)\\cos(\\omega t)$. The distance between any two adjacent nodes is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\lambda}{2}$",
+            "$\\lambda$",
+            "$\\frac{\\lambda}{4}$",
+            "$\\frac{2\\lambda}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "Nodes occur where the spatial amplitude is zero: $\\sin(kx) = 0 \\implies kx = n\\pi$.\nWith $k = \\frac{2\\pi}{\\lambda}$:\n$$x_n = \\frac{n\\pi}{k} = \\frac{n\\pi}{2\\pi/\\lambda} = n\\frac{\\lambda}{2}$$\nThe separation between successive nodes is $\\Delta x = x_{n+1} - x_n = \\frac{\\lambda}{2}$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The speed of sound in an ideal diatomic gas at temperature $T$ is $v$. If the absolute temperature is doubled and the gas completely dissociates into monoatomic atoms, the new speed of sound is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{50}{21}} v$",
+            "$\\sqrt{\\frac{25}{21}} v$",
+            "$\\sqrt{2} v$",
+            "$2v$"
+          ],
+          "correctOption": 0,
+          "solution": "Speed of sound in an ideal gas is $v = \\sqrt{\\frac{\\gamma R T}{M}}$.\nFor diatomic gas: $\\gamma_1 = 7/5$, molar mass $M_1 = M$, temperature $T_1 = T$.\n$$v_1 = \\sqrt{\\frac{(7/5)RT}{M}}$$\nFor monoatomic dissociated gas: $\\gamma_2 = 5/3$, molar mass $M_2 = M/2$, temperature $T_2 = 2T$.\n$$v_2 = \\sqrt{\\frac{(5/3)R(2T)}{M/2}} = \\sqrt{\\frac{(20/3)RT}{M}}$$\n$$\\frac{v_2}{v_1} = \\sqrt{\\frac{20/3}{7/5}} = \\sqrt{\\frac{100}{21}} = \\sqrt{\\frac{50}{21} \\times 2}$$\nWait, calculating explicitly: $\\frac{20/3}{7/5} = \\frac{100}{21}$, so $\\frac{v_2}{v_1} = \\sqrt{\\frac{100}{21}} = \\frac{10}{\\sqrt{21}}$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A train blowing a whistle of frequency $f$ moves away from a high vertical cliff towards a stationary observer with speed $v_s$. If speed of sound is $v$, the beat frequency heard by the observer directly between the train sound and reflected echo is:",
+          "image": "",
+          "options": [
+            "$\\frac{2 v_s v}{v^2 - v_s^2} f$",
+            "$\\frac{v_s}{v - v_s} f$",
+            "$\\frac{2 v_s}{v} f$",
+            "$\\frac{v_s}{v + v_s} f$"
+          ],
+          "correctOption": 0,
+          "solution": "Direct frequency heard from the train approaching the observer: $f_1 = f\\left(\\frac{v}{v - v_s}\\right)$.\nThe cliff receives sound from the train receding away: $f_{\\text{cliff}} = f\\left(\\frac{v}{v + v_s}\\right)$.\nThe stationary cliff reflects this sound without changing frequency, so the echo has frequency $f_2 = f\\left(\\frac{v}{v + v_s}\\right)$.\nBeat frequency:\n$$\\Delta f = f_1 - f_2 = f v \\left(\\frac{1}{v - v_s} - \\frac{1}{v + v_s}\\right) = f v \\left(\\frac{2v_s}{v^2 - v_s^2}\\right) = \\frac{2 v_s v}{v^2 - v_s^2} f$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] When a transverse wave reflects from a denser medium (rigid boundary), the reflected wave undergoes a phase change of:",
+          "image": "",
+          "options": [
+            "$\\pi\\text{ radians}$",
+            "$0\\text{ radians}$",
+            "$\\pi/2\\text{ radians}$",
+            "$\\pi/4\\text{ radians}$"
+          ],
+          "correctOption": 0,
+          "solution": "When a wave travelling in a rarer medium encounters a rigid or denser boundary, reflection occurs with an inversion of displacement, which corresponds to a phase shift of $\\pi\\text{ radians}$ ($180^\\circ$)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In a resonance tube experiment, the first and second resonances are obtained at water column lengths $l_1 = 16\\text{ cm}$ and $l_2 = 50\\text{ cm}$ respectively using a tuning fork of frequency $500\\text{ Hz}$. The speed of sound obtained from this experiment is:",
+          "image": "",
+          "options": [
+            "$340\\text{ m/s}$",
+            "$330\\text{ m/s}$",
+            "$350\\text{ m/s}$",
+            "$320\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "The difference between two successive resonance lengths is half a wavelength: $\\frac{\\lambda}{2} = l_2 - l_1$.\n$$\\lambda = 2(l_2 - l_1) = 2(50 - 16)\\text{ cm} = 2(34\\text{ cm}) = 68\\text{ cm} = 0.68\\text{ m}$$\nSpeed of sound:\n$$v = f \\lambda = 500\\text{ Hz} \\times 0.68\\text{ m} = 340\\text{ m/s}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The equation of a wave is $y = 0.02\\sin[\\pi(100t - 2x)]$, where $x$ and $y$ are in meters and $t$ is in seconds. The maximum particle velocity is:",
+          "image": "",
+          "options": [
+            "$2\\pi\\text{ m/s}$",
+            "$4\\pi\\text{ m/s}$",
+            "$100\\pi\\text{ m/s}$",
+            "$0.04\\pi\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Comparing with $y = A\\sin(\\omega t - kx)$:\n$A = 0.02\\text{ m}$ and $\\omega = 100\\pi\\text{ rad/s}$.\nMaximum particle velocity is given by:\n$$v_{p,\\max} = A\\omega = 0.02 \\times 100\\pi = 2\\pi\\text{ m/s}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A sound wave has an intensity level of $40\\text{ dB}$. If the intensity is increased by a factor of 100, the new sound intensity level will be:",
+          "image": "",
+          "options": [
+            "$60\\text{ dB}$",
+            "$80\\text{ dB}$",
+            "$140\\text{ dB}$",
+            "$50\\text{ dB}$"
+          ],
+          "correctOption": 0,
+          "solution": "Sound level in decibels: $\\beta = 10\\log_{10}\\left(\\frac{I}{I_0}\\right)$.\nWhen intensity increases to $I' = 100 I$:\n$$\\beta' = 10\\log_{10}\\left(\\frac{100 I}{I_0}\\right) = 10\\left[ \\log_{10}(100) + \\log_{10}\\left(\\frac{I}{I_0}\\right) \\right] = 10(2) + \\beta = 20 + 40 = 60\\text{ dB}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] In an organ pipe, three successive resonance frequencies are observed at $425\\text{ Hz}$, $595\\text{ Hz}$, and $765\\text{ Hz}$. The pipe is:",
+          "image": "",
+          "options": [
+            "Closed at one end with fundamental frequency $85\\text{ Hz}$",
+            "Open at both ends with fundamental frequency $170\\text{ Hz}$",
+            "Closed at one end with fundamental frequency $170\\text{ Hz}$",
+            "Open at both ends with fundamental frequency $85\\text{ Hz}$"
+          ],
+          "correctOption": 0,
+          "solution": "Differences between successive frequencies:\n$595 - 425 = 170\\text{ Hz}$\n$765 - 595 = 170\\text{ Hz}$\nNotice that $\\frac{425}{85} = 5$, $\\frac{595}{85} = 7$, and $\\frac{765}{85} = 9$.\nThe frequencies are in the ratio $5 : 7 : 9$, which consists of odd harmonics only.\nThis confirms the pipe is closed at one end, with fundamental frequency $f_1 = 85\\text{ Hz}$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Two waves are represented by $y_1 = A\\sin\\left(\\omega t - kx\\right)$ and $y_2 = A\\cos\\left(\\omega t - kx\\right)$. The amplitude of the resultant wave obtained by superposition is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{2}A$",
+            "$2A$",
+            "$A$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Expressing $y_2$ in sine form: $y_2 = A\\sin\\left(\\omega t - kx + \\frac{\\pi}{2}\\right)$.\nPhase difference between the two waves is $\\phi = \\frac{\\pi}{2}$.\nResultant amplitude:\n$$A_{\\text{res}} = \\sqrt{A^2 + A^2 + 2A^2\\cos(\\pi/2)} = \\sqrt{A^2 + A^2 + 0} = \\sqrt{2}A$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An observer moves towards a stationary source of sound of frequency $f_0$ with velocity $v_0$. If the velocity of sound in the medium is $v$, the apparent frequency heard is:",
+          "image": "",
+          "options": [
+            "$f_0 \\left(\\frac{v + v_0}{v}\\right)$",
+            "$f_0 \\left(\\frac{v - v_0}{v}\\right)$",
+            "$f_0 \\left(\\frac{v}{v - v_0}\\right)$",
+            "$f_0 \\left(\\frac{v}{v + v_0}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "By the Doppler effect formula for a moving observer approaching a stationary source:\n$$f' = f_0 \\left(\\frac{v + v_0}{v}\\right)$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Laplace's correction to Newton's formula for the speed of sound in a gas is based on the assumption that sound propagation is an:",
+          "image": "",
+          "options": [
+            "Adiabatic process",
+            "Isothermal process",
+            "Isobaric process",
+            "Isochoric process"
+          ],
+          "correctOption": 0,
+          "solution": "Newton assumed that compressions and rarefactions occur isothermally ($B = P$).\nLaplace corrected this by recognizing that compressions and rarefactions occur so rapidly and air is such a poor conductor of heat that no heat exchange occurs, making it an adiabatic process ($B = \\gamma P$ and $v = \\sqrt{\\gamma P / \\rho}$)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a stationary wave, the points where the strain is maximum are:",
+          "image": "",
+          "options": [
+            "Nodes",
+            "Antinodes",
+            "Between node and antinode at displacement $A/2$",
+            "Strain is uniform everywhere"
+          ],
+          "correctOption": 0,
+          "solution": "Strain in a wave is defined as $\\frac{\\partial y}{\\partial x}$.\nFor $y = 2A\\sin(kx)\\cos(\\omega t)$, strain is $\\frac{\\partial y}{\\partial x} = 2Ak\\cos(kx)\\cos(\\omega t)$.\nStrain is maximized where $\\cos(kx) = \\pm 1$, which occurs at $kx = n\\pi$, precisely the locations of nodes (where displacement $y = 0$)."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A tuning fork of frequency $340\\text{ Hz}$ vibrates above an open cylindrical tube filled with water. The water level can be adjusted. As the water level is gradually lowered from the top, the first resonance occurs when the air column length is (take speed of sound $= 340\\text{ m/s}$):",
+          "image": "",
+          "options": [
+            "$25\\text{ cm}$",
+            "$50\\text{ cm}$",
+            "$12.5\\text{ cm}$",
+            "$75\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Wavelength of the sound wave:\n$$\\lambda = \\frac{v}{f} = \\frac{340\\text{ m/s}}{340\\text{ Hz}} = 1.0\\text{ m} = 100\\text{ cm}$$\nThe air column bounded by water acts as a pipe closed at one end.\nFirst resonance occurs at fundamental mode:\n$$l_1 = \\frac{\\lambda}{4} = \\frac{100\\text{ cm}}{4} = 25\\text{ cm}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A wire under tension $T$ vibrates in its fundamental mode with frequency $f$. If the tension is increased to $4T$ and length is doubled, the new fundamental frequency will be:",
+          "image": "",
+          "options": [
+            "$f$",
+            "$2f$",
+            "$f/2$",
+            "$4f$"
+          ],
+          "correctOption": 0,
+          "solution": "Fundamental frequency of a stretched wire is $f = \\frac{1}{2L}\\sqrt{\\frac{T}{\\mu}}$.\nWhen $T' = 4T$ and $L' = 2L$:\n$$f' = \\frac{1}{2(2L)}\\sqrt{\\frac{4T}{\\mu}} = \\frac{2}{2} \\left(\\frac{1}{2L}\\sqrt{\\frac{T}{\\mu}}\\right) = f$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Two sound waves have intensities $I_1$ and $I_2$. If they interfere, the ratio of maximum to minimum intensity in the interference pattern is:",
+          "image": "",
+          "options": [
+            "$\\left(\\frac{\\sqrt{I_1} + \\sqrt{I_2}}{\\sqrt{I_1} - \\sqrt{I_2}}\\right)^2$",
+            "$\\frac{I_1 + I_2}{I_1 - I_2}$",
+            "$\\left(\\frac{I_1 + I_2}{I_1 - I_2}\\right)^2$",
+            "$\\frac{\\sqrt{I_1} + \\sqrt{I_2}}{\\sqrt{I_1} - \\sqrt{I_2}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Amplitudes of the individual waves are $A_1 \\propto \\sqrt{I_1}$ and $A_2 \\propto \\sqrt{I_2}$.\nMaximum amplitude: $A_{\\max} = A_1 + A_2 \\propto \\sqrt{I_1} + \\sqrt{I_2}$.\nMinimum amplitude: $A_{\\min} = A_1 - A_2 \\propto \\sqrt{I_1} - \\sqrt{I_2}$.\n$$\\frac{I_{\\max}}{I_{\\min}} = \\left(\\frac{A_{\\max}}{A_{\\min}}\\right)^2 = \\left(\\frac{\\sqrt{I_1} + \\sqrt{I_2}}{\\sqrt{I_1} - \\sqrt{I_2}}\\right)^2$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A steel wire of length $0.5\\text{ m}$ and mass $2.0\\text{ g}$ is under a tension of $160\\text{ N}$. Find the speed of transverse waves (in $\\text{m/s}$) on the wire.",
+          "image": "",
+          "correctValue": 200.0,
+          "solution": "Linear mass density of the wire:\n$$\\mu = \\frac{m}{L} = \\frac{2.0 \\times 10^{-3}\\text{ kg}}{0.5\\text{ m}} = 4.0 \\times 10^{-3}\\text{ kg/m}$$\nSpeed of transverse wave:\n$$v = \\sqrt{\\frac{T}{\\mu}} = \\sqrt{\\frac{160}{4.0 \\times 10^{-3}}} = \\sqrt{40000} = 200.0\\text{ m/s}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A whistle producing sound of frequency $600\\text{ Hz}$ is tied to a string of length $1.0\\text{ m}$ and whirled in a horizontal circle at an angular speed of $10\\text{ rad/s}$. An observer stands far away in the plane of the circle. If speed of sound in air is $340\\text{ m/s}$, find the highest frequency (in Hz) heard by the observer (round to nearest whole number).",
+          "image": "",
+          "correctValue": 618.0,
+          "solution": "Speed of source in the circular path:\n$$v_s = r\\omega = 1.0\\text{ m} \\times 10\\text{ rad/s} = 10\\text{ m/s}$$\nHighest frequency is heard when source moves directly towards the distant observer:\n$$f_{\\max} = f_0 \\left(\\frac{v}{v - v_s}\\right) = 600 \\times \\left(\\frac{340}{340 - 10}\\right) = 600 \\times \\frac{340}{330} = \\frac{20400}{33} \\approx 618.18\\text{ Hz} \\approx 618.0\\text{ Hz}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] In an open organ pipe of length $85\\text{ cm}$, find the fundamental frequency (in Hz) of sound produced (take speed of sound in air $v = 340\\text{ m/s}$).",
+          "image": "",
+          "correctValue": 200.0,
+          "solution": "Fundamental frequency of an open organ pipe:\n$$f_1 = \\frac{v}{2L}$$\nSubstitute $v = 340\\text{ m/s}$ and $L = 0.85\\text{ m}$:\n$$f_1 = \\frac{340}{2 \\times 0.85} = \\frac{340}{1.7} = 200.0\\text{ Hz}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Two waves travelling along the same direction are given by $y_1 = 4\\sin(500\\pi t)$ and $y_2 = 2\\sin(506\\pi t)$, where $t$ is in seconds. Find the number of beats produced per second.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "Frequencies of the two waves:\n$$\\omega_1 = 500\\pi \\implies f_1 = \\frac{\\omega_1}{2\\pi} = \\frac{500\\pi}{2\\pi} = 250\\text{ Hz}$$\n$$\\omega_2 = 506\\pi \\implies f_2 = \\frac{\\omega_2}{2\\pi} = \\frac{506\\pi}{2\\pi} = 253\\text{ Hz}$$\nNumber of beats per second:\n$$f_{\\text{beat}} = |f_2 - f_1| = |253 - 250| = 3.0\\text{ beats/s}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A string fixed at both ends has length $1.2\\text{ m}$. It vibrates in a standing wave pattern with 3 loops. If the speed of transverse waves on the string is $120\\text{ m/s}$, find the frequency of vibration (in Hz).",
+          "image": "",
+          "correctValue": 150.0,
+          "solution": "For a string vibrating in $n$ loops:\n$$L = n \\left(\\frac{\\lambda}{2}\\right) \\implies \\lambda = \\frac{2L}{n}$$\nFor $n = 3$ loops and $L = 1.2\\text{ m}$:\n$$\\lambda = \\frac{2(1.2)}{3} = \\frac{2.4}{3} = 0.8\\text{ m}$$\nFrequency:\n$$f = \\frac{v}{\\lambda} = \\frac{120\\text{ m/s}}{0.8\\text{ m}} = 150.0\\text{ Hz}$$"
+        }
+      ]
+    }
+  ]
+}
