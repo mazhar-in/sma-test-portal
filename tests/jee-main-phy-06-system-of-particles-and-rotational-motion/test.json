@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-06-system-of-particles-and-rotational-motion",
+  "title": "System of Particles and Rotational Motion",
+  "syllabus": "Centre of mass of a two-particle system, Centre of mass of a rigid body; Basic concepts of rotational motion; Moment of a force, torque, angular momentum, conservation of angular momentum and its applications; Moment of inertia, radius of gyration, values of moments of inertia for simple geometrical objects, parallel and perpendicular axes theorems and their applications; Rigid body rotation, equations of rotational motion, rolling motion",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A solid sphere of mass $M$ and radius $R$ rolls without slipping down an inclined plane of inclination $\\theta$. The acceleration of the centre of mass of the sphere is:",
+          "image": "",
+          "options": [
+            "$\\frac{5}{7}g\\sin\\theta$",
+            "$\\frac{2}{5}g\\sin\\theta$",
+            "$\\frac{3}{5}g\\sin\\theta$",
+            "$\\frac{1}{2}g\\sin\\theta$"
+          ],
+          "correctOption": 0,
+          "solution": "For rolling without slipping down an incline:\n$$a = \\frac{g\\sin\\theta}{1 + \\frac{I_{\\text{cm}}}{MR^2}}$$\nFor a solid sphere, $I_{\\text{cm}} = \\frac{2}{5}MR^2$, so $\\frac{I_{\\text{cm}}}{MR^2} = \\frac{2}{5}$.\n$$a = \\frac{g\\sin\\theta}{1 + \\frac{2}{5}} = \\frac{5}{7}g\\sin\\theta$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The radius of gyration of a uniform circular disc of radius $R$ about a tangent in the plane of the disc is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\sqrt{5}}{2}R$",
+            "$\\frac{\\sqrt{3}}{2}R$",
+            "$\\frac{1}{2}R$",
+            "$\\sqrt{\\frac{5}{2}}R$"
+          ],
+          "correctOption": 0,
+          "solution": "Moment of inertia of a disc about its diameter is $I_{\\text{dia}} = \\frac{1}{4}MR^2$.\nBy the parallel axes theorem, about a tangent in the plane of the disc:\n$$I = I_{\\text{dia}} + MR^2 = \\frac{1}{4}MR^2 + MR^2 = \\frac{5}{4}MR^2$$\nSetting $I = M K^2$:\n$$MK^2 = \\frac{5}{4}MR^2 \\implies K = \\frac{\\sqrt{5}}{2}R$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A solid cylinder and a hollow cylinder of identical masses and radii are released simultaneously from the top of an inclined plane. Both roll down without slipping. Which of the following statements is correct?",
+          "image": "",
+          "options": [
+            "Solid cylinder reaches the bottom first with greater linear acceleration",
+            "Hollow cylinder reaches the bottom first with greater linear acceleration",
+            "Both reach the bottom at the same time",
+            "Solid cylinder reaches first, but both have the same kinetic energy at the bottom"
+          ],
+          "correctOption": 0,
+          "solution": "Acceleration during pure rolling is $a = \\frac{g\\sin\\theta}{1 + k^2/R^2}$.\nFor solid cylinder: $k^2/R^2 = 1/2 \\implies a_{\\text{solid}} = \\frac{2}{3}g\\sin\\theta$.\nFor hollow cylinder: $k^2/R^2 = 1 \\implies a_{\\text{hollow}} = \\frac{1}{2}g\\sin\\theta$.\nSince $a_{\\text{solid}} > a_{\\text{hollow}}$, the solid cylinder has greater acceleration and takes less time to reach the bottom."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A circular disc of mass $M$ and radius $R$ is rotating with angular velocity $\\omega_0$ about its central perpendicular axis. Another identical stationary disc is placed gently coaxially on it. The common angular velocity of the combined system is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\omega_0}{2}$",
+            "$\\frac{\\omega_0}{4}$",
+            "$\\frac{\\omega_0}{\\sqrt{2}}$",
+            "$\\frac{2\\omega_0}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "No external torque acts on the system about the vertical rotation axis, so angular momentum is conserved:\n$$L_i = L_f$$\n$$I \\omega_0 = (I + I) \\omega \\implies I \\omega_0 = 2I \\omega \\implies \\omega = \\frac{\\omega_0}{2}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] From a uniform circular disc of radius $R$ and mass $9M$, a small circular disc of radius $R/3$ is removed such that its edge touches the circumference of the larger disc. The moment of inertia of the remaining disc about an axis passing through the centre of the original disc and perpendicular to its plane is:",
+          "image": "",
+          "options": [
+            "$4MR^2$",
+            "$\\frac{40}{9}MR^2$",
+            "$3MR^2$",
+            "$\\frac{37}{9}MR^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Area of original disc: $A = \\pi R^2$, mass $= 9M$.\nArea of removed disc: $A' = \\pi (R/3)^2 = \\frac{\\pi R^2}{9} = \\frac{A}{9}$, so mass $m = M$.\nDistance between centre of original disc and removed disc: $d = R - R/3 = 2R/3$.\nMoment of inertia of the complete disc: $I_0 = \\frac{1}{2}(9M)R^2 = \\frac{9}{2}MR^2$.\nMoment of inertia of the removed portion about the central axis by parallel axes theorem:\n$$I_{\\text{cut}} = \\frac{1}{2}m(R/3)^2 + m d^2 = \\frac{1}{2}M\\left(\\frac{R^2}{9}\\right) + M\\left(\\frac{2R}{3}\\right)^2 = \\frac{MR^2}{18} + \\frac{4MR^2}{9} = \\frac{MR^2 + 8MR^2}{18} = \\frac{9MR^2}{18} = \\frac{1}{2}MR^2$$\nMoment of inertia of remaining portion:\n$$I_{\\text{rem}} = I_0 - I_{\\text{cut}} = \\frac{9}{2}MR^2 - \\frac{1}{2}MR^2 = 4MR^2$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A thin uniform rod of length $L$ and mass $M$ is pivoted at one end so that it can rotate freely in a vertical plane. It is released from rest in the horizontal position. Its angular acceleration when it is released is:",
+          "image": "",
+          "options": [
+            "$\\frac{3g}{2L}$",
+            "$\\frac{2g}{3L}$",
+            "$\\frac{g}{L}$",
+            "$\\frac{3g}{L}$"
+          ],
+          "correctOption": 0,
+          "solution": "Torque about the pivot due to gravity acting at the centre of mass:\n$$\\tau = Mg \\left(\\frac{L}{2}\\right)$$\nMoment of inertia of the rod about one end is $I = \\frac{1}{3}ML^2$.\n$$\\tau = I \\alpha \\implies Mg\\left(\\frac{L}{2}\\right) = \\left(\\frac{1}{3}ML^2\\right) \\alpha$$\n$$\\alpha = \\frac{3g}{2L}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A particle of mass $m$ is moving with a constant velocity $\\vec{v} = v\\hat{i}$ along the line $y = b$ in the $xy$-plane. The angular momentum of the particle about the origin:",
+          "image": "",
+          "options": [
+            "Remains constant in magnitude and direction with value $-m v b\\hat{k}$",
+            "Increases linearly with time",
+            "Decreases as the particle moves away from the y-axis",
+            "Is zero"
+          ],
+          "correctOption": 0,
+          "solution": "Position vector is $\\vec{r} = x\\hat{i} + b\\hat{j}$. Linear momentum is $\\vec{p} = mv\\hat{i}$.\nAngular momentum about origin is:\n$$\\vec{L} = \\vec{r} \\times \\vec{p} = (x\\hat{i} + b\\hat{j}) \\times (mv\\hat{i}) = -mvb(\\hat{j} \\times \\hat{i}) = -m v b\\hat{k}$$\nBecause $m, v,$ and $b$ are constants, $\\vec{L}$ is constant at all times."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The ratio of rotational kinetic energy to the total kinetic energy for a solid sphere rolling without slipping on a horizontal surface is:",
+          "image": "",
+          "options": [
+            "$2:7$",
+            "$5:7$",
+            "$1:5$",
+            "$2:5$"
+          ],
+          "correctOption": 0,
+          "solution": "Rotational kinetic energy: $K_{\\text{rot}} = \\frac{1}{2} I_{\\text{cm}} \\omega^2 = \\frac{1}{2}\\left(\\frac{2}{5}MR^2\\right)\\left(\\frac{v}{R}\\right)^2 = \\frac{1}{5}Mv^2$.\nTranslational kinetic energy: $K_{\\text{trans}} = \\frac{1}{2}Mv^2$.\nTotal kinetic energy: $K_{\\text{total}} = K_{\\text{trans}} + K_{\\text{rot}} = \\frac{1}{2}Mv^2 + \\frac{1}{5}Mv^2 = \\frac{7}{10}Mv^2$.\n$$\\frac{K_{\\text{rot}}}{K_{\\text{total}}} = \\frac{\\frac{1}{5}Mv^2}{\\frac{7}{10}Mv^2} = \\frac{2}{7}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A force $\\vec{F} = (2\\hat{i} - 3\\hat{k})\\text{ N}$ acts at a point whose position vector is $\\vec{r} = (\\hat{i} + 2\\hat{j} - \\hat{k})\\text{ m}$. The torque of the force about the origin is:",
+          "image": "",
+          "options": [
+            "$(-6\\hat{i} + \\hat{j} - 4\\hat{k})\\text{ N}\\cdot\\text{m}$",
+            "$(6\\hat{i} - \\hat{j} + 4\\hat{k})\\text{ N}\\cdot\\text{m}$",
+            "$(-6\\hat{i} - \\hat{j} - 4\\hat{k})\\text{ N}\\cdot\\text{m}$",
+            "$(4\\hat{i} + \\hat{j} - 6\\hat{k})\\text{ N}\\cdot\\text{m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Torque is given by the cross product $\\vec{\\tau} = \\vec{r} \\times \\vec{F}$:\n$$\\vec{\\tau} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & 2 & -1 \\\\ 2 & 0 & -3 \\end{vmatrix}$$\n$$\\vec{\\tau} = \\hat{i}[2(-3) - (-1)(0)] - \\hat{j}[1(-3) - (-1)(2)] + \\hat{k}[1(0) - 2(2)]$$\n$$\\vec{\\tau} = \\hat{i}(-6) - \\hat{j}(-3 + 2) + \\hat{k}(-4) = -6\\hat{i} + \\hat{j} - 4\\hat{k}\\text{ N}\\cdot\\text{m}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Two particles of masses $1\\text{ kg}$ and $3\\text{ kg}$ have position vectors $(2\\hat{i} + 3\\hat{j} + 4\\hat{k})\\text{ m}$ and $(-2\\hat{i} + 3\\hat{j} - 4\\hat{k})\\text{ m}$ respectively. The centre of mass has position vector:",
+          "image": "",
+          "options": [
+            "$(-\\hat{i} + 3\\hat{j} - 2\\hat{k})\\text{ m}$",
+            "$(\\hat{i} + 3\\hat{j} - 2\\hat{k})\\text{ m}$",
+            "$(-\\hat{i} - 3\\hat{j} + 2\\hat{k})\\text{ m}$",
+            "$(-2\\hat{i} + 3\\hat{j} - \\hat{k})\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the centre of mass formula:\n$$\\vec{r}_{\\text{cm}} = \\frac{m_1 \\vec{r}_1 + m_2 \\vec{r}_2}{m_1 + m_2}$$\n$$\\vec{r}_{\\text{cm}} = \\frac{1(2\\hat{i} + 3\\hat{j} + 4\\hat{k}) + 3(-2\\hat{i} + 3\\hat{j} - 4\\hat{k})}{1 + 3}$$\n$$\\vec{r}_{\\text{cm}} = \\frac{(2 - 6)\\hat{i} + (3 + 9)\\hat{j} + (4 - 12)\\hat{k}}{4} = \\frac{-4\\hat{i} + 12\\hat{j} - 8\\hat{k}}{4} = -\\hat{i} + 3\\hat{j} - 2\\hat{k}\\text{ m}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A ring of mass $M$ and radius $R$ rolls without slipping on a horizontal plane with velocity $v$. The velocity of the topmost point of the ring is:",
+          "image": "",
+          "options": [
+            "$2v$",
+            "$v$",
+            "$\\sqrt{2}v$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "In pure rolling, the instantaneous axis of rotation passes through the contact point with the ground (which has instantaneous velocity zero).\nThe centre of mass is at distance $R$ with speed $v = \\omega R$.\nThe topmost point is at distance $2R$ from the contact point, so its speed is:\n$$v_{\\text{top}} = \\omega (2R) = 2(\\omega R) = 2v$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Four point masses, each of mass $m$, are fixed at the corners of a light square frame of side length $a$. The moment of inertia of this system about an axis coinciding with one of the diagonals of the square is:",
+          "image": "",
+          "options": [
+            "$m a^2$",
+            "$2 m a^2$",
+            "$\\frac{1}{2} m a^2$",
+            "$4 m a^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Two masses lie on the diagonal chosen as the axis, so their perpendicular distance from the axis is zero.\nThe other two masses lie at the remaining opposite corners.\nDistance of each of these two corners from the diagonal is half the diagonal length: $d = \\frac{a\\sqrt{2}}{2} = \\frac{a}{\\sqrt{2}}$.\n$$I = m(0)^2 + m(0)^2 + m\\left(\\frac{a}{\\sqrt{2}}\\right)^2 + m\\left(\\frac{a}{\\sqrt{2}}\\right)^2 = m\\frac{a^2}{2} + m\\frac{a^2}{2} = m a^2$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A solid sphere and a solid cylinder have equal masses and equal radii. If $I_s$ is the moment of inertia of the sphere about its diameter and $I_c$ is the moment of inertia of the cylinder about its longitudinal axis, then the ratio $I_s / I_c$ is:",
+          "image": "",
+          "options": [
+            "$4/5$",
+            "$5/4$",
+            "$2/5$",
+            "$1/2$"
+          ],
+          "correctOption": 0,
+          "solution": "Moment of inertia of solid sphere: $I_s = \\frac{2}{5}MR^2$.\nMoment of inertia of solid cylinder: $I_c = \\frac{1}{2}MR^2$.\n$$\\frac{I_s}{I_c} = \\frac{\\frac{2}{5}MR^2}{\\frac{1}{2}MR^2} = \\frac{4}{5}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A horizontal platform in the shape of a circular disc can rotate freely about a vertical frictionless axle through its centre. A man stands at the outer rim of the platform. When the man walks along the rim, the platform rotates in the opposite direction. Which physical quantity of the (man + platform) system remains strictly conserved?",
+          "image": "",
+          "options": [
+            "Total angular momentum about the vertical axle",
+            "Total kinetic energy",
+            "Total linear momentum",
+            "Both kinetic energy and angular momentum"
+          ],
+          "correctOption": 0,
+          "solution": "Because the vertical axle exerts no external torque along its axis ($\\\\sum \\tau_z = 0$), the total angular momentum of the system about that axis remains conserved.\nInternal friction forces do work as the man walks, so kinetic energy is not conserved."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A wheel of moment of inertia $2.0\\text{ kg}\\cdot\\text{m}^2$ is rotating at an initial angular speed of $60\\text{ rad/s}$. Due to friction at the axle, it comes to rest in $1\\text{ minute}$. The magnitude of the frictional torque is:",
+          "image": "",
+          "options": [
+            "$2.0\\text{ N}\\cdot\\text{m}$",
+            "$1.0\\text{ N}\\cdot\\text{m}$",
+            "$0.5\\text{ N}\\cdot\\text{m}$",
+            "$4.0\\text{ N}\\cdot\\text{m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Angular retardation is $\\alpha = \\frac{\\omega_0 - \\omega}{t} = \\frac{60 - 0}{60\\text{ s}} = 1.0\\text{ rad/s}^2$.\nFrictional torque:\n$$\\tau = I \\alpha = 2.0\\text{ kg}\\cdot\\text{m}^2 \\times 1.0\\text{ rad/s}^2 = 2.0\\text{ N}\\cdot\\text{m}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A uniform thin rod of length $1\\text{ m}$ is bent at its midpoint to form an L-shape with an angle of $90^\\circ$. If one arm lies along the positive x-axis with the vertex at the origin, the coordinates of the centre of mass are:",
+          "image": "",
+          "options": [
+            "$(0.125\\text{ m}, 0.125\\text{ m})$",
+            "$(0.25\\text{ m}, 0.25\\text{ m})$",
+            "$(0.5\\text{ m}, 0.5\\text{ m})$",
+            "$(0.125\\text{ m}, 0.25\\text{ m})$"
+          ],
+          "correctOption": 0,
+          "solution": "Each segment has length $0.5\\text{ m}$ and mass $m/2$.\nSegment 1 lies along the x-axis from $(0, 0)$ to $(0.5, 0)$, with centre of mass at $(0.25, 0)$.\nSegment 2 lies along the y-axis from $(0, 0)$ to $(0, 0.5)$, with centre of mass at $(0, 0.25)$.\n$$x_{\\text{cm}} = \\frac{(m/2)(0.25) + (m/2)(0)}{m} = 0.125\\text{ m}$$\n$$y_{\\text{cm}} = \\frac{(m/2)(0) + (m/2)(0.25)}{m} = 0.125\\text{ m}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A uniform solid cylinder of mass $M$ and radius $R$ is pulled by a horizontal force $F$ applied at its highest point. The surface has sufficient friction to prevent slipping. The acceleration of the cylinder is:",
+          "image": "",
+          "options": [
+            "$\\frac{4F}{3M}$",
+            "$\\frac{2F}{3M}$",
+            "$\\frac{F}{M}$",
+            "$\\frac{F}{2M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let friction force $f$ act horizontally forward at the bottom contact point.\nTranslational equation: $F + f = M a$.\nTorque equation about the centre of mass: $F R - f R = I_{\\text{cm}} \\alpha = \\left(\\frac{1}{2}MR^2\\right)\\left(\\frac{a}{R}\\right) = \\frac{1}{2} M a R$.\n$$F - f = \\frac{1}{2} M a$$\nAdding the two equations:\n$$2F = Ma + \\frac{1}{2}Ma = \\frac{3}{2}Ma \\implies a = \\frac{4F}{3M}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A meter stick is balanced on a knife edge at its centre. When two coins, each of mass $5\\text{ g}$, are put one on top of the other at the $12.0\\text{ cm}$ mark, the stick is found to be balanced at $45.0\\text{ cm}$. The mass of the meter stick is:",
+          "image": "",
+          "options": [
+            "$66.0\\text{ g}$",
+            "$56.0\\text{ g}$",
+            "$60.0\\text{ g}$",
+            "$72.0\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "The centre of gravity of the uniform meter stick is at $50.0\\text{ cm}$.\nFulcrum is at $45.0\\text{ cm}$.\nDistance of coins from fulcrum: $d_1 = 45.0 - 12.0 = 33.0\\text{ cm}$.\nDistance of stick's centre of mass from fulcrum: $d_2 = 50.0 - 45.0 = 5.0\\text{ cm}$.\nEquating torques about the fulcrum:\n$$m_{\\text{coins}} g (33.0) = M_{\\text{stick}} g (5.0)$$\n$$(10\\text{ g})(33.0) = M_{\\text{stick}}(5.0) \\implies M_{\\text{stick}} = \\frac{330}{5.0} = 66.0\\text{ g}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Two discs of moments of inertia $I_1$ and $I_2$ about their respective co-axial axes rotate with angular velocities $\\omega_1$ and $\\omega_2$ in the same sense. They are brought into contact face-to-face. The loss of kinetic energy in this process is:",
+          "image": "",
+          "options": [
+            "$\\frac{I_1 I_2}{2(I_1 + I_2)}(\\omega_1 - \\omega_2)^2$",
+            "$\\frac{I_1 I_2}{I_1 + I_2}(\\omega_1 - \\omega_2)^2$",
+            "$\\frac{(I_1 + I_2)}{2I_1 I_2}(\\omega_1 - \\omega_2)^2$",
+            "$\\frac{I_1 I_2}{2(I_1 + I_2)}(\\omega_1 + \\omega_2)^2$"
+          ],
+          "correctOption": 0,
+          "solution": "By conservation of angular momentum: $\\omega = \\frac{I_1 \\omega_1 + I_2 \\omega_2}{I_1 + I_2}$.\n$$\\Delta K = K_i - K_f = \\frac{1}{2}I_1 \\omega_1^2 + \\frac{1}{2}I_2 \\omega_2^2 - \\frac{1}{2}(I_1 + I_2)\\omega^2$$\nSubstituting $\\omega$ and simplifying yields:\n$$\\Delta K = \\frac{I_1 I_2}{2(I_1 + I_2)}(\\omega_1 - \\omega_2)^2$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A solid sphere rolls down an inclined plane of height $h$ starting from rest without slipping. The linear speed of the sphere upon reaching the bottom is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{10}{7}gh}$",
+            "$\\sqrt{2gh}$",
+            "$\\sqrt{\\frac{4}{3}gh}$",
+            "$\\sqrt{\\frac{5}{7}gh}$"
+          ],
+          "correctOption": 0,
+          "solution": "From conservation of mechanical energy:\n$$Mgh = \\frac{1}{2}Mv^2 + \\frac{1}{2}I_{\\text{cm}}\\omega^2 = \\frac{1}{2}Mv^2 + \\frac{1}{2}\\left(\\frac{2}{5}MR^2\\right)\\left(\\frac{v}{R}\\right)^2$$\n$$Mgh = \\frac{1}{2}Mv^2 + \\frac{1}{5}Mv^2 = \\frac{7}{10}Mv^2$$\n$$v = \\sqrt{\\frac{10}{7}gh}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A uniform disc of mass $2\\text{ kg}$ and radius $0.2\\text{ m}$ is rotating at $30\\text{ rad/s}$ about its central perpendicular axis. A constant opposing torque of $0.4\\text{ N}\\cdot\\text{m}$ is applied. Find the time (in seconds) taken by the disc to come to a stop.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "Moment of inertia of the disc:\n$$I = \\frac{1}{2}MR^2 = \\frac{1}{2}(2)(0.2)^2 = 0.04\\text{ kg}\\cdot\\text{m}^2$$\nAngular retardation:\n$$\\alpha = \\frac{\\tau}{I} = \\frac{0.4}{0.04} = 10\\text{ rad/s}^2$$\nTime taken to stop:\n$$t = \\frac{\\omega_0}{\\alpha} = \\frac{30}{10} = 3.0\\text{ s}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A cord is wrapped around the rim of a solid flywheel of mass $20\\text{ kg}$ and radius $0.2\\text{ m}$. A steady pull of $25\\text{ N}$ is applied to the cord. Find the angular acceleration (in $\\text{rad/s}^2$) produced in the flywheel.",
+          "image": "",
+          "correctValue": 12.5,
+          "solution": "Torque applied by the pull:\n$$\\tau = F R = 25 \\times 0.2 = 5.0\\text{ N}\\cdot\\text{m}$$\nMoment of inertia of the solid flywheel:\n$$I = \\frac{1}{2}MR^2 = \\frac{1}{2}(20)(0.2)^2 = 10 \\times 0.04 = 0.4\\text{ kg}\\cdot\\text{m}^2$$\nAngular acceleration:\n$$\\alpha = \\frac{\\tau}{I} = \\frac{5.0}{0.4} = 12.5\\text{ rad/s}^2$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Three point masses $1\\text{ kg}, 2\\text{ kg},$ and $3\\text{ kg}$ are located at the vertices of an equilateral triangle of side length $1\\text{ m}$. The $1\\text{ kg}$ mass is at the origin $(0, 0)$ and the $2\\text{ kg}$ mass is at $(1, 0)$. Find the y-coordinate of the centre of mass (in meters, rounded to two decimal places).",
+          "image": "",
+          "correctValue": 0.43,
+          "solution": "Coordinates of the vertices:\n$m_1 = 1\\text{ kg}$ at $(0, 0)$\n$m_2 = 2\\text{ kg}$ at $(1, 0)$\n$m_3 = 3\\text{ kg}$ at $(0.5, \\frac{\\sqrt{3}}{2})$\n$$y_{\\text{cm}} = \\frac{m_1 y_1 + m_2 y_2 + m_3 y_3}{m_1 + m_2 + m_3}$$\n$$y_{\\text{cm}} = \\frac{1(0) + 2(0) + 3\\left(\\frac{\\sqrt{3}}{2}\\right)}{1 + 2 + 3} = \\frac{\\frac{3\\sqrt{3}}{2}}{6} = \\frac{\\sqrt{3}}{4}$$\n$$y_{\\text{cm}} = \\frac{1.732}{4} = 0.433\\text{ m} \\approx 0.43\\text{ m}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] A solid sphere of mass $M = 2\\text{ kg}$ and radius $R = 0.5\\text{ m}$ rolls without slipping on a horizontal surface with linear speed $v = 4\\text{ m/s}$. The total kinetic energy of the sphere (in Joules) is:",
+          "image": "",
+          "correctValue": 22.4,
+          "solution": "Total kinetic energy in pure rolling:\n$$K_{\\text{total}} = \\frac{1}{2}Mv^2\\left(1 + \\frac{k^2}{R^2}\\right)$$\nFor a solid sphere, $\\frac{k^2}{R^2} = \\frac{2}{5}$:\n$$K_{\\text{total}} = \\frac{1}{2}(2)(4)^2\\left(1 + \\frac{2}{5}\\right) = 16 \\times \\frac{7}{5} = \\frac{112}{5} = 22.4\\text{ J}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A thin uniform rod of mass $M = 3\\text{ kg}$ and length $L = 2\\text{ m}$ is suspended vertically from a frictionless hinge at its top end. A horizontal impulse of $J = 4\\text{ N}\\cdot\\text{s}$ is delivered to the bottom end of the rod. Find the resulting angular velocity (in $\\text{rad/s}$) of the rod immediately after the blow.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "Angular impulse about the hinge is $\\Delta L = J \\times L$.\n$$J L = I_{\\text{end}} \\omega$$\nMoment of inertia of the rod about one end:\n$$I_{\\text{end}} = \\frac{1}{3}ML^2 = \\frac{1}{3}(3)(2)^2 = 4\\text{ kg}\\cdot\\text{m}^2$$\n$$4 \\times 2 = 4 \\omega \\implies 8 = 4\\omega \\implies \\omega = 2.0\\text{ rad/s}$$"
+        }
+      ]
+    }
+  ]
+}
