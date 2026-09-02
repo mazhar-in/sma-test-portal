@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-09-mechanical-properties-of-fluids",
+  "title": "Mechanical Properties of Fluids",
+  "syllabus": "Pressure due to a fluid column; Pascal's law and its applications (hydraulic lift and hydraulic brakes); Effect of gravity on fluid pressure; Viscosity, Stokes' law, terminal velocity, streamline and turbulent flow, critical velocity; Bernoulli's principle and its applications; Surface energy and surface tension, angle of contact, excess of pressure across a curved surface, application of surface tension ideas to drops, bubbles and capillary rise",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A spherical solid ball of volume $V$ made of a material of density $\\rho_1$ is falling through a liquid of density $\\rho_2$ ($\\rho_2 < \\rho_1$). Assuming that the viscous drag force is proportional to the square of its speed $v$, i.e., $F_{\\text{drag}} = -k v^2$ ($k > 0$), the terminal velocity of the ball is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{V g(\\rho_1 - \\rho_2)}{k}}$",
+            "$\\frac{V g(\\rho_1 - \\rho_2)}{k}$",
+            "$\\sqrt{\\frac{k}{V g(\\rho_1 - \\rho_2)}}$",
+            "$\\frac{k}{V g(\\rho_1 - \\rho_2)}$"
+          ],
+          "correctOption": 0,
+          "solution": "At terminal velocity, the net acceleration of the ball is zero.\nWeight of ball = Buoyant force + Viscous drag force\n$$V \\rho_1 g = V \\rho_2 g + k v_t^2$$\n$$k v_t^2 = V g (\\rho_1 - \\rho_2)$$\n$$v_t = \\sqrt{\\frac{V g (\\rho_1 - \\rho_2)}{k}}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A wide open cylindrical tank of height $H$ is filled completely with water. A small orifice is punched in the side wall at depth $h$ below the top surface. The horizontal range $R$ of the emerging water jet on the level ground is maximum when:",
+          "image": "",
+          "options": [
+            "$h = H/2$",
+            "$h = H/4$",
+            "$h = 3H/4$",
+            "$h = H$"
+          ],
+          "correctOption": 0,
+          "solution": "By Torricelli's Law, efflux speed is $v = \\sqrt{2gh}$.\nThe vertical distance fallen by the jet to reach ground is $y = H - h$.\nTime of flight: $t = \\sqrt{\\frac{2(H - h)}{g}}$.\nHorizontal range:\n$$R = v t = \\sqrt{2gh} \\times \\sqrt{\\frac{2(H - h)}{g}} = 2\\sqrt{h(H - h)}$$\n$R$ is maximized when the product $h(H - h)$ is maximized, which occurs when $h = H - h \\implies h = H/2$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Water rises to a height $h$ in a capillary tube of radius $r$. If the radius of the capillary tube is doubled, the height to which water will rise is:",
+          "image": "",
+          "options": [
+            "$h/2$",
+            "$2h$",
+            "$h/4$",
+            "$4h$"
+          ],
+          "correctOption": 0,
+          "solution": "Capillary rise is given by Jurin's Law:\n$$h = \\frac{2T\\cos\\theta}{r \\rho g}$$\nFor the same liquid and glass tube, $h \\propto \\frac{1}{r}$.\nWhen radius is doubled ($r' = 2r$):\n$$h' = \\frac{h}{2}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The excess pressure inside a soap bubble of radius $R_1$ is $P_1$ and that inside another soap bubble of radius $R_2$ is $P_2$. If $R_1 = 2R_2$, then the ratio $\\frac{P_1}{P_2}$ is:",
+          "image": "",
+          "options": [
+            "$1 : 2$",
+            "$2 : 1$",
+            "$1 : 4$",
+            "$4 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "A soap bubble has two free liquid-air interfaces, so excess pressure is:\n$$\\Delta P = \\frac{4T}{R}$$\n$$\\frac{P_1}{P_2} = \\frac{R_2}{R_1} = \\frac{R_2}{2R_2} = \\frac{1}{2}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Water flows horizontally through a pipe of non-uniform cross-section. At two points $A$ and $B$, the cross-sectional areas are in the ratio $2:1$. The ratio of the flow speeds $v_A : v_B$ is:",
+          "image": "",
+          "options": [
+            "$1 : 2$",
+            "$2 : 1$",
+            "$1 : 4$",
+            "$4 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "From the continuity equation for an incompressible fluid:\n$$A_A v_A = A_B v_B$$\n$$\\frac{v_A}{v_B} = \\frac{A_B}{A_A} = \\frac{1}{2}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A U-tube contains water and methylated spirit separated by mercury. In one arm, a $10.0\\text{ cm}$ column of water balances a $12.5\\text{ cm}$ column of spirit in the other arm with the mercury levels being identical in both limbs. The specific gravity of spirit is:",
+          "image": "",
+          "options": [
+            "$0.8$",
+            "$1.25$",
+            "$0.64$",
+            "$0.75$"
+          ],
+          "correctOption": 0,
+          "solution": "Equating hydrostatic pressure at the common mercury boundary level:\n$$P_0 + \\rho_w g h_w = P_0 + \\rho_s g h_s$$\n$$\\rho_w h_w = \\rho_s h_s \\implies \\frac{\\rho_s}{\\rho_w} = \\frac{h_w}{h_s} = \\frac{10.0\\text{ cm}}{12.5\\text{ cm}} = 0.8$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Two small spherical droplets of mercury of radii $r_1$ and $r_2$ coalesce under isothermal conditions to form a single spherical drop of radius $R$. If $T$ is the surface tension of mercury, the energy released in the process is:",
+          "image": "",
+          "options": [
+            "$4\\pi T (r_1^2 + r_2^2 - R^2)$",
+            "$4\\pi T (R^2 - r_1^2 - r_2^2)$",
+            "$2\\pi T (r_1^2 + r_2^2 - R^2)$",
+            "$8\\pi T (r_1^2 + r_2^2 - R^2)$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial surface energy of two separate drops:\n$$U_i = 4\\pi r_1^2 T + 4\\pi r_2^2 T = 4\\pi T (r_1^2 + r_2^2)$$\nFinal surface energy of the coalesced single drop:\n$$U_f = 4\\pi R^2 T$$\nEnergy released:\n$$\\Delta E = U_i - U_f = 4\\pi T (r_1^2 + r_2^2 - R^2)$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A metal plate of area $100\\text{ cm}^2$ rests on a $2\\text{ mm}$ thick layer of castor oil (viscosity coefficient $\\eta = 1.0\\text{ Pa}\\cdot\\text{s}$). The horizontal force required to move the plate with a uniform speed of $0.1\\text{ m/s}$ is:",
+          "image": "",
+          "options": [
+            "$0.5\\text{ N}$",
+            "$0.2\\text{ N}$",
+            "$1.0\\text{ N}$",
+            "$0.05\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "From Newton's law of viscosity:\n$$F = \\eta A \\frac{dv}{dy}$$\nGiven $A = 100\\text{ cm}^2 = 10^{-2}\\text{ m}^2$, $v = 0.1\\text{ m/s}$, and $y = 2\\text{ mm} = 2 \\times 10^{-3}\\text{ m}$:\n$$F = 1.0 \\times 10^{-2} \\times \\left(\\frac{0.1}{2 \\times 10^{-3}}\\right) = 1.0 \\times 10^{-2} \\times 50 = 0.5\\text{ N}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A hydraulic lift has two pistons of areas $A_1$ and $A_2$ ($A_2 > A_1$). If a force $F_1$ is applied on the smaller piston, the force $F_2$ supported by the larger piston satisfies:",
+          "image": "",
+          "options": [
+            "$F_2 = F_1 \\left(\\frac{A_2}{A_1}\\right)$",
+            "$F_2 = F_1 \\left(\\frac{A_1}{A_2}\\right)$",
+            "$F_2 = F_1 \\sqrt{\\frac{A_2}{A_1}}$",
+            "$F_2 = F_1$"
+          ],
+          "correctOption": 0,
+          "solution": "By Pascal's principle, pressure applied to an enclosed static fluid is transmitted undiminished:\n$$P_1 = P_2 \\implies \\frac{F_1}{A_1} = \\frac{F_2}{A_2} \\implies F_2 = F_1 \\left(\\frac{A_2}{A_1}\\right)$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Two spherical raindrops of radii $r$ and $2r$ fall through air under gravity. If both achieve their respective terminal velocities, the ratio of their terminal velocities is:",
+          "image": "",
+          "options": [
+            "$1 : 4$",
+            "$1 : 2$",
+            "$1 : 8$",
+            "$1 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Terminal velocity given by Stokes' Law is:\n$$v_t = \\frac{2 r^2 (\\rho - \\sigma) g}{9 \\eta}$$\nHence, $v_t \\propto r^2$.\n$$\\frac{v_{t1}}{v_{t2}} = \\left(\\frac{r}{2r}\\right)^2 = \\frac{1}{4}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A horizontal pipeline carries water in a streamline flow. At a point along the pipe where the cross-sectional area is $10\\text{ cm}^2$, the water velocity is $1\\text{ m/s}$ and the pressure is $2000\\text{ Pa}$. The pressure of water at another point where the cross-sectional area is $5\\text{ cm}^2$ is (density of water $\\rho = 1000\\text{ kg/m}^3$):",
+          "image": "",
+          "options": [
+            "$500\\text{ Pa}$",
+            "$1000\\text{ Pa}$",
+            "$1500\\text{ Pa}$",
+            "$2500\\text{ Pa}$"
+          ],
+          "correctOption": 0,
+          "solution": "By continuity equation: $A_1 v_1 = A_2 v_2 \\implies v_2 = v_1 \\left(\\frac{A_1}{A_2}\\right) = 1 \\times \\left(\\frac{10}{5}\\right) = 2\\text{ m/s}$.\nApplying Bernoulli's equation for horizontal flow:\n$$P_1 + \\frac{1}{2}\\rho v_1^2 = P_2 + \\frac{1}{2}\\rho v_2^2$$\n$$2000 + \\frac{1}{2}(1000)(1)^2 = P_2 + \\frac{1}{2}(1000)(2)^2$$\n$$2000 + 500 = P_2 + 2000 \\implies P_2 = 500\\text{ Pa}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A liquid wets a clean glass capillary tube completely. The angle of contact between the liquid and the glass surface is:",
+          "image": "",
+          "options": [
+            "$0^\\circ$",
+            "$90^\\circ$",
+            "$135^\\circ$",
+            "$180^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "When a liquid wets the solid surface completely (e.g., pure water on clean glass), the meniscus is hemispherical, and the tangent to the liquid surface lies along the wall, making the contact angle $\\theta = 0^\\circ$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] An air bubble of radius $1\\text{ mm}$ is located at a depth of $10\\text{ m}$ below the free surface of a water lake. If atmospheric pressure is $1.01 \\times 10^5\\text{ Pa}$, surface tension of water is $0.075\\text{ N/m}$ and $g = 10\\text{ m/s}^2$, the absolute pressure inside the bubble is:",
+          "image": "",
+          "options": [
+            "$2.0115 \\times 10^5\\text{ Pa}$",
+            "$2.0100 \\times 10^5\\text{ Pa}$",
+            "$1.0115 \\times 10^5\\text{ Pa}$",
+            "$3.0115 \\times 10^5\\text{ Pa}$"
+          ],
+          "correctOption": 0,
+          "solution": "Pressure in the liquid at depth $h$:\n$$P_L = P_0 + \\rho g h = 1.01 \\times 10^5 + (1000)(10)(10) = 1.01 \\times 10^5 + 1.00 \\times 10^5 = 2.01 \\times 10^5\\text{ Pa}$$\nAn air bubble inside water has only one liquid-air interface:\n$$\\Delta P = \\frac{2T}{R} = \\frac{2(0.075)}{10^{-3}} = 150\\text{ Pa}$$\n$$P_{\\text{inside}} = P_L + \\Delta P = 201000 + 150 = 201150\\text{ Pa} = 2.0115 \\times 10^5\\text{ Pa}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An open rectangular vessel containing a liquid accelerates horizontally with a constant acceleration $a$. The angle $\\theta$ that the liquid surface makes with the horizontal is given by:",
+          "image": "",
+          "options": [
+            "$\\tan\\theta = \\frac{a}{g}$",
+            "$\\tan\\theta = \\frac{g}{a}$",
+            "$\\sin\\theta = \\frac{a}{g}$",
+            "$\\cos\\theta = \\frac{a}{g}$"
+          ],
+          "correctOption": 0,
+          "solution": "In the accelerating frame of reference of the tank, an element of fluid on the surface experiences a downward gravitational force $mg$ and a horizontal pseudo-force $ma$ backwards.\nThe free liquid surface sets itself perpendicular to the effective gravity $\\vec{g}_{\\text{eff}} = \\vec{g} - \\vec{a}$:\n$$\\tan\\theta = \\frac{ma}{mg} = \\frac{a}{g}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A capillary tube of radius $r$ is immersed in water and water rises to a height $h$. The mass of water in the capillary tube is $m$. Another capillary tube of radius $2r$ is immersed in water. The mass of water that rises in this tube will be:",
+          "image": "",
+          "options": [
+            "$2m$",
+            "$m$",
+            "$m/2$",
+            "$4m$"
+          ],
+          "correctOption": 0,
+          "solution": "Height of water column: $h = \\frac{2T\\cos\\theta}{r \\rho g} \\implies h \\propto \\frac{1}{r}$.\nMass of water column:\n$$M = \\rho V = \\rho (\\pi r^2 h) = \\rho \\pi r^2 \\left(\\frac{2T\\cos\\theta}{r \\rho g}\\right) = \\frac{2\\pi r T\\cos\\theta}{g} \\propto r$$\nWhen radius is doubled ($2r$), the mass of water lifted is $2m$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The rate of steady laminar flow of a viscous liquid through a capillary tube of radius $r$ and length $L$ under pressure difference $P$ is $Q$. If the radius is reduced to $r/2$ and length is doubled, the flow rate under the same pressure difference becomes:",
+          "image": "",
+          "options": [
+            "$Q/32$",
+            "$Q/16$",
+            "$Q/8$",
+            "$Q/64$"
+          ],
+          "correctOption": 0,
+          "solution": "Poiseuille's equation for laminar volumetric flow rate is:\n$$Q = \\frac{\\pi P r^4}{8 \\eta L} \\propto \\frac{r^4}{L}$$\nFor $r' = r/2$ and $L' = 2L$:\n$$Q' = Q \\left(\\frac{r/2}{r}\\right)^4 \\left(\\frac{L}{2L}\\right) = Q \\left(\\frac{1}{16}\\right) \\left(\\frac{1}{2}\\right) = \\frac{Q}{32}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A flat plate is placed over an open wind tunnel. Air of density $\\rho$ blows over the upper surface with speed $v$, while the air below is stagnant. If the area of the plate is $A$, the upward dynamic lift force on the plate is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}\\rho v^2 A$",
+            "$\\rho v^2 A$",
+            "$2\\rho v^2 A$",
+            "$\\frac{1}{4}\\rho v^2 A$"
+          ],
+          "correctOption": 0,
+          "solution": "From Bernoulli's equation across upper and lower streamlines:\n$$P_{\\text{bottom}} = P_{\\text{top}} + \\frac{1}{2}\\rho v^2$$\n$$\\Delta P = P_{\\text{bottom}} - P_{\\text{top}} = \\frac{1}{2}\\rho v^2$$\nDynamic aerodynamic lift force:\n$$F = \\Delta P \\cdot A = \\frac{1}{2}\\rho v^2 A$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A solid block of wood floats in water with $60\\%$ of its volume submerged. When floated in an oil, $80\\%$ of its volume is submerged. The density of the oil is (density of water $= 1000\\text{ kg/m}^3$):",
+          "image": "",
+          "options": [
+            "$750\\text{ kg/m}^3$",
+            "$800\\text{ kg/m}^3$",
+            "$600\\text{ kg/m}^3$",
+            "$850\\text{ kg/m}^3$"
+          ],
+          "correctOption": 0,
+          "solution": "By the principle of floatation, the weight of the block equals the buoyant force:\n$$W = 0.60 V \\rho_w g = 0.80 V \\rho_{\\text{oil}} g$$\n$$\\rho_{\\text{oil}} = \\frac{0.60}{0.80} \\rho_w = \\frac{3}{4}(1000) = 750\\text{ kg/m}^3$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Two soap bubbles in vacuum having radii $r_1 = 3\\text{ cm}$ and $r_2 = 4\\text{ cm}$ coalesce isothermally into a single soap bubble of radius $R$. The radius $R$ is:",
+          "image": "",
+          "options": [
+            "$5\\text{ cm}$",
+            "$7\\text{ cm}$",
+            "$\\sqrt{7}\\text{ cm}$",
+            "$3.5\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Under isothermal conditions, total moles of gas is conserved: $P_1 V_1 + P_2 V_2 = P V$.\nIn vacuum, interior pressure is purely the excess pressure: $P = \\frac{4T}{r}$.\n$$\\left(\\frac{4T}{r_1}\\right)\\left(\\frac{4}{3}\\pi r_1^3\\right) + \\left(\\frac{4T}{r_2}\\right)\\left(\\frac{4}{3}\\pi r_2^3\\right) = \\left(\\frac{4T}{R}\\right)\\left(\\frac{4}{3}\\pi R^3\\right)$$\n$$r_1^2 + r_2^2 = R^2$$\n$$R = \\sqrt{r_1^2 + r_2^2} = \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5\\text{ cm}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A liquid of density $\\rho$ is filled in a vessel up to height $H$. A hole is made at depth $h$ below the surface. The distance from the bottom of the vessel to the hole so that the emergent jet covers the same horizontal range as that from depth $h$ is:",
+          "image": "",
+          "options": [
+            "$h$",
+            "$H - h$",
+            "$H/2$",
+            "$2h$"
+          ],
+          "correctOption": 0,
+          "solution": "Horizontal range for a hole at depth $y$ is $R = 2\\sqrt{y(H - y)}$.\nThis expression is symmetric under $y \\leftrightarrow (H - y)$.\nThus, an orifice at depth $y = H - h$ (which corresponds to height $h$ from the bottom) produces the exact same range as an orifice at depth $h$."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A soap bubble of radius $r = 2\\text{ cm}$ is blown inside a chamber. If the surface tension of soap solution is $0.03\\text{ N/m}$, find the excess pressure inside the bubble (in $\\text{N/m}^2$).",
+          "image": "",
+          "correctValue": 6.0,
+          "solution": "A soap bubble has two free surfaces, hence excess pressure is:\n$$\\Delta P = \\frac{4T}{r} = \\frac{4 \\times 0.03\\text{ N/m}}{2 \\times 10^{-2}\\text{ m}} = \\frac{0.12}{0.02} = 6.0\\text{ N/m}^2$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A large cylindrical open water storage tank has a small puncture hole of area $1\\text{ cm}^2$ near its base. If the water surface in the tank is maintained at a steady height of $5\\text{ m}$ above the puncture, find the volume rate of water flow (in litres/second) escaping from the puncture (take $g = 10\\text{ m/s}^2$).",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Efflux speed from Torricelli's Law:\n$$v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 5} = \\sqrt{100} = 10\\text{ m/s}$$\nArea of orifice $A = 1\\text{ cm}^2 = 10^{-4}\\text{ m}^2$.\nVolume flow rate:\n$$Q = A v = (10^{-4}\\text{ m}^2)(10\\text{ m/s}) = 10^{-3}\\text{ m}^3/\\text{s}$$\nSince $1\\text{ m}^3 = 1000\\text{ L}$, $Q = 10^{-3} \\times 1000 = 1.0\\text{ L/s}$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A capillary tube of bore radius $0.5\\text{ mm}$ is dipped vertically into water of surface tension $T = 0.075\\text{ N/m}$ and density $\\rho = 1000\\text{ kg/m}^3$. Assuming the contact angle is $0^\\circ$, find the height (in cm) to which water rises in the tube (take $g = 10\\text{ m/s}^2$).",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "Capillary rise formula:\n$$h = \\frac{2T\\cos\\theta}{r \\rho g}$$\nSubstitute $r = 0.5\\text{ mm} = 5 \\times 10^{-4}\\text{ m}$, $\\theta = 0^\\circ$ ($\\cos 0^\\circ = 1$):\n$$h = \\frac{2 \\times 0.075 \\times 1}{(5 \\times 10^{-4}) \\times 1000 \\times 10} = \\frac{0.15}{5} = 0.03\\text{ m} = 3.0\\text{ cm}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] A hydraulic press has an input cylinder of diameter $4\\text{ cm}$ and an output load cylinder of diameter $20\\text{ cm}$. A force of $60\\text{ N}$ is applied to the input piston. Find the force (in Newtons) exerted by the output piston.",
+          "image": "",
+          "correctValue": 1500.0,
+          "solution": "From Pascal's Law:\n$$\\frac{F_1}{A_1} = \\frac{F_2}{A_2} \\implies F_2 = F_1 \\left(\\frac{d_2}{d_1}\\right)^2$$\nGiven $F_1 = 60\\text{ N}$, $d_1 = 4\\text{ cm}$, $d_2 = 20\\text{ cm}$:\n$$F_2 = 60 \\times \\left(\\frac{20}{4}\\right)^2 = 60 \\times 5^2 = 60 \\times 25 = 1500.0\\text{ N}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A spherical lead shot of radius $1.0\\text{ mm}$ falls through a viscous oil column at a steady terminal velocity of $2.0\\text{ cm/s}$. Another lead shot of radius $2.0\\text{ mm}$ falls through the same oil. Find its terminal velocity (in cm/s).",
+          "image": "",
+          "correctValue": 8.0,
+          "solution": "According to Stokes' Law for terminal velocity in a fluid:\n$$v_t = \\frac{2 r^2 (\\rho - \\sigma) g}{9 \\eta} \\implies v_t \\propto r^2$$\n$$\\frac{v_{t2}}{v_{t1}} = \\left(\\frac{r_2}{r_1}\\right)^2 = \\left(\\frac{2.0}{1.0}\\right)^2 = 4$$\n$$v_{t2} = 4 \\times v_{t1} = 4 \\times 2.0 = 8.0\\text{ cm/s}$$"
+        }
+      ]
+    }
+  ]
+}
