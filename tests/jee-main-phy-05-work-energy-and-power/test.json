@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-05-work-energy-and-power",
+  "title": "Work, Energy and Power",
+  "syllabus": "Work done by a constant force and a variable force, kinetic energy, work-energy theorem, power; Notion of potential energy, potential energy of a spring, conservative and non-conservative forces, conservation of mechanical energy; Motion in a vertical circle, elastic and inelastic collisions in one and two dimensions",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A particle moves along the x-axis from $x = 0$ to $x = 5\\text{ m}$ under the influence of a force $F = (7 - 2x + 3x^2)\\text{ N}$. The work done in the process is:",
+          "image": "",
+          "options": [
+            "$135\\text{ J}$",
+            "$70\\text{ J}$",
+            "$270\\text{ J}$",
+            "$35\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "Work done by a variable force is $W = \\int_{x_1}^{x_2} F\\,dx$:\n$$W = \\int_0^5 (7 - 2x + 3x^2)\\,dx = \\left[ 7x - x^2 + x^3 \\right]_0^5$$\n$$W = 7(5) - (5)^2 + (5)^3 = 35 - 25 + 125 = 135\\text{ J}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A bullet of mass $m$ leaves a rifle barrel of length $L$ with speed $v$. Assuming the net expanding gas force on the bullet decreases linearly from $F_0$ at the breech to zero at the muzzle, the work done on the bullet inside the barrel is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2} F_0 L$",
+            "$F_0 L$",
+            "$\\frac{1}{4} F_0 L$",
+            "$\\frac{2}{3} F_0 L$"
+          ],
+          "correctOption": 0,
+          "solution": "The force varies linearly from $F(0) = F_0$ to $F(L) = 0$, giving $F(x) = F_0\\left(1 - \\frac{x}{L}\\right)$:\n$$W = \\int_0^L F_0\\left(1 - \\frac{x}{L}\\right)dx = F_0\\left[ x - \\frac{x^2}{2L} \\right]_0^L = F_0\\left(L - \\frac{L}{2}\\right) = \\frac{1}{2} F_0 L$$\nAlternatively, work is the area of the triangular $F-x$ graph: $\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} F_0 L$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A particle is released from rest from the top of a smooth sphere of radius $R$. The vertical height below the apex where the particle leaves contact with the sphere is:",
+          "image": "",
+          "options": [
+            "$\\frac{R}{3}$",
+            "$\\frac{R}{2}$",
+            "$\\frac{2R}{3}$",
+            "$\\frac{R}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the particle descend through angle $\\theta$ from the vertical apex.\nBy conservation of mechanical energy:\n$$mgR(1 - \\cos\\theta) = \\frac{1}{2}mv^2 \\implies v^2 = 2gR(1 - \\cos\\theta)$$\nRadial equation of motion:\n$$mg\\cos\\theta - N = \\frac{mv^2}{R}$$\nAt the point of separation, normal reaction $N = 0$:\n$$mg\\cos\\theta = \\frac{m}{R}[2gR(1 - \\cos\\theta)] = 2mg(1 - \\cos\\theta)$$\n$$\\cos\\theta = 2 - 2\\cos\\theta \\implies 3\\cos\\theta = 2 \\implies \\cos\\theta = \\frac{2}{3}$$\nVertical descent below the highest point: $h = R(1 - \\cos\\theta) = R\\left(1 - \\frac{2}{3}\\right) = \\frac{R}{3}$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An engine pumps water continuously through a hose with cross-sectional area $A$. If the speed of water exiting the nozzle is $v$ and its density is $\\rho$, the rate at which kinetic energy is imparted to the water is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}\\rho A v^3$",
+            "$\\rho A v^3$",
+            "$\\frac{1}{2}\\rho A v^2$",
+            "$\\rho A v^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Mass exiting per unit time is $\\frac{dm}{dt} = \\rho A v$.\nThe kinetic energy imparted per unit time is output power:\n$$P = \\frac{dK}{dt} = \\frac{1}{2} \\left(\\frac{dm}{dt}\\right) v^2 = \\frac{1}{2} (\\rho A v) v^2 = \\frac{1}{2}\\rho A v^3$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] A block of mass $m$ moving with speed $v$ collides elastically and head-on with an identical block initially at rest. After collision, the fraction of kinetic energy transferred to the stationary block is:",
+          "image": "",
+          "options": [
+            "1",
+            "$1/2$",
+            "$1/4$",
+            "$3/4$"
+          ],
+          "correctOption": 0,
+          "solution": "In a 1D elastic collision between two identical masses ($m_1 = m_2$), the bodies exchange their velocities completely.\nThe incoming mass comes to rest ($v_1' = 0$) and the target mass moves with the initial speed ($v_2' = v$).\nHence, $100\\%$ of the initial kinetic energy is transferred, corresponding to a fraction of 1."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The potential energy function of a particle in a conservative force field is given by $U(x) = \\frac{a}{x^2} - \\frac{b}{x}$, where $a$ and $b$ are positive constants. The equilibrium position and the binding energy at that position are respectively:",
+          "image": "",
+          "options": [
+            "$x_0 = \\frac{2a}{b}$ and $E_b = \\frac{b^2}{4a}$",
+            "$x_0 = \\frac{a}{b}$ and $E_b = \\frac{b^2}{2a}$",
+            "$x_0 = \\frac{2a}{b}$ and $E_b = \\frac{b^2}{2a}$",
+            "$x_0 = \\frac{a}{2b}$ and $E_b = \\frac{b^2}{4a}$"
+          ],
+          "correctOption": 0,
+          "solution": "Force $F = -\\frac{dU}{dx} = -\\left( -\\frac{2a}{x^3} + \\frac{b}{x^2} \\right) = \\frac{2a}{x^3} - \\frac{b}{x^2}$.\nFor equilibrium, $F = 0 \\implies \\frac{2a}{x^3} = \\frac{b}{x^2} \\implies x_0 = \\frac{2a}{b}$.\nPotential energy at this point:\n$$U(x_0) = \\frac{a}{(2a/b)^2} - \\frac{b}{(2a/b)} = \\frac{b^2}{4a} - \\frac{b^2}{2a} = -\\frac{b^2}{4a}$$\nBinding energy is the depth of the potential well: $E_b = -U(x_0) = \\frac{b^2}{4a}$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A block of mass $m$ is attached to a light spring of stiffness $k$ and held so that the spring is unstretched. If the block is suddenly released, the maximum elongation of the spring is:",
+          "image": "",
+          "options": [
+            "$\\frac{2mg}{k}$",
+            "$\\frac{mg}{k}$",
+            "$\\frac{mg}{2k}$",
+            "$\\frac{4mg}{k}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let maximum extension be $x_m$. At this point, the block momentarily comes to rest, so $\\Delta K = 0$.\nBy conservation of mechanical energy:\n$$\\Delta U_g + \\Delta U_s = 0 \\implies -mg x_m + \\frac{1}{2}k x_m^2 = 0$$\n$$x_m\\left(\\frac{1}{2}k x_m - mg\\right) = 0 \\implies x_m = \\frac{2mg}{k}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A body of mass $2\\text{ kg}$ is thrown vertically upwards with kinetic energy $490\\text{ J}$. If $g = 9.8\\text{ m/s}^2$, the height at which its kinetic energy reduces to half of its initial value is:",
+          "image": "",
+          "options": [
+            "$12.5\\text{ m}$",
+            "$25.0\\text{ m}$",
+            "$10.0\\text{ m}$",
+            "$50.0\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial mechanical energy $E = K_0 = 490\\text{ J}$.\nAt height $h$, $K = \\frac{K_0}{2} = 245\\text{ J}$.\nBy conservation of energy, loss in kinetic energy equals gain in potential energy:\n$$\\Delta U = mgh = \\frac{K_0}{2} = 245\\text{ J}$$\n$$h = \\frac{245}{mg} = \\frac{245}{2 \\times 9.8} = \\frac{245}{19.6} = 12.5\\text{ m}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A particle of mass $m$ executes complete vertical circular motion at the end of a light string of length $L$. The difference in tension between the lowest and highest points of the trajectory is:",
+          "image": "",
+          "options": [
+            "$6mg$",
+            "$4mg$",
+            "$2mg$",
+            "$3mg$"
+          ],
+          "correctOption": 0,
+          "solution": "At the lowest point: $T_L - mg = \\frac{m v_L^2}{L} \\implies T_L = mg + \\frac{m v_L^2}{L}$.\nAt the highest point: $T_H + mg = \\frac{m v_H^2}{L} \\implies T_H = \\frac{m v_H^2}{L} - mg$.\nFrom conservation of energy: $\\frac{1}{2}m v_L^2 = \\frac{1}{2}m v_H^2 + mg(2L) \\implies v_L^2 - v_H^2 = 4gL$.\n$$T_L - T_H = 2mg + \\frac{m(v_L^2 - v_H^2)}{L} = 2mg + \\frac{m(4gL)}{L} = 6mg$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A constant power $P$ is delivered to a car of mass $m$ starting from rest. The displacement of the car as a function of time $t$ is proportional to:",
+          "image": "",
+          "options": [
+            "$t^{3/2}$",
+            "$t^{1/2}$",
+            "$t^2$",
+            "$t^{5/2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Instantaneous power is $P = F v = m v \\frac{dv}{dt}$.\n$$v\\,dv = \\frac{P}{m} dt \\implies \\frac{v^2}{2} = \\frac{P}{m} t \\implies v = \\sqrt{\\frac{2P}{m}} t^{1/2}$$\nDisplacement $x = \\int v\\,dt = \\sqrt{\\frac{2P}{m}} \\int t^{1/2}\\,dt = \\frac{2}{3}\\sqrt{\\frac{2P}{m}} t^{3/2} \\propto t^{3/2}$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] A ball is dropped from a height $h$ on a horizontal floor. If the coefficient of restitution between the ball and the floor is $e$, the total distance travelled by the ball before coming to rest is:",
+          "image": "",
+          "options": [
+            "$h \\left(\\frac{1 + e^2}{1 - e^2}\\right)$",
+            "$h \\left(\\frac{1 - e^2}{1 + e^2}\\right)$",
+            "$h \\left(\\frac{1 + e}{1 - e}\\right)^2$",
+            "$h \\left(\\frac{2e^2}{1 - e^2}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial downward drop covers distance $h$.\nHeights after successive rebounds: $h_1 = e^2 h$, $h_2 = e^4 h, \\dots, h_n = e^{2n} h$.\nTotal distance traversed:\n$$H = h + 2h_1 + 2h_2 + \\dots = h + 2h(e^2 + e^4 + \\dots)$$\nSumming the infinite geometric series with ratio $e^2 < 1$:\n$$H = h + 2h\\left(\\frac{e^2}{1 - e^2}\\right) = h\\left(1 + \\frac{2e^2}{1 - e^2}\\right) = h\\left(\\frac{1 + e^2}{1 - e^2}\\right)$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force $\\vec{F} = (3\\hat{i} + 4\\hat{j})\\text{ N}$ acts on a body and displaces it by $\\vec{d} = (2\\hat{i} - 3\\hat{j})\\text{ m}$. The work done by the force is:",
+          "image": "",
+          "options": [
+            "$-6\\text{ J}$",
+            "$6\\text{ J}$",
+            "$18\\text{ J}$",
+            "$-18\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "Work done is the scalar dot product of force and displacement:\n$$W = \\vec{F} \\cdot \\vec{d} = (3)(2) + (4)(-3) = 6 - 12 = -6\\text{ J}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A particle of mass $m_1$ moving with velocity $v$ collides head-on elastically with another particle of mass $m_2$ at rest. The fractional loss of kinetic energy of $m_1$ is maximum when:",
+          "image": "",
+          "options": [
+            "$m_1 = m_2$",
+            "$m_1 \\gg m_2$",
+            "$m_1 \\ll m_2$",
+            "$m_1 = 2m_2$"
+          ],
+          "correctOption": 0,
+          "solution": "Velocity of $m_1$ after 1D elastic collision with stationary $m_2$ is $v_1' = \\left(\\frac{m_1 - m_2}{m_1 + m_2}\\right)v$.\nFractional kinetic energy retained by $m_1$ is $\\left(\\frac{m_1 - m_2}{m_1 + m_2}\\right)^2$.\nFractional energy lost by $m_1$ (transferred to $m_2$):\n$$\\Delta K / K_0 = 1 - \\left(\\frac{m_1 - m_2}{m_1 + m_2}\\right)^2 = \\frac{4m_1 m_2}{(m_1 + m_2)^2}$$\nThis value achieves its maximum possible value of 1 when $m_1 = m_2$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A body of mass $0.5\\text{ kg}$ travels in a straight line with velocity $v = k x^{3/2}$, where $k = 5\\text{ m}^{-1/2}\\text{s}^{-1}$. The work done by the net force during its displacement from $x = 0$ to $x = 2\\text{ m}$ is:",
+          "image": "",
+          "options": [
+            "$50\\text{ J}$",
+            "$25\\text{ J}$",
+            "$100\\text{ J}$",
+            "$12.5\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "By Work-Energy Theorem, $W = \\Delta K = \\frac{1}{2}m(v_f^2 - v_i^2)$.\nAt $x = 0$: $v_i = 0$.\nAt $x = 2\\text{ m}$: $v_f = 5(2)^{3/2} = 5\\sqrt{8} = 10\\sqrt{2}\\text{ m/s}$.\n$$v_f^2 = 200\\text{ m}^2/\\text{s}^2$$\n$$W = \\frac{1}{2}(0.5)(200 - 0) = \\frac{1}{4}(200) = 50\\text{ J}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A force $\\vec{F} = -k(y\\hat{i} + x\\hat{j})$ acts on a particle. The nature of this force field is:",
+          "image": "",
+          "options": [
+            "Conservative",
+            "Non-conservative",
+            "Central force",
+            "Frictional"
+          ],
+          "correctOption": 0,
+          "solution": "A 2D force field is conservative if $\\frac{\\partial F_x}{\\partial y} = \\frac{\\partial F_y}{\\partial x}$.\nHere, $F_x = -ky \\implies \\frac{\\partial F_x}{\\partial y} = -k$.\n$F_y = -kx \\implies \\frac{\\partial F_y}{\\partial x} = -k$.\nSince the cross partial derivatives are equal, $\\vec{\\nabla} \\times \\vec{F} = 0$, indicating that the force field is conservative ($U = kxy$)."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An electric motor produces a tension of $4500\\text{ N}$ in a hoisting cable and rolls it at a rate of $2\\text{ m/s}$. The output power of the motor is:",
+          "image": "",
+          "options": [
+            "$9\\text{ kW}$",
+            "$4.5\\text{ kW}$",
+            "$18\\text{ kW}$",
+            "$2.25\\text{ kW}$"
+          ],
+          "correctOption": 0,
+          "solution": "Output power is the product of tension and hoisting speed:\n$$P = T v = 4500\\text{ N} \\times 2\\text{ m/s} = 9000\\text{ W} = 9\\text{ kW}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A pendulum bob of mass $m$ is held horizontally and released from rest. The tension in the string when it reaches the lowest point is:",
+          "image": "",
+          "options": [
+            "$3mg$",
+            "$mg$",
+            "$2mg$",
+            "$5mg$"
+          ],
+          "correctOption": 0,
+          "solution": "By conservation of mechanical energy from horizontal to lowest position:\n$$mgL = \\frac{1}{2}mv^2 \\implies \\frac{mv^2}{L} = 2mg$$\nAt the lowest point, tension supports gravity and provides centripetal acceleration:\n$$T - mg = \\frac{mv^2}{L} \\implies T = mg + 2mg = 3mg$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Two springs $A$ and $B$ have stiffness constants $k_A$ and $k_B$ with $k_A = 2 k_B$. If both springs are stretched by applying the same tensile force $F$, the ratio of elastic potential energies stored $\\frac{U_A}{U_B}$ is:",
+          "image": "",
+          "options": [
+            "$1:2$",
+            "$2:1$",
+            "$1:4$",
+            "$4:1$"
+          ],
+          "correctOption": 0,
+          "solution": "Stored potential energy in terms of tensile force is $U = \\frac{F^2}{2k}$.\nFor equal applied force $F$:\n$$\\frac{U_A}{U_B} = \\frac{k_B}{k_A} = \\frac{k_B}{2k_B} = \\frac{1}{2}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A particle moves along a closed circular track under the action of a friction force of magnitude $f_k$. In one full revolution around the circle of radius $R$, the work done by the friction force is:",
+          "image": "",
+          "options": [
+            "$-2\\pi R f_k$",
+            "Zero",
+            "$2\\pi R f_k$",
+            "$-\\pi R f_k$"
+          ],
+          "correctOption": 0,
+          "solution": "Friction is a non-conservative path-dependent force that opposes the instantaneous velocity at every infinitesimal displacement $d\\vec{s}$:\n$$W = \\oint \\vec{f}_k \\cdot d\\vec{s} = -f_k \\oint ds = -f_k (2\\pi R) = -2\\pi R f_k$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A body of mass $M$ splits into two fragments of masses $m$ and $(M - m)$ by an internal explosion. If the total kinetic energy generated during the explosion is $E$, the kinetic energy acquired by mass $m$ is:",
+          "image": "",
+          "options": [
+            "$\\left(\\frac{M - m}{M}\\right)E$",
+            "$\\left(\\frac{m}{M}\\right)E$",
+            "$\\left(\\frac{M}{M - m}\\right)E$",
+            "$\\frac{1}{2}E$"
+          ],
+          "correctOption": 0,
+          "solution": "From conservation of linear momentum starting from rest:\n$$|p_1| = |p_2| = p$$\nKinetic energies: $K_1 = \\frac{p^2}{2m}$ and $K_2 = \\frac{p^2}{2(M - m)}$.\nTotal energy: $E = K_1 + K_2 = \\frac{p^2}{2}\\left( \\frac{1}{m} + \\frac{1}{M - m} \\right) = \\frac{p^2}{2}\\left( \\frac{M}{m(M - m)} \\right)$.\n$$K_1 = \\frac{p^2}{2m} = E \\left( \\frac{m(M - m)}{M} \\right) \\frac{1}{m} = \\left( \\frac{M - m}{M} \\right)E$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A block of mass $m = 1\\text{ kg}$ is dropped from a height $h = 0.4\\text{ m}$ above the free top end of a vertical light spring of force constant $k = 400\\text{ N/m}$. Find the maximum compression (in meters) produced in the spring (take $g = 10\\text{ m/s}^2$).",
+          "image": "",
+          "correctValue": 0.2,
+          "solution": "Let maximum compression be $x$.\nBy conservation of mechanical energy between the release point and maximum compression:\n$$mg(h + x) = \\frac{1}{2}k x^2$$\n$$(1)(10)(0.4 + x) = \\frac{1}{2}(400) x^2$$\n$$4 + 10x = 200x^2 \\implies 200x^2 - 10x - 4 = 0 \\implies 100x^2 - 5x - 2 = 0$$\n$$(20x + 5)(5x - 2) = 0 \\implies x = \\frac{2}{5} = 0.2\\text{ m}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A block of mass $2\\text{ kg}$ initially at rest is pulled along a smooth horizontal surface by a constant horizontal force of $6\\text{ N}$. Find the instantaneous power (in Watts) delivered by the force at $t = 4\\text{ s}$.",
+          "image": "",
+          "correctValue": 72.0,
+          "solution": "Acceleration of the block:\n$$a = \\frac{F}{m} = \\frac{6}{2} = 3\\text{ m/s}^2$$\nVelocity at $t = 4\\text{ s}$:\n$$v = at = 3 \\times 4 = 12\\text{ m/s}$$\nInstantaneous power:\n$$P = F v = 6\\text{ N} \\times 12\\text{ m/s} = 72.0\\text{ W}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A ball is dropped from a height $h = 20\\text{ m}$ onto a hard horizontal ground. If the coefficient of restitution is $e = 0.5$, find the maximum height (in meters) reached by the ball after its second bounce (take $g = 10\\text{ m/s}^2$).",
+          "image": "",
+          "correctValue": 1.25,
+          "solution": "Rebound height after $n$ collisions is given by $h_n = e^{2n} h$.\nFor the second bounce ($n = 2$):\n$$h_2 = e^4 h = (0.5)^4 \\times 20 = \\frac{1}{16} \\times 20 = \\frac{5}{4} = 1.25\\text{ m}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] A particle moves in the $xy$-plane under a force $\\vec{F} = (2x\\hat{i} + 3y^2\\hat{j})\\text{ N}$. Find the work done (in Joules) by this force in moving the particle from the origin $(0, 0)$ to the position $(3\\text{ m}, 2\\text{ m})$.",
+          "image": "",
+          "correctValue": 17.0,
+          "solution": "Work done along the path:\n$$W = \\int_{(0,0)}^{(3,2)} \\vec{F} \\cdot d\\vec{r} = \\int_0^3 2x\\,dx + \\int_0^2 3y^2\\,dy$$\n$$W = \\left[ x^2 \\right]_0^3 + \\left[ y^3 \\right]_0^2 = (3^2 - 0) + (2^3 - 0) = 9 + 8 = 17.0\\text{ J}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A small bob of mass $m = 0.2\\text{ kg}$ is tied to an inextensible light string of length $L = 1.0\\text{ m}$ to form a vertical pendulum. Find the minimum horizontal speed (in $\\text{m/s}$) that must be imparted to the bob at its lowest point to loop a complete vertical circle (take $g = 10\\text{ m/s}^2$, express answer to two decimal places).",
+          "image": "",
+          "correctValue": 7.07,
+          "solution": "Minimum speed required at the bottom to complete a full vertical circle:\n$$v_{\\min} = \\sqrt{5gL} = \\sqrt{5 \\times 10 \\times 1.0} = \\sqrt{50} = 5\\sqrt{2}\\text{ m/s}$$\n$$v_{\\min} \\approx 5 \\times 1.4142 = 7.07\\text{ m/s}$$"
+        }
+      ]
+    }
+  ]
+}
