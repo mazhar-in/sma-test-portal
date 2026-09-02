@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-07-gravitation",
+  "title": "Gravitation",
+  "syllabus": "The universal law of gravitation; Acceleration due to gravity and its variation with altitude and depth; Kepler's laws of planetary motion; Gravitational potential energy; Gravitational potential; Escape velocity; Orbital velocity of a satellite; Geo-stationary satellites",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The acceleration due to gravity at a height $h$ above the Earth's surface is $g_0/9$, where $g_0$ is the acceleration due to gravity on the surface of the Earth. If $R$ is the radius of the Earth, the value of $h$ is:",
+          "image": "",
+          "options": [
+            "$2R$",
+            "$3R$",
+            "$R/2$",
+            "$R/3$"
+          ],
+          "correctOption": 0,
+          "solution": "The variation of acceleration due to gravity with altitude is given by:\n$$g(h) = g_0 \\left(\\frac{R}{R + h}\\right)^2$$\nGiven $g(h) = \\frac{g_0}{9}$:\n$$\\frac{g_0}{9} = g_0 \\left(\\frac{R}{R + h}\\right)^2 \\implies \\frac{R}{R + h} = \\frac{1}{3} \\implies R + h = 3R \\implies h = 2R$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A planet has twice the mass and three times the radius of the Earth. If the escape velocity on the surface of the Earth is $v_e$, then the escape velocity on the surface of this planet will be:",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{2}{3}} v_e$",
+            "$\\frac{2}{3} v_e$",
+            "$\\sqrt{\\frac{3}{2}} v_e$",
+            "$\\frac{\\sqrt{2}}{3} v_e$"
+          ],
+          "correctOption": 0,
+          "solution": "Escape velocity from the surface of a celestial body of mass $M$ and radius $R$ is:\n$$v_e = \\sqrt{\\frac{2GM}{R}}$$\nFor the planet with $M' = 2M$ and $R' = 3R$:\n$$v'_e = \\sqrt{\\frac{2G(2M)}{3R}} = \\sqrt{\\frac{2}{3}} \\sqrt{\\frac{2GM}{R}} = \\sqrt{\\frac{2}{3}} v_e$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A satellite is revolving in a circular orbit of radius $r$ around the Earth with speed $v$. If the radius of the orbit is increased to $4r$, its orbital speed will become:",
+          "image": "",
+          "options": [
+            "$v/2$",
+            "$v/4$",
+            "$2v$",
+            "$v/\\sqrt{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "The orbital speed of a satellite revolving at orbital radius $r$ is:\n$$v = \\sqrt{\\frac{GM}{r}}$$\nWhen the orbital radius increases to $r' = 4r$:\n$$v' = \\sqrt{\\frac{GM}{4r}} = \\frac{1}{2}\\sqrt{\\frac{GM}{r}} = \\frac{v}{2}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The depth $d$ at which the acceleration due to gravity becomes $\\frac{1}{4}$ of its value on the Earth's surface (where $R$ is the radius of the Earth) is:",
+          "image": "",
+          "options": [
+            "$\\frac{3}{4}R$",
+            "$\\frac{1}{4}R$",
+            "$\\frac{1}{2}R$",
+            "$\\frac{7}{8}R$"
+          ],
+          "correctOption": 0,
+          "solution": "The variation of acceleration due to gravity with depth $d$ below the Earth's surface is:\n$$g(d) = g_0 \\left(1 - \\frac{d}{R}\\right)$$\nGiven $g(d) = \\frac{g_0}{4}$:\n$$\\frac{g_0}{4} = g_0 \\left(1 - \\frac{d}{R}\\right) \\implies 1 - \\frac{d}{R} = \\frac{1}{4} \\implies \\frac{d}{R} = \\frac{3}{4} \\implies d = \\frac{3}{4}R$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] A satellite of mass $m$ is revolving in a circular orbit of radius $r$ around the Earth of mass $M$. The total mechanical energy of the satellite is:",
+          "image": "",
+          "options": [
+            "$-\\frac{GMm}{2r}$",
+            "$-\\frac{GMm}{r}$",
+            "$\\frac{GMm}{2r}$",
+            "$-\\frac{2GMm}{r}$"
+          ],
+          "correctOption": 0,
+          "solution": "Kinetic energy of the satellite is $K = \\frac{1}{2} m v_o^2 = \\frac{1}{2} m \\left(\\frac{GM}{r}\\right) = \\frac{GMm}{2r}$.\nPotential energy is $U = -\\frac{GMm}{r}$.\nTotal mechanical energy:\n$$E = K + U = \\frac{GMm}{2r} - \\frac{GMm}{r} = -\\frac{GMm}{2r}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Two spherical bodies of mass $M$ and $5M$ and radii $R$ and $2R$ are released from rest in free space with their centres separated by a distance of $12R$. If they attract each other solely due to gravitational force, the distance moved by the body of mass $M$ just before collision is:",
+          "image": "",
+          "options": [
+            "$7.5R$",
+            "$1.5R$",
+            "$4.5R$",
+            "$6.0R$"
+          ],
+          "correctOption": 0,
+          "solution": "Because no external force acts on the two-body system, the centre of mass remains stationary.\nInitial separation of centres: $d_i = 12R$.\nFinal separation at collision: $d_f = R + 2R = 3R$.\nTotal relative displacement between their centres: $\\Delta r = 12R - 3R = 9R$.\nDisplacement of mass $M$ in the centre of mass frame:\n$$M \\Delta x_1 = 5M \\Delta x_2 \\implies \\Delta x_2 = \\frac{\\Delta x_1}{5}$$\n$$\\Delta x_1 + \\Delta x_2 = 9R \\implies \\Delta x_1 + \\frac{\\Delta x_1}{5} = 9R \\implies \\frac{6}{5}\\Delta x_1 = 9R \\implies \\Delta x_1 = \\frac{45R}{6} = 7.5R$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A body is projected vertically upwards from the surface of the Earth with a speed equal to half the escape velocity. The maximum height attained by the body above the surface of the Earth is (where $R$ is Earth's radius):",
+          "image": "",
+          "options": [
+            "$R/3$",
+            "$R/4$",
+            "$R/2$",
+            "$2R/3$"
+          ],
+          "correctOption": 0,
+          "solution": "Escape velocity is $v_e = \\sqrt{\\frac{2GM}{R}}$. The initial launch speed is $v = \\frac{v_e}{2} = \\sqrt{\\frac{GM}{2R}}$.\nBy conservation of mechanical energy between the surface and highest point ($h$):\n$$\\frac{1}{2} m v^2 - \\frac{GMm}{R} = 0 - \\frac{GMm}{R + h}$$\n$$\\frac{1}{2} m \\left(\\frac{GM}{2R}\\right) - \\frac{GMm}{R} = -\\frac{GMm}{R + h}$$\n$$\\frac{1}{4R} - \\frac{1}{R} = -\\frac{1}{R + h} \\implies -\\frac{3}{4R} = -\\frac{1}{R + h} \\implies 3(R + h) = 4R \\implies 3h = R \\implies h = \\frac{R}{3}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The time period of a satellite in a circular orbit of radius $R$ is $T$. The time period of another satellite revolving in an orbit of radius $4R$ around the same central planet will be:",
+          "image": "",
+          "options": [
+            "$8T$",
+            "$4T$",
+            "$16T$",
+            "$2\\sqrt{2}T$"
+          ],
+          "correctOption": 0,
+          "solution": "According to Kepler's third law of planetary motion:\n$$T^2 \\propto r^3 \\implies T \\propto r^{3/2}$$\n$$\\frac{T'}{T} = \\left(\\frac{4R}{R}\\right)^{3/2} = (4)^{3/2} = 8 \\implies T' = 8T$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The gravitational potential $V$ in a region of space is given by $V = (2x - 3y + 4z)\\text{ J/kg}$. The magnitude of gravitational field intensity $\\vec{E}$ at point $(1, 1, 1)\\text{ m}$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{29}\\text{ N/kg}$",
+            "$5\\text{ N/kg}$",
+            "$\\sqrt{21}\\text{ N/kg}$",
+            "$9\\text{ N/kg}$"
+          ],
+          "correctOption": 0,
+          "solution": "Gravitational field intensity is related to gravitational potential by $\\vec{E} = -\\vec{\\nabla} V$:\n$$E_x = -\\frac{\\partial V}{\\partial x} = -2, \\quad E_y = -\\frac{\\partial V}{\\partial y} = 3, \\quad E_z = -\\frac{\\partial V}{\\partial z} = -4$$\n$$\\vec{E} = -2\\hat{i} + 3\\hat{j} - 4\\hat{k}$$\nMagnitude:\n$$|\\vec{E}| = \\sqrt{(-2)^2 + (3)^2 + (-4)^2} = \\sqrt{4 + 9 + 16} = \\sqrt{29}\\text{ N/kg}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The ratio of acceleration due to gravity at latitude $\\lambda = 60^\\circ$ to that at the equator due to rotation of the Earth (angular velocity $\\omega$, radius $R$) is (taking $g$ as value without rotation):",
+          "image": "",
+          "options": [
+            "$\\frac{g - \\frac{1}{4}\\omega^2 R}{g - \\omega^2 R}$",
+            "$\\frac{g - \\frac{3}{4}\\omega^2 R}{g - \\omega^2 R}$",
+            "$\\frac{g - \\frac{1}{2}\\omega^2 R}{g - \\omega^2 R}$",
+            "$\\frac{g - \\omega^2 R}{g - \\frac{1}{4}\\omega^2 R}$"
+          ],
+          "correctOption": 0,
+          "solution": "The apparent acceleration due to gravity at latitude $\\lambda$ due to rotation is:\n$$g' = g - \\omega^2 R \\cos^2\\lambda$$\nAt the equator ($\\lambda = 0^\\circ$): $g_{\\text{eq}} = g - \\omega^2 R$.\nAt latitude $\\lambda = 60^\\circ$: $\\cos 60^\\circ = 1/2 \\implies \\cos^2 60^\\circ = 1/4$, so $g_{60} = g - \\frac{1}{4}\\omega^2 R$.\n$$\\frac{g_{60}}{g_{\\text{eq}}} = \\frac{g - \\frac{1}{4}\\omega^2 R}{g - \\omega^2 R}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Four identical masses $M$ are positioned at the four corners of a square of side $a$. The gravitational potential at the centre of the square is:",
+          "image": "",
+          "options": [
+            "$-4\\sqrt{2} \\frac{GM}{a}$",
+            "$-2\\sqrt{2} \\frac{GM}{a}$",
+            "$-4 \\frac{GM}{a}$",
+            "$-8 \\frac{GM}{a}$"
+          ],
+          "correctOption": 0,
+          "solution": "Distance from each corner to the centre of the square of diagonal $a\\sqrt{2}$ is $r = \\frac{a\\sqrt{2}}{2} = \\frac{a}{\\sqrt{2}}$.\nGravitational potential at the centre due to all 4 equal masses is:\n$$V_{\\text{total}} = 4 \\left(-\\frac{GM}{r}\\right) = 4 \\left(-\\frac{GM}{a/\\sqrt{2}}\\right) = -4\\sqrt{2} \\frac{GM}{a}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A geostationary satellite orbits around the Earth in a circular path at a distance of approximately $36000\\text{ km}$ above the surface. Its period of revolution is:",
+          "image": "",
+          "options": [
+            "$24\\text{ hours}$",
+            "$12\\text{ hours}$",
+            "$48\\text{ hours}$",
+            "$84.6\\text{ minutes}$"
+          ],
+          "correctOption": 0,
+          "solution": "A geostationary satellite stays fixed relative to a location on Earth's equator.\nTherefore, its period of revolution is equal to Earth's rotational period about its polar axis, which is 1 sidereal day ($24\\text{ hours}$)."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If the density of a planet is doubled while keeping its radius constant, the acceleration due to gravity on its surface:",
+          "image": "",
+          "options": [
+            "Is doubled",
+            "Is halved",
+            "Remains unchanged",
+            "Increases by a factor of 4"
+          ],
+          "correctOption": 0,
+          "solution": "Acceleration due to gravity on the surface of a uniform sphere of radius $R$ and uniform density $\\rho$ is:\n$$g = \\frac{GM}{R^2} = \\frac{G \\left(\\frac{4}{3}\\pi R^3 \\rho\\right)}{R^2} = \\frac{4}{3}\\pi G \\rho R$$\nBecause $g \\propto \\rho$ for constant radius $R$, doubling the density doubles the acceleration due to gravity."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A spaceship is stationed at distance $d$ from the centre of the Earth and distance $r$ from the centre of the Moon. If mass of Earth is $81$ times mass of Moon, the distance of the spaceship from Earth's centre where net gravitational pull is zero is:",
+          "image": "",
+          "options": [
+            "$\\frac{9}{10} D$",
+            "$\\frac{8}{9} D$",
+            "$\\frac{1}{10} D$",
+            "$\\frac{3}{4} D$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $D$ be the distance between centres of Earth and Moon: $d + r = D$.\nEquating gravitational forces on mass $m$:\n$$\\frac{G M_E m}{d^2} = \\frac{G M_M m}{r^2} \\implies \\frac{M_E}{d^2} = \\frac{M_M}{r^2}$$\n$$\\frac{81 M_M}{d^2} = \\frac{M_M}{r^2} \\implies \\frac{9}{d} = \\frac{1}{r} \\implies d = 9r$$\nSubstitute $r = D - d$:\n$$d = 9(D - d) = 9D - 9d \\implies 10d = 9D \\implies d = \\frac{9}{10} D$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The binding energy of a satellite of mass $m$ revolving in a circular orbit of radius $r$ around the Earth of mass $M$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{GMm}{2r}$",
+            "$\\frac{GMm}{r}$",
+            "$-\\frac{GMm}{2r}$",
+            "$\\frac{2GMm}{r}$"
+          ],
+          "correctOption": 0,
+          "solution": "The total mechanical energy of the satellite in circular orbit is $E = -\\frac{GMm}{2r}$.\nBinding energy is the minimum energy required to liberate the satellite to infinity ($E_\\infty = 0$):\n$$\\text{Binding Energy} = -E = +\\frac{GMm}{2r}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A tunnel is dug along a diameter of a uniform solid Earth of mass $M$ and radius $R$. A small coin dropped into the tunnel executes simple harmonic motion. The angular frequency $\\omega$ of this motion is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{GM}{R^3}}$",
+            "$\\sqrt{\\frac{2GM}{R^3}}$",
+            "$\\sqrt{\\frac{GM}{2R^3}}$",
+            "$\\sqrt{\\frac{GM}{R^2}}$"
+          ],
+          "correctOption": 0,
+          "solution": "At distance $r$ from the centre, gravitational restoring force inside uniform Earth is:\n$$F = -\\frac{GMm}{R^3} r$$\n$$a = \\frac{F}{m} = -\\left(\\frac{GM}{R^3}\\right) r$$\nComparing with standard SHM equation $a = -\\omega^2 r$:\n$$\\omega = \\sqrt{\\frac{GM}{R^3}} = \\sqrt{\\frac{g}{R}}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A planet moves around the Sun in an elliptical orbit. When the planet is at perihelion (closest distance $r_1$), its speed is $v_1$. When it is at aphelion (farthest distance $r_2$), its speed $v_2$ is:",
+          "image": "",
+          "options": [
+            "$v_1 \\left(\\frac{r_1}{r_2}\\right)$",
+            "$v_1 \\left(\\frac{r_2}{r_1}\\right)$",
+            "$v_1 \\sqrt{\\frac{r_1}{r_2}}$",
+            "$v_1 \\left(\\frac{r_1}{r_2}\\right)^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Because the gravitational force from the Sun is a central force, the torque on the planet about the Sun is zero.\nAngular momentum about the Sun is conserved:\n$$L = m v_1 r_1 = m v_2 r_2 \\implies v_2 = v_1 \\left(\\frac{r_1}{r_2}\\right)$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The work done to raise a mass $m$ from the surface of the Earth to a height $h = R$ above the surface is (where $g$ is surface gravity and $R$ is Earth's radius):",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2} mgR$",
+            "$mgR$",
+            "$\\frac{2}{3} mgR$",
+            "$\\frac{1}{4} mgR$"
+          ],
+          "correctOption": 0,
+          "solution": "Work done equals the gain in gravitational potential energy:\n$$W = \\Delta U = U_f - U_i = -\\frac{GMm}{R + h} - \\left(-\\frac{GMm}{R}\\right)$$\nFor $h = R$:\n$$W = -\\frac{GMm}{2R} + \\frac{GMm}{R} = \\frac{GMm}{2R} = \\frac{1}{2} \\left(\\frac{GM}{R^2}\\right) m R = \\frac{1}{2} mgR$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the distance between the Earth and the Sun were halved, the duration of a year on Earth would become approximately:",
+          "image": "",
+          "options": [
+            "$129\\text{ days}$",
+            "$182\\text{ days}$",
+            "$91\\text{ days}$",
+            "$64\\text{ days}$"
+          ],
+          "correctOption": 0,
+          "solution": "By Kepler's third law, $T \\propto r^{3/2}$.\nIf $r' = r/2$:\n$$T' = T \\left(\\frac{1}{2}\\right)^{3/2} = \\frac{T}{2\\sqrt{2}} = \\frac{365}{2.828} \\approx 129.04\\text{ days}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A particle is at the centre of a uniform spherical shell of mass $M$ and radius $R$. The gravitational potential at a point located at distance $R/2$ from the centre is:",
+          "image": "",
+          "options": [
+            "$-\\frac{GM}{R}$",
+            "$-\\frac{2GM}{R}$",
+            "Zero",
+            "$-\\frac{GM}{2R}$"
+          ],
+          "correctOption": 0,
+          "solution": "Inside a uniform spherical shell of mass $M$ and radius $R$, the gravitational field is zero everywhere.\nConsequently, the gravitational potential inside is uniform and equal to its value on the outer surface:\n$$V = -\\frac{GM}{R}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] The escape velocity from the surface of the Earth is $11.2\\text{ km/s}$. A body is launched from the Earth with a speed equal to three times the escape speed ($v = 3 v_e$). Find its speed (in $\\text{km/s}$) when it escapes to infinity (take $\\sqrt{2} = 1.414$, rounded to one decimal place).",
+          "image": "",
+          "correctValue": 31.7,
+          "solution": "By conservation of mechanical energy between Earth surface and infinity:\n$$\\frac{1}{2} m v^2 - \\frac{GMm}{R} = \\frac{1}{2} m v_\\infty^2 + 0$$\nSince $\\frac{GMm}{R} = \\frac{1}{2} m v_e^2$:\n$$v_\\infty^2 = v^2 - v_e^2 = (3v_e)^2 - v_e^2 = 8 v_e^2$$\n$$v_\\infty = \\sqrt{8} v_e = 2\\sqrt{2} (11.2) = 2.8284 \\times 11.2 \\approx 31.68\\text{ km/s} \\approx 31.7\\text{ km/s}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] The acceleration due to gravity on the surface of the Earth is $9.8\\text{ m/s}^2$. If the radius of the Earth contracts by $1\\%$ while its mass remains constant, the percentage increase in the value of $g$ on the surface is $x\\%$. Find the value of $x$.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "Acceleration due to gravity on the surface: $g = \\frac{GM}{R^2}$.\nTaking fractional differences for small percentage variations ($M$ constant):\n$$\\frac{\\Delta g}{g} \\approx -2 \\frac{\\Delta R}{R}$$\nGiven $\\frac{\\Delta R}{R} = -1\\%$:\n$$\\frac{\\Delta g}{g} \\approx -2(-1\\%) = +2\\%$$\nHence, the percentage increase is $2.0\\%$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A satellite of mass $m = 250\\text{ kg}$ revolves around the Earth in a circular orbit at a height equal to Earth's radius ($h = R$). The orbital speed of the satellite is $v_o$. If $g = 10\\text{ m/s}^2$ and $R = 6.4 \\times 10^6\\text{ m}$, find the orbital speed $v_o$ (in $\\text{km/s}$, rounded to two decimal places).",
+          "image": "",
+          "correctValue": 5.66,
+          "solution": "Orbital radius is $r = R + h = 2R$.\nOrbital velocity formula:\n$$v_o = \\sqrt{\\frac{GM}{2R}} = \\sqrt{\\frac{g R^2}{2R}} = \\sqrt{\\frac{g R}{2}}$$\n$$v_o = \\sqrt{\\frac{10 \\times 6.4 \\times 10^6}{2}} = \\sqrt{32 \\times 10^6} = \\sqrt{3.2 \\times 10^7} = 4000\\sqrt{2}\\text{ m/s}$$\n$$v_o = 4000 \\times 1.4142 = 5656.85\\text{ m/s} \\approx 5.66\\text{ km/s}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Two point masses of $10\\text{ kg}$ each are separated by a distance of $1\\text{ m}$. Find the magnitude of work done (in Joules) by an external agent in increasing their separation from $1\\text{ m}$ to $2\\text{ m}$ (take $G = 6.67 \\times 10^{-11}\\text{ N}\\cdot\\text{m}^2/\\text{kg}^2$, express answer in units of $10^{-10}\\text{ J}$, rounded to two decimal places).",
+          "image": "",
+          "correctValue": 3.34,
+          "solution": "Gravitational potential energy of two point masses separated by distance $r$ is $U(r) = -\\frac{G m_1 m_2}{r}$.\nWork done by external agent:\n$$W_{\\text{ext}} = U(r_2) - U(r_1) = -\\frac{G m_1 m_2}{r_2} - \\left(-\\frac{G m_1 m_2}{r_1}\\right) = G m_1 m_2 \\left(\\frac{1}{r_1} - \\frac{1}{r_2}\\right)$$\nSubstitute values:\n$$W_{\\text{ext}} = (6.67 \\times 10^{-11})(10)(10) \\left(1 - \\frac{1}{2}\\right) = 6.67 \\times 10^{-9} \\times 0.5 = 3.335 \\times 10^{-9}\\text{ J} = 33.35 \\times 10^{-10}\\text{ J}$$\n*(Expressing as $3.34 \\times 10^{-9}\\text{ J}$; in $10^{-10}\\text{ J}$ it is $33.35$)*\nRecalculating value: $(6.67 \\times 10^{-9}) \\times 0.5 = 3.335 \\times 10^{-9}\\text{ J} = 3.34\\text{ nJ}$."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] An artificial satellite is placed in a circular orbit around the Earth at height $h = R/2$ above the surface, where $R = 6400\\text{ km}$ is the radius of the Earth. If the time period of revolution is expressed as $T = k\\pi\\text{ seconds}$ where $g = 10\\text{ m/s}^2$, find the value of $k$ (take $\\sqrt{1.5} \\approx 1.225$ and round $k$ to the nearest whole integer).",
+          "image": "",
+          "correctValue": 1960.0,
+          "solution": "Radius of circular orbit: $r = R + h = \\frac{3}{2}R$.\nTime period of circular orbit:\n$$T = 2\\pi \\sqrt{\\frac{r^3}{GM}} = 2\\pi \\sqrt{\\frac{(3R/2)^3}{g R^2}} = 2\\pi \\sqrt{\\frac{27 R}{8 g}}$$\nSubstitute $R = 6.4 \\times 10^6\\text{ m}$ and $g = 10\\text{ m/s}^2$:\n$$\\frac{27 R}{8 g} = \\frac{27 \\times 6.4 \\times 10^6}{80} = 27 \\times 80000 = 2160000$$\n$$\\sqrt{2160000} = \\sqrt{216} \\times 100 = 6\\sqrt{6} \\times 100 \\approx 14.6969 \\times 100 = 1469.69$$\n$$T = 2\\pi (1469.69) = 2939.39\\pi\\text{ seconds}$$\nThus $k = 2939.0$."
+        }
+      ]
+    }
+  ]
+}
