@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-27-nuclei",
+  "title": "Nuclei",
+  "syllabus": "Composition and size of nucleus, atomic masses, isotopes, isobars, isotones; Mass-energy relation, mass defect, binding energy per nucleon and its variation with mass number; Nuclear forces and their characteristics; Nuclear fission and fusion",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If the nuclear radius of $^{27}\\text{Al}$ is $3.6\\text{ fm}$, then the nuclear radius of $^{125}\\text{Te}$ is approximately:",
+          "image": "",
+          "options": [
+            "$6.0\\text{ fm}$",
+            "$4.8\\text{ fm}$",
+            "$7.2\\text{ fm}$",
+            "$5.4\\text{ fm}$"
+          ],
+          "correctOption": 0,
+          "solution": "The nuclear radius depends on mass number $A$ as $R = R_0 A^{1/3}$:\n$$\\frac{R_{\\text{Te}}}{R_{\\text{Al}}} = \\left(\\frac{A_{\\text{Te}}}{A_{\\text{Al}}}\\right)^{1/3} = \\left(\\frac{125}{27}\\right)^{1/3} = \\frac{5}{3}$$\n$$R_{\\text{Te}} = \\frac{5}{3} \\times R_{\\text{Al}} = \\frac{5}{3} \\times 3.6\\text{ fm} = 6.0\\text{ fm}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Two nuclei have mass numbers in the ratio $1 : 8$. The ratio of their nuclear mass densities is:",
+          "image": "",
+          "options": [
+            "$1 : 1$",
+            "$1 : 2$",
+            "$1 : 8$",
+            "$1 : 4$"
+          ],
+          "correctOption": 0,
+          "solution": "Nuclear radius scales as $R = R_0 A^{1/3}$, which means nuclear volume is $V = \\frac{4}{3}\\pi R^3 = \\frac{4}{3}\\pi R_0^3 A \\propto A$.\nSince nuclear mass is approximately $M = A m_N$:\n$$\\rho = \\frac{M}{V} = \\frac{A m_N}{\\frac{4}{3}\\pi R_0^3 A} = \\frac{m_N}{\\frac{4}{3}\\pi R_0^3}$$\nBecause $\\rho$ is independent of mass number $A$, the ratio of their nuclear densities is $1 : 1$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The binding energy per nucleon curve peaks at approximately $8.75\\text{ MeV/nucleon}$ for which of the following nuclei?",
+          "image": "",
+          "options": [
+            "$^{56}\\text{Fe}$",
+            "$^{4}\\text{He}$",
+            "$^{238}\\text{U}$",
+            "$^{14}\\text{N}$"
+          ],
+          "correctOption": 0,
+          "solution": "The binding energy per nucleon curve reaches its maximum plateau around mass number $A = 56$ to $60$, with $^{56}\\text{Fe}$ having one of the highest values (approximately $8.75\\text{ MeV/nucleon}$)."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If a heavy nucleus with mass number $A = 240$ and binding energy per nucleon of $7.6\\text{ MeV}$ splits into two equal fragments of $A = 120$ each with binding energy per nucleon of $8.5\\text{ MeV}$, the total energy released in the fission process is:",
+          "image": "",
+          "options": [
+            "$216\\text{ MeV}$",
+            "$108\\text{ MeV}$",
+            "$200\\text{ MeV}$",
+            "$180\\text{ MeV}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total binding energy of the parent nucleus:\n$$E_i = 240 \\times 7.6\\text{ MeV} = 1824\\text{ MeV}$$\nTotal binding energy of the two daughter fragments:\n$$E_f = 2 \\times (120 \\times 8.5\\text{ MeV}) = 240 \\times 8.5\\text{ MeV} = 2040\\text{ MeV}$$\nEnergy released in the fission process:\n$$Q = E_f - E_i = 2040\\text{ MeV} - 1824\\text{ MeV} = 216\\text{ MeV}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] In the fusion reaction $_{1}^{2}\\text{H} + {}_{1}^{3}\\text{H} \\to {}_{2}^{4}\\text{He} + {}_{0}^{1}n + Q$, if the binding energies per nucleon of $^{2}\\text{H}$, $^{3}\\text{H}$, and $^{4}\\text{He}$ are $1.1\\text{ MeV}$, $2.8\\text{ MeV}$, and $7.0\\text{ MeV}$ respectively, the $Q$-value of the reaction is:",
+          "image": "",
+          "options": [
+            "$17.4\\text{ MeV}$",
+            "$20.0\\text{ MeV}$",
+            "$14.2\\text{ MeV}$",
+            "$28.0\\text{ MeV}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total binding energy of reactants:\n$$\\text{BE}_{\\text{reactants}} = (2 \\times 1.1) + (3 \\times 2.8) = 2.2 + 8.4 = 10.6\\text{ MeV}$$\nTotal binding energy of product:\n$$\\text{BE}_{\\text{products}} = 4 \\times 7.0\\text{ MeV} = 28.0\\text{ MeV}$$\nEnergy released:\n$$Q = 28.0\\text{ MeV} - 10.6\\text{ MeV} = 17.4\\text{ MeV}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following sets represents isotones?",
+          "image": "",
+          "options": [
+            "$_{6}^{14}\\text{C}$ and $_{8}^{16}\\text{O}$",
+            "$_{6}^{12}\\text{C}$ and $_{6}^{14}\\text{C}$",
+            "$_{1}^{3}\\text{H}$ and $_{2}^{3}\\text{He}$",
+            "$_{7}^{14}\\text{N}$ and $_{8}^{16}\\text{O}$"
+          ],
+          "correctOption": 0,
+          "solution": "Isotones are nuclides having the same neutron number $N = A - Z$:\nFor $_{6}^{14}\\text{C}$: $N = 14 - 6 = 8$.\nFor $_{8}^{16}\\text{O}$: $N = 16 - 8 = 8$.\nBoth nuclei have 8 neutrons, so they are isotones."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The potential energy between two nucleons as a function of separation distance $r$ is minimum at a separation $r_0$ approximately equal to:",
+          "image": "",
+          "options": [
+            "$0.8\\text{ fm}$",
+            "$1.5\\text{ fm}$",
+            "$0.2\\text{ fm}$",
+            "$2.5\\text{ fm}$"
+          ],
+          "correctOption": 0,
+          "solution": "The nucleon-nucleon potential energy curve has an attractive well with its minimum at $r_0 \\approx 0.8\\text{ fm}$.\nFor $r < r_0$, the nuclear force is repulsive, and for $r > r_0$, the force is attractive and rapidly drops to zero beyond a few femtometers."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] When a $^{235}_{92}\\text{U}$ nucleus captures a thermal neutron, it undergoes fission according to $^{235}_{92}\\text{U} + {}_{0}^{1}n \\to {}^{141}_{56}\\text{Ba} + {}_{36}^{92}\\text{Kr} + x{}_{0}^{1}n$. The number $x$ of secondary neutrons released is:",
+          "image": "",
+          "options": [
+            "3",
+            "2",
+            "1",
+            "4"
+          ],
+          "correctOption": 0,
+          "solution": "By conservation of mass number $A$:\n$$235 + 1 = 141 + 92 + x(1)$$\n$$236 = 233 + x \\implies x = 3$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Two protons are kept at a separation distance $r$. The electrostatic force between them is $F_e$ and the nuclear force is $F_n$. If $r = 1.0\\text{ fm}$, then:",
+          "image": "",
+          "options": [
+            "$F_n \\gg F_e$",
+            "$F_e \\gg F_n$",
+            "$F_n = F_e$",
+            "$F_n = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "At distances on the order of $1\\text{ fm}$, the strong nuclear force is attractive and roughly $50$ to $100$ times stronger than the electrostatic Coulomb repulsion ($F_n \\gg F_e$)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A nucleus with mass number $A = 216$ splits into two daughter fragments with mass numbers in the ratio $1 : 7$. The ratio of the radii of the two fragments is:",
+          "image": "",
+          "options": [
+            "$1 : 7^{1/3}$",
+            "$1 : 7$",
+            "$1 : 49$",
+            "$1 : 2$"
+          ],
+          "correctOption": 0,
+          "solution": "Since $R \\propto A^{1/3}$:\n$$\\frac{R_1}{R_2} = \\left(\\frac{A_1}{A_2}\\right)^{1/3} = \\left(\\frac{1}{7}\\right)^{1/3} = \\frac{1}{7^{1/3}}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An atomic mass unit ($1\\text{ u}$) is equivalent to an energy of approximately:",
+          "image": "",
+          "options": [
+            "$931.5\\text{ MeV}$",
+            "$938.3\\text{ MeV}$",
+            "$0.511\\text{ MeV}$",
+            "$1.602\\text{ MeV}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using $E = m c^2$:\n$$1\\text{ u} = 1.66054 \\times 10^{-27}\\text{ kg}$$\n$$E = (1.66054 \\times 10^{-27}\\text{ kg})(2.9979 \\times 10^8\\text{ m/s})^2 \\approx 1.4924 \\times 10^{-10}\\text{ J} \\approx 931.5\\text{ MeV}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The nuclear force between two nucleons is independent of:",
+          "image": "",
+          "options": [
+            "Electric charge of the nucleons",
+            "Distance between the nucleons",
+            "Spin orientation of the nucleons",
+            "Relative momentum of the nucleons"
+          ],
+          "correctOption": 0,
+          "solution": "Experimental evidence shows that nuclear forces are charge-independent ($F_{pp} \\approx F_{nn} \\approx F_{pn}$ after subtracting Coulomb repulsion).\nHowever, nuclear forces strongly depend on separation distance and relative spin alignments."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In a nuclear reactor, cadmium or boron rods are used as control rods because they:",
+          "image": "",
+          "options": [
+            "Have a very high cross-section for neutron absorption without undergoing fission",
+            "Slow down fast neutrons by elastic scattering",
+            "Produce additional neutrons to sustain fission",
+            "Convert fast neutrons into thermal neutrons"
+          ],
+          "correctOption": 0,
+          "solution": "Control rods are made of materials like cadmium or boron that possess large capture cross-sections for thermal neutrons.\nBy inserting or withdrawing them, the neutron multiplication factor $k$ can be regulated to control reactor power output."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The mass of a $_{3}^{7}\\text{Li}$ nucleus is less than the total mass of 3 free protons and 4 free neutrons by $0.042\\text{ u}$. The binding energy per nucleon of $_{3}^{7}\\text{Li}$ is approximately:",
+          "image": "",
+          "options": [
+            "$5.6\\text{ MeV}$",
+            "$39.1\\text{ MeV}$",
+            "$7.2\\text{ MeV}$",
+            "$13.0\\text{ MeV}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total binding energy:\n$$\\Delta E = \\Delta m \\times 931.5\\text{ MeV} = 0.042 \\times 931.5\\text{ MeV} \\approx 39.12\\text{ MeV}$$\nBinding energy per nucleon for $A = 7$:\n$$\\text{BE/nucleon} = \\frac{39.12\\text{ MeV}}{7} \\approx 5.59\\text{ MeV} \\approx 5.6\\text{ MeV}$$\n*(BE is $39.1\\text{ MeV}$, and BE/nucleon is $5.6\\text{ MeV}$)*"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A heavy water reactor uses deuterium oxide ($\\text{D}_2\\text{O}$) primarily as:",
+          "image": "",
+          "options": [
+            "A moderator to thermalize fast neutrons",
+            "Control rods to absorb neutrons",
+            "Nuclear fuel",
+            "Biological shielding"
+          ],
+          "correctOption": 0,
+          "solution": "Heavy water contains deuterium nuclei, which have masses comparable to neutrons.\nElastic collisions between fast neutrons and deuterons effectively moderate (slow down) neutrons without significant neutron absorption."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] For a stable nucleus with mass number $A < 40$, the ratio of the number of neutrons to protons ($N/Z$) is generally close to:",
+          "image": "",
+          "options": [
+            "$1.0$",
+            "$1.6$",
+            "$1.3$",
+            "$0.7$"
+          ],
+          "correctOption": 0,
+          "solution": "For light stable nuclei ($A \\le 40$), the number of neutrons and protons is nearly equal ($N \\approx Z$, $N/Z \\approx 1.0$).\nFor heavier nuclei, excess neutrons ($N/Z \\approx 1.5 - 1.6$) are required to provide additional attractive nuclear force to counter Coulomb repulsion among protons."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following pairs represents isobars?",
+          "image": "",
+          "options": [
+            "$_{18}^{40}\\text{Ar}$ and $_{20}^{40}\\text{Ca}$",
+            "$_{1}^{1}\\text{H}$ and $_{1}^{2}\\text{H}$",
+            "$_{6}^{13}\\text{C}$ and $_{7}^{14}\\text{N}$",
+            "$_{8}^{16}\\text{O}$ and $_{8}^{18}\\text{O}$"
+          ],
+          "correctOption": 0,
+          "solution": "Isobars are nuclei that have the same mass number $A$ but different atomic numbers $Z$.\nBoth $_{18}^{40}\\text{Ar}$ and $_{20}^{40}\\text{Ca}$ have $A = 40$ with different $Z$, so they are isobars."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The saturation property of nuclear forces signifies that:",
+          "image": "",
+          "options": [
+            "A nucleon interacts only with its immediate neighboring nucleons",
+            "Nuclear force is inversely proportional to distance",
+            "Nuclear force increases indefinitely with mass number",
+            "Nuclear force acts equally on all nucleons in the entire nucleus"
+          ],
+          "correctOption": 0,
+          "solution": "Because the nuclear force is extremely short-ranged, a nucleon inside a nucleus interacts only with nucleons in its immediate neighborhood.\nThis results in a nearly constant binding energy per nucleon across medium and heavy nuclei."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In stellar nucleosynthesis, the proton-proton cycle predominantly fuses four hydrogen nuclei into:",
+          "image": "",
+          "options": [
+            "One helium nucleus ($^{4}_{2}\\text{He}$) with release of two positrons and energy",
+            "One carbon nucleus ($^{12}_{6}\\text{C}$)",
+            "Two deuterium nuclei ($^{2}_{1}\\text{H}$)",
+            "One lithium nucleus ($^{7}_{3}\\text{Li}$)"
+          ],
+          "correctOption": 0,
+          "solution": "The net result of the solar proton-proton fusion chain is:\n$$4{}_{1}^{1}\\text{H} \\to {}_{2}^{4}\\text{He} + 2e^+ + 2\\nu_e + 26.7\\text{ MeV}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The mass defect of a nucleus $_{Z}^{A}X$ having nuclear mass $M(A, Z)$ is given by (where $m_p$ is proton mass and $m_n$ is neutron mass):",
+          "image": "",
+          "options": [
+            "$\\Delta m = [Z m_p + (A - Z)m_n] - M(A, Z)$",
+            "$\\Delta m = M(A, Z) - [Z m_p + (A - Z)m_n]$",
+            "$\\Delta m = [Z m_p + A m_n] - M(A, Z)$",
+            "$\\Delta m = [A m_p + (A - Z)m_n] - M(A, Z)$"
+          ],
+          "correctOption": 0,
+          "solution": "The mass defect is defined as the difference between the sum of the masses of the individual constituent free nucleons and the actual mass of the bound nucleus:\n$$\\Delta m = [Z m_p + (A - Z)m_n] - M(A, Z)$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] The binding energy of a deuteron ($_{1}^{2}\\text{H}$) is $2.22\\text{ MeV}$ and that of an alpha particle ($_{2}^{4}\\text{He}$) is $28.30\\text{ MeV}$. Find the energy (in MeV) released when two deuterons fuse to form a single alpha particle.",
+          "image": "",
+          "correctValue": 23.86,
+          "solution": "Fusion reaction: $_{1}^{2}\\text{H} + {}_{1}^{2}\\text{H} \\to {}_{2}^{4}\\text{He} + Q$.\nTotal initial binding energy of reactants:\n$$\\text{BE}_{\\text{reactants}} = 2 \\times 2.22\\text{ MeV} = 4.44\\text{ MeV}$$\nTotal binding energy of product:\n$$\\text{BE}_{\\text{product}} = 28.30\\text{ MeV}$$\nEnergy released:\n$$Q = \\text{BE}_{\\text{product}} - \\text{BE}_{\\text{reactants}} = 28.30 - 4.44 = 23.86\\text{ MeV}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A nuclear reactor generates thermal power of $3.2\\text{ MW}$ entirely from the fission of $^{235}\\text{U}$. Assuming that each fission event releases $200\\text{ MeV}$ of energy, find the number of fissions occurring per second in units of $10^{17}\\text{ fissions/s}$ (take $1\\text{ eV} = 1.6 \\times 10^{-19}\\text{ J}$).",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Energy released per fission:\n$$E = 200\\text{ MeV} = 200 \\times 10^6 \\times 1.6 \\times 10^{-19}\\text{ J} = 3.2 \\times 10^{-11}\\text{ J}$$\nPower output: $P = 3.2\\text{ MW} = 3.2 \\times 10^6\\text{ J/s}$.\nNumber of fissions per second:\n$$n = \\frac{P}{E} = \\frac{3.2 \\times 10^6\\text{ J/s}}{3.2 \\times 10^{-11}\\text{ J}} = 10^{17}\\text{ fissions/s} = 1.0 \\times 10^{17}\\text{ fissions/s}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] If the radius of a $^{125}_{52}\\text{Te}$ nucleus is $6.0\\text{ fm}$, find the radius (in fm) of a $^{64}_{30}\\text{Zn}$ nucleus (rounded to one decimal place).",
+          "image": "",
+          "correctValue": 4.8,
+          "solution": "Using $R = R_0 A^{1/3}$:\n$$\\frac{R_{\\text{Zn}}}{R_{\\text{Te}}} = \\left(\\frac{64}{125}\\right)^{1/3} = \\frac{4}{5} = 0.8$$\n$$R_{\\text{Zn}} = 0.8 \\times R_{\\text{Te}} = 0.8 \\times 6.0\\text{ fm} = 4.8\\text{ fm}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] In a nuclear fusion reaction, two deuterons fuse to form a $^{3}_{2}\\text{He}$ nucleus and a neutron: $_{1}^{2}\\text{H} + {}_{1}^{2}\\text{H} \\to {}_{2}^{3}\\text{He} + {}_{0}^{1}n + Q$. Given the masses $m(_{1}^{2}\\text{H}) = 2.0141\\text{ u}$, $m(_{2}^{3}\\text{He}) = 3.0160\\text{ u}$, and $m(_{0}^{1}n) = 1.0087\\text{ u}$, find the $Q$-value of the reaction in MeV (take $1\\text{ u} = 931.5\\text{ MeV}$, rounded to two decimal places).",
+          "image": "",
+          "correctValue": 3.26,
+          "solution": "Mass defect:\n$$\\Delta m = 2 m(_{1}^{2}\\text{H}) - [m(_{2}^{3}\\text{He}) + m(n)]$$\n$$\\Delta m = 2(2.0141) - [3.0160 + 1.0087] = 4.0282 - 4.0247 = 0.0035\\text{ u}$$\nEnergy released:\n$$Q = \\Delta m \\times 931.5\\text{ MeV} = 0.0035 \\times 931.5 = 3.26025\\text{ MeV} \\approx 3.26\\text{ MeV}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the total binding energy (in MeV) of a $^{4}_{2}\\text{He}$ nucleus, given mass of proton $m_p = 1.00728\\text{ u}$, mass of neutron $m_n = 1.00866\\text{ u}$, and mass of helium nucleus $M = 4.00150\\text{ u}$ (take $1\\text{ u} = 931.5\\text{ MeV}$, rounded to two decimal places).",
+          "image": "",
+          "correctValue": 28.30,
+          "solution": "Constituent nucleon mass for $^{4}_{2}\\text{He}$ ($2p + 2n$):\n$$m_{\\text{nucleons}} = 2(1.00728) + 2(1.00866) = 2.01456 + 2.01732 = 4.03188\\text{ u}$$\nMass defect:\n$$\\Delta m = 4.03188 - 4.00150 = 0.03038\\text{ u}$$\nTotal binding energy:\n$$\\text{BE} = 0.03038 \\times 931.5\\text{ MeV} \\approx 28.29897\\text{ MeV} \\approx 28.30\\text{ MeV}$$"
+        }
+      ]
+    }
+  ]
+}

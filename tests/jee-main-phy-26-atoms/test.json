@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-26-atoms",
+  "title": "Atoms",
+  "syllabus": "Alpha-particle scattering experiment, Rutherford's model of atom; Bohr's model of hydrogen atom, energy levels, hydrogen spectrum; Expression for radius of nth possible orbit, velocity and energy of electron in his orbit; De Broglie's explanation of Bohr's second postulate of quantisation",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The ratio of the radius of the $3^{\\text{rd}}$ orbit to that of the $2^{\\text{nd}}$ orbit of hydrogen atom according to Bohr's model is:",
+          "image": "",
+          "options": [
+            "$9 : 4$",
+            "$3 : 2$",
+            "$4 : 9$",
+            "$27 : 8$"
+          ],
+          "correctOption": 0,
+          "solution": "In Bohr's model, the radius of the $n^{\\text{th}}$ orbit varies as $r_n \\propto \\frac{n^2}{Z}$.\nFor hydrogen ($Z = 1$):\n$$\\frac{r_3}{r_2} = \\left(\\frac{3}{2}\\right)^2 = \\frac{9}{4}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An alpha particle of kinetic energy $K$ is directed towards a gold nucleus ($Z = 79$). If the kinetic energy of the alpha particle is doubled, the distance of closest approach will:",
+          "image": "",
+          "options": [
+            "Be halved",
+            "Be doubled",
+            "Remain unchanged",
+            "Become four times"
+          ],
+          "correctOption": 0,
+          "solution": "At the distance of closest approach $r_0$, initial kinetic energy is completely transformed into electrostatic potential energy:\n$$K = \\frac{1}{4\\pi\\varepsilon_0}\\frac{(2e)(Ze)}{r_0} \\implies r_0 = \\frac{2Ze^2}{4\\pi\\varepsilon_0 K} \\propto \\frac{1}{K}$$\nWhen kinetic energy is doubled ($K' = 2K$), the distance of closest approach is halved."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The ratio of the wavelength of the first line of Lyman series to the first line of Balmer series for hydrogen atom is:",
+          "image": "",
+          "options": [
+            "$\\frac{5}{27}$",
+            "$\\frac{27}{5}$",
+            "$\\frac{4}{9}$",
+            "$\\frac{5}{36}$"
+          ],
+          "correctOption": 0,
+          "solution": "From Rydberg formula $\\frac{1}{\\lambda} = R\\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right)$:\nFirst line of Lyman series ($n_1 = 1, n_2 = 2$):\n$$\\frac{1}{\\lambda_{L1}} = R\\left(1 - \\frac{1}{4}\\right) = \\frac{3R}{4} \\implies \\lambda_{L1} = \\frac{4}{3R}$$\nFirst line of Balmer series ($n_1 = 2, n_2 = 3$):\n$$\\frac{1}{\\lambda_{B1}} = R\\left(\\frac{1}{4} - \\frac{1}{9}\\right) = \\frac{5R}{36} \\implies \\lambda_{B1} = \\frac{36}{5R}$$\n$$\\frac{\\lambda_{L1}}{\\lambda_{B1}} = \\frac{4/(3R)}{36/(5R)} = \\frac{4}{3} \\times \\frac{5}{36} = \\frac{5}{27}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In Bohr's model of the hydrogen atom, if the orbital angular momentum of an electron in the ground state is $L$, then the orbital angular momentum of the electron in the second excited state is:",
+          "image": "",
+          "options": [
+            "$3L$",
+            "$2L$",
+            "$4L$",
+            "$9L$"
+          ],
+          "correctOption": 0,
+          "solution": "By Bohr's quantization postulate, $L_n = n\\left(\\frac{h}{2\\pi}\\right) = n L$ where ground state ($n = 1$) has angular momentum $L$.\nThe second excited state corresponds to principal quantum number $n = 3$.\nTherefore, $L_3 = 3L$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] If the electron in a hydrogen atom jumps from the $n = 3$ orbit to the $n = 2$ orbit, the frequency of the emitted radiation is (take $R = 1.097 \\times 10^7\\text{ m}^{-1}$ and $c = 3.0 \\times 10^8\\text{ m/s}$):",
+          "image": "",
+          "options": [
+            "$4.57 \\times 10^{14}\\text{ Hz}$",
+            "$6.17 \\times 10^{14}\\text{ Hz}$",
+            "$3.28 \\times 10^{14}\\text{ Hz}$",
+            "$7.42 \\times 10^{14}\\text{ Hz}$"
+          ],
+          "correctOption": 0,
+          "solution": "Transition frequency is $\\nu = c \\left(\\frac{1}{\\lambda}\\right) = c R\\left(\\frac{1}{2^2} - \\frac{1}{3^2}\\right)$:\n$$\\nu = (3.0 \\times 10^8) \\times (1.097 \\times 10^7) \\times \\left(\\frac{1}{4} - \\frac{1}{9}\\right) = 3.291 \\times 10^{15} \\times \\frac{5}{36} \\approx 4.57 \\times 10^{14}\\text{ Hz}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The total energy of an electron in an orbit of a hydrogen-like atom is $-3.4\\text{ eV}$. The kinetic energy ($K$) and electrostatic potential energy ($U$) of the electron in this state are:",
+          "image": "",
+          "options": [
+            "$K = +3.4\\text{ eV}, U = -6.8\\text{ eV}$",
+            "$K = -3.4\\text{ eV}, U = +6.8\\text{ eV}$",
+            "$K = +6.8\\text{ eV}, U = -10.2\\text{ eV}$",
+            "$K = +3.4\\text{ eV}, U = -3.4\\text{ eV}$"
+          ],
+          "correctOption": 0,
+          "solution": "For Coulombic inverse-square central force fields:\n$$K = -E = -(-3.4\\text{ eV}) = +3.4\\text{ eV}$$\n$$U = 2E = 2(-3.4\\text{ eV}) = -6.8\\text{ eV}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] According to de Broglie's explanation of Bohr's second postulate, a stationary electron orbit in a hydrogen atom contains an integral number of de Broglie wavelengths such that:",
+          "image": "",
+          "options": [
+            "$2\\pi r_n = n\\lambda$",
+            "$\\pi r_n = n\\lambda$",
+            "$2\\pi r_n = (2n + 1)\\frac{\\lambda}{2}$",
+            "$4\\pi r_n = n\\lambda$"
+          ],
+          "correctOption": 0,
+          "solution": "For a stable circular standing wave of matter on the orbit perimeter:\n$$2\\pi r_n = n\\lambda$$\nSubstituting $\\lambda = \\frac{h}{p} = \\frac{h}{m v_n}$ yields $m v_n r_n = \\frac{n h}{2\\pi}$, proving Bohr's quantum condition."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The speed of an electron in the ground state orbit of hydrogen atom is $v_1$. The speed of an electron in the $3^{\\text{rd}}$ orbit of singly ionized helium ($\text{He}^+$) is:",
+          "image": "",
+          "options": [
+            "$\\frac{2}{3} v_1$",
+            "$\\frac{3}{2} v_1$",
+            "$\\frac{4}{9} v_1$",
+            "$v_1$"
+          ],
+          "correctOption": 0,
+          "solution": "In Bohr's theory, the orbital speed of an electron scales as $v_n \\propto \\frac{Z}{n}$.\nFor ground state hydrogen ($Z = 1, n = 1$): $v_1 \\propto \\frac{1}{1} = 1$.\nFor $\\text{He}^+$ in $3^{\\text{rd}}$ orbit ($Z = 2, n = 3$):\n$$v = v_1 \\left(\\frac{Z}{n}\\right) = \\frac{2}{3} v_1$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] As the principal quantum number $n$ increases, the time period of revolution $T_n$ of an electron in Bohr's orbit of hydrogen atom varies as:",
+          "image": "",
+          "options": [
+            "$T_n \\propto n^3$",
+            "$T_n \\propto n^2$",
+            "$T_n \\propto n$",
+            "$T_n \\propto n^{3/2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Time period is $T_n = \\frac{2\\pi r_n}{v_n}$.\nSince $r_n \\propto n^2$ and $v_n \\propto \\frac{1}{n}$:\n$$T_n \\propto \\frac{n^2}{1/n} = n^3$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In Geiger-Marsden $\\alpha$-scattering experiment, the number of $\\alpha$-particles scattered at an angle $\\theta$ is proportional to:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{\\sin^4(\\theta/2)}$",
+            "$\\frac{1}{\\sin^2(\\theta/2)}$",
+            "$\\sin^4(\\theta/2)$",
+            "$\\frac{1}{\\cos^4(\\theta/2)}$"
+          ],
+          "correctOption": 0,
+          "solution": "From Rutherford's scattering formula, the number of $\\alpha$-particles scattered per unit solid angle at angle $\\theta$ is:\n$$N(\\theta) \\propto \\frac{1}{\\sin^4(\\theta/2)}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] The ionization potential of a hydrogen-like ion is $54.4\\text{ V}$. The ion is:",
+          "image": "",
+          "options": [
+            "$\\text{He}^+$",
+            "$\\text{Li}^{2+}$",
+            "$\\text{Be}^{3+}$",
+            "$\\text{H}$"
+          ],
+          "correctOption": 0,
+          "solution": "Ground state ionization energy of a hydrogen-like atom is $E_I = 13.6 Z^2\\text{ eV}$.\nGiven $E_I = 54.4\\text{ eV}$:\n$$13.6 Z^2 = 54.4 \\implies Z^2 = \\frac{54.4}{13.6} = 4 \\implies Z = 2$$\n$Z = 2$ corresponds to singly ionized helium ($\\text{He}^+$)."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following spectral series of hydrogen atom lies in the visible region of the electromagnetic spectrum?",
+          "image": "",
+          "options": [
+            "Balmer series",
+            "Lyman series",
+            "Paschen series",
+            "Brackett series"
+          ],
+          "correctOption": 0,
+          "solution": "In the hydrogen emission spectrum:\nLyman series lies in the ultraviolet region;\nBalmer series transitions ($n_1 = 2$) lie in the visible region;\nPaschen, Brackett, and Pfund series lie in the infrared region."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A hydrogen atom initially in its ground state absorbs a photon and is excited to the state with $n = 4$. The number of different spectral lines that can be emitted when it returns to the ground state is:",
+          "image": "",
+          "options": [
+            "6",
+            "4",
+            "3",
+            "10"
+          ],
+          "correctOption": 0,
+          "solution": "Total number of possible spectral emission lines from state $n$ is:\n$$N = \\frac{n(n - 1)}{2}$$\nFor $n = 4$:\n$$N = \\frac{4(4 - 1)}{2} = \\frac{12}{2} = 6$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An electron in a hydrogen atom de-excites from an energy level $n$ to the ground state ($n = 1$). The recoil momentum of the hydrogen atom is (neglecting relativistic effects):",
+          "image": "",
+          "options": [
+            "$\\frac{13.6}{c}\\left(1 - \\frac{1}{n^2}\\right)\\text{ eV/c}$",
+            "$\\frac{13.6}{c}\\left(\\frac{1}{n^2} - 1\\right)\\text{ eV/c}$",
+            "$13.6\\left(1 - \\frac{1}{n^2}\\right)\\text{ eV}$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Energy of emitted photon: $\\Delta E = 13.6\\left(1 - \\frac{1}{n^2}\\right)\\text{ eV}$.\nMomentum of the emitted photon is $p = \\frac{\\Delta E}{c}$.\nBy conservation of linear momentum, recoil momentum of the atom has identical magnitude:\n$$p_{\\text{recoil}} = \\frac{13.6}{c}\\left(1 - \\frac{1}{n^2}\\right)\\text{ eV/c}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The electric current corresponding to an electron revolving in the $n^{\\text{th}}$ orbit of hydrogen atom is proportional to:",
+          "image": "",
+          "options": [
+            "$n^{-3}$",
+            "$n^{-2}$",
+            "$n^{-1}$",
+            "$n^3$"
+          ],
+          "correctOption": 0,
+          "solution": "Equivalent orbit current: $I_n = \\frac{e}{T_n}$.\nBecause period of revolution scales as $T_n \\propto n^3$:\n$$I_n \\propto \\frac{1}{n^3} = n^{-3}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The magnetic field produced at the nucleus of a hydrogen atom by an electron revolving in the $n^{\\text{th}}$ Bohr orbit is proportional to:",
+          "image": "",
+          "options": [
+            "$n^{-5}$",
+            "$n^{-3}$",
+            "$n^{-4}$",
+            "$n^{-2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic field at the centre of a circular orbit: $B_n = \\frac{\\mu_0 I_n}{2 r_n}$.\nSince $I_n \\propto n^{-3}$ and $r_n \\propto n^2$:\n$$B_n \\propto \\frac{n^{-3}}{n^2} = n^{-5}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] When an electron transitions from orbit $n$ to $(n - 1)$ for very large $n$ ($n \\gg 1$), the frequency of emitted radiation matches the classical orbital revolution frequency. This exemplifies:",
+          "image": "",
+          "options": [
+            "Bohr's correspondence principle",
+            "Heisenberg's uncertainty principle",
+            "Pauli's exclusion principle",
+            "Hund's rule"
+          ],
+          "correctOption": 0,
+          "solution": "Bohr's correspondence principle states that quantum mechanical predictions must asymptotically merge with classical electrodynamic results in the limit of large quantum numbers ($n \\to \\infty$)."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The impact parameter $b$ of an alpha particle scattered by angle $\\theta = 180^\\circ$ (head-on collision) is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "Equal to nuclear radius",
+            "Maximum",
+            "Infinite"
+          ],
+          "correctOption": 0,
+          "solution": "The impact parameter is related to scattering angle by $b = \\frac{1}{4\\pi\\varepsilon_0}\\frac{Z e^2}{K}\\cot(\\theta/2)$.\nFor head-on collision ($\\theta = 180^\\circ$):\n$$\\cot(90^\\circ) = 0 \\implies b = 0$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The shortest wavelength present in the Paschen series of spectral lines for hydrogen atom is (where $R$ is Rydberg constant):",
+          "image": "",
+          "options": [
+            "$\\frac{9}{R}$",
+            "$\\frac{16}{R}$",
+            "$\\frac{4}{R}$",
+            "$\\frac{1}{R}$"
+          ],
+          "correctOption": 0,
+          "solution": "For Paschen series, $n_1 = 3$.\nThe shortest wavelength (series limit) occurs when $n_2 \\to \\infty$:\n$$\\frac{1}{\\lambda_{\\min}} = R\\left(\\frac{1}{3^2} - \\frac{1}{\\infty^2}\\right) = \\frac{R}{9} \\implies \\lambda_{\\min} = \\frac{9}{R}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] In a hydrogen atom, the binding energy of an electron in its first excited state is:",
+          "image": "",
+          "options": [
+            "$3.4\\text{ eV}$",
+            "$13.6\\text{ eV}$",
+            "$1.51\\text{ eV}$",
+            "$0.85\\text{ eV}$"
+          ],
+          "correctOption": 0,
+          "solution": "First excited state corresponds to $n = 2$.\nEnergy of the level: $E_2 = -\\frac{13.6}{2^2} = -3.4\\text{ eV}$.\nBinding energy is the minimum energy required to remove the electron to infinity: $E_b = -E_2 = +3.4\\text{ eV}$."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] The radius of the first Bohr orbit in a hydrogen atom is $0.53\\text{ Å}$. Find the radius (in Å) of the third Bohr orbit.",
+          "image": "",
+          "correctValue": 4.77,
+          "solution": "Bohr radius formula: $r_n = r_1 \\times n^2$.\nFor $n = 3$:\n$$r_3 = 0.53\\text{ Å} \\times 3^2 = 0.53 \\times 9 = 4.77\\text{ Å}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Find the wavelength (in nanometers) of the photon emitted when an electron in a hydrogen atom falls from $n = 3$ to $n = 1$ (take Rydberg constant $R = 1.097 \\times 10^7\\text{ m}^{-1}$, rounded to one decimal place).",
+          "image": "",
+          "correctValue": 102.6,
+          "solution": "Using Rydberg formula:\n$$\\frac{1}{\\lambda} = R\\left(\\frac{1}{1^2} - \\frac{1}{3^2}\\right) = R\\left(1 - \\frac{1}{9}\\right) = \\frac{8R}{9}$$\n$$\\lambda = \\frac{9}{8R} = \\frac{9}{8 \\times (1.097 \\times 10^7)} = \\frac{9}{8.776 \\times 10^7} \\approx 1.0255 \\times 10^{-7}\\text{ m} = 102.55\\text{ nm} \\approx 102.6\\text{ nm}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] An alpha particle with kinetic energy $5.0\\text{ MeV}$ is scattered head-on by a stationary gold nucleus ($Z = 79$). Find the distance of closest approach in femtometers ($\text{fm}$) (take $\\frac{1}{4\\pi\\varepsilon_0} = 9 \\times 10^9\\text{ N}\\cdot\\text{m}^2/\\text{C}^2$ and $e = 1.6 \\times 10^{-19}\\text{ C}$, rounded to one decimal place).",
+          "image": "",
+          "correctValue": 45.5,
+          "solution": "Distance of closest approach:\n$$r_0 = \\frac{1}{4\\pi\\varepsilon_0} \\frac{2 Z e^2}{K}$$\n$$K = 5.0\\text{ MeV} = 5.0 \\times 10^6 \\times 1.6 \\times 10^{-19}\\text{ J} = 8.0 \\times 10^{-13}\\text{ J}$$\n$$r_0 = \\frac{(9 \\times 10^9) \\times 2(79) \\times (1.6 \\times 10^{-19})^2}{8.0 \\times 10^{-13}} = \\frac{1.422 \\times 10^{12} \\times 2.56 \\times 10^{-38}}{8.0 \\times 10^{-13}} = \\frac{3.6403 \\times 10^{-26}}{8.0 \\times 10^{-13}} \\approx 4.55 \\times 10^{-14}\\text{ m} = 45.5\\text{ fm}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] In a hydrogen atom, find the ratio of the de Broglie wavelength of an electron in the $2^{\\text{nd}}$ Bohr orbit to that in the $1^{\\text{st}}$ Bohr orbit.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "From de Broglie's condition $2\\pi r_n = n\\lambda_n$:\n$$\\lambda_n = \\frac{2\\pi r_n}{n} \\propto \\frac{n^2}{n} = n$$\n$$\\frac{\\lambda_2}{\\lambda_1} = \\frac{2}{1} = 2.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] The ground state energy of a hydrogen atom is $-13.6\\text{ eV}$. Find the energy of the emitted photon (in eV) when the electron drops from the second excited state to the ground state.",
+          "image": "",
+          "correctValue": 12.09,
+          "solution": "Ground state ($n = 1$): $E_1 = -13.6\\text{ eV}$.\nSecond excited state corresponds to $n = 3$:\n$$E_3 = -\\frac{13.6}{3^2} = -\\frac{13.6}{9} \\approx -1.51\\text{ eV}$$\nEnergy of emitted photon:\n$$\\Delta E = E_3 - E_1 = -1.511\\text{ eV} - (-13.60\\text{ eV}) = 12.089\\text{ eV} \\approx 12.09\\text{ eV}$$"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-28-semiconductor-electronics",
+  "title": "Semiconductor Electronics: Materials, Devices, and Simple Circuits",
+  "syllabus": "Energy bands in solids (conductors, semiconductors, and insulators); Intrinsic and extrinsic semiconductors, p-type and n-type semiconductors, electrical conductivity of semiconductors; p-n junction diode: formation of depletion layer and potential barrier, I-V characteristics in forward and reverse bias; Diode as a rectifier (half-wave and full-wave); Special purpose p-n junction diodes: Zener diode and its characteristics, Zener diode as a voltage regulator; Optoelectronic junction devices: Photodiode, Light Emitting Diode (LED), Solar cell; Logic gates (OR, AND, NOT, NAND, NOR) and their truth tables",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In an unbiased p-n junction diode at room temperature, the diffusion current originates due to:",
+          "image": "",
+          "options": [
+            "Concentration gradient of majority charge carriers across the junction",
+            "Electric field in the depletion region pulling minority carriers",
+            "Thermal generation of electron-hole pairs exclusively inside the depletion region",
+            "Drift of minority carriers across the potential barrier"
+          ],
+          "correctOption": 0,
+          "solution": "Diffusion current is caused by the substantial concentration gradient of majority carriers across the junction: holes diffuse from the p-side to the n-side, and free electrons diffuse from the n-side to the p-side. Drift current, by contrast, is driven by the internal electric field acting on minority carriers."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A pure semiconductor has an intrinsic carrier concentration of $n_i = 1.5 \\times 10^{16}\\text{ m}^{-3}$. If it is doped with pentavalent donor impurities such that the electron concentration becomes $n_e = 4.5 \\times 10^{22}\\text{ m}^{-3}$, the hole concentration $n_h$ at thermal equilibrium is:",
+          "image": "",
+          "options": [
+            "$5.0 \\times 10^9\\text{ m}^{-3}$",
+            "$3.0 \\times 10^9\\text{ m}^{-3}$",
+            "$5.0 \\times 10^{10}\\text{ m}^{-3}$",
+            "$2.0 \\times 10^8\\text{ m}^{-3}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the mass-action law for semiconductors in thermal equilibrium:\n$$n_e n_h = n_i^2$$\n$$n_h = \\frac{n_i^2}{n_e} = \\frac{(1.5 \\times 10^{16}\\text{ m}^{-3})^2}{4.5 \\times 10^{22}\\text{ m}^{-3}} = \\frac{2.25 \\times 10^{32}}{4.5 \\times 10^{22}} = 5.0 \\times 10^9\\text{ m}^{-3}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A Zener diode has a breakdown voltage of $10\\text{ V}$ and is used in a voltage regulator circuit. If the unregulated input DC voltage fluctuates between $15\\text{ V}$ and $20\\text{ V}$ across a series resistor $R_s = 500\\,\\Omega$ and a load resistor $R_L = 1000\\,\\Omega$, the maximum Zener current $I_Z$ is:",
+          "image": "",
+          "options": [
+            "$10\\text{ mA}$",
+            "$20\\text{ mA}$",
+            "$15\\text{ mA}$",
+            "$5\\text{ mA}$"
+          ],
+          "correctOption": 0,
+          "solution": "The voltage across the parallel load is maintained at $V_Z = 10\\text{ V}$.\nLoad current is constant:\n$$I_L = \\frac{V_Z}{R_L} = \\frac{10\\text{ V}}{1000\\,\\Omega} = 10\\text{ mA}$$\nMaximum input voltage is $V_{\\text{in}} = 20\\text{ V}$.\nTotal series current:\n$$I_{\\text{total}} = \\frac{V_{\\text{in}} - V_Z}{R_s} = \\frac{20 - 10}{500} = \\frac{10\\text{ V}}{500\\,\\Omega} = 20\\text{ mA}$$\nMaximum current passing through the Zener diode:\n$$I_Z = I_{\\text{total}} - I_L = 20\\text{ mA} - 10\\text{ mA} = 10\\text{ mA}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If the input frequency of an alternating current fed into a full-wave rectifier is $50\\text{ Hz}$, the fundamental ripple frequency of the output rectified voltage is:",
+          "image": "",
+          "options": [
+            "$100\\text{ Hz}$",
+            "$50\\text{ Hz}$",
+            "$25\\text{ Hz}$",
+            "$200\\text{ Hz}$"
+          ],
+          "correctOption": 0,
+          "solution": "In a full-wave rectifier, both the positive and negative half-cycles of the input AC are converted into unidirectional output pulses.\nTherefore, the output ripple repeats twice every full input cycle:\n$$f_{\\text{ripple}} = 2 f_{\\text{in}} = 2 \\times 50\\text{ Hz} = 100\\text{ Hz}$$\n(For a half-wave rectifier, it would remain $50\\text{ Hz}$)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The Boolean expression corresponding to the logic circuit constructed by connecting the output of an AND gate to the input of a NOT gate is:",
+          "image": "",
+          "options": [
+            "$\\overline{A \\cdot B}$ (NAND gate)",
+            "$\\overline{A + B}$ (NOR gate)",
+            "$A + B$ (OR gate)",
+            "$A \\cdot B$ (AND gate)"
+          ],
+          "correctOption": 0,
+          "solution": "The output of an AND gate receiving inputs $A$ and $B$ is $Y_1 = A \\cdot B$.\nFeeding this output into a NOT gate inverts the logic state:\n$$Y = \\overline{Y_1} = \\overline{A \\cdot B}$$\nThis represents the operation of a NAND gate."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A photodiode is preferably operated under reverse bias because:",
+          "image": "",
+          "options": [
+            "The fractional change in minority carrier current upon illumination is far easier to detect",
+            "The forward current is completely independent of optical intensity",
+            "The depletion width reduces to zero under reverse bias",
+            "The barrier potential increases electron emission from the cathode"
+          ],
+          "correctOption": 0,
+          "solution": "In reverse bias, current is dictated by minority carriers. When light shines on the junction, excess electron-hole pairs are generated.\nThe fractional increase in minority carrier density $\\frac{\\Delta n_{\\text{minority}}}{n_{\\text{minority}}}$ is significantly larger and more readily measurable than the fractional change in majority carriers under forward bias."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Carbon (C), Silicon (Si), and Germanium (Ge) all belong to Group 14 of the periodic table. Their forbidden energy band gaps are $(E_g)_{\\text{C}}$, $(E_g)_{\\text{Si}}$, and $(E_g)_{\\text{Ge}}$. Which of the following relationships is correct?",
+          "image": "",
+          "options": [
+            "$(E_g)_{\\text{C}} > (E_g)_{\\text{Si}} > (E_g)_{\\text{Ge}}$",
+            "$(E_g)_{\\text{Ge}} > (E_g)_{\\text{Si}} > (E_g)_{\\text{C}}$",
+            "$(E_g)_{\\text{Si}} > (E_g)_{\\text{C}} > (E_g)_{\\text{Ge}}$",
+            "$(E_g)_{\\text{C}} = (E_g)_{\\text{Si}} = (E_g)_{\\text{Ge}}$"
+          ],
+          "correctOption": 0,
+          "solution": "As we move down Group 14, atomic size increases and valence electrons become less tightly bound to the nucleus, reducing the energy required to promote an electron from the valence band to the conduction band:\n$$(E_g)_{\\text{C (diamond)}} \\approx 5.4\\text{ eV} > (E_g)_{\\text{Si}} \\approx 1.1\\text{ eV} > (E_g)_{\\text{Ge}} \\approx 0.7\\text{ eV}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] For an extrinsic semiconductor doped with donor impurities, the donor energy level lies:",
+          "image": "",
+          "options": [
+            "Just below the bottom of the conduction band",
+            "Just above the top of the valence band",
+            "Exactly in the middle of the forbidden energy gap",
+            "Deep inside the valence band"
+          ],
+          "correctOption": 0,
+          "solution": "In an n-type semiconductor, donor impurities introduce discrete localized energy levels containing extra electrons just below the bottom of the conduction band (separated by only $\\approx 0.01\\text{ eV}$ in Ge and $\\approx 0.05\\text{ eV}$ in Si), allowing effortless thermal ionization into the conduction band at room temperature."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] When a p-n junction diode is forward biased, the width of the depletion layer and the height of the potential barrier respectively:",
+          "image": "",
+          "options": [
+            "Decrease and decrease",
+            "Increase and increase",
+            "Increase and decrease",
+            "Decrease and increase"
+          ],
+          "correctOption": 0,
+          "solution": "In forward bias, the externally applied electric field opposes the built-in electric field of the space-charge depletion region. Consequently, the effective barrier potential is lowered ($V_0 - V$), pushing majority carriers across the junction and decreasing the depletion layer width."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The logic gate that gives a LOW (0) output only when all its inputs are HIGH (1) is:",
+          "image": "",
+          "options": [
+            "NAND gate",
+            "NOR gate",
+            "AND gate",
+            "XOR gate"
+          ],
+          "correctOption": 0,
+          "solution": "The truth table of a NAND gate outputs 1 for $(0,0), (0,1),$ and $(1,0)$. Only when both inputs are 1 does the AND operation yield 1, which upon negation gives an output of 0:\n$$Y = \\overline{A \\cdot B}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A Light Emitting Diode (LED) emits light when it is:",
+          "image": "",
+          "options": [
+            "Forward biased, due to radiative recombination of electrons and holes",
+            "Reverse biased, due to Zener breakdown across the junction",
+            "Unbiased, due to thermal diffusion of carriers",
+            "Reverse biased, due to avalanche multiplication"
+          ],
+          "correctOption": 0,
+          "solution": "An LED is heavily doped and operates under forward bias. Minority carriers injected across the junction recombine with majority carriers near the junction boundary, releasing energy in the form of photons ($h\\nu \\approx E_g$)."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "At absolute zero temperature ($0\\text{ K}$), an intrinsic semiconductor behaves as:",
+          "image": "",
+          "options": [
+            "A perfect insulator",
+            "A perfect conductor",
+            "A superconductor",
+            "A p-type semiconductor"
+          ],
+          "correctOption": 0,
+          "solution": "At $T = 0\\text{ K}$, thermal energy is absent. All valence electrons are tightly locked in covalent bonds, leaving the valence band completely filled and the conduction band completely empty, so the substance acts as a perfect insulator."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An electrical circuit has two ideal diodes $D_1$ and $D_2$ connected in parallel branches with resistors $R_1 = 2\\,\\Omega$ and $R_2 = 3\\,\\Omega$. $D_1$ has its p-side connected to positive terminal, whereas $D_2$ has its n-side connected to positive terminal. The net resistance of the combination is:",
+          "image": "",
+          "options": [
+            "$2\\,\\Omega$",
+            "$3\\,\\Omega$",
+            "$1.2\\,\\Omega$",
+            "$5\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "Under the applied polarity, diode $D_1$ is forward biased (acting as a short circuit with $0\\,\\Omega$ resistance), while diode $D_2$ is reverse biased (acting as an open circuit with infinite resistance).\nCurrent passes exclusively through the branch containing $R_1$ and $D_1$, making the net equivalent resistance $2\\,\\Omega$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] To obtain a p-type semiconductor, pure silicon should be doped with trivalent atoms such as:",
+          "image": "",
+          "options": [
+            "Indium",
+            "Phosphorus",
+            "Arsenic",
+            "Antimony"
+          ],
+          "correctOption": 0,
+          "solution": "A p-type semiconductor requires Group 13 trivalent acceptor impurities such as Boron (B), Aluminum (Al), Gallium (Ga), or Indium (In).\nPhosphorus, Arsenic, and Antimony are Group 15 pentavalent donors that create n-type semiconductors."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The I-V characteristic curve of a solar cell lies primarily in which quadrant of the coordinate plane?",
+          "image": "",
+          "options": [
+            "Fourth quadrant",
+            "First quadrant",
+            "Second quadrant",
+            "Third quadrant"
+          ],
+          "correctOption": 0,
+          "solution": "A solar cell does not draw power from an external source; rather, it delivers electrical power to an external load.\nUnder illumination, open-circuit voltage is positive while short-circuit photocurrent flows in the reverse direction, situating its operating characteristic curve in the fourth quadrant."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] In a p-n junction diode, the dynamic resistance is defined as:",
+          "image": "",
+          "options": [
+            "$\\frac{\\Delta V}{\\Delta I}$",
+            "$\\frac{V}{I}$",
+            "$\\frac{\\Delta I}{\\Delta V}$",
+            "$\\frac{I}{V}$"
+          ],
+          "correctOption": 0,
+          "solution": "Because a p-n junction diode is a non-ohmic device with an exponential I-V curve, its AC or dynamic resistance is defined as the reciprocal of the slope of the I-V characteristic curve:\n$$r_d = \\frac{\\Delta V}{\\Delta I}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The universal logic gates from which any other basic logic gate can be synthesized are:",
+          "image": "",
+          "options": [
+            "NAND and NOR gates",
+            "AND and OR gates",
+            "OR and NOT gates",
+            "XOR and XNOR gates"
+          ],
+          "correctOption": 0,
+          "solution": "NAND and NOR gates are termed universal logic gates because appropriate combinations of either gate alone can realize NOT, AND, OR, and XOR operations without requiring any other gate type."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The conductivity $\\sigma$ of an extrinsic semiconductor containing electron concentration $n_e$ and hole concentration $n_h$ with respective mobilities $\\mu_e$ and $\\mu_h$ is given by:",
+          "image": "",
+          "options": [
+            "$e(n_e \\mu_e + n_h \\mu_h)$",
+            "$e(n_e \\mu_e - n_h \\mu_h)$",
+            "$\\frac{e}{n_e \\mu_e + n_h \\mu_h}$",
+            "$e(n_e + n_h)(\\mu_e + \\mu_h)$"
+          ],
+          "correctOption": 0,
+          "solution": "Total current density is the sum of electron and hole drift currents: $j = j_e + j_h = e(n_e v_{de} + n_h v_{dh}) = e(n_e \\mu_e + n_h \\mu_h)E$.\nSince $\\sigma = j / E$:\n$$\\sigma = e(n_e \\mu_e + n_h \\mu_h)$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A half-wave rectifier circuit without a filter capacitor has a peak secondary AC voltage of $V_m$. The peak inverse voltage (PIV) rating of the diode must be at least:",
+          "image": "",
+          "options": [
+            "$V_m$",
+            "$2 V_m$",
+            "$\\frac{V_m}{\\sqrt{2}}$",
+            "$\\frac{2V_m}{\\pi}$"
+          ],
+          "correctOption": 0,
+          "solution": "During the negative half-cycle of input AC, the diode is reverse biased and blocks current.\nThe maximum reverse voltage appearing across the non-conducting diode equals the peak input voltage $V_m$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For a silicon diode, the knee (cut-in) voltage under forward bias is approximately:",
+          "image": "",
+          "options": [
+            "$0.7\\text{ V}$",
+            "$0.3\\text{ V}$",
+            "$1.1\\text{ V}$",
+            "$0.1\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "The barrier potential and corresponding cut-in (threshold) voltage is approximately $0.7\\text{ V}$ for Silicon (Si) diodes and $0.3\\text{ V}$ for Germanium (Ge) diodes."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A p-n junction diode has a forward voltage increase from $0.6\\text{ V}$ to $0.75\\text{ V}$, causing the forward current to rise from $5\\text{ mA}$ to $20\\text{ mA}$. Find the dynamic resistance of the diode in Ohms.",
+          "image": "",
+          "correctValue": 10.0,
+          "solution": "Dynamic resistance formula:\n$$r_d = \\frac{\\Delta V}{\\Delta I}$$\n$$\\Delta V = 0.75\\text{ V} - 0.60\\text{ V} = 0.15\\text{ V}$$\n$$\\Delta I = 20\\text{ mA} - 5\\text{ mA} = 15\\text{ mA} = 15 \\times 10^{-3}\\text{ A}$$\n$$r_d = \\frac{0.15}{15 \\times 10^{-3}} = 10.0\\,\\Omega$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A sample of germanium is doped with $10^{21}\\text{ atoms/m}^3$ of antimony (donor impurities). If the intrinsic carrier concentration of germanium is $n_i = 2.5 \\times 10^{19}\\text{ m}^{-3}$, find the hole concentration $n_h$ in units of $10^{17}\\text{ m}^{-3}$ (rounded to two decimal places).",
+          "image": "",
+          "correctValue": 6.25,
+          "solution": "Assuming complete ionization of donors at room temperature, $n_e \\approx N_D = 10^{21}\\text{ m}^{-3}$.\nBy the mass-action law:\n$$n_h = \\frac{n_i^2}{n_e} = \\frac{(2.5 \\times 10^{19})^2}{10^{21}} = \\frac{6.25 \\times 10^{38}}{10^{21}} = 6.25 \\times 10^{17}\\text{ m}^{-3}$$\nValue in units of $10^{17}\\text{ m}^{-3}$ is $6.25$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A Zener diode regulator circuit has a breakdown voltage $V_Z = 6\\text{ V}$ and a series current-limiting resistor $R_s = 200\\,\\Omega$. If the input DC source voltage is $12\\text{ V}$ and the load resistor is $R_L = 1000\\,\\Omega$, find the current (in mA) flowing through the Zener diode.",
+          "image": "",
+          "correctValue": 24.0,
+          "solution": "Total current through series resistor $R_s$:\n$$I_{\\text{total}} = \\frac{V_{\\text{in}} - V_Z}{R_s} = \\frac{12 - 6}{200} = \\frac{6\\text{ V}}{200\\,\\Omega} = 0.030\\text{ A} = 30\\text{ mA}$$\nCurrent through load resistor $R_L$:\n$$I_L = \\frac{V_Z}{R_L} = \\frac{6\\text{ V}}{1000\\,\\Omega} = 0.006\\text{ A} = 6\\text{ mA}$$\nZener current:\n$$I_Z = I_{\\text{total}} - I_L = 30\\text{ mA} - 6\\text{ mA} = 24.0\\text{ mA}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] An LED is manufactured from a compound semiconductor with a band gap energy $E_g = 1.9\\text{ eV}$. Find the wavelength (in nanometers) of the emitted radiation (take Planck's constant $h = 6.63 \\times 10^{-34}\\text{ J}\\cdot\\text{s}$, $c = 3.0 \\times 10^8\\text{ m/s}$, and $1\\text{ eV} = 1.6 \\times 10^{-19}\\text{ J}$, rounded to the nearest whole integer).",
+          "image": "",
+          "correctValue": 654.0,
+          "solution": "Wavelength of emitted light is:\n$$\\lambda = \\frac{h c}{E_g} = \\frac{1242\\text{ eV}\\cdot\\text{nm}}{1.9\\text{ eV}} \\approx 653.68\\text{ nm} \\approx 654.0\\text{ nm}$$\nOr directly:\n$$\\lambda = \\frac{(6.63 \\times 10^{-34})(3.0 \\times 10^8)}{1.9 \\times 1.6 \\times 10^{-19}} = \\frac{1.989 \\times 10^{-25}}{3.04 \\times 10^{-19}} = 6.5427 \\times 10^{-7}\\text{ m} \\approx 654\\text{ nm}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] The barrier potential of a silicon p-n junction is $0.7\\text{ V}$ and the depletion layer has a thickness of $1.0\\,\\mu\\text{m}$. Find the average electric field intensity (in units of $10^5\\text{ V/m}$) existing across the junction.",
+          "image": "",
+          "correctValue": 7.0,
+          "solution": "Electric field inside the depletion layer is approximately:\n$$E = \\frac{V_0}{d} = \\frac{0.7\\text{ V}}{1.0 \\times 10^{-6}\\text{ m}} = 7.0 \\times 10^5\\text{ V/m}$$\nValue in units of $10^5\\text{ V/m}$ is $7.0$."
+        }
+      ]
+    }
+  ]
+}

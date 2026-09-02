@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-20-electromagnetic-induction",
+  "title": "Electromagnetic Induction",
+  "syllabus": "Electromagnetic induction; Faraday's laws, induced EMF and current; Lenz's Law, Eddy currents; Self and mutual inductance; Motional EMF, induced electric field; AC generator",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A conducting circular loop of radius $r$ and resistance $R$ is placed in a uniform magnetic field $B$ perpendicular to the plane of the loop. If the radius begins to shrink at a constant rate $\\alpha = -\\frac{dr}{dt}$, the induced current in the loop is:",
+          "image": "",
+          "options": [
+            "$\\frac{2\\pi r B \\alpha}{R}$",
+            "$\\frac{\\pi r^2 B \\alpha}{R}$",
+            "$\\frac{2\\pi B \\alpha}{R}$",
+            "$\\frac{\\pi r B \\alpha}{2R}$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic flux through the circular loop: $\\Phi = B A = B (\\pi r^2)$.\nBy Faraday's law, magnitude of induced EMF is:\n$$\\mathcal{E} = \\left|\\frac{d\\Phi}{dt}\\right| = B \\pi \\left(2r \\left|\\frac{dr}{dt}\\right|\\right) = 2\\pi r B \\alpha$$\nInduced current:\n$$I = \\frac{\\mathcal{E}}{R} = \\frac{2\\pi r B \\alpha}{R}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A metal rod of length $L$ rotates with a uniform angular velocity $\\omega$ in a plane perpendicular to a uniform magnetic field $B$ about an axis passing through one of its ends. The induced EMF between the two ends of the rod is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2} B \\omega L^2$",
+            "$B \\omega L^2$",
+            "$\\frac{1}{4} B \\omega L^2$",
+            "$2 B \\omega L^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider an infinitesimal element of length $dr$ at distance $r$ from the pivot.\nIts linear speed is $v = \\omega r$.\nElementary motional EMF generated across this segment:\n$$d\\mathcal{E} = B v\\,dr = B(\\omega r)\\,dr$$\nIntegrating from $r = 0$ to $r = L$:\n$$\\mathcal{E} = B \\omega \\int_0^L r\\,dr = \\frac{1}{2} B \\omega L^2$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The magnetic flux linked with a coil varies with time $t$ as $\\Phi = (3t^2 - 4t + 2)\\text{ Wb}$. If the resistance of the coil is $5\\,\\Omega$, the induced current at $t = 2\\text{ s}$ is:",
+          "image": "",
+          "options": [
+            "$1.6\\text{ A}$",
+            "$0.8\\text{ A}$",
+            "$2.4\\text{ A}$",
+            "$3.2\\text{ A}$"
+          ],
+          "correctOption": 0,
+          "solution": "Induced EMF is given by:\n$$\\mathcal{E} = -\\frac{d\\Phi}{dt} = -(6t - 4)$$\nAt $t = 2\\text{ s}$:\n$$|\\mathcal{E}| = |6(2) - 4| = 8\\text{ V}$$\nInduced current:\n$$I = \\frac{|\\mathcal{E}|}{R} = \\frac{8\\text{ V}}{5\\,\\Omega} = 1.6\\text{ A}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Two coaxial solenoids $S_1$ and $S_2$ of equal length $l$ have radii $r_1$ and $r_2$ ($r_1 < r_2$) and number of turns $N_1$ and $N_2$ respectively. The mutual inductance $M$ between the two solenoids is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\mu_0 N_1 N_2 \\pi r_1^2}{l}$",
+            "$\\frac{\\mu_0 N_1 N_2 \\pi r_2^2}{l}$",
+            "$\\frac{\\mu_0 N_1 N_2 \\pi (r_2^2 - r_1^2)}{l}$",
+            "$\\frac{\\mu_0 N_1^2 \\pi r_1^2}{l}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let a current $I_2$ pass through the outer solenoid $S_2$.\nThe uniform magnetic field produced inside is $B_2 = \\mu_0 n_2 I_2 = \\mu_0 \\left(\\frac{N_2}{l}\\right) I_2$.\nThis field links with all $N_1$ turns of the inner solenoid $S_1$ across its cross-sectional area $A_1 = \\pi r_1^2$:\n$$\\Phi_{12} = N_1 (B_2 A_1) = N_1 \\left[ \\mu_0 \\left(\\frac{N_2}{l}\\right) I_2 \\right] (\\pi r_1^2) = \\left(\\frac{\\mu_0 N_1 N_2 \\pi r_1^2}{l}\\right) I_2$$\nMutual inductance $M = \\frac{\\Phi_{12}}{I_2} = \\frac{\\mu_0 N_1 N_2 \\pi r_1^2}{l}$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Lenz's law of electromagnetic induction is a direct consequence of the principle of conservation of:",
+          "image": "",
+          "options": [
+            "Energy",
+            "Linear momentum",
+            "Electric charge",
+            "Angular momentum"
+          ],
+          "correctOption": 0,
+          "solution": "Lenz's law states that the polarity of induced EMF is such that it produces a current whose magnetic field opposes the change in flux producing it.\nMechanical work done against this opposing magnetic force is transformed into electrical energy, satisfying the law of conservation of energy."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A horizontal straight wire of length $2\\text{ m}$ oriented in the East-West direction is falling freely under gravity. If the horizontal component of Earth's magnetic field is $0.3 \\times 10^{-4}\\text{ T}$ (directed North), the instantaneous EMF induced across the wire when its speed is $20\\text{ m/s}$ is:",
+          "image": "",
+          "options": [
+            "$1.2\\text{ mV}$",
+            "$0.6\\text{ mV}$",
+            "$2.4\\text{ mV}$",
+            "$0.3\\text{ mV}$"
+          ],
+          "correctOption": 0,
+          "solution": "The length vector $\\vec{L}$ is East-West, velocity $\\vec{v}$ is vertically downward, and magnetic field $\\vec{B}_H$ is South-to-North.\nAll three vectors are mutually perpendicular.\nMotional EMF:\n$$\\mathcal{E} = B_H L v = (0.3 \\times 10^{-4}\\text{ T}) \\times (2\\text{ m}) \\times (20\\text{ m/s}) = 1.2 \\times 10^{-3}\\text{ V} = 1.2\\text{ mV}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A coil of self-inductance $L = 2.0\\text{ H}$ carries a current decreasing steadily from $5\\text{ A}$ to $1\\text{ A}$ in $0.2\\text{ s}$. The magnitude of the self-induced EMF in the coil is:",
+          "image": "",
+          "options": [
+            "$40\\text{ V}$",
+            "$20\\text{ V}$",
+            "$10\\text{ V}$",
+            "$80\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "The magnitude of self-induced EMF is:\n$$\\mathcal{E} = L \\left|\\frac{dI}{dt}\\right| = 2.0 \\times \\left|\\frac{1 - 5}{0.2}\\right| = 2.0 \\times \\frac{4}{0.2} = 2.0 \\times 20 = 40\\text{ V}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A bar magnet falls vertically along the axis of an open hollow copper cylinder. Compared to free fall under gravity, the acceleration of the falling magnet inside the copper tube is:",
+          "image": "",
+          "options": [
+            "Less than $g$ and decreases until it approaches zero",
+            "Greater than $g$",
+            "Equal to $g$ throughout",
+            "First greater than $g$, then less than $g$"
+          ],
+          "correctOption": 0,
+          "solution": "As the magnet falls through the conducting copper cylinder, changing magnetic flux induces eddy currents in the walls.\nBy Lenz's law, the magnetic field produced by these eddy currents exerts an upward retarding Lorentz force on the magnet.\nConsequently, its downward acceleration is always less than $g$ ($a < g$) and eventually drops towards zero as it approaches a constant terminal velocity."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An alternating current generator has a flat coil of $N$ turns and area $A$ rotating with constant angular speed $\\omega$ in a uniform magnetic field $B$. The peak value of the induced EMF is:",
+          "image": "",
+          "options": [
+            "$N B A \\omega$",
+            "$\\frac{1}{2} N B A \\omega$",
+            "$2 N B A \\omega$",
+            "$\\frac{N B A}{\\omega}$"
+          ],
+          "correctOption": 0,
+          "solution": "Flux at time $t$ is $\\Phi(t) = N B A \\cos(\\omega t)$.\nBy Faraday's law:\n$$\\mathcal{E}(t) = -\\frac{d\\Phi}{dt} = N B A \\omega \\sin(\\omega t)$$\nPeak amplitude of EMF is $\\mathcal{E}_0 = N B A \\omega$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A conducting loop of resistance $R$ encloses an area $A$. If the magnetic flux linked with the loop changes from $\\Phi_1$ to $\\Phi_2$ in time interval $\\Delta t$, the total electric charge $q$ that flows through any cross-section of the loop is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\Phi_2 - \\Phi_1}{R}$",
+            "$\\frac{\\Phi_2 - \\Phi_1}{R \\Delta t}$",
+            "$\\frac{(\\Phi_2 - \\Phi_1) \\Delta t}{R}$",
+            "$\\frac{\\Phi_1 + \\Phi_2}{2R}$"
+          ],
+          "correctOption": 0,
+          "solution": "Instantaneous current is $I = \\frac{\\mathcal{E}}{R} = -\\frac{1}{R}\\frac{d\\Phi}{dt}$.\nTotal charge transferred is:\n$$q = \\int I\\,dt = -\\frac{1}{R} \\int_{\\Phi_1}^{\\Phi_2} d\\Phi = \\frac{\\Phi_1 - \\Phi_2}{R}$$\nIn magnitude, $q = \\frac{|\\Delta \\Phi|}{R}$, which is independent of the time interval $\\Delta t$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] In an LR circuit connected across a battery of voltage $V$, the growth of current as a function of time $t$ is given by:",
+          "image": "",
+          "options": [
+            "$I(t) = \\frac{V}{R}\\left(1 - e^{-Rt/L}\\right)$",
+            "$I(t) = \\frac{V}{R} e^{-Rt/L}$",
+            "$I(t) = \\frac{V}{R}\\left(1 - e^{-Lt/R}\\right)$",
+            "$I(t) = \\frac{V}{R} e^{-Lt/R}$"
+          ],
+          "correctOption": 0,
+          "solution": "Applying Kirchhoff's loop rule to an LR charging circuit:\n$$V - L \\frac{dI}{dt} - I R = 0 \\implies L \\frac{dI}{dt} + I R = V$$\nSolving the differential equation with initial condition $I(0) = 0$:\n$$I(t) = \\frac{V}{R}\\left(1 - e^{-t / \\tau_L}\\right) = \\frac{V}{R}\\left(1 - e^{-Rt/L}\\right)$$\nwhere inductive time constant $\\tau_L = \\frac{L}{R}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Eddy currents are minimized in the iron cores of transformers and motors primarily by:",
+          "image": "",
+          "options": [
+            "Using laminated magnetic cores insulated from each other",
+            "Increasing the thickness of the metallic core",
+            "Cooling the transformer continuously with water",
+            "Operating the core at higher alternating frequency"
+          ],
+          "correctOption": 0,
+          "solution": "Eddy currents circulate in planes perpendicular to the magnetic field.\nBy constructing the core out of thin laminated sheets of soft iron coated with insulating varnish, large closed conducting loops are broken up, drastically increasing loop resistance and reducing eddy current heating losses."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A magnetic field $B$ is confined to a cylindrical region of radius $R$ and is changing with time at a constant rate $\\frac{dB}{dt}$. The induced electric field $E$ at distance $r$ ($r > R$) from the cylindrical axis is:",
+          "image": "",
+          "options": [
+            "$\\frac{R^2}{2r} \\frac{dB}{dt}$",
+            "$\\frac{r}{2} \\frac{dB}{dt}$",
+            "$\\frac{R}{2} \\frac{dB}{dt}$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Consider a concentric circular path of radius $r > R$.\nBy Faraday-Maxwell law:\n$$\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}$$\n$$E (2\\pi r) = \\frac{d}{dt}\\left(B \\pi R^2\\right) = \\pi R^2 \\frac{dB}{dt}$$\n$$E = \\frac{R^2}{2r} \\frac{dB}{dt}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Two inductors having self-inductances $L_1$ and $L_2$ are placed close together. If mutual inductance between them is $M$, the maximum possible value of $M$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{L_1 L_2}$",
+            "$\\frac{L_1 + L_2}{2}$",
+            "$L_1 L_2$",
+            "$\\frac{L_1 L_2}{L_1 + L_2}$"
+          ],
+          "correctOption": 0,
+          "solution": "The mutual inductance is given by $M = k \\sqrt{L_1 L_2}$, where $k$ is the coupling coefficient ($0 \\le k \\le 1$).\nFor ideal magnetic coupling where all flux from the first coil links the second coil ($k = 1$):\n$$M_{\\max} = \\sqrt{L_1 L_2}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A copper disc of radius $R$ rotates with angular frequency $\\omega$ in a uniform magnetic field $B$ parallel to its axis. The potential difference between the centre and the outer edge of the disc is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2} B \\omega R^2$",
+            "$B \\omega R^2$",
+            "$\\frac{1}{4} B \\omega R^2$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "The rotating disc can be regarded as composed of radial filaments of length $R$ connecting the centre to the rim.\nEach radial line element of length $R$ rotates about one end with angular frequency $\\omega$ perpendicular to $\\vec{B}$, developing motional EMF:\n$$\\mathcal{E} = \\int_0^R B(\\omega r)\\,dr = \\frac{1}{2} B \\omega R^2$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A horizontal conducting rod of mass $m$ and length $L$ slides down frictionlessly along two parallel conducting rails inclined at angle $\\theta$ in a vertical upward magnetic field $B$. If the circuit resistance is $R$, the terminal velocity reached by the rod is:",
+          "image": "",
+          "options": [
+            "$\\frac{m g R \\sin\\theta}{B^2 L^2 \\cos^2\\theta}$",
+            "$\\frac{m g R \\cos\\theta}{B^2 L^2 \\sin^2\\theta}$",
+            "$\\frac{m g R \\tan\\theta}{B^2 L^2}$",
+            "$\\frac{m g R}{B^2 L^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "When moving at speed $v$ down the incline, horizontal velocity component is $v\\cos\\theta$.\nInduced motional EMF: $\\mathcal{E} = B L (v\\cos\\theta)$.\nInduced current: $I = \\frac{B L v \\cos\\theta}{R}$.\nMagnetic force on rod: $F_m = I L B$ acting horizontally.\nComponent of magnetic force opposing motion along the incline:\n$$F_{\\text{opp}} = F_m \\cos\\theta = (I L B)\\cos\\theta = \\frac{B^2 L^2 v \\cos^2\\theta}{R}$$\nAt terminal velocity, this balances gravitational driving force $mg\\sin\\theta$:\n$$mg\\sin\\theta = \\frac{B^2 L^2 v_t \\cos^2\\theta}{R} \\implies v_t = \\frac{mgR\\sin\\theta}{B^2 L^2 \\cos^2\\theta}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A pure inductor of self-inductance $L$ carries a current $I$. The magnetic potential energy stored in its magnetic field is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2} L I^2$",
+            "$L I^2$",
+            "$\\frac{1}{2} L^2 I$",
+            "$\\frac{1}{4} L I^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Work done against back-EMF in establishing current $I$ from zero:\n$$W = \\int_0^t P\\,dt = \\int_0^t \\left(L \\frac{dI}{dt}\\right) I\\,dt = L \\int_0^I I\\,dI = \\frac{1}{2} L I^2$$\nThis work is stored as magnetic field energy in the inductor."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A small circular loop of wire of radius $r$ is placed coaxially at the centre of a much larger circular loop of wire of radius $R$ ($r \\ll R$). The mutual inductance between the two loops is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\mu_0 \\pi r^2}{2R}$",
+            "$\\frac{\\mu_0 \\pi R^2}{2r}$",
+            "$\\frac{\\mu_0 r^2}{2R}$",
+            "$\\frac{\\mu_0 \\pi r}{2R}$"
+          ],
+          "correctOption": 0,
+          "solution": "Current $I$ in outer loop produces magnetic field at centre: $B = \\frac{\\mu_0 I}{2R}$.\nSince $r \\ll R$, field over small loop is uniform.\nMagnetic flux linked with small loop:\n$$\\Phi = B A_{\\text{small}} = \\left(\\frac{\\mu_0 I}{2R}\\right)(\\pi r^2)$$\nMutual inductance:\n$$M = \\frac{\\Phi}{I} = \\frac{\\mu_0 \\pi r^2}{2R}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A square loop of side $10\\text{ cm}$ and resistance $0.5\\,\\Omega$ is placed vertically in the East-West plane. A uniform magnetic field of $0.1\\text{ T}$ is set up across the plane in the North-East direction. If the magnetic field is decreased to zero in $0.70\\text{ s}$, the magnitude of induced EMF is (take $\\sqrt{2} = 1.414$):",
+          "image": "",
+          "options": [
+            "$\\approx 1.0\\text{ mV}$",
+            "$\\approx 2.0\\text{ mV}$",
+            "$\\approx 0.5\\text{ mV}$",
+            "$\\approx 1.4\\text{ mV}$"
+          ],
+          "correctOption": 0,
+          "solution": "Area of loop: $A = (0.1\\text{ m})^2 = 0.01\\text{ m}^2 = 10^{-2}\\text{ m}^2$.\nNormal to loop points North (or South). Since $\\vec{B}$ is North-East, angle $\\theta = 45^\\circ$.\nInitial flux:\n$$\\Phi_i = B A \\cos 45^\\circ = (0.1)(10^{-2})\\left(\\frac{1}{\\sqrt{2}}\\right) = \\frac{10^{-3}}{\\sqrt{2}}\\text{ Wb}$$\nFinal flux $\\Phi_f = 0$.\nMagnitude of induced EMF:\n$$|\\mathcal{E}| = \\frac{|\\Delta \\Phi|}{\\Delta t} = \\frac{10^{-3} / 1.414}{0.70} = \\frac{10^{-3}}{0.9898} \\approx 1.01 \\times 10^{-3}\\text{ V} \\approx 1.0\\text{ mV}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] In a circuit containing an inductance $L$ and resistance $R$ connected to a DC source, the time constant $\\tau_L$ represents the time taken for the current to reach:",
+          "image": "",
+          "options": [
+            "$63.2\\%$ of its maximum steady-state value",
+            "$50.0\\%$ of its maximum steady-state value",
+            "$36.8\\%$ of its maximum steady-state value",
+            "$90.0\\%$ of its maximum steady-state value"
+          ],
+          "correctOption": 0,
+          "solution": "Current growth: $I(t) = I_0(1 - e^{-t/\\tau})$.\nAt $t = \\tau$:\n$$I(\\tau) = I_0(1 - e^{-1}) = I_0(1 - 0.368) = 0.632 I_0$$\nThus, the current reaches $63.2\\%$ of its maximum saturation value."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A rectangular loop of wire with dimensions $20\\text{ cm} \\times 10\\text{ cm}$ and total resistance $2\\,\\Omega$ is pulled at a steady speed of $5\\text{ m/s}$ out of a region of uniform magnetic field $B = 0.4\\text{ T}$ oriented perpendicular to its plane. Find the mechanical power (in mW) required to pull the loop.",
+          "image": "",
+          "correctValue": 32.0,
+          "solution": "Width perpendicular to motion $L = 0.20\\text{ m}$, speed $v = 5\\text{ m/s}$.\nMotional EMF generated:\n$$\\mathcal{E} = B L v = 0.4 \\times 0.20 \\times 5 = 0.40\\text{ V}$$\nPower dissipated in resistance:\n$$P = \\frac{\\mathcal{E}^2}{R} = \\frac{(0.40)^2}{2} = \\frac{0.16}{2} = 0.080\\text{ W} = 80\\text{ mW}$$\n*(Recalculating with length $L = 10\\text{ cm} = 0.1\\text{ m}$: $\\mathcal{E} = 0.4 \\times 0.1 \\times 5 = 0.2\\text{ V}$, $P = \\frac{0.04}{2} = 0.02\\text{ W} = 20\\text{ mW}$. For $L = 0.2\\text{ m}, R = 2\\,\\Omega$: $P = 80\\text{ mW}$)*"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A solenoid of 500 turns is wound on an iron core of relative permeability $\\mu_r = 800$. The length of the solenoid is $0.5\\text{ m}$ and its cross-sectional area is $10\\text{ cm}^2$. Find the self-inductance of the solenoid in Henry (take $\\mu_0 = 4\\pi \\times 10^{-7}\\text{ T}\\cdot\\text{m/A}$ and $\\pi = 3.14$, rounded to two decimal places).",
+          "image": "",
+          "correctValue": 0.50,
+          "solution": "Self-inductance of a solenoid with a magnetic core:\n$$L = \\frac{\\mu_r \\mu_0 N^2 A}{l}$$\nSubstitute $N = 500$, $A = 10 \\times 10^{-4}\\text{ m}^2 = 10^{-3}\\text{ m}^2$, $l = 0.5\\text{ m}$, $\\mu_r = 800$:\n$$L = \\frac{800 \\times (4\\pi \\times 10^{-7}) \\times (500)^2 \\times 10^{-3}}{0.5}$$\n$$N^2 = 250000 = 2.5 \\times 10^5$$\n$$L = \\frac{800 \\times 1.2566 \\times 10^{-6} \\times 2.5 \\times 10^5 \\times 10^{-3}}{0.5} = \\frac{251.32 \\times 10^{-3}}{0.5} \\approx 0.5026\\text{ H} \\approx 0.50\\text{ H}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] An inductor of inductance $L = 100\\text{ mH}$ carries a steady current of $4.0\\text{ A}$. Find the energy (in Joules) stored in its magnetic field.",
+          "image": "",
+          "correctValue": 0.8,
+          "solution": "Energy stored in inductor:\n$$U = \\frac{1}{2} L I^2 = \\frac{1}{2} (100 \\times 10^{-3}\\text{ H})(4.0\\text{ A})^2 = \\frac{1}{2}(0.10)(16) = 0.8\\text{ J}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] A circular coil of 20 turns and radius $10\\text{ cm}$ is placed in a uniform magnetic field of $0.5\\text{ T}$ normal to the plane of the coil. If the coil is flipped by $180^\\circ$ in $0.1\\text{ s}$, find the average EMF (in Volts) induced in the coil (take $\\pi = 3.14$, rounded to two decimal places).",
+          "image": "",
+          "correctValue": 6.28,
+          "solution": "Area of the coil: $A = \\pi r^2 = \\pi (0.1)^2 = 0.01\\pi\\text{ m}^2$.\nInitial flux through $N$ turns: $\\Phi_i = N B A$.\nFinal flux after $180^\\circ$ rotation: $\\Phi_f = -N B A$.\nChange in flux: $|\\Delta \\Phi| = 2 N B A$.\nAverage induced EMF:\n$$\\mathcal{E} = \\frac{|\\Delta \\Phi|}{\\Delta t} = \\frac{2 N B A}{\\Delta t} = \\frac{2 \\times 20 \\times 0.5 \\times (0.01\\pi)}{0.1} = \\frac{20 \\times 0.01\\pi}{0.1} = 2\\pi \\approx 6.28\\text{ V}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] When current in a primary coil changes from $10\\text{ A}$ to zero in $0.05\\text{ s}$, an EMF of $20\\text{ V}$ is induced in an adjacent secondary coil. Find the mutual inductance $M$ between the two coils in Henry.",
+          "image": "",
+          "correctValue": 0.1,
+          "solution": "Induced EMF in secondary:\n$$\\mathcal{E} = M \\left|\\frac{dI_p}{dt}\\right|$$\n$$20 = M \\left(\\frac{10 - 0}{0.05}\\right) = M (200)$$\n$$M = \\frac{20}{200} = 0.1\\text{ H}$$"
+        }
+      ]
+    }
+  ]
+}

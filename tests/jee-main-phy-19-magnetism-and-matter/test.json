@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-19-magnetism-and-matter",
+  "title": "Magnetism and Matter",
+  "syllabus": "Current loop as a magnetic dipole and its magnetic dipole moment; Magnetic dipole moment of a revolving electron; Magnetic field intensity due to a magnetic dipole (bar magnet) along its axis and perpendicular to its axis; Torque on a magnetic dipole (bar magnet) in a uniform magnetic field; Bar magnet as an equivalent solenoid, magnetic field lines; Gauss's law for magnetism; Diamagnetic, paramagnetic and ferromagnetic substances, with examples; Electromagnets and factors affecting their strengths, permanent magnets",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A short bar magnet of magnetic moment $M$ produces magnetic fields $B_1$ and $B_2$ at distance $d$ on its axial and equatorial lines respectively ($d \\gg \\text{length of magnet}$). The ratio $\\frac{B_1}{B_2}$ is:",
+          "image": "",
+          "options": [
+            "$2 : 1$",
+            "$1 : 2$",
+            "$4 : 1$",
+            "$1 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "For a short bar magnet at distance $d$:\nAxial field: $B_1 = \\frac{\\mu_0}{4\\pi}\\frac{2M}{d^3}$.\nEquatorial field: $B_2 = \\frac{\\mu_0}{4\\pi}\\frac{M}{d^3}$.\n$$\\frac{B_1}{B_2} = \\frac{2}{1} = 2 : 1$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The magnetic susceptibility $\\chi$ of a paramagnetic material varies with absolute temperature $T$ according to Curie's law as:",
+          "image": "",
+          "options": [
+            "$\\chi \\propto \\frac{1}{T}$",
+            "$\\chi \\propto T$",
+            "$\\chi \\propto T^2$",
+            "$\\chi$ is independent of $T$"
+          ],
+          "correctOption": 0,
+          "solution": "According to Curie's law for paramagnetic substances, the magnetic susceptibility is inversely proportional to the absolute temperature:\n$$\\chi = \\frac{C}{T} \\implies \\chi \\propto \\frac{1}{T}$$\nwhere $C$ is the Curie constant."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Gauss's law for magnetism, expressed in mathematical form as $\\oint \\vec{B} \\cdot d\\vec{A} = 0$, signifies that:",
+          "image": "",
+          "options": [
+            "Isolated magnetic monopoles do not exist in nature",
+            "Magnetic fields are always conservative",
+            "Magnetic field lines never form closed loops",
+            "The net magnetic force on any closed loop is zero"
+          ],
+          "correctOption": 0,
+          "solution": "The vanishing of the net magnetic flux through any arbitrary closed Gaussian surface ($\\oint \\vec{B} \\cdot d\\vec{A} = 0$) physically means that there are no isolated magnetic charges (magnetic monopoles) to act as sources or sinks of magnetic field lines."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A bar magnet of magnetic dipole moment $M$ is bent into a semicircular arc. The new magnetic dipole moment of the bent magnet is:",
+          "image": "",
+          "options": [
+            "$\\frac{2M}{\\pi}$",
+            "$\\frac{M}{\\pi}$",
+            "$\\frac{\\pi M}{2}$",
+            "$M$"
+          ],
+          "correctOption": 0,
+          "solution": "Let original length be $L$ and pole strength be $m$. Then $M = m L$.\nWhen bent into a semicircle of radius $R$: $\\pi R = L \\implies R = \\frac{L}{\\pi}$.\nThe distance between the two poles is now the diameter $2R = \\frac{2L}{\\pi}$.\nNew magnetic moment:\n$$M' = m(2R) = m\\left(\\frac{2L}{\\pi}\\right) = \\frac{2(mL)}{\\pi} = \\frac{2M}{\\pi}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Which of the following materials is diamagnetic?",
+          "image": "",
+          "options": [
+            "Bismuth",
+            "Aluminum",
+            "Iron",
+            "Oxygen (liquid)"
+          ],
+          "correctOption": 0,
+          "solution": "Bismuth (along with copper, water, and noble gases) is strongly diamagnetic, exhibiting a small negative magnetic susceptibility independent of temperature.\nAluminum and liquid oxygen are paramagnetic, while iron is ferromagnetic."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A bar magnet of magnetic moment $\\vec{M}$ is aligned parallel to a uniform external magnetic field $\\vec{B}$. The work done by an external agent to rotate it by $180^\\circ$ is:",
+          "image": "",
+          "options": [
+            "$2 M B$",
+            "$M B$",
+            "$-2 M B$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Potential energy of a magnetic dipole in a field is $U(\\theta) = -M B \\cos\\theta$.\nInitial state: $\\theta_1 = 0^\\circ \\implies U_1 = -M B$.\nFinal state: $\\theta_2 = 180^\\circ \\implies U_2 = -M B \\cos 180^\\circ = +M B$.\nWork done:\n$$W = U_2 - U_1 = (+M B) - (-M B) = 2 M B$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] An electron revolves in an orbit of radius $r$ with speed $v$ around a proton. If $e$ is electronic charge and $m_e$ is electron mass, the gyromagnetic ratio (ratio of magnetic dipole moment to orbital angular momentum) is:",
+          "image": "",
+          "options": [
+            "$\\frac{e}{2m_e}$",
+            "$\\frac{e}{m_e}$",
+            "$\\frac{2e}{m_e}$",
+            "$\\frac{e}{4m_e}$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic dipole moment of the revolving electron: $\\mu = I A = \\left(\\frac{e v}{2\\pi r}\\right)(\\pi r^2) = \\frac{e v r}{2}$.\nOrbital angular momentum: $L = m_e v r$.\nGyromagnetic ratio:\n$$\\frac{\\mu}{L} = \\frac{e v r / 2}{m_e v r} = \\frac{e}{2m_e}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The relative magnetic permeability $\\mu_r$ of a substance is related to its magnetic susceptibility $\\chi$ by:",
+          "image": "",
+          "options": [
+            "$\\mu_r = 1 + \\chi$",
+            "$\\mu_r = 1 - \\chi$",
+            "$\\mu_r = \\chi - 1$",
+            "$\\mu_r = \\frac{1}{\\chi}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total magnetic induction inside a material is $\\vec{B} = \\mu_0(\\vec{H} + \\vec{M}) = \\mu_0(\\vec{H} + \\chi\\vec{H}) = \\mu_0(1 + \\chi)\\vec{H}$.\nSince $\\vec{B} = \\mu\\vec{H} = \\mu_0 \\mu_r \\vec{H}$, we have:\n$$\\mu_r = 1 + \\chi$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A thin bar magnet of length $2L$ and magnetic moment $M$ is cut into two equal halves perpendicular to its length. The magnetic moment of each half is:",
+          "image": "",
+          "options": [
+            "$M/2$",
+            "$M$",
+            "$M/4$",
+            "$2M$"
+          ],
+          "correctOption": 0,
+          "solution": "Cutting the magnet perpendicular to its length halves the length ($L' = L$) while keeping the pole strength $m$ unchanged.\nNew magnetic moment of each piece:\n$$M' = m L' = m\\left(\\frac{2L}{2}\\right) = \\frac{M}{2}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For a diamagnetic material, the magnetic susceptibility $\\chi$ is:",
+          "image": "",
+          "options": [
+            "Negative and small ($-1 \\le \\chi < 0$)",
+            "Positive and small ($0 < \\chi < 1$)",
+            "Positive and very large ($\\chi \\gg 1$)",
+            "Zero at all temperatures"
+          ],
+          "correctOption": 0,
+          "solution": "Diamagnetic materials create an induced magnetic moment opposing the applied magnetic field according to Lenz's law.\nConsequently, their magnetic susceptibility $\\chi$ is negative, small in magnitude, and almost independent of temperature."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Above the Curie temperature $T_c$, a ferromagnetic material transitions into:",
+          "image": "",
+          "options": [
+            "A paramagnetic material",
+            "A diamagnetic material",
+            "A superconductor",
+            "A non-magnetic insulator"
+          ],
+          "correctOption": 0,
+          "solution": "Above the Curie temperature $T_c$, thermal agitation overcomes the exchange coupling between adjacent magnetic dipoles, destroying spontaneous domain magnetization.\nThe substance then behaves as a paramagnetic material whose susceptibility obeys the Curie-Weiss law: $\\chi = \\frac{C}{T - T_c}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A bar magnet is oscillating in a uniform magnetic field $B$ with time period $T$. If its magnetic moment is quadrupled ($M' = 4M$), the new time period of oscillation is:",
+          "image": "",
+          "options": [
+            "$T/2$",
+            "$2T$",
+            "$T/4$",
+            "$4T$"
+          ],
+          "correctOption": 0,
+          "solution": "The time period of a vibrating magnetometer or freely suspended bar magnet is:\n$$T = 2\\pi \\sqrt{\\frac{I}{M B}}$$\nWhen $M' = 4M$ with moment of inertia $I$ and field $B$ constant:\n$$T' = 2\\pi \\sqrt{\\frac{I}{4M B}} = \\frac{1}{2}\\left(2\\pi \\sqrt{\\frac{I}{MB}}\\right) = \\frac{T}{2}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A solenoid of length $0.5\\text{ m}$ having 1000 turns and cross-sectional area $2.0 \\times 10^{-4}\\text{ m}^2$ carries a current of $3.0\\text{ A}$. The equivalent magnetic dipole moment of this solenoid is:",
+          "image": "",
+          "options": [
+            "$0.60\\text{ A}\\cdot\\text{m}^2$",
+            "$0.30\\text{ A}\\cdot\\text{m}^2$",
+            "$1.20\\text{ A}\\cdot\\text{m}^2$",
+            "$0.15\\text{ A}\\cdot\\text{m}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "The magnetic dipole moment of a current-carrying solenoid is:\n$$M = N I A$$\nSubstitute $N = 1000$, $I = 3.0\\text{ A}$, and $A = 2.0 \\times 10^{-4}\\text{ m}^2$:\n$$M = 1000 \\times 3.0 \\times (2.0 \\times 10^{-4}) = 0.60\\text{ A}\\cdot\\text{m}^2$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If a magnetic substance is placed in a non-uniform external magnetic field, a diamagnetic rod will tend to align itself:",
+          "image": "",
+          "options": [
+            "Perpendicular to the field direction, moving towards regions of weaker field",
+            "Parallel to the field direction, moving towards regions of stronger field",
+            "Parallel to the field direction, moving towards regions of weaker field",
+            "At $45^\\circ$ to the field lines without translational motion"
+          ],
+          "correctOption": 0,
+          "solution": "Diamagnetic substances are weakly repelled by magnetic fields.\nIn a non-uniform field, they experience a net force directed from stronger to weaker field regions, and a rod sets itself perpendicular to the field lines."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The Bohr magneton $\\mu_B$ represents the elementary orbital magnetic dipole moment of an electron and is given by:",
+          "image": "",
+          "options": [
+            "$\\frac{e h}{4\\pi m_e}$",
+            "$\\frac{e h}{2\\pi m_e}$",
+            "$\\frac{e m_e}{4\\pi h}$",
+            "$\\frac{4\\pi e h}{m_e}$"
+          ],
+          "correctOption": 0,
+          "solution": "Orbital angular momentum in the ground state of hydrogen is $L = \\frac{h}{2\\pi}$.\nUsing the gyromagnetic ratio $\\frac{\\mu}{L} = \\frac{e}{2m_e}$:\n$$\\mu_B = \\frac{e}{2m_e} L = \\frac{e}{2m_e}\\left(\\frac{h}{2\\pi}\\right) = \\frac{e h}{4\\pi m_e}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A bar magnet of length $2L$ and magnetic moment $M$ is cut into two equal halves along its length (parallel to its axis). The magnetic moment of each piece is:",
+          "image": "",
+          "options": [
+            "$M/2$",
+            "$M$",
+            "$M/4$",
+            "$2M$"
+          ],
+          "correctOption": 0,
+          "solution": "Cutting the magnet parallel to its length splits its cross-sectional area in half, thereby halving the pole strength ($m' = m/2$) while leaving the length $2L$ unaltered.\nNew magnetic moment of each half:\n$$M' = m'(2L) = \\left(\\frac{m}{2}\\right)(2L) = \\frac{M}{2}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Permanent magnets are best made of materials having:",
+          "image": "",
+          "options": [
+            "High retentivity and high coercivity",
+            "High retentivity and low coercivity",
+            "Low retentivity and high coercivity",
+            "Low retentivity and low coercivity"
+          ],
+          "correctOption": 0,
+          "solution": "A permanent magnet must retain strong magnetization over time without easily being demagnetized by stray magnetic fields, mechanical shocks, or thermal fluctuations.\nTherefore, it requires both high retentivity (to remain strong) and high coercivity (to resist demagnetization)."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two identical short bar magnets, each of magnetic moment $M$, are placed perpendicular to each other with their centres coinciding to form a cross. The net magnetic moment of the combination is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{2}M$",
+            "$2M$",
+            "$M$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic dipole moment is a vector quantity pointing from the south pole to the north pole.\nFor two orthogonal magnetic moments $\\vec{M}_1$ and $\\vec{M}_2$ with $|\\vec{M}_1| = |\\vec{M}_2| = M$:\n$$M_{\\text{net}} = \\sqrt{M_1^2 + M_2^2 + 2M_1 M_2 \\cos 90^\\circ} = \\sqrt{M^2 + M^2} = \\sqrt{2}M$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An electromagnet should possess a core material characterized by:",
+          "image": "",
+          "options": [
+            "High permeability and low retentivity",
+            "High permeability and high retentivity",
+            "Low permeability and high retentivity",
+            "Low permeability and low retentivity"
+          ],
+          "correctOption": 0,
+          "solution": "An electromagnet needs to produce strong magnetic fields upon switching on current (requiring high magnetic permeability) and immediately lose almost all magnetization upon switching off current (requiring low retentivity and low coercivity, as in soft iron)."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Inside a bar magnet, the direction of the magnetic field lines is:",
+          "image": "",
+          "options": [
+            "From South pole to North pole",
+            "From North pole to South pole",
+            "Radially outwards from the centre",
+            "There are no field lines inside a magnet"
+          ],
+          "correctOption": 0,
+          "solution": "Because magnetic field lines form continuous closed loops without start or end points (due to $\\vec{\\nabla} \\cdot \\vec{B} = 0$), they emerge from the North pole to the South pole outside the magnet and run from the South pole to the North pole inside the magnet."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A short bar magnet has a magnetic dipole moment of $0.5\\text{ A}\\cdot\\text{m}^2$. Find the magnitude of magnetic field (in $\\mu\\text{T}$) at a point on its axis at a distance of $0.1\\text{ m}$ from its centre (take $\\frac{\\mu_0}{4\\pi} = 10^{-7}\\text{ T}\\cdot\\text{m/A}$).",
+          "image": "",
+          "correctValue": 100.0,
+          "solution": "Axial magnetic field for a short bar magnet:\n$$B = \\frac{\\mu_0}{4\\pi} \\frac{2M}{d^3}$$\nSubstitute $M = 0.5\\text{ A}\\cdot\\text{m}^2$ and $d = 0.1\\text{ m}$:\n$$B = 10^{-7} \\times \\frac{2(0.5)}{(0.1)^3} = 10^{-7} \\times \\frac{1.0}{10^{-3}} = 10^{-4}\\text{ T} = 100.0\\,\\mu\\text{T}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A magnetic dipole of moment $M = 1.2\\text{ A}\\cdot\\text{m}^2$ is aligned at $30^\\circ$ to a uniform magnetic field $B = 0.5\\text{ T}$. Find the magnitude of the restoring torque (in $\\text{N}\\cdot\\text{m}$) acting on the dipole.",
+          "image": "",
+          "correctValue": 0.3,
+          "solution": "Torque on a magnetic dipole in a uniform magnetic field:\n$$\\tau = M B \\sin\\theta = 1.2 \\times 0.5 \\times \\sin 30^\\circ = 0.6 \\times 0.5 = 0.3\\text{ N}\\cdot\\text{m}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A paramagnetic material has a magnetic susceptibility of $\\chi = 1.5 \\times 10^{-3}$ at temperature $T = 300\\text{ K}$. If the temperature is reduced to $150\\text{ K}$, find the new susceptibility in units of $10^{-3}$.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "By Curie's law:\n$$\\chi_1 T_1 = \\chi_2 T_2$$\n$$(1.5 \\times 10^{-3})(300) = \\chi_2 (150)$$\n$$\\chi_2 = 1.5 \\times 10^{-3} \\times \\left(\\frac{300}{150}\\right) = 3.0 \\times 10^{-3}$$\nValue in units of $10^{-3}$ is $3.0$."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] A circular coil of 200 turns and radius $5\\text{ cm}$ carries a current of $2\\text{ A}$. Find its magnetic dipole moment (in $\\text{A}\\cdot\\text{m}^2$, take $\\pi = 3.14$, rounded to two decimal places).",
+          "image": "",
+          "correctValue": 3.14,
+          "solution": "Area of each circular turn:\n$$A = \\pi r^2 = 3.1416 \\times (0.05)^2 = 3.1416 \\times 0.0025 = 7.854 \\times 10^{-3}\\text{ m}^2$$\nMagnetic dipole moment:\n$$M = N I A = 200 \\times 2 \\times (7.854 \\times 10^{-3}) = 400 \\times 7.854 \\times 10^{-3} = 3.1416\\text{ A}\\cdot\\text{m}^2 \\approx 3.14\\text{ A}\\cdot\\text{m}^2$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A magnetic material has a relative permeability $\\mu_r = 401$. Find its magnetic susceptibility $\\chi$.",
+          "image": "",
+          "correctValue": 400.0,
+          "solution": "The relation between relative permeability and magnetic susceptibility is:\n$$\\mu_r = 1 + \\chi$$\n$$\\chi = \\mu_r - 1 = 401 - 1 = 400.0$$"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-24-wave-optics",
+  "title": "Wave Optics",
+  "syllabus": "Wave front and Huygens' principle, reflection and refraction of plane wave at a plane surface using wave fronts; Proof of laws of reflection and refraction using Huygens' principle; Interference, Young's double slit experiment and expression for fringe width, coherent sources and sustained interference of light; Diffraction due to a single slit, width of central maximum; Resolving power of microscopes and astronomical telescopes; Polarisation, plane polarised light, Brewster's law, uses of plane polarised light and Polaroids",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In Young's double slit experiment, if the separation between the slits is halved and the distance between the slits and the screen is doubled, the fringe width will:",
+          "image": "",
+          "options": [
+            "Become four times",
+            "Be halved",
+            "Remain unchanged",
+            "Be doubled"
+          ],
+          "correctOption": 0,
+          "solution": "Fringe width in YDSE is given by $\\beta = \\frac{\\lambda D}{d}$.\nWhen slit separation is halved ($d' = d/2$) and distance to screen is doubled ($D' = 2D$):\n$$\\beta' = \\frac{\\lambda D'}{d'} = \\frac{\\lambda(2D)}{d/2} = 4\\left(\\frac{\\lambda D}{d}\\right) = 4\\beta$$\nHence, the fringe width becomes four times its initial value."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] In a Young's double slit experiment, the ratio of maximum to minimum intensity in the interference fringe pattern is $25 : 9$. The ratio of the slit widths $w_1 : w_2$ is:",
+          "image": "",
+          "options": [
+            "$16 : 1$",
+            "$4 : 1$",
+            "$5 : 3$",
+            "$25 : 9$"
+          ],
+          "correctOption": 0,
+          "solution": "Ratio of intensities:\n$$\\frac{I_{\\max}}{I_{\\min}} = \\left(\\frac{A_1 + A_2}{A_1 - A_2}\\right)^2 = \\frac{25}{9} \\implies \\frac{A_1 + A_2}{A_1 - A_2} = \\frac{5}{3}$$\n$$3A_1 + 3A_2 = 5A_1 - 5A_2 \\implies 2A_1 = 8A_2 \\implies \\frac{A_1}{A_2} = 4$$\nSince slit width $w$ is proportional to intensity $I \\propto A^2$:\n$$\\frac{w_1}{w_2} = \\frac{I_1}{I_2} = \\left(\\frac{A_1}{A_2}\\right)^2 = 4^2 = 16 : 1$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] In a single slit diffraction experiment, light of wavelength $600\\text{ nm}$ illuminates a slit of width $0.2\\text{ mm}$. The linear width of the central diffraction maximum on a screen placed $2.0\\text{ m}$ away is:",
+          "image": "",
+          "options": [
+            "$12.0\\text{ mm}$",
+            "$6.0\\text{ mm}$",
+            "$3.0\\text{ mm}$",
+            "$24.0\\text{ mm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Linear width of the central diffraction maximum is:\n$$\\beta_0 = \\frac{2\\lambda D}{a}$$\nSubstitute $\\lambda = 600 \\times 10^{-9}\\text{ m}$, $D = 2.0\\text{ m}$, and $a = 0.2 \\times 10^{-3}\\text{ m}$:\n$$\\beta_0 = \\frac{2 \\times (600 \\times 10^{-9}) \\times 2.0}{0.2 \\times 10^{-3}} = \\frac{2400 \\times 10^{-9}}{0.2 \\times 10^{-3}} = 1.2 \\times 10^{-2}\\text{ m} = 12.0\\text{ mm}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An unpolarised light beam of intensity $I_0$ passes through two polaroids whose transmission axes are inclined at an angle of $60^\\circ$ to each other. The intensity of light transmitted through the second polaroid is:",
+          "image": "",
+          "options": [
+            "$\\frac{I_0}{8}$",
+            "$\\frac{I_0}{4}$",
+            "$\\frac{I_0}{2}$",
+            "$\\frac{3I_0}{8}$"
+          ],
+          "correctOption": 0,
+          "solution": "Intensity transmitted by the first polaroid from unpolarised light is $I_1 = \\frac{I_0}{2}$.\nBy Malus's Law, intensity transmitted by the second polaroid is:\n$$I_2 = I_1 \\cos^2\\theta = \\left(\\frac{I_0}{2}\\right) \\cos^2(60^\\circ) = \\frac{I_0}{2} \\times \\left(\\frac{1}{2}\\right)^2 = \\frac{I_0}{8}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] In a Young's double slit experiment, a transparent mica sheet of thickness $t$ and refractive index $\\mu$ is introduced in the path of one of the interfering beams. The shift of the central fringe pattern on the screen is:",
+          "image": "",
+          "options": [
+            "$\\frac{D}{d}(\\mu - 1)t$",
+            "$\\frac{d}{D}(\\mu - 1)t$",
+            "$\\frac{D}{d}\\frac{t}{\\mu - 1}$",
+            "$\\frac{D}{d}\\mu t$"
+          ],
+          "correctOption": 0,
+          "solution": "Introducing a sheet of thickness $t$ and refractive index $\\mu$ introduces an extra optical path length $\\Delta x = (\\mu - 1)t$.\nFor the central bright fringe, the net path difference is zero: $d\\left(\\frac{y_0}{D}\\right) - (\\mu - 1)t = 0$.\n$$y_0 = \\frac{D}{d}(\\mu - 1)t$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The wavefront corresponding to a parallel beam of light propagating in a homogeneous medium is:",
+          "image": "",
+          "options": [
+            "Planar",
+            "Spherical",
+            "Cylindrical",
+            "Ellipsoidal"
+          ],
+          "correctOption": 0,
+          "solution": "A wavefront is the locus of all points having the same phase of oscillation.\nFor a parallel beam of light (such as light originating from a source at infinity), the rays are mutually parallel and perpendicular to a family of flat planes, yielding a planar wavefront."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Two coherent monochromatic light sources have an intensity ratio $\\frac{I_1}{I_2} = 4$. In their interference pattern, the visibility of fringes defined as $V = \\frac{I_{\\max} - I_{\\min}}{I_{\\max} + I_{\\min}}$ is:",
+          "image": "",
+          "options": [
+            "$0.8$",
+            "$0.6$",
+            "$0.5$",
+            "$0.9$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $I_2 = I_0$, then $I_1 = 4I_0$.\nAmplitudes: $A_1 = 2\\sqrt{I_0}$ and $A_2 = \\sqrt{I_0}$.\n$$I_{\\max} = (A_1 + A_2)^2 = (2\\sqrt{I_0} + \\sqrt{I_0})^2 = (3\\sqrt{I_0})^2 = 9I_0$$\n$$I_{\\min} = (A_1 - A_2)^2 = (2\\sqrt{I_0} - \\sqrt{I_0})^2 = (\\sqrt{I_0})^2 = I_0$$\nFringe visibility:\n$$V = \\frac{I_{\\max} - I_{\\min}}{I_{\\max} + I_{\\min}} = \\frac{9I_0 - I_0}{9I_0 + I_0} = \\frac{8I_0}{10I_0} = 0.8$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A beam of unpolarised light is incident at the polarising angle $\\theta_p$ on a glass surface of refractive index $\\mu = 1.732$. The value of $\\theta_p$ is:",
+          "image": "",
+          "options": [
+            "$60^\\circ$",
+            "$30^\\circ$",
+            "$45^\\circ$",
+            "$75^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "According to Brewster's law:\n$$\\tan\\theta_p = \\mu$$\nGiven $\\mu = 1.732 = \\sqrt{3}$:\n$$\\tan\\theta_p = \\sqrt{3} \\implies \\theta_p = 60^\\circ$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In a Young's double slit experiment using light of wavelength $\\lambda = 500\\text{ nm}$, the $4^{\\text{th}}$ bright fringe coincides with the $5^{\\text{th}}$ dark fringe of another light of wavelength $\\lambda'$. The wavelength $\\lambda'$ is:",
+          "image": "",
+          "options": [
+            "$444.4\\text{ nm}$",
+            "$400.0\\text{ nm}$",
+            "$555.5\\text{ nm}$",
+            "$450.0\\text{ nm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Position of the $4^{\\text{th}}$ bright fringe: $y_4 = 4\\frac{\\lambda D}{d}$.\nPosition of the $5^{\\text{th}}$ dark fringe: $y'_5 = \\left(5 - \\frac{1}{2}\\right)\\frac{\\lambda' D}{d} = 4.5\\frac{\\lambda' D}{d}$.\nEquating positions:\n$$4\\frac{\\lambda D}{d} = 4.5\\frac{\\lambda' D}{d} \\implies 4\\lambda = 4.5\\lambda'$$\n$$\\lambda' = \\frac{4}{4.5}\\lambda = \\frac{8}{9}(500\\text{ nm}) = \\frac{4000}{9}\\text{ nm} \\approx 444.4\\text{ nm}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In a single slit Fraunhofer diffraction pattern, the angular spread of the central maximum is:",
+          "image": "",
+          "options": [
+            "$\\frac{2\\lambda}{a}$",
+            "$\\frac{\\lambda}{a}$",
+            "$\\frac{\\lambda}{2a}$",
+            "$\\frac{4\\lambda}{a}$"
+          ],
+          "correctOption": 0,
+          "solution": "The first minima on either side of the central maximum occur at angle $\\theta$ given by $a\\sin\\theta = \\pm\\lambda \\implies \\theta \\approx \\pm\\frac{\\lambda}{a}$.\nThe total angular width of the central maximum is the angular distance between the two first-order minima:\n$$2\\theta = \\frac{2\\lambda}{a}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] According to Rayleigh's criterion for resolution, two point objects viewed through an aperture of diameter $D$ are just resolved when their angular separation is at least:",
+          "image": "",
+          "options": [
+            "$\\frac{1.22\\lambda}{D}$",
+            "$\\frac{\\lambda}{D}$",
+            "$\\frac{0.61\\lambda}{D}$",
+            "$\\frac{1.22 D}{\\lambda}$"
+          ],
+          "correctOption": 0,
+          "solution": "Rayleigh's criterion states that two point sources are just resolved when the central diffraction maximum of one source falls on the first minimum of the other.\nFor a circular aperture of diameter $D$:\n$$\\theta_{\\min} = \\frac{1.22\\lambda}{D}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following optical phenomena conclusively confirms the transverse nature of electromagnetic light waves?",
+          "image": "",
+          "options": [
+            "Polarisation",
+            "Interference",
+            "Diffraction",
+            "Refraction"
+          ],
+          "correctOption": 0,
+          "solution": "Interference, diffraction, and refraction occur in both longitudinal waves (sound) and transverse waves.\nOnly transverse waves, whose vibrations occur perpendicular to the direction of wave propagation, can be restricted to a single plane of oscillation (polarised)."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] In Young's double slit experiment, if the entire apparatus is immersed in water of refractive index $\\mu = 4/3$, the fringe width $\\beta'$ will be:",
+          "image": "",
+          "options": [
+            "$\\frac{3}{4}\\beta$",
+            "$\\frac{4}{3}\\beta$",
+            "$\\beta$",
+            "$\\frac{9}{16}\\beta$"
+          ],
+          "correctOption": 0,
+          "solution": "In a medium of refractive index $\\mu$, the wavelength decreases to $\\lambda' = \\frac{\\lambda}{\\mu}$.\nFringe width:\n$$\\beta' = \\frac{\\lambda' D}{d} = \\frac{\\lambda D}{\\mu d} = \\frac{\\beta}{\\mu} = \\frac{\\beta}{4/3} = \\frac{3}{4}\\beta$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Two independent light bulbs of the same wattage and color placed side by side do not produce an observable interference pattern because:",
+          "image": "",
+          "options": [
+            "They are mutually incoherent sources with random, rapidly varying phase differences",
+            "The emitted light is strictly longitudinal",
+            "Their intensities are completely unequal",
+            "Their frequencies are widely different"
+          ],
+          "correctOption": 0,
+          "solution": "To observe sustained interference, the light sources must be mutually coherent (maintaining a constant phase difference).\nIndependent thermal light sources emit light packets from independent atomic transitions at random intervals ($10^{-8}\\text{ s}$), leading to random and rapidly changing phase relations that wash out any stationary interference fringes."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The path difference between two interfering waves at a point on the screen is $\\frac{\\lambda}{6}$. If $I_0$ is the maximum intensity at the central bright fringe, the intensity at this point is:",
+          "image": "",
+          "options": [
+            "$\\frac{3}{4} I_0$",
+            "$\\frac{1}{2} I_0$",
+            "$\\frac{1}{4} I_0$",
+            "$\\frac{\\sqrt{3}}{2} I_0$"
+          ],
+          "correctOption": 0,
+          "solution": "Phase difference for a path difference $\\Delta x = \\frac{\\lambda}{6}$ is:\n$$\\phi = \\frac{2\\pi}{\\lambda}\\Delta x = \\frac{2\\pi}{\\lambda}\\left(\\frac{\\lambda}{6}\\right) = \\frac{\\pi}{3}$$\nIntensity formula for two equal interfering beams:\n$$I = I_0 \\cos^2\\left(\\frac{\\phi}{2}\\right) = I_0 \\cos^2\\left(\\frac{\\pi}{6}\\right) = I_0 \\left(\\frac{\\sqrt{3}}{2}\\right)^2 = \\frac{3}{4} I_0$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The limit of resolution of a telescope with an objective lens of diameter $D$ using light of wavelength $\\lambda$ can be decreased by:",
+          "image": "",
+          "options": [
+            "Increasing $D$ and decreasing $\\lambda$",
+            "Decreasing $D$ and increasing $\\lambda$",
+            "Increasing both $D$ and $\\lambda$",
+            "Decreasing both $D$ and $\\lambda$"
+          ],
+          "correctOption": 0,
+          "solution": "The limit of resolution (minimum resolvable angle) of a telescope is:\n$$\\Delta\\theta = \\frac{1.22\\lambda}{D}$$\nTo decrease the limit of resolution (and thereby increase the resolving power $\\text{RP} = 1/\\Delta\\theta$), one must decrease the wavelength $\\lambda$ and increase the diameter (aperture) $D$ of the objective."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A plane wavefront is incident on a thin convex lens. The emergent wavefront is:",
+          "image": "",
+          "options": [
+            "Spherical and converging towards the focus",
+            "Spherical and diverging from the focus",
+            "Planar",
+            "Cylindrical"
+          ],
+          "correctOption": 0,
+          "solution": "A plane wave is transformed by a converging convex lens into a converging spherical wavefront whose centre of curvature coincides with the principal focus of the lens."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the distance between the source and a single slit is increased, the diffraction pattern on the screen:",
+          "image": "",
+          "options": [
+            "Remains unchanged in fringe width, but intensity decreases",
+            "Becomes wider",
+            "Becomes narrower",
+            "Disappears completely"
+          ],
+          "correctOption": 0,
+          "solution": "The angular fringe width $\\theta = \\frac{\\lambda}{a}$ and linear width $\\beta = \\frac{2\\lambda D}{a}$ depend only on the wavelength $\\lambda$, slit width $a$, and distance between the slit and the screen $D$.\nChanging the distance between the primary source and the slit changes only the illuminance (intensity) of light entering the slit, leaving the width of diffraction fringes unaltered."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] In an interference experiment, the ratio of amplitudes of two coherent waves is $A_1 / A_2 = 3 / 2$. The ratio of maximum intensity to minimum intensity in the pattern is:",
+          "image": "",
+          "options": [
+            "$25 : 1$",
+            "$9 : 4$",
+            "$5 : 1$",
+            "$13 : 5$"
+          ],
+          "correctOption": 0,
+          "solution": "Maximum and minimum intensities:\n$$I_{\\max} = (A_1 + A_2)^2, \\quad I_{\\min} = (A_1 - A_2)^2$$\n$$\\frac{I_{\\max}}{I_{\\min}} = \\left(\\frac{A_1 + A_2}{A_1 - A_2}\\right)^2 = \\left(\\frac{3 + 2}{3 - 2}\\right)^2 = \\left(\\frac{5}{1}\\right)^2 = 25 : 1$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Two polaroids are oriented with their transmission axes mutually perpendicular, so no light is transmitted. A third polaroid is introduced between them with its axis oriented at $45^\\circ$ to both. If incident light on the first polaroid is unpolarised with intensity $I_0$, the transmitted intensity is:",
+          "image": "",
+          "options": [
+            "$\\frac{I_0}{8}$",
+            "$\\frac{I_0}{4}$",
+            "$\\frac{I_0}{16}$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Intensity transmitted by polaroid 1: $I_1 = \\frac{I_0}{2}$.\nIntensity transmitted by middle polaroid 2 at $\\theta_1 = 45^\\circ$:\n$$I_2 = I_1 \\cos^2(45^\\circ) = \\frac{I_0}{2} \\times \\frac{1}{2} = \\frac{I_0}{4}$$\nThe angle between polaroid 2 and polaroid 3 is $\\theta_2 = 90^\\circ - 45^\\circ = 45^\\circ$:\n$$I_3 = I_2 \\cos^2(45^\\circ) = \\frac{I_0}{4} \\times \\frac{1}{2} = \\frac{I_0}{8}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] In a Young's double slit experiment, slit separation is $d = 0.5\\text{ mm}$ and screen distance is $D = 1.0\\text{ m}$. If light of wavelength $500\\text{ nm}$ is used, find the fringe width in millimetres.",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Fringe width formula:\n$$\\beta = \\frac{\\lambda D}{d}$$\nSubstitute $\\lambda = 500 \\times 10^{-9}\\text{ m}$, $D = 1.0\\text{ m}$, and $d = 0.5 \\times 10^{-3}\\text{ m}$:\n$$\\beta = \\frac{(500 \\times 10^{-9}\\text{ m}) \\times 1.0\\text{ m}}{0.5 \\times 10^{-3}\\text{ m}} = \\frac{5.0 \\times 10^{-7}}{0.5 \\times 10^{-3}} = 1.0 \\times 10^{-3}\\text{ m} = 1.0\\text{ mm}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] In a single slit diffraction experiment, a slit of width $0.1\\text{ mm}$ is illuminated by light of wavelength $600\\text{ nm}$. Find the angular width (in milliradians) of the central diffraction maximum.",
+          "image": "",
+          "correctValue": 12.0,
+          "solution": "Angular width of the central maximum:\n$$2\\theta = \\frac{2\\lambda}{a}$$\nSubstitute $\\lambda = 600 \\times 10^{-9}\\text{ m}$ and $a = 0.1 \\times 10^{-3}\\text{ m}$:\n$$2\\theta = \\frac{2 \\times (600 \\times 10^{-9})}{0.1 \\times 10^{-3}} = \\frac{1.2 \\times 10^{-6}}{10^{-4}} = 1.2 \\times 10^{-2}\\text{ rad} = 12.0\\text{ mrad}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] In Young's double slit experiment, the distance between slits is $0.2\\text{ mm}$ and the distance to the screen is $1.5\\text{ m}$. If the distance between the central bright fringe and the $3^{\\text{rd}}$ bright fringe is $13.5\\text{ mm}$, find the wavelength of light in nanometers.",
+          "image": "",
+          "correctValue": 600.0,
+          "solution": "Distance to the $n^{\\text{th}}$ bright fringe:\n$$y_n = n \\frac{\\lambda D}{d}$$\nFor $n = 3$, $y_3 = 13.5 \\times 10^{-3}\\text{ m}$:\n$$13.5 \\times 10^{-3} = 3 \\times \\frac{\\lambda \\times 1.5}{0.2 \\times 10^{-3}}$$\n$$13.5 \\times 10^{-3} = \\lambda \\times \\frac{4.5}{0.2 \\times 10^{-3}} = \\lambda \\times (2.25 \\times 10^4)$$\n$$\\lambda = \\frac{13.5 \\times 10^{-3}}{2.25 \\times 10^4} = 6.0 \\times 10^{-7}\\text{ m} = 600.0\\text{ nm}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] In a Young's double slit experiment, a thin glass plate ($n = 1.5$) of thickness $6\\,\\mu\\text{m}$ is introduced into the path of one of the beams. Taking $\\lambda = 500\\text{ nm}$, find the number of fringes by which the central fringe shifts on the screen.",
+          "image": "",
+          "correctValue": 6.0,
+          "solution": "The number of fringes shifted is given by:\n$$N = \\frac{(\\mu - 1)t}{\\lambda}$$\nSubstitute $\\mu = 1.5$, $t = 6 \\times 10^{-6}\\text{ m}$, and $\\lambda = 500 \\times 10^{-9}\\text{ m}$:\n$$N = \\frac{(1.5 - 1) \\times (6 \\times 10^{-6})}{500 \\times 10^{-9}} = \\frac{0.5 \\times (6 \\times 10^{-6})}{5 \\times 10^{-7}} = \\frac{3.0 \\times 10^{-6}}{0.5 \\times 10^{-6}} = 6.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the Brewster angle (polarising angle) in degrees for light incident from air onto the surface of a diamond having a refractive index $\\mu = 2.414$ (take $\\tan 67.5^\\circ \\approx 2.414$).",
+          "image": "",
+          "correctValue": 67.5,
+          "solution": "By Brewster's Law:\n$$\\tan\\theta_p = \\mu$$\nGiven $\\mu = 2.414$:\n$$\\theta_p = \\tan^{-1}(2.414) = 67.5^\\circ$$"
+        }
+      ]
+    }
+  ]
+}

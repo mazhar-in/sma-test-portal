@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-21-alternating-current",
+  "title": "Alternating Current",
+  "syllabus": "Alternating currents, peak and RMS value of alternating current/voltage; Reactance and impedance; LCR series circuit, resonance; Quality factor, power in AC circuits, wattless current; AC generator and transformer",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In a series LCR circuit, the values of inductance, capacitance, and resistance are $L = 10\\text{ mH}$, $C = 1\\,\\mu\\text{F}$, and $R = 100\\,\\Omega$ respectively. The resonance frequency $\\nu_0$ of the circuit is:",
+          "image": "",
+          "options": [
+            "$\\approx 1.59\\text{ kHz}$",
+            "$\\approx 15.9\\text{ kHz}$",
+            "$\\approx 159\\text{ Hz}$",
+            "$\\approx 3.18\\text{ kHz}$"
+          ],
+          "correctOption": 0,
+          "solution": "Resonance frequency is given by:\n$$\\nu_0 = \\frac{1}{2\\pi\\sqrt{LC}}$$\nSubstitute $L = 10 \\times 10^{-3}\\text{ H} = 10^{-2}\\text{ H}$ and $C = 10^{-6}\\text{ F}$:\n$$\\sqrt{LC} = \\sqrt{10^{-2} \\times 10^{-6}} = \\sqrt{10^{-8}} = 10^{-4}\\text{ s}$$\n$$\\nu_0 = \\frac{1}{2\\pi \\times 10^{-4}} = \\frac{10^4}{2\\pi} = \\frac{10000}{6.283} \\approx 1591.5\\text{ Hz} \\approx 1.59\\text{ kHz}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] An alternating current is given by $I = I_1\\cos(\\omega t) + I_2\\sin(\\omega t)$. The RMS value of this current is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{I_1^2 + I_2^2}{2}}$",
+            "$\\frac{I_1 + I_2}{\\sqrt{2}}$",
+            "$\\sqrt{I_1^2 + I_2^2}$",
+            "$\\frac{I_1 + I_2}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "The peak amplitude of the sinusoidal current is:\n$$I_0 = \\sqrt{I_1^2 + I_2^2}$$\nRMS current for a pure sinusoidal waveform is:\n$$I_{\\text{rms}} = \\frac{I_0}{\\sqrt{2}} = \\frac{\\sqrt{I_1^2 + I_2^2}}{\\sqrt{2}} = \\sqrt{\\frac{I_1^2 + I_2^2}{2}}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] In a series LCR circuit at resonance, the phase difference between the applied alternating voltage and the resulting alternating current is:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$\\frac{\\pi}{2}$",
+            "$\\pi$",
+            "$\\frac{\\pi}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Phase angle $\\phi$ in a series LCR circuit satisfies:\n$$\\tan\\phi = \\frac{X_L - X_C}{R}$$\nAt resonance, inductive reactance equals capacitive reactance ($X_L = X_C$), so:\n$$\\tan\\phi = 0 \\implies \\phi = 0$$\nVoltage and current are in phase."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A step-down transformer transforms $2200\\text{ V}$ to $220\\text{ V}$. If the primary coil has 2000 turns and efficiency of the transformer is $90\\%$, the number of turns in the secondary coil is:",
+          "image": "",
+          "options": [
+            "200",
+            "180",
+            "220",
+            "100"
+          ],
+          "correctOption": 0,
+          "solution": "Turn ratio relation for a transformer:\n$$\\frac{V_s}{V_p} = \\frac{N_s}{N_p}$$\nTurns in secondary:\n$$N_s = N_p \\left(\\frac{V_s}{V_p}\\right) = 2000 \\times \\left(\\frac{220}{2200}\\right) = 2000 \\times \\frac{1}{10} = 200$$\nNote: Number of turns depends strictly on the induced EMF ratio per turn, unaffected by power efficiency."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] In a circuit, the alternating voltage and current are given by $V = 100\\sin(100t)\\text{ V}$ and $I = 100\\sin\\left(100t + \\frac{\\pi}{3}\\right)\\text{ mA}$. The average power dissipated in the circuit is:",
+          "image": "",
+          "options": [
+            "$2.5\\text{ W}$",
+            "$5.0\\text{ W}$",
+            "$10.0\\text{ W}$",
+            "$1.25\\text{ W}$"
+          ],
+          "correctOption": 0,
+          "solution": "Peak values: $V_0 = 100\\text{ V}$, $I_0 = 100\\text{ mA} = 0.1\\text{ A}$.\nPhase difference: $\\phi = \\pi/3$.\nAverage power in an AC circuit:\n$$P_{\\text{avg}} = V_{\\text{rms}} I_{\\text{rms}} \\cos\\phi = \\left(\\frac{V_0}{\\sqrt{2}}\\right) \\left(\\frac{I_0}{\\sqrt{2}}\\right) \\cos\\left(\\frac{\\pi}{3}\\right) = \\frac{V_0 I_0}{2} \\times \\frac{1}{2}$$\n$$P_{\\text{avg}} = \\frac{100 \\times 0.1}{4} = \\frac{10}{4} = 2.5\\text{ W}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The Quality factor ($Q$) of a series LCR resonant circuit with parameters $L, C,$ and $R$ is expressed as:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{R}\\sqrt{\\frac{L}{C}}$",
+            "$\\frac{1}{L}\\sqrt{\\frac{R}{C}}$",
+            "$\\frac{1}{C}\\sqrt{\\frac{L}{R}}$",
+            "$R\\sqrt{\\frac{C}{L}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Quality factor measures sharpness of resonance:\n$$Q = \\frac{\\omega_0 L}{R} = \\frac{1}{\\omega_0 C R}$$\nSince $\\omega_0 = \\frac{1}{\\sqrt{LC}}$:\n$$Q = \\frac{1}{\\sqrt{LC}}\\frac{L}{R} = \\frac{1}{R}\\sqrt{\\frac{L}{C}}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] An AC voltage source $V = V_0\\sin(\\omega t)$ is connected across a pure capacitor of capacitance $C$. The current $I(t)$ flowing in the circuit is:",
+          "image": "",
+          "options": [
+            "$\\omega C V_0\\sin\\left(\\omega t + \\frac{\\pi}{2}\\right)$",
+            "$\\omega C V_0\\sin\\left(\\omega t - \\frac{\\pi}{2}\\right)$",
+            "$\\frac{V_0}{\\omega C}\\sin\\left(\\omega t + \\frac{\\pi}{2}\\right)$",
+            "$\\frac{V_0}{\\omega C}\\sin(\\omega t)$"
+          ],
+          "correctOption": 0,
+          "solution": "For a pure capacitor: $q(t) = C V(t) = C V_0\\sin(\\omega t)$.\n$$I(t) = \\frac{dq}{dt} = \\omega C V_0\\cos(\\omega t) = \\omega C V_0\\sin\\left(\\omega t + \\frac{\\pi}{2}\\right)$$\nCurrent leads the voltage by a phase angle of $\\pi/2$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A series LCR circuit has $R = 40\\,\\Omega$, inductive reactance $X_L = 100\\,\\Omega$, and capacitive reactance $X_C = 70\\,\\Omega$. The impedance of the circuit is:",
+          "image": "",
+          "options": [
+            "$50\\,\\Omega$",
+            "$70\\,\\Omega$",
+            "$30\\,\\Omega$",
+            "$90\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "Impedance of a series LCR circuit:\n$$Z = \\sqrt{R^2 + (X_L - X_C)^2}$$\n$$Z = \\sqrt{40^2 + (100 - 70)^2} = \\sqrt{40^2 + 30^2} = \\sqrt{1600 + 900} = \\sqrt{2500} = 50\\,\\Omega$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The wattless component of current in an AC circuit carrying RMS current $I_{\\text{rms}}$ with a phase angle $\\phi$ between voltage and current is:",
+          "image": "",
+          "options": [
+            "$I_{\\text{rms}}\\sin\\phi$",
+            "$I_{\\text{rms}}\\cos\\phi$",
+            "$I_{\\text{rms}}\\tan\\phi$",
+            "$I_{\\text{rms}}\\sec\\phi$"
+          ],
+          "correctOption": 0,
+          "solution": "The current can be resolved into two orthogonal components with respect to voltage:\n1) $I_{\\text{rms}}\\cos\\phi$ in phase with voltage, responsible for active power dissipation.\n2) $I_{\\text{rms}}\\sin\\phi$ in quadrature ($90^\\circ$) with voltage, which consumes zero net power and is termed wattless current."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In an AC circuit, an inductor of inductance $L$ and a resistor of resistance $R$ are connected in series across an AC source of angular frequency $\\omega$. The power factor of the circuit is:",
+          "image": "",
+          "options": [
+            "$\\frac{R}{\\sqrt{R^2 + \\omega^2 L^2}}$",
+            "$\\frac{\\omega L}{\\sqrt{R^2 + \\omega^2 L^2}}$",
+            "$\\frac{R}{\\omega L}$",
+            "$\\frac{\\omega L}{R}$"
+          ],
+          "correctOption": 0,
+          "solution": "Power factor is $\\cos\\phi = \\frac{R}{Z}$.\nFor a series LR circuit, impedance is $Z = \\sqrt{R^2 + X_L^2} = \\sqrt{R^2 + \\omega^2 L^2}$.\n$$\\cos\\phi = \\frac{R}{\\sqrt{R^2 + \\omega^2 L^2}}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] If the frequency of an alternating current supply is doubled, the inductive reactance $X_L$ and capacitive reactance $X_C$ will change respectively to:",
+          "image": "",
+          "options": [
+            "$2X_L$ and $\\frac{X_C}{2}$",
+            "$\\frac{X_L}{2}$ and $2X_C$",
+            "$2X_L$ and $2X_C$",
+            "$\\frac{X_L}{2}$ and $\\frac{X_C}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Inductive reactance: $X_L = 2\\pi f L \\implies X_L \\propto f$. Doubling $f$ doubles $X_L$ to $2X_L$.\nCapacitive reactance: $X_C = \\frac{1}{2\\pi f C} \\implies X_C \\propto \\frac{1}{f}$. Doubling $f$ halves $X_C$ to $\\frac{X_C}{2}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A capacitor blocks direct current (DC) because for DC:",
+          "image": "",
+          "options": [
+            "Frequency $f = 0$, so capacitive reactance $X_C \\to \\infty$",
+            "Frequency $f = 0$, so capacitive reactance $X_C = 0$",
+            "The resistance of a capacitor is infinite",
+            "The dielectric between plates conducts DC"
+          ],
+          "correctOption": 0,
+          "solution": "For steady DC, frequency $f = 0$.\nCapacitive reactance is $X_C = \\frac{1}{2\\pi f C} = \\frac{1}{0} \\to \\infty$.\nAn infinite reactance presents an open circuit, blocking DC completely."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A series LCR circuit with $L = 0.5\\text{ H}$, $C = 8\\,\\mu\\text{F}$, and $R = 10\\,\\Omega$ is connected to an AC source of variable frequency. The bandwidth $\\Delta\\omega$ of the circuit is:",
+          "image": "",
+          "options": [
+            "$20\\text{ rad/s}$",
+            "$10\\text{ rad/s}$",
+            "$40\\text{ rad/s}$",
+            "$5\\text{ rad/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "The bandwidth of an LCR resonant circuit is:\n$$\\Delta\\omega = \\frac{R}{L}$$\n$$\\Delta\\omega = \\frac{10\\,\\Omega}{0.5\\text{ H}} = 20\\text{ rad/s}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An electrical device draws $2\\text{ A}$ current from a $220\\text{ V}$, $50\\text{ Hz}$ AC line. If the current lags behind the voltage by $\\pi/3$, the power consumed by the device is:",
+          "image": "",
+          "options": [
+            "$220\\text{ W}$",
+            "$440\\text{ W}$",
+            "$110\\text{ W}$",
+            "$220\\sqrt{3}\\text{ W}$"
+          ],
+          "correctOption": 0,
+          "solution": "Given $V_{\\text{rms}} = 220\\text{ V}$, $I_{\\text{rms}} = 2\\text{ A}$, and $\\phi = \\pi/3$:\n$$P = V_{\\text{rms}} I_{\\text{rms}} \\cos\\phi = 220 \\times 2 \\times \\cos\\left(\\frac{\\pi}{3}\\right) = 440 \\times 0.5 = 220\\text{ W}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In a series LCR circuit, the voltages across the inductor, capacitor, and resistor are measured to be $V_L = 80\\text{ V}$, $V_C = 40\\text{ V}$, and $V_R = 30\\text{ V}$. The total applied RMS source voltage is:",
+          "image": "",
+          "options": [
+            "$50\\text{ V}$",
+            "$150\\text{ V}$",
+            "$70\\text{ V}$",
+            "$90\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using phasor addition for series LCR circuit:\n$$V_{\\text{source}} = \\sqrt{V_R^2 + (V_L - V_C)^2}$$\n$$V_{\\text{source}} = \\sqrt{30^2 + (80 - 40)^2} = \\sqrt{30^2 + 40^2} = \\sqrt{900 + 1600} = \\sqrt{2500} = 50\\text{ V}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A choke coil is preferred over a rheostat in AC circuits to reduce current because:",
+          "image": "",
+          "options": [
+            "Power loss in a choke coil is negligible",
+            "A choke coil increases the power factor",
+            "A choke coil completely blocks high voltage",
+            "A choke coil decreases the line voltage permanently"
+          ],
+          "correctOption": 0,
+          "solution": "An ideal choke coil has high inductance and nearly zero ohmic resistance.\nIts power factor is $\\cos\\phi \\approx 0$, meaning it introduces high reactance to restrict current with almost zero Joule heating loss, unlike a rheostat which dissipates energy as heat ($I^2 R$)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A capacitor of capacitance $C$ and an inductor of inductance $L$ form an LC resonant tank circuit. The oscillations of energy between electric and magnetic fields occur with angular frequency:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{\\sqrt{LC}}$",
+            "$\\sqrt{\\frac{L}{C}}$",
+            "$\\sqrt{LC}$",
+            "$\\frac{1}{LC}$"
+          ],
+          "correctOption": 0,
+          "solution": "Applying Kirchhoff's loop equation for an undamped LC circuit:\n$$L \\frac{d^2 q}{dt^2} + \\frac{q}{C} = 0 \\implies \\frac{d^2 q}{dt^2} + \\frac{1}{LC} q = 0$$\nThis is the standard SHM equation with natural angular frequency:\n$$\\omega_0 = \\frac{1}{\\sqrt{LC}}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The peak value of an AC voltage supply of $220\\text{ V}$ (mains supply) is approximately:",
+          "image": "",
+          "options": [
+            "$311\\text{ V}$",
+            "$220\\text{ V}$",
+            "$440\\text{ V}$",
+            "$155\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "Household rated supply specifies RMS voltage ($V_{\\text{rms}} = 220\\text{ V}$).\nPeak voltage:\n$$V_0 = \\sqrt{2} V_{\\text{rms}} = 1.4142 \\times 220\\text{ V} \\approx 311.1\\text{ V}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] In an ideal transformer, the primary winding has 500 turns and the secondary winding has 50 turns. If the input power to the primary is $1000\\text{ W}$, the output power from the secondary is:",
+          "image": "",
+          "options": [
+            "$1000\\text{ W}$",
+            "$100\\text{ W}$",
+            "$10000\\text{ W}$",
+            "$500\\text{ W}$"
+          ],
+          "correctOption": 0,
+          "solution": "An ideal transformer has $100\\%$ efficiency, which means there are no core, copper, or hysteresis losses.\nBy conservation of energy:\n$$P_{\\text{out}} = P_{\\text{in}} = 1000\\text{ W}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] A pure inductor of $25.0\\text{ mH}$ is connected to a source of $220\\text{ V}$, $50\\text{ Hz}$. The inductive reactance is (take $\\pi = 3.14$):",
+          "image": "",
+          "options": [
+            "$7.85\\,\\Omega$",
+            "$15.7\\,\\Omega$",
+            "$3.93\\,\\Omega$",
+            "$1.25\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "Inductive reactance:\n$$X_L = 2\\pi f L = 2 \\times 3.1416 \\times 50 \\times (25.0 \\times 10^{-3})$$\n$$X_L = 100\\pi \\times 0.025 = 2.5\\pi \\approx 2.5 \\times 3.1416 = 7.854\\,\\Omega \\approx 7.85\\,\\Omega$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A series LCR circuit has $L = 2.0\\text{ H}$, $C = 32\\,\\mu\\text{F}$, and $R = 10\\,\\Omega$. Find the resonant angular frequency $\\omega_0$ in $\\text{rad/s}$.",
+          "image": "",
+          "correctValue": 125.0,
+          "solution": "Resonant angular frequency is given by:\n$$\\omega_0 = \\frac{1}{\\sqrt{LC}}$$\nSubstitute $L = 2.0\\text{ H}$ and $C = 32 \\times 10^{-6}\\text{ F}$:\n$$LC = 2.0 \\times 32 \\times 10^{-6} = 64 \\times 10^{-6}\\text{ s}^2$$\n$$\\sqrt{LC} = 8 \\times 10^{-3}\\text{ s}$$\n$$\\omega_0 = \\frac{1}{8 \\times 10^{-3}} = \\frac{1000}{8} = 125.0\\text{ rad/s}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A coil has an inductance of $0.7\\text{ H}$ and is joined in series with a resistance of $220\\,\\Omega$. When an alternating emf of $220\\text{ V}$ at $50\\text{ Hz}$ is applied to it, find the RMS current (in Amperes) in the circuit (take $\\pi = \\frac{22}{7}$, rounded to two decimal places).",
+          "image": "",
+          "correctValue": 0.71,
+          "solution": "Inductive reactance:\n$$X_L = 2\\pi f L = 2 \\times \\frac{22}{7} \\times 50 \\times 0.7 = 2 \\times 22 \\times 5 = 220\\,\\Omega$$\nImpedance:\n$$Z = \\sqrt{R^2 + X_L^2} = \\sqrt{220^2 + 220^2} = 220\\sqrt{2}\\,\\Omega$$\nRMS current:\n$$I_{\\text{rms}} = \\frac{V_{\\text{rms}}}{Z} = \\frac{220}{220\\sqrt{2}} = \\frac{1}{\\sqrt{2}} \\approx 0.707\\text{ A} \\approx 0.71\\text{ A}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A step-down transformer has an efficiency of $80\\%$. It reduces $200\\text{ V}$ to $20\\text{ V}$. If the output current is $4\\text{ A}$, find the input current (in Amperes).",
+          "image": "",
+          "correctValue": 0.5,
+          "solution": "Output power:\n$$P_{\\text{out}} = V_s I_s = 20\\text{ V} \\times 4\\text{ A} = 80\\text{ W}$$\nEfficiency is $\\eta = 0.80$:\n$$P_{\\text{in}} = \\frac{P_{\\text{out}}}{\\eta} = \\frac{80}{0.80} = 100\\text{ W}$$\nInput current:\n$$I_p = \\frac{P_{\\text{in}}}{V_p} = \\frac{100\\text{ W}}{200\\text{ V}} = 0.5\\text{ A}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] In a series LCR circuit, $R = 10\\,\\Omega$, $L = 100\\text{ mH}$, and $C = 1\\,\\mu\\text{F}$. Find the Quality factor $Q$ of the circuit.",
+          "image": "",
+          "correctValue": 31.62,
+          "solution": "Quality factor formula:\n$$Q = \\frac{1}{R}\\sqrt{\\frac{L}{C}}$$\nSubstitute $R = 10\\,\\Omega$, $L = 0.1\\text{ H}$, and $C = 10^{-6}\\text{ F}$:\n$$\\frac{L}{C} = \\frac{0.1}{10^{-6}} = 10^5$$\n$$\\sqrt{\\frac{L}{C}} = \\sqrt{10^5} = 100\\sqrt{10} \\approx 100 \\times 3.16227 = 316.23$$\n$$Q = \\frac{316.23}{10} = 31.62$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] An AC source of $V = 100\\sqrt{2}\\sin(100t)\\text{ V}$ is connected to a series combination of a capacitor $C = 100\\,\\mu\\text{F}$ and a resistor $R = 100\\,\\Omega$. Find the peak current (in Amperes) in the circuit (take $\\sqrt{2} = 1.414$, rounded to one decimal place).",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Angular frequency: $\\omega = 100\\text{ rad/s}$.\nCapacitive reactance:\n$$X_C = \\frac{1}{\\omega C} = \\frac{1}{100 \\times (100 \\times 10^{-6})} = \\frac{1}{10^{-2}} = 100\\,\\Omega$$\nImpedance:\n$$Z = \\sqrt{R^2 + X_C^2} = \\sqrt{100^2 + 100^2} = 100\\sqrt{2}\\,\\Omega$$\nPeak voltage is $V_0 = 100\\sqrt{2}\\text{ V}$.\nPeak current:\n$$I_0 = \\frac{V_0}{Z} = \\frac{100\\sqrt{2}}{100\\sqrt{2}} = 1.0\\text{ A}$$"
+        }
+      ]
+    }
+  ]
+}

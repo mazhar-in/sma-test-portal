@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-17-current-electricity",
+  "title": "Current Electricity",
+  "syllabus": "Electric current, drift velocity, mobility and their relation with electric current; Ohm's law, electrical resistance, V-I characteristics, electrical resistivity and conductivity; Temperature dependence of resistance; Internal resistance of a cell, potential difference and emf of a cell, combination of cells in series and in parallel; Kirchhoff's laws and their applications; Wheatstone bridge, Metre bridge; Potentiometer principle and its applications",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A cylindrical copper wire of length $L$ and radius $r$ has an electrical resistance $R$. If the wire is uniformly stretched to double its initial length without changing its volume, its new resistance will be:",
+          "image": "",
+          "options": [
+            "$4R$",
+            "$2R$",
+            "$R/2$",
+            "$R/4$"
+          ],
+          "correctOption": 0,
+          "solution": "Resistance of a wire is given by $R = \\rho \\frac{L}{A}$.\nSince volume $V = A L$ is conserved during stretching:\n$$A = \\frac{V}{L} \\implies R = \\rho \\frac{L^2}{V} \\propto L^2$$\nWhen the wire is stretched to twice its initial length ($L' = 2L$):\n$$R' = \\rho \\frac{(2L)^2}{V} = 4\\left(\\rho \\frac{L^2}{V}\\right) = 4R$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A drift velocity of electrons in a copper conductor carrying a steady current density $j = 2.5 \\times 10^6\\text{ A/m}^2$ with conduction electron density $n = 8.5 \\times 10^{28}\\text{ m}^{-3}$ is (take electron charge $e = 1.6 \\times 10^{-19}\\text{ C}$):",
+          "image": "",
+          "options": [
+            "$0.18\\text{ mm/s}$",
+            "$1.8\\text{ mm/s}$",
+            "$0.018\\text{ mm/s}$",
+            "$18\\text{ mm/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "The relation between current density and drift velocity is:\n$$j = n e v_d$$\n$$v_d = \\frac{j}{n e} = \\frac{2.5 \\times 10^6}{(8.5 \\times 10^{28})(1.6 \\times 10^{-19})} = \\frac{2.5 \\times 10^6}{1.36 \\times 10^{10}} \\approx 1.84 \\times 10^{-4}\\text{ m/s} = 0.184\\text{ mm/s} \\approx 0.18\\text{ mm/s}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] In a metre bridge experiment, the null point is obtained at a distance of $40\\text{ cm}$ from the left end when a known resistance $R = 6\\,\\Omega$ is placed in the left gap and an unknown resistance $X$ is placed in the right gap. The value of $X$ is:",
+          "image": "",
+          "options": [
+            "$9\\,\\Omega$",
+            "$4\\,\\Omega$",
+            "$6\\,\\Omega$",
+            "$12\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "From the balance condition of a metre bridge:\n$$\\frac{R}{X} = \\frac{l}{100 - l}$$\nGiven $R = 6\\,\\Omega$ and $l = 40\\text{ cm}$:\n$$\\frac{6}{X} = \\frac{40}{60} = \\frac{2}{3} \\implies X = \\frac{6 \\times 3}{2} = 9\\,\\Omega$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A cell of emf $E$ and internal resistance $r$ is connected across a variable external resistor $R$. The maximum power delivered to the external resistor occurs when:",
+          "image": "",
+          "options": [
+            "$R = r$",
+            "$R = 2r$",
+            "$R = r/2$",
+            "$R \\to \\infty$"
+          ],
+          "correctOption": 0,
+          "solution": "Current through the circuit is $I = \\frac{E}{R + r}$.\nPower delivered to the external load:\n$$P = I^2 R = \\frac{E^2 R}{(R + r)^2}$$\nBy the Maximum Power Transfer Theorem, $\\frac{dP}{dR} = 0$ yields:\n$$\\frac{E^2 [(R + r)^2 - 2R(R + r)]}{(R + r)^4} = 0 \\implies R + r - 2R = 0 \\implies R = r$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] In a potentiometer arrangement, a cell of emf $1.25\\text{ V}$ gives a balance point at $35.0\\text{ cm}$ length of the wire. If this cell is replaced by another cell, the balance point shifts to $63.0\\text{ cm}$. The emf of the second cell is:",
+          "image": "",
+          "options": [
+            "$2.25\\text{ V}$",
+            "$2.50\\text{ V}$",
+            "$2.00\\text{ V}$",
+            "$1.75\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a potentiometer wire with uniform potential gradient $k$:\n$$E_1 = k l_1 \\quad \\text{and} \\quad E_2 = k l_2$$\n$$\\frac{E_2}{E_1} = \\frac{l_2}{l_1} \\implies E_2 = E_1 \\left(\\frac{l_2}{l_1}\\right) = 1.25\\text{ V} \\times \\left(\\frac{63.0}{35.0}\\right) = 1.25 \\times 1.8 = 2.25\\text{ V}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Two identical cells of emf $E$ and internal resistance $r$ are connected in parallel. When connected across an external resistor $R$, the terminal voltage across $R$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{E R}{R + r/2}$",
+            "$\\frac{2E R}{2R + r}$",
+            "$\\frac{E R}{R + r}$",
+            "$\\frac{E R}{2R + r}$"
+          ],
+          "correctOption": 0,
+          "solution": "Equivalent emf and internal resistance for two identical cells connected in parallel:\n$$E_{\\text{eq}} = E, \\quad r_{\\text{eq}} = \\frac{r}{2}$$\nTotal circuit current:\n$$I = \\frac{E_{\\text{eq}}}{R + r_{\\text{eq}}} = \\frac{E}{R + r/2}$$\nTerminal potential difference across the external resistor $R$:\n$$V = I R = \\frac{E R}{R + r/2}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The resistance of a platinum resistance thermometer is $2.0\\,\\Omega$ at $0^\\circ\\text{C}$ and $2.8\\,\\Omega$ at $100^\\circ\\text{C}$. When the thermometer is inserted into a hot bath, its resistance becomes $3.2\\,\\Omega$. The temperature of the bath is:",
+          "image": "",
+          "options": [
+            "$150^\\circ\\text{C}$",
+            "$125^\\circ\\text{C}$",
+            "$175^\\circ\\text{C}$",
+            "$200^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "Temperature on the platinum scale is defined by:\n$$t = \\frac{R_t - R_0}{R_{100} - R_0} \\times 100^\\circ\\text{C}$$\nGiven $R_0 = 2.0\\,\\Omega$, $R_{100} = 2.8\\,\\Omega$, and $R_t = 3.2\\,\\Omega$:\n$$t = \\frac{3.2 - 2.0}{2.8 - 2.0} \\times 100 = \\frac{1.2}{0.8} \\times 100 = 1.5 \\times 100 = 150^\\circ\\text{C}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A galvanometer of resistance $50\\,\\Omega$ gives full scale deflection for a current of $4\\text{ mA}$. To convert it into a voltmeter of range $0-10\\text{ V}$, the value of the series resistance required is:",
+          "image": "",
+          "options": [
+            "$2450\\,\\Omega$",
+            "$2500\\,\\Omega$",
+            "$2550\\,\\Omega$",
+            "$2400\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "For converting a galvanometer into a voltmeter, a high multiplier resistance $R_s$ is placed in series:\n$$V = I_g(G + R_s)$$\n$$10 = (4 \\times 10^{-3})(50 + R_s)$$\n$$50 + R_s = \\frac{10}{4 \\times 10^{-3}} = 2500$$\n$$R_s = 2500 - 50 = 2450\\,\\Omega$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Twelve identical resistors, each of resistance $R$, are connected along the twelve edges of a cube. The equivalent resistance between two diagonally opposite body corners of the cube is:",
+          "image": "",
+          "options": [
+            "$\\frac{5}{6}R$",
+            "$\\frac{3}{4}R$",
+            "$\\frac{7}{12}R$",
+            "$R$"
+          ],
+          "correctOption": 0,
+          "solution": "Let current $I$ enter at one corner and exit at the diametrically opposite body diagonal corner.\nBy symmetry, at the entrance corner current splits equally into 3 edges: each carries $I/3$.\nAt the next vertices, each edge splits into 2 edges: each carries $I/6$.\nBefore exiting at the opposite corner, the currents regroup into 3 edges: each carries $I/3$.\nTotal voltage drop along any path connecting the two body corners:\n$$V = \\left(\\frac{I}{3}\\right)R + \\left(\\frac{I}{6}\\right)R + \\left(\\frac{I}{3}\\right)R = I R \\left(\\frac{2}{6} + \\frac{1}{6} + \\frac{2}{6}\\right) = \\frac{5}{6}IR$$\n$$R_{\\text{eq}} = \\frac{V}{I} = \\frac{5}{6}R$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A potentiometer wire of length $10\\text{ m}$ and resistance $20\\,\\Omega$ is connected in series with a resistance of $80\\,\\Omega$ and a battery of emf $5\\text{ V}$ having negligible internal resistance. The potential gradient along the potentiometer wire is:",
+          "image": "",
+          "options": [
+            "$0.1\\text{ V/m}$",
+            "$0.2\\text{ V/m}$",
+            "$0.05\\text{ V/m}$",
+            "$0.5\\text{ V/m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Current through the primary potentiometer circuit:\n$$I = \\frac{E}{R_{\\text{wire}} + R_{\\text{series}}} = \\frac{5}{20 + 80} = \\frac{5}{100} = 0.05\\text{ A}$$\nPotential difference across the wire:\n$$V_{\\text{wire}} = I R_{\\text{wire}} = 0.05 \\times 20 = 1.0\\text{ V}$$\nPotential gradient $k$:\n$$k = \\frac{V_{\\text{wire}}}{L} = \\frac{1.0\\text{ V}}{10\\text{ m}} = 0.1\\text{ V/m}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Kirchhoff's first rule (junction rule, $\\sum I = 0$) and second rule (loop rule, $\\sum \\Delta V = 0$) are based respectively on the conservation of:",
+          "image": "",
+          "options": [
+            "Electric charge and Energy",
+            "Energy and Electric charge",
+            "Linear momentum and Energy",
+            "Electric charge and Momentum"
+          ],
+          "correctOption": 0,
+          "solution": "Kirchhoff's Junction Rule states that no electric charge can accumulate at a node, which represents the conservation of electric charge.\nKirchhoff's Loop Rule states that the net change in electric potential around any closed path in an electrostatic circuit is zero, which represents the conservation of energy."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A carbon resistor has four colored bands in the sequence Yellow, Violet, Brown, and Gold. The resistance of the resistor is:",
+          "image": "",
+          "options": [
+            "$(470 \\pm 5\\%)\\,\\Omega$",
+            "$(47 \\pm 10\\%)\\,\\Omega$",
+            "$(4700 \\pm 5\\%)\\,\\Omega$",
+            "$(570 \\pm 5\\%)\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the color code convention (BBROYGBVGW):\nYellow $= 4$\nViolet $= 7$\nBrown $= 10^1$ multiplier\nGold $= \\pm 5\\%$ tolerance\n$$R = (47 \\times 10^1 \\pm 5\\%)\\,\\Omega = (470 \\pm 5\\%)\\,\\Omega$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Two wires made of the same metal have their lengths in the ratio $1 : 2$ and their cross-sectional radii in the ratio $2 : 1$. If they are connected in parallel across a constant voltage source, the ratio of the electrical currents passing through them is:",
+          "image": "",
+          "options": [
+            "$8 : 1$",
+            "$4 : 1$",
+            "$2 : 1$",
+            "$16 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Resistance of wire: $R = \\rho \\frac{L}{A} = \\rho \\frac{L}{\\pi r^2} \\implies R \\propto \\frac{L}{r^2}$.\n$$\\frac{R_1}{R_2} = \\left(\\frac{L_1}{L_2}\\right) \\left(\\frac{r_2}{r_1}\\right)^2 = \\left(\\frac{1}{2}\\right) \\left(\\frac{1}{2}\\right)^2 = \\frac{1}{2} \\times \\frac{1}{4} = \\frac{1}{8}$$\nIn parallel, voltage is identical, so $I \\propto \\frac{1}{R}$:\n$$\\frac{I_1}{I_2} = \\frac{R_2}{R_1} = \\frac{8}{1} = 8 : 1$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A galvanometer of resistance $G = 100\\,\\Omega$ gives a full scale deflection for a current of $10\\text{ mA}$. To convert it into an ammeter reading up to $10\\text{ A}$, the required shunt resistance $S$ is approximately:",
+          "image": "",
+          "options": [
+            "$0.1\\,\\Omega$",
+            "$0.01\\,\\Omega$",
+            "$1.0\\,\\Omega$",
+            "$0.05\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "For an ammeter shunt:\n$$S = \\frac{I_g G}{I - I_g}$$\nSubstitute $I_g = 10\\text{ mA} = 0.01\\text{ A}$, $G = 100\\,\\Omega$, and $I = 10\\text{ A}$:\n$$S = \\frac{(0.01)(100)}{10 - 0.01} = \\frac{1.0}{9.99} \\approx 0.1001\\,\\Omega \\approx 0.1\\,\\Omega$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] When a battery of emf $E$ is connected across a resistance of $4\\,\\Omega$, the terminal voltage is $8\\text{ V}$. When connected across a resistance of $9\\,\\Omega$, the terminal voltage is $9\\text{ V}$. The emf $E$ and internal resistance $r$ of the battery are:",
+          "image": "",
+          "options": [
+            "$E = 10\\text{ V}, r = 1\\,\\Omega$",
+            "$E = 12\\text{ V}, r = 2\\,\\Omega$",
+            "$E = 12\\text{ V}, r = 1\\,\\Omega$",
+            "$E = 10\\text{ V}, r = 2\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "Using terminal voltage equation $V = \\frac{E R}{R + r}$:\nCase 1 ($R = 4\\,\\Omega, V = 8\\text{ V}$):\n$$8 = \\frac{4E}{4 + r} \\implies 2(4 + r) = E \\implies E = 8 + 2r$$\nCase 2 ($R = 9\\,\\Omega, V = 9\\text{ V}$):\n$$9 = \\frac{9E}{9 + r} \\implies E = 9 + r$$\nEquating both expressions for $E$:\n$$8 + 2r = 9 + r \\implies r = 1\\,\\Omega$$\n$$E = 9 + 1 = 10\\text{ V}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A uniform ring of resistance $R_0 = 12\\,\\Omega$ is connected across a battery between two points $A$ and $B$ that subtend an angle of $60^\\circ$ at the centre. The equivalent resistance between $A$ and $B$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{5}{3}\\,\\Omega$",
+            "$2\\,\\Omega$",
+            "$\\frac{5}{6}\\,\\Omega$",
+            "$1\\,\\Omega$"
+          ],
+          "correctOption": 0,
+          "solution": "The perimeter is divided in the ratio of angles: $60^\\circ$ and $300^\\circ$.\nResistance of smaller arc:\n$$R_1 = \\frac{60^\\circ}{360^\\circ} \\times 12\\,\\Omega = \\frac{1}{6} \\times 12 = 2\\,\\Omega$$\nResistance of remaining larger arc:\n$$R_2 = 12 - 2 = 10\\,\\Omega$$\nSince the two arcs are connected in parallel across points $A$ and $B$:\n$$R_{\\text{eq}} = \\frac{R_1 R_2}{R_1 + R_2} = \\frac{2 \\times 10}{2 + 10} = \\frac{20}{12} = \\frac{5}{3}\\,\\Omega$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Two electric bulbs rated at $(220\\text{ V}, 60\\text{ W})$ and $(220\\text{ V}, 100\\text{ W})$ are connected in series across a $220\\text{ V}$ supply line. Which bulb will glow brighter?",
+          "image": "",
+          "options": [
+            "The $60\\text{ W}$ bulb",
+            "The $100\\text{ W}$ bulb",
+            "Both will glow with equal brightness",
+            "Neither bulb will glow"
+          ],
+          "correctOption": 0,
+          "solution": "Rated resistance is $R = \\frac{V^2}{P_{\\text{rated}}}$.\n$$R_{60} = \\frac{220^2}{60}, \\quad R_{100} = \\frac{220^2}{100} \\implies R_{60} > R_{100}$$\nWhen connected in series, the same current $I$ flows through both bulbs.\nActual power dissipated: $P = I^2 R$.\nSince $R_{60} > R_{100}$, the $60\\text{ W}$ bulb dissipates more power ($P_{60} > P_{100}$) and glows brighter."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In an electrolyte, electric conduction occurs due to the drift of:",
+          "image": "",
+          "options": [
+            "Both positive and negative ions",
+            "Free electrons only",
+            "Positive ions only",
+            "Negative ions and free electrons"
+          ],
+          "correctOption": 0,
+          "solution": "In electrolytic solutions and molten salts, mobile charge carriers consist of both positively charged cations drifting toward the cathode and negatively charged anions drifting toward the anode."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A wire of resistance $R$ is bent in the form of a circle. The equivalent resistance between the ends of any diameter is:",
+          "image": "",
+          "options": [
+            "$R/4$",
+            "$R/2$",
+            "$R/8$",
+            "$R$"
+          ],
+          "correctOption": 0,
+          "solution": "The two diametrically opposite points divide the circle into two semicircular halves, each having resistance $R/2$.\nThe two semicircles are connected in parallel:\n$$R_{\\text{eq}} = \\frac{(R/2)(R/2)}{R/2 + R/2} = \\frac{R^2/4}{R} = \\frac{R}{4}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] In a balanced Wheatstone bridge, the four arm resistances are $P = 10\\,\\Omega, Q = 20\\,\\Omega, R = 15\\,\\Omega,$ and $S = 30\\,\\Omega$. If the positions of the battery and galvanometer are interchanged, the bridge:",
+          "image": "",
+          "options": [
+            "Remains balanced, and no current flows through the galvanometer",
+            "Becomes unbalanced",
+            "Has doubled sensitivity",
+            "Has halved equivalent resistance"
+          ],
+          "correctOption": 0,
+          "solution": "According to the principle of conjugate arms of a Wheatstone bridge, if the bridge is initially balanced ($\\\\frac{P}{Q} = \\frac{R}{S}$, here $\\frac{10}{20} = \\frac{15}{30} = 0.5$), interchanging the positions of the galvanometer and the battery does not affect the balance condition; the bridge remains completely balanced."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A battery of emf $12\\text{ V}$ and internal resistance $2\\,\\Omega$ is connected across a resistor of $4\\,\\Omega$. Find the terminal potential difference (in Volts) across the battery.",
+          "image": "",
+          "correctValue": 8.0,
+          "solution": "Total circuit current:\n$$I = \\frac{E}{R + r} = \\frac{12}{4 + 2} = \\frac{12}{6} = 2\\text{ A}$$\nTerminal potential difference:\n$$V = E - I r = 12 - (2)(2) = 12 - 4 = 8.0\\text{ V}$$\nAlternatively:\n$$V = I R = 2 \\times 4 = 8.0\\text{ V}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A current of $5\\text{ A}$ flows through a copper conductor of cross-sectional area $1.0\\text{ mm}^2$. If the number density of free electrons in copper is $8.0 \\times 10^{28}\\text{ m}^{-3}$, find the drift velocity of electrons in $\\text{mm/s}$ (take $e = 1.6 \\times 10^{-19}\\text{ C}$, rounded to two decimal places).",
+          "image": "",
+          "correctValue": 0.39,
+          "solution": "Area $A = 1.0\\text{ mm}^2 = 1.0 \\times 10^{-6}\\text{ m}^2$.\nCurrent formula:\n$$I = n e A v_d$$\n$$v_d = \\frac{I}{n e A} = \\frac{5}{(8.0 \\times 10^{28})(1.6 \\times 10^{-19})(1.0 \\times 10^{-6})} = \\frac{5}{1.28 \\times 10^4} = \\frac{5}{12800} = 3.906 \\times 10^{-4}\\text{ m/s} = 0.3906\\text{ mm/s} \\approx 0.39\\text{ mm/s}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] In a potentiometer experiment, a standard cell of emf $1.5\\text{ V}$ balances against $300\\text{ cm}$ length of the wire. When a cell of unknown emf $E_x$ is balanced across the same wire, the balance point is found at $420\\text{ cm}$. Find the value of $E_x$ in Volts.",
+          "image": "",
+          "correctValue": 2.1,
+          "solution": "In a potentiometer:\n$$\\frac{E_x}{E_1} = \\frac{l_x}{l_1}$$\n$$E_x = E_1 \\left(\\frac{l_x}{l_1}\\right) = 1.5\\text{ V} \\times \\left(\\frac{420}{300}\\right) = 1.5 \\times 1.4 = 2.1\\text{ V}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] A metallic wire has a resistance of $10.0\\,\\Omega$ at $20^\\circ\\text{C}$ and $12.0\\,\\Omega$ at $70^\\circ\\text{C}$. Find the temperature coefficient of resistance $\\alpha$ of the wire in units of $10^{-3}\\text{ }^\\circ\\text{C}^{-1}$ (rounded to two decimal places).",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "Resistance-temperature relation:\n$$R_2 = R_1 [1 + \\alpha(T_2 - T_1)]$$\n$$12.0 = 10.0 [1 + \\alpha(70 - 20)] = 10.0(1 + 50\\alpha)$$\n$$1 + 50\\alpha = \\frac{12.0}{10.0} = 1.2$$\n$$50\\alpha = 0.2 \\implies \\alpha = \\frac{0.2}{50} = 0.004\\text{ }^\\circ\\text{C}^{-1} = 4.0 \\times 10^{-3}\\text{ }^\\circ\\text{C}^{-1}$$\nValue in units of $10^{-3}\\text{ }^\\circ\\text{C}^{-1}$ is $4.0$."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the equivalent resistance (in $\\Omega$) between terminals $A$ and $B$ for the symmetric resistor circuit network formed by five identical resistors of $10\\,\\Omega$ each arranged in a balanced bridge between $A$ and $B$.",
+          "image": "",
+          "correctValue": 10.0,
+          "solution": "For a standard symmetrical Wheatstone bridge where all five arm resistors have equal resistance $R = 10\\,\\Omega$:\nThe central bridge resistor carries zero current because the potentials at its two terminal nodes are identical.\nThe remaining four resistors form two parallel branches, each having two resistors in series:\n$$R_{\\text{top}} = R + R = 2R = 20\\,\\Omega$$\n$$R_{\\text{bottom}} = R + R = 2R = 20\\,\\Omega$$\nEquivalent resistance between input and output:\n$$R_{\\text{eq}} = \\frac{R_{\\text{top}} R_{\\text{bottom}}}{R_{\\text{top}} + R_{\\text{bottom}}} = \\frac{20 \\times 20}{20 + 20} = \\frac{400}{40} = 10.0\\,\\Omega$$"
+        }
+      ]
+    }
+  ]
+}

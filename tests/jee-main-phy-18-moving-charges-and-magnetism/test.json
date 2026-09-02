@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-18-moving-charges-and-magnetism",
+  "title": "Moving Charges and Magnetism",
+  "syllabus": "Biot-Savart law and its application to current carrying circular loop; Ampere's law and its applications to infinitely long straight wire and solenoid; Force on a moving charge in uniform magnetic and electric fields (Lorentz force); Motion of a charged particle in a magnetic field; Cyclotron; Force on a current-carrying conductor in a uniform magnetic field, force between two parallel current-carrying conductors-definition of ampere; Torque experienced by a current loop in uniform magnetic field; Moving coil galvanometer-its current sensitivity and conversion to ammeter and voltmeter",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A charged particle of mass $m$ and charge $q$ is moving with velocity $\\vec{v}$ in a region of uniform magnetic field $\\vec{B}$ perpendicular to $\\vec{v}$. The time period of its circular revolution is independent of:",
+          "image": "",
+          "options": [
+            "Both speed $v$ and radius $R$",
+            "Charge $q$ of the particle",
+            "Magnetic field $B$",
+            "Mass $m$ of the particle"
+          ],
+          "correctOption": 0,
+          "solution": "Centripetal force is provided by the magnetic Lorentz force:\n$$\\frac{m v^2}{R} = q v B \\implies R = \\frac{m v}{q B}$$\nTime period of revolution:\n$$T = \\frac{2\\pi R}{v} = \\frac{2\\pi}{v} \\left(\\frac{m v}{q B}\\right) = \\frac{2\\pi m}{q B}$$\nHence, $T$ depends only on mass, charge, and magnetic field, and is independent of speed $v$ and radius $R$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A circular coil of wire consisting of 100 turns, each of radius $8.0\\text{ cm}$, carries a current of $0.40\\text{ A}$. The magnitude of the magnetic field at the centre of the coil is (take $\\mu_0 = 4\\pi \\times 10^{-7}\\text{ T}\\cdot\\text{m/A}$):",
+          "image": "",
+          "options": [
+            "$\\pi \\times 10^{-4}\\text{ T}$",
+            "$2\\pi \\times 10^{-4}\\text{ T}$",
+            "$\\pi \\times 10^{-5}\\text{ T}$",
+            "$4\\pi \\times 10^{-4}\\text{ T}$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic field at the centre of a circular coil of $N$ turns:\n$$B = \\frac{\\mu_0 N I}{2 R}$$\nSubstitute $N = 100$, $I = 0.40\\text{ A}$, $R = 0.08\\text{ m}$:\n$$B = \\frac{(4\\pi \\times 10^{-7}) \\times 100 \\times 0.40}{2 \\times 0.08} = \\frac{1.6\\pi \\times 10^{-5}}{0.16} = \\pi \\times 10^{-4}\\text{ T}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An electron and a proton having the same kinetic energy enter perpendicularly into a uniform magnetic field. If $r_e$ and $r_p$ are their respective orbital radii, then the ratio $\\frac{r_e}{r_p}$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{m_e}{m_p}}$",
+            "$\\sqrt{\\frac{m_p}{m_e}}$",
+            "$\\frac{m_e}{m_p}$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "Radius of circular path in a magnetic field is $r = \\frac{p}{q B} = \\frac{\\sqrt{2m K}}{q B}$.\nSince both have identical charge magnitude $e$, kinetic energy $K$, and magnetic field $B$:\n$$r \\propto \\sqrt{m}$$\n$$\\frac{r_e}{r_p} = \\sqrt{\\frac{m_e}{m_p}}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A long straight wire of radius $a$ carries a steady current $I$ uniformly distributed over its cross-section. The ratio of the magnetic field at distance $a/2$ from the wire axis to that at distance $2a$ from the axis is:",
+          "image": "",
+          "options": [
+            "$1 : 1$",
+            "$1 : 2$",
+            "$2 : 1$",
+            "$1 : 4$"
+          ],
+          "correctOption": 0,
+          "solution": "Inside the wire ($r_1 = a/2 < a$):\n$$B_1 = \\frac{\\mu_0 I r_1}{2\\pi a^2} = \\frac{\\mu_0 I (a/2)}{2\\pi a^2} = \\frac{\\mu_0 I}{4\\pi a}$$\nOutside the wire ($r_2 = 2a > a$):\n$$B_2 = \\frac{\\mu_0 I}{2\\pi r_2} = \\frac{\\mu_0 I}{2\\pi (2a)} = \\frac{\\mu_0 I}{4\\pi a}$$\n$$\\frac{B_1}{B_2} = \\frac{\\mu_0 I / 4\\pi a}{\\mu_0 I / 4\\pi a} = 1 : 1$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Two parallel long straight conductors carrying currents $I_1$ and $I_2$ in the same direction separated by distance $d$ in vacuum exert an attractive force per unit length given by:",
+          "image": "",
+          "options": [
+            "$\\frac{\\mu_0 I_1 I_2}{2\\pi d}$",
+            "$\\frac{\\mu_0 I_1 I_2}{4\\pi d}$",
+            "$\\frac{\\mu_0 I_1 I_2}{2\\pi d^2}$",
+            "$\\frac{\\mu_0 I_1 I_2}{\\pi d}$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic field produced by conductor 1 at the location of conductor 2 is $B_1 = \\frac{\\mu_0 I_1}{2\\pi d}$.\nMagnetic force on length $L$ of conductor 2 carrying current $I_2$:\n$$F = I_2 L B_1 = \\frac{\\mu_0 I_1 I_2 L}{2\\pi d}$$\nForce per unit length is attractive for currents in the same direction:\n$$\\frac{F}{L} = \\frac{\\mu_0 I_1 I_2}{2\\pi d}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A square loop of side $a$ carries a steady current $I$. The magnetic field at the centre of the square loop is:",
+          "image": "",
+          "options": [
+            "$\\frac{2\\sqrt{2}\\mu_0 I}{\\pi a}$",
+            "$\\frac{\\sqrt{2}\\mu_0 I}{\\pi a}$",
+            "$\\frac{4\\mu_0 I}{\\pi a}$",
+            "$\\frac{\\mu_0 I}{2\\pi a}$"
+          ],
+          "correctOption": 0,
+          "solution": "Distance from each straight segment to the centre is $d = a/2$.\nEach segment subtends angles $\\theta_1 = \\theta_2 = 45^\\circ$ at the centre.\nMagnetic field due to one side:\n$$B_1 = \\frac{\\mu_0 I}{4\\pi d}(\\sin 45^\\circ + \\sin 45^\\circ) = \\frac{\\mu_0 I}{4\\pi (a/2)}\\left(\\frac{2}{\\sqrt{2}}\\right) = \\frac{\\mu_0 I}{2\\pi a}\\sqrt{2}$$\nBy right-hand rule, fields from all 4 sides point in the same direction:\n$$B_{\\text{total}} = 4 B_1 = 4 \\left(\\frac{\\sqrt{2}\\mu_0 I}{2\\pi a}\\right) = \\frac{2\\sqrt{2}\\mu_0 I}{\\pi a}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A moving coil galvanometer has $N$ turns, each of effective area $A$, suspended in a radial magnetic field $B$. If the torsional constant of the suspension fibre is $C$, its current sensitivity is given by:",
+          "image": "",
+          "options": [
+            "$\\frac{N A B}{C}$",
+            "$\\frac{C}{N A B}$",
+            "$\\frac{N A B}{C R}$",
+            "$\\frac{N A}{C B}$"
+          ],
+          "correctOption": 0,
+          "solution": "Deflecting torque in radial field: $\\tau_{\\text{def}} = N I A B$.\nRestoring torque: $\\tau_{\\text{res}} = C \\theta$.\nIn equilibrium: $C \\theta = N I A B \\implies \\theta = \\left(\\frac{N A B}{C}\\right) I$.\nCurrent sensitivity is deflection per unit current:\n$$S_i = \\frac{\\theta}{I} = \\frac{N A B}{C}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A particle with charge $q$ moves with velocity $\\vec{v} = (3\\hat{i} + 4\\hat{j})\\text{ m/s}$ in a combined electric and magnetic field $\\vec{E} = 2\\hat{k}\\text{ V/m}$ and $\\vec{B} = (2\\hat{i} + 3\\hat{j})\\text{ T}$. The Lorentz force acting on the particle is:",
+          "image": "",
+          "options": [
+            "$q(3\\hat{k})\\text{ N}$",
+            "$q(2\\hat{k})\\text{ N}$",
+            "$q(\\hat{k})\\text{ N}$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Lorentz force is $\\vec{F} = q(\\vec{E} + \\vec{v} \\times \\vec{B})$:\n$$\\vec{v} \\times \\vec{B} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 3 & 4 & 0 \\\\ 2 & 3 & 0 \\end{vmatrix} = \\hat{k}(3 \\times 3 - 4 \\times 2) = \\hat{k}(9 - 8) = 1\\hat{k}$$\n$$\\vec{F} = q(2\\hat{k} + 1\\hat{k}) = q(3\\hat{k})\\text{ N}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A tightly wound long solenoid of length $L$ and radius $r$ ($L \\gg r$) has $n$ turns per unit length and carries a steady current $I$. The magnetic field near the edge at an axial end of the solenoid is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}\\mu_0 n I$",
+            "$\\mu_0 n I$",
+            "$2\\mu_0 n I$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "For an infinitely long solenoid, the axial magnetic field near the middle is $B = \\mu_0 n I$.\nAt either end face of a semi-infinite solenoid, half of the symmetrical turn distribution is absent, so the axial magnetic field is:\n$$B_{\\text{end}} = \\frac{1}{2}\\mu_0 n I$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A circular loop of radius $R$ carrying a current $I$ produces magnetic field $B_0$ at its centre. The distance along its axis from the centre where the magnetic field becomes $\\frac{B_0}{8}$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{3} R$",
+            "$2 R$",
+            "$3 R$",
+            "$\\frac{R}{\\sqrt{3}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Axial field of a circular loop: $B(x) = \\frac{\\mu_0 I R^2}{2(R^2 + x^2)^{3/2}}$.\nAt the centre ($x = 0$): $B_0 = \\frac{\\mu_0 I}{2R}$.\n$$B(x) = B_0 \\left( \\frac{R^3}{(R^2 + x^2)^{3/2}} \\right) = \\frac{B_0}{8}$$\n$$\\frac{R^3}{(R^2 + x^2)^{3/2}} = \\frac{1}{8} \\implies \\frac{R}{\\sqrt{R^2 + x^2}} = \\frac{1}{2}$$\n$$\\sqrt{R^2 + x^2} = 2R \\implies R^2 + x^2 = 4R^2 \\implies x^2 = 3R^2 \\implies x = \\sqrt{3} R$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] In a velocity selector, mutually perpendicular electric field $\\vec{E}$ and magnetic field $\\vec{B}$ act on a beam of charged particles. The particles pass undeflected through the selector if their speed equals:",
+          "image": "",
+          "options": [
+            "$\\frac{E}{B}$",
+            "$\\frac{B}{E}$",
+            "$\\sqrt{\\frac{E}{B}}$",
+            "$E B$"
+          ],
+          "correctOption": 0,
+          "solution": "For undeflected transmission, the electric force balances the magnetic force:\n$$q E = q v B \\implies v = \\frac{E}{B}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A charged particle moves in a uniform magnetic field. Which of the following quantities associated with the particle remains strictly constant during its motion?",
+          "image": "",
+          "options": [
+            "Kinetic energy",
+            "Linear momentum vector",
+            "Velocity vector",
+            "Acceleration vector"
+          ],
+          "correctOption": 0,
+          "solution": "The magnetic Lorentz force is always perpendicular to velocity: $\\vec{F} \\cdot \\vec{v} = q(\\vec{v} \\times \\vec{B}) \\cdot \\vec{v} = 0$.\nSince instantaneous power is zero, no work is done on the particle, and its speed and kinetic energy remain constant.\nThe direction of velocity, momentum, and acceleration continuously change."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A wire of length $L$ carrying current $I$ is bent into a circular loop of $n$ turns. The magnetic dipole moment of the loop is proportional to:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{n}$",
+            "$n$",
+            "$\\frac{1}{n^2}$",
+            "$n^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Length of wire: $L = n(2\\pi r) \\implies r = \\frac{L}{2\\pi n}$.\nArea of each turn: $A = \\pi r^2 = \\pi \\left(\\frac{L}{2\\pi n}\\right)^2 = \\frac{L^2}{4\\pi n^2}$.\nMagnetic moment of the coil:\n$$M = n I A = n I \\left(\\frac{L^2}{4\\pi n^2}\\right) = \\frac{I L^2}{4\\pi n} \\propto \\frac{1}{n}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A straight wire carrying current $I$ is placed in a uniform magnetic field $B$. The force acting on a segment of length $L$ of the wire is zero when:",
+          "image": "",
+          "options": [
+            "The wire is parallel or antiparallel to $\\vec{B}$",
+            "The wire is perpendicular to $\\vec{B}$",
+            "The wire makes an angle of $45^\\circ$ with $\\vec{B}$",
+            "The magnetic field is non-zero and non-uniform"
+          ],
+          "correctOption": 0,
+          "solution": "The magnetic force on a current-carrying wire is $\\vec{F} = I(\\vec{L} \\times \\vec{B})$.\nMagnitude: $F = I L B \\sin\\theta$.\nWhen the wire is parallel ($\\theta = 0^\\circ$) or antiparallel ($\\theta = 180^\\circ$) to the magnetic field, $\\sin\\theta = 0$, giving $F = 0$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An electron moves in a circular orbit of radius $r$ with angular speed $\\omega$ around a nucleus. The equivalent magnetic dipole moment of the revolving electron is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2} e \\omega r^2$",
+            "$e \\omega r^2$",
+            "$\\frac{1}{2} e \\omega^2 r$",
+            "$\\frac{1}{4} e \\omega r^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Orbital period of electron: $T = \\frac{2\\pi}{\\omega}$.\nEquivalent electric current: $I = \\frac{e}{T} = \\frac{e\\omega}{2\\pi}$.\nArea enclosed by orbit: $A = \\pi r^2$.\nMagnetic dipole moment:\n$$\\mu = I A = \\left(\\frac{e\\omega}{2\\pi}\\right)(\\pi r^2) = \\frac{1}{2} e \\omega r^2$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A helical motion of a charged particle in a uniform magnetic field $\\vec{B}$ occurs when the initial velocity $\\vec{v}$ makes an arbitrary angle $\\theta$ ($0 < \\theta < 90^\\circ$) with $\\vec{B}$. The pitch of the helix is:",
+          "image": "",
+          "options": [
+            "$\\frac{2\\pi m v \\cos\\theta}{q B}$",
+            "$\\frac{2\\pi m v \\sin\\theta}{q B}$",
+            "$\\frac{2\\pi m v}{q B}$",
+            "$\\frac{\\pi m v \\cos\\theta}{q B}$"
+          ],
+          "correctOption": 0,
+          "solution": "Velocity parallel to the magnetic field: $v_\\parallel = v\\cos\\theta$.\nTime period of circular motion in the transverse plane: $T = \\frac{2\\pi m}{q B}$.\nPitch $p$ is the linear distance traversed along $\\vec{B}$ in one full revolution:\n$$p = v_\\parallel T = (v\\cos\\theta)\\left(\\frac{2\\pi m}{q B}\\right) = \\frac{2\\pi m v \\cos\\theta}{q B}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A planar current loop of arbitrary shape carrying current $I$ is placed in a uniform magnetic field $\\vec{B}$. The net magnetic force acting on the complete closed loop is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$I B \\oint dl$",
+            "$I \\vec{A} \\cdot \\vec{B}$",
+            "Non-zero and directed along $\\vec{B}$"
+          ],
+          "correctOption": 0,
+          "solution": "Net magnetic force on a closed circuit in a uniform field is:\n$$\\vec{F} = \\oint I (d\\vec{l} \\times \\vec{B}) = I \\left(\\oint d\\vec{l}\\right) \\times \\vec{B}$$\nFor any closed loop, the vector sum of displacement around the loop is zero: $\\oint d\\vec{l} = 0$.\nTherefore, $\\vec{F} = 0$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A proton and an alpha particle enter a uniform magnetic field with the same momentum perpendicular to the field. The ratio of the radii of their circular paths $\\frac{r_p}{r_\\alpha}$ is:",
+          "image": "",
+          "options": [
+            "$2 : 1$",
+            "$1 : 2$",
+            "$4 : 1$",
+            "$1 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Radius of circular path: $r = \\frac{p}{q B}$.\nBoth particles have identical momentum $p$ and move in the same magnetic field $B$:\n$$r \\propto \\frac{1}{q}$$\n$$\\frac{r_p}{r_\\alpha} = \\frac{q_\\alpha}{q_p} = \\frac{2e}{e} = 2 : 1$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A toroid of mean radius $20\\text{ cm}$ has 500 turns and carries a current of $2.0\\text{ A}$. The magnetic field inside the core of the toroid is (take $\\mu_0 = 4\\pi \\times 10^{-7}\\text{ T}\\cdot\\text{m/A}$):",
+          "image": "",
+          "options": [
+            "$1.0 \\times 10^{-3}\\text{ T}$",
+            "$2.0 \\times 10^{-3}\\text{ T}$",
+            "$0.5 \\times 10^{-3}\\text{ T}$",
+            "$4.0 \\times 10^{-3}\\text{ T}$"
+          ],
+          "correctOption": 0,
+          "solution": "Magnetic field in a toroid of mean radius $R$ and $N$ turns:\n$$B = \\frac{\\mu_0 N I}{2\\pi R}$$\nSubstitute $N = 500$, $I = 2.0\\text{ A}$, $R = 0.20\\text{ m}$:\n$$B = \\frac{(4\\pi \\times 10^{-7}) \\times 500 \\times 2.0}{2\\pi \\times 0.20} = \\frac{2 \\times 10^{-7} \\times 1000}{0.20} = \\frac{2 \\times 10^{-4}}{0.20} = 1.0 \\times 10^{-3}\\text{ T}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Ampere's circuital law states that the line integral of magnetic field $\\vec{B}$ around a closed path equals:",
+          "image": "",
+          "options": [
+            "$\\mu_0 I_{\\text{enc}}$",
+            "$\\frac{I_{\\text{enc}}}{\\mu_0}$",
+            "$\\mu_0 \\varepsilon_0 I_{\\text{enc}}$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "Ampere's circuital law in integral form for steady currents states:\n$$\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_{\\text{enc}}$$\nwhere $I_{\\text{enc}}$ is the total conduction current passing through any open surface bounded by the closed Amperian loop."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A straight horizontal wire of mass $0.1\\text{ kg}$ and length $0.5\\text{ m}$ carries a current of $2.0\\text{ A}$. Find the minimum magnitude of magnetic field (in Tesla) required to suspend the wire in air against gravity (take $g = 10\\text{ m/s}^2$).",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "For magnetic levitation against gravity, the upward magnetic force balances weight:\n$$F_m = I L B = m g$$\n$$B = \\frac{m g}{I L} = \\frac{0.1 \\times 10}{2.0 \\times 0.5} = \\frac{1.0}{1.0} = 1.0\\text{ T}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A proton is accelerated from rest through a potential difference of $1000\\text{ V}$ and then enters perpendicularly into a uniform magnetic field of $0.1\\text{ T}$. Find the radius (in cm) of its circular path (take $m_p = 1.67 \\times 10^{-27}\\text{ kg}$ and $q = 1.6 \\times 10^{-19}\\text{ C}$, rounded to one decimal place).",
+          "image": "",
+          "correctValue": 4.6,
+          "solution": "Kinetic energy acquired: $K = q V = (1.6 \\times 10^{-19})(1000) = 1.6 \\times 10^{-16}\\text{ J}$.\nMomentum:\n$$p = \\sqrt{2m K} = \\sqrt{2(1.67 \\times 10^{-27})(1.6 \\times 10^{-16})} = \\sqrt{5.344 \\times 10^{-43}} = \\sqrt{53.44} \\times 10^{-22} \\approx 7.31 \\times 10^{-22}\\text{ kg}\\cdot\\text{m/s}$$\nRadius:\n$$R = \\frac{p}{q B} = \\frac{7.31 \\times 10^{-22}}{(1.6 \\times 10^{-19})(0.1)} = \\frac{7.31 \\times 10^{-22}}{1.6 \\times 10^{-20}} = 4.568 \\times 10^{-2}\\text{ m} = 4.57\\text{ cm} \\approx 4.6\\text{ cm}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A rectangular coil of dimensions $10\\text{ cm} \\times 5\\text{ cm}$ having 50 turns carries a current of $2.0\\text{ A}$. The coil is placed in a uniform magnetic field of $0.2\\text{ T}$ such that the plane of the coil makes an angle of $30^\\circ$ with the field direction. Find the torque (in $\\text{N}\\cdot\\text{m}$) acting on the coil (rounded to two decimal places).",
+          "image": "",
+          "correctValue": 0.09,
+          "solution": "Area of the coil: $A = 0.10 \\times 0.05 = 5.0 \\times 10^{-3}\\text{ m}^2$.\nMagnetic moment:\n$$M = N I A = 50 \\times 2.0 \\times (5.0 \\times 10^{-3}) = 0.50\\text{ A}\\cdot\\text{m}^2$$\nThe normal to the coil's plane makes an angle $\\theta = 90^\\circ - 30^\\circ = 60^\\circ$ with $\\vec{B}$.\nTorque:\n$$\\tau = M B \\sin\\theta = 0.50 \\times 0.2 \\times \\sin 60^\\circ = 0.10 \\times \\frac{\\sqrt{3}}{2} = 0.05 \\times 1.732 \\approx 0.0866\\text{ N}\\cdot\\text{m} \\approx 0.09\\text{ N}\\cdot\\text{m}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] An infinitely long straight conductor carries a current of $50\\text{ A}$. Find the magnitude of magnetic field (in $\\mu\\text{T}$) at a perpendicular distance of $10\\text{ cm}$ from the conductor.",
+          "image": "",
+          "correctValue": 100.0,
+          "solution": "Magnetic field due to an infinitely long straight wire:\n$$B = \\frac{\\mu_0 I}{2\\pi d}$$\nSubstitute $I = 50\\text{ A}$ and $d = 0.1\\text{ m}$:\n$$B = \\frac{(4\\pi \\times 10^{-7}) \\times 50}{2\\pi \\times 0.1} = \\frac{2 \\times 10^{-7} \\times 50}{0.1} = \\frac{10^{-5}}{0.1} = 10^{-4}\\text{ T} = 100.0\\,\\mu\\text{T}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Two long parallel wires are separated by $5\\text{ cm}$ and carry currents $I_1 = 10\\text{ A}$ and $I_2 = 20\\text{ A}$ in opposite directions. Find the force per unit length (in $\\text{N/m}$) exerted on each wire in units of $10^{-4}\\text{ N/m}$ (take $\\mu_0 = 4\\pi \\times 10^{-7}\\text{ T}\\cdot\\text{m/A}$).",
+          "image": "",
+          "correctValue": 8.0,
+          "solution": "Force per unit length between two parallel conductors:\n$$\\frac{F}{L} = \\frac{\\mu_0 I_1 I_2}{2\\pi d}$$\nSubstitute $I_1 = 10\\text{ A}$, $I_2 = 20\\text{ A}$, and $d = 0.05\\text{ m}$:\n$$\\frac{F}{L} = \\frac{(4\\pi \\times 10^{-7}) \\times 10 \\times 20}{2\\pi \\times 0.05} = \\frac{2 \\times 10^{-7} \\times 200}{0.05} = \\frac{4 \\times 10^{-5}}{0.05} = 8.0 \\times 10^{-4}\\text{ N/m}$$\nValue in units of $10^{-4}\\text{ N/m}$ is $8.0$."
+        }
+      ]
+    }
+  ]
+}

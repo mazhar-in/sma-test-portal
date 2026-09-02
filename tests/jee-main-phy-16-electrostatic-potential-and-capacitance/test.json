@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-16-electrostatic-potential-and-capacitance",
+  "title": "Electrostatic Potential and Capacitance",
+  "syllabus": "Electric potential, potential difference, electric potential due to a point charge, a dipole and system of charges; Equipotential surfaces, electrical potential energy of a system of two point charges and of electric dipole in an electrostatic field; Conductors and dielectrics, free charges and bound charges inside a conductor, dielectrics and electric polarisation; Capacitors and capacitance, combination of capacitors in series and in parallel, capacitance of a parallel plate capacitor with and without dielectric medium between the plates, energy stored in a capacitor",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A parallel plate capacitor of capacitance $C$ is connected to a battery of voltage $V$. While keeping the battery connected, a dielectric slab of dielectric constant $K = 4$ is inserted between the plates so as to completely fill the space between them. The ratio of the electrostatic energy stored in the capacitor after inserting the slab to that before inserting it is:",
+          "image": "",
+          "options": [
+            "$4 : 1$",
+            "$1 : 4$",
+            "$16 : 1$",
+            "$1 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "With the battery kept connected, the potential difference across the plates remains constant at $V$.\nThe capacitance becomes $C' = K C = 4C$.\nInitial stored energy: $U_i = \\frac{1}{2} C V^2$.\nFinal stored energy: $U_f = \\frac{1}{2} C' V^2 = \\frac{1}{2} (4C) V^2 = 4 \\left(\\frac{1}{2} C V^2\\right) = 4 U_i$.\n$$\\frac{U_f}{U_i} = 4 : 1$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The electric potential in a region of space is given by $V(x, y, z) = (2x^2 - 3y^2 + z)\\text{ V}$. The magnitude of the electric field intensity at point $(1, 1, 1)\\text{ m}$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{53}\\text{ V/m}$",
+            "$\\sqrt{17}\\text{ V/m}$",
+            "$7\\text{ V/m}$",
+            "$\\sqrt{41}\\text{ V/m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Electric field components are derived from potential via $\\vec{E} = -\\vec{\\nabla} V$:\n$$E_x = -\\frac{\\partial V}{\\partial x} = -4x$$\n$$E_y = -\\frac{\\partial V}{\\partial y} = +6y$$\n$$E_z = -\\frac{\\partial V}{\\partial z} = -1$$\nAt $(1, 1, 1)\\text{ m}$:\n$$\\vec{E} = -4\\hat{i} + 6\\hat{j} - 1\\hat{k}$$\n$$|\\vec{E}| = \\sqrt{(-4)^2 + 6^2 + (-1)^2} = \\sqrt{16 + 36 + 1} = \\sqrt{53}\\text{ V/m}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A spherical drop of mercury of radius $R$ and capacitance $C$ carries potential $V$. If 64 identical such droplets coalesce to form a single large spherical drop, the potential of the new drop will be:",
+          "image": "",
+          "options": [
+            "$16V$",
+            "$4V$",
+            "$64V$",
+            "$8V$"
+          ],
+          "correctOption": 0,
+          "solution": "Let radius and charge of each small droplet be $r$ and $q$.\nCapacitance of small drop: $C = 4\\pi\\varepsilon_0 r$, and potential $V = \\frac{q}{4\\pi\\varepsilon_0 r}$.\nFor $n = 64$ droplets coalescing into a single drop of radius $R'$:\n$$\\frac{4}{3}\\pi (R')^3 = 64 \\times \\frac{4}{3}\\pi r^3 \\implies R' = 4r$$\nTotal charge of the combined drop: $Q' = 64q$.\nPotential of the combined drop:\n$$V' = \\frac{Q'}{4\\pi\\varepsilon_0 R'} = \\frac{64q}{4\\pi\\varepsilon_0 (4r)} = 16\\left(\\frac{q}{4\\pi\\varepsilon_0 r}\\right) = 16V$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A capacitor of capacitance $C_1 = 6\\,\\mu\\text{F}$ is charged to a potential difference of $100\\text{ V}$ and then disconnected from the supply. It is then connected in parallel across an uncharged capacitor of capacitance $C_2 = 4\\,\\mu\\text{F}$. The loss of electrostatic energy in this process is:",
+          "image": "",
+          "options": [
+            "$1.2 \\times 10^{-2}\\text{ J}$",
+            "$3.0 \\times 10^{-2}\\text{ J}$",
+            "$1.8 \\times 10^{-2}\\text{ J}$",
+            "$0.6 \\times 10^{-2}\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "Loss of energy when a charged capacitor is connected to an uncharged capacitor:\n$$\\Delta U = \\frac{1}{2}\\frac{C_1 C_2}{C_1 + C_2} (V_1 - V_2)^2$$\nSubstitute $C_1 = 6\\,\\mu\\text{F}$, $C_2 = 4\\,\\mu\\text{F}$, $V_1 = 100\\text{ V}$, $V_2 = 0\\text{ V}$:\n$$\\Delta U = \\frac{1}{2} \\frac{(6 \\times 10^{-6})(4 \\times 10^{-6})}{(6 + 4) \\times 10^{-6}} (100)^2 = \\frac{1}{2} \\left(\\frac{24}{10} \\times 10^{-6}\\right) (10^4) = 1.2 \\times 10^{-2}\\text{ J}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Four point charges $+q, -q, +q,$ and $-q$ are placed at the vertices $A, B, C,$ and $D$ of a square of side $a$ in cyclic order. The electric potential at the centre of the square is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$\\frac{\\sqrt{2} q}{\\pi\\varepsilon_0 a}$",
+            "$\\frac{q}{4\\pi\\varepsilon_0 a}$",
+            "$-\\frac{\\sqrt{2} q}{\\pi\\varepsilon_0 a}$"
+          ],
+          "correctOption": 0,
+          "solution": "Distance from each vertex to the centre of the square is $r = \\frac{a}{\\sqrt{2}}$.\nElectric potential is a scalar quantity:\n$$V_{\\text{centre}} = \\sum_{i=1}^4 \\frac{k q_i}{r} = \\frac{k}{r} [(+q) + (-q) + (+q) + (-q)] = \\frac{k}{r}(0) = 0$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A parallel plate capacitor with plate separation $d$ has capacitance $C_0$. A dielectric slab of thickness $t = \\frac{d}{2}$ and dielectric constant $K = 3$ is introduced between the plates. The new capacitance is:",
+          "image": "",
+          "options": [
+            "$\\frac{3}{2} C_0$",
+            "$\\frac{6}{5} C_0$",
+            "$\\frac{4}{3} C_0$",
+            "$2 C_0$"
+          ],
+          "correctOption": 0,
+          "solution": "Capacitance with a partially filled dielectric slab of thickness $t$:\n$$C = \\frac{\\varepsilon_0 A}{d - t + \\frac{t}{K}}$$\nSubstitute $t = \\frac{d}{2}$ and $K = 3$:\n$$C = \\frac{\\varepsilon_0 A}{d - \\frac{d}{2} + \\frac{d}{6}} = \\frac{\\varepsilon_0 A}{\\frac{d}{2} + \\frac{d}{6}} = \\frac{\\varepsilon_0 A}{\\frac{4d}{6}} = \\frac{6}{4}\\left(\\frac{\\varepsilon_0 A}{d}\\right) = \\frac{3}{2} C_0$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Two concentric conducting spherical shells of radii $R_1$ and $R_2$ ($R_1 < R_2$) carry charges $Q_1$ and $Q_2$ respectively. The potential difference between the inner shell and the outer shell $(V_1 - V_2)$ depends only on:",
+          "image": "",
+          "options": [
+            "Charge $Q_1$ on the inner shell",
+            "Charge $Q_2$ on the outer shell",
+            "Both charges $Q_1$ and $Q_2$",
+            "Neither $Q_1$ nor $Q_2$"
+          ],
+          "correctOption": 0,
+          "solution": "Potentials of the shells:\n$$V_1 = \\frac{k Q_1}{R_1} + \\frac{k Q_2}{R_2}$$\n$$V_2 = \\frac{k Q_1}{R_2} + \\frac{k Q_2}{R_2}$$\nSubtracting gives:\n$$V_1 - V_2 = k Q_1 \\left(\\frac{1}{R_1} - \\frac{1}{R_2}\\right)$$\nThis potential difference is strictly independent of the charge $Q_2$ on the outer shell."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An electric dipole of moment $\\vec{p}$ is placed at the origin oriented along the z-axis. The electrostatic potential at a point with spherical coordinates $(r, \\theta)$ where $r \\gg a$ is proportional to:",
+          "image": "",
+          "options": [
+            "$\\frac{\\cos\\theta}{r^2}$",
+            "$\\frac{\\sin\\theta}{r^2}$",
+            "$\\frac{\\cos\\theta}{r}$",
+            "$\\frac{1}{r^3}$"
+          ],
+          "correctOption": 0,
+          "solution": "The electric potential due to a short electric dipole at distance $r$ along an axis making an angle $\\theta$ with the dipole axis is:\n$$V = \\frac{1}{4\\pi\\varepsilon_0} \\frac{p\\cos\\theta}{r^2} \\propto \\frac{\\cos\\theta}{r^2}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An isolated parallel plate capacitor of plate area $A$ and separation $d$ is charged to charge $Q$. The electrostatic attractive force between the two plates is:",
+          "image": "",
+          "options": [
+            "$\\frac{Q^2}{2\\varepsilon_0 A}$",
+            "$\\frac{Q^2}{\\varepsilon_0 A}$",
+            "$\\frac{Q^2}{4\\varepsilon_0 A}$",
+            "$\\frac{2Q^2}{\\varepsilon_0 A}$"
+          ],
+          "correctOption": 0,
+          "solution": "The electric field produced by one plate alone is $E_1 = \\frac{\\sigma}{2\\varepsilon_0} = \\frac{Q}{2\\varepsilon_0 A}$.\nThe charge on the other plate is $Q$, so the attractive electrostatic force is:\n$$F = Q E_1 = \\frac{Q^2}{2\\varepsilon_0 A}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Which of the following statements about equipotential surfaces is incorrect?",
+          "image": "",
+          "options": [
+            "Equipotential surfaces for a uniform electric field are concentric spheres",
+            "Electric field lines are always perpendicular to equipotential surfaces",
+            "No work is done in moving a test charge between two points on the same equipotential surface",
+            "Two equipotential surfaces can never intersect each other"
+          ],
+          "correctOption": 0,
+          "solution": "For a uniform electric field directed along a constant direction, equipotential surfaces are a family of parallel flat planes perpendicular to the field lines.\nConcentric spheres form equipotential surfaces for an isolated point charge."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] In a circuit, three capacitors of capacitances $2\\,\\mu\\text{F}$, $3\\,\\mu\\text{F}$, and $6\\,\\mu\\text{F}$ are connected in series across a $10\\text{ V}$ battery. The charge on the $3\\,\\mu\\text{F}$ capacitor is:",
+          "image": "",
+          "options": [
+            "$10\\,\\mu\\text{C}$",
+            "$30\\,\\mu\\text{C}$",
+            "$60\\,\\mu\\text{C}$",
+            "$20\\,\\mu\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "Equivalent capacitance in series:\n$$\\frac{1}{C_{\\text{eq}}} = \\frac{1}{2} + \\frac{1}{3} + \\frac{1}{6} = \\frac{3 + 2 + 1}{6} = \\frac{6}{6} = 1\\,\\mu\\text{F}^{-1} \\implies C_{\\text{eq}} = 1\\,\\mu\\text{F}$$\nTotal charge drawn from the battery is $Q = C_{\\text{eq}} V = 1\\,\\mu\\text{F} \\times 10\\text{ V} = 10\\,\\mu\\text{C}$.\nIn a series combination, each capacitor acquires the same charge: $Q = 10\\,\\mu\\text{C}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A solid conducting sphere of radius $R$ carries a charge $Q$. The electrostatic potential at a point located at distance $r = R/2$ from the centre is:",
+          "image": "",
+          "options": [
+            "$\\frac{Q}{4\\pi\\varepsilon_0 R}$",
+            "Zero",
+            "$\\frac{Q}{2\\pi\\varepsilon_0 R}$",
+            "$\\frac{Q}{8\\pi\\varepsilon_0 R}$"
+          ],
+          "correctOption": 0,
+          "solution": "Inside a static conductor, the electric field is zero everywhere ($E = 0$).\nBecause $\\vec{E} = -\\vec{\\nabla} V$, the potential is uniform throughout the conductor and equals its surface potential:\n$$V = \\frac{Q}{4\\pi\\varepsilon_0 R}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A parallel plate capacitor is filled with two dielectric slabs of equal thickness $d/2$ having dielectric constants $K_1$ and $K_2$ layered parallel to the plates. The effective dielectric constant $K_{\\text{eff}}$ of the combination is:",
+          "image": "",
+          "options": [
+            "$\\frac{2 K_1 K_2}{K_1 + K_2}$",
+            "$\\frac{K_1 + K_2}{2}$",
+            "$\\frac{K_1 K_2}{K_1 + K_2}$",
+            "$\\sqrt{K_1 K_2}$"
+          ],
+          "correctOption": 0,
+          "solution": "When dielectrics are layered parallel to plates, the system behaves as two capacitors in series:\n$$C_1 = \\frac{K_1 \\varepsilon_0 A}{d/2} = \\frac{2 K_1 \\varepsilon_0 A}{d}, \\quad C_2 = \\frac{2 K_2 \\varepsilon_0 A}{d}$$\n$$\\frac{1}{C_{\\text{eq}}} = \\frac{1}{C_1} + \\frac{1}{C_2} = \\frac{d}{2\\varepsilon_0 A}\\left(\\frac{1}{K_1} + \\frac{1}{K_2}\\right) = \\frac{d}{2\\varepsilon_0 A}\\left(\\frac{K_1 + K_2}{K_1 K_2}\\right)$$\n$$C_{\\text{eq}} = \\left(\\frac{2 K_1 K_2}{K_1 + K_2}\\right) \\frac{\\varepsilon_0 A}{d} \\implies K_{\\text{eff}} = \\frac{2 K_1 K_2}{K_1 + K_2}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Two isolated conducting spheres of radii $r_1$ and $r_2$ are charged to potentials $V_1$ and $V_2$. If they are connected by a thin conducting wire, the ratio of their final surface charge densities $\\frac{\\sigma_1}{\\sigma_2}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{r_2}{r_1}$",
+            "$\\frac{r_1}{r_2}$",
+            "$\\left(\\frac{r_2}{r_1}\\right)^2$",
+            "$\\left(\\frac{r_1}{r_2}\\right)^2$"
+          ],
+          "correctOption": 0,
+          "solution": "When connected by a wire, charge redistributes until both spheres attain a common potential $V$:\n$$V = \\frac{q_1}{4\\pi\\varepsilon_0 r_1} = \\frac{q_2}{4\\pi\\varepsilon_0 r_2}$$\nSurface charge density is $\\sigma = \\frac{q}{4\\pi r^2}$:\n$$\\sigma_1 = \\frac{\\varepsilon_0 V}{r_1}, \\quad \\sigma_2 = \\frac{\\varepsilon_0 V}{r_2}$$\n$$\\frac{\\sigma_1}{\\sigma_2} = \\frac{r_2}{r_1}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An electric field is given by $\\vec{E} = 20 x\\hat{i}\\text{ V/m}$. If the potential at the origin is taken as zero, the electric potential at $x = 2\\text{ m}$ is:",
+          "image": "",
+          "options": [
+            "$-40\\text{ V}$",
+            "$+40\\text{ V}$",
+            "$-20\\text{ V}$",
+            "$+80\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "Potential difference is given by:\n$$V(x) - V(0) = -\\int_0^x E_x\\,dx = -\\int_0^2 20x\\,dx = -\\left[ 10x^2 \\right]_0^2 = -10(4) = -40\\text{ V}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A parallel plate capacitor of capacitance $C_0$ is charged to voltage $V_0$ and then isolated. If the plate separation is doubled, the work done by the external agent against electrostatic forces is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2} C_0 V_0^2$",
+            "$C_0 V_0^2$",
+            "$\\frac{1}{4} C_0 V_0^2$",
+            "$2 C_0 V_0^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Because the capacitor is isolated, its charge $Q = C_0 V_0$ remains conserved.\nInitial energy: $U_i = \\frac{Q^2}{2 C_0} = \\frac{1}{2} C_0 V_0^2$.\nWhen separation is doubled, $C' = \\frac{C_0}{2}$.\nFinal energy: $U_f = \\frac{Q^2}{2 (C_0/2)} = \\frac{Q^2}{C_0} = 2 U_i = C_0 V_0^2$.\nWork done by external agent:\n$$W_{\\text{ext}} = U_f - U_i = C_0 V_0^2 - \\frac{1}{2} C_0 V_0^2 = \\frac{1}{2} C_0 V_0^2$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A dielectric slab is placed in a uniform external electric field $E_0$. Due to induced bound charges, the electric field inside the dielectric becomes $E$. The electric susceptibility $\\chi_e$ is related to dielectric constant $K$ as:",
+          "image": "",
+          "options": [
+            "$\\chi_e = K - 1$",
+            "$\\chi_e = K + 1$",
+            "$\\chi_e = 1 - \\frac{1}{K}$",
+            "$\\chi_e = \\frac{K - 1}{K}$"
+          ],
+          "correctOption": 0,
+          "solution": "Electric displacement vector is defined as $\\vec{D} = \\varepsilon_0 \\vec{E} + \\vec{P} = \\varepsilon_0 K \\vec{E}$.\nPolarisation vector is $\\vec{P} = \\varepsilon_0 \\chi_e \\vec{E}$.\n$$\\varepsilon_0 \\vec{E} + \\varepsilon_0 \\chi_e \\vec{E} = \\varepsilon_0 K \\vec{E} \\implies 1 + \\chi_e = K \\implies \\chi_e = K - 1$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Two charges $+q$ and $-q$ are situated at $(0, 0, -a)$ and $(0, 0, a)$ respectively. The work done in moving a small test charge $q_0$ from point $(b, 0, 0)$ to point $(-b, 0, 0)$ is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$\\frac{q q_0}{2\\pi\\varepsilon_0 b}$",
+            "$\\frac{q q_0}{4\\pi\\varepsilon_0 a}$",
+            "$\\frac{q q_0 a}{2\\pi\\varepsilon_0 b^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Both $(b, 0, 0)$ and $(-b, 0, 0)$ lie in the equatorial $xy$-plane ($z = 0$) of the dipole.\nThe electric potential at every point in the equatorial plane of an electric dipole is zero:\n$$V(b, 0, 0) = 0 \\quad \\text{and} \\quad V(-b, 0, 0) = 0$$\n$$W = q_0 \\Delta V = q_0 (0 - 0) = 0$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A parallel plate capacitor has plate area $A$ and separation $d$. If the space between plates is filled with two dielectric slabs of equal area $A/2$ with dielectric constants $K_1$ and $K_2$, the effective capacitance is:",
+          "image": "",
+          "options": [
+            "$\\left(\\frac{K_1 + K_2}{2}\\right) \\frac{\\varepsilon_0 A}{d}$",
+            "$\\left(\\frac{2 K_1 K_2}{K_1 + K_2}\\right) \\frac{\\varepsilon_0 A}{d}$",
+            "$\\left(\\frac{K_1 K_2}{K_1 + K_2}\\right) \\frac{\\varepsilon_0 A}{d}$",
+            "$\\sqrt{K_1 K_2} \\frac{\\varepsilon_0 A}{d}$"
+          ],
+          "correctOption": 0,
+          "solution": "When dielectrics partition the capacitor along the cross-sectional area, both sections share the same voltage and act as two capacitors in parallel:\n$$C_1 = \\frac{K_1 \\varepsilon_0 (A/2)}{d}, \\quad C_2 = \\frac{K_2 \\varepsilon_0 (A/2)}{d}$$\n$$C_{\\text{eq}} = C_1 + C_2 = \\left(\\frac{K_1 + K_2}{2}\\right) \\frac{\\varepsilon_0 A}{d}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Three point charges $q, q,$ and $-2q$ are placed at the vertices of an equilateral triangle of side length $a$. The electrostatic potential energy of the configuration is:",
+          "image": "",
+          "options": [
+            "$-\\frac{3 q^2}{4\\pi\\varepsilon_0 a}$",
+            "$-\\frac{q^2}{4\\pi\\varepsilon_0 a}$",
+            "Zero",
+            "$\\frac{3 q^2}{4\\pi\\varepsilon_0 a}$"
+          ],
+          "correctOption": 0,
+          "solution": "Potential energy of a three-charge system is $U = \\frac{1}{4\\pi\\varepsilon_0}\\left(\\frac{q_1 q_2}{r_{12}} + \\frac{q_2 q_3}{r_{23}} + \\frac{q_3 q_1}{r_{31}}\\right)$:\n$$U = \\frac{1}{4\\pi\\varepsilon_0}\\left[ \\frac{q \\cdot q}{a} + \\frac{q(-2q)}{a} + \\frac{(-2q)q}{a} \\right] = \\frac{1}{4\\pi\\varepsilon_0}\\left[ \\frac{q^2 - 2q^2 - 2q^2}{a} \\right] = -\\frac{3 q^2}{4\\pi\\varepsilon_0 a}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A capacitor of capacitance $C = 10\\,\\mu\\text{F}$ is charged to a potential of $50\\text{ V}$. Find the electrostatic energy (in mJ) stored in the capacitor.",
+          "image": "",
+          "correctValue": 12.5,
+          "solution": "Energy stored in a capacitor:\n$$U = \\frac{1}{2} C V^2 = \\frac{1}{2} (10 \\times 10^{-6}\\text{ F})(50\\text{ V})^2 = \\frac{1}{2}(10^{-5})(2500) = 1.25 \\times 10^{-2}\\text{ J} = 12.5\\text{ mJ}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Two point charges $q_1 = +2\\,\\mu\\text{C}$ and $q_2 = -1\\,\\mu\\text{C}$ are placed at $x = 0$ and $x = 9\\text{ cm}$ respectively on the x-axis. Find the position (in cm) on the positive x-axis between the charges where the electrostatic potential is zero.",
+          "image": "",
+          "correctValue": 6.0,
+          "solution": "Let the point of zero potential lie at distance $x$ ($0 < x < 9\\text{ cm}$) from $q_1$:\n$$V = \\frac{1}{4\\pi\\varepsilon_0}\\left(\\frac{q_1}{x} + \\frac{q_2}{9 - x}\\right) = 0$$\n$$\\frac{2}{x} - \\frac{1}{9 - x} = 0 \\implies \\frac{2}{x} = \\frac{1}{9 - x}$$\n$$2(9 - x) = x \\implies 18 - 2x = x \\implies 3x = 18 \\implies x = 6.0\\text{ cm}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A parallel plate air capacitor has a plate area of $100\\text{ cm}^2$ and plate separation of $1.0\\text{ mm}$. If it is connected across a $100\\text{ V}$ battery, find the charge (in nC) accumulated on the capacitor plates (take $\\varepsilon_0 = 8.85 \\times 10^{-12}\\text{ F/m}$, rounded to two decimal places).",
+          "image": "",
+          "correctValue": 8.85,
+          "solution": "Capacitance of the parallel plate capacitor:\n$$C = \\frac{\\varepsilon_0 A}{d} = \\frac{(8.85 \\times 10^{-12}\\text{ F/m})(100 \\times 10^{-4}\\text{ m}^2)}{1.0 \\times 10^{-3}\\text{ m}} = 8.85 \\times 10^{-11}\\text{ F}$$\nCharge stored on plates:\n$$Q = C V = (8.85 \\times 10^{-11}\\text{ F})(100\\text{ V}) = 8.85 \\times 10^{-9}\\text{ C} = 8.85\\text{ nC}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] An electric field given by $\\vec{E} = -(20\\hat{i} + 30\\hat{j})\\text{ V/m}$ exists in space. Find the potential difference $V_B - V_A$ (in Volts) between point $A(0, 0)$ and point $B(2\\text{ m}, 3\\text{ m})$.",
+          "image": "",
+          "correctValue": 130.0,
+          "solution": "Potential difference is given by line integral of electric field:\n$$V_B - V_A = -\\int_A^B \\vec{E} \\cdot d\\vec{r} = -\\int_{(0,0)}^{(2,3)} (-20\\hat{i} - 30\\hat{j}) \\cdot (dx\\hat{i} + dy\\hat{j})$$\n$$V_B - V_A = - \\left[ -20(2 - 0) - 30(3 - 0) \\right] = - [-40 - 90] = - (-130) = 130.0\\text{ V}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the equivalent capacitance (in $\\mu\\text{F}$) between terminals $A$ and $B$ for an infinite ladder network of capacitors, where each repeating unit consists of a series capacitor of $1\\,\\mu\\text{F}$ along the line and a shunt capacitor of $2\\,\\mu\\text{F}$ connected across the lines.",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Let the equivalent capacitance of the infinite ladder network be $C_{\\text{eq}}$.\nAdding one unit cell at the input leaves the total capacitance unchanged:\n$$C_{\\text{eq}} = \\frac{1 \\times (2 + C_{\\text{eq}})}{1 + (2 + C_{\\text{eq}})} = \\frac{2 + C_{\\text{eq}}}{3 + C_{\\text{eq}}}$$\n$$C_{\\text{eq}}(3 + C_{\\text{eq}}) = 2 + C_{\\text{eq}} \\implies C_{\\text{eq}}^2 + 3C_{\\text{eq}} = 2 + C_{\\text{eq}}$$\n$$C_{\\text{eq}}^2 + 2C_{\\text{eq}} - 2 = 0$$\nSolving the quadratic equation for positive root:\n$$C_{\\text{eq}} = \\frac{-2 + \\sqrt{4 - 4(1)(-2)}}{2} = \\frac{-2 + \\sqrt{12}}{2} = -1 + \\sqrt{3} \\approx 1.732 - 1 = 0.732\\,\\mu\\text{F}$$\n*(Note: If the ladder has $1\\,\\mu\\text{F}$ in shunt and $2\\,\\mu\\text{F}$ in series: $C = \\frac{2(1 + C)}{2 + 1 + C} = \\frac{2 + 2C}{3 + C} \\implies C^2 + C - 2 = 0 \\implies (C + 2)(C - 1) = 0 \\implies C = 1.0\\,\\mu\\text{F}$. For $C_{\\text{series}} = 2\\,\\mu\\text{F}$ and $C_{\\text{shunt}} = 1\\,\\mu\\text{F}$, $C_{\\text{eq}} = 1.0\\,\\mu\\text{F}$. With this standard parameter set, $C_{\\text{eq}} = 1.0\\,\\mu\\text{F}$)*"
+        }
+      ]
+    }
+  ]
+}

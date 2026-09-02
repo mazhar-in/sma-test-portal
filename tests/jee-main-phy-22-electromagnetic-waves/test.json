@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-22-electromagnetic-waves",
+  "title": "Electromagnetic Waves",
+  "syllabus": "Electromagnetic waves and their characteristics; Transverse nature of electromagnetic waves; Displacement current; Electromagnetic spectrum (radio waves, microwaves, infrared, visible, ultraviolet, X-rays, gamma rays) including elementary facts about their uses; Energy density, momentum and radiation pressure of EM waves",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The electric field of a plane electromagnetic wave propagating in vacuum along the positive z-direction is given by $\\vec{E} = E_0\\cos(kz - \\omega t)\\hat{i}$. The corresponding magnetic field $\\vec{B}$ is given by:",
+          "image": "",
+          "options": [
+            "$\\frac{E_0}{c}\\cos(kz - \\omega t)\\hat{j}$",
+            "$-\\frac{E_0}{c}\\cos(kz - \\omega t)\\hat{j}$",
+            "$\\frac{E_0}{c}\\cos(kz - \\omega t)\\hat{k}$",
+            "$c E_0\\cos(kz - \\omega t)\\hat{j}$"
+          ],
+          "correctOption": 0,
+          "solution": "The direction of propagation of an electromagnetic wave is along $\\vec{E} \\times \\vec{B}$.\nHere, the propagation direction is $+\\hat{k}$ and the electric field points along $+\\hat{i}$.\nSince $\\hat{i} \\times \\hat{j} = \\hat{k}$, the magnetic field must oscillate along $+\\hat{j}$.\nUsing the relation $B_0 = \\frac{E_0}{c}$:\n$$\\vec{B} = \\frac{E_0}{c}\\cos(kz - \\omega t)\\hat{j}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A parallel plate capacitor with circular plates of radius $R$ is being charged by a steady current $I$. The displacement current density between the plates at a radial distance $r$ ($r < R$) from the central axis is:",
+          "image": "",
+          "options": [
+            "$\\frac{I}{\\pi R^2}$",
+            "$\\frac{I r}{\\pi R^3}$",
+            "$\\frac{I}{\\pi r^2}$",
+            "Zero"
+          ],
+          "correctOption": 0,
+          "solution": "By Maxwell's continuity principle, the total displacement current between the plates equals the conduction current: $I_d = I$.\nAssuming a uniform electric field between the plates, the electric flux is uniformly distributed over the entire area $\\pi R^2$.\nTherefore, the displacement current density is uniform everywhere between the plates:\n$$j_d = \\frac{I_d}{A} = \\frac{I}{\\pi R^2}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following electromagnetic radiations is arranged in the correct order of increasing frequency?",
+          "image": "",
+          "options": [
+            "Radio waves < Microwaves < Infrared < Ultraviolet",
+            "Infrared < Radio waves < Microwaves < Ultraviolet",
+            "Microwaves < Radio waves < Infrared < Ultraviolet",
+            "Ultraviolet < Infrared < Microwaves < Radio waves"
+          ],
+          "correctOption": 0,
+          "solution": "In order of increasing frequency (decreasing wavelength) across the electromagnetic spectrum:\n$$\\text{Radio waves } (< 10^9\\text{ Hz}) < \\text{Microwaves } (10^9 - 10^{11}\\text{ Hz}) < \\text{Infrared } (10^{11} - 10^{14}\\text{ Hz}) < \\text{Visible } < \\text{Ultraviolet } (10^{15} - 10^{17}\\text{ Hz}) < \\text{X-rays} < \\gamma\\text{-rays}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The average intensity of a plane electromagnetic wave with peak electric field amplitude $E_0$ propagating in vacuum is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}\\varepsilon_0 c E_0^2$",
+            "$\\varepsilon_0 c E_0^2$",
+            "$\\frac{1}{4}\\varepsilon_0 c E_0^2$",
+            "$\\frac{E_0^2}{2\\mu_0}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total average energy density of an EM wave is $\\langle u \\rangle = \\frac{1}{2}\\varepsilon_0 E_0^2$.\nAverage intensity (energy flowing per unit area per second) is given by:\n$$I = \\langle u \\rangle c = \\frac{1}{2}\\varepsilon_0 c E_0^2$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] A plane electromagnetic wave travels in a non-magnetic dielectric medium of relative permittivity $\\varepsilon_r = 4.0$ and relative permeability $\\mu_r = 1.0$. The speed of the wave in this medium is:",
+          "image": "",
+          "options": [
+            "$1.5 \\times 10^8\\text{ m/s}$",
+            "$3.0 \\times 10^8\\text{ m/s}$",
+            "$0.75 \\times 10^8\\text{ m/s}$",
+            "$2.0 \\times 10^8\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "The refractive index of the medium is $n = \\sqrt{\\varepsilon_r \\mu_r} = \\sqrt{4.0 \\times 1.0} = 2.0$.\nSpeed of the wave in the medium:\n$$v = \\frac{c}{n} = \\frac{3.0 \\times 10^8\\text{ m/s}}{2.0} = 1.5 \\times 10^8\\text{ m/s}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A beam of electromagnetic radiation of intensity $I$ falls normally on a completely reflecting flat surface of area $A$. The radiation pressure exerted on the surface is:",
+          "image": "",
+          "options": [
+            "$\\frac{2I}{c}$",
+            "$\\frac{I}{c}$",
+            "$\\frac{I}{2c}$",
+            "$\\frac{4I}{c}$"
+          ],
+          "correctOption": 0,
+          "solution": "For normal incidence on a perfectly reflecting surface, each photon of momentum $p$ rebounds with momentum $-p$, so the change in momentum is $\\Delta p = 2p$.\nRadiation pressure:\n$$P_{\\text{rad}} = \\frac{\\Delta p}{A \\Delta t} = \\frac{2(U/c)}{A \\Delta t} = \\frac{2I}{c}$$\n(For a completely absorbing surface, it would be $I/c$)."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] In a plane electromagnetic wave, the amplitude of the magnetic field is $B_0 = 2.0 \\times 10^{-7}\\text{ T}$. The amplitude of the electric field $E_0$ is:",
+          "image": "",
+          "options": [
+            "$60\\text{ V/m}$",
+            "$30\\text{ V/m}$",
+            "$90\\text{ V/m}$",
+            "$120\\text{ V/m}$"
+          ],
+          "correctOption": 0,
+          "solution": "In an electromagnetic wave propagating in free space:\n$$E_0 = c B_0$$\n$$E_0 = (3.0 \\times 10^8\\text{ m/s}) \\times (2.0 \\times 10^{-7}\\text{ T}) = 60\\text{ V/m}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which part of the electromagnetic spectrum is used in RADAR systems for aircraft navigation?",
+          "image": "",
+          "options": [
+            "Microwaves",
+            "Ultraviolet rays",
+            "Infrared rays",
+            "X-rays"
+          ],
+          "correctOption": 0,
+          "solution": "Microwaves (wavelength range $1\\text{ mm}$ to $0.1\\text{ m}$) are short-wavelength radio waves suitable for radar systems, satellite telecommunications, and aircraft navigation because of their ability to travel in narrow beams without significant diffraction."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Maxwell's displacement current arises due to a time-varying:",
+          "image": "",
+          "options": [
+            "Electric flux",
+            "Magnetic flux",
+            "Electric charge density",
+            "Magnetic dipole moment"
+          ],
+          "correctOption": 0,
+          "solution": "Maxwell modified Ampere's circuital law by introducing the displacement current term $I_d = \\varepsilon_0 \\frac{d\\Phi_E}{dt}$, which is produced whenever the electric field and electric flux vary with time."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The ratio of the average energy density stored in the electric field to that in the magnetic field of an electromagnetic wave in vacuum is:",
+          "image": "",
+          "options": [
+            "$1 : 1$",
+            "$2 : 1$",
+            "$1 : 2$",
+            "$c : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Average electric energy density: $u_E = \\frac{1}{4}\\varepsilon_0 E_0^2$.\nAverage magnetic energy density: $u_B = \\frac{B_0^2}{4\\mu_0}$.\nUsing $E_0 = c B_0$ and $c^2 = \\frac{1}{\\mu_0 \\varepsilon_0}$:\n$$u_E = \\frac{1}{4}\\varepsilon_0 (c^2 B_0^2) = \\frac{1}{4}\\varepsilon_0 \\left(\\frac{1}{\\mu_0 \\varepsilon_0}\\right) B_0^2 = \\frac{B_0^2}{4\\mu_0} = u_B$$\n$$\\frac{u_E}{u_B} = 1 : 1$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Greenhouse warming of the Earth's atmosphere occurs because greenhouse gases effectively absorb:",
+          "image": "",
+          "options": [
+            "Infrared radiation re-radiated by the Earth's surface",
+            "Incoming ultraviolet radiation from the Sun",
+            "Visible light emitted by the Sun",
+            "Radio waves in the upper ionosphere"
+          ],
+          "correctOption": 0,
+          "solution": "The Earth's warm surface re-radiates heat energy in the long-wavelength infrared region.\nGreenhouse gas molecules (such as $\\text{CO}_2, \\text{H}_2\\text{O}$ vapor, and $\\text{CH}_4$) absorb these infrared radiations and scatter them back toward the surface, trapping heat."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The Poynting vector $\\vec{S}$ represents the rate of electromagnetic energy transport per unit area and is defined as:",
+          "image": "",
+          "options": [
+            "$\\vec{S} = \\frac{1}{\\mu_0} (\\vec{E} \\times \\vec{B})$",
+            "$\\vec{S} = \\mu_0 (\\vec{E} \\times \\vec{B})$",
+            "$\\vec{S} = \\frac{1}{\\varepsilon_0} (\\vec{E} \\times \\vec{B})$",
+            "$\\vec{S} = \\frac{1}{\\mu_0} (\\vec{B} \\times \\vec{E})$"
+          ],
+          "correctOption": 0,
+          "solution": "By definition in classical electrodynamics, the Poynting vector is:\n$$\\vec{S} = \\frac{1}{\\mu_0} (\\vec{E} \\times \\vec{B})$$\nIts magnitude gives the instantaneous energy flux density in $\\text{W/m}^2$ and its direction points along the propagation of wave energy."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A plane electromagnetic wave has wavelength $\\lambda = 3.0\\text{ mm}$. The wave belongs to which region of the electromagnetic spectrum?",
+          "image": "",
+          "options": [
+            "Microwaves",
+            "Infrared",
+            "Ultraviolet",
+            "Radiowaves"
+          ],
+          "correctOption": 0,
+          "solution": "Frequency of the wave:\n$$\\nu = \\frac{c}{\\lambda} = \\frac{3.0 \\times 10^8\\text{ m/s}}{3.0 \\times 10^{-3}\\text{ m}} = 1.0 \\times 10^{11}\\text{ Hz} = 100\\text{ GHz}$$\nRadiation in the wavelength range from $1\\text{ mm}$ to $1\\text{ m}$ ($0.3\\text{ GHz}$ to $300\\text{ GHz}$) belongs to the Microwave region."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An electromagnetic wave is propagating along the direction vector $\\hat{n} = \\frac{1}{\\sqrt{2}}(\\hat{i} + \\hat{j})$. If its electric field is oscillating along $\\hat{k}$, the unit vector along the magnetic field oscillation is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{\\sqrt{2}}(-\\hat{i} + \\hat{j})$",
+            "$\\frac{1}{\\sqrt{2}}(\\hat{i} - \\hat{j})$",
+            "$\\frac{1}{\\sqrt{2}}(\\hat{i} + \\hat{j})$",
+            "$\\hat{i}$"
+          ],
+          "correctOption": 0,
+          "solution": "The wave propagates along $\\hat{n} = \\hat{E} \\times \\hat{B}$.\nHere $\\hat{E} = \\hat{k}$ and $\\hat{n} = \\frac{1}{\\sqrt{2}}(\\hat{i} + \\hat{j})$.\nUsing $\\hat{B} = \\hat{n} \\times \\hat{E}$:\n$$\\hat{B} = \\left[\\frac{1}{\\sqrt{2}}(\\hat{i} + \\hat{j})\\right] \\times \\hat{k} = \\frac{1}{\\sqrt{2}}(\\hat{i} \\times \\hat{k} + \\hat{j} \\times \\hat{k}) = \\frac{1}{\\sqrt{2}}(-\\hat{j} + \\hat{i}) = \\frac{1}{\\sqrt{2}}(\\hat{i} - \\hat{j})$$\nChecking $\\hat{E} \\times \\hat{B}$:\n$$\\hat{k} \\times \\frac{1}{\\sqrt{2}}(\\hat{i} - \\hat{j}) = \\frac{1}{\\sqrt{2}}(\\hat{j} - (-\\hat{i})) = \\frac{1}{\\sqrt{2}}(\\hat{i} + \\hat{j}) = \\hat{n}$$\nThus, $\\hat{B} = \\frac{1}{\\sqrt{2}}(\\hat{i} - \\hat{j})$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Which electromagnetic radiation is used for the treatment of muscular strain and in physical therapy?",
+          "image": "",
+          "options": [
+            "Infrared rays",
+            "Ultraviolet rays",
+            "X-rays",
+            "Gamma rays"
+          ],
+          "correctOption": 0,
+          "solution": "Infrared lamps produce gentle thermal heating that penetrates skin tissues, dilating local blood vessels, relieving muscular aches, and aiding physical therapy."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Electromagnetic waves are produced by:",
+          "image": "",
+          "options": [
+            "An accelerating or oscillating electric charge",
+            "A static electric charge",
+            "A steady direct current in a wire",
+            "A charge moving with constant velocity"
+          ],
+          "correctOption": 0,
+          "solution": "A static charge produces only an electrostatic field.\nA charge moving with uniform velocity produces a steady magnetic field without radiative loss.\nAn accelerating or oscillating charge produces continuously changing, coupled electric and magnetic fields that radiate into space as electromagnetic waves."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A laser beam delivers energy $U$ to a completely absorbing flat target in time $t$. The total momentum transferred to the target is:",
+          "image": "",
+          "options": [
+            "$\\frac{U}{c}$",
+            "$\\frac{2U}{c}$",
+            "$\\frac{U}{2c}$",
+            "$U c$"
+          ],
+          "correctOption": 0,
+          "solution": "For total absorption of electromagnetic radiation carrying total energy $U$:\n$$p = \\frac{U}{c}$$\nAll the linear momentum carried by the incident wave is completely delivered to the target."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The ozone layer in the Earth's upper atmosphere protects life primarily by absorbing incoming:",
+          "image": "",
+          "options": [
+            "Ultraviolet radiation",
+            "Infrared radiation",
+            "X-rays",
+            "Cosmic gamma rays"
+          ],
+          "correctOption": 0,
+          "solution": "The stratospheric ozone layer absorb high-energy, harmful ultraviolet rays (especially UV-B and UV-C) from the Sun, preventing severe cellular and genetic damage to terrestrial organisms."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] In a plane electromagnetic wave, the magnetic field is given by $B_y = 2 \\times 10^{-7}\\sin(0.5 \\times 10^3 x + 1.5 \\times 10^{11} t)\\text{ T}$. The wavelength $\\lambda$ of this wave is:",
+          "image": "",
+          "options": [
+            "$1.26\\text{ cm}$",
+            "$2.51\\text{ cm}$",
+            "$0.63\\text{ cm}$",
+            "$4.0\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Comparing with $B_y = B_0\\sin(kx + \\omega t)$:\nWave number $k = 0.5 \\times 10^3\\text{ m}^{-1} = 500\\text{ m}^{-1}$.\nWavelength:\n$$\\lambda = \\frac{2\\pi}{k} = \\frac{2 \\times 3.1416}{500} = \\frac{6.2832}{500} = 0.01257\\text{ m} \\approx 1.26\\text{ cm}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Which of the following equations represents Maxwell's generalization of Ampere's Law?",
+          "image": "",
+          "options": [
+            "$\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_c + \\mu_0 \\varepsilon_0 \\frac{d\\Phi_E}{dt}$",
+            "$\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_c$",
+            "$\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}$",
+            "$\\oint \\vec{B} \\cdot d\\vec{A} = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "The Ampere-Maxwell law in integral form accounts for both conduction current $I_c$ and displacement current $I_d = \\varepsilon_0 \\frac{d\\Phi_E}{dt}$:\n$$\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (I_c + I_d) = \\mu_0 I_c + \\mu_0 \\varepsilon_0 \\frac{d\\Phi_E}{dt}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A plane electromagnetic wave of intensity $6.0 \\times 10^8\\text{ W/m}^2$ strikes a flat non-reflecting surface of area $1.5\\text{ m}^2$ at normal incidence. Find the radiation force (in Newtons) exerted on the surface.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "For a completely absorbing (non-reflecting) surface:\n$$P_{\\text{rad}} = \\frac{I}{c}$$\nForce exerted on area $A$:\n$$F = P_{\\text{rad}} \\times A = \\frac{I A}{c} = \\frac{(6.0 \\times 10^8\\text{ W/m}^2) \\times 1.5\\text{ m}^2}{3.0 \\times 10^8\\text{ m/s}} = \\frac{9.0 \\times 10^8}{3.0 \\times 10^8} = 3.0\\text{ N}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A plane electromagnetic wave has a peak electric field amplitude $E_0 = 120\\text{ V/m}$. Find the peak magnetic field amplitude $B_0$ in units of $10^{-7}\\text{ T}$.",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "In free space:\n$$B_0 = \\frac{E_0}{c} = \\frac{120\\text{ V/m}}{3.0 \\times 10^8\\text{ m/s}} = 4.0 \\times 10^{-7}\\text{ T}$$\nValue in units of $10^{-7}\\text{ T}$ is $4.0$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A circular parallel plate capacitor of capacitance $C = 2.0\\,\\mu\\text{F}$ is being charged such that the potential difference across the plates increases at a rate of $\\frac{dV}{dt} = 10^6\\text{ V/s}$. Find the displacement current (in Amperes) through the space between the plates.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "Charge on capacitor is $q = C V$.\nDisplacement current between plates equals charging conduction current:\n$$I_d = \\frac{dq}{dt} = C \\frac{dV}{dt}$$\nSubstitute $C = 2.0 \\times 10^{-6}\\text{ F}$ and $\\frac{dV}{dt} = 10^6\\text{ V/s}$:\n$$I_d = (2.0 \\times 10^{-6}\\text{ F}) \\times (10^6\\text{ V/s}) = 2.0\\text{ A}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] A point source of light emits isotropic radiation of power $100\\text{ W}$. Find the average intensity of the radiation (in $\\text{W/m}^2$) at a distance of $2.0\\text{ m}$ from the source (take $\\pi = 3.14$, rounded to two decimal places).",
+          "image": "",
+          "correctValue": 1.99,
+          "solution": "For an isotropic point source, the radiation spreads uniformly over a spherical surface of area $4\\pi r^2$:\n$$I = \\frac{P}{4\\pi r^2}$$\nSubstitute $P = 100\\text{ W}$ and $r = 2.0\\text{ m}$:\n$$I = \\frac{100}{4\\pi (2.0)^2} = \\frac{100}{16\\pi} = \\frac{6.25}{\\pi} = \\frac{6.25}{3.1416} \\approx 1.989\\text{ W/m}^2 \\approx 1.99\\text{ W/m}^2$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] The amplitude of the electric field in a plane electromagnetic wave in vacuum is $E_0 = 60\\text{ V/m}$. Find the total average energy density of the wave (in units of $10^{-8}\\text{ J/m}^3$, take $\\varepsilon_0 = 8.85 \\times 10^{-12}\\text{ C}^2/(\\text{N}\\cdot\\text{m}^2)$, rounded to two decimal places).",
+          "image": "",
+          "correctValue": 1.59,
+          "solution": "Total average energy density of an electromagnetic wave is:\n$$\\langle u \\rangle = \\frac{1}{2}\\varepsilon_0 E_0^2$$\nSubstitute $\\varepsilon_0 = 8.85 \\times 10^{-12}\\text{ F/m}$ and $E_0 = 60\\text{ V/m}$:\n$$\\langle u \\rangle = \\frac{1}{2}(8.85 \\times 10^{-12}) \\times (60)^2 = \\frac{1}{2}(8.85 \\times 10^{-12}) \\times 3600$$\n$$\\langle u \\rangle = 8.85 \\times 10^{-12} \\times 1800 = 15930 \\times 10^{-12} = 1.593 \\times 10^{-8}\\text{ J/m}^3 \\approx 1.59 \\times 10^{-8}\\text{ J/m}^3$$\nValue in units of $10^{-8}\\text{ J/m}^3$ is $1.59$."
+        }
+      ]
+    }
+  ]
+}

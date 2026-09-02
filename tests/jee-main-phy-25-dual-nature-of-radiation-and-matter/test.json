@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-25-dual-nature-of-radiation-and-matter",
+  "title": "Dual Nature of Radiation and Matter",
+  "syllabus": "Dual nature of radiation, Photoelectric effect, Hertz and Lenard's observations; Einstein's photoelectric equation-particle nature of light; Matter waves-wave nature of particles, de Broglie relation; Davisson-Germer experiment",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] An electron, an $\\alpha$-particle, and a proton have the same kinetic energy. The de Broglie wavelengths associated with them are $\\lambda_e, \\lambda_\\alpha,$ and $\\lambda_p$ respectively. Which of the following relationships is correct?",
+          "image": "",
+          "options": [
+            "$\\lambda_e > \\lambda_p > \\lambda_\\alpha$",
+            "$\\lambda_\\alpha > \\lambda_p > \\lambda_e$",
+            "$\\lambda_e = \\lambda_p = \\lambda_\\alpha$",
+            "$\\lambda_p > \\lambda_e > \\lambda_\\alpha$"
+          ],
+          "correctOption": 0,
+          "solution": "The de Broglie wavelength is related to kinetic energy $K$ by $\\lambda = \\frac{h}{p} = \\frac{h}{\\sqrt{2mK}}$.\nFor equal kinetic energy $K$:\n$$\\lambda \\propto \\frac{1}{\\sqrt{m}}$$\nSince the masses satisfy $m_e < m_p < m_\\alpha$, the corresponding de Broglie wavelengths satisfy:\n$$\\lambda_e > \\lambda_p > \\lambda_\\alpha$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] When light of frequency $2\\nu_0$ (where $\\nu_0$ is the threshold frequency) is incident on a metal plate, the maximum velocity of emitted photoelectrons is $v_1$. When the frequency of incident radiation is increased to $5\\nu_0$, the maximum velocity becomes $v_2$. The ratio $\\frac{v_1}{v_2}$ is:",
+          "image": "",
+          "options": [
+            "$1 : 2$",
+            "$1 : 4$",
+            "$1 : \\sqrt{2}$",
+            "$2 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Using Einstein's photoelectric equation $\\frac{1}{2}mv^2 = h\\nu - \\phi = h(\\nu - \\nu_0)$:\nFor $\\nu_1 = 2\\nu_0$:\n$$\\frac{1}{2}mv_1^2 = h(2\\nu_0 - \\nu_0) = h\\nu_0$$\nFor $\\nu_2 = 5\\nu_0$:\n$$\\frac{1}{2}mv_2^2 = h(5\\nu_0 - \\nu_0) = 4h\\nu_0$$\nDividing the two equations:\n$$\\frac{v_1^2}{v_2^2} = \\frac{h\\nu_0}{4h\\nu_0} = \\frac{1}{4} \\implies \\frac{v_1}{v_2} = \\frac{1}{2}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A metal surface of work function $\\phi = 2.0\\text{ eV}$ is illuminated with photons of energy $3.5\\text{ eV}$. The stopping potential required to cut off the photo-electric current is:",
+          "image": "",
+          "options": [
+            "$1.5\\text{ V}$",
+            "$3.5\\text{ V}$",
+            "$2.0\\text{ V}$",
+            "$5.5\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "From Einstein's photoelectric equation:\n$$K_{\\max} = e V_0 = E - \\phi$$\n$$e V_0 = 3.5\\text{ eV} - 2.0\\text{ eV} = 1.5\\text{ eV}$$\n$$V_0 = 1.5\\text{ V}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The slope of the graph of stopping potential ($V_0$) versus frequency ($\\nu$) of incident light in a photoelectric effect experiment is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{h}{e}$",
+            "$\\frac{e}{h}$",
+            "$h$",
+            "$h e$"
+          ],
+          "correctOption": 0,
+          "solution": "Einstein's photoelectric equation expressed in terms of stopping potential:\n$$e V_0 = h\\nu - \\phi \\implies V_0 = \\left(\\frac{h}{e}\\right)\\nu - \\frac{\\phi}{e}$$\nComparing with the linear equation $y = mx + c$, the slope is $m = \\frac{h}{e}$, which is a universal constant independent of the nature of the photosensitive material."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] An electron of mass $m$ is accelerated from rest through an electric potential difference $V$. The de Broglie wavelength $\\lambda$ associated with the electron is given by:",
+          "image": "",
+          "options": [
+            "$\\frac{h}{\\sqrt{2meV}}$",
+            "$\\frac{h}{\\sqrt{meV}}$",
+            "$\\frac{\\sqrt{2meV}}{h}$",
+            "$\\frac{h}{2meV}$"
+          ],
+          "correctOption": 0,
+          "solution": "The kinetic energy gained by an electron accelerated through potential $V$ is $K = e V$.\nMomentum of the electron is $p = \\sqrt{2mK} = \\sqrt{2meV}$.\nBy de Broglie relation:\n$$\\lambda = \\frac{h}{p} = \\frac{h}{\\sqrt{2meV}}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In a photoelectric experiment, if the intensity of incident light is doubled while keeping its frequency constant above the threshold value, which of the following quantities is doubled?",
+          "image": "",
+          "options": [
+            "Saturation photoelectric current",
+            "Stopping potential",
+            "Maximum kinetic energy of photoelectrons",
+            "Threshold wavelength"
+          ],
+          "correctOption": 0,
+          "solution": "The intensity of monochromatic radiation is directly proportional to the number of incident photons per second.\nBecause each photon ejects at most one photoelectron, doubling the intensity doubles the number of photoelectrons emitted per second, thereby doubling the saturation photocurrent.\nKinetic energy and stopping potential depend purely on the photon frequency, not on intensity."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A particle is moving in three dimensions with kinetic energy equal to $E$. If the de Broglie wavelength of the particle is $\\lambda$, then its momentum is:",
+          "image": "",
+          "options": [
+            "$\\frac{h}{\\lambda}$",
+            "$\\frac{\\lambda}{h}$",
+            "$\\frac{h}{\\lambda^2}$",
+            "$\\frac{E}{c}$"
+          ],
+          "correctOption": 0,
+          "solution": "The de Broglie relation $\\lambda = \\frac{h}{p}$ directly relates the matter wavelength to momentum $p$:\n$$p = \\frac{h}{\\lambda}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A photon and an electron have the same de Broglie wavelength $\\lambda$. If $E_p$ is the energy of the photon and $E_e$ is the kinetic energy of the electron, the ratio $\\frac{E_p}{E_e}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{2mc\\lambda}{h}$",
+            "$\\frac{mc\\lambda}{2h}$",
+            "$\\frac{h}{2mc\\lambda}$",
+            "$\\frac{2h}{mc\\lambda}$"
+          ],
+          "correctOption": 0,
+          "solution": "Energy of photon: $E_p = \\frac{h c}{\\lambda}$.\nKinetic energy of non-relativistic electron: $E_e = \\frac{p^2}{2m} = \\frac{(h/\\lambda)^2}{2m} = \\frac{h^2}{2m\\lambda^2}$.\nTaking the ratio:\n$$\\frac{E_p}{E_e} = \\frac{hc / \\lambda}{h^2 / (2m\\lambda^2)} = \\frac{hc}{\\lambda} \\times \\frac{2m\\lambda^2}{h^2} = \\frac{2mc\\lambda}{h}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The threshold wavelength for photoelectric emission from a metal surface is $300\\text{ nm}$. Photoelectrons will be emitted when the metal is illuminated by:",
+          "image": "",
+          "options": [
+            "$250\\text{ nm}$ radiation",
+            "$350\\text{ nm}$ radiation",
+            "$400\\text{ nm}$ radiation",
+            "$500\\text{ nm}$ radiation"
+          ],
+          "correctOption": 0,
+          "solution": "Photoelectric emission occurs only when the incident photon energy exceeds the work function, which requires the incident wavelength $\\lambda$ to be less than or equal to the threshold wavelength $\\lambda_0$:\n$$\\lambda \\le \\lambda_0 = 300\\text{ nm}$$\nAmong the given options, only $250\\text{ nm} < 300\\text{ nm}$ produces emission."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In the Davisson-Germer experiment, the wave nature of electrons was demonstrated by observing diffraction maxima of electrons scattered from a nickel crystal. The maximum constructive interference was obtained at an accelerating voltage and scattering angle of:",
+          "image": "",
+          "options": [
+            "$54\\text{ V}$ and $50^\\circ$",
+            "$50\\text{ V}$ and $54^\\circ$",
+            "$44\\text{ V}$ and $60^\\circ$",
+            "$64\\text{ V}$ and $45^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "In the historical Davisson-Germer electron diffraction experiment on a nickel crystal, a pronounced sharp peak in the intensity of scattered electrons was recorded at an accelerating potential of $54\\text{ V}$ and scattering angle $\\theta = 50^\\circ$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] The de Broglie wavelength of a thermal neutron at absolute temperature $T$ is proportional to:",
+          "image": "",
+          "options": [
+            "$T^{-1/2}$",
+            "$T^{1/2}$",
+            "$T^{-1}$",
+            "$T$"
+          ],
+          "correctOption": 0,
+          "solution": "The mean kinetic energy of a thermal neutron in equilibrium at temperature $T$ is $K = \\frac{3}{2}k_B T$.\nIts de Broglie wavelength is:\n$$\\lambda = \\frac{h}{\\sqrt{2mK}} = \\frac{h}{\\sqrt{3m k_B T}} \\propto T^{-1/2}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Light of two different frequencies $\\nu_1$ and $\\nu_2$ ($\\nu_1 > \\nu_2$) is incident successively on a metal plate. The ratio of the maximum kinetic energies of emitted photoelectrons is $K_1 : K_2 = 2 : 1$. The work function of the metal is:",
+          "image": "",
+          "options": [
+            "$h(2\\nu_2 - \\nu_1)$",
+            "$h(\\nu_1 - 2\\nu_2)$",
+            "$\\frac{h(\\nu_1 + \\nu_2)}{2}$",
+            "$h(\\nu_1 - \\nu_2)$"
+          ],
+          "correctOption": 0,
+          "solution": "From Einstein's photoelectric equation:\n$$K_1 = h\\nu_1 - \\phi$$\n$$K_2 = h\\nu_2 - \\phi$$\nGiven $K_1 = 2K_2$:\n$$h\\nu_1 - \\phi = 2(h\\nu_2 - \\phi) = 2h\\nu_2 - 2\\phi$$\n$$\\phi = 2h\\nu_2 - h\\nu_1 = h(2\\nu_2 - \\nu_1)$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If the linear momentum of a particle is increased by $50\\%$, the percentage decrease in its de Broglie wavelength is:",
+          "image": "",
+          "options": [
+            "$33.3\\%$",
+            "$50.0\\%$",
+            "$25.0\\%$",
+            "$66.7\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial wavelength is $\\lambda_1 = \\frac{h}{p_1}$.\nWhen momentum is increased by $50\\%$, $p_2 = 1.5 p_1 = \\frac{3}{2}p_1$.\nNew wavelength:\n$$\\lambda_2 = \\frac{h}{p_2} = \\frac{h}{\\frac{3}{2}p_1} = \\frac{2}{3}\\lambda_1$$\nPercentage decrease:\n$$\\frac{\\lambda_1 - \\lambda_2}{\\lambda_1} \\times 100\\% = \\left(1 - \\frac{2}{3}\\right) \\times 100\\% = \\frac{1}{3} \\times 100\\% \\approx 33.3\\%$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A source of light of power $P$ emits $N$ photons per second of wavelength $\\lambda$. The value of $N$ is given by:",
+          "image": "",
+          "options": [
+            "$\\frac{P \\lambda}{h c}$",
+            "$\\frac{P h c}{\\lambda}$",
+            "$\\frac{P h}{\\lambda c}$",
+            "$\\frac{h c}{P \\lambda}$"
+          ],
+          "correctOption": 0,
+          "solution": "Energy of a single photon of wavelength $\\lambda$ is $E = \\frac{h c}{\\lambda}$.\nTotal power emitted by the source is $P = N E = N \\left(\\frac{h c}{\\lambda}\\right)$.\n$$N = \\frac{P \\lambda}{h c}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Photoelectric emission is an instantaneous process because the time lag between the incidence of radiation and the ejection of photoelectrons is of the order of:",
+          "image": "",
+          "options": [
+            "$10^{-9}\\text{ s}$ or less",
+            "$10^{-3}\\text{ s}$",
+            "$10^{-1}\\text{ s}$",
+            "Several seconds"
+          ],
+          "correctOption": 0,
+          "solution": "In experimental observations of the photoelectric effect, the emission process begins almost instantaneously with an extremely small time lag on the order of $10^{-9}\\text{ s}$ or less, confirming the localized quantum particle nature of light absorption."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The work functions of Caesium and Copper are $2.14\\text{ eV}$ and $4.65\\text{ eV}$ respectively. The ratio of their threshold frequencies $\\frac{\\nu_{0,\\text{Cs}}}{\\nu_{0,\\text{Cu}}}$ is approximately:",
+          "image": "",
+          "options": [
+            "$0.46$",
+            "$2.17$",
+            "$0.23$",
+            "$1.00$"
+          ],
+          "correctOption": 0,
+          "solution": "Work function is related to threshold frequency by $\\phi = h\\nu_0$:\n$$\\frac{\\nu_{0,\\text{Cs}}}{\\nu_{0,\\text{Cu}}} = \\frac{\\phi_{\\text{Cs}}}{\\phi_{\\text{Cu}}} = \\frac{2.14\\text{ eV}}{4.65\\text{ eV}} \\approx 0.4602 \\approx 0.46$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A proton and an alpha particle are accelerated through the same potential difference $V$. The ratio of their de Broglie wavelengths $\\frac{\\lambda_p}{\\lambda_\\alpha}$ is:",
+          "image": "",
+          "options": [
+            "$2\\sqrt{2} : 1$",
+            "$2 : 1$",
+            "$\\sqrt{2} : 1$",
+            "$4 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "For a charged particle accelerated through potential $V$, $\\lambda = \\frac{h}{\\sqrt{2mqV}}$.\n$$\\frac{\\lambda_p}{\\lambda_\\alpha} = \\sqrt{\\frac{m_\\alpha q_\\alpha}{m_p q_p}}$$\nGiven $m_\\alpha = 4m_p$ and $q_\\alpha = 2q_p$:\n$$\\frac{\\lambda_p}{\\lambda_\\alpha} = \\sqrt{\\frac{(4m_p)(2q_p)}{m_p q_p}} = \\sqrt{8} = 2\\sqrt{2} : 1$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A photon of frequency $\\nu$ collides with an electron at rest. The photon undergoes Compton scattering. The scattered photon has:",
+          "image": "",
+          "options": [
+            "Lower frequency and longer wavelength",
+            "Higher frequency and shorter wavelength",
+            "The same frequency and wavelength",
+            "Higher speed in vacuum"
+          ],
+          "correctOption": 0,
+          "solution": "During Compton scattering, the incident photon transfers part of its energy to the recoil electron.\nThe scattered photon therefore possesses lower energy ($E' < E$), which corresponds to a lower frequency ($\\nu' < \\nu$) and a longer wavelength ($\\lambda' > \\lambda$)."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An electron microscope uses electrons accelerated by a potential difference of $V = 50\\text{ kV}$. The resolving power of this electron microscope compared to an optical microscope using yellow light ($\\lambda \\approx 600\\text{ nm}$) is approximately:",
+          "image": "",
+          "options": [
+            "$10^5$ times greater",
+            "$10^2$ times greater",
+            "$10^3$ times smaller",
+            "Equal"
+          ],
+          "correctOption": 0,
+          "solution": "The de Broglie wavelength of $50\\text{ kV}$ electrons is:\n$$\\lambda_e = \\frac{1.227}{\\sqrt{V}}\\text{ nm} = \\frac{1.227}{\\sqrt{50000}}\\text{ nm} \\approx \\frac{1.227}{223.6}\\text{ nm} \\approx 0.0055\\text{ nm} = 5.5 \\times 10^{-12}\\text{ m}$$\nResolving power is inversely proportional to wavelength:\n$$\\frac{\\text{RP}_e}{\\text{RP}_{\\text{optical}}} = \\frac{\\lambda_{\\text{optical}}}{\\lambda_e} = \\frac{600 \\times 10^{-9}\\text{ m}}{5.5 \\times 10^{-12}\\text{ m}} \\approx 1.1 \\times 10^5$$\nIt is on the order of $10^5$ times greater."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] In a photoelectric experiment, a collector plate is kept at different potentials with respect to the emitter plate for incident light of constant frequency but two different intensities $I_1$ and $I_2$ ($I_1 > I_2$). The resulting current-voltage ($I-V$) curves show that:",
+          "image": "",
+          "options": [
+            "The stopping potential is identical for both intensities, but saturation current is higher for $I_1$",
+            "The stopping potential is higher for $I_1$",
+            "The saturation currents are identical, but stopping potential differs",
+            "Both stopping potential and saturation current are identical"
+          ],
+          "correctOption": 0,
+          "solution": "Stopping potential depends solely on the frequency of the incident radiation and the metal work function ($e V_0 = h\\nu - \\phi$).\nBecause the frequency is identical, both curves intersect the voltage axis at the same negative stopping potential $-V_0$.\nHowever, higher intensity $I_1$ supplies more photons per second, yielding a higher saturation photocurrent."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the de Broglie wavelength (in Ångströms) of an electron accelerated from rest through a potential difference of $100\\text{ V}$ (round to two decimal places).",
+          "image": "",
+          "correctValue": 1.23,
+          "solution": "For an electron accelerated through a potential difference $V$:\n$$\\lambda = \\frac{12.27}{\\sqrt{V}}\\text{ Å}$$\nSubstitute $V = 100\\text{ V}$:\n$$\\lambda = \\frac{12.27}{\\sqrt{100}} = \\frac{12.27}{10} = 1.227\\text{ Å} \\approx 1.23\\text{ Å}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A monochromatic laser source of power $66\\text{ W}$ emits light of wavelength $600\\text{ nm}$. Find the number of photons emitted per second in units of $10^{20}\\text{ s}^{-1}$ (take Planck's constant $h = 6.6 \\times 10^{-34}\\text{ J}\\cdot\\text{s}$ and $c = 3.0 \\times 10^8\\text{ m/s}$).",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "Energy of a single photon:\n$$E = \\frac{h c}{\\lambda} = \\frac{(6.6 \\times 10^{-34})(3.0 \\times 10^8)}{600 \\times 10^{-9}} = \\frac{1.98 \\times 10^{-25}}{6.0 \\times 10^{-7}} = 3.3 \\times 10^{-19}\\text{ J}$$\nNumber of photons emitted per second:\n$$n = \\frac{P}{E} = \\frac{66}{3.3 \\times 10^{-19}} = 20 \\times 10^{19} = 2.0 \\times 10^{20}\\text{ s}^{-1}$$\nValue in units of $10^{20}\\text{ s}^{-1}$ is $2.0$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] The work function of a metal surface is $2.5\\text{ eV}$. Find its threshold frequency $\\nu_0$ in units of $10^{14}\\text{ Hz}$ (take $h = 6.63 \\times 10^{-34}\\text{ J}\\cdot\\text{s}$ and $1\\text{ eV} = 1.6 \\times 10^{-19}\\text{ J}$, rounded to two decimal places).",
+          "image": "",
+          "correctValue": 6.03,
+          "solution": "Threshold frequency formula:\n$$\\nu_0 = \\frac{\\phi}{h} = \\frac{2.5 \\times 1.6 \\times 10^{-19}\\text{ J}}{6.63 \\times 10^{-34}\\text{ J}\\cdot\\text{s}} = \\frac{4.0 \\times 10^{-19}}{6.63 \\times 10^{-34}} \\approx 0.6033 \\times 10^{15}\\text{ Hz} = 6.033 \\times 10^{14}\\text{ Hz} \\approx 6.03 \\times 10^{14}\\text{ Hz}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Light of wavelength $400\\text{ nm}$ is incident on a metallic surface having a work function of $2.1\\text{ eV}$. Find the maximum kinetic energy of the emitted photoelectrons in electron-volts (take $h c = 1240\\text{ eV}\\cdot\\text{nm}$).",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Energy of incident photons:\n$$E = \\frac{h c}{\\lambda} = \\frac{1240\\text{ eV}\\cdot\\text{nm}}{400\\text{ nm}} = 3.1\\text{ eV}$$\nMaximum kinetic energy:\n$$K_{\\max} = E - \\phi = 3.1\\text{ eV} - 2.1\\text{ eV} = 1.0\\text{ eV}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the de Broglie wavelength (in pm) of an electron having a kinetic energy of $150\\text{ eV}$ (take $\\sqrt{150} \\approx 12.25$, rounded to the nearest whole integer).",
+          "image": "",
+          "correctValue": 100.0,
+          "solution": "The de Broglie wavelength of an electron with kinetic energy $K = 150\\text{ eV}$ is equivalent to being accelerated across $V = 150\\text{ V}$:\n$$\\lambda = \\frac{1.227}{\\sqrt{V}}\\text{ nm} = \\frac{1.227}{\\sqrt{150}}\\text{ nm} \\approx \\frac{1.227}{12.247}\\text{ nm} \\approx 0.1002\\text{ nm} = 100.2\\text{ pm} \\approx 100.0\\text{ pm}$$"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-phy-23-ray-optics-and-optical-instruments",
+  "title": "Ray Optics and Optical Instruments",
+  "syllabus": "Reflection of light, spherical mirrors, mirror formula; Refraction of light, total internal reflection and its applications, optical fibres; Refraction at spherical surfaces, lenses, thin lens formula, lensmaker's formula; Magnification, power of a lens, combination of thin lenses in contact; Refraction of light through a prism; Optical instruments: Microscopes and astronomical telescopes (reflecting and refracting) and their magnifying powers",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A convex lens of focal length $20\\text{ cm}$ made of glass ($n_g = 1.5$) is immersed in water ($n_w = 4/3$). Its new focal length in water will be:",
+          "image": "",
+          "options": [
+            "$80\\text{ cm}$",
+            "$40\\text{ cm}$",
+            "$60\\text{ cm}$",
+            "$20\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the Lensmaker's formula:\n$$\\frac{1}{f_{\\text{air}}} = (n_g - 1)\\left(\\frac{1}{R_1} - \\frac{1}{R_2}\\right) = (1.5 - 1) K = 0.5 K$$\n$$\\frac{1}{f_{\\text{water}}} = \\left(\\frac{n_g}{n_w} - 1\\right) K = \\left(\\frac{1.5}{4/3} - 1\\right) K = \\left(\\frac{9}{8} - 1\\right) K = \\frac{1}{8} K$$\nDividing the two equations:\n$$\\frac{f_{\\text{water}}}{f_{\\text{air}}} = \\frac{0.5}{1/8} = 4 \\implies f_{\\text{water}} = 4 f_{\\text{air}} = 4 \\times 20\\text{ cm} = 80\\text{ cm}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] An astronomical telescope has an objective of focal length $100\\text{ cm}$ and an eyepiece of focal length $5\\text{ cm}$. In normal adjustment, the magnifying power and the length of the telescope tube are respectively:",
+          "image": "",
+          "options": [
+            "$20$ and $105\\text{ cm}$",
+            "$20$ and $95\\text{ cm}$",
+            "$25$ and $105\\text{ cm}$",
+            "$50$ and $100\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "In normal adjustment (final image formed at infinity):\nMagnifying power magnitude:\n$$|m| = \\frac{f_o}{f_e} = \\frac{100}{5} = 20$$\nTube length:\n$$L = f_o + f_e = 100 + 5 = 105\\text{ cm}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A prism of refractive index $\\sqrt{3}$ has an angle of prism $A = 60^\\circ$. The angle of minimum deviation $\\delta_m$ for this prism is:",
+          "image": "",
+          "options": [
+            "$60^\\circ$",
+            "$30^\\circ$",
+            "$45^\\circ$",
+            "$90^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the prism formula:\n$$\\mu = \\frac{\\sin\\left(\\frac{A + \\delta_m}{2}\\right)}{\\sin(A/2)}$$\n$$\\sqrt{3} = \\frac{\\sin\\left(\\frac{60^\\circ + \\delta_m}{2}\\right)}{\\sin(30^\\circ)} = \\frac{\\sin\\left(\\frac{60^\\circ + \\delta_m}{2}\\right)}{1/2}$$\n$$\\sin\\left(\\frac{60^\\circ + \\delta_m}{2}\\right) = \\frac{\\sqrt{3}}{2} \\implies \\frac{60^\\circ + \\delta_m}{2} = 60^\\circ$$\n$$60^\\circ + \\delta_m = 120^\\circ \\implies \\delta_m = 60^\\circ$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A point source of light is placed at the bottom of a water container of depth $h$. If the refractive index of water is $\\mu$, the radius of the circular disc of light emergent at the water surface is:",
+          "image": "",
+          "options": [
+            "$\\frac{h}{\\sqrt{\\mu^2 - 1}}$",
+            "$\\frac{h}{\\sqrt{\\mu^2 + 1}}$",
+            "$\\frac{h}{\\mu}$",
+            "$h\\sqrt{\\mu^2 - 1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Light rays emerge into air only if their angle of incidence is less than or equal to the critical angle $\\theta_c$:\n$$\\sin\\theta_c = \\frac{1}{\\mu} \\implies \\tan\\theta_c = \\frac{1}{\\sqrt{\\mu^2 - 1}}$$\nFrom the geometry of the cone of illumination:\n$$r = h \\tan\\theta_c = \\frac{h}{\\sqrt{\\mu^2 - 1}}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Two thin convex lenses of focal lengths $f_1 = 20\\text{ cm}$ and $f_2 = 30\\text{ cm}$ are placed in coaxial contact. The power of the lens combination is:",
+          "image": "",
+          "options": [
+            "$+8.33\\text{ D}$",
+            "$+5.00\\text{ D}$",
+            "$+1.67\\text{ D}$",
+            "$+10.00\\text{ D}$"
+          ],
+          "correctOption": 0,
+          "solution": "Equivalent focal length for thin lenses in contact:\n$$\\frac{1}{F} = \\frac{1}{f_1} + \\frac{1}{f_2} = \\frac{1}{20} + \\frac{1}{30} = \\frac{3 + 2}{60} = \\frac{5}{60} = \\frac{1}{12}\\text{ cm}^{-1} \\implies F = 12\\text{ cm} = 0.12\\text{ m}$$\nPower of combination:\n$$P = \\frac{1}{F(\\text{in m})} = \\frac{1}{0.12} = \\frac{100}{12} \\approx +8.33\\text{ D}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A concave mirror produces a real image twice the size of the object. If the focal length of the mirror is $20\\text{ cm}$, the distance of the object from the mirror is:",
+          "image": "",
+          "options": [
+            "$30\\text{ cm}$",
+            "$10\\text{ cm}$",
+            "$40\\text{ cm}$",
+            "$15\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a real inverted image formed by a concave mirror: $m = -2$ and $f = -20\\text{ cm}$.\nUsing the magnification formula in terms of $f$ and $u$:\n$$m = \\frac{f}{f - u}$$\n$$-2 = \\frac{-20}{-20 - u} = \\frac{20}{20 + u}$$\n$$-2(20 + u) = 20 \\implies 20 + u = -10 \\implies u = -30\\text{ cm}$$\nDistance of object from mirror is $30\\text{ cm}$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A ray of light is incident at Brewster's angle $i_p$ on a glass slab of refractive index $\\mu$. The angle between the reflected ray and refracted ray is:",
+          "image": "",
+          "options": [
+            "$90^\\circ$",
+            "$180^\\circ$",
+            "$45^\\circ$",
+            "$0^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "By Brewster's law, $\\tan i_p = \\mu$.\nBy Snell's law: $\\frac{\\sin i_p}{\\sin r} = \\mu = \\frac{\\sin i_p}{\\cos i_p} \\implies \\sin r = \\cos i_p = \\sin(90^\\circ - i_p)$.\nThus, $r = 90^\\circ - i_p \\implies i_p + r = 90^\\circ$.\nThe angle between the reflected ray (reflected at angle $i_p$) and refracted ray is $180^\\circ - (i_p + r) = 180^\\circ - 90^\\circ = 90^\\circ$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An equiconvex lens of focal length $f$ and refractive index $1.5$ is cut into two equal halves along its principal axis (horizontally). The focal length of each half is:",
+          "image": "",
+          "options": [
+            "$f$",
+            "$2f$",
+            "$f/2$",
+            "$4f$"
+          ],
+          "correctOption": 0,
+          "solution": "Cutting an equiconvex lens horizontally along its principal axis does not change the radii of curvature ($R_1$ and $R_2$) or the refractive index of either half.\nFrom the Lensmaker's formula, $\\frac{1}{f} = (\\mu - 1)\\left(\\frac{1}{R_1} - \\frac{1}{R_2}\\right)$ remains unchanged.\nThus, each half retains the original focal length $f$ (though intensity of the image formed drops by half)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In a compound microscope, the focal lengths of the objective lens and eyepiece are $f_o = 1.0\\text{ cm}$ and $f_e = 5.0\\text{ cm}$ respectively. An object is placed at $1.1\\text{ cm}$ from the objective. If the final virtual image is formed at the near point ($D = 25\\text{ cm}$), the total magnifying power is:",
+          "image": "",
+          "options": [
+            "$60$",
+            "$50$",
+            "$30$",
+            "$100$"
+          ],
+          "correctOption": 0,
+          "solution": "For the objective lens:\n$$\\frac{1}{v_o} - \\frac{1}{u_o} = \\frac{1}{f_o} \\implies \\frac{1}{v_o} - \\frac{1}{-1.1} = \\frac{1}{1.0} \\implies \\frac{1}{v_o} = 1 - \\frac{10}{11} = \\frac{1}{11} \\implies v_o = 11\\text{ cm}$$\nLinear magnification of objective: $m_o = -\\frac{v_o}{u_o} = -\\frac{11}{1.1} = -10$.\nAngular magnification of eyepiece at near point:\n$$m_e = 1 + \\frac{D}{f_e} = 1 + \\frac{25}{5} = 1 + 5 = 6$$\nTotal magnifying power:\n$$|m| = |m_o| \\times m_e = 10 \\times 6 = 60$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A ray of light passes through an equilateral glass prism such that the angle of incidence equals the angle of emergence and each is equal to $\\frac{3}{4}A$ (where $A$ is the prism angle). The angle of deviation is:",
+          "image": "",
+          "options": [
+            "$30^\\circ$",
+            "$45^\\circ$",
+            "$60^\\circ$",
+            "$15^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "For any prism, the relation between angles is $i + e = A + \\delta$.\nGiven $A = 60^\\circ$ and $i = e = \\frac{3}{4}(60^\\circ) = 45^\\circ$:\n$$45^\\circ + 45^\\circ = 60^\\circ + \\delta$$\n$$90^\\circ = 60^\\circ + \\delta \\implies \\delta = 30^\\circ$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] A glass slab of thickness $t = 6\\text{ cm}$ and refractive index $\\mu = 1.5$ is placed over a mark made on a paper. The mark appears to be raised by:",
+          "image": "",
+          "options": [
+            "$2.0\\text{ cm}$",
+            "$1.5\\text{ cm}$",
+            "$3.0\\text{ cm}$",
+            "$4.0\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Apparent shift due to a transparent glass slab viewed normally is:\n$$\\Delta x = t\\left(1 - \\frac{1}{\\mu}\\right) = 6\\left(1 - \\frac{1}{1.5}\\right) = 6\\left(1 - \\frac{2}{3}\\right) = 6 \\times \\frac{1}{3} = 2.0\\text{ cm}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A convex lens of focal length $f$ forms a real image of an object on a screen. If the distance between the object and the screen is $D$, a real image can be formed on the screen only if:",
+          "image": "",
+          "options": [
+            "$D \\ge 4f$",
+            "$D \\ge 2f$",
+            "$D \\le 4f$",
+            "$D = f$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the distance from the object to the lens be $u$ and from the lens to the screen be $v$, so $u + v = D$.\nUsing the lens formula: $\\frac{1}{v} - \\frac{1}{-u} = \\frac{1}{f} \\implies \\frac{1}{D - u} + \\frac{1}{u} = \\frac{1}{f} \\implies \\frac{D}{u(D - u)} = \\frac{1}{f}$.\n$$u^2 - D u + D f = 0$$\nFor real physical roots of $u$, the discriminant must be non-negative:\n$$D^2 - 4 D f \\ge 0 \\implies D(D - 4f) \\ge 0 \\implies D \\ge 4f$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] An object is placed at a distance of $12\\text{ cm}$ in front of a convex mirror of radius of curvature $24\\text{ cm}$. The position and nature of the image are:",
+          "image": "",
+          "options": [
+            "$+6\\text{ cm}$, virtual and erect",
+            "$-6\\text{ cm}$, real and inverted",
+            "$+12\\text{ cm}$, virtual and erect",
+            "$-24\\text{ cm}$, real and inverted"
+          ],
+          "correctOption": 0,
+          "solution": "For a convex mirror: $f = +R/2 = +12\\text{ cm}$ and $u = -12\\text{ cm}$.\nFrom mirror equation:\n$$\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f} \\implies \\frac{1}{v} + \\frac{1}{-12} = \\frac{1}{12} \\implies \\frac{1}{v} = \\frac{1}{12} + \\frac{1}{12} = \\frac{2}{12} = \\frac{1}{6} \\implies v = +6\\text{ cm}$$\nMagnification $m = -\\frac{v}{u} = -\\frac{6}{-12} = +0.5$.\nThe image is formed at $6\\text{ cm}$ behind the mirror, and is virtual, erect, and diminished."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An optical fiber consists of a core of refractive index $n_1 = 1.5$ and a cladding of refractive index $n_2 = 1.4$. The numerical aperture ($\\text{NA} = \\sin\\theta_{\\max}$) of the optical fiber for launch into air is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{0.29}$",
+            "$\\sqrt{0.10}$",
+            "$0.54$",
+            "$0.10$"
+          ],
+          "correctOption": 0,
+          "solution": "Numerical aperture (NA) of a step-index optical fiber is:\n$$\\text{NA} = \\sqrt{n_1^2 - n_2^2} = \\sqrt{(1.5)^2 - (1.4)^2} = \\sqrt{2.25 - 1.96} = \\sqrt{0.29} \\approx 0.5385$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A thin prism of angle $A = 4^\\circ$ and refractive index $\\mu = 1.54$ produces an angle of minimum deviation equal to:",
+          "image": "",
+          "options": [
+            "$2.16^\\circ$",
+            "$1.08^\\circ$",
+            "$3.24^\\circ$",
+            "$4.00^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "For a thin prism with a small refracting angle $A$:\n$$\\delta = (\\mu - 1)A = (1.54 - 1)(4^\\circ) = 0.54 \\times 4^\\circ = 2.16^\\circ$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A spherical air bubble is embedded inside a solid glass sphere of refractive index $\\mu = 1.5$. The bubble behaves as a:",
+          "image": "",
+          "options": [
+            "Diverging lens",
+            "Converging lens",
+            "Plane glass plate",
+            "Concave mirror"
+          ],
+          "correctOption": 0,
+          "solution": "The air bubble represents a medium of lower refractive index ($n_{\\text{inside}} = 1.0$) enclosed in an environment of higher refractive index ($n_{\\text{surrounding}} = 1.5$).\nA convex surface bounded by a rarer medium within a denser medium diverges incident light rays, behaving as a diverging lens."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A Cassegrain reflecting telescope uses two mirrors: a large primary mirror and a small secondary mirror. The primary and secondary mirrors are respectively:",
+          "image": "",
+          "options": [
+            "Concave paraboloidal and convex hyperboloidal",
+            "Convex and concave",
+            "Plane and concave",
+            "Concave and concave"
+          ],
+          "correctOption": 0,
+          "solution": "In a standard Cassegrain reflecting telescope, the primary objective mirror is a large concave mirror (paraboloidal to eliminate spherical aberration) with a central aperture, and the secondary mirror is a small convex mirror that reflects rays through the hole to the eyepiece."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Chromatic aberration in an optical imaging system arises primarily due to:",
+          "image": "",
+          "options": [
+            "Dispersion of light in lenses causing focal length to vary with wavelength",
+            "The large aperture of lenses causing marginal rays to focus closer",
+            "Total internal reflection within the eyepiece",
+            "Diffraction at the lens boundaries"
+          ],
+          "correctOption": 0,
+          "solution": "Because the refractive index of glass varies with wavelength (Cauchy's relation $\\mu(\\lambda)$), the focal length of a lens differs for different colors (blue focuses closer than red), producing chromatic aberration. Mirrors do not suffer from chromatic aberration."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A ray of light traveling in a denser medium of refractive index $\\mu$ strikes the interface with air at grazing emergence (angle of refraction $r = 90^\\circ$). If the angle of incidence is $30^\\circ$, the value of $\\mu$ is:",
+          "image": "",
+          "options": [
+            "$2.0$",
+            "$1.5$",
+            "$\\sqrt{2}$",
+            "$1.732$"
+          ],
+          "correctOption": 0,
+          "solution": "By Snell's law at the critical incidence:\n$$\\mu \\sin i_c = 1 \\cdot \\sin 90^\\circ = 1$$\n$$\\mu \\sin 30^\\circ = 1 \\implies \\mu\\left(\\frac{1}{2}\\right) = 1 \\implies \\mu = 2.0$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] In a displacement method experiment to determine the focal length of a convex lens, the sizes of images formed at the two positions of the lens on a screen are $I_1 = 9\\text{ cm}$ and $I_2 = 4\\text{ cm}$. The size of the object $O$ is:",
+          "image": "",
+          "options": [
+            "$6\\text{ cm}$",
+            "$6.5\\text{ cm}$",
+            "$5\\text{ cm}$",
+            "$13\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "In the displacement method, magnifications at the two conjugate positions satisfy $m_1 = \\frac{I_1}{O}$ and $m_2 = \\frac{I_2}{O}$ with $m_1 m_2 = 1$.\n$$\\frac{I_1 I_2}{O^2} = 1 \\implies O = \\sqrt{I_1 I_2} = \\sqrt{9 \\times 4} = \\sqrt{36} = 6\\text{ cm}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] An equiconvex lens of radius of curvature $R = 20\\text{ cm}$ is made of a glass of refractive index $\\mu = 1.5$. Find its focal length in centimetres.",
+          "image": "",
+          "correctValue": 20.0,
+          "solution": "Using Lensmaker's formula for an equiconvex lens ($R_1 = +20\\text{ cm}$, $R_2 = -20\\text{ cm}$):\n$$\\frac{1}{f} = (\\mu - 1)\\left(\\frac{1}{R_1} - \\frac{1}{R_2}\\right) = (1.5 - 1)\\left(\\frac{1}{20} - \\left(-\\frac{1}{20}\\right)\\right) = 0.5 \\times \\frac{2}{20} = \\frac{1}{20}\\text{ cm}^{-1}$$\n$$f = 20.0\\text{ cm}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A small coin is resting at the bottom of a water tank filled to a depth of $32\\text{ cm}$. If the refractive index of water is $4/3$, find the apparent depth of the coin (in cm) when viewed normally from above.",
+          "image": "",
+          "correctValue": 24.0,
+          "solution": "Apparent depth for normal incidence viewing:\n$$d_{\\text{apparent}} = \\frac{d_{\\text{real}}}{\\mu} = \\frac{32\\text{ cm}}{4/3} = 32 \\times \\frac{3}{4} = 24.0\\text{ cm}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A concave mirror has a radius of curvature $R = 40\\text{ cm}$. An object is placed at distance $u = 30\\text{ cm}$ in front of the mirror. Find the distance of the image (in cm) from the mirror.",
+          "image": "",
+          "correctValue": 60.0,
+          "solution": "For a concave mirror: $f = -R/2 = -20\\text{ cm}$ and $u = -30\\text{ cm}$.\nFrom mirror equation:\n$$\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f} \\implies \\frac{1}{v} + \\frac{1}{-30} = \\frac{1}{-20}$$\n$$\\frac{1}{v} = -\\frac{1}{20} + \\frac{1}{30} = \\frac{-3 + 2}{60} = -\\frac{1}{60} \\implies v = -60\\text{ cm}$$\nMagnitude of image distance is $60.0\\text{ cm}$."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] An astronomical telescope in normal adjustment has an objective focal length of $150\\text{ cm}$ and magnifying power of 30. Find the focal length of the eyepiece (in cm).",
+          "image": "",
+          "correctValue": 5.0,
+          "solution": "In normal adjustment:\n$$m = \\frac{f_o}{f_e}$$\n$$30 = \\frac{150}{f_e} \\implies f_e = \\frac{150}{30} = 5.0\\text{ cm}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A light ray enters normally into one face of an isosceles right-angled prism ($A = 90^\\circ, B = C = 45^\\circ$) and undergoes total internal reflection at the hypotenuse face. Find the minimum refractive index $\\mu_{\\min}$ of the prism material (take $\\sqrt{2} = 1.414$, rounded to two decimal places).",
+          "image": "",
+          "correctValue": 1.41,
+          "solution": "The ray enters the first leg normally ($i = 0$), striking the hypotenuse face inside the prism at an angle of incidence $i = 45^\\circ$.\nFor total internal reflection to occur:\n$$i \\ge i_c \\implies \\sin i \\ge \\sin i_c$$\n$$\\sin 45^\\circ \\ge \\frac{1}{\\mu} \\implies \\frac{1}{\\sqrt{2}} \\ge \\frac{1}{\\mu} \\implies \\mu \\ge \\sqrt{2}$$\n$$\\mu_{\\min} = \\sqrt{2} \\approx 1.414 \\approx 1.41$$"
+        }
+      ]
+    }
+  ]
+}
