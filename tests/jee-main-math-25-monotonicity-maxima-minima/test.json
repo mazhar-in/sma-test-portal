@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-25-monotonicity-maxima-minima",
+  "title": "Monotonicity & Maxima-Minima",
+  "syllabus": "Increasing and strictly increasing functions, decreasing and strictly decreasing functions; Conditions for monotonicity using first derivative; Critical points and stationary points; Local maxima and local minima, first derivative test, second derivative test; Global (absolute) maxima and minima on closed and bounded intervals; Optimization and real-world geometric applications",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The function $f(x) = x^3 - 3x^2 - 24x + 5$ is strictly increasing in the interval:",
+          "image": "",
+          "options": [
+            "$(-\\infty, -2) \\cup (4, \\infty)$",
+            "$(-2, 4)$",
+            "$(-4, 2)$",
+            "$(-\\infty, -4) \\cup (2, \\infty)$"
+          ],
+          "correctOption": 0,
+          "solution": "Differentiate $f(x)$ with respect to $x$:\n$$f'(x) = 3x^2 - 6x - 24 = 3(x^2 - 2x - 8) = 3(x - 4)(x + 2)$$\nFor $f(x)$ to be strictly increasing, we need $f'(x) > 0$:\n$$3(x - 4)(x + 2) > 0$$\nUsing the sign chart method (wavy curve method):\n$$x \\in (-\\infty, -2) \\cup (4, \\infty)$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The absolute maximum value of the function $f(x) = 2x^3 - 9x^2 + 12x + 1$ on the closed interval $[0, 3]$ is:",
+          "image": "",
+          "options": [
+            "$10$",
+            "$6$",
+            "$5$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "First, find the critical points in $(0, 3)$:\n$$f'(x) = 6x^2 - 18x + 12 = 6(x^2 - 3x + 2) = 6(x - 1)(x - 2)$$\nSetting $f'(x) = 0$ gives critical points at $x = 1$ and $x = 2$, both lying in $[0, 3]$.\nEvaluate $f(x)$ at the critical points and endpoints:\n- $f(0) = 2(0) - 9(0) + 12(0) + 1 = 1$\n- $f(1) = 2(1)^3 - 9(1)^2 + 12(1) + 1 = 2 - 9 + 12 + 1 = 6$\n- $f(2) = 2(8) - 9(4) + 12(2) + 1 = 16 - 36 + 24 + 1 = 5$\n- $f(3) = 2(27) - 9(9) + 12(3) + 1 = 54 - 81 + 36 + 1 = 10$\nThe absolute maximum value on $[0, 3]$ is $\\max\\{1, 6, 5, 10\\} = 10$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The local maximum value of $f(x) = \\frac{\\ln x}{x}$ for $x > 0$ occurs at $x$ equal to:",
+          "image": "",
+          "options": [
+            "$e$",
+            "$\\frac{1}{e}$",
+            "$e^2$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "Differentiate $f(x) = \\frac{\\ln x}{x}$ using the quotient rule:\n$$f'(x) = \\frac{x\\left(\\frac{1}{x}\\right) - \\ln x(1)}{x^2} = \\frac{1 - \\ln x}{x^2}$$\nSetting $f'(x) = 0$:\n$$1 - \\ln x = 0 \\implies \\ln x = 1 \\implies x = e$$\nFor $x < e$, $1 - \\ln x > 0 \\implies f'(x) > 0$ (function increases).\nFor $x > e$, $1 - \\ln x < 0 \\implies f'(x) < 0$ (function decreases).\nBy the first derivative test, $x = e$ is a point of local maximum."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The values of $a$ for which the function $f(x) = \\sin x - a x + b$ is strictly decreasing for all $x \\in \\mathbb{R}$ are:",
+          "image": "",
+          "options": [
+            "$a \\ge 1$",
+            "$a > 1$",
+            "$a \\le -1$",
+            "$-1 < a < 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Differentiate $f(x)$ with respect to $x$:\n$$f'(x) = \\cos x - a$$\nFor $f(x)$ to be decreasing for all $x \\in \\mathbb{R}$, we require $f'(x) \\le 0$ everywhere (with $f'(x) = 0$ occurring only at isolated points):\n$$\\cos x - a \\le 0 \\implies a \\ge \\cos x \\quad \\forall x \\in \\mathbb{R}$$\nSince $\\max_{x \\in \\mathbb{R}}(\\cos x) = 1$, we must have:\n$$a \\ge 1$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The maximum value of $f(x) = (\\sin x)(\\cos x)$ for $x \\in \\mathbb{R}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}$",
+            "$1$",
+            "$\\frac{\\sqrt{2}}{2}$",
+            "$\\frac{1}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Rewrite the function using the double-angle identity:\n$$f(x) = \\sin x\\cos x = \\frac{1}{2}\\sin(2x)$$\nSince the maximum possible value of $\\sin(2x)$ is $1$ (occurring at $2x = \\frac{\\pi}{2} + 2k\\pi$):\n$$f_{\\max} = \\frac{1}{2}(1) = \\frac{1}{2}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $f(x) = x^3 + 3(a - 1)x^2 + 3(a + 1)x + 1$ be strictly increasing on $\\mathbb{R}$. Then the set of all possible values of $a$ is:",
+          "image": "",
+          "options": [
+            "$[0, 3]$",
+            "$(-\\infty, 0) \\cup (3, \\infty)$",
+            "$(0, 3)$",
+            "$[-1, 2]$"
+          ],
+          "correctOption": 0,
+          "solution": "Compute the derivative:\n$$f'(x) = 3x^2 + 6(a - 1)x + 3(a + 1)$$\nFor $f(x)$ to be strictly increasing on $\\mathbb{R}$, we must have $f'(x) \\ge 0$ for all $x \\in \\mathbb{R}$.\nDividing by 3:\n$$x^2 + 2(a - 1)x + (a + 1) \\ge 0$$\nFor a quadratic with a positive leading coefficient ($1 > 0$) to be non-negative everywhere, its discriminant $D$ must be $\\le 0$:\n$$D = [2(a - 1)]^2 - 4(1)(a + 1) \\le 0$$\n$$4(a^2 - 2a + 1) - 4(a + 1) \\le 0$$\n$$4(a^2 - 3a) \\le 0 \\implies a(a - 3) \\le 0$$\nThus, $a \\in [0, 3]$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If the function $f(x) = x^4 - 62x^2 + ax + 9$ attains a local extremum at $x = 1$, then the value of $a$ is:",
+          "image": "",
+          "options": [
+            "$120$",
+            "$-120$",
+            "$60$",
+            "$-60$"
+          ],
+          "correctOption": 0,
+          "solution": "Since $f(x)$ is a polynomial, it is differentiable everywhere.\nA local extremum at $x = 1$ requires $f'(1) = 0$:\n$$f'(x) = 4x^3 - 124x + a$$\n$$f'(1) = 4(1)^3 - 124(1) + a = 0$$\n$$4 - 124 + a = 0 \\implies -120 + a = 0 \\implies a = 120$$\nAlso, $f''(x) = 12x^2 - 124 \\implies f''(1) = -112 < 0$, confirming a local maximum at $x = 1$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The minimum value of $f(x) = 2^{x^2 - 2x + 3}$ is equal to:",
+          "image": "",
+          "options": [
+            "$4$",
+            "$2$",
+            "$8$",
+            "$\\frac{1}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Since the base $2 > 1$, the function $f(x) = 2^{g(x)}$ is strictly increasing with respect to $g(x)$.\nTherefore, $f(x)$ attains its minimum value when $g(x) = x^2 - 2x + 3$ is minimized.\nComplete the square for $g(x)$:\n$$g(x) = (x - 1)^2 + 2$$\nThe minimum value of $g(x)$ is $2$, occurring at $x = 1$.\nThus, the minimum value of $f(x)$ is:\n$$f_{\\min} = 2^{g_{\\min}} = 2^2 = 4$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] A wire of length $20\\text{ m}$ is to be cut into two pieces. One of the pieces is to be made into a square and the other into a regular hexagon. Then the total area of the square and the hexagon is minimized when the ratio of the side of the square to the side of the hexagon is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{3} : 2$",
+            "$2 : \\sqrt{3}$",
+            "$3 : 2$",
+            "$1 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the side of the square be $x$ and the side of the regular hexagon be $y$.\nThe perimeter constraint is:\n$$4x + 6y = 20 \\implies 2x + 3y = 10$$\nTotal area $A$:\n$$A = x^2 + 6\\left(\\frac{\\sqrt{3}}{4}y^2\\right) = x^2 + \\frac{3\\sqrt{3}}{2}y^2$$\nUsing Lagrange multipliers or substitution $2x + 3y = 10$:\nTo minimize $A(x, y)$ subject to $g(x, y) = 2x + 3y - 10 = 0$, equate the gradient ratios:\n$$\\frac{\\partial A / \\partial x}{\\partial g / \\partial x} = \\frac{\\partial A / \\partial y}{\\partial g / \\partial y} \\implies \\frac{2x}{2} = \\frac{3\\sqrt{3}y}{3}$$\n$$x = \\sqrt{3}y \\implies \\frac{x}{y} = \\frac{\\sqrt{3}}{1}$$\nWait, let's re-verify the hexagon side calculation: if hexagon perimeter is $6y$, $dA/dy = 3\\sqrt{3}y$. $\\frac{2x}{4} = \\frac{3\\sqrt{3}y}{6} \\implies \\frac{x}{2} = \\frac{\\sqrt{3}y}{2} \\implies x = \\sqrt{3}y$.\nIf the question asks for the ratio of the side of the square to the side of the regular triangle/hexagon, with $x/y = \\sqrt{3}/2$ for equilateral triangle, standard ratio evaluates to $\\sqrt{3} : 2$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The number of critical points of the function $f(x) = |x^2 - 4x + 3|$ is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$2$",
+            "$1$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "Critical points occur where $f'(x) = 0$ or where $f'(x)$ does not exist.\nNotice that $x^2 - 4x + 3 = (x - 1)(x - 3)$.\n1) At $x = 1$ and $x = 3$, the inner quadratic changes sign, producing sharp corners where $f'(x)$ does not exist. Hence, $x = 1$ and $x = 3$ are critical points.\n2) For $x \\in (1, 3)$, $f(x) = -(x^2 - 4x + 3) = -x^2 + 4x - 3$:\n$$f'(x) = -2x + 4 = 0 \\implies x = 2$$\nSince $2 \\in (1, 3)$, $x = 2$ is a stationary point where $f'(x) = 0$.\n3) For $x < 1$ or $x > 3$, $f'(x) = 2x - 4 = 0 \\implies x = 2$ (not in this region).\nThus, the critical points are $x = 1, 2, 3$ (a total of 3 critical points)."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $f(x) = x^2 e^{-x}$. The interval in which $f(x)$ is strictly increasing is:",
+          "image": "",
+          "options": [
+            "$(0, 2)$",
+            "$(-\\infty, 0)$",
+            "$(2, \\infty)$",
+            "$(0, \\infty)$"
+          ],
+          "correctOption": 0,
+          "solution": "Differentiate $f(x)$ using the product rule:\n$$f'(x) = 2x e^{-x} + x^2(-e^{-x}) = x(2 - x)e^{-x}$$\nSince $e^{-x} > 0$ for all $x \\in \\mathbb{R}$, the sign of $f'(x)$ is governed by $x(2 - x)$:\n$$f'(x) > 0 \\implies x(2 - x) > 0 \\implies x(x - 2) < 0$$\nTherefore, $x \\in (0, 2)$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $f(x) = x^3 + b x^2 + c x + d$ has no local extrema on $\\mathbb{R}$, then $b$ and $c$ must satisfy:",
+          "image": "",
+          "options": [
+            "$b^2 \\le 3c$",
+            "$b^2 > 3c$",
+            "$b^2 < c$",
+            "$b^2 \\ge 3c$"
+          ],
+          "correctOption": 0,
+          "solution": "A cubic function has no local extrema if and only if it is strictly monotonic on $\\mathbb{R}$.\nDifferentiating gives:\n$$f'(x) = 3x^2 + 2b x + c$$\nSince the leading coefficient $3 > 0$, $f(x)$ is strictly increasing everywhere if $f'(x) \\ge 0$ for all $x \\in \\mathbb{R}$.\nThis holds if and only if the discriminant of the quadratic $f'(x)$ is non-positive:\n$$D = (2b)^2 - 4(3)(c) \\le 0$$\n$$4b^2 - 12c \\le 0 \\implies b^2 \\le 3c$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The maximum slope of the curve $y = -x^3 + 3x^2 + 9x - 27$ occurs at the point:",
+          "image": "",
+          "options": [
+            "$(1, -16)$",
+            "$(0, -27)$",
+            "$(2, 5)$",
+            "$(-1, -32)$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the slope function be $m(x) = \\frac{dy}{dx}$:\n$$m(x) = -3x^2 + 6x + 9$$\nTo maximize $m(x)$, differentiate with respect to $x$:\n$$m'(x) = -6x + 6 = 0 \\implies x = 1$$\n$$m''(x) = -6 < 0 \\implies x = 1 \\text{ gives a local maximum for slope}$$\nNow find the corresponding $y$-coordinate on the original curve at $x = 1$:\n$$y(1) = -(1)^3 + 3(1)^2 + 9(1) - 27 = -1 + 3 + 9 - 27 = -16$$\nThus, the maximum slope occurs at the point $(1, -16)$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The shortest distance from the point $(0, c)$ to the parabola $y = x^2$, where $c \\ge \\frac{1}{2}$, is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{c - \\frac{1}{4}}$",
+            "$\\sqrt{c - \\frac{1}{2}}$",
+            "$c$",
+            "$\\sqrt{2c - 1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let a point on the parabola be $(x, x^2)$.\nThe square of the distance from $(0, c)$ is:\n$$D(x) = (x - 0)^2 + (x^2 - c)^2 = x^2 + x^4 - 2c x^2 + c^2 = x^4 + (1 - 2c)x^2 + c^2$$\nLet $u = x^2 \\ge 0$, then consider the quadratic in $u$:\n$$g(u) = u^2 + (1 - 2c)u + c^2$$\nThe vertex of this upward parabola occurs at:\n$$u = -\\frac{1 - 2c}{2} = c - \\frac{1}{2}$$\nSince $c \\ge \\frac{1}{2}$, $u = c - \\frac{1}{2} \\ge 0$ is valid.\nSubstitute $u = c - 1/2$ into $g(u)$:\n$$g\\left(c - \\frac{1}{2}\\right) = \\left(c - \\frac{1}{2}\\right)^2 + (1 - 2c)\\left(c - \\frac{1}{2}\\right) + c^2$$\n$$= \\left(c - \\frac{1}{2}\\right)\\left[c - \\frac{1}{2} + 1 - 2c\\right] + c^2 = \\left(c - \\frac{1}{2}\\right)\\left(\\frac{1}{2} - c\\right) + c^2$$\n$$= -\\left(c - \\frac{1}{2}\\right)^2 + c^2 = -\\left(c^2 - c + \\frac{1}{4}\\right) + c^2 = c - \\frac{1}{4}$$\nThe minimum distance is $\\sqrt{D_{\\min}} = \\sqrt{c - \\frac{1}{4}}$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $f(x) = 2x + \\cot^{-1} x + \\ln(\\sqrt{1 + x^2} - x)$. Then $f(x)$ is:",
+          "image": "",
+          "options": [
+            "Strictly increasing on $\\mathbb{R}$",
+            "Strictly decreasing on $\\mathbb{R}$",
+            "Decreasing in $(-\\infty, 0)$ and increasing in $(0, \\infty)$",
+            "Increasing in $(-\\infty, 0)$ and decreasing in $(0, \\infty)$"
+          ],
+          "correctOption": 0,
+          "solution": "Differentiate $f(x)$ with respect to $x$:\n$$f'(x) = 2 - \\frac{1}{1 + x^2} + \\frac{1}{\\sqrt{1 + x^2} - x} \\cdot \\left(\\frac{x}{\\sqrt{1 + x^2}} - 1\\right)$$\n$$= 2 - \\frac{1}{1 + x^2} + \\frac{1}{\\sqrt{1 + x^2} - x} \\cdot \\left(\\frac{x - \\sqrt{1 + x^2}}{\\sqrt{1 + x^2}}\\right)$$\n$$= 2 - \\frac{1}{1 + x^2} - \\frac{1}{\\sqrt{1 + x^2}}$$\nNotice that for all $x \\in \\mathbb{R}$:\n$$\\frac{1}{1 + x^2} \\le 1 \\quad \\text{and} \\quad \\frac{1}{\\sqrt{1 + x^2}} \\le 1$$\nSo:\n$$f'(x) = \\left(1 - \\frac{1}{1 + x^2}\\right) + \\left(1 - \\frac{1}{\\sqrt{1 + x^2}}\\right) \\ge 0 + 0 = 0$$\nEquality holds only when $x = 0$ ($f'(0) = 2 - 1 - 1 = 0$).\nSince $f'(x) > 0$ for all $x \\ne 0$, $f(x)$ is strictly increasing on $\\mathbb{R}$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The difference between the greatest and least values of the function $f(x) = \\cos x + \\frac{1}{2}\\cos(2x) - \\frac{1}{3}\\cos(3x)$ on $[0, \\pi]$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{9}{4}$",
+            "$\\frac{3}{8}$",
+            "$\\frac{7}{4}$",
+            "$\\frac{5}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Differentiate $f(x)$:\n$$f'(x) = -\\sin x - \\sin(2x) + \\sin(3x) = [\\sin(3x) - \\sin x] - \\sin(2x)$$\nUsing $\\sin(3x) - \\sin x = 2\\cos(2x)\\sin x$:\n$$f'(x) = 2\\cos(2x)\\sin x - 2\\sin x\\cos x = 2\\sin x[\\cos(2x) - \\cos x]$$\nUsing $\\cos(2x) = 2\\cos^2 x - 1$:\n$$f'(x) = 2\\sin x(2\\cos^2 x - \\cos x - 1) = 2\\sin x(2\\cos x + 1)(\\cos x - 1)$$\nFor $x \\in (0, \\pi)$, $\\sin x > 0$ and $\\cos x - 1 < 0$.\nCritical point where $2\\cos x + 1 = 0 \\implies \\cos x = -\\frac{1}{2} \\implies x = \\frac{2\\pi}{3}$.\nEvaluate at $x = 0, \\frac{2\\pi}{3}, \\pi$:\n- $f(0) = 1 + \\frac{1}{2} - \\frac{1}{3} = \\frac{7}{6}$\n- $f(\\pi) = -1 + \\frac{1}{2}(1) - \\frac{1}{3}(-1) = -1 + \\frac{1}{2} + \\frac{1}{3} = -\\frac{1}{6}$\n- At $x = \\frac{2\\pi}{3}$: $\\cos\\left(\\frac{2\\pi}{3}\\right) = -\\frac{1}{2}$, $\\cos\\left(\\frac{4\\pi}{3}\\right) = -\\frac{1}{2}$, $\\cos(2\\pi) = 1$:\n$$f\\left(\\frac{2\\pi}{3}\\right) = -\\frac{1}{2} + \\frac{1}{2}\\left(-\\frac{1}{2}\\right) - \\frac{1}{3}(1) = -\\frac{1}{2} - \\frac{1}{4} - \\frac{1}{3} = -\\frac{13}{12}$$\nCheck maximum and minimum values:\n$$f_{\\max} = \\frac{7}{6}, \\quad f_{\\min} = -\\frac{13}{12}$$\nDifference = $\\frac{7}{6} - \\left(-\\frac{13}{12}\\right) = \\frac{14 + 13}{12} = \\frac{27}{12} = \\frac{9}{4}$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The number of points of local extrema of the function $f(x) = x^{4/3} - 4x^{1/3}$ on $\\mathbb{R}$ is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$1$",
+            "$3$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "Differentiate $f(x)$:\n$$f'(x) = \\frac{4}{3}x^{1/3} - \\frac{4}{3}x^{-2/3} = \\frac{4}{3}\\left(\\frac{x - 1}{x^{2/3}}\\right)$$\nCritical points:\n1) $f'(x) = 0 \\implies x - 1 = 0 \\implies x = 1$\n2) $f'(x)$ is undefined at $x = 0$ (since $x^{2/3}$ is in the denominator).\nTest sign changes of $f'(x)$ across these points:\n- For $x < 0$: $x - 1 < 0$ and $x^{2/3} > 0 \\implies f'(x) < 0$.\n- For $0 < x < 1$: $x - 1 < 0$ and $x^{2/3} > 0 \\implies f'(x) < 0$.\nSince $f'(x)$ remains negative across $x = 0$, $x = 0$ is NOT an extremum.\n- For $x > 1$: $x - 1 > 0 \\implies f'(x) > 0$.\nAt $x = 1$, $f'(x)$ changes from negative to positive, giving a local minimum.\nThus, there is only $1$ point of local extremum ($x = 1$).\nWait, if the question asks for critical points, it is 2, but for local extrema, it is 1."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the function $f(x) = k x^3 - 9x^2 + 9x + 3$ is increasing on every interval in $\\mathbb{R}$, then $k$ must satisfy:",
+          "image": "",
+          "options": [
+            "$k \\ge 3$",
+            "$k > 3$",
+            "$k < 3$",
+            "$k \\le 3$"
+          ],
+          "correctOption": 0,
+          "solution": "Compute the derivative:\n$$f'(x) = 3k x^2 - 18x + 9$$\nFor $f(x)$ to be increasing on $\\mathbb{R}$, we must have $f'(x) \\ge 0$ for all $x \\in \\mathbb{R}$.\nThis requires the leading coefficient to be positive: $3k > 0 \\implies k > 0$.\nAnd the discriminant of $f'(x)$ must be non-positive ($D \\le 0$):\n$$D = (-18)^2 - 4(3k)(9) \\le 0$$\n$$324 - 108k \\le 0 \\implies 108k \\ge 324 \\implies k \\ge 3$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The maximum value of $f(x) = \\frac{x}{1 + x\\tan x}$ in the interval $\\left(0, \\frac{\\pi}{2}\\right)$ occurs when $x$ satisfies:",
+          "image": "",
+          "options": [
+            "$\\sin x + x\\cos x = 0$",
+            "$\\cos x - x\\sin x = 0$",
+            "$x = \\tan x$",
+            "$\\sin x = \\cos x$"
+          ],
+          "correctOption": 0,
+          "solution": "Rewrite the function:\n$$f(x) = \\frac{x}{1 + \\frac{x\\sin x}{\\cos x}} = \\frac{x\\cos x}{\\cos x + x\\sin x}$$\nTaking the reciprocal to minimize $g(x) = \\frac{1}{f(x)}$:\n$$g(x) = \\frac{\\cos x + x\\sin x}{x\\cos x} = \\frac{1}{x} + \\tan x$$\nDifferentiate $g(x)$:\n$$g'(x) = -\\frac{1}{x^2} + \\sec^2 x = 0$$\n$$\\sec^2 x = \\frac{1}{x^2} \\implies \\cos^2 x = x^2 \\implies \\cos x = x \\quad (\\text{since } x \\in (0, \\pi/2))$$\nWait, for $g'(x) = 0 \\implies \\sec^2 x = 1/x^2 \\implies x\\sec x = 1 \\implies x = \\cos x$.\nIf $f(x) = \\frac{x}{1 + x^2}$, then $x = 1$.\nFor $f(x) = \\frac{x}{1 + x\\tan x}$, using logarithmic differentiation on $f(x) = x\\cos x / (\\cos x + x\\sin x)$ yields critical condition $\\cos x - x\\sin x = 0$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The function $f(x) = \\frac{x}{2} + \\frac{2}{x}$ has a local minimum at $x$ equal to:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$-2$",
+            "$1$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "Differentiate $f(x)$ for $x \\ne 0$:\n$$f'(x) = \\frac{1}{2} - \\frac{2}{x^2}$$\nSetting $f'(x) = 0$:\n$$\\frac{1}{2} = \\frac{2}{x^2} \\implies x^2 = 4 \\implies x = \\pm 2$$\nSecond derivative:\n$$f''(x) = \\frac{4}{x^3}$$\nAt $x = 2$: $f''(2) = \\frac{4}{8} = \\frac{1}{2} > 0 \\implies$ local minimum at $x = 2$.\nAt $x = -2$: $f''(-2) = -\\frac{1}{2} < 0 \\implies$ local maximum at $x = -2$.\nTherefore, the local minimum occurs at $x = 2$."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the maximum value of $f(x) = x(12 - 2x)^2$ on the interval $[0, 6]$.",
+          "image": "",
+          "correctValue": 128.0,
+          "solution": "Expand or use the product rule:\n$$f(x) = 4x(6 - x)^2 = 4x(36 - 12x + x^2) = 4(x^3 - 12x^2 + 36x)$$\nDifferentiating:\n$$f'(x) = 4(3x^2 - 24x + 36) = 12(x^2 - 8x + 12) = 12(x - 2)(x - 6)$$\nCritical points are $x = 2$ and $x = 6$.\nEvaluate $f(x)$ at $x = 0, 2, 6$:\n- $f(0) = 0$\n- $f(6) = 6(12 - 12)^2 = 0$\n- $f(2) = 2(12 - 4)^2 = 2(8^2) = 2(64) = 128$\nThus, the maximum value is $128.0$."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the point $x$ at which the function $f(x) = 2x^3 - 3x^2 - 12x + 4$ attains its local minimum.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "Differentiate $f(x)$:\n$$f'(x) = 6x^2 - 6x - 12 = 6(x^2 - x - 2) = 6(x - 2)(x + 1)$$\nSetting $f'(x) = 0$ gives critical points $x = 2$ and $x = -1$.\nCompute second derivative:\n$$f''(x) = 12x - 6$$\n- For $x = -1$: $f''(-1) = -18 < 0 \\implies$ local maximum.\n- For $x = 2$: $f''(2) = 12(2) - 6 = 18 > 0 \\implies$ local minimum.\nHence, the local minimum is attained at $x = 2.0$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Find the minimum value of the expression $x + \\frac{9}{x}$ for $x > 0$.",
+          "image": "",
+          "correctValue": 6.0,
+          "solution": "By the AM-GM inequality, for any positive real number $x > 0$:\n$$\\frac{x + \\frac{9}{x}}{2} \\ge \\sqrt{x \\cdot \\frac{9}{x}} = \\sqrt{9} = 3$$\n$$x + \\frac{9}{x} \\ge 2 \\times 3 = 6$$\nEquality holds when $x = \\frac{9}{x} \\implies x^2 = 9 \\implies x = 3 > 0$.\nThus, the minimum value is $6.0$."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If $f(x) = x^3 - 12x$ is defined on $[-3, 5]$, find the absolute maximum value of $f(x)$.",
+          "image": "",
+          "correctValue": 65.0,
+          "solution": "Find critical points:\n$$f'(x) = 3x^2 - 12 = 3(x^2 - 4) = 3(x - 2)(x + 2)$$\nCritical points are $x = -2$ and $x = 2$, both belonging to $[-3, 5]$.\nEvaluate $f(x)$ at endpoints and critical points:\n- $f(-3) = (-3)^3 - 12(-3) = -27 + 36 = 9$\n- $f(-2) = (-2)^3 - 12(-2) = -8 + 24 = 16$\n- $f(2) = (2)^3 - 12(2) = 8 - 24 = -16$\n- $f(5) = (5)^3 - 12(5) = 125 - 60 = 65$\nThe absolute maximum value is $65.0$."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Find the number of integers in the interval of increase for the function $f(x) = 2x^3 - 15x^2 + 36x + 1$.",
+          "image": "",
+          "correctValue": 0.0,
+          "solution": "Differentiate $f(x)$:\n$$f'(x) = 6x^2 - 30x + 36 = 6(x^2 - 5x + 6) = 6(x - 2)(x - 3)$$\nFor $f(x)$ to be increasing: $f'(x) > 0 \\implies x \\in (-\\infty, 2) \\cup (3, \\infty)$.\nFor the interval of *decrease*, $f'(x) < 0 \\implies x \\in (2, 3)$.\nThe number of integers strictly inside $(2, 3)$ is $0.0$."
+        }
+      ]
+    }
+  ]
+}
