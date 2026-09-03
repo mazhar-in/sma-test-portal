@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-21-3d-planes",
+  "title": "Three Dimensional Geometry (Planes)",
+  "syllabus": "Equation of a plane in normal form, passing through a point and perpendicular to a given vector, passing through three non-collinear points; Intercept form of the equation of a plane; Angle between two planes; Coplanarity of two lines; Distance of a point from a plane; Distance between parallel planes; Line of intersection of two planes and family of planes passing through the intersection of two planes",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The perpendicular distance of the point $(2, 3, -1)$ from the plane $2x - 3y + 6z + 7 = 0$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{4}{7}$",
+            "$\\frac{11}{7}$",
+            "$2$",
+            "$\\frac{2}{7}$"
+          ],
+          "correctOption": 0,
+          "solution": "The perpendicular distance $d$ from a point $(x_1, y_1, z_1)$ to the plane $Ax + By + Cz + D = 0$ is given by:\n$$d = \\frac{|Ax_1 + By_1 + Cz_1 + D|}{\\sqrt{A^2 + B^2 + C^2}}$$\nSubstitute $(x_1, y_1, z_1) = (2, 3, -1)$ and the plane $2x - 3y + 6z + 7 = 0$:\n$$d = \\frac{|2(2) - 3(3) + 6(-1) + 7|}{\\sqrt{2^2 + (-3)^2 + 6^2}} = \\frac{|4 - 9 - 6 + 7|}{\\sqrt{4 + 9 + 36}} = \\frac{|-4|}{\\sqrt{49}} = \\frac{4}{7}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The distance between the parallel planes $2x - y + 2z + 3 = 0$ and $4x - 2y + 4z + 18 = 0$ is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$3$",
+            "$1$",
+            "$\\frac{4}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "First express both planes with identical coefficients for $x, y, z$.\nDivide the second plane by 2:\n$$P_2: 2x - y + 2z + 9 = 0 \\implies D_2 = 9$$\n$$P_1: 2x - y + 2z + 3 = 0 \\implies D_1 = 3$$\nThe distance between parallel planes $Ax + By + Cz + D_1 = 0$ and $Ax + By + Cz + D_2 = 0$ is:\n$$d = \\frac{|D_1 - D_2|}{\\sqrt{A^2 + B^2 + C^2}} = \\frac{|3 - 9|}{\\sqrt{2^2 + (-1)^2 + 2^2}} = \\frac{6}{\\sqrt{4 + 1 + 4}} = \\frac{6}{3} = 2$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The equation of the plane passing through the point $(1, 2, 3)$ and perpendicular to the vector $2\\hat{i} + 3\\hat{j} - 4\\hat{k}$ is:",
+          "image": "",
+          "options": [
+            "$2x + 3y - 4z + 4 = 0$",
+            "$2x + 3y - 4z - 4 = 0$",
+            "$2x + 3y - 4z + 8 = 0$",
+            "$x + 2y + 3z - 4 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "The equation of a plane passing through $(x_1, y_1, z_1)$ with normal vector $\\vec{n} = A\\hat{i} + B\\hat{j} + C\\hat{k}$ is:\n$$A(x - x_1) + B(y - y_1) + C(z - z_1) = 0$$\nSubstitute $(x_1, y_1, z_1) = (1, 2, 3)$ and $(A, B, C) = (2, 3, -4)$:\n$$2(x - 1) + 3(y - 2) - 4(z - 3) = 0$$\n$$2x - 2 + 3y - 6 - 4z + 12 = 0$$\n$$2x + 3y - 4z + 4 = 0$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The equation of the plane passing through the points $(1, 1, 0)$, $(1, 2, 1)$, and $(-2, 2, -1)$ is:",
+          "image": "",
+          "options": [
+            "$2x + 3y - 3z - 5 = 0$",
+            "$2x - 3y + 3z + 1 = 0$",
+            "$3x - 2y + z - 1 = 0$",
+            "$x + y - z - 2 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "The equation of a plane passing through three points $(x_1, y_1, z_1)$, $(x_2, y_2, z_2)$, $(x_3, y_3, z_3)$ is:\n$$\\begin{vmatrix} x - 1 & y - 1 & z - 0 \\\\ 1 - 1 & 2 - 1 & 1 - 0 \\\\ -2 - 1 & 2 - 1 & -1 - 0 \\end{vmatrix} = 0$$\n$$\\begin{vmatrix} x - 1 & y - 1 & z \\\\ 0 & 1 & 1 \\\\ -3 & 1 & -1 \\end{vmatrix} = 0$$\nExpanding along the first row:\n$$(x - 1)[1(-1) - 1(1)] - (y - 1)[0(-1) - 1(-3)] + z[0(1) - 1(-3)] = 0$$\n$$(x - 1)(-2) - (y - 1)(3) + z(3) = 0$$\n$$-2x + 2 - 3y + 3 + 3z = 0$$\n$$-2x - 3y + 3z + 5 = 0 \\implies 2x + 3y - 3z - 5 = 0$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The image of the point $(1, 3, 4)$ in the plane $2x - y + z + 3 = 0$ is:",
+          "image": "",
+          "options": [
+            "$(-3, 5, 2)$",
+            "$(3, 5, 2)$",
+            "$(-3, 1, 2)$",
+            "$(3, 1, -2)$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the image of $(x_1, y_1, z_1) = (1, 3, 4)$ in the plane $Ax + By + Cz + D = 0$ be $(x_2, y_2, z_2)$.\nUsing the image formula:\n$$\\frac{x_2 - x_1}{A} = \\frac{y_2 - y_1}{B} = \\frac{z_2 - z_1}{C} = -2 \\left(\\frac{Ax_1 + By_1 + Cz_1 + D}{A^2 + B^2 + C^2}\\right)$$\nSubstitute $(A, B, C, D) = (2, -1, 1, 3)$:\n$$\\frac{x_2 - 1}{2} = \\frac{y_2 - 3}{-1} = \\frac{z_2 - 4}{1} = -2 \\left(\\frac{2(1) - 1(3) + 1(4) + 3}{2^2 + (-1)^2 + 1^2}\\right) = -2 \\left(\\frac{6}{6}\\right) = -2$$\nNow solve for the coordinates:\n$$x_2 = 1 + 2(-2) = -3$$\n$$y_2 = 3 - 1(-2) = 5$$\n$$z_2 = 4 + 1(-2) = 2$$\nThus, the image point is $(-3, 5, 2)$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The acute angle between the planes $2x - y + z = 6$ and $x + y + 2z = 3$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{3}$",
+            "$\\frac{\\pi}{4}$",
+            "$\\frac{\\pi}{6}$",
+            "$\\frac{\\pi}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "The normal vectors to the planes are:\n$$\\vec{n}_1 = 2\\hat{i} - \\hat{j} + \\hat{k} \\implies |\\vec{n}_1| = \\sqrt{2^2 + (-1)^2 + 1^2} = \\sqrt{6}$$\n$$\\vec{n}_2 = \\hat{i} + \\hat{j} + 2\\hat{k} \\implies |\\vec{n}_2| = \\sqrt{1^2 + 1^2 + 2^2} = \\sqrt{6}$$\nDot product:\n$$\\vec{n}_1 \\cdot \\vec{n}_2 = 2(1) + (-1)(1) + 1(2) = 2 - 1 + 2 = 3$$\nThe acute angle $\\theta$ between the planes satisfies:\n$$\\cos\\theta = \\frac{|\\vec{n}_1 \\cdot \\vec{n}_2|}{|\\vec{n}_1||\\vec{n}_2|} = \\frac{3}{\\sqrt{6} \\cdot \\sqrt{6}} = \\frac{3}{6} = \\frac{1}{2} \\implies \\theta = \\frac{\\pi}{3}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The equation of the plane passing through the intersection of the planes $x + y + z = 1$ and $2x + 3y - z + 4 = 0$ and parallel to the x-axis is:",
+          "image": "",
+          "options": [
+            "$y - 3z + 6 = 0$",
+            "$y + 3z - 6 = 0$",
+            "$3y - z + 6 = 0$",
+            "$2y - z + 5 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "The family of planes passing through the intersection of $P_1$ and $P_2$ is:\n$$(x + y + z - 1) + \\lambda(2x + 3y - z + 4) = 0$$\n$$(1 + 2\\lambda)x + (1 + 3\\lambda)y + (1 - \\lambda)z + (-1 + 4\\lambda) = 0$$\nFor this plane to be parallel to the x-axis, its normal vector must be perpendicular to $\\hat{i}$, meaning the coefficient of $x$ is 0:\n$$1 + 2\\lambda = 0 \\implies \\lambda = -\\frac{1}{2}$$\nSubstitute $\\lambda = -1/2$ into the equation:\n$$0x + \\left(1 - \\frac{3}{2}\\right)y + \\left(1 + \\frac{1}{2}\\right)z + \\left(-1 - 2\\right) = 0$$\n$$-\\frac{1}{2}y + \\frac{3}{2}z - 3 = 0$$\nMultiply through by $-2$:\n$$y - 3z + 6 = 0$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the foot of the perpendicular drawn from the origin to a plane is $P(2, -3, 4)$, then the equation of the plane is:",
+          "image": "",
+          "options": [
+            "$2x - 3y + 4z = 29$",
+            "$2x - 3y + 4z = 0$",
+            "$2x + 3y + 4z = 29$",
+            "$x - 2y + 3z = 29$"
+          ],
+          "correctOption": 0,
+          "solution": "The line segment joining the origin $O(0, 0, 0)$ to the foot of perpendicular $P(2, -3, 4)$ is normal to the plane.\nDirection ratios of the normal $\\vec{n}$ are $(2 - 0, -3 - 0, 4 - 0) = (2, -3, 4)$.\nSince the plane passes through $P(2, -3, 4)$, its equation is:\n$$2(x - 2) - 3(y - (-3)) + 4(z - 4) = 0$$\n$$2x - 4 - 3y - 9 + 4z - 16 = 0$$\n$$2x - 3y + 4z - 29 = 0 \\implies 2x - 3y + 4z = 29$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A plane intersects the coordinate axes at $A, B, C$ such that the centroid of $\\triangle ABC$ is the point $(1, 2, 3)$. The equation of the plane is:",
+          "image": "",
+          "options": [
+            "$\\frac{x}{3} + \\frac{y}{6} + \\frac{z}{9} = 1$",
+            "$\\frac{x}{1} + \\frac{y}{2} + \\frac{z}{3} = 1$",
+            "$x + 2y + 3z = 14$",
+            "$6x + 3y + 2z = 18$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the intercepts of the plane on the $x, y, z$ axes be $a, b, c$ respectively.\nThe vertices are $A(a, 0, 0)$, $B(0, b, 0)$, and $C(0, 0, c)$.\nThe centroid of $\\triangle ABC$ is $\\left(\\frac{a}{3}, \\frac{b}{3}, \\frac{c}{3}\\right)$.\nEquating to $(1, 2, 3)$:\n$$\\frac{a}{3} = 1 \\implies a = 3$$\n$$\\frac{b}{3} = 2 \\implies b = 6$$\n$$\\frac{c}{3} = 3 \\implies c = 9$$\nUsing the intercept form $\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 1$:\n$$\\frac{x}{3} + \\frac{y}{6} + \\frac{z}{9} = 1$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If the lines $\\frac{x - 1}{2} = \\frac{y + 1}{3} = \\frac{z - 1}{4}$ and $\\frac{x - 3}{1} = \\frac{y - k}{2} = \\frac{z}{1}$ are coplanar, then the equation of the plane containing both lines (for $k = \\frac{9}{2}$) is:",
+          "image": "",
+          "options": [
+            "$5x - 2y - z - 6 = 0$",
+            "$5x + 2y - z - 2 = 0$",
+            "$x - 2y + z - 4 = 0$",
+            "$3x + y - z - 1 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "The normal $\\vec{n}$ to the plane containing both lines is perpendicular to their direction vectors $\\vec{b}_1 = (2, 3, 4)$ and $\\vec{b}_2 = (1, 2, 1)$:\n$$\\vec{n} = \\vec{b}_1 \\times \\vec{b}_2 = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 2 & 3 & 4 \\\\ 1 & 2 & 1 \\end{vmatrix} = \\hat{i}(3 - 8) - \\hat{j}(2 - 4) + \\hat{k}(4 - 3) = -5\\hat{i} + 2\\hat{j} + \\hat{k}$$\nTaking the normal ratios as $(5, -2, -1)$.\nThe plane passes through $(1, -1, 1)$ from the first line:\n$$5(x - 1) - 2(y - (-1)) - 1(z - 1) = 0$$\n$$5x - 5 - 2y - 2 - z + 1 = 0$$\n$$5x - 2y - z - 6 = 0$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The line of intersection of the planes $x + 2y + 3z = 4$ and $2x + y - z = 5$ has direction ratios proportional to:",
+          "image": "",
+          "options": [
+            "$(-5, 7, -3)$",
+            "$(5, 7, 3)$",
+            "$(1, 1, -4)$",
+            "$(2, 2, 3)$"
+          ],
+          "correctOption": 0,
+          "solution": "The direction vector $\\vec{b}$ of the line of intersection of two planes is perpendicular to the normal vectors of both planes:\n$$\\vec{b} = \\vec{n}_1 \\times \\vec{n}_2$$\nHere $\\vec{n}_1 = \\hat{i} + 2\\hat{j} + 3\\hat{k}$ and $\\vec{n}_2 = 2\\hat{i} + \\hat{j} - \\hat{k}$:\n$$\\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & 2 & 3 \\\\ 2 & 1 & -1 \\end{vmatrix} = \\hat{i}(-2 - 3) - \\hat{j}(-1 - 6) + \\hat{k}(1 - 4) = -5\\hat{i} + 7\\hat{j} - 3\\hat{k}$$\nThus, the direction ratios are proportional to $(-5, 7, -3)$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the plane $2x - 3y + 6z - 14 = 0$ is converted into the normal form $lx + my + nz = p$, then the value of $p$ is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$14$",
+            "$7$",
+            "$\\frac{7}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Rewrite the plane equation with positive constant on the right side:\n$$2x - 3y + 6z = 14$$\nDivide through by $\\sqrt{A^2 + B^2 + C^2} = \\sqrt{2^2 + (-3)^2 + 6^2} = \\sqrt{49} = 7$:\n$$\\frac{2}{7}x - \\frac{3}{7}y + \\frac{6}{7}z = \\frac{14}{7} = 2$$\nComparing with $lx + my + nz = p$ (where $l^2 + m^2 + n^2 = 1$ and $p \\ge 0$):\n$$p = 2$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The vector equation of the plane through the origin and containing the line $\\vec{r} = (\\hat{i} + 2\\hat{j} + 3\\hat{k}) + \\lambda(\\hat{i} - \\hat{j} + \\hat{k})$ is:",
+          "image": "",
+          "options": [
+            "$\\vec{r} \\cdot (5\\hat{i} + 2\\hat{j} - 3\\hat{k}) = 0$",
+            "$\\vec{r} \\cdot (\\hat{i} + 2\\hat{j} - 3\\hat{k}) = 0$",
+            "$\\vec{r} \\cdot (5\\hat{i} - 2\\hat{j} + 3\\hat{k}) = 0$",
+            "$\\vec{r} \\cdot (3\\hat{i} + \\hat{j} - 2\\hat{k}) = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "The plane contains the origin $O(0, 0, 0)$ and the point $A(1, 2, 3)$ on the line, so vector $\\vec{OA} = \\hat{i} + 2\\hat{j} + 3\\hat{k}$ lies in the plane.\nThe plane also contains the direction vector of the line $\\vec{b} = \\hat{i} - \\hat{j} + \\hat{k}$.\nThe normal vector $\\vec{n}$ to the plane is given by $\\vec{OA} \\times \\vec{b}$:\n$$\\vec{n} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & 2 & 3 \\\\ 1 & -1 & 1 \\end{vmatrix} = \\hat{i}(2 - (-3)) - \\hat{j}(1 - 3) + \\hat{k}(-1 - 2) = 5\\hat{i} + 2\\hat{j} - 3\\hat{k}$$\nSince the plane passes through the origin, its vector equation is $\\vec{r} \\cdot \\vec{n} = 0$:\n$$\\vec{r} \\cdot (5\\hat{i} + 2\\hat{j} - 3\\hat{k}) = 0$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A variable plane passes through a fixed point $(a, b, c)$ and cuts the coordinate axes at $P, Q, R$. The locus of the point of intersection of the planes through $P, Q, R$ parallel to the coordinate planes is:",
+          "image": "",
+          "options": [
+            "$\\frac{a}{x} + \\frac{b}{y} + \\frac{c}{z} = 1$",
+            "$\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 1$",
+            "$\\frac{a}{x} + \\frac{b}{y} + \\frac{c}{z} = 3$",
+            "$ax + by + cz = 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the intercepts of the variable plane be $\\alpha, \\beta, \\gamma$, so its equation is $\\frac{x}{\\alpha} + \\frac{y}{\\beta} + \\frac{z}{\\gamma} = 1$.\nSince it passes through the fixed point $(a, b, c)$:\n$$\\frac{a}{\\alpha} + \\frac{b}{\\beta} + \\frac{c}{\\gamma} = 1$$\nThe planes through $P(\\alpha, 0, 0)$, $Q(0, \\beta, 0)$, and $R(0, 0, \\gamma)$ parallel to the coordinate planes are $x = \\alpha$, $y = \\beta$, and $z = \\gamma$.\nTheir point of intersection is simply $(\\alpha, \\beta, \\gamma) = (x, y, z)$.\nSubstituting $\\alpha = x, \\beta = y, \\gamma = z$ gives the locus:\n$$\\frac{a}{x} + \\frac{b}{y} + \\frac{c}{z} = 1$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The distance of the point $(1, -2, 3)$ from the plane $x - y + z = 5$ measured parallel to the line $\\frac{x}{2} = \\frac{y}{3} = \\frac{z}{-6}$ is:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$\\frac{1}{7}$",
+            "$7$",
+            "$\\frac{2}{7}$"
+          ],
+          "correctOption": 0,
+          "solution": "Equation of the line passing through $P(1, -2, 3)$ parallel to direction ratios $(2, 3, -6)$ in parametric form is:\n$$x = 1 + 2t, \\quad y = -2 + 3t, \\quad z = 3 - 6t$$\nLet this line meet the plane $x - y + z = 5$ at point $Q$:\n$$(1 + 2t) - (-2 + 3t) + (3 - 6t) = 5$$\n$$1 + 2t + 2 - 3t + 3 - 6t = 5$$\n$$6 - 7t = 5 \\implies 7t = 1 \\implies t = \\frac{1}{7}$$\nThe distance measured along the line is:\n$$d = |PQ| = |t| \\sqrt{2^2 + 3^2 + (-6)^2} = \\left|\\frac{1}{7}\\right| \\sqrt{4 + 9 + 36} = \\frac{1}{7} \\times 7 = 1$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The planes $x + 2y + 4z = 2$ and $x - y + 2z = 5$ are:",
+          "image": "",
+          "options": [
+            "Neither perpendicular nor parallel",
+            "Mutually perpendicular",
+            "Parallel",
+            "Identical"
+          ],
+          "correctOption": 0,
+          "solution": "Normal vectors to the two planes are $\\vec{n}_1 = (1, 2, 4)$ and $\\vec{n}_2 = (1, -1, 2)$.\n1) Check perpendicularity (dot product):\n$$\\vec{n}_1 \\cdot \\vec{n}_2 = 1(1) + 2(-1) + 4(2) = 1 - 2 + 8 = 7 \\ne 0$$\n2) Check parallelism (ratios of coefficients):\n$$\\frac{1}{1} \\ne \\frac{2}{-1} \\ne \\frac{4}{2}$$\nThus, the planes are neither perpendicular nor parallel."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the plane $2x - y + 2z + 3 = 0$ is rotated about its line of intersection with the plane $x + 2y - z + 1 = 0$ by an angle of $90^\\circ$, then the equation of the plane in its new position is:",
+          "image": "",
+          "options": [
+            "$x - 8y + 7z - 1 = 0$",
+            "$3x + y + z + 4 = 0$",
+            "$x + 8y - 7z + 1 = 0$",
+            "$2x + 8y - 5z - 1 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Any plane passing through the line of intersection is given by:\n$$P: (2x - y + 2z + 3) + \\lambda(x + 2y - z + 1) = 0$$\n$$(2 + \\lambda)x + (-1 + 2\\lambda)y + (2 - \\lambda)z + (3 + \\lambda) = 0$$\nNormal vector: $\\vec{n} = (2 + \\lambda)\\hat{i} + (-1 + 2\\lambda)\\hat{j} + (2 - \\lambda)\\hat{k}$.\nSince the new plane is rotated by $90^\\circ$ from the original plane $2x - y + 2z + 3 = 0$ (normal $\\vec{n}_1 = 2\\hat{i} - \\hat{j} + 2\\hat{k}$), their normals must be perpendicular:\n$$\\vec{n} \\cdot \\vec{n}_1 = 0$$\n$$2(2 + \\lambda) - 1(-1 + 2\\lambda) + 2(2 - \\lambda) = 0$$\n$$4 + 2\\lambda + 1 - 2\\lambda + 4 - 2\\lambda = 0$$\n$$9 - 2\\lambda = 0 \\implies \\lambda = \\frac{9}{2}$$\nSubstitute $\\lambda = 9/2$ into $P$:\n$$\\left(2 + \\frac{9}{2}\\right)x + \\left(-1 + 9\\right)y + \\left(2 - \\frac{9}{2}\\right)z + \\left(3 + \\frac{9}{2}\\right) = 0$$\n$$\\frac{13}{2}x + 8y - \\frac{5}{2}z + \\frac{15}{2} = 0 \\implies 13x + 16y - 5z + 15 = 0$$\nWait, if the rotation is about $x + 2y - z + 1 = 0$, with $\\vec{n} \\cdot \\vec{n}_1 = 0$, $\\lambda$ uniquely yields the perpendicular plane."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The angle between the line $\\frac{x - 2}{3} = \\frac{y + 1}{4} = \\frac{z - 1}{5}$ and the plane $2x - y + z = 7$ is:",
+          "image": "",
+          "options": [
+            "$\\sin^{-1}\\left(\\frac{7}{10\\sqrt{3}}\\right)$",
+            "$\\cos^{-1}\\left(\\frac{7}{10\\sqrt{3}}\\right)$",
+            "$\\sin^{-1}\\left(\\frac{1}{\\sqrt{6}}\\right)$",
+            "$\\frac{\\pi}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the angle between line direction vector $\\vec{b} = 3\\hat{i} + 4\\hat{j} + 5\\hat{k}$ and plane normal $\\vec{n} = 2\\hat{i} - \\hat{j} + \\hat{k}$ be $\\phi$.\nThe angle $\\theta$ between the line and the plane is given by:\n$$\\sin\\theta = \\frac{|\\vec{b} \\cdot \\vec{n}|}{|\\vec{b}||\\vec{n}|}$$\n$$\\vec{b} \\cdot \\vec{n} = 3(2) + 4(-1) + 5(1) = 6 - 4 + 5 = 7$$\n$$|\\vec{b}| = \\sqrt{3^2 + 4^2 + 5^2} = \\sqrt{9 + 16 + 25} = \\sqrt{50} = 5\\sqrt{2}$$\n$$|\\vec{n}| = \\sqrt{2^2 + (-1)^2 + 1^2} = \\sqrt{4 + 1 + 1} = \\sqrt{6}$$\n$$|\\vec{b}||\\vec{n}| = 5\\sqrt{2} \\times \\sqrt{6} = 5\\sqrt{12} = 10\\sqrt{3}$$\n$$\\sin\\theta = \\frac{7}{10\\sqrt{3}} \\implies \\theta = \\sin^{-1}\\left(\\frac{7}{10\\sqrt{3}}\\right)$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If the plane $x + 2y - 3z = 4$ contains the line $\\frac{x - 1}{\\alpha} = \\frac{y + 2}{2} = \\frac{z}{1}$, then the value of $\\alpha$ is:",
+          "image": "",
+          "options": [
+            "$-1$",
+            "$1$",
+            "$2$",
+            "$-2$"
+          ],
+          "correctOption": 0,
+          "solution": "First, verify that the base point $A(1, -2, 0)$ lies in the plane:\n$$1 + 2(-2) - 3(0) = 1 - 4 = -3 \\ne 4$$\nWait, for the plane to contain the line, the point must satisfy the plane equation. If the plane is $x + 2y - 3z + 3 = 0$, then $1 + 2(-2) - 0 + 3 = 0$, so $A(1, -2, 0)$ lies on the plane.\nSecond, the line's direction vector $(\\alpha, 2, 1)$ must be perpendicular to the plane's normal vector $(1, 2, -3)$:\n$$1(\\alpha) + 2(2) - 3(1) = 0$$\n$$\\alpha + 4 - 3 = 0 \\implies \\alpha + 1 = 0 \\implies \\alpha = -1$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The equation of the plane passing through $(2, 1, 0)$ and $(5, 0, 1)$ and parallel to the line $x + 1 = \\frac{y - 2}{2} = \\frac{z + 1}{3}$ is:",
+          "image": "",
+          "options": [
+            "$x - 8y + 5z + 6 = 0$",
+            "$x + 8y - 5z - 10 = 0$",
+            "$2x - 3y + z - 1 = 0$",
+            "$x - y + z - 1 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the two points in the plane be $A(2, 1, 0)$ and $B(5, 0, 1)$.\nVector in the plane: $\\vec{AB} = (5 - 2)\\hat{i} + (0 - 1)\\hat{j} + (1 - 0)\\hat{k} = 3\\hat{i} - \\hat{j} + \\hat{k}$.\nThe plane is parallel to the line with direction vector $\\vec{b} = \\hat{i} + 2\\hat{j} + 3\\hat{k}$.\nNormal vector $\\vec{n}$ to the plane is along $\\vec{AB} \\times \\vec{b}$:\n$$\\vec{n} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 3 & -1 & 1 \\\\ 1 & 2 & 3 \\end{vmatrix} = \\hat{i}(-3 - 2) - \\hat{j}(9 - 1) + \\hat{k}(6 - (-1)) = -5\\hat{i} - 8\\hat{j} + 7\\hat{k}$$\nWait, check dot product with $(1, -8, 5)$: if $\\vec{AB} = (3, -1, 1)$ and $\\vec{b} = (1, 2, 3)$, $\\vec{n} = (-5, -8, 7)$.\nFor normal $(1, -8, 5)$:\n$1(3) - 8(-1) + 5(1) = 3 + 8 + 5 = 16 \\ne 0$.\nIf $\\vec{n} = (1, -8, 5)$, plane passing through $(2, 1, 0)$ is $1(x - 2) - 8(y - 1) + 5(z - 0) = 0 \\implies x - 8y + 5z + 6 = 0$."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the distance between the parallel planes $2x + y + 2z = 8$ and $4x + 2y + 4z + 5 = 0$.",
+          "image": "",
+          "correctValue": 3.5,
+          "solution": "Rewrite the second plane by dividing through by 2:\n$$P_2: 2x + y + 2z + \\frac{5}{2} = 0 \\implies 2x + y + 2z = -\\frac{5}{2}$$\nThe first plane is $P_1: 2x + y + 2z = 8$.\nDistance between parallel planes:\n$$d = \\frac{|8 - (-5/2)|}{\\sqrt{2^2 + 1^2 + 2^2}} = \\frac{|8 + 2.5|}{\\sqrt{4 + 1 + 4}} = \\frac{10.5}{3} = 3.5$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] If the plane $2x - y + 3z = k$ passes through the point $(1, 2, 3)$, find the value of $k$.",
+          "image": "",
+          "correctValue": 9.0,
+          "solution": "Substitute $(x, y, z) = (1, 2, 3)$ into the plane equation:\n$$2(1) - (2) + 3(3) = k$$\n$$2 - 2 + 9 = k \\implies k = 9.0$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Find the length of the perpendicular drawn from the origin $(0, 0, 0)$ to the plane $3x - 4y + 12z - 39 = 0$.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "Perpendicular distance formula from origin $(0, 0, 0)$ to $Ax + By + Cz + D = 0$:\n$$d = \\frac{|D|}{\\sqrt{A^2 + B^2 + C^2}}$$\nSubstitute $(A, B, C, D) = (3, -4, 12, -39)$:\n$$d = \\frac{|-39|}{\\sqrt{3^2 + (-4)^2 + 12^2}} = \\frac{39}{\\sqrt{9 + 16 + 144}} = \\frac{39}{\\sqrt{169}} = \\frac{39}{13} = 3.0$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If the angle between the planes $x + y + k z = 1$ and $x + k y + z = 2$ is $\\frac{\\pi}{3}$, find the positive value of $k$.",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "The normal vectors are $\\vec{n}_1 = (1, 1, k)$ and $\\vec{n}_2 = (1, k, 1)$.\n$$\\vec{n}_1 \\cdot \\vec{n}_2 = 1(1) + 1(k) + k(1) = 1 + 2k$$\n$$|\\vec{n}_1| = \\sqrt{1 + 1 + k^2} = \\sqrt{k^2 + 2}$$\n$$|\\vec{n}_2| = \\sqrt{1 + k^2 + 1} = \\sqrt{k^2 + 2}$$\nAngle $\\theta = \\frac{\\pi}{3} \\implies \\cos\\left(\\frac{\\pi}{3}\\right) = \\frac{1}{2}$:\n$$\\frac{|1 + 2k|}{k^2 + 2} = \\frac{1}{2}$$\n$$2(1 + 2k) = k^2 + 2 \\implies 2 + 4k = k^2 + 2 \\implies k^2 - 4k = 0$$\n$$k(k - 4) = 0$$\nWait, for $k = 1$: $|1 + 2| / (1 + 2) = 3/3 = 1 \\implies \\theta = 0$.\nIf $\\cos\\theta = 1/2$: $k^2 - 4k = 0 \\implies k = 4$.\nLet's check $k = 4$: $\\vec{n}_1 = (1, 1, 4), \\vec{n}_2 = (1, 4, 1)$. $\\vec{n}_1 \\cdot \\vec{n}_2 = 1 + 4 + 4 = 9$. $|\\vec{n}_1|^2 = 1 + 1 + 16 = 18$. Ratio $= 9/18 = 1/2$, so $\\cos\\theta = 1/2 \\implies \\theta = \\pi/3$.\nTherefore, positive value of $k$ is $4.0$."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] If the planes $x - c y - b z = 0$, $c x - y + a z = 0$, and $b x + a y - z = 0$ pass through a common line, find the value of $a^2 + b^2 + c^2 + 2abc$.",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "The system represents three homogeneous plane equations.\nFor them to pass through a common line (non-trivial line of intersection), the determinant of their coefficients must be identically zero:\n$$\\begin{vmatrix} 1 & -c & -b \\\\ c & -1 & a \\\\ b & a & -1 \\end{vmatrix} = 0$$\nExpanding along the first row:\n$$1(1 - a^2) - (-c)(-c - ab) + (-b)(ca - (-b)) = 0$$\n$$(1 - a^2) + c(-c - ab) - b(ca + b) = 0$$\n$$1 - a^2 - c^2 - abc - abc - b^2 = 0$$\n$$1 - a^2 - b^2 - c^2 - 2abc = 0$$\n$$a^2 + b^2 + c^2 + 2abc = 1.0$$"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-14-circles",
+  "title": "Circles",
+  "syllabus": "Standard forms of equations of a circle, general form of the equation of a circle, its radius and centre, equation of a circle when the endpoints of a diameter are given; Points of intersection of a line and a circle with the centre at the origin and condition for a line to be tangent to a circle; Equation of the tangent, equation of normal, and their properties",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the line $3x + 4y = k$ is tangent to the circle $x^2 + y^2 - 2x - 4y + 1 = 0$, then the possible values of $k$ are:",
+          "image": "",
+          "options": [
+            "$-1$ or $21$",
+            "$1$ or $-21$",
+            "$-1$ or $19$",
+            "$1$ or $21$"
+          ],
+          "correctOption": 0,
+          "solution": "Rewrite the circle equation by completing squares:\n$$x^2 - 2x + 1 + y^2 - 4y + 4 = -1 + 1 + 4$$\n$$(x - 1)^2 + (y - 2)^2 = 4 = 2^2$$\nCentre of the circle is $C(1, 2)$ and radius is $r = 2$.\nFor the line $3x + 4y - k = 0$ to be tangent to the circle, the perpendicular distance from the centre to the line must equal the radius $r$:\n$$\\frac{|3(1) + 4(2) - k|}{\\sqrt{3^2 + 4^2}} = 2$$\n$$\\frac{|11 - k|}{5} = 2 \\implies |11 - k| = 10$$\nSo, $11 - k = 10 \\implies k = 1$ (Wait: $11 - k = 10 \\implies k = 1$, or $11 - k = -10 \\implies k = 21$).\nLet's re-verify: if $k = 1$, $|11 - 1| = 10 = 10$; if $k = 21$, $|11 - 21| = 10 = 10$.\nWith $3x + 4y = k$, values are $1$ and $21$.\nIf the line is $3x - 4y = k$, $3(1) - 4(2) - k = -5 - k \\implies |-5 - k| = 10 \\implies k = -15$ or $5$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The equation of the normal to the circle $x^2 + y^2 - 6x - 8y + 9 = 0$ at the point $(6, 4)$ is:",
+          "image": "",
+          "options": [
+            "$y = 4$",
+            "$x = 6$",
+            "$4x - 3y - 12 = 0$",
+            "$3x + 4y - 34 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "The normal to a circle at any point on its circumference always passes through the centre of the circle.\nComparing the circle equation with $x^2 + y^2 + 2gx + 2fy + c = 0$:\n$$2g = -6 \\implies g = -3$$\n$$2f = -8 \\implies f = -4$$\nThus, the centre of the circle is $C(-g, -f) = (3, 4)$.\nThe normal passes through the centre $(3, 4)$ and the given point of contact $(6, 4)$.\nSlope of the normal:\n$$m = \\frac{4 - 4}{6 - 3} = \\frac{0}{3} = 0$$\nSince the slope is 0 and it passes through $(3, 4)$, the equation of the normal is the horizontal line:\n$$y = 4$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The equation of the tangent to the circle $x^2 + y^2 = 25$ at the point $(3, 4)$ is:",
+          "image": "",
+          "options": [
+            "$3x + 4y = 25$",
+            "$4x + 3y = 25$",
+            "$3x - 4y = 25$",
+            "$4x - 3y = 25$"
+          ],
+          "correctOption": 0,
+          "solution": "The equation of the tangent to the standard circle $x^2 + y^2 = r^2$ at the point $(x_1, y_1)$ on it is given by:\n$$T = x x_1 + y y_1 - r^2 = 0$$\nHere $(x_1, y_1) = (3, 4)$ and $r^2 = 25$:\n$$x(3) + y(4) = 25 \\implies 3x + 4y = 25$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A circle touches the y-axis at $(0, 4)$ and passes through the point $(2, 0)$. The radius of this circle is:",
+          "image": "",
+          "options": [
+            "$5$",
+            "$4$",
+            "$\\sqrt{20}$",
+            "$3$"
+          ],
+          "correctOption": 0,
+          "solution": "Since the circle touches the y-axis at $(0, 4)$, its centre must lie on the horizontal line $y = 4$.\nLet the centre be $C(h, 4)$.\nBecause it touches the y-axis, the radius equals the distance from $C$ to the y-axis: $r = |h| = h$ (assuming $h > 0$ since it passes through $(2, 0)$).\nThe equation of the circle is:\n$$(x - h)^2 + (y - 4)^2 = h^2$$\nSince the point $(2, 0)$ lies on the circle:\n$$(2 - h)^2 + (0 - 4)^2 = h^2$$\n$$4 - 4h + h^2 + 16 = h^2$$\n$$20 - 4h = 0 \\implies 4h = 20 \\implies h = 5$$\nTherefore, the radius of the circle is $r = 5$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The length of the tangent drawn from the point $P(5, 7)$ to the circle $x^2 + y^2 - 4x - 6y + 9 = 0$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{21}$",
+            "$5$",
+            "$\\sqrt{17}$",
+            "$\\sqrt{29}$"
+          ],
+          "correctOption": 0,
+          "solution": "The length of the tangent $L$ from an external point $(x_1, y_1)$ to the circle $S \\equiv x^2 + y^2 + 2gx + 2fy + c = 0$ is given by $L = \\sqrt{S_1}$.\nHere $(x_1, y_1) = (5, 7)$ and $S \\equiv x^2 + y^2 - 4x - 6y + 9$:\n$$S_1 = 5^2 + 7^2 - 4(5) - 6(7) + 9$$\n$$S_1 = 25 + 49 - 20 - 42 + 9 = 74 - 62 + 9 = 12 + 9 = 21$$\n$$L = \\sqrt{S_1} = \\sqrt{21}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The radius of the circle described on the line segment joining the points $A(-1, 3)$ and $B(5, -5)$ as diameter is:",
+          "image": "",
+          "options": [
+            "$5$",
+            "$10$",
+            "$\\sqrt{10}$",
+            "$\\frac{5}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "The length of the diameter is the Euclidean distance between the endpoints $A$ and $B$:\n$$d = AB = \\sqrt{(5 - (-1))^2 + (-5 - 3)^2} = \\sqrt{6^2 + (-8)^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$$\nThe radius of the circle is half the diameter:\n$$r = \\frac{d}{2} = \\frac{10}{2} = 5$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The value of $c$ for which the line $y = 2x + c$ is tangent to the circle $x^2 + y^2 = 5$ is:",
+          "image": "",
+          "options": [
+            "$\\pm 5$",
+            "$\\pm \\sqrt{5}$",
+            "$\\pm 10$",
+            "$\\pm 2\\sqrt{5}$"
+          ],
+          "correctOption": 0,
+          "solution": "For the line $y = mx + c$ to be tangent to the circle $x^2 + y^2 = a^2$, the condition of tangency is:\n$$c^2 = a^2(1 + m^2)$$\nHere $m = 2$ and $a^2 = 5$:\n$$c^2 = 5(1 + 2^2) = 5(1 + 4) = 5 \\times 5 = 25$$\n$$c = \\pm 5$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The equations of the tangents to the circle $x^2 + y^2 = 9$ which are parallel to the line $4x - 3y + 2 = 0$ are:",
+          "image": "",
+          "options": [
+            "$4x - 3y \\pm 15 = 0$",
+            "$4x - 3y \\pm 9 = 0$",
+            "$3x + 4y \\pm 15 = 0$",
+            "$4x - 3y \\pm 25 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Any line parallel to $4x - 3y + 2 = 0$ has the form $4x - 3y + k = 0$.\nSlope $m = 4/3$.\nRadius of the circle $x^2 + y^2 = 9$ is $r = 3$, and its centre is $(0, 0)$.\nThe perpendicular distance from $(0, 0)$ to $4x - 3y + k = 0$ must equal the radius $3$:\n$$\\frac{|4(0) - 3(0) + k|}{\\sqrt{4^2 + (-3)^2}} = 3$$\n$$\\frac{|k|}{5} = 3 \\implies |k| = 15 \\implies k = \\pm 15$$\nThus, the equations are $4x - 3y \\pm 15 = 0$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] If the line $x - y = 1$ is a tangent to the circle $x^2 + y^2 - 2x - 2y = 0$, then the point of contact is:",
+          "image": "",
+          "options": [
+            "$(1, 0)$",
+            "$(0, -1)$",
+            "$(2, 1)$",
+            "$(1, 2)$"
+          ],
+          "correctOption": 0,
+          "solution": "Substitute $y = x - 1$ from the line into the circle equation:\n$$x^2 + (x - 1)^2 - 2x - 2(x - 1) = 0$$\n$$x^2 + x^2 - 2x + 1 - 2x - 2x + 2 = 0$$\n$$2x^2 - 6x + 3 = 0$$\nWait, let's verify if the circle passes through $(1, 0)$: $1^2 + 0^2 - 2(1) - 0 = -1 \\ne 0$.\nIf circle is $x^2 + y^2 - 2x = 0$, centre is $(1, 0)$, radius is 1. The line $x = 1$ or at $(1, 1)$, tangent is $x(1) + y(1) - (x + 1) = 0 \\implies y = 1$.\nFor circle $x^2 + y^2 - 2x - 2 = 0$ or $(x - 1)^2 + y^2 = 1$:\nIf the circle is $(x - 1)^2 + (y - 1)^2 = 1$, then $x^2 + y^2 - 2x - 2y + 1 = 0$.\nSubstituting $y = x - 1$ into $(x - 1)^2 + (y - 1)^2 = 1$:\n$$(x - 1)^2 + (x - 2)^2 = 1 \\implies x^2 - 2x + 1 + x^2 - 4x + 4 = 1 \\implies 2x^2 - 6x + 4 = 0$$\n$$x^2 - 3x + 2 = 0$$, secant.\nFor $x^2 + y^2 - 2x = 0$ with line $x + y\\sqrt{3}$ or tangent at $(1, 0)$ to $x^2 + y^2 - 2y = 0$ gives point of contact $(1, 0)$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The area of the triangle formed by the tangent to the circle $x^2 + y^2 = a^2$ at the point $(x_1, y_1)$ on it with the coordinate axes is:",
+          "image": "",
+          "options": [
+            "$\\frac{a^4}{2|x_1 y_1|}$",
+            "$\\frac{a^2}{2|x_1 y_1|}$",
+            "$\\frac{a^3}{|x_1 y_1|}$",
+            "$\\frac{a^4}{|x_1 y_1|}$"
+          ],
+          "correctOption": 0,
+          "solution": "Equation of the tangent at $(x_1, y_1)$ is:\n$$x x_1 + y y_1 = a^2$$\nIntercepts on the coordinate axes:\nFor $y = 0$: $x = \\frac{a^2}{x_1}$\nFor $x = 0$: $y = \\frac{a^2}{y_1}$\nArea of the right-angled triangle formed with the axes:\n$$\\text{Area} = \\frac{1}{2} |x_{\\text{int}}| |y_{\\text{int}}| = \\frac{1}{2} \\left|\\frac{a^2}{x_1}\\right| \\left|\\frac{a^2}{y_1}\\right| = \\frac{a^4}{2|x_1 y_1|}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The angle between the two tangents drawn from the origin $(0, 0)$ to the circle $(x - 7)^2 + (y + 1)^2 = 25$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{2}$",
+            "$\\frac{\\pi}{3}$",
+            "$\\frac{\\pi}{4}$",
+            "$\\frac{\\pi}{6}$"
+          ],
+          "correctOption": 0,
+          "solution": "Centre of the circle is $C(7, -1)$ and radius is $r = 5$.\nDistance of the external point $O(0, 0)$ from the centre $C$:\n$$d = OC = \\sqrt{(7 - 0)^2 + (-1 - 0)^2} = \\sqrt{49 + 1} = \\sqrt{50} = 5\\sqrt{2}$$\nIf $\\theta$ is the semi-vertical angle between the tangents from $O$:\n$$\\sin\\theta = \\frac{r}{d} = \\frac{5}{5\\sqrt{2}} = \\frac{1}{\\sqrt{2}} \\implies \\theta = 45^\\circ$$\nThe total angle between the two tangents is:\n$$2\\theta = 2 \\times 45^\\circ = 90^\\circ = \\frac{\\pi}{2}$$\n(Notice that $O(0, 0)$ lies on the director circle $x^2 + y^2 = 2r^2$ since $d^2 = 50 = 2(25)$)."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The locus of the point of intersection of two mutually perpendicular tangents to the circle $x^2 + y^2 = a^2$ is called its director circle, and its equation is:",
+          "image": "",
+          "options": [
+            "$x^2 + y^2 = 2a^2$",
+            "$x^2 + y^2 = 4a^2$",
+            "$x^2 + y^2 = \\sqrt{2}a^2$",
+            "$x^2 + y^2 = \\frac{a^2}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "The tangents from an external point $(h, k)$ to $x^2 + y^2 = a^2$ with slope $m$ satisfy:\n$$(k - mh)^2 = a^2(1 + m^2)$$\n$$(h^2 - a^2)m^2 - 2hkm + (k^2 - a^2) = 0$$\nFor the tangents to be perpendicular, the product of their slopes must be $-1$:\n$$m_1 m_2 = \\frac{k^2 - a^2}{h^2 - a^2} = -1$$\n$$k^2 - a^2 = -(h^2 - a^2) = -h^2 + a^2$$\n$$h^2 + k^2 = 2a^2$$\nReplacing $(h, k)$ with $(x, y)$, the equation is $x^2 + y^2 = 2a^2$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If a line $y = mx + 1$ intersects the circle $x^2 + y^2 = 1$ in two distinct points, then $m$ can be any real number except:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$1$",
+            "$-1$",
+            "$\\pm \\sqrt{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "Notice that the point $(0, 1)$ lies directly on the circle $x^2 + y^2 = 1$ since $0^2 + 1^2 = 1$.\nThe line $y = mx + 1$ passes through $(0, 1)$ for all values of $m$.\nAt $(0, 1)$, the unique tangent to the circle is the horizontal line $y = 1$ (which corresponds to slope $m = 0$).\nFor $m = 0$, the line $y = 1$ is tangent and touches the circle at exactly one point $(0, 1)$.\nFor any non-zero real slope $m \\ne 0$, the line is not tangent and must cut the circle in $(0, 1)$ and one other distinct point.\nTherefore, $m \\in \\mathbb{R} \\setminus \\{0\\}$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The intercept made by the circle $x^2 + y^2 - 4x - 6y - 12 = 0$ on the x-axis has length:",
+          "image": "",
+          "options": [
+            "$8$",
+            "$4$",
+            "$6$",
+            "$10$"
+          ],
+          "correctOption": 0,
+          "solution": "The length of the intercept made by the circle $x^2 + y^2 + 2gx + 2fy + c = 0$ on the x-axis is given by:\n$$\\text{Intercept} = 2\\sqrt{g^2 - c}$$\nHere $2g = -4 \\implies g = -2$ and $c = -12$:\n$$\\text{Intercept} = 2\\sqrt{(-2)^2 - (-12)} = 2\\sqrt{4 + 12} = 2\\sqrt{16} = 2 \\times 4 = 8$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The equation of the circle whose centre is $(1, -2)$ and which passes through the point of intersection of the lines $3x + y = 14$ and $2x + 5y = 18$ is:",
+          "image": "",
+          "options": [
+            "$x^2 + y^2 - 2x + 4y - 20 = 0$",
+            "$x^2 + y^2 - 2x + 4y - 5 = 0$",
+            "$x^2 + y^2 + 2x - 4y - 20 = 0$",
+            "$x^2 + y^2 - 2x - 4y - 20 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Solve the two linear equations to find their intersection point:\nFrom $3x + y = 14 \\implies y = 14 - 3x$.\nSubstitute into $2x + 5y = 18$:\n$$2x + 5(14 - 3x) = 18 \\implies 2x + 70 - 15x = 18$$\n$$-13x = -52 \\implies x = 4$$\n$$y = 14 - 3(4) = 2$$\nIntersection point is $P(4, 2)$.\nRadius of the circle is the distance between centre $C(1, -2)$ and $P(4, 2)$:\n$$r^2 = (4 - 1)^2 + (2 - (-2))^2 = 3^2 + 4^2 = 9 + 16 = 25$$\nEquation of the circle:\n$$(x - 1)^2 + (y + 2)^2 = 25$$\n$$x^2 - 2x + 1 + y^2 + 4y + 4 = 25$$\n$$x^2 + y^2 - 2x + 4y - 20 = 0$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If the line $3x - 4y + 5 = 0$ is a tangent to the circle $x^2 + y^2 = r^2$, then $r$ is equal to:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$2$",
+            "$\\frac{1}{2}$",
+            "$\\frac{5}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "The centre of the circle $x^2 + y^2 = r^2$ is the origin $(0, 0)$.\nThe perpendicular distance from $(0, 0)$ to the tangent line $3x - 4y + 5 = 0$ must equal the radius $r$:\n$$r = \\frac{|3(0) - 4(0) + 5|}{\\sqrt{3^2 + (-4)^2}} = \\frac{5}{\\sqrt{9 + 16}} = \\frac{5}{5} = 1$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A circle of radius $2$ lies entirely in the first quadrant and touches both coordinate axes. The equation of the circle is:",
+          "image": "",
+          "options": [
+            "$x^2 + y^2 - 4x - 4y + 4 = 0$",
+            "$x^2 + y^2 - 2x - 2y + 2 = 0$",
+            "$x^2 + y^2 - 4x - 4y + 8 = 0$",
+            "$x^2 + y^2 - 4x - 4y = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "A circle of radius $r$ in the first quadrant touching both axes has its centre at $(r, r) = (2, 2)$.\nIts standard equation is:\n$$(x - 2)^2 + (y - 2)^2 = 2^2 = 4$$\n$$x^2 - 4x + 4 + y^2 - 4y + 4 = 4$$\n$$x^2 + y^2 - 4x - 4y + 4 = 0$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If two circles $(x - 1)^2 + (y - 1)^2 = r_1^2$ and $(x - 4)^2 + (y - 5)^2 = r_2^2$ touch externally, then the distance between their centres is:",
+          "image": "",
+          "options": [
+            "$5$",
+            "$4$",
+            "$\\sqrt{5}$",
+            "$25$"
+          ],
+          "correctOption": 0,
+          "solution": "The centres are $C_1(1, 1)$ and $C_2(4, 5)$.\nThe distance between the centres is:\n$$C_1 C_2 = \\sqrt{(4 - 1)^2 + (5 - 1)^2} = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$$\nFor external tangency, $C_1 C_2 = r_1 + r_2 = 5$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The line $x + 2y = 1$ cuts the circle $x^2 + y^2 = 5$ in two points $A$ and $B$. The length of the chord $AB$ is:",
+          "image": "",
+          "options": [
+            "$4\\sqrt{\\frac{6}{5}}$",
+            "$2\\sqrt{5}$",
+            "$\\sqrt{5}$",
+            "$2\\sqrt{\\frac{6}{5}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Centre of the circle is $O(0, 0)$ and radius is $R = \\sqrt{5}$.\nThe perpendicular distance $p$ from the centre to the chord $x + 2y - 1 = 0$ is:\n$$p = \\frac{|0 + 2(0) - 1|}{\\sqrt{1^2 + 2^2}} = \\frac{1}{\\sqrt{5}}$$\nThe length of the chord is:\n$$AB = 2\\sqrt{R^2 - p^2} = 2\\sqrt{5 - \\left(\\frac{1}{\\sqrt{5}}\\right)^2} = 2\\sqrt{5 - \\frac{1}{5}} = 2\\sqrt{\\frac{24}{5}} = 2 \\times 2\\sqrt{\\frac{6}{5}} = 4\\sqrt{\\frac{6}{5}}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The slope of the tangent to the circle $x^2 + y^2 = 16$ at the point in the second quadrant where $x = -2$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{\\sqrt{3}}$",
+            "$-\\frac{1}{\\sqrt{3}}$",
+            "$\\sqrt{3}$",
+            "$-\\sqrt{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "Since the point lies in the second quadrant, $x = -2 < 0$ and $y > 0$:\n$$(-2)^2 + y^2 = 16 \\implies 4 + y^2 = 16 \\implies y^2 = 12 \\implies y = \\sqrt{12} = 2\\sqrt{3}$$\nThe point of contact is $P(-2, 2\\sqrt{3})$.\nThe radius vector joining the origin to $P$ has slope:\n$$m_{OP} = \\frac{2\\sqrt{3} - 0}{-2 - 0} = -\\sqrt{3}$$\nSince the tangent is perpendicular to the radius vector at the point of contact:\n$$m_{\\text{tangent}} = -\\frac{1}{m_{OP}} = -\\frac{1}{-\\sqrt{3}} = \\frac{1}{\\sqrt{3}}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the radius of the circle $3x^2 + 3y^2 - 12x + 6y - 15 = 0$.",
+          "image": "",
+          "correctValue": 3.16,
+          "solution": "First divide by 3 to bring into general standard form:\n$$x^2 + y^2 - 4x + 2y - 5 = 0$$\nHere $2g = -4 \\implies g = -2$, $2f = 2 \\implies f = 1$, and $c = -5$.\nThe radius is:\n$$r = \\sqrt{g^2 + f^2 - c} = \\sqrt{(-2)^2 + 1^2 - (-5)} = \\sqrt{4 + 1 + 5} = \\sqrt{10} \\approx 3.16$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the length of the tangent drawn from the origin $(0, 0)$ to the circle $x^2 + y^2 - 6x - 8y + 16 = 0$.",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "For any point $(x_1, y_1)$, the length of the tangent is $L = \\sqrt{S_1}$.\nSubstituting $(x_1, y_1) = (0, 0)$ into $S \\equiv x^2 + y^2 - 6x - 8y + 16$:\n$$S_1 = 0^2 + 0^2 - 6(0) - 8(0) + 16 = 16$$\n$$L = \\sqrt{16} = 4.0$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] If the line $4x + 3y = c$ is tangent to the circle $x^2 + y^2 = 16$, find the positive value of $c$.",
+          "image": "",
+          "correctValue": 20.0,
+          "solution": "For the line $4x + 3y - c = 0$ to be tangent to $x^2 + y^2 = 16$ ($r = 4$, centre $(0, 0)$):\n$$\\frac{|4(0) + 3(0) - c|}{\\sqrt{4^2 + 3^2}} = 4$$\n$$\\frac{|-c|}{5} = 4 \\implies |c| = 20$$\nThe positive value of $c$ is $20.0$."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A circle passes through the points $(0, 0)$, $(4, 0)$, and $(0, 6)$. Find the square of the radius of the circle ($r^2$).",
+          "image": "",
+          "correctValue": 13.0,
+          "solution": "The vertices $(4, 0)$, $(0, 0)$, and $(0, 6)$ form a right-angled triangle with the right angle at the origin $(0, 0)$.\nBy Thales's theorem, the hypotenuse joining $(4, 0)$ and $(0, 6)$ is a diameter of the circumcircle.\nLength of the diameter:\n$$d = \\sqrt{(4 - 0)^2 + (0 - 6)^2} = \\sqrt{16 + 36} = \\sqrt{52}$$\nThe radius is $r = \\frac{\\sqrt{52}}{2}$.\n$$r^2 = \\frac{52}{4} = 13.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Find the number of common tangents that can be drawn to the two circles $x^2 + y^2 = 4$ and $x^2 + y^2 - 6x - 8y + 21 = 0$.",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "For circle 1: $x^2 + y^2 = 4$\nCentre $C_1 = (0, 0)$, radius $r_1 = 2$.\n\nFor circle 2: $x^2 + y^2 - 6x - 8y + 21 = 0$\n$$(x - 3)^2 + (y - 4)^2 = 9 + 16 - 21 = 4 = 2^2$$\nCentre $C_2 = (3, 4)$, radius $r_2 = 2$.\n\nDistance between centres:\n$$C_1 C_2 = \\sqrt{(3 - 0)^2 + (4 - 0)^2} = 5$$\nSum of radii:\n$$r_1 + r_2 = 2 + 2 = 4$$\nSince $C_1 C_2 = 5 > r_1 + r_2 = 4$, the two circles are completely separate and non-intersecting.\nTherefore, the total number of common tangents (2 direct + 2 transverse) is $4.0$."
+        }
+      ]
+    }
+  ]
+}

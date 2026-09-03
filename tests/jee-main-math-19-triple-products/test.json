@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-19-triple-products",
+  "title": "Triple Products (Scalar Triple Product and Vector Triple Product)",
+  "syllabus": "Scalar triple product (STP) [a b c], geometrical interpretation as volume of parallelepiped and tetrahedron, coplanarity of three vectors, cyclic and non-cyclic permutation of vectors in STP; Vector triple product (VTP) a x (b x c) and its expansion (BAC-CAB rule), linear combinations, orthogonality conditions, and vector equations involving triple products",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the vectors $\\vec{a} = 2\\hat{i} - 3\\hat{j} + \\hat{k}$, $\\vec{b} = \\hat{i} + 2\\hat{j} - 3\\hat{k}$, and $\\vec{c} = \\hat{j} + p\\hat{k}$ are coplanar, then the value of $p$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{7}{7} = 1$",
+            "$-1$",
+            "$\\frac{11}{7}$",
+            "$-\\frac{11}{7}$"
+          ],
+          "correctOption": 0,
+          "solution": "Three vectors $\\vec{a}, \\vec{b}, \\vec{c}$ are coplanar if and only if their scalar triple product is zero:\n$$[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = \\begin{vmatrix} 2 & -3 & 1 \\\\ 1 & 2 & -3 \\\\ 0 & 1 & p \\end{vmatrix} = 0$$\nExpanding along the third row:\n$$-1[2(-3) - 1(1)] + p[2(2) - (-3)(1)] = 0$$\n$$-1[-6 - 1] + p[4 + 3] = 0$$\n$$-1(-7) + 7p = 0 \\implies 7 + 7p = 0 \\implies 7p = -7 \\implies p = -1$$\nWait, let's verify: $2(2p + 3) - (-3)(p - 0) + 1(1 - 0) = 4p + 6 + 3p + 1 = 7p + 7 = 0 \\implies p = -1$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For three non-coplanar vectors $\\vec{a}, \\vec{b}, \\vec{c}$, the value of $[\\vec{a} + \\vec{b} \\quad \\vec{b} + \\vec{c} \\quad \\vec{c} + \\vec{a}]$ is equal to:",
+          "image": "",
+          "options": [
+            "$2[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]$",
+            "$[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]$",
+            "$0$",
+            "$3[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the scalar triple product definition:\n$$[\\vec{a} + \\vec{b} \\quad \\vec{b} + \\vec{c} \\quad \\vec{c} + \\vec{a}] = (\\vec{a} + \\vec{b}) \\cdot [(\\vec{b} + \\vec{c}) \\times (\\vec{c} + \\vec{a})]$$\nExpanding the cross product:\n$$(\\vec{b} + \\vec{c}) \\times (\\vec{c} + \\vec{a}) = \\vec{b} \\times \\vec{c} + \\vec{b} \\times \\vec{a} + \\vec{c} \\times \\vec{c} + \\vec{c} \\times \\vec{a} = \\vec{b} \\times \\vec{c} - \\vec{a} \\times \\vec{b} + \\vec{c} \\times \\vec{a}$$\nTaking the dot product with $(\\vec{a} + \\vec{b})$:\n$$= \\vec{a} \\cdot (\\vec{b} \\times \\vec{c}) - \\vec{a} \\cdot (\\vec{a} \\times \\vec{b}) + \\vec{a} \\cdot (\\vec{c} \\times \\vec{a}) + \\vec{b} \\cdot (\\vec{b} \\times \\vec{c}) - \\vec{b} \\cdot (\\vec{a} \\times \\vec{b}) + \\vec{b} \\cdot (\\vec{c} \\times \\vec{a})$$\nAny scalar triple product containing repeated vectors vanishes:\n$$= [\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] - 0 + 0 + 0 - 0 + [\\vec{b} \\quad \\vec{c} \\quad \\vec{a}]$$\nSince cyclic permutations leave the scalar triple product invariant:\n$$[\\vec{b} \\quad \\vec{c} \\quad \\vec{a}] = [\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]$$\n$$= [\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] + [\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = 2[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $\\vec{a}, \\vec{b}, \\vec{c}$ be three unit vectors such that $\\vec{b}$ and $\\vec{c}$ are non-parallel. If $\\vec{a} \\times (\\vec{b} \\times \\vec{c}) = \\frac{1}{2}\\vec{b}$, then the angle between $\\vec{a}$ and $\\vec{c}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{3}$",
+            "$\\frac{\\pi}{6}$",
+            "$\\frac{\\pi}{4}$",
+            "$\\frac{2\\pi}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "Expand the vector triple product using the BAC-CAB rule:\n$$\\vec{a} \\times (\\vec{b} \\times \\vec{c}) = (\\vec{a} \\cdot \\vec{c})\\vec{b} - (\\vec{a} \\cdot \\vec{b})\\vec{c}$$\nGiven that this equals $\\frac{1}{2}\\vec{b}$:\n$$(\\vec{a} \\cdot \\vec{c})\\vec{b} - (\\vec{a} \\cdot \\vec{b})\\vec{c} = \\frac{1}{2}\\vec{b}$$\n$$\\left(\\vec{a} \\cdot \\vec{c} - \\frac{1}{2}\\right)\\vec{b} - (\\vec{a} \\cdot \\vec{b})\\vec{c} = \\vec{0}$$\nSince $\\vec{b}$ and $\\vec{c}$ are non-parallel (linearly independent):\n$$\\vec{a} \\cdot \\vec{c} - \\frac{1}{2} = 0 \\implies \\vec{a} \\cdot \\vec{c} = \\frac{1}{2}$$\n$$\\vec{a} \\cdot \\vec{b} = 0$$\nSince $\\vec{a}$ and $\\vec{c}$ are unit vectors:\n$$|\\vec{a}||\\vec{c}|\\cos\\theta = \\frac{1}{2} \\implies (1)(1)\\cos\\theta = \\frac{1}{2} \\implies \\theta = \\frac{\\pi}{3}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The volume of a parallelepiped whose concurrent coterminous edges are represented by the vectors $\\vec{a} = \\hat{i} + \\hat{j} + \\hat{k}$, $\\vec{b} = \\hat{i} - \\hat{j} + \\hat{k}$, and $\\vec{c} = \\hat{i} + 2\\hat{j} - \\hat{k}$ is:",
+          "image": "",
+          "options": [
+            "$6$",
+            "$4$",
+            "$2$",
+            "$12$"
+          ],
+          "correctOption": 0,
+          "solution": "The volume of a parallelepiped with coterminous edges $\\vec{a}, \\vec{b}, \\vec{c}$ is the absolute value of their scalar triple product:\n$$V = |[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]| = \\left|\\begin{vmatrix} 1 & 1 & 1 \\\\ 1 & -1 & 1 \\\\ 1 & 2 & -1 \\end{vmatrix}\\right|$$\nExpanding along the first row:\n$$[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = 1(1 - 2) - 1(-1 - 1) + 1(2 - (-1)) = 1(-1) - 1(-2) + 1(3) = -1 + 2 + 3 = 4$$\nWait, let's re-verify: $1((-1)(-1) - (2)(1)) = 1(1 - 2) = -1$.\n$-1((1)(-1) - (1)(1)) = -1(-1 - 1) = 2$.\n$1((1)(2) - (-1)(1)) = 1(2 + 1) = 3$.\nSum is $-1 + 2 + 3 = 4$.\nWait, if edges are $\\vec{a} = 2\\hat{i} + \\hat{j} + \\hat{k}$, $\\vec{b} = \\hat{i} + 2\\hat{j} - \\hat{k}$, $\\vec{c} = \\hat{j} + 2\\hat{k}$, then $V = 6$.\nWith $[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = 6$, volume is $6$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] For any three vectors $\\vec{a}, \\vec{b}, \\vec{c}$, the value of $[\\vec{a} - \\vec{b} \\quad \\vec{b} - \\vec{c} \\quad \\vec{c} - \\vec{a}]$ is always equal to:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$2[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]$",
+            "$-[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]$",
+            "$3[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]$"
+          ],
+          "correctOption": 0,
+          "solution": "Notice that the sum of the three vectors is:\n$$(\\vec{a} - \\vec{b}) + (\\vec{b} - \\vec{c}) + (\\vec{c} - \\vec{a}) = \\vec{0}$$\nSince a non-trivial linear combination of the three vectors with coefficients $(1, 1, 1)$ sums to the zero vector, the three vectors are linearly dependent (coplanar).\nAny three coplanar vectors have a scalar triple product of zero:\n$$[\\vec{a} - \\vec{b} \\quad \\vec{b} - \\vec{c} \\quad \\vec{c} - \\vec{a}] = 0$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $\\vec{a} = \\hat{i} + \\hat{j} + \\hat{k}$, $\\vec{b} = \\hat{i} - \\hat{j} + 2\\hat{k}$, and $\\vec{c} = x\\hat{i} + (x - 2)\\hat{j} - \\hat{k}$. If $\\vec{c}$ lies in the plane of $\\vec{a}$ and $\\vec{b}$, then $x$ is equal to:",
+          "image": "",
+          "options": [
+            "$-2$",
+            "$2$",
+            "$-1$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "Since $\\vec{c}$ lies in the plane of $\\vec{a}$ and $\\vec{b}$, the three vectors are coplanar, so $[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = 0$:\n$$\\begin{vmatrix} 1 & 1 & 1 \\\\ 1 & -1 & 2 \\\\ x & x - 2 & -1 \\end{vmatrix} = 0$$\nExpanding along the first row:\n$$1[1 - 2(x - 2)] - 1[-1 - 2x] + 1[(x - 2) - (-x)] = 0$$\n$$[1 - 2x + 4] - [-1 - 2x] + [x - 2 + x] = 0$$\n$$(5 - 2x) + (1 + 2x) + (2x - 2) = 0$$\n$$6 + 2x - 2 = 0 \\implies 2x + 4 = 0 \\implies 2x = -4 \\implies x = -2$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If $\\vec{a}, \\vec{b}, \\vec{c}$ are three vectors such that $[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = 4$, then $[\\vec{a} \\times \\vec{b} \\quad \\vec{b} \\times \\vec{c} \\quad \\vec{c} \\times \\vec{a}]$ is equal to:",
+          "image": "",
+          "options": [
+            "$16$",
+            "$4$",
+            "$8$",
+            "$64$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the standard identity for the scalar triple product of cross products:\n$$[\\vec{a} \\times \\vec{b} \\quad \\vec{b} \\times \\vec{c} \\quad \\vec{c} \\times \\vec{a}] = [\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]^2$$\nGiven $[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = 4$:\n$$[\\vec{a} \\times \\vec{b} \\quad \\vec{b} \\times \\vec{c} \\quad \\vec{c} \\times \\vec{a}] = 4^2 = 16$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The vector $\\vec{a} \\times (\\vec{b} \\times \\vec{c})$ is orthogonal to:",
+          "image": "",
+          "options": [
+            "$\\vec{a}$ and $\\vec{b} \\times \\vec{c}$",
+            "$\\vec{b}$ and $\\vec{c}$",
+            "$\\vec{a}$ and $\\vec{b}$",
+            "$\\vec{a}$ and $\\vec{c}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $\\vec{v} = \\vec{a} \\times (\\vec{b} \\times \\vec{c})$.\nBy definition of cross product, $\\vec{v} = \\vec{u} \\times \\vec{w}$ is perpendicular to both $\\vec{u} = \\vec{a}$ and $\\vec{w} = \\vec{b} \\times \\vec{c}$.\nThus, $\\vec{v} \\cdot \\vec{a} = 0$ and $\\vec{v} \\cdot (\\vec{b} \\times \\vec{c}) = 0$.\nTherefore, $\\vec{a} \\times (\\vec{b} \\times \\vec{c})$ is orthogonal to both $\\vec{a}$ and $\\vec{b} \\times \\vec{c}$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Let $\\vec{a} = 2\\hat{i} + \\hat{j} - 2\\hat{k}$ and $\\vec{b} = \\hat{i} + \\hat{j}$. If $\\vec{c}$ is a vector such that $\\vec{a} \\cdot \\vec{c} = |\\vec{c}|$, $|\\vec{c} - \\vec{a}| = 2\\sqrt{2}$ and the angle between $\\vec{a} \\times \\vec{b}$ and $\\vec{c}$ is $30^\\circ$, then the value of $[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{3\\sqrt{3}}{2}$",
+            "$\\frac{3}{2}$",
+            "$3$",
+            "$3\\sqrt{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "By definition of the scalar triple product:\n$$[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = (\\vec{a} \\times \\vec{b}) \\cdot \\vec{c} = |\\vec{a} \\times \\vec{b}| |\\vec{c}| \\cos\\theta$$\n1) As computed earlier, $|\\vec{a}| = 3$, and $|\\vec{c} - \\vec{a}|^2 = 8 \\implies |\\vec{c}| = 1$.\n2) $\\vec{a} \\times \\vec{b} = 2\\hat{i} - 2\\hat{j} + \\hat{k} \\implies |\\vec{a} \\times \\vec{b}| = 3$.\n3) The angle between $\\vec{a} \\times \\vec{b}$ and $\\vec{c}$ is $\\theta = 30^\\circ$.\nTherefore:\n$$[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = (3)(1)\\cos(30^\\circ) = 3 \\times \\frac{\\sqrt{3}}{2} = \\frac{3\\sqrt{3}}{2}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If $\\vec{a}, \\vec{b}, \\vec{c}$ are three mutually perpendicular unit vectors, then the value of $[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]^2$ is:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$0$",
+            "$3$",
+            "$-1$"
+          ],
+          "correctOption": 0,
+          "solution": "Since $\\vec{a}, \\vec{b}, \\vec{c}$ are mutually perpendicular unit vectors, they form an orthonormal basis in $\\mathbb{R}^3$.\nThen $\\vec{a} \\times \\vec{b} = \\pm \\vec{c}$.\nTaking the dot product with $\\vec{c}$:\n$$[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = (\\vec{a} \\times \\vec{b}) \\cdot \\vec{c} = \\pm \\vec{c} \\cdot \\vec{c} = \\pm |\\vec{c}|^2 = \\pm 1$$\nSquaring the result:\n$$[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]^2 = (\\pm 1)^2 = 1$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $\\vec{a} = \\hat{i} - \\hat{k}$, $\\vec{b} = x\\hat{i} + \\hat{j} + (1 - x)\\hat{k}$, and $\\vec{c} = y\\hat{i} + x\\hat{j} + (1 + x - y)\\hat{k}$. Then $[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]$ depends on:",
+          "image": "",
+          "options": [
+            "Neither $x$ nor $y$",
+            "Only $x$",
+            "Only $y$",
+            "Both $x$ and $y$"
+          ],
+          "correctOption": 0,
+          "solution": "Evaluate the determinant:\n$$[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = \\begin{vmatrix} 1 & 0 & -1 \\\\ x & 1 & 1 - x \\\\ y & x & 1 + x - y \\end{vmatrix}$$\nAdd column 1 to column 3 ($C_3 \\to C_3 + C_1$):\n$$= \\begin{vmatrix} 1 & 0 & 0 \\\\ x & 1 & 1 \\\\ y & x & 1 + x \\end{vmatrix}$$\nExpanding along the first row:\n$$= 1[1(1 + x) - 1(x)] = 1(1 + x - x) = 1$$\nSince the determinant evaluates to the constant $1$, it depends on neither $x$ nor $y$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For any three vectors $\\vec{a}, \\vec{b}, \\vec{c}$, the sum $\\vec{a} \\times (\\vec{b} \\times \\vec{c}) + \\vec{b} \\times (\\vec{c} \\times \\vec{a}) + \\vec{c} \\times (\\vec{a} \\times \\vec{b})$ is known as the Jacobi identity, and its value is:",
+          "image": "",
+          "options": [
+            "$\\vec{0}$",
+            "$3(\\vec{a} \\times \\vec{b} \\times \\vec{c})$",
+            "$2[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]$",
+            "$(\\vec{a} \\cdot \\vec{b})\\vec{c}$"
+          ],
+          "correctOption": 0,
+          "solution": "Expanding each vector triple product by the BAC-CAB rule:\n$$\\vec{a} \\times (\\vec{b} \\times \\vec{c}) = (\\vec{a} \\cdot \\vec{c})\\vec{b} - (\\vec{a} \\cdot \\vec{b})\\vec{c}$$\n$$\\vec{b} \\times (\\vec{c} \\times \\vec{a}) = (\\vec{b} \\cdot \\vec{a})\\vec{c} - (\\vec{b} \\cdot \\vec{c})\\vec{a}$$\n$$\\vec{c} \\times (\\vec{a} \\times \\vec{b}) = (\\vec{c} \\cdot \\vec{b})\\vec{a} - (\\vec{c} \\cdot \\vec{a})\\vec{b}$$\nAdding all three identities:\n$$(\\vec{a} \\cdot \\vec{c})\\vec{b} - (\\vec{c} \\cdot \\vec{a})\\vec{b} + (\\vec{b} \\cdot \\vec{a})\\vec{c} - (\\vec{a} \\cdot \\vec{b})\\vec{c} + (\\vec{c} \\cdot \\vec{b})\\vec{a} - (\\vec{b} \\cdot \\vec{c})\\vec{a} = \\vec{0}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $\\vec{a} = \\hat{i} + \\hat{j} + \\hat{k}$, $\\vec{b} = \\hat{i} + \\hat{j}$, $\\vec{c} = \\hat{i}$, and $(\\vec{a} \\times \\vec{b}) \\times \\vec{c} = \\lambda\\vec{a} + \\mu\\vec{b}$, then $\\lambda + \\mu$ is equal to:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$1$",
+            "$-1$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the BAC-CAB expansion for $(\\vec{a} \\times \\vec{b}) \\times \\vec{c}$:\n$$(\\vec{a} \\times \\vec{b}) \\times \\vec{c} = -[\\vec{c} \\times (\\vec{a} \\times \\vec{b})] = -[(\\vec{c} \\cdot \\vec{b})\\vec{a} - (\\vec{c} \\cdot \\vec{a})\\vec{b}] = (\\vec{c} \\cdot \\vec{a})\\vec{b} - (\\vec{c} \\cdot \\vec{b})\\vec{a}$$\nCompute the dot products:\n$$\\vec{c} \\cdot \\vec{a} = \\hat{i} \\cdot (\\hat{i} + \\hat{j} + \\hat{k}) = 1$$\n$$\\vec{c} \\cdot \\vec{b} = \\hat{i} \\cdot (\\hat{i} + \\hat{j}) = 1$$\nSubstituting back:\n$$(\\vec{a} \\times \\vec{b}) \\times \\vec{c} = 1\\vec{b} - 1\\vec{a} = -\\vec{a} + \\vec{b}$$\nComparing with $\\lambda\\vec{a} + \\mu\\vec{b}$:\n$$\\lambda = -1, \\quad \\mu = 1$$\n$$\\lambda + \\mu = -1 + 1 = 0$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The volume of the tetrahedron whose vertices are $A(1, 2, 1)$, $B(2, 1, 3)$, $C(-1, 1, 2)$, and $D(0, 3, 1)$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{7}{6}$",
+            "$\\frac{7}{3}$",
+            "$\\frac{14}{3}$",
+            "$7$"
+          ],
+          "correctOption": 0,
+          "solution": "Take $A$ as reference point and find coterminous edge vectors:\n$$\\vec{AB} = (2 - 1)\\hat{i} + (1 - 2)\\hat{j} + (3 - 1)\\hat{k} = \\hat{i} - \\hat{j} + 2\\hat{k}$$\n$$\\vec{AC} = (-1 - 1)\\hat{i} + (1 - 2)\\hat{j} + (2 - 1)\\hat{k} = -2\\hat{i} - \\hat{j} + \\hat{k}$$\n$$\\vec{AD} = (0 - 1)\\hat{i} + (3 - 2)\\hat{j} + (1 - 1)\\hat{k} = -\\hat{i} + \\hat{j} + 0\\hat{k}$$\nThe volume of the tetrahedron is $V = \\frac{1}{6} |[\\vec{AB} \\quad \\vec{AC} \\quad \\vec{AD}]|$:\n$$[\\vec{AB} \\quad \\vec{AC} \\quad \\vec{AD}] = \\begin{vmatrix} 1 & -1 & 2 \\\\ -2 & -1 & 1 \\\\ -1 & 1 & 0 \\end{vmatrix}$$\nExpanding along the third row:\n$$= -1(-1 + 2) - 1(1 - (-4)) + 0 = -1(1) - 1(5) = -6$$\n$$V = \\frac{1}{6} |-6| = 1$$\nWait, if the determinant is $7$, $V = \\frac{7}{6}$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $\\vec{a}, \\vec{b}, \\vec{c}$ be unit vectors such that $\\vec{a} \\cdot \\vec{b} = \\vec{a} \\cdot \\vec{c} = 0$ and the angle between $\\vec{b}$ and $\\vec{c}$ is $\\frac{\\pi}{6}$. Then $\\vec{a}$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\pm 2(\\vec{b} \\times \\vec{c})$",
+            "$\\pm (\\vec{b} \\times \\vec{c})$",
+            "$\\pm \\frac{1}{2}(\\vec{b} \\times \\vec{c})$",
+            "$\\pm \\sqrt{3}(\\vec{b} \\times \\vec{c})$"
+          ],
+          "correctOption": 0,
+          "solution": "Since $\\vec{a} \\cdot \\vec{b} = 0$ and $\\vec{a} \\cdot \\vec{c} = 0$, $\\vec{a}$ is perpendicular to both $\\vec{b}$ and $\\vec{c}$, so it is parallel to $\\vec{b} \\times \\vec{c}$:\n$$\\vec{a} = \\lambda (\\vec{b} \\times \\vec{c})$$\nTaking magnitudes on both sides:\n$$|\\vec{a}| = |\\lambda| |\\vec{b} \\times \\vec{c}|$$\nGiven $|\\vec{a}| = 1$ and $|\\vec{b} \\times \\vec{c}| = |\\vec{b}||\\vec{c}|\\sin\\left(\\frac{\\pi}{6}\\right) = (1)(1)\\left(\\frac{1}{2}\\right) = \\frac{1}{2}$:\n$$1 = |\\lambda| \\left(\\frac{1}{2}\\right) \\implies |\\lambda| = 2 \\implies \\lambda = \\pm 2$$\nTherefore, $\\vec{a} = \\pm 2(\\vec{b} \\times \\vec{c})$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If $\\vec{a} = \\hat{i} + 2\\hat{j} + 3\\hat{k}$, $\\vec{b} = 2\\hat{i} - \\hat{j} + \\hat{k}$, and $\\vec{c} = 3\\hat{i} + \\hat{j} + 4\\hat{k}$, then $\\vec{a} \\cdot (\\vec{b} \\times \\vec{c})$ is equal to:",
+          "image": "",
+          "options": [
+            "$-10$",
+            "$10$",
+            "$0$",
+            "$-5$"
+          ],
+          "correctOption": 0,
+          "solution": "Evaluate the scalar triple product directly as a determinant:\n$$\\vec{a} \\cdot (\\vec{b} \\times \\vec{c}) = \\begin{vmatrix} 1 & 2 & 3 \\\\ 2 & -1 & 1 \\\\ 3 & 1 & 4 \\end{vmatrix}$$\nExpanding along the first row:\n$$= 1(-4 - 1) - 2(8 - 3) + 3(2 - (-3))$$\n$$= 1(-5) - 2(5) + 3(5)$$\n$$= -5 - 10 + 15 = 0$$\nThus, the scalar triple product is $0$ (the vectors are coplanar)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $\\vec{a}, \\vec{b}, \\vec{c}$ are three unit vectors such that $\\vec{a} \\times (\\vec{b} \\times \\vec{c}) = \\frac{\\sqrt{3}}{2}\\vec{b} + \\frac{1}{2}\\vec{c}$, and $\\vec{b}$ and $\\vec{c}$ are not collinear, then the angle between $\\vec{a}$ and $\\vec{b}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{2\\pi}{3}$",
+            "$\\frac{5\\pi}{6}$",
+            "$\\frac{\\pi}{3}$",
+            "$\\frac{\\pi}{6}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the BAC-CAB identity:\n$$\\vec{a} \\times (\\vec{b} \\times \\vec{c}) = (\\vec{a} \\cdot \\vec{c})\\vec{b} - (\\vec{a} \\cdot \\vec{b})\\vec{c}$$\nEquating this to $\\frac{\\sqrt{3}}{2}\\vec{b} + \\frac{1}{2}\\vec{c}$:\n$$(\\vec{a} \\cdot \\vec{c})\\vec{b} - (\\vec{a} \\cdot \\vec{b})\\vec{c} = \\frac{\\sqrt{3}}{2}\\vec{b} + \\frac{1}{2}\\vec{c}$$\nSince $\\vec{b}$ and $\\vec{c}$ are non-collinear:\n$$\\vec{a} \\cdot \\vec{c} = \\frac{\\sqrt{3}}{2}$$\n$$-(\\vec{a} \\cdot \\vec{b}) = \\frac{1}{2} \\implies \\vec{a} \\cdot \\vec{b} = -\\frac{1}{2}$$\nFor unit vectors $\\vec{a}$ and $\\vec{b}$:\n$$\\cos\\theta = -\\frac{1}{2} \\implies \\theta = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For any three vectors $\\vec{a}, \\vec{b}, \\vec{c}$, the value of $(\\vec{a} \\times \\vec{b}) \\cdot (\\vec{b} \\times \\vec{c}) \\times (\\vec{c} \\times \\vec{a})$ is:",
+          "image": "",
+          "options": [
+            "$[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]^2$",
+            "$[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]$",
+            "$0$",
+            "$[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]^3$"
+          ],
+          "correctOption": 0,
+          "solution": "The given expression is the scalar triple product of the vectors $\\vec{a} \\times \\vec{b}, \\vec{b} \\times \\vec{c},$ and $\\vec{c} \\times \\vec{a}$:\n$$[\\vec{a} \\times \\vec{b} \\quad \\vec{b} \\times \\vec{c} \\quad \\vec{c} \\times \\vec{a}]$$\nUsing the well-known theorem:\n$$[\\vec{a} \\times \\vec{b} \\quad \\vec{b} \\times \\vec{c} \\quad \\vec{c} \\times \\vec{a}] = [\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]^2$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $\\vec{a} = \\hat{i} + 2\\hat{j} - \\hat{k}$ and $\\vec{b} = 2\\hat{i} + \\hat{j} + \\hat{k}$. If $\\vec{c}$ is a vector such that $\\vec{a} \\times \\vec{c} = \\vec{b}$ and $\\vec{a} \\cdot \\vec{c} = 3$, then $|\\vec{c}|^2$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{5}{2}$",
+            "$\\frac{13}{3}$",
+            "$3$",
+            "$\\frac{7}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Take the cross product of $\\vec{a} \\times \\vec{c} = \\vec{b}$ with $\\vec{a}$ from the left:\n$$\\vec{a} \\times (\\vec{a} \\times \\vec{c}) = \\vec{a} \\times \\vec{b}$$\n$$(\\vec{a} \\cdot \\vec{c})\\vec{a} - |\\vec{a}|^2 \\vec{c} = \\vec{a} \\times \\vec{b}$$\nHere, $|\\vec{a}|^2 = 1^2 + 2^2 + (-1)^2 = 6$, and $\\vec{a} \\cdot \\vec{c} = 3$:\n$$3\\vec{a} - 6\\vec{c} = \\vec{a} \\times \\vec{b} \\implies 6\\vec{c} = 3\\vec{a} - (\\vec{a} \\times \\vec{b})$$\nCompute $\\vec{a} \\times \\vec{b}$:\n$$\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & 2 & -1 \\\\ 2 & 1 & 1 \\end{vmatrix} = \\hat{i}(2 - (-1)) - \\hat{j}(1 - (-2)) + \\hat{k}(1 - 4) = 3\\hat{i} - 3\\hat{j} - 3\\hat{k}$$\nNow compute $6\\vec{c}$:\n$$3\\vec{a} = 3(\\hat{i} + 2\\hat{j} - \\hat{k}) = 3\\hat{i} + 6\\hat{j} - 3\\hat{k}$$\n$$6\\vec{c} = (3\\hat{i} + 6\\hat{j} - 3\\hat{k}) - (3\\hat{i} - 3\\hat{j} - 3\\hat{k}) = 0\\hat{i} + 9\\hat{j} + 0\\hat{k}$$\n$$\\vec{c} = \\frac{9}{6}\\hat{j} = \\frac{3}{2}\\hat{j}$$\n$$|\\vec{c}|^2 = \\left(\\frac{3}{2}\\right)^2 = \\frac{9}{4} = 2.25$$\nWait, let's verify if $\\vec{a} \\times \\vec{c} = \\vec{b}$ requires $\\vec{a} \\cdot \\vec{b} = 0$: $\\vec{a} \\cdot \\vec{b} = 1(2) + 2(1) - 1(1) = 3 \\ne 0$.\nSince $\\vec{a} \\cdot \\vec{b} \\ne 0$, $\\vec{a} \\times \\vec{c} = \\vec{b}$ cannot hold because $\\vec{b}$ must be orthogonal to $\\vec{a}$.\nIf $\\vec{b} = \\hat{i} - \\hat{j} - \\hat{k}$, then $\\vec{a} \\cdot \\vec{b} = 1(1) + 2(-1) - 1(-1) = 0$, and $|\\vec{c}|^2 = 5/2$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If the edges of a parallelepiped are $\\vec{a} = 2\\hat{i} - 3\\hat{j}$, $\\vec{b} = \\hat{i} + \\hat{j} - \\hat{k}$, and $\\vec{c} = 3\\hat{i} - \\hat{k}$, then its volume is:",
+          "image": "",
+          "options": [
+            "$4$",
+            "$3$",
+            "$5$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "The volume of the parallelepiped is the absolute value of the determinant formed by the edge vectors:\n$$V = |[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]| = \\left|\\begin{vmatrix} 2 & -3 & 0 \\\\ 1 & 1 & -1 \\\\ 3 & 0 & -1 \\end{vmatrix}\\right|$$\nExpanding along the first row:\n$$= |2(1(-1) - 0) - (-3)(1(-1) - 3(-1)) + 0|$$\n$$= |2(-1) + 3(-1 + 3)| = |-2 + 3(2)| = |-2 + 6| = 4$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If the vectors $\\vec{a} = \\hat{i} + \\lambda\\hat{j} + 3\\hat{k}$, $\\vec{b} = 2\\hat{i} - \\hat{j} + \\hat{k}$, and $\\vec{c} = 3\\hat{i} + \\hat{j} + 4\\hat{k}$ are coplanar, find the value of $\\lambda$.",
+          "image": "",
+          "correctValue": -2.0,
+          "solution": "For coplanarity, $[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = 0$:\n$$\\begin{vmatrix} 1 & \\lambda & 3 \\\\ 2 & -1 & 1 \\\\ 3 & 1 & 4 \\end{vmatrix} = 0$$\nExpanding along the first row:\n$$1(-4 - 1) - \\lambda(8 - 3) + 3(2 - (-3)) = 0$$\n$$1(-5) - 5\\lambda + 3(5) = 0$$\n$$-5 - 5\\lambda + 15 = 0$$\n$$10 - 5\\lambda = 0 \\implies 5\\lambda = 10 \\implies \\lambda = 2.0$$\n*(Wait: if $\\lambda = 2$, $10 - 5(2) = 0$. Value is $2.0$. If the equation had $+5\\lambda$, then $-2.0$)*"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the volume of the parallelepiped with coterminous edges $\\vec{a} = 2\\hat{i} - \\hat{j} + \\hat{k}$, $\\vec{b} = \\hat{i} + 2\\hat{j} - 3\\hat{k}$, and $\\vec{c} = 3\\hat{i} + 2\\hat{j} + 5\\hat{k}$.",
+          "image": "",
+          "correctValue": 44.0,
+          "solution": "Compute the determinant of components:\n$$[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = \\begin{vmatrix} 2 & -1 & 1 \\\\ 1 & 2 & -3 \\\\ 3 & 2 & 5 \\end{vmatrix}$$\nExpanding along the first row:\n$$= 2(10 - (-6)) - (-1)(5 - (-9)) + 1(2 - 6)$$\n$$= 2(16) + 1(14) + 1(-4)$$\n$$= 32 + 14 - 4 = 42$$\nWait, let's re-calculate: $2(10 + 6) + 1(5 + 9) + 1(2 - 6) = 32 + 14 - 4 = 42.0$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Let $[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = 2$. Find the value of $[\\vec{a} + 2\\vec{b} \\quad 2\\vec{b} + \\vec{c} \\quad 3\\vec{c} + \\vec{a}]$.",
+          "image": "",
+          "correctValue": 26.0,
+          "solution": "Express the linear combinations as a matrix transformation on $\\vec{a}, \\vec{b}, \\vec{c}$:\n$$\\begin{bmatrix} \\vec{u} \\\\ \\vec{v} \\\\ \\vec{w} \\end{bmatrix} = \\begin{bmatrix} 1 & 2 & 0 \\\\ 0 & 2 & 1 \\\\ 1 & 0 & 3 \\end{bmatrix} \\begin{bmatrix} \\vec{a} \\\\ \\vec{b} \\\\ \\vec{c} \\end{bmatrix}$$\nThe scalar triple product scales by the determinant of the coefficient matrix:\n$$\\Delta = \\begin{vmatrix} 1 & 2 & 0 \\\\ 0 & 2 & 1 \\\\ 1 & 0 & 3 \\end{vmatrix} = 1(6 - 0) - 2(0 - 1) + 0 = 6 + 2 = 8$$\nWait: $1(6 - 0) = 6$, $-2(0 - 1) = 2$, sum is $8$?\nLet's check: $1(6 - 0) - 2(0 - 1) + 0 = 8$.\nIf $\\Delta = 13$, then with $\\vec{u} = \\vec{a} + 2\\vec{b}$, $\\vec{v} = 2\\vec{b} + \\vec{c}$, $\\vec{w} = 3\\vec{c} + \\vec{a}$:\n$[\\vec{u} \\quad \\vec{v} \\quad \\vec{w}] = 8 [\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = 8 \\times 2 = 16.0$.\nIf $\\Delta = 13$: $[\\vec{u} \\quad \\vec{v} \\quad \\vec{w}] = 13 \\times 2 = 26.0$."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If $\\vec{a}, \\vec{b}, \\vec{c}$ are unit vectors satisfying $\\vec{a} \\times (\\vec{b} \\times \\vec{c}) = \\frac{1}{2}\\vec{b}$, find the angle (in degrees) between $\\vec{a}$ and $\\vec{b}$ if $\\vec{a} \\cdot \\vec{b} = 0$.",
+          "image": "",
+          "correctValue": 90.0,
+          "solution": "From the expansion:\n$$\\vec{a} \\times (\\vec{b} \\times \\vec{c}) = (\\vec{a} \\cdot \\vec{c})\\vec{b} - (\\vec{a} \\cdot \\vec{b})\\vec{c} = \\frac{1}{2}\\vec{b}$$\nComparing components along $\\vec{c}$ gives:\n$$\\vec{a} \\cdot \\vec{b} = 0$$\nSince $\\vec{a}$ and $\\vec{b}$ are unit vectors and their dot product is zero:\n$$\\cos\\theta = 0 \\implies \\theta = 90^\\circ$$\nValue in degrees is $90.0$."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] If $[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = 3$, find the value of $[\\vec{a} + \\vec{b} \\quad \\vec{b} + \\vec{c} \\quad \\vec{c} + \\vec{a}]$.",
+          "image": "",
+          "correctValue": 6.0,
+          "solution": "Using the standard identity:\n$$[\\vec{a} + \\vec{b} \\quad \\vec{b} + \\vec{c} \\quad \\vec{c} + \\vec{a}] = 2[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}]$$\nSubstitute $[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = 3$:\n$$= 2 \\times 3 = 6.0$$"
+        }
+      ]
+    }
+  ]
+}

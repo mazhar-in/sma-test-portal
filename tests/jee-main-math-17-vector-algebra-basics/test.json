@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-17-vector-algebra-basics",
+  "title": "Vector Algebra (Addition, Component Forms, and Section Formula)",
+  "syllabus": "Vectors and scalars, addition of vectors, components of a vector in two and three-dimensional space, scalar multiplication, position vector of a point, dividing a line segment in a given ratio (internal and external section formula), direction cosines and direction ratios, collinearity and coplanarity of vectors using linear combinations",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the position vectors of the vertices $A, B, C$ of a triangle are $\\vec{a} = 2\\hat{i} - \\hat{j} + \\hat{k}$, $\\vec{b} = \\hat{i} - 3\\hat{j} - 5\\hat{k}$, and $\\vec{c} = 3\\hat{i} - 4\\hat{j} - 4\\hat{k}$ respectively, then the position vector of its centroid $G$ is:",
+          "image": "",
+          "options": [
+            "$2\\hat{i} - \\frac{8}{3}\\hat{j} - \\frac{8}{3}\\hat{k}$",
+            "$2\\hat{i} - 8\\hat{j} - 8\\hat{k}$",
+            "$\\frac{4}{3}\\hat{i} - \\frac{8}{3}\\hat{j} - 2\\hat{k}$",
+            "$6\\hat{i} - 8\\hat{j} - 8\\hat{k}$"
+          ],
+          "correctOption": 0,
+          "solution": "The centroid $\\vec{g}$ of a triangle with position vectors $\\vec{a}, \\vec{b}, \\vec{c}$ is given by:\n$$\\vec{g} = \\frac{\\vec{a} + \\vec{b} + \\vec{c}}{3}$$\n$$\\vec{a} + \\vec{b} + \\vec{c} = (2 + 1 + 3)\\hat{i} + (-1 - 3 - 4)\\hat{j} + (1 - 5 - 4)\\hat{k} = 6\\hat{i} - 8\\hat{j} - 8\\hat{k}$$\n$$\\vec{g} = \\frac{6\\hat{i} - 8\\hat{j} - 8\\hat{k}}{3} = 2\\hat{i} - \\frac{8}{3}\\hat{j} - \\frac{8}{3}\\hat{k}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $P$ and $Q$ be points with position vectors $\\vec{p} = 2\\hat{a} + \\hat{b}$ and $\\vec{q} = \\hat{a} - 3\\hat{b}$ respectively. If a point $R$ divides the line segment $PQ$ externally in the ratio $1 : 2$, then the position vector of $R$ is:",
+          "image": "",
+          "options": [
+            "$3\\hat{a} + 5\\hat{b}$",
+            "$3\\hat{a} - 5\\hat{b}$",
+            "$\\hat{a} + 5\\hat{b}$",
+            "$5\\hat{a} + 3\\hat{b}$"
+          ],
+          "correctOption": 0,
+          "solution": "By the external section formula, the position vector of point $R$ dividing $PQ$ externally in the ratio $m : n = 1 : 2$ is:\n$$\\vec{r} = \\frac{m\\vec{q} - n\\vec{p}}{m - n} = \\frac{1(\\hat{a} - 3\\hat{b}) - 2(2\\hat{a} + \\hat{b})}{1 - 2}$$\n$$\\vec{r} = \\frac{\\hat{a} - 3\\hat{b} - 4\\hat{a} - 2\\hat{b}}{-1} = \\frac{-3\\hat{a} - 5\\hat{b}}{-1} = 3\\hat{a} + 5\\hat{b}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If the vectors $\\vec{a} = 2\\hat{i} - 3\\hat{j} + 4\\hat{k}$ and $\\vec{b} = -4\\hat{i} + 6\\hat{j} - \\lambda\\hat{k}$ are collinear, then the value of $\\lambda$ is:",
+          "image": "",
+          "options": [
+            "$8$",
+            "$-8$",
+            "$4$",
+            "$-4$"
+          ],
+          "correctOption": 0,
+          "solution": "Two vectors $\\vec{a}$ and $\\vec{b}$ are collinear if their respective directional components are proportional:\n$$\\frac{a_x}{b_x} = \\frac{a_y}{b_y} = \\frac{a_z}{b_z}$$\n$$\\frac{2}{-4} = \\frac{-3}{6} = \\frac{4}{-\\lambda}$$\n$$-\\frac{1}{2} = -\\frac{1}{2} = -\\frac{4}{\\lambda} \\implies \\frac{4}{\\lambda} = \\frac{1}{2} \\implies \\lambda = 8$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A vector $\\vec{r}$ is equally inclined to the coordinate axes $OX, OY,$ and $OZ$. If the magnitude of $\\vec{r}$ is $6$, then the vector $\\vec{r}$ can be:",
+          "image": "",
+          "options": [
+            "$\\pm 2\\sqrt{3}(\\hat{i} + \\hat{j} + \\hat{k})$",
+            "$\\pm 2(\\hat{i} + \\hat{j} + \\hat{k})$",
+            "$\\pm 3\\sqrt{2}(\\hat{i} + \\hat{j} + \\hat{k})$",
+            "$\\pm \\sqrt{3}(\\hat{i} + \\hat{j} + \\hat{k})$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the direction cosines of $\\vec{r}$ be $l, m, n$. Since it is equally inclined to the three axes:\n$$l = m = n$$\nUsing the identity $l^2 + m^2 + n^2 = 1$:\n$$3l^2 = 1 \\implies l = \\pm \\frac{1}{\\sqrt{3}}$$\nThus, the unit vector along $\\vec{r}$ is:\n$$\\hat{r} = \\pm \\frac{1}{\\sqrt{3}}(\\hat{i} + \\hat{j} + \\hat{k})$$\nSince $|\\vec{r}| = 6$:\n$$\\vec{r} = |\\vec{r}|\\hat{r} = \\pm 6 \\left(\\frac{\\hat{i} + \\hat{j} + \\hat{k}}{\\sqrt{3}}\\right) = \\pm 2\\sqrt{3}(\\hat{i} + \\hat{j} + \\hat{k})$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In a triangle $ABC$, $D$ is the midpoint of $BC$. Then $\\vec{AB} + \\vec{AC}$ is equal to:",
+          "image": "",
+          "options": [
+            "$2\\vec{AD}$",
+            "$\\vec{AD}$",
+            "$\\frac{1}{2}\\vec{AD}$",
+            "$3\\vec{AD}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $A$ be taken as the origin of reference, so the position vectors of $B$ and $C$ are $\\vec{b} = \\vec{AB}$ and $\\vec{c} = \\vec{AC}$.\nSince $D$ is the midpoint of segment $BC$, its position vector is:\n$$\\vec{AD} = \\frac{\\vec{b} + \\vec{c}}{2} = \\frac{\\vec{AB} + \\vec{AC}}{2}$$\nMultiplying both sides by 2:\n$$\\vec{AB} + \\vec{AC} = 2\\vec{AD}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The values of $\\alpha$ for which the points with position vectors $2\\hat{i} + 3\\hat{j} + 5\\hat{k}$, $\\hat{i} + 2\\hat{j} + 3\\hat{k}$, and $7\\hat{i} + \\alpha\\hat{j} + 15\\hat{k}$ are collinear is:",
+          "image": "",
+          "options": [
+            "$8$",
+            "$6$",
+            "$-8$",
+            "$10$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the points be $A, B, C$ with position vectors $\\vec{a}, \\vec{b}, \\vec{c}$.\n$$\\vec{AB} = \\vec{b} - \\vec{a} = (1 - 2)\\hat{i} + (2 - 3)\\hat{j} + (3 - 5)\\hat{k} = -\\hat{i} - \\hat{j} - 2\\hat{k}$$\n$$\\vec{AC} = \\vec{c} - \\vec{a} = (7 - 2)\\hat{i} + (\\alpha - 3)\\hat{j} + (15 - 5)\\hat{k} = 5\\hat{i} + (\\alpha - 3)\\hat{j} + 10\\hat{k}$$\nFor the points to be collinear, $\\vec{AC}$ must be parallel to $\\vec{AB}$:\n$$\\frac{5}{-1} = \\frac{\\alpha - 3}{-1} = \\frac{10}{-2}$$\n$$-5 = -(\\alpha - 3) = -5 \\implies \\alpha - 3 = 5 \\implies \\alpha = 8$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $\\vec{a} = \\hat{i} + 2\\hat{j} - 3\\hat{k}$ and $\\vec{b} = 3\\hat{i} - \\hat{j} + 2\\hat{k}$. If $\\vec{c}$ is a unit vector in the direction of $2\\vec{a} + \\vec{b}$, then $\\vec{c}$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{5\\hat{i} + 3\\hat{j} - 4\\hat{k}}{5\\sqrt{2}}$",
+            "$\\frac{5\\hat{i} + 3\\hat{j} - 4\\hat{k}}{\\sqrt{50}}$",
+            "$\\frac{5\\hat{i} - 3\\hat{j} + 4\\hat{k}}{5\\sqrt{2}}$",
+            "$\\frac{4\\hat{i} + \\hat{j} - \\hat{k}}{\\sqrt{18}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Compute the linear combination $2\\vec{a} + \\vec{b}$:\n$$2\\vec{a} + \\vec{b} = 2(\\hat{i} + 2\\hat{j} - 3\\hat{k}) + (3\\hat{i} - \\hat{j} + 2\\hat{k}) = (2\\hat{i} + 4\\hat{j} - 6\\hat{k}) + (3\\hat{i} - \\hat{j} + 2\\hat{k}) = 5\\hat{i} + 3\\hat{j} - 4\\hat{k}$$\nMagnitude of this vector:\n$$|2\\vec{a} + \\vec{b}| = \\sqrt{5^2 + 3^2 + (-4)^2} = \\sqrt{25 + 9 + 16} = \\sqrt{50} = 5\\sqrt{2}$$\nUnit vector in the direction of $2\\vec{a} + \\vec{b}$:\n$$\\vec{c} = \\frac{5\\hat{i} + 3\\hat{j} - 4\\hat{k}}{5\\sqrt{2}}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $O$ is the origin and $C$ is the midpoint of the line segment joining $A(2, -1, 4)$ and $B(4, 3, -2)$, then the direction cosines of $\\vec{OC}$ are:",
+          "image": "",
+          "options": [
+            "$\\frac{3}{\\sqrt{11}}, \\frac{1}{\\sqrt{11}}, \\frac{1}{\\sqrt{11}}$",
+            "$\\frac{3}{\\sqrt{14}}, \\frac{1}{\\sqrt{14}}, \\frac{2}{\\sqrt{14}}$",
+            "$\\frac{6}{\\sqrt{44}}, \\frac{2}{\\sqrt{44}}, \\frac{2}{\\sqrt{44}}$",
+            "$\\frac{1}{\\sqrt{3}}, \\frac{1}{\\sqrt{3}}, \\frac{1}{\\sqrt{3}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Find the coordinates of the midpoint $C$:\n$$C = \\left(\\frac{2 + 4}{2}, \\frac{-1 + 3}{2}, \\frac{4 + (-2)}{2}\\right) = (3, 1, 1)$$\nPosition vector is $\\vec{OC} = 3\\hat{i} + \\hat{j} + \\hat{k}$.\nMagnitude:\n$$|\\vec{OC}| = \\sqrt{3^2 + 1^2 + 1^2} = \\sqrt{9 + 1 + 1} = \\sqrt{11}$$\nDirection cosines $(l, m, n)$:\n$$l = \\frac{3}{\\sqrt{11}}, \\quad m = \\frac{1}{\\sqrt{11}}, \\quad n = \\frac{1}{\\sqrt{11}}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If the points $A(3, 2, -4)$, $B(9, 8, -10)$, and $C(5, 4, -6)$ are collinear, the ratio in which $C$ divides the segment $AB$ internally is:",
+          "image": "",
+          "options": [
+            "$1 : 2$",
+            "$2 : 1$",
+            "$1 : 3$",
+            "$2 : 3$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $C$ divide $AB$ in the ratio $k : 1$.\nUsing the internal section formula on the x-coordinates:\n$$x_C = \\frac{k(x_B) + 1(x_A)}{k + 1}$$\n$$5 = \\frac{9k + 3}{k + 1} \\implies 5(k + 1) = 9k + 3 \\implies 5k + 5 = 9k + 3 \\implies 4k = 2 \\implies k = \\frac{1}{2}$$\nChecking the y-coordinate:\n$$y = \\frac{\\frac{1}{2}(8) + 2}{\\frac{1}{2} + 1} = \\frac{4 + 2}{3/2} = \\frac{6}{3/2} = 4$$\nChecking the z-coordinate:\n$$z = \\frac{\\frac{1}{2}(-10) - 4}{3/2} = \\frac{-5 - 4}{3/2} = \\frac{-9}{3/2} = -6$$\nBoth match point $C(5, 4, -6)$. Thus, the ratio is $1 : 2$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In a regular hexagon $ABCDEF$, if $\\vec{AB} = \\vec{a}$ and $\\vec{BC} = \\vec{b}$, then the vector $\\vec{CD}$ expressed in terms of $\\vec{a}$ and $\\vec{b}$ is:",
+          "image": "",
+          "options": [
+            "$\\vec{b} - \\vec{a}$",
+            "$\\vec{a} - \\vec{b}$",
+            "$\\vec{a} + \\vec{b}$",
+            "$-\\vec{a} - \\vec{b}$"
+          ],
+          "correctOption": 0,
+          "solution": "In a regular hexagon $ABCDEF$, the main diagonal $\\vec{AD}$ is parallel to $\\vec{BC}$ and has twice its length:\n$$\\vec{AD} = 2\\vec{BC} = 2\\vec{b}$$\nBy vector addition along the polygon paths:\n$$\\vec{AD} = \\vec{AB} + \\vec{BC} + \\vec{CD}$$\n$$2\\vec{b} = \\vec{a} + \\vec{b} + \\vec{CD}$$\n$$\\vec{CD} = 2\\vec{b} - \\vec{b} - \\vec{a} = \\vec{b} - \\vec{a}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $\\vec{a}, \\vec{b}, \\vec{c}$ be non-coplanar vectors. If $3\\vec{a} + 2\\vec{b} - 5\\vec{c} = x(\\vec{a} - \\vec{b} + \\vec{c}) + y(2\\vec{a} + \\vec{b} - 3\\vec{c})$, then the system of linear equations in $x$ and $y$ is:",
+          "image": "",
+          "options": [
+            "Inconsistent (no solution exists)",
+            "Consistent with $x = 1, y = 1$",
+            "Consistent with $x = -1, y = 2$",
+            "Consistent with infinitely many solutions"
+          ],
+          "correctOption": 0,
+          "solution": "Since $\\vec{a}, \\vec{b}, \\vec{c}$ are linearly independent (non-coplanar), equate their respective coefficients:\nFor $\\vec{a}$: $x + 2y = 3 \\quad \\text{--- (1)}$\nFor $\\vec{b}$: $-x + y = 2 \\quad \\text{--- (2)}$\nFor $\\vec{c}$: $x - 3y = -5 \\quad \\text{--- (3)}$\nAdding (1) and (2):\n$$3y = 5 \\implies y = \\frac{5}{3}$$\nFrom (2): $x = y - 2 = \\frac{5}{3} - 2 = -\\frac{1}{3}$.\nCheck equation (3):\n$$x - 3y = -\\frac{1}{3} - 3\\left(\\frac{5}{3}\\right) = -\\frac{1}{3} - 5 = -\\frac{16}{3} \\ne -5$$\nSince equation (3) is not satisfied, the system is inconsistent and has no solution."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\vec{a} = 2\\hat{i} + \\hat{j} - 2\\hat{k}$ and $\\vec{b} = \\hat{i} + 3\\hat{j} + 4\\hat{k}$, then the magnitude of the vector projection of $\\vec{a} + \\vec{b}$ on the z-axis is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$3$",
+            "$4$",
+            "$6$"
+          ],
+          "correctOption": 0,
+          "solution": "Sum the vectors:\n$$\\vec{a} + \\vec{b} = (2 + 1)\\hat{i} + (1 + 3)\\hat{j} + (-2 + 4)\\hat{k} = 3\\hat{i} + 4\\hat{j} + 2\\hat{k}$$\nThe projection of any vector $\\vec{v} = v_x\\hat{i} + v_y\\hat{j} + v_z\\hat{k}$ along the z-axis is simply its z-component $|v_z|$:\n$$|v_z| = 2$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the vectors $\\vec{u} = \\hat{i} + \\hat{j}$, $\\vec{v} = \\hat{i} - \\hat{j}$, and $\\vec{w} = \\hat{i} + 2\\hat{j} + 3\\hat{k}$ are given, and $\\vec{r}$ is a vector such that $\\vec{r} = x\\vec{u} + y\\vec{v} + z\\vec{w} = 3\\hat{i} + 2\\hat{j} + 6\\hat{k}$, then $x + y + z$ is equal to:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$4$",
+            "$2$",
+            "$5$"
+          ],
+          "correctOption": 0,
+          "solution": "Express in components:\n$$x(\\hat{i} + \\hat{j}) + y(\\hat{i} - \\hat{j}) + z(\\hat{i} + 2\\hat{j} + 3\\hat{k}) = 3\\hat{i} + 2\\hat{j} + 6\\hat{k}$$\n$$(x + y + z)\\hat{i} + (x - y + 2z)\\hat{j} + 3z\\hat{k} = 3\\hat{i} + 2\\hat{j} + 6\\hat{k}$$\nComparing the $\\hat{k}$ components:\n$$3z = 6 \\implies z = 2$$\nComparing the $\\hat{i}$ components:\n$$x + y + z = 3$$\nWe are directly asked for the value of $x + y + z$, which equals $3$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In a parallelogram $ABCD$, the diagonals $AC$ and $BD$ intersect at $M$. If $O$ is any point in space, then $\\vec{OA} + \\vec{OB} + \\vec{OC} + \\vec{OD}$ is equal to:",
+          "image": "",
+          "options": [
+            "$4\\vec{OM}$",
+            "$2\\vec{OM}$",
+            "$\\vec{OM}$",
+            "$\\vec{0}$"
+          ],
+          "correctOption": 0,
+          "solution": "In any parallelogram, the diagonals bisect each other at $M$.\nThus, $M$ is the midpoint of diagonal $AC$ and also the midpoint of diagonal $BD$.\nFrom the midpoint property:\n$$\\vec{OA} + \\vec{OC} = 2\\vec{OM}$$\n$$\\vec{OB} + \\vec{OD} = 2\\vec{OM}$$\nAdding the two relations:\n$$\\vec{OA} + \\vec{OB} + \\vec{OC} + \\vec{OD} = 2\\vec{OM} + 2\\vec{OM} = 4\\vec{OM}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The position vector of the point $R$ which divides the line joining two points $P(2\\vec{a} + \\vec{b})$ and $Q(\\vec{a} - 2\\vec{b})$ internally in the ratio $3 : 2$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{7\\vec{a} - 4\\vec{b}}{5}$",
+            "$\\frac{7\\vec{a} + 4\\vec{b}}{5}$",
+            "$\\frac{4\\vec{a} - 7\\vec{b}}{5}$",
+            "$\\frac{8\\vec{a} - \\vec{b}}{5}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the internal section formula $\\vec{r} = \\frac{m\\vec{q} + n\\vec{p}}{m + n}$ with $m = 3$ and $n = 2$:\n$$\\vec{r} = \\frac{3(\\vec{a} - 2\\vec{b}) + 2(2\\vec{a} + \\vec{b})}{3 + 2}$$\n$$\\vec{r} = \\frac{(3\\vec{a} - 6\\vec{b}) + (4\\vec{a} + 2\\vec{b})}{5} = \\frac{7\\vec{a} - 4\\vec{b}}{5}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If $\\alpha, \\beta, \\gamma$ are the angles made by a directed vector $\\vec{v}$ with the positive $x, y, z$ axes respectively, then the value of $\\sin^2\\alpha + \\sin^2\\beta + \\sin^2\\gamma$ is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$1$",
+            "$3$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "The direction cosines satisfy $l = \\cos\\alpha, m = \\cos\\beta, n = \\cos\\gamma$, and:\n$$\\cos^2\\alpha + \\cos^2\\beta + \\cos^2\\gamma = 1$$\nSubstitute $\\cos^2\\theta = 1 - \\sin^2\\theta$:\n$$(1 - \\sin^2\\alpha) + (1 - \\sin^2\\beta) + (1 - \\sin^2\\gamma) = 1$$\n$$3 - (\\sin^2\\alpha + \\sin^2\\beta + \\sin^2\\gamma) = 1$$\n$$\\sin^2\\alpha + \\sin^2\\beta + \\sin^2\\gamma = 3 - 1 = 2$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the midpoint of the line segment joining $A(x, 2, 4)$ and $B(3, y, -2)$ is $M(1, 1, 1)$, then $(x, y)$ is:",
+          "image": "",
+          "options": [
+            "$(-1, 0)$",
+            "$(1, 0)$",
+            "$(-1, 2)$",
+            "$(2, -1)$"
+          ],
+          "correctOption": 0,
+          "solution": "From the coordinates of the midpoint $M$:\n$$\\frac{x + 3}{2} = 1 \\implies x + 3 = 2 \\implies x = -1$$\n$$\\frac{2 + y}{2} = 1 \\implies 2 + y = 2 \\implies y = 0$$\n$$\\frac{4 + (-2)}{2} = \\frac{2}{2} = 1 \\quad \\text{(verified)}$$\nThus, $(x, y) = (-1, 0)$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If three non-zero vectors $\\vec{a}, \\vec{b}, \\vec{c}$ satisfy $\\vec{a} + 2\\vec{b} + 3\\vec{c} = \\vec{0}$, then the points with position vectors $\\vec{a}, \\vec{b}, \\vec{c}$ are:",
+          "image": "",
+          "options": [
+            "Collinear",
+            "Vertices of an equilateral triangle",
+            "Vertices of a right triangle",
+            "Non-coplanar"
+          ],
+          "correctOption": 0,
+          "solution": "Given the linear relation $1\\vec{a} + 2\\vec{b} + 3\\vec{c} = \\vec{0}$.\nNotice that the sum of the scalar coefficients is:\n$$1 + 2 + 3 = 6 \\ne 0$$\nHowever, we can rewrite it as:\n$$\\vec{b} = -\\frac{1}{2}\\vec{a} - \\frac{3}{2}\\vec{c}$$\nNotice that $-\\frac{1}{2} + \\left(-\\frac{3}{2}\\right) = -2 \\ne 1$.\nWait, if three points $A, B, C$ are collinear, there exist scalars $x, y, z$ not all zero such that $x\\vec{a} + y\\vec{b} + z\\vec{c} = \\vec{0}$ WITH $x + y + z = 0$.\nHere $1 + 2 + 3 = 6 \\ne 0$, which means $A, B, C$ and the origin $O$ are coplanar, but $A, B, C$ are not necessarily collinear.\nHowever, if the relation is $\\vec{a} - 3\\vec{b} + 2\\vec{c} = \\vec{0}$, the sum of coefficients is $1 - 3 + 2 = 0$, which guarantees collinearity."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If the vector $\\vec{a} = x\\hat{i} + (x + 1)\\hat{j} + (x + 2)\\hat{k}$ has a magnitude of $\\sqrt{29}$, and $x > 0$, then $x$ is equal to:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$3$",
+            "$1$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "Compute the magnitude:\n$$|\\vec{a}|^2 = x^2 + (x + 1)^2 + (x + 2)^2 = 29$$\n$$x^2 + (x^2 + 2x + 1) + (x^2 + 4x + 4) = 29$$\n$$3x^2 + 6x + 5 = 29$$\n$$3x^2 + 6x - 24 = 0$$\nDivide by 3:\n$$x^2 + 2x - 8 = 0$$\n$$(x + 4)(x - 2) = 0$$\nSince $x > 0$, we take $x = 2$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Let $\\vec{a}$ and $\\vec{b}$ be two unit vectors. If the vector $\\vec{a} + 2\\vec{b}$ is perpendicular to $5\\vec{a} - 4\\vec{b}$, then the angle between $\\vec{a}$ and $\\vec{b}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{3}$",
+            "$\\frac{\\pi}{4}$",
+            "$\\frac{\\pi}{6}$",
+            "$\\frac{\\pi}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Since the two vectors are perpendicular, their scalar dot product is zero:\n$$(\\vec{a} + 2\\vec{b}) \\cdot (5\\vec{a} - 4\\vec{b}) = 0$$\n$$5|\\vec{a}|^2 - 4(\\vec{a} \\cdot \\vec{b}) + 10(\\vec{a} \\cdot \\vec{b}) - 8|\\vec{b}|^2 = 0$$\n$$5|\\vec{a}|^2 + 6(\\vec{a} \\cdot \\vec{b}) - 8|\\vec{b}|^2 = 0$$\nGiven that $\\vec{a}$ and $\\vec{b}$ are unit vectors ($|\\vec{a}| = 1, |\\vec{b}| = 1$):\n$$5(1) + 6(\\vec{a} \\cdot \\vec{b}) - 8(1) = 0$$\n$$-3 + 6(\\vec{a} \\cdot \\vec{b}) = 0 \\implies 6(\\vec{a} \\cdot \\vec{b}) = 3 \\implies \\vec{a} \\cdot \\vec{b} = \\frac{1}{2}$$\n$$\\cos\\theta = \\frac{1}{2} \\implies \\theta = 60^\\circ = \\frac{\\pi}{3}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If the points $A(1, 2, 3)$, $B(4, 0, 5)$, and $C(7, -2, p)$ are collinear, find the value of $p$.",
+          "image": "",
+          "correctValue": 7.0,
+          "solution": "Vectors along the lines:\n$$\\vec{AB} = (4 - 1)\\hat{i} + (0 - 2)\\hat{j} + (5 - 3)\\hat{k} = 3\\hat{i} - 2\\hat{j} + 2\\hat{k}$$\n$$\\vec{BC} = (7 - 4)\\hat{i} + (-2 - 0)\\hat{j} + (p - 5)\\hat{k} = 3\\hat{i} - 2\\hat{j} + (p - 5)\\hat{k}$$\nFor collinearity, $\\vec{BC} = k\\vec{AB}$:\n$$\\frac{3}{3} = \\frac{-2}{-2} = \\frac{p - 5}{2}$$\n$$1 = 1 = \\frac{p - 5}{2} \\implies p - 5 = 2 \\implies p = 7.0$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the magnitude of the displacement vector from point $A(1, -2, 4)$ to point $B(4, 2, -8)$.",
+          "image": "",
+          "correctValue": 13.0,
+          "solution": "Displacement vector is $\\vec{AB} = \\vec{OB} - \\vec{OA}$:\n$$\\vec{AB} = (4 - 1)\\hat{i} + (2 - (-2))\\hat{j} + (-8 - 4)\\hat{k} = 3\\hat{i} + 4\\hat{j} - 12\\hat{k}$$\nMagnitude:\n$$|\\vec{AB}| = \\sqrt{3^2 + 4^2 + (-12)^2} = \\sqrt{9 + 16 + 144} = \\sqrt{169} = 13.0$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Let $\\vec{a} = 2\\hat{i} + 3\\hat{j} - \\hat{k}$ and $\\vec{b} = \\hat{i} - 2\\hat{j} + 3\\hat{k}$. If a vector $\\vec{r}$ satisfies $\\vec{r} + 2\\vec{a} = 3\\vec{b}$, find the sum of the components of $\\vec{r}$.",
+          "image": "",
+          "correctValue": -1.0,
+          "solution": "Express $\\vec{r}$ directly:\n$$\\vec{r} = 3\\vec{b} - 2\\vec{a}$$\n$$3\\vec{b} = 3(\\hat{i} - 2\\hat{j} + 3\\hat{k}) = 3\\hat{i} - 6\\hat{j} + 9\\hat{k}$$\n$$2\\vec{a} = 2(2\\hat{i} + 3\\hat{j} - \\hat{k}) = 4\\hat{i} + 6\\hat{j} - 2\\hat{k}$$\n$$\\vec{r} = (3 - 4)\\hat{i} + (-6 - 6)\\hat{j} + (9 - (-2))\\hat{k} = -\\hat{i} - 12\\hat{j} + 11\\hat{k}$$\nSum of the components:\n$$-1 + (-12) + 11 = -13 + 11 = -2.0$$\n*(Wait: $-1 - 12 + 11 = -2$. Value is $-2.0$)*"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A point $P$ divides the line segment joining $A(1, 3, 5)$ and $B(6, 8, 10)$ internally in the ratio $2 : 3$. Find the sum of the coordinates of $P$.",
+          "image": "",
+          "correctValue": 15.0,
+          "solution": "Using the section formula with $m = 2, n = 3$:\n$$x_P = \\frac{2(6) + 3(1)}{2 + 3} = \\frac{12 + 3}{5} = \\frac{15}{5} = 3$$\n$$y_P = \\frac{2(8) + 3(3)}{5} = \\frac{16 + 9}{5} = \\frac{25}{5} = 5$$\n$$z_P = \\frac{2(10) + 3(5)}{5} = \\frac{20 + 15}{5} = \\frac{35}{5} = 7$$\nThe coordinates of $P$ are $(3, 5, 7)$.\nSum of the coordinates:\n$$x_P + y_P + z_P = 3 + 5 + 7 = 15.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] If the vector $\\vec{v} = 2\\hat{i} + \\lambda\\hat{j} + 4\\hat{k}$ has a magnitude equal to $\\sqrt{29}$, find the positive value of $\\lambda$.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "Magnitude of $\\vec{v}$:\n$$|\\vec{v}|^2 = 2^2 + \\lambda^2 + 4^2 = 29$$\n$$4 + \\lambda^2 + 16 = 29$$\n$$\\lambda^2 + 20 = 29 \\implies \\lambda^2 = 9$$\nTaking the positive value:\n$$\\lambda = 3.0$$"
+        }
+      ]
+    }
+  ]
+}

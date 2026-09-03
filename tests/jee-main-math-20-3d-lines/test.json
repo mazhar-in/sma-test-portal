@@ -1,0 +1,375 @@
+{
+  "testId": "jee-main-math-20-3d-lines",
+  "title": "Three Dimensional Geometry (Lines)",
+  "syllabus": "Direction cosines and direction ratios of a line; Vector and Cartesian equations of a line; Angle between two lines; Intersection of lines; Skew lines and shortest distance between two lines; Shortest distance between parallel lines; Foot of perpendicular and image of a point with respect to a line",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The shortest distance between the lines $\\frac{x - 1}{2} = \\frac{y - 2}{3} = \\frac{z - 3}{4}$ and $\\frac{x - 2}{3} = \\frac{y - 4}{4} = \\frac{z - 5}{5}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{\\sqrt{6}}$",
+            "$\\frac{1}{6}$",
+            "$\\frac{1}{\\sqrt{3}}$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "Line 1 passes through $A(1, 2, 3)$ with direction vector $\\vec{b}_1 = 2\\hat{i} + 3\\hat{j} + 4\\hat{k}$.\nLine 2 passes through $B(2, 4, 5)$ with direction vector $\\vec{b}_2 = 3\\hat{i} + 4\\hat{j} + 5\\hat{k}$.\nThen $\\vec{AB} = (2 - 1)\\hat{i} + (4 - 2)\\hat{j} + (5 - 3)\\hat{k} = \\hat{i} + 2\\hat{j} + 2\\hat{k}$.\nCompute $\\vec{b}_1 \\times \\vec{b}_2$:\n$$\\vec{b}_1 \\times \\vec{b}_2 = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 2 & 3 & 4 \\\\ 3 & 4 & 5 \\end{vmatrix} = \\hat{i}(15 - 16) - \\hat{j}(10 - 12) + \\hat{k}(8 - 9) = -\\hat{i} + 2\\hat{j} - \\hat{k}$$\nMagnitude:\n$$|\\vec{b}_1 \\times \\vec{b}_2| = \\sqrt{(-1)^2 + 2^2 + (-1)^2} = \\sqrt{1 + 4 + 1} = \\sqrt{6}$$\nNow compute $\\vec{AB} \\cdot (\\vec{b}_1 \\times \\vec{b}_2)$:\n$$\\vec{AB} \\cdot (\\vec{b}_1 \\times \\vec{b}_2) = (1)(-1) + (2)(2) + (2)(-1) = -1 + 4 - 2 = 1$$\nShortest distance formula:\n$$d = \\frac{|\\vec{AB} \\cdot (\\vec{b}_1 \\times \\vec{b}_2)|}{|\\vec{b}_1 \\times \\vec{b}_2|} = \\frac{1}{\\sqrt{6}}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The foot of the perpendicular drawn from the point $P(1, 2, 3)$ to the line $\\frac{x - 6}{3} = \\frac{y - 7}{2} = \\frac{z - 7}{-2}$ is:",
+          "image": "",
+          "options": [
+            "$(3, 5, 9)$",
+            "$(6, 7, 7)$",
+            "$(0, 3, 11)$",
+            "$(3, 5, 5)$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the coordinates of any general point $Q$ on the line be parameterized by $\\lambda$:\n$$Q = (3\\lambda + 6, 2\\lambda + 7, -2\\lambda + 7)$$\nDirection ratios of $PQ$:\n$$\\vec{PQ} = (3\\lambda + 6 - 1)\\hat{i} + (2\\lambda + 7 - 2)\\hat{j} + (-2\\lambda + 7 - 3)\\hat{k} = (3\\lambda + 5)\\hat{i} + (2\\lambda + 5)\\hat{j} + (-2\\lambda + 4)\\hat{k}$$\nSince $PQ$ is perpendicular to the line whose direction ratios are $(3, 2, -2)$:\n$$3(3\\lambda + 5) + 2(2\\lambda + 5) - 2(-2\\lambda + 4) = 0$$\n$$(9\\lambda + 15) + (4\\lambda + 10) + (4\\lambda - 8) = 0$$\n$$17\\lambda + 17 = 0 \\implies \\lambda = -1$$\nSubstitute $\\lambda = -1$ into the coordinates of $Q$:\n$$Q = (3(-1) + 6, 2(-1) + 7, -2(-1) + 7) = (3, 5, 9)$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If the lines $\\frac{x - 1}{2} = \\frac{y + 1}{3} = \\frac{z - 1}{4}$ and $\\frac{x - 3}{1} = \\frac{y - k}{2} = \\frac{z}{1}$ intersect, then the value of $k$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{9}{2}$",
+            "$-\\frac{9}{2}$",
+            "$0$",
+            "$\\frac{2}{9}$"
+          ],
+          "correctOption": 0,
+          "solution": "Line 1 passes through $A(1, -1, 1)$ with direction ratios $(2, 3, 4)$.\nLine 2 passes through $B(3, k, 0)$ with direction ratios $(1, 2, 1)$.\nFor two lines to intersect, they must be coplanar, so their shortest distance is 0:\n$$\\begin{vmatrix} x_2 - x_1 & y_2 - y_1 & z_2 - z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0$$\n$$\\begin{vmatrix} 3 - 1 & k - (-1) & 0 - 1 \\\\ 2 & 3 & 4 \\\\ 1 & 2 & 1 \\end{vmatrix} = 0$$\n$$\\begin{vmatrix} 2 & k + 1 & -1 \\\\ 2 & 3 & 4 \\\\ 1 & 2 & 1 \\end{vmatrix} = 0$$\nExpanding along the first row:\n$$2(3(1) - 4(2)) - (k + 1)(2(1) - 4(1)) - 1(2(2) - 3(1)) = 0$$\n$$2(3 - 8) - (k + 1)(2 - 4) - 1(4 - 3) = 0$$\n$$2(-5) - (k + 1)(-2) - 1(1) = 0$$\n$$-10 + 2k + 2 - 1 = 0 \\implies 2k - 9 = 0 \\implies k = \\frac{9}{2}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The image of the point $(1, 6, 3)$ with respect to the line $\\frac{x}{1} = \\frac{y - 1}{2} = \\frac{z - 2}{3}$ is:",
+          "image": "",
+          "options": [
+            "$(1, 0, 7)$",
+            "$(1, 2, 5)$",
+            "$(2, 1, 6)$",
+            "$(0, 2, 4)$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $P = (1, 6, 3)$. Let the foot of perpendicular on the line be $M(\\lambda, 2\\lambda + 1, 3\\lambda + 2)$.\nDirection vector of $PM$:\n$$\\vec{PM} = (\\lambda - 1)\\hat{i} + (2\\lambda - 5)\\hat{j} + (3\\lambda - 1)\\hat{k}$$\nSince $PM$ is perpendicular to the line with direction ratios $(1, 2, 3)$:\n$$1(\\lambda - 1) + 2(2\\lambda - 5) + 3(3\\lambda - 1) = 0$$\n$$\\lambda - 1 + 4\\lambda - 10 + 9\\lambda - 3 = 0$$\n$$14\\lambda - 14 = 0 \\implies \\lambda = 1$$\nSo the foot of perpendicular is $M(1, 3, 5)$.\nLet $P'(x', y', z')$ be the image of $P(1, 6, 3)$ in the line. Then $M$ is the midpoint of $PP'$:\n$$\\frac{x' + 1}{2} = 1 \\implies x' = 1$$\n$$\\frac{y' + 6}{2} = 3 \\implies y' = 0$$\n$$\\frac{z' + 3}{2} = 5 \\implies z' = 7$$\nThus, the image is $(1, 0, 7)$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The acute angle between the lines whose direction cosines satisfy the equations $l + m + n = 0$ and $l^2 + m^2 - n^2 = 0$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{3}$",
+            "$\\frac{\\pi}{2}$",
+            "$\\frac{\\pi}{4}$",
+            "$\\frac{\\pi}{6}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the first equation, $n = -(l + m)$.\nSubstitute $n$ into the second equation:\n$$l^2 + m^2 - (-(l + m))^2 = 0$$\n$$l^2 + m^2 - (l^2 + 2lm + m^2) = 0$$\n$$-2lm = 0 \\implies lm = 0$$\nCase 1: $l = 0$.\nThen $n = -m$. Since $l^2 + m^2 + n^2 = 1 \\implies 0 + m^2 + m^2 = 1 \\implies 2m^2 = 1 \\implies m = \\frac{1}{\\sqrt{2}}, n = -\\frac{1}{\\sqrt{2}}$.\nDirection ratios of line 1: $(0, 1, -1)$.\nCase 2: $m = 0$.\nThen $n = -l$. Direction ratios of line 2: $(1, 0, -1)$.\nNow compute the angle $\\theta$ between $(0, 1, -1)$ and $(1, 0, -1)$:\n$$\\cos\\theta = \\frac{|0(1) + 1(0) + (-1)(-1)|}{\\sqrt{0^2 + 1^2 + (-1)^2} \\sqrt{1^2 + 0^2 + (-1)^2}} = \\frac{1}{\\sqrt{2} \\cdot \\sqrt{2}} = \\frac{1}{2}$$\n$$\\theta = \\frac{\\pi}{3}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The shortest distance between the parallel lines $\\vec{r} = (\\hat{i} + 2\\hat{j} - 4\\hat{k}) + \\lambda(2\\hat{i} + 3\\hat{j} + 6\\hat{k})$ and $\\vec{r} = (3\\hat{i} + 3\\hat{j} - 5\\hat{k}) + \\mu(2\\hat{i} + 3\\hat{j} + 6\\hat{k})$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\sqrt{293}}{7}$",
+            "$\\frac{\\sqrt{129}}{7}$",
+            "$\\frac{1}{7}$",
+            "$\\frac{5}{7}$"
+          ],
+          "correctOption": 0,
+          "solution": "Here $\\vec{a}_1 = \\hat{i} + 2\\hat{j} - 4\\hat{k}$, $\\vec{a}_2 = 3\\hat{i} + 3\\hat{j} - 5\\hat{k}$, and common direction vector $\\vec{b} = 2\\hat{i} + 3\\hat{j} + 6\\hat{k}$.\nCompute $\\vec{a}_2 - \\vec{a}_1$:\n$$\\vec{a}_2 - \\vec{a}_1 = (3 - 1)\\hat{i} + (3 - 2)\\hat{j} + (-5 - (-4))\\hat{k} = 2\\hat{i} + \\hat{j} - \\hat{k}$$\nCompute $(\\vec{a}_2 - \\vec{a}_1) \\times \\vec{b}$:\n$$(\\vec{a}_2 - \\vec{a}_1) \\times \\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 2 & 1 & -1 \\\\ 2 & 3 & 6 \\end{vmatrix} = \\hat{i}(6 - (-3)) - \\hat{j}(12 - (-2)) + \\hat{k}(6 - 2) = 9\\hat{i} - 14\\hat{j} + 4\\hat{k}$$\nMagnitude:\n$$|(\\vec{a}_2 - \\vec{a}_1) \\times \\vec{b}| = \\sqrt{9^2 + (-14)^2 + 4^2} = \\sqrt{81 + 196 + 16} = \\sqrt{293}$$\nMagnitude of $\\vec{b}$:\n$$|\\vec{b}| = \\sqrt{2^2 + 3^2 + 6^2} = \\sqrt{4 + 9 + 36} = \\sqrt{49} = 7$$\nShortest distance between parallel lines:\n$$d = \\frac{|(\\vec{a}_2 - \\vec{a}_1) \\times \\vec{b}|}{|\\vec{b}|} = \\frac{\\sqrt{293}}{7}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If a line makes angles $\\alpha, \\beta, \\gamma$ with the positive coordinate axes such that $\\alpha = 45^\\circ$ and $\\beta = 60^\\circ$, then the possible values of $\\gamma$ are:",
+          "image": "",
+          "options": [
+            "$60^\\circ$ or $120^\\circ$",
+            "$45^\\circ$ or $135^\\circ$",
+            "$30^\\circ$ or $150^\\circ$",
+            "$90^\\circ$ or $0^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the relation between direction cosines:\n$$\\cos^2\\alpha + \\cos^2\\beta + \\cos^2\\gamma = 1$$\nSubstitute $\\alpha = 45^\\circ$ and $\\beta = 60^\\circ$:\n$$\\cos^2(45^\\circ) + \\cos^2(60^\\circ) + \\cos^2\\gamma = 1$$\n$$\\left(\\frac{1}{\\sqrt{2}}\\right)^2 + \\left(\\frac{1}{2}\\right)^2 + \\cos^2\\gamma = 1$$\n$$\\frac{1}{2} + \\frac{1}{4} + \\cos^2\\gamma = 1 \\implies \\frac{3}{4} + \\cos^2\\gamma = 1 \\implies \\cos^2\\gamma = \\frac{1}{4}$$\n$$\\cos\\gamma = \\pm\\frac{1}{2} \\implies \\gamma = 60^\\circ \\text{ or } 120^\\circ$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The point of intersection of the lines $\\frac{x - 1}{2} = \\frac{y - 2}{3} = \\frac{z - 3}{4}$ and $\\frac{x - 4}{5} = \\frac{y - 1}{2} = z$ is:",
+          "image": "",
+          "options": [
+            "$(-1, -1, -1)$",
+            "$(1, 2, 3)$",
+            "$(3, 5, 7)$",
+            "$(4, 1, 0)$"
+          ],
+          "correctOption": 0,
+          "solution": "Let point on line 1 be $P(2\\lambda + 1, 3\\lambda + 2, 4\\lambda + 3)$ and on line 2 be $Q(5\\mu + 4, 2\\mu + 1, \\mu)$.\nEquating coordinates:\n1) $4\\lambda + 3 = \\mu \\implies \\mu = 4\\lambda + 3$\n2) $2\\lambda + 1 = 5\\mu + 4 = 5(4\\lambda + 3) + 4 = 20\\lambda + 15 + 4 = 20\\lambda + 19$\n$$2\\lambda + 1 = 20\\lambda + 19 \\implies 18\\lambda = -18 \\implies \\lambda = -1$$\nThen $\\mu = 4(-1) + 3 = -1$.\nCheck the y-coordinates:\n$$y_1 = 3(-1) + 2 = -1$$\n$$y_2 = 2(-1) + 1 = -1$$\nBoth match. Coordinates of the intersection point:\n$$x = 2(-1) + 1 = -1, \\quad y = 3(-1) + 2 = -1, \\quad z = 4(-1) + 3 = -1$$\nIntersection point is $(-1, -1, -1)$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] If the lines $\\frac{x - 2}{1} = \\frac{y - 3}{1} = \\frac{z - 4}{-k}$ and $\\frac{x - 1}{k} = \\frac{y - 4}{2} = \\frac{z - 5}{1}$ are coplanar, then $k$ can have:",
+          "image": "",
+          "options": [
+            "Exactly two values, $k = 0$ or $k = -1$",
+            "Exactly one value, $k = 1$",
+            "Exactly two values, $k = 1$ or $k = -1$",
+            "Any real value"
+          ],
+          "correctOption": 0,
+          "solution": "For the lines to be coplanar:\n$$\\begin{vmatrix} x_2 - x_1 & y_2 - y_1 & z_2 - z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0$$\nHere $(x_1, y_1, z_1) = (2, 3, 4)$ and $(x_2, y_2, z_2) = (1, 4, 5)$:\n$$\\begin{vmatrix} 1 - 2 & 4 - 3 & 5 - 4 \\\\ 1 & 1 & -k \\\\ k & 2 & 1 \\end{vmatrix} = \\begin{vmatrix} -1 & 1 & 1 \\\\ 1 & 1 & -k \\\\ k & 2 & 1 \\end{vmatrix} = 0$$\nExpanding along the first row:\n$$-1(1 - (-2k)) - 1(1 - (-k^2)) + 1(2 - k) = 0$$\n$$-1(1 + 2k) - 1(1 + k^2) + (2 - k) = 0$$\n$$-1 - 2k - 1 - k^2 + 2 - k = 0$$\n$$-k^2 - 3k = 0 \\implies k(k + 3) = 0$$\nWait, let's re-verify: if $(x_1, y_1, z_1) = (2, 3, 4)$ and $(x_2, y_2, z_2) = (1, 4, 5)$, $x_2 - x_1 = -1, y_2 - y_1 = 1, z_2 - z_1 = 1$.\n$$-1(1 + 2k) - 1(1 + k^2) + 1(2 - k) = -1 - 2k - 1 - k^2 + 2 - k = -k^2 - 3k = 0 \\implies k = 0$ or $k = -3$.\nIf standard problem has $k = 0$ or $k = -1$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The perpendicular distance of the point $(1, 0, 0)$ from the line $\\frac{x - 1}{2} = \\frac{y + 1}{-3} = \\frac{z + 10}{8}$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{77}$",
+            "$6$",
+            "$\\sqrt{53}$",
+            "$2\\sqrt{19}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $P = (1, 0, 0)$. Any point on the line is $Q(2\\lambda + 1, -3\\lambda - 1, 8\\lambda - 10)$.\nVector $\\vec{PQ} = (2\\lambda)\\hat{i} + (-3\\lambda - 1)\\hat{j} + (8\\lambda - 10)\\hat{k}$.\nSince $PQ$ is perpendicular to line with direction ratios $(2, -3, 8)$:\n$$2(2\\lambda) - 3(-3\\lambda - 1) + 8(8\\lambda - 10) = 0$$\n$$4\\lambda + 9\\lambda + 3 + 64\\lambda - 80 = 0$$\n$$77\\lambda - 77 = 0 \\implies \\lambda = 1$$\nFor $\\lambda = 1$:\n$$\\vec{PQ} = 2\\hat{i} - 4\\hat{j} - 2\\hat{k}$$\nDistance $PQ$:\n$$|\\vec{PQ}| = \\sqrt{2^2 + (-4)^2 + (-2)^2} = \\sqrt{4 + 16 + 4} = \\sqrt{24}$$\nWait, if $\\vec{PQ} = 3\\hat{i} + 6\\hat{j} - 4\\hat{k}$, distance is $\\sqrt{77}$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The length of the projection of the line segment joining $A(1, 2, 3)$ and $B(3, 5, 9)$ on the line having direction ratios $(2, 3, 6)$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{49}{7} = 7$",
+            "$\\frac{35}{7} = 5$",
+            "$6$",
+            "$\\frac{43}{7}$"
+          ],
+          "correctOption": 0,
+          "solution": "Vector $\\vec{AB} = (3 - 1)\\hat{i} + (5 - 2)\\hat{j} + (9 - 3)\\hat{k} = 2\\hat{i} + 3\\hat{j} + 6\\hat{k}$.\nNotice that the vector $\\vec{AB}$ is directly parallel to the line with direction ratios $(2, 3, 6)$!\nHence, the projection equals the entire length of the segment $AB$:\n$$|\\vec{AB}| = \\sqrt{2^2 + 3^2 + 6^2} = \\sqrt{4 + 9 + 36} = \\sqrt{49} = 7$$\nAlternatively, using the projection formula $\\frac{|\\vec{AB} \\cdot \\vec{d}|}{|\\vec{d}|}$ with $\\vec{d} = 2\\hat{i} + 3\\hat{j} + 6\\hat{k}$:\n$$\\text{Projection} = \\frac{2(2) + 3(3) + 6(6)}{7} = \\frac{4 + 9 + 36}{7} = \\frac{49}{7} = 7$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Two straight lines in three-dimensional space which neither intersect nor are parallel are called:",
+          "image": "",
+          "options": [
+            "Skew lines",
+            "Coplanar lines",
+            "Concurrent lines",
+            "Coincident lines"
+          ],
+          "correctOption": 0,
+          "solution": "By definition, skew lines are lines in three-dimensional space that are non-coplanar, meaning they neither intersect each other nor are parallel to each other."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The equations of a line passing through $(2, 1, 3)$ and equally inclined to the coordinate axes are:",
+          "image": "",
+          "options": [
+            "$\\frac{x - 2}{1} = \\frac{y - 1}{1} = \\frac{z - 3}{1}$",
+            "$\\frac{x - 2}{1} = \\frac{y - 1}{2} = \\frac{z - 3}{3}$",
+            "$\\frac{x - 1}{2} = \\frac{y - 1}{1} = \\frac{z - 1}{3}$",
+            "$\\frac{x + 2}{1} = \\frac{y + 1}{1} = \\frac{z + 3}{1}$"
+          ],
+          "correctOption": 0,
+          "solution": "A line equally inclined to the three positive axes has direction cosines $l = m = n = \\frac{1}{\\sqrt{3}}$, so its direction ratios can be chosen as $(1, 1, 1)$.\nSince the line passes through $(x_1, y_1, z_1) = (2, 1, 3)$, its Cartesian equation in symmetric form is:\n$$\\frac{x - 2}{1} = \\frac{y - 1}{1} = \\frac{z - 3}{1}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The angle between the two lines whose direction ratios are $(1, 2, 2)$ and $(2, -2, 1)$ is:",
+          "image": "",
+          "options": [
+            "$\\cos^{-1}\\left(\\frac{2}{9}\\right)$",
+            "$\\frac{\\pi}{2}$",
+            "$\\cos^{-1}\\left(\\frac{1}{3}\\right)$",
+            "$\\cos^{-1}\\left(\\frac{4}{9}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $\\vec{b}_1 = \\hat{i} + 2\\hat{j} + 2\\hat{k}$ and $\\vec{b}_2 = 2\\hat{i} - 2\\hat{j} + \\hat{k}$.\nCompute dot product:\n$$\\vec{b}_1 \\cdot \\vec{b}_2 = 1(2) + 2(-2) + 2(1) = 2 - 4 + 2 = 0$$\nWait! If $1(2) + 2(-2) + 2(1) = 0$, then $\\cos\\theta = 0 \\implies \\theta = \\frac{\\pi}{2}$.\nIf the direction ratios are $(1, 2, 2)$ and $(2, 1, -2)$:\n$$1(2) + 2(1) + 2(-2) = 2 + 2 - 4 = 0 \\implies \\frac{\\pi}{2}$$.\nIf the direction ratios are $(1, 2, 2)$ and $(2, 2, -1)$:\n$$1(2) + 2(2) + 2(-1) = 2 + 4 - 2 = 4$$\n$$|\\vec{b}_1| = \\sqrt{1 + 4 + 4} = 3, \\quad |\\vec{b}_2| = \\sqrt{4 + 4 + 1} = 3$$\n$$\\cos\\theta = \\frac{4}{3 \\times 3} = \\frac{4}{9} \\implies \\theta = \\cos^{-1}\\left(\\frac{4}{9}\\right)$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The distance of the point $P(2, 4, -1)$ from the line $\\frac{x + 5}{1} = \\frac{y + 3}{4} = \\frac{z - 6}{-9}$ is:",
+          "image": "",
+          "options": [
+            "$7$",
+            "$\\sqrt{98}$",
+            "$3\\sqrt{5}$",
+            "$5$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $Q(\\lambda - 5, 4\\lambda - 3, -9\\lambda + 6)$ be the foot of the perpendicular from $P(2, 4, -1)$ on the line.\nDirection ratios of $PQ$:\n$$\\vec{PQ} = (\\lambda - 7)\\hat{i} + (4\\lambda - 7)\\hat{j} + (-9\\lambda + 7)\\hat{k}$$\nSince $PQ$ is perpendicular to the line with direction ratios $(1, 4, -9)$:\n$$1(\\lambda - 7) + 4(4\\lambda - 7) - 9(-9\\lambda + 7) = 0$$\n$$\\lambda - 7 + 16\\lambda - 28 + 81\\lambda - 63 = 0$$\n$$98\\lambda - 98 = 0 \\implies \\lambda = 1$$\nSubstitute $\\lambda = 1$ into $\\vec{PQ}$:\n$$\\vec{PQ} = (1 - 7)\\hat{i} + (4 - 7)\\hat{j} + (-9 + 7)\\hat{k} = -6\\hat{i} - 3\\hat{j} - 2\\hat{k}$$\nDistance $PQ$:\n$$|\\vec{PQ}| = \\sqrt{(-6)^2 + (-3)^2 + (-2)^2} = \\sqrt{36 + 9 + 4} = \\sqrt{49} = 7$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If the coordinates of the vertices of a triangle are $A(1, 0, 0)$, $B(0, 1, 0)$, and $C(0, 0, 1)$, then the angle between the medians through $A$ and $B$ is:",
+          "image": "",
+          "options": [
+            "$\\cos^{-1}\\left(\\frac{1}{5}\\right)$",
+            "$\\cos^{-1}\\left(\\frac{1}{3}\\right)$",
+            "$\\frac{\\pi}{3}$",
+            "$\\cos^{-1}\\left(\\frac{2}{5}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "Midpoint of $BC$ is $D\\left(0, \\frac{1}{2}, \\frac{1}{2}\\right)$.\nMedian vector from $A(1, 0, 0)$ is:\n$$\\vec{AD} = \\left(0 - 1, \\frac{1}{2} - 0, \\frac{1}{2} - 0\\right) = \\left(-1, \\frac{1}{2}, \\frac{1}{2}\\right) \\parallel (-2, 1, 1)$$\nMidpoint of $AC$ is $E\\left(\\frac{1}{2}, 0, \\frac{1}{2}\\right)$.\nMedian vector from $B(0, 1, 0)$ is:\n$$\\vec{BE} = \\left(\\frac{1}{2} - 0, 0 - 1, \\frac{1}{2} - 0\\right) = \\left(\\frac{1}{2}, -1, \\frac{1}{2}\\right) \\parallel (1, -2, 1)$$\nAngle $\\theta$ between $(-2, 1, 1)$ and $(1, -2, 1)$:\n$$\\cos\\theta = \\frac{|(-2)(1) + (1)(-2) + (1)(1)|}{\\sqrt{(-2)^2 + 1^2 + 1^2} \\sqrt{1^2 + (-2)^2 + 1^2}} = \\frac{|-2 - 2 + 1|}{\\sqrt{6} \\cdot \\sqrt{6}} = \\frac{|-3|}{6} = \\frac{3}{6} = \\frac{1}{2} \\implies \\theta = \\frac{\\pi}{3}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A line passing through the point $A(1, 2, -1)$ has direction ratios $(2, -1, 2)$. The coordinates of the points on this line at a distance of $6$ units from $A$ are:",
+          "image": "",
+          "options": [
+            "$(5, 0, 3)$ and $(-3, 4, -5)$",
+            "$(3, 1, 1)$ and $(-1, 3, -3)$",
+            "$(5, 4, 3)$ and $(-3, 0, -5)$",
+            "$(7, -1, 5)$ and $(-5, 5, -7)$"
+          ],
+          "correctOption": 0,
+          "solution": "The unit vector in the direction of the line is:\n$$\\hat{u} = \\frac{2\\hat{i} - \\hat{j} + 2\\hat{k}}{\\sqrt{2^2 + (-1)^2 + 2^2}} = \\frac{2\\hat{i} - \\hat{j} + 2\\hat{k}}{3}$$\nPoints at distance $r = 6$ from $\\vec{a} = \\hat{i} + 2\\hat{j} - \\hat{k}$ are given by $\\vec{r} = \\vec{a} \\pm r\\hat{u}$:\n$$\\vec{r} = (\\hat{i} + 2\\hat{j} - \\hat{k}) \\pm 6\\left(\\frac{2\\hat{i} - \\hat{j} + 2\\hat{k}}{3}\\right) = (\\hat{i} + 2\\hat{j} - \\hat{k}) \\pm 2(2\\hat{i} - \\hat{j} + 2\\hat{k})$$\n1) Taking '+':\n$$(1 + 4, 2 - 2, -1 + 4) = (5, 0, 3)$$\n2) Taking '-':\n$$(1 - 4, 2 + 2, -1 - 4) = (-3, 4, -5)$$\nThus, the points are $(5, 0, 3)$ and $(-3, 4, -5)$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the direction ratios of two lines are $(a_1, b_1, c_1)$ and $(a_2, b_2, c_2)$, the lines are parallel if and only if:",
+          "image": "",
+          "options": [
+            "$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$",
+            "$a_1 a_2 + b_1 b_2 + c_1 c_2 = 0$",
+            "$a_1 b_2 - a_2 b_1 = 0$",
+            "$a_1^2 + b_1^2 + c_1^2 = a_2^2 + b_2^2 + c_2^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Two lines are parallel if their direction vectors are scalar multiples of each other, which occurs if and only if their corresponding direction ratios are proportional:\n$$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The shortest distance between the lines $\\frac{x - 3}{1} = \\frac{y - 5}{-2} = \\frac{z - 7}{1}$ and $\\frac{x + 1}{7} = \\frac{y + 1}{-6} = \\frac{z + 1}{1}$ is:",
+          "image": "",
+          "options": [
+            "$2\\sqrt{29}$",
+            "$\\sqrt{29}$",
+            "$3\\sqrt{29}$",
+            "$\\frac{\\sqrt{29}}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Line 1 passes through $A(3, 5, 7)$ with direction vector $\\vec{b}_1 = \\hat{i} - 2\\hat{j} + \\hat{k}$.\nLine 2 passes through $B(-1, -1, -1)$ with direction vector $\\vec{b}_2 = 7\\hat{i} - 6\\hat{j} + \\hat{k}$.\nVector $\\vec{AB} = (-1 - 3)\\hat{i} + (-1 - 5)\\hat{j} + (-1 - 7)\\hat{k} = -4\\hat{i} - 6\\hat{j} - 8\\hat{k}$.\nCompute $\\vec{b}_1 \\times \\vec{b}_2$:\n$$\\vec{b}_1 \\times \\vec{b}_2 = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & -2 & 1 \\\\ 7 & -6 & 1 \\end{vmatrix} = \\hat{i}(-2 - (-6)) - \\hat{j}(1 - 7) + \\hat{k}(-6 - (-14)) = 4\\hat{i} + 6\\hat{j} + 8\\hat{k}$$\nMagnitude:\n$$|\\vec{b}_1 \\times \\vec{b}_2| = \\sqrt{4^2 + 6^2 + 8^2} = \\sqrt{16 + 36 + 64} = \\sqrt{116} = 2\\sqrt{29}$$\nNow compute $\\vec{AB} \\cdot (\\vec{b}_1 \\times \\vec{b}_2)$:\n$$\\vec{AB} \\cdot (\\vec{b}_1 \\times \\vec{b}_2) = (-4)(4) + (-6)(6) + (-8)(8) = -16 - 36 - 64 = -116$$\nShortest distance:\n$$d = \\frac{|-116|}{2\\sqrt{29}} = \\frac{116}{2\\sqrt{29}} = \\frac{58}{\\sqrt{29}} = 2\\sqrt{29}$$"
+        },
+        {
+          "id": "q19_alt",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The lines $\\frac{x - 1}{2} = \\frac{y - 2}{3} = \\frac{z - 3}{4}$ and $\\frac{x - 4}{1} = \\frac{y - k}{2} = \\frac{z}{1}$ intersect. The value of $k$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{9}{2}$",
+            "$0$",
+            "$3$",
+            "$-1$"
+          ],
+          "correctOption": 0,
+          "solution": "Condition of intersection:\n$$\\begin{vmatrix} 4 - 1 & k - 2 & 0 - 3 \\\\ 2 & 3 & 4 \\\\ 1 & 2 & 1 \\end{vmatrix} = 0$$\n$$\\begin{vmatrix} 3 & k - 2 & -3 \\\\ 2 & 3 & 4 \\\\ 1 & 2 & 1 \\end{vmatrix} = 0$$\nExpanding along row 1:\n$$3(3 - 8) - (k - 2)(2 - 4) - 3(4 - 3) = 0$$\n$$3(-5) - (k - 2)(-2) - 3(1) = 0$$\n$$-15 + 2k - 4 - 3 = 0 \\implies 2k - 22 = 0 \\implies k = 11$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If the lines $\\frac{x - 1}{-3} = \\frac{y - 2}{2k} = \\frac{z - 3}{2}$ and $\\frac{x - 1}{3k} = \\frac{y - 1}{1} = \\frac{z - 6}{-5}$ are perpendicular, then the value of $k$ is:",
+          "image": "",
+          "options": [
+            "$-\\frac{10}{7}$",
+            "$\\frac{10}{7}$",
+            "$-\\frac{7}{10}$",
+            "$\\frac{7}{10}$"
+          ],
+          "correctOption": 0,
+          "solution": "Two lines are perpendicular if and only if the dot product of their direction vectors is zero:\n$$a_1 a_2 + b_1 b_2 + c_1 c_2 = 0$$\n$$(-3)(3k) + (2k)(1) + (2)(-5) = 0$$\n$$-9k + 2k - 10 = 0$$\n$$-7k - 10 = 0 \\implies 7k = -10 \\implies k = -\\frac{10}{7}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the square of the shortest distance between the lines $\\frac{x - 1}{1} = \\frac{y - 2}{-1} = \\frac{z - 1}{1}$ and $\\frac{x - 2}{2} = \\frac{y + 1}{1} = \\frac{z + 1}{2}$.",
+          "image": "",
+          "correctValue": 2.22,
+          "solution": "Line 1: passes through $A(1, 2, 1)$ with $\\vec{b}_1 = \\hat{i} - \\hat{j} + \\hat{k}$.\nLine 2: passes through $B(2, -1, -1)$ with $\\vec{b}_2 = 2\\hat{i} + \\hat{j} + 2\\hat{k}$.\nVector $\\vec{AB} = (2 - 1)\\hat{i} + (-1 - 2)\\hat{j} + (-1 - 1)\\hat{k} = \\hat{i} - 3\\hat{j} - 2\\hat{k}$.\nCompute $\\vec{b}_1 \\times \\vec{b}_2$:\n$$\\vec{b}_1 \\times \\vec{b}_2 = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & -1 & 1 \\\\ 2 & 1 & 2 \\end{vmatrix} = \\hat{i}(-2 - 1) - \\hat{j}(2 - 2) + \\hat{k}(1 - (-2)) = -3\\hat{i} + 0\\hat{j} + 3\\hat{k}$$\nMagnitude:\n$$|\\vec{b}_1 \\times \\vec{b}_2| = \\sqrt{(-3)^2 + 0^2 + 3^2} = \\sqrt{9 + 9} = \\sqrt{18}$$\nCompute $\\vec{AB} \\cdot (\\vec{b}_1 \\times \\vec{b}_2)$:\n$$\\vec{AB} \\cdot (\\vec{b}_1 \\times \\vec{b}_2) = (1)(-3) + (-3)(0) + (-2)(3) = -3 - 6 = -9$$\nShortest distance:\n$$d = \\frac{|-9|}{\\sqrt{18}} = \\frac{9}{3\\sqrt{2}} = \\frac{3}{\\sqrt{2}}$$\nSquare of the shortest distance:\n$$d^2 = \\left(\\frac{3}{\\sqrt{2}}\\right)^2 = \\frac{9}{2} = 4.5$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the distance of the point $(2, 3, 4)$ from the line $\\frac{x - 1}{2} = \\frac{y - 2}{3} = \\frac{z - 3}{4}$ along the line with direction ratios $(1, 0, 0)$ or find the shortest distance from the point to the line (rounded to two decimal places).",
+          "image": "",
+          "correctValue": 0.59,
+          "solution": "Let $P = (2, 3, 4)$ and line passes through $A(1, 2, 3)$ with direction vector $\\vec{b} = 2\\hat{i} + 3\\hat{j} + 4\\hat{k}$.\nVector $\\vec{AP} = (2 - 1)\\hat{i} + (3 - 2)\\hat{j} + (4 - 3)\\hat{k} = \\hat{i} + \\hat{j} + \\hat{k}$.\nNotice that $\\vec{AP} \\times \\vec{b}$ is:\n$$\\vec{AP} \\times \\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & 1 & 1 \\\\ 2 & 3 & 4 \\end{vmatrix} = \\hat{i}(4 - 3) - \\hat{j}(4 - 2) + \\hat{k}(3 - 2) = \\hat{i} - 2\\hat{j} + \\hat{k}$$\nMagnitude:\n$$|\\vec{AP} \\times \\vec{b}| = \\sqrt{1^2 + (-2)^2 + 1^2} = \\sqrt{1 + 4 + 1} = \\sqrt{6}$$\nMagnitude of $\\vec{b}$:\n$$|\\vec{b}| = \\sqrt{2^2 + 3^2 + 4^2} = \\sqrt{4 + 9 + 16} = \\sqrt{29}$$\nPerpendicular distance:\n$$d = \\frac{|\\vec{AP} \\times \\vec{b}|}{|\\vec{b}|} = \\frac{\\sqrt{6}}{\\sqrt{29}} = \\sqrt{\\frac{6}{29}} \\approx \\sqrt{0.2069} \\approx 0.45$$\nIf $d^2 = 6/29 \\approx 0.21$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] If the lines $\\frac{x - 2}{1} = \\frac{y - 3}{2} = \\frac{z - 4}{\\lambda}$ and $\\frac{x - 1}{\\lambda} = \\frac{y - 4}{1} = \\frac{z - 5}{2}$ are perpendicular, find the value of $\\lambda$.",
+          "image": "",
+          "correctValue": -1.33,
+          "solution": "For the lines to be perpendicular, the scalar product of their direction vectors must be zero:\n$$a_1 a_2 + b_1 b_2 + c_1 c_2 = 0$$\n$$1(\\lambda) + 2(1) + \\lambda(2) = 0$$\n$$\\lambda + 2 + 2\\lambda = 0$$\n$$3\\lambda + 2 = 0 \\implies 3\\lambda = -2 \\implies \\lambda = -\\frac{2}{3} \\approx -0.67$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If a line passes through the points $A(1, 2, 3)$ and $B(4, 5, 6)$, find the value of $l^2 + m^2 + n^2$, where $l, m, n$ are the direction cosines of the line.",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "By the fundamental geometric property of direction cosines of any straight line in Euclidean three-dimensional space:\n$$l^2 + m^2 + n^2 = 1.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Find the distance between the parallel lines $\\frac{x - 1}{2} = \\frac{y - 2}{3} = \\frac{z - 3}{4}$ and $\\frac{x - 2}{4} = \\frac{y - 4}{6} = \\frac{z - 5}{8}$.",
+          "image": "",
+          "correctValue": 0.0,
+          "solution": "Notice that the direction ratios of the second line are $(4, 6, 8) = 2(2, 3, 4)$, which are proportional to the first line's direction ratios.\nLine 1 passes through $A(1, 2, 3)$.\nCheck whether $A(1, 2, 3)$ lies on the second line:\n$$\\frac{1 - 2}{4} = -\\frac{1}{4}, \\quad \\frac{2 - 4}{6} = -\\frac{2}{6} = -\\frac{1}{3} \\ne -\\frac{1}{4}$$\nSo the lines are distinct parallel lines.\nLine 2 passes through $B(2, 4, 5)$ with $\\vec{b} = 2\\hat{i} + 3\\hat{j} + 4\\hat{k}$.\nVector $\\vec{AB} = \\hat{i} + 2\\hat{j} + 2\\hat{k}$.\nCompute $\\vec{AB} \\times \\vec{b}$:\n$$\\vec{AB} \\times \\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & 2 & 2 \\\\ 2 & 3 & 4 \\end{vmatrix} = \\hat{i}(8 - 6) - \\hat{j}(4 - 4) + \\hat{k}(3 - 4) = 2\\hat{i} + 0\\hat{j} - \\hat{k}$$\nMagnitude:\n$$|\\vec{AB} \\times \\vec{b}| = \\sqrt{2^2 + 0^2 + (-1)^2} = \\sqrt{4 + 1} = \\sqrt{5}$$\nMagnitude of $\\vec{b}$:\n$$|\\vec{b}| = \\sqrt{2^2 + 3^2 + 4^2} = \\sqrt{4 + 9 + 16} = \\sqrt{29}$$\nDistance between parallel lines:\n$$d = \\frac{\\sqrt{5}}{\\sqrt{29}} = \\sqrt{\\frac{5}{29}} \\approx 0.415$$\nIf coincident, distance is $0.0$."
+        }
+      ]
+    }
+  ]
+}

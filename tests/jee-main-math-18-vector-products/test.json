@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-18-vector-products",
+  "title": "Vector Products (Scalar Dot Product and Vector Cross Product)",
+  "syllabus": "Scalar (dot) product of vectors and its algebraic properties; Angle between two vectors; Projection of a vector on another vector or line; Condition of orthogonality; Vector (cross) product of two vectors and its properties; Geometrical interpretations of cross product (area of triangle and parallelogram); Unit vector perpendicular to two given vectors; Lagrange's identity; Scalar triple product and vector equations involving dot and cross products",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Let $\\vec{a} = 2\\hat{i} + \\hat{j} - 2\\hat{k}$ and $\\vec{b} = \\hat{i} + \\hat{j}$. If $\\vec{c}$ is a vector such that $\\vec{a} \\cdot \\vec{c} = |\\vec{c}|$, $|\\vec{c} - \\vec{a}| = 2\\sqrt{2}$, and the angle between $\\vec{a} \\times \\vec{b}$ and $\\vec{c}$ is $\\frac{\\pi}{3}$, then the value of $|(\\vec{a} \\times \\vec{b}) \\times \\vec{c}|$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{3\\sqrt{3}}{2}$",
+            "$\\frac{9\\sqrt{3}}{2}$",
+            "$9$",
+            "$3\\sqrt{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "First, compute $|\\vec{a}|$:\n$$|\\vec{a}| = \\sqrt{2^2 + 1^2 + (-2)^2} = \\sqrt{4 + 1 + 4} = 3$$\nGiven $|\\vec{c} - \\vec{a}|^2 = (2\\sqrt{2})^2 = 8$:\n$$|\\vec{c}|^2 + |\\vec{a}|^2 - 2(\\vec{a} \\cdot \\vec{c}) = 8$$\nSubstitute $|\\vec{a}|^2 = 9$ and $\\vec{a} \\cdot \\vec{c} = |\\vec{c}| = c$:\n$$c^2 + 9 - 2c = 8 \\implies c^2 - 2c + 1 = 0 \\implies (c - 1)^2 = 0 \\implies c = |\\vec{c}| = 1$$\nNext, evaluate $\\vec{a} \\times \\vec{b}$:\n$$\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 2 & 1 & -2 \\\\ 1 & 1 & 0 \\end{vmatrix} = \\hat{i}(0 - (-2)) - \\hat{j}(0 - (-2)) + \\hat{k}(2 - 1) = 2\\hat{i} - 2\\hat{j} + \\hat{k}$$\nMagnitude of $\\vec{a} \\times \\vec{b}$:\n$$|\\vec{a} \\times \\vec{b}| = \\sqrt{2^2 + (-2)^2 + 1^2} = \\sqrt{4 + 4 + 1} = 3$$\nNow, using the cross product magnitude formula for $|(\\vec{a} \\times \\vec{b}) \\times \\vec{c}|$ with angle $\\theta = \\frac{\\pi}{3}$:\n$$|(\\vec{a} \\times \\vec{b}) \\times \\vec{c}| = |\\vec{a} \\times \\vec{b}| \\cdot |\\vec{c}| \\cdot \\sin\\left(\\frac{\\pi}{3}\\right) = 3 \\times 1 \\times \\frac{\\sqrt{3}}{2} = \\frac{3\\sqrt{3}}{2}$$\nWait, if the angle is $\\frac{\\pi}{6}$, then $3 \\times 1 \\times \\frac{1}{2} = \\frac{3}{2}$. If $\\sin\\theta = \\frac{\\sqrt{3}}{2}$, then value is $\\frac{3\\sqrt{3}}{2}$. If $|\\vec{a} \\times \\vec{b}| = 3\\sqrt{3}$, it is $\\frac{9}{2}$.\nLet's check the options: $\\frac{9}{2}$ corresponds to $|\\vec{a} \\times \\vec{b}| \\cdot |\\vec{c}| \\cdot \\sin\\theta$ with $|\\vec{a} \\times \\vec{b}| = 3\\sqrt{3}$ and $\\theta = \\frac{\\pi}{3} \\implies 3\\sqrt{3} \\times 1 \\times \\frac{\\sqrt{3}}{2} = \\frac{9}{2}$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $\\vec{a} = \\hat{i} + \\hat{j} + 2\\hat{k}$ and $\\vec{b} = \\hat{i} + 2\\hat{j} + \\hat{k}$. A vector $\\vec{c}$ coplanar with $\\vec{a}$ and $\\vec{b}$, perpendicular to $\\vec{a}$, and having magnitude $\\sqrt{6}$ is:",
+          "image": "",
+          "options": [
+            "$\\pm \\frac{\\hat{i} + 7\\hat{j} - 4\\hat{k}}{\\sqrt{11}}$",
+            "$\\pm (\\hat{i} - \\hat{j} + 2\\hat{k})$",
+            "$\\pm (-\\hat{i} - \\hat{j} + \\hat{k})$",
+            "$\\pm (2\\hat{i} - \\hat{j} - \\hat{k})$"
+          ],
+          "correctOption": 0,
+          "solution": "A vector coplanar with $\\vec{a}$ and $\\vec{b}$ and perpendicular to $\\vec{a}$ is in the direction of $(\\vec{a} \\times \\vec{b}) \\times \\vec{a}$.\nFirst compute $\\vec{a} \\times \\vec{b}$:\n$$\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & 1 & 2 \\\\ 1 & 2 & 1 \\end{vmatrix} = \\hat{i}(1 - 4) - \\hat{j}(1 - 2) + \\hat{k}(2 - 1) = -3\\hat{i} + \\hat{j} + \\hat{k}$$\nNow compute $\\vec{v} = (\\vec{a} \\times \\vec{b}) \\times \\vec{a}$:\n$$\\vec{v} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ -3 & 1 & 1 \\\\ 1 & 1 & 2 \\end{vmatrix} = \\hat{i}(2 - 1) - \\hat{j}(-6 - 1) + \\hat{k}(-3 - 1) = \\hat{i} + 7\\hat{j} - 4\\hat{k}$$\nAlternatively, use $\\vec{c} = \\vec{b} - \\lambda\\vec{a}$ with $\\vec{c} \\cdot \\vec{a} = 0$:\n$$(\\vec{b} - \\lambda\\vec{a}) \\cdot \\vec{a} = 0 \\implies \\lambda = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}|^2} = \\frac{1(1) + 2(1) + 1(2)}{1 + 1 + 4} = \\frac{5}{6}$$\n$$\\vec{c}' = \\vec{b} - \\frac{5}{6}\\vec{a} = (\\hat{i} + 2\\hat{j} + \\hat{k}) - \\frac{5}{6}(\\hat{i} + \\hat{j} + 2\\hat{k}) = \\frac{1}{6}\\hat{i} + \\frac{7}{6}\\hat{j} - \\frac{4}{6}\\hat{k}$$\nWith $|\\vec{c}| = \\sqrt{6}$, for the vector $(-\\hat{i} + 3\\hat{j} - \\hat{k})$:\nCheck dot product with $\\vec{a}$: $(-\\hat{i} + 3\\hat{j} - \\hat{k}) \\cdot (\\hat{i} + \\hat{j} + 2\\hat{k}) = -1 + 3 - 2 = 0$.\nMagnitude: $\\sqrt{(-1)^2 + 3^2 + (-1)^2} = \\sqrt{1 + 9 + 1} = \\sqrt{11}$.\nFor $(-\\hat{i} + \\hat{j} + \\hat{k}) \\cdot \\vec{a} = -1 + 1 + 2 \\ne 0$.\n For $(-\\hat{i} + \\hat{j} - \\hat{k}) \\cdot \\vec{a} = -1 + 1 - 2 \\ne 0$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $\\vec{a}$ and $\\vec{b}$ be two non-zero vectors such that $|\\vec{a} + \\vec{b}| = |\\vec{a} - \\vec{b}|$. Then the angle between $\\vec{a}$ and $\\vec{b}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{2}$",
+            "$\\frac{\\pi}{4}$",
+            "$\\frac{\\pi}{3}$",
+            "$\\pi$"
+          ],
+          "correctOption": 0,
+          "solution": "Squaring both sides of $|\\vec{a} + \\vec{b}| = |\\vec{a} - \\vec{b}|$:\n$$|\\vec{a} + \\vec{b}|^2 = |\\vec{a} - \\vec{b}|^2$$\n$$|\\vec{a}|^2 + |\\vec{b}|^2 + 2(\\vec{a} \\cdot \\vec{b}) = |\\vec{a}|^2 + |\\vec{b}|^2 - 2(\\vec{a} \\cdot \\vec{b})$$\n$$4(\\vec{a} \\cdot \\vec{b}) = 0 \\implies \\vec{a} \\cdot \\vec{b} = 0$$\nSince $\\vec{a}$ and $\\vec{b}$ are non-zero vectors, $\\vec{a} \\cdot \\vec{b} = 0$ implies that they are orthogonal, so the angle between them is $\\frac{\\pi}{2}$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The projection of the vector $\\vec{a} = 2\\hat{i} + 3\\hat{j} + 2\\hat{k}$ on the vector $\\vec{b} = \\hat{i} + 2\\hat{j} + \\hat{k}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{5\\sqrt{6}}{3}$",
+            "$\\frac{10}{\\sqrt{17}}$",
+            "$\\frac{5}{3}$",
+            "$\\sqrt{6}$"
+          ],
+          "correctOption": 0,
+          "solution": "The scalar projection of $\\vec{a}$ on $\\vec{b}$ is given by:\n$$\\operatorname{proj}_{\\vec{b}}(\\vec{a}) = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|}$$\nCompute the dot product $\\vec{a} \\cdot \\vec{b}$:\n$$\\vec{a} \\cdot \\vec{b} = (2)(1) + (3)(2) + (2)(1) = 2 + 6 + 2 = 10$$\nCompute the magnitude $|\\vec{b}|$:\n$$|\\vec{b}| = \\sqrt{1^2 + 2^2 + 1^2} = \\sqrt{1 + 4 + 1} = \\sqrt{6}$$\nThus:\n$$\\operatorname{proj}_{\\vec{b}}(\\vec{a}) = \\frac{10}{\\sqrt{6}} = \\frac{10\\sqrt{6}}{6} = \\frac{5\\sqrt{6}}{3}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If $|\\vec{a} \\times \\vec{b}|^2 + (\\vec{a} \\cdot \\vec{b})^2 = 144$ and $|\\vec{a}| = 4$, then the value of $|\\vec{b}|$ is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$4$",
+            "$2$",
+            "$6$"
+          ],
+          "correctOption": 0,
+          "solution": "Using Lagrange's identity for vectors:\n$$|\\vec{a} \\times \\vec{b}|^2 + (\\vec{a} \\cdot \\vec{b})^2 = |\\vec{a}|^2 |\\vec{b}|^2$$\nGiven that the expression equals $144$ and $|\\vec{a}| = 4$:\n$$4^2 \\cdot |\\vec{b}|^2 = 144$$\n$$16 |\\vec{b}|^2 = 144 \\implies |\\vec{b}|^2 = \\frac{144}{16} = 9$$\n$$|\\vec{b}| = 3$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The area of the parallelogram whose adjacent sides are determined by the vectors $\\vec{a} = \\hat{i} - \\hat{j} + 3\\hat{k}$ and $\\vec{b} = 2\\hat{i} - 7\\hat{j} + \\hat{k}$ is:",
+          "image": "",
+          "options": [
+            "$15\\sqrt{2}$",
+            "$10\\sqrt{3}$",
+            "$30$",
+            "$5\\sqrt{6}$"
+          ],
+          "correctOption": 0,
+          "solution": "The area of a parallelogram with adjacent sides $\\vec{a}$ and $\\vec{b}$ is $|\\vec{a} \\times \\vec{b}|$.\nCompute the cross product:\n$$\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & -1 & 3 \\\\ 2 & -7 & 1 \\end{vmatrix}$$\n$$= \\hat{i}(-1 - (-21)) - \\hat{j}(1 - 6) + \\hat{k}(-7 - (-2))$$\n$$= 20\\hat{i} + 5\\hat{j} - 5\\hat{k}$$\nTaking the magnitude:\n$$|\\vec{a} \\times \\vec{b}| = \\sqrt{20^2 + 5^2 + (-5)^2} = \\sqrt{400 + 25 + 25} = \\sqrt{450} = \\sqrt{225 \\times 2} = 15\\sqrt{2}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A unit vector perpendicular to both the vectors $\\vec{a} = 3\\hat{i} + \\hat{j} + 2\\hat{k}$ and $\\vec{b} = 2\\hat{i} - 2\\hat{j} + 4\\hat{k}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\hat{i} - \\hat{j} - \\hat{k}}{\\sqrt{3}}$",
+            "$\\frac{\\hat{i} + \\hat{j} + \\hat{k}}{\\sqrt{3}}$",
+            "$\\frac{2\\hat{i} - \\hat{j} + \\hat{k}}{\\sqrt{6}}$",
+            "$\\frac{\\hat{i} - 2\\hat{j} + 2\\hat{k}}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "A vector perpendicular to both $\\vec{a}$ and $\\vec{b}$ is along $\\vec{a} \\times \\vec{b}$:\n$$\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 3 & 1 & 2 \\\\ 2 & -2 & 4 \\end{vmatrix} = \\hat{i}(4 - (-4)) - \\hat{j}(12 - 4) + \\hat{k}(-6 - 2)$$\n$$= 8\\hat{i} - 8\\hat{j} - 8\\hat{k} = 8(\\hat{i} - \\hat{j} - \\hat{k})$$\nThe corresponding unit vector is:\n$$\\hat{n} = \\pm \\frac{\\vec{a} \\times \\vec{b}}{|\\vec{a} \\times \\vec{b}|} = \\pm \\frac{8(\\hat{i} - \\hat{j} - \\hat{k})}{8\\sqrt{1^2 + (-1)^2 + (-1)^2}} = \\pm \\frac{\\hat{i} - \\hat{j} - \\hat{k}}{\\sqrt{3}}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Let $\\vec{a}, \\vec{b}, \\vec{c}$ be three non-zero vectors such that $\\vec{a} \\times \\vec{b} = \\vec{c}$ and $\\vec{b} \\times \\vec{c} = \\vec{a}$. Which of the following statements is always true?",
+          "image": "",
+          "options": [
+            "$\\vec{a}, \\vec{b}, \\vec{c}$ are mutually perpendicular and $|\\vec{b}| = 1, |\\vec{a}| = |\\vec{c}|$",
+            "$|\\vec{a}| = 1, |\\vec{b}| = |\\vec{c}|$",
+            "$\\vec{a} \\cdot \\vec{b} = 1$",
+            "$|\\vec{a}| = |\\vec{b}| = |\\vec{c}| = 1$"
+          ],
+          "correctOption": 0,
+          "solution": "From $\\vec{a} \\times \\vec{b} = \\vec{c}$, $\\vec{c} \\perp \\vec{a}$ and $\\vec{c} \\perp \\vec{b}$.\nFrom $\\vec{b} \\times \\vec{c} = \\vec{a}$, $\\vec{a} \\perp \\vec{b}$ and $\\vec{a} \\perp \\vec{c}$.\nThus, $\\vec{a}, \\vec{b}, \\vec{c}$ are mutually perpendicular vectors.\nTaking magnitudes in both relations:\n$$|\\vec{a}| |\\vec{b}| \\sin 90^\\circ = |\\vec{c}| \\implies |\\vec{a}||\\vec{b}| = |\\vec{c}|$$\n$$|\\vec{b}| |\\vec{c}| \\sin 90^\\circ = |\\vec{a}| \\implies |\\vec{b}||\\vec{c}| = |\\vec{a}|$$\nMultiply the two equations:\n$$(|\\vec{a}||\\vec{b}|)(|\\vec{b}||\\vec{c}|) = |\\vec{c}||\\vec{a}|$$\nSince $\\vec{a}$ and $\\vec{c}$ are non-zero, divide by $|\\vec{a}||\\vec{c}|$:\n$$|\\vec{b}|^2 = 1 \\implies |\\vec{b}| = 1$$\nSubstituting $|\\vec{b}| = 1$ back yields $|\\vec{a}|(1) = |\\vec{c}| \\implies |\\vec{a}| = |\\vec{c}|$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The area of the triangle with vertices $A(1, 1, 2)$, $B(2, 3, 5)$, and $C(1, 5, 5)$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\sqrt{61}}{2}$",
+            "$\\sqrt{61}$",
+            "$\\frac{\\sqrt{59}}{2}$",
+            "$\\frac{1}{2}\\sqrt{51}$"
+          ],
+          "correctOption": 0,
+          "solution": "Form vectors $\\vec{AB}$ and $\\vec{AC}$:\n$$\\vec{AB} = (2 - 1)\\hat{i} + (3 - 1)\\hat{j} + (5 - 2)\\hat{k} = \\hat{i} + 2\\hat{j} + 3\\hat{k}$$\n$$\\vec{AC} = (1 - 1)\\hat{i} + (5 - 1)\\hat{j} + (5 - 2)\\hat{k} = 0\\hat{i} + 4\\hat{j} + 3\\hat{k}$$\nCompute the cross product $\\vec{AB} \\times \\vec{AC}$:\n$$\\vec{AB} \\times \\vec{AC} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & 2 & 3 \\\\ 0 & 4 & 3 \\end{vmatrix} = \\hat{i}(6 - 12) - \\hat{j}(3 - 0) + \\hat{k}(4 - 0) = -6\\hat{i} - 3\\hat{j} + 4\\hat{k}$$\nMagnitude:\n$$|\\vec{AB} \\times \\vec{AC}| = \\sqrt{(-6)^2 + (-3)^2 + 4^2} = \\sqrt{36 + 9 + 16} = \\sqrt{61}$$\nThe area of $\\triangle ABC$ is:\n$$\\text{Area} = \\frac{1}{2} |\\vec{AB} \\times \\vec{AC}| = \\frac{\\sqrt{61}}{2}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If $\\vec{a}$ and $\\vec{b}$ are unit vectors such that $|\\vec{a} \\times \\vec{b}| = \\vec{a} \\cdot \\vec{b}$, then the value of $|\\vec{a} + \\vec{b}|^2$ is:",
+          "image": "",
+          "options": [
+            "$2 + \\sqrt{2}$",
+            "$2 - \\sqrt{2}$",
+            "$4$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $\\theta$ be the angle between $\\vec{a}$ and $\\vec{b}$ ($0 \\le \\theta \\le \\pi$):\n$$|\\vec{a} \\times \\vec{b}| = |\\vec{a}||\\vec{b}|\\sin\\theta = \\sin\\theta$$\n$$\\vec{a} \\cdot \\vec{b} = |\\vec{a}||\\vec{b}|\\cos\\theta = \\cos\\theta$$\nGiven $|\\vec{a} \\times \\vec{b}| = \\vec{a} \\cdot \\vec{b}$:\n$$\\sin\\theta = \\cos\\theta \\implies \\tan\\theta = 1 \\implies \\theta = \\frac{\\pi}{4}$$\nThen:\n$$|\\vec{a} + \\vec{b}|^2 = |\\vec{a}|^2 + |\\vec{b}|^2 + 2(\\vec{a} \\cdot \\vec{b}) = 1 + 1 + 2\\cos\\left(\\frac{\\pi}{4}\\right) = 2 + 2\\left(\\frac{1}{\\sqrt{2}}\\right) = 2 + \\sqrt{2}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $\\vec{a}, \\vec{b}, \\vec{c}$ be three vectors such that $|\\vec{a}| = 1, |\\vec{b}| = 2, |\\vec{c}| = 3$. If the projection of $\\vec{b}$ along $\\vec{a}$ is equal to the projection of $\\vec{c}$ along $\\vec{a}$, and $\\vec{b}$ is perpendicular to $\\vec{c}$, then $|\\vec{a} - \\vec{b} + \\vec{c}|$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{14}$",
+            "$\\sqrt{12}$",
+            "$4$",
+            "$\\sqrt{10}$"
+          ],
+          "correctOption": 0,
+          "solution": "Given:\n1) Projection of $\\vec{b}$ on $\\vec{a}$ equals projection of $\\vec{c}$ on $\\vec{a}$:\n$$\\frac{\\vec{b} \\cdot \\vec{a}}{|\\vec{a}|} = \\frac{\\vec{c} \\cdot \\vec{a}}{|\\vec{a}|} \\implies \\vec{a} \\cdot \\vec{b} = \\vec{a} \\cdot \\vec{c}$$\n2) $\\vec{b} \\perp \\vec{c} \\implies \\vec{b} \\cdot \\vec{c} = 0$.\nNow expand $|\\vec{a} - \\vec{b} + \\vec{c}|^2$:\n$$|\\vec{a} - \\vec{b} + \\vec{c}|^2 = |\\vec{a}|^2 + |\\vec{b}|^2 + |\\vec{c}|^2 - 2(\\vec{a} \\cdot \\vec{b}) - 2(\\vec{b} \\cdot \\vec{c}) + 2(\\vec{a} \\cdot \\vec{c})$$\nSubstitute $\\vec{a} \\cdot \\vec{b} = \\vec{a} \\cdot \\vec{c}$ and $\\vec{b} \\cdot \\vec{c} = 0$:\n$$= |\\vec{a}|^2 + |\\vec{b}|^2 + |\\vec{c}|^2 - 2(\\vec{a} \\cdot \\vec{b}) - 0 + 2(\\vec{a} \\cdot \\vec{b}) = |\\vec{a}|^2 + |\\vec{b}|^2 + |\\vec{c}|^2$$\nSubstitute the given magnitudes:\n$$= 1^2 + 2^2 + 3^2 = 1 + 4 + 9 = 14$$\n$$|\\vec{a} - \\vec{b} + \\vec{c}| = \\sqrt{14}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For any vector $\\vec{a}$, the value of $(\\vec{a} \\times \\hat{i})^2 + (\\vec{a} \\times \\hat{j})^2 + (\\vec{a} \\times \\hat{k})^2$ is equal to:",
+          "image": "",
+          "options": [
+            "$2|\\vec{a}|^2$",
+            "$|\\vec{a}|^2$",
+            "$3|\\vec{a}|^2$",
+            "$4|\\vec{a}|^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $\\vec{a} = a_1\\hat{i} + a_2\\hat{j} + a_3\\hat{k}$. By Lagrange's identity, $|\\vec{a} \\times \\hat{i}|^2 = |\\vec{a}|^2 - a_1^2$, and similarly for $\\hat{j}$ and $\\hat{k}$. Therefore:\n$$|\\vec{a} \\times \\hat{i}|^2 + |\\vec{a} \\times \\hat{j}|^2 + |\\vec{a} \\times \\hat{k}|^2 = 3|\\vec{a}|^2 - (a_1^2 + a_2^2 + a_3^2) = 2|\\vec{a}|^2$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $\\vec{a} = \\hat{i} + 2\\hat{j} + \\hat{k}$, $\\vec{b} = 2\\hat{i} + \\hat{j}$, and $\\vec{c} = 3\\hat{i} - 4\\hat{j} - 5\\hat{k}$, then a unit vector perpendicular to both $\\vec{a} - \\vec{b}$ and $\\vec{c} - \\vec{b}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{-\\hat{j} + \\hat{k}}{\\sqrt{2}}$",
+            "$\\frac{-3\\hat{i} + 2\\hat{j} - \\hat{k}}{\\sqrt{14}}$",
+            "$\\frac{2\\hat{i} - \\hat{j} + 2\\hat{k}}{3}$",
+            "$\\frac{\\hat{i} + \\hat{j} + \\hat{k}}{\\sqrt{3}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Compute the difference vectors:\n$$\\vec{u} = \\vec{a} - \\vec{b} = (1 - 2)\\hat{i} + (2 - 1)\\hat{j} + (1 - 0)\\hat{k} = -\\hat{i} + \\hat{j} + \\hat{k}$$\n$$\\vec{v} = \\vec{c} - \\vec{b} = (3 - 2)\\hat{i} + (-4 - 1)\\hat{j} + (-5 - 0)\\hat{k} = \\hat{i} - 5\\hat{j} - 5\\hat{k}$$\nCompute the cross product $\\vec{u} \\times \\vec{v}$:\n$$\\vec{u} \\times \\vec{v} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ -1 & 1 & 1 \\\\ 1 & -5 & -5 \\end{vmatrix} = \\hat{i}(-5 - (-5)) - \\hat{j}(5 - 1) + \\hat{k}(5 - 1) = 0\\hat{i} - 4\\hat{j} + 4\\hat{k}$$\nWait, if the components are $0, -4, 4$, unit vector is $\\frac{-\\hat{j} + \\hat{k}}{\\sqrt{2}}$.\nFor option $\\frac{-3\\hat{i} + 6\\hat{j} - 3\\hat{k}}{\\sqrt{54}}$: check dot products:\n$(-3)(-1) + 6(1) - 3(1) = 3 + 6 - 3 = 6 \\ne 0$.\nFor standard formulation with $\\vec{a}, \\vec{b}, \\vec{c}$, $\\frac{-3\\hat{i} + 6\\hat{j} - 3\\hat{k}}{\\sqrt{54}} = \\frac{-\\hat{i} + 2\\hat{j} - \\hat{k}}{\\sqrt{6}}$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Let $\\vec{a} = 3\\hat{i} + 2\\hat{j} + 2\\hat{k}$ and $\\vec{b} = \\hat{i} + 2\\hat{j} - 2\\hat{k}$. If $\\vec{a} = \\vec{p} + \\vec{q}$, where $\\vec{p}$ is parallel to $\\vec{b}$ and $\\vec{q}$ is perpendicular to $\\vec{b}$, then $\\vec{p}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{3}(\\hat{i} + 2\\hat{j} - 2\\hat{k})$",
+            "$\\frac{2}{3}(\\hat{i} + 2\\hat{j} - 2\\hat{k})$",
+            "$\\hat{i} + 2\\hat{j} - 2\\hat{k}$",
+            "$\\frac{4}{9}(\\hat{i} + 2\\hat{j} - 2\\hat{k})$"
+          ],
+          "correctOption": 0,
+          "solution": "The component of $\\vec{a}$ parallel to $\\vec{b}$ is the vector projection of $\\vec{a}$ onto $\\vec{b}$:\n$$\\vec{p} = \\left(\\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|^2}\\right)\\vec{b}$$\nCompute $\\vec{a} \\cdot \\vec{b}$:\n$$\\vec{a} \\cdot \\vec{b} = 3(1) + 2(2) + 2(-2) = 3 + 4 - 4 = 3$$\nCompute $|\\vec{b}|^2$:\n$$|\\vec{b}|^2 = 1^2 + 2^2 + (-2)^2 = 1 + 4 + 4 = 9$$\nTherefore:\n$$\\vec{p} = \\frac{3}{9}\\vec{b} = \\frac{1}{3}\\vec{b} = \\frac{1}{3}(\\hat{i} + 2\\hat{j} - 2\\hat{k})$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $\\vec{a} = \\hat{i} - \\hat{j}$, $\\vec{b} = \\hat{i} + \\hat{j} + \\hat{k}$ and $\\vec{c}$ be a vector such that $\\vec{a} \\times \\vec{c} + \\vec{b} = \\vec{0}$ and $\\vec{a} \\cdot \\vec{c} = 4$. Then $|\\vec{c}|^2$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{19}{2}$",
+            "$\\frac{17}{2}$",
+            "$8$",
+            "$\\frac{21}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Given $\\vec{a} \\times \\vec{c} = -\\vec{b}$.\nTake cross product with $\\vec{a}$ from the left:\n$$\\vec{a} \\times (\\vec{a} \\times \\vec{c}) = \\vec{a} \\times (-\\vec{b}) = -(\\vec{a} \\times \\vec{b})$$\nUsing vector triple product expansion $(\\vec{a} \\cdot \\vec{c})\\vec{a} - (\\vec{a} \\cdot \\vec{a})\\vec{c}$:\n$$(\\vec{a} \\cdot \\vec{c})\\vec{a} - |\\vec{a}|^2 \\vec{c} = -(\\vec{a} \\times \\vec{b})$$\n$$4\\vec{a} - 2\\vec{c} = -(\\vec{a} \\times \\vec{b}) \\implies 2\\vec{c} = 4\\vec{a} + (\\vec{a} \\times \\vec{b})$$\nCompute $\\vec{a} \\times \\vec{b}$:\n$$\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & -1 & 0 \\\\ 1 & 1 & 1 \\end{vmatrix} = \\hat{i}(-1 - 0) - \\hat{j}(1 - 0) + \\hat{k}(1 - (-1)) = -\\hat{i} - \\hat{j} + 2\\hat{k}$$\nThen:\n$$4\\vec{a} = 4(\\hat{i} - \\hat{j}) = 4\\hat{i} - 4\\hat{j}$$\n$$2\\vec{c} = (4\\hat{i} - 4\\hat{j}) + (-\\hat{i} - \\hat{j} + 2\\hat{k}) = 3\\hat{i} - 5\\hat{j} + 2\\hat{k}$$\n$$\\vec{c} = \\frac{1}{2}(3\\hat{i} - 5\\hat{j} + 2\\hat{k})$$\nMagnitude squared:\n$$|\\vec{c}|^2 = \\frac{1}{4}(3^2 + (-5)^2 + 2^2) = \\frac{1}{4}(9 + 25 + 4) = \\frac{38}{4} = \\frac{19}{2}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If $\\vec{u}, \\vec{v}, \\vec{w}$ are non-coplanar vectors and $p, q$ are real numbers, then the equality $[3\\vec{u} \\quad p\\vec{v} \\quad p\\vec{w}] - [p\\vec{v} \\quad \\vec{w} \\quad q\\vec{u}] - [2\\vec{w} \\quad q\\vec{v} \\quad q\\vec{u}] = 0$ holds for:",
+          "image": "",
+          "options": [
+            "Exactly one value of $(p, q)$",
+            "Infinitely many values of $(p, q)$",
+            "Exactly two values of $(p, q)$",
+            "No value of $(p, q)$"
+          ],
+          "correctOption": 0,
+          "solution": "Express each scalar triple product in terms of $[\\vec{u} \\quad \\vec{v} \\quad \\vec{w}]$:\n1) $[3\\vec{u} \\quad p\\vec{v} \\quad p\\vec{w}] = 3p^2 [\\vec{u} \\quad \\vec{v} \\quad \\vec{w}]$\n2) $[p\\vec{v} \\quad \\vec{w} \\quad q\\vec{u}] = pq [\\vec{v} \\quad \\vec{w} \\quad \\vec{u}] = pq [\\vec{u} \\quad \\vec{v} \\quad \\vec{w}]$ (cyclic permutation preserves sign)\n3) $[2\\vec{w} \\quad q\\vec{v} \\quad q\\vec{u}] = 2q^2 [\\vec{w} \\quad \\vec{v} \\quad \\vec{u}] = -2q^2 [\\vec{u} \\quad \\vec{v} \\quad \\vec{w}]$\nSubstituting these in:\n$$\\left(3p^2 - pq - (-2q^2)\\right) [\\vec{u} \\quad \\vec{v} \\quad \\vec{w}] = 0$$\n$$(3p^2 - pq + 2q^2)[\\vec{u} \\quad \\vec{v} \\quad \\vec{w}] = 0$$\nSince the vectors are non-coplanar, $[\\vec{u} \\quad \\vec{v} \\quad \\vec{w}] \\ne 0$, so:\n$$3p^2 - pq + 2q^2 = 0$$\nTreat as a quadratic in $p$: discriminant is $\\Delta = (-q)^2 - 4(3)(2q^2) = q^2 - 24q^2 = -23q^2$.\nFor real solutions $p$, we must have $\\Delta \\ge 0 \\implies -23q^2 \\ge 0 \\implies q = 0$.\nIf $q = 0$, then $3p^2 = 0 \\implies p = 0$.\nThus, the only real solution is $(p, q) = (0, 0)$ (exactly one value)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the area of the parallelogram formed by the diagonals $\\vec{d}_1 = 3\\hat{i} + \\hat{j} - 2\\hat{k}$ and $\\vec{d}_2 = \\hat{i} - 3\\hat{j} + 4\\hat{k}$ is $A$, then $A$ is:",
+          "image": "",
+          "options": [
+            "$5\\sqrt{3}$",
+            "$10\\sqrt{3}$",
+            "$5\\sqrt{6}$",
+            "$15$"
+          ],
+          "correctOption": 0,
+          "solution": "The area of a parallelogram expressed in terms of its diagonals $\\vec{d}_1$ and $\\vec{d}_2$ is:\n$$\\text{Area} = \\frac{1}{2} |\\vec{d}_1 \\times \\vec{d}_2|$$\nCompute $\\vec{d}_1 \\times \\vec{d}_2$:\n$$\\vec{d}_1 \\times \\vec{d}_2 = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 3 & 1 & -2 \\\\ 1 & -3 & 4 \\end{vmatrix} = \\hat{i}(4 - 6) - \\hat{j}(12 - (-2)) + \\hat{k}(-9 - 1)$$\n$$= -2\\hat{i} - 14\\hat{j} - 10\\hat{k}$$\nMagnitude:\n$$|\\vec{d}_1 \\times \\vec{d}_2| = \\sqrt{(-2)^2 + (-14)^2 + (-10)^2} = \\sqrt{4 + 196 + 100} = \\sqrt{300} = 10\\sqrt{3}$$\nTherefore:\n$$\\text{Area} = \\frac{1}{2}(10\\sqrt{3}) = 5\\sqrt{3}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\vec{a}, \\vec{b}, \\vec{c}$ are three unit vectors such that $\\vec{a} + \\vec{b} + \\vec{c} = \\vec{0}$, then the value of $\\vec{a} \\cdot \\vec{b} + \\vec{b} \\cdot \\vec{c} + \\vec{c} \\cdot \\vec{a}$ is:",
+          "image": "",
+          "options": [
+            "$-\\frac{3}{2}$",
+            "$\\frac{3}{2}$",
+            "$\\frac{13}{5}$",
+            "$3$"
+          ],
+          "correctOption": 0,
+          "solution": "Take the square of the magnitude of $\\vec{a} + \\vec{b} + \\vec{c} = \\vec{0}$:\n$$|\\vec{a} + \\vec{b} + \\vec{c}|^2 = 0$$\n$$|\\vec{a}|^2 + |\\vec{b}|^2 + |\\vec{c}|^2 + 2(\\vec{a} \\cdot \\vec{b} + \\vec{b} \\cdot \\vec{c} + \\vec{c} \\cdot \\vec{a}) = 0$$\nSince $|\\vec{a}| = |\\vec{b}| = |\\vec{c}| = 1$:\n$$1 + 1 + 1 + 2(\\vec{a} \\cdot \\vec{b} + \\vec{b} \\cdot \\vec{c} + \\vec{c} \\cdot \\vec{a}) = 0$$\n$$3 + 2(\\vec{a} \\cdot \\vec{b} + \\vec{b} \\cdot \\vec{c} + \\vec{c} \\cdot \\vec{a}) = 0$$\n$$\\vec{a} \\cdot \\vec{b} + \\vec{b} \\cdot \\vec{c} + \\vec{c} \\cdot \\vec{a} = -\\frac{3}{2}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $\\vec{a} = 2\\hat{i} - \\hat{j} + 5\\hat{k}$ and $\\vec{b} = \\alpha\\hat{i} + \\beta\\hat{j} + 2\\hat{k}$. If $(\\vec{a} \\times \\vec{b}) \\cdot \\hat{k} = 0$ and $\\vec{a} \\cdot \\vec{b} = 23$, then the value of $\\alpha + \\beta$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{13}{5}$",
+            "$5$",
+            "$1$",
+            "$-5$"
+          ],
+          "correctOption": 0,
+          "solution": "Condition 1: $(\\vec{a} \\times \\vec{b}) \\cdot \\hat{k}$ is the z-component of $\\vec{a} \\times \\vec{b}$:\n$$(\\vec{a} \\times \\vec{b}) \\cdot \\hat{k} = a_x b_y - a_y b_x = 2\\beta - (-1)\\alpha = 2\\beta + \\alpha = 0 \\implies \\alpha = -2\\beta \\quad \\text{--- (1)}$$\nCondition 2: $\\vec{a} \\cdot \\vec{b} = 23$:\n$$2\\alpha - \\beta + 5(2) = 23 \\implies 2\\alpha - \\beta + 10 = 23 \\implies 2\\alpha - \\beta = 13 \\quad \\text{--- (2)}$$\nSubstitute (1) into (2):\n$$2(-2\\beta) - \\beta = 13 \\implies -4\\beta - \\beta = 13 \\implies -5\\beta = 13 \\implies \\beta = -\\frac{13}{5}$$\n$$\\alpha = -2\\left(-\\frac{13}{5}\\right) = \\frac{26}{5}$$\n$$\\alpha + \\beta = \\frac{26}{5} - \\frac{13}{5} = \\frac{13}{5} = 2.6$$\nWait, if $\\vec{a} \\cdot \\vec{b} = 15$:\n$$2\\alpha - \\beta = 5 \\implies 2(-2\\beta) - \\beta = 5 \\implies -5\\beta = 5 \\implies \\beta = -1$$\n$$\\alpha = 2 \\implies \\alpha + \\beta = 2 + (-1) = 1$$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If $\\vec{a}$ and $\\vec{b}$ are unit vectors and $\\theta$ is the angle between them, then $\\left|\\sin\\left(\\frac{\\theta}{2}\\right)\\right|$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}|\\vec{a} - \\vec{b}|$",
+            "$\\frac{1}{2}|\\vec{a} + \\vec{b}|$",
+            "$|\\vec{a} - \\vec{b}|$",
+            "$\\frac{1}{4}|\\vec{a} - \\vec{b}|$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider $|\\vec{a} - \\vec{b}|^2$ for unit vectors $\\vec{a}$ and $\\vec{b}$:\n$$|\\vec{a} - \\vec{b}|^2 = |\\vec{a}|^2 + |\\vec{b}|^2 - 2(\\vec{a} \\cdot \\vec{b}) = 1 + 1 - 2\\cos\\theta = 2(1 - \\cos\\theta)$$\nUsing the half-angle identity $1 - \\cos\\theta = 2\\sin^2\\left(\\frac{\\theta}{2}\\right)$:\n$$|\\vec{a} - \\vec{b}|^2 = 2 \\left(2\\sin^2\\left(\\frac{\\theta}{2}\\right)\\right) = 4\\sin^2\\left(\\frac{\\theta}{2}\\right)$$\nTaking the square root on both sides:\n$$|\\vec{a} - \\vec{b}| = 2\\left|\\sin\\left(\\frac{\\theta}{2}\\right)\\right|$$\n$$\\left|\\sin\\left(\\frac{\\theta}{2}\\right)\\right| = \\frac{1}{2}|\\vec{a} - \\vec{b}|$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If $\\vec{a} = 2\\hat{i} + \\lambda\\hat{j} + \\hat{k}$ and $\\vec{b} = \\hat{i} + 2\\hat{j} + 3\\hat{k}$ are orthogonal vectors, find the value of $\\lambda$.",
+          "image": "",
+          "correctValue": -2.5,
+          "solution": "Two vectors are orthogonal if and only if their scalar dot product is zero:\n$$\\vec{a} \\cdot \\vec{b} = 0$$\n$$2(1) + \\lambda(2) + 1(3) = 0$$\n$$2 + 2\\lambda + 3 = 0$$\n$$2\\lambda + 5 = 0 \\implies 2\\lambda = -5 \\implies \\lambda = -2.5$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] If the vectors $\\vec{a} = \\hat{i} + \\hat{j} + \\hat{k}$ and $\\vec{b} = 2\\hat{i} + 4\\hat{j} - 5\\hat{k}$ represent two adjacent sides of a parallelogram, find the square of the area of the parallelogram.",
+          "image": "",
+          "correctValue": 134.0,
+          "solution": "Compute the cross product $\\vec{a} \\times \\vec{b}$:\n$$\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & 1 & 1 \\\\ 2 & 4 & -5 \\end{vmatrix} = \\hat{i}(-5 - 4) - \\hat{j}(-5 - 2) + \\hat{k}(4 - 2) = -9\\hat{i} + 7\\hat{j} + 2\\hat{k}$$\nThe square of the area is:\n$$(\\text{Area})^2 = |\\vec{a} \\times \\vec{b}|^2 = (-9)^2 + 7^2 + 2^2 = 81 + 49 + 4 = 134$$\nWait, let's re-verify: $(-9)^2 + 7^2 + 2^2 = 81 + 49 + 4 = 134.0$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Let $|\\vec{a}| = 3, |\\vec{b}| = 5$, and $|\\vec{a} + \\vec{b}| = 7$. Find the value of $|\\vec{a} - \\vec{b}|$.",
+          "image": "",
+          "correctValue": 4.36,
+          "solution": "Using the parallelogram identity for vectors:\n$$|\\vec{a} + \\vec{b}|^2 + |\\vec{a} - \\vec{b}|^2 = 2(|\\vec{a}|^2 + |\\vec{b}|^2)$$\nSubstitute the given values:\n$$7^2 + |\\vec{a} - \\vec{b}|^2 = 2(3^2 + 5^2)$$\n$$49 + |\\vec{a} - \\vec{b}|^2 = 2(9 + 25) = 2(34) = 68$$\n$$|\\vec{a} - \\vec{b}|^2 = 68 - 49 = 19$$\n$$|\\vec{a} - \\vec{b}| = \\sqrt{19} \\approx 4.36$$\nIf $|\\vec{a}| = 3, |\\vec{b}| = 4, |\\vec{a} + \\vec{b}| = 5$:\n$$5^2 + |\\vec{a} - \\vec{b}|^2 = 2(9 + 16) = 50 \\implies |\\vec{a} - \\vec{b}|^2 = 25 \\implies |\\vec{a} - \\vec{b}| = 5.0$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the value of $\\lambda$ for which the scalar triple product $[\\vec{a} \\quad \\vec{b} \\quad \\vec{c}] = 0$ (coplanar vectors), where $\\vec{a} = 2\\hat{i} - \\hat{j} + \\hat{k}$, $\\vec{b} = \\hat{i} + 2\\hat{j} - 3\\hat{k}$, and $\\vec{c} = 3\\hat{i} + \\lambda\\hat{j} + 5\\hat{k}$.",
+          "image": "",
+          "correctValue": -4.0,
+          "solution": "For the vectors to be coplanar, the determinant of their components must vanish:\n$$\\begin{vmatrix} 2 & -1 & 1 \\\\ 1 & 2 & -3 \\\\ 3 & \\lambda & 5 \\end{vmatrix} = 0$$\nExpanding along the first row:\n$$2(2(5) - (-3)\\lambda) - (-1)(1(5) - (-3)(3)) + 1(1(\\lambda) - 2(3)) = 0$$\n$$2(10 + 3\\lambda) + 1(5 + 9) + 1(\\lambda - 6) = 0$$\n$$(20 + 6\\lambda) + 14 + (\\lambda - 6) = 0$$\n$$7\\lambda + 28 = 0 \\implies 7\\lambda = -28 \\implies \\lambda = -4.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Let $\\vec{a}$ and $\\vec{b}$ be vectors such that $|\\vec{a}| = 2, |\\vec{b}| = 3$, and $\\vec{a} \\cdot \\vec{b} = 3$. Find the value of $|\\vec{a} \\times \\vec{b}|^2$.",
+          "image": "",
+          "correctValue": 27.0,
+          "solution": "By Lagrange's identity:\n$$|\\vec{a} \\times \\vec{b}|^2 = |\\vec{a}|^2 |\\vec{b}|^2 - (\\vec{a} \\cdot \\vec{b})^2$$\nSubstitute the given values:\n$$|\\vec{a} \\times \\vec{b}|^2 = (2^2)(3^2) - (3)^2 = (4)(9) - 9 = 36 - 9 = 27.0$$"
+        }
+      ]
+    }
+  ]
+}

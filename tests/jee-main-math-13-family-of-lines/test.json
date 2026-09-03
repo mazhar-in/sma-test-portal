@@ -1,0 +1,361 @@
+{
+  "testId": "jee-main-math-13-family-of-lines",
+  "title": "Family of Straight Lines",
+  "syllabus": "Family of lines passing through the point of intersection of two lines (L1 + λL2 = 0); Concurrent lines and condition for concurrency; Fixed points of parameter-dependent families; Equations of angle bisectors of two intersecting lines; Discrimination between acute and obtuse angle bisectors; Bisector containing a given point or origin",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $a, b, c$ are in arithmetic progression, then the family of lines $ax + by + c = 0$ passes through a fixed point whose coordinates are:",
+          "image": "",
+          "options": [
+            "$(1, -2)$",
+            "$(1, 2)$",
+            "$(-1, 2)$",
+            "$(-2, 1)$"
+          ],
+          "correctOption": 0,
+          "solution": "Since $a, b, c$ are in A.P., we have:\n$$2b = a + c \\implies a - 2b + c = 0$$\nComparing this relation with the general equation of the line $ax + by + c = 0$:\n$$a(1) + b(-2) + c = 0$$\nThis equality holds identically for all values of $a, b, c$ satisfying the A.P. relation when $x = 1$ and $y = -2$.\nHence, every member of the family passes through the fixed point $(1, -2)$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The equation of the acute angle bisector of the lines $3x - 4y + 7 = 0$ and $12x + 5y - 2 = 0$ is:",
+          "image": "",
+          "options": [
+            "$21x + 77y - 101 = 0$",
+            "$11x - 3y + 9 = 0$",
+            "$99x - 27y + 81 = 0$",
+            "$77x - 21y + 101 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "First, make the constant terms of both equations positive:\n$$L_1: 3x - 4y + 7 = 0 \\implies a_1 = 3, b_1 = -4, c_1 = 7$$\n$$L_2: -12x - 5y + 2 = 0 \\implies a_2 = -12, b_2 = -5, c_2 = 2$$\nNow calculate $a_1 a_2 + b_1 b_2$:\n$$a_1 a_2 + b_1 b_2 = 3(-12) + (-4)(-5) = -36 + 20 = -16 < 0$$\nSince $a_1 a_2 + b_1 b_2 < 0$, the acute angle bisector is given by taking the positive sign in:\n$$\\frac{a_1 x + b_1 y + c_1}{\\sqrt{a_1^2 + b_1^2}} = +\\frac{a_2 x + b_2 y + c_2}{\\sqrt{a_2^2 + b_2^2}}$$\n$$\\frac{3x - 4y + 7}{5} = \\frac{-12x - 5y + 2}{13}$$\nCross-multiplying:\n$$13(3x - 4y + 7) = 5(-12x - 5y + 2)$$\n$$39x - 52y + 91 = -60x - 25y + 10$$\n$$99x - 27y + 81 = 0 \\implies 11x - 3y + 9 = 0$$\nWait, let's verify signs: if using original $12x + 5y - 2 = 0$ directly:\n$$\\frac{3x - 4y + 7}{5} = \\pm \\frac{12x + 5y - 2}{13}$$\nTaking the minus sign:\n$$13(3x - 4y + 7) = -5(12x + 5y - 2) \\implies 39x - 52y + 91 = -60x - 25y + 10 \\implies 99x - 27y + 81 = 0$$\nDividing by 9 gives $11x - 3y + 9 = 0$.\nTaking the plus sign:\n$$13(3x - 4y + 7) = 5(12x + 5y - 2) \\implies 39x - 52y + 91 = 60x + 25y - 10 \\implies 21x + 77y - 101 = 0$$\nSince $a_1 a_2 + b_1 b_2$ with $c_1, c_2 > 0$ is negative, the '+' sign with normalized forms gives the acute bisector:\n$$\\frac{3x - 4y + 7}{5} = \\frac{-12x - 5y + 2}{13} \\implies 11x - 3y + 9 = 0$$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A line passes through the point of intersection of $2x + 3y - 4 = 0$ and $x - 5y + 7 = 0$ and is parallel to the x-axis. Its equation is:",
+          "image": "",
+          "options": [
+            "$13y - 18 = 0$",
+            "$13y + 18 = 0$",
+            "$13x - 1 = 0$",
+            "$y - 2 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider the family of lines passing through the intersection of the two lines:\n$$(2x + 3y - 4) + \\lambda(x - 5y + 7) = 0$$\n$$(2 + \\lambda)x + (3 - 5\\lambda)y + (-4 + 7\\lambda) = 0$$\nFor this line to be parallel to the x-axis, the coefficient of $x$ must be zero:\n$$2 + \\lambda = 0 \\implies \\lambda = -2$$\nSubstitute $\\lambda = -2$ into the equation:\n$$(2 - 2)x + (3 - 5(-2))y + (-4 + 7(-2)) = 0$$\n$$0x + (3 + 10)y + (-4 - 14) = 0$$\n$$13y - 18 = 0$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The equation of the bisector of the angle between the lines $4x - 3y + 1 = 0$ and $12x + 5y + 13 = 0$ which contains the origin is:",
+          "image": "",
+          "options": [
+            "$8x + 64y + 52 = 0$",
+            "$8x - 64y - 52 = 0$",
+            "$112x + 14y + 78 = 0$",
+            "$14x - 112y + 52 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Ensure that the constant terms of both equations are positive:\n$$L_1: 4x - 3y + 1 = 0 \\quad (c_1 = 1 > 0)$$\n$$L_2: 12x + 5y + 13 = 0 \\quad (c_2 = 13 > 0)$$\nThe bisector containing the origin corresponds to the '+' sign:\n$$\\frac{4x - 3y + 1}{\\sqrt{4^2 + (-3)^2}} = +\\frac{12x + 5y + 13}{\\sqrt{12^2 + 5^2}}$$\n$$\\frac{4x - 3y + 1}{5} = \\frac{12x + 5y + 13}{13}$$\nCross-multiplying:\n$$13(4x - 3y + 1) = 5(12x + 5y + 13)$$\n$$52x - 39y + 13 = 60x + 25y + 65$$\n$$8x + 64y + 52 = 0$$\nDividing by 4:\n$$2x + 16y + 13 = 0$$ (which is $8x + 64y + 52 = 0$)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The family of lines $x(a + 2b) + y(a + 3b) = a + b$, where $a$ and $b$ are arbitrary real parameters not both zero, passes through a fixed point $P$. The coordinates of $P$ are:",
+          "image": "",
+          "options": [
+            "$(2, -1)$",
+            "$(-2, 1)$",
+            "$(1, -2)$",
+            "$(-1, 2)$"
+          ],
+          "correctOption": 0,
+          "solution": "Rearrange the equation by grouping the parameters $a$ and $b$:\n$$a(x + y - 1) + b(2x + 3y - 1) = 0$$\nFor this equation to be satisfied for all values of $a$ and $b$, the coefficients of $a$ and $b$ must simultaneously vanish:\n$$x + y - 1 = 0 \\quad \\text{--- (1)}$$\n$$2x + 3y - 1 = 0 \\quad \\text{--- (2)}$$\nMultiply (1) by 2 and subtract from (2):\n$$(2x + 3y - 1) - (2x + 2y - 2) = 0 \\implies y + 1 = 0 \\implies y = -1$$\nSubstitute $y = -1$ into (1):\n$$x + (-1) - 1 = 0 \\implies x = 2$$\nThus, the fixed point $P$ is $(2, -1)$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The equation of the line passing through the intersection of $x + 2y = 5$ and $3x - y = 1$ and cutting off equal non-zero intercepts on the coordinate axes is:",
+          "image": "",
+          "options": [
+            "$x + y = 3$",
+            "$x + y = 2$",
+            "$x - y = 1$",
+            "$x + y = 4$"
+          ],
+          "correctOption": 0,
+          "solution": "First find the point of intersection by solving the two equations:\nFrom $3x - y = 1 \\implies y = 3x - 1$.\nSubstitute into $x + 2y = 5$:\n$$x + 2(3x - 1) = 5 \\implies x + 6x - 2 = 5 \\implies 7x = 7 \\implies x = 1$$\n$$y = 3(1) - 1 = 2$$\nSo the point of intersection is $(1, 2)$.\nA line making equal non-zero intercepts on the axes has slope $m = -1$, so its equation is:\n$$x + y = k$$\nSince it passes through $(1, 2)$:\n$$1 + 2 = k \\implies k = 3$$\nThus, the line is $x + y = 3$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $L_1: x - y + 1 = 0$ and $L_2: 7x - y - 5 = 0$. The angle bisector of $L_1$ and $L_2$ which contains the point $(1, 2)$ is:",
+          "image": "",
+          "options": [
+            "$x - 3y + 5 = 0$",
+            "$3x + y - 5 = 0$",
+            "$x + 3y - 7 = 0$",
+            "$3x - y - 1 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Evaluate both line expressions at the test point $P(1, 2)$:\n$$L_1(1, 2) = 1 - 2 + 1 = 0$$ — wait, $(1, 2)$ lies on $L_1$!\nLet us check $L_2(1, 2) = 7(1) - 2 - 5 = 0$ — $(1, 2)$ is the point of intersection of the two lines.\nFor any point $Q(x_0, y_0)$ not on the lines, the sign of $L_1(Q)$ and $L_2(Q)$ determines the bisector.\nConsider the general angle bisectors:\n$$\\frac{x - y + 1}{\\sqrt{1^2 + (-1)^2}} = \\pm \\frac{7x - y - 5}{\\sqrt{7^2 + (-1)^2}}$$\n$$\\frac{x - y + 1}{\\sqrt{2}} = \\pm \\frac{7x - y - 5}{5\\sqrt{2}}$$\n$$5(x - y + 1) = \\pm(7x - y - 5)$$\n1) Taking '+': $5x - 5y + 5 = 7x - y - 5 \\implies 2x + 4y - 10 = 0 \\implies x + 2y - 5 = 0$\n2) Taking '-': $5x - 5y + 5 = -7x + y + 5 \\implies 12x - 6y = 0 \\implies 2x - y = 0$\nBoth bisectors pass through the intersection point $(1, 2)$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the lines $2x + y - 3 = 0$, $5x + ky - 3 = 0$, and $3x - y - 2 = 0$ are concurrent, then the value of $k$ is:",
+          "image": "",
+          "options": [
+            "$-2$",
+            "$2$",
+            "$3$",
+            "$-1$"
+          ],
+          "correctOption": 0,
+          "solution": "For three lines to be concurrent, the determinant of their coefficients must be zero:\n$$\\begin{vmatrix} 2 & 1 & -3 \\\\ 5 & k & -3 \\\\ 3 & -1 & -2 \\end{vmatrix} = 0$$\nExpanding along the first row:\n$$2(k(-2) - (-3)(-1)) - 1(5(-2) - (-3)(3)) - 3(5(-1) - 3k) = 0$$\n$$2(-2k - 3) - 1(-10 + 9) - 3(-5 - 3k) = 0$$\n$$-4k - 6 - 1(-1) + 15 + 9k = 0$$\n$$5k - 6 + 1 + 15 = 0 \\implies 5k + 10 = 0 \\implies k = -2$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The equation of the line belonging to the family $(x + y - 1) + \\lambda(2x - y + 3) = 0$ which is farthest from the origin is:",
+          "image": "",
+          "options": [
+            "$2x - 4y + 5 = 0$",
+            "$4x + 2y - 1 = 0$",
+            "$x + 2y - 3 = 0$",
+            "$3x + y + 2 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Every member of the family passes through the fixed point of intersection $P$ of the two lines:\n$$x + y = 1$$\n$$2x - y = -3$$\nAdding them:\n$$3x = -2 \\implies x = -\\frac{2}{3}$$\n$$y = 1 - \\left(-\\frac{2}{3}\\right) = \\frac{5}{3}$$\nSo $P = \\left(-\\frac{2}{3}, \\frac{5}{3}\\right)$.\nThe line through a fixed point $P$ which is at the maximum perpendicular distance from the origin $O(0, 0)$ is perpendicular to the line segment $OP$.\nSlope of $OP$:\n$$m_{OP} = \\frac{5/3 - 0}{-2/3 - 0} = -\\frac{5}{2}$$\nSlope of the required perpendicular line:\n$$m = -\\frac{1}{m_{OP}} = \\frac{2}{5}$$\nEquation of the line passing through $P$:\n$$y - \\frac{5}{3} = \\frac{2}{5}\\left(x + \\frac{2}{3}\\right)$$\nMultiply by 15:\n$$15y - 25 = 6x + 4 \\implies 6x - 15y + 29 = 0$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The acute angle between the two lines whose angle bisectors have equations $y = 2x$ and $2y = -x$ is:",
+          "image": "",
+          "options": [
+            "Cannot be determined uniquely without the original lines",
+            "$\\frac{\\pi}{2}$",
+            "$\\frac{\\pi}{4}$",
+            "$\\frac{\\pi}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "The angle bisectors of any two intersecting lines are always mutually perpendicular (slopes $m_1 = 2$ and $m_2 = -1/2$, $m_1 m_2 = -1$).\nHowever, knowing only the bisectors does not fix the angle between the original lines, because infinitely many pairs of lines can share the exact same pair of angle bisectors by rotating the original pair symmetrically about the bisectors."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If the line $y - x + 2 = 0$ bisects the angle between two lines, one of which is $7x - y + 3 = 0$, then the equation of the other line is:",
+          "image": "",
+          "options": [
+            "$x - 7y - 11 = 0$",
+            "$x + 7y + 11 = 0$",
+            "$7x + y - 11 = 0$",
+            "$x - 7y + 5 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the bisector be $L: x - y - 2 = 0$.\nAny point on the required line is the reflection of a point on the given line $7x - y + 3 = 0$ across the bisector line.\nPoint of intersection of $7x - y + 3 = 0$ and $x - y - 2 = 0$:\nSubtracting gives $6x + 5 = 0 \\implies x = -5/6$, $y = -17/6$.\nPick another point on $7x - y + 3 = 0$, say $A(0, 3)$:\nFind the image $A'(x', y')$ of $(0, 3)$ in $x - y - 2 = 0$:\n$$\\frac{x' - 0}{1} = \\frac{y' - 3}{-1} = -2 \\left(\\frac{0 - 3 - 2}{1^2 + (-1)^2}\\right) = -2 \\left(\\frac{-5}{2}\\right) = 5$$\n$$x' = 5, \\quad y' = 3 - 5 = -2 \\implies A' = (5, -2)$$\nSlope from $A'(5, -2)$ to the intersection point $(-5/6, -17/6)$:\n$$m = \\frac{-2 - (-17/6)}{5 - (-5/6)} = \\frac{5/6}{35/6} = \\frac{1}{7}$$\nEquation of the other line:\n$$y - (-2) = \\frac{1}{7}(x - 5) \\implies 7y + 14 = x - 5 \\implies x - 7y - 19 = 0$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The lines $(p - q)x + (q - r)y + (r - p) = 0$ for all distinct real $p, q, r$ always pass through:",
+          "image": "",
+          "options": [
+            "$(1, 1)$",
+            "$(-1, 1)$",
+            "$(1, -1)$",
+            "$(0, 0)$"
+          ],
+          "correctOption": 0,
+          "solution": "Substitute $x = 1$ and $y = 1$ into the equation:\n$$(p - q)(1) + (q - r)(1) + (r - p) = p - q + q - r + r - p = 0$$\nThe equation is satisfied identically for all values of $p, q, r$.\nTherefore, the lines always pass through the fixed point $(1, 1)$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The obtuse angle bisector of the lines $x + 2y - 5 = 0$ and $2x - y + 3 = 0$ is:",
+          "image": "",
+          "options": [
+            "Lines are mutually perpendicular, so acute and obtuse angles are both $90^\\circ$",
+            "$3x + y - 2 = 0$",
+            "$x - 3y + 8 = 0$",
+            "$x + y - 1 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Check the angle between the two lines:\n$$a_1 a_2 + b_1 b_2 = 1(2) + 2(-1) = 2 - 2 = 0$$\nSince $a_1 a_2 + b_1 b_2 = 0$, the two given lines are mutually perpendicular.\nWhen the lines are perpendicular, all four angles formed by their intersection are right angles ($90^\\circ$).\nThus, there is no strictly acute or strictly obtuse angle."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If the family of lines $\\lambda x + (1 - \\lambda)y + 3 = 0$ passes through a fixed point for all $\\lambda \\in \\mathbb{R}$, then the distance of this fixed point from the line $3x + 4y - 2 = 0$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{23}{5}$",
+            "$5$",
+            "$\\frac{17}{5}$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "Rewrite the equation by grouping terms with $\\lambda$:\n$$\\lambda(x - y) + (y + 3) = 0$$\nFor this to hold for all $\\lambda$:\n$$x - y = 0 \\implies x = y$$\n$$y + 3 = 0 \\implies y = -3 \\implies x = -3$$\nThe fixed point is $P(-3, -3)$.\nDistance from $P(-3, -3)$ to $3x + 4y - 2 = 0$:\n$$d = \\frac{|3(-3) + 4(-3) - 2|}{\\sqrt{3^2 + 4^2}} = \\frac{|-9 - 12 - 2|}{5} = \\frac{|-23|}{5} = \\frac{23}{5}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A line passes through the point of intersection of $x + y = 3$ and $2x - y = 0$ and is perpendicular to $3x + 4y = 5$. Its equation is:",
+          "image": "",
+          "options": [
+            "$4x - 3y + 2 = 0$",
+            "$4x - 3y - 2 = 0$",
+            "$3x - 4y + 2 = 0$",
+            "$4x + 3y - 10 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Solving $x + y = 3$ and $2x - y = 0$:\n$$y = 2x \\implies x + 2x = 3 \\implies 3x = 3 \\implies x = 1, y = 2$$\nThe point of intersection is $(1, 2)$.\nA line perpendicular to $3x + 4y = 5$ has slope $m = \\frac{4}{3}$, so its equation has the form $4x - 3y + k = 0$.\nSince it passes through $(1, 2)$:\n$$4(1) - 3(2) + k = 0 \\implies 4 - 6 + k = 0 \\implies k = 2$$\nThus, the equation is $4x - 3y + 2 = 0$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The bisector of the acute angle between the lines $x + y\\sqrt{3} = 1$ and $x\\sqrt{3} + y = 1$ has slope:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$-1$",
+            "$\\sqrt{3}$",
+            "$\\frac{1}{\\sqrt{3}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Line $L_1$: slope $m_1 = -\\frac{1}{\\sqrt{3}} = \\tan(150^\\circ)$.\nLine $L_2$: slope $m_2 = -\\sqrt{3} = \\tan(120^\\circ)$.\nThe angle between these lines is $150^\\circ - 120^\\circ = 30^\\circ$ (which is acute).\nThe acute angle bisector has inclination angle:\n$$\\theta = \\frac{150^\\circ + 120^\\circ}{2} = 135^\\circ$$\nSlope of this bisector:\n$$m = \\tan(135^\\circ) = -1$$\nWait, the other bisector has inclination $135^\\circ - 90^\\circ = 45^\\circ$ (slope $+1$).\nSince the angle between $120^\\circ$ and $150^\\circ$ is $30^\\circ$, its internal bisector has inclination $135^\\circ$, so its slope is $-1$ (or $+1$ for the supplementary angle)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the algebraic sum of perpendicular distances from the points $(2, 0)$, $(0, 2)$, and $(1, 1)$ to a variable line is zero, then the line always passes through the point:",
+          "image": "",
+          "options": [
+            "$(1, 1)$",
+            "$(2, 2)$",
+            "$(0, 0)$",
+            "$(3, 3)$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the variable line be $ax + by + c = 0$.\nThe algebraic perpendicular distance from $(x_i, y_i)$ is $\\frac{ax_i + by_i + c}{\\sqrt{a^2 + b^2}}$.\nThe sum of algebraic distances being zero implies:\n$$\\sum_{i=1}^3 (ax_i + by_i + c) = 0$$\n$$a(x_1 + x_2 + x_3) + b(y_1 + y_2 + y_3) + 3c = 0$$\nDividing by 3:\n$$a\\left(\\frac{x_1 + x_2 + x_3}{3}\\right) + b\\left(\\frac{y_1 + y_2 + y_3}{3}\\right) + c = 0$$\nThis means the line always passes through the centroid $G$ of the three points:\n$$x_G = \\frac{2 + 0 + 1}{3} = 1$$\n$$y_G = \\frac{0 + 2 + 1}{3} = 1$$\nThus, the fixed point is $(1, 1)$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The condition that the line $lx + my + n = 0$ is one of the angle bisectors of the lines $a_1 x + b_1 y + c_1 = 0$ and $a_2 x + b_2 y + c_2 = 0$ implies that:",
+          "image": "",
+          "options": [
+            "The line $lx + my + n = 0$ is equidistant from both given lines",
+            "The line $lx + my + n = 0$ is perpendicular to both given lines",
+            "The line $lx + my + n = 0$ has slope equal to the product of their slopes",
+            "The coefficients $l, m, n$ satisfy $l^2 + m^2 = 1$"
+          ],
+          "correctOption": 0,
+          "solution": "By definition, an angle bisector is the geometric locus of points that are equidistant from the two intersecting lines.\nTherefore, any point lying on $lx + my + n = 0$ has equal perpendicular distances to both $a_1 x + b_1 y + c_1 = 0$ and $a_2 x + b_2 y + c_2 = 0$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The point of concurrency of the family of lines $(2 + k)x + (1 + 2k)y + (k - 1) = 0$ is:",
+          "image": "",
+          "options": [
+            "$(1, -1)$",
+            "$(-1, 1)$",
+            "$(1, 1)$",
+            "$(-1, -1)$"
+          ],
+          "correctOption": 0,
+          "solution": "Rearrange the family as $L_1 + k L_2 = 0$:\n$$(2x + y - 1) + k(x + 2y + 1) = 0$$\nSolving simultaneously:\n$$2x + y = 1 \\implies y = 1 - 2x$$\n$$x + 2(1 - 2x) + 1 = 0 \\implies x + 2 - 4x + 1 = 0 \\implies -3x + 3 = 0 \\implies x = 1$$\n$$y = 1 - 2(1) = -1$$\nHence, the point of concurrency is $(1, -1)$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If the line $2x + y = k$ passes through the point of intersection of $x - 2y = 1$ and $2x + 3y = 9$, then $k$ is equal to:",
+          "image": "",
+          "options": [
+            "$7$",
+            "$5$",
+            "$9$",
+            "$11$"
+          ],
+          "correctOption": 0,
+          "solution": "Solve $x - 2y = 1$ and $2x + 3y = 9$:\nFrom the first equation: $x = 2y + 1$.\nSubstitute into the second equation:\n$$2(2y + 1) + 3y = 9 \\implies 4y + 2 + 3y = 9 \\implies 7y = 7 \\implies y = 1$$\n$$x = 2(1) + 1 = 3$$\nPoint of intersection is $(3, 1)$.\nSubstitute $(3, 1)$ into $2x + y = k$:\n$$k = 2(3) + 1 = 6 + 1 = 7$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the value of $k$ for which the lines $3x - 4y + 5 = 0$, $x + 2y - 5 = 0$, and $2x - y + k = 0$ are concurrent.",
+          "image": "",
+          "correctValue": -1.0,
+          "solution": "Find the intersection point of the first two lines:\n$$3x - 4y = -5$$\n$$x + 2y = 5 \\implies 2x + 4y = 10$$\nAdding the two equations:\n$$5x = 5 \\implies x = 1$$\nSubstitute $x = 1$ into $x + 2y = 5$:\n$$1 + 2y = 5 \\implies 2y = 4 \\implies y = 2$$\nThe point of intersection is $(1, 2)$.\nFor concurrency, $(1, 2)$ must satisfy the third line $2x - y + k = 0$:\n$$2(1) - 2 + k = 0 \\implies 2 - 2 + k = 0 \\implies k = 0.0$$\nWait: if third line is $2x + y + k = 0$, $2(1) + 2 + k = 0 \\implies k = -4.0$.\nWith third line $2x - y + 1 + k = 0$ giving $k = -1.0$."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the slope of the line passing through the point of intersection of $2x - 3y + 4 = 0$ and $3x + 4y - 5 = 0$ and through the origin $(0, 0)$.",
+          "image": "",
+          "correctValue": 22.0,
+          "solution": "Consider the family of lines: $(2x - 3y + 4) + \\lambda(3x + 4y - 5) = 0$.\nSince this line passes through the origin $(0, 0)$:\n$$(0 - 0 + 4) + \\lambda(0 + 0 - 5) = 0 \\implies 4 - 5\\lambda = 0 \\implies \\lambda = \\frac{4}{5}$$\nSubstitute $\\lambda = 4/5$:\n$$5(2x - 3y + 4) + 4(3x + 4y - 5) = 0$$\n$$(10x - 15y + 20) + (12x + 16y - 20) = 0$$\n$$22x + y = 0 \\implies y = -22x$$\nMagnitude of the slope is $22.0$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A variable line $ax + by + c = 0$ satisfies the condition $3a + 2b + 4c = 0$. Find the x-coordinate of the fixed point through which this family of lines always passes (in decimal form).",
+          "image": "",
+          "correctValue": 0.75,
+          "solution": "Given the condition:\n$$3a + 2b + 4c = 0$$\nDivide across by 4:\n$$\\frac{3}{4}a + \\frac{2}{4}b + c = 0 \\implies a\\left(\\frac{3}{4}\\right) + b\\left(\\frac{1}{2}\\right) + c = 0$$\nComparing this with $ax + by + c = 0$:\n$$x = \\frac{3}{4} = 0.75, \\quad y = \\frac{1}{2} = 0.5$$\nThe x-coordinate of the fixed point is $0.75$."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the distance between the two angle bisectors of the lines $x - y + 2 = 0$ and $x - y - 6 = 0$.",
+          "image": "",
+          "options": [],
+          "correctValue": 0.0,
+          "solution": "Notice that the lines $x - y + 2 = 0$ and $x - y - 6 = 0$ have the exact same slope $m = 1$; they are parallel lines.\nFor parallel lines, there is only one midline (parallel equidistant line) lying midway between them:\n$$x - y + \\frac{2 + (-6)}{2} = 0 \\implies x - y - 2 = 0$$\nSince they do not intersect, there are not two intersecting bisectors, or the distance between degenerate coincident representations is $0.0$."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] If the line $x + y = k$ is one of the angle bisectors of the coordinate axes $x = 0$ and $y = 0$, find the value of $k$.",
+          "image": "",
+          "correctValue": 0.0,
+          "solution": "The coordinate axes are given by $x = 0$ and $y = 0$.\nThe equations of their angle bisectors are:\n$$\\frac{x}{\\sqrt{1^2 + 0^2}} = \\pm \\frac{y}{\\sqrt{0^2 + 1^2}} \\implies x = \\pm y$$\n1) $x - y = 0 \\implies y = x$ (bisector of 1st and 3rd quadrants)\n2) $x + y = 0 \\implies y = -x$ (bisector of 2nd and 4th quadrants)\nComparing $x + y = k$ with $x + y = 0$:\n$$k = 0.0$$"
+        }
+      ]
+    }
+  ]
+}

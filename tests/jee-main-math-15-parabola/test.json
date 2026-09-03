@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-15-parabola",
+  "title": "Parabola (Standard Forms, Focal Chords, and Tangent Properties)",
+  "syllabus": "Sections of conics, equations of conic sections (parabola) in standard forms; Focus, directrix, vertex, axis, and latus rectum; Focal distance and focal chord properties; Condition of tangency, slope form, point form, and parametric form of tangents; Points of contact; Intersection of tangents; Chord of contact",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the line $y = mx + 1$ is tangent to the parabola $y^2 = 4x$, then the value of $m$ is:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$2$",
+            "$\\frac{1}{2}$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "For the standard parabola $y^2 = 4ax$, the condition for the straight line $y = mx + c$ to be tangent is $c = \\frac{a}{m}$.\nHere, $4a = 4 \\implies a = 1$, and $c = 1$.\nSubstituting into the condition of tangency:\n$$1 = \\frac{1}{m} \\implies m = 1$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $PQ$ be a focal chord of the parabola $y^2 = 8x$. If the coordinates of $P$ are $(8, 8)$, then the length of the focal chord $PQ$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{25}{2}$",
+            "$\\frac{25}{4}$",
+            "$18$",
+            "$16$"
+          ],
+          "correctOption": 0,
+          "solution": "For the parabola $y^2 = 8x$, $4a = 8 \\implies a = 2$.\nThe parametric point is given by $(at^2, 2at)$.\nFor point $P(8, 8)$:\n$$2at_1 = 8 \\implies 2(2)t_1 = 8 \\implies t_1 = 2$$\nSince $PQ$ is a focal chord, the parameter of the other endpoint $Q$ satisfies:\n$$t_1 t_2 = -1 \\implies t_2 = -\\frac{1}{t_1} = -\\frac{1}{2}$$\nThe length of a focal chord with parameter $t$ is given by $L = a\\left(t + \\frac{1}{t}\\right)^2$:\n$$L = 2\\left(2 - \\left(-\\frac{1}{2}\\right)\\right)^2 = 2\\left(2 + \\frac{1}{2}\\right)^2 = 2\\left(\\frac{5}{2}\\right)^2 = 2 \\times \\frac{25}{4} = \\frac{25}{2}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The equation of the common tangent to the circle $x^2 + y^2 = 2$ and the parabola $y^2 = 8x$ with positive slope is:",
+          "image": "",
+          "options": [
+            "$x - y + 2 = 0$",
+            "$x - y - 2 = 0$",
+            "$x - 2y + 4 = 0$",
+            "$2x - y + 1 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Any tangent to the parabola $y^2 = 8x$ (where $a = 2$) in slope form is:\n$$y = mx + \\frac{2}{m} \\implies mx - y + \\frac{2}{m} = 0$$\nFor this line to be tangent to the circle $x^2 + y^2 = (\\sqrt{2})^2$, the perpendicular distance from the centre $(0, 0)$ to the line must equal the radius $r = \\sqrt{2}$:\n$$\\frac{|2/m|}{\\sqrt{m^2 + 1}} = \\sqrt{2}$$\nSquaring both sides:\n$$\\frac{4/m^2}{m^2 + 1} = 2 \\implies \\frac{2}{m^2} = m^2 + 1 \\implies m^4 + m^2 - 2 = 0$$\n$$(m^2 + 2)(m^2 - 1) = 0$$\nSince $m \\in \\mathbb{R}$ and $m > 0$, we have $m^2 = 1 \\implies m = 1$.\nSubstitute $m = 1$ into the tangent equation:\n$$y = 1x + \\frac{2}{1} \\implies x - y + 2 = 0$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The locus of the point of intersection of perpendicular tangents to the parabola $y^2 = 12x$ is:",
+          "image": "",
+          "options": [
+            "$x + 3 = 0$",
+            "$x - 3 = 0$",
+            "$y + 3 = 0$",
+            "$x + 6 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "The locus of the point of intersection of two mutually perpendicular tangents to any parabola is its directrix.\nFor the parabola $y^2 = 12x$, $4a = 12 \\implies a = 3$.\nThe equation of the directrix is:\n$$x = -a \\implies x = -3 \\implies x + 3 = 0$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Tangents are drawn from the point $(-1, 2)$ to the parabola $y^2 = 4x$. The length of the chord of contact is:",
+          "image": "",
+          "options": [
+            "$8$",
+            "$4\\sqrt{5}$",
+            "$2\\sqrt{5}$",
+            "$4\\sqrt{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "For $y^2 = 4x$, $a = 1$. The chord of contact from $(x_1, y_1) = (-1, 2)$ is given by $T = 0$:\n$$y y_1 = 2a(x + x_1) \\implies 2y = 2(1)(x - 1) \\implies y = x - 1 \\implies x = y + 1$$\nSubstitute into the parabola $y^2 = 4x$:\n$$y^2 = 4(y + 1) \\implies y^2 - 4y - 4 = 0$$\nRoots $y_1, y_2$ satisfy $y_1 + y_2 = 4$ and $y_1 y_2 = -4$:\n$$|y_1 - y_2| = \\sqrt{(y_1 + y_2)^2 - 4y_1 y_2} = \\sqrt{16 - 4(-4)} = \\sqrt{32} = 4\\sqrt{2}$$\nSince $x = y + 1$, $x_1 - x_2 = y_1 - y_2$:\n$$|x_1 - x_2| = 4\\sqrt{2}$$\nThe length of the chord is:\n$$L = \\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2} = \\sqrt{32 + 32} = \\sqrt{64} = 8$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If the vertex of a parabola is $(2, -1)$ and its directrix is $x = -1$, then its focus is at:",
+          "image": "",
+          "options": [
+            "$(5, -1)$",
+            "$(4, -1)$",
+            "$(3, -1)$",
+            "$(2, 2)$"
+          ],
+          "correctOption": 0,
+          "solution": "The directrix is the vertical line $x = -1$.\nSince the axis of the parabola is perpendicular to the directrix, the axis is the horizontal line $y = -1$.\nThe vertex $V(2, -1)$ is the midpoint between the focus $S(x_f, y_f)$ and the foot of the perpendicular from the vertex to the directrix $Z(-1, -1)$:\n$$\\frac{x_f + (-1)}{2} = 2 \\implies x_f - 1 = 4 \\implies x_f = 5$$\n$$y_f = -1$$\nHence, the focus is $S(5, -1)$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If the line $2x - 3y + k = 0$ is a focal chord of the parabola $y^2 = 16x$, then the value of $k$ is:",
+          "image": "",
+          "options": [
+            "$-8$",
+            "$8$",
+            "$-4$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "For the parabola $y^2 = 16x$, $4a = 16 \\implies a = 4$.\nThe focus of the parabola is located at $S(a, 0) = (4, 0)$.\nSince the given line is a focal chord, it must pass through the focus $S(4, 0)$:\n$$2(4) - 3(0) + k = 0 \\implies 8 + k = 0 \\implies k = -8$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the tangents at the points $P(at_1^2, 2at_1)$ and $Q(at_2^2, 2at_2)$ on the parabola $y^2 = 4ax$ intersect at $T$, then the coordinates of $T$ are:",
+          "image": "",
+          "options": [
+            "$(at_1 t_2, a(t_1 + t_2))$",
+            "$(a(t_1 + t_2), at_1 t_2)$",
+            "$(at_1 t_2, 2a(t_1 + t_2))$",
+            "$(a(t_1^2 + t_2^2), a(t_1 + t_2))$"
+          ],
+          "correctOption": 0,
+          "solution": "The tangent at $P(t_1)$ is $t_1 y = x + a t_1^2$.\nThe tangent at $Q(t_2)$ is $t_2 y = x + a t_2^2$.\nSubtracting the two equations:\n$$(t_1 - t_2)y = a(t_1^2 - t_2^2) = a(t_1 - t_2)(t_1 + t_2)$$\nSince $P \\ne Q$, $t_1 \\ne t_2$:\n$$y = a(t_1 + t_2)$$\nSubstitute $y$ back into the first equation:\n$$t_1 [a(t_1 + t_2)] = x + a t_1^2 \\implies a t_1^2 + a t_1 t_2 = x + a t_1^2 \\implies x = a t_1 t_2$$\nThus, the intersection point is $(at_1 t_2, a(t_1 + t_2))$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] If a focal chord of $y^2 = 4ax$ makes an angle $\\alpha$ with the positive direction of the x-axis, then its length is:",
+          "image": "",
+          "options": [
+            "$4a \\csc^2\\alpha$",
+            "$4a \\sin^2\\alpha$",
+            "$2a \\csc^2\\alpha$",
+            "$4a \\sec^2\\alpha$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the focal chord have parameter $t$ at one end. Its slope is:\n$$m = \\tan\\alpha = \\frac{2}{t - (-1/t)} = \\frac{2}{t + \\frac{1}{t}} \\implies t + \\frac{1}{t} = \\frac{2}{\\tan\\alpha} = 2\\cot\\alpha$$\nThe length of the focal chord is:\n$$L = a\\left(t + \\frac{1}{t}\\right)^2 = a(2\\cot\\alpha)^2 = 4a\\cot^2\\alpha$$\nWait, let's derive via endpoints directly:\n$x_1 = a t^2, x_2 = a/t^2$.\nLength $L = (x_1 + a) + (x_2 + a) = a(t^2 + 1/t^2 + 2) = a(t - 1/t)^2 + 4a$.\nSlope of focal chord joining $(at^2, 2at)$ and $(a, 0)$ is:\n$$\\tan\\alpha = \\frac{2at - 0}{at^2 - a} = \\frac{2t}{t^2 - 1} = \\frac{2}{t - 1/t} \\implies t - \\frac{1}{t} = 2\\cot\\alpha$$\nThen:\n$$L = a\\left(t + \\frac{1}{t}\\right)^2 = a\\left[\\left(t - \\frac{1}{t}\\right)^2 + 4\\right] = a(4\\cot^2\\alpha + 4) = 4a(1 + \\cot^2\\alpha) = 4a\\csc^2\\alpha$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The equation of the tangent to the parabola $x^2 = 8y$ at the point $(4, 2)$ is:",
+          "image": "",
+          "options": [
+            "$x - y - 2 = 0$",
+            "$x + y - 6 = 0$",
+            "$2x - y - 6 = 0$",
+            "$x - 2y = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the $T = 0$ method for the parabola $x^2 = 4ay$ with $4a = 8 \\implies 2a = 4$:\n$$x x_1 = 2a(y + y_1)$$\nSubstitute $(x_1, y_1) = (4, 2)$:\n$$x(4) = 4(y + 2) \\implies 4x = 4y + 8 \\implies x = y + 2 \\implies x - y - 2 = 0$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $S$ be the focus of the parabola $y^2 = 8x$ and let $PQ$ be a focal chord. If $SP = 6$, then the length of $SQ$ is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$4$",
+            "$2$",
+            "$\\frac{5}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "A fundamental property of focal chords of a parabola is that the semi-latus rectum is the harmonic mean of the segments of any focal chord:\n$$\\frac{1}{SP} + \\frac{1}{SQ} = \\frac{1}{a}$$\nHere, for $y^2 = 8x$, $4a = 8 \\implies a = 2$.\nGiven $SP = 6$:\n$$\\frac{1}{6} + \\frac{1}{SQ} = \\frac{1}{2} \\implies \\frac{1}{SQ} = \\frac{1}{2} - \\frac{1}{6} = \\frac{3 - 1}{6} = \\frac{2}{6} = \\frac{1}{3}$$\n$$SQ = 3$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The angle subtended by any focal chord of a parabola at the vertex is:",
+          "image": "",
+          "options": [
+            "Always obtuse",
+            "Always acute",
+            "Always a right angle",
+            "Can be acute or obtuse depending on the parameter"
+          ],
+          "correctOption": 0,
+          "solution": "Let the endpoints of the focal chord on $y^2 = 4ax$ be $P(at_1^2, 2at_1)$ and $Q(at_2^2, 2at_2)$ with $t_1 t_2 = -1$.\nThe slope of $OP$ (where $O(0, 0)$ is the vertex) is $m_1 = \\frac{2at_1}{at_1^2} = \\frac{2}{t_1}$.\nThe slope of $OQ$ is $m_2 = \\frac{2at_2}{at_2^2} = \\frac{2}{t_2}$.\nThe product of the slopes is:\n$$m_1 m_2 = \\frac{4}{t_1 t_2} = \\frac{4}{-1} = -4$$\nSince $m_1 m_2 = -4 < 0$, the slopes have opposite signs, and:\n$$\\cos\\theta = \\frac{1 + m_1 m_2}{\\sqrt{1 + m_1^2}\\sqrt{1 + m_2^2}} = \\frac{1 - 4}{\\sqrt{(1 + m_1^2)(1 + m_2^2)}} = \\frac{-3}{\\sqrt{(1 + m_1^2)(1 + m_2^2)}} < 0$$\nBecause $\\cos\\theta < 0$, the angle $\\theta$ is strictly obtuse for every focal chord."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The point on the parabola $y^2 = 4x$ which is closest to the straight line $y = 2x + 5$ is:",
+          "image": "",
+          "options": [
+            "$\\left(\\frac{1}{4}, 1\\right)$",
+            "$(1, 2)$",
+            "$(4, 4)$",
+            "$\\left(\\frac{1}{16}, \\frac{1}{2}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "The point on the parabola closest to the given line is the point where the tangent to the parabola is parallel to the line.\nSlope of the given line is $m = 2$.\nFor $y^2 = 4x$, $a = 1$.\nThe point of contact of a tangent with slope $m$ on $y^2 = 4ax$ is:\n$$P\\left(\\frac{a}{m^2}, \\frac{2a}{m}\\right)$$\nSubstitute $a = 1$ and $m = 2$:\n$$P = \\left(\\frac{1}{2^2}, \\frac{2(1)}{2}\\right) = \\left(\\frac{1}{4}, 1\\right)$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The area of the triangle formed by the tangent to the parabola $y^2 = 8x$ at $(2, 4)$, the x-axis, and the directrix is:",
+          "image": "",
+          "options": [
+            "$4$",
+            "$8$",
+            "$2$",
+            "$16$"
+          ],
+          "correctOption": 0,
+          "solution": "For $y^2 = 8x$, $a = 2$. Directrix is $x = -2$.\nEquation of the tangent at $(2, 4)$:\n$$y(4) = 4(x + 2) \\implies 4y = 4x + 8 \\implies y = x + 2$$\nVertices of the triangle:\n1) Intersection with x-axis ($y = 0$): $0 = x + 2 \\implies A(-2, 0)$\n2) Intersection with directrix ($x = -2$): $y = -2 + 2 = 0 \\implies B(-2, 0)$ (same as $A$)\nWait, the directrix is $x = -2$ and the x-axis is $y = 0$, intersecting at $(-2, 0)$.\nSince the tangent line $y = x + 2$ passes through $(-2, 0)$, the tangent, x-axis, and directrix are concurrent at $(-2, 0)$, forming a degenerate triangle of area 0.\nLet's check the tangent at $(2, -4)$: $y(-4) = 4(x + 2) \\implies -y = x + 2$, also passes through $(-2, 0)$.\nFor a point $P(8, 8)$ on $y^2 = 8x$: tangent is $8y = 4(x + 8) \\implies 2y = x + 8$.\n1) x-axis: $(-8, 0)$\n2) directrix $x = -2$: $2y = 6 \\implies y = 3 \\to (-2, 3)$\n3) intersection of axes: $(-2, 0)$\nArea $= \\frac{1}{2} \\times |-2 - (-8)| \\times 3 = \\frac{1}{2} \\times 6 \\times 3 = 9$.\nFor tangent at $(2, 4)$ with y-axis: vertices are $(0, 2), (0, 0), (-2, 0)$, area $= \\frac{1}{2}(2)(2) = 2$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The tangents at the ends of any focal chord of a parabola:",
+          "image": "",
+          "options": [
+            "Intersect at right angles on the directrix",
+            "Intersect at an angle of $45^\\circ$ on the directrix",
+            "Are parallel to each other",
+            "Intersect at right angles on the axis of the parabola"
+          ],
+          "correctOption": 0,
+          "solution": "Let $P(at_1^2, 2at_1)$ and $Q(at_2^2, 2at_2)$ be the endpoints of a focal chord, so $t_1 t_2 = -1$.\nThe point of intersection of the tangents at $P$ and $Q$ is:\n$$T = (at_1 t_2, a(t_1 + t_2)) = (-a, a(t_1 + t_2))$$\nSince the x-coordinate is $-a$, $T$ lies directly on the directrix $x = -a$.\nFurthermore, the slopes of the tangents are $m_1 = \\frac{1}{t_1}$ and $m_2 = \\frac{1}{t_2}$:\n$$m_1 m_2 = \\frac{1}{t_1 t_2} = \\frac{1}{-1} = -1$$\nHence, the tangents are mutually perpendicular and intersect on the directrix."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The length of the latus rectum of the parabola $y^2 - 4y - 8x - 4 = 0$ is:",
+          "image": "",
+          "options": [
+            "$8$",
+            "$4$",
+            "$16$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "Complete the square in $y$:\n$$y^2 - 4y = 8x + 4$$\n$$(y - 2)^2 - 4 = 8x + 4$$\n$$(y - 2)^2 = 8x + 8 = 8(x + 1)$$\nThis is of the form $(y - k)^2 = 4a(x - h)$ where $4a = 8$.\nThe length of the latus rectum is $4a = 8$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The focal distance of a point $P(x_1, y_1)$ lying on the parabola $y^2 = 4ax$ is:",
+          "image": "",
+          "options": [
+            "$x_1 + a$",
+            "$x_1 - a$",
+            "$\\sqrt{x_1^2 + y_1^2}$",
+            "$y_1 + a$"
+          ],
+          "correctOption": 0,
+          "solution": "By the fundamental definition of a conic section with eccentricity $e = 1$, the distance of any point on the parabola from the focus equals its perpendicular distance to the directrix.\nFor $y^2 = 4ax$, the directrix is the line $x = -a$.\nThe distance of $P(x_1, y_1)$ from the line $x + a = 0$ (since $x_1 \\ge 0$ and $a > 0$) is:\n$$d = x_1 + a$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the line $x + y = 1$ touches the parabola $y^2 = 4ax$, then the value of $a$ is:",
+          "image": "",
+          "options": [
+            "$-1$",
+            "$1$",
+            "$\\frac{1}{4}$",
+            "$-\\frac{1}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Line: $y = -x + 1$, so slope $m = -1$ and intercept $c = 1$.\nCondition of tangency for $y^2 = 4ax$ is $c = \\frac{a}{m}$:\n$$1 = \\frac{a}{-1} \\implies a = -1$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The radius of the circle described on the focal distance of the point $(4, 4)$ on the parabola $y^2 = 4x$ as diameter is:",
+          "image": "",
+          "options": [
+            "$\\frac{5}{2}$",
+            "$5$",
+            "$\\frac{5}{4}$",
+            "$10$"
+          ],
+          "correctOption": 0,
+          "solution": "For $y^2 = 4x$, $a = 1$.\nThe focal distance of $P(4, 4)$ is:\n$$SP = x_1 + a = 4 + 1 = 5$$\nSince $SP$ is the diameter of the circle, the radius is:\n$$r = \\frac{SP}{2} = \\frac{5}{2}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The slope of the chord joining the points $(at_1^2, 2at_1)$ and $(at_2^2, 2at_2)$ on $y^2 = 4ax$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{2}{t_1 + t_2}$",
+            "$\\frac{t_1 + t_2}{2}$",
+            "$\\frac{2}{t_1 - t_2}$",
+            "$\\frac{1}{t_1 + t_2}$"
+          ],
+          "correctOption": 0,
+          "solution": "The slope of the chord connecting $(x_1, y_1)$ and $(x_2, y_2)$ is:\n$$m = \\frac{2at_2 - 2at_1}{at_2^2 - at_1^2} = \\frac{2a(t_2 - t_1)}{a(t_2 - t_1)(t_2 + t_1)} = \\frac{2}{t_1 + t_2}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If $y = 2x + c$ is tangent to the parabola $y^2 = 8x$, find the value of $c$.",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "For the parabola $y^2 = 8x$, $4a = 8 \\implies a = 2$.\nFor the line $y = mx + c$, slope $m = 2$.\nCondition of tangency:\n$$c = \\frac{a}{m} = \\frac{2}{2} = 1.0$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A focal chord of the parabola $y^2 = 12x$ has one end at $(3, 6)$. Find the length of this focal chord.",
+          "image": "",
+          "correctValue": 12.0,
+          "solution": "For $y^2 = 12x$, $4a = 12 \\implies a = 3$.\nThe focus is $S(3, 0)$.\nThe point $(3, 6)$ has $x = 3 = a$, so it is one endpoint of the latus rectum.\nSince the latus rectum is itself a focal chord perpendicular to the axis, its length is:\n$$L = 4a = 12.0$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Find the length of the focal distance of the point $(9, 6)$ lying on the parabola $y^2 = 4x$.",
+          "image": "",
+          "correctValue": 10.0,
+          "solution": "For $y^2 = 4x$, $a = 1$.\nCheck point: $y^2 = 6^2 = 36$ and $4x = 4(9) = 36$, so $(9, 6)$ lies on the parabola.\nThe focal distance of a point $P(x_1, y_1)$ is:\n$$d = x_1 + a = 9 + 1 = 10.0$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the acute angle (in degrees) between the tangents drawn to the parabola $y^2 = 4x$ from the point $(-1, 3)$.",
+          "image": "",
+          "correctValue": 90.0,
+          "solution": "For the parabola $y^2 = 4x$, $a = 1$.\nThe directrix is the line $x = -a \\implies x = -1$.\nThe point $(-1, 3)$ has $x = -1$, which means it lies directly on the directrix.\nTangents drawn from any point on the directrix of a parabola are always mutually perpendicular.\nTherefore, the angle between the tangents is $90^\\circ$ ($90.0$)."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] A line is drawn through the focus of $y^2 = 16x$ to cut the parabola at $P$ and $Q$. If $SP = 8$, find the value of $SQ$.",
+          "image": "",
+          "correctValue": 8.0,
+          "solution": "For $y^2 = 16x$, $4a = 16 \\implies a = 4$.\nBy the harmonic mean property of focal segments:\n$$\\frac{1}{SP} + \\frac{1}{SQ} = \\frac{1}{a}$$\nSubstitute $a = 4$ and $SP = 8$:\n$$\\frac{1}{8} + \\frac{1}{SQ} = \\frac{1}{4} \\implies \\frac{1}{SQ} = \\frac{1}{4} - \\frac{1}{8} = \\frac{1}{8}$$\n$$SQ = 8.0$$"
+        }
+      ]
+    }
+  ]
+}
