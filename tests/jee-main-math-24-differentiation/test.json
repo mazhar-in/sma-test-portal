@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-24-differentiation",
+  "title": "Differentiation (Chain Rule, Implicit, Parametric, and Higher-Order Derivatives)",
+  "syllabus": "Derivatives of polynomial, rational, trigonometric, inverse trigonometric, exponential, and logarithmic functions; Derivative of sum, difference, product, and quotient of functions; Chain rule; Derivative of implicit functions; Derivative of functions in parametric forms; Logarithmic differentiation; Second and higher-order derivatives; Differentiation of determinants and inverse functions",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $y = \\tan^{-1}\\left(\\frac{\\sqrt{1 + x^2} - 1}{x}\\right)$ for $x \\ne 0$, then $\\frac{dy}{dx}$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2(1 + x^2)}$",
+            "$\\frac{1}{1 + x^2}$",
+            "$\\frac{2}{1 + x^2}$",
+            "$\\frac{1}{2\\sqrt{1 + x^2}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Substitute $x = \\tan\\theta$, so $\\theta = \\tan^{-1} x$ where $\\theta \\in \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right) \\setminus \\{0\\}$:\n$$\\frac{\\sqrt{1 + x^2} - 1}{x} = \\frac{\\sqrt{1 + \\tan^2\\theta} - 1}{\\tan\\theta} = \\frac{\\sec\\theta - 1}{\\tan\\theta} = \\frac{1 - \\cos\\theta}{\\sin\\theta}$$\nUsing half-angle identities:\n$$\\frac{1 - \\cos\\theta}{\\sin\\theta} = \\frac{2\\sin^2(\\theta/2)}{2\\sin(\\theta/2)\\cos(\\theta/2)} = \\tan\\left(\\frac{\\theta}{2}\\right)$$\nTherefore:\n$$y = \\tan^{-1}\\left(\\tan\\left(\\frac{\\theta}{2}\\right)\\right) = \\frac{\\theta}{2} = \\frac{1}{2}\\tan^{-1} x$$\nDifferentiating with respect to $x$:\n$$\\frac{dy}{dx} = \\frac{1}{2}\\left(\\frac{1}{1 + x^2}\\right) = \\frac{1}{2(1 + x^2)}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If $x = a(\\theta - \\sin\\theta)$ and $y = a(1 - \\cos\\theta)$, then $\\frac{d^2y}{dx^2}$ at $\\theta = \\frac{\\pi}{2}$ is equal to:",
+          "image": "",
+          "options": [
+            "$-\\frac{1}{a}$",
+            "$\\frac{1}{a}$",
+            "$-\\frac{1}{2a}$",
+            "$\\frac{1}{4a}$"
+          ],
+          "correctOption": 0,
+          "solution": "First calculate the parametric derivatives with respect to $\\theta$:\n$$\\frac{dx}{d\\theta} = a(1 - \\cos\\theta) = 2a\\sin^2\\left(\\frac{\\theta}{2}\\right)$$\n$$\\frac{dy}{d\\theta} = a\\sin\\theta = 2a\\sin\\left(\\frac{\\theta}{2}\\right)\\cos\\left(\\frac{\\theta}{2}\\right)$$\nThen:\n$$\\frac{dy}{dx} = \\frac{dy/d\\theta}{dx/d\\theta} = \\frac{a\\sin\\theta}{a(1 - \\cos\\theta)} = \\cot\\left(\\frac{\\theta}{2}\\right)$$\nNow differentiate with respect to $x$ using the chain rule:\n$$\\frac{d^2y}{dx^2} = \\frac{d}{d\\theta}\\left(\\cot\\frac{\\theta}{2}\\right) \\cdot \\frac{d\\theta}{dx} = -\\csc^2\\left(\\frac{\\theta}{2}\\right) \\cdot \\frac{1}{2} \\cdot \\frac{1}{a(1 - \\cos\\theta)}$$\n$$= -\\frac{1}{2a(1 - \\cos\\theta)\\sin^2(\\theta/2)} = -\\frac{1}{4a\\sin^4(\\theta/2)}$$\nAt $\\theta = \\frac{\\pi}{2}$, $\\frac{\\theta}{2} = \\frac{\\pi}{4}$, so $\\sin\\left(\\frac{\\pi}{4}\\right) = \\frac{1}{\\sqrt{2}}$:\n$$\\frac{d^2y}{dx^2} = -\\frac{1}{4a(1/\\sqrt{2})^4} = -\\frac{1}{4a(1/4)} = -\\frac{1}{a}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If $x^y = e^{x - y}$, then $\\frac{dy}{dx}$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{\\ln x}{(1 + \\ln x)^2}$",
+            "$\\frac{1}{(1 + \\ln x)^2}$",
+            "$\\frac{\\ln x}{1 + \\ln x}$",
+            "$\\frac{e^x}{(1 + \\ln x)^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Take the natural logarithm on both sides:\n$$\\ln(x^y) = \\ln(e^{x - y})$$\n$$y\\ln x = x - y$$\n$$y(1 + \\ln x) = x \\implies y = \\frac{x}{1 + \\ln x}$$\nDifferentiating with respect to $x$ using the quotient rule:\n$$\\frac{dy}{dx} = \\frac{(1 + \\ln x)\\frac{d}{dx}(x) - x\\frac{d}{dx}(1 + \\ln x)}{(1 + \\ln x)^2} = \\frac{(1 + \\ln x)(1) - x\\left(\\frac{1}{x}\\right)}{(1 + \\ln x)^2}$$\n$$= \\frac{1 + \\ln x - 1}{(1 + \\ln x)^2} = \\frac{\\ln x}{(1 + \\ln x)^2}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $y = (\\sin x)^{\\ln x} + (\\ln x)^x$, then the value of $\\frac{dy}{dx}$ at $x = \\frac{\\pi}{2}$ is:",
+          "image": "",
+          "options": [
+            "$\\left(\\ln\\frac{\\pi}{2}\\right)^{\\pi/2}\\left[\\ln\\left(\\ln\\frac{\\pi}{2}\\right) + \\frac{1}{\\ln(\\pi/2)}\\right]$",
+            "$\\left(\\ln\\frac{\\pi}{2}\\right)^{\\pi/2}\\left[\\ln\\left(\\ln\\frac{\\pi}{2}\\right) + 1\\right]$",
+            "$\\left(\\ln\\frac{\\pi}{2}\\right)^{\\pi/2}\\left[\\ln\\frac{\\pi}{2} + \\frac{2}{\\pi}\\right]$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $u = (\\sin x)^{\\ln x}$ and $v = (\\ln x)^x$, so $y = u + v$ and $\\frac{dy}{dx} = \\frac{du}{dx} + \\frac{dv}{dx}$.\n1) For $u = (\\sin x)^{\\ln x}$:\n$$\\ln u = \\ln x \\cdot \\ln(\\sin x)$$\n$$\\frac{1}{u}\\frac{du}{dx} = \\frac{1}{x}\\ln(\\sin x) + \\ln x \\cdot \\cot x$$\nAt $x = \\pi/2$, $\\sin(\\pi/2) = 1 \\implies \\ln(1) = 0$ and $\\cot(\\pi/2) = 0$:\n$$\\left.\\frac{1}{u}\\frac{du}{dx}\\right|_{x=\\pi/2} = \\frac{1}{\\pi/2}(0) + \\ln\\left(\\frac{\\pi}{2}\\right)(0) = 0 \\implies \\left.\\frac{du}{dx}\\right|_{x=\\pi/2} = 0$$\n2) For $v = (\\ln x)^x$:\n$$\\ln v = x\\ln(\\ln x)$$\n$$\\frac{1}{v}\\frac{dv}{dx} = 1 \\cdot \\ln(\\ln x) + x \\cdot \\frac{1}{\\ln x} \\cdot \\frac{1}{x} = \\ln(\\ln x) + \\frac{1}{\\ln x}$$\n$$\\frac{dv}{dx} = (\\ln x)^x \\left[\\ln(\\ln x) + \\frac{1}{\\ln x}\\right]$$\nAt $x = \\pi/2$:\n$$\\left.\\frac{dv}{dx}\\right|_{x=\\pi/2} = \\left(\\ln\\frac{\\pi}{2}\\right)^{\\pi/2} \\left[\\ln\\left(\\ln\\frac{\\pi}{2}\\right) + \\frac{1}{\\ln(\\pi/2)}\\right]$$\nAdding $\\frac{du}{dx} + \\frac{dv}{dx}$ gives option A."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If $x\\sqrt{1 + y} + y\\sqrt{1 + x} = 0$ for $x \\ne y$ and $-1 < x < 1$, then $\\frac{dy}{dx}$ is equal to:",
+          "image": "",
+          "options": [
+            "$-\\frac{1}{(1 + x)^2}$",
+            "$\\frac{1}{(1 + x)^2}$",
+            "$-\\frac{1}{1 + x^2}$",
+            "$\\frac{1}{1 + x^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Rearrange the given relation:\n$$x\\sqrt{1 + y} = -y\\sqrt{1 + x}$$\nSquare both sides:\n$$x^2(1 + y) = y^2(1 + x)$$\n$$x^2 + x^2 y = y^2 + x y^2$$\n$$(x^2 - y^2) + x y(x - y) = 0$$\n$$(x - y)(x + y + xy) = 0$$\nSince $x \\ne y$, we divide by $x - y$:\n$$x + y + xy = 0$$\n$$y(1 + x) = -x \\implies y = -\\frac{x}{1 + x} = -\\frac{(1 + x) - 1}{1 + x} = -1 + \\frac{1}{1 + x}$$\nDifferentiating with respect to $x$:\n$$\\frac{dy}{dx} = -\\frac{1}{(1 + x)^2}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $f(x) = e^x - x$ and $g(x) = x^2 - x$. If $h(x) = (f \\circ g)(x)$, then $h'(1)$ is equal to:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$1$",
+            "$e - 1$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "By the chain rule:\n$$h'(x) = f'(g(x)) \\cdot g'(x)$$\nFind $g(1)$ and $g'(1)$:\n$$g(x) = x^2 - x \\implies g(1) = 1^2 - 1 = 0$$\n$$g'(x) = 2x - 1 \\implies g'(1) = 2(1) - 1 = 1$$\nFind $f'(x)$ and $f'(g(1)) = f'(0)$:\n$$f(x) = e^x - x \\implies f'(x) = e^x - 1$$\n$$f'(0) = e^0 - 1 = 1 - 1 = 0$$\nNow evaluate $h'(1)$:\n$$h'(1) = f'(g(1)) \\cdot g'(1) = f'(0) \\cdot 1 = 0 \\times 1 = 0$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If $y = \\left(x + \\sqrt{1 + x^2}\\right)^m$, then $(1 + x^2)\\frac{d^2y}{dx^2} + x\\frac{dy}{dx}$ is equal to:",
+          "image": "",
+          "options": [
+            "$m^2 y$",
+            "$-m^2 y$",
+            "$m y$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "Differentiate $y = (x + \\sqrt{1 + x^2})^m$ with respect to $x$:\n$$\\frac{dy}{dx} = m\\left(x + \\sqrt{1 + x^2}\\right)^{m-1} \\cdot \\left(1 + \\frac{2x}{2\\sqrt{1 + x^2}}\\right)$$\n$$= m\\left(x + \\sqrt{1 + x^2}\\right)^{m-1} \\cdot \\left(\\frac{\\sqrt{1 + x^2} + x}{\\sqrt{1 + x^2}}\\right) = \\frac{m\\left(x + \\sqrt{1 + x^2}\\right)^m}{\\sqrt{1 + x^2}} = \\frac{my}{\\sqrt{1 + x^2}}$$\nMultiply both sides by $\\sqrt{1 + x^2}$:\n$$\\sqrt{1 + x^2}\\frac{dy}{dx} = my$$\nSquare both sides:\n$$(1 + x^2)\\left(\\frac{dy}{dx}\\right)^2 = m^2 y^2$$\nDifferentiate implicitly with respect to $x$:\n$$2x\\left(\\frac{dy}{dx}\\right)^2 + (1 + x^2) \\cdot 2\\left(\\frac{dy}{dx}\\right)\\frac{d^2y}{dx^2} = m^2 \\cdot 2y\\frac{dy}{dx}$$\nDivide through by $2\\frac{dy}{dx}$ (for non-zero derivative):\n$$x\\frac{dy}{dx} + (1 + x^2)\\frac{d^2y}{dx^2} = m^2 y$$\n$$(1 + x^2)\\frac{d^2y}{dx^2} + x\\frac{dy}{dx} = m^2 y$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $f(x) = \\begin{vmatrix} x^3 & \\sin x & \\cos x \\\\ 6 & -1 & 0 \\\\ p & p^2 & p^3 \\end{vmatrix}$, where $p$ is a constant, then the value of $\\frac{d^3}{dx^3}[f(x)]$ at $x = 0$ is:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$6p^3$",
+            "$-6p$",
+            "$p^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Notice that only the first row of the determinant contains functions of $x$; rows 2 and 3 consist solely of constants.\nTherefore, taking derivatives with respect to $x$ differentiates only the entries of the first row:\n$$f'''(x) = \\begin{vmatrix} \\frac{d^3}{dx^3}(x^3) & \\frac{d^3}{dx^3}(\\sin x) & \\frac{d^3}{dx^3}(\\cos x) \\\\ 6 & -1 & 0 \\\\ p & p^2 & p^3 \\end{vmatrix}$$\nEvaluate the derivatives:\n$$\\frac{d^3}{dx^3}(x^3) = 6$$\n$$\\frac{d^3}{dx^3}(\\sin x) = -\\cos x$$\n$$\\frac{d^3}{dx^3}(\\cos x) = \\sin x$$\nAt $x = 0$:\n$$6, \\quad -\\cos(0) = -1, \\quad \\sin(0) = 0$$\nSubstitute these into the first row of $f'''(0)$:\n$$f'''(0) = \\begin{vmatrix} 6 & -1 & 0 \\\\ 6 & -1 & 0 \\\\ p & p^2 & p^3 \\end{vmatrix}$$\nSince Row 1 and Row 2 are identical, the determinant vanishes:\n$$f'''(0) = 0$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If $2^x + 2^y = 2^{x+y}$, then the value of $\\frac{dy}{dx}$ at $x = 1, y = 1$ is:",
+          "image": "",
+          "options": [
+            "$-1$",
+            "$1$",
+            "$2$",
+            "$-2$"
+          ],
+          "correctOption": 0,
+          "solution": "Divide both sides of the equation by $2^{x+y}$:\n$$2^{-y} + 2^{-x} = 1$$\nDifferentiating implicitly with respect to $x$:\n$$-2^{-y}(\\ln 2)\\frac{dy}{dx} - 2^{-x}(\\ln 2) = 0$$\nDivide by $-\\ln 2$:\n$$2^{-y}\\frac{dy}{dx} + 2^{-x} = 0 \\implies \\frac{dy}{dx} = -\\frac{2^{-x}}{2^{-y}} = -2^{y - x}$$\nAt $x = 1, y = 1$:\n$$\\frac{dy}{dx} = -2^{1 - 1} = -2^0 = -1$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $g$ be the inverse of a differentiable function $f$. If $f'(x) = \\frac{1}{1 + x^5}$, then $g'(x)$ is equal to:",
+          "image": "",
+          "options": [
+            "$1 + [g(x)]^5$",
+            "$\\frac{1}{1 + [g(x)]^5}$",
+            "$5[g(x)]^4$",
+            "$1 + x^5$"
+          ],
+          "correctOption": 0,
+          "solution": "Since $g$ is the inverse function of $f$, we have:\n$$f(g(x)) = x$$\nDifferentiating both sides with respect to $x$ by the chain rule:\n$$f'(g(x)) \\cdot g'(x) = 1 \\implies g'(x) = \\frac{1}{f'(g(x))}$$\nGiven $f'(t) = \\frac{1}{1 + t^5}$, replace $t$ by $g(x)$:\n$$f'(g(x)) = \\frac{1}{1 + [g(x)]^5}$$\nTherefore:\n$$g'(x) = \\frac{1}{\\frac{1}{1 + [g(x)]^5}} = 1 + [g(x)]^5$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If $y = \\sqrt{\\sin x + \\sqrt{\\sin x + \\sqrt{\\sin x + \\dots \\infty}}}$, then $(2y - 1)\\frac{dy}{dx}$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\cos x$",
+            "$-\\cos x$",
+            "$\\sin x$",
+            "$-\\sin x$"
+          ],
+          "correctOption": 0,
+          "solution": "Rewrite the infinite nested radical as:\n$$y = \\sqrt{\\sin x + y}$$\nSquaring both sides:\n$$y^2 = \\sin x + y$$\nDifferentiating implicitly with respect to $x$:\n$$2y\\frac{dy}{dx} = \\cos x + \\frac{dy}{dx}$$\n$$2y\\frac{dy}{dx} - \\frac{dy}{dx} = \\cos x$$\n$$(2y - 1)\\frac{dy}{dx} = \\cos x$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The derivative of $\\sin^{-1}\\left(\\frac{2x}{1 + x^2}\\right)$ with respect to $\\cos^{-1}\\left(\\frac{1 - x^2}{1 + x^2}\\right)$ for $0 < x < 1$ is:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$-1$",
+            "$\\frac{1}{2}$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $u = \\sin^{-1}\\left(\\frac{2x}{1 + x^2}\\right)$ and $v = \\cos^{-1}\\left(\\frac{1 - x^2}{1 + x^2}\\right)$.\nFor $x \\in (0, 1)$, substitute $x = \\tan\\theta$ where $\\theta \\in (0, \\pi/4)$:\n$$u = \\sin^{-1}(\\sin 2\\theta) = 2\\theta = 2\\tan^{-1} x$$\n$$v = \\cos^{-1}(\\cos 2\\theta) = 2\\theta = 2\\tan^{-1} x$$\nNow find the derivative of $u$ with respect to $v$:\n$$\\frac{du}{dv} = \\frac{du/dx}{dv/dx} = \\frac{\\frac{2}{1 + x^2}}{\\frac{2}{1 + x^2}} = 1$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $x = t^3 - 3t$ and $y = t^2 + 2t$, then the slope of the tangent to the curve at $t = 2$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{2}{3}$",
+            "$\\frac{3}{2}$",
+            "$\\frac{1}{3}$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "Compute the derivatives with respect to parameter $t$:\n$$\\frac{dx}{dt} = 3t^2 - 3$$\n$$\\frac{dy}{dt} = 2t + 2$$\nThe slope of the tangent is given by:\n$$\\frac{dy}{dx} = \\frac{dy/dt}{dx/dt} = \\frac{2t + 2}{3t^2 - 3} = \\frac{2(t + 1)}{3(t - 1)(t + 1)} = \\frac{2}{3(t - 1)}$$\nAt $t = 2$:\n$$\\left.\\frac{dy}{dx}\\right|_{t=2} = \\frac{2}{3(2 - 1)} = \\frac{2}{3}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If $e^y + x y = e$, the value of $\\frac{d^2y}{dx^2}$ at $x = 0$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{e^2}$",
+            "$-\\frac{1}{e^2}$",
+            "$\\frac{1}{e}$",
+            "$-\\frac{1}{e}$"
+          ],
+          "correctOption": 0,
+          "solution": "1) At $x = 0$:\n$$e^y + 0 = e \\implies e^y = e^1 \\implies y = 1$$\n2) First implicit derivative:\n$$e^y \\frac{dy}{dx} + y + x\\frac{dy}{dx} = 0$$\n$$\\frac{dy}{dx}(e^y + x) = -y \\implies \\frac{dy}{dx} = -\\frac{y}{e^y + x}$$\nAt $x = 0, y = 1$:\n$$y'(0) = -\\frac{1}{e^1 + 0} = -\\frac{1}{e}$$\n3) Second derivative using product rule on $(e^y + x)y' = -y$:\n$$(e^y y' + 1)y' + (e^y + x)y'' = -y'$$\nAt $x = 0, y = 1, y' = -1/e$:\n$$\\left(e\\left(-\\frac{1}{e}\\right) + 1\\right)\\left(-\\frac{1}{e}\\right) + (e + 0)y'' = -\\left(-\\frac{1}{e}\\right)$$\n$$(-1 + 1)\\left(-\\frac{1}{e}\\right) + e y'' = \\frac{1}{e}$$\n$$0 + e y'' = \\frac{1}{e} \\implies y'' = \\frac{1}{e^2}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If $y = \\left[\\ln\\left(x + \\sqrt{x^2 + 1}\\right)\\right]^2$, then $(x^2 + 1)\\frac{d^2y}{dx^2} + x\\frac{dy}{dx}$ is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$1$",
+            "$4$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $u = \\ln(x + \\sqrt{x^2 + 1})$, so $y = u^2$.\nDerivative of $u$:\n$$\\frac{du}{dx} = \\frac{1}{x + \\sqrt{x^2 + 1}} \\cdot \\left(1 + \\frac{x}{\\sqrt{x^2 + 1}}\\right) = \\frac{1}{\\sqrt{x^2 + 1}}$$\nThen:\n$$\\frac{dy}{dx} = 2u \\frac{du}{dx} = \\frac{2\\ln(x + \\sqrt{x^2 + 1})}{\\sqrt{x^2 + 1}}$$\n$$\\sqrt{x^2 + 1}\\frac{dy}{dx} = 2\\ln\\left(x + \\sqrt{x^2 + 1}\\right)$$\nSquare both sides:\n$$(x^2 + 1)\\left(\\frac{dy}{dx}\\right)^2 = 4\\left[\\ln\\left(x + \\sqrt{x^2 + 1}\\right)\\right]^2 = 4y$$\nDifferentiate both sides with respect to $x$:\n$$2x\\left(\\frac{dy}{dx}\\right)^2 + (x^2 + 1) \\cdot 2\\left(\\frac{dy}{dx}\\right)\\frac{d^2y}{dx^2} = 4\\frac{dy}{dx}$$\nDivide through by $2\\frac{dy}{dx}$:\n$$x\\frac{dy}{dx} + (x^2 + 1)\\frac{d^2y}{dx^2} = 2$$\n$$(x^2 + 1)\\frac{d^2y}{dx^2} + x\\frac{dy}{dx} = 2$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $f(x) = \\cos x$ and $g(x) = x^3$. The value of $\\frac{d}{dx}\\left[f(g(x))\\right]$ at $x = \\pi^{1/3}$ is:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$-3\\pi^{2/3}$",
+            "$3\\pi^{2/3}$",
+            "$-1$"
+          ],
+          "correctOption": 0,
+          "solution": "Composite function is $h(x) = f(g(x)) = \\cos(x^3)$.\nDifferentiating with respect to $x$ via the chain rule:\n$$h'(x) = -\\sin(x^3) \\cdot \\frac{d}{dx}(x^3) = -3x^2\\sin(x^3)$$\nSubstitute $x = \\pi^{1/3}$:\n$$h'(\\pi^{1/3}) = -3(\\pi^{1/3})^2 \\sin\\left((\\pi^{1/3})^3\\right) = -3\\pi^{2/3} \\sin(\\pi)$$\nSince $\\sin(\\pi) = 0$:\n$$h'(\\pi^{1/3}) = -3\\pi^{2/3}(0) = 0$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $x = a\\cos^3 t$ and $y = a\\sin^3 t$, then $\\sqrt{1 + \\left(\\frac{dy}{dx}\\right)^2}$ is equal to:",
+          "image": "",
+          "options": [
+            "$|\\sec t|$",
+            "$|\\csc t|$",
+            "$|\\tan t|$",
+            "$\\sec^2 t$"
+          ],
+          "correctOption": 0,
+          "solution": "Compute parametric derivatives:\n$$\\frac{dx}{dt} = 3a\\cos^2 t(-\\sin t) = -3a\\cos^2 t \\sin t$$\n$$\\frac{dy}{dt} = 3a\\sin^2 t(\\cos t) = 3a\\sin^2 t \\cos t$$\nCompute $\\frac{dy}{dx}$:\n$$\\frac{dy}{dx} = \\frac{3a\\sin^2 t \\cos t}{-3a\\cos^2 t \\sin t} = -\\frac{\\sin t}{\\cos t} = -\\tan t$$\nNow evaluate $\\sqrt{1 + (dy/dx)^2}$:\n$$\\sqrt{1 + (-\\tan t)^2} = \\sqrt{1 + \\tan^2 t} = \\sqrt{\\sec^2 t} = |\\sec t|$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $y = e^{a x}\\sin(b x)$, then the value of $y'' - 2a y' + (a^2 + b^2)y$ is:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$2ab y$",
+            "$(a^2 - b^2)y$",
+            "$e^{ax}$"
+          ],
+          "correctOption": 0,
+          "solution": "Find first derivative $y'$:\n$$y' = a e^{ax}\\sin(bx) + b e^{ax}\\cos(bx) = ay + b e^{ax}\\cos(bx)$$\nFind second derivative $y''$:\n$$y'' = a y' + b\\left[a e^{ax}\\cos(bx) - b e^{ax}\\sin(bx)\\right]$$\nNotice $b e^{ax}\\cos(bx) = y' - ay$ and $e^{ax}\\sin(bx) = y$:\n$$y'' = a y' + a(y' - ay) - b^2 y$$\n$$y'' = 2a y' - (a^2 + b^2)y$$\nRearranging all terms to one side:\n$$y'' - 2a y' + (a^2 + b^2)y = 0$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If $\\sin y = x\\sin(a + y)$, then $\\frac{dy}{dx}$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{\\sin^2(a + y)}{\\sin a}$",
+            "$\\frac{\\sin a}{\\sin^2(a + y)}$",
+            "$\\frac{\\sin^2(a + y)}{\\cos a}$",
+            "$\\frac{\\cos a}{\\sin^2(a + y)}$"
+          ],
+          "correctOption": 0,
+          "solution": "Express $x$ explicitly as a function of $y$:\n$$x = \\frac{\\sin y}{\\sin(a + y)}$$\nDifferentiating $x$ with respect to $y$ using the quotient rule:\n$$\\frac{dx}{dy} = \\frac{\\sin(a + y)\\cos y - \\sin y\\cos(a + y)}{\\sin^2(a + y)}$$\nUsing the sine subtraction formula $\\sin A\\cos B - \\cos A\\sin B = \\sin(A - B)$ with $A = a + y$ and $B = y$:\n$$\\sin(a + y)\\cos y - \\cos(a + y)\\sin y = \\sin((a + y) - y) = \\sin a$$\nTherefore:\n$$\\frac{dx}{dy} = \\frac{\\sin a}{\\sin^2(a + y)}$$\nTaking the reciprocal:\n$$\\frac{dy}{dx} = \\frac{1}{dx/dy} = \\frac{\\sin^2(a + y)}{\\sin a}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If $f(x) = x^3 + e^{x/2}$ and $g(x) = f^{-1}(x)$, then the value of $g'(1)$ is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$\\frac{1}{2}$",
+            "$\\frac{2}{7}$",
+            "$\\frac{7}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "We need $g'(1) = \\frac{1}{f'(x_0)}$ where $f(x_0) = 1$.\nFind $x_0$ such that $x_0^3 + e^{x_0/2} = 1$:\nBy inspection, at $x_0 = 0$:\n$$0^3 + e^0 = 1 = 1$$\nSo $x_0 = 0$.\nNow compute $f'(x)$:\n$$f'(x) = 3x^2 + \\frac{1}{2}e^{x/2}$$\nAt $x_0 = 0$:\n$$f'(0) = 3(0)^2 + \\frac{1}{2}e^0 = \\frac{1}{2}$$\nThus:\n$$g'(1) = \\frac{1}{f'(0)} = \\frac{1}{1/2} = 2$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If $y = x^x$ for $x > 0$, find the value of $\\frac{dy}{dx}$ at $x = 1$.",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Using logarithmic differentiation:\n$$\\ln y = x\\ln x$$\n$$\\frac{1}{y}\\frac{dy}{dx} = 1 \\cdot \\ln x + x \\cdot \\frac{1}{x} = \\ln x + 1$$\n$$\\frac{dy}{dx} = x^x (1 + \\ln x)$$\nAt $x = 1$:\n$$\\left.\\frac{dy}{dx}\\right|_{x=1} = 1^1 (1 + \\ln 1) = 1(1 + 0) = 1.0$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] If $x^2 + y^2 = 25$, find the value of $\\left|\\frac{d^2y}{dx^2}\\right|$ at the point $(3, 4)$ (in decimal form).",
+          "image": "",
+          "correctValue": 0.39,
+          "solution": "Differentiating $x^2 + y^2 = 25$ implicitly:\n$$2x + 2y y' = 0 \\implies y' = -\\frac{x}{y}$$\nAt $(3, 4)$, $y' = -\\frac{3}{4}$.\nDifferentiating $y'$ again:\n$$y'' = -\\frac{y(1) - x y'}{y^2} = -\\frac{y - x(-x/y)}{y^2} = -\\frac{y^2 + x^2}{y^3} = -\\frac{25}{y^3}$$\nAt $y = 4$:\n$$y'' = -\\frac{25}{4^3} = -\\frac{25}{64} = -0.390625$$\n$$\\left|\\frac{d^2y}{dx^2}\\right| = \\frac{25}{64} \\approx 0.39$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Let $f(x) = \\ln(\\sec x + \\tan x)$. Find the value of $f'\\left(\\frac{\\pi}{3}\\right)$.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "Using the standard derivative of $\\ln(\\sec x + \\tan x)$:\n$$f'(x) = \\frac{1}{\\sec x + \\tan x} \\cdot (\\sec x\\tan x + \\sec^2 x) = \\frac{\\sec x(\\tan x + \\sec x)}{\\sec x + \\tan x} = \\sec x$$\nAt $x = \\frac{\\pi}{3}$:\n$$f'\\left(\\frac{\\pi}{3}\\right) = \\sec\\left(\\frac{\\pi}{3}\\right) = 2.0$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If $y = \\sin(m\\sin^{-1} x)$, find the value of $(1 - x^2)y'' - x y' + m^2 y$ at $x = 0.5$.",
+          "image": "",
+          "correctValue": 0.0,
+          "solution": "Differentiate $y = \\sin(m\\sin^{-1} x)$:\n$$y' = \\cos(m\\sin^{-1} x) \\cdot \\frac{m}{\\sqrt{1 - x^2}}$$\n$$\\sqrt{1 - x^2} y' = m\\cos(m\\sin^{-1} x)$$\nSquaring both sides:\n$$(1 - x^2)(y')^2 = m^2 \\cos^2(m\\sin^{-1} x) = m^2 (1 - \\sin^2(m\\sin^{-1} x)) = m^2(1 - y^2)$$\nDifferentiating implicitly with respect to $x$:\n$$-2x(y')^2 + (1 - x^2) \\cdot 2y' y'' = m^2(-2y y')$$\nDividing through by $2y'$:\n$$-x y' + (1 - x^2)y'' = -m^2 y$$\n$$(1 - x^2)y'' - x y' + m^2 y = 0$$\nThis identity holds identically for all $x \\in (-1, 1)$, so its value at $x = 0.5$ is $0.0$."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] If $f(x) = 2x^5 + 5x^3 + 2$, find the value of $f'(1)$.",
+          "image": "",
+          "correctValue": 25.0,
+          "solution": "Differentiating $f(x)$ with respect to $x$:\n$$f'(x) = 2(5x^4) + 5(3x^2) + 0 = 10x^4 + 15x^2$$\nEvaluating at $x = 1$:\n$$f'(1) = 10(1)^4 + 15(1)^2 = 10 + 15 = 25.0$$"
+        }
+      ]
+    }
+  ]
+}

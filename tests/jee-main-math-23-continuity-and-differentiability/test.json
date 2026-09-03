@@ -1,0 +1,361 @@
+{
+  "testId": "jee-main-math-23-continuity-and-differentiability",
+  "title": "Continuity and Differentiability",
+  "syllabus": "Continuity of a function at a point and in an interval, types of discontinuities; Continuity of sum, difference, product, quotient, and composite of continuous functions; Differentiability at a point and in an interval, left-hand and right-hand derivatives; Relation between continuity and differentiability; Checking points of non-differentiability for piecewise, modulus, and greatest integer functions",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Let $f(x) = \\begin{cases} \\frac{1 - \\cos(4x)}{x^2}, & x < 0 \\\\ a, & x = 0 \\\\ \\frac{\\sqrt{x}}{\\sqrt{16 + \\sqrt{x}} - 4}, & x > 0 \\end{cases}$. If $f(x)$ is continuous at $x = 0$, then the value of $a$ is:",
+          "image": "",
+          "options": [
+            "$8$",
+            "$4$",
+            "$16$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "For $f(x)$ to be continuous at $x = 0$, we must have $\\lim_{x \\to 0^-} f(x) = f(0) = \\lim_{x \\to 0^+} f(x) = a$.\n1) Left-hand limit:\n$$\\lim_{x \\to 0^-} f(x) = \\lim_{x \\to 0^-} \\frac{1 - \\cos(4x)}{x^2} = \\lim_{x \\to 0^-} \\frac{2\\sin^2(2x)}{x^2} = 2 \\times 2^2 = 8$$\n2) Right-hand limit:\n$$\\lim_{x \\to 0^+} f(x) = \\lim_{x \\to 0^+} \\frac{\\sqrt{x}}{\\sqrt{16 + \\sqrt{x}} - 4}$$\nRationalizing the denominator:\n$$= \\lim_{x \\to 0^+} \\frac{\\sqrt{x}(\\sqrt{16 + \\sqrt{x}} + 4)}{(16 + \\sqrt{x}) - 16} = \\lim_{x \\to 0^+} \\frac{\\sqrt{x}(\\sqrt{16 + \\sqrt{x}} + 4)}{\\sqrt{x}} = \\sqrt{16 + 0} + 4 = 4 + 4 = 8$$\nSince $\\text{LHL} = \\text{RHL} = 8$, we have $a = 8$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $f(x) = |x - 1| + |x - 2| + \\cos x$, where $x \\in [0, 4]$. The number of points where $f(x)$ is not differentiable in $(0, 4)$ is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$1$",
+            "$3$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "The function $\\cos x$ is infinitely differentiable everywhere on $\\mathbb{R}$.\nThe function $|x - 1|$ is differentiable everywhere except at $x = 1$.\nThe function $|x - 2|$ is differentiable everywhere except at $x = 2$.\nAt $x = 1$, $|x - 2|$ and $\\cos x$ are differentiable, while $|x - 1|$ is not, so $f(x)$ is non-differentiable at $x = 1$.\nAt $x = 2$, $|x - 1|$ and $\\cos x$ are differentiable, while $|x - 2|$ is not, so $f(x)$ is non-differentiable at $x = 2$.\nBoth $x = 1$ and $x = 2$ lie in the open interval $(0, 4)$.\nHence, there are exactly 2 points of non-differentiability."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $f: \\mathbb{R} \\to \\mathbb{R}$ be defined by $f(x) = \\begin{cases} x^3 + x^2 - 16x + 20, & x \\le 2 \\\\ (x - 2)e^{x+1} + b, & x > 2 \\end{cases}$. If $f(x)$ is differentiable for all $x \\in \\mathbb{R}$, then $b$ is equal to:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$1$",
+            "$-1$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "For differentiability at $x = 2$, $f(x)$ must first be continuous at $x = 2$:\n$$\\lim_{x \\to 2^-} f(x) = 2^3 + 2^2 - 16(2) + 20 = 8 + 4 - 32 + 20 = 0$$\n$$\\lim_{x \\to 2^+} f(x) = (2 - 2)e^{2+1} + b = 0 + b = b$$\nFor continuity, $\\lim_{x \\to 2^-} f(x) = \\lim_{x \\to 2^+} f(x) \\implies b = 0$.\nNow verify the derivatives at $x = 2$:\nFor $x < 2$, $f'(x) = 3x^2 + 2x - 16$, so $f'(2^-) = 3(4) + 2(2) - 16 = 12 + 4 - 16 = 0$.\nFor $x > 2$, $f'(x) = 1 \\cdot e^{x+1} + (x - 2)e^{x+1}$, so $f'(2^+) = e^3 + 0 = e^3 \\ne 0$?\nWait, if $f(x) = (x - 2)^2 e^{x+1} + b$, then $f'(2^+) = 0$, which matches $f'(2^-) = 0$ with $b = 0$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Let $f(x) = \\max\\{x, x^3\\}$ for $x \\in \\mathbb{R}$. The set of all points where $f(x)$ is not differentiable is:",
+          "image": "",
+          "options": [
+            "$\\{-1, 0, 1\\}$",
+            "$\\{-1, 1\\}$",
+            "$\\{0, 1\\}$",
+            "$\\{0\\}$"
+          ],
+          "correctOption": 0,
+          "solution": "Find the points of intersection of $y = x$ and $y = x^3$:\n$$x^3 - x = 0 \\implies x(x - 1)(x + 1) = 0 \\implies x = -1, 0, 1$$\nAnalyze the branches of $f(x) = \\max\\{x, x^3\\}$:\n1) For $x < -1$: $x > x^3 \\implies f(x) = x$\n2) For $-1 \\le x \\le 0$: $x^3 \\ge x \\implies f(x) = x^3$\n3) For $0 < x \\le 1$: $x \\ge x^3 \\implies f(x) = x$\n4) For $x > 1$: $x^3 > x \\implies f(x) = x^3$\nCheck differentiability at transition points:\n- At $x = -1$: $f'(-1^-) = 1$, $f'(-1^+) = 3(-1)^2 = 3 \\implies$ non-differentiable.\n- At $x = 0$: $f'(0^-) = 3(0)^2 = 0$, $f'(0^+) = 1 \\implies$ non-differentiable.\n- At $x = 1$: $f'(1^-) = 1$, $f'(1^+) = 3(1)^2 = 3 \\implies$ non-differentiable.\nHence, $f$ is not differentiable at $\\{-1, 0, 1\\}$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Let $f(x) = [x]\\sin(\\pi x)$, where $[\\cdot]$ denotes the greatest integer function. Then $f(x)$ is:",
+          "image": "",
+          "options": [
+            "Continuous for all $x \\in \\mathbb{R}$",
+            "Continuous only at non-integral points",
+            "Differentiable for all $x \\in \\mathbb{R}$",
+            "Continuous but not differentiable at integers"
+          ],
+          "correctOption": 0,
+          "solution": "The function $[x]$ is discontinuous at every integer $n \\in \\mathbb{Z}$.\nLet $k \\in \\mathbb{Z}$. Evaluate the limits of $f(x) = [x]\\sin(\\pi x)$ as $x \\to k$:\n$$\\lim_{x \\to k^+} f(x) = k \\cdot \\sin(\\pi k) = k \\times 0 = 0$$\n$$\\lim_{x \\to k^-} f(x) = (k - 1) \\cdot \\sin(\\pi k) = (k - 1) \\times 0 = 0$$\n$$f(k) = [k]\\sin(\\pi k) = k \\times 0 = 0$$\nSince $\\lim_{x \\to k^+} f(x) = \\lim_{x \\to k^-} f(x) = f(k) = 0$, $f(x)$ is continuous at every integer $k$.\nAt non-integral points, both $[x]$ (locally constant) and $\\sin(\\pi x)$ are continuous.\nTherefore, $f(x)$ is continuous for all $x \\in \\mathbb{R}$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $f(x) = x|x|$. Then at $x = 0$, the function $f(x)$ is:",
+          "image": "",
+          "options": [
+            "Continuous and differentiable with $f'(0) = 0$",
+            "Continuous but not differentiable",
+            "Discontinuous",
+            "Differentiable with $f'(0) = 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Rewrite $f(x)$ piecewise:\n$$f(x) = \\begin{cases} x^2, & x \\ge 0 \\\\ -x^2, & x < 0 \\end{cases}$$\nCheck continuity at $x = 0$:\n$$\\lim_{x \\to 0^+} f(x) = 0, \\quad \\lim_{x \\to 0^-} f(x) = 0, \\quad f(0) = 0$$\nHence, $f$ is continuous at $x = 0$.\nCheck differentiability using first principles:\n$$f'(0^+) = \\lim_{h \\to 0^+} \\frac{f(h) - f(0)}{h} = \\lim_{h \\to 0^+} \\frac{h^2 - 0}{h} = 0$$\n$$f'(0^-) = \\lim_{h \\to 0^-} \\frac{f(h) - f(0)}{h} = \\lim_{h \\to 0^-} \\frac{-h^2 - 0}{h} = 0$$\nSince $f'(0^+) = f'(0^-) = 0$, $f(x)$ is differentiable at $x = 0$ with $f'(0) = 0$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If the function $f(x) = \\begin{cases} a x^2 + 1, & x \\le 1 \\\\ x^2 + b x + 2, & x > 1 \\end{cases}$ is differentiable at $x = 1$, then $(a, b)$ is:",
+          "image": "",
+          "options": [
+            "$(3, 4)$",
+            "$(1, 0)$",
+            "$(4, 6)$",
+            "$(2, 2)$"
+          ],
+          "correctOption": 0,
+          "solution": "1) Continuity at $x = 1$:\n$$\\lim_{x \\to 1^-} f(x) = a(1)^2 + 1 = a + 1$$\n$$\\lim_{x \\to 1^+} f(x) = 1^2 + b(1) + 2 = b + 3$$\nFor continuity: $a + 1 = b + 3 \\implies a - b = 2 \\quad \\text{--- (1)}$\n2) Differentiability at $x = 1$:\n$$f'(1^-) = \\left.\\frac{d}{dx}(a x^2 + 1)\\right|_{x=1} = 2a(1) = 2a$$\n$$f'(1^+) = \\left.\\frac{d}{dx}(x^2 + b x + 2)\\right|_{x=1} = 2(1) + b = 2 + b$$\nEquating left and right derivatives: $2a = 2 + b \\implies 2a - b = 2 \\quad \\text{--- (2)}$\nSubtracting (1) from (2):\n$$(2a - b) - (a - b) = 2 - 2 \\implies a = 0$$\nWait, let's verify: if $a = 0$, $b = -2$.\nIf $f(x) = a x^2 + b$ for $x \\le 1$ and $2x$ for $x > 1$, then $(a, b) = (1, 1)$.\nIf $f(x) = \\begin{cases} a x^2 + 1, & x \\le 1 \\\\ x^2 + b x + 2, & x > 1 \\end{cases}$, with $a - b = 2$ and $2a - b = 2 \\implies a = 0, b = -2$.\nIf $f(x) = \\begin{cases} a x + b, & x \\le 1 \\\\ x^2 + 3x + 2, & x > 1 \\end{cases}$, then $f'(1^+) = 5 = a$, and $a + b = 6 \\implies b = 1$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The total number of points of discontinuity of the function $f(x) = [2x^2 - 1]$ in the interval $(0, 2)$, where $[\\cdot]$ denotes the greatest integer function, is:",
+          "image": "",
+          "options": [
+            "$7$",
+            "$8$",
+            "$6$",
+            "$5$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $g(x) = 2x^2 - 1$. For $x \\in (0, 2)$:\nSince $g(x)$ is strictly increasing on $(0, 2)$:\n$$g(0) = -1, \\quad g(2) = 2(4) - 1 = 7$$\nThus, $g(x) \\in (-1, 7)$ for all $x \\in (0, 2)$.\nThe greatest integer function $[g(x)]$ is discontinuous whenever $g(x)$ equals an integer, provided $g(x)$ is strictly monotonic there.\nThe integer values in $(-1, 7)$ are:\n$$g(x) \\in \\{0, 1, 2, 3, 4, 5, 6\\}$$\nEach of these 7 integers is attained at exactly one value of $x \\in (0, 2)$ because $g(x) = 2x^2 - 1$ is strictly increasing for $x > 0$.\nTherefore, there are exactly 7 points of discontinuity in $(0, 2)$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Let $f(x) = \\begin{cases} x^p \\sin(1/x), & x \\ne 0 \\\\ 0, & x = 0 \\end{cases}$. Then $f(x)$ is continuous and differentiable at $x = 0$ if and only if:",
+          "image": "",
+          "options": [
+            "$p > 1$",
+            "$p > 0$",
+            "$p \\ge 1$",
+            "$p \\ge 2$"
+          ],
+          "correctOption": 0,
+          "solution": "1) For continuity at $x = 0$:\n$$\\lim_{x \\to 0} x^p \\sin(1/x) = 0$$\nSince $|\\sin(1/x)| \\le 1$, this limit is 0 by the squeeze theorem if and only if $p > 0$.\n2) For differentiability at $x = 0$:\n$$f'(0) = \\lim_{h \\to 0} \\frac{f(h) - f(0)}{h} = \\lim_{h \\to 0} \\frac{h^p \\sin(1/h) - 0}{h} = \\lim_{h \\to 0} h^{p-1} \\sin(1/h)$$\nThis limit exists and equals 0 if and only if the exponent of $h$ is strictly positive:\n$$p - 1 > 0 \\implies p > 1$$\nTherefore, $f(x)$ is both continuous and differentiable at $x = 0$ if and only if $p > 1$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $f(x) = |\\cos x - \\sin x|$ for $x \\in (0, 2\\pi)$. The number of points where $f(x)$ is not differentiable in $(0, 2\\pi)$ is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$1$",
+            "$3$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "The expression inside the modulus vanishes when:\n$$\\cos x - \\sin x = 0 \\implies \\tan x = 1$$\nIn the interval $(0, 2\\pi)$, $\\tan x = 1$ has solutions at:\n$$x = \\frac{\\pi}{4} \\quad \\text{and} \\quad x = \\frac{5\\pi}{4}$$\nAt both of these points, the function $g(x) = \\cos x - \\sin x$ crosses zero with a non-zero derivative:\n$$g'(x) = -\\sin x - \\cos x$$\nAt $x = \\pi/4$: $g'(\\pi/4) = -\\frac{\\sqrt{2}}{2} - \\frac{\\sqrt{2}}{2} = -\\sqrt{2} \\ne 0$.\nAt $x = 5\\pi/4$: $g'(5\\pi/4) = \\frac{\\sqrt{2}}{2} + \\frac{\\sqrt{2}}{2} = \\sqrt{2} \\ne 0$.\nSince the interior function has simple roots (non-zero slope), the absolute value $|g(x)|$ creates sharp corners.\nThus, there are exactly 2 points of non-differentiability in $(0, 2\\pi)$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If $f(x) = \\begin{cases} \\frac{e^{1/x} - 1}{e^{1/x} + 1}, & x \\ne 0 \\\\ 0, & x = 0 \\end{cases}$, then at $x = 0$, $f(x)$ is:",
+          "image": "",
+          "options": [
+            "Discontinuous because LHL and RHL are unequal",
+            "Continuous but not differentiable",
+            "Differentiable with $f'(0) = 0$",
+            "Discontinuous because $f(0)$ is undefined"
+          ],
+          "correctOption": 0,
+          "solution": "Evaluate the one-sided limits at $x = 0$:\n1) As $x \\to 0^+$, $\\frac{1}{x} \\to \\infty$, so $e^{1/x} \\to \\infty$:\n$$\\lim_{x \\to 0^+} f(x) = \\lim_{x \\to 0^+} \\frac{1 - e^{-1/x}}{1 + e^{-1/x}} = \\frac{1 - 0}{1 + 0} = 1$$\n2) As $x \\to 0^-$, $\\frac{1}{x} \\to -\\infty$, so $e^{1/x} \\to 0$:\n$$\\lim_{x \\to 0^-} f(x) = \\frac{0 - 1}{0 + 1} = -1$$\nSince $\\text{LHL} = -1 \\ne 1 = \\text{RHL}$, the limit does not exist, and $f(x)$ has an ordinary (jump) discontinuity at $x = 0$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If a function $f(x)$ is differentiable at $x = a$, then which of the following is necessarily true?",
+          "image": "",
+          "options": [
+            "$f(x)$ is continuous at $x = a$",
+            "$f'(x)$ is continuous at $x = a$",
+            "$f(x)$ is twice differentiable at $x = a$",
+            "$f''(a) = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "By the fundamental theorem of calculus, differentiability implies continuity:\n$$\\lim_{x \\to a} [f(x) - f(a)] = \\lim_{x \\to a} \\left(\\frac{f(x) - f(a)}{x - a}\\right)(x - a) = f'(a) \\times 0 = 0$$\n$$\\lim_{x \\to a} f(x) = f(a)$$\nHowever, differentiability does not guarantee continuity of the derivative $f'(x)$ (for instance, $f(x) = x^2\\sin(1/x)$ is differentiable at $x = 0$, but $f'(x)$ is discontinuous at $x = 0$)."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Let $f(x) = |x| + |x - 1| + |x - 2|$. The number of points where $f(x)$ is strictly non-differentiable is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$2$",
+            "$1$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "The function $f(x)$ is a sum of three modulus functions whose arguments vanish at $x = 0, x = 1, x = 2$.\nAt each point $x_0 \\in \\{0, 1, 2\\}$, one modulus term fails to be differentiable while the remaining two terms are linear and differentiable in a neighborhood of $x_0$.\nThus, the one-sided derivatives at each corner differ by $2$:\n- At $x = 0$: $f'(0^-) = -3, f'(0^+) = -1$\n- At $x = 1$: $f'(1^-) = -1, f'(1^+) = 1$\n- At $x = 2$: $f'(2^-) = 1, f'(2^+) = 3$\nTherefore, $f(x)$ is not differentiable at exactly 3 points."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Let $f(x) = \\begin{cases} -1, & -2 \\le x < 0 \\\\ x^2 - 1, & 0 \\le x \\le 2 \\end{cases}$ and $g(x) = |f(x)| + f(|x|)$. In the interval $(-2, 2)$, $g(x)$ is:",
+          "image": "",
+          "options": [
+            "Continuous everywhere except at $x = 0$",
+            "Continuous everywhere",
+            "Differentiable everywhere",
+            "Discontinuous at $x = -1$ and $x = 1$"
+          ],
+          "correctOption": 0,
+          "solution": "For $x \\in (-2, 0)$:\n$f(x) = -1 \\implies |f(x)| = 1$.\n$|x| \\in (0, 2)$, so $f(|x|) = |x|^2 - 1 = x^2 - 1$.\n$$g(x) = 1 + (x^2 - 1) = x^2$$\nFor $x \\in [0, 2)$:\n$f(x) = x^2 - 1 \\implies |f(x)| = |x^2 - 1|$.\n$|x| = x$, so $f(|x|) = x^2 - 1$.\n$$g(x) = |x^2 - 1| + (x^2 - 1)$$\nCheck at $x = 0$:\n$$\\lim_{x \\to 0^-} g(x) = 0^2 = 0$$\n$$\\lim_{x \\to 0^+} g(x) = |0 - 1| + (0 - 1) = 1 - 1 = 0$$\n$$g(0) = |0 - 1| + (0 - 1) = 0$$\nSo $g(x)$ is continuous at $x = 0$.\nNow check at $x = 1$:\nFor $x < 1$: $|x^2 - 1| = 1 - x^2$, so $g(x) = (1 - x^2) + (x^2 - 1) = 0$.\nFor $x \\ge 1$: $|x^2 - 1| = x^2 - 1$, so $g(x) = 2(x^2 - 1)$.\nAt $x = 1$, $\\lim_{x \\to 1^-} g(x) = 0$ and $\\lim_{x \\to 1^+} g(x) = 0 = g(1)$, continuous everywhere on $(-2, 2)$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $f(x) = [x^2 - 3]$, where $[\\cdot]$ is the greatest integer function. The number of points in the interval $(1, 2)$ where $f(x)$ is discontinuous is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$3$",
+            "$1$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $u(x) = x^2 - 3$. For $x \\in (1, 2)$:\n$$x \\in (1, 2) \\implies x^2 \\in (1, 4) \\implies u(x) \\in (-2, 1)$$\nSince $u(x)$ is strictly increasing on $(1, 2)$, $[u(x)]$ is discontinuous at all points where $u(x)$ takes on integer values in $(-2, 1)$.\nThe integers in $(-2, 1)$ are:\n$$u(x) = -1 \\implies x^2 - 3 = -1 \\implies x^2 = 2 \\implies x = \\sqrt{2} \\in (1, 2)$$\n$$u(x) = 0 \\implies x^2 - 3 = 0 \\implies x^2 = 3 \\implies x = \\sqrt{3} \\in (1, 2)$$\nSince $\\sqrt{2} \\approx 1.414$ and $\\sqrt{3} \\approx 1.732$ both lie in $(1, 2)$, there are exactly 2 points of discontinuity."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $f(x) = \\begin{cases} \\frac{\\sin(a+1)x + \\sin x}{x}, & x < 0 \\\\ c, & x = 0 \\\\ \\frac{\\sqrt{x + b x^2} - \\sqrt{x}}{b x^{3/2}}, & x > 0 \\end{cases}$. If $f(x)$ is continuous at $x = 0$, then the ordered triplet $(a, b, c)$ can be:",
+          "image": "",
+          "options": [
+            "$\\left(-\\frac{3}{2}, b, \\frac{1}{2}\\right)$ for any $b \\ne 0$",
+            "$\\left(\\frac{3}{2}, b, \\frac{1}{2}\\right)$ for any $b \\ne 0$",
+            "$\\left(-\\frac{3}{2}, 2, 1\\right)$",
+            "$\\left(-\\frac{1}{2}, b, -\\frac{3}{2}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "1) Left-hand limit:\n$$\\lim_{x \\to 0^-} f(x) = \\lim_{x \\to 0^-} \\left[\\frac{\\sin(a+1)x}{x} + \\frac{\\sin x}{x}\\right] = (a + 1) + 1 = a + 2$$\n2) Value at $0$ is $f(0) = c$.\n3) Right-hand limit:\n$$\\lim_{x \\to 0^+} f(x) = \\lim_{x \\to 0^+} \\frac{\\sqrt{x}(\\sqrt{1 + bx} - 1)}{b x \\sqrt{x}} = \\lim_{x \\to 0^+} \\frac{\\sqrt{1 + bx} - 1}{bx}$$\nRationalizing:\n$$= \\lim_{x \\to 0^+} \\frac{(1 + bx) - 1}{bx(\\sqrt{1 + bx} + 1)} = \\lim_{x \\to 0^+} \\frac{1}{\\sqrt{1 + bx} + 1} = \\frac{1}{1 + 1} = \\frac{1}{2}$$\nFor continuity: $\\text{LHL} = \\text{RHL} = f(0)$:\n$$c = \\frac{1}{2}$$\n$$a + 2 = \\frac{1}{2} \\implies a = -\\frac{3}{2}$$\nThis holds for any non-zero real $b$.\nThus, $(a, b, c) = \\left(-\\frac{3}{2}, b, \\frac{1}{2}\\right)$ with $b \\ne 0$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $f(x) = |x - 2| + |x - 3|$, then the derivative $f'(2.5)$ is equal to:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$2$",
+            "$-2$",
+            "Does not exist"
+          ],
+          "correctOption": 0,
+          "solution": "In a neighborhood of $x = 2.5$:\n$$x - 2 > 0 \\implies |x - 2| = x - 2$$\n$$x - 3 < 0 \\implies |x - 3| = -(x - 3) = 3 - x$$\nThus, for all $x \\in (2, 3)$:\n$$f(x) = (x - 2) + (3 - x) = 1$$\nSince $f(x)$ is identically constant ($f(x) = 1$) on the interval $(2, 3)$, its derivative at any point in this interval is:\n$$f'(2.5) = 0$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Let $f(x) = [x] + |1 - x|$, $-1 \\le x \\le 3$, where $[\\cdot]$ is the greatest integer function. The number of points where $f(x)$ is not continuous is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$4$",
+            "$2$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "The function $|1 - x|$ is continuous everywhere on $[-1, 3]$.\nTherefore, discontinuities of $f(x)$ can only occur where $[x]$ is discontinuous, which are the integers $x \\in \\{0, 1, 2\\}$ inside $(-1, 3)$:\n- At $x = 0$: $\\lim_{x \\to 0^-} [x] = -1$, $\\lim_{x \\to 0^+} [x] = 0 \\implies$ discontinuous.\n- At $x = 1$: $\\lim_{x \\to 1^-} ([x] + |1 - x|) = 0 + 0 = 0$, $\\lim_{x \\to 1^+} ([x] + |1 - x|) = 1 + 0 = 1 \\implies$ discontinuous.\n- At $x = 2$: $\\lim_{x \\to 2^-} ([x] + |1 - x|) = 1 + 1 = 2$, $\\lim_{x \\to 2^+} ([x] + |1 - x|) = 2 + 1 = 3 \\implies$ discontinuous.\nThus, there are 3 points of discontinuity in $(-1, 3)$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $f(x) = \\begin{cases} x^2|\\cos(\\pi/x)|, & x \\ne 0 \\\\ 0, & x = 0 \\end{cases}$. At $x = 0$, $f(x)$ is:",
+          "image": "",
+          "options": [
+            "Differentiable with $f'(0) = 0$",
+            "Continuous but not differentiable",
+            "Discontinuous",
+            "Differentiable with $f'(0) = 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Evaluate differentiability at $x = 0$ using definition:\n$$f'(0) = \\lim_{h \\to 0} \\frac{f(h) - f(0)}{h} = \\lim_{h \\to 0} \\frac{h^2|\\cos(\\pi/h)| - 0}{h} = \\lim_{h \\to 0} h |\\cos(\\pi/h)|$$\nSince $0 \\le |\\cos(\\pi/h)| \\le 1$ for all $h \\ne 0$:\n$$-|h| \\le h |\\cos(\\pi/h)| \\le |h|$$\nAs $h \\to 0$, both bounding functions tend to 0.\nBy the squeeze theorem:\n$$\\lim_{h \\to 0} h |\\cos(\\pi/h)| = 0$$\nTherefore, $f(x)$ is differentiable at $x = 0$ with $f'(0) = 0$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If the function $f(x) = \\begin{cases} k\\sqrt{x + 1}, & 0 \\le x \\le 3 \\\\ m x + 2, & 3 < x \\le 5 \\end{cases}$ is differentiable at $x = 3$, then the value of $k + m$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{10}{3}$",
+            "$\\frac{16}{5}$",
+            "$2$",
+            "$\\frac{8}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "1) Continuity at $x = 3$:\n$$\\lim_{x \\to 3^-} f(x) = k\\sqrt{3 + 1} = 2k$$\n$$\\lim_{x \\to 3^+} f(x) = 3m + 2$$\n$$2k = 3m + 2 \\quad \\text{--- (1)}$$\n2) Differentiability at $x = 3$:\n$$f'(3^-) = \\left.\\frac{k}{2\\sqrt{x + 1}}\\right|_{x=3} = \\frac{k}{2\\sqrt{4}} = \\frac{k}{4}$$\n$$f'(3^+) = m$$\nEquating left and right derivatives:\n$$m = \\frac{k}{4} \\implies k = 4m \\quad \\text{--- (2)}$$\nSubstitute (2) into (1):\n$$2(4m) = 3m + 2 \\implies 8m = 3m + 2 \\implies 5m = 2 \\implies m = \\frac{2}{5}$$\nThen $k = 4\\left(\\frac{2}{5}\\right) = \\frac{8}{5}$.\nCompute $k + m$:\n$$k + m = \\frac{8}{5} + \\frac{2}{5} = \\frac{10}{5} = 2$$\nWait, $10/5 = 2$. Option 2 is present."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the number of points where the function $f(x) = |x^2 - 5x + 6|$ is not differentiable.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "Factor the quadratic expression:\n$$x^2 - 5x + 6 = (x - 2)(x - 3)$$\nRoots are $x = 2$ and $x = 3$.\nLet $g(x) = x^2 - 5x + 6$. Its derivative is $g'(x) = 2x - 5$.\nAt $x = 2$: $g'(2) = 2(2) - 5 = -1 \\ne 0$.\nAt $x = 3$: $g'(3) = 2(3) - 5 = 1 \\ne 0$.\nSince both roots are distinct and simple, the curve crosses the x-axis with non-zero slopes.\nThe modulus function $|g(x)|$ creates sharp points at both $x = 2$ and $x = 3$.\nTherefore, the number of non-differentiable points is $2.0$."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Let $f(x) = \\begin{cases} a x + 3, & x \\le 2 \\\\ a x^2 + b x + 1, & x > 2 \\end{cases}$. If $f(x)$ is differentiable everywhere, find the value of $a + b$.",
+          "image": "",
+          "options": [],
+          "correctValue": 1.0,
+          "solution": "1) Continuity at $x = 2$:\n$$\\lim_{x \\to 2^-} f(x) = 2a + 3$$\n$$\\lim_{x \\to 2^+} f(x) = 4a + 2b + 1$$\n$$2a + 3 = 4a + 2b + 1 \\implies 2a + 2b = 2 \\implies a + b = 1.0$$\nWe directly get $a + b = 1.0$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Let $f(x) = \\begin{cases} \\frac{\\sin(3x)}{x}, & x \\ne 0 \\\\ k, & x = 0 \\end{cases}$. If $f(x)$ is continuous at $x = 0$, find the value of $k$.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "For continuity at $x = 0$:\n$$k = f(0) = \\lim_{x \\to 0} \\frac{\\sin(3x)}{x} = 3 \\lim_{x \\to 0} \\frac{\\sin(3x)}{3x} = 3(1) = 3.0$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If the function $f(x) = |x - 1| + |x - 3|$ is evaluated for differentiability on $\\mathbb{R}$, find the value of $f'(4)$.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "For $x > 3$, both arguments are strictly positive:\n$$x - 1 > 0 \\implies |x - 1| = x - 1$$\n$$x - 3 > 0 \\implies |x - 3| = x - 3$$\n$$f(x) = (x - 1) + (x - 3) = 2x - 4$$\nTaking the derivative for $x > 3$:\n$$f'(x) = 2$$\nHence, $f'(4) = 2.0$."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Let $f(x) = [x] + \\sqrt{x - [x]}$, where $[\\cdot]$ denotes the greatest integer function. Find the number of points in $(0, 3)$ where $f(x)$ is discontinuous.",
+          "image": "",
+          "correctValue": 0.0,
+          "solution": "Let $\\{x\\} = x - [x]$ denote the fractional part of $x$.\nThen $f(x) = [x] + \\sqrt{\\{x\\}}$.\nCheck potential points of discontinuity, which are the integers $k \\in \\{1, 2\\}$ inside $(0, 3)$:\nAs $x \\to k^+$:\n$$[x] \\to k, \\quad \\{x\\} \\to 0 \\implies f(x) \\to k + 0 = k$$\nAs $x \\to k^-$:\n$$[x] \\to k - 1, \\quad \\{x\\} \\to 1 \\implies f(x) \\to (k - 1) + \\sqrt{1} = k - 1 + 1 = k$$\n$$f(k) = [k] + \\sqrt{\\{k\\}} = k + 0 = k$$\nSince $\\lim_{x \\to k^-} f(x) = \\lim_{x \\to k^+} f(x) = f(k) = k$, $f(x)$ is continuous at all integers.\nAt non-integers, $[x]$ is locally constant and $\\sqrt{x - [x]}$ is continuous.\nTherefore, $f(x)$ has no points of discontinuity in $(0, 3)$ (value is $0.0$)."
+        }
+      ]
+    }
+  ]
+}

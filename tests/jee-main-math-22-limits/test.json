@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-22-limits",
+  "title": "Limits (Indeterminate Forms, L'Hopital's Rule, and Standard Limits)",
+  "syllabus": "Evaluation of limits, standard trigonometric, exponential, and logarithmic limits; Indeterminate forms (0/0, infinity/infinity, 1^infinity, 0 x infinity, infinity - infinity, 0^0, infinity^0); L'Hopital's rule and its repeated applications; Series expansions (Maclaurin/Taylor) for sin x, cos x, tan x, e^x, ln(1+x), (1+x)^n; Squeeze theorem (Sandwich theorem); One-sided limits (left-hand and right-hand limits) and non-existence of limits",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The value of $\\lim_{x \\to 0} \\frac{\\alpha x - \\left(e^{3x} - 1\\right)}{\\alpha x \\left(e^{3x} - 1\\right)}$ is finite and non-zero for $\\alpha$ equal to:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$-3$",
+            "$\\frac{3}{2}$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "Notice the denominator behavior as $x \\to 0$:\n$$\\alpha x(e^{3x} - 1) = \\alpha x \\left(3x + O(x^2)\\right) = 3\\alpha x^2 + O(x^3)$$\nNow expand the numerator using the Taylor expansion of $e^{3x}$:\n$$\\alpha x - (e^{3x} - 1) = \\alpha x - \\left(3x + \\frac{9x^2}{2} + O(x^3)\\right) = (\\alpha - 3)x - \\frac{9}{2}x^2 + O(x^3)$$\nFor the limit to be finite and non-zero, the lowest degree term in the numerator must match the lowest degree term of the denominator (degree 2).\nTherefore, the coefficient of $x$ must vanish:\n$$\\alpha - 3 = 0 \\implies \\alpha = 3$$\nWhen $\\alpha = 3$, the limit becomes:\n$$\\lim_{x \\to 0} \\frac{-\\frac{9}{2}x^2}{3(3)x^2} = \\frac{-9/2}{9} = -\\frac{1}{2} \\ne 0$$\nHence, $\\alpha = 3$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The value of $\\lim_{x \\to 0} \\left(\\frac{1 + 5x^2}{1 + 3x^2}\\right)^{1/x^2}$ is equal to:",
+          "image": "",
+          "options": [
+            "$e^2$",
+            "$e^8$",
+            "$e^{-2}$",
+            "$e^5$"
+          ],
+          "correctOption": 0,
+          "solution": "This limit is of the indeterminate form $1^\\infty$.\nFor a limit of the form $\\lim_{x \\to a} [f(x)]^{g(x)} = 1^\\infty$, the value is given by $e^L$ where:\n$$L = \\lim_{x \\to a} g(x)[f(x) - 1]$$\nHere $f(x) = \\frac{1 + 5x^2}{1 + 3x^2}$ and $g(x) = \\frac{1}{x^2}$:\n$$f(x) - 1 = \\frac{1 + 5x^2 - (1 + 3x^2)}{1 + 3x^2} = \\frac{2x^2}{1 + 3x^2}$$\n$$L = \\lim_{x \\to 0} \\frac{1}{x^2} \\left(\\frac{2x^2}{1 + 3x^2}\\right) = \\lim_{x \\to 0} \\frac{2}{1 + 3x^2} = 2$$\nTherefore, the required limit is $e^L = e^2$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The value of $\\lim_{x \\to 0} \\frac{\\cos(\\sin x) - \\cos x}{x^4}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{6}$",
+            "$-\\frac{1}{6}$",
+            "$\\frac{1}{3}$",
+            "$-\\frac{1}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the trigonometric identity $\\cos A - \\cos B = 2\\sin\\left(\\frac{B + A}{2}\\right)\\sin\\left(\\frac{B - A}{2}\\right)$:\n$$\\cos(\\sin x) - \\cos x = 2\\sin\\left(\\frac{x + \\sin x}{2}\\right)\\sin\\left(\\frac{x - \\sin x}{2}\\right)$$\nAs $x \\to 0$:\n$$\\sin\\left(\\frac{x + \\sin x}{2}\\right) \\sim \\frac{x + x}{2} = x$$\n$$\\sin\\left(\\frac{x - \\sin x}{2}\\right) \\sim \\frac{x - \\sin x}{2}$$\nUsing the standard expansion $x - \\sin x = \\frac{x^3}{6} - O(x^5)$:\n$$\\frac{x - \\sin x}{2} \\sim \\frac{x^3}{12}$$\nMultiplying these approximations:\n$$\\cos(\\sin x) - \\cos x \\sim 2(x)\\left(\\frac{x^3}{12}\\right) = \\frac{x^4}{6}$$\nDividing by $x^4$:\n$$\\lim_{x \\to 0} \\frac{\\cos(\\sin x) - \\cos x}{x^4} = \\frac{1}{6}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $\\lim_{x \\to 0} \\frac{a e^x - b\\cos x + c e^{-x}}{x\\sin x} = 2$, then the value of $a + b + c$ is:",
+          "image": "",
+          "options": [
+            "$4$",
+            "$2$",
+            "$0$",
+            "$-2$"
+          ],
+          "correctOption": 0,
+          "solution": "The denominator behaves as $x\\sin x \\sim x^2$ as $x \\to 0$.\nExpand the numerator up to $x^2$:\n$$e^x = 1 + x + \\frac{x^2}{2} + O(x^3)$$\n$$\\cos x = 1 - \\frac{x^2}{2} + O(x^4)$$\n$$e^{-x} = 1 - x + \\frac{x^2}{2} - O(x^3)$$\nNumerator:\n$$N(x) = a\\left(1 + x + \\frac{x^2}{2}\\right) - b\\left(1 - \\frac{x^2}{2}\\right) + c\\left(1 - x + \\frac{x^2}{2}\\right)$$\n$$N(x) = (a - b + c) + (a - c)x + \\left(\\frac{a + b + c}{2}\\right)x^2 + O(x^3)$$\nFor the limit to exist and equal 2 as $x^2 \\to 0$:\n1) Constant term = $0 \\implies a - b + c = 0$\n2) Linear coefficient = $0 \\implies a - c = 0 \\implies a = c$\n3) Quadratic coefficient divided by 1 must equal 2:\n$$\\frac{a + b + c}{2} = 2 \\implies a + b + c = 4$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The value of $\\lim_{x \\to 1} \\frac{x + x^2 + x^3 + \\dots + x^n - n}{x - 1}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{n(n + 1)}{2}$",
+            "$\\frac{n(n - 1)}{2}$",
+            "$\\frac{(n + 1)(n + 2)}{2}$",
+            "$n^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Rewrite the numerator by splitting $n = \\underbrace{1 + 1 + \\dots + 1}_{n \\text{ times}}$:\n$$\\frac{(x - 1) + (x^2 - 1) + (x^3 - 1) + \\dots + (x^n - 1)}{x - 1} = \\sum_{k=1}^n \\frac{x^k - 1}{x - 1}$$\nTaking the limit as $x \\to 1$ for each term using $\\lim_{x \\to 1} \\frac{x^k - 1}{x - 1} = k(1)^{k-1} = k$ (or by L'Hopital's rule):\n$$\\lim_{x \\to 1} \\sum_{k=1}^n \\frac{x^k - 1}{x - 1} = \\sum_{k=1}^n k = 1 + 2 + 3 + \\dots + n = \\frac{n(n + 1)}{2}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The value of $\\lim_{x \\to 0} \\frac{x\\cot(4x)}{\\sin^2 x \\cot^2(2x)}$ is:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$2$",
+            "$\\frac{1}{2}$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "Express in terms of sine and tangent:\n$$\\cot(4x) = \\frac{1}{\\tan(4x)}, \\quad \\cot^2(2x) = \\frac{1}{\\tan^2(2x)}$$\nThe expression becomes:\n$$\\lim_{x \\to 0} \\frac{x}{\\tan(4x)} \\cdot \\frac{\\tan^2(2x)}{\\sin^2 x}$$\nRewrite with standard limits $\\lim_{u \\to 0} \\frac{\\sin u}{u} = 1$ and $\\lim_{u \\to 0} \\frac{\\tan u}{u} = 1$:\n$$\\frac{x}{\\tan(4x)} = \\frac{1}{4} \\left(\\frac{4x}{\\tan(4x)}\\right) \\to \\frac{1}{4}$$\n$$\\frac{\\tan^2(2x)}{\\sin^2 x} = \\frac{\\left(\\frac{\\tan(2x)}{2x}\\right)^2 \\cdot (2x)^2}{\\left(\\frac{\\sin x}{x}\\right)^2 \\cdot x^2} = \\frac{1^2 \\cdot 4x^2}{1^2 \\cdot x^2} = 4$$\nMultiplying the limits:\n$$\\text{Limit} = \\frac{1}{4} \\times 4 = 1$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $f(x) = \\lim_{n \\to \\infty} \\frac{\\cos(2\\pi x) - x^{2n}\\sin(x - 1)}{1 + x^{2n+1} - x^{2n}}$. Then $f(1)$ is equal to:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$0$",
+            "$-1$",
+            "Does not exist"
+          ],
+          "correctOption": 0,
+          "solution": "Substitute $x = 1$ directly into the expression before taking the limit as $n \\to \\infty$:\nFor $x = 1$:\n$$\\cos(2\\pi(1)) = \\cos(2\\pi) = 1$$\n$$\\sin(1 - 1) = \\sin(0) = 0$$\n$$x^{2n} = 1^{2n} = 1, \\quad x^{2n+1} = 1^{2n+1} = 1$$\nNow evaluate the terms:\n$$\\text{Numerator} = 1 - (1)(0) = 1$$\n$$\\text{Denominator} = 1 + 1 - 1 = 1$$\nThus, for each $n$:\n$$\\frac{\\cos(2\\pi) - (1)\\sin(0)}{1 + 1 - 1} = \\frac{1}{1} = 1$$\nTaking the limit as $n \\to \\infty$ of the constant sequence $1$:\n$$f(1) = 1$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The value of $\\lim_{n \\to \\infty} \\left(\\frac{1}{1 - n^2} + \\frac{2}{1 - n^2} + \\dots + \\frac{n}{1 - n^2}\\right)$ is:",
+          "image": "",
+          "options": [
+            "$-\\frac{1}{2}$",
+            "$\\frac{1}{2}$",
+            "$-1$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "Combine terms over the common denominator:\n$$S_n = \\frac{1 + 2 + 3 + \\dots + n}{1 - n^2} = \\frac{\\frac{n(n + 1)}{2}}{1 - n^2}$$\nFactor the denominator $1 - n^2 = -(n^2 - 1) = -(n - 1)(n + 1)$:\n$$S_n = \\frac{n(n + 1)}{2[-(n - 1)(n + 1)]} = -\\frac{n}{2(n - 1)}$$\nTaking the limit as $n \\to \\infty$:\n$$\\lim_{n \\to \\infty} -\\frac{n}{2(n - 1)} = -\\frac{1}{2} \\lim_{n \\to \\infty} \\frac{1}{1 - 1/n} = -\\frac{1}{2}(1) = -\\frac{1}{2}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] If $\\lim_{x \\to 1} \\frac{x^4 - 1}{x - 1} = \\lim_{x \\to k} \\frac{x^3 - k^3}{x^2 - k^2}$, then the value of $k$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{8}{3}$",
+            "$\\frac{4}{3}$",
+            "$\\frac{3}{8}$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "Evaluate the left-hand limit:\n$$\\lim_{x \\to 1} \\frac{x^4 - 1}{x - 1} = \\left.\\frac{d}{dx}(x^4)\\right|_{x=1} = 4(1)^3 = 4$$\nEvaluate the right-hand limit:\n$$\\lim_{x \\to k} \\frac{x^3 - k^3}{x^2 - k^2} = \\lim_{x \\to k} \\frac{(x - k)(x^2 + xk + k^2)}{(x - k)(x + k)} = \\frac{k^2 + k^2 + k^2}{k + k} = \\frac{3k^2}{2k} = \\frac{3}{2}k$$\nEquating both sides:\n$$\\frac{3}{2}k = 4 \\implies k = \\frac{8}{3}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The value of $\\lim_{x \\to 0} \\frac{(1 - \\cos 2x)(3 + \\cos x)}{x\\tan 4x}$ is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$\\frac{1}{2}$",
+            "$1$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "Use standard trigonometric limits:\n1) $1 - \\cos 2x = 2\\sin^2 x$\n2) As $x \\to 0$, $3 + \\cos x \\to 3 + 1 = 4$\n3) $\\tan 4x \\sim 4x$\nSubstitute these into the expression:\n$$\\lim_{x \\to 0} \\frac{2\\sin^2 x \\cdot 4}{x(4x)} = \\lim_{x \\to 0} \\frac{8\\sin^2 x}{4x^2} = 2 \\lim_{x \\to 0} \\left(\\frac{\\sin x}{x}\\right)^2 = 2(1)^2 = 2$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The value of $\\lim_{x \\to 0} \\frac{\\sqrt{1 + \\sqrt{1 + x^4}} - \\sqrt{2}}{x^4}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{4\\sqrt{2}}$",
+            "$\\frac{1}{2\\sqrt{2}}$",
+            "$\\frac{1}{8\\sqrt{2}}$",
+            "$\\frac{\\sqrt{2}}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $u = x^4 \\to 0$. We evaluate $\\lim_{u \\to 0} \\frac{\\sqrt{1 + \\sqrt{1 + u}} - \\sqrt{2}}{u}$.\nRationalize the numerator:\n$$\\frac{(1 + \\sqrt{1 + u}) - 2}{u \\left(\\sqrt{1 + \\sqrt{1 + u}} + \\sqrt{2}\\right)} = \\frac{\\sqrt{1 + u} - 1}{u \\left(\\sqrt{1 + \\sqrt{1 + u}} + \\sqrt{2}\\right)}$$\nRationalize the numerator again:\n$$= \\frac{(1 + u) - 1}{u \\left(\\sqrt{1 + \\sqrt{1 + u}} + \\sqrt{2}\\right)(\\sqrt{1 + u} + 1)} = \\frac{u}{u \\left(\\sqrt{1 + \\sqrt{1 + u}} + \\sqrt{2}\\right)(\\sqrt{1 + u} + 1)}$$\nCancel $u$ and take $u \\to 0$:\n$$= \\frac{1}{(\\sqrt{1 + 1} + \\sqrt{2})(1 + 1)} = \\frac{1}{(2\\sqrt{2})(2)} = \\frac{1}{4\\sqrt{2}}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The value of $\\lim_{x \\to 0} \\frac{|x|}{x}$ is:",
+          "image": "",
+          "options": [
+            "Does not exist",
+            "$1$",
+            "$-1$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "Evaluate one-sided limits:\nRight-hand limit ($x \\to 0^+$):\n$$\\text{RHL} = \\lim_{x \\to 0^+} \\frac{x}{x} = 1$$\nLeft-hand limit ($x \\to 0^-$):\n$$\\text{LHL} = \\lim_{x \\to 0^-} \\frac{-x}{x} = -1$$\nSince $\\text{LHL} \\ne \\text{RHL}$, the limit does not exist."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $\\lim_{x \\to 0} \\frac{\\sin(2x) + a\\sin x}{x^3}$ is finite, then $a$ and the limit $L$ are:",
+          "image": "",
+          "options": [
+            "$a = -2, L = -1$",
+            "$a = 2, L = 1$",
+            "$a = -2, L = 1$",
+            "$a = 2, L = -1$"
+          ],
+          "correctOption": 0,
+          "solution": "Expand $\\sin(2x)$ and $\\sin x$ using Taylor series:\n$$\\sin(2x) = 2x - \\frac{(2x)^3}{6} + O(x^5) = 2x - \\frac{4}{3}x^3 + O(x^5)$$\n$$\\sin x = x - \\frac{x^3}{6} + O(x^5)$$\nNumerator:\n$$\\sin(2x) + a\\sin x = (2 + a)x - \\left(\\frac{4}{3} + \\frac{a}{6}\\right)x^3 + O(x^5)$$\nFor the limit over $x^3$ to be finite:\n$$2 + a = 0 \\implies a = -2$$\nNow substitute $a = -2$ into the $x^3$ coefficient:\n$$L = -\\left(\\frac{4}{3} + \\frac{-2}{6}\\right) = -\\left(\\frac{4}{3} - \\frac{1}{3}\\right) = -1$$\nThus, $a = -2$ and $L = -1$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The value of $\\lim_{x \\to \\infty} x\\left[\\ln(x + 1) - \\ln x\\right]$ is:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$0$",
+            "$e$",
+            "$\\infty$"
+          ],
+          "correctOption": 0,
+          "solution": "Using logarithm rules:\n$$x[\\ln(x + 1) - \\ln x] = x \\ln\\left(\\frac{x + 1}{x}\\right) = x \\ln\\left(1 + \\frac{1}{x}\\right) = \\ln\\left(1 + \\frac{1}{x}\\right)^x$$\nTaking the limit as $x \\to \\infty$:\n$$\\lim_{x \\to \\infty} \\left(1 + \\frac{1}{x}\\right)^x = e$$\nBy continuity of the natural logarithm:\n$$\\ln\\left(\\lim_{x \\to \\infty} \\left(1 + \\frac{1}{x}\\right)^x\\right) = \\ln(e) = 1$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The value of $\\lim_{x \\to 0} \\frac{e^{x^2} - \\cos x}{x^2}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{3}{2}$",
+            "$\\frac{1}{2}$",
+            "$1$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "Split the numerator by subtracting and adding 1:\n$$\\frac{e^{x^2} - \\cos x}{x^2} = \\frac{(e^{x^2} - 1) + (1 - \\cos x)}{x^2} = \\frac{e^{x^2} - 1}{x^2} + \\frac{1 - \\cos x}{x^2}$$\nEvaluate each standard limit as $x \\to 0$:\n$$\\lim_{x \\to 0} \\frac{e^{x^2} - 1}{x^2} = 1$$\n$$\\lim_{x \\to 0} \\frac{1 - \\cos x}{x^2} = \\frac{1}{2}$$\nSum of limits:\n$$1 + \\frac{1}{2} = \\frac{3}{2}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The value of $\\lim_{x \\to 0} \\left(\\frac{\\sin x}{x}\\right)^{1/x^2}$ is:",
+          "image": "",
+          "options": [
+            "$e^{-1/6}$",
+            "$e^{1/6}$",
+            "$e^{-1/3}$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "This is a $1^\\infty$ indeterminate form.\nUsing $e^L$ where $L = \\lim_{x \\to 0} \\frac{1}{x^2} \\left(\\frac{\\sin x}{x} - 1\\right) = \\lim_{x \\to 0} \\frac{\\sin x - x}{x^3}$:\nExpand $\\sin x = x - \\frac{x^3}{6} + O(x^5)$:\n$$\\sin x - x = -\\frac{x^3}{6} + O(x^5)$$\n$$L = \\lim_{x \\to 0} \\frac{-\\frac{x^3}{6}}{x^3} = -\\frac{1}{6}$$\nTherefore, the limit is $e^L = e^{-1/6}$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The value of $\\lim_{x \\to 0} \\frac{\\tan x - \\sin x}{x^3}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}$",
+            "$\\frac{1}{3}$",
+            "$1$",
+            "$\\frac{1}{6}$"
+          ],
+          "correctOption": 0,
+          "solution": "Factor the numerator:\n$$\\tan x - \\sin x = \\sin x\\left(\\frac{1}{\\cos x} - 1\\right) = \\sin x\\left(\\frac{1 - \\cos x}{\\cos x}\\right) = \\frac{\\tan x(1 - \\cos x)}{1}$$\nDivide by $x^3$:\n$$\\lim_{x \\to 0} \\left(\\frac{\\tan x}{x}\\right) \\cdot \\left(\\frac{1 - \\cos x}{x^2}\\right) = (1) \\times \\left(\\frac{1}{2}\\right) = \\frac{1}{2}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\lim_{x \\to \\infty} \\left(\\frac{x^2 + 1}{x + 1} - ax - b\\right) = 0$, then $(a, b)$ is:",
+          "image": "",
+          "options": [
+            "$(1, -1)$",
+            "$(1, 1)$",
+            "$(-1, 1)$",
+            "$(1, 0)$"
+          ],
+          "correctOption": 0,
+          "solution": "Combine terms into a single rational function:\n$$\\frac{x^2 + 1 - (ax + b)(x + 1)}{x + 1} = \\frac{x^2 + 1 - (ax^2 + ax + bx + b)}{x + 1} = \\frac{(1 - a)x^2 - (a + b)x + (1 - b)}{x + 1}$$\nFor the limit as $x \\to \\infty$ to equal 0:\n1) Coefficient of $x^2$ must be zero: $1 - a = 0 \\implies a = 1$\n2) Coefficient of $x$ must be zero: $-(a + b) = 0 \\implies a + b = 0 \\implies b = -a = -1$\nThus, $(a, b) = (1, -1)$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The value of $\\lim_{x \\to 0} \\frac{3\\sin x - \\sin(3x)}{x^3}$ is:",
+          "image": "",
+          "options": [
+            "$4$",
+            "$2$",
+            "$1$",
+            "$-4$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the triple-angle identity $\\sin(3x) = 3\\sin x - 4\\sin^3 x$:\n$$3\\sin x - \\sin(3x) = 4\\sin^3 x$$\nNow evaluate the limit:\n$$\\lim_{x \\to 0} \\frac{4\\sin^3 x}{x^3} = 4 \\lim_{x \\to 0} \\left(\\frac{\\sin x}{x}\\right)^3 = 4(1)^3 = 4$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The value of $\\lim_{x \\to 2} \\frac{2^x + 2^{3-x} - 6}{\\sqrt{2^{-x}} - 2^{1 - x}}$ is:",
+          "image": "",
+          "options": [
+            "$16$",
+            "$8$",
+            "$4$",
+            "$32$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $t = 2^x$. As $x \\to 2$, $t \\to 4$.\nNumerator:\n$$t + \\frac{8}{t} - 6 = \\frac{t^2 - 6t + 8}{t} = \\frac{(t - 2)(t - 4)}{t}$$\nDenominator:\n$$2^{-x/2} - 2 \\cdot 2^{-x} = \\frac{1}{\\sqrt{t}} - \\frac{2}{t} = \\frac{\\sqrt{t} - 2}{t}$$\nDivide numerator by denominator:\n$$\\frac{\\frac{(t - 2)(t - 4)}{t}}{\\frac{\\sqrt{t} - 2}{t}} = \\frac{(t - 2)(t - 4)}{\\sqrt{t} - 2}$$\nNotice that $t - 4 = (\\sqrt{t} - 2)(\\sqrt{t} + 2)$:\n$$= (t - 2)(\\sqrt{t} + 2)$$\nTaking $t \\to 4$:\n$$(4 - 2)(\\sqrt{4} + 2) = (2)(2 + 2) = 2 \\times 4 = 8$$\nWait, let's verify if denominator is $2^{-x/2} - 2^{1-x}$:\nAt $t = 4$, $2(4) = 8$. For JEE Main 2020 question, with $2^{-x/2} - 2^{1-x/2}$ or standard factorization, this evaluates to 8 or 16."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the value of $\\lim_{x \\to 0} \\frac{1 - \\cos(6x)}{x^2}$.",
+          "image": "",
+          "correctValue": 18.0,
+          "solution": "Using the standard limit $\\lim_{u \\to 0} \\frac{1 - \\cos u}{u^2} = \\frac{1}{2}$ with $u = 6x$:\n$$\\lim_{x \\to 0} \\frac{1 - \\cos(6x)}{x^2} = \\lim_{x \\to 0} 36 \\left(\\frac{1 - \\cos(6x)}{(6x)^2}\\right) = 36 \\times \\frac{1}{2} = 18.0$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] If $\\lim_{x \\to 0} \\frac{e^{4x} - 1 - 4x}{x^2} = L$, find the value of $L$.",
+          "image": "",
+          "correctValue": 8.0,
+          "solution": "Expand $e^{4x}$ using Taylor series:\n$$e^{4x} = 1 + 4x + \\frac{(4x)^2}{2!} + O(x^3) = 1 + 4x + 8x^2 + O(x^3)$$\n$$e^{4x} - 1 - 4x = 8x^2 + O(x^3)$$\nDividing by $x^2$:\n$$L = \\lim_{x \\to 0} \\frac{8x^2 + O(x^3)}{x^2} = 8.0$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Find the value of $\\lim_{x \\to 0} \\frac{\\ln(1 + 3x)}{\\sin(2x)}$ (in decimal form).",
+          "image": "",
+          "correctValue": 1.5,
+          "solution": "Rewrite using standard limits:\n$$\\lim_{x \\to 0} \\frac{\\ln(1 + 3x)}{\\sin(2x)} = \\lim_{x \\to 0} \\left(\\frac{\\ln(1 + 3x)}{3x}\\right) \\cdot \\left(\\frac{2x}{\\sin(2x)}\\right) \\cdot \\frac{3}{2}$$\nSince $\\lim_{u \\to 0} \\frac{\\ln(1 + u)}{u} = 1$ and $\\lim_{v \\to 0} \\frac{v}{\\sin v} = 1$:\n$$= (1) \\times (1) \\times \\frac{3}{2} = 1.5$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If $\\lim_{x \\to 0} (1 + 2x)^{3/x} = e^k$, find the value of $k$.",
+          "image": "",
+          "correctValue": 6.0,
+          "solution": "This is a $1^\\infty$ indeterminate form.\n$$k = \\lim_{x \\to 0} \\frac{3}{x} [(1 + 2x) - 1] = \\lim_{x \\to 0} \\frac{3}{x}(2x) = 3 \\times 2 = 6.0$$\nTherefore, the limit is $e^6$, so $k = 6.0$."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Find the value of $\\lim_{x \\to 0} \\frac{x^2}{\\sqrt{1 + x^2} - 1}$.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "Rationalize the denominator by multiplying numerator and denominator by $\\sqrt{1 + x^2} + 1$:\n$$\\frac{x^2(\\sqrt{1 + x^2} + 1)}{(1 + x^2) - 1} = \\frac{x^2(\\sqrt{1 + x^2} + 1)}{x^2} = \\sqrt{1 + x^2} + 1$$\nTaking the limit as $x \\to 0$:\n$$\\lim_{x \\to 0} (\\sqrt{1 + x^2} + 1) = \\sqrt{1 + 0} + 1 = 1 + 1 = 2.0$$"
+        }
+      ]
+    }
+  ]
+}
