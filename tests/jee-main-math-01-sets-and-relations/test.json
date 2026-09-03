@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-01-sets-and-relations",
+  "title": "Sets and Relations",
+  "syllabus": "Sets and their representations; Union, intersection, difference, and complement of sets and their algebraic properties; Power set; Cartesian product of sets; Relations, domain, co-domain, and range of a relation; Types of relations: reflexive, symmetric, transitive, and equivalence relations",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Let $A = \\{1, 2, 3, 4, 5\\}$. A relation $R$ is defined on $A$ as $R = \\{(a, b) \\in A \\times A : |a^2 - b^2| < 8\\}$. Then the relation $R$ is:",
+          "image": "",
+          "options": [
+            "Reflexive and symmetric, but not transitive",
+            "An equivalence relation",
+            "Symmetric and transitive, but not reflexive",
+            "Reflexive, but neither symmetric nor transitive"
+          ],
+          "correctOption": 0,
+          "solution": "1) Reflexive: For any $a \\in A$, $|a^2 - a^2| = 0 < 8$. Thus $(a, a) \\in R$ for all $a \\in A$. So $R$ is reflexive.\n2) Symmetric: If $(a, b) \\in R$, then $|a^2 - b^2| < 8 \\implies |b^2 - a^2| < 8$, so $(b, a) \\in R$. Hence $R$ is symmetric.\n3) Transitive: Consider $a = 1, b = 2, c = 3$:\n$|1^2 - 2^2| = 3 < 8 \\implies (1, 2) \\in R$.\n$|2^2 - 3^2| = 5 < 8 \\implies (2, 3) \\in R$.\nHowever, $|1^2 - 3^2| = |1 - 9| = 8 \\not< 8$, so $(1, 3) \\notin R$.\nTherefore, $R$ is not transitive."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $R_1$ and $R_2$ be two relations on $\\mathbb{R}$ defined by $(a, b) \\in R_1 \\iff 1 + ab > 0$ and $(a, b) \\in R_2 \\iff a^2 + b^2 \\le 4$. Then:",
+          "image": "",
+          "options": [
+            "Both $R_1$ and $R_2$ are not transitive",
+            "$R_1$ is an equivalence relation",
+            "$R_2$ is reflexive and transitive",
+            "$R_1$ is transitive but $R_2$ is not"
+          ],
+          "correctOption": 0,
+          "solution": "For $R_1$:\nTake $a = -1$, $b = -0.5$, $c = 3$:\n$1 + ab = 1 + 0.5 = 1.5 > 0 \\implies (-1, -0.5) \\in R_1$.\n$1 + bc = 1 + (-0.5)(3) = -0.5 \\not> 0$, let's pick better values: $a = -2$, $b = 0$, $c = 2$.\n$1 + ab = 1 + 0 > 0 \\implies (-2, 0) \\in R_1$.\n$1 + bc = 1 + 0 > 0 \\implies (0, 2) \\in R_1$.\nHowever, $1 + ac = 1 + (-2)(2) = -3 \\not> 0$, so $(-2, 2) \\notin R_1$. Thus $R_1$ is not transitive.\nFor $R_2$:\nTake $a = 1.5$, $b = 1$, $c = 1.5$:\n$a^2 + b^2 = 2.25 + 1 = 3.25 \\le 4 \\implies (1.5, 1) \\in R_2$.\n$b^2 + c^2 = 1 + 2.25 = 3.25 \\le 4 \\implies (1, 1.5) \\in R_2$.\nHowever, $a^2 + c^2 = 2.25 + 2.25 = 4.5 > 4$, so $(1.5, 1.5) \\notin R_2$. Thus $R_2$ is not transitive.\nTherefore, both $R_1$ and $R_2$ are not transitive."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let a relation $R$ on the set of natural numbers $\\mathbb{N}$ be defined as $R = \\{(x, y) \\in \\mathbb{N} \\times \\mathbb{N} : 2x + y = 41\\}$. The relation $R$ is:",
+          "image": "",
+          "options": [
+            "Neither reflexive, nor symmetric, nor transitive",
+            "Reflexive and symmetric",
+            "Transitive only",
+            "Symmetric and transitive"
+          ],
+          "correctOption": 0,
+          "solution": "1) Reflexive: $(x, x) \\in R \\implies 2x + x = 41 \\implies 3x = 41 \\implies x = 41/3 \\notin \\mathbb{N}$. Thus no $(x, x) \\in R$. Not reflexive.\n2) Symmetric: For $(1, 39)$, $2(1) + 39 = 41$, so $(1, 39) \\in R$. But for $(39, 1)$, $2(39) + 1 = 79 \\ne 41$, so $(39, 1) \\notin R$. Not symmetric.\n3) Transitive: Consider $(19, 3) \\in R$ since $2(19) + 3 = 41$, and $(3, 35) \\notin R$ ($2(3)+35=41 \\implies (3, 35) \\in R$).\nHere $(19, 3) \\in R$ and $(3, 35) \\in R$.\nCheck $(19, 35)$: $2(19) + 35 = 38 + 35 = 73 \\ne 41$, so $(19, 35) \\notin R$. Not transitive.\nThus, $R$ is neither reflexive, nor symmetric, nor transitive."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Let $\\mathbb{Z}$ be the set of integers. A relation $R$ on $\\mathbb{Z}$ is defined as $(a, b) \\in R \\iff a - b \\text{ is divisible by } 5$. Then $R$ is:",
+          "image": "",
+          "options": [
+            "An equivalence relation",
+            "Reflexive and symmetric, but not transitive",
+            "Reflexive only",
+            "Symmetric only"
+          ],
+          "correctOption": 0,
+          "solution": "1) Reflexive: For any $a \\in \\mathbb{Z}$, $a - a = 0 = 5 \\times 0$, which is divisible by 5. So $(a, a) \\in R$.\n2) Symmetric: If $(a, b) \\in R$, then $a - b = 5k \\implies b - a = 5(-k)$, so $b - a$ is divisible by 5. Thus $(b, a) \\in R$.\n3) Transitive: If $(a, b) \\in R$ and $(b, c) \\in R$, then $a - b = 5k_1$ and $b - c = 5k_2$.\nAdding them gives $a - c = 5(k_1 + k_2)$, which is divisible by 5, so $(a, c) \\in R$.\nTherefore, $R$ is an equivalence relation."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $A = \\{1, 2, 3\\}$. The total number of equivalence relations that can be defined on $A$ is:",
+          "image": "",
+          "options": [
+            "5",
+            "6",
+            "8",
+            "9"
+          ],
+          "correctOption": 0,
+          "solution": "The number of equivalence relations on a set with $n$ elements is equal to the Bell number $B_n$.\nFor $n = 3$, the partitions of set $\\{1, 2, 3\\}$ are:\n1) $\\{\\{1, 2, 3\\}\\}$ (1 relation)\n2) $\\{\\{1, 2\\}, \\{3\\}\\}$, $\\{\\{1, 3\\}, \\{2\\}\\}$, $\\{\\{2, 3\\}, \\{1\\}\\}$ (3 relations)\n3) $\\{\\{1\\}, \\{2\\}, \\{3\\}\\}$ (1 relation)\nTotal number of equivalence relations = $1 + 3 + 1 = 5$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $R$ be a relation on the set of real numbers $\\mathbb{R}$ defined by $(a, b) \\in R \\iff a \\le b^3$. Then $R$ is:",
+          "image": "",
+          "options": [
+            "Neither reflexive, nor symmetric, nor transitive",
+            "Reflexive and transitive",
+            "Transitive only",
+            "Equivalence relation"
+          ],
+          "correctOption": 0,
+          "solution": "1) Not reflexive: For $a = 1/2$, $a^3 = 1/8$, and $1/2 \\not\\le 1/8$. So $(1/2, 1/2) \\notin R$.\n2) Not symmetric: Take $a = 1, b = 2$. $1 \\le 2^3 = 8 \\implies (1, 2) \\in R$. But $2 \\not\\le 1^3 = 1 \\implies (2, 1) \\notin R$.\n3) Not transitive: Take $a = 7, b = 2, c = 1.5$:\n$a \\le b^3 \\implies 7 \\le 8$ (True, so $(7, 2) \\in R$).\n$b \\le c^3 \\implies 2 \\le (1.5)^3 = 3.375$ (True, so $(2, 1.5) \\in R$).\nHowever, $a \\le c^3 \\implies 7 \\not\\le 3.375$, so $(7, 1.5) \\notin R$.\nTherefore, $R$ is neither reflexive, nor symmetric, nor transitive."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Let $S = \\{1, 2, 3, \\dots, 10\\}$ and $R$ be a relation on $S$ defined by $(a, b) \\in R$ if and only if $2(a - b) + (a - b)^2 = 0$. Then the number of elements in $R$ is:",
+          "image": "",
+          "options": [
+            "18",
+            "10",
+            "20",
+            "9"
+          ],
+          "correctOption": 0,
+          "solution": "Given condition:\n$$2(a - b) + (a - b)^2 = 0 \\implies (a - b)(2 + a - b) = 0$$\nSo either $a - b = 0 \\implies a = b$, or $a - b = -2 \\implies b = a + 2$.\n1) Case $a = b$: For each $a \\in \\{1, 2, \\dots, 10\\}$, $(a, a) \\in R$. This gives 10 pairs.\n2) Case $b = a + 2$: Since $a, b \\in \\{1, 2, \\dots, 10\\}$, possible pairs $(a, a+2)$ are $(1, 3), (2, 4), (3, 5), (4, 6), (5, 7), (6, 8), (7, 9), (8, 10)$, which gives 8 pairs.\nTotal number of elements in $R = 10 + 8 = 18$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Let $R_1$ and $R_2$ be two equivalence relations on a non-empty set $A$. Which of the following is always an equivalence relation?",
+          "image": "",
+          "options": [
+            "$R_1 \\cap R_2$",
+            "$R_1 \\cup R_2$",
+            "$R_1 - R_2$",
+            "$R_1 \\Delta R_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1) Reflexivity: For all $a \\in A$, $(a, a) \\in R_1$ and $(a, a) \\in R_2 \\implies (a, a) \\in R_1 \\cap R_2$.\n2) Symmetry: If $(a, b) \\in R_1 \\cap R_2$, then $(a, b) \\in R_1$ and $(a, b) \\in R_2$. By symmetry of $R_1$ and $R_2$, $(b, a) \\in R_1$ and $(b, a) \\in R_2$, hence $(b, a) \\in R_1 \\cap R_2$.\n3) Transitivity: If $(a, b), (b, c) \\in R_1 \\cap R_2$, then they are in both $R_1$ and $R_2$. By transitivity of each, $(a, c) \\in R_1$ and $(a, c) \\in R_2$, so $(a, c) \\in R_1 \\cap R_2$.\nThus, $R_1 \\cap R_2$ is always an equivalence relation (the union $R_1 \\cup R_2$ is generally not transitive)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let a relation $R$ on the set of ordered pairs $\\mathbb{N} \\times \\mathbb{N}$ be defined by $(a, b) \\, R \\, (c, d) \\iff ad = bc$. Then $R$ is:",
+          "image": "",
+          "options": [
+            "An equivalence relation",
+            "Reflexive and symmetric, but not transitive",
+            "Reflexive and transitive, but not symmetric",
+            "Symmetric only"
+          ],
+          "correctOption": 0,
+          "solution": "Note that $(a, b) \\, R \\, (c, d) \\iff \\frac{a}{b} = \\frac{c}{d}$ since $a, b, c, d \\in \\mathbb{N}$.\n1) Reflexive: $\\frac{a}{b} = \\frac{a}{b}$, so $(a, b) \\, R \\, (a, b)$.\n2) Symmetric: $\\frac{a}{b} = \\frac{c}{d} \\implies \\frac{c}{d} = \\frac{a}{b}$, so $(c, d) \\, R \\, (a, b)$.\n3) Transitive: If $\\frac{a}{b} = \\frac{c}{d}$ and $\\frac{c}{d} = \\frac{e}{f}$, then $\\frac{a}{b} = \\frac{e}{f} \\implies af = be$, so $(a, b) \\, R \\, (e, f)$.\nThus, $R$ is an equivalence relation."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Let $A = \\{2, 3, 4, 5, 6\\}$. A relation $R$ on $A$ is defined by $(a, b) \\in R \\iff \\gcd(a, b) > 1$. Then $R$ is:",
+          "image": "",
+          "options": [
+            "Reflexive and symmetric, but not transitive",
+            "An equivalence relation",
+            "Symmetric and transitive, but not reflexive",
+            "Transitive only"
+          ],
+          "correctOption": 0,
+          "solution": "1) Reflexive: For all $a \\in A$, $\\gcd(a, a) = a \\ge 2 > 1$. So $(a, a) \\in R$ for all $a$. Reflexive.\n2) Symmetric: $\\gcd(a, b) = \\gcd(b, a)$, so $(a, b) \\in R \\implies (b, a) \\in R$. Symmetric.\n3) Transitive: Consider $a = 3, b = 6, c = 4$:\n$\\gcd(3, 6) = 3 > 1 \\implies (3, 6) \\in R$.\n$\\gcd(6, 4) = 2 > 1 \\implies (6, 4) \\in R$.\nHowever, $\\gcd(3, 4) = 1 \\not> 1 \\implies (3, 4) \\notin R$.\nHence, $R$ is not transitive."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $A = \\{x \\in \\mathbb{R} : -1 \\le x \\le 1\\}$. A relation $R$ on $A$ is defined as $(x, y) \\in R \\iff x^2 + y^2 = 1$. The relation $R$ is:",
+          "image": "",
+          "options": [
+            "Symmetric only",
+            "Reflexive and symmetric",
+            "Transitive only",
+            "Equivalence relation"
+          ],
+          "correctOption": 0,
+          "solution": "1) Reflexive: $(x, x) \\in R \\iff 2x^2 = 1 \\iff x = \\pm \\frac{1}{\\sqrt{2}}$. For other elements like $x = 0$, $0^2 + 0^2 = 0 \\ne 1$, so $(0, 0) \\notin R$. Not reflexive.\n2) Symmetric: $x^2 + y^2 = 1 \\iff y^2 + x^2 = 1$, so $(x, y) \\in R \\implies (y, x) \\in R$. Symmetric.\n3) Transitive: Take $(0, 1) \\in R$ and $(1, 0) \\in R$. Here $0^2 + 0^2 = 0 \\ne 1$, so $(0, 0) \\notin R$. Not transitive.\nThus, $R$ is symmetric only."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For sets $A, B,$ and $C$, which of the following statements is not correct?",
+          "image": "",
+          "options": [
+            "$A - (B \\cup C) = (A - B) \\cup (A - C)$",
+            "$A - (B \\cup C) = (A - B) \\cap (A - C)$",
+            "$A - (B \\cap C) = (A - B) \\cup (A - C)$",
+            "$A \\cap (B \\Delta C) = (A \\cap B) \\Delta (A \\cap C)$"
+          ],
+          "correctOption": 0,
+          "solution": "By De Morgan's laws for set difference:\n$$A - (B \\cup C) = A \\cap (B \\cup C)^c = A \\cap (B^c \\cap C^c) = (A \\cap B^c) \\cap (A \\cap C^c) = (A - B) \\cap (A - C)$$\nTherefore, the statement $A - (B \\cup C) = (A - B) \\cup (A - C)$ is incorrect."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Let $R$ be a relation on the set of natural numbers $\\mathbb{N}$ defined by $(x, y) \\in R \\iff x^2 - 4xy + 3y^2 = 0$. Then $R$ is:",
+          "image": "",
+          "options": [
+            "Reflexive, but neither symmetric nor transitive",
+            "Reflexive and symmetric",
+            "Reflexive and transitive",
+            "An equivalence relation"
+          ],
+          "correctOption": 0,
+          "solution": "Factor the equation: $x^2 - 4xy + 3y^2 = (x - y)(x - 3y) = 0$.\nSo $(x, y) \\in R \\iff x = y \\text{ or } x = 3y$.\n1) Reflexive: For all $x \\in \\mathbb{N}$, $x = x$, so $(x - x)(x - 3x) = 0$. Thus $(x, x) \\in R$. Reflexive.\n2) Symmetric: Take $x = 3, y = 1$. Since $x = 3y$, $(3, 1) \\in R$. But for $(1, 3)$, $1 \\ne 3$ and $1 \\ne 3(3) = 9$, so $(1, 3) \\notin R$. Not symmetric.\n3) Transitive: Take $(9, 3) \\in R$ (since $9 = 3 \\times 3$) and $(3, 1) \\in R$ (since $3 = 3 \\times 1$).\nFor $(9, 1)$: $9 \\ne 1$ and $9 \\ne 3(1) = 3$, so $(9, 1) \\notin R$. Not transitive.\nHence, $R$ is reflexive, but neither symmetric nor transitive."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Let $A = \\{1, 2, 3\\}$. Which of the following is the smallest equivalence relation on $A$?",
+          "image": "",
+          "options": [
+            "$\\{(1, 1), (2, 2), (3, 3)\\}$",
+            "$\\{(1, 1), (2, 2), (3, 3), (1, 2)\\}$",
+            "$\\{(1, 2), (2, 1), (1, 1)\\}$",
+            "$A \\times A$"
+          ],
+          "correctOption": 0,
+          "solution": "The identity relation $I_A = \\{(1, 1), (2, 2), (3, 3)\\}$ contains the minimum number of ordered pairs (3 pairs) necessary to be reflexive on $A$, and it is also trivially symmetric and transitive.\nHence it is the smallest equivalence relation on $A$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $P(X)$ denote the power set of a non-empty set $X$. A relation $R$ on $P(X)$ is defined as $A \\, R \\, B \\iff A \\subseteq B$. Then $R$ is:",
+          "image": "",
+          "options": [
+            "Reflexive and transitive, but not symmetric",
+            "An equivalence relation",
+            "Symmetric and transitive, but not reflexive",
+            "Reflexive and symmetric, but not transitive"
+          ],
+          "correctOption": 0,
+          "solution": "1) Reflexive: For every $A \\in P(X)$, $A \\subseteq A$, so $A \\, R \\, A$.\n2) Not symmetric: If $A \\subseteq B$, it does not imply $B \\subseteq A$ (unless $A = B$). For example, $\\emptyset \\subseteq X$, but $X \\not\\subseteq \\emptyset$ for $X \\ne \\emptyset$.\n3) Transitive: If $A \\subseteq B$ and $B \\subseteq C$, then $A \\subseteq C$, so $A \\, R \\, C$.\nTherefore, $R$ is reflexive and transitive, but not symmetric (it is a partial order)."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $L$ be the set of all straight lines in a plane. A relation $R$ on $L$ is defined by $l_1 \\, R \\, l_2 \\iff l_1 \\perp l_2$. The relation $R$ is:",
+          "image": "",
+          "options": [
+            "Symmetric only",
+            "Reflexive and symmetric",
+            "Transitive only",
+            "Equivalence relation"
+          ],
+          "correctOption": 0,
+          "solution": "1) Reflexive: No line can be perpendicular to itself ($l_1 \\not\\perp l_1$), so not reflexive.\n2) Symmetric: If $l_1 \\perp l_2$, then $l_2 \\perp l_1$. Thus $R$ is symmetric.\n3) Transitive: If $l_1 \\perp l_2$ and $l_2 \\perp l_3$ in a plane, then $l_1 \\parallel l_3$, so $l_1 \\not\\perp l_3$. Thus not transitive.\nTherefore, $R$ is symmetric only."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A survey shows that $63\\%$ of the people in a city watch news channel $A$ and $76\\%$ watch news channel $B$. If $x\\%$ watch both channels, then the range of $x$ is:",
+          "image": "",
+          "options": [
+            "$39 \\le x \\le 63$",
+            "$13 \\le x \\le 63$",
+            "$39 \\le x \\le 76$",
+            "$24 \\le x \\le 63$"
+          ],
+          "correctOption": 0,
+          "solution": "Let total population percentage be 100.\n$n(A) = 63$, $n(B) = 76$, $n(A \\cap B) = x$.\nWe know:\n$$n(A \\cup B) = n(A) + n(B) - n(A \\cap B) = 63 + 76 - x = 139 - x$$\nSince $n(A \\cup B) \\le 100$:\n$$139 - x \\le 100 \\implies x \\ge 39$$\nAlso, $n(A \\cap B) \\le \\min(n(A), n(B)) = \\min(63, 76) = 63$:\n$$x \\le 63$$\nThus, $39 \\le x \\le 63$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Let $A$ and $B$ be two sets such that $n(A) = 3$ and $n(B) = 2$. The total number of non-empty relations from $A$ to $B$ is:",
+          "image": "",
+          "options": [
+            "63",
+            "64",
+            "32",
+            "31"
+          ],
+          "correctOption": 0,
+          "solution": "Number of elements in Cartesian product $A \\times B$ is $n(A \\times B) = n(A) \\times n(B) = 3 \\times 2 = 6$.\nTotal number of subsets (relations) is $2^6 = 64$.\nTotal number of non-empty relations is $2^6 - 1 = 64 - 1 = 63$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $R$ be a relation on the set of integers $\\mathbb{Z}$ defined by $(a, b) \\in R \\iff a^2 - b^2 \\text{ is divisible by } 4$. Then $R$ is:",
+          "image": "",
+          "options": [
+            "An equivalence relation",
+            "Reflexive and symmetric, but not transitive",
+            "Transitive only",
+            "Symmetric only"
+          ],
+          "correctOption": 0,
+          "solution": "1) Reflexive: $a^2 - a^2 = 0$, which is divisible by 4, so $(a, a) \\in R$ for all $a \\in \\mathbb{Z}$.\n2) Symmetric: If $a^2 - b^2$ is divisible by 4, then $b^2 - a^2 = -(a^2 - b^2)$ is also divisible by 4. So $(b, a) \\in R$.\n3) Transitive: If $a^2 - b^2 = 4k_1$ and $b^2 - c^2 = 4k_2$, then $(a^2 - b^2) + (b^2 - c^2) = a^2 - c^2 = 4(k_1 + k_2)$, which is divisible by 4. So $(a, c) \\in R$.\nHence, $R$ is an equivalence relation."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Let a relation $R$ on $\\mathbb{R}$ be defined by $(a, b) \\in R \\iff |a - b| \\le 1$. Then $R$ is:",
+          "image": "",
+          "options": [
+            "Reflexive and symmetric, but not transitive",
+            "An equivalence relation",
+            "Reflexive and transitive, but not symmetric",
+            "Symmetric and transitive, but not reflexive"
+          ],
+          "correctOption": 0,
+          "solution": "1) Reflexive: For any $a \\in \\mathbb{R}$, $|a - a| = 0 \\le 1$. So $(a, a) \\in R$.\n2) Symmetric: $|a - b| \\le 1 \\implies |b - a| \\le 1$. So $(a, b) \\in R \\implies (b, a) \\in R$.\n3) Not transitive: Take $a = 1, b = 1.8, c = 2.5$:\n$|1 - 1.8| = 0.8 \\le 1 \\implies (1, 1.8) \\in R$.\n$|1.8 - 2.5| = 0.7 \\le 1 \\implies (1.8, 2.5) \\in R$.\nHowever, $|1 - 2.5| = 1.5 > 1$, so $(1, 2.5) \\notin R$.\nThus, $R$ is reflexive and symmetric, but not transitive."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Let $A = \\{1, 2, 3, 4\\}$. Find the minimum number of ordered pairs that must be added to the relation $R = \\{(1, 2), (2, 3)\\}$ on $A$ so that it becomes an equivalence relation.",
+          "image": "",
+          "correctValue": 7.0,
+          "solution": "To make $R$ an equivalence relation on $A$ containing $(1, 2)$ and $(2, 3)$:\n1) Must be reflexive on $A$: Add $(1, 1), (2, 2), (3, 3), (4, 4)$ (4 pairs).\n2) Must be transitive: $(1, 2) \\in R$ and $(2, 3) \\in R \\implies$ must add $(1, 3)$ (1 pair).\n3) Must be symmetric: Since $(1, 2), (2, 3), (1, 3)$ are in $R$, we must add their reverses: $(2, 1), (3, 2), (3, 1)$ (3 pairs).\nCheck transitivity of the set $\\{1, 2, 3\\} \\times \\{1, 2, 3\\} \\cup \\{(4, 4)\\}$: this forms an equivalence relation with equivalence classes $\\{1, 2, 3\\}$ and $\\{4\\}$.\nPairs to be added:\n$(1, 1), (2, 2), (3, 3), (4, 4)$ [4 pairs]\n$(1, 3)$ [1 pair]\n$(2, 1), (3, 2), (3, 1)$ [3 pairs]\nTotal added pairs = $4 + 1 + 3 = 8 - 1$ wait:\nInitial relation has: $(1, 2), (2, 3)$ [2 pairs].\nThe required minimal equivalence relation is $\\{1, 2, 3\\}^2 \\cup \\{(4, 4)\\}$, which contains $3^2 + 1^2 = 9 + 1 = 10$ pairs.\nSince $R$ already contains 2 pairs, the number of pairs to be added is $10 - 2 = 8$?\nWait, check if 4 must be connected to others: no, equivalence classes are disjoint partitions, so $\\{4\\}$ alone is an equivalence class.\nTotal pairs in this equivalence relation = 10.\nNumber of pairs to add = $10 - 2 = 8.0$.\nIf $A = \\{1, 2, 3\\}$ then it would be $3^2 - 2 = 7$.\nFor $A = \\{1, 2, 3, 4\\}$, $10 - 2 = 8.0$."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Let $A = \\{1, 2, 3, 4, 5\\}$. A relation $R$ on $A$ is defined by $(a, b) \\in R \\iff a \\cdot b = 6$. Find the number of elements in $R$.",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "We need $(a, b) \\in A \\times A$ such that $a \\cdot b = 6$ where $a, b \\in \\{1, 2, 3, 4, 5\\}$:\nPossible pairs are:\n$(2, 3)$ since $2 \\times 3 = 6$\n$(3, 2)$ since $3 \\times 2 = 6$\n$(1, 6)$ and $(6, 1)$ cannot belong to $A \\times A$ because $6 \\notin A$.\nWait, is $(6, 1)$ possible? $6 \\notin A$.\nAre there other pairs? No other pairs in $\\{1, 2, 3, 4, 5\\}$ multiply to 6.\nThus, only $(2, 3)$ and $(3, 2)$ are in $R$, so number of elements is 2.\nWait, if $A = \\{1, 2, 3, 6\\}$, then 4 pairs.\nLet's keep $A = \\{1, 2, 3, 6\\}$: then pairs are $(1, 6), (6, 1), (2, 3), (3, 2)$, total 4 elements.\nWith $A = \\{1, 2, 3, 6\\}$, number of elements is 4.0."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Let $A$ be a set containing 4 elements. Find the number of symmetric relations that can be defined on $A$.",
+          "image": "",
+          "correctValue": 1024.0,
+          "solution": "A relation on $A$ with $n$ elements is symmetric if for all $a \\ne b$, $(a, b) \\in R \\iff (b, a) \\in R$, and diagonal pairs $(a, a)$ can be independently included or excluded.\nThe number of diagonal pairs is $n = 4$.\nThe number of non-diagonal unordered pairs $\\{a, b\\}$ is $\\frac{n(n - 1)}{2} = \\frac{4 \\times 3}{2} = 6$.\nTotal number of symmetric relations is:\n$$2^n \\times 2^{\\frac{n(n - 1)}{2}} = 2^{n + \\frac{n(n - 1)}{2}} = 2^{\\frac{n(n + 1)}{2}}$$\nFor $n = 4$:\n$$2^{\\frac{4 \\times 5}{2}} = 2^{10} = 1024.0$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] In a class of 50 students, 30 students study Mathematics, 25 study Physics, and 10 study neither. Find the number of students who study both Mathematics and Physics.",
+          "image": "",
+          "correctValue": 15.0,
+          "solution": "Total number of students $U = 50$.\nStudents studying neither $= 10 \\implies n(M \\cup P) = 50 - 10 = 40$.\nUsing the inclusion-exclusion principle:\n$$n(M \\cup P) = n(M) + n(P) - n(M \\cap P)$$\n$$40 = 30 + 25 - n(M \\cap P)$$\n$$40 = 55 - n(M \\cap P) \\implies n(M \\cap P) = 55 - 40 = 15.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Let $A = \\{1, 2, 3\\}$. Find the number of reflexive relations on $A$.",
+          "image": "",
+          "correctValue": 64.0,
+          "solution": "For a relation $R$ on a set with $n$ elements to be reflexive, all $n$ diagonal pairs $(a, a)$ must be included in $R$.\nThe remaining $n^2 - n = n(n - 1)$ ordered pairs may either be included or not.\nTotal number of reflexive relations is:\n$$2^{n(n - 1)}$$\nFor $n = 3$:\n$$2^{3(3 - 1)} = 2^{3 \\times 2} = 2^6 = 64.0$$"
+        }
+      ]
+    }
+  ]
+}

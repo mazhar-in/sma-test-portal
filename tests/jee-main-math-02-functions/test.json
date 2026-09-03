@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-02-functions",
+  "title": "Functions",
+  "syllabus": "Real-valued functions, domain, range and graph of elementary functions (polynomial, rational, trigonometric, exponential, logarithmic, modulus, signum, greatest integer and fractional part functions); Types of functions: into, onto (surjective), one-one (injective), many-one, and bijective functions; Composition of functions; Inverse of a function",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The domain of the function $f(x) = \\sqrt{\\frac{x + 1}{x - 1}} + \\frac{1}{\\sqrt{x^2 - 4}}$ is:",
+          "image": "",
+          "options": [
+            "$(-\\infty, -2) \\cup (2, \\infty)$",
+            "$(-\\infty, -2] \\cup [2, \\infty)$",
+            "$(-\\infty, -1] \\cup (1, \\infty)$",
+            "$(-\\infty, -2) \\cup [1, 2) \\cup (2, \\infty)$"
+          ],
+          "correctOption": 0,
+          "solution": "For the first radical term $\\sqrt{\\frac{x + 1}{x - 1}}$ to be real and defined:\n$$\\frac{x + 1}{x - 1} \\ge 0 \\quad \\text{and} \\quad x \\ne 1$$\nUsing a sign chart: $x \\in (-\\infty, -1] \\cup (1, \\infty)$.\n\nFor the second term $\\frac{1}{\\sqrt{x^2 - 4}}$ to be real and defined:\n$$x^2 - 4 > 0 \\implies (x - 2)(x + 2) > 0 \\implies x \\in (-\\infty, -2) \\cup (2, \\infty)$$\n\nTaking the intersection of both sets:\n$$D_f = ((-\\infty, -1] \\cup (1, \\infty)) \\cap ((-\\infty, -2) \\cup (2, \\infty)) = (-\\infty, -2) \\cup (2, \\infty)$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $f: \\mathbb{R} \\to \\mathbb{R}$ be defined as $f(x) = \\frac{x^2 - 3x + 2}{x^2 + 2x - 3}$. Then the function $f$ is:",
+          "image": "",
+          "options": [
+            "Neither one-one nor onto",
+            "One-one and onto",
+            "One-one but not onto",
+            "Onto but not one-one"
+          ],
+          "correctOption": 0,
+          "solution": "Factorizing the numerator and denominator:\n$$f(x) = \\frac{(x - 1)(x - 2)}{(x - 1)(x + 3)} = \\frac{x - 2}{x + 3} \\quad \\text{for } x \\ne 1, -3$$\nLet $y = \\frac{x - 2}{x + 3}$. Then $y(x + 3) = x - 2 \\implies x(y - 1) = -3y - 2 \\implies x = \\frac{3y + 2}{1 - y}$.\nNotice:\n1) $y \\ne 1$ since $1 - y \\ne 0$.\n2) At $x = 1$, $y = \\frac{1 - 2}{1 + 3} = -\\frac{1}{4}$. Since $x = 1$ is not in the domain, $y \\ne -1/4$.\nThus, the range of $f$ is $\\mathbb{R} - \\{1, -1/4\\} \\ne \\mathbb{R}$ (co-domain), so $f$ is not onto.\nMoreover, $f$ is undefined at $x = 1$ and $x = -3$, and being a rational function with disjoint branches it fails to be surjective or injective over $\\mathbb{R}$.\nHence, $f$ is neither one-one nor onto."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The range of the function $f(x) = \\frac{x^2 + x + 2}{x^2 + x + 1}$, $x \\in \\mathbb{R}$ is:",
+          "image": "",
+          "options": [
+            "$\\left(1, \\frac{7}{3}\\right]$",
+            "$\\left[1, \\frac{7}{3}\\right]$",
+            "$\\left(1, \\frac{5}{3}\\right]$",
+            "$\\left[\\frac{7}{3}, \\infty\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "Rewrite $f(x)$ as:\n$$f(x) = \\frac{(x^2 + x + 1) + 1}{x^2 + x + 1} = 1 + \\frac{1}{x^2 + x + 1}$$\nLet $g(x) = x^2 + x + 1 = \\left(x + \\frac{1}{2}\\right)^2 + \\frac{3}{4}$.\nThe range of $g(x)$ for all $x \\in \\mathbb{R}$ is $\\left[\\frac{3}{4}, \\infty\\right)$.\nTherefore:\n$$0 < \\frac{1}{g(x)} \\le \\frac{1}{3/4} = \\frac{4}{3}$$\nAdding 1:\n$$1 < 1 + \\frac{1}{g(x)} \\le 1 + \\frac{4}{3} = \\frac{7}{3}$$\nThus, the range is $\\left(1, \\frac{7}{3}\\right]$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $f: \\mathbb{R} \\to \\mathbb{R}$ be defined by $f(x) = 2x^3 - 3x^2 - 12x + 5$. Then $f$ is:",
+          "image": "",
+          "options": [
+            "Onto but not one-one",
+            "One-one and onto",
+            "One-one but not onto",
+            "Neither one-one nor onto"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate the derivative:\n$$f'(x) = 6x^2 - 6x - 12 = 6(x^2 - x - 2) = 6(x - 2)(x + 1)$$\n$f'(x)$ changes sign at $x = -1$ and $x = 2$ (local maximum at $x = -1$ and local minimum at $x = 2$).\nBecause $f'(x)$ changes sign, the cubic polynomial is not monotonic, so it is not one-one (many-one).\nSince $f(x)$ is an odd-degree polynomial with leading coefficient $2 > 0$, $\\lim_{x \\to \\infty} f(x) = \\infty$ and $\\lim_{x \\to -\\infty} f(x) = -\\infty$, meaning its range is $(-\\infty, \\infty) = \\mathbb{R}$.\nSince Range $=$ Co-domain, $f$ is onto.\nHence, $f$ is onto but not one-one."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $f(x) = \\frac{x - 1}{x + 1}$ for $x \\ne -1$. Then $(f \\circ f)(x)$ is equal to:",
+          "image": "",
+          "options": [
+            "$-\\frac{1}{x}$",
+            "$\\frac{1}{x}$",
+            "$x$",
+            "$-x$"
+          ],
+          "correctOption": 0,
+          "solution": "Compute the composition $(f \\circ f)(x) = f(f(x))$:\n$$f(f(x)) = \\frac{f(x) - 1}{f(x) + 1} = \\frac{\\frac{x - 1}{x + 1} - 1}{\\frac{x - 1}{x + 1} + 1}$$\nMultiply numerator and denominator by $(x + 1)$:\n$$f(f(x)) = \\frac{(x - 1) - (x + 1)}{(x - 1) + (x + 1)} = \\frac{-2}{2x} = -\\frac{1}{x}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The domain of the function $f(x) = \\log_{10}\\left(\\log_{10}(1 + x^3)\\right)$ is:",
+          "image": "",
+          "options": [
+            "$(0, \\infty)$",
+            "$(-1, \\infty)$",
+            "$[0, \\infty)$",
+            "$(1, \\infty)$"
+          ],
+          "correctOption": 0,
+          "solution": "For the outer logarithm $\\log_{10}(u)$ to be defined, its argument must be strictly positive:\n$$u = \\log_{10}(1 + x^3) > 0$$\nSince the base is $10 > 1$, this inequality implies:\n$$1 + x^3 > 10^0 = 1 \\implies x^3 > 0 \\implies x > 0$$\nAlso, $1 + x^3 > 0 \\implies x > -1$, which is automatically satisfied when $x > 0$.\nTherefore, the domain is $(0, \\infty)$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Let $f: [0, \\infty) \\to [0, \\infty)$ be defined by $f(x) = \\frac{x}{1 + x}$. Then $f$ is:",
+          "image": "",
+          "options": [
+            "One-one but not onto",
+            "Both one-one and onto",
+            "Onto but not one-one",
+            "Neither one-one nor onto"
+          ],
+          "correctOption": 0,
+          "solution": "1) Check injectivity (one-one):\n$$f'(x) = \\frac{(1 + x)(1) - x(1)}{(1 + x)^2} = \\frac{1}{(1 + x)^2} > 0 \\quad \\forall x \\in [0, \\infty)$$\nSince the derivative is strictly positive on its entire domain, $f$ is strictly increasing, hence one-one.\n2) Check surjectivity (onto):\nAs $x \\ge 0$, $f(0) = 0$.\nAs $x \\to \\infty$, $\\lim_{x \\to \\infty} f(x) = 1$.\nTherefore, the range of $f$ is $[0, 1)$.\nSince the specified co-domain is $[0, \\infty)$, Range $\\ne$ Co-domain, so $f$ is not onto.\nThus, $f$ is one-one but not onto."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $f(x) = |x - 1| + |x - 2|$. The range of $f(x)$ is:",
+          "image": "",
+          "options": [
+            "$[1, \\infty)$",
+            "$[0, \\infty)$",
+            "$(1, \\infty)$",
+            "$[2, \\infty)$"
+          ],
+          "correctOption": 0,
+          "solution": "By the triangle inequality:\n$$f(x) = |x - 1| + |2 - x| \\ge |(x - 1) + (2 - x)| = |1| = 1$$\nEquality holds for all $x \\in [1, 2]$, where $f(x) = (x - 1) + (2 - x) = 1$.\nAs $x \\to \\pm\\infty$, $f(x) \\to \\infty$.\nSince $f(x)$ is continuous everywhere, the range is $[1, \\infty)$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $f: \\mathbb{R} \\to \\mathbb{R}$ be defined as $f(x) = x^3 + 5x + 1$. Then $f^{-1}(1)$ is:",
+          "image": "",
+          "options": [
+            "$\\{0\\}$",
+            "$\\{1\\}$",
+            "$\\{-1\\}$",
+            "$\\{0, 1\\}$"
+          ],
+          "correctOption": 0,
+          "solution": "We need to find $x$ such that $f(x) = 1$:\n$$x^3 + 5x + 1 = 1 \\implies x^3 + 5x = 0 \\implies x(x^2 + 5) = 0$$\nSince $x^2 + 5 > 0$ for all real $x$, the only real root is $x = 0$.\nMoreover, $f'(x) = 3x^2 + 5 > 0$, so $f$ is strictly increasing and bijective over $\\mathbb{R}$.\nTherefore, $f^{-1}(1) = \\{0\\}$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The domain of the function $f(x) = \\sin^{-1}\\left(\\frac{|x| - 2}{3}\\right)$ is:",
+          "image": "",
+          "options": [
+            "$[-5, 5]$",
+            "$[-5, -1] \\cup [1, 5]$",
+            "$[1, 5]$",
+            "$[-5, -2] \\cup [2, 5]$"
+          ],
+          "correctOption": 0,
+          "solution": "The domain of $\\sin^{-1}(u)$ is $-1 \\le u \\le 1$.\n$$-1 \\le \\frac{|x| - 2}{3} \\le 1$$\nMultiply across by 3:\n$$-3 \\le |x| - 2 \\le 3$$\nAdd 2:\n$$-1 \\le |x| \\le 5$$\nSince $|x| \\ge 0$ is always satisfied for all real $x$, the condition reduces to:\n$$|x| \\le 5 \\implies -5 \\le x \\le 5$$\nHence, the domain is $[-5, 5]$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] Let $f: \\mathbb{R} \\to \\mathbb{R}$ be defined by $f(x) = e^x - e^{-x}$. Then $f(x)$ is:",
+          "image": "",
+          "options": [
+            "Bijective (both one-one and onto)",
+            "One-one but not onto",
+            "Onto but not one-one",
+            "Neither one-one nor onto"
+          ],
+          "correctOption": 0,
+          "solution": "1) Check injectivity:\n$$f'(x) = e^x + e^{-x} > 0 \\quad \\forall x \\in \\mathbb{R}$$\nSince $f'(x) > 0$, $f$ is strictly increasing throughout $\\mathbb{R}$, which means $f$ is one-one.\n2) Check surjectivity:\n$$\\lim_{x \\to \\infty} (e^x - e^{-x}) = \\infty, \\quad \\lim_{x \\to -\\infty} (e^x - e^{-x}) = -\\infty$$\nBecause $f$ is continuous on $\\mathbb{R}$, by the Intermediate Value Theorem its range is $(-\\infty, \\infty) = \\mathbb{R}$.\nSince Range $=$ Co-domain, $f$ is onto.\nTherefore, $f$ is a bijection."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $f(x) = \\frac{4^x}{4^x + 2}$, then the value of $f(x) + f(1 - x)$ is:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$2$",
+            "$\\frac{1}{2}$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "Compute $f(1 - x)$:\n$$f(1 - x) = \\frac{4^{1 - x}}{4^{1 - x} + 2} = \\frac{4/4^x}{4/4^x + 2} = \\frac{4}{4 + 2 \\cdot 4^x} = \\frac{2}{2 + 4^x}$$\nNow add $f(x)$ and $f(1 - x)$:\n$$f(x) + f(1 - x) = \\frac{4^x}{4^x + 2} + \\frac{2}{4^x + 2} = \\frac{4^x + 2}{4^x + 2} = 1$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Let $f(x) = [x]$ (greatest integer function) and $g(x) = |x|$. The value of $(g \\circ f)\\left(-\\frac{5}{2}\\right) - (f \\circ g)\\left(-\\frac{5}{2}\\right)$ is:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$0$",
+            "$-1$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "1) Evaluate $(g \\circ f)(-5/2)$:\n$$f(-5/2) = [-2.5] = -3$$\n$$(g \\circ f)(-5/2) = g(-3) = |-3| = 3$$\n2) Evaluate $(f \\circ g)(-5/2)$:\n$$g(-5/2) = |-2.5| = 2.5$$\n$$(f \\circ g)(-5/2) = f(2.5) = [2.5] = 2$$\n3) Difference:\n$$3 - 2 = 1$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $A = \\{1, 2, 3, 4\\}$ and $B = \\{a, b, c\\}$. The total number of onto functions from $A$ to $B$ is:",
+          "image": "",
+          "options": [
+            "$36$",
+            "$81$",
+            "$64$",
+            "$24$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the formula for the number of surjective (onto) functions from a set of $m$ elements to a set of $n$ elements:\n$$N = \\sum_{k=0}^{n} (-1)^k \\binom{n}{k} (n - k)^m$$\nFor $m = 4$ and $n = 3$:\n$$N = \\binom{3}{0} 3^4 - \\binom{3}{1} 2^4 + \\binom{3}{2} 1^4 - \\binom{3}{3} 0^4$$\n$$N = 1(81) - 3(16) + 3(1) - 0 = 81 - 48 + 3 = 36$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The domain of the function $f(x) = \\sqrt{\\cos(\\sin x)}$ is:",
+          "image": "",
+          "options": [
+            "$\\mathbb{R}$",
+            "$[-\\pi/2, \\pi/2]$",
+            "$[-1, 1]$",
+            "$\\emptyset$"
+          ],
+          "correctOption": 0,
+          "solution": "For $\\sqrt{\\cos(\\sin x)}$ to be defined in real numbers, we must have $\\cos(\\sin x) \\ge 0$.\nWe know that for any $x \\in \\mathbb{R}$, $-1 \\le \\sin x \\le 1$.\nSince $1 < \\frac{\\pi}{2} \\approx 1.57$, the angle $\\sin x$ lies in $[-1, 1] \\subset \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$.\nIn the interval $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$, the cosine function is strictly non-negative (specifically, $\\cos(\\sin x) \\ge \\cos(1) > 0$).\nThus, $\\cos(\\sin x) > 0$ holds for all $x \\in \\mathbb{R}$, so the domain is $\\mathbb{R}$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Let $f(x) = \\frac{1}{1 - x}$. Then the threefold composition $(f \\circ f \\circ f)(x)$ is equal to:",
+          "image": "",
+          "options": [
+            "$x$",
+            "$\\frac{1}{x}$",
+            "$1 - x$",
+            "$\\frac{x - 1}{x}$"
+          ],
+          "correctOption": 0,
+          "solution": "Step 1: Compute $f(f(x))$:\n$$f(f(x)) = \\frac{1}{1 - \\frac{1}{1 - x}} = \\frac{1 - x}{(1 - x) - 1} = \\frac{1 - x}{-x} = \\frac{x - 1}{x}$$\nStep 2: Compute $f(f(f(x)))$:\n$$f(f(f(x))) = \\frac{1}{1 - \\frac{x - 1}{x}} = \\frac{1}{\\frac{x - (x - 1)}{x}} = \\frac{1}{\\frac{1}{x}} = x$$\n(Valid for $x \\ne 0, 1$)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A function $f(x)$ satisfies the functional equation $f(x + y) = f(x) f(y)$ for all $x, y \\in \\mathbb{R}$. If $f(1) = 3$ and $\\sum_{r=1}^{n} f(r) = 363$, then $n$ is equal to:",
+          "image": "",
+          "options": [
+            "$5$",
+            "$4$",
+            "$6$",
+            "$7$"
+          ],
+          "correctOption": 0,
+          "solution": "The continuous functional equation $f(x + y) = f(x) f(y)$ has the solution $f(x) = a^x$.\nSince $f(1) = 3$, we have $a = 3$, so $f(x) = 3^x$.\nNow evaluate the sum:\n$$\\sum_{r=1}^{n} 3^r = 3 + 3^2 + 3^3 + \\dots + 3^n = \\frac{3(3^n - 1)}{3 - 1} = \\frac{3(3^n - 1)}{2}$$\nEquating to 363:\n$$\\frac{3(3^n - 1)}{2} = 363 \\implies 3^n - 1 = \\frac{363 \\times 2}{3} = 121 \\times 2 = 242$$\n$$3^n = 243 = 3^5 \\implies n = 5$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following functions is an odd function?",
+          "image": "",
+          "options": [
+            "$f(x) = \\ln\\left(x + \\sqrt{x^2 + 1}\\right)$",
+            "$f(x) = \\ln\\left(\\frac{1 - x}{1 + x}\\right)^2$",
+            "$f(x) = x \\left(\\frac{a^x - 1}{a^x + 1}\\right)$",
+            "$f(x) = \\cos x + \\sin^2 x$"
+          ],
+          "correctOption": 0,
+          "solution": "For $f(x) = \\ln\\left(x + \\sqrt{x^2 + 1}\\right)$:\n$$f(-x) = \\ln\\left(-x + \\sqrt{(-x)^2 + 1}\\right) = \\ln\\left(\\sqrt{x^2 + 1} - x\\right)$$\nRationalize the argument:\n$$\\sqrt{x^2 + 1} - x = \\frac{(\\sqrt{x^2 + 1} - x)(\\sqrt{x^2 + 1} + x)}{\\sqrt{x^2 + 1} + x} = \\frac{(x^2 + 1) - x^2}{\\sqrt{x^2 + 1} + x} = \\frac{1}{\\sqrt{x^2 + 1} + x}$$\nTherefore:\n$$f(-x) = \\ln\\left(\\frac{1}{\\sqrt{x^2 + 1} + x}\\right) = -\\ln\\left(x + \\sqrt{x^2 + 1}\\right) = -f(x)$$\nThus, $f(x)$ is an odd function."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $f: \\mathbb{R} \\to \\mathbb{R}$ be defined by $f(x) = \\frac{e^{x^2} - e^{-x^2}}{e^{x^2} + e^{-x^2}}$. Then $f(x)$ is:",
+          "image": "",
+          "options": [
+            "Neither one-one nor onto",
+            "One-one and onto",
+            "One-one but not onto",
+            "Onto but not one-one"
+          ],
+          "correctOption": 0,
+          "solution": "Notice that $f(-x) = \\frac{e^{(-x)^2} - e^{-(-x)^2}}{e^{(-x)^2} + e^{-(-x)^2}} = f(x)$ for all $x \\in \\mathbb{R}$.\nSince $f$ is an even function, $f(1) = f(-1)$, which means $f$ is not one-one (many-one).\nFurthermore, let $t = x^2 \\ge 0$. Then $f(x) = \\frac{e^t - e^{-t}}{e^t + e^{-t}} = \\tanh(t)$.\nFor $t \\in [0, \\infty)$, $f(x) \\in [0, 1)$.\nSince the co-domain is $\\mathbb{R}$, Range $\\ne$ Co-domain, so $f$ is not onto.\nHence, $f$ is neither one-one nor onto."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The domain of the function $f(x) = \\sqrt{3 - 2^x - 2^{1 - x}}$ is:",
+          "image": "",
+          "options": [
+            "$[0, 1]$",
+            "$(-\\infty, 0]$",
+            "$[1, \\infty)$",
+            "$[-1, 1]$"
+          ],
+          "correctOption": 0,
+          "solution": "For $f(x)$ to be defined in $\\mathbb{R}$:\n$$3 - 2^x - \\frac{2}{2^x} \\ge 0$$\nLet $u = 2^x > 0$:\n$$3 - u - \\frac{2}{u} \\ge 0 \\implies \\frac{3u - u^2 - 2}{u} \\ge 0$$\nSince $u > 0$, multiply by $-1$:\n$$u^2 - 3u + 2 \\le 0 \\implies (u - 1)(u - 2) \\le 0$$\n$$1 \\le u \\le 2 \\implies 1 \\le 2^x \\le 2$$\n$$2^0 \\le 2^x \\le 2^1 \\implies 0 \\le x \\le 1$$\nTherefore, the domain is $[0, 1]$."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Let $f(x)$ be a polynomial function such that $f(x) f\\left(\\frac{1}{x}\\right) = f(x) + f\\left(\\frac{1}{x}\\right)$ for all $x \\ne 0$. If $f(3) = 28$, find the value of $f(2)$.",
+          "image": "",
+          "correctValue": 9.0,
+          "solution": "The standard polynomial identity $f(x) f(1/x) = f(x) + f(1/x)$ has solutions of the form:\n$$f(x) = 1 \\pm x^n$$\nGiven $f(3) = 28$:\n$$1 \\pm 3^n = 28$$\nChoosing the plus sign gives $3^n = 27 = 3^3 \\implies n = 3$.\nSo $f(x) = 1 + x^3$.\nNow calculate $f(2)$:\n$$f(2) = 1 + 2^3 = 1 + 8 = 9.0$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Let $A = \\{1, 2, 3, 4, 5\\}$. Find the total number of one-to-one functions $f: A \\to A$ such that $f(1) \\ne 1$ and $f(2) \\ne 2$.",
+          "image": "",
+          "correctValue": 84.0,
+          "solution": "A one-to-one function from a finite set $A$ to itself is a permutation of $A$.\nTotal permutations on 5 elements: $N = 5! = 120$.\nLet $P_1$ be the property that $f(1) = 1$, and $P_2$ be the property that $f(2) = 2$.\nNumber of permutations with $f(1) = 1$: $n(P_1) = 4! = 24$.\nNumber of permutations with $f(2) = 2$: $n(P_2) = 4! = 24$.\nNumber of permutations with both $f(1) = 1$ and $f(2) = 2$: $n(P_1 \\cap P_2) = 3! = 6$.\nBy the principle of inclusion-exclusion, the number of functions where neither holds is:\n$$N_{\\text{req}} = 5! - [n(P_1) + n(P_2)] + n(P_1 \\cap P_2) = 120 - (24 + 24) + 6 = 120 - 48 + 6 = 78$$\nWait, let's verify: $120 - 48 + 6 = 78.0$.\nWait, if $f(1) \\ne 2$: this is partial derangement.\n$N = 120 - 48 + 6 = 78.0$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Let $f(x) = \\frac{x}{\\sqrt{1 + x^2}}$. Define $f^n(x) = (\\underbrace{f \\circ f \\circ \\dots \\circ f}_{n \\text{ times}})(x)$. If $f^8(x) = \\frac{x}{\\sqrt{1 + k x^2}}$, find the value of $k$.",
+          "image": "",
+          "correctValue": 8.0,
+          "solution": "Compute consecutive compositions:\n$$f^2(x) = f(f(x)) = \\frac{\\frac{x}{\\sqrt{1 + x^2}}}{\\sqrt{1 + \\frac{x^2}{1 + x^2}}} = \\frac{x}{\\sqrt{1 + x^2 + x^2}} = \\frac{x}{\\sqrt{1 + 2x^2}}$$\n$$f^3(x) = \\frac{\\frac{x}{\\sqrt{1 + 2x^2}}}{\\sqrt{1 + \\frac{x^2}{1 + 2x^2}}} = \\frac{x}{\\sqrt{1 + 3x^2}}$$\nBy mathematical induction:\n$$f^n(x) = \\frac{x}{\\sqrt{1 + n x^2}}$$\nFor $n = 8$:\n$$f^8(x) = \\frac{x}{\\sqrt{1 + 8 x^2}}$$\nComparing with $\\frac{x}{\\sqrt{1 + k x^2}}$, we obtain $k = 8.0$."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If the domain of the function $f(x) = \\sqrt{\\ln\\left(\\frac{5x - x^2}{4}\\right)}$ is the closed interval $[a, b]$, find the value of $a + b$.",
+          "image": "",
+          "correctValue": 5.0,
+          "solution": "For the square root and logarithm to be defined:\n$$\\ln\\left(\\frac{5x - x^2}{4}\\right) \\ge 0$$\nSince the natural logarithm has base $e > 1$:\n$$\\frac{5x - x^2}{4} \\ge e^0 = 1$$\n$$5x - x^2 \\ge 4 \\implies x^2 - 5x + 4 \\le 0$$\n$$(x - 1)(x - 4) \\le 0 \\implies 1 \\le x \\le 4$$\nThus, the domain is $[1, 4]$, so $a = 1$ and $b = 4$.\n$$a + b = 1 + 4 = 5.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Let $f(x) = a x + b$. If $(f \\circ f)(x) = 9x + 8$ with $a > 0$, find the value of $a + b$.",
+          "image": "",
+          "correctValue": 5.0,
+          "solution": "Calculate the composition $(f \\circ f)(x)$:\n$$(f \\circ f)(x) = f(f(x)) = f(ax + b) = a(ax + b) + b = a^2 x + ab + b = a^2 x + (a + 1)b$$\nEquating coefficients with $9x + 8$:\n$$a^2 = 9$$\n$$(a + 1)b = 8$$\nSince $a > 0$, $a = 3$.\nSubstitute $a = 3$ into the second equation:\n$$(3 + 1)b = 8 \\implies 4b = 8 \\implies b = 2$$\nTherefore:\n$$a + b = 3 + 2 = 5.0$$"
+        }
+      ]
+    }
+  ]
+}

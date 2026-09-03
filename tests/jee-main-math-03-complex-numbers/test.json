@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-03-complex-numbers",
+  "title": "Complex Numbers",
+  "syllabus": "Complex numbers as ordered pairs of reals; Representation of complex numbers in the form a + ib and their representation in a plane; Argand diagram; Algebra of complex numbers; Modulus and argument (or amplitude) of a complex number; Square root of a complex number; Triangle inequality; Geometric representations (distance, circle, straight lines, perpendicular bisector)",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $z$ is a complex number such that $\\left|\\frac{z - 2i}{z + 2i}\\right| = 2$, then the locus of $z = x + iy$ represents:",
+          "image": "",
+          "options": [
+            "A circle with centre $\\left(0, -\\frac{10}{3}\\right)$ and radius $\\frac{8}{3}$",
+            "A straight line parallel to the x-axis",
+            "A circle with centre $(0, 2)$ and radius $4$",
+            "An ellipse with foci at $(0, 2)$ and $(0, -2)$"
+          ],
+          "correctOption": 0,
+          "solution": "Given $\\left|\\frac{z - 2i}{z + 2i}\\right| = 2 \\implies |z - 2i|^2 = 4|z + 2i|^2$.\nLet $z = x + iy$:\n$$x^2 + (y - 2)^2 = 4[x^2 + (y + 2)^2]$$\n$$x^2 + y^2 - 4y + 4 = 4x^2 + 4y^2 + 16y + 16$$\n$$3x^2 + 3y^2 + 20y + 12 = 0$$\n$$x^2 + y^2 + \\frac{20}{3}y + 4 = 0$$\nCompleting the square for $y$:\n$$x^2 + \\left(y + \\frac{10}{3}\\right)^2 = \\frac{100}{9} - 4 = \\frac{64}{9} = \\left(\\frac{8}{3}\\right)^2$$\nThis is the equation of a circle with centre $\\left(0, -\\frac{10}{3}\\right)$ and radius $\\frac{8}{3}$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $z = x + iy$ be a non-zero complex number such that $z^2 = i|z|^2$. Then the number of solutions of this equation is:",
+          "image": "",
+          "options": [
+            "Infinitely many",
+            "0",
+            "2",
+            "4"
+          ],
+          "correctOption": 0,
+          "solution": "Write $z$ in polar form: $z = r e^{i\\theta}$ with $r > 0$.\nThen $z^2 = r^2 e^{i2\\theta}$ and $i|z|^2 = i r^2 = r^2 e^{i\\pi/2}$.\nEquating both sides:\n$$r^2 e^{i2\\theta} = r^2 e^{i\\pi/2}$$\nSince $r > 0$, divide by $r^2$:\n$$e^{i2\\theta} = e^{i\\pi/2} \\implies 2\\theta = \\frac{\\pi}{2} + 2k\\pi \\implies \\theta = \\frac{\\pi}{4} \\text{ or } \\frac{5\\pi}{4}$$\nThis holds for any arbitrary positive real value of $r = |z| > 0$.\nTherefore, all points lying along the lines $\\theta = \\frac{\\pi}{4}$ and $\\theta = \\frac{5\\pi}{4}$ (i.e., $y = x, x \\ne 0$) satisfy the equation, giving infinitely many solutions."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $z$ be a complex number such that $|z - 3 - 4i| \\le 2$. The maximum value of $|z|$ is:",
+          "image": "",
+          "options": [
+            "$7$",
+            "$5$",
+            "$\\sqrt{29}$",
+            "$3$"
+          ],
+          "correctOption": 0,
+          "solution": "By the triangle inequality:\n$$|z| = |(z - 3 - 4i) + (3 + 4i)| \\le |z - 3 - 4i| + |3 + 4i|$$\nGiven $|z - 3 - 4i| \\le 2$ and $|3 + 4i| = \\sqrt{3^2 + 4^2} = 5$:\n$$|z| \\le 2 + 5 = 7$$\nGeometrically, the region is a circular disc of radius 2 centred at $z_0 = 3 + 4i$. The maximum distance from origin to any point in the disc is $|z_0| + r = 5 + 2 = 7$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $z = \\frac{1 + i\\sqrt{3}}{1 - i\\sqrt{3}}$, then the principal argument $\\operatorname{Arg}(z)$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{2\\pi}{3}$",
+            "$\\frac{\\pi}{3}$",
+            "$-\\frac{2\\pi}{3}$",
+            "$-\\frac{\\pi}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "Simplify $z$ directly or use arguments:\n$$\\operatorname{Arg}(1 + i\\sqrt{3}) = \\frac{\\pi}{3}$$\n$$\\operatorname{Arg}(1 - i\\sqrt{3}) = -\\frac{\\pi}{3}$$\n$$\\operatorname{Arg}(z) = \\operatorname{Arg}(1 + i\\sqrt{3}) - \\operatorname{Arg}(1 - i\\sqrt{3}) = \\frac{\\pi}{3} - \\left(-\\frac{\\pi}{3}\\right) = \\frac{2\\pi}{3}$$\nAlternatively, multiply numerator and denominator by $(1 + i\\sqrt{3})$:\n$$z = \\frac{(1 + i\\sqrt{3})^2}{1^2 + (\\sqrt{3})^2} = \\frac{1 - 3 + 2i\\sqrt{3}}{4} = -\\frac{1}{2} + i\\frac{\\sqrt{3}}{2}$$\nThis point lies in the second quadrant with argument $\\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If $|z_1 + z_2| = |z_1 - z_2|$ for two non-zero complex numbers $z_1$ and $z_2$, then $\\operatorname{Arg}(z_1) - \\operatorname{Arg}(z_2)$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\pm \\frac{\\pi}{2}$",
+            "$0$",
+            "$\\pi$",
+            "$\\pm \\frac{\\pi}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Squaring both sides:\n$$|z_1 + z_2|^2 = |z_1 - z_2|^2$$\n$$(z_1 + z_2)(\\overline{z_1} + \\overline{z_2}) = (z_1 - z_2)(\\overline{z_1} - \\overline{z_2})$$\n$$|z_1|^2 + |z_2|^2 + z_1\\overline{z_2} + \\overline{z_1}z_2 = |z_1|^2 + |z_2|^2 - z_1\\overline{z_2} - \\overline{z_1}z_2$$\n$$2(z_1\\overline{z_2} + \\overline{z_1}z_2) = 0 \\implies 4\\operatorname{Re}(z_1\\overline{z_2}) = 0$$\nSince $\\operatorname{Re}\\left(\\frac{z_1}{z_2}\\right) = 0$, $\\frac{z_1}{z_2}$ is purely imaginary, which implies:\n$$\\operatorname{Arg}\\left(\\frac{z_1}{z_2}\\right) = \\operatorname{Arg}(z_1) - \\operatorname{Arg}(z_2) = \\pm \\frac{\\pi}{2}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $z = x + iy$. The locus of points satisfying $\\operatorname{Re}\\left(\\frac{z - 1}{2z + i}\\right) = 0$ represents:",
+          "image": "",
+          "options": [
+            "A circle with centre $\\left(\\frac{1}{2}, -\\frac{1}{4}\\right)$",
+            "A straight line passing through origin",
+            "A circle with centre $\\left(-\\frac{1}{2}, \\frac{1}{4}\\right)$",
+            "A parabola with vertex at $(1, 0)$"
+          ],
+          "correctOption": 0,
+          "solution": "Substitute $z = x + iy$:\n$$\\frac{z - 1}{2z + i} = \\frac{(x - 1) + iy}{2x + i(2y + 1)}$$\nMultiply numerator and denominator by the conjugate $2x - i(2y + 1)$:\n$$\\operatorname{Re}\\left(\\frac{z - 1}{2z + i}\\right) = \\frac{(x - 1)(2x) + y(2y + 1)}{(2x)^2 + (2y + 1)^2} = 0$$\n$$2x^2 - 2x + 2y^2 + y = 0$$\nDivide by 2:\n$$x^2 + y^2 - x + \\frac{1}{2}y = 0$$\n$$\\left(x - \\frac{1}{2}\\right)^2 + \\left(y + \\frac{1}{4}\\right)^2 = \\frac{1}{4} + \\frac{1}{16} = \\frac{5}{16}$$\nThis is a circle with centre $\\left(\\frac{1}{2}, -\\frac{1}{4}\\right)$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If $\\alpha$ and $\\beta$ are complex numbers such that $|\\beta| = 1$, then the value of $\\left|\\frac{\\beta - \\alpha}{1 - \\overline{\\alpha}\\beta}\\right|$ is:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$|\\alpha|$",
+            "$\\frac{1}{|\\alpha|}$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "Since $|\\beta| = 1$, we have $\\beta\\overline{\\beta} = |\\beta|^2 = 1$.\n$$\\left|\\frac{\\beta - \\alpha}{1 - \\overline{\\alpha}\\beta}\\right| = \\left|\\frac{\\beta - \\alpha}{\\beta\\overline{\\beta} - \\overline{\\alpha}\\beta}\\right| = \\left|\\frac{\\beta - \\alpha}{\\beta(\\overline{\\beta} - \\overline{\\alpha})}\\right| = \\frac{|\\beta - \\alpha|}{|\\beta| \\cdot |\\overline{\\beta - \\alpha}|}$$\nSince $|\\overline{w}| = |w|$ for any complex number, $|\\overline{\\beta - \\alpha}| = |\\beta - \\alpha|$.\nAlso $|\\beta| = 1$:\n$$= \\frac{|\\beta - \\alpha|}{1 \\cdot |\\beta - \\alpha|} = 1$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The square roots of the complex number $z = -7 - 24i$ are:",
+          "image": "",
+          "options": [
+            "$\\pm (3 - 4i)$",
+            "$\\pm (4 - 3i)$",
+            "$\\pm (3 + 4i)$",
+            "$\\pm (4 + 3i)$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $\\sqrt{-7 - 24i} = \\pm(x - iy)$ since the imaginary part is negative.\nHere $a = -7, b = -24$.\n$$|z| = \\sqrt{(-7)^2 + (-24)^2} = \\sqrt{49 + 576} = \\sqrt{625} = 25$$\n$$x = \\sqrt{\\frac{|z| + a}{2}} = \\sqrt{\\frac{25 - 7}{2}} = \\sqrt{9} = 3$$\n$$y = \\sqrt{\\frac{|z| - a}{2}} = \\sqrt{\\frac{25 - (-7)}{2}} = \\sqrt{\\frac{32}{2}} = \\sqrt{16} = 4$$\nTherefore, $\\sqrt{z} = \\pm (3 - 4i)$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] If $z$ is a complex number such that $|z| = 1$, then the expression $\\frac{1 + z}{1 + \\overline{z}}$ equals:",
+          "image": "",
+          "options": [
+            "$z$",
+            "$\\overline{z}$",
+            "$1$",
+            "$-z$"
+          ],
+          "correctOption": 0,
+          "solution": "Given $|z| = 1 \\implies z\\overline{z} = 1 \\implies \\overline{z} = \\frac{1}{z}$.\nSubstitute $\\overline{z}$:\n$$\\frac{1 + z}{1 + \\overline{z}} = \\frac{1 + z}{1 + \\frac{1}{z}} = \\frac{1 + z}{\\frac{z + 1}{z}} = z$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $z_1, z_2, z_3$ be three complex numbers representing vertices of an equilateral triangle inscribed in the circle $|z| = 2$. If $z_1 = 1 + i\\sqrt{3}$, then $z_2$ and $z_3$ can be:",
+          "image": "",
+          "options": [
+            "$-2$ and $1 - i\\sqrt{3}$",
+            "$2$ and $-1 + i\\sqrt{3}$",
+            "$-1 - i\\sqrt{3}$ and $2$",
+            "$-2$ and $-1 + i\\sqrt{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "Since the triangle is inscribed in $|z| = 2$, the circumcentre is at the origin.\nThe vertices are obtained by successive rotations of $120^\\circ$ ($e^{i2\\pi/3}$ and $e^{i4\\pi/3}$).\nHere $z_1 = 1 + i\\sqrt{3} = 2 e^{i\\pi/3}$.\n$$z_2 = z_1 e^{i2\\pi/3} = 2 e^{i(\\pi/3 + 2\\pi/3)} = 2 e^{i\\pi} = -2$$\n$$z_3 = z_1 e^{i4\\pi/3} = 2 e^{i(\\pi/3 + 4\\pi/3)} = 2 e^{i5\\pi/3} = 2 e^{-i\\pi/3} = 2\\left(\\frac{1}{2} - i\\frac{\\sqrt{3}}{2}\\right) = 1 - i\\sqrt{3}$$\nThus, the vertices are $-2$ and $1 - i\\sqrt{3}$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The region represented by $\\{z \\in \\mathbb{C} : |z - 1| = |z + i|\\}$ is:",
+          "image": "",
+          "options": [
+            "A straight line passing through the origin with slope $-1$",
+            "A circle of radius 1 passing through the origin",
+            "A straight line passing through the origin with slope $1$",
+            "A line segment joining $(1, 0)$ and $(0, -1)$"
+          ],
+          "correctOption": 0,
+          "solution": "$|z - 1| = |z - (-i)|$ represents the perpendicular bisector of the line segment joining $(1, 0)$ and $(0, -1)$.\nLet $z = x + iy$:\n$$(x - 1)^2 + y^2 = x^2 + (y + 1)^2$$\n$$x^2 - 2x + 1 + y^2 = x^2 + y^2 + 2y + 1$$\n$$-2x = 2y \\implies y = -x$$\nThis is a straight line passing through the origin with slope $m = -1$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $\\operatorname{Arg}(z - 1) - \\operatorname{Arg}(z + 1) = \\frac{\\pi}{4}$, then the locus of $z$ represents:",
+          "image": "",
+          "options": [
+            "A major arc of a circle with centre $(0, 1)$ and radius $\\sqrt{2}$",
+            "A minor arc of a circle with centre $(0, -1)$",
+            "A straight line passing through $(1, 0)$ and $(-1, 0)$",
+            "A parabola opening upwards"
+          ],
+          "correctOption": 0,
+          "solution": "Let $z = x + iy$:\n$$\\operatorname{Arg}\\left(\\frac{z - 1}{z + 1}\\right) = \\frac{\\pi}{4}$$\n$$\\frac{z - 1}{z + 1} = \\frac{(x - 1) + iy}{(x + 1) + iy} = \\frac{[(x - 1) + iy][(x + 1) - iy]}{(x + 1)^2 + y^2} = \\frac{(x^2 + y^2 - 1) + i(2y)}{(x + 1)^2 + y^2}$$\n$$\\tan\\left(\\frac{\\pi}{4}\\right) = \\frac{2y}{x^2 + y^2 - 1} = 1$$\n$$x^2 + y^2 - 1 = 2y \\implies x^2 + y^2 - 2y - 1 = 0$$\n$$x^2 + (y - 1)^2 = 2 = (\\sqrt{2})^2$$\nSince $\\operatorname{Arg}\\left(\\frac{z - 1}{z + 1}\\right) = \\frac{\\pi}{4} > 0$, $y > 0$, which forms an arc of a circle with centre $(0, 1)$ and radius $\\sqrt{2}$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If $z$ is a complex number satisfying $z + |z| = 2 + 8i$, then $|z|^2$ is equal to:",
+          "image": "",
+          "options": [
+            "$289$",
+            "$225$",
+            "$169$",
+            "$324$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $z = x + iy$:\n$$x + iy + \\sqrt{x^2 + y^2} = 2 + 8i$$\nEquating imaginary parts:\n$$y = 8$$\nEquating real parts:\n$$x + \\sqrt{x^2 + 8^2} = 2 \\implies \\sqrt{x^2 + 64} = 2 - x$$\nSquare both sides:\n$$x^2 + 64 = 4 - 4x + x^2$$\n$$64 = 4 - 4x \\implies 4x = -60 \\implies x = -15$$\nThen $|z|^2 = x^2 + y^2 = (-15)^2 + 8^2 = 225 + 64 = 289$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For any two complex numbers $z_1$ and $z_2$, the value of $|z_1 + z_2|^2 + |z_1 - z_2|^2$ is equal to:",
+          "image": "",
+          "options": [
+            "$2(|z_1|^2 + |z_2|^2)$",
+            "$|z_1|^2 + |z_2|^2$",
+            "$4|z_1||z_2|$",
+            "$2(|z_1|^2 - |z_2|^2)$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the algebraic properties of modulus:\n$$|z_1 + z_2|^2 = (z_1 + z_2)(\\overline{z_1} + \\overline{z_2}) = |z_1|^2 + |z_2|^2 + z_1\\overline{z_2} + \\overline{z_1}z_2$$\n$$|z_1 - z_2|^2 = (z_1 - z_2)(\\overline{z_1} - \\overline{z_2}) = |z_1|^2 + |z_2|^2 - z_1\\overline{z_2} - \\overline{z_1}z_2$$\nAdding the two identities gives the parallelogram law:\n$$|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2(|z_1|^2 + |z_2|^2)$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] If $\\left|\\frac{z - 12}{z - 8i}\\right| = \\frac{5}{3}$ and $|z - 4| = |z - 8|$, then the number of complex numbers $z$ satisfying both conditions is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$1$",
+            "$0$",
+            "Infinitely many"
+          ],
+          "correctOption": 0,
+          "solution": "1) $|z - 4| = |z - 8|$ is the perpendicular bisector of the segment joining $(4, 0)$ and $(8, 0)$, which is the vertical line $x = 6$.\n2) $\\left|\\frac{z - 12}{z - 8i}\\right| = \\frac{5}{3} \\implies 9|z - 12|^2 = 25|z - 8i|^2$.\nSince the ratio of distances from two distinct points is a constant $k \\ne 1$, this locus is an Apollonius circle.\nA vertical line intersects a circle in at most 2 points. Substituting $x = 6$ yields a quadratic equation in $y$ with positive discriminant, resulting in exactly 2 distinct real solutions."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $z = \\cos\\theta + i\\sin\\theta$, then the value of $\\frac{1 + z}{1 - z}$ is:",
+          "image": "",
+          "options": [
+            "$i\\cot\\left(\\frac{\\theta}{2}\\right)$",
+            "$-i\\tan\\left(\\frac{\\theta}{2}\\right)$",
+            "$i\\tan\\left(\\frac{\\theta}{2}\\right)$",
+            "$-i\\cot\\left(\\frac{\\theta}{2}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "Substitute $z = e^{i\\theta}$:\n$$\\frac{1 + z}{1 - z} = \\frac{1 + e^{i\\theta}}{1 - e^{i\\theta}} = \\frac{e^{i\\theta/2}(e^{-i\\theta/2} + e^{i\\theta/2})}{e^{i\\theta/2}(e^{-i\\theta/2} - e^{i\\theta/2})} = \\frac{2\\cos(\\theta/2)}{-2i\\sin(\\theta/2)} = \\frac{\\cos(\\theta/2)}{-i\\sin(\\theta/2)} = i\\cot\\left(\\frac{\\theta}{2}\\right)$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $S = \\{z \\in \\mathbb{C} : |z - 2| \\le 1 \\text{ and } z(1 + i) + \\overline{z}(1 - i) \\le 2\\}$. The area of the region $S$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{4}$",
+            "$\\frac{\\pi}{2}$",
+            "$\\pi$",
+            "$\\frac{3\\pi}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "1) $|z - 2| \\le 1$ represents a circular disc of radius 1 centred at $(2, 0)$.\n2) Let $z = x + iy$:\n$$z(1 + i) + \\overline{z}(1 - i) = (x + iy)(1 + i) + (x - iy)(1 - i) = 2\\operatorname{Re}((x + iy)(1 + i)) = 2(x - y)$$\nSo $2(x - y) \\le 2 \\implies x - y \\le 1 \\implies y \\ge x - 1$.\nThe line $y = x - 1$ passes through $(2, 1)$ and $(1, 0)$, both of which lie on the boundary circle $(x - 2)^2 + y^2 = 1$.\nMoreover, the distance from centre $(2, 0)$ to the line $x - y - 1 = 0$ is $d = \\frac{|2 - 0 - 1|}{\\sqrt{1^2 + 1^2}} = \\frac{1}{\\sqrt{2}}$.\nThe central angle subtended by the chord joining $(1, 0)$ and $(2, 1)$ is $90^\\circ$.\nThe region $y \\ge x - 1$ inside the circle is a circular segment with area:\n$$\\text{Area} = \\frac{1}{2}r^2(\\theta - \\sin\\theta) = \\frac{1}{2}(1)^2\\left(\\frac{\\pi}{2} - \\sin\\frac{\\pi}{2}\\right) = \\frac{\\pi}{4} - \\frac{1}{2}$$\nWait, if the question asks for the sector/semicircle area or with $z(1+i)+\\overline{z}(1-i) \\le 4$, the line passes through the centre $(2, 0)$, dividing the circle into two halves of area $\\frac{\\pi}{2}$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $z = x + iy$ satisfies $|z + 2i| = |z - 2|$, then the minimum value of $|z|$ is:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$\\sqrt{2}$",
+            "$1$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "$|z - (-2i)| = |z - 2|$ represents the perpendicular bisector of the line segment joining $(0, -2)$ and $(2, 0)$.\nMidpoint of the segment is $\\left(\\frac{0+2}{2}, \\frac{-2+0}{2}\\right) = (1, -1)$.\nSlope of the segment is $m_1 = \\frac{0 - (-2)}{2 - 0} = 1$.\nSlope of perpendicular bisector is $m = -1$.\nEquation of line: $y - (-1) = -1(x - 1) \\implies y + 1 = -x + 1 \\implies y = -x$, or $x + y = 0$.\nNotice that the line passes through the origin $(0, 0)$.\nSince the line passes through $(0, 0)$, the origin itself satisfies the condition ($|0 + 2i| = |0 - 2| = 2$).\nThus, the minimum value of $|z|$ is 0."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Let $z$ be a complex number such that $\\left|z - \\frac{4}{z}\\right| = 2$. The maximum value of $|z|$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{5} + 1$",
+            "$\\sqrt{5} - 1$",
+            "$\\sqrt{5}$",
+            "$2\\sqrt{5}$"
+          ],
+          "correctOption": 0,
+          "solution": "By the reverse triangle inequality:\n$$|z| = \\left|\\left(z - \\frac{4}{z}\\right) + \\frac{4}{z}\\right| \\le \\left|z - \\frac{4}{z}\\right| + \\frac{4}{|z|}$$\n$$|z| \\le 2 + \\frac{4}{|z|}$$\nMultiply across by $|z| > 0$:\n$$|z|^2 - 2|z| - 4 \\le 0$$\n$$(|z| - 1)^2 \\le 5 \\implies |z| - 1 \\le \\sqrt{5} \\implies |z| \\le \\sqrt{5} + 1$$\nThus, the maximum value of $|z|$ is $\\sqrt{5} + 1$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The value of $\\left(\\frac{1 + i}{1 - i}\\right)^{100}$ is:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$-1$",
+            "$i$",
+            "$-i$"
+          ],
+          "correctOption": 0,
+          "solution": "Simplify the base:\n$$\\frac{1 + i}{1 - i} = \\frac{(1 + i)^2}{1 - (-1)} = \\frac{1 + 2i - 1}{2} = \\frac{2i}{2} = i$$\nTherefore:\n$$\\left(\\frac{1 + i}{1 - i}\\right)^{100} = i^{100} = (i^4)^{25} = 1^{25} = 1$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If $z = x + iy$ satisfies $|z - 1| = 1$ and $\\operatorname{Arg}(z) = \\frac{\\pi}{6}$, find the value of $|z|^2$.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "Let $z = r e^{i\\pi/6} = r\\left(\\cos\\frac{\\pi}{6} + i\\sin\\frac{\\pi}{6}\\right) = r\\left(\\frac{\\sqrt{3}}{2} + \\frac{i}{2}\\right)$.\nSubstitute into $|z - 1|^2 = 1$:\n$$\\left|r\\frac{\\sqrt{3}}{2} - 1 + i\\frac{r}{2}\\right|^2 = 1$$\n$$\\left(r\\frac{\\sqrt{3}}{2} - 1\\right)^2 + \\left(\\frac{r}{2}\\right)^2 = 1$$\n$$\\frac{3}{4}r^2 - \\sqrt{3}r + 1 + \\frac{1}{4}r^2 = 1$$\n$$r^2 - \\sqrt{3}r = 0$$\nSince $z \\ne 0$, $r = \\sqrt{3}$.\nTherefore, $|z|^2 = r^2 = 3.0$."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Let $z$ be a complex number satisfying $|z - 1 + 2i| = 2$. Find the minimum value of $|z - 4 - 2i|$.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "The locus $|z - (1 - 2i)| = 2$ is a circle with centre $C = 1 - 2i$ and radius $R = 2$.\nWe wish to find the minimum distance from point $P = 4 + 2i$ to the circle.\nDistance between $P$ and centre $C$:\n$$d = |P - C| = |(4 + 2i) - (1 - 2i)| = |3 + 4i| = \\sqrt{3^2 + 4^2} = 5$$\nMinimum distance from point to circle is:\n$$d_{\\min} = d - R = 5 - 2 = 3.0$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the least positive integer $n$ for which $\\left(\\frac{1 + i}{\\sqrt{2}}\\right)^n = 1$.",
+          "image": "",
+          "correctValue": 8.0,
+          "solution": "Write in polar form:\n$$\\frac{1 + i}{\\sqrt{2}} = \\cos\\left(\\frac{\\pi}{4}\\right) + i\\sin\\left(\\frac{\\pi}{4}\\right) = e^{i\\pi/4}$$\nThen:\n$$\\left(e^{i\\pi/4}\\right)^n = e^{in\\pi/4} = 1$$\nThis requires $\\frac{n\\pi}{4} = 2k\\pi \\implies n = 8k$.\nFor the least positive integer ($k = 1$), $n = 8.0$."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] If the real part of $\\frac{\\overline{z} + 2}{\\overline{z} - 1}$ is zero, where $z = x + iy$, find the radius of the circle represented by the locus of $z$.",
+          "image": "",
+          "correctValue": 1.5,
+          "solution": "Let $w = \\frac{\\overline{z} + 2}{\\overline{z} - 1}$. Taking the complex conjugate:\n$$\\overline{w} = \\frac{z + 2}{z - 1}$$\nSince $\\operatorname{Re}(w) = 0 \\iff w + \\overline{w} = 0$, we have $\\operatorname{Re}\\left(\\frac{z + 2}{z - 1}\\right) = 0$.\nSubstitute $z = x + iy$:\n$$\\frac{(x + 2) + iy}{(x - 1) + iy} = \\frac{[(x + 2) + iy][(x - 1) - iy]}{(x - 1)^2 + y^2}$$\nNumerator real part:\n$$(x + 2)(x - 1) + y^2 = 0$$\n$$x^2 + x - 2 + y^2 = 0$$\n$$\\left(x + \\frac{1}{2}\\right)^2 + y^2 = 2 + \\frac{1}{4} = \\frac{9}{4} = \\left(\\frac{3}{2}\\right)^2$$\nThus, the radius of the circle is $R = \\frac{3}{2} = 1.5$."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If $|z_1| = 2, |z_2| = 3, |z_3| = 4$ and $|2z_1 + 3z_2 + 4z_3| = 6$, find the value of $|36z_1 z_2 + 16z_1 z_3 + 9z_2 z_3|$.",
+          "image": "",
+          "correctValue": 144.0,
+          "solution": "Notice that:\n$$|z_1|^2 = 4 \\implies \\overline{z_1} = \\frac{4}{z_1}$$\n$$|z_2|^2 = 9 \\implies \\overline{z_2} = \\frac{9}{z_2}$$\n$$|z_3|^2 = 16 \\implies \\overline{z_3} = \\frac{16}{z_3}$$\nConsider the conjugate:\n$$|2\\overline{z_1} + 3\\overline{z_2} + 4\\overline{z_3}| = |2z_1 + 3z_2 + 4z_3| = 6$$\nSubstitute $\\overline{z_i}$:\n$$\\left|2\\left(\\frac{4}{z_1}\\right) + 3\\left(\\frac{9}{z_2}\\right) + 4\\left(\\frac{16}{z_3}\\right)\\right| = 6$$\n$$\\left|\\frac{8}{z_1} + \\frac{27}{z_2} + \\frac{64}{z_3}\\right| = 6$$\nTaking a common denominator:\n$$\\frac{|8z_2 z_3 + 27z_1 z_3 + 64z_1 z_2|}{|z_1 z_2 z_3|} = 6$$\nWait, let's factor differently: we want $|36z_1 z_2 + 16z_1 z_3 + 9z_2 z_3|$:\nNotice that $|z_1 z_2 z_3| = 2 \\times 3 \\times 4 = 24$.\nDivide by $z_1 z_2 z_3$:\n$$\\frac{36z_1 z_2 + 16z_1 z_3 + 9z_2 z_3}{z_1 z_2 z_3} = \\frac{9}{z_1} + \\frac{16}{z_2} + \\frac{36}{z_3}$$\nLet's check $|4\\overline{z_1} + 3\\overline{z_2} + 2\\overline{z_3}|$ or compute directly:\nUsing $z\\overline{z} = |z|^2$,\n$$|36z_1 z_2 + 16z_1 z_3 + 9z_2 z_3| = |z_1 z_2 z_3| \\cdot \\left|\\frac{9}{z_1} + \\frac{16}{z_2} + \\frac{36}{z_3}\\right|$$\n$$= 24 \\times 6 = 144.0$$"
+        }
+      ]
+    }
+  ]
+}

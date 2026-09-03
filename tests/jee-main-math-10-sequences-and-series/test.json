@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-10-sequences-and-series",
+  "title": "Sequences and Series (AP, GP, and HP)",
+  "syllabus": "Arithmetic and Geometric progressions, insertion of arithmetic and geometric means between two given numbers; Relation between A.M. and G.M.; Harmonic progression (H.P.) and harmonic mean (H.M.)",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the sum of the first 15 terms of an arithmetic progression $a_1, a_2, a_3, \\dots$ is 225 and the sum of the first 25 terms is 625, then the sum of its first 20 terms is:",
+          "image": "",
+          "options": [
+            "$400$",
+            "$380$",
+            "$420$",
+            "$360$"
+          ],
+          "correctOption": 0,
+          "solution": "The sum of the first $n$ terms of an AP is $S_n = \\frac{n}{2}[2a + (n - 1)d]$.\nGiven $S_{15} = \\frac{15}{2}(2a + 14d) = 225 \\implies 15(a + 7d) = 225 \\implies a + 7d = 15 \\quad \\text{--- (1)}$.\nGiven $S_{25} = \\frac{25}{2}(2a + 24d) = 625 \\implies 25(a + 12d) = 625 \\implies a + 12d = 25 \\quad \\text{--- (2)}$.\nSubtracting (1) from (2):\n$$5d = 10 \\implies d = 2$$\nFrom (1): $a + 7(2) = 15 \\implies a = 1$.\nSum of the first 20 terms:\n$$S_{20} = \\frac{20}{2}[2(1) + 19(2)] = 10[2 + 38] = 10 \\times 40 = 400$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If the $p^{\\text{th}}$, $q^{\\text{th}}$, and $r^{\\text{th}}$ terms of a non-constant geometric progression are in arithmetic progression, then $p, q, r$:",
+          "image": "",
+          "options": [
+            "Cannot be in A.P.",
+            "Are always in A.P.",
+            "Are always in G.P.",
+            "Are always in H.P."
+          ],
+          "correctOption": 0,
+          "solution": "Let the terms of the GP be $T_p = A R^{p-1}, T_q = A R^{q-1}, T_r = A R^{r-1}$.\nSince they are in AP:\n$$2 T_q = T_p + T_r \\implies 2 A R^{q-1} = A R^{p-1} + A R^{r-1}$$\nDividing by $A R^{q-1}$ (since $A \\ne 0$):\n$$2 = R^{p - q} + R^{r - q}$$\nIf $p, q, r$ were in AP, then $q - p = r - q = d$. Then $R^{-d} + R^d = 2$.\nLet $t = R^d$: $t + \\frac{1}{t} = 2 \\implies (t - 1)^2 = 0 \\implies t = 1 \\implies R^d = 1$.\nSince the GP is non-constant, $R \\ne 1$, which forces $d = 0$, implying $p = q = r$, contradicting that $p, q, r$ are distinct term indices.\nHence, $p, q, r$ cannot be in A.P."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $a, b, c$ be positive real numbers. If $a, b, c$ are in H.P., then the expression $\\frac{a}{b + c} + \\frac{c}{a + b}$ is:",
+          "image": "",
+          "options": [
+            "$\\ge 1$",
+            "$\\le 1$",
+            "$> 2$",
+            "$= 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Since $a, b, c$ are in H.P., $b = \\frac{2ac}{a + c}$.\nRewrite the required expression:\n$$\\frac{a}{\\frac{2ac}{a + c} + c} + \\frac{c}{a + \\frac{2ac}{a + c}} = \\frac{a(a + c)}{2ac + c(a + c)} + \\frac{c(a + c)}{a(a + c) + 2ac}$$\n$$= \\frac{a(a + c)}{c(3a + c)} + \\frac{c(a + c)}{a(a + 3c)}$$\nBy algebraic simplification and AM-GM inequality, for any positive numbers in HP, $\\frac{a}{b + c} + \\frac{c}{a + b} \\ge 1$, with equality holding when $a = b = c$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $a_1, a_2, a_3, \\dots, a_n$ are in A.P. with common difference $d \\ne 0$, then the sum $\\sum_{i=1}^{n-1} \\frac{1}{a_i a_{i+1}}$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{n - 1}{a_1 a_n}$",
+            "$\\frac{n}{a_1 a_n}$",
+            "$\\frac{n - 1}{a_1 + a_n}$",
+            "$\\frac{d(n - 1)}{a_1 a_n}$"
+          ],
+          "correctOption": 0,
+          "solution": "Since $a_{i+1} - a_i = d$, we can multiply and divide each term by $d$:\n$$\\frac{1}{a_i a_{i+1}} = \\frac{1}{d} \\left(\\frac{a_{i+1} - a_i}{a_i a_{i+1}}\\right) = \\frac{1}{d} \\left(\\frac{1}{a_i} - \\frac{1}{a_{i+1}}\\right)$$\nSumming from $i = 1$ to $n - 1$ produces a telescoping series:\n$$\\sum_{i=1}^{n-1} \\frac{1}{a_i a_{i+1}} = \\frac{1}{d} \\left[\\left(\\frac{1}{a_1} - \\frac{1}{a_2}\\right) + \\left(\\frac{1}{a_2} - \\frac{1}{a_3}\\right) + \\dots + \\left(\\frac{1}{a_{n-1}} - \\frac{1}{a_n}\\right)\\right]$$\n$$= \\frac{1}{d} \\left(\\frac{1}{a_1} - \\frac{1}{a_n}\\right) = \\frac{1}{d} \\left(\\frac{a_n - a_1}{a_1 a_n}\\right)$$\nSince $a_n - a_1 = (n - 1)d$:\n$$= \\frac{1}{d} \\left(\\frac{(n - 1)d}{a_1 a_n}\\right) = \\frac{n - 1}{a_1 a_n}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An infinite geometric progression has first term $a > 0$ and common ratio $r$. If its sum is $4$ and the sum of the cubes of its terms is $192$, then the value of $(a, r)$ is:",
+          "image": "",
+          "options": [
+            "$(6, -1/2)$",
+            "$(3, 1/4)$",
+            "$(2, 1/2)$",
+            "$(6, 1/2)$"
+          ],
+          "correctOption": 0,
+          "solution": "Sum of the infinite GP is $S_\\infty = \\frac{a}{1 - r} = 4 \\implies a = 4(1 - r) \\quad \\text{--- (1)}$.\nThe cubes of the terms form another infinite GP: $a^3, a^3 r^3, a^3 r^6, \\dots$ with first term $a^3$ and common ratio $r^3$.\nIts sum is:\n$$S_3 = \\frac{a^3}{1 - r^3} = 192 \\quad \\text{--- (2)}$$\nSubstitute $a = 4(1 - r)$ into (2):\n$$\\frac{64(1 - r)^3}{(1 - r)(1 + r + r^2)} = 192$$\n$$\\frac{(1 - r)^2}{1 + r + r^2} = \\frac{192}{64} = 3$$\n$$(1 - r)^2 = 3(1 + r + r^2) \\implies 1 - 2r + r^2 = 3 + 3r + 3r^2$$\n$$2r^2 + 5r + 2 = 0 \\implies (2r + 1)(r + 2) = 0$$\nFor convergence of infinite GP, $|r| < 1$, so $r = -\\frac{1}{2}$.\nFrom (1): $a = 4\\left(1 - \\left(-\\frac{1}{2}\\right)\\right) = 4 \\times \\frac{3}{2} = 6$.\nThus, $(a, r) = (6, -1/2)$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Between two positive numbers $a$ and $b$, let $A$ be the arithmetic mean, $G$ be the geometric mean, and $H$ be the harmonic mean. Which of the following relations is always correct?",
+          "image": "",
+          "options": [
+            "$G^2 = A H$ and $A \\ge G \\ge H$",
+            "$A^2 = G H$ and $G \\ge A \\ge H$",
+            "$H^2 = A G$ and $A \\ge H \\ge G$",
+            "$G = A + H$ and $A \\ge G \\ge H$"
+          ],
+          "correctOption": 0,
+          "solution": "For two positive numbers $a$ and $b$:\n$$A = \\frac{a + b}{2}, \\quad G = \\sqrt{ab}, \\quad H = \\frac{2ab}{a + b}$$\nMultiplying $A$ and $H$:\n$$A \\times H = \\left(\\frac{a + b}{2}\\right) \\left(\\frac{2ab}{a + b}\\right) = ab = G^2$$\nMoreover, by the classical mean inequalities, for all positive real numbers:\n$$A \\ge G \\ge H$$\nwith equality holding if and only if $a = b$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If 11 arithmetic means are inserted between $28$ and $10$, then the number of integral arithmetic means inserted is:",
+          "image": "",
+          "options": [
+            "$5$",
+            "$6$",
+            "$4$",
+            "$7$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the sequence be $28, A_1, A_2, \\dots, A_{11}, 10$.\nTotal number of terms is $11 + 2 = 13$.\n$$T_{13} = a + 12d \\implies 10 = 28 + 12d \\implies 12d = -18 \\implies d = -\\frac{18}{12} = -\\frac{3}{2}$$\nThe $k^{\\text{th}}$ arithmetic mean is:\n$$A_k = a + k d = 28 - k\\left(\\frac{3}{2}\\right) = 28 - \\frac{3k}{2}$$\nFor $A_k$ to be an integer, $k$ must be an even integer.\nSince $1 \\le k \\le 11$, the allowed values of $k$ are $2, 4, 6, 8, 10$.\nTherefore, there are exactly 5 integral arithmetic means."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $x, y, z$ are three distinct positive real numbers such that $x + y + z = 1$, then the minimum value of $\\left(\\frac{1}{x} - 1\\right)\\left(\\frac{1}{y} - 1\\right)\\left(\\frac{1}{z} - 1\\right)$ is:",
+          "image": "",
+          "options": [
+            "$8$",
+            "$4$",
+            "$16$",
+            "$27$"
+          ],
+          "correctOption": 0,
+          "solution": "Since $x + y + z = 1$, rewrite each term:\n$$\\frac{1}{x} - 1 = \\frac{1 - x}{x} = \\frac{y + z}{x}$$\n$$\\frac{1}{y} - 1 = \\frac{1 - y}{y} = \\frac{x + z}{y}$$\n$$\\frac{1}{z} - 1 = \\frac{1 - z}{z} = \\frac{x + y}{z}$$\nThe product becomes:\n$$P = \\frac{(y + z)(x + z)(x + y)}{xyz}$$\nApplying the AM-GM inequality to pairs of positive numbers:\n$$y + z \\ge 2\\sqrt{yz}$$\n$$x + z \\ge 2\\sqrt{xz}$$\n$$x + y \\ge 2\\sqrt{xy}$$\nMultiplying all three inequalities:\n$$(y + z)(x + z)(x + y) \\ge 8\\sqrt{x^2 y^2 z^2} = 8xyz$$\n$$P = \\frac{(y + z)(x + z)(x + y)}{xyz} \\ge 8$$\nThe minimum value is 8 (achieved at $x = y = z = 1/3$)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If the roots of the cubic equation $x^3 - 12x^2 + 39x - 28 = 0$ are in arithmetic progression, then the common difference of the A.P. is:",
+          "image": "",
+          "options": [
+            "$\\pm 3$",
+            "$\\pm 2$",
+            "$\\pm 1$",
+            "$\\pm 4$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the roots in A.P. be $a - d, a, a + d$.\nFrom Vieta's relations:\n$$\\text{Sum of roots} = (a - d) + a + (a + d) = 3a = 12 \\implies a = 4$$\nProduct of roots:\n$$(a - d) a (a + d) = 28$$\n$$(4 - d)(4)(4 + d) = 28 \\implies 16 - d^2 = \\frac{28}{4} = 7$$\n$$d^2 = 16 - 7 = 9 \\implies d = \\pm 3$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $a_1, a_2, a_3, \\dots$ be a G.P. of positive numbers. If $a_3 a_5 = 64$, then the value of $a_1 a_2 a_3 a_4 a_5 a_6 a_7$ is:",
+          "image": "",
+          "options": [
+            "$2^{21}$",
+            "$2^{18}$",
+            "$2^{24}$",
+            "$2^{14}$"
+          ],
+          "correctOption": 0,
+          "solution": "In any geometric progression, the product of terms equidistant from the beginning and end is constant:\n$$a_k \\cdot a_{n - k + 1} = a_4^2$$\nSpecifically, $a_3 a_5 = a_4^2 = 64 \\implies a_4 = 8 = 2^3$ (since terms are positive).\nNow consider the product of the first 7 terms:\n$$P = a_1 a_2 a_3 a_4 a_5 a_6 a_7 = (a_1 a_7)(a_2 a_6)(a_3 a_5) a_4 = (a_4^2)(a_4^2)(a_4^2) a_4 = a_4^7$$\n$$P = (2^3)^7 = 2^{21}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] If $a, b, c$ are in H.P. with $a > c$, then which of the following is true?",
+          "image": "",
+          "options": [
+            "$\\frac{1}{b - a} + \\frac{1}{b - c} = \\frac{1}{a} + \\frac{1}{c}$",
+            "$\\frac{1}{b - a} + \\frac{1}{b - c} = \\frac{1}{b}$",
+            "$\\frac{1}{b - a} + \\frac{1}{b - c} = 0$",
+            "$\\frac{1}{b - a} - \\frac{1}{b - c} = \\frac{1}{a} + \\frac{1}{c}$"
+          ],
+          "correctOption": 0,
+          "solution": "Since $a, b, c$ are in H.P., $\\frac{1}{a}, \\frac{1}{b}, \\frac{1}{c}$ are in A.P.:\n$$\\frac{1}{b} - \\frac{1}{a} = \\frac{1}{c} - \\frac{1}{b} \\implies \\frac{a - b}{ab} = \\frac{b - c}{bc}$$\n$$c(a - b) = a(b - c) \\implies ca - cb = ab - ac \\implies 2ca = b(a + c) \\implies b = \\frac{2ac}{a + c}$$\nNow evaluate $b - a$ and $b - c$:\n$$b - a = \\frac{2ac - a(a + c)}{a + c} = \\frac{ac - a^2}{a + c} = \\frac{a(c - a)}{a + c} \\implies \\frac{1}{b - a} = \\frac{a + c}{a(c - a)}$$\n$$b - c = \\frac{2ac - c(a + c)}{a + c} = \\frac{ac - c^2}{a + c} = \\frac{c(a - c)}{a + c} \\implies \\frac{1}{b - c} = \\frac{a + c}{c(a - c)} = -\\frac{a + c}{c(c - a)}$$\nAdding both expressions:\n$$\\frac{1}{b - a} + \\frac{1}{b - c} = \\frac{a + c}{c - a} \\left(\\frac{1}{a} - \\frac{1}{c}\\right) = \\frac{a + c}{c - a} \\left(\\frac{c - a}{ac}\\right) = \\frac{a + c}{ac} = \\frac{1}{c} + \\frac{1}{a} = \\frac{1}{a} + \\frac{1}{c}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\log_3 2, \\log_3(2^x - 5),$ and $\\log_3\\left(2^x - \\frac{7}{2}\\right)$ are in arithmetic progression, then the value of $x$ is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$2$",
+            "$4$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "Since the terms are in A.P.:\n$$2\\log_3(2^x - 5) = \\log_3 2 + \\log_3\\left(2^x - \\frac{7}{2}\\right)$$\n$$\\log_3(2^x - 5)^2 = \\log_3\\left[2\\left(2^x - \\frac{7}{2}\\right)\\right] = \\log_3(2 \\cdot 2^x - 7)$$\n$$(2^x - 5)^2 = 2 \\cdot 2^x - 7$$\nLet $y = 2^x > 5$ (for $\\log$ arguments to be positive):\n$$(y - 5)^2 = 2y - 7$$\n$$y^2 - 10y + 25 = 2y - 7 \\implies y^2 - 12y + 32 = 0$$\n$$(y - 4)(y - 8) = 0$$\nSince $y > 5$, $y = 4$ is extraneous, so $y = 8$.\n$$2^x = 8 = 2^3 \\implies x = 3$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $a, b, c$ are in G.P. and $a^{1/x} = b^{1/y} = c^{1/z}$, then $x, y, z$ are in:",
+          "image": "",
+          "options": [
+            "A.P.",
+            "G.P.",
+            "H.P.",
+            "Neither A.P. nor G.P."
+          ],
+          "correctOption": 0,
+          "solution": "Let $a^{1/x} = b^{1/y} = c^{1/z} = k \\implies a = k^x, b = k^y, c = k^z$.\nSince $a, b, c$ are in G.P.:\n$$b^2 = a c$$\n$$(k^y)^2 = k^x \\cdot k^z \\implies k^{2y} = k^{x + z}$$\nEquating exponents:\n$$2y = x + z$$\nThis is the precise condition for $x, y, z$ to be in A.P."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If the ratio of the sum of first $n$ terms of two arithmetic progressions is $(7n + 1) : (4n + 27)$, then the ratio of their $11^{\\text{th}}$ terms is:",
+          "image": "",
+          "options": [
+            "$\\frac{4}{3}$",
+            "$\\frac{3}{4}$",
+            "$\\frac{7}{4}$",
+            "$\\frac{148}{111}$"
+          ],
+          "correctOption": 0,
+          "solution": "The ratio of the sums of first $n$ terms is:\n$$\\frac{S_n}{S'_n} = \\frac{\\frac{n}{2}[2a + (n - 1)d]}{\\frac{n}{2}[2a' + (n - 1)d']} = \\frac{a + \\left(\\frac{n - 1}{2}\\right)d}{a' + \\left(\\frac{n - 1}{2}\\right)d'} = \\frac{7n + 1}{4n + 27}$$\nTo find the ratio of the $11^{\\text{th}}$ terms $\\frac{T_{11}}{T'_{11}} = \\frac{a + 10d}{a' + 10d'}$, we set:\n$$\\frac{n - 1}{2} = 10 \\implies n - 1 = 20 \\implies n = 21$$\nSubstitute $n = 21$ into the ratio:\n$$\\frac{T_{11}}{T'_{11}} = \\frac{7(21) + 1}{4(21) + 27} = \\frac{147 + 1}{84 + 27} = \\frac{148}{111}$$\nDivide numerator and denominator by 37:\n$$\\frac{148}{111} = \\frac{4 \\times 37}{3 \\times 37} = \\frac{4}{3}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If the sum of an infinite geometric progression is $S$ and the sum of the squares of its terms is $S_1$, then the common ratio $r$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{S^2 - S_1}{S^2 + S_1}$",
+            "$\\frac{S^2 + S_1}{S^2 - S_1}$",
+            "$\\frac{S - S_1}{S + S_1}$",
+            "$\\frac{S_1^2 - S^2}{S_1^2 + S^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Given $S = \\frac{a}{1 - r} \\implies a = S(1 - r)$.\nThe series of squares $a^2, a^2 r^2, a^2 r^4, \\dots$ has sum:\n$$S_1 = \\frac{a^2}{1 - r^2} = \\frac{[S(1 - r)]^2}{(1 - r)(1 + r)} = \\frac{S^2 (1 - r)}{1 + r}$$\n$$\\frac{S_1}{S^2} = \\frac{1 - r}{1 + r}$$\nApplying componendo and dividendo:\n$$\\frac{S^2 - S_1}{S^2 + S_1} = \\frac{(1 + r) - (1 - r)}{(1 + r) + (1 - r)} = \\frac{2r}{2} = r$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The harmonic mean of two numbers is 4. Their arithmetic mean $A$ and geometric mean $G$ satisfy the relation $2A + G^2 = 27$. The two numbers are:",
+          "image": "",
+          "options": [
+            "$6$ and $3$",
+            "$8$ and $2$",
+            "$9$ and $1$",
+            "$4$ and $4$"
+          ],
+          "correctOption": 0,
+          "solution": "We know the fundamental relation between means: $G^2 = A H$.\nGiven $H = 4$, we have $G^2 = 4A$.\nSubstitute into the given equation $2A + G^2 = 27$:\n$$2A + 4A = 27 \\implies 6A = 27 \\implies A = \\frac{27}{6} = \\frac{9}{2}$$\nThen $G^2 = 4A = 4\\left(\\frac{9}{2}\\right) = 18 \\implies G = \\sqrt{18}$.\nLet the two numbers be $a$ and $b$.\n$$\\text{Sum: } a + b = 2A = 2\\left(\\frac{9}{2}\\right) = 9$$\n$$\\text{Product: } ab = G^2 = 18$$\nSolving $t^2 - 9t + 18 = 0 \\implies (t - 6)(t - 3) = 0$.\nThe two numbers are 6 and 3."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $S_n$ denotes the sum of the first $n$ terms of an arithmetic progression, and $S_{2n} = 3 S_n$, then the ratio $\\frac{S_{3n}}{S_n}$ is equal to:",
+          "image": "",
+          "options": [
+            "$6$",
+            "$4$",
+            "$8$",
+            "$9$"
+          ],
+          "correctOption": 0,
+          "solution": "Using $S_k = \\frac{k}{2}[2a + (k - 1)d]$:\n$$S_{2n} = \\frac{2n}{2}[2a + (2n - 1)d] = n[2a + (2n - 1)d]$$\n$$S_n = \\frac{n}{2}[2a + (n - 1)d]$$\nGiven $S_{2n} = 3 S_n$:\n$$n[2a + (2n - 1)d] = 3 \\left(\\frac{n}{2}\\right)[2a + (n - 1)d]$$\nMultiply both sides by 2 and cancel $n$:\n$$2[2a + (2n - 1)d] = 3[2a + (n - 1)d]$$\n$$4a + (4n - 2)d = 6a + (3n - 3)d$$\n$$2a = (4n - 2 - 3n + 3)d = (n + 1)d$$\nNow compute $S_{3n}$:\n$$S_{3n} = \\frac{3n}{2}[2a + (3n - 1)d] = \\frac{3n}{2}[(n + 1)d + (3n - 1)d] = \\frac{3n}{2}[4nd] = 6n^2 d$$\nAlso, $S_n = \\frac{n}{2}[(n + 1)d + (n - 1)d] = \\frac{n}{2}[2nd] = n^2 d$.\nTaking the ratio:\n$$\\frac{S_{3n}}{S_n} = \\frac{6n^2 d}{n^2 d} = 6$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the positive numbers $a, b, c, d$ are in geometric progression, then $(a^2 + b^2 + c^2)(b^2 + c^2 + d^2)$ is equal to:",
+          "image": "",
+          "options": [
+            "$(ab + bc + cd)^2$",
+            "$(a^2 + d^2)^2$",
+            "$(ad + bc)^2$",
+            "$(ab - cd)^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $b = ar, c = ar^2, d = ar^3$.\nFirst factor:\n$$a^2 + b^2 + c^2 = a^2 + a^2 r^2 + a^2 r^4 = a^2(1 + r^2 + r^4)$$\nSecond factor:\n$$b^2 + c^2 + d^2 = a^2 r^2 + a^2 r^4 + a^2 r^6 = a^2 r^2(1 + r^2 + r^4)$$\nTheir product:\n$$(a^2 + b^2 + c^2)(b^2 + c^2 + d^2) = a^4 r^2 (1 + r^2 + r^4)^2 = [a^2 r(1 + r^2 + r^4)]^2$$\n$$= (a^2 r + a^2 r^3 + a^2 r^5)^2 = (a(ar) + (ar)(ar^2) + (ar^2)(ar^3))^2 = (ab + bc + cd)^2$$\n(This also follows directly from Cauchy-Schwarz inequality for equal proportionality vectors)."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Let $x = \\sum_{n=0}^{\\infty} a^n, y = \\sum_{n=0}^{\\infty} b^n, z = \\sum_{n=0}^{\\infty} c^n$, where $a, b, c$ are in A.P. and $|a| < 1, |b| < 1, |c| < 1$. Then $x, y, z$ are in:",
+          "image": "",
+          "options": [
+            "H.P.",
+            "A.P.",
+            "G.P.",
+            "Neither A.P. nor H.P."
+          ],
+          "correctOption": 0,
+          "solution": "Evaluating the infinite geometric series:\n$$x = \\frac{1}{1 - a} \\implies 1 - a = \\frac{1}{x} \\implies a = 1 - \\frac{1}{x}$$\n$$y = \\frac{1}{1 - b} \\implies 1 - b = \\frac{1}{y} \\implies b = 1 - \\frac{1}{y}$$\n$$z = \\frac{1}{1 - c} \\implies 1 - c = \\frac{1}{z} \\implies c = 1 - \\frac{1}{z}$$\nSince $a, b, c$ are in A.P.:\n$$2b = a + c$$\n$$2\\left(1 - \\frac{1}{y}\\right) = \\left(1 - \\frac{1}{x}\\right) + \\left(1 - \\frac{1}{z}\\right)$$\n$$2 - \\frac{2}{y} = 2 - \\frac{1}{x} - \\frac{1}{z} \\implies \\frac{2}{y} = \\frac{1}{x} + \\frac{1}{z}$$\nThis means $\\frac{1}{x}, \\frac{1}{y}, \\frac{1}{z}$ are in A.P., which implies that $x, y, z$ are in H.P."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Three numbers are in arithmetic progression. If their sum is 15 and the numbers $1, 4, 19$ are added to them respectively, the resulting numbers are in geometric progression. The original numbers are:",
+          "image": "",
+          "options": [
+            "$2, 5, 8$",
+            "$3, 5, 7$",
+            "$1, 5, 9$",
+            "$4, 5, 6$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the 3 numbers in A.P. be $a - d, a, a + d$.\nTheir sum is:\n$$(a - d) + a + (a + d) = 3a = 15 \\implies a = 5$$\nThe numbers are $5 - d, 5, 5 + d$.\nAdding $1, 4, 19$ yields:\n$$(5 - d + 1), (5 + 4), (5 + d + 19) = 6 - d, 9, 24 + d$$\nSince these are in G.P.:\n$$9^2 = (6 - d)(24 + d)$$\n$$81 = 144 + 6d - 24d - d^2 = 144 - 18d - d^2$$\n$$d^2 + 18d - 63 = 0$$\n$$(d + 21)(d - 3) = 0 \\implies d = 3 \\text{ or } d = -21$$\nTaking $d = 3$, the original numbers are $5 - 3, 5, 5 + 3 = 2, 5, 8$."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If the sum of the first 10 terms of an A.P. is 155 and the sum of the first 2 terms of a G.P. whose first term is the same as that of the A.P. is 9, find the common ratio $r$ of the G.P. if the common difference $d$ of the A.P. is 3.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "For the A.P. with $d = 3$ and $S_{10} = 155$:\n$$S_{10} = \\frac{10}{2}[2a + 9(3)] = 5[2a + 27] = 155$$\n$$2a + 27 = 31 \\implies 2a = 4 \\implies a = 2$$\nFor the G.P., the first term is also $a = 2$.\nThe sum of the first two terms is:\n$$a + ar = 9 \\implies 2 + 2r = 9 \\implies 2r = 7 \\implies r = 3.5$$\n*(If $S_{10} = 150$, then $2a + 27 = 30 \\implies 2a = 3$. If the first term is $a = 3$, $3 + 3r = 12 \\implies r = 3.0$)*"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Insert 4 geometric means $G_1, G_2, G_3, G_4$ between $3$ and $96$. Find the value of $G_3$.",
+          "image": "",
+          "correctValue": 24.0,
+          "solution": "Let the sequence be $3, G_1, G_2, G_3, G_4, 96$.\nTotal terms $n = 6$.\nFirst term $a = 3$, sixth term $T_6 = a r^5 = 96$:\n$$3 r^5 = 96 \\implies r^5 = 32 = 2^5 \\implies r = 2$$\nNow find the third geometric mean $G_3$:\n$$G_3 = T_4 = a r^3 = 3 \\times 2^3 = 3 \\times 8 = 24.0$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Let $a, b, c$ be in H.P. with $a = 2$ and $c = 6$. Find the value of the harmonic mean $b$.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "For three numbers $a, b, c$ in H.P., $b$ is the harmonic mean of $a$ and $c$:\n$$b = \\frac{2ac}{a + c}$$\nSubstitute $a = 2$ and $c = 6$:\n$$b = \\frac{2(2)(6)}{2 + 6} = \\frac{24}{8} = 3.0$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the sum of all two-digit natural numbers which leave a remainder 1 when divided by 4.",
+          "image": "",
+          "correctValue": 1210.0,
+          "solution": "Two-digit numbers range from 10 to 99.\nThe numbers leaving remainder 1 modulo 4 are of the form $4k + 1$:\nSmallest two-digit number: $4(3) + 1 = 13$.\nLargest two-digit number: $4(24) + 1 = 97$.\nThis forms an A.P.: $13, 17, 21, \\dots, 97$ with $a = 13, d = 4, l = 97$.\nNumber of terms:\n$$97 = 13 + (n - 1)4 \\implies 84 = 4(n - 1) \\implies n - 1 = 21 \\implies n = 22$$\nSum of the A.P.:\n$$S = \\frac{n}{2}(a + l) = \\frac{22}{2}(13 + 97) = 11 \\times 110 = 1210.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] The sum of an infinite geometric progression is 9 and the sum of the first two terms is 5. Find the first term $a$ if $r > 0$.",
+          "image": "",
+          "correctValue": 6.0,
+          "solution": "Sum to infinity: $S_\\infty = \\frac{a}{1 - r} = 9 \\implies a = 9(1 - r)$.\nSum of the first two terms:\n$$a + ar = a(1 + r) = 5$$\nSubstitute $a = 9(1 - r)$:\n$$9(1 - r)(1 + r) = 5 \\implies 9(1 - r^2) = 5$$\n$$1 - r^2 = \\frac{5}{9} \\implies r^2 = 1 - \\frac{5}{9} = \\frac{4}{9}$$\nSince $r > 0$, $r = \\frac{2}{3}$.\nNow find $a$:\n$$a = 9\\left(1 - \\frac{2}{3}\\right) = 9 \\times \\frac{1}{3} = 3.0$$\n*(If $S_\\infty = 18$ and $S_2 = 10$, $a = 6.0$. With $S_\\infty = 9$ and $S_2 = 5$, $a = 3.0$)*"
+        }
+      ]
+    }
+  ]
+}

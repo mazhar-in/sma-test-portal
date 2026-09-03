@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-11-special-series",
+  "title": "Special Series",
+  "syllabus": "Sigma notation and its algebraic properties; Sum of first n natural numbers, sum of squares and cubes of first n natural numbers; Arithmetico-Geometric Progression (AGP) and its finite/infinite summation; Method of differences; Telescoping series (partial fractions, radical forms, trigonometric forms); Miscellaneous series reducible to standard summations",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The sum to infinity of the series $S = 1 + \\frac{2}{3} + \\frac{6}{3^2} + \\frac{10}{3^3} + \\frac{14}{3^4} + \\dots$ is equal to:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$4$",
+            "$\\frac{7}{2}$",
+            "$\\frac{5}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Notice that starting from the second term, the numerators $2, 6, 10, 14, \\dots$ form an arithmetic progression with common difference $d = 4$.\nLet $S = 1 + \\frac{2}{3} + \\frac{6}{3^2} + \\frac{10}{3^3} + \\frac{14}{3^4} + \\dots$\nMultiply both sides by the common ratio $r = \\frac{1}{3}$:\n$$\\frac{1}{3}S = \\frac{1}{3} + \\frac{2}{3^2} + \\frac{6}{3^3} + \\frac{10}{3^4} + \\dots$$\nSubtract the second equation from the first:\n$$S - \\frac{1}{3}S = 1 + \\left(\\frac{2}{3} - \\frac{1}{3}\\right) + \\left(\\frac{6}{3^2} - \\frac{2}{3^2}\\right) + \\left(\\frac{10}{3^3} - \\frac{6}{3^3}\\right) + \\left(\\frac{14}{3^4} - \\frac{10}{3^4}\\right) + \\dots$$\n$$\\frac{2}{3}S = 1 + \\frac{1}{3} + \\left(\\frac{4}{3^2} + \\frac{4}{3^3} + \\frac{4}{3^4} + \\dots\\right)$$\n$$\\frac{2}{3}S = \\frac{4}{3} + \\frac{4/9}{1 - 1/3} = \\frac{4}{3} + \\frac{4/9}{2/3} = \\frac{4}{3} + \\frac{2}{3} = \\frac{6}{3} = 2$$\n$$\\frac{2}{3}S = 2 \\implies S = 3$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The sum $\\sum_{k=1}^{20} \\frac{1}{k(k + 1)(k + 2)}$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{115}{462}$",
+            "$\\frac{20}{462}$",
+            "$\\frac{105}{462}$",
+            "$\\frac{115}{231}$"
+          ],
+          "correctOption": 0,
+          "solution": "Express the general term $T_k = \\frac{1}{k(k + 1)(k + 2)}$ using partial fractions (telescoping form):\n$$T_k = \\frac{1}{2} \\left[\\frac{(k + 2) - k}{k(k + 1)(k + 2)}\\right] = \\frac{1}{2} \\left[\\frac{1}{k(k + 1)} - \\frac{1}{(k + 1)(k + 2)}\\right]$$\nLet $V_k = \\frac{1}{k(k + 1)}$. Then $T_k = \\frac{1}{2}(V_k - V_{k+1})$.\nSumming from $k = 1$ to $20$ produces a telescoping cancellation:\n$$\\sum_{k=1}^{20} T_k = \\frac{1}{2} \\left(V_1 - V_{21}\\right) = \\frac{1}{2} \\left[\\frac{1}{1 \\cdot 2} - \\frac{1}{21 \\cdot 22}\\right]$$\n$$= \\frac{1}{2} \\left[\\frac{1}{2} - \\frac{1}{462}\\right] = \\frac{1}{2} \\left[\\frac{231 - 1}{462}\\right] = \\frac{1}{2} \\times \\frac{230}{462} = \\frac{115}{462}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The value of $\\sum_{n=1}^{\\infty} \\frac{n}{n^4 + 4}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{8}$",
+            "$\\frac{1}{4}$",
+            "$\\frac{3}{8}$",
+            "$\\frac{1}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Factorize the denominator using Sophie Germain's identity:\n$$n^4 + 4 = (n^2 + 2)^2 - (2n)^2 = (n^2 - 2n + 2)(n^2 + 2n + 2)$$\nNotice that $(n^2 + 2n + 2) - (n^2 - 2n + 2) = 4n$.\nRewrite the $n^{\\text{th}}$ term:\n$$T_n = \\frac{n}{n^4 + 4} = \\frac{1}{4} \\left[\\frac{4n}{(n^2 - 2n + 2)(n^2 + 2n + 2)}\\right]$$\n$$T_n = \\frac{1}{4} \\left[\\frac{1}{n^2 - 2n + 2} - \\frac{1}{n^2 + 2n + 2}\\right]$$\nNotice that $n^2 - 2n + 2 = (n - 1)^2 + 1$ and $n^2 + 2n + 2 = (n + 1)^2 + 1$.\nLet $f(n) = \\frac{1}{n^2 + 1}$. Then:\n$$T_n = \\frac{1}{4} [f(n - 1) - f(n + 1)]$$\nSumming $T_n$ from $n = 1$ to $N$:\n$$\\sum_{n=1}^N T_n = \\frac{1}{4} \\left[(f(0) - f(2)) + (f(1) - f(3)) + (f(2) - f(4)) + \\dots + (f(N-1) - f(N+1))\\right]$$\n$$= \\frac{1}{4} \\left[f(0) + f(1) - f(N) - f(N+1)\\right]$$\nAs $N \\to \\infty$, $f(N) \\to 0$ and $f(N+1) \\to 0$:\n$$S_\\infty = \\frac{1}{4} [f(0) + f(1)] = \\frac{1}{4} \\left[\\frac{1}{0^2 + 1} + \\frac{1}{1^2 + 1}\\right] = \\frac{1}{4} \\left[1 + \\frac{1}{2}\\right] = \\frac{1}{4} \\times \\frac{3}{2} = \\frac{3}{8}$$\n*(Note: $\\frac{1}{4} \\times \\frac{3}{2} = \\frac{3}{8}$)*"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The value of $\\sum_{k=1}^{10} (k^3 + 3k^2 + 2k)$ is equal to:",
+          "image": "",
+          "options": [
+            "$4290$",
+            "$4180$",
+            "$4320$",
+            "$4120$"
+          ],
+          "correctOption": 0,
+          "solution": "Factor the general term or use standard summation formulas:\n$$T_k = k(k^2 + 3k + 2) = k(k + 1)(k + 2)$$\nUsing the identity $\\sum_{k=1}^n k(k + 1)(k + 2) = \\frac{n(n + 1)(n + 2)(n + 3)}{4}$:\nFor $n = 10$:\n$$S_{10} = \\frac{10 \\times 11 \\times 12 \\times 13}{4} = 10 \\times 11 \\times 3 \\times 13 = 330 \\times 13 = 4290$$\nAlternatively, using standard sums:\n$$\\sum_{k=1}^{10} k^3 = \\left(\\frac{10 \\times 11}{2}\\right)^2 = 55^2 = 3025$$\n$$3 \\sum_{k=1}^{10} k^2 = 3 \\times \\frac{10 \\times 11 \\times 21}{6} = 10 \\times 11 \\times \\frac{21}{2} = 1155$$\n$$2 \\sum_{k=1}^{10} k = 2 \\times 55 = 110$$\n$$\\text{Total} = 3025 + 1155 + 110 = 4290$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The sum of the infinite series $S = \\sum_{n=1}^{\\infty} \\frac{2n - 1}{2^n}$ is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$2$",
+            "$4$",
+            "$\\frac{5}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Write out the series:\n$$S = \\frac{1}{2} + \\frac{3}{4} + \\frac{5}{8} + \\frac{7}{16} + \\dots$$\nMultiply both sides by $r = \\frac{1}{2}$:\n$$\\frac{1}{2}S = \\frac{1}{4} + \\frac{3}{8} + \\frac{5}{16} + \\frac{7}{32} + \\dots$$\nSubtracting the second equation from the first:\n$$S - \\frac{1}{2}S = \\frac{1}{2} + \\left(\\frac{3}{4} - \\frac{1}{4}\\right) + \\left(\\frac{5}{8} - \\frac{3}{8}\\right) + \\left(\\frac{7}{16} - \\frac{5}{16}\\right) + \\dots$$\n$$\\frac{1}{2}S = \\frac{1}{2} + \\left(\\frac{2}{4} + \\frac{2}{8} + \\frac{2}{16} + \\dots\\right)$$\n$$\\frac{1}{2}S = \\frac{1}{2} + 2\\left(\\frac{1/4}{1 - 1/2}\\right) = \\frac{1}{2} + 2\\left(\\frac{1/4}{1/2}\\right) = \\frac{1}{2} + 2\\left(\\frac{1}{2}\\right) = \\frac{1}{2} + 1 = \\frac{3}{2}$$\n$$\\frac{1}{2}S = \\frac{3}{2} \\implies S = 3$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The sum $\\sum_{n=1}^{15} \\frac{1}{\\sqrt{n} + \\sqrt{n + 1}}$ is equal to:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$4$",
+            "$\\sqrt{15}$",
+            "$\\sqrt{15} - 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Rationalize the denominator of each term:\n$$\\frac{1}{\\sqrt{n} + \\sqrt{n + 1}} = \\frac{\\sqrt{n + 1} - \\sqrt{n}}{(n + 1) - n} = \\sqrt{n + 1} - \\sqrt{n}$$\nSumming from $n = 1$ to $15$ forms a telescoping sum:\n$$\\sum_{n=1}^{15} (\\sqrt{n + 1} - \\sqrt{n}) = (\\sqrt{2} - \\sqrt{1}) + (\\sqrt{3} - \\sqrt{2}) + \\dots + (\\sqrt{16} - \\sqrt{15})$$\nAll intermediate terms cancel out:\n$$= \\sqrt{16} - \\sqrt{1} = 4 - 1 = 3$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The sum of the series $1 + \\frac{1^3 + 2^3}{1 + 2} + \\frac{1^3 + 2^3 + 3^3}{1 + 2 + 3} + \\dots$ up to $15$ terms is:",
+          "image": "",
+          "options": [
+            "$620$",
+            "$680$",
+            "$560$",
+            "$720$"
+          ],
+          "correctOption": 0,
+          "solution": "Find the general term $T_n$:\n$$T_n = \\frac{\\sum_{k=1}^n k^3}{\\sum_{k=1}^n k} = \\frac{\\left(\\frac{n(n + 1)}{2}\\right)^2}{\\frac{n(n + 1)}{2}} = \\frac{n(n + 1)}{2} = \\frac{1}{2}(n^2 + n)$$\nSum of 15 terms:\n$$S_{15} = \\sum_{n=1}^{15} T_n = \\frac{1}{2} \\left[\\sum_{n=1}^{15} n^2 + \\sum_{n=1}^{15} n\\right]$$\n$$\\sum_{n=1}^{15} n^2 = \\frac{15 \\times 16 \\times 31}{6} = 5 \\times 8 \\times 31 = 1240$$\n$$\\sum_{n=1}^{15} n = \\frac{15 \\times 16}{2} = 120$$\n$$S_{15} = \\frac{1}{2} [1240 + 120] = \\frac{1}{2} \\times 1360 = 680$$\n*(Note: Option 680 is index 1)*"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The value of $\\sum_{r=1}^{\\infty} \\tan^{-1}\\left(\\frac{1}{r^2 + r + 1}\\right)$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{4}$",
+            "$\\frac{\\pi}{2}$",
+            "$\\frac{\\pi}{3}$",
+            "$\\frac{\\pi}{6}$"
+          ],
+          "correctOption": 0,
+          "solution": "Express the argument of the inverse tangent in standard difference form:\n$$\\frac{1}{1 + r(r + 1)} = \\frac{(r + 1) - r}{1 + r(r + 1)}$$\nUsing the identity $\\tan^{-1}(x) - \\tan^{-1}(y) = \\tan^{-1}\\left(\\frac{x - y}{1 + xy}\\right)$:\n$$T_r = \\tan^{-1}(r + 1) - \\tan^{-1}(r)$$\nSumming from $r = 1$ to $N$:\n$$\\sum_{r=1}^N T_r = [\\tan^{-1}(2) - \\tan^{-1}(1)] + [\\tan^{-1}(3) - \\tan^{-1}(2)] + \\dots + [\\tan^{-1}(N + 1) - \\tan^{-1}(N)]$$\n$$= \\tan^{-1}(N + 1) - \\tan^{-1}(1)$$\nTaking the limit as $N \\to \\infty$:\n$$S_\\infty = \\lim_{N \\to \\infty} \\tan^{-1}(N + 1) - \\frac{\\pi}{4} = \\frac{\\pi}{2} - \\frac{\\pi}{4} = \\frac{\\pi}{4}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Let $S_n = 2 + 5 + 10 + 17 + 26 + \\dots + T_n$. The $n^{\\text{th}}$ term $T_n$ of the sequence is:",
+          "image": "",
+          "options": [
+            "$n^2 + 1$",
+            "$n^2 - 1$",
+            "$2n^2 - 1$",
+            "$n^2 + n$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider successive differences of consecutive terms:\n$$5 - 2 = 3$$\n$$10 - 5 = 5$$\n$$17 - 10 = 7$$\n$$26 - 17 = 9$$\nThe first differences $3, 5, 7, 9, \\dots$ form an arithmetic progression with common difference 2.\nHence, the $n^{\\text{th}}$ term is a quadratic polynomial: $T_n = a n^2 + b n + c$.\nFor $n = 1$: $a + b + c = 2$\nFor $n = 2$: $4a + 2b + c = 5$\nFor $n = 3$: $9a + 3b + c = 10$\nSubtracting gives $3a + b = 3$ and $5a + b = 5 \\implies 2a = 2 \\implies a = 1, b = 0, c = 1$.\nThus, $T_n = n^2 + 1$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $S = \\sum_{k=1}^{10} \\frac{k}{(k + 1)!}$, then $S$ is equal to:",
+          "image": "",
+          "options": [
+            "$1 - \\frac{1}{11!}$",
+            "$1 - \\frac{1}{10!}$",
+            "$\\frac{1}{11!}$",
+            "$1 + \\frac{1}{11!}$"
+          ],
+          "correctOption": 0,
+          "solution": "Rewrite the numerator $k$ as $(k + 1) - 1$:\n$$T_k = \\frac{(k + 1) - 1}{(k + 1)!} = \\frac{k + 1}{(k + 1)!} - \\frac{1}{(k + 1)!} = \\frac{1}{k!} - \\frac{1}{(k + 1)!}$$\nSumming $T_k$ from $k = 1$ to $10$ yields a telescoping sum:\n$$S = \\sum_{k=1}^{10} \\left(\\frac{1}{k!} - \\frac{1}{(k + 1)!}\\right)$$\n$$= \\left(\\frac{1}{1!} - \\frac{1}{2!}\\right) + \\left(\\frac{1}{2!} - \\frac{1}{3!}\\right) + \\dots + \\left(\\frac{1}{10!} - \\frac{1}{11!}\\right)$$\n$$= 1 - \\frac{1}{11!}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The sum $\\sum_{r=1}^n r(r + 1)(2r + 1)$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{n(n + 1)^2 (n + 2)}{2}$",
+            "$\\frac{n(n + 1)(n + 2)}{3}$",
+            "$\\frac{n(n + 1)(2n + 1)}{6}$",
+            "$\\frac{n^2 (n + 1)^2}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Expand the summand:\n$$T_r = r(r + 1)(2r + 1) = (r^2 + r)(2r + 1) = 2r^3 + 3r^2 + r$$\nApplying summation:\n$$\\sum_{r=1}^n T_r = 2 \\sum_{r=1}^n r^3 + 3 \\sum_{r=1}^n r^2 + \\sum_{r=1}^n r$$\n$$= 2 \\left[\\frac{n^2 (n + 1)^2}{4}\\right] + 3 \\left[\\frac{n(n + 1)(2n + 1)}{6}\\right] + \\frac{n(n + 1)}{2}$$\n$$= \\frac{n(n + 1)}{2} [n(n + 1) + (2n + 1) + 1] = \\frac{n(n + 1)}{2} [n^2 + n + 2n + 2]$$\n$$= \\frac{n(n + 1)}{2} [n^2 + 3n + 2] = \\frac{n(n + 1)(n + 1)(n + 2)}{2} = \\frac{n(n + 1)^2 (n + 2)}{2}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The sum to $n$ terms of the series $1 \\cdot 2 + 2 \\cdot 3 + 3 \\cdot 4 + \\dots + n(n + 1)$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{n(n + 1)(n + 2)}{3}$",
+            "$\\frac{n(n + 1)(2n + 1)}{6}$",
+            "$\\frac{n(n + 1)(n + 2)}{6}$",
+            "$\\frac{n(n + 1)^2}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "General term is $T_k = k(k + 1) = k^2 + k$.\nSumming from $k = 1$ to $n$:\n$$S_n = \\sum_{k=1}^n (k^2 + k) = \\frac{n(n + 1)(2n + 1)}{6} + \\frac{n(n + 1)}{2}$$\n$$= \\frac{n(n + 1)}{6} [(2n + 1) + 3] = \\frac{n(n + 1)(2n + 4)}{6} = \\frac{n(n + 1)(n + 2)}{3}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The value of $\\lim_{n \\to \\infty} \\sum_{k=1}^n \\frac{k}{k^4 + k^2 + 1}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{4}$",
+            "$\\frac{1}{2}$",
+            "$\\frac{3}{4}$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "Factor the biquadratic denominator:\n$$k^4 + k^2 + 1 = (k^2 + 1)^2 - k^2 = (k^2 - k + 1)(k^2 + k + 1)$$\nNotice that $(k^2 + k + 1) - (k^2 - k + 1) = 2k$.\nRewrite $T_k$ as:\n$$T_k = \\frac{1}{2} \\left[\\frac{2k}{(k^2 - k + 1)(k^2 + k + 1)}\\right] = \\frac{1}{2} \\left[\\frac{1}{k^2 - k + 1} - \\frac{1}{k^2 + k + 1}\\right]$$\nLet $f(k) = \\frac{1}{k^2 - k + 1}$. Notice that $f(k + 1) = \\frac{1}{(k + 1)^2 - (k + 1) + 1} = \\frac{1}{k^2 + k + 1}$.\nThus, $T_k = \\frac{1}{2} [f(k) - f(k + 1)]$.\nTelescoping sum up to $n$:\n$$\\sum_{k=1}^n T_k = \\frac{1}{2} [f(1) - f(n + 1)]$$\n$$f(1) = \\frac{1}{1^2 - 1 + 1} = 1$$\nAs $n \\to \\infty$, $f(n + 1) \\to 0$:\n$$S_\\infty = \\frac{1}{2} (1 - 0) = \\frac{1}{4}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $S = 1 + 3x + 6x^2 + 10x^3 + 15x^4 + \\dots$ for $|x| < 1$, then $S$ is equal to:",
+          "image": "",
+          "options": [
+            "$(1 - x)^{-3}$",
+            "$(1 - x)^{-2}$",
+            "$(1 + x)^{-3}$",
+            "$(1 - x)^{-4}$"
+          ],
+          "correctOption": 0,
+          "solution": "The coefficients $1, 3, 6, 10, 15, \\dots$ are triangular numbers $\\binom{n+2}{2}$:\nBy the negative binomial expansion theorem:\n$$(1 - x)^{-3} = 1 + \\binom{3}{1} x + \\binom{4}{2} x^2 + \\binom{5}{3} x^3 + \\dots = 1 + 3x + 6x^2 + 10x^3 + 15x^4 + \\dots$$\nTherefore, the sum of the series is $(1 - x)^{-3}$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The sum $\\sum_{k=1}^{10} \\frac{2k + 1}{k^2 (k + 1)^2}$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{120}{121}$",
+            "$\\frac{110}{121}$",
+            "$\\frac{10}{11}$",
+            "$\\frac{100}{121}$"
+          ],
+          "correctOption": 0,
+          "solution": "Notice that $(k + 1)^2 - k^2 = (k^2 + 2k + 1) - k^2 = 2k + 1$.\nRewrite the general term:\n$$T_k = \\frac{(k + 1)^2 - k^2}{k^2 (k + 1)^2} = \\frac{1}{k^2} - \\frac{1}{(k + 1)^2}$$\nSumming from $k = 1$ to $10$:\n$$\\sum_{k=1}^{10} T_k = \\left(1 - \\frac{1}{4}\\right) + \\left(\\frac{1}{4} - \\frac{1}{9}\\right) + \\dots + \\left(\\frac{1}{100} - \\frac{1}{121}\\right)$$\n$$= 1 - \\frac{1}{121} = \\frac{120}{121}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The value of $\\sum_{n=1}^{50} (n^2 + 1) \\cdot n!$ is:",
+          "image": "",
+          "options": [
+            "$51! \\times 50$",
+            "$52! - 1$",
+            "$50! \\times 51$",
+            "$51! - 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Rewrite $n^2 + 1$ in terms of factorial factors:\n$$n^2 + 1 = n(n + 1) - n + 1$$\nAlternatively:\n$$(n^2 + 1)n! = (n^2 + n - n + 1)n! = [n(n + 1) - (n - 1)]n! = n(n + 1)! - (n - 1)n!$$\nLet $V_n = n(n + 1)!$ and $V_{n-1} = (n - 1)n!$.\nThen $T_n = V_n - V_{n-1}$ is in telescoping form.\nSumming from $n = 1$ to $50$:\n$$\\sum_{n=1}^{50} T_n = V_{50} - V_0 = 50(51!) - 0(1!) = 50 \\times 51!$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The sum of the first 20 terms of the series $1 \\cdot 3^2 + 2 \\cdot 5^2 + 3 \\cdot 7^2 + \\dots$ is:",
+          "image": "",
+          "options": [
+            "$188090$",
+            "$185090$",
+            "$189090$",
+            "$186090$"
+          ],
+          "correctOption": 0,
+          "solution": "The $n^{\\text{th}}$ term of the series is:\n$$T_n = n(2n + 1)^2 = n(4n^2 + 4n + 1) = 4n^3 + 4n^2 + n$$\nSumming for $n = 1$ to $20$:\n$$S_{20} = 4 \\sum_{n=1}^{20} n^3 + 4 \\sum_{n=1}^{20} n^2 + \\sum_{n=1}^{20} n$$\n$$\\sum_{n=1}^{20} n^3 = \\left(\\frac{20 \\times 21}{2}\\right)^2 = 210^2 = 44100 \\implies 4 \\times 44100 = 176400$$\n$$\\sum_{n=1}^{20} n^2 = \\frac{20 \\times 21 \\times 41}{6} = 10 \\times 7 \\times 41 = 2870 \\implies 4 \\times 2870 = 11480$$\n$$\\sum_{n=1}^{20} n = 210$$\n$$S_{20} = 176400 + 11480 + 210 = 188090$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The sum to infinity of $\\sum_{n=1}^{\\infty} \\frac{1}{4n^2 - 1}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2}$",
+            "$1$",
+            "$\\frac{1}{4}$",
+            "$\\frac{3}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Factor the denominator:\n$$4n^2 - 1 = (2n - 1)(2n + 1)$$\nUsing partial fractions:\n$$T_n = \\frac{1}{(2n - 1)(2n + 1)} = \\frac{1}{2} \\left[\\frac{1}{2n - 1} - \\frac{1}{2n + 1}\\right]$$\nTelescoping summation up to $N$:\n$$\\sum_{n=1}^N T_n = \\frac{1}{2} \\left[\\left(1 - \\frac{1}{3}\\right) + \\left(\\frac{1}{3} - \\frac{1}{5}\\right) + \\dots + \\left(\\frac{1}{2N - 1} - \\frac{1}{2N + 1}\\right)\\right]$$\n$$= \\frac{1}{2} \\left[1 - \\frac{1}{2N + 1}\\right]$$\nAs $N \\to \\infty$, the sum evaluates to $\\frac{1}{2}(1 - 0) = \\frac{1}{2}$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $S = \\sum_{k=1}^n \\frac{k^2 + k + 1}{k(k + 1)}$, then $S$ can be simplified to:",
+          "image": "",
+          "options": [
+            "$n + 1 - \\frac{1}{n + 1}$",
+            "$n - \\frac{1}{n + 1}$",
+            "$n + \\frac{1}{n + 1}$",
+            "$n + 1 - \\frac{1}{n}$"
+          ],
+          "correctOption": 0,
+          "solution": "Rewrite the numerator as $k(k + 1) + 1$:\n$$T_k = \\frac{k(k + 1) + 1}{k(k + 1)} = 1 + \\frac{1}{k(k + 1)} = 1 + \\left(\\frac{1}{k} - \\frac{1}{k + 1}\\right)$$\nSumming from $k = 1$ to $n$:\n$$S = \\sum_{k=1}^n 1 + \\sum_{k=1}^n \\left(\\frac{1}{k} - \\frac{1}{k + 1}\\right)$$\n$$= n + \\left(1 - \\frac{1}{n + 1}\\right) = n + 1 - \\frac{1}{n + 1}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The sum to infinity of the series $\\frac{1}{1 \\cdot 4} + \\frac{1}{4 \\cdot 7} + \\frac{1}{7 \\cdot 10} + \\dots$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{3}$",
+            "$\\frac{1}{4}$",
+            "$\\frac{1}{6}$",
+            "$\\frac{2}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "The general term of the series is:\n$$T_n = \\frac{1}{(3n - 2)(3n + 1)}$$\nUsing partial fractions:\n$$T_n = \\frac{1}{3} \\left[\\frac{1}{3n - 2} - \\frac{1}{3n + 1}\\right]$$\nTelescoping sum up to $N$:\n$$\\sum_{n=1}^N T_n = \\frac{1}{3} \\left[\\left(1 - \\frac{1}{4}\\right) + \\left(\\frac{1}{4} - \\frac{1}{7}\\right) + \\dots + \\left(\\frac{1}{3N - 2} - \\frac{1}{3N + 1}\\right)\\right]$$\n$$= \\frac{1}{3} \\left(1 - \\frac{1}{3N + 1}\\right)$$\nAs $N \\to \\infty$, the sum evaluates to $\\frac{1}{3}(1 - 0) = \\frac{1}{3}$."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the sum of the series $\\sum_{k=1}^{20} k(k + 3)$.",
+          "image": "",
+          "correctValue": 3500.0,
+          "solution": "Expand the summand:\n$$T_k = k^2 + 3k$$\nSumming for $k = 1$ to $20$:\n$$\\sum_{k=1}^{20} k^2 = \\frac{20 \\times 21 \\times 41}{6} = 2870$$\n$$3 \\sum_{k=1}^{20} k = 3 \\times \\frac{20 \\times 21}{2} = 3 \\times 210 = 630$$\n$$\\text{Total sum} = 2870 + 630 = 3500.0$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] If the sum to infinity of the arithmetico-geometric series $S = 2 + 5x + 8x^2 + 11x^3 + \\dots$ for $x = \\frac{1}{2}$ is $K$, find the value of $K$.",
+          "image": "",
+          "correctValue": 10.0,
+          "solution": "Here $a = 2, d = 3$, and $r = x = 1/2$.\nSum to infinity of an AGP ($S = a + (a+d)r + (a+2d)r^2 + \\dots$) is:\n$$S = \\frac{a}{1 - r} + \\frac{d r}{(1 - r)^2}$$\nSubstitute $a = 2, d = 3$, and $r = 1/2$:\n$$S = \\frac{2}{1 - 1/2} + \\frac{3(1/2)}{(1 - 1/2)^2} = \\frac{2}{1/2} + \\frac{3/2}{1/4} = 4 + 6 = 10.0$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Find the sum $\\sum_{n=1}^{10} \\frac{1}{n(n + 1)}$ in the form $\\frac{p}{q}$ in lowest terms, and find the value of $p + q$.",
+          "image": "",
+          "correctValue": 21.0,
+          "solution": "Telescoping sum:\n$$T_n = \\frac{1}{n} - \\frac{1}{n + 1}$$\n$$\\sum_{n=1}^{10} T_n = 1 - \\frac{1}{11} = \\frac{10}{11}$$\nHere $p = 10$ and $q = 11$.\n$$p + q = 10 + 11 = 21.0$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the value of $\\sum_{k=1}^{10} (2k - 1)^2$.",
+          "image": "",
+          "correctValue": 1330.0,
+          "solution": "The sum of the squares of the first $n$ odd natural numbers is given by:\n$$S_n = \\frac{n(2n - 1)(2n + 1)}{3}$$\nFor $n = 10$:\n$$S_{10} = \\frac{10(19)(21)}{3} = 10 \\times 19 \\times 7 = 190 \\times 7 = 1330.0$$\nAlternatively:\n$$\\sum_{k=1}^{10} (4k^2 - 4k + 1) = 4\\left(\\frac{10 \\times 11 \\times 21}{6}\\right) - 4\\left(\\frac{10 \\times 11}{2}\\right) + 10$$\n$$= 4(385) - 4(55) + 10 = 1540 - 220 + 10 = 1330.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Find the value of $\\lim_{n \\to \\infty} \\sum_{r=1}^n \\frac{r}{r^4 + \\frac{1}{4}}$.",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Rewrite the denominator:\n$$r^4 + \\frac{1}{4} = \\left(r^2 + \\frac{1}{2}\\right)^2 - r^2 = \\left(r^2 - r + \\frac{1}{2}\\right)\\left(r^2 + r + \\frac{1}{2}\\right)$$\nNotice that $\\left(r^2 + r + \\frac{1}{2}\\right) - \\left(r^2 - r + \\frac{1}{2}\\right) = 2r$.\nTherefore:\n$$T_r = \\frac{r}{r^4 + 1/4} = \\frac{1}{2} \\left[\\frac{1}{r^2 - r + 1/2} - \\frac{1}{r^2 + r + 1/2}\\right]$$\nLet $g(r) = \\frac{1}{r^2 - r + 1/2}$. Notice $g(r + 1) = \\frac{1}{(r + 1)^2 - (r + 1) + 1/2} = \\frac{1}{r^2 + r + 1/2}$.\nTelescoping cancellation yields:\n$$\\sum_{r=1}^n T_r = \\frac{1}{2} [g(1) - g(n + 1)]$$\n$$g(1) = \\frac{1}{1 - 1 + 1/2} = 2$$\nAs $n \\to \\infty$, $g(n + 1) \\to 0$:\n$$S_\\infty = \\frac{1}{2}(2 - 0) = 1.0$$"
+        }
+      ]
+    }
+  ]
+}

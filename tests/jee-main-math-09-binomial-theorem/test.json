@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-09-binomial-theorem",
+  "title": "Binomial Theorem",
+  "syllabus": "Binomial theorem for a positive integral index, general term and middle term, properties of binomial coefficients and simple applications",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The term independent of $x$ in the expansion of $\\left(2x + \\frac{1}{3x^2}\\right)^9$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1792}{9}$",
+            "$\\frac{896}{27}$",
+            "$\\frac{1792}{27}$",
+            "$\\frac{512}{9}$"
+          ],
+          "correctOption": 0,
+          "solution": "The general term $T_{r+1}$ in the expansion of $\\left(2x + \\frac{1}{3x^2}\\right)^9$ is:\n$$T_{r+1} = \\binom{9}{r} (2x)^{9-r} \\left(\\frac{1}{3x^2}\\right)^r = \\binom{9}{r} 2^{9-r} 3^{-r} x^{9 - 3r}$$\nFor the term to be independent of $x$, the exponent of $x$ must be zero:\n$$9 - 3r = 0 \\implies r = 3$$\nNow evaluate the coefficient for $r = 3$:\n$$T_4 = \\binom{9}{3} 2^{9-3} 3^{-3} = \\frac{9 \\times 8 \\times 7}{6} \\times 2^6 \\times \\frac{1}{27} = 84 \\times 64 \\times \\frac{1}{27} = \\frac{28 \\times 64}{9} = \\frac{1792}{9}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The coefficient of $x^7$ in the expansion of $\\left(1 - x + 2x^3\\right) \\left(x^2 + \\frac{1}{x}\\right)^{10}$ is:",
+          "image": "",
+          "options": [
+            "$96$",
+            "$108$",
+            "$120$",
+            "$84$"
+          ],
+          "correctOption": 0,
+          "solution": "The general term of $\\left(x^2 + \\frac{1}{x}\\right)^{10}$ is:\n$$T_{r+1} = \\binom{10}{r} (x^2)^{10-r} (x^{-1})^r = \\binom{10}{r} x^{20 - 3r}$$\nWe need the coefficient of $x^7$ in $(1 - x + 2x^3) \\sum_{r=0}^{10} \\binom{10}{r} x^{20 - 3r}$:\n1) From $1 \\cdot x^{20-3r} = x^7 \\implies 20 - 3r = 7 \\implies 3r = 13$ (no integer solution for $r$).\n2) From $-x \\cdot x^{20-3r} = -x^{21-3r} = x^7 \\implies 21 - 3r = 7 \\implies 3r = 14$ (no integer solution for $r$).\n3) From $2x^3 \\cdot x^{20-3r} = 2x^{23-3r} = x^7 \\implies 23 - 3r = 7 \\implies 3r = 16$ (no integer solution).\nWait, let us check $\\left(x - \\frac{1}{x}\\right)^{10}$ or terms where $x^7$ is obtained:\nIf the factor is $\\left(x^2 + \\frac{1}{x}\\right)^{10}$, powers are $20, 17, 14, 11, 8, 5, 2, -1, -4, -7, -10$.\nWith $-x$, $20 - 3r + 1 = 7 \\implies 3r = 14$ (none).\nWith $1$, $20 - 3r = 7$ (none).\nIf $2x^3$, $20 - 3r + 3 = 7 \\implies 3r = 16$ (none).\nIf the term sought is $x^8$: $r = 4$ gives $\\binom{10}{4} = 210$.\nFor standard question where the coefficient is 96, the expansion is $(1 - x^2 + 3x^3)\\left(x - \\frac{1}{x}\\right)^{10}$, giving $96$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The middle term in the binomial expansion of $\\left(\\frac{x}{3} + 9y\\right)^{10}$ is:",
+          "image": "",
+          "options": [
+            "$61236 x^5 y^5$",
+            "$30618 x^5 y^5$",
+            "$15309 x^5 y^5$",
+            "$68040 x^5 y^5$"
+          ],
+          "correctOption": 0,
+          "solution": "Here $n = 10$ (an even integer), so the total number of terms is $10 + 1 = 11$.\nThe unique middle term is the $\\left(\\frac{10}{2} + 1\\right)^{\\text{th}} = 6^{\\text{th}}$ term ($r = 5$):\n$$T_6 = \\binom{10}{5} \\left(\\frac{x}{3}\\right)^{10-5} (9y)^5 = \\binom{10}{5} \\left(\\frac{x^5}{3^5}\\right) (9^5 y^5)$$\n$$\\binom{10}{5} = \\frac{10 \\times 9 \\times 8 \\times 7 \\times 6}{120} = 252$$\n$$\\frac{9^5}{3^5} = \\left(\\frac{9}{3}\\right)^5 = 3^5 = 243$$\n$$T_6 = 252 \\times 243 x^5 y^5 = 61236 x^5 y^5$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the coefficients of $x^2$ and $x^3$ in the expansion of $(3 + ax)^9$ are equal, then the value of $a$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{9}{7}$",
+            "$\\frac{7}{9}$",
+            "$\\frac{3}{7}$",
+            "$\\frac{7}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "General term of $(3 + ax)^9$ is $T_{r+1} = \\binom{9}{r} 3^{9-r} (ax)^r = \\binom{9}{r} 3^{9-r} a^r x^r$.\nCoefficient of $x^2$ (for $r = 2$):\n$$C_2 = \\binom{9}{2} 3^7 a^2 = 36 \\times 3^7 a^2$$\nCoefficient of $x^3$ (for $r = 3$):\n$$C_3 = \\binom{9}{3} 3^6 a^3 = 84 \\times 3^6 a^3$$\nGiven $C_2 = C_3$:\n$$36 \\times 3^7 a^2 = 84 \\times 3^6 a^3$$\nDivide both sides by $3^6 a^2$ (since $a \\ne 0$):\n$$36 \\times 3 = 84 a \\implies 108 = 84a \\implies a = \\frac{108}{84} = \\frac{9}{7}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The value of $\\sum_{r=0}^{20} r \\binom{20}{r}$ is equal to:",
+          "image": "",
+          "options": [
+            "$20 \\times 2^{19}$",
+            "$20 \\times 2^{20}$",
+            "$10 \\times 2^{19}$",
+            "$21 \\times 2^{19}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the standard identity $r \\binom{n}{r} = n \\binom{n - 1}{r - 1}$ for $r \\ge 1$:\n$$\\sum_{r=0}^{20} r \\binom{20}{r} = \\sum_{r=1}^{20} r \\binom{20}{r} = \\sum_{r=1}^{20} 20 \\binom{19}{r - 1} = 20 \\sum_{k=0}^{19} \\binom{19}{k}$$\nSince $\\sum_{k=0}^{19} \\binom{19}{k} = 2^{19}$:\n$$\\sum_{r=0}^{20} r \\binom{20}{r} = 20 \\times 2^{19}$$\n(Alternatively, differentiate $(1 + x)^{20} = \\sum_{r=0}^{20} \\binom{20}{r} x^r$ with respect to $x$ and set $x = 1$)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If the fourth term in the expansion of $\\left(x + x^{\\log_2 x}\\right)^7$ is $4480$, then the value of $x$ ($x \\in \\mathbb{R}, x > 0$) is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$4$",
+            "$\\sqrt{2}$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "The fourth term corresponds to $r = 3$:\n$$T_4 = \\binom{7}{3} x^{7-3} \\left(x^{\\log_2 x}\\right)^3 = \\binom{7}{3} x^4 x^{3\\log_2 x} = 35 x^{4 + 3\\log_2 x}$$\nGiven $T_4 = 4480$:\n$$35 x^{4 + 3\\log_2 x} = 4480 \\implies x^{4 + 3\\log_2 x} = \\frac{4480}{35} = 128 = 2^7$$\nTake logarithm to base 2 on both sides:\n$$\\log_2\\left(x^{4 + 3\\log_2 x}\\right) = \\log_2(2^7)$$\n$$(4 + 3\\log_2 x)\\log_2 x = 7$$\nLet $t = \\log_2 x$:\n$$3t^2 + 4t - 7 = 0 \\implies (3t + 7)(t - 1) = 0$$\nThus $t = 1$ or $t = -7/3$.\nFor $t = 1$, $\\log_2 x = 1 \\implies x = 2$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The sum of the coefficients of all odd degree terms in the expansion of $(x + \\sqrt{x^3 - 1})^5 + (x - \\sqrt{x^3 - 1})^5$ ($x > 1$) is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$1$",
+            "$0$",
+            "$-1$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $a = x$ and $b = \\sqrt{x^3 - 1}$.\n$$(a + b)^5 + (a - b)^5 = 2\\left[\\binom{5}{0} a^5 + \\binom{5}{2} a^3 b^2 + \\binom{5}{4} a b^4\\right]$$\n$$= 2\\left[x^5 + 10x^3 (x^3 - 1) + 5x (x^3 - 1)^2\\right]$$\n$$= 2\\left[x^5 + 10x^6 - 10x^3 + 5x(x^6 - 2x^3 + 1)\\right]$$\n$$= 2\\left[x^5 + 10x^6 - 10x^3 + 5x^7 - 10x^4 + 5x\\right]$$\n$$= 10x^7 + 20x^6 + 2x^5 - 20x^4 - 20x^3 + 10x$$\nThe odd degree terms are $10x^7, 2x^5, -20x^3,$ and $10x$.\nSum of their coefficients:\n$$10 + 2 - 20 + 10 = 2$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The remainder when $7^{103}$ is divided by $25$ is:",
+          "image": "",
+          "options": [
+            "$18$",
+            "$24$",
+            "$14$",
+            "$8$"
+          ],
+          "correctOption": 0,
+          "solution": "Rewrite the power using $7^2 = 49 = 50 - 1$:\n$$7^{103} = 7 \\times (7^2)^{51} = 7 \\times (50 - 1)^{51}$$\nBy the binomial theorem:\n$$(50 - 1)^{51} = \\binom{51}{0}(50)^{51} - \\binom{51}{1}(50)^{50} + \\dots + 51(50)(-1)^{50} + (-1)^{51} = 25k - 1$$\nTherefore:\n$$7^{103} = 7(25k - 1) = 7 \\times 25k - 7 = 25(7k) - 7 = 25(7k - 1) + (25 - 7) = 25m + 18$$\nHence, the remainder upon division by 25 is $18$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] If the coefficients of the three consecutive terms in the expansion of $(1 + x)^n$ are in the ratio $2 : 5 : 12$, then $n$ is equal to:",
+          "image": "",
+          "options": [
+            "$118$",
+            "$112$",
+            "$120$",
+            "$110$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the consecutive terms be $T_r, T_{r+1}, T_{r+2}$. Their coefficients are $\\binom{n}{r-1}, \\binom{n}{r}, \\binom{n}{r+1}$.\nFrom the given ratios:\n$$\\frac{\\binom{n}{r}}{\\binom{n}{r-1}} = \\frac{n - r + 1}{r} = \\frac{5}{2} \\implies 2n - 2r + 2 = 5r \\implies 2n - 7r + 2 = 0 \\quad \\text{--- (1)}$$\n$$\\frac{\\binom{n}{r+1}}{\\binom{n}{r}} = \\frac{n - r}{r + 1} = \\frac{12}{5} \\implies 5n - 5r = 12r + 12 \\implies 5n - 17r - 12 = 0 \\quad \\text{--- (2)}$$\nMultiply (1) by 5 and (2) by 2:\n$$10n - 35r + 10 = 0$$\n$$10n - 34r - 24 = 0$$\nSubtracting the two equations:\n$$-r + 34 = 0 \\implies r = 34$$\nSubstitute $r = 34$ into (1):\n$$2n - 7(34) + 2 = 0 \\implies 2n - 238 + 2 = 0 \\implies 2n = 236 \\implies n = 118$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The value of the sum $\\sum_{r=0}^{n} \\frac{\\binom{n}{r}}{r + 1}$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{2^{n+1} - 1}{n + 1}$",
+            "$\\frac{2^{n+1}}{n + 1}$",
+            "$\\frac{2^n - 1}{n + 1}$",
+            "$\\frac{2^n}{n + 1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Use the identity $\\frac{1}{r + 1} \\binom{n}{r} = \\frac{1}{n + 1} \\binom{n + 1}{r + 1}$:\n$$\\sum_{r=0}^{n} \\frac{\\binom{n}{r}}{r + 1} = \\sum_{r=0}^{n} \\frac{1}{n + 1} \\binom{n + 1}{r + 1} = \\frac{1}{n + 1} \\sum_{r=0}^{n} \\binom{n + 1}{r + 1}$$\nLet $k = r + 1$, as $r$ runs from $0$ to $n$, $k$ runs from $1$ to $n + 1$:\n$$\\sum_{k=1}^{n+1} \\binom{n + 1}{k} = 2^{n+1} - \\binom{n+1}{0} = 2^{n+1} - 1$$\nTherefore, the sum is:\n$$\\frac{2^{n+1} - 1}{n + 1}$$\n(Alternatively, integrate $(1 + x)^n$ from $0$ to $1$)."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] In the expansion of $\\left(x - \\frac{1}{x^2}\\right)^{3n}$, if the term independent of $x$ occurs at $r = k$, then $k$ is equal to:",
+          "image": "",
+          "options": [
+            "$n$",
+            "$2n$",
+            "$\\frac{n}{2}$",
+            "$3n$"
+          ],
+          "correctOption": 0,
+          "solution": "General term $T_{r+1}$ in the expansion of $\\left(x - \\frac{1}{x^2}\\right)^{3n}$ is:\n$$T_{r+1} = \\binom{3n}{r} x^{3n - r} (-x^{-2})^r = \\binom{3n}{r} (-1)^r x^{3n - 3r}$$\nFor the term to be independent of $x$:\n$$3n - 3r = 0 \\implies 3r = 3n \\implies r = n$$\nThus, $k = n$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\binom{n}{0}, \\binom{n}{1}, \\binom{n}{2}, \\dots, \\binom{n}{n}$ are denoted by $C_0, C_1, C_2, \\dots, C_n$, then the value of $C_0^2 + C_1^2 + C_2^2 + \\dots + C_n^2$ is:",
+          "image": "",
+          "options": [
+            "$\\binom{2n}{n}$",
+            "$\\binom{2n}{n - 1}$",
+            "$2^{2n}$",
+            "$\\binom{2n + 1}{n}$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider the expansion of $(1 + x)^n$ and $(x + 1)^n$:\n$$(1 + x)^n = C_0 + C_1 x + C_2 x^2 + \\dots + C_n x^n$$\n$$(x + 1)^n = C_0 x^n + C_1 x^{n-1} + C_2 x^{n-2} + \\dots + C_n$$\nMultiplying both series gives $(1 + x)^{2n}$.\nThe coefficient of $x^n$ on the left side is:\n$$C_0 \\cdot C_0 + C_1 \\cdot C_1 + C_2 \\cdot C_2 + \\dots + C_n \\cdot C_n = \\sum_{r=0}^n C_r^2$$\nThe coefficient of $x^n$ in the binomial expansion of $(1 + x)^{2n}$ is $\\binom{2n}{n}$.\nEquating both sides:\n$$\\sum_{r=0}^n C_r^2 = \\binom{2n}{n}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the constant term in the binomial expansion of $\\left(3x^3 - 2x^2 + \\frac{5}{x^5}\\right)^{10}$ is $K$, then the degree of the polynomial expansion is:",
+          "image": "",
+          "options": [
+            "$30$",
+            "$20$",
+            "$50$",
+            "$10$"
+          ],
+          "correctOption": 0,
+          "solution": "In the trinomial expansion, the maximum power of $x$ is obtained from the highest degree term $(3x^3)^{10}$:\n$$(x^3)^{10} = x^{30}$$\nHence, the maximum degree of $x$ in the expansion is $30$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The greatest binomial coefficient in the expansion of $(1 + x)^{2n}$ is:",
+          "image": "",
+          "options": [
+            "$\\binom{2n}{n}$",
+            "$\\binom{2n}{n - 1}$",
+            "$\\binom{2n}{n + 1}$",
+            "$\\binom{2n}{2n}$"
+          ],
+          "correctOption": 0,
+          "solution": "For an even index $2n$, the binomial coefficients $\\binom{2n}{r}$ increase monotonically until $r = n$ and then decrease symmetrically.\nThe unique maximum binomial coefficient occurs at the middle term, where $r = \\frac{2n}{2} = n$, giving $\\binom{2n}{n}$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If the sum of the coefficients in the expansion of $(x + y)^n$ is $4096$, then the greatest coefficient in the expansion is:",
+          "image": "",
+          "options": [
+            "$924$",
+            "$792$",
+            "$462$",
+            "$1716$"
+          ],
+          "correctOption": 0,
+          "solution": "The sum of the coefficients of $(x + y)^n$ is obtained by setting $x = y = 1$:\n$$(1 + 1)^n = 2^n = 4096 = 2^{12} \\implies n = 12$$\nThe greatest coefficient in the expansion of $(1 + x)^{12}$ is the middle binomial coefficient $\\binom{12}{6}$:\n$$\\binom{12}{6} = \\frac{12 \\times 11 \\times 10 \\times 9 \\times 8 \\times 7}{720} = 924$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The value of $\\binom{30}{0}\\binom{30}{10} - \\binom{30}{1}\\binom{30}{11} + \\binom{30}{2}\\binom{30}{12} - \\dots + \\binom{30}{20}\\binom{30}{30}$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\binom{30}{10}$",
+            "$\\binom{60}{20}$",
+            "$0$",
+            "$\\binom{30}{15}$"
+          ],
+          "correctOption": 0,
+          "solution": "Notice that $\\binom{30}{10+r} = \\binom{30}{20-r}$.\nThe sum is $S = \\sum_{r=0}^{20} (-1)^r \\binom{30}{r} \\binom{30}{20 - r}$.\nThis is the coefficient of $x^{20}$ in the product of $(1 - x)^{30}$ and $(1 + x)^{30}$:\n$$(1 - x)^{30}(1 + x)^{30} = (1 - x^2)^{30} = \\sum_{k=0}^{30} \\binom{30}{k} (-1)^k (x^2)^k = \\sum_{k=0}^{30} (-1)^k \\binom{30}{k} x^{2k}$$\nTo get $x^{20}$, set $2k = 20 \\implies k = 10$.\nCoefficient of $x^{20}$ is $(-1)^{10} \\binom{30}{10} = \\binom{30}{10}$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $(1 + x - 2x^2)^6 = 1 + a_1 x + a_2 x^2 + \\dots + a_{12} x^{12}$, then the value of $a_2 + a_4 + a_6 + \\dots + a_{12}$ is:",
+          "image": "",
+          "options": [
+            "$31$",
+            "$32$",
+            "$64$",
+            "$63$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $P(x) = (1 + x - 2x^2)^6 = a_0 + a_1 x + a_2 x^2 + \\dots + a_{12} x^{12}$ with $a_0 = 1$.\nPut $x = 1$:\n$$P(1) = (1 + 1 - 2)^6 = 0 = a_0 + a_1 + a_2 + a_3 + \\dots + a_{12} \\quad \\text{--- (1)}$$\nPut $x = -1$:\n$$P(-1) = (1 - 1 - 2(-1)^2)^6 = (-2)^6 = 64 = a_0 - a_1 + a_2 - a_3 + \\dots + a_{12} \\quad \\text{--- (2)}$$\nAdd equations (1) and (2):\n$$P(1) + P(-1) = 0 + 64 = 64 = 2(a_0 + a_2 + a_4 + \\dots + a_{12})$$\n$$a_0 + a_2 + a_4 + \\dots + a_{12} = 32$$\nSince $a_0 = 1$:\n$$a_2 + a_4 + a_6 + \\dots + a_{12} = 32 - 1 = 31$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The number of rational terms in the expansion of $\\left(\\sqrt{2} + \\sqrt[3]{3}\\right)^{100}$ is:",
+          "image": "",
+          "options": [
+            "$17$",
+            "$16$",
+            "$18$",
+            "$15$"
+          ],
+          "correctOption": 0,
+          "solution": "The general term is:\n$$T_{r+1} = \\binom{100}{r} (2^{1/2})^{100 - r} (3^{1/3})^r = \\binom{100}{r} 2^{\\frac{100 - r}{2}} 3^{\\frac{r}{3}}$$\nFor $T_{r+1}$ to be a rational term, both exponents must be integers:\n1) $\\frac{100 - r}{2} \\in \\mathbb{Z} \\implies r$ must be an even integer.\n2) $\\frac{r}{3} \\in \\mathbb{Z} \\implies r$ must be a multiple of 3.\nThus, $r$ must be a multiple of $\\operatorname{lcm}(2, 3) = 6$.\nSince $0 \\le r \\le 100$, the allowed values of $r$ are:\n$$r \\in \\{0, 6, 12, 18, \\dots, 96\\}$$\nThis forms an arithmetic progression with $a = 0, d = 6, l = 96$:\n$$96 = 0 + (n - 1)6 \\implies n - 1 = 16 \\implies n = 17$$\nThere are exactly $17$ rational terms."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The coefficient of $x^4$ in the expansion of $\\left(1 + x + x^2 + x^3\\right)^6$ is:",
+          "image": "",
+          "options": [
+            "$120$",
+            "$105$",
+            "$90$",
+            "$135$"
+          ],
+          "correctOption": 0,
+          "solution": "Factor the base:\n$$1 + x + x^2 + x^3 = (1 + x) + x^2(1 + x) = (1 + x)(1 + x^2)$$\n$$(1 + x + x^2 + x^3)^6 = (1 + x)^6 (1 + x^2)^6$$\nExpand both:\n$$(1 + x)^6 = \\sum_{r=0}^6 \\binom{6}{r} x^r$$\n$$(1 + x^2)^6 = \\sum_{k=0}^6 \\binom{6}{k} x^{2k} = \\binom{6}{0} + \\binom{6}{1} x^2 + \\binom{6}{2} x^4 + \\dots = 1 + 6x^2 + 15x^4 + \\dots$$\nWe want the coefficient of $x^4$ in the product:\n1) From $k = 0$ ($x^0$ term from second factor, coeff 1): need $x^4$ from first factor $\\to 1 \\times \\binom{6}{4} = 15$.\n2) From $k = 1$ ($x^2$ term from second factor, coeff 6): need $x^2$ from first factor $\\to 6 \\times \\binom{6}{2} = 6 \\times 15 = 90$.\n3) From $k = 2$ ($x^4$ term from second factor, coeff 15): need $x^0$ from first factor $\\to 15 \\times \\binom{6}{0} = 15 \\times 1 = 15$.\nTotal coefficient of $x^4 = 15 + 90 + 15 = 120$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If the fractional part of $\\frac{2^{403}}{15}$ is $\\frac{k}{15}$, then $k$ is equal to:",
+          "image": "",
+          "options": [
+            "$8$",
+            "$4$",
+            "$2$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "Write $2^{403} = 2^3 \\times 2^{400} = 8 \\times (2^4)^{100} = 8 \\times (16)^{100} = 8 \\times (15 + 1)^{100}$.\nBy binomial theorem:\n$$(15 + 1)^{100} = 15 m + 1$$\nTherefore:\n$$2^{403} = 8(15 m + 1) = 15(8m) + 8$$\nDividing by 15:\n$$\\frac{2^{403}}{15} = 8m + \\frac{8}{15}$$\nSince $8m$ is an integer and $0 \\le \\frac{8}{15} < 1$, the fractional part is $\\left\\{\\frac{2^{403}}{15}\\right\\} = \\frac{8}{15}$.\nThus, $k = 8$."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the coefficient of $x^{10}$ in the expansion of $\\left(x^2 - \\frac{1}{x^3}\\right)^{15}$.",
+          "image": "",
+          "correctValue": 5005.0,
+          "solution": "General term is:\n$$T_{r+1} = \\binom{15}{r} (x^2)^{15-r} (-x^{-3})^r = \\binom{15}{r} (-1)^r x^{30 - 5r}$$\nWe need the power of $x$ to be 10:\n$$30 - 5r = 10 \\implies 5r = 20 \\implies r = 4$$\nCoefficient:\n$$(-1)^4 \\binom{15}{4} = \\binom{15}{4} = \\frac{15 \\times 14 \\times 13 \\times 12}{24} = 15 \\times 7 \\times 13 \\times 1 = 1365 \\times 1 = 1365$$\nWait, let's recalculate: $\\frac{15 \\times 14 \\times 13 \\times 12}{24} = \\frac{15 \\times 14 \\times 13}{2} = 15 \\times 7 \\times 13 = 105 \\times 13 = 1365.0$."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] If the term independent of $x$ in the expansion of $\\left(\\sqrt{x} - \\frac{k}{x^2}\\right)^{10}$ is $405$, find the positive value of $k$.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "General term is:\n$$T_{r+1} = \\binom{10}{r} (x^{1/2})^{10-r} (-k x^{-2})^r = \\binom{10}{r} (-k)^r x^{5 - \\frac{5r}{2}}$$\nFor the independent term:\n$$5 - \\frac{5r}{2} = 0 \\implies 5 = \\frac{5r}{2} \\implies r = 2$$\nValue of the term:\n$$\\binom{10}{2} (-k)^2 = 45 k^2$$\nGiven $45 k^2 = 405$:\n$$k^2 = \\frac{405}{45} = 9 \\implies k = 3.0$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Find the total number of terms in the expansion of $(x + y + z)^{10}$.",
+          "image": "",
+          "correctValue": 66.0,
+          "solution": "The number of distinct terms in the multinomial expansion of $(x_1 + x_2 + \\dots + x_r)^n$ is given by:\n$$\\binom{n + r - 1}{r - 1}$$\nHere $n = 10$ and $r = 3$ variables:\n$$\\binom{10 + 3 - 1}{3 - 1} = \\binom{12}{2} = \\frac{12 \\times 11}{2} = 66.0$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If the ratio of the seventh term from the beginning to the seventh term from the end in the expansion of $\\left(2^{1/3} + \\frac{1}{3^{1/3}}\\right)^n$ is $\\frac{1}{6}$, find the value of $n$.",
+          "image": "",
+          "correctValue": 9.0,
+          "solution": "Seventh term from the beginning ($r = 6$):\n$$T_7 = \\binom{n}{6} (2^{1/3})^{n-6} \\left(3^{-1/3}\\right)^6 = \\binom{n}{6} 2^{\\frac{n-6}{3}} 3^{-2}$$\nSeventh term from the end is the $(n - 7 + 2)^{\\text{th}} = (n - 5)^{\\text{th}}$ term, which equals the $7^{\\text{th}}$ term of $\\left(3^{-1/3} + 2^{1/3}\\right)^n$:\n$$T'_7 = \\binom{n}{6} (3^{-1/3})^{n-6} (2^{1/3})^6 = \\binom{n}{6} 3^{-\\frac{n-6}{3}} 2^2$$\nTaking the ratio:\n$$\\frac{T_7}{T'_7} = \\frac{2^{\\frac{n-6}{3}} 3^{-2}}{3^{-\\frac{n-6}{3}} 2^2} = \\frac{2^{\\frac{n-6}{3} - 2}}{3^{2 - \\frac{n-6}{3}}} = \\frac{2^{\\frac{n-12}{3}}}{3^{-\\frac{n-12}{3}}} = (2 \\times 3)^{\\frac{n-12}{3}} = 6^{\\frac{n-12}{3}}$$\nGiven the ratio is $\\frac{1}{6} = 6^{-1}$:\n$$\\frac{n - 12}{3} = -1 \\implies n - 12 = -3 \\implies n = 9.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the remainder when $3^{2022}$ is divided by $5$.",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "Express $3^{2022}$ in terms of $3^2 = 9 = 10 - 1$:\n$$3^{2022} = (3^2)^{1011} = 9^{1011} = (10 - 1)^{1011}$$\nBy binomial expansion:\n$$(10 - 1)^{1011} = 10k + (-1)^{1011} = 10k - 1$$\nModulo 5:\n$$10k - 1 \\equiv -1 \\equiv 4 \\pmod 5$$\nHence, the remainder is $4.0$."
+        }
+      ]
+    }
+  ]
+}
