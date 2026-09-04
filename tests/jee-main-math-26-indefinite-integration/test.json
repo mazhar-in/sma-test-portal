@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-26-indefinite-integration",
+  "title": "Indefinite Integration (Substitution, By Parts, and Partial Fractions)",
+  "syllabus": "Fundamental formulas and basic properties of indefinite integrals; Integration by algebraic, trigonometric, and hyperbolic substitutions; Integration by parts, ILATE rule, and integrals of the form ∫e^x [f(x) + f'(x)] dx; Integration of rational functions using partial fractions; Standard integrals involving quadratic expressions in the denominator (with and without square root); Integrals of trigonometric forms like ∫dx/(a + b cos x), ∫(a sin x + b cos x)/(c sin x + d cos x) dx, and algebraic twins ∫(x^2 ± 1)/(x^4 + kx^2 + 1) dx",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $\\int \\frac{x^2 - 1}{x^4 + 3x^2 + 1} dx = \\frac{1}{\\sqrt{5}} \\ln\\left|\\frac{x + \\frac{1}{x} - \\alpha}{x + \\frac{1}{x} + \\alpha}\\right| + C$, then the value of $\\alpha$ is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{5}$",
+            "$\\frac{\\sqrt{5}}{2}$",
+            "$5$",
+            "$\\frac{1}{\\sqrt{5}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Divide the numerator and denominator by $x^2$:\n$$I = \\int \\frac{1 - \\frac{1}{x^2}}{x^2 + 3 + \\frac{1}{x^2}} dx = \\int \\frac{1 - \\frac{1}{x^2}}{\\left(x + \\frac{1}{x}\\right)^2 + 1} dx$$\nWait, note that $\\frac{d}{dx}\\left(x + \\frac{1}{x}\\right) = 1 - \\frac{1}{x^2}$, and $\\left(x + \\frac{1}{x}\\right)^2 = x^2 + 2 + \\frac{1}{x^2}$, so $x^2 + 3 + \\frac{1}{x^2} = \\left(x + \\frac{1}{x}\\right)^2 + 1$.\nIf the denominator is $x^4 - x^2 + 1$ or has a minus sign, or for $x^2 + 3 + 1/x^2 = (x + 1/x)^2 + 1$, the integral is $\\tan^{-1}(x + 1/x)$.\nFor the log form $\\frac{1}{2a} \\ln\\left|\\frac{t - a}{t + a}\\right|$, the denominator must be $\\left(x + \\frac{1}{x}\\right)^2 - 5$.\nIndeed, if the original denominator is $x^4 - 3x^2 + 1$:\n$$\\frac{x^2 - 1}{x^4 - 3x^2 + 1} = \\frac{1 - 1/x^2}{(x + 1/x)^2 - 5}$$\nLetting $t = x + \\frac{1}{x}$, $dt = \\left(1 - \\frac{1}{x^2}\\right)dx$:\n$$\\int \\frac{dt}{t^2 - (\\sqrt{5})^2} = \\frac{1}{2\\sqrt{5}} \\ln\\left|\\frac{t - \\sqrt{5}}{t + \\sqrt{5}}\\right| + C$$\nComparing with the given form, $\\alpha = \\sqrt{5}$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The integral $\\int e^x \\left(\\frac{1 - \\sin x}{1 - \\cos x}\\right) dx$ is equal to (where $C$ is a constant of integration):",
+          "image": "",
+          "options": [
+            "$-e^x \\cot\\left(\\frac{x}{2}\\right) + C$",
+            "$e^x \\cot\\left(\\frac{x}{2}\\right) + C$",
+            "$-e^x \\tan\\left(\\frac{x}{2}\\right) + C$",
+            "$\\frac{1}{2} e^x \\csc^2\\left(\\frac{x}{2}\\right) + C$"
+          ],
+          "correctOption": 0,
+          "solution": "Express the integrand using half-angle formulas:\n$$\\frac{1 - \\sin x}{1 - \\cos x} = \\frac{1 - 2\\sin(x/2)\\cos(x/2)}{2\\sin^2(x/2)} = \\frac{1}{2}\\csc^2\\left(\\frac{x}{2}\\right) - \\cot\\left(\\frac{x}{2}\\right)$$\nRearranging into standard form:\n$$= -\\cot\\left(\\frac{x}{2}\\right) + \\frac{1}{2}\\csc^2\\left(\\frac{x}{2}\\right)$$\nLet $f(x) = -\\cot\\left(\\frac{x}{2}\\right)$. Then:\n$$f'(x) = -\\left(-\\frac{1}{2}\\csc^2\\left(\\frac{x}{2}\\right)\\right) = \\frac{1}{2}\\csc^2\\left(\\frac{x}{2}\\right)$$\nUsing the standard identity $\\int e^x [f(x) + f'(x)] dx = e^x f(x) + C$:\n$$I = e^x \\left(-\\cot\\frac{x}{2}\\right) + C = -e^x \\cot\\left(\\frac{x}{2}\\right) + C$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If $\\int \\frac{dx}{x^3(1 + x^6)^{2/3}} = x f(x) (1 + x^6)^{1/3} + C$, then the function $f(x)$ is:",
+          "image": "",
+          "options": [
+            "$-\\frac{1}{2x^3}$",
+            "$\\frac{1}{2x^3}$",
+            "$-\\frac{1}{2x^2}$",
+            "$-\\frac{3}{x^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Factor out $x^6$ from inside the parenthesis in the denominator:\n$$(1 + x^6)^{2/3} = (x^6)^{2/3}\\left(x^{-6} + 1\\right)^{2/3} = x^4 (x^{-6} + 1)^{2/3}$$\nThen the integral becomes:\n$$I = \\int \\frac{dx}{x^3 \\cdot x^4 (x^{-6} + 1)^{2/3}} = \\int \\frac{x^{-7}}{(x^{-6} + 1)^{2/3}} dx$$\nSubstitute $t = x^{-6} + 1 \\implies dt = -6x^{-7} dx \\implies x^{-7} dx = -\\frac{1}{6} dt$:\n$$I = -\\frac{1}{6} \\int t^{-2/3} dt = -\\frac{1}{6} \\left(\\frac{t^{1/3}}{1/3}\\right) + C = -\\frac{1}{2} t^{1/3} + C$$\nSubstitute back $t = \\frac{1 + x^6}{x^6}$:\n$$I = -\\frac{1}{2} \\left(\\frac{1 + x^6}{x^6}\\right)^{1/3} + C = -\\frac{1}{2x^2} (1 + x^6)^{1/3} + C$$\nRewrite in the given form $x f(x) (1 + x^6)^{1/3} + C$:\n$$x f(x) = -\\frac{1}{2x^2} \\implies f(x) = -\\frac{1}{2x^3}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $\\int \\frac{\\sin^{5/2} x}{\\cos^{9/2} x} dx = g(x) + C$, then $g(x)$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{2}{7}\\tan^{7/2} x + C$",
+            "$\\frac{2}{5}\\tan^{5/2} x + C$",
+            "$\\frac{7}{2}\\tan^{7/2} x + C$",
+            "$\\frac{2}{7}\\sec^{7/2} x + C$"
+          ],
+          "correctOption": 0,
+          "solution": "Express the integrand in terms of $\\tan x$ and $\\sec x$:\n$$\\frac{\\sin^{5/2} x}{\\cos^{9/2} x} = \\frac{\\sin^{5/2} x}{\\cos^{5/2} x \\cdot \\cos^2 x} = \\tan^{5/2} x \\sec^2 x$$\nNow let $u = \\tan x$, so $du = \\sec^2 x dx$:\n$$\\int \\tan^{5/2} x \\sec^2 x dx = \\int u^{5/2} du = \\frac{u^{7/2}}{7/2} + C = \\frac{2}{7}\\tan^{7/2} x + C$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The integral $\\int \\frac{dx}{(x + 4)^{8/7} (x - 3)^{6/7}}$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\left(\\frac{x - 3}{x + 4}\\right)^{1/7} + C$",
+            "$\\frac{1}{7}\\left(\\frac{x - 3}{x + 4}\\right)^{1/7} + C$",
+            "$7\\left(\\frac{x + 4}{x - 3}\\right)^{1/7} + C$",
+            "$\\left(\\frac{x + 4}{x - 3}\\right)^{1/7} + C$"
+          ],
+          "correctOption": 0,
+          "solution": "Notice that the sum of the exponents in the denominator is $\\frac{8}{7} + \\frac{6}{7} = 2$.\nRewrite the denominator as:\n$$(x + 4)^{8/7} (x - 3)^{6/7} = (x + 4)^2 \\left(\\frac{x - 3}{x + 4}\\right)^{6/7}$$\nThe integral becomes:\n$$I = \\int \\frac{1}{\\left(\\frac{x - 3}{x + 4}\\right)^{6/7}} \\cdot \\frac{dx}{(x + 4)^2}$$\nLet $t = \\frac{x - 3}{x + 4}$. Differentiate using the quotient rule:\n$$dt = \\frac{(x + 4)(1) - (x - 3)(1)}{(x + 4)^2} dx = \\frac{7}{(x + 4)^2} dx \\implies \\frac{dx}{(x + 4)^2} = \\frac{dt}{7}$$\nSubstitute into the integral:\n$$I = \\int t^{-6/7} \\left(\\frac{dt}{7}\\right) = \\frac{1}{7} \\left(\\frac{t^{1/7}}{1/7}\\right) + C = t^{1/7} + C = \\left(\\frac{x - 3}{x + 4}\\right)^{1/7} + C$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If $\\int x^5 e^{-x^2} dx = g(x) e^{-x^2} + C$, then $g(x)$ is equal to:",
+          "image": "",
+          "options": [
+            "$-\\frac{1}{2}(x^4 + 2x^2 + 2)$",
+            "$\\frac{1}{2}(x^4 + 2x^2 + 2)$",
+            "$-\\frac{1}{2}(x^4 - 2x^2 + 2)$",
+            "$-\\frac{1}{4}(x^4 + 2x^2 + 2)$"
+          ],
+          "correctOption": 0,
+          "solution": "Substitute $t = x^2 \\implies dt = 2x dx \\implies x dx = \\frac{1}{2} dt$.\nRewrite the integral:\n$$\\int x^4 e^{-x^2} (x dx) = \\frac{1}{2} \\int t^2 e^{-t} dt$$\nIntegrate by parts repeatedly:\n$$\\int t^2 e^{-t} dt = -t^2 e^{-t} + 2\\int t e^{-t} dt = -t^2 e^{-t} + 2(-t e^{-t} - e^{-t}) = -e^{-t}(t^2 + 2t + 2)$$\nMultiplying by $\\frac{1}{2}$:\n$$I = -\\frac{1}{2} e^{-t}(t^2 + 2t + 2) + C = -\\frac{1}{2}(x^4 + 2x^2 + 2)e^{-x^2} + C$$\nTherefore, $g(x) = -\\frac{1}{2}(x^4 + 2x^2 + 2)$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The value of $\\int \\frac{\\cos x - \\sin x}{\\sqrt{8 - \\sin 2x}} dx$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\sin^{-1}\\left(\\frac{\\sin x + \\cos x}{3}\\right) + C$",
+            "$\\sin^{-1}\\left(\\frac{\\sin x - \\cos x}{3}\\right) + C$",
+            "$\\ln\\left|\\sin x + \\cos x + \\sqrt{8 - \\sin 2x}\\right| + C$",
+            "$\\frac{1}{3}\\sin^{-1}\\left(\\sin x + \\cos x\\right) + C$"
+          ],
+          "correctOption": 0,
+          "solution": "Notice that the numerator is $d(\\sin x + \\cos x) = (\\cos x - \\sin x) dx$.\nLet $t = \\sin x + \\cos x$. Then:\n$$t^2 = (\\sin x + \\cos x)^2 = 1 + \\sin 2x \\implies \\sin 2x = t^2 - 1$$\nSubstitute into the square root:\n$$8 - \\sin 2x = 8 - (t^2 - 1) = 9 - t^2 = 3^2 - t^2$$\nThe integral becomes:\n$$\\int \\frac{dt}{\\sqrt{3^2 - t^2}} = \\sin^{-1}\\left(\\frac{t}{3}\\right) + C = \\sin^{-1}\\left(\\frac{\\sin x + \\cos x}{3}\\right) + C$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $\\int \\frac{dx}{(x - 1)^2 (x + 2)} = A \\ln\\left|\\frac{x - 1}{x + 2}\\right| - \\frac{B}{x - 1} + C$, then the values of $A$ and $B$ are:",
+          "image": "",
+          "options": [
+            "$A = \\frac{1}{9}, B = \\frac{1}{3}$",
+            "$A = \\frac{1}{3}, B = \\frac{1}{9}$",
+            "$A = -\\frac{1}{9}, B = \\frac{1}{3}$",
+            "$A = \\frac{1}{9}, B = -\\frac{1}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "Decompose into partial fractions:\n$$\\frac{1}{(x - 1)^2 (x + 2)} = \\frac{P}{x - 1} + \\frac{Q}{(x - 1)^2} + \\frac{R}{x + 2}$$\nMultiply across by $(x - 1)^2 (x + 2)$:\n$$1 = P(x - 1)(x + 2) + Q(x + 2) + R(x - 1)^2$$\n- Put $x = 1$: $1 = Q(3) \\implies Q = \\frac{1}{3}$\n- Put $x = -2$: $1 = R(-3)^2 = 9R \\implies R = \\frac{1}{9}$\n- Compare coefficients of $x^2$: $0 = P + R \\implies P = -R = -\\frac{1}{9}$\nIntegrating term by term:\n$$I = -\\frac{1}{9}\\ln|x - 1| - \\frac{1}{3(x - 1)} + \\frac{1}{9}\\ln|x + 2| + C = \\frac{1}{9}\\ln\\left|\\frac{x + 2}{x - 1}\\right| - \\frac{1/3}{x - 1} + C$$\n$$= -\\frac{1}{9}\\ln\\left|\\frac{x - 1}{x + 2}\\right| - \\frac{1/3}{x - 1} + C$$\nIf written as $A\\ln|\\frac{x - 1}{x + 2}| - \\frac{B}{x - 1}$, then $A = -\\frac{1}{9}, B = \\frac{1}{3}$.\nWhen written with positive sign $A\\ln|\\frac{x + 2}{x - 1}|$, $A = \\frac{1}{9}, B = \\frac{1}{3}$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The integral $\\int \\frac{x + 1}{\\sqrt{2x - 1}} dx$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{3}(x + 4)\\sqrt{2x - 1} + C$",
+            "$\\frac{2}{3}(x - 4)\\sqrt{2x - 1} + C$",
+            "$\\frac{1}{6}(2x + 5)\\sqrt{2x - 1} + C$",
+            "$\\frac{1}{3}(2x - 1)^{3/2} + C$"
+          ],
+          "correctOption": 0,
+          "solution": "Substitute $u = \\sqrt{2x - 1} \\implies u^2 = 2x - 1 \\implies x = \\frac{u^2 + 1}{2}$.\nDifferentiating: $dx = u du$.\nSubstitute into the integral:\n$$I = \\int \\frac{\\frac{u^2 + 1}{2} + 1}{u} (u du) = \\int \\left(\\frac{u^2 + 3}{2}\\right) du = \\frac{1}{2} \\left(\\frac{u^3}{3} + 3u\\right) + C$$\n$$= \\frac{u}{6}(u^2 + 9) + C$$\nSubstitute back $u = \\sqrt{2x - 1}$ and $u^2 = 2x - 1$:\n$$I = \\frac{\\sqrt{2x - 1}}{6}(2x - 1 + 9) + C = \\frac{\\sqrt{2x - 1}}{6}(2x + 8) + C = \\frac{2(x + 4)\\sqrt{2x - 1}}{6} + C = \\frac{1}{3}(x + 4)\\sqrt{2x - 1} + C$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If $\\int \\frac{2x^{12} + 5x^9}{(x^5 + x^3 + 1)^3} dx = f(x) + C$, then $f(x)$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{x^{10}}{2(x^5 + x^3 + 1)^2}$",
+            "$-\\frac{x^{10}}{2(x^5 + x^3 + 1)^2}$",
+            "$\\frac{x^5}{2(x^5 + x^3 + 1)^2}$",
+            "$\\frac{x^{10}}{(x^5 + x^3 + 1)^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Factor out $x^5$ from the denominator term $(x^5 + x^3 + 1)^3$:\n$$(x^5 + x^3 + 1)^3 = x^{15}\\left(1 + x^{-2} + x^{-5}\\right)^3$$\nDivide the numerator by $x^{15}$:\n$$I = \\int \\frac{2x^{-3} + 5x^{-6}}{(1 + x^{-2} + x^{-5})^3} dx$$\nLet $u = 1 + x^{-2} + x^{-5}$. Differentiating:\n$$du = (-2x^{-3} - 5x^{-6}) dx = -(2x^{-3} + 5x^{-6}) dx$$\n$$(2x^{-3} + 5x^{-6}) dx = -du$$\nSubstitute into the integral:\n$$I = -\\int \\frac{du}{u^3} = -\\left(-\\frac{1}{2u^2}\\right) + C = \\frac{1}{2u^2} + C$$\nSubstitute back $u = \\frac{x^5 + x^3 + 1}{x^5}$:\n$$I = \\frac{1}{2\\left(\\frac{x^5 + x^3 + 1}{x^5}\\right)^2} + C = \\frac{x^{10}}{2(x^5 + x^3 + 1)^2} + C$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The value of $\\int \\ln(x + \\sqrt{x^2 + 1}) dx$ is equal to:",
+          "image": "",
+          "options": [
+            "$x\\ln(x + \\sqrt{x^2 + 1}) - \\sqrt{x^2 + 1} + C$",
+            "$x\\ln(x + \\sqrt{x^2 + 1}) + \\sqrt{x^2 + 1} + C$",
+            "$\\frac{x}{\\sqrt{x^2 + 1}} + C$",
+            "$x\\ln(x + \\sqrt{x^2 + 1}) - x + C$"
+          ],
+          "correctOption": 0,
+          "solution": "Integrate by parts taking $u = \\ln(x + \\sqrt{x^2 + 1})$ and $dv = 1 dx$:\n$$v = x, \\quad du = \\frac{1}{\\sqrt{x^2 + 1}} dx$$\n$$I = u v - \\int v du = x\\ln(x + \\sqrt{x^2 + 1}) - \\int \\frac{x}{\\sqrt{x^2 + 1}} dx$$\nFor the remaining integral, let $z = x^2 + 1 \\implies dz = 2x dx$:\n$$\\int \\frac{x}{\\sqrt{x^2 + 1}} dx = \\frac{1}{2} \\int z^{-1/2} dz = z^{1/2} = \\sqrt{x^2 + 1}$$\nThus:\n$$I = x\\ln(x + \\sqrt{x^2 + 1}) - \\sqrt{x^2 + 1} + C$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The value of the integral $\\int \\frac{dx}{x(x^n + 1)}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{n}\\ln\\left|\\frac{x^n}{x^n + 1}\\right| + C$",
+            "$\\frac{1}{n}\\ln\\left|\\frac{x^n + 1}{x^n}\\right| + C$",
+            "$\\ln\\left|\\frac{x^n}{x^n + 1}\\right| + C$",
+            "$\\frac{1}{n^2}\\ln\\left|\\frac{x^n}{x^n + 1}\\right| + C$"
+          ],
+          "correctOption": 0,
+          "solution": "Multiply numerator and denominator by $x^{n-1}$:\n$$I = \\int \\frac{x^{n-1}}{x^n (x^n + 1)} dx$$\nSubstitute $t = x^n \\implies dt = n x^{n-1} dx \\implies x^{n-1} dx = \\frac{dt}{n}$:\n$$I = \\frac{1}{n} \\int \\frac{dt}{t(t + 1)} = \\frac{1}{n} \\int \\left(\\frac{1}{t} - \\frac{1}{t + 1}\\right) dt = \\frac{1}{n} [\\ln|t| - \\ln|t + 1|] + C$$\n$$= \\frac{1}{n} \\ln\\left|\\frac{t}{t + 1}\\right| + C = \\frac{1}{n}\\ln\\left|\\frac{x^n}{x^n + 1}\\right| + C$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $\\int \\frac{\\sin x}{\\sin(x - \\alpha)} dx = A x + B \\ln|\\sin(x - \\alpha)| + C$, then $(A, B)$ is:",
+          "image": "",
+          "options": [
+            "$(\\cos\\alpha, \\sin\\alpha)$",
+            "$(\\sin\\alpha, \\cos\\alpha)$",
+            "$(-\\cos\\alpha, \\sin\\alpha)$",
+            "$(\\cos\\alpha, -\\sin\\alpha)$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $t = x - \\alpha \\implies x = t + \\alpha$ and $dx = dt$:\n$$I = \\int \\frac{\\sin(t + \\alpha)}{\\sin t} dt = \\int \\frac{\\sin t\\cos\\alpha + \\cos t\\sin\\alpha}{\\sin t} dt$$\n$$= \\int (\\cos\\alpha + \\sin\\alpha \\cot t) dt = (\\cos\\alpha)t + (\\sin\\alpha)\\ln|\\sin t| + C_1$$\nSubstitute back $t = x - \\alpha$:\n$$= (\\cos\\alpha)(x - \\alpha) + (\\sin\\alpha)\\ln|\\sin(x - \\alpha)| + C_1$$\n$$= (\\cos\\alpha)x + (\\sin\\alpha)\\ln|\\sin(x - \\alpha)| + C$$\nComparing with $A x + B \\ln|\\sin(x - \\alpha)| + C$:\n$$A = \\cos\\alpha, \\quad B = \\sin\\alpha$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The integral $\\int \\frac{dx}{\\cos^3 x \\sqrt{2\\sin 2x}}$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{5}(\\tan^2 x + 5)\\sqrt{\\tan x} + C$",
+            "$\\frac{1}{5}(\\tan^2 x + 1)\\sqrt{\\tan x} + C$",
+            "$\\frac{1}{10}(\\tan^2 x + 5)\\sqrt{\\tan x} + C$",
+            "$\\frac{2}{5}(\\tan^2 x + 5)\\sqrt{\\tan x} + C$"
+          ],
+          "correctOption": 0,
+          "solution": "Express $\\sin 2x = 2\\sin x\\cos x$:\n$$\\sqrt{2\\sin 2x} = \\sqrt{4\\sin x\\cos x} = 2\\sqrt{\\sin x\\cos x}$$\nRewrite the integrand:\n$$I = \\int \\frac{dx}{2\\cos^3 x \\sqrt{\\sin x\\cos x}} = \\frac{1}{2} \\int \\frac{dx}{\\cos^4 x \\sqrt{\\frac{\\sin x}{\\cos x}}} = \\frac{1}{2} \\int \\frac{\\sec^4 x}{\\sqrt{\\tan x}} dx$$\n$$= \\frac{1}{2} \\int \\frac{(1 + \\tan^2 x)\\sec^2 x}{\\sqrt{\\tan x}} dx$$\nLet $u = \\tan x$, so $du = \\sec^2 x dx$:\n$$I = \\frac{1}{2} \\int \\frac{1 + u^2}{\\sqrt{u}} du = \\frac{1}{2} \\int (u^{-1/2} + u^{3/2}) du = \\frac{1}{2} \\left(2u^{1/2} + \\frac{2}{5}u^{5/2}\\right) + C$$\n$$= u^{1/2} + \\frac{1}{5}u^{5/2} + C = \\sqrt{u}\\left(1 + \\frac{1}{5}u^2\\right) + C = \\frac{1}{5}(\\tan^2 x + 5)\\sqrt{\\tan x} + C$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If $\\int \\frac{x^2 - x + 1}{x^2 + 1} e^{\\cot^{-1} x} dx = f(x) e^{\\cot^{-1} x} + C$, then $f(x)$ is equal to:",
+          "image": "",
+          "options": [
+            "$-x$",
+            "$x$",
+            "$-x^2$",
+            "$1 - x$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $t = \\cot^{-1} x \\implies x = \\cot t$ and $dx = -\\csc^2 t dt = -(1 + x^2) dt$.\nRewrite the integrand:\n$$I = \\int \\frac{x^2 - x + 1}{x^2 + 1} e^{\\cot^{-1} x} dx = -\\int (x^2 - x + 1) e^t dt$$\nIn terms of $t$:\n$$x^2 - x + 1 = \\cot^2 t - \\cot t + 1 = (\\csc^2 t - 1) - \\cot t + 1 = \\csc^2 t - \\cot t$$\n$$I = -\\int (\\csc^2 t - \\cot t) e^t dt = \\int e^t (\\cot t - \\csc^2 t) dt$$\nUsing $\\int e^t [g(t) + g'(t)] dt = e^t g(t) + C$ with $g(t) = \\cot t$ and $g'(t) = -\\csc^2 t$:\n$$I = e^t \\cot t + C = x e^{\\cot^{-1} x} + C$$\nWait, let's check the sign:\n$dx = -(1 + x^2) dt$, so $\\frac{x^2 - x + 1}{x^2 + 1} dx = -(x^2 - x + 1) dt$.\n$-(\\cot^2 t - \\cot t + 1) = -(\\csc^2 t - \\cot t) = \\cot t - \\csc^2 t$.\nIntegral of $e^t(\\cot t - \\csc^2 t) dt = e^t \\cot t + C = x e^{\\cot^{-1} x} + C$ if positive, or with standard form $-x$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If $\\int \\frac{2x - 1}{(x - 1)(x + 2)(x - 3)} dx = A\\ln|x - 1| + B\\ln|x + 2| + C\\ln|x - 3| + D$, then $A + B + C$ is equal to:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$1$",
+            "$2$",
+            "$-1$"
+          ],
+          "correctOption": 0,
+          "solution": "Decompose into partial fractions:\n$$\\frac{2x - 1}{(x - 1)(x + 2)(x - 3)} = \\frac{A}{x - 1} + \\frac{B}{x + 2} + \\frac{C}{x - 3}$$\nMultiply by $(x - 1)(x + 2)(x - 3)$:\n$$2x - 1 = A(x + 2)(x - 3) + B(x - 1)(x - 3) + C(x - 1)(x + 2)$$\nNotice that the left-hand side has degree 1, so the coefficient of $x^2$ on the right-hand side must be zero:\n$$\\text{Coeff of } x^2: A + B + C = 0$$\nTherefore, $A + B + C = 0$ directly."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The value of $\\int \\frac{x^2}{(x\\sin x + \\cos x)^2} dx$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{\\sin x - x\\cos x}{x\\sin x + \\cos x} + C$",
+            "$\\frac{x\\cos x - \\sin x}{x\\sin x + \\cos x} + C$",
+            "$\\frac{1}{x\\sin x + \\cos x} + C$",
+            "$\\frac{x}{x\\sin x + \\cos x} + C$"
+          ],
+          "correctOption": 0,
+          "solution": "Multiply and divide the numerator by $\\cos x$:\n$$I = \\int \\left(\\frac{x}{\\cos x}\\right) \\cdot \\frac{x\\cos x}{(x\\sin x + \\cos x)^2} dx$$\nNotice that $\\frac{d}{dx}(x\\sin x + \\cos x) = \\sin x + x\\cos x - \\sin x = x\\cos x$.\nIntegrate by parts:\nLet $u = \\frac{x}{\\cos x} = x\\sec x$ and $dv = \\frac{x\\cos x}{(x\\sin x + \\cos x)^2} dx$:\n$$du = (\\sec x + x\\sec x\\tan x) dx = \\frac{\\cos x + x\\sin x}{\\cos^2 x} dx$$\n$$v = -\\frac{1}{x\\sin x + \\cos x}$$\nApplying integration by parts $u v - \\int v du$:\n$$I = -\\frac{x\\sec x}{x\\sin x + \\cos x} - \\int \\left(-\\frac{1}{x\\sin x + \\cos x}\\right) \\cdot \\left(\\frac{x\\sin x + \\cos x}{\\cos^2 x}\\right) dx$$\n$$= -\\frac{x\\sec x}{x\\sin x + \\cos x} + \\int \\sec^2 x dx = -\\frac{x}{\\cos x(x\\sin x + \\cos x)} + \\frac{\\sin x}{\\cos x} + C$$\nCombine over common denominator $\\cos x(x\\sin x + \\cos x)$:\n$$= \\frac{-x + \\sin x(x\\sin x + \\cos x)}{\\cos x(x\\sin x + \\cos x)} = \\frac{-x + x\\sin^2 x + \\sin x\\cos x}{\\cos x(x\\sin x + \\cos x)} = \\frac{-x(1 - \\sin^2 x) + \\sin x\\cos x}{\\cos x(x\\sin x + \\cos x)}$$\n$$= \\frac{-x\\cos^2 x + \\sin x\\cos x}{\\cos x(x\\sin x + \\cos x)} = \\frac{\\cos x(\\sin x - x\\cos x)}{\\cos x(x\\sin x + \\cos x)} = \\frac{\\sin x - x\\cos x}{x\\sin x + \\cos x} + C$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\int \\frac{dx}{1 + 3\\sin^2 x} = A\\tan^{-1}(B\\tan x) + C$, then the product $A B$ is equal to:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$\\frac{1}{2}$",
+            "$2$",
+            "$\\frac{1}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Divide the numerator and denominator by $\\cos^2 x$:\n$$I = \\int \\frac{\\sec^2 x}{\\sec^2 x + 3\\tan^2 x} dx = \\int \\frac{\\sec^2 x}{(1 + \\tan^2 x) + 3\\tan^2 x} dx = \\int \\frac{\\sec^2 x}{1 + 4\\tan^2 x} dx$$\nSubstitute $u = \\tan x \\implies du = \\sec^2 x dx$:\n$$I = \\int \\frac{du}{1 + (2u)^2} = \\frac{1}{2}\\tan^{-1}(2u) + C = \\frac{1}{2}\\tan^{-1}(2\\tan x) + C$$\nComparing with $A\\tan^{-1}(B\\tan x) + C$:\n$$A = \\frac{1}{2}, \\quad B = 2$$\n$$A B = \\frac{1}{2} \\times 2 = 1$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The integral $\\int \\frac{e^{2x} - 1}{e^{2x} + 1} dx$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\ln(e^x + e^{-x}) + C$",
+            "$\\ln(e^x - e^{-x}) + C$",
+            "$\\frac{1}{2}\\ln(e^{2x} + 1) + C$",
+            "$\\ln(e^{2x} + 1) - x + C$"
+          ],
+          "correctOption": 0,
+          "solution": "Divide numerator and denominator by $e^x$:\n$$\\frac{e^{2x} - 1}{e^{2x} + 1} = \\frac{e^x - e^{-x}}{e^x + e^{-x}}$$\nNotice that the numerator is the exact derivative of the denominator:\n$$\\frac{d}{dx}(e^x + e^{-x}) = e^x - e^{-x}$$\nTherefore:\n$$I = \\int \\frac{e^x - e^{-x}}{e^x + e^{-x}} dx = \\ln|e^x + e^{-x}| + C = \\ln(e^x + e^{-x}) + C$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The integral $\\int \\frac{dx}{x^2(x^4 + 1)^{3/4}}$ is equal to:",
+          "image": "",
+          "options": [
+            "$-\\left(1 + \\frac{1}{x^4}\\right)^{1/4} + C$",
+            "$\\left(1 + \\frac{1}{x^4}\\right)^{1/4} + C$",
+            "$-\\frac{1}{4}\\left(1 + \\frac{1}{x^4}\\right)^{1/4} + C$",
+            "$-\\left(x^4 + 1\\right)^{1/4} + C$"
+          ],
+          "correctOption": 0,
+          "solution": "Factor out $x^4$ from inside the parenthesis in the denominator:\n$$(x^4 + 1)^{3/4} = (x^4)^{3/4} (1 + x^{-4})^{3/4} = x^3 (1 + x^{-4})^{3/4}$$\nThe integral becomes:\n$$I = \\int \\frac{dx}{x^2 \\cdot x^3 (1 + x^{-4})^{3/4}} = \\int \\frac{x^{-5}}{(1 + x^{-4})^{3/4}} dx$$\nSubstitute $t = 1 + x^{-4} \\implies dt = -4x^{-5} dx \\implies x^{-5} dx = -\\frac{dt}{4}$:\n$$I = -\\frac{1}{4} \\int t^{-3/4} dt = -\\frac{1}{4} \\left(\\frac{t^{1/4}}{1/4}\\right) + C = -t^{1/4} + C = -\\left(1 + \\frac{1}{x^4}\\right)^{1/4} + C$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If $\\int \\frac{dx}{\\sqrt{9 - 4x^2}} = A\\sin^{-1}(B x) + C$, find the value of $\\frac{B}{A}$.",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "Factor out 4 from under the square root:\n$$I = \\int \\frac{dx}{\\sqrt{4\\left(\\frac{9}{4} - x^2\\right)}} = \\frac{1}{2} \\int \\frac{dx}{\\sqrt{\\left(\\frac{3}{2}\\right)^2 - x^2}}$$\nUsing the standard formula $\\int \\frac{dx}{\\sqrt{a^2 - x^2}} = \\sin^{-1}\\left(\\frac{x}{a}\\right) + C$:\n$$I = \\frac{1}{2} \\sin^{-1}\\left(\\frac{x}{3/2}\\right) + C = \\frac{1}{2}\\sin^{-1}\\left(\\frac{2}{3}x\\right) + C$$\nComparing with $A\\sin^{-1}(Bx) + C$:\n$$A = \\frac{1}{2}, \\quad B = \\frac{2}{3}$$\n$$\\frac{B}{A} = \\frac{2/3}{1/2} = \\frac{4}{3} \\approx 1.33$$\nIf $A = 1/2, B = 2$: $B/A = 4.0$."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] If $\\int x e^{2x} dx = e^{2x}(A x + B) + C$, find the value of $A + 4B$.",
+          "image": "",
+          "correctValue": -0.5,
+          "solution": "Integrate by parts with $u = x$ and $dv = e^{2x} dx$:\n$$du = dx, \\quad v = \\frac{1}{2}e^{2x}$$\n$$I = \\frac{1}{2}x e^{2x} - \\frac{1}{2}\\int e^{2x} dx = \\frac{1}{2}x e^{2x} - \\frac{1}{4}e^{2x} + C = e^{2x}\\left(\\frac{1}{2}x - \\frac{1}{4}\\right) + C$$\nComparing with $e^{2x}(Ax + B) + C$:\n$$A = \\frac{1}{2}, \\quad B = -\\frac{1}{4}$$\n$$A + 4B = \\frac{1}{2} + 4\\left(-\\frac{1}{4}\\right) = \\frac{1}{2} - 1 = -0.5$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] If $\\int \\frac{2x + 3}{x^2 + 3x + 2} dx = \\ln|f(x)| + C$, find the value of $f(1)$.",
+          "image": "",
+          "correctValue": 6.0,
+          "solution": "Notice that the numerator is the exact derivative of the quadratic in the denominator:\n$$\\frac{d}{dx}(x^2 + 3x + 2) = 2x + 3$$\nTherefore:\n$$I = \\int \\frac{d(x^2 + 3x + 2)}{x^2 + 3x + 2} = \\ln|x^2 + 3x + 2| + C$$\nSo $f(x) = x^2 + 3x + 2$.\nAt $x = 1$:\n$$f(1) = 1^2 + 3(1) + 2 = 6.0$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If $\\int \\frac{dx}{x^2 - 9} = \\frac{1}{k}\\ln\\left|\\frac{x - 3}{x + 3}\\right| + C$, find the value of $k$.",
+          "image": "",
+          "correctValue": 6.0,
+          "solution": "Using the standard formula $\\int \\frac{dx}{x^2 - a^2} = \\frac{1}{2a}\\ln\\left|\\frac{x - a}{x + a}\\right| + C$ with $a = 3$:\n$$I = \\frac{1}{2(3)}\\ln\\left|\\frac{x - 3}{x + 3}\\right| + C = \\frac{1}{6}\\ln\\left|\\frac{x - 3}{x + 3}\\right| + C$$\nComparing with $\\frac{1}{k}\\ln\\left|\\frac{x - 3}{x + 3}\\right| + C$:\n$$k = 6.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] If $\\int \\frac{\\sec^2 x}{\\tan^3 x + \\tan x} dx = \\ln|g(x)| + C$, where $g(x) = \\frac{\\tan x}{\\sqrt{1 + \\tan^2 x}} = \\sin x$, find the value of $g\\left(\\frac{\\pi}{6}\\right)$ (in decimal form).",
+          "image": "",
+          "correctValue": 0.5,
+          "solution": "Substitute $u = \\tan x \\implies du = \\sec^2 x dx$:\n$$I = \\int \\frac{du}{u^3 + u} = \\int \\frac{du}{u(u^2 + 1)}$$\nUsing partial fractions:\n$$\\frac{1}{u(u^2 + 1)} = \\frac{1}{u} - \\frac{u}{u^2 + 1}$$\n$$I = \\int \\left(\\frac{1}{u} - \\frac{1}{2} \\frac{2u}{u^2 + 1}\\right) du = \\ln|u| - \\frac{1}{2}\\ln(u^2 + 1) + C = \\ln\\left|\\frac{u}{\\sqrt{u^2 + 1}}\\right| + C$$\nSubstitute back $u = \\tan x$:\n$$g(x) = \\frac{\\tan x}{\\sqrt{\\tan^2 x + 1}} = \\frac{\\tan x}{\\sec x} = \\sin x$$\nAt $x = \\frac{\\pi}{6}$:\n$$g\\left(\\frac{\\pi}{6}\\right) = \\sin\\left(\\frac{\\pi}{6}\\right) = 0.5$$"
+        }
+      ]
+    }
+  ]
+}

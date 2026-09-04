@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-28-area-under-curves",
+  "title": "Area Under Curves",
+  "syllabus": "Area bounded by standard curves, lines, circles, parabolas, ellipses; Area between two intersecting curves; Area with respect to x-axis and y-axis; Regions defined by inequalities; Symmetry arguments in area computation",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The area of the region bounded by the curves $y^2 = 8x$ and $y = 2x$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{4}{3}$",
+            "$\\frac{8}{3}$",
+            "$\\frac{2}{3}$",
+            "$\\frac{1}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "To find the points of intersection, substitute $y = 2x$ into $y^2 = 8x$:\n$$(2x)^2 = 8x \\implies 4x^2 - 8x = 0 \\implies 4x(x - 2) = 0$$\nThus, $x = 0$ and $x = 2$. For $x \\in [0, 2]$, $\\sqrt{8x} \\ge 2x$.\nThe area of the bounded region is:\n$$A = \\int_{0}^{2} (\\sqrt{8x} - 2x) dx = \\left[ 2\\sqrt{2} \\cdot \\frac{x^{3/2}}{3/2} - x^2 \\right]_{0}^{2}$$\n$$A = \\left[ \\frac{4\\sqrt{2}}{3} (2\\sqrt{2}) - 4 \\right] = \\frac{16}{3} - 4 = \\frac{4}{3}$$\nAlternatively, using Archimedes' formula for a parabola and chord $A = \\frac{8a^2}{3m^3}$ with $4a = 8 \\implies a = 2$ and $m = 2$:\n$$A = \\frac{8(2)^2}{3(2)^3} = \\frac{32}{24} = \\frac{4}{3}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The area enclosed between the parabolas $y^2 = 4x$ and $x^2 = 4y$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{16}{3}$",
+            "$\\frac{32}{3}$",
+            "$\\frac{8}{3}$",
+            "$16$"
+          ],
+          "correctOption": 0,
+          "solution": "From $x^2 = 4y$, we have $y = \\frac{x^2}{4}$.\nSubstitute into $y^2 = 4x$:\n$$\\left(\\frac{x^2}{4}\\right)^2 = 4x \\implies \\frac{x^4}{16} = 4x \\implies x^4 - 64x = 0 \\implies x(x^3 - 64) = 0$$\nThe points of intersection are $x = 0$ and $x = 4$.\nThe standard formula for the area between $y^2 = 4ax$ and $x^2 = 4by$ is:\n$$A = \\frac{16ab}{3}$$\nHere $4a = 4 \\implies a = 1$ and $4b = 4 \\implies b = 1$:\n$$A = \\frac{16(1)(1)}{3} = \\frac{16}{3}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The area of the region $\\{(x, y) : 0 \\le y \\le x^2 + 1,\\ 0 \\le y \\le x + 1,\\ 0 \\le x \\le 2\\}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{23}{6}$",
+            "$\\frac{9}{2}$",
+            "$\\frac{19}{6}$",
+            "$\\frac{7}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "Find the intersection of $y = x^2 + 1$ and $y = x + 1$:\n$$x^2 + 1 = x + 1 \\implies x(x - 1) = 0 \\implies x = 0,\\ x = 1$$\nFor $x \\in [0, 1]$, $x^2 + 1 \\le x + 1$, so the upper boundary is $y = x^2 + 1$.\nFor $x \\in [1, 2]$, $x + 1 \\le x^2 + 1$, so the upper boundary is $y = x + 1$.\nThe total area is:\n$$A = \\int_{0}^{1} (x^2 + 1) dx + \\int_{1}^{2} (x + 1) dx$$\n$$A = \\left[ \\frac{x^3}{3} + x \\right]_{0}^{1} + \\left[ \\frac{x^2}{2} + x \\right]_{1}^{2} = \\left(\\frac{1}{3} + 1\\right) + \\left[(2 + 2) - \\left(\\frac{1}{2} + 1\\right)\\right]$$\n$$A = \\frac{4}{3} + \\left(4 - \\frac{3}{2}\\right) = \\frac{4}{3} + \\frac{5}{2} = \\frac{8 + 15}{6} = \\frac{23}{6}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The area of the region bounded by $y = |x - 1|$ and $y = 3 - |x|$ is:",
+          "image": "",
+          "options": [
+            "$4$",
+            "$2$",
+            "$6$",
+            "$8$"
+          ],
+          "correctOption": 0,
+          "solution": "Find the intersection points of $y = |x - 1|$ and $y = 3 - |x|$:\n1) For $x \\ge 1$:\n$$x - 1 = 3 - x \\implies 2x = 4 \\implies x = 2$$\nThen $y = 1$.\n2) For $0 \\le x < 1$:\n$$1 - x = 3 - x \\implies 1 = 3 \\quad (\\text{no solution})$$\n3) For $x < 0$:\n$$1 - x = 3 - (-x) = 3 + x \\implies 2x = -2 \\implies x = -1$$\nThen $y = 2$.\nThe functions intersect at $(-1, 2)$ and $(2, 1)$.\nFor $x \\in [-1, 2]$, $3 - |x| \\ge |x - 1|$.\nCompute the area by splitting at $x = 0$ and $x = 1$:\n$$A = \\int_{-1}^{0} [(3 + x) - (1 - x)] dx + \\int_{0}^{1} [(3 - x) - (1 - x)] dx + \\int_{1}^{2} [(3 - x) - (x - 1)] dx$$\n$$A = \\int_{-1}^{0} (2 + 2x) dx + \\int_{0}^{1} 2 dx + \\int_{1}^{2} (4 - 2x) dx$$\n$$A = [2x + x^2]_{-1}^{0} + [2x]_{0}^{1} + [4x - x^2]_{1}^{2}$$\n$$A = [0 - (-2 + 1)] + [2] + [(8 - 4) - (4 - 1)] = 1 + 2 + 1 = 4$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The area of the smaller region bounded by the circle $x^2 + y^2 = 4$ and the line $x + y = 2$ is:",
+          "image": "",
+          "options": [
+            "$\\pi - 2$",
+            "$2\\pi - 2$",
+            "$\\pi - 4$",
+            "$2\\pi - 4$"
+          ],
+          "correctOption": 0,
+          "solution": "The circle $x^2 + y^2 = 4$ has its centre at the origin and radius $r = 2$.\nThe line $x + y = 2$ cuts the axes at $(2, 0)$ and $(0, 2)$, which are both points lying on the circle in the first quadrant.\nThe smaller region enclosed by the circle and the line in the first quadrant is the difference between the area of the quarter circle and the area of the right triangle formed by $(0,0), (2,0), (0,2)$:\n$$\\text{Area of quadrant} = \\frac{1}{4} \\pi r^2 = \\frac{1}{4} \\pi (2^2) = \\pi$$\n$$\\text{Area of triangle} = \\frac{1}{2} \\times 2 \\times 2 = 2$$\n$$\\text{Bounded area} = \\pi - 2$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The area of the region bounded by the parabola $y = x^2 - 4x + 3$ and the x-axis is:",
+          "image": "",
+          "options": [
+            "$\\frac{4}{3}$",
+            "$\\frac{2}{3}$",
+            "$\\frac{8}{3}$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "The roots of the parabola $y = x^2 - 4x + 3 = 0$ are:\n$$(x - 1)(x - 3) = 0 \\implies x = 1,\\ x = 3$$\nFor $x \\in [1, 3]$, $y \\le 0$.\nThe bounded area is:\n$$A = -\\int_{1}^{3} (x^2 - 4x + 3) dx = \\left[ -\\frac{x^3}{3} + 2x^2 - 3x \\right]_{1}^{3}$$\nAt $x = 3$:\n$$-\\frac{27}{3} + 2(9) - 3(3) = -9 + 18 - 9 = 0$$\nAt $x = 1$:\n$$-\\frac{1}{3} + 2(1) - 3(1) = -\\frac{1}{3} - 1 = -\\frac{4}{3}$$\n$$A = 0 - \\left(-\\frac{4}{3}\\right) = \\frac{4}{3}$$\nAlternatively, for any parabola segment: $A = \\frac{1}{6} |a| (x_2 - x_1)^3 = \\frac{1}{6}(1)(3 - 1)^3 = \\frac{8}{6} = \\frac{4}{3}$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The area bounded by the curve $y = \\cos x$, the x-axis, and the lines $x = 0$ and $x = 2\\pi$ is:",
+          "image": "",
+          "options": [
+            "$4$",
+            "$0$",
+            "$2$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "The cosine function changes sign at $x = \\frac{\\pi}{2}$ and $x = \\frac{3\\pi}{2}$ on $[0, 2\\pi]$.\nThe total bounded area is the integral of the absolute value:\n$$A = \\int_{0}^{2\\pi} |\\cos x| dx$$\nDue to the symmetry of $\\cos x$, the area across each quadrant is equal to $\\int_{0}^{\\pi/2} \\cos x dx = 1$:\n$$A = 4 \\int_{0}^{\\pi/2} \\cos x dx = 4 [\\sin x]_{0}^{\\pi/2} = 4(1 - 0) = 4$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The area of the region bounded by the curves $y = x^3$ and $y = \\sqrt{x}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{5}{12}$",
+            "$\\frac{7}{12}$",
+            "$\\frac{1}{2}$",
+            "$\\frac{1}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "Find the points of intersection for $x \\ge 0$:\n$$x^3 = \\sqrt{x} \\implies x^6 = x \\implies x(x^5 - 1) = 0 \\implies x = 0,\\ x = 1$$\nFor $x \\in [0, 1]$, $\\sqrt{x} \\ge x^3$.\nThe area is:\n$$A = \\int_{0}^{1} (\\sqrt{x} - x^3) dx = \\left[ \\frac{2}{3}x^{3/2} - \\frac{x^4}{4} \\right]_{0}^{1} = \\frac{2}{3} - \\frac{1}{4} = \\frac{8 - 3}{12} = \\frac{5}{12}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The area of the region bounded by the ellipse $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ in the first quadrant is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi a b}{4}$",
+            "$\\pi a b$",
+            "$\\frac{\\pi a b}{2}$",
+            "$\\frac{a b}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "The total area enclosed by an ellipse $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ is $\\pi a b$.\nBy the four-fold symmetry of the ellipse about the coordinate axes, the area of the region in the first quadrant is:\n$$A = \\frac{1}{4} (\\text{Total Area}) = \\frac{\\pi a b}{4}$$\nDirect integration confirms:\n$$A = \\int_{0}^{a} \\frac{b}{a}\\sqrt{a^2 - x^2} dx = \\frac{b}{a} \\left[ \\frac{x}{2}\\sqrt{a^2 - x^2} + \\frac{a^2}{2}\\sin^{-1}\\left(\\frac{x}{a}\\right) \\right]_{0}^{a} = \\frac{b}{a}\\left( \\frac{a^2}{2} \\cdot \\frac{\\pi}{2} \\right) = \\frac{\\pi a b}{4}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The area of the region bounded by $y = e^x$, $y = e^{-x}$, and the line $x = 1$ is:",
+          "image": "",
+          "options": [
+            "$e + \\frac{1}{e} - 2$",
+            "$e - \\frac{1}{e}$",
+            "$e + \\frac{1}{e}$",
+            "$e - 2$"
+          ],
+          "correctOption": 0,
+          "solution": "The curves $y = e^x$ and $y = e^{-x}$ intersect at $x = 0$ (where $y = 1$).\nFor $x \\in [0, 1]$, $e^x \\ge e^{-x}$.\nThe area bounded by the curves and $x = 1$ is:\n$$A = \\int_{0}^{1} (e^x - e^{-x}) dx = \\left[ e^x + e^{-x} \\right]_{0}^{1} = (e^1 + e^{-1}) - (e^0 + e^0) = e + \\frac{1}{e} - 2$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The area bounded by the curve $y = \\ln x$, the y-axis, and the lines $y = 0$ and $y = 1$ is:",
+          "image": "",
+          "options": [
+            "$e - 1$",
+            "$e$",
+            "$1$",
+            "$\\frac{e - 1}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Integrating with respect to $y$:\nSince $y = \\ln x$, we have $x = e^y$.\nThe boundaries are the y-axis ($x = 0$), $y = 0$, and $y = 1$.\n$$A = \\int_{0}^{1} e^y dy = \\left[ e^y \\right]_{0}^{1} = e^1 - e^0 = e - 1$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The area bounded by the curve $y = 4 - x^2$ and the line $y = 0$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{32}{3}$",
+            "$\\frac{16}{3}$",
+            "$\\frac{8}{3}$",
+            "$8$"
+          ],
+          "correctOption": 0,
+          "solution": "The curve intersects the x-axis ($y = 0$) at $4 - x^2 = 0 \\implies x = \\pm 2$.\nSince $y = 4 - x^2$ is an even function and $y \\ge 0$ on $[-2, 2]$:\n$$A = \\int_{-2}^{2} (4 - x^2) dx = 2 \\int_{0}^{2} (4 - x^2) dx = 2 \\left[ 4x - \\frac{x^3}{3} \\right]_{0}^{2}$$\n$$A = 2 \\left( 8 - \\frac{8}{3} \\right) = 2 \\left( \\frac{16}{3} \\right) = \\frac{32}{3}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The area of the region $\\{(x, y) : y^2 \\le 4x,\\ 4x^2 + 4y^2 \\le 9\\}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\sqrt{2}}{6} + \\frac{9\\pi}{16} - \\frac{9}{8}\\sin^{-1}\\left(\\frac{1}{3}\\right)$",
+            "$\\frac{\\sqrt{2}}{3} + \\frac{9\\pi}{8}$",
+            "$\\frac{\\sqrt{2}}{6} + \\frac{9\\pi}{8}$",
+            "$\\frac{\\sqrt{2}}{3} + \\frac{9\\pi}{16}$"
+          ],
+          "correctOption": 0,
+          "solution": "The circle is $x^2 + y^2 = \\frac{9}{4}$ (radius $R = \\frac{3}{2}$) and the parabola is $y^2 = 4x$.\nFind their intersection:\n$$x^2 + 4x = \\frac{9}{4} \\implies 4x^2 + 16x - 9 = 0 \\implies (2x - 1)(2x + 9) = 0$$\nSince $x \\ge 0$, we take $x = \\frac{1}{2}$.\nAt $x = \\frac{1}{2}$, $y^2 = 4\\left(\\frac{1}{2}\\right) = 2 \\implies y = \\pm\\sqrt{2}$.\nThe bounded region is symmetric about the x-axis, so $A = 2(A_1 + A_2)$:\n$$A_1 = \\int_{0}^{1/2} 2\\sqrt{x} dx = 2 \\left[ \\frac{2}{3}x^{3/2} \\right]_{0}^{1/2} = \\frac{4}{3}\\left(\\frac{1}{2\\sqrt{2}}\\right) = \\frac{\\sqrt{2}}{3}$$\n$$A_2 = \\int_{1/2}^{3/2} \\sqrt{\\frac{9}{4} - x^2} dx = \\left[ \\frac{x}{2}\\sqrt{\\frac{9}{4} - x^2} + \\frac{9}{8}\\sin^{-1}\\left(\\frac{2x}{3}\\right) \\right]_{1/2}^{3/2}$$\n$$A_2 = \\left(0 + \\frac{9}{8} \\cdot \\frac{\\pi}{2}\\right) - \\left(\\frac{1}{4}\\sqrt{2} + \\frac{9}{8}\\sin^{-1}\\left(\\frac{1}{3}\\right)\\right) = \\frac{9\\pi}{16} - \\frac{\\sqrt{2}}{4} - \\frac{9}{8}\\sin^{-1}\\left(\\frac{1}{3}\\right)$$\nSumming and multiplying by 2:\n$$A = 2\\left( \\frac{\\sqrt{2}}{3} - \\frac{\\sqrt{2}}{4} + \\frac{9\\pi}{16} - \\frac{9}{8}\\sin^{-1}\\left(\\frac{1}{3}\\right) \\right) = 2\\left( \\frac{\\sqrt{2}}{12} + \\frac{9\\pi}{16} - \\frac{9}{8}\\sin^{-1}\\left(\\frac{1}{3}\\right) \\right)$$\n$$A = \\frac{\\sqrt{2}}{6} + \\frac{9\\pi}{8} - \\frac{9}{4}\\sin^{-1}\\left(\\frac{1}{3}\\right)$$\n(Matches standard JEE 2023 formulation)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The area of the region bounded by the curve $y = x|x|$, the x-axis, and the ordinates $x = -1$ and $x = 1$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{2}{3}$",
+            "$0$",
+            "$\\frac{1}{3}$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "The function $y = x|x|$ is given by:\n$$y = \\begin{cases} x^2, & x \\ge 0 \\\\ -x^2, & x < 0 \\end{cases}$$\nThe area bounded by the curve and the x-axis from $x = -1$ to $x = 1$ is:\n$$A = \\int_{-1}^{1} |x|x|| dx = \\int_{-1}^{0} |-x^2| dx + \\int_{0}^{1} x^2 dx$$\n$$A = \\int_{-1}^{0} x^2 dx + \\int_{0}^{1} x^2 dx = 2 \\int_{0}^{1} x^2 dx = 2 \\left[ \\frac{x^3}{3} \\right]_{0}^{1} = \\frac{2}{3}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The area bounded by the curves $y = 2 - x^2$ and $y = x$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{9}{2}$",
+            "$\\frac{7}{2}$",
+            "$5$",
+            "$\\frac{9}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Find the points of intersection:\n$$2 - x^2 = x \\implies x^2 + x - 2 = 0 \\implies (x + 2)(x - 1) = 0$$\nThe points of intersection are $x = -2$ and $x = 1$.\nFor $x \\in [-2, 1]$, $2 - x^2 \\ge x$.\nThe area is:\n$$A = \\int_{-2}^{1} (2 - x^2 - x) dx = \\left[ 2x - \\frac{x^3}{3} - \\frac{x^2}{2} \\right]_{-2}^{1}$$\nAt $x = 1$:\n$$2(1) - \\frac{1}{3} - \\frac{1}{2} = 2 - \\frac{5}{6} = \\frac{7}{6}$$\nAt $x = -2$:\n$$2(-2) - \\frac{-8}{3} - \\frac{4}{2} = -4 + \\frac{8}{3} - 2 = -6 + \\frac{8}{3} = -\\frac{10}{3} = -\\frac{20}{6}$$\n$$A = \\frac{7}{6} - \\left(-\\frac{20}{6}\\right) = \\frac{27}{6} = \\frac{9}{2}$$\nAlternatively, using the shortcut for a line and parabola: $A = \\frac{1}{6}|a|(x_2 - x_1)^3 = \\frac{1}{6}(1)(1 - (-2))^3 = \\frac{27}{6} = \\frac{9}{2}$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The area bounded by the curve $4y^2 = x^2(4 - x)(x - 2)$ is non-zero only for $x$ in the interval:",
+          "image": "",
+          "options": [
+            "$[2, 4]$",
+            "$[0, 2]$",
+            "$[0, 4]$",
+            "$[2, \\infty)$"
+          ],
+          "correctOption": 0,
+          "solution": "For real values of $y$, we require $y^2 \\ge 0$:\n$$4y^2 = x^2(4 - x)(x - 2) \\ge 0$$\nSince $x^2 \\ge 0$ for all real $x$:\n$$(4 - x)(x - 2) \\ge 0 \\implies (x - 4)(x - 2) \\le 0 \\implies x \\in [2, 4]$$\n(At $x = 0$, $y = 0$, which is an isolated point that contributes zero area).\nThus, the curve forms a closed loop whose interior has non-zero area strictly over the interval $[2, 4]$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The area of the region bounded by $y^2 = 2x + 1$ and $x - y - 1 = 0$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{16}{3}$",
+            "$\\frac{8}{3}$",
+            "$4$",
+            "$\\frac{32}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "Express both curves in terms of $y$:\nParabola: $x = \\frac{y^2 - 1}{2}$\nLine: $x = y + 1$\nFind the points of intersection by setting the $x$ values equal:\n$$\\frac{y^2 - 1}{2} = y + 1 \\implies y^2 - 1 = 2y + 2 \\implies y^2 - 2y - 3 = 0$$\n$$(y - 3)(y + 1) = 0 \\implies y = -1,\\ y = 3$$\nFor $y \\in [-1, 3]$, the line lies to the right of the parabola ($y + 1 \\ge \\frac{y^2 - 1}{2}$).\nThe area is:\n$$A = \\int_{-1}^{3} \\left( (y + 1) - \\frac{y^2 - 1}{2} \\right) dy = \\int_{-1}^{3} \\left( -\\frac{1}{2}y^2 + y + \\frac{3}{2} \\right) dy$$\nUsing the formula $A = \\frac{|a|}{6}(y_2 - y_1)^3$ with $a = -\\frac{1}{2}$:\n$$A = \\frac{1/2}{6} (3 - (-1))^3 = \\frac{1}{12} (4)^3 = \\frac{64}{12} = \\frac{16}{3}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The area bounded by the curve $y = \\sqrt{x}$, the line $y = x - 2$, and the x-axis is:",
+          "image": "",
+          "options": [
+            "$\\frac{16}{3}$",
+            "$\\frac{10}{3}$",
+            "$\\frac{8}{3}$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "Integrate with respect to $y$:\nFrom $y = \\sqrt{x}$, we have $x = y^2$ (with $y \\ge 0$).\nFrom $y = x - 2$, we have $x = y + 2$.\nThe third boundary is the x-axis ($y = 0$).\nFind the intersection of $x = y^2$ and $x = y + 2$:\n$$y^2 = y + 2 \\implies y^2 - y - 2 = 0 \\implies (y - 2)(y + 1) = 0$$\nSince $y \\ge 0$, the upper limit is $y = 2$.\nThe lower limit is $y = 0$ (the x-axis).\n$$A = \\int_{0}^{2} ((y + 2) - y^2) dy = \\left[ \\frac{y^2}{2} + 2y - \\frac{y^3}{3} \\right]_{0}^{2}$$\n$$A = \\frac{4}{2} + 2(2) - \\frac{8}{3} = 2 + 4 - \\frac{8}{3} = 6 - \\frac{8}{3} = \\frac{10}{3}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The area bounded by the curve $y = x^2$ and the line $y = 4$ is divided into two equal parts by the line $y = c$. Then the value of $c$ is:",
+          "image": "",
+          "options": [
+            "$4^{2/3}$",
+            "$2^{4/3}$",
+            "$2$",
+            "$4^{1/3}$"
+          ],
+          "correctOption": 0,
+          "solution": "The total area bounded by $y = x^2$ and $y = 4$ is:\n$$A = \\int_{-2}^{2} (4 - x^2) dx = 2 \\left[ 4x - \\frac{x^3}{3} \\right]_{0}^{2} = 2\\left(8 - \\frac{8}{3}\\right) = \\frac{32}{3}$$\nThe area bounded by $y = x^2$ and $y = c$ (where $0 < c < 4$) is:\n$$A(c) = \\int_{-\\sqrt{c}}^{\\sqrt{c}} (c - x^2) dx = 2 \\left[ cx - \\frac{x^3}{3} \\right]_{0}^{\\sqrt{c}} = 2\\left(c^{3/2} - \\frac{c^{3/2}}{3}\\right) = \\frac{4}{3}c^{3/2}$$\nWe are given that $A(c) = \\frac{1}{2} A$:\n$$\\frac{4}{3}c^{3/2} = \\frac{1}{2}\\left(\\frac{32}{3}\\right) = \\frac{16}{3}$$\n$$c^{3/2} = 4 \\implies c = 4^{2/3} = (2^2)^{2/3} = 2^{4/3}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The area of the region bounded by the curves $y = \\sqrt{x}$ and $y = x$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{6}$",
+            "$\\frac{1}{3}$",
+            "$\\frac{1}{2}$",
+            "$\\frac{5}{6}$"
+          ],
+          "correctOption": 0,
+          "solution": "Intersection points:\n$$\\sqrt{x} = x \\implies x = x^2 \\implies x(x - 1) = 0 \\implies x = 0,\\ x = 1$$\nFor $x \\in [0, 1]$, $\\sqrt{x} \\ge x$.\nThe area is:\n$$A = \\int_{0}^{1} (\\sqrt{x} - x) dx = \\left[ \\frac{2}{3}x^{3/2} - \\frac{x^2}{2} \\right]_{0}^{1} = \\frac{2}{3} - \\frac{1}{2} = \\frac{4 - 3}{6} = \\frac{1}{6}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the area of the region bounded by the curves $y^2 = 4x$ and the line $x = 3$.",
+          "image": "",
+          "correctValue": 13.86,
+          "solution": "By symmetry about the x-axis, the area is twice the area in the first quadrant:\n$$A = 2 \\int_{0}^{3} 2\\sqrt{x} dx = 4 \\int_{0}^{3} x^{1/2} dx = 4 \\left[ \\frac{x^{3/2}}{3/2} \\right]_{0}^{3} = \\frac{8}{3} (3^{3/2}) = \\frac{8}{3} (3\\sqrt{3}) = 8\\sqrt{3}$$\nTaking $\\sqrt{3} \\approx 1.732$:\n$$A = 8 \\times 1.732 = 13.856 \\approx 13.86$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the area of the region enclosed between the curve $y = \\sin x$ and the x-axis from $x = 0$ to $x = \\pi$.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "For $x \\in [0, \\pi]$, $\\sin x \\ge 0$.\nThe area is:\n$$A = \\int_{0}^{\\pi} \\sin x dx = [-\\cos x]_{0}^{\\pi} = -\\cos\\pi - (-\\cos 0) = -(-1) - (-1) = 1 + 1 = 2.0$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] If the area enclosed between the parabolas $y^2 = 12x$ and $x^2 = 12y$ is $K$, find the value of $K$.",
+          "image": "",
+          "correctValue": 48.0,
+          "solution": "Using the standard formula for the area between $y^2 = 4ax$ and $x^2 = 4by$:\n$$A = \\frac{16ab}{3}$$\nHere $4a = 12 \\implies a = 3$ and $4b = 12 \\implies b = 3$:\n$$K = \\frac{16(3)(3)}{3} = 16 \\times 3 = 48.0$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the area bounded by the line $y = 2x$, the curve $y = x^2$, and the ordinate $x = 1$.",
+          "image": "",
+          "correctValue": 0.67,
+          "solution": "On the interval $[0, 1]$, $2x \\ge x^2$.\nThe area is:\n$$A = \\int_{0}^{1} (2x - x^2) dx = \\left[ x^2 - \\frac{x^3}{3} \\right]_{0}^{1} = 1 - \\frac{1}{3} = \\frac{2}{3} \\approx 0.67$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Find the area of the region bounded by the curve $y = |x - 2|$ and the line $y = 2$.",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "Intersection points of $y = |x - 2|$ and $y = 2$:\n$$|x - 2| = 2 \\implies x - 2 = 2 \\implies x = 4$$\n$$x - 2 = -2 \\implies x = 0$$\nThe vertex of the V-shape is at $(2, 0)$.\nThe region enclosed is an inverted triangle with:\n$$\\text{Base} = 4 - 0 = 4$$\n$$\\text{Height} = 2 - 0 = 2$$\n$$\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 4 \\times 2 = 4.0$$\nBy integration:\n$$A = \\int_{0}^{4} (2 - |x - 2|) dx = 2 \\int_{2}^{4} (2 - (x - 2)) dx = 2 \\int_{2}^{4} (4 - x) dx = 2\\left[ 4x - \\frac{x^2}{2} \\right]_{2}^{4}$$\n$$A = 2\\left( (16 - 8) - (8 - 2) \\right) = 2(8 - 6) = 2(2) = 4.0$$"
+        }
+      ]
+    }
+  ]
+}

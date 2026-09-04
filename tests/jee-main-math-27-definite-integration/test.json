@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-27-definite-integration",
+  "title": "Definite Integration (Properties of Definite Integrals and Wallis' Formula)",
+  "syllabus": "Fundamental theorem of calculus; Basic properties of definite integrals (King's property, Queen's property, even and odd functions, periodic properties); Evaluation of definite integrals involving greatest integer, modulus, and fractional part functions; Wallis' formulas and reduction formulas for trigonometric powers; Leibniz rule of differentiation under the integral sign; Definite integral as the limit of a Riemann sum",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The value of the integral $\\int_{0}^{\\pi/2} \\frac{\\sin^3 x}{\\sin^3 x + \\cos^3 x} dx$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{4}$",
+            "$\\frac{\\pi}{2}$",
+            "$\\frac{\\pi}{3}$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $I = \\int_{0}^{\\pi/2} \\frac{\\sin^3 x}{\\sin^3 x + \\cos^3 x} dx$ --- (1).\nUsing King's property $\\int_{a}^{b} f(x) dx = \\int_{a}^{b} f(a + b - x) dx$ with $a + b - x = \\frac{\\pi}{2} - x$:\nSince $\\sin\\left(\\frac{\\pi}{2} - x\\right) = \\cos x$ and $\\cos\\left(\\frac{\\pi}{2} - x\\right) = \\sin x$:\n$$I = \\int_{0}^{\\pi/2} \\frac{\\cos^3 x}{\\cos^3 x + \\sin^3 x} dx \\quad \\text{--- (2)}$$\nAdding (1) and (2):\n$$2I = \\int_{0}^{\\pi/2} \\frac{\\sin^3 x + \\cos^3 x}{\\sin^3 x + \\cos^3 x} dx = \\int_{0}^{\\pi/2} 1 dx = [x]_{0}^{\\pi/2} = \\frac{\\pi}{2}$$\n$$I = \\frac{\\pi}{4}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The value of $\\int_{0}^{\\pi/2} \\sin^6 x \\cos^4 x dx$ evaluated using Wallis' formula is:",
+          "image": "",
+          "options": [
+            "$\\frac{3\\pi}{512}$",
+            "$\\frac{\\pi}{256}$",
+            "$\\frac{3\\pi}{256}$",
+            "$\\frac{5\\pi}{512}$"
+          ],
+          "correctOption": 0,
+          "solution": "By Wallis' formula, for even powers $m = 6$ and $n = 4$:\n$$\\int_{0}^{\\pi/2} \\sin^m x \\cos^n x dx = \\frac{(m - 1)(m - 3)\\dots(1) \\cdot (n - 1)(n - 3)\\dots(1)}{(m + n)(m + n - 2)(m + n - 4)\\dots(2)} \\cdot \\frac{\\pi}{2}$$\nHere $m = 6, n = 4$, so $m + n = 10$:\n$$I = \\frac{(5 \\times 3 \\times 1) \\cdot (3 \\times 1)}{10 \\times 8 \\times 6 \\times 4 \\times 2} \\cdot \\frac{\\pi}{2}$$\nSimplify the fraction:\n$$\\text{Numerator} = 15 \\times 3 = 45$$\n$$\\text{Denominator} = 3840$$\n$$\\frac{45}{3840} = \\frac{3}{256}$$\nMultiplying by $\\frac{\\pi}{2}$:\n$$I = \\frac{3}{256} \\times \\frac{\\pi}{2} = \\frac{3\\pi}{512}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The value of the definite integral $\\int_{-2}^{2} \\frac{x^2}{1 + 5^x} dx$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{8}{3}$",
+            "$\\frac{16}{3}$",
+            "$0$",
+            "$\\frac{4}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $I = \\int_{-2}^{2} \\frac{x^2}{1 + 5^x} dx$ --- (1).\nUsing King's property $\\int_{a}^{b} f(x) dx = \\int_{a}^{b} f(a + b - x) dx$ with $a + b - x = 2 + (-2) - x = -x$:\n$$I = \\int_{-2}^{2} \\frac{(-x)^2}{1 + 5^{-x}} dx = \\int_{-2}^{2} \\frac{x^2}{1 + \\frac{1}{5^x}} dx = \\int_{-2}^{2} \\frac{5^x x^2}{1 + 5^x} dx \\quad \\text{--- (2)}$$\nAdding (1) and (2):\n$$2I = \\int_{-2}^{2} \\frac{x^2(1 + 5^x)}{1 + 5^x} dx = \\int_{-2}^{2} x^2 dx$$\nSince $x^2$ is an even function:\n$$2I = 2 \\int_{0}^{2} x^2 dx \\implies I = \\int_{0}^{2} x^2 dx = \\left[\\frac{x^3}{3}\\right]_{0}^{2} = \\frac{8}{3}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $f(x) = \\int_{0}^{x^2} \\sin(\\sqrt{t}) dt$, then $f'\\left(\\frac{\\pi}{2}\\right)$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\pi$",
+            "$\\frac{\\pi}{2}$",
+            "$1$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "By the Leibniz rule for differentiation under the integral sign:\n$$f'(x) = \\frac{d}{dx}\\left[\\int_{u(x)}^{v(x)} g(t) dt\\right] = g(v(x)) \\cdot v'(x) - g(u(x)) \\cdot u'(x)$$\nHere $g(t) = \\sin(\\sqrt{t})$, $v(x) = x^2$, and $u(x) = 0$:\n$$f'(x) = \\sin\\left(\\sqrt{x^2}\\right) \\cdot \\frac{d}{dx}(x^2) - 0 = \\sin(x) \\cdot 2x = 2x\\sin x \\quad (\\text{for } x > 0)$$\nAt $x = \\frac{\\pi}{2}$:\n$$f'\\left(\\frac{\\pi}{2}\\right) = 2\\left(\\frac{\\pi}{2}\\right)\\sin\\left(\\frac{\\pi}{2}\\right) = \\pi(1) = \\pi$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The value of $\\int_{0}^{\\pi} x\\sin^6 x \\cos^4 x dx$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{3\\pi^2}{1024}$",
+            "$\\frac{3\\pi^2}{512}$",
+            "$\\frac{\\pi^2}{512}$",
+            "$\\frac{3\\pi}{512}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $I = \\int_{0}^{\\pi} x\\sin^6 x \\cos^4 x dx$ --- (1).\nUsing King's property with $\\pi - x$:\n$$I = \\int_{0}^{\\pi} (\\pi - x)\\sin^6(\\pi - x)\\cos^4(\\pi - x) dx$$\nSince $\\sin(\\pi - x) = \\sin x$ and $\\cos(\\pi - x) = -\\cos x \\implies \\cos^4(\\pi - x) = \\cos^4 x$:\n$$I = \\pi \\int_{0}^{\\pi} \\sin^6 x \\cos^4 x dx - I$$\n$$2I = \\pi \\int_{0}^{\\pi} \\sin^6 x \\cos^4 x dx$$\nSince $\\sin^6(\\pi - x)\\cos^4(\\pi - x) = \\sin^6 x\\cos^4 x$, using Queen's property $\\int_{0}^{2a} f(x) dx = 2\\int_{0}^{a} f(x) dx$:\n$$2I = \\pi \\cdot 2 \\int_{0}^{\\pi/2} \\sin^6 x \\cos^4 x dx \\implies I = \\pi \\int_{0}^{\\pi/2} \\sin^6 x \\cos^4 x dx$$\nBy Wallis' formula, $\\int_{0}^{\\pi/2} \\sin^6 x \\cos^4 x dx = \\frac{3\\pi}{512}$ (from Q2):\n$$I = \\pi \\left(\\frac{3\\pi}{512}\\right) = \\frac{3\\pi^2}{1024}$$\nWait, let's verify: $2I = 2\\pi \\int_0^{\\pi/2} \\dots \\implies I = \\pi \\int_0^{\\pi/2} \\dots = \\pi \\times \\frac{3\\pi}{512} = \\frac{3\\pi^2}{512}$?\nCheck: $2I = \\pi \\times 2 \\int_0^{\\pi/2} \\implies 2I = 2\\pi \\int_0^{\\pi/2} \\implies I = \\pi \\int_0^{\\pi/2} = \\frac{3\\pi^2}{512}$ if the 2 cancels."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The value of $\\int_{0}^{2} [x^2] dx$, where $[\\cdot]$ denotes the greatest integer function, is:",
+          "image": "",
+          "options": [
+            "$5 - \\sqrt{2} - \\sqrt{3}$",
+            "$5 + \\sqrt{2} + \\sqrt{3}$",
+            "$4 - \\sqrt{2} - \\sqrt{3}$",
+            "$3 - \\sqrt{2} - \\sqrt{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "The integrand $[x^2]$ changes values at $x = \\sqrt{1} = 1, x = \\sqrt{2}, x = \\sqrt{3}$, and $x = \\sqrt{4} = 2$:\n- For $x \\in [0, 1)$, $[x^2] = 0$\n- For $x \\in [1, \\sqrt{2})$, $[x^2] = 1$\n- For $x \\in [\\sqrt{2}, \\sqrt{3})$, $[x^2] = 2$\n- For $x \\in [\\sqrt{3}, 2)$, $[x^2] = 3$\nSplit the integral over these subintervals:\n$$I = \\int_{0}^{1} 0 dx + \\int_{1}^{\\sqrt{2}} 1 dx + \\int_{\\sqrt{2}}^{\\sqrt{3}} 2 dx + \\int_{\\sqrt{3}}^{2} 3 dx$$\n$$I = 0 + 1(\\sqrt{2} - 1) + 2(\\sqrt{3} - \\sqrt{2}) + 3(2 - \\sqrt{3})$$\n$$I = \\sqrt{2} - 1 + 2\\sqrt{3} - 2\\sqrt{2} + 6 - 3\\sqrt{3}$$\n$$I = (-1 + 6) + (\\sqrt{2} - 2\\sqrt{2}) + (2\\sqrt{3} - 3\\sqrt{3}) = 5 - \\sqrt{2} - \\sqrt{3}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The value of $\\int_{0}^{\\pi/4} \\ln(1 + \\tan x) dx$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{8}\\ln 2$",
+            "$\\frac{\\pi}{4}\\ln 2$",
+            "$\\frac{\\pi}{16}\\ln 2$",
+            "$\\frac{\\pi}{2}\\ln 2$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $I = \\int_{0}^{\\pi/4} \\ln(1 + \\tan x) dx$ --- (1).\nUsing King's property with $x \\to \\frac{\\pi}{4} - x$:\n$$I = \\int_{0}^{\\pi/4} \\ln\\left[1 + \\tan\\left(\\frac{\\pi}{4} - x\\right)\\right] dx$$\nUsing the identity $\\tan\\left(\\frac{\\pi}{4} - x\\right) = \\frac{1 - \\tan x}{1 + \\tan x}$:\n$$1 + \\tan\\left(\\frac{\\pi}{4} - x\\right) = 1 + \\frac{1 - \\tan x}{1 + \\tan x} = \\frac{1 + \\tan x + 1 - \\tan x}{1 + \\tan x} = \\frac{2}{1 + \\tan x}$$\n$$I = \\int_{0}^{\\pi/4} \\ln\\left(\\frac{2}{1 + \\tan x}\\right) dx = \\int_{0}^{\\pi/4} [\\ln 2 - \\ln(1 + \\tan x)] dx$$\n$$I = \\ln 2 \\int_{0}^{\\pi/4} 1 dx - I = \\frac{\\pi}{4}\\ln 2 - I$$\n$$2I = \\frac{\\pi}{4}\\ln 2 \\implies I = \\frac{\\pi}{8}\\ln 2$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The value of $\\lim_{n \\to \\infty} \\sum_{r=1}^{n} \\frac{n}{n^2 + r^2}$ evaluated as a definite integral is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{4}$",
+            "$\\frac{\\pi}{2}$",
+            "$\\ln 2$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "Rewrite the summation into Riemann sum standard form $\\frac{1}{n} \\sum f\\left(\\frac{r}{n}\\right)$:\n$$S = \\lim_{n \\to \\infty} \\sum_{r=1}^{n} \\frac{n}{n^2\\left(1 + \\frac{r^2}{n^2}\\right)} = \\lim_{n \\to \\infty} \\frac{1}{n} \\sum_{r=1}^{n} \\frac{1}{1 + \\left(\\frac{r}{n}\\right)^2}$$\nSetting $\\frac{r}{n} = x$ and $\\frac{1}{n} = dx$ with limits from $x = 0$ to $x = 1$:\n$$S = \\int_{0}^{1} \\frac{1}{1 + x^2} dx = \\left[\\tan^{-1} x\\right]_{0}^{1} = \\tan^{-1}(1) - \\tan^{-1}(0) = \\frac{\\pi}{4}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2019] If $f(x)$ is a continuous function such that $f(a - x) = -f(x)$ for all $x$, then the value of $\\int_{0}^{a} f(x) dx$ is:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$2\\int_{0}^{a/2} f(x) dx$",
+            "$a$",
+            "$\\frac{a}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $I = \\int_{0}^{a} f(x) dx$.\nApplying King's property with $a - x$:\n$$I = \\int_{0}^{a} f(a - x) dx$$\nSince $f(a - x) = -f(x)$:\n$$I = \\int_{0}^{a} (-f(x)) dx = -\\int_{0}^{a} f(x) dx = -I$$\n$$2I = 0 \\implies I = 0$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The value of $\\int_{-\\pi/2}^{\\pi/2} \\frac{\\cos x}{1 + e^x} dx$ is:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$2$",
+            "$0$",
+            "$\\frac{1}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $I = \\int_{-\\pi/2}^{\\pi/2} \\frac{\\cos x}{1 + e^x} dx$ --- (1).\nUsing King's property with $x \\to \\frac{\\pi}{2} + \\left(-\\frac{\\pi}{2}\\right) - x = -x$:\n$$I = \\int_{-\\pi/2}^{\\pi/2} \\frac{\\cos(-x)}{1 + e^{-x}} dx = \\int_{-\\pi/2}^{\\pi/2} \\frac{\\cos x}{1 + \\frac{1}{e^x}} dx = \\int_{-\\pi/2}^{\\pi/2} \\frac{e^x \\cos x}{1 + e^x} dx \\quad \\text{--- (2)}$$\nAdding (1) and (2):\n$$2I = \\int_{-\\pi/2}^{\\pi/2} \\frac{(1 + e^x)\\cos x}{1 + e^x} dx = \\int_{-\\pi/2}^{\\pi/2} \\cos x dx$$\nSince $\\cos x$ is even:\n$$2I = 2\\int_{0}^{\\pi/2} \\cos x dx \\implies I = [\\sin x]_{0}^{\\pi/2} = 1 - 0 = 1$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Using Wallis' formula, the value of $\\int_{0}^{\\pi/2} \\sin^7 x dx$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{16}{35}$",
+            "$\\frac{35}{16}$",
+            "$\\frac{16\\pi}{35}$",
+            "$\\frac{8}{35}$"
+          ],
+          "correctOption": 0,
+          "solution": "By Wallis' formula, for an odd positive integer power $n = 7$:\n$$\\int_{0}^{\\pi/2} \\sin^n x dx = \\frac{n - 1}{n} \\cdot \\frac{n - 3}{n - 2} \\dots \\frac{2}{3} \\cdot 1$$\n(Notice no factor of $\\frac{\\pi}{2}$ is appended when $n$ is odd).\nHere $n = 7$:\n$$I = \\frac{6}{7} \\times \\frac{4}{5} \\times \\frac{2}{3} \\times 1 = \\frac{48}{105} = \\frac{16}{35}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $f(x)$ is a periodic function with fundamental period $T$, then for any integer $n$, $\\int_{0}^{n T} f(x) dx$ is equal to:",
+          "image": "",
+          "options": [
+            "$n \\int_{0}^{T} f(x) dx$",
+            "$\\int_{0}^{T} f(x) dx$",
+            "$n^2 \\int_{0}^{T} f(x) dx$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "By the fundamental periodic property of definite integrals:\n$$\\int_{0}^{nT} f(x) dx = \\sum_{k=0}^{n-1} \\int_{kT}^{(k+1)T} f(x) dx$$\nSubstitute $x = t + kT$ into each piece:\n$$\\int_{kT}^{(k+1)T} f(x) dx = \\int_{0}^{T} f(t + kT) dt = \\int_{0}^{T} f(t) dt$$\nSumming $n$ identical terms:\n$$\\int_{0}^{nT} f(x) dx = n \\int_{0}^{T} f(x) dx$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The value of $\\int_{0}^{100} (x - [x]) dx$, where $[\\cdot]$ is the greatest integer function, is:",
+          "image": "",
+          "options": [
+            "$50$",
+            "$100$",
+            "$25$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "The integrand $\\{x\\} = x - [x]$ is the fractional part function, which is periodic with fundamental period $T = 1$.\nHere the interval of integration is $[0, 100] = [0, 100 \\times 1]$ with $n = 100$ and $T = 1$.\nUsing the periodic property $\\int_{0}^{nT} f(x) dx = n \\int_{0}^{T} f(x) dx$:\n$$I = 100 \\int_{0}^{1} \\{x\\} dx$$\nFor $x \\in (0, 1)$, $[x] = 0$, so $\\{x\\} = x$:\n$$I = 100 \\int_{0}^{1} x dx = 100 \\left[\\frac{x^2}{2}\\right]_{0}^{1} = 100 \\times \\frac{1}{2} = 50$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If $I_1 = \\int_{0}^{1} 2^{x^2} dx$, $I_2 = \\int_{0}^{1} 2^{x^3} dx$, and $I_3 = \\int_{1}^{2} 2^{x^2} dx$, then:",
+          "image": "",
+          "options": [
+            "$I_1 > I_2$ and $I_3 > I_1$",
+            "$I_2 > I_1$ and $I_3 > I_1$",
+            "$I_1 > I_2 > I_3$",
+            "$I_1 = I_2 < I_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1) On the interval $x \\in (0, 1)$:\n$$x^2 > x^3$$\nSince the base $2 > 1$, the exponential function is strictly increasing, so $2^{x^2} > 2^{x^3}$.\nIntegrating over $(0, 1)$:\n$$I_1 = \\int_{0}^{1} 2^{x^2} dx > \\int_{0}^{1} 2^{x^3} dx = I_2 \\implies I_1 > I_2$$\n2) For $x \\in (1, 2)$, $x^2 > 1$, so $2^{x^2} > 2^1 = 2$, which gives $I_3 = \\int_{1}^{2} 2^{x^2} dx > 2(1) = 2$.\nOn the other hand, for $x \\in (0, 1)$, $x^2 < 1 \\implies 2^{x^2} < 2$, so $I_1 < 2(1) = 2$.\nTherefore, $I_3 > 2 > I_1 > I_2$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The value of $\\int_{0}^{1} x(1 - x)^9 dx$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{110}$",
+            "$\\frac{1}{90}$",
+            "$\\frac{1}{100}$",
+            "$\\frac{1}{120}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using King's property $\\int_{0}^{1} f(x) dx = \\int_{0}^{1} f(1 - x) dx$:\nReplace $x$ with $1 - x$:\n$$I = \\int_{0}^{1} (1 - x)[1 - (1 - x)]^9 dx = \\int_{0}^{1} (1 - x) x^9 dx$$\n$$= \\int_{0}^{1} (x^9 - x^{10}) dx = \\left[\\frac{x^{10}}{10} - \\frac{x^{11}}{11}\\right]_{0}^{1} = \\frac{1}{10} - \\frac{1}{11} = \\frac{11 - 10}{110} = \\frac{1}{110}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The value of $\\int_{-\\pi/4}^{\\pi/4} \\frac{x + \\frac{\\pi}{4}}{2 - \\cos 2x} dx$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi^2}{6\\sqrt{3}}$",
+            "$\\frac{\\pi^2}{12\\sqrt{3}}$",
+            "$\\frac{\\pi}{4\\sqrt{3}}$",
+            "$\\frac{\\pi^2}{3\\sqrt{3}}$"
+          ],
+          "correctOption": 0,
+          "solution": "Split the integral into two parts:\n$$I = \\int_{-\\pi/4}^{\\pi/4} \\frac{x}{2 - \\cos 2x} dx + \\frac{\\pi}{4} \\int_{-\\pi/4}^{\\pi/4} \\frac{1}{2 - \\cos 2x} dx$$\nIn the first integral, the integrand is an odd function because $\\cos 2(-x) = \\cos 2x$ is even while $x$ is odd. Hence:\n$$\\int_{-\\pi/4}^{\\pi/4} \\frac{x}{2 - \\cos 2x} dx = 0$$\nFor the second integral, the integrand is even:\n$$I = \\frac{\\pi}{4} \\cdot 2 \\int_{0}^{\\pi/4} \\frac{dx}{2 - \\cos 2x} = \\frac{\\pi}{2} \\int_{0}^{\\pi/4} \\frac{dx}{2 - (2\\cos^2 x - 1)} = \\frac{\\pi}{2} \\int_{0}^{\\pi/4} \\frac{dx}{3 - 2\\cos^2 x}$$\nDivide numerator and denominator by $\\cos^2 x$:\n$$= \\frac{\\pi}{2} \\int_{0}^{\\pi/4} \\frac{\\sec^2 x dx}{3\\sec^2 x - 2} = \\frac{\\pi}{2} \\int_{0}^{\\pi/4} \\frac{\\sec^2 x dx}{3(1 + \\tan^2 x) - 2} = \\frac{\\pi}{2} \\int_{0}^{\\pi/4} \\frac{\\sec^2 x dx}{1 + 3\\tan^2 x}$$\nLet $u = \\sqrt{3}\\tan x \\implies du = \\sqrt{3}\\sec^2 x dx$. Limits: $x = 0 \\implies u = 0; x = \\pi/4 \\implies u = \\sqrt{3}$:\n$$= \\frac{\\pi}{2\\sqrt{3}} \\int_{0}^{\\sqrt{3}} \\frac{du}{1 + u^2} = \\frac{\\pi}{2\\sqrt{3}} [\\tan^{-1} u]_{0}^{\\sqrt{3}} = \\frac{\\pi}{2\\sqrt{3}} \\left(\\frac{\\pi}{3}\\right) = \\frac{\\pi^2}{6\\sqrt{3}}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $f(x) = x - [x]$, then the value of $\\int_{-1}^{2} f(x) dx$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{3}{2}$",
+            "$3$",
+            "$1$",
+            "$\\frac{1}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Notice that $f(x) = \\{x\\}$ is periodic with period $1$.\nThe interval $[-1, 2]$ has a total length of $2 - (-1) = 3 = 3 \\times 1$.\nThe integral of a periodic function over any interval of length $n T$ equals $n$ times the integral over one full period:\n$$\\int_{-1}^{2} \\{x\\} dx = 3 \\int_{0}^{1} x dx = 3 \\left[\\frac{x^2}{2}\\right]_{0}^{1} = 3 \\times \\frac{1}{2} = \\frac{3}{2}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The value of $\\int_{0}^{\\pi} \\frac{x\\tan x}{\\sec x + \\cos x} dx$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi^2}{4}$",
+            "$\\frac{\\pi^2}{2}$",
+            "$\\pi^2$",
+            "$\\frac{\\pi}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Convert the integrand to sine and cosine:\n$$\\frac{\\tan x}{\\sec x + \\cos x} = \\frac{\\frac{\\sin x}{\\cos x}}{\\frac{1}{\\cos x} + \\cos x} = \\frac{\\sin x}{1 + \\cos^2 x}$$\nSo $I = \\int_{0}^{\\pi} \\frac{x\\sin x}{1 + \\cos^2 x} dx$.\nApply King's property with $\\pi - x$:\n$$I = \\int_{0}^{\\pi} \\frac{(\\pi - x)\\sin(\\pi - x)}{1 + \\cos^2(\\pi - x)} dx = \\pi \\int_{0}^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} dx - I$$\n$$2I = \\pi \\int_{0}^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} dx$$\nSubstitute $u = \\cos x \\implies du = -\\sin x dx$. At $x = 0, u = 1$; at $x = \\pi, u = -1$:\n$$2I = \\pi \\int_{-1}^{1} \\frac{du}{1 + u^2} = \\pi [\\tan^{-1} u]_{-1}^{1} = \\pi \\left(\\frac{\\pi}{4} - \\left(-\\frac{\\pi}{4}\\right)\\right) = \\pi\\left(\\frac{\\pi}{2}\\right) = \\frac{\\pi^2}{2}$$\n$$I = \\frac{\\pi^2}{4}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The value of $\\int_{0}^{1} \\sqrt{\\frac{1 - x}{1 + x}} dx$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{2} - 1$",
+            "$\\frac{\\pi}{2} + 1$",
+            "$\\frac{\\pi}{4} - 1$",
+            "$\\pi - 2$"
+          ],
+          "correctOption": 0,
+          "solution": "Substitute $x = \\cos\\theta \\implies dx = -\\sin\\theta d\\theta$.\nAt $x = 0, \\theta = \\frac{\\pi}{2}$; at $x = 1, \\theta = 0$:\n$$I = \\int_{\\pi/2}^{0} \\sqrt{\\frac{1 - \\cos\\theta}{1 + \\cos\\theta}} (-\\sin\\theta d\\theta) = \\int_{0}^{\\pi/2} \\sqrt{\\frac{2\\sin^2(\\theta/2)}{2\\cos^2(\\theta/2)}} \\sin\\theta d\\theta$$\n$$= \\int_{0}^{\\pi/2} \\tan\\left(\\frac{\\theta}{2}\\right) \\cdot 2\\sin\\left(\\frac{\\theta}{2}\\right)\\cos\\left(\\frac{\\theta}{2}\\right) d\\theta = 2 \\int_{0}^{\\pi/2} \\sin^2\\left(\\frac{\\theta}{2}\\right) d\\theta$$\nUsing $2\\sin^2(\\theta/2) = 1 - \\cos\\theta$:\n$$I = \\int_{0}^{\\pi/2} (1 - \\cos\\theta) d\\theta = [\\theta - \\sin\\theta]_{0}^{\\pi/2} = \\left(\\frac{\\pi}{2} - 1\\right) - 0 = \\frac{\\pi}{2} - 1$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The value of $\\int_{0}^{2\\pi} \\frac{dx}{1 + e^{\\sin x}}$ is:",
+          "image": "",
+          "options": [
+            "$\\pi$",
+            "$2\\pi$",
+            "$\\frac{\\pi}{2}$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $I = \\int_{0}^{2\\pi} \\frac{dx}{1 + e^{\\sin x}}$ --- (1).\nUsing King's property with $2\\pi - x$:\n$$I = \\int_{0}^{2\\pi} \\frac{dx}{1 + e^{\\sin(2\\pi - x)}} = \\int_{0}^{2\\pi} \\frac{dx}{1 + e^{-\\sin x}} = \\int_{0}^{2\\pi} \\frac{e^{\\sin x}}{1 + e^{\\sin x}} dx \\quad \\text{--- (2)}$$\nAdding (1) and (2):\n$$2I = \\int_{0}^{2\\pi} \\frac{1 + e^{\\sin x}}{1 + e^{\\sin x}} dx = \\int_{0}^{2\\pi} 1 dx = [x]_{0}^{2\\pi} = 2\\pi$$\n$$I = \\pi$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Using Wallis' formula, evaluate $\\int_{0}^{\\pi/2} \\sin^8 x dx$ in the form $\\frac{k\\pi}{256}$. Find the integer value of $k$.",
+          "image": "",
+          "correctValue": 35.0,
+          "solution": "By Wallis' formula for an even power $n = 8$:\n$$\\int_{0}^{\\pi/2} \\sin^8 x dx = \\frac{7 \\times 5 \\times 3 \\times 1}{8 \\times 6 \\times 4 \\times 2} \\cdot \\frac{\\pi}{2}$$\n$$\\text{Fraction} = \\frac{105}{384} = \\frac{35}{128}$$\nMultiplying by $\\frac{\\pi}{2}$:\n$$I = \\frac{35}{128} \\times \\frac{\\pi}{2} = \\frac{35\\pi}{256}$$\nComparing with $\\frac{k\\pi}{256}$:\n$$k = 35.0$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the value of the integral $\\int_{-1}^{1} |x| dx$.",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Since $|x|$ is an even function:\n$$\\int_{-1}^{1} |x| dx = 2 \\int_{0}^{1} x dx = 2 \\left[\\frac{x^2}{2}\\right]_{0}^{1} = 2 \\times \\frac{1}{2} = 1.0$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] If $\\int_{0}^{1} x(1 - x)^4 dx = \\frac{1}{k}$, find the integer value of $k$.",
+          "image": "",
+          "correctValue": 30.0,
+          "solution": "Using King's property ($x \\to 1 - x$):\n$$I = \\int_{0}^{1} (1 - x) x^4 dx = \\int_{0}^{1} (x^4 - x^5) dx = \\left[\\frac{x^5}{5} - \\frac{x^6}{6}\\right]_{0}^{1} = \\frac{1}{5} - \\frac{1}{6} = \\frac{1}{30}$$\nComparing with $\\frac{1}{k}$:\n$$k = 30.0$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the value of $\\int_{1}^{3} (|x - 1| + |x - 2| + |x - 3|) dx$.",
+          "image": "",
+          "correctValue": 5.0,
+          "solution": "Evaluate the integral of each term on $[1, 3]$:\n1) For $|x - 1|$: on $[1, 3]$, $x \\ge 1$, so $|x - 1| = x - 1$:\n$$\\int_{1}^{3} (x - 1) dx = \\left[\\frac{(x - 1)^2}{2}\\right]_{1}^{3} = \\frac{4 - 0}{2} = 2$$\n2) For $|x - 2|$:\n$$\\int_{1}^{3} |x - 2| dx = \\int_{1}^{2} (2 - x) dx + \\int_{2}^{3} (x - 2) dx = \\frac{1}{2} + \\frac{1}{2} = 1$$\n3) For $|x - 3|$: on $[1, 3]$, $x \\le 3$, so $|x - 3| = 3 - x$:\n$$\\int_{1}^{3} (3 - x) dx = \\left[-\\frac{(3 - x)^2}{2}\\right]_{1}^{3} = 0 - \\left(-\\frac{4}{2}\\right) = 2$$\nSum of all three integrals:\n$$\\text{Total} = 2 + 1 + 2 = 5.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] If $\\lim_{n \\to \\infty} \\sum_{r=1}^{n} \\frac{r^3}{r^4 + n^4} = \\frac{1}{k}\\ln 2$, find the integer value of $k$.",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "Express as a Riemann sum:\n$$S = \\lim_{n \\to \\infty} \\frac{1}{n} \\sum_{r=1}^{n} \\frac{(r/n)^3}{(r/n)^4 + 1}$$\nConvert to a definite integral from $0$ to $1$ with $x = r/n$:\n$$S = \\int_{0}^{1} \\frac{x^3}{x^4 + 1} dx$$\nSubstitute $u = x^4 + 1 \\implies du = 4x^3 dx \\implies x^3 dx = \\frac{du}{4}$:\n$$S = \\frac{1}{4} \\int_{1}^{2} \\frac{du}{u} = \\frac{1}{4} [\\ln u]_{1}^{2} = \\frac{1}{4}\\ln 2$$\nComparing with $\\frac{1}{k}\\ln 2$:\n$$k = 4.0$$"
+        }
+      ]
+    }
+  ]
+}

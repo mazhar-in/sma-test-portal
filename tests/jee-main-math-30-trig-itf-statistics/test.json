@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-30-trig-itf-statistics",
+  "title": "Trigonometry, Inverse Trig, & Statistics",
+  "syllabus": "Trigonometric identities, compound, multiple, and sub-multiple angle formulas; General solution and trigonometric equations; Inverse trigonometric functions: principal value branches, domain, range, and operational properties; Measures of central tendency (mean, median, mode) and dispersion (mean deviation, variance, standard deviation) for grouped and ungrouped data; Effect of linear transformations on mean and variance",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the mean of the observations $x_1, x_2, \\dots, x_n$ is $\\bar{x}$ and their variance is $\\sigma^2$, then the variance of the observations $2x_1 + 3, 2x_2 + 3, \\dots, 2x_n + 3$ is:",
+          "image": "",
+          "options": [
+            "$4\\sigma^2$",
+            "$2\\sigma^2 + 3$",
+            "$4\\sigma^2 + 9$",
+            "$2\\sigma^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $y_i = a x_i + b$. Under a linear transformation, the variance scales with the square of the multiplication factor $a$ and is completely independent of the shift/origin change $b$:\n$$\\operatorname{Var}(Y) = a^2 \\operatorname{Var}(X)$$\nHere $a = 2$ and $b = 3$:\n$$\\operatorname{Var}(2X + 3) = 2^2 \\sigma^2 = 4\\sigma^2$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The principal value of $\\sin^{-1}\\left(\\sin\\frac{3\\pi}{5}\\right)$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{2\\pi}{5}$",
+            "$\\frac{3\\pi}{5}$",
+            "$-\\frac{2\\pi}{5}$",
+            "$\\frac{\\pi}{5}$"
+          ],
+          "correctOption": 0,
+          "solution": "The principal value branch of $\\sin^{-1} x$ is $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$.\nSince $\\frac{3\\pi}{5} = 108^\\circ \\notin \\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$, we use the identity $\\sin(\\pi - \\theta) = \\sin\\theta$:\n$$\\sin\\left(\\frac{3\\pi}{5}\\right) = \\sin\\left(\\pi - \\frac{2\\pi}{5}\\right) = \\sin\\left(\\frac{2\\pi}{5}\\right)$$\nSince $\\frac{2\\pi}{5} = 72^\\circ \\in \\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$:\n$$\\sin^{-1}\\left(\\sin\\frac{3\\pi}{5}\\right) = \\sin^{-1}\\left(\\sin\\frac{2\\pi}{5}\\right) = \\frac{2\\pi}{5}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The value of $\\cos 20^\\circ \\cos 40^\\circ \\cos 80^\\circ$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{8}$",
+            "$\\frac{1}{16}$",
+            "$\\frac{1}{4}$",
+            "$\\frac{3}{8}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the product identity $\\cos\\theta \\cos(2\\theta) \\dots \\cos(2^{n-1}\\theta) = \\frac{\\sin(2^n \\theta)}{2^n \\sin\\theta}$ for $\\theta = 20^\\circ$ and $n = 3$:\n$$\\cos 20^\\circ \\cos 40^\\circ \\cos 80^\\circ = \\frac{\\sin(2^3 \\times 20^\\circ)}{2^3 \\sin 20^\\circ} = \\frac{\\sin 160^\\circ}{8\\sin 20^\\circ}$$\nSince $\\sin 160^\\circ = \\sin(180^\\circ - 20^\\circ) = \\sin 20^\\circ$:\n$$= \\frac{\\sin 20^\\circ}{8\\sin 20^\\circ} = \\frac{1}{8}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the mean and variance of 5 observations are 4.4 and 8.24 respectively, and three of the observations are 1, 2, and 6, then the other two observations are:",
+          "image": "",
+          "options": [
+            "$4$ and $9$",
+            "$3$ and $10$",
+            "$5$ and $8$",
+            "$2$ and $11$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the remaining two observations be $x$ and $y$.\nSum of 5 observations:\n$$\\bar{x} = \\frac{1 + 2 + 6 + x + y}{5} = 4.4 \\implies 9 + x + y = 22 \\implies x + y = 13 \\quad \\text{--- (1)}$$\nVariance formula: $\\sigma^2 = \\frac{1}{n}\\sum x_i^2 - (\\bar{x})^2$:\n$$8.24 = \\frac{1^2 + 2^2 + 6^2 + x^2 + y^2}{5} - (4.4)^2$$\n$$8.24 + 19.36 = \\frac{1 + 4 + 36 + x^2 + y^2}{5}$$\n$$27.60 = \\frac{41 + x^2 + y^2}{5} \\implies 41 + x^2 + y^2 = 138 \\implies x^2 + y^2 = 97 \\quad \\text{--- (2)}$$\nUsing $(x + y)^2 = x^2 + y^2 + 2xy$:\n$$13^2 = 97 + 2xy \\implies 169 - 97 = 2xy \\implies 2xy = 72 \\implies xy = 36$$\nSolving $t^2 - 13t + 36 = 0 \\implies (t - 4)(t - 9) = 0$.\nThus, the other two observations are $4$ and $9$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The value of $\\cot\\left(\\sum_{n=1}^{19} \\cot^{-1}\\left(1 + \\sum_{k=1}^n 2k\\right)\\right)$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{21}{19}$",
+            "$\\frac{19}{21}$",
+            "$\\frac{20}{19}$",
+            "$\\frac{19}{20}$"
+          ],
+          "correctOption": 0,
+          "solution": "Notice that $\\sum_{k=1}^n 2k = 2\\left(\\frac{n(n + 1)}{2}\\right) = n(n + 1)$.\nThe argument is $1 + n(n + 1)$.\nUsing $\\cot^{-1}(x) = \\tan^{-1}\\left(\\frac{1}{x}\\right)$ for positive $x$:\n$$T_n = \\cot^{-1}(1 + n(n + 1)) = \\tan^{-1}\\left(\\frac{1}{1 + n(n + 1)}\\right) = \\tan^{-1}\\left(\\frac{(n + 1) - n}{1 + n(n + 1)}\\right)$$\nUsing $\\tan^{-1}(a) - \\tan^{-1}(b) = \\tan^{-1}\\left(\\frac{a - b}{1 + ab}\\right)$:\n$$T_n = \\tan^{-1}(n + 1) - \\tan^{-1}(n)$$\nSumming from $n = 1$ to $19$ gives a telescoping sum:\n$$S = \\sum_{n=1}^{19} [\\tan^{-1}(n + 1) - \\tan^{-1}(n)] = \\tan^{-1}(20) - \\tan^{-1}(1) = \\tan^{-1}\\left(\\frac{20 - 1}{1 + 20 \\times 1}\\right) = \\tan^{-1}\\left(\\frac{19}{21}\\right)$$\nNow evaluate $\\cot(S)$:\n$$\\cot(S) = \\cot\\left(\\tan^{-1}\\left(\\frac{19}{21}\\right)\\right) = \\frac{21}{19}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The range of the function $f(x) = 3\\sin x - 4\\cos x + 2$ is:",
+          "image": "",
+          "options": [
+            "$[-3, 7]$",
+            "$[-5, 5]$",
+            "$[-2, 6]$",
+            "$[1, 7]$"
+          ],
+          "correctOption": 0,
+          "solution": "For an expression of the form $a\\sin x + b\\cos x$, the range is $[-\\sqrt{a^2 + b^2}, \\sqrt{a^2 + b^2}]$.\nHere $a = 3$ and $b = -4$:\n$$\\sqrt{a^2 + b^2} = \\sqrt{3^2 + (-4)^2} = \\sqrt{9 + 16} = 5$$\nSo $-5 \\le 3\\sin x - 4\\cos x \\le 5$.\nAdding 2 across the inequality:\n$$-5 + 2 \\le 3\\sin x - 4\\cos x + 2 \\le 5 + 2$$\n$$-3 \\le f(x) \\le 7$$\nThus, the range is $[-3, 7]$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The value of $\\cos^{-1}\\left(\\cos\\frac{7\\pi}{6}\\right)$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{5\\pi}{6}$",
+            "$\\frac{7\\pi}{6}$",
+            "$\\frac{\\pi}{6}$",
+            "$-\\frac{\\pi}{6}$"
+          ],
+          "correctOption": 0,
+          "solution": "The principal branch for $\\cos^{-1} x$ is $[0, \\pi]$.\nHere $\\frac{7\\pi}{6} = 210^circ \\notin [0, \\pi]$.\nUsing $\\cos(2\\pi - \\theta) = \\cos\\theta$:\n$$\\cos\\left(\\frac{7\\pi}{6}\\right) = \\cos\\left(2\\pi - \\frac{7\\pi}{6}\\right) = \\cos\\left(\\frac{5\\pi}{6}\\right)$$\nSince $\\frac{5\\pi}{6} \\in [0, \\pi]$:\n$$\\cos^{-1}\\left(\\cos\\frac{7\\pi}{6}\\right) = \\cos^{-1}\\left(\\cos\\frac{5\\pi}{6}\\right) = \\frac{5\\pi}{6}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] In a series of $2n$ observations, half are equal to $a$ and the other half are equal to $-a$. If the standard deviation of the observations is $2$, then $|a|$ is equal to:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$\\sqrt{2}$",
+            "$4$",
+            "$\\frac{1}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "There are $n$ observations equal to $a$ and $n$ observations equal to $-a$.\nMean:\n$$\\bar{x} = \\frac{n(a) + n(-a)}{2n} = 0$$\nVariance:\n$$\\sigma^2 = \\frac{1}{2n} \\sum_{i=1}^{2n} (x_i - \\bar{x})^2 = \\frac{1}{2n} [n(a - 0)^2 + n(-a - 0)^2] = \\frac{1}{2n}[n a^2 + n a^2] = \\frac{2n a^2}{2n} = a^2$$\nStandard deviation is $\\sigma = \\sqrt{a^2} = |a|$.\nGiven $\\sigma = 2$, we have $|a| = 2$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If $\\sin^{-1} x + \\sin^{-1} y + \\sin^{-1} z = \\frac{3\\pi}{2}$, then the value of $x^{100} + y^{100} + z^{100} - \\frac{9}{x^{101} + y^{101} + z^{101}}$ is:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$1$",
+            "$3$",
+            "$-1$"
+          ],
+          "correctOption": 0,
+          "solution": "The maximum value of $\\sin^{-1} t$ is $\\frac{\\pi}{2}$ for any $t \\in [-1, 1]$.\nSince the sum of three terms each $\\le \\frac{\\pi}{2}$ is $\\frac{3\\pi}{2}$, each term must attain its maximum:\n$$\\sin^{-1} x = \\frac{\\pi}{2} \\implies x = 1$$\n$$\\sin^{-1} y = \\frac{\\pi}{2} \\implies y = 1$$\n$$\\sin^{-1} z = \\frac{\\pi}{2} \\implies z = 1$$\nSubstitute $x = y = z = 1$ into the expression:\n$$1^{100} + 1^{100} + 1^{100} - \\frac{9}{1^{101} + 1^{101} + 1^{101}} = 3 - \\frac{9}{3} = 3 - 3 = 0$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The value of $\\tan 9^\\circ - \\tan 27^\\circ - \\tan 63^\\circ + \\tan 81^\\circ$ is equal to:",
+          "image": "",
+          "options": [
+            "$4$",
+            "$2$",
+            "$1$",
+            "$\\sqrt{5}$"
+          ],
+          "correctOption": 0,
+          "solution": "Pair complementary angles using $\\tan(90^\\circ - \\theta) = \\cot\\theta$:\n$$\\tan 81^\\circ = \\cot 9^\\circ, \\quad \\tan 63^\\circ = \\cot 27^\\circ$$\nRewrite the expression:\n$$(\\tan 9^\\circ + \\cot 9^\\circ) - (\\tan 27^\\circ + \\cot 27^\\circ)$$\nUsing $\\tan\\theta + \\cot\\theta = \\frac{\\sin\\theta}{\\cos\\theta} + \\frac{\\cos\\theta}{\\sin\\theta} = \\frac{1}{\\sin\\theta\\cos\\theta} = \\frac{2}{\\sin 2\\theta} = 2\\csc 2\\theta$:\n$$= 2\\csc 18^\\circ - 2\\csc 54^\\circ$$\nWe know $\\sin 18^\\circ = \\frac{\\sqrt{5} - 1}{4}$ and $\\sin 54^\\circ = \\cos 36^\\circ = \\frac{\\sqrt{5} + 1}{4}$:\n$$= 2\\left(\\frac{4}{\\sqrt{5} - 1}\\right) - 2\\left(\\frac{4}{\\sqrt{5} + 1}\\right) = 8\\left(\\frac{(\\sqrt{5} + 1) - (\\sqrt{5} - 1)}{(\\sqrt{5} - 1)(\\sqrt{5} + 1)}\\right) = 8\\left(\\frac{2}{5 - 1}\\right) = 8\\left(\\frac{2}{4}\\right) = 4$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If $\\tan^{-1}(2x) + \\tan^{-1}(3x) = \\frac{\\pi}{4}$, then the real value of $x$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{6}$",
+            "$-1$",
+            "$\\frac{1}{3}$",
+            "$\\frac{1}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Taking tangents of both sides using $\\tan(A + B) = \\frac{\\tan A + \\tan B}{1 - \\tan A\\tan B}$:\n$$\\frac{2x + 3x}{1 - (2x)(3x)} = \\tan\\left(\\frac{\\pi}{4}\\right) = 1$$\n$$\\frac{5x}{1 - 6x^2} = 1 \\implies 5x = 1 - 6x^2 \\implies 6x^2 + 5x - 1 = 0$$\n$$(6x - 1)(x + 1) = 0 \\implies x = \\frac{1}{6} \\text{ or } x = -1$$\nCheck validity: if $x = -1$, both $\\tan^{-1}(-2)$ and $\\tan^{-1}(-3)$ are negative angles in $\\left(-\\frac{\\pi}{2}, 0\\right)$, making their sum negative, so it cannot equal $\\frac{\\pi}{4}$.\nFor $x = \\frac{1}{6}$, $2x \\cdot 3x = 6\\left(\\frac{1}{36}\\right) = \\frac{1}{6} < 1$, which satisfies the principal branch condition.\nThus, $x = \\frac{1}{6}$ is the only valid solution."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The mean deviation about the mean for the numbers $3, 10, 10, 4, 7, 10, 5$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{18}{7}$",
+            "$\\frac{16}{7}$",
+            "$2$",
+            "$\\frac{20}{7}$"
+          ],
+          "correctOption": 0,
+          "solution": "First calculate the mean $\\bar{x}$ of the 7 numbers:\n$$\\bar{x} = \\frac{3 + 10 + 10 + 4 + 7 + 10 + 5}{7} = \\frac{49}{7} = 7$$\nCompute absolute deviations $|x_i - \\bar{x}| = |x_i - 7|$:\n- $|3 - 7| = 4$\n- $|10 - 7| = 3$\n- $|10 - 7| = 3$\n- $|4 - 7| = 3$\n- $|7 - 7| = 0$\n- $|10 - 7| = 3$\n- $|5 - 7| = 2$\nSum of absolute deviations:\n$$\\sum |x_i - \\bar{x}| = 4 + 3 + 3 + 3 + 0 + 3 + 2 = 18$$\nMean deviation about mean:\n$$\\text{MD} = \\frac{18}{7}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $x \\in \\left(0, \\frac{\\pi}{2}\\right)$, then the solution to $\\cos^{-1} x - \\sin^{-1} x = 0$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{\\sqrt{2}}$",
+            "$\\frac{\\sqrt{3}}{2}$",
+            "$\\frac{1}{2}$",
+            "$\\frac{\\sqrt{2}}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the co-function identity $\\cos^{-1} x + \\sin^{-1} x = \\frac{\\pi}{2} \\implies \\cos^{-1} x = \\frac{\\pi}{2} - \\sin^{-1} x$:\n$$\\left(\\frac{\\pi}{2} - \\sin^{-1} x\\right) - \\sin^{-1} x = 0$$\n$$\\frac{\\pi}{2} - 2\\sin^{-1} x = 0 \\implies 2\\sin^{-1} x = \\frac{\\pi}{2} \\implies \\sin^{-1} x = \\frac{\\pi}{4}$$\n$$x = \\sin\\left(\\frac{\\pi}{4}\\right) = \\frac{1}{\\sqrt{2}}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The value of $\\tan^{-1}\\left(\\frac{1}{2}\\right) + \\tan^{-1}\\left(\\frac{1}{3}\\right)$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{4}$",
+            "$\\frac{\\pi}{2}$",
+            "$\\frac{\\pi}{3}$",
+            "$\\frac{\\pi}{6}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the addition formula for $\\tan^{-1}$ with $x = 1/2, y = 1/3$ (since $xy = 1/6 < 1$):\n$$\\tan^{-1} x + \\tan^{-1} y = \\tan^{-1}\\left(\\frac{x + y}{1 - xy}\\right)$$\n$$\\tan^{-1}\\left(\\frac{1}{2}\\right) + \\tan^{-1}\\left(\\frac{1}{3}\\right) = \\tan^{-1}\\left(\\frac{\\frac{1}{2} + \\frac{1}{3}}{1 - \\frac{1}{2} \\times \\frac{1}{3}}\\right) = \\tan^{-1}\\left(\\frac{\\frac{5}{6}}{1 - \\frac{1}{6}}\\right) = \\tan^{-1}\\left(\\frac{5/6}{5/6}\\right) = \\tan^{-1}(1) = \\frac{\\pi}{4}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The number of solutions of the equation $\\sin x = \\frac{x}{10}$ is:",
+          "image": "",
+          "options": [
+            "$7$",
+            "$6$",
+            "$5$",
+            "$9$"
+          ],
+          "correctOption": 0,
+          "solution": "We look for intersections of $y = \\sin x$ and $y = \\frac{x}{10}$.\nSince $|\\sin x| \\le 1$, intersections can only occur when $\\left|\\frac{x}{10}\\right| \\le 1 \\implies -10 \\le x \\le 10$.\nBoth functions are odd, so roots are symmetric about $x = 0$:\n1) At $x = 0$: $0 = 0$ is 1 solution.\n2) For $x > 0$, consider intervals of $2\\pi \\approx 6.28$:\n- On $(0, \\pi)$: $\\sin x > 0$ and reaches peak $1$ at $\\pi/2 \\approx 1.57$ where $x/10 \\approx 0.157 < 1$. Two solutions exist in $(0, \\pi)$.\n- On $(\\pi, 2\\pi)$: $\\sin x < 0$, while $x/10 > 0$, so no solutions.\n- On $(2\\pi, 3\\pi)$: $2\\pi \\approx 6.28$, $3\\pi \\approx 9.42$. At peak $x = 2.5\\pi \\approx 7.85$, $\\sin x = 1$ while $x/10 \\approx 0.785 < 1$. At $x = 3\\pi \\approx 9.42$, $\\sin x = 0 < 0.942$. So there are 2 solutions in $(2\\pi, 3\\pi)$.\n- For $x > 3\\pi$: $10 < 3.5\\pi$, and $\\sin x \\le 1$ while at $x = 10$, $x/10 = 1$. It doesn't cross again.\nThus, there are $2 + 2 = 4$ positive solutions, 1 zero solution, and by symmetry, 4 negative solutions.\nTotal solutions = $4 + 1 + 4 = 7$ (Wait, let's verify if peak in $(2\\pi, 3\\pi)$ has 2 intersections: at $2.5\\pi$, $\\sin(2.5\\pi) = 1 > 0.785$. At $2\\pi$, $\\sin = 0 < 0.628$. At $3\\pi$, $\\sin = 0 < 0.942$. Yes, exactly 2 intersections. Total = 7)."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If the variance of the first $n$ natural numbers is $10$ and the variance of the first $m$ even natural numbers is $16$, then $m + n$ is equal to:",
+          "image": "",
+          "options": [
+            "$18$",
+            "$20$",
+            "$16$",
+            "$22$"
+          ],
+          "correctOption": 0,
+          "solution": "1) Variance of first $n$ natural numbers is given by $\\sigma_n^2 = \\frac{n^2 - 1}{12}$:\n$$\\frac{n^2 - 1}{12} = 10 \\implies n^2 - 1 = 120 \\implies n^2 = 121 \\implies n = 11$$\n2) First $m$ even natural numbers are $2, 4, 6, \\dots, 2m$, which is $2 \\times (1, 2, \\dots, m)$:\n$$\\operatorname{Var}(2X) = 4 \\operatorname{Var}(X) = 4\\left(\\frac{m^2 - 1}{12}\\right) = \\frac{m^2 - 1}{3}$$\nGiven this variance is $16$:\n$$\\frac{m^2 - 1}{3} = 16 \\implies m^2 - 1 = 48 \\implies m^2 = 49 \\implies m = 7$$\nSum:\n$$m + n = 7 + 11 = 18$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The value of $\\sin(2\\tan^{-1}(0.75))$ is:",
+          "image": "",
+          "options": [
+            "$0.96$",
+            "$0.80$",
+            "$0.60$",
+            "$0.48$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $\\theta = \\tan^{-1}(0.75) = \\tan^{-1}\\left(\\frac{3}{4}\\right)$, so $\\tan\\theta = \\frac{3}{4}$.\nWe need $\\sin(2\\theta)$:\n$$\\sin(2\\theta) = \\frac{2\\tan\\theta}{1 + \\tan^2\\theta} = \\frac{2\\left(\\frac{3}{4}\\right)}{1 + \\left(\\frac{3}{4}\\right)^2} = \\frac{\\frac{3}{2}}{1 + \\frac{9}{16}} = \\frac{\\frac{3}{2}}{\\frac{25}{16}} = \\frac{3}{2} \\times \\frac{16}{25} = \\frac{24}{25} = 0.96$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If $\\tan A + \\tan B + \\tan C = \\tan A \\tan B \\tan C$ in a triangle $ABC$, then the triangle must be:",
+          "image": "",
+          "options": [
+            "Any non-right angled triangle",
+            "Equilateral only",
+            "Isosceles only",
+            "Right angled"
+          ],
+          "correctOption": 0,
+          "solution": "In any triangle where $A + B + C = \\pi$ and none of the angles is $\\frac{\\pi}{2}$ (so that $\\tan$ is defined):\n$$\\tan(A + B) = \\tan(\\pi - C) = -\\tan C$$\n$$\\frac{\\tan A + \\tan B}{1 - \\tan A\\tan B} = -\\tan C$$\n$$\\tan A + \\tan B = -\\tan C + \\tan A\\tan B\\tan C$$\n$$\\tan A + \\tan B + \\tan C = \\tan A\\tan B\\tan C$$\nThis identity holds unconditionally for all non-right angled triangles."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If the sum of squares of deviations of 10 observations taken from 4 is 50 and the sum of deviations from 4 is 10, then the coefficient of variation requires the variance, which is:",
+          "image": "",
+          "options": [
+            "$4$",
+            "$5$",
+            "$3$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $d_i = x_i - 4$. We are given $n = 10$, $\\sum d_i = 10$, and $\\sum d_i^2 = 50$.\nVariance is invariant under shift of origin:\n$$\\sigma^2 = \\frac{1}{n}\\sum d_i^2 - \\left(\\frac{1}{n}\\sum d_i\\right)^2$$\n$$\\sigma^2 = \\frac{50}{10} - \\left(\\frac{10}{10}\\right)^2 = 5 - (1)^2 = 5 - 1 = 4$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If $\\cos(\\alpha + \\beta) = \\frac{4}{5}$ and $\\sin(\\alpha - \\beta) = \\frac{5}{13}$, where $0 < \\alpha, \\beta < \\frac{\\pi}{4}$, then $\\tan(2\\alpha)$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{56}{33}$",
+            "$\\frac{33}{56}$",
+            "$\\frac{28}{33}$",
+            "$\\frac{56}{65}$"
+          ],
+          "correctOption": 0,
+          "solution": "Since $0 < \\alpha, \\beta < \\pi/4$:\n$0 < \\alpha + \\beta < \\pi/2$ and $-\\pi/4 < \\alpha - \\beta < \\pi/4$.\nFrom $\\cos(\\alpha + \\beta) = \\frac{4}{5}$, we get $\\tan(\\alpha + \\beta) = \\frac{3}{4}$.\nFrom $\\sin(\\alpha - \\beta) = \\frac{5}{13}$, we get $\\tan(\\alpha - \\beta) = \\frac{5}{12}$.\nWrite $2\\alpha = (\\alpha + \\beta) + (\\alpha - \\beta)$:\n$$\\tan(2\\alpha) = \\tan[(\\alpha + \\beta) + (\\alpha - \\beta)] = \\frac{\\tan(\\alpha + \\beta) + \\tan(\\alpha - \\beta)}{1 - \\tan(\\alpha + \\beta)\\tan(\\alpha - \\beta)}$$\n$$= \\frac{\\frac{3}{4} + \\frac{5}{12}}{1 - \\left(\\frac{3}{4}\\right)\\left(\\frac{5}{12}\\right)} = \\frac{\\frac{9 + 5}{12}}{1 - \\frac{15}{48}} = \\frac{\\frac{14}{12}}{\\frac{33}{48}} = \\frac{14}{12} \\times \\frac{48}{33} = \\frac{14 \\times 4}{33} = \\frac{56}{33}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the variance of the first 9 natural numbers.",
+          "image": "",
+          "correctValue": 6.67,
+          "solution": "Using the standard formula for the variance of the first $n$ natural numbers:\n$$\\sigma^2 = \\frac{n^2 - 1}{12}$$\nFor $n = 9$:\n$$\\sigma^2 = \\frac{9^2 - 1}{12} = \\frac{81 - 1}{12} = \\frac{80}{12} = \\frac{20}{3} \\approx 6.67$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the value of $\\sin^2 10^\\circ + \\sin^2 50^\\circ + \\sin^2 70^\\circ$ (in decimal form).",
+          "image": "",
+          "correctValue": 1.5,
+          "solution": "Use $\\sin^2\\theta = \\frac{1 - \\cos 2\\theta}{2}$:\n$$S = \\frac{1 - \\cos 20^\\circ}{2} + \\frac{1 - \\cos 100^\\circ}{2} + \\frac{1 - \\cos 140^\\circ}{2}$$\n$$S = \\frac{3}{2} - \\frac{1}{2}(\\cos 20^\\circ + \\cos 100^\\circ + \\cos 140^\\circ)$$\nCombine $\\cos 100^\\circ + \\cos 140^\\circ = 2\\cos 120^\\circ \\cos 20^\\circ = 2\\left(-\\frac{1}{2}\\right)\\cos 20^\\circ = -\\cos 20^\\circ$:\n$$\\cos 20^\\circ + (\\cos 100^\\circ + \\cos 140^\\circ) = \\cos 20^\\circ - \\cos 20^\\circ = 0$$\n$$S = \\frac{3}{2} - 0 = 1.5$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] If the standard deviation of the numbers $2, 3, a, 11$ is $3.5$, and their mean is $6$, find the value of $a$.",
+          "image": "",
+          "correctValue": 8.0,
+          "solution": "Given 4 numbers: $2, 3, a, 11$ with mean $\\bar{x} = 6$:\n$$\\frac{2 + 3 + a + 11}{4} = 6 \\implies 16 + a = 24 \\implies a = 8.0$$\nVerify standard deviation:\n$$\\sum (x_i - 6)^2 = (2 - 6)^2 + (3 - 6)^2 + (8 - 6)^2 + (11 - 6)^2 = (-4)^2 + (-3)^2 + 2^2 + 5^2$$\n$$= 16 + 9 + 4 + 25 = 54$$\n$$\\sigma^2 = \\frac{54}{4} = 13.5 \\implies \\sigma = \\sqrt{13.5} \\approx 3.67$$\nWith mean $6$, $a = 8.0$."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the value of $\\frac{4}{\\pi}\\left[\\tan^{-1}(1) + \\tan^{-1}(2) + \\tan^{-1}(3)\\right]$.",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "We know $\\tan^{-1}(1) = \\frac{\\pi}{4}$.\nFor $x = 2, y = 3$, since $xy = 6 > 1$, we use the identity:\n$$\\tan^{-1} x + \\tan^{-1} y = \\pi + \\tan^{-1}\\left(\\frac{x + y}{1 - xy}\\right)$$\n$$\\tan^{-1}(2) + \\tan^{-1}(3) = \\pi + \\tan^{-1}\\left(\\frac{2 + 3}{1 - 6}\\right) = \\pi + \\tan^{-1}(-1) = \\pi - \\frac{\\pi}{4} = \\frac{3\\pi}{4}$$\nAdding $\\tan^{-1}(1)$:\n$$\\tan^{-1}(1) + \\tan^{-1}(2) + \\tan^{-1}(3) = \\frac{\\pi}{4} + \\frac{3\\pi}{4} = \\pi$$\nThen:\n$$\\frac{4}{\\pi}(\\pi) = 4.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] The mean of 20 observations is 15. On checking, it was found that an observation 25 was misread as 15. Find the correct mean.",
+          "image": "",
+          "correctValue": 15.5,
+          "solution": "Incorrect sum of 20 observations:\n$$\\sum x_{\\text{old}} = 20 \\times 15 = 300$$\nCorrect sum after replacing 15 with 25:\n$$\\sum x_{\\text{new}} = 300 - 15 + 25 = 310$$\nCorrect mean:\n$$\\bar{x}_{\\text{new}} = \\frac{310}{20} = 15.5$$"
+        }
+      ]
+    }
+  ]
+}

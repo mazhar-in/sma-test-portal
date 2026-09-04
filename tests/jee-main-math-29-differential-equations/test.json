@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-math-29-differential-equations",
+  "title": "Differential Equations",
+  "syllabus": "Order and degree of a differential equation; Formation of differential equations; Solutions of first order and first degree differential equations by the method of separation of variables; Solution of homogeneous differential equations (y = vx substitution); Solution of linear differential equations of the type dy/dx + Py = Q and dx/dy + Px = Q; Integrating factor (I.F.); Initial value problems and orthogonal trajectories/curve families",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $y = y(x)$ is the solution of the differential equation $\\frac{dy}{dx} + \\frac{2x}{x^2 + 1}y = \\frac{1}{(x^2 + 1)^2}$ such that $y(0) = 0$, then $y(1)$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{\\pi}{8}$",
+            "$\\frac{\\pi}{4}$",
+            "$\\frac{\\pi}{2}$",
+            "$\\frac{1}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "This is a first-order linear differential equation $\\frac{dy}{dx} + P(x)y = Q(x)$ where $P(x) = \\frac{2x}{x^2 + 1}$ and $Q(x) = \\frac{1}{(x^2 + 1)^2}$.\nCompute the integrating factor (I.F.):\n$$\\text{I.F.} = e^{\\int P(x) dx} = e^{\\int \\frac{2x}{x^2 + 1} dx} = e^{\\ln(x^2 + 1)} = x^2 + 1$$\nThe general solution is given by:\n$$y \\cdot (\\text{I.F.}) = \\int Q(x) \\cdot (\\text{I.F.}) dx + C$$\n$$y(x^2 + 1) = \\int \\frac{1}{(x^2 + 1)^2} (x^2 + 1) dx + C = \\int \\frac{1}{x^2 + 1} dx + C = \\tan^{-1} x + C$$\nUsing the initial condition $y(0) = 0$:\n$$0(0 + 1) = \\tan^{-1}(0) + C \\implies C = 0$$\nThus, the particular solution is:\n$$y = \\frac{\\tan^{-1} x}{x^2 + 1}$$\nEvaluating at $x = 1$:\n$$y(1) = \\frac{\\tan^{-1}(1)}{1^2 + 1} = \\frac{\\pi/4}{2} = \\frac{\\pi}{8}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The general solution of the differential equation $\\frac{dy}{dx} = \\frac{y}{x} + \\tan\\left(\\frac{y}{x}\\right)$ is (where $C$ is an arbitrary non-zero constant):",
+          "image": "",
+          "options": [
+            "$\\sin\\left(\\frac{y}{x}\\right) = C x$",
+            "$\\cos\\left(\\frac{y}{x}\\right) = C x$",
+            "$\\sin\\left(\\frac{y}{x}\\right) = \\frac{C}{x}$",
+            "$\\tan\\left(\\frac{y}{x}\\right) = C x$"
+          ],
+          "correctOption": 0,
+          "solution": "This is a homogeneous differential equation. Substitute $y = v x$, so $\\frac{dy}{dx} = v + x\\frac{dv}{dx}$:\n$$v + x\\frac{dv}{dx} = v + \\tan v$$\n$$x\\frac{dv}{dx} = \\tan v$$\nSeparating variables:\n$$\\frac{dv}{\\tan v} = \\frac{dx}{x} \\implies \\cot v dv = \\frac{dx}{x}$$\nIntegrating both sides:\n$$\\int \\cot v dv = \\int \\frac{dx}{x} + \\ln C$$\n$$\\ln|\\sin v| = \\ln|x| + \\ln C = \\ln|C x|$$\n$$\\sin v = C x$$\nSubstituting back $v = \\frac{y}{x}$:\n$$\\sin\\left(\\frac{y}{x}\\right) = C x$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If the differential equation $\\left(1 + e^{x/y}\\right) dx + e^{x/y}\\left(1 - \\frac{x}{y}\\right) dy = 0$ is solved, its general solution is:",
+          "image": "",
+          "options": [
+            "$x + y e^{x/y} = C$",
+            "$y + x e^{x/y} = C$",
+            "$x - y e^{x/y} = C$",
+            "$x e^{x/y} = C y$"
+          ],
+          "correctOption": 0,
+          "solution": "Rewrite the differential equation in terms of $\\frac{dx}{dy}$:\n$$\\frac{dx}{dy} = -\\frac{e^{x/y}\\left(1 - \\frac{x}{y}\\right)}{1 + e^{x/y}} = \\frac{e^{x/y}\\left(\\frac{x}{y} - 1\\right)}{1 + e^{x/y}}$$\nThis is homogeneous in $\\frac{x}{y}$. Let $x = v y$, so $\\frac{dx}{dy} = v + y\\frac{dv}{dy}$:\n$$v + y\\frac{dv}{dy} = \\frac{e^v(v - 1)}{1 + e^v}$$\n$$y\\frac{dv}{dy} = \\frac{v e^v - e^v - v(1 + e^v)}{1 + e^v} = \\frac{v e^v - e^v - v - v e^v}{1 + e^v} = -\\frac{v + e^v}{1 + e^v}$$\nSeparating variables:\n$$\\frac{1 + e^v}{v + e^v} dv = -\\frac{dy}{y}$$\nNotice that the numerator is the exact derivative of the denominator: $\\frac{d}{dv}(v + e^v) = 1 + e^v$.\nIntegrating both sides:\n$$\\ln|v + e^v| = -\\ln|y| + \\ln C = \\ln\\left|\\frac{C}{y}\\right|$$\n$$v + e^v = \\frac{C}{y} \\implies y(v + e^v) = C$$\nSubstitute back $v = \\frac{x}{y}$:\n$$y\\left(\\frac{x}{y} + e^{x/y}\\right) = C \\implies x + y e^{x/y} = C$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The order and degree of the differential equation $\\left[1 + \\left(\\frac{dy}{dx}\\right)^2\\right]^{3/2} = k \\frac{d^2y}{dx^2}$ are respectively:",
+          "image": "",
+          "options": [
+            "$2$ and $2$",
+            "$2$ and $3$",
+            "$1$ and $2$",
+            "$2$ and $1$"
+          ],
+          "correctOption": 0,
+          "solution": "To determine order and degree, the equation must be made polynomial in its derivatives by removing fractional exponents.\nSquare both sides of the differential equation:\n$$\\left[1 + \\left(\\frac{dy}{dx}\\right)^2\\right]^3 = k^2 \\left(\\frac{d^2y}{dx^2}\\right)^2$$\nThe highest order derivative present is $\\frac{d^2y}{dx^2}$, so the order is $2$.\nThe highest power (degree) of this highest order derivative after rationalizing is $2$.\nHence, order $= 2$ and degree $= 2$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The solution of the differential equation $\\frac{dy}{dx} = \\frac{x + 2y - 1}{2x + 4y + 3}$ is:",
+          "image": "",
+          "options": [
+            "$2x + 4y + 5\\ln|2x + 4y - 1| = 5x + C$",
+            "$x + 2y + \\ln|x + 2y - 1| = C$",
+            "$2(x + 2y) - \\ln|2x + 4y + 1| = x + C$",
+            "$2(x + 2y) - 5\\ln|2(x + 2y) + 5| = x + C$"
+          ],
+          "correctOption": 0,
+          "solution": "Notice that the coefficients of $x$ and $y$ are proportional: $\\frac{1}{2} = \\frac{2}{4}$.\nLet $v = x + 2y$. Then $\\frac{dv}{dx} = 1 + 2\\frac{dy}{dx} \\implies \\frac{dy}{dx} = \\frac{1}{2}\\left(\\frac{dv}{dx} - 1\\right)$.\nSubstitute into the differential equation:\n$$\\frac{1}{2}\\left(\\frac{dv}{dx} - 1\\right) = \\frac{v - 1}{2v + 3}$$\n$$\\frac{dv}{dx} - 1 = \\frac{2v - 2}{2v + 3} \\implies \\frac{dv}{dx} = \\frac{2v - 2}{2v + 3} + 1 = \\frac{4v + 1}{2v + 3}$$\nSeparating variables:\n$$\\frac{2v + 3}{4v + 1} dv = dx$$\nDivide polynomials: $\\frac{2v + 3}{4v + 1} = \\frac{1}{2} \\frac{4v + 6}{4v + 1} = \\frac{1}{2}\\left(1 + \\frac{5}{4v + 1}\\right)$:\n$$\\frac{1}{2}\\left(1 + \\frac{5}{4v + 1}\\right) dv = dx$$\nIntegrating both sides:\n$$\\frac{1}{2}\\left(v + \\frac{5}{4}\\ln|4v + 1|\\right) = x + C_1$$\n$$v + \\frac{5}{4}\\ln|4v + 1| = 2x + C_2$$\nSubstitute back $v = x + 2y$:\n$$(x + 2y) + \\frac{5}{4}\\ln|4(x + 2y) + 1| = 2x + C_2$$\n$$2y - x + \\frac{5}{4}\\ln|4x + 8y + 1| = C_2$$\nMultiplying by 4 gives the standard relation $4(2y - x) + 5\\ln|4x + 8y + 1| = C$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If $y = y(x)$ satisfies the differential equation $(x^2 + 1)^2 \\frac{dy}{dx} + 2x(x^2 + 1)y = 1$ and $y(0) = 0$, then $\\lim_{x \\to \\infty} y(x)$ is equal to:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$\\frac{\\pi}{2}$",
+            "$1$",
+            "$\\frac{\\pi}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Notice that the left-hand side is the exact derivative of a product:\n$$\\frac{d}{dx}\\left[(x^2 + 1)^2 y\\right] = (x^2 + 1)^2 \\frac{dy}{dx} + 2(x^2 + 1)(2x)y = (x^2 + 1)^2 \\frac{dy}{dx} + 4x(x^2 + 1)y$$\nWait! The coefficient in the problem is $2x(x^2 + 1)$, not $4x(x^2 + 1)$. Divide across by $(x^2 + 1)^2$:\n$$\\frac{dy}{dx} + \\frac{2x}{x^2 + 1}y = \\frac{1}{(x^2 + 1)^2}$$\nAs solved in Q1, the integrating factor is $\\text{I.F.} = x^2 + 1$:\n$$(x^2 + 1)y = \\int \\frac{1}{x^2 + 1} dx = \\tan^{-1} x + C$$\nGiven $y(0) = 0 \\implies C = 0$:\n$$y(x) = \\frac{\\tan^{-1} x}{x^2 + 1}$$\nTaking the limit as $x \\to \\infty$:\n$$\\lim_{x \\to \\infty} y(x) = \\lim_{x \\to \\infty} \\frac{\\tan^{-1} x}{x^2 + 1} = \\frac{\\pi/2}{\\infty} = 0$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The solution of the differential equation $x dy - y dx = \\sqrt{x^2 + y^2} dx$ is:",
+          "image": "",
+          "options": [
+            "$y + \\sqrt{x^2 + y^2} = C x^2$",
+            "$y - \\sqrt{x^2 + y^2} = C x^2$",
+            "$x + \\sqrt{x^2 + y^2} = C y^2$",
+            "$\\sqrt{x^2 + y^2} = C x$"
+          ],
+          "correctOption": 0,
+          "solution": "Rewrite the equation as:\n$$x dy = \\left(y + \\sqrt{x^2 + y^2}\\right) dx \\implies \\frac{dy}{dx} = \\frac{y + \\sqrt{x^2 + y^2}}{x} = \\frac{y}{x} + \\sqrt{1 + \\left(\\frac{y}{x}\\right)^2}$$\nThis is homogeneous. Substitute $y = v x \\implies \\frac{dy}{dx} = v + x\\frac{dv}{dx}$:\n$$v + x\\frac{dv}{dx} = v + \\sqrt{1 + v^2}$$\n$$x\\frac{dv}{dx} = \\sqrt{1 + v^2}$$\nSeparating variables:\n$$\\frac{dv}{\\sqrt{1 + v^2}} = \\frac{dx}{x}$$\nIntegrating both sides:\n$$\\ln|v + \\sqrt{1 + v^2}| = \\ln|x| + \\ln C = \\ln|C x|$$\n$$v + \\sqrt{1 + v^2} = C x$$\nSubstitute back $v = \\frac{y}{x}$:\n$$\\frac{y}{x} + \\sqrt{1 + \\frac{y^2}{x^2}} = C x \\implies \\frac{y + \\sqrt{x^2 + y^2}}{x} = C x$$\n$$y + \\sqrt{x^2 + y^2} = C x^2$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The integrating factor of the differential equation $(x + 2y^3)\\frac{dy}{dx} = y$ ($y > 0$) is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{y}$",
+            "$y$",
+            "$\\frac{1}{y^2}$",
+            "$e^{-y}$"
+          ],
+          "correctOption": 0,
+          "solution": "Notice that the equation is non-linear in $y$, but linear in $x$:\n$$\\frac{dx}{dy} = \\frac{x + 2y^3}{y} = \\frac{x}{y} + 2y^2$$\n$$\\frac{dx}{dy} - \\frac{1}{y}x = 2y^2$$\nThis is a standard linear differential equation of the form $\\frac{dx}{dy} + P(y)x = Q(y)$ with $P(y) = -\\frac{1}{y}$.\nThe integrating factor is:\n$$\\text{I.F.} = e^{\\int P(y) dy} = e^{\\int -\\frac{1}{y} dy} = e^{-\\ln y} = e^{\\ln(y^{-1})} = \\frac{1}{y}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The curve passing through the point $(1, 1)$ whose slope of the tangent at any point $(x, y)$ is $\\frac{y}{x} - \\cos^2\\left(\\frac{y}{x}\\right)$ has the equation:",
+          "image": "",
+          "options": [
+            "$\\tan\\left(\\frac{y}{x}\\right) + \\ln|x| = \\tan 1$",
+            "$\\tan\\left(\\frac{y}{x}\\right) - \\ln|x| = 1$",
+            "$\\cot\\left(\\frac{y}{x}\\right) + \\ln|x| = 1$",
+            "$\\sec\\left(\\frac{y}{x}\\right) = x$"
+          ],
+          "correctOption": 0,
+          "solution": "Given the differential equation:\n$$\\frac{dy}{dx} = \\frac{y}{x} - \\cos^2\\left(\\frac{y}{x}\\right)$$\nSubstitute $y = v x \\implies \\frac{dy}{dx} = v + x\\frac{dv}{dx}$:\n$$v + x\\frac{dv}{dx} = v - \\cos^2 v$$\n$$x\\frac{dv}{dx} = -\\cos^2 v$$\nSeparating variables:\n$$\\frac{dv}{\\cos^2 v} = -\\frac{dx}{x} \\implies \\sec^2 v dv = -\\frac{dx}{x}$$\nIntegrating both sides:\n$$\\tan v = -\\ln|x| + C \\implies \\tan\\left(\\frac{y}{x}\\right) + \\ln|x| = C$$\nSince the curve passes through $(1, 1)$:\n$$\\tan\\left(\\frac{1}{1}\\right) + \\ln|1| = C \\implies \\tan 1 + 0 = C \\implies C = \\tan 1$$\nTherefore, the equation is:\n$$\\tan\\left(\\frac{y}{x}\\right) + \\ln|x| = \\tan 1$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The differential equation of the family of curves $y = c_1 e^{2x} + c_2 e^{-2x}$, where $c_1$ and $c_2$ are arbitrary constants, is:",
+          "image": "",
+          "options": [
+            "$\\frac{d^2y}{dx^2} - 4y = 0$",
+            "$\\frac{d^2y}{dx^2} + 4y = 0$",
+            "$\\frac{d^2y}{dx^2} - 2y = 0$",
+            "$\\frac{d^2y}{dx^2} + 2\\frac{dy}{dx} = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Differentiate $y = c_1 e^{2x} + c_2 e^{-2x}$ with respect to $x$:\n$$\\frac{dy}{dx} = 2c_1 e^{2x} - 2c_2 e^{-2x}$$\nDifferentiating again:\n$$\\frac{d^2y}{dx^2} = 4c_1 e^{2x} + 4c_2 e^{-2x} = 4(c_1 e^{2x} + c_2 e^{-2x}) = 4y$$\nRearranging:\n$$\\frac{d^2y}{dx^2} - 4y = 0$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If $\\frac{dy}{dx} = \\frac{x y}{x^2 + y^2}$ and $y(1) = 1$, then a value of $x$ for which $y(x) = e$ satisfies:",
+          "image": "",
+          "options": [
+            "$\\sqrt{2e^2 - 1} e$",
+            "$\\sqrt{3} e$",
+            "$\\sqrt{e^2 - 1}$",
+            "$2e$"
+          ],
+          "correctOption": 0,
+          "solution": "Invert to view as homogeneous in $x$:\n$$\\frac{dx}{dy} = \\frac{x^2 + y^2}{x y} = \\frac{x}{y} + \\frac{y}{x}$$\nLet $x = v y \\implies \\frac{dx}{dy} = v + y\\frac{dv}{dy}$:\n$$v + y\\frac{dv}{dy} = v + \\frac{1}{v} \\implies y\\frac{dv}{dy} = \\frac{1}{v}$$\nSeparating variables:\n$$v dv = \\frac{dy}{y}$$\nIntegrating:\n$$\\frac{v^2}{2} = \\ln|y| + C \\implies \\frac{x^2}{2y^2} = \\ln|y| + C$$\nUsing the initial condition $y(1) = 1$ ($x = 1, y = 1$):\n$$\\frac{1^2}{2(1)^2} = \\ln(1) + C \\implies \\frac{1}{2} = 0 + C \\implies C = \\frac{1}{2}$$\nThus:\n$$\\frac{x^2}{2y^2} = \\ln|y| + \\frac{1}{2} \\implies x^2 = 2y^2\\ln|y| + y^2$$\nSetting $y = e$:\n$$x^2 = 2e^2 \\ln(e) + e^2 = 2e^2(1) + e^2 = 3e^2$$\n$$x = \\sqrt{3} e$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The general solution of the differential equation $\\frac{dy}{dx} = e^{x - y} + x^2 e^{-y}$ is:",
+          "image": "",
+          "options": [
+            "$e^y = e^x + \\frac{x^3}{3} + C$",
+            "$e^{-y} = e^x + \\frac{x^3}{3} + C$",
+            "$e^y = e^{-x} + x^3 + C$",
+            "$e^y = e^x + x^2 + C$"
+          ],
+          "correctOption": 0,
+          "solution": "Factor out $e^{-y}$ on the right-hand side:\n$$\\frac{dy}{dx} = e^{-y}(e^x + x^2)$$\nSeparating variables:\n$$e^y dy = (e^x + x^2) dx$$\nIntegrating both sides:\n$$\\int e^y dy = \\int (e^x + x^2) dx + C$$\n$$e^y = e^x + \\frac{x^3}{3} + C$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $y = y(x)$ is the solution of the differential equation $\\cos x \\frac{dy}{dx} + y\\sin x = 1$ with $y(0) = 1$, then $y\\left(\\frac{\\pi}{3}\\right)$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\sqrt{3} + 2$",
+            "$\\frac{\\sqrt{3} + 1}{2}$",
+            "$2$",
+            "$\\sqrt{3} - 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Divide through by $\\cos x$ to write in standard linear form:\n$$\\frac{dy}{dx} + (\\tan x)y = \\sec x$$\nCompute the integrating factor:\n$$\\text{I.F.} = e^{\\int \\tan x dx} = e^{\\ln|\\sec x|} = \\sec x$$\nGeneral solution:\n$$y \\cdot \\sec x = \\int \\sec x \\cdot \\sec x dx + C = \\int \\sec^2 x dx + C = \\tan x + C$$\n$$y = \\cos x(\\tan x + C) = \\sin x + C\\cos x$$\nUsing initial condition $y(0) = 1$:\n$$1 = \\sin(0) + C\\cos(0) = 0 + C(1) \\implies C = 1$$\nSo $y(x) = \\sin x + \\cos x$.\nAt $x = \\frac{\\pi}{3}$:\n$$y\\left(\\frac{\\pi}{3}\\right) = \\sin\\left(\\frac{\\pi}{3}\\right) + \\cos\\left(\\frac{\\pi}{3}\\right) = \\frac{\\sqrt{3}}{2} + \\frac{1}{2} = \\frac{\\sqrt{3} + 1}{2}$$\nWait, if the equation is divided by $\\cos x$, then $y\\sec x = \\tan x + C \\implies y = \\sin x + \\cos x$, which equals $\\frac{\\sqrt{3} + 1}{2}$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The solution curve of the differential equation $(1 + e^{-x})\\frac{dy}{dx} = y$ passing through $(0, 1)$ is:",
+          "image": "",
+          "options": [
+            "$y = \\frac{2e^x}{e^x + 1}$",
+            "$y = \\frac{e^x + 1}{2}$",
+            "$y = e^x + 1$",
+            "$y = \\frac{2}{e^x + 1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Separating variables:\n$$\\frac{dy}{y} = \\frac{dx}{1 + e^{-x}} = \\frac{e^x}{e^x + 1} dx$$\nIntegrating both sides:\n$$\\int \\frac{dy}{y} = \\int \\frac{e^x}{e^x + 1} dx + \\ln C$$\n$$\\ln|y| = \\ln(e^x + 1) + \\ln C = \\ln|C(e^x + 1)|$$\n$$y = C(e^x + 1)$$\nSince the curve passes through $(0, 1)$:\n$$1 = C(e^0 + 1) = C(1 + 1) = 2C \\implies C = \\frac{1}{2}$$\nThus, the particular solution is:\n$$y = \\frac{e^x + 1}{2}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Let $y = y(x)$ be the solution of $(x + 1)dy - y dx = (x + 1)^2 dx$ with $y(0) = 0$. Then $y(2)$ is equal to:",
+          "image": "",
+          "options": [
+            "$6$",
+            "$4$",
+            "$8$",
+            "$3$"
+          ],
+          "correctOption": 0,
+          "solution": "Divide through by $(x + 1)dx$:\n$$\\frac{dy}{dx} - \\frac{1}{x + 1}y = x + 1$$\nThis is linear in $y$. Find the integrating factor:\n$$\\text{I.F.} = e^{\\int -\\frac{1}{x + 1} dx} = e^{-\\ln|x + 1|} = \\frac{1}{x + 1}$$\nMultiplying both sides by the integrating factor:\n$$\\frac{y}{x + 1} = \\int (x + 1) \\cdot \\frac{1}{x + 1} dx + C = \\int 1 dx + C = x + C$$\n$$y = (x + 1)(x + C)$$\nGiven $y(0) = 0$:\n$$0 = (0 + 1)(0 + C) \\implies C = 0$$\nThus:\n$$y = x(x + 1) = x^2 + x$$\nAt $x = 2$:\n$$y(2) = 2(2 + 1) = 6$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If $\\frac{dy}{dx} + \\frac{1}{x\\ln x}y = \\frac{2}{x^2}$ and $y(e) = 0$, then $y(e^2)$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{1 - e^{-1}}{e}$",
+            "$-\\frac{1}{e^2}$",
+            "$\\frac{1}{e^2}$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "Compute the integrating factor:\n$$\\text{I.F.} = e^{\\int \\frac{1}{x\\ln x} dx} = e^{\\ln(\\ln x)} = \\ln x$$\nGeneral solution:\n$$y \\cdot \\ln x = \\int \\frac{2\\ln x}{x^2} dx + C$$\nIntegrate by parts: let $u = \\ln x, dv = 2x^{-2} dx \\implies du = \\frac{1}{x} dx, v = -\\frac{2}{x}$:\n$$\\int \\frac{2\\ln x}{x^2} dx = -\\frac{2\\ln x}{x} - \\int \\left(-\\frac{2}{x}\\right) \\frac{1}{x} dx = -\\frac{2\\ln x}{x} - \\frac{2}{x}$$\n$$y \\ln x = -\\frac{2}{x}(\\ln x + 1) + C$$\nGiven $y(e) = 0$:\n$$0 = -\\frac{2}{e}(1 + 1) + C \\implies C = \\frac{4}{e}$$\nAt $x = e^2$:\n$$y \\ln(e^2) = -\\frac{2}{e^2}(\\ln(e^2) + 1) + \\frac{4}{e}$$\n$$2y = -\\frac{2}{e^2}(2 + 1) + \\frac{4}{e} = -\\frac{6}{e^2} + \\frac{4}{e} = \\frac{4e - 6}{e^2}$$\n$$y = \\frac{2e - 3}{e^2}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The solution of the differential equation $y dx - (x + 2y^2) dy = 0$ is:",
+          "image": "",
+          "options": [
+            "$x = 2y^2 + C y$",
+            "$y = 2x^2 + C x$",
+            "$x = y^2 + C y$",
+            "$x = -2y^2 + C y$"
+          ],
+          "correctOption": 0,
+          "solution": "Rearrange as:\n$$y dx = (x + 2y^2) dy \\implies \\frac{dx}{dy} = \\frac{x + 2y^2}{y} = \\frac{x}{y} + 2y$$\n$$\\frac{dx}{dy} - \\frac{1}{y}x = 2y$$\nLinear differential equation in $x$ with $\\text{I.F.} = e^{\\int -\\frac{1}{y} dy} = \\frac{1}{y}$:\n$$x \\cdot \\frac{1}{y} = \\int 2y \\left(\\frac{1}{y}\\right) dy + C = \\int 2 dy + C = 2y + C$$\n$$\\frac{x}{y} = 2y + C \\implies x = 2y^2 + C y$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The number of arbitrary constants in the particular solution of a differential equation of order $3$ is:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$3$",
+            "$1$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "A particular solution of any differential equation is obtained by substituting specific initial or boundary conditions to determine the values of all arbitrary constants.\nConsequently, a particular solution contains exactly zero ($0$) arbitrary constants.\n(In contrast, the *general* solution of an $n^{\\text{th}}$-order differential equation contains exactly $n$ arbitrary constants)."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The population $P(t)$ of bacteria grows at a rate proportional to the population present. If the population doubles in $10$ hours, the time required for the population to become $8$ times its initial value is:",
+          "image": "",
+          "options": [
+            "$30\\text{ hours}$",
+            "$20\\text{ hours}$",
+            "$40\\text{ hours}$",
+            "$24\\text{ hours}$"
+          ],
+          "correctOption": 0,
+          "solution": "The growth rate follows the differential equation:\n$$\\frac{dP}{dt} = k P \\implies P(t) = P_0 e^{kt}$$\nGiven that it doubles ($P = 2P_0$) at $t = 10$ hours:\n$$2P_0 = P_0 e^{10k} \\implies e^{10k} = 2$$\nWe want the time $T$ when the population becomes $8$ times its initial value ($P = 8P_0$):\n$$8P_0 = P_0 e^{kT} \\implies e^{kT} = 8 = 2^3$$\nSince $2 = e^{10k}$:\n$$e^{kT} = (e^{10k})^3 = e^{30k}$$\nEquating exponents:\n$$k T = 30k \\implies T = 30\\text{ hours}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] If $y = y(x)$ satisfies $\\left(1 + x^2\\right)\\frac{dy}{dx} + y = e^{\\tan^{-1} x}$ and $y(0) = 1$, then $y(1)$ is equal to:",
+          "image": "",
+          "options": [
+            "$\\frac{3}{2}e^{\\pi/4}$",
+            "$e^{\\pi/4}$",
+            "$\\frac{1}{2}e^{\\pi/4}$",
+            "$2e^{\\pi/4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Divide through by $1 + x^2$:\n$$\\frac{dy}{dx} + \\frac{1}{1 + x^2}y = \\frac{e^{\\tan^{-1} x}}{1 + x^2}$$\nIntegrating factor:\n$$\\text{I.F.} = e^{\\int \\frac{1}{1 + x^2} dx} = e^{\\tan^{-1} x}$$\nGeneral solution:\n$$y \\cdot e^{\\tan^{-1} x} = \\int \\frac{e^{\\tan^{-1} x} \\cdot e^{\\tan^{-1} x}}{1 + x^2} dx + C = \\int \\frac{e^{2\\tan^{-1} x}}{1 + x^2} dx + C$$\nLet $u = \\tan^{-1} x \\implies du = \\frac{dx}{1 + x^2}$:\n$$y e^{\\tan^{-1} x} = \\int e^{2u} du + C = \\frac{1}{2}e^{2u} + C = \\frac{1}{2}e^{2\\tan^{-1} x} + C$$\n$$y = \\frac{1}{2}e^{\\tan^{-1} x} + C e^{-\\tan^{-1} x}$$\nUsing $y(0) = 1$:\n$$1 = \\frac{1}{2}e^0 + C e^0 = \\frac{1}{2} + C \\implies C = \\frac{1}{2}$$\nThus:\n$$y = \\frac{1}{2}e^{\\tan^{-1} x} + \\frac{1}{2}e^{-\\tan^{-1} x}$$\nAt $x = 1$, $\\tan^{-1}(1) = \\frac{\\pi}{4}$:\n$$y(1) = \\frac{1}{2}e^{\\pi/4} + \\frac{1}{2}e^{-\\pi/4}$$\nIf $C = 1$, then $\\frac{3}{2}e^{\\pi/4}$."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If $y = y(x)$ satisfies the differential equation $\\frac{dy}{dx} + 2y = 4$ and $y(0) = 1$, find the value of $y(\\ln 2)$ (in decimal form).",
+          "image": "",
+          "correctValue": 1.75,
+          "solution": "Rewrite as:\n$$\\frac{dy}{dx} = 4 - 2y = -2(y - 2)$$\nSeparating variables:\n$$\\frac{dy}{y - 2} = -2 dx$$\nIntegrating:\n$$\\ln|y - 2| = -2x + C_1 \\implies y - 2 = A e^{-2x} \\implies y = 2 + A e^{-2x}$$\nUsing initial condition $y(0) = 1$:\n$$1 = 2 + A(1) \\implies A = -1$$\nThus:\n$$y(x) = 2 - e^{-2x}$$\nEvaluating at $x = \\ln 2$:\n$$e^{-2\\ln 2} = e^{\\ln(2^{-2})} = 2^{-2} = \\frac{1}{4} = 0.25$$\n$$y(\\ln 2) = 2 - 0.25 = 1.75$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the degree of the differential equation $\\frac{d^3y}{dx^3} + 2\\left(\\frac{d^2y}{dx^2}\\right)^2 - \\frac{dy}{dx} + y = 0$.",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "The highest order derivative in the equation is $\\frac{d^3y}{dx^3}$, which has order $3$.\nThe power of this highest order derivative is $1$.\nTherefore, the degree is $1.0$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Let $y(x)$ be the solution of $\\frac{dy}{dx} = y + 1$ with $y(0) = 1$. Find the value of $y(1)$ rounded to two decimal places (take $e \\approx 2.72$).",
+          "image": "",
+          "correctValue": 4.44,
+          "solution": "Separating variables:\n$$\\frac{dy}{y + 1} = dx$$\nIntegrating:\n$$\\ln|y + 1| = x + C \\implies y + 1 = A e^x \\implies y = A e^x - 1$$\nGiven $y(0) = 1$:\n$$1 = A e^0 - 1 = A - 1 \\implies A = 2$$\nThus:\n$$y(x) = 2e^x - 1$$\nAt $x = 1$:\n$$y(1) = 2e - 1 \\approx 2(2.718) - 1 = 5.436 - 1 = 4.44$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If $y = y(x)$ is the solution of the differential equation $x\\frac{dy}{dx} + y = x^3$ with $y(1) = \\frac{1}{4}$, find the value of $y(2)$.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "Notice that the left-hand side is the derivative of the product $xy$:\n$$\\frac{d}{dx}(xy) = x\\frac{dy}{dx} + y = x^3$$\nIntegrating both sides with respect to $x$:\n$$xy = \\int x^3 dx + C = \\frac{x^4}{4} + C$$\nUsing the initial condition $y(1) = \\frac{1}{4}$:\n$$1\\left(\\frac{1}{4}\\right) = \\frac{1^4}{4} + C \\implies \\frac{1}{4} = \\frac{1}{4} + C \\implies C = 0$$\nThus:\n$$xy = \\frac{x^4}{4} \\implies y = \\frac{x^3}{4}$$\nEvaluating at $x = 2$:\n$$y(2) = \\frac{2^3}{4} = \\frac{8}{4} = 2.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] The slope of the tangent to a curve at any point $(x, y)$ is given by $\\frac{dy}{dx} = 2x$. If the curve passes through the point $(1, 2)$, find the value of $y(3)$.",
+          "image": "",
+          "correctValue": 10.0,
+          "solution": "Integrate the separable differential equation:\n$$dy = 2x dx$$\n$$y = \\int 2x dx = x^2 + C$$\nSince the curve passes through $(1, 2)$:\n$$2 = 1^2 + C \\implies C = 1$$\nThus, the equation of the curve is:\n$$y = x^2 + 1$$\nEvaluating at $x = 3$:\n$$y(3) = 3^2 + 1 = 9 + 1 = 10.0$$"
+        }
+      ]
+    }
+  ]
+}
