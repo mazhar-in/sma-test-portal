@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-chem-09-chemical-equilibrium",
+  "title": "Chemical Equilibrium (Law of Mass Action, Kp and Kc, & Le Chatelier's Principle)",
+  "syllabus": "Dynamic nature of equilibrium, Law of mass action and equilibrium constants (K_c and K_p); Relation between K_p and K_c (K_p = K_c(RT)^Δn_g); Characteristics and thermodynamic interpretation of equilibrium constant; Reaction quotient (Q) and predicting the direction of reaction; Homogeneous and heterogeneous equilibria; Degree of dissociation (α) and vapor density measurements; Factors affecting equilibrium (Le Chatelier's principle): effect of concentration, pressure, volume, temperature, and addition of inert gas at constant volume/pressure; van 't Hoff equation",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] For the reaction $\\text{N}_2(g) + 3\\text{H}_2(g) \\rightleftharpoons 2\\text{NH}_3(g)$, the value of $K_p$ is $4.0 \\times 10^{-2}$ at $500\\text{ K}$. The value of $K_c$ for this reaction at the same temperature is: (Take $R = 0.0821\\text{ L atm K}^{-1}\\text{ mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$67.4\\text{ M}^{-2}$",
+            "$2.37 \\times 10^{-5}\\text{ M}^{-2}$",
+            "$1.64\\text{ M}^{-2}$",
+            "$40.5\\text{ M}^{-2}$"
+          ],
+          "correctOption": 0,
+          "solution": "The relation between $K_p$ and $K_c$ is:\n$$K_p = K_c(RT)^{\\Delta n_g}$$\nFor the reaction $\\text{N}_2(g) + 3\\text{H}_2(g) \\rightleftharpoons 2\\text{NH}_3(g)$:\n$$\\Delta n_g = 2 - (1 + 3) = -2$$\n$$K_p = K_c(RT)^{-2} \\implies K_c = K_p(RT)^2$$\nSubstitute $K_p = 4.0 \\times 10^{-2}$, $R = 0.0821\\text{ L atm K}^{-1}\\text{ mol}^{-1}$, and $T = 500\\text{ K}$:\n$$RT = 0.0821 \\times 500 = 41.05$$\n$$(RT)^2 = (41.05)^2 \\approx 1685.1$$\n$$K_c = 4.0 \\times 10^{-2} \\times 1685.1 \\approx 67.4\\text{ M}^{-2}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For the reversible endothermic reaction:\n$$\\text{PCl}_5(g) \\rightleftharpoons \\text{PCl}_3(g) + \\text{Cl}_2(g)$$\nWhich of the following conditions will shift the equilibrium in the forward direction according to Le Chatelier's principle?",
+          "image": "",
+          "options": [
+            "Increasing temperature and decreasing total pressure",
+            "Decreasing temperature and increasing total pressure",
+            "Increasing total pressure at constant temperature",
+            "Adding an inert gas at constant volume"
+          ],
+          "correctOption": 0,
+          "solution": "For $\\text{PCl}_5(g) \\rightleftharpoons \\text{PCl}_3(g) + \\text{Cl}_2(g)$:\n1) $\\Delta H > 0$ (endothermic): Increasing temperature supplies heat, which drives the equilibrium toward the endothermic (forward) direction.\n2) $\\Delta n_g = (1 + 1) - 1 = +1 > 0$: The forward reaction proceeds with an increase in the number of moles of gas. Decreasing the total pressure shifts the equilibrium toward the side with more moles of gas (forward direction).\n3) Adding an inert gas at constant volume causes no change in the partial pressures of reactants or products, hence no shift occurs.\nThus, increasing temperature and decreasing pressure shifts the equilibrium forward."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Solid ammonium carbamate decomposes as:\n$$\\text{NH}_2\\text{COONH}_4(s) \\rightleftharpoons 2\\text{NH}_3(g) + \\text{CO}_2(g)$$\nIf the total pressure of the gaseous mixture at equilibrium is $P\\text{ atm}$, the value of $K_p$ for this equilibrium is:",
+          "image": "",
+          "options": [
+            "$\\frac{4}{27}P^3$",
+            "$\\frac{1}{27}P^3$",
+            "$\\frac{4}{9}P^2$",
+            "$4P^3$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the partial pressure of $\\text{CO}_2$ produced at equilibrium be $p$.\nFrom the stoichiometry of decomposition:\n$$p_{\\text{NH}_3} = 2p, \\quad p_{\\text{CO}_2} = p$$\nTotal equilibrium pressure:\n$$P = p_{\\text{NH}_3} + p_{\\text{CO}_2} = 2p + p = 3p \\implies p = \\frac{P}{3}$$\nTherefore:\n$$p_{\\text{NH}_3} = 2\\left(\\frac{P}{3}\\right) = \\frac{2P}{3}$$\n$$p_{\\text{CO}_2} = \\frac{P}{3}$$\nThe equilibrium constant $K_p$ is:\n$$K_p = (p_{\\text{NH}_3})^2 (p_{\\text{CO}_2}) = \\left(\\frac{2P}{3}\\right)^2 \\left(\\frac{P}{3}\\right) = \\frac{4P^2}{9} \\times \\frac{P}{3} = \\frac{4}{27}P^3$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the equilibrium constant for the reaction $\\text{N}_2(g) + \\text{O}_2(g) \\rightleftharpoons 2\\text{NO}(g)$ is $K$, then the equilibrium constant for the reaction $\\text{NO}(g) \\rightleftharpoons \\frac{1}{2}\\text{N}_2(g) + \\frac{1}{2}\\text{O}_2(g)$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{\\sqrt{K}}$",
+            "$\\frac{1}{K}$",
+            "$\\sqrt{K}$",
+            "$\\frac{1}{K^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For the original reaction:\n$$\\text{N}_2(g) + \\text{O}_2(g) \\rightleftharpoons 2\\text{NO}(g); \\quad K_1 = K = \\frac{[\\text{NO}]^2}{[\\text{N}_2][\\text{O}_2]}$$\n2. Reversing the reaction inverts the equilibrium constant:\n$$2\\text{NO}(g) \\rightleftharpoons \\text{N}_2(g) + \\text{O}_2(g); \\quad K_2 = \\frac{1}{K}$$\n3. Multiplying the stoichiometric coefficients by a factor of $\\frac{1}{2}$ raises the equilibrium constant to the power $\\frac{1}{2}$:\n$$\\text{NO}(g) \\rightleftharpoons \\frac{1}{2}\\text{N}_2(g) + \\frac{1}{2}\\text{O}_2(g); \\quad K_3 = (K_2)^{1/2} = \\left(\\frac{1}{K}\\right)^{1/2} = \\frac{1}{\\sqrt{K}}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An inert gas (like Argon) is added to the following equilibrium mixture at constant pressure:\n$$\\text{PCl}_5(g) \\rightleftharpoons \\text{PCl}_3(g) + \\text{Cl}_2(g)$$\nThe effect of this addition is that:",
+          "image": "",
+          "options": [
+            "The degree of dissociation of $\\text{PCl}_5$ increases",
+            "The degree of dissociation of $\\text{PCl}_5$ decreases",
+            "The equilibrium remains completely unaffected",
+            "$K_p$ and $K_c$ both increase"
+          ],
+          "correctOption": 0,
+          "solution": "When an inert gas is added at constant pressure, the total volume of the system must increase to maintain constant pressure.\n1. The increase in volume decreases the partial pressures (and molar concentrations) of all reacting species.\n2. According to Le Chatelier's principle, the system responds by shifting in the direction that produces more moles of gas.\n3. For $\\text{PCl}_5(g) \\rightleftharpoons \\text{PCl}_3(g) + \\text{Cl}_2(g)$, $\\Delta n_g = 1 + 1 - 1 = +1 > 0$, so the forward reaction produces more gaseous moles.\nConsequently, the equilibrium shifts forward, increasing the degree of dissociation ($\\alpha$) of $\\text{PCl}_5$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For the reaction $2\\text{SO}_2(g) + \\text{O}_2(g) \\rightleftharpoons 2\\text{SO}_3(g)$, the equilibrium concentrations are $[\\text{SO}_2] = 0.60\\text{ M}$, $[\\text{O}_2] = 0.82\\text{ M}$, and $[\\text{SO}_3] = 1.90\\text{ M}$. The value of $K_c$ for this reaction is approximately:",
+          "image": "",
+          "options": [
+            "$12.22\\text{ M}^{-1}$",
+            "$0.082\\text{ M}^{-1}$",
+            "$3.85\\text{ M}^{-1}$",
+            "$24.44\\text{ M}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "The expression for $K_c$ is:\n$$K_c = \\frac{[\\text{SO}_3]^2}{[\\text{SO}_2]^2 [\\text{O}_2]}$$\nSubstitute the equilibrium concentrations:\n$$K_c = \\frac{(1.90)^2}{(0.60)^2 \\times (0.82)} = \\frac{3.61}{0.36 \\times 0.82} = \\frac{3.61}{0.2952} \\approx 12.228\\text{ M}^{-1} \\approx 12.22\\text{ M}^{-1}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] In which of the following reactions is the value of $K_p$ equal to $K_c$?",
+          "image": "",
+          "options": [
+            "$\\text{H}_2(g) + \\text{I}_2(g) \\rightleftharpoons 2\\text{HI}(g)$",
+            "$\\text{N}_2(g) + 3\\text{H}_2(g) \\rightleftharpoons 2\\text{NH}_3(g)$",
+            "$\\text{PCl}_5(g) \\rightleftharpoons \\text{PCl}_3(g) + \\text{Cl}_2(g)$",
+            "$2\\text{SO}_2(g) + \\text{O}_2(g) \\rightleftharpoons 2\\text{SO}_3(g)$"
+          ],
+          "correctOption": 0,
+          "solution": "From the thermodynamic relation:\n$$K_p = K_c(RT)^{\\Delta n_g}$$\n$K_p = K_c$ if and only if $(RT)^{\\Delta n_g} = 1$, which requires:\n$$\\Delta n_g = 0$$\nCheck $\\Delta n_g = n_g(\\text{products}) - n_g(\\text{reactants})$:\n- Option A: $2 - (1 + 1) = 0 \\implies K_p = K_c$\n- Option B: $2 - 4 = -2$\n- Option C: $2 - 1 = +1$\n- Option D: $2 - 3 = -1$\nTherefore, $K_p = K_c$ for the reaction $\\text{H}_2(g) + \\text{I}_2(g) \\rightleftharpoons 2\\text{HI}(g)$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A reaction mixture contains $\\text{A}$, $\\text{B}$, and $\\text{C}$ such that the reaction quotient is $Q_c$. If the equilibrium constant is $K_c$ and $Q_c > K_c$, then the reaction will:",
+          "image": "",
+          "options": [
+            "Proceed in the reverse direction to form more reactants",
+            "Proceed in the forward direction to form more products",
+            "Remain in a state of dynamic equilibrium",
+            "Stop completely"
+          ],
+          "correctOption": 0,
+          "solution": "The reaction quotient $Q_c$ has the same algebraic form as $K_c$, but uses instantaneous non-equilibrium concentrations:\n- If $Q_c < K_c$: product concentrations are less than their equilibrium values, so the net reaction proceeds in the forward direction.\n- If $Q_c = K_c$: the system is at dynamic chemical equilibrium.\n- If $Q_c > K_c$: product concentrations exceed their equilibrium values, so the system consumes products and proceeds in the reverse (backward) direction to re-establish equilibrium."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The degree of dissociation ($\\alpha$) of $\\text{PCl}_5$ undergoing decomposition $\\text{PCl}_5(g) \\rightleftharpoons \\text{PCl}_3(g) + \\text{Cl}_2(g)$ is related to the theoretical vapor density ($D$) and observed vapor density ($d$) by:",
+          "image": "",
+          "options": [
+            "$\\alpha = \\frac{D - d}{d}$",
+            "$\\alpha = \\frac{d - D}{d}$",
+            "$\\alpha = \\frac{D - d}{D}$",
+            "$\\alpha = \\frac{D - d}{(n - 1)D}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a dissociation reaction where $1\\text{ mole}$ of reactant produces $n\\text{ moles}$ of gaseous products:\n$$A(g) \\rightleftharpoons n B(g)$$\n$$\\text{Total moles at equilibrium} = 1 - \\alpha + n\\alpha = 1 + (n - 1)\\alpha$$\nSince vapor density is inversely proportional to the total number of moles for a fixed mass of gas:\n$$\\frac{D}{d} = 1 + (n - 1)\\alpha \\implies (n - 1)\\alpha = \\frac{D}{d} - 1 = \\frac{D - d}{d} \\implies \\alpha = \\frac{D - d}{(n - 1)d}$$\nFor $\\text{PCl}_5(g) \\rightleftharpoons \\text{PCl}_3(g) + \\text{Cl}_2(g)$, $n = 2$:\n$$\\alpha = \\frac{D - d}{(2 - 1)d} = \\frac{D - d}{d}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For an exothermic reaction, the variation of equilibrium constant $K$ with absolute temperature $T$ is correctly represented by:",
+          "image": "",
+          "options": [
+            "A plot of $\\ln K$ versus $\\frac{1}{T}$ with a positive slope",
+            "A plot of $\\ln K$ versus $\\frac{1}{T}$ with a negative slope",
+            "A plot of $\\ln K$ versus $T$ with a positive slope",
+            "A plot of $K$ versus $T$ which is independent of temperature"
+          ],
+          "correctOption": 0,
+          "solution": "From the integrated van 't Hoff equation:\n$$\\ln K = -\\frac{\\Delta H^\\circ}{R} \\cdot \\frac{1}{T} + \\frac{\\Delta S^\\circ}{R}$$\nComparing with the linear equation $y = mx + c$ where $y = \\ln K$ and $x = \\frac{1}{T}$:\n$$\\text{Slope } m = -\\frac{\\Delta H^\\circ}{R}$$\nFor an exothermic reaction, $\\Delta H^\\circ < 0$ (negative).\n$$\\text{Slope} = -\\left(\\frac{-\\text{value}}{R}\\right) = +\\frac{|\\Delta H^\\circ|}{R} > 0$$\nThus, the plot of $\\ln K$ versus $\\frac{1}{T}$ is a straight line with a positive slope."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] What is the effect of adding a catalyst to a reversible chemical reaction at equilibrium?",
+          "image": "",
+          "options": [
+            "It increases the rates of both forward and reverse reactions equally without altering the equilibrium constant",
+            "It shifts the equilibrium toward the product side",
+            "It decreases the activation energy of the forward reaction only",
+            "It increases the numerical value of $K_c$"
+          ],
+          "correctOption": 0,
+          "solution": "A catalyst provides an alternative reaction pathway with a lower activation energy for both the forward and backward directions by the same amount ($E_{a,f}$ and $E_{a,b}$ are reduced by the identical $\\Delta E$).\nConsequently:\n1. The rate constants of both forward ($k_f$) and reverse ($k_b$) reactions increase by the same factor.\n2. The equilibrium constant $K = \\frac{k_f}{k_b}$ remains completely unchanged.\n3. The equilibrium composition and yield of products do not change; the system merely attains the state of equilibrium faster."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For the heterogeneous equilibrium $\\text{CaCO}_3(s) \\rightleftharpoons \\text{CaO}(s) + \\text{CO}_2(g)$, the equilibrium constant expression in terms of partial pressure is:",
+          "image": "",
+          "options": [
+            "$K_p = p_{\\text{CO}_2}$",
+            "$K_p = \\frac{p_{\\text{CaO}} \\cdot p_{\\text{CO}_2}}{p_{\\text{CaCO}_3}}$",
+            "$K_p = \\frac{p_{\\text{CO}_2}}{p_{\\text{CaCO}_3}}$",
+            "$K_p = (p_{\\text{CO}_2})^2$"
+          ],
+          "correctOption": 0,
+          "solution": "In heterogeneous equilibrium expressions, pure solids and pure liquids have fixed, constant active masses (chemical activities taken as unity, $a = 1$).\n$$\\text{Activity of } \\text{CaCO}_3(s) = 1, \\quad \\text{Activity of } \\text{CaO}(s) = 1$$\nTherefore, the equilibrium constant expression depends solely on the gaseous component:\n$$K_p = p_{\\text{CO}_2}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] One mole of $\\text{H}_2$ and one mole of $\\text{I}_2$ are heated in a closed $1\\text{ L}$ vessel until equilibrium is reached:\n$$\\text{H}_2(g) + \\text{I}_2(g) \\rightleftharpoons 2\\text{HI}(g)$$\nIf the equilibrium constant $K_c = 49$, the concentration of $\\text{HI}$ at equilibrium is:",
+          "image": "",
+          "options": [
+            "$1.56\\text{ M}$",
+            "$0.78\\text{ M}$",
+            "$0.22\\text{ M}$",
+            "$1.75\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $x\\text{ mol/L}$ of $\\text{H}_2$ and $\\text{I}_2$ react:\n- $[\\text{H}_2]_{\\text{eq}} = 1 - x$\n- $[\\text{I}_2]_{\\text{eq}} = 1 - x$\n- $[\\text{HI}]_{\\text{eq}} = 2x$\n\n$$K_c = \\frac{[\\text{HI}]^2}{[\\text{H}_2][\\text{I}_2]} = \\frac{(2x)^2}{(1 - x)(1 - x)} = \\left(\\frac{2x}{1 - x}\\right)^2 = 49$$\nTaking the square root on both sides:\n$$\\frac{2x}{1 - x} = 7$$\n$$2x = 7(1 - x) = 7 - 7x$$\n$$9x = 7 \\implies x = \\frac{7}{9} \\approx 0.778\\text{ M}$$\nConcentration of $\\text{HI}$ at equilibrium:\n$$[\\text{HI}] = 2x = 2 \\times \\frac{7}{9} = \\frac{14}{9} \\approx 1.556\\text{ M} \\approx 1.56\\text{ M}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In the reaction $2\\text{A}(g) + \\text{B}(g) \\rightleftharpoons 3\\text{C}(g) + \\text{D}(g)$, starting with initial moles of $\\text{A}$ and $\\text{B}$ in the ratio $2 : 1$, the degree of dissociation of $\\text{A}$ is $\\alpha$. If the total pressure at equilibrium is $P$, the partial pressure of $\\text{C}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{3\\alpha}{3 + \\alpha} P$",
+            "$\\frac{3\\alpha}{2 + \\alpha} P$",
+            "$\\frac{\\alpha}{1 + \\alpha} P$",
+            "$\\frac{2\\alpha}{3 + \\alpha} P$"
+          ],
+          "correctOption": 0,
+          "solution": "Let initial moles be $n_{\\text{A}} = 2$ and $n_{\\text{B}} = 1$.\nStoichiometry: $2\\text{A} + \\text{B} \\rightleftharpoons 3\\text{C} + \\text{D}$.\nIf degree of dissociation of $\\text{A}$ is $\\alpha$:\n- Moles of $\\text{A}$ reacted $= 2\\alpha \\implies n_{\\text{A, eq}} = 2 - 2\\alpha = 2(1 - \\alpha)$\n- Moles of $\\text{B}$ reacted $= \\alpha \\implies n_{\\text{B, eq}} = 1 - \\alpha$\n- Moles of $\\text{C}$ formed $= 3\\alpha$\n- Moles of $\\text{D}$ formed $= \\alpha$\n\nTotal moles at equilibrium:\n$$n_{\\text{total}} = 2(1 - \\alpha) + (1 - \\alpha) + 3\\alpha + \\alpha = 2 - 2\\alpha + 1 - \\alpha + 4\\alpha = 3 + \\alpha$$\nMole fraction of $\\text{C}$:\n$$x_{\\text{C}} = \\frac{n_{\\text{C}}}{n_{\\text{total}}} = \\frac{3\\alpha}{3 + \\alpha}$$\nPartial pressure of $\\text{C}$:\n$$p_{\\text{C}} = x_{\\text{C}} P = \\frac{3\\alpha}{3 + \\alpha} P$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For the reaction $\\text{C}(s) + \\text{CO}_2(g) \\rightleftharpoons 2\\text{CO}(g)$, the partial pressure of $\\text{CO}_2$ is $2\\text{ atm}$ and that of $\\text{CO}$ is $4\\text{ atm}$ at equilibrium. The value of $K_p$ for this reaction is:",
+          "image": "",
+          "options": [
+            "$8\\text{ atm}$",
+            "$4\\text{ atm}$",
+            "$2\\text{ atm}$",
+            "$16\\text{ atm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Carbon is in solid state, so its activity is unity ($a_{\\text{C}(s)} = 1$).\nThe expression for $K_p$ is:\n$$K_p = \\frac{(p_{\\text{CO}})^2}{p_{\\text{CO}_2}}$$\nSubstitute $p_{\\text{CO}} = 4\\text{ atm}$ and $p_{\\text{CO}_2} = 2\\text{ atm}$:\n$$K_p = \\frac{4^2}{2} = \\frac{16}{2} = 8\\text{ atm}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The value of $\\Delta G^\\circ$ for a reaction at $298\\text{ K}$ is $-5.71\\text{ kJ/mol}$. The equilibrium constant $K$ of the reaction is: (Take $2.303 RT \\approx 5.71\\text{ kJ/mol}$ at $298\\text{ K}$)",
+          "image": "",
+          "options": [
+            "$10$",
+            "$100$",
+            "$1$",
+            "$0.1$"
+          ],
+          "correctOption": 0,
+          "solution": "The thermodynamic relation between standard free energy and equilibrium constant is:\n$$\\Delta G^\\circ = -2.303 RT \\log_{10} K$$\nGiven $\\Delta G^\\circ = -5.71\\text{ kJ/mol}$ and $2.303 RT \\approx 5.71\\text{ kJ/mol}$:\n$$-5.71 = -5.71 \\log_{10} K$$\n$$\\log_{10} K = 1 \\implies K = 10^1 = 10$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following statements is FALSE regarding the equilibrium constant $K$?",
+          "image": "",
+          "options": [
+            "The value of $K$ depends on the initial concentrations of reactants",
+            "The value of $K$ depends on temperature",
+            "The value of $K$ is independent of the presence of a catalyst",
+            "The value of $K$ changes if the stoichiometric coefficients of the balanced equation are multiplied by a number"
+          ],
+          "correctOption": 0,
+          "solution": "1. The equilibrium constant $K$ is a characteristic constant for a given chemical equation at a specific temperature. It depends strictly on temperature and the form of the balanced equation.\n2. It is completely independent of the starting (initial) concentrations, volume, pressure, and the presence of catalysts.\nTherefore, the statement that $K$ depends on initial concentrations is false."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For the formation of nitric oxide: $\\text{N}_2(g) + \\text{O}_2(g) \\rightleftharpoons 2\\text{NO}(g); \\quad \\Delta H = +180.5\\text{ kJ}$. An increase in pressure on this system at equilibrium will:",
+          "image": "",
+          "options": [
+            "Have no effect on the equilibrium concentrations",
+            "Shift the equilibrium forward",
+            "Shift the equilibrium backward",
+            "Increase the value of $K_p$"
+          ],
+          "correctOption": 0,
+          "solution": "For the reaction $\\text{N}_2(g) + \\text{O}_2(g) \\rightleftharpoons 2\\text{NO}(g)$:\n$$\\Delta n_g = 2 - (1 + 1) = 0$$\nBecause there is no change in the number of gaseous moles between reactants and products, a change in external pressure or volume affects the forward and reverse reaction rates by the exact same factor.\nTherefore, pressure has no effect on the equilibrium position or composition."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] At $1000\\text{ K}$, the equilibrium constant for the decomposition of water is $K_1 = 2.5 \\times 10^{-10}$:\n$$2\\text{H}_2\\text{O}(g) \\rightleftharpoons 2\\text{H}_2(g) + \\text{O}_2(g)$$\nAt the same temperature, the equilibrium constant for the reaction $\\text{H}_2(g) + \\frac{1}{2}\\text{O}_2(g) \\rightleftharpoons \\text{H}_2\\text{O}(g)$ is:",
+          "image": "",
+          "options": [
+            "$6.32 \\times 10^4$",
+            "$4.0 \\times 10^9$",
+            "$2.0 \\times 10^5$",
+            "$1.58 \\times 10^{-5}$"
+          ],
+          "correctOption": 0,
+          "solution": "The target reaction is the reverse of the given reaction divided by 2:\n$$\\text{Target} = -\\frac{1}{2} \\times (\\text{Given Equation})$$\nTherefore, the new equilibrium constant $K_2$ is:\n$$K_2 = \\left(\\frac{1}{K_1}\\right)^{1/2} = \\frac{1}{\\sqrt{K_1}}$$\nSubstitute $K_1 = 2.5 \\times 10^{-10}$:\n$$K_2 = \\frac{1}{\\sqrt{2.5 \\times 10^{-10}}} = \\frac{1}{\\sqrt{25 \\times 10^{-11}}} = \\frac{1}{\\sqrt{2.5} \\times 10^{-5}} = \\frac{10^5}{1.581} \\approx 6.324 \\times 10^4$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In a closed vessel, the reaction $\\text{A}(g) + 2\\text{B}(g) \\rightleftharpoons 2\\text{C}(g)$ is at equilibrium. If the volume of the container is suddenly halved at constant temperature, the equilibrium will:",
+          "image": "",
+          "options": [
+            "Shift in the forward direction",
+            "Shift in the reverse direction",
+            "Not shift in either direction",
+            "Cause the equilibrium constant $K_c$ to double"
+          ],
+          "correctOption": 0,
+          "solution": "Halving the volume of the vessel at constant temperature doubles the total pressure and doubles the initial concentrations of all gases.\nFor $\\text{A}(g) + 2\\text{B}(g) \\rightleftharpoons 2\\text{C}(g)$:\n$$\\Delta n_g = 2 - (1 + 2) = -1 < 0$$\nBy Le Chatelier's principle, an increase in pressure (or decrease in volume) drives the system toward the side with fewer gaseous moles to relieve the added pressure.\nSince the forward side has $2\\text{ moles}$ while the reactant side has $3\\text{ moles}$, the equilibrium shifts forward."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] For the reaction $\\text{N}_2\\text{O}_4(g) \\rightleftharpoons 2\\text{NO}_2(g)$, the degree of dissociation at equilibrium is $\\alpha = 0.20$ at a total pressure of $1.0\\text{ atm}$. Calculate the value of $K_p$ (in atm, rounded to three decimal places).",
+          "image": "",
+          "correctValue": 0.167,
+          "solution": "Let initial moles of $\\text{N}_2\\text{O}_4 = 1$.\n- At equilibrium: $n_{\\text{N}_2\\text{O}_4} = 1 - \\alpha$, $n_{\\text{NO}_2} = 2\\alpha$\n- Total moles: $n_{\\text{total}} = 1 - \\alpha + 2\\alpha = 1 + \\alpha$\nPartial pressures:\n$$p_{\\text{N}_2\\text{O}_4} = \\frac{1 - \\alpha}{1 + \\alpha} P, \\quad p_{\\text{NO}_2} = \\frac{2\\alpha}{1 + \\alpha} P$$\nExpression for $K_p$:\n$$K_p = \\frac{(p_{\\text{NO}_2})^2}{p_{\\text{N}_2\\text{O}_4}} = \\frac{\\left(\\frac{2\\alpha}{1 + \\alpha} P\\right)^2}{\\frac{1 - \\alpha}{1 + \\alpha} P} = \\frac{4\\alpha^2 P}{1 - \\alpha^2}$$\nSubstitute $\\alpha = 0.20$ and $P = 1.0\\text{ atm}$:\n$$K_p = \\frac{4(0.20)^2 (1.0)}{1 - (0.20)^2} = \\frac{4(0.04)}{1 - 0.04} = \\frac{0.16}{0.96} = \\frac{1}{6} \\approx 0.167\\text{ atm}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] At a certain temperature, $K_c = 4.0$ for the reaction $\\text{A}(g) + \\text{B}(g) \\rightleftharpoons \\text{C}(g) + \\text{D}(g)$. If $1.0\\text{ mol}$ of each of $\\text{A}$, $\\text{B}$, $\\text{C}$, and $\\text{D}$ are mixed in a $1\\text{ L}$ container, find the equilibrium concentration of $\\text{C}$ (in $\\text{mol/L}$, rounded to two decimal places).",
+          "image": "",
+          "correctValue": 1.33,
+          "solution": "Initial quotient:\n$$Q_c = \\frac{[\\text{C}][\\text{D}]}{[\\text{A}][\\text{B}]} = \\frac{1.0 \\times 1.0}{1.0 \\times 1.0} = 1.0$$\nSince $Q_c < K_c$ ($1.0 < 4.0$), the reaction proceeds in the forward direction.\nLet $x\\text{ mol/L}$ react:\n- $[\\text{A}] = 1 - x$\n- $[\\text{B}] = 1 - x$\n- $[\\text{C}] = 1 + x$\n- $[\\text{D}] = 1 + x$\n\n$$K_c = \\frac{(1 + x)^2}{(1 - x)^2} = 4.0$$\nTaking square roots on both sides:\n$$\\frac{1 + x}{1 - x} = 2.0$$\n$$1 + x = 2(1 - x) = 2 - 2x$$\n$$3x = 1 \\implies x = \\frac{1}{3} \\approx 0.333\\text{ M}$$\nEquilibrium concentration of $\\text{C}$:\n$$[\\text{C}] = 1 + x = 1 + 0.333 = 1.33\\text{ M}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] For the gaseous reaction $\\text{A} + 2\\text{B} \\rightleftharpoons 2\\text{C}$, the value of $\\Delta n_g$ is:",
+          "image": "",
+          "correctValue": -1.0,
+          "solution": "Change in number of gaseous moles:\n$$\\Delta n_g = \\sum n_{g,\\text{products}} - \\sum n_{g,\\text{reactants}}$$\n$$\\Delta n_g = 2 - (1 + 2) = 2 - 3 = -1.0$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] For the equilibrium $\\text{PCl}_5(g) \\rightleftharpoons \\text{PCl}_3(g) + \\text{Cl}_2(g)$ at $250^\\circ\\text{C}$, the value of $K_c$ is $0.04\\text{ M}$. If the equilibrium concentrations of $\\text{PCl}_3$ and $\\text{Cl}_2$ are each $0.20\\text{ M}$, find the equilibrium concentration of $\\text{PCl}_5$ (in $\\text{mol/L}$).",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "The expression for $K_c$ is:\n$$K_c = \\frac{[\\text{PCl}_3][\\text{Cl}_2]}{[\\text{PCl}_5]}$$\nSubstitute $K_c = 0.04$, $[\\text{PCl}_3] = 0.20\\text{ M}$, and $[\\text{Cl}_2] = 0.20\\text{ M}$:\n$$0.04 = \\frac{0.20 \\times 0.20}{[\\text{PCl}_5]}$$\n$$[\\text{PCl}_5] = \\frac{0.04}{0.04} = 1.0\\text{ M}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] When solid $\\text{C}$ reacts with $\\text{CO}_2(g)$ to form $\\text{CO}(g)$ at $1000\\text{ K}$, the equilibrium total pressure is $10\\text{ atm}$. If the partial pressure of $\\text{CO}$ is $8\\text{ atm}$, find the value of $K_p$ (in atm).",
+          "image": "",
+          "correctValue": 32.0,
+          "solution": "Reaction:\n$$\\text{C}(s) + \\text{CO}_2(g) \\rightleftharpoons 2\\text{CO}(g)$$\nTotal pressure:\n$$P_{\\text{total}} = p_{\\text{CO}_2} + p_{\\text{CO}} = 10\\text{ atm}$$\nGiven $p_{\\text{CO}} = 8\\text{ atm}$:\n$$p_{\\text{CO}_2} = 10 - 8 = 2\\text{ atm}$$\nExpression for $K_p$:\n$$K_p = \\frac{(p_{\\text{CO}})^2}{p_{\\text{CO}_2}} = \\frac{8^2}{2} = \\frac{64}{2} = 32.0\\text{ atm}$$"
+        }
+      ]
+    }
+  ]
+}

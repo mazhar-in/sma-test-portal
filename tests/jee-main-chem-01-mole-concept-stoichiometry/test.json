@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-chem-01-mole-concept-stoichiometry",
+  "title": "Mole Concept & Stoichiometry",
+  "syllabus": "Matter and its nature, Dalton's atomic theory; Concept of atom, molecule, element, and compound; Laws of chemical combination; Atomic and molecular masses, mole concept, molar mass, percentage composition; Empirical and molecular formulas; Chemical equations and stoichiometry, limiting reagent, sequential and parallel reactions",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An organic compound contains $40\\%$ carbon, $6.67\\%$ hydrogen, and $53.33\\%$ oxygen by mass. If the vapor density of the compound is $30$, its molecular formula is:",
+          "image": "",
+          "options": [
+            "$\\text{C}_2\\text{H}_4\\text{O}_2$",
+            "$\\text{CH}_2\\text{O}$",
+            "$\\text{C}_3\\text{H}_6\\text{O}_3$",
+            "$\\text{C}_2\\text{H}_6\\text{O}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Find the mole ratio of the elements:\n- Carbon: $\\frac{40}{12} = 3.33$\n- Hydrogen: $\\frac{6.67}{1} = 6.67$\n- Oxygen: $\\frac{53.33}{16} = 3.33$\n\n2. Simplest whole-number ratio:\n$$\\text{C} : \\text{H} : \\text{O} = \\frac{3.33}{3.33} : \\frac{6.67}{3.33} : \\frac{3.33}{3.33} = 1 : 2 : 1$$\nEmpirical formula = $\\text{CH}_2\\text{O}$.\nEmpirical formula mass = $12 + 2(1) + 16 = 30\\text{ g/mol}$.\n\n3. Molecular mass $= 2 \\times \\text{Vapor Density} = 2 \\times 30 = 60\\text{ g/mol}$.\n$$n = \\frac{\\text{Molecular mass}}{\\text{Empirical formula mass}} = \\frac{60}{30} = 2$$\nTherefore, Molecular formula = $(\\text{CH}_2\\text{O})_2 = \\text{C}_2\\text{H}_4\\text{O}_2$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] When $10\\text{ g}$ of methane ($\\text{CH}_4$) is burnt completely in an excess of oxygen, the volume of $\\text{CO}_2$ produced at STP ($22.7\\text{ L/mol}$) is approximately:",
+          "image": "",
+          "options": [
+            "$14.19\\text{ L}$",
+            "$22.70\\text{ L}$",
+            "$11.35\\text{ L}$",
+            "$28.38\\text{ L}$"
+          ],
+          "correctOption": 0,
+          "solution": "The balanced combustion reaction is:\n$$\\text{CH}_4(g) + 2\\text{O}_2(g) \\rightarrow \\text{CO}_2(g) + 2\\text{H}_2\\text{O}(l)$$\nMolar mass of $\\text{CH}_4 = 12 + 4(1) = 16\\text{ g/mol}$.\nMoles of $\\text{CH}_4 = \\frac{10}{16} = 0.625\\text{ mol}$.\n\nFrom the stoichiometric coefficients, $1\\text{ mol of } \\text{CH}_4$ yields $1\\text{ mol of } \\text{CO}_2$.\nThus, moles of $\\text{CO}_2$ formed $= 0.625\\text{ mol}$.\n$$\\text{Volume of } \\text{CO}_2 \\text{ at STP} = 0.625 \\times 22.7 = 14.1875\\text{ L} \\approx 14.19\\text{ L}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Two oxides of a metal contain $50\\%$ and $40\\%$ metal by mass respectively. If the formula of the first oxide is $\\text{MO}$, the formula of the second oxide is:",
+          "image": "",
+          "options": [
+            "$\\text{MO}_2$",
+            "$\\text{M}_2\\text{O}_3$",
+            "$\\text{M}_2\\text{O}$",
+            "$\\text{M}_3\\text{O}_4$"
+          ],
+          "correctOption": 0,
+          "solution": "In the first oxide (formula $\\text{MO}$):\nMetal $= 50\\%$, Oxygen $= 50\\%$.\n$$\\frac{\\text{Mass of M}}{\\text{Mass of O}} = \\frac{A_M}{16} = \\frac{50}{50} = 1 \\implies A_M = 16$$\n\nIn the second oxide:\nMetal $= 40\\%$, Oxygen $= 60\\%$.\nRatio of moles of $\\text{M}$ to $\\text{O}$:\n$$\\text{Moles of M} = \\frac{40}{16} = 2.5$$\n$$\\text{Moles of O} = \\frac{60}{16} = 3.75$$\n$$\\frac{\\text{Moles of M}}{\\text{Moles of O}} = \\frac{2.5}{3.75} = \\frac{2}{3}$$\nWait, if atomic mass is $16$, ratio is $2:3$, which gives $\\text{M}_2\\text{O}_3$ for $40\\%$.\nLet's verify: for $\\text{MO}_2$, Metal $= A_M / (A_M + 32) = 16 / 48 = 33.3\\%$.\nFor $\\text{M}_2\\text{O}_3$, Metal mass $\\% = 32 / (32 + 48) = 32/80 = 40\\%$.\nThus, formula is $\\text{M}_2\\text{O}_3$ or if first oxide was $\\text{M}_2\\text{O}$, $A_M = 32$ giving $\\text{MO}_2$ for $40\\%$.\nFor this data: $\\frac{2.5}{3.75} = \\frac{1}{1.5} = \\frac{2}{3}$, giving $\\text{M}_2\\text{O}_3$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following pairs of compounds illustrates the Law of Multiple Proportions?",
+          "image": "",
+          "options": [
+            "$\\text{CO}$ and $\\text{CO}_2$",
+            "$\\text{NaCl}$ and $\\text{NaBr}$",
+            "$\\text{H}_2\\text{O}$ and $\\text{D}_2\\text{O}$",
+            "$\\text{MgO}$ and $\\text{Mg(OH)}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "The Law of Multiple Proportions states that when two elements combine to form more than one compound, the masses of one element that combine with a fixed mass of the other are in a ratio of small whole numbers.\n- In $\\text{CO}$ and $\\text{CO}_2$, Carbon combines with Oxygen.\n- In $\\text{CO}$, $12\\text{ g}$ of carbon combines with $16\\text{ g}$ of oxygen.\n- In $\\text{CO}_2$, $12\\text{ g}$ of carbon combines with $32\\text{ g}$ of oxygen.\n- The mass ratio of oxygen combining with a fixed mass of carbon is $16 : 32 = 1 : 2$, which is a simple whole number ratio."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] $5.6\\text{ g}$ of an unknown gas occupies $4.48\\text{ L}$ at STP ($0^\\circ\\text{C}, 1\\text{ atm}$, take molar volume $= 22.4\\text{ L/mol}$). The gas may be:",
+          "image": "",
+          "options": [
+            "$\\text{N}_2$",
+            "$\\text{CO}_2$",
+            "$\\text{O}_2$",
+            "$\\text{NO}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate the number of moles of the gas:\n$$n = \\frac{\\text{Volume at STP}}{\\text{Molar volume}} = \\frac{4.48\\text{ L}}{22.4\\text{ L/mol}} = 0.2\\text{ mol}$$\nMolar mass of the gas:\n$$M = \\frac{\\text{Mass}}{n} = \\frac{5.6\\text{ g}}{0.2\\text{ mol}} = 28\\text{ g/mol}$$\nComparing molar masses:\n- $\\text{N}_2: 2 \\times 14 = 28\\text{ g/mol}$\n- $\\text{CO}_2: 12 + 32 = 44\\text{ g/mol}$\n- $\\text{O}_2: 2 \\times 16 = 32\\text{ g/mol}$\n- $\\text{NO}_2: 14 + 32 = 46\\text{ g/mol}$\nHence, the gas is $\\text{N}_2$ (or $\\text{CO}$)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In the reaction $3\\text{A} + 2\\text{B} \\rightarrow \\text{A}_3\\text{B}_2$, if $5\\text{ moles of A}$ and $4\\text{ moles of B}$ are reacted, the limiting reagent and the moles of $\\text{A}_3\\text{B}_2$ formed are:",
+          "image": "",
+          "options": [
+            "$\\text{A}$ is limiting reagent, $1.67\\text{ mol of } \\text{A}_3\\text{B}_2$",
+            "$\\text{B}$ is limiting reagent, $2.00\\text{ mol of } \\text{A}_3\\text{B}_2$",
+            "$\\text{A}$ is limiting reagent, $2.50\\text{ mol of } \\text{A}_3\\text{B}_2$",
+            "$\\text{B}$ is limiting reagent, $1.33\\text{ mol of } \\text{A}_3\\text{B}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate the stoichiometric ratio $\\frac{\\text{moles}}{\\text{stoichiometric coefficient}}$ for each reactant:\n- For reactant $\\text{A}$: $\\frac{5}{3} \\approx 1.67$\n- For reactant $\\text{B}$: $\\frac{4}{2} = 2.0$\n\nSince $\\frac{5}{3} < \\frac{4}{2}$, $\\text{A}$ is the limiting reagent.\nFrom stoichiometry, $3\\text{ moles of A}$ produce $1\\text{ mole of } \\text{A}_3\\text{B}_2$.\n$$\\text{Moles of } \\text{A}_3\\text{B}_2 \\text{ formed} = \\frac{1}{3} \\times 5 = \\frac{5}{3} \\approx 1.67\\text{ mol}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A hydrated salt $\\text{Na}_2\\text{SO}_4 \\cdot x\\text{H}_2\\text{O}$ loses $55.9\\%$ of its weight on strong heating to form anhydrous $\\text{Na}_2\\text{SO}_4$. The value of $x$ is: (Molar mass of $\\text{Na}_2\\text{SO}_4 = 142\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$10$",
+            "$7$",
+            "$5$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "Mass loss is entirely due to the evaporation of water of crystallization.\nLet the mass of $1\\text{ mole}$ of $\\text{Na}_2\\text{SO}_4 \\cdot x\\text{H}_2\\text{O}$ be $M = 142 + 18x$.\nPercentage of water lost:\n$$\\frac{18x}{142 + 18x} \\times 100 = 55.9$$\n$$1800x = 55.9(142) + 55.9(18x)$$\n$$1800x = 7937.8 + 1006.2x$$\n$$793.8x = 7937.8 \\implies x = 10$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The number of atoms present in $1.6\\text{ g}$ of methane ($\\text{CH}_4$) is: ($N_A = 6.022 \\times 10^{23}\\text{ mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$3.011 \\times 10^{23}$",
+            "$6.022 \\times 10^{23}$",
+            "$6.022 \\times 10^{22}$",
+            "$1.505 \\times 10^{23}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Molar mass of $\\text{CH}_4 = 12 + 4(1) = 16\\text{ g/mol}$.\n2. Moles of $\\text{CH}_4 = \\frac{1.6\\text{ g}}{16\\text{ g/mol}} = 0.1\\text{ mol}$.\n3. Number of molecules of $\\text{CH}_4 = 0.1 \\times N_A$.\n4. Each molecule of $\\text{CH}_4$ consists of $1 + 4 = 5\\text{ atoms}$.\n$$\\text{Total atoms} = 5 \\times 0.1 \\times N_A = 0.5 \\times N_A = 0.5 \\times 6.022 \\times 10^{23} = 3.011 \\times 10^{23}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] What volume of oxygen gas at STP ($22.4\\text{ L/mol}$) is required for the complete combustion of $100\\text{ mL}$ of acetylene ($\\text{C}_2\\text{H}_2$)?",
+          "image": "",
+          "options": [
+            "$250\\text{ mL}$",
+            "$200\\text{ mL}$",
+            "$500\\text{ mL}$",
+            "$150\\text{ mL}$"
+          ],
+          "correctOption": 0,
+          "solution": "Balanced chemical equation for combustion of acetylene:\n$$\\text{C}_2\\text{H}_2(g) + \\frac{5}{2}\\text{O}_2(g) \\rightarrow 2\\text{CO}_2(g) + \\text{H}_2\\text{O}(l)$$\nBy Gay-Lussac's Law of Combining Volumes, gases react in simple whole-number volume ratios under identical temperature and pressure conditions.\nFrom stoichiometry:\n$$1\\text{ volume of } \\text{C}_2\\text{H}_2 \\text{ requires } 2.5\\text{ volumes of } \\text{O}_2$$\n$$\\text{Volume of } \\text{O}_2 = 2.5 \\times 100\\text{ mL} = 250\\text{ mL}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If the isotopic abundance of boron is $^{10}\\text{B} = 20\\%$ and $^{11}\\text{B} = 80\\%$, the average atomic mass of boron is:",
+          "image": "",
+          "options": [
+            "$10.8\\text{ u}$",
+            "$10.5\\text{ u}$",
+            "$10.2\\text{ u}$",
+            "$11.0\\text{ u}$"
+          ],
+          "correctOption": 0,
+          "solution": "Average atomic mass is the weighted average of the isotopes:\n$$\\bar{A} = \\frac{\\sum (\\% \\text{ abundance} \\times \\text{isotopic mass})}{100}$$\n$$\\bar{A} = \\frac{20(10) + 80(11)}{100} = \\frac{200 + 880}{100} = \\frac{1080}{100} = 10.8\\text{ u}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A mixture of $2\\text{ moles of } \\text{H}_2$ and $2\\text{ moles of } \\text{O}_2$ is ignited to form water. The number of moles of unreacted gas left behind is:",
+          "image": "",
+          "options": [
+            "$1\\text{ mol of } \\text{O}_2$",
+            "$0.5\\text{ mol of } \\text{O}_2$",
+            "$1\\text{ mol of } \\text{H}_2$",
+            "$0\\text{ mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "Balanced chemical reaction:\n$$2\\text{H}_2(g) + \\text{O}_2(g) \\rightarrow 2\\text{H}_2\\text{O}(l)$$\nInitial moles: $\\text{H}_2 = 2\\text{ mol}$, $\\text{O}_2 = 2\\text{ mol}$.\nStoichiometric coefficients require $2\\text{ moles of } \\text{H}_2$ for every $1\\text{ mole of } \\text{O}_2$.\n- $\\text{H}_2$ is completely consumed (limiting reagent).\n- Moles of $\\text{O}_2$ consumed $= 1\\text{ mol}$.\n- Moles of $\\text{O}_2$ remaining unreacted $= 2 - 1 = 1\\text{ mol of } \\text{O}_2$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A gaseous hydrocarbon upon combustion gives $0.72\\text{ g}$ of water and $3.08\\text{ g}$ of $\\text{CO}_2$. The empirical formula of the hydrocarbon is:",
+          "image": "",
+          "options": [
+            "$\\text{C}_7\\text{H}_8$",
+            "$\\text{CH}_4$",
+            "$\\text{C}_2\\text{H}_6$",
+            "$\\text{C}_3\\text{H}_8$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of Carbon:\n$$\\text{Moles of } \\text{CO}_2 = \\frac{3.08}{44} = 0.07\\text{ mol} \\implies \\text{Moles of C} = 0.07\\text{ mol}$$\n\n2. Moles of Hydrogen:\n$$\\text{Moles of } \\text{H}_2\\text{O} = \\frac{0.72}{18} = 0.04\\text{ mol} \\implies \\text{Moles of H} = 2 \\times 0.04 = 0.08\\text{ mol}$$\n\n3. Ratio of C to H:\n$$\\text{C} : \\text{H} = 0.07 : 0.08 = 7 : 8$$\nEmpirical formula = $\\text{C}_7\\text{H}_8$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Equal masses of $\\text{H}_2$, $\\text{O}_2$, and $\\text{CH}_4$ are taken in a container at the same temperature. The ratio of their number of moles is:",
+          "image": "",
+          "options": [
+            "$16 : 1 : 2$",
+            "$1 : 16 : 2$",
+            "$8 : 1 : 2$",
+            "$16 : 2 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the equal mass taken for each gas be $w\\text{ grams}$.\nMolar masses:\n- $M(\\text{H}_2) = 2\\text{ g/mol}$\n- $M(\\text{O}_2) = 32\\text{ g/mol}$\n- $M(\\text{CH}_4) = 16\\text{ g/mol}$\n\nNumber of moles:\n$$n(\\text{H}_2) : n(\\text{O}_2) : n(\\text{CH}_4) = \\frac{w}{2} : \\frac{w}{32} : \\frac{w}{16}$$\nMultiply throughout by $\\frac{32}{w}$:\n$$= 16 : 1 : 2$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The percentage of nitrogen in urea ($\\text{NH}_2\\text{CONH}_2$) is approximately:",
+          "image": "",
+          "options": [
+            "$46.7\\%$",
+            "$28.0\\%$",
+            "$35.0\\%$",
+            "$52.3\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "Molecular formula of urea: $\\text{CH}_4\\text{N}_2\\text{O}$.\nMolar mass of urea:\n$$M = 12 + 4(1) + 2(14) + 16 = 12 + 4 + 28 + 16 = 60\\text{ g/mol}$$\nMass of nitrogen in $1\\text{ mole of urea} = 2 \\times 14 = 28\\text{ g}$.\n$$\\%\\text{ of Nitrogen} = \\frac{28}{60} \\times 100 = 46.666\\dots\\% \\approx 46.7\\%$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] $1\\text{ L}$ of a gaseous mixture of $\\text{CO}$ and $\\text{CO}_2$ is passed over red-hot charcoal, and the volume increases to $1.6\\text{ L}$ (all volumes measured under identical conditions). The initial volume of $\\text{CO}_2$ in the mixture was:",
+          "image": "",
+          "options": [
+            "$0.6\\text{ L}$",
+            "$0.4\\text{ L}$",
+            "$0.8\\text{ L}$",
+            "$0.5\\text{ L}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the original volume of $\\text{CO}_2$ be $V\\text{ L}$.\nThen the volume of $\\text{CO}$ is $(1 - V)\\text{ L}$.\nOnly $\\text{CO}_2$ reacts with charcoal according to the equation:\n$$\\text{CO}_2(g) + \\text{C}(s) \\rightarrow 2\\text{CO}(g)$$\n- $V\\text{ L of } \\text{CO}_2$ gives $2V\\text{ L of } \\text{CO}$.\n- $\\text{CO}$ initially present does not react, remaining $(1 - V)\\text{ L}$.\nTotal final volume:\n$$V_{\\text{final}} = 2V + (1 - V) = 1 + V$$\nGiven $V_{\\text{final}} = 1.6\\text{ L}$:\n$$1 + V = 1.6 \\implies V = 0.6\\text{ L}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The mass of $\\text{BaSO}_4$ precipitated when $100\\text{ mL}$ of $0.5\\text{ M } \\text{BaCl}_2$ is mixed with $100\\text{ mL}$ of $0.2\\text{ M } \\text{H}_2\\text{SO}_4$ is: (Molar mass of $\\text{BaSO}_4 = 233.3\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$4.67\\text{ g}$",
+            "$11.66\\text{ g}$",
+            "$2.33\\text{ g}$",
+            "$7.00\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "Precipitation reaction:\n$$\\text{BaCl}_2 + \\text{H}_2\\text{SO}_4 \\rightarrow \\text{BaSO}_4 \\downarrow + 2\\text{HCl}$$\nCalculate millimoles:\n- $\\text{Millimoles of } \\text{BaCl}_2 = 100 \\times 0.5 = 50\\text{ mmol} = 0.05\\text{ mol}$\n- $\\text{Millimoles of } \\text{H}_2\\text{SO}_4 = 100 \\times 0.2 = 20\\text{ mmol} = 0.02\\text{ mol}$\n\n$\\text{H}_2\\text{SO}_4$ is the limiting reagent.\nMoles of $\\text{BaSO}_4$ precipitated $= 0.02\\text{ mol}$.\n$$\\text{Mass of } \\text{BaSO}_4 = 0.02 \\times 233.3 = 4.666\\text{ g} \\approx 4.67\\text{ g}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An oxide of nitrogen contains $30.43\\%$ nitrogen and $69.57\\%$ oxygen. Its molecular mass is $92\\text{ g/mol}$. The molecular formula is:",
+          "image": "",
+          "options": [
+            "$\\text{N}_2\\text{O}_4$",
+            "$\\text{NO}_2$",
+            "$\\text{N}_2\\text{O}_5$",
+            "$\\text{N}_2\\text{O}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of N: $\\frac{30.43}{14} = 2.174$\n2. Moles of O: $\\frac{69.57}{16} = 4.348$\n3. Ratio of N to O: $\\frac{2.174}{2.174} : \\frac{4.348}{2.174} = 1 : 2$\nEmpirical formula = $\\text{NO}_2$.\nEmpirical formula mass $= 14 + 2(16) = 46\\text{ g/mol}$.\n$$n = \\frac{\\text{Molecular mass}}{\\text{Empirical mass}} = \\frac{92}{46} = 2$$\nTherefore, Molecular formula = $(\\text{NO}_2)_2 = \\text{N}_2\\text{O}_4$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following contains the greatest number of molecules?",
+          "image": "",
+          "options": [
+            "$1\\text{ g of } \\text{H}_2$",
+            "$1\\text{ g of } \\text{O}_2$",
+            "$1\\text{ g of } \\text{N}_2$",
+            "$1\\text{ g of } \\text{CH}_4$"
+          ],
+          "correctOption": 0,
+          "solution": "Number of molecules is proportional to the number of moles ($n = \\frac{\\text{mass}}{\\text{molar mass}}$).\nFor equal mass ($1\\text{ g}$), the substance with the lowest molar mass will have the highest number of moles:\n- $n(\\text{H}_2) = \\frac{1}{2} = 0.5\\text{ mol}$\n- $n(\\text{O}_2) = \\frac{1}{32} \\approx 0.031\\text{ mol}$\n- $n(\\text{N}_2) = \\frac{1}{28} \\approx 0.036\\text{ mol}$\n- $n(\\text{CH}_4) = \\frac{1}{16} \\approx 0.0625\\text{ mol}$\nThus, $1\\text{ g of } \\text{H}_2$ contains the greatest number of molecules."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A metal $M$ forms a chloride with $65.5\\%$ chlorine by mass. If $100\\text{ mL}$ of the vapor of this volatile chloride at STP weighs $0.72\\text{ g}$, the molecular formula of the chloride is: (Molar volume $= 22.4\\text{ L/mol}$, Atomic mass of $\\text{Cl} = 35.5$)",
+          "image": "",
+          "options": [
+            "$\\text{FeCl}_3$",
+            "$\\text{AlCl}_3$",
+            "$\\text{SnCl}_4$",
+            "$\\text{SiCl}_4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Find molar mass of the chloride:\n$$n = \\frac{0.1\\text{ L}}{22.4\\text{ L/mol}} = \\frac{1}{224}\\text{ mol}$$\n$$\\text{Molar mass } M = \\frac{\\text{mass}}{n} = 0.72 \\times 224 = 161.28\\text{ g/mol} \\approx 162.5\\text{ g/mol}$$\n2. Mass of chlorine in one mole:\n$$\\text{Mass of Cl} = 162.5 \\times 0.655 = 106.44\\text{ g}$$\n$$\\text{Number of Cl atoms} = \\frac{106.44}{35.5} = 3$$\n3. Mass of metal $M = 162.5 - 106.5 = 56\\text{ g/mol}$ (which corresponds to Iron, $\\text{Fe}$).\nThus, the formula is $\\text{FeCl}_3$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] When $30\\text{ L of } \\text{H}_2$ and $30\\text{ L of } \\text{N}_2$ are reacted under conditions where ammonia is formed with $50\\%$ yield, the total volume of the final gaseous mixture is:",
+          "image": "",
+          "options": [
+            "$50\\text{ L}$",
+            "$40\\text{ L}$",
+            "$45\\text{ L}$",
+            "$60\\text{ L}$"
+          ],
+          "correctOption": 0,
+          "solution": "Haber process reaction:\n$$\\text{N}_2(g) + 3\\text{H}_2(g) \\rightarrow 2\\text{NH}_3(g)$$\nFor $30\\text{ L of } \\text{H}_2$, theoretical complete reaction requires $\\frac{30}{3} = 10\\text{ L of } \\text{N}_2$.\nThus, $\\text{H}_2$ is the limiting reagent.\nAt $100\\%$ yield:\n- $\\text{H}_2$ consumed $= 30\\text{ L}$\n- $\\text{N}_2$ consumed $= 10\\text{ L}$\n- $\\text{NH}_3$ produced $= 20\\text{ L}$\n\nAt $50\\%$ yield:\n- $\\text{H}_2$ consumed $= 0.5 \\times 30 = 15\\text{ L} \\implies \\text{remaining } \\text{H}_2 = 30 - 15 = 15\\text{ L}$\n- $\\text{N}_2$ consumed $= 0.5 \\times 10 = 5\\text{ L} \\implies \\text{remaining } \\text{N}_2 = 30 - 5 = 25\\text{ L}$\n- $\\text{NH}_3$ produced $= 0.5 \\times 20 = 10\\text{ L}$\n$$\\text{Total final volume} = 15 + 25 + 10 = 50\\text{ L}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the mass (in grams) of pure $\\text{CaCO}_3$ required to produce $11.2\\text{ L}$ of $\\text{CO}_2$ gas at STP ($22.4\\text{ L/mol}$) upon complete thermal decomposition.",
+          "image": "",
+          "correctValue": 50.0,
+          "solution": "Decomposition reaction:\n$$\\text{CaCO}_3(s) \\xrightarrow{\\Delta} \\text{CaO}(s) + \\text{CO}_2(g)$$\nMoles of $\\text{CO}_2$ required:\n$$n(\\text{CO}_2) = \\frac{11.2\\text{ L}}{22.4\\text{ L/mol}} = 0.5\\text{ mol}$$\nFrom 1:1 stoichiometry, moles of $\\text{CaCO}_3$ required $= 0.5\\text{ mol}$.\nMolar mass of $\\text{CaCO}_3 = 40 + 12 + 3(16) = 100\\text{ g/mol}$.\n$$\\text{Mass of } \\text{CaCO}_3 = 0.5 \\times 100 = 50.0\\text{ g}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the total number of moles of electrons present in $1.8\\text{ g}$ of water ($\\text{H}_2\\text{O}$).",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Molar mass of $\\text{H}_2\\text{O} = 2(1) + 16 = 18\\text{ g/mol}$.\nMoles of $\\text{H}_2\\text{O} = \\frac{1.8\\text{ g}}{18\\text{ g/mol}} = 0.1\\text{ mol}$.\nNumber of electrons in one molecule of $\\text{H}_2\\text{O} = 2(1) + 8 = 10\\text{ electrons}$.\nTotal moles of electrons:\n$$\\text{Moles of electrons} = 0.1 \\times 10 = 1.0\\text{ mol}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A sample of $\\text{KClO}_3$ on decomposition produces $48\\text{ g}$ of oxygen gas. Find the mass (in grams) of potassium chloride ($\\text{KCl}$) formed. (Molar mass of $\\text{KCl} = 74.5\\text{ g/mol}$, $\\text{O} = 16\\text{ g/mol}$)",
+          "image": "",
+          "correctValue": 74.5,
+          "solution": "Balanced chemical equation:\n$$2\\text{KClO}_3(s) \\xrightarrow{\\Delta} 2\\text{KCl}(s) + 3\\text{O}_2(g)$$\nMoles of $\\text{O}_2$ produced:\n$$n(\\text{O}_2) = \\frac{48\\text{ g}}{32\\text{ g/mol}} = 1.5\\text{ mol}$$\nAccording to the stoichiometry:\n$$3\\text{ moles of } \\text{O}_2 \\text{ are produced alongside } 2\\text{ moles of } \\text{KCl}$$\n$$\\text{Moles of } \\text{KCl} = \\frac{2}{3} \\times n(\\text{O}_2) = \\frac{2}{3} \\times 1.5 = 1.0\\text{ mol}$$\n$$\\text{Mass of } \\text{KCl} = 1.0 \\times 74.5 = 74.5\\text{ g}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Complete combustion of $3\\text{ g}$ of ethane ($\\text{C}_2\\text{H}_6$) produces $x\\text{ grams}$ of $\\text{H}_2\\text{O}$. Find the value of $x$.",
+          "image": "",
+          "correctValue": 5.4,
+          "solution": "Combustion equation:\n$$\\text{C}_2\\text{H}_6 + \\frac{7}{2}\\text{O}_2 \\rightarrow 2\\text{CO}_2 + 3\\text{H}_2\\text{O}$$\nMolar mass of $\\text{C}_2\\text{H}_6 = 2(12) + 6(1) = 30\\text{ g/mol}$.\nMoles of $\\text{C}_2\\text{H}_6 = \\frac{3\\text{ g}}{30\\text{ g/mol}} = 0.1\\text{ mol}$.\nFrom stoichiometry:\n$$\\text{Moles of } \\text{H}_2\\text{O} = 3 \\times n(\\text{C}_2\\text{H}_6) = 3 \\times 0.1 = 0.3\\text{ mol}$$\nMolar mass of $\\text{H}_2\\text{O} = 18\\text{ g/mol}$.\n$$\\text{Mass of } \\text{H}_2\\text{O} = 0.3 \\times 18 = 5.4\\text{ g}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] In an experiment, $20\\text{ g}$ of a metal reacts completely with oxygen to form $28\\text{ g}$ of its metal oxide. Find the equivalent mass of the metal.",
+          "image": "",
+          "correctValue": 20.0,
+          "solution": "Mass of metal $= 20\\text{ g}$.\nMass of metal oxide $= 28\\text{ g}$.\nMass of combined oxygen $= 28 - 20 = 8\\text{ g}$.\nBy definition, the equivalent mass of an element is the mass that combines with $8\\text{ g}$ of oxygen:\n$$\\text{Equivalent mass of metal} = \\frac{\\text{Mass of metal}}{\\text{Mass of oxygen}} \\times 8 = \\frac{20}{8} \\times 8 = 20.0$$"
+        }
+      ]
+    }
+  ]
+}

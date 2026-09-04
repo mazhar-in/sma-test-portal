@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-chem-05-classical-thermodynamics",
+  "title": "Classical Thermodynamics (First Law, Work, Heat, Internal Energy, Enthalpy, & Hess's Law)",
+  "syllabus": "Fundamentals of thermodynamics: System and surroundings, extensive and intensive properties, state and path functions; First law of thermodynamics: Internal energy (U), heat (q), and work (w); Pressure-volume work in reversible and irreversible isothermal/adiabatic expansions and compressions of ideal gases; Enthalpy (H), relation between ΔH and ΔU (ΔH = ΔU + Δn_g RT); Heat capacities (C_p, C_v) and their relationship; Thermochemistry: Standard enthalpy changes of reaction, formation, combustion, neutralization, and phase transitions; Hess's Law of constant heat summation and its applications; Bond dissociation enthalpies and lattice enthalpy (Born-Haber cycle)",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Two moles of an ideal gas expand isothermally and reversibly from a volume of $2\\text{ L}$ to $20\\text{ L}$ at $300\\text{ K}$. The work done by the gas in this process is: (Take $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$, $\\ln 10 = 2.303$)",
+          "image": "",
+          "options": [
+            "$-11.49\\text{ kJ}$",
+            "$+11.49\\text{ kJ}$",
+            "$-5.74\\text{ kJ}$",
+            "$-22.98\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "For an isothermal reversible expansion of an ideal gas, the work done (by IUPAC convention, $w = -\\int P_{ext} dV$) is given by:\n$$w = -nRT \\ln\\left(\\frac{V_2}{V_1}\\right) = -2.303 nRT \\log_{10}\\left(\\frac{V_2}{V_1}\\right)$$\nSubstitute the given values:\n- $n = 2\\text{ mol}$\n- $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$\n- $T = 300\\text{ K}$\n- $V_1 = 2\\text{ L}, \\quad V_2 = 20\\text{ L} \\implies \\frac{V_2}{V_1} = 10$\n\n$$w = -2.303 \\times 2 \\times 8.314 \\times 300 \\times \\log_{10}(10)$$\n$$w = -2.303 \\times 2 \\times 8.314 \\times 300 \\times 1 = -11488.5\\text{ J} \\approx -11.49\\text{ kJ}$$\n(The negative sign indicates work is done by the system on the surroundings)."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For the combustion of one mole of liquid benzene at $298\\text{ K}$:\n$$\\text{C}_6\\text{H}_6(l) + \\frac{15}{2}\\text{O}_2(g) \\rightarrow 6\\text{CO}_2(g) + 3\\text{H}_2\\text{O}(l)$$\nThe difference between the enthalpy change and internal energy change ($\\Delta H - \\Delta U$) in $\\text{kJ}$ is: (Take $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$-3.72\\text{ kJ}$",
+            "$+3.72\\text{ kJ}$",
+            "$-1.24\\text{ kJ}$",
+            "$+1.24\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "The relation between $\\Delta H$ and $\\Delta U$ is:\n$$\\Delta H = \\Delta U + \\Delta n_g RT \\implies \\Delta H - \\Delta U = \\Delta n_g RT$$\nCalculate $\\Delta n_g$ (change in moles of gaseous substances):\n$$\\Delta n_g = n_g(\\text{products}) - n_g(\\text{reactants})$$\nHere, the gaseous species are $6\\text{ mol of CO}_2$ and $\\frac{15}{2} = 7.5\\text{ mol of O}_2$ (benzene and water are in liquid state):\n$$\\Delta n_g = 6 - 7.5 = -1.5$$\nSubstitute $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$ and $T = 298\\text{ K}$:\n$$\\Delta H - \\Delta U = (-1.5) \\times 8.314 \\times 298\\text{ J} = -3716.36\\text{ J} \\approx -3.72\\text{ kJ}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A gas expands from a volume of $2.0\\text{ L}$ to $6.0\\text{ L}$ against a constant external pressure of $2.5\\text{ atm}$. During this expansion, it absorbs $600\\text{ J}$ of heat from the surroundings. The change in internal energy ($\\Delta U$) of the gas is: (Take $1\\text{ L}\\cdot\\text{atm} = 101.3\\text{ J}$)",
+          "image": "",
+          "options": [
+            "$-413\\text{ J}$",
+            "$+413\\text{ J}$",
+            "$-1613\\text{ J}$",
+            "$+1613\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "Work done in an irreversible expansion against a constant external pressure is:\n$$w = -P_{ext} \\Delta V = -2.5\\text{ atm} \\times (6.0 - 2.0)\\text{ L} = -2.5 \\times 4.0 = -10.0\\text{ L}\\cdot\\text{atm}$$\nConvert work to Joules:\n$$w = -10.0 \\times 101.3\\text{ J} = -1013\\text{ J}$$\nHeat absorbed by the system:\n$$q = +600\\text{ J}$$\nAccording to the First Law of Thermodynamics:\n$$\\Delta U = q + w = 600\\text{ J} + (-1013\\text{ J}) = -413\\text{ J}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following collections contains ONLY state functions?",
+          "image": "",
+          "options": [
+            "Internal energy ($U$), Enthalpy ($H$), Temperature ($T$), Pressure ($P$)",
+            "Heat ($q$), Work ($w$), Internal energy ($U$)",
+            "Enthalpy ($H$), Heat capacity ($C$), Work ($w$)",
+            "Heat ($q$), Entropy ($S$), Gibbs energy ($G$)"
+          ],
+          "correctOption": 0,
+          "solution": "State functions depend only on the current macroscopic state of the system and are independent of the path taken to reach that state.\n- Internal energy ($U$), Enthalpy ($H$), Temperature ($T$), Pressure ($P$), Volume ($V$), Entropy ($S$), and Gibbs energy ($G$) are state functions.\n- Heat ($q$) and Work ($w$) are path functions because their values depend on the specific path/process followed between states.\nTherefore, the group in Option A contains only state functions."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Given the following thermochemical equations:\n1) $\\text{C}(s) + \\text{O}_2(g) \\rightarrow \\text{CO}_2(g); \\quad \\Delta H_1 = -393.5\\text{ kJ/mol}$\n2) $\\text{H}_2(g) + \\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{H}_2\\text{O}(l); \\quad \\Delta H_2 = -285.8\\text{ kJ/mol}$\n3) $\\text{CH}_4(g) + 2\\text{O}_2(g) \\rightarrow \\text{CO}_2(g) + 2\\text{H}_2\\text{O}(l); \\quad \\Delta H_3 = -890.3\\text{ kJ/mol}$\nThe standard enthalpy of formation of methane ($\\text{CH}_4$) is:",
+          "image": "",
+          "options": [
+            "$-74.8\\text{ kJ/mol}$",
+            "$+74.8\\text{ kJ/mol}$",
+            "$-211.0\\text{ kJ/mol}$",
+            "$+211.0\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "The target formation reaction is:\n$$\\text{C}(s) + 2\\text{H}_2(g) \\rightarrow \\text{CH}_4(g) \\quad (\\Delta H_f^\\circ)$$\nUsing Hess's Law:\n$$\\text{Equation} = \\text{Eq (1)} + 2 \\times \\text{Eq (2)} - \\text{Eq (3)}$$\n$$\\Delta H_f^\\circ = \\Delta H_1 + 2\\Delta H_2 - \\Delta H_3$$\nSubstitute the numeric values:\n$$\\Delta H_f^\\circ = (-393.5) + 2(-285.8) - (-890.3)$$\n$$\\Delta H_f^\\circ = -393.5 - 571.6 + 890.3 = -965.1 + 890.3 = -74.8\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For an ideal gas undergoing an adiabatic reversible expansion, which of the following relations is correct? ($\\gamma = C_p/C_v$)",
+          "image": "",
+          "options": [
+            "$T V^{\\gamma - 1} = \\text{constant}$",
+            "$T^{\\gamma} V = \\text{constant}$",
+            "$P^{\\gamma - 1} T = \\text{constant}$",
+            "$P V = \\text{constant}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a reversible adiabatic process of an ideal gas ($dq = 0$):\n$$dU = dw \\implies n C_v dT = -P dV = -\\frac{nRT}{V} dV$$\n$$\\frac{C_v}{R} \\frac{dT}{T} = -\\frac{dV}{V}$$\nSince $R = C_p - C_v$ and $\\gamma = C_p/C_v$, we have $\\frac{R}{C_v} = \\gamma - 1$.\nIntegrating yields:\n$$\\ln T + (\\gamma - 1)\\ln V = \\text{constant} \\implies T V^{\\gamma - 1} = \\text{constant}$$\nThe other standard equivalent relations are $P V^\\gamma = \\text{constant}$ and $T^\\gamma P^{1 - \\gamma} = \\text{constant}$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] One mole of an ideal monoatomic gas ($\\gamma = 5/3$) at $300\\text{ K}$ is subjected to a free expansion in an isolated chamber from $10\\text{ L}$ to $50\\text{ L}$. The change in internal energy ($\\Delta U$) and the final temperature are:",
+          "image": "",
+          "options": [
+            "$\\Delta U = 0, \\quad T_f = 300\\text{ K}$",
+            "$\\Delta U < 0, \\quad T_f < 300\\text{ K}$",
+            "$\\Delta U > 0, \\quad T_f > 300\\text{ K}$",
+            "$\\Delta U = 0, \\quad T_f = 60\\text{ K}$"
+          ],
+          "correctOption": 0,
+          "solution": "In free expansion into a vacuum, the external pressure is zero ($P_{ext} = 0$), so:\n$$w = -\\int P_{ext} dV = 0$$\nSince the container is isolated, there is no heat exchange with the surroundings:\n$$q = 0$$\nFrom the First Law of Thermodynamics:\n$$\\Delta U = q + w = 0 + 0 = 0$$\nFor an ideal gas, internal energy is solely a function of temperature: $\\Delta U = n C_v \\Delta T$.\nSince $\\Delta U = 0$, we have $\\Delta T = 0$, which means:\n$$T_f = T_i = 300\\text{ K}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The bond dissociation enthalpies of $\\text{H}-\\text{H}$, $\\text{Cl}-\\text{Cl}$, and $\\text{H}-\\text{Cl}$ are $434$, $242$, and $431\\text{ kJ/mol}$ respectively. The standard enthalpy of formation of $\\text{HCl}(g)$ is:",
+          "image": "",
+          "options": [
+            "$-93\\text{ kJ/mol}$",
+            "$+93\\text{ kJ/mol}$",
+            "$-186\\text{ kJ/mol}$",
+            "$+186\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "The formation reaction of $\\text{HCl}(g)$ for 1 mole of product is:\n$$\\frac{1}{2}\\text{H}_2(g) + \\frac{1}{2}\\text{Cl}_2(g) \\rightarrow \\text{HCl}(g)$$\nUsing bond dissociation energies:\n$$\\Delta H_f^\\circ = \\sum \\text{B.E.}(\\text{reactants broken}) - \\sum \\text{B.E.}(\\text{products formed})$$\n$$\\Delta H_f^\\circ = \\left[\\frac{1}{2}\\text{B.E.}(\\text{H}-\\text{H}) + \\frac{1}{2}\\text{B.E.}(\\text{Cl}-\\text{Cl})\\right] - \\text{B.E.}(\\text{H}-\\text{Cl})$$\nSubstitute the values:\n$$\\Delta H_f^\\circ = \\left[\\frac{1}{2}(434) + \\frac{1}{2}(242)\\right] - 431$$\n$$\\Delta H_f^\\circ = [217 + 121] - 431 = 338 - 431 = -93\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An ideal gas undergoes a cyclic process $A \\rightarrow B \\rightarrow C \\rightarrow A$. If the heat absorbed along $A \\rightarrow B$ is $50\\text{ J}$, work done along $B \\rightarrow C$ is $-20\\text{ J}$, and process $C \\rightarrow A$ is adiabatic with work done $+30\\text{ J}$, the total work done in the entire cycle is:",
+          "image": "",
+          "options": [
+            "Equal to the net heat absorbed in the cycle",
+            "Always strictly zero",
+            "Independent of path",
+            "Equal to $\\Delta U$ of step $A \\rightarrow B$"
+          ],
+          "correctOption": 0,
+          "solution": "For any complete cyclic process, the initial and final states are identical.\nSince internal energy $U$ is a state function:\n$$\\Delta U_{\\text{cycle}} = 0$$\nBy the First Law of Thermodynamics applied to the whole cycle:\n$$\\Delta U_{\\text{cycle}} = q_{\\text{net}} + w_{\\text{net}} = 0 \\implies w_{\\text{net}} = -q_{\\text{net}}$$\nThus, the total net work done by the system is equal in magnitude to the net heat absorbed by the system."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For which of the following reactions is $\\Delta H = \\Delta U$?",
+          "image": "",
+          "options": [
+            "$\\text{H}_2(g) + \\text{I}_2(g) \\rightarrow 2\\text{HI}(g)$",
+            "$\\text{N}_2(g) + 3\\text{H}_2(g) \\rightarrow 2\\text{NH}_3(g)$",
+            "$\\text{PCl}_5(g) \\rightarrow \\text{PCl}_3(g) + \\text{Cl}_2(g)$",
+            "$\\text{C}(s) + \\text{O}_2(g) \\rightarrow \\text{CO}_2(g) + \\text{CO}(g)$"
+          ],
+          "correctOption": 0,
+          "solution": "From $\\Delta H = \\Delta U + \\Delta n_g RT$, $\\Delta H = \\Delta U$ if and only if $\\Delta n_g = 0$.\nEvaluate $\\Delta n_g = n_g(\\text{products}) - n_g(\\text{reactants})$ for each reaction:\n- Option A: $2 - (1 + 1) = 2 - 2 = 0 \\implies \\Delta H = \\Delta U$\n- Option B: $2 - (1 + 3) = 2 - 4 = -2$\n- Option C: $(1 + 1) - 1 = 2 - 1 = +1$\n- Option D: $2 - 1 = +1$\nTherefore, $\\Delta H = \\Delta U$ holds for $\\text{H}_2(g) + \\text{I}_2(g) \\rightarrow 2\\text{HI}(g)$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The heat of neutralization of a strong acid with a strong base in dilute aqueous solution at $298\\text{ K}$ is $-57.1\\text{ kJ/eq}$. When $0.5\\text{ mole of HCl}$ is mixed with $0.2\\text{ mole of NaOH}$, the heat evolved is:",
+          "image": "",
+          "options": [
+            "$11.42\\text{ kJ}$",
+            "$28.55\\text{ kJ}$",
+            "$57.10\\text{ kJ}$",
+            "$5.71\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "Neutralization reaction:\n$$\\text{H}^+(aq) + \\text{OH}^-(aq) \\rightarrow \\text{H}_2\\text{O}(l); \\quad \\Delta H = -57.1\\text{ kJ/mol}$$\nMoles of $\\text{H}^+ = 0.5\\text{ mol}$.\nMoles of $\\text{OH}^- = 0.2\\text{ mol}$.\nHere $\\text{OH}^-$ is the limiting reagent, so only $0.2\\text{ mole}$ of $\\text{H}_2\\text{O}$ is formed.\nHeat evolved:\n$$q = 0.2\\text{ mol} \\times 57.1\\text{ kJ/mol} = 11.42\\text{ kJ}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following properties of a thermodynamic system is an intensive property?",
+          "image": "",
+          "options": [
+            "Molar heat capacity",
+            "Internal energy",
+            "Enthalpy",
+            "Volume"
+          ],
+          "correctOption": 0,
+          "solution": "An intensive property is independent of the size or quantity of matter in the system.\n- Volume, mass, internal energy, heat capacity, and enthalpy are extensive properties because they depend directly on the amount of substance.\n- When an extensive property is divided by the mass or number of moles (e.g., molar heat capacity $C_{m} = C/n$, density $\\rho = m/V$), it becomes an intensive property."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] In an adiabatic expansion of an ideal gas, the work done by the gas is $150\\text{ J}$. The change in internal energy ($\\Delta U$) of the gas is:",
+          "image": "",
+          "options": [
+            "$-150\\text{ J}$",
+            "$+150\\text{ J}$",
+            "$0\\text{ J}$",
+            "$-300\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "For an adiabatic process, there is no heat transfer:\n$$q = 0$$\nWork done by the gas means $w = -150\\text{ J}$ (by IUPAC convention, expansion work is negative).\nApplying the First Law of Thermodynamics:\n$$\\Delta U = q + w = 0 + (-150\\text{ J}) = -150\\text{ J}$$\n(The internal energy decreases because the gas does work at the expense of its own internal thermal energy)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Five moles of an ideal gas are compressed isothermally and reversibly at $27^\\circ\\text{C}$ from $1\\text{ atm}$ to $10\\text{ atm}$. The work done on the gas is: (Take $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$, $\\ln 10 = 2.303$)",
+          "image": "",
+          "options": [
+            "$+28.72\\text{ kJ}$",
+            "$-28.72\\text{ kJ}$",
+            "$+14.36\\text{ kJ}$",
+            "$-14.36\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "For an isothermal reversible compression:\n$$w = -nRT \\ln\\left(\\frac{P_1}{P_2}\\right) = +2.303 nRT \\log_{10}\\left(\\frac{P_2}{P_1}\\right)$$\nSubstitute $n = 5\\text{ mol}$, $T = 27 + 273 = 300\\text{ K}$, $P_1 = 1\\text{ atm}$, $P_2 = 10\\text{ atm}$:\n$$w = 2.303 \\times 5 \\times 8.314 \\times 300 \\times \\log_{10}(10)$$\n$$w = 2.303 \\times 5 \\times 8.314 \\times 300 \\times 1 = 28721\\text{ J} \\approx +28.72\\text{ kJ}$$\n(Positive sign denotes work done on the system)."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For a reaction $\\text{A}(s) + 2\\text{B}(g) \\rightarrow 2\\text{C}(g) + \\text{D}(s)$, $\\Delta U^\\circ = -10.5\\text{ kJ}$ at $298\\text{ K}$. The value of $\\Delta H^\\circ$ for the reaction is: (Take $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$-10.5\\text{ kJ}$",
+            "$-15.5\\text{ kJ}$",
+            "$+10.5\\text{ kJ}$",
+            "$-5.5\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate $\\Delta n_g$ for the reaction:\n$$\\Delta n_g = n_g(\\text{products}) - n_g(\\text{reactants}) = 2 - 2 = 0$$\nSince $\\Delta n_g = 0$:\n$$\\Delta H^\\circ = \\Delta U^\\circ + \\Delta n_g RT = \\Delta U^\\circ + 0 = -10.5\\text{ kJ}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The molar heat capacity at constant pressure ($C_p$) of an ideal gas is $\\frac{7}{2}R$. The ratio of work done to the heat supplied at constant pressure during expansion is:",
+          "image": "",
+          "options": [
+            "$\\frac{2}{7}$",
+            "$\\frac{5}{7}$",
+            "$\\frac{3}{7}$",
+            "$\\frac{2}{5}$"
+          ],
+          "correctOption": 0,
+          "solution": "At constant pressure:\n- Heat supplied: $q_p = n C_p \\Delta T = n\\left(\\frac{7}{2}R\\right)\\Delta T$\n- Work done by the gas: $w_{\\text{by}} = P \\Delta V = n R \\Delta T$\nThe ratio of work done to heat supplied is:\n$$\\frac{w_{\\text{by}}}{q_p} = \\frac{nR\\Delta T}{n C_p \\Delta T} = \\frac{R}{C_p} = \\frac{R}{\\frac{7}{2}R} = \\frac{2}{7}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Given the reaction:\n$$\\text{CH}_3\\text{COOH}(aq) + \\text{NaOH}(aq) \\rightarrow \\text{CH}_3\\text{COONa}(aq) + \\text{H}_2\\text{O}(l); \\quad \\Delta H = -55.8\\text{ kJ/mol}$$\nIf the heat of neutralization of strong acid with strong base is $-57.3\\text{ kJ/mol}$, the enthalpy of ionization of $\\text{CH}_3\\text{COOH}$ is:",
+          "image": "",
+          "options": [
+            "$+1.5\\text{ kJ/mol}$",
+            "$-1.5\\text{ kJ/mol}$",
+            "$+113.1\\text{ kJ/mol}$",
+            "$-113.1\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "The neutralization of a weak acid by a strong base involves two steps:\n1) Ionization of weak acid: $\\text{CH}_3\\text{COOH} \\rightarrow \\text{CH}_3\\text{COO}^- + \\text{H}^+; \\quad \\Delta H_{\\text{ion}}$\n2) Neutralization of $\\text{H}^+$ and $\\text{OH}^-$: $\\text{H}^+ + \\text{OH}^- \\rightarrow \\text{H}_2\\text{O}; \\quad \\Delta H_{\\text{neut}} = -57.3\\text{ kJ/mol}$\n\nTotal enthalpy of reaction:\n$$\\Delta H = \\Delta H_{\\text{ion}} + \\Delta H_{\\text{neut}}$$\n$$-55.8 = \\Delta H_{\\text{ion}} - 57.3$$\n$$\\Delta H_{\\text{ion}} = -55.8 + 57.3 = +1.5\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following statements is FALSE concerning the First Law of Thermodynamics?",
+          "image": "",
+          "options": [
+            "For an isolated system, $q \\ne 0$ and $w \\ne 0$",
+            "Energy of the universe remains conserved",
+            "$\\oint dU = 0$ for any cyclic path",
+            "In an isochoric process with no non-PV work, $q_v = \\Delta U$"
+          ],
+          "correctOption": 0,
+          "solution": "By definition, an isolated system cannot exchange either matter or energy (heat or work) with its surroundings.\nTherefore, for an isolated system, $q = 0$ and $w = 0$, which gives $\\Delta U = 0$.\nStatement A is false."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For the reaction:\n$$\\text{N}_2\\text{O}_4(g) \\rightleftharpoons 2\\text{NO}_2(g)$$\nIf $\\Delta U^\\circ = 54.0\\text{ kJ}$ at $300\\text{ K}$, the value of $\\Delta H^\\circ$ is: (Take $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$56.49\\text{ kJ}$",
+            "$51.51\\text{ kJ}$",
+            "$54.00\\text{ kJ}$",
+            "$58.98\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate $\\Delta n_g$:\n$$\\Delta n_g = 2 - 1 = 1$$\nRelation:\n$$\\Delta H^\\circ = \\Delta U^\\circ + \\Delta n_g RT$$\n$$\\Delta H^\\circ = 54.0\\text{ kJ} + \\frac{1 \\times 8.314 \\times 300}{1000}\\text{ kJ}$$\n$$\\Delta H^\\circ = 54.0 + 2.4942 = 56.4942\\text{ kJ} \\approx 56.49\\text{ kJ}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In a constant-volume bomb calorimeter, $1.0\\text{ g}$ of a substance ($M = 100\\text{ g/mol}$) is burned in excess oxygen. The temperature rises from $298.0\\text{ K}$ to $300.0\\text{ K}$. If the heat capacity of the calorimeter assembly is $10.0\\text{ kJ/K}$, the heat of combustion at constant volume ($\\Delta U_c$) per mole of the substance is:",
+          "image": "",
+          "options": [
+            "$-2000\\text{ kJ/mol}$",
+            "$-200\\text{ kJ/mol}$",
+            "$+2000\\text{ kJ/mol}$",
+            "$-20\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "Heat evolved during the combustion in the bomb calorimeter:\n$$q_{\\text{cal}} = C_{\\text{cal}} \\Delta T = 10.0\\text{ kJ/K} \\times (300.0 - 298.0)\\text{ K} = 10.0 \\times 2.0 = 20.0\\text{ kJ}$$\nHeat produced by the system at constant volume:\n$$q_v = -q_{\\text{cal}} = -20.0\\text{ kJ}$$\nMoles of substance burned:\n$$n = \\frac{1.0\\text{ g}}{100\\text{ g/mol}} = 0.01\\text{ mol}$$\nHeat of combustion per mole:\n$$\\Delta U_c = \\frac{q_v}{n} = \\frac{-20.0\\text{ kJ}}{0.01\\text{ mol}} = -2000\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the work done (in Joules) when $1\\text{ mole}$ of an ideal gas expands isothermally from $1.0\\text{ L}$ to $10.0\\text{ L}$ against a constant opposing pressure of $1.0\\text{ bar}$. (Take $1\\text{ bar}\\cdot\\text{L} = 100\\text{ J}$)",
+          "image": "",
+          "correctValue": -900.0,
+          "solution": "For irreversible expansion against constant external pressure:\n$$w = -P_{ext} (V_2 - V_1)$$\n$$w = -1.0\\text{ bar} \\times (10.0 - 1.0)\\text{ L} = -9.0\\text{ bar}\\cdot\\text{L}$$\nConvert to Joules:\n$$w = -9.0 \\times 100\\text{ J} = -900.0\\text{ J}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] For the vaporization of water at $373\\text{ K}$, $\\Delta H_{\\text{vap}} = 40.66\\text{ kJ/mol}$. Find the change in internal energy $\\Delta U_{\\text{vap}}$ (in $\\text{kJ/mol}$) for $1\\text{ mole}$ of water. (Take $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$, round to two decimal places).",
+          "image": "",
+          "correctValue": 37.56,
+          "solution": "Phase transition:\n$$\\text{H}_2\\text{O}(l) \\rightarrow \\text{H}_2\\text{O}(g)$$\n$$\\Delta n_g = 1 - 0 = 1$$\nUsing $\\Delta H = \\Delta U + \\Delta n_g RT$:\n$$\\Delta U = \\Delta H - \\Delta n_g RT$$\n$$\\Delta U = 40.66\\text{ kJ/mol} - \\frac{1 \\times 8.314 \\times 373}{1000}\\text{ kJ/mol}$$\n$$\\Delta U = 40.66 - 3.101 = 37.559\\text{ kJ/mol} \\approx 37.56\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A gas absorbs $200\\text{ J}$ of heat and undergoes expansion doing $120\\text{ J}$ of work. Find the change in internal energy $\\Delta U$ (in Joules).",
+          "image": "",
+          "correctValue": 80.0,
+          "solution": "Heat absorbed by system: $q = +200\\text{ J}$.\nWork done by system: $w = -120\\text{ J}$.\nAccording to the First Law of Thermodynamics:\n$$\\Delta U = q + w = 200 + (-120) = 80.0\\text{ J}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Enthalpy of combustion of carbon to $\\text{CO}_2$ is $-393.5\\text{ kJ/mol}$. Calculate the heat released (in kJ) upon formation of $35.2\\text{ g}$ of $\\text{CO}_2$ from carbon and excess oxygen.",
+          "image": "",
+          "correctValue": 314.8,
+          "solution": "Molar mass of $\\text{CO}_2 = 12 + 2(16) = 44\\text{ g/mol}$.\nMoles of $\\text{CO}_2$ formed:\n$$n = \\frac{35.2\\text{ g}}{44\\text{ g/mol}} = 0.8\\text{ mol}$$\nHeat released for 1 mole formed $= 393.5\\text{ kJ}$.\nHeat released for $0.8\\text{ mole}$:\n$$q = 0.8 \\times 393.5 = 314.8\\text{ kJ}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] For an ideal gas undergoing a reversible adiabatic process, if the initial temperature is $300\\text{ K}$ and the volume expands to $8$ times its initial volume with $\\gamma = \\frac{5}{3}$, find the final temperature (in Kelvin).",
+          "image": "",
+          "correctValue": 75.0,
+          "solution": "Using the adiabatic relation:\n$$T_1 V_1^{\\gamma - 1} = T_2 V_2^{\\gamma - 1}$$\nGiven $\\gamma = 5/3 \\implies \\gamma - 1 = 2/3$.\n$$T_2 = T_1 \\left(\\frac{V_1}{V_2}\\right)^{\\gamma - 1} = 300 \\left(\\frac{1}{8}\\right)^{2/3}$$\nSince $8^{2/3} = (2^3)^{2/3} = 2^2 = 4$:\n$$T_2 = 300 \\times \\frac{1}{4} = 75.0\\text{ K}$$"
+        }
+      ]
+    }
+  ]
+}

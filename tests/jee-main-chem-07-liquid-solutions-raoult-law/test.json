@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-chem-07-liquid-solutions-raoult-law",
+  "title": "Liquid Solutions (Vapour Pressure, Raoult's Law, Ideal & Non-Ideal Solutions)",
+  "syllabus": "Vapour pressure of liquid solutions; Raoult's Law for volatile solutes (binary liquid-liquid mixtures) and non-volatile solutes; Dalton's Law of partial pressures and vapor phase composition (Dalton-Raoult combined relationship); Bubble point and dew point equations; Ideal solutions (thermodynamic criteria: ΔH_mix = 0, ΔV_mix = 0, ΔS_mix > 0, ΔG_mix < 0); Non-ideal solutions showing positive and negative deviations from Raoult's Law (intermolecular forces, thermodynamic signatures); Azeotropic mixtures (minimum and maximum boiling azeotropes); Fractional distillation and boiling-point composition diagrams",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] At $300\\text{ K}$, the vapour pressures of pure liquid $A$ and pure liquid $B$ are $400\\text{ mm Hg}$ and $600\\text{ mm Hg}$ respectively. In an equimolar ideal binary liquid solution of $A$ and $B$, the mole fraction of liquid $B$ in the vapour phase in equilibrium with the liquid solution is:",
+          "image": "",
+          "options": [
+            "$0.60$",
+            "$0.40$",
+            "$0.50$",
+            "$0.75$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Liquid phase mole fractions for an equimolar solution:\n$$x_A = 0.5, \\quad x_B = 0.5$$\n\n2. By Raoult's Law, the partial vapour pressures are:\n$$P_A = x_A P_A^\\circ = 0.5 \\times 400 = 200\\text{ mm Hg}$$\n$$P_B = x_B P_B^\\circ = 0.5 \\times 600 = 300\\text{ mm Hg}$$\n\n3. Total vapour pressure of the mixture:\n$$P_{\\text{total}} = P_A + P_B = 200 + 300 = 500\\text{ mm Hg}$$\n\n4. By Dalton's Law of partial pressures, the mole fraction of $B$ in the vapour phase ($y_B$) is:\n$$y_B = \\frac{P_B}{P_{\\text{total}}} = \\frac{300}{500} = 0.60$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Which of the following binary liquid mixtures exhibits a negative deviation from Raoult's Law and forms a maximum boiling azeotrope?",
+          "image": "",
+          "options": [
+            "Acetone + Chloroform",
+            "Ethanol + Acetone",
+            "Benzene + Toluene",
+            "Carbon tetrachloride + Chloroform"
+          ],
+          "correctOption": 0,
+          "solution": "1. In an acetone + chloroform mixture, a strong intermolecular hydrogen bond forms between the carbonyl oxygen of acetone and the acidic hydrogen of chloroform (due to three strongly electron-withdrawing $-\\text{Cl}$ groups):\n$$\\text{CH}_3-\\text{C}(=\\text{O})-\\text{CH}_3 \\cdots \\text{H}-\\text{CCl}_3$$\n2. The $A-B$ intermolecular attractive forces are stronger than the $A-A$ and $B-B$ interactions.\n3. Consequently, the escaping tendency of the molecules decreases, resulting in lower vapour pressure than predicted by Raoult's Law (negative deviation: $\\Delta H_{\\text{mix}} < 0$, $\\Delta V_{\\text{mix}} < 0$).\n4. A solution exhibiting large negative deviation reaches a vapour pressure minimum and thus forms a maximum boiling azeotrope."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The total vapour pressure ($P$) of an ideal binary solution of volatile liquids $A$ and $B$ is given by the empirical relation $P = 120 + 80 x_B$ (in $\\text{mm Hg}$), where $x_B$ is the mole fraction of component $B$ in the liquid phase. The vapour pressures of pure $A$ and pure $B$ ($P_A^\\circ$ and $P_B^\\circ$) are respectively:",
+          "image": "",
+          "options": [
+            "$120\\text{ mm Hg}$ and $200\\text{ mm Hg}$",
+            "$80\\text{ mm Hg}$ and $120\\text{ mm Hg}$",
+            "$120\\text{ mm Hg}$ and $80\\text{ mm Hg}$",
+            "$200\\text{ mm Hg}$ and $120\\text{ mm Hg}$"
+          ],
+          "correctOption": 0,
+          "solution": "According to Raoult's Law for an ideal binary solution:\n$$P = P_A + P_B = x_A P_A^\\circ + x_B P_B^\\circ$$\nSubstitute $x_A = 1 - x_B$:\n$$P = (1 - x_B) P_A^\\circ + x_B P_B^\\circ = P_A^\\circ + (P_B^\\circ - P_A^\\circ) x_B$$\nComparing with the given equation $P = 120 + 80 x_B$:\n- $P_A^\\circ = 120\\text{ mm Hg}$\n- $P_B^\\circ - P_A^\\circ = 80\\text{ mm Hg} \\implies P_B^\\circ = 120 + 80 = 200\\text{ mm Hg}$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following thermodynamic criteria is INCORRECT for the formation of an ideal binary liquid solution from its pure components at constant temperature and pressure?",
+          "image": "",
+          "options": [
+            "$\\Delta S_{\\text{mix}} = 0$",
+            "$\\Delta H_{\\text{mix}} = 0$",
+            "$\\Delta V_{\\text{mix}} = 0$",
+            "$\\Delta G_{\\text{mix}} < 0$"
+          ],
+          "correctOption": 0,
+          "solution": "For an ideal solution:\n1. $\\Delta H_{\\text{mix}} = 0$ (no heat absorbed or released because $A-B$ interactions are identical in strength to $A-A$ and $B-B$).\n2. $\\Delta V_{\\text{mix}} = 0$ (no volume expansion or contraction upon mixing).\n3. Mixing always creates spatial disorder and increases available microstates, so the entropy of mixing is strictly positive: $\\Delta S_{\\text{mix}} = -nR(x_A \\ln x_A + x_B \\ln x_B) > 0$.\n4. Because $\\Delta H_{\\text{mix}} = 0$ and $\\Delta S_{\\text{mix}} > 0$, the Gibbs free energy of mixing is $\\Delta G_{\\text{mix}} = \\Delta H_{\\text{mix}} - T\\Delta S_{\\text{mix}} = -T\\Delta S_{\\text{mix}} < 0$ (spontaneous process).\nTherefore, $\\Delta S_{\\text{mix}} = 0$ is incorrect."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An ideal mixture of two volatile liquids $A$ and $B$ is in equilibrium with its vapour. If $y_A$ and $x_A$ represent the mole fraction of component $A$ in the vapour and liquid phases respectively, the plot of $\\frac{1}{y_A}$ versus $\\frac{1}{x_A}$ gives a straight line whose slope and intercept are:",
+          "image": "",
+          "options": [
+            "$\\text{Slope} = \\frac{P_B^\\circ}{P_A^\\circ}, \\quad \\text{Intercept} = 1 - \\frac{P_B^\\circ}{P_A^\\circ}$",
+            "$\\text{Slope} = \\frac{P_A^\\circ}{P_B^\\circ}, \\quad \\text{Intercept} = 1 - \\frac{P_A^\\circ}{P_B^\\circ}$",
+            "$\\text{Slope} = \\frac{P_B^\\circ}{P_A^\\circ}, \\quad \\text{Intercept} = \\frac{P_A^\\circ}{P_B^\\circ}$",
+            "$\\text{Slope} = 1, \\quad \\text{Intercept} = \\frac{P_B^\\circ}{P_A^\\circ}$"
+          ],
+          "correctOption": 0,
+          "solution": "We know from Raoult's and Dalton's laws:\n$$y_A = \\frac{P_A}{P_{\\text{total}}} = \\frac{x_A P_A^\\circ}{x_A P_A^\\circ + x_B P_B^\\circ} = \\frac{x_A P_A^\\circ}{x_A P_A^\\circ + (1 - x_A) P_B^\\circ}$$\nTaking the reciprocal of both sides:\n$$\\frac{1}{y_A} = \\frac{x_A P_A^\\circ + (1 - x_A) P_B^\\circ}{x_A P_A^\\circ} = 1 + \\frac{(1 - x_A) P_B^\\circ}{x_A P_A^\\circ} = 1 + \\frac{P_B^\\circ}{P_A^\\circ}\\left(\\frac{1}{x_A} - 1\\right)$$\n$$\\frac{1}{y_A} = \\left(\\frac{P_B^\\circ}{P_A^\\circ}\\right) \\frac{1}{x_A} + \\left(1 - \\frac{P_B^\\circ}{P_A^\\circ}\\right)$$\nComparing with $Y = mX + C$ where $Y = \\frac{1}{y_A}$ and $X = \\frac{1}{x_A}$:\n$$\\text{Slope } m = \\frac{P_B^\\circ}{P_A^\\circ}$$\n$$\\text{Intercept } C = 1 - \\frac{P_B^\\circ}{P_A^\\circ}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A binary liquid mixture of ethanol and cyclohexane displays a positive deviation from Raoult's Law. This behavior is primarily due to:",
+          "image": "",
+          "options": [
+            "Disruption of intermolecular hydrogen bonding between ethanol molecules by cyclohexane",
+            "Strong dipole-dipole interactions between ethanol and cyclohexane",
+            "Formation of new hydrogen bonds between ethanol and cyclohexane",
+            "Increase in polarizability of the cyclohexane ring"
+          ],
+          "correctOption": 0,
+          "solution": "In pure ethanol, molecules are held together by an extensive network of intermolecular hydrogen bonds.\nWhen non-polar cyclohexane is introduced, cyclohexane molecules enter between ethanol molecules and disrupt the existing hydrogen bonds.\nAs a result, the cohesive $A-B$ attractive interactions become substantially weaker than the original $A-A$ interactions in pure ethanol.\nThe escaping tendency of both components into the vapor phase increases, resulting in higher total vapour pressure than expected from Raoult's Law (positive deviation: $\\Delta H_{\\text{mix}} > 0$, $\\Delta V_{\\text{mix}} > 0$)."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A minimum boiling azeotrope is formed by a binary solution that shows:",
+          "image": "",
+          "options": [
+            "Large positive deviation from Raoult's Law",
+            "Large negative deviation from Raoult's Law",
+            "Zero deviation from Raoult's Law (ideal solution)",
+            "Moderate negative deviation with $\\Delta V_{\\text{mix}} = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. When a solution shows large positive deviation from Raoult's Law, the vapour pressure curve passes through a maximum at a specific composition.\n2. At this maximum vapour pressure composition, the boiling point of the solution is lower than that of either pure component.\n3. This constant boiling mixture distills over without any change in composition and is known as a minimum boiling azeotrope (e.g., $95.6\\%$ ethanol $+ 4.4\\%$ water by mass)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Two liquids $A$ and $B$ form an ideal solution. At temperature $T$, $1\\text{ mol of } A$ and $3\\text{ mol of } B$ have a total vapour pressure of $550\\text{ mm Hg}$. At the same temperature, when $1\\text{ mol of } A$ is added to this mixture, the total vapour pressure increases to $560\\text{ mm Hg}$. The vapour pressures of pure $A$ and pure $B$ ($P_A^\\circ$ and $P_B^\\circ$) in $\\text{mm Hg}$ are:",
+          "image": "",
+          "options": [
+            "$600$ and $533.3$",
+            "$500$ and $600$",
+            "$400$ and $600$",
+            "$600$ and $500$"
+          ],
+          "correctOption": 0,
+          "solution": "Case 1: $1\\text{ mol of } A$ and $3\\text{ mol of } B$:\nTotal moles $= 1 + 3 = 4$.\n$$x_A = \\frac{1}{4} = 0.25, \\quad x_B = \\frac{3}{4} = 0.75$$\n$$P_{\\text{total}} = 0.25 P_A^\\circ + 0.75 P_B^\\circ = 550$$\nMultiply by 4:\n$$P_A^\\circ + 3P_B^\\circ = 2200 \\quad \\text{--- (1)}$$\n\nCase 2: $1\\text{ additional mol of } A$ is added, so moles of $A = 2$, moles of $B = 3$:\nTotal moles $= 2 + 3 = 5$.\n$$x_A' = \\frac{2}{5} = 0.4, \\quad x_B' = \\frac{3}{5} = 0.6$$\n$$P_{\\text{total}}' = 0.4 P_A^\\circ + 0.6 P_B^\\circ = 560$$\nMultiply by 5:\n$$2P_A^\\circ + 3P_B^\\circ = 2800 \\quad \\text{--- (2)}$$\n\nSubtract (1) from (2):\n$$(2P_A^\\circ + 3P_B^\\circ) - (P_A^\\circ + 3P_B^\\circ) = 2800 - 2200$$\n$$P_A^\\circ = 600\\text{ mm Hg}$$\nSubstitute $P_A^\\circ = 600$ into (1):\n$$600 + 3P_B^\\circ = 2200 \\implies 3P_B^\\circ = 1600 \\implies P_B^\\circ = \\frac{1600}{3} \\approx 533.33\\text{ mm Hg}$$\nThus, $P_A^\\circ = 600\\text{ mm Hg}$ and $P_B^\\circ = 533.3\\text{ mm Hg}$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An ideal solution of two volatile liquids $A$ and $B$ boils at $1\\text{ atm}$ pressure. If the vapour pressure of pure $A$ is $1.2\\text{ atm}$ and that of pure $B$ is $0.7\\text{ atm}$ at this boiling temperature, the mole fraction of $A$ in the liquid solution is:",
+          "image": "",
+          "options": [
+            "$0.60$",
+            "$0.40$",
+            "$0.50$",
+            "$0.30$"
+          ],
+          "correctOption": 0,
+          "solution": "A solution boils when its total equilibrium vapour pressure equals the external atmospheric pressure:\n$$P_{\\text{total}} = 1.0\\text{ atm}$$\nBy Raoult's Law:\n$$P_{\\text{total}} = x_A P_A^\\circ + (1 - x_A) P_B^\\circ$$\nSubstitute the given values:\n$$1.0 = x_A(1.2) + (1 - x_A)(0.7)$$\n$$1.0 = 1.2 x_A + 0.7 - 0.7 x_A$$\n$$1.0 = 0.5 x_A + 0.7$$\n$$0.5 x_A = 1.0 - 0.7 = 0.3$$\n$$x_A = \\frac{0.3}{0.5} = 0.60$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Which of the following pairs forms a nearly ideal solution over the entire range of composition?",
+          "image": "",
+          "options": [
+            "n-Hexane + n-Heptane",
+            "Water + Nitric acid",
+            "Acetone + Carbon disulfide",
+            "Phenol + Aniline"
+          ],
+          "correctOption": 0,
+          "solution": "An ideal solution is formed between components that possess nearly identical molecular sizes, structures, polarities, and intermolecular forces:\n- In n-hexane and n-heptane, both are non-polar straight-chain hydrocarbons with similar London dispersion forces, so $A-A$, $B-B$, and $A-B$ interactions are almost identical.\n- Water + nitric acid and phenol + aniline show strong negative deviations due to hydrogen bonding/complexation.\n- Acetone + carbon disulfide shows strong positive deviation."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] For a binary liquid solution of components $A$ and $B$, if $P_A > x_A P_A^\\circ$ and $P_B > x_B P_B^\\circ$, then which of the following conditions is TRUE?",
+          "image": "",
+          "options": [
+            "$\\Delta H_{\\text{mix}} > 0 \\quad \\text{and} \\quad \\Delta V_{\\text{mix}} > 0$",
+            "$\\Delta H_{\\text{mix}} < 0 \\quad \\text{and} \\quad \\Delta V_{\\text{mix}} < 0$",
+            "$\\Delta H_{\\text{mix}} = 0 \\quad \\text{and} \\quad \\Delta V_{\\text{mix}} = 0$",
+            "$\\Delta H_{\\text{mix}} < 0 \\quad \\text{and} \\quad \\Delta V_{\\text{mix}} > 0$"
+          ],
+          "correctOption": 0,
+          "solution": "When the observed partial vapour pressures of both components exceed their respective values predicted by Raoult's Law ($P_i > x_i P_i^\\circ$), the solution displays a positive deviation.\nFor positive deviations:\n1. $A-B$ attractive interactions are weaker than $A-A$ and $B-B$ interactions.\n2. Energy is absorbed to overcome stronger pure-component interactions: $\\Delta H_{\\text{mix}} > 0$ (endothermic mixing).\n3. Weaker attraction leads to slightly greater intermolecular separation, increasing total volume: $\\Delta V_{\\text{mix}} > 0$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a fractional distillation of a non-azeotropic ideal solution of two volatile liquids $A$ (more volatile, $T_b^A < T_b^B$) and $B$ (less volatile), the distillate collected at the top of the fractionating column will be:",
+          "image": "",
+          "options": [
+            "Enriched in component $A$",
+            "Enriched in component $B$",
+            "Of the same composition as the original liquid",
+            "An equimolar mixture of $A$ and $B$"
+          ],
+          "correctOption": 0,
+          "solution": "By Konovalov's Rule, the vapour phase in equilibrium with a liquid solution is always richer in the more volatile component (the component with the lower boiling point / higher pure vapour pressure).\nAs the vapour undergoes repeated condensation and revaporization up the fractional distillation column, each cycle further enriches the vapour in the more volatile component $A$.\nHence, the distillate collected at the top of the column is enriched in $A$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Two liquids $X$ and $Y$ form an ideal solution. The vapour pressures of pure $X$ and $Y$ are $100\\text{ mm Hg}$ and $200\\text{ mm Hg}$ respectively. If the mole fraction of $X$ in the vapour phase is $0.2$, the mole fraction of $X$ in the liquid phase is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{3}$",
+            "$\\frac{1}{4}$",
+            "$\\frac{1}{5}$",
+            "$\\frac{2}{3}$"
+          ],
+          "correctOption": 0,
+          "solution": "The relation between vapour phase mole fraction ($y_X$) and liquid phase mole fraction ($x_X$) is:\n$$y_X = \\frac{x_X P_X^\\circ}{x_X P_X^\\circ + (1 - x_X) P_Y^\\circ}$$\nSubstitute $y_X = 0.2$, $P_X^\\circ = 100$, and $P_Y^\\circ = 200$:\n$$0.2 = \\frac{100 x_X}{100 x_X + 200(1 - x_X)}$$\nDivide numerator and denominator by 100:\n$$0.2 = \\frac{x_X}{x_X + 2(1 - x_X)} = \\frac{x_X}{2 - x_X}$$\nCross-multiply:\n$$0.2(2 - x_X) = x_X$$\n$$0.4 - 0.2 x_X = x_X \\implies 1.2 x_X = 0.4$$\n$$x_X = \\frac{0.4}{1.2} = \\frac{1}{3}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An azeotropic mixture of two liquids boils at a lower temperature than either of them when:",
+          "image": "",
+          "options": [
+            "It shows large positive deviation from Raoult's Law",
+            "It shows large negative deviation from Raoult's Law",
+            "It forms an ideal solution with $\\Delta H_{\\text{mix}} = 0$",
+            "It is completely immiscible"
+          ],
+          "correctOption": 0,
+          "solution": "An azeotrope that boils at a lower temperature than either of its individual constituents is known as a minimum boiling azeotrope.\nBecause boiling point is inversely related to vapour pressure at a given external pressure, a lower boiling point corresponds to an exceptionally high vapour pressure (a maximum in the vapour pressure curve).\nThis maximum in vapour pressure occurs exclusively when the binary solution exhibits a large positive deviation from Raoult's Law."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For a non-ideal solution of two liquids $A$ and $B$ showing negative deviation from Raoult's Law, which of the following statements is FALSE?",
+          "image": "",
+          "options": [
+            "$\\Delta S_{\\text{mix}} < 0$",
+            "$\\Delta H_{\\text{mix}} < 0$",
+            "$\\Delta V_{\\text{mix}} < 0$",
+            "$P_{\\text{total}} < x_A P_A^\\circ + x_B P_B^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For negative deviation, $A-B$ attractive interactions are stronger than $A-A$ and $B-B$, which leads to:\n- Heat release upon mixing: $\\Delta H_{\\text{mix}} < 0$\n- Contraction in volume: $\\Delta V_{\\text{mix}} < 0$\n- Reduced vapour pressure: $P_{\\text{total}} < x_A P_A^\\circ + x_B P_B^\\circ$\n2. However, the mixing of two miscible liquids is an inherently irreversible, spontaneous process that creates compositional disorder and dispersal of matter, ensuring that the entropy of mixing is ALWAYS positive: $\\Delta S_{\\text{mix}} > 0$.\nTherefore, the statement $\\Delta S_{\\text{mix}} < 0$ is FALSE."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A mixture of $100\\text{ mL}$ of water and $100\\text{ mL}$ of ethanol is prepared at $298\\text{ K}$. The volume of the resulting solution is:",
+          "image": "",
+          "options": [
+            "Less than $200\\text{ mL}$",
+            "Greater than $200\\text{ mL}$",
+            "Exactly $200\\text{ mL}$",
+            "Dependent on external pressure only"
+          ],
+          "correctOption": 0,
+          "solution": "Water and ethanol molecules can participate in mutually strong cross-hydrogen bonding. The smaller water molecules fit snugly into the interstitial spaces between the larger ethanol molecules, causing tighter molecular packing.\nThis leads to a negative volume change upon mixing ($\\Delta V_{\\text{mix}} < 0$).\nConsequently, the total observed volume is slightly less than the algebraic sum of the individual pure volumes: $V_{\\text{final}} < 200\\text{ mL}$ (typically around $192-194\\text{ mL}$)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $P_A^\\circ$ and $P_B^\\circ$ are the vapour pressures of pure components $A$ and $B$ respectively, and an ideal solution is formed such that the vapour phase contains equal moles of $A$ and $B$ ($y_A = y_B$), then the ratio of their mole fractions in the liquid phase $\\left(\\frac{x_A}{x_B}\\right)$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{P_B^\\circ}{P_A^\\circ}$",
+            "$\\frac{P_A^\\circ}{P_B^\\circ}$",
+            "$\\sqrt{\\frac{P_B^\\circ}{P_A^\\circ}}$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "From Dalton's Law:\n$$P_A = y_A P_{\\text{total}} \\quad \\text{and} \\quad P_B = y_B P_{\\text{total}}$$\nTaking the ratio of partial pressures:\n$$\\frac{P_A}{P_B} = \\frac{y_A}{y_B}$$\nBy Raoult's Law, $P_A = x_A P_A^\\circ$ and $P_B = x_B P_B^\\circ$:\n$$\\frac{x_A P_A^\\circ}{x_B P_B^\\circ} = \\frac{y_A}{y_B}$$\nGiven that $y_A = y_B \\implies \\frac{y_A}{y_B} = 1$:\n$$\\frac{x_A P_A^\\circ}{x_B P_B^\\circ} = 1 \\implies \\frac{x_A}{x_B} = \\frac{P_B^\\circ}{P_A^\\circ}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following conditions characterizes the 'bubble point' of an ideal binary liquid mixture at a given pressure?",
+          "image": "",
+          "options": [
+            "The temperature at which the first bubble of vapour forms from the liquid mixture",
+            "The temperature at which the first droplet of liquid condenses from the vapour",
+            "The temperature at which the liquid completely vaporizes",
+            "The critical temperature of the more volatile component"
+          ],
+          "correctOption": 0,
+          "solution": "In phase equilibria of multi-component systems:\n- **Bubble Point:** The temperature (at a given pressure) or pressure (at a given temperature) at which the first infinitesimal bubble of vapour is formed from the liquid phase.\n- **Dew Point:** The temperature or pressure at which the first infinitesimal droplet of liquid condenses out of a gas/vapour mixture."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The vapour pressure of a solution containing $2\\text{ moles}$ of volatile liquid $A$ ($P_A^\\circ = 100\\text{ mm Hg}$) and $3\\text{ moles}$ of volatile liquid $B$ ($P_B^\\circ = 150\\text{ mm Hg}$) is experimentally measured to be $140\\text{ mm Hg}$. The solution shows:",
+          "image": "",
+          "options": [
+            "Positive deviation from Raoult's Law",
+            "Negative deviation from Raoult's Law",
+            "Ideal behavior",
+            "Complete phase separation"
+          ],
+          "correctOption": 0,
+          "solution": "1. Liquid phase mole fractions:\n$$x_A = \\frac{2}{2 + 3} = 0.4, \\quad x_B = \\frac{3}{2 + 3} = 0.6$$\n2. Theoretical vapour pressure predicted by Raoult's Law:\n$$P_{\\text{ideal}} = x_A P_A^\\circ + x_B P_B^\\circ = (0.4 \\times 100) + (0.6 \\times 150) = 40 + 90 = 130\\text{ mm Hg}$$\n3. The experimentally observed vapour pressure is $P_{\\text{exp}} = 140\\text{ mm Hg}$.\nSince $P_{\\text{exp}} > P_{\\text{ideal}}$ ($140 > 130$), the solution exhibits a positive deviation from Raoult's Law."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An azeotropic mixture of two liquids cannot be separated into its pure components by fractional distillation because:",
+          "image": "",
+          "options": [
+            "The composition of the liquid phase and the vapour phase are identical at the boiling point",
+            "The boiling points of the two pure liquids are identical",
+            "Both liquids have zero vapour pressure at that temperature",
+            "The mixture forms two immiscible liquid layers"
+          ],
+          "correctOption": 0,
+          "solution": "An azeotrope (or constant-boiling mixture) is a binary mixture characterized by identical compositions in both the liquid and vapour phases at equilibrium ($x_i = y_i$).\nBecause the vapour produced upon boiling has the exact same relative proportions of components as the boiling liquid, boiling causes no change in composition, rendering fractional distillation ineffective for further separation."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Two volatile liquids $A$ and $B$ form an ideal solution. At $298\\text{ K}$, the vapour pressures of pure $A$ and pure $B$ are $200\\text{ mm Hg}$ and $100\\text{ mm Hg}$ respectively. Calculate the total vapour pressure (in $\\text{mm Hg}$) of a solution containing $1\\text{ mol of } A$ and $4\\text{ mol of } B$.",
+          "image": "",
+          "correctValue": 120.0,
+          "solution": "Calculate the mole fractions in the liquid phase:\n$$n_{\\text{total}} = 1 + 4 = 5\\text{ mol}$$\n$$x_A = \\frac{1}{5} = 0.2$$\n$$x_B = \\frac{4}{5} = 0.8$$\nUsing Raoult's Law:\n$$P_{\\text{total}} = x_A P_A^\\circ + x_B P_B^\\circ$$\n$$P_{\\text{total}} = (0.2 \\times 200) + (0.8 \\times 100) = 40 + 80 = 120.0\\text{ mm Hg}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] At a certain temperature, pure liquid benzene ($A$) has a vapour pressure of $0.850\\text{ bar}$. A non-volatile, non-electrolyte solid weighing $0.5\\text{ g}$ is added to $39.0\\text{ g}$ of benzene (molar mass $= 78\\text{ g/mol}$). The vapour pressure of the solution is $0.845\\text{ bar}$. Find the molar mass of the solid solute (in $\\text{g/mol}$).",
+          "image": "",
+          "correctValue": 170.0,
+          "solution": "Using the relative lowering of vapour pressure formula:\n$$\\frac{P^\\circ - P}{P} = \\frac{n_{\\text{solute}}}{n_{\\text{solvent}}} = \\frac{w_2 / M_2}{w_1 / M_1}$$\nSubstitute the given values:\n- $P^\\circ = 0.850\\text{ bar}$\n- $P = 0.845\\text{ bar}$\n- $w_2 = 0.5\\text{ g}$\n- $w_1 = 39.0\\text{ g}, \\quad M_1 = 78\\text{ g/mol} \\implies n_{\\text{solvent}} = \\frac{39.0}{78} = 0.5\\text{ mol}$\n\n$$\\frac{0.850 - 0.845}{0.845} = \\frac{0.5 / M_2}{0.5}$$\n$$\\frac{0.005}{0.845} = \\frac{1}{M_2}$$\n$$M_2 = \\frac{0.845}{0.005} = 169\\text{ g/mol}$$\n(Using $\\frac{P^\\circ - P}{P^\\circ} = \\frac{0.005}{0.850} = \\frac{0.5/M_2}{0.5} \\implies M_2 = \\frac{0.850}{0.005} = 170.0\\text{ g/mol}$)."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] An ideal solution of two volatile liquids $A$ and $B$ contains $0.25\\text{ mole fraction}$ of $A$ in the liquid phase. If $P_A^\\circ = 300\\text{ mm Hg}$ and $P_B^\\circ = 100\\text{ mm Hg}$, find the mole fraction of component $A$ in the vapour phase (rounded to two decimal places).",
+          "image": "",
+          "correctValue": 0.50,
+          "solution": "1. Liquid phase mole fractions:\n$$x_A = 0.25, \\quad x_B = 1 - 0.25 = 0.75$$\n2. Partial pressures:\n$$P_A = x_A P_A^\\circ = 0.25 \\times 300 = 75\\text{ mm Hg}$$\n$$P_B = x_B P_B^\\circ = 0.75 \\times 100 = 75\\text{ mm Hg}$$\n3. Total vapour pressure:\n$$P_{\\text{total}} = P_A + P_B = 75 + 75 = 150\\text{ mm Hg}$$\n4. Mole fraction of $A$ in the vapour phase:\n$$y_A = \\frac{P_A}{P_{\\text{total}}} = \\frac{75}{150} = 0.50$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A liquid mixture of two volatile components $A$ and $B$ with $P_A^\\circ = 70\\text{ torr}$ and $P_B^\\circ = 30\\text{ torr}$ forms an ideal solution. What is the total pressure (in torr) at which condensation begins (the dew point pressure) for a vapour mixture with mole fraction of $A$ equal to $y_A = 0.70$?",
+          "image": "",
+          "correctValue": 50.0,
+          "solution": "The dew point pressure equation for an ideal binary solution expresses the total pressure $P$ in terms of vapour phase mole fractions:\n$$\\frac{1}{P} = \\frac{y_A}{P_A^\\circ} + \\frac{y_B}{P_B^\\circ}$$\nHere $y_A = 0.70$ and $y_B = 1 - 0.70 = 0.30$:\n$$\\frac{1}{P} = \\frac{0.70}{70} + \\frac{0.30}{30} = 0.01 + 0.01 = 0.02\\text{ torr}^{-1}$$\n$$P = \\frac{1}{0.02} = 50.0\\text{ torr}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] When $1\\text{ mole}$ of an ideal volatile liquid $A$ is mixed with $1\\text{ mole}$ of an ideal volatile liquid $B$ at $300\\text{ K}$, calculate the enthalpy of mixing $\\Delta H_{\\text{mix}}$ (in Joules).",
+          "image": "",
+          "correctValue": 0.0,
+          "solution": "By thermodynamic definition, an ideal solution exhibits zero heat of mixing because the cohesive forces between like molecules ($A-A$ and $B-B$) are identical in magnitude and nature to the adhesive forces between unlike molecules ($A-B$):\n$$\\Delta H_{\\text{mix}} = 0.0\\text{ J}$$"
+        }
+      ]
+    }
+  ]
+}

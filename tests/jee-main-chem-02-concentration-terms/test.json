@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-chem-02-concentration-terms",
+  "title": "Concentration Terms",
+  "syllabus": "Solutions and concentration expressions; Mass percentage (% w/w), volume percentage (% v/v), and mass by volume percentage (% w/v); Parts per million (ppm); Mole fraction; Molarity (M) and effect of temperature; Molality (m) and temperature independence; Normality (N) and n-factor (valency factor); Interconversions between concentration terms (Molarity to Molality, % w/w to Molarity); Dilution law and mixing of non-reacting solutions",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An aqueous solution of glucose ($\\text{C}_6\\text{H}_{12}\\text{O}_6$, molar mass $= 180\\text{ g/mol}$) is labelled as $10\\%\\text{ (w/w)}$. If the density of the solution is $1.2\\text{ g/mL}$, the molarity of the solution is:",
+          "image": "",
+          "options": [
+            "$0.67\\text{ M}$",
+            "$0.55\\text{ M}$",
+            "$0.75\\text{ M}$",
+            "$1.20\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider $100\\text{ g}$ of the solution.\nMass of glucose (solute) $= 10\\text{ g}$.\nMoles of glucose $= \\frac{10}{180} = \\frac{1}{18}\\text{ mol}$.\nVolume of solution:\n$$V = \\frac{\\text{Mass of solution}}{\\text{Density}} = \\frac{100\\text{ g}}{1.2\\text{ g/mL}} = \\frac{100}{1.2}\\text{ mL} = \\frac{100}{1200}\\text{ L} = \\frac{1}{12}\\text{ L}$$\nMolarity ($M$):\n$$M = \\frac{\\text{Moles of solute}}{\\text{Volume of solution (in L)}} = \\frac{1/18}{1/12} = \\frac{12}{18} = \\frac{2}{3} \\approx 0.67\\text{ M}$$\nAlternatively, using the direct formula:\n$$M = \\frac{(\\%\\text{ w/w}) \\times d \\times 10}{M_{\\text{solute}}} = \\frac{10 \\times 1.2 \\times 10}{180} = \\frac{120}{180} = 0.67\\text{ M}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Which of the following concentration terms is/are temperature independent?",
+          "image": "",
+          "options": [
+            "Molality and Mole fraction",
+            "Molarity and Normality",
+            "Molarity and Molality",
+            "Normality and Volume percentage"
+          ],
+          "correctOption": 0,
+          "solution": "Concentration terms that depend strictly on masses of components (solute and solvent) do not change with temperature, because mass is temperature-independent.\n- Molality ($m = \\frac{\\text{moles of solute}}{\\text{mass of solvent in kg}}$) is temperature independent.\n- Mole fraction ($X_A = \\frac{n_A}{n_A + n_B}$) is temperature independent.\n- Mass percentage (% w/w) and ppm are also temperature independent.\nIn contrast, Molarity, Normality, and % (v/v) involve the volume of the solution, which expands or contracts with temperature variations."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The mole fraction of a solute in an aqueous solution is $0.1$. The molality of this solution is approximately:",
+          "image": "",
+          "options": [
+            "$6.17\\text{ m}$",
+            "$5.55\\text{ m}$",
+            "$4.50\\text{ m}$",
+            "$7.20\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let total moles in the solution be $1\\text{ mol}$.\n- Moles of solute ($n_{\\text{solute}}$) $= 0.1\\text{ mol}$\n- Moles of solvent (water, $n_{\\text{solvent}}$) $= 1 - 0.1 = 0.9\\text{ mol}$\n\nMass of solvent (water, molar mass $= 18\\text{ g/mol}$):\n$$W_{\\text{solvent}} = 0.9 \\times 18 = 16.2\\text{ g} = 0.0162\\text{ kg}$$\nMolality ($m$):\n$$m = \\frac{n_{\\text{solute}}}{W_{\\text{solvent}}(\\text{in kg})} = \\frac{0.1}{0.0162} = \\frac{100}{16.2} \\approx 6.17\\text{ m}$$\nAlternatively, using the relation $m = \\frac{X_{\\text{solute}} \\times 1000}{(1 - X_{\\text{solute}}) M_{\\text{solvent}}}$:\n$$m = \\frac{0.1 \\times 1000}{0.9 \\times 18} = \\frac{100}{16.2} = 6.17\\text{ m}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $200\\text{ mL}$ of $0.2\\text{ M } \\text{HCl}$ is mixed with $300\\text{ mL}$ of $0.1\\text{ M } \\text{H}_2\\text{SO}_4$, the normality of the resulting acidic mixture is:",
+          "image": "",
+          "options": [
+            "$0.20\\text{ N}$",
+            "$0.14\\text{ N}$",
+            "$0.10\\text{ N}$",
+            "$0.25\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Find the normality of each acid:\n- For $\\text{HCl}$: $n$-factor $= 1 \\implies N_1 = M_1 \\times 1 = 0.2\\text{ N}$.\n$$\\text{Milli-equivalents of HCl} = N_1 V_1 = 0.2 \\times 200 = 40\\text{ meq}$$\n- For $\\text{H}_2\\text{SO}_4$: $n$-factor $= 2 \\implies N_2 = M_2 \\times 2 = 0.1 \\times 2 = 0.2\\text{ N}$.\n$$\\text{Milli-equivalents of } \\text{H}_2\\text{SO}_4 = N_2 V_2 = 0.2 \\times 300 = 60\\text{ meq}$$\n\nTotal milli-equivalents of $\\text{H}^+$:\n$$\\text{Total meq} = 40 + 60 = 100\\text{ meq}$$\nTotal volume of mixture:\n$$V_{\\text{total}} = 200 + 300 = 500\\text{ mL}$$\nNormality of mixture:\n$$N_{\\text{mix}} = \\frac{\\text{Total meq}}{V_{\\text{total}}} = \\frac{100}{500} = 0.20\\text{ N}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An aqueous solution of ethanol has a density of $1.025\\text{ g/mL}$ and is $2.05\\text{ M}$. The molality of the solution is: (Molar mass of ethanol $= 46\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$2.20\\text{ m}$",
+            "$2.00\\text{ m}$",
+            "$1.95\\text{ m}$",
+            "$2.40\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider $1\\text{ L}$ ($1000\\text{ mL}$) of the solution:\n- Moles of ethanol $= 2.05\\text{ mol}$\n- Mass of ethanol $= 2.05 \\times 46 = 94.3\\text{ g}$\n- Mass of $1000\\text{ mL}$ of solution $= 1000 \\times 1.025 = 1025\\text{ g}$\n- Mass of solvent (water) $= 1025 - 94.3 = 930.7\\text{ g} = 0.9307\\text{ kg}$\n\nMolality ($m$):\n$$m = \\frac{\\text{Moles of solute}}{\\text{Mass of solvent in kg}} = \\frac{2.05}{0.9307} \\approx 2.20\\text{ m}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] What volume of water must be added to $250\\text{ mL}$ of $0.5\\text{ M } \\text{NaOH}$ solution to make it a $0.1\\text{ M}$ solution?",
+          "image": "",
+          "options": [
+            "$1000\\text{ mL}$",
+            "$1250\\text{ mL}$",
+            "$750\\text{ mL}$",
+            "$500\\text{ mL}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the dilution formula:\n$$M_1 V_1 = M_2 V_2$$\nHere $M_1 = 0.5\\text{ M}$, $V_1 = 250\\text{ mL}$, and $M_2 = 0.1\\text{ M}$:\n$$0.5 \\times 250 = 0.1 \\times V_2$$\n$$125 = 0.1 V_2 \\implies V_2 = \\frac{125}{0.1} = 1250\\text{ mL}$$\nVolume of water to be added:\n$$V_{\\text{added}} = V_2 - V_1 = 1250 - 250 = 1000\\text{ mL}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A sample of drinking water was found to be severely contaminated with chloroform ($\\text{CHCl}_3$), supposed to be a carcinogen. The level of contamination was $15\\text{ ppm}$ (by mass). The percentage by mass is:",
+          "image": "",
+          "options": [
+            "$1.5 \\times 10^{-3}\\%$",
+            "$1.5 \\times 10^{-4}\\%$",
+            "$1.5 \\times 10^{-2}\\%$",
+            "$15\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "By definition:\n$$\\text{ppm} = \\frac{\\text{Mass of solute}}{\\text{Total mass of solution}} \\times 10^6$$\n$$\\%\\text{ by mass} = \\frac{\\text{Mass of solute}}{\\text{Total mass of solution}} \\times 100$$\nTherefore:\n$$\\%\\text{ by mass} = \\frac{\\text{ppm}}{10^4} = \\frac{15}{10^4} = 1.5 \\times 10^{-3}\\%$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The molarity of a $98\\%\\text{ (w/w) } \\text{H}_2\\text{SO}_4$ solution with density $1.80\\text{ g/mL}$ is: (Molar mass of $\\text{H}_2\\text{SO}_4 = 98\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$18.0\\text{ M}$",
+            "$9.8\\text{ M}$",
+            "$36.0\\text{ M}$",
+            "$1.8\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the relation between molarity, density, and mass percentage:\n$$M = \\frac{x \\times d \\times 10}{M_{\\text{solute}}}$$\nwhere $x = 98$, $d = 1.80\\text{ g/mL}$, and $M_{\\text{solute}} = 98\\text{ g/mol}$:\n$$M = \\frac{98 \\times 1.80 \\times 10}{98} = 18.0\\text{ M}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The normality of $0.3\\text{ M } \\text{H}_3\\text{PO}_3$ (phosphorous acid) solution is:",
+          "image": "",
+          "options": [
+            "$0.6\\text{ N}$",
+            "$0.9\\text{ N}$",
+            "$0.3\\text{ N}$",
+            "$0.15\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Phosphorous acid ($\\text{H}_3\\text{PO}_3$) is a dibasic acid because it has two ionizable $\\text{P}-\\text{OH}$ bonds and one non-ionizable $\\text{P}-\\text{H}$ bond.\nIts basicity ($n$-factor) is $2$.\n$$\\text{Normality} = \\text{Molarity} \\times n\\text{-factor} = 0.3\\text{ M} \\times 2 = 0.6\\text{ N}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] $500\\text{ mL}$ of $0.1\\text{ M } \\text{NaCl}$ solution is mixed with $500\\text{ mL}$ of $0.2\\text{ M } \\text{CaCl}_2$ solution. The molarity of chloride ions in the resulting solution is:",
+          "image": "",
+          "options": [
+            "$0.25\\text{ M}$",
+            "$0.15\\text{ M}$",
+            "$0.30\\text{ M}$",
+            "$0.20\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of $\\text{Cl}^-$ from $\\text{NaCl}$:\n$$\\text{Molar concentration of } \\text{Cl}^- = 0.1\\text{ M}$$\n$$\\text{Millimoles of } \\text{Cl}^- = 500 \\times 0.1 = 50\\text{ mmol}$$\n2. Moles of $\\text{Cl}^-$ from $\\text{CaCl}_2$:\nEach mole of $\\text{CaCl}_2$ yields $2\\text{ moles of } \\text{Cl}^-$.\n$$\\text{Concentration of } \\text{Cl}^- = 2 \\times 0.2 = 0.4\\text{ M}$$\n$$\\text{Millimoles of } \\text{Cl}^- = 500 \\times 0.4 = 200\\text{ mmol}$$\n3. Total millimoles of $\\text{Cl}^- = 50 + 200 = 250\\text{ mmol}$.\nTotal volume $= 500 + 500 = 1000\\text{ mL} = 1\\text{ L}$.\n$$\\text{Molarity of } \\text{Cl}^- = \\frac{250\\text{ mmol}}{1000\\text{ mL}} = 0.25\\text{ M}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A solution is prepared by dissolving $24.5\\text{ g}$ of $\\text{H}_2\\text{SO}_4$ in water to make $250\\text{ mL}$ of solution. The normality of this solution is:",
+          "image": "",
+          "options": [
+            "$2.0\\text{ N}$",
+            "$1.0\\text{ N}$",
+            "$0.5\\text{ N}$",
+            "$4.0\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "Equivalent mass of $\\text{H}_2\\text{SO}_4 = \\frac{\\text{Molar mass}}{n\\text{-factor}} = \\frac{98}{2} = 49\\text{ g/eq}$.\nNumber of equivalents:\n$$\\text{Equivalents} = \\frac{24.5\\text{ g}}{49\\text{ g/eq}} = 0.5\\text{ eq}$$\nVolume of solution in liters:\n$$V = \\frac{250\\text{ mL}}{1000} = 0.25\\text{ L}$$\nNormality:\n$$N = \\frac{0.5\\text{ eq}}{0.25\\text{ L}} = 2.0\\text{ N}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "If the mole fraction of urea in an aqueous solution is $0.05$, the percentage by mass of urea in the solution is: (Molar masses: Urea $= 60\\text{ g/mol}$, Water $= 18\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$14.9\\%$",
+            "$5.0\\%$",
+            "$10.2\\%$",
+            "$16.7\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "In $1\\text{ mole}$ of solution:\n- Moles of urea $= 0.05\\text{ mol}$\n- Moles of water $= 1 - 0.05 = 0.95\\text{ mol}$\n\nMasses:\n- $\\text{Mass of urea} = 0.05 \\times 60 = 3.0\\text{ g}$\n- $\\text{Mass of water} = 0.95 \\times 18 = 17.1\\text{ g}$\n- $\\text{Total mass of solution} = 3.0 + 17.1 = 20.1\\text{ g}$\n\nPercentage by mass:\n$$\\%\\text{ urea} = \\frac{3.0}{20.1} \\times 100 \\approx 14.92\\% \\approx 14.9\\%$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] $100\\text{ mL}$ of $0.6\\text{ M } \\text{HCl}$ and $100\\text{ mL}$ of $0.4\\text{ M } \\text{NaOH}$ are mixed together. The resulting solution is:",
+          "image": "",
+          "options": [
+            "Acidic with $[\\text{H}^+] = 0.1\\text{ M}$",
+            "Basic with $[\\text{OH}^-] = 0.1\\text{ M}$",
+            "Neutral with $\\text{pH} = 7$",
+            "Acidic with $[\\text{H}^+] = 0.2\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Neutralization reaction:\n$$\\text{HCl} + \\text{NaOH} \\rightarrow \\text{NaCl} + \\text{H}_2\\text{O}$$\nMillimoles of reactants:\n- $\\text{Millimoles of } \\text{H}^+ = 100 \\times 0.6 = 60\\text{ mmol}$\n- $\\text{Millimoles of } \\text{OH}^- = 100 \\times 0.4 = 40\\text{ mmol}$\n\nRemaining millimoles of $\\text{H}^+$:\n$$\\text{Excess } \\text{H}^+ = 60 - 40 = 20\\text{ mmol}$$\nTotal volume:\n$$V_{\\text{total}} = 100 + 100 = 200\\text{ mL}$$\nConcentration of $\\text{H}^+$:\n$$[\\text{H}^+] = \\frac{20\\text{ mmol}}{200\\text{ mL}} = 0.1\\text{ M}$$\nHence, the solution is acidic with $[\\text{H}^+] = 0.1\\text{ M}$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An aqueous solution of $\\text{NaOH}$ is labelled $10\\%\\text{ (w/v)}$. If the density of the solution is $1.05\\text{ g/mL}$, the percentage by mass (% w/w) of $\\text{NaOH}$ is:",
+          "image": "",
+          "options": [
+            "$9.52\\%$",
+            "$10.5\\%$",
+            "$8.95\\%$",
+            "$11.2\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "By definition, $10\\%\\text{ (w/v)}$ means $10\\text{ g of NaOH}$ is present in $100\\text{ mL of solution}$.\nMass of $100\\text{ mL}$ of solution:\n$$\\text{Mass} = \\text{Volume} \\times d = 100\\text{ mL} \\times 1.05\\text{ g/mL} = 105\\text{ g}$$\nPercentage by mass (% w/w):\n$$\\%\\text{ (w/w)} = \\frac{\\text{Mass of solute}}{\\text{Mass of solution}} \\times 100 = \\frac{10}{105} \\times 100 = \\frac{1000}{105} \\approx 9.52\\%$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A $1.0\\text{ molal}$ aqueous solution of a non-electrolyte solute has a mole fraction of solute equal to:",
+          "image": "",
+          "options": [
+            "$0.0177$",
+            "$0.0200$",
+            "$0.0150$",
+            "$0.0354$"
+          ],
+          "correctOption": 0,
+          "solution": "A $1.0\\text{ molal}$ solution contains $1\\text{ mole of solute}$ in $1000\\text{ g of water}$.\nMoles of water:\n$$n_{\\text{water}} = \\frac{1000\\text{ g}}{18\\text{ g/mol}} = 55.55\\text{ mol}$$\nMole fraction of solute:\n$$X_{\\text{solute}} = \\frac{n_{\\text{solute}}}{n_{\\text{solute}} + n_{\\text{water}}} = \\frac{1}{1 + 55.55} = \\frac{1}{56.55} \\approx 0.0177$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] If $V_1\\text{ mL}$ of $M_1\\text{ molar}$ solution is mixed with $V_2\\text{ mL}$ of $M_2\\text{ molar}$ solution of the same non-reacting substance, the molarity of the mixture is given by:",
+          "image": "",
+          "options": [
+            "$\\frac{M_1 V_1 + M_2 V_2}{V_1 + V_2}$",
+            "$\\frac{M_1 + M_2}{2}$",
+            "$\\frac{M_1 V_1 - M_2 V_2}{V_1 + V_2}$",
+            "$\\frac{M_1 V_2 + M_2 V_1}{V_1 + V_2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Total millimoles of the solute present in the mixture:\n$$\\text{Total mmol} = M_1 V_1 + M_2 V_2$$\nAssuming volumes are additive, total volume:\n$$V_{\\text{total}} = V_1 + V_2$$\nBy definition of molarity:\n$$M_{\\text{mix}} = \\frac{\\text{Total mmol}}{\\text{Total volume (in mL)}} = \\frac{M_1 V_1 + M_2 V_2}{V_1 + V_2}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] What is the molarity of pure liquid water? (Density of water $= 1.00\\text{ g/mL}$)",
+          "image": "",
+          "options": [
+            "$55.56\\text{ M}$",
+            "$18.00\\text{ M}$",
+            "$1.00\\text{ M}$",
+            "$5.56\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider $1\\text{ L}$ ($1000\\text{ mL}$) of pure water:\n$$\\text{Mass of } 1000\\text{ mL of water} = 1000\\text{ mL} \\times 1.00\\text{ g/mL} = 1000\\text{ g}$$\nMolar mass of water $= 18.015\\text{ g/mol} \\approx 18\\text{ g/mol}$.\nNumber of moles in $1\\text{ L}$:\n$$n = \\frac{1000\\text{ g}}{18\\text{ g/mol}} \\approx 55.556\\text{ mol}$$\n$$\\text{Molarity} = \\frac{55.556\\text{ mol}}{1\\text{ L}} \\approx 55.56\\text{ M}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The $n$-factor of potassium permanganate ($\\text{KMnO}_4$) when it acts as an oxidizing agent in acidic medium is:",
+          "image": "",
+          "options": [
+            "$5$",
+            "$3$",
+            "$1$",
+            "$6$"
+          ],
+          "correctOption": 0,
+          "solution": "In acidic medium, permanganate ion undergoes reduction according to the half-reaction:\n$$\\text{MnO}_4^- + 8\\text{H}^+ + 5e^- \\rightarrow \\text{Mn}^{2+} + 4\\text{H}_2\\text{O}$$\nThe oxidation state of manganese changes from $+7$ to $+2$.\nChange in oxidation state per molecule $= 7 - 2 = 5$.\nTherefore, the $n$-factor is $5$, and its equivalent mass in acidic medium is $\\frac{M}{5}$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] If the solubility of a gas in water is $0.002\\text{ g/L}$, its concentration in parts per million (ppm) is: (Density of water $= 1\\text{ g/mL}$)",
+          "image": "",
+          "options": [
+            "$2\\text{ ppm}$",
+            "$0.2\\text{ ppm}$",
+            "$20\\text{ ppm}$",
+            "$200\\text{ ppm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Mass of $1\\text{ L of water} = 1000\\text{ g}$.\nMass of dissolved gas in $1\\text{ L} = 0.002\\text{ g}$.\n$$\\text{ppm} = \\frac{\\text{Mass of solute}}{\\text{Mass of solution}} \\times 10^6$$\nSince the solution is extremely dilute, mass of solution $\\approx 1000\\text{ g}$:\n$$\\text{ppm} = \\frac{0.002\\text{ g}}{1000\\text{ g}} \\times 10^6 = 2 \\times 10^{-6} \\times 10^6 = 2\\text{ ppm}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] To prepare $100\\text{ mL}$ of $0.1\\text{ M } \\text{Na}_2\\text{CO}_3$ solution from crystalline $\\text{Na}_2\\text{CO}_3 \\cdot 10\\text{H}_2\\text{O}$ (washing soda), the mass of crystals required is: (Molar mass of $\\text{Na}_2\\text{CO}_3 \\cdot 10\\text{H}_2\\text{O} = 286\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$2.86\\text{ g}$",
+            "$1.06\\text{ g}$",
+            "$1.43\\text{ g}$",
+            "$5.72\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "Moles of $\\text{Na}_2\\text{CO}_3$ required:\n$$n = M \\times V(\\text{in L}) = 0.1\\text{ M} \\times 0.1\\text{ L} = 0.01\\text{ mol}$$\nEach mole of $\\text{Na}_2\\text{CO}_3$ is provided by $1\\text{ mole of } \\text{Na}_2\\text{CO}_3 \\cdot 10\\text{H}_2\\text{O}$.\nMass of washing soda crystals needed:\n$$\\text{Mass} = 0.01\\text{ mol} \\times 286\\text{ g/mol} = 2.86\\text{ g}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A solution of glucose in water has a molality of $2.0\\text{ m}$. Find the mole fraction of glucose in the solution (rounded to three decimal places).",
+          "image": "",
+          "correctValue": 0.035,
+          "solution": "$2.0\\text{ m}$ solution contains $2.0\\text{ moles of glucose}$ in $1000\\text{ g of water}$.\nMoles of water $= \\frac{1000}{18} = 55.55\\text{ mol}$.\nMole fraction of glucose:\n$$X = \\frac{2.0}{2.0 + 55.55} = \\frac{2.0}{57.55} \\approx 0.03475 \\approx 0.035$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the molarity of a solution obtained by mixing $750\\text{ mL}$ of $0.5\\text{ M } \\text{HCl}$ with $250\\text{ mL}$ of $2.0\\text{ M } \\text{HCl}$.",
+          "image": "",
+          "correctValue": 0.88,
+          "solution": "Total millimoles of $\\text{HCl}$:\n$$\\text{Total mmol} = (750 \\times 0.5) + (250 \\times 2.0) = 375 + 500 = 875\\text{ mmol}$$\nTotal volume:\n$$V_{\\text{total}} = 750 + 250 = 1000\\text{ mL}$$\nMolarity of mixture:\n$$M = \\frac{875\\text{ mmol}}{1000\\text{ mL}} = 0.875\\text{ M} \\approx 0.88\\text{ M}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] What volume (in mL) of $12\\text{ M } \\text{HCl}$ is required to prepare $600\\text{ mL}$ of $0.2\\text{ M } \\text{HCl}$ solution?",
+          "image": "",
+          "correctValue": 10.0,
+          "solution": "Using the dilution equation:\n$$M_1 V_1 = M_2 V_2$$\n$$12 \\times V_1 = 0.2 \\times 600$$\n$$12 V_1 = 120 \\implies V_1 = 10.0\\text{ mL}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If $4.0\\text{ g}$ of $\\text{NaOH}$ is dissolved in $250\\text{ mL}$ of water, find the molarity of the resulting solution. (Molar mass of $\\text{NaOH} = 40\\text{ g/mol}$)",
+          "image": "",
+          "correctValue": 0.4,
+          "solution": "Moles of $\\text{NaOH} = \\frac{4.0\\text{ g}}{40\\text{ g/mol}} = 0.1\\text{ mol}$.\nVolume of solution $= 250\\text{ mL} = 0.25\\text{ L}$.\nMolarity:\n$$M = \\frac{0.1\\text{ mol}}{0.25\\text{ L}} = 0.4\\text{ M}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] In an oxidation-reduction reaction, $1\\text{ mole}$ of $\\text{K}_2\\text{Cr}_2\\text{O}_7$ in acidic medium accepts $6\\text{ moles of electrons}$ to form $\\text{Cr}^{3+}$. If the molarity of the $\\text{K}_2\\text{Cr}_2\\text{O}_7$ solution is $0.25\\text{ M}$, find its normality.",
+          "image": "",
+          "correctValue": 1.5,
+          "solution": "The reduction half-reaction in acidic medium is:\n$$\\text{Cr}_2\\text{O}_7^{2-} + 14\\text{H}^+ + 6e^- \\rightarrow 2\\text{Cr}^{3+} + 7\\text{H}_2\\text{O}$$\nThe $n$-factor (valency factor) is $6$ electrons per mole.\n$$\\text{Normality} = \\text{Molarity} \\times n\\text{-factor} = 0.25 \\times 6 = 1.5\\text{ N}$$"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-chem-10-ionic-equilibrium-basics",
+  "title": "Ionic Equilibrium (Electrolytes, pH Scale, Ostwald's Dilution Law, & Common Ion Effect)",
+  "syllabus": "Electrolytes and non-electrolytes, strong and weak electrolytes; Arrhenius, Brønsted-Lowry, and Lewis concepts of acids and bases; Ionization of weak acids and weak bases, Ostwald's dilution law; Degree of ionization (α) and ionization constants (Ka and Kb); Self-ionization of water, ionic product of water (Kw), effect of temperature on Kw; pH and pOH scale, relationship between pH, pOH, and pKw; Calculation of pH for strong and weak monoprotic and polyprotic acids and bases; Common ion effect and suppression of ionization; Mixture of strong and weak acids/bases",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The $\\text{pH}$ of a $1.0 \\times 10^{-8}\\text{ M}$ aqueous solution of $\\text{HCl}$ at $298\\text{ K}$ is: (Given $\\log_{10}(1.05) \\approx 0.021$)",
+          "image": "",
+          "options": [
+            "$6.98$",
+            "$8.00$",
+            "$7.00$",
+            "$6.00$"
+          ],
+          "correctOption": 0,
+          "solution": "In extremely dilute solutions of acids ($C \\le 10^{-6}\\text{ M}$), the auto-ionization of water must be accounted for:\n$$\\text{H}_2\\text{O} \\rightleftharpoons \\text{H}^+ + \\text{OH}^- \\quad (K_w = 1.0 \\times 10^{-14})$$\nLet $x$ be the $[\\text{H}^+]$ contributed by water:\n$$[\\text{H}^+]_{\\text{total}} = 10^{-8} + x$$\n$$[\\text{OH}^-] = x$$\nUsing the ionic product of water:\n$$[\\text{H}^+]_{\\text{total}} [\\text{OH}^-] = (10^{-8} + x)x = 1.0 \\times 10^{-14}$$\n$$x^2 + 10^{-8}x - 10^{-14} = 0$$\nSolving the quadratic equation:\n$$x = \\frac{-10^{-8} + \\sqrt{10^{-16} + 4(10^{-14})}}{2} = \\frac{-10^{-8} + \\sqrt{4.01 \\times 10^{-14}}}{2} = \\frac{-10^{-8} + 2.002 \\times 10^{-7}}{2} = 0.951 \\times 10^{-7}\\text{ M}$$\n$$[\\text{H}^+]_{\\text{total}} = 10^{-8} + 0.951 \\times 10^{-7} = 1.051 \\times 10^{-7}\\text{ M}$$\n$$\\text{pH} = -\\log_{10}(1.051 \\times 10^{-7}) = 7 - \\log_{10}(1.051) \\approx 7 - 0.021 = 6.979 \\approx 6.98$$\n(An acidic solution must always have $\\text{pH} < 7$ at $298\\text{ K}$)."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For a weak monobasic acid $\\text{HA}$, the degree of dissociation ($\\alpha$) is $0.02$ in a $0.1\\text{ M}$ solution. If the solution is diluted to $0.025\\text{ M}$ at the same temperature, the new degree of dissociation will be:",
+          "image": "",
+          "options": [
+            "$0.04$",
+            "$0.01$",
+            "$0.08$",
+            "$0.02$"
+          ],
+          "correctOption": 0,
+          "solution": "According to Ostwald's dilution law for weak electrolytes (when $\\alpha \\ll 1$):\n$$K_a = C \\alpha^2 \\implies \\alpha = \\sqrt{\\frac{K_a}{C}}$$\nSince the acid dissociation constant $K_a$ is constant at a fixed temperature:\n$$\\alpha_1 \\sqrt{C_1} = \\alpha_2 \\sqrt{C_2} \\implies \\frac{\\alpha_2}{\\alpha_1} = \\sqrt{\\frac{C_1}{C_2}}$$\nSubstitute $C_1 = 0.1\\text{ M}$, $C_2 = 0.025\\text{ M}$, and $\\alpha_1 = 0.02$:\n$$\\frac{\\alpha_2}{0.02} = \\sqrt{\\frac{0.1}{0.025}} = \\sqrt{4} = 2$$\n$$\\alpha_2 = 2 \\times 0.02 = 0.04$$\n(Dilution increases the degree of ionization)."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] At $373\\text{ K}$, the ionic product of water is $K_w = 1.0 \\times 10^{-12}$. An aqueous solution having a $\\text{pH} = 6.5$ at this temperature is:",
+          "image": "",
+          "options": [
+            "Basic",
+            "Acidic",
+            "Neutral",
+            "Amphoteric"
+          ],
+          "correctOption": 0,
+          "solution": "At $373\\text{ K}$:\n$$K_w = 1.0 \\times 10^{-12} \\implies \\text{p}K_w = -\\log_{10}(10^{-12}) = 12$$\nFor pure neutral water at this temperature:\n$$[\\text{H}^+] = [\\text{OH}^-] = \\sqrt{K_w} = 1.0 \\times 10^{-6}\\text{ M}$$\n$$\\text{pH}_{\\text{neutral}} = \\frac{\\text{p}K_w}{2} = \\frac{12}{2} = 6.0$$\nCriteria at $373\\text{ K}$:\n- If $\\text{pH} < 6.0$: Acidic\n- If $\\text{pH} = 6.0$: Neutral\n- If $\\text{pH} > 6.0$: Basic\nSince the given solution has $\\text{pH} = 6.5 > 6.0$, it contains $[\\text{OH}^-] > [\\text{H}^+]$ and is therefore basic."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The concentration of $\\text{H}^+$ ions in a solution containing $0.1\\text{ M } \\text{CH}_3\\text{COOH}$ and $0.1\\text{ M } \\text{HCl}$ is: (Given $K_a$ of $\\text{CH}_3\\text{COOH} = 1.8 \\times 10^{-5}$)",
+          "image": "",
+          "options": [
+            "$0.10\\text{ M}$",
+            "$1.34 \\times 10^{-3}\\text{ M}$",
+            "$0.20\\text{ M}$",
+            "$1.8 \\times 10^{-5}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "$\\text{HCl}$ is a strong acid that undergoes complete ionization:\n$$\\text{HCl} \\rightarrow \\text{H}^+ + \\text{Cl}^- \\implies [\\text{H}^+]_{\\text{HCl}} = 0.1\\text{ M}$$\n$\\text{CH}_3\\text{COOH}$ is a weak acid:\n$$\\text{CH}_3\\text{COOH} \\rightleftharpoons \\text{CH}_3\\text{COO}^- + \\text{H}^+$$\nDue to the common ion effect from the large concentration of $\\text{H}^+$ ($0.1\\text{ M}$) provided by $\\text{HCl}$, the ionization of acetic acid is suppressed even further:\n$$[\\text{H}^+]_{\\text{total}} = 0.1 + [\\text{H}^+]_{\\text{acetic}} \\approx 0.1\\text{ M}$$\nCheck degree of dissociation $\\alpha$ of acetic acid:\n$$K_a = \\frac{[\\text{CH}_3\\text{COO}^-][\\text{H}^+]}{[\\text{CH}_3\\text{COOH}]} \\implies 1.8 \\times 10^{-5} = \\frac{(C\\alpha)(0.1)}{0.1(1 - \\alpha)} \\approx \\alpha(0.1) \\implies \\alpha = 1.8 \\times 10^{-4}$$\n$$[\\text{H}^+]_{\\text{acetic}} = 0.1 \\times 1.8 \\times 10^{-4} = 1.8 \\times 10^{-5}\\text{ M} \\ll 0.1\\text{ M}$$\nTherefore, $[\\text{H}^+]_{\\text{total}} \\approx 0.10\\text{ M}$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Which of the following species functions as a Lewis base but NOT as a Brønsted-Lowry base?",
+          "image": "",
+          "options": [
+            "$\\text{CO}$",
+            "$\\text{NH}_3$",
+            "$\\text{OH}^-$",
+            "$\\text{H}_2\\text{O}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. A Brønsted-Lowry base is defined as a proton ($\\text{H}^+$) acceptor.\n2. A Lewis base is defined as an electron pair donor.\n- $\\text{NH}_3$, $\\text{OH}^-$, and $\\text{H}_2\\text{O}$ readily accept protons to form $\\text{NH}_4^+$, $\\text{H}_2\\text{O}$, and $\\text{H}_3\\text{O}^+$ respectively, so they are both Brønsted and Lewis bases.\n- Carbon monoxide ($\\text{CO}$) has a lone pair of electrons on carbon and acts as a strong $\\sigma$-donor ligand (Lewis base) to transition metals in metal carbonyls (e.g., $\\text{Ni(CO)}_4$), but it does not readily accept protons in aqueous solution to behave as a Brønsted-Lowry base."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The $\\text{pH}$ of a $0.05\\text{ M}$ aqueous solution of a weak base $\\text{BOH}$ having dissociation constant $K_b = 2.0 \\times 10^{-5}$ at $298\\text{ K}$ is:",
+          "image": "",
+          "options": [
+            "$11.0$",
+            "$3.0$",
+            "$8.0$",
+            "$12.0$"
+          ],
+          "correctOption": 0,
+          "solution": "For a weak base:\n$$[\\text{OH}^-] = \\sqrt{K_b \\cdot C}$$\nSubstitute $K_b = 2.0 \\times 10^{-5}$ and $C = 0.05 = 5.0 \\times 10^{-2}\\text{ M}$:\n$$[\\text{OH}^-] = \\sqrt{(2.0 \\times 10^{-5}) \\times (5.0 \\times 10^{-2})} = \\sqrt{10.0 \\times 10^{-7}} = \\sqrt{1.0 \\times 10^{-6}} = 1.0 \\times 10^{-3}\\text{ M}$$\nCompute $\\text{pOH}$:\n$$\\text{pOH} = -\\log_{10}[\\text{OH}^-] = -\\log_{10}(10^{-3}) = 3.0$$\nCompute $\\text{pH}$ at $298\\text{ K}$:\n$$\\text{pH} = 14 - \\text{pOH} = 14 - 3.0 = 11.0$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Adding sodium acetate ($\\text{CH}_3\\text{COONa}$) to an aqueous solution of acetic acid ($\\text{CH}_3\\text{COOH}$):",
+          "image": "",
+          "options": [
+            "Increases the $\\text{pH}$ of the solution",
+            "Decreases the $\\text{pH}$ of the solution",
+            "Increases the degree of dissociation of $\\text{CH}_3\\text{COOH}$",
+            "Decreases the value of $K_a$ of $\\text{CH}_3\\text{COOH}$"
+          ],
+          "correctOption": 0,
+          "solution": "Acetic acid ionizes as:\n$$\\text{CH}_3\\text{COOH} \\rightleftharpoons \\text{CH}_3\\text{COO}^- + \\text{H}^+$$\n1. When strong electrolyte $\\text{CH}_3\\text{COONa}$ is added, it dissociates completely into $\\text{CH}_3\\text{COO}^-$ and $\\text{Na}^+$.\n2. The high concentration of acetate ions introduces a common ion effect.\n3. By Le Chatelier's principle, the ionization equilibrium of acetic acid shifts in the reverse direction.\n4. This suppression reduces the $[\\text{H}^+]$ concentration in the solution.\n5. Since $\\text{pH} = -\\log_{10}[\\text{H}^+]$, a decrease in $[\\text{H}^+]$ results in an increase in the $\\text{pH}$ of the solution."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Equal volumes of two hydrochloric acid solutions having $\\text{pH} = 3$ and $\\text{pH} = 5$ are mixed together. The $\\text{pH}$ of the resulting mixture is approximately: (Given $\\log_{10}(5.05) \\approx 0.70$)",
+          "image": "",
+          "options": [
+            "$3.3$",
+            "$4.0$",
+            "$3.7$",
+            "$2.7$"
+          ],
+          "correctOption": 0,
+          "solution": "Let volume of each solution be $V$:\n- For solution 1 ($\\text{pH} = 3$): $[\\text{H}^+]_1 = 10^{-3}\\text{ M} = 100 \\times 10^{-5}\\text{ M}$\n- For solution 2 ($\\text{pH} = 5$): $[\\text{H}^+]_2 = 10^{-5}\\text{ M}$\n\nTotal moles of $\\text{H}^+$:\n$$n_{\\text{total}} = (10^{-3} V) + (10^{-5} V) = V(10^{-3} + 10^{-5})$$\nTotal volume:\n$$V_{\\text{total}} = V + V = 2V$$\nConcentration of $\\text{H}^+$ in the mixture:\n$$[\\text{H}^+]_{\\text{mix}} = \\frac{V(10^{-3} + 10^{-5})}{2V} = \\frac{10^{-3} + 0.01 \\times 10^{-3}}{2} = \\frac{1.01 \\times 10^{-3}}{2} = 5.05 \\times 10^{-4}\\text{ M}$$\n$$\\text{pH} = -\\log_{10}(5.05 \\times 10^{-4}) = 4 - \\log_{10}(5.05) = 4 - 0.70 = 3.3$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The conjugate base of $\\text{H}_2\\text{PO}_4^-$ and the conjugate acid of $\\text{NH}_3$ are respectively:",
+          "image": "",
+          "options": [
+            "$\\text{HPO}_4^{2-}$ and $\\text{NH}_4^+$",
+            "$\\text{H}_3\\text{PO}_4$ and $\\text{NH}_2^-$",
+            "$\\text{PO}_4^{3-}$ and $\\text{NH}_4^+$",
+            "$\\text{HPO}_4^{2-}$ and $\\text{NH}_2^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. According to the Brønsted-Lowry concept, a conjugate base is formed when an acid donates one proton ($\\text{H}^+$):\n$$\\text{H}_2\\text{PO}_4^- - \\text{H}^+ \\rightarrow \\text{HPO}_4^{2-}$$\n2. A conjugate acid is formed when a base accepts one proton ($\\text{H}^+$):\n$$\\text{NH}_3 + \\text{H}^+ \\rightarrow \\text{NH}_4^+$$\nThus, the conjugate base is $\\text{HPO}_4^{2-}$ and the conjugate acid is $\\text{NH}_4^+$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For a polyprotic acid $\\text{H}_3\\text{PO}_4$, the successive dissociation constants are $K_{a1}$, $K_{a2}$, and $K_{a3}$. The correct relationship among them is:",
+          "image": "",
+          "options": [
+            "$K_{a1} \\gg K_{a2} \\gg K_{a3}$",
+            "$K_{a1} \\ll K_{a2} \\ll K_{a3}$",
+            "$K_{a1} = K_{a2} = K_{a3}$",
+            "$K_{a2} > K_{a1} > K_{a3}$"
+          ],
+          "correctOption": 0,
+          "solution": "The stepwise ionization reactions are:\n1) $\\text{H}_3\\text{PO}_4 \\rightleftharpoons \\text{H}^+ + \\text{H}_2\\text{PO}_4^- \\quad (K_{a1} \\approx 7.5 \\times 10^{-3})$\n2) $\\text{H}_2\\text{PO}_4^- \\rightleftharpoons \\text{H}^+ + \\text{HPO}_4^{2-} \\quad (K_{a2} \\approx 6.2 \\times 10^{-8})$\n3) $\\text{HPO}_4^{2-} \\rightleftharpoons \\text{H}^+ + \\text{PO}_4^{3-} \\quad (K_{a3} \\approx 4.2 \\times 10^{-13})$\nRemoving a positively charged proton from a neutral molecule ($\\text{H}_3\\text{PO}_4$) is energetically much easier than removing it from a negatively charged ion ($\\text{H}_2\\text{PO}_4^-$), which in turn is much easier than removing it from a doubly charged anion ($\\text{HPO}_4^{2-}$).\nHence, $K_{a1} \\gg K_{a2} \\gg K_{a3}$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] What is the percentage ionization of a $0.04\\text{ M}$ solution of formic acid ($\\text{HCOOH}$) having $K_a = 1.6 \\times 10^{-4}$?",
+          "image": "",
+          "options": [
+            "$6.3\\%$",
+            "$4.0\\%$",
+            "$1.6\\%$",
+            "$10.0\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "Using Ostwald's dilution law:\n$$\\alpha = \\sqrt{\\frac{K_a}{C}}$$\nSubstitute $K_a = 1.6 \\times 10^{-4}$ and $C = 0.04 = 4.0 \\times 10^{-2}\\text{ M}$:\n$$\\alpha = \\sqrt{\\frac{1.6 \\times 10^{-4}}{4.0 \\times 10^{-2}}} = \\sqrt{0.4 \\times 10^{-2}} = \\sqrt{4.0 \\times 10^{-3}} = \\sqrt{40 \\times 10^{-4}} = 6.32 \\times 10^{-2}$$\n$$\\%\\text{ ionization} = \\alpha \\times 100 = 6.32\\% \\approx 6.3\\%$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following acts as an amphiprotic species (capable of acting as both Brønsted acid and Brønsted base)?",
+          "image": "",
+          "options": [
+            "$\\text{HCO}_3^-$",
+            "$\\text{CO}_3^{2-}$",
+            "$\\text{SO}_4^{2-}$",
+            "$\\text{H}_3\\text{O}^+$"
+          ],
+          "correctOption": 0,
+          "solution": "An amphiprotic species can both donate and accept a proton:\n1. As a Brønsted acid (proton donor):\n$$\\text{HCO}_3^- \\rightarrow \\text{H}^+ + \\text{CO}_3^{2-}$$\n2. As a Brønsted base (proton acceptor):\n$$\\text{HCO}_3^- + \\text{H}^+ \\rightarrow \\text{H}_2\\text{CO}_3$$\nSpecies like $\\text{CO}_3^{2-}$ and $\\text{SO}_4^{2-}$ cannot donate a proton, and $\\text{H}_3\\text{O}^+$ does not readily accept an additional proton in water."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If $50\\text{ mL}$ of $0.1\\text{ M } \\text{Ba(OH)}_2$ is added to $50\\text{ mL}$ of $0.1\\text{ M } \\text{HCl}$, the $\\text{pH}$ of the resulting solution at $298\\text{ K}$ is: (Given $\\log_{10}(5) \\approx 0.70$)",
+          "image": "",
+          "options": [
+            "$12.7$",
+            "$1.3$",
+            "$7.0$",
+            "$11.3$"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate initial millimoles:\n- $\\text{Ba(OH)}_2$ is a strong diacidic base: $n\\text{-factor} = 2$.\n$$\\text{Millimoles of } \\text{OH}^- = 50\\text{ mL} \\times 0.1\\text{ M} \\times 2 = 10\\text{ mmol}$$\n- $\\text{HCl}$ is a strong monoprotic acid:\n$$\\text{Millimoles of } \\text{H}^+ = 50\\text{ mL} \\times 0.1\\text{ M} \\times 1 = 5\\text{ mmol}$$\n\nNeutralization leaves excess $\\text{OH}^-$:\n$$\\text{Excess } \\text{OH}^- = 10 - 5 = 5\\text{ mmol}$$\nTotal volume $= 50 + 50 = 100\\text{ mL}$.\n$$[\\text{OH}^-] = \\frac{5\\text{ mmol}}{100\\text{ mL}} = 0.05\\text{ M} = 5 \\times 10^{-2}\\text{ M}$$\n$$\\text{pOH} = -\\log_{10}(5 \\times 10^{-2}) = 2 - \\log_{10}(5) = 2 - 0.70 = 1.30$$\n$$\\text{pH} = 14 - \\text{pOH} = 14 - 1.30 = 12.7$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] As temperature increases, the value of the ionic product of water ($K_w$) increases. This occurs because the auto-ionization of water is an:",
+          "image": "",
+          "options": [
+            "Endothermic process",
+            "Exothermic process",
+            "Athermal process ($\\Delta H = 0$)",
+            "Irreversible process"
+          ],
+          "correctOption": 0,
+          "solution": "Auto-ionization of water involves breaking covalent $\\text{O}-\\text{H}$ bonds to separate charges:\n$$\\text{H}_2\\text{O}(l) \\rightleftharpoons \\text{H}^+(aq) + \\text{OH}^-(aq); \\quad \\Delta H > 0$$\nBecause bond breaking requires energy, the process is endothermic.\nBy Le Chatelier's principle and the van 't Hoff equation:\n$$\\frac{d\\ln K_w}{dT} = \\frac{\\Delta H^\\circ}{RT^2}$$\nSince $\\Delta H^\\circ > 0$, an increase in temperature shifts the equilibrium in the forward direction, causing $K_w$ to increase."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The relation between dissociation constant of a weak acid ($K_a$) and that of its conjugate base ($K_b$) in aqueous medium at $298\\text{ K}$ is:",
+          "image": "",
+          "options": [
+            "$K_a \\cdot K_b = K_w$",
+            "$K_a / K_b = K_w$",
+            "$K_a + K_b = K_w$",
+            "$\\text{p}K_a \\cdot \\text{p}K_b = \\text{p}K_w$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider a weak acid $\\text{HA}$ and its conjugate base $\\text{A}^-$:\n1) $\\text{HA} \\rightleftharpoons \\text{H}^+ + \\text{A}^-; \\quad K_a = \\frac{[\\text{H}^+][\\text{A}^-]}{[\\text{HA}]}$\n2) $\\text{A}^- + \\text{H}_2\\text{O} \\rightleftharpoons \\text{HA} + \\text{OH}^-; \\quad K_b = \\frac{[\\text{HA}][\\text{OH}^-]}{[\\text{A}^-]}$\nMultiplying the two equilibrium expressions:\n$$K_a \\cdot K_b = \\left(\\frac{[\\text{H}^+][\\text{A}^-]}{[\\text{HA}]}\\right) \\left(\\frac{[\\text{HA}][\\text{OH}^-]}{[\\text{A}^-]}\\right) = [\\text{H}^+][\\text{OH}^-] = K_w$$\nIn logarithmic form: $\\text{p}K_a + \\text{p}K_b = \\text{p}K_w = 14$ at $298\\text{ K}$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] What is the $\\text{pH}$ of a $0.01\\text{ M}$ solution of an organic weak acid having $K_a = 1.0 \\times 10^{-6}$?",
+          "image": "",
+          "options": [
+            "$4.0$",
+            "$3.0$",
+            "$5.0$",
+            "$6.0$"
+          ],
+          "correctOption": 0,
+          "solution": "Check validity of $\\alpha \\ll 1$ approximation:\n$$[\\text{H}^+] = \\sqrt{K_a \\cdot C}$$\nSubstitute $K_a = 1.0 \\times 10^{-6}$ and $C = 0.01 = 10^{-2}\\text{ M}$:\n$$[\\text{H}^+] = \\sqrt{(1.0 \\times 10^{-6}) \\times 10^{-2}} = \\sqrt{1.0 \\times 10^{-8}} = 1.0 \\times 10^{-4}\\text{ M}$$\n$$\\alpha = \\frac{[\\text{H}^+]}{C} = \\frac{10^{-4}}{10^{-2}} = 10^{-2} = 0.01 = 1\\% < 5\\% \\quad (\\text{approximation valid})$$\nCompute $\\text{pH}$:\n$$\\text{pH} = -\\log_{10}[\\text{H}^+] = -\\log_{10}(10^{-4}) = 4.0$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A $100\\text{ mL}$ solution of $\\text{NaOH}$ with $\\text{pH} = 12$ is diluted with distilled water to a total volume of $1000\\text{ mL}$. The $\\text{pH}$ of the diluted solution at $298\\text{ K}$ is:",
+          "image": "",
+          "options": [
+            "$11$",
+            "$13$",
+            "$10$",
+            "$7$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial state:\n$$\\text{pH} = 12 \\implies \\text{pOH} = 14 - 12 = 2$$\n$$[\\text{OH}^-]_1 = 10^{-2}\\text{ M}$$\n$$V_1 = 100\\text{ mL}$$\nDilution to $V_2 = 1000\\text{ mL}$:\n$$[\\text{OH}^-]_1 V_1 = [\\text{OH}^-]_2 V_2$$\n$$10^{-2} \\times 100 = [\\text{OH}^-]_2 \\times 1000$$\n$$[\\text{OH}^-]_2 = \\frac{1}{1000} = 10^{-3}\\text{ M}$$\nNew $\\text{pOH}$ and $\\text{pH}$:\n$$\\text{pOH} = -\\log_{10}(10^{-3}) = 3$$\n$$\\text{pH} = 14 - 3 = 11$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The Ostwald dilution law expression $K_a = \\frac{C\\alpha^2}{1 - \\alpha}$ fails or becomes inapplicable when applied to:",
+          "image": "",
+          "options": [
+            "Strong electrolytes like $\\text{HCl}$ or $\\text{NaCl}$",
+            "Very dilute solutions of weak acids",
+            "Aqueous acetic acid",
+            "Aqueous ammonium hydroxide"
+          ],
+          "correctOption": 0,
+          "solution": "Ostwald's dilution law is derived based on the assumption of a dynamic ionization equilibrium between unionized molecules and ions ($\\text{AB} \\rightleftharpoons \\text{A}^+ + \\text{B}^-$).\nStrong electrolytes (like $\\text{HCl}$, $\\text{HNO}_3$, $\\text{NaCl}$) are essentially $100\\%$ ionized at all practical concentrations ($\\alpha \\approx 1$), so no equilibrium exists between un-ionized molecules and ions.\nTherefore, Ostwald's dilution law is strictly valid only for weak electrolytes."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The concentration of $\\text{OH}^-$ ions in a $0.005\\text{ M}$ solution of $\\text{Ca(OH)}_2$ (assuming complete ionization) is:",
+          "image": "",
+          "options": [
+            "$0.010\\text{ M}$",
+            "$0.005\\text{ M}$",
+            "$0.0025\\text{ M}$",
+            "$0.020\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Calcium hydroxide is a strong base that ionizes completely according to:\n$$\\text{Ca(OH)}_2(aq) \\rightarrow \\text{Ca}^{2+}(aq) + 2\\text{OH}^-(aq)$$\nEach mole of $\\text{Ca(OH)}_2$ yields $2\\text{ moles of } \\text{OH}^-$:\n$$[\\text{OH}^-] = 2 \\times [\\text{Ca(OH)}_2] = 2 \\times 0.005\\text{ M} = 0.010\\text{ M}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] When $10\\text{ mL}$ of $0.1\\text{ M } \\text{H}_2\\text{SO}_4$ is added to $40\\text{ mL}$ of $0.1\\text{ M } \\text{NaOH}$, the $\\text{pH}$ of the mixture is: (Given $\\log_{10}(4) \\approx 0.60$)",
+          "image": "",
+          "options": [
+            "$12.60$",
+            "$1.40$",
+            "$7.00$",
+            "$11.30$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{H}_2\\text{SO}_4$ is diprotic:\n$$\\text{Millimoles of } \\text{H}^+ = 10\\text{ mL} \\times 0.1\\text{ M} \\times 2 = 2\\text{ mmol}$$\n2. $\\text{NaOH}$ is monoprotic:\n$$\\text{Millimoles of } \\text{OH}^- = 40\\text{ mL} \\times 0.1\\text{ M} \\times 1 = 4\\text{ mmol}$$\n3. Excess $\\text{OH}^- = 4 - 2 = 2\\text{ mmol}$.\nTotal volume $= 10 + 40 = 50\\text{ mL}$.\n$$[\\text{OH}^-] = \\frac{2\\text{ mmol}}{50\\text{ mL}} = 0.04\\text{ M} = 4 \\times 10^{-2}\\text{ M}$$\n$$\\text{pOH} = -\\log_{10}(4 \\times 10^{-2}) = 2 - \\log_{10}(4) = 2 - 0.60 = 1.40$$\n$$\\text{pH} = 14 - \\text{pOH} = 14 - 1.40 = 12.60$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the $\\text{pH}$ of a $0.05\\text{ M } \\text{H}_2\\text{SO}_4$ solution, assuming complete dissociation of both protons.",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "$\\text{H}_2\\text{SO}_4$ produces two protons per formula unit:\n$$[\\text{H}^+] = 2 \\times C = 2 \\times 0.05 = 0.10\\text{ M} = 10^{-1}\\text{ M}$$\n$$\\text{pH} = -\\log_{10}[\\text{H}^+] = -\\log_{10}(10^{-1}) = 1.0$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] The dissociation constant of a weak monobasic acid $\\text{HA}$ is $K_a = 1.0 \\times 10^{-5}$. Find the percent dissociation of $\\text{HA}$ in its $0.1\\text{ M}$ aqueous solution.",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Using Ostwald's dilution law:\n$$\\alpha = \\sqrt{\\frac{K_a}{C}} = \\sqrt{\\frac{1.0 \\times 10^{-5}}{0.1}} = \\sqrt{1.0 \\times 10^{-4}} = 1.0 \\times 10^{-2} = 0.01$$\n$$\\%\\text{ dissociation} = \\alpha \\times 100 = 0.01 \\times 100 = 1.0\\%$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A weak base $\\text{BOH}$ has $K_b = 1.0 \\times 10^{-6}$. Find the $\\text{pOH}$ of a $0.01\\text{ M}$ solution of this base.",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "For a weak base:\n$$[\\text{OH}^-] = \\sqrt{K_b \\cdot C} = \\sqrt{(1.0 \\times 10^{-6}) \\times 0.01} = \\sqrt{1.0 \\times 10^{-8}} = 1.0 \\times 10^{-4}\\text{ M}$$\n$$\\text{pOH} = -\\log_{10}[\\text{OH}^-] = -\\log_{10}(10^{-4}) = 4.0$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the value of $\\text{p}K_w$ for pure water at $298\\text{ K}$ given that $K_w = 1.0 \\times 10^{-14}$.",
+          "image": "",
+          "correctValue": 14.0,
+          "solution": "By definition:\n$$\\text{p}K_w = -\\log_{10}(K_w) = -\\log_{10}(1.0 \\times 10^{-14}) = 14.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] An aqueous solution has $[\\text{H}^+] = 2.0 \\times 10^{-3}\\text{ M}$. If $\\text{pH} = 3 - \\log_{10}(2)$ and $\\log_{10}(2) = 0.30$, calculate the $\\text{pH}$ of the solution.",
+          "image": "",
+          "correctValue": 2.7,
+          "solution": "Definition of $\\text{pH}$:\n$$\\text{pH} = -\\log_{10}[\\text{H}^+] = -\\log_{10}(2.0 \\times 10^{-3}) = 3 - \\log_{10}(2)$$\nGiven $\\log_{10}(2) = 0.30$:\n$$\\text{pH} = 3 - 0.30 = 2.7$$"
+        }
+      ]
+    }
+  ]
+}

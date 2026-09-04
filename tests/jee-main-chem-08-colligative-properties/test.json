@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-chem-08-colligative-properties",
+  "title": "Colligative Properties & van 't Hoff Factor",
+  "syllabus": "Colligative properties of dilute solutions; Relative lowering of vapour pressure (RLVP) and determination of molar mass; Elevation of boiling point (ebullioscopy) and molal elevation constant (K_b); Depression of freezing point (cryoscopy) and molal depression constant (K_f); Thermodynamic derivation and physical significance of K_b and K_f; Osmosis, osmotic pressure (π = iCRT), isotonic, hypertonic, and hypotonic solutions, and reverse osmosis; Abnormal molar masses and van 't Hoff factor (i); Degree of dissociation (α) and degree of association (β)",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A $0.01\\text{ M}$ aqueous solution of $\\text{K}_3[\\text{Fe(CN)}_6]$ freezes at $-0.0651^\\circ\\text{C}$. The degree of dissociation ($\\alpha$) of the complex salt is: (Given $K_f(\\text{H}_2\\text{O}) = 1.86\\text{ K kg mol}^{-1}$, assume molarity $\\approx$ molality)",
+          "image": "",
+          "options": [
+            "$0.83$",
+            "$0.75$",
+            "$0.92$",
+            "$0.67$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Observed depression in freezing point:\n$$\\Delta T_f = 0 - (-0.0651) = 0.0651^\\circ\\text{C} = 0.0651\\text{ K}$$\n\n2. Theoretical (calculated) freezing point depression without dissociation ($i = 1$):\n$$\\Delta T_{f,\\text{cal}} = K_f \\cdot m = 1.86 \\times 0.01 = 0.0186\\text{ K}$$\n\n3. Calculate the van 't Hoff factor ($i$):\n$$i = \\frac{\\Delta T_{f,\\text{obs}}}{\\Delta T_{f,\\text{cal}}} = \\frac{0.0651}{0.0186} = 3.5$$\n\n4. Relation between $i$ and degree of dissociation $\\alpha$:\n$$\\text{K}_3[\\text{Fe(CN)}_6] \\rightarrow 3\\text{K}^+ + [\\text{Fe(CN)}_6]^{3-} \\implies n = 4\\text{ ions}$$\n$$i = 1 + (n - 1)\\alpha = 1 + (4 - 1)\\alpha = 1 + 3\\alpha$$\n$$3.5 = 1 + 3\\alpha \\implies 3\\alpha = 2.5 \\implies \\alpha = \\frac{2.5}{3} \\approx 0.833 \\approx 0.83$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Which of the following $0.1\\text{ m}$ aqueous solutions will exhibit the highest boiling point?",
+          "image": "",
+          "options": [
+            "$\\text{Al}_2(\\text{SO}_4)_3$",
+            "$\\text{CaCl}_2$",
+            "$\\text{NaCl}$",
+            "$\\text{Glucose}$"
+          ],
+          "correctOption": 0,
+          "solution": "The elevation in boiling point is a colligative property:\n$$\\Delta T_b = i K_b m$$\nSince $K_b$ is the same (water as solvent) and the molality $m = 0.1\\text{ m}$ is identical for all solutions, the boiling point elevation is directly proportional to the van 't Hoff factor ($i$):\n- For Glucose (non-electrolyte): $i = 1 \\implies i \\cdot m = 0.1$\n- For $\\text{NaCl} \\rightarrow \\text{Na}^+ + \\text{Cl}^-$: $i = 2 \\implies i \\cdot m = 0.2$\n- For $\\text{CaCl}_2 \\rightarrow \\text{Ca}^{2+} + 2\\text{Cl}^-$: $i = 3 \\implies i \\cdot m = 0.3$\n- For $\\text{Al}_2(\\text{SO}_4)_3 \\rightarrow 2\\text{Al}^{3+} + 3\\text{SO}_4^{2-}$: $i = 5 \\implies i \\cdot m = 0.5$\n\nSince $\\text{Al}_2(\\text{SO}_4)_3$ has the highest effective particle concentration ($i \\cdot m = 0.5$), it produces the largest $\\Delta T_b$ and therefore the highest boiling point."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A non-volatile solute dimersizes in benzene to an extent of $80\\%$. The van 't Hoff factor ($i$) for the solute in this solution is:",
+          "image": "",
+          "options": [
+            "$0.60$",
+            "$0.80$",
+            "$0.40$",
+            "$1.20$"
+          ],
+          "correctOption": 0,
+          "solution": "For association where $n$ molecules associate to form a polymer:\n$$2A \\rightleftharpoons A_2 \\implies n = 2$$\nThe formula relating van 't Hoff factor $i$ and degree of association $\\beta$ is:\n$$i = 1 - \\left(1 - \\frac{1}{n}\\right)\\beta$$\nSubstitute $n = 2$ and $\\beta = 80\\% = 0.80$:\n$$i = 1 - \\left(1 - \\frac{1}{2}\\right)(0.80) = 1 - \\frac{1}{2}(0.80) = 1 - 0.40 = 0.60$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The osmotic pressure of a dilute solution of a polymer is measured to determine its molar mass. The preferred colligative property for determining the molar mass of biomolecules and polymers is osmotic pressure because:",
+          "image": "",
+          "options": [
+            "The magnitude of osmotic pressure is large and measurable at room temperature even for very low molar concentrations",
+            "Polymers decompose at room temperature",
+            "The values of $K_b$ and $K_f$ for water are too large to be measured",
+            "Polymers have high volatility in solution"
+          ],
+          "correctOption": 0,
+          "solution": "Polymers and biomolecules (such as proteins and nucleic acids) have extremely high molar masses ($10^4 - 10^6\\text{ g/mol}$) and low solubilities.\nConsequently, their dilute solutions have extremely small molalities, producing negligible and unmeasurable changes in boiling point ($\\Delta T_b < 10^{-3}\\text{ K}$) and freezing point ($\\Delta T_f < 10^{-3}\\text{ K}$).\nIn contrast, osmotic pressure ($\\pi = CRT$) yields substantial, easily measurable pressures (often several centimeters of liquid column) even at very low molar concentrations ($10^{-4}\\text{ M}$) at room temperature, without risking thermal denaturation of fragile biomolecules."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An aqueous solution of a protein containing $1.26\\text{ g}$ of the protein in $200\\text{ mL}$ of solution has an osmotic pressure of $2.57 \\times 10^{-3}\\text{ bar}$ at $300\\text{ K}$. The molar mass of the protein is: (Take $R = 0.083\\text{ L bar K}^{-1}\\text{ mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$61038\\text{ g/mol}$",
+            "$31025\\text{ g/mol}$",
+            "$12204\\text{ g/mol}$",
+            "$54320\\text{ g/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the osmotic pressure formula:\n$$\\pi = CRT = \\frac{w_2}{M_2 \\cdot V} RT$$\n$$M_2 = \\frac{w_2 RT}{\\pi V}$$\nSubstitute the given values:\n- $w_2 = 1.26\\text{ g}$\n- $R = 0.083\\text{ L bar K}^{-1}\\text{ mol}^{-1}$\n- $T = 300\\text{ K}$\n- $\\pi = 2.57 \\times 10^{-3}\\text{ bar}$\n- $V = 200\\text{ mL} = 0.20\\text{ L}$\n\n$$M_2 = \\frac{1.26 \\times 0.083 \\times 300}{(2.57 \\times 10^{-3}) \\times 0.20} = \\frac{31.374}{5.14 \\times 10^{-4}} \\approx 61038.9\\text{ g/mol} \\approx 61038\\text{ g/mol}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The molal elevation constant ($K_b$) of a solvent depends only upon:",
+          "image": "",
+          "options": [
+            "The nature of the solvent",
+            "The nature of the solute",
+            "The molality of the solution",
+            "The boiling point of the solution"
+          ],
+          "correctOption": 0,
+          "solution": "From thermodynamic derivation:\n$$K_b = \\frac{R M_{\\text{solvent}} T_b^2}{1000 \\Delta H_{\\text{vap}}}$$\nwhere $R$ is universal gas constant, $M_{\\text{solvent}}$ is molar mass of solvent, $T_b$ is normal boiling point of pure solvent, and $\\Delta H_{\\text{vap}}$ is molar enthalpy of vaporization of the solvent.\nEvery parameter in this equation is an intrinsic characteristic of the solvent.\nTherefore, $K_b$ is completely independent of the nature or concentration of the solute and depends solely on the nature of the solvent."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Two solutions $S_1$ and $S_2$ are separated by a semipermeable membrane (SPM). $S_1$ is a $0.1\\text{ M}$ urea solution and $S_2$ is a $0.05\\text{ M } \\text{NaCl}$ solution. At $298\\text{ K}$, which of the following occurs?",
+          "image": "",
+          "options": [
+            "No net movement of solvent occurs because the two solutions are isotonic",
+            "Solvent flows predominantly from $S_1$ to $S_2$",
+            "Solvent flows predominantly from $S_2$ to $S_1$",
+            "Solute particles migrate across the SPM until concentrations equalize"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate effective osmolarity ($i \\cdot C$) for each solution:\n- For $S_1$ (urea, non-electrolyte): $i = 1 \\implies \\pi_1 = 1 \\times 0.1 \\times RT = 0.1 RT$\n- For $S_2$ ($\\text{NaCl} \\rightarrow \\text{Na}^+ + \\text{Cl}^-$): $i = 2 \\implies \\pi_2 = 2 \\times 0.05 \\times RT = 0.1 RT$\n\nSince $\\pi_1 = \\pi_2$, the two solutions have identical osmotic pressure and are isotonic.\nConsequently, the rate of solvent molecules migrating through the SPM in both directions is equal, resulting in no net movement of solvent."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Ethylene glycol (molar mass $= 62\\text{ g/mol}$) is commonly used as an antifreeze in car radiators. What mass of ethylene glycol must be added to $4.0\\text{ kg}$ of water to lower its freezing point to $-6.0^\\circ\\text{C}$? ($K_f = 1.86\\text{ K kg mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$800\\text{ g}$",
+            "$400\\text{ g}$",
+            "$600\\text{ g}$",
+            "$1200\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\Delta T_f = 0 - (-6.0) = 6.0\\text{ K}$.\n2. For ethylene glycol (non-electrolyte), $i = 1$:\n$$\\Delta T_f = K_f \\cdot m = K_f \\cdot \\frac{w_2}{M_2 \\cdot W_1(\\text{kg})}$$\n$$6.0 = 1.86 \\times \\frac{w_2}{62 \\times 4.0}$$\n$$6.0 = \\frac{1.86}{248} \\times w_2 = 0.0075 \\times w_2$$\n$$w_2 = \\frac{6.0}{0.0075} = 800\\text{ g}$$\nThus, $800\\text{ g}$ of ethylene glycol is required."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] When mercuric iodide ($\\text{HgI}_2$) is added to an aqueous solution of potassium iodide ($\\text{KI}$), the freezing point of the resulting solution:",
+          "image": "",
+          "options": [
+            "Increases",
+            "Decreases",
+            "Remains unchanged",
+            "Drops to absolute zero"
+          ],
+          "correctOption": 0,
+          "solution": "When $\\text{HgI}_2$ is added to an aqueous solution of $\\text{KI}$, complexation occurs:\n$$\\text{HgI}_2(s) + 2\\text{KI}(aq) \\rightarrow \\text{K}_2[\\text{HgI}_4](aq)$$\n- Initially, $2\\text{KI}$ produces $4\\text{ ions}$ ($2\\text{K}^+ + 2\\text{I}^-$).\n- Upon complexation, $1$ formula unit of $\\text{K}_2[\\text{HgI}_4]$ produces only $3\\text{ ions}$ ($2\\text{K}^+ + [\\text{HgI}_4]^{2-}$).\nBecause the total number of dissolved solute particles decreases, the depression in freezing point ($\\Delta T_f$) decreases.\nSince $T_f = T_f^\\circ - \\Delta T_f$, a smaller $\\Delta T_f$ means that the freezing point of the solution increases (shifts closer to $0^\\circ\\text{C}$)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The relative lowering of vapour pressure of a dilute aqueous solution containing a non-volatile solute is $0.02$. The molality of this solution is approximately:",
+          "image": "",
+          "options": [
+            "$1.13\\text{ m}$",
+            "$0.55\\text{ m}$",
+            "$2.26\\text{ m}$",
+            "$0.20\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "By Raoult's Law for relative lowering of vapour pressure (RLVP):\n$$\\frac{P^\\circ - P}{P^\\circ} = X_{\\text{solute}} = 0.02$$\nThen the mole fraction of solvent (water) is:\n$$X_{\\text{solvent}} = 1 - 0.02 = 0.98$$\nMolality $m$ is related to mole fraction by:\n$$m = \\frac{X_{\\text{solute}}}{X_{\\text{solvent}} \\cdot M_{\\text{solvent}}} \\times 1000$$\nFor water, $M_{\\text{solvent}} = 18\\text{ g/mol}$:\n$$m = \\frac{0.02}{0.98 \\times 18} \\times 1000 = \\frac{20}{17.64} \\approx 1.133\\text{ m} \\approx 1.13\\text{ m}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A $0.1\\text{ M}$ aqueous solution of a monobasic weak acid $\\text{HA}$ has an osmotic pressure of $3.0\\text{ bar}$ at $300\\text{ K}$. If the theoretical osmotic pressure for un-ionized $\\text{HA}$ is $2.49\\text{ bar}$, the percent ionization of the acid is:",
+          "image": "",
+          "options": [
+            "$20.5\\%$",
+            "$15.0\\%$",
+            "$25.0\\%$",
+            "$10.2\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Find the van 't Hoff factor:\n$$i = \\frac{\\pi_{\\text{obs}}}{\\pi_{\\text{cal}}} = \\frac{3.0}{2.49} \\approx 1.2048$$\n2. Dissociation of monobasic acid:\n$$\\text{HA} \\rightleftharpoons \\text{H}^+ + \\text{A}^- \\implies n = 2$$\n$$i = 1 + (n - 1)\\alpha = 1 + \\alpha$$\n$$\\alpha = i - 1 = 1.2048 - 1 = 0.2048$$\n$$\\%\\text{ ionization} = 0.2048 \\times 100 = 20.48\\% \\approx 20.5\\%$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A substance $AB$ undergoes $40\\%$ dissociation into $A^+$ and $B^-$ in a solvent. The theoretical molecular mass of $AB$ is $M$. The experimentally observed molar mass of $AB$ in this solution will be:",
+          "image": "",
+          "options": [
+            "$\\frac{M}{1.4}$",
+            "$1.4 M$",
+            "$\\frac{M}{1.2}$",
+            "$0.6 M$"
+          ],
+          "correctOption": 0,
+          "solution": "For dissociation $AB \\rightarrow A^+ + B^-$ with $n = 2$ and $\\alpha = 0.40$:\n$$i = 1 + (2 - 1)\\alpha = 1 + 0.40 = 1.40$$\nSince the colligative property is inversely related to observed molar mass:\n$$i = \\frac{M_{\\text{theoretical}}}{M_{\\text{observed}}}$$\n$$M_{\\text{observed}} = \\frac{M_{\\text{theoretical}}}{i} = \\frac{M}{1.4}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] During reverse osmosis used for seawater desalination, the direction of solvent flow is reversed by:",
+          "image": "",
+          "options": [
+            "Applying a hydrostatic pressure on the solution side greater than the osmotic pressure",
+            "Applying a hydrostatic pressure on the pure solvent side greater than the osmotic pressure",
+            "Heating the solution above its boiling point",
+            "Decreasing the atmospheric pressure over the solution"
+          ],
+          "correctOption": 0,
+          "solution": "In normal osmosis, solvent molecules naturally flow through a semipermeable membrane from pure solvent (or dilute solution) to the concentrated solution.\nIf a pressure larger than the osmotic pressure ($\\pi$) is applied to the concentrated solution side, the chemical potential of the solvent in the solution becomes greater than that of pure solvent.\nThis forces pure solvent molecules to squeeze backwards through the membrane from the solution side into the fresh water side, a process termed reverse osmosis (RO)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The freezing point of a $1\\%\\text{ (w/w)}$ aqueous solution of calcium nitrate $\\text{Ca(NO}_3)_2$ is $-0.277^\\circ\\text{C}$. The van 't Hoff factor ($i$) of $\\text{Ca(NO}_3)_2$ in this solution is: (Given $K_f = 1.86\\text{ K kg mol}^{-1}$, Molar mass of $\\text{Ca(NO}_3)_2 = 164\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$2.44$",
+            "$3.00$",
+            "$1.86$",
+            "$2.12$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Consider $100\\text{ g}$ of solution:\n- Mass of solute $\\text{Ca(NO}_3)_2 = 1.0\\text{ g}$\n- Mass of solvent (water) $= 100 - 1.0 = 99\\text{ g} = 0.099\\text{ kg}$\n\n2. Molality ($m$):\n$$m = \\frac{1.0 / 164}{0.099} = \\frac{1.0}{164 \\times 0.099} = \\frac{1.0}{16.236} \\approx 0.0616\\text{ m}$$\n\n3. Observed $\\Delta T_f = 0.277\\text{ K}$:\n$$\\Delta T_f = i K_f m$$\n$$0.277 = i \\times 1.86 \\times 0.0616$$\n$$0.277 = i \\times 0.11458$$\n$$i = \\frac{0.277}{0.11458} \\approx 2.417 \\approx 2.44$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] When benzoic acid is dissolved in benzene, it dimerizes. If the normal molar mass of benzoic acid is $122\\text{ g/mol}$ and its experimentally observed molar mass in benzene is $218\\text{ g/mol}$, the degree of association is approximately:",
+          "image": "",
+          "options": [
+            "$88\\%$",
+            "$78\\%$",
+            "$95\\%$",
+            "$65\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "1. van 't Hoff factor:\n$$i = \\frac{M_{\\text{cal}}}{M_{\\text{obs}}} = \\frac{122}{218} \\approx 0.5596$$\n2. Dimerization in benzene ($n = 2$):\n$$i = 1 - \\left(1 - \\frac{1}{n}\\right)\\beta = 1 - \\frac{\\beta}{2}$$\n$$0.5596 = 1 - \\frac{\\beta}{2}$$\n$$\\frac{\\beta}{2} = 1 - 0.5596 = 0.4404$$\n$$\\beta = 2 \\times 0.4404 = 0.8808 \\approx 88\\%$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A solution containing $10\\text{ g}$ of non-volatile solute in $100\\text{ g}$ of water elevates the boiling point by $1.04^\\circ\\text{C}$. If $K_b$ for water is $0.52\\text{ K kg mol}^{-1}$, the molar mass of the solute is:",
+          "image": "",
+          "options": [
+            "$50\\text{ g/mol}$",
+            "$100\\text{ g/mol}$",
+            "$25\\text{ g/mol}$",
+            "$200\\text{ g/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the boiling point elevation equation:\n$$\\Delta T_b = K_b \\cdot \\frac{w_2 \\times 1000}{M_2 \\times w_1}$$\nSubstitute given values:\n- $\\Delta T_b = 1.04\\text{ K}$\n- $K_b = 0.52\\text{ K kg mol}^{-1}$\n- $w_2 = 10\\text{ g}$\n- $w_1 = 100\\text{ g}$\n\n$$1.04 = 0.52 \\times \\frac{10 \\times 1000}{M_2 \\times 100}$$\n$$1.04 = 0.52 \\times \\frac{100}{M_2} = \\frac{52}{M_2}$$\n$$M_2 = \\frac{52}{1.04} = 50\\text{ g/mol}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] If the elevation in boiling point of a $0.05\\text{ m}$ solution of a binary electrolyte $AB$ is $0.0468^\\circ\\text{C}$ in water ($K_b = 0.52\\text{ K kg mol}^{-1}$), then the percentage dissociation of $AB$ is:",
+          "image": "",
+          "options": [
+            "$80\\%$",
+            "$60\\%$",
+            "$90\\%$",
+            "$75\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\Delta T_b = i K_b m$\n$$0.0468 = i \\times 0.52 \\times 0.05 = i \\times 0.026$$\n$$i = \\frac{0.0468}{0.026} = 1.80$$\n2. For binary electrolyte $AB \\rightarrow A^+ + B^-$, $n = 2$:\n$$i = 1 + \\alpha$$\n$$1.80 = 1 + \\alpha \\implies \\alpha = 0.80$$\n$$\\%\\text{ dissociation} = 80\\%$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following aqueous solutions is hypotonic with respect to a $0.1\\text{ M } \\text{NaCl}$ solution?",
+          "image": "",
+          "options": [
+            "$0.1\\text{ M } \\text{Glucose}$",
+            "$0.1\\text{ M } \\text{CaCl}_2$",
+            "$0.1\\text{ M } \\text{MgSO}_4$",
+            "$0.2\\text{ M } \\text{Urea}$"
+          ],
+          "correctOption": 0,
+          "solution": "Osmolarity of $0.1\\text{ M } \\text{NaCl}$ solution:\n$$i \\cdot C = 2 \\times 0.1 = 0.2\\text{ M}$$\nA solution is hypotonic if its effective osmolarity ($i \\cdot C$) is strictly less than $0.2\\text{ M}$:\n- $0.1\\text{ M Glucose}$: $i = 1 \\implies i \\cdot C = 1 \\times 0.1 = 0.1\\text{ M} < 0.2\\text{ M}$ (hypotonic)\n- $0.1\\text{ M CaCl}_2$: $i = 3 \\implies i \\cdot C = 0.3\\text{ M} > 0.2\\text{ M}$ (hypertonic)\n- $0.1\\text{ M MgSO}_4$: $i = 2 \\implies i \\cdot C = 0.2\\text{ M}$ (isotonic)\n- $0.2\\text{ M Urea}$: $i = 1 \\implies i \\cdot C = 0.2\\text{ M}$ (isotonic)\nTherefore, $0.1\\text{ M Glucose}$ is hypotonic."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The freezing point of a solution containing $0.1\\text{ g}$ of $\\text{K}_3[\\text{Fe(CN)}_6]$ in $100\\text{ g}$ of water is lower than that of pure water by $0.02^\\circ\\text{C}$. If the complex is $100\\%$ dissociated, the value of $K_f$ of water is: (Molar mass of $\\text{K}_3[\\text{Fe(CN)}_6] = 329\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$1.65\\text{ K kg mol}^{-1}$",
+            "$1.86\\text{ K kg mol}^{-1}$",
+            "$2.05\\text{ K kg mol}^{-1}$",
+            "$1.42\\text{ K kg mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "For complete dissociation ($100\\%$), $\\text{K}_3[\\text{Fe(CN)}_6] \\rightarrow 3\\text{K}^+ + [\\text{Fe(CN)}_6]^{3-}$, so $i = 4$.\nMoles of solute:\n$$n = \\frac{0.1}{329}\\text{ mol}$$\nMass of water $= 100\\text{ g} = 0.1\\text{ kg}$.\nMolality:\n$$m = \\frac{0.1 / 329}{0.1} = \\frac{1}{329}\\text{ mol/kg}$$\nUsing $\\Delta T_f = i K_f m$:\n$$0.02 = 4 \\times K_f \\times \\frac{1}{329}$$\n$$K_f = \\frac{0.02 \\times 329}{4} = \\frac{6.58}{4} = 1.645\\text{ K kg mol}^{-1} \\approx 1.65\\text{ K kg mol}^{-1}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Plant cells placed in a hypertonic salt solution undergo shrinkage of the protoplast away from the cell wall. This physiological phenomenon is called:",
+          "image": "",
+          "options": [
+            "Plasmolysis",
+            "Hemolysis",
+            "Endosmosis",
+            "Turgor generation"
+          ],
+          "correctOption": 0,
+          "solution": "When a plant cell is placed in a hypertonic solution (a solution having a higher osmotic pressure/solute concentration than the cell sap), water exits the cell through the semipermeable cell membrane via exosmosis.\nAs water is lost, the central vacuole shrinks and the protoplast pulls away from the rigid cell wall, a biological phenomenon known as plasmolysis."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the osmotic pressure (in atm) of a $0.05\\text{ M}$ aqueous solution of $\\text{CaCl}_2$ at $300\\text{ K}$, assuming $100\\%$ dissociation. (Take $R = 0.0821\\text{ L atm K}^{-1}\\text{ mol}^{-1}$, round to two decimal places).",
+          "image": "",
+          "correctValue": 3.69,
+          "solution": "For complete dissociation of $\\text{CaCl}_2 \\rightarrow \\text{Ca}^{2+} + 2\\text{Cl}^-$, $i = 3$.\n$$\\pi = i C R T$$\n$$\\pi = 3 \\times 0.05 \\times 0.0821 \\times 300$$\n$$\\pi = 0.15 \\times 24.63 = 3.6945\\text{ atm} \\approx 3.69\\text{ atm}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the van 't Hoff factor ($i$) for potassium ferrocyanide $\\text{K}_4[\\text{Fe(CN)}_6]$ if it is $50\\%$ dissociated in aqueous solution.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "$\\text{K}_4[\\text{Fe(CN)}_6]$ dissociates into $4\\text{K}^+ + [\\text{Fe(CN)}_6]^{4-}$, so $n = 5$ ions.\nGiven degree of dissociation $\\alpha = 50\\% = 0.50$:\n$$i = 1 + (n - 1)\\alpha = 1 + (5 - 1)(0.50) = 1 + 4(0.50) = 1 + 2.0 = 3.0$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A solution of $1.80\\text{ g}$ of glucose ($\\text{C}_6\\text{H}_{12}\\text{O}_6$) in $100\\text{ g}$ of water freezes at $-0.186^\\circ\\text{C}$. Find the molal depression constant $K_f$ (in $\\text{K kg mol}^{-1}$) of water.",
+          "image": "",
+          "correctValue": 1.86,
+          "solution": "Molar mass of glucose $= 180\\text{ g/mol}$.\nMoles of glucose $= \\frac{1.80}{180} = 0.01\\text{ mol}$.\nMass of water $= 100\\text{ g} = 0.1\\text{ kg}$.\nMolality:\n$$m = \\frac{0.01}{0.1} = 0.1\\text{ mol/kg}$$\nFor glucose, $i = 1$:\n$$\\Delta T_f = K_f \\cdot m$$\n$$0.186 = K_f \\times 0.1 \\implies K_f = \\frac{0.186}{0.1} = 1.86\\text{ K kg mol}^{-1}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If the boiling point of pure water is $100.0^\\circ\\text{C}$ and $K_b = 0.512\\text{ K kg mol}^{-1}$, calculate the elevation in boiling point $\\Delta T_b$ (in $^\\circ\\text{C}$) of a $1.0\\text{ molal}$ aqueous sucrose solution.",
+          "image": "",
+          "correctValue": 0.51,
+          "solution": "Sucrose is a non-electrolyte, so $i = 1$.\n$$\\Delta T_b = i K_b m = 1 \\times 0.512 \\times 1.0 = 0.512^\\circ\\text{C} \\approx 0.51^\\circ\\text{C}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] The vapor pressure of pure water at $298\\text{ K}$ is $23.8\\text{ mm Hg}$. Calculate the vapor pressure lowering (in $\\text{mm Hg}$) when $0.1\\text{ mole}$ of glucose is dissolved in $9.9\\text{ moles}$ of water.",
+          "image": "",
+          "correctValue": 0.24,
+          "solution": "Total moles $= 0.1 + 9.9 = 10.0\\text{ moles}$.\nMole fraction of glucose:\n$$X_{\\text{solute}} = \\frac{0.1}{10.0} = 0.01$$\nBy Raoult's Law:\n$$\\frac{\\Delta P}{P^\\circ} = X_{\\text{solute}}$$\n$$\\Delta P = P^\\circ \\times X_{\\text{solute}} = 23.8 \\times 0.01 = 0.238\\text{ mm Hg} \\approx 0.24\\text{ mm Hg}$$"
+        }
+      ]
+    }
+  ]
+}
