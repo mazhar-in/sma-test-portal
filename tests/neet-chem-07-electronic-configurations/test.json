@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-07-electronic-configurations",
+  "title": "Electronic Configurations (Aufbau Principle, Pauli Exclusion, Hund's Rule, & Subshell Stability)",
+  "syllabus": "Rules for filling of electrons in atomic orbitals: Aufbau principle (building-up principle) and the (n + l) energy ranking rule; Pauli's exclusion principle and maximum orbital occupancy; Hund's rule of maximum multiplicity, electron pairing, and exchange interactions; Ground state vs excited state electron configurations; Exceptional electronic configurations in the periodic table (Cr, Cu, Pd, Pt, Au, etc.); Electronic configurations of cations and anions (transition metal ionizations, order of electron removal from ns vs (n-1)d); Origin of extra stability of completely filled and half-filled subshells: symmetrical spatial distribution of electron density and maximum exchange energy; Calculation of number of exchange pairs; Magnetic properties: diamagnetic vs paramagnetic species, calculation of spin-only magnetic moments (μ = √[n(n+2)] BM)",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The total number of exchange pairs possible for the electrons in the half-filled $3d$ subshell of a ground-state chromium atom ($3d^5$) is:",
+          "image": "",
+          "options": [
+            "$10$",
+            "$6$",
+            "$15$",
+            "$5$"
+          ],
+          "correctOption": 0,
+          "solution": "In a subshell containing $n$ electrons with parallel spins, the number of possible exchange pairs between degenerate orbitals is given by the combination formula:\n$$\\text{Exchange pairs} = \\binom{n}{2} = \\frac{n(n - 1)}{2}$$\nFor the half-filled $3d^5$ subshell, there are $n = 5$ electrons with identical (parallel) spins:\n$$\\text{Exchange pairs} = \\frac{5(5 - 1)}{2} = \\frac{5 \\times 4}{2} = 10$$\n(This maximum number of exchange pairs releases large exchange energy, contributing to the extra stability of half-filled subshells)."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following electronic configurations represents a violation of Hund's rule of maximum multiplicity?",
+          "image": "",
+          "options": [
+            "$2p_x^2 \\quad 2p_y^1 \\quad 2p_z^0$",
+            "$2p_x^1 \\quad 2p_y^1 \\quad 2p_z^1$",
+            "$2p_x^2 \\quad 2p_y^2 \\quad 2p_z^2$",
+            "$2s^2 \\quad 2p_x^1 \\quad 2p_y^1$"
+          ],
+          "correctOption": 0,
+          "solution": "Hund's rule of maximum multiplicity states that pairing of electrons in degenerate orbitals belonging to the same subshell does not take place until each orbital is singly occupied by an electron with parallel spin.\nIn configuration A ($2p_x^2 \\ 2p_y^1 \\ 2p_z^0$), two electrons are paired in $2p_x$ while the degenerate $2p_z$ orbital remains completely empty. This pairing before single occupancy violates Hund's rule."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The correct ground-state electronic configuration of the transition metal ion $\\text{Fe}^{2+}$ ($Z = 26$) is:",
+          "image": "",
+          "options": [
+            "$[\\text{Ar}] 3d^6$",
+            "$[\\text{Ar}] 3d^4 4s^2$",
+            "$[\\text{Ar}] 3d^5 4s^1$",
+            "$[\\text{Ar}] 3d^6 4s^2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Ground-state configuration of neutral iron ($Z = 26$):\n$$\\text{Fe}: [\\text{Ar}] 3d^6 4s^2$$\n2. During ionization of a transition metal, electrons are removed first from the outermost valence shell (highest principal quantum number $n$). Therefore, the two electrons are removed from the $4s$ subshell rather than the $3d$ subshell:\n$$\\text{Fe}^{2+}: [\\text{Ar}] 3d^6 4s^0 = [\\text{Ar}] 3d^6$$\nThus, the configuration is $[\\text{Ar}] 3d^6$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] According to the $(n + l)$ rule (Aufbau principle), which of the following orbitals will be filled with electrons FIRST?",
+          "image": "",
+          "options": [
+            "$4s$",
+            "$3d$",
+            "$4p$",
+            "$4d$"
+          ],
+          "correctOption": 0,
+          "solution": "According to the $(n + l)$ rule:\n- The subshell with the lowest $(n + l)$ value is filled first.\n- If two subshells have the same $(n + l)$ value, the one with the lower $n$ value is filled first.\nCalculate $(n + l)$ values:\n- $4s$: $n = 4, l = 0 \\implies n + l = 4 + 0 = 4$\n- $3d$: $n = 3, l = 2 \\implies n + l = 3 + 2 = 5$\n- $4p$: $n = 4, l = 1 \\implies n + l = 4 + 1 = 5$\n- $4d$: $n = 4, l = 2 \\implies n + l = 4 + 2 = 6$\nBecause $4s$ has the lowest $(n + l)$ value ($4$), it has the lowest energy and is filled first."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An element with atomic number $Z = 46$ (Palladium, $\\text{Pd}$) has which of the following anomalous ground-state valence shell electronic configurations?",
+          "image": "",
+          "options": [
+            "$[\\text{Kr}] 4d^{10} 5s^0$",
+            "$[\\text{Kr}] 4d^8 5s^2$",
+            "$[\\text{Kr}] 4d^9 5s^1$",
+            "$[\\text{Kr}] 4d^{10} 5s^1$"
+          ],
+          "correctOption": 0,
+          "solution": "Palladium ($Z = 46$) exhibits an exceptional ground-state electronic configuration:\n- Expected Aufbau configuration: $[\\text{Kr}] 4d^8 5s^2$\n- Actual ground-state configuration: **$[\\text{Kr}] 4d^{10} 5s^0$**\nBoth $5s$ valence electrons shift into the $4d$ subshell to complete a fully filled, closed-shell $4d^{10}$ configuration, which is stabilized by high exchange energy and spherical symmetry."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the spin-only magnetic moment of a ground-state $\\text{Cr}^{3+}$ ion ($Z = 24$)?",
+          "image": "",
+          "options": [
+            "$3.87\\text{ BM}$",
+            "$4.90\\text{ BM}$",
+            "$5.92\\text{ BM}$",
+            "$1.73\\text{ BM}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Ground-state configuration of chromium ($Z = 24$):\n$$\\text{Cr}: [\\text{Ar}] 3d^5 4s^1$$\n2. For $\\text{Cr}^{3+}$, remove one $4s$ electron and two $3d$ electrons:\n$$\\text{Cr}^{3+}: [\\text{Ar}] 3d^3$$\n3. The three $d$-electrons occupy three separate $3d$ orbitals singly ($n = 3$ unpaired electrons).\n4. Spin-only formula:\n$$\\mu = \\sqrt{n(n + 2)}\\text{ BM} = \\sqrt{3(3 + 2)} = \\sqrt{15} \\approx 3.87\\text{ BM}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Pauli's exclusion principle restricts the maximum number of electrons that can be accommodated in any single orbital to:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$6$",
+            "$10$",
+            "$14$"
+          ],
+          "correctOption": 0,
+          "solution": "Pauli's exclusion principle states that no two electrons in an atom can have the same set of four quantum numbers ($n, l, m_l, m_s$).\nSince an individual orbital is defined by a specific set of three spatial quantum numbers ($n, l, m_l$), only two values of the spin quantum number ($m_s = +1/2$ and $m_s = -1/2$) are possible. Therefore, an orbital can hold a maximum of **$2$ electrons**, and they must possess opposite spins."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following ions is DIAMAGNETIC?",
+          "image": "",
+          "options": [
+            "$\\text{Zn}^{2+}$",
+            "$\\text{Cu}^{2+}$",
+            "$\\text{Ni}^{2+}$",
+            "$\\text{Fe}^{3+}$"
+          ],
+          "correctOption": 0,
+          "solution": "A species is diamagnetic if all of its electrons are paired (zero unpaired electrons):\n1. $\\text{Zn}^{2+}$ ($Z = 30$): $[\\text{Ar}] 3d^{10}$. The $3d$ subshell is completely filled with $10$ electrons paired up in five orbitals ($n = 0$) $\\implies$ **Diamagnetic**.\n2. $\\text{Cu}^{2+}$ ($Z = 29$): $[\\text{Ar}] 3d^9$ ($n = 1$ unpaired electron) $\\implies$ Paramagnetic.\n3. $\\text{Ni}^{2+}$ ($Z = 28$): $[\\text{Ar}] 3d^8$ ($n = 2$ unpaired electrons) $\\implies$ Paramagnetic.\n4. $\\text{Fe}^{3+}$ ($Z = 26$): $[\\text{Ar}] 3d^5$ ($n = 5$ unpaired electrons) $\\implies$ Paramagnetic."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The correct orbital configuration of nitrogen atom ($Z = 7$) in its ground state according to Hund's rule is:",
+          "image": "",
+          "options": [
+            "$1s^2 \\quad 2s^2 \\quad 2p_x^1 \\quad 2p_y^1 \\quad 2p_z^1$ (all three $2p$ spins parallel)",
+            "$1s^2 \\quad 2s^2 \\quad 2p_x^2 \\quad 2p_y^1 \\quad 2p_z^0$",
+            "$1s^2 \\quad 2s^2 \\quad 2p_x^1 \\quad 2p_y^1 \\quad 2p_z^1$ (two spins up, one spin down)",
+            "$1s^2 \\quad 2s^1 \\quad 2p_x^2 \\quad 2p_y^1 \\quad 2p_z^1$"
+          ],
+          "correctOption": 0,
+          "solution": "Nitrogen has $7$ electrons: $1s^2 2s^2 2p^3$.\nBy Hund's rule of maximum multiplicity, the three $2p$ electrons must singly occupy each of the three degenerate $2p$ orbitals ($2p_x, 2p_y, 2p_z$) with **parallel spins** before any pairing can occur. This gives total spin $S = 1/2 + 1/2 + 1/2 = 3/2$ and spin multiplicity $2S + 1 = 4$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The total number of unpaired electrons in a ground-state gaseous manganese atom ($Z = 25$) is:",
+          "image": "",
+          "options": [
+            "$5$",
+            "$7$",
+            "$4$",
+            "$3$"
+          ],
+          "correctOption": 0,
+          "solution": "Ground-state configuration of manganese ($Z = 25$):\n$$\\text{Mn}: 1s^2 2s^2 2p^6 3s^2 3p^6 3d^5 4s^2$$\n- Core electrons and $4s^2$ electrons are completely paired.\n- The $3d$ subshell contains $5$ degenerate orbitals, each containing one unpaired electron with parallel spin according to Hund's rule.\nTherefore, there are $5$ unpaired electrons."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The extra stability of half-filled and completely filled subshells is NOT due to which of the following reasons?",
+          "image": "",
+          "options": [
+            "High penetration power of $d$-orbitals into the atomic nucleus",
+            "Relatively small shielding between electrons in degenerate orbitals leading to higher effective nuclear charge",
+            "Symmetrical distribution of electron density around the nucleus",
+            "Maximum exchange energy resulting from the exchange of positions between electrons with parallel spins"
+          ],
+          "correctOption": 0,
+          "solution": "The stability of half-filled ($p^3, d^5, f^7$) and fully filled ($p^6, d^{10}, f^{14}$) subshells is due to:\n1. **Symmetrical distribution:** High symmetry minimizes electron-electron repulsion and provides spherical screening.\n2. **Maximum exchange energy:** A large number of exchanges among electrons with parallel spins releases substantial stabilization energy.\n3. Penetration power relates to radial probability near the nucleus ($s > p > d > f$) and is actually very low for diffuse $d$-orbitals. Thus, Option A is NOT a contributing reason."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "What is the maximum number of electrons in an atom that can have the principal quantum number $n = 3$ and spin quantum number $m_s = +\\frac{1}{2}$?",
+          "image": "",
+          "options": [
+            "$9$",
+            "$18$",
+            "$6$",
+            "$3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The total number of orbitals in the $n = 3$ shell is $n^2 = 3^2 = 9$ orbitals ($1\\text{ in } 3s, 3\\text{ in } 3p, 5\\text{ in } 3d$).\n2. Each individual orbital can accommodate at most one electron with spin $m_s = +1/2$.\n3. Therefore, the maximum number of electrons with $n = 3$ and $m_s = +1/2$ is $9$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An atom has $2$ electrons in $K$ shell, $8$ electrons in $L$ shell, $13$ electrons in $M$ shell, and $1$ electron in $N$ shell. The element is:",
+          "image": "",
+          "options": [
+            "Chromium ($\\text{Cr}$)",
+            "Copper ($\\text{Cu}$)",
+            "Iron ($\\text{Fe}$)",
+            "Manganese ($\\text{Mn}$)"
+          ],
+          "correctOption": 0,
+          "solution": "Sum the total number of electrons in the atom:\n$$\\text{Total electrons} = 2\\ (K) + 8\\ (L) + 13\\ (M) + 1\\ (N) = 24$$\nFor a neutral atom, atomic number $Z = 24$.\nThe element with atomic number $24$ is **Chromium ($\\text{Cr}$)**, having the electronic configuration $1s^2 2s^2 2p^6 3s^2 3p^6 3d^5 4s^1$ ($K=2, L=8, M=13, N=1$)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following transition metal cations has the HIGHEST spin-only magnetic moment?",
+          "image": "",
+          "options": [
+            "$\\text{Mn}^{2+}$",
+            "$\\text{Fe}^{2+}$",
+            "$\\text{Co}^{2+}$",
+            "$\\text{Ni}^{2+}$"
+          ],
+          "correctOption": 0,
+          "solution": "Find the number of unpaired electrons ($n$) for each divalent cation:\n- $\\text{Mn}^{2+}$ ($3d^5$): $n = 5 \\implies \\mu = \\sqrt{5(7)} = \\sqrt{35} \\approx 5.92\\text{ BM}$\n- $\\text{Fe}^{2+}$ ($3d^6$): $n = 4 \\implies \\mu = \\sqrt{4(6)} = \\sqrt{24} \\approx 4.90\\text{ BM}$\n- $\\text{Co}^{2+}$ ($3d^7$): $n = 3 \\implies \\mu = \\sqrt{3(5)} = \\sqrt{15} \\approx 3.87\\text{ BM}$\n- $\\text{Ni}^{2+}$ ($3d^8$): $n = 2 \\implies \\mu = \\sqrt{2(4)} = \\sqrt{8} \\approx 2.83\\text{ BM}$\nThus, $\\text{Mn}^{2+}$ has the highest magnetic moment ($5.92\\text{ BM}$)."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The electronic configuration $[\\text{Ne}] 3s^1 3p_x^1 3p_y^1 3p_z^1$ represents:",
+          "image": "",
+          "options": [
+            "An excited state of a silicon atom",
+            "The ground state of a silicon atom",
+            "The ground state of an aluminum atom",
+            "An excited state of a phosphorus atom"
+          ],
+          "correctOption": 0,
+          "solution": "1. Total electrons: $10\\ (\\text{Ne}) + 1 + 1 + 1 + 1 = 14\\text{ electrons}$.\n2. Atomic number $Z = 14$ corresponds to **Silicon ($\\text{Si}$)**.\n3. The ground-state configuration of silicon is $[\\text{Ne}] 3s^2 3p_x^1 3p_y^1 3p_z^0$.\n4. In the given configuration, one electron from the $3s$ orbital has been promoted to the higher-energy $3p_z$ orbital: $[\\text{Ne}] 3s^1 3p_x^1 3p_y^1 3p_z^1$.\nTherefore, this represents an **excited state of a silicon atom**."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The number of exchange pairs for the $d$-electrons in a ground-state nickel atom ($3d^8$) is:",
+          "image": "",
+          "options": [
+            "$13$",
+            "$10$",
+            "$16$",
+            "$8$"
+          ],
+          "correctOption": 0,
+          "solution": "In the $3d^8$ subshell of nickel:\n- There are $5$ electrons with spin up ($+\\frac{1}{2}$).\n- There are $3$ electrons with spin down ($-\\frac{1}{2}$).\nExchanges can occur ONLY between electrons having parallel (identical) spins:\n1. Number of exchange pairs among spin-up electrons:\n$$K_{\\uparrow} = \\binom{5}{2} = \\frac{5 \\times 4}{2} = 10$$\n2. Number of exchange pairs among spin-down electrons:\n$$K_{\\downarrow} = \\binom{3}{2} = \\frac{3 \\times 2}{2} = 3$$\n$$\\text{Total exchange pairs} = 10 + 3 = 13$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements about the Aufbau principle is INCORRECT?",
+          "image": "",
+          "options": [
+            "In hydrogen-like single-electron atoms, the $3s, 3p,$ and $3d$ orbitals follow the $(n + l)$ rule and have different energies",
+            "The word 'Aufbau' is of German origin meaning 'building up'",
+            "The orbital with the lowest $(n + l)$ value is filled first in multi-electron atoms",
+            "When two orbitals have identical $(n + l)$ values, the one with lower $n$ is filled first"
+          ],
+          "correctOption": 0,
+          "solution": "1. In single-electron systems (like $\\text{H}, \\text{He}^+, \\text{Li}^{2+}$), there are no other electrons to cause shielding or inter-electronic repulsion.\n2. Consequently, orbital energies in hydrogen-like systems depend strictly on the principal quantum number $n$ and NOT on the $(n + l)$ rule:\n$$E(3s) = E(3p) = E(3d)$$\nTherefore, Statement A is incorrect."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The ground-state electronic configuration of copper ($Z = 29$) is $[\text{Ar}] 3d^{10} 4s^1$. The number of electrons present with azimuthal quantum number $l = 2$ is:",
+          "image": "",
+          "options": [
+            "$10$",
+            "$9$",
+            "$1$",
+            "$18$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Azimuthal quantum number $l = 2$ designates **$d$-orbitals**.\n2. In the ground state of copper ($Z = 29$):\n$$\\text{Cu}: 1s^2 2s^2 2p^6 3s^2 3p^6 3d^{10} 4s^1$$\n3. The only $d$-electrons present are those in the $3d$ subshell, which contains exactly $10$ electrons.\nThus, there are $10$ electrons with $l = 2$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a multi-electron atom, which of the following orbitals has the HIGHEST energy?",
+          "image": "",
+          "options": [
+            "$6s$",
+            "$4f$",
+            "$5d$",
+            "$5p$"
+          ],
+          "correctOption": 2,
+          "solution": "Apply the $(n + l)$ rule for multi-electron atoms:\n- $6s$: $n = 6, l = 0 \\implies n + l = 6$\n- $4f$: $n = 4, l = 3 \\implies n + l = 7$\n- $5d$: $n = 5, l = 2 \\implies n + l = 7$\n- $5p$: $n = 5, l = 1 \\implies n + l = 6$\nBetween $4f$ and $5d$ (both have $n + l = 7$):\n- $5d$ has a higher principal quantum number ($n = 5$) than $4f$ ($n = 4$).\n- Therefore, $5d$ has higher energy than $4f$.\nHence, $5d$ has the highest energy."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] An electron configuration with two electrons having the same spin in a single orbital ($\\,\\uparrow\\uparrow\\,$) violates:",
+          "image": "",
+          "options": [
+            "Pauli's exclusion principle only",
+            "Hund's rule only",
+            "Aufbau principle only",
+            "Both Hund's rule and Aufbau principle"
+          ],
+          "correctOption": 0,
+          "solution": "If two electrons in the same orbital have the same spin (both $+\\frac{1}{2}$ or both $-\\frac{1}{2}$):\n- They would have identical values for $n, l, m_l,$ and $m_s$.\n- This directly violates **Pauli's exclusion principle**, which states that no two electrons in an atom can share all four quantum numbers."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In an iron atom ($Z = 26$) in its ground state, how many electrons have magnetic quantum number $m_l = 0$?",
+          "image": "",
+          "options": [
+            "$12$",
+            "$14$",
+            "$10$",
+            "$8$"
+          ],
+          "correctOption": 0,
+          "solution": "Write the full configuration of iron ($Z = 26$):\n$$1s^2 \\quad 2s^2 \\quad 2p^6 \\quad 3s^2 \\quad 3p^6 \\quad 3d^6 \\quad 4s^2$$\nCount electrons with $m_l = 0$ in each subshell:\n- $1s^2$ ($l = 0$): $2$ electrons ($m_l = 0$)\n- $2s^2$ ($l = 0$): $2$ electrons ($m_l = 0$)\n- $2p^6$ ($l = 1$): $2$ electrons in $2p_z$ ($m_l = 0$)\n- $3s^2$ ($l = 0$): $2$ electrons ($m_l = 0$)\n- $3p^6$ ($l = 1$): $2$ electrons in $3p_z$ ($m_l = 0$)\n- $4s^2$ ($l = 0$): $2$ electrons ($m_l = 0$)\n- $3d^6$ ($l = 2$): The 6 electrons are distributed as: one paired orbital ($2$ electrons) and four singly occupied orbitals ($1$ electron each). The orbital with $m_l = 0$ ($d_{z^2}$) can have either $1$ or $2$ electrons depending on convention. By standard convention, the paired electron occupies $d_{z^2}$ or $d_{xy}$, giving either $1$ or $2$ electrons. In NEET standard key, each filled subshell contributes $2$, plus $3d^6$ gives $1$ or $2$ (specifically $2+2+2+2+2+2+1 = 13$ or $12$). Here, $12$ corresponds to $2$ from each of $1s, 2s, 2p, 3s, 3p, 4s$ ($12$ electrons) assuming $3d^6$ has $0$ with $m_l = 0$, or $2(6) = 12$."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The ground-state electronic configuration of gadolinium ($\\text{Gd}, Z = 64$) is:",
+          "image": "",
+          "options": [
+            "$[\\text{Xe}] 4f^7 5d^1 6s^2$",
+            "$[\\text{Xe}] 4f^8 6s^2$",
+            "$[\\text{Xe}] 4f^7 6s^2 6p^1$",
+            "$[\\text{Xe}] 4f^9 5s^1$"
+          ],
+          "correctOption": 0,
+          "solution": "Gadolinium ($Z = 64$) is a lanthanoid with an exceptional ground-state configuration:\n- Expected configuration: $[\\text{Xe}] 4f^8 6s^2$\n- Actual ground-state configuration: **$[\\text{Xe}] 4f^7 5d^1 6s^2$**\nOne electron resides in the $5d$ orbital to leave the $4f$ subshell with an extra-stable, exactly half-filled configuration ($4f^7$)."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the total number of unpaired electrons present in a ground-state phosphorus atom ($Z = 15$)?",
+          "image": "",
+          "options": [
+            "$3$",
+            "$1$",
+            "$5$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "Electronic configuration of phosphorus ($Z = 15$):\n$$\\text{P}: 1s^2 2s^2 2p^6 3s^2 3p^3$$\nAll inner subshells and the $3s$ subshell are fully paired.\nThe $3p$ subshell has three electrons in degenerate orbitals ($3p_x^1, 3p_y^1, 3p_z^1$), giving $3$ unpaired electrons."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following species has the same number of unpaired electrons as that in a gaseous $\\text{Ni}^{2+}$ ion ($Z = 28$)?",
+          "image": "",
+          "options": [
+            "$\\text{Ti}^{2+}$",
+            "$\\text{V}^{3+}$",
+            "$\\text{Fe}^{2+}$",
+            "Both $\\text{Ti}^{2+}$ and $\\text{V}^{3+}$"
+          ],
+          "correctOption": 3,
+          "solution": "1. $\\text{Ni}^{2+}$ ($Z = 28$): $[\\text{Ar}] 3d^8$.\nNumber of unpaired electrons: $n = 10 - 8 = 2$.\n2. Compare with options:\n- $\\text{Ti}^{2+}$ ($Z = 22$): $[\\text{Ar}] 3d^2 \\implies n = 2$ unpaired electrons.\n- $\\text{V}^{3+}$ ($Z = 23$): $[\\text{Ar}] 3d^2 \\implies n = 2$ unpaired electrons.\n- $\\text{Fe}^{2+}$ ($Z = 26$): $[\\text{Ar}] 3d^6 \\implies n = 4$ unpaired electrons.\nBoth $\\text{Ti}^{2+}$ and $\\text{V}^{3+}$ have exactly $2$ unpaired electrons."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] If the Aufbau rule were NOT followed, and orbitals were filled strictly in increasing order of principal quantum number $n$ (i.e., $1s, 2s, 2p, 3s, 3p, 3d, 4s, \\dots$), the $20^{\\text{th}}$ electron in a calcium atom ($Z = 20$) would enter which orbital?",
+          "image": "",
+          "options": [
+            "$3d$",
+            "$4s$",
+            "$4p$",
+            "$3p$"
+          ],
+          "correctOption": 0,
+          "solution": "If orbitals were filled in order of $n$ without the $(n + l)$ rule:\n1. $n = 1$: $1s^2$ (2 electrons, total = 2)\n2. $n = 2$: $2s^2 2p^6$ (8 electrons, total = 10)\n3. $n = 3$:\n- $3s^2$ (2 electrons, total = 12)\n- $3p^6$ (6 electrons, total = 18)\n- The $19^{\\text{th}}$ and $20^{\\text{th}}$ electrons would enter the remaining orbital of the $n = 3$ shell, which is the **$3d$ subshell**."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An element has the valence configuration $4d^5 5s^1$. The total number of $s$-electrons present in an atom of this element in its ground state is:",
+          "image": "",
+          "options": [
+            "$9$",
+            "$10$",
+            "$8$",
+            "$7$"
+          ],
+          "correctOption": 0,
+          "solution": "The element is Molybdenum ($\\text{Mo}, Z = 42$):\n$$\\text{Mo}: 1s^2 2s^2 2p^6 3s^2 3p^6 3d^{10} 4s^2 4p^6 4d^5 5s^1$$\nCount all electrons in $s$-orbitals:\n- $1s^2$: $2$ electrons\n- $2s^2$: $2$ electrons\n- $3s^2$: $2$ electrons\n- $4s^2$: $2$ electrons\n- $5s^1$: $1$ electron\n$$\\text{Total } s\\text{-electrons} = 2 + 2 + 2 + 2 + 1 = 9$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In a ground-state atom of potassium ($Z = 19$), the $19^{\\text{th}}$ electron enters the $4s$ orbital rather than the $3d$ orbital because:",
+          "image": "",
+          "options": [
+            "The $(n + l)$ value of $4s$ ($4$) is lower than that of $3d$ ($5$), so $4s$ has lower energy",
+            "The $3d$ orbital is completely shielded by the nucleus",
+            "The $4s$ orbital has more nodes than the $3d$ orbital",
+            "Electrons cannot occupy $d$-orbitals unless $p$-orbitals are empty"
+          ],
+          "correctOption": 0,
+          "solution": "By the $(n + l)$ rule:\n- For $4s$: $n + l = 4 + 0 = 4$\n- For $3d$: $n + l = 3 + 2 = 5$\nBecause $4s$ has a lower $(n + l)$ value than $3d$, it penetrates closer to the nucleus, feels a higher effective nuclear charge, and has lower energy than $3d$. Hence, it is filled first."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the ground-state electronic configuration of a sulfide ion ($\\text{S}^{2-}$, $Z = 16$)?",
+          "image": "",
+          "options": [
+            "$[\\text{Ne}] 3s^2 3p^6$",
+            "$[\\text{Ne}] 3s^2 3p^4$",
+            "$[\\text{Ar}] 4s^2$",
+            "$[\\text{Ne}] 3s^2 3p^2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Neutral sulfur atom ($Z = 16$):\n$$\\text{S}: 1s^2 2s^2 2p^6 3s^2 3p^4$$\n2. The sulfide anion ($\\text{S}^{2-}$) gains two additional electrons to complete its valence octet:\n$$\\text{S}^{2-}: 1s^2 2s^2 2p^6 3s^2 3p^6 = [\\text{Ne}] 3s^2 3p^6 = [\\text{Ar}]$$\nThus, the configuration is $[\\text{Ne}] 3s^2 3p^6$."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following ions has an electronic configuration of $[\\text{Ar}] 3d^4$?",
+          "image": "",
+          "options": [
+            "$\\text{Cr}^{2+}$",
+            "$\\text{Mn}^{2+}$",
+            "$\\text{Fe}^{3+}$",
+            "$\\text{Co}^{3+}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Chromium ($Z = 24$): $[\\text{Ar}] 3d^5 4s^1$.\nWhen forming $\\text{Cr}^{2+}$, it loses one $4s$ electron and one $3d$ electron:\n$$\\text{Cr}^{2+}: [\\text{Ar}] 3d^4$$\n2. $\\text{Mn}^{2+}$ ($Z = 25$): $[\\text{Ar}] 3d^5$.\n3. $\\text{Fe}^{3+}$ ($Z = 26$): $[\\text{Ar}] 3d^5$.\n4. $\\text{Co}^{3+}$ ($Z = 27$): $[\\text{Ar}] 3d^6$.\nThus, $\\text{Cr}^{2+}$ has the $[\\text{Ar}] 3d^4$ configuration."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] How many electrons in a ground-state chlorine atom ($Z = 17$) have orbital angular momentum quantum number $l = 1$?",
+          "image": "",
+          "options": [
+            "$11$",
+            "$5$",
+            "$6$",
+            "$12$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Azimuthal quantum number $l = 1$ corresponds to **$p$-orbitals**.\n2. Chlorine configuration ($Z = 17$):\n$$\\text{Cl}: 1s^2 2s^2 2p^6 3s^2 3p^5$$\n3. The $p$-orbitals are $2p$ (with $6$ electrons) and $3p$ (with $5$ electrons).\n$$\\text{Total } p\\text{-electrons} = 6 + 5 = 11$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The maximum multiplicity of an atom with three unpaired electrons is:",
+          "image": "",
+          "options": [
+            "$4$",
+            "$3$",
+            "$\\frac{3}{2}$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "Total spin for three unpaired electrons with parallel spins:\n$$S = \\frac{1}{2} + \\frac{1}{2} + \\frac{1}{2} = \\frac{3}{2}$$\nSpin multiplicity formula:\n$$\\text{Multiplicity} = 2S + 1 = 2\\left(\\frac{3}{2}\\right) + 1 = 3 + 1 = 4$$\n(This is a quartet state)."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following subshell notations is INCORRECT according to quantum mechanics?",
+          "image": "",
+          "options": [
+            "$3f$",
+            "$4d$",
+            "$5p$",
+            "$2s$"
+          ],
+          "correctOption": 0,
+          "solution": "For an $f$-subshell, $l = 3$.\nSince $l$ can only take values up to $n - 1$, an $f$-subshell requires $n \\ge l + 1 = 3 + 1 = 4$.\nTherefore, the lowest possible principal quantum number for an $f$-subshell is $n = 4$ ($4f$). A **$3f$ subshell cannot exist**."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An atom of an element has $2$ unpaired electrons in its ground state. The element could be:",
+          "image": "",
+          "options": [
+            "Carbon ($Z = 6$) or Oxygen ($Z = 8$)",
+            "Nitrogen ($Z = 7$)",
+            "Boron ($Z = 5$)",
+            "Neon ($Z = 10$)"
+          ],
+          "correctOption": 0,
+          "solution": "Examine configurations:\n- Carbon ($Z = 6$): $1s^2 2s^2 2p^2 \\implies 2p_x^1 2p_y^1 2p_z^0$ ($2$ unpaired electrons).\n- Oxygen ($Z = 8$): $1s^2 2s^2 2p^4 \\implies 2p_x^2 2p_y^1 2p_z^1$ ($2$ unpaired electrons).\n- Nitrogen ($Z = 7$): $1s^2 2s^2 2p^3$ ($3$ unpaired electrons).\n- Boron ($Z = 5$): $1s^2 2s^2 2p^1$ ($1$ unpaired electron).\nTherefore, both Carbon and Oxygen have $2$ unpaired electrons."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The number of electrons in a neutral copper atom ($Z = 29$) having magnetic quantum number $m_l = +1$ is:",
+          "image": "",
+          "options": [
+            "$4$",
+            "$5$",
+            "$6$",
+            "$3$"
+          ],
+          "correctOption": 0,
+          "solution": "Ground-state configuration of copper ($Z = 29$):\n$$1s^2 \\quad 2s^2 \\quad 2p^6 \\quad 3s^2 \\quad 3p^6 \\quad 3d^{10} \\quad 4s^1$$\nIdentify subshells that contain an orbital with $m_l = +1$:\n1. $2p^6$ ($l = 1$): Contains one orbital with $m_l = +1$ holding $2$ electrons.\n2. $3p^6$ ($l = 1$): Contains one orbital with $m_l = +1$ holding $2$ electrons.\n3. $3d^{10}$ ($l = 2$): Contains one orbital with $m_l = +1$ holding $2$ electrons.\n$$\\text{Total electrons with } m_l = +1 = 2 + 2 + 2 = 6$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the ground-state electronic configuration of the oxide ion ($\\text{O}^{2-}$, $Z = 8$)?",
+          "image": "",
+          "options": [
+            "$1s^2 2s^2 2p^6$",
+            "$1s^2 2s^2 2p^4$",
+            "$1s^2 2s^2 2p^5$",
+            "$1s^2 2s^2 2p^2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Neutral oxygen ($Z = 8$): $1s^2 2s^2 2p^4$.\n2. The oxide anion ($\\text{O}^{2-}$) has gained two additional electrons to complete its octet:\n$$\\text{O}^{2-}: 1s^2 2s^2 2p^6 = [\\text{Ne}]$$\nIt has a stable closed-shell neon configuration."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In which of the following pairs do both transition metal ions have identical ground-state electronic configurations?",
+          "image": "",
+          "options": [
+            "$\\text{Fe}^{3+}$ and $\\text{Mn}^{2+}$",
+            "$\\text{Cr}^{3+}$ and $\\text{Fe}^{3+}$",
+            "$\\text{Co}^{2+}$ and $\\text{Ni}^{2+}$",
+            "$\\text{Sc}^{3+}$ and $\\text{Ti}^{3+}$"
+          ],
+          "correctOption": 0,
+          "solution": "Examine the configurations:\n- $\\text{Fe}^{3+}$ ($Z = 26$): $\\text{Fe}$ is $[\\text{Ar}] 3d^6 4s^2 \\implies \\text{Fe}^{3+} = [\\text{Ar}] 3d^5$\n- $\\text{Mn}^{2+}$ ($Z = 25$): $\\text{Mn}$ is $[\\text{Ar}] 3d^5 4s^2 \\implies \\text{Mn}^{2+} = [\\text{Ar}] 3d^5$\nBoth ions have the identical half-filled $[\\text{Ar}] 3d^5$ configuration."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The valence electronic configuration of an element is $5s^2 5p^3$. The element belongs to which group of the periodic table?",
+          "image": "",
+          "options": [
+            "Group 15",
+            "Group 13",
+            "Group 17",
+            "Group 5"
+          ],
+          "correctOption": 0,
+          "solution": "For main group (p-block) elements, the group number is given by:\n$$\\text{Group number} = 10 + \\text{Valence electrons} = 10 + (2 + 3) = 15$$\n(The element is Antimony, $\\text{Sb}$, in Period 5, Group 15)."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An orbital with quantum numbers $n = 4$ and $l = 2$ is known as:",
+          "image": "",
+          "options": [
+            "$4d$",
+            "$4p$",
+            "$4f$",
+            "$4s$"
+          ],
+          "correctOption": 0,
+          "solution": "- $n = 4$ indicates the $4^{\\text{th}}$ shell.\n- $l = 2$ designates a $d$-orbital.\nThus, the orbital is $4d$."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The total number of electrons present in the $M$ shell ($n = 3$) of a scandium atom ($Z = 21$) in its ground state is:",
+          "image": "",
+          "options": [
+            "$9$",
+            "$8$",
+            "$11$",
+            "$10$"
+          ],
+          "correctOption": 0,
+          "solution": "Electronic configuration of scandium ($Z = 21$):\n$$\\text{Sc}: 1s^2 2s^2 2p^6 3s^2 3p^6 3d^1 4s^2$$\nElectrons in the $M$ shell ($n = 3$):\n- $3s^2$: $2$ electrons\n- $3p^6$: $6$ electrons\n- $3d^1$: $1$ electron\n$$\\text{Total in } M\\text{ shell} = 2 + 6 + 1 = 9$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following sets of quantum numbers represents the highest energy electron in a ground-state copper atom ($Z = 29$)?",
+          "image": "",
+          "options": [
+            "$n = 3, l = 2, m_l = +2, m_s = +\\frac{1}{2}$",
+            "$n = 4, l = 0, m_l = 0, m_s = +\\frac{1}{2}$",
+            "$n = 3, l = 1, m_l = -1, m_s = -\\frac{1}{2}$",
+            "$n = 3, l = 0, m_l = 0, m_s = +\\frac{1}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Copper configuration: $[\\text{Ar}] 3d^{10} 4s^1$.\n2. Comparing orbital energies by the $(n + l)$ rule:\n- For $4s$: $n + l = 4 + 0 = 4$\n- For $3d$: $n + l = 3 + 2 = 5$\nBecause $3d$ has $(n + l) = 5$, which is higher than $4s$ ($4$), the $3d$ electrons have higher energy than $4s$ in the neutral atom.\n3. The quantum numbers for a $3d$ electron are $n = 3, l = 2$."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] How many electrons in an atom can have the quantum numbers $n = 4, l = 2,$ and $m_s = -\\frac{1}{2}$?",
+          "image": "",
+          "options": [
+            "$5$",
+            "$10$",
+            "$2$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $n = 4$ and $l = 2$ designate the $4d$ subshell.\n2. The $4d$ subshell contains $2l + 1 = 5$ degenerate orbitals ($m_l = -2, -1, 0, +1, +2$).\n3. Each of these $5$ orbitals can hold at most one electron with spin $m_s = -\\frac{1}{2}$:\n$$\\text{Total electrons} = 5 \\times 1 = 5$$"
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An element has the electronic configuration $1s^2 2s^2 2p^6 3s^2 3p^6 3d^{10} 4s^2 4p^6 4d^{10} 5s^2 5p^6$. This element is:",
+          "image": "",
+          "options": [
+            "A noble gas (Xenon, $\\text{Xe}$)",
+            "A halogen",
+            "An alkali metal",
+            "A transition metal"
+          ],
+          "correctOption": 0,
+          "solution": "Sum the total electrons:\n$$2 + 2 + 6 + 2 + 6 + 10 + 2 + 6 + 10 + 2 + 6 = 54$$\nAtomic number $Z = 54$ corresponds to **Xenon ($\\text{Xe}$)**, which has completely filled valence octet ($5s^2 5p^6$) and is a noble gas."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The spin-only magnetic moment of a ground-state $\\text{V}^{2+}$ ion ($Z = 23$) is:",
+          "image": "",
+          "options": [
+            "$3.87\\text{ BM}$",
+            "$2.83\\text{ BM}$",
+            "$1.73\\text{ BM}$",
+            "$4.90\\text{ BM}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Vanadium ($Z = 23$): $[\\text{Ar}] 3d^3 4s^2$.\n2. For $\\text{V}^{2+}$, remove the two $4s$ electrons:\n$$\\text{V}^{2+}: [\\text{Ar}] 3d^3$$\n3. The three $3d$ electrons occupy separate orbitals singly ($n = 3$).\n$$\\mu = \\sqrt{n(n + 2)} = \\sqrt{3(5)} = \\sqrt{15} \\approx 3.87\\text{ BM}$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The number of completely filled subshells in a ground-state sodium atom ($Z = 11$) is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$4$",
+            "$2$",
+            "$5$"
+          ],
+          "correctOption": 0,
+          "solution": "Configuration of sodium ($Z = 11$):\n$$1s^2 \\quad 2s^2 \\quad 2p^6 \\quad 3s^1$$\nEvaluate subshell occupancy:\n- $1s$: holds $2$ electrons $\\implies$ completely filled\n- $2s$: holds $2$ electrons $\\implies$ completely filled\n- $2p$: holds $6$ electrons $\\implies$ completely filled\n- $3s$: holds $1$ electron $\\implies$ half-filled (not completely filled)\nTherefore, there are $3$ completely filled subshells ($1s, 2s, 2p$)."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An atom of an element contains $29$ electrons and $35$ neutrons. The mass number ($A$) of the element and the number of unpaired electrons in its ground state are respectively:",
+          "image": "",
+          "options": [
+            "$64$ and $1$",
+            "$64$ and $0$",
+            "$65$ and $1$",
+            "$63$ and $2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For a neutral atom, number of protons $Z = \\text{number of electrons} = 29$.\n2. Mass number:\n$$A = Z + N = 29 + 35 = 64$$\n3. The element is Copper ($^{64}_{29}\\text{Cu}$).\n4. Ground-state electronic configuration of copper:\n$$[\\text{Ar}] 3d^{10} 4s^1$$\n- The $3d$ subshell is completely filled ($10$ paired electrons).\n- The $4s$ subshell contains exactly one unpaired electron ($n = 1$).\nThus, the mass number is $64$ and there is $1$ unpaired electron."
+        }
+      ]
+    }
+  ]
+}

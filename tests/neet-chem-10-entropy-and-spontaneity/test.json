@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-10-entropy-and-spontaneity",
+  "title": "Entropy & Spontaneity (Second Law of Thermodynamics, Entropy, Gibbs Energy, & Equilibrium Criteria)",
+  "syllabus": "Spontaneous and non-spontaneous processes; Limitations of the First Law of Thermodynamics; Second Law of Thermodynamics; Concept of entropy (S) as a measure of disorder/randomness; State function nature of entropy; Calculation of entropy change (ΔS = q_rev / T); Entropy changes in phase transitions (fusion, vaporization, sublimation) and Trouton's rule; Entropy changes during expansion/compression of ideal gases; Total entropy change of system and surroundings (ΔS_total = ΔS_sys + ΔS_surr) as criterion for spontaneity; Gibbs free energy (G = H - TS); Gibbs energy change (ΔG = ΔH - TΔS) and Gibbs-Helmholtz equation; Criteria for spontaneity and equilibrium under conditions of constant T and P (ΔG < 0 for spontaneity, ΔG = 0 for equilibrium, ΔG > 0 for non-spontaneous); Effect of temperature on reaction spontaneity (signs of ΔH and ΔS); Standard Gibbs free energy change (ΔrG°) and its relation to the equilibrium constant K (ΔrG° = -2.303 RT log K); Third Law of Thermodynamics and absolute entropies (residual entropy concept)",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] For a chemical reaction, the change in enthalpy is $\\Delta H = -10.0\\text{ kJ/mol}$ and the change in entropy is $\\Delta S = -20.0\\text{ J K}^{-1}\\text{ mol}^{-1}$. At what temperature will the reaction attain equilibrium ($\\Delta G = 0$)?",
+          "image": "",
+          "options": [
+            "$500\\text{ K}$",
+            "$200\\text{ K}$",
+            "$300\\text{ K}$",
+            "$250\\text{ K}$"
+          ],
+          "correctOption": 0,
+          "solution": "At dynamic equilibrium, the Gibbs free energy change is zero:\n$$\\Delta G = \\Delta H - T\\Delta S = 0 \\implies T = \\frac{\\Delta H}{\\Delta S}$$\nConvert $\\Delta H$ to Joules:\n$$\\Delta H = -10.0\\text{ kJ/mol} = -10000\\text{ J/mol}$$\n$$\\Delta S = -20.0\\text{ J K}^{-1}\\text{ mol}^{-1}$$\nCalculate equilibrium temperature $T$:\n$$T = \\frac{-10000\\text{ J/mol}}{-20.0\\text{ J K}^{-1}\\text{ mol}^{-1}} = 500\\text{ K}$$\n(Above $500\\text{ K}$, the reaction becomes non-spontaneous; below $500\\text{ K}$, it is spontaneous)."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For an isolated system undergoing a spontaneous process, which of the following statements is strictly TRUE?",
+          "image": "",
+          "options": [
+            "$\\Delta U = 0 \\quad \\text{and} \\quad \\Delta S > 0$",
+            "$\\Delta U > 0 \\quad \\text{and} \\quad \\Delta S = 0$",
+            "$\\Delta U < 0 \\quad \\text{and} \\quad \\Delta S = 0$",
+            "$\\Delta U = 0 \\quad \\text{and} \\quad \\Delta S < 0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For an **isolated system**, there is neither exchange of heat nor work with the surroundings ($q = 0, w = 0$). By the First Law of Thermodynamics:\n$$\\Delta U = q + w = 0 + 0 = 0$$\n2. According to the **Second Law of Thermodynamics**, all spontaneous (natural) processes occurring in an isolated system are accompanied by an increase in total entropy (disorder):\n$$\\Delta S_{\\text{isolated}} > 0$$\nTherefore, $\\Delta U = 0$ and $\\Delta S > 0$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The standard Gibbs free energy change for a reversible reaction at $300\\text{ K}$ is $\\Delta_r G^\\circ = -11.5\\text{ kJ/mol}$. The value of the equilibrium constant $K$ for this reaction is: (Take $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}, 2.303 \\times R \\times 300 \\approx 5744\\text{ J/mol}, 10^2 = 100$)",
+          "image": "",
+          "options": [
+            "$1.0 \\times 10^2$",
+            "$1.0 \\times 10^{-2}$",
+            "$1.0 \\times 10^4$",
+            "$2.3 \\times 10^1$"
+          ],
+          "correctOption": 0,
+          "solution": "The relation between $\\Delta_r G^\\circ$ and equilibrium constant $K$ is:\n$$\\Delta_r G^\\circ = -2.303\\, RT \\log_{10} K$$\nGiven:\n- $\\Delta_r G^\\circ = -11.5\\text{ kJ/mol} = -11500\\text{ J/mol}$\n- $2.303 RT = 2.303 \\times 8.314 \\times 300 \\approx 5744\\text{ J/mol}$\n$$\\log_{10} K = \\frac{-\\Delta_r G^\\circ}{2.303\\, RT} = \\frac{-(-11500)}{5744} \\approx 2.0$$\n$$K = 10^{2.0} = 1.0 \\times 10^2 = 100$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In which of the following transformations does the entropy of the system DECREASE ($\\Delta S < 0$)?",
+          "image": "",
+          "options": [
+            "Crystallization of liquid water into solid ice at $0^\\circ\\text{C}$",
+            "Sublimation of solid iodine into violet vapors",
+            "Dissolution of crystalline sugar in water",
+            "Thermal decomposition of limestone: $\\text{CaCO}_3(s) \\rightarrow \\text{CaO}(s) + \\text{CO}_2(g)$"
+          ],
+          "correctOption": 0,
+          "solution": "Entropy measures the randomness or degree of microstate disorder in a system:\n1. Freezing of water: Liquid water molecules have higher translational/rotational freedom. In ice, they are locked into an orderly, rigid open crystalline lattice, so entropy decreases ($\\Delta S < 0$).\n2. Sublimation of $\\text{I}_2(s) \\rightarrow \\text{I}_2(g)$ produces highly disordered gas ($\\Delta S > 0$).\n3. Dissolution of sugar breaks crystalline order into dispersed solute particles ($\\Delta S > 0$).\n4. $\\text{CaCO}_3(s) \\rightarrow \\text{CaO}(s) + \\text{CO}_2(g)$ generates $1\\text{ mole}$ of gas from pure solid ($\\Delta n_g = +1$), so entropy increases ($\\Delta S > 0$)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] For a reaction to be spontaneous at ALL temperatures, the signs of enthalpy change ($\\Delta H$) and entropy change ($\\Delta S$) must be:",
+          "image": "",
+          "options": [
+            "$\\Delta H < 0 \\quad \\text{and} \\quad \\Delta S > 0$",
+            "$\\Delta H > 0 \\quad \\text{and} \\quad \\Delta S < 0$",
+            "$\\Delta H > 0 \\quad \\text{and} \\quad \\Delta S > 0$",
+            "$\\Delta H < 0 \\quad \\text{and} \\quad \\Delta S < 0$"
+          ],
+          "correctOption": 0,
+          "solution": "The criterion for spontaneity at constant temperature and pressure is $\\Delta G < 0$:\n$$\\Delta G = \\Delta H - T\\Delta S$$\n1. If $\\Delta H < 0$ (exothermic) and $\\Delta S > 0$ (entropy increasing):\n- $\\Delta H$ is negative.\n- The term $-T\\Delta S$ is strictly negative (since absolute temperature $T > 0\\text{ K}$).\n2. Therefore, $\\Delta G = (\\text{negative}) + (\\text{negative}) < 0$ at all temperatures.\nThe process is unconditionally spontaneous at all temperatures."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The boiling point of liquid ethanol is $78.3^\\circ\\text{C}$ ($351.45\\text{ K}$), and its standard molar enthalpy of vaporization is $\\Delta_{\\text{vap}}H = 38.6\\text{ kJ/mol}$. The standard molar entropy of vaporization ($\\Delta_{\\text{vap}}S$) of ethanol is:",
+          "image": "",
+          "options": [
+            "$+109.8\\text{ J K}^{-1}\\text{ mol}^{-1}$",
+            "$-109.8\\text{ J K}^{-1}\\text{ mol}^{-1}$",
+            "$+0.493\\text{ J K}^{-1}\\text{ mol}^{-1}$",
+            "$+493.0\\text{ J K}^{-1}\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "At the normal boiling point, liquid and vapor are in thermodynamic equilibrium ($\\Delta G = 0$):\n$$\\Delta_{\\text{vap}}S = \\frac{\\Delta_{\\text{vap}}H}{T_b}$$\nSubstitute $\\Delta_{\\text{vap}}H = 38.6\\text{ kJ/mol} = 38600\\text{ J/mol}$ and $T_b = 351.45\\text{ K}$:\n$$\\Delta_{\\text{vap}}S = \\frac{38600\\text{ J/mol}}{351.45\\text{ K}} \\approx +109.83\\text{ J K}^{-1}\\text{ mol}^{-1}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following conditions represents the fundamental criterion for dynamic equilibrium in a system maintained at constant temperature and pressure?",
+          "image": "",
+          "options": [
+            "$(\\Delta G)_{T, P} = 0$",
+            "$(\\Delta G)_{T, P} < 0$",
+            "$(\\Delta S_{\\text{total}}) = 0$",
+            "$(\\Delta H)_{T, P} = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Criteria for thermodynamic states at constant $T$ and $P$:\n1. **Spontaneous process:** $(\\Delta G)_{T, P} < 0$ (Gibbs free energy decreases to a minimum).\n2. **Equilibrium state:** $(\\Delta G)_{T, P} = 0$ (Gibbs free energy reaches its minimum value; $dG = 0$).\n3. **Non-spontaneous process:** $(\\Delta G)_{T, P} > 0$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A reaction is endothermic ($\\Delta H > 0$) and proceeds with an increase in entropy ($\\Delta S > 0$). This reaction will be spontaneous at:",
+          "image": "",
+          "options": [
+            "High temperatures ($T > \\frac{\\Delta H}{\\Delta S}$)",
+            "Low temperatures ($T < \\frac{\\Delta H}{\\Delta S}$)",
+            "All temperatures",
+            "No temperature"
+          ],
+          "correctOption": 0,
+          "solution": "From the Gibbs equation:\n$$\\Delta G = \\Delta H - T\\Delta S$$\nGiven $\\Delta H > 0$ and $\\Delta S > 0$:\n- For spontaneity, we require $\\Delta G < 0$:\n$$\\Delta H - T\\Delta S < 0 \\implies T\\Delta S > \\Delta H \\implies T > \\frac{\\Delta H}{\\Delta S}$$\nAt high temperatures, the positive entropy factor ($T\\Delta S$) dominates over the positive enthalpy term ($\\Delta H$), making $\\Delta G$ negative."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The Third Law of Thermodynamics states that:",
+          "image": "",
+          "options": [
+            "The entropy of any pure, perfectly crystalline substance approaches zero as absolute zero temperature ($0\\text{ K}$) is approached",
+            "The energy of the universe is constant while its entropy tends toward a maximum",
+            "Energy can neither be created nor destroyed",
+            "Absolute zero temperature can be attained by infinite isothermal cycles"
+          ],
+          "correctOption": 0,
+          "solution": "The **Third Law of Thermodynamics** (formulated by Walther Nernst and Max Planck) states that:\n'The entropy of a perfectly crystalline, chemically pure substance is exactly zero at the absolute zero of temperature ($T = 0\\text{ K}$)'\n$$\\lim_{T \\to 0} S = 0$$\nThis provides an absolute reference point to determine standard absolute molar entropies ($S^\\circ$) of substances."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the reaction $2\\text{NO}_2(g) \\rightleftharpoons \\text{N}_2\\text{O}_4(g)$, $\\Delta H = -57.2\\text{ kJ/mol}$ and $\\Delta S = -175.8\\text{ J K}^{-1}\\text{ mol}^{-1}$. At $298\\text{ K}$, the value of $\\Delta G$ is:",
+          "image": "",
+          "options": [
+            "$-4.81\\text{ kJ/mol}$",
+            "$+4.81\\text{ kJ/mol}$",
+            "$-109.6\\text{ kJ/mol}$",
+            "$+109.6\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the Gibbs equation:\n$$\\Delta G = \\Delta H - T\\Delta S$$\nGiven:\n- $\\Delta H = -57.2\\text{ kJ/mol} = -57200\\text{ J/mol}$\n- $T = 298\\text{ K}$\n- $\\Delta S = -175.8\\text{ J K}^{-1}\\text{ mol}^{-1}$\nCalculate $T\\Delta S$:\n$$T\\Delta S = 298 \\times (-175.8) = -52388.4\\text{ J/mol} = -52.39\\text{ kJ/mol}$$\n$$\\Delta G = -57.2 - (-52.39) = -57.2 + 52.39 = -4.81\\text{ kJ/mol}$$\nBecause $\\Delta G < 0$, dimerization of $\\text{NO}_2$ to $\\text{N}_2\\text{O}_4$ is spontaneous at $298\\text{ K}$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] When an ideal gas undergoes a reversible isothermal expansion from volume $V_1$ to $V_2$, the change in entropy of the gas is given by:",
+          "image": "",
+          "options": [
+            "$\\Delta S = nR \\ln\\left(\\frac{V_2}{V_1}\\right)$",
+            "$\\Delta S = nR \\ln\\left(\\frac{V_1}{V_2}\\right)$",
+            "$\\Delta S = 0$",
+            "$\\Delta S = n C_v \\ln\\left(\\frac{V_2}{V_1}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For an isothermal reversible process involving an ideal gas: $\\Delta U = 0$.\n2. From the First Law: $q_{\\text{rev}} = -w_{\\text{rev}} = nRT \\ln\\left(\\frac{V_2}{V_1}\\right)$.\n3. Entropy change is defined as:\n$$\\Delta S = \\frac{q_{\\text{rev}}}{T} = \\frac{nRT \\ln(V_2/V_1)}{T} = nR \\ln\\left(\\frac{V_2}{V_1}\\right)$$\n(In terms of common logarithm: $\\Delta S = 2.303\\, nR \\log_{10}(V_2/V_1)$)."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following substances has a NON-ZERO residual entropy at absolute zero ($0\\text{ K}$) due to crystalline orientation disorder?",
+          "image": "",
+          "options": [
+            "$\\text{CO}(s)$",
+            "$\\text{NaCl}(s)$",
+            "$\\text{Diamond}$",
+            "$\\text{Fe}(s)$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The Third Law holds strictly for perfectly ordered crystals without geometric degeneracy.\n2. In solid carbon monoxide ($\\text{CO}$), because the dipole moment is very small and the sizes of $\\text{C}$ and $\\text{O}$ are comparable, molecules freeze with random end-to-end orientations ($\\text{C}-\\text{O}\\cdots\\text{C}-\\text{O}$ or $\\text{C}-\\text{O}\\cdots\\text{O}-\\text{C}$).\n3. Each molecule has two equally probable orientations ($W = 2^N$), resulting in a non-zero **residual entropy** at $0\\text{ K}$:\n$$S_0 = k_B \\ln W = k_B \\ln(2^{N_A}) = R \\ln 2 \\approx 5.76\\text{ J K}^{-1}\\text{ mol}^{-1}$$\n(Other examples include $\\text{NO}, \\text{N}_2\\text{O},$ and $\\text{H}_2\\text{O}$ ice)."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] If a process has $\\Delta H > 0$ and $\\Delta S < 0$, the process is:",
+          "image": "",
+          "options": [
+            "Non-spontaneous at all temperatures",
+            "Spontaneous at all temperatures",
+            "Spontaneous only at very high temperatures",
+            "Spontaneous only at very low temperatures"
+          ],
+          "correctOption": 0,
+          "solution": "From $\\Delta G = \\Delta H - T\\Delta S$:\n- $\\Delta H > 0$ (positive)\n- Since $\\Delta S < 0$, the term $-T\\Delta S$ is positive for all $T > 0\\text{ K}$.\n$$\\Delta G = (\\text{positive}) + (\\text{positive}) > 0 \\quad (\\text{always positive})$$\nBecause $\\Delta G$ can never be negative at any physical temperature, the process is **non-spontaneous at all temperatures**."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] For the reaction $\\text{PCl}_5(g) \\rightleftharpoons \\text{PCl}_3(g) + \\text{Cl}_2(g)$, the signs of $\\Delta H$ and $\\Delta S$ are respectively:",
+          "image": "",
+          "options": [
+            "$\\Delta H > 0 \\quad \\text{and} \\quad \\Delta S > 0$",
+            "$\\Delta H < 0 \\quad \\text{and} \\quad \\Delta S < 0$",
+            "$\\Delta H > 0 \\quad \\text{and} \\Delta S < 0$",
+            "$\\Delta H < 0 \\quad \\text{and} \\quad \\Delta S > 0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Decomposition of $\\text{PCl}_5$ into $\\text{PCl}_3$ and $\\text{Cl}_2$ involves the cleavage of two axial $\\text{P}-\\text{Cl}$ bonds, requiring an input of thermal energy $\\implies$ endothermic, $\\Delta H > 0$.\n2. The reaction produces $2\\text{ moles}$ of gaseous products from $1\\text{ mole}$ of gaseous reactant ($\\Delta n_g = (1 + 1) - 1 = +1$), increasing the degree of molecular disorder $\\implies \\Delta S > 0$.\nTherefore, both $\\Delta H > 0$ and $\\Delta S > 0$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the total entropy change ($\\Delta S_{\\text{total}} = \\Delta S_{\\text{sys}} + \\Delta S_{\\text{surr}}$) for any reversible thermodynamic process occurring in the universe?",
+          "image": "",
+          "options": [
+            "Zero",
+            "Greater than zero ($> 0$)",
+            "Less than zero ($< 0$)",
+            "Infinite"
+          ],
+          "correctOption": 0,
+          "solution": "1. For a reversible process, heat lost by surroundings equals heat gained by system ($q_{\\text{surr}} = -q_{\\text{sys}}$) at the same temperature $T$.\n2. $\\Delta S_{\\text{sys}} = \\frac{q_{\\text{rev}}}{T}$ and $\\Delta S_{\\text{surr}} = -\\frac{q_{\\text{rev}}}{T}$.\n3. Therefore, for any **reversible process**:\n$$\\Delta S_{\\text{total}} = \\Delta S_{\\text{sys}} + \\Delta S_{\\text{surr}} = 0$$\n(For an irreversible spontaneous process, the Clausius inequality requires $\\Delta S_{\\text{total}} > 0$)."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The enthalpy of fusion of water is $6.0\\text{ kJ/mol}$ at $0^\\circ\\text{C}$ ($273.15\\text{ K}$). The entropy change for the melting of $1\\text{ mole}$ of ice is:",
+          "image": "",
+          "options": [
+            "$+21.96\\text{ J K}^{-1}\\text{ mol}^{-1}$",
+            "$-21.96\\text{ J K}^{-1}\\text{ mol}^{-1}$",
+            "$+0.022\\text{ J K}^{-1}\\text{ mol}^{-1}$",
+            "$+6000\\text{ J K}^{-1}\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "At the normal melting point ($T_f = 273.15\\text{ K}$), solid ice and liquid water are in equilibrium:\n$$\\Delta_{\\text{fus}}S = \\frac{\\Delta_{\\text{fus}}H}{T_f}$$\n$$\\Delta_{\\text{fus}}S = \\frac{6000\\text{ J/mol}}{273.15\\text{ K}} \\approx +21.966\\text{ J K}^{-1}\\text{ mol}^{-1} \\approx +21.96\\text{ J K}^{-1}\\text{ mol}^{-1}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An equilibrium constant $K$ for a reaction is $1.0$ at $298\\text{ K}$. The standard Gibbs free energy change ($\\Delta_r G^\\circ$) for this reaction is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$-1.0\\text{ kJ/mol}$",
+            "$+1.0\\text{ kJ/mol}$",
+            "$-2.303 RT$"
+          ],
+          "correctOption": 0,
+          "solution": "The relation between $\\Delta_r G^\\circ$ and equilibrium constant $K$ is:\n$$\\Delta_r G^\\circ = -2.303\\, RT \\log_{10} K$$\nWhen $K = 1.0$:\n$$\\log_{10}(1.0) = 0$$\n$$\\Delta_r G^\\circ = -2.303\\, RT \\times 0 = 0$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When egg white is boiled and hardens (denaturation of albumin protein), what happens to the entropy of the protein?",
+          "image": "",
+          "options": [
+            "Entropy increases, because the compact native globular helical structure unfolds into a random, disorganized coil",
+            "Entropy decreases, because the liquid albumin solidifies into a solid gel",
+            "Entropy remains strictly zero",
+            "Entropy initially decreases and then reaches zero"
+          ],
+          "correctOption": 0,
+          "solution": "1. In native globular albumin, polypeptide chains are tightly folded into highly ordered, compact, helical and pleated secondary/tertiary structures with specific hydrogen bonds.\n2. On boiling, thermal energy disrupts the stabilizing hydrogen bonds and hydrophobic interactions.\n3. The polypeptide chains unfold and uncoil into disordered, random three-dimensional conformations (denaturation).\n4. This large gain in conformational randomness results in an **increase in entropy** ($\\Delta S > 0$), despite the apparent physical hardening/coagulation of the egg white."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For an irreversible spontaneous process at constant $T$ and $P$, which of the following is correct?",
+          "image": "",
+          "options": [
+            "$\\Delta S_{\\text{total}} > 0 \\quad \\text{and} \\quad \\Delta G < 0$",
+            "$\\Delta S_{\\text{total}} = 0 \\quad \\text{and} \\quad \\Delta G = 0$",
+            "$\\Delta S_{\\text{total}} < 0 \\quad \\text{and} \\quad \\Delta G > 0$",
+            "$\\Delta S_{\\text{total}} > 0 \\quad \\text{and} \\quad \\Delta G > 0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The Clausius statement of the Second Law dictates that the total entropy of the universe increases in any spontaneous natural process: $\\Delta S_{\\text{total}} > 0$.\n2. Under conditions of constant temperature and pressure, the total entropy change relates to Gibbs free energy by:\n$$\\Delta S_{\\text{total}} = -\\frac{\\Delta G_{\\text{sys}}}{T}$$\n3. Since $T$ is in Kelvin ($T > 0$), $\\Delta S_{\\text{total}} > 0$ requires:\n$$\\Delta G_{\\text{sys}} < 0$$\nBoth represent equivalent criteria for spontaneity."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A reaction has $\\Delta H = -40.0\\text{ kJ/mol}$ and $\\Delta S = -80.0\\text{ J K}^{-1}\\text{ mol}^{-1}$. Above what temperature will the reaction become NON-SPONTANEOUS?",
+          "image": "",
+          "options": [
+            "$500\\text{ K}$",
+            "$300\\text{ K}$",
+            "$400\\text{ K}$",
+            "$250\\text{ K}$"
+          ],
+          "correctOption": 0,
+          "solution": "For spontaneity:\n$$\\Delta G = \\Delta H - T\\Delta S < 0$$\n$$-40000 - T(-80.0) < 0$$\n$$-40000 + 80.0\\, T < 0$$\n$$80.0\\, T < 40000 \\implies T < 500\\text{ K}$$\n- The reaction is spontaneous below $500\\text{ K}$.\n- At $T = 500\\text{ K}$, it reaches equilibrium ($\\Delta G = 0$).\n- Above $500\\text{ K}$, $\\Delta G > 0$, and the reaction becomes **non-spontaneous**."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following thermodynamic properties is a PATH FUNCTION?",
+          "image": "",
+          "options": [
+            "Heat exchanged in an irreversible process ($q$)",
+            "Entropy ($S$)",
+            "Gibbs free energy ($G$)",
+            "Enthalpy ($H$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. A **path function** depends on the specific mechanism or route taken between two thermodynamic states.\n2. Heat ($q$) and work ($w$) are classic path functions.\n3. Entropy ($S$), Gibbs free energy ($G$), and enthalpy ($H$) depend exclusively on the state variables of the system and are **state functions**."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The standard entropy of $X_2, Y_2,$ and $XY_3$ are $60, 40,$ and $50\\text{ J K}^{-1}\\text{ mol}^{-1}$ respectively. For the reaction:\n$$\\frac{1}{2}X_2 + \\frac{3}{2}Y_2 \\rightarrow XY_3; \\quad \\Delta H = -30\\text{ kJ}$$\nTo be in equilibrium, the temperature should be:",
+          "image": "",
+          "options": [
+            "$750\\text{ K}$",
+            "$1000\\text{ K}$",
+            "$500\\text{ K}$",
+            "$1250\\text{ K}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate $\\Delta_r S^\\circ$:\n$$\\Delta_r S^\\circ = S^\\circ(XY_3) - \\left[\\frac{1}{2}S^\\circ(X_2) + \\frac{3}{2}S^\\circ(Y_2)\\right]$$\n$$\\Delta_r S^\\circ = 50 - \\left[\\frac{1}{2}(60) + \\frac{3}{2}(40)\\right] = 50 - [30 + 60] = 50 - 90 = -40\\text{ J K}^{-1}\\text{ mol}^{-1}$$\n2. At equilibrium, $\\Delta G = 0 \\implies T = \\frac{\\Delta H}{\\Delta S}$:\n$$T = \\frac{-30000\\text{ J}}{-40\\text{ J/K}} = 750\\text{ K}$$"
+        },
+        {
+          "id": "q22_alt",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the entropy change of the surroundings when $1\\text{ mole}$ of an ideal gas expands isothermally and reversibly at $300\\text{ K}$ from $10\\text{ L}$ to $100\\text{ L}$?",
+          "image": "",
+          "options": [
+            "$-19.14\\text{ J/K}$",
+            "$+19.14\\text{ J/K}$",
+            "$0\\text{ J/K}$",
+            "$-2.303\\text{ J/K}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For isothermal reversible expansion of an ideal gas:\n$$\\Delta S_{\\text{sys}} = 2.303\\, nR \\log_{10}\\left(\\frac{V_2}{V_1}\\right) = 2.303 \\times 1 \\times 8.314 \\times \\log_{10}\\left(\\frac{100}{10}\\right) = 19.14\\text{ J/K}$$\n2. In a reversible process, $\\Delta S_{\\text{total}} = \\Delta S_{\\text{sys}} + \\Delta S_{\\text{surr}} = 0$:\n$$\\Delta S_{\\text{surr}} = -\\Delta S_{\\text{sys}} = -19.14\\text{ J/K}$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For the conversion of water to steam at $100^\\circ\\text{C}$ and $1\\text{ atm}$ pressure:\n$$\\text{H}_2\\text{O}(l) \\rightleftharpoons \\text{H}_2\\text{O}(g)$$\nThe values of $\\Delta G, \\Delta H,$ and $\\Delta S$ are:",
+          "image": "",
+          "options": [
+            "$\\Delta G = 0, \\quad \\Delta H > 0, \\quad \\Delta S > 0$",
+            "$\\Delta G < 0, \\quad \\Delta H > 0, \\quad \\Delta S > 0$",
+            "$\\Delta G = 0, \\quad \\Delta H < 0, \\quad \\Delta S < 0$",
+            "$\\Delta G > 0, \\quad \\Delta H > 0, \\quad \\Delta S > 0$"
+          ],
+          "correctOption": 0,
+          "solution": "At the normal boiling point ($100^\\circ\\text{C}, 1\\text{ atm}$):\n1. Liquid water and water vapor exist in dynamic phase equilibrium, so $\\Delta G = 0$.\n2. Vaporization requires heat input to break hydrogen bonds, so $\\Delta H > 0$ (endothermic).\n3. Gaseous steam has far greater spatial disorder than liquid water, so $\\Delta S > 0$."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] If the equilibrium constant $K > 1$ for a reaction, then the value of $\\Delta_r G^\\circ$ must be:",
+          "image": "",
+          "options": [
+            "Negative ($\\Delta_r G^\\circ < 0$)",
+            "Positive ($\\Delta_r G^\\circ > 0$)",
+            "Zero",
+            "Equal to $RT$"
+          ],
+          "correctOption": 0,
+          "solution": "From $\\Delta_r G^\\circ = -2.303\\, RT \\log_{10} K$:\n- If $K > 1$, then $\\log_{10} K > 0$.\n- Since $R > 0$ and $T > 0$, the product $-2.303 RT \\log_{10} K$ must be negative.\n- Therefore, $\\Delta_r G^\\circ < 0$ (the forward reaction is favored under standard state conditions)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Trouton's rule states that for a wide range of non-associated liquids, the molar entropy of vaporization at their normal boiling point is approximately equal to:",
+          "image": "",
+          "options": [
+            "$\\approx 85-88\\text{ J K}^{-1}\\text{ mol}^{-1}$",
+            "$\\approx 57.1\\text{ J K}^{-1}\\text{ mol}^{-1}$",
+            "$\\approx 10.5\\text{ J K}^{-1}\\text{ mol}^{-1}$",
+            "$\\approx 4.184\\text{ J K}^{-1}\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "**Trouton's Rule** observes that for most simple, non-polar and non-hydrogen-bonded liquids:\n$$\\Delta_{\\text{vap}}S = \\frac{\\Delta_{\\text{vap}}H}{T_b} \\approx 85 - 88\\text{ J K}^{-1}\\text{ mol}^{-1}$$\n(Liquids with strong intermolecular hydrogen bonding like $\\text{H}_2\\text{O}$ and ethanol show positive deviations from this value due to higher liquid-state order)."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In which of the following processes is $\\Delta S$ POSITIVE?",
+          "image": "",
+          "options": [
+            "Dissociation of dihydrogen into atoms: $\\text{H}_2(g) \\rightarrow 2\\text{H}(g)$",
+            "Condensation of water vapor into rain",
+            "Freezing of liquid gallium at $30^\\circ\\text{C}$",
+            "$2\\text{SO}_2(g) + \\text{O}_2(g) \\rightarrow 2\\text{SO}_3(g)$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In $\\text{H}_2(g) \\rightarrow 2\\text{H}(g)$, one diatomic molecule splits into two independent gaseous atoms, increasing the number of translating particles and microstates $\\implies \\Delta S > 0$.\n2. Condensation and freezing convert fluids to more orderly states $\\implies \\Delta S < 0$.\n3. In $2\\text{SO}_2(g) + \\text{O}_2(g) \\rightarrow 2\\text{SO}_3(g)$, $3\\text{ moles of gas}$ produce $2\\text{ moles of gas}$ ($\\Delta n_g = -1$) $\\implies \\Delta S < 0$."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For a reaction with $\\Delta_r H^\\circ = +30.56\\text{ kJ/mol}$ and $\\Delta_r S^\\circ = +66.0\\text{ J K}^{-1}\\text{ mol}^{-1}$, at what minimum temperature does the reaction become spontaneous in the forward direction?",
+          "image": "",
+          "options": [
+            "$463\\text{ K}$",
+            "$300\\text{ K}$",
+            "$298\\text{ K}$",
+            "$660\\text{ K}$"
+          ],
+          "correctOption": 0,
+          "solution": "For forward spontaneity, $\\Delta G < 0$:\n$$T > \\frac{\\Delta_r H^\\circ}{\\Delta_r S^\\circ} = \\frac{30560\\text{ J/mol}}{66.0\\text{ J K}^{-1}\\text{ mol}^{-1}} \\approx 463.03\\text{ K} \\approx 463\\text{ K}$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The standard molar entropies of $\\text{N}_2(g), \\text{H}_2(g),$ and $\\text{NH}_3(g)$ are $191.5, 130.6,$ and $192.3\\text{ J K}^{-1}\\text{ mol}^{-1}$ respectively. What is $\\Delta_r S^\\circ$ for the Haber synthesis:\n$$\\text{N}_2(g) + 3\\text{H}_2(g) \\rightarrow 2\\text{NH}_3(g)$$?",
+          "image": "",
+          "options": [
+            "$-198.7\\text{ J K}^{-1}\\text{ mol}^{-1}$",
+            "$+198.7\\text{ J K}^{-1}\\text{ mol}^{-1}$",
+            "$-129.8\\text{ J K}^{-1}\\text{ mol}^{-1}$",
+            "$-99.35\\text{ J K}^{-1}\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using standard molar entropies:\n$$\\Delta_r S^\\circ = 2 S^\\circ(\\text{NH}_3) - [S^\\circ(\\text{N}_2) + 3 S^\\circ(\\text{H}_2)]$$\n$$\\Delta_r S^\\circ = 2(192.3) - [191.5 + 3(130.6)]$$\n$$\\Delta_r S^\\circ = 384.6 - [191.5 + 391.8] = 384.6 - 583.3 = -198.7\\text{ J K}^{-1}\\text{ mol}^{-1}$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An ideal gas is expanded adiabatically against an opposing pressure of zero (free expansion). What are the values of $\\Delta T, \\Delta S_{\\text{sys}},$ and $\\Delta S_{\\text{surr}}$?",
+          "image": "",
+          "options": [
+            "$\\Delta T = 0, \\quad \\Delta S_{\\text{sys}} > 0, \\quad \\Delta S_{\\text{surr}} = 0$",
+            "$\\Delta T < 0, \\quad \\Delta S_{\\text{sys}} > 0, \\quad \\Delta S_{\\text{surr}} > 0$",
+            "$\\Delta T = 0, \\quad \\Delta S_{\\text{sys}} = 0, \\quad \\Delta S_{\\text{surr}} = 0$",
+            "$\\Delta T > 0, \\quad \\Delta S_{\\text{sys}} = 0, \\quad \\Delta S_{\\text{surr}} < 0$"
+          ],
+          "correctOption": 0,
+          "solution": "In an adiabatic free expansion into vacuum ($P_{\\text{ext}} = 0, q = 0$):\n1. $w = 0$, so $\\Delta U = 0 \\implies \\Delta T = 0$.\n2. Because the process is adiabatic and no heat is exchanged with the surroundings: $q_{\\text{surr}} = 0 \\implies \\Delta S_{\\text{surr}} = 0$.\n3. The gas expands to fill a larger volume ($V_2 > V_1$), which is an irreversible spontaneous dispersion of matter: $\\Delta S_{\\text{sys}} = nR \\ln(V_2/V_1) > 0$.\nThus, $\\Delta T = 0, \\Delta S_{\\text{sys}} > 0,$ and $\\Delta S_{\\text{surr}} = 0$."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The Gibbs-Helmholtz equation relating enthalpy change and Gibbs energy change is given by:",
+          "image": "",
+          "options": [
+            "$\\Delta G = \\Delta H + T\\left[\\frac{\\partial(\\Delta G)}{\\partial T}\\right]_p$",
+            "$\\Delta G = \\Delta H - T\\left[\\frac{\\partial(\\Delta G)}{\\partial T}\\right]_p$",
+            "$\\Delta H = \\Delta G - T\\left[\\frac{\\partial(\\Delta G)}{\\partial T}\\right]_p$",
+            "$\\Delta G = \\Delta H + T\\Delta S$"
+          ],
+          "correctOption": 0,
+          "solution": "1. From fundamental thermodynamic relations, $\\left(\\frac{\\partial G}{\\partial T}\\right)_p = -S$, which gives $\\left[\\frac{\\partial(\\Delta G)}{\\partial T}\\right]_p = -\\Delta S$.\n2. Substituting $-\\Delta S = \\left[\\frac{\\partial(\\Delta G)}{\\partial T}\\right]_p$ into the definition $\\Delta G = \\Delta H - T\\Delta S$:\n$$\\Delta G = \\Delta H + T\\left[\\frac{\\partial(\\Delta G)}{\\partial T}\\right]_p$$\nThis is the differential form of the **Gibbs-Helmholtz equation**."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For the reaction $\\text{A} \\rightarrow \\text{B}$, $\\Delta H = -20\\text{ kJ/mol}$ and the activation energy is $E_a = 15\\text{ kJ/mol}$. What is the activation energy for the reverse reaction $\\text{B} \\rightarrow \\text{A}$?",
+          "image": "",
+          "options": [
+            "$35\\text{ kJ/mol}$",
+            "$5\\text{ kJ/mol}$",
+            "$20\\text{ kJ/mol}$",
+            "$15\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "The relation between enthalpy of reaction and forward/reverse activation energies is:\n$$\\Delta H = E_{a(\\text{forward})} - E_{a(\\text{reverse})}$$\n$$-20 = 15 - E_{a(\\text{reverse})}$$\n$$E_{a(\\text{reverse})} = 15 - (-20) = 15 + 20 = 35\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements about entropy is INCORRECT?",
+          "image": "",
+          "options": [
+            "At absolute zero temperature ($0\\text{ K}$), the entropy of all substances is zero",
+            "Entropy is an extensive thermodynamic property",
+            "Entropy is a state function",
+            "For a spontaneous process in an isolated system, $\\Delta S > 0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The Third Law states that entropy approaches zero at $0\\text{ K}$ strictly for **pure, perfectly crystalline substances**.\n2. Substances with structural or orientation disorder (like $\\text{CO}, \\text{NO}, \\text{N}_2\\text{O}$, glass, and amorphous solid solutions) possess **residual entropy** ($S_0 > 0$) at $0\\text{ K}$.\nTherefore, Statement A is incorrect."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When graphite is converted into diamond under high pressure:\n$$\\text{C}(\\text{graphite}) \\rightarrow \\text{C}(\\text{diamond})$$\nThe entropy change ($\\Delta S$) is negative because:",
+          "image": "",
+          "options": [
+            "Diamond has a rigid, highly organized 3D tetrahedral framework with less positional disorder than layered graphite",
+            "Diamond has lower density than graphite",
+            "The reaction is exothermic",
+            "Diamond has delocalized electrons"
+          ],
+          "correctOption": 0,
+          "solution": "1. Graphite has a layered planar sheet structure with relatively loose inter-layer van der Waals forces, allowing more vibrational/sliding degrees of freedom ($S^\\circ \\approx 5.74\\text{ J K}^{-1}\\text{ mol}^{-1}$).\n2. Diamond has an extremely rigid, tightly packed, three-dimensional covalent tetrahedral network ($sp^3$) that restricts atomic motion ($S^\\circ \\approx 2.38\\text{ J K}^{-1}\\text{ mol}^{-1}$).\n3. Thus, $\\Delta S = S^\\circ(\\text{diamond}) - S^\\circ(\\text{graphite}) = 2.38 - 5.74 = -3.36\\text{ J K}^{-1}\\text{ mol}^{-1} < 0$."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a reaction with $\\Delta_r G^\\circ = 0$, the value of the equilibrium constant $K$ is:",
+          "image": "",
+          "options": [
+            "$K = 1$",
+            "$K = 0$",
+            "$K = \\infty$",
+            "$K = 10$"
+          ],
+          "correctOption": 0,
+          "solution": "Using $\\Delta_r G^\\circ = -RT \\ln K$:\n$$\\Delta_r G^\\circ = 0 \\implies -RT \\ln K = 0 \\implies \\ln K = 0 \\implies K = e^0 = 1$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A non-spontaneous reaction at all temperatures must have which combination of enthalpy and entropy changes?",
+          "image": "",
+          "options": [
+            "$\\Delta H > 0 \\quad \\text{and} \\quad \\Delta S < 0$",
+            "$\\Delta H < 0 \\quad \\text{and} \\quad \\Delta S > 0$",
+            "$\\Delta H > 0 \\quad \\text{and} \\quad \\Delta S > 0$",
+            "$\\Delta H < 0 \\quad \\text{and} \\quad \\Delta S < 0$"
+          ],
+          "correctOption": 0,
+          "solution": "From $\\Delta G = \\Delta H - T\\Delta S$:\nWhen $\\Delta H > 0$ and $\\Delta S < 0$:\n$$\\Delta G = (\\text{positive}) - T(\\text{negative}) = (\\text{positive}) + T(\\text{positive}) > 0$$\nBecause $\\Delta G$ is positive at all temperatures, the reaction is never spontaneous."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Calculate the change in entropy when $1\\text{ mole}$ of an ideal gas is heated from $300\\text{ K}$ to $600\\text{ K}$ at constant volume: (Given: $C_v = 1.5\\, R$, $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$, $\\ln 2 = 0.693$)",
+          "image": "",
+          "options": [
+            "$8.64\\text{ J/K}$",
+            "$17.28\\text{ J/K}$",
+            "$4.32\\text{ J/K}$",
+            "$12.96\\text{ J/K}$"
+          ],
+          "correctOption": 0,
+          "solution": "At constant volume ($dV = 0$):\n$$\\Delta S = n C_v \\ln\\left(\\frac{T_2}{T_1}\\right)$$\nSubstitute $n = 1\\text{ mol}$, $C_v = 1.5 R$, $T_1 = 300\\text{ K}$, and $T_2 = 600\\text{ K}$:\n$$\\Delta S = 1 \\times (1.5 \\times 8.314) \\times \\ln\\left(\\frac{600}{300}\\right)$$\n$$\\Delta S = 12.471 \\times \\ln(2) = 12.471 \\times 0.693 \\approx 8.642\\text{ J/K} \\approx 8.64\\text{ J/K}$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When two non-reactive ideal gases are mixed together at constant temperature and pressure in an isolated chamber, the mixing process is spontaneous because:",
+          "image": "",
+          "options": [
+            "$\\Delta S_{\\text{mix}} > 0 \\quad \\text{and} \\quad \\Delta H_{\\text{mix}} = 0$",
+            "$\\Delta S_{\\text{mix}} = 0 \\quad \\text{and} \\quad \\Delta H_{\\text{mix}} < 0$",
+            "$\\Delta S_{\\text{mix}} < 0 \\quad \\text{and} \\quad \\Delta H_{\\text{mix}} > 0$",
+            "$\\Delta G_{\\text{mix}} > 0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For ideal gases, intermolecular interactions are identical to those in pure gases, so no heat is evolved or absorbed upon mixing: $\\Delta H_{\\text{mix}} = 0$.\n2. The mixing of two different gases increases spatial randomness and positional microstates, so $\\Delta S_{\\text{mix}} = -n R \\sum X_i \\ln X_i > 0$.\n3. Therefore, $\\Delta G_{\\text{mix}} = \\Delta H_{\\text{mix}} - T\\Delta S_{\\text{mix}} = -T\\Delta S_{\\text{mix}} < 0$.\nThe process is driven entirely by the positive entropy of mixing."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the reaction $2\\text{A}(g) + \\text{B}(g) \\rightarrow 2\\text{D}(g)$, $\\Delta U^\\circ = -10.5\\text{ kJ}$ and $\\Delta S^\\circ = -44.1\\text{ J/K}$ at $298\\text{ K}$. The standard Gibbs free energy change ($\\Delta G^\\circ$) for the reaction is: (Take $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$-0.16\\text{ kJ}$",
+            "$+0.16\\text{ kJ}$",
+            "$-12.98\\text{ kJ}$",
+            "$+12.98\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate $\\Delta n_g$:\n$$\\Delta n_g = 2 - (2 + 1) = 2 - 3 = -1$$\n2. Calculate $\\Delta H^\\circ$:\n$$\\Delta H^\\circ = \\Delta U^\\circ + \\Delta n_g RT = -10500 + (-1 \\times 8.314 \\times 298) = -10500 - 2477.6 = -12977.6\\text{ J} = -12.98\\text{ kJ}$$\n3. Calculate $\\Delta G^\\circ$:\n$$\\Delta G^\\circ = \\Delta H^\\circ - T\\Delta S^\\circ = -12977.6 - [298 \\times (-44.1)] = -12977.6 - (-13141.8) = -12977.6 + 13141.8 = +164.2\\text{ J} \\approx +0.16\\text{ kJ}$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The unit of entropy in the SI system is:",
+          "image": "",
+          "options": [
+            "$\\text{J K}^{-1}\\text{ mol}^{-1}$",
+            "$\\text{J K mol}^{-1}$",
+            "$\\text{kJ mol}^{-1}$",
+            "$\\text{J s}^{-1}\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Entropy is defined by the relation $\\Delta S = \\frac{q_{\\text{rev}}}{T}$.\n- Unit of heat ($q$): Joules ($\\text{J}$)\n- Unit of absolute temperature ($T$): Kelvin ($\\text{K}$)\nThus, molar entropy is expressed in **$\\text{J K}^{-1}\\text{ mol}^{-1}$** (or $\\text{J/K}$ for total entropy)."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An endothermic reaction is spontaneous at room temperature ($298\\text{ K}$). It must be true that:",
+          "image": "",
+          "options": [
+            "$\\Delta S > 0 \\quad \\text{and} \\quad T\\Delta S > \\Delta H$",
+            "$\\Delta S < 0 \\quad \\text{and} \\quad T\\Delta S > \\Delta H$",
+            "$\\Delta S = 0$",
+            "$\\Delta H < 0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For an endothermic reaction: $\\Delta H > 0$.\n2. For the reaction to be spontaneous: $\\Delta G = \\Delta H - T\\Delta S < 0$.\n3. This requires $\\Delta S > 0$ and the entropy term $T\\Delta S$ must be larger in magnitude than the endothermic enthalpy term $\\Delta H$ ($T\\Delta S > \\Delta H$), overcoming the unfavorable enthalpy change."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When rust forms on iron via the reaction $4\\text{Fe}(s) + 3\\text{O}_2(g) \\rightarrow 2\\text{Fe}_2\\text{O}_3(s)$, the entropy of the system decreases ($\\Delta S_{\\text{sys}} < 0$). Why is rusting spontaneous?",
+          "image": "",
+          "options": [
+            "The reaction is highly exothermic, releasing heat to the surroundings such that $\\Delta S_{\\text{surr}} > 0$ and $\\Delta S_{\\text{total}} > 0$",
+            "Rusting is an endothermic process",
+            "Iron atoms gain volume upon rusting",
+            "Rusting violates the Second Law of Thermodynamics"
+          ],
+          "correctOption": 0,
+          "solution": "1. In rusting, $3\\text{ moles of gas}$ are consumed to form a solid oxide, so the system's entropy decreases ($\\Delta S_{\\text{sys}} < 0$).\n2. However, the oxidation of iron is strongly **exothermic** ($\\Delta H_{\\text{sys}} \\ll 0$).\n3. The heat released into the surroundings increases the entropy of the surroundings:\n$$\\Delta S_{\\text{surr}} = -\\frac{\\Delta H_{\\text{sys}}}{T} > 0$$\n4. Because $\\Delta S_{\\text{surr}}$ is much larger in magnitude than $|\\Delta S_{\\text{sys}}|$, the total entropy of the universe increases:\n$$\\Delta S_{\\text{total}} = \\Delta S_{\\text{sys}} + \\Delta S_{\\text{surr}} > 0$$\nHence, the process obeys the Second Law and is spontaneous."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a reversible reaction, if $\\Delta_r G^\\circ < 0$, which of the following statements is correct regarding the equilibrium state?",
+          "image": "",
+          "options": [
+            "The equilibrium constant $K > 1$, favoring products",
+            "The equilibrium constant $K < 1$, favoring reactants",
+            "The equilibrium constant $K = 0$",
+            "The reaction cannot reach equilibrium"
+          ],
+          "correctOption": 0,
+          "solution": "From $\\Delta_r G^\\circ = -RT \\ln K$:\n$$\\ln K = -\\frac{\\Delta_r G^\\circ}{RT}$$\nIf $\\Delta_r G^\\circ < 0$ (negative), then $\\ln K > 0$, which implies $K > 1$.\nAn equilibrium constant greater than $1$ signifies that products predominate over reactants at equilibrium."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The entropy of vaporization of a liquid is $85\\text{ J K}^{-1}\\text{ mol}^{-1}$ and its enthalpy of vaporization is $34.0\\text{ kJ/mol}$. The boiling point of the liquid is:",
+          "image": "",
+          "options": [
+            "$400\\text{ K}$ ($127^\\circ\\text{C}$)",
+            "$250\\text{ K}$ ($-23^\\circ\\text{C}$)",
+            "$300\\text{ K}$ ($27^\\circ\\text{C}$)",
+            "$350\\text{ K}$ ($77^\\circ\\text{C}$)"
+          ],
+          "correctOption": 0,
+          "solution": "At the normal boiling point:\n$$T_b = \\frac{\\Delta_{\\text{vap}}H}{\\Delta_{\\text{vap}}S}$$\n$$\\Delta_{\\text{vap}}H = 34.0\\text{ kJ/mol} = 34000\\text{ J/mol}$$\n$$\\Delta_{\\text{vap}}S = 85\\text{ J K}^{-1}\\text{ mol}^{-1}$$\n$$T_b = \\frac{34000}{85} = 400\\text{ K}$$\n$$T_b = 400 - 273 = 127^\\circ\\text{C}$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A system undergoes a spontaneous change under isothermal and isobaric conditions. The maximum useful non-expansion electrical work ($w_{\\text{non-PV}}$) that can be obtained from the system is equal to:",
+          "image": "",
+          "options": [
+            "$-\\Delta G$",
+            "$-\\Delta H$",
+            "$-\\Delta U$",
+            "$T\\Delta S$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Under conditions of constant temperature and pressure, the decrease in Gibbs free energy ($-\\Delta G$) represents the **maximum useful work** (other than pressure-volume work of expansion) that can be extracted from a system:\n$$w_{\\text{net, max}} = -\\Delta G$$\n2. In electrochemical cells, this corresponds directly to the electrical work produced: $-\\Delta G = nFE_{\\text{cell}}$."
+        }
+      ]
+    }
+  ]
+}

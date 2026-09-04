@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-08-thermodynamics-first-law",
+  "title": "Thermodynamics: First Law (System, State Functions, Work, Heat, & Internal Energy)",
+  "syllabus": "Concepts of system and surroundings; Types of systems (open, closed, and isolated); State variables and state functions vs path functions; Intensive and extensive properties; Thermodynamic processes (isothermal, adiabatic, isobaric, isochoric, cyclic, reversible, and irreversible); Internal energy (U) as a state function; Heat (q) and work (w), sign conventions according to IUPAC; First law of thermodynamics (ΔU = q + w); Pressure-volume work (w = -P_ext ΔV, reversible isothermal expansion w = -2.303 nRT log(V2/V1)); Enthalpy (H = U + PV), relation between ΔH and ΔU (ΔH = ΔU + Δn_g RT); Heat capacities: C, C_m, C_p, and C_v, relation between C_p and C_v (Mayer's formula: C_p - C_v = R); Adiabatic processes for ideal gases (PV^γ = const, TV^(γ-1) = const)",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Under isothermal and reversible conditions, $2.0\\text{ moles}$ of an ideal gas expand from an initial volume of $2.0\\text{ L}$ to a final volume of $20.0\\text{ L}$ at $300\\text{ K}$. The work done by the gas is: (Take $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$ and $\\log_{10} 10 = 1$)",
+          "image": "",
+          "options": [
+            "$-11.48\\text{ kJ}$",
+            "$+11.48\\text{ kJ}$",
+            "$-5.74\\text{ kJ}$",
+            "$-22.96\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "Work done during reversible isothermal expansion of an ideal gas according to IUPAC convention is given by:\n$$w = -2.303\\, nRT \\log_{10}\\left(\\frac{V_2}{V_1}\\right)$$\nSubstitute $n = 2.0\\text{ mol}$, $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$, $T = 300\\text{ K}$, $V_1 = 2.0\\text{ L}$, and $V_2 = 20.0\\text{ L}$:\n$$w = -2.303 \\times 2.0 \\times 8.314 \\times 300 \\times \\log_{10}\\left(\\frac{20.0}{2.0}\\right)$$\n$$w = -2.303 \\times 4988.4 \\times \\log_{10}(10) = -11488.3\\text{ J} \\approx -11.48\\text{ kJ}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following is an INTENSIVE property of a thermodynamic system?",
+          "image": "",
+          "options": [
+            "Density",
+            "Internal energy",
+            "Enthalpy",
+            "Heat capacity"
+          ],
+          "correctOption": 0,
+          "solution": "1. An **intensive property** is independent of the amount or size of matter present in the system.\n2. Density is the ratio of two extensive properties ($\\text{Density} = \\frac{\\text{Mass}}{\\text{Volume}}$). The ratio of two extensive properties is always an intensive property.\n3. Internal energy, enthalpy, and total heat capacity depend directly on the quantity of matter present and are extensive properties."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For the combustion of liquid benzene at $298\\text{ K}$:\n$$\\text{C}_6\\text{H}_6(l) + \\frac{15}{2}\\text{O}_2(g) \\rightarrow 6\\text{CO}_2(g) + 3\\text{H}_2\\text{O}(l)$$\nThe difference between the heat of reaction at constant pressure ($\\Delta H$) and at constant volume ($\\Delta U$), i.e., $(\\Delta H - \\Delta U)$, in terms of $RT$ is:",
+          "image": "",
+          "options": [
+            "$-1.5\\, RT$",
+            "$+1.5\\, RT$",
+            "$-0.5\\, RT$",
+            "$+3.0\\, RT$"
+          ],
+          "correctOption": 0,
+          "solution": "The thermodynamic relation between enthalpy change ($\\Delta H$) and internal energy change ($\\Delta U$) is:\n$$\\Delta H = \\Delta U + \\Delta n_g RT \\implies \\Delta H - \\Delta U = \\Delta n_g RT$$\nCalculate $\\Delta n_g$ (moles of gaseous products minus moles of gaseous reactants):\n$$\\Delta n_g = n_g(\\text{products}) - n_g(\\text{reactants}) = 6 - \\frac{15}{2} = 6 - 7.5 = -1.5$$\nTherefore:\n$$\\Delta H - \\Delta U = -1.5\\, RT$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In an adiabatic process for an ideal gas, which of the following relations is strictly TRUE?",
+          "image": "",
+          "options": [
+            "$q = 0 \\quad \\text{and} \\quad \\Delta U = w$",
+            "$w = 0 \\quad \\text{and} \\quad \\Delta U = q$",
+            "$\\Delta U = 0 \\quad \\text{and} \\quad q = -w$",
+            "$\\Delta T = 0 \\quad \\text{and} \\quad q = w$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In an **adiabatic process**, there is no transfer of heat between the system and its surroundings across the boundary, so $q = 0$.\n2. From the First Law of Thermodynamics:\n$$\\Delta U = q + w$$\nSubstituting $q = 0$ yields:\n$$\\Delta U = w$$\n(If the gas expands adiabatically, work is done by the system ($w < 0$), causing $\\Delta U < 0$ and the temperature drops)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] A gas expands from a volume of $2.0\\text{ L}$ to $6.0\\text{ L}$ against a constant external pressure of $3.0\\text{ atm}$. During this process, $400\\text{ J}$ of heat is supplied to the gas. The change in internal energy ($\\Delta U$) of the gas is: (Take $1\\text{ L atm} = 101.3\\text{ J}$)",
+          "image": "",
+          "options": [
+            "$-815.6\\text{ J}$",
+            "$+1615.6\\text{ J}$",
+            "$-1215.6\\text{ J}$",
+            "$+815.6\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Work done during expansion against constant external pressure:\n$$w = -P_{\\text{ext}} \\Delta V = -3.0\\text{ atm} \\times (6.0\\text{ L} - 2.0\\text{ L}) = -3.0 \\times 4.0 = -12.0\\text{ L atm}$$\n2. Convert work into Joules:\n$$w = -12.0 \\times 101.3\\text{ J} = -1215.6\\text{ J}$$\n3. Heat supplied to the system: $q = +400\\text{ J}$.\n4. From the First Law of Thermodynamics:\n$$\\Delta U = q + w = +400\\text{ J} + (-1215.6\\text{ J}) = -815.6\\text{ J}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following is a STATE FUNCTION?",
+          "image": "",
+          "options": [
+            "Enthalpy",
+            "Heat",
+            "Work",
+            "Frictional heat loss"
+          ],
+          "correctOption": 0,
+          "solution": "1. A **state function** is a thermodynamic property whose value depends only on the current state of the system (specified by state variables like $P, V, T, n$) and is completely independent of the path taken to reach that state.\n2. Internal energy ($U$), enthalpy ($H$), entropy ($S$), and Gibbs free energy ($G$) are state functions.\n3. Heat ($q$) and work ($w$) depend on the specific path chosen between the initial and final states, and are **path functions**."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For an ideal gas undergoing free expansion in an isolated container into a vacuum ($P_{\\text{ext}} = 0$):",
+          "image": "",
+          "options": [
+            "$q = 0, \\quad w = 0, \\quad \\text{and} \\quad \\Delta T = 0$",
+            "$q \\ne 0, \\quad w = 0, \\quad \\text{and} \\quad \\Delta T = 0$",
+            "$q = 0, \\quad w \\ne 0, \\quad \\text{and} \\quad \\Delta U = 0$",
+            "$q = 0, \\quad w = 0, \\quad \\text{and} \\quad \\Delta U > 0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For free expansion against a vacuum: $P_{\\text{ext}} = 0$, so $w = -P_{\\text{ext}} \\Delta V = 0$.\n2. Since the container is isolated: $q = 0$.\n3. From the First Law: $\\Delta U = q + w = 0 + 0 = 0$.\n4. For an ideal gas, internal energy depends only on temperature: $\\Delta U = n C_v \\Delta T$. Since $\\Delta U = 0$, we have $\\Delta T = 0$.\nThus, $q = 0, w = 0,$ and $\\Delta T = 0$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A system absorbs $300\\text{ J}$ of heat and does $100\\text{ J}$ of work on the surroundings. The change in internal energy ($\\Delta U$) of the system is:",
+          "image": "",
+          "options": [
+            "$+200\\text{ J}$",
+            "$-200\\text{ J}$",
+            "$+400\\text{ J}$",
+            "$-400\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "According to IUPAC sign conventions:\n1. Heat absorbed by the system: $q = +300\\text{ J}$.\n2. Work done by the system on surroundings: $w = -100\\text{ J}$.\n3. From the First Law of Thermodynamics:\n$$\\Delta U = q + w = (+300\\text{ J}) + (-100\\text{ J}) = +200\\text{ J}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The relation between molar heat capacity at constant pressure ($C_p$) and at constant volume ($C_v$) for $1\\text{ mole}$ of an ideal gas is:",
+          "image": "",
+          "options": [
+            "$C_p - C_v = R$",
+            "$C_v - C_p = R$",
+            "$C_p + C_v = R$",
+            "$\\frac{C_p}{C_v} = R$"
+          ],
+          "correctOption": 0,
+          "solution": "For $1\\text{ mole}$ of an ideal gas:\n1. Enthalpy is defined as: $H = U + PV = U + RT$.\n2. Differentiating with respect to temperature at constant pressure:\n$$\\left(\\frac{\\partial H}{\\partial T}\\right)_p = \\left(\\frac{\\partial U}{\\partial T}\\right)_p + R$$\n3. Since for an ideal gas $\\left(\\frac{\\partial U}{\\partial T}\\right)_p = \\left(\\frac{\\partial U}{\\partial T}\\right)_v = C_v$ and $\\left(\\frac{\\partial H}{\\partial T}\\right)_p = C_p$:\n$$C_p = C_v + R \\implies C_p - C_v = R$$\nThis is **Mayer's relation**."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In a cyclic process, a system undergoes a series of steps and returns to its initial state. The net change in internal energy ($\\Delta U$) over one complete cycle is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "Equal to the net work done ($w$)",
+            "Equal to the net heat absorbed ($q$)",
+            "Always positive"
+          ],
+          "correctOption": 0,
+          "solution": "1. Internal energy ($U$) is a state function whose value depends only on the initial and final states of the system.\n2. In a cyclic process, the initial and final states are identical ($U_f = U_i$).\n3. Therefore, the net change in internal energy over any complete cycle is zero:\n$$\\Delta U_{\\text{cyclic}} = \\oint dU = 0$$\n(Consequently, from the First Law: $q_{\\text{net}} = -w_{\\text{net}}$)."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] An open beaker containing boiling water is an example of which type of thermodynamic system?",
+          "image": "",
+          "options": [
+            "Open system",
+            "Closed system",
+            "Isolated system",
+            "Adiabatic system"
+          ],
+          "correctOption": 0,
+          "solution": "1. An **open system** can exchange both matter (water vapor escaping into the atmosphere) and energy (heat conducted through the walls and radiated) with its surroundings.\n2. A closed system can exchange only energy, not matter (e.g., water in a sealed metallic container).\n3. An isolated system can exchange neither energy nor matter (e.g., liquid in an ideal insulated thermos flask).\nTherefore, boiling water in an open beaker is an open system."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following processes represents an ISOCHORIC process?",
+          "image": "",
+          "options": [
+            "A reaction carried out in a rigid, sealed bomb calorimeter of fixed volume",
+            "A gas expanding reversibly at constant pressure",
+            "Heating a gas inside an open beaker at $1\\text{ atm}$",
+            "Reversible expansion at constant temperature"
+          ],
+          "correctOption": 0,
+          "solution": "1. An **isochoric process** occurs at constant volume ($\\Delta V = 0$).\n2. A rigid, closed bomb calorimeter maintains a fixed volume throughout the reaction, so $w = -\\int P_{\\text{ext}} dV = 0$ and $q_v = \\Delta U$.\n3. Constant pressure describes an isobaric process, and constant temperature describes an isothermal process."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] For which of the following chemical reactions is $\\Delta H$ equal to $\\Delta U$?",
+          "image": "",
+          "options": [
+            "$\\text{H}_2(g) + \\text{I}_2(g) \\rightleftharpoons 2\\text{HI}(g)$",
+            "$\\text{N}_2(g) + 3\\text{H}_2(g) \\rightarrow 2\\text{NH}_3(g)$",
+            "$\\text{PCl}_5(g) \\rightarrow \\text{PCl}_3(g) + \\text{Cl}_2(g)$",
+            "$2\\text{SO}_2(g) + \\text{O}_2(g) \\rightarrow 2\\text{SO}_3(g)$"
+          ],
+          "correctOption": 0,
+          "solution": "Enthalpy and internal energy changes are related by:\n$$\\Delta H = \\Delta U + \\Delta n_g RT$$\nFor $\\Delta H = \\Delta U$, we must have $\\Delta n_g = 0$.\nCalculate $\\Delta n_g$ for each reaction:\n1. $\\text{H}_2(g) + \\text{I}_2(g) \\rightleftharpoons 2\\text{HI}(g)$: $\\Delta n_g = 2 - (1 + 1) = 0 \\implies \\Delta H = \\Delta U$\n2. $\\text{N}_2(g) + 3\\text{H}_2(g) \\rightarrow 2\\text{NH}_3(g)$: $\\Delta n_g = 2 - 4 = -2$\n3. $\\text{PCl}_5(g) \\rightarrow \\text{PCl}_3(g) + \\text{Cl}_2(g)$: $\\Delta n_g = (1 + 1) - 1 = +1$\n4. $2\\text{SO}_2(g) + \\text{O}_2(g) \\rightarrow 2\\text{SO}_3(g)$: $\\Delta n_g = 2 - 3 = -1$\nTherefore, $\\Delta H = \\Delta U$ for $\\text{H}_2(g) + \\text{I}_2(g) \\rightleftharpoons 2\\text{HI}(g)$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The work done during the reversible isothermal expansion of an ideal gas is greater in magnitude than that during an irreversible isothermal expansion between the same initial and final volumes because:",
+          "image": "",
+          "options": [
+            "The external pressure at every stage in a reversible process is infinitesimally smaller than the internal gas pressure, maximizing the area under the P-V curve",
+            "Heat is converted completely to mass in irreversible processes",
+            "Reversible processes take an infinitely long time",
+            "Irreversible expansion experiences zero opposing force"
+          ],
+          "correctOption": 0,
+          "solution": "1. In an **irreversible expansion**, the gas expands against a constant, lower external pressure ($P_{\\text{ext}} < P_{\\text{int}}$), and work is $w = -P_{\\text{ext}}(V_2 - V_1)$.\n2. In a **reversible expansion**, the external pressure is continuously adjusted so that $P_{\\text{ext}} = P_{\\text{int}} - dP$ at every infinitesimal step, keeping the driving and opposing forces nearly equal.\n3. The work done is represented by the entire area under the $P-V$ isotherm ($w = -\\int_{V_1}^{V_2} P dV$), which is the maximum possible work obtainable from the system."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a monoatomic ideal gas, the values of molar heat capacity at constant volume ($C_v$) and constant pressure ($C_p$) are respectively:",
+          "image": "",
+          "options": [
+            "$\\frac{3}{2}R$ and $\\frac{5}{2}R$",
+            "$\\frac{5}{2}R$ and $\\frac{7}{2}R$",
+            "$\\frac{1}{2}R$ and $\\frac{3}{2}R$",
+            "$3R$ and $4R$"
+          ],
+          "correctOption": 0,
+          "solution": "For a monoatomic ideal gas (such as $\\text{He}, \\text{Ne}, \\text{Ar}$):\n1. It has $3$ translational degrees of freedom and zero rotational/vibrational degrees of freedom.\n2. By the equipartition theorem, its internal energy per mole is:\n$$U_m = \\frac{3}{2}RT$$\n3. Molar heat capacity at constant volume:\n$$C_v = \\left(\\frac{\\partial U_m}{\\partial T}\\right)_v = \\frac{3}{2}R$$\n4. From Mayer's relation ($C_p = C_v + R$):\n$$C_p = \\frac{3}{2}R + R = \\frac{5}{2}R$$\nTherefore, $C_v = \\frac{3}{2}R$ and $C_p = \\frac{5}{2}R$ (with ratio $\\gamma = \\frac{5}{3} \\approx 1.67$)."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A gas is compressed at a constant pressure of $2.0\\text{ atm}$ from an initial volume of $10.0\\text{ L}$ to a final volume of $4.0\\text{ L}$. In the process, $500\\text{ J}$ of heat is released to the surroundings. The change in internal energy ($\\Delta U$) is: (Take $1\\text{ L atm} = 101.3\\text{ J}$)",
+          "image": "",
+          "options": [
+            "$+715.6\\text{ J}$",
+            "$-715.6\\text{ J}$",
+            "$+1715.6\\text{ J}$",
+            "$-1715.6\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Work done during compression:\n$$w = -P_{\\text{ext}} \\Delta V = -2.0\\text{ atm} \\times (4.0\\text{ L} - 10.0\\text{ L}) = -2.0 \\times (-6.0) = +12.0\\text{ L atm}$$\nConvert to Joules:\n$$w = +12.0 \\times 101.3\\text{ J} = +1215.6\\text{ J}$$\n2. Heat released to surroundings: $q = -500\\text{ J}$.\n3. From the First Law:\n$$\\Delta U = q + w = -500\\text{ J} + 1215.6\\text{ J} = +715.6\\text{ J}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following pairs contains only EXTENSIVE properties?",
+          "image": "",
+          "options": [
+            "Volume and Heat capacity",
+            "Temperature and Pressure",
+            "Viscosity and Refractive index",
+            "Surface tension and Density"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Extensive properties** depend on the total quantity of matter in the sample (e.g., mass, volume, internal energy, enthalpy, heat capacity, mole number).\n2. **Intensive properties** are independent of the amount of matter (e.g., temperature, pressure, density, viscosity, surface tension, refractive index, molar heat capacity).\nTherefore, Volume and Heat capacity are both extensive properties."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An ideal gas expands isothermally from $1.0\\text{ L}$ to $10.0\\text{ L}$ at $300\\text{ K}$ against a constant external pressure of $1.0\\text{ bar}$. The change in internal energy ($\\Delta U$) of the gas during this process is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$-9.0\\text{ bar L}$",
+            "$+9.0\\text{ bar L}$",
+            "$-2.303 \\times 300 R$"
+          ],
+          "correctOption": 0,
+          "solution": "1. According to Joule's law, the internal energy of an ideal gas depends solely on its temperature:\n$$\\Delta U = n C_v \\Delta T$$\n2. Because the process is **isothermal**, the temperature remains strictly constant ($\\Delta T = 0$).\n3. Consequently, for any isothermal process involving an ideal gas (whether reversible or irreversible):\n$$\\Delta U = 0$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a diatomic ideal gas (such as $\\text{O}_2$ or $\\text{N}_2$) without vibrational modes, the ratio of heat capacities $\\gamma = \\frac{C_p}{C_v}$ is:",
+          "image": "",
+          "options": [
+            "$\\frac{7}{5} = 1.40$",
+            "$\\frac{5}{3} = 1.67$",
+            "$\\frac{4}{3} = 1.33$",
+            "$\\frac{9}{7} = 1.28$"
+          ],
+          "correctOption": 0,
+          "solution": "For a rigid diatomic gas at room temperature:\n1. It has $3$ translational and $2$ rotational degrees of freedom (total $5$ degrees of freedom):\n$$U_m = \\frac{5}{2}RT$$\n2. Molar heat capacities:\n$$C_v = \\frac{5}{2}R$$\n$$C_p = C_v + R = \\frac{5}{2}R + R = \\frac{7}{2}R$$\n3. The ratio of heat capacities is:\n$$\\gamma = \\frac{C_p}{C_v} = \\frac{7/2 R}{5/2 R} = \\frac{7}{5} = 1.40$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In an isobaric process, the heat absorbed by an ideal gas ($q_p$) is equal to the change in its:",
+          "image": "",
+          "options": [
+            "Enthalpy ($\\Delta H$)",
+            "Internal energy ($\\Delta U$)",
+            "Work done ($w$)",
+            "Temperature ($\\Delta T$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. From the First Law of Thermodynamics: $\\Delta U = q_p + w$.\n2. At constant pressure, expansion work is $w = -P \\Delta V$.\n3. Therefore:\n$$q_p = \\Delta U + P \\Delta V$$\n4. By definition, enthalpy is $H = U + PV$. At constant pressure:\n$$\\Delta H = \\Delta U + P \\Delta V$$\n5. Thus, heat absorbed at constant pressure equals the enthalpy change: $q_p = \\Delta H$.\n(Similarly, heat absorbed at constant volume equals the internal energy change: $q_v = \\Delta U$)."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] When $1.0\\text{ mole}$ of liquid water at $100^\\circ\\text{C}$ is converted into steam at $100^\\circ\\text{C}$ and $1\\text{ atm}$ pressure, the heat of vaporization is $\\Delta H_{\\text{vap}} = 40.66\\text{ kJ/mol}$. The work done by the system during this phase transition is approximately: (Take $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$, volume of liquid water is negligible compared to steam)",
+          "image": "",
+          "options": [
+            "$-3.10\\text{ kJ}$",
+            "$+3.10\\text{ kJ}$",
+            "$-40.66\\text{ kJ}$",
+            "$0\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For the vaporization of water:\n$$\\text{H}_2\\text{O}(l) \\rightarrow \\text{H}_2\\text{O}(g)$$\n$$\\Delta n_g = 1 - 0 = 1\\text{ mol}$$\n2. Assuming water vapor behaves as an ideal gas and neglecting the volume of liquid water:\n$$w = -P \\Delta V = -\\Delta n_g RT$$\n3. At $T = 100^\\circ\\text{C} = 373.15\\text{ K}$:\n$$w = -(1\\text{ mol}) \\times (8.314\\text{ J K}^{-1}\\text{ mol}^{-1}) \\times 373.15\\text{ K} = -3102.4\\text{ J} \\approx -3.10\\text{ kJ}$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following mathematical equations represents the First Law of Thermodynamics according to the IUPAC convention?",
+          "image": "",
+          "options": [
+            "$\\Delta U = q + w$",
+            "$\\Delta U = q - w$",
+            "$\\Delta H = q + w$",
+            "$q = \\Delta U + \\Delta H$"
+          ],
+          "correctOption": 0,
+          "solution": "Under the IUPAC convention:\n- $q$ is positive when heat is absorbed by the system\n- $w$ is positive when work is done on the system\n- The change in internal energy is the sum of both energy inputs:\n$$\\Delta U = q + w$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] When an ideal gas undergoes reversible adiabatic expansion, the temperature of the gas:",
+          "image": "",
+          "options": [
+            "Decreases, because the system does work at the expense of its own internal energy",
+            "Increases, because heat is absorbed from the surroundings",
+            "Remains constant, because no heat enters or leaves the system",
+            "Becomes zero"
+          ],
+          "correctOption": 0,
+          "solution": "1. In an adiabatic process, $q = 0$.\n2. During expansion, work is done by the gas against the opposing pressure, so $w < 0$.\n3. From the First Law: $\\Delta U = w < 0$.\n4. For an ideal gas: $\\Delta U = n C_v \\Delta T$. Since $\\Delta U$ is negative, $\\Delta T < 0$.\nTherefore, the temperature of the gas decreases (cooling effect)."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For the reaction:\n$$\\text{C}(s) + 2\\text{H}_2(g) \\rightarrow \\text{CH}_4(g)$$\nThe relation between $\\Delta H$ and $\\Delta U$ at constant temperature $T$ is:",
+          "image": "",
+          "options": [
+            "$\\Delta H = \\Delta U - RT$",
+            "$\\Delta H = \\Delta U + RT$",
+            "$\\Delta H = \\Delta U - 2RT$",
+            "$\\Delta H = \\Delta U$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Identify the number of moles of gaseous products and reactants:\n- Products: $1\\text{ mol of } \\text{CH}_4(g)$\n- Reactants: $2\\text{ moles of } \\text{H}_2(g)$ (solid carbon is ignored)\n$$\\Delta n_g = 1 - 2 = -1$$\n2. Using the equation $\\Delta H = \\Delta U + \\Delta n_g RT$:\n$$\\Delta H = \\Delta U + (-1)RT = \\Delta U - RT$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] One mole of an ideal gas expands into a vacuum from $1.0\\text{ L}$ to $5.0\\text{ L}$. The work done is:",
+          "image": "",
+          "options": [
+            "Zero",
+            "$-4.0\\text{ L atm}$",
+            "$+4.0\\text{ L atm}$",
+            "$-2.303 RT \\log_{10}(5)$"
+          ],
+          "correctOption": 0,
+          "solution": "Expansion into a vacuum is free expansion:\n1. The external opposing pressure is zero: $P_{\\text{ext}} = 0$.\n2. Work done is:\n$$w = -P_{\\text{ext}} \\Delta V = 0 \\times (5.0 - 1.0) = 0$$\nThus, the work done is zero."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following sets consists solely of INTENSIVE properties?",
+          "image": "",
+          "options": [
+            "Temperature, Pressure, and Specific heat capacity",
+            "Mass, Volume, and Internal energy",
+            "Enthalpy, Entropy, and Temperature",
+            "Heat capacity, Volume, and Mole number"
+          ],
+          "correctOption": 0,
+          "solution": "1. Temperature and pressure are independent of the amount of matter (intensive).\n2. Total heat capacity ($C$) is extensive, but **specific heat capacity** (heat capacity per unit mass, $c = \\frac{C}{m}$) is intensive.\n3. Mass, volume, internal energy, enthalpy, and entropy all depend directly on the size of the system and are extensive properties.\nTherefore, Option A contains only intensive properties."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the complete combustion of $1.0\\text{ mole}$ of ethanol at $298\\text{ K}$:\n$$\\text{C}_2\\text{H}_5\\text{OH}(l) + 3\\text{O}_2(g) \\rightarrow 2\\text{CO}_2(g) + 3\\text{H}_2\\text{O}(l)$$\nIf $\\Delta U = -1364.47\\text{ kJ/mol}$, calculate $\\Delta H$: (Take $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$-1366.95\\text{ kJ/mol}$",
+            "$-1361.99\\text{ kJ/mol}$",
+            "$-1364.47\\text{ kJ/mol}$",
+            "$-1369.43\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate $\\Delta n_g$ for the balanced reaction:\n$$\\Delta n_g = n_g(\\text{products}) - n_g(\\text{reactants}) = 2 - 3 = -1$$\n2. Calculate $\\Delta n_g RT$ in $\\text{kJ}$:\n$$\\Delta n_g RT = (-1) \\times (8.314\\text{ J K}^{-1}\\text{ mol}^{-1}) \\times 298\\text{ K} = -2477.57\\text{ J} = -2.48\\text{ kJ}$$\n3. Use $\\Delta H = \\Delta U + \\Delta n_g RT$:\n$$\\Delta H = -1364.47 + (-2.48) = -1366.95\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following conditions corresponds to a REVERSIBLE thermodynamic process?",
+          "image": "",
+          "options": [
+            "The driving force is only infinitesimally greater than the opposing force at every stage, allowing the process to be reversed at any point",
+            "The process takes place rapidly in a single step",
+            "The system is never in equilibrium with the surroundings",
+            "The external opposing force is zero throughout"
+          ],
+          "correctOption": 0,
+          "solution": "A **quasi-static reversible process** is an idealized process carried out so slowly that the system remains in thermodynamic equilibrium with its surroundings at every moment.\nThe driving force and opposing force differ only by an infinitesimal amount ($dP$), so an infinitesimal change in opposing conditions can reverse the direction of the process."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In an isothermal expansion of an ideal gas from volume $V_1$ to $V_2$, the work done is $w_1$ when carried out reversibly and $w_2$ when carried out irreversibly against a constant external pressure $P_2$. The relation between their magnitudes is:",
+          "image": "",
+          "options": [
+            "$|w_1| > |w_2|$",
+            "$|w_1| < |w_2|$",
+            "$|w_1| = |w_2|$",
+            "$w_1 = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. During expansion, work is done by the system ($w < 0$).\n2. The reversible work corresponds to the full area under the continuous isotherm on a $P-V$ diagram ($|w_{\\text{rev}}| = nRT \\ln(V_2/V_1)$).\n3. The irreversible work against constant external pressure $P_2$ corresponds only to the rectangular area $|w_{\\text{irrev}}| = P_2(V_2 - V_1)$.\n4. Graphically and mathematically, the area under the reversible curve is always greater than the rectangular area for irreversible expansion:\n$$|w_{\\text{rev}}| > |w_{\\text{irrev}}| \\implies |w_1| > |w_2|$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The internal energy of an ideal gas depends ONLY on its:",
+          "image": "",
+          "options": [
+            "Temperature",
+            "Pressure",
+            "Volume",
+            "Density"
+          ],
+          "correctOption": 0,
+          "solution": "1. For an ideal gas, there are no intermolecular forces of attraction or repulsion between molecules.\n2. Consequently, potential energy is zero, and the internal energy consists entirely of translational, rotational, and vibrational kinetic energy of the molecules.\n3. Since molecular kinetic energy depends directly on absolute temperature ($U = \\frac{f}{2} nRT$):\n$$\\left(\\frac{\\partial U}{\\partial V}\\right)_T = 0 \\quad \\text{and} \\quad \\left(\\frac{\\partial U}{\\partial P}\\right)_T = 0$$\nTherefore, the internal energy of an ideal gas is a function of temperature alone (Joule's Law)."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] If $50\\text{ J}$ of heat is supplied to a system and $20\\text{ J}$ of work is done ON the system, the change in internal energy is:",
+          "image": "",
+          "options": [
+            "$+70\\text{ J}$",
+            "$+30\\text{ J}$",
+            "$-30\\text{ J}$",
+            "$-70\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "According to the IUPAC convention:\n- Heat supplied to system: $q = +50\\text{ J}$\n- Work done on system: $w = +20\\text{ J}$\nFrom the First Law:\n$$\\Delta U = q + w = +50\\text{ J} + (+20\\text{ J}) = +70\\text{ J}$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A closed thermos flask containing coffee is shaken vigorously. Considering the coffee as the system, which of the following is correct?",
+          "image": "",
+          "options": [
+            "$q = 0, \\quad w > 0, \\quad \\text{and} \\quad \\Delta U > 0$",
+            "$q > 0, \\quad w = 0, \\quad \\text{and} \\quad \\Delta U > 0$",
+            "$q = 0, \\quad w = 0, \\quad \\text{and} \\quad \\Delta U = 0$",
+            "$q < 0, \\quad w > 0, \\quad \\text{and} \\quad \\Delta U = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Because the thermos flask is insulated, no heat enters or leaves the system: $q = 0$.\n2. Shaking the flask involves mechanical work done on the coffee against internal viscous fluid forces: $w > 0$.\n3. From the First Law: $\\Delta U = q + w = 0 + w > 0$.\nAs a result, the internal energy increases and the temperature of the coffee rises slightly."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] What is the work done when $1.0\\text{ mole}$ of an ideal gas expands into an evacuated chamber of volume $10\\text{ L}$?",
+          "image": "",
+          "options": [
+            "Zero",
+            "$-10\\text{ J}$",
+            "$+10\\text{ J}$",
+            "$-22.4\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "Expansion into an evacuated chamber is free expansion against vacuum ($P_{\\text{ext}} = 0$):\n$$w = -P_{\\text{ext}} \\Delta V = -0 \\times \\Delta V = 0$$\nNo work is performed during free expansion."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] For the reaction $\\text{N}_2\\text{O}_4(g) \\rightleftharpoons 2\\text{NO}_2(g)$, the value of $(\\Delta H - \\Delta U)$ at $300\\text{ K}$ is: (Take $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$+2.494\\text{ kJ}$",
+            "$-2.494\\text{ kJ}$",
+            "$+4.988\\text{ kJ}$",
+            "$0\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate $\\Delta n_g$:\n$$\\Delta n_g = 2 - 1 = +1$$\n2. Use the relation:\n$$\\Delta H - \\Delta U = \\Delta n_g RT = (+1) \\times (8.314\\text{ J K}^{-1}\\text{ mol}^{-1}) \\times 300\\text{ K}$$\n$$\\Delta H - \\Delta U = +2494.2\\text{ J} = +2.494\\text{ kJ}$$\n(Enthalpy change is greater than internal energy change due to work done during gas expansion)."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following relationships defines the enthalpy ($H$) of a system?",
+          "image": "",
+          "options": [
+            "$H = U + PV$",
+            "$H = U - PV$",
+            "$H = q + w$",
+            "$H = U + TS$"
+          ],
+          "correctOption": 0,
+          "solution": "By thermodynamic definition, enthalpy ($H$, total heat content) is defined as the sum of the internal energy ($U$) and the pressure-volume product ($PV$):\n$$H = U + PV$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] During an adiabatic reversible process for an ideal gas, the relation between pressure ($P$) and volume ($V$) is:",
+          "image": "",
+          "options": [
+            "$P V^\\gamma = \\text{constant}$",
+            "$P V = \\text{constant}$",
+            "$P^\\gamma V = \\text{constant}$",
+            "$P V^{\\gamma - 1} = \\text{constant}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a reversible adiabatic process involving an ideal gas:\n1. $P V^\\gamma = \\text{constant}$\n2. $T V^{\\gamma - 1} = \\text{constant}$\n3. $T^\\gamma P^{1 - \\gamma} = \\text{constant}$\nwhere $\\gamma = \\frac{C_p}{C_v}$ is the Poisson ratio (heat capacity ratio)."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A sample of gas is compressed from $4.0\\text{ L}$ to $2.0\\text{ L}$ under an external pressure of $5.0\\text{ atm}$. The work done on the gas in Joules is: (Take $1\\text{ L atm} = 101.3\\text{ J}$)",
+          "image": "",
+          "options": [
+            "$+1013\\text{ J}$",
+            "$-1013\\text{ J}$",
+            "$+506.5\\text{ J}$",
+            "$-506.5\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Work done is:\n$$w = -P_{\\text{ext}} \\Delta V = -5.0\\text{ atm} \\times (2.0\\text{ L} - 4.0\\text{ L}) = -5.0 \\times (-2.0) = +10.0\\text{ L atm}$$\n2. Convert to Joules:\n$$w = +10.0 \\times 101.3\\text{ J} = +1013\\text{ J}$$\n(Work is positive because work is done ON the gas during compression)."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An endothermic reaction is carried out at constant volume in a bomb calorimeter. Which of the following is correct?",
+          "image": "",
+          "options": [
+            "$w = 0 \\quad \\text{and} \\quad \\Delta U = q_v > 0$",
+            "$w > 0 \\quad \\text{and} \\quad \\Delta U = 0$",
+            "$q = 0 \\quad \\text{and} \\quad \\Delta U = w$",
+            "$\\Delta U < 0 \\quad \\text{and} \\quad w < 0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In a bomb calorimeter, the volume is constant ($\\Delta V = 0$), so $w = -P \\Delta V = 0$.\n2. From the First Law: $\\Delta U = q_v + w = q_v + 0 = q_v$.\n3. For an endothermic reaction, heat is absorbed by the system, so $q_v > 0$.\nTherefore, $\\Delta U = q_v > 0$."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following statements regarding heat capacity is INCORRECT?",
+          "image": "",
+          "options": [
+            "For an isothermal process, the heat capacity of an ideal gas is zero",
+            "For an adiabatic process, the heat capacity is zero",
+            "Heat capacity at constant pressure is greater than that at constant volume ($C_p > C_v$)",
+            "Specific heat capacity is an intensive property"
+          ],
+          "correctOption": 0,
+          "solution": "Heat capacity is defined as $C = \\frac{q}{\\Delta T}$:\n1. For an **isothermal process**, temperature is constant ($\\Delta T = 0$), so:\n$$C = \\frac{q}{0} = \\infty$$\nTherefore, heat capacity is infinite, NOT zero. Statement A is incorrect.\n2. For an adiabatic process, $q = 0$, so $C = \\frac{0}{\\Delta T} = 0$.\n3. $C_p > C_v$ because at constant pressure, a portion of the supplied heat is expended as work of expansion against the atmosphere."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] If a system does $40\\text{ J}$ of work while absorbing $70\\text{ J}$ of heat, the change in internal energy is:",
+          "image": "",
+          "options": [
+            "$+30\\text{ J}$",
+            "$+110\\text{ J}$",
+            "$-30\\text{ J}$",
+            "$-110\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "According to IUPAC conventions:\n- Heat absorbed by the system: $q = +70\\text{ J}$\n- Work done by the system: $w = -40\\text{ J}$\n$$\\Delta U = q + w = +70 + (-40) = +30\\text{ J}$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The enthalpy of formation of all elements in their standard states at $298\\text{ K}$ and $1\\text{ bar}$ is assigned as:",
+          "image": "",
+          "options": [
+            "Zero",
+            "Positive",
+            "Negative",
+            "Equal to their bond dissociation enthalpy"
+          ],
+          "correctOption": 0,
+          "solution": "By thermodynamic convention, the standard molar enthalpy of formation ($\\Delta_f H^\\circ$) of every pure element in its most stable physical form (reference standard state) at $298.15\\text{ K}$ and $1\\text{ bar}$ pressure is arbitrarily defined as **zero** (e.g., $\\text{O}_2(g), \\text{C}(\\text{graphite}), \\text{S}_8(\\text{rhombic}), \\text{Br}_2(l)$)."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In an adiabatic expansion of an ideal gas against a constant external pressure, which of the following is correct?",
+          "image": "",
+          "options": [
+            "$\\Delta U < 0$",
+            "$\\Delta U > 0$",
+            "$\\Delta U = 0$",
+            "$\\Delta T = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In an adiabatic process: $q = 0$.\n2. During expansion, work is done by the gas on the surroundings ($w < 0$).\n3. From the First Law:\n$$\\Delta U = q + w = 0 + w = w < 0$$\nTherefore, $\\Delta U < 0$ (internal energy decreases)."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the reaction $\\text{NH}_4\\text{HS}(s) \\rightleftharpoons \\text{NH}_3(g) + \\text{H}_2\\text{S}(g)$, the value of $(\\Delta H - \\Delta U)$ at temperature $T$ is:",
+          "image": "",
+          "options": [
+            "$+2RT$",
+            "$-2RT$",
+            "$+RT$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the reaction, solid ammonium hydrogen sulfide decomposes into two gaseous species:\n$$\\Delta n_g = n_g(\\text{products}) - n_g(\\text{reactants}) = (1 + 1) - 0 = 2$$\n2. Therefore:\n$$\\Delta H - \\Delta U = \\Delta n_g RT = +2RT$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A gas is allowed to expand isothermally and reversibly from volume $V_1$ to $V_2$, and then compressed back to $V_1$ isothermally and irreversibly against a constant external pressure $P_1$. Over the entire two-step cycle:",
+          "image": "",
+          "options": [
+            "$\\Delta U = 0 \\quad \\text{and} \\quad w_{\\text{net}} > 0$",
+            "$\\Delta U = 0 \\quad \\text{and} \\quad w_{\\text{net}} < 0$",
+            "$\\Delta U > 0 \\quad \\text{and} \\quad w_{\\text{net}} = 0$",
+            "$\\Delta U < 0 \\quad \\text{and} \\quad w_{\\text{net}} > 0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Since the system returns to its initial state, internal energy is conserved over the complete cycle:\n$$\\Delta U_{\\text{net}} = 0$$\n2. Work of reversible expansion: $w_{\\text{exp}} = -nRT \\ln(V_2/V_1) < 0$.\n3. Work of irreversible compression against higher pressure $P_1$: $w_{\\text{comp}} = -P_1(V_1 - V_2) = P_1(V_2 - V_1) > 0$.\n4. Because compression against a constant external pressure requires more work than is produced during reversible expansion ($|w_{\\text{comp}}| > |w_{\\text{exp}}|$):\n$$w_{\\text{net}} = w_{\\text{exp}} + w_{\\text{comp}} > 0$$\nNet work is done on the system, which is dissipated as heat to the surroundings ($q_{\\text{net}} < 0$)."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Under what condition does the change in enthalpy ($\\Delta H$) become IDENTICAL to the change in internal energy ($\\Delta U$) for any chemical reaction?",
+          "image": "",
+          "options": [
+            "When the reaction is carried out in a closed, rigid container with $\\Delta V = 0$, or when $\\Delta n_g = 0$",
+            "When the temperature is zero Kelvin",
+            "When the reaction is carried out in an open container at atmospheric pressure",
+            "When the reaction is exothermic"
+          ],
+          "correctOption": 0,
+          "solution": "From the fundamental relation:\n$$\\Delta H = \\Delta U + \\Delta(PV)$$\n1. For chemical reactions involving gases, $\\Delta(PV) \\approx \\Delta n_g RT$. If the net change in gaseous moles is zero ($\\Delta n_g = 0$), then $\\Delta H = \\Delta U$.\n2. For reactions involving only condensed phases (solids and liquids), the volume change is negligible ($\\Delta V \\approx 0$), so $P \\Delta V \\approx 0$ and $\\Delta H \\approx \\Delta U$.\n3. If a process is constrained to a rigid container where volume cannot change ($\\Delta V = 0$), no expansion work can occur.\nThus, Option A represents the exact condition."
+        }
+      ]
+    }
+  ]
+}

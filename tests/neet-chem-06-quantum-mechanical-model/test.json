@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-06-quantum-mechanical-model",
+  "title": "Quantum Mechanical Model (Quantum Numbers, Orbitals, & Shapes of s, p, and d Orbitals)",
+  "syllabus": "Quantum mechanical model of atom: Schrödinger wave equation (qualitative concept), wave function (ψ), physical significance of probability density (|ψ|²); Concept of atomic orbital; Quantum numbers: Principal (n), Azimuthal / Orbital angular momentum (l), Magnetic (m_l), and Spin (m_s); Energy levels, subshells, and spatial orientation of orbitals; Shapes of atomic orbitals: s (spherical), p (dumb-bell), d (double dumb-bell and d_z² with ring); Radial and angular wave functions; Nodes: Radial nodes (n - l - 1), Angular nodes (l), and Total nodes (n - 1); Nodal planes and nodal surfaces; Degeneracy of orbitals; Orbital angular momentum (L = √[l(l+1)] ħ); Spin magnetic moment (μ_s = √[n(n+2)] BM); Rules for filling electrons in orbitals: Aufbau principle, Pauli exclusion principle, and Hund's rule of maximum multiplicity; Electronic configurations of atoms and exceptional configurations (Cr, Cu)",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The total number of radial nodes and angular nodes present in a $4d$ orbital are respectively:",
+          "image": "",
+          "options": [
+            "$1$ and $2$",
+            "$2$ and $1$",
+            "$2$ and $2$",
+            "$1$ and $1$"
+          ],
+          "correctOption": 0,
+          "solution": "For a $4d$ orbital:\n1. Principal quantum number $n = 4$\n2. Azimuthal quantum number $l = 2$ (since for $s, p, d, f$, $l = 0, 1, 2, 3$)\n- Number of angular nodes $= l = 2$\n- Number of radial nodes (spherical nodes) $= n - l - 1 = 4 - 2 - 1 = 1$\n- Total number of nodes $= n - 1 = 4 - 1 = 3$ (where $1\\text{ radial} + 2\\text{ angular} = 3$)\nTherefore, the number of radial and angular nodes are $1$ and $2$ respectively."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following sets of quantum numbers represents an IMPOSSIBLE arrangement for an electron in an isolated atom?",
+          "image": "",
+          "options": [
+            "$n = 3, l = 3, m_l = 0, m_s = +\\frac{1}{2}$",
+            "$n = 3, l = 2, m_l = -2, m_s = -\\frac{1}{2}$",
+            "$n = 4, l = 0, m_l = 0, m_s = +\\frac{1}{2}$",
+            "$n = 5, l = 3, m_l = -1, m_s = -\\frac{1}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "The permissible values of quantum numbers are:\n1. $n = 1, 2, 3, \\dots$\n2. $l = 0, 1, 2, \\dots, (n - 1)$\n3. $m_l = -l, \\dots, 0, \\dots, +l$ (total $2l + 1$ values)\n4. $m_s = +\\frac{1}{2} \\text{ or } -\\frac{1}{2}$\nIn Option A, $n = 3$ and $l = 3$. The azimuthal quantum number $l$ can take maximum value of $n - 1 = 3 - 1 = 2$. It can never be equal to or greater than $n$. Hence, this combination is strictly forbidden."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The orbital angular momentum of an electron residing in a $3p$ orbital is:",
+          "image": "",
+          "options": [
+            "$\\sqrt{2}\\ \\frac{h}{2\\pi}$",
+            "$\\sqrt{6}\\ \\frac{h}{2\\pi}$",
+            "$\\frac{h}{2\\pi}$",
+            "$\\sqrt{3}\\ \\frac{h}{2\\pi}$"
+          ],
+          "correctOption": 0,
+          "solution": "The orbital angular momentum ($L$) of an electron depends solely on the azimuthal quantum number $l$ and is given by:\n$$L = \\sqrt{l(l + 1)}\\ \\hbar = \\sqrt{l(l + 1)}\\ \\frac{h}{2\\pi}$$\nFor any $p$-subshell ($l = 1$):\n$$L = \\sqrt{1(1 + 1)}\\ \\frac{h}{2\\pi} = \\sqrt{2}\\ \\frac{h}{2\\pi}$$\n(Notice that orbital angular momentum is independent of the principal quantum number $n$)."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following $d$-orbitals possesses a doughnut-shaped ring (torus) of high electron density in the $xy$-plane and two lobes along the $z$-axis?",
+          "image": "",
+          "options": [
+            "$d_{z^2}$",
+            "$d_{x^2-y^2}$",
+            "$d_{xy}$",
+            "$d_{xz}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Four of the five $d$-orbitals ($d_{xy}, d_{yz}, d_{zx},$ and $d_{x^2-y^2}$) have a cloverleaf (double dumb-bell) shape containing four directional lobes and two nodal planes.\n2. The fifth orbital, $d_{z^2}$, has a unique geometry consisting of two prominent lobes oriented along the positive and negative $z$-axis and a donut-shaped (doughnut / collar / torus) ring of high electron probability density concentrated in the $xy$-plane.\n3. It possesses two conical nodal surfaces rather than planar nodal planes."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The maximum number of electrons that can be accommodated in a subshell designated by the quantum numbers $n = 4$ and $l = 3$ is:",
+          "image": "",
+          "options": [
+            "$14$",
+            "$10$",
+            "$6$",
+            "$32$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $l = 3$, the subshell is designated as the $4f$ subshell.\n2. The number of orbitals in a subshell with azimuthal quantum number $l$ is $2l + 1$:\n$$\\text{Number of orbitals} = 2(3) + 1 = 7\\text{ orbitals}$$\n3. According to Pauli's exclusion principle, each orbital can hold a maximum of $2$ electrons with opposite spins:\n$$\\text{Maximum electrons} = 2(2l + 1) = 2 \\times 7 = 14\\text{ electrons}$$\n(Note: $32$ is the capacity of the entire $n = 4$ shell, not the $l = 3$ subshell)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the physical significance of the square of the wave function, $|\\psi|^2$, at any point around the nucleus?",
+          "image": "",
+          "options": [
+            "It represents the probability density of finding the electron per unit volume at that point",
+            "It gives the exact radial velocity of the electron",
+            "It represents the total mechanical energy of the electron",
+            "It represents the amplitude of the electron matter wave"
+          ],
+          "correctOption": 0,
+          "solution": "According to Max Born's probabilistic interpretation of quantum mechanics:\n1. The wave function $\\psi$ itself is an amplitude function and has no direct physical meaning; it can be positive, negative, or complex.\n2. The square of the absolute value of the wave function, $|\\psi|^2$ (or $\\psi \\psi^*$), represents the **probability density** (probability of finding the electron per unit volume) in an infinitesimal volume element $d\\tau$ around that point:\n$$\\text{Probability} = |\\psi|^2 d\\tau$$\nRegions where $|\\psi|^2$ is maximum define atomic orbitals."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The correct order of energy for the following orbitals in a multi-electron atom according to the $(n + l)$ rule is:\n(I) $4d$\n(II) $5p$\n(III) $5s$\n(IV) $4f$",
+          "image": "",
+          "options": [
+            "(III) < (I) < (II) < (IV)",
+            "(III) < (II) < (I) < (IV)",
+            "(I) < (III) < (II) < (IV)",
+            "(III) < (I) < (IV) < (II)"
+          ],
+          "correctOption": 0,
+          "solution": "According to the Aufbau principle / $(n + l)$ rule:\n- Lower $(n + l)$ value corresponds to lower orbital energy.\n- If two orbitals have identical $(n + l)$ values, the one with lower $n$ has lower energy.\nCalculate $(n + l)$ values:\n1. (III) $5s$: $n = 5, l = 0 \\implies n + l = 5 + 0 = 5$\n2. (I) $4d$: $n = 4, l = 2 \\implies n + l = 4 + 2 = 6$\n3. (II) $5p$: $n = 5, l = 1 \\implies n + l = 5 + 1 = 6$\nBetween $4d$ and $5p$ (both $n + l = 6$), $4d$ has smaller $n = 4$, so $E(4d) < E(5p)$.\n4. (IV) $4f$: $n = 4, l = 3 \\implies n + l = 4 + 3 = 7$\nArranging in ascending order of energy:\n$$5s\\ (5) < 4d\\ (6) < 5p\\ (6) < 4f\\ (7)$$\n$$\\text{Order: } (III) < (I) < (II) < (IV)$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following pairs of $d$-orbitals has electron density concentrated directly ALONG the Cartesian coordinate axes?",
+          "image": "",
+          "options": [
+            "$d_{x^2-y^2}$ and $d_{z^2}$",
+            "$d_{xy}$ and $d_{yz}$",
+            "$d_{xy}$ and $d_{x^2-y^2}$",
+            "$d_{yz}$ and $d_{zx}$"
+          ],
+          "correctOption": 0,
+          "solution": "The five $d$-orbitals are classified into two symmetry groups based on orientation relative to axes:\n1. **Axial orbitals ($e_g$ set):** Lobes lie directly along the Cartesian axes:\n- $d_{x^2-y^2}$: Lobes lie directly along the $x$ and $y$ axes.\n- $d_{z^2}$: Lobes lie directly along the $z$-axis (with an equatorial ring in the $xy$-plane).\n2. **Non-axial orbitals ($t_{2g}$ set):** $d_{xy}, d_{yz},$ and $d_{zx}$ have lobes lying in between the coordinate axes (at $45^\\circ$ to the axes).\nTherefore, $d_{x^2-y^2}$ and $d_{z^2}$ have their electron density directed along the axes."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The number of angular nodes (nodal planes) for a $p_z$ orbital is:",
+          "image": "",
+          "options": [
+            "$1$ (the $xy$-plane)",
+            "$0$",
+            "$2$ (the $yz$ and $xz$-planes)",
+            "$1$ (the $yz$-plane)"
+          ],
+          "correctOption": 0,
+          "solution": "1. The number of angular nodes for any atomic orbital is equal to its azimuthal quantum number $l$.\n2. For a $p$ orbital, $l = 1$, so there is exactly $1$ angular node (nodal plane).\n3. For $p_z$, the two lobes lie along the $z$-axis (above and below the $xy$-plane). The probability of finding the electron is strictly zero in the perpendicular plane containing the nucleus, which is the **$xy$-plane** ($z = 0$).\n(Similarly, for $p_x$ the nodal plane is the $yz$-plane, and for $p_y$ it is the $xz$-plane)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The total number of orbitals associated with the principal quantum shell $n = 4$ is:",
+          "image": "",
+          "options": [
+            "$16$",
+            "$32$",
+            "$8$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "The total number of orbitals in a shell with principal quantum number $n$ is given by $n^2$:\n$$\\text{Total orbitals} = n^2 = 4^2 = 16$$\nBreakdown by subshells:\n- $l = 0$ ($4s$): $1$ orbital\n- $l = 1$ ($4p$): $3$ orbitals\n- $l = 2$ ($4d$): $5$ orbitals\n- $l = 3$ ($4f$): $7$ orbitals\n$$\\text{Sum} = 1 + 3 + 5 + 7 = 16\\text{ orbitals}$$\n(The maximum electron capacity is $2n^2 = 2(16) = 32$ electrons)."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Two electrons occupying the same atomic orbital are distinguished from each other by their:",
+          "image": "",
+          "options": [
+            "Spin quantum number ($m_s$)",
+            "Principal quantum number ($n$)",
+            "Azimuthal quantum number ($l$)",
+            "Magnetic quantum number ($m_l$)"
+          ],
+          "correctOption": 0,
+          "solution": "According to **Pauli's Exclusion Principle**:\n'No two electrons in an isolated atom can have the identical set of all four quantum numbers.'\nIf two electrons occupy the exact same spatial orbital, they share the same:\n- Principal quantum number ($n$)\n- Azimuthal quantum number ($l$)\n- Magnetic quantum number ($m_l$)\nTo satisfy Pauli's principle, they must differ in their fourth quantum number, the **spin quantum number** ($m_s$), which must have opposite values: $+1/2$ and $-1/2$ (paired spins)."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For a hydrogen atom, which of the following statements regarding the energies of orbitals is TRUE?",
+          "image": "",
+          "options": [
+            "The energies of $3s, 3p,$ and $3d$ orbitals are identical (degenerate)",
+            "The energy of $3s$ is lower than $3p$, which is lower than $3d$",
+            "The energy of $4s$ is strictly lower than $3d$",
+            "The energy depends on both $n$ and $l$ through the $(n + l)$ rule"
+          ],
+          "correctOption": 0,
+          "solution": "1. In a single-electron system like the hydrogen atom (or $\\text{He}^+, \\text{Li}^{2+}$), there are no inter-electronic repulsions or shielding/screening effects.\n2. As a consequence, the energy of an electron is governed solely by the principal quantum number $n$ ($E_n = -\\frac{13.6}{n^2}\\text{ eV}$) and is independent of the azimuthal quantum number $l$.\n3. Therefore, for hydrogen, all subshells belonging to the same shell have identical energies:\n$$E(3s) = E(3p) = E(3d)$$\n(The $(n + l)$ rule applies only to multi-electron atoms where electron shielding splits subshell energies)."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An atomic orbital has $n = 3, l = 1,$ and $m_l = 0$. The orbital is designated as:",
+          "image": "",
+          "options": [
+            "$3p_z$",
+            "$3s$",
+            "$3d_{z^2}$",
+            "$3p_x$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $n = 3$ designates the third principal shell.\n2. $l = 1$ designates a $p$-subshell ($3p$).\n3. By convention in standard quantum mechanics, $m_l = 0$ corresponds to the orbital oriented along the internuclear/quantization $z$-axis, which is the **$3p_z$** orbital.\n(The $m_l = \\pm 1$ values correspond to linear combinations forming $p_x$ and $p_y$)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The ground-state electronic configuration of chromium ($Z = 24$) is $[\text{Ar}] 3d^5 4s^1$ instead of $[\text{Ar}] 3d^4 4s^2$. This anomalous configuration is primarily attributed to:",
+          "image": "",
+          "options": [
+            "Extra stability of exactly half-filled $d$-subshell due to symmetrical distribution and maximum exchange energy",
+            "Lower $(n + l)$ value of $3d$ compared to $4s$",
+            "Higher effective nuclear charge of the $4s$ orbital",
+            "Larger atomic radius of chromium"
+          ],
+          "correctOption": 0,
+          "solution": "The exceptional ground-state configuration of Chromium ($[\text{Ar}] 3d^5 4s^1$) arises from two stabilizing quantum effects:\n1. **Symmetrical distribution of electron density:** Symmetrically filled subshells (half-filled $d^5$ and fully filled $d^{10}$) minimize mutual shielding and electron repulsion.\n2. **Maximum exchange energy:** Electrons with parallel spins in degenerate orbitals can exchange positions. For $3d^5$, the number of possible exchange pairs is $\\binom{5}{2} = 10$, releasing maximum exchange energy and significantly lowering system energy."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The total number of nodes (radial + angular) present in a $3s$ orbital is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$3$",
+            "$1$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "For any atomic orbital:\n$$\\text{Total number of nodes} = n - 1$$\nFor a $3s$ orbital:\n- Principal quantum number $n = 3$\n- Azimuthal quantum number $l = 0$\n- Angular nodes $= l = 0$\n- Radial nodes $= n - l - 1 = 3 - 0 - 1 = 2$\n$$\\text{Total nodes} = 2 + 0 = 2$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following quantum numbers determines the spatial orientation of an orbital relative to a chosen coordinate system?",
+          "image": "",
+          "options": [
+            "Magnetic quantum number ($m_l$)",
+            "Principal quantum number ($n$)",
+            "Azimuthal quantum number ($l$)",
+            "Spin quantum number ($m_s$)"
+          ],
+          "correctOption": 0,
+          "solution": "Roles of quantum numbers:\n- **Principal quantum number ($n$):** Determines size and major energy level of the orbital.\n- **Azimuthal quantum number ($l$):** Determines the geometric three-dimensional shape of the orbital ($s, p, d, f$) and orbital angular momentum.\n- **Magnetic quantum number ($m_l$):** Determines the **spatial orientation** of the orbital in space relative to Cartesian axes.\n- **Spin quantum number ($m_s$):** Determines the intrinsic spin orientation of the electron ($+\\frac{1}{2}$ or $-\\frac{1}{2}$)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The number of nodal planes in a $d_{xy}$ orbital is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$1$",
+            "$0$",
+            "$3$"
+          ],
+          "correctOption": 0,
+          "solution": "For a $d$-orbital ($l = 2$), the number of angular nodes (nodal planes) is equal to $l = 2$.\nFor the $d_{xy}$ orbital:\n- Its four lobes lie in the $xy$-plane between the $x$ and $y$ axes.\n- The probability density drops to zero when $x = 0$ (the **$yz$-plane**) and when $y = 0$ (the **$xz$-plane**).\nTherefore, $d_{xy}$ has exactly **$2$ nodal planes** ($xz$ and $yz$ planes)."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An electron has spin quantum number $s = +\\frac{1}{2}$ and magnetic quantum number $m_l = -1$. It cannot be present in which of the following orbitals?",
+          "image": "",
+          "options": [
+            "$s$-orbital",
+            "$p$-orbital",
+            "$d$-orbital",
+            "$f$-orbital"
+          ],
+          "correctOption": 0,
+          "solution": "For an $s$-orbital:\n- Azimuthal quantum number $l = 0$.\n- The only possible value for the magnetic quantum number is $m_l = 0$.\nBecause an $s$-orbital can never have $m_l = -1$, the electron cannot be present in an $s$-orbital.\n(For $p, d,$ and $f$ orbitals, $l = 1, 2, 3$, all of which permit $m_l = -1$)."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The orbital angular momentum of an electron in an $s$-orbital is:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$\\frac{h}{2\\pi}$",
+            "$\\sqrt{2}\\ \\frac{h}{2\\pi}$",
+            "$\\frac{h}{4\\pi}$"
+          ],
+          "correctOption": 0,
+          "solution": "The orbital angular momentum is given by:\n$$L = \\sqrt{l(l + 1)}\\ \\frac{h}{2\\pi}$$\nFor any $s$-orbital, the azimuthal quantum number is $l = 0$:\n$$L = \\sqrt{0(0 + 1)}\\ \\frac{h}{2\\pi} = 0$$\nAn electron in an $s$-orbital possesses zero orbital angular momentum."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] How many unpaired electrons are present in a ground-state gaseous $\\text{Fe}^{3+}$ ion? ($Z = 26$)",
+          "image": "",
+          "options": [
+            "$5$",
+            "$4$",
+            "$3$",
+            "$6$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Neutral iron ($Z = 26$):\n$$\\text{Fe}: [\\text{Ar}] 3d^6 4s^2$$\n2. When forming $\\text{Fe}^{3+}$, electrons are removed first from the outermost $4s$ subshell, followed by the $3d$ subshell:\n$$\\text{Fe}^{3+}: [\\text{Ar}] 3d^5$$\n3. According to Hund's rule of maximum multiplicity, the five $d$-electrons occupy the five degenerate $3d$ orbitals singly with parallel spins:\n$$\\uparrow \\quad \\uparrow \\quad \\uparrow \\quad \\uparrow \\quad \\uparrow$$\nTherefore, there are $5$ unpaired electrons."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following plots of radial probability distribution function ($4\\pi r^2 R^2(r)$) versus distance $r$ from the nucleus corresponds to a $2s$ orbital?",
+          "image": "",
+          "options": [
+            "A small peak near the nucleus, dropping to zero at one radial node, followed by a large outer peak",
+            "A single peak that starts from zero, reaches a maximum, and decays exponentially without touching zero",
+            "Two identical peaks of equal height separated by a radial node",
+            "A curve starting with maximum value at $r = 0$ and decaying asymptotically"
+          ],
+          "correctOption": 0,
+          "solution": "For a $2s$ orbital:\n1. Radial nodes $= n - l - 1 = 2 - 0 - 1 = 1$.\n2. The radial probability distribution function $4\\pi r^2 R^2(r)$ starts at zero at the nucleus ($r = 0$ due to $r^2 = 0$).\n3. It rises to a small initial maximum, drops to exactly zero at the radial node ($r \\approx 2 a_0$), and then rises to a much larger main maximum representing the principal valence electron density before decaying toward zero at large $r$."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The maximum number of electrons in an atom that can share the quantum numbers $n = 3, l = 1,$ and $m_s = -\\frac{1}{2}$ is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$6$",
+            "$1$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The quantum numbers $n = 3$ and $l = 1$ designate the $3p$ subshell.\n2. The $3p$ subshell contains $3$ degenerate orbitals ($m_l = -1, 0, +1$).\n3. Each of the $3$ orbitals can hold at most one electron with spin quantum number $m_s = -\\frac{1}{2}$:\n$$\\text{Number of electrons} = 3 \\times 1 = 3$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Hund's rule of maximum multiplicity states that:",
+          "image": "",
+          "options": [
+            "Electron pairing in degenerate orbitals cannot occur until each orbital in the subshell contains one electron with parallel spin",
+            "No two electrons in an atom can have the same four quantum numbers",
+            "Electrons enter orbitals in increasing order of their $(n + l)$ values",
+            "Only two electrons can be accommodated in any single orbital"
+          ],
+          "correctOption": 0,
+          "solution": "**Hund's Rule of Maximum Multiplicity** governs the filling of degenerate orbitals (orbitals of equal energy, such as the three $p$ or five $d$ orbitals):\n'Pairing of electrons in degenerate orbitals belonging to the same subshell does not take place until each orbital is singly occupied by one electron with parallel spin.'\nThis minimizes inter-electronic electrostatic repulsion and maximizes exchange energy."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What are the values of $n, l,$ and $m_l$ for the valence electron of a sodium atom in its ground state? ($Z = 11$)",
+          "image": "",
+          "options": [
+            "$n = 3, l = 0, m_l = 0$",
+            "$n = 3, l = 1, m_l = 0$",
+            "$n = 2, l = 1, m_l = +1$",
+            "$n = 3, l = 0, m_l = +1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electronic configuration of sodium ($Z = 11$):\n$$\\text{Na}: 1s^2 2s^2 2p^6 3s^1$$\n2. The outermost valence electron is located in the $3s$ orbital.\n3. Quantum numbers for the $3s$ electron:\n- Principal quantum number: $n = 3$\n- Azimuthal quantum number: $l = 0$\n- Magnetic quantum number: $m_l = 0$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The total number of degenerate orbitals in a subshell is given by the formula:",
+          "image": "",
+          "options": [
+            "$2l + 1$",
+            "$2n^2$",
+            "$n^2$",
+            "$l + 1$"
+          ],
+          "correctOption": 0,
+          "solution": "For a given azimuthal quantum number $l$, the magnetic quantum number $m_l$ can take all integer values from $-l$ to $+l$ including zero:\n$$m_l = -l, -(l-1), \\dots, 0, \\dots, +(l-1), +l$$\nThe total count of these values is $(2l + 1)$. In the absence of an external magnetic field, all these $(2l + 1)$ orbitals have identical energy (degenerate)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following sets of quantum numbers represents the electron that is removed FIRST during the ionization of a ground-state titanium atom? ($Z = 22$)",
+          "image": "",
+          "options": [
+            "$n = 4, l = 0, m_l = 0, m_s = +\\frac{1}{2}$",
+            "$n = 3, l = 2, m_l = 0, m_s = +\\frac{1}{2}$",
+            "$n = 3, l = 2, m_l = +2, m_s = -\\frac{1}{2}$",
+            "$n = 3, l = 1, m_l = -1, m_s = -\\frac{1}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electronic configuration of Titanium ($Z = 22$):\n$$\\text{Ti}: [\\text{Ar}] 3d^2 4s^2$$\n2. Although the $4s$ orbital is filled before $3d$ according to the $(n + l)$ Aufbau rule during building-up of neutral atoms, the $4s$ electrons have higher principal quantum number ($n = 4$) and reside on average farther from the nucleus.\n3. Upon ionization to form $\\text{Ti}^+$, electrons are lost first from the outermost valence shell, which is the **$4s$ subshell** ($n = 4, l = 0$).\nThus, the electron removed first has $n = 4, l = 0, m_l = 0$."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The spin-only magnetic moment of a divalent ion $\\text{M}^{2+}$ with atomic number $Z = 27$ is: (Take $\\sqrt{15} \\approx 3.87$)",
+          "image": "",
+          "options": [
+            "$3.87\\text{ BM}$",
+            "$4.90\\text{ BM}$",
+            "$2.83\\text{ BM}$",
+            "$1.73\\text{ BM}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Element with $Z = 27$ is Cobalt ($\\text{Co}$).\n$$\\text{Co}: [\\text{Ar}] 3d^7 4s^2 \\implies \\text{Co}^{2+}: [\\text{Ar}] 3d^7$$\n2. Distribution in the five $3d$ orbitals:\n$$(\\uparrow\\downarrow) \\quad (\\uparrow\\downarrow) \\quad (\\uparrow) \\quad (\\uparrow) \\quad (\\uparrow)$$\nThere are $n = 3$ unpaired electrons.\n3. Spin-only formula:\n$$\\mu_s = \\sqrt{n(n + 2)}\\text{ BM} = \\sqrt{3(3 + 2)} = \\sqrt{15} \\approx 3.87\\text{ BM}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A $3d_{x^2-y^2}$ orbital has:",
+          "image": "",
+          "options": [
+            "Zero radial nodes and two angular nodes",
+            "One radial node and one angular node",
+            "Two radial nodes and zero angular nodes",
+            "One radial node and two angular nodes"
+          ],
+          "correctOption": 0,
+          "solution": "For a $3d_{x^2-y^2}$ orbital:\n- Principal quantum number $n = 3$\n- Azimuthal quantum number $l = 2$\n1. Number of angular nodes $= l = 2$ (the two nodal planes are at $45^\\circ$ to the $x$ and $y$ axes, given by $y = \\pm x$).\n2. Number of radial nodes $= n - l - 1 = 3 - 2 - 1 = 0$.\nTherefore, it has $0$ radial nodes and $2$ angular nodes."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following orbitals does NOT exist according to quantum mechanical rules?",
+          "image": "",
+          "options": [
+            "$2d$",
+            "$3p$",
+            "$4f$",
+            "$2s$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For a given principal quantum number $n$, the azimuthal quantum number $l$ can take values from $0$ up to $n - 1$.\n2. For $n = 2$, the permissible values of $l$ are $0$ ($2s$) and $1$ ($2p$).\n3. A $d$-subshell requires $l = 2$. For $n = 2$, $l = 2$ is mathematically forbidden.\nHence, a **$2d$ orbital cannot exist** (the lowest available $d$-orbitals begin at $n = 3$)."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the Schrödinger wave equation, the wave function $\\psi$ for an electron in a hydrogen atom depends on which three quantum numbers?",
+          "image": "",
+          "options": [
+            "$n, l,$ and $m_l$",
+            "$n, l,$ and $m_s$",
+            "$l, m_l,$ and $m_s$",
+            "$n, m_l,$ and $m_s$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The spatial wave function $\\psi(r, \\theta, \\phi)$ arises as an exact mathematical eigenfunction from solving the three-dimensional spatial Schrödinger differential equation for the hydrogen atom.\n2. Its solution naturally yields three spatial quantum numbers:\n- $n$ from the radial equation $R(r)$\n- $l$ from the polar angular equation $\\Theta(\\theta)$\n- $m_l$ from the azimuthal angular equation $\\Phi(\\phi)$\n3. The spin quantum number ($m_s$) does not originate from the non-relativistic Schrödinger equation; it was introduced later (by Uhlenbeck and Goudsmit, and formally derived by Dirac's relativistic quantum mechanics) to account for intrinsic electron angular momentum."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The shape of an atomic orbital is determined by which quantum number?",
+          "image": "",
+          "options": [
+            "Azimuthal quantum number ($l$)",
+            "Principal quantum number ($n$)",
+            "Magnetic quantum number ($m_l$)",
+            "Spin quantum number ($m_s$)"
+          ],
+          "correctOption": 0,
+          "solution": "The azimuthal quantum number ($l$, also known as orbital angular momentum quantum number) defines the subshell and governs the geometric **shape** of the orbital:\n- $l = 0$: spherically symmetric ($s$-orbital)\n- $l = 1$: dumb-bell shaped ($p$-orbital)\n- $l = 2$: double dumb-bell shaped ($d$-orbital)\n- $l = 3$: complex multi-lobed shape ($f$-orbital)"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the total number of nodal planes in a $4f$ orbital?",
+          "image": "",
+          "options": [
+            "$3$",
+            "$4$",
+            "$2$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "The number of nodal planes (angular nodes) in any atomic orbital is strictly equal to the azimuthal quantum number $l$.\nFor an $f$-orbital:\n$$l = 3$$\nTherefore, any $4f$ orbital has exactly **$3$ nodal planes**."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An electron is in one of the $3d$ orbitals. What are the possible values of $m_l$ for this electron?",
+          "image": "",
+          "options": [
+            "$-2, -1, 0, +1, +2$",
+            "$-1, 0, +1$",
+            "$-3, -2, -1, 0, +1, +2, +3$",
+            "$0, 1, 2$"
+          ],
+          "correctOption": 0,
+          "solution": "For a $3d$ orbital, the azimuthal quantum number is $l = 2$.\nThe magnetic quantum number $m_l$ can take any integer value from $-l$ to $+l$:\n$$m_l = -2, -1, 0, +1, +2$$\nThis gives five possible values corresponding to the five degenerate $3d$ orbitals ($d_{xy}, d_{yz}, d_{zx}, d_{x^2-y^2}, d_{z^2}$)."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following sets of orbitals is arranged in order of INCREASING number of radial nodes?",
+          "image": "",
+          "options": [
+            "$1s < 2s < 3s$",
+            "$3s < 2s < 1s$",
+            "$2p < 3p < 1s$",
+            "$3d < 2p < 1s$"
+          ],
+          "correctOption": 0,
+          "solution": "The number of radial nodes is given by $n - l - 1$:\n- For $1s$: $1 - 0 - 1 = 0$\n- For $2s$: $2 - 0 - 1 = 1$\n- For $3s$: $3 - 0 - 1 = 2$\nThus, the number of radial nodes increases in the sequence $1s\\ (0) < 2s\\ (1) < 3s\\ (2)$."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] According to Pauli's exclusion principle, the maximum capacity of an atomic orbital is:",
+          "image": "",
+          "options": [
+            "$2$ electrons with opposite spins",
+            "$2$ electrons with parallel spins",
+            "$6$ electrons",
+            "$14$ electrons"
+          ],
+          "correctOption": 0,
+          "solution": "An orbital is characterized by a specific set of three quantum numbers ($n, l, m_l$).\nTo ensure that no two electrons have identical sets of all four quantum numbers, an orbital can hold a maximum of **$2$ electrons**, and these two electrons must have opposite spins ($m_s = +1/2$ and $m_s = -1/2$)."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The boundary surface diagram of an $s$-orbital is spherical because:",
+          "image": "",
+          "options": [
+            "The probability of finding the electron at a given distance $r$ is identical in all directions in space",
+            "The wave function $\\psi$ is zero at all points except along the $z$-axis",
+            "The electron travels along a circular equator",
+            "The azimuthal quantum number $l = 1$"
+          ],
+          "correctOption": 0,
+          "solution": "For an $s$-orbital, $l = 0$ and $m_l = 0$.\n1. The angular wave function $Y(\\theta, \\phi)$ is a constant ($Y = \\frac{1}{\\sqrt{4\\pi}}$) and is completely independent of the angular coordinates $\\theta$ and $\\phi$.\n2. Consequently, the electron probability density $|\\psi|^2$ depends exclusively on the radial distance $r$ from the nucleus.\n3. This spherically symmetric distribution means the probability of finding the electron is identical in all directions in space at a given radius."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following electron transitions in a multi-electron atom requires the ABSORPTION of the greatest amount of energy?",
+          "image": "",
+          "options": [
+            "$2s \\rightarrow 3p$",
+            "$3p \\rightarrow 3d$",
+            "$1s \\rightarrow 2s$",
+            "$3s \\rightarrow 4s$"
+          ],
+          "correctOption": 2,
+          "solution": "In any atom, the energy gap between principal shells drops sharply as $n$ increases:\n- The energy difference between the $n = 1$ and $n = 2$ shells is by far the largest energy jump in atomic structure:\n$$\\Delta E(1s \\rightarrow 2s) \\gg \\Delta E(2s \\rightarrow 3p) > \\Delta E(3s \\rightarrow 4s) > \\Delta E(3p \\rightarrow 3d)$$\nTherefore, promoting an electron from $1s$ to $2s$ requires the absorption of the greatest amount of energy."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The total number of subshells associated with the principal shell $n = 3$ is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$9$",
+            "$6$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "For a principal quantum number $n$, the number of permitted subshells is equal to $n$:\nFor $n = 3$, $l$ can take the values $0, 1,$ and $2$, corresponding to:\n- $3s$ ($l = 0$)\n- $3p$ ($l = 1$)\n- $3d$ ($l = 2$)\nTherefore, there are exactly $3$ subshells."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In an atom, how many electrons can have the quantum numbers $n = 4$ and $m_l = +2$?",
+          "image": "",
+          "options": [
+            "$4$",
+            "$2$",
+            "$8$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the $n = 4$ shell, the available subshells are $4s$ ($l = 0$), $4p$ ($l = 1$), $4d$ ($l = 2$), and $4f$ ($l = 3$).\n2. The magnetic quantum number $m_l = +2$ is possible only when $l \\ge 2$:\n- In the $4d$ subshell ($l = 2$): exactly one orbital has $m_l = +2$ (can hold $2$ electrons).\n- In the $4f$ subshell ($l = 3$): exactly one orbital has $m_l = +2$ (can hold $2$ electrons).\n3. Neither $4s$ nor $4p$ can have $m_l = +2$.\n$$\\text{Total electrons} = 2 + 2 = 4\\text{ electrons}$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A nodal surface (radial node) is a region in an atom where:",
+          "image": "",
+          "options": [
+            "The probability density of finding an electron drops to zero ($|\\psi|^2 = 0$)",
+            "The probability of finding an electron is maximum",
+            "The potential energy of the electron is zero",
+            "The electron travels with the speed of light"
+          ],
+          "correctOption": 0,
+          "solution": "A **node** is defined as a region or surface in space around the nucleus where the wave function passes through zero ($\\psi = 0$), and consequently the probability density of finding the electron is strictly zero ($|\\psi|^2 = 0$)."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following elements has a ground-state electronic configuration ending in $3d^{10} 4s^1$?",
+          "image": "",
+          "options": [
+            "Copper ($\\text{Cu}, Z = 29$)",
+            "Zinc ($\\text{Zn}, Z = 30$)",
+            "Nickel ($\\text{Ni}, Z = 28$)",
+            "Chromium ($\\text{Cr}, Z = 24$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Neutral Copper ($Z = 29$):\nExpected configuration: $[\\text{Ar}] 3d^9 4s^2$\nActual ground-state configuration: **$[\\text{Ar}] 3d^{10} 4s^1$**\n2. The promotion of one electron from $4s$ to $3d$ completes the $3d$ subshell ($d^{10}$), providing exceptional stability due to a completely filled subshell and maximal exchange energy."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The ratio of the angular nodes of a $3d$ orbital to the angular nodes of a $4f$ orbital is:",
+          "image": "",
+          "options": [
+            "$2 : 3$",
+            "$3 : 4$",
+            "$1 : 2$",
+            "$2 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "The number of angular nodes is given by $l$:\n- For a $3d$ orbital: $l = 2 \\implies 2\\text{ angular nodes}$\n- For a $4f$ orbital: $l = 3 \\implies 3\\text{ angular nodes}$\n$$\\text{Ratio} = \\frac{2}{3} = 2 : 3$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following subshells has the HIGHEST energy in a multi-electron atom?",
+          "image": "",
+          "options": [
+            "$5d$",
+            "$6s$",
+            "$4f$",
+            "$5p$"
+          ],
+          "correctOption": 0,
+          "solution": "Apply the $(n + l)$ rule:\n- $5d$: $n = 5, l = 2 \\implies n + l = 7$\n- $6s$: $n = 6, l = 0 \\implies n + l = 6$\n- $4f$: $n = 4, l = 3 \\implies n + l = 7$\n- $5p$: $n = 5, l = 1 \\implies n + l = 6$\nComparing $5d$ and $4f$ (both have $n + l = 7$):\n- $5d$ has a higher principal quantum number ($n = 5$) than $4f$ ($n = 4$).\n- Therefore, $5d$ has higher energy than $4f$.\nHence, $5d$ possesses the highest energy among the given subshells."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the maximum number of electrons that can be accommodated in all orbitals having principal quantum number $n = 3$?",
+          "image": "",
+          "options": [
+            "$18$",
+            "$8$",
+            "$32$",
+            "$9$"
+          ],
+          "correctOption": 0,
+          "solution": "The maximum capacity of any principal shell $n$ is given by $2n^2$:\n$$\\text{Max electrons} = 2n^2 = 2(3^2) = 2(9) = 18\\text{ electrons}$$\n(Distributed as: $3s^2, 3p^6, 3d^{10}$, total $= 2 + 6 + 10 = 18$)."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An electron configuration violates the Aufbau principle if an electron is placed into:",
+          "image": "",
+          "options": [
+            "A higher-energy orbital while a lower-energy orbital remains partially vacant",
+            "An orbital with the same spin as an existing electron in that orbital",
+            "A degenerate orbital singly before pairing begins",
+            "An orbital having lower $(n + l)$ value"
+          ],
+          "correctOption": 0,
+          "solution": "1. The **Aufbau principle** states that in the ground state of an atom, electrons fill lower-energy atomic orbitals before occupying higher-energy orbitals.\n2. If an electron occupies a higher-energy subshell while a lower-energy subshell has vacancies, the arrangement violates the Aufbau principle (representing an excited state).\n(Placing two electrons with parallel spins in the same orbital violates Pauli's principle; premature pairing in degenerate orbitals violates Hund's rule)."
+        }
+      ]
+    }
+  ]
+}

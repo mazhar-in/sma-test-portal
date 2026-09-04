@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-09-enthalpies-and-hesss-law",
+  "title": "Enthalpies & Hess's Law (Enthalpy of Reaction, Formation, Combustion, Atomisation, Sublimation, & Hess's Law)",
+  "syllabus": "Enthalpy change of a reaction (ΔrH); Standard enthalpy changes (standard state definitions); Types of enthalpy changes: Standard enthalpy of formation (ΔfH°), Standard enthalpy of combustion (ΔcH°), Enthalpy of atomisation (ΔaH°), Enthalpy of phase transitions (sublimation ΔsubH°, fusion ΔfusH°, vaporization ΔvapH° and their relationships); Bond dissociation enthalpy and mean bond enthalpy; Enthalpy of solution (ΔsolH°) and hydration enthalpy (ΔhydH°); Enthalpy of neutralisation (strong acid - strong base vs weak acid/base); Hess's Law of Constant Heat Summation and its applications; Born-Haber cycle for lattice enthalpy determination; Temperature dependence of enthalpy of reaction (Kirchhoff's equation - qualitative/quantitative)",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Given the following thermochemical equations:\n$$\\text{C}(\\text{graphite}) + \\text{O}_2(g) \\rightarrow \\text{CO}_2(g); \\quad \\Delta H_1 = -393.5\\text{ kJ/mol}$$\n$$\\text{H}_2(g) + \\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{H}_2\\text{O}(l); \\quad \\Delta H_2 = -285.8\\text{ kJ/mol}$$\n$$\\text{CH}_4(g) + 2\\text{O}_2(g) \\rightarrow \\text{CO}_2(g) + 2\\text{H}_2\\text{O}(l); \\quad \\Delta H_3 = -890.3\\text{ kJ/mol}$$\nThe standard enthalpy of formation of methane ($\\Delta_f H^\\circ[\\text{CH}_4(g)]$) is:",
+          "image": "",
+          "options": [
+            "$-74.8\\text{ kJ/mol}$",
+            "$+74.8\\text{ kJ/mol}$",
+            "$-52.3\\text{ kJ/mol}$",
+            "$-104.2\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "The target formation reaction for methane is:\n$$\\text{C}(\\text{graphite}) + 2\\text{H}_2(g) \\rightarrow \\text{CH}_4(g)$$\nApplying Hess's Law:\n$$\\Delta_f H^\\circ = \\Delta H_1 + 2(\\Delta H_2) - \\Delta H_3$$\nSubstitute the given values:\n$$\\Delta_f H^\\circ = (-393.5) + 2(-285.8) - (-890.3)$$\n$$\\Delta_f H^\\circ = -393.5 - 571.6 + 890.3 = -965.1 + 890.3 = -74.8\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For which of the following substances is the standard molar enthalpy of formation ($\\Delta_f H^\\circ$) taken as ZERO at $298\\text{ K}$ and $1\\text{ bar}$ by convention?",
+          "image": "",
+          "options": [
+            "$\\text{Br}_2(l)$",
+            "$\\text{Br}_2(g)$",
+            "$\\text{C}(\\text{diamond})$",
+            "$\\text{O}_3(g)$"
+          ],
+          "correctOption": 0,
+          "solution": "By thermodynamic convention, the standard molar enthalpy of formation ($\\Delta_f H^\\circ$) is assigned a value of zero for an element in its most stable, reference allotropic physical state at $298.15\\text{ K}$ and $1\\text{ bar}$:\n1. Bromine is naturally a liquid under standard conditions, so $\\Delta_f H^\\circ[\\text{Br}_2(l)] = 0$ (for $\\text{Br}_2(g)$, $\\Delta_f H^\\circ > 0$).\n2. For carbon, graphite is the standard reference state ($\\Delta_f H^\\circ[\\text{C}(\\text{graphite})] = 0$), whereas for diamond $\\Delta_f H^\\circ = +1.89\\text{ kJ/mol}$.\n3. For oxygen, dioxygen gas is the standard state ($\\Delta_f H^\\circ[\\text{O}_2(g)] = 0$), whereas for ozone $\\Delta_f H^\\circ[\\text{O}_3(g)] = +142.7\\text{ kJ/mol}$.\nThus, $\\Delta_f H^\\circ$ is zero for $\\text{Br}_2(l)$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The enthalpy of neutralisation of a strong acid with a strong base in dilute aqueous solution is a universal constant ($\\approx -57.1\\text{ kJ/eq}$). When $1\\text{ mole}$ of $\\text{H}_2\\text{SO}_4$ is completely neutralized by $2\\text{ moles}$ of $\\text{NaOH}$ in dilute solution, the heat evolved is:",
+          "image": "",
+          "options": [
+            "$114.2\\text{ kJ}$",
+            "$57.1\\text{ kJ}$",
+            "$28.55\\text{ kJ}$",
+            "$228.4\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "The net chemical process in the neutralization of any strong acid by a strong base is the formation of liquid water from hydronium and hydroxide ions:\n$$\\text{H}^+(aq) + \\text{OH}^-(aq) \\rightarrow \\text{H}_2\\text{O}(l); \\quad \\Delta H = -57.1\\text{ kJ/mol of } \\text{H}_2\\text{O}$$\n1. Complete neutralization of $1\\text{ mole}$ of diprotic acid $\\text{H}_2\\text{SO}_4$ produces $2\\text{ moles of } \\text{H}^+$ ions.\n2. Complete neutralization consumes $2\\text{ moles of } \\text{OH}^-$ ions from $2\\text{ moles of } \\text{NaOH}$, forming $2\\text{ moles of } \\text{H}_2\\text{O}$.\n3. Total heat evolved:\n$$Q = 2 \\times 57.1\\text{ kJ} = 114.2\\text{ kJ}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Given bond dissociation enthalpies:\n- $\\Delta H(\\text{H}-\\text{H}) = 435\\text{ kJ/mol}$\n- $\\Delta H(\\text{Cl}-\\text{Cl}) = 243\\text{ kJ/mol}$\n- $\\Delta H(\\text{H}-\\text{Cl}) = 431\\text{ kJ/mol}$\nThe standard enthalpy of formation of $\\text{HCl}(g)$ is:",
+          "image": "",
+          "options": [
+            "$-92.0\\text{ kJ/mol}$",
+            "$+92.0\\text{ kJ/mol}$",
+            "$-184.0\\text{ kJ/mol}$",
+            "$+184.0\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "The formation reaction for $1\\text{ mole of } \\text{HCl}(g)$ is:\n$$\\frac{1}{2}\\text{H}_2(g) + \\frac{1}{2}\\text{Cl}_2(g) \\rightarrow \\text{HCl}(g)$$\nUsing bond energies:\n$$\\Delta_f H^\\circ = \\sum (\\text{Bond Enthalpies of Reactants}) - \\sum (\\text{Bond Enthalpies of Products})$$\n$$\\Delta_f H^\\circ = \\left[\\frac{1}{2} \\Delta H(\\text{H}-\\text{H}) + \\frac{1}{2} \\Delta H(\\text{Cl}-\\text{Cl})\\right] - [\\Delta H(\\text{H}-\\text{Cl})]$$\n$$\\Delta_f H^\\circ = \\left[\\frac{1}{2}(435) + \\frac{1}{2}(243)\\right] - [431]$$\n$$\\Delta_f H^\\circ = [217.5 + 121.5] - 431 = 339 - 431 = -92.0\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The relationship between the enthalpy of sublimation ($\\Delta_{\\text{sub}}H^\\circ$), enthalpy of fusion ($\\Delta_{\\text{fus}}H^\\circ$), and enthalpy of vaporization ($\\Delta_{\\text{vap}}H^\\circ$) for a pure substance at the same temperature is:",
+          "image": "",
+          "options": [
+            "$\\Delta_{\\text{sub}}H^\\circ = \\Delta_{\\text{fus}}H^\\circ + \\Delta_{\\text{vap}}H^\\circ$",
+            "$\\Delta_{\\text{sub}}H^\\circ = \\Delta_{\\text{fus}}H^\\circ - \\Delta_{\\text{vap}}H^\\circ$",
+            "$\\Delta_{\\text{vap}}H^\\circ = \\Delta_{\\text{sub}}H^\\circ + \\Delta_{\\text{fus}}H^\\circ$",
+            "$\\Delta_{\\text{sub}}H^\\circ = \\frac{\\Delta_{\\text{fus}}H^\\circ + \\Delta_{\\text{vap}}H^\\circ}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider the two alternate pathways to convert $1\\text{ mole}$ of a solid into gas at constant temperature:\n1. Direct pathway: $\\text{Solid} \\rightarrow \\text{Gas} \\quad (\\Delta_{\\text{sub}}H^\\circ)$\n2. Stepwise pathway:\n- Step 1: Melting: $\\text{Solid} \\rightarrow \\text{Liquid} \\quad (\\Delta_{\\text{fus}}H^\\circ)$\n- Step 2: Boiling: $\\text{Liquid} \\rightarrow \\text{Gas} \\quad (\\Delta_{\\text{vap}}H^\\circ)$\nAccording to Hess's Law, because enthalpy is a state function:\n$$\\Delta_{\\text{sub}}H^\\circ = \\Delta_{\\text{fus}}H^\\circ + \\Delta_{\\text{vap}}H^\\circ$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The enthalpy of atomisation of methane ($\\text{CH}_4$) is $1665\\text{ kJ/mol}$. The mean $\\text{C}-\\text{H}$ bond enthalpy in methane is:",
+          "image": "",
+          "options": [
+            "$416.25\\text{ kJ/mol}$",
+            "$832.50\\text{ kJ/mol}$",
+            "$555.00\\text{ kJ/mol}$",
+            "$1665\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "The atomisation of methane involves the complete breaking of all four identical $\\text{C}-\\text{H}$ covalent bonds into isolated gaseous atoms:\n$$\\text{CH}_4(g) \\rightarrow \\text{C}(g) + 4\\text{H}(g); \\quad \\Delta_a H^\\circ = 1665\\text{ kJ/mol}$$\nBecause one methane molecule contains four $\\text{C}-\\text{H}$ bonds:\n$$\\Delta_a H^\\circ = 4 \\times \\text{Bond Enthalpy}(\\text{C}-\\text{H})$$\n$$\\text{Bond Enthalpy}(\\text{C}-\\text{H}) = \\frac{1665}{4} = 416.25\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The enthalpy of neutralisation of hydrocyanic acid ($\\text{HCN}$) by sodium hydroxide ($\\text{NaOH}$) is $-12.1\\text{ kJ/mol}$. Given that the enthalpy of neutralisation of strong acid by strong base is $-57.1\\text{ kJ/mol}$, the enthalpy of ionization of $\\text{HCN}$ is:",
+          "image": "",
+          "options": [
+            "$+45.0\\text{ kJ/mol}$",
+            "$-45.0\\text{ kJ/mol}$",
+            "$+69.2\\text{ kJ/mol}$",
+            "$-69.2\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "When a weak acid like $\\text{HCN}$ is neutralized by a strong base, the process involves two steps:\n1. Ionization of the weak acid: $\\text{HCN}(aq) \\rightarrow \\text{H}^+(aq) + \\text{CN}^-(aq) \\quad (\\Delta H_{\\text{ion}})$\n2. Neutralization of $\\text{H}^+$ by $\\text{OH}^-$: $\\text{H}^+(aq) + \\text{OH}^-(aq) \\rightarrow \\text{H}_2\\text{O}(l) \\quad (\\Delta H = -57.1\\text{ kJ/mol})$\nBy Hess's Law:\n$$\\Delta H_{\\text{neut}} = \\Delta H_{\\text{ion}} + (-57.1)$$\n$$-12.1 = \\Delta H_{\\text{ion}} - 57.1$$\n$$\\Delta H_{\\text{ion}} = -12.1 + 57.1 = +45.0\\text{ kJ/mol}$$\n(A significant amount of energy, $45.0\\text{ kJ/mol}$, is consumed to ionize the weak acid, reducing the net heat released)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following reactions correctly defines the standard molar enthalpy of formation ($\\Delta_f H^\\circ$) of carbon monoxide ($\\text{CO}$)?",
+          "image": "",
+          "options": [
+            "$\\text{C}(\\text{graphite}) + \\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{CO}(g)$",
+            "$\\text{C}(\\text{diamond}) + \\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{CO}(g)$",
+            "$\\text{CO}_2(g) + \\text{C}(\\text{graphite}) \\rightarrow 2\\text{CO}(g)$",
+            "$\\text{C}(g) + \\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{CO}(g)$"
+          ],
+          "correctOption": 0,
+          "solution": "By definition, the standard enthalpy of formation ($\\Delta_f H^\\circ$) is the enthalpy change accompanying the formation of **$1\\text{ mole}$** of a substance from its constituent elements in their **standard, most stable reference physical states** at $298\\text{ K}$ and $1\\text{ bar}$:\n- Standard state of carbon: solid graphite ($\\text{C}(\\text{graphite})$)\n- Standard state of oxygen: diatomic gas ($\\text{O}_2(g)$)\n- Product formed: exactly $1\\text{ mole}$ of $\\text{CO}(g)$\nTherefore, the correct equation is:\n$$\\text{C}(\\text{graphite}) + \\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{CO}(g)$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Hess's Law of constant heat summation is an immediate thermodynamic consequence of:",
+          "image": "",
+          "options": [
+            "The First Law of Thermodynamics and enthalpy being a state function",
+            "The Second Law of Thermodynamics",
+            "Le Chatelier's principle",
+            "Dalton's atomic theory"
+          ],
+          "correctOption": 0,
+          "solution": "Hess's Law states that the total enthalpy change accompanying a chemical transformation is identical whether the reaction takes place in one single step or in a series of multiple intermediate steps.\nBecause enthalpy ($H$) is a **state function**, its change depends solely on the initial state of reactants and final state of products, and is completely independent of the reaction pathway taken.\nThis reflects the principle of conservation of energy (First Law of Thermodynamics)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The standard enthalpies of combustion of carbon, hydrogen, and ethyl alcohol are $-393.5, -286.0,$ and $-1367.0\\text{ kJ/mol}$ respectively. The standard enthalpy of formation of ethyl alcohol ($\\text{C}_2\\text{H}_5\\text{OH}(l)$) is:",
+          "image": "",
+          "options": [
+            "$-278.0\\text{ kJ/mol}$",
+            "$+278.0\\text{ kJ/mol}$",
+            "$-687.5\\text{ kJ/mol}$",
+            "$-304.0\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Formation reaction of ethanol:\n$$2\\text{C}(\\text{graphite}) + 3\\text{H}_2(g) + \\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{C}_2\\text{H}_5\\text{OH}(l)$$\n2. Using enthalpies of combustion:\n$$\\Delta_f H^\\circ = \\sum \\Delta_c H^\\circ(\\text{reactants}) - \\sum \\Delta_c H^\\circ(\\text{products})$$\n$$\\Delta_f H^\\circ = [2\\Delta_c H^\\circ(\\text{C}) + 3\\Delta_c H^\\circ(\\text{H}_2)] - [\\Delta_c H^\\circ(\\text{C}_2\\text{H}_5\\text{OH})]$$\n3. Substitute the values:\n$$\\Delta_f H^\\circ = [2(-393.5) + 3(-286.0)] - [-1367.0]$$\n$$\\Delta_f H^\\circ = [-787.0 - 858.0] + 1367.0 = -1645.0 + 1367.0 = -278.0\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The lattice enthalpy of $\\text{NaCl}(s)$ is determined experimentally using a thermochemical Born-Haber cycle. Which of the following thermodynamic steps has an EXOTHERMIC enthalpy change ($\\Delta H < 0$)?",
+          "image": "",
+          "options": [
+            "Electron gain enthalpy of chlorine: $\\text{Cl}(g) + e^- \\rightarrow \\text{Cl}^-(g)$",
+            "Sublimation of sodium: $\\text{Na}(s) \\rightarrow \\text{Na}(g)$",
+            "Ionization enthalpy of sodium: $\\text{Na}(g) \\rightarrow \\text{Na}^+(g) + e^-$",
+            "Bond dissociation of chlorine: $\\frac{1}{2}\\text{Cl}_2(g) \\rightarrow \\text{Cl}(g)$"
+          ],
+          "correctOption": 0,
+          "solution": "In the Born-Haber cycle for the synthesis of $\\text{NaCl}(s)$:\n1. $\\text{Na}(s) \\rightarrow \\text{Na}(g)$: Sublimation enthalpy (endothermic, $\\Delta H > 0$).\n2. $\\text{Na}(g) \\rightarrow \\text{Na}^+(g) + e^-$: Ionization enthalpy (endothermic, $\\Delta H > 0$).\n3. $\\frac{1}{2}\\text{Cl}_2(g) \\rightarrow \\text{Cl}(g)$: Bond dissociation enthalpy (endothermic, $\\Delta H > 0$).\n4. $\\text{Cl}(g) + e^- \\rightarrow \\text{Cl}^-(g)$: Electron gain enthalpy (exothermic, $\\Delta_{eg}H = -349\\text{ kJ/mol}$). Energy is released upon electron capture by a neutral halogen atom."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dissolution of anhydrous copper sulfate in water is exothermic ($\\Delta H = -66.5\\text{ kJ/mol}$), whereas the dissolution of hydrated copper sulfate ($\\text{CuSO}_4 \\cdot 5\\text{H}_2\\text{O}$) in water is endothermic ($\\Delta H = +11.7\\text{ kJ/mol}$). The enthalpy of hydration of $\\text{CuSO}_4$ to $\\text{CuSO}_4 \\cdot 5\\text{H}_2\\text{O}$ is:",
+          "image": "",
+          "options": [
+            "$-78.2\\text{ kJ/mol}$",
+            "$+78.2\\text{ kJ/mol}$",
+            "$-54.8\\text{ kJ/mol}$",
+            "$+54.8\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Target hydration reaction:\n$$\\text{CuSO}_4(s) + 5\\text{H}_2\\text{O}(l) \\rightarrow \\text{CuSO}_4 \\cdot 5\\text{H}_2\\text{O}(s); \\quad \\Delta H_{\\text{hyd}} = ?$$\n2. Given dissolution reactions:\n- Reaction 1: $\\text{CuSO}_4(s) + aq \\rightarrow \\text{CuSO}_4(aq); \\quad \\Delta H_1 = -66.5\\text{ kJ/mol}$\n- Reaction 2: $\\text{CuSO}_4 \\cdot 5\\text{H}_2\\text{O}(s) + aq \\rightarrow \\text{CuSO}_4(aq); \\quad \\Delta H_2 = +11.7\\text{ kJ/mol}$\n3. Subtracting Reaction 2 from Reaction 1:\n$$\\Delta H_{\\text{hyd}} = \\Delta H_1 - \\Delta H_2 = -66.5 - (+11.7) = -78.2\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Given the standard enthalpies of formation:\n- $\\Delta_f H^\\circ[\\text{CO}_2(g)] = -393.5\\text{ kJ/mol}$\n- $\\Delta_f H^\\circ[\\text{CO}(g)] = -110.5\\text{ kJ/mol}$\nThe enthalpy change for the reaction $\\text{CO}(g) + \\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{CO}_2(g)$ is:",
+          "image": "",
+          "options": [
+            "$-283.0\\text{ kJ/mol}$",
+            "$+283.0\\text{ kJ/mol}$",
+            "$-504.0\\text{ kJ/mol}$",
+            "$+504.0\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "The enthalpy change of a reaction is calculated using enthalpies of formation:\n$$\\Delta_r H^\\circ = \\sum \\Delta_f H^\\circ(\\text{products}) - \\sum \\Delta_f H^\\circ(\\text{reactants})$$\n$$\\Delta_r H^\\circ = [\\Delta_f H^\\circ(\\text{CO}_2)] - [\\Delta_f H^\\circ(\\text{CO}) + \\frac{1}{2}\\Delta_f H^\\circ(\\text{O}_2)]$$\nSince $\\Delta_f H^\\circ(\\text{O}_2) = 0$:\n$$\\Delta_r H^\\circ = -393.5 - (-110.5) = -393.5 + 110.5 = -283.0\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The bond dissociation enthalpies of $X_2, Y_2,$ and $XY$ are in the ratio $1 : 0.5 : 1$. The standard enthalpy of formation of $XY$ is $-200\\text{ kJ/mol}$. The bond dissociation enthalpy of $X_2$ is:",
+          "image": "",
+          "options": [
+            "$800\\text{ kJ/mol}$",
+            "$400\\text{ kJ/mol}$",
+            "$200\\text{ kJ/mol}$",
+            "$100\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Let the bond dissociation enthalpy of $X_2$ be $x\\text{ kJ/mol}$.\nThen:\n- $\\Delta H(X-X) = x$\n- $\\Delta H(Y-Y) = 0.5x$\n- $\\Delta H(X-Y) = x$\n2. The formation reaction for $XY$ is:\n$$\\frac{1}{2}X_2 + \\frac{1}{2}Y_2 \\rightarrow XY; \\quad \\Delta_f H = -200\\text{ kJ/mol}$$\n3. Using bond enthalpies:\n$$\\Delta_f H = \\left[\\frac{1}{2}\\Delta H(X-X) + \\frac{1}{2}\\Delta H(Y-Y)\\right] - [\\Delta H(X-Y)]$$\n$$-200 = \\left[\\frac{1}{2}(x) + \\frac{1}{2}(0.5x)\\right] - [x]$$\n$$-200 = 0.5x + 0.25x - x = -0.25x$$\n$$0.25x = 200 \\implies x = \\frac{200}{0.25} = 800\\text{ kJ/mol}$$\nTherefore, the bond dissociation enthalpy of $X_2$ is $800\\text{ kJ/mol}$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] When diamond transforms into graphite under standard conditions:\n$$\\text{C}(\\text{diamond}) \\rightarrow \\text{C}(\\text{graphite}); \\quad \\Delta H = -1.89\\text{ kJ/mol}$$\nThis indicates that:",
+          "image": "",
+          "options": [
+            "Graphite is thermodynamically more stable than diamond, and diamond has higher enthalpy content",
+            "Diamond is thermodynamically more stable than graphite",
+            "The transformation is endothermic",
+            "The transition occurs instantaneously at room temperature"
+          ],
+          "correctOption": 0,
+          "solution": "1. Because $\\Delta H$ for the transformation $\\text{C}(\\text{diamond}) \\rightarrow \\text{C}(\\text{graphite})$ is negative ($-1.89\\text{ kJ/mol}$), heat is released, meaning graphite has lower internal energy and lower enthalpy than diamond.\n2. Lower enthalpy corresponds to greater thermodynamic stability under standard conditions ($298\\text{ K}, 1\\text{ bar}$).\n3. Thus, graphite is thermodynamically more stable than diamond. (The transition does not occur at an observable rate at room temperature due to an extraordinarily large activation energy barrier)."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The enthalpy of combustion of benzoic acid ($\\text{C}_6\\text{H}_5\\text{COOH}$) is often determined experimentally in a bomb calorimeter and used as a calibration standard because:",
+          "image": "",
+          "options": [
+            "It can be obtained in high crystalline purity, is non-hygroscopic, and burns cleanly without soot formation",
+            "It decomposes into methane and water",
+            "It has an enthalpy of combustion of zero",
+            "It undergoes combustion without requiring oxygen"
+          ],
+          "correctOption": 0,
+          "solution": "Benzoic acid is universally employed as a primary thermochemical calibration standard in bomb calorimetry because:\n1. It is readily prepared and purified in high crystalline purity by recrystallization.\n2. It is non-volatile and non-hygroscopic (does not absorb moisture from air).\n3. It ignites reliably and undergoes complete combustion in compressed oxygen without leaving unburned carbonaceous soot, releasing a precisely defined, certified quantity of heat ($\\Delta_c H = -3227\\text{ kJ/mol}$)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The enthalpy of atomisation of dihydrogen is $435.8\\text{ kJ/mol}$. This value represents the energy required to:",
+          "image": "",
+          "options": [
+            "Dissociate $1\\text{ mole}$ of gaseous $\\text{H}_2$ molecules completely into isolated gaseous hydrogen atoms",
+            "Ionize $1\\text{ mole}$ of hydrogen atoms into protons and electrons",
+            "Convert $1\\text{ mole}$ of liquid hydrogen into hydrogen gas",
+            "Convert $1\\text{ mole}$ of hydrogen gas into hydride ions"
+          ],
+          "correctOption": 0,
+          "solution": "The **enthalpy of atomisation** ($\\Delta_a H^\\circ$) is defined as the enthalpy change accompanying the complete cleavage of all covalent bonds in $1\\text{ mole}$ of a substance to obtain separated, isolated atoms in the **gaseous state**:\n$$\\text{H}_2(g) \\rightarrow 2\\text{H}(g); \\quad \\Delta_a H^\\circ = +435.8\\text{ kJ/mol}$$\nFor diatomic elemental gases like $\\text{H}_2$, the enthalpy of atomisation is identical to the bond dissociation enthalpy."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Given:\n$$\\text{N}_2(g) + 3\\text{H}_2(g) \\rightarrow 2\\text{NH}_3(g); \\quad \\Delta_r H^\\circ = -92.4\\text{ kJ}$$\nThe standard enthalpy of formation of ammonia gas ($\\Delta_f H^\\circ[\\text{NH}_3(g)]$) is:",
+          "image": "",
+          "options": [
+            "$-46.2\\text{ kJ/mol}$",
+            "$-92.4\\text{ kJ/mol}$",
+            "$+46.2\\text{ kJ/mol}$",
+            "$+92.4\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "By definition, the standard enthalpy of formation ($\\Delta_f H^\\circ$) is the enthalpy change for the formation of **$1\\text{ mole}$** of compound from its reference elements:\n$$\\frac{1}{2}\\text{N}_2(g) + \\frac{3}{2}\\text{H}_2(g) \\rightarrow \\text{NH}_3(g)$$\nThe given equation produces $2\\text{ moles of } \\text{NH}_3(g)$ with $\\Delta_r H^\\circ = -92.4\\text{ kJ}$.\nTherefore:\n$$\\Delta_f H^\\circ[\\text{NH}_3(g)] = \\frac{\\Delta_r H^\\circ}{2} = \\frac{-92.4\\text{ kJ}}{2\\text{ mol}} = -46.2\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Kirchhoff's equation gives the variation of enthalpy of a reaction with:",
+          "image": "",
+          "options": [
+            "Temperature at constant pressure: $\\frac{d(\\Delta H)}{dT} = \\Delta C_p$",
+            "Pressure at constant temperature: $\\frac{d(\\Delta H)}{dP} = \\Delta V$",
+            "Volume at constant pressure",
+            "Concentration of reactants"
+          ],
+          "correctOption": 0,
+          "solution": "Kirchhoff's equation describes the temperature dependence of the enthalpy of a chemical reaction at constant pressure:\n$$\\left(\\frac{\\partial \\Delta_r H}{\\partial T}\\right)_p = \\Delta C_p$$\nIn integrated form:\n$$\\Delta H_{T_2} - \\Delta H_{T_1} = \\Delta C_p (T_2 - T_1)$$\nwhere $\\Delta C_p = \\sum C_p(\\text{products}) - \\sum C_p(\\text{reactants})$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For the reaction:\n$$\\text{CH}_2=\\text{CH}_2(g) + \\text{H}_2(g) \\rightarrow \\text{CH}_3-\\text{CH}_3(g)$$\nGiven bond enthalpies: $\\text{C}=\\text{C} = 606\\text{ kJ/mol}, \\text{C}-\\text{C} = 336\\text{ kJ/mol}, \\text{C}-\\text{H} = 410\\text{ kJ/mol},$ and $\\text{H}-\\text{H} = 431\\text{ kJ/mol}$. The enthalpy change ($\\Delta_r H$) of the reaction is:",
+          "image": "",
+          "options": [
+            "$-119\\text{ kJ/mol}$",
+            "$+119\\text{ kJ/mol}$",
+            "$-556\\text{ kJ/mol}$",
+            "$-243\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using bond enthalpies:\n$$\\Delta_r H = \\sum(\\text{Bonds Broken}) - \\sum(\\text{Bonds Formed})$$\n1. Bonds broken:\n- One $\\text{C}=\\text{C}$ double bond: $606\\text{ kJ}$\n- One $\\text{H}-\\text{H}$ single bond: $431\\text{ kJ}$\n(The four existing $\\text{C}-\\text{H}$ bonds remain intact and cancel out).\n$$\\text{Total broken} = 606 + 431 = 1037\\text{ kJ}$$\n2. Bonds formed:\n- One $\\text{C}-\\text{C}$ single bond: $336\\text{ kJ}$\n- Two new $\\text{C}-\\text{H}$ bonds: $2 \\times 410 = 820\\text{ kJ}$\n$$\\text{Total formed} = 336 + 820 = 1156\\text{ kJ}$$\n3. Reaction enthalpy:\n$$\\Delta_r H = 1037 - 1156 = -119\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The enthalpy of solution of $\\text{NaCl}(s)$ in water is $+4.0\\text{ kJ/mol}$. If the lattice enthalpy of $\\text{NaCl}(s)$ is $+788.0\\text{ kJ/mol}$, the hydration enthalpy of $\\text{NaCl}$ (sum of hydration enthalpies of $\\text{Na}^+$ and $\\text{Cl}^-$) is:",
+          "image": "",
+          "options": [
+            "$-784.0\\text{ kJ/mol}$",
+            "$+784.0\\text{ kJ/mol}$",
+            "$-792.0\\text{ kJ/mol}$",
+            "$+792.0\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "The dissolution of an ionic solid is governed by the Born-Haber energy balance:\n$$\\Delta_{\\text{sol}}H^\\circ = \\Delta_{\\text{lattice}}H^\\circ + \\Delta_{\\text{hyd}}H^\\circ$$\nSubstitute the given values:\n$$+4.0 = +788.0 + \\Delta_{\\text{hyd}}H^\\circ$$\n$$\\Delta_{\\text{hyd}}H^\\circ = 4.0 - 788.0 = -784.0\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An enthalpy of combustion ($\\Delta_c H^\\circ$) is ALWAYS:",
+          "image": "",
+          "options": [
+            "Negative (exothermic)",
+            "Positive (endothermic)",
+            "Zero",
+            "Either positive or negative depending on the pressure"
+          ],
+          "correctOption": 0,
+          "solution": "Combustion is the rapid oxidation of a substance in excess oxygen that releases chemical energy as heat and light.\nBecause every combustion process is strictly exothermic, the enthalpy of combustion ($\\Delta_c H^\\circ$) is **always negative**."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The standard enthalpies of formation of $\\text{Al}_2\\text{O}_3(s)$ and $\\text{Fe}_2\\text{O}_3(s)$ are $-1670\\text{ kJ/mol}$ and $-824\\text{ kJ/mol}$ respectively. The enthalpy change for the thermite reaction:\n$$2\\text{Al}(s) + \\text{Fe}_2\\text{O}_3(s) \\rightarrow \\text{Al}_2\\text{O}_3(s) + 2\\text{Fe}(s)$$\nis:",
+          "image": "",
+          "options": [
+            "$-846\\text{ kJ}$",
+            "$+846\\text{ kJ}$",
+            "$-2494\\text{ kJ}$",
+            "$+2494\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using standard enthalpies of formation:\n$$\\Delta_r H^\\circ = \\Delta_f H^\\circ[\\text{Al}_2\\text{O}_3(s)] - \\Delta_f H^\\circ[\\text{Fe}_2\\text{O}_3(s)]$$\n(The elemental metals $\\text{Al}(s)$ and $\\text{Fe}(s)$ have $\\Delta_f H^\\circ = 0$).\n$$\\Delta_r H^\\circ = -1670 - (-824) = -1670 + 824 = -846\\text{ kJ}$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The heat of neutralisation of $\\text{HCl}$ by $\\text{NaOH}$ is $-57.1\\text{ kJ/mol}$, and that of $\\text{CH}_3\\text{COOH}$ by $\\text{NaOH}$ is $-55.2\\text{ kJ/mol}$. What is the heat required to ionize $1\\text{ mole}$ of acetic acid?",
+          "image": "",
+          "options": [
+            "$+1.9\\text{ kJ}$",
+            "$-1.9\\text{ kJ}$",
+            "$+112.3\\text{ kJ}$",
+            "$-112.3\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the relation for weak acids:\n$$\\Delta H_{\\text{neut}} = \\Delta H_{\\text{ion}} - 57.1\\text{ kJ/mol}$$\n$$-55.2 = \\Delta H_{\\text{ion}} - 57.1$$\n$$\\Delta H_{\\text{ion}} = -55.2 + 57.1 = +1.9\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following equations represents an ENDOTHERMIC process?",
+          "image": "",
+          "options": [
+            "$\\text{H}_2(g) \\rightarrow 2\\text{H}(g)$",
+            "$\\text{CH}_4(g) + 2\\text{O}_2(g) \\rightarrow \\text{CO}_2(g) + 2\\text{H}_2\\text{O}(l)$",
+            "$\\text{H}^+(aq) + \\text{OH}^-(aq) \\rightarrow \\text{H}_2\\text{O}(l)$",
+            "$\\text{Cl}(g) + e^- \\rightarrow \\text{Cl}^-(g)$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{H}_2(g) \\rightarrow 2\\text{H}(g)$ is bond breaking (bond dissociation). Breaking chemical bonds always requires an input of energy (endothermic, $\\Delta H > 0$).\n2. Hydrocarbon combustion, neutralization of strong acids and bases, and halogen electron capture are all exothermic processes ($\\Delta H < 0$)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] If the bond dissociation enthalpies of $\\text{C}-\\text{C}$ and $\\text{C}-\\text{H}$ bonds are $348\\text{ kJ/mol}$ and $414\\text{ kJ/mol}$ respectively, the enthalpy of atomisation of propane ($\\text{C}_3\\text{H}_8$) is:",
+          "image": "",
+          "options": [
+            "$4008\\text{ kJ/mol}$",
+            "$3312\\text{ kJ/mol}$",
+            "$3660\\text{ kJ/mol}$",
+            "$2784\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "In a molecule of propane ($\\text{CH}_3-\\text{CH}_2-\\text{CH}_3$):\n- There are two $\\text{C}-\\text{C}$ single bonds.\n- There are eight $\\text{C}-\\text{H}$ single bonds.\nEnthalpy of atomisation:\n$$\\Delta_a H^\\circ = 2 \\times \\Delta H(\\text{C}-\\text{C}) + 8 \\times \\Delta H(\\text{C}-\\text{H})$$\n$$\\Delta_a H^\\circ = 2(348) + 8(414) = 696 + 3312 = 4008\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The standard heat of formation of water vapor is $-241.8\\text{ kJ/mol}$, and the heat of vaporization of liquid water is $+44.0\\text{ kJ/mol}$. The standard heat of formation of liquid water is:",
+          "image": "",
+          "options": [
+            "$-285.8\\text{ kJ/mol}$",
+            "$-197.8\\text{ kJ/mol}$",
+            "$+285.8\\text{ kJ/mol}$",
+            "$+197.8\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "Thermochemical equations:\n1. $\\text{H}_2(g) + \\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{H}_2\\text{O}(g); \\quad \\Delta H_1 = -241.8\\text{ kJ/mol}$\n2. $\\text{H}_2\\text{O}(l) \\rightarrow \\text{H}_2\\text{O}(g); \\quad \\Delta H_2 = +44.0\\text{ kJ/mol}$\nTo obtain the formation of liquid water ($\\text{H}_2(g) + \\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{H}_2\\text{O}(l)$), subtract (2) from (1):\n$$\\Delta_f H^\\circ[\\text{H}_2\\text{O}(l)] = \\Delta H_1 - \\Delta H_2 = -241.8 - 44.0 = -285.8\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In which of the following reactions is the reaction enthalpy ($\\Delta_r H^\\circ$) equal to the standard enthalpy of combustion ($\\Delta_c H^\\circ$) of carbon?",
+          "image": "",
+          "options": [
+            "$\\text{C}(\\text{graphite}) + \\text{O}_2(g) \\rightarrow \\text{CO}_2(g)$",
+            "$\\text{C}(\\text{diamond}) + \\text{O}_2(g) \\rightarrow \\text{CO}_2(g)$",
+            "$\\text{C}(\\text{graphite}) + \\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{CO}(g)$",
+            "$\\text{CO}(g) + \\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{CO}_2(g)$"
+          ],
+          "correctOption": 0,
+          "solution": "The standard enthalpy of combustion of an element/compound is the enthalpy change when $1\\text{ mole}$ of the substance in its standard reference state is completely oxidized.\nFor carbon, the standard reference state is graphite, and complete combustion yields $\\text{CO}_2(g)$:\n$$\\text{C}(\\text{graphite}) + \\text{O}_2(g) \\rightarrow \\text{CO}_2(g)$$\n(This reaction represents both the enthalpy of combustion of graphite and the enthalpy of formation of $\\text{CO}_2$)."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The enthalpy of formation of ammonia is $-46.0\\text{ kJ/mol}$. The enthalpy change for the decomposition reaction $2\\text{NH}_3(g) \\rightarrow \\text{N}_2(g) + 3\\text{H}_2(g)$ is:",
+          "image": "",
+          "options": [
+            "$+92.0\\text{ kJ}$",
+            "$-92.0\\text{ kJ}$",
+            "$+46.0\\text{ kJ}$",
+            "$-46.0\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Formation of $1\\text{ mole}$ of $\\text{NH}_3$:\n$$\\frac{1}{2}\\text{N}_2(g) + \\frac{3}{2}\\text{H}_2(g) \\rightarrow \\text{NH}_3(g); \\quad \\Delta H = -46.0\\text{ kJ/mol}$$\n2. Multiplying by 2 and reversing the reaction for the decomposition of $2\\text{ moles of } \\text{NH}_3$:\n$$2\\text{NH}_3(g) \\rightarrow \\text{N}_2(g) + 3\\text{H}_2(g)$$\n$$\\Delta_r H = -2 \\times (-46.0) = +92.0\\text{ kJ}$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Calculate the enthalpy of the reaction:\n$$\\text{N}_2\\text{H}_4(l) + 2\\text{H}_2\\text{O}_2(l) \\rightarrow \\text{N}_2(g) + 4\\text{H}_2\\text{O}(l)$$\nGiven standard enthalpies of formation:\n- $\\Delta_f H^\\circ[\\text{N}_2\\text{H}_4(l)] = +50.6\\text{ kJ/mol}$\n- $\\Delta_f H^\\circ[\\text{H}_2\\text{O}_2(l)] = -187.8\\text{ kJ/mol}$\n- $\\Delta_f H^\\circ[\\text{H}_2\\text{O}(l)] = -285.8\\text{ kJ/mol}$",
+          "image": "",
+          "options": [
+            "$-818.2\\text{ kJ}$",
+            "$+818.2\\text{ kJ}$",
+            "$-630.4\\text{ kJ}$",
+            "$-919.4\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using $\\Delta_r H^\\circ = \\sum \\Delta_f H^\\circ(\\text{products}) - \\sum \\Delta_f H^\\circ(\\text{reactants})$:\n$$\\Delta_r H^\\circ = [\\Delta_f H^\\circ(\\text{N}_2) + 4\\Delta_f H^\\circ(\\text{H}_2\\text{O})] - [\\Delta_f H^\\circ(\\text{N}_2\\text{H}_4) + 2\\Delta_f H^\\circ(\\text{H}_2\\text{O}_2)]$$\nSince $\\Delta_f H^\\circ(\\text{N}_2) = 0$:\n$$\\Delta_r H^\\circ = [0 + 4(-285.8)] - [50.6 + 2(-187.8)]$$\n$$\\Delta_r H^\\circ = [-1143.2] - [50.6 - 375.6] = -1143.2 - (-325.0)$$\n$$\\Delta_r H^\\circ = -1143.2 + 325.0 = -818.2\\text{ kJ}$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The bond dissociation enthalpy of a diatomic molecule $A_2$ is the energy required to:",
+          "image": "",
+          "options": [
+            "Break $1\\text{ mole}$ of $A-A$ bonds in gaseous state into gaseous atoms",
+            "Convert $1\\text{ mole}$ of solid $A_2$ into gaseous atoms",
+            "Ionize $1\\text{ mole}$ of $A_2$ into cations and anions",
+            "Convert $1\\text{ mole}$ of liquid $A_2$ into vapor"
+          ],
+          "correctOption": 0,
+          "solution": "By definition, the bond dissociation enthalpy of a diatomic covalent molecule is the enthalpy change required to break **$1\\text{ mole}$** of covalent bonds in the **gaseous state** into separated gaseous atoms:\n$$A_2(g) \\rightarrow 2A(g); \\quad \\Delta H > 0$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] When $0.5\\text{ moles}$ of $\\text{HNO}_3$ is mixed with $0.5\\text{ moles}$ of $\\text{KOH}$ in $500\\text{ mL}$ of water, the heat evolved is:",
+          "image": "",
+          "options": [
+            "$28.55\\text{ kJ}$",
+            "$57.10\\text{ kJ}$",
+            "$114.20\\text{ kJ}$",
+            "$14.28\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Both $\\text{HNO}_3$ and $\\text{KOH}$ are strong electrolytes that dissociate completely.\n2. Complete neutralization of $1\\text{ mole of } \\text{H}^+$ by $1\\text{ mole of } \\text{OH}^-$ releases $57.1\\text{ kJ}$.\n3. For $0.5\\text{ moles of } \\text{H}^+$ and $0.5\\text{ moles of } \\text{OH}^-$:\n$$Q = 0.5 \\times 57.1\\text{ kJ} = 28.55\\text{ kJ}$$"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following is NOT an application of Hess's Law?",
+          "image": "",
+          "options": [
+            "Determination of the rate of a chemical reaction",
+            "Calculation of enthalpies of formation that cannot be measured directly (e.g., $\\text{CO}$)",
+            "Determination of resonance energies of aromatic compounds",
+            "Calculation of lattice enthalpies of ionic solids via the Born-Haber cycle"
+          ],
+          "correctOption": 0,
+          "solution": "1. Hess's Law is a purely thermodynamic relation based on state functions; it provides no information about reaction rates, reaction kinetics, or reaction mechanisms.\n2. Applications of Hess's Law include calculating enthalpies of formation, enthalpies of allotropic transitions, resonance energies, and lattice energies."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The standard enthalpy of combustion of glucose ($\\text{C}_6\\text{H}_{12}\\text{O}_6(s)$) is $-2808\\text{ kJ/mol}$. How much heat is evolved upon the complete combustion of $0.90\\text{ g}$ of glucose? (Molar mass of glucose $= 180\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$14.04\\text{ kJ}$",
+            "$28.08\\text{ kJ}$",
+            "$140.4\\text{ kJ}$",
+            "$7.02\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of glucose burned:\n$$n = \\frac{0.90\\text{ g}}{180\\text{ g/mol}} = 0.005\\text{ mol}$$\n2. Heat evolved:\n$$Q = 0.005\\text{ mol} \\times 2808\\text{ kJ/mol} = 14.04\\text{ kJ}$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the reaction:\n$$\\frac{1}{2}\\text{H}_2(g) + \\frac{1}{2}\\text{I}_2(s) \\rightarrow \\text{HI}(g); \\quad \\Delta H = +26.5\\text{ kJ/mol}$$\nIf the heat of sublimation of $\\text{I}_2(s)$ is $+62.4\\text{ kJ/mol}$, the enthalpy of formation of $\\text{HI}(g)$ from gaseous iodine ($\\text{I}_2(g)$) is:",
+          "image": "",
+          "options": [
+            "$-4.7\\text{ kJ/mol}$",
+            "$+57.7\\text{ kJ/mol}$",
+            "$-35.9\\text{ kJ/mol}$",
+            "$+88.9\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Target reaction:\n$$\\frac{1}{2}\\text{H}_2(g) + \\frac{1}{2}\\text{I}_2(g) \\rightarrow \\text{HI}(g); \\quad \\Delta H = ?$$\n2. Given reactions:\n- Reaction 1: $\\frac{1}{2}\\text{H}_2(g) + \\frac{1}{2}\\text{I}_2(s) \\rightarrow \\text{HI}(g); \\quad \\Delta H_1 = +26.5\\text{ kJ/mol}$\n- Reaction 2: $\\text{I}_2(s) \\rightarrow \\text{I}_2(g); \\quad \\Delta H_{\\text{sub}} = +62.4\\text{ kJ/mol} \\implies \\frac{1}{2}\\text{I}_2(s) \\rightarrow \\frac{1}{2}\\text{I}_2(g); \\quad \\Delta H = +31.2\\text{ kJ/mol}$\n3. Subtracting $\\frac{1}{2} \\times$ Reaction 2 from Reaction 1:\n$$\\Delta H = 26.5 - 31.2 = -4.7\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The resonance energy of benzene is defined as the difference between:",
+          "image": "",
+          "options": [
+            "The experimental heat of hydrogenation of benzene and that calculated for hypothetical cyclohexatriene",
+            "The heat of combustion of benzene and toluene",
+            "The ionization energy of benzene and cyclohexane",
+            "The bond energies of single and double carbon bonds"
+          ],
+          "correctOption": 0,
+          "solution": "Resonance energy is the difference in energy between the actual resonance hybrid and the most stable theoretical canonical structure:\n1. The heat of hydrogenation of cyclohexene (one double bond) is $-120\\text{ kJ/mol}$.\n2. For hypothetical 1,3,5-cyclohexatriene (three isolated double bonds), the calculated heat of hydrogenation is $3 \\times (-120) = -360\\text{ kJ/mol}$.\n3. The actual experimentally observed heat of hydrogenation of benzene is only $-208\\text{ kJ/mol}$.\n4. The difference ($-208 - (-360) = +152\\text{ kJ/mol}$) represents the **resonance stabilization energy** of benzene."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In which of the following reactions is the enthalpy change positive ($\\Delta H > 0$)?",
+          "image": "",
+          "options": [
+            "$\\text{H}_2\\text{O}(s) \\rightarrow \\text{H}_2\\text{O}(l)$ (fusion)",
+            "$\\text{CH}_4(g) + 2\\text{O}_2(g) \\rightarrow \\text{CO}_2(g) + 2\\text{H}_2\\text{O}(l)$",
+            "$\\text{Na}^+(g) + \\text{Cl}^-(g) \\rightarrow \\text{NaCl}(s)$",
+            "$\\text{H}^+(aq) + \\text{OH}^-(aq) \\rightarrow \\text{H}_2\\text{O}(l)$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Fusion (melting of ice) requires absorbing heat to overcome hydrogen bonds in the crystal lattice (endothermic, $\\Delta_{\\text{fus}}H > 0$).\n2. Combustion, lattice formation from gaseous ions, and acid-base neutralization are all strongly exothermic processes ($\\Delta H < 0$)."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The standard enthalpy of formation of $\\text{Fe}_2\\text{O}_3(s)$ is $-824.2\\text{ kJ/mol}$. The thermochemical equation representing this process is:",
+          "image": "",
+          "options": [
+            "$2\\text{Fe}(s) + \\frac{3}{2}\\text{O}_2(g) \\rightarrow \\text{Fe}_2\\text{O}_3(s); \\quad \\Delta H = -824.2\\text{ kJ}$",
+            "$4\\text{Fe}(s) + 3\\text{O}_2(g) \\rightarrow 2\\text{Fe}_2\\text{O}_3(s); \\quad \\Delta H = -824.2\\text{ kJ}$",
+            "$2\\text{FeO}(s) + \\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{Fe}_2\\text{O}_3(s); \\quad \\Delta H = -824.2\\text{ kJ}$",
+            "$2\\text{Fe}(g) + 3\\text{O}(g) \\rightarrow \\text{Fe}_2\\text{O}_3(s); \\quad \\Delta H = -824.2\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "Enthalpy of formation must form exactly **$1\\text{ mole}$** of the compound from its constituent elements in their standard reference physical states:\n- Solid iron: $\\text{Fe}(s)$\n- Gaseous oxygen: $\\text{O}_2(g)$\nBalanced equation for $1\\text{ mole of } \\text{Fe}_2\\text{O}_3(s)$:\n$$2\\text{Fe}(s) + \\frac{3}{2}\\text{O}_2(g) \\rightarrow \\text{Fe}_2\\text{O}_3(s); \\quad \\Delta H = -824.2\\text{ kJ}$$"
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] When $100\\text{ mL}$ of $0.1\\text{ M } \\text{HCl}$ is mixed with $100\\text{ mL}$ of $0.1\\text{ M } \\text{NaOH}$ in an insulated calorimeter, the temperature of the solution rises by $\\Delta T_1$. If the experiment is repeated using $200\\text{ mL}$ of each of the same solutions, the temperature rise $\\Delta T_2$ will be:",
+          "image": "",
+          "options": [
+            "$\\Delta T_2 = \\Delta T_1$",
+            "$\\Delta T_2 = 2\\Delta T_1$",
+            "$\\Delta T_2 = \\frac{1}{2}\\Delta T_1$",
+            "$\\Delta T_2 = 4\\Delta T_1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the second experiment, both the volume of $\\text{HCl}$ and $\\text{NaOH}$ are doubled, so the amount of water formed (and hence the total heat released $q$) is doubled: $q_2 = 2 q_1$.\n2. However, the total mass/volume of the solution is also doubled: $m_2 = 2 m_1$.\n3. Since $\\Delta T = \\frac{q}{m \\cdot c}$:\n$$\\Delta T_2 = \\frac{2 q_1}{(2 m_1) \\cdot c} = \\frac{q_1}{m_1 \\cdot c} = \\Delta T_1$$\nTherefore, the temperature rise remains unchanged."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following statements regarding bond enthalpy is INCORRECT?",
+          "image": "",
+          "options": [
+            "In polyatomic molecules like $\\text{H}_2\\text{O}$, all individual $\\text{O}-\\text{H}$ bonds require exactly identical dissociation energy to break",
+            "Bond enthalpy is always positive",
+            "Mean bond enthalpy is the average of bond dissociation enthalpies of identical bonds in polyatomic molecules",
+            "Bond breaking is endothermic, whereas bond formation is exothermic"
+          ],
+          "correctOption": 0,
+          "solution": "In polyatomic molecules like water:\n- Breaking the first $\\text{O}-\\text{H}$ bond: $\\text{H}_2\\text{O}(g) \\rightarrow \\text{OH}(g) + \\text{H}(g); \\quad \\Delta H_1 = +502\\text{ kJ/mol}$\n- Breaking the second $\\text{O}-\\text{H}$ bond from the hydroxyl radical: $\\text{OH}(g) \\rightarrow \\text{O}(g) + \\text{H}(g); \\quad \\Delta H_2 = +427\\text{ kJ/mol}$\nThe two bond dissociation energies are different because the electronic environment changes after the first bond breaks.\nTherefore, the mean bond enthalpy is used ($\\frac{502 + 427}{2} = 464.5\\text{ kJ/mol}$). Statement A is incorrect."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Enthalpy of sublimation of iodine crystals is $62.4\\text{ kJ/mol}$. What amount of heat is absorbed when $25.4\\text{ g}$ of solid iodine sublimes? (Molar mass of $\\text{I}_2 = 254\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$6.24\\text{ kJ}$",
+            "$62.4\\text{ kJ}$",
+            "$12.48\\text{ kJ}$",
+            "$3.12\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of iodine sublimed:\n$$n = \\frac{25.4\\text{ g}}{254\\text{ g/mol}} = 0.10\\text{ mol}$$\n2. Heat absorbed:\n$$Q = n \\times \\Delta_{\\text{sub}}H = 0.10\\text{ mol} \\times 62.4\\text{ kJ/mol} = 6.24\\text{ kJ}$$"
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The standard enthalpy of formation of gaseous ammonia is $-46.1\\text{ kJ/mol}$. If the bond enthalpies of $\\text{N}\\equiv\\text{N}$ and $\\text{H}-\\text{H}$ are $945.4\\text{ kJ/mol}$ and $435.8\\text{ kJ/mol}$ respectively, the average $\\text{N}-\\text{H}$ bond enthalpy in $\\text{NH}_3$ is:",
+          "image": "",
+          "options": [
+            "$388.9\\text{ kJ/mol}$",
+            "$1166.8\\text{ kJ/mol}$",
+            "$352.0\\text{ kJ/mol}$",
+            "$412.5\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Formation reaction for $\\text{NH}_3(g)$:\n$$\\frac{1}{2}\\text{N}_2(g) + \\frac{3}{2}\\text{H}_2(g) \\rightarrow \\text{NH}_3(g); \\quad \\Delta_f H^\\circ = -46.1\\text{ kJ/mol}$$\n2. Using bond enthalpies:\n$$\\Delta_f H^\\circ = \\left[\\frac{1}{2}\\Delta H(\\text{N}\\equiv\\text{N}) + \\frac{3}{2}\\Delta H(\\text{H}-\\text{H})\\right] - 3\\Delta H(\\text{N}-\\text{H})$$\n$$-46.1 = \\left[\\frac{1}{2}(945.4) + \\frac{3}{2}(435.8)\\right] - 3\\Delta H(\\text{N}-\\text{H})$$\n$$-46.1 = [472.7 + 653.7] - 3\\Delta H(\\text{N}-\\text{H})$$\n$$-46.1 = 1126.4 - 3\\Delta H(\\text{N}-\\text{H})$$\n$$3\\Delta H(\\text{N}-\\text{H}) = 1126.4 + 46.1 = 1172.5$$\n$$\\Delta H(\\text{N}-\\text{H}) = \\frac{1172.5}{3} \\approx 388.83\\text{ kJ/mol} \\approx 388.9\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the combustion reaction of propane:\n$$\\text{C}_3\\text{H}_8(g) + 5\\text{O}_2(g) \\rightarrow 3\\text{CO}_2(g) + 4\\text{H}_2\\text{O}(l)$$\nGiven $\\Delta_f H^\\circ[\\text{C}_3\\text{H}_8(g)] = -104\\text{ kJ/mol}, \\Delta_f H^\\circ[\\text{CO}_2(g)] = -394\\text{ kJ/mol},$ and $\\Delta_f H^\\circ[\\text{H}_2\\text{O}(l)] = -286\\text{ kJ/mol}$. The standard heat of combustion of propane is:",
+          "image": "",
+          "options": [
+            "$-2222\\text{ kJ/mol}$",
+            "$+2222\\text{ kJ/mol}$",
+            "$-2014\\text{ kJ/mol}$",
+            "$-2430\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using $\\Delta_c H^\\circ = \\sum \\Delta_f H^\\circ(\\text{products}) - \\sum \\Delta_f H^\\circ(\\text{reactants})$:\n$$\\Delta_c H^\\circ = [3\\Delta_f H^\\circ(\\text{CO}_2) + 4\\Delta_f H^\\circ(\\text{H}_2\\text{O})] - [\\Delta_f H^\\circ(\\text{C}_3\\text{H}_8) + 5\\Delta_f H^\\circ(\\text{O}_2)]$$\n$$\\Delta_c H^\\circ = [3(-394) + 4(-286)] - [-104 + 0]$$\n$$\\Delta_c H^\\circ = [-1182 - 1144] + 104 = -2326 + 104 = -2222\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Enthalpy of hydration is always:",
+          "image": "",
+          "options": [
+            "Negative, because strong ion-dipole attractive forces are established between ions and polar water molecules",
+            "Positive, because energy is required to dissolve the ions",
+            "Zero, because hydration is an isothermal process",
+            "Equal to the lattice energy of the crystal"
+          ],
+          "correctOption": 0,
+          "solution": "When gaseous ions are surrounded and solvated by polar water molecules, attractive ion-dipole electrostatic interactions are established:\n$$M^+(g) + X^-(g) + aq \\rightarrow M^+(aq) + X^-(aq); \\quad \\Delta_{\\text{hyd}}H < 0$$\nBecause bond formation / attractive interaction releases energy, the enthalpy of hydration is **always negative (exothermic)**."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Given the reactions:\n1. $\\text{S}(s) + \\text{O}_2(g) \\rightarrow \\text{SO}_2(g); \\quad \\Delta H = -296.8\\text{ kJ}$\n2. $\\text{S}(s) + \\frac{3}{2}\\text{O}_2(g) \\rightarrow \\text{SO}_3(g); \\quad \\Delta H = -395.7\\text{ kJ}$\nThe enthalpy of the reaction $\\text{SO}_2(g) + \\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{SO}_3(g)$ is:",
+          "image": "",
+          "options": [
+            "$-98.9\\text{ kJ}$",
+            "$+98.9\\text{ kJ}$",
+            "$-692.5\\text{ kJ}$",
+            "$+692.5\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "Subtracting equation (1) from equation (2):\n$$\\left[\\text{S}(s) + \\frac{3}{2}\\text{O}_2(g)\\right] - [\\text{S}(s) + \\text{O}_2(g)] \\rightarrow \\text{SO}_3(g) - \\text{SO}_2(g)$$\n$$\\text{SO}_2(g) + \\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{SO}_3(g)$$\n$$\\Delta_r H = -395.7 - (-296.8) = -395.7 + 296.8 = -98.9\\text{ kJ}$$"
+        }
+      ]
+    }
+  ]
+}
