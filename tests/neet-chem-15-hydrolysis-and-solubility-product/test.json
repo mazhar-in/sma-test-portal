@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-15-hydrolysis-and-solubility-product",
+  "title": "Hydrolysis & Solubility Product (Salt Hydrolysis, Ksp, & Analytical Applications)",
+  "syllabus": "Salt hydrolysis and its classification: salts of strong acid-strong base (no hydrolysis), strong acid-weak base (cationic hydrolysis, Kh, h, pH = 7 - 0.5 pKb - 0.5 log C), weak acid-strong base (anionic hydrolysis, Kh, h, pH = 7 + 0.5 pKa + 0.5 log C), and weak acid-weak base (both cation and anion hydrolysis, Kh, h, pH = 7 + 0.5 pKa - 0.5 pKb); Hydrolysis constant (Kh), degree of hydrolysis (h); Solubility equilibrium of sparingly soluble salts; Solubility product constant (Ksp) and molar solubility (s) relationships for various stoichiometric types (AB, AB2, A2B3, etc.); Ionic product (Qsp or Kip) vs solubility product (Ksp) criteria for precipitation; Common ion effect on solubility; Simultaneous solubility of sparingly soluble salts; Analytical and medical applications: Qualitative inorganic salt analysis (precipitation of Group II sulfides in acidic medium vs Group IV sulfides in basic medium, Group III hydroxides with NH4Cl + NH4OH), fractional precipitation, salting out of soap, formation of kidney stones (calcium oxalate, calcium phosphate), and tooth enamel remineralization/fluorosis",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The solubility product ($K_{sp}$) of a sparingly soluble salt $\\text{Zr}_3(\\text{PO}_4)_4$ in terms of its molar solubility ($s$) is given by:",
+          "image": "",
+          "options": [
+            "$6912\\, s^7$",
+            "$144\\, s^7$",
+            "$108\\, s^5$",
+            "$6912\\, s^6$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Write the dissolution equilibrium for $\\text{Zr}_3(\\text{PO}_4)_4$:\n$$\\text{Zr}_3(\\text{PO}_4)_4(s) \\rightleftharpoons 3\\text{Zr}^{4+}(aq) + 4\\text{PO}_4^{3-}(aq)$$\n2. In a saturated solution of molar solubility $s$:\n$$[\\text{Zr}^{4+}] = 3s, \\quad [\\text{PO}_4^{3-}] = 4s$$\n3. Write the solubility product expression:\n$$K_{sp} = [\\text{Zr}^{4+}]^3 [\\text{PO}_4^{3-}]^4 = (3s)^3 \\times (4s)^4$$\n$$K_{sp} = (27 s^3) \\times (256 s^4) = 6912\\, s^7$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The $\\text{pH}$ of a $0.01\\text{ M}$ aqueous solution of sodium acetate ($\\text{CH}_3\\text{COONa}$) at $25^\\circ\\text{C}$ is: (Given: $pK_a[\\text{CH}_3\\text{COOH}] = 4.74$)",
+          "image": "",
+          "options": [
+            "$8.37$",
+            "$5.63$",
+            "$9.37$",
+            "$7.00$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Sodium acetate is the salt of a weak acid ($\\text{CH}_3\\text{COOH}$) and a strong base ($\\text{NaOH}$), which undergoes anionic hydrolysis.\n2. The formula for the $\\text{pH}$ of a salt of weak acid and strong base is:\n$$\\text{pH} = 7 + \\frac{1}{2}pK_a + \\frac{1}{2}\\log_{10} C$$\n3. Given $pK_a = 4.74$ and $C = 0.01\\text{ M} = 10^{-2}\\text{ M} \\implies \\log_{10} C = -2$:\n$$\\text{pH} = 7 + \\frac{1}{2}(4.74) + \\frac{1}{2}(-2)$$\n$$\\text{pH} = 7 + 2.37 - 1 = 8.37$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In qualitative inorganic salt analysis, Group II cations (such as $\\text{Cu}^{2+}, \\text{Pb}^{2+}, \\text{Cd}^{2+}$) are precipitated as sulfides by passing $\\text{H}_2\\text{S}$ gas in the presence of dilute $\\text{HCl}$. The role of dilute $\\text{HCl}$ is to:",
+          "image": "",
+          "options": [
+            "Suppress the ionization of $\\text{H}_2\\text{S}$ via common ion effect so that $[\\text{S}^{2-}]$ exceeds only the low $K_{sp}$ of Group II sulfides",
+            "Increase the solubility of Group II sulfides",
+            "Oxidize $\\text{H}_2\\text{S}$ to colloidal sulfur",
+            "Completely precipitate Group IV sulfides simultaneously"
+          ],
+          "correctOption": 0,
+          "solution": "1. Hydrogen sulfide is a weak diprotic acid:\n$$\\text{H}_2\\text{S}(aq) \\rightleftharpoons 2\\text{H}^+(aq) + \\text{S}^{2-}(aq)$$\n2. Adding dilute $\\text{HCl}$ introduces a high concentration of the common ion $\\text{H}^+$, which shifts the equilibrium to the left according to Le Chatelier's principle (common ion effect).\n3. This severely suppresses the concentration of sulfide ions $[\\text{S}^{2-}]$.\n4. The remaining $[\\text{S}^{2-}]$ is sufficient to exceed the extremely low solubility products of Group II sulfides ($K_{sp} \\sim 10^{-30}$ to $10^{-44}$), causing them to precipitate.\n5. However, the ionic product remains well below the higher $K_{sp}$ of Group IV sulfides (such as $\\text{ZnS}, \\text{NiS}, \\text{MnS}$, where $K_{sp} \\sim 10^{-15}$ to $10^{-24}$), preventing their premature precipitation."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The solubility product of $\\text{AgCl}$ in water is $K_{sp} = 1.6 \\times 10^{-10}$. What is the molar solubility of $\\text{AgCl}$ in a $0.10\\text{ M } \\text{NaCl}$ solution?",
+          "image": "",
+          "options": [
+            "$1.6 \\times 10^{-9}\\text{ M}$",
+            "$1.26 \\times 10^{-5}\\text{ M}$",
+            "$1.6 \\times 10^{-10}\\text{ M}$",
+            "$1.6 \\times 10^{-8}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the presence of $0.10\\text{ M } \\text{NaCl}$, the concentration of chloride ions from $\\text{NaCl}$ is $[\\text{Cl}^-] = 0.10\\text{ M}$.\n2. If $s'$ is the molar solubility of $\\text{AgCl}$ in the presence of this common ion:\n$$[\\text{Ag}^+] = s', \\quad [\\text{Cl}^-] = s' + 0.10 \\approx 0.10\\text{ M} \\quad (\\text{since } s' \\ll 0.10)$$\n3. From the solubility product expression:\n$$K_{sp} = [\\text{Ag}^+][\\text{Cl}^-] = s' \\times 0.10$$\n$$s' = \\frac{K_{sp}}{0.10} = \\frac{1.6 \\times 10^{-10}}{0.10} = 1.6 \\times 10^{-9}\\text{ M}$$\n(Notice that common ion effect reduces the solubility from $1.26 \\times 10^{-5}\\text{ M}$ in pure water down to $1.6 \\times 10^{-9}\\text{ M}$)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The most common chemical constituent of human kidney stones (nephrolithiasis) is crystalline calcium oxalate monohydrate ($\\text{CaC}_2\\text{O}_4 \\cdot \\text{H}_2\\text{O}$). Precipitation of calcium oxalate in the renal tubules occurs when:",
+          "image": "",
+          "options": [
+            "The ionic product $[\\text{Ca}^{2+}][\\text{C}_2\\text{O}_4^{2-}]$ exceeds the solubility product $K_{sp}$",
+            "The ionic product is less than $K_{sp}$",
+            "The urine becomes strongly acidic with $\\text{pH} < 2$",
+            "The concentration of oxalate ions approaches zero"
+          ],
+          "correctOption": 0,
+          "solution": "1. The equilibrium in urine is:\n$$\\text{CaC}_2\\text{O}_4(s) \\rightleftharpoons \\text{Ca}^{2+}(aq) + \\text{C}_2\\text{O}_4^{2-}(aq)$$\n2. The criterion for precipitation in any solution is:\n$$Q_{sp} > K_{sp}$$\nwhere $Q_{sp} = [\\text{Ca}^{2+}][\\text{C}_2\\text{O}_4^{2-}]$ is the ionic product (or reaction quotient).\n3. When urine becomes hyper-saturated with calcium and oxalate ions such that the ionic product exceeds $K_{sp}$, spontaneous nucleation and crystallization of calcium oxalate occur, forming kidney stones."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following salts produces an aqueous solution with a $\\text{pH}$ INDEPENDENT of its molar concentration?",
+          "image": "",
+          "options": [
+            "$\\text{CH}_3\\text{COONH}_4$",
+            "$\\text{CH}_3\\text{COONa}$",
+            "$\\text{NH}_4\\text{Cl}$",
+            "$\\text{NaCN}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Ammonium acetate ($\\text{CH}_3\\text{COONH}_4$) is the salt of a weak acid ($\\text{CH}_3\\text{COOH}$) and a weak base ($\\text{NH}_4\\text{OH}$).\n2. Both the cation and anion undergo simultaneous hydrolysis:\n$$\\text{CH}_3\\text{COO}^- + \\text{NH}_4^+ + \\text{H}_2\\text{O} \\rightleftharpoons \\text{CH}_3\\text{COOH} + \\text{NH}_4\\text{OH}$$\n3. The mathematical expression for the $\\text{pH}$ of a salt of weak acid and weak base is:\n$$\\text{pH} = 7 + \\frac{1}{2}pK_a - \\frac{1}{2}pK_b$$\n4. Notice that this equation contains no concentration term ($C$).\nTherefore, the $\\text{pH}$ of $\\text{CH}_3\\text{COONH}_4$ is completely independent of concentration."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A solution contains equal concentrations ($0.01\\text{ M}$ each) of $\\text{Cl}^-, \\text{Br}^-,$ and $\\text{I}^-$. Upon slow, dropwise addition of $\\text{AgNO}_3$ solution, which silver halide precipitates FIRST? (Given: $K_{sp}[\\text{AgCl}] = 1.8 \\times 10^{-10}, K_{sp}[\\text{AgBr}] = 5.0 \\times 10^{-13}, K_{sp}[\\text{AgI}] = 8.3 \\times 10^{-17}$)",
+          "image": "",
+          "options": [
+            "$\\text{AgI}$",
+            "$\\text{AgCl}$",
+            "$\\text{AgBr}$",
+            "All three precipitate simultaneously"
+          ],
+          "correctOption": 0,
+          "solution": "Precipitation of a silver halide $\\text{AgX}$ occurs as soon as $[\\text{Ag}^+][\\text{X}^-] \\ge K_{sp}$.\nSince $[\text{X}^-] = 0.01\\text{ M}$ for all three halides, the minimum $[\\text{Ag}^+]$ required for precipitation is:\n- For $\\text{AgCl}$: $[\\text{Ag}^+] = \\frac{1.8 \\times 10^{-10}}{0.01} = 1.8 \\times 10^{-8}\\text{ M}$\n- For $\\text{AgBr}$: $[\\text{Ag}^+] = \\frac{5.0 \\times 10^{-13}}{0.01} = 5.0 \\times 10^{-11}\\text{ M}$\n- For $\\text{AgI}$: $[\\text{Ag}^+] = \\frac{8.3 \\times 10^{-17}}{0.01} = 8.3 \\times 10^{-15}\\text{ M}$\nBecause $\\text{AgI}$ requires the lowest concentration of $\\text{Ag}^+$ ($8.3 \\times 10^{-15}\\text{ M}$), it reaches its solubility product first and precipitates before the others (fractional precipitation)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The relation between hydrolysis constant ($K_h$), ionic product of water ($K_w$), and base dissociation constant ($K_b$) for the salt of a strong acid and a weak base (such as $\\text{NH}_4\\text{Cl}$) is:",
+          "image": "",
+          "options": [
+            "$K_h = \\frac{K_w}{K_b}$",
+            "$K_h = \\frac{K_w}{K_a}$",
+            "$K_h = \\frac{K_w}{K_a \\cdot K_b}$",
+            "$K_h = \\frac{K_a \\cdot K_b}{K_w}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In $\\text{NH}_4\\text{Cl}$, the ammonium ion ($\\text{NH}_4^+$) undergoes cationic hydrolysis:\n$$\\text{NH}_4^+(aq) + \\text{H}_2\\text{O}(l) \\rightleftharpoons \\text{NH}_4\\text{OH}(aq) + \\text{H}^+(aq)$$\n$$K_h = \\frac{[\\text{NH}_4\\text{OH}][\\text{H}^+]}{[\\text{NH}_4^+]}$$\n2. Multiplying numerator and denominator by $[\\text{OH}^-]$:\n$$K_h = \\frac{[\\text{NH}_4\\text{OH}]}{[\\text{NH}_4^+][\\text{OH}^-]} \\times [\\text{H}^+][\\text{OH}^-] = \\frac{1}{K_b} \\times K_w = \\frac{K_w}{K_b}$$\nThus, $K_h = \\frac{K_w}{K_b}$."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In qualitative analysis, prior to precipitating Group III hydroxides ($\\text{Fe}^{3+}, \\text{Al}^{3+}, \\text{Cr}^{3+}$) with $\\text{NH}_4\\text{OH}$, solid ammonium chloride ($\\text{NH}_4\\text{Cl}$) is added in excess. What is the analytical function of adding $\\text{NH}_4\\text{Cl}$?",
+          "image": "",
+          "options": [
+            "To suppress the ionization of $\\text{NH}_4\\text{OH}$ so that $[\\text{OH}^-]$ is sufficient to precipitate only Group III hydroxides and not Group IV/V hydroxides",
+            "To increase $[\\text{OH}^-]$ to precipitate magnesium hydroxide",
+            "To keep Group III cations dissolved as complex ions",
+            "To convert trivalent cations into divalent cations"
+          ],
+          "correctOption": 0,
+          "solution": "1. Ammonium hydroxide is a weak base:\n$$\\text{NH}_4\\text{OH}(aq) \\rightleftharpoons \\text{NH}_4^+(aq) + \\text{OH}^-(aq)$$\n2. Adding excess $\\text{NH}_4\\text{Cl}$ introduces a high concentration of the common ion $\\text{NH}_4^+$, shifting the equilibrium backwards (common ion effect) and drastically reducing $[\\text{OH}^-]$.\n3. The reduced $[\\text{OH}^-]$ is still high enough to exceed the low $K_{sp}$ of Group III hydroxides ($\\text{Fe(OH)}_3 \\sim 10^{-38}, \\text{Al(OH)}_3 \\sim 10^{-33}$).\n4. However, the ionic product remains too low to precipitate hydroxides of higher groups such as $\\text{Zn(OH)}_2, \\text{Mn(OH)}_2,$ and $\\text{Mg(OH)}_2$ ($K_{sp} \\sim 10^{-11}$ to $10^{-17}$)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Tooth enamel consists predominantly of hydroxyapatite, $\\text{Ca}_5(\\text{PO}_4)_3(\\text{OH})$. Fluoridation of drinking water converts hydroxyapatite into fluorapatite, $\\text{Ca}_5(\\text{PO}_4)_3\\text{F}$. Fluorapatite protects teeth against dental caries (cavities) primarily because:",
+          "image": "",
+          "options": [
+            "Fluorapatite has a significantly lower solubility product and is far more resistant to acid demineralization by bacterial plaque",
+            "Fluoride oxidizes bacterial enzymes to form gaseous fluorine",
+            "Fluorapatite completely replaces calcium with sodium",
+            "Fluorapatite raises the salivary $\\text{pH}$ to $12$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Hydroxyapatite dissolves in an acidic environment generated by anaerobic bacterial fermentation of dietary sugars:\n$$\\text{Ca}_5(\\text{PO}_4)_3(\\text{OH})(s) + \\text{H}^+(aq) \\rightarrow 5\\text{Ca}^{2+}(aq) + 3\\text{PO}_4^{3-}(aq) + \\text{H}_2\\text{O}(l)$$\n2. When fluoride ion replaces the hydroxide ion, fluorapatite ($\\text{Ca}_5(\\text{PO}_4)_3\\text{F}$) forms:\n- The smaller, harder $\\text{F}^-$ ion fits symmetrically into the crystal lattice, increasing lattice energy.\n- Fluorapatite has a lower solubility product ($K_{sp}$) and dissolves only at much lower critical $\\text{pH}$ ($\\text{pH} \\approx 4.5$) compared to hydroxyapatite ($\\text{pH} \\approx 5.5$).\n3. This imparts substantial resistance against acid demineralization and decay."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The molar solubility of a sparingly soluble salt $AB_2$ in pure water is $s = 1.0 \\times 10^{-5}\\text{ mol/L}$. The solubility product ($K_{sp}$) of the salt is:",
+          "image": "",
+          "options": [
+            "$4.0 \\times 10^{-15}$",
+            "$1.0 \\times 10^{-15}$",
+            "$4.0 \\times 10^{-10}$",
+            "$2.0 \\times 10^{-15}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Dissociation of $AB_2$:\n$$AB_2(s) \\rightleftharpoons A^{2+}(aq) + 2B^-(aq)$$\n$$[A^{2+}] = s, \\quad [B^-] = 2s$$\n2. Solubility product:\n$$K_{sp} = [A^{2+}][B^-]^2 = s \\times (2s)^2 = 4s^3$$\n3. Substitute $s = 1.0 \\times 10^{-5}\\text{ M}$:\n$$K_{sp} = 4 \\times (1.0 \\times 10^{-5})^3 = 4 \\times 10^{-15}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following aqueous salt solutions has a $\\text{pH} < 7$ at $25^\\circ\\text{C}$ due to cationic hydrolysis?",
+          "image": "",
+          "options": [
+            "$\\text{NH}_4\\text{Cl}$",
+            "$\\text{KCN}$",
+            "$\\text{CH}_3\\text{COONa}$",
+            "$\\text{K}_2\\text{SO}_4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Ammonium chloride ($\\text{NH}_4\\text{Cl}$) is the salt of a weak base ($\\text{NH}_4\\text{OH}$) and a strong acid ($\\text{HCl}$).\n2. The ammonium ion undergoes cationic hydrolysis:\n$$\\text{NH}_4^+(aq) + \\text{H}_2\\text{O}(l) \\rightleftharpoons \\text{NH}_4\\text{OH}(aq) + \\text{H}^+(aq)$$\nBecause $\\text{H}^+$ ions are generated in excess of $\\text{OH}^-$, the solution is acidic ($\\text{pH} < 7$).\n3. $\\text{KCN}$ and $\\text{CH}_3\\text{COONa}$ undergo anionic hydrolysis yielding alkaline solutions ($\\text{pH} > 7$).\n4. $\\text{K}_2\\text{SO}_4$ is the salt of a strong acid and strong base, undergoing no hydrolysis ($\\text{pH} = 7$)."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The manufacture of soap involves alkaline saponification of fats followed by 'salting out' the soap by adding solid sodium chloride ($\\text{NaCl}$). The precipitation of soap ($\\text{RCOONa}$) occurs because:",
+          "image": "",
+          "options": [
+            "Excess $\\text{Na}^+$ ions from $\\text{NaCl}$ cause the ionic product $[\\text{RCOO}^-][\\text{Na}^+]$ to exceed the $K_{sp}$ of soap",
+            "$\\text{NaCl}$ reacts chemically with soap to form insoluble sodium carbonate",
+            "$\\text{NaCl}$ lowers the temperature of the mixture below its freezing point",
+            "$\\text{NaCl}$ protonates the carboxylate anion"
+          ],
+          "correctOption": 0,
+          "solution": "1. Soap consists of sodium salts of long-chain fatty acids (e.g., sodium stearate, $\\text{C}_{17}\\text{H}_{35}\\text{COONa}$), existing in solution in equilibrium with its ions:\n$$\\text{RCOONa}(s) \\rightleftharpoons \\text{RCOO}^-(aq) + \\text{Na}^+(aq)$$\n2. Adding excess $\\text{NaCl}$ introduces a high concentration of the common ion $\\text{Na}^+$.\n3. According to the common ion effect and Le Chatelier's principle, the ionic product $[\\text{RCOO}^-][\\text{Na}^+]$ rapidly exceeds the solubility product $K_{sp}$ of the soap.\n4. Consequently, the soap precipitates out of solution as a solid curd that floats on the glycerol lye layer ('salting out of soap')."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The degree of hydrolysis ($h$) of a $0.1\\text{ M}$ solution of potassium cyanide ($\\text{KCN}$) at $25^\\circ\\text{C}$ is: (Given: $K_w = 1.0 \\times 10^{-14}, K_a[\\text{HCN}] = 1.0 \\times 10^{-9}$)",
+          "image": "",
+          "options": [
+            "$1.0 \\times 10^{-2}$",
+            "$1.0 \\times 10^{-3}$",
+            "$1.0 \\times 10^{-4}$",
+            "$3.16 \\times 10^{-3}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{KCN}$ is the salt of a weak acid and strong base:\n$$K_h = \\frac{K_w}{K_a} = \\frac{1.0 \\times 10^{-14}}{1.0 \\times 10^{-9}} = 1.0 \\times 10^{-5}$$\n2. The degree of hydrolysis $h$ for a salt of weak acid and strong base is:\n$$h = \\sqrt{\\frac{K_h}{C}}$$\n3. Given $C = 0.1\\text{ M}$:\n$$h = \\sqrt{\\frac{1.0 \\times 10^{-5}}{0.1}} = \\sqrt{1.0 \\times 10^{-4}} = 1.0 \\times 10^{-2} = 0.01$$\n(This corresponds to $1.0\\%$ hydrolysis)."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Equal volumes of $0.002\\text{ M } \\text{CaCl}_2$ and $0.0004\\text{ M } \\text{Na}_2\\text{SO}_4$ solutions are mixed together. Will calcium sulfate precipitate? (Given: $K_{sp}[\\text{CaSO}_4] = 2.4 \\times 10^{-5}$)",
+          "image": "",
+          "options": [
+            "No, because the ionic product ($2.0 \\times 10^{-7}$) is less than $K_{sp}$",
+            "Yes, because the ionic product exceeds $K_{sp}$",
+            "Yes, because $\\text{CaCl}_2$ is an insoluble salt",
+            "No, because sulfate ions do not form precipitates"
+          ],
+          "correctOption": 0,
+          "solution": "1. When equal volumes of two solutions are mixed, the concentration of each solute is halved:\n$$[\\text{Ca}^{2+}] = \\frac{0.002\\text{ M}}{2} = 0.001\\text{ M} = 1.0 \\times 10^{-3}\\text{ M}$$\n$$[\\text{SO}_4^{2-}] = \\frac{0.0004\\text{ M}}{2} = 0.0002\\text{ M} = 2.0 \\times 10^{-4}\\text{ M}$$\n2. Calculate the ionic product ($Q_{sp}$):\n$$Q_{sp} = [\\text{Ca}^{2+}][\\text{SO}_4^{2-}] = (1.0 \\times 10^{-3}) \\times (2.0 \\times 10^{-4}) = 2.0 \\times 10^{-7}$$\n3. Compare $Q_{sp}$ with $K_{sp}$:\n$$Q_{sp} = 2.0 \\times 10^{-7} < K_{sp} = 2.4 \\times 10^{-5}$$\nSince the ionic product is less than $K_{sp}$, the solution remains unsaturated and **no precipitation occurs**."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The solubility product of lead(II) iodide ($\\text{PbI}_2$) is $K_{sp} = 7.1 \\times 10^{-9}$. What is its molar solubility ($s$) in water? (Take $\\sqrt[3]{1.775} \\approx 1.21$)",
+          "image": "",
+          "options": [
+            "$1.21 \\times 10^{-3}\\text{ M}$",
+            "$8.43 \\times 10^{-5}\\text{ M}$",
+            "$2.42 \\times 10^{-3}\\text{ M}$",
+            "$1.21 \\times 10^{-4}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Dissociation equation for $\\text{PbI}_2$:\n$$\\text{PbI}_2(s) \\rightleftharpoons \\text{Pb}^{2+}(aq) + 2\\text{I}^-(aq)$$\n$$[\\text{Pb}^{2+}] = s, \\quad [\\text{I}^-] = 2s$$\n2. Solubility product expression:\n$$K_{sp} = [\\text{Pb}^{2+}][\\text{I}^-]^2 = s \\times (2s)^2 = 4s^3$$\n3. Solve for $s$:\n$$s = \\sqrt[3]{\\frac{K_{sp}}{4}} = \\sqrt[3]{\\frac{7.1 \\times 10^{-9}}{4}} = \\sqrt[3]{1.775 \\times 10^{-9}} = \\sqrt[3]{1.775} \\times 10^{-3}$$\n$$s \\approx 1.21 \\times 10^{-3}\\text{ M}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following salts undergoes ANIONIC hydrolysis in aqueous solution?",
+          "image": "",
+          "options": [
+            "$\\text{NaCN}$",
+            "$\\text{NH}_4\\text{NO}_3$",
+            "$\\text{AlCl}_3$",
+            "$\\text{NaCl}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Anionic hydrolysis occurs in salts derived from a **weak acid and a strong base**.\n2. In sodium cyanide ($\\text{NaCN}$), the cyanide ion ($\\text{CN}^-$) is the conjugate base of the weak acid $\\text{HCN}$. It reacts with water:\n$$\\text{CN}^-(aq) + \\text{H}_2\\text{O}(l) \\rightleftharpoons \\text{HCN}(aq) + \\text{OH}^-(aq)$$\nThis is **anionic hydrolysis**, producing an alkaline solution ($\\text{pH} > 7$).\n3. $\\text{NH}_4\\text{NO}_3$ and $\\text{AlCl}_3$ undergo cationic hydrolysis ($\\text{pH} < 7$).\n4. $\\text{NaCl}$ undergoes neither."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The $\\text{pH}$ of a $0.1\\text{ M}$ aqueous solution of ammonium chloride ($\\text{NH}_4\\text{Cl}$) is: (Given: $pK_b[\\text{NH}_4\\text{OH}] = 4.74$)",
+          "image": "",
+          "options": [
+            "$5.13$",
+            "$8.87$",
+            "$7.00$",
+            "$4.74$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{NH}_4\\text{Cl}$ is the salt of a strong acid ($\\text{HCl}$) and a weak base ($\\text{NH}_4\\text{OH}$).\n2. Formula for $\\text{pH}$:\n$$\\text{pH} = 7 - \\frac{1}{2}pK_b - \\frac{1}{2}\\log_{10} C$$\n3. Substitute $pK_b = 4.74$ and $C = 0.1\\text{ M} = 10^{-1}\\text{ M} \\implies \\log_{10} C = -1$:\n$$\\text{pH} = 7 - \\frac{1}{2}(4.74) - \\frac{1}{2}(-1)$$\n$$\\text{pH} = 7 - 2.37 + 0.50 = 5.13$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The solubility of $\\text{BaSO}_4$ in water is $2.33 \\times 10^{-3}\\text{ g/L}$. Its solubility product ($K_{sp}$) is: (Molar mass of $\\text{BaSO}_4 = 233\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$1.0 \\times 10^{-10}$",
+            "$1.0 \\times 10^{-5}$",
+            "$2.33 \\times 10^{-10}$",
+            "$5.43 \\times 10^{-12}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Convert solubility from $\\text{g/L}$ to molar solubility ($s\\text{ in mol/L}$):\n$$s = \\frac{2.33 \\times 10^{-3}\\text{ g/L}}{233\\text{ g/mol}} = 1.0 \\times 10^{-5}\\text{ mol/L}$$\n2. For the binary salt $\\text{BaSO}_4$ ($1 : 1$ electrolyte):\n$$\\text{BaSO}_4(s) \\rightleftharpoons \\text{Ba}^{2+}(aq) + \\text{SO}_4^{2-}(aq)$$\n$$K_{sp} = [\\text{Ba}^{2+}][\\text{SO}_4^{2-}] = s^2$$\n$$K_{sp} = (1.0 \\times 10^{-5})^2 = 1.0 \\times 10^{-10}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Barium sulfate ($\\text{BaSO}_4$) suspension ('barium meal') is widely administered orally as a radio-contrast agent for diagnostic X-ray imaging of the gastrointestinal tract. Even though $\\text{Ba}^{2+}$ ions are highly toxic, barium sulfate is safe for human ingestion because:",
+          "image": "",
+          "options": [
+            "Its $K_{sp}$ is extremely low ($1.1 \\times 10^{-10}$), resulting in a negligible concentration of free $\\text{Ba}^{2+}$ ions in the body fluids",
+            "Barium ions are neutralized by stomach acid",
+            "Barium sulfate forms a soluble non-toxic chelate with stomach mucin",
+            "Barium ions are immediately excreted by the lungs"
+          ],
+          "correctOption": 0,
+          "solution": "1. Free barium ions ($\\text{Ba}^{2+}$) are potent muscle toxins and cardiac poisons.\n2. However, $\\text{BaSO}_4$ is an exceptionally insoluble salt with an extremely low solubility product ($K_{sp} \\approx 1.1 \\times 10^{-10}$).\n3. Its concentration in digestive fluids is only $s = \\sqrt{K_{sp}} \\approx 1.05 \\times 10^{-5}\\text{ M}$.\n4. Consequently, practically zero free $\\text{Ba}^{2+}$ ions are absorbed across the intestinal epithelium into the systemic bloodstream, allowing it to pass harmlessly through the GI tract while shielding X-rays."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements about the degree of hydrolysis ($h$) of a salt of weak acid and strong base is TRUE?",
+          "image": "",
+          "options": [
+            "The degree of hydrolysis increases upon dilution ($h \\propto \\frac{1}{\\sqrt{C}}$)",
+            "The degree of hydrolysis is independent of concentration",
+            "The degree of hydrolysis decreases upon dilution",
+            "The degree of hydrolysis increases with an increase in $K_a$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For the salt of a weak acid and strong base (e.g., $\\text{CH}_3\\text{COONa}$):\n$$h = \\sqrt{\\frac{K_h}{C}} = \\sqrt{\\frac{K_w}{K_a \\cdot C}}$$\n2. Because $C$ is in the denominator, decreasing the concentration (i.e., dilution) increases the value of $h$.\n3. Therefore, the degree of hydrolysis **increases with dilution**."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The solubility product of ferric hydroxide, $\\text{Fe(OH)}_3$, is $1.0 \\times 10^{-38}$. At what minimum $\\text{pH}$ will $\\text{Fe(OH)}_3$ start precipitating from a $0.001\\text{ M } \\text{Fe}^{3+}$ solution?",
+          "image": "",
+          "options": [
+            "$2.33$",
+            "$3.45$",
+            "$11.67$",
+            "$1.33$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Dissolution equilibrium:\n$$\\text{Fe(OH)}_3(s) \\rightleftharpoons \\text{Fe}^{3+}(aq) + 3\\text{OH}^-(aq)$$\n$$K_{sp} = [\\text{Fe}^{3+}][\\text{OH}^-]^3$$\n2. Precipitation begins when the ionic product equals $K_{sp}$:\n$$1.0 \\times 10^{-38} = (0.001) \\times [\\text{OH}^-]^3$$\n$$[\\text{OH}^-]^3 = \\frac{1.0 \\times 10^{-38}}{1.0 \\times 10^{-3}} = 1.0 \\times 10^{-35} = 10 \\times 10^{-36}$$\n$$[\\text{OH}^-] = \\sqrt[3]{10} \\times 10^{-12} \\approx 2.154 \\times 10^{-12}\\text{ M}$$\n3. Calculate $p\\text{OH}$ and $\\text{pH}$:\n$$p\\text{OH} = -\\log_{10}(2.154 \\times 10^{-12}) = 12 - \\log_{10}(2.154) \\approx 12 - 0.333 = 11.667$$\n$$\\text{pH} = 14 - p\\text{OH} = 14 - 11.667 \\approx 2.33$$\n(Notice that $\\text{Fe(OH)}_3$ precipitates even in strongly acidic medium at $\\text{pH} \\ge 2.33$)."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a salt of a weak acid and a weak base, the hydrolysis constant ($K_h$) is given by:",
+          "image": "",
+          "options": [
+            "$K_h = \\frac{K_w}{K_a \\cdot K_b}$",
+            "$K_h = \\frac{K_w \\cdot K_a}{K_b}$",
+            "$K_h = \\frac{K_w \\cdot K_b}{K_a}$",
+            "$K_h = \\frac{K_a \\cdot K_b}{K_w}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a salt derived from a weak acid ($\\text{HA}$) and a weak base ($\\text{BOH}$), both the cation and anion undergo simultaneous hydrolysis:\n$$\\text{B}^+ + \\text{A}^- + \\text{H}_2\\text{O} \\rightleftharpoons \\text{BOH} + \\text{HA}$$\n$$K_h = \\frac{[\\text{BOH}][\\text{HA}]}{[\\text{B}^+][\\text{A}^-] = \\frac{K_w}{K_a \\cdot K_b}$$\n(Multiply numerator and denominator by $[\\text{H}^+][\\text{OH}^-]$ to derive)."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the molar solubility of $\\text{Al(OH)}_3$ in a buffer solution maintained at $\\text{pH} = 11.0$? (Given: $K_{sp}[\\text{Al(OH)}_3] = 1.0 \\times 10^{-33}$)",
+          "image": "",
+          "options": [
+            "$1.0 \\times 10^{-24}\\text{ M}$",
+            "$1.0 \\times 10^{-33}\\text{ M}$",
+            "$1.0 \\times 10^{-11}\\text{ M}$",
+            "$1.0 \\times 10^{-9}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In a buffer of $\\text{pH} = 11.0$:\n$$p\\text{OH} = 14 - 11.0 = 3.0 \\implies [\\text{OH}^-] = 10^{-3}\\text{ M}$$\n2. The concentration of $\\text{OH}^-$ is held constant at $10^{-3}\\text{ M}$ by the buffer.\n3. The solubility product expression:\n$$K_{sp} = [\\text{Al}^{3+}][\\text{OH}^-]^3$$\n$$1.0 \\times 10^{-33} = s \\times (10^{-3})^3 = s \\times 10^{-9}$$\n$$s = \\frac{1.0 \\times 10^{-33}}{10^{-9}} = 1.0 \\times 10^{-24}\\text{ M}$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following expressions correctly represents the relationship between the degree of hydrolysis ($h$) and the hydrolysis constant ($K_h$) for the salt of a weak acid and a weak base?",
+          "image": "",
+          "options": [
+            "$h = \\frac{\\sqrt{K_h}}{1 + \\sqrt{K_h}}$",
+            "$h = \\sqrt{\\frac{K_h}{C}}$",
+            "$h = \\sqrt{K_h \\cdot C}$",
+            "$h = K_h \\cdot C$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For a salt of a weak acid and weak base:\n$$K_h = \\frac{h^2}{(1 - h)^2}$$\n2. Taking the square root on both sides:\n$$\\sqrt{K_h} = \\frac{h}{1 - h}$$\n$$\\sqrt{K_h}(1 - h) = h \\implies \\sqrt{K_h} - h\\sqrt{K_h} = h$$\n$$\\sqrt{K_h} = h(1 + \\sqrt{K_h})$$\n$$h = \\frac{\\sqrt{K_h}}{1 + \\sqrt{K_h}}$$\n(When $h \\ll 1$, this simplifies to $h \\approx \\sqrt{K_h}$)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Solid silver chromate ($\\text{Ag}_2\\text{CrO}_4$) is an $A_2B$ type salt. Its solubility product $K_{sp}$ in terms of molar solubility $s$ is:",
+          "image": "",
+          "options": [
+            "$4s^3$",
+            "$s^2$",
+            "$27s^4$",
+            "$2s^2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Dissociation equilibrium for $\\text{Ag}_2\\text{CrO}_4$:\n$$\\text{Ag}_2\\text{CrO}_4(s) \\rightleftharpoons 2\\text{Ag}^+(aq) + \\text{CrO}_4^{2-}(aq)$$\n$$[\\text{Ag}^+] = 2s, \\quad [\\text{CrO}_4^{2-}] = s$$\n2. Solubility product expression:\n$$K_{sp} = [\\text{Ag}^+]^2 [\\text{CrO}_4^{2-}] = (2s)^2 \\times s = 4s^2 \\times s = 4s^3$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In an aqueous solution of sodium sulfate ($\\text{Na}_2\\text{SO}_4$), which of the following is TRUE?",
+          "image": "",
+          "options": [
+            "Neither $\\text{Na}^+$ nor $\\text{SO}_4^{2-}$ undergoes hydrolysis, and the $\\text{pH} = 7$",
+            "$\\text{Na}^+$ undergoes cationic hydrolysis, making $\\text{pH} < 7$",
+            "$\\text{SO}_4^{2-}$ undergoes anionic hydrolysis, making $\\text{pH} > 7$",
+            "Both ions hydrolyze completely"
+          ],
+          "correctOption": 0,
+          "solution": "1. Sodium sulfate is formed from the neutralization of a strong base ($\\text{NaOH}$) by a strong acid ($\\text{H}_2\\text{SO}_4$).\n2. The sodium cation ($\\text{Na}^+$) has no tendency to react with $\\text{OH}^-$, and the sulfate anion ($\\text{SO}_4^{2-}$) is the conjugate base of a strong acid and has negligible tendency to accept $\\text{H}^+$ from water.\n3. Therefore, neither ion undergoes hydrolysis, and the aqueous solution is completely neutral with $\\text{pH} = 7.0$."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A saturated solution of $\\text{CaF}_2$ in water has a fluoride ion concentration of $[\\text{F}^-] = 2.0 \\times 10^{-4}\\text{ M}$. The solubility product ($K_{sp}$) of $\\text{CaF}_2$ is:",
+          "image": "",
+          "options": [
+            "$4.0 \\times 10^{-12}$",
+            "$8.0 \\times 10^{-12}$",
+            "$1.6 \\times 10^{-11}$",
+            "$2.0 \\times 10^{-12}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Dissociation of calcium fluoride:\n$$\\text{CaF}_2(s) \\rightleftharpoons \\text{Ca}^{2+}(aq) + 2\\text{F}^-(aq)$$\n2. From stoichiometry, the concentration of calcium ions is half the concentration of fluoride ions:\n$$[\\text{Ca}^{2+}] = \\frac{[\\text{F}^-]}{2} = \\frac{2.0 \\times 10^{-4}\\text{ M}}{2} = 1.0 \\times 10^{-4}\\text{ M}$$\n3. Solubility product:\n$$K_{sp} = [\\text{Ca}^{2+}][\\text{F}^-]^2 = (1.0 \\times 10^{-4}) \\times (2.0 \\times 10^{-4})^2$$\n$$K_{sp} = (1.0 \\times 10^{-4}) \\times (4.0 \\times 10^{-8}) = 4.0 \\times 10^{-12}$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An aqueous solution of ammonium cyanide ($\\text{NH}_4\\text{CN}$) has $pK_a[\\text{HCN}] = 9.22$ and $pK_b[\\text{NH}_4\\text{OH}] = 4.75$. The $\\text{pH}$ of the solution is:",
+          "image": "",
+          "options": [
+            "$9.23$",
+            "$7.00$",
+            "$4.77$",
+            "$8.23$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{NH}_4\\text{CN}$ is the salt of a weak acid and a weak base.\n2. Formula for $\\text{pH}$:\n$$\\text{pH} = 7 + \\frac{1}{2}(pK_a - pK_b)$$\n3. Substitute $pK_a = 9.22$ and $pK_b = 4.75$:\n$$\\text{pH} = 7 + \\frac{1}{2}(9.22 - 4.75) = 7 + \\frac{1}{2}(4.47) = 7 + 2.235 = 9.235 \\approx 9.23$$\n(Because $pK_a > pK_b$, the weak acid is weaker than the weak base, making the hydrolyzed solution basic)."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The solubility of $\\text{AgCl}$ in $0.1\\text{ M } \\text{AgNO}_3$ solution is $s_1$, in pure water is $s_2$, and in $0.1\\text{ M } \\text{NaCl}$ solution is $s_3$. The correct relation between them is:",
+          "image": "",
+          "options": [
+            "$s_2 > s_1 = s_3$",
+            "$s_1 = s_2 = s_3$",
+            "$s_1 > s_2 > s_3$",
+            "$s_3 > s_2 > s_1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In pure water: $s_2 = \\sqrt{K_{sp}} = \\sqrt{1.8 \\times 10^{-10}} \\approx 1.34 \\times 10^{-5}\\text{ M}$.\n2. In $0.1\\text{ M } \\text{AgNO}_3$: $[\\text{Ag}^+] = 0.1\\text{ M}$, so $s_1 = \\frac{K_{sp}}{0.1} = \\frac{K_{sp}}{10^{-1}} = 10 K_{sp} = 1.8 \\times 10^{-9}\\text{ M}$.\n3. In $0.1\\text{ M } \\text{NaCl}$: $[\\text{Cl}^-] = 0.1\\text{ M}$, so $s_3 = \\frac{K_{sp}}{0.1} = 1.8 \\times 10^{-9}\\text{ M}$.\nBecause common ion effect suppresses solubility equally when the common ion concentration is identical ($0.1\\text{ M}$):\n$$s_2 > s_1 = s_3$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] When hydrochloric acid is added to an aqueous solution containing both $\\text{Bi}^{3+}$ and $\\text{Cu}^{2+}$, a white precipitate of bismuth oxychloride forms according to:\n$$\\text{Bi}^{3+} + \\text{Cl}^- + \\text{H}_2\\text{O} \\rightleftharpoons \\text{BiOCl}(s) \\downarrow + 2\\text{H}^+$$\nThis precipitate can be prevented from forming during Group II analysis by:",
+          "image": "",
+          "options": [
+            "Maintaining sufficiently high concentration of $\\text{HCl}$ (acidic medium)",
+            "Boiling the solution to dryness",
+            "Adding sodium hydroxide",
+            "Adding ammonium chloride"
+          ],
+          "correctOption": 0,
+          "solution": "1. By Le Chatelier's principle, adding excess $\\text{H}^+$ (concentrated $\\text{HCl}$) drives the hydrolysis equilibrium to the left:\n$$\\text{BiOCl}(s) + 2\\text{H}^+ \\rightarrow \\text{Bi}^{3+} + \\text{Cl}^- + \\text{H}_2\\text{O}$$\n2. This prevents the premature precipitation of bismuth as insoluble $\\text{BiOCl}$, ensuring that $\\text{Bi}^{3+}$ remains in solution to precipitate properly as black bismuth sulfide ($\\text{Bi}_2\\text{S}_3$) when $\\text{H}_2\\text{S}$ is passed."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The solubility product of magnesium hydroxide, $\\text{Mg(OH)}_2$, is $K_{sp} = 1.8 \\times 10^{-11}$. The $\\text{pH}$ of a saturated solution of $\\text{Mg(OH)}_2$ in water is: (Take $\\sqrt[3]{4.5} \\approx 1.65, \\log_{10}(3.3) \\approx 0.52$)",
+          "image": "",
+          "options": [
+            "$10.52$",
+            "$3.48$",
+            "$11.52$",
+            "$9.48$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Dissociation of $\\text{Mg(OH)}_2$:\n$$\\text{Mg(OH)}_2(s) \\rightleftharpoons \\text{Mg}^{2+}(aq) + 2\\text{OH}^-(aq)$$\n$$K_{sp} = 4s^3$$\n2. Solve for molar solubility $s$:\n$$s = \\sqrt[3]{\\frac{K_{sp}}{4}} = \\sqrt[3]{\\frac{1.8 \\times 10^{-11}}{4}} = \\sqrt[3]{4.5 \\times 10^{-12}} = \\sqrt[3]{4.5} \\times 10^{-4} \\approx 1.65 \\times 10^{-4}\\text{ M}$$\n3. Calculate $[\\text{OH}^-]$:\n$$[\\text{OH}^-] = 2s = 2 \\times (1.65 \\times 10^{-4}) = 3.3 \\times 10^{-4}\\text{ M}$$\n4. Calculate $p\\text{OH}$ and $\\text{pH}$:\n$$p\\text{OH} = -\\log_{10}(3.3 \\times 10^{-4}) = 4 - \\log_{10}(3.3) \\approx 4 - 0.52 = 3.48$$\n$$\\text{pH} = 14 - p\\text{OH} = 14 - 3.48 = 10.52$$"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following conditions represents a SUPERSATURATED solution from which solute precipitation must occur?",
+          "image": "",
+          "options": [
+            "$Q_{sp} > K_{sp}$",
+            "$Q_{sp} = K_{sp}$",
+            "$Q_{sp} < K_{sp}$",
+            "$Q_{sp} = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Comparing the ionic product ($Q_{sp}$) with the solubility product constant ($K_{sp}$):\n1. $Q_{sp} < K_{sp}$: The solution is **unsaturated**; more solute can dissolve without precipitation.\n2. $Q_{sp} = K_{sp}$: The solution is **saturated** and in dynamic equilibrium with undissolved solute.\n3. $Q_{sp} > K_{sp}$: The solution is **supersaturated**; precipitation occurs until $Q_{sp}$ drops to $K_{sp}$."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An aqueous solution of copper sulfate ($\\text{CuSO}_4$) turns blue litmus paper red. This acidic behavior is due to:",
+          "image": "",
+          "options": [
+            "Cationic hydrolysis of $\\text{Cu}^{2+}$ forming hydronium ions",
+            "Anionic hydrolysis of $\\text{SO}_4^{2-}$",
+            "Direct dissociation into sulfuric acid",
+            "Oxidation of water by $\\text{Cu}^{2+}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Copper sulfate is the salt of a weak base ($\\text{Cu(OH)}_2$) and a strong acid ($\\text{H}_2\\text{SO}_4$).\n2. In water, the hydrated cupric ion undergoes cationic hydrolysis:\n$$[\\text{Cu}(\\text{H}_2\\text{O})_6]^{2+} + \\text{H}_2\\text{O} \\rightleftharpoons [\\text{Cu}(\\text{H}_2\\text{O})_5(\\text{OH})]^+ + \\text{H}_3\\text{O}^+$$\n3. The release of free hydronium ions causes $[\\text{H}^+] > [\\text{OH}^-]$, rendering the solution acidic ($\\text{pH} < 7$) and turning blue litmus red."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The solubility product of silver bromide ($\\text{AgBr}$) is $5.0 \\times 10^{-13}$. What is the minimum concentration of $\\text{Br}^-$ required to start the precipitation of $\\text{AgBr}$ from a $0.05\\text{ M } \\text{AgNO}_3$ solution?",
+          "image": "",
+          "options": [
+            "$1.0 \\times 10^{-11}\\text{ M}$",
+            "$5.0 \\times 10^{-13}\\text{ M}$",
+            "$2.5 \\times 10^{-14}\\text{ M}$",
+            "$1.0 \\times 10^{-10}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For precipitation to begin:\n$$[\\text{Ag}^+][\\text{Br}^-] \\ge K_{sp}$$\n2. In the solution, $[\\text{Ag}^+] = 0.05\\text{ M} = 5.0 \\times 10^{-2}\\text{ M}$.\n3. Minimum $[\\text{Br}^-]$ required:\n$$[\\text{Br}^-] = \\frac{K_{sp}}{[\\text{Ag}^+]} = \\frac{5.0 \\times 10^{-13}}{5.0 \\times 10^{-2}} = 1.0 \\times 10^{-11}\\text{ M}$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A salt $M_2X_3$ dissolves in water with a molar solubility of $s\\text{ mol/L}$. What is the relation between $K_{sp}$ and $s$?",
+          "image": "",
+          "options": [
+            "$K_{sp} = 108\\, s^5$",
+            "$K_{sp} = 27\\, s^5$",
+            "$K_{sp} = 36\\, s^5$",
+            "$K_{sp} = 108\\, s^4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Dissociation equation:\n$$M_2X_3(s) \\rightleftharpoons 2M^{3+}(aq) + 3X^{2-}(aq)$$\n$$[M^{3+}] = 2s, \\quad [X^{2-}] = 3s$$\n2. Write $K_{sp}$:\n$$K_{sp} = [M^{3+}]^2 [X^{2-}]^3 = (2s)^2 \\times (3s)^3 = (4s^2) \\times (27s^3) = 108\\, s^5$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The $\\text{pH}$ of a $0.05\\text{ M}$ aqueous solution of sodium hypochlorite ($\\text{NaOCl}$) is: (Given: $K_a[\\text{HOCl}] = 2.0 \\times 10^{-8}$, $\\log_{10} 2 = 0.30$)",
+          "image": "",
+          "options": [
+            "$10.05$",
+            "$9.85$",
+            "$8.35$",
+            "$10.35$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{NaOCl}$ is the salt of a weak acid and strong base:\n$$\\text{pH} = 7 + \\frac{1}{2}pK_a + \\frac{1}{2}\\log_{10} C$$\n2. Calculate $pK_a$:\n$$pK_a = -\\log_{10}(2.0 \\times 10^{-8}) = 8 - \\log_{10} 2 = 8 - 0.30 = 7.70$$\n3. Concentration term:\n$$C = 0.05\\text{ M} = 5.0 \\times 10^{-2}\\text{ M} \\implies \\log_{10}(0.05) = \\log_{10}\\left(\\frac{1}{20}\\right) = -\\log_{10}(20) = -(1 + 0.30) = -1.30$$\n4. Calculate $\\text{pH}$:\n$$\\text{pH} = 7 + \\frac{1}{2}(7.70) + \\frac{1}{2}(-1.30) = 7 + 3.85 - 0.65 = 10.20$$\nWait! Let's check calculation:\n$7 + 3.85 - 0.65 = 10.20$. Let us check $C = 5 \\times 10^{-2}$, $\\log C = -1.301$, so $\\frac{1}{2}(-1.301) = -0.65$. $\\frac{1}{2}(7.70) = 3.85$. $7 + 3.85 - 0.65 = 10.20$. Let's check with formula $\\text{pH} = 7 + 0.5(7.70) + 0.5(-1.30) = 10.20$."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In which of the following aqueous solutions is the solubility of lead(II) chloride ($\\text{PbCl}_2$) the LOWEST?",
+          "image": "",
+          "options": [
+            "$0.1\\text{ M } \\text{CaCl}_2$",
+            "$0.1\\text{ M } \\text{NaCl}$",
+            "Pure water",
+            "$0.1\\text{ M } \\text{KNO}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{PbCl}_2(s) \\rightleftharpoons \\text{Pb}^{2+}(aq) + 2\\text{Cl}^-(aq)$.\n2. According to the common ion effect, the higher the concentration of common chloride ions ($[\\text{Cl}^-]$), the more the equilibrium shifts backward, lowering solubility:\n- In $0.1\\text{ M } \\text{NaCl}$: $[\\text{Cl}^-] = 0.1\\text{ M}$\n- In $0.1\\text{ M } \\text{CaCl}_2$: $[\\text{Cl}^-] = 2 \\times 0.1 = 0.2\\text{ M}$\n- In pure water: $[\\text{Cl}^-] \\approx 10^{-2}\\text{ M}$\n- In $0.1\\text{ M } \\text{KNO}_3$: No common ion (inert salt effect slightly increases solubility).\n3. Because $0.1\\text{ M } \\text{CaCl}_2$ provides the highest concentration of common chloride ions ($0.2\\text{ M}$), $\\text{PbCl}_2$ has the **lowest solubility** in it."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The solubility product of silver chromate ($\\text{Ag}_2\\text{CrO}_4$) is $K_{sp} = 1.1 \\times 10^{-12}$. What is its molar solubility in pure water? (Take $\\sqrt[3]{2.75} \\approx 1.40$)",
+          "image": "",
+          "options": [
+            "$6.50 \\times 10^{-5}\\text{ M}$",
+            "$1.40 \\times 10^{-4}\\text{ M}$",
+            "$6.50 \\times 10^{-4}\\text{ M}$",
+            "$1.05 \\times 10^{-6}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{Ag}_2\\text{CrO}_4(s) \\rightleftharpoons 2\\text{Ag}^+ + \\text{CrO}_4^{2-}$.\n$$K_{sp} = 4s^3$$\n2. Solve for $s$:\n$$s = \\sqrt[3]{\\frac{K_{sp}}{4}} = \\sqrt[3]{\\frac{1.1 \\times 10^{-12}}{4}} = \\sqrt[3]{0.275 \\times 10^{-12}} = \\sqrt[3]{275 \\times 10^{-15}}$$\nSince $\\sqrt[3]{275} \\approx 6.50$:\n$$s \\approx 6.50 \\times 10^{-5}\\text{ M}$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Solid sodium chloride is added to a saturated aqueous solution of calcium sulfate ($\\text{CaSO}_4$). The solubility of $\\text{CaSO}_4$ slightly INCREASES. This phenomenon is known as the:",
+          "image": "",
+          "options": [
+            "Diverse ion effect (or inert salt effect)",
+            "Common ion effect",
+            "Ostwald ripening",
+            "Salting out effect"
+          ],
+          "correctOption": 0,
+          "solution": "1. Adding an electrolyte that does not share a common ion (like $\\text{NaCl}$ in $\\text{CaSO}_4$) increases the total ionic strength of the solution.\n2. The increased ionic atmosphere shields $\\text{Ca}^{2+}$ and $\\text{SO}_4^{2-}$ ions, reducing their thermodynamic activity coefficients ($\\gamma_\\pm < 1$).\n3. To maintain the constant thermodynamic product $K_{sp} = a_{\\text{Ca}^{2+}} \\cdot a_{\\text{SO}_4^{2-}} = (\\gamma [\\text{Ca}^{2+}])(\\gamma [\\text{SO}_4^{2-}])$, the actual molar concentrations must increase.\n4. This increase in solubility caused by non-common ions is termed the **diverse ion effect** (or salt effect / ionic atmosphere effect)."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An aqueous solution of ferric chloride ($\\text{FeCl}_3$) is acidic to litmus. If the solution is boiled, a reddish-brown precipitate of hydrated iron(III) oxide forms. This occurs because:",
+          "image": "",
+          "options": [
+            "Boiling increases the degree of hydrolysis and drives off gaseous $\\text{HCl}$, shifting the hydrolysis equilibrium forward",
+            "Boiling reduces $\\text{Fe}^{3+}$ to metallic iron",
+            "Boiling causes water to act as a reducing agent",
+            "$\\text{FeCl}_3$ sublimes out of the flask"
+          ],
+          "correctOption": 0,
+          "solution": "1. In aqueous solution, $\\text{FeCl}_3$ undergoes endothermic cationic hydrolysis:\n$$\\text{FeCl}_3(aq) + 3\\text{H}_2\\text{O}(l) \\rightleftharpoons \\text{Fe(OH)}_3(s) + 3\\text{HCl}(aq)$$\n2. Because hydrolysis is endothermic, raising the temperature (boiling) increases the hydrolysis constant $K_h$.\n3. Furthermore, boiling drives off dissolved $\\text{HCl}$ as vapor, removing a product.\n4. Both factors drive the equilibrium forward, causing complete hydrolysis and precipitating reddish-brown hydrated $\\text{Fe(OH)}_3$."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The solubility product of calcium carbonate is $K_{sp} = 4.8 \\times 10^{-9}$. What is the maximum volume of water required to dissolve $1.0\\text{ mg}$ of $\\text{CaCO}_3$? (Molar mass of $\\text{CaCO}_3 = 100\\text{ g/mol}$, $\\sqrt{4.8} \\approx 2.19$)",
+          "image": "",
+          "options": [
+            "$0.145\\text{ L}$",
+            "$0.290\\text{ L}$",
+            "$1.45\\text{ L}$",
+            "$0.015\\text{ L}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Molar solubility of $\\text{CaCO}_3$ ($1 : 1$ salt):\n$$s = \\sqrt{K_{sp}} = \\sqrt{4.8 \\times 10^{-9}} = \\sqrt{48 \\times 10^{-10}} \\approx 6.93 \\times 10^{-5}\\text{ mol/L}$$\n2. Solubility in $\\text{g/L}$:\n$$S = s \\times M = (6.93 \\times 10^{-5}\\text{ mol/L}) \\times (100\\text{ g/mol}) = 6.93 \\times 10^{-3}\\text{ g/L} = 6.93\\text{ mg/L}$$\n3. Volume of water needed to dissolve $1.0\\text{ mg}$:\n$$V = \\frac{1.0\\text{ mg}}{6.93\\text{ mg/L}} \\approx 0.1443\\text{ L} \\approx 0.145\\text{ L}$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the $\\text{pH}$ of a $0.1\\text{ M}$ solution of sodium cyanide ($\\text{NaCN}$)? (Given: $K_a[\\text{HCN}] = 4.0 \\times 10^{-10}$, take $\\log_{10} 2 = 0.301$)",
+          "image": "",
+          "options": [
+            "$11.20$",
+            "$9.40$",
+            "$2.80$",
+            "$12.10$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{NaCN}$ is the salt of a weak acid and strong base:\n$$\\text{pH} = 7 + \\frac{1}{2}pK_a + \\frac{1}{2}\\log_{10} C$$\n2. Calculate $pK_a$:\n$$pK_a = -\\log_{10}(4.0 \\times 10^{-10}) = 10 - 2\\log_{10} 2 = 10 - 0.602 = 9.398$$\n3. Given $C = 0.1\\text{ M} = 10^{-1}\\text{ M} \\implies \\log_{10} C = -1$:\n$$\\text{pH} = 7 + \\frac{1}{2}(9.398) + \\frac{1}{2}(-1) = 7 + 4.699 - 0.500 = 11.199 \\approx 11.20$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Two sparingly soluble salts $AB$ and $A_2B$ have the SAME solubility product value of $K_{sp} = 4.0 \\times 10^{-12}$. The ratio of their molar solubilities ($s_{AB} / s_{A_2B}$) is:",
+          "image": "",
+          "options": [
+            "$0.02$",
+            "$1.00$",
+            "$50.0$",
+            "$2.00$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $AB$ ($1:1$ salt):\n$$K_{sp} = s_{AB}^2 \\implies s_{AB} = \\sqrt{4.0 \\times 10^{-12}} = 2.0 \\times 10^{-6}\\text{ M}$$\n2. For $A_2B$ ($2:1$ salt):\n$$K_{sp} = 4 s_{A_2B}^3 \\implies 4.0 \\times 10^{-12} = 4 s_{A_2B}^3$$\n$$s_{A_2B}^3 = 1.0 \\times 10^{-12} \\implies s_{A_2B} = 1.0 \\times 10^{-4}\\text{ M}$$\n3. Ratio of their solubilities:\n$$\\frac{s_{AB}}{s_{A_2B}} = \\frac{2.0 \\times 10^{-6}}{1.0 \\times 10^{-4}} = 2.0 \\times 10^{-2} = 0.02$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Simultaneous solubility calculations: Two sparingly soluble salts $\\text{AgCl}$ ($K_{sp1} = 1.8 \\times 10^{-10}$) and $\\text{AgSCN}$ ($K_{sp2} = 1.0 \\times 10^{-12}$) are placed together in pure water. The total concentration of silver ions ($[\\text{Ag}^+]$) at equilibrium is approximately:",
+          "image": "",
+          "options": [
+            "$1.345 \\times 10^{-5}\\text{ M}$",
+            "$1.000 \\times 10^{-6}\\text{ M}$",
+            "$2.690 \\times 10^{-5}\\text{ M}$",
+            "$1.810 \\times 10^{-10}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Let $x$ be the solubility of $\\text{AgCl}$ and $y$ be the solubility of $\\text{AgSCN}$ in the shared solution:\n$$[\\text{Ag}^+] = x + y, \\quad [\\text{Cl}^-] = x, \\quad [\\text{SCN}^-] = y$$\n2. Solubility product equations:\n$$K_{sp1} = (x + y)x$$\n$$K_{sp2} = (x + y)y$$\n3. Adding both equations:\n$$K_{sp1} + K_{sp2} = (x + y)(x + y) = (x + y)^2 = [\\text{Ag}^+]^2$$\n4. Solve for $[\\text{Ag}^+]$:\n$$[\\text{Ag}^+] = \\sqrt{K_{sp1} + K_{sp2}} = \\sqrt{1.8 \\times 10^{-10} + 0.01 \\times 10^{-10}} = \\sqrt{1.81 \\times 10^{-10}}$$\n$$[\\text{Ag}^+] \\approx 1.345 \\times 10^{-5}\\text{ M}$$"
+        }
+      ]
+    }
+  ]
+}

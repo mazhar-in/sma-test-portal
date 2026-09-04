@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-17-colligative-properties",
+  "title": "Colligative Properties (RLVP, Elevation of Boiling Point, Depression of Freezing Point, & Osmotic Pressure)",
+  "syllabus": "Definition of colligative properties (dependence strictly on particle number/concentration, independent of nature of solute); Relative Lowering of Vapour Pressure (RLVP: (P° - P)/P° = x_B = n_B/(n_A + n_B), determination of molar mass of non-volatile non-electrolyte solutes, Ostwald-Walker dynamic method); Elevation of Boiling Point (ebullioscopy: ΔTb = Tb - Tb° = Kb · m, molal elevation / ebullioscopic constant Kb = (R · Tb°² · M_solvent)/(1000 · ΔvapH), thermodynamic derivation); Depression of Freezing Point (cryoscopy: ΔTf = Tf° - Tf = Kf · m, molal depression / cryoscopic constant Kf = (R · Tf°² · M_solvent)/(1000 · ΔfusH), application of antifreeze solutions e.g. ethylene glycol in radiators, de-icing of roads with NaCl/CaCl2); Osmosis and Osmotic Pressure (semipermeable membranes, van 't Hoff equation: π = CRT = (n/V)RT, isotonic, hypertonic, and hypotonic solutions, plasmolysis, crenation, physiological 0.9% (w/v) normal saline); Advantages of osmotic pressure over other colligative methods for biomolecules (proteins, polymers, nucleic acids at room temperature); Reverse osmosis and water desalination",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following is the primary advantage of measuring osmotic pressure ($\\pi$) over other colligative properties (such as $\\Delta T_b$ or $\\Delta T_f$) for determining the molar mass of biomacromolecules like proteins and synthetic polymers?",
+          "image": "",
+          "options": [
+            "Osmotic pressure produces measurable, significant magnitudes at ambient room temperature and uses molarity without causing thermal denaturation",
+            "Biomacromolecules do not dissolve in water below their boiling points",
+            "Freezing point depression cannot be measured for organic solutes",
+            "Osmotic pressure depends on the chemical nature of the solute rather than particle count"
+          ],
+          "correctOption": 0,
+          "solution": "1. Biomacromolecules (such as proteins, enzymes, nucleic acids, and synthetic polymers) have very large molar masses ($10^4$ to $10^6\\text{ g/mol}$). A reasonable mass concentration produces an extremely small molality ($m \\sim 10^{-4}$ to $10^{-5}\\text{ m}$), leading to negligible, immeasurable changes in boiling point or freezing point ($\\Delta T_b$ or $\\Delta T_f \\sim 10^{-3}$ to $10^{-4}\\text{ K}$).\n2. In contrast, osmotic pressure ($\\\\pi = CRT$) at room temperature ($\\\\approx 300\\text{ K}$) produces substantial, easily measurable hydrostatic pressure heads (often several millimeters of liquid/solution column) even for millimolar or micromolar solutions.\n3. Furthermore, measurements are carried out at ambient physiological temperature, preventing thermal degradation or denaturation of temperature-sensitive proteins, which would occur at elevated boiling points."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The vapour pressure of pure water at $298\\text{ K}$ is $23.8\\text{ mm Hg}$. What is the vapour pressure of an aqueous solution containing $36.0\\text{ g}$ of glucose ($\\text{C}_6\\text{H}_{12}\\text{O}_6$) dissolved in $178.2\\text{ g}$ of water? (Molar masses: $\\text{Glucose} = 180\\text{ g/mol}, \\text{Water} = 18\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$23.32\\text{ mm Hg}$",
+            "$22.61\\text{ mm Hg}$",
+            "$23.56\\text{ mm Hg}$",
+            "$24.28\\text{ mm Hg}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate moles of solute (glucose, non-volatile):  \n$$n_{\\text{glucose}} = \\frac{36.0\\text{ g}}{180\\text{ g/mol}} = 0.20\\text{ mol}$$\n2. Calculate moles of solvent (water):  \n$$n_{\\text{water}} = \\frac{178.2\\text{ g}}{18.0\\text{ g/mol}} = 9.90\\text{ mol}$$\n3. Total moles in solution:  \n$$n_{\\text{total}} = 0.20 + 9.90 = 10.10\\text{ mol}$$\n4. Mole fraction of solvent ($x_{\\text{water}}$):  \n$$x_{\\text{water}} = \\frac{9.90}{10.10} = \\frac{99}{101} \\approx 0.9802$$\n5. By Raoult's law:  \n$$P = P^\\circ \\cdot x_{\\text{water}} = 23.8\\text{ mm Hg} \\times 0.9802 \\approx 23.328\\text{ mm Hg} \\approx 23.32\\text{ mm Hg}$$\n(Alternatively: $\\frac{P^\\circ - P}{P^\\circ} = x_B = \\frac{0.20}{10.10} \\approx 0.0198 \\implies P^\\circ - P = 0.471\\text{ mm Hg} \\implies P = 23.8 - 0.471 = 23.33\\text{ mm Hg}$)."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] An aqueous solution of a non-volatile non-electrolyte freezes at $-0.186^\\circ\\text{C}$. What is the elevation in boiling point ($\\Delta T_b$) for the same aqueous solution? (Given: $K_f = 1.86\\text{ K kg mol}^{-1}$, $K_b = 0.512\\text{ K kg mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$0.0512^\\circ\\text{C}$",
+            "$0.512^\\circ\\text{C}$",
+            "$0.186^\\circ\\text{C}$",
+            "$0.0186^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For the depression in freezing point:  \n$$\\Delta T_f = T_f^\\circ - T_f = 0.00^\\circ\\text{C} - (-0.186^\\circ\\text{C}) = 0.186\\text{ K}$$\n2. Using $\\Delta T_f = K_f \\cdot m$:  \n$$m = \\frac{\\Delta T_f}{K_f} = \\frac{0.186\\text{ K}}{1.86\\text{ K kg mol}^{-1}} = 0.10\\text{ molal}$$\n3. Elevation in boiling point for the same solution:  \n$$\\Delta T_b = K_b \\cdot m = (0.512\\text{ K kg mol}^{-1}) \\times (0.10\\text{ mol/kg}) = 0.0512\\text{ K} = 0.0512^\\circ\\text{C}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Human red blood cells (erythrocytes) are isotonic with an aqueous solution of $0.9\\%\\ (w/v)$ sodium chloride (normal saline). What happens when red blood cells are suspended in a $0.2\\%\\ (w/v)$ aqueous $\\text{NaCl}$ solution?",
+          "image": "",
+          "options": [
+            "Water moves into the cells via endosmosis, causing them to swell and burst (hemolysis)",
+            "Water moves out of the cells via exosmosis, causing them to shrink (crenation)",
+            "The cells remain completely unchanged in size and morphology",
+            "$\\text{NaCl}$ precipitates within the cell membrane"
+          ],
+          "correctOption": 0,
+          "solution": "1. An aqueous solution of $0.2\\%\\ (w/v)\\ \\text{NaCl}$ has a lower solute concentration and lower osmotic pressure than the intracellular fluid of erythrocytes ($0.9\\%\\ w/v$). Therefore, the surrounding medium is **hypotonic** relative to the cell.\n2. In a hypotonic environment, water spontaneously flows across the semipermeable cell membrane from the exterior region of higher water chemical potential into the more concentrated cell interior (**endosmosis**).\n3. The cells swell with incoming fluid until the plasma membrane ruptures, releasing hemoglobin (**hemolysis**).\n(In contrast, a hypertonic solution like $1.5\\%\\ \\text{NaCl}$ draws water out, causing cell shrinkage/crenation)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The molal elevation constant ($K_b$, ebullioscopic constant) of a solvent depends strictly on:",
+          "image": "",
+          "options": [
+            "The nature of the solvent",
+            "The concentration of the solute",
+            "The chemical nature of the solute",
+            "The atmospheric pressure alone"
+          ],
+          "correctOption": 0,
+          "solution": "The thermodynamic expression for the molal elevation constant ($K_b$) is derived from the Clausius-Clapeyron relation:\n$$K_b = \\frac{R \\cdot (T_b^\\circ)^2 \\cdot M_{\\text{solvent}}}{1000 \\cdot \\Delta_{\\text{vap}}H}$$\nwhere:\n- $R$ is the universal gas constant\n- $T_b^\\circ$ is the normal boiling point of the pure solvent\n- $M_{\\text{solvent}}$ is the molar mass of the solvent\n- $\\Delta_{\\text{vap}}H$ is the molar enthalpy of vaporization of the pure solvent\nAll parameters on the right-hand side belong exclusively to the solvent. Therefore, $K_b$ is a characteristic physical constant that depends **only on the nature of the solvent**."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the osmotic pressure ($\\pi$) of an aqueous solution containing $45.0\\text{ g}$ of glucose ($\\text{C}_6\\text{H}_{12}\\text{O}_6$, molar mass $= 180\\text{ g/mol}$) in $500\\text{ mL}$ of solution at $300\\text{ K}$? (Take $R = 0.0821\\text{ L atm K}^{-1}\\text{ mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$12.315\\text{ atm}$",
+            "$6.158\\text{ atm}$",
+            "$24.630\\text{ atm}$",
+            "$1.231\\text{ atm}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate moles of glucose ($n$):  \n$$n = \\frac{45.0\\text{ g}}{180\\text{ g/mol}} = 0.25\\text{ mol}$$\n2. Volume of solution in liters ($V$):  \n$$V = \\frac{500\\text{ mL}}{1000} = 0.50\\text{ L}$$\n3. Molar concentration ($C$):  \n$$C = \\frac{n}{V} = \\frac{0.25\\text{ mol}}{0.50\\text{ L}} = 0.50\\text{ M}$$\n4. Apply van 't Hoff's formula for osmotic pressure:  \n$$\\pi = C R T = (0.50\\text{ mol/L}) \\times (0.0821\\text{ L atm K}^{-1}\\text{ mol}^{-1}) \\times (300\\text{ K})$$\n$$\\pi = 0.50 \\times 24.63 = 12.315\\text{ atm}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A solution of urea (molar mass $= 60\\text{ g/mol}$) in water has a boiling point of $100.128^\\circ\\text{C}$ at $1\\text{ atm}$. The mass of urea dissolved in $100\\text{ g}$ of water is: (Given: $K_b$ for water $= 0.512\\text{ K kg mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$1.5\\text{ g}$",
+            "$3.0\\text{ g}$",
+            "$0.75\\text{ g}$",
+            "$6.0\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Boiling point elevation:  \n$$\\Delta T_b = T_b - T_b^\\circ = 100.128^\\circ\\text{C} - 100.000^\\circ\\text{C} = 0.128^\\circ\\text{C} = 0.128\\text{ K}$$\n2. Using $\\Delta T_b = K_b \\cdot m$:  \n$$m = \\frac{\\Delta T_b}{K_b} = \\frac{0.128\\text{ K}}{0.512\\text{ K kg mol}^{-1}} = 0.25\\text{ mol/kg}$$\n3. Molality formula:  \n$$m = \\frac{w_B \\times 1000}{M_B \\times W_A}$$\nSubstitute $m = 0.25$, $M_B = 60\\text{ g/mol}$, and $W_A = 100\\text{ g}$:  \n$$0.25 = \\frac{w_B \\times 1000}{60 \\times 100} = \\frac{10 w_B}{60} = \\frac{w_B}{6}$$\n$$w_B = 0.25 \\times 6 = 1.5\\text{ g}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Ethylene glycol ($\\text{CH}_2\\text{OH}-\\text{CH}_2\\text{OH}$, molar mass $= 62.0\\text{ g/mol}$) is widely added to automobile cooling radiators in cold climates as an antifreeze. What mass of ethylene glycol must be added to $4.0\\text{ kg}$ of water to prevent it from freezing at $-6.0^\\circ\\text{C}$? (Given: $K_f$ for water $= 1.86\\text{ K kg mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$800.0\\text{ g}$",
+            "$200.0\\text{ g}$",
+            "$400.0\\text{ g}$",
+            "$1200.0\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Depression in freezing point required:  \n$$\\Delta T_f = 0.0^\\circ\\text{C} - (-6.0^\\circ\\text{C}) = 6.0\\text{ K}$$\n2. Using $\\Delta T_f = K_f \\cdot m$:  \n$$m = \\frac{\\Delta T_f}{K_f} = \\frac{6.0\\text{ K}}{1.86\\text{ K kg mol}^{-1}} \\approx 3.2258\\text{ mol/kg}$$\n3. Total moles of ethylene glycol needed for $W_A = 4.0\\text{ kg}$ of water:  \n$$n = m \\times W_A = 3.2258\\text{ mol/kg} \\times 4.0\\text{ kg} \\approx 12.903\\text{ mol}$$\n4. Mass of ethylene glycol ($w_B$):  \n$$w_B = n \\times M_B = 12.903\\text{ mol} \\times 62.0\\text{ g/mol} \\approx 800.0\\text{ g}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Reverse osmosis (RO) is extensively used for the commercial desalination of sea water to produce potable drinking water. The process operates by:",
+          "image": "",
+          "options": [
+            "Applying an external hydrostatic pressure greater than the osmotic pressure on the saline solution side, forcing pure water through the semipermeable membrane into the fresh water reservoir",
+            "Cooling sea water until ice crystallizes out at high atmospheric pressure",
+            "Allowing natural osmosis to proceed until dynamic equilibrium is reached",
+            "Applying electrical potential across a non-porous silica diaphragm"
+          ],
+          "correctOption": 0,
+          "solution": "1. Under normal conditions, osmosis causes pure water to flow spontaneously through a semipermeable membrane into a more concentrated salt solution.\n2. If an external hydrostatic pressure ($P$) greater than the natural osmotic pressure of sea water ($P > \\pi$) is applied directly to the concentrated saline side, the chemical potential of water on the saline side rises above that of pure water.\n3. This reverses the natural osmotic flow direction: water molecules are squeezed out of the sea water through the semipermeable membrane (typically made of porous cellulose acetate or polyamide composite films) into the pure fresh water compartment, leaving behind dissolved salts."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Two aqueous solutions $S_1$ and $S_2$ are separated by a rigid semipermeable membrane. Solution $S_1$ is $0.1\\text{ M}$ sucrose and solution $S_2$ is $0.5\\text{ M}$ sucrose. Which of the following statements is correct?",
+          "image": "",
+          "options": [
+            "Water molecules flow spontaneously from $S_1$ into $S_2$",
+            "Sucrose molecules diffuse spontaneously from $S_2$ into $S_1$",
+            "Water molecules flow spontaneously from $S_2$ into $S_1$",
+            "No net movement of any molecule occurs across the membrane"
+          ],
+          "correctOption": 0,
+          "solution": "1. A semipermeable membrane allows only small solvent (water) molecules to pass through while completely blocking larger solute (sucrose) molecules.\n2. Solution $S_1$ ($0.1\\text{ M}$) has a lower solute concentration (hypotonic, higher chemical potential of solvent) than solution $S_2$ ($0.5\\text{ M}$, hypertonic, lower chemical potential of solvent).\n3. Driven by the thermodynamic gradient, water molecules spontaneously migrate through the semipermeable membrane from the dilute solution ($S_1$) into the more concentrated solution ($S_2$) to dilute it until equilibrium is reached."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] When $6.0\\text{ g}$ of a non-volatile, non-electrolyte organic substance was dissolved in $200\\text{ g}$ of benzene, the freezing point was depressed by $0.80\\text{ K}$. If the cryoscopic constant for benzene is $K_f = 5.12\\text{ K kg mol}^{-1}$, the molar mass of the solute is:",
+          "image": "",
+          "options": [
+            "$192\\text{ g/mol}$",
+            "$96\\text{ g/mol}$",
+            "$384\\text{ g/mol}$",
+            "$128\\text{ g/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the cryoscopic formula:\n$$\\Delta T_f = \\frac{K_f \\times w_B \\times 1000}{M_B \\times W_A}$$\nRearranging for molar mass of solute ($M_B$):\n$$M_B = \\frac{K_f \\times w_B \\times 1000}{\\Delta T_f \\times W_A}$$\nSubstitute $K_f = 5.12\\text{ K kg mol}^{-1}$, $w_B = 6.0\\text{ g}$, $W_A = 200\\text{ g}$, and $\\Delta T_f = 0.80\\text{ K}$:\n$$M_B = \\frac{5.12 \\times 6.0 \\times 1000}{0.80 \\times 200} = \\frac{30720}{160} = 192\\text{ g/mol}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following physical quantities is NOT a colligative property?",
+          "image": "",
+          "options": [
+            "Lowering of vapour pressure ($\\Delta P$)",
+            "Relative lowering of vapour pressure ($\\frac{\\Delta P}{P^\\circ}$)",
+            "Depression of freezing point ($\\Delta T_f$)",
+            "Osmotic pressure ($\\pi$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Colligative properties** depend strictly on the total number/concentration of solute particles relative to the solvent, and not on the chemical identity of the solute.\n2. The four classical colligative properties are:\n- **Relative** lowering of vapour pressure ($\\frac{P^\\circ - P}{P^\\circ} = x_B$)\n- Elevation of boiling point ($\\Delta T_b$)\n- Depression of freezing point ($\\Delta T_f$)\n- Osmotic pressure ($\\pi$)\n3. Note: The absolute lowering of vapour pressure ($\\Delta P = P^\\circ - P = P^\\circ x_B$) depends on the value of $P^\\circ$, which is a specific property of the solvent, whereas the *relative* lowering ($\\frac{\\Delta P}{P^\\circ}$) depends solely on solute mole fraction ($x_B$)."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An aqueous solution containing $1.22\\text{ g}$ of benzoic acid ($\\text{C}_6\\text{H}_5\\text{COOH}$, molar mass $= 122\\text{ g/mol}$) in $100\\text{ g}$ of water boils at $100.0512^\\circ\\text{C}$. The degree of association or dissociation of benzoic acid in this aqueous solution is: (Given: $K_b$ for water $= 0.512\\text{ K kg mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "Neither associated nor dissociated (behaves as a normal monomeric solute with $i = 1$)",
+            "Completely dimerized into double molecules",
+            "Completely ionized into benzoate and hydronium ions",
+            "Undergoes trimerization"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate theoretical molality ($m$):  \n$$n = \\frac{1.22\\text{ g}}{122\\text{ g/mol}} = 0.01\\text{ mol}$$\n$$m = \\frac{0.01\\text{ mol}}{0.100\\text{ kg}} = 0.10\\text{ molal}$$\n2. Theoretical boiling point elevation for normal monomeric behavior:  \n$$\\Delta T_b(\\text{calc}) = K_b \\cdot m = (0.512\\text{ K kg mol}^{-1}) \\times (0.10\\text{ mol/kg}) = 0.0512^\\circ\\text{C}$$\n3. Observed boiling point elevation:  \n$$\\Delta T_b(\\text{obs}) = 100.0512^\\circ\\text{C} - 100.0000^\\circ\\text{C} = 0.0512^\\circ\\text{C}$$\n4. Van 't Hoff factor:  \n$$i = \\frac{\\Delta T_b(\\text{obs})}{\\Delta T_b(\\text{calc})} = \\frac{0.0512}{0.0512} = 1.0$$\nBecause $i = 1.0$, benzoic acid behaves as a normal unassociated and undissociated monomeric solute in this dilute aqueous solution.\n(In non-polar solvents like benzene, benzoic acid extensively dimerizes through cyclic double hydrogen bonds, but in polar water, hydration prevents dimerization)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In sub-zero regions during heavy snowfall, rock salt ($\\text{NaCl}$) or calcium chloride ($\\text{CaCl}_2$) is spread over icy roadways. The chemical principle behind this de-icing practice is:",
+          "image": "",
+          "options": [
+            "Depression of the freezing point of water below the ambient road temperature, preventing ice formation",
+            "Chemical reaction of salt with ice to produce hot steam",
+            "Elevation of the boiling point of ice to melt it",
+            "Sublimation of ice into water vapor"
+          ],
+          "correctOption": 0,
+          "solution": "1. When solid salt ($\\text{NaCl}$ or $\\text{CaCl}_2$) is scattered over icy highways, it dissolves in the thin surface layer of moisture to form an aqueous electrolytic solution.\n2. According to cryoscopic principles, the dissolution of a non-volatile solute causes **depression of the freezing point** ($\\Delta T_f = i K_f m$).\n3. The freezing point of the aqueous salt solution drops significantly below $0^\\circ\\text{C}$ (e.g., down to $-10^\\circ\\text{C}$ or $-20^\\circ\\text{C}$).\n4. As long as the ambient atmospheric temperature is higher than this depressed freezing point, ice cannot remain solid and melts into liquid brine, clearing the road surface."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] A solution containing $10.0\\text{ g}$ of an unknown polymer in $1.0\\text{ L}$ of water develops an osmotic pressure of $2.49 \\times 10^{-3}\\text{ bar}$ at $300\\text{ K}$. What is the molar mass of the polymer? (Take $R = 0.0831\\text{ L bar K}^{-1}\\text{ mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$1.0 \\times 10^5\\text{ g/mol}$",
+            "$5.0 \\times 10^4\\text{ g/mol}$",
+            "$2.5 \\times 10^5\\text{ g/mol}$",
+            "$1.0 \\times 10^4\\text{ g/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the van 't Hoff formula for osmotic pressure:\n$$\\pi = CRT = \\frac{w_B \\cdot R \\cdot T}{M_B \\cdot V}$$\nRearrange for the molar mass of the polymer ($M_B$):\n$$M_B = \\frac{w_B \\cdot R \\cdot T}{\\pi \\cdot V}$$\nSubstitute $w_B = 10.0\\text{ g}$, $R = 0.0831\\text{ L bar K}^{-1}\\text{ mol}^{-1}$, $T = 300\\text{ K}$, $\\pi = 2.49 \\times 10^{-3}\\text{ bar}$, and $V = 1.0\\text{ L}$:\n$$M_B = \\frac{10.0 \\times 0.0831 \\times 300}{(2.49 \\times 10^{-3}) \\times 1.0} = \\frac{249.3}{2.49 \\times 10^{-3}} = 1.0012 \\times 10^5\\text{ g/mol} \\approx 1.0 \\times 10^5\\text{ g/mol}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A $5.0\\%\\ (w/v)$ aqueous solution of an unknown cane-sugar substitute is found to be ISOTONIC with a $1.0\\%\\ (w/v)$ aqueous solution of urea (molar mass $= 60\\text{ g/mol}$) at the same temperature. The molar mass of the unknown substance is:",
+          "image": "",
+          "options": [
+            "$300\\text{ g/mol}$",
+            "$60\\text{ g/mol}$",
+            "$150\\text{ g/mol}$",
+            "$120\\text{ g/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Isotonic solutions possess identical osmotic pressures at the same temperature:  \n$$\\pi_1 = \\pi_2 \\implies C_1 R T = C_2 R T \\implies C_1 = C_2$$\n2. For Solution 1 (unknown solute):  \n$5.0\\%\\ (w/v)$ means $5.0\\text{ g}$ in $100\\text{ mL}$ ($0.10\\text{ L}$):  \n$$C_1 = \\frac{5.0 / M_1}{0.10} = \\frac{50}{M_1}$$\n3. For Solution 2 (urea):  \n$1.0\\%\\ (w/v)$ means $1.0\\text{ g}$ in $100\\text{ mL}$ ($0.10\\text{ L}$) with $M_2 = 60\\text{ g/mol}$:  \n$$C_2 = \\frac{1.0 / 60}{0.10} = \\frac{10}{60} = \\frac{1}{6}$$\n4. Equating molar concentrations:  \n$$\\frac{50}{M_1} = \\frac{1}{6} \\implies M_1 = 50 \\times 6 = 300\\text{ g/mol}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The relation connecting the molal depression constant ($K_f$) with the enthalpy of fusion ($\\Delta_{\\text{fus}}H$) of a pure solvent is:",
+          "image": "",
+          "options": [
+            "$K_f = \\frac{R \\cdot (T_f^\\circ)^2 \\cdot M_{\\text{solvent}}}{1000 \\cdot \\Delta_{\\text{fus}}H}$",
+            "$K_f = \\frac{1000 \\cdot \\Delta_{\\text{fus}}H}{R \\cdot (T_f^\\circ)^2 \\cdot M_{\\text{solvent}}}$",
+            "$K_f = \\frac{R \\cdot T_f^\\circ \\cdot M_{\\text{solvent}}}{1000 \\cdot \\Delta_{\\text{fus}}H}$",
+            "$K_f = \\frac{R \\cdot (T_f^\\circ)^2}{1000 \\cdot M_{\\text{solvent}} \\cdot \\Delta_{\\text{fus}}H}$"
+          ],
+          "correctOption": 0,
+          "solution": "From thermodynamic principles and the Clapeyron-Clausius equation applied to solid-liquid equilibrium:\n$$K_f = \\frac{R \\cdot (T_f^\\circ)^2}{1000 \\cdot l_f}$$\nwhere $l_f$ is the latent heat of fusion per gram of solvent ($l_f = \\frac{\\Delta_{\\text{fus}}H}{M_{\\text{solvent}}}$).\nSubstituting $l_f$:\n$$K_f = \\frac{R \\cdot (T_f^\\circ)^2 \\cdot M_{\\text{solvent}}}{1000 \\cdot \\Delta_{\\text{fus}}H}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When cooking vegetables at high altitude (such as on mountain peaks), water boils at a temperature below $100^\\circ\\text{C}$, taking much longer to cook food. Adding common salt to the cooking water helps primarily because:",
+          "image": "",
+          "options": [
+            "Dissolving non-volatile salt elevates the boiling point of the water, allowing cooking at a higher temperature",
+            "Salt acts as an inorganic catalyst for hydrolysis of starches",
+            "Salt decreases the latent heat of vaporization to zero",
+            "Salt lowers the atmospheric pressure inside the pot"
+          ],
+          "correctOption": 0,
+          "solution": "1. At high elevations, the ambient atmospheric pressure is substantially lower than $1\\text{ atm}$. Consequently, pure water reaches its boiling point at a lower temperature ($85-90^\\circ\\text{C}$), slowing chemical cooking reactions.\n2. Adding non-volatile common salt ($\\text{NaCl}$) produces a colligative **elevation in boiling point** ($\\Delta T_b = i K_b m$).\n3. This raises the temperature at which water boils in the open vessel, providing a hotter aqueous medium that cooks food faster."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In an experiment using the Ostwald-Walker dynamic method for measuring relative lowering of vapour pressure, dry air is bubbled successively through a train of solution bulbs, solvent bulbs, and finally through weighed anhydrous $\\text{CaCl}_2$ absorption tubes. The loss in mass of the solution bulbs ($w_1$) and solvent bulbs ($w_2$) are related to vapour pressures by:",
+          "image": "",
+          "options": [
+            "$\\frac{P^\\circ - P}{P^\\circ} = \\frac{w_2}{w_1 + w_2}$",
+            "$\\frac{P^\\circ - P}{P^\\circ} = \\frac{w_1}{w_1 + w_2}$",
+            "$\\frac{P^\\circ - P}{P^\\circ} = \\frac{w_2}{w_1}$",
+            "$\\frac{P^\\circ - P}{P^\\circ} = \\frac{w_1}{w_2}$"
+          ],
+          "correctOption": 0,
+          "solution": "In the Ostwald-Walker method:\n1. Dry air passes through the solution bulbs and takes up vapor until its partial pressure equals $P$ (the vapour pressure of the solution):\n$$\\text{Loss in mass of solution bulbs } (w_1) \\propto P$$\n2. The air then passes through the pure solvent bulbs, taking up additional vapor until its partial pressure reaches $P^\\circ$ (the saturation vapour pressure of the pure solvent):\n$$\\text{Loss in mass of solvent bulbs } (w_2) \\propto (P^\\circ - P)$$\n3. Adding both mass losses:\n$$w_1 + w_2 \\propto P + (P^\\circ - P) = P^\\circ$$\n4. Taking the ratio:\n$$\\frac{P^\\circ - P}{P^\\circ} = \\frac{w_2}{w_1 + w_2}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A $0.1\\text{ molal}$ aqueous solution of a non-electrolyte solute exhibits a freezing point depression of $0.186\\text{ K}$. What is the freezing point of this solution? (Given: $K_f$ for water $= 1.86\\text{ K kg mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$-0.186^\\circ\\text{C}$",
+            "$+0.186^\\circ\\text{C}$",
+            "$-1.86^\\circ\\text{C}$",
+            "$0.000^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate freezing point depression:  \n$$\\Delta T_f = K_f \\cdot m = (1.86\\text{ K kg mol}^{-1}) \\times (0.1\\text{ mol/kg}) = 0.186\\text{ K}$$\n2. The normal freezing point of pure water is $T_f^\\circ = 0.000^\\circ\\text{C}$.\n3. Freezing point of the solution ($T_f$):  \n$$T_f = T_f^\\circ - \\Delta T_f = 0.000^\\circ\\text{C} - 0.186^\\circ\\text{C} = -0.186^\\circ\\text{C}$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following non-electrolyte aqueous solutions will exhibit the HIGHEST boiling point at $1\\text{ atm}$ pressure?",
+          "image": "",
+          "options": [
+            "$0.30\\text{ M}$ sucrose ($\\text{C}_{12}\\text{H}_{22}\\text{O}_{11}$)",
+            "$0.10\\text{ M}$ glucose ($\\text{C}_6\\text{H}_{12}\\text{O}_6$)",
+            "$0.20\\text{ M}$ urea ($\\text{NH}_2\\text{CONH}_2$)",
+            "$0.15\\text{ M}$ glycerol ($\\text{C}_3\\text{H}_8\\text{O}_3$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. All four substances are non-volatile, non-electrolyte molecular solutes ($i = 1$).\n2. For dilute aqueous solutions, molarity is approximately equal to molality ($M \\approx m$).\n3. The boiling point elevation is directly proportional to the particle concentration:  \n$$\\Delta T_b \\propto m$$\n$$T_b = T_b^\\circ + \\Delta T_b$$\n4. Comparing concentrations:\n- $0.10\\text{ M}$ glucose $\\implies \\Delta T_b \\propto 0.10$\n- $0.15\\text{ M}$ glycerol $\\implies \\Delta T_b \\propto 0.15$\n- $0.20\\text{ M}$ urea $\\implies \\Delta T_b \\propto 0.20$\n- $0.30\\text{ M}$ sucrose $\\implies \\Delta T_b \\propto 0.30$\nBecause $0.30\\text{ M}$ sucrose has the highest concentration of solute particles, it exhibits the largest elevation in boiling point and the highest boiling point."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An aqueous solution contains $18.0\\text{ g}$ of glucose ($\\text{C}_6\\text{H}_{12}\\text{O}_6$) dissolved in $1000\\text{ g}$ of water. At what temperature will this solution freeze? (Given: $K_f$ for water $= 1.86\\text{ K kg mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$-0.186^\\circ\\text{C}$",
+            "$+0.186^\\circ\\text{C}$",
+            "$-1.860^\\circ\\text{C}$",
+            "$-0.0186^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of glucose ($M = 180\\text{ g/mol}$):  \n$$n = \\frac{18.0\\text{ g}}{180\\text{ g/mol}} = 0.10\\text{ mol}$$\n2. Mass of solvent (water) $= 1000\\text{ g} = 1.0\\text{ kg} \\implies m = 0.10\\text{ mol/kg}$.\n3. Freezing point depression:  \n$$\\Delta T_f = K_f \\cdot m = 1.86 \\times 0.10 = 0.186^\\circ\\text{C}$$\n4. Freezing point:  \n$$T_f = 0.000^\\circ\\text{C} - 0.186^\\circ\\text{C} = -0.186^\\circ\\text{C}$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The semipermeable membrane widely used in the industrial desalination of sea water via reverse osmosis is constructed from:",
+          "image": "",
+          "options": [
+            "Porous cellulose acetate supported on a suitable mechanical backing",
+            "Parchment paper soaked in copper ferrocyanide",
+            "Animal bladder membrane",
+            "Inorganic zeolite molecular sieve discs"
+          ],
+          "correctOption": 0,
+          "solution": "1. Modern commercial reverse osmosis plants require synthetic membranes that can withstand high operating hydrostatic pressures (often exceeding $40-70\\text{ bar}$) without mechanical compaction or rupture.\n2. **Cellulose acetate** (or thin-film aromatic polyamide composite) membranes supported on a porous polymer backing provide high water permeability and high salt rejection ($> 99.5\\%$) with mechanical stability."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A solution containing $1.8\\text{ g}$ of a non-electrolyte solute in $50\\text{ g}$ of water had its boiling point elevated by $0.104^\\circ\\text{C}$. The molar mass of the solute is: (Given: $K_b$ for water $= 0.52\\text{ K kg mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$180\\text{ g/mol}$",
+            "$90\\text{ g/mol}$",
+            "$360\\text{ g/mol}$",
+            "$120\\text{ g/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the ebullioscopic formula:\n$$\\Delta T_b = \\frac{K_b \\times w_B \\times 1000}{M_B \\times W_A}$$\nRearranging for $M_B$:\n$$M_B = \\frac{K_b \\times w_B \\times 1000}{\\Delta T_b \\times W_A}$$\nSubstitute $K_b = 0.52\\text{ K kg mol}^{-1}$, $w_B = 1.8\\text{ g}$, $W_A = 50\\text{ g}$, and $\\Delta T_b = 0.104\\text{ K}$:\n$$M_B = \\frac{0.52 \\times 1.8 \\times 1000}{0.104 \\times 50} = \\frac{936}{5.2} = 180\\text{ g/mol}$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Plant cells placed in a concentrated hypertonic sugar solution lose water through their cell membranes and shrink away from the cell wall. This physiological phenomenon is known as:",
+          "image": "",
+          "options": [
+            "Plasmolysis",
+            "Hemolysis",
+            "Turgidity",
+            "Reverse osmosis"
+          ],
+          "correctOption": 0,
+          "solution": "1. When a plant cell is immersed in a **hypertonic solution** (a solution having higher osmotic pressure than the plant cell sap), water flows spontaneously out of the central vacuole via exosmosis.\n2. The protoplast loses water, contracts, and pulls away from the rigid cellulose cell wall.\n3. This process is termed **plasmolysis** (used in preservation of fruits with sugar syrup and pickling with salt to prevent bacterial growth)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The relative lowering of vapour pressure (RLVP) of a dilute solution containing a non-volatile solute in a volatile solvent is equal to:",
+          "image": "",
+          "options": [
+            "The mole fraction of the solute in the solution",
+            "The mole fraction of the solvent in the solution",
+            "The molality of the solution",
+            "The molarity of the solution"
+          ],
+          "correctOption": 0,
+          "solution": "According to Raoult's law for non-volatile solutes:\n$$P_A = P^\\circ_A \\cdot x_A = P^\\circ_A (1 - x_B) = P^\\circ_A - P^\\circ_A x_B$$\nRearranging:\n$$P^\\circ_A - P_A = P^\\circ_A x_B$$\n$$\\frac{P^\\circ_A - P_A}{P^\\circ_A} = x_B$$\nThe relative lowering of vapour pressure ($\\frac{\\Delta P}{P^\\circ}$) is identically equal to the **mole fraction of the solute ($x_B$)**."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] At $20^\\circ\\text{C}$, the osmotic pressure of a $0.02\\text{ M}$ aqueous solution of sucrose is $\\pi_1$. When the absolute temperature of the solution is increased to $40^\\circ\\text{C}$ ($313.15\\text{ K}$) and the volume is kept constant, the new osmotic pressure $\\pi_2$ satisfies:",
+          "image": "",
+          "options": [
+            "$\\pi_2 = \\pi_1 \\times \\frac{313.15}{293.15}$",
+            "$\\pi_2 = 2 \\pi_1$",
+            "$\\pi_2 = \\pi_1$",
+            "$\\pi_2 = \\frac{\\pi_1}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "From van 't Hoff's law of osmotic pressure at constant volume and concentration ($C$):\n$$\\pi = CRT \\implies \\pi \\propto T\\text{ (in Kelvin)}$$\n- $T_1 = 20^\\circ\\text{C} = 293.15\\text{ K}$\n- $T_2 = 40^\\circ\\text{C} = 313.15\\text{ K}$\nTaking the ratio:\n$$\\frac{\\pi_2}{\\pi_1} = \\frac{T_2}{T_1} = \\frac{313.15}{293.15} \\implies \\pi_2 = \\pi_1 \\times \\frac{313.15}{293.15}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A solution is prepared by dissolving $10.0\\text{ g}$ of non-volatile solute in $180\\text{ g}$ of water. If the relative lowering of vapour pressure is $0.01$, the molar mass of the solute is:",
+          "image": "",
+          "options": [
+            "$99.0\\text{ g/mol}$",
+            "$180.0\\text{ g/mol}$",
+            "$100.0\\text{ g/mol}$",
+            "$50.0\\text{ g/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. By Raoult's law:\n$$\\frac{P^\\circ - P}{P^\\circ} = x_B = \\frac{n_B}{n_A + n_B} = 0.01$$\n2. Moles of solvent (water, $M_A = 18\\text{ g/mol}$):\n$$n_A = \\frac{180\\text{ g}}{18\\text{ g/mol}} = 10\\text{ mol}$$\n3. Substitute into the exact mole fraction expression:\n$$\\frac{n_B}{10 + n_B} = 0.01 = \\frac{1}{100}$$\n$$100 n_B = 10 + n_B \\implies 99 n_B = 10 \\implies n_B = \\frac{10}{99}\\text{ mol}$$\n4. Molar mass of solute ($M_B$):\n$$M_B = \\frac{\\text{Mass}}{n_B} = \\frac{10.0\\text{ g}}{10/99\\text{ mol}} = 99.0\\text{ g/mol}$$\n(Using the dilute approximation $x_B \\approx n_B/n_A$ would give $M_B = 100\\text{ g/mol}$; the exact derivation gives $99.0\\text{ g/mol}$)."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An aqueous solution of a non-electrolyte boils at $100.26^\\circ\\text{C}$ at $1\\text{ atm}$. Given $K_b = 0.52\\text{ K kg mol}^{-1}$ and $K_f = 1.86\\text{ K kg mol}^{-1}$ for water, what is the freezing point of this solution?",
+          "image": "",
+          "options": [
+            "$-0.93^\\circ\\text{C}$",
+            "$+0.93^\\circ\\text{C}$",
+            "$-0.26^\\circ\\text{C}$",
+            "$-1.86^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Boiling point elevation:  \n$$\\Delta T_b = 100.26^\\circ\\text{C} - 100.00^\\circ\\text{C} = 0.26\\text{ K}$$\n2. Find molality ($m$):  \n$$m = \\frac{\\Delta T_b}{K_b} = \\frac{0.26\\text{ K}}{0.52\\text{ K kg mol}^{-1}} = 0.50\\text{ mol/kg}$$\n3. Calculate freezing point depression:  \n$$\\Delta T_f = K_f \\cdot m = (1.86\\text{ K kg mol}^{-1}) \\times (0.50\\text{ mol/kg}) = 0.93\\text{ K}$$\n4. Freezing point of the solution:  \n$$T_f = 0.00^\\circ\\text{C} - 0.93^\\circ\\text{C} = -0.93^\\circ\\text{C}$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Why does the boiling point of a solvent INCREASE upon the addition of a non-volatile solute?",
+          "image": "",
+          "options": [
+            "The non-volatile solute lowers the vapour pressure of the solvent, requiring a higher temperature for the vapour pressure to equal atmospheric pressure",
+            "The solute reacts chemically with the solvent to release heat",
+            "The latent heat of vaporization of the solvent decreases",
+            "The non-volatile solute increases the surface tension of the solution"
+          ],
+          "correctOption": 0,
+          "solution": "1. A liquid boils at the temperature at which its equilibrium vapour pressure equals the external atmospheric pressure ($1\\text{ atm}$).\n2. When a non-volatile solute is added, solvent surface coverage drops and solute-solvent interactions lower the vapour pressure at all temperatures ($P_{\\text{solution}} < P^\\circ_{\\text{solvent}}$).\n3. Consequently, the vapour pressure curve shifts downward on a $P-T$ diagram.\n4. To make the lowered vapour pressure equal to atmospheric pressure ($1\\text{ atm}$), the solution must be heated to a higher temperature than the pure solvent's normal boiling point ($\\Delta T_b = T_b - T_b^\\circ > 0$)."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the molarity of an aqueous glucose solution that has an osmotic pressure of $4.92\\text{ atm}$ at $27^\\circ\\text{C}$? (Take $R = 0.082\\text{ L atm K}^{-1}\\text{ mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$0.20\\text{ M}$",
+            "$0.10\\text{ M}$",
+            "$0.40\\text{ M}$",
+            "$0.02\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Convert temperature to Kelvin:  \n$$T = 27 + 273 = 300\\text{ K}$$\n2. Using $\\pi = C R T$:  \n$$C = \\frac{\\pi}{R T} = \\frac{4.92\\text{ atm}}{(0.082\\text{ L atm K}^{-1}\\text{ mol}^{-1}) \\times (300\\text{ K})} = \\frac{4.92}{24.6} = 0.20\\text{ mol/L} = 0.20\\text{ M}$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Camphor is frequently chosen as a solvent in Rast's micro-method for determining molar masses because:",
+          "image": "",
+          "options": [
+            "It has an extraordinarily large cryoscopic constant ($K_f \\approx 40.0\\text{ K kg mol}^{-1}$), producing easily measurable freezing point depressions",
+            "It boils below room temperature",
+            "It dissolves completely in non-polar gases",
+            "Its enthalpy of fusion is zero"
+          ],
+          "correctOption": 0,
+          "solution": "1. Camphor has an exceptionally high molal depression constant ($K_f \\approx 39.7$ to $40.0\\text{ K kg mol}^{-1}$) because of its low enthalpy of fusion and high melting point ($T_f^\\circ \\approx 179^\\circ\\text{C}$).\n2. Even tiny, microgram quantities of a solute produce very large, readily observable depressions in the freezing point (several degrees Celsius) that can be measured with an ordinary thermometer.\n3. This analytical technique is known as **Rast's method**."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following solutions is HYPERTONIC relative to a $0.1\\text{ M}$ aqueous glucose solution?",
+          "image": "",
+          "options": [
+            "$0.2\\text{ M}$ sucrose solution",
+            "$0.05\\text{ M}$ urea solution",
+            "$0.1\\text{ M}$ fructose solution",
+            "Pure water"
+          ],
+          "correctOption": 0,
+          "solution": "1. Osmotic pressure of a non-electrolyte solution is directly proportional to its molar concentration: $\\pi = CRT$.\n- For $0.1\\text{ M}$ glucose: $\\pi \\propto 0.1$\n2. A solution is **hypertonic** if its osmotic pressure is higher than the reference solution:\n- $0.05\\text{ M}$ urea: $\\pi \\propto 0.05$ (hypotonic)\n- $0.1\\text{ M}$ fructose: $\\pi \\propto 0.1$ (isotonic)\n- Pure water: $\\pi = 0$ (hypotonic)\n- $0.2\\text{ M}$ sucrose: $\\pi \\propto 0.2 > 0.1$ (hypertonic)\nThus, $0.2\\text{ M}$ sucrose is hypertonic."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The freezing point of a $1.00\\text{ molal}$ aqueous solution of an ideal non-electrolyte solute is: (Given: $K_f$ for water $= 1.86\\text{ K kg mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$-1.86^\\circ\\text{C}$",
+            "$+1.86^\\circ\\text{C}$",
+            "$-0.512^\\circ\\text{C}$",
+            "$0.00^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\Delta T_f = K_f \\cdot m = (1.86\\text{ K kg mol}^{-1}) \\times (1.00\\text{ mol/kg}) = 1.86\\text{ K} = 1.86^\\circ\\text{C}$.\n2. Freezing point of pure water is $0.00^\\circ\\text{C}$.\n3. Freezing point of the solution:\n$$T_f = 0.00^\\circ\\text{C} - 1.86^\\circ\\text{C} = -1.86^\\circ\\text{C}$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] If the vapour pressure of water is lowered by $1\\%$ upon dissolving a non-volatile solute, the mole fraction of the solvent in the solution is:",
+          "image": "",
+          "options": [
+            "$0.99$",
+            "$0.01$",
+            "$0.90$",
+            "$0.10$"
+          ],
+          "correctOption": 0,
+          "solution": "1. A $1\\%$ lowering of vapour pressure means:\n$$\\frac{P^\\circ - P}{P^\\circ} = 0.01 = x_{\\text{solute}}$$\n2. Since the sum of mole fractions is unity:\n$$x_{\\text{solvent}} = 1 - x_{\\text{solute}} = 1 - 0.01 = 0.99$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A semipermeable membrane artificially prepared in the laboratory by precipitation of copper(II) hexacyanoferrate(II) in the pores of a porous porcelain cup is represented by the formula:",
+          "image": "",
+          "options": [
+            "$\\text{Cu}_2[\\text{Fe}(\\text{CN})_6]$",
+            "$\\text{Cu}[\\text{Fe}(\\text{CN})_6]$",
+            "$\\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_3$",
+            "$\\text{K}_2\\text{Cu}[\\text{Fe}(\\text{CN})_6]$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In Pfeffer and Traube's classic laboratory apparatus for measuring osmotic pressure, the semipermeable membrane is precipitated chemically within the microscopic wall pores of an unglazed porcelain cell:\n$$2\\text{CuSO}_4 + \\text{K}_4[\\text{Fe}(\\text{CN})_6] \\rightarrow \\text{Cu}_2[\\text{Fe}(\\text{CN})_6] \\downarrow + 2\\text{K}_2\\text{SO}_4$$\n2. The reddish-brown gelatinous precipitate **$\\text{Cu}_2[\\text{Fe}(\\text{CN})_6]$ (copper ferrocyanide)** forms an inorganic semipermeable network supported mechanically by the rigid porcelain matrix, capable of withstanding high osmotic pressures."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An aqueous solution contains $5.0\\text{ g}$ of urea in $100\\text{ g}$ of water, and another solution contains $15.0\\text{ g}$ of an unknown non-electrolyte solute $X$ in $100\\text{ g}$ of water. If both solutions exhibit the SAME elevation in boiling point, what is the molar mass of solute $X$? (Molar mass of urea $= 60\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$180\\text{ g/mol}$",
+            "$120\\text{ g/mol}$",
+            "$360\\text{ g/mol}$",
+            "$90\\text{ g/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Since both solutions have the same solvent (water) and the same boiling point elevation:\n$$\\Delta T_{b1} = \\Delta T_{b2} \\implies K_b \\cdot m_1 = K_b \\cdot m_2 \\implies m_1 = m_2$$\n2. Because both solutions contain the same mass of water ($100\\text{ g}$), their moles of solute must be equal:\n$$n_1 = n_2$$\n$$\\frac{w_{\\text{urea}}}{M_{\\text{urea}}} = \\frac{w_X}{M_X}$$\n3. Substitute the values:\n$$\\frac{5.0\\text{ g}}{60\\text{ g/mol}} = \\frac{15.0\\text{ g}}{M_X}$$\n$$M_X = \\frac{15.0 \\times 60}{5.0} = 3 \\times 60 = 180\\text{ g/mol}$$\n(This corresponds to glucose, $\\text{C}_6\\text{H}_{12}\\text{O}_6$)."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Why does a liquid freeze at a characteristic temperature?",
+          "image": "",
+          "options": [
+            "At the freezing point, the vapour pressure of the liquid phase becomes strictly equal to the vapour pressure of its solid phase",
+            "The kinetic energy of liquid molecules drops to absolute zero",
+            "The volume of the liquid expands to infinity",
+            "The atmospheric pressure becomes zero"
+          ],
+          "correctOption": 0,
+          "solution": "1. At the normal freezing point of a substance, the liquid phase and solid phase coexist in dynamic thermodynamic equilibrium.\n2. Thermodynamic equilibrium between two phases requires their chemical potentials and **vapour pressures to be identical**:\n$$P_{\\text{liquid}} = P_{\\text{solid}}$$\n3. When a non-volatile solute is dissolved in a liquid, the solution's vapour pressure curve is lowered, intersecting the steeper sublimation curve of the pure solid solvent at a lower temperature (freezing point depression)."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the ratio of the depression in freezing point to the elevation in boiling point ($\\Delta T_f / \\Delta T_b$) for a dilute aqueous solution of a non-volatile solute? (Given: $K_f = 1.86\\text{ K kg mol}^{-1}$, $K_b = 0.52\\text{ K kg mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$3.58$",
+            "$0.28$",
+            "$1.00$",
+            "$2.50$"
+          ],
+          "correctOption": 0,
+          "solution": "For the same dilute solution, the molality ($m$) is identical:\n$$\\Delta T_f = K_f \\cdot m$$\n$$\\Delta T_b = K_b \\cdot m$$\nTaking their ratio:\n$$\\frac{\\Delta T_f}{\\Delta T_b} = \\frac{K_f \\cdot m}{K_b \\cdot m} = \\frac{K_f}{K_b} = \\frac{1.86\\text{ K kg mol}^{-1}}{0.52\\text{ K kg mol}^{-1}} \\approx 3.5769 \\approx 3.58$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A non-volatile solute $X$ dissolved in water lowers the vapour pressure from $17.5\\text{ mm Hg}$ to $17.15\\text{ mm Hg}$ at $20^\\circ\\text{C}$. The relative lowering of vapour pressure is:",
+          "image": "",
+          "options": [
+            "$0.020$",
+            "$0.350$",
+            "$0.050$",
+            "$0.980$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Lowering of vapour pressure:  \n$$\\Delta P = P^\\circ - P = 17.5 - 17.15 = 0.35\\text{ mm Hg}$$\n2. Relative lowering of vapour pressure:  \n$$\\text{RLVP} = \\frac{\\Delta P}{P^\\circ} = \\frac{0.35\\text{ mm Hg}}{17.5\\text{ mm Hg}} = \\frac{35}{1750} = \\frac{1}{50} = 0.020$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] When blood cells are placed in an aqueous solution containing $1.5\\%\\ (w/v)\\ \\text{NaCl}$, the cells shrink and shrivel. This occurs because:",
+          "image": "",
+          "options": [
+            "The external solution is hypertonic relative to intracellular fluid, causing water to diffuse out of the cell via exosmosis",
+            "The external solution is hypotonic, causing rapid influx of water",
+            "Sodium ions displace potassium ions within hemoglobin",
+            "The osmotic pressure of the blood cell is higher than that of the external solution"
+          ],
+          "correctOption": 0,
+          "solution": "1. Normal human erythrocytes are isotonic with $0.9\\%\\ (w/v)\\ \\text{NaCl}$ solution.\n2. A $1.5\\%\\ (w/v)\\ \\text{NaCl}$ solution has a higher solute concentration and higher osmotic pressure than the interior of the red blood cell (**hypertonic**).\n3. Water moves spontaneously from the region of lower solute concentration (inside the cell) across the membrane to the hypertonic external environment (**exosmosis**).\n4. The cell loses volume, collapses, and shrivels (**crenation**)."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An aqueous solution containing $6.0\\text{ g}$ of urea (molar mass $= 60\\text{ g/mol}$) in $1000\\text{ g}$ of water and another solution containing $18.0\\text{ g}$ of glucose (molar mass $= 180\\text{ g/mol}$) in $1000\\text{ g}$ of water will have:",
+          "image": "",
+          "options": [
+            "Identical freezing point and identical boiling point",
+            "Different freezing points but identical boiling points",
+            "Identical freezing points but different boiling points",
+            "Different boiling points and different freezing points"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate molality of the urea solution:  \n$$m_1 = \\frac{6.0\\text{ g} / 60\\text{ g/mol}}{1.0\\text{ kg}} = 0.10\\text{ molal}$$\n2. Calculate molality of the glucose solution:  \n$$m_2 = \\frac{18.0\\text{ g} / 180\\text{ g/mol}}{1.0\\text{ kg}} = 0.10\\text{ molal}$$\n3. Because both solutes are non-electrolytes ($i = 1$) and have identical molalities ($0.10\\text{ m}$) in the same solvent (water):\n- $\\Delta T_b = K_b \\cdot m = 0.512 \\times 0.10 = 0.0512^\\circ\\text{C} \\implies T_b = 100.0512^\\circ\\text{C}$\n- $\\Delta T_f = K_f \\cdot m = 1.86 \\times 0.10 = 0.186^\\circ\\text{C} \\implies T_f = -0.186^\\circ\\text{C}$\nBoth solutions have **identical freezing points and identical boiling points**."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The unit of molal depression constant ($K_f$) or molal elevation constant ($K_b$) in the SI system is:",
+          "image": "",
+          "options": [
+            "$\\text{K kg mol}^{-1}$",
+            "$\\text{K mol kg}^{-1}$",
+            "$\\text{kg mol}^{-1}$",
+            "$\\text{K L mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the formula $\\Delta T = K \\cdot m$:\n$$K = \\frac{\\Delta T}{m}$$\n- Unit of temperature change ($\\Delta T$): Kelvin ($\\text{K}$)\n- Unit of molality ($m$): $\\text{mol kg}^{-1}$\n$$K = \\frac{\\text{K}}{\\text{mol kg}^{-1}} = \\text{K kg mol}^{-1}$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] If the osmotic pressure of a dilute solution of glucose at $27^\\circ\\text{C}$ is $2.46\\text{ atm}$, what is the concentration of glucose in grams per liter? (Take $R = 0.082\\text{ L atm K}^{-1}\\text{ mol}^{-1}$, molar mass of glucose $= 180\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$18.0\\text{ g/L}$",
+            "$36.0\\text{ g/L}$",
+            "$9.0\\text{ g/L}$",
+            "$1.8\\text{ g/L}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Convert temperature: $T = 27 + 273 = 300\\text{ K}$.\n2. Calculate molarity ($C$):\n$$C = \\frac{\\pi}{R T} = \\frac{2.46\\text{ atm}}{(0.082\\text{ L atm K}^{-1}\\text{ mol}^{-1}) \\times (300\\text{ K})} = \\frac{2.46}{24.6} = 0.10\\text{ mol/L}$$\n3. Convert molarity to grams per liter:\n$$\\text{Concentration in g/L} = C \\times M = (0.10\\text{ mol/L}) \\times (180\\text{ g/mol}) = 18.0\\text{ g/L}$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An ideal solution has a mole fraction of non-volatile solute equal to $0.20$. The vapour pressure of the pure solvent is $50.0\\text{ torr}$. What is the vapour pressure of the solution?",
+          "image": "",
+          "options": [
+            "$40.0\\text{ torr}$",
+            "$10.0\\text{ torr}$",
+            "$50.0\\text{ torr}$",
+            "$25.0\\text{ torr}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. By Raoult's law:\n$$P_{\\text{solution}} = P^\\circ \\cdot x_{\\text{solvent}}$$\n2. Mole fraction of solvent:\n$$x_{\\text{solvent}} = 1 - x_{\\text{solute}} = 1 - 0.20 = 0.80$$\n3. Calculate solution vapour pressure:\n$$P_{\\text{solution}} = 50.0\\text{ torr} \\times 0.80 = 40.0\\text{ torr}$$\n(Lowering of vapour pressure is $\\Delta P = 50.0 - 40.0 = 10.0\\text{ torr}$, and $\\frac{\\Delta P}{P^\\circ} = \\frac{10}{50} = 0.20 = x_{\\text{solute}}$)."
+        }
+      ]
+    }
+  ]
+}

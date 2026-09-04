@@ -265,15 +265,7 @@
           isPracticeMode = true;
           let rawQuestions = [];
           (localTestData.sections || []).forEach(sec => {
-            const secSubject = sec.subject || 'General';
-            const secQuestions = sec.questions || [];
-            // Preserve Section-wise MCQ then Numerical ordering in practice mode
-            const mcqs = secQuestions.filter(q => q.type !== 'numerical');
-            const numericals = secQuestions.filter(q => q.type === 'numerical');
-            rawQuestions = rawQuestions.concat(
-              mcqs.map(q => ({ ...q, subject: secSubject })),
-              numericals.map(q => ({ ...q, subject: secSubject }))
-            );
+            (sec.questions || []).forEach(q => rawQuestions.push({ ...q, subject: sec.subject || 'General' }));
           });
 
           sessionData = {

@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-13-ionic-equilibrium-acids-and-bases",
+  "title": "Ionic Equilibrium: Acids & Bases (Theories, Weak Electrolyte Ionization, & Ostwald's Dilution Law)",
+  "syllabus": "Electrolytes (strong vs weak electrolytes, degree of ionization α); Theories of acids and bases: Arrhenius concept (limitations and scope), Brönsted-Lowry concept (proton donor/acceptor, conjugate acid-base pairs, amphoteric/amphiprotic substances, relative strength of conjugate pairs), Lewis concept (electron-pair donor/acceptor, types of Lewis acids and bases); Self-ionization of water (autoprotolysis), ionic product of water (Kw) and its temperature dependence; Ionization of weak acids (Ka, pKa) and weak bases (Kb, pKb); Ostwald's dilution law (derivation, mathematical approximations α = √(Ka/C), limitations for strong electrolytes); Polyprotic acids (stepwise ionization constants Ka1, Ka2, Ka3 and reasons for Ka1 >> Ka2 >> Ka3); Common ion effect on weak acid and weak base ionization; Quantitative calculations of [H+], [OH-], degree of dissociation, and percentage ionization",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The ionization constant of a weak monoprotic acid $\\text{HA}$ is $K_a = 1.0 \\times 10^{-5}$. The degree of dissociation ($\\alpha$) of this acid in a $0.10\\text{ M}$ aqueous solution is:",
+          "image": "",
+          "options": [
+            "$1.0 \\times 10^{-2}$",
+            "$1.0 \\times 10^{-3}$",
+            "$3.16 \\times 10^{-3}$",
+            "$1.0 \\times 10^{-4}$"
+          ],
+          "correctOption": 0,
+          "solution": "According to Ostwald's dilution law for a weak monoprotic acid:\n$$K_a = \\frac{C\\alpha^2}{1 - \\alpha}$$\nSince $K_a$ is very small ($1.0 \\times 10^{-5}$), $\\alpha \\ll 1$, so $(1 - \\alpha) \\approx 1$:\n$$\\alpha = \\sqrt{\\frac{K_a}{C}}$$\nSubstitute $K_a = 1.0 \\times 10^{-5}$ and $C = 0.10\\text{ M} = 1.0 \\times 10^{-1}\\text{ M}$:\n$$\\alpha = \\sqrt{\\frac{1.0 \\times 10^{-5}}{1.0 \\times 10^{-1}}} = \\sqrt{1.0 \\times 10^{-4}} = 1.0 \\times 10^{-2}$$\n(This corresponds to $1.0\\%$ ionization, confirming the validity of the approximation $\\alpha \\ll 1$)."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following species can act as BOTH a Brönsted-Lowry acid and a Brönsted-Lowry base (amphiprotic species)?",
+          "image": "",
+          "options": [
+            "$\\text{HCO}_3^-$",
+            "$\\text{CO}_3^{2-}$",
+            "$\\text{SO}_4^{2-}$",
+            "$\\text{NH}_4^+$"
+          ],
+          "correctOption": 0,
+          "solution": "A Brönsted-Lowry acid is a proton donor, while a Brönsted-Lowry base is a proton acceptor:\n1. Bicarbonate ion ($\\text{HCO}_3^-$):\n- As a proton donor (acid): $\\text{HCO}_3^- \\rightleftharpoons \\text{H}^+ + \\text{CO}_3^{2-}$\n- As a proton acceptor (base): $\\text{HCO}_3^- + \\text{H}^+ \\rightleftharpoons \\text{H}_2\\text{CO}_3$\nBecause it can both lose and gain a proton, $\\text{HCO}_3^-$ is amphiprotic (amphoteric).\n2. $\\text{CO}_3^{2-}$ and $\\text{SO}_4^{2-}$ have no ionizable protons and can only act as bases.\n3. $\\text{NH}_4^+$ can only donate a proton to form $\\text{NH}_3$, acting exclusively as an acid."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The conjugate base of the Brönsted acid $\\text{HSO}_4^-$ and the conjugate acid of the Brönsted base $\\text{NH}_3$ are respectively:",
+          "image": "",
+          "options": [
+            "$\\text{SO}_4^{2-}$ and $\\text{NH}_4^+$",
+            "$\\text{H}_2\\text{SO}_4$ and $\\text{NH}_2^-$",
+            "$\\text{SO}_4^{2-}$ and $\\text{NH}_2^-$",
+            "$\\text{H}_2\\text{SO}_4$ and $\\text{NH}_4^+$"
+          ],
+          "correctOption": 0,
+          "solution": "According to the Brönsted-Lowry theory:\n1. The **conjugate base** of an acid is formed by the removal of one proton ($\\text{H}^+$):\n$$\\text{Conjugate base} = \\text{Acid} - \\text{H}^+$$\n$$\\text{HSO}_4^- - \\text{H}^+ = \\text{SO}_4^{2-}$$\n2. The **conjugate acid** of a base is formed by the addition of one proton ($\\text{H}^+$):\n$$\\text{Conjugate acid} = \\text{Base} + \\text{H}^+$$\n$$\\text{NH}_3 + \\text{H}^+ = \\text{NH}_4^+$$\nThus, the pair is $\\text{SO}_4^{2-}$ and $\\text{NH}_4^+$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following species functions as a Lewis acid but CANNOT be classified as an Arrhenius acid?",
+          "image": "",
+          "options": [
+            "$\\text{BF}_3$",
+            "$\\text{HCl}$",
+            "$\\text{HNO}_3$",
+            "$\\text{CH}_3\\text{COOH}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. An **Arrhenius acid** must contain hydrogen and release hydrogen ions ($\\text{H}^+$) in aqueous solution (such as $\\text{HCl}, \\text{HNO}_3,$ and $\\text{CH}_3\\text{COOH}$).\n2. A **Lewis acid** is an electron-pair acceptor.\n3. In boron trifluoride ($\\text{BF}_3$), the central boron atom has only $6$ valence electrons (an incomplete octet) and possesses a vacant unhybridized $2p$ orbital that readily accepts an electron lone pair.\n4. Because $\\text{BF}_3$ contains no hydrogen atoms, it cannot produce $\\text{H}^+$ ions directly and is not an Arrhenius acid, but it is an electrophilic Lewis acid."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] At $25^\\circ\\text{C}$, the value of the ionic product of water is $K_w = 1.0 \\times 10^{-14}$. If the temperature of pure water is raised to $60^\\circ\\text{C}$, which of the following statements is TRUE?",
+          "image": "",
+          "options": [
+            "$K_w$ increases, $[\\text{H}^+]$ increases, and the water remains neutral",
+            "$K_w$ increases, $[\\text{H}^+]$ increases, and the water becomes acidic",
+            "$K_w$ decreases, $[\\text{H}^+]$ decreases, and the water becomes basic",
+            "$K_w$ remains constant because water is pure"
+          ],
+          "correctOption": 0,
+          "solution": "1. The autoionization of water is an endothermic process:\n$$\\text{H}_2\\text{O}(l) + \\text{H}_2\\text{O}(l) \\rightleftharpoons \\text{H}_3\\text{O}^+(aq) + \\text{OH}^-(aq); \\quad \\Delta H > 0$$\n2. By Le Chatelier's principle, increasing the temperature shifts the equilibrium in the forward direction, so the value of **$K_w$ increases** (e.g., $K_w \\approx 1.0 \\times 10^{-13}$ at $60^\\circ\\text{C}$).\n3. As a result, both $[\\text{H}^+]$ and $[\\text{OH}^-]$ increase ($[\\text{H}^+] = \\sqrt{K_w} > 10^{-7}\\text{ M}$, so $\\text{pH} < 7$).\n4. However, because pure water still produces equal concentrations of hydrogen ions and hydroxide ions ($[\\text{H}^+] = [\\text{OH}^-]$), the water **remains strictly neutral**."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a polyprotic acid such as orthophosphoric acid ($\\text{H}_3\\text{PO}_4$), the stepwise ionization constants satisfy the order $K_{a1} \\gg K_{a2} \\gg K_{a3}$. The primary reason for this sharp decrease is that:",
+          "image": "",
+          "options": [
+            "It is electrostatically much more difficult to remove a positively charged proton from an increasingly negatively charged anion",
+            "Phosphorus changes its oxidation state during ionization",
+            "The conjugate base forms stronger hydrogen bonds with water",
+            "The volume of the anion expands significantly"
+          ],
+          "correctOption": 0,
+          "solution": "The successive dissociation steps are:\n1. $\\text{H}_3\\text{PO}_4 \\rightleftharpoons \\text{H}^+ + \\text{H}_2\\text{PO}_4^- \\quad (K_{a1} \\approx 7.5 \\times 10^{-3})$\n2. $\\text{H}_2\\text{PO}_4^- \\rightleftharpoons \\text{H}^+ + \\text{HPO}_4^{2-} \\quad (K_{a2} \\approx 6.2 \\times 10^{-8})$\n3. $\\text{HPO}_4^{2-} \\rightleftharpoons \\text{H}^+ + \\text{PO}_4^{3-} \\quad (K_{a3} \\approx 4.2 \\times 10^{-13})$\nElectrostatic attraction between a positively charged proton ($\\text{H}^+$) and the conjugate anion increases with the negative charge on the anion: removing $\\text{H}^+$ from neutral $\\text{H}_3\\text{PO}_4$ is relatively easy, removing $\\text{H}^+$ from a singly charged anion ($\\text{H}_2\\text{PO}_4^-$) is significantly harder, and pulling $\\text{H}^+$ away from a doubly negative anion ($\\text{HPO}_4^{2-}$) is extremely difficult.\nHence, $K_{a1} \\gg K_{a2} \\gg K_{a3}$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the concentration of hydroxide ions ($[\\text{OH}^-]$) in a $0.05\\text{ M}$ aqueous solution of ammonia ($\\text{NH}_3$)? (Given: $K_b = 1.8 \\times 10^{-5}$)",
+          "image": "",
+          "options": [
+            "$9.49 \\times 10^{-4}\\text{ M}$",
+            "$3.00 \\times 10^{-3}\\text{ M}$",
+            "$1.80 \\times 10^{-5}\\text{ M}$",
+            "$9.00 \\times 10^{-7}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Ammonia acts as a weak base in water:\n$$\\text{NH}_3 + \\text{H}_2\\text{O} \\rightleftharpoons \\text{NH}_4^+ + \\text{OH}^-$$\nFrom Ostwald's dilution law:\n$$[\\text{OH}^-] = C\\alpha = \\sqrt{K_b \\cdot C}$$\nSubstitute $K_b = 1.8 \\times 10^{-5}$ and $C = 0.05\\text{ M} = 5.0 \\times 10^{-2}\\text{ M}$:\n$$[\\text{OH}^-] = \\sqrt{(1.8 \\times 10^{-5}) \\times (5.0 \\times 10^{-2})} = \\sqrt{9.0 \\times 10^{-7}} = \\sqrt{90 \\times 10^{-8}}$$\n$$[\\text{OH}^-] \\approx 9.487 \\times 10^{-4}\\text{ M} \\approx 9.49 \\times 10^{-4}\\text{ M}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements about Ostwald's dilution law is INCORRECT?",
+          "image": "",
+          "options": [
+            "It is strictly applicable to strong electrolytes like $\\text{HCl}$ and $\\text{NaCl}$",
+            "It is derived by applying the Law of Mass Action to the dissociation equilibrium of weak electrolytes",
+            "The degree of dissociation ($\\alpha$) is inversely proportional to the square root of molar concentration ($\\alpha \\propto \\frac{1}{\\sqrt{C}}$)",
+            "At infinite dilution, the degree of dissociation of a weak electrolyte approaches unity ($\\alpha \\rightarrow 1$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Ostwald's dilution law** assumes a dynamic equilibrium between undissociated neutral molecules and ions: $\\text{AB} \\rightleftharpoons \\text{A}^+ + \\text{B}^-$.\n2. Strong electrolytes (such as $\\text{HCl}, \\text{HNO}_3, \\text{NaCl}$) are completely ionized in aqueous solution at all practical concentrations ($\\alpha \\approx 1$). There are no un-ionized neutral molecules in equilibrium with ions.\n3. Therefore, applying the Law of Mass Action to strong electrolytes fails, and Ostwald's dilution law is **strictly inapplicable to strong electrolytes** (it applies only to weak electrolytes).\nHence, Statement A is incorrect."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The relation between the acid dissociation constant of a weak acid ($K_a$) and the base dissociation constant of its conjugate base ($K_b$) in aqueous solution at $298\\text{ K}$ is:",
+          "image": "",
+          "options": [
+            "$K_a \\cdot K_b = K_w$",
+            "$\\frac{K_a}{K_b} = K_w$",
+            "$K_a + K_b = K_w$",
+            "$p K_a \\cdot p K_b = 14$"
+          ],
+          "correctOption": 0,
+          "solution": "For any conjugate acid-base pair in water (e.g., $\\text{HA}$ and $\\text{A}^-$):\n1. $\\text{HA} + \\text{H}_2\\text{O} \\rightleftharpoons \\text{H}_3\\text{O}^+ + \\text{A}^-; \\quad K_a = \\frac{[\\text{H}_3\\text{O}^+][\\text{A}^-]}{[\\text{HA}]}$\n2. $\\text{A}^- + \\text{H}_2\\text{O} \\rightleftharpoons \\text{HA} + \\text{OH}^-; \\quad K_b = \\frac{[\\text{HA}][\\text{OH}^-]}{[\\text{A}^-]}$\nMultiplying $K_a$ and $K_b$:\n$$K_a \\cdot K_b = \\frac{[\\text{H}_3\\text{O}^+][\\text{A}^-]}{[\\text{HA}]} \\times \\frac{[\\text{HA}][\\text{OH}^-]}{[\\text{A}^-]} = [\\text{H}_3\\text{O}^+][\\text{OH}^-] = K_w$$\nIn logarithmic form: $p K_a + p K_b = p K_w = 14$ (at $25^\\circ\\text{C}$)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following is the STRONGEST conjugate base?",
+          "image": "",
+          "options": [
+            "$\\text{CH}_3\\text{COO}^-$",
+            "$\\text{Cl}^-$",
+            "$\\text{NO}_3^-$",
+            "$\\text{ClO}_4^-$"
+          ],
+          "correctOption": 0,
+          "solution": "According to the Brönsted-Lowry concept:\n$$\\text{Stronger acid} \\implies \\text{Weaker conjugate base}$$\n$$\\text{Weaker acid} \\implies \\text{Stronger conjugate base}$$\nEvaluate the parent acids:\n- $\\text{HClO}_4$ is a super-strong acid $\\implies \\text{ClO}_4^-$ is an extremely weak base.\n- $\\text{HCl}$ is a strong acid $\\implies \\text{Cl}^-$ is a very weak base.\n- $\\text{HNO}_3$ is a strong acid $\\implies \\text{NO}_3^-$ is a very weak base.\n- $\\text{CH}_3\\text{COOH}$ is a weak acid ($K_a \\approx 1.8 \\times 10^{-5}$) $\\implies$ its conjugate base, the acetate ion ($\\text{CH}_3\\text{COO}^-$), is by far the **strongest base** among the options."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A $0.01\\text{ M}$ solution of acetic acid is found to be $4.2\\%$ ionized at $25^\\circ\\text{C}$. The ionization constant ($K_a$) of acetic acid is approximately:",
+          "image": "",
+          "options": [
+            "$1.76 \\times 10^{-5}$",
+            "$4.20 \\times 10^{-4}$",
+            "$1.76 \\times 10^{-4}$",
+            "$8.40 \\times 10^{-6}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Convert percentage ionization to degree of dissociation ($\\alpha$):\n$$\\alpha = \\frac{4.2}{100} = 0.042$$\n2. From Ostwald's dilution law:\n$$K_a = \\frac{C\\alpha^2}{1 - \\alpha}$$\nGiven $C = 0.01\\text{ M} = 10^{-2}\\text{ M}$:\n$$K_a = \\frac{(0.01) \\times (0.042)^2}{1 - 0.042} = \\frac{0.01 \\times 0.001764}{0.958} = \\frac{1.764 \\times 10^{-5}}{0.958} \\approx 1.84 \\times 10^{-5} \\approx 1.76 \\times 10^{-5}$$\n(Using the common approximation $K_a \\approx C\\alpha^2 = 10^{-2} \\times (0.042)^2 = 1.764 \\times 10^{-5}$)."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following molecules acts as a Lewis base due to the presence of an unshared pair of electrons?",
+          "image": "",
+          "options": [
+            "$\\text{NH}_3$",
+            "$\\text{AlCl}_3$",
+            "$\\text{BCl}_3$",
+            "$\\text{SiF}_4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. A **Lewis base** is an electron-pair donor.\n2. In ammonia ($\\text{NH}_3$), the nitrogen atom has $5$ valence electrons, forms three single covalent bonds with hydrogen, and retains one non-bonding lone pair in an $sp^3$ hybrid orbital, which it readily donates to electron-deficient species.\n3. $\\text{AlCl}_3$ and $\\text{BCl}_3$ have incomplete octets (electron-deficient), and $\\text{SiF}_4$ has vacant $d$-orbitals; all three act as Lewis acids."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] When solid ammonium chloride ($\\text{NH}_4\\text{Cl}$) is added to an aqueous solution of ammonium hydroxide ($\\text{NH}_4\\text{OH}$):",
+          "image": "",
+          "options": [
+            "The concentration of $\\text{OH}^-$ ions decreases and the degree of ionization of $\\text{NH}_4\\text{OH}$ is suppressed",
+            "The concentration of $\\text{OH}^-$ ions increases",
+            "The degree of ionization of $\\text{NH}_4\\text{OH}$ increases",
+            "$\\text{NH}_4\\text{OH}$ completely precipitates as a neutral salt"
+          ],
+          "correctOption": 0,
+          "solution": "1. Ammonium hydroxide is a weak base with the dissociation equilibrium:\n$$\\text{NH}_4\\text{OH}(aq) \\rightleftharpoons \\text{NH}_4^+(aq) + \\text{OH}^-(aq)$$\n2. Adding $\\text{NH}_4\\text{Cl}$ (a strong, completely dissociated salt) introduces a large concentration of the common ammonium ion ($\\text{NH}_4^+$):\n$$\\text{NH}_4\\text{Cl}(aq) \\rightarrow \\text{NH}_4^+(aq) + \\text{Cl}^-(aq)$$\n3. By Le Chatelier's principle (the **common ion effect**), the excess product $\\text{NH}_4^+$ drives the equilibrium to the left (backward direction).\n4. This suppresses the degree of ionization of $\\text{NH}_4\\text{OH}$, causing $[\\text{OH}^-]$ to **decrease** (and lowering the $\\text{pH}$)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The hydrogen ion concentration ($[\\text{H}^+]$) in a $0.1\\text{ M}$ solution of a weak monobasic acid $\\text{HA}$ having $K_a = 4.0 \\times 10^{-7}$ is:",
+          "image": "",
+          "options": [
+            "$2.0 \\times 10^{-4}\\text{ M}$",
+            "$4.0 \\times 10^{-4}\\text{ M}$",
+            "$2.0 \\times 10^{-3}\\text{ M}$",
+            "$4.0 \\times 10^{-8}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a weak monoprotic acid:\n$$[\\text{H}^+] = C\\alpha = \\sqrt{K_a \\cdot C}$$\nSubstitute $K_a = 4.0 \\times 10^{-7}$ and $C = 0.1\\text{ M} = 1.0 \\times 10^{-1}\\text{ M}$:\n$$[\\text{H}^+] = \\sqrt{(4.0 \\times 10^{-7}) \\times (1.0 \\times 10^{-1})} = \\sqrt{4.0 \\times 10^{-8}} = 2.0 \\times 10^{-4}\\text{ M}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the gas-phase reaction:\n$$\\text{NH}_3(g) + \\text{HCl}(g) \\rightarrow \\text{NH}_4\\text{Cl}(s)$$\nWhy does this reaction fail to be categorized as an acid-base neutralization under the Arrhenius concept?",
+          "image": "",
+          "options": [
+            "The reaction occurs in the absence of an aqueous medium, and $\\text{NH}_3$ does not contain a hydroxyl group ($-\\text{OH}$)",
+            "$\\text{NH}_4\\text{Cl}$ is not a neutral salt",
+            "The reaction is endothermic",
+            "Gas-phase molecules cannot transfer electrons"
+          ],
+          "correctOption": 0,
+          "solution": "Limitations of Arrhenius theory:\n1. An acid is defined as a substance that releases $\\text{H}^+$ ions **in water**, and a base is defined as a substance that yields $\\text{OH}^-$ ions **in water**.\n2. In the gas-phase neutralization of $\\text{NH}_3(g)$ with $\\text{HCl}(g)$:\n- There is no water present (non-aqueous medium).\n- Ammonia contains no $-\\text{OH}$ group, yet it neutralizes the acid.\n3. The Brönsted-Lowry and Lewis concepts successfully classify this reaction without requiring an aqueous solvent."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] If the degree of dissociation of a $0.04\\text{ M}$ weak electrolyte is $0.02$, what will be its degree of dissociation when the solution is diluted to $0.01\\text{ M}$?",
+          "image": "",
+          "options": [
+            "$0.04$",
+            "$0.01$",
+            "$0.08$",
+            "$0.02$"
+          ],
+          "correctOption": 0,
+          "solution": "From Ostwald's dilution law for a weak electrolyte:\n$$\\alpha = \\sqrt{\\frac{K}{C}} \\implies \\alpha \\propto \\frac{1}{\\sqrt{C}}$$\n$$\\frac{\\alpha_2}{\\alpha_1} = \\sqrt{\\frac{C_1}{C_2}}$$\nGiven $\\alpha_1 = 0.02$, $C_1 = 0.04\\text{ M}$, and $C_2 = 0.01\\text{ M}$:\n$$\\frac{\\alpha_2}{0.02} = \\sqrt{\\frac{0.04}{0.01}} = \\sqrt{4} = 2$$\n$$\\alpha_2 = 2 \\times 0.02 = 0.04$$\n(Diluting the concentration by a factor of $4$ doubles the degree of dissociation)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following cations can act as a Lewis acid by accepting an electron lone pair into its vacant valence orbital?",
+          "image": "",
+          "options": [
+            "$\\text{Ag}^+$",
+            "$\\text{Na}^+$",
+            "$\\text{K}^+$",
+            "$\\text{Cs}^+$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Transition metal cations have relatively small ionic radii, high polarizability, and accessible vacant $d$-orbitals that can accept electron pairs from electron donors (ligands/Lewis bases).\n2. For example, $\\text{Ag}^+$ reacts with ammonia to form coordination complexes:\n$$\\text{Ag}^+ + 2:\\text{NH}_3 \\rightleftharpoons [\\text{Ag}(\\text{NH}_3)_2]^+ \\quad (\\text{Lewis acid-base adduct})$$\n3. Alkali metal cations ($\\text{Na}^+, \\text{K}^+, \\text{Cs}^+$) have stable noble gas configurations and very low tendencies to act as Lewis acids."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The $p K_a$ of hydrofluoric acid ($\\text{HF}$) is $3.2$, and the $p K_a$ of acetic acid ($\\text{CH}_3\\text{COOH}$) is $4.75$. Which of the following deductions is correct?",
+          "image": "",
+          "options": [
+            "$\\text{HF}$ is a stronger acid than $\\text{CH}_3\\text{COOH}$, and $\\text{F}^-$ is a weaker base than $\\text{CH}_3\\text{COO}^-$",
+            "$\\text{CH}_3\\text{COOH}$ is a stronger acid than $\\text{HF}$",
+            "$\\text{F}^-$ is a stronger base than $\\text{CH}_3\\text{COO}^-$",
+            "Both acids have identical ionization constants"
+          ],
+          "correctOption": 0,
+          "solution": "1. Acid strength increases as $K_a$ increases, which corresponds to a **lower $p K_a$ value**:\n$$p K_a(\\text{HF}) = 3.2 < p K_a(\\text{CH}_3\\text{COOH}) = 4.75$$\nTherefore, $\\text{HF}$ is a stronger acid than $\\text{CH}_3\\text{COOH}$.\n2. According to the conjugate relationship, the stronger the acid, the weaker its conjugate base:\n$$p K_b = 14 - p K_a$$\n- $p K_b(\\text{F}^-) = 14 - 3.2 = 10.8$\n- $p K_b(\\text{CH}_3\\text{COO}^-) = 14 - 4.75 = 9.25$\nBecause $\\text{F}^-$ has a higher $p K_b$, it is a **weaker base** than $\\text{CH}_3\\text{COO}^-$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a dibasic acid $\\text{H}_2\\text{A}$ with dissociation constants $K_{a1} = 1.0 \\times 10^{-5}$ and $K_{a2} = 5.0 \\times 10^{-10}$, the concentration of the divalent anion $[\\text{A}^{2-}]$ in a $0.1\\text{ M}$ solution of $\\text{H}_2\\text{A}$ is approximately:",
+          "image": "",
+          "options": [
+            "$5.0 \\times 10^{-10}\\text{ M}$",
+            "$1.0 \\times 10^{-5}\\text{ M}$",
+            "$1.0 \\times 10^{-3}\\text{ M}$",
+            "$5.0 \\times 10^{-11}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a polyprotic weak acid $\\text{H}_2\\text{A}$:\n1. First dissociation step:\n$$\\text{H}_2\\text{A} \\rightleftharpoons \\text{H}^+ + \\text{HA}^- \\quad (K_{a1})$$\nSince $K_{a1} \\gg K_{a2}$, practically all $\\text{H}^+$ in solution is generated in the first step:\n$$[\\text{H}^+] \\approx [\\text{HA}^-] \\approx \\sqrt{K_{a1} C}$$\n2. Second dissociation step:\n$$\\text{HA}^- \\rightleftharpoons \\text{H}^+ + \\text{A}^{2-} \\quad (K_{a2} = \\frac{[\\text{H}^+][\\text{A}^{2-}]}{[\\text{HA}^-]})$$\nSubstitute $[\\text{H}^+] \\approx [\\text{HA}^-]$:\n$$K_{a2} = \\frac{[\\text{HA}^-][\\text{A}^{2-}]}{[\\text{HA}^-]} = [\\text{A}^{2-}]$$\nTherefore, for any diprotic acid where $K_{a1} \\gg K_{a2}$, the concentration of the divalent anion is simply equal to the second dissociation constant:\n$$[\\text{A}^{2-}] \\approx K_{a2} = 5.0 \\times 10^{-10}\\text{ M}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following statements represents the LUX-FLOOD definition of acids and bases?",
+          "image": "",
+          "options": [
+            "An acid is an oxide ion ($\\text{O}^{2-}$) acceptor, and a base is an oxide ion donor",
+            "An acid is a proton donor, and a base is a proton acceptor",
+            "An acid produces $\\text{H}^+$ in water, and a base produces $\\text{OH}^-$",
+            "An acid is an electron-pair donor, and a base is an electron-pair acceptor"
+          ],
+          "correctOption": 0,
+          "solution": "The **Lux-Flood concept** (used primarily in high-temperature geochemistry and ceramic metallurgy) characterizes acid-base reactions in terms of oxide ion transfer:\n- **Base:** An oxide ion ($\\text{O}^{2-}$) donor (e.g., $\\text{CaO} \\rightarrow \\text{Ca}^{2+} + \\text{O}^{2-}$)\n- **Acid:** An oxide ion ($\\text{O}^{2-}$) acceptor (e.g., $\\text{SiO}_2 + \\text{O}^{2-} \\rightarrow \\text{SiO}_3^{2-}$)\n$$\\text{CaO (base)} + \\text{SiO}_2\\text{ (acid)} \\rightarrow \\text{CaSiO}_3\\text{ (salt)}$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The percentage ionization of a $0.05\\text{ M}$ solution of a weak monoprotic acid with $K_a = 2.0 \\times 10^{-5}$ is:",
+          "image": "",
+          "options": [
+            "$2.0\\%$",
+            "$0.02\\%$",
+            "$4.0\\%$",
+            "$1.0\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Degree of dissociation:\n$$\\alpha = \\sqrt{\\frac{K_a}{C}} = \\sqrt{\\frac{2.0 \\times 10^{-5}}{0.05}} = \\sqrt{\\frac{2.0 \\times 10^{-5}}{5.0 \\times 10^{-2}}} = \\sqrt{4.0 \\times 10^{-4}} = 2.0 \\times 10^{-2}$$\n2. Percentage ionization:\n$$\\%\\text{ ionization} = \\alpha \\times 100 = (2.0 \\times 10^{-2}) \\times 100 = 2.0\\%$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In which of the following reactions does water act as a Brönsted-Lowry BASE?",
+          "image": "",
+          "options": [
+            "$\\text{HCl} + \\text{H}_2\\text{O} \\rightleftharpoons \\text{H}_3\\text{O}^+ + \\text{Cl}^-$",
+            "$\\text{NH}_3 + \\text{H}_2\\text{O} \\rightleftharpoons \\text{NH}_4^+ + \\text{OH}^-$",
+            "$\\text{CO}_3^{2-} + \\text{H}_2\\text{O} \\rightleftharpoons \\text{HCO}_3^- + \\text{OH}^-$",
+            "$\\text{S}^{2-} + \\text{H}_2\\text{O} \\rightleftharpoons \\text{HS}^- + \\text{OH}^-$"
+          ],
+          "correctOption": 0,
+          "solution": "A Brönsted-Lowry base must accept a proton:\n1. In $\\text{HCl} + \\text{H}_2\\text{O} \\rightleftharpoons \\text{H}_3\\text{O}^+ + \\text{Cl}^-$, water accepts a proton from $\\text{HCl}$ to become the hydronium ion ($\\text{H}_3\\text{O}^+$). Thus, water acts as a **Brönsted-Lowry base**.\n2. In the other three reactions, water donates a proton to $\\text{NH}_3, \\text{CO}_3^{2-},$ and $\\text{S}^{2-}$, generating $\\text{OH}^-$ and acting as a Brönsted-Lowry acid."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the conjugate acid of the amide ion ($\\text{NH}_2^-$)?",
+          "image": "",
+          "options": [
+            "$\\text{NH}_3$",
+            "$\\text{NH}_4^+$",
+            "$\\text{N}_2\\text{H}_4$",
+            "$\\text{N}^{3-}$"
+          ],
+          "correctOption": 0,
+          "solution": "To find the conjugate acid of any base, add a single proton ($\\text{H}^+$):\n$$\\text{Conjugate acid} = \\text{Base} + \\text{H}^+$$\n$$\\text{NH}_2^- + \\text{H}^+ = \\text{NH}_3$$\nTherefore, ammonia ($\\text{NH}_3$) is the conjugate acid of $\\text{NH}_2^-$."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A weak monobasic acid has $K_a = 1.0 \\times 10^{-6}$. At what concentration will it be $10\\%$ dissociated?",
+          "image": "",
+          "options": [
+            "$9.0 \\times 10^{-5}\\text{ M}$",
+            "$1.0 \\times 10^{-4}\\text{ M}$",
+            "$1.0 \\times 10^{-5}\\text{ M}$",
+            "$1.0 \\times 10^{-3}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Degree of dissociation for $10\\%$ ionization: $\\alpha = 0.10$.\n2. Since $\\alpha = 0.10$ ($> 0.05$), do NOT neglect $\\alpha$ in the denominator:\n$$K_a = \\frac{C\\alpha^2}{1 - \\alpha}$$\n$$1.0 \\times 10^{-6} = \\frac{C \\times (0.10)^2}{1 - 0.10} = \\frac{C \\times 0.01}{0.90}$$\n$$1.0 \\times 10^{-6} = C \\times \\frac{1}{90}$$\n$$C = 90 \\times 1.0 \\times 10^{-6} = 9.0 \\times 10^{-5}\\text{ M}$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following compounds has the HIGHEST Lewis acidity?",
+          "image": "",
+          "options": [
+            "$\\text{BI}_3$",
+            "$\\text{BBr}_3$",
+            "$\\text{BCl}_3$",
+            "$\\text{BF}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "The Lewis acidity of boron trihalides follows the anomalous order:\n$$\\text{BI}_3 > \\text{BBr}_3 > \\text{BCl}_3 > \\text{BF}_3$$\nReason: $p\\pi-p\\pi$ back-bonding:\n1. In $\\text{BF}_3$, the small $2p$ orbital of fluorine overlaps effectively with the empty $2p$ orbital of boron ($2p\\pi-2p\\pi$ back-donation), partially satisfying boron's electron deficiency.\n2. In $\\text{BCl}_3, \\text{BBr}_3,$ and $\\text{BI}_3$, back-bonding involves larger $3p, 4p,$ and $5p$ orbitals with poor spatial overlap with boron's compact $2p$ orbital.\n3. In $\\text{BI}_3$, back-bonding is negligible, leaving the boron atom electron-deficient and making **$\\text{BI}_3$ the strongest Lewis acid**."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] According to the Usanovich concept of acids and bases:",
+          "image": "",
+          "options": [
+            "An acid is any chemical species that accepts electrons, reacts with bases, or gives up cations; a base gives up electrons or anions",
+            "Acids and bases are defined solely by proton transfer in liquid ammonia",
+            "An acid must contain a hydroxyl group",
+            "Only neutral molecules can act as acids"
+          ],
+          "correctOption": 0,
+          "solution": "The **Usanovich concept** (1939) is the most comprehensive and generalized theory of acids and bases:\n- **Acid:** Any species that accepts negative charges (electrons or anions) or donates positive charges (cations).\n- **Base:** Any species that donates negative charges (electrons or anions) or accepts positive charges (cations).\nThis definition generalizes acid-base chemistry to encompass all redox reactions as well."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The concentration of $\\text{H}_3\\text{O}^+$ ions in a $0.001\\text{ M}$ solution of barium hydroxide ($\\text{Ba(OH)}_2$) at $25^\\circ\\text{C}$ is:",
+          "image": "",
+          "options": [
+            "$5.0 \\times 10^{-12}\\text{ M}$",
+            "$1.0 \\times 10^{-11}\\text{ M}$",
+            "$2.0 \\times 10^{-3}\\text{ M}$",
+            "$5.0 \\times 10^{-11}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Barium hydroxide is a strong diprotic base that dissociates completely:\n$$\\text{Ba(OH)}_2 \\rightarrow \\text{Ba}^{2+} + 2\\text{OH}^-$$\n$$[\\text{OH}^-] = 2 \\times [\\text{Ba(OH)}_2] = 2 \\times 0.001\\text{ M} = 2.0 \\times 10^{-3}\\text{ M}$$\n2. Using the autoionization constant of water ($K_w = [\\text{H}_3\\text{O}^+][\\text{OH}^-] = 1.0 \\times 10^{-14}$ at $25^\\circ\\text{C}$):\n$$[\\text{H}_3\\text{O}^+] = \\frac{K_w}{[\\text{OH}^-]} = \\frac{1.0 \\times 10^{-14}}{2.0 \\times 10^{-3}} = 5.0 \\times 10^{-12}\\text{ M}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For two weak monobasic acids $HA_1$ and $HA_2$ having dissociation constants $K_{a1}$ and $K_{a2}$ at the same molar concentration $C$, the ratio of their relative acidic strengths is given by:",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\frac{K_{a1}}{K_{a2}}}$",
+            "$\\frac{K_{a1}}{K_{a2}}$",
+            "$\\left(\\frac{K_{a1}}{K_{a2}}\\right)^2$",
+            "$\\frac{K_{a2}}{K_{a1}}$"
+          ],
+          "correctOption": 0,
+          "solution": "The relative strength of two weak acids at equal concentration is measured by the ratio of their hydrogen ion concentrations:\n$$[\\text{H}^+]_1 = C\\alpha_1 = C \\sqrt{\\frac{K_{a1}}{C}} = \\sqrt{K_{a1} C}$$\n$$[\\text{H}^+]_2 = C\\alpha_2 = C \\sqrt{\\frac{K_{a2}}{C}} = \\sqrt{K_{a2} C}$$\nTaking the ratio:\n$$\\frac{\\text{Strength of } HA_1}{\\text{Strength of } HA_2} = \\frac{[\\text{H}^+]_1}{[\\text{H}^+]_2} = \\frac{\\sqrt{K_{a1} C}}{\\sqrt{K_{a2} C}} = \\sqrt{\\frac{K_{a1}}{K_{a2}}}$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following is NOT an amphiprotic substance?",
+          "image": "",
+          "options": [
+            "$\\text{H}_2\\text{PO}_2^-$ (hypophosphite ion)",
+            "$\\text{H}_2\\text{PO}_4^-$ (dihydrogen phosphate ion)",
+            "$\\text{HS}^-$ (hydrogen sulfide ion)",
+            "$\\text{H}_2\\text{O}$ (water)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Hypophosphorous acid ($\\text{H}_3\\text{PO}_2$) is a **monoprotic acid** because two hydrogens are bonded directly to phosphorus ($\\text{P}-\\text{H}$) and cannot ionize; only one hydrogen is bonded to oxygen ($\\text{P}-\\text{OH}$).\n2. When $\\text{H}_3\\text{PO}_2$ loses its single acidic proton, it forms the hypophosphite ion ($\\text{H}_2\\text{PO}_2^-$).\n3. The remaining two hydrogen atoms in $\\text{H}_2\\text{PO}_2^-$ are non-ionizable $\\text{P}-\\text{H}$ hydrogens and cannot be donated as protons. Therefore, $\\text{H}_2\\text{PO}_2^-$ can only act as a base (accepting $\\text{H}^+$), NOT as an acid.\n4. $\\text{H}_2\\text{PO}_4^-, \\text{HS}^-,$ and $\\text{H}_2\\text{O}$ can both donate and accept protons (amphiprotic)."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When equal volumes of $0.2\\text{ M } \\text{NH}_4\\text{OH}$ and $0.1\\text{ M } \\text{HCl}$ are mixed, the resulting solution will contain which species in the highest concentration (excluding water)?",
+          "image": "",
+          "options": [
+            "$\\text{NH}_4^+$",
+            "$\\text{H}^+$",
+            "$\\text{Cl}^-$",
+            "$\\text{OH}^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Let volume of each solution be $V\\text{ L}$.\n- Initial moles of $\\text{NH}_4\\text{OH} = 0.2 V$\n- Initial moles of $\\text{HCl} = 0.1 V$\n2. Reaction:\n$$\\text{NH}_4\\text{OH} + \\text{HCl} \\rightarrow \\text{NH}_4\\text{Cl} + \\text{H}_2\\text{O}$$\n- $0.1 V\\text{ moles of } \\text{HCl}$ reacts with $0.1 V\\text{ moles of } \\text{NH}_4\\text{OH}$ to form $0.1 V\\text{ moles of } \\text{NH}_4\\text{Cl}$.\n- Unreacted $\\text{NH}_4\\text{OH} = 0.2 V - 0.1 V = 0.1 V\\text{ moles}$.\n3. $\\text{NH}_4\\text{Cl}$ dissociates completely into $\\text{NH}_4^+$ and $\\text{Cl}^-$, producing $0.1 V\\text{ moles of } \\text{NH}_4^+$ and $0.1 V\\text{ moles of } \\text{Cl}^-$.\n4. The remaining unreacted $\\text{NH}_4\\text{OH}$ also ionizes slightly to provide additional $\\text{NH}_4^+$.\n5. Therefore, $[\\text{NH}_4^+]$ is slightly higher than $[\\text{Cl}^-]$ and is the species present in the highest concentration."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The degree of ionization of a $0.1\\text{ M}$ weak acid $\\text{HA}$ is $1.0\\%$. If the solution is diluted to $0.025\\text{ M}$, its degree of ionization will be:",
+          "image": "",
+          "options": [
+            "$2.0\\%$",
+            "$0.5\\%$",
+            "$4.0\\%$",
+            "$1.0\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "Using Ostwald's dilution law:\n$$\\alpha \\propto \\frac{1}{\\sqrt{C}}$$\n$$\\frac{\\alpha_2}{\\alpha_1} = \\sqrt{\\frac{C_1}{C_2}}$$\nGiven $\\alpha_1 = 1.0\\% = 0.01$, $C_1 = 0.1\\text{ M}$, and $C_2 = 0.025\\text{ M}$:\n$$\\frac{\\alpha_2}{0.01} = \\sqrt{\\frac{0.1}{0.025}} = \\sqrt{4} = 2$$\n$$\\alpha_2 = 2 \\times 0.01 = 0.02 = 2.0\\%$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In liquid ammonia (a non-aqueous self-ionizing solvent):\n$$2\\text{NH}_3(l) \\rightleftharpoons \\text{NH}_4^+ + \\text{NH}_2^-$$\nWhich of the following acts as an acid and a base respectively in liquid ammonia?",
+          "image": "",
+          "options": [
+            "$\\text{NH}_4\\text{Cl}$ (acid) and $\\text{NaNH}_2$ (base)",
+            "$\\text{NaNH}_2$ (acid) and $\\text{NH}_4\\text{Cl}$ (base)",
+            "$\\text{NaCl}$ (acid) and $\\text{NaOH}$ (base)",
+            "$\\text{NH}_3$ (acid) and $\\text{H}_2\\text{O}$ (base)"
+          ],
+          "correctOption": 0,
+          "solution": "In the solvent system concept of acids and bases (Franklin's system for liquid ammonia):\n- **Acid:** Any solute that increases the concentration of the solvent cation ($\\text{NH}_4^+$), such as ammonium chloride ($\\text{NH}_4\\text{Cl} \\rightarrow \\text{NH}_4^+ + \\text{Cl}^-$).\n- **Base:** Any solute that increases the concentration of the solvent anion ($\\text{NH}_2^-$), such as sodamide ($\\text{NaNH}_2 \\rightarrow \\text{Na}^+ + \\text{NH}_2^-$).\nThus, $\\text{NH}_4\\text{Cl}$ acts as an acid and $\\text{NaNH}_2$ acts as a base in liquid ammonia."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A solution of $0.1\\text{ M}$ acetic acid is mixed with $0.05\\text{ M } \\text{HCl}$. The concentration of acetate ions ($[\\text{CH}_3\\text{COO}^-]$) in the resulting mixture is: (Take $K_a[\\text{CH}_3\\text{COOH}] = 1.8 \\times 10^{-5}$)",
+          "image": "",
+          "options": [
+            "$3.6 \\times 10^{-5}\\text{ M}$",
+            "$1.8 \\times 10^{-5}\\text{ M}$",
+            "$1.34 \\times 10^{-3}\\text{ M}$",
+            "$9.0 \\times 10^{-6}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{HCl}$ is a strong acid that ionizes completely:\n$$[\\text{H}^+]_{\\text{from HCl}} = 0.05\\text{ M}$$\n2. Acetic acid ionizes according to:\n$$\\text{CH}_3\\text{COOH} \\rightleftharpoons \\text{CH}_3\\text{COO}^- + \\text{H}^+$$\nBecause of the strong common ion effect from $\\text{HCl}$, the dissociation of acetic acid is heavily suppressed, so:\n$$[\\text{CH}_3\\text{COOH}] \\approx 0.1\\text{ M} \\quad \\text{and} \\quad [\\text{H}^+] \\approx 0.05\\text{ M}$$\n3. From the equilibrium expression:\n$$K_a = \\frac{[\\text{CH}_3\\text{COO}^-][\\text{H}^+]}{[\\text{CH}_3\\text{COOH}]}$$\n$$1.8 \\times 10^{-5} = \\frac{[\\text{CH}_3\\text{COO}^-] \\times 0.05}{0.1}$$\n$$[\\text{CH}_3\\text{COO}^-] = \\frac{1.8 \\times 10^{-5} \\times 0.1}{0.05} = 1.8 \\times 10^{-5} \\times 2 = 3.6 \\times 10^{-5}\\text{ M}$$"
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following is a pair of Lewis acid and Lewis base respectively?",
+          "image": "",
+          "options": [
+            "$\\text{AlCl}_3$ and $\\text{NH}_3$",
+            "$\\text{NH}_3$ and $\\text{BF}_3$",
+            "$\\text{H}_2\\text{O}$ and $\\text{H}^+$",
+            "$\\text{Cl}^-$ and $\\text{AlCl}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{AlCl}_3$ has an incomplete octet around aluminum (6 valence electrons), enabling it to accept an electron pair $\\implies$ **Lewis acid**.\n2. $\\text{NH}_3$ has an unshared electron lone pair on nitrogen available for donation $\\implies$ **Lewis base**.\nTogether they react to form the stable coordinate adduct $\\text{H}_3\\text{N}:\\rightarrow\\text{AlCl}_3$."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For pure water at $100^\\circ\\text{C}$, the value of $K_w$ is $1.0 \\times 10^{-12}$. What is the concentration of $\\text{H}^+$ ions in boiling pure water?",
+          "image": "",
+          "options": [
+            "$1.0 \\times 10^{-6}\\text{ M}$",
+            "$1.0 \\times 10^{-7}\\text{ M}$",
+            "$1.0 \\times 10^{-12}\\text{ M}$",
+            "$1.0 \\times 10^{-14}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "In pure water at any temperature, stoichiometry dictates that:\n$$[\\text{H}^+] = [\\text{OH}^-]$$\n$$K_w = [\\text{H}^+][\\text{OH}^-] = [\\text{H}^+]^2$$\nGiven $K_w = 1.0 \\times 10^{-12}$ at $100^\\circ\\text{C}$:\n$$[\\text{H}^+] = \\sqrt{K_w} = \\sqrt{1.0 \\times 10^{-12}} = 1.0 \\times 10^{-6}\\text{ M}$$\n(Consequently, the $\\text{pH}$ of neutral water at $100^\\circ\\text{C}$ is $-\\log(10^{-6}) = 6$)."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The dissociation constant of a monobasic acid $\\text{HA}$ is $K_a = 4.9 \\times 10^{-8}$. What is the concentration of $\\text{OH}^-$ in a $0.1\\text{ M}$ aqueous solution of this acid at $25^\\circ\\text{C}$?",
+          "image": "",
+          "options": [
+            "$1.43 \\times 10^{-10}\\text{ M}$",
+            "$7.00 \\times 10^{-5}\\text{ M}$",
+            "$1.00 \\times 10^{-7}\\text{ M}$",
+            "$1.43 \\times 10^{-8}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate $[\\text{H}^+]$:\n$$[\\text{H}^+] = \\sqrt{K_a \\cdot C} = \\sqrt{(4.9 \\times 10^{-8}) \\times 0.1} = \\sqrt{4.9 \\times 10^{-9}} = \\sqrt{49 \\times 10^{-10}} = 7.0 \\times 10^{-5}\\text{ M}$$\n2. Calculate $[\\text{OH}^-]$ using $K_w = 1.0 \\times 10^{-14}$:\n$$[\\text{OH}^-] = \\frac{K_w}{[\\text{H}^+]} = \\frac{1.0 \\times 10^{-14}}{7.0 \\times 10^{-5}} = \\frac{1}{7} \\times 10^{-9} \\approx 0.1428 \\times 10^{-9} = 1.43 \\times 10^{-10}\\text{ M}$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following is a non-electrolyte in aqueous solution?",
+          "image": "",
+          "options": [
+            "Urea ($\\text{NH}_2\\text{CONH}_2$)",
+            "Acetic acid ($\\text{CH}_3\\text{COOH}$)",
+            "Potassium chloride ($\\text{KCl}$)",
+            "Ammonium hydroxide ($\\text{NH}_4\\text{OH}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Non-electrolytes** do not ionize or dissociate into ions upon dissolving in water and therefore cannot conduct an electric current. Urea ($\\text{NH}_2\\text{CONH}_2$), glucose, sucrose, and glycerol are classic non-electrolytes.\n2. $\\text{KCl}$ is a strong electrolyte; $\\text{CH}_3\\text{COOH}$ and $\\text{NH}_4\\text{OH}$ are weak electrolytes."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In which of the following cases does the degree of dissociation of a weak acid $\\text{HA}$ INCREASE?",
+          "image": "",
+          "options": [
+            "Adding water (dilution)",
+            "Adding a strong acid like $\\text{HCl}$",
+            "Adding the salt $\\text{NaA}$",
+            "Increasing the concentration of $\\text{HA}$"
+          ],
+          "correctOption": 0,
+          "solution": "According to Ostwald's dilution law:\n$$\\alpha = \\sqrt{\\frac{K_a}{C}}$$\n1. Diluting the solution (adding water) decreases the molar concentration $C$, which increases the degree of dissociation ($\\alpha$).\n2. Adding $\\text{HCl}$ introduces common $\\text{H}^+$ ions, suppressing $\\alpha$.\n3. Adding $\\text{NaA}$ introduces common $\\text{A}^-$ ions, suppressing $\\alpha$.\n4. Increasing concentration decreases $\\alpha$."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The conjugate base of hydronium ion ($\\text{H}_3\\text{O}^+$) is:",
+          "image": "",
+          "options": [
+            "$\\text{H}_2\\text{O}$",
+            "$\\text{OH}^-$",
+            "$\\text{O}^{2-}$",
+            "$\\text{H}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "To find the conjugate base of any acid, remove one proton ($\\text{H}^+$):\n$$\\text{Conjugate base} = \\text{Acid} - \\text{H}^+$$\n$$\\text{H}_3\\text{O}^+ - \\text{H}^+ = \\text{H}_2\\text{O}$$\nTherefore, water ($\\text{H}_2\\text{O}$) is the conjugate base of $\\text{H}_3\\text{O}^+$."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following represents the correct order of increasing acidic strength for the halogen hydracids?",
+          "image": "",
+          "options": [
+            "$\\text{HF} < \\text{HCl} < \\text{HBr} < \\text{HI}$",
+            "$\\text{HI} < \\text{HBr} < \\text{HCl} < \\text{HF}$",
+            "$\\text{HF} < \\text{HI} < \\text{HCl} < \\text{HBr}$",
+            "$\\text{HCl} < \\text{HBr} < \\text{HI} < \\text{HF}$"
+          ],
+          "correctOption": 0,
+          "solution": "For binary hydrogen halides ($\\text{H}-\\text{X}$):\n1. Down Group 17, the size of the halogen atom increases substantially ($\\text{F} < \\text{Cl} < \\text{Br} < \\text{I}$).\n2. Consequently, the $\\text{H}-\\text{X}$ bond length increases and the bond dissociation energy decreases sharply ($567\\text{ kJ/mol}$ for $\\text{HF}$ down to $299\\text{ kJ/mol}$ for $\\text{HI}$).\n3. Because the $\\text{H}-\\text{I}$ bond is the weakest and cleaves most readily to release $\\text{H}^+$ in water, $\\text{HI}$ is the strongest acid and $\\text{HF}$ is a weak acid.\nAcidic strength order: $\\text{HF} < \\text{HCl} < \\text{HBr} < \\text{HI}$."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A $0.2\\text{ M}$ solution of a weak base $\\text{BOH}$ is $0.5\\%$ ionized. What is the value of $K_b$ for this base?",
+          "image": "",
+          "options": [
+            "$5.0 \\times 10^{-6}$",
+            "$2.5 \\times 10^{-5}$",
+            "$1.0 \\times 10^{-6}$",
+            "$5.0 \\times 10^{-5}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Degree of ionization:\n$$\\alpha = \\frac{0.5}{100} = 5.0 \\times 10^{-3}$$\n2. Using Ostwald's dilution law ($C = 0.2\\text{ M}$):\n$$K_b = C\\alpha^2 = 0.2 \\times (5.0 \\times 10^{-3})^2 = 0.2 \\times (2.5 \\times 10^{-5}) = 5.0 \\times 10^{-6}$$"
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Why does the common ion effect suppress the dissociation of a weak electrolyte but does NOT suppress the dissociation of a strong electrolyte?",
+          "image": "",
+          "options": [
+            "Weak electrolytes exist in dynamic reversible equilibrium that responds to concentration shifts, whereas strong electrolytes ionize irreversibly and completely",
+            "Strong electrolytes do not contain cations",
+            "Weak electrolytes form covalent bonds with common ions",
+            "Common ions react chemically with strong electrolytes"
+          ],
+          "correctOption": 0,
+          "solution": "1. The common ion effect is a direct application of Le Chatelier's principle to a dynamic chemical equilibrium.\n2. Weak electrolytes exist in a delicate reversible equilibrium between undissociated neutral molecules and ions ($\\text{HA} \\rightleftharpoons \\text{H}^+ + \\text{A}^-$); adding excess common product ion shifts the equilibrium backward.\n3. Strong electrolytes undergo complete, irreversible dissociation into hydrated ions at all concentrations ($\\alpha = 100\\%$). Because there is no backward recombination equilibrium, common ions cannot reform undissociated molecules."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the Brönsted-Lowry acid-base equilibrium:\n$$\\text{CH}_3\\text{COOH} + \\text{H}_2\\text{O} \\rightleftharpoons \\text{CH}_3\\text{COO}^- + \\text{H}_3\\text{O}^+$$\nWhich of the following pairs represents a conjugate acid-base pair?",
+          "image": "",
+          "options": [
+            "$\\text{CH}_3\\text{COOH}$ and $\\text{CH}_3\\text{COO}^-$",
+            "$\\text{CH}_3\\text{COOH}$ and $\\text{H}_3\\text{O}^+$",
+            "$\\text{H}_2\\text{O}$ and $\\text{CH}_3\\text{COO}^-$",
+            "$\\text{CH}_3\\text{COO}^-$ and $\\text{H}_3\\text{O}^+$"
+          ],
+          "correctOption": 0,
+          "solution": "A conjugate acid-base pair consists of two chemical species that differ by exactly **one proton ($\\text{H}^+$)**:\n- Pair 1: $\\text{CH}_3\\text{COOH}$ (acid) and $\\text{CH}_3\\text{COO}^-$ (conjugate base)\n- Pair 2: $\\text{H}_3\\text{O}^+$ (acid) and $\\text{H}_2\\text{O}$ (conjugate base)\nTherefore, $\\text{CH}_3\\text{COOH}$ and $\\text{CH}_3\\text{COO}^-$ constitute a conjugate acid-base pair."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the degree of dissociation of pure water at $25^\\circ\\text{C}$? (Molar mass of water $= 18\\text{ g/mol}$, density $= 1.0\\text{ g/mL}$)",
+          "image": "",
+          "options": [
+            "$1.8 \\times 10^{-9}$",
+            "$1.0 \\times 10^{-7}$",
+            "$1.0 \\times 10^{-14}$",
+            "$5.55 \\times 10^{-8}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Molarity of pure water:\n$$C = \\frac{1000\\text{ g/L}}{18.0\\text{ g/mol}} = 55.55\\text{ M}$$\n2. In pure water at $25^\\circ\\text{C}$:\n$$[\\text{H}^+] = 1.0 \\times 10^{-7}\\text{ M}$$\n3. The degree of dissociation $\\alpha$ is the fraction of water molecules ionized:\n$$\\alpha = \\frac{[\\text{H}^+]}{C} = \\frac{1.0 \\times 10^{-7}\\text{ M}}{55.55\\text{ M}} \\approx 1.8 \\times 10^{-9}$$\n(Roughly less than two molecules out of every billion water molecules are ionized at room temperature)."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] For a weak acid $\\text{HA}$ with dissociation constant $K_a$, the value of $\\alpha$ calculated from the approximation $\\alpha = \\sqrt{\\frac{K_a}{C}}$ is considered practically valid ONLY if:",
+          "image": "",
+          "options": [
+            "$\\alpha \\le 0.05$ (or $\\le 5\\%$)",
+            "$\\alpha \\ge 0.50$",
+            "$K_a > 1$",
+            "$C < 10^{-6}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The exact quadratic equation for weak electrolyte dissociation is $K_a = \\frac{C\\alpha^2}{1 - \\alpha}$.\n2. The simplified formula $\\alpha = \\sqrt{\\frac{K_a}{C}}$ assumes that $(1 - \\alpha) \\approx 1$.\n3. In quantitative chemistry and exam standards, this approximation is acceptable only if the error introduced is within $5\\%$, which means $\\alpha \\le 0.05$ ($\\le 5\\%$).\n4. If $\\alpha > 0.05$, the full quadratic equation $C\\alpha^2 + K_a\\alpha - K_a = 0$ must be solved."
+        }
+      ]
+    }
+  ]
+}

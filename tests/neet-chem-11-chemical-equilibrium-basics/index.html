@@ -40,13 +40,10 @@
     <div class="flex items-center space-x-2">
       <a href="../../index.html" class="text-xs md:text-sm font-bold text-indigo-600 dark:text-indigo-400 p-1">← Exit</a>
       <span class="text-slate-300 dark:text-slate-700">|</span>
-      <h1 id="test-title" class="font-bold text-xs md:text-base truncate max-w-[120px] sm:max-w-xs md:max-w-md">Loading...</h1>
+      <h1 id="test-title" class="font-bold text-xs md:text-base truncate max-w-[140px] sm:max-w-xs md:max-w-md">Loading...</h1>
     </div>
     
-    <div class="flex items-center space-x-1.5 sm:space-x-2 md:space-x-3">
-      <button onclick="exportPrintableHTML()" class="px-2.5 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 text-xs font-bold bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors" title="Export printable question paper">
-        🖨️ Print
-      </button>
+    <div class="flex items-center space-x-2 md:space-x-3">
       <button onclick="toggleMobilePalette()" class="lg:hidden px-2.5 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 text-xs font-bold bg-slate-50 dark:bg-slate-800">
         📑 Qs
       </button>
@@ -126,26 +123,25 @@
     let timeRemaining = 0;
 
     function shuffle(array) {
-      const copy = [...array];
-      for (let i = copy.length - 1; i > 0; i--) {
+      for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [copy[i], copy[j]] = [copy[j], copy[i]];
+        [array[i], array[j]] = [array[j], array[i]];
       }
-      return copy;
+      return array;
     }
 
     function processAndShuffleOptions(q) {
       if (!q.options || q.type === 'numerical') return q;
       const mapped = q.options.map((text, idx) => ({ text, originalIndex: idx }));
-      const shuffledMapped = shuffle(mapped);
-      const newOptions = shuffledMapped.map(o => o.text);
+      shuffle(mapped);
+      const newOptions = mapped.map(o => o.text);
 
       if (q.type === 'single_choice') {
-        const newCorrect = shuffledMapped.findIndex(o => o.originalIndex === q.correctOption);
+        const newCorrect = mapped.findIndex(o => o.originalIndex === q.correctOption);
         return { ...q, options: newOptions, correctOption: newCorrect };
       }
       if (q.type === 'multiple_choice') {
-        const newCorrect = (q.correctOptions || []).map(orig => shuffledMapped.findIndex(o => o.originalIndex === orig)).sort();
+        const newCorrect = (q.correctOptions || []).map(orig => mapped.findIndex(o => o.originalIndex === orig)).sort();
         return { ...q, options: newOptions, correctOptions: newCorrect };
       }
       return q;
@@ -158,27 +154,14 @@
         if (!res.ok) throw new Error("HTTP " + res.status + ": Could not find test.json");
         testData = await res.json();
 
-        let processedQuestions = [];
-
+        let rawQuestions = [];
         (testData.sections || []).forEach(sec => {
-          const secSubject = sec.subject || 'General';
-          const secQuestions = sec.questions || [];
-
-          // Separate MCQs from Numerical/Integer types
-          const mcqs = secQuestions.filter(q => q.type !== 'numerical');
-          const numericals = secQuestions.filter(q => q.type === 'numerical');
-
-          // Shuffle each group independently
-          const shuffledMcqs = shuffle(mcqs).map(q => processAndShuffleOptions({ ...q, subject: secSubject }));
-          const shuffledNumericals = shuffle(numericals).map(q => ({ ...q, subject: secSubject }));
-
-          // Append: MCQs first, Numericals at end
-          processedQuestions = processedQuestions.concat(shuffledMcqs, shuffledNumericals);
+          (sec.questions || []).forEach(q => rawQuestions.push({ ...q, subject: sec.subject || 'General' }));
         });
 
-        if (processedQuestions.length === 0) throw new Error("No questions found in test.json.");
+        if (rawQuestions.length === 0) throw new Error("No questions found in test.json.");
 
-        questions = processedQuestions;
+        questions = shuffle(rawQuestions).map(q => processAndShuffleOptions(q));
         questions.forEach(q => {
           userResponses[q.id] = { value: null, status: 'not_visited' };
         });
@@ -381,231 +364,6 @@
 
     function toggleMobilePalette() {
       document.getElementById('palette-drawer').classList.toggle('translate-y-full');
-    }
-
-    function exportPrintableHTML() {
-      if (!testData || !testData.sections) {
-        alert("Test data is not loaded yet.");
-        return;
-      }
-
-      let questionIndex = 1;
-      let sectionsHTML = '';
-
-      testData.sections.forEach(sec => {
-        const secSubject = sec.subject || 'General';
-        const secQuestions = sec.questions || [];
-        const mcqs = secQuestions.filter(q => q.type !== 'numerical');
-        const numericals = secQuestions.filter(q => q.type === 'numerical');
-        const ordered = [...mcqs, ...numericals];
-
-        sectionsHTML += `
-          <div class="section-title">
-            <h3>Section: ${secSubject}</h3>
-          </div>
-          <div class="questions-flow">
-        `;
-
-        ordered.forEach(q => {
-          let optionsHTML = '';
-          if (q.options && q.options.length > 0) {
-            optionsHTML = '<div class="options-grid">';
-            q.options.forEach((opt, idx) => {
-              const label = String.fromCharCode(65 + idx);
-              optionsHTML += `<div class="option-item"><b>(${label})</b> ${opt}</div>`;
-            });
-            optionsHTML += '</div>';
-          } else if (q.type === 'numerical') {
-            optionsHTML = '<div class="numerical-blank">Answer: ____________________</div>';
-          }
-
-          const imageHTML = q.image ? `<div class="q-image"><img src="${q.image}" alt="Question Image" /></div>` : '';
-
-          sectionsHTML += `
-            <div class="question-block">
-              <div class="q-header">
-                <span class="q-num">Q.${questionIndex}</span>
-                <span class="q-marks">[Marks: +${q.marking?.correct || 4}, ${q.marking?.incorrect !== undefined ? q.marking.incorrect : 0}]</span>
-              </div>
-              <div class="q-text">${q.question}</div>
-              ${imageHTML}
-              ${optionsHTML}
-            </div>
-          `;
-          questionIndex++;
-        });
-
-        sectionsHTML += '</div>';
-      });
-
-      const fullPrintHTML = `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>${testData.title || 'Question Paper'} - Printable</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"><\/script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"><\/script>
-  <style>
-    @page {
-      size: A4;
-      margin: 12mm 10mm;
-    }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 11pt;
-      color: #111827;
-      margin: 0;
-      padding: 15px;
-      line-height: 1.45;
-    }
-    .paper-header {
-      text-align: center;
-      border-bottom: 2px solid #1e293b;
-      padding-bottom: 8px;
-      margin-bottom: 15px;
-    }
-    .paper-header h1 {
-      margin: 0;
-      font-size: 16pt;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .paper-meta {
-      display: flex;
-      justify-content: space-between;
-      font-size: 9.5pt;
-      font-weight: 600;
-      margin-top: 6px;
-      color: #334155;
-    }
-    .syllabus-bar {
-      font-size: 9pt;
-      color: #475569;
-      margin-top: 4px;
-      border-top: 1px dashed #cbd5e1;
-      padding-top: 4px;
-    }
-    .section-title {
-      background: #f1f5f9;
-      border-left: 4px solid #4f46e5;
-      padding: 4px 8px;
-      margin: 14px 0 10px 0;
-    }
-    .section-title h3 {
-      margin: 0;
-      font-size: 11pt;
-      text-transform: uppercase;
-    }
-    .questions-flow {
-      column-count: 2;
-      column-gap: 20px;
-      column-rule: 1px solid #e2e8f0;
-    }
-    .question-block {
-      break-inside: avoid;
-      page-break-inside: avoid;
-      margin-bottom: 16px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #f1f5f9;
-    }
-    .q-header {
-      display: flex;
-      justify-content: space-between;
-      font-size: 9pt;
-      font-weight: bold;
-      color: #4338ca;
-      margin-bottom: 3px;
-    }
-    .q-text {
-      font-size: 10pt;
-      white-space: pre-line;
-      margin-bottom: 6px;
-    }
-    .q-image img {
-      max-width: 100%;
-      max-height: 180px;
-      display: block;
-      margin: 6px auto;
-      border-radius: 4px;
-    }
-    .options-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4px 10px;
-      font-size: 9.5pt;
-    }
-    .option-item {
-      break-inside: avoid;
-    }
-    .numerical-blank {
-      font-size: 9pt;
-      color: #64748b;
-      margin-top: 4px;
-    }
-    .no-print-bar {
-      background: #eef2ff;
-      border: 1px solid #c7d2fe;
-      padding: 10px 14px;
-      margin-bottom: 16px;
-      border-radius: 8px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .print-btn {
-      background: #4f46e5;
-      color: #ffffff;
-      border: none;
-      padding: 6px 14px;
-      border-radius: 6px;
-      font-weight: 700;
-      cursor: pointer;
-    }
-    @media print {
-      .no-print-bar { display: none; }
-      body { padding: 0; }
-    }
-  </style>
-</head>
-<body>
-  <div class="no-print-bar">
-    <span><b>Print Ready:</b> Use A4 format or Save as PDF.</span>
-    <button class="print-btn" onclick="window.print()">Print Paper</button>
-  </div>
-
-  <div class="paper-header">
-    <h1>${testData.title || 'Online Assessment'}</h1>
-    <div class="paper-meta">
-      <span>Exam: ${testData.exam || 'JEE / NEET'}</span>
-      <span>Duration: ${testData.durationMinutes || 60} Mins</span>
-      <span>Max Marks: ${testData.totalMarks || 100}</span>
-    </div>
-    ${testData.syllabus ? `<div class="syllabus-bar"><b>Syllabus:</b> ${testData.syllabus}</div>` : ''}
-  </div>
-
-  ${sectionsHTML}
-
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      if (window.renderMathInElement) {
-        renderMathInElement(document.body, {
-          delimiters: [
-            { left: '$$', right: '$$', display: true },
-            { left: '$', right: '$', display: false }
-          ],
-          throwOnError: false
-        });
-      }
-    });
-  <\/script>
-</body>
-</html>`;
-
-      const printWindow = window.open('', '_blank');
-      printWindow.document.open();
-      printWindow.document.write(fullPrintHTML);
-      printWindow.document.close();
     }
 
     window.addEventListener('DOMContentLoaded', startTestEngine);

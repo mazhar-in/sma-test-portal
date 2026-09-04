@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-14-ph-scale-and-buffers",
+  "title": "pH Scale & Buffers (Ionic Product of Water, pH Calculations, Common Ion Effect, & Buffer Solutions)",
+  "syllabus": "Autoionization of water and ionic product of water (Kw) with temperature dependence; pH, pOH, and pKw scales and interrelationships; pH calculations of strong and weak acid/base solutions; pH of extremely dilute acid/base solutions (accounting for water autoionization); Common ion effect on pH and weak electrolyte ionization; Buffer solutions: definition, types (acidic buffers and basic buffers); Mechanism of buffer action; Henderson-Hasselbalch equation (derivation, applications, and limitations for acidic and basic buffers); Buffer capacity, buffer index, and optimum buffer range; Physiological buffer systems (bicarbonate, phosphate, and protein buffers in blood); Calculations involving addition of strong acids/bases to buffer mixtures",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An acidic buffer solution is prepared by mixing $0.1\\text{ M } \\text{CH}_3\\text{COOH}$ and $0.1\\text{ M } \\text{CH}_3\\text{COONa}$ in equal volumes. If the $pK_a$ of acetic acid is $4.74$, the $\\text{pH}$ of the resulting buffer solution is:",
+          "image": "",
+          "options": [
+            "$4.74$",
+            "$5.74$",
+            "$3.74$",
+            "$7.00$"
+          ],
+          "correctOption": 0,
+          "solution": "According to the Henderson-Hasselbalch equation for an acidic buffer:\n$$\\text{pH} = pK_a + \\log_{10}\\left(\\frac{[\\text{Conjugate Base}]}{[\\text{Acid}]}\\right)$$\nWhen equal volumes of equimolar solutions of $\\text{CH}_3\\text{COOH}$ and $\\text{CH}_3\\text{COONa}$ are mixed, the concentrations of both the weak acid and its conjugate base become equal:\n$$[\\text{CH}_3\\text{COO}^-] = [\\text{CH}_3\\text{COOH}] = 0.05\\text{ M}$$\n$$\\text{pH} = 4.74 + \\log_{10}\\left(\\frac{0.05}{0.05}\\right) = 4.74 + \\log_{10}(1) = 4.74 + 0 = 4.74$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the $\\text{pH}$ of a $1.0 \\times 10^{-8}\\text{ M}$ aqueous solution of hydrochloric acid ($\\text{HCl}$) at $25^\\circ\\text{C}$? (Take $\\log_{10}(1.1) \\approx 0.041$)",
+          "image": "",
+          "options": [
+            "$6.96$",
+            "$8.00$",
+            "$7.00$",
+            "$6.00$"
+          ],
+          "correctOption": 0,
+          "solution": "In an extremely dilute acid solution ($C \\le 10^{-6}\\text{ M}$), the autoionization of water cannot be ignored:\n1. Total hydronium ion concentration:\n$$[\\text{H}^+]_{\\text{total}} = [\\text{H}^+]_{\\text{HCl}} + [\\text{H}^+]_{\\text{H}_2\\text{O}} = 1.0 \\times 10^{-8} + x$$\n2. Since water ionization produces equal $\\text{H}^+$ and $\\text{OH}^-$ ions:\n$$[\\text{OH}^-] = x$$\n$$K_w = [\\text{H}^+]_{\\text{total}}[\\text{OH}^-] = (10^{-8} + x)x = 1.0 \\times 10^{-14}$$\n$$x^2 + 10^{-8}x - 10^{-14} = 0$$\nSolving using the quadratic formula:\n$$x = \\frac{-10^{-8} + \\sqrt{10^{-16} + 4(10^{-14})}}{2} = \\frac{-10^{-8} + \\sqrt{4.01 \\times 10^{-14}}}{2} \\approx \\frac{-0.1 \\times 10^{-7} + 2.002 \\times 10^{-7}}{2} \\approx 0.951 \\times 10^{-7}\\text{ M}$$\n3. Total $[\\text{H}^+]$:\n$$[\\text{H}^+]_{\\text{total}} = 1.0 \\times 10^{-8} + 0.951 \\times 10^{-7} = 1.051 \\times 10^{-7}\\text{ M} \\approx 1.1 \\times 10^{-7}\\text{ M}$$\n$$\\text{pH} = -\\log_{10}(1.051 \\times 10^{-7}) \\approx 7 - \\log_{10}(1.1) \\approx 7 - 0.041 \\approx 6.96$$\nAn acidic solution must remain slightly acidic ($\\text{pH} < 7$)."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following mixtures behaves as a BASIC buffer solution?",
+          "image": "",
+          "options": [
+            "$100\\text{ mL of } 0.1\\text{ M } \\text{NH}_4\\text{OH} + 50\\text{ mL of } 0.1\\text{ M } \\text{HCl}$",
+            "$50\\text{ mL of } 0.1\\text{ M } \\text{NH}_4\\text{OH} + 100\\text{ mL of } 0.1\\text{ M } \\text{HCl}$",
+            "$100\\text{ mL of } 0.1\\text{ M } \\text{CH}_3\\text{COOH} + 100\\text{ mL of } 0.1\\text{ M } \\text{NaOH}$",
+            "$100\\text{ mL of } 0.1\\text{ M } \\text{HCl} + 100\\text{ mL of } 0.1\\text{ M } \\text{NaCl}$"
+          ],
+          "correctOption": 0,
+          "solution": "A basic buffer consists of a weak base and its salt with a strong acid (or an excess of weak base partially neutralized by a strong acid):\n1. In Option A:\n- Milliequivalents of $\\text{NH}_4\\text{OH} = 100\\text{ mL} \\times 0.1\\text{ M} = 10\\text{ mmol}$\n- Milliequivalents of $\\text{HCl} = 50\\text{ mL} \\times 0.1\\text{ M} = 5\\text{ mmol}$\nReaction:\n$$\\text{NH}_4\\text{OH} + \\text{HCl} \\rightarrow \\text{NH}_4\\text{Cl} + \\text{H}_2\\text{O}$$\n$5\\text{ mmol of } \\text{HCl}$ neutralizes $5\\text{ mmol of } \\text{NH}_4\\text{OH}$, leaving:\n- Remaining weak base: $\\text{NH}_4\\text{OH} = 10 - 5 = 5\\text{ mmol}$\n- Formed salt: $\\text{NH}_4\\text{Cl} = 5\\text{ mmol}$\nBecause the solution contains a weak base ($\\text{NH}_4\\text{OH}$) and its conjugate cation salt ($\\text{NH}_4\\text{Cl}$), it acts as a basic buffer."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The $\\text{pH}$ of a saturated solution of $\\text{Ba(OH)}_2$ is $12.0$. The molar concentration of $\\text{Ba(OH)}_2$ in this solution is:",
+          "image": "",
+          "options": [
+            "$5.0 \\times 10^{-3}\\text{ M}$",
+            "$1.0 \\times 10^{-2}\\text{ M}$",
+            "$5.0 \\times 10^{-4}\\text{ M}$",
+            "$1.0 \\times 10^{-12}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate $p\\text{OH}$ from $\\text{pH}$:\n$$p\\text{OH} = 14 - \\text{pH} = 14 - 12.0 = 2.0$$\n2. Hydroxide ion concentration:\n$$[\\text{OH}^-] = 10^{-p\\text{OH}} = 10^{-2.0} = 1.0 \\times 10^{-2}\\text{ M}$$\n3. Barium hydroxide dissociates into two hydroxide ions:\n$$\\text{Ba(OH)}_2 \\rightarrow \\text{Ba}^{2+} + 2\\text{OH}^-$$\n$$[\\text{Ba(OH)}_2] = \\frac{[\\text{OH}^-]}{2} = \\frac{1.0 \\times 10^{-2}\\text{ M}}{2} = 5.0 \\times 10^{-3}\\text{ M}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The buffer capacity of an acidic buffer is maximum when the ratio of salt concentration to acid concentration is equal to:",
+          "image": "",
+          "options": [
+            "$1 : 1$",
+            "$10 : 1$",
+            "$1 : 10$",
+            "$2 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Buffer capacity ($\\beta$) measures the resistance of a buffer solution to $\\text{pH}$ changes upon the addition of strong acid or base.\n2. Mathematically, buffer capacity is maximized when the concentration of the weak acid equals the concentration of its conjugate base:\n$$[\\text{Conjugate Base}] = [\\text{Acid}] \\implies \\frac{[\\text{Salt}]}{[\\text{Acid}]} = 1$$\n3. Under this condition:\n$$\\text{pH} = pK_a + \\log_{10}(1) = pK_a$$\nEffective buffer action is confined to the range $\\text{pH} = pK_a \\pm 1$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The primary inorganic buffer system responsible for maintaining the $\\text{pH}$ of human blood plasma within the narrow physiological range of $7.35-7.45$ is:",
+          "image": "",
+          "options": [
+            "$\\text{H}_2\\text{CO}_3 / \\text{HCO}_3^-$",
+            "$\\text{H}_2\\text{PO}_4^- / \\text{HPO}_4^{2-}$",
+            "$\\text{NH}_4^+ / \\text{NH}_3$",
+            "$\\text{CH}_3\\text{COOH} / \\text{CH}_3\\text{COO}^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The physiological $\\text{pH}$ of human blood plasma is strictly regulated between $7.35$ and $7.45$.\n2. The main extracellular buffer system is the **carbonic acid - bicarbonate buffer** ($\\text{H}_2\\text{CO}_3 / \\text{HCO}_3^-$):\n$$\\text{CO}_2(g) + \\text{H}_2\\text{O}(l) \\rightleftharpoons \\text{H}_2\\text{CO}_3(aq) \\rightleftharpoons \\text{H}^+(aq) + \\text{HCO}_3^-(aq)$$\n3. Respiratory ventilation controls dissolved $\\text{CO}_2$ (and thus $\\text{H}_2\\text{CO}_3$), while the kidneys regulate bicarbonate ion ($\\text{HCO}_3^-$) excretion and reabsorption."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the $\\text{pH}$ of a solution formed by mixing $50\\text{ mL}$ of $0.2\\text{ M } \\text{CH}_3\\text{COOH}$ with $50\\text{ mL}$ of $0.1\\text{ M } \\text{NaOH}$? (Given: $pK_a[\\text{CH}_3\\text{COOH}] = 4.74$)",
+          "image": "",
+          "options": [
+            "$4.74$",
+            "$5.04$",
+            "$4.44$",
+            "$7.00$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate initial millimoles:\n- $\\text{mmol of } \\text{CH}_3\\text{COOH} = 50\\text{ mL} \\times 0.2\\text{ M} = 10\\text{ mmol}$\n- $\\text{mmol of } \\text{NaOH} = 50\\text{ mL} \\times 0.1\\text{ M} = 5\\text{ mmol}$\n2. Neutralization reaction:\n$$\\text{CH}_3\\text{COOH} + \\text{NaOH} \\rightarrow \\text{CH}_3\\text{COONa} + \\text{H}_2\\text{O}$$\n$5\\text{ mmol of } \\text{NaOH}$ reacts with $5\\text{ mmol of } \\text{CH}_3\\text{COOH}$:\n- Remaining $\\text{CH}_3\\text{COOH} = 10 - 5 = 5\\text{ mmol}$\n- Formed $\\text{CH}_3\\text{COONa} = 5\\text{ mmol}$\n3. In total volume $V = 100\\text{ mL}$:\n$$[\\text{Acid}] = \\frac{5}{100} = 0.05\\text{ M}, \\quad [\\text{Salt}] = \\frac{5}{100} = 0.05\\text{ M}$$\n4. Using the Henderson-Hasselbalch equation:\n$$\\text{pH} = pK_a + \\log_{10}\\left(\\frac{[\\text{Salt}]}{[\\text{Acid}]}\\right) = 4.74 + \\log_{10}\\left(\\frac{0.05}{0.05}\\right) = 4.74$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] When $0.01\\text{ moles}$ of solid $\\text{NaOH}$ is added to $1.0\\text{ L}$ of a buffer solution containing $0.10\\text{ M } \\text{CH}_3\\text{COOH}$ and $0.10\\text{ M } \\text{CH}_3\\text{COONa}$, the change in $\\text{pH}$ ($\\Delta \\text{pH}$) is: (Given: $pK_a = 4.74$, $\\log_{10}(11) \\approx 1.041$, $\\log_{10}(9) \\approx 0.954$)",
+          "image": "",
+          "options": [
+            "$+0.09$",
+            "$+0.20$",
+            "$-0.09$",
+            "$0.00$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Initial $\\text{pH}$ of the buffer:\n$$\\text{pH}_1 = pK_a + \\log_{10}\\left(\\frac{0.10}{0.10}\\right) = 4.74$$\n2. When $0.01\\text{ moles}$ of $\\text{OH}^-$ is added, it neutralizes $0.01\\text{ moles}$ of $\\text{CH}_3\\text{COOH}$ to form an additional $0.01\\text{ moles}$ of $\\text{CH}_3\\text{COO}^-$:\n- New $[\\text{CH}_3\\text{COOH}] = 0.10 - 0.01 = 0.09\\text{ M}$\n- New $[\\text{CH}_3\\text{COO}^-] = 0.10 + 0.01 = 0.11\\text{ M}$\n3. New $\\text{pH}$:\n$$\\text{pH}_2 = pK_a + \\log_{10}\\left(\\frac{0.11}{0.09}\\right) = 4.74 + \\log_{10}\\left(\\frac{11}{9}\\right)$$\n$$\\text{pH}_2 = 4.74 + [\\log_{10}(11) - \\log_{10}(9)] = 4.74 + [1.041 - 0.954] = 4.74 + 0.087 \\approx 4.83$$\n4. Change in $\\text{pH}$:\n$$\\Delta \\text{pH} = \\text{pH}_2 - \\text{pH}_1 = 4.83 - 4.74 = +0.09$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] At $90^\\circ\\text{C}$, pure water has $K_w = 1.0 \\times 10^{-12}$. An aqueous solution having a $\\text{pH} = 6.5$ at $90^\\circ\\text{C}$ is:",
+          "image": "",
+          "options": [
+            "Basic",
+            "Acidic",
+            "Neutral",
+            "Amphoteric"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate neutral $\\text{pH}$ at $90^\\circ\\text{C}$:\n$$pK_w = -\\log_{10}(1.0 \\times 10^{-12}) = 12.0$$\n$$\\text{pH}_{\\text{neutral}} = \\frac{pK_w}{2} = \\frac{12.0}{2} = 6.0$$\n2. Interpretation of $\\text{pH}$ at $90^\\circ\\text{C}$:\n- If $\\text{pH} < 6.0$, the solution is acidic.\n- If $\\text{pH} = 6.0$, the solution is neutral.\n- If $\\text{pH} > 6.0$, the solution is basic.\nBecause the given $\\text{pH} = 6.5 > 6.0$, $[\\text{OH}^-] > [\\text{H}^+]$, and the solution is **basic**."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The concentration of $\\text{H}^+$ ions in a soft drink is $3.0 \\times 10^{-3}\\text{ M}$. The $\\text{pH}$ of the soft drink is: (Take $\\log_{10} 3 = 0.477$)",
+          "image": "",
+          "options": [
+            "$2.52$",
+            "$3.48$",
+            "$3.00$",
+            "$2.48$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the definition of $\\text{pH}$:\n$$\\text{pH} = -\\log_{10}[\\text{H}^+]$$\nSubstitute $[\\text{H}^+] = 3.0 \\times 10^{-3}\\text{ M}$:\n$$\\text{pH} = -\\log_{10}(3.0 \\times 10^{-3}) = -[\\log_{10}(3) + \\log_{10}(10^{-3})] = -[0.477 - 3] = 3 - 0.477 = 2.523 \\approx 2.52$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A basic buffer is formed from ammonium hydroxide ($\\text{NH}_4\\text{OH}$) and ammonium chloride ($\\text{NH}_4\\text{Cl}$). If the $pK_b$ of $\\text{NH}_4\\text{OH}$ is $4.75$, what ratio of $[\\text{NH}_4^+] / [\\text{NH}_4\\text{OH}]$ is needed to obtain a buffer of $\\text{pH} = 9.25$ at $25^\\circ\\text{C}$?",
+          "image": "",
+          "options": [
+            "$1 : 1$",
+            "$1 : 10$",
+            "$10 : 1$",
+            "$2 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For a basic buffer, calculate $p\\text{OH}$:\n$$p\\text{OH} = 14 - \\text{pH} = 14 - 9.25 = 4.75$$\n2. Use the Henderson-Hasselbalch equation for a basic buffer:\n$$p\\text{OH} = pK_b + \\log_{10}\\left(\\frac{[\\text{Salt}]}{[\\text{Base}]}\\right)$$\n$$4.75 = 4.75 + \\log_{10}\\left(\\frac{[\\text{NH}_4^+]}{[\\text{NH}_4\\text{OH}]}\\right)$$\n$$\\log_{10}\\left(\\frac{[\\text{NH}_4^+]}{[\\text{NH}_4\\text{OH}]}\\right) = 0 \\implies \\frac{[\\text{NH}_4^+]}{[\\text{NH}_4\\text{OH}]} = 10^0 = 1$$\nTherefore, the required ratio is $1 : 1$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following aqueous pairs CANNOT act as a buffer solution?",
+          "image": "",
+          "options": [
+            "$\\text{HNO}_3$ and $\\text{NaNO}_3$",
+            "$\\text{HCN}$ and $\\text{NaCN}$",
+            "$\\text{NH}_3$ and $\\text{NH}_4\\text{Cl}$",
+            "$\\text{NaH}_2\\text{PO}_4$ and $\\text{Na}_2\\text{HPO}_4$"
+          ],
+          "correctOption": 0,
+          "solution": "A buffer solution requires a conjugate acid-base pair where at least one component is weak:\n1. $\\text{HNO}_3$ is a strong acid and completely dissociates in water. It has no reserve of undissociated acid to consume added base, and its conjugate base $\\text{NO}_3^-$ is too weak to consume added acid. Thus, $\\text{HNO}_3 + \\text{NaNO}_3$ cannot act as a buffer.\n2. $\\text{HCN} / \\text{NaCN}$ is a weak acid buffer.\n3. $\\text{NH}_3 / \\text{NH}_4\\text{Cl}$ is a weak base buffer.\n4. $\\text{NaH}_2\\text{PO}_4 / \\text{Na}_2\\text{HPO}_4$ is an amphiprotic polyprotic buffer."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Equal volumes of three solutions with $\\text{pH} = 3, 4,$ and $5$ are mixed together. The $\\text{pH}$ of the resulting mixture is approximately: (Take $\\log_{10}(3.7) \\approx 0.57$)",
+          "image": "",
+          "options": [
+            "$3.43$",
+            "$4.00$",
+            "$3.00$",
+            "$4.57$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the volume of each solution be $V\\text{ L}$ (total volume $= 3V$):\n1. Individual hydrogen ion concentrations:\n- Solution 1: $[\\text{H}^+]_1 = 10^{-3}\\text{ M}$\n- Solution 2: $[\\text{H}^+]_2 = 10^{-4}\\text{ M}$\n- Solution 3: $[\\text{H}^+]_3 = 10^{-5}\\text{ M}$\n2. Total moles of $\\text{H}^+$:\n$$n_{\\text{total}} = V(10^{-3} + 10^{-4} + 10^{-5}) = V(1.0 + 0.1 + 0.01) \\times 10^{-3} = 1.11 \\times 10^{-3} V$$\n3. Concentration of $\\text{H}^+$ in the mixture:\n$$[\\text{H}^+]_{\\text{mix}} = \\frac{1.11 \\times 10^{-3} V}{3V} = \\frac{1.11}{3} \\times 10^{-3} = 0.37 \\times 10^{-3}\\text{ M} = 3.7 \\times 10^{-4}\\text{ M}$$\n4. Calculate $\\text{pH}$:\n$$\\text{pH} = -\\log_{10}(3.7 \\times 10^{-4}) = 4 - \\log_{10}(3.7) \\approx 4 - 0.57 = 3.43$$\n(The mixture's $\\text{pH}$ is governed almost entirely by the most acidic solution)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When a strong base is added to an acidic buffer consisting of $\\text{HA}$ and $\\text{A}^-$, the added $\\text{OH}^-$ ions are primarily consumed by:",
+          "image": "",
+          "options": [
+            "Undissociated weak acid molecules ($\\text{HA}$)",
+            "Conjugate base anions ($\\text{A}^-$)",
+            "Water molecules ($\\text{H}_2\\text{O}$)",
+            "Precipitation of salt"
+          ],
+          "correctOption": 0,
+          "solution": "In an acidic buffer:\n- The reserve of undissociated weak acid ($\\text{HA}$) consumes added strong base:\n$$\\text{HA} + \\text{OH}^- \\rightarrow \\text{A}^- + \\text{H}_2\\text{O}$$\n- The reserve of conjugate base anions ($\\text{A}^-$) consumes added strong acid:\n$$\\text{A}^- + \\text{H}^+ \\rightarrow \\text{HA}$$\nTherefore, added $\\text{OH}^-$ ions react directly with undissociated $\\text{HA}$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the $\\text{pH}$ of a $0.005\\text{ M}$ solution of sulfuric acid ($\\text{H}_2\\text{SO}_4$), assuming complete ionization of both protons?",
+          "image": "",
+          "options": [
+            "$2.0$",
+            "$2.3$",
+            "$1.0$",
+            "$3.0$"
+          ],
+          "correctOption": 0,
+          "solution": "Sulfuric acid is a strong diprotic acid:\n$$\\text{H}_2\\text{SO}_4 \\rightarrow 2\\text{H}^+ + \\text{SO}_4^{2-}$$\n$$[\\text{H}^+] = 2 \\times [\\text{H}_2\\text{SO}_4] = 2 \\times 0.005\\text{ M} = 0.010\\text{ M} = 10^{-2}\\text{ M}$$\n$$\\text{pH} = -\\log_{10}[\\text{H}^+] = -\\log_{10}(10^{-2}) = 2.0$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What volume of $0.1\\text{ M } \\text{NaOH}$ must be added to $100\\text{ mL}$ of $0.1\\text{ M } \\text{HCl}$ to prepare a solution with $\\text{pH} = 2.0$?",
+          "image": "",
+          "options": [
+            "$81.8\\text{ mL}$",
+            "$90.0\\text{ mL}$",
+            "$50.0\\text{ mL}$",
+            "$66.7\\text{ mL}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Desired $\\text{pH} = 2.0 \\implies [\\text{H}^+] = 10^{-2}\\text{ M} = 0.01\\text{ M}$.\n2. Initial $\\text{mmol of HCl} = 100\\text{ mL} \\times 0.1\\text{ M} = 10\\text{ mmol}$.\nLet the added volume of $0.1\\text{ M } \\text{NaOH}$ be $V\\text{ mL}$:\n$$\\text{mmol of NaOH added} = 0.1 V$$\n3. Remaining millimoles of unneutralized $\\text{HCl}$:\n$$\\text{Remaining mmol} = 10 - 0.1 V$$\n4. Total volume of solution $= 100 + V\\text{ mL}$.\n5. Final concentration:\n$$[\\text{H}^+] = \\frac{10 - 0.1 V}{100 + V} = 0.01$$\n$$10 - 0.1 V = 0.01(100 + V) = 1 + 0.01 V$$\n$$10 - 1 = 0.1 V + 0.01 V$$\n$$9 = 0.11 V \\implies V = \\frac{9}{0.11} \\approx 81.81\\text{ mL} \\approx 81.8\\text{ mL}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A buffer solution contains $0.20\\text{ M } \\text{HCN}$ and $0.10\\text{ M } \\text{NaCN}$. Given that $K_a[\\text{HCN}] = 4.0 \\times 10^{-10}$ (take $\\log_{10} 2 = 0.301$), the $\\text{pH}$ of the buffer is:",
+          "image": "",
+          "options": [
+            "$9.10$",
+            "$9.70$",
+            "$8.80$",
+            "$9.40$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate $pK_a$:\n$$pK_a = -\\log_{10}(4.0 \\times 10^{-10}) = 10 - \\log_{10}(4) = 10 - 2(0.301) = 10 - 0.602 = 9.398$$\n2. Use the Henderson-Hasselbalch equation:\n$$\\text{pH} = pK_a + \\log_{10}\\left(\\frac{[\\text{CN}^-]}{[\\text{HCN}]}\\right) = 9.398 + \\log_{10}\\left(\\frac{0.10}{0.20}\\right)$$\n$$\\text{pH} = 9.398 + \\log_{10}(0.5) = 9.398 - \\log_{10}(2) = 9.398 - 0.301 = 9.097 \\approx 9.10$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The degree of ionization of pure water at $25^\\circ\\text{C}$ is $1.8 \\times 10^{-9}$. What is the value of the ionization constant $K_a$ of water?",
+          "image": "",
+          "options": [
+            "$1.8 \\times 10^{-16}$",
+            "$1.0 \\times 10^{-14}$",
+            "$1.8 \\times 10^{-14}$",
+            "$5.55 \\times 10^{-15}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For the ionization of water as an acid:\n$$\\text{H}_2\\text{O} \\rightleftharpoons \\text{H}^+ + \\text{OH}^-$$\n$$K_a = \\frac{[\\text{H}^+][\\text{OH}^-]}{[\\text{H}_2\\text{O}]} = \\frac{K_w}{[\\text{H}_2\\text{O}]}$$\n2. In $1.0\\text{ L}$ of water, $[\\text{H}_2\\text{O}] = \\frac{1000\\text{ g/L}}{18\\text{ g/mol}} = 55.55\\text{ M}$.\n3. Substitute $K_w = 1.0 \\times 10^{-14}$:\n$$K_a = \\frac{1.0 \\times 10^{-14}}{55.55} \\approx 1.8 \\times 10^{-16}$$\n(Note: $K_w = [\\text{H}^+][\\text{OH}^-] = 1.0 \\times 10^{-14}$ is the ionic product, whereas $K_a = 1.8 \\times 10^{-16}$ is the acid dissociation constant)."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] When $1.0\\text{ mL}$ of $0.1\\text{ M } \\text{HCl}$ is added to $99\\text{ mL}$ of pure water, the $\\text{pH}$ changes from $7$ to $3$. In contrast, when the same amount of acid is added to $100\\text{ mL}$ of a buffer solution, the $\\text{pH}$ remains virtually unchanged. This characteristic property of a buffer is quantified by its:",
+          "image": "",
+          "options": [
+            "Buffer capacity ($\\beta$)",
+            "Solubility product ($K_{sp}$)",
+            "Common ion effect",
+            "Ionic product ($K_w$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Buffer capacity** (or buffer index, $\\beta$) is defined quantitatively by Van Slyke as the number of moles of a strong acid or strong base required per liter of buffer solution to change its $\\text{pH}$ by one unit:\n$$\\beta = \\frac{dB}{d(\\text{pH})}$$\nwhere $dB$ is the increment of strong base added.\n2. A higher buffer capacity indicates greater resistance to changes in $\\text{pH}$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The $\\text{pH}$ of a $0.01\\text{ M}$ solution of an organic monobasic acid is $4.0$. The acid dissociation constant ($K_a$) of the acid is:",
+          "image": "",
+          "options": [
+            "$1.0 \\times 10^{-6}$",
+            "$1.0 \\times 10^{-4}$",
+            "$1.0 \\times 10^{-8}$",
+            "$1.0 \\times 10^{-5}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. From $\\text{pH} = 4.0$:\n$$[\\text{H}^+] = 10^{-\\text{pH}} = 1.0 \\times 10^{-4}\\text{ M}$$\n2. For a weak monoprotic acid:\n$$[\\text{H}^+] = C\\alpha \\implies \\alpha = \\frac{[\\text{H}^+]}{C} = \\frac{1.0 \\times 10^{-4}}{0.01} = 1.0 \\times 10^{-2} = 0.01$$\n3. Since $\\alpha = 0.01 \\ll 1$:\n$$K_a = C\\alpha^2 = (0.01) \\times (10^{-2})^2 = 10^{-2} \\times 10^{-4} = 1.0 \\times 10^{-6}$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A solution has a $p\\text{OH} = 11.30$ at $25^\\circ\\text{C}$. The solution is:",
+          "image": "",
+          "options": [
+            "Acidic",
+            "Basic",
+            "Neutral",
+            "Strongly alkaline"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate $\\text{pH}$:\n$$\\text{pH} = 14 - p\\text{OH} = 14 - 11.30 = 2.70$$\n2. Because $\\text{pH} = 2.70 < 7$, $[\\text{H}^+] = 10^{-2.70} \\approx 2.0 \\times 10^{-3}\\text{ M} > 10^{-7}\\text{ M}$.\nTherefore, the solution is **acidic**."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] What is the $\\text{pH}$ of a $1.0 \\times 10^{-8}\\text{ M } \\text{NaOH}$ aqueous solution at $25^\\circ\\text{C}$?",
+          "image": "",
+          "options": [
+            "$7.04$",
+            "$6.96$",
+            "$8.00$",
+            "$6.00$"
+          ],
+          "correctOption": 0,
+          "solution": "For a very dilute base, the autoionization of water cannot be ignored:\n1. Total hydroxide ion concentration:\n$$[\\text{OH}^-]_{\\text{total}} = [\\text{OH}^-]_{\\text{NaOH}} + [\\text{OH}^-]_{\\text{water}} = 1.0 \\times 10^{-8} + x$$\n$$[\\text{H}^+] = x$$\n2. Using $K_w = [\\text{H}^+][\\text{OH}^-] = 1.0 \\times 10^{-14}$:\n$$x(1.0 \\times 10^{-8} + x) = 1.0 \\times 10^{-14}$$\nSolving the quadratic equation gives $x \\approx 0.951 \\times 10^{-7}\\text{ M}$.\n$$[\\text{OH}^-]_{\\text{total}} = 1.0 \\times 10^{-8} + 0.951 \\times 10^{-7} \\approx 1.051 \\times 10^{-7}\\text{ M}$$\n$$p\\text{OH} = -\\log_{10}(1.051 \\times 10^{-7}) \\approx 6.96$$\n$$\\text{pH} = 14 - p\\text{OH} = 14 - 6.96 = 7.04$$\nA basic solution must have a $\\text{pH}$ slightly greater than $7$."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The effective buffering range for a weak acid buffer is generally accepted as:",
+          "image": "",
+          "options": [
+            "$pK_a \\pm 1$",
+            "$pK_a \\pm 2$",
+            "$pK_a \\pm 0.1$",
+            "$7 \\pm 1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. From the Henderson-Hasselbalch equation:\n$$\\text{pH} = pK_a + \\log_{10}\\left(\\frac{[\\text{Salt}]}{[\\text{Acid}]}\\right)$$\n2. A buffer operates effectively when the ratio of salt to acid is within the limits of $0.1$ to $10$ ($1 : 10$ to $10 : 1$):\n- When $\\frac{[\\text{Salt}]}{[\\text{Acid}]} = \\frac{1}{10}$, $\\text{pH} = pK_a + \\log_{10}(0.1) = pK_a - 1$\n- When $\\frac{[\\text{Salt}]}{[\\text{Acid}]} = \\frac{10}{1}$, $\\text{pH} = pK_a + \\log_{10}(10) = pK_a + 1$\nTherefore, the practical buffer range is **$pK_a \\pm 1$**."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A student measures the $\\text{pH}$ of a milk of magnesia ($\\text{Mg(OH)}_2$) suspension to be $10.5$. What is the concentration of $\\text{H}^+$ ions in this suspension? (Take $10^{0.5} \\approx 3.16$)",
+          "image": "",
+          "options": [
+            "$3.16 \\times 10^{-11}\\text{ M}$",
+            "$3.16 \\times 10^{-4}\\text{ M}$",
+            "$1.0 \\times 10^{-10}\\text{ M}$",
+            "$3.16 \\times 10^{-10}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the definition of $\\text{pH}$:\n$$[\\text{H}^+] = 10^{-\\text{pH}} = 10^{-10.5} = 10^{0.5} \\times 10^{-11} \\approx 3.16 \\times 10^{-11}\\text{ M}$$\n(Alternatively, $[\\text{OH}^-] = 10^{-(14 - 10.5)} = 10^{-3.5} = 3.16 \\times 10^{-4}\\text{ M}$)."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An aqueous solution is prepared by mixing $100\\text{ mL}$ of $0.1\\text{ M } \\text{HCl}$ and $100\\text{ mL}$ of $0.1\\text{ M } \\text{CH}_3\\text{COONa}$. The resulting solution behaves as:",
+          "image": "",
+          "options": [
+            "A simple solution of weak acid $\\text{CH}_3\\text{COOH}$ and $\\text{NaCl}$ (not a buffer)",
+            "An acidic buffer solution",
+            "A neutral solution of $\\text{pH} = 7$",
+            "A basic buffer solution"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of reactants:\n- $\\text{mmol of HCl} = 100 \\times 0.1 = 10\\text{ mmol}$\n- $\\text{mmol of } \\text{CH}_3\\text{COONa} = 100 \\times 0.1 = 10\\text{ mmol}$\n2. Reaction:\n$$\\text{HCl} + \\text{CH}_3\\text{COONa} \\rightarrow \\text{CH}_3\\text{COOH} + \\text{NaCl}$$\nBoth reactants are completely consumed in a stoichiometric $1 : 1$ ratio.\n3. The resulting solution contains $10\\text{ mmol}$ of the weak acid $\\text{CH}_3\\text{COOH}$ and $10\\text{ mmol}$ of the neutral salt $\\text{NaCl}$.\n4. Because there is no remaining excess of conjugate base ($\\text{CH}_3\\text{COO}^-$), it is NOT a buffer; it is simply a solution of a weak acid whose $\\text{pH}$ is determined by the ionization of $\\text{CH}_3\\text{COOH}$."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following statements about the ionic product of water ($K_w$) is INCORRECT?",
+          "image": "",
+          "options": [
+            "Addition of a strong acid to pure water increases the value of $K_w$",
+            "The value of $K_w$ increases with an increase in temperature",
+            "In any aqueous solution at $25^\\circ\\text{C}$, the product $[\\text{H}^+][\\text{OH}^-] = 1.0 \\times 10^{-14}$",
+            "In pure water, $[\\text{H}^+] = \\sqrt{K_w}$ at all temperatures"
+          ],
+          "correctOption": 0,
+          "solution": "1. $K_w$ is the equilibrium constant for the autoionization of water ($2\\text{H}_2\\text{O} \\rightleftharpoons \\text{H}_3\\text{O}^+ + \\text{OH}^-$).\n2. Like any equilibrium constant, the numerical value of $K_w$ depends strictly on **temperature** and is independent of the concentrations of dissolved solutes.\n3. Adding a strong acid increases $[\\text{H}^+]$, which simultaneously suppresses $[\\text{OH}^-]$ by the common ion effect such that their product $[\\text{H}^+][\\text{OH}^-]$ remains equal to $K_w$.\nTherefore, Statement A is incorrect."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] How many milliliters of $0.1\\text{ M } \\text{HCl}$ must be added to $50\\text{ mL}$ of $0.1\\text{ M } \\text{NaOH}$ to obtain a solution with $\\text{pH} = 7.0$?",
+          "image": "",
+          "options": [
+            "$50\\text{ mL}$",
+            "$25\\text{ mL}$",
+            "$100\\text{ mL}$",
+            "$75\\text{ mL}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. At $25^\\circ\\text{C}$, $\\text{pH} = 7.0$ represents exact chemical neutrality for strong acid - strong base titrations:\n$$[\\text{H}^+] = [\\text{OH}^-]$$\n$$\\text{mEq of } \\text{HCl} = \\text{mEq of } \\text{NaOH}$$\n2. Using $M_1 V_1 = M_2 V_2$:\n$$0.1\\text{ M} \\times V_1 = 0.1\\text{ M} \\times 50\\text{ mL}$$\n$$V_1 = 50\\text{ mL}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] If the concentration of hydronium ions in an aqueous solution is increased by a factor of $100$, the $\\text{pH}$ of the solution will:",
+          "image": "",
+          "options": [
+            "Decrease by $2$ units",
+            "Increase by $2$ units",
+            "Decrease by $100$ units",
+            "Increase by $10$ units"
+          ],
+          "correctOption": 0,
+          "solution": "Using $\\text{pH} = -\\log_{10}[\\text{H}^+]$:\nLet the initial concentration be $[\\text{H}^+]_1$ with $\\text{pH}_1 = -\\log[\\text{H}^+]_1$.\nWhen the concentration is multiplied by $100$:\n$$[\\text{H}^+]_2 = 100 [\\text{H}^+]_1$$\n$$\\text{pH}_2 = -\\log_{10}(100 [\\text{H}^+]_1) = -[\\log_{10}(100) + \\log_{10}[\\text{H}^+]_1] = -2 - \\log_{10}[\\text{H}^+]_1 = \\text{pH}_1 - 2$$\nTherefore, the $\\text{pH}$ decreases by exactly $2$ units."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A buffer solution of $\\text{pH} = 5.0$ contains $0.1\\text{ M}$ weak acid $\\text{HA}$ ($pK_a = 4.70$). What is the concentration of the conjugate base $\\text{A}^-$ in the solution? (Take $10^{0.30} \\approx 2.0$)",
+          "image": "",
+          "options": [
+            "$0.20\\text{ M}$",
+            "$0.10\\text{ M}$",
+            "$0.05\\text{ M}$",
+            "$0.40\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the Henderson-Hasselbalch equation:\n$$\\text{pH} = pK_a + \\log_{10}\\left(\\frac{[\\text{A}^-]}{[\\text{HA}]}\\right)$$\n$$5.0 = 4.70 + \\log_{10}\\left(\\frac{[\\text{A}^-]}{0.1}\\right)$$\n$$\\log_{10}\\left(\\frac{[\\text{A}^-]}{0.1}\\right) = 5.0 - 4.70 = 0.30$$\n$$\\frac{[\\text{A}^-]}{0.1} = 10^{0.30} \\approx 2.0$$\n$$[\\text{A}^-] = 2.0 \\times 0.1 = 0.20\\text{ M}$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In which of the following solutions will the common ion effect suppress the dissociation of acetic acid ($\\text{CH}_3\\text{COOH}$)?",
+          "image": "",
+          "options": [
+            "A solution containing sodium acetate ($\\text{CH}_3\\text{COONa}$)",
+            "A solution containing sodium chloride ($\\text{NaCl}$)",
+            "Pure distilled water",
+            "A solution containing glucose"
+          ],
+          "correctOption": 0,
+          "solution": "1. Acetic acid is in equilibrium:\n$$\\text{CH}_3\\text{COOH} \\rightleftharpoons \\text{CH}_3\\text{COO}^- + \\text{H}^+$$\n2. Sodium acetate is a soluble salt that dissociates completely into $\\text{Na}^+$ and $\\text{CH}_3\\text{COO}^-$.\n3. The excess common acetate ion ($\\text{CH}_3\\text{COO}^-$) shifts the equilibrium to the left according to Le Chatelier's principle, decreasing the dissociation of acetic acid (**common ion effect**)."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] A solution is formed by mixing equal volumes of $0.2\\text{ M } \\text{HCl}$ and $0.1\\text{ M } \\text{NaOH}$. The $\\text{pH}$ of the resulting solution is: (Take $\\log_{10} 2 = 0.301$)",
+          "image": "",
+          "options": [
+            "$1.30$",
+            "$1.00$",
+            "$2.00$",
+            "$0.70$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the volume of each solution be $V\\text{ L}$ (total volume $= 2V\\text{ L}$):\n1. Initial millimoles:\n- $\\text{mmol of } \\text{HCl} = 0.2 V$\n- $\\text{mmol of } \\text{NaOH} = 0.1 V$\n2. Neutralization:\n$$\\text{HCl} + \\text{NaOH} \\rightarrow \\text{NaCl} + \\text{H}_2\\text{O}$$\n$$\\text{Remaining mmol of HCl} = 0.2 V - 0.1 V = 0.1 V$$\n3. Concentration of unneutralized $\\text{H}^+$ in the mixture:\n$$[\\text{H}^+] = \\frac{0.1 V}{2 V} = 0.05\\text{ M} = 5.0 \\times 10^{-2}\\text{ M}$$\n4. Calculate $\\text{pH}$:\n$$\\text{pH} = -\\log_{10}(5.0 \\times 10^{-2}) = 2 - \\log_{10}(5) = 2 - (1 - \\log_{10} 2) = 1 + \\log_{10} 2 = 1 + 0.301 = 1.301 \\approx 1.30$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The dissociation constant of a weak base $\\text{BOH}$ is $K_b = 1.0 \\times 10^{-5}$. What is the $\\text{pH}$ of a buffer solution containing $0.1\\text{ M } \\text{BOH}$ and $0.01\\text{ M } \\text{BCl}$?",
+          "image": "",
+          "options": [
+            "$10.0$",
+            "$4.0$",
+            "$9.0$",
+            "$8.0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate $pK_b$:\n$$pK_b = -\\log_{10}(1.0 \\times 10^{-5}) = 5.0$$\n2. Use the Henderson-Hasselbalch equation for a basic buffer:\n$$p\\text{OH} = pK_b + \\log_{10}\\left(\\frac{[\\text{Salt}]}{[\\text{Base}]}\\right)$$\n$$p\\text{OH} = 5.0 + \\log_{10}\\left(\\frac{0.01}{0.1}\\right) = 5.0 + \\log_{10}(0.1) = 5.0 - 1.0 = 4.0$$\n3. Calculate $\\text{pH}$:\n$$\\text{pH} = 14 - p\\text{OH} = 14 - 4.0 = 10.0$$"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements about the Henderson-Hasselbalch equation is INCORRECT?",
+          "image": "",
+          "options": [
+            "It is applicable when the degree of dissociation of the weak acid is very large ($> 20\\%$)",
+            "It assumes that the equilibrium concentration of the weak acid is approximately equal to its initial concentration",
+            "It assumes that all conjugate base ions originate from the added salt",
+            "It provides an accurate estimation when both acid and conjugate base concentrations exceed $0.01\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "The Henderson-Hasselbalch equation:\n$$\\text{pH} = pK_a + \\log_{10}\\left(\\frac{[\\text{Base}]}{[\\text{Acid}]}\\right)$$\nrelies on two fundamental approximations:\n1. The weak acid is only slightly dissociated, so $[\\text{HA}]_{\\text{eq}} \\approx [\\text{HA}]_0$.\n2. The conjugate base does not undergo extensive hydrolysis, so $[\\text{A}^-]_{\\text{eq}} \\approx [\\text{Salt}]_0$.\nIf the acid is moderately strong or highly dissociated ($> 5-10\\%$), these approximations fail, and exact equilibrium quadratic expressions must be solved.\nTherefore, Statement A is incorrect."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] What is the $\\text{pH}$ of a $0.05\\text{ M}$ aqueous solution of calcium hydroxide ($\\text{Ca(OH)}_2$)?",
+          "image": "",
+          "options": [
+            "$13.0$",
+            "$12.7$",
+            "$1.0$",
+            "$11.0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{Ca(OH)}_2$ is a strong base that dissociates completely:\n$$\\text{Ca(OH)}_2 \\rightarrow \\text{Ca}^{2+} + 2\\text{OH}^-$$\n$$[\\text{OH}^-] = 2 \\times 0.05\\text{ M} = 0.10\\text{ M} = 10^{-1}\\text{ M}$$\n2. Calculate $p\\text{OH}$ and $\\text{pH}$:\n$$p\\text{OH} = -\\log_{10}(10^{-1}) = 1.0$$\n$$\\text{pH} = 14 - p\\text{OH} = 14 - 1.0 = 13.0$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] When pure distilled water is boiled in an open flask, its $\\text{pH}$ decreases from $7.0$ to $6.5$. Does the water become acidic?",
+          "image": "",
+          "options": [
+            "No, the water remains neutral because $[\\text{H}^+] = [\\text{OH}^-]$",
+            "Yes, because $\\text{pH} < 7.0$",
+            "Yes, because dissolved $\\text{CO}_2$ escapes",
+            "No, the water becomes alkaline"
+          ],
+          "correctOption": 0,
+          "solution": "1. The autoionization of water ($2\\text{H}_2\\text{O} \\rightleftharpoons \\text{H}_3\\text{O}^+ + \\text{OH}^-$) is endothermic.\n2. Heating shifts the equilibrium forward, increasing the ionic product $K_w$ from $10^{-14}$ to about $10^{-13}$.\n3. Consequently, $[\\text{H}^+] = \\sqrt{K_w} \\approx 3.16 \\times 10^{-7}\\text{ M}$, so $\\text{pH} = 6.5$.\n4. However, every water molecule that ionizes yields one $\\text{H}^+$ and one $\\text{OH}^-$, so $[\\text{H}^+] = [\\text{OH}^-]$.\nBecause the concentrations of hydronium and hydroxide ions remain strictly equal, the water **remains completely neutral**."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A buffer solution contains $0.1\\text{ M } \\text{NH}_4\\text{OH}$ and $0.1\\text{ M } \\text{NH}_4\\text{Cl}$. If $0.01\\text{ moles}$ of gaseous $\\text{HCl}$ is passed into $1.0\\text{ L}$ of this buffer, the added $\\text{H}^+$ ions are consumed by:",
+          "image": "",
+          "options": [
+            "$\\text{NH}_4\\text{OH}$ molecules",
+            "$\\text{NH}_4^+$ ions",
+            "$\\text{Cl}^-$ ions",
+            "Water molecules"
+          ],
+          "correctOption": 0,
+          "solution": "In an ammoniacal basic buffer:\n- The reserve of weak base ($\\text{NH}_4\\text{OH}$ or $\\text{NH}_3$) consumes added strong acid ($\\text{H}^+$):\n$$\\text{NH}_4\\text{OH} + \\text{H}^+ \\rightarrow \\text{NH}_4^+ + \\text{H}_2\\text{O}$$\n- The conjugate acid cation ($\\text{NH}_4^+$) consumes added strong base ($\\text{OH}^-$):\n$$\\text{NH}_4^+ + \\text{OH}^- \\rightarrow \\text{NH}_4\\text{OH}$$\nTherefore, added $\\text{H}^+$ ions react with **$\\text{NH}_4\\text{OH}$ molecules**."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] What is the $\\text{pH}$ of a solution obtained by mixing $100\\text{ mL}$ of a solution of $\\text{pH} = 2$ with $100\\text{ mL}$ of a solution of $\\text{pH} = 12$?",
+          "image": "",
+          "options": [
+            "$2.35$",
+            "$7.00$",
+            "$11.65$",
+            "$1.30$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In Solution 1 ($\text{pH} = 2$):\n$$[\\text{H}^+] = 10^{-2}\\text{ M} = 0.01\\text{ M}$$\n$$\\text{mmol of } \\text{H}^+ = 100\\text{ mL} \\times 0.01\\text{ M} = 1.0\\text{ mmol}$$\n2. In Solution 2 ($\text{pH} = 12$):\n$$p\\text{OH} = 14 - 12 = 2 \\implies [\\text{OH}^-] = 10^{-2}\\text{ M} = 0.01\\text{ M}$$\n$$\\text{mmol of } \\text{OH}^- = 100\\text{ mL} \\times 0.01\\text{ M} = 1.0\\text{ mmol}$$\n3. Neutralization reaction:\n$$\\text{H}^+ + \\text{OH}^- \\rightarrow \\text{H}_2\\text{O}$$\n$1.0\\text{ mmol of } \\text{H}^+$ completely neutralizes $1.0\\text{ mmol of } \\text{OH}^-$.\n4. Because both strong ions are consumed completely, the resulting solution is pure neutral water at $25^\\circ\\text{C}$ with $\\text{pH} = 7.0$."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The $\\text{pH}$ of a $0.1\\text{ M}$ solution of a weak acid $\\text{HA}$ is $3.0$. What is the degree of dissociation ($\\alpha$) of the acid?",
+          "image": "",
+          "options": [
+            "$0.01$",
+            "$0.10$",
+            "$0.001$",
+            "$0.05$"
+          ],
+          "correctOption": 0,
+          "solution": "1. From $\\text{pH} = 3.0$:\n$$[\\text{H}^+] = 10^{-\\text{pH}} = 10^{-3}\\text{ M} = 0.001\\text{ M}$$\n2. For a weak monoprotic acid:\n$$[\\text{H}^+] = C\\alpha$$\n$$0.001 = 0.1 \\times \\alpha \\implies \\alpha = \\frac{0.001}{0.1} = 0.01 = 1\\%$$"
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following statements about the intracellular phosphate buffer system is correct?",
+          "image": "",
+          "options": [
+            "It consists of $\\text{H}_2\\text{PO}_4^-$ as weak acid and $\\text{HPO}_4^{2-}$ as conjugate base",
+            "It consists of $\\text{H}_3\\text{PO}_4$ and $\\text{PO}_4^{3-}$",
+            "It operates exclusively in blood plasma",
+            "It is ineffective because its $pK_a$ is $12.4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Inside cells (cytoplasm), the primary inorganic buffer system is the **dihydrogen phosphate / hydrogen phosphate system**:\n$$\\text{H}_2\\text{PO}_4^-(aq) + \\text{H}_2\\text{O}(l) \\rightleftharpoons \\text{HPO}_4^{2-}(aq) + \\text{H}_3\\text{O}^+(aq)$$\n2. The second dissociation constant of phosphoric acid is $pK_{a2} \\approx 6.86$.\n3. Because $6.86$ is very close to the internal cellular $\\text{pH}$ ($6.9-7.4$), it has high buffer capacity inside biological cells."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A buffer solution is prepared by mixing $2.0\\text{ moles}$ of formic acid ($\\text{HCOOH}, pK_a = 3.74$) and $0.2\\text{ moles}$ of sodium formate ($\\text{HCOONa}$) in water. The $\\text{pH}$ of the buffer is:",
+          "image": "",
+          "options": [
+            "$2.74$",
+            "$4.74$",
+            "$3.74$",
+            "$1.74$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the Henderson-Hasselbalch equation:\n$$\\text{pH} = pK_a + \\log_{10}\\left(\\frac{[\\text{Salt}]}{[\\text{Acid}]}\\right)$$\n$$\\text{pH} = 3.74 + \\log_{10}\\left(\\frac{0.2}{2.0}\\right) = 3.74 + \\log_{10}(0.1) = 3.74 - 1.00 = 2.74$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An aqueous solution of sodium chloride ($\\text{NaCl}$) in pure water has a $\\text{pH}$ of $7.0$ at $25^\\circ\\text{C}$. If the solution is diluted tenfold by adding pure water, the $\\text{pH}$ will:",
+          "image": "",
+          "options": [
+            "Remain equal to $7.0$",
+            "Increase to $8.0$",
+            "Decrease to $6.0$",
+            "Become zero"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{NaCl}$ is the salt of a strong acid ($\\text{HCl}$) and a strong base ($\\text{NaOH}$).\n2. Neither $\\text{Na}^+$ nor $\\text{Cl}^-$ undergoes hydrolysis in water.\n3. The solution is neutral with $[\\text{H}^+] = [\\text{OH}^-] = 1.0 \\times 10^{-7}\\text{ M}$.\n4. Diluting a neutral solution with neutral water changes neither the neutrality nor the $[\\text{H}^+]$ concentration, so the $\\text{pH}$ **remains exactly $7.0$**."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The $pK_a$ of a weak acid $\\text{HA}$ is $4.80$, and the $pK_b$ of a weak base $\\text{BOH}$ is $4.78$. The $\\text{pH}$ of an aqueous solution of the salt $\\text{BA}$ is:",
+          "image": "",
+          "options": [
+            "$7.01$",
+            "$6.99$",
+            "$9.58$",
+            "$4.79$"
+          ],
+          "correctOption": 0,
+          "solution": "For the salt of a weak acid and a weak base, the $\\text{pH}$ is given by:\n$$\\text{pH} = 7 + \\frac{1}{2}(pK_a - pK_b)$$\nSubstitute $pK_a = 4.80$ and $pK_b = 4.78$:\n$$\\text{pH} = 7 + \\frac{1}{2}(4.80 - 4.78) = 7 + \\frac{1}{2}(0.02) = 7 + 0.01 = 7.01$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In which of the following pairs is the common ion effect observed?",
+          "image": "",
+          "options": [
+            "$\\text{AgCl}$ in $\\text{NaCl}$ solution",
+            "$\\text{NaCl}$ in pure water",
+            "$\\text{KNO}_3$ in $\\text{NaCl}$ solution",
+            "$\\text{HCl}$ in $\\text{HNO}_3$ solution"
+          ],
+          "correctOption": 0,
+          "solution": "1. In a saturated solution of sparingly soluble $\\text{AgCl}$:\n$$\\text{AgCl}(s) \\rightleftharpoons \\text{Ag}^+(aq) + \\text{Cl}^-(aq)$$\n2. Adding $\\text{NaCl}$ introduces a high concentration of the common chloride ion ($\\text{Cl}^-$).\n3. By Le Chatelier's principle, the excess common ion shifts the equilibrium to the left, drastically suppressing the solubility of $\\text{AgCl}$ (**common ion effect**).\n4. The other pairs do not involve a sparingly soluble or weak electrolyte with a shared common ion."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A solution has $[\\text{OH}^-] = 2.5 \\times 10^{-5}\\text{ M}$. The $\\text{pH}$ of the solution is: (Take $\\log_{10} 2.5 \\approx 0.40$)",
+          "image": "",
+          "options": [
+            "$9.40$",
+            "$4.60$",
+            "$8.40$",
+            "$10.60$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate $p\\text{OH}$:\n$$p\\text{OH} = -\\log_{10}[\\text{OH}^-] = -\\log_{10}(2.5 \\times 10^{-5}) = 5 - \\log_{10}(2.5) = 5 - 0.40 = 4.60$$\n2. Calculate $\\text{pH}$:\n$$\\text{pH} = 14 - p\\text{OH} = 14 - 4.60 = 9.40$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] If a buffer solution is diluted with pure distilled water by a factor of $10$, its $\\text{pH}$ will:",
+          "image": "",
+          "options": [
+            "Remain virtually unchanged",
+            "Increase by $1$ unit",
+            "Decrease by $1$ unit",
+            "Increase by $10$ units"
+          ],
+          "correctOption": 0,
+          "solution": "From the Henderson-Hasselbalch equation:\n$$\\text{pH} = pK_a + \\log_{10}\\left(\\frac{[\\text{Salt}]}{[\\text{Acid}]}\\right) = pK_a + \\log_{10}\\left(\\frac{n_{\\text{salt}}/V}{n_{\\text{acid}}/V}\\right) = pK_a + \\log_{10}\\left(\\frac{n_{\\text{salt}}}{n_{\\text{acid}}}\\right)$$\n1. Notice that the volume terms ($V$) cancel out completely in the ratio.\n2. Diluting with pure water decreases both $[\\text{Salt}]$ and $[\\text{Acid}]$ by the same factor of $10$, leaving their concentration ratio unchanged.\n3. Therefore, moderate dilution of a buffer solution has **virtually no effect on its $\\text{pH}$**."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-12-le-chateliers-principle",
+  "title": "Le Chatelier’s Principle (Applications to Physical & Chemical Systems)",
+  "syllabus": "Statement and thermodynamic basis of Le Chatelier’s principle; Effect of concentration changes (addition/removal of reactants or products, precipitation, complex formation); Effect of pressure and volume changes on gaseous equilibria (systems with Δng > 0, Δng < 0, and Δng = 0); Effect of temperature changes on exothermic and endothermic reactions (van 't Hoff isochore relation); Effect of adding inert gas: at constant volume (no shift) vs at constant pressure (shift towards larger number of gas moles); Effect of catalyst and role in lowering activation energy without altering equilibrium position; Application to physical equilibria: solid-liquid (melting of normal substances vs water/ice anomaly), liquid-vapour (boiling point elevation, vapor pressure), solid-gas (sublimation), dissolution of solids in liquids (endothermic vs exothermic dissolution, effect of temperature on solubility), dissolution of gases in liquids (Henry's law, effect of pressure and temperature); Industrial applications: Haber process for NH3, Contact process for SO3, Birkeland-Eyde / Ostwald processes",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In the manufacture of ammonia by Haber's process:\n$$\\text{N}_2(g) + 3\\text{H}_2(g) \\rightleftharpoons 2\\text{NH}_3(g); \\quad \\Delta H = -92.4\\text{ kJ/mol}$$\nWhich set of conditions provides the highest yield of ammonia at equilibrium according to Le Chatelier's principle?",
+          "image": "",
+          "options": [
+            "High pressure and low temperature",
+            "Low pressure and high temperature",
+            "High pressure and high temperature",
+            "Low pressure and low temperature"
+          ],
+          "correctOption": 0,
+          "solution": "Applying Le Chatelier's principle:\n1. **Effect of Pressure:** In the forward reaction, $4\\text{ moles}$ of gaseous reactants produce $2\\text{ moles}$ of gaseous ammonia ($\\Delta n_g = 2 - 4 = -2$). Increasing the pressure shifts the equilibrium towards fewer gaseous moles, favoring the forward formation of $\\text{NH}_3$.\n2. **Effect of Temperature:** The forward reaction is exothermic ($\\Delta H < 0$). Decreasing the temperature shifts the equilibrium in the heat-producing (forward) direction.\nTherefore, high pressure and low temperature maximize the equilibrium yield of $\\text{NH}_3$ (industrially, an optimum temperature around $700\\text{ K}$ with iron catalyst is used to balance equilibrium yield and reaction rate)."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the physical equilibrium of ice and liquid water at $0^\\circ\\text{C}$:\n$$\\text{Ice}(s) \\rightleftharpoons \\text{Water}(l); \\quad \\Delta H > 0$$\nGiven that the density of ice is less than the density of liquid water, what is the effect of increasing the external pressure?",
+          "image": "",
+          "options": [
+            "More ice melts into liquid water, lowering the melting point",
+            "More water freezes into ice, raising the melting point",
+            "There is no change because temperature is constant",
+            "Water decomposes into hydrogen and oxygen gases"
+          ],
+          "correctOption": 0,
+          "solution": "1. Density of ice is $\\approx 0.917\\text{ g/cm}^3$ and density of liquid water is $\\approx 1.00\\text{ g/cm}^3$.\n2. Consequently, for a given mass, $V_{\\text{water}} < V_{\\text{ice}}$ (melting of ice results in volume contraction).\n3. According to Le Chatelier's principle, an increase in external pressure causes the system to shift towards the phase that occupies **smaller volume**.\n4. Therefore, increasing pressure shifts the equilibrium forward, causing ice to melt and depressing the freezing/melting point of water."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] An inert gas is added to the equilibrium mixture of:\n$$\\text{PCl}_5(g) \\rightleftharpoons \\text{PCl}_3(g) + \\text{Cl}_2(g)$$\nat CONSTANT PRESSURE. What will be the effect on the degree of dissociation of $\\text{PCl}_5$?",
+          "image": "",
+          "options": [
+            "The degree of dissociation of $\\text{PCl}_5$ increases",
+            "The degree of dissociation of $\\text{PCl}_5$ decreases",
+            "The degree of dissociation remains unchanged",
+            "$\\text{PCl}_5$ instantly condenses into solid"
+          ],
+          "correctOption": 0,
+          "solution": "1. At constant pressure, the addition of an inert gas increases the total volume ($V$) of the system.\n2. This expansion decreases the partial pressures and molar concentrations ($n_i/V$) of all participating gaseous components.\n3. The equilibrium shifts in the direction that produces a larger number of gaseous moles to compensate for the decrease in concentration.\n4. For $\\text{PCl}_5(g) \\rightleftharpoons \\text{PCl}_3(g) + \\text{Cl}_2(g)$, $\\Delta n_g = (1 + 1) - 1 = +1 > 0$.\n5. Therefore, the equilibrium shifts in the forward direction, and the degree of dissociation ($\\alpha$) of $\\text{PCl}_5$ **increases**."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Consider the endothermic dissolution of solid ammonium chloride in water:\n$$\\text{NH}_4\\text{Cl}(s) + \\text{aq} \\rightleftharpoons \\text{NH}_4^+(aq) + \\text{Cl}^-(aq); \\quad \\Delta H > 0$$\nHow does the solubility of $\\text{NH}_4\\text{Cl}$ change with an increase in temperature?",
+          "image": "",
+          "options": [
+            "Solubility increases",
+            "Solubility decreases",
+            "Solubility remains unchanged",
+            "Solubility drops to zero"
+          ],
+          "correctOption": 0,
+          "solution": "1. The dissolution process absorbs heat from the surroundings ($\\Delta H > 0$, endothermic).\n2. By Le Chatelier's principle, increasing the temperature provides heat energy, which drives the equilibrium forward in the endothermic direction to absorb excess heat.\n3. Consequently, more $\\text{NH}_4\\text{Cl}(s)$ dissolves, and its solubility in water **increases** with rising temperature."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the reaction:\n$$\\text{CO}(g) + 2\\text{H}_2(g) \\rightleftharpoons \\text{CH}_3\\text{OH}(g); \\quad \\Delta H = -90.7\\text{ kJ/mol}$$\nIf the volume of the reaction container is halved at constant temperature, the equilibrium will:",
+          "image": "",
+          "options": [
+            "Shift in the forward direction to produce more $\\text{CH}_3\\text{OH}$",
+            "Shift in the backward direction to produce more $\\text{CO}$ and $\\text{H}_2$",
+            "Remain unaffected because temperature is constant",
+            "Cause the equilibrium constant $K_c$ to double"
+          ],
+          "correctOption": 0,
+          "solution": "1. Halving the volume of the container doubles the total pressure and doubles the concentration of every gas.\n2. The reaction quotient is $Q_c = \\frac{[\\text{CH}_3\\text{OH}]}{[\\text{CO}][\\text{H}_2]^2}$.\nWhen volume is halved, concentrations double: $Q_c' = \\frac{2}{2 \\times (2)^2} = \\frac{2}{8} = \\frac{1}{4} Q_c < K_c$.\n3. According to Le Chatelier's principle, increasing pressure (or decreasing volume) shifts the equilibrium towards the side with fewer moles of gas.\n4. Here, $\\text{Reactants} = 1 + 2 = 3\\text{ moles}$ and $\\text{Products} = 1\\text{ mole}$. The forward direction has fewer gas moles.\nThus, the equilibrium shifts in the forward direction."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the blood oxygenation equilibrium:\n$$\\text{Hb}(aq) + \\text{O}_2(aq) \\rightleftharpoons \\text{HbO}_2(aq)$$\nAt high altitudes where atmospheric pressure and the partial pressure of oxygen ($P_{\\text{O}_2}$) are significantly reduced, what happens to the equilibrium according to Le Chatelier's principle?",
+          "image": "",
+          "options": [
+            "Equilibrium shifts to the left, decreasing oxyhemoglobin concentration and causing hypoxia",
+            "Equilibrium shifts to the right, forming more oxyhemoglobin",
+            "Equilibrium is unaffected because hemoglobin is dissolved in liquid blood",
+            "Hemoglobin denatures completely"
+          ],
+          "correctOption": 0,
+          "solution": "1. Dissolved oxygen in blood is in dynamic equilibrium with gaseous oxygen in alveolar air ($[\\text{O}_2(aq)] \\propto P_{\\text{O}_2}$ by Henry's law).\n2. At high altitudes, $P_{\\text{O}_2}$ is low, which decreases the concentration of dissolved $\\text{O}_2$ in blood.\n3. By Le Chatelier's principle, removing a reactant ($[\\text{O}_2]$) shifts the equilibrium $\\text{Hb} + \\text{O}_2 \\rightleftharpoons \\text{HbO}_2$ to the left (backward direction).\n4. This releases oxygen from $\\text{HbO}_2$, reducing the concentration of oxyhemoglobin in arterial blood and leading to symptoms of altitude sickness (hypoxia)."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] When sodium acetate ($\\text{CH}_3\\text{COONa}$) is added to an aqueous solution of acetic acid, which of the following occurs?",
+          "image": "",
+          "options": [
+            "The degree of ionization of acetic acid decreases and the $\\text{pH}$ of the solution increases",
+            "The degree of ionization of acetic acid increases and the $\\text{pH}$ decreases",
+            "Both ionization and $\\text{pH}$ remain unchanged",
+            "Acetic acid completely decomposes into methane and $\\text{CO}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Acetic acid ionizes according to:\n$$\\text{CH}_3\\text{COOH}(aq) \\rightleftharpoons \\text{CH}_3\\text{COO}^-(aq) + \\text{H}^+(aq)$$\n2. Adding $\\text{CH}_3\\text{COONa}$ (a strong electrolyte) provides an excess of the acetate common ion ($\\text{CH}_3\\text{COO}^-$).\n3. By Le Chatelier's principle (the common ion effect), the excess product ion shifts the dissociation equilibrium to the left (backward direction).\n4. This suppresses the degree of ionization of acetic acid, decreasing $[\\text{H}^+]$ and consequently **increasing the $\\text{pH}$** of the solution."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In the equilibrium system:\n$$\\text{Fe}^{3+}(aq) + \\text{SCN}^-(aq) \\rightleftharpoons [\\text{Fe}(\\text{SCN})]^{2+}(aq) \\quad (\\text{deep red})$$\nWhich of the following additions will intensify the deep red color?",
+          "image": "",
+          "options": [
+            "Adding a few drops of $\\text{KSCN}$ solution",
+            "Adding $\\text{HgCl}_2$ crystals",
+            "Adding oxalic acid ($(\\text{COOH})_2$)",
+            "Adding excess water (dilution)"
+          ],
+          "correctOption": 0,
+          "solution": "1. The deep red color is caused by the complex ion $[\\text{Fe}(\\text{SCN})]^{2+}$.\n2. Adding $\\text{KSCN}$ increases the concentration of the reactant $\\text{SCN}^-$.\n3. By Le Chatelier's principle, adding a reactant shifts the equilibrium in the forward direction, forming more $[\\text{Fe}(\\text{SCN})]^{2+}$ and intensifying the red color.\n(In contrast, $\\text{HgCl}_2$ removes $\\text{SCN}^-$ as stable $[\\text{Hg}(\\text{SCN})_4]^{2-}$, and oxalic acid removes $\\text{Fe}^{3+}$ as $[\\text{Fe}(\\text{C}_2\\text{O}_4)_3]^{3-}$, both causing the red color to fade)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] For the reaction:\n$$\\text{H}_2(g) + \\text{I}_2(g) \\rightleftharpoons 2\\text{HI}(g)$$\nWhat is the effect of adding an inert gas (such as argon) at CONSTANT PRESSURE?",
+          "image": "",
+          "options": [
+            "No effect on the equilibrium position",
+            "Equilibrium shifts in the forward direction",
+            "Equilibrium shifts in the backward direction",
+            "$\\text{HI}$ decomposes into elements"
+          ],
+          "correctOption": 0,
+          "solution": "1. At constant pressure, adding an inert gas increases the total volume of the container.\n2. In a reaction where $\\Delta n_g = n_{\\text{products}} - n_{\\text{reactants}} = 2 - (1 + 1) = 0$, both sides contain an identical number of gaseous moles.\n3. Because the volume factor cancels out completely from the equilibrium constant expression:\n$$K_p = \\frac{(P_{\\text{HI}})^2}{(P_{\\text{H}_2})(P_{\\text{I}_2})} = \\frac{(n_{\\text{HI}})^2}{(n_{\\text{H}_2})(n_{\\text{I}_2})}$$\n4. Dilution affects both sides equally, so the addition of an inert gas at constant pressure has **no effect** when $\\Delta n_g = 0$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The solubility of a gas in a liquid decreases with an increase in temperature because the dissolution of a gas is generally:",
+          "image": "",
+          "options": [
+            "Exothermic ($\\Delta H_{\\text{sol}} < 0$)",
+            "Endothermic ($\\Delta H_{\\text{sol}} > 0$)",
+            "A process with $\\Delta S > 0$",
+            "Independent of entropy"
+          ],
+          "correctOption": 0,
+          "solution": "1. The dissolution of a gas in a liquid involves condensation from a free gas phase into a solvated state:\n$$\\text{Gas} + \\text{Solvent} \\rightleftharpoons \\text{Solution} + \\text{Heat}$$\n2. Because attractive intermolecular forces develop between gas molecules and solvent molecules, dissolution is an **exothermic process** ($\\Delta H_{\\text{sol}} < 0$).\n3. According to Le Chatelier's principle, increasing the temperature drives the equilibrium in the reverse (endothermic) direction, releasing dissolved gas and reducing its solubility."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In the Contact process for the manufacture of sulfuric acid, the key step is:\n$$2\\text{SO}_2(g) + \\text{O}_2(g) \\rightleftharpoons 2\\text{SO}_3(g); \\quad \\Delta H = -196\\text{ kJ/mol}$$\nWhich combination of conditions will favor the maximum conversion of $\\text{SO}_2$ to $\\text{SO}_3$?",
+          "image": "",
+          "options": [
+            "High pressure, low temperature, and continuous removal of $\\text{SO}_3$",
+            "Low pressure, high temperature, and excess $\\text{SO}_3$",
+            "High pressure, high temperature, and removal of $\\text{O}_2$",
+            "Low pressure, low temperature, and removal of catalyst"
+          ],
+          "correctOption": 0,
+          "solution": "Applying Le Chatelier's principle:\n1. The reaction produces fewer moles of gas ($3\\text{ moles} \\rightarrow 2\\text{ moles}$), so **high pressure** favors the forward reaction.\n2. The reaction is exothermic ($\\Delta H < 0$), so **low temperature** favors the forward reaction (a compromise temperature around $720\\text{ K}$ with $\\text{V}_2\\text{O}_5$ catalyst is maintained industrially).\n3. Continuously removing the product $\\text{SO}_3$ by absorbing it in concentrated $\\text{H}_2\\text{SO}_4$ prevents equilibrium from halting the forward conversion."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For the melting of solid sulfur:\n$$\\text{Sulfur}(s) \\rightleftharpoons \\text{Sulfur}(l)$$\nUnlike water, liquid sulfur has a LOWER density than solid sulfur ($V_{\\text{liquid}} > V_{\\text{solid}}$). What is the effect of an increase in pressure on the melting point of sulfur?",
+          "image": "",
+          "options": [
+            "The melting point increases",
+            "The melting point decreases",
+            "The melting point remains unchanged",
+            "Sulfur sublimates directly to vapor"
+          ],
+          "correctOption": 0,
+          "solution": "1. For standard substances like sulfur, the liquid phase occupies a greater volume than the solid phase ($V_{\\text{liquid}} > V_{\\text{solid}}$).\n2. According to Le Chatelier's principle, applying higher pressure shifts the equilibrium towards the phase that occupies smaller volume (the solid phase).\n3. Consequently, higher thermal energy is required to melt the solid at elevated pressure, so the **melting point increases**.\n(Water is an anomaly because ice is less dense than liquid water)."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] When $\\text{BiCl}_3$ is added to water, a white turbidity of bismuth oxychloride ($\\text{BiOCl}$) is formed:\n$$\\text{BiCl}_3(aq) + \\text{H}_2\\text{O}(l) \\rightleftharpoons \\text{BiOCl}(s) \\downarrow + 2\\text{HCl}(aq)$$\nHow can this white turbidity be cleared to obtain a completely transparent solution?",
+          "image": "",
+          "options": [
+            "By adding concentrated hydrochloric acid ($\\text{HCl}$)",
+            "By adding more water",
+            "By adding sodium hydroxide ($\\text{NaOH}$)",
+            "By boiling off the water"
+          ],
+          "correctOption": 0,
+          "solution": "1. The white precipitate is $\\text{BiOCl}(s)$.\n2. In the equilibrium expression, $\\text{HCl}(aq)$ is one of the products.\n3. Adding concentrated $\\text{HCl}$ increases the concentration of $\\text{H}^+$ and $\\text{Cl}^-$ on the product side.\n4. According to Le Chatelier's principle, adding a product shifts the equilibrium in the **backward direction**, dissolving the solid $\\text{BiOCl}$ and restoring a clear, transparent solution of $\\text{BiCl}_3$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In which of the following reactions will an increase in total pressure at equilibrium have NO EFFECT on the equilibrium composition?",
+          "image": "",
+          "options": [
+            "$\\text{H}_2(g) + \\text{CO}_2(g) \\rightleftharpoons \\text{CO}(g) + \\text{H}_2\\text{O}(g)$",
+            "$\\text{N}_2\\text{O}_4(g) \\rightleftharpoons 2\\text{NO}_2(g)$",
+            "$2\\text{SO}_2(g) + \\text{O}_2(g) \\rightleftharpoons 2\\text{SO}_3(g)$",
+            "$\\text{PCl}_5(g) \\rightleftharpoons \\text{PCl}_3(g) + \\text{Cl}_2(g)$"
+          ],
+          "correctOption": 0,
+          "solution": "Pressure changes affect only those gaseous equilibria where there is a net change in the number of gaseous moles ($\\Delta n_g \\ne 0$):\n- For $\\text{H}_2(g) + \\text{CO}_2(g) \\rightleftharpoons \\text{CO}(g) + \\text{H}_2\\text{O}(g)$: $\\Delta n_g = (1 + 1) - (1 + 1) = 0$.\n- Since the number of gaseous moles is identical on both sides, pressure changes alter all concentrations by the same factor, leaving the reaction quotient $Q_p$ equal to $K_p$.\nTherefore, pressure has no effect on this equilibrium."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the heterogeneous system in a closed vessel:\n$$\\text{C}(s) + \\text{CO}_2(g) \\rightleftharpoons 2\\text{CO}(g); \\quad \\Delta H = +172.5\\text{ kJ}$$\nWhich of the following alterations will shift the equilibrium in the backward direction?",
+          "image": "",
+          "options": [
+            "Decreasing the temperature and increasing the pressure",
+            "Increasing the temperature and decreasing the pressure",
+            "Adding more solid carbon",
+            "Removing $\\text{CO}$ continuously"
+          ],
+          "correctOption": 0,
+          "solution": "1. The reaction is endothermic ($\\Delta H > 0$). Decreasing the temperature shifts the equilibrium in the exothermic (backward) direction.\n2. The reaction involves $1\\text{ mole of gas} \\rightarrow 2\\text{ moles of gas}$ ($\\Delta n_g = +1$). Increasing the pressure shifts the equilibrium towards fewer gas moles (backward direction).\n3. Adding more solid carbon has no effect because pure solids have constant activity ($= 1$).\nThus, decreasing temperature and increasing pressure shifts the equilibrium backward."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A closed vessel contains liquid water in equilibrium with water vapor:\n$$\\text{H}_2\\text{O}(l) \\rightleftharpoons \\text{H}_2\\text{O}(g)$$\nIf the volume of the vessel is suddenly doubled at a constant temperature, what will be the final vapor pressure of water when equilibrium is re-established?",
+          "image": "",
+          "options": [
+            "Equal to the original vapor pressure",
+            "Half of the original vapor pressure",
+            "Twice the original vapor pressure",
+            "Four times the original vapor pressure"
+          ],
+          "correctOption": 0,
+          "solution": "1. When the container volume is doubled, the pressure of water vapor momentarily drops to half its initial value.\n2. Because the vapor pressure is below the equilibrium vapor pressure, liquid water evaporates at a rate faster than condensation.\n3. By Le Chatelier's principle, more liquid water vaporizes until the partial pressure of water vapor returns to its original equilibrium value ($K_p = P_{\\text{H}_2\\text{O}}$).\n4. Because vapor pressure of a pure liquid depends strictly on temperature, the final vapor pressure is **equal to the original vapor pressure** (provided sufficient liquid remains)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] For the exothermic reaction:\n$$\\text{N}_2(g) + 3\\text{H}_2(g) \\rightleftharpoons 2\\text{NH}_3(g)$$\nWhat is the effect of adding a finely divided iron catalyst containing molybdenum promoter on the equilibrium yield of $\\text{NH}_3$?",
+          "image": "",
+          "options": [
+            "No effect on the equilibrium yield of $\\text{NH}_3$",
+            "Increases the equilibrium yield of $\\text{NH}_3$",
+            "Decreases the equilibrium yield of $\\text{NH}_3$",
+            "Shifts the equilibrium completely in the backward direction"
+          ],
+          "correctOption": 0,
+          "solution": "1. A catalyst accelerates the rate of the forward reaction and the backward reaction equally by lowering the activation energy barrier for both pathways.\n2. A catalyst does not alter the thermodynamic free energy change ($\\Delta G^\\circ$) or the equilibrium constant ($K$).\n3. Therefore, a catalyst helps the system reach equilibrium much faster, but has **no effect on the equilibrium yield** of ammonia."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In an aqueous solution of silver chloride:\n$$\\text{AgCl}(s) \\rightleftharpoons \\text{Ag}^+(aq) + \\text{Cl}^-(aq)$$\nWhen concentrated aqueous ammonia ($\\text{NH}_3$) is added, more solid $\\text{AgCl}$ dissolves because:",
+          "image": "",
+          "options": [
+            "Ammonia forms a stable complex $[\\text{Ag}(\\text{NH}_3)_2]^+$ with $\\text{Ag}^+$, lowering $[\\text{Ag}^+]$ and shifting the equilibrium forward",
+            "Ammonia neutralizes the chloride ions",
+            "Ammonia acts as a reducing agent for silver ions",
+            "Ammonia increases the dielectric constant of water"
+          ],
+          "correctOption": 0,
+          "solution": "1. Ammonia molecules coordinate with free $\\text{Ag}^+$ ions to form the diamminesilver(I) complex:\n$$\\text{Ag}^+(aq) + 2\\text{NH}_3(aq) \\rightleftharpoons [\\text{Ag}(\\text{NH}_3)_2]^+(aq)$$\n2. This complexation reaction removes free $\\text{Ag}^+$ ions from solution.\n3. By Le Chatelier's principle, the solubility equilibrium $\\text{AgCl}(s) \\rightleftharpoons \\text{Ag}^+ + \\text{Cl}^-$ shifts in the forward direction to replenish $\\text{Ag}^+$, causing solid $\\text{AgCl}$ to dissolve completely."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the gaseous reaction:\n$$2\\text{NO}_2(g) \\rightleftharpoons \\text{N}_2\\text{O}_4(g); \\quad \\Delta H = -57.2\\text{ kJ}$$\nBrown $\\text{NO}_2$ gas is placed in a syringe. If the syringe plunger is rapidly pressed inward to compress the gas, the color of the gas mixture will:",
+          "image": "",
+          "options": [
+            "First become darker brown due to concentration increase, and then fade as it shifts to colorless $\\text{N}_2\\text{O}_4$",
+            "Remain permanently darker brown",
+            "Immediately turn completely colorless without any intermediate change",
+            "Turn pale blue"
+          ],
+          "correctOption": 0,
+          "solution": "1. When the plunger is pressed inward, the volume decreases instantaneously, increasing the concentration of all gas molecules. Hence, the brown color temporarily **darkens**.\n2. Since $2\\text{ moles of brown } \\text{NO}_2$ produce $1\\text{ mole of colorless } \\text{N}_2\\text{O}_4$ ($\\Delta n_g = -1$), the increased pressure causes the equilibrium to shift forward according to Le Chatelier's principle.\n3. As more $\\text{NO}_2$ dimerizes into colorless $\\text{N}_2\\text{O}_4$, the brown color gradually **fades** to a lighter shade."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In the dissolution of carbon dioxide in carbonated beverages under pressure:\n$$\\text{CO}_2(g) + \\text{H}_2\\text{O}(l) \\rightleftharpoons \\text{H}_2\\text{CO}_3(aq)$$\nWhen the bottle cap is opened, effervescence occurs because:",
+          "image": "",
+          "options": [
+            "The sudden drop in pressure shifts the equilibrium backward, releasing gaseous $\\text{CO}_2$",
+            "The temperature of the liquid rises instantly",
+            "Atmospheric nitrogen displaces $\\text{CO}_2$ from solution",
+            "Carbonic acid hydrolyzes into methane"
+          ],
+          "correctOption": 0,
+          "solution": "1. Carbonated drinks are bottled under high pressure of $\\text{CO}_2$ ($3-4\\text{ atm}$) to keep large amounts of gas dissolved in equilibrium as carbonic acid.\n2. Opening the bottle cap reduces the headspace pressure to $1\\text{ atm}$.\n3. By Le Chatelier's principle (and Henry's law), the system responds to the pressure drop by shifting in the direction that produces gas (backward direction):\n$$\\text{H}_2\\text{CO}_3(aq) \\rightarrow \\text{H}_2\\text{O}(l) + \\text{CO}_2(g) \\uparrow$$\n4. This rapid release of gaseous $\\text{CO}_2$ produces brisk effervescence."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] For the endothermic equilibrium:\n$$\\text{CaCO}_3(s) \\rightleftharpoons \\text{CaO}(s) + \\text{CO}_2(g); \\quad \\Delta H > 0$$\nIn a closed container, what will happen if more solid $\\text{CaCO}_3$ is added to the system at equilibrium?",
+          "image": "",
+          "options": [
+            "The equilibrium partial pressure of $\\text{CO}_2$ remains unchanged",
+            "The partial pressure of $\\text{CO}_2$ doubles",
+            "The equilibrium shifts in the forward direction",
+            "The equilibrium shifts in the backward direction"
+          ],
+          "correctOption": 0,
+          "solution": "1. The equilibrium constant for this heterogeneous equilibrium is given by $K_p = P_{\\text{CO}_2}$.\n2. The chemical activity of a pure solid is independent of the amount present (activity $= 1$).\n3. Adding more solid $\\text{CaCO}_3$ does not change its concentration or chemical potential.\n4. Therefore, adding more solid $\\text{CaCO}_3$ has **no effect** on the equilibrium position, and the partial pressure of $\\text{CO}_2$ remains unchanged at constant temperature."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] According to Le Chatelier's principle, adding heat to a system in dynamic chemical equilibrium will:",
+          "image": "",
+          "options": [
+            "Shift the equilibrium in the endothermic direction",
+            "Shift the equilibrium in the exothermic direction",
+            "Shift the equilibrium towards the side with fewer moles of gas",
+            "Double the rate of the reverse reaction only"
+          ],
+          "correctOption": 0,
+          "solution": "Le Chatelier's principle states that if a constraint (such as a temperature change) is applied to a system at equilibrium, the system will adjust to counteract that constraint.\nAdding heat raises the temperature; the system counteracts this by consuming heat, which shifts the equilibrium in the **endothermic direction**."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the manufacture of nitric oxide ($\\text{NO}$) by direct combination of elements:\n$$\\text{N}_2(g) + \\text{O}_2(g) \\rightleftharpoons 2\\text{NO}(g); \\quad \\Delta H = +180\\text{ kJ/mol}$$\nThe formation of $\\text{NO}$ is favored by:",
+          "image": "",
+          "options": [
+            "High temperature, while pressure has no significant effect",
+            "Low temperature and high pressure",
+            "High pressure, while temperature has no effect",
+            "Low temperature and low pressure"
+          ],
+          "correctOption": 0,
+          "solution": "1. The reaction is endothermic ($\\Delta H = +180\\text{ kJ/mol} > 0$). Raising the temperature supplies thermal energy, shifting the equilibrium in the forward direction to form more $\\text{NO}$.\n2. The number of moles of gas on both sides is identical ($\\Delta n_g = 2 - 2 = 0$). Therefore, varying the pressure has no effect on the equilibrium position.\nHence, high temperature favors the formation of $\\text{NO}$, while pressure has no effect."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Consider the equilibrium:\n$$2\\text{CrO}_4^{2-}(aq) \\text{ (yellow)} + 2\\text{H}^+(aq) \\rightleftharpoons \\text{Cr}_2\\text{O}_7^{2-}(aq) \\text{ (orange)} + \\text{H}_2\\text{O}(l)$$\nWhat color change is observed when aqueous sodium hydroxide ($\\text{NaOH}$) is added to this orange dichromate solution?",
+          "image": "",
+          "options": [
+            "The solution turns yellow",
+            "The solution turns deep red",
+            "The solution turns green",
+            "The solution remains orange"
+          ],
+          "correctOption": 0,
+          "solution": "1. Adding $\\text{NaOH}$ provides hydroxide ions ($\\text{OH}^-$), which react with and neutralize the $\\text{H}^+$ ions in solution:\n$$\\text{H}^+ + \\text{OH}^- \\rightarrow \\text{H}_2\\text{O}$$\n2. This neutralisation removes $\\text{H}^+$ ions (a reactant).\n3. By Le Chatelier's principle, the equilibrium shifts in the backward direction to regenerate $\\text{H}^+$.\n4. This converts orange dichromate ($\\text{Cr}_2\\text{O}_7^{2-}$) into yellow chromate ($\\text{CrO}_4^{2-}$), turning the solution **yellow**."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] For the gaseous equilibrium:\n$$A(g) + B(g) \\rightleftharpoons C(g) + D(g)$$\nAt constant temperature, $1\\text{ mole}$ of an inert gas is introduced into the container at CONSTANT VOLUME. The equilibrium concentrations of $A, B, C,$ and $D$ will:",
+          "image": "",
+          "options": [
+            "Remain completely unchanged",
+            "Increase",
+            "Decrease",
+            "Shift to favor products"
+          ],
+          "correctOption": 0,
+          "solution": "1. Adding an inert gas at constant volume increases the total pressure inside the chamber.\n2. However, the volume ($V$) of the chamber remains unchanged, and the number of moles ($n_i$) of each reactant and product gas remains constant.\n3. The molar concentration of each component ($[i] = n_i/V$) and its partial pressure ($P_i = [i]RT$) remain strictly unaltered.\n4. Therefore, the reaction quotient $Q_c$ remains equal to $K_c$, and all equilibrium concentrations remain unchanged."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When potassium chloride ($\\text{KCl}$) dissolves in water, the temperature of the solution drops (endothermic dissolution). According to Le Chatelier's principle, heating a saturated solution of $\\text{KCl}$ in contact with undissolved $\\text{KCl}(s)$ will:",
+          "image": "",
+          "options": [
+            "Cause more $\\text{KCl}$ to dissolve",
+            "Cause $\\text{KCl}$ to precipitate out of solution",
+            "Have no effect on the concentration",
+            "Produce chlorine gas"
+          ],
+          "correctOption": 0,
+          "solution": "1. The dissolution equilibrium is:\n$$\\text{KCl}(s) + \\text{Heat} \\rightleftharpoons \\text{K}^+(aq) + \\text{Cl}^-(aq)$$\n2. Because the process is endothermic, adding heat (raising temperature) shifts the equilibrium in the forward direction to absorb the added thermal energy.\n3. As a result, additional solid $\\text{KCl}$ dissolves, and the solution can hold a higher concentration of solute."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the reaction:\n$$\\text{Cl}_2(g) + 3\\text{F}_2(g) \\rightleftharpoons 2\\text{ClF}_3(g); \\quad \\Delta H = -329\\text{ kJ}$$\nWhich of the following changes will DECREASE the amount of $\\text{ClF}_3$ at equilibrium?",
+          "image": "",
+          "options": [
+            "Increasing the temperature",
+            "Increasing the pressure",
+            "Adding more $\\text{F}_2$",
+            "Decreasing the volume of the container"
+          ],
+          "correctOption": 0,
+          "solution": "1. The forward reaction is exothermic ($\\Delta H = -329\\text{ kJ} < 0$).\n2. By Le Chatelier's principle, increasing the temperature drives the equilibrium in the reverse (endothermic) direction to absorb heat.\n3. This consumes $\\text{ClF}_3$, decreasing its equilibrium amount.\n(Increasing pressure, adding $\\text{F}_2$, or decreasing volume would all favor the forward formation of $\\text{ClF}_3$)."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For the synthesis of methanol:\n$$\\text{CO}(g) + 2\\text{H}_2(g) \\rightleftharpoons \\text{CH}_3\\text{OH}(g); \\quad \\Delta H < 0$$\nWhat will happen if an inert gas is introduced at CONSTANT PRESSURE?",
+          "image": "",
+          "options": [
+            "The equilibrium will shift in the backward direction",
+            "The equilibrium will shift in the forward direction",
+            "The equilibrium will remain unchanged",
+            "The value of $K_p$ will decrease"
+          ],
+          "correctOption": 0,
+          "solution": "1. Adding an inert gas at constant pressure increases the total volume ($V$) of the reaction mixture.\n2. Dilution reduces the partial pressures of all gaseous reactants and products.\n3. By Le Chatelier's principle, the equilibrium shifts in the direction that produces a larger number of gas moles.\n4. Here, $\\text{Reactants} = 1 + 2 = 3\\text{ moles}$ and $\\text{Products} = 1\\text{ mole}$ ($\\Delta n_g = 1 - 3 = -2 < 0$).\n5. The backward direction has more gaseous moles ($3 > 1$), so the equilibrium shifts in the **backward direction**."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A saturated solution of calcium hydroxide is in equilibrium with its solid:\n$$\\text{Ca(OH)}_2(s) \\rightleftharpoons \\text{Ca}^{2+}(aq) + 2\\text{OH}^-(aq)$$\nIf the $\\text{pH}$ of the solution is increased by adding sodium hydroxide, the concentration of $\\text{Ca}^{2+}$ in solution will:",
+          "image": "",
+          "options": [
+            "Decrease due to common ion effect",
+            "Increase",
+            "Remain unchanged",
+            "First increase and then decrease"
+          ],
+          "correctOption": 0,
+          "solution": "1. Increasing the $\\text{pH}$ by adding $\\text{NaOH}$ increases the concentration of $\\text{OH}^-$ ions.\n2. Hydroxide ion is a product in the solubility equilibrium.\n3. According to Le Chatelier's principle, the excess common ion $\\text{OH}^-$ shifts the equilibrium to the left (backward direction).\n4. This causes more $\\text{Ca(OH)}_2$ to precipitate out, thereby **decreasing the concentration of $\\text{Ca}^{2+}$**."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In which of the following cases does the equilibrium constant $K$ INCREASE with an increase in temperature?",
+          "image": "",
+          "options": [
+            "$\\text{N}_2(g) + \\text{O}_2(g) \\rightleftharpoons 2\\text{NO}(g); \\quad \\Delta H = +180\\text{ kJ}$",
+            "$\\text{N}_2(g) + 3\\text{H}_2(g) \\rightleftharpoons 2\\text{NH}_3(g); \\quad \\Delta H = -92.4\\text{ kJ}$",
+            "$2\\text{SO}_2(g) + \\text{O}_2(g) \\rightleftharpoons 2\\text{SO}_3(g); \\quad \\Delta H = -196\\text{ kJ}$",
+            "$\\text{CO}(g) + 2\\text{H}_2(g) \\rightleftharpoons \\text{CH}_3\\text{OH}(g); \\quad \\Delta H = -90.7\\text{ kJ}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the van 't Hoff equation:\n$$\\frac{d \\ln K}{dT} = \\frac{\\Delta H^\\circ}{RT^2}$$\n1. For an **endothermic reaction** ($\\Delta H^\\circ > 0$), $\\frac{d \\ln K}{dT} > 0$, meaning the equilibrium constant $K$ increases as temperature increases.\n2. For exothermic reactions ($\\Delta H^\\circ < 0$), $K$ decreases with increasing temperature.\n3. Among the choices, only $\\text{N}_2(g) + \\text{O}_2(g) \\rightleftharpoons 2\\text{NO}(g)$ is endothermic ($\\Delta H = +180\\text{ kJ} > 0$)."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Consider the reaction at equilibrium:\n$$\\text{CH}_4(g) + 2\\text{H}_2\\text{S}(g) \\rightleftharpoons \\text{CS}_2(g) + 4\\text{H}_2(g)$$\nIf the volume of the reaction vessel is DECREASED at constant temperature, the reaction will:",
+          "image": "",
+          "options": [
+            "Shift in the backward direction",
+            "Shift in the forward direction",
+            "Remain in equilibrium",
+            "Cause the value of $K_c$ to increase"
+          ],
+          "correctOption": 0,
+          "solution": "1. Gaseous moles of reactants $= 1\\text{ (CH}_4) + 2\\text{ (H}_2\\text{S}) = 3\\text{ moles}$.\n2. Gaseous moles of products $= 1\\text{ (CS}_2) + 4\\text{ (H}_2) = 5\\text{ moles}$.\n3. Decreasing the volume increases the total pressure.\n4. By Le Chatelier's principle, the system responds to increased pressure by shifting towards the side with fewer moles of gas.\n5. Since the reactants side has fewer moles ($3 < 5$), the equilibrium shifts in the **backward direction**."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For the dissociation equilibrium of dinitrogen tetroxide:\n$$\\text{N}_2\\text{O}_4(g) \\rightleftharpoons 2\\text{NO}_2(g); \\quad \\Delta H > 0$$\nIf the temperature is increased, what happens to the density of the gas mixture at constant pressure?",
+          "image": "",
+          "options": [
+            "Density decreases",
+            "Density increases",
+            "Density remains constant",
+            "Density becomes zero"
+          ],
+          "correctOption": 0,
+          "solution": "1. For an endothermic reaction ($\\Delta H > 0$), increasing temperature shifts the equilibrium in the forward direction, producing more $\\text{NO}_2$ molecules.\n2. The average molar mass of the gas mixture decreases ($M_{\\text{avg}} = \\frac{M_{\\text{N}_2\\text{O}_4}}{1 + \\alpha}$).\n3. From the ideal gas law: $\\text{Density } d = \\frac{P M_{\\text{avg}}}{RT}$.\n4. Both the increase in temperature ($T$ in denominator) and the decrease in average molar mass ($M_{\\text{avg}}$ in numerator) cause the **density to decrease**."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] When solid sodium sulfate ($\\text{Na}_2\\text{SO}_4$) dissolves in water at temperatures above $32.4^\\circ\\text{C}$, the dissolution is exothermic:\n$$\\text{Na}_2\\text{SO}_4(s) + \\text{aq} \\rightleftharpoons 2\\text{Na}^+(aq) + \\text{SO}_4^{2-}(aq); \\quad \\Delta H < 0$$\nWhat will happen to the solubility of $\\text{Na}_2\\text{SO}_4$ if the temperature is raised above $32.4^\\circ\\text{C}$?",
+          "image": "",
+          "options": [
+            "Solubility decreases",
+            "Solubility increases",
+            "Solubility remains unchanged",
+            "Sodium sulfate decomposes into sodium oxide and $\\text{SO}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Above $32.4^\\circ\\text{C}$, anhydrous $\\text{Na}_2\\text{SO}_4$ is the stable solid phase, and its dissolution in water is exothermic ($\\Delta H < 0$).\n2. By Le Chatelier's principle, adding heat by raising the temperature shifts the equilibrium in the reverse (endothermic) direction.\n3. This causes solid $\\text{Na}_2\\text{SO}_4$ to precipitate out of the saturated solution, so its **solubility decreases** with increasing temperature."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In a closed vessel at dynamic equilibrium, the forward and reverse rates are $r_f$ and $r_b$ respectively. When a reactant is suddenly added, which of the following represents the immediate change?",
+          "image": "",
+          "options": [
+            "$r_f$ increases immediately, while $r_b$ increases subsequently until $r_f = r_b$",
+            "$r_b$ increases immediately, while $r_f$ remains unchanged",
+            "Both $r_f$ and $r_b$ double instantaneously",
+            "Neither rate changes"
+          ],
+          "correctOption": 0,
+          "solution": "1. According to the rate law, the forward reaction rate is $r_f = k_f [\\text{Reactants}]^n$.\n2. Immediately upon adding more reactant, $[\\text{Reactants}]$ jumps, causing $r_f$ to **increase immediately** ($r_f > r_b$).\n3. As more products are formed by this faster forward rate, $[\\text{Products}]$ rises, causing the backward rate $r_b = k_b [\\text{Products}]^m$ to gradually increase.\n4. Eventually, $r_f$ decreases slightly and $r_b$ increases until a new dynamic equilibrium is established where $r_f = r_b$."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the reaction:\n$$\\text{CO}_2(g) + \\text{C}(s) \\rightleftharpoons 2\\text{CO}(g)$$\nWhat is the effect of adding more solid carbon at constant temperature and pressure?",
+          "image": "",
+          "options": [
+            "No effect on the equilibrium position or concentrations",
+            "Equilibrium shifts in the forward direction",
+            "Equilibrium shifts in the backward direction",
+            "The value of $K_p$ increases"
+          ],
+          "correctOption": 0,
+          "solution": "1. Carbon is a pure solid phase. The concentration and thermodynamic activity of a pure solid are constant ($a = 1$) regardless of how much solid is present.\n2. The equilibrium constant expression is $K_p = \\frac{(P_{\\text{CO}})^2}{P_{\\text{CO}_2}}$, which does not contain any term for solid carbon.\n3. Therefore, adding or removing solid carbon has **no effect** on the equilibrium state (provided some solid carbon remains present)."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The vaporization of water in an open container is a non-equilibrium process. Why does water evaporate completely in an open room?",
+          "image": "",
+          "options": [
+            "Water vapor continuously diffuses into the vast surroundings, preventing the partial pressure of vapor from ever reaching the equilibrium vapor pressure",
+            "The room has zero humidity",
+            "Vaporization is an exothermic process",
+            "Liquid water is thermodynamically unstable"
+          ],
+          "correctOption": 0,
+          "solution": "1. Dynamic equilibrium $\\text{H}_2\\text{O}(l) \\rightleftharpoons \\text{H}_2\\text{O}(g)$ requires a closed vessel where water vapor can accumulate and establish an equilibrium partial pressure ($P_{\\text{H}_2\\text{O}} = P^\\circ$).\n2. In an open container, the evaporated water vapor continuously escapes and diffuses away into the atmosphere.\n3. The actual vapor pressure near the liquid surface remains below the saturation vapor pressure ($Q < K_p$).\n4. By Le Chatelier's principle, the system continually shifts forward to restore equilibrium until all liquid water evaporates."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements correctly expresses Le Chatelier's principle?",
+          "image": "",
+          "options": [
+            "If a system at equilibrium is subjected to a change in concentration, pressure, or temperature, the equilibrium shifts in a direction that tends to undo the effect of the change",
+            "At equilibrium, the rate of forward reaction is greater than the rate of backward reaction",
+            "The equilibrium constant always increases with increasing pressure",
+            "The total number of moles of products must equal the total number of moles of reactants at equilibrium"
+          ],
+          "correctOption": 0,
+          "solution": "Henri Louis Le Chatelier (1884) formulated the principle:\n'If a system in dynamic equilibrium is subjected to any disturbance in its conditions (such as a change in concentration, temperature, or pressure), the system will adjust itself by shifting its equilibrium position in such a way as to counteract or undo the effect of that disturbance.'"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] For the reaction:\n$$\\text{PCl}_5(g) \\rightleftharpoons \\text{PCl}_3(g) + \\text{Cl}_2(g); \\quad \\Delta H = +92.5\\text{ kJ}$$\nWhich of the following conditions will INCREASE the degree of dissociation of $\\text{PCl}_5$?",
+          "image": "",
+          "options": [
+            "Increasing the temperature and lowering the pressure",
+            "Decreasing the temperature and raising the pressure",
+            "Adding chlorine gas",
+            "Adding an inert gas at constant volume"
+          ],
+          "correctOption": 0,
+          "solution": "1. The dissociation of $\\text{PCl}_5$ is endothermic ($\\Delta H > 0$). Increasing the temperature supplies heat, shifting the equilibrium in the forward direction and increasing dissociation.\n2. The reaction involves $1\\text{ mole of gas} \\rightarrow 2\\text{ moles of gas}$ ($\\Delta n_g = +1$). Decreasing the pressure shifts the equilibrium towards more moles of gas (forward direction).\nThus, **increasing temperature and lowering pressure** both increase the degree of dissociation."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In an aqueous solution containing the indicator bromothymol blue ($\\text{HIn}$):\n$$\\text{HIn}(aq) \\text{ (yellow)} \\rightleftharpoons \\text{H}^+(aq) + \\text{In}^-(aq) \\text{ (blue)}$$\nAdding a dilute solution of hydrochloric acid ($\\text{HCl}$) will:",
+          "image": "",
+          "options": [
+            "Turn the solution yellow",
+            "Turn the solution blue",
+            "Turn the solution colorless",
+            "Have no effect on the color"
+          ],
+          "correctOption": 0,
+          "solution": "1. Adding $\\text{HCl}$ supplies $\\text{H}^+$ ions, increasing the concentration of a product ion.\n2. According to Le Chatelier's principle, the excess $\\text{H}^+$ shifts the equilibrium to the left (backward direction).\n3. This converts the blue conjugate base form ($\\text{In}^-$) back into the undissociated acid form ($\\text{HIn}$), turning the solution **yellow**."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For the gas-phase equilibrium:\n$$2\\text{A}(g) + \\text{B}(g) \\rightleftharpoons 3\\text{C}(g) + 2\\text{D}(g); \\quad \\Delta H = -150\\text{ kJ}$$\nTo shift the equilibrium in the forward direction, one should:",
+          "image": "",
+          "options": [
+            "Decrease temperature and decrease pressure",
+            "Increase temperature and increase pressure",
+            "Increase temperature and decrease pressure",
+            "Decrease temperature and increase pressure"
+          ],
+          "correctOption": 0,
+          "solution": "1. Forward reaction is exothermic ($\\Delta H < 0$). Lowering the temperature shifts the equilibrium in the forward direction.\n2. Number of gas moles: Reactants $= 2 + 1 = 3\\text{ moles}$; Products $= 3 + 2 = 5\\text{ moles}$ ($\\Delta n_g = 5 - 3 = +2$).\n3. Because the forward reaction produces more moles of gas, decreasing the pressure shifts the equilibrium forward.\nTherefore, **decreasing temperature and decreasing pressure** favors the forward reaction."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] When solid $\\text{NH}_4\\text{HS}$ is placed in an evacuated flask at a given temperature, it dissociates:\n$$\\text{NH}_4\\text{HS}(s) \\rightleftharpoons \\text{NH}_3(g) + \\text{H}_2\\text{S}(g)$$\nIf some gaseous $\\text{NH}_3$ is introduced into the flask at equilibrium, what will happen to the partial pressure of $\\text{H}_2\\text{S}$?",
+          "image": "",
+          "options": [
+            "The partial pressure of $\\text{H}_2\\text{S}$ will decrease",
+            "The partial pressure of $\\text{H}_2\\text{S}$ will increase",
+            "The partial pressure of $\\text{H}_2\\text{S}$ will remain unchanged",
+            "All solid $\\text{NH}_4\\text{HS}$ will decompose"
+          ],
+          "correctOption": 0,
+          "solution": "1. The equilibrium constant is $K_p = P_{\\text{NH}_3} \\cdot P_{\\text{H}_2\\text{S}} = \\text{constant}$ at constant temperature.\n2. Adding $\\text{NH}_3$ gas increases $P_{\\text{NH}_3}$.\n3. By Le Chatelier's principle, the equilibrium shifts in the backward direction to consume excess $\\text{NH}_3$.\n4. This consumption also consumes $\\text{H}_2\\text{S}$, causing the partial pressure of $\\text{H}_2\\text{S}$ to **decrease** so that the product $P_{\\text{NH}_3} \\cdot P_{\\text{H}_2\\text{S}}$ remains equal to $K_p$."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Deep-sea divers breathe a mixture of helium and oxygen instead of atmospheric air (nitrogen and oxygen) because of Le Chatelier's principle and Henry's law. Why?",
+          "image": "",
+          "options": [
+            "Helium is much less soluble in blood at high hydrostatic pressure than nitrogen, preventing painful decompression sickness ('the bends')",
+            "Helium reacts chemically with hemoglobin to provide more oxygen",
+            "Nitrogen is completely insoluble in human blood",
+            "Helium increases the blood's boiling point"
+          ],
+          "correctOption": 0,
+          "solution": "1. At deep-sea depths, hydrostatic pressure is very high. According to Henry's law and Le Chatelier's principle, high pressure forces more atmospheric nitrogen to dissolve into blood and tissues.\n2. When the diver ascends rapidly, the pressure drops quickly, and dissolved nitrogen comes out of solution as gas bubbles in the bloodstream, blocking capillaries and causing painful, dangerous decompression sickness ('the bends').\n3. Helium has a much smaller polarizability and a much higher Henry's law constant, making it significantly less soluble in blood than nitrogen even at high pressures, preventing bubble formation upon ascent."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the reaction:\n$$\\text{Fe}_2\\text{O}_3(s) + 3\\text{CO}(g) \\rightleftharpoons 2\\text{Fe}(s) + 3\\text{CO}_2(g)$$\nWhat is the effect of increasing the total pressure on the equilibrium composition?",
+          "image": "",
+          "options": [
+            "No effect, because $\\Delta n_g = 0$",
+            "Shifts forward, because more solid is formed",
+            "Shifts backward, because $\\text{CO}$ has greater molar mass",
+            "Causes $\\text{Fe}_2\\text{O}_3$ to sublime"
+          ],
+          "correctOption": 0,
+          "solution": "1. Solids ($\\text{Fe}_2\\text{O}_3$ and $\\text{Fe}$) have negligible compressibility and constant activity ($= 1$).\n2. Count gaseous moles:\n$$\\Delta n_g = n_g(\\text{products}) - n_g(\\text{reactants}) = 3\\text{ (CO}_2) - 3\\text{ (CO)} = 0$$\n3. Because $\\Delta n_g = 0$, changing the pressure changes the concentrations of $\\text{CO}$ and $\\text{CO}_2$ by the exact same ratio.\n4. Therefore, increasing or decreasing pressure has **no effect** on the equilibrium composition."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] When pure solid iodine is placed in a closed, evacuated container at room temperature:\n$$\\text{I}_2(s) \\rightleftharpoons \\text{I}_2(g); \\quad \\Delta H > 0$$\nWhat will be the effect on the concentration of violet $\\text{I}_2(g)$ if the temperature of the container is raised?",
+          "image": "",
+          "options": [
+            "The concentration of $\\text{I}_2(g)$ increases and the violet color deepens",
+            "The concentration of $\\text{I}_2(g)$ decreases and the color fades",
+            "The concentration of $\\text{I}_2(g)$ remains unchanged",
+            "Iodine atoms decompose into ions"
+          ],
+          "correctOption": 0,
+          "solution": "1. Sublimation of a solid into vapor is an endothermic process ($\\Delta_{\\text{sub}}H > 0$).\n2. By Le Chatelier's principle, increasing the temperature supplies heat, which drives the equilibrium forward in the endothermic direction.\n3. As more solid iodine sublimes into gaseous iodine, the concentration of $\\text{I}_2(g)$ increases and the intensity of the violet color deepens."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An equilibrium mixture of:\n$$2\\text{NO}_2(g) \\text{ (brown)} \\rightleftharpoons \\text{N}_2\\text{O}_4(g) \\text{ (colorless)}; \\quad \\Delta H = -57.2\\text{ kJ}$$\nis immersed in an ice-water bath ($0^\\circ\\text{C}$). The visual observation will be:",
+          "image": "",
+          "options": [
+            "The brown color fades and the mixture turns pale/colorless",
+            "The brown color deepens significantly",
+            "The mixture turns bright green",
+            "There is no visual change in color"
+          ],
+          "correctOption": 0,
+          "solution": "1. The forward dimerization reaction to form $\\text{N}_2\\text{O}_4$ is exothermic ($\\Delta H < 0$).\n2. Placing the mixture in an ice-water bath cools the system (lowering temperature).\n3. By Le Chatelier's principle, cooling drives the equilibrium in the forward (exothermic) direction to release heat.\n4. As brown $\\text{NO}_2$ molecules combine into colorless $\\text{N}_2\\text{O}_4$, the brown color **fades and the mixture becomes pale or nearly colorless**."
+        }
+      ]
+    }
+  ]
+}
