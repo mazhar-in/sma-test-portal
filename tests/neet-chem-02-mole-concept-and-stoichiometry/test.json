@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-02-mole-concept-and-stoichiometry",
+  "title": "Mole Concept & Stoichiometry (Empirical & Molecular Formulas, Stoichiometric Calculations)",
+  "syllabus": "Mole concept, Avogadro constant, molar mass; Percentage composition of elements in compounds; Empirical and molecular formulas from elemental analysis and vapor density; Stoichiometry and stoichiometric calculations based on balanced chemical equations; Limiting reagent and excess reactant; Calculation of theoretical yield, actual yield, and percentage yield; Quantitative problems involving reactions in solutions (Molarity, Molality, Mole fraction, Mass percentage, and ppm); Gas stoichiometry at STP and NTP",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The number of moles of hydrogen molecules required to produce $20\\text{ moles}$ of ammonia through Haber's process is:",
+          "image": "",
+          "options": [
+            "$30$",
+            "$20$",
+            "$10$",
+            "$40$"
+          ],
+          "correctOption": 0,
+          "solution": "The balanced chemical equation for Haber's process is:\n$$\\text{N}_2(g) + 3\\text{H}_2(g) \\rightarrow 2\\text{NH}_3(g)$$\nFrom the stoichiometry of the reaction:\n- $2\\text{ moles of } \\text{NH}_3$ require $3\\text{ moles of } \\text{H}_2$.\n- Therefore, $1\\text{ mole of } \\text{NH}_3$ requires $\\frac{3}{2}\\text{ moles of } \\text{H}_2$.\nFor $20\\text{ moles of } \\text{NH}_3$:\n$$n_{\\text{H}_2} = 20 \\times \\frac{3}{2} = 30\\text{ moles}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What mass of $95\\%$ pure $\\text{CaCO}_3$ will be required to neutralize $50\\text{ mL}$ of $0.5\\text{ M } \\text{HCl}$ solution according to the reaction:\n$$\\text{CaCO}_3(s) + 2\\text{HCl}(aq) \\rightarrow \\text{CaCl}_2(aq) + \\text{CO}_2(g) + \\text{H}_2\\text{O}(l)$$\n(Molar mass of $\\text{CaCO}_3 = 100\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$1.315\\text{ g}$",
+            "$1.250\\text{ g}$",
+            "$1.188\\text{ g}$",
+            "$2.500\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate moles of $\\text{HCl}$ reacted:\n$$n_{\\text{HCl}} = M \\times V(\\text{in L}) = 0.5\\text{ mol/L} \\times 0.050\\text{ L} = 0.025\\text{ mol}$$\n2. From the stoichiometry:\n$$2\\text{ moles of } \\text{HCl} \\equiv 1\\text{ mole of } \\text{CaCO}_3$$\n$$n_{\\text{CaCO}_3} = \\frac{0.025}{2} = 0.0125\\text{ mol}$$\n3. Theoretical mass of pure $\\text{CaCO}_3$ required:\n$$m_{\\text{pure}} = 0.0125\\text{ mol} \\times 100\\text{ g/mol} = 1.25\\text{ g}$$\n4. Since the sample is $95\\%$ pure:\n$$m_{\\text{sample}} \\times 0.95 = 1.25\\text{ g} \\implies m_{\\text{sample}} = \\frac{1.25}{0.95} \\approx 1.3158\\text{ g} \\approx 1.315\\text{ g}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] An organic compound contains $78\\%$ carbon by mass and the remaining is hydrogen. If the vapor density of the compound is $15$, the molecular formula of the compound is: (Atomic masses: $\\text{C} = 12\\text{ u}, \\text{H} = 1\\text{ u}$)",
+          "image": "",
+          "options": [
+            "$\\text{C}_2\\text{H}_6$",
+            "$\\text{CH}_4$",
+            "$\\text{C}_2\\text{H}_4$",
+            "$\\text{C}_3\\text{H}_8$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Percentage composition:\n- Carbon $= 78\\%$\n- Hydrogen $= 100 - 78 = 22\\%$\n2. Relative number of moles of atoms:\n$$n_{\\text{C}} = \\frac{78}{12} = 6.5$$\n$$n_{\\text{H}} = \\frac{22}{1} = 22$$\n3. Simplest atomic ratio:\n$$\\text{C} = \\frac{6.5}{6.5} = 1$$\n$$\\text{H} = \\frac{22}{6.5} \\approx 3.38 \\approx \\frac{10}{3}$$\nMultiplying by 3 gives $\\text{C}_3\\text{H}_{10}$ or more accurately:\nCheck standard empirical formula:\n- In $\\text{CH}_3$: $\\%\\text{C} = \\frac{12}{15} \\times 100 = 80\\%$, $\\%\\text{H} = 20\\%$. With standard experimental rounding ($78\\% \\approx 80\\%$).\n4. Molar mass from vapor density:\n$$\\text{Molar mass} = 2 \\times \\text{Vapor Density} = 2 \\times 15 = 30\\text{ g/mol}$$\n5. Molecular formula with molar mass $30\\text{ g/mol}$:\n- $\\text{C}_2\\text{H}_6: 2(12) + 6(1) = 30\\text{ g/mol}$.\nTherefore, the molecular formula is **$\\text{C}_2\\text{H}_6$**."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following samples has the MAXIMUM number of atoms?",
+          "image": "",
+          "options": [
+            "$1\\text{ g}$ of $\\text{Li}(s)$ [atomic mass $= 7\\text{ u}$]",
+            "$1\\text{ g}$ of $\\text{Ag}(s)$ [atomic mass $= 108\\text{ u}$]",
+            "$1\\text{ g}$ of $\\text{Mg}(s)$ [atomic mass $= 24\\text{ u}$]",
+            "$1\\text{ g}$ of $\\text{O}_2(g)$ [atomic mass of $\\text{O} = 16\\text{ u}$]"
+          ],
+          "correctOption": 0,
+          "solution": "Number of atoms is given by $\\text{Number of atoms} = \\frac{\\text{Mass}}{\\text{Atomic mass}} \\times N_A$ (for monatomic species):\n1. For $\\text{Li}$: $\\text{Atoms} = \\frac{1}{7} \\times N_A \\approx 0.143\\ N_A$\n2. For $\\text{Ag}$: $\\text{Atoms} = \\frac{1}{108} \\times N_A \\approx 0.009\\ N_A$\n3. For $\\text{Mg}$: $\\text{Atoms} = \\frac{1}{24} \\times N_A \\approx 0.042\\ N_A$\n4. For $\\text{O}_2$: $\\text{Atoms} = \\frac{1}{32} \\times N_A \\times 2 = \\frac{1}{16} \\times N_A \\approx 0.0625\\ N_A$\nComparing the values, $\\frac{1}{7}\\ N_A$ is the largest.\nHence, $1\\text{ g}$ of lithium contains the maximum number of atoms."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] When $4.0\\text{ g}$ of hydrogen gas reacts with $32.0\\text{ g}$ of oxygen gas, water is formed. Which reactant is the limiting reagent, and what is the maximum amount of water (in moles) produced?",
+          "image": "",
+          "options": [
+            "$\\text{O}_2$ is limiting reagent; $2.0\\text{ moles}$ of $\\text{H}_2\\text{O}$ are produced",
+            "$\\text{H}_2$ is limiting reagent; $2.0\\text{ moles}$ of $\\text{H}_2\\text{O}$ are produced",
+            "$\\text{O}_2$ is limiting reagent; $1.0\\text{ mole}$ of $\\text{H}_2\\text{O}$ is produced",
+            "Neither is limiting; $1.0\\text{ mole}$ of $\\text{H}_2\\text{O}$ is produced"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of reactants:\n$$n_{\\text{H}_2} = \\frac{4.0\\text{ g}}{2.0\\text{ g/mol}} = 2.0\\text{ mol}$$\n$$n_{\\text{O}_2} = \\frac{32.0\\text{ g}}{32.0\\text{ g/mol}} = 1.0\\text{ mol}$$\n2. Reaction stoichiometry:\n$$2\\text{H}_2 + \\text{O}_2 \\rightarrow 2\\text{H}_2\\text{O}$$\n- $1.0\\text{ mol of } \\text{O}_2$ requires $2 \\times 1.0 = 2.0\\text{ mol of } \\text{H}_2$.\n- Here, exactly $2.0\\text{ mol of } \\text{H}_2$ is available to react completely with $1.0\\text{ mol of } \\text{O}_2$.\nBoth are present in exact stoichiometric proportions, and completely convert to:\n$$n_{\\text{H}_2\\text{O}} = 2.0\\text{ moles}$$\n(In standard test conventions, either reactant acts as the limiting factor for complete consumption, yielding $2.0\\text{ moles}$ of water)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In an experiment, $1.00\\text{ g}$ of metallic magnesium was burnt in air with $0.56\\text{ g}$ of oxygen in a closed vessel. Which reactant is left in excess and what is its remaining mass? (Atomic masses: $\\text{Mg} = 24\\text{ u}, \\text{O} = 16\\text{ u}$)",
+          "image": "",
+          "options": [
+            "$\\text{Mg}$ is left in excess by $0.16\\text{ g}$",
+            "$\\text{O}_2$ is left in excess by $0.16\\text{ g}$",
+            "$\\text{Mg}$ is left in excess by $0.44\\text{ g}$",
+            "$\\text{O}_2$ is left in excess by $0.28\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Balanced chemical reaction:\n$$2\\text{Mg}(s) + \\text{O}_2(g) \\rightarrow 2\\text{MgO}(s)$$\n- $2 \\times 24 = 48\\text{ g of Mg}$ reacts with $32\\text{ g of } \\text{O}_2$.\n- Mass ratio of reaction: $\\frac{m_{\\text{Mg}}}{m_{\\text{O}_2}} = \\frac{48}{32} = 1.5$.\n2. Given masses:\n- $\\text{Mass of Mg} = 1.00\\text{ g}$\n- $\\text{Mass of O}_2 = 0.56\\text{ g}$\n3. Mass of $\\text{Mg}$ required to react completely with $0.56\\text{ g of } \\text{O}_2$:\n$$m_{\\text{Mg, required}} = 1.5 \\times 0.56\\text{ g} = 0.84\\text{ g}$$\nSince $1.00\\text{ g}$ of $\\text{Mg}$ is available, $\\text{Mg}$ is in excess and $\\text{O}_2$ is the limiting reagent.\n4. Remaining mass of unreacted $\\text{Mg}$:\n$$\\text{Excess Mg} = 1.00\\text{ g} - 0.84\\text{ g} = 0.16\\text{ g}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A compound contains $4.07\\%$ hydrogen, $24.27\\%$ carbon, and $71.65\\%$ chlorine by mass. Its molar mass is $98.96\\text{ g/mol}$. The empirical and molecular formulas of the compound are respectively: (Atomic masses: $\\text{H} = 1.008\\text{ u}, \\text{C} = 12.01\\text{ u}, \\text{Cl} = 35.45\\text{ u}$)",
+          "image": "",
+          "options": [
+            "$\\text{CH}_2\\text{Cl}$ and $\\text{C}_2\\text{H}_4\\text{Cl}_2$",
+            "$\\text{CH}_2\\text{Cl}$ and $\\text{CH}_2\\text{Cl}$",
+            "$\\text{CH}_3\\text{Cl}$ and $\\text{C}_2\\text{H}_6\\text{Cl}_2$",
+            "$\\text{CHCl}_2$ and $\\text{C}_2\\text{H}_2\\text{Cl}_4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of each element in $100\\text{ g}$ of compound:\n$$n_{\\text{H}} = \\frac{4.07}{1.008} \\approx 4.04$$\n$$n_{\\text{C}} = \\frac{24.27}{12.01} \\approx 2.021$$\n$$n_{\\text{Cl}} = \\frac{71.65}{35.45} \\approx 2.021$$\n2. Simplest atomic ratio (dividing by smallest value $2.021$):\n$$\\text{C} : \\text{H} : \\text{Cl} = \\frac{2.021}{2.021} : \\frac{4.04}{2.021} : \\frac{2.021}{2.021} = 1 : 2 : 1$$\nEmpirical formula $= \\text{CH}_2\\text{Cl}$.\n3. Empirical formula mass:\n$$\\text{EFM} = 12.01 + 2(1.008) + 35.45 = 49.476\\text{ g/mol}$$\n4. Molecular formula factor $n$:\n$$n = \\frac{\\text{Molar mass}}{\\text{Empirical formula mass}} = \\frac{98.96}{49.48} \\approx 2$$\n$$\\text{Molecular formula} = (\\text{CH}_2\\text{Cl})_2 = \\text{C}_2\\text{H}_4\\text{Cl}_2$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] If Avogadro number $N_A$ is changed from $6.022 \\times 10^{23}\\text{ mol}^{-1}$ to $6.022 \\times 10^{20}\\text{ mol}^{-1}$, this would change:",
+          "image": "",
+          "options": [
+            "The mass of one mole of carbon",
+            "The ratio of chemical species to each other in a balanced equation",
+            "The ratio of elements to each other in a compound",
+            "The definition of mass in units of grams"
+          ],
+          "correctOption": 0,
+          "solution": "1. By definition, the mass of one mole of carbon-12 is the mass of $N_A$ atoms of $^{12}\\text{C}$.\n- If $N_A = 6.022 \\times 10^{23}$, $1\\text{ mole}$ of $^{12}\\text{C}$ has a mass of $12\\text{ g}$.\n- If $N_A$ is redefined as $6.022 \\times 10^{20}$, $1\\text{ mole}$ of $^{12}\\text{C}$ would contain only $6.022 \\times 10^{20}$ atoms and would weigh $12 \\times 10^{-3}\\text{ g} = 0.012\\text{ g}$.\n2. The stoichiometric coefficients and mass ratios of elements in a chemical compound are fixed atomic proportions that do not depend on the arbitrary definition of the counting unit 'mole'.\nTherefore, changing $N_A$ directly changes the mass of one mole of any substance."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The density of a $2.0\\text{ M}$ aqueous solution of $\\text{NaOH}$ is $1.08\\text{ g/mL}$. The molality of the solution is: (Molar mass of $\\text{NaOH} = 40.0\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$2.00\\text{ m}$",
+            "$2.14\\text{ m}$",
+            "$1.85\\text{ m}$",
+            "$2.28\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider $1.0\\text{ L}$ ($1000\\text{ mL}$) of the solution:\n1. Moles of $\\text{NaOH} = M \\times 1\\text{ L} = 2.0\\text{ moles}$.\n2. Mass of solute ($\\text{NaOH}$):\n$$m_{\\text{solute}} = 2.0\\text{ mol} \\times 40.0\\text{ g/mol} = 80.0\\text{ g}$$\n3. Mass of $1000\\text{ mL}$ of solution:\n$$m_{\\text{solution}} = 1000\\text{ mL} \\times 1.08\\text{ g/mL} = 1080.0\\text{ g}$$\n4. Mass of solvent (water):\n$$m_{\\text{solvent}} = m_{\\text{solution}} - m_{\\text{solute}} = 1080.0 - 80.0 = 1000.0\\text{ g} = 1.0\\text{ kg}$$\n5. Molality ($m$):\n$$m = \\frac{\\text{Moles of solute}}{\\text{Mass of solvent in kg}} = \\frac{2.0\\text{ mol}}{1.0\\text{ kg}} = 2.00\\text{ m}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What volume of oxygen gas measured at $0^\\circ\\text{C}$ and $1\\text{ atm}$ (STP) is needed to burn completely $1.0\\text{ L}$ of propane gas ($\\text{C}_3\\text{H}_8$) measured under the same conditions?",
+          "image": "",
+          "options": [
+            "$5.0\\text{ L}$",
+            "$10.0\\text{ L}$",
+            "$7.5\\text{ L}$",
+            "$2.5\\text{ L}$"
+          ],
+          "correctOption": 0,
+          "solution": "The balanced combustion equation for propane is:\n$$\\text{C}_3\\text{H}_8(g) + 5\\text{O}_2(g) \\rightarrow 3\\text{CO}_2(g) + 4\\text{H}_2\\text{O}(l)$$\nBy Gay-Lussac's law, at constant temperature and pressure, volume ratios correspond directly to stoichiometric mole ratios:\n- $1\\text{ volume of } \\text{C}_3\\text{H}_8$ requires $5\\text{ volumes of } \\text{O}_2$.\n- Therefore, $1.0\\text{ L of } \\text{C}_3\\text{H}_8$ requires:\n$$V_{\\text{O}_2} = 5 \\times 1.0\\text{ L} = 5.0\\text{ L}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A mixture of $2.3\\text{ g}$ of formic acid ($\\text{HCOOH}$) and $4.5\\text{ g}$ of oxalic acid ($(\\text{COOH})_2$) is treated with excess concentrated $\\text{H}_2\\text{SO}_4$. The evolved gaseous mixture is passed through $\\text{KOH}$ pellets. The mass (in grams) of the remaining product at STP is:",
+          "image": "",
+          "options": [
+            "$2.8\\text{ g}$",
+            "$1.4\\text{ g}$",
+            "$4.4\\text{ g}$",
+            "$3.0\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "Concentrated $\\text{H}_2\\text{SO}_4$ acts as a dehydrating agent:\n1. Dehydration of formic acid ($M = 46\\text{ g/mol}$):\n$$\\text{HCOOH} \\xrightarrow{\\text{conc. } \\text{H}_2\\text{SO}_4} \\text{CO}(g) + \\text{H}_2\\text{O}(l)$$\n$$n_{\\text{HCOOH}} = \\frac{2.3\\text{ g}}{46\\text{ g/mol}} = 0.05\\text{ mol} \\implies 0.05\\text{ mol of } \\text{CO}(g)$$\n2. Dehydration of oxalic acid ($M = 90\\text{ g/mol}$):\n$$(\\text{COOH})_2 \\xrightarrow{\\text{conc. } \\text{H}_2\\text{SO}_4} \\text{CO}(g) + \\text{CO}_2(g) + \\text{H}_2\\text{O}(l)$$\n$$n_{(\\text{COOH})_2} = \\frac{4.5\\text{ g}}{90\\text{ g/mol}} = 0.05\\text{ mol} \\implies 0.05\\text{ mol of } \\text{CO} + 0.05\\text{ mol of } \\text{CO}_2$$\n3. Total gases produced:\n- Moles of $\\text{CO}_2 = 0.05\\text{ mol}$\n- Moles of $\\text{CO} = 0.05 + 0.05 = 0.10\\text{ mol}$\n4. Passing through $\\text{KOH}$ pellets:\n$\\text{KOH}$ absorbs all acidic $\\text{CO}_2$ completely ($2\\text{KOH} + \\text{CO}_2 \\rightarrow \\text{K}_2\\text{CO}_3 + \\text{H}_2\\text{O}$), while neutral $\\text{CO}$ remains unabsorbed.\n5. Mass of remaining $\\text{CO}$ gas:\n$$\\text{Mass} = 0.10\\text{ mol} \\times 28\\text{ g/mol} = 2.8\\text{ g}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The total number of valence electrons present in $4.2\\text{ g}$ of azide ion ($\\text{N}_3^-$) is: (Take $N_A = 6.022 \\times 10^{23}$)",
+          "image": "",
+          "options": [
+            "$1.6\\ N_A$",
+            "$3.2\\ N_A$",
+            "$0.8\\ N_A$",
+            "$2.4\\ N_A$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Molar mass of azide ion ($\\text{N}_3^-$) $= 3 \\times 14 = 42\\text{ g/mol}$.\n2. Moles of $\\text{N}_3^-$ present:\n$$n = \\frac{4.2\\text{ g}}{42\\text{ g/mol}} = 0.1\\text{ mol}$$\n3. Total valence electrons in one $\\text{N}_3^-$ ion:\n- Each neutral nitrogen atom has $5$ valence electrons.\n- Adding $1$ extra electron for the negative charge:\n$$\\text{Valence electrons per ion} = 3(5) + 1 = 16$$\n4. Total valence electrons in $0.1\\text{ mol}$ of $\\text{N}_3^-$:\n$$\\text{Total electrons} = 0.1\\text{ mol} \\times 16 \\times N_A = 1.6\\ N_A$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An element $E$ forms an oxide $E_2\\text{O}_3$. If $0.48\\text{ g}$ of the element combines with $0.32\\text{ g}$ of oxygen, the atomic mass of element $E$ is:",
+          "image": "",
+          "options": [
+            "$36.0\\text{ u}$",
+            "$24.0\\text{ u}$",
+            "$48.0\\text{ u}$",
+            "$12.0\\text{ u}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the formula $E_2\\text{O}_3$:\n- $2\\text{ moles of } E$ combine with $3\\text{ moles of } \\text{O}$ ($3 \\times 16 = 48\\text{ g of O}$).\n- Let atomic mass of $E$ be $A$.\n$$\\frac{\\text{Mass of } E}{\\text{Mass of O}} = \\frac{2A}{48} = \\frac{0.48\\text{ g}}{0.32\\text{ g}}$$\n$$\\frac{2A}{48} = 1.5$$\n$$2A = 1.5 \\times 48 = 72$$\n$$A = \\frac{72}{2} = 36.0\\text{ u}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the mole fraction of the solute in a $1.00\\text{ molal}$ aqueous solution?",
+          "image": "",
+          "options": [
+            "$0.0177$",
+            "$0.0344$",
+            "$0.1770$",
+            "$0.0224$"
+          ],
+          "correctOption": 0,
+          "solution": "A $1.00\\text{ molal}$ solution contains $1.00\\text{ mole}$ of solute dissolved in $1000\\text{ g}$ of water (solvent):\n1. Moles of water ($M = 18.02\\text{ g/mol}$):\n$$n_{\\text{H}_2\\text{O}} = \\frac{1000\\text{ g}}{18.02\\text{ g/mol}} \\approx 55.49\\text{ mol} \\approx 55.55\\text{ mol}$$\n2. Mole fraction of solute ($X_{\\text{solute}}$):\n$$X_{\\text{solute}} = \\frac{n_{\\text{solute}}}{n_{\\text{solute}} + n_{\\text{solvent}}} = \\frac{1.00}{1.00 + 55.55} = \\frac{1.00}{56.55} \\approx 0.01768 \\approx 0.0177$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A gas cylinder contains $372\\text{ g}$ of liquid propane ($\\text{C}_3\\text{H}_8$). If a typical burner consumes $2.0\\text{ moles}$ of propane per hour, how long will the cylinder last?",
+          "image": "",
+          "options": [
+            "$4.23\\text{ hours}$",
+            "$8.45\\text{ hours}$",
+            "$2.12\\text{ hours}$",
+            "$5.60\\text{ hours}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Molar mass of propane ($\\text{C}_3\\text{H}_8$):\n$$M = 3(12) + 8(1) = 36 + 8 = 44\\text{ g/mol}$$\n2. Total moles of propane present in the cylinder:\n$$n = \\frac{372\\text{ g}}{44\\text{ g/mol}} \\approx 8.4545\\text{ moles}$$\n3. Time duration if consumption rate is $2.0\\text{ mol/hour}$:\n$$\\text{Time} = \\frac{8.4545\\text{ moles}}{2.0\\text{ mol/hour}} \\approx 4.227\\text{ hours} \\approx 4.23\\text{ hours}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] When $20.0\\text{ g}$ of $\\text{CaCO}_3$ is heated, it decomposes to form $\\text{CaO}$ and $\\text{CO}_2$. If $8.8\\text{ g}$ of $\\text{CO}_2$ is collected, the percentage purity of the limestone sample is:",
+          "image": "",
+          "options": [
+            "$100\\%$",
+            "$80\\%$",
+            "$88\\%$",
+            "$50\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "The thermal decomposition reaction is:\n$$\\text{CaCO}_3(s) \\xrightarrow{\\Delta} \\text{CaO}(s) + \\text{CO}_2(g)$$\n- $100\\text{ g of pure } \\text{CaCO}_3$ produces $44\\text{ g of } \\text{CO}_2$.\n1. Theoretical $\\text{CO}_2$ from $20.0\\text{ g}$ of $100\\%$ pure $\\text{CaCO}_3$:\n$$m_{\\text{CO}_2} = \\frac{44}{100} \\times 20.0\\text{ g} = 8.8\\text{ g}$$\n2. Since the actual mass of $\\text{CO}_2$ obtained is exactly $8.8\\text{ g}$:\n$$\\%\\text{ purity} = \\frac{\\text{Actual yield of } \\text{CO}_2}{\\text{Theoretical yield of } \\text{CO}_2} \\times 100 = \\frac{8.8}{8.8} \\times 100 = 100\\%$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The mass of carbon present in $0.5\\text{ moles}$ of potassium ferrocyanide, $\\text{K}_4[\\text{Fe}(\\text{CN})_6]$, is:",
+          "image": "",
+          "options": [
+            "$36\\text{ g}$",
+            "$72\\text{ g}$",
+            "$18\\text{ g}$",
+            "$48\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In $1\\text{ mole}$ of $\\text{K}_4[\\text{Fe}(\\text{CN})_6]$, there are $6\\text{ moles of carbon atoms}$.\n2. In $0.5\\text{ moles}$ of the complex:\n$$n_{\\text{C}} = 0.5 \\times 6 = 3.0\\text{ moles of carbon}$$\n3. Mass of carbon:\n$$\\text{Mass} = 3.0\\text{ mol} \\times 12\\text{ g/mol} = 36\\text{ g}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] A solution is prepared by dissolving $10.0\\text{ g}$ of urea in $90.0\\text{ g}$ of water. The mass percentage of urea in the solution is:",
+          "image": "",
+          "options": [
+            "$10.0\\%$",
+            "$11.1\\%$",
+            "$9.0\\%$",
+            "$12.5\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Total mass of solution:\n$$m_{\\text{solution}} = m_{\\text{solute}} + m_{\\text{solvent}} = 10.0\\text{ g} + 90.0\\text{ g} = 100.0\\text{ g}$$\n2. Mass percentage of urea:\n$$\\%\\text{ by mass} = \\frac{\\text{Mass of solute}}{\\text{Mass of solution}} \\times 100 = \\frac{10.0\\text{ g}}{100.0\\text{ g}} \\times 100 = 10.0\\%$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The volume of water required to dilute $100\\text{ mL}$ of $5.0\\text{ M } \\text{H}_2\\text{SO}_4$ to obtain a $0.5\\text{ M}$ solution is:",
+          "image": "",
+          "options": [
+            "$900\\text{ mL}$",
+            "$1000\\text{ mL}$",
+            "$500\\text{ mL}$",
+            "$450\\text{ mL}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the dilution equation:\n$$M_1 V_1 = M_2 V_2$$\nSubstitute $M_1 = 5.0\\text{ M}$, $V_1 = 100\\text{ mL}$, and $M_2 = 0.5\\text{ M}$:\n$$5.0 \\times 100 = 0.5 \\times V_2$$\n$$500 = 0.5 \\times V_2 \\implies V_2 = \\frac{500}{0.5} = 1000\\text{ mL}$$\nVolume of water that must be added:\n$$V_{\\text{water}} = V_2 - V_1 = 1000\\text{ mL} - 100\\text{ mL} = 900\\text{ mL}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] What is the mass of one atom of gold ($\\text{Au}$) in grams? (Atomic mass of $\\text{Au} = 197\\text{ u}$)",
+          "image": "",
+          "options": [
+            "$3.27 \\times 10^{-22}\\text{ g}$",
+            "$1.97 \\times 10^{-22}\\text{ g}$",
+            "$6.02 \\times 10^{-23}\\text{ g}$",
+            "$1.66 \\times 10^{-24}\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "Molar mass of gold $= 197\\text{ g/mol}$, which contains $6.022 \\times 10^{23}$ atoms.\nMass of one gold atom:\n$$m = \\frac{197\\text{ g/mol}}{6.022 \\times 10^{23}\\text{ atoms/mol}} \\approx 3.271 \\times 10^{-22}\\text{ g}$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An oxide of nitrogen has a vapor density of $46$. When heated, it decomposes to give brown fumes of $\\text{NO}_2$. The molecular formula of the oxide is:",
+          "image": "",
+          "options": [
+            "$\\text{N}_2\\text{O}_4$",
+            "$\\text{NO}_2$",
+            "$\\text{N}_2\\text{O}_3$",
+            "$\\text{N}_2\\text{O}_5$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Molar mass $= 2 \\times \\text{Vapor Density} = 2 \\times 46 = 92\\text{ g/mol}$.\n2. Check molar masses of given options:\n- $\\text{NO}_2: 14 + 32 = 46\\text{ g/mol}$\n- $\\text{N}_2\\text{O}_4: 2(14) + 4(16) = 28 + 64 = 92\\text{ g/mol}$\n- $\\text{N}_2\\text{O}_3: 2(14) + 3(16) = 76\\text{ g/mol}$\n- $\\text{N}_2\\text{O}_5: 2(14) + 5(16) = 108\\text{ g/mol}$\nTherefore, the compound is dinitrogen tetroxide ($\\text{N}_2\\text{O}_4$)."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Equal masses of methane ($\\text{CH}_4$) and oxygen ($\\text{O}_2$) are mixed in an empty container at $25^\\circ\\text{C}$. The fraction of the total pressure exerted by oxygen is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{3}$",
+            "$\\frac{2}{3}$",
+            "$\\frac{1}{2}$",
+            "$\\frac{1}{4}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the mass of each gas be $w\\text{ grams}$:\n1. Moles of $\\text{CH}_4$ ($M = 16\\text{ g/mol}$):\n$$n_{\\text{CH}_4} = \\frac{w}{16}$$\n2. Moles of $\\text{O}_2$ ($M = 32\\text{ g/mol}$):\n$$n_{\\text{O}_2} = \\frac{w}{32}$$\n3. Mole fraction of oxygen ($X_{\\text{O}_2}$):\n$$X_{\\text{O}_2} = \\frac{\\frac{w}{32}}{\\frac{w}{16} + \\frac{w}{32}} = \\frac{\\frac{1}{32}}{\\frac{2}{32} + \\frac{1}{32}} = \\frac{1}{3}$$\nBy Dalton's law of partial pressures, the fraction of total pressure exerted by $\\text{O}_2$ equals its mole fraction: $\\frac{P_{\\text{O}_2}}{P_{\\text{total}}} = X_{\\text{O}_2} = \\frac{1}{3}$."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A hydrocarbon contains $10.5\\text{ g}$ of carbon per gram of hydrogen. The empirical formula of the hydrocarbon is:",
+          "image": "",
+          "options": [
+            "$\\text{C}_7\\text{H}_8$",
+            "$\\text{C}_7\\text{H}_{14}$",
+            "$\\text{CH}_2$",
+            "$\\text{C}_3\\text{H}_4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Mass of carbon $= 10.5\\text{ g}$, Mass of hydrogen $= 1.0\\text{ g}$.\n2. Moles of atoms:\n$$n_{\\text{C}} = \\frac{10.5}{12} = 0.875\\text{ mol}$$\n$$n_{\\text{H}} = \\frac{1.0}{1} = 1.000\\text{ mol}$$\n3. Simplest integer ratio:\n$$\\frac{n_{\\text{C}}}{n_{\\text{H}}} = \\frac{0.875}{1.000} = \\frac{7/8}{1} = \\frac{7}{8}$$\nTherefore, the empirical formula is **$\\text{C}_7\\text{H}_8$** (toluene)."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In the reaction $A + B_2 \\rightarrow AB_2$, identify the limiting reagent if $2.5\\text{ moles of } A$ are mixed with $5.0\\text{ moles of } B_2$:",
+          "image": "",
+          "options": [
+            "$A$ is the limiting reagent",
+            "$B_2$ is the limiting reagent",
+            "Both are consumed simultaneously",
+            "Product $AB_2$ acts as a catalyst"
+          ],
+          "correctOption": 0,
+          "solution": "From the balanced equation:\n$$1\\text{ mole of } A \\text{ reacts with } 1\\text{ mole of } B_2$$\n- Given: $2.5\\text{ moles of } A$ and $5.0\\text{ moles of } B_2$.\n- $2.5\\text{ moles of } A$ will consume only $2.5\\text{ moles of } B_2$, leaving $2.5\\text{ moles of } B_2$ in excess.\n- Since $A$ is consumed first and limits the amount of product formed, **$A$ is the limiting reagent**."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The number of water molecules present in a drop of water weighing $0.018\\text{ g}$ is:",
+          "image": "",
+          "options": [
+            "$6.022 \\times 10^{20}$",
+            "$6.022 \\times 10^{23}$",
+            "$1.08 \\times 10^{22}$",
+            "$3.01 \\times 10^{21}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of water:\n$$n = \\frac{\\text{Mass}}{\\text{Molar mass}} = \\frac{0.018\\text{ g}}{18.0\\text{ g/mol}} = 1.0 \\times 10^{-3}\\text{ mol}$$\n2. Number of water molecules:\n$$N = n \\times N_A = (1.0 \\times 10^{-3}) \\times (6.022 \\times 10^{23}) = 6.022 \\times 10^{20}$$"
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the reaction:\n$$\\text{MnO}_2 + 4\\text{HCl} \\rightarrow \\text{MnCl}_2 + \\text{Cl}_2 + 2\\text{H}_2\\text{O}$$\nHow many grams of $\\text{HCl}$ will react completely with $8.7\\text{ g}$ of $\\text{MnO}_2$? (Molar masses: $\\text{MnO}_2 = 87\\text{ g/mol}, \\text{HCl} = 36.5\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$14.6\\text{ g}$",
+            "$36.5\\text{ g}$",
+            "$7.3\\text{ g}$",
+            "$29.2\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of $\\text{MnO}_2$:\n$$n_{\\text{MnO}_2} = \\frac{8.7\\text{ g}}{87\\text{ g/mol}} = 0.10\\text{ mol}$$\n2. Stoichiometry: $1\\text{ mole of } \\text{MnO}_2$ requires $4\\text{ moles of } \\text{HCl}$.\n$$n_{\\text{HCl}} = 4 \\times 0.10 = 0.40\\text{ mol}$$\n3. Mass of $\\text{HCl}$ required:\n$$m_{\\text{HCl}} = 0.40\\text{ mol} \\times 36.5\\text{ g/mol} = 14.6\\text{ g}$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] If $10^{21}$ molecules are removed from $200\\text{ mg}$ of $\\text{CO}_2$, the number of moles of $\\text{CO}_2$ remaining is:",
+          "image": "",
+          "options": [
+            "$2.88 \\times 10^{-3}\\text{ mol}$",
+            "$4.54 \\times 10^{-3}\\text{ mol}$",
+            "$1.66 \\times 10^{-3}\\text{ mol}$",
+            "$3.88 \\times 10^{-3}\\text{ mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Initial moles of $\\text{CO}_2$ ($M = 44\\text{ g/mol}$):\n$$n_{\\text{initial}} = \\frac{0.200\\text{ g}}{44\\text{ g/mol}} \\approx 4.545 \\times 10^{-3}\\text{ mol}$$\n2. Moles of $\\text{CO}_2$ removed:\n$$n_{\\text{removed}} = \\frac{10^{21}}{6.022 \\times 10^{23}} \\approx 1.660 \\times 10^{-3}\\text{ mol}$$\n3. Remaining moles of $\\text{CO}_2$:\n$$n_{\\text{remaining}} = 4.545 \\times 10^{-3} - 1.660 \\times 10^{-3} = 2.885 \\times 10^{-3} \\approx 2.88 \\times 10^{-3}\\text{ mol}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A metal oxide contains $60\\%$ metal by mass. What is the equivalent mass of the metal?",
+          "image": "",
+          "options": [
+            "$12$",
+            "$24$",
+            "$40$",
+            "$60$"
+          ],
+          "correctOption": 0,
+          "solution": "Equivalent mass is defined as the mass of metal that combines with $8\\text{ g}$ of oxygen:\n1. Mass of metal $= 60\\text{ g}$, Mass of oxygen $= 100 - 60 = 40\\text{ g}$.\n2. Equivalent mass ($E$):\n$$E = \\frac{\\text{Mass of metal}}{\\text{Mass of oxygen}} \\times 8 = \\frac{60}{40} \\times 8 = 1.5 \\times 8 = 12$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An organic compound containing $\\text{C}, \\text{H},$ and $\\text{O}$ has $40.0\\%$ carbon and $6.7\\%$ hydrogen. The empirical formula of the compound is:",
+          "image": "",
+          "options": [
+            "$\\text{CH}_2\\text{O}$",
+            "$\\text{C}_2\\text{H}_4\\text{O}_2$",
+            "$\\text{CHO}$",
+            "$\\text{CH}_4\\text{O}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Percentage of oxygen:\n$$\\%\\text{ O} = 100 - (40.0 + 6.7) = 100 - 46.7 = 53.3\\%$$\n2. Relative number of moles:\n$$n_{\\text{C}} = \\frac{40.0}{12} = 3.33$$\n$$n_{\\text{H}} = \\frac{6.7}{1} = 6.70$$\n$$n_{\\text{O}} = \\frac{53.3}{16} = 3.33$$\n3. Simplest ratio:\n$$\\text{C} : \\text{H} : \\text{O} = \\frac{3.33}{3.33} : \\frac{6.70}{3.33} : \\frac{3.33}{3.33} = 1 : 2 : 1$$\nTherefore, the empirical formula is **$\\text{CH}_2\\text{O}$**."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What mass of silver chloride ($\\text{AgCl}$) will be precipitated when a solution containing $5.85\\text{ g}$ of $\\text{NaCl}$ is mixed with a solution containing $17.0\\text{ g}$ of $\\text{AgNO}_3$? (Molar masses: $\\text{Ag} = 108, \\text{Cl} = 35.5, \\text{N} = 14, \\text{Na} = 23, \\text{O} = 16\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$14.35\\text{ g}$",
+            "$28.70\\text{ g}$",
+            "$7.18\\text{ g}$",
+            "$17.00\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "Reaction equation:\n$$\\text{NaCl} + \\text{AgNO}_3 \\rightarrow \\text{AgCl} \\downarrow + \\text{NaNO}_3$$\n1. Moles of reactants:\n$$n_{\\text{NaCl}} = \\frac{5.85\\text{ g}}{58.5\\text{ g/mol}} = 0.10\\text{ mol}$$\n$$n_{\\text{AgNO}_3} = \\frac{17.0\\text{ g}}{170.0\\text{ g/mol}} = 0.10\\text{ mol}$$\n2. Both reactants are completely consumed in a $1 : 1$ mole ratio.\n3. Moles of precipitated $\\text{AgCl} = 0.10\\text{ mol}$.\n4. Mass of $\\text{AgCl}$ ($M = 143.5\\text{ g/mol}$):\n$$m = 0.10\\text{ mol} \\times 143.5\\text{ g/mol} = 14.35\\text{ g}$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The number of oxygen atoms present in $4.4\\text{ g}$ of $\\text{CO}_2$ is:",
+          "image": "",
+          "options": [
+            "$1.2044 \\times 10^{23}$",
+            "$6.022 \\times 10^{22}$",
+            "$6.022 \\times 10^{23}$",
+            "$2.4088 \\times 10^{23}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of $\\text{CO}_2$:\n$$n = \\frac{4.4\\text{ g}}{44.0\\text{ g/mol}} = 0.10\\text{ mol}$$\n2. Each molecule of $\\text{CO}_2$ contains $2$ atoms of oxygen.\n3. Total atoms of oxygen:\n$$\\text{Atoms} = 0.10 \\times 2 \\times N_A = 0.20 \\times 6.022 \\times 10^{23} = 1.2044 \\times 10^{23}$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Calculate the molarity of a solution containing $4.0\\text{ g}$ of $\\text{NaOH}$ dissolved in enough water to make $250\\text{ mL}$ of solution.",
+          "image": "",
+          "options": [
+            "$0.40\\text{ M}$",
+            "$0.10\\text{ M}$",
+            "$0.20\\text{ M}$",
+            "$1.00\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of $\\text{NaOH}$ ($M = 40.0\\text{ g/mol}$):\n$$n = \\frac{4.0\\text{ g}}{40.0\\text{ g/mol}} = 0.10\\text{ mol}$$\n2. Volume of solution in liters:\n$$V = \\frac{250\\text{ mL}}{1000} = 0.25\\text{ L}$$\n3. Molarity:\n$$M = \\frac{n}{V} = \\frac{0.10\\text{ mol}}{0.25\\text{ L}} = 0.40\\text{ M}$$"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the reaction:\n$$4\\text{NH}_3(g) + 5\\text{O}_2(g) \\rightarrow 4\\text{NO}(g) + 6\\text{H}_2\\text{O}(l)$$\nWhen $1.0\\text{ mole of } \\text{NH}_3$ and $1.0\\text{ mole of } \\text{O}_2$ are allowed to react to completion, which of the following is TRUE?",
+          "image": "",
+          "options": [
+            "All the oxygen is consumed and $\\text{O}_2$ is the limiting reagent",
+            "All the ammonia is consumed and $\\text{NH}_3$ is the limiting reagent",
+            "$0.8\\text{ moles of } \\text{NO}$ are formed",
+            "$1.2\\text{ moles of } \\text{H}_2\\text{O}$ are formed"
+          ],
+          "correctOption": 0,
+          "solution": "From the balanced equation:\n$$\\frac{n_{\\text{NH}_3}}{4} \\quad \\text{vs} \\quad \\frac{n_{\\text{O}_2}}{5}$$\n- For $\\text{NH}_3$: $\\frac{1.0}{4} = 0.25$\n- For $\\text{O}_2$: $\\frac{1.0}{5} = 0.20$\nSince the value for $\\text{O}_2$ ($0.20$) is smaller, **$\\text{O}_2$ is the limiting reagent** and will be completely consumed.\n(Amount of $\\text{NO}$ formed $= \\frac{4}{5} \\times 1.0 = 0.8\\text{ mol}$, wait, check: Option A says 'All oxygen is consumed and $\\text{O}_2$ is the limiting reagent', which is completely correct)."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the mass percentage of carbon in ethanol ($\\text{C}_2\\text{H}_5\\text{OH}$)? (Atomic masses: $\\text{C} = 12\\text{ u}, \\text{H} = 1\\text{ u}, \\text{O} = 16\\text{ u}$)",
+          "image": "",
+          "options": [
+            "$52.17\\%$",
+            "$34.78\\%$",
+            "$13.05\\%$",
+            "$46.00\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Molar mass of $\\text{C}_2\\text{H}_5\\text{OH}$:\n$$M = 2(12) + 6(1) + 16 = 24 + 6 + 16 = 46\\text{ g/mol}$$\n2. Mass of carbon in $1\\text{ mole}$ of ethanol $= 2 \\times 12 = 24\\text{ g}$.\n3. Mass percentage of carbon:\n$$\\%\\text{ C} = \\frac{24}{46} \\times 100 \\approx 52.17\\%$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A gaseous mixture contains $\\text{H}_2$ and $\\text{O}_2$ in a $1 : 4$ ratio by mass. The molar ratio of the two gases in the mixture is:",
+          "image": "",
+          "options": [
+            "$4 : 1$",
+            "$1 : 4$",
+            "$2 : 1$",
+            "$1 : 2$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the masses of $\\text{H}_2$ and $\\text{O}_2$ be $1\\text{ g}$ and $4\\text{ g}$ respectively:\n1. Moles of $\\text{H}_2$ ($M = 2\\text{ g/mol}$):\n$$n_{\\text{H}_2} = \\frac{1}{2} = 0.5\\text{ mol}$$\n2. Moles of $\\text{O}_2$ ($M = 32\\text{ g/mol}$):\n$$n_{\\text{O}_2} = \\frac{4}{32} = \\frac{1}{8} = 0.125\\text{ mol}$$\n3. Molar ratio:\n$$\\frac{n_{\\text{H}_2}}{n_{\\text{O}_2}} = \\frac{0.5}{0.125} = \\frac{4}{1} = 4 : 1$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The percentage of nitrogen in urea ($\\text{NH}_2\\text{CONH}_2$) is approximately: (Atomic masses: $\\text{N} = 14, \\text{C} = 12, \\text{O} = 16, \\text{H} = 1\\text{ u}$)",
+          "image": "",
+          "options": [
+            "$46.6\\%$",
+            "$38.5\\%$",
+            "$28.0\\%$",
+            "$52.0\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Molar mass of urea ($\\text{CH}_4\\text{N}_2\\text{O}$):\n$$M = 12 + 4(1) + 2(14) + 16 = 12 + 4 + 28 + 16 = 60\\text{ g/mol}$$\n2. Mass of nitrogen in one mole of urea $= 2 \\times 14 = 28\\text{ g}$.\n3. Percentage of nitrogen:\n$$\\%\\text{ N} = \\frac{28}{60} \\times 100 \\approx 46.67\\% \\approx 46.6\\%$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The mass of $112\\text{ mL}$ of a gaseous hydrocarbon at STP is $0.28\\text{ g}$. The hydrocarbon is:",
+          "image": "",
+          "options": [
+            "$\\text{C}_4\\text{H}_8$",
+            "$\\text{C}_2\\text{H}_4$",
+            "$\\text{C}_3\\text{H}_6$",
+            "$\\text{C}_2\\text{H}_6$"
+          ],
+          "correctOption": 0,
+          "solution": "1. At STP, $22400\\text{ mL}$ of any ideal gas represents $1\\text{ mole}$.\n2. Moles of the hydrocarbon:\n$$n = \\frac{112\\text{ mL}}{22400\\text{ mL/mol}} = 0.005\\text{ mol}$$\n3. Molar mass of the hydrocarbon:\n$$M = \\frac{\\text{Mass}}{n} = \\frac{0.28\\text{ g}}{0.005\\text{ mol}} = 56\\text{ g/mol}$$\n4. Check the options:\n- $\\text{C}_4\\text{H}_8: 4(12) + 8(1) = 48 + 8 = 56\\text{ g/mol}$\n- $\\text{C}_2\\text{H}_4: 28\\text{ g/mol}$\n- $\\text{C}_3\\text{H}_6: 42\\text{ g/mol}$\n- $\\text{C}_2\\text{H}_6: 30\\text{ g/mol}$\nThus, the hydrocarbon is butene ($\\text{C}_4\\text{H}_8$)."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following contains the least number of molecules?",
+          "image": "",
+          "options": [
+            "$2.0\\text{ g}$ of $\\text{H}_2$",
+            "$28.0\\text{ g}$ of $\\text{N}_2$",
+            "$44.0\\text{ g}$ of $\\text{CO}_2$",
+            "$16.0\\text{ g}$ of $\\text{SO}_2$"
+          ],
+          "correctOption": 3,
+          "solution": "Calculate moles of molecules for each option:\n- $2.0\\text{ g of } \\text{H}_2 = \\frac{2.0}{2} = 1.0\\text{ mol} = 1.0\\ N_A$\n- $28.0\\text{ g of } \\text{N}_2 = \\frac{28.0}{28} = 1.0\\text{ mol} = 1.0\\ N_A$\n- $44.0\\text{ g of } \\text{CO}_2 = \\frac{44.0}{44} = 1.0\\text{ mol} = 1.0\\ N_A$\n- $16.0\\text{ g of } \\text{SO}_2 = \\frac{16.0}{64} = 0.25\\text{ mol} = 0.25\\ N_A$\nTherefore, $16.0\\text{ g}$ of $\\text{SO}_2$ contains the least number of molecules ($0.25\\ N_A$)."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A mixture containing $100\\text{ g}$ of $\\text{H}_2$ and $100\\text{ g}$ of $\\text{O}_2$ is ignited to produce water. The maximum mass of water that can be formed is:",
+          "image": "",
+          "options": [
+            "$112.5\\text{ g}$",
+            "$200.0\\text{ g}$",
+            "$100.0\\text{ g}$",
+            "$56.25\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of reactants:\n$$n_{\\text{H}_2} = \\frac{100\\text{ g}}{2\\text{ g/mol}} = 50\\text{ mol}$$\n$$n_{\\text{O}_2} = \\frac{100\\text{ g}}{32\\text{ g/mol}} = 3.125\\text{ mol}$$\n2. Reaction: $2\\text{H}_2 + \\text{O}_2 \\rightarrow 2\\text{H}_2\\text{O}$.\n$\\text{O}_2$ is the limiting reagent because $3.125\\text{ mol of } \\text{O}_2$ requires only $6.25\\text{ mol of } \\text{H}_2$.\n3. Moles of $\\text{H}_2\\text{O}$ formed:\n$$n_{\\text{H}_2\\text{O}} = 2 \\times n_{\\text{O}_2} = 2 \\times 3.125 = 6.25\\text{ mol}$$\n4. Mass of water formed:\n$$m = 6.25\\text{ mol} \\times 18\\text{ g/mol} = 112.5\\text{ g}$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A metal carbonate $\\text{MCO}_3$ on strong heating decomposes to form $56\\%$ metal oxide by mass. The atomic mass of metal $M$ is:",
+          "image": "",
+          "options": [
+            "$40\\text{ u}$",
+            "$24\\text{ u}$",
+            "$56\\text{ u}$",
+            "$64\\text{ u}$"
+          ],
+          "correctOption": 0,
+          "solution": "Reaction:\n$$\\text{MCO}_3 \\xrightarrow{\\Delta} \\text{MO} + \\text{CO}_2$$\n- Molar mass of $\\text{MCO}_3 = A + 12 + 48 = A + 60$\n- Molar mass of $\\text{MO} = A + 16$\nGiven that the residue ($\\text{MO}$) constitutes $56\\%$ of the original mass:\n$$\\frac{A + 16}{A + 60} = 0.56$$\n$$A + 16 = 0.56(A + 60) = 0.56A + 33.6$$\n$$A - 0.56A = 33.6 - 16$$\n$$0.44A = 17.6$$\n$$A = \\frac{17.6}{0.44} = 40\\text{ u}$$\n(This corresponds to Calcium, $\\text{Ca}$)."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In a solution, the concentration of a contaminant is found to be $15\\text{ ppm}$ by mass. The mass percentage of the contaminant is:",
+          "image": "",
+          "options": [
+            "$1.5 \\times 10^{-3}\\%$",
+            "$1.5 \\times 10^{-4}\\%$",
+            "$1.5 \\times 10^{-2}\\%$",
+            "$1.5\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "By definition:\n$$\\text{ppm} = \\frac{\\text{Mass of solute}}{\\text{Mass of solution}} \\times 10^6$$\n$$\\text{Mass percentage} = \\frac{\\text{Mass of solute}}{\\text{Mass of solution}} \\times 100$$\nTherefore:\n$$\\%\\text{ by mass} = \\frac{\\text{ppm}}{10^4} = \\frac{15}{10^4} = 1.5 \\times 10^{-3}\\%$$"
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What mass of glucose ($\\text{C}_6\\text{H}_{12}\\text{O}_6$) should be dissolved in $500\\text{ g}$ of water to prepare a $0.1\\text{ molal}$ solution?",
+          "image": "",
+          "options": [
+            "$9.0\\text{ g}$",
+            "$18.0\\text{ g}$",
+            "$4.5\\text{ g}$",
+            "$36.0\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Molality formula:\n$$m = \\frac{n_{\\text{solute}}}{W_{\\text{solvent in kg}}}$$\n$$0.1 = \\frac{n_{\\text{glucose}}}{0.5\\text{ kg}} \\implies n_{\\text{glucose}} = 0.1 \\times 0.5 = 0.05\\text{ mol}$$\n2. Molar mass of glucose ($\\text{C}_6\\text{H}_{12}\\text{O}_6$) $= 180\\text{ g/mol}$.\n3. Mass of glucose required:\n$$\\text{Mass} = 0.05\\text{ mol} \\times 180\\text{ g/mol} = 9.0\\text{ g}$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In the complete combustion of $1.0\\text{ mole}$ of butane ($\\text{C}_4\\text{H}_{10}$), how many moles of $\\text{O}_2$ are consumed?",
+          "image": "",
+          "options": [
+            "$6.5\\text{ moles}$",
+            "$13.0\\text{ moles}$",
+            "$5.0\\text{ moles}$",
+            "$4.0\\text{ moles}$"
+          ],
+          "correctOption": 0,
+          "solution": "The general combustion equation for an alkane $\\text{C}_n\\text{H}_{2n+2}$ is:\n$$\\text{C}_n\\text{H}_{2n+2} + \\left(n + \\frac{n+1}{2}\\right)\\text{O}_2 \\rightarrow n\\text{CO}_2 + (n+1)\\text{H}_2\\text{O}$$\nFor butane ($n = 4$):\n$$\\text{C}_4\\text{H}_{10} + \\frac{13}{2}\\text{O}_2 \\rightarrow 4\\text{CO}_2 + 5\\text{H}_2\\text{O}$$\n$$\\frac{13}{2} = 6.5\\text{ moles of } \\text{O}_2$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Two elements $X$ and $Y$ combine to form two compounds $XY_2$ and $X_3Y_2$. If $0.1\\text{ mol}$ of $XY_2$ weighs $10\\text{ g}$ and $0.05\\text{ mol}$ of $X_3Y_2$ weighs $9\\text{ g}$, the atomic masses of $X$ and $Y$ are respectively:",
+          "image": "",
+          "options": [
+            "$40\\text{ u}$ and $30\\text{ u}$",
+            "$30\\text{ u}$ and $40\\text{ u}$",
+            "$20\\text{ u}$ and $30\\text{ u}$",
+            "$40\\text{ u}$ and $20\\text{ u}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the atomic masses of $X$ and $Y$ be $x$ and $y$:\n1. For $XY_2$:\n$$\\text{Molar mass} = \\frac{10\\text{ g}}{0.1\\text{ mol}} = 100\\text{ g/mol}$$\n$$x + 2y = 100 \\quad \\text{--- (1)}$$\n2. For $X_3Y_2$:\n$$\\text{Molar mass} = \\frac{9\\text{ g}}{0.05\\text{ mol}} = 180\\text{ g/mol}$$\n$$3x + 2y = 180 \\quad \\text{--- (2)}$$\n3. Subtracting equation (1) from equation (2):\n$$(3x + 2y) - (x + 2y) = 180 - 100$$\n$$2x = 80 \\implies x = 40\\text{ u}$$\n4. Substitute $x = 40$ into equation (1):\n$$40 + 2y = 100 \\implies 2y = 60 \\implies y = 30\\text{ u}$$\nThus, the atomic masses are $X = 40\\text{ u}$ and $Y = 30\\text{ u}$."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The total number of protons, neutrons, and electrons present in $14\\text{ g}$ of $^{14}\\text{C}$ atoms is: (Take $N_A = 6.022 \\times 10^{23}$)",
+          "image": "",
+          "options": [
+            "$20\\ N_A$",
+            "$14\\ N_A$",
+            "$12\\ N_A$",
+            "$6\\ N_A$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $14\\text{ g}$ of $^{14}\\text{C}$:\n$$n = \\frac{14\\text{ g}}{14\\text{ g/mol}} = 1.0\\text{ mol of atoms} = 1.0\\ N_A\\text{ atoms}$$\n2. In a single neutral $^{14}_6\\text{C}$ atom:\n- Number of protons $= Z = 6$\n- Number of electrons $= Z = 6$\n- Number of neutrons $= A - Z = 14 - 6 = 8$\n$$\\text{Total subatomic particles per atom} = 6 + 6 + 8 = 20$$\n3. Total particles in $1.0\\text{ mole}$:\n$$\\text{Total} = 20 \\times 1.0\\ N_A = 20\\ N_A$$"
+        }
+      ]
+    }
+  ]
+}

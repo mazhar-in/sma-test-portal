@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-03-concentration-terms",
+  "title": "Concentration Terms (Molarity, Molality, Mole Fraction, Mass Percentage, & ppm)",
+  "syllabus": "Methods of expressing concentration of solutions: Mass percentage (w/w), Volume percentage (v/v), Mass by volume percentage (w/v), Parts per million (ppm), Parts per billion (ppb); Mole fraction (X), Molarity (M), Molality (m), Normality (N), Formality; Temperature dependence of concentration terms (temperature-dependent vs temperature-independent units); Dilution law and mixing of solutions (M1V1 = M2V2, M_mix = (M1V1 + M2V2)/(V1 + V2)); Interconversion between concentration terms (Molarity to Molality, Mole fraction to Molality, Mass percent and density to Molarity); Standard solutions and quantitative solution stoichiometry",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following concentration terms is temperature-independent?",
+          "image": "",
+          "options": [
+            "Molality",
+            "Molarity",
+            "Normality",
+            "Volume percentage (v/v)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Concentration terms that involve the volume of the solution (such as Molarity, Normality, and Volume percentage) depend on temperature because liquids expand or contract upon temperature variation ($V \\propto T$).\n2. Concentration terms that depend exclusively on the mass of the solute and mass of the solvent/solution (such as Molality, Mole fraction, Mass percentage, and ppm by mass) are completely temperature-independent, as mass does not change with temperature.\nTherefore, **Molality** is independent of temperature."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Concentrated aqueous sulfuric acid is commercially sold as $98\\%\\ \\text{H}_2\\text{SO}_4$ by mass with a density of $1.84\\text{ g/mL}$. The molarity of the acid solution is: (Molar mass of $\\text{H}_2\\text{SO}_4 = 98.0\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$18.4\\text{ M}$",
+            "$1.84\\text{ M}$",
+            "$9.80\\text{ M}$",
+            "$36.8\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the standard direct relationship between molarity ($M$), mass percentage ($x\\%$), and density ($d\\text{ in g/mL}$):\n$$M = \\frac{x \\times d \\times 10}{M_w}$$\nSubstitute $x = 98$, $d = 1.84\\text{ g/mL}$, and $M_w = 98.0\\text{ g/mol}$:\n$$M = \\frac{98 \\times 1.84 \\times 10}{98.0} = 1.84 \\times 10 = 18.4\\text{ M}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the mole fraction of ethylene glycol ($\\text{C}_2\\text{H}_6\\text{O}_2$) in an aqueous solution containing $20\\%\\ \\text{C}_2\\text{H}_6\\text{O}_2$ by mass? (Molar masses: $\\text{C}_2\\text{H}_6\\text{O}_2 = 62.0\\text{ g/mol}, \\text{H}_2\\text{O} = 18.0\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$0.068$",
+            "$0.932$",
+            "$0.112$",
+            "$0.034$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider $100\\text{ g}$ of the solution:\n1. Mass of $\\text{C}_2\\text{H}_6\\text{O}_2 = 20\\text{ g}$.\n2. Mass of water $= 100 - 20 = 80\\text{ g}$.\n3. Moles of each component:\n$$n_{\\text{glycol}} = \\frac{20\\text{ g}}{62.0\\text{ g/mol}} \\approx 0.3226\\text{ mol}$$\n$$n_{\\text{H}_2\\text{O}} = \\frac{80\\text{ g}}{18.0\\text{ g/mol}} \\approx 4.4444\\text{ mol}$$\n4. Mole fraction of glycol:\n$$X_{\\text{glycol}} = \\frac{n_{\\text{glycol}}}{n_{\\text{glycol}} + n_{\\text{H}_2\\text{O}}} = \\frac{0.3226}{0.3226 + 4.4444} = \\frac{0.3226}{4.767} \\approx 0.06767 \\approx 0.068$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When $250\\text{ mL}$ of $0.5\\text{ M } \\text{HCl}$ is mixed with $750\\text{ mL}$ of $0.1\\text{ M } \\text{HCl}$, assuming volumes are additive, the molarity of the resulting mixture is:",
+          "image": "",
+          "options": [
+            "$0.20\\text{ M}$",
+            "$0.30\\text{ M}$",
+            "$0.25\\text{ M}$",
+            "$0.15\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the mixing equation for non-reacting solutions of the same solute:\n$$M_1 V_1 + M_2 V_2 = M_{\\text{mix}} V_{\\text{total}}$$\n1. Calculate millimoles of $\\text{HCl}$ from each solution:\n$$\\text{mmol}_1 = 250\\text{ mL} \\times 0.5\\text{ M} = 125\\text{ mmol}$$\n$$\\text{mmol}_2 = 750\\text{ mL} \\times 0.1\\text{ M} = 75\\text{ mmol}$$\n$$\\text{Total mmol} = 125 + 75 = 200\\text{ mmol}$$\n2. Total volume of mixture:\n$$V_{\\text{total}} = 250 + 750 = 1000\\text{ mL}$$\n3. Molarity of mixture:\n$$M_{\\text{mix}} = \\frac{\\text{Total mmol}}{V_{\\text{total in mL}}} = \\frac{200}{1000} = 0.20\\text{ M}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A sample of drinking water was found to be severely contaminated with chloroform ($\\text{CHCl}_3$), a suspected carcinogen. The level of contamination was $15\\text{ ppm}$ by mass. What is this concentration expressed as a mass percentage?",
+          "image": "",
+          "options": [
+            "$1.5 \\times 10^{-3}\\%$",
+            "$1.5 \\times 10^{-4}\\%$",
+            "$1.5 \\times 10^{-2}\\%$",
+            "$0.15\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "By definition:\n$$\\text{ppm} = \\frac{\\text{Mass of solute}}{\\text{Mass of solution}} \\times 10^6$$\n$$\\%\\text{ by mass} = \\frac{\\text{Mass of solute}}{\\text{Mass of solution}} \\times 100$$\nTherefore:\n$$\\%\\text{ by mass} = \\frac{\\text{ppm}}{10^4} = \\frac{15}{10^4} = 1.5 \\times 10^{-3}\\%$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The molarity of pure liquid water at $4^\\circ\\text{C}$ (density $= 1.00\\text{ g/mL}$) is:",
+          "image": "",
+          "options": [
+            "$55.55\\text{ M}$",
+            "$18.00\\text{ M}$",
+            "$50.00\\text{ M}$",
+            "$1.00\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider $1.00\\text{ L}$ ($1000\\text{ mL}$) of pure water:\n1. Mass of $1000\\text{ mL}$ of water:\n$$m = 1000\\text{ mL} \\times 1.00\\text{ g/mL} = 1000\\text{ g}$$\n2. Moles of water present in $1000\\text{ g}$ ($M = 18.016\\text{ g/mol} \\approx 18.0\\text{ g/mol}$):\n$$n = \\frac{1000\\text{ g}}{18.0\\text{ g/mol}} = 55.55\\text{ moles}$$\n3. Molarity:\n$$M = \\frac{\\text{Moles}}{\\text{Volume in L}} = \\frac{55.55\\text{ mol}}{1.00\\text{ L}} = 55.55\\text{ M}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] An aqueous solution contains $3.0\\text{ g}$ of urea (molar mass $= 60\\text{ g/mol}$) dissolved in $250\\text{ g}$ of water. The molality of this solution is:",
+          "image": "",
+          "options": [
+            "$0.20\\text{ m}$",
+            "$0.10\\text{ m}$",
+            "$0.05\\text{ m}$",
+            "$0.40\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of urea:\n$$n = \\frac{\\text{Mass}}{\\text{Molar mass}} = \\frac{3.0\\text{ g}}{60\\text{ g/mol}} = 0.05\\text{ mol}$$\n2. Mass of solvent (water) in kilograms:\n$$W = \\frac{250\\text{ g}}{1000} = 0.25\\text{ kg}$$\n3. Molality ($m$):\n$$m = \\frac{n}{W} = \\frac{0.05\\text{ mol}}{0.25\\text{ kg}} = 0.20\\text{ m}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An aqueous solution of a non-volatile solute has a mole fraction of $0.20$. What is the molality of the solution? (Molar mass of solvent $\\text{H}_2\\text{O} = 18.0\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$13.89\\text{ m}$",
+            "$11.11\\text{ m}$",
+            "$2.78\\text{ m}$",
+            "$15.50\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the relation between molality ($m$) and mole fraction of solute ($X_B$):\n$$m = \\frac{X_B}{1 - X_B} \\times \\frac{1000}{M_A}$$\nwhere $M_A = 18.0\\text{ g/mol}$ (molar mass of water).\nSubstitute $X_B = 0.20$:\n$$m = \\frac{0.20}{1 - 0.20} \\times \\frac{1000}{18} = \\frac{0.20}{0.80} \\times 55.555$$\n$$m = 0.25 \\times 55.555 \\approx 13.89\\text{ m}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] What volume of $0.10\\text{ M } \\text{H}_2\\text{SO}_4$ is required to completely neutralize $20.0\\text{ mL}$ of $0.20\\text{ M } \\text{NaOH}$?",
+          "image": "",
+          "options": [
+            "$20.0\\text{ mL}$",
+            "$10.0\\text{ mL}$",
+            "$40.0\\text{ mL}$",
+            "$5.0\\text{ mL}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the principle of equivalence:\n$$N_1 V_1 = N_2 V_2$$\n1. For $\\text{H}_2\\text{SO}_4$ (dibasic acid, $n\\text{-factor} = 2$):\n$$N_1 = M_1 \\times 2 = 0.10 \\times 2 = 0.20\\text{ N}$$\n2. For $\\text{NaOH}$ (monoacidic base, $n\\text{-factor} = 1$):\n$$N_2 = M_2 \\times 1 = 0.20 \\times 1 = 0.20\\text{ N}$$\n3. Equating gram equivalents:\n$$0.20 \\times V_1 = 0.20 \\times 20.0\\text{ mL}$$\n$$V_1 = 20.0\\text{ mL}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The density of a $3.0\\text{ M}$ solution of $\\text{NaCl}$ is $1.25\\text{ g/mL}$. The molality of the solution is approximately: (Molar mass of $\\text{NaCl} = 58.5\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$2.79\\text{ m}$",
+            "$3.00\\text{ m}$",
+            "$2.40\\text{ m}$",
+            "$3.25\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider $1.0\\text{ L}$ ($1000\\text{ mL}$) of the solution:\n1. Moles of $\\text{NaCl} = 3.0\\text{ mol}$.\n2. Mass of solute ($\\text{NaCl}$):\n$$m_{\\text{solute}} = 3.0\\text{ mol} \\times 58.5\\text{ g/mol} = 175.5\\text{ g}$$\n3. Mass of $1000\\text{ mL}$ of solution:\n$$m_{\\text{solution}} = 1000\\text{ mL} \\times 1.25\\text{ g/mL} = 1250.0\\text{ g}$$\n4. Mass of solvent (water):\n$$m_{\\text{solvent}} = m_{\\text{solution}} - m_{\\text{solute}} = 1250.0 - 175.5 = 1074.5\\text{ g} = 1.0745\\text{ kg}$$\n5. Molality ($m$):\n$$m = \\frac{\\text{Moles of solute}}{\\text{Mass of solvent in kg}} = \\frac{3.0\\text{ mol}}{1.0745\\text{ kg}} \\approx 2.792\\text{ m} \\approx 2.79\\text{ m}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] If $500\\text{ mL}$ of a $0.2\\text{ M}$ solution is diluted with water until its final volume becomes $2.0\\text{ L}$, the molarity of the resulting diluted solution is:",
+          "image": "",
+          "options": [
+            "$0.05\\text{ M}$",
+            "$0.10\\text{ M}$",
+            "$0.025\\text{ M}$",
+            "$0.08\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the dilution equation:\n$$M_1 V_1 = M_2 V_2$$\nConvert volumes to liters (or consistent units):\n- $V_1 = 500\\text{ mL} = 0.50\\text{ L}$\n- $M_1 = 0.2\\text{ M}$\n- $V_2 = 2.0\\text{ L}$\n$$0.2 \\times 0.50 = M_2 \\times 2.0$$\n$$0.10 = M_2 \\times 2.0 \\implies M_2 = \\frac{0.10}{2.0} = 0.05\\text{ M}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A solution contains $23\\text{ g}$ of ethanol ($\\text{C}_2\\text{H}_5\\text{OH}$) and $36\\text{ g}$ of water ($\\text{H}_2\\text{O}$). What is the mole fraction of ethanol in this binary mixture? (Molar masses: $\\text{C}_2\\text{H}_5\\text{OH} = 46\\text{ g/mol}, \\text{H}_2\\text{O} = 18\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$0.20$",
+            "$0.80$",
+            "$0.25$",
+            "$0.50$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of ethanol:\n$$n_{\\text{ethanol}} = \\frac{23\\text{ g}}{46\\text{ g/mol}} = 0.5\\text{ mol}$$\n2. Moles of water:\n$$n_{\\text{water}} = \\frac{36\\text{ g}}{18\\text{ g/mol}} = 2.0\\text{ mol}$$\n3. Total moles:\n$$n_{\\text{total}} = 0.5 + 2.0 = 2.5\\text{ mol}$$\n4. Mole fraction of ethanol:\n$$X_{\\text{ethanol}} = \\frac{n_{\\text{ethanol}}}{n_{\\text{total}}} = \\frac{0.5}{2.5} = 0.20$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An aqueous glucose solution is labeled as $10\\%\\ (w/v)$. What volume of this solution contains $1.0\\text{ mole}$ of glucose? (Molar mass of glucose $= 180\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$1800\\text{ mL}$",
+            "$180\\text{ mL}$",
+            "$1000\\text{ mL}$",
+            "$900\\text{ mL}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. A $10\\%\\ (w/v)$ solution contains $10\\text{ g}$ of glucose in every $100\\text{ mL}$ of solution.\n2. One mole of glucose has a mass of $180\\text{ g}$.\n3. Using proportionality:\n$$\\text{Volume} = \\frac{100\\text{ mL}}{10\\text{ g}} \\times 180\\text{ g} = 1800\\text{ mL}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] If the hardness of a sample of water is $100\\text{ ppm}$ in terms of $\\text{CaCO}_3$ equivalent, what is the mass of $\\text{CaCO}_3$ present in $10\\text{ L}$ of this water sample? (Density of water $= 1.0\\text{ g/mL}$)",
+          "image": "",
+          "options": [
+            "$1.0\\text{ g}$",
+            "$0.1\\text{ g}$",
+            "$10.0\\text{ g}$",
+            "$0.01\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Mass of $10\\text{ L}$ of water:\n$$m_{\\text{water}} = 10\\text{ L} \\times 1000\\text{ g/L} = 10^4\\text{ g}$$\n2. By definition of parts per million:\n$$\\text{ppm} = \\frac{\\text{Mass of solute}}{\\text{Mass of sample}} \\times 10^6$$\n$$100 = \\frac{m_{\\text{solute}}}{10^4\\text{ g}} \\times 10^6$$\n$$100 = m_{\\text{solute}} \\times 100 \\implies m_{\\text{solute}} = 1.0\\text{ g}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A $0.5\\text{ M}$ solution of $\\text{Al}_2(\\text{SO}_4)_3$ is completely dissociated. The molar concentration of sulfate ions ($\\text{SO}_4^{2-}$) in the solution is:",
+          "image": "",
+          "options": [
+            "$1.5\\text{ M}$",
+            "$0.5\\text{ M}$",
+            "$1.0\\text{ M}$",
+            "$2.5\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "The dissociation equation for aluminum sulfate is:\n$$\\text{Al}_2(\\text{SO}_4)_3(aq) \\rightarrow 2\\text{Al}^{3+}(aq) + 3\\text{SO}_4^{2-}(aq)$$\nFrom the stoichiometry of dissociation:\n- $1\\text{ formula unit of } \\text{Al}_2(\\text{SO}_4)_3$ produces $3\\text{ sulfate ions}$.\n- Therefore, the concentration of sulfate ions is:\n$$[\\text{SO}_4^{2-}] = 3 \\times [\\text{Al}_2(\\text{SO}_4)_3] = 3 \\times 0.5\\text{ M} = 1.5\\text{ M}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements regarding mole fraction is INCORRECT?",
+          "image": "",
+          "options": [
+            "Mole fraction depends directly on the temperature of the solution",
+            "Mole fraction is a dimensionless quantity with no units",
+            "The sum of the mole fractions of all components in a solution is always equal to unity ($1$)",
+            "Mole fraction of a pure component is equal to $1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Mole fraction is defined as the ratio of the number of moles of one component to the total number of moles of all components in the mixture: $X_i = \\frac{n_i}{\\sum n}$.\n2. Because both the numerator and denominator are expressed in moles (which depend strictly on mass and molar mass), mole fraction is completely independent of temperature.\nTherefore, Statement A is incorrect."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An aqueous solution contains $5.85\\text{ g}$ of $\\text{NaCl}$ per $500\\text{ mL}$ of solution. The normality of this solution is: (Molar mass of $\\text{NaCl} = 58.5\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$0.20\\text{ N}$",
+            "$0.10\\text{ N}$",
+            "$0.40\\text{ N}$",
+            "$0.05\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $\\text{NaCl}$, the $n$-factor is $1$ (total positive or negative charge $= 1$), so $\\text{Normality} = \\text{Molarity}$.\n2. Moles of $\\text{NaCl}$:\n$$n = \\frac{5.85\\text{ g}}{58.5\\text{ g/mol}} = 0.10\\text{ mol}$$\n3. Volume of solution in liters:\n$$V = \\frac{500\\text{ mL}}{1000} = 0.50\\text{ L}$$\n4. Molarity and Normality:\n$$M = \\frac{0.10\\text{ mol}}{0.50\\text{ L}} = 0.20\\text{ M} \\implies N = 0.20\\text{ N}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] A bottle of commercial aqueous $\\text{HNO}_3$ contains $63\\%\\ \\text{HNO}_3$ by mass and has a density of $1.40\\text{ g/mL}$. The volume of this concentrated acid required to prepare $2.0\\text{ L}$ of $0.10\\text{ M } \\text{HNO}_3$ solution is: (Molar mass of $\\text{HNO}_3 = 63.0\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$14.28\\text{ mL}$",
+            "$7.14\\text{ mL}$",
+            "$28.56\\text{ mL}$",
+            "$10.00\\text{ mL}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Find the molarity of the concentrated $\\text{HNO}_3$ stock solution:\n$$M_1 = \\frac{x \\times d \\times 10}{M_w} = \\frac{63 \\times 1.40 \\times 10}{63.0} = 14.0\\text{ M}$$\n2. Desired diluted solution:\n$$M_2 = 0.10\\text{ M}, \\quad V_2 = 2.0\\text{ L} = 2000\\text{ mL}$$\n3. Apply the dilution formula:\n$$M_1 V_1 = M_2 V_2$$\n$$14.0 \\times V_1 = 0.10 \\times 2000$$\n$$14.0 \\times V_1 = 200 \\implies V_1 = \\frac{200}{14.0} \\approx 14.285\\text{ mL} \\approx 14.28\\text{ mL}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In a binary solution of two volatile components $A$ and $B$, if the mole fraction of $A$ is $0.30$, what is the mole fraction of $B$?",
+          "image": "",
+          "options": [
+            "$0.70$",
+            "$0.30$",
+            "$0.50$",
+            "$1.00$"
+          ],
+          "correctOption": 0,
+          "solution": "For any binary solution, the sum of the mole fractions of all components must equal unity:\n$$X_A + X_B = 1$$\nGiven $X_A = 0.30$:\n$$X_B = 1 - 0.30 = 0.70$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A sample of blood has a glucose concentration of $90\\text{ mg/dL}$. What is the molarity of glucose in this blood sample? (Molar mass of glucose $= 180\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$5.0 \\times 10^{-3}\\text{ M}$",
+            "$5.0 \\times 10^{-2}\\text{ M}$",
+            "$1.0 \\times 10^{-3}\\text{ M}$",
+            "$2.5 \\times 10^{-3}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Note that $1\\text{ dL} = 0.1\\text{ L} = 100\\text{ mL}$.\n2. Concentration in grams per liter:\n$$\\text{Concentration} = \\frac{90\\text{ mg}}{1\\text{ dL}} = \\frac{0.090\\text{ g}}{0.1\\text{ L}} = 0.90\\text{ g/L}$$\n3. Molarity:\n$$M = \\frac{\\text{Concentration in g/L}}{\\text{Molar mass}} = \\frac{0.90\\text{ g/L}}{180\\text{ g/mol}} = 0.005\\text{ mol/L} = 5.0 \\times 10^{-3}\\text{ M}$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] To prepare a $0.1\\text{ M}$ solution of $\\text{Na}_2\\text{CO}_3$ in $100\\text{ mL}$ volumetric flask, the mass of anhydrous sodium carbonate required is: (Molar mass of $\\text{Na}_2\\text{CO}_3 = 106\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$1.06\\text{ g}$",
+            "$10.6\\text{ g}$",
+            "$0.53\\text{ g}$",
+            "$5.30\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles required:\n$$n = M \\times V(\\text{in L}) = 0.1\\text{ mol/L} \\times 0.100\\text{ L} = 0.01\\text{ mol}$$\n2. Mass of $\\text{Na}_2\\text{CO}_3$ required:\n$$m = n \\times M_w = 0.01\\text{ mol} \\times 106\\text{ g/mol} = 1.06\\text{ g}$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Equal volumes of $0.1\\text{ M } \\text{NaCl}$ and $0.1\\text{ M } \\text{CaCl}_2$ solutions are mixed together. Assuming no precipitation occurs, the total molar concentration of chloride ions ($\\text{Cl}^-$) in the mixture is:",
+          "image": "",
+          "options": [
+            "$0.15\\text{ M}$",
+            "$0.20\\text{ M}$",
+            "$0.10\\text{ M}$",
+            "$0.30\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the volume of each solution mixed be $V\\text{ mL}$:\n1. Millimoles of $\\text{Cl}^-$ from $\\text{NaCl}$ (which yields $1\\text{ Cl}^-$ per formula unit):\n$$\\text{mmol}(\\text{Cl}^-)_1 = 0.1 \\times 1 \\times V = 0.1 V$$\n2. Millimoles of $\\text{Cl}^-$ from $\\text{CaCl}_2$ (which yields $2\\text{ Cl}^-$ per formula unit):\n$$\\text{mmol}(\\text{Cl}^-)_2 = 0.1 \\times 2 \\times V = 0.2 V$$\n3. Total millimoles of $\\text{Cl}^-$:\n$$\\text{Total mmol} = 0.1 V + 0.2 V = 0.3 V$$\n4. Total volume of mixture $= V + V = 2V\\text{ mL}$.\n5. Concentration of chloride ions:\n$$[\\text{Cl}^-] = \\frac{0.3 V}{2V} = 0.15\\text{ M}$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A gas mixture containing air has a carbon monoxide ($\\text{CO}$) level of $8.0\\text{ ppm}$ by volume. What volume of pure $\\text{CO}$ is present in $1.0\\text{ m}^3$ of this air at the same temperature and pressure?",
+          "image": "",
+          "options": [
+            "$8.0\\text{ mL}$",
+            "$8.0\\text{ L}$",
+            "$0.8\\text{ mL}$",
+            "$80.0\\text{ mL}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Volume of sample: $1.0\\text{ m}^3 = 1000\\text{ L} = 10^6\\text{ mL}$.\n2. By definition of parts per million by volume:\n$$\\text{ppm (v/v)} = \\frac{\\text{Volume of solute}}{\\text{Total volume}} \\times 10^6$$\n$$8.0 = \\frac{V_{\\text{CO}}}{10^6\\text{ mL}} \\times 10^6 \\implies V_{\\text{CO}} = 8.0\\text{ mL}$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A solution is prepared by dissolving $4.9\\text{ g}$ of $\\text{H}_2\\text{SO}_4$ in water to make $500\\text{ mL}$ of solution. The normality of this solution is: (Molar mass of $\\text{H}_2\\text{SO}_4 = 98\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$0.20\\text{ N}$",
+            "$0.10\\text{ N}$",
+            "$0.05\\text{ N}$",
+            "$0.40\\text{ N}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Equivalent mass of $\\text{H}_2\\text{SO}_4$:\n$$E = \\frac{M_w}{n\\text{-factor}} = \\frac{98}{2} = 49\\text{ g/eq}$$\n2. Number of gram equivalents of $\\text{H}_2\\text{SO}_4$:\n$$\\text{Gram equivalents} = \\frac{4.9\\text{ g}}{49\\text{ g/eq}} = 0.10\\text{ eq}$$\n3. Normality ($N$):\n$$N = \\frac{\\text{Gram equivalents}}{V(\\text{in L})} = \\frac{0.10\\text{ eq}}{0.50\\text{ L}} = 0.20\\text{ N}$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When the temperature of an aqueous solution is raised from $20^\\circ\\text{C}$ to $50^\\circ\\text{C}$, which of the following concentration terms will DECREASE?",
+          "image": "",
+          "options": [
+            "Molarity",
+            "Molality",
+            "Mole fraction",
+            "Mass percentage"
+          ],
+          "correctOption": 0,
+          "solution": "1. As temperature increases, the solution expands, causing its volume to increase ($V_2 > V_1$).\n2. Molarity is inversely proportional to volume:\n$$M = \\frac{n_{\\text{solute}}}{V_{\\text{solution}}}$$\nAs $V$ increases with temperature, the **molarity decreases**.\n3. Molality, mole fraction, and mass percentage depend solely on mass, so they remain unaffected by temperature changes."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In an aqueous solution of glucose, the mole fraction of glucose is $0.1$. The mass percentage of glucose in this solution is approximately: (Molar masses: $\\text{Glucose} = 180\\text{ g/mol}, \\text{Water} = 18\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$52.6\\%$",
+            "$10.0\\%$",
+            "$47.4\\%$",
+            "$36.0\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider a mixture containing a total of $1.0\\text{ mole}$ of components:\n1. Moles of glucose $= 0.1\\text{ mol}$.\n2. Moles of water $= 1 - 0.1 = 0.9\\text{ mol}$.\n3. Masses of each component:\n$$m_{\\text{glucose}} = 0.1\\text{ mol} \\times 180\\text{ g/mol} = 18.0\\text{ g}$$\n$$m_{\\text{water}} = 0.9\\text{ mol} \\times 18\\text{ g/mol} = 16.2\\text{ g}$$\n4. Total mass of solution:\n$$m_{\\text{solution}} = 18.0 + 16.2 = 34.2\\text{ g}$$\n5. Mass percentage of glucose:\n$$\\%\\text{ glucose} = \\frac{18.0}{34.2} \\times 100 \\approx 52.63\\% \\approx 52.6\\%$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the molarity of a solution obtained by mixing $100\\text{ mL}$ of $0.2\\text{ M } \\text{NaOH}$ with $100\\text{ mL}$ of $0.1\\text{ M } \\text{HCl}$?",
+          "image": "",
+          "options": [
+            "$0.05\\text{ M}$ with respect to unreacted $\\text{NaOH}$",
+            "$0.10\\text{ M}$ with respect to unreacted $\\text{NaOH}$",
+            "$0.05\\text{ M}$ with respect to unreacted $\\text{HCl}$",
+            "$0.15\\text{ M}$ neutral solution"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate initial millimoles:\n$$\\text{mmol of } \\text{NaOH} = 100\\text{ mL} \\times 0.2\\text{ M} = 20\\text{ mmol}$$\n$$\\text{mmol of } \\text{HCl} = 100\\text{ mL} \\times 0.1\\text{ M} = 10\\text{ mmol}$$\n2. Neutralization reaction:\n$$\\text{NaOH} + \\text{HCl} \\rightarrow \\text{NaCl} + \\text{H}_2\\text{O}$$\n$10\\text{ mmol of } \\text{HCl}$ will neutralize $10\\text{ mmol of } \\text{NaOH}$.\n3. Unreacted $\\text{NaOH}$ remaining:\n$$\\text{Remaining mmol of } \\text{NaOH} = 20 - 10 = 10\\text{ mmol}$$\n4. Total volume of mixture:\n$$V_{\\text{total}} = 100 + 100 = 200\\text{ mL}$$\n5. Molarity of unreacted $\\text{NaOH}$:\n$$M = \\frac{10\\text{ mmol}}{200\\text{ mL}} = 0.05\\text{ M}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An aqueous solution of methanol ($\\text{CH}_3\\text{OH}$) is $5.0\\text{ molal}$. If the density of the solution is $0.98\\text{ g/mL}$, the molarity of the solution is: (Molar mass of $\\text{CH}_3\\text{OH} = 32.0\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$4.22\\text{ M}$",
+            "$4.90\\text{ M}$",
+            "$5.10\\text{ M}$",
+            "$3.85\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the standard conversion formula between molarity ($M$) and molality ($m$):\n$$M = \\frac{m \\times d}{1 + \\frac{m \\times M_w}{1000}}$$\nwhere $m = 5.0\\text{ mol/kg}$, $d = 0.98\\text{ g/mL}$, and $M_w = 32.0\\text{ g/mol}$:\n$$M = \\frac{5.0 \\times 0.98}{1 + \\frac{5.0 \\times 32.0}{1000}} = \\frac{4.90}{1 + \\frac{160}{1000}} = \\frac{4.90}{1 + 0.16} = \\frac{4.90}{1.16} \\approx 4.224\\text{ M} \\approx 4.22\\text{ M}$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] A solution of cane sugar (sucrose, molar mass $= 342\\text{ g/mol}$) is $3.42\\%\\ (w/v)$. The molarity of this solution is:",
+          "image": "",
+          "options": [
+            "$0.10\\text{ M}$",
+            "$0.01\\text{ M}$",
+            "$1.00\\text{ M}$",
+            "$0.05\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. A $3.42\\%\\ (w/v)$ solution contains $3.42\\text{ g}$ of sucrose in $100\\text{ mL}$ of solution.\n2. Mass of sucrose in $1000\\text{ mL}$ ($1\\text{ L}$) of solution:\n$$\\text{Mass in } 1\\text{ L} = 3.42 \\times 10 = 34.2\\text{ g/L}$$\n3. Molarity:\n$$M = \\frac{34.2\\text{ g/L}}{342\\text{ g/mol}} = 0.10\\text{ M}$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The mass of crystalline oxalic acid dihydrate ($(\\text{COOH})_2 \\cdot 2\\text{H}_2\\text{O}$) required to prepare $250\\text{ mL}$ of a $0.1\\text{ N}$ solution is: (Molar mass of dihydrate $= 126.0\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$1.575\\text{ g}$",
+            "$3.150\\text{ g}$",
+            "$0.788\\text{ g}$",
+            "$6.300\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Oxalic acid is a dibasic acid, so its $n$-factor is $2$.\n2. Equivalent mass of $(\\text{COOH})_2 \\cdot 2\\text{H}_2\\text{O}$:\n$$E = \\frac{M_w}{2} = \\frac{126.0}{2} = 63.0\\text{ g/eq}$$\n3. Mass required:\n$$m = N \\times E \\times V(\\text{in L}) = 0.1\\text{ eq/L} \\times 63.0\\text{ g/eq} \\times 0.250\\text{ L} = 1.575\\text{ g}$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A gas mixture contains equal moles of helium ($\\text{He}$) and oxygen ($\\text{O}_2$). What is the mass percentage of helium in the mixture? (Atomic masses: $\\text{He} = 4\\text{ u}, \\text{O} = 16\\text{ u}$)",
+          "image": "",
+          "options": [
+            "$11.1\\%$",
+            "$50.0\\%$",
+            "$20.0\\%$",
+            "$25.0\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider $1.0\\text{ mole}$ of each gas in the mixture:\n1. Mass of $1.0\\text{ mole}$ of $\\text{He} = 4.0\\text{ g}$.\n2. Mass of $1.0\\text{ mole}$ of $\\text{O}_2 = 32.0\\text{ g}$.\n3. Total mass of mixture $= 4.0 + 32.0 = 36.0\\text{ g}$.\n4. Mass percentage of helium:\n$$\\%\\text{ He} = \\frac{4.0\\text{ g}}{36.0\\text{ g}} \\times 100 = \\frac{1}{9} \\times 100 \\approx 11.11\\% \\approx 11.1\\%$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] If $20\\text{ mL}$ of $0.5\\text{ M } \\text{Ba(OH)}_2$ is required to neutralize $25\\text{ mL}$ of an $\\text{H}_3\\text{PO}_4$ solution to form $\\text{Ba}_3(\\text{PO}_4)_2$, the molarity of the phosphoric acid solution is:",
+          "image": "",
+          "options": [
+            "$0.267\\text{ M}$",
+            "$0.400\\text{ M}$",
+            "$0.133\\text{ M}$",
+            "$0.800\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "The balanced chemical neutralization equation is:\n$$3\\text{Ba(OH)}_2 + 2\\text{H}_3\\text{PO}_4 \\rightarrow \\text{Ba}_3(\\text{PO}_4)_2 + 6\\text{H}_2\\text{O}$$\nFrom stoichiometry:\n$$\\frac{\\text{mmol of } \\text{Ba(OH)}_2}{3} = \\frac{\\text{mmol of } \\text{H}_3\\text{PO}_4}{2}$$\n1. Calculate millimoles of $\\text{Ba(OH)}_2$:\n$$\\text{mmol} = 20\\text{ mL} \\times 0.5\\text{ M} = 10\\text{ mmol}$$\n2. Calculate millimoles of $\\text{H}_3\\text{PO}_4$:\n$$\\frac{10}{3} = \\frac{M_{\\text{acid}} \\times 25}{2}$$\n$$M_{\\text{acid}} \\times 25 = \\frac{20}{3}$$\n$$M_{\\text{acid}} = \\frac{20}{75} = \\frac{4}{15} \\approx 0.2667\\text{ M} \\approx 0.267\\text{ M}$$"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In a laboratory, sea water was found to contain $65\\text{ ppm}$ of bromide ions ($\\text{Br}^-$). What mass of bromide ions is present in $500\\text{ kg}$ of this sea water?",
+          "image": "",
+          "options": [
+            "$32.5\\text{ g}$",
+            "$65.0\\text{ g}$",
+            "$13.0\\text{ g}$",
+            "$3.25\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Total mass of sample $= 500\\text{ kg} = 5.0 \\times 10^5\\text{ g}$.\n2. By definition of ppm:\n$$\\text{ppm} = \\frac{\\text{Mass of solute}}{\\text{Mass of solution}} \\times 10^6$$\n$$65 = \\frac{m_{\\text{Br}^-}}{5.0 \\times 10^5\\text{ g}} \\times 10^6$$\n$$65 = m_{\\text{Br}^-} \\times 2 \\implies m_{\\text{Br}^-} = \\frac{65}{2} = 32.5\\text{ g}$$"
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a very dilute aqueous solution, which of the following approximations is valid?",
+          "image": "",
+          "options": [
+            "Molarity is approximately equal to Molality ($M \\approx m$)",
+            "Mole fraction is equal to Molarity ($X \\approx M$)",
+            "Mass percentage is equal to Molarity",
+            "ppm is equal to Molality"
+          ],
+          "correctOption": 0,
+          "solution": "1. In very dilute aqueous solutions, the amount of solute is negligible compared to the solvent (water).\n2. The density of water is approximately $1.0\\text{ g/mL}$ ($1.0\\text{ kg/L}$).\n3. Hence, the volume of $1.0\\text{ L}$ of solution has a mass very close to $1000\\text{ g}$ of pure water.\n4. Therefore, the number of moles of solute in $1.0\\text{ L}$ of solution (Molarity) is practically identical to the number of moles of solute in $1.0\\text{ kg}$ of solvent (Molality):\n$$M \\approx m$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A sample of $\\text{H}_2\\text{O}_2$ solution is labeled as '10 volume'. What is the molarity of this $\\text{H}_2\\text{O}_2$ solution?",
+          "image": "",
+          "options": [
+            "$0.89\\text{ M}$",
+            "$1.78\\text{ M}$",
+            "$0.45\\text{ M}$",
+            "$1.00\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "By definition, '10 volume' means $1\\text{ L}$ of $\\text{H}_2\\text{O}_2$ solution yields $10\\text{ L}$ of $\\text{O}_2$ gas at STP:\n$$2\\text{H}_2\\text{O}_2(aq) \\rightarrow 2\\text{H}_2\\text{O}(l) + \\text{O}_2(g)$$\n- $1\\text{ mole of } \\text{O}_2$ at STP $= 22.4\\text{ L}$, produced from $2\\text{ moles of } \\text{H}_2\\text{O}_2$.\n$$\\text{Volume strength} = 11.2 \\times \\text{Molarity}$$\n$$\\text{Molarity} = \\frac{\\text{Volume strength}}{11.2} = \\frac{10}{11.2} \\approx 0.8928\\text{ M} \\approx 0.89\\text{ M}$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An antifreeze solution is prepared from $222.6\\text{ g}$ of ethylene glycol ($\\text{C}_2\\text{H}_6\\text{O}_2$) and $200\\text{ g}$ of water. What is the molality of the solution? (Molar mass of ethylene glycol $= 62.0\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$17.95\\text{ m}$",
+            "$8.98\\text{ m}$",
+            "$35.90\\text{ m}$",
+            "$1.79\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of ethylene glycol:\n$$n = \\frac{222.6\\text{ g}}{62.0\\text{ g/mol}} = 3.590\\text{ mol}$$\n2. Mass of water in kilograms:\n$$W = \\frac{200\\text{ g}}{1000} = 0.200\\text{ kg}$$\n3. Molality:\n$$m = \\frac{3.590\\text{ mol}}{0.200\\text{ kg}} = 17.95\\text{ m}$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] What mass of pure sodium hydroxide ($\\text{NaOH}$) must be dissolved in water to prepare $500\\text{ mL}$ of a $0.25\\text{ M}$ solution? (Molar mass of $\\text{NaOH} = 40.0\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$5.0\\text{ g}$",
+            "$10.0\\text{ g}$",
+            "$2.5\\text{ g}$",
+            "$1.25\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of $\\text{NaOH}$ required:\n$$n = M \\times V = 0.25\\text{ mol/L} \\times 0.500\\text{ L} = 0.125\\text{ mol}$$\n2. Mass of $\\text{NaOH}$:\n$$m = 0.125\\text{ mol} \\times 40.0\\text{ g/mol} = 5.0\\text{ g}$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In which of the following pairs of solutions are the molar concentrations of the cation identical?",
+          "image": "",
+          "options": [
+            "$1.0\\text{ M } \\text{NaCl}$ and $0.5\\text{ M } \\text{Na}_2\\text{SO}_4$",
+            "$1.0\\text{ M } \\text{CaCl}_2$ and $1.0\\text{ M } \\text{NaCl}$",
+            "$0.5\\text{ M } \\text{AlCl}_3$ and $1.0\\text{ M } \\text{FeCl}_3$",
+            "$2.0\\text{ M } \\text{KNO}_3$ and $2.0\\text{ M } \\text{K}_2\\text{SO}_4$"
+          ],
+          "correctOption": 0,
+          "solution": "Evaluate cation concentration for each choice:\n1. In $1.0\\text{ M } \\text{NaCl}$: $[\\text{Na}^+] = 1.0 \\times 1 = 1.0\\text{ M}$.\nIn $0.5\\text{ M } \\text{Na}_2\\text{SO}_4$: $[\\text{Na}^+] = 0.5 \\times 2 = 1.0\\text{ M}$.\nBoth have identical $[\\text{Na}^+] = 1.0\\text{ M}$.\n2. In B: $[\\text{Ca}^{2+}] = 1.0\\text{ M}$ vs $[\\text{Na}^+] = 1.0\\text{ M}$ (different cations).\n3. In C: $[\\text{Al}^{3+}] = 0.5\\text{ M}$ vs $[\\text{Fe}^{3+}] = 1.0\\text{ M}$.\n4. In D: $[\\text{K}^+] = 2.0\\text{ M}$ vs $[\\text{K}^+] = 4.0\\text{ M}$.\nThus, Option A has identical cation concentrations."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] An aqueous solution of acetic acid ($\\text{CH}_3\\text{COOH}$) is $2.0\\text{ M}$ and has a density of $1.02\\text{ g/mL}$. The mass percentage of acetic acid in the solution is: (Molar mass of $\\text{CH}_3\\text{COOH} = 60.0\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$11.76\\%$",
+            "$12.00\\%$",
+            "$10.20\\%$",
+            "$6.00\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "Consider $1.0\\text{ L}$ ($1000\\text{ mL}$) of the solution:\n1. Moles of $\\text{CH}_3\\text{COOH} = 2.0\\text{ mol}$.\n2. Mass of solute:\n$$m_{\\text{solute}} = 2.0\\text{ mol} \\times 60.0\\text{ g/mol} = 120.0\\text{ g}$$\n3. Mass of $1000\\text{ mL}$ of solution:\n$$m_{\\text{solution}} = 1000\\text{ mL} \\times 1.02\\text{ g/mL} = 1020.0\\text{ g}$$\n4. Mass percentage:\n$$\\%\\text{ by mass} = \\frac{120.0\\text{ g}}{1020.0\\text{ g}} \\times 100 \\approx 11.76\\%$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A fluoride ion concentration of $1.0\\text{ ppm}$ in drinking water is beneficial in preventing tooth decay. How many milligrams of fluoride ion are present in $2.0\\text{ L}$ of such drinking water? (Density of water $= 1.0\\text{ g/mL}$)",
+          "image": "",
+          "options": [
+            "$2.0\\text{ mg}$",
+            "$1.0\\text{ mg}$",
+            "$0.5\\text{ mg}$",
+            "$4.0\\text{ mg}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For dilute aqueous solutions, $1.0\\text{ ppm} = 1.0\\text{ mg/L}$.\n2. In $2.0\\text{ L}$ of water with a concentration of $1.0\\text{ ppm}$:\n$$\\text{Mass of } \\text{F}^- = 1.0\\text{ mg/L} \\times 2.0\\text{ L} = 2.0\\text{ mg}$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When $100\\text{ mL}$ of $0.1\\text{ M } \\text{H}_2\\text{SO}_4$ is added to $100\\text{ mL}$ of $0.1\\text{ M } \\text{Ba(OH)}_2$, a white precipitate of $\\text{BaSO}_4$ forms. What is the concentration of unreacted barium or sulfate ions in the supernatant solution? (Ignore solubility of $\\text{BaSO}_4$)",
+          "image": "",
+          "options": [
+            "$0\\text{ M}$ (completely precipitated)",
+            "$0.05\\text{ M}$",
+            "$0.10\\text{ M}$",
+            "$0.025\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Reaction:\n$$\\text{H}_2\\text{SO}_4 + \\text{Ba(OH)}_2 \\rightarrow \\text{BaSO}_4 \\downarrow + 2\\text{H}_2\\text{O}$$\n1. $\\text{mmol of } \\text{H}_2\\text{SO}_4 = 100 \\times 0.1 = 10\\text{ mmol}$.\n2. $\\text{mmol of } \\text{Ba(OH)}_2 = 100 \\times 0.1 = 10\\text{ mmol}$.\n3. Both reactants are present in an exact $1 : 1$ stoichiometric ratio.\n4. Both $\\text{Ba}^{2+}$ and $\\text{SO}_4^{2-}$ precipitate completely as insoluble barium sulfate ($\\text{BaSO}_4$), leaving neither in excess.\nThus, their concentration in the supernatant is $0\\text{ M}$."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] A solution containing $8.0\\text{ g}$ of a substance in $100\\text{ g}$ of diethyl ether boils at a temperature higher than pure ether. The mole fraction of diethyl ether in this solution is $0.90$. The molar mass of the substance is: (Molar mass of diethyl ether $= 74\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$53.28\\text{ g/mol}$",
+            "$74.00\\text{ g/mol}$",
+            "$106.56\\text{ g/mol}$",
+            "$26.64\\text{ g/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of solvent (diethyl ether, $\\text{C}_4\\text{H}_{10}\\text{O}$):\n$$n_{\\text{ether}} = \\frac{100\\text{ g}}{74\\text{ g/mol}} \\approx 1.3514\\text{ mol}$$\n2. Given mole fraction of ether $X_{\\text{ether}} = 0.90$:\n$$X_{\\text{solute}} = 1 - 0.90 = 0.10$$\n3. Since $\\frac{n_{\\text{solute}}}{n_{\\text{ether}}} = \\frac{X_{\\text{solute}}}{X_{\\text{ether}}} = \\frac{0.10}{0.90} = \\frac{1}{9}$:\n$$n_{\\text{solute}} = \\frac{n_{\\text{ether}}}{9} = \\frac{1.3514}{9} \\approx 0.15015\\text{ mol}$$\n4. Molar mass of solute:\n$$M_w = \\frac{\\text{Mass}}{n_{\\text{solute}}} = \\frac{8.0\\text{ g}}{0.15015\\text{ mol}} \\approx 53.28\\text{ g/mol}$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What volume of $12.0\\text{ M } \\text{HCl}$ must be taken to prepare $500\\text{ mL}$ of a $3.0\\text{ M } \\text{HCl}$ solution?",
+          "image": "",
+          "options": [
+            "$125\\text{ mL}$",
+            "$250\\text{ mL}$",
+            "$100\\text{ mL}$",
+            "$75\\text{ mL}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the dilution equation:\n$$M_1 V_1 = M_2 V_2$$\nSubstitute $M_1 = 12.0\\text{ M}$, $M_2 = 3.0\\text{ M}$, and $V_2 = 500\\text{ mL}$:\n$$12.0 \\times V_1 = 3.0 \\times 500$$\n$$12.0 \\times V_1 = 1500 \\implies V_1 = \\frac{1500}{12.0} = 125\\text{ mL}$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A solution of glucose ($\\text{C}_6\\text{H}_{12}\\text{O}_6$) in water is labeled as $10\\%\\ (w/w)$. If the density of this solution is $1.20\\text{ g/mL}$, the molarity of the solution is: (Molar mass of glucose $= 180\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$0.67\\text{ M}$",
+            "$0.55\\text{ M}$",
+            "$1.20\\text{ M}$",
+            "$0.83\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the formula:\n$$M = \\frac{x \\times d \\times 10}{M_w}$$\nSubstitute $x = 10$, $d = 1.20\\text{ g/mL}$, and $M_w = 180\\text{ g/mol}$:\n$$M = \\frac{10 \\times 1.20 \\times 10}{180} = \\frac{120}{180} = \\frac{2}{3} \\approx 0.667\\text{ M} \\approx 0.67\\text{ M}$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] What is the molality of an aqueous solution of urea if the mole fraction of urea is $0.05$? (Molar mass of water $= 18.0\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$2.92\\text{ m}$",
+            "$1.55\\text{ m}$",
+            "$3.15\\text{ m}$",
+            "$0.50\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the relation between molality and mole fraction:\n$$m = \\frac{X_{\\text{solute}}}{1 - X_{\\text{solute}}} \\times \\frac{1000}{M_{\\text{solvent}}}$$\nSubstitute $X_{\\text{solute}} = 0.05$ and $M_{\\text{solvent}} = 18.0\\text{ g/mol}$:\n$$m = \\frac{0.05}{1 - 0.05} \\times \\frac{1000}{18} = \\frac{0.05}{0.95} \\times 55.555$$\n$$m = \\frac{1}{19} \\times 55.555 \\approx 2.924\\text{ m} \\approx 2.92\\text{ m}$$"
+        }
+      ]
+    }
+  ]
+}

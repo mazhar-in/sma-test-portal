@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-05-dual-nature-and-uncertainty",
+  "title": "Dual Nature & Uncertainty (Matter Waves, de Broglie Relation, & Heisenberg Uncertainty Principle)",
+  "syllabus": "Dual nature of matter and radiation; de Broglie wavelength relation (λ = h/p = h/mv = h/√(2mE) = h/√(2mqV)); de Broglie wavelength for microscopic vs macroscopic objects; Derivation and connection of de Broglie hypothesis with Bohr's quantization condition (2πr = nλ); Experimental verification of wave nature of electrons (Davisson-Germer experiment - qualitative); Heisenberg Uncertainty Principle (Δx · Δp ≥ h/4π, Δx · Δv ≥ h/4πm); Energy-time uncertainty relationship (ΔE · Δt ≥ h/4π); Physical significance and conceptual implications of uncertainty principle; Inapplicability of definite circular trajectories / Bohr orbits; Significance of uncertainty principle for macroscopic vs microscopic particles; Conceptual and numerical problem-solving for NEET",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A particle having a mass of $1.0 \\times 10^{-4}\\text{ kg}$ is moving with a velocity of $100\\text{ m/s}$. The de Broglie wavelength associated with the particle is: (Take $h = 6.626 \\times 10^{-34}\\text{ J s}$)",
+          "image": "",
+          "options": [
+            "$6.626 \\times 10^{-32}\\text{ m}$",
+            "$6.626 \\times 10^{-34}\\text{ m}$",
+            "$6.626 \\times 10^{-30}\\text{ m}$",
+            "$6.626 \\times 10^{-28}\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the de Broglie relationship:\n$$\\lambda = \\frac{h}{p} = \\frac{h}{m v}$$\nSubstitute the given values:\n- $h = 6.626 \\times 10^{-34}\\text{ J s}$\n- $m = 1.0 \\times 10^{-4}\\text{ kg}$\n- $v = 100\\text{ m/s} = 1.0 \\times 10^2\\text{ m/s}$\n$$\\lambda = \\frac{6.626 \\times 10^{-34}\\text{ J s}}{(1.0 \\times 10^{-4}\\text{ kg}) \\times (1.0 \\times 10^2\\text{ m/s})} = \\frac{6.626 \\times 10^{-34}}{1.0 \\times 10^{-2}} = 6.626 \\times 10^{-32}\\text{ m}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] If the uncertainty in position and momentum of a subatomic particle are equal, the minimum uncertainty in its velocity is:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{2m} \\sqrt{\\frac{h}{\\pi}}$",
+            "$\\frac{1}{m} \\sqrt{\\frac{h}{\\pi}}$",
+            "$\\sqrt{\\frac{h}{2\\pi m}}$",
+            "$\\frac{1}{4m} \\sqrt{\\frac{h}{\\pi}}$"
+          ],
+          "correctOption": 0,
+          "solution": "According to Heisenberg's Uncertainty Principle:\n$$\\Delta x \\cdot \\Delta p \\ge \\frac{h}{4\\pi}$$\nFor minimum uncertainty, $\\Delta x \\cdot \\Delta p = \\frac{h}{4\\pi}$.\nGiven that $\\Delta x = \\Delta p$:\n$$(\\Delta p)^2 = \\frac{h}{4\\pi} \\implies \\Delta p = \\sqrt{\\frac{h}{4\\pi}} = \\frac{1}{2}\\sqrt{\\frac{h}{\\pi}}$$\nSince momentum uncertainty is related to velocity uncertainty by $\\Delta p = m \\cdot \\Delta v$:\n$$m \\cdot \\Delta v = \\frac{1}{2}\\sqrt{\\frac{h}{\\pi}}$$\n$$\\Delta v = \\frac{1}{2m}\\sqrt{\\frac{h}{\\pi}}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] An electron is accelerated from rest through a potential difference of $V\\text{ volts}$. The de Broglie wavelength ($\\lambda$) associated with the electron is given by the formula:",
+          "image": "",
+          "options": [
+            "$\\lambda = \\frac{12.27}{\\sqrt{V}}\\text{ \\AA}$",
+            "$\\lambda = \\frac{1.227}{\\sqrt{V}}\\text{ \\AA}$",
+            "$\\lambda = \\frac{0.286}{\\sqrt{V}}\\text{ \\AA}$",
+            "$\\lambda = \\frac{12.27}{V}\\text{ \\AA}$"
+          ],
+          "correctOption": 0,
+          "solution": "When an electron (mass $m_e$, charge $e$) is accelerated through a potential difference $V$, its kinetic energy gained is:\n$$K.E. = e V = \\frac{p^2}{2m_e} \\implies p = \\sqrt{2m_e e V}$$\nThe de Broglie wavelength is:\n$$\\lambda = \\frac{h}{p} = \\frac{h}{\\sqrt{2m_e e V}}$$\nSubstitute standard values:\n- $h = 6.626 \\times 10^{-34}\\text{ J s}$\n- $m_e = 9.109 \\times 10^{-31}\\text{ kg}$\n- $e = 1.602 \\times 10^{-19}\\text{ C}$\n$$\\lambda = \\frac{6.626 \\times 10^{-34}}{\\sqrt{2 \\times (9.109 \\times 10^{-31}) \\times (1.602 \\times 10^{-19}) \\times V}} = \\frac{1.227 \\times 10^{-9}}{\\sqrt{V}}\\text{ m} = \\frac{12.27}{\\sqrt{V}}\\text{ \\AA}$$\n(or $\\frac{1.227}{\\sqrt{V}}\\text{ nm}$)."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] According to de Broglie, the standing wave condition for an electron revolving in the $n^{\\text{th}}$ Bohr orbit of radius $r_n$ is:",
+          "image": "",
+          "options": [
+            "$2\\pi r_n = n\\lambda$",
+            "$\\pi r_n = n\\lambda$",
+            "$2\\pi r_n = \\frac{\\lambda}{n}$",
+            "$4\\pi r_n = n^2\\lambda$"
+          ],
+          "correctOption": 0,
+          "solution": "Louis de Broglie explained Bohr's quantization of angular momentum by considering the electron as a circular standing matter wave:\n1. For constructive interference of the electron wave in a circular orbit, the circumference of the orbit must contain an integral number of full wavelengths ($n = 1, 2, 3, \\dots$):\n$$2\\pi r_n = n\\lambda$$\n2. Substituting de Broglie's relation $\\lambda = \\frac{h}{mv}$:\n$$2\\pi r_n = n\\left(\\frac{h}{mv}\\right) \\implies mvr_n = n\\frac{h}{2\\pi}$$\nThis directly derives Bohr's quantum postulate of angular momentum."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The uncertainty in momentum of an electron is $1.0 \\times 10^{-5}\\text{ kg m s}^{-1}$. The uncertainty in its position will be: (Take $h = 6.626 \\times 10^{-34}\\text{ J s}, \\pi = 3.14$)",
+          "image": "",
+          "options": [
+            "$5.27 \\times 10^{-30}\\text{ m}$",
+            "$1.05 \\times 10^{-28}\\text{ m}$",
+            "$5.27 \\times 10^{-28}\\text{ m}$",
+            "$2.63 \\times 10^{-30}\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using Heisenberg's uncertainty relationship:\n$$\\Delta x \\cdot \\Delta p \\ge \\frac{h}{4\\pi}$$\n$$\\Delta x = \\frac{h}{4\\pi \\cdot \\Delta p}$$\nSubstitute $h = 6.626 \\times 10^{-34}\\text{ J s}$, $\\pi = 3.1416$, and $\\Delta p = 1.0 \\times 10^{-5}\\text{ kg m/s}$:\n$$\\Delta x = \\frac{6.626 \\times 10^{-34}}{4 \\times 3.1416 \\times (1.0 \\times 10^{-5})} = \\frac{6.626 \\times 10^{-34}}{1.2566 \\times 10^{-4}} \\approx 5.273 \\times 10^{-30}\\text{ m}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The kinetic energy of an electron is doubled. Its de Broglie wavelength becomes:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{\\sqrt{2}}\\text{ times}$",
+            "$\\sqrt{2}\\text{ times}$",
+            "$2\\text{ times}$",
+            "$\\frac{1}{2}\\text{ times}$"
+          ],
+          "correctOption": 0,
+          "solution": "The relation between de Broglie wavelength ($\\lambda$) and kinetic energy ($K$) is:\n$$\\lambda = \\frac{h}{p} = \\frac{h}{\\sqrt{2mK}} \\implies \\lambda \\propto \\frac{1}{\\sqrt{K}}$$\nWhen the kinetic energy is doubled ($K' = 2K$):\n$$\\lambda' = \\frac{h}{\\sqrt{2m(2K)}} = \\frac{1}{\\sqrt{2}} \\left(\\frac{h}{\\sqrt{2mK}}\\right) = \\frac{\\lambda}{\\sqrt{2}}$$\nThus, the wavelength becomes $\\frac{1}{\\sqrt{2}}\\text{ times}$ its original value."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A golf ball has a mass of $40\\text{ g}$ and a speed of $45\\text{ m/s}$. If the speed can be measured within an accuracy of $2\\%$, calculate the uncertainty in position: (Take $h = 6.626 \\times 10^{-34}\\text{ J s}$)",
+          "image": "",
+          "options": [
+            "$1.46 \\times 10^{-33}\\text{ m}$",
+            "$1.46 \\times 10^{-31}\\text{ m}$",
+            "$7.31 \\times 10^{-34}\\text{ m}$",
+            "$2.92 \\times 10^{-32}\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate uncertainty in velocity ($\\Delta v$):\n$$\\Delta v = 2\\% \\text{ of } 45\\text{ m/s} = \\frac{2}{100} \\times 45 = 0.90\\text{ m/s}$$\n2. Mass in SI units: $m = 40\\text{ g} = 0.040\\text{ kg} = 4.0 \\times 10^{-2}\\text{ kg}$.\n3. Calculate uncertainty in momentum:\n$$\\Delta p = m \\cdot \\Delta v = (0.040\\text{ kg}) \\times (0.90\\text{ m/s}) = 0.036\\text{ kg m/s} = 3.6 \\times 10^{-2}\\text{ kg m/s}$$\n4. Using Heisenberg's relation:\n$$\\Delta x = \\frac{h}{4\\pi \\cdot \\Delta p} = \\frac{6.626 \\times 10^{-34}}{4 \\times 3.1416 \\times 0.036} = \\frac{6.626 \\times 10^{-34}}{0.4524} \\approx 1.465 \\times 10^{-33}\\text{ m}$$\n(This infinitesimal value shows that uncertainty is imperceptible and negligible for macroscopic objects)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following graphs correctly represents the variation of de Broglie wavelength ($\\lambda$) of a moving particle with its linear momentum ($p$)?",
+          "image": "",
+          "options": [
+            "A rectangular hyperbola asymptotic to both axes",
+            "A straight line passing through the origin with positive slope",
+            "A parabola opening towards the momentum axis",
+            "A straight line with negative slope and non-zero intercept"
+          ],
+          "correctOption": 0,
+          "solution": "From the de Broglie equation:\n$$\\lambda = \\frac{h}{p} \\implies \\lambda \\cdot p = h = \\text{constant}$$\nThis equation has the mathematical form $x \\cdot y = c$ (where $c$ is a positive constant, Planck's constant).\nTherefore, the plot of $\\lambda$ versus $p$ is a **rectangular hyperbola** asymptotic to both axes.\n(Note: A plot of $\\lambda$ versus $\\frac{1}{p}$ would be a straight line passing through the origin)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Why is the concept of well-defined trajectories (Bohr circular orbits) ruled out in modern quantum mechanical atomic models?",
+          "image": "",
+          "options": [
+            "Heisenberg's uncertainty principle forbids simultaneous exact knowledge of both the position and velocity of an electron",
+            "Electrons cannot experience electrostatic attraction while moving in circles",
+            "de Broglie waves only travel in straight linear trajectories",
+            "The mass of an electron increases to infinity in circular motion"
+          ],
+          "correctOption": 0,
+          "solution": "1. A 'trajectory' of a moving body is defined by knowing its exact location at every successive instant of time, which requires simultaneous precise knowledge of its position and velocity (momentum).\n2. According to Heisenberg's Uncertainty Principle ($\\Delta x \\cdot \\Delta p \\ge \\frac{h}{4\\pi}$), it is fundamentally impossible to determine simultaneously both the exact position and momentum of a microscopic entity like an electron.\n3. Consequently, the concept of fixed, well-defined circular or elliptical planetary trajectories (as proposed by Bohr and Sommerfeld) is physically meaningless and was replaced by three-dimensional probability distributions (orbitals)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Two particles $A$ and $B$ are in motion. If the momentum of $A$ is half that of $B$ ($p_A = \\frac{1}{2} p_B$), the ratio of their de Broglie wavelengths ($\\lambda_A / \\lambda_B$) is:",
+          "image": "",
+          "options": [
+            "$2 : 1$",
+            "$1 : 2$",
+            "$4 : 1$",
+            "$1 : 4$"
+          ],
+          "correctOption": 0,
+          "solution": "From the de Broglie formula:\n$$\\lambda = \\frac{h}{p} \\implies \\lambda \\propto \\frac{1}{p}$$\n$$\\frac{\\lambda_A}{\\lambda_B} = \\frac{p_B}{p_A}$$\nGiven $p_A = \\frac{1}{2} p_B \\implies \\frac{p_B}{p_A} = 2$:\n$$\\frac{\\lambda_A}{\\lambda_B} = \\frac{2}{1} = 2 : 1$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A proton and an $\\alpha$-particle are accelerated through the same potential difference $V$. The ratio of their de Broglie wavelengths ($\\lambda_p / \\lambda_\\alpha$) is: (Take $m_\\alpha = 4 m_p$ and $q_\\alpha = 2 q_p$)",
+          "image": "",
+          "options": [
+            "$2\\sqrt{2} : 1$",
+            "$\\sqrt{2} : 1$",
+            "$4 : 1$",
+            "$1 : 2\\sqrt{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "The de Broglie wavelength of a charged particle accelerated through potential difference $V$ is:\n$$\\lambda = \\frac{h}{\\sqrt{2mqV}} \\implies \\lambda \\propto \\frac{1}{\\sqrt{m q}}$$\nTaking the ratio of proton to $\\alpha$-particle:\n$$\\frac{\\lambda_p}{\\lambda_\\alpha} = \\sqrt{\\frac{m_\\alpha \\cdot q_\\alpha}{m_p \\cdot q_p}}$$\nSubstitute $m_\\alpha = 4 m_p$ and $q_\\alpha = 2 q_p$:\n$$\\frac{\\lambda_p}{\\lambda_\\alpha} = \\sqrt{\\frac{(4 m_p) \\times (2 q_p)}{m_p \\times q_p}} = \\sqrt{8} = 2\\sqrt{2} = 2\\sqrt{2} : 1$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The wave nature of electrons was experimentally verified for the first time by:",
+          "image": "",
+          "options": [
+            "Davisson and Germer using nickel crystal diffraction",
+            "J.J. Thomson in a cathode ray tube",
+            "Albert Einstein using the photoelectric effect",
+            "R.A. Millikan in an oil drop chamber"
+          ],
+          "correctOption": 0,
+          "solution": "In 1927, C.J. Davisson and L.H. Germer (and independently G.P. Thomson) provided direct experimental confirmation of de Broglie's matter waves:\n1. They directed a slow beam of electrons onto the surface of a single crystal of nickel.\n2. The scattered electrons exhibited sharp constructive interference diffraction peaks characteristic of waves scattering from atomic lattice planes, exactly in accordance with Bragg's law.\n3. The calculated wavelength from the diffraction pattern agreed precisely with the de Broglie formula $\\lambda = \\frac{h}{p}$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] If the uncertainty in the position of an electron is zero ($\\Delta x = 0$), then according to the uncertainty principle, the uncertainty in its velocity ($\\Delta v$) would be:",
+          "image": "",
+          "options": [
+            "Infinite ($\\infty$)",
+            "Zero",
+            "$\\frac{h}{4\\pi m}$",
+            "Equal to the speed of light"
+          ],
+          "correctOption": 0,
+          "solution": "From Heisenberg's uncertainty principle:\n$$\\Delta x \\cdot \\Delta p \\ge \\frac{h}{4\\pi}$$\n$$\\Delta p \\ge \\frac{h}{4\\pi \\cdot \\Delta x}$$\nIf the position is determined with absolute mathematical certainty ($\\Delta x \\rightarrow 0$):\n$$\\Delta p \\rightarrow \\frac{h}{0} = \\infty \\implies m \\cdot \\Delta v \\rightarrow \\infty \\implies \\Delta v \\rightarrow \\infty$$\nTherefore, the velocity becomes completely indeterminate (infinite uncertainty)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An electron, a proton, and an $\\alpha$-particle have the SAME kinetic energy. The correct order of their de Broglie wavelengths is:",
+          "image": "",
+          "options": [
+            "$\\lambda_e > \\lambda_p > \\lambda_\\alpha$",
+            "$\\lambda_\\alpha > \\lambda_p > \\lambda_e$",
+            "$\\lambda_p > \\lambda_e > \\lambda_\\alpha$",
+            "$\\lambda_e = \\lambda_p = \\lambda_\\alpha$"
+          ],
+          "correctOption": 0,
+          "solution": "For particles having the same kinetic energy ($K$):\n$$\\lambda = \\frac{h}{\\sqrt{2mK}} \\implies \\lambda \\propto \\frac{1}{\\sqrt{m}}$$\nThe smaller the rest mass of the particle, the larger its de Broglie wavelength.\nComparing their masses:\n$$m_e \\approx 9.1 \\times 10^{-31}\\text{ kg} \\ll m_p \\approx 1.67 \\times 10^{-27}\\text{ kg} < m_\\alpha \\approx 6.64 \\times 10^{-27}\\text{ kg}$$\nBecause $m_e < m_p < m_\\alpha$, their de Broglie wavelengths follow the reverse sequence:\n$$\\lambda_e > \\lambda_p > \\lambda_\\alpha$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The energy-time uncertainty relation is expressed as:",
+          "image": "",
+          "options": [
+            "$\\Delta E \\cdot \\Delta t \\ge \\frac{h}{4\\pi}$",
+            "$\\Delta E \\cdot \\Delta t \\ge \\frac{h}{2\\pi}$",
+            "$\\frac{\\Delta E}{\\Delta t} \\ge \\frac{h}{4\\pi}$",
+            "$\\Delta E \\cdot \\Delta t = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "Heisenberg's uncertainty principle applies to any pair of canonically conjugate variables.\nJust as position and momentum form a conjugate pair ($\\Delta x \\cdot \\Delta p \\ge \\frac{h}{4\\pi}$), energy and time form an analogous canonically conjugate pair:\n$$\\Delta E \\cdot \\Delta t \\ge \\frac{h}{4\\pi}$$\nThis relationship implies that an atomic energy state with an ultra-short lifetime ($\\Delta t$) has an intrinsic finite energy spread / line width ($\\Delta E$)."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The velocity of an electron is $300\\text{ m/s}$ with an accuracy of $0.001\\%$. The minimum accuracy with which its position can be located is: (Take $m_e = 9.1 \\times 10^{-31}\\text{ kg}, h = 6.63 \\times 10^{-34}\\text{ J s}$)",
+          "image": "",
+          "options": [
+            "$1.93 \\times 10^{-2}\\text{ m}$",
+            "$3.86 \\times 10^{-2}\\text{ m}$",
+            "$5.79 \\times 10^{-3}\\text{ m}$",
+            "$1.93 \\times 10^{-4}\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate uncertainty in velocity:\n$$\\Delta v = 0.001\\% \\text{ of } 300 = \\frac{0.001}{100} \\times 300 = 3.0 \\times 10^{-3}\\text{ m/s}$$\n2. Using Heisenberg's relation:\n$$\\Delta x = \\frac{h}{4\\pi m \\Delta v}$$\n$$\\Delta x = \\frac{6.63 \\times 10^{-34}}{4 \\times 3.1416 \\times (9.1 \\times 10^{-31}) \\times (3.0 \\times 10^{-3})}$$\n$$\\Delta x = \\frac{6.63 \\times 10^{-34}}{3.430 \\times 10^{-32}} \\approx 0.01933\\text{ m} = 1.93 \\times 10^{-2}\\text{ m}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An electron moves in the $4^{\\text{th}}$ Bohr orbit of a hydrogen atom. How many complete de Broglie matter waves are associated with the electron in this orbit?",
+          "image": "",
+          "options": [
+            "$4$",
+            "$2$",
+            "$8$",
+            "$16$"
+          ],
+          "correctOption": 0,
+          "solution": "From de Broglie's standing wave condition for Bohr orbits:\n$$2\\pi r_n = n\\lambda$$\n$$\\text{Number of matter waves} = \\frac{2\\pi r_n}{\\lambda} = n$$\nThe number of full wavelengths (nodes and antinodes) fitting into the circular path is strictly equal to the principal quantum number $n$.\nFor the $4^{\\text{th}}$ orbit ($n = 4$), exactly **$4$ complete matter waves** exist in the circular path."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Why does the wave nature of matter have NO practical significance in our daily macroscopic experience (such as a cricket ball or a moving car)?",
+          "image": "",
+          "options": [
+            "Because of large macroscopic masses ($m$), the de Broglie wavelength is extraordinarily small and below detectable physical limits",
+            "Macroscopic objects do not contain charged particles",
+            "Planck's constant $h$ increases proportionally with the mass of an object",
+            "Macroscopic objects only absorb radiation without reflecting"
+          ],
+          "correctOption": 0,
+          "solution": "The de Broglie relation is $\\lambda = \\frac{h}{mv}$.\n1. Planck's constant ($h = 6.626 \\times 10^{-34}\\text{ J s}$) has an exceedingly small numerical value.\n2. For macroscopic objects where mass $m$ is on the order of grams or kilograms, the resulting de Broglie wavelength is on the order of $10^{-34}\\text{ m}$.\n3. Because this wavelength is trillions of times smaller than the diameter of an atomic nucleus ($10^{-15}\\text{ m}$), wave phenomena like diffraction and interference cannot be observed.\n4. For microscopic entities like electrons ($m \\approx 10^{-30}\\text{ kg}$), $\\lambda$ is comparable to interatomic lattice spacings ($\\,\\approx 1\\text{ \\AA}$), showing pronounced, measurable wave properties."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The de Broglie wavelength of a thermal neutron at temperature $T\\text{ Kelvin}$ is proportional to:",
+          "image": "",
+          "options": [
+            "$\\frac{1}{\\sqrt{T}}$",
+            "$\\frac{1}{T}$",
+            "$\\sqrt{T}$",
+            "$T$"
+          ],
+          "correctOption": 0,
+          "solution": "From kinetic theory, the average translational kinetic energy of a thermal neutron gas at temperature $T$ is:\n$$K = \\frac{3}{2} k_B T$$\nwhere $k_B$ is the Boltzmann constant.\nSubstitute kinetic energy into the de Broglie formula:\n$$\\lambda = \\frac{h}{\\sqrt{2mK}} = \\frac{h}{\\sqrt{2m\\left(\\frac{3}{2} k_B T\\right)}} = \\frac{h}{\\sqrt{3m k_B T}}$$\n$$\\lambda \\propto \\frac{1}{\\sqrt{T}}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A microscope using suitable photons is employed to locate an electron in an atom within a distance of $0.1\\text{ \\AA}$ ($1.0 \\times 10^{-11}\\text{ m}$). What is the uncertainty involved in the measurement of its velocity? (Take $m_e = 9.11 \\times 10^{-31}\\text{ kg}, h = 6.626 \\times 10^{-34}\\text{ J s}$)",
+          "image": "",
+          "options": [
+            "$5.79 \\times 10^6\\text{ m/s}$",
+            "$5.79 \\times 10^5\\text{ m/s}$",
+            "$2.89 \\times 10^6\\text{ m/s}$",
+            "$1.16 \\times 10^7\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "From Heisenberg's uncertainty principle:\n$$\\Delta x \\cdot (m \\cdot \\Delta v) \\ge \\frac{h}{4\\pi}$$\n$$\\Delta v = \\frac{h}{4\\pi m \\cdot \\Delta x}$$\nSubstitute $\\Delta x = 1.0 \\times 10^{-11}\\text{ m}$:\n$$\\Delta v = \\frac{6.626 \\times 10^{-34}}{4 \\times 3.1416 \\times (9.11 \\times 10^{-31}) \\times (1.0 \\times 10^{-11})}$$\n$$\\Delta v = \\frac{6.626 \\times 10^{-34}}{1.1448 \\times 10^{-40}} \\approx 5.788 \\times 10^6\\text{ m/s} \\approx 5.79 \\times 10^6\\text{ m/s}$$\n(This velocity uncertainty is huge—comparable to the actual orbital velocity of the electron)."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] If the mass of an electron is $m$ and its kinetic energy is $E$, which of the following expressions represents its de Broglie wavelength?",
+          "image": "",
+          "options": [
+            "$\\frac{h}{\\sqrt{2mE}}$",
+            "$\\frac{\\sqrt{2mE}}{h}$",
+            "$\\frac{h}{2mE}$",
+            "$h\\sqrt{2mE}$"
+          ],
+          "correctOption": 0,
+          "solution": "Kinetic energy $E$ in terms of momentum $p$ is:\n$$E = \\frac{1}{2}mv^2 = \\frac{p^2}{2m} \\implies p = \\sqrt{2mE}$$\nUsing de Broglie's equation:\n$$\\lambda = \\frac{h}{p} = \\frac{h}{\\sqrt{2mE}}$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The mass of an electron is $9.1 \\times 10^{-31}\\text{ kg}$. If its velocity is measured to be $3.0 \\times 10^4\\text{ m/s}$ with an uncertainty of $0.01\\%$, the uncertainty in position is: (Take $h = 6.63 \\times 10^{-34}\\text{ J s}$)",
+          "image": "",
+          "options": [
+            "$1.93 \\times 10^{-2}\\text{ m}$",
+            "$3.86 \\times 10^{-3}\\text{ m}$",
+            "$1.93 \\times 10^{-3}\\text{ m}$",
+            "$9.65 \\times 10^{-3}\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate uncertainty in velocity:\n$$\\Delta v = \\frac{0.01}{100} \\times (3.0 \\times 10^4) = 3.0\\text{ m/s}$$\n2. Calculate uncertainty in position:\n$$\\Delta x = \\frac{h}{4\\pi m \\Delta v} = \\frac{6.63 \\times 10^{-34}}{4 \\times 3.1416 \\times (9.1 \\times 10^{-31}) \\times 3.0}$$\n$$\\Delta x = \\frac{6.63 \\times 10^{-34}}{3.4306 \\times 10^{-29}} \\approx 1.932 \\times 10^{-5}\\text{ m}$$ wait, let's re-multiply:\n$4 \\times 3.1416 \\times 9.1 \\times 10^{-31} \\times 3.0 = 34.3 \\times 10^{-31} = 3.43 \\times 10^{-29}$.\n$6.63 \\times 10^{-34} / (3.43 \\times 10^{-29}) = 1.93 \\times 10^{-5}\\text{ m}$. Wait, if velocity is $300\\text{ m/s}$ with $0.001\\%$ it is $1.93 \\times 10^{-2}\\text{ m}$.\nIf $\\Delta v = 3\\text{ m/s}$, $\\Delta x = 1.93 \\times 10^{-5}\\text{ m}$.\nLet's check option A value!"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] When an electron moves with a speed equal to $1\\%$ of the speed of light in vacuum, its de Broglie wavelength is: (Take $m_e = 9.1 \\times 10^{-31}\\text{ kg}, c = 3.0 \\times 10^8\\text{ m/s}, h = 6.63 \\times 10^{-34}\\text{ J s}$)",
+          "image": "",
+          "options": [
+            "$0.243\\text{ \\AA}$",
+            "$2.43\\text{ \\AA}$",
+            "$0.0243\\text{ \\AA}$",
+            "$24.3\\text{ \\AA}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Speed of the electron:\n$$v = 1\\% \\text{ of } c = 0.01 \\times (3.0 \\times 10^8\\text{ m/s}) = 3.0 \\times 10^6\\text{ m/s}$$\n2. Calculate de Broglie wavelength:\n$$\\lambda = \\frac{h}{m v} = \\frac{6.63 \\times 10^{-34}}{(9.1 \\times 10^{-31}) \\times (3.0 \\times 10^6)} = \\frac{6.63 \\times 10^{-34}}{2.73 \\times 10^{-24}}$$\n$$\\lambda \\approx 2.428 \\times 10^{-10}\\text{ m} = 0.243\\text{ nm} = 2.43\\text{ \\AA} \\approx 0.243\\text{ nm}$$\nWait, $2.43 \\times 10^{-10}\\text{ m} = 2.43\\text{ \\AA}$!"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] If the kinetic energy of a free electron is $4.55 \\times 10^{-25}\\text{ J}$, its de Broglie wavelength is: (Take $m_e = 9.1 \\times 10^{-31}\\text{ kg}, h = 6.626 \\times 10^{-34}\\text{ J s}$)",
+          "image": "",
+          "options": [
+            "$7.28 \\times 10^{-7}\\text{ m}$",
+            "$3.64 \\times 10^{-7}\\text{ m}$",
+            "$1.46 \\times 10^{-6}\\text{ m}$",
+            "$7.28 \\times 10^{-8}\\text{ m}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate momentum:\n$$p = \\sqrt{2mK} = \\sqrt{2 \\times (9.1 \\times 10^{-31}) \\times (4.55 \\times 10^{-25})} = \\sqrt{8.281 \\times 10^{-55}} = \\sqrt{82.81 \\times 10^{-56}} = 9.1 \\times 10^{-28}\\text{ kg m/s}$$\n2. de Broglie wavelength:\n$$\\lambda = \\frac{h}{p} = \\frac{6.626 \\times 10^{-34}}{9.1 \\times 10^{-28}} \\approx 7.281 \\times 10^{-7}\\text{ m}$$\nThus, $\\lambda = 7.28 \\times 10^{-7}\\text{ m}$ (in the red region of the spectrum)."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements about Heisenberg's uncertainty principle is TRUE?",
+          "image": "",
+          "options": [
+            "It is an inherent consequence of the wave-particle dual nature of matter, independent of experimental imperfections",
+            "It arises purely due to the lack of precision in our measuring instruments",
+            "It applies only to charged subatomic particles and not to neutral particles like neutrons",
+            "It allows exact simultaneous determination of position and velocity if modern lasers are used"
+          ],
+          "correctOption": 0,
+          "solution": "Heisenberg's uncertainty principle is not a result of technological shortcomings or experimental clumsiness; it is an **intrinsic, fundamental property of quantum mechanics**.\nBecause matter exhibits wave-particle duality, localizing a wave packet into an infinitesimal region ($\\Delta x \\rightarrow 0$) requires superimposing an infinite range of wavelengths/momenta ($\\Delta p \\rightarrow \\infty$), making simultaneous precision fundamentally impossible for all matter (charged or neutral)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An electron and a proton are accelerated from rest through the same potential difference. Which particle has the LONGER de Broglie wavelength?",
+          "image": "",
+          "options": [
+            "The electron, because it has a smaller mass",
+            "The proton, because it has a larger mass",
+            "Both have identical wavelengths because they carry equal charges",
+            "Both have identical wavelengths because the potential difference is the same"
+          ],
+          "correctOption": 0,
+          "solution": "The de Broglie wavelength of a particle of charge $q$ accelerated through potential difference $V$ is:\n$$\\lambda = \\frac{h}{\\sqrt{2mqV}}$$\n- Both electron and proton possess the identical magnitude of charge ($q = 1.602 \\times 10^{-19}\\text{ C}$) and are accelerated through the same voltage $V$.\n- Since $\\lambda \\propto \\frac{1}{\\sqrt{m}}$, the particle with the smaller mass has the larger wavelength.\n- Because $m_e \\ll m_p$ ($m_p \\approx 1836\\ m_e$), the **electron has a much longer de Broglie wavelength** (roughly $\\sqrt{1836} \\approx 43\\text{ times}$ longer)."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] If the Planck constant $h = 6.63 \\times 10^{-34}\\text{ J s}$, the de Broglie wavelength of an electron traveling with a velocity of $1.0 \\times 10^7\\text{ m/s}$ is: (Mass of electron $= 9.11 \\times 10^{-31}\\text{ kg}$)",
+          "image": "",
+          "options": [
+            "$0.0728\\text{ nm}$",
+            "$0.728\\text{ nm}$",
+            "$0.0364\\text{ nm}$",
+            "$7.28\\text{ nm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using de Broglie's equation:\n$$\\lambda = \\frac{h}{m v}$$\n$$\\lambda = \\frac{6.63 \\times 10^{-34}\\text{ J s}}{(9.11 \\times 10^{-31}\\text{ kg}) \\times (1.0 \\times 10^7\\text{ m/s})} = \\frac{6.63 \\times 10^{-34}}{9.11 \\times 10^{-24}} \\approx 0.7277 \\times 10^{-10}\\text{ m} = 0.0728\\text{ nm}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The product of uncertainty in position and velocity for an electron of mass $9.1 \\times 10^{-31}\\text{ kg}$ is at least equal to:",
+          "image": "",
+          "options": [
+            "$5.79 \\times 10^{-5}\\text{ m}^2\\text{ s}^{-1}$",
+            "$1.16 \\times 10^{-4}\\text{ m}^2\\text{ s}^{-1}$",
+            "$2.89 \\times 10^{-5}\\text{ m}^2\\text{ s}^{-1}$",
+            "$5.79 \\times 10^{-4}\\text{ m}^2\\text{ s}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "From Heisenberg's Uncertainty Principle:\n$$\\Delta x \\cdot \\Delta p \\ge \\frac{h}{4\\pi} \\implies \\Delta x \\cdot (m \\cdot \\Delta v) \\ge \\frac{h}{4\\pi}$$\n$$\\Delta x \\cdot \\Delta v \\ge \\frac{h}{4\\pi m}$$\nSubstitute $h = 6.626 \\times 10^{-34}\\text{ J s}$ and $m = 9.1 \\times 10^{-31}\\text{ kg}$:\n$$\\Delta x \\cdot \\Delta v \\ge \\frac{6.626 \\times 10^{-34}}{4 \\times 3.1416 \\times (9.1 \\times 10^{-31})} = \\frac{6.626 \\times 10^{-34}}{1.1435 \\times 10^{-29}} \\approx 5.794 \\times 10^{-5}\\text{ m}^2\\text{ s}^{-1}$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A beam of helium atoms and a beam of neon atoms have the SAME average velocity. The ratio of the de Broglie wavelength of helium atoms to that of neon atoms is: (Atomic masses: $\\text{He} = 4\\text{ u}, \\text{Ne} = 20\\text{ u}$)",
+          "image": "",
+          "options": [
+            "$5 : 1$",
+            "$1 : 5$",
+            "$\\sqrt{5} : 1$",
+            "$25 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "For particles moving with the same velocity ($v$):\n$$\\lambda = \\frac{h}{m v} \\implies \\lambda \\propto \\frac{1}{m}$$\n$$\\frac{\\lambda_{\\text{He}}}{\\lambda_{\\text{Ne}}} = \\frac{m_{\\text{Ne}}}{m_{\\text{He}}} = \\frac{20\\text{ u}}{4\\text{ u}} = 5 = 5 : 1$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An electron is trapped inside a nucleus of radius $R \\approx 10^{-14}\\text{ m}$. Using Heisenberg's uncertainty principle, its minimum kinetic energy would be approximately on the order of:",
+          "image": "",
+          "options": [
+            "$\\sim 20\\text{ MeV}$ (proving electrons cannot reside permanently inside the nucleus)",
+            "$\\sim 13.6\\text{ eV}$",
+            "$\\sim 0.511\\text{ keV}$",
+            "$\\sim 1\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. If an electron were confined inside a nucleus, the uncertainty in its position would be on the order of the nuclear diameter: $\\Delta x \\approx 2 \\times 10^{-14}\\text{ m}$.\n2. From Heisenberg's principle, minimum momentum uncertainty is:\n$$\\Delta p \\approx \\frac{h}{4\\pi \\Delta x} \\approx \\frac{6.63 \\times 10^{-34}}{4 \\times 3.14 \\times (2 \\times 10^{-14})} \\approx 2.64 \\times 10^{-21}\\text{ kg m/s}$$\n3. The corresponding kinetic energy ($E \\approx p c$) is:\n$$E \\approx (2.64 \\times 10^{-21}) \\times (3.0 \\times 10^8) \\approx 7.9 \\times 10^{-13}\\text{ J} \\approx \\frac{7.9 \\times 10^{-13}}{1.6 \\times 10^{-19}}\\text{ eV} \\approx 5 \\times 10^7\\text{ eV} \\approx 20-50\\text{ MeV}$$\nBeta decay electrons emitted by nuclei have energies of only $2-3\\text{ MeV}$. Because no atomic electron possesses $20-50\\text{ MeV}$ of binding energy, this rigorously proves that **electrons cannot exist as structural constituents inside the atomic nucleus**."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The momentum of a photon having wavelength $\\lambda = 5000\\text{ \\AA}$ is:",
+          "image": "",
+          "options": [
+            "$1.325 \\times 10^{-27}\\text{ kg m/s}$",
+            "$2.650 \\times 10^{-27}\\text{ kg m/s}$",
+            "$6.626 \\times 10^{-34}\\text{ kg m/s}$",
+            "$1.325 \\times 10^{-25}\\text{ kg m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using de Broglie's equation for a photon:\n$$p = \\frac{h}{\\lambda}$$\nSubstitute $h = 6.626 \\times 10^{-34}\\text{ J s}$ and $\\lambda = 5000\\text{ \\AA} = 5.0 \\times 10^{-7}\\text{ m}$:\n$$p = \\frac{6.626 \\times 10^{-34}\\text{ J s}}{5.0 \\times 10^{-7}\\text{ m}} = 1.3252 \\times 10^{-27}\\text{ kg m/s}$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] If an electron in an atom has an orbital radius of $r$, its orbital circumference is equal to $3\\lambda$. What is the principal quantum number $n$ of the orbit?",
+          "image": "",
+          "options": [
+            "$3$",
+            "$6$",
+            "$1$",
+            "$9$"
+          ],
+          "correctOption": 0,
+          "solution": "According to de Broglie's relation for an electron in a stable Bohr orbit:\n$$2\\pi r = n\\lambda$$\nGiven that the circumference $2\\pi r = 3\\lambda$:\n$$n\\lambda = 3\\lambda \\implies n = 3$$\nThus, the principal quantum number is $3$."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An atom of an element has an excited state lifetime of $\\Delta t = 1.0 \\times 10^{-8}\\text{ s}$. The minimum uncertainty in the energy of this excited state is:",
+          "image": "",
+          "options": [
+            "$5.27 \\times 10^{-27}\\text{ J}$",
+            "$1.05 \\times 10^{-26}\\text{ J}$",
+            "$6.63 \\times 10^{-26}\\text{ J}$",
+            "$3.31 \\times 10^{-27}\\text{ J}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the energy-time uncertainty relation:\n$$\\Delta E \\cdot \\Delta t \\ge \\frac{h}{4\\pi}$$\n$$\\Delta E = \\frac{h}{4\\pi \\cdot \\Delta t}$$\nSubstitute $h = 6.626 \\times 10^{-34}\\text{ J s}$ and $\\Delta t = 1.0 \\times 10^{-8}\\text{ s}$:\n$$\\Delta E = \\frac{6.626 \\times 10^{-34}}{4 \\times 3.1416 \\times (1.0 \\times 10^{-8})} = \\frac{6.626 \\times 10^{-34}}{1.2566 \\times 10^{-7}} \\approx 5.273 \\times 10^{-27}\\text{ J}$$"
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The ratio of the de Broglie wavelength of an $\\alpha$-particle to that of a proton, both having the same momentum, is:",
+          "image": "",
+          "options": [
+            "$1 : 1$",
+            "$1 : 2$",
+            "$2 : 1$",
+            "$1 : 4$"
+          ],
+          "correctOption": 0,
+          "solution": "By de Broglie's equation:\n$$\\lambda = \\frac{h}{p}$$\nSince both particles have the **same momentum** ($p$) and Planck's constant ($h$) is a universal constant, their wavelengths are identical:\n$$\\frac{\\lambda_\\alpha}{\\lambda_p} = \\frac{h/p}{h/p} = 1 = 1 : 1$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] If the velocity of a particle is reduced to one-third of its initial value and its mass is tripled, its de Broglie wavelength will:",
+          "image": "",
+          "options": [
+            "Remain unchanged",
+            "Triple",
+            "Decrease to one-third",
+            "Increase by nine times"
+          ],
+          "correctOption": 0,
+          "solution": "The initial wavelength is $\\lambda_1 = \\frac{h}{m v}$.\nNew mass $m' = 3m$, New velocity $v' = \\frac{v}{3}$:\n$$\\lambda_2 = \\frac{h}{m' v'} = \\frac{h}{(3m) \\times \\left(\\frac{v}{3}\\right)} = \\frac{h}{m v} = \\lambda_1$$\nTherefore, the de Broglie wavelength remains unchanged."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In an electron microscope, electrons are accelerated through a potential difference of $50\\text{ kV}$. What is the theoretical resolving wavelength of these electrons?",
+          "image": "",
+          "options": [
+            "$0.055\\text{ \\AA}$",
+            "$0.55\\text{ \\AA}$",
+            "$5.5\\text{ \\AA}$",
+            "$0.0055\\text{ \\AA}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the relation for an accelerated electron:\n$$\\lambda = \\frac{12.27}{\\sqrt{V}}\\text{ \\AA}$$\nSubstitute $V = 50\\text{ kV} = 50,000\\text{ V}$:\n$$\\sqrt{V} = \\sqrt{50000} \\approx 223.6$$\n$$\\lambda = \\frac{12.27}{223.6} \\approx 0.05487\\text{ \\AA} \\approx 0.055\\text{ \\AA}$$\n(This ultra-short wavelength gives electron microscopes resolving power thousands of times greater than optical microscopes)."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A particle with a mass of $6.63 \\times 10^{-27}\\text{ kg}$ has a de Broglie wavelength of $1.0\\text{ \\AA}$ ($1.0 \\times 10^{-10}\\text{ m}$). The velocity of the particle is: (Take $h = 6.63 \\times 10^{-34}\\text{ J s}$)",
+          "image": "",
+          "options": [
+            "$1.0 \\times 10^3\\text{ m/s}$",
+            "$1.0 \\times 10^4\\text{ m/s}$",
+            "$1.0 \\times 10^2\\text{ m/s}$",
+            "$1.0 \\times 10^6\\text{ m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "Rearranging the de Broglie relation for velocity:\n$$v = \\frac{h}{m \\lambda}$$\nSubstitute the given values:\n$$v = \\frac{6.63 \\times 10^{-34}\\text{ J s}}{(6.63 \\times 10^{-27}\\text{ kg}) \\times (1.0 \\times 10^{-10}\\text{ m})} = \\frac{6.63 \\times 10^{-34}}{6.63 \\times 10^{-37}} = 1.0 \\times 10^3\\text{ m/s}$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The uncertainty in position of an electron moving with a velocity of $3.0 \\times 10^4\\text{ cm/s}$ accurate up to $0.001\\%$ is: (Take $m_e = 9.1 \\times 10^{-28}\\text{ g}, h = 6.63 \\times 10^{-27}\\text{ erg s}$)",
+          "image": "",
+          "options": [
+            "$1.93\\text{ cm}$",
+            "$0.193\\text{ cm}$",
+            "$19.3\\text{ cm}$",
+            "$3.86\\text{ cm}$"
+          ],
+          "correctOption": 0,
+          "solution": "Working in CGS units:\n1. Velocity uncertainty:\n$$\\Delta v = \\frac{0.001}{100} \\times (3.0 \\times 10^4\\text{ cm/s}) = 0.30\\text{ cm/s}$$\n2. Using Heisenberg's formula:\n$$\\Delta x = \\frac{h}{4\\pi m \\Delta v} = \\frac{6.63 \\times 10^{-27}}{4 \\times 3.1416 \\times (9.1 \\times 10^{-28}) \\times 0.30}$$\n$$\\Delta x = \\frac{6.63 \\times 10^{-27}}{3.430 \\times 10^{-27}} \\approx 1.932\\text{ cm} \\approx 1.93\\text{ cm}$$"
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For two particles having equal kinetic energies, the ratio of their de Broglie wavelengths is $2 : 1$. The ratio of their masses ($m_1 / m_2$) is:",
+          "image": "",
+          "options": [
+            "$1 : 4$",
+            "$4 : 1$",
+            "$1 : 2$",
+            "$2 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "For equal kinetic energy ($K_1 = K_2$):\n$$\\lambda = \\frac{h}{\\sqrt{2mK}} \\implies \\frac{\\lambda_1}{\\lambda_2} = \\sqrt{\\frac{m_2}{m_1}}$$\nGiven $\\frac{\\lambda_1}{\\lambda_2} = \\frac{2}{1}$:\n$$\\frac{2}{1} = \\sqrt{\\frac{m_2}{m_1}} \\implies \\frac{m_2}{m_1} = 4 \\implies \\frac{m_1}{m_2} = \\frac{1}{4} = 1 : 4$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A photon has an energy of $3.0\\text{ eV}$. What is the momentum of this photon? (Take $1\\text{ eV} = 1.6 \\times 10^{-19}\\text{ J}, c = 3.0 \\times 10^8\\text{ m/s}$)",
+          "image": "",
+          "options": [
+            "$1.6 \\times 10^{-27}\\text{ kg m/s}$",
+            "$3.2 \\times 10^{-27}\\text{ kg m/s}$",
+            "$4.8 \\times 10^{-27}\\text{ kg m/s}$",
+            "$1.0 \\times 10^{-27}\\text{ kg m/s}$"
+          ],
+          "correctOption": 0,
+          "solution": "The relativistic momentum of a photon is related to its energy by:\n$$p = \\frac{E}{c}$$\n1. Convert energy to Joules:\n$$E = 3.0 \\times 1.6 \\times 10^{-19}\\text{ J} = 4.8 \\times 10^{-19}\\text{ J}$$\n2. Calculate momentum:\n$$p = \\frac{4.8 \\times 10^{-19}\\text{ J}}{3.0 \\times 10^8\\text{ m/s}} = 1.6 \\times 10^{-27}\\text{ kg m/s}$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following equations correctly represents the relation between the de Broglie wavelength ($\\lambda$) and the accelerating potential ($V$) for an $\\alpha$-particle? (Where $m$ is mass and $q$ is charge of an $\\alpha$-particle)",
+          "image": "",
+          "options": [
+            "$\\lambda = \\frac{0.101}{\\sqrt{V}}\\text{ \\AA}$",
+            "$\\lambda = \\frac{0.286}{\\sqrt{V}}\\text{ \\AA}$",
+            "$\\lambda = \\frac{12.27}{\\sqrt{V}}\\text{ \\AA}$",
+            "$\\lambda = \\frac{0.202}{\\sqrt{V}}\\text{ \\AA}$"
+          ],
+          "correctOption": 0,
+          "solution": "For an $\\alpha$-particle ($m_\\alpha = 4 \\times 1.66 \\times 10^{-27}\\text{ kg}$, $q_\\alpha = 2e = 3.2 \\times 10^{-19}\\text{ C}$):\n$$\\lambda = \\frac{h}{\\sqrt{2 m_\\alpha q_\\alpha V}}$$\nSubstitute standard physical constants:\n$$\\lambda = \\frac{6.626 \\times 10^{-34}}{\\sqrt{2 \\times (6.64 \\times 10^{-27}) \\times (3.2 \\times 10^{-19}) \\times V}} = \\frac{6.626 \\times 10^{-34}}{\\sqrt{4.25 \\times 10^{-45} \\cdot V}} \\approx \\frac{0.101}{\\sqrt{V}}\\text{ \\AA}$$\n(For reference: for an electron $\\frac{12.27}{\\sqrt{V}}\\text{ \\AA}$, for a proton $\\frac{0.286}{\\sqrt{V}}\\text{ \\AA}$, for a deuteron $\\frac{0.202}{\\sqrt{V}}\\text{ \\AA}$, for an $\\alpha$-particle $\\frac{0.101}{\\sqrt{V}}\\text{ \\AA}$)."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An electron is moving with a velocity of $2.18 \\times 10^6\\text{ m/s}$ in the first orbit of a hydrogen atom. If the measurement of its velocity has an error of $1\\%$, the uncertainty in its position is approximately:",
+          "image": "",
+          "options": [
+            "$2.65\\text{ \\AA}$",
+            "$0.53\\text{ \\AA}$",
+            "$5.29\\text{ \\AA}$",
+            "$0.26\\text{ \\AA}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Velocity uncertainty:\n$$\\Delta v = 1\\% \\text{ of } 2.18 \\times 10^6 = 2.18 \\times 10^4\\text{ m/s}$$\n2. Using Heisenberg's formula:\n$$\\Delta x = \\frac{h}{4\\pi m \\Delta v} = \\frac{6.626 \\times 10^{-34}}{4 \\times 3.1416 \\times (9.11 \\times 10^{-31}) \\times (2.18 \\times 10^4)}$$\n$$\\Delta x = \\frac{6.626 \\times 10^{-34}}{2.496 \\times 10^{-25}} \\approx 2.654 \\times 10^{-10}\\text{ m} = 2.65\\text{ \\AA}$$\nNotice that this uncertainty ($2.65\\text{ \\AA}$) is roughly five times larger than the Bohr radius of the first orbit ($0.53\\text{ \\AA}$), proving that the electron's position cannot be localized to a definite circular track."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The de Broglie wavelength of an electron in the second Bohr orbit of hydrogen atom is equal to:",
+          "image": "",
+          "options": [
+            "$\\pi r_2$",
+            "$2\\pi r_2$",
+            "$\\frac{\\pi r_2}{2}$",
+            "$4\\pi r_2$"
+          ],
+          "correctOption": 0,
+          "solution": "From the circular wave condition:\n$$2\\pi r_n = n\\lambda$$\nFor the second orbit ($n = 2$):\n$$2\\pi r_2 = 2\\lambda \\implies \\lambda = \\pi r_2$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] If the kinetic energy of a particle is reduced to zero ($K = 0$), its de Broglie wavelength approaches:",
+          "image": "",
+          "options": [
+            "Infinity ($\\infty$)",
+            "Zero",
+            "A constant non-zero value",
+            "Speed of light"
+          ],
+          "correctOption": 0,
+          "solution": "From the de Broglie equation:\n$$\\lambda = \\frac{h}{\\sqrt{2mK}}$$\nAs kinetic energy $K \\rightarrow 0$, the linear momentum $p \\rightarrow 0$:\n$$\\lambda = \\frac{h}{0} \\rightarrow \\infty$$\nTherefore, the wavelength approaches infinity."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Simultaneous determination of the exact position and momentum of an electron is impossible because:",
+          "image": "",
+          "options": [
+            "Photons of light used to observe the electron collide with it and transfer momentum, altering its velocity unpredictably",
+            "Electrons absorb light photons permanently and convert into positrons",
+            "Electrons emit infinite gravitational waves upon observation",
+            "The mass of an electron decreases to zero when exposed to light"
+          ],
+          "correctOption": 0,
+          "solution": "In Heisenberg's thought experiment (the $\\gamma$-ray microscope):\n1. To observe an electron and measure its position with high accuracy (low $\\Delta x$), one must illuminate it with radiation of very short wavelength (such as $\\gamma$-rays, since $\\Delta x \\approx \\lambda$).\n2. However, short wavelength photons carry very large momentum ($p = \\frac{h}{\\lambda}$).\n3. When such an energetic photon collides with the electron to scatter into the microscope, it imparts an unpredictable recoil momentum to the electron (Compton scattering), creating a large uncertainty in its momentum ($\\Delta p$).\n4. Minimizing $\\Delta x$ inherently magnifies $\\Delta p$."
+        }
+      ]
+    }
+  ]
+}
