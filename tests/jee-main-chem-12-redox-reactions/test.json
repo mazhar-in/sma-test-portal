@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-chem-12-redox-reactions",
+  "title": "Redox Reactions (Oxidation Numbers & Balancing Redox Equations)",
+  "syllabus": "Concept of oxidation and reduction; Redox reactions in terms of electron transfer; Oxidation number rules, fractional and exceptional oxidation numbers (CrO5, H2SO5, Fe3O4, C3O2, Br3O8, S4O6^2-); Types of redox reactions: combination, decomposition, displacement, and disproportionation/comproportionation; Balancing redox reactions by ion-electron (half-reaction) method and oxidation state method in acidic and alkaline media; Calculation of n-factor (valency factor) and equivalent mass for oxidizing and reducing agents; Redox titrations (permanganometry, dichromometry, iodometry, iodimetry)",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The oxidation states of chromium in chromium peroxide ($\text{CrO}_5$) and sulfur in Caro's acid ($\text{H}_2\text{SO}_5$) are respectively:",
+          "image": "",
+          "options": [
+            "$+6$ and $+6$",
+            "$+10$ and $+8$",
+            "$+6$ and $+8$",
+            "$+4$ and $+6$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In $\\text{CrO}_5$ (butterfly structure), chromium is bonded to one oxo-oxygen ($=\\text{O}$, oxidation state $-2$) and four peroxo-oxygens (two peroxo linkages $-\\text{O}-\\text{O}-$, each oxygen has oxidation state $-1$):\n$$x + 1(-2) + 4(-1) = 0 \\implies x - 6 = 0 \\implies x = +6$$\n2. In Caro's acid ($\\text{H}_2\\text{SO}_5$, peroxomonosulfuric acid), sulfur has tetrahedral coordination with two oxo-oxygens ($=\\text{O}$, oxidation state $-2$), one hydroxy oxygen ($-\\text{OH}$, oxidation state $-2$), and one peroxo group ($-\\text{O}-\\text{O}-\\text{H}$, where both peroxo oxygens have oxidation state $-1$):\n$$2(+1) + x + 3(-2) + 2(-1) = 0 \\implies 2 + x - 6 - 2 = 0 \\implies x = +6$$\nTherefore, the oxidation states are $+6$ and $+6$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] When the following equation is balanced in acidic medium:\n$$x\\text{MnO}_4^- + y\\text{C}_2\text{O}_4^{2-} + z\\text{H}^+ \\rightarrow a\\text{Mn}^{2+} + b\\text{CO}_2 + c\\text{H}_2\text{O}$$\nThe values of the stoichiometric coefficients $x, y,$ and $z$ are respectively:",
+          "image": "",
+          "options": [
+            "$2, 5, 16$",
+            "$5, 2, 16$",
+            "$2, 5, 8$",
+            "$1, 5, 8$"
+          ],
+          "correctOption": 0,
+          "solution": "Balance the reaction using the ion-electron method in acidic medium:\n1. Reduction half-reaction:\n$$\\text{MnO}_4^- + 8\\text{H}^+ + 5e^- \\rightarrow \\text{Mn}^{2+} + 4\\text{H}_2\\text{O} \\quad \\text{--- (1)}$$\n2. Oxidation half-reaction:\n$$\\text{C}_2\\text{O}_4^{2-} \\rightarrow 2\\text{CO}_2 + 2e^- \\quad \\text{--- (2)}$$\n3. Equalize electron transfer by multiplying (1) by 2 and (2) by 5:\n$$2\\text{MnO}_4^- + 16\\text{H}^+ + 10e^- \\rightarrow 2\\text{Mn}^{2+} + 8\\text{H}_2\\text{O}$$\n$$5\\text{C}_2\\text{O}_4^{2-} \\rightarrow 10\\text{CO}_2 + 10e^-$$\nAdding both half-reactions:\n$$2\\text{MnO}_4^- + 5\\text{C}_2\\text{O}_4^{2-} + 16\\text{H}^+ \\rightarrow 2\\text{Mn}^{2+} + 10\\text{CO}_2 + 8\\text{H}_2\\text{O}$$\nComparing coefficients: $x = 2, y = 5, z = 16$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Which of the following reactions is an example of a disproportionation reaction?",
+          "image": "",
+          "options": [
+            "$3\\text{Cl}_2 + 6\\text{OH}^- \\rightarrow 5\\text{Cl}^- + \\text{ClO}_3^- + 3\\text{H}_2\\text{O}$",
+            "$2\\text{H}_2\\text{O} \\rightarrow 2\\text{H}_2 + \\text{O}_2$",
+            "$\\text{Zn} + 2\\text{HCl} \\rightarrow \\text{ZnCl}_2 + \\text{H}_2$",
+            "$\\text{AgNO}_3 + \\text{NaCl} \\rightarrow \\text{AgCl} + \\text{NaNO}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "A disproportionation reaction is a specific type of redox reaction in which an element in a given intermediate oxidation state is simultaneously oxidized and reduced to two different products.\nIn reaction A:\n$$3\\text{Cl}_2 + 6\\text{OH}^- \\rightarrow 5\\text{Cl}^- + \\text{ClO}_3^- + 3\\text{H}_2\\text{O}$$\n- Elemental chlorine ($\\text{Cl}_2$) has an oxidation state of $0$.\n- In chloride ($\\text{Cl}^-$), the oxidation state is $-1$ (reduction).\n- In chlorate ($\\text{ClO}_3^-$), the oxidation state is $+5$ (oxidation).\nBecause chlorine undergoes both reduction and oxidation, it is a disproportionation reaction."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The $n$-factor of ferrous oxalate ($\text{FeC}_2\text{O}_4$) when oxidized completely to $\text{Fe}^{3+}$ and $\text{CO}_2$ in acidic medium is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$1$",
+            "$2$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "In acidic medium, both the cation and the anion in ferrous oxalate undergo oxidation:\n1. $\\text{Fe}^{2+} \\rightarrow \\text{Fe}^{3+} + e^-$ (change in oxidation state $= 3 - 2 = 1$; produces $1e^-$)\n2. $\\text{C}_2\\text{O}_4^{2-} \\rightarrow 2\\text{CO}_2 + 2e^-$ (carbon goes from $+3$ to $+4$; $2 \\times (4 - 3) = 2$; produces $2e^-$)\nTotal electrons released per mole of $\\text{FeC}_2\\text{O}_4$:\n$$\\text{Total electrons} = 1 + 2 = 3$$\nTherefore, the $n$-factor of $\\text{FeC}_2\\text{O}_4$ is $3$, and its equivalent mass is $\\frac{M}{3}$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The average oxidation state of carbon in carbon suboxide ($\text{C}_3\text{O}_2$) and bromine in tribromooctoxide ($\text{Br}_3\text{O}_8$) are respectively:",
+          "image": "",
+          "options": [
+            "$+\\frac{4}{3}$ and $+\\frac{16}{3}$",
+            "$+2$ and $+6$",
+            "$+\\frac{2}{3}$ and $+4$",
+            "$+\\frac{4}{3}$ and $+6$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $\\text{C}_3\\text{O}_2$ (structure: $\\text{O}=\\text{C}=\\text{C}^*=\\text{C}=\\text{O}$):\nLet average oxidation number of $\\text{C}$ be $x$:\n$$3x + 2(-2) = 0 \\implies 3x - 4 = 0 \\implies x = +\\frac{4}{3}$$\n(Individually, the two terminal carbons are in $+2$ and the central carbon is in $0$ state).\n2. For $\\text{Br}_3\\text{O}_8$ (structure: $(\\text{O}_3\\text{Br})-\\text{BrO}_2-(\\text{BrO}_3)$):\nLet average oxidation number of $\\text{Br}$ be $y$:\n$$3y + 8(-2) = 0 \\implies 3y - 16 = 0 \\implies y = +\\frac{16}{3}$$\n(Individually, the two terminal bromines are in $+6$ and the central bromine is in $+4$ state).\nThus, the average oxidation states are $+\\frac{4}{3}$ and $+\\frac{16}{3}$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] When potassium dichromate ($\text{K}_2\text{Cr}_2\text{O}_7$) acts as an oxidizing agent in acidic solution, its equivalent weight is equal to: (where $M$ is the molar mass of $\text{K}_2\text{Cr}_2\text{O}_7$)",
+          "image": "",
+          "options": [
+            "$\\frac{M}{6}$",
+            "$\\frac{M}{3}$",
+            "$\\frac{M}{5}$",
+            "$\\frac{M}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "In acidic medium, the reduction half-reaction of dichromate is:\n$$\\text{Cr}_2\\text{O}_7^{2-} + 14\\text{H}^+ + 6e^- \\rightarrow 2\\text{Cr}^{3+} + 7\\text{H}_2\\text{O}$$\n- Chromium in $\\text{Cr}_2\\text{O}_7^{2-}$ is in the $+6$ oxidation state.\n- Chromium in $\\text{Cr}^{3+}$ is in the $+3$ oxidation state.\n- Total change in oxidation number per formula unit $= 2 \\times (6 - 3) = 6$.\nThus, the $n$-factor is $6$.\n$$\\text{Equivalent weight} = \\frac{\\text{Molar mass}}{n\\text{-factor}} = \\frac{M}{6}$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Consider the following redox reaction in basic medium:\n$$\\text{MnO}_4^- + \\text{I}^- \\rightarrow \\text{MnO}_2 + \\text{IO}_3^-$$\nThe number of moles of $\\text{OH}^-$ produced or consumed when $1\\text{ mole of } \text{MnO}_4^-$ reacts completely is:",
+          "image": "",
+          "options": [
+            "$1\\text{ mole of } \\text{OH}^- \\text{ produced}$",
+            "$2\\text{ moles of } \\text{OH}^- \\text{ consumed}$",
+            "$2\\text{ moles of } \\text{OH}^- \\text{ produced}$",
+            "$4\\text{ moles of } \\text{OH}^- \\text{ produced}$"
+          ],
+          "correctOption": 0,
+          "solution": "Balance the reaction in basic medium using the ion-electron method:\n1. Reduction half-reaction:\n$$\\text{MnO}_4^- + 2\\text{H}_2\\text{O} + 3e^- \\rightarrow \\text{MnO}_2 + 4\\text{OH}^- \\quad (n = 3)$$\n2. Oxidation half-reaction:\n$$\\text{I}^- + 6\\text{OH}^- \\rightarrow \\text{IO}_3^- + 3\\text{H}_2\\text{O} + 6e^- \\quad (n = 6)$$\nMultiply the reduction half-reaction by 2 to balance electrons:\n$$2\\text{MnO}_4^- + 4\\text{H}_2\\text{O} + 6e^- \\rightarrow 2\\text{MnO}_2 + 8\\text{OH}^-$$\n$$+\\quad \\text{I}^- + 6\\text{OH}^- \\rightarrow \\text{IO}_3^- + 3\\text{H}_2\\text{O} + 6e^-$$\nNet balanced equation:\n$$2\\text{MnO}_4^- + \\text{I}^- + \\text{H}_2\\text{O} \\rightarrow 2\\text{MnO}_2 + \\text{IO}_3^- + 2\\text{OH}^-$$\nFor $2\\text{ moles of } \\text{MnO}_4^-$, $2\\text{ moles of } \\text{OH}^-$ are produced.\nTherefore, for $1\\text{ mole of } \\text{MnO}_4^-$, exactly $1\\text{ mole of } \\text{OH}^-$ is produced on the product side."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following compounds CANNOT act as an oxidizing agent?",
+          "image": "",
+          "options": [
+            "$\\text{H}_2\\text{S}$",
+            "$\\text{KMnO}_4$",
+            "$\\text{HNO}_3$",
+            "$\\text{K}_2\\text{Cr}_2\\text{O}_7$"
+          ],
+          "correctOption": 0,
+          "solution": "An oxidizing agent must be capable of undergoing reduction (gaining electrons, lowering its oxidation number).\n- In $\\text{H}_2\\text{S}$, sulfur is in its minimum possible oxidation state of $-2$ ($ns^2 np^4$ valence configuration, cannot accept more electrons).\n- Since sulfur cannot decrease its oxidation state below $-2$, it cannot be reduced; it can only be oxidized (act as a reducing agent).\n- In $\\text{KMnO}_4$, $\\text{Mn}$ is in its maximum state $+7$; in $\\text{HNO}_3$, $\\text{N}$ is in $+5$; in $\\text{K}_2\\text{Cr}_2\\text{O}_7$, $\\text{Cr}$ is in $+6$. All of these can only accept electrons and act as oxidizing agents."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In the reaction:\n$$3\\text{Br}_2 + 6\\text{CO}_3^{2-} + 3\\text{H}_2\\text{O} \\rightarrow 5\\text{Br}^- + \\text{BrO}_3^- + 6\\text{HCO}_3^-$$\nBromine is:",
+          "image": "",
+          "options": [
+            "Both oxidized and reduced",
+            "Only oxidized",
+            "Only reduced",
+            "Neither oxidized nor reduced"
+          ],
+          "correctOption": 0,
+          "solution": "Determine the oxidation states of bromine:\n- In reactant $\\text{Br}_2$: oxidation state $= 0$\n- In product bromide ($\\text{Br}^-$): oxidation state $= -1$\n- In product bromate ($\\text{BrO}_3^-$): oxidation state $= +5$\nSince the oxidation state of bromine decreases from $0$ to $-1$ in forming $\\text{Br}^-$ (reduction) and simultaneously increases from $0$ to $+5$ in forming $\\text{BrO}_3^-$ (oxidation), bromine is both oxidized and reduced (disproportionation)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The oxidation state of iron in the brown ring complex $[\text{Fe}(\text{H}_2\text{O})_5(\text{NO})]\text{SO}_4$ is:",
+          "image": "",
+          "options": [
+            "$+1$",
+            "$+2$",
+            "$+3$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "In the brown ring complex $[\\text{Fe}(\\text{H}_2\\text{O})_5(\\text{NO})]\\text{SO}_4$:\n1. The sulfate ion is $\\text{SO}_4^{2-}$, so the coordination entity carries a charge of $+2$: $[\\text{Fe}(\\text{H}_2\\text{O})_5(\\text{NO})]^{2+}$.\n2. Water is a neutral ligand (charge $= 0$).\n3. Spectroscopic and magnetic measurements confirm that nitric oxide exists as the nitrosonium cation ($\\text{NO}^+$, charge $= +1$), resulting from electron transfer to $\\text{Fe}^{2+}$.\n4. Let the oxidation state of iron be $x$:\n$$x + 5(0) + (+1) = +2 \\implies x + 1 = +2 \\implies x = +1$$\nThus, iron exists in the unusual $+1$ oxidation state ($3d^7$ high spin configuration with 3 unpaired electrons, $\\mu \\approx 3.87\\text{ BM}$)."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The number of moles of electrons transferred when $1\\text{ mole of } \text{KMnO}_4$ is reduced to $\text{MnSO}_4$ in acidic medium is:",
+          "image": "",
+          "options": [
+            "$5$",
+            "$3$",
+            "$1$",
+            "$6$"
+          ],
+          "correctOption": 0,
+          "solution": "In potassium permanganate ($\\text{KMnO}_4$), manganese is in the $+7$ oxidation state.\nIn manganese(II) sulfate ($\\text{MnSO}_4$), manganese is in the $+2$ oxidation state.\nThe reduction half-reaction in acidic medium is:\n$$\\text{MnO}_4^- + 8\\text{H}^+ + 5e^- \\rightarrow \\text{Mn}^{2+} + 4\\text{H}_2\\text{O}$$\nChange in oxidation state $= 7 - 2 = 5$.\nTherefore, exactly $5\\text{ moles of electrons}$ are transferred per mole of $\\text{KMnO}_4$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the reaction: $\text{H}_2\text{O}_2 + \text{Cl}_2 \rightarrow 2\text{HCl} + \text{O}_2$, hydrogen peroxide acts as:",
+          "image": "",
+          "options": [
+            "A reducing agent",
+            "An oxidizing agent",
+            "A dehydrating agent",
+            "A catalyst"
+          ],
+          "correctOption": 0,
+          "solution": "Trace the oxidation numbers:\n- In $\\text{H}_2\\text{O}_2$, oxygen has an oxidation state of $-1$.\n- In product $\\text{O}_2(g)$, oxygen has an oxidation state of $0$.\n- In reactant $\\text{Cl}_2$, chlorine has an oxidation state of $0$.\n- In product $\\text{HCl}$, chlorine has an oxidation state of $-1$.\nBecause oxygen's oxidation state increases from $-1$ to $0$, $\\text{H}_2\\text{O}_2$ is oxidized and reduces chlorine from $0$ to $-1$. Hence, $\\text{H}_2\\text{O}_2$ acts as a reducing agent."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The reaction between $\text{CuSO}_4$ and $\text{KI}$ produces a white precipitate of $\text{Cu}_2\text{I}_2$ and liberates iodine. In this reaction, the stoichiometric coefficient of $\text{KI}$ in the balanced equation for $2\\text{ moles of } \text{CuSO}_4$ is:",
+          "image": "",
+          "options": [
+            "$4$",
+            "$2$",
+            "$1$",
+            "$3$"
+          ],
+          "correctOption": 0,
+          "solution": "The balanced chemical reaction is:\n$$2\\text{CuSO}_4 + 4\\text{KI} \\rightarrow \\text{Cu}_2\\text{I}_2 \\downarrow + \\text{I}_2 + 2\\text{K}_2\\text{SO}_4$$\n1. $\\text{Cu}^{2+}$ is reduced to $\\text{Cu}^+$ in cuprous iodide ($\\text{Cu}_2\\text{I}_2$).\n2. Part of the iodide ($\\text{I}^-$) is oxidized to elemental iodine ($\\text{I}_2$), while the rest acts as a precipitating counter-ion in $\\text{Cu}_2\\text{I}_2$.\nFor $2\\text{ moles of } \\text{CuSO}_4$, exactly $4\\text{ moles of } \\text{KI}$ are consumed."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] When thiosulfate ion ($\text{S}_2\text{O}_3^{2-}$) reacts with $\text{I}_2$ in iodometric titrations, it forms tetrathionate ion ($\text{S}_4\text{O}_6^{2-}$). The change in the average oxidation state of sulfur per sulfur atom is:",
+          "image": "",
+          "options": [
+            "$+0.5$",
+            "$+1.0$",
+            "$+2.0$",
+            "$+0.25$"
+          ],
+          "correctOption": 0,
+          "solution": "The oxidation half-reaction is:\n$$2\\text{S}_2\text{O}_3^{2-} \\rightarrow \\text{S}_4\text{O}_6^{2-} + 2e^-$$\n1. In $\\text{S}_2\\text{O}_3^{2-}$: $2x + 3(-2) = -2 \\implies 2x = +4 \\implies x = +2$.\n2. In $\\text{S}_4\\text{O}_6^{2-}$: $4y + 6(-2) = -2 \\implies 4y = +10 \\implies y = +2.5$.\nChange in average oxidation state per sulfur atom:\n$$\\Delta = 2.5 - 2.0 = +0.5$$\n(The $n$-factor of $\\text{S}_2\\text{O}_3^{2-}$ is $2 \\times 0.5 = 1$)."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For the reaction:\n$$\text{As}_2\text{S}_3 + \text{HNO}_3 \\rightarrow \text{H}_3\text{AsO}_4 + \text{H}_2\text{SO}_4 + \text{NO}$$ \nThe $n$-factor of arsenic trisulfide ($\text{As}_2\text{S}_3$) is:",
+          "image": "",
+          "options": [
+            "$28$",
+            "$14$",
+            "$22$",
+            "$10$"
+          ],
+          "correctOption": 0,
+          "solution": "In $\\text{As}_2\\text{S}_3$, arsenic is in $+3$ and sulfur is in $-2$.\nBoth elements undergo oxidation:\n1. Arsenic: $2\\text{As}^{3+} \\rightarrow 2\\text{As}^{5+}$ (in $\\text{H}_3\\text{AsO}_4$)\n$$\\text{Electrons lost} = 2 \\times (5 - 3) = 4e^-$$\n2. Sulfur: $3\\text{S}^{2-} \\rightarrow 3\\text{S}^{6+}$ (in $\\text{H}_2\\text{SO}_4$)\n$$\\text{Electrons lost} = 3 \\times [6 - (-2)] = 3 \\times 8 = 24e^-$$\nTotal electrons lost per formula unit of $\\text{As}_2\\text{S}_3$:\n$$n\\text{-factor} = 4 + 24 = 28$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] What are the oxidation states of the two sulfur atoms in sodium thiosulfate ($\text{Na}_2\text{S}_2\text{O}_3$)?",
+          "image": "",
+          "options": [
+            "$+5$ and $-1$",
+            "$+6$ and $-2$",
+            "$+4$ and $0$",
+            "$+2$ and $+2$"
+          ],
+          "correctOption": 0,
+          "solution": "Sodium thiosulfate ($\\text{Na}_2\\text{S}_2\\text{O}_3$) is structurally derived by replacing one oxygen atom of a sulfate ion with a sulfur atom: $[\\text{S}-\\text{SO}_3]^{2-}$.\n- The central sulfur atom is bonded to three highly electronegative oxygen atoms and one terminal sulfur atom.\n- By formal oxidation state assignment considering relative electronegativities (or coordinate bonding):\n  - Central sulfur: $+5$ (or $+6$ depending on convention, but $+5$ and $-1$ is the canonical resonance description with coordinate $\\text{S}\\rightarrow\\text{S}$ bond, or $+6$ and $-2$ assuming terminal $\\text{S}^{2-}$ sulfide-like character).\n  - In standard JEE syllabus, the coordinate bond assigns $+5$ to the central sulfur and $-1$ to the terminal sulfur."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] In the balanced redox reaction:\n$$a\\text{Cr}_2\text{O}_7^{2-} + b\\text{Fe}^{2+} + c\\text{H}^+ \\rightarrow d\\text{Cr}^{3+} + e\\text{Fe}^{3+} + f\\text{H}_2\\text{O}$$\nThe ratio of $b$ to $a$ is:",
+          "image": "",
+          "options": [
+            "$6$",
+            "$3$",
+            "$2$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "Balance the half-reactions:\n1. Reduction: $\\text{Cr}_2\\text{O}_7^{2-} + 14\\text{H}^+ + 6e^- \\rightarrow 2\\text{Cr}^{3+} + 7\\text{H}_2\\text{O}$\n2. Oxidation: $\\text{Fe}^{2+} \\rightarrow \\text{Fe}^{3+} + e^-$\nMultiplying the oxidation reaction by 6 and adding to reduction:\n$$\\text{Cr}_2\\text{O}_7^{2-} + 6\\text{Fe}^{2+} + 14\\text{H}^+ \\rightarrow 2\\text{Cr}^{3+} + 6\\text{Fe}^{3+} + 7\\text{H}_2\\text{O}$$\nHere $a = 1$ and $b = 6$.\n$$\\text{Ratio } \\frac{b}{a} = \\frac{6}{1} = 6$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following compounds exhibits an oxidation state of oxygen other than $-2$?",
+          "image": "",
+          "options": [
+            "$\\text{OF}_2$",
+            "$\\text{H}_2\\text{O}$",
+            "$\\text{CO}_2$",
+            "$\\text{SO}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "Fluorine is the most electronegative element in the periodic table (electronegativity $= 4.0$), even more electronegative than oxygen (electronegativity $= 3.5$).\nIn oxygen difluoride ($\\text{OF}_2$), each fluorine atom has an oxidation number of $-1$:\n$$x + 2(-1) = 0 \\implies x = +2$$\nIn $\\text{H}_2\\text{O}$, $\\text{CO}_2$, and $\\text{SO}_2$, oxygen is more electronegative than the bonded atoms and possesses an oxidation number of $-2$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In neutral or faintly alkaline medium, $\text{KMnO}_4$ oxidizes thiosulfate ($\text{S}_2\text{O}_3^{2-}$) almost quantitatively into:",
+          "image": "",
+          "options": [
+            "$\\text{SO}_4^{2-}$",
+            "$\\text{S}_4\\text{O}_6^{2-}$",
+            "$\\text{SO}_3^{2-}$",
+            "$\\text{S}$"
+          ],
+          "correctOption": 0,
+          "solution": "The oxidation of thiosulfate depends strongly on the nature of the oxidizing agent and medium:\n1. With iodine ($\\text{I}_2$) in weak acid/neutral solution: oxidized to tetrathionate ($\\text{S}_4\\text{O}_6^{2-}$).\n2. With strong alkaline/neutral permanganate ($\\text{KMnO}_4$): thiosulfate is oxidized to sulfate ($\\text{SO}_4^{2-}$):\n$$8\\text{MnO}_4^- + 3\\text{S}_2\\text{O}_3^{2-} + \\text{H}_2\\text{O} \\rightarrow 8\\text{MnO}_2 + 6\\text{SO}_4^{2-} + 2\\text{OH}^-$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The $n$-factor of hydrazine ($\text{N}_2\text{H}_4$) when it is oxidized to $\text{N}_2$ is:",
+          "image": "",
+          "options": [
+            "$4$",
+            "$2$",
+            "$1$",
+            "$3$"
+          ],
+          "correctOption": 0,
+          "solution": "In hydrazine ($\\text{N}_2\\text{H}_4$):\n$$2x + 4(+1) = 0 \\implies 2x = -4 \\implies x = -2$$\nIn molecular nitrogen ($\\text{N}_2$):\n$$x = 0$$\nChange in oxidation state per nitrogen atom $= 0 - (-2) = 2$.\nSince each hydrazine molecule contains 2 nitrogen atoms:\n$$\\text{Total change in oxidation state} = 2 \\times 2 = 4$$\nThus, the $n$-factor of $\\text{N}_2\\text{H}_4$ is $4$."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the oxidation number of phosphorus in Marshall's and Caro's related oxyacid: pyrophosphoric acid ($\text{H}_4\text{P}_2\text{O}_7$).",
+          "image": "",
+          "correctValue": 5.0,
+          "solution": "In pyrophosphoric acid ($\\text{H}_4\\text{P}_2\\text{O}_7$):\n- Hydrogen is in $+1$ oxidation state.\n- Oxygen is in $-2$ oxidation state.\nLet the oxidation state of phosphorus be $x$:\n$$4(+1) + 2x + 7(-2) = 0$$\n$$4 + 2x - 14 = 0$$\n$$2x - 10 = 0 \\implies 2x = 10 \\implies x = +5.0$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the number of moles of $\text{KMnO}_4$ required to oxidize $1\text{ mole}$ of ferrous ion ($\text{Fe}^{2+}$) completely in acidic medium (in decimal form).",
+          "image": "",
+          "correctValue": 0.2,
+          "solution": "By equating equivalents:\n$$\\text{Equivalents of } \\text{KMnO}_4 = \\text{Equivalents of } \\text{Fe}^{2+}$$\n$$n_{\\text{KMnO}_4} \\times (n\\text{-factor})_{\\text{KMnO}_4} = n_{\\text{Fe}^{2+}} \\times (n\\text{-factor})_{\\text{Fe}^{2+}}$$\nIn acidic medium:\n- $(n\\text{-factor})_{\\text{KMnO}_4} = 5$ ($\\text{Mn}^{7+} \\rightarrow \\text{Mn}^{2+}$)\n- $(n\\text{-factor})_{\\text{Fe}^{2+}} = 1$ ($\\text{Fe}^{2+} \\rightarrow \\text{Fe}^{3+}$)\n$$n_{\\text{KMnO}_4} \\times 5 = 1.0 \\times 1$$\n$$n_{\\text{KMnO}_4} = \\frac{1}{5} = 0.2\\text{ mol}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Find the oxidation state of sulfur in the tetrathionate ion ($\text{S}_4\text{O}_6^{2-}$) (as an exact decimal).",
+          "image": "",
+          "correctValue": 2.5,
+          "solution": "Let the average oxidation state of sulfur in $\\text{S}_4\\text{O}_6^{2-}$ be $x$:\n$$4x + 6(-2) = -2$$\n$$4x - 12 = -2$$\n$$4x = 10 \\implies x = \\frac{10}{4} = 2.5$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] In the balanced ionic equation:\n$$\text{ClO}_3^- + 6\text{I}^- + 6\text{H}^+ \\rightarrow \text{Cl}^- + 3\text{I}_2 + 3\text{H}_2\text{O}$$\nFind the total number of electrons transferred during the complete reduction of $1\text{ mole of } \text{ClO}_3^-$.",
+          "image": "",
+          "correctValue": 6.0,
+          "solution": "In $\\text{ClO}_3^-$, chlorine has an oxidation number of $+5$.\nIn $\\text{Cl}^-$, chlorine has an oxidation number of $-1$.\nThe reduction half-reaction is:\n$$\\text{ClO}_3^- + 6\\text{H}^+ + 6e^- \\rightarrow \\text{Cl}^- + 3\\text{H}_2\\text{O}$$\nChange in oxidation number of chlorine $= 5 - (-1) = 6$.\nTherefore, $6.0\\text{ moles of electrons}$ are transferred."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Calculate the magnitude of change in oxidation number of nitrogen when $\text{HNO}_3$ is reduced to $\text{NO}$.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "1. In nitric acid ($\\text{HNO}_3$):\n$$1(+1) + x + 3(-2) = 0 \\implies x = +5$$\n2. In nitric oxide ($\\text{NO}$):\n$$y + 1(-2) = 0 \\implies y = +2$$\nMagnitude of change in oxidation state:\n$$|\\Delta| = |+5 - (+2)| = 3.0$$"
+        }
+      ]
+    }
+  ]
+}

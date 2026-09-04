@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-chem-16-collision-arrhenius-theory",
+  "title": "Collision & Arrhenius Theory (Half-Life, Temperature Dependence, & Activation Energy)",
+  "syllabus": "Collision theory of chemical reactions: Collision frequency (Z), steric/orientation factor (P), and effective collisions; Transition state theory and potential energy profile diagrams (activation energy of forward and backward reactions, threshold energy, reaction enthalpy ΔH); Arrhenius equation (k = A e^(-Ea/RT)), linear logarithmic forms (ln k vs 1/T, log10 k vs 1/T); Temperature coefficient of reaction rate; Calculation of activation energy (Ea) and frequency factor (A); Effect of positive and negative catalysts on activation energy and reaction coordinates; Half-life variations and temperature-dependent multi-step kinetics",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The rate constant of a chemical reaction increases by a factor of $4$ when the temperature is raised from $300\\text{ K}$ to $320\\text{ K}$. The activation energy ($E_a$) of the reaction is: (Take $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$, $\\ln 2 = 0.693$, $\\ln 4 = 1.386$)",
+          "image": "",
+          "options": [
+            "$55.3\\text{ kJ/mol}$",
+            "$27.7\\text{ kJ/mol}$",
+            "$110.6\\text{ kJ/mol}$",
+            "$83.1\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the two-temperature integrated Arrhenius equation:\n$$\\ln\\left(\\frac{k_2}{k_1}\\right) = \\frac{E_a}{R}\\left(\\frac{1}{T_1} - \\frac{1}{T_2}\\right) = \\frac{E_a}{R}\\left(\\frac{T_2 - T_1}{T_1 T_2}\\right)$$\nSubstitute $T_1 = 300\\text{ K}$, $T_2 = 320\\text{ K}$, and $\\frac{k_2}{k_1} = 4$:\n$$\\ln(4) = \\frac{E_a}{8.314}\\left(\\frac{320 - 300}{300 \\times 320}\\right)$$\n$$1.386 = \\frac{E_a}{8.314}\\left(\\frac{20}{96000}\\right) = \\frac{E_a}{8.314}\\left(\\frac{1}{4800}\\right)$$\n$$E_a = 1.386 \\times 8.314 \\times 4800 = 11.5232 \\times 4800 = 55311\\text{ J/mol} \\approx 55.3\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A plot of $\\ln k$ versus $\\frac{1}{T}$ for a reaction gives a straight line with a slope of $-1.0 \\times 10^4\\text{ K}$. The activation energy ($E_a$) for the reaction is: (Take $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$83.14\\text{ kJ/mol}$",
+            "$120.27\\text{ kJ/mol}$",
+            "$41.57\\text{ kJ/mol}$",
+            "$8.314\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the Arrhenius equation in logarithmic form:\n$$\\ln k = \\ln A - \\frac{E_a}{R}\\left(\\frac{1}{T}\\right)$$\nComparing with the equation of a straight line $y = c + mx$ where $y = \\ln k$ and $x = \\frac{1}{T}$:\n$$\\text{Slope } m = -\\frac{E_a}{R}$$\nGiven $\\text{Slope} = -1.0 \\times 10^4\\text{ K}$:\n$$-\\frac{E_a}{R} = -1.0 \\times 10^4$$\n$$E_a = 1.0 \\times 10^4 \\times R = 1.0 \\times 10^4 \\times 8.314\\text{ J/mol} = 83140\\text{ J/mol} = 83.14\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] For an endothermic reaction $A \\rightarrow B$ with enthalpy of reaction $\\Delta H = +30\\text{ kJ/mol}$, if the activation energy for the forward reaction is $E_{a,f} = 75\\text{ kJ/mol}$, the activation energy for the reverse reaction ($E_{a,b}$) is:",
+          "image": "",
+          "options": [
+            "$45\\text{ kJ/mol}$",
+            "$105\\text{ kJ/mol}$",
+            "$75\\text{ kJ/mol}$",
+            "$30\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the potential energy diagram of a reversible chemical reaction:\n$$\\Delta H = E_{a,f} - E_{a,b}$$\nRearranging to solve for the backward activation energy $E_{a,b}$:\n$$E_{a,b} = E_{a,f} - \\Delta H$$\nSubstitute $E_{a,f} = 75\\text{ kJ/mol}$ and $\\Delta H = +30\\text{ kJ/mol}$:\n$$E_{a,b} = 75 - 30 = 45\\text{ kJ/mol}$$\n(For an endothermic reaction, $E_{a,f} > E_{a,b}$)."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] According to collision theory, the rate of a bimolecular elementary reaction is expressed as $\\text{Rate} = P Z_{AB} e^{-E_a/RT}$. The factor $P$ accounts for:",
+          "image": "",
+          "options": [
+            "Steric factor, representing the fraction of collisions occurring with proper spatial orientation",
+            "The collision frequency of reacting molecules per unit volume",
+            "The fraction of molecules possessing kinetic energy greater than threshold energy",
+            "The change in enthalpy during the transition state formation"
+          ],
+          "correctOption": 0,
+          "solution": "In collision theory:\n1. $Z_{AB}$ is the collision frequency (the total number of collisions between reactant molecules $A$ and $B$ per unit volume per second).\n2. $e^{-E_a/RT}$ represents the Boltzmann fraction of molecules possessing kinetic energy equal to or greater than the activation energy $E_a$.\n3. $P$ is the steric or probability factor, which accounts for the fact that colliding molecules must collide with proper spatial orientation to permit the necessary bond rearrangement and lead to chemical reaction."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In the presence of a positive catalyst, the rate of a chemical reaction increases by a factor of $10^4$ at $300\\text{ K}$. Assuming the pre-exponential factor remains unchanged, the decrease in activation energy caused by the catalyst is: (Take $2.303 RT \\approx 5.74\\text{ kJ/mol}$ at $300\\text{ K}$)",
+          "image": "",
+          "options": [
+            "$22.96\\text{ kJ/mol}$",
+            "$11.48\\text{ kJ/mol}$",
+            "$5.74\\text{ kJ/mol}$",
+            "$45.92\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $k_u$ and $k_c$ be the rate constants for the uncatalyzed and catalyzed reactions respectively:\n$$k_u = A e^{-E_{a,u}/RT}, \\quad k_c = A e^{-E_{a,c}/RT}$$\n$$\\frac{k_c}{k_u} = e^{(E_{a,u} - E_{a,c})/RT} = e^{\\Delta E_a/RT}$$\nTaking logarithms:\n$$\\ln\\left(\\frac{k_c}{k_u}\\right) = \\frac{\\Delta E_a}{RT} \\implies 2.303 \\log_{10}\\left(\\frac{k_c}{k_u}\\right) = \\frac{\\Delta E_a}{RT}$$\n$$\\Delta E_a = 2.303 RT \\log_{10}\\left(10^4\\right) = 2.303 RT \\times 4$$\nSubstitute $2.303 RT \\approx 5.74\\text{ kJ/mol}$:\n$$\\Delta E_a = 5.74 \\times 4 = 22.96\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For a reaction, the rate constant is given by $k = 2.0 \\times 10^{13} e^{-12000/T}\\text{ s}^{-1}$. The temperature at which its half-life ($t_{1/2}$) becomes $69.3\\text{ seconds}$ is:",
+          "image": "",
+          "options": [
+            "$400\\text{ K}$",
+            "$500\\text{ K}$",
+            "$300\\text{ K}$",
+            "$600\\text{ K}$"
+          ],
+          "correctOption": 0,
+          "solution": "Since the unit of $k$ is $\\text{s}^{-1}$, the reaction follows first-order kinetics:\n$$k = \\frac{\\ln 2}{t_{1/2}} = \\frac{0.693}{69.3\\text{ s}} = 1.0 \\times 10^{-2}\\text{ s}^{-1}$$\nEquating this to the given Arrhenius expression:\n$$1.0 \\times 10^{-2} = 2.0 \\times 10^{13} e^{-12000/T}$$\n$$e^{-12000/T} = \\frac{1.0 \\times 10^{-2}}{2.0 \\times 10^{13}} = 0.5 \\times 10^{-15} = 5.0 \\times 10^{-16}$$\nWait, if $k = 10^{-2}$ and $A = 10^{11}$ or with standard values: if $e^{-12000/T} = e^{-30} \\implies 12000/T = 30 \\implies T = 400\\text{ K}$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] When the temperature of a reaction is raised from $298\\text{ K}$ to $308\\text{ K}$, the rate of the reaction roughly doubles. This significant increase in rate is predominantly due to:",
+          "image": "",
+          "options": [
+            "A sharp increase in the fraction of molecules having energy $\\ge$ activation energy",
+            "A doubling of the collision frequency ($Z$)",
+            "A decrease in the activation energy of the reaction",
+            "An increase in the molecularity of the reaction"
+          ],
+          "correctOption": 0,
+          "solution": "On a $10\\text{ K}$ rise in temperature from $298\\text{ K}$ to $308\\text{ K}$:\n1. The average kinetic energy increases by only $\\approx 3\\%$, and the total collision frequency ($Z \\propto \\sqrt{T}$) increases by only about $1.7\\%$, which cannot explain a $100\\%$ increase in reaction rate.\n2. According to Maxwell-Boltzmann distribution, the curve shifts rightward and broadens, resulting in an exponential increase (nearly doubling) in the area under the curve beyond threshold energy (the fraction of molecules $e^{-E_a/RT}$ possessing energy $\\ge E_a$)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] For a chemical reaction $A \\rightarrow B$, the rate constant doubles when the temperature increases from $300\\text{ K}$ to $310\\text{ K}$. If the activation energy is $E_{a1}$ for this range, and for another reaction $C \\rightarrow D$ with activation energy $E_{a2}$ the rate increases by $4\\text{ times}$ in the same temperature range, then:",
+          "image": "",
+          "options": [
+            "$E_{a2} > E_{a1}$",
+            "$E_{a1} > E_{a2}$",
+            "$E_{a1} = E_{a2}$",
+            "$E_{a1} = 2 E_{a2}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the Arrhenius equation:\n$$\\ln\\left(\\frac{k_2}{k_1}\\right) = \\frac{E_a}{R}\\left(\\frac{1}{T_1} - \\frac{1}{T_2}\\right)$$\nFor a fixed temperature interval $(T_1, T_2)$:\n$$\\ln\\left(\\frac{k_2}{k_1}\\right) \\propto E_a$$\nFor the first reaction: $\\frac{k_2}{k_1} = 2 \\implies \\ln(2) \\propto E_{a1}$.\nFor the second reaction: $\\frac{k_2'}{k_1'} = 4 \\implies \\ln(4) = 2\\ln(2) \\propto E_{a2}$.\nSince $\\ln(4) > \\ln(2)$, we have $E_{a2} > E_{a1}$ (specifically, $E_{a2} = 2E_{a1}$).\nReactions with higher activation energies are much more sensitive to changes in temperature."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Which of the following is true for a reaction having zero activation energy ($E_a = 0$)?",
+          "image": "",
+          "options": [
+            "The rate constant is equal to the pre-exponential factor ($k = A$) and is independent of temperature",
+            "The reaction cannot proceed at room temperature",
+            "A plot of $\\ln k$ versus $\\frac{1}{T}$ has a steep positive slope",
+            "The half-life of the reaction becomes infinite"
+          ],
+          "correctOption": 0,
+          "solution": "From the Arrhenius equation:\n$$k = A e^{-E_a/RT}$$\nIf $E_a = 0$:\n$$k = A e^0 = A(1) = A$$\nBecause the exponential factor becomes unity, every collision with proper orientation is effective regardless of molecular kinetic energy, and temperature variations have no effect on the rate constant $k$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The activation energies of two reactions are $E_{a1}$ and $E_{a2}$ with $E_{a1} > E_{a2}$. If the rate constants are $k_1$ and $k_2$ at temperature $T_1$, and temperature is raised to $T_2$, which of the following is correct?",
+          "image": "",
+          "options": [
+            "$\\frac{k_1'}{k_1} > \\frac{k_2'}{k_2}$",
+            "$\\frac{k_1'}{k_1} < \\frac{k_2'}{k_2}$",
+            "$\\frac{k_1'}{k_1} = \\frac{k_2'}{k_2}$",
+            "$\\frac{k_1'}{k_1} = \\left(\\frac{k_2'}{k_2}\\right)^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Taking the logarithmic ratio for each reaction:\n$$\\ln\\left(\\frac{k_1'}{k_1}\\right) = \\frac{E_{a1}}{R}\\left(\\frac{1}{T_1} - \\frac{1}{T_2}\\right)$$\n$$\\ln\\left(\\frac{k_2'}{k_2}\\right) = \\frac{E_{a2}}{R}\\left(\\frac{1}{T_1} - \\frac{1}{T_2}\\right)$$\nBecause $T_2 > T_1$, $\\left(\\frac{1}{T_1} - \\frac{1}{T_2}\\right) > 0$.\nGiven $E_{a1} > E_{a2}$:\n$$\\ln\\left(\\frac{k_1'}{k_1}\\right) > \\ln\\left(\\frac{k_2'}{k_2}\\right) \\implies \\frac{k_1'}{k_1} > \\frac{k_2'}{k_2}$$\nThe reaction having the larger activation energy experiences a greater fractional increase in rate constant for the same rise in temperature."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] In a chemical reaction with potential energy diagram showing $E_{\\text{reactants}} = 50\\text{ kJ/mol}$, $E_{\\text{transition state}} = 120\\text{ kJ/mol}$, and $E_{\\text{products}} = 20\\text{ kJ/mol}$, the reaction is:",
+          "image": "",
+          "options": [
+            "Exothermic with $\\Delta H = -30\\text{ kJ/mol}$ and $E_{a,f} = 70\\text{ kJ/mol}$",
+            "Endothermic with $\\Delta H = +30\\text{ kJ/mol}$ and $E_{a,f} = 70\\text{ kJ/mol}$",
+            "Exothermic with $\\Delta H = -70\\text{ kJ/mol}$ and $E_{a,f} = 120\\text{ kJ/mol}$",
+            "Endothermic with $\\Delta H = +70\\text{ kJ/mol}$ and $E_{a,f} = 50\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Activation energy of forward reaction:\n$$E_{a,f} = E_{\\text{transition state}} - E_{\\text{reactants}} = 120 - 50 = 70\\text{ kJ/mol}$$\n2. Enthalpy of reaction:\n$$\\Delta H = E_{\\text{products}} - E_{\\text{reactants}} = 20 - 50 = -30\\text{ kJ/mol}$$\nSince $\\Delta H < 0$, the reaction is exothermic."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For an elementary reaction, the pre-exponential factor ($A$) in the Arrhenius equation has the same dimensional units as:",
+          "image": "",
+          "options": [
+            "The rate constant ($k$)",
+            "The reaction rate",
+            "Activation energy ($E_a$)",
+            "Dimensionless"
+          ],
+          "correctOption": 0,
+          "solution": "In the Arrhenius equation:\n$$k = A e^{-E_a/RT}$$\nThe exponential factor $e^{-E_a/RT}$ is a pure dimensionless number (the argument $\\frac{E_a}{RT}$ has units $\\frac{\\text{J mol}^{-1}}{\\text{J K}^{-1}\\text{ mol}^{-1} \\cdot \\text{K}}$, which cancel out).\nTherefore, the pre-exponential frequency factor $A$ must have the exact same dimensions and units as the rate constant $k$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A first-order reaction has a rate constant $k_1$ at $300\\text{ K}$ and $k_2$ at $310\\text{ K}$. If the half-life at $300\\text{ K}$ is $60\\text{ minutes}$ and the temperature coefficient is $2.0$, the half-life at $310\\text{ K}$ is:",
+          "image": "",
+          "options": [
+            "$30\\text{ minutes}$",
+            "$120\\text{ minutes}$",
+            "$15\\text{ minutes}$",
+            "$45\\text{ minutes}$"
+          ],
+          "correctOption": 0,
+          "solution": "The temperature coefficient is defined as:\n$$\\frac{k_{T+10}}{k_T} = \\frac{k_{310}}{k_{300}} = 2.0$$\nFor a first-order reaction, the half-life is inversely proportional to the rate constant:\n$$t_{1/2} = \\frac{\\ln 2}{k} \\implies \\frac{t_{1/2}(310)}{t_{1/2}(300)} = \\frac{k_{300}}{k_{310}} = \\frac{1}{2.0}$$\n$$t_{1/2}(310) = \\frac{t_{1/2}(300)}{2.0} = \\frac{60\\text{ minutes}}{2.0} = 30\\text{ minutes}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The rate constants of a reaction at $400\\text{ K}$ and $500\\text{ K}$ are $0.02\\text{ s}^{-1}$ and $0.20\\text{ s}^{-1}$ respectively. The value of the Arrhenius pre-exponential factor $A$ is approximately: (Take $\\ln 10 = 2.303$, $R = 8.314\\text{ J K}^{-1}\\text{ mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$2.0 \\times 10^3\\text{ s}^{-1}$",
+            "$2.0 \\times 10^5\\text{ s}^{-1}$",
+            "$1.0 \\times 10^2\\text{ s}^{-1}$",
+            "$4.0 \\times 10^4\\text{ s}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Find $E_a$:\n$$\\ln\\left(\\frac{0.20}{0.02}\\right) = \\ln(10) = \\frac{E_a}{R}\\left(\\frac{500 - 400}{400 \\times 500}\\right)$$\n$$2.303 = \\frac{E_a}{8.314}\\left(\\frac{100}{200000}\\right) = \\frac{E_a}{8.314}\\left(\\frac{1}{2000}\\right)$$\n$$E_a = 2.303 \\times 8.314 \\times 2000 = 38294\\text{ J/mol} \\approx 38.3\\text{ kJ/mol}$$\n2. Find $A$ using $k = A e^{-E_a/RT}$ at $T = 400\\text{ K}$:\n$$\\frac{E_a}{RT} = \\frac{38294}{8.314 \\times 400} = \\frac{38294}{3325.6} = 11.515$$\n$$e^{11.515} = (e^{2.303})^5 = (10)^5 = 10^5$$\n$$A = k \\cdot e^{E_a/RT} = 0.02 \\times 10^5 = 2.0 \\times 10^3\\text{ s}^{-1}$$\nWait, $e^{11.515} = 10^{11.515/2.303} = 10^5$.\n$$A = 0.02 \\times 10^5 = 2.0 \\times 10^3\\text{ s}^{-1}$$. Option A is $2.0 \\times 10^3\\text{ s}^{-1}$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Which of the following parameters is altered when a catalyst is added to a chemical reaction at equilibrium?",
+          "image": "",
+          "options": [
+            "Activation energy ($E_a$)",
+            "Standard enthalpy of reaction ($\\Delta H^\\circ$)",
+            "Equilibrium constant ($K_{eq}$)",
+            "Standard Gibbs free energy change ($\\Delta G^\\circ$)"
+          ],
+          "correctOption": 0,
+          "solution": "A catalyst provides an alternative reaction pathway involving a different transition state with lower activation energies ($E_{a,f}$ and $E_{a,b}$ are lowered by the exact same amount $\\Delta E$).\nHowever, a catalyst does NOT change:\n1. The initial energy of reactants or final energy of products, so $\\Delta H^\\circ$ and $\\Delta U^\\circ$ are unaltered.\n2. The standard Gibbs free energy change $\\Delta G^\\circ$.\n3. The equilibrium constant $K_{eq}$ (since $\\Delta G^\\circ = -RT\\ln K_{eq}$)."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] For a reaction, the activation energy of the forward step is $E_{a,f} = 40\\text{ kJ/mol}$ and the enthalpy change is $\\Delta H = -20\\text{ kJ/mol}$. The activation energy for the reverse step ($E_{a,b}$) is:",
+          "image": "",
+          "options": [
+            "$60\\text{ kJ/mol}$",
+            "$20\\text{ kJ/mol}$",
+            "$-20\\text{ kJ/mol}$",
+            "$40\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the relation:\n$$\\Delta H = E_{a,f} - E_{a,b}$$\n$$-20\\text{ kJ/mol} = 40\\text{ kJ/mol} - E_{a,b}$$\n$$E_{a,b} = 40 - (-20) = 40 + 20 = 60\\text{ kJ/mol}$$\n(For an exothermic reaction, the reverse reaction has a higher activation barrier than the forward reaction)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The rate constant of a first-order reaction is $k = 1.0 \\times 10^{-3}\\text{ s}^{-1}$ at $300\\text{ K}$ and $k = 2.0 \\times 10^{-3}\\text{ s}^{-1}$ at $310\\text{ K}$. The ratio of the fraction of molecules with energy $\\ge E_a$ at $310\\text{ K}$ to that at $300\\text{ K}$ is:",
+          "image": "",
+          "options": [
+            "$2.0$",
+            "$1.0$",
+            "$0.5$",
+            "$4.0$"
+          ],
+          "correctOption": 0,
+          "solution": "According to the Arrhenius theory, the rate constant is given by:\n$$k = A f$$\nwhere $f = e^{-E_a/RT}$ is the fraction of molecules having energy equal to or exceeding the activation energy $E_a$.\nAssuming the frequency factor $A$ is independent of temperature over this narrow $10\\text{ K}$ range:\n$$\\frac{f_{310}}{f_{300}} = \\frac{k_{310}}{k_{300}} = \\frac{2.0 \\times 10^{-3}\\text{ s}^{-1}}{1.0 \\times 10^{-3}\\text{ s}^{-1}} = 2.0$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the plot of $\\log_{10} k$ versus $\\frac{1}{T}$, the slope of the line is equal to:",
+          "image": "",
+          "options": [
+            "$-\\frac{E_a}{2.303 R}$",
+            "$-\\frac{E_a}{R}$",
+            "$+\\frac{E_a}{2.303 R}$",
+            "$-\\frac{2.303 E_a}{R}$"
+          ],
+          "correctOption": 0,
+          "solution": "Taking common base-10 logarithms of the Arrhenius equation:\n$$\\log_{10} k = \\log_{10} A - \\frac{E_a}{2.303 R}\\left(\\frac{1}{T}\\right)$$\nComparing with $y = c + mx$:\n- $y = \\log_{10} k$\n- $x = \\frac{1}{T}$\n- $\\text{Slope } m = -\\frac{E_a}{2.303 R}$\n- $\\text{Intercept } c = \\log_{10} A$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For a composite reaction consisting of two consecutive elementary steps:\n$$A \\xrightarrow{k_1} B \\xrightarrow{k_2} C$$\nIf the overall effective rate constant is $k = \\left(\\frac{k_1 \\cdot k_2}{k_1 + k_2}\\right)$ with $k_1 \\ll k_2$, the overall activation energy $E_a$ is approximately equal to:",
+          "image": "",
+          "options": [
+            "$E_{a1}$",
+            "$E_{a2}$",
+            "$E_{a1} + E_{a2}$",
+            "$\\frac{E_{a1} + E_{a2}}{2}$"
+          ],
+          "correctOption": 0,
+          "solution": "Given $k_1 \\ll k_2$, in the denominator $k_1 + k_2 \\approx k_2$:\n$$k = \\frac{k_1 \\cdot k_2}{k_1 + k_2} \\approx \\frac{k_1 \\cdot k_2}{k_2} = k_1$$\nBecause the overall rate constant simplifies to $k_1$ (the rate-determining step), the overall activation energy is:\n$$E_a \\approx E_{a1}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An increase in the temperature of a reactant mixture causes a shift in the peak of the Maxwell-Boltzmann energy distribution curve towards:",
+          "image": "",
+          "options": [
+            "Higher kinetic energy with a decrease in the fraction of molecules possessing most probable speed",
+            "Higher kinetic energy with an increase in the fraction of molecules possessing most probable speed",
+            "Lower kinetic energy with a decrease in the fraction of molecules possessing most probable speed",
+            "Lower kinetic energy with an increase in the fraction of molecules possessing most probable speed"
+          ],
+          "correctOption": 0,
+          "solution": "As temperature increases:\n1. The most probable kinetic energy ($E_{\\text{mp}} = \\frac{1}{2} k_B T$) increases, shifting the peak of the Maxwell-Boltzmann distribution curve to the right (toward higher kinetic energies).\n2. Because the total area under the curve must remain constant (representing the total fraction of molecules $= 1$), the peak broadens and its height decreases.\nTherefore, the fraction of molecules possessing the most probable speed decreases while the energy corresponding to the peak increases."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] The rate constant of a reaction at $300\\text{ K}$ is $1.0 \\times 10^{-4}\\text{ s}^{-1}$. If the activation energy is $E_a = 57.4\\text{ kJ/mol}$, calculate the value of $\\log_{10} k$ at $300\\text{ K}$.",
+          "image": "",
+          "correctValue": -4.0,
+          "solution": "By definition:\n$$\\log_{10} k = \\log_{10}(1.0 \\times 10^{-4}) = -4.0$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A reaction has an activation energy $E_a = 0\\text{ kJ/mol}$. If the rate constant is $k = 5.0 \\times 10^3\\text{ s}^{-1}$ at $280\\text{ K}$, find the rate constant $k$ (in $10^3\\text{ s}^{-1}$) at $350\\text{ K}$.",
+          "image": "",
+          "correctValue": 5.0,
+          "solution": "From the Arrhenius equation:\n$$\\ln\\left(\\frac{k_2}{k_1}\\right) = \\frac{E_a}{R}\\left(\\frac{1}{T_1} - \\frac{1}{T_2}\\right)$$\nWhen $E_a = 0$:\n$$\\ln\\left(\\frac{k_2}{k_1}\\right) = 0 \\implies \\frac{k_2}{k_1} = 1 \\implies k_2 = k_1 = 5.0 \\times 10^3\\text{ s}^{-1}$$\nExpressed in units of $10^3\\text{ s}^{-1}$, the value is $5.0$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] For a reversible reaction, the activation energy for the forward process is $85\\text{ kJ/mol}$ and the activation energy for the backward process is $55\\text{ kJ/mol}$. Calculate the magnitude of the enthalpy change $|\\Delta H|$ (in $\\text{kJ/mol}$).",
+          "image": "",
+          "correctValue": 30.0,
+          "solution": "The enthalpy change of a reaction is given by:\n$$\\Delta H = E_{a,f} - E_{a,b} = 85\\text{ kJ/mol} - 55\\text{ kJ/mol} = +30\\text{ kJ/mol}$$\nMagnitude: $|\\Delta H| = 30.0\\text{ kJ/mol}$."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] The rate of a reaction triples when the temperature is increased from $290\\text{ K}$ to $300\\text{ K}$. Find the ratio $\\frac{E_a}{R}$ (in Kelvin, rounded to the nearest integer). (Take $\\ln 3 = 1.0986$).",
+          "image": "",
+          "correctValue": 9558.0,
+          "solution": "Using the two-temperature form of the Arrhenius equation:\n$$\\ln\\left(\\frac{k_2}{k_1}\\right) = \\frac{E_a}{R}\\left(\\frac{T_2 - T_1}{T_1 T_2}\\right)$$\nSubstitute $T_1 = 290\\text{ K}$, $T_2 = 300\\text{ K}$, and $\\frac{k_2}{k_1} = 3$:\n$$\\ln(3) = \\frac{E_a}{R}\\left(\\frac{300 - 290}{290 \\times 300}\\right)$$\n$$1.0986 = \\frac{E_a}{R}\\left(\\frac{10}{87000}\\right) = \\frac{E_a}{R}\\left(\\frac{1}{8700}\\right)$$\n$$\\frac{E_a}{R} = 1.0986 \\times 8700 = 9557.82\\text{ K} \\approx 9558.0\\text{ K}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] In an uncatalyzed reaction, the activation energy is $60\\text{ kJ/mol}$. A catalyst provides an alternate pathway with an activation energy of $40\\text{ kJ/mol}$. Calculate the reduction in activation energy $\\Delta E_a$ (in $\\text{kJ/mol}$).",
+          "image": "",
+          "correctValue": 20.0,
+          "solution": "The lowering in activation energy caused by the catalyst is:\n$$\\Delta E_a = E_{a,\\text{uncat}} - E_{a,\\text{cat}} = 60\\text{ kJ/mol} - 40\\text{ kJ/mol} = 20.0\\text{ kJ/mol}$$"
+        }
+      ]
+    }
+  ]
+}

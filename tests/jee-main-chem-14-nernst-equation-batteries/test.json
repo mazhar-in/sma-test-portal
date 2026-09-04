@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-chem-14-nernst-equation-batteries",
+  "title": "Nernst Equation & Batteries (Nernst Equation Applications, Gibbs Energy, Fuel Cells, & Corrosion Mechanics)",
+  "syllabus": "Nernst equation and its applications to half-cells and full galvanic cells; Concentration dependence of electrode potentials and cell EMF; Calculation of cell potential, reaction quotient (Q), and equilibrium constant (K); Relationship between cell potential, standard cell potential, and thermodynamic parameters (ΔG, ΔG°, ΔH, ΔS, and temperature coefficient of EMF (∂E/∂T)_P); Commercial batteries: Primary batteries (dry cell / Leclanché cell, mercury button cell) and secondary batteries (lead-acid storage battery, nickel-cadmium storage cell); Charging and discharging chemistry; Fuel cells: Hydrogen-oxygen fuel cell (design, reactions, and thermodynamic efficiency); Corrosion as an electrochemical phenomenon: Mechanism of rusting of iron, factors affecting corrosion, and methods of prevention (cathodic protection, sacrificial anodes, galvanization, and barrier protection)",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] In a lead-acid storage battery during discharging, which of the following processes occurs?",
+          "image": "",
+          "options": [
+            "$\\text{PbSO}_4$ is formed at both the anode and the cathode, and the density of $\\text{H}_2\\text{SO}_4$ decreases",
+            "$\\text{PbO}_2$ is deposited at the anode and $\\text{Pb}$ is deposited at the cathode",
+            "$\\text{H}_2\\text{SO}_4$ is produced, increasing its overall density",
+            "$\\text{PbSO}_4$ is reduced to metallic lead at the positive plate"
+          ],
+          "correctOption": 0,
+          "solution": "During the discharging of a lead storage battery:\n1. Anode reaction (oxidation): $\\text{Pb}(s) + \\text{SO}_4^{2-}(aq) \\rightarrow \\text{PbSO}_4(s) + 2e^-$\n2. Cathode reaction (reduction): $\\text{PbO}_2(s) + 4\\text{H}^+(aq) + \\text{SO}_4^{2-}(aq) + 2e^- \\rightarrow \\text{PbSO}_4(s) + 2\\text{H}_2\\text{O}(l)$\n3. Overall cell reaction:\n$$\\text{Pb}(s) + \\text{PbO}_2(s) + 2\\text{H}_2\\text{SO}_4(aq) \\rightarrow 2\\text{PbSO}_4(s) + 2\\text{H}_2\\text{O}(l)$$\n- Insoluble $\\text{PbSO}_4$ precipitates and coats both the anode and cathode plates.\n- Sulfuric acid is consumed and water is produced, causing the specific gravity (density) of the electrolyte to drop from $\\approx 1.30\\text{ g/mL}$ down to $\\approx 1.15\\text{ g/mL}$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The temperature coefficient of the EMF of a galvanic cell, $\\left(\\frac{\\partial E}{\\partial T}\\right)_P$, is related to the entropy change ($\\Delta S$) of the cell reaction by:",
+          "image": "",
+          "options": [
+            "$\\Delta S = n F \\left(\\frac{\\partial E}{\\partial T}\\right)_P$",
+            "$\\Delta S = -n F \\left(\\frac{\\partial E}{\\partial T}\\right)_P$",
+            "$\\Delta S = \\frac{n F}{T} \\left(\\frac{\\partial E}{\\partial T}\\right)_P$",
+            "$\\Delta S = -\\frac{\\Delta G}{T} \\left(\\frac{\\partial E}{\\partial T}\\right)_P$"
+          ],
+          "correctOption": 0,
+          "solution": "From fundamental thermodynamic relations:\n$$dG = V dP - S dT \\implies \\left(\\frac{\\partial \\Delta G}{\\partial T}\\right)_P = -\\Delta S$$\nWe know that for a reversible electrochemical cell:\n$$\\Delta G = -n F E$$\nDifferentiating both sides with respect to temperature $T$ at constant pressure $P$:\n$$\\left(\\frac{\\partial \\Delta G}{\\partial T}\\right)_P = -n F \\left(\\frac{\\partial E}{\\partial T}\\right)_P$$\nEquating both expressions:\n$$-\\Delta S = -n F \\left(\\frac{\\partial E}{\\partial T}\\right)_P \\implies \\Delta S = n F \\left(\\frac{\\partial E}{\\partial T}\\right)_P$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] In a hydrogen-oxygen fuel cell using concentrated aqueous $\\text{KOH}$ as the electrolyte, the half-cell reaction occurring at the cathode is:",
+          "image": "",
+          "options": [
+            "$\\text{O}_2(g) + 2\\text{H}_2\\text{O}(l) + 4e^- \\rightarrow 4\\text{OH}^-(aq)$",
+            "$\\text{O}_2(g) + 4\\text{H}^+(aq) + 4e^- \\rightarrow 2\\text{H}_2\\text{O}(l)$",
+            "$\\text{H}_2(g) + 2\\text{OH}^-(aq) \\rightarrow 2\\text{H}_2\\text{O}(l) + 2e^-$",
+            "$2\\text{H}_2\\text{O}(l) + 2e^- \\rightarrow \\text{H}_2(g) + 2\\text{OH}^-(aq)$"
+          ],
+          "correctOption": 0,
+          "solution": "In an alkaline $\\text{H}_2-\\text{O}_2$ fuel cell (Apollo fuel cell):\n1. Anode (oxidation of $\\text{H}_2$): $\\text{H}_2(g)$ is bubbled through porous carbon electrodes impregnated with catalyst:\n$$2\\text{H}_2(g) + 4\\text{OH}^-(aq) \\rightarrow 4\\text{H}_2\\text{O}(l) + 4e^- \\quad (E^\\circ_{\\text{ox}} = +0.83\\text{ V})$$\n2. Cathode (reduction of $\\text{O}_2$): $\\text{O}_2(g)$ is fed into the cathode:\n$$\\text{O}_2(g) + 2\\text{H}_2\\text{O}(l) + 4e^- \\rightarrow 4\\text{OH}^-(aq) \\quad (E^\\circ_{\\text{red}} = +0.40\\text{ V})$$\nOverall cell reaction:\n$$2\\text{H}_2(g) + \\text{O}_2(g) \\rightarrow 2\\text{H}_2\\text{O}(l) \\quad (E^\\circ_{\\text{cell}} = 1.23\\text{ V})$$\nTherefore, the reduction reaction occurring at the cathode in alkaline medium is $\\text{O}_2(g) + 2\\text{H}_2\\text{O}(l) + 4e^- \\rightarrow 4\\text{OH}^-(aq)$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The thermodynamic efficiency ($\\eta$) of a fuel cell operating under reversible conditions is expressed as:",
+          "image": "",
+          "options": [
+            "$\\frac{\\Delta G}{\\Delta H}$",
+            "$\\frac{\\Delta H}{\\Delta G}$",
+            "$\\frac{-n F E}{\\Delta S}$",
+            "$\\frac{\\Delta G}{T\\Delta S}$"
+          ],
+          "correctOption": 0,
+          "solution": "In a fuel cell, chemical combustion energy is directly converted into electrical energy without thermal cycles.\n1. The maximum electrical work obtainable under reversible conditions at constant $T$ and $P$ is $-\\Delta G = n F E$.\n2. The total heat of combustion released is given by the enthalpy change $-\\Delta H$.\n3. Therefore, the thermodynamic efficiency $\\eta$ is the ratio of useful free energy to the total thermal enthalpy:\n$$\\eta = \\frac{\\Delta G}{\\Delta H} = \\frac{-n F E}{\\Delta H}$$\n(For an $\\text{H}_2-\\text{O}_2$ fuel cell at $298\\text{ K}$, $\\Delta G^\\circ = -237.2\\text{ kJ/mol}$ and $\\Delta H^\\circ = -285.8\\text{ kJ/mol}$, yielding a theoretical efficiency of $\\approx 83\\%$)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Which of the following statements is INCORRECT regarding the electrochemical mechanism of the rusting of iron?",
+          "image": "",
+          "options": [
+            "The cathodic site acts as the location where metallic iron oxidizes to $\\text{Fe}^{2+}$",
+            "The anodic site corresponds to $\\text{Fe}(s) \\rightarrow \\text{Fe}^{2+}(aq) + 2e^-$",
+            "Dissolved atmospheric $\\text{CO}_2$ and $\\text{SO}_2$ act as electrolytes by generating $\\text{H}^+$ ions",
+            "Oxygen gas dissolved in water is reduced at the cathode: $\\text{O}_2 + 4\\text{H}^+ + 4e^- \\rightarrow 2\\text{H}_2\\text{O}$"
+          ],
+          "correctOption": 0,
+          "solution": "Rusting is an electrochemical corrosion process:\n1. Anodic spot: Metallic iron at an imperfection or stress point loses electrons (oxidation):\n$$\\text{Fe}(s) \\rightarrow \\text{Fe}^{2+}(aq) + 2e^- \\quad (E^\\circ = -0.44\\text{ V})$$\n2. Cathodic spot: The liberated electrons conduct through the metal to another spot where dissolved $\\text{O}_2$ in the presence of $\\text{H}^+$ (from $\\text{H}_2\\text{CO}_3$) is reduced:\n$$\\text{O}_2(g) + 4\\text{H}^+(aq) + 4e^- \\rightarrow 2\\text{H}_2\\text{O}(l) \\quad (E^\\circ = +1.23\\text{ V})$$\n3. $\\text{Fe}^{2+}$ ions are further oxidized by atmospheric oxygen to form hydrated iron(III) oxide (rust, $\\text{Fe}_2\\text{O}_3 \\cdot x\\text{H}_2\\text{O}$).\nStatement A is completely incorrect because iron oxidizes at the *anode*, not the cathode."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In a dry cell (Leclanché cell), manganese dioxide ($\\text{MnO}_2$) acts as:",
+          "image": "",
+          "options": [
+            "A depolarizer to oxidize hydrogen gas into water",
+            "An electrolyte to enhance electrical conductivity",
+            "The reducing agent that undergoes oxidation at the zinc container",
+            "A complexing agent that dissolves zinc chloride"
+          ],
+          "correctOption": 0,
+          "solution": "In a dry cell:\n- Anode: Zinc container: $\\text{Zn}(s) \\rightarrow \\text{Zn}^{2+} + 2e^-$\n- Cathode: Carbon (graphite) rod surrounded by powdered $\\text{MnO}_2$ and carbon black.\nDuring discharge, reduction occurs:\n$$\\text{MnO}_2 + \\text{NH}_4^+ + e^- \\rightarrow \\text{MnO(OH)} + \\text{NH}_3$$\n$\\text{MnO}_2$ acts primarily as a chemical depolarizer. If $\\text{H}^+$ ions were simply reduced to $\\text{H}_2(g)$, a layer of non-conducting gaseous hydrogen bubbles would coat the cathode (polarization), stopping current flow. $\\text{MnO}_2$ prevents this buildup by ensuring reduction of manganese from $+4$ to $+3$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A galvanic cell has $E^\\circ_{\\text{cell}} = 1.20\\text{ V}$ and its temperature coefficient is $\\left(\\frac{\\partial E}{\\partial T}\\right)_P = -4.0 \\times 10^{-4}\\text{ V K}^{-1}$ at $300\\text{ K}$. For $n = 2$, the enthalpy change ($\\Delta H$) of the cell reaction is: (Take $F = 96500\\text{ C mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$-254.76\\text{ kJ/mol}$",
+            "$-231.60\\text{ kJ/mol}$",
+            "$+254.76\\text{ kJ/mol}$",
+            "$-208.44\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the Gibbs-Helmholtz equation for electrochemical cells:\n$$\\Delta G = \\Delta H - T \\Delta S \\implies \\Delta H = \\Delta G + T \\Delta S$$\nWe know:\n$$\\Delta G = -n F E$$\n$$\\Delta S = n F \\left(\\frac{\\partial E}{\\partial T}\\right)_P$$\n$$\\Delta H = -n F E + n F T \\left(\\frac{\\partial E}{\\partial T}\\right)_P = -n F \\left[E - T \\left(\\frac{\\partial E}{\\partial T}\\right)_P\\right]$$\nSubstitute the given values:\n- $n = 2, \\quad F = 96500\\text{ C mol}^{-1}$\n- $E = 1.20\\text{ V}, \\quad T = 300\\text{ K}$\n- $\\left(\\frac{\\partial E}{\\partial T}\\right)_P = -4.0 \\times 10^{-4}\\text{ V K}^{-1}$\n\n$$\\Delta H = -2 \\times 96500 \\left[1.20 - 300(-4.0 \\times 10^{-4})\\right]$$\n$$\\Delta H = -193000 \\left[1.20 - (-0.12)\\right] = -193000 [1.20 + 0.12] = -193000 \\times 1.32$$\n$$\\Delta H = -254760\\text{ J/mol} = -254.76\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] During the charging of a lead-acid storage battery:",
+          "image": "",
+          "options": [
+            "The anode of the battery is connected to the negative terminal of an external DC source and $\\text{PbSO}_4$ is reduced to $\\text{Pb}$",
+            "The anode of the battery is connected to the positive terminal of an external DC source",
+            "$\\text{PbSO}_4$ is reduced at both plates",
+            "Sulfuric acid is consumed at both electrodes"
+          ],
+          "correctOption": 0,
+          "solution": "When recharging a secondary lead-acid cell, it operates as an electrolytic cell by connecting an external direct current (DC) source with a voltage slightly higher than the battery's EMF:\n1. The negative plate (which served as the anode during discharge) is connected to the negative terminal of the DC charger. It acts as a cathode where reduction occurs:\n$$\\text{PbSO}_4(s) + 2e^- \\rightarrow \\text{Pb}(s) + \\text{SO}_4^{2-}(aq)$$\n2. The positive plate (which served as the cathode during discharge) is connected to the positive terminal of the charger. It acts as an anode where oxidation occurs:\n$$\\text{PbSO}_4(s) + 2\\text{H}_2\\text{O}(l) \\rightarrow \\text{PbO}_2(s) + 4\\text{H}^+(aq) + \\text{SO}_4^{2-}(aq) + 2e^-$\\$\n3. Net reaction: $2\\text{PbSO}_4(s) + 2\\text{H}_2\\text{O}(l) \\rightarrow \\text{Pb}(s) + \\text{PbO}_2(s) + 2\\text{H}_2\\text{SO}_4(aq)$, which regenerates sulfuric acid."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Galvanization is the method of protecting iron from corrosion by coating it with a thin layer of zinc. Zinc protects iron because:",
+          "image": "",
+          "options": [
+            "Zinc has a more negative reduction potential than iron, acting as a sacrificial anode even when the surface coating is scratched",
+            "Zinc forms a highly unreactive noble oxide layer that cannot be oxidized",
+            "Zinc has a more positive standard reduction potential than iron",
+            "Zinc completely prevents oxygen from interacting through magnetic repulsion"
+          ],
+          "correctOption": 0,
+          "solution": "Standard reduction potentials:\n$$E^\\circ(\\text{Zn}^{2+}/\\text{Zn}) = -0.76\\text{ V}$$\n$$E^\\circ(\\text{Fe}^{2+}/\\text{Fe}) = -0.44\\text{ V}$$\nSince $E^\\circ(\\text{Zn}^{2+}/\\text{Zn})$ is more negative than $E^\\circ(\\text{Fe}^{2+}/\\text{Fe})$, zinc is more electropositive and oxidizes much more readily than iron.\nEven if the zinc coating is scratched or chipped, exposing the iron underneath, zinc continues to oxidize preferentially (sacrificial protection):\n$$\\text{Zn}(s) \\rightarrow \\text{Zn}^{2+} + 2e^-$$\nThe electrons flow into iron, forcing it to remain cathodic and preventing it from rusting."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In a button cell used in wristwatches, the following overall reaction occurs:\n$$\\text{Zn}(s) + \\text{Ag}_2\\text{O}(s) + \\text{H}_2\\text{O}(l) \\rightarrow \\text{Zn}^{2+}(aq) + 2\\text{Ag}(s) + 2\\text{OH}^-(aq)$$\nGiven $E^\\circ(\\text{Zn}^{2+}/\\text{Zn}) = -0.76\\text{ V}$ and $E^\\circ(\\text{Ag}_2\\text{O}/\\text{Ag}, \\text{OH}^-) = +0.344\\text{ V}$, the standard potential of the cell ($E^\\circ_{\\text{cell}}$) and $\\Delta G^\\circ$ are:",
+          "image": "",
+          "options": [
+            "$E^\\circ_{\\text{cell}} = 1.104\\text{ V}, \\quad \\Delta G^\\circ = -213.07\\text{ kJ/mol}$",
+            "$E^\\circ_{\\text{cell}} = 1.104\\text{ V}, \\quad \\Delta G^\\circ = +213.07\\text{ kJ/mol}$",
+            "$E^\\circ_{\\text{cell}} = 0.416\\text{ V}, \\quad \\Delta G^\\circ = -80.29\\text{ kJ/mol}$",
+            "$E^\\circ_{\\text{cell}} = 1.448\\text{ V}, \\quad \\Delta G^\\circ = -279.47\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Standard cell potential:\n$$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}} = 0.344\\text{ V} - (-0.76\\text{ V}) = 1.104\\text{ V}$$\n2. The reaction involves $n = 2$ moles of electrons:\n$$\\Delta G^\\circ = -n F E^\\circ_{\\text{cell}} = -2 \\times 96500 \\times 1.104\\text{ J/mol}$$\n$$\\Delta G^\\circ = -213072\\text{ J/mol} \\approx -213.07\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A cell $\\text{Pt} | \\text{H}_2(g, 1\\text{ bar}) | \\text{H}^+(aq, \\text{pH} = x) || \\text{Ag}^+(aq, 1\\text{ M}) | \\text{Ag}(s)$ has an EMF of $0.977\\text{ V}$ at $298\\text{ K}$. Given $E^\\circ(\\text{Ag}^+/\\text{Ag}) = +0.80\\text{ V}$ and $\\frac{2.303 RT}{F} = 0.059\\text{ V}$, the value of $\\text{pH}$ ($x$) is:",
+          "image": "",
+          "options": [
+            "$3.0$",
+            "$2.0$",
+            "$4.0$",
+            "$1.0$"
+          ],
+          "correctOption": 0,
+          "solution": "Cell reactions:\n- Anode: $\\frac{1}{2}\\text{H}_2(g) \\rightarrow \\text{H}^+(aq) + e^-$\n- Cathode: $\\text{Ag}^+(aq) + e^- \\rightarrow \\text{Ag}(s)$\nNet cell reaction ($n = 1$):\n$$\\frac{1}{2}\\text{H}_2(1\\text{ bar}) + \\text{Ag}^+(1\\text{ M}) \\rightarrow \\text{H}^+ + \\text{Ag}(s)$$\nStandard cell potential:\n$$E^\\circ_{\\text{cell}} = E^\\circ(\\text{Ag}^+/\\text{Ag}) - E^\\circ(\\text{H}^+/\\text{H}_2) = 0.80 - 0.00 = 0.80\\text{ V}$$\nNernst equation:\n$$E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\frac{0.059}{1} \\log_{10}\\left(\\frac{[\\text{H}^+]}{[\\text{Ag}^+]}\\right)$$\nSince $[\\text{Ag}^+] = 1\\text{ M}$ and $\\log_{10}[\\text{H}^+] = -\\text{pH}$:\n$$E_{\\text{cell}} = E^\\circ_{\\text{cell}} - 0.059 \\log_{10}[\\text{H}^+] = E^\\circ_{\\text{cell}} + 0.059 \\times \\text{pH}$$\nSubstitute $E_{\\text{cell}} = 0.977\\text{ V}$ and $E^\\circ_{\\text{cell}} = 0.80\\text{ V}$:\n$$0.977 = 0.80 + 0.059 \\times \\text{pH}$$\n$$0.059 \\times \\text{pH} = 0.977 - 0.80 = 0.177$$\n$$\\text{pH} = \\frac{0.177}{0.059} = 3.0$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following metals provides cathodic protection to underground steel pipelines when connected via an insulated wire?",
+          "image": "",
+          "options": [
+            "Magnesium",
+            "Copper",
+            "Nickel",
+            "Silver"
+          ],
+          "correctOption": 0,
+          "solution": "In cathodic protection (sacrificial anode method), the underground iron/steel pipeline is connected by an insulated cable to a buried block of a more reactive metal (a metal having a substantially more negative reduction potential than iron).\n- Magnesium ($E^\\circ = -2.37\\text{ V}$) or Zinc ($E^\\circ = -0.76\\text{ V}$) acts as the sacrificial anode and corrodes preferentially.\n- Electrons are pumped continuously into the iron pipe ($E^\\circ = -0.44\\text{ V}$), forcing it to function strictly as the cathode, thereby preventing its oxidation.\nMetals like $\\text{Cu}$, $\\text{Ni}$, and $\\text{Ag}$ are less reactive than iron and would accelerate the corrosion of iron if connected."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A nickel-cadmium (Ni-Cd) rechargeable cell has a cell potential of about $1.4\\text{ V}$. The overall reaction occurring during discharging is:",
+          "image": "",
+          "options": [
+            "$\\text{Cd}(s) + 2\\text{NiO(OH)}(s) + 2\\text{H}_2\\text{O}(l) \\rightarrow \\text{Cd(OH)}_2(s) + 2\\text{Ni(OH)}_2(s)$",
+            "$\\text{Cd}(s) + \\text{NiO}_2(s) \\rightarrow \\text{CdO}(s) + \\text{NiO}(s)$",
+            "$\\text{Cd(OH)}_2(s) + 2\\text{Ni(OH)}_2(s) \\rightarrow \\text{Cd}(s) + 2\\text{NiO(OH)}(s) + 2\\text{H}_2\\text{O}(l)$",
+            "$\\text{Cd}(s) + 2\\text{Ni}^{3+} \\rightarrow \\text{Cd}^{2+} + 2\\text{Ni}^{2+}$"
+          ],
+          "correctOption": 0,
+          "solution": "In a rechargeable nickel-cadmium battery:\n1. Anode: $\\text{Cd}(s) + 2\\text{OH}^-(aq) \\rightarrow \\text{Cd(OH)}_2(s) + 2e^-$\n2. Cathode: $2\\text{NiO(OH)}(s) + 2\\text{H}_2\\text{O}(l) + 2e^- \\rightarrow 2\\text{Ni(OH)}_2(s) + 2\\text{OH}^-(aq)$\nAdding both half-reactions yields the overall discharge equation:\n$$\\text{Cd}(s) + 2\\text{NiO(OH)}(s) + 2\\text{H}_2\\text{O}(l) \\rightarrow \\text{Cd(OH)}_2(s) + 2\\text{Ni(OH)}_2(s)$$\nBecause all reaction products adhere to the electrodes as solid precipitates, the reaction can be readily reversed upon charging."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] For a reversible electrochemical cell, when the cell reaches equilibrium:",
+          "image": "",
+          "options": [
+            "$E_{\\text{cell}} = 0 \\quad \\text{and} \\quad \\Delta G = 0$",
+            "$E^\\circ_{\\text{cell}} = 0 \\quad \\text{and} \\quad \\Delta G^\\circ = 0$",
+            "$E_{\\text{cell}} = 0 \\quad \\text{and} \\quad \\Delta G^\\circ = 0$",
+            "$E^\\circ_{\\text{cell}} = 0 \\quad \\text{and} \\quad \\Delta G = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "When a chemical cell operates, reactants are progressively converted into products, causing the reaction quotient $Q$ to increase and the cell EMF $E_{\\text{cell}}$ to decrease.\n1. When dynamic chemical equilibrium is established: $Q = K_{eq}$.\n2. At this point, the free energy change of the reaction becomes zero: $\\Delta G = 0$.\n3. Since $\\Delta G = -n F E_{\\text{cell}}$, the cell potential drops to zero: $E_{\\text{cell}} = 0$.\nNote: $E^\\circ_{\\text{cell}}$ and $\\Delta G^\\circ$ are intrinsic constants at standard state and do not become zero at equilibrium; they are related by $\\Delta G^\\circ = -n F E^\\circ_{\\text{cell}} = -RT \\ln K_{eq}$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In which of the following cases will the rusting of iron occur at the HIGHEST rate?",
+          "image": "",
+          "options": [
+            "An iron nail placed in aerated saline water (aqueous $\\text{NaCl}$)",
+            "An iron nail placed in boiled, deoxygenated distilled water covered with oil",
+            "An iron nail kept in a desiccator with anhydrous $\\text{CaCl}_2$",
+            "An iron nail coated uniformly with molten zinc"
+          ],
+          "correctOption": 0,
+          "solution": "The rate of electrochemical rusting depends on:\n1. The presence of both moisture ($\\text{H}_2\\text{O}$) and atmospheric oxygen ($\\text{O}_2$).\n2. The electrical conductivity of the surrounding electrolyte medium.\n- In aerated saline water, dissolved $\\text{O}_2$ acts as the cathodic depolarizer, and the dissolved $\\text{Na}^+$ and $\\text{Cl}^-$ ions substantially increase the electrical conductivity of the aqueous electrolyte film, accelerating ion transport and greatly increasing the rate of rusting.\n- Boiled water lacks oxygen, dry air in a desiccator lacks moisture, and zinc coating provides cathodic protection."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A fuel cell operates by converting the chemical energy of a fuel directly into electricity. Which of the following is a major advantage of fuel cells over conventional thermal power plants?",
+          "image": "",
+          "options": [
+            "Their efficiency is not subject to the Carnot cycle limit, making them highly efficient and eco-friendly",
+            "They use solid coal directly without requiring processing",
+            "They operate without using any catalysts",
+            "They store vast amounts of electrical charge internally without continuous fuel feed"
+          ],
+          "correctOption": 0,
+          "solution": "1. Conventional thermal power plants burn fossil fuels to generate heat, produce steam, run turbines, and drive generators. Because heat is an intermediate energy form, their theoretical efficiency is strictly governed and limited by Carnot's theorem: $\\eta = \\frac{T_h - T_c}{T_h} \\approx 40\\%$.\n2. In contrast, fuel cells convert chemical energy directly into electrical energy via electrochemical redox reactions, bypassing the Carnot thermodynamic ceiling and operating at efficiencies of $70-85\\%$ with water as the only byproduct (zero pollution)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] For the cell reaction $2\\text{Fe}^{3+}(aq) + 2\\text{I}^-(aq) \\rightarrow 2\\text{Fe}^{2+}(aq) + \\text{I}_2(s)$, the standard cell potential is $E^\\circ_{\\text{cell}} = 0.236\\text{ V}$ at $298\\text{ K}$. The standard Gibbs free energy change ($\\Delta G^\\circ$) for the reaction is: (Take $F = 96500\\text{ C mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$-45.55\\text{ kJ/mol}$",
+            "$+45.55\\text{ kJ/mol}$",
+            "$-91.10\\text{ kJ/mol}$",
+            "$-22.77\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Number of moles of electrons transferred in the balanced equation is $n = 2$:\n$$2\\text{Fe}^{3+} + 2e^- \\rightarrow 2\\text{Fe}^{2+}$$\n$$2\\text{I}^- \\rightarrow \\text{I}_2 + 2e^-$$\n2. Calculate standard Gibbs free energy:\n$$\\Delta G^\\circ = -n F E^\\circ_{\\text{cell}}$$\n$$\\Delta G^\\circ = -2 \\times 96500 \\times 0.236\\text{ J/mol} = -45548\\text{ J/mol} \\approx -45.55\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following primary cells maintains a nearly constant voltage ($1.35\\text{ V}$) throughout its operating lifetime?",
+          "image": "",
+          "options": [
+            "Mercury button cell",
+            "Leclanché dry cell",
+            "Lead-acid storage cell",
+            "Lithium-ion cell"
+          ],
+          "correctOption": 0,
+          "solution": "In a mercury cell (Ruben-Mallory button cell):\n- Anode: $\\text{Zn(Hg)} + 2\\text{OH}^- \\rightarrow \\text{ZnO}(s) + \\text{H}_2\\text{O} + 2e^-$\n- Cathode: $\\text{HgO}(s) + \\text{H}_2\\text{O} + 2e^- \\rightarrow \\text{Hg}(l) + 2\\text{OH}^-$\n- Overall reaction:\n$$\\text{Zn(Hg)} + \\text{HgO}(s) \\rightarrow \\text{ZnO}(s) + \\text{Hg}(l)$$\nNotice that the overall cell reaction does not involve any dissolved ions in solution whose concentrations could change over time ($Q = 1$).\nConsequently, according to the Nernst equation, its cell potential remains exceptionally constant ($1.35\\text{ V}$) throughout its entire operational discharge."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For the Daniell cell $\\text{Zn} | \\text{Zn}^{2+}(C_1) || \\text{Cu}^{2+}(C_2) | \\text{Cu}$, the plot of $E_{\\text{cell}}$ versus $\\log_{10}\\left(\\frac{C_1}{C_2}\\right)$ at $298\\text{ K}$ yields a straight line with a slope equal to:",
+          "image": "",
+          "options": [
+            "$-0.0295\\text{ V}$",
+            "$+0.0295\\text{ V}$",
+            "$-0.059\\text{ V}$",
+            "$+0.059\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "The overall cell reaction is:\n$$\\text{Zn}(s) + \\text{Cu}^{2+}(C_2) \\rightleftharpoons \\text{Zn}^{2+}(C_1) + \\text{Cu}(s) \\quad (n = 2)$$\nApplying the Nernst equation at $298\\text{ K}$:\n$$E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\frac{0.059}{2} \\log_{10}\\left(\\frac{C_1}{C_2}\\right) = E^\\circ_{\\text{cell}} - 0.0295 \\log_{10}\\left(\\frac{C_1}{C_2}\\right)$$\nComparing with the equation of a straight line $y = c + mx$ where $y = E_{\\text{cell}}$ and $x = \\log_{10}\\left(\\frac{C_1}{C_2}\\right)$:\n$$\\text{Slope } m = -0.0295\\text{ V}$$\n$$\\text{Intercept } c = E^\\circ_{\\text{cell}} = 1.10\\text{ V}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] When tin-plated iron (tin can) is scratched and exposed to moist air, iron rusts more rapidly than it would without tin because:",
+          "image": "",
+          "options": [
+            "Tin is less active than iron ($E^\\circ_{\\text{Sn}^{2+}/\\text{Sn}} > E^\\circ_{\\text{Fe}^{2+}/\\text{Fe}}$), forcing exposed iron to act as an anode",
+            "Tin acts as a sacrificial anode for iron",
+            "Tin reacts directly with water to generate acidic $\\text{Sn}^{4+}$ ions",
+            "Tin accelerates rust formation by forming an amalgam"
+          ],
+          "correctOption": 0,
+          "solution": "Standard reduction potentials:\n$$E^\\circ(\\text{Sn}^{2+}/\\text{Sn}) = -0.14\\text{ V}$$\n$$E^\\circ(\\text{Fe}^{2+}/\\text{Fe}) = -0.44\\text{ V}$$\n1. Tin is lower in the reactivity series (less electropositive / higher reduction potential) than iron.\n2. As long as the tin coating is unbroken, it forms an effective barrier protection.\n3. However, once the coating is breached, a galvanic couple is formed between $\\text{Sn}$ and $\\text{Fe}$.\n4. Because iron has a more negative reduction potential than tin, iron acts as the anode ($\\text{Fe} \\rightarrow \\text{Fe}^{2+} + 2e^-$) and tin acts as the cathode.\n5. The large surface area of the tin cathode compared to the small exposed iron anode leads to intense, accelerated corrosion of iron (pitting)."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] For the half-cell reaction $\\text{MnO}_4^-(aq) + 8\\text{H}^+(aq) + 5e^- \\rightarrow \\text{Mn}^{2+}(aq) + 4\\text{H}_2\\text{O}(l)$, $E^\\circ = 1.51\\text{ V}$. If the concentration of $\\text{H}^+$ is reduced from $1.0\\text{ M}$ to $0.1\\text{ M}$ while $[\\text{MnO}_4^-] = [\\text{Mn}^{2+}] = 1.0\\text{ M}$ at $298\\text{ K}$, the electrode potential decreases by $x\\text{ mV}$. Find the value of $x$. (Take $\\frac{2.303 RT}{F} = 0.059\\text{ V}$).",
+          "image": "",
+          "correctValue": 94.4,
+          "solution": "Using the Nernst equation for the permanganate reduction half-cell ($n = 5$):\n$$E = E^\\circ - \\frac{0.059}{5} \\log_{10}\\left(\\frac{[\\text{Mn}^{2+}]}{[\\text{MnO}_4^-][\\text{H}^+]^8}\\right)$$\nWhen $[\\text{MnO}_4^-] = [\\text{Mn}^{2+}] = 1.0\\text{ M}$:\n$$E = E^\\circ - \\frac{0.059}{5} \\log_{10}\\left(\\frac{1}{[\\text{H}^+]^8}\\right) = E^\\circ - \\frac{0.059 \\times 8}{5} \\log_{10}\\left(\\frac{1}{[\\text{H}^+]}\\right)$$\n$$E = E^\\circ - \\frac{0.472}{5} \\text{pH} = E^\\circ - 0.0944 \\times \\text{pH}$$\n1. At $[\\text{H}^+] = 1.0\\text{ M} \\implies \\text{pH} = 0$: $E_1 = E^\\circ = 1.51\\text{ V}$.\n2. At $[\\text{H}^+] = 0.1\\text{ M} \\implies \\text{pH} = 1$: $E_2 = E^\\circ - 0.0944(1) = 1.51 - 0.0944 = 1.4156\\text{ V}$.\nDecrease in potential:\n$$\\Delta E = E_1 - E_2 = 0.0944\\text{ V} = 94.4\\text{ mV}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] For the cell reaction $\\text{Zn}(s) + 2\\text{Ag}^+(aq) \\rightleftharpoons \\text{Zn}^{2+}(aq) + 2\\text{Ag}(s)$, the standard cell potential is $E^\\circ_{\\text{cell}} = 1.56\\text{ V}$ at $298\\text{ K}$. Find $\\log_{10} K_{eq}$ for this reaction. (Take $\\frac{2.303 RT}{F} = 0.059\\text{ V}$, round to one decimal place).",
+          "image": "",
+          "correctValue": 52.9,
+          "solution": "The relation between $E^\\circ_{\\text{cell}}$ and equilibrium constant $K_{eq}$ is:\n$$E^\\circ_{\\text{cell}} = \\frac{0.059}{n} \\log_{10} K_{eq}$$\nHere $n = 2$:\n$$1.56 = \\frac{0.059}{2} \\log_{10} K_{eq} = 0.0295 \\log_{10} K_{eq}$$\n$$\\log_{10} K_{eq} = \\frac{1.56}{0.0295} \\approx 52.88 \\approx 52.9$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A hydrogen-oxygen fuel cell consumes $44.8\\text{ L}$ of $\\text{H}_2$ gas at STP ($22.4\\text{ L/mol}$) in $1000\\text{ seconds}$. Calculate the average electric current (in Amperes) delivered by the cell. (Take $F = 96500\\text{ C mol}^{-1}$).",
+          "image": "",
+          "correctValue": 386.0,
+          "solution": "1. Moles of $\\text{H}_2$ consumed:\n$$n = \\frac{44.8\\text{ L}}{22.4\\text{ L/mol}} = 2.0\\text{ moles}$$\n2. Anode oxidation of $\\text{H}_2$:\n$$\\text{H}_2 \\rightarrow 2\\text{H}^+ + 2e^-$$\nEach mole of $\\text{H}_2$ produces $2\\text{ moles of electrons}$.\nTotal moles of electrons transferred:\n$$n_e = 2.0 \\times 2 = 4.0\\text{ moles of } e^-$$\n3. Total charge delivered:\n$$Q = n_e \\times F = 4.0 \\times 96500\\text{ C} = 386000\\text{ C}$$\n4. Electric current:\n$$I = \\frac{Q}{t} = \\frac{386000\\text{ C}}{1000\\text{ s}} = 386.0\\text{ A}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] For the concentration cell $\\text{Cu}(s) | \\text{Cu}^{2+}(10^{-3}\\text{ M}) || \\text{Cu}^{2+}(1.0\\text{ M}) | \\text{Cu}(s)$ at $298\\text{ K}$, calculate the cell potential $E_{\\text{cell}}$ (in volts, round to three decimal places). (Take $\\frac{2.303 RT}{F} = 0.059\\text{ V}$).",
+          "image": "",
+          "correctValue": 0.089,
+          "solution": "In a copper concentration cell:\n- Anode: $\\text{Cu} \\rightarrow \\text{Cu}^{2+}(10^{-3}\\text{ M}) + 2e^-$\n- Cathode: $\\text{Cu}^{2+}(1.0\\text{ M}) + 2e^- \\rightarrow \\text{Cu}$\nSince the electrodes are identical, $E^\\circ_{\\text{cell}} = 0$.\nNumber of electrons transferred: $n = 2$.\nApplying the Nernst equation:\n$$E_{\\text{cell}} = 0 - \\frac{0.059}{2} \\log_{10}\\left(\\frac{10^{-3}}{1.0}\\right) = -0.0295 \\log_{10}(10^{-3})$$\n$$E_{\\text{cell}} = -0.0295 \\times (-3) = +0.0885\\text{ V} \\approx 0.089\\text{ V}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Calculate the equilibrium constant ($K$) at $298\\text{ K}$ for a cell reaction having standard cell potential $E^\\circ_{\\text{cell}} = 0.00\\text{ V}$.",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "The thermodynamic equation connecting standard cell potential to the equilibrium constant is:\n$$\\Delta G^\\circ = -n F E^\\circ_{\\text{cell}} = -RT \\ln K$$\nWhen $E^\\circ_{\\text{cell}} = 0.00\\text{ V}$:\n$$-RT \\ln K = 0 \\implies \\ln K = 0$$\n$$K = e^0 = 1.0$$"
+        }
+      ]
+    }
+  ]
+}

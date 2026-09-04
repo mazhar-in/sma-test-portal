@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-chem-15-chemical-kinetics-basics",
+  "title": "Chemical Kinetics (Rate Law, Order, Molecularity, & Integrated Rate Equations)",
+  "syllabus": "Rate of a chemical reaction (average and instantaneous rate); Factors affecting the rate of reaction: concentration, temperature, pressure, and catalyst; Rate law expression and specific rate constant (k); Order and molecularity of elementary and complex reactions; Units of rate constant for nth order reactions; Integrated rate laws and half-life expressions for zero-order and first-order reactions; Graphical representations of zero and first-order kinetics; Pseudo-first-order reactions (inversion of cane sugar, hydrolysis of esters); Methods for determining reaction order (initial rates method, integrated rate method, half-life method)",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] For a chemical reaction $A + 2B \\rightarrow C$, the rate equation is experimentally found to be $\\text{Rate} = k[A]^1 [B]^2$. If the volume of the reaction vessel is suddenly reduced to one-third of its initial volume at constant temperature, the rate of the reaction will become:",
+          "image": "",
+          "options": [
+            "$27\\text{ times}$",
+            "$9\\text{ times}$",
+            "$3\\text{ times}$",
+            "$\\frac{1}{27}\\text{ times}$"
+          ],
+          "correctOption": 0,
+          "solution": "Let initial concentrations of $A$ and $B$ be $[A]_0$ and $[B]_0$.\nInitial rate:\n$$r_1 = k[A]_0 [B]_0^2$$\nWhen the volume of the container is decreased to $\\frac{1}{3}$ of its original volume ($V_2 = \\frac{V_1}{3}$), the concentration of each gaseous or solution species triples:\n$$[A]' = 3[A]_0, \\quad [B]' = 3[B]_0$$\nNew reaction rate:\n$$r_2 = k[A]' [B]'^2 = k(3[A]_0)(3[B]_0)^2 = k(3[A]_0)(9[B]_0^2) = 27 \\cdot k[A]_0 [B]_0^2 = 27 r_1$$\nTherefore, the rate of the reaction increases by a factor of $27$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] A first-order reaction is $50\\%$ complete in $20\\text{ minutes}$ at $300\\text{ K}$. The time required for $99.9\\%$ completion of the same reaction is approximately:",
+          "image": "",
+          "options": [
+            "$200\\text{ minutes}$",
+            "$160\\text{ minutes}$",
+            "$100\\text{ minutes}$",
+            "$60\\text{ minutes}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a first-order reaction:\n$$t_{1/2} = 20\\text{ min}$$\nRate constant:\n$$k = \\frac{\\ln 2}{t_{1/2}} = \\frac{0.693}{20\\text{ min}}$$\nFor $99.9\\%$ completion:\n$$[A]_t = [A]_0 - 0.999[A]_0 = 0.001[A]_0 = 10^{-3}[A]_0$$\nUsing the integrated first-order rate law:\n$$t_{99.9\\%} = \\frac{2.303}{k} \\log_{10}\\left(\\frac{[A]_0}{[A]_t}\\right) = \\frac{2.303}{k} \\log_{10}\\left(\\frac{[A]_0}{10^{-3}[A]_0}\\right) = \\frac{2.303}{k} \\log_{10}(10^3) = \\frac{2.303 \\times 3}{k} = \\frac{6.909}{k}$$\nSince $t_{1/2} = \\frac{0.693}{k}$:\n$$t_{99.9\\%} = \\frac{6.909}{0.693} \\times t_{1/2} \\approx 10 \\times t_{1/2}$$\n$$t_{99.9\\%} = 10 \\times 20\\text{ min} = 200\\text{ minutes}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] For the reaction $2A + B \\rightarrow 3C + D$, which of the following expressions correctly represents the rate of reaction?",
+          "image": "",
+          "options": [
+            "$-\\frac{1}{2}\\frac{d[A]}{dt} = -\\frac{d[B]}{dt} = +\\frac{1}{3}\\frac{d[C]}{dt} = +\\frac{d[D]}{dt}$",
+            "$+\\frac{1}{2}\\frac{d[A]}{dt} = +\\frac{d[B]}{dt} = -\\frac{1}{3}\\frac{d[C]}{dt} = -\\frac{d[D]}{dt}$",
+            "$-2\\frac{d[A]}{dt} = -\\frac{d[B]}{dt} = +3\\frac{d[C]}{dt} = +\\frac{d[D]}{dt}$",
+            "$-\\frac{d[A]}{dt} = -\\frac{d[B]}{dt} = +\\frac{d[C]}{dt} = +\\frac{d[D]}{dt}$"
+          ],
+          "correctOption": 0,
+          "solution": "The rate of a chemical reaction is defined by the rate of disappearance of reactants (with a negative sign) or the rate of appearance of products (with a positive sign), divided by their respective stoichiometric coefficients:\n$$\\text{Rate} = -\\frac{1}{2}\\frac{d[A]}{dt} = -\\frac{1}{1}\\frac{d[B]}{dt} = +\\frac{1}{3}\\frac{d[C]}{dt} = +\\frac{1}{1}\\frac{d[D]}{dt}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The rate constant of a chemical reaction has the units $\\text{L}^2\\text{ mol}^{-2}\\text{ s}^{-1}$. The overall order of this reaction is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$2$",
+            "$1$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "The general formula for the units of a rate constant $k$ for an $n^{\\text{th}}$-order reaction is:\n$$\\text{Units of } k = (\\text{mol L}^{-1})^{1 - n} \\text{ s}^{-1} = \\text{mol}^{1-n} \\text{ L}^{n-1} \\text{ s}^{-1}$$\nGiven units: $\\text{L}^2\\text{ mol}^{-2}\\text{ s}^{-1}$:\nComparing the exponent of $\\text{L}$:\n$$n - 1 = 2 \\implies n = 3$$\nOr comparing the exponent of $\\text{mol}$:\n$$1 - n = -2 \\implies n = 3$$\nThus, the reaction is of the third order ($n = 3$)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A plot of $[A]$ versus time $t$ for the reaction $A \\rightarrow \\text{Products}$ yields a straight line with a negative slope equal to $-0.02\\text{ mol L}^{-1}\\text{ s}^{-1}$ and y-intercept equal to $0.5\\text{ mol L}^{-1}$. The order of the reaction and the time required for complete consumption of $A$ are:",
+          "image": "",
+          "options": [
+            "Zero order, $25\\text{ seconds}$",
+            "First order, $25\\text{ seconds}$",
+            "Zero order, $50\\text{ seconds}$",
+            "Second order, $12.5\\text{ seconds}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The integrated rate equation for a zero-order reaction is:\n$$[A]_t = -k t + [A]_0$$\nComparing with $y = mx + c$, a plot of $[A]$ versus $t$ gives a straight line with slope $m = -k$ and intercept $c = [A]_0$.\nSince the plot of $[A]$ versus $t$ is linear, the reaction is strictly zero-order.\n2. Given:\n- Slope $=-k = -0.02 \\implies k = 0.02\\text{ mol L}^{-1}\\text{ s}^{-1}$\n- Intercept $=[A]_0 = 0.5\\text{ mol L}^{-1}$\n3. Time for complete reaction ($[A]_t = 0$):\n$$t_{\\text{complete}} = \\frac{[A]_0}{k} = \\frac{0.5\\text{ mol L}^{-1}}{0.02\\text{ mol L}^{-1}\\text{ s}^{-1}} = 25\\text{ seconds}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For an elementary reaction $2X + Y \\rightarrow Z$, the molecularity and order of the reaction are respectively:",
+          "image": "",
+          "options": [
+            "$3$ and $3$",
+            "$3$ and $2$",
+            "$2$ and $3$",
+            "$2$ and $2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For an elementary reaction (a single-step reaction occurring in one collision), the molecularity is the total number of reactant molecules colliding simultaneously, which is $2 + 1 = 3$ (termolecular).\n2. For any elementary reaction, the order with respect to each reactant is equal to its stoichiometric coefficient in the balanced equation:\n$$\\text{Rate} = k[X]^2 [Y]^1$$\n$$\\text{Overall order} = 2 + 1 = 3$$\nHence, both molecularity and order are equal to $3$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Hydrolysis of ethyl acetate in the presence of excess aqueous mineral acid:\n$$\\text{CH}_3\\text{COOC}_2\\text{H}_5 + \\text{H}_2\\text{O} \\xrightarrow{\\text{H}^+} \\text{CH}_3\\text{COOH} + \\text{C}_2\\text{H}_5\\text{OH}$$\nThis reaction is an example of a:",
+          "image": "",
+          "options": [
+            "Pseudo-first-order reaction",
+            "Zero-order reaction",
+            "True second-order reaction",
+            "Third-order reaction"
+          ],
+          "correctOption": 0,
+          "solution": "In acid-catalyzed ester hydrolysis, the true theoretical rate law is second order:\n$$\\text{Rate} = k'[\\text{CH}_3\\text{COOC}_2\\text{H}_5][\\text{H}_2\\text{O}]$$\nHowever, water is present in enormous excess ($[\\text{H}_2\\text{O}] \\approx 55.5\\text{ M}$) compared to the ester ($0.01 - 0.1\\text{ M}$), so its concentration remains practically constant throughout the course of the reaction.\nCombining constants: $k = k'[\\text{H}_2\\text{O}]$, the rate law simplifies to:\n$$\\text{Rate} = k[\\text{CH}_3\\text{COOC}_2\\text{H}_5]$$\nA second-order reaction that behaves kinetically as a first-order reaction due to the large excess of one reactant is classified as a pseudo-first-order reaction."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] For a reaction $A \\rightarrow B$, the half-life period ($t_{1/2}$) is doubled when the initial concentration of $A$ is doubled. The order of this reaction is:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$1$",
+            "$2$",
+            "$-1$"
+          ],
+          "correctOption": 0,
+          "solution": "The general relation between half-life ($t_{1/2}$) and initial concentration ($[A]_0$) for an $n^{\\text{th}}$-order reaction is:\n$$t_{1/2} \\propto \\frac{1}{[A]_0^{n - 1}} = [A]_0^{1 - n}$$\nGiven that when $[A]_0$ is doubled, $t_{1/2}$ also doubles ($t_{1/2} \\propto [A]_0^1$):\n$$1 - n = 1 \\implies n = 0$$\nTherefore, the reaction is of zero order ($t_{1/2} = \\frac{[A]_0}{2k}$)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The following initial rate data were obtained for the reaction $2A + B \\rightarrow C$:\n\n| Experiment | $[A]$ (M) | $[B]$ (M) | Initial Rate ($\\text{M s}^{-1}$) |\n|---|---|---|---|\n| 1 | $0.10$ | $0.10$ | $2.0 \\times 10^{-3}$ |\n| 2 | $0.20$ | $0.10$ | $4.0 \\times 10^{-3}$ |\n| 3 | $0.20$ | $0.20$ | $1.6 \\times 10^{-2}$ |\n\nThe rate law for the reaction is:",
+          "image": "",
+          "options": [
+            "$\\text{Rate} = k[A][B]^2$",
+            "$\\text{Rate} = k[A]^2 [B]$",
+            "$\\text{Rate} = k[A][B]$",
+            "$\\text{Rate} = k[A]^2 [B]^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the rate law be $\\text{Rate} = k[A]^x [B]^y$.\n1. Compare Experiments 1 and 2 (where $[B]$ is constant at $0.10\\text{ M}$):\n$$\\frac{\\text{Rate}_2}{\\text{Rate}_1} = \\frac{4.0 \\times 10^{-3}}{2.0 \\times 10^{-3}} = \\left(\\frac{0.20}{0.10}\\right)^x$$\n$$2 = 2^x \\implies x = 1$$\n2. Compare Experiments 2 and 3 (where $[A]$ is constant at $0.20\\text{ M}$):\n$$\\frac{\\text{Rate}_3}{\\text{Rate}_2} = \\frac{1.6 \\times 10^{-2}}{4.0 \\times 10^{-3}} = \\frac{16 \\times 10^{-3}}{4.0 \\times 10^{-3}} = \\left(\\frac{0.20}{0.10}\\right)^y$$\n$$4 = 2^y \\implies 2^2 = 2^y \\implies y = 2$$\nTherefore, the rate law is $\\text{Rate} = k[A][B]^2$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Which of the following statements regarding the molecularity of a reaction is INCORRECT?",
+          "image": "",
+          "options": [
+            "Molecularity can be zero, fractional, or negative",
+            "Molecularity is defined only for elementary reactions",
+            "Molecularity is the number of reacting species colliding simultaneously in a single elementary step",
+            "Molecularity rarely exceeds three due to the low probability of more than three molecules colliding simultaneously"
+          ],
+          "correctOption": 0,
+          "solution": "1. Molecularity is an integer count of real colliding particles taking part in an elementary chemical step; hence, it can only be a positive whole number ($1, 2, 3$). It can never be zero, fractional, or negative.\n2. In contrast, reaction order is an experimentally determined quantity that can be zero, fractional, positive, or negative.\nTherefore, Statement A is incorrect."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] For a first-order gas-phase reaction $A(g) \\rightarrow B(g) + C(g)$, the initial pressure is $P_0$ and the total pressure at time $t$ is $P_t$. The integrated rate equation for the rate constant $k$ is:",
+          "image": "",
+          "options": [
+            "$k = \\frac{2.303}{t} \\log_{10}\\left(\\frac{P_0}{2P_0 - P_t}\\right)$",
+            "$k = \\frac{2.303}{t} \\log_{10}\\left(\\frac{P_0}{P_0 - P_t}\\right)$",
+            "$k = \\frac{2.303}{t} \\log_{10}\\left(\\frac{2P_0}{2P_0 - P_t}\\right)$",
+            "$k = \\frac{2.303}{t} \\log_{10}\\left(\\frac{P_t}{2P_0 - P_t}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the decrease in partial pressure of $A(g)$ at time $t$ be $p$:\n- Initially ($t = 0$): $P_A = P_0, \\quad P_B = 0, \\quad P_C = 0$\n- At time $t$: $P_A = P_0 - p, \\quad P_B = p, \\quad P_C = p$\nTotal pressure at time $t$:\n$$P_t = P_A + P_B + P_C = (P_0 - p) + p + p = P_0 + p$$\n$$p = P_t - P_0$$\nPartial pressure of reactant $A$ at time $t$:\n$$P_A = P_0 - p = P_0 - (P_t - P_0) = 2P_0 - P_t$$\nSubstitute into the integrated first-order rate law:\n$$k = \\frac{2.303}{t} \\log_{10}\\left(\\frac{P_{A,0}}{P_{A,t}}\\right) = \\frac{2.303}{t} \\log_{10}\\left(\\frac{P_0}{2P_0 - P_t}\\right)$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For a second-order reaction $A \\rightarrow \\text{Products}$, which of the following plots will be linear?",
+          "image": "",
+          "options": [
+            "$\\frac{1}{[A]}$ versus time $t$",
+            "$\\ln[A]$ versus time $t$",
+            "$[A]$ versus time $t$",
+            "$\\frac{1}{[A]^2}$ versus time $t$"
+          ],
+          "correctOption": 0,
+          "solution": "The integrated rate equation for a second-order reaction $-\\frac{d[A]}{dt} = k[A]^2$ is:\n$$\\frac{1}{[A]_t} - \\frac{1}{[A]_0} = k t \\implies \\frac{1}{[A]_t} = k t + \\frac{1}{[A]_0}$$\nComparing with $y = mx + c$:\n- $y = \\frac{1}{[A]_t}$\n- $x = t$\n- $\\text{Slope } m = +k$\n- $\\text{Intercept } c = \\frac{1}{[A]_0}$\nThus, the plot of $\\frac{1}{[A]}$ versus $t$ is a straight line with a positive slope."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A radioactive isotope decays with a half-life of $14\\text{ days}$. Starting with $100\\text{ g}$ of the pure isotope, the mass remaining undecayed after $56\\text{ days}$ is:",
+          "image": "",
+          "options": [
+            "$6.25\\text{ g}$",
+            "$12.50\\text{ g}$",
+            "$3.125\\text{ g}$",
+            "$25.00\\text{ g}$"
+          ],
+          "correctOption": 0,
+          "solution": "All radioactive decay processes follow first-order kinetics.\nNumber of half-lives elapsed ($n$):\n$$n = \\frac{t}{t_{1/2}} = \\frac{56\\text{ days}}{14\\text{ days}} = 4$$\nThe amount remaining after $n$ half-lives is:\n$$N = N_0 \\left(\\frac{1}{2}\\right)^n = 100\\text{ g} \\times \\left(\\frac{1}{2}\\right)^4 = 100 \\times \\frac{1}{16} = 6.25\\text{ g}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In a reaction between $A$ and $B$, the initial rate of reaction was measured for various concentrations as shown:\n\nIf $[A]$ is kept constant and $[B]$ is tripled, the rate increases by a factor of $9$.\nIf both $[A]$ and $[B]$ are doubled, the rate increases by a factor of $8$.\n\nThe order of reaction with respect to $A$ and $B$ respectively are:",
+          "image": "",
+          "options": [
+            "$1$ and $2$",
+            "$2$ and $1$",
+            "$2$ and $2$",
+            "$0$ and $2$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the rate equation be $r = k[A]^x [B]^y$.\n1. When $[B]$ is tripled and $[A]$ is kept constant:\n$$\\frac{r'}{r} = 3^y = 9 = 3^2 \\implies y = 2$$\n2. When both $[A]$ and $[B]$ are doubled:\n$$\\frac{r''}{r} = 2^x \\cdot 2^y = 8 = 2^3$$\n$$2^{x + y} = 2^3 \\implies x + y = 3$$\nSubstitute $y = 2$:\n$$x + 2 = 3 \\implies x = 1$$\nThus, the order with respect to $A$ is $1$ and with respect to $B$ is $2$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For a zero-order reaction $A \\rightarrow B$, if the initial concentration is $0.2\\text{ M}$ and the rate constant is $0.002\\text{ mol L}^{-1}\\text{ s}^{-1}$, the concentration of $A$ remaining after $40\\text{ seconds}$ is:",
+          "image": "",
+          "options": [
+            "$0.12\\text{ M}$",
+            "$0.08\\text{ M}$",
+            "$0.16\\text{ M}$",
+            "$0.04\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the integrated rate equation for a zero-order reaction:\n$$[A]_t = [A]_0 - k t$$\nSubstitute $[A]_0 = 0.2\\text{ M}$, $k = 0.002\\text{ mol L}^{-1}\\text{ s}^{-1}$, and $t = 40\\text{ s}$:\n$$[A]_t = 0.2 - (0.002 \\times 40) = 0.2 - 0.08 = 0.12\\text{ M}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] For a first-order reaction $A \\rightarrow \\text{Products}$, the ratio of the time required for $75\\%$ completion ($t_{75\\%}$) to the time required for $50\\%$ completion ($t_{50\\%}$) is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$3$",
+            "$1.5$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "For a first-order reaction:\n1. At $50\\%$ completion, half of the reactant has reacted: $[A]_t = \\frac{[A]_0}{2}$, so $t_{50\\%} = t_{1/2}$.\n2. At $75\\%$ completion, $\\frac{3}{4}$ of the reactant has reacted, leaving $\\frac{1}{4}$ of the initial amount: $[A]_t = \\frac{[A]_0}{4} = \\frac{[A]_0}{2^2}$.\nBecause remaining concentration reduces by half every $t_{1/2}$, reaching $\\frac{1}{4}$ requires exactly two half-lives:\n$$t_{75\\%} = 2 \\times t_{50\\%}$$\n$$\\frac{t_{75\\%}}{t_{50\\%}} = 2$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The rate of a gaseous reaction is expressed as $\\text{Rate} = k[NO]^2 [O_2]$. If the pressure of the reaction mixture is doubled by reducing the volume at constant temperature, the rate of reaction will:",
+          "image": "",
+          "options": [
+            "Increase by a factor of $8$",
+            "Increase by a factor of $4$",
+            "Increase by a factor of $2$",
+            "Increase by a factor of $16$"
+          ],
+          "correctOption": 0,
+          "solution": "By the ideal gas law, $P = CRT \\implies C \\propto P$.\nDoubling the total pressure doubles the partial pressure and molar concentration of each component:\n$$[NO]' = 2[NO], \\quad [O_2]' = 2[O_2]$$\nNew rate:\n$$r' = k(2[NO])^2 (2[O_2]) = k(4[NO]^2)(2[O_2]) = 8 \\cdot k[NO]^2 [O_2] = 8r$$\nThus, the rate increases by a factor of $8$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following is true regarding a zero-order reaction?",
+          "image": "",
+          "options": [
+            "The rate of reaction is independent of the reactant concentration",
+            "The half-life of the reaction is independent of initial concentration",
+            "A plot of $\\ln[A]$ versus $t$ is linear",
+            "The rate constant has the unit $\\text{s}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "For a zero-order reaction:\n$$\\text{Rate} = k[A]^0 = k$$\n1. The rate is constant and completely independent of the concentration of the reactants.\n2. Half-life depends directly on the initial concentration: $t_{1/2} = \\frac{[A]_0}{2k}$.\n3. The linear plot is $[A]$ versus $t$, not $\\ln[A]$ versus $t$.\n4. The unit of $k$ is $\\text{mol L}^{-1}\\text{ s}^{-1}$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In the decomposition of hydrogen peroxide, $2\\text{H}_2\\text{O}_2(aq) \\rightarrow 2\\text{H}_2\\text{O}(l) + \\text{O}_2(g)$, the rate of formation of $\\text{O}_2$ is $0.016\\text{ mol L}^{-1}\\text{ min}^{-1}$. The rate of disappearance of $\\text{H}_2\\text{O}_2$ is:",
+          "image": "",
+          "options": [
+            "$0.032\\text{ mol L}^{-1}\\text{ min}^{-1}$",
+            "$0.016\\text{ mol L}^{-1}\\text{ min}^{-1}$",
+            "$0.008\\text{ mol L}^{-1}\\text{ min}^{-1}$",
+            "$0.064\\text{ mol L}^{-1}\\text{ min}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Equating the stoichiometric rates of the reaction:\n$$\\text{Rate} = -\\frac{1}{2}\\frac{d[\\text{H}_2\\text{O}_2]}{dt} = +\\frac{d[\\text{O}_2]}{dt}$$\n$$\\text{Rate of disappearance of } \\text{H}_2\\text{O}_2 = -\\frac{d[\\text{H}_2\\text{O}_2]}{dt} = 2 \\times \\frac{d[\\text{O}_2]}{dt}$$\nSubstitute $\\frac{d[\\text{O}_2]}{dt} = 0.016\\text{ mol L}^{-1}\\text{ min}^{-1}$:\n$$-\\frac{d[\\text{H}_2\\text{O}_2]}{dt} = 2 \\times 0.016 = 0.032\\text{ mol L}^{-1}\\text{ min}^{-1}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Inversion of cane sugar (sucrose) in an acidic aqueous solution:\n$$\\text{C}_{12}\\text{H}_{22}\\text{O}_{11} + \\text{H}_2\\text{O} \\xrightarrow{\\text{H}^+} \\text{C}_6\\text{H}_{12}\\text{O}_6\\text{ (glucose)} + \\text{C}_6\\text{H}_{12}\\text{O}_6\\text{ (fructose)}$$\nIs monitored using a polarimeter. The rate constant $k$ in terms of optical rotations $r_0$ (initial), $r_t$ (at time $t$), and $r_\\infty$ (at infinite time) is given by:",
+          "image": "",
+          "options": [
+            "$k = \\frac{2.303}{t} \\log_{10}\\left(\\frac{r_0 - r_\\infty}{r_t - r_\\infty}\\right)$",
+            "$k = \\frac{2.303}{t} \\log_{10}\\left(\\frac{r_t - r_\\infty}{r_0 - r_\\infty}\\right)$",
+            "$k = \\frac{2.303}{t} \\log_{10}\\left(\\frac{r_0}{r_t}\\right)$",
+            "$k = \\frac{2.303}{t} \\log_{10}\\left(\\frac{r_0 - r_t}{r_\\infty}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the optical rotation be proportional to concentration:\n1. At $t = 0$: $a \\propto (r_0 - r_\\infty)$ (where $a$ is initial sucrose concentration)\n2. At time $t$: $(a - x) \\propto (r_t - r_\\infty)$ (where $a - x$ is remaining sucrose concentration)\nSubstitute into the first-order rate formula:\n$$k = \\frac{2.303}{t} \\log_{10}\\left(\\frac{a}{a - x}\\right) = \\frac{2.303}{t} \\log_{10}\\left(\\frac{r_0 - r_\\infty}{r_t - r_\\infty}\\right)$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] A first-order reaction has a rate constant $k = 2.303 \\times 10^{-3}\\text{ s}^{-1}$. Find the time (in seconds) required for the reactant concentration to fall to $\\frac{1}{10}$ of its initial value.",
+          "image": "",
+          "correctValue": 1000.0,
+          "solution": "Using the integrated first-order rate law:\n$$t = \\frac{2.303}{k} \\log_{10}\\left(\\frac{[A]_0}{[A]_t}\\right)$$\nHere $\\frac{[A]_0}{[A]_t} = 10$:\n$$t = \\frac{2.303}{2.303 \\times 10^{-3}} \\log_{10}(10) = \\frac{1}{10^{-3}} \\times 1 = 1000.0\\text{ seconds}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] For a zero-order reaction, the half-life period is $100\\text{ minutes}$ when the initial concentration is $0.4\\text{ M}$. Calculate the rate constant $k$ (in $\\text{mol L}^{-1}\\text{ min}^{-1}$, express as decimal).",
+          "image": "",
+          "correctValue": 0.002,
+          "solution": "For a zero-order reaction:\n$$t_{1/2} = \\frac{[A]_0}{2k}$$\n$$k = \\frac{[A]_0}{2 \\cdot t_{1/2}} = \\frac{0.4\\text{ mol L}^{-1}}{2 \\times 100\\text{ min}} = \\frac{0.4}{200} = 0.002\\text{ mol L}^{-1}\\text{ min}^{-1}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] A first-order reaction is $75\\%$ completed in $32\\text{ minutes}$. Calculate the half-life period $t_{1/2}$ (in minutes) of the reaction.",
+          "image": "",
+          "correctValue": 16.0,
+          "solution": "For a first-order reaction:\n$$t_{75\\%} = 2 \\times t_{1/2}$$\n$$32 = 2 \\times t_{1/2} \\implies t_{1/2} = \\frac{32}{2} = 16.0\\text{ minutes}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] For a reaction $A \\rightarrow B$, the rate law is $\\text{Rate} = k[A]^{1/2}$. What is the overall order of the reaction (as a decimal)?",
+          "image": "",
+          "correctValue": 0.5,
+          "solution": "The order of a reaction is defined as the sum of exponents of concentration terms in the rate law expression.\nHere, the exponent of $[A]$ is $\\frac{1}{2}$.\n$$\\text{Order} = 0.5$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] In a reaction $2A \\rightarrow \\text{Products}$, the concentration of $A$ decreases from $0.5\\text{ mol L}^{-1}$ to $0.4\\text{ mol L}^{-1}$ in $10\\text{ minutes}$. Find the rate of disappearance of $A$ during this interval (in $\\text{mol L}^{-1}\\text{ min}^{-1}$).",
+          "image": "",
+          "correctValue": 0.01,
+          "solution": "Rate of disappearance of $A$:\n$$-\\frac{\\Delta[A]}{\\Delta t} = -\\frac{[A]_2 - [A]_1}{t_2 - t_1} = -\\frac{0.4 - 0.5}{10} = -\\frac{-0.1}{10} = 0.01\\text{ mol L}^{-1}\\text{ min}^{-1}$$"
+        }
+      ]
+    }
+  ]
+}

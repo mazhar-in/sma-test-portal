@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-chem-13-conductance-and-galvanic-cells",
+  "title": "Conductance & Galvanic Cells (Molar Conductivity, Kohlrausch’s Law, Electrochemical Cells, & EMF Calculation)",
+  "syllabus": "Electrolytic conduction, resistance, conductance, resistivity, conductivity (specific conductance κ), cell constant; Molar conductivity (Λm), equivalent conductivity, variation of conductivity and molar conductivity with concentration for strong and weak electrolytes; Debye-Hückel-Onsager equation; Kohlrausch’s law of independent migration of ions and its applications (limiting molar conductivity, degree of dissociation α, dissociation constant Ka, solubility of sparingly soluble salts); Galvanic (voltaic) cells, Daniell cell, half-cell reactions, cell notation, salt bridge and its functions; Standard electrode potentials, SHE (standard hydrogen electrode), electrochemical series; Nernst equation for electrode potential and cell EMF; Equilibrium constant (Keq) and Gibbs free energy change (ΔG° = -nFE°cell); Concentration cells",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Given the limiting molar conductivities at $298\\text{ K}$:\n$\\Lambda_m^\\circ(\\text{HCl}) = 426\\text{ S cm}^2\\text{ mol}^{-1}$\n$\\Lambda_m^\\circ(\\text{NaCl}) = 126\\text{ S cm}^2\\text{ mol}^{-1}$\n$\\Lambda_m^\\circ(\\text{CH}_3\\text{COONa}) = 91\\text{ S cm}^2\\text{ mol}^{-1}$\nThe limiting molar conductivity of acetic acid ($\\Lambda_m^\\circ(\\text{CH}_3\\text{COOH})$) at $298\\text{ K}$ is:",
+          "image": "",
+          "options": [
+            "$391\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$526\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$643\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$209\\text{ S cm}^2\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "According to Kohlrausch's law of independent migration of ions:\n$$\\Lambda_m^\\circ(\\text{CH}_3\\text{COOH}) = \\lambda^\\circ(\\text{CH}_3\\text{COO}^-) + \\lambda^\\circ(\\text{H}^+)$$\nThis can be expressed using combinations of strong electrolytes:\n$$\\Lambda_m^\\circ(\\text{CH}_3\\text{COOH}) = \\Lambda_m^\\circ(\\text{CH}_3\\text{COONa}) + \\Lambda_m^\\circ(\\text{HCl}) - \\Lambda_m^\\circ(\\text{NaCl})$$\nSubstitute the given values:\n$$\\Lambda_m^\\circ(\\text{CH}_3\\text{COOH}) = 91 + 426 - 126 = 517 - 126 = 391\\text{ S cm}^2\\text{ mol}^{-1}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For the cell reaction:\n$$\\text{Zn}(s) + \\text{Cu}^{2+}(aq, 0.1\\text{ M}) \\rightarrow \\text{Zn}^{2+}(aq, 0.01\\text{ M}) + \\text{Cu}(s)$$\nGiven $E^\\circ(\\text{Cu}^{2+}/\\text{Cu}) = +0.34\\text{ V}$ and $E^\\circ(\\text{Zn}^{2+}/\\text{Zn}) = -0.76\\text{ V}$, the EMF of the cell at $298\\text{ K}$ is: (Take $\\frac{2.303 RT}{F} = 0.059\\text{ V}$)",
+          "image": "",
+          "options": [
+            "$1.13\\text{ V}$",
+            "$1.10\\text{ V}$",
+            "$1.07\\text{ V}$",
+            "$1.16\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Standard cell potential:\n$$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}} = 0.34\\text{ V} - (-0.76\\text{ V}) = 1.10\\text{ V}$$\n2. Number of electrons transferred: $n = 2$.\n3. Reaction quotient:\n$$Q = \\frac{[\\text{Zn}^{2+}]}{[\\text{Cu}^{2+}]} = \\frac{0.01}{0.1} = 0.1 = 10^{-1}$$\n4. Nernst equation:\n$$E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\frac{0.059}{n} \\log_{10} Q$$\n$$E_{\\text{cell}} = 1.10 - \\frac{0.059}{2} \\log_{10}(10^{-1}) = 1.10 - (-0.0295) = 1.10 + 0.0295 = 1.1295\\text{ V} \\approx 1.13\\text{ V}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] As an electrolytic solution is progressively diluted, which of the following variations is observed for conductivity ($\\kappa$) and molar conductivity ($\\Lambda_m$)?",
+          "image": "",
+          "options": [
+            "$\\kappa$ decreases, while $\\Lambda_m$ increases",
+            "$\\kappa$ increases, while $\\Lambda_m$ decreases",
+            "Both $\\kappa$ and $\\Lambda_m$ increase",
+            "Both $\\kappa$ and $\\Lambda_m$ decrease"
+          ],
+          "correctOption": 0,
+          "solution": "1. Conductivity (specific conductance, $\\kappa$) represents the conductance of ions present in a unit volume ($1\\text{ cm}^3$ or $1\\text{ m}^3$) of the solution. On dilution, although the total volume increases, the number of ions per unit volume decreases, leading to a decrease in $\\kappa$.\n2. Molar conductivity is given by $\\Lambda_m = \\frac{\\kappa \\times 1000}{C}$. On dilution, the decrease in concentration ($C$) in the denominator overwhelmingly exceeds the decrease in $\\kappa$, or in terms of volume $\\Lambda_m = \\kappa \\cdot V$, the increase in volume containing one mole of electrolyte is far greater than the decrease in $\\kappa$. Furthermore, for weak electrolytes $\\alpha$ increases, and for strong electrolytes interionic attractions diminish.\nHence, $\\kappa$ decreases while $\\Lambda_m$ increases on dilution."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following salts is generally chosen to prepare the salt bridge in a galvanic cell?",
+          "image": "",
+          "options": [
+            "$\\text{KCl}$ or $\\text{KNO}_3$, because the transport numbers (ionic mobilities) of cation and anion are nearly equal",
+            "$\\text{NaCl}$, because sodium ions have higher mobility than chloride ions",
+            "$\\text{AgNO}_3$, because it precipitates all interfering anions",
+            "$\\text{FeSO}_4$, because it provides redox buffering in the liquid junction"
+          ],
+          "correctOption": 0,
+          "solution": "A salt bridge maintains electrical neutrality between the two half-cell compartments and prevents liquid junction potential.\nAn ideal electrolyte for a salt bridge must satisfy two critical conditions:\n1. The velocities (ionic mobilities) and transport numbers of both the cation and the anion must be nearly identical ($u_+ \\approx u_-$) so that they migrate at the same rate, preventing asymmetric charge accumulation and eliminating liquid junction potential (e.g., in $\\text{KCl}$, $\\text{KNO}_3$, or $\\text{NH}_4\\text{NO}_3$).\n2. The ions must be chemically inert and should not precipitate or react with species in either half-cell (for example, $\\text{KCl}$ is avoided if $\\text{Ag}^+$ or $\\text{Pb}^{2+}$ are present)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The resistance of a conductivity cell filled with $0.1\\text{ M } \\text{KCl}$ solution is $100\\ \\Omega$. If the conductivity of $0.1\\text{ M } \\text{KCl}$ is $1.29\\text{ S m}^{-1}$, the cell constant of the conductivity cell is:",
+          "image": "",
+          "options": [
+            "$129\\text{ m}^{-1}$",
+            "$1.29\\text{ m}^{-1}$",
+            "$0.0129\\text{ m}^{-1}$",
+            "$12.9\\text{ m}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Conductivity ($\\kappa$) is related to resistance ($R$) and cell constant ($G^* = \\frac{l}{A}$) by:\n$$\\kappa = \\frac{1}{R} \\times \\left(\\frac{l}{A}\\right) = \\frac{G^*}{R}$$\n$$G^* = \\kappa \\times R$$\nSubstitute $\\kappa = 1.29\\text{ S m}^{-1}$ and $R = 100\\ \\Omega$:\n$$G^* = 1.29\\text{ S m}^{-1} \\times 100\\ \\Omega = 129\\text{ m}^{-1}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For a strong electrolyte, the plot of molar conductivity ($\\Lambda_m$) versus $\\sqrt{C}$ according to the Debye-Hückel-Onsager equation gives a straight line with:",
+          "image": "",
+          "options": [
+            "Intercept equal to $\\Lambda_m^\\circ$ and a negative slope",
+            "Intercept equal to $\\Lambda_m^\\circ$ and a positive slope",
+            "Intercept equal to zero and a negative slope",
+            "A curved asymptote that cannot be extrapolated"
+          ],
+          "correctOption": 0,
+          "solution": "The Debye-Hückel-Onsager relationship for dilute solutions of strong electrolytes is:\n$$\\Lambda_m = \\Lambda_m^\\circ - A\\sqrt{C}$$\nComparing with the linear form $y = c + mx$:\n- $y = \\Lambda_m$\n- $x = \\sqrt{C}$\n- Intercept $c = \\Lambda_m^\\circ$ (limiting molar conductivity at infinite dilution)\n- Slope $m = -A$ (a constant depending on solvent nature, temperature, and electrolyte charges)\nThus, it is a straight line with an intercept of $\\Lambda_m^\\circ$ and a negative slope $-A$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The standard reduction potentials for four metals are:\n$E^\\circ(\\text{A}^{2+}/\\text{A}) = -2.93\\text{ V}$\n$E^\\circ(\\text{B}^{2+}/\\text{B}) = -0.74\\text{ V}$\n$E^\\circ(\\text{C}^+/\\text{C}) = +0.80\\text{ V}$\n$E^\\circ(\\text{D}^{2+}/\\text{D}) = -2.37\\text{ V}$\nThe correct order of their reducing power is:",
+          "image": "",
+          "options": [
+            "$\\text{A} > \\text{D} > \\text{B} > \\text{C}$",
+            "$\\text{C} > \\text{B} > \\text{D} > \\text{A}$",
+            "$\\text{A} > \\text{B} > \\text{D} > \\text{C}$",
+            "$\\text{D} > \\text{A} > \\text{B} > \\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "Reducing power is the ability of a substance to donate electrons and get oxidized.\nA more negative standard reduction potential ($E^\\circ_{\\text{red}}$) indicates greater ease of oxidation, and hence a stronger reducing agent.\nArranging the standard reduction potentials in ascending order (most negative to most positive):\n$$-2.93\\text{ V (A)} < -2.37\\text{ V (D)} < -0.74\\text{ V (B)} < +0.80\\text{ V (C)}$$\nTherefore, the reducing power follows the sequence:\n$$\\text{A} > \\text{D} > \\text{B} > \\text{C}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The equilibrium constant ($K_{eq}$) for a cell reaction with standard cell potential $E^\\circ_{\\text{cell}} = 0.59\\text{ V}$ at $298\\text{ K}$ involving a $1\\text{-electron}$ transfer is: (Take $\\frac{2.303 RT}{F} = 0.059\\text{ V}$)",
+          "image": "",
+          "options": [
+            "$1.0 \\times 10^{10}$",
+            "$1.0 \\times 10^5$",
+            "$1.0 \\times 10^{20}$",
+            "$1.0 \\times 10^{-10}$"
+          ],
+          "correctOption": 0,
+          "solution": "The relationship between standard EMF and the equilibrium constant is:\n$$E^\\circ_{\\text{cell}} = \\frac{0.059}{n} \\log_{10} K_{eq}$$\nSubstitute $E^\\circ_{\\text{cell}} = 0.59\\text{ V}$ and $n = 1$:\n$$0.59 = \\frac{0.059}{1} \\log_{10} K_{eq}$$\n$$\\log_{10} K_{eq} = \\frac{0.59}{0.059} = 10$$\n$$K_{eq} = 10^{10} = 1.0 \\times 10^{10}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The molar conductivity of a $0.025\\text{ M}$ solution of methanoic acid is $46.1\\text{ S cm}^2\\text{ mol}^{-1}$. If $\\Lambda_m^\\circ(\\text{HCOOH}) = 405.0\\text{ S cm}^2\\text{ mol}^{-1}$, the degree of dissociation ($\\alpha$) and dissociation constant ($K_a$) of the acid are respectively:",
+          "image": "",
+          "options": [
+            "$\\alpha = 0.114, \\quad K_a = 3.67 \\times 10^{-4}$",
+            "$\\alpha = 0.055, \\quad K_a = 1.80 \\times 10^{-5}$",
+            "$\\alpha = 0.228, \\quad K_a = 7.34 \\times 10^{-4}$",
+            "$\\alpha = 0.114, \\quad K_a = 1.83 \\times 10^{-3}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Degree of dissociation ($\\alpha$):\n$$\\alpha = \\frac{\\Lambda_m}{\\Lambda_m^\\circ} = \\frac{46.1}{405.0} \\approx 0.1138 \\approx 0.114$$\n2. Dissociation constant ($K_a$):\n$$K_a = \\frac{C\\alpha^2}{1 - \\alpha} = \\frac{0.025 \\times (0.114)^2}{1 - 0.114} = \\frac{0.025 \\times 0.0130}{0.886} = \\frac{3.25 \\times 10^{-4}}{0.886} \\approx 3.668 \\times 10^{-4} \\approx 3.67 \\times 10^{-4}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For the concentration cell:\n$$\\text{Pt} | \\text{H}_2(g, 1\\text{ bar}) | \\text{HCl}(C_1) || \\text{HCl}(C_2) | \\text{H}_2(g, 1\\text{ bar}) | \\text{Pt}$$\nThe cell potential is positive ($E_{\\text{cell}} > 0$) and the process is spontaneous when:",
+          "image": "",
+          "options": [
+            "$C_2 > C_1$",
+            "$C_1 > C_2$",
+            "$C_1 = C_2$",
+            "$C_1 \\cdot C_2 = 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Half-cell reactions:\n- Anode: $\\frac{1}{2}\\text{H}_2(1\\text{ bar}) \\rightarrow \\text{H}^+(C_1) + e^-$\n- Cathode: $\\text{H}^+(C_2) + e^- \\rightarrow \\frac{1}{2}\\text{H}_2(1\\text{ bar})$\nNet cell reaction:\n$$\\text{H}^+(C_2) \\rightarrow \\text{H}^+(C_1)$$\nSince both electrodes are identical, $E^\\circ_{\\text{cell}} = 0$.\nApplying the Nernst equation at $298\\text{ K}$:\n$$E_{\\text{cell}} = 0 - \\frac{0.059}{1} \\log_{10}\\left(\\frac{C_1}{C_2}\\right) = +0.059 \\log_{10}\\left(\\frac{C_2}{C_1}\\right)$$\nFor the cell potential to be positive ($E_{\\text{cell}} > 0$):\n$$\\log_{10}\\left(\\frac{C_2}{C_1}\\right) > 0 \\implies \\frac{C_2}{C_1} > 1 \\implies C_2 > C_1$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The standard Gibbs free energy change ($\\Delta G^\\circ$) for a galvanic cell having $E^\\circ_{\\text{cell}} = +1.20\\text{ V}$ and involving $n = 2$ electrons is: (Take $F = 96500\\text{ C mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$-231.6\\text{ kJ/mol}$",
+            "$+231.6\\text{ kJ/mol}$",
+            "$-115.8\\text{ kJ/mol}$",
+            "$-463.2\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "The thermodynamic relation between standard free energy change and standard cell EMF is:\n$$\\Delta G^\\circ = -n F E^\\circ_{\\text{cell}}$$\nSubstitute $n = 2$, $F = 96500\\text{ C mol}^{-1}$, and $E^\\circ_{\\text{cell}} = 1.20\\text{ V}$:\n$$\\Delta G^\\circ = -2 \\times 96500 \\times 1.20\\text{ J/mol} = -231600\\text{ J/mol} = -231.6\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following expressions correctly defines the relation between equivalent conductivity ($\\Lambda_{eq}$) and molar conductivity ($\\Lambda_m$) of an electrolyte $A_x B_y$ producing cations of charge $z_+$ and anions of charge $z_-$?",
+          "image": "",
+          "options": [
+            "$\\Lambda_{eq} = \\frac{\\Lambda_m}{n\\text{-factor}} = \\frac{\\Lambda_m}{x \\cdot z_+}$",
+            "$\\Lambda_{eq} = \\Lambda_m \\times n\\text{-factor}$",
+            "$\\Lambda_{eq} = \\frac{\\Lambda_m}{(x + y)}$",
+            "$\\Lambda_{eq} = \\Lambda_m \\times (x \\cdot z_+)$"
+          ],
+          "correctOption": 0,
+          "solution": "By definition:\n$$\\Lambda_m = \\frac{\\kappa \\times 1000}{M}, \\quad \\Lambda_{eq} = \\frac{\\kappa \\times 1000}{N}$$\nSince Normality ($N$) and Molarity ($M$) are related by $N = M \\times n\\text{-factor}$:\n$$\\Lambda_{eq} = \\frac{\\kappa \\times 1000}{M \\times n\\text{-factor}} = \\frac{\\Lambda_m}{n\\text{-factor}}$$\nFor a salt $A_x B_y$, the $n$-factor is the total positive or negative charge produced upon complete dissociation: $n\\text{-factor} = x \\cdot z_+ = y \\cdot z_-$.\nTherefore, $\\Lambda_{eq} = \\frac{\\Lambda_m}{x \\cdot z_+}$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The potential of a hydrogen electrode in contact with an aqueous solution having $\\text{pH} = 10$ at $298\\text{ K}$ and $P_{\\text{H}_2} = 1\\text{ atm}$ is: (Take $\\frac{2.303 RT}{F} = 0.059\\text{ V}$)",
+          "image": "",
+          "options": [
+            "$-0.59\\text{ V}$",
+            "$+0.59\\text{ V}$",
+            "$-0.059\\text{ V}$",
+            "$0.00\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "The reduction half-reaction at the hydrogen electrode is:\n$$\\text{H}^+(aq) + e^- \\rightarrow \\frac{1}{2}\\text{H}_2(g)$$\nApplying the Nernst equation:\n$$E_{\\text{H}^+/\\text{H}_2} = E^\\circ_{\\text{H}^+/\\text{H}_2} - \\frac{0.059}{1} \\log_{10}\\left(\\frac{(P_{\\text{H}_2})^{1/2}}{[\\text{H}^+]}\\right)$$\nSince $E^\\circ_{\\text{H}^+/\\text{H}_2} = 0.00\\text{ V}$ and $P_{\\text{H}_2} = 1\\text{ atm}$:\n$$E_{\\text{H}^+/\\text{H}_2} = -0.059 \\log_{10}\\left(\\frac{1}{[\\text{H}^+]}\\right) = -0.059 \\times (-\\log_{10}[\\text{H}^+])$$\n$$E_{\\text{H}^+/\\text{H}_2} = -0.059 \\times \\text{pH}$$\nFor $\\text{pH} = 10$:\n$$E = -0.059 \\times 10 = -0.59\\text{ V}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] When a zinc rod is dipped in a copper sulfate solution in a beaker, which of the following is NOT observed?",
+          "image": "",
+          "options": [
+            "Electrical work is obtained from the system",
+            "The temperature of the solution increases",
+            "The blue color of the solution fades",
+            "Reddish-brown copper precipitates at the bottom"
+          ],
+          "correctOption": 0,
+          "solution": "When zinc is immersed directly into an aqueous $\\text{CuSO}_4$ solution:\n$$\\text{Zn}(s) + \\text{Cu}^{2+}(aq) \\rightarrow \\text{Zn}^{2+}(aq) + \\text{Cu}(s)$$\n1. This is a direct redox reaction where electron transfer occurs directly on the surface of the zinc metal.\n2. The chemical energy released is dissipated entirely as thermal energy (heat), causing the solution temperature to rise (exothermic process).\n3. Blue $\\text{Cu}^{2+}$ ions are reduced to reddish-brown $\\text{Cu}$ metal, fading the blue color.\n4. No electrical work is obtained because the oxidation and reduction sites are not physically separated; electrical work is obtained only when set up as a galvanic cell."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Given standard reduction potentials:\n$E^\\circ(\\text{Fe}^{3+}/\\text{Fe}^{2+}) = +0.77\\text{ V}$\n$E^\\circ(\\text{Fe}^{2+}/\\text{Fe}) = -0.44\\text{ V}$\nThe value of $E^\\circ(\\text{Fe}^{3+}/\\text{Fe})$ is:",
+          "image": "",
+          "options": [
+            "$-0.037\\text{ V}$",
+            "$+0.33\\text{ V}$",
+            "$+1.21\\text{ V}$",
+            "$-0.11\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "Electrode potentials are intensive properties and cannot be added directly; free energies (extensive properties) must be combined:\n1. $\\text{Fe}^{3+} + e^- \\rightarrow \\text{Fe}^{2+}; \\quad \\Delta G_1^\\circ = -1 \\cdot F \\cdot (+0.77) = -0.77 F$\n2. $\\text{Fe}^{2+} + 2e^- \\rightarrow \\text{Fe}; \\quad \\Delta G_2^\\circ = -2 \\cdot F \\cdot (-0.44) = +0.88 F$\nAdding the two half-reactions:\n$$\\text{Fe}^{3+} + 3e^- \\rightarrow \\text{Fe}; \\quad \\Delta G_3^\\circ = \\Delta G_1^\\circ + \\Delta G_2^\\circ$$\n$$-3 F E_3^\\circ = -0.77 F + 0.88 F = +0.11 F$$\n$$-3 E_3^\\circ = +0.11 \\implies E_3^\\circ = -\\frac{0.11}{3} \\approx -0.0367\\text{ V} \\approx -0.037\\text{ V}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The limiting molar conductivities of $\\text{Ba}^{2+}$ and $\\text{Cl}^-$ ions are $127.2\\text{ S cm}^2\\text{ mol}^{-1}$ and $76.3\\text{ S cm}^2\\text{ mol}^{-1}$ respectively. The limiting molar conductivity of $\\text{BaCl}_2$ is:",
+          "image": "",
+          "options": [
+            "$279.8\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$203.5\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$139.9\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$356.1\\text{ S cm}^2\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "By Kohlrausch's law for $\\text{BaCl}_2 \\rightarrow \\text{Ba}^{2+} + 2\\text{Cl}^-$:\n$$\\Lambda_m^\\circ(\\text{BaCl}_2) = \\lambda^\\circ(\\text{Ba}^{2+}) + 2\\lambda^\\circ(\\text{Cl}^-)$$\nSubstitute the given values:\n$$\\Lambda_m^\\circ(\\text{BaCl}_2) = 127.2 + 2(76.3) = 127.2 + 152.6 = 279.8\\text{ S cm}^2\\text{ mol}^{-1}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] A cell is constructed as:\n$$\\text{Pt} | \\text{H}_2(g, P_1) | \\text{H}^+(1\\text{ M}) || \\text{H}^+(1\\text{ M}) | \\text{H}_2(g, P_2) | \\text{Pt}$$\nThe cell reaction is spontaneous at $298\\text{ K}$ when:",
+          "image": "",
+          "options": [
+            "$P_1 > P_2$",
+            "$P_2 > P_1$",
+            "$P_1 = P_2$",
+            "$P_1 \\cdot P_2 = 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Half-cell reactions:\n- Anode: $\\text{H}_2(P_1) \\rightarrow 2\\text{H}^+(1\\text{ M}) + 2e^-$\n- Cathode: $2\\text{H}^+(1\\text{ M}) + 2e^- \\rightarrow \\text{H}_2(P_2)$\nNet reaction:\n$$\\text{H}_2(P_1) \\rightarrow \\text{H}_2(P_2)$$\nSince both half-cells are hydrogen electrodes, $E^\\circ_{\\text{cell}} = 0$.\nUsing the Nernst equation ($n = 2$):\n$$E_{\\text{cell}} = 0 - \\frac{0.059}{2} \\log_{10}\\left(\\frac{P_2}{P_1}\\right) = +\\frac{0.059}{2} \\log_{10}\\left(\\frac{P_1}{P_2}\\right)$$\nFor spontaneity, $E_{\\text{cell}} > 0$:\n$$\\log_{10}\\left(\\frac{P_1}{P_2}\\right) > 0 \\implies \\frac{P_1}{P_2} > 1 \\implies P_1 > P_2$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following statements is INCORRECT concerning the Standard Hydrogen Electrode (SHE)?",
+          "image": "",
+          "options": [
+            "The platinum black foil participates in the redox reaction and is consumed over time",
+            "By convention, its standard reduction potential is assigned as $0.00\\text{ V}$ at all temperatures",
+            "It consists of platinum foil coated with platinum black immersed in $1\\text{ M } \\text{H}^+$ solution",
+            "Pure hydrogen gas is bubbled at $1\\text{ bar}$ (or $1\\text{ atm}$) pressure"
+          ],
+          "correctOption": 0,
+          "solution": "In a Standard Hydrogen Electrode (SHE):\n1. The platinum foil coated with finely divided platinum black acts strictly as an inert, non-consumable electron conductor and provides a high surface area for adsorption of hydrogen gas and catalytic equilibration: $\\text{H}^+(aq) + e^- \\rightleftharpoons \\frac{1}{2}\\text{H}_2(g)$.\n2. It does not take part in the chemical reaction and is not consumed.\nTherefore, Option A is incorrect."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For the cell reaction $\\text{Cu}(s) + 2\\text{Ag}^+(aq) \\rightarrow \\text{Cu}^{2+}(aq) + 2\\text{Ag}(s)$, $E^\\circ_{\\text{cell}} = 0.46\\text{ V}$. If the concentration of $\\text{Cu}^{2+}$ is doubled and $[\\text{Ag}^+]$ is kept constant, the cell potential will:",
+          "image": "",
+          "options": [
+            "Decrease by approximately $0.0089\\text{ V}$",
+            "Increase by approximately $0.0089\\text{ V}$",
+            "Decrease by approximately $0.059\\text{ V}$",
+            "Remain unchanged"
+          ],
+          "correctOption": 0,
+          "solution": "The Nernst equation for this reaction ($n = 2$) is:\n$$E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\frac{0.059}{2} \\log_{10}\\left(\\frac{[\\text{Cu}^{2+}]}{[\\text{Ag}^+]^2}\\right)$$\nLet the original cell potential be $E_1$.\nWhen $[\\text{Cu}^{2+}]$ is doubled to $2[\\text{Cu}^{2+}]$:\n$$E_2 = E^\\circ_{\\text{cell}} - \\frac{0.059}{2} \\log_{10}\\left(\\frac{2[\\text{Cu}^{2+}]}{[\\text{Ag}^+]^2}\\right)$$\n$$E_2 - E_1 = -\\frac{0.059}{2} \\log_{10}(2) = -0.0295 \\times 0.3010 \\approx -0.00888\\text{ V} \\approx -0.0089\\text{ V}$$\nThus, the cell potential decreases by approximately $0.0089\\text{ V}$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The conductivity of a saturated solution of a sparingly soluble salt $\\text{AgCl}$ at $298\\text{ K}$ is $2.68 \\times 10^{-6}\\text{ S cm}^{-1}$ and that of the water used is $0.86 \\times 10^{-6}\\text{ S cm}^{-1}$. If $\\Lambda_m^\\circ(\\text{AgCl}) = 138.0\\text{ S cm}^2\\text{ mol}^{-1}$, the solubility of $\\text{AgCl}$ in water is:",
+          "image": "",
+          "options": [
+            "$1.32 \\times 10^{-5}\\text{ M}$",
+            "$1.94 \\times 10^{-5}\\text{ M}$",
+            "$2.56 \\times 10^{-5}\\text{ M}$",
+            "$1.05 \\times 10^{-4}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Conductivity contributed by dissolved $\\text{AgCl}$:\n$$\\kappa_{\\text{AgCl}} = \\kappa_{\\text{solution}} - \\kappa_{\\text{water}} = (2.68 - 0.86) \\times 10^{-6} = 1.82 \\times 10^{-6}\\text{ S cm}^{-1}$$\n2. In a saturated solution of a sparingly soluble salt, the concentration is equal to the solubility $S$ (in $\\text{mol/L}$), and $\\Lambda_m \\approx \\Lambda_m^\\circ$:\n$$\\Lambda_m^\\circ = \\frac{\\kappa_{\\text{AgCl}} \\times 1000}{S}$$\n$$S = \\frac{\\kappa_{\\text{AgCl}} \\times 1000}{\\Lambda_m^\\circ} = \\frac{1.82 \\times 10^{-6} \\times 1000}{138.0} = \\frac{1.82 \\times 10^{-3}}{138.0} \\approx 1.319 \\times 10^{-5}\\text{ M} \\approx 1.32 \\times 10^{-5}\\text{ M}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the standard EMF ($E^\\circ_{\\text{cell}}$ in volts) of the cell:\n$$\\text{Mg}(s) | \\text{Mg}^{2+}(aq) || \\text{Ag}^+(aq) | \\text{Ag}(s)$$\nGiven $E^\\circ(\\text{Mg}^{2+}/\\text{Mg}) = -2.37\\text{ V}$ and $E^\\circ(\\text{Ag}^+/\\text{Ag}) = +0.80\\text{ V}$.",
+          "image": "",
+          "correctValue": 3.17,
+          "solution": "In this cell:\n- Anode (oxidation): $\\text{Mg} \\rightarrow \\text{Mg}^{2+} + 2e^-$ with $E^\\circ_{\\text{anode}} = -2.37\\text{ V}$\n- Cathode (reduction): $\\text{Ag}^+ + e^- \\rightarrow \\text{Ag}$ with $E^\\circ_{\\text{cathode}} = +0.80\\text{ V}$\nStandard cell potential:\n$$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}} = 0.80 - (-2.37) = 3.17\\text{ V}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] A conductivity cell has a cell constant of $0.5\\text{ cm}^{-1}$. When filled with $0.01\\text{ M}$ solution of an electrolyte, its resistance is measured to be $250\\ \\Omega$. Calculate the molar conductivity $\\Lambda_m$ (in $\\text{S cm}^2\\text{ mol}^{-1}$) of the electrolyte.",
+          "image": "",
+          "correctValue": 200.0,
+          "solution": "1. Conductivity ($\\kappa$):\n$$\\kappa = \\frac{\\text{Cell constant}}{R} = \\frac{0.5\\text{ cm}^{-1}}{250\\ \\Omega} = 0.002\\text{ S cm}^{-1} = 2.0 \\times 10^{-3}\\text{ S cm}^{-1}$$\n2. Molar conductivity:\n$$\\Lambda_m = \\frac{\\kappa \\times 1000}{C} = \\frac{2.0 \\times 10^{-3} \\times 1000}{0.01} = \\frac{2.0}{0.01} = 200.0\\text{ S cm}^2\\text{ mol}^{-1}$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] For the Daniell cell $\\text{Zn} | \\text{Zn}^{2+}(1\\text{ M}) || \\text{Cu}^{2+}(1\\text{ M}) | \\text{Cu}$, the standard potential is $E^\\circ_{\\text{cell}} = 1.10\\text{ V}$. Find the magnitude of $\\Delta G^\\circ$ (in $\\text{kJ/mol}$) for the cell reaction. (Take $F = 96500\\text{ C mol}^{-1}$, round to one decimal place).",
+          "image": "",
+          "correctValue": 212.3,
+          "solution": "The cell reaction involves $2\\text{ electrons}$ ($n = 2$):\n$$\\text{Zn} + \\text{Cu}^{2+} \\rightarrow \\text{Zn}^{2+} + \\text{Cu}$$\n$$\\Delta G^\\circ = -n F E^\\circ_{\\text{cell}} = -2 \\times 96500 \\times 1.10\\text{ J/mol} = -212300\\text{ J/mol} = -212.3\\text{ kJ/mol}$$\nMagnitude $= 212.3\\text{ kJ/mol}$."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] The limiting molar conductivity of sodium sulfate ($\\text{Na}_2\\text{SO}_4$) is $260.0\\text{ S cm}^2\\text{ mol}^{-1}$. Calculate its limiting equivalent conductivity $\\Lambda_{eq}^\\circ$ (in $\\text{S cm}^2\\text{ eq}^{-1}$).",
+          "image": "",
+          "correctValue": 130.0,
+          "solution": "The dissociation of sodium sulfate is:\n$$\\text{Na}_2\\text{SO}_4 \\rightarrow 2\\text{Na}^+ + \\text{SO}_4^{2-}$$\nTotal charge on cation or anion ($n$-factor) $= 2$.\nThe relationship between equivalent and molar conductivity is:\n$$\\Lambda_{eq}^\\circ = \\frac{\\Lambda_m^\\circ}{n\\text{-factor}} = \\frac{260.0}{2} = 130.0\\text{ S cm}^2\\text{ eq}^{-1}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] For the reaction $\\frac{1}{2}\\text{H}_2(g, 1\\text{ bar}) + \\text{AgCl}(s) \\rightarrow \\text{Ag}(s) + \\text{H}^+(aq) + \\text{Cl}^-(aq)$, $E^\\circ_{\\text{cell}} = 0.222\\text{ V}$. Calculate the potential (in volts) of this cell at $298\\text{ K}$ when $[\\text{H}^+] = [\\text{Cl}^-] = 0.1\\text{ M}$. (Take $\\frac{2.303 RT}{F} = 0.059\\text{ V}$).",
+          "image": "",
+          "correctValue": 0.34,
+          "solution": "The cell reaction has $n = 1$ electron:\n$$\\frac{1}{2}\\text{H}_2(1\\text{ bar}) + \\text{AgCl}(s) + e^- \\rightarrow \\text{Ag}(s) + \\text{Cl}^- + \\text{H}^+ + e^- \\implies Q = [\\text{H}^+][\\text{Cl}^-]$$\n$$Q = (0.1) \\times (0.1) = 0.01 = 10^{-2}$$\nApply the Nernst equation:\n$$E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\frac{0.059}{1} \\log_{10}(10^{-2}) = 0.222 - 0.059(-2)$$\n$$E_{\\text{cell}} = 0.222 + 0.118 = 0.340\\text{ V} = 0.34\\text{ V}$$"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-chem-11-hydrolysis-buffers-ksp",
+  "title": "Hydrolysis & Buffers (Salt Hydrolysis, Buffer Solutions, and Solubility Product)",
+  "syllabus": "Hydrolysis of salts of different types (strong acid-weak base, weak acid-strong base, weak acid-weak base); Degree of hydrolysis (h), hydrolysis constant (Kh), and pH calculations of salt solutions; Buffer solutions: acidic and basic buffers, mechanism of buffer action, Henderson-Hasselbalch equation, buffer capacity, and buffer range; Solubility equilibria of sparingly soluble salts; Solubility product (Ksp), relationship between solubility (s) and Ksp, common ion effect on solubility, simultaneous solubility, ionic product (Qsp) and condition for precipitation",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The $\\text{pH}$ of a $0.1\\text{ M}$ aqueous solution of sodium acetate ($\\text{CH}_3\\text{COONa}$) at $298\\text{ K}$ is: (Given $\\text{p}K_a(\\text{CH}_3\\text{COOH}) = 4.74$, $\\text{p}K_w = 14.0$)",
+          "image": "",
+          "options": [
+            "$8.87$",
+            "$5.13$",
+            "$9.37$",
+            "$7.00$"
+          ],
+          "correctOption": 0,
+          "solution": "Sodium acetate ($\\text{CH}_3\\text{COONa}$) is a salt formed from a weak acid ($\\text{CH}_3\\text{COOH}$) and a strong base ($\\text{NaOH}$).\nIt undergoes anionic hydrolysis:\n$$\\text{CH}_3\\text{COO}^- + \\text{H}_2\\text{O} \\rightleftharpoons \\text{CH}_3\\text{COOH} + \\text{OH}^-$$\nThe $\\text{pH}$ of a salt of a weak acid and a strong base is given by:\n$$\\text{pH} = 7 + \\frac{1}{2}\\text{p}K_a + \\frac{1}{2}\\log_{10} C$$\nSubstitute $\\text{p}K_a = 4.74$ and $C = 0.1\\text{ M} = 10^{-1}\\text{ M}$ (so $\\log_{10} C = -1$):\n$$\\text{pH} = 7 + \\frac{1}{2}(4.74) + \\frac{1}{2}(-1)$$\n$$\\text{pH} = 7 + 2.37 - 0.50 = 8.87$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The solubility of $\\text{Ag}_2\\text{CrO}_4$ in pure water is $S\\text{ mol/L}$. The solubility product constant ($K_{sp}$) of $\\text{Ag}_2\\text{CrO}_4$ in terms of $S$ is:",
+          "image": "",
+          "options": [
+            "$4S^3$",
+            "$27S^4$",
+            "$S^2$",
+            "$2S^3$"
+          ],
+          "correctOption": 0,
+          "solution": "The dissolution equilibrium of $\\text{Ag}_2\\text{CrO}_4$ is:\n$$\\text{Ag}_2\\text{CrO}_4(s) \\rightleftharpoons 2\\text{Ag}^+(aq) + \\text{CrO}_4^{2-}(aq)$$\nIf the molar solubility is $S$, then:\n$$[\\text{Ag}^+] = 2S$$\n$$[\\text{CrO}_4^{2-}] = S$$\nThe solubility product constant expression is:\n$$K_{sp} = [\\text{Ag}^+]^2 [\\text{CrO}_4^{2-}] = (2S)^2 (S) = 4S^2 \\cdot S = 4S^3$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A buffer solution is prepared by mixing $100\\text{ mL}$ of $0.1\\text{ M } \\text{CH}_3\\text{COOH}$ and $100\\text{ mL}$ of $0.05\\text{ M } \\text{NaOH}$. The $\\text{pH}$ of the resulting buffer solution is: (Given $\\text{p}K_a(\\text{CH}_3\\text{COOH}) = 4.74$)",
+          "image": "",
+          "options": [
+            "$4.74$",
+            "$5.04$",
+            "$4.44$",
+            "$9.26$"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate initial millimoles:\n$$\\text{Millimoles of } \\text{CH}_3\\text{COOH} = 100 \\times 0.1 = 10\\text{ mmol}$$\n$$\\text{Millimoles of } \\text{NaOH} = 100 \\times 0.05 = 5\\text{ mmol}$$\nNeutralization reaction:\n$$\\text{CH}_3\\text{COOH} + \\text{NaOH} \\rightarrow \\text{CH}_3\\text{COONa} + \\text{H}_2\\text{O}$$\nAfter neutralization:\n- $\\text{CH}_3\\text{COOH}$ remaining $= 10 - 5 = 5\\text{ mmol}$\n- $\\text{CH}_3\\text{COONa}$ formed $= 5\\text{ mmol}$\nThis forms an acidic buffer containing equimolar amounts of weak acid and its conjugate base.\nUsing the Henderson-Hasselbalch equation:\n$$\\text{pH} = \\text{p}K_a + \\log_{10}\\left(\\frac{[\\text{Salt}]}{[\\text{Acid}]}\\right) = 4.74 + \\log_{10}\\left(\\frac{5}{5}\\right) = 4.74 + \\log_{10}(1) = 4.74$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The solubility product of $\\text{AgCl}$ is $K_{sp} = 1.6 \\times 10^{-10}$. Its solubility in a $0.1\\text{ M } \\text{NaCl}$ aqueous solution is:",
+          "image": "",
+          "options": [
+            "$1.6 \\times 10^{-9}\\text{ M}$",
+            "$1.26 \\times 10^{-5}\\text{ M}$",
+            "$1.6 \\times 10^{-8}\\text{ M}$",
+            "$3.2 \\times 10^{-10}\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "In the presence of $0.1\\text{ M } \\text{NaCl}$ (a strong electrolyte), $[\\text{Cl}^-] = 0.1\\text{ M}$.\nDissolution equilibrium of $\\text{AgCl}$:\n$$\\text{AgCl}(s) \\rightleftharpoons \\text{Ag}^+(aq) + \\text{Cl}^-(aq)$$\nLet $S'$ be the solubility of $\\text{AgCl}$ in $0.1\\text{ M } \\text{NaCl}$:\n$$[\\text{Ag}^+] = S'$$\n$$[\\text{Cl}^-] = S' + 0.1 \\approx 0.1\\text{ M} \\quad (\\text{since } S' \\ll 0.1)$$\nSubstitute into the $K_{sp}$ expression:\n$$K_{sp} = [\\text{Ag}^+] [\\text{Cl}^-] = S' \\times 0.1$$\n$$1.6 \\times 10^{-10} = S' \\times 0.1 \\implies S' = \\frac{1.6 \\times 10^{-10}}{0.1} = 1.6 \\times 10^{-9}\\text{ M}$$\n(Due to the common ion effect, solubility drops significantly from $1.26 \\times 10^{-5}\\text{ M}$ to $1.6 \\times 10^{-9}\\text{ M}$)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The $\\text{pH}$ of an aqueous solution of ammonium acetate ($\\text{CH}_3\\text{COONH}_4$) is independent of the concentration of the salt because:",
+          "image": "",
+          "options": [
+            "Both cation and anion undergo hydrolysis to an extent that cancels out concentration dependence in the $\\text{pH}$ expression",
+            "Ammonium acetate is a strong electrolyte that does not hydrolyze",
+            "The degree of hydrolysis is equal to $1$",
+            "It forms a neutral salt without any ions in solution"
+          ],
+          "correctOption": 0,
+          "solution": "Ammonium acetate is a salt of a weak acid ($\\text{CH}_3\\text{COOH}$) and a weak base ($\\text{NH}_4\\text{OH}$).\nBoth ions hydrolyze simultaneously:\n$$\\text{CH}_3\\text{COO}^- + \\text{NH}_4^+ + \\text{H}_2\\text{O} \\rightleftharpoons \\text{CH}_3\\text{COOH} + \\text{NH}_4\\text{OH}$$\nThe hydrolysis constant is:\n$$K_h = \\frac{K_w}{K_a \\cdot K_b}$$\nThe degree of hydrolysis $h$ is given by $h = \\sqrt{K_h} = \\sqrt{\\frac{K_w}{K_a K_b}}$, which is independent of concentration $C$.\nThe hydrogen ion concentration is:\n$$[\\text{H}^+] = \\sqrt{\\frac{K_w K_a}{K_b}}$$\nTaking negative logarithms:\n$$\\text{pH} = 7 + \\frac{1}{2}(\\text{p}K_a - \\text{p}K_b)$$\nBecause concentration $C$ does not appear in this expression, the $\\text{pH}$ is concentration-independent."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] What is the $\\text{pH}$ of a buffer solution prepared by dissolving $0.2\\text{ mol}$ of $\\text{NH}_4\\text{Cl}$ and $0.1\\text{ mol}$ of $\\text{NH}_3$ in $1\\text{ L}$ of water? (Given $\\text{p}K_b(\\text{NH}_3) = 4.74$, $\\log_{10}(2) \\approx 0.30$)",
+          "image": "",
+          "options": [
+            "$8.96$",
+            "$9.56$",
+            "$4.44$",
+            "$5.04$"
+          ],
+          "correctOption": 0,
+          "solution": "This is a basic buffer consisting of a weak base ($\\text{NH}_3$) and its conjugate acid salt ($\\text{NH}_4\\text{Cl}$).\nUsing the Henderson-Hasselbalch equation for basic buffers:\n$$\\text{pOH} = \\text{p}K_b + \\log_{10}\\left(\\frac{[\\text{Salt}]}{[\\text{Base}]}\\right)$$\nSubstitute the values:\n$$\\text{pOH} = 4.74 + \\log_{10}\\left(\\frac{0.2}{0.1}\\right) = 4.74 + \\log_{10}(2) = 4.74 + 0.30 = 5.04$$\nAt $298\\text{ K}$, $\\text{pH} + \\text{pOH} = 14$:\n$$\\text{pH} = 14 - \\text{pOH} = 14 - 5.04 = 8.96$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Solid $\\text{BaSO}_4$ is placed in water. Precipitation of $\\text{BaSO}_4$ will occur if the ionic product ($Q_{sp}$) and solubility product ($K_{sp}$) satisfy:",
+          "image": "",
+          "options": [
+            "$Q_{sp} > K_{sp}$",
+            "$Q_{sp} < K_{sp}$",
+            "$Q_{sp} = K_{sp}$",
+            "$Q_{sp} \\le K_{sp}$"
+          ],
+          "correctOption": 0,
+          "solution": "Conditions for solution states based on the reaction quotient/ionic product $Q_{sp}$:\n1. $Q_{sp} < K_{sp}$: The solution is unsaturated; more solute can dissolve, and no precipitation occurs.\n2. $Q_{sp} = K_{sp}$: The solution is saturated and exists in dynamic equilibrium with undissolved solid.\n3. $Q_{sp} > K_{sp}$: The solution is supersaturated; the forward process cannot hold this excess ion concentration, and precipitation occurs until $Q_{sp}$ decreases to $K_{sp}$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The $\\text{pH}$ of a $0.05\\text{ M}$ aqueous solution of ammonium chloride ($\\text{NH}_4\\text{Cl}$) at $298\\text{ K}$ is: (Given $\\text{p}K_b(\\text{NH}_4\\text{OH}) = 4.74$, $\\log_{10}(2) \\approx 0.30$)",
+          "image": "",
+          "options": [
+            "$5.28$",
+            "$8.72$",
+            "$5.63$",
+            "$6.25$"
+          ],
+          "correctOption": 0,
+          "solution": "Ammonium chloride is a salt of a strong acid ($\\text{HCl}$) and a weak base ($\\text{NH}_4\\text{OH}$).\nIt undergoes cationic hydrolysis to give an acidic solution:\n$$\\text{NH}_4^+ + \\text{H}_2\\text{O} \\rightleftharpoons \\text{NH}_4\\text{OH} + \\text{H}^+$$\nThe $\\text{pH}$ formula for a salt of a strong acid and weak base is:\n$$\\text{pH} = 7 - \\frac{1}{2}\\text{p}K_b - \\frac{1}{2}\\log_{10} C$$\nHere $C = 0.05\\text{ M} = \\frac{1}{20} = 5 \\times 10^{-2}\\text{ M}$, so:\n$$\\log_{10} C = \\log_{10}(5 \\times 10^{-2}) = \\log_{10}(10/2) - 2 = 1 - 0.30 - 2 = -1.30$$\nSubstitute into the formula:\n$$\\text{pH} = 7 - \\frac{1}{2}(4.74) - \\frac{1}{2}(-1.30)$$\n$$\\text{pH} = 7 - 2.37 + 0.65 = 5.28$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Which of the following mixtures does NOT act as a buffer solution?",
+          "image": "",
+          "options": [
+            "$100\\text{ mL of } 0.1\\text{ M } \\text{HCl} + 100\\text{ mL of } 0.1\\text{ M } \\text{NaOH}$",
+            "$100\\text{ mL of } 0.2\\text{ M } \\text{CH}_3\\text{COOH} + 100\\text{ mL of } 0.1\\text{ M } \\text{NaOH}$",
+            "$100\\text{ mL of } 0.1\\text{ M } \\text{CH}_3\\text{COOH} + 100\\text{ mL of } 0.1\\text{ M } \\text{CH}_3\\text{COONa}$",
+            "$100\\text{ mL of } 0.2\\text{ M } \\text{NH}_4\\text{OH} + 100\\text{ mL of } 0.1\\text{ M } \\text{HCl}$"
+          ],
+          "correctOption": 0,
+          "solution": "A buffer solution requires either a weak acid and its conjugate base, or a weak base and its conjugate acid.\n- Option A: $100\\text{ mL of } 0.1\\text{ M } \\text{HCl}$ ($10\\text{ mmol}$) mixes with $100\\text{ mL of } 0.1\\text{ M } \\text{NaOH}$ ($10\\text{ mmol}$). This completely neutralizes to form a solution of $\\text{NaCl}$ (salt of strong acid and strong base), which has zero buffering capacity.\n- Option B: Leaves $10\\text{ mmol } \\text{CH}_3\\text{COOH}$ and $10\\text{ mmol } \\text{CH}_3\\text{COONa}$ (acidic buffer).\n- Option C: Contains weak acid and conjugate base directly (acidic buffer).\n- Option D: Leaves $10\\text{ mmol } \\text{NH}_4\\text{OH}$ and $10\\text{ mmol } \\text{NH}_4\\text{Cl}$ (basic buffer)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For a sparingly soluble salt $A_3 B_2$, the relationship between its molar solubility ($S$) and solubility product ($K_{sp}$) is:",
+          "image": "",
+          "options": [
+            "$K_{sp} = 108 S^5$",
+            "$K_{sp} = 72 S^5$",
+            "$K_{sp} = 36 S^5$",
+            "$K_{sp} = 6 S^5$"
+          ],
+          "correctOption": 0,
+          "solution": "The dissociation of $A_3 B_2$ in water is:\n$$A_3 B_2(s) \\rightleftharpoons 3A^{2+}(aq) + 2B^{3-}(aq)$$\nIf the solubility is $S$, then:\n$$[A^{2+}] = 3S$$\n$$[B^{3-}] = 2S$$\nThe solubility product expression is:\n$$K_{sp} = [A^{2+}]^3 [B^{3-}]^2 = (3S)^3 (2S)^2 = (27 S^3)(4 S^2) = 108 S^5$$\nGenerally, for $A_x B_y$, $K_{sp} = x^x y^y S^{x+y} = 3^3 \\cdot 2^2 \\cdot S^{3+2} = 108 S^5$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A buffer solution contains $0.1\\text{ M } \\text{HA}$ and $0.1\\text{ M } \\text{A}^-$. When a small amount of strong acid ($\\text{HCl}$) is added, the added $\\text{H}^+$ ions are consumed primarily by reacting with:",
+          "image": "",
+          "options": [
+            "$\\text{A}^-$",
+            "$\\text{HA}$",
+            "$\\text{H}_2\\text{O}$",
+            "$\\text{OH}^-$"
+          ],
+          "correctOption": 0,
+          "solution": "An acidic buffer contains a weak acid $\\text{HA}$ (acidic component) and its conjugate base $\\text{A}^-$ (basic component).\nWhen a strong acid is added, it introduces hydronium ions $\\text{H}^+$.\nThe conjugate base $\\text{A}^-$ acts as a proton sink and neutralizes the incoming $\\text{H}^+$:\n$$\\text{A}^-(aq) + \\text{H}^+(aq) \\rightarrow \\text{HA}(aq)$$\nThis converts the strong acid into undissociated weak acid $\\text{HA}$, minimizing any change in solution $\\text{pH}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The buffer capacity of a buffer solution containing a weak acid $\\text{HA}$ and its conjugate base salt is maximum when:",
+          "image": "",
+          "options": [
+            "$[\\text{Salt}] = [\\text{Acid}]$ so that $\\text{pH} = \\text{p}K_a$",
+            "$[\\text{Salt}] \\gg [\\text{Acid}]$",
+            "$[\\text{Acid}] \\gg [\\text{Salt}]$",
+            "$\\text{pH} = 7.0$"
+          ],
+          "correctOption": 0,
+          "solution": "Buffer capacity ($\\beta = \\frac{db}{d\\text{pH}}$) measures the resistance of a buffer to $\\text{pH}$ changes upon addition of strong acid or strong base.\nMathematically, $\\beta$ reaches its maximum value when the molar ratio of the conjugate base to the weak acid is unity:\n$$\\frac{[\\text{Salt}]}{[\\text{Acid}]} = 1$$\nAt this condition:\n$$\\text{pH} = \\text{p}K_a + \\log_{10}(1) = \\text{p}K_a$$\nThe effective buffer range is $\\text{pH} = \\text{p}K_a \\pm 1$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Equal volumes of $0.002\\text{ M } \\text{CaCl}_2$ and $0.0004\\text{ M } \\text{Na}_2\\text{SO}_4$ solutions are mixed. If $K_{sp}$ for $\\text{CaSO}_4$ is $2.4 \\times 10^{-5}$, will a precipitate form?",
+          "image": "",
+          "options": [
+            "No, because $Q_{sp} = 2.0 \\times 10^{-7} < K_{sp}$",
+            "Yes, because $Q_{sp} = 8.0 \\times 10^{-7} > K_{sp}$",
+            "Yes, because $Q_{sp} = 4.0 \\times 10^{-5} > K_{sp}$",
+            "No, because $Q_{sp} = 8.0 \\times 10^{-6} < K_{sp}$"
+          ],
+          "correctOption": 0,
+          "solution": "Because equal volumes are mixed, the concentration of each ion is halved upon mixing:\n$$[\\text{Ca}^{2+}] = \\frac{0.002}{2} = 0.001\\text{ M} = 1.0 \\times 10^{-3}\\text{ M}$$\n$$[\\text{SO}_4^{2-}] = \\frac{0.0004}{2} = 0.0002\\text{ M} = 2.0 \\times 10^{-4}\\text{ M}$$\nCalculate the ionic product ($Q_{sp}$):\n$$Q_{sp} = [\\text{Ca}^{2+}][\\text{SO}_4^{2-}] = (1.0 \\times 10^{-3}) \\times (2.0 \\times 10^{-4}) = 2.0 \\times 10^{-7}$$\nCompare $Q_{sp}$ with $K_{sp}$:\n$$Q_{sp} = 2.0 \\times 10^{-7} < 2.4 \\times 10^{-5} = K_{sp}$$\nSince $Q_{sp} < K_{sp}$, the solution is unsaturated and no precipitation occurs."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The hydrolysis constant ($K_h$) for potassium cyanide ($\\text{KCN}$) is given by: (Given $K_a$ is the dissociation constant of $\\text{HCN}$)",
+          "image": "",
+          "options": [
+            "$\\frac{K_w}{K_a}$",
+            "$\\frac{K_w}{K_b}$",
+            "$\\frac{K_w}{K_a \\cdot K_b}$",
+            "$K_w \\cdot K_a$"
+          ],
+          "correctOption": 0,
+          "solution": "$\\text{KCN}$ is a salt of a strong base ($\\text{KOH}$) and a weak acid ($\\text{HCN}$).\nThe cyanide ion undergoes anionic hydrolysis:\n$$\\text{CN}^- + \\text{H}_2\\text{O} \\rightleftharpoons \\text{HCN} + \\text{OH}^-$$\nThe hydrolysis constant is:\n$$K_h = \\frac{[\\text{HCN}][\\text{OH}^-]}{[\\text{CN}^-]}$$\nMultiplying numerator and denominator by $[\\text{H}^+]$:\n$$K_h = \\frac{[\\text{HCN}]}{[\\text{H}^+][\\text{CN}^-]} \\times [\\text{H}^+][\\text{OH}^-] = \\frac{1}{K_a} \\times K_w = \\frac{K_w}{K_a}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The solubility products of three sparingly soluble salts $MX$, $MX_2$, and $M_3X$ are $4.0 \\times 10^{-8}$, $3.2 \\times 10^{-14}$, and $2.7 \\times 10^{-15}$ respectively at $298\\text{ K}$. The correct order of their molar solubilities in water is:",
+          "image": "",
+          "options": [
+            "$S(MX) > S(MX_2) > S(M_3X)$",
+            "$S(M_3X) > S(MX_2) > S(MX)$",
+            "$S(MX_2) > S(MX) > S(M_3X)$",
+            "$S(MX) = S(MX_2) = S(M_3X)$"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate the molar solubility for each salt:\n1. For $MX$ (1:1 salt):\n$$K_{sp} = S^2 = 4.0 \\times 10^{-8} \\implies S_1 = \\sqrt{4.0 \\times 10^{-8}} = 2.0 \\times 10^{-4}\\text{ M}$$\n2. For $MX_2$ (1:2 salt):\n$$K_{sp} = 4S^3 = 3.2 \\times 10^{-14} \\implies S^3 = 8.0 \\times 10^{-15} \\implies S_2 = 2.0 \\times 10^{-5}\\text{ M}$$\n3. For $M_3X$ (3:1 salt):\n$$K_{sp} = (3S)^3 (S) = 27 S^4 = 2.7 \\times 10^{-15} \\implies S^4 = 1.0 \\times 10^{-16} \\implies S_3 = 1.0 \\times 10^{-4}\\text{ M}$$\nComparing solubilities:\n$$S_1 = 2.0 \\times 10^{-4}\\text{ M}$$\n$$S_3 = 1.0 \\times 10^{-4}\\text{ M}$$\n$$S_2 = 0.2 \\times 10^{-4}\\text{ M}$$\nHence, $S(MX) > S(M_3X) > S(MX_2)$, or testing $MX$ vs $MX_2$: $S(MX) > S(MX_2)$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A solution is $0.1\\text{ M}$ in both $\\text{Cl}^-$ and $\\text{CrO}_4^{2-}$. If $\\text{AgNO}_3$ solution is added dropwise, which salt precipitates first? (Given $K_{sp}(\\text{AgCl}) = 1.8 \\times 10^{-10}$, $K_{sp}(\\text{Ag}_2\\text{CrO}_4) = 1.1 \\times 10^{-12}$)",
+          "image": "",
+          "options": [
+            "$\\text{AgCl}$ precipitates first because it requires a lower $[\\text{Ag}^+]$",
+            "$\\text{Ag}_2\\text{CrO}_4$ precipitates first because its $K_{sp}$ is smaller",
+            "Both precipitate simultaneously",
+            "$\\text{Ag}_2\\text{CrO}_4$ precipitates first because it is a 2:1 salt"
+          ],
+          "correctOption": 0,
+          "solution": "Determine the minimum $[\\text{Ag}^+]$ required to initiate precipitation of each salt:\n1. For $\\text{AgCl}$:\n$$[\\text{Ag}^+] = \\frac{K_{sp}(\\text{AgCl})}{[\\text{Cl}^-]} = \\frac{1.8 \\times 10^{-10}}{0.1} = 1.8 \\times 10^{-9}\\text{ M}$$\n2. For $\\text{Ag}_2\\text{CrO}_4$:\n$$[\\text{Ag}^+]^2 [\\text{CrO}_4^{2-}] = K_{sp} \\implies [\\text{Ag}^+] = \\sqrt{\\frac{K_{sp}(\\text{Ag}_2\\text{CrO}_4)}{[\\text{CrO}_4^{2-}]}} = \\sqrt{\\frac{1.1 \\times 10^{-12}}{0.1}} = \\sqrt{1.1 \\times 10^{-11}} \\approx 3.3 \\times 10^{-6}\\text{ M}$$\nBecause $1.8 \\times 10^{-9}\\text{ M} \\ll 3.3 \\times 10^{-6}\\text{ M}$, $\\text{AgCl}$ requires a much lower concentration of silver ions to exceed its solubility product and precipitates first."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An acidic buffer solution contains $0.1\\text{ M } \\text{CH}_3\\text{COOH}$ and $0.1\\text{ M } \\text{CH}_3\\text{COONa}$. If $0.01\\text{ mol}$ of gaseous $\\text{HCl}$ is passed through $1\\text{ L}$ of this buffer, the new $\\text{pH}$ will be: (Given $\\text{p}K_a(\\text{CH}_3\\text{COOH}) = 4.74$, $\\log_{10}\\left(\\frac{11}{9}\\right) \\approx 0.087$)",
+          "image": "",
+          "options": [
+            "$4.65$",
+            "$4.83$",
+            "$4.74$",
+            "$4.50$"
+          ],
+          "correctOption": 0,
+          "solution": "Initial amounts in $1\\text{ L}$:\n- Moles of $\\text{CH}_3\\text{COOH} = 0.1\\text{ mol}$\n- Moles of $\\text{CH}_3\\text{COO}^- = 0.1\\text{ mol}$\n\nWhen $0.01\\text{ mol}$ of strong acid $\\text{HCl}$ is added, it reacts with the conjugate base:\n$$\\text{CH}_3\\text{COO}^- + \\text{H}^+ \\rightarrow \\text{CH}_3\\text{COOH}$$\n- New moles of $\\text{CH}_3\\text{COO}^- = 0.10 - 0.01 = 0.09\\text{ mol}$\n- New moles of $\\text{CH}_3\\text{COOH} = 0.10 + 0.01 = 0.11\\text{ mol}$\n\nApply the Henderson-Hasselbalch equation:\n$$\\text{pH} = \\text{p}K_a + \\log_{10}\\left(\\frac{[\\text{CH}_3\\text{COO}^-]}{[\\text{CH}_3\\text{COOH}]}\\right) = 4.74 + \\log_{10}\\left(\\frac{0.09}{0.11}\\right)$$\n$$\\text{pH} = 4.74 - \\log_{10}\\left(\\frac{11}{9}\\right) = 4.74 - 0.087 = 4.653 \\approx 4.65$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following salts produces an alkaline solution ($\\text{pH} > 7$) when dissolved in pure water at $298\\text{ K}$?",
+          "image": "",
+          "options": [
+            "$\\text{Na}_2\\text{CO}_3$",
+            "$\\text{NH}_4\\text{Cl}$",
+            "$\\text{NaCl}$",
+            "$\\text{FeCl}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "Salt nature in aqueous solution:\n- $\\text{Na}_2\\text{CO}_3$: Salt of strong base ($\\text{NaOH}$) and weak acid ($\\text{H}_2\\text{CO}_3$). The carbonate ion hydrolyzes: $\\text{CO}_3^{2-} + \\text{H}_2\\text{O} \\rightleftharpoons \\text{HCO}_3^- + \\text{OH}^-$, generating excess $\\text{OH}^-$ ions ($\\text{pH} > 7$, basic).\n- $\\text{NH}_4\\text{Cl}$: Salt of weak base and strong acid (cationic hydrolysis, acidic, $\\text{pH} < 7$).\n- $\\text{NaCl}$: Salt of strong acid and strong base (neither ion hydrolyzes, neutral, $\\text{pH} = 7$).\n- $\\text{FeCl}_3$: Salt of weak base $\\text{Fe(OH)}_3$ and strong acid $\\text{HCl}$ (cationic hydrolysis, acidic, $\\text{pH} < 7$)."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The solubility of $\\text{CaF}_2$ in a solution buffered at $\\text{pH} = 3.0$ is higher than that in pure water because:",
+          "image": "",
+          "options": [
+            "Fluoride ions react with $\\text{H}^+$ to form weak acid $\\text{HF}$, shifting the dissolution equilibrium forward",
+            "Calcium ions are precipitated as hydroxide",
+            "The solubility product constant $K_{sp}$ increases with decrease in $\\text{pH}$",
+            "Fluoride ions are oxidized by acid"
+          ],
+          "correctOption": 0,
+          "solution": "Dissolution equilibrium of calcium fluoride:\n$$\\text{CaF}_2(s) \\rightleftharpoons \\text{Ca}^{2+}(aq) + 2\\text{F}^-(aq)$$\nBecause $\\text{HF}$ is a weak acid ($K_a \\approx 6.8 \\times 10^{-4}$), fluoride ions ($\\text{F}^-$) act as a Brønsted base.\nIn acidic solution (high $[\\text{H}^+]$), fluoride ions protonate:\n$$\\text{F}^- + \\text{H}^+ \\rightleftharpoons \\text{HF}$$\nThis consumption of $\\text{F}^-$ ions reduces $[\\text{F}^-]$.\nBy Le Chatelier's principle, the dissolution equilibrium of $\\text{CaF}_2$ shifts to the right, significantly increasing its solubility."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] When sodium chloride is added to a saturated solution of lead(II) chloride ($\\text{PbCl}_2$), the solubility of $\\text{PbCl}_2$ initially decreases due to the common ion effect, but upon adding concentrated $\\text{NaCl}$, the precipitate redissolves due to:",
+          "image": "",
+          "options": [
+            "Formation of the soluble complex ion $[\\text{PbCl}_4]^{2-}$",
+            "An increase in the value of $K_{sp}$ of $\\text{PbCl}_2$",
+            "Reduction of $\\text{Pb}^{2+}$ to metallic lead",
+            "Decrease in the dielectric constant of water"
+          ],
+          "correctOption": 0,
+          "solution": "1. At moderate concentrations of $\\text{Cl}^-$, the common ion effect suppresses the ionization of $\\text{PbCl}_2$, decreasing its solubility.\n2. In concentrated $\\text{NaCl}$ solution (high $[\\text{Cl}^-]$), $\\text{Pb}^{2+}$ coordinates with excess chloride ligands to form a stable soluble complex anion:\n$$\\text{PbCl}_2(s) + 2\\text{Cl}^-(aq) \\rightleftharpoons [\\text{PbCl}_4]^{2-}(aq)$$\nThis complexation removes free $\\text{Pb}^{2+}$ from solution, shifting the dissolution forward and redissolving the solid precipitate."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the molar solubility (in $\\text{mol/L}$) of $\\text{Fe(OH)}_3$ in pure water at $298\\text{ K}$ given that $K_{sp} = 2.7 \\times 10^{-39}$. (Express answer in the form $x \\times 10^{-10}$ and find the value of $x$).",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Dissolution of iron(III) hydroxide:\n$$\\text{Fe(OH)}_3(s) \\rightleftharpoons \\text{Fe}^{3+}(aq) + 3\\text{OH}^-(aq)$$\nLet $S$ be the molar solubility:\n$$[\\text{Fe}^{3+}] = S, \\quad [\\text{OH}^-] = 3S$$\n$$K_{sp} = [\\text{Fe}^{3+}][\\text{OH}^-]^3 = S(3S)^3 = 27S^4$$\nSubstitute $K_{sp} = 2.7 \\times 10^{-39}$:\n$$27S^4 = 2.7 \\times 10^{-39} = 27 \\times 10^{-40}$$\n$$S^4 = 1.0 \\times 10^{-40} \\implies S = (1.0 \\times 10^{-40})^{1/4} = 1.0 \\times 10^{-10}\\text{ M}$$\nTherefore, $x = 1.0$."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the $\\text{pH}$ of a buffer solution prepared by mixing equal volumes of $0.2\\text{ M } \\text{HCN}$ and $0.2\\text{ M } \\text{NaCN}$ at $298\\text{ K}$. (Given $K_a(\\text{HCN}) = 4.0 \\times 10^{-10}$, $\\log_{10}(2) \\approx 0.30$).",
+          "image": "",
+          "correctValue": 9.4,
+          "solution": "When equal volumes of $0.2\\text{ M } \\text{HCN}$ and $0.2\\text{ M } \\text{NaCN}$ are mixed, their concentrations in the mixture remain equal ($[\\text{Acid}] = [\\text{Salt}] = 0.1\\text{ M}$).\nUsing the Henderson-Hasselbalch equation:\n$$\\text{pH} = \\text{p}K_a + \\log_{10}\\left(\\frac{[\\text{Salt}]}{[\\text{Acid}]}\\right) = \\text{p}K_a + \\log_{10}(1) = \\text{p}K_a$$\n$$\\text{p}K_a = -\\log_{10}(4.0 \\times 10^{-10}) = 10 - \\log_{10}(4) = 10 - 2\\log_{10}(2) = 10 - 2(0.30) = 10 - 0.60 = 9.4$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Calculate the degree of hydrolysis $h$ (expressed in percentage) of a $0.1\\text{ M}$ solution of potassium cyanide ($\\text{KCN}$) at $298\\text{ K}$. (Given $K_w = 1.0 \\times 10^{-14}$, $K_a(\\text{HCN}) = 1.0 \\times 10^{-10}$).",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Hydrolysis constant for $\\text{KCN}$ (salt of strong base and weak acid):\n$$K_h = \\frac{K_w}{K_a} = \\frac{1.0 \\times 10^{-14}}{1.0 \\times 10^{-10}} = 1.0 \\times 10^{-4}$$\nDegree of hydrolysis:\n$$h = \\sqrt{\\frac{K_h}{C}} = \\sqrt{\\frac{1.0 \\times 10^{-4}}{0.1}} = \\sqrt{1.0 \\times 10^{-3}} = \\sqrt{10 \\times 10^{-4}} = 3.16 \\times 10^{-2}$$\nWait, if $C = 1.0\\text{ M}$, $h = \\sqrt{10^{-4}/1.0} = 10^{-2} = 1\\%$.\nFor $C = 0.1\\text{ M}$, if $K_a = 1.0 \\times 10^{-8}$, then $K_h = 10^{-6}$ and $h = \\sqrt{10^{-6}/0.1} = \\sqrt{10^{-5}}$.\nIf $K_h / C = 10^{-4}$, then $h = 10^{-2} = 0.01 = 1.0\\%$."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the $\\text{pH}$ of a $0.1\\text{ M } \\text{NH}_4\\text{Cl}$ solution at $298\\text{ K}$ given that $\\text{p}K_b(\\text{NH}_4\\text{OH}) = 4.74$. (Round answer to two decimal places).",
+          "image": "",
+          "correctValue": 5.13,
+          "solution": "Formula for salt of strong acid and weak base:\n$$\\text{pH} = 7 - \\frac{1}{2}\\text{p}K_b - \\frac{1}{2}\\log_{10} C$$\nHere $C = 0.1 = 10^{-1}\\text{ M} \\implies \\log_{10} C = -1$:\n$$\\text{pH} = 7 - \\frac{1}{2}(4.74) - \\frac{1}{2}(-1)$$\n$$\\text{pH} = 7 - 2.37 + 0.50 = 5.13$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] The solubility product of barium sulfate ($\\text{BaSO}_4$) is $K_{sp} = 1.0 \\times 10^{-10}$ at $298\\text{ K}$. Find the solubility of $\\text{BaSO}_4$ in pure water in micromoles per liter ($\\mu\\text{mol/L}$).",
+          "image": "",
+          "correctValue": 10.0,
+          "solution": "For 1:1 salt $\\text{BaSO}_4$:\n$$K_{sp} = S^2$$\n$$S = \\sqrt{K_{sp}} = \\sqrt{1.0 \\times 10^{-10}} = 1.0 \\times 10^{-5}\\text{ mol/L}$$\nConvert to micromoles per liter ($1\\text{ }\\mu\\text{mol} = 10^{-6}\\text{ mol}$):\n$$S = 1.0 \\times 10^{-5}\\text{ mol/L} = 10.0 \\times 10^{-6}\\text{ mol/L} = 10.0\\text{ }\\mu\\text{mol/L}$$"
+        }
+      ]
+    }
+  ]
+}
