@@ -1,0 +1,361 @@
+{
+  "testId": "jee-main-chem-28-hydrocarbons",
+  "title": "Hydrocarbons (Alkanes Conformations, Alkenes Additions, Ozonolysis, & Aromatic Substitution)",
+  "syllabus": "Alkanes: Conformations of ethane and n-butane (Newman and Sawhorse projections, dihedral angles, torsional and steric strain, relative stability); Free radical halogenation of alkanes (reactivity vs selectivity, mechanism); Alkenes: Structure, geometrical isomerism; Electrophilic addition reactions (addition of hydrogen halides, Markovnikov's rule, carbocation rearrangements); Peroxide effect (Kharasch effect / Anti-Markovnikov addition of HBr, radical mechanism, why HCl and HI fail); Hydration (acid-catalyzed, oxymercuration-demercuration, hydroboration-oxidation); Ozonolysis (reductive vs oxidative cleavage, structure elucidation of alkenes and alkynes); Oxidation with cold dilute alkaline KMnO4 (Baeyer's reagent) and hot acidic KMnO4; Alkynes: Acidity of terminal alkynes, addition reactions, hydration (Kucherov's reaction); Aromatic Hydrocarbons: Benzene structure, aromaticity; Electrophilic Aromatic Substitution (EAS) mechanisms (halogenation, nitration, sulfonation, Friedel-Crafts alkylation and acylation); Directive influence and activating/deactivating effects of functional groups, side-chain oxidations",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An alkene $X$ on reductive ozonolysis with $\\text{O}_3$ followed by $\\text{Zn}/\\text{H}_2\\text{O}$ yields acetone and propanal in equimolar amounts. The IUPAC name of alkene $X$ is:",
+          "image": "",
+          "options": [
+            "2-Methylpent-2-ene",
+            "2-Methylpent-1-ene",
+            "4-Methylpent-2-ene",
+            "Hex-2-ene"
+          ],
+          "correctOption": 0,
+          "solution": "1. In reductive ozonolysis, the carbon-carbon double bond $(\\text{C}=\\text{C})$ is cleaved and each $sp^2$ carbon forms a carbonyl group $(\\text{C}=\\text{O})$.\n2. The given cleavage products are:\n- Acetone (propan-2-one): $(\\text{CH}_3)_2\\text{C}=\\text{O}$\n- Propanal: $\\text{O}=\\text{CH}-\\text{CH}_2-\\text{CH}_3$\n3. To deduce the structure of alkene $X$, align the carbonyl carbons and replace the oxygen atoms with a double bond:\n$$(\\text{CH}_3)_2\\text{C}=\\text{O} + \\text{O}=\\text{CH}-\\text{CH}_2-\\text{CH}_3 \\longrightarrow (\\text{CH}_3)_2\\text{C}=\\text{CH}-\\text{CH}_2-\\text{CH}_3$$\n4. Numbering the longest chain from the left gives the double bond and methyl group lower locants:\n- $\\text{C}_1$: methyl\n- $\\text{C}_2$: $\\text{C}(\\text{CH}_3)$\n- $\\text{C}_3$: $-\\text{CH}-$\n- $\\text{C}_4$: $-\\text{CH}_2-$\n- $\\text{C}_5$: $-\\text{CH}_3$\nThus, the IUPAC name is **2-Methylpent-2-ene**."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Why does the peroxide effect (Kharasch effect / Anti-Markovnikov addition) occur ONLY with $\\text{HBr}$ and NOT with $\\text{HCl}$ or $\\text{HI}$ in the presence of organic peroxides?",
+          "image": "",
+          "options": [
+            "Both propagation steps are exothermic for $\\text{HBr}$, whereas for $\\text{HCl}$ the second propagation step is endothermic, and for $\\text{HI}$ the first propagation step is endothermic",
+            "The first propagation step is endothermic for $\\text{HBr}$ but exothermic for both $\\text{HCl}$ and $\\text{HI}$",
+            "The $\\text{H}-\\text{Cl}$ bond is too weak, and the $\\text{H}-\\text{I}$ bond is too strong",
+            "Iodine radicals disproportionate while chlorine radicals react reversibly with peroxides"
+          ],
+          "correctOption": 0,
+          "solution": "The radical chain addition of hydrogen halides $(\\text{HX})$ across an alkene involves two propagation steps:\n- Step 1: $\\text{X}^\\bullet + \\text{R}-\\text{CH}=\\text{CH}_2 \\rightarrow \\text{R}-\\dot{\\text{C}}\\text{H}-\\text{CH}_2\\text{X}$\n- Step 2: $\\text{R}-\\dot{\\text{C}}\\text{H}-\\text{CH}_2\\text{X} + \\text{HX} \\rightarrow \\text{R}-\\text{CH}_2-\\text{CH}_2\\text{X} + \\text{X}^\\bullet$\nThermodynamic considerations:\n1. For $\\text{HCl}$: The $\\text{H}-\\text{Cl}$ bond is very strong ($431\\text{ kJ/mol}$), making Step 2 endothermic ($+27\\text{ kJ/mol}$); the radical cannot abstract hydrogen from $\\text{HCl}$.\n2. For $\\text{HI}$: The $\\text{C}-\\text{I}$ bond formed in Step 1 is very weak, making Step 1 endothermic ($+54\\text{ kJ/mol}$). Instead, $\\text{I}^\\bullet$ radicals preferentially recombine into stable $\\text{I}_2$ molecules ($2\\text{I}^\\bullet \\rightarrow \\text{I}_2$).\n3. For $\\text{HBr}$: Both propagation steps are exothermic (Step 1: $-42\\text{ kJ/mol}$, Step 2: $-38\\text{ kJ/mol}$). Therefore, the peroxide effect operates exclusively for $\\text{HBr}$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Reaction of 3,3-dimethylbut-1-ene with concentrated aqueous $\\text{HCl}$ produces predominantly:",
+          "image": "",
+          "options": [
+            "2-Chloro-2,3-dimethylbutane",
+            "2-Chloro-3,3-dimethylbutane",
+            "1-Chloro-3,3-dimethylbutane",
+            "3-Chloro-2,2-dimethylbutane"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electrophilic addition begins with protonation of the terminal double bond to generate the more stable secondary carbocation according to Markovnikov's rule:\n$$(\\text{CH}_3)_3\\text{C}-\\text{CH}=\\text{CH}_2 + \\text{H}^+ \\rightarrow (\\text{CH}_3)_3\\text{C}-\\overset{+}{\\text{C}}\\text{H}-\\text{CH}_3 \\quad (2^\\circ\\text{ carbocation})$$\n2. The adjacent carbon C-3 is quaternary, with three methyl groups. A rapid **1,2-methyl shift** occurs to convert the $2^\\circ$ carbocation into a more stable $3^\\circ$ carbocation:\n$$(\\text{CH}_3)_3\\text{C}-\\overset{+}{\\text{C}}\\text{H}-\\text{CH}_3 \\xrightarrow{1,2-\\text{Me shift}} (\\text{CH}_3)_2\\overset{+}{\\text{C}}-\\text{CH}(\\text{CH}_3)-\\text{CH}_3 \\quad (3^\\circ\\text{ carbocation})$$\n3. Attack of chloride ion ($\\text{Cl}^-$) on this tertiary carbocation yields the major product:\n$$(\\text{CH}_3)_2\\overset{+}{\\text{C}}-\\text{CH}(\\text{CH}_3)-\\text{CH}_3 + \\text{Cl}^- \\rightarrow (\\text{CH}_3)_2\\text{C}(\\text{Cl})-\\text{CH}(\\text{CH}_3)-\\text{CH}_3$$\nThis is **2-chloro-2,3-dimethylbutane**."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The correct order of reactivity of the following substituted benzenes toward electrophilic aromatic nitration $(\\text{HNO}_3/\\text{H}_2\\text{SO}_4)$ is:\n(I) Toluene\n(II) Benzene\n(III) Chlorobenzene\n(IV) Nitrobenzene",
+          "image": "",
+          "options": [
+            "(I) > (II) > (III) > (IV)",
+            "(IV) > (III) > (II) > (I)",
+            "(I) > (III) > (II) > (IV)",
+            "(II) > (I) > (III) > (IV)"
+          ],
+          "correctOption": 0,
+          "solution": "Electrophilic aromatic substitution rates depend on ring activation:\n1. (I) Toluene ($\\text{C}_6\\text{H}_5\\text{CH}_3$): The methyl group is activating through $+I$ inductive and hyperconjugative electron donation, increasing electron density on the ring relative to benzene.\n2. (II) Benzene: Standard reference substrate.\n3. (III) Chlorobenzene ($\\text{C}_6\\text{H}_5\\text{Cl}$): The chloro substituent is net deactivating due to its electronegative $-I$ effect, which exceeds its $+M$ resonance donation.\n4. (IV) Nitrobenzene ($\\text{C}_6\\text{H}_5\\text{NO}_2$): The nitro group is strongly deactivating via powerful $-M$ and $-I$ effects, substantially depleting $\\pi$-electron density from the aromatic ring.\nThus, the reactivity sequence is: (I) > (II) > (III) > (IV)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In the Newman projection of ethane, the torsional strain is maximum in which of the following conformations?",
+          "image": "",
+          "options": [
+            "Eclipsed conformation",
+            "Staggered conformation",
+            "Skew conformation with dihedral angle $30^\\circ$",
+            "Anti conformation"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the **eclipsed conformation** of ethane, the dihedral angle between adjacent $\\text{C}-\\text{H}$ bonds is $0^\\circ$.\n2. The electron pairs in the parallel $\\text{C}-\\text{H}$ $\\sigma$-bonding orbitals are brought into closest proximity, experiencing maximal electrostatic electron-electron repulsion.\n3. This repulsion creates a torsional strain of approximately $12.5\\text{ kJ/mol}$ ($3.0\\text{ kcal/mol}$).\n4. In the **staggered conformation** (dihedral angle $60^\\circ$), the $\\text{C}-\\text{H}$ bonds are spaced as far apart as possible, minimizing torsional strain and maximizing hyperconjugative stabilization ($\\sigma_{\\text{C}-\\text{H}} \\rightarrow \\sigma^*_{\\text{C}-\\text{H}}$ overlap).\nTherefore, torsional strain is maximal in the eclipsed conformation."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Propyne on hydration by passing through a warm dilute solution of $\\text{H}_2\\text{SO}_4$ in the presence of $\\text{HgSO}_4$ at $333\\text{ K}$ (Kucherov's reaction) yields:",
+          "image": "",
+          "options": [
+            "Propan-2-one (acetone)",
+            "Propanal",
+            "Propanoic acid",
+            "Propan-2-ol"
+          ],
+          "correctOption": 0,
+          "solution": "In Kucherov's reaction:\n1. $\\text{Hg}^{2+}$ coordinates with the alkyne triple bond, followed by Markovnikov addition of water:\n$$\\text{CH}_3-\\text{C}\\equiv\\text{CH} + \\text{H}_2\\text{O} \\xrightarrow{\\text{Hg}^{2+}/\\text{H}^+} [\\text{CH}_3-\\text{C}(\\text{OH})=\\text{CH}_2]$$\n2. The resulting intermediate is prop-1-en-2-ol (an enol).\n3. Because enols are thermodynamically less stable than their corresponding carbonyl isomers, it undergoes spontaneous keto-enol tautomerization (proton transfer from oxygen to the terminal $sp^2$ carbon):\n$$\\text{CH}_3-\\text{C}(\\text{OH})=\\text{CH}_2 \\rightleftharpoons \\text{CH}_3-\\text{CO}-\\text{CH}_3$$\nThis yields **propan-2-one (acetone)** as the major product."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Friedel-Crafts alkylation of benzene with 1-chloropropane in the presence of anhydrous $\\text{AlCl}_3$ gives isopropylbenzene (cumene) as the major product rather than n-propylbenzene. This occurs because:",
+          "image": "",
+          "options": [
+            "The primary carbocation initially formed rearranges to a more stable secondary carbocation via a 1,2-hydride shift",
+            "The primary alkyl halide undergoes a retro-alkylation reaction",
+            "Isopropyl chloride is formed by free radical rearrangement",
+            "n-Propylbenzene is sterically hindered and cannot fit into the catalyst surface"
+          ],
+          "correctOption": 0,
+          "solution": "In Friedel-Crafts alkylation:\n1. Reaction of 1-chloropropane with Lewis acid $\\text{AlCl}_3$ initially generates a primary carbocation complex:\n$$\\text{CH}_3-\\text{CH}_2-\\text{CH}_2-\\text{Cl} + \\text{AlCl}_3 \\rightarrow [\\text{CH}_3-\\text{CH}_2-\\overset{+}{\\text{C}}\\text{H}_2 \\dots \\text{AlCl}_4^-]$$\n2. The incipient primary carbocation ($1^\\circ$) undergoes an intramolecular **1,2-hydride shift** to form the thermodynamically more stable secondary carbocation ($2^\\circ$):\n$$\\text{CH}_3-\\text{CH}_2-\\overset{+}{\\text{C}}\\text{H}_2 \\xrightarrow{1,2-\\text{H}^- \\text{ shift}} \\text{CH}_3-\\overset{+}{\\text{C}}\\text{H}-\\text{CH}_3$$\n3. The more stable isopropyl cation electrophilically attacks the benzene ring to yield isopropylbenzene (cumene) as the major product ($\\approx 70\\%$), while n-propylbenzene is obtained only as a minor product."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Treatment of propene with diborane followed by oxidation with alkaline hydrogen peroxide $(\\text{B}_2\\text{H}_6/\\text{THF}$ followed by $\\text{H}_2\\text{O}_2/\\text{OH}^-)$ produces:",
+          "image": "",
+          "options": [
+            "Propan-1-ol",
+            "Propan-2-ol",
+            "Propane-1,2-diol",
+            "Propan-2-one"
+          ],
+          "correctOption": 0,
+          "solution": "Hydroboration-oxidation of alkenes achieves net hydration with **anti-Markovnikov regioselectivity** and **syn-stereospecificity**:\n1. Hydroboration: Boron atom in $\\text{BH}_3$ attacks the less sterically hindered, less substituted terminal carbon (C-1) while hydrogen adds to the more substituted carbon (C-2) via a concerted four-membered cyclic transition state, forming tripropylborane:\n$$3\\text{CH}_3-\\text{CH}=\\text{CH}_2 + \\text{BH}_3 \\rightarrow (\\text{CH}_3-\\text{CH}_2-\\text{CH}_2)_3\\text{B}$$\n2. Oxidation: Alkaline $\\text{H}_2\\text{O}_2$ cleaves the carbon-boron bonds with retention of configuration, replacing boron with an $-\\text{OH}$ group:\n$$(\\text{CH}_3-\\text{CH}_2-\\text{CH}_2)_3\\text{B} + 3\\text{H}_2\\text{O}_2 + 3\\text{OH}^- \\rightarrow 3\\text{CH}_3-\\text{CH}_2-\\text{CH}_2\\text{OH} + \\text{BO}_3^{3-} + 3\\text{H}_2\\text{O}$$\nThis yields **propan-1-ol** as the exclusive alcohol product."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An aromatic compound $Y$ on oxidation with hot alkaline $\\text{KMnO}_4$ followed by acidification yields phthalic acid (benzene-1,2-dicarboxylic acid). Compound $Y$ can be:",
+          "image": "",
+          "options": [
+            "o-Xylene",
+            "p-Xylene",
+            "Toluene",
+            "Ethylbenzene"
+          ],
+          "correctOption": 0,
+          "solution": "Vigorous oxidation of alkylbenzenes with alkaline $\\text{KMnO}_4$ converts any alkyl side-chain possessing at least one benzylic hydrogen into a carboxylic acid group ($-\\text{COOH}$):\n1. o-Xylene (1,2-dimethylbenzene) has two methyl groups in an ortho (1,2) relationship on the benzene ring.\n2. Both methyl groups undergo complete oxidation to form carboxyl groups:\n$$\\text{o-Xylene} \\xrightarrow{\\text{KMnO}_4/\\text{KOH}, \\Delta} \\xrightarrow{\\text{H}^+} \\text{Benzene-1,2-dicarboxylic acid (phthalic acid)}$$\n- In contrast, p-xylene yields terephthalic acid (benzene-1,4-dicarboxylic acid), while toluene and ethylbenzene both yield benzoic acid."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The reaction of cis-but-2-ene with bromine in $\\text{CCl}_4$ yields:",
+          "image": "",
+          "options": [
+            "Racemic mixture of (2R,3R)- and (2S,3S)-2,3-dibromobutane",
+            "Meso-2,3-dibromobutane only",
+            "Pure (2R,3R)-2,3-dibromobutane",
+            "1,2-Dibromobutane"
+          ],
+          "correctOption": 0,
+          "solution": "Halogenation of alkenes proceeds via a cyclic halonium ion (bromonium ion) intermediate that undergoes stereospecific **anti-addition**:\n1. When a symmetrical cis-alkene (like cis-but-2-ene) undergoes anti-addition of two identical groups:\n$$\\text{Cis} + \\text{Anti} \\longrightarrow \\text{Racemic (pair of enantiomers)}$$\n2. Backside nucleophilic attack of bromide ion ($\\text{Cl}^-$ or $\\text{Br}^-$) on either carbon of the three-membered cyclic bromonium ring occurs with equal probability ($50 : 50$):\n$$\\text{cis-But-2-ene} + \\text{Br}_2 \\rightarrow (2R, 3R)\\text{-2,3-dibromobutane} + (2S, 3S)\\text{-2,3-dibromobutane}$$\nThis produces an optically inactive **racemic mixture** ($\\pm$).\n(Note: trans-but-2-ene with anti-addition yields the optically inactive meso compound: $\\text{Trans} + \\text{Anti} \\rightarrow \\text{Meso}$)."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] In the free radical chlorination of methane, which of the following represents a termination step?",
+          "image": "",
+          "options": [
+            "$\\dot{\\text{C}}\\text{H}_3 + \\dot{\\text{C}}\\text{H}_3 \\rightarrow \\text{CH}_3-\\text{CH}_3$",
+            "$\\text{Cl}^\\bullet + \\text{CH}_4 \\rightarrow \\text{HCl} + \\dot{\\text{C}}\\text{H}_3$",
+            "$\\dot{\\text{C}}\\text{H}_3 + \\text{Cl}_2 \\rightarrow \\text{CH}_3\\text{Cl} + \\text{Cl}^\\bullet$",
+            "$\\text{Cl}_2 \\xrightarrow{h\\nu} 2\\text{Cl}^\\bullet$"
+          ],
+          "correctOption": 0,
+          "solution": "In free radical chain reactions:\n- **Initiation:** Generates reactive radicals from non-radical precursors ($\\text{Cl}_2 \\xrightarrow{h\\nu} 2\\text{Cl}^\\bullet$).\n- **Propagation:** Consumes one radical to produce another radical, maintaining the radical count.\n- **Termination:** Involves the combination or coupling of two reactive radicals to form a stable covalent molecule, thereby ending the chain reaction.\nThe coupling of two methyl radicals to form ethane:\n$$\\dot{\\text{C}}\\text{H}_3 + \\dot{\\text{C}}\\text{H}_3 \\rightarrow \\text{C}_2\\text{H}_6$$\nis a classic termination step."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following compounds will NOT react with ammoniacal silver nitrate solution (Tollens' reagent) to form a white precipitate of silver acetylide?",
+          "image": "",
+          "options": [
+            "But-2-yne",
+            "But-1-yne",
+            "Propyne",
+            "Ethyne"
+          ],
+          "correctOption": 0,
+          "solution": "Ammoniacal silver nitrate ($[\\text{Ag}(\\text{NH}_3)_2]^+$) acts as a qualitative test for **terminal alkynes** containing an acidic acetylenic hydrogen attached to an $sp$-hybridized carbon:\n$$\\text{R}-\\text{C}\\equiv\\text{C}-\\text{H} + [\\text{Ag}(\\text{NH}_3)_2]^+ \\rightarrow \\text{R}-\\text{C}\\equiv\\text{C}-\\text{Ag} \\downarrow \\text{ (white ppt)} + \\text{NH}_4^+ + \\text{NH}_3$$\n1. Ethyne ($\\text{CH}\\equiv\\text{CH}$), propyne ($\\text{CH}_3-\\text{C}\\equiv\\text{CH}$), and but-1-yne ($\\text{CH}_3\\text{CH}_2-\\text{C}\\equiv\\text{CH}$) are terminal alkynes with acidic hydrogen atoms; they form white silver acetylide precipitates.\n2. But-2-yne ($\\text{CH}_3-\\text{C}\\equiv\\text{C}-\\text{CH}_3$) is an internal alkyne with no acetylenic hydrogens; it does not react with Tollens' reagent."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] When benzene is treated with excess chlorine in the presence of ultraviolet light ($h\\nu$) without a Lewis acid catalyst, the product formed is:",
+          "image": "",
+          "options": [
+            "Benzene hexachloride (gammaxene / lindane, $\\text{C}_6\\text{H}_6\\text{Cl}_6$)",
+            "Hexachlorobenzene ($\\text{C}_6\\text{Cl}_6$)",
+            "Chlorobenzene",
+            "1,4-Dichlorobenzene"
+          ],
+          "correctOption": 0,
+          "solution": "Under UV light ($h\\nu$) and elevated temperature in the absence of a Lewis acid, chlorine undergoes homolytic fission to generate chlorine radicals ($\\text{Cl}^\\bullet$).\nRather than undergoing electrophilic substitution, benzene undergoes free-radical addition across its three conjugated double bonds:\n$$\\text{C}_6\\text{H}_6 + 3\\text{Cl}_2 \\xrightarrow{h\\nu, 500\\text{ K}} \\text{C}_6\\text{H}_6\\text{Cl}_6$$\nThis yields 1,2,3,4,5,6-hexachlorocyclohexane, commonly known as **benzene hexachloride (BHC)**, **lindane**, or **gammaxene** (used as an agricultural insecticide).\n(In contrast, electrophilic substitution in the presence of $\\text{FeCl}_3$ in the dark yields chlorobenzene)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Baeyer's reagent, used as a qualitative chemical test for unsaturation (alkenes and alkynes), consists of:",
+          "image": "",
+          "options": [
+            "$1\\%$ cold, alkaline aqueous solution of $\\text{KMnO}_4$",
+            "Hot, acidic solution of $\\text{KMnO}_4$",
+            "Neutral aqueous solution of $\\text{K}_2\\text{Cr}_2\\text{O}_7$",
+            "Bromine dissolved in carbon tetrachloride"
+          ],
+          "correctOption": 0,
+          "solution": "Baeyer's reagent is a **$1\\%$ cold, dilute, alkaline aqueous solution of potassium permanganate ($\\text{KMnO}_4$)**.\n1. When reacted with an alkene, it carries out syn-dihydroxylation via a cyclic manganate ester intermediate, yielding vicinal glycols (1,2-diols):\n$$\\text{R}-\\text{CH}=\\text{CH}_2 + [\\text{O}] + \\text{H}_2\\text{O} \\xrightarrow{\\text{cold alkaline KMnO}_4} \\text{R}-\\text{CH(OH)}-\\text{CH}_2\\text{OH}$$\n2. The purple color of permanganate discharges rapidly, forming a brown precipitate of manganese dioxide ($\\text{MnO}_2$), confirming the presence of carbon-carbon unsaturation."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In the electrophilic chlorination of benzene using $\\text{Cl}_2$ and anhydrous $\\text{FeCl}_3$, the active electrophilic species attacking the aromatic ring is:",
+          "image": "",
+          "options": [
+            "Chloronium ion, $\\text{Cl}^+$ (or polarized complex $\\text{Cl}_2 \\cdot \\text{FeCl}_3$)",
+            "Chloride ion, $\\text{Cl}^-$",
+            "Chlorine free radical, $\\text{Cl}^\\bullet$",
+            "Tetrachloroferrate anion, $[\\text{FeCl}_4]^-$"
+          ],
+          "correctOption": 0,
+          "solution": "Anhydrous $\\text{FeCl}_3$ acts as a Lewis acid catalyst:\n1. It coordinates with one of the chlorine atoms in molecular $\\text{Cl}_2$, polarising the $\\text{Cl}-\\text{Cl}$ bond and weakening it:\n$$\\text{Cl}-\\text{Cl} + \\text{FeCl}_3 \\rightleftharpoons \\text{Cl}^\\delta+\\cdots\\text{Cl}\\cdots\\text{FeCl}_3^\\delta- \\rightleftharpoons \\text{Cl}^+ + [\\text{FeCl}_4]^-$$\n2. The strongly electrophilic chloronium ion $\\text{Cl}^+$ (or the polarized complex) attacks the aromatic $\\pi$-cloud of the benzene ring to form the resonance-stabilized arenium ion (Wheland / $\\sigma$-complex).\n3. Subsequent deprotonation by $[\\text{FeCl}_4]^-$ regenerates aromaticity and yields chlorobenzene and $\\text{HCl}$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] An alkyne with the molecular formula $\\text{C}_5\\text{H}_8$ upon ozonolysis followed by hydrolysis yields propanoic acid and ethanoic acid. The alkyne is:",
+          "image": "",
+          "options": [
+            "Pent-2-yne",
+            "Pent-1-yne",
+            "3-Methylbut-1-yne",
+            "Penta-1,4-diene"
+          ],
+          "correctOption": 0,
+          "solution": "Ozonolysis of an alkyne followed by hydrolysis cleaves the carbon-carbon triple bond $(\\text{C}\\equiv\\text{C})$ into two carboxylic acid molecules:\n$$\\text{R}-\\text{C}\\equiv\\text{C}-\\text{R}' \\xrightarrow{\\text{O}_3, \\text{H}_2\\text{O}} \\text{R}-\\text{COOH} + \\text{R}'-\\text{COOH}$$\nGiven products:\n- Ethanoic acid: $\\text{CH}_3-\\text{COOH}$ (2-carbon fragment)\n- Propanoic acid: $\\text{CH}_3-\\text{CH}_2-\\text{COOH}$ (3-carbon fragment)\nConnecting the two carboxylic acid carbons with a triple bond:\n$$\\text{CH}_3-\\text{C}\\equiv\\text{C}-\\text{CH}_2-\\text{CH}_3$$\nThis is **pent-2-yne**."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following substituents acts as a META-directing deactivating group in electrophilic aromatic substitution?",
+          "image": "",
+          "options": [
+            "$-\\text{CHO}$",
+            "$-\\text{OH}$",
+            "$-\\text{NHCOCH}_3$",
+            "$-\\text{OCH}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In benzaldehyde ($-\\text{CHO}$), the carbonyl carbon is directly bonded to an electronegative oxygen through a polar double bond ($\\,^{\\delta+}\\text{C}=\\text{O}^{\\delta-}$).\n2. The carbonyl group withdraws $\\pi$-electron density from the aromatic ring via a strong $-M$ resonance effect (and $-I$ inductive effect).\n3. Resonance structures show that positive formal charges are placed specifically on the ortho and para positions of the ring.\n4. Consequently, the meta positions retain relatively higher electron density than ortho/para positions, directing incoming electrophiles to the **meta** position.\nSubstituents like $-\\text{OH}, -\\text{NHCOCH}_3,$ and $-\\text{OCH}_3$ donate electron density by $+M$ resonance, acting as activating ortho/para-directors."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The oxymercuration-demercuration of 3-methylbut-1-ene using $\\text{Hg(OAc)}_2/\\text{H}_2\\text{O}$ followed by $\\text{NaBH}_4$ reduction produces:",
+          "image": "",
+          "options": [
+            "3-Methylbutan-2-ol without carbocation rearrangement",
+            "2-Methylbutan-2-ol via carbocation rearrangement",
+            "3-Methylbutan-1-ol",
+            "2-Methylbut-2-ene"
+          ],
+          "correctOption": 0,
+          "solution": "Oxymercuration-demercuration yields hydration products adhering strictly to **Markovnikov's rule WITHOUT carbocation rearrangement**:\n1. The electrophilic addition of $\\text{Hg(OAc)}^+$ forms a stable, three-membered cyclic mercurinium ion intermediate.\n2. Because the positive charge is delocalized within the cyclic bridged ion, free open-chain carbocations are not generated, preventing hydride or alkyl shifts.\n3. Nucleophilic attack by water occurs regiospecifically at the more substituted carbon (C-2) of the mercurinium bridge.\n4. Subsequent reduction of the $\\text{C}-\\text{Hg}$ bond with $\\text{NaBH}_4$ yields **3-methylbutan-2-ol** as the exclusive product.\n(In contrast, acid-catalyzed hydration gives 2-methylbutan-2-ol due to a 1,2-hydride shift)."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The halogenation of propane with $\\text{Cl}_2$ under sunlight gives a mixture of 1-chloropropane and 2-chloropropane in a ratio of approximately $45\\% : 55\\%$, whereas bromination with $\\text{Br}_2$ gives 2-bromopropane as the exclusive major product ($> 97\\%$). This difference in product distribution is explained by:",
+          "image": "",
+          "options": [
+            "Hammond's postulate: Bromination is endothermic and highly selective, whereas chlorination is exothermic and less selective",
+            "Bromine radicals are smaller than chlorine radicals",
+            "Chlorination involves carbocations while bromination involves carbanions",
+            "Bromine radicals react via an anti-Markovnikov mechanism"
+          ],
+          "correctOption": 0,
+          "solution": "This is a classic illustration of the **reactivity-selectivity principle**:\n1. Hydrogen abstraction by a chlorine radical is exothermic ($\\Delta H < 0$). According to Hammond's postulate, the transition state resembles the reactants; the $\\text{C}-\\text{H}$ bond is only slightly broken, and little radical character develops on carbon. Hence, chlorine is highly reactive and unselective (relative rates: $3^\\circ : 2^\\circ : 1^\\circ = 5.0 : 3.8 : 1.0$).\n2. Hydrogen abstraction by a bromine radical is endothermic ($\\Delta H > 0$). The transition state occurs late along the reaction coordinate and closely resembles the intermediate alkyl radical; substantial radical character develops on carbon. Hence, bromination is less reactive and extraordinarily selective toward the more stable radical (relative rates: $3^\\circ : 2^\\circ : 1^\\circ = 1600 : 82 : 1$).\nTherefore, bromination of propane gives 2-bromopropane almost exclusively."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] When 2-bromobutane is heated with alcoholic $\\text{KOH}$, the major product obtained is but-2-ene. This elimination reaction is governed by:",
+          "image": "",
+          "options": [
+            "Zaitsev's (Saytzeff's) rule",
+            "Hofmann's rule",
+            "Markovnikov's rule",
+            "Kharasch effect"
+          ],
+          "correctOption": 0,
+          "solution": "In dehydrohalogenation ($E2$ elimination) using a non-bulky base like alcoholic $\\text{KOH}$:\n1. The base abstracts a $\\beta$-hydrogen to eliminate $\\text{HBr}$.\n2. Two alkenes can form:\n- Elimination of $\\text{H}$ from C-1 yields but-1-ene (terminal, monosubstituted, 2 $\\alpha$-hydrogens).\n- Elimination of $\\text{H}$ from C-3 yields but-2-ene (internal, disubstituted, 6 $\\alpha$-hydrogens).\n3. According to **Zaitsev's (Saytzeff's) rule**, base-induced $\\beta$-elimination predominantly yields the more highly substituted, thermodynamically more stable alkene.\nThus, **but-2-ene** (predominantly the trans-isomer) is the major product ($\\approx 80\\%$)."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the total number of mono-chlorinated structural (constitutional) isomers formed by the photochemical free radical chlorination of 2-methylbutane.",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "Structure of 2-methylbutane:\n$$\\overset{1}{\\text{C}}\\text{H}_3-\\overset{2}{\\text{C}}\\text{H}(\\overset{5}{\\text{C}}\\text{H}_3)-\\overset{3}{\\text{C}}\\text{H}_2-\\overset{4}{\\text{C}}\\text{H}_3$$\nIdentify constitutionally non-equivalent hydrogen atoms:\n1. Replacement of hydrogen at C-1 (or equivalent C-5): $\\text{CH}_2\\text{Cl}-\\text{CH}(\\text{CH}_3)-\\text{CH}_2-\\text{CH}_3$ (1-chloro-2-methylbutane)\n2. Replacement of tertiary hydrogen at C-2: $\\text{CH}_3-\\text{C}(\\text{Cl})(\\text{CH}_3)-\\text{CH}_2-\\text{CH}_3$ (2-chloro-2-methylbutane)\n3. Replacement of secondary hydrogen at C-3: $\\text{CH}_3-\\text{CH}(\\text{CH}_3)-\\text{CH}(\\text{Cl})-\\text{CH}_3$ (2-chloro-3-methylbutane)\n4. Replacement of primary hydrogen at C-4: $\\text{CH}_3-\\text{CH}(\\text{CH}_3)-\\text{CH}_2-\\text{CH}_2\\text{Cl}$ (1-chloro-3-methylbutane)\nTotal structural isomers $= 4.0$."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] In the oxidative ozonolysis of an alkyne followed by $\\text{H}_2\\text{O}_2$ workup, an alkyne $A$ produces only acetic acid as the product. Find the total number of carbon atoms present in one molecule of alkyne $A$.",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "1. Acetic acid is $\\text{CH}_3\\text{COOH}$ (a 2-carbon monocarboxylic acid).\n2. Since acetic acid is the *only* product, the alkyne must be symmetrical:\n$$\\text{Alkyne } A \\xrightarrow{\\text{Ozonolysis}} 2\\text{CH}_3\\text{COOH}$$\n3. Connecting the two carbonyl carbon atoms with a triple bond gives:\n$$\\text{CH}_3-\\text{C}\\equiv\\text{C}-\\text{CH}_3 \\quad (\\text{But-2-yne})$$\n4. Total number of carbon atoms in but-2-yne $= 4.0$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Find the dihedral angle (in degrees) between the two methyl groups in the gauche conformation of n-butane.",
+          "image": "",
+          "correctValue": 60.0,
+          "solution": "In the Newman projection of n-butane along the $\\text{C}_2-\\text{C}_3$ axis:\n- In the **anti** conformation, the two methyl groups are at an angle of $180^\\circ$.\n- In the **gauche** conformation, the two bulky methyl groups are in a staggered position with an angle of separation of $60^\\circ$.\n- In the **eclipsed** conformations, the angles are $0^\\circ$ and $120^\\circ$.\nTherefore, the dihedral angle for the gauche conformation is $60.0^\\circ$."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] When 2,3-dimethylbut-2-ene is subjected to reductive ozonolysis with $\\text{O}_3$ followed by $\\text{Zn}/\\text{H}_2\\text{O}$, how many molecules of acetone are formed per molecule of the alkene?",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "Structure of 2,3-dimethylbut-2-ene:\n$$(\\text{CH}_3)_2\\text{C}=\\text{C}(\\text{CH}_3)_2$$\nReductive cleavage of the central tetrasubstituted double bond:\n$$(\\text{CH}_3)_2\\text{C}=\\text{C}(\\text{CH}_3)_2 \\xrightarrow{\\text{O}_3, \\text{Zn}/\\text{H}_2\\text{O}} (\\text{CH}_3)_2\\text{C}=\\text{O} + \\text{O}=\\text{C}(\\text{CH}_3)_2$$\nBoth cleaved halves are acetone (propan-2-one).\nThus, exactly $2.0$ molecules of acetone are formed per molecule of alkene."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Among the following substituents on a benzene ring: $-\\text{CH}_3, -\\text{NO}_2, -\\text{Cl}, -\\text{OH}, -\\text{COOH}, -\\text{OCH}_3, -\\text{CN}, -\\text{NH}_2$, how many are ORTHO/PARA-directing in electrophilic aromatic substitution?",
+          "image": "",
+          "options": [],
+          "correctValue": 5.0,
+          "solution": "Identify directing influence for each substituent in electrophilic aromatic substitution:\n1. $-\\text{CH}_3$: activating by $+I$ and hyperconjugation $\\implies$ ortho/para-director\n2. $-\\text{NO}_2$: strongly deactivating by $-M, -I$ $\\implies$ meta-director\n3. $-\\text{Cl}$: deactivating by $-I$, but lone pair $+M$ resonance directs to ortho/para $\\implies$ ortho/para-director\n4. $-\\text{OH}$: strongly activating by $+M$ lone pair donation $\\implies$ ortho/para-director\n5. $-\\text{COOH}$: deactivating by $-M, -I$ $\\implies$ meta-director\n6. $-\\text{OCH}_3$: strongly activating by $+M$ lone pair donation $\\implies$ ortho/para-director\n7. $-\\text{CN}$: deactivating by $-M, -I$ $\\implies$ meta-director\n8. $-\\text{NH}_2$: strongly activating by $+M$ lone pair donation $\\implies$ ortho/para-director\nTotal ortho/para-directing groups $= 5.0$ ($-\\text{CH}_3, -\\text{Cl}, -\\text{OH}, -\\text{OCH}_3, -\\text{NH}_2$)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,361 @@
+{
+  "testId": "jee-main-chem-18-chemical-bonding-basics",
+  "title": "Chemical Bonding Basics (Kossel-Lewis Approach, Ionic Bond, Lattice Enthalpy, Fajan's Rule, & Dipole Moments)",
+  "syllabus": "Kossel-Lewis approach to chemical bonding; Octet rule and its limitations (expanded octet, electron-deficient molecules, odd-electron species); Ionic (electrovalent) bonding: formation, factors favoring ionic bond; Lattice enthalpy, Born-Haber cycle and Kapustinskii approximation; Polarization of ions and Fajan's rules (covalent character in ionic compounds, polarizing power of cations, polarizability of anions, pseudo-noble gas electron configuration); Dipole moment (μ), Debye unit, percentage ionic character, dipole moments of polyatomic molecules and symmetric cancellation; Comparison of bond polarity (e.g., NH3 vs NF3)",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The correct order of dipole moments for the molecules $\\text{NH}_3, \\text{NF}_3, \\text{BF}_3,$ and $\\text{H}_2\\text{O}$ is:",
+          "image": "",
+          "options": [
+            "$\\text{H}_2\\text{O} > \\text{NH}_3 > \\text{NF}_3 > \\text{BF}_3$",
+            "$\\text{H}_2\\text{O} > \\text{NF}_3 > \\text{NH}_3 > \\text{BF}_3$",
+            "$\\text{NH}_3 > \\text{H}_2\\text{O} > \\text{NF}_3 > \\text{BF}_3$",
+            "$\\text{BF}_3 > \\text{NF}_3 > \\text{NH}_3 > \\text{H}_2\\text{O}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{BF}_3$: Trigonal planar symmetrical geometry ($sp^2$). The three equal $\\text{B}-\\text{F}$ bond dipoles are oriented at $120^\\circ$ and cancel each other out completely: $\\mu = 0\\text{ D}$.\n2. $\\text{NH}_3$ vs $\\text{NF}_3$: Both are trigonal pyramidal with one lone pair. In $\\text{NH}_3$, nitrogen is more electronegative than hydrogen, so the three $\\text{N}-\\text{H}$ bond dipole vectors point in the same direction as the lone pair dipole moment, reinforcing each other ($\\mu = 1.47\\text{ D}$). In $\\text{NF}_3$, fluorine is more electronegative than nitrogen, so the $\\text{N}-\\text{F}$ bond dipoles point away from nitrogen, opposing the lone pair dipole moment and partially cancelling it ($\\mu = 0.24\\text{ D}$). Hence, $\\mu(\\text{NH}_3) > \\mu(\\text{NF}_3)$.\n3. $\\text{H}_2\\text{O}$: Bent geometry with two lone pairs and two highly polar $\\text{O}-\\text{H}$ bonds adding constructively, giving $\\mu = 1.85\\text{ D}$.\nTherefore, the overall decreasing order is:\n$$\\text{H}_2\\text{O} (1.85\\text{ D}) > \\text{NH}_3 (1.47\\text{ D}) > \\text{NF}_3 (0.24\\text{ D}) > \\text{BF}_3 (0\\text{ D})$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] According to Fajan's rules, which of the following compounds has the HIGHEST covalent character?",
+          "image": "",
+          "options": [
+            "$\\text{CuCl}$",
+            "$\\text{NaCl}$",
+            "$\\text{KCl}$",
+            "$\\text{RbCl}$"
+          ],
+          "correctOption": 0,
+          "solution": "According to Fajan's rules, covalent character is maximized when the cation has:\n1. High charge\n2. Small ionic size (high charge-to-size ratio)\n3. A pseudo-noble gas electronic configuration ($ns^2 np^6 nd^{10}$) rather than a noble gas configuration ($ns^2 np^6$).\nComparing $\\text{Cu}^+$ and $\\text{Na}^+$:\n- Both have the same charge ($+1$) and similar ionic radii ($\\approx 95-96\\text{ pm}$).\n- $\\text{Na}^+$ has a noble gas configuration: $[\\text{Ne}] = 2s^2 2p^6$.\n- $\\text{Cu}^+$ has a pseudo-noble gas configuration: $[\\text{Ar}] 3d^{10}$.\nThe $3d$ electrons shield the nuclear charge very poorly compared to $s$ and $p$ electrons. Consequently, $\\text{Cu}^+$ exerts a much stronger effective nuclear pull on the electron cloud of the $\\text{Cl}^-$ anion, causing much greater polarization and conferring higher covalent character to $\\text{CuCl}$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The correct order of increasing lattice enthalpy for the alkali metal fluorides is:",
+          "image": "",
+          "options": [
+            "$\\text{CsF} < \\text{RbF} < \\text{KF} < \\text{NaF} < \\text{LiF}$",
+            "$\\text{LiF} < \\text{NaF} < \\text{KF} < \\text{RbF} < \\text{CsF}$",
+            "$\\text{CsF} < \\text{KF} < \\text{RbF} < \\text{NaF} < \\text{LiF}$",
+            "$\\text{LiF} < \\text{KF} < \\text{NaF} < \\text{RbF} < \\text{CsF}$"
+          ],
+          "correctOption": 0,
+          "solution": "Lattice enthalpy ($U$) of an ionic crystal by Kapustinskii equation is given by:\n$$U \\propto \\frac{|z_+ z_-|}{r_+ + r_-}$$\nFor alkali metal fluorides, the anion $\\text{F}^-$ is fixed and charges are constant ($|z_+ z_-| = 1$).\nAs we descend Group 1 from $\\text{Li}^+$ to $\\text{Cs}^+$, the ionic radius increases:\n$$r(\\text{Li}^+) < r(\\text{Na}^+) < r(\\text{K}^+) < r(\\text{Rb}^+) < r(\\text{Cs}^+)$$\nBecause the inter-ionic distance ($r_+ + r_-$) increases, the electrostatic attraction between the ions weakens, leading to a decrease in lattice enthalpy:\n$$\\text{CsF} < \\text{RbF} < \\text{KF} < \\text{NaF} < \\text{LiF}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] In which of the following molecules does the central atom have an expanded octet (more than 8 valence electrons)?",
+          "image": "",
+          "options": [
+            "$\\text{SF}_6$",
+            "$\\text{BF}_3$",
+            "$\\text{CH}_4$",
+            "$\\text{NO}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "Counting the total valence electrons surrounding the central atom in each molecule:\n- In $\\text{SF}_6$: Sulfur has 6 valence electrons and forms 6 single covalent bonds with fluorine atoms, giving $6 \\times 2 = 12$ valence electrons (hypervalent molecule with an expanded octet).\n- In $\\text{BF}_3$: Boron is surrounded by only 6 valence electrons (hypovalent / electron-deficient).\n- In $\\text{CH}_4$: Carbon has an exact octet of 8 electrons.\n- In $\\text{NO}_2$: Nitrogen has 7 valence electrons (odd-electron molecule).\nThus, $\\text{SF}_6$ has an expanded octet."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The experimental dipole moment of a polar diatomic molecule $A-B$ is $1.20\\text{ D}$ and its bond length is $1.0\\text{ \\AA}$. The percentage ionic character of the $A-B$ bond is: (Take electronic charge $e = 4.8 \\times 10^{-10}\\text{ esu}$, $1\\text{ D} = 10^{-18}\\text{ esu cm}$)",
+          "image": "",
+          "options": [
+            "$25.0\\%$",
+            "$50.0\\%$",
+            "$12.5\\%$",
+            "$33.3\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Theoretical dipole moment for $100\\%$ ionic character (complete separation of single elementary charge $e$ over bond length $d$):\n$$\\mu_{\\text{ionic}} = e \\times d$$\nSubstitute $e = 4.8 \\times 10^{-10}\\text{ esu}$ and $d = 1.0\\text{ \\AA} = 1.0 \\times 10^{-8}\\text{ cm}$:\n$$\\mu_{\\text{ionic}} = (4.8 \\times 10^{-10}\\text{ esu}) \\times (1.0 \\times 10^{-8}\\text{ cm}) = 4.8 \\times 10^{-18}\\text{ esu cm} = 4.8\\text{ D}$$\n2. Observed dipole moment $\\mu_{\\text{obs}} = 1.20\\text{ D}$.\n3. Percentage ionic character:\n$$\\%\\text{ ionic character} = \\frac{\\mu_{\\text{obs}}}{\\mu_{\\text{ionic}}} \\times 100 = \\frac{1.20\\text{ D}}{4.80\\text{ D}} \\times 100 = 25.0\\%$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The correct order of increasing melting point for the alkaline earth metal chlorides is:",
+          "image": "",
+          "options": [
+            "$\\text{BeCl}_2 < \\text{MgCl}_2 < \\text{CaCl}_2 < \\text{SrCl}_2 < \\text{BaCl}_2$",
+            "$\\text{BaCl}_2 < \\text{SrCl}_2 < \\text{CaCl}_2 < \\text{MgCl}_2 < \\text{BeCl}_2$",
+            "$\\text{MgCl}_2 < \\text{BeCl}_2 < \\text{CaCl}_2 < \\text{SrCl}_2 < \\text{BaCl}_2$",
+            "$\\text{BeCl}_2 < \\text{BaCl}_2 < \\text{SrCl}_2 < \\text{CaCl}_2 < \\text{MgCl}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "By Fajan's rules, covalent character decreases and ionic character increases as the size of the cation increases:\n$$r(\\text{Be}^{2+}) < r(\\text{Mg}^{2+}) < r(\\text{Ca}^{2+}) < r(\\text{Sr}^{2+}) < r(\\text{Ba}^{2+})$$\n- $\\text{Be}^{2+}$ has an exceptionally small ionic radius and high charge density, giving it extreme polarizing power. $\\text{BeCl}_2$ is predominantly covalent and has the lowest melting point (sublimes at low temperature).\n- As cation size increases down the group, polarizing power decreases, the degree of polarization of $\\text{Cl}^-$ decreases, and ionic character increases.\n- Higher ionic character leads to strong electrostatic crystal lattice forces and higher melting points:\n$$\\text{BeCl}_2 < \\text{MgCl}_2 < \\text{CaCl}_2 < \\text{SrCl}_2 < \\text{BaCl}_2$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Which of the following molecules has a NON-ZERO dipole moment ($\\mu \\ne 0$)?",
+          "image": "",
+          "options": [
+            "$\\text{SO}_2$",
+            "$\\text{CO}_2$",
+            "$\\text{XeF}_4$",
+            "$\\text{CCl}_4$"
+          ],
+          "correctOption": 0,
+          "solution": "Check the molecular symmetry of each molecule:\n- $\\text{CO}_2$: Linear geometry ($O=C=O$). The two opposing $\\text{C}=\\text{O}$ bond moments cancel out completely ($\\mu = 0$).\n- $\\text{XeF}_4$: Square planar geometry ($sp^3d^2$ with two axial lone pairs). The four equatorial $\\text{Xe}-\\text{F}$ dipoles and the two opposing axial lone pair moments cancel out completely ($\\mu = 0$).\n- $\\text{CCl}_4$: Regular tetrahedral geometry ($sp^3$). Symmetrical vector sum of four $\\text{C}-\\text{Cl}$ bond moments is zero ($\\mu = 0$).\n- $\\text{SO}_2$: Bent (angular) geometry ($sp^2$ with one lone pair). The bond moments of the two polar $\\text{S}=\\text{O}$ bonds do not oppose each other directly, resulting in a net dipole moment ($\\mu = 1.63\\text{ D}$)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Born-Haber cycle is based on which fundamental thermodynamic law?",
+          "image": "",
+          "options": [
+            "Hess's Law of constant heat summation",
+            "First law of thermodynamics only",
+            "Second law of thermodynamics",
+            "Kirchhoff's law"
+          ],
+          "correctOption": 0,
+          "solution": "The Born-Haber cycle is a thermochemical cycle used primarily to calculate the lattice enthalpy of an ionic crystal from experimentally accessible thermodynamic quantities (enthalpy of formation, sublimation enthalpy, dissociation enthalpy, ionization enthalpy, and electron gain enthalpy).\nBecause enthalpy is a state function, the total enthalpy change for a chemical process is independent of the pathway or number of intermediate steps taken.\nThis principle is Hess's Law of constant heat summation (an application of the First Law of Thermodynamics)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An ionic compound $A^+ B^-$ is most readily formed when:",
+          "image": "",
+          "options": [
+            "Ionization enthalpy of $A$ is low and electron gain enthalpy of $B$ is highly negative",
+            "Ionization enthalpy of $A$ is high and electron gain enthalpy of $B$ is highly negative",
+            "Ionization enthalpy of $A$ is low and electron gain enthalpy of $B$ is positive",
+            "Lattice enthalpy of $AB$ is low"
+          ],
+          "correctOption": 0,
+          "solution": "The formation of an ionic solid from its constituent neutral elements involves:\n1. Formation of cation: $A(g) \\rightarrow A^+(g) + e^-$ (requires ionization enthalpy, $\\text{IE}$). A low value of $\\text{IE}$ favors cation formation.\n2. Formation of anion: $B(g) + e^- \\rightarrow B^-(g)$ (releases electron gain enthalpy, $\\Delta_{eg}H$). A highly negative $\\Delta_{eg}H$ favors anion formation.\n3. Crystal formation: $A^+(g) + B^-(g) \\rightarrow AB(s)$ (releases lattice enthalpy, $U$). A high lattice enthalpy provides the primary driving force for ionic stability.\nHence, low ionization enthalpy of the metal and high negative electron gain enthalpy of the non-metal favor ionic bond formation."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The polarization of an anion by a cation is favored by:",
+          "image": "",
+          "options": [
+            "Small size and high positive charge of the cation, and large size of the anion",
+            "Large size and low positive charge of the cation, and small size of the anion",
+            "Small size of the cation and small size of the anion",
+            "Large size of the cation and large size of the anion"
+          ],
+          "correctOption": 0,
+          "solution": "According to Fajan's rules:\n1. **Polarizing power of cation** is directly proportional to its charge density:\n$$\\text{Polarizing power} \\propto \\frac{\\text{Positive charge}}{\\text{Radius of cation}}$$\nThus, high positive charge and small cation size maximize polarizing power.\n2. **Polarizability of anion** depends on how loosely its outer electron cloud is held by its nucleus. Anions with larger ionic radii and higher negative charges have more diffuse, easily distorted electron clouds.\nTherefore, small cation size, high cation charge, and large anion size favor polarization and maximize covalent character."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Which of the following pairs of molecules illustrates zero dipole moment due to identical bond moments cancelling each other symmetrically?",
+          "image": "",
+          "options": [
+            "$\\text{BeCl}_2$ and $\\text{p-Dichlorobenzene}$",
+            "$\\text{H}_2\\text{O}$ and $\\text{H}_2\\text{S}$",
+            "$\\text{NH}_3$ and $\\text{NF}_3$",
+            "$\\text{SO}_2$ and $\\text{O}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "- $\\text{BeCl}_2$: Linear geometry ($Cl-Be-Cl$). The two $\\text{Be}-\\text{Cl}$ bond moments act in exactly opposite directions ($180^\\circ$) and cancel: $\\mu = 0$.\n- $\\text{p-Dichlorobenzene}$: Planar benzene ring with two identical $-\\text{Cl}$ groups positioned para ($1,4$) to each other. The two $\\text{C}-\\text{Cl}$ dipole vectors point in opposite directions at $180^\\circ$ across the center of symmetry and cancel: $\\mu = 0$.\nAll other options consist of asymmetric or bent molecules having non-zero net dipole moments."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following ions has the HIGHEST polarizability?",
+          "image": "",
+          "options": [
+            "$\\text{I}^-$",
+            "$\\text{F}^-$",
+            "$\\text{Cl}^-$",
+            "$\\text{Br}^-$"
+          ],
+          "correctOption": 0,
+          "solution": "Polarizability is the ease with which an anion's electron cloud can be distorted by an adjacent cation.\nDown Group 17, the size of the halide ion increases:\n$$\\text{F}^- < \\text{Cl}^- < \\text{Br}^- < \\text{I}^- $$\nBecause the iodide ion ($\\text{I}^-$) has the largest ionic radius and its outer electrons are shielded by numerous inner shells, its valence electron cloud is held least tightly by the nucleus.\nConsequently, $\\text{I}^-$ is the most polarizable halide anion, forming the most covalent and deeply colored salts (e.g., yellow $\\text{AgI}$ vs white $\\text{AgCl}$)."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Given the standard enthalpies for the formation of $\\text{NaCl}(s)$:\n- Sublimation of sodium: $\\Delta H_{\\text{sub}} = +108\\text{ kJ/mol}$\n- Ionization of sodium: $\\text{IE} = +496\\text{ kJ/mol}$\n- Dissociation of $\\text{Cl}_2$: $\\frac{1}{2}\\Delta H_{\\text{diss}} = +121\\text{ kJ/mol}$\n- Electron gain enthalpy of $\\text{Cl}$: $\\Delta_{eg}H = -349\\text{ kJ/mol}$\n- Standard enthalpy of formation of $\\text{NaCl}(s)$: $\\Delta H_f^\\circ = -411\\text{ kJ/mol}$\nThe lattice enthalpy ($U$) of $\\text{NaCl}(s)$ is:",
+          "image": "",
+          "options": [
+            "$+787\\text{ kJ/mol}$",
+            "$-787\\text{ kJ/mol}$",
+            "$+387\\text{ kJ/mol}$",
+            "$+621\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "According to the Born-Haber cycle:\n$$\\Delta H_f^\\circ = \\Delta H_{\\text{sub}} + \\text{IE} + \\frac{1}{2}\\Delta H_{\\text{diss}} + \\Delta_{eg}H - U$$\nwhere $U$ is the lattice dissociation enthalpy (positive value).\nSubstitute the given values:\n$$-411 = +108 + 496 + 121 + (-349) - U$$\n$$-411 = (725 - 349) - U$$\n$$-411 = 376 - U$$\n$$U = 376 - (-411) = 376 + 411 = +787\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Among $\\text{LiF}, \\text{LiCl}, \\text{LiBr},$ and $\\text{LiI}$, which compound has the HIGHEST solubility in non-polar organic solvents like ethanol or ether?",
+          "image": "",
+          "options": [
+            "$\\text{LiI}$",
+            "$\\text{LiF}$",
+            "$\\text{LiCl}$",
+            "$\\text{LiBr}$"
+          ],
+          "correctOption": 0,
+          "solution": "According to Fajan's rules, covalent character in lithium halides follows the order:\n$$\\text{LiF} < \\text{LiCl} < \\text{LiBr} < \\text{LiI}$$\n- The small $\\text{Li}^+$ cation has strong polarizing power.\n- The large, highly polarizable $\\text{I}^-$ anion undergoes maximal distortion, imparting substantial covalent character to $\\text{LiI}$.\n- By the principle of 'like dissolves like', substances with high covalent character are significantly more soluble in non-polar or weakly polar organic solvents (such as ethanol, acetone, and ether) than predominantly ionic salts like $\\text{LiF}$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Which of the following species is an odd-electron molecule that does NOT obey the octet rule?",
+          "image": "",
+          "options": [
+            "$\\text{NO}$",
+            "$\\text{CO}$",
+            "$\\text{N}_2\\text{O}$",
+            "$\\text{CO}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "Total valence electrons in each molecule:\n- In $\\text{NO}$: Nitrogen has 5 valence electrons and oxygen has 6: $5 + 6 = 11\\text{ valence electrons}$. Because 11 is an odd number, at least one atom must have an incomplete octet with an unpaired electron (paramagnetic).\n- In $\\text{CO}$: $4 + 6 = 10$ electrons (even, octet satisfied).\n- In $\\text{N}_2\\text{O}$: $2(5) + 6 = 16$ electrons (even, octet satisfied).\n- In $\\text{CO}_2$: $4 + 2(6) = 16$ electrons (even, octet satisfied).\nThus, $\\text{NO}$ is an odd-electron molecule."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] For the isomers of dichlorobenzene, the correct order of dipole moments is:",
+          "image": "",
+          "options": [
+            "$\\text{ortho} > \\text{meta} > \\text{para}$",
+            "$\\text{para} > \\text{meta} > \\text{ortho}$",
+            "$\\text{ortho} > \\text{para} > \\text{meta}$",
+            "$\\text{meta} > \\text{ortho} > \\text{para}$"
+          ],
+          "correctOption": 0,
+          "solution": "The dipole moment of a disubstituted benzene derivative is given by the vector addition formula:\n$$\\mu_{\\text{net}} = \\sqrt{\\mu_1^2 + \\mu_2^2 + 2\\mu_1 \\mu_2 \\cos\\theta}$$\nFor identical substituents ($\\mu_1 = \\mu_2 = \\mu$):\n$$\\mu_{\\text{net}} = 2\\mu \\cos\\left(\\frac{\\theta}{2}\\right)$$\n- Ortho isomer: $\\theta = 60^\\circ \\implies \\mu_{\\text{ortho}} = 2\\mu \\cos(30^\\circ) = \\sqrt{3}\\mu \\approx 1.732\\mu$\n- Meta isomer: $\\theta = 120^\\circ \\implies \\mu_{\\text{meta}} = 2\\mu \\cos(60^\\circ) = \\mu$\n- Para isomer: $\\theta = 180^\\circ \\implies \\mu_{\\text{para}} = 2\\mu \\cos(90^\\circ) = 0$\nTherefore, the dipole moments follow the sequence:\n$$\\text{ortho} > \\text{meta} > \\text{para}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Among the following halides of tin, which one is predominantly covalent and exists as a liquid at room temperature?",
+          "image": "",
+          "options": [
+            "$\\text{SnCl}_4$",
+            "$\\text{SnCl}_2$",
+            "$\\text{SnF}_2$",
+            "$\\text{SnBr}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "Comparing $\\text{SnCl}_4$ and $\\text{SnCl}_2$:\n- In $\\text{SnCl}_4$, tin is in the $+4$ oxidation state (higher charge, smaller radius of $\\text{Sn}^{4+}$).\n- In $\\text{SnCl}_2$, tin is in the $+2$ oxidation state.\nBy Fajan's rules, a cation with a higher positive charge ($+4$) has substantially greater polarizing power than a cation with a lower charge ($+2$).\nTherefore, $\\text{Sn}^{4+}$ polarizes the electron clouds of $\\text{Cl}^-$ much more strongly, making $\\text{SnCl}_4$ predominantly covalent (a volatile liquid, boiling point $\\approx 114^\\circ\\text{C}$), whereas $\\text{SnCl}_2$ is largely ionic (a solid with melting point $\\approx 247^\\circ\\text{C}$)."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following compounds has the HIGHEST lattice enthalpy?",
+          "image": "",
+          "options": [
+            "$\\text{MgO}$",
+            "$\\text{NaCl}$",
+            "$\\text{NaF}$",
+            "$\\text{CaO}$"
+          ],
+          "correctOption": 0,
+          "solution": "Lattice enthalpy is given by:\n$$U \\propto \\frac{|z_+ z_-|}{r_+ + r_-}$$\n1. Charge factor:\n- For $\\text{NaCl}$ and $\\text{NaF}$: $|z_+ z_-| = (1)(1) = 1$.\n- For $\\text{MgO}$ and $\\text{CaO}$: $|z_+ z_-| = (2)(2) = 4$.\nBecause the product of ionic charges is four times greater, the lattice enthalpies of $\\text{MgO}$ and $\\text{CaO}$ are far larger than those of $\\text{NaCl}$ and $\\text{NaF}$.\n2. Size factor:\nComparing $\\text{Mg}^{2+}$ and $\\text{Ca}^{2+}$: $\\text{Mg}^{2+}$ ($72\\text{ pm}$) is significantly smaller than $\\text{Ca}^{2+}$ ($100\\text{ pm}$).\nSince $r(\\text{Mg}^{2+}) < r(\\text{Ca}^{2+})$, the inter-ionic distance is smaller in $\\text{MgO}$, giving it the highest lattice enthalpy ($\\approx 3791\\text{ kJ/mol}$)."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Why does $\\text{AgF}$ have high solubility in water whereas $\\text{AgI}$ is practically insoluble in water?",
+          "image": "",
+          "options": [
+            "$\\text{AgI}$ has high covalent character due to large polarizability of $\\text{I}^-$, while $\\text{AgF}$ is predominantly ionic with hydration enthalpy exceeding its lattice enthalpy",
+            "$\\text{AgF}$ has higher lattice enthalpy than $\\text{AgI}$",
+            "$\\text{Ag}^+$ forms strong coordinate bonds with water in the presence of $\\text{I}^-$",
+            "$\\text{AgI}$ forms an insoluble gas at room temperature"
+          ],
+          "correctOption": 0,
+          "solution": "According to Fajan's rules:\n1. The large $\\text{I}^-$ anion is easily polarized by the pseudo-noble gas cation $\\text{Ag}^+$, imparting strong covalent character to $\\text{AgI}$. In addition, its low hydration enthalpy cannot compensate for its lattice stability, making it practically insoluble in water.\n2. In contrast, the fluoride ion ($\\text{F}^-$) is very small and non-polarizable, meaning $\\text{AgF}$ is predominantly ionic. Furthermore, the very small size of $\\text{F}^-$ gives it a very high hydration enthalpy that easily overcomes its lattice enthalpy, making $\\text{AgF}$ highly soluble in water."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Which of the following diatomic molecules has the LARGEST dipole moment?",
+          "image": "",
+          "options": [
+            "$\\text{HF}$",
+            "$\\text{HCl}$",
+            "$\\text{HBr}$",
+            "$\\text{HI}$"
+          ],
+          "correctOption": 0,
+          "solution": "Dipole moment is defined as $\\mu = q \\times d$.\nAlthough bond length ($d$) increases down the hydrogen halide series ($\\text{HF} < \\text{HCl} < \\text{HBr} < \\text{HI}$), the magnitude of the partial charge separation ($q$) is governed by the electronegativity difference between hydrogen and halogen:\n$$\\Delta\\chi(\\text{H}-\\text{F}) = 4.0 - 2.1 = 1.9$$\n$$\\Delta\\chi(\\text{H}-\\text{Cl}) = 3.0 - 2.1 = 0.9$$\n$$\\Delta\\chi(\\text{H}-\\text{Br}) = 2.8 - 2.1 = 0.7$$\n$$\\Delta\\chi(\\text{H}-\\text{I}) = 2.5 - 2.1 = 0.4$$\nThe large electronegativity difference in $\\text{HF}$ overwhelmingly dominates over the bond length factor:\n- $\\mu(\\text{HF}) = 1.78\\text{ D}$\n- $\\mu(\\text{HCl}) = 1.07\\text{ D}$\n- $\\mu(\\text{HBr}) = 0.79\\text{ D}$\n- $\\mu(\\text{HI}) = 0.38\\text{ D}$\nHence, $\\text{HF}$ has the largest dipole moment."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the dipole moment (in Debye, rounded to two decimal places) of a polar molecule having a charge separation of $0.4\\text{ elementary charge}$ and a bond length of $1.5\\text{ \\AA}$. (Take $e = 4.8 \\times 10^{-10}\\text{ esu}$, $1\\text{ D} = 10^{-18}\\text{ esu cm}$).",
+          "image": "",
+          "correctValue": 2.88,
+          "solution": "1. Charge $q = 0.4 \\times e = 0.4 \\times 4.8 \\times 10^{-10}\\text{ esu} = 1.92 \\times 10^{-10}\\text{ esu}$.\n2. Distance $d = 1.5\\text{ \\AA} = 1.5 \\times 10^{-8}\\text{ cm}$.\n3. Dipole moment:\n$$\\mu = q \\times d = (1.92 \\times 10^{-10}\\text{ esu}) \\times (1.5 \\times 10^{-8}\\text{ cm}) = 2.88 \\times 10^{-18}\\text{ esu cm}$$\nSince $1\\text{ D} = 10^{-18}\\text{ esu cm}$:\n$$\\mu = 2.88\\text{ D}$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the total number of non-bonding lone pairs of electrons in the Lewis dot structure of a molecule of sulfur hexafluoride ($\\text{SF}_6$).",
+          "image": "",
+          "correctValue": 18.0,
+          "solution": "In the $\\text{SF}_6$ molecule:\n- The central sulfur atom has 6 valence electrons and uses all 6 to form 6 single $\\text{S}-\\text{F}$ covalent bonds with 6 fluorine atoms. Thus, sulfur has $0$ lone pairs.\n- Each of the 6 fluorine atoms has 7 valence electrons, using 1 electron in bonding with sulfur and retaining 3 non-bonding lone pairs ($6$ non-bonding electrons).\nTotal number of lone pairs in the molecule:\n$$\\text{Total lone pairs} = 6 \\times 3 = 18.0$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Among the following chemical species: $\\text{BF}_3, \\text{AlCl}_3, \\text{PCl}_5, \\text{SF}_6, \\text{IF}_7, \\text{BeCl}_2, \\text{H}_2\\text{SO}_4$, how many species exhibit an expanded octet (central atom having more than 8 valence electrons)?",
+          "image": "",
+          "options": [],
+          "correctValue": 4.0,
+          "solution": "Determine valence electrons on the central atom for each species:\n1. $\\text{BF}_3$: Boron has $3 \\times 2 = 6$ electrons (incomplete octet)\n2. $\\text{AlCl}_3$: Aluminum has $3 \\times 2 = 6$ electrons (incomplete octet)\n3. $\\text{PCl}_5$: Phosphorus has $5 \\times 2 = 10$ electrons (expanded octet)\n4. $\\text{SF}_6$: Sulfur has $6 \\times 2 = 12$ electrons (expanded octet)\n5. $\\text{IF}_7$: Iodine has $7 \\times 2 = 14$ electrons (expanded octet)\n6. $\\text{BeCl}_2$: Beryllium has $2 \\times 2 = 4$ electrons (incomplete octet)\n7. $\\text{H}_2\\text{SO}_4$: Sulfur forms 6 bonds (two double bonds to oxo-oxygens, two single bonds to $-\\text{OH}$ groups), having 12 electrons (expanded octet)\nTotal species with an expanded octet $= 4.0$ (namely $\\text{PCl}_5, \\text{SF}_6, \\text{IF}_7, \\text{H}_2\\text{SO}_4$)."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the net dipole moment (in Debye) of trans-1,2-dichloroethene.",
+          "image": "",
+          "correctValue": 0.0,
+          "solution": "In trans-1,2-dichloroethene ($C_2H_2Cl_2$):\n- The two $\\text{C}-\\text{Cl}$ polar bonds are oriented in opposite directions across the double bond at an angle of $180^\\circ$.\n- The two $\\text{C}-\\text{H}$ bonds are also oriented oppositely.\nDue to the center of inversion and trans symmetry, all individual bond dipole moments cancel each other out completely:\n$$\\mu = 0.0\\text{ D}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] If the electronegativity difference between two bonded atoms $A$ and $B$ is $\\Delta\\chi = 1.0$, calculate the percentage ionic character of the $A-B$ bond using the Hannay-Smith equation: $\\%\\text{ ionic} = 16(\\Delta\\chi) + 3.5(\\Delta\\chi)^2$.",
+          "image": "",
+          "correctValue": 19.5,
+          "solution": "Applying the Hannay-Smith relation:\n$$\\%\\text{ ionic character} = 16(\\Delta\\chi) + 3.5(\\Delta\\chi)^2$$\nSubstitute $\\Delta\\chi = 1.0$:\n$$\\%\\text{ ionic character} = 16(1.0) + 3.5(1.0)^2 = 16 + 3.5 = 19.5\\%$$"
+        }
+      ]
+    }
+  ]
+}

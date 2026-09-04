@@ -1,0 +1,361 @@
+{
+  "testId": "jee-main-chem-25-bonding-in-coordination-compounds",
+  "title": "Bonding in Coordination Compounds (VBT, CFT, CFSE, Magnetic Properties, & Color)",
+  "syllabus": "Valence Bond Theory (VBT) applied to coordination complexes: Inner orbital (d2sp3, dsp2) and outer orbital (sp3d2, sp3) complexes, orbital hybridization schemes, limitations of VBT; Crystal Field Theory (CFT): Crystal field splitting in octahedral (Δo) and tetrahedral (Δt) environments, relationship between Δo and Δt (Δt = 4/9 Δo); Spectrochemical series and ligand field strength; Pairing energy (P), high-spin vs low-spin complexes for d4 to d7 configurations; Crystal Field Stabilization Energy (CFSE) calculation for octahedral and tetrahedral complexes; Magnetic properties (spin-only magnetic moment formula μ = √[n(n+2)] BM); Color of coordination complexes, d-d transitions, Laporte and spin selection rules, complementary colors, Jahn-Teller distortion (qualitative), and synergic bonding in metal carbonyls",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The crystal field stabilization energy (CFSE, ignoring pairing energy) for a high-spin $d^6$ octahedral complex is:",
+          "image": "",
+          "options": [
+            "$-0.4\\ \\Delta_o$",
+            "$-2.4\\ \\Delta_o$",
+            "$-1.6\\ \\Delta_o$",
+            "$-0.6\\ \\Delta_o$"
+          ],
+          "correctOption": 0,
+          "solution": "In an octahedral crystal field, the $d$-orbitals split into a lower triply degenerate $t_{2g}$ set (stabilized by $-0.4\\ \\Delta_o$ per electron) and a higher doubly degenerate $e_g$ set (destabilized by $+0.6\\ \\Delta_o$ per electron).\nFor a high-spin $d^6$ configuration (where $\\Delta_o < P$):\nElectrons fill according to Hund's rule: $t_{2g}^4 e_g^2$.\n$$\\text{CFSE} = [n(t_{2g}) \\times (-0.4) + n(e_g) \\times (+0.6)]\\ \\Delta_o$$\n$$\\text{CFSE} = [4 \\times (-0.4) + 2 \\times (+0.6)]\\ \\Delta_o = [-1.6 + 1.2]\\ \\Delta_o = -0.4\\ \\Delta_o$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The hybridization and magnetic behavior of the complex $[\\text{Ni}(\\text{CN})_4]^{2-}$ are respectively:",
+          "image": "",
+          "options": [
+            "$dsp^2$ and diamagnetic",
+            "$sp^3$ and paramagnetic",
+            "$dsp^2$ and paramagnetic",
+            "$sp^3$ and diamagnetic"
+          ],
+          "correctOption": 0,
+          "solution": "1. Oxidation state of nickel in $[\\text{Ni}(\\text{CN})_4]^{2-}$:\n$$x + 4(-1) = -2 \\implies x = +2$$\n$$\\text{Ni}^{2+}: [\\text{Ar}] 3d^8 4s^0 4p^0$$\n2. Cyanide ($\\text{CN}^-$) is a strong field carbon-donor ligand that induces pairing of the two unpaired electrons in the $3d$ subshell:\n$$3d^8 \\rightarrow 4\\text{ pairs in four } 3d \\text{ orbitals}$$\n3. This leaves one inner $3d$ orbital vacant. The metal uses one $3d$, one $4s$, and two $4p$ orbitals to form four $dsp^2$ hybrid orbitals (square planar geometry).\n4. Because all electrons are paired ($n = 0$), the complex is diamagnetic."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The correct order of ligand field strength in the spectrochemical series is:",
+          "image": "",
+          "options": [
+            "$\\text{I}^- < \\text{Br}^- < \\text{Cl}^- < \\text{F}^- < \\text{OH}^- < \\text{H}_2\\text{O} < \\text{NH}_3 < \\text{CN}^- < \\text{CO}$",
+            "$\\text{CO} < \\text{CN}^- < \\text{NH}_3 < \\text{H}_2\\text{O} < \\text{OH}^- < \\text{F}^- < \\text{Cl}^- < \\text{Br}^- < \\text{I}^-$",
+            "$\\text{I}^- < \\text{Cl}^- < \\text{Br}^- < \\text{F}^- < \\text{H}_2\\text{O} < \\text{OH}^- < \\text{NH}_3 < \\text{CO} < \\text{CN}^-$",
+            "$\\text{F}^- < \\text{Cl}^- < \\text{Br}^- < \\text{I}^- < \\text{OH}^- < \\text{H}_2\\text{O} < \\text{NH}_3 < \\text{CN}^- < \\text{CO}$"
+          ],
+          "correctOption": 0,
+          "solution": "The spectrochemical series is an experimentally determined sequence that ranks ligands based on the magnitude of crystal field splitting ($\\Delta_o$) they induce:\nHalide donors $< \\text{Oxygen donors} < \\text{Nitrogen donors} < \\text{Carbon donors}$\n$$\\text{I}^- < \\text{Br}^- < \\text{S}^{2-} < \\text{SCN}^- < \\text{Cl}^- < \\text{F}^- < \\text{OH}^- < \\text{C}_2\\text{O}_4^{2-} < \\text{H}_2\\text{O} < \\text{NCS}^- < \\text{edta}^{4-} < \\text{NH}_3 < \\text{en} < \\text{CN}^- < \\text{CO}$$\nOption A matches the correct sequence."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following complex ions absorbs light of the SHORTEST wavelength in the visible region?",
+          "image": "",
+          "options": [
+            "$[\\text{Co}(\\text{CN})_6]^{3-}$",
+            "$[\\text{Co}(\\text{NH}_3)_6]^{3+}$",
+            "$[\\text{Co}(\\text{H}_2\\text{O})_6]^{3+}$",
+            "$[\\text{CoF}_6]^{3-}$"
+          ],
+          "correctOption": 0,
+          "solution": "The excitation of electrons during $d-d$ transitions absorbs light energy corresponding to the crystal field splitting energy:\n$$\\Delta_o = h\\nu = \\frac{hc}{\\lambda} \\implies \\lambda \\propto \\frac{1}{\\Delta_o}$$\n1. A higher crystal field splitting ($\\Delta_o$) requires higher energy, which corresponds to a shorter wavelength ($\\lambda$) of absorbed light.\n2. Among the coordinated ligands, cyanide ($\\text{CN}^-$) is the strongest field ligand in the spectrochemical series, producing the largest $\\Delta_o$.\n3. Order of $\\Delta_o$: $[\\text{Co}(\\text{CN})_6]^{3-} > [\\text{Co}(\\text{NH}_3)_6]^{3+} > [\\text{Co}(\\text{H}_2\\text{O})_6]^{3+} > [\\text{CoF}_6]^{3-}$.\nConsequently, $[\\text{Co}(\\text{CN})_6]^{3-}$ absorbs light with the highest energy and shortest wavelength (absorbing in the ultraviolet/violet region)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The relation between the crystal field splitting energy in a tetrahedral complex ($\\Delta_t$) and an octahedral complex ($\\Delta_o$) for the same metal ion and ligands is:",
+          "image": "",
+          "options": [
+            "$\\Delta_t = \\frac{4}{9}\\ \\Delta_o$",
+            "$\\Delta_t = \\frac{9}{4}\\ \\Delta_o$",
+            "$\\Delta_t = \\frac{1}{2}\\ \\Delta_o$",
+            "$\\Delta_t = \\frac{2}{3}\\ \\Delta_o$"
+          ],
+          "correctOption": 0,
+          "solution": "In a tetrahedral coordination complex:\n1. There are only $4$ ligands instead of $6$ in an octahedral complex, reducing electrostatic repulsion by a factor of $\\frac{4}{6} = \\frac{2}{3}$.\n2. The ligands in a tetrahedral geometry do not point directly at any of the metal $d$-orbitals (they approach between the Cartesian axes), which reduces the splitting efficiency by another factor of $\\frac{2}{3}$.\nCombining both geometric effects gives:\n$$\\Delta_t = \\frac{2}{3} \\times \\frac{2}{3}\\ \\Delta_o = \\frac{4}{9}\\ \\Delta_o$$\nBecause $\\Delta_t$ is roughly half of $\\Delta_o$, it rarely exceeds the electron pairing energy ($P$). Consequently, tetrahedral complexes are almost exclusively high-spin."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The spin-only magnetic moments of $[\\text{Fe}(\\text{H}_2\\text{O})_6]^{2+}$ and $[\\text{Fe}(\\text{CN})_6]^{4-}$ are respectively:",
+          "image": "",
+          "options": [
+            "$4.90\\text{ BM}$ and $0\\text{ BM}$",
+            "$4.90\\text{ BM}$ and $1.73\\text{ BM}$",
+            "$5.92\\text{ BM}$ and $0\\text{ BM}$",
+            "$0\\text{ BM}$ and $4.90\\text{ BM}$"
+          ],
+          "correctOption": 0,
+          "solution": "Both complexes contain $\\text{Fe}^{2+}$ with electronic configuration $[\\text{Ar}] 3d^6$:\n1. In $[\\text{Fe}(\\text{H}_2\\text{O})_6]^{2+}$, water is a weak field ligand ($\\Delta_o < P$), forming a high-spin complex:\n$$t_{2g}^4 e_g^2 \\implies n = 4\\text{ unpaired electrons}$$\n$$\\mu_s = \\sqrt{4(4 + 2)} = \\sqrt{24} \\approx 4.899\\text{ BM} \\approx 4.90\\text{ BM}$$\n2. In $[\\text{Fe}(\\text{CN})_6]^{4-}$, cyanide is a strong field ligand ($\\Delta_o > P$), forming a low-spin complex:\n$$t_{2g}^6 e_g^0 \\implies n = 0\\text{ unpaired electrons}$$\n$$\\mu_s = 0\\text{ BM} \\quad (\\text{diamagnetic})$$\nTherefore, the magnetic moments are $4.90\\text{ BM}$ and $0\\text{ BM}$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Synergic bonding in metal carbonyls, such as $[\\text{Ni}(\\text{CO})_4]$, involves:",
+          "image": "",
+          "options": [
+            "$\\sigma$-donation of a lone pair from $\\text{CO}$ to a vacant metal $d$-orbital and $\\pi$-back-donation from a filled metal $d$-orbital into the empty $\\pi^*$ antibonding orbital of $\\text{CO}$",
+            "$\\sigma$-donation from metal to $\\text{CO}$ and $\\pi$-donation from $\\text{CO}$ to metal",
+            "Pure electrostatic attraction between $\\text{Ni}^{2+}$ and polarized carbonyl dipoles",
+            "$\\pi$-overlap between filled $s$-orbitals of metal and vacant $p$-orbitals of carbon"
+          ],
+          "correctOption": 0,
+          "solution": "Synergic (cooperative) bonding in transition metal carbonyls consists of two complementary components:\n1. **$\\text{M} \\leftarrow \\text{C}$ $\\sigma$-bond:** Donation of the lone pair of electrons on the carbon atom of $\\text{CO}$ into an empty hybrid orbital of the transition metal.\n2. **$\\text{M} \\rightarrow \\text{C}$ $\\pi$-back-bonding:** Back-donation of electron density from a filled non-bonding $d$-orbital of the metal into the vacant $\\pi^*$ antibonding molecular orbital of $\\text{CO}$.\nThis back-donation strengthens the $\\text{M}-\\text{C}$ bond while simultaneously weakening the $\\text{C}\\equiv\\text{O}$ bond (lengthening the $\\text{C}-\\text{O}$ bond and decreasing its IR stretching frequency)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following electronic configurations in an octahedral complex will show a significant Jahn-Teller distortion?",
+          "image": "",
+          "options": [
+            "High-spin $d^4$ ($t_{2g}^3 e_g^1$)",
+            "Low-spin $d^6$ ($t_{2g}^6 e_g^0$)",
+            "$d^3$ ($t_{2g}^3 e_g^0$)",
+            "High-spin $d^5$ ($t_{2g}^3 e_g^2$)"
+          ],
+          "correctOption": 0,
+          "solution": "The Jahn-Teller theorem states that any non-linear molecular system in a degenerate electronic state is unstable and will undergo geometric distortion to lower its symmetry and lift the degeneracy.\n1. A significant (strong) Jahn-Teller distortion occurs when the higher-energy $e_g$ orbitals (which point directly at the incoming ligands) are **asymmetrically occupied**.\n2. Configurations with asymmetrically occupied $e_g$ orbitals include:\n- High-spin $d^4$ ($t_{2g}^3 e_g^1$)\n- Low-spin $d^7$ ($t_{2g}^6 e_g^1$)\n- $d^9$ ($t_{2g}^6 e_g^3$, e.g., $\\text{Cu}^{2+}$ complexes)\n3. Symmetrically filled subshells (like $t_{2g}^3 e_g^0, t_{2g}^6 e_g^0,$ and $t_{2g}^3 e_g^2$) experience no electronic degeneracy in $e_g$ and do not exhibit Jahn-Teller distortion.\nHence, high-spin $d^4$ shows a pronounced Jahn-Teller distortion."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An aqueous solution of $[\\text{Ti}(\\text{H}_2\\text{O})_6]^{3+}$ exhibits a purple-violet color. When the solution is heated to drive off coordinated water, the anhydrous substance becomes colorless because:",
+          "image": "",
+          "options": [
+            "In the absence of ligands, crystal field splitting does not occur, making $d-d$ transitions impossible",
+            "Titanium is reduced to metallic titanium",
+            "Titanium oxidizes to $\\text{Ti}^{4+}$ ($d^0$)",
+            "The complex changes to a tetrahedral geometry with zero crystal field splitting"
+          ],
+          "correctOption": 0,
+          "solution": "1. In $[\\text{Ti}(\\text{H}_2\\text{O})_6]^{3+}$, titanium is in the $+3$ oxidation state ($3d^1$).\n2. The six coordinated water ligands create an octahedral crystal field that splits the five degenerate $3d$ orbitals into $t_{2g}$ and $e_g$ sets.\n3. Absorption of visible light (yellow-green region, $\\approx 500\\text{ nm}$) promotes the single $d$-electron from $t_{2g}$ to $e_g$ ($t_{2g}^1 e_g^0 \\rightarrow t_{2g}^0 e_g^1$). The transmitted complementary light is purple-violet.\n4. When the ligands are removed upon heating, the crystal field vanishes and the five $3d$ orbitals become completely degenerate again. Without energy splitting, $d-d$ transitions cannot take place, and the anhydrous substance appears colorless."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The crystal field stabilization energy (CFSE) of a low-spin $d^5$ octahedral complex (ignoring pairing energy) is:",
+          "image": "",
+          "options": [
+            "$-2.0\\ \\Delta_o$",
+            "$-0.4\\ \\Delta_o$",
+            "$-1.2\\ \\Delta_o$",
+            "$0\\ \\Delta_o$"
+          ],
+          "correctOption": 0,
+          "solution": "For a low-spin $d^5$ configuration in an octahedral field, strong field ligands cause $\\Delta_o > P$.\nAll five electrons pair up in the lower $t_{2g}$ orbitals:\n$$\\text{Configuration} = t_{2g}^5 e_g^0$$\nCalculate the CFSE:\n$$\\text{CFSE} = [5 \\times (-0.4\\ \\Delta_o) + 0 \\times (+0.6\\ \\Delta_o)] = -2.0\\ \\Delta_o$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Which of the following complex ions is an OUTER orbital octahedral complex?",
+          "image": "",
+          "options": [
+            "$[\\text{CoF}_6]^{3-}$",
+            "$[\\text{Co}(\\text{NH}_3)_6]^{3+}$",
+            "$[\\text{Fe}(\\text{CN})_6]^{3-}$",
+            "$[\\text{Cr}(\\text{NH}_3)_6]^{3+}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In $[\\text{CoF}_6]^{3-}$, cobalt is in the $+3$ oxidation state ($3d^6$). Fluoride is a weak field ligand ($\\Delta_o < P$), so it cannot force the pairing of $3d$ electrons. The four unpaired electrons remain in the inner $3d$ subshell ($t_{2g}^4 e_g^2$). Cobalt uses outer $4s, 4p,$ and $4d$ orbitals to form six $sp^3d^2$ hybrid orbitals. It is an **outer orbital (high-spin)** complex.\n2. In $[\\text{Co}(\\text{NH}_3)_6]^{3+}$, $\\text{NH}_3$ behaves as a strong field ligand with $\\text{Co}^{3+}$, pairing all electrons ($t_{2g}^6 e_g^0$) to use inner $3d$ orbitals ($d^2sp^3$, inner orbital).\n3. In $[\\text{Fe}(\\text{CN})_6]^{3-}$, cyanide is a strong field ligand ($d^2sp^3$, inner orbital).\n4. In $[\\text{Cr}(\\text{NH}_3)_6]^{3+}$, $\\text{Cr}^{3+}$ ($3d^3$) naturally has two empty $3d$ orbitals available for $d^2sp^3$ inner orbital hybridization."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For a tetrahedral complex $[\\text{FeCl}_4]^{2-}$, the electronic configuration and number of unpaired electrons under CFT are:",
+          "image": "",
+          "options": [
+            "$e^3 t_2^3$ and $4$",
+            "$e^4 t_2^2$ and $2$",
+            "$t_{2g}^4 e_g^2$ and $4$",
+            "$e^2 t_2^4$ and $2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Oxidation state of iron in $[\\text{FeCl}_4]^{2-}$:\n$$x + 4(-1) = -2 \\implies x = +2$$\n$$\\text{Fe}^{2+}: [\\text{Ar}] 3d^6$$\n2. In a tetrahedral crystal field, the $d$-orbitals split into a lower doubly degenerate $e$ set and an upper triply degenerate $t_2$ set (inversion center is absent, so 'g' subscripts are omitted).\n3. Since $\\Delta_t$ is inherently small ($\\Delta_t = \\frac{4}{9}\\Delta_o < P$), all tetrahedral complexes are high-spin.\n4. Electrons fill as: $e^2 t_2^3 e^1 \\implies e^3 t_2^3$.\n5. The $e$ level contains one pair and one unpaired electron; the $t_2$ level contains three unpaired electrons.\n$$\\text{Total unpaired electrons} = 1 + 3 = 4$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following compounds has the SHORTEST $\\text{C}-\\text{O}$ bond length?",
+          "image": "",
+          "options": [
+            "Free $\\text{CO}$",
+            "$[\\text{Ni}(\\text{CO})_4]$",
+            "$[\\text{Fe}(\\text{CO})_5]$",
+            "$[\\text{V}(\\text{CO})_6]^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In metal carbonyls, $\\pi$-back-donation from the metal into the $\\pi^*$ orbital of $\\text{CO}$ weakens the $\\text{C}-\\text{O}$ bond and increases its bond length relative to free carbon monoxide.\n2. More negative charge on the metal complex increases electron density on the metal, enhancing back-donation into $\\text{CO}$ and lengthening the $\\text{C}-\\text{O}$ bond: $[\\text{V}(\\text{CO})_6]^-$ has the longest $\\text{C}-\\text{O}$ bond.\n3. In free, uncoordinated carbon monoxide ($\\text{CO}$), there is no back-bonding from any metal center. The bond is an unperturbed triple bond ($112.8\\text{ pm}$), which is shorter than the $\\text{C}-\\text{O}$ bond in any metal carbonyl complex."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] A complex $[\\text{M}(\\text{H}_2\\text{O})_6]^{2+}$ has a spin-only magnetic moment of $3.87\\text{ BM}$. The central transition metal ion $\\text{M}^{2+}$ is:",
+          "image": "",
+          "options": [
+            "$\\text{Co}^{2+}$",
+            "$\\text{Cr}^{2+}$",
+            "$\\text{Fe}^{2+}$",
+            "$\\text{Mn}^{2+}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the spin-only magnetic moment:\n$$\\mu_s = \\sqrt{n(n + 2)} = 3.87\\text{ BM} \\implies n = 3\\text{ unpaired electrons}$$\nWater is a weak field ligand, so the complex is high-spin:\n- $\\text{Cr}^{2+}$ ($3d^4$): high-spin $t_{2g}^3 e_g^1 \\implies n = 4$ ($\\mu \\approx 4.90\\text{ BM}$)\n- $\\text{Mn}^{2+}$ ($3d^5$): high-spin $t_{2g}^3 e_g^2 \\implies n = 5$ ($\\mu \\approx 5.92\\text{ BM}$)\n- $\\text{Fe}^{2+}$ ($3d^6$): high-spin $t_{2g}^4 e_g^2 \\implies n = 4$ ($\\mu \\approx 4.90\\text{ BM}$)\n- $\\text{Co}^{2+}$ ($3d^7$): high-spin $t_{2g}^5 e_g^2 \\implies n = 3$ ($\\mu = \\sqrt{3(5)} = \\sqrt{15} \\approx 3.87\\text{ BM}$)\nTherefore, the central metal ion is $\\text{Co}^{2+}$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Why is $[\\text{Sc}(\\text{H}_2\\text{O})_6]^{3+}$ completely colorless, whereas $[\\text{Cr}(\\text{H}_2\\text{O})_6]^{3+}$ is violet?",
+          "image": "",
+          "options": [
+            "$\\text{Sc}^{3+}$ has a $3d^0$ configuration with no $d$-electrons available for $d-d$ transitions",
+            "$\\text{Sc}^{3+}$ undergoes intense charge transfer in the ultraviolet region",
+            "Water acts as a strong field ligand with scandium",
+            "$\\text{Cr}^{3+}$ has a closed shell $d^{10}$ configuration"
+          ],
+          "correctOption": 0,
+          "solution": "Color in coordination complexes typically arises from the absorption of visible light during $d-d$ transitions:\n1. For $[\\text{Sc}(\\text{H}_2\\text{O})_6]^{3+}$: Scandium is in the $+3$ oxidation state ($Z = 21$), with electronic configuration $[\\text{Ar}] 3d^0$. With no $d$-electrons in the valence shell, $d-d$ transitions cannot occur, making the complex colorless.\n2. For $[\\text{Cr}(\\text{H}_2\\text{O})_6]^{3+}$: Chromium is in the $+3$ oxidation state with configuration $[\\text{Ar}] 3d^3$. The three $d$-electrons occupy the $t_{2g}$ set ($t_{2g}^3 e_g^0$) and can undergo excitation into the empty $e_g$ orbitals upon absorbing yellow light, transmitting a violet color."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The geometry and hybridization of the copper complex $[\\text{Cu}(\\text{NH}_3)_4]^{2+}$ according to Valence Bond Theory are:",
+          "image": "",
+          "options": [
+            "Square planar, $dsp^2$",
+            "Tetrahedral, $sp^3$",
+            "Square planar, $sp^2d$",
+            "Tetrahedral, $d^3s$"
+          ],
+          "correctOption": 0,
+          "solution": "In $[\\text{Cu}(\\text{NH}_3)_4]^{2+}$:\n- Copper is in the $+2$ oxidation state: $\\text{Cu}^{2+} = [\\text{Ar}] 3d^9$.\n- X-ray crystallography confirms that $[\\text{Cu}(\\text{NH}_3)_4]^{2+}$ possesses a square planar geometry (due to Jahn-Teller effect on an octahedral precursor).\n- In the classical Valence Bond Theory description, one electron from the $3d$ subshell is promoted to a higher $4p$ (or $4d$) orbital, freeing an inner $3d$ orbital to participate in $dsp^2$ hybridization (or alternatively, $sp^2d$ hybridization using the $4d_{x^2-y^2}$ orbital).\nIn standard JEE convention, it is classified as square planar with $dsp^2$ hybridization."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] In an octahedral crystal field, which of the following pairs of $d$-orbitals forms the higher-energy $e_g$ set?",
+          "image": "",
+          "options": [
+            "$d_{x^2-y^2}$ and $d_{z^2}$",
+            "$d_{xy}$ and $d_{yz}$",
+            "$d_{xy}$ and $d_{zx}$",
+            "$d_{yz}$ and $d_{z^2}$"
+          ],
+          "correctOption": 0,
+          "solution": "In an octahedral complex, the six ligands approach the central metal ion along the Cartesian coordinate axes ($\\pm x, \\pm y, \\pm z$):\n1. The $d_{x^2-y^2}$ and $d_{z^2}$ orbitals have lobes pointing directly along the $x, y,$ and $z$ axes.\n2. Electrons in these orbitals experience greater electrostatic repulsion from the incoming negative ligands, raising them in energy by $+0.6\\ \\Delta_o$ above the barycenter.\n3. This doubly degenerate axial set is designated as the $e_g$ set ($d_{x^2-y^2}, d_{z^2}$).\n4. The $d_{xy}, d_{yz},$ and $d_{zx}$ orbitals point between the axes and form the lower-energy $t_{2g}$ set."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following complexes is DIAMAGNETIC?",
+          "image": "",
+          "options": [
+            "$[\\text{Co}(\\text{NH}_3)_6]^{3+}$",
+            "$[\\text{CoF}_6]^{3-}$",
+            "$[\\text{FeF}_6]^{3-}$",
+            "$[\\text{Mn}(\\text{CN})_6]^{3-}$"
+          ],
+          "correctOption": 0,
+          "solution": "Examine the electronic configurations of the complexes:\n1. $[\\text{Co}(\\text{NH}_3)_6]^{3+}$: $\\text{Co}^{3+}$ has configuration $3d^6$. Ammonia is a strong field ligand for $\\text{Co}^{3+}$ ($\\Delta_o > P$), causing complete electron pairing: $t_{2g}^6 e_g^0$. Because there are zero unpaired electrons ($n = 0$), the complex is diamagnetic.\n2. $[\\text{CoF}_6]^{3-}$: $\\text{Co}^{3+}$ with weak field $\\text{F}^-$, high-spin $t_{2g}^4 e_g^2 \\implies n = 4$ (paramagnetic).\n3. $[\\text{FeF}_6]^{3-}$: $\\text{Fe}^{3+}$ with weak field $\\text{F}^-$, high-spin $t_{2g}^3 e_g^2 \\implies n = 5$ (paramagnetic).\n4. $[\\text{Mn}(\\text{CN})_6]^{3-}$: $\\text{Mn}^{3+}$ ($3d^4$), low-spin $t_{2g}^4 e_g^0 \\implies n = 2$ (paramagnetic).\nTherefore, $[\\text{Co}(\\text{NH}_3)_6]^{3+}$ is diamagnetic."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The crystal field splitting energy ($\\Delta_o$) of a complex depends on which of the following factors?",
+          "image": "",
+          "options": [
+            "Oxidation state of the metal, principal quantum number of $d$-orbitals ($3d < 4d < 5d$), and nature of the ligand",
+            "Nature of the ligand only",
+            "Oxidation state of the metal only",
+            "Only the mass of the central metal atom"
+          ],
+          "correctOption": 0,
+          "solution": "The magnitude of $\\Delta_o$ depends on:\n1. **Nature of the ligand:** Stronger field ligands (higher in the spectrochemical series) cause greater splitting.\n2. **Oxidation state of the metal:** Higher positive charge on the metal draws ligands closer, increasing repulsion and splitting ($\\Delta_o$ for $M^{3+} > M^{2+}$ by $\\approx 50\\%$).\n3. **Principal quantum number ($3d < 4d < 5d$):** Moving from $3d$ to $4d$ to $5d$, orbitals extend further in space, interacting more strongly with ligands ($\\Delta_o$ increases by $\\approx 30-50\\%$ down a triad; $4d$ and $5d$ complexes are almost always low-spin).\n4. **Geometry of the complex:** $\\Delta_t \\approx \\frac{4}{9}\\Delta_o$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] When dimethylglyoxime ($\\text{DMG}$) is added to an ammoniacal solution of nickel(II) chloride, a rosy-red precipitate of $[\\text{Ni}(\\text{dmg})_2]$ is formed. The geometry and magnetic nature of this complex are:",
+          "image": "",
+          "options": [
+            "Square planar and diamagnetic",
+            "Tetrahedral and paramagnetic",
+            "Octahedral and diamagnetic",
+            "Square planar and paramagnetic"
+          ],
+          "correctOption": 0,
+          "solution": "In bis(dimethylglyoximato)nickel(II), $[\\text{Ni}(\\text{dmg})_2]$:\n1. Nickel is in the $+2$ oxidation state: $\\text{Ni}^{2+} = [\\text{Ar}] 3d^8$.\n2. Although $\\text{DMG}$ coordinates through nitrogen atoms, chelation and intramolecular $\\text{O}-\\text{H}\\cdots\\text{O}$ hydrogen bonding stabilize a square planar framework.\n3. The strong ligand field forces pairing of the two $3d$ electrons, giving a low-spin $3d^8$ configuration with one vacant inner $d$-orbital.\n4. The complex uses $dsp^2$ hybridization, adopting a square planar geometry.\n5. With zero unpaired electrons, it is diamagnetic."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the crystal field stabilization energy (CFSE in units of $\\Delta_o$, as an exact magnitude) for $[\\text{Fe}(\\text{CN})_6]^{3-}$ in low-spin state, ignoring pairing energy.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "In $[\\text{Fe}(\\text{CN})_6]^{3-}$:\n- Iron is in the $+3$ oxidation state ($3d^5$).\n- Cyanide is a strong field ligand, forming a low-spin complex:\n$$t_{2g}^5 e_g^0$$\n- Each $t_{2g}$ electron contributes $-0.4\\ \\Delta_o$:\n$$\\text{CFSE} = 5 \\times (-0.4\\ \\Delta_o) = -2.0\\ \\Delta_o$$\nThe magnitude of the CFSE is $2.0$."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the number of unpaired electrons in the tetrahedral complex ion $[\\text{NiCl}_4]^{2-}$.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "1. Oxidation state of nickel in $[\\text{NiCl}_4]^{2-}$:\n$$x + 4(-1) = -2 \\implies x = +2$$\n$$\\text{Ni}^{2+}: [\\text{Ar}] 3d^8$$\n2. For tetrahedral geometry, chloride is a weak field ligand and the splitting is inverted:\n$$e^4 t_2^4$$\n- The lower $e$ orbital set accommodates $4$ paired electrons.\n- The upper $t_2$ orbital set accommodates $4$ electrons, which split as two paired electrons and two unpaired electrons ($t_2^4$).\nThus, the number of unpaired electrons is $2.0$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Calculate the spin-only magnetic moment (in Bohr Magnetons, rounded to two decimal places) of $[\\text{Mn}(\\text{H}_2\\text{O})_6]^{2+}$. (Take $\\sqrt{35} \\approx 5.92$)",
+          "image": "",
+          "correctValue": 5.92,
+          "solution": "In $[\\text{Mn}(\\text{H}_2\\text{O})_6]^{2+}$:\n- Manganese is in the $+2$ oxidation state: $\\text{Mn}^{2+} = [\\text{Ar}] 3d^5$.\n- Water is a weak field ligand, forming a high-spin complex:\n$$t_{2g}^3 e_g^2$$\n- All five $d$-orbitals are singly occupied, so $n = 5$ unpaired electrons.\n$$\\mu_s = \\sqrt{n(n + 2)} = \\sqrt{5(5 + 2)} = \\sqrt{35} \\approx 5.92\\text{ BM}$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] If the crystal field splitting energy for an octahedral complex is $\\Delta_o = 18000\\text{ cm}^{-1}$, calculate the crystal field splitting energy $\\Delta_t$ (in $\\text{cm}^{-1}$) for the corresponding tetrahedral complex with the same metal ion and ligands.",
+          "image": "",
+          "correctValue": 8000.0,
+          "solution": "Using the relation between tetrahedral and octahedral crystal field splitting:\n$$\\Delta_t = \\frac{4}{9}\\ \\Delta_o$$\nSubstitute $\\Delta_o = 18000\\text{ cm}^{-1}$:\n$$\\Delta_t = \\frac{4}{9} \\times 18000 = 4 \\times 2000 = 8000.0\\text{ cm}^{-1}$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Among the following coordination complexes: $[\\text{Ni}(\\text{CO})_4], [\\text{Fe}(\\text{CN})_6]^{4-}, [\\text{Co}(\\text{NH}_3)_6]^{3+}, [\\text{Zn}(\\text{NH}_3)_4]^{2+}, [\\text{Cu}(\\text{NH}_3)_4]^{2+}, [\\text{Fe}(\\text{H}_2\\text{O})_6]^{2+}$, how many are DIAMAGNETIC?",
+          "image": "",
+          "options": [],
+          "correctValue": 4.0,
+          "solution": "Evaluate the magnetic character of each complex:\n1. $[\\text{Ni}(\\text{CO})_4]$: $\\text{Ni}^0 (3d^8 4s^2) \\rightarrow 3d^{10}$ with strong $\\text{CO}$, $sp^3$ tetrahedral, $n = 0 \\implies$ Diamagnetic\n2. $[\\text{Fe}(\\text{CN})_6]^{4-}$: $\\text{Fe}^{2+} (3d^6)$, low-spin $t_{2g}^6 e_g^0$, $n = 0 \\implies$ Diamagnetic\n3. $[\\text{Co}(\\text{NH}_3)_6]^{3+}$: $\\text{Co}^{3+} (3d^6)$, low-spin $t_{2g}^6 e_g^0$, $n = 0 \\implies$ Diamagnetic\n4. $[\\text{Zn}(\\text{NH}_3)_4]^{2+}$: $\\text{Zn}^{2+} (3d^{10})$, completely filled, $n = 0 \\implies$ Diamagnetic\n5. $[\\text{Cu}(\\text{NH}_3)_4]^{2+}$: $\\text{Cu}^{2+} (3d^9)$, $n = 1 \\implies$ Paramagnetic\n6. $[\\text{Fe}(\\text{H}_2\\text{O})_6]^{2+}$: $\\text{Fe}^{2+} (3d^6)$, high-spin $t_{2g}^4 e_g^2$, $n = 4 \\implies$ Paramagnetic\nTotal number of diamagnetic complexes $= 4.0$."
+        }
+      ]
+    }
+  ]
+}

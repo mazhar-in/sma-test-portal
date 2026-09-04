@@ -1,0 +1,361 @@
+{
+  "testId": "jee-main-chem-19-vsepr-and-hybridization",
+  "title": "VSEPR & Hybridization (Valence Bond Theory, Orbital Overlapping, & Molecular Geometries)",
+  "syllabus": "Valence Bond Theory (VBT), directional nature of covalent bonds; Orbital overlapping: head-on (axial) and lateral (sideways) overlaps, sigma (σ) and pi (π) bonds, relative strengths of bonds; Concept of hybridization: sp, sp², sp³, sp³d, sp³d², sp³d³ hybrid orbitals; Resonance and formal charges; Valence Shell Electron Pair Repulsion (VSEPR) theory: postulates, electron-pair repulsions (lp-lp > lp-bp > bp-bp); Determination of steric number; Prediction of shapes and molecular geometries of molecules and polyatomic ions (linear, bent, trigonal planar, pyramidal, T-shaped, see-saw, square planar, square pyramidal, pentagonal bipyramidal); Bond angles, deviations from ideal angles, and Bent's rule",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The hybridization of the central atom and the molecular shape of $\\text{XeF}_4$ and $\\text{SF}_4$ are respectively:",
+          "image": "",
+          "options": [
+            "$sp^3d^2$ (square planar) and $sp^3d$ (see-saw)",
+            "$sp^3d$ (see-saw) and $sp^3d^2$ (square planar)",
+            "$sp^3d^2$ (tetrahedral) and $sp^3d$ (square planar)",
+            "$sp^3$ (tetrahedral) and $sp^3d$ (see-saw)"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $\\text{XeF}_4$:\n- Valence electrons of $\\text{Xe} = 8$\n- Bond pairs ($4$ single bonds with $\\text{F}$) $= 4$\n- Non-bonding electrons $= 8 - 4 = 4 \\implies 2\\text{ lone pairs}$\n- $\\text{Steric Number} = 4 + 2 = 6 \\implies sp^3d^2$ hybridization.\n- Octahedral electron geometry with $2$ axial lone pairs yields a square planar molecular geometry.\n\n2. For $\\text{SF}_4$:\n- Valence electrons of $\\text{S} = 6$\n- Bond pairs ($4$ single bonds with $\\text{F}$) $= 4$\n- Non-bonding electrons $= 6 - 4 = 2 \\implies 1\\text{ lone pair}$\n- $\\text{Steric Number} = 4 + 1 = 5 \\implies sp^3d$ hybridization.\n- Trigonal bipyramidal electron geometry with the lone pair situated in an equatorial position (to minimize $90^\\circ$ repulsions) yields a see-saw molecular geometry."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In which of the following pairs of species do both members have an identical molecular shape and hybridization?",
+          "image": "",
+          "options": [
+            "$\\text{BF}_4^-$ and $\\text{NH}_4^+$",
+            "$\\text{ICl}_4^-$ and $\\text{XeF}_4$",
+            "$\\text{CO}_3^{2-}$ and $\\text{SO}_3^{2-}$",
+            "$\\text{NH}_3$ and $\\text{BF}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "Analyze $\\text{BF}_4^-$ and $\\text{NH}_4^+$:\n1. $\\text{BF}_4^-$: Boron has $3$ valence electrons $+ 1$ negative charge $= 4$. It forms $4$ single bonds with fluorine with zero lone pairs. Steric number $= 4 \\implies sp^3$ hybridization, regular tetrahedral shape.\n2. $\\text{NH}_4^+$: Nitrogen has $5$ valence electrons $- 1$ positive charge $= 4$. It forms $4$ single bonds with hydrogen with zero lone pairs. Steric number $= 4 \\implies sp^3$ hybridization, regular tetrahedral shape.\nBoth species have identical $sp^3$ hybridization and regular tetrahedral shapes."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] According to Valence Bond Theory, which of the following combinations of atomic orbitals results in ZERO overlap (non-bonding) along the internuclear z-axis?",
+          "image": "",
+          "options": [
+            "$s$ and $p_x$",
+            "$s$ and $p_z$",
+            "$p_z$ and $p_z$",
+            "$d_{z^2}$ and $p_z$"
+          ],
+          "correctOption": 0,
+          "solution": "Taking the internuclear axis as the $z$-axis:\n1. The $s$ orbital is spherically symmetric with positive phase ($+$).\n2. The $p_x$ orbital lies perpendicular to the $z$-axis with its nodal plane lying in the $yz$-plane. Its lobes lie above and below the $z$-axis with opposite phases ($+$ and $-$).\n3. When the $s$ orbital approaches along the $z$-axis, the positive overlap with the $(+)$ lobe of $p_x$ is exactly cancelled by the negative overlap with the $(-)$ lobe of $p_x$.\n4. Net overlap integral $= 0$.\nTherefore, the overlap between an $s$ orbital and a $p_x$ orbital along the $z$-axis is a zero overlap (non-bonding)."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The correct order of bond angles in $\\text{CH}_4, \\text{NH}_3,$ and $\\text{H}_2\\text{O}$ is:",
+          "image": "",
+          "options": [
+            "$\\text{CH}_4 > \\text{NH}_3 > \\text{H}_2\\text{O}$",
+            "$\\text{H}_2\\text{O} > \\text{NH}_3 > \\text{CH}_4$",
+            "$\\text{NH}_3 > \\text{CH}_4 > \\text{H}_2\\text{O}$",
+            "$\\text{CH}_4 > \\text{H}_2\\text{O} > \\text{NH}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "All three molecules possess $sp^3$ hybridized central atoms with an ideal tetrahedral angle of $109.5^\\circ$:\n1. $\\text{CH}_4$: $4$ bond pairs, $0$ lone pairs. Symmetrical tetrahedral geometry, bond angle $= 109.5^\\circ$.\n2. $\\text{NH}_3$: $3$ bond pairs, $1$ lone pair. According to VSEPR theory, $\\text{lp}-\\text{bp}$ repulsion is stronger than $\\text{bp}-\\text{bp}$ repulsion, compressing the $\\text{H}-\\text{N}-\\text{H}$ bond angle to $107.8^\\circ$ (approx $107^\\circ$).\n3. $\\text{H}_2\\text{O}$: $2$ bond pairs, $2$ lone pairs. Strong $\\text{lp}-\\text{lp}$ repulsion followed by $\\text{lp}-\\text{bp}$ repulsions compresses the $\\text{H}-\\text{O}-\\text{H}$ bond angle further to $104.5^\\circ$.\nThus: $\\text{CH}_4 (109.5^\\circ) > \\text{NH}_3 (107^\\circ) > \\text{H}_2\\text{O} (104.5^\\circ)$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In a trigonal bipyramidal molecule like $\\text{PCl}_5$, the axial $\\text{P}-\\text{Cl}$ bonds are longer and weaker than the equatorial $\\text{P}-\\text{Cl}$ bonds because:",
+          "image": "",
+          "options": [
+            "Axial bond pairs suffer three $90^\\circ$ repulsions from equatorial bond pairs, whereas equatorial pairs suffer only two $90^\\circ$ repulsions",
+            "Axial bonds are formed by $d$-orbitals only",
+            "Equatorial bonds have more $d$-character than axial bonds",
+            "Axial bonds have greater $s$-character according to Bent's rule"
+          ],
+          "correctOption": 0,
+          "solution": "In $sp^3d$ hybridization (trigonal bipyramidal geometry):\n1. Each axial bond pair lies perpendicular to the equatorial plane, experiencing three $90^\\circ$ repulsions from the three equatorial bond pairs.\n2. Each equatorial bond pair experiences only two $90^\\circ$ repulsions from the two axial bond pairs (the other equatorial bonds are at $120^\\circ$, where repulsion is negligible).\n3. Because the axial electron pairs suffer greater repulsion, the axial bonds are pushed outward, resulting in longer and weaker bonds ($d_{\\text{axial}} = 214\\text{ pm}$ vs $d_{\\text{equatorial}} = 202\\text{ pm}$ in $\\text{PCl}_5$)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The total number of $\\sigma$ and $\\pi$ bonds present in a molecule of tetracyanoethylene, $\\text{C}_2(\\text{CN})_4$, are respectively:",
+          "image": "",
+          "options": [
+            "$9$ and $9$",
+            "$9$ and $8$",
+            "$5$ and $9$",
+            "$8$ and $8$"
+          ],
+          "correctOption": 0,
+          "solution": "Structure of tetracyanoethylene: $(\\text{N}\\equiv\\text{C})_2\\text{C}=\\text{C}(\\text{C}\\equiv\\text{N})_2$.\n1. Count $\\sigma$ bonds:\n- $1$ central $\\text{C}=\\text{C}$ double bond contains $1\\ \\sigma$ bond.\n- $4$ central-carbon to cyano-carbon $\\text{C}-\\text{C}$ single bonds: $4\\ \\sigma$ bonds.\n- $4$ cyano $\\text{C}\\equiv\\text{N}$ triple bonds: each has $1\\ \\sigma$ bond $\\implies 4\\ \\sigma$ bonds.\nTotal $\\sigma$ bonds $= 1 + 4 + 4 = 9$.\n\n2. Count $\\pi$ bonds:\n- $1$ central $\\text{C}=\\text{C}$ double bond contains $1\\ \\pi$ bond.\n- $4$ cyano $\\text{C}\\equiv\\text{N}$ triple bonds: each has $2\\ \\pi$ bonds $\\implies 4 \\times 2 = 8\\ \\pi$ bonds.\nTotal $\\pi$ bonds $= 1 + 8 = 9$.\nThus, there are $9\\ \\sigma$ and $9\\ \\pi$ bonds."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The spatial geometry of $\\text{ClF}_3$ is described as:",
+          "image": "",
+          "options": [
+            "T-shaped",
+            "Trigonal planar",
+            "Trigonal pyramidal",
+            "See-saw"
+          ],
+          "correctOption": 0,
+          "solution": "For $\\text{ClF}_3$:\n- Valence electrons of Chlorine $= 7$\n- $3$ single bonds to Fluorine $= 3\\text{ bond pairs}$\n- Remaining non-bonding electrons $= 7 - 3 = 4 \\implies 2\\text{ lone pairs}$\n- $\\text{Steric Number} = 3 + 2 = 5 \\implies sp^3d$ hybridization.\n- The electron pair geometry is trigonal bipyramidal.\n- To minimize the strongest $\\text{lp}-\\text{lp}$ repulsions, both lone pairs occupy equatorial positions.\n- With two equatorial sites occupied by lone pairs, the remaining three bonding sites (two axial and one equatorial) form a bent T-shaped molecular geometry."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following species has $sp^3d^2$ hybridization with a square planar molecular shape?",
+          "image": "",
+          "options": [
+            "$\\text{ICl}_4^-$",
+            "$\\text{SF}_4$",
+            "$\\text{SiF}_4$",
+            "$\\text{BF}_4^-$"
+          ],
+          "correctOption": 0,
+          "solution": "Examine $\\text{ICl}_4^-$:\n- Valence electrons of Iodine $= 7$\n- Add $1$ electron for the negative charge: $7 + 1 = 8$\n- Bond pairs with $4$ Chlorine atoms $= 4$\n- Non-bonding electrons $= 8 - 4 = 4 \\implies 2\\text{ lone pairs}$\n- $\\text{Steric Number} = 4 + 2 = 6 \\implies sp^3d^2$ hybridization.\n- The $2$ lone pairs occupy mutually trans/axial positions at $180^\\circ$ to minimize repulsions, leaving the four chlorine atoms in an equatorial plane.\n- Molecular geometry is square planar."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] According to Bent's rule, in a molecule with mixed substituents, more electronegative substituents prefer hybrid orbitals having:",
+          "image": "",
+          "options": [
+            "Less $s$-character (more $p$-character)",
+            "More $s$-character (less $p$-character)",
+            "Pure $s$-character only",
+            "Equal $s$ and $p$-character regardless of electronegativity"
+          ],
+          "correctOption": 0,
+          "solution": "Bent's rule states:\n'More electronegative substituents prefer hybrid orbitals having less $s$-character (or greater $p$-character), and more electropositive substituents prefer hybrid orbitals having greater $s$-character.'\nElectronegative atoms pull electron density away from the central atom. Since $p$-orbitals are more directed and extend farther in space with lower electron density at the nucleus than $s$-orbitals, directing $p$-character toward electronegative atoms lowers the system's electronic energy."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The shape of the triiodide ion ($\\text{I}_3^-$) and the hybridization of its central iodine atom are respectively:",
+          "image": "",
+          "options": [
+            "Linear, $sp^3d$",
+            "Bent, $sp^3$",
+            "Linear, $sp$",
+            "T-shaped, $sp^3d$"
+          ],
+          "correctOption": 0,
+          "solution": "For the triiodide ion $\\text{I}_3^-$ (viewed as $\\text{I}-\\text{I}^--\\text{I}$):\n- The central iodine atom has $7$ valence electrons $+ 1$ negative charge $= 8\\text{ electrons}$.\n- It forms $2$ single bonds to the terminal iodine atoms $\\implies 2\\text{ bond pairs}$.\n- Remaining electrons $= 8 - 2 = 6 \\implies 3\\text{ lone pairs}$.\n- $\\text{Steric Number} = 2 + 3 = 5 \\implies sp^3d$ hybridization.\n- The $3$ lone pairs occupy the three equatorial positions in a trigonal bipyramidal geometry at $120^\\circ$ from each other.\n- The two terminal iodine atoms occupy the axial positions at $180^\\circ$, producing a strictly linear molecular shape."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Which of the following statements is INCORRECT regarding the formation of $\\sigma$ and $\\pi$ bonds?",
+          "image": "",
+          "options": [
+            "A $\\pi$ bond is stronger than a $\\sigma$ bond because of larger lateral overlap",
+            "A $\\sigma$ bond is formed by coaxial (head-on) overlap of atomic orbitals",
+            "Free rotation of atoms is permitted around a $\\sigma$ bond, but restricted around a $\\pi$ bond",
+            "A $\\pi$ bond cannot be formed without the prior existence of a $\\sigma$ bond"
+          ],
+          "correctOption": 0,
+          "solution": "1. A $\\sigma$ bond is formed by head-on (coaxial) overlap along the internuclear axis, which allows extensive orbital overlap, resulting in a strong bond with electron density concentrated directly between the two nuclei.\n2. A $\\pi$ bond is formed by lateral (sideways) overlap of parallel $p$-orbitals perpendicular to the internuclear axis. The extent of overlap is inherently smaller and the electron cloud lies above and below the internuclear plane.\nTherefore, a $\\pi$ bond is weaker than a $\\sigma$ bond. Statement A is incorrect."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The $d$-orbital involved in $dsp^2$ hybridization is:",
+          "image": "",
+          "options": [
+            "$d_{x^2-y^2}$",
+            "$d_{z^2}$",
+            "$d_{xy}$",
+            "$d_{xz}$"
+          ],
+          "correctOption": 0,
+          "solution": "$dsp^2$ hybridization produces a square planar geometry lying in the $xy$-plane.\nTo direct hybrid lobes along the positive and negative $x$ and $y$ coordinate axes, the atomic orbitals used must have directional electron density along these axes.\nThus, the combination involves:\n$$s + p_x + p_y + d_{x^2-y^2}$$\nHence, the specific $d$-orbital involved in $dsp^2$ hybridization is $d_{x^2-y^2}$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The hybridization of the central atom and the molecular geometry of $\\text{BrF}_5$ are:",
+          "image": "",
+          "options": [
+            "$sp^3d^2$, square pyramidal",
+            "$sp^3d^2$, trigonal bipyramidal",
+            "$sp^3d^3$, pentagonal planar",
+            "$sp^3d$, see-saw"
+          ],
+          "correctOption": 0,
+          "solution": "For $\\text{BrF}_5$:\n- Valence electrons of Bromine $= 7$\n- $5$ single bonds with Fluorine $\\implies 5\\text{ bond pairs}$\n- Non-bonding electrons $= 7 - 5 = 2 \\implies 1\\text{ lone pair}$\n- $\\text{Steric Number} = 5 + 1 = 6 \\implies sp^3d^2$ hybridization.\n- Octahedral electron-pair arrangement with $1$ lone pair.\n- The resulting molecular geometry is square pyramidal."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In which of the following molecules are all bond lengths NOT equal?",
+          "image": "",
+          "options": [
+            "$\\text{PCl}_5$",
+            "$\\text{CCl}_4$",
+            "$\\text{SF}_6$",
+            "$\\text{BF}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "- In $\\text{CCl}_4$ ($sp^3$, tetrahedral), $\\text{BF}_3$ ($sp^2$, trigonal planar), and $\\text{SF}_6$ ($sp^3d^2$, octahedral), all bond positions are symmetrically equivalent, so all bond lengths are identical.\n- In $\\text{PCl}_5$ ($sp^3d$, trigonal bipyramidal), there are two distinct sets of bonds: $3$ equatorial bonds and $2$ axial bonds. Due to unequal repulsions, the axial bonds ($214\\text{ pm}$) are significantly longer than the equatorial bonds ($202\\text{ pm}$).\nThus, all bond lengths are not equal in $\\text{PCl}_5$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The percentage of $s$-character in the hybrid orbitals of $\\text{BeCl}_2, \\text{BCl}_3,$ and $\\text{CCl}_4$ are respectively:",
+          "image": "",
+          "options": [
+            "$50\\%, 33.3\\%,$ and $25\\%$",
+            "$25\\%, 33.3\\%,$ and $50\\%$",
+            "$33.3\\%, 50\\%,$ and $25\\%$",
+            "$50\\%, 25\\%,$ and $33.3\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "Determine the hybridization for each molecule:\n1. $\\text{BeCl}_2$: Linear, $sp$ hybridized $\\implies \\%\\ s = \\frac{1}{1 + 1} \\times 100 = 50\\%$\n2. $\\text{BCl}_3$: Trigonal planar, $sp^2$ hybridized $\\implies \\%\\ s = \\frac{1}{1 + 2} \\times 100 = 33.33\\%$\n3. $\\text{CCl}_4$: Tetrahedral, $sp^3$ hybridized $\\implies \\%\\ s = \\frac{1}{1 + 3} \\times 100 = 25\\%$\nTherefore, the values are $50\\%, 33.3\\%,$ and $25\\%$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The molecular shape of sulfur dioxide ($\\text{SO}_2$) according to VSEPR theory is:",
+          "image": "",
+          "options": [
+            "Bent (angular) with bond angle slightly less than $120^\\circ$",
+            "Linear with bond angle $180^\\circ$",
+            "Trigonal planar with bond angle $120^\\circ$",
+            "T-shaped with bond angle $90^\\circ$"
+          ],
+          "correctOption": 0,
+          "solution": "For $\\text{SO}_2$:\n- Valence electrons of Sulfur $= 6$\n- Sulfur forms two double bonds (one $\\sigma$ and one $\\pi$ each) with two Oxygen atoms $\\implies 2\\ \\sigma$ bond pairs.\n- Remaining electrons $= 6 - 4 = 2 \\implies 1\\text{ lone pair}$.\n- $\\text{Steric Number} = 2\\ (\\sigma\\text{ bonds}) + 1\\ (\\text{lone pair}) = 3 \\implies sp^2$ hybridization.\n- The electron arrangement is trigonal planar.\n- Because $\\text{lp}-\\text{bp}$ repulsion exceeds $\\text{bp}-\\text{bp}$ repulsion, the ideal $120^\\circ$ bond angle is compressed to approximately $119.5^\\circ$.\n- The molecular shape is bent (angular)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The $d$-orbitals involved in $sp^3d^3$ hybridization (pentagonal bipyramidal geometry, e.g., $\\text{IF}_7$) are:",
+          "image": "",
+          "options": [
+            "$d_{z^2}, d_{x^2-y^2},$ and $d_{xy}$",
+            "$d_{xy}, d_{yz},$ and $d_{zx}$",
+            "$d_{z^2}, d_{yz},$ and $d_{zx}$",
+            "$d_{x^2-y^2}, d_{yz},$ and $d_{xy}$"
+          ],
+          "correctOption": 0,
+          "solution": "In pentagonal bipyramidal hybridization ($sp^3d^3$):\n1. The axial bonds lie along the $z$-axis, utilizing the $p_z$ and $d_{z^2}$ orbitals.\n2. The five equatorial bonds lie in the $xy$-plane at $72^\\circ$ to each other, which requires orbitals directed in the $xy$-plane: $s, p_x, p_y, d_{x^2-y^2},$ and $d_{xy}$.\nThus, the three $d$-orbitals involved in $sp^3d^3$ hybridization are $d_{z^2}, d_{x^2-y^2},$ and $d_{xy}$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following molecules has zero lone pairs on its central atom?",
+          "image": "",
+          "options": [
+            "$\\text{SiCl}_4$",
+            "$\\text{PCl}_3$",
+            "$\\text{SF}_4$",
+            "$\\text{XeF}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate lone pairs on the central atom:\n- $\\text{SiCl}_4$: Silicon has $4$ valence electrons, forming $4$ single bonds with Chlorine $\\implies 0\\text{ lone pairs}$ ($sp^3$, tetrahedral).\n- $\\text{PCl}_3$: Phosphorus has $5$ valence electrons, forming $3$ bonds $\\implies 1\\text{ lone pair}$ ($sp^3$, pyramidal).\n- $\\text{SF}_4$: Sulfur has $6$ valence electrons, forming $4$ bonds $\\implies 1\\text{ lone pair}$ ($sp^3d$, see-saw).\n- $\\text{XeF}_2$: Xenon has $8$ valence electrons, forming $2$ bonds $\\implies 3\\text{ lone pairs}$ ($sp^3d$, linear)."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In which of the following options are the molecules arranged in DECREASING order of their bond angle?",
+          "image": "",
+          "options": [
+            "$\\text{NO}_2^+ > \\text{NO}_2 > \\text{NO}_2^-$",
+            "$\\text{NO}_2^- > \\text{NO}_2 > \\text{NO}_2^+$",
+            "$\\text{NO}_2 > \\text{NO}_2^+ > \\text{NO}_2^-$",
+            "$\\text{NO}_2^+ > \\text{NO}_2^- > \\text{NO}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{NO}_2^+$: $[O=N=O]^+$, steric number $= 2$, $sp$ hybridized, linear geometry $\\implies \\text{bond angle} = 180^\\circ$.\n2. $\\text{NO}_2$: Neutral odd-electron molecule with $1$ single unpaired electron on nitrogen. Steric number $\\approx 3$, $sp^2$ hybridized. A single unpaired electron exerts less repulsive force on bonding pairs than a full lone pair, giving a bond angle of $\\approx 134^\\circ$.\n3. $\\text{NO}_2^-$: Nitrite ion has $1$ full lone pair on nitrogen ($sp^2$). The lone pair exerts strong repulsion on the two bond pairs, compressing the angle to $\\approx 115^\\circ$.\nThus: $\\text{NO}_2^+ (180^\\circ) > \\text{NO}_2 (134^\\circ) > \\text{NO}_2^- (115^\\circ)$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The state of hybridization of carbon atoms $1, 2, 3,$ and $4$ in the molecule $\\text{H}_2\\text{C}=\\text{CH}-\\text{C}\\equiv\\text{CH}$ (numbered from left to right) are:",
+          "image": "",
+          "options": [
+            "$sp^2, sp^2, sp, sp$",
+            "$sp, sp, sp^2, sp^2$",
+            "$sp^2, sp, sp, sp^2$",
+            "$sp^3, sp^2, sp, sp$"
+          ],
+          "correctOption": 0,
+          "solution": "Analyze the hybridization of each carbon:\n- Carbon 1 ($\\text{H}_2\\text{C}=$): forms $2\\ \\sigma$ bonds to $\\text{H}$ and $1\\ \\sigma$ bond to $\\text{C2}$ ($3\\ \\sigma$ bonds, no lone pairs) $\\implies sp^2$.\n- Carbon 2 ($=\\text{CH}-$): forms $1\\ \\sigma$ bond to $\\text{H}$, $1\\ \\sigma$ bond to $\\text{C1}$, and $1\\ \\sigma$ bond to $\\text{C3}$ ($3\\ \\sigma$ bonds, no lone pairs) $\\implies sp^2$.\n- Carbon 3 ($-\\text{C}\\equiv$): forms $1\\ \\sigma$ bond to $\\text{C2}$ and $1\\ \\sigma$ bond to $\\text{C4}$ ($2\\ \\sigma$ bonds, no lone pairs) $\\implies sp$.\n- Carbon 4 ($\\equiv\\text{CH}$): forms $1\\ \\sigma$ bond to $\\text{C3}$ and $1\\ \\sigma$ bond to $\\text{H}$ ($2\\ \\sigma$ bonds, no lone pairs) $\\implies sp$.\nThus, the hybridization sequence is $sp^2, sp^2, sp, sp$."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the total number of lone pairs of electrons on the central xenon atom in the xenon difluoride ($\\text{XeF}_2$) molecule.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "For $\\text{XeF}_2$:\n- Valence electrons of Xenon $= 8$\n- Bond pairs ($2$ single bonds to Fluorine) $= 2$\n- Non-bonding valence electrons $= 8 - 2 = 6$\n- Number of lone pairs $= \\frac{6}{2} = 3.0$\n(The molecule is $sp^3d$ hybridized with $3$ equatorial lone pairs and linear shape)."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the number of $90^\\circ$ bond angles ($\\text{F}-\\text{S}-\\text{F}$) present in an octahedral sulfur hexafluoride ($\\text{SF}_6$) molecule.",
+          "image": "",
+          "correctValue": 12.0,
+          "solution": "In a regular octahedral molecule $\\text{SF}_6$ ($sp^3d^2$):\n- There are $6$ fluorine atoms situated along the $\\pm x, \\pm y, \\pm z$ axes.\n- The total number of pairs of bonds is given by $\\binom{6}{2} = \\frac{6 \\times 5}{2} = 15$ angles.\n- Among these $15$ bond angles, there are $3$ pairs of trans bonds situated opposite to each other at $180^\\circ$ (along $x, y, z$ axes).\n- The remaining angles are all mutually perpendicular ($90^\\circ$ angles):\n$$\\text{Number of } 90^\\circ \\text{ angles} = 15 - 3 = 12.0$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Find the steric number of the central iodine atom in iodine heptafluoride ($\\text{IF}_7$).",
+          "image": "",
+          "correctValue": 7.0,
+          "solution": "In $\\text{IF}_7$:\n- Iodine has $7$ valence electrons.\n- It forms $7$ single covalent bonds with $7$ fluorine atoms.\n- Number of bond pairs $= 7$.\n- Number of lone pairs $= 0$.\n$$\\text{Steric Number} = \\text{Bond pairs} + \\text{Lone pairs} = 7 + 0 = 7.0$$\n(This corresponds to $sp^3d^3$ hybridization with a pentagonal bipyramidal shape)."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Among the following species: $\\text{CO}_2, \\text{SO}_2, \\text{BeCl}_2, \\text{NO}_2^+, \\text{XeF}_2, \\text{I}_3^-, \\text{C}_2\\text{H}_2, \\text{H}_2\\text{O}$, how many have a strictly LINEAR molecular shape?",
+          "image": "",
+          "options": [],
+          "correctValue": 6.0,
+          "solution": "Determine molecular geometry for each species:\n1. $\\text{CO}_2$: $sp$, $0$ lone pairs $\\implies$ Linear\n2. $\\text{SO}_2$: $sp^2$, $1$ lone pair $\\implies$ Bent\n3. $\\text{BeCl}_2$: $sp$, $0$ lone pairs $\\implies$ Linear\n4. $\\text{NO}_2^+$: $sp$, $0$ lone pairs $\\implies$ Linear\n5. $\\text{XeF}_2$: $sp^3d$, $3$ equatorial lone pairs $\\implies$ Linear\n6. $\\text{I}_3^-$: $sp^3d$, $3$ equatorial lone pairs $\\implies$ Linear\n7. $\\text{C}_2\\text{H}_2$: $sp$, $0$ lone pairs $\\implies$ Linear\n8. $\\text{H}_2\\text{O}$: $sp^3$, $2$ lone pairs $\\implies$ Bent\nTotal linear species $= 6.0$ ($\\text{CO}_2, \\text{BeCl}_2, \\text{NO}_2^+, \\text{XeF}_2, \\text{I}_3^-, \\text{C}_2\\text{H}_2$)."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Calculate the formal charge on the central oxygen atom in the ozone ($\\text{O}_3$) Lewis resonance structure: $\\text{O}=\\text{O}^+-\\text{O}^-$.",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "The formal charge is given by:\n$$\\text{Formal Charge} = V - L - \\frac{B}{2}$$\nFor the central oxygen atom in ozone ($\\text{O}=\\ddot{\\text{O}}-\\text{O}$):\n- Valence electrons of free oxygen atom, $V = 6$\n- Non-bonding lone pair electrons on central oxygen, $L = 2$ ($1$ lone pair)\n- Bonding electrons shared by central oxygen, $B = 6$ ($1$ double bond $+ 1$ single bond $= 3$ pairs $= 6$ electrons)\n$$\\text{Formal Charge} = 6 - 2 - \\frac{6}{2} = 6 - 2 - 3 = +1.0$$"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-chem-24-coordination-chemistry-basics",
+  "title": "Coordination Chemistry Basics (Werner's Theory, Ligands, IUPAC Nomenclature, & Isomerism)",
+  "syllabus": "Werner's coordination theory: Primary and secondary valencies, precipitation and conductance studies; Definitions: Coordination entity, central atom/ion, coordination number, coordination sphere, and counter ions; Ligands: Monodentate, bidentate, polydentate, chelating ligands, ambidentate ligands and linkage isomerism, denticity and chelate effect; IUPAC nomenclature of mononuclear coordination compounds; Isomerism in coordination compounds: Structural isomerism (ionization, hydrate/solvate, linkage, coordination isomerism) and Stereoisomerism (geometrical isomerism in square planar [MA2B2, MA2BC, MABCD] and octahedral complexes [MA4B2, MA3B3 - fac/mer], optical isomerism, enantiomers, and plane of symmetry)",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] When $0.1\\text{ mol}$ of $\\text{CoCl}_3 \\cdot 5\\text{NH}_3$ is treated with excess aqueous $\\text{AgNO}_3$ solution, $0.2\\text{ mol}$ of $\\text{AgCl}$ is precipitated immediately. According to Werner's theory, the primary and secondary valencies of cobalt in this coordination complex are respectively:",
+          "image": "",
+          "options": [
+            "$3$ and $6$",
+            "$2$ and $6$",
+            "$3$ and $5$",
+            "$2$ and $5$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moles of $\\text{AgCl}$ precipitated per mole of complex:\n$$\\text{Precipitated } \\text{AgCl} = \\frac{0.2\\text{ mol}}{0.1\\text{ mol}} = 2\\text{ mol}$$\nThis indicates that exactly two chloride ions are present outside the coordination sphere as ionizable counter-ions.\n2. Formulation of the complex:\n$$[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{Cl}_2$$\n3. According to Werner's theory:\n- **Primary valency** corresponds to the oxidation state of the central metal ion: $\\text{Co}^{3+} \\implies \\text{Primary valency} = 3$.\n- **Secondary valency** corresponds to the coordination number (total donor atoms directly bonded to the metal center): $5\\ (\\text{from NH}_3) + 1\\ (\\text{from Cl}^-) = 6$.\nThus, the primary and secondary valencies are $3$ and $6$ respectively."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The correct IUPAC name of the complex $[\\text{Pt}(\\text{NH}_3)_2\\text{Cl}(\\text{NO}_2)]$ is:",
+          "image": "",
+          "options": [
+            "Diamminechloridonitrito-N-platinum(II)",
+            "Diamminechloronitroplatinum(II)",
+            "Diamminechloridonitrito-O-platinum(II)",
+            "Diamminechloronitrito-N-platinum(IV)"
+          ],
+          "correctOption": 0,
+          "solution": "According to IUPAC 2005 rules:\n1. Ligands are listed in alphabetical order:\n- $\\text{NH}_3$: 'diammine'\n- $\\text{Cl}^-$: 'chlorido'\n- $\\text{NO}_2^-$ (bonded through $\\text{N}$): 'nitrito-N'\nAlphabetical sequence: 'ammine' (a) before 'chlorido' (c) before 'nitrito-N' (n).\n2. Oxidation state of platinum:\n$$x + 2(0) + (-1) + (-1) = 0 \\implies x = +2$$\n3. Since the coordination sphere is neutral, the metal retains its English name ('platinum') followed by its Roman numeral oxidation state in parentheses: (II).\nCombining these gives: **Diamminechloridonitrito-N-platinum(II)**."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Which of the following pairs of coordination complexes represents an example of ionization isomerism?",
+          "image": "",
+          "options": [
+            "$[\\text{Co}(\\text{NH}_3)_5\\text{SO}_4]\\text{Br}$ and $[\\text{Co}(\\text{NH}_3)_5\\text{Br}]\\text{SO}_4$",
+            "$[\\text{Cr}(\\text{H}_2\\text{O})_6]\\text{Cl}_3$ and $[\\text{Cr}(\\text{H}_2\\text{O})_5\\text{Cl}]\\text{Cl}_2 \\cdot \\text{H}_2\\text{O}$",
+            "$[\\text{Co}(\\text{NH}_3)_5(\\text{NO}_2)]\\text{Cl}_2$ and $[\\text{Co}(\\text{NH}_3)_5(\\text{ONO})]\\text{Cl}_2$",
+            "$[\\text{Pt}(\\text{NH}_3)_4][\\text{CuCl}_4]$ and $[\\text{Cu}(\\text{NH}_3)_4][\\text{PtCl}_4]$"
+          ],
+          "correctOption": 0,
+          "solution": "Ionization isomerism occurs when an ion inside the coordination sphere exchanges places with an ionizable counter-ion outside the coordination sphere, producing different ions in aqueous solution:\n- In $[\\text{Co}(\\text{NH}_3)_5\\text{SO}_4]\\text{Br}$, the bromide ion is outside the sphere, so it gives a pale yellow precipitate of $\\text{AgBr}$ with $\\text{AgNO}_3(aq)$, but does not precipitate with $\\text{BaCl}_2$.\n- In $[\\text{Co}(\\text{NH}_3)_5\\text{Br}]\\text{SO}_4$, the sulfate ion is outside the sphere, giving a white precipitate of $\\text{BaSO}_4$ with $\\text{BaCl}_2(aq)$, but no precipitate with $\\text{AgNO}_3$.\nHence, they are ionization isomers."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following octahedral complexes exhibits optical isomerism (is chiral and has non-superimposable mirror images)?",
+          "image": "",
+          "options": [
+            "$\\text{cis}-[\\text{Co}(\\text{en})_2\\text{Cl}_2]^+$",
+            "$\\text{trans}-[\\text{Co}(\\text{en})_2\\text{Cl}_2]^+$",
+            "$\\text{trans}-[\\text{Co}(\\text{NH}_3)_4\\text{Cl}_2]^+$",
+            "$\\text{fac}-[\\text{Co}(\\text{NH}_3)_3(\\text{NO}_2)_3]$"
+          ],
+          "correctOption": 0,
+          "solution": "A molecule is optically active if it lacks an improper axis of rotation ($S_n$), which practically corresponds to having neither a plane of symmetry ($\\sigma$) nor a center of inversion ($i$):\n1. $\\text{trans}-[\\text{Co}(\\text{en})_2\\text{Cl}_2]^+$: Has a horizontal mirror plane perpendicular to the trans $\\text{Cl}-\\text{Co}-\\text{Cl}$ axis and a center of inversion; it is achiral and optically inactive.\n2. $\\text{trans}-[\\text{Co}(\\text{NH}_3)_4\\text{Cl}_2]^+$ and $\\text{fac}-[\\text{Co}(\\text{NH}_3)_3(\\text{NO}_2)_3]$: Both possess multiple planes of symmetry and are achiral.\n3. $\\text{cis}-[\\text{Co}(\\text{en})_2\\text{Cl}_2]^+$: Has $C_2$ symmetry but possesses neither a plane of symmetry nor a center of inversion. It exists as a pair of non-superimposable enantiomeric mirror images ($d$- and $l$-forms) and is optically active."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The total number of geometrical isomers possible for the square planar complex $[\\text{Pt}(\\text{NH}_3)(\\text{NH}_2\\text{OH})(\\text{py})(\\text{NO}_2)]^+$ (type $[\\text{MABCD}]$) is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$2$",
+            "$4$",
+            "$6$"
+          ],
+          "correctOption": 0,
+          "solution": "For a square planar complex containing four different monodentate ligands ($[\\text{MABCD}]$):\nTo find the number of geometrical isomers, fix one ligand (say, $A = \\text{NH}_3$) at one corner of the square and vary the ligand placed trans ($180^\\circ$) to it:\n1. Ligand $B$ is placed trans to $A$ (with $C$ and $D$ trans to each other).\n2. Ligand $C$ is placed trans to $A$ (with $B$ and $D$ trans to each other).\n3. Ligand $D$ is placed trans to $A$ (with $B$ and $C$ trans to each other).\nEach configuration yields a distinct geometrical isomer.\nThus, there are exactly $3$ geometrical isomers possible for $[\\text{MABCD}]$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Which of the following ligands is classified as an ambidentate ligand?",
+          "image": "",
+          "options": [
+            "$\\text{SCN}^-$",
+            "$\\text{en}$ (ethane-1,2-diamine)",
+            "$\\text{ox}^{2-}$ (oxalate)",
+            "$\\text{EDTA}^{4-}$"
+          ],
+          "correctOption": 0,
+          "solution": "An ambidentate ligand is a monodentate ligand that possesses two different donor atoms through either of which it can coordinate to the central metal atom/ion:\n- Thiocyanate ($\\text{SCN}^-$): Can coordinate through sulfur ($\\text{M}-\\text{SCN}$, thiocyanato-S) or through nitrogen ($\\text{M}-\\text{NCS}$, thiocyanato-N / isothiocyanato).\n- Other common ambidentate ligands include $\\text{NO}_2^-$ (nitro / nitrito) and $\\text{CN}^-$ (cyano / isocyano).\nLigands like $\\text{en}$ and $\\text{ox}^{2-}$ are symmetrical bidentate chelating ligands, while $\\text{EDTA}^{4-}$ is a hexadentate ligand."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A coordination compound with the empirical formula $\\text{CrCl}_3 \\cdot 6\\text{H}_2\\text{O}$ is dark green in color. When $1\\text{ mole}$ of this compound is treated with excess aqueous $\\text{AgNO}_3$, only $1\\text{ mole}$ of $\\text{AgCl}$ is precipitated. The formulation of this hydrate isomer is:",
+          "image": "",
+          "options": [
+            "$[\\text{Cr}(\\text{H}_2\\text{O})_4\\text{Cl}_2]\\text{Cl} \\cdot 2\\text{H}_2\\text{O}$",
+            "$[\\text{Cr}(\\text{H}_2\\text{O})_5\\text{Cl}]\\text{Cl}_2 \\cdot \\text{H}_2\\text{O}$",
+            "$[\\text{Cr}(\\text{H}_2\\text{O})_6]\\text{Cl}_3$",
+            "$[\\text{Cr}(\\text{H}_2\\text{O})_3\\text{Cl}_3] \\cdot 3\\text{H}_2\\text{O}$"
+          ],
+          "correctOption": 0,
+          "solution": "Hydrate/solvate isomerism of chromium(III) chloride hexahydrate:\n1. Violet: $[\\text{Cr}(\\text{H}_2\\text{O})_6]\\text{Cl}_3$ precipitates $3\\text{ moles}$ of $\\text{AgCl}$ per mole of complex.\n2. Blue-green: $[\\text{Cr}(\\text{H}_2\\text{O})_5\\text{Cl}]\\text{Cl}_2 \\cdot \\text{H}_2\\text{O}$ precipitates $2\\text{ moles}$ of $\\text{AgCl}$.\n3. Dark green: $[\\text{Cr}(\\text{H}_2\\text{O})_4\\text{Cl}_2]\\text{Cl} \\cdot 2\\text{H}_2\\text{O}$ has only one ionizable chloride outside the coordination sphere, precipitating exactly $1\\text{ mole}$ of $\\text{AgCl}$ per mole of complex.\nTherefore, the formulation is $[\\text{Cr}(\\text{H}_2\\text{O})_4\\text{Cl}_2]\\text{Cl} \\cdot 2\\text{H}_2\\text{O}$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The denticity of ethylenediaminetetraacetate ion ($\\text{EDTA}^{4-}$) and the number of chelate rings it forms upon coordinating to a single metal cation are respectively:",
+          "image": "",
+          "options": [
+            "$6$ and $5$",
+            "$6$ and $6$",
+            "$4$ and $4$",
+            "$6$ and $4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{EDTA}^{4-}$ is a hexadentate chelating ligand because it possesses six donor atoms: two amine nitrogen atoms and four carboxylate oxygen atoms.\n2. When $\\text{EDTA}^{4-}$ coordinates to a central metal ion to form an octahedral complex $[M(\\text{EDTA})]^{n-4}$:\n$$\\text{Number of chelate rings} = \\text{Denticity} - 1 = 6 - 1 = 5$$\nIt wraps around the metal cation forming five distinct 5-membered chelate rings (one $\\text{N}-\\text{M}-\\text{N}$ ring and four $\\text{N}-\\text{M}-\\text{O}$ rings).\nThus, the denticity is $6$ and it forms $5$ chelate rings."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An octahedral complex of the type $[\\text{MA}_3\\text{B}_3]$ (where $A$ and $B$ are monodentate ligands) can exist in two geometrical isomeric forms designated as:",
+          "image": "",
+          "options": [
+            "Facial ($fac$) and Meridional ($mer$)",
+            "Cis and Trans only",
+            "Dextro and Laevo only",
+            "Syn and Anti"
+          ],
+          "correctOption": 0,
+          "solution": "For an octahedral complex of formula $[\\text{MA}_3\\text{B}_3]$:\n1. **Facial ($fac$) isomer:** The three identical ligands occupy adjacent positions at the corners of one of the triangular faces of the regular octahedron (all three mutual bond angles are $90^\\circ$).\n2. **Meridional ($mer$) isomer:** The three identical ligands occupy positions that define a plane passing through the metal center (forming a meridian around the octahedron, where two ligands are mutually trans at $180^\\circ$ and the third is at $90^\\circ$).\nHence, the isomers are designated as facial ($fac$) and meridional ($mer$)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The coordination number and oxidation state of cobalt in the complex $[\\text{Co}(\\text{ox})_2(\\text{NH}_3)_2]^-$ are respectively: (where $\\text{ox} = \\text{oxalate}$)",
+          "image": "",
+          "options": [
+            "$6$ and $+3$",
+            "$4$ and $+3$",
+            "$6$ and $+1$",
+            "$4$ and $+1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Coordination Number:\n- Ammine ($\\text{NH}_3$) is a monodentate ligand (denticity $= 1$): $2 \\times 1 = 2$ donor atoms.\n- Oxalate ($\\text{ox}^{2-}$) is a bidentate ligand (denticity $= 2$): $2 \\times 2 = 4$ donor atoms.\n$$\\text{Total coordination number} = 2 + 4 = 6$$\n2. Oxidation state of cobalt:\nLet the oxidation state of cobalt be $x$:\n$$x + 2(-2) + 2(0) = -1$$\n$$x - 4 = -1 \\implies x = +3$$\nThus, the coordination number is $6$ and the oxidation state is $+3$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Which of the following complexes is expected to be the MOST stable in aqueous solution due to the chelate effect?",
+          "image": "",
+          "options": [
+            "$[\\text{Fe}(\\text{ox})_3]^{3-}$",
+            "$[\\text{Fe}(\\text{H}_2\\text{O})_6]^{3+}$",
+            "$[\\text{Fe}(\\text{NH}_3)_6]^{3+}$",
+            "$[\\text{FeCl}_6]^{3-}$"
+          ],
+          "correctOption": 0,
+          "solution": "The **chelate effect** states that complexes containing polydentate chelating ligands are significantly more thermodynamically stable than analogous complexes containing only unidentate ligands:\n1. In $[\\text{Fe}(\\text{ox})_3]^{3-}$, oxalate ($\\text{ox}^{2-}$) is a bidentate chelating ligand that forms three stable five-membered rings with the central $\\text{Fe}^{3+}$ ion.\n2. When a multidentate ligand displaces monodentate ligands (like $\\text{H}_2\\text{O}$), the reaction increases the number of independent free particles in solution:\n$$[\\text{Fe}(\\text{H}_2\\text{O})_6]^{3+} + 3\\text{ox}^{2-} \\rightleftharpoons [\\text{Fe}(\\text{ox})_3]^{3-} + 6\\text{H}_2\\text{O}$$\nThis results in a large positive entropy change ($\\Delta S > 0$), making $\\Delta G = \\Delta H - T\\Delta S$ highly negative and greatly enhancing complex stability."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Geometrical isomerism (cis-trans isomerism) is NOT possible for which of the following coordination complex types?",
+          "image": "",
+          "options": [
+            "Tetrahedral complex of type $[\\text{MA}_2\\text{B}_2]$",
+            "Square planar complex of type $[\\text{MA}_2\\text{B}_2]$",
+            "Octahedral complex of type $[\\text{MA}_4\\text{B}_2]$",
+            "Octahedral complex of type $[\\text{M}(\\text{AA})_2\\text{B}_2]$"
+          ],
+          "correctOption": 0,
+          "solution": "In a regular tetrahedral geometry ($sp^3$):\n- All four ligand positions are symmetrically equivalent to one another.\n- Every ligand is situated at an identical bond angle of $109.5^\\circ$ relative to all other three ligands.\n- There are no cis ($90^\\circ$) or trans ($180^\\circ$) relationships between pairs of ligands.\nTherefore, tetrahedral complexes (such as $[\\text{MA}_2\\text{B}_2]$) cannot exhibit geometrical isomerism."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The correct IUPAC formula for potassium trioxalatochromate(III) is:",
+          "image": "",
+          "options": [
+            "$\\text{K}_3[\\text{Cr}(\\text{C}_2\\text{O}_4)_3]$",
+            "$\\text{K}_2[\\text{Cr}(\\text{C}_2\\text{O}_4)_3]$",
+            "$\\text{K}_3[\\text{Cr}(\\text{C}_2\\text{O}_4)_2]$",
+            "$\\text{K}[\\text{Cr}(\\text{C}_2\\text{O}_4)_3]$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The coordination entity contains:\n- Central metal: Chromium in $+3$ oxidation state ($\\text{Cr}^{3+}$)\n- Ligands: Three oxalate ions, $3\\text{C}_2\\text{O}_4^{2-}$ (each carrying a $-2$ charge)\n2. Net charge on the complex anion:\n$$\\text{Charge} = (+3) + 3(-2) = +3 - 6 = -3$$\nSo the complex anion is $[\\text{Cr}(\\text{C}_2\\text{O}_4)_3]^{3-}$.\n3. To balance the $-3$ charge of the complex anion, three potassium cations ($3\\text{K}^+$) are required as counter-ions.\nThus, the correct formula is $\\text{K}_3[\\text{Cr}(\\text{C}_2\\text{O}_4)_3]$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The isomerism shown by the pair of coordination compounds $[\\text{Co}(\\text{NH}_3)_6][\\text{Cr}(\\text{CN})_6]$ and $[\\text{Cr}(\\text{NH}_3)_6][\\text{Co}(\\text{CN})_6]$ is classified as:",
+          "image": "",
+          "options": [
+            "Coordination isomerism",
+            "Ionization isomerism",
+            "Linkage isomerism",
+            "Coordination position isomerism"
+          ],
+          "correctOption": 0,
+          "solution": "Coordination isomerism arises in compounds where both the cation and the anion are complex coordination entities.\nIt occurs through the interchange of ligands between the cationic and anionic coordination spheres containing different metal centers:\n- In the first compound: $\\text{Co}^{3+}$ is coordinated to $\\text{NH}_3$ ligands (cation) and $\\text{Cr}^{3+}$ is coordinated to $\\text{CN}^-$ ligands (anion).\n- In the second compound: $\\text{Cr}^{3+}$ is coordinated to $\\text{NH}_3$ ligands (cation) and $\\text{Co}^{3+}$ is coordinated to $\\text{CN}^-$ ligands (anion).\nHence, they are **coordination isomers**."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Linkage isomerism is exhibited by coordination complexes containing which of the following types of ligands?",
+          "image": "",
+          "options": [
+            "Ambidentate ligands like $\\text{NO}_2^-$ or $\\text{SCN}^-$",
+            "Polydentate chelating ligands like $\\text{EDTA}^{4-}$",
+            "Neutral monodentate ligands like $\\text{CO}$ or $\\text{NH}_3$",
+            "Bulky aromatic ligands like triphenylphosphine"
+          ],
+          "correctOption": 0,
+          "solution": "Linkage isomerism occurs exclusively when a complex contains an **ambidentate ligand** (a ligand having two or more different potential donor atoms):\nFor example, in the case of the nitrite ligand ($\\text{NO}_2^-$):\n1. It can coordinate via nitrogen: $[\\text{Co}(\\text{NH}_3)_5(\\text{NO}_2)]^{2+}$ (nitro isomer, yellow-brown).\n2. It can coordinate via oxygen: $[\\text{Co}(\\text{NH}_3)_5(\\text{ONO})]^{2+}$ (nitrito isomer, red).\nBecause the connectivity of the ligand changes, linkage isomerism is observed."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] A $0.001\\text{ molal}$ aqueous solution of a platinum(IV) complex $\\text{PtCl}_4 \\cdot 6\\text{NH}_3$ shows a freezing point depression corresponding to the presence of $5\\text{ moles of ions}$ per mole of electrolyte ($i \\approx 5$). The Werner formulation of the complex is:",
+          "image": "",
+          "options": [
+            "$[\\text{Pt}(\\text{NH}_3)_6]\\text{Cl}_4$",
+            "$[\\text{Pt}(\\text{NH}_3)_5\\text{Cl}]\\text{Cl}_3$",
+            "$[\\text{Pt}(\\text{NH}_3)_4\\text{Cl}_2]\\text{Cl}_2$",
+            "$[\\text{Pt}(\\text{NH}_3)_3\\text{Cl}_3]\\text{Cl}$"
+          ],
+          "correctOption": 0,
+          "solution": "From cryoscopic and conductance studies:\n- A van 't Hoff factor of $i \\approx 5$ indicates that $1\\text{ formula unit}$ of the coordination complex dissociates completely into $5\\text{ ions}$ in aqueous solution (1 complex cation $+ 4$ counter anions):\n$$[\\text{Pt}(\\text{NH}_3)_6]\\text{Cl}_4(aq) \\rightarrow [\\text{Pt}(\\text{NH}_3)_6]^{4+}(aq) + 4\\text{Cl}^-(aq)$$\nTotal ions produced $= 1 + 4 = 5$.\nTherefore, all six ammonia molecules are located in the coordination sphere and all four chloride ions act as ionizable counter-ions: $[\\text{Pt}(\\text{NH}_3)_6]\\text{Cl}_4$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The complex $[\\text{Cr}(\\text{NH}_3)_4\\text{Cl}_2]^+$ can exist in two geometrical isomeric forms (cis and trans). Which of the following statements regarding these isomers is TRUE?",
+          "image": "",
+          "options": [
+            "Neither isomer exhibits optical activity because both have internal symmetry planes",
+            "The cis-isomer is optically active, while the trans-isomer is optically inactive",
+            "The trans-isomer is optically active, while the cis-isomer is optically inactive",
+            "Both isomers are optically active and can be resolved into enantiomers"
+          ],
+          "correctOption": 0,
+          "solution": "For an octahedral complex of type $[\\text{MA}_4\\text{B}_2]$ (where $A = \\text{NH}_3$ and $B = \\text{Cl}^-$):\n1. **trans-isomer:** The two $\\text{Cl}^-$ ligands are at $180^\\circ$ to each other along the axial axis, and the four $\\text{NH}_3$ ligands lie in the equatorial plane. This configuration has a horizontal mirror plane, vertical mirror planes, and an inversion center. It is achiral and optically inactive.\n2. **cis-isomer:** The two $\\text{Cl}^-$ ligands are adjacent ($90^\\circ$). There exists a vertical plane of symmetry bisecting the $\\text{Cl}-\\text{Cr}-\\text{Cl}$ angle and containing the trans $\\text{NH}_3-\\text{Cr}-\\text{NH}_3$ axis. Because of this plane of symmetry, the cis-isomer is also achiral and optically inactive.\nTherefore, neither isomer exhibits optical activity."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following compounds is named as potassium hexacyanidoferrate(II)?",
+          "image": "",
+          "options": [
+            "$\\text{K}_4[\\text{Fe}(\\text{CN})_6]$",
+            "$\\text{K}_3[\\text{Fe}(\\text{CN})_6]$",
+            "$\\text{K}_2[\\text{Fe}(\\text{CN})_6]$",
+            "$\\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In potassium hexacyanidoferrate(II):\n- Central metal: Iron in $+2$ oxidation state ($\\text{Fe}^{2+}$)\n- Ligand: Six cyanide ligands, $6\\text{CN}^-$\n2. Charge of the complex anion:\n$$\\text{Charge} = (+2) + 6(-1) = +2 - 6 = -4$$\nSo the complex anion is $[\\text{Fe}(\\text{CN})_6]^{4-}$.\n3. Balancing with potassium counter-ions ($K^+$) requires four potassium ions:\n$$\\text{Formula} = \\text{K}_4[\\text{Fe}(\\text{CN})_6]$$\n(In contrast, $\\text{K}_3[\\text{Fe}(\\text{CN})_6]$ is potassium hexacyanidoferrate(III))."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The total number of stereoisomers (geometrical + optical) possible for the octahedral coordination complex $[\\text{Co}(\\text{en})_2\\text{Cl}_2]^+$ is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$2$",
+            "$4$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "For the complex $[\\text{M}(\\text{AA})_2\\text{B}_2]^+$:\n1. It exhibits two geometrical isomers: **trans** and **cis**.\n2. The **trans-isomer** has an internal plane of symmetry and a center of inversion, so it is achiral and exists as a single optically inactive form ($1\\text{ trans isomer}$).\n3. The **cis-isomer** is asymmetric (chiral) and lacks both a center of inversion and a plane of symmetry. It exists as a pair of non-superimposable enantiomers ($d$- and $l$-forms, $2\\text{ optical isomers}$).\nTotal number of stereoisomers:\n$$\\text{Total} = 1\\text{ (trans)} + 2\\text{ (cis-}d\\text{ and cis-}l) = 3$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In which of the following complex ions is the central metal atom in the ZERO oxidation state?",
+          "image": "",
+          "options": [
+            "$[\\text{Ni}(\\text{CO})_4]$",
+            "$[\\text{Ni}(\\text{CN})_4]^{2-}$",
+            "$[\\text{Fe}(\\text{H}_2\\text{O})_6]^{2+}$",
+            "$[\\text{Pt}(\\text{NH}_3)_4]^{2+}$"
+          ],
+          "correctOption": 0,
+          "solution": "Determine the oxidation state of the metal in each complex:\n- $[\\text{Ni}(\\text{CO})_4]$: Carbon monoxide ($\\text{CO}$) is a neutral ligand (charge $= 0$). The complex is neutral, so:\n$$x + 4(0) = 0 \\implies x = 0$$\nNickel is in the zero oxidation state ($[\\text{Ar}] 3d^{10}$).\n- In $[\\text{Ni}(\\text{CN})_4]^{2-}$: $x + 4(-1) = -2 \\implies x = +2$\n- In $[\\text{Fe}(\\text{H}_2\\text{O})_6]^{2+}$: $x + 6(0) = +2 \\implies x = +2$\n- In $[\\text{Pt}(\\text{NH}_3)_4]^{2+}$: $x + 4(0) = +2 \\implies x = +2$\nThus, the central metal is in the zero oxidation state in $[\\text{Ni}(\\text{CO})_4]$."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the total number of ions produced in aqueous solution per formula unit of the complex hexamminecobalt(III) chloride, $[\\text{Co}(\\text{NH}_3)_6]\\text{Cl}_3$.",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "When $[\\text{Co}(\\text{NH}_3)_6]\\text{Cl}_3$ dissolves in water, the coordination sphere remains intact while the counter-ions dissociate completely:\n$$[\\text{Co}(\\text{NH}_3)_6]\\text{Cl}_3(s) \\xrightarrow{\\text{H}_2\\text{O}} [\\text{Co}(\\text{NH}_3)_6]^{3+}(aq) + 3\\text{Cl}^-(aq)$$\nTotal ions formed:\n$$\\text{Total ions} = 1\\text{ cation} + 3\\text{ anions} = 4.0$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the coordination number of the central iron atom in potassium ferrioxalate, $\\text{K}_3[\\text{Fe}(\\text{C}_2\\text{O}_4)_3]$.",
+          "image": "",
+          "correctValue": 6.0,
+          "solution": "The complex entity is $[\\text{Fe}(\\text{C}_2\\text{O}_4)_3]^{3-}$.\n- Oxalate ($\\text{C}_2\\text{O}_4^{2-}$) is a bidentate ligand, meaning each oxalate provides $2$ donor oxygen atoms.\n- There are $3$ oxalate ligands coordinated to the single central iron atom.\n$$\\text{Coordination number} = 3 \\times 2 = 6.0$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Find the total number of linkage isomers possible for the complex $[\\text{Co}(\\text{NH}_3)_5(\\text{NO}_2)]\\text{Cl}_2$.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "Linkage isomerism in this complex is due to the presence of the ambidentate ligand $\\text{NO}_2^-$:\n1. Coordination through the nitrogen atom: $[\\text{Co}(\\text{NH}_3)_5(\\text{NO}_2)]\\text{Cl}_2$ (nitro isomer)\n2. Coordination through the oxygen atom: $[\\text{Co}(\\text{NH}_3)_5(\\text{ONO})]\\text{Cl}_2$ (nitrito isomer)\nTherefore, there are exactly $2.0$ linkage isomers."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] For an octahedral complex of type $[\\text{MA}_4\\text{B}_2]$ with monodentate ligands $A$ and $B$, find the total number of geometrical isomers.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "In $[\\text{MA}_4\\text{B}_2]$:\n- When the two $B$ ligands are positioned at $90^\\circ$ to each other, the isomer is **cis**.\n- When the two $B$ ligands are positioned at $180^\\circ$ to each other, the isomer is **trans**.\nThus, there are exactly $2.0$ geometrical isomers."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Calculate the oxidation state of iron in sodium nitroprusside, $\\text{Na}_2[\\text{Fe}(\\text{CN})_5(\\text{NO})]$.",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "In sodium nitroprusside ($\\text{Na}_2[\\text{Fe}(\\text{CN})_5(\\text{NO})]$):\n- The complex anion is $[\\text{Fe}(\\text{CN})_5(\\text{NO})]^{2-}$.\n- Cyanide is $\\text{CN}^-$ (charge $= -1$).\n- In this complex, the nitric oxide ligand exists as the nitrosonium cation $\\text{NO}^+$ (charge $= +1$).\nLet the oxidation state of iron be $x$:\n$$x + 5(-1) + (+1) = -2$$\n$$x - 5 + 1 = -2$$\n$$x - 4 = -2 \\implies x = +2.0$$"
+        }
+      ]
+    }
+  ]
+}

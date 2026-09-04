@@ -1,0 +1,361 @@
+{
+  "testId": "jee-main-chem-26-general-organic-chemistry",
+  "title": "General Organic Chemistry (IUPAC, Isomerism, & Electronic Effects)",
+  "syllabus": "IUPAC nomenclature of polyfunctional organic compounds, bicyclic and spiro compounds; Structural isomerism (chain, position, functional, metamerism, and tautomerism - keto-enol, triad systems, factors affecting enol content); Stereoisomerism: Geometrical isomerism (cis-trans, E-Z notation, conditions for GI, number of geometrical isomers), Optical isomerism (chirality, enantiomers, diastereomers, meso compounds, R/S configuration, optical activity, Fischer and Newman projections); Electronic displacements in covalent bonds: Inductive effect (+I and -I effects, applications to acid/base strength), Electromeric effect, Resonance effect and Mesomeric effect (+M and -M, rules of resonance, resonance energy), Hyperconjugation (Baker-Nathan effect, no-bond resonance, stability of carbocations, carbon radicals, and alkenes, heat of hydrogenation); Relative stabilities of reactive intermediates (carbocations, carbanions, free radicals, carbenes); Aromaticity (Hückel's 4n+2 rule, antiaromatic, non-aromatic systems); Acidity and basicity comparison of organic acids, phenols, carboxylic acids, and amines (ortho effect, SIR, SIP)",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The correct IUPAC name of the compound $\\text{CH}_3-\\text{CH}(\\text{OH})-\\text{CH}_2-\\text{CO}-\\text{CH}_2-\\text{COOH}$ is:",
+          "image": "",
+          "options": [
+            "5-Hydroxy-3-oxohexanoic acid",
+            "2-Hydroxy-4-oxohexanoic acid",
+            "5-Hydroxy-3-ketohexanoic acid",
+            "β-Hydroxy-δ-ketohexanoic acid"
+          ],
+          "correctOption": 0,
+          "solution": "1. Identify principal functional group priority:\n$$-\\text{COOH} > -\\text{CO}- (\\text{ketone}) > -\\text{OH} (\\text{alcohol})$$\nThe principal functional group is the carboxylic acid ($-\\text{COOH}$), which defines the suffix '-oic acid' and must be assigned carbon-1.\n2. Numbering the longest carbon chain containing the principal functional group:\n- $\\text{C}_1$: $-\\text{COOH}$\n- $\\text{C}_2$: $-\\text{CH}_2-$\n- $\\text{C}_3$: $-\\text{CO}-$ (keto / oxo group)\n- $\\text{C}_4$: $-\\text{CH}_2-$\n- $\\text{C}_5$: $-\\text{CH}(\\text{OH})-$ (hydroxy group)\n- $\\text{C}_6$: $-\\text{CH}_3$\n3. Prefix substituents in alphabetical order:\n- 'hydroxy' at C-5\n- 'oxo' at C-3\n4. Combining root word, primary suffix, and secondary suffix:\n$$\\text{5-hydroxy} + \\text{3-oxo} + \\text{hexan} + \\text{oic acid} = \\text{5-Hydroxy-3-oxohexanoic acid}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The correct order of stability for the following carbocations is:\n(I) $\\text{CH}_2=\\text{CH}-\\overset{+}{\\text{C}}\\text{H}_2$\n(II) $\\text{CH}_3-\\overset{+}{\\text{C}}\\text{H}-\\text{CH}_3$\n(III) $\\text{C}_6\\text{H}_5-\\overset{+}{\\text{C}}\\text{H}_2$\n(IV) $(\\text{CH}_3)_3\\overset{+}{\\text{C}}$",
+          "image": "",
+          "options": [
+            "(IV) > (III) > (II) > (I)",
+            "(III) > (IV) > (I) > (II)",
+            "(IV) > (I) > (III) > (II)",
+            "(III) > (IV) > (II) > (I)"
+          ],
+          "correctOption": 0,
+          "solution": "Examine the stabilization factors for each carbocation:\n1. (IV) $(\\text{CH}_3)_3\\overset{+}{\\text{C}}$ ($3^\\circ$ carbocation): Stabilized by $9\\ \\alpha$-hydrogens via extensive hyperconjugation and three $+I$ methyl groups. The tertiary butyl carbocation has exceptional thermodynamic stability in solution ($9\\ \\text{hyperconjugative structures} + 3\\ \\text{inductive groups}$), which renders it experimentally more stable than the unsubstituted benzyl carbocation.\n2. (III) $\\text{C}_6\\text{H}_5-\\overset{+}{\\text{C}}\\text{H}_2$ (benzyl cation): Stabilized by resonance across the aromatic $\\pi$-system ($4$ canonical contributing structures).\n3. (II) $\\text{CH}_3-\\overset{+}{\\text{C}}\\text{H}-\\text{CH}_3$ (isopropyl cation, $2^\\circ$): Stabilized by $6\\ \\alpha$-hydrogens via hyperconjugation.\n4. (I) $\\text{CH}_2=\\text{CH}-\\overset{+}{\\text{C}}\\text{H}_2$ (allyl cation, $1^\\circ$): Stabilized by resonance ($2$ canonical structures), but has less extensive delocalization than the benzyl cation and lower hyperconjugative stability than the isopropyl cation in standard aqueous/polar organic measurements.\nThus, the recognized stability order is: (IV) > (III) > (II) > (I)."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Which of the following compounds exhibits the HIGHEST enol content at equilibrium in liquid state?",
+          "image": "",
+          "options": [
+            "$\\text{CH}_3-\\text{CO}-\\text{CH}_2-\\text{CO}-\\text{CH}_3$ (acetylacetone)",
+            "$\\text{CH}_3-\\text{CO}-\\text{CH}_2-\\text{COOCH}_2\\text{CH}_3$ (ethyl acetoacetate)",
+            "$\\text{CH}_3-\\text{CO}-\\text{CH}_3$ (acetone)",
+            "$\\text{CH}_3-\\text{CHO}$ (acetaldehyde)"
+          ],
+          "correctOption": 0,
+          "solution": "Enol content depends on the stabilization of the resulting enol tautomer:\n1. In $\\text{CH}_3-\\text{CO}-\\text{CH}_2-\\text{CO}-\\text{CH}_3$ (acetylacetone, a $\\beta$-dicarbonyl compound), enolization forms a conjugated enol:\n$$\\text{CH}_3-\\text{C}(\\text{OH})=\\text{CH}-\\text{CO}-\\text{CH}_3$$\nThis enol tautomer is stabilized by:\n- Conjugation between the $\\text{C}=\\text{C}$ double bond and the carbonyl $\\text{C}=\\text{O}$ group.\n- Strong intramolecular hydrogen bonding forming a planar, quasi-aromatic six-membered chelate ring.\nIn neat liquid at equilibrium, acetylacetone exists as roughly $75-80\\%$ enol.\n2. In ethyl acetoacetate, ester resonance ($-\\ddot{\\text{O}}-\\text{Et}$ cross-conjugation) diminishes carbonyl electrophilicity, reducing enol content to $\\approx 7-8\\%$.\n3. Monoketones like acetone have negligible enol content ($< 10^{-4}\\%$).\nHence, acetylacetone has the highest enol content."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following molecules/ions is ANTIAROMATIC?",
+          "image": "",
+          "options": [
+            "Cyclopenta-1,3-diene anion (cyclopentadienyl anion)",
+            "Cyclohepta-1,3,5-trienyl cation (tropylium ion)",
+            "Cyclopentadienyl cation",
+            "Cycloocta-1,3,5,7-tetraene (COT)"
+          ],
+          "correctOption": 2,
+          "solution": "Criteria for antiaromaticity:\n- Cyclic, completely conjugated, planar, containing $(4n)\\ \\pi$-electrons ($n = 1, 2, \\dots$).\nEvaluate each species:\n1. Cyclopentadienyl anion: Cyclic, planar, completely conjugated ring with $6\\ \\pi$-electrons ($4n+2$ where $n=1$) $\\implies$ Aromatic.\n2. Tropylium cation (cycloheptatrienyl cation): Planar, 7-membered conjugated ring with $6\\ \\pi$-electrons ($4n+2$ where $n=1$) $\\implies$ Aromatic.\n3. Cyclopentadienyl cation: Cyclic, planar, completely conjugated 5-membered ring with two $\\pi$ bonds and one empty $p$-orbital, giving $4\\ \\pi$-electrons ($4n$ where $n=1$) $\\implies$ Antiaromatic (exceptionally unstable).\n4. Cyclooctatetraene (COT): Has $8\\ \\pi$-electrons, but adopts a non-planar tub-shaped conformation to avoid antiaromatic destabilization $\\implies$ Non-aromatic.\nThus, the cyclopentadienyl cation is antiaromatic."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The correct order of acidic strength for the following substituted phenols is:\n(I) 4-Nitrophenol\n(II) 2,4,6-Trinitrophenol (picric acid)\n(III) 4-Methoxyphenol\n(IV) Phenol",
+          "image": "",
+          "options": [
+            "(II) > (I) > (IV) > (III)",
+            "(II) > (I) > (III) > (IV)",
+            "(I) > (II) > (IV) > (III)",
+            "(II) > (IV) > (I) > (III)"
+          ],
+          "correctOption": 0,
+          "solution": "Acidity of phenols is enhanced by electron-withdrawing groups ($-M, -I$) which stabilize the phenoxide anion by dispersing negative charge, and decreased by electron-donating groups ($+M, +I$):\n1. (II) 2,4,6-Trinitrophenol (picric acid): Three strongly electron-withdrawing $-\\text{NO}_2$ groups at ortho and para positions exert powerful $-M$ and $-I$ effects, stabilizing the phenoxide conjugate base extensively ($pK_a \\approx 0.38$, as acidic as mineral acids).\n2. (I) 4-Nitrophenol: One $-\\text{NO}_2$ group at para position stabilizes the phenoxide ion through strong $-M$ and $-I$ effects ($pK_a \\approx 7.15$).\n3. (IV) Phenol: Unsubstituted ($pK_a \\approx 9.95$).\n4. (III) 4-Methoxyphenol: The para methoxy group ($-\\text{OCH}_3$) donates electron density into the ring through a strong $+M$ resonance effect (which outweighs its weak $-I$ inductive pull), destabilizing the phenoxide anion and lowering acidity ($pK_a \\approx 10.20$).\nTherefore, the correct acidity order is: (II) > (I) > (IV) > (III)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The total number of stereoisomers possible for 2,3-dichlorobutane is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$4$",
+            "$2$",
+            "$6$"
+          ],
+          "correctOption": 0,
+          "solution": "The structure of 2,3-dichlorobutane is $\\text{CH}_3-\\text{CH(Cl)}-\\text{CH(Cl)}-\\text{CH}_3$.\n1. The molecule possesses $n = 2$ chiral centers (C-2 and C-3) with identical terminal substituents ($-\\text{CH}_3$ and $-\\text{Cl}$), making the molecule symmetrical.\n2. For an even number of symmetrical chiral centers ($n = 2$):\n- Number of optically active enantiomeric pairs: $a = 2^{n-1} = 2^{2-1} = 2^1 = 2$ (namely $(2R, 3R)$ and $(2S, 3S)$).\n- Number of meso forms (optically inactive due to internal plane of symmetry): $m = 2^{(n/2) - 1} = 2^{(2/2) - 1} = 2^0 = 1$ (the $(2R, 3S)$ meso form).\n$$\\text{Total stereoisomers} = a + m = 2 + 1 = 3$$"
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The correct order of basicity in aqueous solution for aliphatic amines derived from methyl group is:",
+          "image": "",
+          "options": [
+            "$(\\text{CH}_3)_2\\text{NH} > \\text{CH}_3\\text{NH}_2 > (\\text{CH}_3)_3\\text{N} > \\text{NH}_3$",
+            "$(\\text{CH}_3)_3\\text{N} > (\\text{CH}_3)_2\\text{NH} > \\text{CH}_3\\text{NH}_2 > \\text{NH}_3$",
+            "$(\\text{CH}_3)_2\\text{NH} > (\\text{CH}_3)_3\\text{N} > \\text{CH}_3\\text{NH}_2 > \\text{NH}_3$",
+            "\\text{NH}_3 > \\text{CH}_3\\text{NH}_2 > (\\text{CH}_3)_2\\text{NH} > (\\text{CH}_3)_3\\text{N}"
+          ],
+          "correctOption": 0,
+          "solution": "In aqueous solution, the basicity of aliphatic amines is determined by the interplay of three distinct factors:\n1. **Inductive effect ($+I$):** Increases electron density on nitrogen ($3^\\circ > 2^\\circ > 1^\\circ > \\text{NH}_3$).\n2. **Hydration energy of conjugate ammonium cation:** Smaller, less substituted cations form more hydrogen bonds with water, stabilizing the conjugate acid ($1^\\circ > 2^\\circ > 3^\\circ$).\n3. **Steric hindrance:** Bulky alkyl groups crowd the nitrogen atom, impeding protonation ($1^\\circ > 2^\\circ > 3^\\circ$).\nFor the **methyl group** (small size), the combination of inductive stabilization and hydration makes the secondary amine the strongest base, followed by primary, then tertiary:\n$$2^\\circ > 1^\\circ > 3^\\circ > \\text{NH}_3 \\implies (\\text{CH}_3)_2\\text{NH} > \\text{CH}_3\\text{NH}_2 > (\\text{CH}_3)_3\\text{N} > \\text{NH}_3$$\n(Note: for ethyl group, the order is $2^\\circ > 3^\\circ > 1^\\circ > \\text{NH}_3$)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following alkenes has the LOWEST magnitude of heat of hydrogenation?",
+          "image": "",
+          "options": [
+            "2,3-Dimethylbut-2-ene",
+            "trans-But-2-ene",
+            "cis-But-2-ene",
+            "Ethene"
+          ],
+          "correctOption": 0,
+          "solution": "Heat of hydrogenation ($\\Delta H_{\\text{hydro}}$) is the heat released upon catalytic addition of hydrogen across a double bond:\n$$\\text{Magnitude of Heat of Hydrogenation} \\propto \\frac{1}{\\text{Stability of Alkene}}$$\nAlkene stability increases with the number of $\\alpha$-hydrogens via hyperconjugation:\n1. 2,3-Dimethylbut-2-ene ($(\\text{CH}_3)_2\\text{C}=\\text{C}(\\text{CH}_3)_2$): Tetrasubstituted alkene with $12\\ \\alpha$-hydrogens. It possesses the highest thermodynamic stability among the choices, giving it the lowest potential energy and therefore the lowest heat of hydrogenation.\n2. trans-But-2-ene: Disubstituted with $6\\ \\alpha$-hydrogens, trans configuration (more stable than cis).\n3. cis-But-2-ene: Disubstituted with $6\\ \\alpha$-hydrogens, steric strain between cis methyls.\n4. Ethene: Unsubstituted, zero $\\alpha$-hydrogens, highest heat of hydrogenation per double bond.\nThus, 2,3-dimethylbut-2-ene has the lowest heat of hydrogenation."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The absolute configuration of the chiral centers in the following Fischer projection is:\n```\n      CHO\n       |\nH -----|----- OH\n       |\nHO ----|----- H\n       |\n      CH2OH\n```",
+          "image": "",
+          "options": [
+            "2R, 3S",
+            "2R, 3R",
+            "2S, 3R",
+            "2S, 3S"
+          ],
+          "correctOption": 0,
+          "solution": "Numbering the chain according to IUPAC rules: $\\text{C}_1 = -\\text{CHO}$, $\\text{C}_2 = -\\text{CH(OH)}-$, $\\text{C}_3 = -\\text{CH(OH)}-$, $\\text{C}_4 = -\\text{CH}_2\\text{OH}$.\n1. At Carbon-2:\n- Priority 1: $-\\text{OH}$\n- Priority 2: $-\\text{CHO}$ (bonded to $(O, O, H)$)\n- Priority 3: $-\\text{CH(OH)CH}_2\\text{OH}$ (bonded to $(O, C, H)$)\n- Priority 4: $-\\text{H}$\nTrace sequence $1 \\rightarrow 2 \\rightarrow 3$: $-\\text{OH} \\rightarrow -\\text{CHO} \\rightarrow \\text{C}_3$ moves in a counter-clockwise direction.\nBecause the lowest-priority group ($-\\text{H}$) is on the **horizontal bond**, reverse the apparent configuration: counter-clockwise $\\rightarrow R$.\nThus, C-2 is **2R**.\n2. At Carbon-3:\n- Priority 1: $-\\text{OH}$\n- Priority 2: $-\\text{CH(OH)CHO}$ (bonded to $(O, C, H)$)\n- Priority 3: $-\\text{CH}_2\\text{OH}$ (bonded to $(O, H, H)$)\n- Priority 4: $-\\text{H}$\nTrace sequence $1 \\rightarrow 2 \\rightarrow 3$: $-\\text{OH} \\rightarrow \\text{C}_2 \\rightarrow -\\text{CH}_2\\text{OH}$ moves in a clockwise direction.\nBecause the lowest-priority group ($-\\text{H}$) is on the **horizontal bond**, reverse the apparent configuration: clockwise $\\rightarrow S$.\nThus, C-3 is **3S**.\nCombining both yields: **2R, 3S** (D-threose)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Which of the following resonance structures contributes the MOST to the resonance hybrid of diazomethane ($\\text{CH}_2\\text{N}_2$)?",
+          "image": "",
+          "options": [
+            "$\\text{H}_2\\overset{-}{\\text{C}}-\\overset{+}{\\text{N}}\\equiv\\text{N}$",
+            "$\\text{H}_2\\text{C}=\\overset{+}{\\text{N}}=\\overset{-}{\\text{N}}$",
+            "$\\text{H}_2\\overset{+}{\\text{C}}-\\text{N}=\\overset{-}{\\text{N}}$",
+            "$\\text{H}_2\\overset{-}{\\text{C}}-\\text{N}=\\overset{+}{\\text{N}}$"
+          ],
+          "correctOption": 1,
+          "solution": "Rules for evaluating the relative stability of resonance structures:\n1. Structures with complete octets for all atoms contribute significantly more than structures with incomplete octets.\n2. Structures with fewer formal charges or lower charge separation are more stable.\n3. Negative formal charge is more stable on a more electronegative atom.\nComparing diazomethane canonical forms:\n- Structure A ($\\text{H}_2\\overset{-}{\\text{C}}-\\overset{+}{\\text{N}}\\equiv\\text{N}$): All atoms have complete octets, but negative charge is placed on carbon.\n- Structure B ($\\text{H}_2\\text{C}=\\overset{+}{\\text{N}}=\\overset{-}{\\text{N}}$): All atoms have complete octets, and the negative formal charge resides on the terminal nitrogen, which is more electronegative than carbon (electronegativity of $\\text{N} = 3.0$ vs $\\text{C} = 2.5$).\nTherefore, Structure B contributes the most to the resonance hybrid."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The pair of compounds $\\text{CH}_3-\\text{CH}_2-\\text{CO}-\\text{CH}_2-\\text{CH}_3$ and $\\text{CH}_3-\\text{CO}-\\text{CH}_2-\\text{CH}_2-\\text{CH}_3$ represents an example of:",
+          "image": "",
+          "options": [
+            "Metamerism",
+            "Functional isomerism",
+            "Position isomerism only",
+            "Tautomerism"
+          ],
+          "correctOption": 0,
+          "solution": "Metamerism arises due to an unequal or different distribution of carbon atoms (alkyl chains) attached to either side of the same polyvalent functional group (such as $-\\text{O}-, -\\text{CO}-, -\\text{NH}-, -\\text{S}-$):\n- In pentan-3-one: The carbonyl group ($-\\text{CO}-$) is flanked by two ethyl groups: $\\text{ethyl}-\\text{CO}-\\text{ethyl}$.\n- In pentan-2-one: The carbonyl group is flanked by a methyl group and a propyl group: $\\text{methyl}-\\text{CO}-\\text{propyl}$.\nBecause the nature of the alkyl groups attached to the divalent carbonyl function is different, they are **metamers**."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following free radicals is the MOST stable?",
+          "image": "",
+          "options": [
+            "$(\\text{C}_6\\text{H}_5)_3\\dot{\\text{C}}$ (triphenylmethyl radical)",
+            "$(\\text{CH}_3)_3\\dot{\\text{C}}$ (tert-butyl radical)",
+            "$\\text{CH}_2=\\text{CH}-\\dot{\\text{C}}\\text{H}_2$ (allyl radical)",
+            "$\\text{C}_6\\text{H}_5-\\dot{\\text{C}}\\text{H}_2$ (benzyl radical)"
+          ],
+          "correctOption": 0,
+          "solution": "Free radicals are electron-deficient species ($7$ valence electrons) stabilized by electron donation through resonance delocalization and hyperconjugation:\n1. The triphenylmethyl radical, $(\\text{C}_6\\text{H}_5)_3\\dot{\\text{C}}$, has its odd electron extensively delocalized over three aromatic benzene rings, generating a total of $10$ contributing resonance structures.\n2. In addition, the three phenyl rings form a propeller-like configuration that sterically shields the central radical carbon atom, preventing dimerization.\nThis radical is stable enough to exist in equilibrium with its dimer in solution at room temperature (discovered by Moses Gomberg in 1900)."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The ortho-effect in substituted benzoic acids causes ortho-substituted benzoic acids (e.g., ortho-toluic acid, ortho-nitrobenzoic acid) to be stronger acids than benzoic acid regardless of the electronic nature (+I or -I) of the substituent. This phenomenon is primarily driven by:",
+          "image": "",
+          "options": [
+            "Steric inhibition of resonance (SIR) forcing the carboxyl group out of the benzene ring plane, preventing cross-conjugation",
+            "Hydrogen bonding between the ortho substituent and the carboxylic proton",
+            "Strong electron donation into the carboxylate carbon",
+            "Steric relief in the planar transition state"
+          ],
+          "correctOption": 0,
+          "solution": "The **ortho-effect** in benzoic acids is a steric phenomenon (Steric Inhibition of Resonance, SIR):\n1. In unsubstituted benzoic acid, the planar $-\\text{COOH}$ group is in conjugation with the phenyl ring. The ring donates electron density into the carbonyl group via $+M$ cross-conjugation, which opposes the release of the proton and destabilizes the carboxylate anion.\n2. When a bulky group is present at the ortho position, steric crowding forces the $-\\text{COOH}$ group to rotate out of the plane of the benzene ring.\n3. This loss of planarity disrupts resonance with the aromatic ring, eliminating cross-conjugation.\n4. The negative charge of the resulting carboxylate anion can now be delocalized over the two oxygen atoms via symmetric resonance without competition from the aromatic $\\pi$-system, stabilizing the conjugate base and increasing acidity."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Which of the following conformations of n-butane possesses the LOWEST potential energy (maximum thermodynamic stability)?",
+          "image": "",
+          "options": [
+            "Anti-periplanar (staggered with dihedral angle $180^\\circ$)",
+            "Gauche (staggered with dihedral angle $60^\\circ$)",
+            "Eclipsed (dihedral angle $120^\\circ$)",
+            "Fully eclipsed (dihedral angle $0^\\circ$)"
+          ],
+          "correctOption": 0,
+          "solution": "For rotations about the $\\text{C}_2-\\text{C}_3$ bond of n-butane:\n1. **Anti-periplanar (anti conformation, $\\theta = 180^\\circ$):** The two bulky methyl groups ($-\\text{CH}_3$) are positioned at maximum spatial separation. Both torsional strain and van der Waals steric repulsion are minimized. This is the global energy minimum (lowest potential energy, most stable).\n2. **Gauche conformation ($\theta = 60^\\circ$):** Staggered bonds relieve torsional strain, but the adjacent methyl groups experience steric repulsion ($0.9\\text{ kcal/mol}$ higher in energy than anti).\n3. **Eclipsed ($\theta = 120^\\circ$):** Experiences torsional strain and methyl-hydrogen steric interaction ($3.8\\text{ kcal/mol}$ above anti).\n4. **Fully eclipsed ($\theta = 0^\\circ$):** Maximum steric crowding and torsional strain ($4.5-5.0\\text{ kcal/mol}$ above anti)."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The correct order of stability for the following carbanions is:\n(I) $\\text{HC}\\equiv\\overset{-}{\\text{C}}$\n(II) $\\text{CH}_2=\\overset{-}{\\text{C}}\\text{H}$\n(III) $\\text{CH}_3-\\overset{-}{\\text{C}}\\text{H}_2$\n(IV) $(\\text{CH}_3)_3\\overset{-}{\\text{C}}$",
+          "image": "",
+          "options": [
+            "(I) > (II) > (III) > (IV)",
+            "(IV) > (III) > (II) > (I)",
+            "(I) > (III) > (II) > (IV)",
+            "(II) > (I) > (III) > (IV)"
+          ],
+          "correctOption": 0,
+          "solution": "Carbanion stability is governed primarily by the electronegativity of the carbon atom holding the lone pair (which depends on orbital hybridization and $s$-character) and inductive destabilization by alkyl groups:\n1. Higher $s$-character places the lone pair closer to the positive nucleus, providing electrostatic stabilization:\n- $\\text{HC}\\equiv\\overset{-}{\\text{C}}$: $sp$ hybridized ($50\\%\\ s$-character) $\\implies$ most stable carbanion.\n- $\\text{CH}_2=\\overset{-}{\\text{C}}\\text{H}$: $sp^2$ hybridized ($33.3\\%\\ s$-character).\n- Alkyl carbanions: $sp^3$ hybridized ($25\\%\\ s$-character).\n2. For $sp^3$ carbanions, alkyl groups donate electron density via $+I$ effects, which destabilizes the negatively charged carbon:\n$$\\text{CH}_3-\\overset{-}{\\text{C}}\\text{H}_2\\ (1^\\circ) > (\\text{CH}_3)_3\\overset{-}{\\text{C}}\\ (3^\\circ)$$\nCombining these factors yields:\n$$(I) > (II) > (III) > (IV)$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] In which of the following molecules is the carbon-carbon double bond configuration assigned as the $(E)$-isomer?",
+          "image": "",
+          "options": [
+            "$(E)$-3-Methylpent-2-ene where higher priority groups are on opposite sides of the double bond",
+            "Maleic acid",
+            "cis-But-2-ene",
+            "$(Z)$-1-Bromo-1-chloroprop-1-ene"
+          ],
+          "correctOption": 0,
+          "solution": "According to Cahn-Ingold-Prelog (CIP) priority rules for assigning $E/Z$ configuration:\n1. Assign priorities ($1 = \\text{higher}$, $2 = \\text{lower}$) to the two groups attached to each alkene carbon based on atomic number:\n- If both priority-1 groups lie on the same side of the double bond, the configuration is **$(Z)$** (from German *zusammen*, together).\n- If the two priority-1 groups lie on opposite sides across the reference double bond plane, the configuration is **$(E)$** (from German *entgegen*, opposite).\nOption A correctly identifies that higher-priority groups residing on opposite sides defines the $(E)$-isomer."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The non-planar tub-shaped geometry of cycloocta-1,3,5,7-tetraene (COT) causes it to behave as:",
+          "image": "",
+          "options": [
+            "A non-aromatic conjugated polyene that readily undergoes addition reactions",
+            "An antiaromatic compound with severe paramagnetic ring currents",
+            "An aromatic compound obeying Hückel's rule",
+            "A stable aromatic diradical"
+          ],
+          "correctOption": 0,
+          "solution": "Cycloocta-1,3,5,7-tetraene (COT) has an 8-membered conjugated ring with $8\\ \\pi$-electrons ($4n$ where $n = 2$):\n1. If COT were forced into a planar geometry, it would be antiaromatic and energetically unstable.\n2. To avoid antiaromatic destabilization, COT adopts a flexible, non-planar **tub-shaped** conformation ($D_{2d}$ symmetry).\n3. Because the adjacent $p$-orbitals are twisted out of coplanarity, continuous cyclic overlap cannot occur.\n4. Consequently, COT is **non-aromatic** and behaves chemically like an ordinary open-chain polyene, readily undergoing electrophilic addition reactions (such as bromination and hydrogenation)."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following compounds exhibits tautomerism?",
+          "image": "",
+          "options": [
+            "$\\text{CH}_3-\\text{CH}_2-\\text{NO}_2$ (nitroethane)",
+            "$(\\text{CH}_3)_3\\text{C}-\\text{CHO}$ (pivalaldehyde)",
+            "$\\text{C}_6\\text{H}_5-\\text{CHO}$ (benzaldehyde)",
+            "$\\text{C}_6\\text{H}_5-\\text{CO}-\\text{C}_6\\text{H}_5$ (benzophenone)"
+          ],
+          "correctOption": 0,
+          "solution": "Tautomerism requires the presence of at least one acidic $\\alpha$-hydrogen attached to a $sp^3$-hybridized carbon adjacent to an electron-withdrawing multiple bond group:\n1. In nitroethane ($\\text{CH}_3-\\text{CH}_2-\\text{NO}_2$), the $\\alpha$-carbon has two acidic hydrogens. It readily tautomerizes between the nitro form and the aci-nitro form:\n$$\\text{CH}_3-\\text{CH}_2-\\text{NO}_2 \\rightleftharpoons \\text{CH}_3-\\text{CH}=\\text{N}^+(\\text{O}^-)\\text{OH}$$\n2. In $(\\text{CH}_3)_3\\text{C}-\\text{CHO}$, $\\text{C}_6\\text{H}_5-\\text{CHO}$, and $\\text{C}_6\\text{H}_5-\\text{CO}-\\text{C}_6\\text{H}_5$, there are no $\\alpha$-hydrogens attached to $sp^3$ carbons, so enolization/tautomerism cannot occur."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In electrophilic aromatic substitution, which of the following substituents acts as an ortho/para-director despite being deactivating?",
+          "image": "",
+          "options": [
+            "$-\\text{Cl}$ (chloro)",
+            "$-\\text{NO}_2$ (nitro)",
+            "$-\\text{OCH}_3$ (methoxy)",
+            "$-\\text{CH}_3$ (methyl)"
+          ],
+          "correctOption": 0,
+          "solution": "Halogens (such as $-\\text{Cl}, -\\text{Br}$) exhibit an anomalous dual effect on benzene:\n1. **Inductive effect ($-I$):** Halogens are electronegative, pulling electron density away from the ring via $\\sigma$-bonds. The strong $-I$ effect deactivates the ring towards electrophilic attack compared to benzene (slower rate of substitution).\n2. **Resonance effect ($+M$):** Unshared lone pairs on the halogen atom can be donated into the $\\pi$-system during electrophilic attack. In the Wheland intermediate, lone pair donation specifically stabilizes the positive charge when the electrophile attacks at the **ortho** and **para** positions (providing an extra octet-complete resonance contributor).\nBecause the $+M$ resonance stabilization operates exclusively at ortho/para sites while the $-I$ effect diminishes overall reactivity, halogens act as **deactivating ortho/para-directors**."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The IUPAC name of the compound $\\text{CH}\\equiv\\text{C}-\\text{CH}=\\text{CH}-\\text{CH}=\\text{CH}_2$ is:",
+          "image": "",
+          "options": [
+            "Hexa-1,3-dien-5-yne",
+            "Hexa-3,5-dien-1-yne",
+            "Hex-1-en-4-yne",
+            "Hexa-1,3-diyn-5-ene"
+          ],
+          "correctOption": 0,
+          "solution": "1. The longest continuous carbon chain containing both double and triple bonds contains $6$ carbon atoms $\\implies$ 'hex'.\n2. Numbering rule for conjugated en-ynes: Numbering starts from the end that gives lower locants to the double and triple bonds collectively (lowest set of locants rule):\n- Numbering from right: double bonds at C-1, C-3; triple bond at C-5 $\\implies (1, 3, 5)$\n- Numbering from left: triple bond at C-1; double bonds at C-3, C-5 $\\implies (1, 3, 5)$\n3. Tie-breaker rule: When both numbering directions yield the identical locant set $(1, 3, 5)$, **double bonds take priority over triple bonds** for lower numbering:\n- $\\text{C}_1=\\text{C}_2$: double bond\n- $\\text{C}_3=\\text{C}_4$: double bond\n- $\\text{C}_5\\equiv\\text{C}_6$: triple bond\n4. Suffix assembly: '-en' is written before '-yne', dropping the terminal 'e' of 'ene':\n$$\\text{Hexa-1,3-dien-5-yne}$$"
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the total number of hyperconjugative structures (no-bond resonance structures) possible for the tert-butyl carbocation, $(\\text{CH}_3)_3\\overset{+}{\\text{C}}$.",
+          "image": "",
+          "correctValue": 9.0,
+          "solution": "In the tert-butyl carbocation $(\\text{CH}_3)_3\\overset{+}{\\text{C}}$:\n- The central positively charged carbon has three methyl groups attached to it.\n- Each methyl group contains three $\\alpha$-hydrogens: $3 \\times 3 = 9\\ \\alpha$-hydrogens.\n- Each $\\text{C}-\\text{H}$ $\\sigma$-bond can participate in hyperconjugation with the empty $2p$ orbital of the carbocation center.\n$$\\text{Number of hyperconjugative structures} = \\text{Number of } \\alpha\\text{-hydrogens} = 9.0$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the total number of structural isomers possible for an alkane with the molecular formula $\\text{C}_6\\text{H}_{14}$.",
+          "image": "",
+          "correctValue": 5.0,
+          "solution": "The alkane $\\text{C}_6\\text{H}_{14}$ has 5 constitutional (structural) isomers:\n1. n-Hexane: $\\text{CH}_3-\\text{CH}_2-\\text{CH}_2-\\text{CH}_2-\\text{CH}_2-\\text{CH}_3$\n2. 2-Methylpentane (isohexane): $\\text{CH}_3-\\text{CH}(\\text{CH}_3)-\\text{CH}_2-\\text{CH}_2-\\text{CH}_3$\n3. 3-Methylpentane: $\\text{CH}_3-\\text{CH}_2-\\text{CH}(\\text{CH}_3)-\\text{CH}_2-\\text{CH}_3$\n4. 2,2-Dimethylbutane (neohexane): $\\text{CH}_3-\\text{C}(\\text{CH}_3)_2-\\text{CH}_2-\\text{CH}_3$\n5. 2,3-Dimethylbutane: $\\text{CH}_3-\\text{CH}(\\text{CH}_3)-\\text{CH}(\\text{CH}_3)-\\text{CH}_3$\nThus, there are $5.0$ structural isomers."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Find the total number of $\\pi$-electrons involved in the aromatic delocalized sextet of pyridine ($\\text{C}_5\\text{H}_5\\text{N}$).",
+          "image": "",
+          "correctValue": 6.0,
+          "solution": "In pyridine ($\\text{C}_5\\text{H}_5\\text{N}$):\n- Each of the 5 ring carbon atoms contributes one $p$-electron to the delocalized $\\pi$-system.\n- The nitrogen atom is $sp^2$ hybridized; its unhybridized $2p$ orbital contributes one electron to complete the cyclic conjugated ring system.\n- The lone pair of electrons on nitrogen resides in an $sp^2$ hybrid orbital that lies in the plane of the ring, orthogonal (perpendicular) to the $\\pi$-electron cloud, and does NOT participate in aromatic delocalization.\n$$\\text{Total delocalized } \\pi\\text{-electrons} = 5 + 1 = 6.0$$\n(Satisfies Hückel's $4n+2$ rule with $n = 1$)."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the total number of geometrical isomers possible for hexa-2,4-diene, $\\text{CH}_3-\\text{CH}=\\text{CH}-\\text{CH}=\\text{CH}-\\text{CH}_3$.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "Hexa-2,4-diene is a symmetrical conjugated diene ($n = 2$ stereogenic double bonds with identical terminal methyl groups):\nFormula for a symmetrical molecule with an even number of double bonds ($n = 2$):\n$$\\text{Number of geometrical isomers} = 2^{n-1} + 2^{(n/2) - 1}$$\n$$\\text{Number of isomers} = 2^{2-1} + 2^{(2/2) - 1} = 2^1 + 2^0 = 2 + 1 = 3.0$$\nThe three geometrical isomers are:\n1. $(2E, 4E)$ or trans-trans\n2. $(2Z, 4Z)$ or cis-cis\n3. $(2E, 4Z)$ or trans-cis (which is identical to cis-trans by symmetry)."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Among the following species: benzene, cyclooctatetraene, cyclopentadienyl anion, cyclobutadiene, tropylium cation, naphthalene, and pyrrole, how many are classified as AROMATIC according to Hückel's rule?",
+          "image": "",
+          "options": [],
+          "correctValue": 5.0,
+          "solution": "Apply Hückel's rule ($4n+2\\ \\pi$-electrons in a planar, fully conjugated cyclic ring):\n1. Benzene: $6\\ \\pi$-electrons ($n=1$) $\\implies$ Aromatic\n2. Cyclooctatetraene: non-planar tub $\\implies$ Non-aromatic\n3. Cyclopentadienyl anion: planar, $6\\ \\pi$-electrons ($n=1$) $\\implies$ Aromatic\n4. Cyclobutadiene: planar, $4\\ \\pi$-electrons ($4n$) $\\implies$ Antiaromatic\n5. Tropylium cation: planar, $6\\ \\pi$-electrons ($n=1$) $\\implies$ Aromatic\n6. Naphthalene: planar, $10\\ \\pi$-electrons ($n=2$) $\\implies$ Aromatic\n7. Pyrrole: planar, $6\\ \\pi$-electrons (lone pair delocalized, $n=1$) $\\implies$ Aromatic\nTotal aromatic species $= 5.0$ (benzene, cyclopentadienyl anion, tropylium cation, naphthalene, and pyrrole)."
+        }
+      ]
+    }
+  ]
+}

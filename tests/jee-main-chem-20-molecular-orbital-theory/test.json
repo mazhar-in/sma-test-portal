@@ -1,0 +1,361 @@
+{
+  "testId": "jee-main-chem-20-molecular-orbital-theory",
+  "title": "Molecular Orbital Theory (LCAO Method, MOT Diagrams, Bond Order, & Magnetic Behavior)",
+  "syllabus": "Molecular Orbital Theory (MOT) and its fundamental features; Linear Combination of Atomic Orbitals (LCAO) approximation: conditions for combination of atomic orbitals, bonding and antibonding molecular orbitals; Sigma (σ), Pi (π), and Delta (δ) molecular orbitals, symmetry and nodal planes (gerade and ungerade orbitals); Molecular orbital energy level diagrams for homonuclear diatomic molecules with total electrons ≤ 14 (with s-p mixing: B2, C2, N2) and > 14 (without s-p mixing: O2, F2, Ne2); Electronic configuration of homonuclear and heteronuclear diatomic species (CO, NO, CN-, NO+); Calculation of bond order (BO = 1/2(Nb - Na)); Prediction of magnetic properties (paramagnetism and diamagnetism); Comparison of relative stabilities, bond lengths, and bond dissociation energies of diatomic molecules and their ions (O2, O2+, O2-, O2^2-, N2, N2+, N2-)",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The correct decreasing order of bond order for the species $\\text{O}_2, \\text{O}_2^+, \\text{O}_2^-,$ and $\\text{O}_2^{2-}$ is:",
+          "image": "",
+          "options": [
+            "$\\text{O}_2^+ > \\text{O}_2 > \\text{O}_2^- > \\text{O}_2^{2-}$",
+            "$\\text{O}_2^{2-} > \\text{O}_2^- > \\text{O}_2 > \\text{O}_2^+$",
+            "$\\text{O}_2^+ > \\text{O}_2^- > \\text{O}_2 > \\text{O}_2^{2-}$",
+            "$\\text{O}_2 > \\text{O}_2^+ > \\text{O}_2^- > \\text{O}_2^{2-}$"
+          ],
+          "correctOption": 0,
+          "solution": "For diatomic oxygen species ($> 14\\text{ electrons}$), the MO sequence is:\n$$\\sigma 1s^2 \\sigma^* 1s^2 \\sigma 2s^2 \\sigma^* 2s^2 \\sigma 2p_z^2 (\\pi 2p_x^2 = \\pi 2p_y^2) (\\pi^* 2p_x = \\pi^* 2p_y) \\sigma^* 2p_z$$\nCalculate the bond order using $\\text{BO} = \\frac{N_b - N_a}{2}$:\n1. $\\text{O}_2^+$ ($15e^-$): configuration has $10\\text{ bonding}$ and $5\\text{ antibonding}$ electrons $\\implies \\text{BO} = \\frac{10 - 5}{2} = 2.5$\n2. $\\text{O}_2$ ($16e^-$): $10\\text{ bonding}$ and $6\\text{ antibonding}$ electrons $\\implies \\text{BO} = \\frac{10 - 6}{2} = 2.0$\n3. $\\text{O}_2^-$ ($17e^-$): $10\\text{ bonding}$ and $7\\text{ antibonding}$ electrons $\\implies \\text{BO} = \\frac{10 - 7}{2} = 1.5$\n4. $\\text{O}_2^{2-}$ ($18e^-$): $10\\text{ bonding}$ and $8\\text{ antibonding}$ electrons $\\implies \\text{BO} = \\frac{10 - 8}{2} = 1.0$\nThus, the correct decreasing order is:\n$$\\text{O}_2^+ (2.5) > \\text{O}_2 (2.0) > \\text{O}_2^- (1.5) > \\text{O}_2^{2-} (1.0)$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] According to Molecular Orbital Theory, which of the following diatomic molecules contains ONLY $\\pi$ bonds without any $\\sigma$ bond?",
+          "image": "",
+          "options": [
+            "$\\text{C}_2$",
+            "$\\text{N}_2$",
+            "$\\text{O}_2$",
+            "$\\text{B}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "For $\\text{C}_2$, the total number of electrons is $12$ ($\\le 14\\text{ electrons}$, where $s-p$ mixing occurs):\n$$\\sigma 1s^2 \\sigma^* 1s^2 \\sigma 2s^2 \\sigma^* 2s^2 (\\pi 2p_x^2 = \\pi 2p_y^2)$$\n1. The electrons in $\\sigma 1s^2$ and $\\sigma^* 1s^2$ cancel each other's bonding contribution.\n2. The electrons in $\\sigma 2s^2$ and $\\sigma^* 2s^2$ also cancel each other's bonding contribution.\n3. The remaining $4$ valence electrons reside entirely in the degenerate degenerate pair of bonding $\\pi$-molecular orbitals: $\\pi 2p_x^2$ and $\\pi 2p_y^2$.\n$$\\text{Bond Order} = \\frac{8 - 4}{2} = 2$$\nTherefore, both of the bonds in the dicarbon ($\\text{C}_2$) molecule are $\\pi$ bonds, with no net $\\sigma$ bond present."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Which of the following species is PARAMAGNETIC?",
+          "image": "",
+          "options": [
+            "$\\text{B}_2$",
+            "$\\text{C}_2$",
+            "$\\text{N}_2$",
+            "$\\text{O}_2^{2-}$"
+          ],
+          "correctOption": 0,
+          "solution": "Examine the electronic configurations of the given species:\n1. $\\text{B}_2$ ($10e^-$): $\\sigma 1s^2 \\sigma^* 1s^2 \\sigma 2s^2 \\sigma^* 2s^2 (\\pi 2p_x^1 = \\pi 2p_y^1)$. It possesses $2$ unpaired electrons in the degenerate $\\pi 2p$ orbitals; hence, $\\text{B}_2$ is paramagnetic.\n2. $\\text{C}_2$ ($12e^-$): $\\dots (\\pi 2p_x^2 = \\pi 2p_y^2)$. All electrons are paired (diamagnetic).\n3. $\\text{N}_2$ ($14e^-$): $\\dots (\\pi 2p_x^2 = \\pi 2p_y^2) \\sigma 2p_z^2$. All electrons are paired (diamagnetic).\n4. $\\text{O}_2^{2-}$ ($18e^-$): $\\dots \\sigma 2p_z^2 (\\pi 2p_x^2 = \\pi 2p_y^2) (\\pi^* 2p_x^2 = \\pi^* 2p_y^2)$. All electrons are paired (diamagnetic).\nThus, $\\text{B}_2$ is paramagnetic."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] In which of the following pairs do both species have identical bond orders?",
+          "image": "",
+          "options": [
+            "$\\text{N}_2$ and $\\text{CO}$",
+            "$\\text{O}_2$ and $\\text{NO}$",
+            "$\\text{N}_2^+$ and $\\text{O}_2$",
+            "$\\text{CN}^-$ and $\\text{O}_2^+$"
+          ],
+          "correctOption": 0,
+          "solution": "Count the total number of electrons in each pair:\n- $\\text{N}_2$: $7 + 7 = 14e^- \\implies \\text{BO} = \\frac{10 - 4}{2} = 3.0$\n- $\\text{CO}$: $6 + 8 = 14e^- \\implies \\text{BO} = \\frac{10 - 4}{2} = 3.0$\nBoth $\\text{N}_2$ and $\\text{CO}$ are isoelectronic $14\\text{-electron}$ systems with an identical bond order of $3.0$.\n(For reference: $\\text{O}_2$ has $16e^-, \\text{BO} = 2.0$; $\\text{NO}$ has $15e^-, \\text{BO} = 2.5$; $\\text{N}_2^+$ has $13e^-, \\text{BO} = 2.5$; $\\text{CN}^-$ has $14e^-, \\text{BO} = 3.0$; $\\text{O}_2^+$ has $15e^-, \\text{BO} = 2.5$)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Why does the $\\sigma 2p_z$ bonding molecular orbital have higher energy than the $\\pi 2p_x$ and $\\pi 2p_y$ bonding molecular orbitals in homonuclear diatomic molecules of elements up to nitrogen ($\\text{B}_2, \\text{C}_2, \\text{N}_2$)?",
+          "image": "",
+          "options": [
+            "Significant $s-p$ mixing between $2s$ and $2p_z$ orbitals due to small energy difference",
+            "Higher electronegativity of nitrogen and carbon",
+            "Repulsion between degenerate $\\pi$ molecular orbitals",
+            "Absence of a center of inversion"
+          ],
+          "correctOption": 0,
+          "solution": "In elements with $Z \\le 7$ (such as $\\text{B}, \\text{C}, \\text{N}$), the energy difference between the atomic $2s$ and $2p_z$ orbitals is relatively small.\n1. Because of their compatible symmetry along the internuclear axis, significant mixing ($s-p$ mixing) occurs between the $\\sigma 2s$ and $\\sigma 2p_z$ molecular orbitals.\n2. This interaction pushes the lower-energy $\\sigma^* 2s$ orbital even lower, and pushes the higher-energy $\\sigma 2p_z$ orbital to a higher energy level.\n3. As a result, $\\sigma 2p_z$ is raised above the degenerate $(\\pi 2p_x, \\pi 2p_y)$ orbitals in the energy hierarchy for species with $\\le 14$ electrons.\n4. In $\\text{O}_2$ and $\\text{F}_2$, the energy gap between $2s$ and $2p$ is large, so $s-p$ mixing is negligible, leaving $\\sigma 2p_z$ lower in energy than $(\\pi 2p_x, \\pi 2p_y)$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The highest occupied molecular orbital (HOMO) in the ground state of $\\text{N}_2^+$ is:",
+          "image": "",
+          "options": [
+            "$\\sigma 2p_z$",
+            "$\\pi 2p_x$",
+            "$\\pi^* 2p_x$",
+            "$\\sigma^* 2s$"
+          ],
+          "correctOption": 0,
+          "solution": "$\\text{N}_2^+$ has $7 + 7 - 1 = 13\\text{ electrons}$.\nUsing the MO filling sequence with $s-p$ mixing ($\\le 14\\text{ electrons}$):\n$$\\sigma 1s^2 \\sigma^* 1s^2 \\sigma 2s^2 \\sigma^* 2s^2 (\\pi 2p_x^2 = \\pi 2p_y^2) \\sigma 2p_z^1$$\nThe $13^{\\text{th}}$ electron enters the $\\sigma 2p_z$ molecular orbital.\nTherefore, the highest occupied molecular orbital (HOMO) is $\\sigma 2p_z$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Among the following diatomic species, which one has the SHORTEST bond length?",
+          "image": "",
+          "options": [
+            "$\\text{N}_2$",
+            "$\\text{O}_2$",
+            "$\\text{N}_2^+$",
+            "$\\text{O}_2^+$"
+          ],
+          "correctOption": 0,
+          "solution": "Bond length is inversely proportional to bond order:\n$$\\text{Bond Length} \\propto \\frac{1}{\\text{Bond Order}}$$\nEvaluate the bond orders for the given species:\n- $\\text{N}_2$ ($14e^-$): $\\text{BO} = 3.0$\n- $\\text{O}_2$ ($16e^-$): $\\text{BO} = 2.0$\n- $\\text{N}_2^+$ ($13e^-$): $\\text{BO} = 2.5$\n- $\\text{O}_2^+$ ($15e^-$): $\\text{BO} = 2.5$\nBecause $\\text{N}_2$ possesses the highest bond order ($3.0$, a triple bond), it has the greatest bond strength and the shortest bond length ($110\\text{ pm}$)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The number of nodal planes present in the antibonding $\\pi^* 2p_x$ molecular orbital is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$1$",
+            "$0$",
+            "$3$"
+          ],
+          "correctOption": 0,
+          "solution": "In the formation of $\\pi$ molecular orbitals from $2p_x$ atomic orbitals:\n1. The original atomic $p_x$ orbitals already have one intrinsic nodal plane (the $yz$-plane containing the internuclear axis).\n2. For the bonding $\\pi 2p_x$ orbital, constructive in-phase addition preserves this single nodal plane ($1$ nodal plane).\n3. For the antibonding $\\pi^* 2p_x$ orbital, destructive out-of-phase subtraction introduces an additional nodal plane perpendicular to the internuclear axis between the two nuclei.\nTherefore, the $\\pi^* 2p_x$ orbital has a total of $2$ nodal planes."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] When an electron is removed from $\\text{O}_2$ to form $\\text{O}_2^+$, and from $\\text{N}_2$ to form $\\text{N}_2^+$, the respective bond orders:",
+          "image": "",
+          "options": [
+            "Increase for $\\text{O}_2$ and decrease for $\\text{N}_2$",
+            "Decrease for $\\text{O}_2$ and increase for $\\text{N}_2$",
+            "Increase for both",
+            "Decrease for both"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $\\text{O}_2 \\rightarrow \\text{O}_2^+ + e^-$:\nIn $\\text{O}_2$, the electron is removed from an antibonding molecular orbital ($\\pi^* 2p_x$ or $\\pi^* 2p_y$).\nRemoving an electron from an antibonding orbital increases the net bonding character:\n$$\\text{BO}(\\text{O}_2) = \\frac{10 - 6}{2} = 2.0 \\longrightarrow \\text{BO}(\\text{O}_2^+) = \\frac{10 - 5}{2} = 2.5 \\quad (\\text{Increases})$$\n2. For $\\text{N}_2 \\rightarrow \\text{N}_2^+ + e^-$:\nIn $\\text{N}_2$, the electron is removed from a bonding molecular orbital ($\\sigma 2p_z$).\nRemoving an electron from a bonding orbital decreases bonding character:\n$$\\text{BO}(\\text{N}_2) = \\frac{10 - 4}{2} = 3.0 \\longrightarrow \\text{BO}(\\text{N}_2^+) = \\frac{9 - 4}{2} = 2.5 \\quad (\\text{Decreases})$$\nThus, the bond order increases for $\\text{O}_2$ and decreases for $\\text{N}_2$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Which of the following species does NOT exist as a stable diatomic molecule under standard conditions according to Molecular Orbital Theory?",
+          "image": "",
+          "options": [
+            "$\\text{Be}_2$",
+            "$\\text{Li}_2$",
+            "$\\text{B}_2$",
+            "$\\text{He}_2^+$"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate the bond order for each species:\n- $\\text{Be}_2$ ($8e^-$): $\\sigma 1s^2 \\sigma^* 1s^2 \\sigma 2s^2 \\sigma^* 2s^2$\n$$\\text{Bond Order} = \\frac{N_b - N_a}{2} = \\frac{4 - 4}{2} = 0$$\nA bond order of zero indicates that there is no net stabilizing attractive force between the two beryllium atoms, meaning $\\text{Be}_2$ does not exist as a stable covalent molecule.\n(In comparison: $\\text{Li}_2$ has $\\text{BO} = 1.0$, $\\text{B}_2$ has $\\text{BO} = 1.0$, and $\\text{He}_2^+$ has $\\text{BO} = 0.5$)."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The spin-only magnetic moment of $\\text{O}_2$ molecule in its ground state is: (Take $\\sqrt{8} \\approx 2.83$)",
+          "image": "",
+          "options": [
+            "$2.83\\text{ BM}$",
+            "$1.73\\text{ BM}$",
+            "$0.00\\text{ BM}$",
+            "$3.87\\text{ BM}$"
+          ],
+          "correctOption": 0,
+          "solution": "The valence MO configuration of $\\text{O}_2$ ($16e^-$) is:\n$$\\sigma 2s^2 \\sigma^* 2s^2 \\sigma 2p_z^2 (\\pi 2p_x^2 = \\pi 2p_y^2) (\\pi^* 2p_x^1 = \\pi^* 2p_y^1)$$\nAccording to Hund's rule, the two electrons in the degenerate antibonding $\\pi^*$ level occupy separate orbitals with parallel spins, giving $n = 2$ unpaired electrons.\nSpin-only magnetic moment formula:\n$$\\mu_s = \\sqrt{n(n + 2)}\\text{ BM} = \\sqrt{2(2 + 2)} = \\sqrt{8} \\approx 2.83\\text{ BM}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following molecular orbitals is classified as gerade ($g$, centrosymmetric)?",
+          "image": "",
+          "options": [
+            "$\\sigma 2p_z$",
+            "$\\sigma^* 2s$",
+            "$\\pi 2p_x$",
+            "$\\sigma^* 2p_z$"
+          ],
+          "correctOption": 0,
+          "solution": "A molecular orbital is designated as gerade ($g$) if the wave function sign remains identical upon inversion through the center of symmetry (inversion center):\n1. $\\sigma$ bonding orbitals formed by $s$ or $p_z$ have electron density concentrated symmetrically at the center: sign does not change upon inversion $\\implies gerade\\ (g)$. Thus, $\\sigma 2p_z$ is gerade.\n2. $\\sigma^*$ antibonding orbitals have opposite phases on either side of the nodal center $\\implies ungerade\\ (u)$.\n3. $\\pi$ bonding orbitals have opposite phases above and below the internuclear axis: inverting through the center changes sign $\\implies ungerade\\ (u)$.\n4. $\\pi^*$ antibonding orbitals have identical signs diagonally opposite across the center $\\implies gerade\\ (g)$.\nHence, $\\sigma 2p_z$ is gerade."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The bond order and magnetic behavior of the cyanide anion ($\\text{CN}^-$) are respectively:",
+          "image": "",
+          "options": [
+            "$3$ and diamagnetic",
+            "$2.5$ and paramagnetic",
+            "$3$ and paramagnetic",
+            "$2$ and diamagnetic"
+          ],
+          "correctOption": 0,
+          "solution": "Count the total number of electrons in $\\text{CN}^-$:\n$$\\text{Total electrons} = 6\\ (\\text{C}) + 7\\ (\\text{N}) + 1\\ (\\text{negative charge}) = 14\\text{ electrons}$$\nThis is isoelectronic with $\\text{N}_2$.\nUsing the MO filling sequence for $\\le 14\\text{ electrons}$:\n$$\\sigma 1s^2 \\sigma^* 1s^2 \\sigma 2s^2 \\sigma^* 2s^2 (\\pi 2p_x^2 = \\pi 2p_y^2) \\sigma 2p_z^2$$\n$$\\text{Bond Order} = \\frac{N_b - N_a}{2} = \\frac{10 - 4}{2} = 3$$\nBecause all $14$ electrons are fully paired up with opposite spins, the ion is diamagnetic."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In the formation of homonuclear diatomic molecules, which of the following combinations of atomic orbitals forms a $\\sigma$ molecular orbital (taking $z$-axis as internuclear axis)?",
+          "image": "",
+          "options": [
+            "$2p_z + 2p_z$",
+            "$2p_x + 2p_x$",
+            "$2p_y + 2p_y$",
+            "$2p_x + 2p_y$"
+          ],
+          "correctOption": 0,
+          "solution": "By standard IUPAC convention, the internuclear axis is designated as the $z$-axis:\n1. The $2p_z$ orbitals point directly along the $z$-axis. When they overlap head-on (coaxially), they form cylindrical electron density centered along the bond axis, producing a $\\sigma 2p_z$ bonding (or $\\sigma^* 2p_z$ antibonding) molecular orbital.\n2. The $2p_x$ and $2p_y$ orbitals lie perpendicular to the internuclear axis, undergoing lateral (sideways) overlap to form $\\pi 2p_x$ and $\\pi 2p_y$ molecular orbitals."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] For the nitrogen species $\\text{N}_2, \\text{N}_2^+,$ and $\\text{N}_2^-$, the correct order of bond dissociation energies is:",
+          "image": "",
+          "options": [
+            "$\\text{N}_2 > \\text{N}_2^+ > \\text{N}_2^-$",
+            "$\\text{N}_2 > \\text{N}_2^- > \\text{N}_2^+$",
+            "$\\text{N}_2^+ > \\text{N}_2 > \\text{N}_2^-$",
+            "$\\text{N}_2^- > \\text{N}_2^+ > \\text{N}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate bond orders:\n- $\\text{N}_2$ ($14e^-$): $\\text{BO} = 3.0$\n- $\\text{N}_2^+$ ($13e^-$): $\\text{BO} = \\frac{9 - 4}{2} = 2.5$\n- $\\text{N}_2^-$ ($15e^-$): $\\text{BO} = \\frac{10 - 5}{2} = 2.5$\nComparing $\\text{N}_2^+$ and $\\text{N}_2^-$:\nBoth have an identical bond order of $2.5$. However, $\\text{N}_2^-$ has an extra electron in the antibonding orbital $(\\pi^* 2p)$, which exerts an additional destabilizing repulsive effect compared to $\\text{N}_2^+$ (where the lost electron was from a bonding orbital, leaving only $4$ antibonding electrons).\nTherefore, $\\text{N}_2^+$ is slightly more stable and has a higher bond dissociation energy than $\\text{N}_2^-$:\n$$\\text{N}_2 > \\text{N}_2^+ > \\text{N}_2^-$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] What is the magnetic nature of nitric oxide ($\\text{NO}$) in the gaseous state and liquid/solid state respectively?",
+          "image": "",
+          "options": [
+            "Paramagnetic in gaseous state, diamagnetic in liquid/solid state due to dimerization",
+            "Diamagnetic in gaseous state, paramagnetic in liquid/solid state",
+            "Paramagnetic in all physical states",
+            "Diamagnetic in all physical states"
+          ],
+          "correctOption": 0,
+          "solution": "Nitric oxide ($\\text{NO}$) has $7 + 8 = 15\\text{ valence electrons}$ (an odd-electron molecule):\n1. In the gaseous state, it has one unpaired electron residing in the $\\pi^* 2p$ antibonding molecular orbital, making it paramagnetic.\n2. In the liquid and solid states, pairs of $\\text{NO}$ molecules associate to form loose dimers $(\\text{N}_2\\text{O}_2)$ by pairing their odd electrons, rendering liquid and solid nitric oxide diamagnetic."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The nitrosonium ion ($\\text{NO}^+$) has a bond order of:",
+          "image": "",
+          "options": [
+            "$3.0$",
+            "$2.5$",
+            "$2.0$",
+            "$1.5$"
+          ],
+          "correctOption": 0,
+          "solution": "Count the total number of electrons in $\\text{NO}^+$:\n$$\\text{Total electrons} = 7\\ (\\text{N}) + 8\\ (\\text{O}) - 1 = 14\\text{ electrons}$$\nThis ion is isoelectronic with $\\text{N}_2$ and $\\text{CO}$.\n$$\\text{Bond Order} = \\frac{N_b - N_a}{2} = \\frac{10 - 4}{2} = 3.0$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following diatomic molecules is DIAMAGNETIC with a bond order of $1$?",
+          "image": "",
+          "options": [
+            "$\\text{Li}_2$",
+            "$\\text{B}_2$",
+            "$\\text{O}_2^{2-}$",
+            "Both $\\text{Li}_2$ and $\\text{O}_2^{2-}$"
+          ],
+          "correctOption": 0,
+          "solution": "Analyze the species:\n1. $\\text{Li}_2$ ($6e^-$): $\\sigma 1s^2 \\sigma^* 1s^2 \\sigma 2s^2 \\implies \\text{BO} = \\frac{4 - 2}{2} = 1.0$. All electrons are paired (diamagnetic).\n2. $\\text{B}_2$ ($10e^-$): $\\text{BO} = 1.0$, but has two unpaired electrons in $\\pi 2p$ (paramagnetic).\n3. $\\text{O}_2^{2-}$ ($18e^-$): $\\text{BO} = \\frac{10 - 8}{2} = 1.0$. All electrons are paired (diamagnetic).\nBoth $\\text{Li}_2$ and $\\text{O}_2^{2-}$ are diamagnetic with a bond order of $1.0$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The lowest unoccupied molecular orbital (LUMO) in the ground state of $\\text{C}_2$ is:",
+          "image": "",
+          "options": [
+            "$\\sigma 2p_z$",
+            "$\\pi^* 2p_x$",
+            "$\\pi 2p_x$",
+            "$\\sigma^* 2s$"
+          ],
+          "correctOption": 0,
+          "solution": "The electronic configuration of $\\text{C}_2$ ($12e^-$) with $s-p$ mixing is:\n$$\\sigma 1s^2 \\sigma^* 1s^2 \\sigma 2s^2 \\sigma^* 2s^2 (\\pi 2p_x^2 = \\pi 2p_y^2)$$\n1. The highest occupied molecular orbitals (HOMO) are the degenerate pair $\\pi 2p_x$ and $\\pi 2p_y$.\n2. The next orbital in the energy hierarchy that is completely vacant is the $\\sigma 2p_z$ molecular orbital.\nTherefore, the lowest unoccupied molecular orbital (LUMO) is $\\sigma 2p_z$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An electron is added to the $\\text{O}_2$ molecule to form superoxide ion $\\text{O}_2^-$. The incoming electron enters which molecular orbital?",
+          "image": "",
+          "options": [
+            "$\\pi^* 2p$",
+            "$\\pi 2p$",
+            "$\\sigma 2p_z$",
+            "$\\sigma^* 2p_z$"
+          ],
+          "correctOption": 0,
+          "solution": "The ground-state electron configuration of neutral $\\text{O}_2$ ($16e^-$) is:\n$$\\sigma 1s^2 \\sigma^* 1s^2 \\sigma 2s^2 \\sigma^* 2s^2 \\sigma 2p_z^2 (\\pi 2p_x^2 = \\pi 2p_y^2) (\\pi^* 2p_x^1 = \\pi^* 2p_y^1)$$\nThe singly occupied orbitals are the degenerate $\\pi^* 2p$ antibonding orbitals.\nWhen an additional electron is introduced to form $\\text{O}_2^-$ ($17e^-$), it pairs up in one of these partially filled antibonding orbitals (forming $\\pi^* 2p_x^2 = \\pi^* 2p_y^1$).\nThus, the electron enters a $\\pi^* 2p$ orbital."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the bond order of the peroxide ion ($\\text{O}_2^{2-}$).",
+          "image": "",
+          "correctValue": 1.0,
+          "solution": "Total electrons in $\\text{O}_2^{2-} = 8 + 8 + 2 = 18\\text{ electrons}$.\nMO configuration:\n$$\\sigma 1s^2 \\sigma^* 1s^2 \\sigma 2s^2 \\sigma^* 2s^2 \\sigma 2p_z^2 (\\pi 2p_x^2 = \\pi 2p_y^2) (\\pi^* 2p_x^2 = \\pi^* 2p_y^2)$$\n- Number of bonding electrons ($N_b$) $= 2 + 2 + 2 + 4 = 10$\n- Number of antibonding electrons ($N_a$) $= 2 + 2 + 4 = 8$\n$$\\text{Bond Order} = \\frac{N_b - N_a}{2} = \\frac{10 - 8}{2} = \\frac{2}{2} = 1.0$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the total number of unpaired electrons present in the ground state of a diatomic boron molecule ($\\text{B}_2$).",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "Total electrons in $\\text{B}_2 = 5 + 5 = 10\\text{ electrons}$.\nUsing the sequence with $s-p$ mixing:\n$$\\sigma 1s^2 \\sigma^* 1s^2 \\sigma 2s^2 \\sigma^* 2s^2 (\\pi 2p_x^1 = \\pi 2p_y^1)$$\nThe last two electrons occupy the degenerate $\\pi 2p_x$ and $\\pi 2p_y$ orbitals singly with parallel spins according to Hund's rule.\nTherefore, the number of unpaired electrons is $2.0$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Among the following species: $\\text{H}_2^+, \\text{He}_2, \\text{Li}_2, \\text{Be}_2, \\text{B}_2, \\text{C}_2, \\text{N}_2, \\text{O}_2, \\text{F}_2, \\text{Ne}_2$, how many are PARAMAGNETIC in their ground state?",
+          "image": "",
+          "options": [],
+          "correctValue": 3.0,
+          "solution": "Evaluate magnetic behavior for each species:\n1. $\\text{H}_2^+$ ($1e^-$): $\\sigma 1s^1$ (1 unpaired electron $\\implies$ paramagnetic)\n2. $\\text{He}_2$ ($4e^-$): does not exist ($\text{BO} = 0$)\n3. $\\text{Li}_2$ ($6e^-$): $\\dots \\sigma 2s^2$ (diamagnetic)\n4. $\\text{Be}_2$ ($8e^-$): does not exist ($\text{BO} = 0$)\n5. $\\text{B}_2$ ($10e^-$): $\\dots \\pi 2p_x^1 = \\pi 2p_y^1$ (2 unpaired electrons $\\implies$ paramagnetic)\n6. $\\text{C}_2$ ($12e^-$): $\\dots \\pi 2p_x^2 = \\pi 2p_y^2$ (diamagnetic)\n7. $\\text{N}_2$ ($14e^-$): all paired (diamagnetic)\n8. $\\text{O}_2$ ($16e^-$): $\\dots \\pi^* 2p_x^1 = \\pi^* 2p_y^1$ (2 unpaired electrons $\\implies$ paramagnetic)\n9. $\\text{F}_2$ ($18e^-$): all paired (diamagnetic)\n10. $\\text{Ne}_2$ ($20e^-$): does not exist ($\text{BO} = 0$)\nTotal paramagnetic species $= 3.0$ ($\\text{H}_2^+, \\text{B}_2, \\text{O}_2$)."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the bond order of the carbon monoxide cation ($\\text{CO}^+$) in its ground state (rounded to one decimal place).",
+          "image": "",
+          "correctValue": 3.5,
+          "solution": "In carbon monoxide ($\\text{CO}, 14e^-$), the highest occupied molecular orbital (HOMO, $\\sigma 2s^*$-derived non-bonding orbital with slight antibonding character) loses an electron to form $\\text{CO}^+$ ($13e^-$).\nBecause an electron is removed from an orbital with antibonding character, the bond strengthens upon ionization:\n$$\\text{BO}(\\text{CO}^+) = 3.5$$\n(Observed experimentally by shorter bond length $111.5\\text{ pm}$ in $\\text{CO}^+$ vs $112.8\\text{ pm}$ in neutral $\\text{CO}$)."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Calculate the bond order of the superoxide ion ($\\text{O}_2^-$).",
+          "image": "",
+          "correctValue": 1.5,
+          "solution": "Total electrons in $\\text{O}_2^- = 8 + 8 + 1 = 17\\text{ electrons}$.\nMO configuration:\n$$\\sigma 1s^2 \\sigma^* 1s^2 \\sigma 2s^2 \\sigma^* 2s^2 \\sigma 2p_z^2 (\\pi 2p_x^2 = \\pi 2p_y^2) (\\pi^* 2p_x^2 = \\pi^* 2p_y^1)$$\n- Number of bonding electrons ($N_b$) $= 10$\n- Number of antibonding electrons ($N_a$) $= 2 + 2 + 3 = 7$\n$$\\text{Bond Order} = \\frac{N_b - N_a}{2} = \\frac{10 - 7}{2} = \\frac{3}{2} = 1.5$$"
+        }
+      ]
+    }
+  ]
+}

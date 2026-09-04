@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-chem-22-p-block-groups-15-to-18",
+  "title": "p-Block Elements: Groups 15 to 18 (Allotropy, Trends in Reactivity, & Group Chemistry)",
+  "syllabus": "Group 15 elements (Nitrogen family): Electronic configuration, trends in atomic/ionic radii, ionization enthalpy, electronegativity; Oxidation states and inert pair effect; Anomalous behavior of nitrogen (catenation, multiple bonding); Allotropes of phosphorus (white, red, black); Hydrides, oxides, and oxoacids of nitrogen and phosphorus; Group 16 elements (Oxygen family): Trends in physical properties, anomalous properties of oxygen; Allotropes of sulfur (rhombic, monoclinic, plastic); Oxides, oxoacids of sulfur (sulfurous, sulfuric, peroxodisulfuric, thiosulfuric); Group 17 elements (Halogens): Trends in electronegativity, electron gain enthalpy (F vs Cl anomaly), bond dissociation enthalpy (Cl2 > Br2 > F2 > I2); Anomalous behavior of fluorine; Interhalogen compounds and oxoacids; Group 18 elements (Noble gases): General properties, ionization enthalpies, Bartlett's experiment; Compounds of xenon (fluorides: XeF2, XeF4, XeF6; oxides/oxyfluorides: XeO3, XeOF4, XeO2F2) - preparations, structures, geometries, and hydrolysis",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The correct order of bond dissociation enthalpy for the homonuclear diatomic halogen molecules is:",
+          "image": "",
+          "options": [
+            "$\\text{Cl}_2 > \\text{Br}_2 > \\text{F}_2 > \\text{I}_2$",
+            "$\\text{F}_2 > \\text{Cl}_2 > \\text{Br}_2 > \\text{I}_2$",
+            "$\\text{Cl}_2 > \\text{F}_2 > \\text{Br}_2 > \\text{I}_2$",
+            "$\\text{Cl}_2 > \\text{Br}_2 > \\text{I}_2 > \\text{F}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "The standard bond dissociation enthalpies of halogens are:\n- $\\text{Cl}_2$: $242.6\\text{ kJ/mol}$\n- $\\text{Br}_2$: $192.8\\text{ kJ/mol}$\n- $\\text{F}_2$: $158.8\\text{ kJ/mol}$\n- $\\text{I}_2$: $151.1\\text{ kJ/mol}$\nFluorine has an anomalously low bond dissociation enthalpy compared to chlorine and bromine because of its extremely small bond length ($142\\text{ pm}$), which causes substantial electrostatic repulsion between the non-bonding lone pairs on the two adjacent fluorine atoms.\nTherefore, the correct decreasing order is:\n$$\\text{Cl}_2 > \\text{Br}_2 > \\text{F}_2 > \\text{I}_2$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Complete hydrolysis of xenon hexafluoride ($\\text{XeF}_6$) produces a colorless solid compound $X$. Compound $X$ and its molecular geometry are:",
+          "image": "",
+          "options": [
+            "$\\text{XeO}_3$, pyramidal",
+            "$\\text{XeOF}_4$, square pyramidal",
+            "$\\text{XeO}_2\\text{F}_2$, see-saw",
+            "$\\text{XeO}_4$, tetrahedral"
+          ],
+          "correctOption": 0,
+          "solution": "Hydrolysis reactions of $\\text{XeF}_6$:\n- Partial hydrolysis gives oxyfluorides:\n$$\\text{XeF}_6 + \\text{H}_2\\text{O} \\rightarrow \\text{XeOF}_4 + 2\\text{HF}$$\n$$\\text{XeF}_6 + 2\\text{H}_2\\text{O} \\rightarrow \\text{XeO}_2\\text{F}_2 + 4\\text{HF}$$\n- Complete hydrolysis yields xenon trioxide ($\\text{XeO}_3$):\n$$\\text{XeF}_6 + 3\\text{H}_2\\text{O} \\rightarrow \\text{XeO}_3 + 6\\text{HF}$$\n$\\text{XeO}_3$ is a colorless, explosive hygroscopic solid. Xenon has 8 valence electrons, forming 3 double bonds with oxygen and retaining 1 lone pair:\n- Steric number $= 3\\ (\\sigma\\text{ bonds}) + 1\\ (\\text{lone pair}) = 4 \\implies sp^3$ hybridization.\n- The molecular geometry is trigonal pyramidal."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The correct order of thermal stability for the hydrides of Group 16 elements is:",
+          "image": "",
+          "options": [
+            "$\\text{H}_2\\text{O} > \\text{H}_2\\text{S} > \\text{H}_2\\text{Se} > \\text{H}_2\\text{Te}$",
+            "$\\text{H}_2\\text{Te} > \\text{H}_2\\text{Se} > \\text{H}_2\\text{S} > \\text{H}_2\\text{O}$",
+            "$\\text{H}_2\\text{S} > \\text{H}_2\\text{O} > \\text{H}_2\\text{Se} > \\text{H}_2\\text{Te}$",
+            "$\\text{H}_2\\text{O} > \\text{H}_2\\text{Se} > \\text{H}_2\\text{S} > \\text{H}_2\\text{Te}$"
+          ],
+          "correctOption": 0,
+          "solution": "Thermal stability of Group 16 hydrides ($H_2E$) depends directly on the $E-\\text{H}$ bond dissociation energy:\n1. As the central atom size increases down Group 16 ($\\text{O} < \\text{S} < \\text{Se} < \\text{Te}$), the orbital overlap with the small $1s$ orbital of hydrogen becomes progressively less effective.\n2. Consequently, the $E-\\text{H}$ bond length increases and the bond dissociation enthalpy decreases sharply:\n$$\\text{H}-\\text{O} (463\\text{ kJ/mol}) > \\text{H}-\\text{S} (347) > \\text{H}-\\text{Se} (276) > \\text{H}-\\text{Te} (238\\text{ kJ/mol})$$\n3. Therefore, thermal stability decreases down the group:\n$$\\text{H}_2\\text{O} > \\text{H}_2\\text{S} > \\text{H}_2\\text{Se} > \\text{H}_2\\text{Te}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following allotropes of phosphorus is chemically the MOST reactive and exhibits chemiluminescence (glows in the dark)?",
+          "image": "",
+          "options": [
+            "White phosphorus",
+            "Red phosphorus",
+            "$\\alpha$-Black phosphorus",
+            "$\\beta$-Black phosphorus"
+          ],
+          "correctOption": 0,
+          "solution": "1. White phosphorus consists of discrete tetrahedral $\\text{P}_4$ molecules.\n2. The bond angles in the $\\text{P}_4$ tetrahedron are compressed to $60^\\circ$, departing drastically from the normal $sp^3$ tetrahedral angle of $109.5^\\circ$.\n3. This introduces severe angular ring strain, making white phosphorus thermodynamically less stable and chemically the most reactive allotrope.\n4. It spontaneously ignites in air at $\\approx 30^\\circ\\text{C}$ and slowly oxidizes in air to emit greenish-white light (chemiluminescence).\nRed and black phosphorus have polymeric layered/network structures that relieve this angular strain, making them much less reactive."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Neil Bartlett first prepared an authentic noble gas compound, $\\text{Xe}^+[\\text{PtF}_6]^-$, based on the observation that:",
+          "image": "",
+          "options": [
+            "Molecular oxygen and xenon have almost identical first ionization enthalpies",
+            "Platinum hexafluoride oxidizes fluorine gas to ozone",
+            "Xenon has a larger atomic radius than radon",
+            "Xenon and argon have identical crystal structures"
+          ],
+          "correctOption": 0,
+          "solution": "In 1962, Neil Bartlett observed that platinum hexafluoride ($\\text{PtF}_6$), a powerful oxidizing agent, oxidized molecular oxygen to form an ionic red compound:\n$$\\text{O}_2 + \\text{PtF}_6 \\rightarrow \\text{O}_2^+[\\text{PtF}_6]^- = [\\text{O}_2]^+[\\text{PtF}_6]^-$$\nHe recognized that:\n1. The first ionization enthalpy of molecular oxygen ($1175\\text{ kJ/mol}$) is nearly identical to that of xenon ($1170\\text{ kJ/mol}$).\n2. The molecular diameter of $\\text{O}_2$ is very similar to the atomic diameter of $\\text{Xe}$.\nBartlett reasoned that $\\text{PtF}_6$ should also oxidize xenon, successfully synthesizing the first noble gas compound: $\\text{Xe}^+[\\text{PtF}_6]^-$, an orange-yellow solid."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The basicity and the oxidation state of phosphorus in hypophosphorous acid (phosphinic acid, $\\text{H}_3\\text{PO}_2$) are respectively:",
+          "image": "",
+          "options": [
+            "$1$ and $+1$",
+            "$2$ and $+1$",
+            "$3$ and $+3$",
+            "$1$ and $+3$"
+          ],
+          "correctOption": 0,
+          "solution": "Structure of hypophosphorous acid ($\\text{H}_3\\text{PO}_2$):\n- Central phosphorus atom has tetrahedral coordination with:\n  - One oxo-oxygen ($\\text{P}=\\text{O}$ double bond)\n  - One hydroxyl group ($\\text{P}-\\text{OH}$ single bond)\n  - Two direct hydridic bonds (two $\\text{P}-\\text{H}$ bonds)\n1. Basicity is determined exclusively by the number of ionizable protons (protons attached to oxygen as $-\\text{OH}$ groups). Because there is only one $-\\text{OH}$ group, the acid is monobasic (basicity $= 1$).\n2. Oxidation state of phosphorus:\n$$3(+1) + x + 2(-2) = 0 \\implies 3 + x - 4 = 0 \\implies x = +1$$\nThus, basicity is $1$ and the oxidation state is $+1$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The correct order of reducing power for Group 15 hydrides is:",
+          "image": "",
+          "options": [
+            "$\\text{BiH}_3 > \\text{SbH}_3 > \\text{AsH}_3 > \\text{PH}_3 > \\text{NH}_3$",
+            "$\\text{NH}_3 > \\text{PH}_3 > \\text{AsH}_3 > \\text{SbH}_3 > \\text{BiH}_3$",
+            "$\\text{NH}_3 > \\text{BiH}_3 > \\text{SbH}_3 > \\text{AsH}_3 > \\text{PH}_3$",
+            "$\\text{PH}_3 > \\text{AsH}_3 > \\text{SbH}_3 > \\text{BiH}_3 > \\text{NH}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "Reducing character of a hydride is governed by the ease with which it gives up hydrogen, which depends inversely on the $E-\\text{H}$ bond dissociation enthalpy:\n1. As atomic size increases down Group 15 ($\\text{N} < \\text{P} < \\text{As} < \\text{Sb} < \\text{Bi}$), the $E-\\text{H}$ bond length increases and bond energy decreases.\n2. $\\text{BiH}_3$ has the weakest $E-\\text{H}$ bond, decomposes rapidly at room temperature, and is the strongest reducing agent in the group.\n3. $\\text{NH}_3$ has the shortest and strongest bond and is only a mild reducing agent.\nHence, reducing power increases down the group:\n$$\\text{BiH}_3 > \\text{SbH}_3 > \\text{AsH}_3 > \\text{PH}_3 > \\text{NH}_3$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] In the contact process for the commercial manufacture of sulfuric acid, sulfur trioxide ($\\text{SO}_3$) is dissolved in concentrated $\\text{H}_2\\text{SO}_4$ rather than directly in water because:",
+          "image": "",
+          "options": [
+            "Direct addition to water is violently exothermic and forms a dense, unmanageable acid fog (mist)",
+            "$\\text{SO}_3$ is insoluble in pure water",
+            "Water decomposes $\\text{SO}_3$ into $\\text{SO}_2$ and $\\text{O}_2$",
+            "Direct reaction with water yields an equilibrium with low percent conversion"
+          ],
+          "correctOption": 0,
+          "solution": "The direct dissolution of $\\text{SO}_3$ in water:\n$$\\text{SO}_3(g) + \\text{H}_2\\text{O}(l) \\rightarrow \\text{H}_2\\text{SO}_4(l); \\quad \\Delta H = -133\\text{ kJ/mol}$$\nis extremely exothermic.\n1. The intense heat released instantaneously vaporizes water and produces an aerosol of microscopic sulfuric acid droplets that forms a thick, corrosive, and unmanageable acid mist that cannot be readily condensed.\n2. Instead, $\\text{SO}_3$ is absorbed smoothly in $98\\%$ concentrated $\\text{H}_2\\text{SO}_4$ to form oleum (pyrosulfuric acid, $\\text{H}_2\\text{S}_2\\text{O}_7$):\n$$\\text{SO}_3 + \\text{H}_2\\text{SO}_4 \\rightarrow \\text{H}_2\\text{S}_2\\text{O}_7$$\nOleum is subsequently diluted with the calculated amount of water to yield sulfuric acid of desired concentration."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Among the interhalogen compounds, which of the following statements is INCORRECT?",
+          "image": "",
+          "options": [
+            "Interhalogen compounds are generally less reactive than the parent elemental halogens (except $\\text{F}_2$)",
+            "They are covalent molecules and are diamagnetic in nature",
+            "In $XX'_n$ compounds, $X$ is always the larger halogen with lower electronegativity",
+            "Hydrolysis of an interhalogen compound always produces a halide ion derived from the smaller halogen and a hypohalite/halate from the larger halogen"
+          ],
+          "correctOption": 0,
+          "solution": "1. In an interhalogen molecule $X-X'$, the bond between two different halogens is polar and generally weaker than the homonuclear $X-X$ bond in elemental halogens (except the $\\text{F}-\\text{F}$ bond in $\\text{F}_2$).\n2. Consequently, interhalogen compounds are **more reactive** than elemental halogens (with the sole exception of $\\text{F}_2$).\nStatement A is incorrect because it falsely claims interhalogens are less reactive."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The transition temperature at which rhombic sulfur ($\\alpha$-sulfur) and monoclinic sulfur ($\\beta$-sulfur) exist in dynamic equilibrium with each other at $1\\text{ atm}$ pressure is:",
+          "image": "",
+          "options": [
+            "$369\\text{ K}$ ($96^\\circ\\text{C}$)",
+            "$393\\text{ K}$ ($120^\\circ\\text{C}$)",
+            "$273\\text{ K}$ ($0^\\circ\\text{C}$)",
+            "$444\\text{ K}$ ($171^\\circ\\text{C}$)"
+          ],
+          "correctOption": 0,
+          "solution": "Sulfur exhibits enantiotropic allotropy:\n1. Below $369\\text{ K}$ ($95.6^\\circ\\text{C} \\approx 96^\\circ\\text{C}$), rhombic ($\\alpha$) sulfur is the thermodynamically stable crystalline modification.\n2. Above $369\\text{ K}$, monoclinic ($\\beta$) sulfur is the thermodynamically stable allotrope.\n3. At exactly $369\\text{ K}$, both crystalline allotropic modifications coexist in equilibrium:\n$$\\alpha\\text{-Sulfur} \\xrightleftharpoons{369\\text{ K}} \\beta\\text{-Sulfur}$$\nThis specific equilibrium temperature is known as the **transition temperature**."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The correct order of boiling points for the noble gases is:",
+          "image": "",
+          "options": [
+            "$\\text{He} < \\text{Ne} < \\text{Ar} < \\text{Kr} < \\text{Xe}$",
+            "$\\text{Xe} < \\text{Kr} < \\text{Ar} < \\text{Ne} < \\text{He}$",
+            "$\\text{He} < \\text{Ar} < \\text{Ne} < \\text{Kr} < \\text{Xe}$",
+            "$\\text{Ne} < \\text{He} < \\text{Ar} < \\text{Kr} < \\text{Xe}$"
+          ],
+          "correctOption": 0,
+          "solution": "Noble gases exist as monatomic gases held together solely by weak London dispersion forces (instantaneous dipole-induced dipole attractions):\n1. Down Group 18, atomic size and the number of electrons increase from $\\text{He}$ to $\\text{Xe}$.\n2. The larger electron cloud is more polarizable, which strengthens dispersion forces.\n3. Stronger intermolecular dispersion forces require higher thermal energy to overcome, resulting in a continuous increase in boiling points down the group:\n$$\\text{He} (4.2\\text{ K}) < \\text{Ne} (27.1\\text{ K}) < \\text{Ar} (87.3\\text{ K}) < \\text{Kr} (119.9\\text{ K}) < \\text{Xe} (165.0\\text{ K})$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following oxoacids of sulfur contains an $\\text{O}-\\text{O}$ peroxo linkage?",
+          "image": "",
+          "options": [
+            "$\\text{H}_2\\text{S}_2\\text{O}_8$ (Marshall's acid)",
+            "$\\text{H}_2\\text{S}_2\\text{O}_7$ (Oleum)",
+            "$\\text{H}_2\\text{S}_2\\text{O}_6$ (Dithionic acid)",
+            "$\\text{H}_2\\text{S}_2\\text{O}_3$ (Thiosulfuric acid)"
+          ],
+          "correctOption": 0,
+          "solution": "Structural features of sulfur oxoacids:\n- $\\text{H}_2\\text{S}_2\\text{O}_8$ (Peroxodisulfuric acid / Marshall's acid): Has the structure $\\text{HO}-\\text{SO}_2-\\text{O}-\\text{O}-\\text{SO}_2-\\text{OH}$. The two sulfur centers are connected by a peroxo linkage ($-\\text{O}-\\text{O}-$).\n- $\\text{H}_2\\text{S}_2\\text{O}_7$ (Oleum / Pyrosulfuric acid): Contains an oxo bridge ($\\text{S}-\\text{O}-\\text{S}$).\n- $\\text{H}_2\\text{S}_2\\text{O}_6$ (Dithionic acid): Contains a direct $\\text{S}-\\text{S}$ single bond.\n- $\\text{H}_2\\text{S}_2\\text{O}_3$ (Thiosulfuric acid): Contains a terminal $\\text{S}=\\text{S}$ bond."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The correct order of acidic strength for the oxoacids of chlorine is:",
+          "image": "",
+          "options": [
+            "$\\text{HClO} < \\text{HClO}_2 < \\text{HClO}_3 < \\text{HClO}_4$",
+            "$\\text{HClO}_4 < \\text{HClO}_3 < \\text{HClO}_2 < \\text{HClO}$",
+            "$\\text{HClO}_2 < \\text{HClO} < \\text{HClO}_3 < \\text{HClO}_4$",
+            "$\\text{HClO}_4 < \\text{HClO}_2 < \\text{HClO}_3 < \\text{HClO}$"
+          ],
+          "correctOption": 0,
+          "solution": "Acidic strength of oxoacids of the same element increases with the oxidation state of the central atom:\n- $\\text{HClO}$: oxidation state of $\\text{Cl} = +1$\n- $\\text{HClO}_2$: oxidation state of $\\text{Cl} = +3$\n- $\\text{HClO}_3$: oxidation state of $\\text{Cl} = +5$\n- $\\text{HClO}_4$: oxidation state of $\\text{Cl} = +7$\nAs the number of terminal electronegative oxo-oxygen atoms increases from $0$ in $\\text{ClO}^-$ to $3$ in $\\text{ClO}_4^-$, the negative charge of the conjugate base is increasingly dispersed over more oxygen atoms via resonance delocalization.\nThe perchlorate anion ($\\text{ClO}_4^-$) is exceptionally stable due to delocalization over four equivalent oxygen atoms, making perchloric acid ($\\text{HClO}_4$) the strongest acid:\n$$\\text{HClO} < \\text{HClO}_2 < \\text{HClO}_3 < \\text{HClO}_4$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Why is dinitrogen ($\\text{N}_2$) chemically unreactive and inert at room temperature?",
+          "image": "",
+          "options": [
+            "Very high bond dissociation energy of the $\\text{N}\\equiv\\text{N}$ triple bond ($945\\text{ kJ/mol}$)",
+            "Absence of vacant $d$-orbitals in nitrogen",
+            "High electronegativity of nitrogen",
+            "Symmetrical non-polar nature only"
+          ],
+          "correctOption": 0,
+          "solution": "Dinitrogen consists of two nitrogen atoms joined by a triple bond ($1\\ \\sigma$ and $2\\ \\pi$ bonds) with an extremely short bond length ($109.8\\text{ pm}$).\nBecause of effective $2p\\pi-2p\\pi$ overlap, the bond dissociation enthalpy of the $\\text{N}\\equiv\\text{N}$ bond is extraordinarily large:\n$$\\Delta H_{\\text{diss}} = 945.4\\text{ kJ/mol}$$\nThis tremendous activation barrier renders dinitrogen virtually inert at room temperature, requiring high temperatures and catalysts to undergo chemical reactions."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The hybridization and molecular shape of xenon oxytetrafluoride ($\\text{XeOF}_4$) are respectively:",
+          "image": "",
+          "options": [
+            "$sp^3d^2$, square pyramidal",
+            "$sp^3d^2$, octahedral",
+            "$sp^3d$, see-saw",
+            "$sp^3d^3$, pentagonal planar"
+          ],
+          "correctOption": 0,
+          "solution": "For $\\text{XeOF}_4$:\n- Valence electrons of Xenon $= 8$\n- Xenon forms $4$ single bonds with Fluorine $\\implies 4\\ \\sigma$ bond pairs\n- Xenon forms $1$ double bond with Oxygen $\\implies 1\\ \\sigma$ bond pair ($+ 1\\ \\pi$ bond)\n- Total $\\sigma$ bonding pairs $= 4 + 1 = 5$\n- Electrons utilized in $\\sigma$ and $\\pi$ bonds $= 4\\ (\\text{with F}) + 2\\ (\\text{with O}) = 6$\n- Remaining non-bonding electrons $= 8 - 6 = 2 \\implies 1\\text{ lone pair}$\n- Steric number $= 5\\ (\\sigma\\text{ bonds}) + 1\\ (\\text{lone pair}) = 6 \\implies sp^3d^2$ hybridization.\n- Octahedral electron arrangement with $1$ axial lone pair and the $\\text{Xe}=\\text{O}$ double bond trans to it produces a square pyramidal molecular geometry."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] When chlorine water is exposed to sunlight for an extended period, it loses its greenish-yellow color due to the formation of:",
+          "image": "",
+          "options": [
+            "$\\text{HCl}$ and $\\text{O}_2$",
+            "$\\text{HOCl}$ and $\\text{HCl}$ only",
+            "$\\text{HClO}_3$ and $\\text{HCl}$",
+            "$\\text{Cl}_2\\text{O}$"
+          ],
+          "correctOption": 0,
+          "solution": "When chlorine dissolves in water, it forms an equilibrium mixture of hydrochloric acid and hypochlorous acid:\n$$\\text{Cl}_2 + \\text{H}_2\\text{O} \\rightleftharpoons \\text{HCl} + \\text{HOCl}$$\nOn exposure to sunlight, the unstable hypochlorous acid ($\\text{HOCl}$) undergoes photolytic decomposition to produce hydrochloric acid and nascent/molecular oxygen:\n$$2\\text{HOCl} \\xrightarrow{h\\nu} 2\\text{HCl} + \\text{O}_2 \\uparrow$$\nNet photochemical reaction:\n$$2\\text{Cl}_2 + 2\\text{H}_2\\text{O} \\xrightarrow{\\text{sunlight}} 4\\text{HCl} + \\text{O}_2$$\nBecause dissolved $\\text{Cl}_2$ is converted into colorless $\\text{HCl}(aq)$ and $\\text{O}_2(g)$, the greenish-yellow solution turns completely colorless."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following nitrogen oxides is a colored gas and paramagnetic in nature?",
+          "image": "",
+          "options": [
+            "$\\text{NO}_2$",
+            "$\\text{N}_2\\text{O}$",
+            "$\\text{N}_2\\text{O}_4$",
+            "$\\text{N}_2\\text{O}_5$"
+          ],
+          "correctOption": 0,
+          "solution": "Examine the properties of nitrogen oxides:\n1. Nitrogen dioxide ($\\text{NO}_2$):\n- Total valence electrons $= 5\\ (\\text{N}) + 2(6)\\ (\\text{O}) = 17\\text{ electrons}$ (odd electron molecule).\n- Possesses one unpaired electron, making it paramagnetic.\n- Absorbs blue light, imparting a distinct reddish-brown color.\n2. $\\text{N}_2\\text{O}$ (laughing gas): Colorless, diamagnetic ($16e^-$).\n3. $\\text{N}_2\\text{O}_4$: Colorless solid/liquid, diamagnetic dimer of $\\text{NO}_2$.\n4. $\\text{N}_2\\text{O}_5$: Colorless solid, diamagnetic.\nThus, $\\text{NO}_2$ is colored and paramagnetic."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The bleaching action of sulfur dioxide ($\\text{SO}_2$) differs from that of chlorine ($\\text{Cl}_2$) because:",
+          "image": "",
+          "options": [
+            "$\\text{SO}_2$ bleaches by temporary reduction, whereas $\\text{Cl}_2$ bleaches permanently by oxidation",
+            "$\\text{SO}_2$ bleaches permanently by oxidation, whereas $\\text{Cl}_2$ bleaches by reduction",
+            "Both bleach permanently by oxidation",
+            "Both bleach temporarily by reduction"
+          ],
+          "correctOption": 0,
+          "solution": "1. Sulfur dioxide bleaches in the presence of moisture through a **reduction** mechanism:\n$$\\text{SO}_2 + 2\\text{H}_2\\text{O} \\rightarrow \\text{H}_2\\text{SO}_4 + 2[\\text{H}]$$\nThe nascent hydrogen reduces colored organic matter to colorless products. On subsequent exposure to atmospheric oxygen, the bleached material is re-oxidized back to its colored form, making the bleaching action temporary.\n2. Chlorine bleaches in the presence of water through an **oxidation** mechanism by releasing nascent oxygen:\n$$\\text{Cl}_2 + \\text{H}_2\\text{O} \\rightarrow 2\\text{HCl} + [\\text{O}]$$\n$$\\text{Colored matter} + [\\text{O}] \\rightarrow \\text{Colorless oxidized product}$$\nThis oxidative degradation is irreversible and permanent."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In which of the following compounds does xenon have an oxidation state of $+4$?",
+          "image": "",
+          "options": [
+            "$\\text{XeF}_4$",
+            "$\\text{XeF}_2$",
+            "$\\text{XeF}_6$",
+            "$\\text{XeO}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate the oxidation state of xenon in each compound:\n- In $\\text{XeF}_2$: $x + 2(-1) = 0 \\implies x = +2$\n- In $\\text{XeF}_4$: $x + 4(-1) = 0 \\implies x = +4$\n- In $\\text{XeF}_6$: $x + 6(-1) = 0 \\implies x = +6$\n- In $\\text{XeO}_3$: $x + 3(-2) = 0 \\implies x = +6$\nThus, xenon has an oxidation state of $+4$ in $\\text{XeF}_4$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Heating white phosphorus with concentrated aqueous $\\text{NaOH}$ solution in an inert atmosphere of $\\text{CO}_2$ produces:",
+          "image": "",
+          "options": [
+            "$\\text{PH}_3$ and $\\text{NaH}_2\\text{PO}_2$",
+            "$\\text{H}_3\\text{PO}_3$ and $\\text{Na}_3\\text{PO}_4$",
+            "$\\text{P}_2\\text{O}_5$ and $\\text{Na}_2\\text{HPO}_4$",
+            "$\\text{PH}_3$ and $\\text{Na}_3\\text{PO}_4$"
+          ],
+          "correctOption": 0,
+          "solution": "White phosphorus undergoes disproportionation when boiled with concentrated caustic soda ($\\text{NaOH}$) solution in an inert atmosphere:\n$$\\text{P}_4 + 3\\text{NaOH} + 3\\text{H}_2\\text{O} \\rightarrow \\text{PH}_3 \\uparrow + 3\\text{NaH}_2\\text{PO}_2$$\n1. Phosphorus in $\\text{P}_4$ has an oxidation state of $0$.\n2. It is reduced to $-3$ in phosphine ($\\text{PH}_3$).\n3. It is simultaneously oxidized to $+1$ in sodium hypophosphite ($\\text{NaH}_2\\text{PO}_2$)."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the total number of lone pairs of electrons present on the central xenon atom in a molecule of xenon difluoride ($\\text{XeF}_2$).",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "In $\\text{XeF}_2$:\n- Xenon has $8$ valence electrons.\n- It forms $2$ single $\\text{Xe}-\\text{F}$ covalent bonds.\n- Non-bonding electrons $= 8 - 2 = 6$.\n$$\\text{Number of lone pairs} = \\frac{6}{2} = 3.0$$\n(These three lone pairs occupy equatorial positions in a trigonal bipyramidal geometry, giving a linear molecule)."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the number of $\\text{P}-\\text{OH}$ bonds present in one molecule of pyrophosphoric acid ($\\text{H}_4\\text{P}_2\\text{O}_7$).",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "Pyrophosphoric acid ($\\text{H}_4\\text{P}_2\\text{O}_7$) is formed by the condensation of two molecules of orthophosphoric acid with the elimination of one water molecule:\n$$\\text{HO}_2\\text{P}(=\\text{O})-\\text{O}-\\text{P}(=\\text{O})(\\text{OH})_2$$\nIts structure contains:\n- Two terminal $\\text{P}=\\text{O}$ double bonds\n- One bridging $\\text{P}-\\text{O}-\\text{P}$ linkage\n- Four ionizable hydroxyl groups (four $\\text{P}-\\text{OH}$ bonds, making it tetrabasic)\nThus, the number of $\\text{P}-\\text{OH}$ bonds is $4.0$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Find the oxidation state of sulfur in Marshall's acid (peroxodisulfuric acid, $\\text{H}_2\\text{S}_2\\text{O}_8$).",
+          "image": "",
+          "correctValue": 6.0,
+          "solution": "Structure of $\\text{H}_2\\text{S}_2\\text{O}_8$:\n$$\\text{HO}-\\text{SO}_2-\\text{O}-\\text{O}-\\text{SO}_2-\\text{OH}$$\nThere are $6$ normal oxo/hydroxyl oxygen atoms (oxidation state $-2$) and $2$ peroxo oxygen atoms forming the central peroxo bridge (oxidation state $-1$):\n$$2(+1) + 2x + 6(-2) + 2(-1) = 0$$\n$$2 + 2x - 12 - 2 = 0$$\n$$2x - 12 = 0 \\implies 2x = 12 \\implies x = +6.0$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] In the cyclic trimer of sulfur trioxide, $(\\text{SO}_3)_3$ (also written as $\\text{S}_3\\text{O}_9$), calculate the total number of $\\text{S}-\\text{O}-\\text{S}$ bridging bonds.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "The structure of solid cyclic sulfur trioxide trimer ($\\gamma$-$\\text{SO}_3$ or $\\text{S}_3\\text{O}_9$) is a puckered six-membered ring containing alternating sulfur and oxygen atoms:\n$$\\dots-\\text{S}-\\text{O}-\\text{S}-\\text{O}-\\text{S}-\\text{O}-\\dots$$\nEach of the three sulfur atoms is bonded to two terminal double-bonded oxo-oxygen atoms ($=\\text{O}$) and linked to two neighboring sulfur atoms via oxygen bridges.\nThus, the cyclic ring contains exactly $3.0$ bridging $\\text{S}-\\text{O}-\\text{S}$ bonds."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Among the following oxoacids: $\\text{H}_3\\text{PO}_2, \\text{H}_3\\text{PO}_3, \\text{H}_3\\text{PO}_4, \\text{H}_4\\text{P}_2\\text{O}_7$, how many can act as reducing agents due to the presence of direct $\\text{P}-\\text{H}$ bonds?",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "Oxoacids of phosphorus containing direct $\\text{P}-\\text{H}$ bonds have strong reducing properties:\n1. $\\text{H}_3\\text{PO}_2$ (hypophosphorous acid): has two direct $\\text{P}-\\text{H}$ bonds $\\implies$ strong reducing agent.\n2. $\\text{H}_3\\text{PO}_3$ (phosphorous acid): has one direct $\\text{P}-\\text{H}$ bond $\\implies$ good reducing agent.\n3. $\\text{H}_3\\text{PO}_4$ (orthophosphoric acid): has zero $\\text{P}-\\text{H}$ bonds (all hydrogens are in $-\\text{OH}$ groups) $\\implies$ non-reducing.\n4. $\\text{H}_4\\text{P}_2\\text{O}_7$ (pyrophosphoric acid): has zero $\\text{P}-\\text{H}$ bonds $\\implies$ non-reducing.\nTotal number of reducing oxoacids $= 2.0$ ($\\text{H}_3\\text{PO}_2$ and $\\text{H}_3\\text{PO}_3$)."
+        }
+      ]
+    }
+  ]
+}

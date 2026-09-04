@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-chem-17-periodic-properties",
+  "title": "Periodic Properties (Modern Periodic Law, Radii, IE, Electron Gain Enthalpy, & Electronegativity)",
+  "syllabus": "Modern periodic law and the present form of the periodic table; s, p, d, and f block elements; Periodic trends in physical and chemical properties: Atomic and ionic radii (covalent, van der Waals, and metallic radii), lanthanoid contraction; Isoelectronic species and radii comparison; Ionization enthalpy (IE1, IE2, IE3), factors affecting IE, successive ionization enthalpies, and anomalous trends (Be vs B, N vs O); Electron gain enthalpy (ΔegH) and its anomalies (F vs Cl, O vs S, noble gases, alkaline earth metals); Electronegativity scales (Pauling and Mulliken) and its periodic trends; Periodic anomalies and diagonal relationships",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The correct order of first ionization enthalpy ($\\text{IE}_1$) for the elements $\\text{B}, \\text{C}, \\text{N}, \\text{O},$ and $\\text{Be}$ is:",
+          "image": "",
+          "options": [
+            "$\\text{B} < \\text{Be} < \\text{C} < \\text{O} < \\text{N}$",
+            "$\\text{B} < \\text{C} < \\text{Be} < \\text{O} < \\text{N}$",
+            "$\\text{Be} < \\text{B} < \\text{C} < \\text{N} < \\text{O}$",
+            "$\\text{B} < \\text{Be} < \\text{C} < \\text{N} < \\text{O}$"
+          ],
+          "correctOption": 0,
+          "solution": "Across Period 2, ionization enthalpy generally increases with increasing effective nuclear charge ($Z_{\\text{eff}}$), but exhibits two notable anomalies:\n1. $\\text{Be}$ ($1s^2 2s^2$) vs $\\text{B}$ ($1s^2 2s^2 2p^1$): $\\text{Be}$ has a fully filled stable $2s$ subshell and higher penetration of $s$-electrons compared to $2p$, making it harder to ionize than $\\text{B}$. Thus, $\\text{IE}_1(\\text{B}) < \\text{IE}_1(\\text{Be})$.\n2. $\\text{N}$ ($1s^2 2s^2 2p^3$) vs $\\text{O}$ ($1s^2 2s^2 2p^4$): $\\text{N}$ possesses an extra stable exactly half-filled $2p$ subshell, whereas $\\text{O}$ has paired electron repulsion in one of its $2p$ orbitals. Thus, $\\text{IE}_1(\\text{O}) < \\text{IE}_1(\\text{N})$.\nCombining these factors yields the observed order:\n$$\\text{B} < \\text{Be} < \\text{C} < \\text{O} < \\text{N}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Which of the following arrangements represents the correct order of electron gain enthalpy with negative sign (most negative to least negative) for Group 16 elements?",
+          "image": "",
+          "options": [
+            "$\\text{S} > \\text{Se} > \\text{Te} > \\text{Po} > \\text{O}$",
+            "$\\text{O} > \\text{S} > \\text{Se} > \\text{Te} > \\text{Po}$",
+            "$\\text{S} > \\text{O} > \\text{Se} > \\text{Te} > \\text{Po}$",
+            "$\\text{S} > \\text{Se} > \\text{O} > \\text{Te} > \\text{Po}$"
+          ],
+          "correctOption": 0,
+          "solution": "In Group 16, electron gain enthalpy ($\\Delta_{eg}H$) becomes less negative down the group as atomic size increases.\nHowever, oxygen has an exceptionally low negative electron gain enthalpy due to its very small atomic radius. The incoming electron enters the compact $2p$ subshell where it experiences significant interelectronic repulsion from the existing valence electrons.\nIn sulfur, the incoming electron enters the larger, more diffuse $3p$ subshell where interelectronic repulsions are substantially lower.\nConsequently, sulfur has the most negative $\\Delta_{eg}H$ in the group, and oxygen has the least negative:\n$$\\text{S} (-200\\text{ kJ/mol}) > \\text{Se} (-195) > \\text{Te} (-190) > \\text{Po} (-174) > \\text{O} (-141\\text{ kJ/mol})$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The correct order of ionic radii for the isoelectronic species $\\text{N}^{3-}, \\text{O}^{2-}, \\text{F}^-, \\text{Na}^+, \\text{Mg}^{2+},$ and $\\text{Al}^{3+}$ is:",
+          "image": "",
+          "options": [
+            "$\\text{N}^{3-} > \\text{O}^{2-} > \\text{F}^- > \\text{Na}^+ > \\text{Mg}^{2+} > \\text{Al}^{3+}$",
+            "$\\text{Al}^{3+} > \\text{Mg}^{2+} > \\text{Na}^+ > \\text{F}^- > \\text{O}^{2-} > \\text{N}^{3-}$",
+            "$\\text{N}^{3-} > \\text{F}^- > \\text{O}^{2-} > \\text{Na}^+ > \\text{Mg}^{2+} > \\text{Al}^{3+}$",
+            "$\\text{O}^{2-} > \\text{N}^{3-} > \\text{F}^- > \\text{Al}^{3+} > \\text{Mg}^{2+} > \\text{Na}^+$"
+          ],
+          "correctOption": 0,
+          "solution": "All of the given species have $10\\text{ electrons}$ and are isoelectronic.\nFor isoelectronic ions, the ionic radius is inversely proportional to the nuclear charge (atomic number $Z$):\n$$\\text{Radius} \\propto \\frac{1}{Z}$$\nAtomic numbers:\n- $\\text{N}^{3-}: Z = 7$\n- $\\text{O}^{2-}: Z = 8$\n- $\\text{F}^-: Z = 9$\n- $\\text{Na}^+: Z = 11$\n- $\\text{Mg}^{2+}: Z = 12$\n- $\\text{Al}^{3+}: Z = 13$\nAs $Z$ increases, the effective nuclear charge pulls the electron cloud closer to the nucleus, decreasing size.\nHence, the correct decreasing order of ionic radii is:\n$$\\text{N}^{3-} > \\text{O}^{2-} > \\text{F}^- > \\text{Na}^+ > \\text{Mg}^{2+} > \\text{Al}^{3+}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The nearly identical atomic radii of zirconium ($\\text{Zr}, 4d$) and hafnium ($\\text{Hf}, 5d$) are primarily consequence of:",
+          "image": "",
+          "options": [
+            "Lanthanoid contraction due to poor shielding by $4f$ electrons",
+            "Diagonal relationship across transition series",
+            "Similar screening effect of $3d$ and $4d$ electrons",
+            "Actinoid contraction"
+          ],
+          "correctOption": 0,
+          "solution": "Hafnium ($Z = 72$) directly follows the 14 lanthanoid elements ($Z = 58$ to $71$) in which the $4f$ subshell is filled.\nThe $4f$ orbitals have diffused shapes and offer very poor shielding to the outer electrons from the growing positive nuclear charge ($14$ additional protons).\nThis inadequate shielding causes the effective nuclear charge ($Z_{\\text{eff}}$) to increase sharply, pulling the valence electrons inward.\nThis contraction (known as the lanthanoid contraction) cancels the expected increase in size due to the addition of an extra shell, resulting in almost identical covalent radii for $\\text{Zr}$ ($160\\text{ pm}$) and $\\text{Hf}$ ($159\\text{ pm}$)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The successive ionization enthalpies of an element $M$ are $738, 1450, 7730, 10540,$ and $13630\\text{ kJ/mol}$. The element $M$ belongs to which group of the periodic table?",
+          "image": "",
+          "options": [
+            "Group 2",
+            "Group 1",
+            "Group 13",
+            "Group 14"
+          ],
+          "correctOption": 0,
+          "solution": "Examine the successive ionization enthalpies:\n- $\\text{IE}_1 = 738\\text{ kJ/mol}$\n- $\\text{IE}_2 = 1450\\text{ kJ/mol}$\n- $\\text{IE}_3 = 7730\\text{ kJ/mol}$\n- $\\text{IE}_4 = 10540\\text{ kJ/mol}$\nThere is a massive jump (more than 5-fold increase) between $\\text{IE}_2$ and $\\text{IE}_3$ ($1450 \\rightarrow 7730\\text{ kJ/mol}$).\nThis dramatic jump indicates that the first two electrons are easily removed from the outermost valence shell, while the third electron must be extracted from a noble gas core (fully filled inner shell).\nTherefore, the element has two valence electrons and belongs to Group 2 (Alkaline earth metals, e.g., $\\text{Mg}$)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Which of the following elements has the MOST positive (or least negative) electron gain enthalpy?",
+          "image": "",
+          "options": [
+            "$\\text{Ne}$",
+            "$\\text{N}$",
+            "$\\text{Be}$",
+            "$\\text{He}$"
+          ],
+          "correctOption": 0,
+          "solution": "Noble gases have completely filled stable valence octets ($ns^2 np^6$). The addition of an extra electron must enter the next higher principal quantum shell ($ns$), which requires a large input of energy.\nHence, noble gases have large positive values of electron gain enthalpy ($\\Delta_{eg}H$):\n- $\\text{Ne}: \\Delta_{eg}H = +116\\text{ kJ/mol}$\n- $\\text{Ar}: \\Delta_{eg}H = +96\\text{ kJ/mol}$\n- $\\text{He}: \\Delta_{eg}H = +48\\text{ kJ/mol}$\n- $\\text{Be}: \\Delta_{eg}H \\approx +66\\text{ kJ/mol}$\n- $\\text{N}: \\Delta_{eg}H \\approx +31\\text{ kJ/mol}$\nNeon has the most positive electron gain enthalpy among the given options."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The correct order of electronegativity on Pauling's scale for the elements $\\text{C}, \\text{N}, \\text{Si},$ and $\\text{P}$ is:",
+          "image": "",
+          "options": [
+            "$\\text{N} > \\text{C} > \\text{P} > \\text{Si}$",
+            "$\\text{N} > \\text{P} > \\text{C} > \\text{Si}$",
+            "$\\text{N} > \\text{C} > \\text{Si} > \\text{P}$",
+            "$\\text{C} > \\text{N} > \\text{Si} > \\text{P}$"
+          ],
+          "correctOption": 0,
+          "solution": "On Pauling's electronegativity scale:\n- Nitrogen ($\\text{N}$): $3.04$\n- Carbon ($\\text{C}$): $2.55$\n- Phosphorus ($\\text{P}$): $2.19$\n- Silicon ($\\text{Si}$): $1.90$\nElectronegativity increases across a period and decreases down a group.\nComparing second-period non-metals with third-period elements:\n$$\\text{N} (3.04) > \\text{C} (2.55) > \\text{P} (2.19) > \\text{Si} (1.90)$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following pairs of elements exhibits a diagonal relationship?",
+          "image": "",
+          "options": [
+            "$\\text{Be}$ and $\\text{Al}$",
+            "$\\text{B}$ and $\\text{P}$",
+            "$\\text{Li}$ and $\\text{Al}$",
+            "$\\text{Be}$ and $\\text{Mg}$"
+          ],
+          "correctOption": 0,
+          "solution": "Certain elements of the second period show striking similarities in chemical properties with the diagonally adjacent elements of the third period in the next group:\n- $\\text{Li}$ and $\\text{Mg}$\n- $\\text{Be}$ and $\\text{Al}$\n- $\\text{B}$ and $\\text{Si}$\nThis diagonal relationship occurs because moving across a period increases polarizing power (charge/size ratio), while moving down a group decreases it. The two opposing effects largely cancel along the diagonal, giving $\\text{Be}$ and $\\text{Al}$ similar charge densities, covalent character in halides, and amphoteric oxides."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] The correct order of second ionization enthalpy ($\\text{IE}_2$) for the elements $\\text{C}, \\text{N}, \\text{O},$ and $\\text{F}$ is:",
+          "image": "",
+          "options": [
+            "$\\text{O} > \\text{F} > \\text{N} > \\text{C}$",
+            "$\\text{F} > \\text{O} > \\text{N} > \\text{C}$",
+            "$\\text{O} > \\text{N} > \\text{F} > \\text{C}$",
+            "$\\text{N} > \\text{O} > \\text{F} > \\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "Second ionization enthalpy involves removing an electron from unipositive cations:\n- $\\text{C}^+: 1s^2 2s^2 2p^1$\n- $\\text{N}^+: 1s^2 2s^2 2p^2$\n- $\\text{O}^+: 1s^2 2s^2 2p^3$\n- $\\text{F}^+: 1s^2 2s^2 2p^4$\nNotice that $\\text{O}^+$ acquires a stable, half-filled $2p^3$ configuration, which imparts exceptional stability. Removing an electron from $\\text{O}^+$ requires more energy than removing an electron from $\\text{F}^+$ ($2p^4$).\nThus, $\\text{O}^+$ has a higher ionization enthalpy than $\\text{F}^+$.\nAcross the series:\n$$\\text{O} > \\text{F} > \\text{N} > \\text{C}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The radius of which of the following is the LARGEST?",
+          "image": "",
+          "options": [
+            "$\\text{I}^-$",
+            "$\\text{I}$",
+            "$\\text{I}^+$",
+            "$\\text{Br}^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For a given element, an anion is always larger than the neutral atom, which in turn is larger than its cation:\n$$\\text{Radius: } \\text{I}^- > \\text{I} > \\text{I}^+$$\nAdding an electron to form $\\text{I}^-$ increases interelectronic repulsions and decreases effective nuclear charge per electron ($Z/e$), expanding the electron cloud.\n2. Iodine is in Period 5 while bromine is in Period 4, so iodide has an entire additional principal quantum shell compared to bromide ($\\text{I}^- > \\text{Br}^-$).\nTherefore, $\\text{I}^-$ has the largest radius."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Mulliken defined electronegativity ($\\chi_M$) as the arithmetic mean of:",
+          "image": "",
+          "options": [
+            "Ionization enthalpy and Electron affinity",
+            "Ionization enthalpy and Bond energy",
+            "Electron affinity and Lattice energy",
+            "Covalent radius and Ionic radius"
+          ],
+          "correctOption": 0,
+          "solution": "According to Robert Mulliken's scale of electronegativity, an atom's tendency to attract electrons in a molecule is the average of its ability to hold its own electrons (Ionization Enthalpy, $\\text{IE}$) and its ability to attract additional electrons (Electron Affinity, $\\text{EA}$):\n$$\\chi_M = \\frac{\\text{IE} + \\text{EA}}{2}$$\n(When $\\text{IE}$ and $\\text{EA}$ are measured in electron-volts, Pauling's electronegativity is approximately $\\chi_P \\approx \\frac{\\chi_M}{2.8}$)."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following atoms has the highest first ionization enthalpy?",
+          "image": "",
+          "options": [
+            "$\\text{He}$",
+            "$\\text{Ne}$",
+            "$\\text{F}$",
+            "$\\text{H}$"
+          ],
+          "correctOption": 0,
+          "solution": "Helium ($\\text{He}, 1s^2$) has:\n1. The smallest principal quantum number ($n = 1$) with electrons situated closest to the nucleus.\n2. A completely filled, stable $1s$ duplet without any inner-shell shielding.\n3. The highest effective nuclear charge for its size.\nAs a result, Helium has the highest first ionization enthalpy of all elements in the periodic table ($\\approx 2372\\text{ kJ/mol}$)."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The halogen with the MOST negative electron gain enthalpy is:",
+          "image": "",
+          "options": [
+            "$\\text{Cl}$",
+            "$\\text{F}$",
+            "$\\text{Br}$",
+            "$\\text{I}$"
+          ],
+          "correctOption": 0,
+          "solution": "The negative electron gain enthalpies of halogens are:\n- $\\text{Cl}: -349\\text{ kJ/mol}$\n- $\\text{F}: -328\\text{ kJ/mol}$\n- $\\text{Br}: -325\\text{ kJ/mol}$\n- $\\text{I}: -295\\text{ kJ/mol}$\nChlorine has a more negative electron gain enthalpy than fluorine because fluorine's $2p$ subshell is extremely compact, leading to high electron-electron repulsions when an extra electron is added.\nIn chlorine, the incoming electron enters the larger $3p$ subshell, experiencing less repulsion."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Across a period from left to right, the nature of element oxides generally changes from:",
+          "image": "",
+          "options": [
+            "Basic to amphoteric to acidic",
+            "Acidic to amphoteric to basic",
+            "Neutral to acidic to basic",
+            "Amphoteric to basic to acidic"
+          ],
+          "correctOption": 0,
+          "solution": "Across a period, metallic character decreases and non-metallic character increases as electronegativity increases.\nFor example, across Period 3:\n- $\\text{Na}_2\\text{O}, \\text{MgO}$: strongly basic\n- $\\text{Al}_2\\text{O}_3$: amphoteric\n- $\\text{SiO}_2$: weakly acidic\n- $\\text{P}_4\\text{O}_{10}, \\text{SO}_3, \\text{Cl}_2\\text{O}_7$: progressively stronger acidic oxides\nThus, the general trend across a period is basic $\\rightarrow$ amphoteric $\\rightarrow$ acidic."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Which of the following elements has the lowest first ionization enthalpy?",
+          "image": "",
+          "options": [
+            "$\\text{Cs}$",
+            "$\\text{Na}$",
+            "$\\text{K}$",
+            "$\\text{Rb}$"
+          ],
+          "correctOption": 0,
+          "solution": "Down Group 1 (Alkali metals), atomic radius increases and the outermost valence electron becomes increasingly shielded by intervening inner shells.\nThe effective nuclear attraction on the valence $s$-electron decreases, making it progressively easier to remove.\nIonization enthalpies:\n- $\\text{Li}: 520\\text{ kJ/mol}$\n- $\\text{Na}: 496\\text{ kJ/mol}$\n- $\\text{K}: 419\\text{ kJ/mol}$\n- $\\text{Rb}: 403\\text{ kJ/mol}$\n- $\\text{Cs}: 374\\text{ kJ/mol}$\nThus, Cesium ($\\text{Cs}$) has the lowest ionization enthalpy among the options."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] For a given principal quantum shell ($n$), the correct order of penetration power of atomic orbitals towards the nucleus is:",
+          "image": "",
+          "options": [
+            "$s > p > d > f$",
+            "$f > d > p > s$",
+            "$s > d > p > f$",
+            "$p > s > d > f$"
+          ],
+          "correctOption": 0,
+          "solution": "Penetration power describes how close an electron can approach the nucleus based on its radial probability distribution.\nAn $s$-electron has a non-zero probability density at the nucleus ($r = 0$), meaning it penetrates closest to the nucleus, followed by $p$, $d$, and lastly $f$ orbitals:\n$$\\text{Penetration: } s > p > d > f$$\nGreater penetration corresponds to greater effective nuclear charge felt by the electron and a more pronounced screening/shielding ability."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The first four ionization enthalpies of an element are $E_1 = 578, E_2 = 1817, E_3 = 2745,$ and $E_4 = 11578\\text{ kJ/mol}$. The stable oxidation state of this element is:",
+          "image": "",
+          "options": [
+            "$+3$",
+            "$+1$",
+            "$+2$",
+            "$+4$"
+          ],
+          "correctOption": 0,
+          "solution": "Notice the differences between successive ionization enthalpies:\n- $E_2 - E_1 = 1817 - 578 = 1239\\text{ kJ/mol}$\n- $E_3 - E_2 = 2745 - 1817 = 928\\text{ kJ/mol}$\n- $E_4 - E_3 = 11578 - 2745 = 8833\\text{ kJ/mol}$\nThe very large jump between $E_3$ and $E_4$ indicates that the fourth electron must be removed from a stable, complete shell configuration.\nThis shows that the element has three valence electrons (Group 13, such as Aluminum), so its most stable oxidation state is $+3$."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following orders of van der Waals radii is correct?",
+          "image": "",
+          "options": [
+            "$\\text{Ar} > \\text{Cl}$",
+            "$\\text{Cl} > \\text{Ar}$",
+            "$\\text{Cl} = \\text{Ar}$",
+            "$\\text{Ne} > \\text{Ar}$"
+          ],
+          "correctOption": 0,
+          "solution": "Noble gas radii are reported exclusively as van der Waals radii because noble gases do not form stable homonuclear covalent bonds under ordinary conditions.\nIn contrast, non-metals like chlorine are typically quoted with their covalent radii, which involve overlapping electron clouds:\n$$\\text{van der Waals radius} > \\text{Metallic radius} > \\text{Covalent radius}$$\nWhen comparing chlorine and argon within Period 3, the van der Waals radius of argon ($188\\text{ pm}$) is noticeably larger than the covalent radius of chlorine ($99\\text{ pm}$), and even slightly larger than the van der Waals radius of chlorine.\nHence, $\\text{Ar} > \\text{Cl}$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The IUPAC systematic name and symbol for the element with atomic number $119$ are:",
+          "image": "",
+          "options": [
+            "Ununennium, Uue",
+            "Ununoctium, Uuo",
+            "Unnilennium, Une",
+            "Biunennium, Bue"
+          ],
+          "correctOption": 0,
+          "solution": "According to IUPAC nomenclature rules for elements with $Z > 100$:\n- Digit $1 \\rightarrow$ 'un'\n- Digit $1 \\rightarrow$ 'un'\n- Digit $9 \\rightarrow$ 'enn'\nAdding the suffix '-ium' gives: $\\text{un} + \\text{un} + \\text{enn} + \\text{ium} = \\text{Ununennium}$.\nThe three-letter symbol is derived from the first letter of each numerical root: $\\text{u} + \\text{u} + \\text{e} = \\text{Uue}$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Which of the following processes is exothermic?",
+          "image": "",
+          "options": [
+            "$\\text{O}(g) + e^- \\rightarrow \\text{O}^-(g)$",
+            "$\\text{O}^-(g) + e^- \\rightarrow \\text{O}^{2-}(g)$",
+            "$\\text{S}^-(g) + e^- \\rightarrow \\text{S}^{2-}(g)$",
+            "$\\text{N}(g) + e^- \\rightarrow \\text{N}^-(g)$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The first electron gain enthalpy of oxygen is negative (exothermic):\n$$\\text{O}(g) + e^- \\rightarrow \\text{O}^-(g); \\quad \\Delta_{eg}H = -141\\text{ kJ/mol}$$\nEnergy is released because the incoming electron experiences net nuclear attraction from the neutral oxygen atom.\n2. In contrast, adding a second electron to form a dinegative ion ($\\text{O}^{2-}$ or $\\text{S}^{2-}$) involves overcoming strong electrostatic repulsion from an already negatively charged anion, making all second electron gain enthalpies strongly endothermic ($\\Delta_{eg}H > 0$).\n3. Nitrogen has a stable half-filled $2p^3$ configuration, so adding an electron is slightly endothermic ($\\Delta_{eg}H \\approx +31\\text{ kJ/mol}$)."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the total number of valence electrons present in the neutral atom of the element belonging to Period 4 and Group 15.",
+          "image": "",
+          "correctValue": 5.0,
+          "solution": "The element in Period 4, Group 15 is Arsenic ($\\text{As}, Z = 33$).\nIts electronic configuration is:\n$$\\text{As}: [\\text{Ar}] 3d^{10} 4s^2 4p^3$$\nValence electrons are those in the outermost principal quantum shell ($n = 4$):\n$$\\text{Valence electrons} = 2\\ (4s) + 3\\ (4p) = 5.0$$"
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Among the following elements: $\\text{Be}, \\text{B}, \\text{C}, \\text{N}, \\text{O}, \\text{F},$ and $\\text{Ne}$, how many elements have a higher first ionization enthalpy than Oxygen?",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "The first ionization enthalpies across Period 2 follow the order:\n$$\\text{Li} < \\text{B} < \\text{Be} < \\text{C} < \\text{O} < \\text{N} < \\text{F} < \\text{Ne}$$\nElements with $\\text{IE}_1 > \\text{IE}_1(\\text{O})$ are:\n1. $\\text{N}$ ($1402\\text{ kJ/mol}$, due to half-filled $2p^3$ stability)\n2. $\\text{F}$ ($1681\\text{ kJ/mol}$)\n3. $\\text{Ne}$ ($2080\\text{ kJ/mol}$)\nTotal number of such elements $= 3.0$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Find the total number of elements among the following that have an endothermic (positive) first electron gain enthalpy: $\\text{Be}, \\text{N}, \\text{Ne}, \\text{Mg}, \\text{Ar}, \\text{F}, \\text{Cl}$.",
+          "image": "",
+          "correctValue": 5.0,
+          "solution": "An endothermic first electron gain enthalpy ($\\Delta_{eg}H > 0$) occurs when an atom resists adding an extra electron due to stable electronic configurations:\n1. $\\text{Be}$ ($1s^2 2s^2$, fully filled $2s$ subshell): $\\Delta_{eg}H > 0$\n2. $\\text{N}$ ($2s^2 2p^3$, half-filled $2p$ subshell): $\\Delta_{eg}H > 0$\n3. $\\text{Ne}$ ($2s^2 2p^6$, noble gas octet): $\\Delta_{eg}H > 0$\n4. $\\text{Mg}$ ($3s^2$, fully filled $3s$ subshell): $\\Delta_{eg}H > 0$\n5. $\\text{Ar}$ ($3s^2 3p^6$, noble gas octet): $\\Delta_{eg}H > 0$\nIn contrast, $\\text{F}$ and $\\text{Cl}$ are halogens that eagerly gain an electron to complete their octet (exothermic, $\\Delta_{eg}H < 0$).\nTotal count $= 5.0$."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] On Pauling's scale, the electronegativity of fluorine is defined as $4.0$. If the ionization enthalpy of an element is $12.0\\text{ eV}$ and its electron affinity is $2.0\\text{ eV}$, calculate its electronegativity on Mulliken's scale.",
+          "image": "",
+          "correctValue": 7.0,
+          "solution": "By Mulliken's definition:\n$$\\chi_M = \\frac{\\text{IE} + \\text{EA}}{2}$$\nSubstitute $\\text{IE} = 12.0\\text{ eV}$ and $\\text{EA} = 2.0\\text{ eV}$:\n$$\\chi_M = \\frac{12.0 + 2.0}{2} = \\frac{14.0}{2} = 7.0$$"
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] How many of the following species are isoelectronic with $\\text{Ar}$ ($Z = 18$)?\n$$\\text{K}^+, \\text{Ca}^{2+}, \\text{Cl}^-, \\text{S}^{2-}, \\text{P}^{3-}, \\text{Na}^+, \\text{Mg}^{2+}$$",
+          "image": "",
+          "correctValue": 5.0,
+          "solution": "Argon has $18\\text{ electrons}$. Calculate total electrons for each species:\n- $\\text{K}^+: 19 - 1 = 18$ (isoelectronic)\n- $\\text{Ca}^{2+}: 20 - 2 = 18$ (isoelectronic)\n- $\\text{Cl}^-: 17 + 1 = 18$ (isoelectronic)\n- $\\text{S}^{2-}: 16 + 2 = 18$ (isoelectronic)\n- $\\text{P}^{3-}: 15 + 3 = 18$ (isoelectronic)\n- $\\text{Na}^+: 11 - 1 = 10$ ($10$ electrons)\n- $\\text{Mg}^{2+}: 12 - 2 = 10$ ($10$ electrons)\nTotal number of species isoelectronic with $\\text{Ar} = 5.0$."
+        }
+      ]
+    }
+  ]
+}

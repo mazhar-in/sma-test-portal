@@ -1,0 +1,360 @@
+{
+  "testId": "jee-main-chem-21-p-block-group-13-14",
+  "title": "p-Block Elements: Group 13 & 14 (Electronic Configurations, Oxidation States, & Anomalous Properties)",
+  "syllabus": "Group 13 elements (Boron family: B, Al, Ga, In, Tl): General characteristics, electronic configurations, atomic and ionic radii, ionization enthalpies, and electronegativity; Inert pair effect and stability of +1 vs +3 oxidation states; Anomalous properties and diagonal relationship of boron with silicon; Electron-deficient nature, Lewis acidity of boron trihalides, structure and 3c-2e bonding in diborane (B2H6); Borax bead test, orthoboric acid (H3BO3) and its Lewis acidic behavior; Amphoteric character of Al and Ga oxides/hydroxides; Group 14 elements (Carbon family: C, Si, Ge, Sn, Pb): General trends, catenation, multiple bonding (pπ-pπ vs pπ-dπ), allotropes of carbon (diamond, graphite, fullerenes, graphene); Inert pair effect and relative stabilities of +2 vs +4 oxidation states (Sn and Pb redox behavior); Anomalous behavior of carbon; Oxides of carbon (CO, CO2), silicates and silicones structures and classifications",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The correct order of relative Lewis acid strength among boron trihalides is:",
+          "image": "",
+          "options": [
+            "$\\text{BF}_3 < \\text{BCl}_3 < \\text{BBr}_3 < \\text{BI}_3$",
+            "$\\text{BF}_3 > \\text{BCl}_3 > \\text{BBr}_3 > \\text{BI}_3$",
+            "$\\text{BCl}_3 > \\text{BF}_3 > \\text{BBr}_3 > \\text{BI}_3$",
+            "$\\text{BF}_3 < \\text{BBr}_3 < \\text{BCl}_3 < \\text{BI}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "In boron trihalides ($\\text{BX}_3$), the central boron atom has an incomplete octet with a vacant unhybridized $2p$ orbital, allowing back-donation of electron density from filled $p$-orbitals of the halogen through $p\\pi-p\\pi$ back-bonding:\n1. In $\\text{BF}_3$, there is effective $2p\\pi(\\text{B})-2p\\pi(\\text{F})$ overlap due to identical orbital size and low energy gap, substantially mitigating the electron deficiency of boron.\n2. In $\\text{BCl}_3$, $\\text{BBr}_3$, and $\\text{BI}_3$, the halogens use $3p$, $4p$, and $5p$ orbitals respectively. The mismatch in orbital size with boron's compact $2p$ orbital sharply decreases the extent of back-donation.\n3. Because back-bonding is weakest in $\\text{BI}_3$ and strongest in $\\text{BF}_3$, the tendency of boron to accept an external electron pair (Lewis acidity) follows the order:\n$$\\text{BF}_3 < \\text{BCl}_3 < \\text{BBr}_3 < \\text{BI}_3$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The relative stabilities of $+1$ and $+3$ oxidation states for Group 13 elements follow which of the following trends down the group?",
+          "image": "",
+          "options": [
+            "Stability of $+1$ state increases, while $+3$ state decreases",
+            "Stability of $+3$ state increases, while $+1$ state decreases",
+            "Stability of both $+1$ and $+3$ states increases",
+            "Stability of both $+1$ and $+3$ states decreases"
+          ],
+          "correctOption": 0,
+          "solution": "Due to the **inert pair effect**, the reluctance of the outermost valence $ns^2$ electron pair to participate in chemical bonding increases as we descend Group 13 (as intervening $d$ and $f$ electrons provide poor shielding of nuclear charge).\nConsequently:\n- The group oxidation state ($+3$) becomes progressively less stable down the group: $\\text{B}^{3+} > \\text{Al}^{3+} > \\text{Ga}^{3+} > \\text{In}^{3+} > \\text{Tl}^{3+}$.\n- The lower oxidation state ($+1$) becomes progressively more stable: $\\text{B}^+ < \\text{Al}^+ < \\text{Ga}^+ < \\text{In}^+ < \\text{Tl}^+$.\nThus, for thallium ($\\text{Tl}$), the $+1$ oxidation state is far more stable than $+3$, making $\\text{Tl}^{3+}$ a powerful oxidizing agent."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The atomic radius of gallium ($\\text{Ga}$) is slightly smaller than that of aluminum ($\\text{Al}$). This anomalous trend is primarily attributed to:",
+          "image": "",
+          "options": [
+            "Ineffective shielding of the nuclear charge by poor screening $3d$-electrons in gallium",
+            "Greater screening effect of $3p$-electrons in aluminum",
+            "Higher electropositive character of gallium",
+            "Lanthanoid contraction in gallium"
+          ],
+          "correctOption": 0,
+          "solution": "Electronic configurations:\n- $\\text{Al}: [\\text{Ne}] 3s^2 3p^1$\n- $\\text{Ga}: [\\text{Ar}] 3d^{10} 4s^2 4p^1$\nBetween aluminum and gallium, there are ten transition elements where the $3d$ subshell is progressively filled.\nBecause $d$-orbitals are diffuse in shape, they screen the outer valence $4s$ and $4p$ electrons very poorly from the increased nuclear charge ($10$ additional protons).\nThis causes an increase in effective nuclear charge ($Z_{\\text{eff}}$) for gallium, pulling the valence electrons inward.\nConsequently, the atomic radius of gallium ($135\\text{ pm}$) is slightly less than that of aluminum ($143\\text{ pm}$)."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] In the diborane molecule ($\\text{B}_2\\text{H}_6$), which of the following statements is INCORRECT?",
+          "image": "",
+          "options": [
+            "All six $\\text{B}-\\text{H}$ bonds are identical in bond length and bond strength",
+            "It contains four terminal $2\\text{c}-2\\text{e}^-$ $\\text{B}-\\text{H}$ bonds and two bridging $3\\text{c}-2\\text{e}^-$ $\\text{B}-\\text{H}-\\text{B}$ bonds",
+            "Both boron atoms are in $sp^3$ hybridization",
+            "The four terminal hydrogen atoms and the two boron atoms lie in the same plane"
+          ],
+          "correctOption": 0,
+          "solution": "In diborane ($\\text{B}_2\\text{H}_6$):\n1. The two boron atoms and the four terminal hydrogen atoms lie in one plane.\n2. The four terminal $\\text{B}-\\text{H}$ bonds are conventional two-center two-electron ($2\\text{c}-2\\text{e}^-$) covalent bonds ($119\\text{ pm}$).\n3. The two bridge hydrogen atoms lie above and below this plane, forming two three-center two-electron ($3\\text{c}-2\\text{e}^-$) banana bonds ($\text{B}-\text{H}-\text{B}$, $133\\text{ pm}$).\n4. Both boron atoms are $sp^3$ hybridized.\nBecause the bridge bonds are longer and weaker than the terminal bonds, Statement A is incorrect."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Solid $\\text{PbO}_2$ reacts with concentrated $\\text{HNO}_3$ to liberate oxygen gas, whereas $\\text{SnO}_2$ does not act as an oxidizing agent. This observation demonstrates that:",
+          "image": "",
+          "options": [
+            "$\\text{Pb}^{4+}$ is an oxidizing agent due to the inert pair effect, while $\\text{Sn}^{4+}$ is stable",
+            "$\\text{Sn}^{2+}$ is more stable than $\\text{Sn}^{4+}$",
+            "$\\text{Pb}^{2+}$ is easily oxidized to $\\text{Pb}^{4+}$",
+            "$\\text{PbO}_2$ is a basic oxide while $\\text{SnO}_2$ is amphoteric"
+          ],
+          "correctOption": 0,
+          "solution": "In Group 14, due to the inert pair effect:\n- For tin ($\\text{Sn}$), the $+4$ oxidation state is more stable than $+2$. Therefore, $\\text{Sn}^{2+}$ acts as a reducing agent (oxidizing readily to $\\text{Sn}^{4+}$).\n- For lead ($\\text{Pb}$), the $+2$ oxidation state is far more stable than $+4$. Hence, $\\text{Pb}^{4+}$ (in $\\text{PbO}_2$) readily accepts electrons to reduce to $\\text{Pb}^{2+}$, making it a powerful oxidizing agent:\n$$2\\text{PbO}_2 + 4\\text{HNO}_3 \\rightarrow 2\\text{Pb(NO}_3)_2 + 2\\text{H}_2\\text{O} + \\text{O}_2 \\uparrow$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Orthoboric acid ($\\text{H}_3\\text{BO}_3$) behaves as a monobasic acid in aqueous solution because:",
+          "image": "",
+          "options": [
+            "It acts as a Lewis acid by accepting an electron pair from a water molecule's $\\text{OH}^-$, releasing a proton",
+            "It donates one of its ionizable protons directly from an internal $-\\text{OH}$ group",
+            "It forms a stable dibasic adduct with hydronium ions",
+            "It undergoes disproportionation into metaboric acid and boric oxide"
+          ],
+          "correctOption": 0,
+          "solution": "Orthoboric acid ($\\text{B(OH)}_3$) is not a typical Brønsted-Lowry proton donor. Boron has only six valence electrons and an incomplete octet (Lewis acid).\nIn aqueous solution, it accepts a pair of electrons from the oxygen of a water molecule (acting as a Lewis acid), thereby releasing a hydronium ion:\n$$\\text{B(OH)}_3(aq) + 2\\text{H}_2\\text{O}(l) \\rightleftharpoons [\\text{B(OH)}_4]^-(aq) + \\text{H}_3\\text{O}^+(aq) \\quad (pK_a \\approx 9.25)$$\nHence, it behaves as a weak monobasic Lewis acid."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Catenation tendency among Group 14 elements follows which of the following orders?",
+          "image": "",
+          "options": [
+            "$\\text{C} \\gg \\text{Si} > \\text{Ge} \\approx \\text{Sn} > \\text{Pb}$",
+            "$\\text{C} < \\text{Si} < \\text{Ge} < \\text{Sn} < \\text{Pb}$",
+            "$\\text{Si} > \\text{C} > \\text{Ge} > \\text{Sn} > \\text{Pb}$",
+            "$\\text{C} \\gg \\text{Pb} > \\text{Sn} > \\text{Ge} > \\text{Si}$"
+          ],
+          "correctOption": 0,
+          "solution": "Catenation (the ability of an element to form covalent bonds with atoms of the same kind to form long chains or rings) depends primarily on the element-element bond dissociation enthalpy:\n- $\\text{C}-\\text{C}$: $348\\text{ kJ/mol}$\n- $\\text{Si}-\\text{Si}$: $297\\text{ kJ/mol}$\n- $\\text{Ge}-\\text{Ge}$: $260\\text{ kJ/mol}$\n- $\\text{Sn}-\\text{Sn}$: $240\\text{ kJ/mol}$\n- $\\text{Pb}-\\text{Pb}$: negligible\nBecause the carbon-carbon single bond is exceptionally strong due to small atomic size and effective overlap, catenation is maximal in carbon and decreases sharply down the group:\n$$\\text{C} \\gg \\text{Si} > \\text{Ge} \\approx \\text{Sn} > \\text{Pb}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following statements about fullerenes (such as $\\text{C}_{60}$) is TRUE?",
+          "image": "",
+          "options": [
+            "$\\text{C}_{60}$ contains $20$ six-membered rings and $12$ five-membered rings",
+            "$\\text{C}_{60}$ contains $12$ six-membered rings and $20$ five-membered rings",
+            "All carbon atoms in fullerenes are $sp^3$ hybridized",
+            "Five-membered rings can be fused to other five-membered rings"
+          ],
+          "correctOption": 0,
+          "solution": "Buckminsterfullerene ($\\text{C}_{60}$) has a soccer-ball cage structure (truncated icosahedron):\n1. It consists of $20$ six-membered hexagonal rings and $12$ five-membered pentagonal rings (Euler's polyhedral theorem requires exactly 12 pentagons to close a trivalent cage).\n2. Six-membered rings can be fused to both other six-membered rings and five-membered rings.\n3. Five-membered rings are isolated and fused ONLY to six-membered rings (Isolated Pentagon Rule).\n4. All carbon atoms are $sp^2$ hybridized with slight pyramidalization."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] When carbon tetrachloride ($\\text{CCl}_4$) and silicon tetrachloride ($\\text{SiCl}_4$) are treated with water, which of the following behaviors is observed?",
+          "image": "",
+          "options": [
+            "$\\text{SiCl}_4$ undergoes rapid hydrolysis, whereas $\\text{CCl}_4$ is completely inert towards hydrolysis",
+            "$\\text{CCl}_4$ undergoes rapid hydrolysis, while $\\text{SiCl}_4$ does not hydrolyze",
+            "Both hydrolyze with equal rates",
+            "Neither compound undergoes hydrolysis under standard conditions"
+          ],
+          "correctOption": 0,
+          "solution": "Hydrolysis of halides occurs by nucleophilic attack of a water molecule lone pair on the central atom:\n1. In $\\text{CCl}_4$, carbon belongs to Period 2 and has only $2s$ and $2p$ valence orbitals. Because it lacks low-lying vacant $d$-orbitals, it cannot expand its coordination number beyond four to accept an incoming lone pair from $\\text{H}_2\\text{O}$. Furthermore, carbon is sterically shielded by four chlorine atoms. Thus, $\\text{CCl}_4$ is inert to hydrolysis.\n2. In $\\text{SiCl}_4$, silicon belongs to Period 3 and possesses vacant $3d$-orbitals. Silicon readily expands its coordination sphere to coordinate with water (forming an unstable pentacoordinate intermediate $[\\text{SiCl}_4(\\text{H}_2\\text{O})]$), hydrolyzing completely to silicic acid ($\\text{H}_4\\text{SiO}_4$ or $\\text{SiO}_2 \\cdot 2\\text{H}_2\\text{O}$) and $\\text{HCl}$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The borax bead test with copper sulfate in an oxidizing flame produces a bead with which of the following colors in the cold?",
+          "image": "",
+          "options": [
+            "Blue",
+            "Red",
+            "Green",
+            "Colorless"
+          ],
+          "correctOption": 0,
+          "solution": "In the borax bead test:\n1. On heating, borax loses its water of crystallization and swells, then melts to form a clear transparent vitreous bead composed of sodium metaborate and boric anhydride:\n$$\\text{Na}_2\\text{B}_4\\text{O}_7 \\cdot 10\\text{H}_2\\text{O} \\xrightarrow{\\Delta} \\text{Na}_2\\text{B}_4\\text{O}_7 \\xrightarrow{\\Delta} 2\\text{NaBO}_2 + \\text{B}_2\\text{O}_3$$\n2. When reacted with copper sulfate in an oxidizing flame, cupric metaborate is formed:\n$$\\text{CuO} + \\text{B}_2\\text{O}_3 \\rightarrow \\text{Cu(BO}_2)_2$$\nCupric metaborate ($\\text{Cu(BO}_2)_2$) gives a characteristic dark **blue** bead in the cold (and green when hot)."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The basic structural building unit of all silicate minerals is:",
+          "image": "",
+          "options": [
+            "$[\\text{SiO}_4]^{4-}$ tetrahedron",
+            "$[\\text{SiO}_3]^{2-}$ chain",
+            "$[\\text{Si}_2\\text{O}_7]^{6-}$ pyrosilicate",
+            "$[\\text{SiO}_2]$ network"
+          ],
+          "correctOption": 0,
+          "solution": "The fundamental building block of all naturally occurring and synthetic silicates is the discrete $[\\text{SiO}_4]^{4-}$ tetrahedral unit.\nIn this unit, the central silicon atom is $sp^3$ hybridized and covalently bonded to four oxygen atoms located at the corners of a regular tetrahedron.\nDifferent classes of silicates (ortho-, pyro-, cyclic, chain, sheet, and three-dimensional framework silicates) arise from sharing $0, 1, 2, 3,$ or $4$ corner oxygen atoms between adjacent $[\\text{SiO}_4]^{4-}$ tetrahedra."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following elements in Group 13 forms a hydride that is an electron-precise ionic solid at room temperature?",
+          "image": "",
+          "options": [
+            "None of the Group 13 elements",
+            "Boron",
+            "Aluminum",
+            "Gallium"
+          ],
+          "correctOption": 0,
+          "solution": "Group 13 elements possess three valence electrons ($ns^2 np^1$).\nWhen they form binary covalent hydrides ($MH_3$), they have only six valence electrons surrounding the central metal atom, making them inherently electron-deficient (such as the bridged polymers in $\\text{B}_2\\text{H}_6$ or polymeric $(\\text{AlH}_3)_n$).\nNone of the Group 13 hydrides are electron-precise or form simple ionic salt-like hydrides under standard conditions (ionic hydrides are characteristic of alkali and alkaline earth metals in the s-block)."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] The reaction of dimethyldichlorosilane, $(\\text{CH}_3)_2\\text{SiCl}_2$, with water followed by condensation polymerization yields:",
+          "image": "",
+          "options": [
+            "Linear chain silicone",
+            "Cross-linked silicone",
+            "Silica gel",
+            "Cyclic trimer only"
+          ],
+          "correctOption": 0,
+          "solution": "1. Hydrolysis of dimethyldichlorosilane replaces the chlorine atoms with hydroxyl groups:\n$$(\\text{CH}_3)_2\\text{SiCl}_2 + 2\\text{H}_2\\text{O} \\rightarrow (\\text{CH}_3)_2\\text{Si(OH)}_2 + 2\\text{HCl}$$\n2. The resulting dimethylsilanediol possesses two reactive $-\\text{OH}$ groups. Intermolecular dehydration condensation between terminal silanol groups leads to propagation along a single direction:\n$$\\dots-\\text{O}-\\text{Si}(\\text{CH}_3)_2-\\text{O}-\\text{Si}(\\text{CH}_3)_2-\\text{O}-\\dots$$\nThis produces a **linear chain silicone polymer** (or cyclic oligomers like $(\\text{Me}_2\\text{SiO})_n$). Cross-linked polymers require trichlorosilanes ($\\text{RSiCl}_3$)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In graphite, the hybridization of each carbon atom and the electrical conductivity along the hexagonal sheets are due to:",
+          "image": "",
+          "options": [
+            "$sp^2$, delocalized $\\pi$-electrons mobile within the hexagonal planes",
+            "$sp^3$, mobility of $\\sigma$-bonding electrons",
+            "$sp$, delocalized $\\pi$-electrons traversing perpendicular to planes",
+            "$sp^2$, presence of free interstitial metal cations"
+          ],
+          "correctOption": 0,
+          "solution": "In graphite:\n1. Each carbon atom is $sp^2$ hybridized and forms three planar $\\sigma$ bonds with adjacent carbon atoms at $120^\\circ$, creating two-dimensional hexagonal layers (graphene sheets).\n2. The fourth valence electron of each carbon occupies an unhybridized $2p_z$ orbital oriented perpendicular to the layer.\n3. These $p$-orbitals overlap extensively to produce a continuous delocalized $\\pi$-electron cloud extending across the entire sheet.\n4. Under an applied electric potential, these delocalized electrons move freely within the parallel planes, imparting high electrical and thermal conductivity along the sheets."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Why does boron form only $\\text{BF}_4^-$ and cannot form $\\text{BF}_6^{3-}$, whereas aluminum readily forms $\\text{AlF}_6^{3-}$?",
+          "image": "",
+          "options": [
+            "Boron has no vacant $d$-orbitals in its second principal shell, limiting its maximum covalency to $4$",
+            "Boron has a higher electronegativity than aluminum",
+            "Aluminum has a lower ionization enthalpy",
+            "$\\text{BF}_6^{3-}$ is destabilized by strong $p\\pi-p\\pi$ back bonding"
+          ],
+          "correctOption": 0,
+          "solution": "1. Boron has the valence electronic configuration $2s^2 2p^1$. In its second principal quantum shell ($n = 2$), there are only four atomic orbitals available for bonding: one $2s$ and three $2p$. Due to the complete absence of $d$-orbitals in Period 2, boron cannot expand its valence shell beyond an octet; its maximum coordination number (covalency) is strictly limited to $4$ (as in $[\\text{BF}_4]^-$).\n2. Aluminum has the valence configuration $3s^2 3p^1 3d^0$. It has low-lying vacant $3d$-orbitals, enabling it to expand its coordination number to $6$ to form octahedral complexes like $[\\text{AlF}_6]^{3-}$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] When anhydrous aluminum chloride ($\\text{AlCl}_3$) is dissolved in water, the major ionic species present in solution is:",
+          "image": "",
+          "options": [
+            "$[\\text{Al}(\\text{H}_2\\text{O})_6]^{3+}$ and $3\\text{Cl}^-$",
+            "$\\text{Al}^{3+}$ and $3\\text{Cl}^-$",
+            "$[\\text{AlCl}_4]^-$ and $[\\text{Al}(\\text{H}_2\\text{O})_6]^{3+}$",
+            "$\\text{Al}_2\\text{O}_3$ precipitate"
+          ],
+          "correctOption": 0,
+          "solution": "Anhydrous $\\text{AlCl}_3$ is a covalent dimer ($\\text{Al}_2\\text{Cl}_6$) in the solid and vapor state.\nWhen dissolved in water, the exceptionally high hydration enthalpy of the small, highly charged $\\text{Al}^{3+}$ ion ($\\Delta H_{\\text{hyd}} \\approx -4665\\text{ kJ/mol}$) overcomes the covalent lattice and ionization energies.\nIt cleaves the chloride bridges and coordinates with six water molecules to form the octahedral hexaaqua complex cation:\n$$\\text{AlCl}_3(s) + 6\\text{H}_2\\text{O}(l) \\rightarrow [\\text{Al}(\\text{H}_2\\text{O})_6]^{3+}(aq) + 3\\text{Cl}^-(aq)$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Carbon monoxide acts as a deadly poison in humans primarily because:",
+          "image": "",
+          "options": [
+            "It binds to hemoglobin with an affinity roughly $200-300$ times greater than that of oxygen, forming carboxyhemoglobin",
+            "It oxidizes iron(II) in hemoglobin to iron(III)",
+            "It hydrolyzes in blood to form toxic formic acid",
+            "It rapidly reacts with carbon dioxide to deplete cellular oxygen"
+          ],
+          "correctOption": 0,
+          "solution": "Carbon monoxide ($\\text{CO}$) is a strong $\\sigma$-donor and $\\pi$-acceptor ligand.\nIt binds reversibly to the $\\text{Fe}^{2+}$ center in hemoglobin to form carboxyhemoglobin:\n$$\\text{Hb} + \\text{CO} \\rightleftharpoons \\text{HbCO}$$\nThe stability constant of carboxyhemoglobin is approximately $200-300\\text{ times}$ greater than that of oxyhemoglobin ($\\text{HbO}_2$).\nThis irreversible occupation blocks the binding sites for oxygen transport, causing cellular asphyxiation and death."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following statements regarding the oxides of carbon is FALSE?",
+          "image": "",
+          "options": [
+            "$\\text{CO}$ is an acidic oxide that readily dissolves in water to form carbonic acid",
+            "$\\text{CO}_2$ is an acidic oxide that forms carbonic acid with water",
+            "$\\text{CO}$ is a neutral oxide and acts as a powerful reducing agent at elevated temperatures",
+            "$\\text{CO}_2$ has a linear geometry and a net dipole moment of zero"
+          ],
+          "correctOption": 0,
+          "solution": "1. Carbon monoxide ($\\text{CO}$) is almost insoluble in water and is classified as a **neutral oxide** (it does not form an acid with water and does not react with aqueous bases at room temperature).\n2. In contrast, carbon dioxide ($\\text{CO}_2$) is an acidic oxide that dissolves in water to produce carbonic acid ($\\text{H}_2\\text{CO}_3$).\nTherefore, Statement A is false."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In pyrosilicates, how many oxygen atoms are shared per $[\\text{SiO}_4]^{4-}$ tetrahedron?",
+          "image": "",
+          "options": [
+            "$1$",
+            "$2$",
+            "$3$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "In pyrosilicates (also called sorosilicates or island silicates), two $[\\text{SiO}_4]^{4-}$ tetrahedra are joined together by sharing exactly **one** corner oxygen atom between them.\nFormula of pyrosilicate ion:\n$$2[\\text{SiO}_4]^{4-} - \\text{O}^{2-} = [\\text{Si}_2\\text{O}_7]^{6-}$$\nExamples include thortveitite ($\\text{Sc}_2\\text{Si}_2\\text{O}_7$) and hemimorphite ($\\text{Zn}_4(\\text{OH})_2\\text{Si}_2\\text{O}_7 \\cdot \\text{H}_2\\text{O}$)."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Heating orthoboric acid ($\\text{H}_3\\text{BO}_3$) above $370\\text{ K}$ initially yields substance $X$, which on further red heat decomposes to form $Y$. $X$ and $Y$ are respectively:",
+          "image": "",
+          "options": [
+            "$\\text{HBO}_2$ and $\\text{B}_2\\text{O}_3$",
+            "$\\text{B}_2\\text{O}_3$ and $\\text{HBO}_2$",
+            "$\\text{H}_2\\text{B}_4\\text{O}_7$ and $\\text{B}$",
+            "$\\text{B}_2\\text{H}_6$ and $\\text{B}_2\\text{O}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "Thermal decomposition of orthoboric acid occurs in a stepwise manner:\n1. Heated gently to $\\approx 370-375\\text{ K}$, it loses water to form metaboric acid ($\\text{HBO}_2$):\n$$\\text{H}_3\\text{BO}_3 \\xrightarrow{\\Delta, 373\\text{ K}} \\text{HBO}_2 + \\text{H}_2\\text{O}$$\n2. On heating $\\text{HBO}_2$ to red heat, it loses more water to yield boric oxide / boric anhydride ($\\text{B}_2\\text{O}_3$):\n$$2\\text{HBO}_2 \\xrightarrow{\\text{red heat}} \\text{B}_2\\text{O}_3 + \\text{H}_2\\text{O}$$\nThus, $X$ is $\\text{HBO}_2$ and $Y$ is $\\text{B}_2\\text{O}_3$."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Find the total number of bridging hydrogen atoms present in one molecule of diborane ($\\text{B}_2\\text{H}_6$).",
+          "image": "",
+          "correctValue": 2.0,
+          "solution": "In diborane ($\\text{B}_2\\text{H}_6$):\n- There are $4$ terminal hydrogen atoms, each involved in a standard two-center two-electron ($2\\text{c}-2\\text{e}^-$) $\\text{B}-\\text{H}$ bond.\n- There are $2$ bridge hydrogen atoms, each forming a three-center two-electron ($3\\text{c}-2\\text{e}^-$) bent $\\text{B}-\\text{H}-\\text{B}$ bond.\nThus, the total number of bridging hydrogen atoms is $2.0$."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] Find the number of five-membered rings present in one molecule of Buckminsterfullerene ($\\text{C}_{60}$).",
+          "image": "",
+          "correctValue": 12.0,
+          "solution": "A $\\text{C}_{60}$ fullerene molecule possesses a truncated icosahedral cage geometry.\nAccording to Euler's polyhedral formula, the cage consists of:\n- $20$ six-membered hexagonal rings\n- $12$ five-membered pentagonal rings\nThus, the number of five-membered rings is $12.0$."
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] What is the oxidation state of lead in minium (red lead, $\\text{Pb}_3\\text{O}_4$) when treated as a mixed oxide $2\\text{PbO} \\cdot \\text{PbO}_2$? Find the oxidation state of lead in the $\\text{PbO}_2$ constituent.",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "Red lead ($\\text{Pb}_3\\text{O}_4$) is a mixed oxide with stoichiometric composition $2\\text{PbO} \\cdot \\text{PbO}_2$:\n- In $\\text{PbO}$ (lead(II) oxide), the oxidation state of lead is $+2$.\n- In $\\text{PbO}_2$ (lead(IV) oxide), the oxidation state of lead is $+4$.\nThus, the oxidation state of lead in the $\\text{PbO}_2$ component is $4.0$."
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the total number of $\\text{B}-\\text{O}-\\text{B}$ bridge linkages present in a single borate anion unit of crystalline borax, $[\\text{B}_4\\text{O}_5(\\text{OH})_4]^{2-}$.",
+          "image": "",
+          "correctValue": 5.0,
+          "solution": "The structural formula of borax is $\\text{Na}_2[\\text{B}_4\\text{O}_5(\\text{OH})_4] \\cdot 8\\text{H}_2\\text{O}$.\nThe central bicyclic ring of the polyanion $[\\text{B}_4\\text{O}_5(\\text{OH})_4]^{2-}$ consists of:\n- Two $sp^2$ hybridized planar $\\text{BO}_3$ units\n- Two $sp^3$ hybridized tetrahedral $\\text{BO}_4$ units\n- Four $-\\text{OH}$ groups bonded to the four boron atoms\n- Five oxygen bridges ($\\text{B}-\\text{O}-\\text{B}$ linkages), with four forming the outer cyclic framework and one cross-ring bridge linking the two tetrahedral borons.\nTherefore, the number of $\\text{B}-\\text{O}-\\text{B}$ linkages is $5.0$."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Among the following halides: $\\text{BF}_3, \\text{BCl}_3, \\text{AlCl}_3, \\text{SiCl}_4, \\text{CCl}_4, \\text{SnCl}_2, \\text{PbCl}_4$, how many act as Lewis acids under standard conditions?",
+          "image": "",
+          "correctValue": 6.0,
+          "solution": "Assess Lewis acidity (ability to accept an electron pair):\n1. $\\text{BF}_3$: Incomplete octet (6 valence electrons) $\\implies$ Lewis acid\n2. $\\text{BCl}_3$: Incomplete octet (6 valence electrons) $\\implies$ Lewis acid\n3. $\\text{AlCl}_3$: Incomplete octet in monomer, forms adducts with donors $\\implies$ Lewis acid\n4. $\\text{SiCl}_4$: Has vacant $3d$-orbitals, expands coordination sphere $\\implies$ Lewis acid\n5. $\\text{CCl}_4$: Complete octet, no vacant $d$-orbitals, sterically hindered $\\implies$ Not a Lewis acid\n6. $\\text{SnCl}_2$: Incomplete valence shell and vacant $d$-orbitals, forms $[\\text{SnCl}_3]^-$ $\\implies$ Lewis acid\n7. $\\text{PbCl}_4$: Accepts electron pairs into vacant $d$-orbitals (forms $[\\text{PbCl}_6]^{2-}$) $\\implies$ Lewis acid\nTotal count $= 6.0$ (all except $\\text{CCl}_4$)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,361 @@
+{
+  "testId": "jee-main-chem-30-amines-biomolecules-practical-analysis",
+  "title": "Amines, Biomolecules & Practical Analysis (Amine Basicity, Carbohydrates, Proteins, & Qualitative/Quantitative Analysis)",
+  "syllabus": "Amines: Classification, preparation (reduction of nitro compounds, nitriles, amides, Gabriel phthalimide synthesis, Hoffmann bromamide degradation), physical properties, basic strength (gas phase vs aqueous solutions, steric and solvation effects), chemical reactions (carbylamine test, Hinsberg test, diazotization, azo coupling, reaction with nitrous acid); Biomolecules: Carbohydrates (classification, aldoses and ketoses, D/L-configuration, open and cyclic structures of glucose and fructose, mutarotation, glycosidic linkage, reducing and non-reducing sugars: sucrose, maltose, lactose, polysaccharides: starch and cellulose), Proteins (amino acids, zwitterion, isoelectric point, peptide bond, primary/secondary/tertiary/quaternary structures, α-helix and β-pleated sheet, denaturation), Nucleic acids (chemical composition of DNA and RNA, nucleosides, nucleotides, double helix), Vitamins; Practical Organic Chemistry: Qualitative detection of extra elements (N, S, Halogens) via Lassaigne's test, detection of functional groups (unsaturation, alcoholic, phenolic, aldehydic, ketonic, carboxylic, amino), quantitative estimation (Dumas and Kjeldahl methods for nitrogen, Carius method for halogens and sulfur, Liebig method for carbon and hydrogen)",
+  "exam": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] In the Lassaigne's test for detection of nitrogen, sodium fusion extract is boiled with $\\text{FeSO}_4$ and then acidified with concentrated $\\text{H}_2\\text{SO}_4$. The Prussian blue color obtained is due to the formation of:",
+          "image": "",
+          "options": [
+            "$\\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_3$",
+            "$\\text{Fe}_3[\\text{Fe}(\\text{CN})_6]_2$",
+            "$\\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_2$",
+            "$\\text{Na}_4[\\text{Fe}(\\text{CN})_5\\text{NOS}]$"
+          ],
+          "correctOption": 0,
+          "solution": "In Lassaigne's test for nitrogen:\n1. Sodium combines with carbon and nitrogen from the organic compound to form sodium cyanide:\n$$\\text{Na} + \\text{C} + \\text{N} \\xrightarrow{\\Delta} \\text{NaCN}$$\n2. Boiling the extract with iron(II) sulfate ($\\text{FeSO}_4$) generates sodium hexacyanidoferrate(II):\n$$\\text{FeSO}_4 + 2\\text{NaOH} \\rightarrow \\text{Fe(OH)}_2 + \\text{Na}_2\\text{SO}_4$$\n$$\\text{Fe(OH)}_2 + 6\\text{NaCN} \\rightarrow \\text{Na}_4[\\text{Fe}(\\text{CN})_6] + 2\\text{NaOH}$$\n3. Upon acidification with concentrated $\\text{H}_2\\text{SO}_4$, some $\\text{Fe}^{2+}$ is oxidized to $\\text{Fe}^{3+}$, which reacts with hexacyanidoferrate(II) to form a Prussian blue complex (iron(III) hexacyanidoferrate(II)):\n$$4\\text{Fe}^{3+} + 3[\\text{Fe}(\\text{CN})_6]^{4-} \\rightarrow \\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_3 \\cdot x\\text{H}_2\\text{O} \\downarrow$$\nTherefore, Prussian blue is $\\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_3$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The correct decreasing order of basic strength of ethyl-substituted amines and ammonia in aqueous solution is:",
+          "image": "",
+          "options": [
+            "$(\\text{C}_2\\text{H}_5)_2\\text{NH} > (\\text{C}_2\\text{H}_5)_3\\text{N} > \\text{C}_2\\text{H}_5\\text{NH}_2 > \\text{NH}_3$",
+            "$(\\text{C}_2\\text{H}_5)_2\\text{NH} > \\text{C}_2\\text{H}_5\\text{NH}_2 > (\\text{C}_2\\text{H}_5)_3\\text{N} > \\text{NH}_3$",
+            "$(\\text{C}_2\\text{H}_5)_3\\text{N} > (\\text{C}_2\\text{H}_5)_2\\text{NH} > \\text{C}_2\\text{H}_5\\text{NH}_2 > \\text{NH}_3$",
+            "\\text{C}_2\\text{H}_5\\text{NH}_2 > (\\text{C}_2\\text{H}_5)_2\\text{NH} > (\\text{C}_2\\text{H}_5)_3\\text{N} > \\text{NH}_3"
+          ],
+          "correctOption": 0,
+          "solution": "In aqueous solution, the basicity order of substituted amines is determined by a combination of the $+I$ inductive effect, extent of hydration of the conjugate ammonium cation, and steric hindrance of the alkyl groups:\n- For the **ethyl group** (bulky alkyl group), the inductive and steric-hydration balances result in the stability sequence: $2^\\circ > 3^\\circ > 1^\\circ > \\text{NH}_3$.\n- Therefore, diethylamine is the strongest base, followed by triethylamine, then ethylamine, and finally ammonia:\n$$(\\text{C}_2\\text{H}_5)_2\\text{NH} > (\\text{C}_2\\text{H}_5)_3\\text{N} > \\text{C}_2\\text{H}_5\\text{NH}_2 > \\text{NH}_3$$\n(For methyl-substituted amines, the order is $2^\\circ > 1^\\circ > 3^\\circ > \\text{NH}_3$)."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] In sucrose, the glycosidic linkage is formed between which carbon atoms of $\\alpha\\text{-D-glucopyranose}$ and $\\beta\\text{-D-fructofuranose}$?",
+          "image": "",
+          "options": [
+            "$\\text{C}_1$ of $\\alpha\\text{-D-glucose}$ and $\\text{C}_2$ of $\\beta\\text{-D-fructose}$",
+            "$\\text{C}_1$ of $\\alpha\\text{-D-glucose}$ and $\\text{C}_4$ of $\\beta\\text{-D-fructose}$",
+            "$\\text{C}_1$ of $\\alpha\\text{-D-glucose}$ and $\\text{C}_1$ of $\\beta\\text{-D-fructose}$",
+            "$\\text{C}_2$ of $\\alpha\\text{-D-glucose}$ and $\\text{C}_1$ of $\\beta\\text{-D-fructose}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Sucrose is a disaccharide composed of $\\alpha\\text{-D-glucopyranose}$ and $\\beta\\text{-D-fructofuranose}$.\n2. The glycosidic bond joins the anomeric carbon $\\text{C}_1$ of glucose and the anomeric carbon $\\text{C}_2$ of fructose:\n$$\\text{C}_1(\\alpha\\text{-glucose}) - \\text{O} - \\text{C}_2(\\beta\\text{-fructose})$$\n3. Because both reducing centers (anomeric hemiacetal and hemiketal carbons) are locked in the glycosidic linkage, sucrose contains no free functional group to undergo mutarotation or reduce Fehling's/Tollens' reagent, making it a non-reducing sugar."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An amine $X$ reacts with benzene sulfonyl chloride (Hinsberg's reagent) to form a white precipitate that is INSOLUBLE in aqueous $\\text{KOH}$. The amine $X$ is:",
+          "image": "",
+          "options": [
+            "A secondary amine",
+            "A primary amine",
+            "A tertiary amine",
+            "A quaternary ammonium salt"
+          ],
+          "correctOption": 0,
+          "solution": "Hinsberg's test differentiates primary, secondary, and tertiary amines:\n1. **Primary amines ($1^\\circ$):** Form an N-alkylbenzene sulfonamide containing an acidic hydrogen on nitrogen ($-\\text{SO}_2\\text{NHR}$), which dissolves in aqueous $\\text{KOH}$ to give a clear solution.\n2. **Secondary amines ($2^\\circ$):** React to form an N,N-dialkylbenzene sulfonamide ($-\\text{SO}_2\\text{NR}_2$). Since there is no acidic hydrogen attached to the nitrogen atom, this derivative is **insoluble in aqueous $\\text{KOH}$**.\n3. **Tertiary amines ($3^\\circ$):** Do not react with benzene sulfonyl chloride under these conditions.\nThus, amine $X$ is a secondary amine."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] In a Kjeldahl estimation of nitrogen, $0.5\\text{ g}$ of an organic compound was digested and the liberated ammonia was absorbed in $50\\text{ mL}$ of $0.1\\text{ M } \\text{H}_2\\text{SO}_4$. The excess acid required $60\\text{ mL}$ of $0.1\\text{ M } \\text{NaOH}$ for complete neutralization. The percentage of nitrogen in the compound is:",
+          "image": "",
+          "options": [
+            "$11.2\\%$",
+            "$22.4\\%$",
+            "$14.0\\%$",
+            "$5.6\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate milliequivalents of initial $\\text{H}_2\\text{SO}_4$:\n$$\\text{Normality of } \\text{H}_2\\text{SO}_4 = M \\times n\\text{-factor} = 0.1 \\times 2 = 0.2\\text{ N}$$\n$$\\text{Initial mEq of } \\text{H}_2\\text{SO}_4 = 50\\text{ mL} \\times 0.2\\text{ N} = 10\\text{ mEq}$$\n2. Calculate milliequivalents of excess $\\text{H}_2\\text{SO}_4$ neutralized by $\\text{NaOH}$:\n$$\\text{Excess mEq} = 60\\text{ mL} \\times 0.1\\text{ N} = 6\\text{ mEq}$$\n3. Milliequivalents of acid consumed by ammonia:\n$$\\text{mEq consumed by } \\text{NH}_3 = 10 - 6 = 4\\text{ mEq}$$\n4. Using the standard formula for Kjeldahl's method:\n$$\\%\\text{ N} = \\frac{1.4 \\times (\\text{mEq of acid consumed})}{w} = \\frac{1.4 \\times 4}{0.5\\text{ g}} = \\frac{5.6}{0.5} = 11.2\\%$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The secondary structure of proteins (such as $\\alpha$-helix and $\\beta$-pleated sheet) is maintained primarily by:",
+          "image": "",
+          "options": [
+            "Hydrogen bonds between the carbonyl oxygen ($-\\text{C}=\\text{O}$) and amide hydrogen ($-\\text{NH}-$) of the peptide backbone",
+            "Covalent disulfide cross-linkages between cysteine residues",
+            "Hydrophobic interactions between non-polar side chains",
+            "Electrostatic salt bridges between charged residues"
+          ],
+          "correctOption": 0,
+          "solution": "1. The secondary structure of proteins refers to the localized spatial conformation of the polypeptide backbone.\n2. Both the $\\alpha$-helix and $\\beta$-pleated sheet conformations are stabilized by regular **hydrogen bonding** between the carbonyl oxygen ($-\\text{C}=\\text{O}$) of one peptide link and the amino hydrogen ($-\\text{NH}-$) of another peptide bond along the chain.\n3. Disulfide bonds, ionic attractions, and hydrophobic interactions primarily stabilize the higher-order tertiary and quaternary structures."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Which of the following compounds gives the Carbylamine test (forms an intensely foul-smelling isocyanide on heating with chloroform and alcoholic $\\text{KOH}$)?",
+          "image": "",
+          "options": [
+            "Aniline ($\\text{C}_6\\text{H}_5\\text{NH}_2$)",
+            "N-Methylaniline ($\\text{C}_6\\text{H}_5\\text{NHCH}_3$)",
+            "N,N-Dimethylaniline ($\\text{C}_6\\text{H}_5\\text{N}(\\text{CH}_3)_2$)",
+            "Acetamide ($\\text{CH}_3\\text{CONH}_2$)"
+          ],
+          "correctOption": 0,
+          "solution": "The **carbylamine test** (isocyanide test) is a specific diagnostic reaction for **primary aliphatic and aromatic amines**:\n$$\\text{R}-\\text{NH}_2 + \\text{CHCl}_3 + 3\\text{KOH}(\\text{alc.}) \\xrightarrow{\\Delta} \\text{R}-\\text{NC} \\text{ (carbylamine/isocyanide)} + 3\\text{KCl} + 3\\text{H}_2\\text{O}$$\n1. Aniline ($\\text{C}_6\\text{H}_5\\text{NH}_2$) is a primary aromatic amine, so it gives a positive test by forming phenyl isocyanide ($\\text{C}_6\\text{H}_5\\text{NC}$).\n2. Secondary amines, tertiary amines, and amides do not produce carbylamines under these conditions."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] An organic compound containing nitrogen and sulfur was fused with sodium metal. The sodium fusion extract on treatment with $\\text{FeCl}_3$ solution produced a blood-red coloration. The compound responsible for this color is:",
+          "image": "",
+          "options": [
+            "$[\\text{Fe}(\\text{SCN})]^{2+}$",
+            "$\\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_3$",
+            "$\\text{Na}_2[\\text{Fe}(\\text{CN})_5\\text{NO}]$",
+            "$\\text{FeS}$"
+          ],
+          "correctOption": 0,
+          "solution": "When both nitrogen and sulfur are present in an organic compound:\n1. Sodium fusion converts both elements into sodium thiocyanate:\n$$\\text{Na} + \\text{C} + \\text{N} + \\text{S} \\xrightarrow{\\Delta} \\text{NaSCN}$$\n2. In the absence of an excess of sodium metal (which would decompose $\\text{NaSCN}$ into $\\text{Na}_2\\text{S}$ and $\\text{NaCN}$), addition of iron(III) chloride gives a characteristic **blood-red coloration** due to the formation of the thiocyanatoiron(III) complex:\n$$\\text{Fe}^{3+} + \\text{SCN}^- \\rightarrow [\\text{Fe}(\\text{SCN})]^{2+} \\quad (\\text{or } [\\text{Fe}(\\text{SCN})_3] / [\\text{Fe}(\\text{H}_2\\text{O})_5(\\text{SCN})]^{2+})$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Which of the following amino acids is NOT optically active?",
+          "image": "",
+          "options": [
+            "Glycine",
+            "Alanine",
+            "Valine",
+            "Leucine"
+          ],
+          "correctOption": 0,
+          "solution": "An amino acid is optically active if its $\\alpha$-carbon is asymmetric (chiral, bonded to four distinct substituents: $-\\text{COOH}, -\\text{NH}_2, -\\text{H},$ and $-\\text{R}$):\n1. In **glycine**, the side chain group $-\\text{R}$ is a hydrogen atom ($-\\text{H}$):\n$$\\text{H}_2\\text{N}-\\text{CH}_2-\\text{COOH}$$\n2. The $\\alpha$-carbon is bonded to two identical hydrogen atoms, making it achiral.\n3. All other naturally occurring proteinogenic $\\alpha$-amino acids (such as alanine, valine, and leucine) possess a chiral $\\alpha$-carbon and are optically active."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] In the Carius method for estimation of halogen, $0.20\\text{ g}$ of an organic compound gave $0.188\\text{ g}$ of $\\text{AgBr}$. The percentage of bromine in the compound is: (Molar masses: $\\text{Ag} = 108\\text{ g/mol}, \\text{Br} = 80\\text{ g/mol}$)",
+          "image": "",
+          "options": [
+            "$40.0\\%$",
+            "$30.0\\%$",
+            "$20.0\\%$",
+            "$50.0\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Molar mass of $\\text{AgBr} = 108 + 80 = 188\\text{ g/mol}$.\n2. Mass of bromine present in $0.188\\text{ g}$ of $\\text{AgBr}$:\n$$\\text{Mass of Br} = \\frac{80}{188} \\times 0.188\\text{ g} = 0.080\\text{ g}$$\n3. Percentage of bromine in the compound:\n$$\\%\\text{ Br} = \\frac{\\text{Mass of Br}}{\\text{Mass of compound}} \\times 100 = \\frac{0.080\\text{ g}}{0.20\\text{ g}} \\times 100 = 40.0\\%$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] Glucose on prolonged heating with concentrated hydriodic acid ($\\text{HI}$) and red phosphorus yields:",
+          "image": "",
+          "options": [
+            "n-Hexane",
+            "Gluconic acid",
+            "Saccharic acid",
+            "Hexan-2-one"
+          ],
+          "correctOption": 0,
+          "solution": "Prolonged heating with hydroiodic acid ($\\text{HI}$) and red phosphorus is a vigorous reducing procedure that reduces all alcohol ($-\\text{OH}$) and carbonyl ($-\\text{CHO}$) functions to saturated hydrocarbons:\n$$\\text{CHO}-(\\text{CHOH})_4-\\text{CH}_2\\text{OH} \\xrightarrow{\\text{HI}, \\text{Red P}, \\Delta} \\text{CH}_3-\\text{CH}_2-\\text{CH}_2-\\text{CH}_2-\\text{CH}_2-\\text{CH}_3$$\nThis yields **n-hexane**, confirming that all six carbon atoms in a glucose molecule form an unbranched, straight chain."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following nitrogenous bases is present in RNA but ABSENT in DNA?",
+          "image": "",
+          "options": [
+            "Uracil",
+            "Thymine",
+            "Cytosine",
+            "Guanine"
+          ],
+          "correctOption": 0,
+          "solution": "The four heterocyclic nitrogenous bases found in nucleic acids are:\n- In DNA: Adenine (A), Guanine (G), Cytosine (C), and **Thymine (T)**.\n- In RNA: Adenine (A), Guanine (G), Cytosine (C), and **Uracil (U)**.\nTherefore, Uracil is present exclusively in RNA, replacing Thymine."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] In Dumas method for estimation of nitrogen, $0.3\\text{ g}$ of an organic compound released $50\\text{ mL}$ of nitrogen gas collected at $300\\text{ K}$ and $715\\text{ mm Hg}$ pressure. If the aqueous tension at $300\\text{ K}$ is $15\\text{ mm Hg}$, the percentage of nitrogen in the compound is approximately: (Take $R = 0.0821\\text{ L atm K}^{-1}\\text{ mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$17.46\\%$",
+            "$15.22\\%$",
+            "$19.85\\%$",
+            "$12.10\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Pressure of dry $\\text{N}_2$ gas:\n$$P = P_{\\text{moist}} - P_{\\text{aqueous tension}} = 715 - 15 = 700\\text{ mm Hg} = \\frac{700}{760}\\text{ atm}$$\n2. Convert volume to STP ($P_0 = 1\\text{ atm}, T_0 = 273\\text{ K}$):\n$$V_0 = \\frac{P \\cdot V \\cdot T_0}{P_0 \\cdot T} = \\frac{\\frac{700}{760} \\times 50 \\times 273}{1 \\times 300} \\approx 41.90\\text{ mL}$$\n3. Calculate mass of $\\text{N}_2$:\n$$\\text{Mass of } \\text{N}_2 = \\frac{28 \\times 41.90}{22400} \\approx 0.05238\\text{ g}$$\n4. Percentage of nitrogen:\n$$\\%\\text{ N} = \\frac{0.05238}{0.30} \\times 100 \\approx 17.46\\%$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] Aniline on reaction with cold nitrous acid ($\\text{NaNO}_2 + \\text{conc. HCl}$ at $273-278\\text{ K}$) produces benzenediazonium chloride. Subsequent coupling with alkaline $\\beta$-naphthol yields an intensely colored dye. The color of the dye is:",
+          "image": "",
+          "options": [
+            "Orange-red",
+            "Yellow",
+            "Deep blue",
+            "Green"
+          ],
+          "correctOption": 0,
+          "solution": "In the azo dye test for primary aromatic amines:\n1. Aniline undergoes diazotization at $0-5^\\circ\\text{C}$ to form benzenediazonium chloride:\n$$\\text{C}_6\\text{H}_5\\text{NH}_2 + \\text{NaNO}_2 + 2\\text{HCl} \\xrightarrow{273-278\\text{ K}} \\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^- + \\text{NaCl} + 2\\text{H}_2\\text{O}$$\n2. When reacted with an alkaline solution of $\\beta$-naphthol (2-naphthol), an electrophilic azo coupling takes place at position-1 of the naphthol ring:\n$$\\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^- + \\beta\\text{-naphthol} \\xrightarrow{\\text{OH}^-} \\text{1-(phenyldiazenyl)naphthalen-2-ol}$$\nThis produces an insoluble **orange-red dye/precipitate**."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] Which of the following statements about denaturation of proteins is INCORRECT?",
+          "image": "",
+          "options": [
+            "Primary structure of the protein is disrupted",
+            "Secondary and tertiary structures are completely destroyed",
+            "The biological activity of the protein is lost",
+            "Coagulation of egg white on boiling is an irreversible denaturation"
+          ],
+          "correctOption": 0,
+          "solution": "During denaturation of proteins (induced by physical changes like heat or chemical changes like $\\text{pH}$ variations):\n1. Hydrogen bonds and non-covalent interactions are broken, causing the coiled globules to unfold and secondary and tertiary structures to be destroyed.\n2. The protein loses its native three-dimensional conformation and biological functionality.\n3. The **primary structure** (the covalent polypeptide sequence of amino acids joined by peptide bonds) remains completely intact, as peptide bonds are not cleaved under mild denaturing conditions.\nTherefore, Statement A is incorrect."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2021] The Gabriel phthalimide synthesis is exclusively used for the preparation of which of the following classes of amines?",
+          "image": "",
+          "options": [
+            "Pure primary aliphatic amines",
+            "Primary aromatic amines like aniline",
+            "Secondary amines",
+            "Tertiary amines"
+          ],
+          "correctOption": 0,
+          "solution": "In the Gabriel phthalimide synthesis:\n1. Phthalimide is treated with $\\text{KOH}$ to form potassium phthalimide.\n2. Nucleophilic attack on an alkyl halide via an $\\text{S}_\\text{N}2$ pathway yields an N-alkylphthalimide:\n$$\\text{Phthalimide}^- \\text{K}^+ + \\text{R}-\\text{X} \\xrightarrow{\\text{S}_\\text{N}2} \\text{N-alkylphthalimide} + \\text{KX}$$\n3. Hydrazinolysis or alkaline hydrolysis produces a **pure primary aliphatic amine** (free from secondary and tertiary amine contamination).\n4. Aryl halides do not undergo nucleophilic substitution with the phthalimide anion due to partial double bond character and steric repulsion; hence, primary aromatic amines (like aniline) cannot be prepared by this method."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2023] Which of the following vitamins is water-soluble and excreted continuously in urine, requiring daily dietary replenishment?",
+          "image": "",
+          "options": [
+            "Vitamin C (Ascorbic acid)",
+            "Vitamin A",
+            "Vitamin D",
+            "Vitamin E"
+          ],
+          "correctOption": 0,
+          "solution": "Vitamins are classified into two broad categories based on solubility:\n1. **Fat-soluble vitamins:** Vitamins A, D, E, and K (stored in the liver and adipose tissue).\n2. **Water-soluble vitamins:** Vitamin C (ascorbic acid) and the Vitamin B group (except $\\text{B}_{12}$).\nBecause Vitamin C is polar and water-soluble, excess amounts cannot be stored in the body and are excreted continuously in urine, requiring regular dietary intake."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the qualitative detection of sulfur by the sodium nitroprusside test, appearance of a violet-purple coloration confirms the presence of sulfur. The purple compound formed is:",
+          "image": "",
+          "options": [
+            "$\\text{Na}_4[\\text{Fe}(\\text{CN})_5\\text{NOS}]$",
+            "$\\text{Na}_2[\\text{Fe}(\\text{CN})_5\\text{NO}]$",
+            "$\\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_3$",
+            "$\\text{Na}_3[\\text{Fe}(\\text{CN})_6]$"
+          ],
+          "correctOption": 0,
+          "solution": "In the test for sulfur using Lassaigne's fusion extract:\n1. Sodium fusion converts organic sulfur into sodium sulfide:\n$$2\\text{Na} + \\text{S} \\xrightarrow{\\Delta} \\text{Na}_2\\text{S}$$\n2. Addition of a freshly prepared solution of sodium nitroprusside generates an intense violet-purple coloration:\n$$\\text{Na}_2\\text{S} + \\text{Na}_2[\\text{Fe}(\\text{CN})_5\\text{NO}] \\rightarrow \\text{Na}_4[\\text{Fe}(\\text{CN})_5\\text{NOS}]$$\nThe violet complex is sodium thionitroprusside ($\\text{Na}_4[\\text{Fe}(\\text{CN})_5\\text{NOS}]$)."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2022] The Hoffmann bromamide degradation reaction converts an amide into an amine containing:",
+          "image": "",
+          "options": [
+            "One carbon atom LESS than the parent amide",
+            "The same number of carbon atoms as the parent amide",
+            "One carbon atom MORE than the parent amide",
+            "Two carbon atoms less than the parent amide"
+          ],
+          "correctOption": 0,
+          "solution": "In the Hoffmann bromamide degradation reaction:\n$$\\text{R}-\\text{CONH}_2 + \\text{Br}_2 + 4\\text{NaOH} \\rightarrow \\text{R}-\\text{NH}_2 + \\text{Na}_2\\text{CO}_3 + 2\\text{NaBr} + 2\\text{H}_2\\text{O}$$\n1. The carbonyl carbon of the amide is eliminated as sodium carbonate ($\\text{Na}_2\\text{CO}_3$).\n2. The alkyl or aryl group $(\\text{R})$ migrates from the carbonyl carbon directly to the adjacent nitrogen atom via an acyl nitrene / isocyanate intermediate $(\\text{R}-\\text{N}=\\text{C}=\\text{O})$.\n3. The resulting primary amine possesses **one carbon atom less** than the starting amide."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[JEE Main 2020] An organic compound on treatment with neutral $\\text{FeCl}_3$ gives a characteristic violet color, and on treatment with aqueous $\\text{NaHCO}_3$ does NOT liberate $\\text{CO}_2$. The functional group present is:",
+          "image": "",
+          "options": [
+            "Phenolic group ($-\\text{OH}$)",
+            "Carboxylic acid group ($-\\text{COOH}$)",
+            "Alcoholic group ($-\\text{OH}$)",
+            "Aldehydic group ($-\\text{CHO}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Phenols react with neutral ferric chloride solution ($\\text{FeCl}_3$) to form colored coordination complexes (typically violet, blue, or green) due to the formation of iron(III) phenoxide complexes: $\\text{Fe}^{3+} + 6\\text{ArOH} \\rightarrow [\\text{Fe}(\\text{OAr})_6]^{3-} + 6\\text{H}^+$.\n2. Because phenols are weaker acids than carbonic acid ($pK_a \\approx 10$ vs $pK_a \\approx 6.4$), they cannot decompose sodium bicarbonate ($\\text{NaHCO}_3$) to liberate $\\text{CO}_2$ effervescence.\n3. Carboxylic acids decompose $\\text{NaHCO}_3$ with brisk effervescence of $\\text{CO}_2$.\nThus, the compound contains a **phenolic $-\\text{OH}$ group**."
+        },
+        {
+          "id": "q21",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] Calculate the total number of chiral (asymmetric) carbon atoms present in one molecule of open-chain $\\text{D-(+)}$-glucose.",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "The structure of open-chain $\\text{D}$-glucose is:\n$$\\overset{1}{\\text{CHO}}-\\overset{2}{\\text{C}}\\text{H(OH)}-\\overset{3}{\\text{C}}\\text{H(OH)}-\\overset{4}{\\text{C}}\\text{H(OH)}-\\overset{5}{\\text{C}}\\text{H(OH)}-\\overset{6}{\\text{C}}\\text{H}_2\\text{OH}$$\n- C-1 is an aldehyde carbon ($sp^2$, achiral).\n- C-2, C-3, C-4, and C-5 are each bonded to four distinct substituents ($-\\text{H}, -\\text{OH},$ and two different alkyl chains).\n- C-6 is $-\\text{CH}_2\\text{OH}$, having two identical hydrogen atoms (achiral).\nTherefore, open-chain glucose has exactly $4.0$ chiral carbons."
+        },
+        {
+          "id": "q22",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2022] In the Carius method for sulfur estimation, $0.32\\text{ g}$ of an organic compound gave $0.233\\text{ g}$ of barium sulfate ($\\text{BaSO}_4$). Calculate the percentage of sulfur in the organic compound. (Molar mass of $\\text{BaSO}_4 = 233\\text{ g/mol}$, atomic mass of $\\text{S} = 32\\text{ g/mol}$).",
+          "image": "",
+          "correctValue": 10.0,
+          "solution": "1. Moles of $\\text{BaSO}_4$ formed:\n$$n = \\frac{0.233\\text{ g}}{233\\text{ g/mol}} = 0.001\\text{ mol}$$\n2. Mass of sulfur in $0.001\\text{ mol}$ of $\\text{BaSO}_4$:\n$$\\text{Mass of S} = 0.001\\text{ mol} \\times 32\\text{ g/mol} = 0.032\\text{ g}$$\n3. Percentage of sulfur:\n$$\\%\\text{ S} = \\frac{\\text{Mass of S}}{\\text{Mass of compound}} \\times 100 = \\frac{0.032\\text{ g}}{0.32\\text{ g}} \\times 100 = 10.0\\%$$"
+        },
+        {
+          "id": "q23",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2021] Find the number of peptide bonds present in one molecule of a linear tetrapeptide.",
+          "image": "",
+          "correctValue": 3.0,
+          "solution": "A tetrapeptide is formed by condensing four amino acid residues through peptide linkages ($-\\text{CONH}-$):\n$$\\text{AA}_1 - \\text{peptide bond} - \\text{AA}_2 - \\text{peptide bond} - \\text{AA}_3 - \\text{peptide bond} - \\text{AA}_4$$\n$$\\text{Number of peptide bonds} = n - 1 = 4 - 1 = 3.0$$"
+        },
+        {
+          "id": "q24",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2023] In the complete Hoffmann bromamide degradation of $1\\text{ mole}$ of benzamide ($\\text{C}_6\\text{H}_5\\text{CONH}_2$), calculate the number of moles of $\\text{NaOH}$ consumed.",
+          "image": "",
+          "correctValue": 4.0,
+          "solution": "The balanced chemical equation for the Hoffmann bromamide degradation is:\n$$\\text{C}_6\\text{H}_5\\text{CONH}_2 + \\text{Br}_2 + 4\\text{NaOH} \\rightarrow \\text{C}_6\\text{H}_5\\text{NH}_2 + \\text{Na}_2\\text{CO}_3 + 2\\text{NaBr} + 2\\text{H}_2\\text{O}$$\nFor each mole of primary amide, exactly $4.0\\text{ moles of } \\text{NaOH}$ are consumed."
+        },
+        {
+          "id": "q25",
+          "type": "numerical",
+          "marking": { "correct": 4, "incorrect": 0 },
+          "question": "[JEE Main 2020] Among the following sugars: sucrose, maltose, lactose, glucose, fructose, and starch, how many are classified as REDUCING sugars?",
+          "image": "",
+          "options": [],
+          "correctValue": 4.0,
+          "solution": "A reducing sugar has a free hemiacetal or hemiketal group (anomeric carbon not involved in a glycosidic bond):\n1. Glucose: Monosaccharide $\\implies$ Reducing sugar\n2. Fructose: Monosaccharide (undergoes lobry-de-bruyn transformation to aldose in alkaline test) $\\implies$ Reducing sugar\n3. Maltose: Disaccharide with free anomeric carbon on second glucose unit $\\implies$ Reducing sugar\n4. Lactose: Disaccharide with free anomeric carbon on glucose unit $\\implies$ Reducing sugar\n5. Sucrose: Disaccharide where both anomeric carbons are linked ($\\alpha-1,2$ bond) $\\implies$ Non-reducing sugar\n6. Starch: Polysaccharide, non-reducing\nTotal number of reducing sugars $= 4.0$ (glucose, fructose, maltose, lactose)."
+        }
+      ]
+    }
+  ]
+}
