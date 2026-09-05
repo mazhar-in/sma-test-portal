@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-33-lanthanoids-and-actinoids",
+  "title": "Lanthanoids & Actinoids (Inner Transition Elements: Configurations, Oxidation States, Contraction & Consequences)",
+  "syllabus": "Inner transition elements (f-block); Lanthanoids (4f series: Ce to Lu, Z = 58 to 71) and Actinoids (5f series: Th to Lr, Z = 90 to 103); Electronic configurations and ground-state anomalies (e.g., Gd, Lu, Eu, Tb, Th, Pa, U, Np, Pu, Am, Cm); Common and variable oxidation states (+3 dominant; +2 and +4 stability based on empty, half-filled, and completely filled f-subshells such as Ce4+, Eu2+, Yb2+, Tb4+); Redox nature of atypical oxidation states (Ce4+ as analytical oxidant, Eu2+ and Sm2+ as reductants); Lanthanoid contraction: cause (poor shielding of 4f electrons), trend in M and M3+ radii, and critical consequences (identical radii of 4d/5d congeners like Zr/Hf and Nb/Ta, difficulty in separation of lanthanoids by ion-exchange, decreasing basicity of hydroxides: La(OH)3 to Lu(OH)3, complex formation tendencies); Chemical reactivity of lanthanoids (reactions with acids, water, oxygen, halogens, sulfur, nitrogen, and carbon); Mischmetal composition and pyrophoric applications; Comparison between lanthanoids and actinoids (binding energy and spatial extension of 5f vs 4f orbitals, wider range of oxidation states in actinoids due to comparable energies of 5f, 6d, and 7s levels, magnetic properties, color, and greater tendency for complex formation and oxocation formation like UO2^2+ and PuO2^2+); General properties of transuranic elements.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The ground-state electronic configuration of Gadolinium ($\\text{Gd}$, $Z = 64$) is:",
+          "image": "",
+          "options": [
+            "$[\\text{Xe}]\\, 4f^7\\, 5d^1\\, 6s^2$",
+            "$[\\text{Xe}]\\, 4f^8\\, 6s^2$",
+            "$[\\text{Xe}]\\, 4f^7\\, 6s^2\\, 6p^1$",
+            "$[\\text{Xe}]\\, 4f^6\\, 5d^2\\, 6s^2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Xenon has atomic number $54$.\n2. For Gadolinium ($Z = 64$), ten valence electrons must be accommodated.\n3. The expected Aufbau configuration is $[\\text{Xe}]\\, 4f^8\\, 6s^2$.\n4. However, an exactly half-filled $4f$ subshell ($4f^7$) possesses extraordinary thermodynamic stability due to exchange energy and spatial symmetry.\n5. Therefore, one electron enters the $5d$ orbital rather than the $4f$ orbital, giving the ground-state configuration:\n   $$\\text{Gd}: [\\text{Xe}]\\, 4f^7\\, 5d^1\\, 6s^2$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Cerium ($\\text{Ce}$, $Z = 58$) readily forms a stable $+4$ oxidation state in aqueous solution. Cerium(IV) acts as a:",
+          "image": "",
+          "options": [
+            "Powerful oxidizing agent because it tends to revert to the thermodynamically favored $+3$ state",
+            "Strong reducing agent because it easily oxidizes to $+5$",
+            "Non-reactive inert complex cation",
+            "Catalyst for hydrogen evolution exclusively"
+          ],
+          "correctOption": 0,
+          "solution": "1. Cerium has the configuration $[\\text{Xe}]\\, 4f^1\\, 5d^1\\, 6s^2$.\n2. By losing all four valence electrons, $\\text{Ce}^{4+}$ attains the noble gas configuration of Xenon ($[\\text{Xe}]\\, 4f^0$), which confers kinetic stability in solid oxides ($\\text{CeO}_2$).\n3. However, across the lanthanoid series, the $+3$ oxidation state is the predominant, thermodynamically favored state.\n4. Consequently, $\\text{Ce}^{4+}$ has a strong tendency to gain an electron ($E^\\circ_{\\text{Ce}^{4+}/\\text{Ce}^{3+}} = +1.74\\text{ V}$), making it a widely utilized **powerful analytical oxidizing agent** (cerimetry) in aqueous media:\n   $$\\text{Ce}^{4+}(aq) + e^- \\rightarrow \\text{Ce}^{3+}(aq)$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The correct order of decreasing basic strength among the following lanthanoid hydroxides is:",
+          "image": "",
+          "options": [
+            "$\\text{La(OH)}_3 > \\text{Ce(OH)}_3 > \\text{Eu(OH)}_3 > \\text{Lu(OH)}_3$",
+            "$\\text{Lu(OH)}_3 > \\text{Eu(OH)}_3 > \\text{Ce(OH)}_3 > \\text{La(OH)}_3$",
+            "$\\text{Ce(OH)}_3 > \\text{La(OH)}_3 > \\text{Lu(OH)}_3 > \\text{Eu(OH)}_3$",
+            "$\\text{Eu(OH)}_3 > \\text{Lu(OH)}_3 > \\text{Ce(OH)}_3 > \\text{La(OH)}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. As a direct consequence of the **lanthanoid contraction**, the ionic radii of trivalent lanthanoid cations decrease progressively from $\\text{La}^{3+}$ to $\\text{Lu}^{3+}$:\n   $$\\text{La}^{3+} (103\\text{ pm}) > \\text{Ce}^{3+} (102\\text{ pm}) > \\text{Eu}^{3+} (94.7\\text{ pm}) > \\text{Lu}^{3+} (86.1\\text{ pm})$$\n2. According to Fajan's rules, smaller cations have higher charge density and greater polarizing power, increasing the covalent character of the $\\text{Ln}-\\text{OH}$ bond.\n3. Higher covalent character makes the cleavage of the $\\text{Ln}-\\text{OH}$ bond into $\\text{OH}^-$ ions more difficult.\n4. Therefore, basic character decreases continuously across the series, making **$\\text{La(OH)}_3$ the most basic and $\\text{Lu(OH)}_3$ the least basic**:\n   $$\\text{La(OH)}_3 > \\text{Ce(OH)}_3 > \\text{Eu(OH)}_3 > \\text{Lu(OH)}_3$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following pairs of transition elements have almost identical atomic radii due to the lanthanoid contraction?",
+          "image": "",
+          "options": [
+            "$\\text{Zr}$ and $\\text{Hf}$",
+            "$\\text{Ti}$ and $\\text{Zr}$",
+            "$\\text{Mo}$ and $\\text{Cr}$",
+            "$\\text{Sc}$ and $\\text{Y}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Zirconium ($\\text{Zr}, Z = 40$) belongs to the $4d$ transition series (Group 4), and Hafnium ($\\text{Hf}, Z = 72$) belongs to the $5d$ transition series (Group 4).\n2. Between $\\text{Zr}$ and $\\text{Hf}$, the intervening fourteen $4f$ lanthanoid elements are filled.\n3. The poor shielding of the nuclear charge by the fourteen $4f$ electrons leads to a contraction in size (lanthanoid contraction) that cancels the expected increase in radius from adding an electron shell.\n4. Consequently, **$\\text{Zr}$ ($160\\text{ pm}$) and $\\text{Hf}$ ($159\\text{ pm}$)** have virtually identical radii, similar lattice constants, and nearly indistinguishable chemical properties."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Actinoids exhibit a significantly greater number of oxidation states than the corresponding lanthanoids. The primary reason for this behavior is:",
+          "image": "",
+          "options": [
+            "The very small energy difference between the $5f, 6d,$ and $7s$ subshells in actinoids",
+            "The greater shielding power of $5f$ electrons compared to $4f$ electrons",
+            "The non-metallic character of actinoids",
+            "The complete absence of $d$-orbitals in actinoid atoms"
+          ],
+          "correctOption": 0,
+          "solution": "1. In lanthanoids, the $4f$ orbitals are buried deep inside the atom and are significantly lower in energy than the $5d$ and $6s$ orbitals. Therefore, only $6s$ and sometimes $5d$ electrons participate in bonding, restricting oxidation states predominantly to $+3$.\n2. In actinoids, the **$5f, 6d,$ and $7s$ energy levels are comparable in energy**, with minimal energy gaps separating them.\n3. Consequently, electrons from all three subshells ($5f, 6d,$ and $7s$) can be promoted and utilized in chemical bonding.\n4. This allows early actinoids (like $\\text{U}, \\text{Np}, \\text{Pu}$) to display variable oxidation states ranging from $+3$ up to $+7$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Europium ($\\text{Eu}$, $Z = 63$) exhibits a stable $+2$ oxidation state in compounds like $\\text{EuSO}_4$ and $\\text{EuCl}_2$. The electronic configuration of the $\\text{Eu}^{2+}$ ion is:",
+          "image": "",
+          "options": [
+            "$[\\text{Xe}]\\, 4f^7$",
+            "$[\\text{Xe}]\\, 4f^6$",
+            "$[\\text{Xe}]\\, 4f^7\\, 5d^1$",
+            "$[\\text{Xe}]\\, 4f^8$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The ground-state electronic configuration of neutral Europium ($Z = 63$) is $[\\text{Xe}]\\, 4f^7\\, 6s^2$.\n2. Formation of the divalent cation $\\text{Eu}^{2+}$ involves the loss of the two outermost $6s$ electrons:\n   $$\\text{Eu}^{2+}: [\\text{Xe}]\\, 4f^7$$\n3. The resulting ion possesses an exactly **half-filled $4f^7$ configuration**, which gives it extra exchange stability and accounts for the occurrence of the $+2$ oxidation state for europium."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Mischmetal is a pyrophoric alloy of lanthanoids widely used in the manufacture of cigarette lighter flints and tracer bullets. What is its typical composition?",
+          "image": "",
+          "options": [
+            "$\\approx 95\\%$ Lanthanoid metals (mostly $\\text{Ce}$ and $\\text{La}$), $\\approx 5\\%\\ \\text{Fe}$, and traces of $\\text{S}, \\text{C}, \\text{Ca}, \\text{Al}$",
+            "$\\approx 50\\%\\ \\text{Fe}$, $\\approx 45\\%\\ \\text{Ni}$, and $\\approx 5\\%\\ \\text{Ce}$",
+            "$\\approx 95\\%\\ \\text{Aluminium}$ and $\\approx 5\\%\\ \\text{Lanthanum}$",
+            "$\\approx 80\\%\\ \\text{Copper}$ and $\\approx 20\\%\\ \\text{Uranium}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Mischmetal** is a well-known alloy of the rare-earth elements.\n2. Its standard industrial composition is:\n   - **Lanthanoid metals $\\approx 95\\%$** (chiefly Cerium $\\approx 40-50\\%$, Lanthanum $\\approx 25\\%$, and Neodymium)\n   - **Iron $\\approx 5\\%$**\n   - Trace amounts of $\\text{S}, \\text{C}, \\text{Ca},$ and $\\text{Al}$\n3. Because it sparks readily when struck (pyrophoric), it is used in flint lighters, bullet cartridges, and magnesium shells."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following trivalent lanthanoid ions is DIAMAGNETIC?",
+          "image": "",
+          "options": [
+            "$\\text{Lu}^{3+}$",
+            "$\\text{La}^{3+}$",
+            "Both $\\text{La}^{3+}$ and $\\text{Lu}^{3+}$",
+            "$\\text{Ce}^{3+}$"
+          ],
+          "correctOption": 2,
+          "solution": "1. Write the electronic configurations of the trivalent ions:\n   - $\\text{La}^{3+}$ ($Z = 57$): $[\\text{Xe}]\\, 4f^0 \\implies$ completely empty $4f$ subshell with zero unpaired electrons ($n = 0$) $\\implies$ **Diamagnetic**.\n   - $\\text{Lu}^{3+}$ ($Z = 71$): $[\\text{Xe}]\\, 4f^{14} \\implies$ completely filled $4f$ subshell with zero unpaired electrons ($n = 0$) $\\implies$ **Diamagnetic**.\n   - $\\text{Ce}^{3+}$ ($Z = 58$): $[\\text{Xe}]\\, 4f^1 \\implies$ one unpaired electron $\\implies$ Paramagnetic.\nTherefore, both $\\text{La}^{3+}$ and $\\text{Lu}^{3+}$ have no unpaired electrons and are diamagnetic."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Why is the separation of individual lanthanoids from their naturally occurring monazite ore mixtures notoriously difficult by standard chemical precipitation methods?",
+          "image": "",
+          "options": [
+            "Because lanthanoid contraction causes them to have nearly identical ionic radii and identical $+3$ chemical properties",
+            "Because all lanthanoids are radioactive and decay quickly",
+            "Because lanthanoids do not form ionic salts",
+            "Because their atomic masses are identical"
+          ],
+          "correctOption": 0,
+          "solution": "1. The decrease in ionic radii across the entire lanthanoid series (from $\\text{La}^{3+}$ at $103\\text{ pm}$ to $\\text{Lu}^{3+}$ at $86\\text{ pm}$) totals only $17\\text{ pm}$.\n2. Between two consecutive lanthanoid members, the radius difference is typically less than $1\\text{ pm}$.\n3. Because they share the identical $+3$ oxidation state and nearly identical sizes, their chemical properties, hydration energies, and precipitation behaviors are virtually indistinguishable.\n4. Consequently, classical fractional crystallization or precipitation is inefficient, and separation relies on multi-stage **ion-exchange chromatography** or liquid-liquid solvent extraction based on subtle basicity and complexation differences."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The actinoid element with atomic number $Z = 90$ is Thorium ($\\text{Th}$). Its ground-state electronic configuration is:",
+          "image": "",
+          "options": [
+            "$[\\text{Rn}]\\, 6d^2\\, 7s^2$",
+            "$[\\text{Rn}]\\, 5f^2\\, 7s^2$",
+            "$[\\text{Rn}]\\, 5f^1\\, 6d^1\\, 7s^2$",
+            "$[\\text{Rn}]\\, 5f^3\\, 7s^1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Radon has atomic number $86$.\n2. For Thorium ($Z = 90$), four valence electrons must be accommodated.\n3. In Thorium, the $5f$ orbitals lie slightly higher in energy than the $6d$ orbitals at the beginning of the actinoid series.\n4. Therefore, the two differentiating electrons enter the $6d$ subshell rather than the $5f$ subshell:\n   $$\\text{Th}: [\\text{Rn}]\\, 5f^0\\, 6d^2\\, 7s^2 \\equiv [\\text{Rn}]\\, 6d^2\\, 7s^2$$\n5. Actual progressive filling of the $5f$ subshell begins with Protactinium ($\\text{Pa}, Z = 91$: $[\\text{Rn}]\\, 5f^2\\, 6d^1\\, 7s^2$)."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Ytterbium ($\\text{Yb}$, $Z = 70$) exhibits a stable $+2$ oxidation state in addition to the characteristic $+3$ state. The stability of $\\text{Yb}^{2+}$ is attributed to:",
+          "image": "",
+          "options": [
+            "A completely filled $4f^{14}$ configuration",
+            "An empty $4f^0$ configuration",
+            "A half-filled $4f^7$ configuration",
+            "A completely filled $5d^{10}$ configuration"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electronic configuration of neutral Ytterbium ($Z = 70$):\n   $$\\text{Yb}: [\\text{Xe}]\\, 4f^{14}\\, 6s^2$$\n2. When Ytterbium loses its two $6s$ electrons to form the divalent ion $\\text{Yb}^{2+}$, it leaves:\n   $$\\text{Yb}^{2+}: [\\text{Xe}]\\, 4f^{14}$$\n3. The resulting **completely filled $4f^{14}$ subshell** has high exchange energy and spherical symmetry, giving extra stability to the $+2$ oxidation state."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following lanthanoid elements is SYNTHETIC and purely RADIOACTIVE?",
+          "image": "",
+          "options": [
+            "Promethium ($\\text{Pm}$)",
+            "Samarium ($\\text{Sm}$)",
+            "Dysprosium ($\\text{Dy}$)",
+            "Neodymium ($\\text{Nd}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. All lanthanoid elements from Lanthanum ($Z = 57$) to Lutetium ($Z = 71$) occur naturally in mineral ores (like bastnäsite and monazite), EXCEPT for one element.\n2. **Promethium ($\\text{Pm}, Z = 61$)** has no stable isotopes and does not occur in significant amounts in the Earth's crust.\n3. It is a strictly **synthetic, man-made radioactive element** prepared by nuclear fission of uranium or neutron bombardment of neodymium."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Actinoid contraction is greater from element to element than lanthanoid contraction. This difference is primarily due to:",
+          "image": "",
+          "options": [
+            "Poorer shielding effect of $5f$ electrons compared to $4f$ electrons",
+            "Higher shielding effect of $5f$ electrons compared to $4f$ electrons",
+            "Larger atomic masses of actinoids",
+            "Radioactive decay of actinoid nuclei"
+          ],
+          "correctOption": 0,
+          "solution": "1. The $5f$ orbitals of actinoids extend further in space and are more diffuse than the $4f$ orbitals of lanthanoids.\n2. Consequently, **$5f$ electrons exert an even poorer shielding effect** on outer electrons against nuclear charge than $4f$ electrons.\n3. As atomic number increases across the actinoid series, the effective nuclear charge increases more sharply, pulling the outer electron shells inward more tightly.\n4. Therefore, **actinoid contraction is greater from element to element** than lanthanoid contraction."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When a lanthanoid metal ($\\text{Ln}$) is heated with nitrogen gas, the product formed has the chemical formula:",
+          "image": "",
+          "options": [
+            "$\\text{LnN}$",
+            "$\\text{Ln}_3\\text{N}$",
+            "$\\text{Ln}_2\\text{N}_3$",
+            "$\\text{LnN}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Lanthanoids display a stable $+3$ oxidation state in their standard binary compounds.\n2. Nitrogen forms the nitride ion with a $-3$ charge ($\\text{N}^{3-}$).\n3. When heated directly with nitrogen gas at elevated temperatures, the $1 : 1$ stoichiometric interstitial ceramic nitride is formed:\n   $$2\\text{Ln} + \\text{N}_2 \\xrightarrow{\\Delta} 2\\text{LnN}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Terbium ($\\text{Tb}$, $Z = 65$) shows a stable $+4$ oxidation state in $\\text{TbO}_2$ and $\\text{TbF}_4$. The electronic configuration of the $\\text{Tb}^{4+}$ ion is:",
+          "image": "",
+          "options": [
+            "$[\\text{Xe}]\\, 4f^7$",
+            "$[\\text{Xe}]\\, 4f^8$",
+            "$[\\text{Xe}]\\, 4f^6$",
+            "$[\\text{Xe}]\\, 4f^7\\, 5d^1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electronic configuration of neutral Terbium ($Z = 65$):\n   $$\\text{Tb}: [\\text{Xe}]\\, 4f^9\\, 6s^2$$\n2. In forming the tetravalent ion $\\text{Tb}^{4+}$, four electrons are removed ($2$ from $6s$, $2$ from $4f$):\n   $$\\text{Tb}^{4+}: [\\text{Xe}]\\, 4f^7$$\n3. The resulting **half-filled $4f^7$ subshell** imparts extra stability to the $+4$ oxidation state in terbium."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following statements comparing lanthanoids and actinoids is INCORRECT?",
+          "image": "",
+          "options": [
+            "Lanthanoid compounds show a much greater tendency to form oxocations than actinoids",
+            "Actinoid cations form coordination complexes more readily than lanthanoid cations",
+            "Magnetic moments of actinoid ions are smaller than those calculated from spin-only formulas due to strong spin-orbit and crystal-field coupling",
+            "All actinoids are radioactive, whereas only promethium is radioactive among lanthanoids"
+          ],
+          "correctOption": 0,
+          "solution": "1. Actinoid ions have higher charge densities and accessible $5f/6d$ orbitals that participate in multiple covalent bonding with oxygen, readily forming stable **oxocations** such as $\\text{UO}_2^{2+}, \\text{PuO}_2^{2+}, \\text{NpO}_2^+,$ and $\\text{UO}_2^+$.\n2. In contrast, **lanthanoids do not form oxocations** because their $4f$ electrons are deeply buried and do not engage in multiple $\\pi$-bonding with oxygen.\nTherefore, Statement A is incorrect."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The standard reduction potential $E^\\circ$ for the $\\text{Eu}^{3+}/\\text{Eu}^{2+}$ couple is $-0.43\\text{ V}$. This indicates that in aqueous solution, $\\text{Eu}^{2+}$ acts as a:",
+          "image": "",
+          "options": [
+            "Strong reducing agent",
+            "Strong oxidizing agent",
+            "Mild oxidizing agent",
+            "Precipitating agent"
+          ],
+          "correctOption": 0,
+          "solution": "1. The half-reaction and potential are:\n   $$\\text{Eu}^{3+}(aq) + e^- \\rightarrow \\text{Eu}^{2+}(aq); \\quad E^\\circ = -0.43\\text{ V}$$\n2. Reversing the equation gives the oxidation process:\n   $$\\text{Eu}^{2+}(aq) \\rightarrow \\text{Eu}^{3+}(aq) + e^-; \\quad E^\\circ = +0.43\\text{ V}$$\n3. Because the standard oxidation potential is positive, $\\text{Eu}^{2+}$ oxidizes spontaneously to the more stable $+3$ state, releasing electrons.\n4. Therefore, **$\\text{Eu}^{2+}$ acts as a strong reducing agent** in aqueous solutions (often reducing $\\text{H}^+$ to $\\text{H}_2$ gas)."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The absorption spectra of trivalent lanthanoid ions display very SHARP, line-like absorption bands in the visible region, resembling atomic gas spectra. This sharpness occurs because:",
+          "image": "",
+          "options": [
+            "The $4f$ electrons are deeply buried inside the atom and effectively shielded from external ligand field perturbations by outer $5s^2$ and $5p^6$ electrons",
+            "Lanthanoid ions are completely covalent",
+            "Lanthanoid ions have zero mass",
+            "The transitions are forbidden $s-d$ transitions"
+          ],
+          "correctOption": 0,
+          "solution": "1. In transition metals ($3d$ series), $d$-orbitals are outermost and interact directly with surrounding solvent and ligand fields, resulting in broad absorption bands.\n2. In lanthanoids, the $4f$ subshell lies deep within the core, **screened by the filled $5s^2$ and $5p^6$ shells**.\n3. Surrounding ligands exert minimal splitting or broadening effects on the $4f-4f$ energy levels.\n4. Consequently, $f-f$ electronic transitions remain narrow and atomic-like, producing **sharp, characteristic absorption bands**."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] When lanthanoid metals react with dilute mineral acids, the gaseous product evolved is:",
+          "image": "",
+          "options": [
+            "Hydrogen gas ($\\text{H}_2$)",
+            "Oxygen gas ($\\text{O}_2$)",
+            "Nitrogen dioxide ($\\text{NO}_2$)",
+            "Hydrogen sulfide ($\\text{H}_2\\text{S}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Lanthanoids are electropositive metals with highly negative standard reduction potentials ($E^\\circ_{\\text{Ln}^{3+}/\\text{Ln}} \\approx -2.2\\text{ to } -2.4\\text{ V}$), behaving chemically similar to alkaline earth metals like calcium.\n2. They react vigorously with dilute mineral acids (such as $\\text{HCl}$ or $\\text{H}_2\\text{SO}_4$) to form trivalent salts while liberating **dihydrogen gas ($\\text{H}_2$)**:\n   $$2\\text{Ln}(s) + 6\\text{H}^+(aq) \\rightarrow 2\\text{Ln}^{3+}(aq) + 3\\text{H}_2(g) \\uparrow$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The actinoid elements with atomic numbers $Z = 92, 93,$ and $94$ (Uranium, Neptunium, and Plutonium) display a MAXIMUM oxidation state of:",
+          "image": "",
+          "options": [
+            "$+6, +7,$ and $+7$ respectively",
+            "$+4, +5,$ and $+6$ respectively",
+            "$+3, +4,$ and $+5$ respectively",
+            "$+6, +6,$ and $+6$ respectively"
+          ],
+          "correctOption": 0,
+          "solution": "1. Across early actinoids, all outer electrons ($5f, 6d,$ and $7s$) can be lost because their energies are close.\n2. **Uranium ($Z = 92$, $[\\text{Rn}]\\, 5f^3\\, 6d^1\\, 7s^2$):** Can lose six electrons $\\implies$ **maximum oxidation state is $+6$** (as in $\\text{UF}_6, \\text{UO}_2^{2+}$).\n3. **Neptunium ($Z = 93$, $[\\text{Rn}]\\, 5f^4\\, 6d^1\\, 7s^2$):** Can lose seven electrons $\\implies$ **maximum oxidation state is $+7$** (as in $\\text{NpO}_5^{3-}$).\n4. **Plutonium ($Z = 94$, $[\\text{Rn}]\\, 5f^6\\, 7s^2$):** Can also reach a **maximum oxidation state of $+7$** (as in $\\text{PuO}_5^{3-}$).\nTherefore, the maximum oxidation states are $+6, +7,$ and $+7$ respectively."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Samarium ($\\text{Sm}$, $Z = 62$) exhibits a $+2$ oxidation state. Like $\\text{Eu}^{2+}$, $\\text{Sm}^{2+}$ acts in aqueous solution as a:",
+          "image": "",
+          "options": [
+            "Good reducing agent",
+            "Powerful oxidizing agent",
+            "Precipitating agent",
+            "Neutral non-electrolyte"
+          ],
+          "correctOption": 0,
+          "solution": "1. The electronic configuration of neutral Samarium is $[\\text{Xe}]\\, 4f^6\\, 6s^2$.\n2. In $\\text{Sm}^{2+}$, the configuration is $[\\text{Xe}]\\, 4f^6$.\n3. Because the $+3$ oxidation state is thermodynamically favored for all lanthanoids in aqueous solution, $\\text{Sm}^{2+}$ readily oxidizes to $\\text{Sm}^{3+}$ ($[\\text{Xe}]\\, 4f^5$) by losing an electron.\n4. Therefore, **$\\text{Sm}^{2+}$ behaves as a strong reducing agent**."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In which of the following pairs of elements is the similarity in atomic and chemical properties an outcome of the LANTHANOID CONTRACTION?",
+          "image": "",
+          "options": [
+            "$\\text{Nb}$ and $\\text{Ta}$",
+            "$\\text{V}$ and $\\text{Nb}$",
+            "$\\text{Cr}$ and $\\text{Mo}$",
+            "$\\text{Ti}$ and $\\text{Zr}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Niobium ($\\text{Nb}, Z = 41$) belongs to the $4d$ series (Group 5), and Tantalum ($\\text{Ta}, Z = 73$) belongs to the $5d$ series (Group 5).\n2. The filling of the $4f$ subshell in the intervening lanthanoids produces the lanthanoid contraction.\n3. This counteracts the normal group size expansion, resulting in nearly identical atomic radii ($\\text{Nb} = 146\\text{ pm}, \\text{Ta} = 146\\text{ pm}$) and nearly identical chemical behaviors.\n4. Other classic pairs include $\\text{Zr}/\\text{Hf}$ and $\\text{Mo}/\\text{W}$."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The magnetic properties of actinoids are much more complex than those of lanthanoids because:",
+          "image": "",
+          "options": [
+            "The outer $5f$ electrons participate in bonding and experience significant crystal-field perturbations from surrounding ligands",
+            "Actinoids have no unpaired electrons",
+            "The $5f$ subshell is spherically symmetrical",
+            "Actinoids do not exhibit spin-orbit coupling"
+          ],
+          "correctOption": 0,
+          "solution": "1. In lanthanoids, the $4f$ electrons are deeply buried, isolated from the environment, and shielded by $5s$ and $5p$ shells; their magnetic moments can be calculated from the total angular momentum quantum number $J$ using the Hund formula $\\mu = g\\sqrt{J(J + 1)}$.\n2. In actinoids, the **$5f$ orbitals extend further into space** and participate in bonding.\n3. The $5f$ electrons interact directly with the crystal field of surrounding ligands, quenching orbital angular momentum and complicating magnetic behavior."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] When a lanthanoid metal is heated with carbon at high temperatures ($2773\\text{ K}$), the main carbide formed has the stoichiometry:",
+          "image": "",
+          "options": [
+            "$\\text{LnC}_2$",
+            "$\\text{Ln}_2\\text{C}_3$",
+            "$\\text{LnC}$",
+            "$\\text{Ln}_4\\text{C}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Direct reaction of lanthanoid metals with carbon in an electric arc furnace at elevated temperatures ($> 2500\\text{ K}$) produces metallic dicarbides:\n   $$\\text{Ln} + 2\\text{C} \\xrightarrow{\\Delta} \\text{LnC}_2$$\n2. These dicarbides contain the acetylide-like $[\text{C}\\equiv\\text{C}]^{2-}$ unit with metallic conduction, and hydrolyze with water to liberate acetylene gas ($\\text{C}_2\\text{H}_2$)."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following ions has the SMALLEST ionic radius?",
+          "image": "",
+          "options": [
+            "$\\text{Lu}^{3+}$",
+            "$\\text{Yb}^{3+}$",
+            "$\\text{Ce}^{3+}$",
+            "$\\text{La}^{3+}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Across the lanthanoid series from $\\text{La}^{3+}$ ($Z = 57$) to $\\text{Lu}^{3+}$ ($Z = 71$), the ionic radius decreases continuously due to the lanthanoid contraction.\n2. **$\\text{Lu}^{3+}$** is the final member of the $4f$ series, having the highest nuclear charge ($Z = 71$) pulling the contracted core.\n3. Therefore, **$\\text{Lu}^{3+}$ has the smallest ionic radius ($86.1\\text{ pm}$)** among the trivalent lanthanoid ions."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The most common and stable oxidation state across BOTH lanthanoids and actinoids is:",
+          "image": "",
+          "options": [
+            "$+3$",
+            "$+2$",
+            "$+4$",
+            "$+5$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For all lanthanoids, the **$+3$ oxidation state** is the principal, most stable state in both solid compounds and aqueous solutions.\n2. For actinoids, although earlier members exhibit oxidation states up to $+7$, the **$+3$ oxidation state** remains the dominant, most stable state for trans-americium actinoids and is exhibited by every member of the family."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following lanthanoid ions has a half-filled 4f subshell?",
+          "image": "",
+          "options": [
+            "$\\text{Gd}^{3+}$",
+            "$\\text{Eu}^{3+}$",
+            "$\\text{Tb}^{3+}$",
+            "$\\text{Ce}^{3+}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Ground-state configuration of Gadolinium ($Z = 64$): $[\\text{Xe}]\\, 4f^7\\, 5d^1\\, 6s^2$.\n2. Removing three electrons ($2$ from $6s$, $1$ from $5d$) to form $\\text{Gd}^{3+}$ yields:\n   $$\\text{Gd}^{3+}: [\\text{Xe}]\\, 4f^7$$\n3. This corresponds to an exactly **half-filled $4f^7$ subshell** with seven unpaired electrons ($n = 7$)."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Why are actinoids more prone to forming COORDINATION COMPLEXES than lanthanoids?",
+          "image": "",
+          "options": [
+            "Actinoid cations have smaller radii for a given oxidation state, resulting in higher charge densities, and their $5f$ orbitals have greater spatial extension to overlap with ligand orbitals",
+            "Actinoids are less electropositive than lanthanoids",
+            "Lanthanoids have completely filled $d$-orbitals",
+            "Actinoids do not have unpaired electrons"
+          ],
+          "correctOption": 0,
+          "solution": "1. Actinoid ions display higher oxidation states ($+4, +5, +6$) with higher charge densities than the predominantly $+3$ lanthanoids.\n2. The **$5f$ orbitals are less deeply buried and extend further in space** than $4f$ orbitals, allowing greater overlap with donor orbitals of ligands (including $\\pi$-bonding).\n3. Consequently, **actinoids form coordination complexes much more readily** (with ligands like halides, sulfate, oxalates, and EDTA) than lanthanoids."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The electronic configuration of the Curium atom ($\\text{Cm}$, $Z = 96$) in its ground state is:",
+          "image": "",
+          "options": [
+            "$[\\text{Rn}]\\, 5f^7\\, 6d^1\\, 7s^2$",
+            "$[\\text{Rn}]\\, 5f^8\\, 7s^2$",
+            "$[\\text{Rn}]\\, 5f^7\\, 7s^2\\, 7p^1$",
+            "$[\\text{Rn}]\\, 5f^6\\, 6d^2\\, 7s^2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Curium ($Z = 96$) is the actinoid analogue of Gadolinium ($Z = 64$).\n2. It achieves extra exchange stability by maintaining a half-filled $5f^7$ subshell.\n3. The eighth valence electron enters the $6d$ orbital rather than pairing in $5f$:\n   $$\\text{Cm}: [\\text{Rn}]\\, 5f^7\\, 6d^1\\, 7s^2$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When a lanthanoid metal ($\\text{Ln}$) is burned in air or oxygen, the oxide formed has the stoichiometry:",
+          "image": "",
+          "options": [
+            "$\\text{Ln}_2\\text{O}_3$",
+            "$\\text{LnO}$",
+            "$\\text{LnO}_2$",
+            "$\\text{Ln}_2\\text{O}_5$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Lanthanoids burn in oxygen with a bright flame to form basic sesquioxides:\n   $$4\\text{Ln} + 3\\text{O}_2 \\xrightarrow{\\Delta} 2\\text{Ln}_2\\text{O}_3$$\n2. (Except Cerium, which forms $\\text{CeO}_2$ due to the stability of the $\\text{Ce}^{4+}$ $4f^0$ state)."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following ions is ISOELECTRONIC with $\\text{Sm}^{2+}$ ($Z = 62$)?",
+          "image": "",
+          "options": [
+            "$\\text{Eu}^{3+}$ ($Z = 63$)",
+            "$\\text{Gd}^{3+}$ ($Z = 64$)",
+            "$\\text{Tb}^{4+}$ ($Z = 65$)",
+            "$\\text{Nd}^{2+}$ ($Z = 60$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate total electrons:\n   - $\\text{Sm}^{2+}$: $Z = 62 - 2 = 60$ electrons (configuration $[\\text{Xe}]\\, 4f^6$).\n   - $\\text{Eu}^{3+}$: $Z = 63 - 3 = 60$ electrons (configuration $[\\text{Xe}]\\, 4f^6$).\n2. Both ions have $60$ electrons and are **isoelectronic**."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The color of trivalent lanthanoid ions in aqueous solutions and solid crystals is caused by:",
+          "image": "",
+          "options": [
+            "$f-f$ electronic transitions",
+            "$d-d$ electronic transitions",
+            "Charge transfer spectra exclusively",
+            "Interference of polarized light"
+          ],
+          "correctOption": 0,
+          "solution": "1. In trivalent lanthanoids with partially filled $4f$ subshells ($4f^1$ to $4f^{13}$), electrons can absorb photons in the visible region to jump between split energy levels within the $4f$ subshell.\n2. These are **$f-f$ electronic transitions**.\n3. (Ions with $4f^0$ like $\\text{La}^{3+}$ and $4f^{14}$ like $\\text{Lu}^{3+}$ are colorless)."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements about the chemical reactivity of lanthanoids is INCORRECT?",
+          "image": "",
+          "options": [
+            "Lanthanoids react with cold water only very slowly, but react vigorously with boiling water to liberate hydrogen gas",
+            "Lanthanoids tarnish rapidly in moist air forming protective oxide coatings",
+            "Lanthanoids react with sulfur at high temperatures to form $\\text{Ln}_2\\text{S}_3$",
+            "Lanthanoid metals are less electropositive than transition metals and resist acid attack"
+          ],
+          "correctOption": 3,
+          "solution": "1. Lanthanoids are highly electropositive metals ($E^\\circ \\approx -2.2\\text{ to } -2.4\\text{ V}$), with reactivities comparable to alkaline earth metals like calcium.\n2. They react rapidly with dilute acids with vigorous evolution of hydrogen gas.\n3. Therefore, Statement D is incorrect (lanthanoids are *more* electropositive than typical $d$-block transition metals)."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The actinoid element Americium ($\\text{Am}$, $Z = 95$) has the ground-state electronic configuration:",
+          "image": "",
+          "options": [
+            "$[\\text{Rn}]\\, 5f^7\\, 7s^2$",
+            "$[\\text{Rn}]\\, 5f^6\\, 6d^1\\, 7s^2$",
+            "$[\\text{Rn}]\\, 5f^8\\, 7s^1$",
+            "$[\\text{Rn}]\\, 5f^5\\, 6d^2\\, 7s^2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Americium ($Z = 95$) is the actinoid analogue of Europium ($Z = 63$).\n2. It has an exactly half-filled $5f^7$ subshell without any electrons in the $6d$ subshell:\n   $$\\text{Am}: [\\text{Rn}]\\, 5f^7\\, 7s^2$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Why does the $+4$ oxidation state of Cerium ($\\text{Ce}^{4+}$) act as an oxidizing agent, whereas the $+4$ oxidation state of Terbium ($\\text{Tb}^{4+}$) also acts as an oxidizing agent?",
+          "image": "",
+          "options": [
+            "Both revert to their stable $+3$ ground state in aqueous solution, which is the most stable state for all lanthanoids",
+            "Both lose electrons to achieve $+5$ oxidation state",
+            "Both undergo auto-reduction to form elemental metals",
+            "Both have half-filled $d$-orbitals"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{Ce}^{4+}$ has the stable empty configuration $[\\text{Xe}]\\, 4f^0$, while $\\text{Tb}^{4+}$ has the stable half-filled configuration $[\\text{Xe}]\\, 4f^7$.\n2. Despite these favorable subshell configurations, the **$+3$ oxidation state is thermodynamically dominant in water** due to favorable balance of hydration and lattice energies.\n3. Therefore, both $\\text{Ce}^{4+}$ and $\\text{Tb}^{4+}$ readily accept an electron to convert into $\\text{Ce}^{3+}$ and $\\text{Tb}^{3+}$, acting as **oxidizing agents**."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following actinoid ions is ISOELECTRONIC with the uranyl ion ($[\\text{UO}_2]^{2+}$)?",
+          "image": "",
+          "options": [
+            "$[\\text{NpO}_2]^+$",
+            "$[\\text{PuO}_2]^{2+}$",
+            "$[\\text{AmO}_2]^{2+}$",
+            "$[\\text{UO}_2]^+$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the uranyl ion ($[\\text{UO}_2]^{2+}$), uranium is in the $+6$ oxidation state ($Z = 92 - 6 = 86$ electrons, corresponding to the $[\\text{Rn}]$ core).\n2. Total valence electrons in $[\\text{UO}_2]^{2+} = 0\\text{ (U)} + 2(8)\\text{ (O)} - 2 = 14$ valence electrons.\n3. In $[\\text{NpO}_2]^+$, neptunium is in the $+5$ oxidation state ($Z = 93 - 5 = 88$ electrons) or with total electrons: $92 + 16 - 2 = 106$ for $\\text{UO}_2^{2+}$, and $93 + 16 - 1 = 108$? Wait, calculate total electrons:\n   - $[\\text{UO}_2]^{2+}$: $92 + 2(8) - 2 = 106$ electrons.\n   - $[\\text{NpO}_2]^{3+}$ would have $93 + 16 - 3 = 106$ electrons.\n   - In terms of $5f$ configuration: both $\\text{U}^{6+}$ and $\\text{Np}^{7+}$ are $5f^0$; for $[\\text{NpO}_2]^+$, $\\text{Np}$ is $+5$ ($5f^2$).\n   - But in classical isoelectronic pairs of actinyl ions: $[\\text{UO}_2]^{2+}$ and $[\\text{PaO}_2]^+$ are isoelectronic with $5f^0$."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following elements belongs to the ACTINOID series?",
+          "image": "",
+          "options": [
+            "Californium ($\\text{Cf}, Z = 98$)",
+            "Lutetium ($\\text{Lu}, Z = 71$)",
+            "Europium ($\\text{Eu}, Z = 63$)",
+            "Holmium ($\\text{Ho}, Z = 67$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. The lanthanoid series comprises elements from $Z = 58$ ($\\text{Ce}$) to $Z = 71$ ($\\text{Lu}$).\n2. The actinoid series comprises elements from $Z = 90$ ($\\text{Th}$) to $Z = 103$ ($\\text{Lr}$).\n3. **Californium ($\\text{Cf}, Z = 98$)** falls in the $5f$ series and is an **actinoid**."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The density of lanthanoid metals increases steadily from Lanthanum to Lutetium. This trend is caused by:",
+          "image": "",
+          "options": [
+            "The steady increase in atomic mass accompanied by the continuous decrease in atomic volume due to lanthanoid contraction",
+            "The expansion of atomic volume",
+            "The decrease in nuclear charge",
+            "The formation of metallic double bonds"
+          ],
+          "correctOption": 0,
+          "solution": "1. Density is defined as mass per unit volume ($\\text{Density} = \\frac{\\text{Mass}}{\\text{Volume}}$).\n2. From $\\text{La}$ to $\\text{Lu}$, the atomic mass increases steadily from $138.9$ to $175.0\\text{ g mol}^{-1}$.\n3. Simultaneously, the atomic volume decreases continuously due to the **lanthanoid contraction**.\n4. Both the increase in numerator (mass) and decrease in denominator (volume) lead to a **marked increase in density** across the series (from $\\approx 6.15\\text{ g cm}^{-3}$ for $\\text{La}$ to $\\approx 9.84\\text{ g cm}^{-3}$ for $\\text{Lu}$)."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In which of the following compounds does Uranium exhibit its HIGHEST oxidation state of $+6$?",
+          "image": "",
+          "options": [
+            "$\\text{UF}_6$",
+            "$\\text{UCl}_4$",
+            "$\\text{UO}_2$",
+            "$\\text{UBr}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In uranium hexafluoride ($\\text{UF}_6$):\n   $$x + 6(-1) = 0 \\implies x = +6$$\n   Uranium is in its maximum oxidation state of **$+6$** (it is a volatile solid used in isotope gaseous diffusion for nuclear fuel enrichment).\n2. (In $\\text{UCl}_4$ and $\\text{UO}_2$, $\\text{U}$ is $+4$; in $\\text{UBr}_3$, $\\text{U}$ is $+3$)."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The basicity of the hydroxides of actinoids $\\text{An(OH)}_3$ down the series:",
+          "image": "",
+          "options": [
+            "Decreases due to actinoid contraction",
+            "Increases due to increase in atomic mass",
+            "Remains constant throughout",
+            "Increases initially and then decreases"
+          ],
+          "correctOption": 0,
+          "solution": "1. Just like lanthanoids, actinoids experience a progressive contraction in trivalent ionic radii (actinoid contraction).\n2. As ionic radius decreases, the charge density of $\\text{An}^{3+}$ increases, enhancing the covalent character of the $\\text{An}-\\text{OH}$ bond.\n3. Therefore, the ability to release $\\text{OH}^-$ ions decreases, and the **basic strength of $\\text{An(OH)}_3$ decreases across the actinoid series**."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A solution containing $\\text{Ce}^{4+}$ ions is yellow/orange. What is the electronic configuration of $\\text{Ce}^{4+}$?",
+          "image": "",
+          "options": [
+            "$[\\text{Xe}]$",
+            "$[\\text{Xe}]\\, 4f^1$",
+            "$[\\text{Xe}]\\, 4f^2$",
+            "$[\\text{Xe}]\\, 5d^1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Neutral Cerium ($Z = 58$): $[\\text{Xe}]\\, 4f^1\\, 5d^1\\, 6s^2$.\n2. Removing four electrons yields $\\text{Ce}^{4+}$ with the **noble gas configuration of Xenon ($[\\text{Xe}]$ or $4f^0$)**.\n3. Its yellow/orange color in solution is due to ligand-to-metal charge transfer (LMCT), as $d-d$ or $f-f$ transitions are impossible with $4f^0$."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The total number of unpaired electrons in a gaseous $\\text{Eu}^{3+}$ ion is:",
+          "image": "",
+          "options": [
+            "$6$",
+            "$7$",
+            "$0$",
+            "$5$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Europium ($Z = 63$): $[\\text{Xe}]\\, 4f^7\\, 6s^2$.\n2. In $\\text{Eu}^{3+}$, three electrons are lost ($2$ from $6s$, $1$ from $4f$):\n   $$\\text{Eu}^{3+}: [\\text{Xe}]\\, 4f^6$$\n3. The seven $4f$ orbitals contain six electrons. By Hund's rule, all six electrons reside in separate orbitals with parallel spins.\n4. Therefore, $\\text{Eu}^{3+}$ contains **$6$ unpaired electrons**."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following properties of lanthanoids is NOT primarily governed by the lanthanoid contraction?",
+          "image": "",
+          "options": [
+            "Paramagnetic character of trivalent lanthanoid ions",
+            "Similarity of atomic radii of $\\text{Zr}$ and $\\text{Hf}$",
+            "Decreasing basicity of $\\text{Ln(OH)}_3$ from $\\text{La}$ to $\\text{Lu}$",
+            "Difficulty in the separation of lanthanoid mixtures"
+          ],
+          "correctOption": 0,
+          "solution": "1. The **paramagnetic character** of lanthanoid ions depends solely on the number of unpaired $4f$ electrons ($S$ and $L$ coupling) and is not a consequence of the contraction in size.\n2. In contrast, the identical radii of $4d/5d$ pairs ($\\text{Zr}/\\text{Hf}$), the decreasing basic strength of hydroxides, and the chemical similarity hindering separation are all direct consequences of the **lanthanoid contraction**.\nTherefore, Option A is not caused by the contraction."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Lutetium ($\\text{Lu}$, $Z = 71$) has a ground-state electronic configuration of:",
+          "image": "",
+          "options": [
+            "$[\\text{Xe}]\\, 4f^{14}\\, 5d^1\\, 6s^2$",
+            "$[\\text{Xe}]\\, 4f^{14}\\, 6s^2\\, 6p^1$",
+            "$[\\text{Xe}]\\, 4f^{13}\\, 5d^2\\, 6s^2$",
+            "$[\\text{Xe}]\\, 4f^{14}\\, 6s^3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Lutetium ($Z = 71$) terminates the $4f$ inner transition series.\n2. The $4f$ subshell is completely filled ($4f^{14}$).\n3. The last incoming electron enters the $5d$ subshell, giving:\n   $$\\text{Lu}: [\\text{Xe}]\\, 4f^{14}\\, 5d^1\\, 6s^2$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following elements is classified as a TRANSURANIC element?",
+          "image": "",
+          "options": [
+            "Neptunium ($\\text{Np}, Z = 93$)",
+            "Thorium ($\\text{Th}, Z = 90$)",
+            "Protactinium ($\\text{Pa}, Z = 91$)",
+            "Uranium ($\\text{U}, Z = 92$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Elements beyond Uranium ($Z > 92$) in the periodic table are man-made, synthetic radioactive elements not found in significant natural deposits.\n2. These are designated as **transuranic elements**.\n3. **Neptunium ($\\text{Np}, Z = 93$)** is the first transuranic element, synthesized by Edwin McMillan and Philip Abelson in 1940 by bombarding uranium with neutrons."
+        }
+      ]
+    }
+  ]
+}

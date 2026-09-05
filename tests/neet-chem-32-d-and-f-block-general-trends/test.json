@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-32-d-and-f-block-general-trends",
+  "title": "d- and f-Block Elements: General Trends (Configurations, Radii, Ionization, Oxidation States, Color, & Catalytic Activity)",
+  "syllabus": "General characteristics of transition elements (d-block, 3d series); Electronic configurations of 3d metals and anomalies (Cr: 3d5 4s1, Cu: 3d10 4s1); Definition of transition elements and exclusion of Zn, Cd, Hg; Trends in metallic properties and enthalpies of atomization; Trends in atomic and ionic radii (covalent vs metallic radii, effect of intervening d and f electrons, lanthanoid contraction in 4d vs 5d pairs such as Zr/Hf, Nb/Ta, Mo/W); Ionization enthalpies (IE1, IE2, IE3 irregularities, role of exchange energy and subshell stability in Cr+, Cu+, Mn2+, Fe3+); Standard electrode potentials (E° M2+/M and E° M3+/M2+ trends across the 3d series); Variable oxidation states (minimum, maximum, stability patterns, acidic/basic nature of oxides across oxidation states); Magnetic properties (diamagnetism, paramagnetism, spin-only formula μ = √(n(n+2)) BM); Formation of colored ions (d-d transitions, conditions for color vs colorless d0 and d10 systems, charge transfer spectra in KMnO4 and K2Cr2O7); Catalytic properties (variable valency, vacant d-orbitals, surface adsorption); Interstitial compounds and alloy formation.",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following 3d-transition series elements has the HIGHEST enthalpy of atomization?",
+          "image": "",
+          "options": [
+            "Vanadium ($\\text{V}$)",
+            "Zinc ($\\text{Zn}$)",
+            "Copper ($\\text{Cu}$)",
+            "Scandium ($\\text{Sc}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Enthalpy of atomization depends directly on the strength of metallic bonding in the crystal lattice.\n2. Metallic bonding strength increases with the number of unpaired $(n-1)d$ electrons available to participate in interatomic covalent bonding alongside outer $ns$ electrons.\n3. Vanadium has the ground-state configuration $[\\text{Ar}] 3d^3 4s^2$, contributing five valence electrons ($3$ unpaired $d$-electrons $+ 2$ $s$-electrons) to intermetallic bonding, giving it the highest enthalpy of atomization ($515\\text{ kJ mol}^{-1}$) among the options.\n4. Zinc ($3d^{10} 4s^2$) has zero unpaired $d$-electrons, forming weak metallic bonds and having the lowest enthalpy of atomization ($126\\text{ kJ mol}^{-1}$)."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Why are the atomic radii of second and third transition series elements in the same vertical group virtually identical (for example, $\\text{Zr} = 160\\text{ pm}$ and $\\text{Hf} = 159\\text{ pm}$)?",
+          "image": "",
+          "options": [
+            "Lanthanoid contraction caused by the poor shielding effect of the fourteen $4f$ electrons",
+            "Actinoid contraction",
+            "Equal number of valence electrons",
+            "Diagonal relationship between Zirconium and Hafnium"
+          ],
+          "correctOption": 0,
+          "solution": "1. In passing from the $4d$ transition series ($\\text{Zr}, Z = 40$) to the $5d$ transition series ($\\text{Hf}, Z = 72$), the fourteen lanthanoid elements ($4f^{1-14}$) intervene.\n2. The $4f$ subshell is buried and diffuse, providing very poor shielding for outer electrons.\n3. Consequently, the nuclear charge increases by $32$ units while screening is minimal, pulling the valence shells inward.\n4. This **lanthanoid contraction** almost exactly offsets the expected expansion due to adding a principal quantum shell ($n = 5 \\rightarrow n = 6$), making the covalent radii of $\\text{Zr}$ ($160\\text{ pm}$) and $\\text{Hf}$ ($159\\text{ pm}$) practically identical."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The spin-only magnetic moment of a divalent metal ion $\\text{M}^{2+}$ in aqueous solution is found to be $4.90\\text{ BM}$. The atomic number of the metal $\\text{M}$ is:",
+          "image": "",
+          "options": [
+            "$26$ (Iron)",
+            "$25$ (Manganese)",
+            "$24$ (Chromium)",
+            "$28$ (Nickel)"
+          ],
+          "correctOption": 0,
+          "solution": "1. The spin-only magnetic moment is given by:\n   $$\\mu = \\sqrt{n(n + 2)}\\text{ BM}$$\n2. Setting $\\sqrt{n(n + 2)} = 4.90$:\n   $$n(n + 2) \\approx (4.90)^2 = 24.01 \\implies n = 4$$\n   Thus, the ion $\\text{M}^{2+}$ possesses $4$ unpaired electrons.\n3. Write the electronic configuration for $n = 4$:\n   - In a $d$-subshell, $4$ unpaired electrons correspond to either $d^4$ or $d^6$.\n   - For $\\text{Fe}^{2+}$ ($Z = 26$): $[\\text{Ar}] 3d^6 \\implies$ five $3d$ orbitals contain $(\\uparrow\\downarrow)(\\uparrow)(\\uparrow)(\\uparrow)(\\uparrow) \\implies 4$ unpaired electrons.\n   - $\\text{Mn}^{2+}$ ($Z = 25$): $3d^5 \\implies 5$ unpaired electrons ($\\mu = 5.92\\text{ BM}$).\n   - $\\text{Cr}^{2+}$ ($Z = 24$): $3d^4 \\implies 4$ unpaired electrons, but neutral $\\text{Fe}$ is $Z = 26$.\nTherefore, the atomic number of the metal is $26$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Potassium permanganate ($\\text{KMnO}_4$) displays an intense deep purple color even though manganese is in the $+7$ oxidation state with an empty $3d^0$ subshell. The color arises due to:",
+          "image": "",
+          "options": [
+            "Ligand-to-metal charge transfer (LMCT)",
+            "$d-d$ electronic transition",
+            "Metal-to-ligand charge transfer (MLCT)",
+            "Presence of unpaired $4s$ electrons"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the permanganate ion ($\\text{MnO}_4^-$), manganese has an oxidation state of $+7$ with configuration $[\\text{Ar}] 3d^0 4s^0$.\n2. Because there are no $d$-electrons present, $d-d$ transitions are impossible.\n3. The intense purple color is caused by **ligand-to-metal charge transfer (LMCT)**, where an electron is temporarily transferred from a full $2p$ non-bonding orbital of an oxo ligand ($\\text{O}^{2-}$) into an empty low-lying $3d$ orbital of the central $\\text{Mn}^{7+}$ ion upon absorbing yellow-green light in the visible region.\n4. (The same LMCT mechanism accounts for the bright orange color of $\\text{Cr}_2\\text{O}_7^{2-}$)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Transition metals and their compounds act as effective heterogeneous and homogeneous catalysts primarily because of:",
+          "image": "",
+          "options": [
+            "Their ability to adopt variable oxidation states and provide active surface areas with vacant $d$-orbitals for intermediate complex formation",
+            "Their high electropositive character and low melting points",
+            "Their completely filled $d$-orbitals",
+            "Their low density and high volatility"
+          ],
+          "correctOption": 0,
+          "solution": "Transition metals serve as excellent catalysts due to two main reasons:\n1. **Variable oxidation states:** They can easily switch between different oxidation states (e.g., $\\text{Fe}^{2+} \\rightleftharpoons \\text{Fe}^{3+}$, $\\text{V}^{4+} \\rightleftharpoons \\text{V}^{5+}$) to facilitate electron transfer pathways with low activation energy barriers.\n2. **Surface adsorption & vacant $d$-orbitals:** They possess accessible, vacant $(n-1)d$ orbitals that can form temporary coordination bonds with reactant molecules, increasing local reactant concentration on their surfaces and weakening existing reactant bonds (e.g., $\\text{V}_2\\text{O}_5$ in Contact process, finely divided $\\text{Fe}$ in Haber process)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Across the 3d transition series from $\\text{Sc}$ to $\\text{Zn}$, the standard reduction potential $E^\\circ_{\\text{M}^{2+}/\\text{M}}$ shows an irregular trend. Which of the following 3d elements has a POSITIVE standard reduction potential ($E^\\circ_{\\text{M}^{2+}/\\text{M}} > 0$)?",
+          "image": "",
+          "options": [
+            "Copper ($\\text{Cu}$)",
+            "Zinc ($\\text{Zn}$)",
+            "Nickel ($\\text{Ni}$)",
+            "Iron ($\\text{Fe}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. For all $3d$ metals from $\\text{Sc}$ to $\\text{Zn}$, $E^\\circ_{\\text{M}^{2+}/\\text{M}}$ is negative, EXCEPT for **Copper** ($E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}} = +0.34\\text{ V}$).\n2. The conversion $\\text{M}(s) \\rightarrow \\text{M}^{2+}(aq) + 2e^-$ requires enthalpy of sublimation ($\\Delta_{\\text{sub}}H$) and the sum of the first two ionization enthalpies ($\\Delta_i H_1 + \\Delta_i H_2$), which must be compensated by the hydration enthalpy ($\\Delta_{\\text{hyd}}H$).\n3. For copper, its high enthalpy of atomization ($339\\text{ kJ mol}^{-1}$) combined with high ionization energy is NOT balanced by its hydration enthalpy.\n4. Hence, $E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}}$ is positive ($+0.34\\text{ V}$), meaning copper cannot displace $\\text{H}_2$ gas from dilute non-oxidizing acids."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following ions is COLORLESS in aqueous solution?",
+          "image": "",
+          "options": [
+            "$\\text{Sc}^{3+}$",
+            "$\\text{Ti}^{3+}$",
+            "$\\text{V}^{3+}$",
+            "$\\text{Fe}^{2+}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Color in transition metal ions arises from electronic transitions between split $d$-orbitals ($d-d$ transitions) in the presence of ligands.\n2. A species can exhibit $d-d$ transitions only if it has a partially filled $d$-subshell ($d^1$ to $d^9$).\n3. Evaluate the configurations:\n   - $\\text{Sc}^{3+}$ ($Z = 21$): $[\\text{Ar}] 3d^0 \\implies$ completely empty $d$-subshell $\\implies$ **Colorless**.\n   - $\\text{Ti}^{3+}$ ($Z = 22$): $[\\text{Ar}] 3d^1 \\implies$ purple/violet.\n   - $\\text{V}^{3+}$ ($Z = 23$): $[\\text{Ar}] 3d^2 \\implies$ green.\n   - $\\text{Fe}^{2+}$ ($Z = 26$): $[\\text{Ar}] 3d^6 \\implies$ pale green.\nTherefore, $\\text{Sc}^{3+}$ is colorless."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The highest oxidation state displayed by any 3d transition metal in its compounds is $+7$. This is exhibited by:",
+          "image": "",
+          "options": [
+            "Manganese in $\\text{KMnO}_4$ and $\\text{Mn}_2\\text{O}_7$",
+            "Chromium in $\\text{K}_2\\text{Cr}_2\\text{O}_7$",
+            "Iron in $\\text{FeO}_4^{2-}$",
+            "Vanadium in $\\text{V}_2\\text{O}_5$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The maximum oxidation state of a $3d$ transition metal equals the sum of all unpaired $3d$ electrons and the two $4s$ electrons up to manganese.\n2. Manganese ($Z = 25$) has the valence configuration $3d^5 4s^2$, possessing seven valence electrons.\n3. By losing/sharing all seven valence electrons with electronegative oxygen or fluorine, it exhibits the maximum oxidation state of **$+7$** in compounds like **$\\text{KMnO}_4$ and $\\text{Mn}_2\\text{O}_7$**.\n4. (For the $4d$ and $5d$ series, the maximum oxidation state reaches $+8$ in $\\text{RuO}_4$ and $\\text{OsO}_4$)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Why is the third ionization enthalpy ($IE_3$) of manganese ($Z = 25$) ANOMALOUSLY HIGH compared to that of iron ($Z = 26$)?",
+          "image": "",
+          "options": [
+            "Removing a third electron from $\\text{Mn}^{2+}$ requires breaking the stable, half-filled $3d^5$ subshell, whereas in $\\text{Fe}^{2+}$, it removes an electron from $3d^6$ to achieve stable $3d^5$",
+            "Manganese has higher nuclear charge than iron",
+            "The radius of $\\text{Mn}^{2+}$ is larger than $\\text{Fe}^{2+}$",
+            "Iron has higher electronegativity than manganese"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electronic configuration of $\\text{Mn}^{2+}$: $[\\text{Ar}] 3d^5$.\n   The $3d^5$ configuration is exactly half-filled, possessing symmetrical charge distribution and maximal electron-exchange stabilization. Removing a third electron requires disrupting this stable subshell, making $IE_3(\\text{Mn}) = 3252\\text{ kJ mol}^{-1}$ very high.\n2. Electronic configuration of $\\text{Fe}^{2+}$: $[\\text{Ar}] 3d^6$.\n   Removing a third electron removes the paired electron, yielding the extra-stable half-filled $3d^5$ configuration ($\\text{Fe}^{3+}$). Hence, $IE_3(\\text{Fe}) = 2957\\text{ kJ mol}^{-1}$ is significantly lower than that of manganese."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Interstitial compounds are formed when small non-metal atoms like $\\text{H}, \\text{C},$ or $\\text{N}$ are trapped inside the interstitial voids of transition metal crystal lattices. Which of the following is NOT a characteristic property of interstitial compounds?",
+          "image": "",
+          "options": [
+            "They are chemically much more reactive than the parent pure metals",
+            "They have very high melting points, even higher than those of the pure metals",
+            "They are extremely hard (some borides approach diamond in hardness)",
+            "They retain metallic electrical conductivity"
+          ],
+          "correctOption": 0,
+          "solution": "Characteristics of interstitial compounds (e.g., $\\text{TiC}, \\text{Fe}_3\\text{H}, \\text{Mn}_4\\text{N}$):\n1. **High melting points:** Strong covalent bonding between metal atoms and interstitial non-metals elevates melting points well above those of pure metals.\n2. **Extreme hardness:** Interstitial atoms lock dislocation slip planes, making them very hard.\n3. **Metallic conductivity:** Retained because metal-metal delocalized valence electron bands remain intact.\n4. **Chemical inertness:** They are **chemically inert and non-reactive**, not more reactive.\nTherefore, Statement A is incorrect."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The value of $E^\\circ_{\\text{Cr}^{3+}/\\text{Cr}^{2+}}$ is $-0.41\\text{ V}$, while $E^\\circ_{\\text{Mn}^{3+}/\\text{Mn}^{2+}}$ is $+1.57\\text{ V}$. This indicates that in aqueous solution:",
+          "image": "",
+          "options": [
+            "$\\text{Cr}^{2+}$ is a reducing agent, while $\\text{Mn}^{3+}$ is an oxidizing agent",
+            "$\\text{Cr}^{3+}$ is easily reduced, while $\\text{Mn}^{2+}$ is easily oxidized",
+            "Both $\\text{Cr}^{2+}$ and $\\text{Mn}^{3+}$ are strong reducing agents",
+            "Both $\\text{Cr}^{3+}$ and $\\text{Mn}^{2+}$ are strong oxidizing agents"
+          ],
+          "correctOption": 0,
+          "solution": "1. For Chromium:\n   $$E^\\circ_{\\text{Cr}^{3+}/\\text{Cr}^{2+}} = -0.41\\text{ V} < 0$$\n   A negative potential indicates that the oxidation $\\text{Cr}^{2+} \\rightarrow \\text{Cr}^{3+} + e^-$ ($E^\\circ = +0.41\\text{ V}$) is thermodynamically favorable. In water, $\\text{Cr}^{3+}$ has the stable half-filled $t_{2g}^3$ subshell, making **$\\text{Cr}^{2+}$ a strong reducing agent**.\n2. For Manganese:\n   $$E^\\circ_{\\text{Mn}^{3+}/\\text{Mn}^{2+}} = +1.57\\text{ V} > 0$$\n   A large positive potential indicates that $\\text{Mn}^{3+}$ ($3d^4$) readily gains an electron to form the stable half-filled $3d^5$ state ($\\text{Mn}^{2+}$), making **$\\text{Mn}^{3+}$ a powerful oxidizing agent**."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following pairs of transition metal oxides is AMPHOTERIC in nature?",
+          "image": "",
+          "options": [
+            "$\\text{V}_2\\text{O}_5$ and $\\text{Cr}_2\\text{O}_3$",
+            "$\\text{CrO}$ and $\\text{MnO}$",
+            "$\\text{CrO}_3$ and $\\text{Mn}_2\\text{O}_7$",
+            "$\\text{TiO}$ and $\\text{VO}$"
+          ],
+          "correctOption": 0,
+          "solution": "General rule for transition metal oxides:\n- Low oxidation states ($+2, +3$): Basic (e.g., $\\text{CrO}, \\text{MnO}, \\text{TiO}$).\n- Intermediate oxidation states ($+3, +4, +5$): **Amphoteric** (e.g., $\\text{V}_2\\text{O}_5, \\text{Cr}_2\\text{O}_3, \\text{V}_2\\text{O}_4$).\n- High oxidation states ($+6, +7$): Strongly acidic and covalent (e.g., $\\text{CrO}_3, \\text{Mn}_2\\text{O}_7$).\nBoth $\\text{V}_2\\text{O}_5$ (dissolves in acids to give $\\text{VO}_2^+$ and in alkalies to give $\\text{VO}_4^{3-}$) and $\\text{Cr}_2\\text{O}_3$ (dissolves in acids to give $\\text{Cr}^{3+}$ and in alkalies to give $[\\text{Cr}(\\text{OH})_4]^-$) are amphoteric."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The atomic numbers of four transition elements are given as: $\\text{V} (23), \\text{Cr} (24), \\text{Mn} (25),$ and $\\text{Fe} (26)$. Which of them has the HIGHEST second ionization enthalpy ($IE_2$)?",
+          "image": "",
+          "options": [
+            "$\\text{Cr}$",
+            "$\\text{Mn}$",
+            "$\\text{V}$",
+            "$\\text{Fe}$"
+          ],
+          "correctOption": 0,
+          "solution": "Examine the unipositive ion configurations from which the second electron is removed:\n1. $\\text{Cr}^+$: $[\\text{Ar}] 3d^5$ (removing an electron disrupts a stable, half-filled $3d^5$ subshell).\n2. $\\text{V}^+$: $[\\text{Ar}] 3d^3 4s^1$ (removes outer $4s$ electron).\n3. $\\text{Mn}^+$: $[\\text{Ar}] 3d^5 4s^1$ (removes outer $4s$ electron).\n4. $\\text{Fe}^+$: $[\\text{Ar}] 3d^6 4s^1$ (removes outer $4s$ electron).\nBecause $\\text{Cr}^+$ has the extra-stable half-filled $3d^5$ subshell, removing a second electron requires exceptionally large energy. Hence, **Chromium ($\\text{Cr}$) has the highest $IE_2$** ($1592\\text{ kJ mol}^{-1}$) among these elements (analogous to $\\text{Cu}^+$ having high $IE_2$ due to $3d^{10}$)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Why are Zinc, Cadmium, and Mercury classified under the d-block, but NOT considered typical transition elements by IUPAC?",
+          "image": "",
+          "options": [
+            "They have completely filled $(n-1)d^{10}$ subshells both in their ground elemental states and in their common oxidation states",
+            "Their valence electrons do not enter the $d$-subshell",
+            "They are non-metallic in nature",
+            "They do not form coordination complexes"
+          ],
+          "correctOption": 0,
+          "solution": "1. IUPAC defines a transition element as an element that has an **incompletely filled $d$-subshell** in its ground state or in any of its stable oxidation states.\n2. **Zinc ($\\text{Zn}$), Cadmium ($\\text{Cd}$), and Mercury ($\\text{Hg}$)** have the electronic configuration $(n-1)d^{10} ns^2$.\n3. In their only common oxidation state ($+2$), they lose the two $ns$ electrons to give $(n-1)d^{10}$:\n   $$\\text{Zn}^{2+}: 3d^{10}, \\quad \\text{Cd}^{2+}: 4d^{10}, \\quad \\text{Hg}^{2+}: 5d^{10}$$\n4. Because their $d$-subshells remain completely filled at all times, they do not show typical transition properties (such as variable valency, $d-d$ color, or paramagnetism)."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The calculated spin-only magnetic moment for the hydrated ion $\\text{Ti}^{3+}(aq)$ is:",
+          "image": "",
+          "options": [
+            "$1.73\\text{ BM}$",
+            "$2.83\\text{ BM}$",
+            "$3.87\\text{ BM}$",
+            "$0.00\\text{ BM}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electronic configuration of Titanium ($Z = 22$): $[\\text{Ar}] 3d^2 4s^2$.\n2. For $\\text{Ti}^{3+}$: Three electrons are lost ($2$ from $4s$, $1$ from $3d$), leaving $[\\text{Ar}] 3d^1$.\n3. Number of unpaired electrons $n = 1$.\n4. Calculate the spin-only magnetic moment:\n   $$\\mu = \\sqrt{n(n + 2)} = \\sqrt{1(1 + 2)} = \\sqrt{3} \\approx 1.732\\text{ BM} \\approx 1.73\\text{ BM}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Across the 3d transition series from Scandium to Copper, atomic radii decrease initially, remain almost constant in the middle (from $\\text{Cr}$ to $\\text{Cu}$), and slightly increase at Zinc. The nearly CONSTANT atomic radius in the middle of the series is due to:",
+          "image": "",
+          "options": [
+            "The increasing nuclear attraction being almost exactly balanced by the screening effect of the added $3d$ electrons",
+            "The complete absence of interelectronic repulsions",
+            "The decrease in effective nuclear charge",
+            "The formation of covalent bonds between adjacent atoms"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moving across the series, each added proton increases nuclear charge ($Z$), which pulls the electron cloud inward.\n2. Concurrently, electrons are added to the inner $(n-1)d$ subshell, which exerts a screening/shielding effect on outer $4s$ electrons.\n3. In the middle of the series (from $\\text{Cr}$ to $\\text{Cu}$), the **increasing inward nuclear pull is almost exactly balanced by the increasing outward screening repulsion** of the added $3d$ electrons.\n4. As a result, the atomic radius remains virtually constant ($124-128\\text{ pm}$)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following ions is DIAMAGNETIC?",
+          "image": "",
+          "options": [
+            "$\\text{Cu}^+$",
+            "$\\text{Cu}^{2+}$",
+            "$\\text{Fe}^{3+}$",
+            "$\\text{Co}^{2+}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Copper ($Z = 29$): $[\\text{Ar}] 3d^{10} 4s^1$.\n2. In the cuprous ion ($\\text{Cu}^+$), one electron is removed from the $4s$ orbital:\n   $$\\text{Cu}^+: [\\text{Ar}] 3d^{10}$$\n   All ten $3d$ electrons are paired in the five $d$-orbitals ($n = 0$ unpaired electrons).\n3. Because there are no unpaired electrons, **$\\text{Cu}^+$ is diamagnetic** (and colorless).\n4. In contrast, $\\text{Cu}^{2+}$ is $3d^9$ ($n = 1$), $\\text{Fe}^{3+}$ is $3d^5$ ($n = 5$), and $\\text{Co}^{2+}$ is $3d^7$ ($n = 3$), all being paramagnetic."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In which of the following pairs of transition elements does the ground-state electronic configuration deviate from the expected Aufbau filling to achieve half-filled or fully filled d-subshell stability?",
+          "image": "",
+          "options": [
+            "$\\text{Cr}$ and $\\text{Cu}$",
+            "$\\text{Sc}$ and $\\text{Ti}$",
+            "$\\text{V}$ and $\\text{Mn}$",
+            "$\\text{Fe}$ and $\\text{Ni}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Chromium ($Z = 24$):** Expected configuration is $[\\text{Ar}] 3d^4 4s^2$. The actual ground state is **$[\\text{Ar}] 3d^5 4s^1$**, where one electron from $4s$ enters $3d$ to achieve an extra-stable **half-filled $3d^5$ subshell** with maximal exchange energy.\n2. **Copper ($Z = 29$):** Expected configuration is $[\\text{Ar}] 3d^9 4s^2$. The actual ground state is **$[\\text{Ar}] 3d^{10} 4s^1$**, achieving a completely filled, spherically symmetrical **$3d^{10}$ subshell**.\nTherefore, the anomalous pair is $\\text{Cr}$ and $\\text{Cu}$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The stability of $\\text{Cu}^{2+}(aq)$ is greater than that of $\\text{Cu}^+(aq)$ in aqueous solutions, despite $\\text{Cu}^+$ having a completely filled $3d^{10}$ configuration. This is primarily because:",
+          "image": "",
+          "options": [
+            "The much higher hydration enthalpy of the smaller, doubly charged $\\text{Cu}^{2+}$ ion overcompensates for the second ionization enthalpy of copper",
+            "$\\text{Cu}^+$ undergoes rapid reduction to metallic copper by water",
+            "$\\text{Cu}^{2+}$ forms covalent bonds with water molecules",
+            "Water molecules destroy the $3d^{10}$ subshell"
+          ],
+          "correctOption": 0,
+          "solution": "1. The disproportionation of $\\text{Cu}^+$ in water is spontaneous:\n   $$2\\text{Cu}^+(aq) \\rightarrow \\text{Cu}^{2+}(aq) + \\text{Cu}(s)$$\n2. The second ionization enthalpy of copper ($\\text{Cu}^+ \\rightarrow \\text{Cu}^{2+} + e^-$) is high because an electron is removed from $3d^{10}$.\n3. However, the $\\text{Cu}^{2+}$ ion has a much smaller ionic radius and a higher charge ($+2$) than $\\text{Cu}^+$ ($+1$), giving it an exceptionally high charge density.\n4. The **hydration enthalpy of $\\text{Cu}^{2+}$ ($-2121\\text{ kJ mol}^{-1}$)** is vastly more exothermic than that of $\\text{Cu}^+$ ($-593\\text{ kJ mol}^{-1}$).\n5. This large release of hydration energy more than compensates for the energy required in the second ionization step, making $\\text{Cu}^{2+}(aq)$ thermodynamically more stable."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Brass and bronze are classic alloys of copper. Their respective compositions are:",
+          "image": "",
+          "options": [
+            "Brass: $\\text{Cu} + \\text{Zn}$; Bronze: $\\text{Cu} + \\text{Sn}$",
+            "Brass: $\\text{Cu} + \\text{Sn}$; Bronze: $\\text{Cu} + \\text{Zn}$",
+            "Brass: $\\text{Cu} + \\text{Ni}$; Bronze: $\\text{Cu} + \\text{Al}$",
+            "Brass: $\\text{Cu} + \\text{Pb}$; Bronze: $\\text{Cu} + \\text{Fe}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Transition metals readily form **substitutional alloys** because their atomic radii differ by less than $15\\%$ (Hume-Rothery rule), allowing atoms of one metal to substitute for another in the crystal lattice.\n2. **Brass:** An alloy of **Copper and Zinc** ($\\approx 60-80\\%\\ \\text{Cu}, 20-40\\%\\ \\text{Zn}$).\n3. **Bronze:** An alloy of **Copper and Tin** ($\\approx 90\\%\\ \\text{Cu}, 10\\%\\ \\text{Sn}$)."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following 3d transition metal cations has the MAXIMUM number of unpaired electrons in its ground state?",
+          "image": "",
+          "options": [
+            "$\\text{Fe}^{3+}$",
+            "$\\text{Fe}^{2+}$",
+            "$\\text{Co}^{2+}$",
+            "$\\text{Ni}^{2+}$"
+          ],
+          "correctOption": 0,
+          "solution": "Determine the number of unpaired electrons ($n$) for each ion:\n1. $\\text{Fe}^{3+}$ ($Z = 26$): $[\\text{Ar}] 3d^5 \\implies$ five singly occupied $d$-orbitals $\\implies \\mathbf{n = 5}$ (maximum possible in $3d$).\n2. $\\text{Fe}^{2+}$ ($Z = 26$): $[\\text{Ar}] 3d^6 \\implies n = 4$.\n3. $\\text{Co}^{2+}$ ($Z = 27$): $[\\text{Ar}] 3d^7 \\implies n = 3$.\n4. $\\text{Ni}^{2+}$ ($Z = 28$): $[\\text{Ar}] 3d^8 \\implies n = 2$.\nTherefore, $\\text{Fe}^{3+}$ has the maximum number of unpaired electrons ($5$)."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The melting points of transition metals initially increase across a period, reach a maximum at Group 6 ($\\text{Cr}, \\text{Mo}, \\text{W}$), and then decrease towards Group 12. This pattern occurs because:",
+          "image": "",
+          "options": [
+            "The number of unpaired $d$-electrons available for metallic bonding reaches a maximum of five at Group 6",
+            "The atomic size is maximum at Group 6",
+            "Elements of Group 6 form ionic crystals",
+            "Ionization enthalpy is minimum at Group 6"
+          ],
+          "correctOption": 0,
+          "solution": "1. In transition elements, both outer $ns$ electrons and inner $(n-1)d$ electrons participate in forming the metallic lattice.\n2. Covalent bonding between overlapping unpaired $d$-orbitals reinforces the metallic bonds.\n3. The number of unpaired $d$-electrons increases from Group 3 to Group 6, reaching a maximum of $5$ unpaired electrons (e.g., $\\text{Cr}: 3d^5 4s^1$, $\\text{Mo}: 4d^5 5s^1$, $\\text{W}: 5d^4 6s^2$).\n4. Tungsten ($\\text{W}$) has the strongest interatomic bonding and the highest melting point of all pure metals ($3422^\\circ\\text{C}$).\n5. Beyond Group 6, $d$-electrons pair up, reducing the number of unpaired electrons available for bonding and lowering melting points."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Why does scandium ($Z = 21$) exhibit ONLY the $+3$ oxidation state in all its stable compounds, with no $+2$ state observed?",
+          "image": "",
+          "options": [
+            "Losing all three valence electrons ($3d^1 4s^2$) yields the exceptionally stable noble gas configuration of Argon",
+            "Scandium has only three protons in its nucleus",
+            "The $3d$ orbital of scandium has higher energy than $4p$",
+            "Scandium is a non-metal"
+          ],
+          "correctOption": 0,
+          "solution": "1. Ground-state configuration of Scandium: $[\\text{Ar}] 3d^1 4s^2$.\n2. Removing two $4s$ electrons yields $\\text{Sc}^{2+}$ ($3d^1$), leaving a single unpaired $3d$ electron.\n3. The third ionization enthalpy to remove this single $d$-electron is very low, and losing it generates the stable, closed-shell **noble gas configuration of Argon ($[\\text{Ar}]$)**.\n4. The lattice or hydration energy of $\\text{Sc}^{3+}$ is vastly higher than that of $\\text{Sc}^{2+}$, compensating for the third ionization energy.\n5. Therefore, scandium forms compounds exclusively in the **$+3$ oxidation state**."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The calculated spin-only magnetic moments of $\\text{Fe}^{2+}$ and $\\text{Mn}^{2+}$ are respectively:",
+          "image": "",
+          "options": [
+            "$4.90\\text{ BM}$ and $5.92\\text{ BM}$",
+            "$5.92\\text{ BM}$ and $4.90\\text{ BM}$",
+            "$3.87\\text{ BM}$ and $4.90\\text{ BM}$",
+            "$1.73\\text{ BM}$ and $2.83\\text{ BM}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $\\text{Fe}^{2+}$ ($3d^6$): Four unpaired electrons ($n = 4$):\n   $$\\mu = \\sqrt{4(4 + 2)} = \\sqrt{24} \\approx 4.899\\text{ BM} \\approx 4.90\\text{ BM}$$\n2. For $\\text{Mn}^{2+}$ ($3d^5$): Five unpaired electrons ($n = 5$):\n   $$\\mu = \\sqrt{5(5 + 2)} = \\sqrt{35} \\approx 5.916\\text{ BM} \\approx 5.92\\text{ BM}$$\nTherefore, the values are $4.90\\text{ BM}$ and $5.92\\text{ BM}$."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following transition metal ions is COLORLESS in an aqueous solution?",
+          "image": "",
+          "options": [
+            "$\\text{Zn}^{2+}$",
+            "$\\text{Ni}^{2+}$",
+            "$\\text{Fe}^{3+}$",
+            "$\\text{Cr}^{3+}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. An ion is colored if it possesses an incompletely filled $d$-subshell ($d^1-d^9$) where visible light can promote $d-d$ transitions.\n2. In the zinc ion ($\\text{Zn}^{2+}, Z = 30$):\n   $$\\text{Zn}^{2+}: [\\text{Ar}] 3d^{10}$$\n   The $3d$ subshell is completely filled. Because there are no vacant $d$-orbitals available to receive an excited electron, $d-d$ transitions cannot occur.\n3. Therefore, **$\\text{Zn}^{2+}$ is colorless** in aqueous solutions.\n4. ($\\text{Ni}^{2+}$ is green, $\\text{Fe}^{3+}$ is yellow/brown, $\\text{Cr}^{3+}$ is violet/green)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the reaction of acidified potassium dichromate with hydrogen sulfide:\n$$\\text{Cr}_2\\text{O}_7^{2-} + 8\\text{H}^+ + 3\\text{H}_2\\text{S} \\rightarrow 2\\text{Cr}^{3+} + 3\\text{S} \\downarrow + 7\\text{H}_2\\text{O}$$\nThe orange solution turns green due to the formation of:",
+          "image": "",
+          "options": [
+            "Hydrated $\\text{Cr}^{3+}$ ions",
+            "Colloidal sulfur",
+            "$\\text{CrO}_4^{2-}$ ions",
+            "Chromic acid ($\\text{H}_2\\text{CrO}_4$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Orange dichromate ions ($\\text{Cr}_2\\text{O}_7^{2-}$), where chromium is in the $+6$ oxidation state, act as a strong oxidizing agent in acidic medium.\n2. They oxidize $\\text{H}_2\\text{S}$ to elemental sulfur (forming a white/yellow turbidity).\n3. During the process, $\\text{Cr}(\\text{VI})$ is reduced to the **chromium(III) ion ($\\text{Cr}^{3+}$)**, which forms the green hydrated complex $[\\text{Cr}(\\text{H}_2\\text{O})_6]^{3+}$.\n4. Thus, the solution turns **green due to the formation of $\\text{Cr}^{3+}$ ions**."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Why is the standard reduction potential for the couple $\\text{Mn}^{3+}/\\text{Mn}^{2+}$ ($+1.57\\text{ V}$) significantly MORE POSITIVE than that for $\\text{Fe}^{3+}/\\text{Fe}^{2+}$ ($+0.77\\text{ V}$)?",
+          "image": "",
+          "options": [
+            "$\\text{Mn}^{2+}$ has a stable half-filled $3d^5$ configuration, while $\\text{Fe}^{3+}$ is already $3d^5$ and resists reduction to $3d^6$",
+            "Manganese has higher electronegativity than iron",
+            "$\\text{Fe}^{3+}$ is a stronger oxidizing agent than $\\text{Mn}^{3+}$",
+            "The hydration energy of $\\text{Fe}^{2+}$ is higher than that of $\\text{Mn}^{2+}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the $\\text{Mn}^{3+}/\\text{Mn}^{2+}$ couple: $\\text{Mn}^{3+}$ ($3d^4$) gains an electron to form $\\text{Mn}^{2+}$ ($3d^5$). Because $3d^5$ is an extra-stable half-filled configuration, reduction is thermodynamically favored, yielding a very high positive potential ($+1.57\\text{ V}$).\n2. In the $\\text{Fe}^{3+}/\\text{Fe}^{2+}$ couple: $\\text{Fe}^{3+}$ already possesses the stable half-filled $3d^5$ configuration. Reduction to $\\text{Fe}^{2+}$ ($3d^6$) disrupts this stability, making the reduction potential lower ($+0.77\\text{ V}$)."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Transition metals have a strong tendency to form complex compounds (coordination complexes). Which of the following factors is NOT responsible for this property?",
+          "image": "",
+          "options": [
+            "Large atomic and ionic radii",
+            "Comparatively small size and high charge density of metal ions",
+            "Availability of vacant $(n-1)d$ orbitals of appropriate energy to accept lone pairs",
+            "Ability to display variable oxidation states"
+          ],
+          "correctOption": 0,
+          "solution": "Complex formation by transition metal ions is favored by:\n1. **Small ionic radii** combined with high nuclear charge, producing very high ionic potential (charge-to-radius ratio).\n2. **Availability of vacant $(n-1)d, ns,$ and $np$ orbitals** of suitable energy to receive coordinate lone pairs from ligands.\n3. Large ionic size weakens electrostatic attraction for ligands and disfavors complexation.\nTherefore, Statement A is NOT responsible (in fact, small size is the required factor)."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following transition elements does NOT exhibit variable oxidation states in its compounds?",
+          "image": "",
+          "options": [
+            "Scandium ($\\text{Sc}$)",
+            "Titanium ($\\text{Ti}$)",
+            "Vanadium ($\\text{V}$)",
+            "Cobalt ($\\text{Co}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Most transition metals display a wide range of oxidation states because the energy difference between $(n-1)d$ and $ns$ orbitals is very small, allowing both to participate in bonding.\n2. However, **Scandium ($Z = 21$, $3d^1 4s^2$)** exhibits **only the $+3$ oxidation state** in all its stable chemical compounds.\n3. ($\\text{Ti}$ exhibits $+2, +3, +4$; $\\text{V}$ exhibits $+2, +3, +4, +5$; $\\text{Co}$ exhibits $+2, +3$)."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The correct order of ionic radii for the trivalent lanthanoid ions is:",
+          "image": "",
+          "options": [
+            "$\\text{La}^{3+} > \\text{Ce}^{3+} > \\text{Eu}^{3+} > \\text{Lu}^{3+}$",
+            "$\\text{Lu}^{3+} > \\text{Eu}^{3+} > \\text{Ce}^{3+} > \\text{La}^{3+}$",
+            "$\\text{Ce}^{3+} > \\text{La}^{3+} > \\text{Lu}^{3+} > \\text{Eu}^{3+}$",
+            "$\\text{Eu}^{3+} > \\text{Ce}^{3+} > \\text{La}^{3+} > \\text{Lu}^{3+}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Across the lanthanoid series from Lanthanum ($Z = 57$) to Lutetium ($Z = 71$), electrons are added to the deep inner $4f$ subshell.\n2. Due to the poor shielding of the diffuse $4f$ orbitals, the effective nuclear charge increases steadily at each successive element.\n3. This pulls the electron cloud inward, causing a steady, continuous decrease in ionic radii known as the **lanthanoid contraction**:\n   $$\\text{La}^{3+} (103\\text{ pm}) > \\text{Ce}^{3+} (102\\text{ pm}) > \\text{Eu}^{3+} (94.7\\text{ pm}) > \\text{Lu}^{3+} (86.1\\text{ pm})$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Why does chromium show a maximum oxidation state of $+6$ in its oxides ($\\text{CrO}_3$) while manganese shows $+7$ ($\\text{Mn}_2\\text{O}_7$), but both fail to form corresponding simple fluorides $\\text{CrF}_6$ or $\\text{MnF}_7$?",
+          "image": "",
+          "options": [
+            "Oxygen has the ability to form multiple bonds ($p\\pi-d\\pi$) with transition metals, stabilizing higher oxidation states through double bonds",
+            "Fluorine has lower electronegativity than oxygen",
+            "Fluorine is a weaker oxidizing agent than oxygen",
+            "The lattice enthalpy of oxides is always zero"
+          ],
+          "correctOption": 0,
+          "solution": "1. Oxygen is smaller and forms strong **$p\\pi-d\\pi$ multiple bonds** with transition metals by donating its $2p$ electron pairs into vacant metal $d$-orbitals.\n2. This ability to form double bonds allows oxygen to satisfy high formal metal valencies with fewer ligand atoms, avoiding steric overcrowding (e.g., in tetrahedral $\\text{MnO}_4^-$ or tetrahedral $\\text{CrO}_4^{2-}$).\n3. Fluorine can form only single bonds. Coordinating six or seven large fluoride ions around a small $3d$ cation creates severe steric crowding and high electron repulsion, preventing the formation of $\\text{MnF}_7$."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A transition metal compound has a magnetic moment of $2.83\\text{ BM}$. The number of unpaired electrons present in the metal ion is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$1$",
+            "$3$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "Using $\\mu = \\sqrt{n(n + 2)}$:\n- For $n = 1$: $\\mu = \\sqrt{3} = 1.73\\text{ BM}$\n- For $n = 2$: $\\mu = \\sqrt{2(4)} = \\sqrt{8} \\approx 2.828\\text{ BM} \\approx 2.83\\text{ BM}$\n- For $n = 3$: $\\mu = \\sqrt{3(5)} = \\sqrt{15} = 3.87\\text{ BM}$\nTherefore, the ion contains exactly **$2$ unpaired electrons** (e.g., $\\text{Ni}^{2+}$ or $\\text{V}^{3+}$)."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following compounds contains a metal in the ZERO oxidation state?",
+          "image": "",
+          "options": [
+            "$[\\text{Ni}(\\text{CO})_4]$",
+            "$\\text{K}_4[\\text{Fe}(\\text{CN})_6]$",
+            "$\\text{KMnO}_4$",
+            "$[\\text{Cu}(\\text{NH}_3)_4]\\text{SO}_4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In nickel tetracarbonyl, $[\\text{Ni}(\\text{CO})_4]$, carbon monoxide ($\\text{CO}$) is a neutral ligand with a net formal charge of zero.\n2. Let the oxidation state of nickel be $x$:\n   $$x + 4(0) = 0 \\implies x = 0$$\n   Nickel is in the **zero oxidation state**.\n3. (In $\\text{K}_4[\\text{Fe}(\\text{CN})_6]$, $\\text{Fe}$ is $+2$; in $\\text{KMnO}_4$, $\\text{Mn}$ is $+7$; in $[\\text{Cu}(\\text{NH}_3)_4]\\text{SO}_4$, $\\text{Cu}$ is $+2$)."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The correct order of basic strength of the oxides $\\text{CrO}, \\text{Cr}_2\\text{O}_3,$ and $\\text{CrO}_3$ is:",
+          "image": "",
+          "options": [
+            "$\\text{CrO} > \\text{Cr}_2\\text{O}_3 > \\text{CrO}_3$",
+            "$\\text{CrO}_3 > \\text{Cr}_2\\text{O}_3 > \\text{CrO}$",
+            "$\\text{Cr}_2\\text{O}_3 > \\text{CrO} > \\text{CrO}_3$",
+            "$\\text{CrO} = \\text{Cr}_2\\text{O}_3 = \\text{CrO}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For oxides of the same transition metal, as the oxidation state increases, covalent character increases and the metal's electronegativity rises, pulling electron density away from oxygen.\n2. **$\\text{CrO}$ (oxidation state $+2$):** Predominantly ionic $\\implies$ **Basic oxide**.\n3. **$\\text{Cr}_2\\text{O}_3$ (oxidation state $+3$):** Intermediate covalent character $\\implies$ **Amphoteric oxide**.\n4. **$\\text{CrO}_3$ (oxidation state $+6$):** Highly covalent with high charge density $\\implies$ **Strongly acidic oxide**.\nTherefore, basic character decreases as oxidation state increases:\n$$\\text{CrO} > \\text{Cr}_2\\text{O}_3 > \\text{CrO}_3$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Why are transition metals capable of forming interstitial compounds with elements like carbon and nitrogen?",
+          "image": "",
+          "options": [
+            "The transition metal crystal lattice has vacant octahedral and tetrahedral interstitial voids of suitable sizes to accommodate small non-metal atoms without lattice disruption",
+            "Transition metals form coordinate bonds with noble gases",
+            "Non-metal atoms dissolve chemically into molten metals",
+            "Transition metals are liquid at ambient temperatures"
+          ],
+          "correctOption": 0,
+          "solution": "1. In close-packed metallic lattices (such as FCC, BCC, or HCP), transition metal atoms leave empty geometric spaces called **interstitial voids (sites)**.\n2. Small non-metallic atoms with covalent radii under $0.8\\text{ \\AA}$ (such as $\\text{H}, \\text{B}, \\text{C},$ and $\\text{N}$) can fit snugly inside these tetrahedral and octahedral voids without severely distorting the metal lattice.\n3. This creates non-stoichiometric **interstitial compounds** (like $\\text{TiC}, \\text{Fe}_3\\text{C}, \\text{VH}_{0.56}$)."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following ions has a magnetic moment of $3.87\\text{ BM}$?",
+          "image": "",
+          "options": [
+            "$\\text{Cr}^{3+}$",
+            "$\\text{Fe}^{3+}$",
+            "$\\text{Mn}^{2+}$",
+            "$\\text{Cu}^{2+}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. A magnetic moment of $3.87\\text{ BM}$ corresponds to:  \n   $$\\mu = \\sqrt{n(n + 2)} = \\sqrt{3(5)} = \\sqrt{15} \\approx 3.87\\text{ BM} \\implies n = 3\\text{ unpaired electrons}$$\n2. Evaluate each ion:\n   - $\\text{Cr}^{3+}$ ($Z = 24$): $[\\text{Ar}] 3d^3 \\implies \\mathbf{n = 3}$ unpaired electrons ($\\mu = 3.87\\text{ BM}$).\n   - $\\text{Fe}^{3+}$ ($Z = 26$): $[\\text{Ar}] 3d^5 \\implies n = 5$ ($\\mu = 5.92\\text{ BM}$).\n   - $\\text{Mn}^{2+}$ ($Z = 25$): $[\\text{Ar}] 3d^5 \\implies n = 5$ ($\\mu = 5.92\\text{ BM}$).\n   - $\\text{Cu}^{2+}$ ($Z = 29$): $[\\text{Ar}] 3d^9 \\implies n = 1$ ($\\mu = 1.73\\text{ BM}$).\nTherefore, $\\text{Cr}^{3+}$ has a magnetic moment of $3.87\\text{ BM}$."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The first ionization enthalpy of the 5d transition elements is significantly HIGHER than those of the corresponding 3d and 4d elements. This is due to:",
+          "image": "",
+          "options": [
+            "The greater effective nuclear charge resulting from the poor shielding effect of the filled $4f$ subshell (lanthanoid contraction)",
+            "The smaller size of $5d$ orbitals compared to $3d$",
+            "The absence of $s$-electrons in $5d$ elements",
+            "The high electropositivity of $5d$ metals"
+          ],
+          "correctOption": 0,
+          "solution": "1. Normally, ionization enthalpy decreases down a group as principal shell number $n$ increases.\n2. However, in the $5d$ transition series, the $14$ lanthanoid elements ($4f^{14}$) precede the $5d$ elements.\n3. The fourteen $4f$ electrons provide exceptionally poor shielding for the valence electrons against the $14$ additional protons in the nucleus.\n4. Consequently, the **effective nuclear charge ($Z_{\\text{eff}}$) increases dramatically**, binding the valence $6s$ electrons tightly and causing the first ionization enthalpy of $5d$ elements (e.g., $\\text{Au}, \\text{Pt}, \\text{Hg}$) to be **much higher** than that of $3d$ and $4d$ elements."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the 3d transition series, the element having the LOWEST melting point is:",
+          "image": "",
+          "options": [
+            "Zinc ($\\text{Zn}$)",
+            "Copper ($\\text{Cu}$)",
+            "Manganese ($\\text{Mn}$)",
+            "Scandium ($\\text{Sc}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Melting point reflects the strength of the metallic bonding in the metal crystal lattice.\n2. In Zinc ($3d^{10} 4s^2$), the $3d$ subshell is completely filled and its electrons are not involved in metallic bonding; only the two $4s$ electrons participate.\n3. This leads to weak metallic bonding.\n4. Consequently, **Zinc has the lowest melting point ($419.5^\\circ\\text{C}$ or $692.7\\text{ K}$)** among all $3d$ transition elements."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the reason for the catalytic activity of vanadium pentoxide ($\\text{V}_2\\text{O}_5$) in the Contact process for manufacturing sulfuric acid?",
+          "image": "",
+          "options": [
+            "Vanadium changes its oxidation state from $+5$ to $+4$ and back to $+5$, facilitating oxidation of $\\text{SO}_2$ to $\\text{SO}_3$",
+            "$\\text{V}_2\\text{O}_5$ acts as a dehydrating agent",
+            "$\\text{V}_2\\text{O}_5$ absorbs sulfur trioxide gas into its crystal voids",
+            "Vanadium forms a permanent interstitial alloy with sulfur"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the Contact process, $\\text{V}_2\\text{O}_5$ catalyzes the oxidation of sulfur dioxide:\n   $$\\text{SO}_2 + \\text{V}_2\\text{O}_5 \\rightarrow \\text{SO}_3 + 2\\text{VO}_2$$\n   Here, $\\text{V}(\\text{V})$ is reduced to $\\text{V}(\\text{IV})$ in $\\text{VO}_2$.\n2. In the regeneration step, atmospheric oxygen rapidly re-oxidizes $\\text{VO}_2$ back to $\\text{V}_2\\text{O}_5$:\n   $$4\\text{VO}_2 + \\text{O}_2 \\rightarrow 2\\text{V}_2\\text{O}_5$$\n3. The ability of vanadium to **reversibly transition between $+5$ and $+4$ oxidation states** provides an alternative reaction pathway with lower activation energy."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following elements has the ground-state electronic configuration $[\\text{Ar}] 3d^7 4s^2$?",
+          "image": "",
+          "options": [
+            "Cobalt ($\\text{Co}$)",
+            "Nickel ($\\text{Ni}$)",
+            "Iron ($\\text{Fe}$)",
+            "Manganese ($\\text{Mn}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate total electrons: $18\\text{ (Ar)} + 7 + 2 = 27$.\n2. Atomic number $Z = 27$ corresponds to **Cobalt ($\\text{Co}$)**.\n3. Configuration: $[\\text{Ar}] 3d^7 4s^2$."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Anhydrous copper sulfate ($\\text{CuSO}_4$) is white, whereas hydrated copper sulfate ($\\text{CuSO}_4 \\cdot 5\\text{H}_2\\text{O}$) is bright blue. The appearance of blue color upon hydration is due to:",
+          "image": "",
+          "options": [
+            "The ligand field of water molecules splitting the $3d$ orbitals, permitting $d-d$ electronic absorption in the red region of the spectrum",
+            "Oxidation of $\\text{Cu}^+$ to $\\text{Cu}^{2+}$ by water",
+            "Hydrolysis of sulfate anions",
+            "Hydrogen bonding between water molecules"
+          ],
+          "correctOption": 0,
+          "solution": "1. In anhydrous $\\text{CuSO}_4$, the five $3d$ orbitals of $\\text{Cu}^{2+}$ ($3d^9$) remain degenerate in the absence of coordinating ligands; no $d-d$ absorption is possible, so it appears **white**.\n2. In hydrated copper sulfate ($[\\text{Cu}(\\text{H}_2\\text{O})_4]\\text{SO}_4 \\cdot \\text{H}_2\\text{O}$), the water molecules act as ligands, creating an octahedral/tetragonal crystal field that splits the degenerate $d$-orbitals into $t_{2g}$ and $e_g$ sets.\n3. The unpaired electron absorbs red-orange light in the visible region to jump between the split $d$-levels ($d-d$ transition), transmitting the complementary **bright blue color**."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The highest fluoride formed by manganese is $\\text{MnF}_4$, whereas its highest oxide is $\\text{Mn}_2\\text{O}_7$. This difference highlights that:",
+          "image": "",
+          "options": [
+            "Oxygen has a greater ability than fluorine to stabilize the highest oxidation state through $p\\pi-d\\pi$ multiple bonding",
+            "Fluorine is less electronegative than oxygen",
+            "Fluorine cannot oxidize manganese beyond $+2$",
+            "$\\text{Mn}_2\\text{O}_7$ is an ionic solid"
+          ],
+          "correctOption": 0,
+          "solution": "1. In $\\text{Mn}_2\\text{O}_7$, manganese is in its highest oxidation state ($+7$). Oxygen forms covalent double bonds ($p\\pi-d\\pi$) with manganese, allowing manganese to reach $+7$ with only four bridging/terminal oxygens around each metal center in a tetrahedral arrangement.\n2. Fluorine can form only single bonds. Accommodating seven fluoride ions around a single manganese atom would lead to severe steric crowding and high inter-ligand repulsion.\n3. Hence, **oxygen stabilizes higher oxidation states than fluorine through multiple bonding**."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following species has the highest paramagnetism?",
+          "image": "",
+          "options": [
+            "$\\text{Mn}^{2+}$",
+            "$\\text{Fe}^{2+}$",
+            "$\\text{Cr}^{3+}$",
+            "$\\text{Cu}^{2+}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Paramagnetism is directly proportional to the number of unpaired electrons ($n$).\n   - $\\text{Mn}^{2+}$ ($3d^5$): $n = 5$ ($\\mu = 5.92\\text{ BM}$)\n   - $\\text{Fe}^{2+}$ ($3d^6$): $n = 4$ ($\\mu = 4.90\\text{ BM}$)\n   - $\\text{Cr}^{3+}$ ($3d^3$): $n = 3$ ($\\mu = 3.87\\text{ BM}$)\n   - $\\text{Cu}^{2+}$ ($3d^9$): $n = 1$ ($\\mu = 1.73\\text{ BM}$)\n2. Because $\\text{Mn}^{2+}$ has five unpaired electrons (the maximum for any $3d$ ion), it has the **highest paramagnetism**."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The formation of interstitial compounds results in which of the following mechanical changes in transition metals?",
+          "image": "",
+          "options": [
+            "Increased tensile strength and hardness",
+            "Decreased melting point",
+            "Increased ductility and malleability",
+            "Loss of metallic luster"
+          ],
+          "correctOption": 0,
+          "solution": "1. In pure transition metals, close-packed planes of atoms can slide past one another under shear stress, conferring ductility and malleability.\n2. When small interstitial atoms ($\\text{C}, \\text{N}, \\text{B}$) lodge inside the octahedral and tetrahedral holes, they form directional covalent bonds with adjacent metal atoms.\n3. These interstitial atoms 'pin' the crystal lattice planes, preventing dislocation glide.\n4. Consequently, the metal shows **greatly increased hardness and tensile strength** (e.g., carbon in iron converting soft iron into hard steel)."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following arrangements represents the correct order of increasing ionic radius for the divalent cations of the 3d transition series?",
+          "image": "",
+          "options": [
+            "$\\text{Ni}^{2+} < \\text{Co}^{2+} < \\text{Fe}^{2+} < \\text{Mn}^{2+}$",
+            "$\\text{Mn}^{2+} < \\text{Fe}^{2+} < \\text{Co}^{2+} < \\text{Ni}^{2+}$",
+            "$\\text{Fe}^{2+} < \\text{Mn}^{2+} < \\text{Ni}^{2+} < \\text{Co}^{2+}$",
+            "$\\text{Co}^{2+} < \\text{Ni}^{2+} < \\text{Fe}^{2+} < \\text{Mn}^{2+}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Across the $3d$ transition series from left to right, nuclear charge increases while additional electrons enter the inner $3d$ subshell.\n2. The screening effect of $3d$ electrons only partially offsets the increasing nuclear charge, so the effective nuclear charge ($Z_{\\text{eff}}$) increases progressively.\n3. Consequently, the ionic radius of divalent cations decreases across the series:\n   $$\\text{Mn}^{2+} (83\\text{ pm}) > \\text{Fe}^{2+} (78\\text{ pm}) > \\text{Co}^{2+} (74.5\\text{ pm}) > \\text{Ni}^{2+} (69\\text{ pm})$$\n4. In increasing order:\n   $$\\text{Ni}^{2+} < \\text{Co}^{2+} < \\text{Fe}^{2+} < \\text{Mn}^{2+}$$"
+        }
+      ]
+    }
+  ]
+}
