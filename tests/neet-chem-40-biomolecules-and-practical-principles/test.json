@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-40-biomolecules-and-practical-principles",
+  "title": "Biomolecules & Practical Principles in Organic Chemistry",
+  "syllabus": "Carbohydrates: Classification (aldoses, ketoses, monosaccharides, disaccharides, polysaccharides), D/L configuration, structures of glucose and fructose (open chain vs cyclic hemiacetal/hemiketal forms, anomeric carbon, α and β forms, mutarotation), reactions of D-glucose (Br2 water, conc. HNO3, HI/red P, acetic anhydride, NH2OH, HCN, failure to give Schiff's test / 2,4-DNP), glycosidic linkage, reducing vs non-reducing sugars (maltose, lactose vs sucrose), inversion of cane sugar, polysaccharides (starch: amylose vs amylopectin; cellulose; glycogen); Proteins & Amino Acids: Classification of amino acids (essential vs non-essential, acidic, basic, neutral), zwitterion structure and isoelectric point (pI), peptide bond, primary, secondary (α-helix, β-pleated sheet stabilized by H-bonding), tertiary (disulfide, electrostatic, hydrophobic, H-bonds) and quaternary structures of proteins, fibrous vs globular proteins, denaturation of proteins; Nucleic Acids: Chemical composition (pentose sugars: ribose and 2-deoxyribose, nitrogenous bases: purines and pyrimidines, phosphate group), nucleosides vs nucleotides, phosphodiester linkage, Watson-Crick double helix model, base pairing (A=T, G≡C), RNA types and uracil; Hormones & Vitamins: Classification, endocrine functions (insulin, glucagon, adrenaline, thyroxine, sex hormones), water-soluble (B-complex, C) vs fat-soluble (A, D, E, K) vitamins, deficiency disorders (scurvy, rickets, beriberi, cheilosis, xerophthalmia); Practical Principles in Organic Testing: Systematic detection of functional groups (unsaturation via Baeyer's reagent KMnO4 and Br2 in CCl4; phenolic -OH via neutral FeCl3, Liebermann's nitroso test, phthalein test; alcoholic -OH via Lucas reagent, ceric ammonium nitrate, sodium metal; aldehyde/ketone via 2,4-DNP, Tollens', Fehling's, Benedict's, haloform/iodoform; carboxylic -COOH via NaHCO3 effervescence, ester test; primary amino -NH2 via carbylamine test, nitrous acid test, azo dye test; tests for proteins: Biuret test, Ninhydrin test, Xanthoproteic test, Millon's test).",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] D-Glucose on prolonged heating with concentrated hydroiodic acid ($\\text{HI}$) in the presence of red phosphorus yields predominantly:",
+          "image": "",
+          "options": [
+            "n-Hexane",
+            "Sorbitol",
+            "Gluconic acid",
+            "Saccharic acid"
+          ],
+          "correctOption": 0,
+          "solution": "1. Concentrated hydroiodic acid ($\\text{HI}$) with red phosphorus at elevated temperatures ($373\\text{ K}$) is a powerful, non-selective reducing agent for organic polyhydroxy compounds.\n2. When D-glucose (an aldohexose, $\\text{C}_6\\text{H}_{12}\\text{O}_6$) is heated with $\\text{HI}/\\text{red P}$, all six oxygen atoms (the aldehyde carbonyl oxygen and five hydroxyl oxygens) are completely reduced to hydrocarbons:\n   $$\\text{CHO}-(\\text{CHOH})_4-\\text{CH}_2\\text{OH} + 14\\text{HI} \\xrightarrow{\\text{Red P, }\\Delta} \\text{CH}_3-(\\text{CH}_2)_4-\\text{CH}_3\\text{ (n-hexane)} + 6\\text{H}_2\\text{O} + 7\\text{I}_2$$\n3. The formation of unbranched **n-hexane** was historical experimental proof that all six carbon atoms in D-glucose are linked in a continuous, straight six-carbon chain."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Sucrose is a non-reducing disaccharide composed of $\\alpha$-D-glucopyranose and $\\beta$-D-fructofuranose. The glycosidic linkage between the two monosaccharide units involves:",
+          "image": "",
+          "options": [
+            "$C_1$ of $\\alpha$-D-glucose and $C_2$ of $\\beta$-D-fructose",
+            "$C_1$ of $\\alpha$-D-glucose and $C_4$ of $\\beta$-D-fructose",
+            "$C_1$ of $\\alpha$-D-glucose and $C_1$ of $\\beta$-D-fructose",
+            "$C_1$ of $\\beta$-D-glucose and $C_6$ of $\\alpha$-D-fructose"
+          ],
+          "correctOption": 0,
+          "solution": "1. In sucrose, the **anomeric carbon of $\\alpha$-D-glucose ($C_1$)** and the **anomeric carbon of $\\beta$-D-fructose ($C_2$)** are directly joined through an oxygen ether bridge (glycosidic bond).\n2. Because both anomeric hemiacetal/hemiketal carbon centers are mutually tied up in the **$\\text{C}_1-\\text{O}-\\text{C}_2$ glycosidic linkage**, neither ring can open into a free aldehyde or ketone group in aqueous solution.\n3. Consequently, sucrose does not reduce Tollens' or Fehling's reagents, lacks mutarotation, and is classified as a **non-reducing disaccharide**."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following amino acids is ACHIRAL (optically inactive)?",
+          "image": "",
+          "options": [
+            "Glycine",
+            "L-Alanine",
+            "L-Valine",
+            "L-Serine"
+          ],
+          "correctOption": 0,
+          "solution": "1. An $\\alpha$-amino acid is chiral (optically active) if its $\\alpha$-carbon is a stereocenter bonded to four distinct substituents ($-\\text{NH}_2, -\\text{COOH}, -\\text{H},$ and a side chain $-\\text{R}$).\n2. In **glycine (2-aminoethanoic acid, $\\text{H}_2\\text{N}-\\text{CH}_2-\\text{COOH}$)**, the side chain $-\\text{R}$ is a simple hydrogen atom ($-\\text{H}$).\n3. The $\\alpha$-carbon is bonded to **two identical hydrogen atoms**, meaning it lacks an asymmetric carbon center.\n4. Therefore, glycine is the only naturally occurring $\\alpha$-amino acid that is **achiral and optically inactive**."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In DNA, the complementary nitrogenous bases paired together through THREE hydrogen bonds are:",
+          "image": "",
+          "options": [
+            "Guanine and Cytosine ($\\text{G}\\equiv\\text{C}$)",
+            "Adenine and Thymine ($\\text{A}=\\text{T}$)",
+            "Uracil and Adenine ($\\text{U}=\\text{A}$)",
+            "Guanine and Thymine"
+          ],
+          "correctOption": 0,
+          "solution": "1. According to the Watson-Crick double helix base-pairing rules in DNA:\n   - Adenine (purine) pairs with Thymine (pyrimidine) via **two hydrogen bonds**: $\\text{A}=\\text{T}$.\n   - **Guanine (purine) pairs with Cytosine (pyrimidine) via three hydrogen bonds**: $\\mathbf{\\text{G}\\equiv\\text{C}}$.\n2. The triple hydrogen bonding between Guanine and Cytosine provides greater thermal and structural stability (higher melting temperature $T_m$) to DNA duplexes with high GC content."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When an aqueous solution of a protein is treated with a few drops of dilute $\\text{CuSO}_4$ solution in the presence of excess $\\text{NaOH}$, a violet-purple coloration develops. This diagnostic test is known as the:",
+          "image": "",
+          "options": [
+            "Biuret test",
+            "Ninhydrin test",
+            "Xanthoproteic test",
+            "Millon's test"
+          ],
+          "correctOption": 0,
+          "solution": "1. The **Biuret test** is a general diagnostic test for proteins and peptides possessing **two or more peptide ($-\\text{CO}-\\text{NH}-$) linkages**.\n2. In alkaline solution, cupric ions ($\\text{Cu}^{2+}$) coordinate with the lone pairs of four unprotonated peptide nitrogen atoms belonging to adjacent peptide chains:\n   $$[\\text{Cu}(\\text{peptide})_4]^{2-}$$\n3. This square-planar coordination complex exhibits a characteristic **violet-purple color**.\n4. Free amino acids (except histidine) do not respond to the Biuret test because they lack peptide bonds."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The secondary structure of proteins (such as the $\\alpha$-helix and $\\beta$-pleated sheet) is stabilized primarily by:",
+          "image": "",
+          "options": [
+            "Intermolecular and intramolecular hydrogen bonds between the carbonyl oxygen ($>\\text{C}=\\text{O}$) and amide hydrogen ($-\\text{NH}-$) of peptide backbones",
+            "Disulfide bonds between cysteine residues",
+            "Van der Waals attractions between hydrophobic side chains",
+            "Electrostatic salt bridges"
+          ],
+          "correctOption": 0,
+          "solution": "1. The secondary structure refers to the localized conformation assumed by the polypeptide backbone.\n2. In the **$\\alpha$-helix**, the chain coils into a right-handed screw stabilized by **intramolecular hydrogen bonds** between the carbonyl oxygen of the $i^{\\text{th}}$ amino acid residue and the $-\\text{NH}-$ hydrogen of the $(i + 4)^{\\text{th}}$ amino acid residue.\n3. In the **$\\beta$-pleated sheet**, polypeptide strands are laid side-by-side held together by **intermolecular (or interstrand) hydrogen bonds** between adjacent chains.\n4. Therefore, hydrogen bonding between backbone $>\\text{C}=\\text{O}$ and $-\\text{NH}-$ groups exclusively stabilizes secondary structures."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following statements regarding the cyclic structure of D-(+)-glucose is INCORRECT?",
+          "image": "",
+          "options": [
+            "D-Glucose pentaacetate reacts readily with hydroxylamine to form an oxime because the open chain aldehyde is freely regenerated",
+            "D-Glucose forms a six-membered pyranose ring through hemiacetal formation between the $C_1$ aldehyde group and the $C_5$ hydroxyl group",
+            "$\\alpha$-D-Glucose and $\\beta$-D-Glucose are anomers differing only in the configuration of the hydroxyl group at the $C_1$ carbon",
+            "Despite containing an aldehyde group in open chain form, glucose fails to restore the magenta color of Schiff's reagent"
+          ],
+          "correctOption": 0,
+          "solution": "1. Although D-glucose contains an aldehyde group, its cyclic hemiacetal form does not undergo reactions requiring an open aldehyde when acetylated.\n2. In glucose pentaacetate, all five $-\\text{OH}$ groups (including the anomeric $C_1-\\text{OH}$) are esterified into stable acetate groups ($-\\text{OCOCH}_3$).\n3. Because the anomeric $C_1$ position is locked as an acetate ester, the pyranose ring **cannot open to expose a free $-\\text{CHO}$ group**.\n4. Consequently, **glucose pentaacetate does NOT react with hydroxylamine** ($\\text{NH}_2\\text{OH}$) to form an oxime, confirming the absence of an equilibrium open-chain form.\nTherefore, Statement A is incorrect."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A water-soluble vitamin whose deficiency in the human diet causes megaloblastic anemia and pernicious anemia (characterized by profound demyelination of spinal cord nerves) is:",
+          "image": "",
+          "options": [
+            "Vitamin $\\text{B}_{12}$ (Cobalamin)",
+            "Vitamin $\\text{B}_1$ (Thiamine)",
+            "Vitamin $\\text{B}_6$ (Pyridoxine)",
+            "Vitamin C (Ascorbic acid)"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Vitamin $\\text{B}_{12}$ (cyanocobalamin)** is a water-soluble coordination complex containing a cobalt(III) ion coordinated to a corrin ring.\n2. Humans cannot synthesize Vitamin $\\text{B}_{12}$; it is absorbed in the terminal ileum with the aid of gastric intrinsic factor.\n3. Deficiency of Vitamin $\\text{B}_{12}$ impairs DNA synthesis in erythroblasts and disrupts myelin sheath maintenance, leading to **pernicious anemia** (megaloblastic anemia accompanied by irreversible neurological degeneration)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In qualitative organic analysis, which of the following reagents is used to distinguish a PHENOL from an ALCOHOL?",
+          "image": "",
+          "options": [
+            "Neutral aqueous $\\text{FeCl}_3$ solution",
+            "Lucas reagent (conc. $\\text{HCl} + \\text{ZnCl}_2$)",
+            "Metallic sodium",
+            "Tollens' reagent"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Neutral aqueous ferric chloride ($\\text{FeCl}_3$)** reacts specifically with enols and phenols to form intensely colored coordination complexes:\n   $$6\\text{C}_6\\text{H}_5\\text{OH} + \\text{FeCl}_3 \\rightarrow [\\text{Fe}(\\text{OC}_6\\text{H}_5)_6]^{3-}\\text{ (violet/blue complex)} + 3\\text{H}^+ + 3\\text{HCl}$$\n2. Simple aliphatic alcohols do not form colored coordination complexes with neutral $\\text{FeCl}_3$.\n3. (Both phenols and alcohols react with sodium metal; Lucas reagent distinguishes $1^\\circ, 2^\\circ,$ and $3^\\circ$ alcohols but does not react with phenols)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What happens to the structural hierarchy of a globular protein during the process of DENATURATION (e.g., coagulation of egg white on boiling)?",
+          "image": "",
+          "options": [
+            "Secondary and tertiary structures are completely destroyed, while the primary covalent peptide backbone remains fully intact",
+            "Primary, secondary, and tertiary structures are all completely cleaved into free amino acids",
+            "Primary structure is cleaved while tertiary structure remains unaffected",
+            "Peptide bonds hydrolyze to yield dipeptides"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Denaturation** of a protein occurs when physical factors (such as heating) or chemical factors (such as pH change, heavy metal ions, or urea) disrupt the non-covalent interactions (hydrogen bonds, hydrophobic interactions, ionic bridges).\n2. The globular tertiary structure uncoils and native biological activity is lost.\n3. However, denaturation involves no chemical hydrolysis; the strong covalent peptide bonds ($-\\text{CO}-\\text{NH}-$) connecting the amino acids are not broken.\n4. Therefore, **secondary and tertiary structures are destroyed, while the primary structure remains completely intact**."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Starch is a polymer composed of two structural fractions: amylose and amylopectin. Which of the following correctly describes AMYLOSE?",
+          "image": "",
+          "options": [
+            "Water-soluble, linear unbranched chain of $\\alpha$-D-glucose units linked exclusively via $\\alpha(1\\rightarrow 4)$ glycosidic bonds",
+            "Water-insoluble, branched polymer with $\\alpha(1\\rightarrow 4)$ and $\\alpha(1\\rightarrow 6)$ linkages",
+            "Linear polymer of $\\beta$-D-glucose linked via $\\beta(1\\rightarrow 4)$ bonds",
+            "Highly branched glycogen-like structure"
+          ],
+          "correctOption": 0,
+          "solution": "1. Starch consists of two polysaccharides:\n   - **Amylose ($\\\\approx 15-20\\%$ of starch):** **Water-soluble**, long unbranched helical polymer of $200-1000$ $\\alpha$-D-glucose units held together exclusively by **$\\alpha(1\\rightarrow 4)$ glycosidic bonds**. It traps iodine molecules inside its helical coils to produce an intense deep blue color.\n   - **Amylopectin ($\\\\approx 80-85\\%$ of starch):** **Water-insoluble**, branched polymer where linear chains contain $\\alpha(1\\rightarrow 4)$ linkages and branching occurs via $\\alpha(1\\rightarrow 6)$ glycosidic bonds every $20-25$ glucose units."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "A carbohydrate solution gives a positive Molisch's test. The visual observation and the chemistry of Molisch's test involve:",
+          "image": "",
+          "options": [
+            "Formation of a purple or reddish-violet ring at the junction of the two liquids due to condensation of furfural (or hydroxymethylfurfural) with $\\alpha$-naphthol",
+            "Formation of a blue precipitate with iodine",
+            "Evolution of brisk effervescence of $\\text{CO}_2$",
+            "Precipitation of red cuprous oxide"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Molisch's test** is the universal qualitative test for all carbohydrates.\n2. When concentrated $\\text{H}_2\\text{SO}_4$ is added slowly along the side of a test tube to an aqueous carbohydrate solution mixed with alcoholic **$\\alpha$-naphthol**, the strong acid dehydrates pentoses to furfural and hexoses to **5-hydroxymethylfurfural**.\n3. The generated furfural derivative condenses with two molecules of $\\alpha$-naphthol at the interface of the two liquid layers.\n4. This yields an intense **purple (reddish-violet) ring** at the junction."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following pyrimidine bases is found EXCLUSIVELY in RNA and is ABSENT in DNA?",
+          "image": "",
+          "options": [
+            "Uracil",
+            "Thymine",
+            "Cytosine",
+            "Guanine"
+          ],
+          "correctOption": 0,
+          "solution": "1. The nitrogenous heterocyclic bases found in nucleic acids are:\n   - **DNA contains:** Adenine (A), Guanine (G), Cytosine (C), and **Thymine (T)** (5-methyluracil).\n   - **RNA contains:** Adenine (A), Guanine (G), Cytosine (C), and **Uracil (U)**.\n2. Therefore, **Uracil is present exclusively in RNA**, whereas Thymine is present in DNA."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In an aqueous solution at a specific pH known as the ISOELECTRIC POINT (pI), an amino acid exists as a:",
+          "image": "",
+          "options": [
+            "Dipolar Zwitterion carrying net zero electrical charge, which does not migrate toward either electrode in an electric field",
+            "Positively charged cation migrating toward the cathode",
+            "Negatively charged anion migrating toward the anode",
+            "Completely un-ionized neutral molecule"
+          ],
+          "correctOption": 0,
+          "solution": "1. In aqueous solution, the basic amino group ($-\\text{NH}_2$) abstracts a proton from the acidic carboxyl group ($-\\text{COOH}$) of the same molecule:\n   $$\\text{H}_2\\text{N}-\\text{CH(R)}-\\text{COOH} \\rightleftharpoons \\text{H}_3\\overset{+}{\\text{N}}-\\text{CH(R)}-\\text{COO}^- \\quad (\\text{Zwitterion})$$\n2. At the **isoelectric point (pI)**, the concentration of dipolar zwitterions is at a maximum; the positive and negative charges internally balance, giving a **net electrical charge of exactly zero**.\n3. In an electric field (electrophoresis), the amino acid shows **zero net migration** toward either the anode or the cathode, and its solubility in water is at a minimum."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] When D-(+)-glucose is treated with mild bromine water ($\\text{Br}_2/\\text{H}_2\\text{O}$), the oxidation product formed is:",
+          "image": "",
+          "options": [
+            "Gluconic acid",
+            "Glucaric acid (Saccharic acid)",
+            "Glucuronic acid",
+            "Oxalic acid"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Bromine water ($\\text{Br}_2/\\text{H}_2\\text{O}$)** is a mild, selective oxidizing agent that oxidizes only aldehydes to carboxylic acids without oxidizing primary alcohols.\n2. In D-glucose, the terminal aldehyde group ($-C_1\\text{HO}$) is oxidized selectively to a carboxyl group ($-C_1\\text{OOH}$), leaving the $C_6$ primary alcohol group ($-\\text{CH}_2\\text{OH}$) untouched:\n   $$\\text{CHO}-(\\text{CHOH})_4-\\text{CH}_2\\text{OH} + [\\text{O}] \\xrightarrow{\\text{Br}_2/\\text{H}_2\\text{O}} \\text{COOH}-(\\text{CHOH})_4-\\text{CH}_2\\text{OH} \\quad (\\mathbf{Gluconic\\ acid})$$\n3. (Strong oxidants like concentrated $\\text{HNO}_3$ oxidize both the $C_1$ aldehyde and $C_6$ alcohol to form dicarboxylic saccharic/glucaric acid)."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The hormone INSULIN is chemically a:",
+          "image": "",
+          "options": [
+            "Globular polypeptide hormone containing $51$ amino acids linked by disulfide bridges",
+            "Steroid hormone synthesized from cholesterol",
+            "Lipid derivative synthesized from arachidonic acid",
+            "Modified aromatic amine hormone"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Insulin** is a globular peptide hormone secreted by the $\\beta$-cells of the islets of Langerhans in the pancreas.\n2. It consists of **$51$ amino acids** arranged in two polypeptide chains:\n   - Chain A: $21$ amino acid residues\n   - Chain B: $30$ amino acid residues\n3. The two chains are covalently cross-linked by **two interchain disulfide ($-\\text{S}-\\text{S}-$) bonds**, with Chain A containing an additional intrachain disulfide ring.\n4. Its biological function is to facilitate cellular glucose uptake and promote glycogenesis, lowering blood sugar levels."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An organic unknown liquid gives brisk effervescence of $\\text{CO}_2$ with saturated aqueous sodium bicarbonate ($\\text{NaHCO}_3$) solution. The functional group confirmed is:",
+          "image": "",
+          "options": [
+            "Carboxylic acid (-\\text{COOH})",
+            "Phenol (-\\text{OH})",
+            "Alcohol (-\\text{OH})",
+            "Ester (-\\text{COOR})"
+          ],
+          "correctOption": 0,
+          "solution": "1. Carboxylic acids ($\\text{p}K_a \\approx 4-5$) are stronger acids than carbonic acid ($\\text{H}_2\\text{CO}_3, \\text{p}K_a \\approx 6.4$).\n2. Consequently, a carboxylic acid decomposes sodium bicarbonate, releasing **carbon dioxide gas with brisk effervescence**:\n   $$\\text{R}-\\text{COOH} + \\text{NaHCO}_3 \\rightarrow \\text{R}-\\text{COONa} + \\text{H}_2\\text{O} + \\text{CO}_2 \\uparrow$$\n3. Ordinary phenols ($\\text{p}K_a \\approx 10$) and alcohols ($\\text{p}K_a \\approx 16-18$) are weaker acids than carbonic acid and cannot liberate $\\text{CO}_2$ from $\\text{NaHCO}_3$ (except polynitrophenols like picric acid)."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following is an ESSENTIAL amino acid that cannot be synthesized by the human body and must be supplied in the diet?",
+          "image": "",
+          "options": [
+            "Leucine",
+            "Alanine",
+            "Aspartic acid",
+            "Glycine"
+          ],
+          "correctOption": 0,
+          "solution": "1. Amino acids are categorized based on nutritional requirement:\n   - **Essential amino acids (ten):** Cannot be synthesized in human metabolism at rates required for growth and maintenance; they must be ingested in food.\n     $$\\text{Valine, Leucine, Isoleucine, Lysine, Methionine, Phenylalanine, Threonine, Tryptophan, Histidine, Arginine}$$\n   - **Non-essential amino acids:** Can be synthesized endogenously from metabolic intermediates (e.g., Alanine, Glycine, Aspartic acid, Glutamic acid, Serine).\n2. Therefore, **Leucine** is an essential amino acid."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The hydrolysis of sucrose with dilute mineral acid or the enzyme invertase produces an equimolar mixture of D-(+)-glucose and D-(-)-fructose known as INVERT SUGAR. Why is it termed 'invert sugar'?",
+          "image": "",
+          "options": [
+            "Sucrose is dextrorotatory, but after hydrolysis the resulting mixture is laevorotatory due to the higher specific rotation of D-(-)-fructose",
+            "Sucrose is laevorotatory, but the hydrolyzed mixture becomes dextrorotatory",
+            "The optical rotation remains completely unchanged",
+            "Inversion refers to an inversion of configuration from D to L"
+          ],
+          "correctOption": 0,
+          "solution": "1. Sucrose itself is **dextrorotatory** ($[\\alpha]_D = +66.5^\\circ$).\n2. Acid or enzymatic hydrolysis cleaves the glycosidic linkage into an equimolar mixture of D-(+)-glucose and D-(-)-fructose:\n   $$\\text{C}_{12}\\text{H}_{22}\\text{O}_{11} + \\text{H}_2\\text{O} \\rightarrow \\text{D-(+)-glucose } ([\\alpha]_D = +52.5^\\circ) + \\text{D-(-)-fructose } ([\\alpha]_D = -92.4^\\circ)$$\n3. Because the magnitude of laevorotation of D-(-)-fructose ($-92.4^\\circ$) is much greater than the dextrorotation of D-(+)-glucose ($+52.5^\\circ$), the net resulting mixture has a **negative optical rotation (laevorotatory, $[\\alpha]_D \\approx -19.9^\\circ$)**.\n4. Because the sign of optical rotation **inverts from dextro (+) to laevo (-)**, the resulting mixture is called **invert sugar**."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A nucleoside differs from a nucleotide in that a nucleotide contains:",
+          "image": "",
+          "options": [
+            "A phosphate group attached via an ester bond to the sugar",
+            "A purine base instead of pyrimidine",
+            "Deoxyribose instead of ribose",
+            "An extra peptide linkage"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Nucleoside:** Consists of a nitrogenous base (purine or pyrimidine) attached to the $C_1'$ carbon of a pentose sugar (ribose or 2-deoxyribose) via a $\\beta-\\text{N-glycosidic}$ bond:\n   $$\\text{Nucleoside} = \\text{Base} + \\text{Sugar}$$\n2. **Nucleotide:** Formed when a phosphate group esterifies the $C_5'$ (or $C_3'$) hydroxyl group of the pentose sugar of a nucleoside:\n   $$\\text{Nucleotide} = \\text{Base} + \\text{Sugar} + \\text{Phosphate} \\equiv \\text{Nucleoside monophosphate}$$\n3. Therefore, a nucleotide contains a **phosphate group** in addition to the base and sugar."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In qualitative organic testing, Baeyer's reagent (cold, dilute, alkaline $\\text{KMnO}_4$ solution) is used to detect:",
+          "image": "",
+          "options": [
+            "Carbon-carbon multiple bond unsaturation (alkenes and alkynes)",
+            "Aromatic benzene rings",
+            "Carboxylic acid functional groups",
+            "Primary aliphatic amines"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Baeyer's reagent** is an aqueous $1\\%$ solution of potassium permanganate ($\\text{KMnO}_4$) rendered alkaline with $\\text{Na}_2\\text{CO}_3$ (or $\\text{NaOH}$).\n2. It oxidizes alkenes and alkynes via syn-dihydroxylation, forming vicinal diols (glycols):\n   $$\\text{R}-\\text{CH}=\\text{CH}-\\text{R} + \\text{H}_2\\text{O} + [\\text{O}] \\xrightarrow{\\text{alkaline } \\text{KMnO}_4} \\text{R}-\\text{CH(OH)}-\\text{CH(OH)}-\\text{R}$$\n3. During the reaction, the purple permanganate ion ($[\\text{MnO}_4]^-$) is reduced to a brown precipitate of manganese dioxide ($\\text{MnO}_2$ $\\downarrow$).\n4. The **rapid discharge of the purple color with formation of brown $\\text{MnO}_2$** confirms the presence of **olefinic/acetylenic unsaturation**."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The fibrous protein responsible for the structural framework of hair, nails, wool, and feathers is:",
+          "image": "",
+          "options": [
+            "$\\alpha$-Keratin",
+            "Myosin",
+            "Collagen",
+            "Albumin"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Fibrous proteins** consist of linear polypeptide chains running parallel and held together by intermolecular hydrogen and disulfide bonds, forming water-insoluble structural fibers.\n2. **$\\alpha$-Keratin** is the primary fibrous protein present in **hair, nails, wool, horns, and hooves** (rich in cysteine with abundant interchain $-S-S-$ disulfide cross-links).\n3. (Collagen is in tendons and bones; myosin is in muscle fibers; albumin is a water-soluble globular protein in egg white)."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the Xanthoproteic test for proteins, the addition of concentrated $\\text{HNO}_3$ produces a yellow coloration that turns orange upon adding excess $\\text{NH}_4\\text{OH}$ or $\\text{NaOH}$. This test is specific for amino acids containing:",
+          "image": "",
+          "options": [
+            "An aromatic benzene ring (e.g., Tyrosine, Phenylalanine, Tryptophan)",
+            "Disulfide bonds (Cysteine)",
+            "A basic guanidino group (Arginine)",
+            "An indole ring exclusively"
+          ],
+          "correctOption": 0,
+          "solution": "1. The **Xanthoproteic test** detects proteins containing **aromatic amino acids** (specifically Tyrosine, Tryptophan, and Phenylalanine).\n2. Heating with concentrated nitric acid ($\\text{HNO}_3$) causes electrophilic aromatic nitration of the benzene ring, forming **yellow nitro-derivatives**.\n3. Making the solution alkaline with aqueous ammonia or $\\text{NaOH}$ converts the phenolic $-\\text{OH}$ group of tyrosine nitro-derivatives into a quinoid phenoxide salt, deepening the color from **yellow to deep orange**."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Deficiency of Vitamin C (L-ascorbic acid) causes which of the following deficiency diseases?",
+          "image": "",
+          "options": [
+            "Scurvy (bleeding gums and poor wound healing)",
+            "Rickets",
+            "Beriberi",
+            "Night blindness (Xerophthalmia)"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Vitamin C (ascorbic acid)** is an essential water-soluble vitamin required as a cofactor for prolyl hydroxylase and lysyl hydroxylase in the enzymatic post-translational hydroxylation of collagen.\n2. In the absence of Vitamin C, defective, fragile collagen fibers are synthesized.\n3. This leads to **scurvy**, characterized by spongy bleeding gums, capillary fragility, petechial hemorrhages, tooth loosening, and delayed wound healing.\n4. (Rickets is caused by Vitamin D deficiency; Beriberi by Vitamin $\\text{B}_1$; Xerophthalmia by Vitamin A)."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following disaccharides is composed of $\\beta$-D-galactose and $\\beta$-D-glucose linked via a $\\beta(1\\rightarrow 4)$ glycosidic bond?",
+          "image": "",
+          "options": [
+            "Lactose (milk sugar)",
+            "Maltose (malt sugar)",
+            "Sucrose (cane sugar)",
+            "Cellobiose"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Lactose** is a disaccharide found naturally in milk (commonly called milk sugar).\n2. It consists of one unit of **$\\beta$-D-galactopyranose** and one unit of **$\\beta$-D-glucopyranose**.\n3. The linkage is a **$\\beta(1\\rightarrow 4)$ glycosidic bond** between the anomeric $C_1$ of $\\beta$-D-galactose and the $C_4$ hydroxyl of $\\beta$-D-glucose.\n4. Because the hemiacetal hydroxyl on $C_1$ of the glucose unit is free to open into an aldehyde, lactose is a **reducing sugar**."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the qualitative test for alcohols, the Ceric Ammonium Nitrate (CAN) reagent produces which characteristic visual change?",
+          "image": "",
+          "options": [
+            "A pink or cherry-red coloration due to formation of an alkoxycerate(IV) coordination complex",
+            "A blue-green precipitate",
+            "Evolution of nitrogen dioxide gas",
+            "Formation of a mirror of silver"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Ceric ammonium nitrate, $(\\text{NH}_4)_2[\\text{Ce}(\\text{NO}_3)_6]$**, is an orange-yellow analytical reagent used for the detection of alcoholic $-\\text{OH}$ groups.\n2. Alcohols displace nitrate ligands from the coordination sphere of cerium(IV):\n   $$(\\text{NH}_4)_2[\\text{Ce}(\\text{NO}_3)_6] + \\text{ROH} \\rightarrow [\\text{Ce}(\\text{NO}_3)_5(\\text{OR})]^{2-} + \\text{NH}_4\\text{NO}_3 + \\text{H}^+$$\n3. The resulting **alkoxycerate(IV) complex imparts an intense pink or cherry-red color** to the solution.\n4. (Phenols yield a dark brown or black precipitate/coloration due to oxidation)."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The phenomenon in which the optical rotation of freshly prepared $\\alpha$-D-glucose ($+112^\\circ$) or $\\beta$-D-glucose ($+19^\\circ$) in aqueous solution changes gradually with time until reaching an equilibrium value of $+52.7^\\circ$ is called:",
+          "image": "",
+          "options": [
+            "Mutarotation",
+            "Inversion of configuration",
+            "Epimerization",
+            "Racemization"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Mutarotation** is the spontaneous change in specific optical rotation observed over time when a pure anomer of a reducing sugar is dissolved in water, approaching an equilibrium mixture.\n2. Pure crystalline $\\alpha$-D-glucopyranose has $[\\alpha]_D = +112^\\circ$; pure $\\beta$-D-glucopyranose has $[\\alpha]_D = +19^\\circ$.\n3. In water, the pyranose ring opens reversibly through a trace open-chain aldehyde intermediate ($< 0.02\\%$) to equilibrate into both anomeric forms:\n   $$\\alpha\\text{-D-glucose (36\\%)} \\rightleftharpoons \\text{Open-chain aldehyde} \\rightleftharpoons \\beta\\text{-D-glucose (64\\%)}$$\n4. At dynamic equilibrium, the specific rotation stabilizes at **$+52.7^\\circ$**."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following functional groups on heating with a primary aromatic amine in acidic medium produces a characteristic azo dye (Azo dye test)?",
+          "image": "",
+          "options": [
+            "Aromatic primary amine group after diazotization with $\\text{HNO}_2$ at $0-5^\\circ\\text{C}$ coupled with 2-naphthol",
+            "Aliphatic carboxylic acid group",
+            "Ester functional group",
+            "Aliphatic ether group"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the **Azo dye test** for primary aromatic amines:\n   - Aniline (or any $1^\\circ$ arylamine) is dissolved in dilute $\\text{HCl}$ and cooled to $0-5^\\circ\\text{C}$.\n   - Adding ice-cold sodium nitrite ($\\text{NaNO}_2$) forms the diazonium salt:\n     $$\\text{Ar}-\\text{NH}_2 + \\text{HNO}_2 + \\text{HCl} \\xrightarrow{0-5^\\circ\\text{C}} \\text{Ar}-\\text{N}_2^+\\text{Cl}^- + 2\\text{H}_2\\text{O}$$\n   - The diazonium solution is poured into an alkaline solution of **$\\beta$-naphthol (2-naphthol)** in $\\text{NaOH}$.\n2. Electrophilic coupling at the 1-position of 2-naphthol produces an intense **bright scarlet-red azo dye precipitate**, confirming a primary aromatic amine."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Cellobiose, obtained from the partial enzymatic hydrolysis of cellulose, contains which type of glycosidic linkage?",
+          "image": "",
+          "options": [
+            "$\\beta(1\\rightarrow 4)$ glycosidic bond between two $\\beta$-D-glucose units",
+            "$\\alpha(1\\rightarrow 4)$ glycosidic bond between two $\\alpha$-D-glucose units",
+            "$\\alpha(1\\rightarrow 6)$ glycosidic bond",
+            "$\\beta(1\\rightarrow 2)$ glycosidic bond"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Cellulose** is a linear, unbranched structural polysaccharide composed exclusively of **$\\beta$-D-glucopyranose units linked by $\\beta(1\\rightarrow 4)$ glycosidic bonds**.\n2. Partial hydrolysis of cellulose yields the disaccharide **cellobiose**.\n3. In cellobiose, two $\\beta$-D-glucose molecules are joined via a **$\\beta(1\\rightarrow 4)$ glycosidic linkage**.\n4. (Maltose, in contrast, contains an $\\alpha(1\\rightarrow 4)$ linkage between two $\\alpha$-D-glucose units)."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In Liebermann's nitroso reaction for phenols, a phenol on warming with concentrated $\\text{H}_2\\text{SO}_4$ and sodium nitrite ($\\text{NaNO}_2$) develops a series of characteristic colors. The sequence of color changes observed upon diluting with water followed by making alkaline with $\\text{NaOH}$ is:",
+          "image": "",
+          "options": [
+            "Brown/red $\\rightarrow$ blue-green on dilution with water $\\rightarrow$ deep blue/purple upon adding alkali",
+            "Yellow $\\rightarrow$ white $\\rightarrow$ green",
+            "Colorless $\\rightarrow$ pink $\\rightarrow$ yellow",
+            "Black $\\rightarrow$ white $\\rightarrow$ red"
+          ],
+          "correctOption": 0,
+          "solution": "1. In **Liebermann's nitroso reaction**:\n   - Phenol reacts with in-situ generated nitrous acid ($\\text{HNO}_2$) to give p-nitrosophenol, which tautomerizes to p-benzoquinone monoxime.\n   - This condenses with another phenol molecule in concentrated $\\text{H}_2\\text{SO}_4$ to form indophenol, producing an initial **deep green or brown/red color**.\n   - Dilution with water shifts the equilibrium to form the red indophenol cation (**red/blue-green**).\n   - Addition of excess $\\text{NaOH}$ converts indophenol into its sodium salt, producing an intense **deep blue coloration**."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following nitrogenous bases is a PURINE derivative?",
+          "image": "",
+          "options": [
+            "Adenine",
+            "Cytosine",
+            "Thymine",
+            "Uracil"
+          ],
+          "correctOption": 0,
+          "solution": "1. Nitrogenous bases are classified into two structural families:\n   - **Purines (bicyclic fused pyrimidine-imidazole ring):** **Adenine (A)** and **Guanine (G)**.\n   - **Pyrimidines (monocyclic six-membered ring):** **Cytosine (C)**, **Thymine (T)**, and **Uracil (U)**.\n2. Therefore, Adenine is a purine derivative."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] When D-glucose reacts with excess phenylhydrazine ($\\text{C}_6\\text{H}_5\\text{NHNH}_2$) on prolonged boiling in acetic acid, it forms an insoluble yellow crystalline osazone. How many moles of phenylhydrazine are consumed per mole of D-glucose during this reaction?",
+          "image": "",
+          "options": [
+            "$3\\text{ moles}$",
+            "$1\\text{ mole}$",
+            "$2\\text{ moles}$",
+            "$4\\text{ moles}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the formation of **glucosazone**:\n   - **Mole 1:** Reacts with the $C_1$ aldehyde group to form glucose phenylhydrazone.\n   - **Mole 2:** Acts as an oxidizing agent, oxidizing the adjacent secondary alcohol group at $C_2$ into a carbonyl group (keto group) while being reduced to aniline ($\\text{C}_6\\text{H}_5\\text{NH}_2$) and ammonia ($\\text{NH}_3$).\n   - **Mole 3:** Condenses with the newly formed $C_2$ carbonyl group to yield the final bis-phenylhydrazone (**glucosazone**).\n2. Therefore, exactly **$3\\text{ moles}$ of phenylhydrazine** are consumed per mole of glucose."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following vitamins is FAT-SOLUBLE and stored in the human liver and adipose tissue?",
+          "image": "",
+          "options": [
+            "Vitamin A",
+            "Vitamin $\\text{B}_1$",
+            "Vitamin $\\text{B}_6$",
+            "Vitamin C"
+          ],
+          "correctOption": 0,
+          "solution": "1. Vitamins are classified based on solubility:\n   - **Fat-soluble vitamins:** **Vitamins A, D, E, and K**. They are soluble in lipids, poorly excreted in urine, and stored in the liver and adipose tissues (excess intake can cause hypervitaminosis).\n   - **Water-soluble vitamins:** **B-complex vitamins and Vitamin C**. They dissolve readily in water, are not stored in significant quantities (except $\\text{B}_{12}$), and are excreted regularly in urine.\n2. Therefore, **Vitamin A (retinol)** is a fat-soluble vitamin."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An organic compound $X$ on treatment with 2,4-dinitrophenylhydrazine (2,4-DNP) forms an orange-yellow precipitate. Compound $X$ gives a positive FEHLING'S TEST. Compound $X$ is:",
+          "image": "",
+          "options": [
+            "Acetaldehyde (Ethanal)",
+            "Benzaldehyde",
+            "Acetone (Propanone)",
+            "Acetophenone"
+          ],
+          "correctOption": 0,
+          "solution": "1. A positive 2,4-DNP test indicates a carbonyl compound (aldehyde or ketone).\n2. **Fehling's test** is reduced by aliphatic aldehydes to form a red precipitate of cuprous oxide ($\\text{Cu}_2\\text{O} \\downarrow$):\n   $$\\text{R}-\\text{CHO} + 2\\text{Cu}^{2+} + 5\\text{OH}^- \\rightarrow \\text{R}-\\text{COO}^- + \\text{Cu}_2\\text{O} \\downarrow\\text{ (red)} + 3\\text{H}_2\\text{O}$$\n3. Ketones (acetone, acetophenone) do not reduce Fehling's solution.\n4. Benzaldehyde is an aromatic aldehyde and fails to reduce Fehling's solution.\n5. Therefore, compound $X$ is the aliphatic aldehyde **acetaldehyde (ethanal)**."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In proteins, DISULFIDE BRIDGES ($-S-S-$) that stabilize tertiary structures are formed exclusively between the side chains of which amino acid?",
+          "image": "",
+          "options": [
+            "Cysteine",
+            "Methionine",
+            "Serine",
+            "Lysine"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Cysteine** contains a reactive thiol (sulfhydryl, $-\\text{SH}$) group in its side chain ($-\\text{CH}_2-\\text{SH}$).\n2. Under mild oxidative conditions within a folding polypeptide, two cysteine residues bring their sulfhydryl groups into proximity and undergo mild oxidation to form a covalent **disulfide linkage ($-S-S-$)**, generating a cystine bridge:\n   $$2\\text{R}-\\text{SH} + [\\text{O}] \\rightarrow \\text{R}-\\text{S}-\\text{S}-\\text{R} + \\text{H}_2\\text{O}$$\n3. (Methionine also contains sulfur, but it is present as a thioether $-\\text{S}-\\text{CH}_3$ and cannot form disulfide cross-links)."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Why does D-glucose form a pentaacetate on treatment with acetic anhydride, whereas D-fructose also forms a pentaacetate?",
+          "image": "",
+          "options": [
+            "Both D-glucose and D-fructose contain exactly five hydroxyl groups ($-\\text{OH}$) in their open/cyclic structures",
+            "Both contain five carbonyl groups",
+            "Acetylation introduces acetate groups into carbon-hydrogen bonds",
+            "Acetic anhydride oxidizes five carbons"
+          ],
+          "correctOption": 0,
+          "solution": "1. Acetic anhydride esterifies free hydroxyl groups ($-\\text{OH}$) into acetate esters ($-\\text{OCOCH}_3$):\n   $$\\text{R}-\\text{OH} + (\\text{CH}_3\\text{CO})_2\\text{O} \\rightarrow \\text{R}-\\text{OCOCH}_3 + \\text{CH}_3\\text{COOH}$$\n2. The formation of a **pentaacetate derivative** confirms that both D-glucose (an aldohexose) and D-fructose (a ketohexose) possess **exactly five hydroxyl groups** on five distinct carbon atoms."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following tests is used to confirm the presence of an ESTER functional group?",
+          "image": "",
+          "options": [
+            "Hydroxamic acid test (forming a magenta/violet-red complex with $\\text{FeCl}_3$)",
+            "Iodoform test",
+            "Tollens' test",
+            "Carbylamine test"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the **hydroxamic acid test for esters**:\n   - An ester reacts with hydroxylamine hydrochloride ($\\text{NH}_2\\text{OH} \\cdot \\text{HCl}$) in alkaline medium to form an alcohol and a hydroxamic acid:\n     $$\\text{R}-\\text{COOR}' + \\text{NH}_2\\text{OH} \\rightarrow \\text{R}-\\text{CONHOH} + \\text{R}'-\\text{OH}$$\n   - The solution is acidified with dilute $\\text{HCl}$ and treated with ferric chloride ($\\text{FeCl}_3$) solution.\n2. The hydroxamic acid forms a stable, intensely colored **magenta/violet-red ferric hydroxamate coordination complex**:\n   $$3\\text{R}-\\text{CONHOH} + \\text{Fe}^{3+} \\rightarrow [\\text{Fe}(\\text{R}-\\text{CONHO})_3] \\downarrow\\text{ (violet-red)}$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Glycogen, the principal storage carbohydrate in animals and fungi, has a structure most similar to:",
+          "image": "",
+          "options": [
+            "Amylopectin, but with significantly more frequent branching points (every $8-12$ glucose residues)",
+            "Amylose (strictly linear)",
+            "Cellulose ($\\beta$-linked)",
+            "Sucrose"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Glycogen** (often termed 'animal starch') is a branched homopolysaccharide composed of $\\alpha$-D-glucose units.\n2. Its primary chain consists of $\\alpha(1\\rightarrow 4)$ glycosidic bonds, with branch points formed by **$\\alpha(1\\rightarrow 6)$ glycosidic bonds**, identical in linkage type to **amylopectin**.\n3. However, glycogen is **much more densely and compactly branched** than amylopectin, branching approximately every **$8-12$ glucose residues** (compared to every $20-25$ residues in amylopectin).\n4. This high degree of branching provides numerous non-reducing ends for rapid enzymatic mobilization of glucose during physical activity."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the ninhydrin test, $\\alpha$-amino acids react with ninhydrin (indane-1,2,3-trione hydrate) on heating to produce a characteristic deep purple-colored compound known as:",
+          "image": "",
+          "options": [
+            "Ruhemann's purple",
+            "Biuret complex",
+            "Schiff's base",
+            "Indigo blue"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the **ninhydrin test**:\n   - An $\\alpha$-amino acid is oxidatively deaminated and decarboxylated by ninhydrin to yield an aldehyde, $\\text{CO}_2$, ammonia, and reduced hydrindantin.\n   - Hydrindantin then condenses with ammonia and a second molecule of unreduced ninhydrin.\n2. This forms a delocalized resonance-stabilized anion known as **Ruhemann's purple** (diketohydrindylidene-diketohydrindamine, $\\lambda_{\\max} \\approx 570\\text{ nm}$).\n3. (Secondary amino acids like proline and hydroxyproline give a yellow coloration)."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following monosaccharides is a KETOHEXOSE?",
+          "image": "",
+          "options": [
+            "D-Fructose",
+            "D-Glucose",
+            "D-Galactose",
+            "D-Mannose"
+          ],
+          "correctOption": 0,
+          "solution": "1. Monosaccharides are classified according to the nature of their carbonyl group:\n   - **Aldohexoses (six carbons with an aldehyde at $C_1$):** D-Glucose, D-Galactose, D-Mannose.\n   - **Ketohexoses (six carbons with a ketone at $C_2$):** **D-Fructose** (structure: $\\text{CH}_2\\text{OH}-\\text{CO}-(\\text{CHOH})_3-\\text{CH}_2\\text{OH}$).\n2. Therefore, D-Fructose is a ketohexose."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A solid organic compound $X$ dissolves in dilute $\\text{HCl}$, but does NOT dissolve in aqueous $\\text{NaOH}$. When its cold acidic solution is treated with $\\text{NaNO}_2$ and then poured into alkaline 2-naphthol, an orange-red dye is obtained. Compound $X$ is:",
+          "image": "",
+          "options": [
+            "Aniline ($\\text{C}_6\\text{H}_5\\text{NH}_2$)",
+            "Phenol ($\\text{C}_6\\text{H}_5\\text{OH}$)",
+            "Benzoic acid ($\\text{C}_6\\text{H}_5\\text{COOH}$)",
+            "Benzylamine ($\\text{C}_6\\text{H}_5\\text{CH}_2\\text{NH}_2$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Solubility in dilute $\\text{HCl}$ indicates a **basic amine** functional group ($-\\text{NH}_2$).\n2. Lack of solubility in aqueous $\\text{NaOH}$ confirms it is not an acidic compound (ruling out phenol and benzoic acid).\n3. Treatment with cold $\\text{NaNO}_2 + \\text{HCl}$ at $0-5^\\circ\\text{C}$ followed by coupling with alkaline 2-naphthol to produce an **insoluble orange-red azo dye** is the diagnostic test for a **primary aromatic amine**.\n4. Benzylamine is an aliphatic primary amine; its diazonium salt is unstable, decomposing into benzyl alcohol with evolution of $\\text{N}_2$ without forming an azo dye.\n5. Therefore, compound $X$ is **aniline**."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The phosphodiester linkage in the backbone of DNA and RNA connects:",
+          "image": "",
+          "options": [
+            "The $C_3'$ hydroxyl group of one nucleotide pentose sugar to the $C_5'$ hydroxyl group of the adjacent nucleotide pentose sugar",
+            "The $C_1'$ carbon to the purine nitrogen",
+            "Two purine bases together",
+            "The $C_2'$ carbon of ribose to adenine"
+          ],
+          "correctOption": 0,
+          "solution": "1. In nucleic acid polymers (polynucleotide chains), adjacent nucleotide residues are covalently linked through a **phosphodiester bridge**.\n2. The phosphate group forms an ester bond between the **$C_3'$ hydroxyl (-\\text{OH}) group of one pentose sugar** and the **$C_5'$ hydroxyl (-\\text{OH}) group of the next pentose sugar**.\n3. This forms an alternating sugar-phosphate-sugar backbone with a directional polarity running from the $5'$-end to the $3'$-end."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Why does D-glucose NOT react with sodium bisulfite ($\\text{NaHSO}_3$) to form an addition compound, and does NOT form 2,4-DNP derivatives, despite having an aldohexose formula?",
+          "image": "",
+          "options": [
+            "D-Glucose exists predominantly in cyclic pyranose hemiacetal forms with only a minute concentration ($< 0.02\\%$) of the free open-chain aldehyde in equilibrium",
+            "The aldehyde group is oxidized to a carboxyl group",
+            "The aldehyde group is sterically blocked by chloride ions",
+            "The aldehyde group is reduced to an alcohol"
+          ],
+          "correctOption": 0,
+          "solution": "1. In aqueous solution, D-glucose exists almost entirely ($> 99.98\\%$) as an equilibrium between two cyclic six-membered hemiacetal anomers: **$\\alpha$-D-glucopyranose ($36\\%$) and $\\beta$-D-glucopyranose ($64\\%$)**.\n2. The concentration of the free, uncyclized open-chain aldehyde form at any instant is **extremely small (less than $0.02\\%$)**.\n3. Weak nucleophiles (such as $\\text{NaHSO}_3$) cannot trap this minute concentration of aldehyde.\n4. Consequently, glucose fails to form a bisulfite adduct, fails the Schiff's test, and does not form 2,4-DNP derivatives under standard conditions."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The hormone responsible for the 'fight or flight' stress response, which stimulates glycogen breakdown into glucose and increases blood pressure and heart rate, is:",
+          "image": "",
+          "options": [
+            "Adrenaline (Epinephrine)",
+            "Thyroxine",
+            "Progesterone",
+            "Insulin"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Adrenaline (epinephrine)** is an amine catecholamine hormone secreted by the adrenal medulla during acute physical or emotional stress.\n2. It binds to $\\beta$-adrenergic receptors, activating glycogen phosphorylase in liver and muscle tissue to trigger rapid glycogenolysis (releasing glucose into the bloodstream).\n3. It causes systemic vasoconstriction, raises arterial blood pressure, and accelerates cardiac output to prepare the body for 'fight or flight'."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Millon's test is a diagnostic qualitative test used to confirm proteins containing which specific amino acid residue?",
+          "image": "",
+          "options": [
+            "Tyrosine (phenolic group)",
+            "Tryptophan (indole group)",
+            "Cysteine (thiol group)",
+            "Arginine (guanidine group)"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Millon's reagent** is a solution of mercuric nitrate and mercurous nitrate in concentrated nitric acid containing nitrous acid.\n2. When added to a protein solution containing **Tyrosine** (which has a phenolic $-\\text{OH}$ group on its phenyl ring) and warmed gently, nitration of the phenol ring occurs.\n3. Mercury(II) coordinates with the nitrophenol derivative to form a characteristic **white precipitate that turns into a brick-red precipitate or red solution** upon heating.\n4. Therefore, Millon's test is specific for the phenolic hydroxyl group of tyrosine residues."
+        }
+      ]
+    }
+  ]
+}

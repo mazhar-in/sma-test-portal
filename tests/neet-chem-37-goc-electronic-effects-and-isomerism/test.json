@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-37-goc-electronic-effects-and-isomerism",
+  "title": "General Organic Chemistry: Hybridization, Isomerism, & Electronic Effects",
+  "syllabus": "Tetravalency of carbon and molecular shapes (sp3, sp2, sp hybridizations, percentage s/p character, bond lengths, bond angles, bond strengths, electronegativity of hybrid carbons); Structural isomerism (chain, positional, functional, metamerism, tautomerism: keto-enol equilibrium, stability of enols); Stereoisomerism: Geometrical isomerism (cis-trans, E-Z nomenclature, dipole moments, melting and boiling points, stability) and Optical isomerism (chirality, stereocenters, enantiomers, diastereomers, meso compounds, specific rotation, racemic mixtures); Fundamental electronic displacement effects in organic molecules: Inductive effect (+I and -I groups, permanent polarization, distance dependence, acid-base strengths of carboxylic acids and amines); Electromeric effect (+E and -E effects, temporary polarization in multiple bonds under reagent attack); Resonance / Mesomeric effect (+M/+R and -M/-R groups, rules of resonance canonical stability, resonance energy, delocalization); Hyperconjugation (Baker-Nathan effect, no-bond resonance involving σ(C-H) into adjacent empty p, half-filled p, or π* orbitals, counting α-hydrogens); Reactive intermediates stability governed by electronic effects (carbocations, free radicals, carbanions); Aromaticity, antiaromaticity, and non-aromaticity (Hückel's 4n+2 π rule).",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In the organic molecule given below:\n$$\\overset{1}{\\text{C}}\\text{H}_2=\\overset{2}{\\text{C}}\\text{H}-\\overset{3}{\\text{C}}\\equiv\\overset{4}{\\text{N}}$$\nThe hybridization states of carbon atoms $C_1, C_2,$ and $C_3$ from left to right are respectively:",
+          "image": "",
+          "options": [
+            "$sp^2, sp^2, sp$",
+            "$sp^2, sp, sp^2$",
+            "$sp^3, sp^2, sp$",
+            "$sp, sp^2, sp^2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Count the number of $\\sigma$-bonds formed by each carbon atom (a single bond is $1\\sigma$; a double bond is $1\\sigma + 1\\pi$; a triple bond is $1\\sigma + 2\\pi$):\n- $C_1$: Forms two $\\text{C}-\\text{H}$ $\\sigma$-bonds and one $\\text{C}=\\text{C}$ $\\sigma$-bond ($3\\sigma, 0\\text{ lp}$) $\\implies \\mathbf{sp^2}$.\n- $C_2$: Forms one $\\text{C}-\\text{H}$ $\\sigma$-bond, one $\\text{C}=\\text{C}$ $\\sigma$-bond, and one $\\text{C}-\\text{C}$ $\\sigma$-bond ($3\\sigma, 0\\text{ lp}$) $\\implies \\mathbf{sp^2}$.\n- $C_3$: Forms one $\\text{C}-\\text{C}$ $\\sigma$-bond and one $\\text{C}\\equiv\\text{N}$ $\\sigma$-bond ($2\\sigma, 0\\text{ lp}$) $\\implies \\mathbf{sp}$.\nTherefore, the hybridization states from left to right are $sp^2, sp^2, sp$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following carbocations is the MOST STABLE?",
+          "image": "",
+          "options": [
+            "$(\\text{CH}_3)_3\\text{C}^+$ (tert-Butyl cation)",
+            "$(\\text{CH}_3)_2\\text{CH}^+$ (Isopropyl cation)",
+            "$\\text{CH}_3\\text{CH}_2^+$ (Ethyl cation)",
+            "$\\text{CH}_3^+$ (Methyl cation)"
+          ],
+          "correctOption": 0,
+          "solution": "1. The stability of simple alkyl carbocations is governed primarily by **hyperconjugation** ($\\sigma_{\\text{C}-\\text{H}} \\rightarrow p_{\\text{empty}}$ delocalization) and the electron-donating **inductive (+I) effect** of alkyl groups.\n2. Count the number of $\\alpha$-hydrogen atoms participating in hyperconjugation:\n- $(\\text{CH}_3)_3\\text{C}^+$: three methyl groups $\\implies \\mathbf{9\\ \\alpha\\text{-hydrogens}}$ ($9$ hyperconjugative structures).\n- $(\\text{CH}_3)_2\\text{CH}^+$: two methyl groups $\\implies 6\\ \\alpha\\text{-hydrogens}$.\n- $\\text{CH}_3\\text{CH}_2^+$: one methyl group $\\implies 3\\ \\alpha\\text{-hydrogens}$.\n- $\\text{CH}_3^+$: zero $\\alpha$-hydrogens.\n3. Because the tert-butyl carbocation has the maximum number of $\\alpha$-hydrogens and three +I methyl groups, it is the most stable."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following carboxylic acids has the HIGHEST acidic strength (lowest $\\text{p}K_a$)?",
+          "image": "",
+          "options": [
+            "$\\text{CF}_3\\text{COOH}$",
+            "$\\text{CCl}_3\\text{COOH}$",
+            "$\\text{CHCl}_2\\text{COOH}$",
+            "$\\text{CH}_2\\text{ClCOOH}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The acidic strength of a carboxylic acid depends on the stability of its conjugate carboxylate anion ($\\text{RCOO}^-$).\n2. Electron-withdrawing groups ($-I$ effect) disperse the negative charge across the carboxylate oxygen atoms, stabilizing the conjugate base and increasing acidity.\n3. Fluorine is the most electronegative element and exerts a significantly stronger $-I$ effect than chlorine.\n4. In trifluoroacetic acid ($\\text{CF}_3\\text{COOH}$), the three strongly electronegative fluorine atoms pull electron density strongly away from the carboxylate unit via the $-I$ effect, stabilizing $\\text{CF}_3\\text{COO}^-$ more than $\\text{CCl}_3\\text{COO}^-$.\n5. Therefore, $\\text{CF}_3\\text{COOH}$ is the strongest acid ($\\text{p}K_a \\approx 0.23$)."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following species is AROMATIC according to Hückel's $(4n + 2)\\pi$ electron rule?",
+          "image": "",
+          "options": [
+            "Cyclopentadienyl anion ($[\\text{C}_5\\text{H}_5]^-$)",
+            "Cyclooctatetraene ($\\text{C}_8\\text{H}_8$)",
+            "Cycloheptatrienyl cation (tropylium ion without charge, i.e., cycloheptatriene)",
+            "Cyclopentadienyl cation ($[\\text{C}_5\\text{H}_5]^+$)"
+          ],
+          "correctOption": 0,
+          "solution": "Criteria for aromaticity (Hückel's rule):\n1. The molecule/ion must be cyclic, planar, and completely conjugated with continuous overlapping $p$-orbitals.\n2. It must contain $(4n + 2)\\pi$ delocalized electrons (where $n = 0, 1, 2, \\dots$).\nEvaluate the species:\n- **Cyclopentadienyl anion ($[\\text{C}_5\\text{H}_5]^-$):** Planar, completely conjugated five-membered ring containing two $\\text{C}=\\text{C}$ double bonds ($4\\pi$ electrons) plus one lone pair ($2\\pi$ electrons) in an unhybridized $p$-orbital $\\implies 4 + 2 = \\mathbf{6\\pi\\text{ electrons}}$. This satisfies $4n + 2$ for $n = 1$, making it **aromatic**.\n- Cyclooctatetraene has $8\\pi$ electrons and adopts a tub-shaped non-planar geometry (non-aromatic).\n- Cyclopentadienyl cation has $4\\pi$ electrons (antiaromatic)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The enol content of acetylacetone (pentane-2,4-dione) in the liquid state is unusually high (around $76\\%$). The predominant factor responsible for this high stability of the enol tautomer is:",
+          "image": "",
+          "options": [
+            "Extended conjugation between the double bond and carbonyl group along with intramolecular hydrogen bonding forming a stable six-membered ring",
+            "High boiling point of the enol",
+            "Presence of an acidic methyl group",
+            "Steric hindrance in the keto tautomer"
+          ],
+          "correctOption": 0,
+          "solution": "1. In pentane-2,4-dione ($\\text{CH}_3-\\text{CO}-\\text{CH}_2-\\text{CO}-\\text{CH}_3$), keto-enol tautomerism produces the enol form: $\\text{CH}_3-\\text{C}(\\text{OH})=\\text{CH}-\\text{CO}-\\text{CH}_3$.\n2. This enol tautomer is extraordinarily stable due to two synergistic structural effects:\n   - **Conjugation:** The $\\text{C}=\\text{C}$ double bond is conjugated with the remaining carbonyl group ($-\\text{C}=\\text{C}-\\text{C}=\\text{O}$), allowing $\\pi$-electron delocalization.\n   - **Intramolecular Hydrogen Bonding (Chelation):** The hydrogen of the enolic $-\\text{OH}$ forms a strong hydrogen bond with the carbonyl oxygen, creating a planar, quasi-aromatic **six-membered chelate ring**.\n3. These factors make the enol form thermodynamically more stable than the diketo form in non-polar solvents and pure liquid."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following compounds exhibits GEOMETRICAL ISOMERISM?",
+          "image": "",
+          "options": [
+            "But-2-ene",
+            "But-1-ene",
+            "2-Methylprop-1-ene",
+            "Propene"
+          ],
+          "correctOption": 0,
+          "solution": "1. For a double-bonded alkene ($\\\\text{R}_1\\text{R}_2\\text{C}=\\text{CR}_3\\text{R}_4$) to exhibit geometrical isomerism, each doubly bonded carbon atom must be attached to **two different groups or atoms** ($\\text{R}_1 \\ne \\text{R}_2$ and $\\text{R}_3 \\ne \\text{R}_4$).\n2. In **but-2-ene ($\\text{CH}_3-\\text{CH}=\\text{CH}-\\text{CH}_3$)**:\n   - $C_2$ is bonded to $-\\text{H}$ and $-\\text{CH}_3$ (two different groups).\n   - $C_3$ is bonded to $-\\text{H}$ and $-\\text{CH}_3$ (two different groups).\n   - It exists as distinct **cis-but-2-ene** and **trans-but-2-ene** isomers.\n3. In but-1-ene, 2-methylprop-1-ene, and propene, the terminal carbon carries two identical hydrogen atoms (or two methyls), so geometrical isomerism is impossible."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The pair of compounds diethyl ether ($\\text{CH}_3\\text{CH}_2-\\text{O}-\\text{CH}_2\\text{CH}_3$) and methyl propyl ether ($\\text{CH}_3-\\text{O}-\\text{CH}_2\\text{CH}_2\\text{CH}_3$) represents which type of structural isomerism?",
+          "image": "",
+          "options": [
+            "Metamerism",
+            "Chain isomerism",
+            "Functional isomerism",
+            "Positional isomerism"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Metamerism** is a type of structural isomerism displayed by compounds containing a polyvalent functional group (such as $-\\text{O}-, -\\text{S}-, -\\text{NH}-, -\\text{CO}-$).\n2. Metamers possess the same molecular formula and identical functional group, but differ in the **distribution of carbon atoms (alkyl groups) attached on either side of the polyvalent heteroatom**.\n3. Diethyl ether has two ethyl groups ($-C_2H_5$) attached to oxygen ($C_2 + C_2$).\n4. Methyl propyl ether has one methyl ($-CH_3$) and one propyl group ($-C_3H_7$) attached to oxygen ($C_1 + C_3$).\n5. Therefore, they are **metamers**."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following canonical resonance structures contributes the MOST to the resonance hybrid of the acetate ion?",
+          "image": "",
+          "options": [
+            "Structures with equivalent negative charge distributed symmetrically over both oxygen atoms",
+            "A structure with a positive charge on carbon and negative charges on both oxygens",
+            "A structure with a positive charge on oxygen and negative charge on carbon",
+            "A structure containing separated like charges on adjacent atoms"
+          ],
+          "correctOption": 0,
+          "solution": "Rules for evaluating canonical resonance contributor stability:\n1. Non-polar or neutral structures with complete octets are most stable.\n2. For charged resonance forms, structures with **negative formal charges residing on more electronegative atoms (Oxygen > Carbon)** are significantly more stable.\n3. Equivalent resonance structures (such as $\\text{CH}_3-\\text{C}(=\\text{O})-\\text{O}^- \\longleftrightarrow \\text{CH}_3-\\text{C}(-\\text{O}^-)=\\text{O}$) where all second-period atoms have complete octets and the negative charge is distributed equally over the electronegative oxygen atoms have equal energy and **contribute maximally and equally to the resonance hybrid**."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Hyperconjugation involves the delocalization of:",
+          "image": "",
+          "options": [
+            "$\\sigma$-electrons of a $\\text{C}-\\text{H}$ bond into an adjacent vacant, partially filled $p$-orbital, or adjacent $\\pi$-orbital",
+            "$\\pi$-electrons into an adjacent empty $d$-orbital",
+            "Lone-pair electrons into a $\\sigma^*$ antibonding orbital exclusively",
+            "$\\sigma$-electrons into another $\\sigma$-bonding orbital"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Hyperconjugation** (also known as the Baker-Nathan effect or no-bond resonance) is a permanent electronic displacement effect.\n2. It occurs when the $\\sigma$-electrons of an $\\alpha-\\text{C}-\\text{H}$ bond (or $\\text{C}-\\text{C}$ bond) aligned coplanar with an adjacent empty $p$-orbital (in a carbocation), a singly occupied $p$-orbital (in a free radical), or a $\\pi$-orbital (in an alkene/arene) undergo **$\\sigma-p$ or $\\sigma-\\pi^*$ orbital overlap**.\n3. This overlap delocalizes the $\\sigma$-electron density, dispersing charge and stabilizing the intermediate or molecule."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The total number of stereoisomers possible for tartaric acid, $\\text{HOOC}-\\text{CH(OH)}-\\text{CH(OH)}-\\text{COOH}$, is:",
+          "image": "",
+          "options": [
+            "$3$ ($2$ enantiomers and $1$ meso compound)",
+            "$4$ ($2$ pairs of enantiomers)",
+            "$2$ (only enantiomers)",
+            "$1$ (only meso compound)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Tartaric acid possesses $n = 2$ chiral stereocenters (carbon atoms with four distinct substituents: $-\\text{H}, -\\text{OH}, -\\text{COOH},$ and $-\\text{CH(OH)COOH}$).\n2. Because both chiral carbons carry identical sets of substituents, the molecule is symmetric with two equivalent halves.\n3. For a molecule with $n$ similar chiral centers ($n = 2$, even number):\n   - Number of optically active enantiomers: $a = 2^{n - 1} = 2^{2 - 1} = 2$ ($d$-tartaric acid and $l$-tartaric acid).\n   - Number of optically inactive meso compounds: $m = 2^{(n/2) - 1} = 2^{(2/2) - 1} = 2^0 = 1$ (*meso*-tartaric acid, which has an internal plane of symmetry).\n4. Total stereoisomers:\n   $$\\text{Total} = a + m = 2 + 1 = 3$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The Electromeric Effect ($E$-effect) is correctly described as:",
+          "image": "",
+          "options": [
+            "A temporary effect involving the complete transfer of a shared pair of $\\pi$-electrons to one of the bonded atoms in the presence of an attacking reagent",
+            "A permanent effect operating through $\\sigma$-bonds in saturated chains",
+            "A permanent effect involving delocalization of $\\sigma$-electrons into $p$-orbitals",
+            "An effect independent of the presence of an attacking reagent"
+          ],
+          "correctOption": 0,
+          "solution": "1. The **Electromeric effect** is a **purely temporary** polarization effect observed only in organic compounds possessing multiple bonds ($\\text{C}=\\text{C}, \\text{C}\\equiv\\text{C}, \\text{C}=\\text{O}, \\text{C}\\equiv\\text{N}$).\n2. It operates only under the active demand of an external attacking reagent (electrophile or nucleophile).\n3. Under reagent influence, the shared $\\pi$-electron pair transfers completely to one of the two bonded atoms, generating instantaneous formal charges (e.g., $+E$ and $-E$ effects).\n4. As soon as the attacking reagent is removed, the molecule reverts back to its original unpolarized ground state."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The order of stability among the following free radicals is:\n(I) $\\text{C}_6\\text{H}_5\\dot{\\text{C}}\\text{H}_2$\n(II) $(\\text{CH}_3)_3\\dot{\\text{C}}$\n(III) $(\\text{CH}_3)_2\\dot{\\text{C}}\\text{H}$\n(IV) $\\text{CH}_3\\dot{\\text{C}}\\text{H}_2$",
+          "image": "",
+          "options": [
+            "(I) > (II) > (III) > (IV)",
+            "(II) > (I) > (III) > (IV)",
+            "(I) > (III) > (II) > (IV)",
+            "(IV) > (III) > (II) > (I)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Free radicals are electron-deficient ($7$ valence electrons) species stabilized by electron-delocalizing effects.\n2. **Resonance stabilization** is substantially more effective at dispersing spin density than hyperconjugation.\n3. In the **benzyl radical (I)**, the unpaired electron is delocalized across the entire aromatic $\\pi$-system of the benzene ring through multiple canonical resonance contributors, providing superior thermodynamic stabilization.\n4. Among simple alkyl radicals, stability is governed by hyperconjugation ($3^\\circ > 2^\\circ > 1^\\circ$):\n   - $(\\text{CH}_3)_3\\dot{\\text{C}}$ (II): $9\\ \\alpha\\text{-hydrogens}$\n   - $(\\text{CH}_3)_2\\dot{\\text{C}}\\text{H}$ (III): $6\\ \\alpha\\text{-hydrogens}$\n   - $\\text{CH}_3\\dot{\\text{C}}\\text{H}_2$ (IV): $3\\ \\alpha\\text{-hydrogens}$\n5. Therefore, the overall stability order is:\n   $$\\text{Benzyl (I)} > 3^\\circ\\text{ (II)} > 2^\\circ\\text{ (III)} > 1^\\circ\\text{ (IV)}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following compounds CANNOT exhibit optical isomerism (is achiral)?",
+          "image": "",
+          "options": [
+            "2-Chlorobutane",
+            "Butan-2-ol",
+            "Lactic acid",
+            "Propan-2-ol"
+          ],
+          "correctOption": 3,
+          "solution": "1. A molecule is chiral and exhibits optical isomerism if it contains an asymmetric carbon atom (stereocenter bonded to four distinct groups) and lacks symmetry elements.\n2. **Propan-2-ol ($\\text{CH}_3-\\text{CH(OH)}-\\text{CH}_3$):** The central carbon is bonded to $-\\text{H}, -\\text{OH},$ and **two identical methyl groups ($\\text{CH}_3$)**.\n3. Because it does not have four different substituents, the central carbon is achiral. The molecule contains an internal plane of symmetry and is **optically inactive (achiral)**.\n4. (2-Chlorobutane, butan-2-ol, and lactic acid all contain a stereocenter bonded to four distinct groups, making them chiral)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The electronegativity of carbon atoms depends on their state of hybridization. Which of the following represents the correct decreasing order of electronegativity?",
+          "image": "",
+          "options": [
+            "$sp > sp^2 > sp^3$",
+            "$sp^3 > sp^2 > sp$",
+            "$sp^2 > sp > sp^3$",
+            "$sp > sp^3 > sp^2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. An $s$-orbital is spherically symmetrical and penetrates closer to the atomic nucleus than a $p$-orbital.\n2. As the percentage of $s$-character in a hybrid orbital increases, the electrons in that hybrid orbital are held closer and more tightly by the carbon nucleus, increasing the atom's effective electronegativity:\n   - $sp$ hybridized carbon: $50\\%\\ s$-character (most electronegative, electronegativity $\\approx 3.29$)\n   - $sp^2$ hybridized carbon: $33.3\\%\\ s$-character (electronegativity $\\approx 2.75$)\n   - $sp^3$ hybridized carbon: $25\\%\\ s$-character (least electronegative, electronegativity $\\approx 2.48$)\nTherefore, the correct order is $sp > sp^2 > sp^3$."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In which of the following pairs do the compounds represent FUNCTIONAL ISOMERS?",
+          "image": "",
+          "options": [
+            "$\\text{CH}_3\\text{CH}_2\\text{OH}$ and $\\text{CH}_3-\\text{O}-\\text{CH}_3$",
+            "$\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{OH}$ and $\\text{CH}_3\\text{CH(OH)}\\text{CH}_3$",
+            "$\\text{CH}_3\\text{COOH}$ and $\\text{HCOOCH}_2\\text{CH}_3$",
+            "$\\text{CH}_3\\text{CH}_2\\text{CHO}$ and $\\text{CH}_3\\text{COCH}_2\\text{CH}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Functional isomers** are structural isomers that share the identical molecular formula but possess **different functional groups**, resulting in distinctly different chemical properties.\n2. Ethanol ($\\text{CH}_3\\text{CH}_2\\text{OH}$) and dimethyl ether ($\\text{CH}_3-\\text{O}-\\text{CH}_3$) have the same molecular formula $\\text{C}_2\\text{H}_6\\text{O}$.\n3. Ethanol is an **alcohol** (functional group $-\\text{OH}$), while dimethyl ether is an **ether** (functional group $-\\text{O}-$).\n4. (Option B represents positional isomers; Options C and D have different molecular formulas)."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The correct order of stability for the following carbanions is:",
+          "image": "",
+          "options": [
+            "$\\text{HC}\\equiv\\text{C}^- > \\text{CH}_2=\\text{CH}^- > \\text{CH}_3\\text{CH}_2^-$",
+            "$\\text{CH}_3\\text{CH}_2^- > \\text{CH}_2=\\text{CH}^- > \\text{HC}\\equiv\\text{C}^-$",
+            "$\\text{CH}_2=\\text{CH}^- > \\text{HC}\\equiv\\text{C}^- > \\text{CH}_3\\text{CH}_2^-$",
+            "$\\text{HC}\\equiv\\text{C}^- > \\text{CH}_3\\text{CH}_2^- > \\text{CH}_2=\\text{CH}^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Carbanions carry an unshared pair of electrons with a full negative formal charge on carbon.\n2. A negative charge is most stable on the carbon atom with the **highest electronegativity** (greatest attraction for electron density).\n3. Electronegativity depends directly on $s$-character ($sp [50\\%] > sp^2 [33.3\\%] > sp^3 [25\\%]$):\n   - $\\text{HC}\\equiv\\text{C}^-$: carbanion carbon is **$sp$-hybridized** ($50\\%\\ s$-character, holds negative charge closest to nucleus $\\implies$ most stable).\n   - $\\text{CH}_2=\\text{CH}^-$: carbanion carbon is **$sp^2$-hybridized** ($33.3\\%\\ s$-character).\n   - $\\text{CH}_3\\text{CH}_2^-$: carbanion carbon is **$sp^3$-hybridized** ($25\\%\\ s$-character, least electronegative $\\implies$ least stable).\nTherefore, the stability order is: $\\text{HC}\\equiv\\text{C}^- > \\text{CH}_2=\\text{CH}^- > \\text{CH}_3\\text{CH}_2^-$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A pair of stereoisomers that are non-superimposable and are NOT mirror images of each other are defined as:",
+          "image": "",
+          "options": [
+            "Diastereomers",
+            "Enantiomers",
+            "Meso compounds",
+            "Metamers"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Enantiomers** are stereoisomers that are non-superimposable mirror images of each other (have identical physical properties except the direction of optical rotation).\n2. **Diastereomers** are defined as stereoisomers that are **not mirror images of each other** (and are non-superimposable).\n3. Diastereomers have different physical properties (different melting points, boiling points, solubilities, dipole moments, and chemical reactivities).\n4. Examples include *cis/trans* isomers and non-mirror image stereoisomers of sugars and tartaric acid."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following groups exerts a $+M$ (or $+R$, electron-donating mesomeric) effect when attached to a conjugated benzene ring?",
+          "image": "",
+          "options": [
+            "$-\\text{OCH}_3$",
+            "$-\\text{NO}_2$",
+            "$-\\text{CN}$",
+            "$-\\text{CHO}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. A substituent exerts a **$+M$ ($+R$) effect** if it possesses an unshared lone pair of electrons on the atom directly bonded to the conjugated $\\pi$-system, which it can donate into the ring through resonance.\n2. In the methoxy group (**$-\\ddot{\\text{O}}-\\text{CH}_3$**), the oxygen atom has two unshared lone pairs and donates electron density into the ring through resonance, increasing electron density at the ortho and para positions.\n3. Groups like $-\\text{NO}_2, -\\text{CN},$ and $-\\text{CHO}$ contain electronegative atoms connected via multiple bonds and pull electron density out of the ring via a **$-M$ ($-R$) effect**."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the total number of $\\alpha$-hydrogen atoms available for hyperconjugation in 2-methylbut-2-ene?",
+          "image": "",
+          "options": [
+            "$9$",
+            "$6$",
+            "$3$",
+            "$12$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Write the structural formula of 2-methylbut-2-ene:\n   $$\\overset{a}{\\text{C}}\\text{H}_3-\\overset{b}{\\text{C}}(\\overset{c}{\\text{CH}}_3)=\\overset{d}{\\text{C}}\\text{H}-\\overset{e}{\\text{C}}\\text{H}_3$$\n2. The carbon-carbon double bond involves carbons $b$ and $d$ ($-\\text{C}=\\text{CH}-$).\n3. Any $sp^3$-hybridized carbon atom directly attached to the doubly bonded carbons is an $\\alpha$-carbon:\n   - Attached to carbon $b$: two methyl groups (carbons $a$ and $c$), each containing $3$ hydrogens $\\implies 3 + 3 = 6\\ \\alpha$-hydrogens.\n   - Attached to carbon $d$: one methyl group (carbon $e$), containing $3$ hydrogens $\\implies 3\\ \\alpha$-hydrogens.\n4. Total $\\alpha$-hydrogens:\n   $$\\text{Total } \\alpha\\text{-hydrogens} = 6 + 3 = 9$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The dipole moment of *cis*-but-2-ene is $0.33\\text{ D}$, whereas the dipole moment of *trans*-but-2-ene is zero. This is because:",
+          "image": "",
+          "options": [
+            "In the trans-isomer, the two equal and opposite $\\text{C}(sp^3)-\\text{C}(sp^2)$ bond dipoles cancel each other vectorially, whereas in the cis-isomer they reinforce each other",
+            "The cis-isomer has no methyl groups",
+            "The trans-isomer has a higher boiling point",
+            "The trans-isomer contains no $\\pi$-bonds"
+          ],
+          "correctOption": 0,
+          "solution": "1. Because an $sp^2$ carbon is more electronegative than an $sp^3$ carbon, the bond dipole of a $\\text{C}(sp^3)-\\text{C}(sp^2)$ bond points from the methyl group toward the double-bonded carbon.\n2. In **trans-but-2-ene**, the two methyl groups are located on opposite sides of the double bond ($180^\\circ$ apart). Their individual bond dipole vectors are equal in magnitude and point in precisely opposite directions, **cancelling vectorially to give $\\mu = 0\\text{ D}$**.\n3. In **cis-but-2-ene**, both methyl groups lie on the same side of the double bond. The two bond dipole vectors point in the same general direction, adding vectorially to give a net permanent **dipole moment of $\\mu = 0.33\\text{ D}$**."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Arrange the following carbocations in order of INCREASING stability:\n(I) $\\text{CH}_3-\\overset{+}{\\text{C}}\\text{H}_2$\n(II) $(\\text{CH}_3)_2\\overset{+}{\\text{C}}\\text{H}$\n(III) $(\\text{CH}_3)_3\\overset{+}{\\text{C}}$\n(IV) $\\overset{+}{\\text{C}}\\text{H}_3$",
+          "image": "",
+          "options": [
+            "(IV) < (I) < (II) < (III)",
+            "(IV) < (II) < (I) < (III)",
+            "(III) < (II) < (I) < (IV)",
+            "(I) < (IV) < (II) < (III)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Carbocation stability increases with the number of electron-donating alkyl groups due to hyperconjugation and inductive (+I) effects.\n2. Count $\\alpha$-hydrogens for each carbocation:\n   - (IV) $\\overset{+}{\\text{C}}\\text{H}_3$: $0\\ \\alpha\\text{-H}$ (least stable)\n   - (I) $\\text{CH}_3-\\overset{+}{\\text{C}}\\text{H}_2$ ($1^\\circ$): $3\\ \\alpha\\text{-H}$\n   - (II) $(\\text{CH}_3)_2\\overset{+}{\\text{C}}\\text{H}$ ($2^\\circ$): $6\\ \\alpha\\text{-H}$\n   - (III) $(\\text{CH}_3)_3\\overset{+}{\\text{C}}$ ($3^\\circ$): $9\\ \\alpha\\text{-H}$ (most stable)\n3. Therefore, the increasing order of stability is:\n   $$(IV) < (I) < (II) < (III)$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An equimolar mixture of two enantiomers (dextro and laevo forms) shows ZERO optical rotation. Such a mixture is termed a:",
+          "image": "",
+          "options": [
+            "Racemic mixture (or racemate)",
+            "Meso form",
+            "Diastereomeric mixture",
+            "Tautomeric mixture"
+          ],
+          "correctOption": 0,
+          "solution": "1. An equimolar ( $1 : 1$ ) mixture of two enantiomers (dextrorotatory $+d$ and laevorotatory $-l$) is called a **racemic mixture** (or racemic modification, denoted as $(\\pm)$ or $dl$).\n2. The rotation of plane-polarized light caused by molecules of one enantiomer is exactly balanced and canceled out by an equal and opposite optical rotation caused by the same number of molecules of the opposite enantiomer.\n3. This complete loss of optical activity due to mutual cancellation by two separate molecular enantiomers is termed **external compensation**.\n4. (A meso compound is optically inactive due to *internal compensation* within a single molecule)."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following compounds exhibits TAUTOMERISM?",
+          "image": "",
+          "options": [
+            "Acetone ($\\text{CH}_3\\text{COCH}_3$)",
+            "Benzophenone ($\\text{C}_6\\text{H}_5\\text{COC}_6\\text{H}_5$)",
+            "Formaldehyde ($\\text{HCHO}$)",
+            "Benzaldehyde ($\\text{C}_6\\text{H}_5\\text{CHO}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. For a carbonyl compound to exhibit keto-enol tautomerism, it must possess **at least one acidic $\\alpha$-hydrogen atom** attached to an $sp^3$-hybridized carbon adjacent to the carbonyl group.\n2. In **acetone ($\\text{CH}_3\\text{COCH}_3$)**, both methyl carbons are $sp^3$-hybridized and bear a total of six $\\alpha$-hydrogens. One $\\alpha$-hydrogen can migrate to the carbonyl oxygen to establish equilibrium with the enol form prop-1-en-2-ol:\n   $$\\text{CH}_3-\\text{C}(=\\text{O})-\\text{CH}_3 \\rightleftharpoons \\text{CH}_3-\\text{C}(\\text{OH})=\\text{CH}_2$$\n3. Benzophenone, formaldehyde, and benzaldehyde contain zero $\\alpha$-hydrogens attached to $sp^3$ carbons and cannot undergo tautomerism."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In which of the following molecules are ALL the carbon atoms $sp^2$-hybridized?",
+          "image": "",
+          "options": [
+            "Benzene",
+            "Buta-1,3-diene",
+            "Cyclohexa-1,4-diene",
+            "Both Benzene and Buta-1,3-diene"
+          ],
+          "correctOption": 3,
+          "solution": "1. In **benzene ($\\text{C}_6\\text{H}_6$)**, each of the six ring carbons is bonded to two adjacent carbons and one hydrogen via three coplanar $\\sigma$-bonds ($3\\sigma, 0\\text{ lp}$), so all six carbons are **$sp^2$-hybridized**.\n2. In **buta-1,3-diene ($\\text{CH}_2=\\text{CH}-\\text{CH}=\\text{CH}_2$)**, every one of the four carbon atoms forms three $\\sigma$-bonds and one $\\pi$-bond ($3\\sigma, 0\\text{ lp}$), so all four carbons are **$sp^2$-hybridized**.\n3. In cyclohexa-1,4-diene, the $C_3$ and $C_6$ methylene carbons ($-\\text{CH}_2-$) are $sp^3$-hybridized.\nTherefore, both Benzene and Buta-1,3-diene have exclusively $sp^2$ carbons."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following substituents exhibits a $-I$ (electron-withdrawing inductive) effect?",
+          "image": "",
+          "options": [
+            "$-\\text{NO}_2$",
+            "$-\\text{CH}_3$",
+            "$-\\text{C}_2\\text{H}_5$",
+            "$-(\\text{CH}_3)_3\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Groups that withdraw $\\sigma$-electron density toward themselves more strongly than hydrogen are categorized as **$-I$ (negative inductive) groups**.\n2. The nitro group (**$-\\text{NO}_2$**) contains a positively polarized nitrogen atom bonded to two highly electronegative oxygen atoms, making it a very powerful **$-I$ substituent**.\n3. Alkyl groups (such as $-\\text{CH}_3, -\\text{C}_2\\text{H}_5,$ and $-(\\text{CH}_3)_3\\text{C}$) are electron-releasing relative to hydrogen and exert a **$+I$ effect**."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The stability order of the following alkenes:\n(I) 2,3-Dimethylbut-2-ene\n(II) 2-Methylbut-2-ene\n(III) But-2-ene\n(IV) Ethene\nis governed by hyperconjugation. The correct stability sequence is:",
+          "image": "",
+          "options": [
+            "(I) > (II) > (III) > (IV)",
+            "(IV) > (III) > (II) > (I)",
+            "(I) > (III) > (II) > (IV)",
+            "(II) > (I) > (III) > (IV)"
+          ],
+          "correctOption": 0,
+          "solution": "1. The thermodynamic stability of alkenes increases with the number of hyperconjugative $\\alpha$-hydrogens (heat of hydrogenation decreases):\n- (I) **2,3-Dimethylbut-2-ene** ($(\\text{CH}_3)_2\\text{C}=\\text{C}(\\text{CH}_3)_2$): four methyl groups $\\implies \\mathbf{12\\ \\alpha\\text{-hydrogens}}$ (most stable).\n- (II) **2-Methylbut-2-ene** ($(\\text{CH}_3)_2\\text{C}=\\text{CH}-\\text{CH}_3$): three methyl groups $\\implies \\mathbf{9\\ \\alpha\\text{-hydrogens}}$.\n- (III) **But-2-ene** ($\\text{CH}_3-\\text{CH}=\\text{CH}-\\text{CH}_3$): two methyl groups $\\implies \\mathbf{6\\ \\alpha\\text{-hydrogens}}$.\n- (IV) **Ethene** ($\\text{CH}_2=\\text{CH}_2$): zero $\\alpha$-hydrogens (least stable).\n2. Therefore, stability follows: (I) > (II) > (III) > (IV)."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following species is ANTIAROMATIC?",
+          "image": "",
+          "options": [
+            "Cyclobuta-1,3-diene",
+            "Benzene",
+            "Pyridine",
+            "Furan"
+          ],
+          "correctOption": 0,
+          "solution": "Criteria for antiaromaticity:\n1. Cyclic, planar, completely conjugated system of $p$-orbitals.\n2. Contains **$4n\\ \\pi$-electrons** (where $n = 1, 2, 3, \\dots$).\nEvaluate the options:\n- **Cyclobuta-1,3-diene:** A four-membered planar ring containing two conjugated $\\text{C}=\\text{C}$ bonds $\\implies 2 \\times 2 = \\mathbf{4\\pi\\text{ electrons}}$. Because it has $4n\\ \\pi$-electrons ($n = 1$) in a planar conjugated ring, it is **antiaromatic** and exceptionally unstable at room temperature.\n- Benzene ($6\\pi$), Pyridine ($6\\pi$), and Furan ($6\\pi$) all contain $4n + 2\\pi$ electrons ($n = 1$) and are aromatic."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following compounds has a carbon-carbon single bond with the SHORTEST bond length?",
+          "image": "",
+          "options": [
+            "$\\text{HC}\\equiv\\text{C}-\\text{C}\\equiv\\text{CH}$ (Butadiyne)",
+            "$\\text{CH}_2=\\text{CH}-\\text{CH}=\\text{CH}_2$ (Buta-1,3-diene)",
+            "$\\text{CH}_3-\\text{CH}_3$ (Ethane)",
+            "$\\text{CH}_3-\\text{CH}=\\text{CH}_2$ (Propene)"
+          ],
+          "correctOption": 0,
+          "solution": "1. The length of a carbon-carbon single bond depends directly on the state of hybridization of the two connected carbon atoms.\n2. More $s$-character holds electrons closer to the nucleus, decreasing covalent radii and shortening bond lengths:\n   - $\\text{C}(sp^3)-\\text{C}(sp^3)$ (in ethane): $\\approx 154\\text{ pm}$ (longest)\n   - $\\text{C}(sp^3)-\\text{C}(sp^2)$ (in propene): $\\approx 150\\text{ pm}$\n   - $\\text{C}(sp^2)-\\text{C}(sp^2)$ (in buta-1,3-diene): $\\approx 147\\text{ pm}$\n   - **$\\text{C}(sp)-\\text{C}(sp)$ (in butadiyne, $\\text{HC}\\equiv\\text{C}-\\text{C}\\equiv\\text{CH}$): $\\approx 137\\text{ pm}$ (shortest)**\n3. Therefore, the central single bond in butadiyne is the shortest."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The presence of a MESO form in a compound requires:",
+          "image": "",
+          "options": [
+            "Two or more chiral centers and an internal plane or center of symmetry",
+            "An odd number of chiral centers exclusively",
+            "Complete absence of chiral centers",
+            "A non-planar ring"
+          ],
+          "correctOption": 0,
+          "solution": "1. A **meso compound** is a stereoisomer that contains two or more stereocenters (chiral carbons), yet is **superimposable on its mirror image and optically inactive**.\n2. The loss of optical activity occurs through **internal compensation**, where one half of the molecule rotates plane-polarized light in one direction and the other half rotates it equally in the opposite direction.\n3. This requires the molecule to possess an **internal plane of symmetry ($\\sigma$) or an inversion center ($i$)**."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following carbocations is stabilized by RESONANCE?",
+          "image": "",
+          "options": [
+            "$\\text{CH}_2=\\text{CH}-\\overset{+}{\\text{C}}\\text{H}_2$ (Allyl cation)",
+            "$\\text{CH}_3\\text{CH}_2\\overset{+}{\\text{C}}\\text{H}_2$ (Propyl cation)",
+            "$(\\text{CH}_3)_2\\overset{+}{\\text{C}}\\text{H}$ (Isopropyl cation)",
+            "$(\\text{CH}_3)_3\\text{C}^+$ (tert-Butyl cation)"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the **allyl carbocation ($\\text{CH}_2=\\text{CH}-\\overset{+}{\\text{C}}\\text{H}_2$)**, the vacant $2p$ orbital of the carbocationic carbon is directly adjacent to the $\\pi$-bond of the double bond (an allylic system).\n2. This enables continuous $p-\\pi$ conjugation:\n   $$\\text{CH}_2=\\text{CH}-\\overset{+}{\\text{C}}\\text{H}_2 \\longleftrightarrow \\overset{+}{\\text{C}}\\text{H}_2-\\text{CH}=\\text{CH}_2$$\n3. The positive charge is delocalized equally over both terminal carbons, providing **resonance stabilization**.\n4. Propyl, isopropyl, and tert-butyl cations are saturated and stabilized only by inductive and hyperconjugative effects, not resonance."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The inductive effect of a substituent group decreases rapidly with distance along a carbon chain and becomes practically negligible after how many carbon atoms?",
+          "image": "",
+          "options": [
+            "$3$ to $4$ carbon atoms",
+            "$1$ carbon atom",
+            "$7$ to $8$ carbon atoms",
+            "It never diminishes with distance"
+          ],
+          "correctOption": 0,
+          "solution": "1. The **inductive effect** is a permanent polarization of $\\sigma$-electrons transmitted along a saturated carbon backbone due to electronegativity differences.\n2. Because $\\sigma$-bonds are relatively localized and poorly polarizable, the fractional shift of electron density attenuates rapidly with each intervening carbon atom:\n   $$\\delta_1+ \\gg \\delta_2+ \\gg \\delta_3+ \\dots$$\n3. Experimental measurements of acid dissociation constants confirm that the inductive effect **becomes practically negligible beyond the third or fourth carbon atom ($C_3-C_4$)**."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] How many structural isomers are possible for the alkane with molecular formula $\\text{C}_5\\text{H}_{12}$?",
+          "image": "",
+          "options": [
+            "$3$",
+            "$4$",
+            "$5$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "The alkane $\\text{C}_5\\text{H}_{12}$ (pentane) forms exactly **$3$ structural chain isomers**:\n1. **n-Pentane:** $\\text{CH}_3-\\text{CH}_2-\\text{CH}_2-\\text{CH}_2-\\text{CH}_3$ (unbranched five-carbon chain)\n2. **Isopentane (2-methylbutane):** $\\text{CH}_3-\\text{CH(CH}_3)-\\text{CH}_2-\\text{CH}_3$ (branched four-carbon chain)\n3. **Neopentane (2,2-dimethylpropane):** $\\text{C}(\\text{CH}_3)_4$ (symmetrical three-carbon chain with two methyl branches)"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements about the boiling points of cis and trans isomers of 1,2-dichloroethene is correct?",
+          "image": "",
+          "options": [
+            "The cis-isomer has a higher boiling point than the trans-isomer because of its higher net dipole moment",
+            "The trans-isomer has a higher boiling point because of its linear shape",
+            "Both have identical boiling points",
+            "The trans-isomer has a higher boiling point because it has a higher dipole moment"
+          ],
+          "correctOption": 0,
+          "solution": "1. In *cis*-1,2-dichloroethene, both polar $\\text{C}-\\text{Cl}$ bonds point in the same direction, giving a significant net dipole moment ($\\mu \\approx 1.9\\text{ D}$).\n2. In *trans*-1,2-dichloroethene, the two $\\text{C}-\\text{Cl}$ bond dipoles cancel out completely ($\\mu = 0\\text{ D}$).\n3. Because the cis-isomer is polar, it experiences stronger intermolecular **dipole-dipole attractions** in the liquid state compared to only London dispersion forces in the non-polar trans-isomer.\n4. Therefore, **cis-1,2-dichloroethene has a higher boiling point ($60^\\circ\\text{C}$)** than trans-1,2-dichloroethene ($48^\\circ\\text{C}$)."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The most stable canonical Lewis resonance contributor for the molecule diazomethane ($\\text{CH}_2\\text{N}_2$) is the one with:",
+          "image": "",
+          "options": [
+            "Complete octets on all heavy atoms and the negative charge on the more electronegative nitrogen atom: $\\text{H}_2\\text{C}=\\overset{+}{\\text{N}}=\\overset{-}{\\text{N}}$",
+            "A negative charge on carbon: $\\text{H}_2\\overset{-}{\\text{C}}-\\overset{+}{\\text{N}}\\equiv\\text{N}$",
+            "An incomplete octet on carbon",
+            "Positive charges on adjacent atoms"
+          ],
+          "correctOption": 0,
+          "solution": "Rules for resonance stability:\n1. Canonical structures in which **every atom has a complete valence shell octet** are far more stable than structures with incomplete octets.\n2. Between structures with complete octets, the structure having formal **negative charge on the more electronegative atom (Nitrogen > Carbon)** is more stable.\n3. In $\\text{H}_2\\text{C}=\\overset{+}{\\text{N}}=\\overset{-}{\\text{N}}$, both carbon and both nitrogens have complete octets, and the negative charge resides on terminal nitrogen.\n4. Hence, this contributor provides the greatest stabilization to the hybrid."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following compounds has the MAXIMUM acidic character?",
+          "image": "",
+          "options": [
+            "Formic acid ($\\text{HCOOH}$)",
+            "Acetic acid ($\\text{CH}_3\\text{COOH}$)",
+            "Propionic acid ($\\text{CH}_3\\text{CH}_2\\text{COOH}$)",
+            "Isobutyric acid ($(\\text{CH}_3)_2\\text{CHCOOH}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Acidity of carboxylic acids depends on the stability of the conjugate carboxylate anion ($\\text{RCOO}^-$).\n2. Alkyl groups exert an electron-releasing inductive (+I) effect, intensifying the negative charge on the carboxylate group and destabilizing the anion, thereby decreasing acidity:\n   $$\\text{+I power: } -(\\text{CH}_3)_2\\text{CH} > -\\text{CH}_2\\text{CH}_3 > -\\text{CH}_3 > -\\text{H}$$\n3. In **formic acid ($\\text{HCOOH}$)**, hydrogen exerts virtually zero inductive effect compared to alkyl groups.\n4. Therefore, formate ion ($\\text{HCOO}^-$) is the most stable conjugate base, making **formic acid the strongest acid** among these four ($\\text{p}K_a = 3.75$ vs $4.76$ for acetic acid)."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The number of optical isomers for a compound with two DISSIMILAR chiral centers (like 2,3-dichlorobutanoic acid) is:",
+          "image": "",
+          "options": [
+            "$4$",
+            "$3$",
+            "$2$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For a molecule with $n$ **dissimilar (non-identical) chiral centers**:\n   - There is no plane or center of symmetry in any conformation.\n   - Every stereoisomer is optically active and exists as part of an enantiomeric pair.\n2. The total number of optical isomers is given by the formula:\n   $$\\text{Total optical isomers} = 2^n$$\n3. For $n = 2$ dissimilar chiral centers:\n   $$\\text{Total} = 2^2 = 4\\text{ optical isomers}$$\n   (Consisting of two pairs of enantiomers, four diastereomers)."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following alkenes has the LOWEST heat of hydrogenation?",
+          "image": "",
+          "options": [
+            "2,3-Dimethylbut-2-ene",
+            "trans-But-2-ene",
+            "cis-But-2-ene",
+            "Ethene"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Heat of hydrogenation ($\\Delta H_{\\text{hydro}}$)** is the quantity of heat released when one mole of an unsaturated alkene is catalytically hydrogenated to the corresponding alkane.\n2. Heat of hydrogenation is **inversely proportional to the thermodynamic stability of the alkene**:\n   $$\\text{Heat of hydrogenation} \\propto \\frac{1}{\\text{Stability of alkene}}$$\n3. An alkene with more hyperconjugative $\\alpha$-hydrogens is more stable and has lower potential energy in its ground state, releasing less heat upon hydrogenation.\n4. **2,3-Dimethylbut-2-ene** has twelve $\\alpha$-hydrogens (tetrasubstituted alkene), making it the most stable alkene among the options.\n5. Because it is the most stable, it releases the **lowest heat of hydrogenation**."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] What type of structural isomerism is exhibited by the pair pentan-2-one and pentan-3-one?",
+          "image": "",
+          "options": [
+            "Positional isomerism (and metamerism)",
+            "Chain isomerism",
+            "Functional isomerism",
+            "Tautomerism"
+          ],
+          "correctOption": 0,
+          "solution": "1. Both pentan-2-one ($\\text{CH}_3\\text{COCH}_2\\text{CH}_2\\text{CH}_3$) and pentan-3-one ($\\text{CH}_3\\text{CH}_2\\text{COCH}_2\\text{CH}_3$) share the same unbranched five-carbon skeleton and the same carbonyl functional group ($>\\text{C}=\\text{O}$).\n2. They differ in the **position of the carbonyl group** along the carbon chain ($C_2$ versus $C_3$), making them **positional isomers**.\n3. Furthermore, because they contain different alkyl groups attached on either side of the bivalent carbonyl carbon (methyl + propyl vs ethyl + ethyl), they can also be classified as **metamers**."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following reactive intermediates has a planar geometry with an $sp^2$-hybridized central carbon atom?",
+          "image": "",
+          "options": [
+            "Methyl carbocation ($\\overset{+}{\\text{C}}\\text{H}_3$)",
+            "Methyl carbanion ($:\\overset{-}{\\text{C}}\\text{H}_3$)",
+            "Ammonium ion ($\\text{NH}_4^+$)",
+            "Hydronium ion ($\\text{H}_3\\text{O}^+$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the **methyl carbocation ($\\overset{+}{\\text{C}}\\text{H}_3$)**, the positively charged carbon has $6$ valence electrons forming three $\\text{C}-\\text{H}$ $\\sigma$-bonds with zero lone pairs ($3\\sigma, 0\\text{ lp}$).\n2. The steric number is $3$, which dictates **$sp^2$ hybridization**.\n3. The three $\\text{C}-\\text{H}$ bonds point toward the corners of an equilateral triangle in a single plane with $120^\\circ$ bond angles, while the vacant unhybridized $2p_z$ orbital lies perpendicular to the plane.\n4. Therefore, the methyl carbocation has a **trigonal planar geometry**.\n5. (Methyl carbanion has $3\\sigma + 1\\text{ lp} = 4 \\implies sp^3$, trigonal pyramidal)."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A positive electromeric effect ($+E$ effect) is defined as the transfer of $\\pi$-electrons:",
+          "image": "",
+          "options": [
+            "Towards the atom to which the attacking electrophilic reagent gets attached",
+            "Away from the atom to which the attacking reagent gets attached",
+            "Into a vacant $d$-orbital",
+            "To the solvent molecules"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the **$+E$ (positive electromeric) effect**, the shared $\\pi$-electron pair of the multiple bond moves **toward the carbon atom to which the attacking electrophile attaches**:\n   $$\\text{C}=\\text{C} + \\text{H}^+ \\rightarrow -\\overset{+}{\\text{C}}-\\text{C}(\\text{H})-$$  \n   (e.g., addition of $\\text{H}^+$ to alkenes).\n2. In the **$-E$ (negative electromeric) effect**, the $\\pi$-electron pair moves **away from the atom where the attacking nucleophile attaches**:\n   $$>\\text{C}=\\text{O} + \\text{CN}^- \\rightarrow >\\text{C}(\\text{CN})-\\text{O}^-$$  \n   (e.g., addition of cyanide to carbonyl compounds)."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following compounds exhibits optical activity?",
+          "image": "",
+          "options": [
+            "2-Hydroxypropanoic acid (Lactic acid)",
+            "Propanoic acid",
+            "2-Methylpropane",
+            "Acetone"
+          ],
+          "correctOption": 0,
+          "solution": "1. Optical activity requires a molecule to be chiral (lacking symmetry planes and inversion centers).\n2. In **lactic acid ($\\text{CH}_3-\\text{CH(OH)}-\\text{COOH}$)**, the central $C_2$ carbon is bonded to four completely different atoms/groups:\n   - $-\\text{H}$\n   - $-\\text{OH}$\n   - $-\\text{CH}_3$\n   - $-\\text{COOH}$\n3. Because it possesses an asymmetric carbon center with no plane of symmetry, lactic acid is **chiral and optically active** (resolves into $(+)$ and $(-)$ enantiomers).\n4. All other options lack chiral centers."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The correct order of decreasing electron-withdrawing inductive ($-I$) power for the following groups is:",
+          "image": "",
+          "options": [
+            "$-\\overset{+}{\\text{N}}\\text{R}_3 > -\\text{NO}_2 > -\\text{CN} > -\\text{COOH} > -\\text{F}$",
+            "$-\\text{F} > -\\text{COOH} > -\\text{CN} > -\\text{NO}_2 > -\\overset{+}{\\text{N}}\\text{R}_3$",
+            "$-\\text{NO}_2 > -\\overset{+}{\\text{N}}\\text{R}_3 > -\\text{F} > -\\text{CN} > -\\text{COOH}$",
+            "$-\\text{CN} > -\\text{NO}_2 > -\\overset{+}{\\text{N}}\\text{R}_3 > -\\text{COOH} > -\\text{F}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Positively charged quaternary ammonium groups ($-\\overset{+}{\\text{N}}\\text{R}_3$) exert the strongest $-I$ effect because a full positive charge strongly pulls $\\sigma$-electron density.\n2. Neutral polar groups follow in order of decreasing central atom polarization and electronegativity:\n   $$-\\overset{+}{\\text{N}}\\text{R}_3 > -\\text{NO}_2 > -\\text{CN} > -\\text{SO}_3\\text{H} > -\\text{CHO} > -\\text{COOR} > -\\text{COOH} > -\\text{F} > -\\text{Cl} > -\\text{Br} > -\\text{I}$$\nTherefore, Option A represents the correct decreasing sequence."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The trans-isomer of but-2-ene has a HIGHER melting point than the cis-isomer. This is primarily because:",
+          "image": "",
+          "options": [
+            "The trans-isomer has a more symmetrical, linear shape that packs more tightly and efficiently into the crystal lattice",
+            "The trans-isomer has a higher dipole moment",
+            "The cis-isomer has higher molecular weight",
+            "The trans-isomer forms intermolecular hydrogen bonds"
+          ],
+          "correctOption": 0,
+          "solution": "1. Melting point depends primarily on **crystal lattice packing efficiency** in the solid state.\n2. **trans-But-2-ene** has a centrosymmetric, linear-like geometry with high molecular symmetry.\n3. This symmetrical shape allows trans-molecules to **pack closely and tightly into the crystal lattice**, maximizing intermolecular contact surfaces.\n4. Disrupting this tight crystal lattice requires more thermal energy, giving **trans-but-2-ene a significantly higher melting point ($-106^\\circ\\text{C}$)** than the less symmetrical, U-shaped cis-but-2-ene ($-139^\\circ\\text{C}$)."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In which of the following molecules is the resonance effect ($+R$) opposed by the inductive effect ($-I$), with the INDUCTIVE EFFECT playing the dominant role in deactivating electrophilic aromatic substitution?",
+          "image": "",
+          "options": [
+            "Chlorobenzene",
+            "Anisole",
+            "Phenol",
+            "Aniline"
+          ],
+          "correctOption": 0,
+          "solution": "1. In halobenzenes (like **chlorobenzene**), the halogen atom has unshared lone pairs and donates electron density into the ring through resonance (**$+R$ effect**), directing the incoming electrophile to ortho and para positions.\n2. However, halogens are strongly electronegative and withdraw electron density strongly via the **$-I$ effect**.\n3. Uniquely for halogens, the **$-I$ effect outweighs the $+R$ effect**, leading to a net withdrawal of electron density from the benzene ring.\n4. Consequently, chlorobenzene is **deactivated toward electrophilic aromatic substitution**, yet remains **ortho/para-directing**."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following compounds has the MAXIMUM enol content at equilibrium in gas phase?",
+          "image": "",
+          "options": [
+            "$\\text{CH}_3\\text{COCH}_2\\text{COCH}_3$ (Pentane-2,4-dione)",
+            "$\\text{CH}_3\\text{COCH}_3$ (Acetone)",
+            "$\\text{CH}_3\\text{CHO}$ (Acetaldehyde)",
+            "$\\text{CH}_3\\text{COOCH}_2\\text{CH}_3$ (Ethyl acetate)"
+          ],
+          "correctOption": 0,
+          "solution": "1. In monocarbonyl compounds like acetone, acetaldehyde, and ethyl acetate, the enol content is minuscule ($< 0.001\\%$) because a $\\text{C}=\\text{O}$ double bond ($745\\text{ kJ mol}^{-1}$) is significantly stronger than a $\\text{C}=\\text{C}$ double bond ($614\\text{ kJ mol}^{-1}$).\n2. In **pentane-2,4-dione ($\\text{CH}_3\\text{COCH}_2\\text{COCH}_3$)**, a $\\beta$-dicarbonyl compound, the enol form produces an extended conjugated $\\pi$-system ($-\\text{C}=\\text{C}-\\text{C}=\\text{O}$) reinforced by a very strong **six-membered chelate ring with intramolecular hydrogen bonding**.\n3. In the gas phase or non-polar solvents, this stabilization energy overcomes the bond energy difference, making the **enol content reach over $90\\%$**."
+        }
+      ]
+    }
+  ]
+}

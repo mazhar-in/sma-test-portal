@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-36-purification-and-qualitative-analysis",
+  "title": "Purification & Qualitative Analysis of Organic Compounds",
+  "syllabus": "Methods of purification of organic compounds: Sublimation, Crystallisation (choice of solvent, fractional crystallisation), Distillation (simple distillation, fractional distillation, theoretical plates, bubble-cap columns), Distillation under reduced pressure / Vacuum distillation (compounds decomposing at or below their normal boiling points, e.g., glycerol), Steam distillation (immiscible mixtures, condition P_total = P_water + P_organic = P_atm, e.g., aniline, o-nitrophenol), Differential extraction (separating funnel, use of organic solvents), Chromatography: Adsorption chromatography (column chromatography, thin layer chromatography - TLC, Rf value), Partition chromatography (paper chromatography); Qualitative analysis of organic compounds: Detection of Carbon and Hydrogen (Copper(II) oxide test, anhydrous CuSO4 turning blue, Ca(OH)2 turning milky); Lassaigne's test (Sodium fusion extract preparation, reason for using metallic sodium); Detection of Nitrogen (conversion to NaCN, reaction with FeSO4, FeCl3, and conc. H2SO4 to form Prussian blue precipitate/complex Fe4[Fe(CN)6]3, why hydrazine and diazonium salts fail Lassaigne's test); Detection of Sulphur (conversion to Na2S, Sodium nitroprusside test yielding purple/violet [Fe(CN)5NOS]4-, Lead acetate test yielding black PbS); Simultaneous detection of Nitrogen and Sulphur (formation of NaSCN, reaction with Fe3+ yielding blood-red [Fe(SCN)]2+ or Fe(SCN)3); Detection of Halogens (conversion to NaX, acidification with dilute HNO3 and boiling to expel HCN/H2S before adding AgNO3, precipitates: AgCl white soluble in aq. NH3, AgBr pale yellow sparingly soluble in aq. NH3, AgI yellow insoluble in aq. NH3); Layer test / Chlorine water test for Bromine and Iodine in presence of CS2, CCl4, or CHCl3; Beilstein's flame test (copper wire test, limitations); Detection of Phosphorus (oxidation with sodium peroxide to sodium phosphate, reaction with concentrated HNO3 and ammonium molybdate forming canary yellow precipitate of ammonium phosphomolybdate (NH4)3PO4.12MoO3).",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In Lassaigne's test for the detection of nitrogen in an organic compound, the Prussian blue coloration obtained is due to the formation of which of the following chemical species?",
+          "image": "",
+          "options": [
+            "$\\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_3 \\cdot x\\text{H}_2\\text{O}$",
+            "$\\text{Fe}_3[\\text{Fe}(\\text{CN})_6]_2$",
+            "$\\text{Na}_4[\\text{Fe}(\\text{CN})_5\\text{NOS}]$",
+            "$\\text{Fe}(\\text{SCN})_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In Lassaigne's test, sodium fusion converts organically bound nitrogen and carbon into ionic sodium cyanide:\n   $$\\text{Na} + \\text{C} + \\text{N} \\xrightarrow{\\Delta} \\text{NaCN}$$\n2. The extract is boiled with iron(II) sulfate ($\\text{FeSO}_4$) in alkaline medium to generate hexacyanidoferrate(II):\n   $$\\text{Fe}^{2+} + 6\\text{CN}^- \\rightarrow [\\text{Fe}(\\text{CN})_6]^{4-}$$\n3. Acidification with concentrated $\\text{H}_2\\text{SO}_4$ oxidizes some $\\text{Fe}^{2+}$ to $\\text{Fe}^{3+}$, which reacts with $[\\text{Fe}(\\text{CN})_6]^{4-}$ to produce iron(III) hexacyanidoferrate(II), commonly known as Prussian blue:\n   $$4\\text{Fe}^{3+} + 3[\\text{Fe}(\\text{CN})_6]^{4-} + x\\text{H}_2\\text{O} \\rightarrow \\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_3 \\cdot x\\text{H}_2\\text{O} \\downarrow$$\nTherefore, Prussian blue is ferric ferrocyanide, $\\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_3 \\cdot x\\text{H}_2\\text{O}$."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Glycerol (boiling point $290^\\circ\\text{C}$) decomposes at or near its normal boiling point. Which of the following methods is used for its commercial purification?",
+          "image": "",
+          "options": [
+            "Distillation under reduced pressure (Vacuum distillation)",
+            "Steam distillation",
+            "Simple distillation at atmospheric pressure",
+            "Fractional crystallisation"
+          ],
+          "correctOption": 0,
+          "solution": "1. Substances that have very high normal boiling points and tend to decompose at or below their boiling points cannot be purified by simple distillation at atmospheric pressure.\n2. In **distillation under reduced pressure (vacuum distillation)**, the pressure above the liquid surface is lowered using a vacuum pump or aspirator.\n3. Lowering the external pressure allows the liquid to boil at a significantly lower temperature than its normal boiling point, preventing thermal decomposition.\n4. Glycerol boils at $290^\\circ\\text{C}$ with decomposition at $760\\text{ mm Hg}$, but boils smoothly without decomposition at $180^\\circ\\text{C}$ under a reduced pressure of $10-12\\text{ mm Hg}$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In Lassaigne's test, why must the sodium fusion extract be boiled with concentrated $\\text{HNO}_3$ before testing for halogens with $\\text{AgNO}_3$ solution?",
+          "image": "",
+          "options": [
+            "To decompose any $\\text{NaCN}$ and $\\text{Na}_2\\text{S}$ present into volatile $\\text{HCN}$ and $\\text{H}_2\\text{S}$ gases, preventing interference with $\\text{AgNO}_3$",
+            "To oxidize halide ions to molecular halogens",
+            "To neutralize the basicity of the sodium extract completely",
+            "To convert insoluble silver halides into soluble complexes"
+          ],
+          "correctOption": 0,
+          "solution": "1. If the organic compound contains nitrogen or sulfur along with halogens, the sodium fusion extract contains sodium cyanide ($\\text{NaCN}$) and sodium sulfide ($\\text{Na}_2\\text{S}$).\n2. If $\\text{AgNO}_3$ is added directly without prior boiling with nitric acid, $\\text{CN}^-$ and $\\text{S}^{2-}$ react with $\\text{Ag}^+$ to precipitate white $\\text{AgCN}$ and black $\\text{Ag}_2\\text{S}$:\n   $$\\text{NaCN} + \\text{AgNO}_3 \\rightarrow \\text{AgCN} \\downarrow\\text{ (white)} + \\text{NaNO}_3$$\n   $$\\text{Na}_2\\text{S} + 2\\text{AgNO}_3 \\rightarrow \\text{Ag}_2\\text{S} \\downarrow\\text{ (black)} + 2\\text{NaNO}_3$$\n   These precipitates interfere with the detection of white $\\text{AgCl}$, pale yellow $\\text{AgBr}$, or yellow $\\text{AgI}$.\n3. Boiling with concentrated $\\text{HNO}_3$ decomposes and expels these interfering ions as gases:\n   $$\\text{NaCN} + \\text{HNO}_3 \\rightarrow \\text{NaNO}_3 + \\text{HCN} \\uparrow$$\n   $$\\text{Na}_2\\text{S} + 2\\text{HNO}_3 \\rightarrow 2\\text{NaNO}_3 + \\text{H}_2\\text{S} \\uparrow$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following nitrogen-containing organic compounds DOES NOT give a positive Lassaigne's test for nitrogen?",
+          "image": "",
+          "options": [
+            "Hydrazine ($\\text{NH}_2\\text{NH}_2$)",
+            "Aniline ($\\text{C}_6\\text{H}_5\\text{NH}_2$)",
+            "Urea ($\\text{NH}_2\\text{CONH}_2$)",
+            "Glycine ($\\text{H}_2\\text{N}-\\text{CH}_2-\\text{COOH}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. In Lassaigne's test, the formation of Prussian blue requires the synthesis of cyanide ions ($\\text{CN}^-$):\n   $$\\text{Na} + \\text{C} + \\text{N} \\xrightarrow{\\Delta} \\text{NaCN}$$\n2. Therefore, the compound must contain **both carbon and nitrogen** atoms simultaneously in its structure.\n3. **Hydrazine ($\\text{H}_2\\text{N}-\\text{NH}_2$)** contains nitrogen and hydrogen, but no carbon. During sodium fusion, it cannot form $\\text{NaCN}$ (it volatilizes or decomposes into $\\text{NH}_3$ and $\\text{N}_2$).\n4. Hence, hydrazine (and its salts) does not respond to Lassaigne's test for nitrogen.\n5. (Aniline, urea, and glycine all contain carbon and nitrogen, giving positive tests)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An organic liquid $A$ is immiscible with water and steam-volatile. During steam distillation at atmospheric pressure ($760\\text{ mm Hg}$), the liquid boils at:",
+          "image": "",
+          "options": [
+            "A temperature lower than the normal boiling point of both water and liquid $A$",
+            "A temperature exactly equal to $100^\\circ\\text{C}$",
+            "A temperature between the boiling point of water and liquid $A$",
+            "A temperature higher than the boiling point of both liquids"
+          ],
+          "correctOption": 0,
+          "solution": "1. In steam distillation of an immiscible two-phase system (liquid $A$ + water), each liquid exerts its own equilibrium vapor pressure independently of the other.\n2. The total vapor pressure ($P_{\\text{total}}$) is the direct arithmetic sum of their individual saturation vapor pressures:\n   $$P_{\\text{total}} = P_A + P_{\\text{water}}$$\n3. Boiling begins when $P_{\\text{total}}$ equals external atmospheric pressure ($P_{\\text{atm}} = 760\\text{ mm Hg}$):\n   $$P_A + P_{\\text{water}} = 760\\text{ mm Hg}$$\n4. Because both components contribute to the total pressure, $P_{\\text{water}}$ and $P_A$ are each individually less than $760\\text{ mm Hg}$ at the boiling mixture temperature.\n5. Consequently, the mixture distills at a **temperature lower than the boiling point of pure water ($100^\\circ\\text{C}$) and lower than that of substance $A$** (e.g., aniline, b.p. $184^\\circ\\text{C}$, distills at $98^\\circ\\text{C}$)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] When an organic compound containing both nitrogen and sulfur is fused with sodium metal, the sodium fusion extract develops a blood-red coloration upon adding $\\text{FeCl}_3$. The chemical species responsible for this blood-red color is:",
+          "image": "",
+          "options": [
+            "$[\\text{Fe}(\\text{SCN})]^{2+}$ (or $\\text{Fe}(\\text{SCN})_3$)",
+            "$\\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_3$",
+            "$[\\text{Fe}(\\text{CN})_5\\text{NOS}]^{4-}$",
+            "$\\text{Fe}_2\\text{S}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. When both nitrogen and sulfur are present in an organic compound (e.g., thiourea), fusion with limited sodium metal produces sodium thiocyanate:\n   $$\\text{Na} + \\text{C} + \\text{N} + \\text{S} \\xrightarrow{\\Delta} \\text{NaSCN}$$\n2. When the acidified extract is treated with iron(III) chloride ($\\text{FeCl}_3$), thiocyanate ions coordinate with $\\text{Fe}^{3+}$ to form the blood-red iron(III) thiocyanate complex:\n   $$\\text{Fe}^{3+} + \\text{SCN}^- \\rightarrow [\\text{Fe}(\\text{SCN})]^{2+} \\quad (\\text{blood-red complex})$$\n   $$\\text{or } \\text{Fe}^{3+} + 3\\text{SCN}^- \\rightarrow \\text{Fe}(\\text{SCN})_3$$\n3. Note: If excess sodium is used during fusion, $\\text{NaSCN}$ is decomposed into $\\text{NaCN}$ and $\\text{Na}_2\\text{S}$, which give Prussian blue and black $\\text{PbS}$ independently."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Thin Layer Chromatography (TLC) is based on the principle of:",
+          "image": "",
+          "options": [
+            "Adsorption chromatography",
+            "Partition chromatography exclusively",
+            "Differential sublimation",
+            "Ion-exchange chromatography"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Thin Layer Chromatography (TLC)** is a classic technique of **adsorption chromatography**.\n2. A thin layer ($\\approx 0.2\\text{ mm}$) of an adsorbent (such as silica gel or alumina) is coated onto a glass, plastic, or aluminium plate, serving as the stationary phase.\n3. The mobile phase (solvent/eluent) ascends along the plate by capillary action.\n4. Separation occurs based on the differential adsorption affinity of various components of the mixture on the stationary adsorbent surface.\n5. (Paper chromatography, in contrast, is partition chromatography where water trapped in paper fibers is the stationary liquid phase)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In the sodium nitroprusside test for the qualitative detection of sulfur, a violet/purple color develops. The formula of the violet complex is:",
+          "image": "",
+          "options": [
+            "$\\text{Na}_4[\\text{Fe}(\\text{CN})_5\\text{NOS}]$",
+            "$\\text{Na}_2[\\text{Fe}(\\text{CN})_5\\text{NO}]$",
+            "$\\text{Na}_3[\\text{Fe}(\\text{CN})_5\\text{S}]$",
+            "$\\text{Na}_4[\\text{Fe}(\\text{CN})_6]$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In Lassaigne's test for sulfur, sodium metal reacts with organically bound sulfur to form sodium sulfide ($\\text{Na}_2\\text{S}$):\n   $$2\\text{Na} + \\text{S} \\xrightarrow{\\Delta} \\text{Na}_2\\text{S}$$\n2. When freshly prepared sodium nitroprusside solution, $\\text{Na}_2[\\text{Fe}(\\text{CN})_5\\text{NO}]$, is added to the alkaline extract, sulfide ions react to form a characteristic purple/violet complex:\n   $$\\text{S}^{2-} + [\\text{Fe}(\\text{CN})_5\\text{NO}]^{2-} \\rightarrow [\\text{Fe}(\\text{CN})_5\\text{NOS}]^{4-}$$\n3. The salt formed is sodium thionitroprusside, **$\\text{Na}_4[\\text{Fe}(\\text{CN})_5\\text{NOS}]$**."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] A mixture of o-nitrophenol and p-nitrophenol can be separated effectively by:",
+          "image": "",
+          "options": [
+            "Steam distillation",
+            "Sublimation",
+            "Crystallisation from water",
+            "Simple distillation at $300^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In **o-nitrophenol**, the $-\\text{NO}_2$ and $-\\text{OH}$ groups are adjacent, allowing the formation of an **intramolecular hydrogen bond** (chelation), which prevents intermolecular association.\n2. Consequently, o-nitrophenol has a lower boiling point, lower aqueous solubility, and higher vapor pressure, making it **steam-volatile**.\n3. In **p-nitrophenol**, the groups are far apart, leading to strong **intermolecular hydrogen bonding** between adjacent molecules, increasing association and boiling point, making it **non-steam-volatile**.\n4. Passing steam through the mixture volatilizes and distills o-nitrophenol over with water vapor, leaving non-volatile p-nitrophenol behind in the distillation flask."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the qualitative detection of phosphorus, the organic compound is heated with an oxidizing agent (such as $\\text{Na}_2\\text{O}_2$), acidified with concentrated $\\text{HNO}_3$, and treated with ammonium molybdate. The formation of a canary-yellow precipitate indicates the presence of phosphorus. The formula of this canary-yellow precipitate is:",
+          "image": "",
+          "options": [
+            "$(\\text{NH}_4)_3\\text{PO}_4 \\cdot 12\\text{MoO}_3$",
+            "$(\\text{NH}_4)_2\\text{MoO}_4$",
+            "$\\text{MoPO}_4$",
+            "$(\\text{NH}_4)_3\\text{PO}_4 \\cdot 6\\text{MoO}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Organic phosphorus is oxidized by sodium peroxide to sodium phosphate:\n   $$\\text{P} + \\text{Na}_2\\text{O}_2 \\rightarrow \\text{Na}_3\\text{PO}_4$$\n2. The phosphate is converted into orthophosphoric acid with hot concentrated nitric acid:\n   $$\\text{Na}_3\\text{PO}_4 + 3\\text{HNO}_3 \\rightarrow \\text{H}_3\\text{PO}_4 + 3\\text{NaNO}_3$$\n3. Adding ammonium molybdate, $(\\text{NH}_4)_2\\text{MoO}_4$, in concentrated $\\text{HNO}_3$ precipitates ammonium phosphomolybdate:\n   $$\\text{H}_3\\text{PO}_4 + 12(\\text{NH}_4)_2\\text{MoO}_4 + 21\\text{HNO}_3 \\rightarrow (\\text{NH}_4)_3\\text{PO}_4 \\cdot 12\\text{MoO}_3 \\downarrow + 21\\text{NH}_4\\text{NO}_3 + 12\\text{H}_2\\text{O}$$\n4. The canary-yellow precipitate is **ammonium phosphomolybdate, $(\\text{NH}_4)_3\\text{PO}_4 \\cdot 12\\text{MoO}_3$**."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The retardation factor ($R_f$ value) in chromatography is defined as:",
+          "image": "",
+          "options": [
+            "$R_f = \\frac{\\text{Distance moved by the substance from baseline}}{\\text{Distance moved by the solvent front from baseline}}$",
+            "$R_f = \\frac{\\text{Distance moved by the solvent front}}{\\text{Distance moved by the substance}}$",
+            "$R_f = \\text{Distance moved by substance} \\times \\text{Distance moved by solvent}$",
+            "$R_f = \\frac{\\text{Total length of plate}}{\\text{Distance moved by substance}}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The **retardation factor ($R_f$)** is a dimensionless parameter used in thin layer chromatography (TLC) and paper chromatography.\n2. It is mathematically defined as:\n   $$R_f = \\frac{\\text{Distance travelled by the substance from reference baseline }(x)}{\\text{Distance travelled by the solvent front from reference baseline }(y)}$$\n3. Because the substance moves behind the advancing solvent front, $x \\le y$, so the $R_f$ value is **always less than or equal to $1.0$**."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In the detection of carbon and hydrogen, an organic compound is heated with dry copper(II) oxide ($\\text{CuO}$). Carbon and hydrogen are confirmed respectively by:",
+          "image": "",
+          "options": [
+            "Lime water turning milky and anhydrous $\\text{CuSO}_4$ turning blue",
+            "Lime water turning blue and anhydrous $\\text{CuSO}_4$ turning white",
+            "Formation of black copper sulfide and steam",
+            "Evolution of $\\text{CO}$ gas and formation of liquid water"
+          ],
+          "correctOption": 0,
+          "solution": "1. Heating the organic compound with dry $\\text{CuO}$ oxidizes carbon to $\\text{CO}_2$ and hydrogen to $\\text{H}_2\\text{O}$:\n   $$\\text{C} + 2\\text{CuO} \\xrightarrow{\\Delta} \\text{CO}_2 + 2\\text{Cu}$$\n   $$2\\text{H} + \\text{CuO} \\xrightarrow{\\Delta} \\text{H}_2\\text{O} + \\text{Cu}$$\n2. **Confirmation of Carbon:** The evolved $\\text{CO}_2$ gas turns clear lime water milky due to precipitation of insoluble calcium carbonate:\n   $$\\text{Ca(OH)}_2 + \\text{CO}_2 \\rightarrow \\text{CaCO}_3 \\downarrow\\text{ (milky)} + \\text{H}_2\\text{O}$$\n3. **Confirmation of Hydrogen:** The condensed moisture turns white anhydrous copper(II) sulfate blue by forming pentahydrate copper sulfate:\n   $$\\text{CuSO}_4\\text{ (white)} + 5\\text{H}_2\\text{O} \\rightarrow \\text{CuSO}_4 \\cdot 5\\text{H}_2\\text{O}\\text{ (blue)}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A mixture of chloroform (boiling point $61^\\circ\\text{C}$) and aniline (boiling point $184^\\circ\\text{C}$) can be separated by:",
+          "image": "",
+          "options": [
+            "Simple distillation",
+            "Steam distillation",
+            "Sublimation",
+            "Fractional crystallisation"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Simple distillation** is suitable for separating a mixture of two miscible, thermally stable liquids when their boiling points differ by **more than $25^\\circ\\text{C}-30^\\circ\\text{C}$**.\n2. Boiling point of chloroform $= 61^\\circ\\text{C}$ ($334\\text{ K}$).\n3. Boiling point of aniline $= 184^\\circ\\text{C}$ ($457\\text{ K}$).\n4. The difference between their boiling points is $184 - 61 = 123^\\circ\\text{C}$, which is well above $25^\\circ\\text{C}$.\n5. Chloroform vaporizes at a lower temperature and distills over first, leaving high-boiling aniline behind in the distillation flask."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the layer test for the detection of bromine and iodine, the acidified sodium fusion extract is treated with chlorine water in the presence of $\\text{CS}_2$ (or $\\text{CCl}_4$). The colors developed in the organic solvent layer for $\\text{Br}_2$ and $\\text{I}_2$ are respectively:",
+          "image": "",
+          "options": [
+            "Orange-brown for bromine and violet for iodine",
+            "Violet for bromine and brown for iodine",
+            "Blue for bromine and green for iodine",
+            "Yellow for bromine and colorless for iodine"
+          ],
+          "correctOption": 0,
+          "solution": "1. Chlorine is a stronger oxidizing agent than bromine and iodine ($E^\\circ_{\\text{Cl}_2/\\text{Cl}^-} = +1.36\\text{ V} > E^\\circ_{\\text{Br}_2/\\text{Br}^-} = +1.09\\text{ V} > E^\\circ_{\\text{I}_2/\\text{I}^-} = +0.54\\text{ V}$).\n2. Chlorine oxidizes bromide ions to free molecular bromine:\n   $$2\\text{NaBr} + \\text{Cl}_2 \\rightarrow 2\\text{NaCl} + \\text{Br}_2$$\n   Bromine dissolves preferentially in the non-polar organic layer ($\\text{CS}_2, \\text{CCl}_4,$ or $\\text{CHCl}_3$), imparting an **orange-brown (reddish-brown) color**.\n3. Similarly, chlorine oxidizes iodide ions to molecular iodine:\n   $$2\\text{NaI} + \\text{Cl}_2 \\rightarrow 2\\text{NaCl} + \\text{I}_2$$\n   Iodine dissolves in the organic layer, imparting an intense **violet (purple) color**."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Why is metallic sodium used for preparing Lassaigne's extract rather than other metals?",
+          "image": "",
+          "options": [
+            "Sodium has a low melting point and high reactivity, converting covalently bound non-metals (C, N, S, X) into water-soluble ionic sodium salts",
+            "Sodium forms insoluble covalent bonds with organic molecules",
+            "Sodium does not react with water",
+            "Sodium is a transition metal with variable oxidation states"
+          ],
+          "correctOption": 0,
+          "solution": "1. Non-metals ($\\text{C}, \\text{H}, \\text{N}, \\text{S}, \\text{X}$) are bonded covalently in organic molecules, so they do not ionize directly in aqueous solution to give qualitative inorganic ionic precipitation reactions.\n2. Metallic sodium has a **low melting point ($97.8^\\circ\\text{C}$)** and easily melts into a reactive silvery bead inside the fusion tube.\n3. Sodium is an electropositive alkali metal that reacts vigorously with covalent organic compounds at red heat, converting covalent $\\text{N}, \\text{S},$ and $\\text{X}$ into **water-soluble ionic salts** ($\\text{NaCN}, \\text{Na}_2\\text{S}, \\text{NaX}$).\n4. These water-soluble inorganic ions can then be identified by standard wet chemical analytical reagents."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Fractional distillation is employed to separate two miscible liquids when:",
+          "image": "",
+          "options": [
+            "The difference between their boiling points is small (less than $25^\\circ\\text{C}$)",
+            "The difference between their boiling points is very large (greater than $100^\\circ\\text{C}$)",
+            "One component is steam-volatile and the other is non-volatile",
+            "Both components decompose at their normal boiling points"
+          ],
+          "correctOption": 0,
+          "solution": "1. When two miscible liquids have boiling points that are **very close to each other (difference less than $25^\\circ\\text{C}$)**, simple distillation is ineffective because the vapor produced contains appreciable amounts of both components.\n2. In **fractional distillation**, a fractionating column (packed column or bubble-cap column) is inserted between the flask and condenser.\n3. The column provides a large surface area for repeated condensation and revaporization cycles (successive theoretical plates).\n4. The rising vapor becomes progressively enriched in the more volatile component, while the descending condensate becomes enriched in the less volatile component (e.g., separating crude petroleum fractions, ethanol-water mixtures)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In Lassaigne's test for halogens, the sodium extract of an organic compound gives a PALE YELLOW precipitate with $\\text{AgNO}_3$ solution that is SPARINGLY SOLUBLE in aqueous ammonia ($\\text{NH}_4\\text{OH}$). The halogen present is:",
+          "image": "",
+          "options": [
+            "Bromine ($\\text{Br}$)",
+            "Chlorine ($\\text{Cl}$)",
+            "Iodine ($\\text{I}$)",
+            "Fluorine ($\\text{F}$)"
+          ],
+          "correctOption": 0,
+          "solution": "Qualitative behavior of silver halides with $\\text{NH}_4\\text{OH}$:\n1. **$\\text{AgCl}$ (Chlorine):** Curdy **white precipitate**, **completely soluble** in aqueous $\\text{NH}_4\\text{OH}$ due to formation of the soluble diammine complex $[\\text{Ag}(\\text{NH}_3)_2]\\text{Cl}$.\n2. **$\\text{AgBr}$ (Bromine):** **Pale yellow precipitate**, **sparingly (partially) soluble** in aqueous $\\text{NH}_4\\text{OH}$.\n3. **$\\text{AgI}$ (Iodine):** Bright **yellow precipitate**, **completely insoluble** in aqueous $\\text{NH}_4\\text{OH}$.\nTherefore, the pale yellow, sparingly soluble precipitate confirms the presence of **Bromine**."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Beilstein's test is a sensitive qualitative test for halogens in organic compounds. In this test, a copper wire coated with the organic compound is heated in a non-luminous Bunsen flame, producing:",
+          "image": "",
+          "options": [
+            "A green or bluish-green flame due to volatile copper halides",
+            "A bright yellow flame due to sodium",
+            "A crimson red flame due to lithium",
+            "A non-luminous flame with dense white smoke"
+          ],
+          "correctOption": 0,
+          "solution": "1. In **Beilstein's flame test**, an organic halogen compound is placed on a clean copper wire and introduced into a non-luminous Bunsen flame.\n2. The organic halogen reacts with hot copper oxide on the wire to form **volatile copper(II) halides ($\\text{CuX}_2$)**.\n3. The vapor of copper halide imparts a characteristic **bright green or bluish-green color** to the flame.\n4. Limitation: Beilstein's test does NOT detect fluorine (copper fluoride is non-volatile). Furthermore, compounds containing nitrogen (like urea, pyridine, thiourea) also give a green flame due to volatile copper cyanide, producing false positive results."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In column chromatography, the mobile phase and stationary phase are typically:",
+          "image": "",
+          "options": [
+            "Mobile phase: a liquid solvent (eluent); Stationary phase: a solid adsorbent (silica gel or alumina)",
+            "Mobile phase: a solid; Stationary phase: a liquid",
+            "Mobile phase: a gas; Stationary phase: an immiscible gas",
+            "Both are liquid phases"
+          ],
+          "correctOption": 0,
+          "solution": "1. In **column adsorption chromatography**, a glass column is packed uniformly with an active solid adsorbent (such as silica gel $\\text{SiO}_2$ or activated alumina $\\text{Al}_2\\text{O}_3$), which acts as the **stationary phase**.\n2. The mixture of organic compounds to be separated is applied at the top of the column.\n3. An appropriate liquid solvent or mixture of solvents (eluent) is allowed to percolate down through the column, acting as the **mobile phase**.\n4. Components separate into discrete bands along the column based on their selective adsorption-desorption equilibria."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A solid organic compound $X$ sublimes on heating at atmospheric pressure without melting. Which technique is most appropriate for separating $X$ from non-volatile impurities?",
+          "image": "",
+          "options": [
+            "Sublimation",
+            "Steam distillation",
+            "Fractional distillation",
+            "Differential extraction"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Sublimation** is the direct transition of a solid substance into the vapor phase upon heating without passing through the intermediate liquid state, followed by condensation of pure solid on a cold surface.\n2. Substances like **naphthalene, anthracene, benzoic acid, camphor, and iodine** have high vapor pressures below their melting points and sublime readily.\n3. Heating the impure mixture in a porcelain dish covered with an inverted, perforated filter paper and a cooled glass funnel deposits pure sublimate crystals on the cold funnel walls, leaving non-sublimable impurities behind."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] During Lassaigne's test for sulfur using the lead acetate reagent, the sodium fusion extract is acidified with which acid?",
+          "image": "",
+          "options": [
+            "Acetic acid ($\\text{CH}_3\\text{COOH}$)",
+            "Dilute sulfuric acid ($\\text{H}_2\\text{SO}_4$)",
+            "Concentrated hydrochloric acid ($\\text{HCl}$)",
+            "Concentrated nitric acid ($\\text{HNO}_3$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. To test for sulfur using lead acetate, the sodium extract must be acidified with **acetic acid ($\\text{CH}_3\\text{COOH}$)**:\n   $$\\text{Na}_2\\text{S} + (\\text{CH}_3\\text{COO})_2\\text{Pb} \\xrightarrow{\\text{CH}_3\\text{COOH}} \\text{PbS} \\downarrow\\text{ (black precipitate)} + 2\\text{CH}_3\\text{COONa}$$\n2. **Sulfuric acid ($\\text{H}_2\\text{SO}_4$) cannot be used** because it would react with lead acetate to precipitate white, insoluble lead sulfate ($\\text{PbSO}_4 \\downarrow$), which obscures the black $\\text{PbS}$.\n3. **Hydrochloric acid ($\\text{HCl}$) cannot be used** because chloride ions precipitate white lead chloride ($\\text{PbCl}_2 \\downarrow$)."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An organic compound on sodium fusion gave an extract which turned yellow and formed a precipitate with $\\text{AgNO}_3$ that remained COMPLETELY INSOLUBLE even in concentrated ammonium hydroxide solution. The element confirmed is:",
+          "image": "",
+          "options": [
+            "Iodine ($\\text{I}$)",
+            "Bromine ($\\text{Br}$)",
+            "Chlorine ($\\text{Cl}$)",
+            "Sulfur ($\\text{S}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Sodium fusion converts organic iodine into sodium iodide ($\\text{NaI}$).\n2. Reaction with acidified $\\text{AgNO}_3$ produces a bright **yellow precipitate of silver iodide ($\\text{AgI}$)**:\n   $$\\text{NaI} + \\text{AgNO}_3 \\rightarrow \\text{AgI} \\downarrow\\text{ (yellow)} + \\text{NaNO}_3$$\n3. Due to its very small solubility product ($K_{sp} \\sim 8.5 \\times 10^{-17}$) and high covalent character, $\\text{AgI}$ is **completely insoluble in both dilute and concentrated $\\text{NH}_4\\text{OH}$**.\n4. This confirms the presence of **Iodine**."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In paper chromatography, what serves as the stationary phase?",
+          "image": "",
+          "options": [
+            "Water molecules trapped inside the cellulose fibers of the chromatography paper",
+            "The dry cellulose polymer fibers exclusively",
+            "The organic solvent moving up the paper",
+            "Atmospheric nitrogen"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Paper chromatography** is predominantly an example of **partition chromatography**.\n2. Although cellulose paper acts as a mechanical support, chromatography paper absorbs and tightly binds approximately $15-20\\%$ water within its microscopic cellulose structure.\n3. This **bound, immobilized water acts as the liquid stationary phase**.\n4. The eluent/solvent that ascends the strip via capillary action serves as the mobile liquid phase.\n5. Separation occurs by the continuous partitioning of solute components between the moving organic solvent and the stationary bound water."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Differential extraction is a separation method that utilizes a separating funnel to extract an organic solute from an aqueous solution into an organic solvent. The method is based on:",
+          "image": "",
+          "options": [
+            "The differential solubility of the compound in two immiscible liquid solvents according to Nernst's distribution law",
+            "The difference in boiling points of the two liquids",
+            "The difference in molecular weights of the liquids",
+            "Adsorption of the solute on the glass surface"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Differential extraction** is used to isolate an organic substance present in an aqueous solution by shaking it with an immiscible organic solvent (such as ether, benzene, or chloroform) in a separating funnel.\n2. The organic substance must be significantly **more soluble in the organic solvent than in water**.\n3. The solute distributes itself between the two immiscible liquid layers according to the **Nernst distribution (partition) law**:\n   $$K_D = \\frac{C_{\\text{organic}}}{C_{\\text{aqueous}}}$$\n4. Repeating the extraction multiple times with smaller aliquots of solvent (multiple extractions) recovers more solute than a single extraction using the entire volume."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An organic compound containing nitrogen gives a positive Lassaigne's test. However, diazonium salts (like $\\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^-$) usually FAIL to give a positive Lassaigne's test because:",
+          "image": "",
+          "options": [
+            "Diazonium salts decompose rapidly upon gentle heating, losing nitrogen gas as $\\text{N}_2$ before fusion with molten sodium can occur",
+            "Diazonium salts do not contain carbon",
+            "Nitrogen in diazonium salts is in an inert oxidation state",
+            "Sodium dissolves diazonium salts without reacting"
+          ],
+          "correctOption": 0,
+          "solution": "1. Diazonium salts (e.g., benzenediazonium chloride, $\\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^-$) are thermally unstable and decompose readily even at moderate temperatures.\n2. When placed into a fusion tube and heated, the diazonium group cleaves rapidly, releasing nitrogen as gaseous $\\text{N}_2$:\n   $$\\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^- \\xrightarrow{\\Delta} \\text{C}_6\\text{H}_5\\text{Cl} + \\text{N}_2 \\uparrow$$\n3. The nitrogen escapes as $\\text{N}_2$ vapor before the sodium metal can melt and react with carbon to form $\\text{NaCN}$.\n4. Consequently, diazonium salts usually fail to produce a positive Lassaigne's test for nitrogen."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Fractional crystallisation is used to separate a mixture of two or more solid organic substances when they:",
+          "image": "",
+          "options": [
+            "Have different solubilities in the same solvent at different temperatures",
+            "Have identical solubilities in all solvents",
+            "Have boiling points differing by $20^\\circ\\text{C}$",
+            "Sublime at the same temperature"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Fractional crystallisation** is based on the **difference in solubilities** of two solid compounds in a common chosen solvent.\n2. When a hot saturated solution containing both substances is allowed to cool slowly, the less soluble component reaches its saturation limit first and crystallizes out of solution.\n3. The crystals of the less soluble substance are filtered off while the more soluble component remains dissolved in the mother liquor.\n4. Concentrating and cooling the mother liquor allows the second component to crystallize."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the detection of sulfur using the sodium nitroprusside test, what is the oxidation state of iron in the reactant sodium nitroprusside, $\\text{Na}_2[\\text{Fe}(\\text{CN})_5\\text{NO}]$?",
+          "image": "",
+          "options": [
+            "$+2$",
+            "$+3$",
+            "$0$",
+            "$+1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In sodium nitroprusside, $\\text{Na}_2[\\text{Fe}(\\text{CN})_5\\text{NO}]$, the nitric oxide ligand is coordinated as a neutral nitrosyl group (or nitrosonium $\\text{NO}^+$ with $\\text{Fe}^{2+}$).\n2. According to standard NCERT / NEET conventions, $\\text{NO}$ is coordinated as $\\text{NO}^+$ (nitrosonium ion):\n   $$2(+1) + x + 5(-1) + 1(+1) = 0 \\implies x + 3 - 5 = 0 \\implies x = +2$$\n3. The central iron atom is in the **$+2$ oxidation state** (low-spin diamagnetic $d^6$, with an empty $t_{2g}$ subshell ready to receive $\\text{S}^{2-}$).\n4. When sulfide reacts, the resulting purple complex $[\\text{Fe}(\\text{CN})_5\\text{NOS}]^{4-}$ also contains iron in the $+2$ oxidation state."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A student added $\\text{FeCl}_3$ to an acidified sodium extract and observed a blood-red color instead of Prussian blue. If the student now adds EXCESS sodium metal during a re-fusion of the same organic compound, what will happen in the subsequent test?",
+          "image": "",
+          "options": [
+            "Prussian blue precipitate will form because excess sodium destroys $\\text{NaSCN}$ into $\\text{NaCN}$ and $\\text{Na}_2\\text{S}$",
+            "A blood-red color will still form with greater intensity",
+            "No reaction will occur",
+            "Metallic iron will precipitate"
+          ],
+          "correctOption": 0,
+          "solution": "1. When both $\\text{N}$ and $\\text{S}$ are present, limited sodium yields $\\text{NaSCN}$, giving a blood-red complex $[\\text{Fe}(\\text{SCN})]^{2+}$ and preventing the formation of free $\\text{CN}^-$ ions needed for Prussian blue.\n2. If **excess sodium metal** is used during the fusion:\n   $$\\text{NaSCN} + 2\\text{Na} \\xrightarrow{\\Delta} \\text{NaCN} + \\text{Na}_2\\text{S}$$\n3. The excess sodium decomposes the thiocyanate ion into separate **sodium cyanide ($\\text{NaCN}$)** and **sodium sulfide ($\\text{Na}_2\\text{S}$)**.\n4. Free $\\text{CN}^-$ is now available to react with iron salts to produce the classic **Prussian blue precipitate, $\\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_3$**."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements regarding the selection of a solvent for recrystallisation of a solid organic compound is INCORRECT?",
+          "image": "",
+          "options": [
+            "The compound should be equally soluble in the solvent at both room temperature and its boiling point",
+            "The compound should dissolve sparingly at room temperature, but dissolve completely at the solvent's boiling point",
+            "The solvent should not react chemically with the compound to be purified",
+            "Impurities should either be insoluble in the solvent or remain soluble even upon cooling"
+          ],
+          "correctOption": 0,
+          "solution": "Criteria for an ideal recrystallisation solvent:\n1. The compound should have **low solubility at room temperature (or ice temperature)**, but **high solubility at the boiling point of the solvent**, so that maximum crystallization occurs on cooling.\n2. If a compound is equally soluble in the solvent at both room temperature and boiling temperature (Statement A), cooling the hot solution will yield no crystals, making purification impossible.\n3. The solvent must be chemically inert toward the solute.\n4. Impurities should either not dissolve at all (removed by hot filtration) or remain dissolved in the cold mother liquor.\nTherefore, Statement A is an incorrect criterion."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An organic compound contains carbon, hydrogen, and sulfur. When heated with dry $\\text{CuO}$ in a combustion tube, sulfur is oxidized to:",
+          "image": "",
+          "options": [
+            "Sulfur dioxide ($\\text{SO}_2$)",
+            "Sulfur trioxide ($\\text{SO}_3$)",
+            "Sulfuric acid ($\\text{H}_2\\text{SO}_4$)",
+            "Copper sulfide ($\\text{CuS}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. During the quantitative/qualitative combustion with black copper(II) oxide ($\\text{CuO}$), carbon is oxidized to $\\text{CO}_2$ and hydrogen is oxidized to $\\text{H}_2\\text{O}$.\n2. Organically bound sulfur is oxidized by $\\text{CuO}$ to **sulfur dioxide ($\\text{SO}_2$) gas**:\n   $$\\text{S} + 2\\text{CuO} \\xrightarrow{\\Delta} \\text{SO}_2 \\uparrow + 2\\text{Cu}$$\n3. (To prevent $\\text{SO}_2$ from interfering with $\\text{CO}_2$ absorption in quantitative analysis, a lead chromate ($\\text{PbCrO}_4$) roll is inserted to trap $\\text{SO}_2$ as solid $\\text{PbSO}_4$)."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Why is freshly prepared $\\text{FeSO}_4$ used in Lassaigne's test for nitrogen?",
+          "image": "",
+          "options": [
+            "Old solutions of $\\text{FeSO}_4$ get oxidized by atmospheric oxygen to basic ferric sulfate ($\\text{Fe}^{3+}$), which impairs the test",
+            "Old $\\text{FeSO}_4$ decomposes into toxic $\\text{SO}_2$ gas",
+            "$\\text{FeSO}_4$ crystals lose water of crystallization and become insoluble",
+            "Fresh $\\text{FeSO}_4$ acts as a catalyst"
+          ],
+          "correctOption": 0,
+          "solution": "1. On prolonged exposure to atmospheric oxygen, aqueous $\\text{FeSO}_4$ undergoes spontaneous oxidation to yellow-brown basic iron(III) sulfate:\n   $$4\\text{FeSO}_4 + 2\\text{H}_2\\text{O} + \\text{O}_2 \\rightarrow 4\\text{Fe(OH)SO}_4$$\n2. If an aged, oxidized solution is used, the excess $\\text{Fe}^{3+}$ reacts with alkali to precipitate thick, brown $\\text{Fe(OH)}_3$, which masks the blue coloration.\n3. A **freshly prepared $\\text{FeSO}_4$ solution** ensures that adequate unoxidized $\\text{Fe}^{2+}$ is available to form hexacyanidoferrate(II) ($[\\text{Fe}(\\text{CN})_6]^{4-}$)."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A mixture of benzene (boiling point $80^\\circ\\text{C}$) and toluene (boiling point $110^\\circ\\text{C}$) can be separated by:",
+          "image": "",
+          "options": [
+            "Fractional distillation",
+            "Simple distillation",
+            "Steam distillation",
+            "Sublimation"
+          ],
+          "correctOption": 0,
+          "solution": "1. Boiling point of benzene $= 80^\\circ\\text{C}$.\n2. Boiling point of toluene $= 110^\\circ\\text{C}$.\n3. The difference between their boiling points is $110 - 80 = 30^\\circ\\text{C}$ (close to the $25-30^\\circ\\text{C}$ threshold), and both form an ideal homogeneous solution.\n4. Simple distillation results in incomplete separation because benzene vapors carry significant toluene vapor.\n5. Using a **fractionating column (fractional distillation)** provides repeated theoretical condensation-evaporation plates, achieving complete separation into pure benzene and pure toluene."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In an organic laboratory, a mixture of two dyes was separated using column chromatography. The dye that eluted out FIRST from the bottom of the column is the one that has:",
+          "image": "",
+          "options": [
+            "The weakest adsorption affinity for the stationary adsorbent",
+            "The strongest adsorption affinity for the stationary adsorbent",
+            "The highest boiling point",
+            "Zero solubility in the mobile phase"
+          ],
+          "correctOption": 0,
+          "solution": "1. In column adsorption chromatography, components migrate down the column at rates inversely proportional to their adsorption affinity for the stationary phase.\n2. A component that is **weakly adsorbed** interacts weakly with the stationary adsorbent and spends more time dissolved in the descending mobile liquid phase.\n3. Consequently, the **weakly adsorbed component travels fastest down the column and elutes first**.\n4. The strongly adsorbed component is held near the top and elutes last."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An organic compound containing nitrogen and sulfur was fused with sodium. Which of the following ions will NOT be present in the sodium fusion extract?",
+          "image": "",
+          "options": [
+            "$\\text{NO}_3^-$",
+            "$\\text{CN}^-$",
+            "$\\text{S}^{2-}$",
+            "$\\text{SCN}^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Sodium fusion is a highly reductive thermal process.\n2. Nitrogen and sulfur are reduced to simple binary anions or pseudohalide ions:\n   - Cyanide: $\\text{CN}^-$\n   - Sulfide: $\\text{S}^{2-}$\n   - Thiocyanate: $\\text{SCN}^-$\n3. **Nitrate ions ($\\text{NO}_3^-$)** are oxidized oxyanions (nitrogen in $+5$ state) and **cannot exist in the presence of molten, strongly reducing sodium metal** at red heat."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In steam distillation of an aniline-water mixture, the ratio of mass of aniline ($m_1$) to mass of water ($m_2$) in the distillate is governed by which formula? ($P_1, P_2$ are partial vapor pressures and $M_1, M_2$ are molar masses)",
+          "image": "",
+          "options": [
+            "$\\frac{m_1}{m_2} = \\frac{P_1 M_1}{P_2 M_2}$",
+            "$\\frac{m_1}{m_2} = \\frac{P_1 M_2}{P_2 M_1}$",
+            "$\\frac{m_1}{m_2} = \\frac{P_2 M_1}{P_1 M_2}$",
+            "$\\frac{m_1}{m_2} = \\frac{P_1}{P_2}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. According to Dalton's law of partial pressures for an ideal gas mixture in vapor phase:\n   $$\\frac{n_1}{n_2} = \\frac{P_1}{P_2}$$\n2. Since moles $n = \\frac{\\text{mass }(m)}{\\text{molar mass }(M)}$:\n   $$\\frac{m_1 / M_1}{m_2 / M_2} = \\frac{P_1}{P_2}$$\n3. Rearranging for the mass ratio in the collected distillate:\n   $$\\frac{m_1}{m_2} = \\frac{P_1 M_1}{P_2 M_2}$$\n4. Because organic compounds typically have much larger molar masses ($M_1$) than water ($M_2 = 18\\text{ g/mol}$), a substantial mass of the organic component distills over even if its vapor pressure $P_1$ is relatively modest."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A white crystalline organic substance was heated in an ignition tube with metallic sodium. The extract was treated with $\\text{FeSO}_4$, heated, cooled, and acidified with $\\text{HCl}$, but NO blue or green color developed. Then, a few drops of $\\text{AgNO}_3$ were added directly to the extract, yielding a white precipitate. The student concluded that chlorine was present. Why was this conclusion INVALID?",
+          "image": "",
+          "options": [
+            "Acidification with $\\text{HCl}$ introduced external chloride ions, which precipitated as $\\text{AgCl}$ regardless of whether the organic compound contained chlorine",
+            "Silver nitrate does not react with chloride ions in acid medium",
+            "Lassaigne's test cannot detect chlorine",
+            "Prussian blue always forms if halogens are present"
+          ],
+          "correctOption": 0,
+          "solution": "1. The student acidified the test solution with **hydrochloric acid ($\\text{HCl}$)**.\n2. Hydrochloric acid introduces high concentrations of chloride ions ($\\text{Cl}^-$) from the laboratory reagent.\n3. Adding $\\text{AgNO}_3$ precipitates white silver chloride from the added $\\text{HCl}$:\n   $$\\text{Ag}^+ + \\text{Cl}^-(\\text{from reagent HCl}) \\rightarrow \\text{AgCl} \\downarrow\\text{ (white)}$$\n4. To test for halogens, the extract must always be acidified with **dilute nitric acid ($\\text{HNO}_3$)**, never $\\text{HCl}$, so that foreign halide ions are not introduced."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] What is the color of the precipitate formed when sodium fusion extract containing sodium chloride is treated with $\\text{AgNO}_3$, and what is its behavior upon adding excess aqueous ammonia?",
+          "image": "",
+          "options": [
+            "White precipitate, completely soluble in aqueous ammonia",
+            "Pale yellow precipitate, sparingly soluble in aqueous ammonia",
+            "Yellow precipitate, completely insoluble in aqueous ammonia",
+            "Black precipitate, insoluble in aqueous ammonia"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the test for chlorine:\n   $$\\text{NaCl} + \\text{AgNO}_3 \\xrightarrow{\\text{dil. } \\text{HNO}_3} \\text{AgCl} \\downarrow\\text{ (curdy white)} + \\text{NaNO}_3$$\n2. The curdy white precipitate of silver chloride dissolves readily and completely upon adding aqueous ammonia ($\\text{NH}_4\\text{OH}$) due to the formation of the soluble diamminesilver(I) complex:\n   $$\\text{AgCl} + 2\\text{NH}_4\\text{OH} \\rightarrow [\\text{Ag}(\\text{NH}_3)_2]\\text{Cl} + 2\\text{H}_2\\text{O}$$\n3. Upon re-acidification with dilute $\\text{HNO}_3$, the complex decomposes and white $\\text{AgCl}$ precipitates again."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An organic compound $X$ on heating with soda lime evolves ammonia, but fails to give a positive Prussian blue test in Lassaigne's analysis. Compound $X$ could be:",
+          "image": "",
+          "options": [
+            "Ammonium sulfate",
+            "Acetamide",
+            "Urea",
+            "Benzamide"
+          ],
+          "correctOption": 0,
+          "solution": "1. Heating ammonium salts like **ammonium sulfate, $(\\text{NH}_4)_2\\text{SO}_4$**, with soda lime ($\\text{NaOH} + \\text{CaO}$) releases ammonia gas:\n   $$(\\text{NH}_4)_2\\text{SO}_4 + 2\\text{NaOH} \\xrightarrow{\\Delta} \\text{Na}_2\\text{SO}_4 + 2\\text{NH}_3 \\uparrow + 2\\text{H}_2\\text{O}$$\n2. Because ammonium sulfate contains **no carbon**, fusion with sodium cannot produce sodium cyanide ($\\text{NaCN}$).\n3. Hence, it fails to give Prussian blue in Lassaigne's test.\n4. (Acetamide, urea, and benzamide all contain both carbon and nitrogen, yielding positive Lassaigne's tests)."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In thin layer chromatography, visualising reagents are used to detect colorless spots on the developed plate. Which of the following reagents is commonly used for amino acids to produce purple-colored spots?",
+          "image": "",
+          "options": [
+            "Ninhydrin reagent",
+            "Iodine crystals",
+            "2,4-Dinitrophenylhydrazine",
+            "Fehling's solution"
+          ],
+          "correctOption": 0,
+          "solution": "1. Most amino acids are colorless and cannot be seen directly on TLC plates or paper chromatograms under visible light.\n2. Spraying the dried plate with **ninhydrin solution** followed by gentle heating reacts with the free $\\alpha$-amino groups of amino acids.\n3. The reaction produces a complex conjugated chromophore known as **Ruhemann's purple**, revealing the positions of amino acids as distinct **purple/violet spots** (proline gives a yellow spot)."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A student observed that while performing Lassaigne's test for nitrogen, the addition of $\\text{FeSO}_4$ and $\\text{H}_2\\text{SO}_4$ resulted in a DIRTY GREEN precipitate instead of Prussian blue. What should the student do to complete the test?",
+          "image": "",
+          "options": [
+            "Add a few drops of $\\text{FeCl}_3$ solution and warm gently to ensure sufficient $\\text{Fe}^{3+}$ is present to precipitate Prussian blue",
+            "Add excess sodium hydroxide",
+            "Discard the test because nitrogen is absent",
+            "Filter the solution immediately"
+          ],
+          "correctOption": 0,
+          "solution": "1. The dirty green precipitate is $\\text{Fe(OH)}_2$ produced by $\\text{FeSO}_4$ in the alkaline extract.\n2. Formation of Prussian blue requires iron(III) ions ($\\text{Fe}^{3+}$):\n   $$4\\text{Fe}^{3+} + 3[\\text{Fe}(\\text{CN})_6]^{4-} \\rightarrow \\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_3 \\downarrow$$\n3. If acidification with $\\text{H}_2\\text{SO}_4$ fails to oxidize enough $\\text{Fe}^{2+}$ to $\\text{Fe}^{3+}$, the blue precipitate does not form immediately.\n4. Adding a **few drops of $\\text{FeCl}_3$ solution** provides $\\text{Fe}^{3+}$ ions directly, causing Prussian blue to precipitate."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An organic mixture contains $20\\%$ benzoic acid and $80\\%$ naphthalene. The most convenient chemical method to separate pure benzoic acid from naphthalene is:",
+          "image": "",
+          "options": [
+            "Dissolving in ether, extracting with aqueous $\\text{NaHCO}_3$ solution, and acidifying the separated aqueous layer with $\\text{HCl}$",
+            "Steam distillation",
+            "Heating to $400^\\circ\\text{C}$",
+            "Crystallisation from concentrated sulfuric acid"
+          ],
+          "correctOption": 0,
+          "solution": "1. Benzoic acid contains a carboxylic acid group ($-\\text{COOH}$) and reacts with aqueous sodium bicarbonate:\n   $$\\text{C}_6\\text{H}_5\\text{COOH} + \\text{NaHCO}_3 \\rightarrow \\text{C}_6\\text{H}_5\\text{COONa}\\text{ (water-soluble)} + \\text{CO}_2 \\uparrow + \\text{H}_2\\text{O}$$\n2. Naphthalene is a neutral hydrocarbon that does not react with $\\text{NaHCO}_3$ and remains in the upper organic (ether) layer.\n3. The lower aqueous layer containing sodium benzoate is separated in a separating funnel.\n4. Acidifying the clear aqueous layer with dilute $\\text{HCl}$ regenerates and precipitates pure, insoluble white crystalline **benzoic acid**:\n   $$\\text{C}_6\\text{H}_5\\text{COONa} + \\text{HCl} \\rightarrow \\text{C}_6\\text{H}_5\\text{COOH} \\downarrow + \\text{NaCl}$$"
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Why is distilled water used to extract the fused mass in Lassaigne's test instead of tap water?",
+          "image": "",
+          "options": [
+            "Tap water contains chloride, sulfate, and bicarbonate ions that would give false positive tests for halogens and sulfur",
+            "Tap water decomposes sodium cyanide",
+            "Tap water causes sodium to explode",
+            "Distilled water is more alkaline"
+          ],
+          "correctOption": 0,
+          "solution": "1. Tap water contains dissolved mineral salts, including chloride ($\\text{Cl}^-$) and sulfate ($\\text{SO}_4^{2-}$).\n2. If tap water were used to prepare the Lassaigne's extract, adding $\\text{AgNO}_3$ or $\\text{BaCl}_2$ would precipitate $\\text{AgCl}$ and $\\text{BaSO}_4$ from the tap water minerals.\n3. This would produce **false positive qualitative tests** for halogens and sulfur even when they are completely absent from the organic compound.\n4. Pure **distilled water** is free of interfering anions."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the detection of nitrogen, if the sodium extract is acidified with concentrated $\\text{HNO}_3$ instead of $\\text{H}_2\\text{SO}_4$ before adding $\\text{FeSO}_4$, what problem arises?",
+          "image": "",
+          "options": [
+            "Concentrated $\\text{HNO}_3$ oxidizes $\\text{CN}^-$ to volatile $\\text{HCN}$ or cyanate, preventing Prussian blue formation",
+            "$\\text{HNO}_3$ precipitates elemental carbon",
+            "$\\text{HNO}_3$ forms an explosive complex with iron",
+            "Nitric acid turns Prussian blue red"
+          ],
+          "correctOption": 0,
+          "solution": "1. Concentrated $\\text{HNO}_3$ is a strong oxidizing acid.\n2. If added to the sodium extract containing $\\text{NaCN}$, it oxidizes cyanide ions to cyanate or expels them as volatile $\\text{HCN}$ gas:\n   $$\\text{NaCN} + \\text{HNO}_3 \\rightarrow \\text{HCN} \\uparrow + \\text{NaNO}_3$$\n3. The loss of $\\text{CN}^-$ prevents the formation of the hexacyanidoferrate(II) complex ($[\\text{Fe}(\\text{CN})_6]^{4-}$), causing the **Prussian blue test to fail**.\n4. Therefore, dilute $\\text{H}_2\\text{SO}_4$ (or dilute $\\text{HCl}$) is the proper acid used for the nitrogen test."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A sample of impure camphor can be purified most conveniently by:",
+          "image": "",
+          "options": [
+            "Sublimation",
+            "Fractional distillation",
+            "Vacuum distillation",
+            "Steam distillation"
+          ],
+          "correctOption": 0,
+          "solution": "1. Camphor has a high vapor pressure below its melting point.\n2. On gentle heating at atmospheric pressure, solid camphor vaporizes directly without melting into a liquid, and its vapors condense on a cold surface to give pure crystalline camphor.\n3. Non-volatile impurities remain behind in the vessel.\n4. Therefore, **sublimation** is the standard, most convenient method for purifying camphor."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In thin layer chromatography, after developing the chromatogram with an organic solvent, the $R_f$ values of three amino acids $X, Y,$ and $Z$ were found to be $0.25, 0.50,$ and $0.75$ respectively. Which amino acid is MOST STRONGLY adsorbed onto the stationary silica gel phase?",
+          "image": "",
+          "options": [
+            "$X$",
+            "$Y$",
+            "$Z$",
+            "All three are equally adsorbed"
+          ],
+          "correctOption": 0,
+          "solution": "1. The retardation factor is given by:\n   $$R_f = \\frac{\\text{Distance travelled by substance}}{\\text{Distance travelled by solvent}}$$\n2. A smaller $R_f$ value means the substance migrated a shorter distance from the baseline.\n3. The substance that is **most strongly adsorbed** onto the stationary silica gel is held tightly and moves the slowest, yielding the **smallest $R_f$ value**.\n4. Because amino acid $X$ has the lowest $R_f$ value ($0.25$), it is the **most strongly adsorbed** component on the stationary phase.\n5. (Amino acid $Z$, with $R_f = 0.75$, is the least strongly adsorbed)."
+        }
+      ]
+    }
+  ]
+}

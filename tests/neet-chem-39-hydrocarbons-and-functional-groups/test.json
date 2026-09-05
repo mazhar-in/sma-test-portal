@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-39-hydrocarbons-and-functional-groups",
+  "title": "Hydrocarbons & Organic Functional Groups Comprehensive Test",
+  "syllabus": "Alkanes (Wurtz reaction, Corey-House, Kolbe's electrolytic method, free radical halogenation, conformations of ethane); Alkenes & Alkynes (Markovnikov & anti-Markovnikov additions, ozonolysis, hydroboration-oxidation, oxymercuration-demercuration, Birch reduction, acidity of terminal alkynes, hydration with Hg2+/H2SO4); Haloalkanes & Haloarenes (SN1 vs SN2 kinetics and stereochemistry, E1/E2 elimination, Saytzeff vs Hofmann, Dow's process, Fittig and Wurtz-Fittig reactions); Alcohols, Phenols & Ethers (Lucas test, Victor Meyer, dehydration, Kolbe's reaction, Reimer-Tiemann, cumene process, acidity of phenols, Williamson ether synthesis, cleavage of ethers with HI); Aldehydes & Ketones (Nucleophilic addition, cyanohydrins, hemiacetals, Clemmensen & Wolff-Kishner reductions, Aldol condensation, Cannizzaro reaction, Haloform/Iodoform test, Tollens' & Fehling's tests); Carboxylic Acids (Hell-Volhard-Zelinsky reaction, decarboxylation, esterification, relative acidic strengths); Amines & Diazonium Salts (Hofmann bromamide degradation, Gabriel phthalimide synthesis, carbylamine test, Hinsberg's reagent, azo dye coupling reactions).",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An organic compound $A$ (molecular formula $\\text{C}_8\\text{H}_{16}$) on reductive ozonolysis with $\\text{O}_3/\\text{Zn}-\\text{H}_2\\text{O}$ yields a single product $B$ (molecular formula $\\text{C}_4\\text{H}_8\\text{O}$). Compound $B$ gives a positive 2,4-DNP test and a positive iodoform test, but does NOT reduce Tollens' reagent. The structure of compound $A$ is:",
+          "image": "",
+          "options": [
+            "3,4-Dimethylhex-3-ene",
+            "2,5-Dimethylhex-3-ene",
+            "Oct-4-ene",
+            "2,3,4-Trimethylpent-2-ene"
+          ],
+          "correctOption": 0,
+          "solution": "1. Reductive ozonolysis of alkene $A$ gives a single product $B$ ($\\text{C}_4\\text{H}_8\\text{O}$), meaning $A$ must be a symmetrical alkene containing 8 carbons.\n2. Compound $B$ gives a positive 2,4-DNP test, indicating it is a carbonyl compound (aldehyde or ketone).\n3. Compound $B$ fails Tollens' test, which means it is a ketone (not an aldehyde).\n4. Compound $B$ gives a positive iodoform test, meaning it contains a methyl ketone group ($-\\text{COCH}_3$).\n5. The only 4-carbon ketone is butan-2-one ($\\text{CH}_3\\text{COCH}_2\\text{CH}_3$).\n6. Joining two molecules of butan-2-one at the carbonyl carbons by removing oxygen gives the alkene:\n   $$\\text{CH}_3\\text{CH}_2\\text{C}(\\text{CH}_3)=\\text{C}(\\text{CH}_3)\\text{CH}_2\\text{CH}_3$$\n   This is **3,4-dimethylhex-3-ene**."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] When prop-1-yne is treated with dilute $\\text{H}_2\\text{SO}_4$ in the presence of $\\text{HgSO}_4$ at $333\\text{ K}$, the major organic product formed is:",
+          "image": "",
+          "options": [
+            "Propan-2-one (Acetone)",
+            "Propanal",
+            "Propanoic acid",
+            "Propan-1-ol"
+          ],
+          "correctOption": 0,
+          "solution": "1. Hydration of an alkyne with dil. $\\text{H}_2\\text{SO}_4$ and $\\text{HgSO}_4$ (Kucherov's reaction) follows Markovnikov's rule.\n2. Water adds across the triple bond of prop-1-yne ($\\text{CH}_3-\\text{C}\\equiv\\text{CH}$):\n   $$\\text{CH}_3-\\text{C}\\equiv\\text{CH} + \\text{H}_2\\text{O} \\xrightarrow{\\text{Hg}^{2+}/\\text{H}^+} [\\text{CH}_3-\\text{C}(\\text{OH})=\\text{CH}_2]$$\n3. The resulting enol, prop-1-en-2-ol, is unstable and undergoes rapid tautomerization into the more stable keto form:\n   $$[\\text{CH}_3-\\text{C}(\\text{OH})=\\text{CH}_2] \\rightleftharpoons \\text{CH}_3-\\text{CO}-\\text{CH}_3 \\quad (\\text{Propan-2-one})$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In the preparation of ethers by Williamson synthesis, which set of reactants will give tert-butyl methyl ether ($(\\text{CH}_3)_3\\text{C}-\\text{O}-\\text{CH}_3$) as the major product?",
+          "image": "",
+          "options": [
+            "$(\\text{CH}_3)_3\\text{C}-\\text{O}^-\\text{Na}^+ + \\text{CH}_3\\text{Br}$",
+            "$(\\text{CH}_3)_3\\text{C}-\\text{Br} + \\text{CH}_3\\text{O}^-\\text{Na}^+$",
+            "$(\\text{CH}_3)_3\\text{C}-\\text{OH} + \\text{CH}_3\\text{OH}$ with conc. $\\text{H}_2\\text{SO}_4$ at $140^\\circ\\text{C}$",
+            "$(\\text{CH}_3)_3\\text{C}-\\text{Br} + \\text{CH}_3\\text{OH}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Williamson ether synthesis involves an $\\text{S}_\\text{N}2$ attack of an alkoxide ion on an alkyl halide:\n   $$\\text{R}-\\text{O}^- + \\text{R}'-\\text{X} \\rightarrow \\text{R}-\\text{O}-\\text{R}' + \\text{X}^-$$\n2. Because $\\text{S}_\\text{N}2$ is sensitive to steric hindrance, the alkyl halide must be unhindered (primary or methyl).\n3. If a tertiary halide like $(\\text{CH}_3)_3\\text{C}-\\text{Br}$ is used with methoxide (Option B), the strongly basic methoxide causes E2 elimination instead of substitution, yielding 2-methylpropene as the major product.\n4. Therefore, sodium tert-butoxide must be reacted with methyl bromide:\n   $$(\\text{CH}_3)_3\\text{C}-\\text{O}^-\\text{Na}^+ + \\text{CH}_3\\text{Br} \\rightarrow (\\text{CH}_3)_3\\text{C}-\\text{O}-\\text{CH}_3 + \\text{NaBr}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following compounds will undergo CANNIZZARO REACTION when treated with $50\\%$ aqueous $\\text{KOH}$?",
+          "image": "",
+          "options": [
+            "2,2-Dimethylpropanal (Trimethylacetaldehyde)",
+            "Acetaldehyde",
+            "Propanal",
+            "2-Methylpropanal"
+          ],
+          "correctOption": 0,
+          "solution": "1. The Cannizzaro reaction is a disproportionation (redox) reaction undergone exclusively by aldehydes that **lack $\\alpha$-hydrogen atoms** when heated with concentrated alkali.\n2. Examine the $\\alpha$-hydrogens in the options:\n   - **2,2-Dimethylpropanal ($(\\text{CH}_3)_3\\text{C}-\\text{CHO}$):** The $\\alpha$-carbon is quaternary and has **zero $\\alpha$-hydrogens**, so it undergoes the Cannizzaro reaction to yield neopentyl alcohol and sodium neopentanoate.\n   - Acetaldehyde ($\\text{CH}_3\\text{CHO}$): $3\\ \\alpha$-hydrogens $\\implies$ undergoes aldol condensation.\n   - Propanal ($\\text{CH}_3\\text{CH}_2\\text{CHO}$): $2\\ \\alpha$-hydrogens $\\implies$ aldol condensation.\n   - 2-Methylpropanal ($(\\text{CH}_3)_2\\text{CHCHO}$): $1\\ \\alpha$-hydrogen $\\implies$ aldol condensation."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An organic compound $X$ reacts with benzene sulfonyl chloride (Hinsberg's reagent) to give a clear solution which, upon acidification with dilute $\\text{HCl}$, yields an insoluble solid precipitate. Compound $X$ is a:",
+          "image": "",
+          "options": [
+            "Primary aliphatic amine ($1^\\circ$ amine)",
+            "Secondary aliphatic amine ($2^\\circ$ amine)",
+            "Tertiary aliphatic amine ($3^\\circ$ amine)",
+            "Quaternary ammonium salt"
+          ],
+          "correctOption": 0,
+          "solution": "1. Reaction with Hinsberg's reagent ($\\text{C}_6\\text{H}_5\\text{SO}_2\\text{Cl}$):\n   - A **primary amine ($\\text{R}-\\text{NH}_2$)** reacts to form an N-alkylbenzenesulfonamide ($\\text{C}_6\\text{H}_5\\text{SO}_2\\text{NHR}$).\n   - This product retains an acidic hydrogen attached to nitrogen directly adjacent to the strongly electron-withdrawing sulfonyl group.\n   - Hence, it dissolves completely in aqueous alkali ($\\text{KOH}$) to form a water-soluble potassium salt (clear solution).\n   - Upon re-acidification with dilute $\\text{HCl}$, the sulfonamide is regenerated and precipitates out as an insoluble solid.\n2. A secondary amine forms an N,N-dialkylbenzenesulfonamide that lacks an acidic hydrogen, so it is insoluble in alkali from the start.\n3. A tertiary amine does not react with Hinsberg's reagent."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the reaction of cumene with atmospheric oxygen followed by treatment with dilute $\\text{H}_2\\text{SO}_4$, the products formed are:",
+          "image": "",
+          "options": [
+            "Phenol and Acetone",
+            "Benzene and Isopropanol",
+            "Benzoic acid and Ethanol",
+            "Toluene and Acetaldehyde"
+          ],
+          "correctOption": 0,
+          "solution": "1. The cumene process is the predominant industrial route for the manufacture of phenol:\n   - **Step 1:** Oxidation of isopropylbenzene (cumene) by bubbling air/$\\text{O}_2$ produces cumene hydroperoxide via a free radical mechanism:\n     $$\\text{C}_6\\text{H}_5\\text{CH}(\\text{CH}_3)_2 + \\text{O}_2 \\rightarrow \\text{C}_6\\text{H}_5\\text{C}(\\text{CH}_3)_2\\text{OOH}$$\n   - **Step 2:** Acid-catalyzed cleavage with dilute $\\text{H}_2\\text{SO}_4$ triggers phenyl group migration from carbon to oxygen, yielding **phenol ($\\text{C}_6\\text{H}_5\\text{OH}$)** and **acetone ($\\text{CH}_3\\text{COCH}_3$)** as a valuable co-product."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following compounds gives a positive CARBYLAMINE TEST (produces an extremely foul-smelling isocyanide)?",
+          "image": "",
+          "options": [
+            "Aniline ($\\text{C}_6\\text{H}_5\\text{NH}_2$)",
+            "N-Methylaniline ($\\text{C}_6\\text{H}_5\\text{NHCH}_3$)",
+            "N,N-Dimethylaniline ($\\text{C}_6\\text{H}_5\\text{N}(\\text{CH}_3)_2$)",
+            "Acetamide ($\\text{CH}_3\\text{CONH}_2$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. The **carbylamine test (isocyanide test)** is an exclusive test for **primary ($1^\\circ$) aliphatic and aromatic amines**.\n2. When heated with chloroform ($\\text{CHCl}_3$) and alcoholic $\\text{KOH}$, primary amines undergo electrophilic attack by dichlorocarbene ($:\\text{CCl}_2$) to yield offensive-smelling carbylamines (isocyanides):\n   $$\\text{R}-\\text{NH}_2 + \\text{CHCl}_3 + 3\\text{KOH} \\xrightarrow{\\Delta} \\text{R}-\\text{NC} + 3\\text{KCl} + 3\\text{H}_2\\text{O}$$\n3. **Aniline ($\\text{C}_6\\text{H}_5\\text{NH}_2$)** is a primary aromatic amine and gives phenyl isocyanide ($\\text{C}_6\\text{H}_5\\text{NC}$).\n4. Secondary and tertiary amines, as well as amides, do not give this reaction."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An organic halide $X$ on heating with sodium metal in dry ether gives 2,3-dimethylbutane. Compound $X$ is:",
+          "image": "",
+          "options": [
+            "2-Chloropropane (Isopropyl chloride)",
+            "1-Chlorobutane",
+            "2-Chlorobutane",
+            "1-Chloropropane"
+          ],
+          "correctOption": 0,
+          "solution": "1. This reaction is the **Wurtz reaction**, which joins two alkyl radicals derived from alkyl halides:\n   $$2\\text{R}-\\text{X} + 2\\text{Na} \\xrightarrow{\\text{dry ether}} \\text{R}-\\text{R} + 2\\text{NaX}$$\n2. The product is 2,3-dimethylbutane: $(\\text{CH}_3)_2\\text{CH}-\\text{CH}(\\text{CH}_3)_2$.\n3. Symmetrically cleaving the central $\\text{C}-\\text{C}$ bond shows that the reacting alkyl group $\\text{R}$ is the isopropyl group, $(\\text{CH}_3)_2\\text{CH}-$.\n4. Therefore, the starting alkyl halide is **2-chloropropane (isopropyl chloride)**."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The correct order of reactivity towards nucleophilic addition reaction for the carbonyl compounds $\\text{HCHO}, \\text{CH}_3\\text{CHO}, \\text{CH}_3\\text{COCH}_3,$ and $\\text{C}_6\\text{H}_5\\text{COCH}_3$ is:",
+          "image": "",
+          "options": [
+            "$\\text{HCHO} > \\text{CH}_3\\text{CHO} > \\text{CH}_3\\text{COCH}_3 > \\text{C}_6\\text{H}_5\\text{COCH}_3$",
+            "$\\text{CH}_3\\text{COCH}_3 > \\text{CH}_3\\text{CHO} > \\text{HCHO} > \\text{C}_6\\text{H}_5\\text{COCH}_3$",
+            "$\\text{C}_6\\text{H}_5\\text{COCH}_3 > \\text{CH}_3\\text{COCH}_3 > \\text{CH}_3\\text{CHO} > \\text{HCHO}$",
+            "$\\text{HCHO} > \\text{C}_6\\text{H}_5\\text{COCH}_3 > \\text{CH}_3\\text{CHO} > \\text{CH}_3\\text{COCH}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Nucleophilic addition to a carbonyl group depends on:\n   - **Electronic factors:** Electron-donating alkyl groups (+I effect) disperse positive charge on the carbonyl carbon ($\\delta+$), reducing electrophilicity. Resonance (+M) from aromatic rings also decreases carbonyl electrophilicity.\n   - **Steric factors:** Bulkier groups crowd the carbonyl carbon, hindering nucleophilic attack.\n2. Formaldehyde ($\\text{HCHO}$) has no alkyl groups $\\implies$ most reactive.\n3. Acetaldehyde ($\\text{CH}_3\\text{CHO}$) has one +I methyl group $\\implies$ less reactive than $\\text{HCHO}$.\n4. Acetone ($\\text{CH}_3\\text{COCH}_3$) has two methyl groups causing +I and steric hindrance $\\implies$ less reactive than aldehydes.\n5. Acetophenone ($\\text{C}_6\\text{H}_5\\text{COCH}_3$) has a bulky phenyl group whose $\\pi$-electrons delocalize into the carbonyl group via resonance, making it the least reactive."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] When phenol is treated with chloroform ($\\text{CHCl}_3$) in the presence of aqueous $\\text{NaOH}$ followed by acid hydrolysis, salicylaldehyde is obtained. The reactive intermediate involved in this Reimer-Tiemann reaction is:",
+          "image": "",
+          "options": [
+            "Dichlorocarbene ($\\mathbf{:\\!\\text{CCl}_2}$)",
+            "Trichloromethyl carbanion ($\\text{CCl}_3^-$)",
+            "Formyl cation ($\\text{HCO}^+$)",
+            "Dichloromethyl radical ($\\dot{\\text{C}}\\text{HCl}_2$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the **Reimer-Tiemann reaction**, base-induced $\\alpha$-elimination of $\\text{HCl}$ from chloroform generates a neutral, electron-deficient singlet carbene:\n   $$\\text{CHCl}_3 + \\text{OH}^- \\rightleftharpoons :\\!\\text{CCl}_3^- + \\text{H}_2\\text{O} \\rightarrow \\mathbf{:\\!\\text{CCl}_2} + \\text{Cl}^-$$\n2. The electrophilic **dichlorocarbene ($\\mathbf{:\\!\\text{CCl}_2}$)** attacks the electron-rich phenoxide ring predominantly at the ortho position.\n3. Subsequent hydrolysis of the intermediate dichloromethyl group yields salicylaldehyde (2-hydroxybenzaldehyde)."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The Hell-Volhard-Zelinsky (HVZ) reaction involves the treatment of a carboxylic acid with $\\text{Cl}_2$ or $\\text{Br}_2$ in the presence of red phosphorus. The essential structural feature required in the carboxylic acid is:",
+          "image": "",
+          "options": [
+            "Presence of at least one $\\alpha$-hydrogen atom",
+            "Absence of $\\alpha$-hydrogen atoms",
+            "Presence of a $\\beta$-hydroxy group",
+            "Aromatic ring directly bonded to the carboxyl carbon"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the **HVZ reaction**, red phosphorus reacts with halogen to generate $\\text{PX}_3$ in situ, which converts the carboxylic acid into an acyl halide.\n2. The acyl halide enolizes into an enol form that attacks molecular halogen at the $\\alpha$-position, introducing halogen selectively onto the $\\alpha$-carbon:\n   $$\\text{R}-\\text{CH}_2\\text{COOH} \\xrightarrow{\\text{X}_2/\\text{Red P}} \\text{R}-\\text{CH(X)}-\\text{COOH}$$\n3. Because enolization occurs across the $\\alpha-\\text{C}$ and carbonyl carbon, the carboxylic acid **must have at least one $\\alpha$-hydrogen atom**.\n4. Acids without $\\alpha$-hydrogens (such as trimethylacetic acid or benzoic acid) fail to undergo the HVZ reaction."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Cleavage of anisole (methoxybenzene, $\\text{C}_6\\text{H}_5-\\text{O}-\\text{CH}_3$) with concentrated hydroiodic acid ($\\text{HI}$) at $373\\text{ K}$ yields:",
+          "image": "",
+          "options": [
+            "Phenol and Methyl iodide",
+            "Iodobenzene and Methanol",
+            "Phenol and Methanol",
+            "Iodobenzene and Methyl iodide"
+          ],
+          "correctOption": 0,
+          "solution": "1. Protonation of anisole gives an oxonium ion: $\\text{C}_6\\text{H}_5-\\overset{+}{\\text{O}}(\\text{H})-\\text{CH}_3$.\n2. The $\\text{C}_6\\text{H}_5-\\text{O}$ bond has partial double-bond character due to resonance with the benzene ring and is exceptionally strong.\n3. In contrast, the $\\text{O}-\\text{CH}_3$ bond is a simple $sp^3$ single bond.\n4. The iodide ion ($\\text{I}^-$) acts as a nucleophile and attacks the less hindered methyl carbon via an $\\text{S}_\\text{N}2$ mechanism, displacing phenol as the leaving group:\n   $$\\text{C}_6\\text{H}_5-\\overset{+}{\\text{O}}(\\text{H})-\\text{CH}_3 + \\text{I}^- \\rightarrow \\text{C}_6\\text{H}_5\\text{OH} + \\text{CH}_3\\text{I}$$\n5. Hence, the products are **Phenol and Methyl iodide**."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following conformations of ethane has the MAXIMUM torsional strain and potential energy?",
+          "image": "",
+          "options": [
+            "Eclipsed conformation",
+            "Staggered conformation",
+            "Skew conformation",
+            "Gauche conformation"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the **eclipsed conformation** of ethane, the $\\text{C}-\\text{H}$ bonds on adjacent carbons align directly behind one another (dihedral angle $\\theta = 0^\\circ$).\n2. The electron clouds of the adjacent $\\text{C}-\\text{H}$ $\\sigma$-bonds experience maximum electrostatic repulsion, known as **torsional strain** (energy barrier $\\approx 12.5\\text{ kJ mol}^{-1}$).\n3. Consequently, the eclipsed conformation has the **highest potential energy and least stability**.\n4. In the staggered conformation (dihedral angle $\\theta = 60^\\circ$), the bonds are as far apart as possible, minimizing torsional strain and providing maximum stability."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the Gattermann-Koch reaction, benzene is converted to benzaldehyde by treating it with:",
+          "image": "",
+          "options": [
+            "$\\text{CO} + \\text{HCl}$ in the presence of anhydrous $\\text{AlCl}_3$ and $\\text{CuCl}$",
+            "$\\text{CO}_2 + \\text{HCl}$ in the presence of $\\text{AlCl}_3$",
+            "$\\text{HCHO} + \\text{HCl}$ in the presence of $\\text{ZnCl}_2$",
+            "$\\text{CH}_3\\text{COCl}$ in the presence of anhydrous $\\text{AlCl}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the **Gattermann-Koch reaction**, an electrophilic formylating agent is generated in situ by reacting carbon monoxide ($\\text{CO}$) with hydrogen chloride ($\\text{HCl}$) gas in the presence of anhydrous aluminium chloride ($\\text{AlCl}_3$) and copper(I) chloride ($\\text{CuCl}$):\n   $$\\text{CO} + \\text{HCl} \\xrightarrow{\\text{AlCl}_3/\\text{CuCl}} [\\text{H}-\\text{C}=\\text{O}]^+ \\text{AlCl}_4^-$$\n2. The formyl cation attacks the benzene ring via electrophilic aromatic substitution, followed by proton loss to yield **benzaldehyde ($\\text{C}_6\\text{H}_5\\text{CHO}$)**."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A primary alcohol, a secondary alcohol, and a tertiary alcohol can be distinguished experimentally using the Lucas reagent (conc. $\\text{HCl} + \\text{anhydrous } \\text{ZnCl}_2$). The observation for a TERTIARY alcohol is:",
+          "image": "",
+          "options": [
+            "Turbidity appears immediately at room temperature",
+            "Turbidity appears within $5$ minutes on gentle heating",
+            "No turbidity appears even after heating",
+            "A blue coloration develops immediately"
+          ],
+          "correctOption": 0,
+          "solution": "1. The **Lucas test** proceeds through an $\\text{S}_\\text{N}1$ pathway where the rate-determining step is carbocation formation:\n   $$\\text{R}-\\text{OH} + \\text{HCl} \\xrightarrow{\\text{ZnCl}_2} \\text{R}-\\text{Cl} \\downarrow\\text{ (insoluble oily turbidity)} + \\text{H}_2\\text{O}$$\n2. The rate of reaction depends on carbocation stability ($3^\\circ > 2^\\circ > 1^\\circ$):\n   - **Tertiary ($3^\\circ$) alcohol:** forms a very stable $3^\\circ$ carbocation, producing **turbidity immediately** at room temperature.\n   - **Secondary ($2^\\circ$) alcohol:** produces turbidity within **$5$ minutes**.\n   - **Primary ($1^\\circ$) alcohol:** does not produce turbidity at room temperature; requires vigorous heating."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Gabriel phthalimide synthesis is exclusively used for the preparation of which class of amines?",
+          "image": "",
+          "options": [
+            "Primary aliphatic amines",
+            "Primary aromatic amines",
+            "Secondary amines",
+            "Tertiary amines"
+          ],
+          "correctOption": 0,
+          "solution": "1. In Gabriel phthalimide synthesis, phthalimide is deprotonated by $\\text{KOH}$ to form potassium phthalimide, which then acts as a nucleophile in an $\\text{S}_\\text{N}2$ attack on an alkyl halide:\n   $$\\text{Potassium phthalimide} + \\text{R}-\\text{X} \\rightarrow \\text{N-alkylphthalimide} \\xrightarrow{\\text{NaOH}(aq)} \\text{R}-\\text{NH}_2 + \\text{Sodium phthalate}$$\n2. Because the reaction requires an $\\text{S}_\\text{N}2$ displacement on $\\text{R}-\\text{X}$, it works cleanly only for primary alkyl halides to yield **pure primary aliphatic amines** without polyalkylation.\n3. Aromatic primary amines (like aniline) **cannot be prepared** by this method because aryl halides do not undergo nucleophilic substitution with the phthalimide anion due to partial double-bond character."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Benzene diazonium chloride reacts with phenol in a weakly alkaline medium ($\text{pH} = 9-10$) to form an azo dye. The structure and color of the dye are:",
+          "image": "",
+          "options": [
+            "p-Hydroxyazobenzene (Orange dye)",
+            "p-Aminoazobenzene (Yellow dye)",
+            "o-Hydroxyazobenzene (Red dye)",
+            "Azobenzene (Colorless)"
+          ],
+          "correctOption": 0,
+          "solution": "1. In an azo coupling reaction, the electrophilic benzene diazonium cation ($[\\text{C}_6\\text{H}_5\\text{N}_2]^+$) attacks the activated phenoxide ion at the unhindered para position:\n   $$\\text{C}_6\\text{H}_5-\\text{N}_2^+\\text{Cl}^- + \\text{C}_6\\text{H}_5\\text{OH} \\xrightarrow{\\text{OH}^-, \\text{pH } 9-10} \\text{C}_6\\text{H}_5-\\text{N}=\\text{N}-\\text{C}_6\\text{H}_4-\\text{OH}(p) + \\text{HCl}$$\n2. The extended conjugated $\\pi$-system absorbs blue light, giving **p-hydroxyazobenzene**, an **orange dye**.\n3. (Coupling with aniline in weakly acidic medium, $\\text{pH } 4-5$, gives p-aminoazobenzene, a *yellow dye*)."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following compounds gives a yellow precipitate of iodoform ($\\text{CHI}_3$) when warmed with $\\text{I}_2$ and aqueous $\\text{NaOH}$?",
+          "image": "",
+          "options": [
+            "Pentan-2-one",
+            "Pentan-3-one",
+            "Benzophenone",
+            "3-Methylbutan-1-ol"
+          ],
+          "correctOption": 0,
+          "solution": "1. The **iodoform test** is positive for compounds containing either:\n   - A methyl carbonyl group: $\\text{CH}_3-\\text{C}(=\\text{O})-$\n   - A methyl carbinol group that oxidizes to methyl carbonyl: $\\text{CH}_3-\\text{CH(OH)}-$\n2. **Pentan-2-one ($\\text{CH}_3-\\text{CO}-\\text{CH}_2\\text{CH}_2\\text{CH}_3$)** is a methyl ketone and undergoes base-catalyzed halogenation followed by cleavage to precipitate yellow crystals of iodoform ($\\text{CHI}_3$) and sodium butanoate.\n3. Pentan-3-one has two ethyl groups ($-\\text{COCH}_2\\text{CH}_3$), benzophenone has two phenyl groups, and 3-methylbutan-1-ol is a primary alcohol, so none give iodoform."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In the hydroboration-oxidation of propene with diborane ($\\text{B}_2\\text{H}_6$) followed by alkaline $\\text{H}_2\\text{O}_2$, the final product is:",
+          "image": "",
+          "options": [
+            "Propan-1-ol",
+            "Propan-2-ol",
+            "Propane-1,2-diol",
+            "Propanoic acid"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Hydroboration-oxidation** accomplishes the net addition of water across an alkene with **anti-Markovnikov regioselectivity** and **syn-stereospecificity**:\n   $$6\\text{CH}_3\\text{CH}=\\text{CH}_2 + \\text{B}_2\\text{H}_6 \\rightarrow 2(\\text{CH}_3\\text{CH}_2\\text{CH}_2)_3\\text{B}$$\n2. Subsequent oxidation with alkaline hydrogen peroxide ($\\text{H}_2\\text{O}_2/\\text{OH}^-$) cleaves the $\\text{B}-\\text{C}$ bonds with retention of configuration:\n   $$(\\text{CH}_3\\text{CH}_2\\text{CH}_2)_3\\text{B} + 3\\text{H}_2\\text{O}_2 + 3\\text{NaOH} \\rightarrow 3\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{OH} + \\text{Na}_3\\text{BO}_3 + 3\\text{H}_2\\text{O}$$\n3. The product is **propan-1-ol** (anti-Markovnikov product)."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Hofmann bromamide degradation of propanamide ($\\text{CH}_3\\text{CH}_2\\text{CONH}_2$) with $\\text{Br}_2$ and $\\text{KOH}$ yields:",
+          "image": "",
+          "options": [
+            "Ethanamine ($\\text{CH}_3\\text{CH}_2\\text{NH}_2$)",
+            "Propanamine ($\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{NH}_2$)",
+            "Methanamine ($\\text{CH}_3\\text{NH}_2$)",
+            "Bromopropane"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the **Hofmann bromamide degradation**, an unsubstituted primary amide is treated with bromine and aqueous/alcoholic alkali to yield a primary amine containing **one carbon atom less** than the starting amide:\n   $$\\text{R}-\\text{CONH}_2 + \\text{Br}_2 + 4\\text{KOH} \\rightarrow \\text{R}-\\text{NH}_2 + \\text{K}_2\\text{CO}_3 + 2\\text{KBr} + 2\\text{H}_2\\text{O}$$\n2. For propanamide ($\\text{CH}_3\\text{CH}_2\\text{CONH}_2$, a 3-carbon amide):\n   $$\\text{CH}_3\\text{CH}_2\\text{CONH}_2 \\xrightarrow{\\text{Br}_2/\\text{KOH}} \\text{CH}_3\\text{CH}_2\\text{NH}_2 \\quad (\\text{Ethanamine, a 2-carbon amine})$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The reaction of an aldehyde or ketone with zinc amalgam ($\\text{Zn}-\\text{Hg}$) and concentrated $\\text{HCl}$ to form a hydrocarbon is called:",
+          "image": "",
+          "options": [
+            "Clemmensen reduction",
+            "Wolff-Kishner reduction",
+            "Rosenmund reduction",
+            "Stephen reaction"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Clemmensen reduction** converts the carbonyl group ($>\\text{C}=\\text{O}$) of aldehydes and ketones into a methylene group ($-\\text{CH}_2-$) using **amalgamated zinc and concentrated hydrochloric acid**:\n   $$>\\text{C}=\\text{O} + 4[\\text{H}] \\xrightarrow{\\text{Zn}-\\text{Hg}/\\text{conc. } \\text{HCl}} -\\text{CH}_2- + \\text{H}_2\\text{O}$$\n2. (Wolff-Kishner reduction uses $\\text{NH}_2\\text{NH}_2/\\text{KOH}$ in ethylene glycol; Rosenmund reduction uses $\\text{H}_2/\\text{Pd}-\\text{BaSO}_4$ for acyl chlorides)."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following compounds has the HIGHEST boiling point due to extensive intermolecular hydrogen bonding?",
+          "image": "",
+          "options": [
+            "Butan-1-ol",
+            "Butanal",
+            "Ethoxyethane (Diethyl ether)",
+            "n-Butane"
+          ],
+          "correctOption": 0,
+          "solution": "1. Comparing compounds of comparable molecular weights ($\\approx 72-74\\text{ g mol}^{-1}$):\n   - **Butan-1-ol ($\text{M} = 74$):** Contains a polar $-\\text{OH}$ group that forms extensive intermolecular **hydrogen bonds**, requiring large thermal energy to disrupt (boiling point $= 117.7^\\circ\\text{C}$).\n   - Butanal ($\text{M} = 72$): Polar carbonyl group with dipole-dipole interactions, but no $\\text{O}-\\text{H}$ bonds (boiling point $= 75.5^\\circ\\text{C}$).\n   - Diethyl ether ($\text{M} = 74$): Weak dipole-dipole forces (boiling point $= 34.6^\\circ\\text{C}$).\n   - n-Butane ($\text{M} = 58$): Non-polar, held only by weak London dispersion forces (boiling point $= -0.5^\\circ\\text{C}$).\n2. Therefore, butan-1-ol has the highest boiling point."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] When propene is treated with chlorine gas at high temperature ($773\\text{ K}$), the major product formed is:",
+          "image": "",
+          "options": [
+            "3-Chloroprop-1-ene (Allyl chloride)",
+            "1,2-Dichloropropane",
+            "1-Chloroprop-1-ene",
+            "2-Chloropropane"
+          ],
+          "correctOption": 0,
+          "solution": "1. At room temperature in non-polar solvents, chlorine adds across the double bond of propene via an electrophilic pathway to form 1,2-dichloropropane.\n2. At **elevated temperatures ($773\\text{ K}$)**, homolytic cleavage of $\\text{Cl}_2$ occurs to generate chlorine free radicals ($\\text{Cl}^\\bullet$).\n3. The chlorine radical abstracts a hydrogen atom from the $sp^3$-hybridized methyl group to form the resonance-stabilized **allyl radical ($\\text{CH}_2=\\text{CH}-\\dot{\\text{C}}\\text{H}_2$)** rather than adding to the double bond.\n4. Subsequent reaction with $\\text{Cl}_2$ produces **allyl chloride (3-chloroprop-1-ene)** via allylic substitution."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following compounds is MOST REACTIVE towards electrophilic aromatic substitution?",
+          "image": "",
+          "options": [
+            "Phenol",
+            "Benzene",
+            "Chlorobenzene",
+            "Nitrobenzene"
+          ],
+          "correctOption": 0,
+          "solution": "1. The rate of electrophilic aromatic substitution depends on the electron density of the benzene ring.\n2. In **phenol ($\\text{C}_6\\text{H}_5\\text{OH}$)**, the unshared lone pair on the oxygen atom strongly donates electron density into the ring through resonance (**$+M$ effect**), strongly activating the ortho and para positions toward electrophiles.\n3. Chlorobenzene has an electron-withdrawing $-I$ effect that deactivates the ring.\n4. Nitrobenzene has a strongly electron-withdrawing $-\\text{NO}_2$ group ($-I, -M$) that severely deactivates the ring.\n5. Therefore, phenol is by far the most reactive."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When calcium carbide ($\\text{CaC}_2$) is treated with water, the hydrocarbon produced is:",
+          "image": "",
+          "options": [
+            "Ethyne (Acetylene)",
+            "Methane",
+            "Ethene",
+            "Propane"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calcium carbide contains the dicarbide (acetylide) anion: $[:\\text{C}\\equiv\\text{C}:]^{2-}$.\n2. Hydrolysis of $\\text{CaC}_2$ protonates the acetylide anion, liberating **ethyne (acetylene)**:\n   $$\\text{CaC}_2 + 2\\text{H}_2\\text{O} \\rightarrow \\text{Ca(OH)}_2 + \\text{HC}\\equiv\\text{CH} \\uparrow$$\n3. (In contrast, aluminium carbide $\\text{Al}_4\\text{C}_3$ contains isolated $\\text{C}^{4-}$ methanide anions and hydrolyzes to methane, $\\text{CH}_4$)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Kolbe's electrolytic decarboxylation of an aqueous solution of sodium acetate yields:",
+          "image": "",
+          "options": [
+            "Ethane at anode and hydrogen gas at cathode",
+            "Methane at anode and oxygen gas at cathode",
+            "Ethane at cathode and carbon dioxide at anode",
+            "Ethene at anode and hydrogen gas at cathode"
+          ],
+          "correctOption": 0,
+          "solution": "In Kolbe's electrolytic synthesis:\n1. **At the Anode (Oxidation):**\n   - Acetate ion loses an electron to form an acetate free radical:\n     $$\\text{CH}_3\\text{COO}^- \\rightarrow \\text{CH}_3\\text{COO}^\\bullet + e^-$$\n   - The unstable radical decarboxylates to yield carbon dioxide and a methyl radical:\n     $$\\text{CH}_3\\text{COO}^\\bullet \\rightarrow \\dot{\\text{C}}\\text{H}_3 + \\text{CO}_2 \\uparrow$$\n   - Two methyl radicals couple to form **ethane gas**:\n     $$\\dot{\\text{C}}\\text{H}_3 + \\dot{\\text{C}}\\text{H}_3 \\rightarrow \\text{CH}_3-\\text{CH}_3 \\uparrow$$\n2. **At the Cathode (Reduction):**\n   $$2\\text{H}_2\\text{O} + 2e^- \\rightarrow \\text{H}_2 \\uparrow + 2\\text{OH}^-$$\nTherefore, ethane and $\\text{CO}_2$ evolve at the anode, while $\\text{H}_2$ evolves at the cathode."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following carboxylic acids has the HIGHEST $\\text{p}K_a$ value (is the WEAKEST acid)?",
+          "image": "",
+          "options": [
+            "$(\\text{CH}_3)_3\\text{C}-\\text{COOH}$ (Pivalic acid)",
+            "$\\text{CH}_3\\text{COOH}$ (Acetic acid)",
+            "$\\text{HCOOH}$ (Formic acid)",
+            "$\\text{CH}_2\\text{ClCOOH}$ (Chloroacetic acid)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Acidity is inversely related to $\\text{p}K_a$ (higher $\\text{p}K_a \\implies$ weaker acid).\n2. Electron-donating groups (+I effect) destabilize the conjugate carboxylate anion ($\\text{RCOO}^-$) by intensifying negative charge, decreasing acidity and increasing $\\text{p}K_a$.\n3. The tert-butyl group in **pivalic acid ($(\\text{CH}_3)_3\\text{C}-\\text{COOH}$)** exerts the strongest +I effect and steric hindrance among the options, making it the weakest acid with the **highest $\\text{p}K_a$ ($\\approx 5.03$)**.\n4. (Formic acid has $\\text{p}K_a = 3.75$; chloroacetic acid has $\\text{p}K_a = 2.87$)."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Reduction of but-2-yne with sodium in liquid ammonia (Birch reduction) produces:",
+          "image": "",
+          "options": [
+            "trans-But-2-ene",
+            "cis-But-2-ene",
+            "Butane",
+            "But-1-ene"
+          ],
+          "correctOption": 0,
+          "solution": "1. Reduction of non-terminal alkynes using **sodium in liquid ammonia ($\\text{Na} / \\text{liq. } \\text{NH}_3$)** proceeds via a dissolving metal electron-transfer mechanism.\n2. Radical anion intermediates adopt the more stable, anti-coplanar geometry to minimize steric and electrostatic repulsions between alkyl groups.\n3. Protonation of the trans-radical anion yields **trans-alkenes with high stereospecificity** (anti-addition).\n4. Therefore, reduction of but-2-yne yields **trans-but-2-ene**.\n5. (Catalytic hydrogenation over Lindlar's catalyst, $\\text{H}_2/\\text{Pd}-\\text{CaCO}_3$, gives *cis*-but-2-ene via syn-addition)."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Aniline on reaction with nitrous acid ($\\text{NaNO}_2 + \\text{HCl}$) at $0-5^\\circ\\text{C}$ gives compound $A$. When $A$ is treated with cuprous chloride ($\\text{Cu}_2\\text{Cl}_2$) and $\\text{HCl}$, compound $B$ is formed. This reaction sequence is known as:",
+          "image": "",
+          "options": [
+            "Sandmeyer reaction",
+            "Gattermann reaction",
+            "Wurtz-Fittig reaction",
+            "Balz-Schiemann reaction"
+          ],
+          "correctOption": 0,
+          "solution": "1. Diazotization of primary aromatic amines at low temperature ($273-278\\text{ K}$):\n   $$\\text{C}_6\\text{H}_5\\text{NH}_2 + \\text{NaNO}_2 + 2\\text{HCl} \\xrightarrow{0-5^\\circ\\text{C}} \\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^-\\text{ (Compound } A) + \\text{NaCl} + 2\\text{H}_2\\text{O}$$\n2. Treatment of the diazonium salt with cuprous chloride ($\\text{Cu}_2\\text{Cl}_2$) in $\\text{HCl}$ replaces the diazonium group with chlorine:\n   $$\\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^- \\xrightarrow{\\text{Cu}_2\\text{Cl}_2/\\text{HCl}} \\text{C}_6\\text{H}_5\\text{Cl}\\text{ (Chlorobenzene, Compound } B) + \\text{N}_2 \\uparrow$$\n3. This substitution catalyzed by cuprous halides is the **Sandmeyer reaction**."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Chlorobenzene is exceptionally INERT towards nucleophilic substitution reactions compared to chloroalkanes. Which of the following factors does NOT contribute to this low reactivity?",
+          "image": "",
+          "options": [
+            "The leaving chloride group is a strong base",
+            "Resonance delocalization gives the $\\text{C}-\\text{Cl}$ bond partial double-bond character",
+            "The carbon attached to chlorine is $sp^2$-hybridized and holds electrons more tightly than an $sp^3$ carbon",
+            "Repulsion between the $\\pi$-electron cloud of the benzene ring and the incoming nucleophile"
+          ],
+          "correctOption": 0,
+          "solution": "Reasons for the low reactivity of chlorobenzene toward nucleophilic substitution:\n1. **Resonance effect:** Lone pairs on chlorine delocalize into the aromatic ring, giving the $\\text{C}-\\text{Cl}$ bond partial double-bond character ($169\\text{ pm}$ vs $178\\text{ pm}$ in alkyl chloride), making it difficult to break.\n2. **Hybridization:** Chlorine is bonded to an $sp^2$ carbon with higher $s$-character ($33.3\\%$) that holds the bond pair more tightly.\n3. **Repulsion:** The electron-rich $\\pi$-cloud repels approaching nucleophiles.\n4. **Instability of phenyl cation:** $\\text{S}_\\text{N}1$ is impossible because the phenyl cation is unstable.\nChloride ion is the conjugate base of a strong acid ($\\text{HCl}$) and is a **good, weak-base leaving group**, NOT a strong base. Statement A is false."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] When ethanoic acid is treated with phosphorus pentachloride ($\\text{PCl}_5$), the product formed is:",
+          "image": "",
+          "options": [
+            "Ethanoyl chloride ($\\text{CH}_3\\text{COCl}$)",
+            "Chloroacetic acid ($\\text{CH}_2\\text{ClCOOH}$)",
+            "Trichloroacetic acid ($\\text{CCl}_3\\text{COOH}$)",
+            "Ethyl chloride ($\\text{CH}_3\\text{CH}_2\\text{Cl}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Carboxylic acids react with $\\text{PCl}_5$ by nucleophilic substitution of the hydroxyl group ($-\\text{OH}$) by chlorine to form acyl chlorides:\n   $$\\text{CH}_3\\text{COOH} + \\text{PCl}_5 \\rightarrow \\text{CH}_3\\text{COCl} + \\text{POCl}_3 + \\text{HCl} \\uparrow$$\n2. The product is **ethanoyl chloride (acetyl chloride, $\\text{CH}_3\\text{COCl}$)**."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following compounds gives a positive test with Tollens' reagent (silver mirror test)?",
+          "image": "",
+          "options": [
+            "Formic acid ($\\text{HCOOH}$)",
+            "Acetic acid ($\\text{CH}_3\\text{COOH}$)",
+            "Acetone ($\\text{CH}_3\\text{COCH}_3$)",
+            "Benzophenone"
+          ],
+          "correctOption": 0,
+          "solution": "1. Tollens' reagent ($[\\text{Ag}(\\text{NH}_3)_2]^+$) oxidizes aldehydes to carboxylates while precipitating metallic silver.\n2. Most carboxylic acids do not reduce Tollens' reagent.\n3. However, **formic acid ($\\text{H}-\\text{COOH}$)** contains both an aldehyde-like hydrogen group attached directly to the carbonyl group ($-\\text{CHO}$) and a carboxyl group:\n   $$\\text{HCOOH} + 2[\\text{Ag}(\\text{NH}_3)_2]^+ + 2\\text{OH}^- \\rightarrow 2\\text{Ag} \\downarrow\\text{ (silver mirror)} + \\text{CO}_2 + 4\\text{NH}_3 + 2\\text{H}_2\\text{O}$$\n4. Therefore, formic acid reduces Tollens' reagent to give a silver mirror."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the Dow's process, chlorobenzene is converted to phenol by heating with aqueous $\\text{NaOH}$ under drastic conditions. The reaction proceeds through which intermediate?",
+          "image": "",
+          "options": [
+            "Benzyne",
+            "Phenyl carbocation",
+            "Carbene",
+            "Free radical"
+          ],
+          "correctOption": 0,
+          "solution": "1. Chlorobenzene reacts with sodium hydroxide under forcing conditions ($623\\text{ K}$ and $300\\text{ atm}$ pressure):\n   $$\\text{C}_6\\text{H}_5\\text{Cl} + 2\\text{NaOH} \\xrightarrow{623\\text{ K}, 300\\text{ atm}} \\text{C}_6\\text{H}_5\\text{O}^-\\text{Na}^+ + \\text{NaCl} + \\text{H}_2\\text{O}$$\n2. The elimination-addition mechanism involves elimination of $\\text{HCl}$ to form an unstable, highly reactive neutral intermediate containing a formal triple bond in the aromatic ring: **Benzyne ($\\text{C}_6\\text{H}_4$)**.\n3. Rapid nucleophilic addition of hydroxide to benzyne yields sodium phenoxide, which upon acidification gives phenol."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the major product formed when phenol is treated with excess bromine water?",
+          "image": "",
+          "options": [
+            "2,4,6-Tribromophenol (white precipitate)",
+            "o-Bromophenol",
+            "p-Bromophenol",
+            "2,4-Dibromophenol"
+          ],
+          "correctOption": 0,
+          "solution": "1. In aqueous solution (a polar protic medium), phenol ionizes to form the phenoxide ion ($\\text{C}_6\\text{H}_5\\text{O}^-$).\n2. The phenoxide oxygen has full negative charge and donates electron density into the ring through resonance much more strongly than a neutral $-\\text{OH}$ group, activating all ortho and para positions.\n3. Electrophilic bromination occurs simultaneously at both ortho positions and the para position, yielding **2,4,6-tribromophenol as a white precipitate**:\n   $$\\text{C}_6\\text{H}_5\\text{OH} + 3\\text{Br}_2(aq) \\rightarrow \\text{C}_6\\text{H}_2\\text{Br}_3\\text{OH} \\downarrow + 3\\text{HBr}$$\n4. (In non-polar solvents like $\\text{CS}_2$ or $\\text{CHCl}_3$, ionization is suppressed, yielding p-bromophenol as the major product)."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following alkynes will precipitate red copper(I) acetylide when treated with ammoniacal cuprous chloride?",
+          "image": "",
+          "options": [
+            "But-1-yne",
+            "But-2-yne",
+            "Pent-2-yne",
+            "Hex-3-yne"
+          ],
+          "correctOption": 0,
+          "solution": "1. Terminal alkynes contain an acidic hydrogen bonded to an $sp$-hybridized triply bonded carbon ($\\text{R}-\\text{C}\\equiv\\text{C}-\\text{H}$).\n2. When treated with ammoniacal cuprous chloride ($[\\text{Cu}(\\text{NH}_3)_2]^+$), terminal alkynes form insoluble reddish-brown cuprous acetylide precipitates:\n   $$\\text{CH}_3\\text{CH}_2\\text{C}\\equiv\\text{CH} + [\\text{Cu}(\\text{NH}_3)_2]^+ \\rightarrow \\text{CH}_3\\text{CH}_2\\text{C}\\equiv\\text{C}-\\text{Cu} \\downarrow\\text{ (red)} + \\text{NH}_4^+ + \\text{NH}_3$$\n3. **But-1-yne** is a terminal alkyne and gives a positive test.\n4. But-2-yne, pent-2-yne, and hex-3-yne are non-terminal (internal) alkynes with no terminal acidic hydrogen and do not react."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An alkyl halide $A$ reacts with sodium nitrite ($\\text{NaNO}_2$) in DMF to form compound $B$ as the major product. When $A$ is treated with silver nitrite ($\\text{AgNO}_2$) in ethanol, compound $C$ is formed as the major product. Compounds $B$ and $C$ are respectively:",
+          "image": "",
+          "options": [
+            "Alkyl nitrite ($\\text{R}-\\text{ONO}$) and Nitroalkane ($\\text{R}-\\text{NO}_2$)",
+            "Nitroalkane ($\\text{R}-\\text{NO}_2$) and Alkyl nitrite ($\\text{R}-\\text{ONO}$)",
+            "Both are Nitroalkanes",
+            "Both are Alkyl nitrites"
+          ],
+          "correctOption": 0,
+          "solution": "1. The nitrite ion is an ambident nucleophile with two donor atoms: oxygen and nitrogen.\n2. **$\\text{NaNO}_2$ is predominantly ionic:** $[\\text{Na}]^+ [:O-\\text{N}=\\text{O}]^-$. The negative charge resides on the more electronegative oxygen atom, which acts as the nucleophile to yield an **alkyl nitrite ($\\text{R}-\\text{ONO}$)** as the major product.\n3. **$\\text{AgNO}_2$ is predominantly covalent:** The silver-oxygen bond is covalent, so the oxygen lone pair is less available. The unshared lone pair on the less electronegative nitrogen atom attacks the alkyl halide, yielding a **nitroalkane ($\\text{R}-\\text{NO}_2$)** as the major product."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An organic compound on treatment with pyridinium chlorochromate (PCC) in dichloromethane oxidizes to an aldehyde without further oxidation to a carboxylic acid. The starting organic compound is a:",
+          "image": "",
+          "options": [
+            "Primary alcohol",
+            "Secondary alcohol",
+            "Tertiary alcohol",
+            "Carboxylic acid"
+          ],
+          "correctOption": 0,
+          "solution": "1. Aqueous oxidizing agents like acidified $\\text{KMnO}_4$ or $\\text{K}_2\\text{Cr}_2\\text{O}_7$ oxidize primary alcohols past the aldehyde stage all the way to carboxylic acids.\n2. **Pyridinium chlorochromate (PCC, Corey's reagent)** in anhydrous $\\text{CH}_2\\text{Cl}_2$ is a mild, selective oxidant that stops oxidation cleanly at the **aldehyde stage**:\n   $$\\text{R}-\\text{CH}_2\\text{OH} \\xrightarrow{\\text{PCC / } \\text{CH}_2\\text{Cl}_2} \\text{R}-\\text{CHO}$$\n3. Therefore, the starting material is a **primary alcohol**."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In an aldol condensation, two molecules of ethanal (acetaldehyde) react in the presence of dilute $\\text{NaOH}$ followed by heating. The final dehydration product is:",
+          "image": "",
+          "options": [
+            "But-2-enal (Crotonaldehyde)",
+            "But-1-enal",
+            "3-Hydroxybutanal",
+            "2-Methylpropanal"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Aldol addition:** Deprotonation of acetaldehyde forms an enolate that attacks a second molecule of acetaldehyde to form 3-hydroxybutanal (aldol):\n   $$2\\text{CH}_3\\text{CHO} \\xrightarrow{\\text{dil. } \\text{NaOH}} \\text{CH}_3-\\text{CH(OH)}-\\text{CH}_2-\\text{CHO}$$\n2. **Condensation (dehydration):** Upon heating, the $\\beta$-hydroxy aldehyde loses a molecule of water to form an $\\alpha,\\beta$-unsaturated conjugated aldehyde:\n   $$\\text{CH}_3-\\text{CH(OH)}-\\text{CH}_2-\\text{CHO} \\xrightarrow{\\Delta} \\text{CH}_3-\\text{CH}=\\text{CH}-\\text{CHO} \\quad (\\text{But-2-enal / Crotonaldehyde})$$"
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] When ethyl chloride is heated with alcoholic $\\text{KCN}$, compound $A$ is formed. Hydrolysis of $A$ with dilute $\\text{HCl}$ yields compound $B$. Compound $B$ is:",
+          "image": "",
+          "options": [
+            "Propanoic acid",
+            "Ethanoic acid",
+            "Propanamide",
+            "Ethylamine"
+          ],
+          "correctOption": 0,
+          "solution": "1. Nucleophilic substitution of ethyl chloride with alcoholic $\\text{KCN}$ introduces a nitrile group:\n   $$\\text{CH}_3\\text{CH}_2\\text{Cl} + \\text{KCN} \\rightarrow \\text{CH}_3\\text{CH}_2\\text{CN}\\text{ (Propanenitrile, Compound } A) + \\text{KCl}$$\n2. Complete acidic hydrolysis of a nitrile converts the $-\\text{C}\\equiv\\text{N}$ group into a carboxylic acid:\n   $$\\text{CH}_3\\text{CH}_2\\text{CN} + 2\\text{H}_2\\text{O} + \\text{HCl} \\xrightarrow{\\Delta} \\text{CH}_3\\text{CH}_2\\text{COOH}\\text{ (Propanoic acid, Compound } B) + \\text{NH}_4\\text{Cl}$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Phenol reacts with carbon dioxide and sodium hydroxide under pressure ($400\\text{ K}, 4-7\\text{ atm}$) followed by acidification to produce salicylic acid as the major product. This reaction is known as:",
+          "image": "",
+          "options": [
+            "Kolbe's reaction",
+            "Reimer-Tiemann reaction",
+            "Fries rearrangement",
+            "Etard reaction"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Kolbe's reaction (Kolbe-Schmitt reaction):**\n   - Treatment of phenol with $\\text{NaOH}$ forms sodium phenoxide, which activates the ring toward weak electrophiles.\n   - Carbon dioxide ($\\text{CO}_2$) acts as the electrophile and attacks the ortho position of the phenoxide ion under pressure ($4-7\\text{ atm}$) at $400\\text{ K}$:\n     $$\\text{C}_6\\text{H}_5\\text{ONa} + \\text{CO}_2 \\xrightarrow{400\\text{ K}, 4-7\\text{ atm}} 2-\\text{HO}-\\text{C}_6\\text{H}_4-\\text{COONa}$$\n   - Subsequent acidification yields **salicylic acid (2-hydroxybenzoic acid)**."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Benzene reacts with methyl chloride in the presence of anhydrous $\\text{AlCl}_3$ to yield toluene. This reaction is an example of:",
+          "image": "",
+          "options": [
+            "Friedel-Crafts alkylation",
+            "Friedel-Crafts acylation",
+            "Wurtz-Fittig reaction",
+            "Electrophilic addition"
+          ],
+          "correctOption": 0,
+          "solution": "1. In **Friedel-Crafts alkylation**, an alkyl halide reacts with an aromatic ring in the presence of a Lewis acid catalyst:\n   $$\\text{CH}_3\\text{Cl} + \\text{AlCl}_3 \\rightleftharpoons \\text{CH}_3^+ + \\text{AlCl}_4^-$$\n2. The generated methyl carbocation ($\\text{CH}_3^+$) attacks the benzene ring via electrophilic aromatic substitution:\n   $$\\text{C}_6\\text{H}_6 + \\text{CH}_3^+ \\rightarrow \\text{C}_6\\text{H}_5\\text{CH}_3\\text{ (Toluene)} + \\text{H}^+$$\n3. Regeneration of $\\text{AlCl}_3$ completes the reaction: $\\text{H}^+ + \\text{AlCl}_4^- \\rightarrow \\text{HCl} + \\text{AlCl}_3$."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following compounds gives a tertiary alcohol when treated with an excess of methyl magnesium bromide ($\\text{CH}_3\\text{MgBr}$) followed by hydrolysis?",
+          "image": "",
+          "options": [
+            "Ethyl acetate ($\\text{CH}_3\\text{COOCH}_2\\text{CH}_3$)",
+            "Acetaldehyde ($\\text{CH}_3\\text{CHO}$)",
+            "Formaldehyde ($\\text{HCHO}$)",
+            "Formic acid ($\\text{HCOOH}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Reaction of Grignard reagents with esters:\n   - One mole of $\\text{CH}_3\\text{MgBr}$ attacks ethyl acetate, displacing ethoxide to yield a ketone (acetone):\n     $$\\text{CH}_3\\text{COOCH}_2\\text{CH}_3 + \\text{CH}_3\\text{MgBr} \\rightarrow \\text{CH}_3\\text{COCH}_3 + \\text{Mg(OCH}_2\\text{CH}_3)\\text{Br}$$\n   - A second mole of $\\text{CH}_3\\text{MgBr}$ immediately attacks acetone to form a tertiary alkoxide:\n     $$\\text{CH}_3\\text{COCH}_3 + \\text{CH}_3\\text{MgBr} \\rightarrow (\\text{CH}_3)_3\\text{C}-\\text{OMgBr}$$\n   - Acid hydrolysis yields **2-methylpropan-2-ol (tert-butyl alcohol, a tertiary alcohol)**.\n2. (Formaldehyde gives $1^\\circ$ alcohol; acetaldehyde gives $2^\\circ$ alcohol)."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the major product obtained when propene is treated with $\\text{HBr}$ in the presence of benzoyl peroxide?",
+          "image": "",
+          "options": [
+            "1-Bromopropane",
+            "2-Bromopropane",
+            "1,2-Dibromopropane",
+            "2-Bromopropene"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the presence of organic peroxides, $\\text{HBr}$ adds to unsymmetrical alkenes via a free radical chain mechanism (**Kharasch effect / peroxide effect**).\n2. The bromine free radical ($\\text{Br}^\\bullet$) attacks the double bond at the less substituted terminal carbon ($C_1$) to generate the **more stable secondary free radical** at $C_2$:\n   $$\\text{CH}_3\\text{CH}=\\text{CH}_2 + \\text{Br}^\\bullet \\rightarrow \\text{CH}_3\\dot{\\text{C}}\\text{H}-\\text{CH}_2\\text{Br}$$\n3. Abstraction of hydrogen from $\\text{HBr}$ yields **1-bromopropane** (anti-Markovnikov product):\n   $$\\text{CH}_3\\dot{\\text{C}}\\text{H}-\\text{CH}_2\\text{Br} + \\text{HBr} \\rightarrow \\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{Br} + \\text{Br}^\\bullet$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements about the boiling points of isomeric pentanols is correct?",
+          "image": "",
+          "options": [
+            "Pentan-1-ol has a higher boiling point than 2-methylbutan-2-ol due to greater surface area and stronger van der Waals forces in the unbranched isomer",
+            "2-Methylbutan-2-ol has a higher boiling point because branching increases surface area",
+            "Both have identical boiling points",
+            "Branching has no effect on the boiling points of alcohols"
+          ],
+          "correctOption": 0,
+          "solution": "1. Both pentan-1-ol ($1^\\circ$) and 2-methylbutan-2-ol ($3^\\circ$) have the same molecular formula $\\text{C}_5\\text{H}_{12}\\text{O}$ and undergo hydrogen bonding.\n2. **Pentan-1-ol** has a linear, unbranched carbon chain with a large surface area, leading to stronger intermolecular van der Waals forces.\n3. **2-Methylbutan-2-ol** is spherical and compact due to branching, which reduces its contact surface area and weakens dispersion forces. Furthermore, steric hindrance around the tertiary $-\\text{OH}$ group slightly weakens hydrogen bonding.\n4. Therefore, **pentan-1-ol has a significantly higher boiling point ($138^\\circ\\text{C}$)** than 2-methylbutan-2-ol ($102^\\circ\\text{C}$)."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An aromatic compound $A$ ($\\text{C}_7\\text{H}_6\\text{O}$) on treatment with aqueous $\\text{NaOH}$ gives two compounds $B$ and $C$. Acidification of compound $C$ gives benzoic acid, while compound $B$ on oxidation with acidified $\\text{KMnO}_4$ also gives benzoic acid. Compound $A$ is:",
+          "image": "",
+          "options": [
+            "Benzaldehyde",
+            "Benzyl alcohol",
+            "Acetophenone",
+            "Benzoic acid"
+          ],
+          "correctOption": 0,
+          "solution": "1. Molecular formula $\\text{C}_7\\text{H}_6\\text{O}$ with no $\\alpha$-hydrogens corresponds to **benzaldehyde ($\\text{C}_6\\text{H}_5\\text{CHO}$)**.\n2. When treated with concentrated $\\text{NaOH}$, benzaldehyde undergoes the **Cannizzaro reaction** (disproportionation):\n   $$2\\text{C}_6\\text{H}_5\\text{CHO} \\xrightarrow{\\text{NaOH}} \\text{C}_6\\text{H}_5\\text{CH}_2\\text{OH}\\text{ (Compound } B) + \\text{C}_6\\text{H}_5\\text{COONa}\\text{ (Compound } C)$$\n3. Acidification of compound $C$ (sodium benzoate) gives benzoic acid ($\\text{C}_6\\text{H}_5\\text{COOH}$).\n4. Oxidation of compound $B$ (benzyl alcohol, $\\text{C}_6\\text{H}_5\\text{CH}_2\\text{OH}$) with acidified $\\text{KMnO}_4$ also yields benzoic acid.\n5. Therefore, compound $A$ is **benzaldehyde**."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-38-organic-reaction-intermediates",
+  "title": "Organic Reaction Intermediates & Reagents (Bond Fission, Carbocations, Carbanions, Free Radicals, Electrophiles, & Nucleophiles)",
+  "syllabus": "Types of bond cleavage: Homolytic fission (free radical generation, non-polar conditions, heat/light/peroxides) and Heterolytic fission (carbocation and carbanion generation, polar solvents, electronegativity differences); Carbocations: structure, sp2 hybridization, trigonal planar geometry, empty p-orbital, stability factors (inductive +I, hyperconjugation with α-H, resonance/mesomeric stabilization, aromatic stabilization like tropylium, non-classical and cyclopropylmethyl carbocation exceptional stability, allylic and benzylic carbocations, rearrangement tendencies: 1,2-hydride and 1,2-methyl shifts, ring expansion and ring contraction); Carbanions: structure, sp3 hybridization (pyramidal with inversion, exceptions like allylic, benzylic, and acyl carbanions being sp2/planar), stability trends (-I effect, -M/-R resonance delocalization, hybridization s-character: sp > sp2 > sp3, aromatic cyclopentadienyl anion vs antiaromatic systems); Carbon free radicals: structure, planar/shallow pyramidal geometry, stability factors (resonance, hyperconjugation, 3° > 2° > 1° > methyl, stability of triphenylmethyl, allylic and benzylic radicals); Carbene and Nitrene qualitative overview; Reagents: Electrophiles (positive electrophiles like NO2+, Cl+, H3O+ vs neutral Lewis acid electrophiles like BF3, AlCl3, SO3, carbenes) and Nucleophiles (negatively charged vs neutral Lewis base nucleophiles, nucleophilicity vs basicity, solvent effects: protic vs aprotic, ambident nucleophiles like CN-/NC-, NO2-/ONO-).",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following carbocations exhibits the HIGHEST thermodynamic stability?",
+          "image": "",
+          "options": [
+            "Tropylium cation ($\\text{C}_7\\text{H}_7^+$)",
+            "Triphenylmethyl cation ($(\\text{C}_6\\text{H}_5)_3\\text{C}^+$)",
+            "Benzyl cation ($\\text{C}_6\\text{H}_5\\text{CH}_2^+$)",
+            "tert-Butyl cation ($(\\text{CH}_3)_3\\text{C}^+$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the **tropylium cation (cycloheptatrienyl cation, $\\text{C}_7\\text{H}_7^+$)**, the seven-membered ring is planar, completely conjugated, and contains $6\\pi$ electrons ($3$ conjugated double bonds) with a vacant $p$-orbital on the positively charged carbon.\n2. According to Hückel's rule, it possesses $(4n + 2)\\pi$ electrons where $n = 1$, making it an **aromatic carbocation**.\n3. The positive charge is completely delocalized equally over all seven ring carbon atoms, imparting extraordinary aromatic stabilization energy (it forms air-stable, crystalline ionic salts like $\\text{C}_7\\text{H}_7^+\\text{Br}^-$).\n4. Aromatic stabilization in tropylium confers higher stability than even triphenylmethyl (where steric hindrance twists phenyl rings out of planarity) and standard alkyl carbocations."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The cyclopropylmethyl carbocation ($\\text{C}_3\\text{H}_5-\\overset{+}{\\text{C}}\\text{H}_2$) is exceptionally stable, even more stable than the benzyl carbocation. This extraordinary stability is attributed to:",
+          "image": "",
+          "options": [
+            "Delocalization of electrons through 'bent' or 'banana' $\\sigma$-bonds of the cyclopropane ring into the adjacent vacant $p$-orbital (dancing resonance)",
+            "Standard inductive (+I) effect of the three-membered ring",
+            "Aromaticity of the cyclopropane ring",
+            "Electromeric effect occurring within the ring"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the cyclopropane ring, the $\\text{C}-\\text{C}$ bonds are strongly strained and forced into an angle of $60^\\circ$, bending the hybrid orbitals outwards to form curved 'banana' (bent) bonds with high $p$-character.\n2. These bent $\\sigma$-orbitals are oriented parallel to and overlap very effectively with the adjacent empty $2p$ orbital of the exocyclic cationic carbon ($\\overset{+}{\\text{C}}\\text{H}_2$).\n3. This hyperconjugative/delocalization phenomenon is known as **non-classical resonance or 'dancing resonance'**.\n4. The strong dispersion of positive charge into the three-membered ring makes cyclopropylmethyl carbocations exceptionally stable (stability increases: $\\text{CPM} < \\text{di-CPM} < \\text{tri-CPM}$)."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Homolytic bond fission of a covalent bond $\\text{C}-\\text{X}$ occurs most favorably under which set of reaction conditions?",
+          "image": "",
+          "options": [
+            "Non-polar solvents in the presence of ultraviolet light, heat (high temperature), or organic peroxides",
+            "Polar protic solvents at low temperatures",
+            "Strong aqueous acidic medium",
+            "Aqueous alkaline medium"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Homolytic cleavage (homolysis)** is the symmetrical breaking of a covalent bond where each bonded atom takes back one of the two shared bonding electrons, producing neutral **free radicals**:\n   $$\\text{A}-\\text{B} \\xrightarrow{h\\nu\\text{ / }\\Delta} \\text{A}^\\bullet + \\text{B}^\\bullet$$\n2. Homolysis is favored by the mnemonic **HELP**:\n   - **H**: Heat (high temperature, $> 500^\\circ\\text{C}$)\n   - **E**: Electricity / Energy\n   - **L**: Light (ultraviolet or visible $h\\nu$)\n   - **P**: Peroxides (organic peroxides acting as radical initiators)\n3. Furthermore, **non-polar or gas-phase conditions** prevent electrostatic solvation of ions, ensuring homolytic cleavage over heterolysis."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following chemical species acts as a NEUTRAL ELECTROPHILE?",
+          "image": "",
+          "options": [
+            "Sulfur trioxide ($\\text{SO}_3$)",
+            "Hydronium ion ($\\text{H}_3\\text{O}^+$)",
+            "Ammonium ion ($\\text{NH}_4^+$)",
+            "Hydroxide ion ($\\text{OH}^-$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. An **electrophile** is an electron-deficient species that can accept an electron pair from a nucleophile.\n2. In **sulfur trioxide ($\\text{SO}_3$)**, the central sulfur atom is bonded to three highly electronegative oxygen atoms through polar double bonds. Strong inductive/resonance pull creates a high positive partial charge on the central sulfur ($\\delta+$), allowing sulfur to accept a pair of electrons into its vacant $3d$ orbitals (acts as an electrophile in aromatic sulfonation).\n3. $\\text{H}_3\\text{O}^+$ and $\\text{NH}_4^+$ have complete valence octets and no vacant orbitals; they can only act as proton donors, not direct electron-pair acceptors.\n4. $\\text{OH}^-$ is a negatively charged nucleophile."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the neopentyl carbocation, $(\\text{CH}_3)_3\\text{C}-\\overset{+}{\\text{C}}\\text{H}_2$, the primary driving force for rapid rearrangement is:",
+          "image": "",
+          "options": [
+            "A 1,2-methyl shift converting a less stable primary ($1^\\circ$) carbocation into a highly stable tertiary ($3^\\circ$) carbocation",
+            "A 1,2-hydride shift converting it into a secondary carbocation",
+            "Ring expansion forming a four-membered ring",
+            "Loss of a proton to form an alkyne directly"
+          ],
+          "correctOption": 0,
+          "solution": "1. The neopentyl cation, $(\\text{CH}_3)_3\\text{C}-\\overset{+}{\\text{C}}\\text{H}_2$, is a primary ($1^\\circ$) carbocation with zero $\\alpha$-hydrogens attached to the cationic carbon.\n2. The adjacent $\\beta$-carbon is quaternary, bearing three methyl groups and zero hydrogens (so a 1,2-hydride shift is impossible).\n3. To alleviate steric crowding and achieve greater thermodynamic stability, a methyl group migrates with its bonding pair of electrons (**1,2-methyl / 1,2-methanide shift**):\n   $$(\\text{CH}_3)_3\\text{C}-\\overset{+}{\\text{C}}\\text{H}_2 \\xrightarrow{1,2-\\text{CH}_3^-} \\text{CH}_3-\\overset{+}{\\text{C}}(\\text{CH}_3)-\\text{CH}_2\\text{CH}_3$$\n4. This converts the unstable $1^\\circ$ carbocation into the highly stable **tertiary ($3^\\circ$) 2-methylbutan-2-yl cation** (which has $8\\ \\alpha$-hydrogens)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following carbanions is the LEAST stable?",
+          "image": "",
+          "options": [
+            "$(\\text{CH}_3)_3\\text{C}^-$ (tert-Butyl carbanion)",
+            "$(\\text{CH}_3)_2\\text{CH}^-$ (Isopropyl carbanion)",
+            "$\\text{CH}_3\\text{CH}_2^-$ (Ethyl carbanion)",
+            "$\\text{CH}_3^-$ (Methyl carbanion)"
+          ],
+          "correctOption": 0,
+          "solution": "1. A carbanion is an electron-rich species carrying a full negative charge and a non-bonding lone pair on carbon.\n2. Alkyl groups are electron-donating via the inductive (+I) effect.\n3. The +I effect pushes electron density toward the already negatively charged carbanion carbon, intensifying the negative charge and destabilizing the intermediate.\n4. **$(\\text{CH}_3)_3\\text{C}^-$ (tert-butyl carbanion)** has three +I methyl groups attached to the negative carbon, causing maximum charge concentration and steric repulsion.\n5. Therefore, the stability order of simple alkyl carbanions is:\n   $$\\text{CH}_3^- > 1^\\circ > 2^\\circ > 3^\\circ$$\n   Making the **tert-butyl carbanion the least stable**."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What are the hybridization and molecular geometry of a simple alkyl carbon free radical (such as $\\dot{\\text{C}}\\text{H}_3$)?",
+          "image": "",
+          "options": [
+            "$sp^2$ hybridized with a planar geometry (or shallow rapidly inverting pyramid)",
+            "$sp^3$ hybridized with a rigid pyramidal geometry",
+            "$sp$ hybridized with a linear geometry",
+            "$dsp^2$ hybridized with a square planar geometry"
+          ],
+          "correctOption": 0,
+          "solution": "1. In a simple methyl free radical ($\\dot{\\text{C}}\\text{H}_3$), the central carbon atom is bonded to three hydrogen atoms by $\\sigma$-bonds and possesses one unpaired electron in its valence shell (total $7$ valence electrons).\n2. Experimental electron paramagnetic resonance (EPR) and infrared spectroscopic data show that $\\dot{\\text{C}}\\text{H}_3$ is **$sp^2$-hybridized with a planar geometry** (bond angles $= 120^\\circ$).\n3. The odd, unpaired electron resides in the unhybridized $2p_z$ orbital perpendicular to the molecular plane.\n4. (Heavily substituted or bridgehead radicals can adopt a shallow pyramidal geometry, but invert very rapidly with an extremely low inversion barrier)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An AMBIDENT NUCLEOPHILE is a nucleophile that can attack through two different nucleophilic donor sites. Which of the following is an ambident nucleophile?",
+          "image": "",
+          "options": [
+            "Cyanide ion ($\\text{CN}^-$)",
+            "Ammonia ($\\text{NH}_3$)",
+            "Water ($\\text{H}_2\\text{O}$)",
+            "Ethoxide ion ($\\text{C}_2\\text{H}_5\\text{O}^-$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. An **ambident nucleophile** possesses two nucleophilic centers with lone pairs or negative charge, but can attack an electrophile through only one center at a time.\n2. In the **cyanide ion ($\\text{CN}^-$)**:\n   $$[:\\text{C}\\equiv\\text{N}:]^- \\longleftrightarrow [:\\overset{\\text{..}}{\\text{C}}=\\overset{..}{\\text{N}}:]^-$$\n   - Attack via carbon yields **alkyl cyanides (nitriles, $\\text{R}-\\text{CN}$)**.\n   - Attack via nitrogen yields **alkyl isocyanides (isonitriles, $\\text{R}-\\text{NC}$)**.\n3. Another classic ambident nucleophile is the nitrite ion ($\\text{NO}_2^-$), forming nitroalkanes ($\\text{R}-\\text{NO}_2$) or alkyl nitrites ($\\text{R}-\\text{ONO}$).\n4. Ammonia, water, and ethoxide possess only a single type of nucleophilic donor atom."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When (cyclobutylmethyl) carbocation is generated in a polar solvent, it undergoes spontaneous RING EXPANSION. The product formed after rearrangement is:",
+          "image": "",
+          "options": [
+            "Cyclopentyl cation",
+            "Cyclopropyl cation",
+            "1-Methylcyclobutyl cation",
+            "Bicyclo[2.1.0]pentane"
+          ],
+          "correctOption": 0,
+          "solution": "1. The initial carbocation is (cyclobutylmethyl) cation, where the positive charge is on an exocyclic carbon adjacent to a four-membered ring.\n2. A cyclobutane ring suffers from significant angle strain (bond angles $\\approx 88-90^\\circ$, far below the ideal tetrahedral $109.5^\\circ$) and torsional strain.\n3. One of the adjacent endocyclic $\\text{C}-\\text{C}$ $\\sigma$-bonds of the four-membered ring migrates to the external carbocationic carbon (**1,2-bond shift / ring expansion**).\n4. This converts the strained four-membered ring into a much less strained five-membered ring: the **cyclopentyl carbocation** (bond angles $\\approx 108^\\circ$, releasing significant angle strain).\n5. (A subsequent hydride shift can further convert it to the secondary cyclopentyl cation)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The correct decreasing order of nucleophilicity for the halide anions in a POLAR PROTIC solvent (like water or ethanol) is:",
+          "image": "",
+          "options": [
+            "$\\text{I}^- > \\text{Br}^- > \\text{Cl}^- > \\text{F}^-$",
+            "$\\text{F}^- > \\text{Cl}^- > \\text{Br}^- > \\text{I}^-$",
+            "$\\text{Cl}^- > \\text{Br}^- > \\text{I}^- > \\text{F}^-$",
+            "$\\text{F}^- > \\text{I}^- > \\text{Br}^- > \\text{Cl}^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In **polar protic solvents** (such as $\\text{H}_2\\text{O}$ or $\\text{ROH}$), small anions with high charge density undergo very strong hydrogen bonding with the solvent.\n2. The fluoride ion ($\\text{F}^-$) is tiny and forms a thick, tightly bound cage of solvating water molecules, which shields its lone pairs and drastically reduces its nucleophilic reactivity.\n3. The iodide ion ($\\text{I}^-$) is large, diffuse, and weakly solvated. Furthermore, its outer electron cloud is highly polarizable, allowing it to begin overlapping with the electrophilic carbon from a greater distance.\n4. Therefore, in polar protic solvents, nucleophilicity follows the order of **polarizability and weak solvation**:\n   $$\\text{I}^- > \\text{Br}^- > \\text{Cl}^- > \\text{F}^-$$\n5. (In polar *aprotic* solvents like DMSO or acetone, solvation is absent, and nucleophilicity reverses to follow basicity: $\\text{F}^- > \\text{Cl}^- > \\text{Br}^- > \\text{I}^-$)."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following carbocations will undergo the FASTEST rearrangement via a 1,2-hydride shift to form a more stable carbocation?",
+          "image": "",
+          "options": [
+            "$(\\text{CH}_3)_2\\text{CH}-\\overset{+}{\\text{C}}\\text{H}_2$",
+            "$(\\text{CH}_3)_3\\text{C}-\\overset{+}{\\text{C}}\\text{H}_2$",
+            "$\\text{CH}_3\\text{CH}_2-\\overset{+}{\\text{C}}\\text{H}_2$",
+            "$(\\text{CH}_3)_3\\text{C}^+$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the isobutyl carbocation, **$(\\text{CH}_3)_2\\text{CH}-\\overset{+}{\\text{C}}\\text{H}_2$**, the cationic carbon is primary ($1^\\circ$, only $1\\ \\alpha$-H).\n2. The adjacent $\\beta$-carbon is tertiary and carries a hydrogen atom ($-\\text{CH}-$).\n3. A rapid **1,2-hydride shift** transfers the hydrogen with its electron pair (hydride, $\\text{H}^-$) to the $C_1$ carbon:\n   $$(\\text{CH}_3)_2\\text{CH}-\\overset{+}{\\text{C}}\\text{H}_2 \\xrightarrow{1,2-\\text{H}^-} (\\text{CH}_3)_2\\overset{+}{\\text{C}}-\\text{CH}_3$$\n4. This directly converts the unstable primary carbocation into the highly stable **tert-butyl tertiary ($3^\\circ$) carbocation** with $9\\ \\alpha$-hydrogens.\n5. (Neopentyl cation undergoes a methyl shift because it has no $\\beta$-hydrogen; tert-butyl is already $3^\\circ$ and does not rearrange)."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Dichlorocarbene ($\\mathbf{:\\!\\text{CCl}_2}$) is an important reactive intermediate in the Reimer-Tiemann reaction. What is its hybridization, geometry, and electronic nature?",
+          "image": "",
+          "options": [
+            "$sp^2$ hybridized, bent (angular) geometry, acting as an electrophile",
+            "$sp^3$ hybridized, tetrahedral geometry, acting as a nucleophile",
+            "$sp$ hybridized, linear geometry, acting as a nucleophile",
+            "$sp^2$ hybridized, planar geometry, acting as a radical"
+          ],
+          "correctOption": 0,
+          "solution": "1. Dichlorocarbene ($\\mathbf{:\\!\\text{CCl}_2}$) is a singlet carbene formed by $\\alpha$-elimination from chloroform ($\\text{CHCl}_3$) with strong base:\n   $$\\text{CHCl}_3 + \\text{OH}^- \\rightarrow \\text{CCl}_3^- + \\text{H}_2\\text{O} \\rightarrow :\\!\\text{CCl}_2 + \\text{Cl}^-$$\n2. The central carbon has $6$ valence electrons: two $\\text{C}-\\text{Cl}$ $\\sigma$-bonds, one paired non-bonding lone pair, and one empty $2p$ orbital ($2\\sigma + 1\\text{ lp} = 3$).\n3. This corresponds to **$sp^2$ hybridization with a bent (angular) geometry** (bond angle $\\approx 100-109^\\circ$).\n4. Because its valence octet is incomplete ($6$ electrons), it has a strong tendency to accept a pair of electrons into its empty $p$-orbital, acting as a **neutral electrophile**."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Arrange the following carbanions in order of INCREASING stability:\n(I) $\\text{C}_6\\text{H}_5\\text{CH}_2^-$\n(II) $(\\text{C}_6\\text{H}_5)_2\\text{CH}^-$\n(III) $(\\text{C}_6\\text{H}_5)_3\\text{C}^-$\n(IV) $\\text{CH}_3\\text{CH}_2^-$",
+          "image": "",
+          "options": [
+            "(IV) < (I) < (II) < (III)",
+            "(III) < (II) < (I) < (IV)",
+            "(IV) < (III) < (II) < (I)",
+            "(I) < (II) < (III) < (IV)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Carbanions are stabilized by electron-withdrawing and $\\pi$-conjugating groups that disperse the negative charge through resonance.\n2. A phenyl ring ($\\text{C}_6\\text{H}_5-$) provides extensive resonance stabilization by delocalizing the carbanion lone pair into the aromatic $\\pi$-system at ortho and para positions.\n3. The more phenyl rings attached to the carbanionic carbon, the more canonical resonance contributors can be drawn, and the greater the charge dispersal:\n   - (III) Triphenylmethyl carbanion ($(\\text{C}_6\\text{H}_5)_3\\text{C}^-$): $10$ resonance structures $\\implies$ **most stable**.\n   - (II) Diphenylmethyl carbanion ($(\\text{C}_6\\text{H}_5)_2\\text{CH}^-$): $7$ resonance structures.\n   - (I) Benzyl carbanion ($\\text{C}_6\\text{H}_5\\text{CH}_2^-$): $4$ resonance structures.\n   - (IV) Ethyl carbanion ($\\text{CH}_3\\text{CH}_2^-$): saturated, destabilized by the +I effect of methyl with zero resonance $\\implies$ **least stable**.\n4. Therefore, stability increases as: (IV) < (I) < (II) < (III)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following statements regarding the stability of carbocations and carbanions is INCORRECT?",
+          "image": "",
+          "options": [
+            "Electron-withdrawing groups ($-I, -M$) destabilize carbanions and stabilize carbocations",
+            "Carbocations are Lewis acids, while carbanions are Lewis bases",
+            "An allylic carbocation is more stable than a simple primary alkyl carbocation due to resonance delocalization",
+            "The stability of alkyl carbocations follows the order $3^\\circ > 2^\\circ > 1^\\circ > \\text{methyl}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. A **carbocation** is electron-deficient ($6$ electrons). Electron-withdrawing groups pull electron density away, intensifying the positive charge and **destabilizing** the carbocation.\n2. A **carbanion** is electron-rich ($8$ electrons with negative charge). Electron-withdrawing groups pull electron density away, dispersing the negative charge and **stabilizing** the carbanion.\n3. Statement A claims that electron-withdrawing groups destabilize carbanions and stabilize carbocations, which is completely inverted and incorrect.\nTherefore, Statement A is the incorrect statement."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The relative stability of the following free radicals is:\n$$\\text{C}_6\\text{H}_5\\dot{\\text{C}}\\text{H}_2, \\quad \\text{CH}_2=\\text{CH}-\\dot{\\text{C}}\\text{H}_2, \\quad (\\text{CH}_3)_3\\dot{\\text{C}}, \\quad \\dot{\\text{C}}\\text{H}_3$$\nThe correct decreasing order of stability is:",
+          "image": "",
+          "options": [
+            "$\\text{C}_6\\text{H}_5\\dot{\\text{C}}\\text{H}_2 > \\text{CH}_2=\\text{CH}-\\dot{\\text{C}}\\text{H}_2 > (\\text{CH}_3)_3\\dot{\\text{C}} > \\dot{\\text{C}}\\text{H}_3$",
+            "$(\\text{CH}_3)_3\\dot{\\text{C}} > \\text{C}_6\\text{H}_5\\dot{\\text{C}}\\text{H}_2 > \\text{CH}_2=\\text{CH}-\\dot{\\text{C}}\\text{H}_2 > \\dot{\\text{C}}\\text{H}_3$",
+            "$\\text{CH}_2=\\text{CH}-\\dot{\\text{C}}\\text{H}_2 > \\text{C}_6\\text{H}_5\\dot{\\text{C}}\\text{H}_2 > (\\text{CH}_3)_3\\dot{\\text{C}} > \\dot{\\text{C}}\\text{H}_3$",
+            "$\\dot{\\text{C}}\\text{H}_3 > (\\text{CH}_3)_3\\dot{\\text{C}} > \\text{CH}_2=\\text{CH}-\\dot{\\text{C}}\\text{H}_2 > \\text{C}_6\\text{H}_5\\dot{\\text{C}}\\text{H}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Free radical stability is governed by resonance delocalization followed by hyperconjugation.\n2. In the **benzyl radical ($\\text{C}_6\\text{H}_5\\dot{\\text{C}}\\text{H}_2$)**, the odd electron is delocalized over the entire aromatic ring across $5$ canonical resonance contributors, providing maximum thermodynamic stability.\n3. In the **allyl radical ($\\text{CH}_2=\\text{CH}-\\dot{\\text{C}}\\text{H}_2$)**, the odd electron is delocalized over three carbon atoms across $2$ equivalent resonance structures.\n4. In the **tert-butyl radical ($(\\text{CH}_3)_3\\dot{\\text{C}}$)**, there is no resonance, but it is stabilized by $9\\ \\alpha$-hydrogens via hyperconjugation.\n5. In the **methyl radical ($\\dot{\\text{C}}\\text{H}_3$)**, there is neither resonance nor hyperconjugation ($0\\ \\alpha$-H), making it the least stable.\nTherefore, the stability order is:\n$$\\text{Benzyl} > \\text{Allyl} > 3^\\circ\\text{ Alkyl} > \\text{Methyl}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following species does NOT act as an electrophile?",
+          "image": "",
+          "options": [
+            "$\\text{BF}_4^-$",
+            "$\\text{AlCl}_3$",
+            "$\\text{BF}_3$",
+            "$\\text{NO}_2^+$"
+          ],
+          "correctOption": 0,
+          "solution": "1. An **electrophile** must have an incomplete octet or an accessible low-energy vacant orbital to accept an electron pair.\n2. In **$\\text{BF}_4^-$ (tetrafluoroborate anion)**, the boron atom is covalently bonded to four fluorine atoms ($sp^3$ hybridized). Its valence octet is completely filled with $8$ electrons, and it carries a formal negative charge with no vacant orbitals available.\n3. Therefore, $\\text{BF}_4^-$ **cannot accept electrons and cannot act as an electrophile**.\n4. $\\text{AlCl}_3$ and $\\text{BF}_3$ have incomplete sextets ($6$ valence electrons) and act as neutral Lewis acid electrophiles; $\\text{NO}_2^+$ is a positively charged electrophile."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] What is the major product formed when 3,3-dimethylbutan-2-ol is heated with concentrated sulfuric acid ($\\text{H}_2\\text{SO}_4$)?",
+          "image": "",
+          "options": [
+            "2,3-Dimethylbut-2-ene",
+            "3,3-Dimethylbut-1-ene",
+            "2,3-Dimethylbut-1-ene",
+            "2-Methylpent-2-ene"
+          ],
+          "correctOption": 0,
+          "solution": "1. Protonation of $-\\text{OH}$ and loss of water yields the secondary carbocation:\n   $$\\text{CH}_3-\\text{C}(\\text{CH}_3)_2-\\overset{+}{\\text{C}}\\text{H}-\\text{CH}_3 \\quad (2^\\circ\\text{ carbocation, } 3\\ \\alpha\\text{-H})$$\n2. The adjacent carbon is quaternary. A **1,2-methyl shift** takes place to relieve steric strain and form a more stable tertiary carbocation:\n   $$\\xrightarrow{1,2-\\text{CH}_3^-} \\text{CH}_3-\\overset{+}{\\text{C}}(\\text{CH}_3)-\\text{CH}(\\text{CH}_3)_2 \\quad (3^\\circ\\text{ carbocation, } 7\\ \\alpha\\text{-H})$$\n3. Elimination of a proton ($\\text{H}^+$) according to **Zaitsev's rule** removes hydrogen from the more substituted carbon to yield the most stable, most highly substituted alkene:\n   $$-\\text{H}^+ \\implies (\\text{CH}_3)_2\\text{C}=\\text{C}(\\text{CH}_3)_2 \\quad (\\mathbf{2,3-dimethylbut-2-ene}, 12\\ \\alpha\\text{-H})$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Heterolytic bond fission of a neutral covalent molecule results in the formation of:",
+          "image": "",
+          "options": [
+            "A cation and an anion",
+            "Two neutral free radicals",
+            "Two neutral molecules",
+            "A radical and an ion"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Heterolytic fission (heterolysis)** is the unsymmetrical cleavage of a covalent bond between two atoms having different electronegativities.\n2. The more electronegative atom takes both shared bonding electrons, leaving the less electronegative atom with an empty orbital:\n   $$\\text{A}-\\text{B} \\rightarrow \\text{A}^+ + :\\!\\text{B}^-$$\n3. This unequal bond cleavage invariably generates **charged ionic species: a cation and an anion**."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following carbanions is stabilized by AROMATICITY?",
+          "image": "",
+          "options": [
+            "Cyclopentadienyl anion ($[\\text{C}_5\\text{H}_5]^-$)",
+            "Cycloheptatrienyl anion ($[\\text{C}_7\\text{H}_7]^-$)",
+            "Cyclooctatetraenyl dianion without planarity",
+            "Phenyl carbanion ($\\text{C}_6\\text{H}_5^-$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the **cyclopentadienyl anion ($[\\text{C}_5\\text{H}_5]^-$)**, the carbanion carbon undergoes $sp^2$ hybridization, placing its unshared pair of electrons in an unhybridized $p$-orbital perpendicular to the five-membered ring.\n2. The ring has two conjugated double bonds ($4\\pi$ electrons) and one lone pair ($2\\pi$ electrons), giving a total of **$6\\pi$ delocalized electrons**.\n3. The system is planar, completely cyclic, fully conjugated, and satisfies Hückel's rule: $4n + 2 = 6$ (for $n = 1$).\n4. This imparts **extraordinary aromatic stabilization** to the carbanion, explaining why cyclopentadiene is unusually acidic ($\\text{p}K_a \\approx 16$) compared to standard hydrocarbons."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Triphenylmethyl radical, $(\\text{C}_6\\text{H}_5)_3\\dot{\\text{C}}$, was discovered by Moses Gomberg in 1900 as the first persistent, stable free radical in solution. It exists in dynamic equilibrium with its dimer. What is the structure of this dimer?",
+          "image": "",
+          "options": [
+            "A quinoid dimer formed by coupling between the central carbon of one radical and the para-position of a phenyl ring of another radical (Gomberg's dimer)",
+            "Hexaphenylethane ($(\\text{C}_6\\text{H}_5)_3\\text{C}-\\text{C}(\\text{C}_6\\text{H}_5)_3$)",
+            "A cyclic peroxide dimer",
+            "A benzene-bridged trimer"
+          ],
+          "correctOption": 0,
+          "solution": "1. For over 60 years, it was historically assumed that triphenylmethyl radicals dimerized to hexaphenylethane ($(\\text{C}_6\\text{H}_5)_3\\text{C}-\\text{C}(\\text{C}_6\\text{H}_5)_3$).\n2. However, NMR and X-ray crystallographic studies by Jacobson in 1968 revealed that the six bulky phenyl rings cause severe steric overcrowding, preventing direct head-to-head $\\text{C}-\\text{C}$ coupling between the two central tertiary carbons.\n3. Instead, the radical couples between the central carbon of one radical and the **para-carbon of a phenyl ring** of the second radical, forming a **quinoid dimer (1-(diphenylmethylene)-4-(triphenylmethyl)cyclohexa-2,5-diene)**."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following represents the correct decreasing order of stability for the given carbocations?\n(I) $\\text{CH}_3\\text{O}-\\text{CH}_2-\\overset{+}{\\text{C}}\\text{H}_2$\n(II) $\\text{CH}_3\\text{O}-\\overset{+}{\\text{C}}\\text{H}_2$\n(III) $\\text{CH}_3-\\overset{+}{\\text{C}}\\text{H}_2$",
+          "image": "",
+          "options": [
+            "(II) > (III) > (I)",
+            "(I) > (II) > (III)",
+            "(II) > (I) > (III)",
+            "(III) > (II) > (I)"
+          ],
+          "correctOption": 0,
+          "solution": "1. In **(II) $\\text{CH}_3\\text{O}-\\overset{+}{\\text{C}}\\text{H}_2$**, the methoxy oxygen atom is directly bonded to the carbocationic carbon. The unshared lone pair on oxygen donates strongly into the vacant $p$-orbital of carbon via resonance:\n   $$\\text{CH}_3-\\ddot{\\text{O}}-\\overset{+}{\\text{C}}\\text{H}_2 \\longleftrightarrow \\text{CH}_3-\\overset{+}{\\text{O}}=\\text{CH}_2$$\n   In the second resonance structure, **every atom (including carbon) has a complete octet**, providing exceptional thermodynamic stability (far superior to standard $3^circ$ carbocations).\n2. In **(I) $\\text{CH}_3\\text{O}-\\text{CH}_2-\\overset{+}{\\text{C}}\\text{H}_2$**, the methoxy group is separated from the carbocation by a $-\\text{CH}_2-$ spacer. Resonance donation is impossible. Instead, the electronegative oxygen exerts a strong electron-withdrawing **$-I$ effect**, which destabilizes the carbocation.\n3. In **(III) $\\text{CH}_3-\\overset{+}{\\text{C}}\\text{H}_2$**, the methyl group donates electron density via hyperconjugation ($3\\ \\alpha$-H) and +I, making it more stable than (I).\n4. Therefore, the stability order is: **(II) > (III) > (I)**."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following species is ANTIAROMATIC and therefore highly unstable?",
+          "image": "",
+          "options": [
+            "Cyclopentadienyl cation ($[\\text{C}_5\\text{H}_5]^+$)",
+            "Cyclopentadienyl anion ($[\\text{C}_5\\text{H}_5]^-$)",
+            "Tropylium cation ($[\\text{C}_7\\text{H}_7]^+$)",
+            "Cyclooctatetraenyl dianion ($[\\text{C}_8\\text{H}_8]^{2-}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the **cyclopentadienyl cation ($[\\text{C}_5\\text{H}_5]^+$)**, the five-membered ring is planar and conjugated, possessing two $\\text{C}=\\text{C}$ double bonds ($4\\pi$ electrons) and a vacant $p$-orbital.\n2. The system contains **$4\\pi$ electrons**, which fits the Hückel antiaromatic formula **$4n\\ \\pi$-electrons** where $n = 1$.\n3. Planar cyclic systems with $4n\\ \\pi$-electrons suffer from antiaromatic destabilization, making $[\\text{C}_5\\text{H}_5]^+$ **antiaromatic and extremely unstable**.\n4. (Cyclopentadienyl anion, tropylium cation, and cyclooctatetraenyl dianion all contain $6\\pi$ or $10\\pi$ electrons, satisfying $4n + 2$, and are aromatic)."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Nucleophilicity is a kinetic property measuring the rate of attack on an electrophilic carbon, whereas basicity is a thermodynamic property measuring equilibrium affinity for a proton. Which of the following statements is TRUE?",
+          "image": "",
+          "options": [
+            "Steric hindrance around the nucleophilic atom decreases nucleophilicity significantly without markedly affecting basicity",
+            "Basicity and nucleophilicity always follow identical trends under all conditions",
+            "Steric hindrance increases nucleophilicity",
+            "A weaker base is always a stronger nucleophile"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Basicity** measures the thermodynamic equilibrium of abstracting a small, unhindered proton ($\\text{H}^+$).\n2. **Nucleophilicity** measures the kinetic rate of attack on a crowded, sterically hindered tetrahedral/trigonal carbon atom.\n3. Bulky substituents around the nucleophilic center introduce steric strain during attack at carbon, dramatically reducing nucleophilicity.\n4. For example, **tert-butoxide ($(\\text{CH}_3)_3\\text{CO}^-$)** is a stronger base than ethoxide ($\\text{CH}_3\\text{CH}_2\\text{O}^-$), but because of the steric bulk of the three methyl groups, it is a **much poorer nucleophile** (acts as a non-nucleophilic strong base promoting elimination over substitution)."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the hybridization of the negatively charged carbon in an unconstrained, simple aliphatic carbanion (like $\\text{CH}_3\\text{CH}_2^-$)?",
+          "image": "",
+          "options": [
+            "$sp^3$ with a trigonal pyramidal geometry that undergoes rapid pyramidal inversion",
+            "$sp^2$ with a rigid planar geometry",
+            "$sp$ with a linear geometry",
+            "$dsp^2$ with a square planar geometry"
+          ],
+          "correctOption": 0,
+          "solution": "1. In an isolated, simple aliphatic carbanion (like $\\text{CH}_3^-$ or $\\text{CH}_3\\text{CH}_2^-$), the negatively charged carbon is bonded to three atoms by $\\sigma$-bonds and holds one non-bonding lone pair.\n2. The steric number is $3\\ \\sigma\\text{-bonds} + 1\\text{ lone pair} = 4$, which corresponds to **$sp^3$ hybridization**.\n3. The geometry is **trigonal pyramidal** (isoelectronic with ammonia, $\\text{NH}_3$).\n4. Like ammonia, it undergoes rapid **pyramidal inversion (umbrella inversion)** through a planar $sp^2$ transition state with an extremely low activation barrier, preventing resolution of simple chiral carbanions."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The reaction of 1-bromopropane with aqueous $\\text{KOH}$ proceeds via an $\\text{S}_\\text{N}2$ mechanism. The attacking nucleophile is $\\text{OH}^-$. What is the nature of the transition state?",
+          "image": "",
+          "options": [
+            "A pentacoordinated carbon species where the incoming $\\text{OH}^-$ and outgoing $\\text{Br}^-$ are both partially bonded at $180^\\circ$",
+            "A discrete planar carbocation intermediate",
+            "A free radical intermediate",
+            "A cyclic three-membered intermediate"
+          ],
+          "correctOption": 0,
+          "solution": "1. An $\\text{S}_\\text{N}2$ process is a concerted, single-step bimolecular nucleophilic substitution without any discrete intermediate.\n2. The nucleophile ($\\text{OH}^-$) attacks the substrate from the backside ($180^\\circ$ relative to the leaving group $\\text{Br}^-$).\n3. At the peak of the activation energy barrier, a **pentacoordinate transition state** is formed:\n   $$[\\text{HO}^{\\delta-}\\cdots\\text{CH}_2(\\text{C}_2\\text{H}_5)\\cdots\\text{Br}^{\\delta-}]^\\ddagger$$\n4. The central carbon is approximately $sp^2$-hybridized with three equatorial $\\text{C}-\\text{H}/\\text{C}-\\text{R}$ bonds in a plane, while the incoming nucleophile and departing leaving group share an axial $p$-orbital at $180^\\circ$."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following compounds forms the MOST STABLE free radical upon homolytic cleavage of a $\\text{C}-\\text{H}$ bond?",
+          "image": "",
+          "options": [
+            "Toluene ($\\text{C}_6\\text{H}_5\\text{CH}_3$)",
+            "Methane ($\\text{CH}_4$)",
+            "Ethane ($\\text{CH}_3\\text{CH}_3$)",
+            "Isobutane ($(\\text{CH}_3)_3\\text{CH}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Homolysis of a benzylic $\\text{C}-\\text{H}$ bond in **toluene ($\\text{C}_6\\text{H}_5\\text{CH}_3$)** produces the **benzyl free radical ($\\text{C}_6\\text{H}_5\\dot{\\text{C}}\\text{H}_2$)**.\n2. In the benzyl radical, the unpaired electron is conjugated with the aromatic $\\pi$-system, delocalizing across the benzene ring through multiple resonance structures.\n3. The bond dissociation energy of the benzylic $\\text{C}-\\text{H}$ bond in toluene is only $\\approx 368\\text{ kJ mol}^{-1}$ (significantly lower than $390\\text{ kJ mol}^{-1}$ for $3^\\circ$ $\\text{C}-\\text{H}$ in isobutane and $435\\text{ kJ mol}^{-1}$ in methane).\n4. A lower bond dissociation energy reflects the **highest stability of the resulting benzyl radical**."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] When 2-bromobutane is treated with alcoholic $\\text{KOH}$, but-2-ene is formed as the major product. The elimination proceeds through which reactive pathway?",
+          "image": "",
+          "options": [
+            "E2 mechanism with anti-periplanar transition state following Zaitsev's rule",
+            "E1cB mechanism with a persistent carbanion intermediate",
+            "Free radical substitution",
+            "Electrophilic addition"
+          ],
+          "correctOption": 0,
+          "solution": "1. Dehydrohalogenation of secondary alkyl halides with a strong base (like alcoholic $\\text{KOH}$, which contains $\\text{C}_2\\text{H}_5\\text{O}^-$) follows a concerted **E2 mechanism**.\n2. The base abstracts a $\\beta$-proton while the halide leaving group departs simultaneously from the opposite side in an **anti-periplanar geometry** ($180^\\circ$ dihedral angle).\n3. Elimination obeys **Zaitsev's (Saytzeff's) rule**, removing a proton from the less-hydrogenated $\\beta$-carbon to yield the more substituted, thermodynamically more stable alkene: **but-2-ene** (with $6\\ \\alpha$-hydrogens) as the major product."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following carbocations will NOT undergo rearrangement?",
+          "image": "",
+          "options": [
+            "$(\\text{CH}_3)_3\\text{C}^+$",
+            "$\\text{CH}_3\\text{CH}_2\\text{CH}_2\\overset{+}{\\text{C}}\\text{H}_2$",
+            "$(\\text{CH}_3)_2\\text{CH}\\overset{+}{\\text{C}}\\text{H}_2$",
+            "$\\text{CH}_3\\overset{+}{\\text{C}}\\text{H}\\text{CH}_2\\text{CH}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. A carbocation undergoes rearrangement only if a 1,2-shift (hydride, alkyl, or ring expansion) can produce an intermediate that is **more thermodynamically stable** than the original carbocation.\n2. In **$(\\text{CH}_3)_3\\text{C}^+$ (tert-butyl cation)**, the central carbon is already tertiary ($3^\\circ$), with $9\\ \\alpha$-hydrogens participating in hyperconjugation.\n3. Any 1,2-hydride or methyl migration would convert it into an unstable primary ($1^\\circ$) carbocation, which is energetically unfavorable.\n4. Therefore, **$(\\text{CH}_3)_3\\text{C}^+$ does not rearrange**."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Among the following molecules, which one has the STRONGEST conjugate base (i.e., produces the most unstable carbanion upon deprotonation)?",
+          "image": "",
+          "options": [
+            "Ethane ($\\text{CH}_3\\text{CH}_3$)",
+            "Ethyne ($\\text{HC}\\equiv\\text{CH}$)",
+            "Ethene ($\\text{CH}_2=\\text{CH}_2$)",
+            "Cyclopentadiene"
+          ],
+          "correctOption": 0,
+          "solution": "1. The strength of a base is inversely related to the stability of its conjugate carbanion (weaker acid $\\implies$ stronger, more reactive conjugate base).\n2. Acidity order of hydrocarbons:  \n   $$\\text{Cyclopentadiene} (\\text{p}K_a \\approx 16) > \\text{Ethyne} (\\text{p}K_a \\approx 25) > \\text{Ethene} (\\text{p}K_a \\approx 44) > \\text{Ethane} (\\text{p}K_a \\approx 50)$$\n3. Because ethane has the lowest percentage of $s$-character ($sp^3, 25\\%$) and lacks resonance, its conjugate base, the **ethyl carbanion ($\\text{CH}_3\\text{CH}_2^-$)**, is the least stable.\n4. The least stable carbanion has the greatest affinity to capture a proton, making it the **strongest conjugate base**."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the chlorination of methane in the presence of diffuse sunlight, the propagation steps involve which reactive intermediate?",
+          "image": "",
+          "options": [
+            "Methyl free radical ($\\dot{\\text{C}}\\text{H}_3$)",
+            "Methyl carbocation ($\\overset{+}{\\text{C}}\\text{H}_3$)",
+            "Methyl carbanion ($:\\overset{-}{\\text{C}}\\text{H}_3$)",
+            "Methylene carbene ($\\mathbf{:\\!\\text{CH}_2}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Free radical chlorination of methane proceeds via a three-stage chain mechanism:\n   - **Initiation:** Homolysis of chlorine by ultraviolet light: $\\text{Cl}_2 \\xrightarrow{h\\nu} 2\\text{Cl}^\\bullet$.\n   - **Propagation Step 1:** Chlorine radical abstracts hydrogen to form a **methyl radical**:  \n     $$\\text{CH}_4 + \\text{Cl}^\\bullet \\rightarrow \\dot{\\text{C}}\\text{H}_3 + \\text{HCl}$$\n   - **Propagation Step 2:** Methyl radical attacks another chlorine molecule:  \n     $$\\dot{\\text{C}}\\text{H}_3 + \\text{Cl}_2 \\rightarrow \\text{CH}_3\\text{Cl} + \\text{Cl}^\\bullet$$\n2. The key reactive organic intermediate is the **methyl free radical ($\\dot{\\text{C}}\\text{H}_3$)**."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following carbocations is LEAST stable?",
+          "image": "",
+          "options": [
+            "$\\text{CH}_2=\\overset{+}{\\text{C}}\\text{H}$ (Vinyl carbocation)",
+            "$\\text{CH}_3-\\overset{+}{\\text{C}}\\text{H}_2$ (Ethyl carbocation)",
+            "$\\text{CH}_2=\\text{CH}-\\overset{+}{\\text{C}}\\text{H}_2$ (Allyl carbocation)",
+            "$\\text{C}_6\\text{H}_5-\\overset{+}{\\text{C}}\\text{H}_2$ (Benzyl carbocation)"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the **vinyl carbocation ($\\text{CH}_2=\\overset{+}{\\text{C}}\\text{H}$)**, the positive charge resides on an **$sp$-hybridized carbon atom**.\n2. An $sp$-hybridized carbon has $50\\%\\ s$-character and is highly electronegative.\n3. Placing a positive charge on an electronegative $sp$ carbon is energetically unfavorable.\n4. Furthermore, the vacant $p$-orbital is perpendicular to the adjacent $\\pi$-bond, so no resonance overlap can occur.\n5. Therefore, vinyl and phenyl carbocations are **significantly less stable than simple $1^\\circ$ alkyl carbocations**."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In polar aprotic solvents like dimethyl sulfoxide (DMSO) or acetone, the nucleophilicity order of halide ions is:",
+          "image": "",
+          "options": [
+            "$\\text{F}^- > \\text{Cl}^- > \\text{Br}^- > \\text{I}^-$",
+            "$\\text{I}^- > \\text{Br}^- > \\text{Cl}^- > \\text{F}^-$",
+            "$\\text{Cl}^- > \\text{Br}^- > \\text{I}^- > \\text{F}^-$",
+            "$\\text{I}^- > \\text{F}^- > \\text{Br}^- > \\text{Cl}^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Polar aprotic solvents** (such as DMSO, DMF, or acetone) have dipole moments to solvate cations effectively, but **lack acidic hydrogens ($\\text{O}-\\text{H}$ or $\\text{N}-\\text{H}$)** to form hydrogen bonds with anions.\n2. Consequently, anions are 'naked' (unsolvated) in polar aprotic media.\n3. Because the anions are unshielded, nucleophilicity parallels their true **basicity and charge density**:\n   - Fluoride ($\\text{F}^-$) is tiny with localized high charge density, making it the most reactive and unhindered nucleophile.\n   - Iodide ($\\text{I}^-$) has diffuse charge and is least basic.\n4. Therefore, in polar aprotic solvents, the nucleophilicity order is:\n   $$\\text{F}^- > \\text{Cl}^- > \\text{Br}^- > \\text{I}^-$$"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Addition of $\\text{HBr}$ to propene in the presence of benzoyl peroxide yields 1-bromopropane (anti-Markovnikov's product) via the Kharasch effect. Why does this peroxide effect NOT work for $\\text{HCl}$ or $\\text{HI}$?",
+          "image": "",
+          "options": [
+            "The $\\text{H}-\\text{Cl}$ bond is too strong for homolytic cleavage by alkoxy radicals (endothermic step 1), while for $\\text{HI}$, iodine radicals preferentially recombine into $\\text{I}_2$ rather than adding to the double bond (endothermic step 2)",
+            "$\\text{HCl}$ is a gas and $\\text{HI}$ is a liquid",
+            "Peroxides react violently with $\\text{HCl}$",
+            "Both $\\text{HCl}$ and $\\text{HI}$ undergo heterolysis exclusively"
+          ],
+          "correctOption": 0,
+          "solution": "For a free-radical chain addition to proceed efficiently, both propagation steps must be exothermic:\n1. **For $\\text{HBr}$:** Both propagation steps (addition of $\\text{Br}^\\bullet$ to alkene and abstraction of $\\text{H}^\\bullet$ from $\\text{HBr}$ by alkyl radical) are exothermic, so the chain reaction proceeds.\n2. **For $\\text{HCl}$:** The $\\text{H}-\\text{Cl}$ bond is exceptionally strong ($431\\text{ kJ mol}^{-1}$). The abstraction of hydrogen by alkyl radicals is endothermic, breaking the chain.\n3. **For $\\text{HI}$:** The $\\text{H}-\\text{I}$ bond is weak ($299\\text{ kJ mol}^{-1}$), but the addition of the large iodine radical ($\\text{I}^\\bullet$) to the double bond is endothermic. Instead, iodine radicals recombine rapidly into molecular iodine ($2\\text{I}^\\bullet \\rightarrow \\text{I}_2$).\nTherefore, the peroxide effect is **strictly unique to $\\text{HBr}$**."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following carbanions is stabilized through $-M$ (mesomeric) delocalization?",
+          "image": "",
+          "options": [
+            "$\\text{CH}_3-\\text{CO}-\\overset{-}{\\text{C}}\\text{H}_2$ (Acetonyl anion)",
+            "$\\text{CH}_3-\\text{CH}_2-\\overset{-}{\\text{C}}\\text{H}_2$",
+            "$(\\text{CH}_3)_2\\overset{-}{\\text{C}}\\text{H}$",
+            "$(\\text{CH}_3)_3\\text{C}^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the **acetonyl carbanion ($\\text{CH}_3-\\text{CO}-\\overset{-}{\\text{C}}\\text{H}_2$)**, the negative charge is located on a carbon directly adjacent to an electron-withdrawing carbonyl group ($\\text{C}=\\text{O}$).\n2. The carbanion lone pair undergoes continuous resonance delocalization into the $\\pi^*$ orbital of the carbonyl unit, shifting the negative charge onto the highly electronegative oxygen atom (forming an **enolate anion**):\n   $$\\text{CH}_3-\\text{C}(=\\text{O})-\\overset{-}{\\text{C}}\\text{H}_2 \\longleftrightarrow \\text{CH}_3-\\text{C}(\\text{O}^-)=\\text{CH}_2$$\n3. This **$-M$ (mesomeric) stabilization** makes $\\alpha$-hydrogens of carbonyl compounds remarkably acidic.\n4. Alkyl carbanions lack conjugated multiple bonds and are destabilized by +I effects."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the major product obtained when 1-methylcyclohexene reacts with $\\text{HBr}$ in the absence of peroxides?",
+          "image": "",
+          "options": [
+            "1-Bromo-1-methylcyclohexane",
+            "1-Bromo-2-methylcyclohexane",
+            "Bromomethylcyclohexane",
+            "(1-Bromomethyl)cyclohex-1-ene"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electrophilic addition of $\\text{HBr}$ across an unsymmetrical alkene follows **Markovnikov's rule** via carbocation intermediates.\n2. Electrophilic attack by $\\text{H}^+$ on the double bond of 1-methylcyclohexene occurs at the less substituted $C_2$ carbon to form the **more stable tertiary ($3^\\circ$) carbocation** at $C_1$ (bearing the methyl substituent, stabilized by $7\\ \\alpha$-hydrogens).\n3. Subsequent rapid nucleophilic capture of the tertiary carbocation by bromide ion ($\\text{Br}^-$) yields **1-bromo-1-methylcyclohexane** as the exclusive major product."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A singlet carbene differs from a triplet carbene in that a singlet carbene has:",
+          "image": "",
+          "options": [
+            "$sp^2$ hybridization with both unshared electrons paired with opposite spins in a single hybrid orbital (diamagnetic)",
+            "$sp$ hybridization with two unpaired electrons in separate orbitals (paramagnetic)",
+            "Zero bond angles",
+            "Three covalent bonds"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Singlet carbene:** The carbon atom is **$sp^2$-hybridized** with a bent geometry. Both non-bonding electrons reside in the **same $sp^2$ hybrid orbital with paired opposite spins** (spin multiplicity $2S + 1 = 1$). It is **diamagnetic** and has an empty $2p_z$ orbital.\n2. **Triplet carbene:** The carbon atom is **$sp$-hybridized** with a linear or quasi-bent geometry. The two non-bonding electrons occupy **two degenerate unhybridized $p$-orbitals singly with parallel spins** (spin multiplicity $2S + 1 = 3$). It is a diradical and **paramagnetic** (and generally more stable than singlet carbene in the gas phase by Hund's rule)."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following is an example of a HARD NUCLEOPHILE with high charge density and low polarizability?",
+          "image": "",
+          "options": [
+            "Hydroxide ion ($\\text{OH}^-$)",
+            "Iodide ion ($\\text{I}^-$)",
+            "Thiolate ion ($\\text{RS}^-$)",
+            "Triphenylphosphine ($(\\text{C}_6\\text{H}_5)_3\\text{P}$)"
+          ],
+          "correctOption": 0,
+          "solution": "According to Pearson's Hard and Soft Acids and Bases (HSAB) principle:\n1. **Hard nucleophiles:** Small donor atoms with high electronegativity, high charge density, tightly held non-bonding valence electrons, and **low polarizability** (e.g., **$\\text{OH}^-, \\text{F}^-, \\text{H}_2\\text{O}, \\text{RO}^-$**).\n2. **Soft nucleophiles:** Large donor atoms with lower electronegativity, diffuse electron clouds, and **high polarizability** (e.g., $\\text{I}^-, \\text{RS}^-, \\text{CN}^-, (\\text{C}_6\\text{H}_5)_3\\text{P}$).\nTherefore, $\\text{OH}^-$ is a classic hard nucleophile."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following compounds reacts FASTEST with silver nitrate ($\\text{AgNO}_3$) in ethanol to precipitate $\\text{AgBr}$?",
+          "image": "",
+          "options": [
+            "Allyl bromide ($\\text{CH}_2=\\text{CH}-\\text{CH}_2\\text{Br}$)",
+            "Vinyl bromide ($\\text{CH}_2=\\text{CHBr}$)",
+            "Bromobenzene ($\\text{C}_6\\text{H}_5\\text{Br}$)",
+            "Propyl bromide ($\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{Br}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Reaction with ethanolic $\\text{AgNO}_3$ proceeds via an **$\\text{S}_\\text{N}1$ mechanism** where the rate-determining step is the unimolecular ionization of the carbon-bromine bond to form a carbocation:\n   $$\\text{R}-\\text{Br} + \\text{Ag}^+ \\rightarrow \\text{R}^+ + \\text{AgBr} \\downarrow$$\n2. The reaction rate is directly governed by the stability of the carbocation $\\text{R}^+$.\n3. Ionization of **allyl bromide** produces the **allyl carbocation ($\\text{CH}_2=\\text{CH}-\\overset{+}{\\text{C}}\\text{H}_2$)**, which is stabilized by resonance delocalization.\n4. Propyl bromide forms an unstable $1^\\circ$ carbocation; vinyl bromide and bromobenzene do not ionize because $sp^2$ partial double-bond character prevents carbocation formation.\n5. Therefore, allyl bromide reacts fastest."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] When pentan-2-ol is heated with $85\\%\\ \\text{H}_3\\text{PO}_4$, the major dehydration product obtained is:",
+          "image": "",
+          "options": [
+            "trans-Pent-2-ene",
+            "cis-Pent-2-ene",
+            "Pent-1-ene",
+            "Cyclopentane"
+          ],
+          "correctOption": 0,
+          "solution": "1. Protonation of pentan-2-ol followed by loss of water yields the secondary pentan-2-yl carbocation: $\\text{CH}_3-\\overset{+}{\\text{C}}\\text{H}-\\text{CH}_2\\text{CH}_2\\text{CH}_3$.\n2. Elimination of a $\\beta$-proton gives two positional alkene isomers:\n   - Loss of $\\text{H}^+$ from $C_1 \\implies$ pent-1-ene (Hofmann product, $2\\ \\alpha$-H).\n   - Loss of $\\text{H}^+$ from $C_3 \\implies$ pent-2-ene (Zaitsev product, $5\\ \\alpha$-H).\n3. Between the two stereoisomers of pent-2-ene, **trans-pent-2-ene** has the two bulky alkyl groups (methyl and ethyl) located on opposite sides of the double bond, minimizing steric repulsion.\n4. Therefore, **trans-pent-2-ene is thermodynamically more stable** and is formed as the predominant major product."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following free radicals has the SHORTEST half-life (is most reactive and least stable)?",
+          "image": "",
+          "options": [
+            "$\\dot{\\text{C}}\\text{H}_3$ (Methyl radical)",
+            "$(\\text{CH}_3)_3\\dot{\\text{C}}$ (tert-Butyl radical)",
+            "$(\\text{C}_6\\text{H}_5)_3\\dot{\\text{C}}$ (Triphenylmethyl radical)",
+            "$\\text{CH}_2=\\text{CH}-\\dot{\\text{C}}\\text{H}_2$ (Allyl radical)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Free radical stability is directly correlated with lifespan/half-life: more stable radicals persist longer, while less stable radicals are highly reactive and disappear rapidly.\n2. The **methyl radical ($\\dot{\\text{C}}\\text{H}_3$)** has no hyperconjugative $\\alpha$-hydrogens ($0\\ \\alpha$-H) and no adjacent $\\pi$-bonds for resonance delocalization.\n3. It possesses the highest potential energy and the **shortest half-life**, reacting instantaneously with solvent molecules, other radicals, or molecular oxygen.\n4. (Triphenylmethyl is stable enough to persist indefinitely in equilibrium with its dimer)."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In an $\\text{S}_\\text{N}1$ reaction of an optically active alkyl halide (such as $(R)$-2-bromooctane) with water, the stereochemical outcome is:",
+          "image": "",
+          "options": [
+            "Racemization with partial net inversion of configuration",
+            "Complete $100\\%$ retention of configuration",
+            "Complete $100\\%$ inversion of configuration",
+            "Complete elimination with zero substitution"
+          ],
+          "correctOption": 0,
+          "solution": "1. An $\\text{S}_\\text{N}1$ reaction proceeds via a planar, achiral **$sp^2$-hybridized carbocation intermediate**.\n2. Attack by the incoming nucleophile ($\\text{H}_2\\text{O}$) can occur with equal geometric probability from either the front face (leading to retention) or back face (leading to inversion).\n3. However, in solution, the departing leaving group ($\\text{Br}^-$) lingers in the vicinity of the front face as an **intimate ion pair**, partially shielding the front side from immediate nucleophilic attack.\n4. As a result, backside attack occurs slightly more frequently than frontside attack, producing **racemization accompanied by partial net inversion of configuration**."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following species has an empty p-orbital and acts as an electrophile?",
+          "image": "",
+          "options": [
+            "$\\text{BF}_3$",
+            "$\\text{NH}_3$",
+            "$\\text{H}_2\\text{O}$",
+            "$\\text{CH}_4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In **boron trifluoride ($\\text{BF}_3$)**, the central boron atom forms three single covalent bonds with fluorine atoms using $sp^2$ hybrid orbitals.\n2. Boron has only $6$ valence electrons (incomplete octet).\n3. The unhybridized $2p_z$ orbital of boron remains **completely empty and oriented perpendicular to the trigonal plane**.\n4. This empty $p$-orbital readily accepts a lone pair of electrons from Lewis bases (like ammonia or ether), making $\\text{BF}_3$ a classic Lewis acid electrophile."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The relative basicities of alkyl amines in AQUEOUS SOLUTION follow an anomalous order due to a combined interplay of inductive, steric, and hydration effects. For methyl-substituted amines in water, the correct order of basicity is:",
+          "image": "",
+          "options": [
+            "$(\\text{CH}_3)_2\\text{NH} > \\text{CH}_3\\text{NH}_2 > (\\text{CH}_3)_3\\text{N} > \\text{NH}_3$",
+            "$(\\text{CH}_3)_3\\text{N} > (\\text{CH}_3)_2\\text{NH} > \\text{CH}_3\\text{NH}_2 > \\text{NH}_3$",
+            "$\\text{CH}_3\\text{NH}_2 > (\\text{CH}_3)_2\\text{NH} > (\\text{CH}_3)_3\\text{N} > \\text{NH}_3$",
+            "$(\\text{CH}_3)_2\\text{NH} > (\\text{CH}_3)_3\\text{N} > \\text{CH}_3\\text{NH}_2 > \\text{NH}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "In aqueous solution, the basicity of aliphatic amines depends on three competing factors:\n1. **+I effect of alkyl groups:** stabilizes the conjugate ammonium cation ($3^\\circ > 2^\\circ > 1^\\circ > \\text{NH}_3$).\n2. **Hydration energy of conjugate cation:** hydrogen bonding with water stabilizes smaller cations ($1^\\circ > 2^\\circ > 3^\\circ$).\n3. **Steric hindrance of alkyl groups:** hinders protonation ($1^\\circ > 2^\\circ > 3^\\circ$).\nFor methyl-substituted amines, the balance of these three factors yields the **$2^\\circ > 1^\\circ > 3^\\circ > \\text{NH}_3$** order:\n$$(\\text{CH}_3)_2\\text{NH} > \\text{CH}_3\\text{NH}_2 > (\\text{CH}_3)_3\\text{N} > \\text{NH}_3$$\n(For ethyl-substituted amines, the order is $2^\\circ > 3^\\circ > 1^\\circ > \\text{NH}_3$)."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A benzyl carbocation ($\\text{C}_6\\text{H}_5\\overset{+}{\\text{C}}\\text{H}_2$) is stabilized by resonance. What is the total number of canonical resonance contributors (including the original Kekulé structures) that describe this carbocation?",
+          "image": "",
+          "options": [
+            "$4$",
+            "$2$",
+            "$3$",
+            "$5$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the benzyl carbocation, the positive charge is delocalized into the aromatic ring by overlapping with the ortho and para positions:\n   - Structure 1: Positive charge on exocyclic carbon (Kekulé form A).\n   - Structure 2: Double bond to exocyclic carbon with positive charge at ortho-position.\n   - Structure 3: Positive charge at para-position.\n   - Structure 4: Positive charge at the other ortho-position.\n2. In standard NCERT/NEET conventions, the positive charge is delocalized over the three ring positions and the exocyclic carbon, represented by **$4$ resonance contributors**."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following represents the correct order of decreasing stability for the given carbocations?\n(I) $\\text{CH}_2=\\text{CH}-\\overset{+}{\\text{C}}\\text{H}_2$\n(II) $\\text{CH}_3-\\overset{+}{\\text{C}}\\text{H}-\\text{CH}_3$\n(III) $\\text{CH}_3\\text{CH}_2\\overset{+}{\\text{C}}\\text{H}_2$",
+          "image": "",
+          "options": [
+            "(I) $\\approx$ (II) > (III)",
+            "(III) > (II) > (I)",
+            "(I) > (III) > (II)",
+            "(III) > (I) > (II)"
+          ],
+          "correctOption": 0,
+          "solution": "1. (I) **Allyl carbocation ($\\text{CH}_2=\\text{CH}-\\overset{+}{\\text{C}}\\text{H}_2$)**: Stabilized by resonance across two equivalent positions.\n2. (II) **Isopropyl carbocation ($\\text{CH}_3-\\overset{+}{\\text{C}}\\text{H}-\\text{CH}_3$)**: Secondary carbocation stabilized by $6\\ \\alpha$-hydrogens via hyperconjugation and two +I methyl groups.\n3. Thermodynamically, the resonance energy of a simple primary allylic carbocation is comparable in magnitude to the hyperconjugative stabilization of a secondary alkyl carbocation ($6\\ \\alpha$-H), making their stabilities nearly equal: **(I) $\\approx$ (II)**.\n4. (III) **Propyl carbocation ($\\text{CH}_3\\text{CH}_2\\overset{+}{\\text{C}}\\text{H}_2$)**: Primary carbocation with only $2\\ \\alpha$-hydrogens, making it substantially less stable than both.\nTherefore, the order is: **(I) $\\approx$ (II) > (III)**."
+        }
+      ]
+    }
+  ]
+}
