@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-30-p-block-group-13-14",
+  "title": "p-Block Elements: Group 13 & 14 (Electronic Configuration, Trends, Inert Pair Effect, & Anomalous Properties)",
+  "syllabus": "General characteristics of p-block elements; Group 13 (Boron family: B, Al, Ga, In, Tl): electronic configurations, atomic and ionic radii trends (gallium anomaly vs aluminium), ionization enthalpies (irregularities in succession), electropositivity, oxidation states (+3 vs +1) and the inert pair effect; Relative stabilities of Tl(I) vs Tl(III); Anomalous behavior and unique properties of boron, diagonal relationship between B and Si; Electron deficiency of boron compounds, Lewis acid behavior of boron trihalides (order of Lewis acidity: BI3 > BBr3 > BCl3 > BF3 due to pπ-pπ back-bonding); Structure and banana bonds of diborane (B2H6, 3c-2e bonds); Group 14 (Carbon family: C, Si, Ge, Sn, Pb): electronic configurations, atomic and ionic radii, ionization enthalpies, electronegativity, physical states, allotropy; Catenation tendencies (C >> Si > Ge ≈ Sn); Oxidation states (+4 vs +2) and the inert pair effect (stability: Pb(II) > Pb(IV), Ge(IV) > Ge(II), oxidizing power of PbO2, reducing behavior of SnCl2); Anomalous behavior of carbon (multiple bonding, pπ-pπ bonds vs heavier dπ-pπ bonds); Allotropes of carbon: diamond (sp3), graphite (sp2, electrical conductivity, lubricative nature), and fullerenes (C60, buckyball, aromatic nature); Oxides and halides of Group 14 elements (CO, CO2, SiO2 network covalent structure, silicones, silicates, zeolites qualitative overview)",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The atomic radius of gallium ($135\\text{ pm}$) is slightly SMALLER than that of aluminium ($143\\text{ pm}$), even though gallium is placed directly below aluminium in Group 13. This anomaly is attributed to:",
+          "image": "",
+          "options": [
+            "Poor screening effect of the intervening ten $3d$ electrons in gallium, resulting in higher effective nuclear charge",
+            "Strong screening effect of the $3d$ electrons in gallium",
+            "Presence of empty $4d$ orbitals in gallium",
+            "Dimerization of gallium atoms in the elemental state"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electronic configuration of Aluminium ($Z = 13$): $[\\text{Ne}] 3s^2 3p^1$.\n2. Electronic configuration of Gallium ($Z = 31$): $[\\text{Ar}] 3d^{10} 4s^2 4p^1$.\n3. Across the intervening $3d$ transition elements, ten protons are added to the nucleus along with ten $3d$ electrons.\n4. Because $d$-orbitals are spatially diffuse, they have very **poor shielding/screening capability** on the outer $4s$ and $4p$ electrons.\n5. As a result, the effective nuclear charge ($Z_{\\text{eff}}$) experienced by the outer electrons in gallium increases significantly, pulling the valence electrons inward and causing its atomic radius ($135\\text{ pm}$) to be smaller than that of aluminium ($143\\text{ pm}$)."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following arrangements correctly represents the order of increasing Lewis acid strength for the boron trihalides?",
+          "image": "",
+          "options": [
+            "$\\text{BF}_3 < \\text{BCl}_3 < \\text{BBr}_3 < \\text{BI}_3$",
+            "$\\text{BI}_3 < \\text{BBr}_3 < \\text{BCl}_3 < \\text{BF}_3$",
+            "$\\text{BF}_3 < \\text{BI}_3 < \\text{BCl}_3 < \\text{BBr}_3$",
+            "$\\text{BCl}_3 < \\text{BBr}_3 < \\text{BI}_3 < \\text{BF}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In boron trihalides, the central boron atom is $sp^2$-hybridized with an incomplete octet ($6$ valence electrons) and an empty unhybridized $2p$ orbital, making them Lewis acids.\n2. In $\\text{BF}_3$, the small $2p$ orbital of fluorine overlaps effectively with the empty $2p$ orbital of boron, undergoing significant **$2p\\pi-2p\\pi$ back-bonding**, which partially satisfies the electron deficiency of boron and reduces its Lewis acidity.\n3. In $\\text{BCl}_3, \\text{BBr}_3,$ and $\\text{BI}_3$, back-donation involves larger $3p, 4p,$ and $5p$ orbitals of the halogens. Due to the large energy mismatch and diffuse nature of these orbitals, $p\\pi-p\\pi$ back-bonding decreases drastically from $\\text{Cl}$ to $\\text{I}$.\n4. In $\\text{BI}_3$, back-bonding is practically negligible, leaving the boron atom strongly electron-deficient.\n5. Therefore, the order of increasing Lewis acidity is:\n$$\\text{BF}_3 < \\text{BCl}_3 < \\text{BBr}_3 < \\text{BI}_3$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The stability of the $+1$ oxidation state in Group 13 and the $+2$ oxidation state in Group 14 increases systematically down the groups ($\\text{Tl}^+ > \\text{Tl}^{3+}$ and $\\text{Pb}^{2+} > \\text{Pb}^{4+}$). This phenomenon is known as the:",
+          "image": "",
+          "options": [
+            "Inert pair effect",
+            "Screening effect",
+            "Lanthanoid contraction",
+            "Electromeric effect"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the heavier post-transition elements of Groups 13, 14, and 15, the valence shell $ns$ electrons are preceded by filled inner $(n-1)d^{10}$ and $(n-2)f^{14}$ subshells.\n2. Because $d$ and $f$ electrons have poor shielding power, the effective nuclear charge on the outermost $ns$ pair is exceptionally strong, drawing the $ns$ orbital closer to the nucleus.\n3. Consequently, the valence $ns^2$ electrons remain tightly held and unshared, resisting participation in chemical bonding.\n4. This reluctance of the outermost $s$-electron pair to engage in bonding is the **inert pair effect**, stabilizing oxidation states that are $2$ units lower than the group maximum for heavier elements (e.g., $\\text{Tl}^+$ and $\\text{Pb}^{2+}$)."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In diborane ($\\text{B}_2\\text{H}_6$), which of the following types of chemical bonds are present?",
+          "image": "",
+          "options": [
+            "Four two-center two-electron ($2c-2e$) terminal bonds and two three-center two-electron ($3c-2e$) bridging bonds",
+            "Two two-center two-electron terminal bonds and four three-center two-electron bridging bonds",
+            "Six two-center two-electron bonds",
+            "Four three-center two-electron bonds and two two-center two-electron bonds"
+          ],
+          "correctOption": 0,
+          "solution": "In diborane ($\\text{B}_2\\text{H}_6$):\n1. Each boron atom is approximately $sp^3$-hybridized.\n2. The four terminal hydrogen atoms lie in one plane, forming four normal, localized **two-center two-electron ($2c-2e$) $\\text{B}-\\text{H}$ covalent bonds** ($4\\text{ bonds} \\times 2e^- = 8\\text{ electrons}$).\n3. The remaining two hydrogen atoms act as bridges above and below the molecular plane. Each bridge involves an overlap of two boron $sp^3$ hybrid orbitals with the $1s$ orbital of a hydrogen atom.\n4. These two bridging linkages are **three-center two-electron ($3c-2e$) 'banana' bonds** ($2\\text{ bonds} \\times 2e^- = 4\\text{ electrons}$).\n5. Together, this accounts for all $12$ valence electrons in $\\text{B}_2\\text{H}_6$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In buckminsterfullerene ($\\text{C}_{60}$), the total number of six-membered (hexagonal) and five-membered (pentagonal) carbon rings present in the spherical cage is:",
+          "image": "",
+          "options": [
+            "$20$ hexagons and $12$ pentagons",
+            "$12$ hexagons and $20$ pentagons",
+            "$24$ hexagons and $12$ pentagons",
+            "$18$ hexagons and $14$ pentagons"
+          ],
+          "correctOption": 0,
+          "solution": "1. Buckminsterfullerene ($\\text{C}_{60}$) possesses a truncated icosahedron geometry shaped like a soccer ball.\n2. The cage structure consists of fused rings containing:\n   - **$20$ hexagonal (six-membered) rings**\n   - **$12$ pentagonal (five-membered) rings**\n3. In $\\text{C}_{60}$, each six-membered ring is fused to both other six-membered rings and five-membered rings, but each five-membered ring is fused **exclusively to six-membered rings** (pentagons never share an edge, satisfying the isolated pentagon rule)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Why does graphite conduct electricity along its layers, whereas diamond acts as an electrical insulator?",
+          "image": "",
+          "options": [
+            "In graphite, each carbon atom is $sp^2$-hybridized with one delocalized valence electron forming a mobile $\\pi$-electron cloud, whereas in diamond, all four valence electrons are locked in localized $sp^3$ $\\sigma$-bonds",
+            "Diamond contains coordinate bonds, whereas graphite contains ionic bonds",
+            "Graphite has higher density than diamond",
+            "Carbon atoms in diamond possess unpaired $d$-electrons"
+          ],
+          "correctOption": 0,
+          "solution": "1. In **diamond**, each carbon atom undergoes $sp^3$ hybridization and forms four strong, localized single $\\sigma$-bonds directed toward the vertices of a regular tetrahedron. There are no free or mobile electrons throughout the rigid 3D lattice, making diamond an electrical insulator.\n2. In **graphite**, each carbon atom undergoes $sp^2$ hybridization and forms three coplanar $\\sigma$-bonds within a hexagonal planar sheet. The fourth valence electron occupies an unhybridized $2p$ orbital.\n3. These $p$-orbitals overlap laterally to form an extensive, delocalized $\\pi$-electron system that is mobile across the layers, allowing graphite to conduct electricity parallel to its sheets."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following statements regarding the stability and redox behavior of Group 14 compounds is correct?",
+          "image": "",
+          "options": [
+            "$\\text{PbO}_2$ is a strong oxidizing agent, while $\\text{SnCl}_2$ acts as a reducing agent",
+            "$\\text{Pb}^{4+}$ is more stable than $\\text{Pb}^{2+}$",
+            "$\\text{Sn}^{4+}$ is a powerful oxidizing agent",
+            "$\\text{Ge}^{2+}$ is more stable than $\\text{Ge}^{4+}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Due to the inert pair effect in Group 14, the relative stability of the $+2$ oxidation state increases down the group, while the stability of the $+4$ oxidation state decreases:\n   $$\\text{Stability of } +4: \\text{Ge}^{4+} > \\text{Sn}^{4+} > \\text{Pb}^{4+}$$\n   $$\\text{Stability of } +2: \\text{Ge}^{2+} < \\text{Sn}^{2+} < \\text{Pb}^{2+}$$\n2. Lead prefers the $+2$ state over $+4$. Therefore, compounds of $\\text{Pb}(\\text{IV})$ like **$\\text{PbO}_2$** readily gain two electrons to be reduced to stable $\\text{Pb}^{2+}$, acting as **strong oxidizing agents**:\n   $$\\text{PbO}_2 + 4\\text{H}^+ + 2e^- \\rightarrow \\text{Pb}^{2+} + 2\\text{H}_2\\text{O}$$\n3. Tin prefers the $+4$ state over $+2$. Therefore, **$\\text{SnCl}_2$** readily loses two electrons to be oxidized to stable $\\text{Sn}^{4+}$, acting as a **reducing agent**:\n   $$\\text{Sn}^{2+} \\rightarrow \\text{Sn}^{4+} + 2e^-$$\nHence, Statement A is correct."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Boron differs from aluminium and the rest of Group 13 elements in that its maximum covalency is strictly limited to:",
+          "image": "",
+          "options": [
+            "$4$",
+            "$6$",
+            "$3$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Boron belongs to the second period with the ground-state valence configuration $2s^2 2p^1$.\n2. For principal quantum number $n = 2$, only four valence orbitals are available for bonding: one $2s$ and three $2p$ orbitals.\n3. Because boron lacks vacant $d$-orbitals, it **cannot expand its octet beyond $8$ electrons**, restricting its **maximum covalency strictly to $4$** (as in $[\\text{BF}_4]^-$ or $[\\text{B}(\\text{OH})_4]^-$).\n4. In contrast, aluminium and heavier Group 13 elements possess accessible vacant $d$-orbitals and can expand their coordination number/covalency to $6$ (e.g., $[\\text{AlF}_6]^{3-}$)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The catenation tendency of Group 14 elements decreases in the order:",
+          "image": "",
+          "options": [
+            "$\\text{C} \\gg \\text{Si} > \\text{Ge} \\approx \\text{Sn}$",
+            "$\\text{Si} > \\text{C} > \\text{Ge} > \\text{Sn}$",
+            "$\\text{C} > \\text{Sn} > \\text{Ge} > \\text{Si}$",
+            "$\\text{Pb} > \\text{Sn} > \\text{Ge} > \\text{Si}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Catenation** is the ability of an element's atoms to link together through covalent bonds to form extended chains and rings.\n2. Catenation capability depends directly on the strength of the element-element single bond:\n   - $\\text{C}-\\text{C}$: $348\\text{ kJ mol}^{-1}$ (very strong due to small size and effective overlap)\n   - $\\text{Si}-\\text{Si}$: $297\\text{ kJ mol}^{-1}$\n   - $\\text{Ge}-\\text{Ge}$: $260\\text{ kJ mol}^{-1}$\n   - $\\text{Sn}-\\text{Sn}$: $240\\text{ kJ mol}^{-1}$\n   - $\\text{Pb}-\\text{Pb}$: negligible catenation\n3. Therefore, catenation power decreases markedly down the group:\n   $$\\text{C} \\gg \\text{Si} > \\text{Ge} \\approx \\text{Sn} (\\text{Pb does not show catenation})$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Boric acid ($\\text{H}_3\\text{BO}_3$) behaves as a weak monobasic acid in aqueous solution because:",
+          "image": "",
+          "options": [
+            "It acts as a Lewis acid by accepting an electron pair from the hydroxide ion of water, releasing a proton",
+            "It ionizes by directly donating a proton from its $-\\text{OH}$ group",
+            "It acts as a Brönsted-Lowry tribasic acid",
+            "It completely dissociates into $\\text{B}^{3+}$ and $3\\text{OH}^-$ ions"
+          ],
+          "correctOption": 0,
+          "solution": "1. Boric acid, $\\text{B(OH)}_3$, is not a protonic Brönsted acid because it does not donate its own protons.\n2. The central boron atom has only $6$ valence electrons in its planar $\\text{B(OH)}_3$ structure (an electron-deficient incomplete octet).\n3. In water, it acts as a **monobasic Lewis acid** by accepting a lone pair from the oxygen atom of a water molecule, completing its octet to form tetrahedral $[\\text{B}(\\text{OH})_4]^-$ and releasing a hydronium ion:\n   $$\\text{B(OH)}_3 + 2\\text{H}_2\\text{O} \\rightleftharpoons [\\text{B}(\\text{OH})_4]^- + \\text{H}_3\\text{O}^+$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following is the correct order of first ionization enthalpy ($\\Delta_i H_1$) for the Group 13 elements?",
+          "image": "",
+          "options": [
+            "$\\text{B} > \\text{Tl} > \\text{Ga} > \\text{Al} > \\text{In}$",
+            "$\\text{B} > \\text{Al} > \\text{Ga} > \\text{In} > \\text{Tl}$",
+            "$\\text{B} > \\text{Ga} > \\text{Al} > \\text{In} > \\text{Tl}$",
+            "$\\text{Tl} > \\text{In} > \\text{Ga} > \\text{Al} > \\text{B}$"
+          ],
+          "correctOption": 0,
+          "solution": "Group 13 exhibits unusual fluctuations in ionization enthalpy due to intervening $d$ and $f$ subshells:\n1. $\\text{B}$ to $\\text{Al}$: Decreases normally due to size increase ($\\text{B} = 801\\text{ kJ/mol} > \\text{Al} = 577\\text{ kJ/mol}$).\n2. $\\text{Al}$ to $\\text{Ga}$: Increases slightly ($\\text{Ga} = 579\\text{ kJ/mol} > \\text{Al} = 577\\text{ kJ/mol}$) due to poor shielding by ten $3d$ electrons (transition contraction).\n3. $\\text{Ga}$ to $\\text{In}$: Decreases normally as size expands ($\\text{In} = 558\\text{ kJ/mol}$).\n4. $\\text{In}$ to $\\text{Tl}$: Increases dramatically ($\\text{Tl} = 589\\text{ kJ/mol}$) due to poor shielding by fourteen $4f$ and ten $5d$ electrons (lanthanoid contraction).\nTherefore, the actual decreasing order is:\n$$\\text{B } (801) > \\text{Tl } (589) > \\text{Ga } (579) > \\text{Al } (577) > \\text{In } (558\\text{ kJ mol}^{-1})$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Silicon dioxide ($\\text{SiO}_2$, quartz) is a hard, high-melting solid, whereas carbon dioxide ($\\text{CO}_2$) is a gas at room temperature. This marked physical difference is due to:",
+          "image": "",
+          "options": [
+            "$\\text{SiO}_2$ forms a giant three-dimensional network covalent solid with single $\\text{Si}-\\text{O}$ bonds, whereas $\\text{CO}_2$ forms discrete linear molecules held by weak van der Waals forces",
+            "Silicon is more electronegative than carbon",
+            "$\\text{CO}_2$ undergoes extensive intermolecular hydrogen bonding",
+            "Silicon forms $p\\pi-p\\pi$ double bonds more easily than carbon"
+          ],
+          "correctOption": 0,
+          "solution": "1. Carbon has a small atomic size and effectively forms strong **$p\\pi-p\\pi$ multiple bonds** with oxygen, yielding discrete, non-polar linear molecules: $\\text{O}=\\text{C}=\\text{O}$. These individual molecules interact only through very weak London dispersion forces, making $\\text{CO}_2$ a gas.\n2. Silicon has a much larger atomic size; its diffuse $3p$ orbitals cannot effectively form sideways $p\\pi-p\\pi$ double bonds with oxygen's compact $2p$ orbital.\n3. Instead, silicon maximizes bonding through strong single $\\sigma$-bonds, forming a **giant three-dimensional macromolecular network** where each silicon atom is tetrahedrally bonded to four oxygen atoms. Breaking these strong covalent bonds requires massive thermal energy, making $\\text{SiO}_2$ a high-melting solid."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Anhydrous aluminium chloride ($\\text{AlCl}_3$) achieves thermodynamic stability in the vapor phase and in non-polar organic solvents by forming a dimer ($\\text{Al}_2\\text{Cl}_6$). The hybridization of aluminium in the dimer is:",
+          "image": "",
+          "options": [
+            "$sp^3$",
+            "$sp^2$",
+            "$dsp^2$",
+            "$sp^3d$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In monomeric $\\text{AlCl}_3$, aluminium has only $6$ valence electrons ($sp^2$ hybrid, incomplete octet).\n2. To achieve an octet of electrons, two $\\text{AlCl}_3$ units dimerize into $\\text{Al}_2\\text{Cl}_6$ via two bridging coordinate covalent bonds, where a lone pair from a chlorine atom of one unit coordinates into the vacant $3p$ orbital of the other aluminium atom.\n3. In the dimer $\\text{Al}_2\\text{Cl}_6$, each aluminium atom forms four $\\sigma$-bonds (two terminal $\\text{Al}-\\text{Cl}$ and two bridging $\\text{Al}-\\text{Cl}$ bonds).\n4. Four bonding domains surrounding each aluminium produce **$sp^3$ hybridization** with an approximately tetrahedral geometry."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Carbon monoxide ($\\text{CO}$) is a deadly poison when inhaled because:",
+          "image": "",
+          "options": [
+            "It binds reversibly with hemoglobin to form carboxyhemoglobin, which is about $300\\text{ times}$ more stable than oxyhemoglobin, blocking oxygen transport",
+            "It dissolves in blood plasma to form highly corrosive carbonic acid",
+            "It precipitates iron ions out of red blood cells",
+            "It oxidizes cellular enzymes to carbon dioxide"
+          ],
+          "correctOption": 0,
+          "solution": "1. Carbon monoxide binds strongly through coordinate bonding to the $\\text{Fe}^{2+}$ ion in hemoglobin.\n2. The resulting complex, **carboxyhemoglobin**, is roughly **$300\\text{ times more stable}$ than oxyhemoglobin**.\n3. This permanently blocks the oxygen-binding sites of hemoglobin, preventing the uptake and transport of oxygen to bodily tissues.\n4. When carboxyhemoglobin concentration exceeds $3-4\\%$, oxygen deprivation produces headaches, unconsciousness, and fatal asphyxiation."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following Group 14 halides is NOT hydrolyzed by water under normal conditions?",
+          "image": "",
+          "options": [
+            "$\\text{CCl}_4$",
+            "$\\text{SiCl}_4$",
+            "$\\text{GeCl}_4$",
+            "$\\text{SnCl}_4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Hydrolysis of covalent halides requires the central atom to coordinate with an incoming water molecule (Lewis base) via a vacant orbital.\n2. In silicon, germanium, and tin tetrachlorides ($\\text{SiCl}_4, \\text{GeCl}_4, \\text{SnCl}_4$), the central atoms possess accessible, vacant $d$-orbitals that can accept lone pairs from water, enabling rapid hydrolysis to form oxyacids or hydrous oxides.\n3. Carbon belongs to Period 2 and has no accessible $d$-orbitals in its valence shell ($n = 2$).\n4. Consequently, **carbon tetrachloride ($\\text{CCl}_4$) cannot expand its coordination sphere** and is kinetically inert toward water (not hydrolyzed)."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Reaction of diborane ($\\text{B}_2\\text{H}_6$) with excess ammonia at high temperatures ($450\\text{ K}$) yields an 'inorganic benzene' compound $X$. Compound $X$ is:",
+          "image": "",
+          "options": [
+            "Borazine ($\\text{B}_3\\text{N}_3\\text{H}_6$)",
+            "Boron nitride ($(\\text{BN})_x$)",
+            "Borazole dinitride ($\\text{B}_2\\text{N}_2\\text{H}_4$)",
+            "Ammonium borate ($\\text{NH}_4\\text{BO}_2$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. When diborane reacts with ammonia at low temperatures, it forms an addition adduct: $\\text{B}_2\\text{H}_6 \\cdot 2\\text{NH}_3 \\equiv [\\text{BH}_2(\\text{NH}_3)_2]^+ [\\text{BH}_4]^-$.\n2. When heated to around $450\\text{ K}$ in a $1 : 2$ ratio, it undergoes cyclization to form **Borazine ($\\text{B}_3\\text{N}_3\\text{H}_6$)**:\n   $$3\\text{B}_2\\text{H}_6 + 6\\text{NH}_3 \\xrightarrow{\\Delta} 2\\text{B}_3\\text{N}_3\\text{H}_6 + 12\\text{H}_2$$\n3. Borazine has a cyclic, planar six-membered ring with alternating $\\text{B}$ and $\\text{N}$ atoms and delocalized $\\pi$-electrons, earning the name **inorganic benzene**."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements about fullerenes is INCORRECT?",
+          "image": "",
+          "options": [
+            "All carbon atoms in $\\text{C}_{60}$ are $sp^3$-hybridized",
+            "$\\text{C}_{60}$ contains $20$ six-membered rings and $12$ five-membered rings",
+            "$\\text{C}_{60}$ has a cage-like soccer-ball structure known as Buckminsterfullerene",
+            "It contains both single bonds ($143.5\\text{ pm}$) and double bonds ($138.3\\text{ pm}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. In fullerenes (such as $\\text{C}_{60}$), each carbon atom forms three $\\sigma$-bonds with neighboring carbon atoms and possesses one delocalized electron.\n2. Therefore, all carbon atoms are **$sp^2$-hybridized** (not $sp^3$).\n3. The slight curvature of the spherical cage introduces small pyramidal distortion, but the bonding is predominantly $sp^2$.\nHence, Statement A is incorrect."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Silicones are synthetic organosilicon polymers having the general repeating unit:",
+          "image": "",
+          "options": [
+            "$(-\\text{R}_2\\text{Si}-\\text{O}-)_n$",
+            "$(-\\text{R}_3\\text{Si}-\\text{O}-)_n$",
+            "$(-\\text{R}\\text{Si}-\\text{O}_3-)_n$",
+            "$(-\\text{Si}-\\text{O}-)_n$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Hydrolysis of dialkyldichlorosilanes ($\text{R}_2\\text{SiCl}_2$) yields dialkylsilanols:\n   $$\\text{R}_2\\text{SiCl}_2 + 2\\text{H}_2\\text{O} \\rightarrow \\text{R}_2\\text{Si}(\\text{OH})_2 + 2\\text{HCl}$$\n2. Subsequent intermolecular condensation polymerization with loss of water molecules yields straight-chain polymers called **silicones**:\n   $$n\\text{R}_2\\text{Si}(\\text{OH})_2 \\rightarrow -[-\\text{Si}(\\text{R})_2-\\text{O}-]_n- + n\\text{H}_2\\text{O}$$\n3. The characteristic backbone repeating unit is **$(-\\text{R}_2\\text{Si}-\\text{O}-)_n$**."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In borax ($\\text{Na}_2\\text{B}_4\\text{O}_7 \\cdot 10\\text{H}_2\\text{O}$), the actual structural formula is $\\text{Na}_2[\\text{B}_4\\text{O}_5(\\text{OH})_4] \\cdot 8\\text{H}_2\\text{O}$. How many boron atoms are $sp^2$ and $sp^3$ hybridized respectively?",
+          "image": "",
+          "options": [
+            "Two $sp^2$ and two $sp^3$",
+            "Four $sp^2$ and zero $sp^3$",
+            "Zero $sp^2$ and four $sp^3$",
+            "Three $sp^2$ and one $sp^3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the cyclic anionic unit $[\\text{B}_4\\text{O}_5(\\text{OH})_4]^{2-}$ of borax:\n2. Two boron atoms are triangularly coordinated by three oxygen atoms with zero lone pairs $\\implies$ **two boron atoms are $sp^2$-hybridized**.\n3. The other two boron atoms are tetrahedrally coordinated by four oxygen atoms $\\implies$ **two boron atoms are $sp^3$-hybridized**.\n4. Therefore, the structure contains **two $sp^2$ and two $sp^3$** hybridized boron atoms."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Producer gas and water gas are important industrial fuel gases. Their respective compositions are:",
+          "image": "",
+          "options": [
+            "$\\text{CO} + \\text{N}_2$ (producer gas) and $\\text{CO} + \\text{H}_2$ (water gas)",
+            "$\\text{CO} + \\text{H}_2$ (producer gas) and $\\text{CO} + \\text{N}_2$ (water gas)",
+            "$\\text{CO}_2 + \\text{H}_2$ (producer gas) and $\\text{CO} + \\text{CH}_4$ (water gas)",
+            "$\\text{CO} + \\text{O}_2$ (producer gas) and $\\text{CO}_2 + \\text{N}_2$ (water gas)"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Water gas (syn-gas):** Formed when superheated steam is passed over incandescent red-hot coke ($1270\\text{ K}$):\n   $$\\text{C}(s) + \\text{H}_2\\text{O}(g) \\rightarrow \\text{CO}(g) + \\text{H}_2(g)$$\n   It is an equimolar mixture of **$\\text{CO} + \\text{H}_2$**.\n2. **Producer gas:** Formed when a mixture of air and steam is passed over red-hot coke ($1270\\text{ K}$):\n   $$2\\text{C}(s) + \\text{O}_2(g) + 4\\text{N}_2(g) \\rightarrow 2\\text{CO}(g) + 4\\text{N}_2(g)$$\n   It is primarily a mixture of **$\\text{CO} + \\text{N}_2$**."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In qualitative salt analysis, the borax bead test depends on the formation of colored metaborates. When copper sulfate is heated with borax in an oxidizing flame, the bead turns:",
+          "image": "",
+          "options": [
+            "Blue due to $\\text{Cu(BO}_2)_2$",
+            "Green due to $\\text{Cr(BO}_2)_3$",
+            "Red due to metallic copper",
+            "Yellow due to $\\text{Fe(BO}_2)_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. When borax is heated, it loses water of crystallization, swells, and fuses into a transparent, glassy bead containing sodium metaborate and boric anhydride:\n   $$\\text{Na}_2\\text{B}_4\\text{O}_7 \\cdot 10\\text{H}_2\\text{O} \\xrightarrow{\\Delta} \\text{Na}_2\\text{B}_4\\text{O}_7 \\xrightarrow{\\Delta} 2\\text{NaBO}_2 + \\text{B}_2\\text{O}_3$$\n2. When heated with a copper salt in an **oxidizing flame**, $\\text{B}_2\\text{O}_3$ reacts with $\\text{CuO}$ to form **cupric metaborate, $\\text{Cu(BO}_2)_2$**, which imparts a characteristic deep **blue color** to the bead."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Zeolites are three-dimensional microporous aluminosilicates widely used as:",
+          "image": "",
+          "options": [
+            "Shape-selective catalysts, ion exchangers in water softening, and molecular sieves",
+            "High-energy rocket propellants",
+            "Electrical conductors in printed microchips",
+            "Reducing agents in blast furnaces"
+          ],
+          "correctOption": 0,
+          "solution": "1. Zeolites have open, porous 3D framework structures where some silicon atoms in the $\\text{SiO}_2$ network are replaced by aluminium atoms (forming $[\\text{AlO}_4]^{5-}$ tetrahedra balanced by cations like $\\text{Na}^+$ or $\\text{Ca}^{2+}$).\n2. Due to the presence of uniform microscopic pores and channels of molecular dimensions, zeolites act as **molecular sieves** and **shape-selective catalysts** (e.g., ZSM-5, which converts alcohols directly into gasoline).\n3. They are also widely used as **cation exchangers** to remove $\\text{Ca}^{2+}$ and $\\text{Mg}^{2+}$ ions in water softening."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following elements exhibits a DIAGONAL RELATIONSHIP with boron?",
+          "image": "",
+          "options": [
+            "Silicon ($\\text{Si}$)",
+            "Aluminium ($\\text{Al}$)",
+            "Magnesium ($\\text{Mg}$)",
+            "Carbon ($\\text{C}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Diagonal relationships exist between second-period elements and third-period elements located diagonally to the right:\n   - $\\text{Li}$ with $\\text{Mg}$\n   - $\\text{Be}$ with $\\text{Al}$\n   - **$\\text{B}$ with $\\text{Si}$**\n2. Boron and silicon share very similar electronegativities ($2.0$ vs $1.8$) and small atomic radii.\n3. Both are non-metals/semiconductors, form covalent volatile hydrides, form acidic polymeric oxides ($\\text{B}_2\\text{O}_3$ and $\\text{SiO}_2$), and have halides that are hydrolyzed by water."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the state of hybridization of carbon in diamond and graphite respectively?",
+          "image": "",
+          "options": [
+            "$sp^3$ and $sp^2$",
+            "$sp^2$ and $sp^3$",
+            "$sp^3$ and $sp^3$",
+            "$sp^2$ and $sp$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In **diamond**, every carbon atom forms four single covalent $\\sigma$-bonds with four adjacent carbon atoms in a tetrahedral arrangement $\\implies \\mathbf{sp^3}$ hybridization.\n2. In **graphite**, every carbon atom forms three planar $\\sigma$-bonds with three neighboring carbon atoms in hexagonal rings, while the fourth electron forms a delocalized $\\pi$-bond $\\implies \\mathbf{sp^2}$ hybridization."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following compounds of lead is thermodynamically UNSTABLE and does not exist under normal conditions?",
+          "image": "",
+          "options": [
+            "$\\text{PbI}_4$",
+            "$\\text{PbCl}_4$",
+            "$\\text{PbF}_4$",
+            "$\\text{PbI}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Due to the inert pair effect, $\\text{Pb}(\\text{IV})$ is a powerful oxidizing agent, and iodide ($\\text{I}^-$) is a strong reducing agent.\n2. When lead(IV) combines with iodide, $\\text{Pb}^{4+}$ spontaneously oxidizes $\\text{I}^-$ to molecular iodine ($\\text{I}_2$) while reducing itself to stable lead(II):\n   $$\\text{Pb}^{4+} + 2\\text{I}^- \\rightarrow \\text{Pb}^{2+} + \\text{I}_2$$\n3. Furthermore, the $\\text{Pb}-\\text{I}$ bond energy is insufficient to unpair the $6s^2$ electrons of lead.\n4. Therefore, **lead(IV) iodide ($\\text{PbI}_4$) does not exist**, whereas $\\text{PbI}_2$ is stable."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When aluminium metal reacts with concentrated aqueous sodium hydroxide solution, the gaseous product evolved and the complex formed are respectively:",
+          "image": "",
+          "options": [
+            "$\\text{H}_2$ gas and $\\text{Na}[\\text{Al}(\\text{OH})_4]$",
+            "$\\text{O}_2$ gas and $\\text{Al}_2\\text{O}_3$",
+            "$\\text{H}_2$ gas and $\\text{NaAlO}_3$",
+            "$\\text{CO}_2$ gas and $\\text{Na}_3\\text{AlO}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Aluminium is an amphoteric metal that dissolves readily in strong caustic alkalies.\n2. It reacts with aqueous $\\text{NaOH}$ to liberate dihydrogen gas ($\\text{H}_2$) while forming the water-soluble sodium tetrahydroxidoaluminate(III) coordination complex:\n   $$2\\text{Al}(s) + 2\\text{NaOH}(aq) + 6\\text{H}_2\\text{O}(l) \\rightarrow 2\\text{Na}[\\text{Al}(\\text{OH})_4](aq) + 3\\text{H}_2(g) \\uparrow$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Why does concentrated nitric acid render aluminium PASSIVE (resistant to further reaction)?",
+          "image": "",
+          "options": [
+            "Formation of a tough, continuous, microscopic protective oxide film ($\\text{Al}_2\\text{O}_3$) on the metal surface",
+            "Precipitation of insoluble aluminium nitrate",
+            "Reduction of aluminium to an inert allotrope",
+            "Complete volatilization of aluminium atoms"
+          ],
+          "correctOption": 0,
+          "solution": "1. Concentrated nitric acid ($\\text{HNO}_3$) is a powerful oxidizing agent.\n2. When aluminium is dipped into concentrated $\\text{HNO}_3$, the acid rapidly oxidizes the metal surface, creating an extremely thin, impervious, uniform film of **aluminium oxide ($\\text{Al}_2\\text{O}_3$)**.\n3. This protective layer prevents any further direct physical contact between the underlying bulk aluminium metal and the acid, rendering the metal chemically **passive**."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Dry ice is solid carbon dioxide ($\\text{CO}_2$). It is widely used as a refrigerant because:",
+          "image": "",
+          "options": [
+            "It sublimes directly from solid to gas at $-78.5^\\circ\\text{C}$ at atmospheric pressure without melting into liquid",
+            "It has zero density",
+            "It forms covalent network bonds with ice",
+            "It is completely non-toxic at all concentrations"
+          ],
+          "correctOption": 0,
+          "solution": "1. Solid $\\text{CO}_2$ has a triple point pressure ($5.11\\text{ atm}$) that is much higher than normal atmospheric pressure ($1\\text{ atm}$).\n2. Therefore, when heated at $1\\text{ atm}$, solid $\\text{CO}_2$ **sublimes directly into gaseous $\\text{CO}_2$ at $-78.5^\\circ\\text{C}$ without passing through the liquid phase**.\n3. Because it produces no liquid residue to wet food or materials, it is called **dry ice** and serves as a refrigerant."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following elements forms a neutral oxide?",
+          "image": "",
+          "options": [
+            "Carbon ($\\text{CO}$)",
+            "Silicon ($\\text{SiO}_2$)",
+            "Germanium ($\\text{GeO}_2$)",
+            "Tin ($\\text{SnO}_2$)"
+          ],
+          "correctOption": 0,
+          "solution": "Analyze the acid-base character of Group 14 oxides:\n1. **Carbon monoxide ($\\text{CO}$):** **Neutral oxide** (does not react with acids or bases).\n2. $\\text{CO}_2, \\text{SiO}_2,$ and $\\text{GeO}_2$: Acidic oxides.\n3. $\\text{SnO}_2$ and $\\text{PbO}_2$: Amphoteric oxides."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The basic structural unit present in all silicate minerals and synthetic silicates is the:",
+          "image": "",
+          "options": [
+            "Tetrahedral $[\\text{SiO}_4]^{4-}$ unit",
+            "Planar $[\\text{SiO}_3]^{2-}$ unit",
+            "Linear $[\\text{SiO}_2]$ unit",
+            "Octahedral $[\\text{SiO}_6]^{8-}$ unit"
+          ],
+          "correctOption": 0,
+          "solution": "1. In all silicate minerals (orthosilicates, pyrosilicates, cyclic silicates, chain silicates, sheet silicates, and 3D frameworks), the fundamental building block is the **$[\\text{SiO}_4]^{4-}$ tetrahedron**.\n2. In this unit, the central silicon atom is $sp^3$-hybridized and covalently bonded to four oxygen atoms located at the four corners of a regular tetrahedron.\n3. Different silicate classes are generated by sharing zero, one, two, three, or all four oxygen vertices between adjacent tetrahedra."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the product formed when diborane undergoes cleavage with excess trimethylamine (a Lewis base)?",
+          "image": "",
+          "options": [
+            "$2\\text{BH}_3 \\cdot \\text{N(CH}_3)_3$",
+            "$\\text{B}_3\\text{N}_3\\text{H}_6$",
+            "$\\text{B(CH}_3)_3$",
+            "$[\\text{BH}_2(\\text{N(CH}_3)_3)_2]^+ [\\text{BH}_4]^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Diborane ($\\text{B}_2\\text{H}_6$) undergoes symmetrical cleavage when treated with bulky Lewis bases or tertiary amines (like $\\text{N(CH}_3)_3$ or $\\text{CO}$).\n2. The bridge bonds break symmetrically to produce two units of monomeric borane complexed with the Lewis base:\n   $$\\text{B}_2\\text{H}_6 + 2\\text{N(CH}_3)_3 \\rightarrow 2\\text{BH}_3 \\cdot \\text{N(CH}_3)_3$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In Group 14, the ability to form $p\\pi-p\\pi$ multiple bonds (such as $\\text{C}=\\text{C}, \\text{C}\\equiv\\text{C}, \\text{C}=\\text{O}$) is characteristic of carbon, but NOT of silicon. This is primarily because:",
+          "image": "",
+          "options": [
+            "Silicon's $3p$ atomic orbitals are too large and diffuse to achieve effective sideways overlap",
+            "Silicon is more electropositive than carbon",
+            "Silicon does not possess $p$-orbitals",
+            "Silicon atoms form interstitial hydrides"
+          ],
+          "correctOption": 0,
+          "solution": "1. Lateral (sideways) $\\pi$-overlap requires atomic orbitals to be compact so that parallel lobes can approach close enough for overlap.\n2. Carbon is small ($r \\approx 77\\text{ pm}$) and its $2p$ orbitals achieve strong, effective $p\\pi-p\\pi$ overlap.\n3. Silicon has a much larger covalent radius ($r \\approx 118\\text{ pm}$), and its $3p$ orbitals are larger and diffuse.\n4. When two silicon atoms form a $\\sigma$-bond, their increased internuclear distance prevents their $3p$ lobes from overlapping sideways effectively. Hence, silicon forms single $\\sigma$-bonds instead of $p\\pi-p\\pi$ multiple bonds."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following compounds is known as 'inorganic graphite' due to its structural resemblance and layered hexagonal network?",
+          "image": "",
+          "options": [
+            "Boron nitride ($(\\text{BN})_x$)",
+            "Borazine ($\\text{B}_3\\text{N}_3\\text{H}_6$)",
+            "Diborane ($\\text{B}_2\\text{H}_6$)",
+            "Silicon carbide ($\\text{SiC}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Hexagonal **boron nitride ($(\\text{BN})_x$)** has a two-dimensional layered sheet structure identical to graphite.\n2. It consists of planar hexagonal rings of alternating boron and nitrogen atoms held together by strong covalent bonds within the sheets, with adjacent sheets held by weak van der Waals forces.\n3. It is a white, slippery powder with lubricating properties, earning the name **inorganic graphite** (or white graphite)."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When silicon tetrachloride ($\\text{SiCl}_4$) is hydrolyzed with excess water, the final white precipitate formed is:",
+          "image": "",
+          "options": [
+            "Silicic acid ($\\text{H}_4\\text{SiO}_4$ or $\\text{SiO}_2 \\cdot 2\\text{H}_2\\text{O}$)",
+            "Silicon monoxide ($\\text{SiO}$)",
+            "Silicon hydride ($\\text{SiH}_4$)",
+            "Silicon hexachloride"
+          ],
+          "correctOption": 0,
+          "solution": "1. Silicon tetrachloride reacts vigorously with water because water molecules coordinate into the vacant $3d$ orbitals of silicon.\n2. Complete nucleophilic substitution of chlorine by hydroxide yields orthosilicic acid:\n   $$\\text{SiCl}_4 + 4\\text{H}_2\\text{O} \\rightarrow \\text{Si(OH)}_4 + 4\\text{HCl}$$\n3. Orthosilicic acid ($\\text{H}_4\\text{SiO}_4$) condenses and dehydrates to give white hydrated silica (silica gel, $\\text{SiO}_2 \\cdot x\\text{H}_2\\text{O}$)."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Thermodynamically, which allotrope of carbon is the MOST STABLE at room temperature and $1\\text{ atm}$ pressure?",
+          "image": "",
+          "options": [
+            "Graphite ($\\Delta_f H^\\circ = 0\\text{ kJ mol}^{-1}$)",
+            "Diamond ($\\Delta_f H^\\circ = +1.9\\text{ kJ mol}^{-1}$)",
+            "Fullerene ($\\text{C}_{60}$, $\\Delta_f H^\\circ = +38.1\\text{ kJ mol}^{-1}$)",
+            "Carbon black"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Graphite** is the thermodynamically most stable allotrope of carbon under standard conditions ($298\\text{ K}$ and $1\\text{ bar}$).\n2. By standard thermodynamic convention, its standard enthalpy of formation is assigned as **$\\Delta_f H^\\circ = 0.0\\text{ kJ mol}^{-1}$**.\n3. Diamond is slightly less stable than graphite by $\\Delta_f H^\\circ = +1.90\\text{ kJ mol}^{-1}$, but its conversion to graphite at room temperature is imperceptibly slow due to an activation barrier (kinetic stability)."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In Group 13, the element with the LOWEST melting point ($30^\\circ\\text{C}$), which can exist as a liquid on a hot summer day, is:",
+          "image": "",
+          "options": [
+            "Gallium ($\\text{Ga}$)",
+            "Indium ($\\text{In}$)",
+            "Thallium ($\\text{Tl}$)",
+            "Aluminium ($\\text{Al}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Gallium ($\\text{Ga}$)** has an unusually low melting point of **$303\\text{ K}$ ($30^\\circ\\text{C}$)**.\n2. In its solid state, gallium consists of discrete diatomic $\\text{Ga}_2$ molecules rather than a conventional continuous metallic lattice.\n3. Weak intermolecular forces hold these $\\text{Ga}_2$ units together, causing it to melt easily in the palm of a hand.\n4. However, it has a very high boiling point ($2676\\text{ K}$), giving it a liquid range that makes it useful in high-temperature thermometers."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Cross-linked silicones are synthesized by the hydrolysis and condensation of which starting material?",
+          "image": "",
+          "options": [
+            "$\\text{RSiCl}_3$",
+            "$\\text{R}_2\\text{SiCl}_2$",
+            "$\\text{R}_3\\text{SiCl}$",
+            "$\\text{SiCl}_4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{R}_3\\text{SiCl}$ has only one reactive chlorine; its hydrolysis yields $\\text{R}_3\\text{SiOH}$, which forms dimer $\\text{R}_3\\text{Si}-\\text{O}-\\text{SiR}_3$ and acts as a chain terminator.\n2. $\\text{R}_2\\text{SiCl}_2$ has two chlorines; its hydrolysis yields linear/straight-chain silicone polymers.\n3. **$\\text{RSiCl}_3$** has three chlorines; upon hydrolysis, it produces $\\text{RSi(OH)}_3$ with three reactive hydroxyl groups.\n4. Polymerization proceeds in three spatial directions, yielding **three-dimensional cross-linked network silicones**."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The gas evolved when solid aluminium carbide ($\\text{Al}_4\\text{C}_3$) is treated with water is:",
+          "image": "",
+          "options": [
+            "Methane ($\\text{CH}_4$)",
+            "Acetylene ($\\text{C}_2\\text{H}_2$)",
+            "Ethylene ($\\text{C}_2\\text{H}_4$)",
+            "Propadiene ($\\text{C}_3\\text{H}_4$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Aluminium carbide ($\\text{Al}_4\\text{C}_3$) is an ionic methanide containing isolated $\\text{C}^{4-}$ carbide anions.\n2. Upon hydrolysis, the $\\text{C}^{4-}$ anions pick up protons from water to liberate pure **methane gas ($\\text{CH}_4$)**:\n   $$\\text{Al}_4\\text{C}_3 + 12\\text{H}_2\\text{O} \\rightarrow 4\\text{Al(OH)}_3 \\downarrow + 3\\text{CH}_4 \\uparrow$$\n(In contrast, calcium carbide $\\text{CaC}_2$ contains $[\text{C}\\equiv\\text{C}]^{2-}$ and hydrolyzes to acetylene, $\\text{C}_2\\text{H}_2$)."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] When aqueous ammonia is added to a solution of boric acid, the reaction does not proceed forward because boric acid is extremely weak. However, in the presence of which of the following reagents does boric acid behave as a strong monobasic acid and can be titrated quantitatively with $\\text{NaOH}$?",
+          "image": "",
+          "options": [
+            "cis-1,2-diols like glycerol, mannitol, or catechol",
+            "Hydrochloric acid",
+            "Sodium chloride",
+            "Ethanol"
+          ],
+          "correctOption": 0,
+          "solution": "1. Boric acid is too weak a Lewis acid ($K_a \\approx 10^{-9}$) to be titrated directly with $\\text{NaOH}$ using standard indicators.\n2. When polyhydroxy compounds with adjacent cis-hydroxyl groups (such as **glycerol, mannitol, or sorbitol**) are added, they react with the $[\\text{B}(\\text{OH})_4]^-$ ion to form very stable cyclic **chelate bikhydroxoborate complexes**.\n3. By Le Chatelier's principle, the removal of $[\\text{B}(\\text{OH})_4]^-$ from equilibrium drives the ionization of boric acid forward completely, allowing quantitative titration with $\\text{NaOH}$ using phenolphthalein indicator."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Silicon carbide ($\\text{SiC}$, carborundum) is widely used as an industrial abrasive because:",
+          "image": "",
+          "options": [
+            "It has a giant three-dimensional diamond-like network covalent lattice with very high hardness and melting point",
+            "It is a soft ionic solid that cleaves easily",
+            "It forms liquid droplets at room temperature",
+            "It dissolves completely in acids to form lubricating silica"
+          ],
+          "correctOption": 0,
+          "solution": "1. Silicon carbide ($\\text{SiC}$) crystallizes in a **giant 3D network covalent structure** isostructural with diamond.\n2. Each carbon atom is tetrahedrally coordinated to four silicon atoms, and each silicon is tetrahedrally bonded to four carbon atoms through short, strong covalent bonds.\n3. This rigid network imparts hardness (hardness $\\approx 9.5$ on the Mohs scale, just below diamond) and thermal resistance, making it an abrasive and cutting tool."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Thallium exhibits an oxidation state of $+1$ in its most stable compounds, while aluminium exhibits $+3$. This difference is due to:",
+          "image": "",
+          "options": [
+            "The inert pair effect in thallium",
+            "Aluminium having empty $d$-orbitals",
+            "Thallium having higher electronegativity than aluminium",
+            "The diagonal relationship between thallium and lead"
+          ],
+          "correctOption": 0,
+          "solution": "1. Aluminium ($Z = 13$) has no intervening $d$ or $f$ electrons; all three valence electrons ($3s^2 3p^1$) participate in bonding, so the $+3$ state is stable.\n2. Thallium ($Z = 81$) has configuration $[\\text{Xe}] 4f^{14} 5d^{10} 6s^2 6p^1$.\n3. The intervening $4f^{14}$ and $5d^{10}$ subshells shield the $6s^2$ electrons poorly, so the valence $6s^2$ pair is held tightly by the high effective nuclear charge.\n4. Due to this **inert pair effect**, the $6s^2$ electrons do not participate in bonding, making the **$+1$ oxidation state stable for thallium** ($\\text{TlCl}$ is stable, while $\\text{TlCl}_3$ easily decomposes into $\\text{TlCl}$ and $\\text{Cl}_2$)."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The geometry and bond angles in carbon suboxide ($\\text{C}_3\\text{O}_2$) are:",
+          "image": "",
+          "options": [
+            "Linear with $180^\\circ$ bond angles",
+            "Trigonal planar with $120^\\circ$ bond angles",
+            "Tetrahedral with $109.5^\\circ$ bond angles",
+            "Bent with $104.5^\\circ$ bond angles"
+          ],
+          "correctOption": 0,
+          "solution": "1. Carbon suboxide has the formula $\\text{C}_3\\text{O}_2$.\n2. Its Lewis structure features cumulative double bonds:\n   $$\\text{O}=\\text{C}=\\text{C}=\\text{C}=\\text{O}$$\n3. All three carbon atoms form two $\\sigma$-bonds and two $\\pi$-bonds with zero lone pairs.\n4. The carbon atoms are all **$sp$-hybridized**, yielding a strictly **linear molecular geometry** with all bond angles equal to **$180^\\circ$**."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In borax, the number of $\\text{B}-\\text{O}-\\text{B}$ bridge bonds present in the $[\\text{B}_4\\text{O}_5(\\text{OH})_4]^{2-}$ polyanion is:",
+          "image": "",
+          "options": [
+            "$5$",
+            "$4$",
+            "$6$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The structural formula of the borax anion is $[\\text{B}_4\\text{O}_5(\\text{OH})_4]^{2-}$.\n2. The four boron atoms form two six-membered rings fused together sharing a central bridging oxygen atom.\n3. The perimeter contains four $\\text{B}-\\text{O}-\\text{B}$ bridges, plus one central cross-ring $\\text{B}-\\text{O}-\\text{B}$ bridge connecting the two tetrahedral boron atoms.\n4. Therefore, there are exactly **$5$ $\\text{B}-\\text{O}-\\text{B}$ linkages** in the unit."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following statements about carbon allotropes is correct?",
+          "image": "",
+          "options": [
+            "In diamond, each carbon is linked to four other carbons with a $\\text{C}-\\text{C}$ bond distance of $154\\text{ pm}$",
+            "Graphite has higher density than diamond",
+            "Fullerene contains only five-membered rings",
+            "Diamond is thermodynamically more stable than graphite"
+          ],
+          "correctOption": 0,
+          "solution": "1. In diamond, each carbon atom is tetrahedrally bonded to four other carbon atoms by single covalent $\\sigma$-bonds with a characteristic **$\\text{C}-\\text{C}$ bond length of $154\\text{ pm}$**.\n2. Diamond has a higher density ($3.51\\text{ g/cm}^3$) than graphite ($2.26\\text{ g/cm}^3$).\n3. Fullerenes contain both five-membered and six-membered rings.\n4. Graphite is thermodynamically more stable than diamond.\nTherefore, Statement A is the correct statement."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] When boron trifluoride ($\\text{BF}_3$) reacts with lithium hydride ($\\text{LiH}$) in diethyl ether at $450\\text{ K}$, the boron compound produced is:",
+          "image": "",
+          "options": [
+            "Diborane ($\\text{B}_2\\text{H}_6$)",
+            "Boron trioxide ($\\text{B}_2\\text{O}_3$)",
+            "Borazole ($\\text{B}_3\\text{N}_3\\text{H}_6$)",
+            "Boron carbide ($\\text{B}_4\\text{C}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. A primary industrial/laboratory method for the preparation of diborane involves the reduction of boron trifluoride with lithium hydride:\n   $$2\\text{BF}_3 + 6\\text{LiH} \\xrightarrow{\\text{ether, } 450\\text{ K}} \\text{B}_2\\text{H}_6 + 6\\text{LiF}$$\n2. The product formed is **diborane ($\\text{B}_2\\text{H}_6$)**."
+        }
+      ]
+    }
+  ]
+}

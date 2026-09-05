@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-29-molecular-orbital-theory",
+  "title": "Molecular Orbital Theory (LCAO Method, Homonuclear Diatomics, Bond Order, & Magnetic Properties)",
+  "syllabus": "Molecular Orbital Theory (MOT) basic assumptions and principles; Linear Combination of Atomic Orbitals (LCAO) method: conditions for atomic orbital combination (similar energy, appropriate symmetry, maximum overlap); Constructive vs destructive interference; Bonding, antibonding, and non-bonding molecular orbitals (shapes, node patterns, and energy differences); Energy level diagrams for homonuclear diatomic molecules: lighter diatomics with s-p mixing / 14 or fewer electrons (Li2, Be2, B2, C2, N2: σ1s < σ*1s < σ2s < σ*2s < (π2px = π2py) < σ2pz < (π*2px = π*2py) < σ*2pz) vs heavier diatomics with no s-p mixing / more than 14 electrons (O2, F2, Ne2: σ1s < σ*1s < σ2s < σ*2s < σ2pz < (π2px = π2py) < (π*2px = π*2py) < σ*2pz); Electronic configurations of homonuclear diatomic molecules and their ions (e.g., O2+, O2, O2-, O2^2-, N2, N2+, N2-, N2^2-); Calculation of bond order (BO = 0.5(Nb - Na)); Interrelationships between bond order, bond dissociation enthalpy, bond length, and thermodynamic stability; Prediction of magnetic behavior (paramagnetic vs diamagnetic character, number of unpaired electrons); Isoelectronic heteronuclear species (CO, NO+, CN-); Fractional bond orders and stability comparisons",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following species has the HIGHEST bond order?",
+          "image": "",
+          "options": [
+            "$\\text{N}_2$",
+            "$\\text{O}_2$",
+            "$\\text{O}_2^+$",
+            "$\\text{N}_2^+$"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate the bond order using $\\text{BO} = \\frac{N_b - N_a}{2}$ for each species:\n1. $\\text{N}_2$ ($14\\text{ electrons}$): Configuration: $\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, \\sigma_{2p_z}^2$.\n   - $N_b = 10, N_a = 4 \\implies \\text{BO} = \\frac{10 - 4}{2} = 3.0$\n2. $\\text{N}_2^+$ ($13\\text{ electrons}$): $\\text{BO} = \\frac{9 - 4}{2} = 2.5$\n3. $\\text{O}_2^+$ ($15\\text{ electrons}$): $\\text{BO} = \\frac{10 - 5}{2} = 2.5$\n4. $\\text{O}_2$ ($16\\text{ electrons}$): $\\text{BO} = \\frac{10 - 6}{2} = 2.0$\nTherefore, $\\text{N}_2$ has the highest bond order ($3.0$)."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] According to Molecular Orbital Theory, which of the following diatomic molecules contains ONLY $\\pi$-bonds in its valence shell?",
+          "image": "",
+          "options": [
+            "$\\text{C}_2$",
+            "$\\text{N}_2$",
+            "$\\text{O}_2$",
+            "$\\text{Be}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $\\text{C}_2$ ($12\\text{ electrons}$ total):\n   $$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)$$\n2. The four outermost valence electrons occupy the degenerate degenerate $\\pi$-bonding molecular orbitals ($\\pi_{2p_x}$ and $\\pi_{2p_y}$).\n3. There are no electrons in the $\\sigma_{2p_z}$ bonding orbital.\n4. Therefore, both bonds in the $\\text{C}_2$ molecule are **$\\pi$-bonds** (double bond consisting solely of two $\\pi$-bonds, with no $\\sigma$-bond)."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The correct order of increasing bond length for the dioxygen species $\\text{O}_2, \\text{O}_2^+, \\text{O}_2^-,$ and $\\text{O}_2^{2-}$ is:",
+          "image": "",
+          "options": [
+            "$\\text{O}_2^+ < \\text{O}_2 < \\text{O}_2^- < \\text{O}_2^{2-}$",
+            "$\\text{O}_2^{2-} < \\text{O}_2^- < \\text{O}_2 < \\text{O}_2^+$",
+            "$\\text{O}_2^+ < \\text{O}_2^{2-} < \\text{O}_2^- < \\text{O}_2$",
+            "$\\text{O}_2 < \\text{O}_2^+ < \\text{O}_2^- < \\text{O}_2^{2-}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Bond length is inversely proportional to bond order ($\\text{Bond length} \\propto \\frac{1}{\\text{Bond order}}$).\n2. Calculate the bond order for each dioxygen species:\n   - $\\text{O}_2^+$ ($15e^-$): $\\text{BO} = \\frac{10 - 5}{2} = 2.5$\n   - $\\text{O}_2$ ($16e^-$): $\\text{BO} = \\frac{10 - 6}{2} = 2.0$\n   - $\\text{O}_2^-$ ($17e^-$, superoxide): $\\text{BO} = \\frac{10 - 7}{2} = 1.5$\n   - $\\text{O}_2^{2-}$ ($18e^-$, peroxide): $\\text{BO} = \\frac{10 - 8}{2} = 1.0$\n3. Decreasing order of bond order: $\\text{O}_2^+ > \\text{O}_2 > \\text{O}_2^- > \\text{O}_2^{2-}$.\n4. Therefore, the increasing order of bond length is:\n   $$\\text{O}_2^+ (112\\text{ pm}) < \\text{O}_2 (121\\text{ pm}) < \\text{O}_2^- (128\\text{ pm}) < \\text{O}_2^{2-} (149\\text{ pm})$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following diatomic species does NOT exist under standard conditions according to Molecular Orbital Theory?",
+          "image": "",
+          "options": [
+            "$\\text{Be}_2$",
+            "$\\text{B}_2$",
+            "$\\text{C}_2$",
+            "$\\text{He}_2^+$"
+          ],
+          "correctOption": 0,
+          "solution": "1. A molecule or ion is unstable and cannot exist as a bound species if its bond order is zero ($\\text{BO} = 0$).\n2. For $\\text{Be}_2$ ($8\\text{ electrons}$):\n   $$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2$$\n   $$\\text{BO} = \\frac{N_b - N_a}{2} = \\frac{4 - 4}{2} = 0$$\n   Because the number of bonding electrons equals the number of antibonding electrons, net stabilization is zero, and **$\\text{Be}_2$ does not exist**.\n3. $\\text{B}_2$ ($\text{BO} = 1$), $\\text{C}_2$ ($\text{BO} = 2$), and $\\text{He}_2^+$ ($\text{BO} = 0.5$) all have non-zero bond orders and can exist."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Why is molecular oxygen ($\\text{O}_2$) PARAMAGNETIC, contrary to the prediction of classical Lewis valence-bond structures?",
+          "image": "",
+          "options": [
+            "It contains two unpaired electrons with parallel spins in the degenerate antibonding $\\pi^*_{2p_x}$ and $\\pi^*_{2p_y}$ molecular orbitals",
+            "It contains two unpaired electrons in the bonding $\\sigma_{2p_z}$ orbital",
+            "It contains an odd total number of electrons",
+            "Electrons in the $\\sigma^*_{2s}$ orbital remain unpaired"
+          ],
+          "correctOption": 0,
+          "solution": "1. Molecular oxygen has $16$ electrons. Its ground-state MO configuration is:\n   $$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, \\sigma_{2p_z}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, (\\pi^*_{2p_x}^1 = \\pi^*_{2p_y}^1)$$\n2. According to Hund's rule of maximum multiplicity, the two highest-energy electrons occupy the two degenerate antibonding molecular orbitals **$\\pi^*_{2p_x}$ and $\\pi^*_{2p_y}$ singly with parallel spins**.\n3. The presence of these **two unpaired electrons** gives $\\text{O}_2$ a net magnetic dipole moment, making it experimentally **paramagnetic** (drawn into magnetic fields)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the formation of molecular orbitals by the LCAO method, the combination of two atomic orbitals having the SAME phase (wave functions with identical signs, $\\psi_A + \\psi_B$) results in:",
+          "image": "",
+          "options": [
+            "A bonding molecular orbital with increased electron probability density between the nuclei",
+            "An antibonding molecular orbital with a nodal plane between the nuclei",
+            "A non-bonding molecular orbital with zero electron density everywhere",
+            "Destructive interference of electron waves"
+          ],
+          "correctOption": 0,
+          "solution": "1. When two atomic wave functions combine in-phase ($\\psi_{\\text{MO}} = \\psi_A + \\psi_B$), they undergo **constructive interference**.\n2. The resulting electron probability density is:\n   $$\\psi_{\\text{MO}}^2 = \\psi_A^2 + \\psi_B^2 + 2\\psi_A\\psi_B$$\n3. The cross-term $+2\\psi_A\\psi_B$ increases the electron density in the internuclear region between the two nuclei.\n4. This shields the nuclei from mutual electrostatic repulsion and lowers the potential energy, forming a **bonding molecular orbital (BMO)**."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For molecules having $14$ or fewer electrons (such as $\\text{B}_2, \\text{C}_2, \\text{N}_2$), the energy of the $\\sigma_{2p_z}$ orbital is HIGHER than that of the $\\pi_{2p_x}$ and $\\pi_{2p_y}$ orbitals. This inversion of energy levels is caused by:",
+          "image": "",
+          "options": [
+            "Strong $s-p$ mixing due to the small energy separation between the $2s$ and $2p$ atomic orbitals",
+            "Relativistic effects in lighter elements",
+            "Absence of inner $d$-orbitals",
+            "Lateral overlap of $s$-orbitals"
+          ],
+          "correctOption": 0,
+          "solution": "1. In lighter diatomic elements (from $\\text{Li}$ to $\\text{N}$), the energy gap between the $2s$ and $2p$ atomic orbitals is relatively small.\n2. Because $\\sigma_{2s}$ and $\\sigma_{2p_z}$ molecular orbitals share the same cylindrical spatial symmetry, they undergo quantum mechanical mixing (**$s-p$ mixing**).\n3. This mutual interaction pushes the $\\sigma_{2s}$ orbital to lower energy and raises the $\\sigma_{2p_z}$ orbital to higher energy, above the degenerate $\\pi_{2p_x}$ and $\\pi_{2p_y}$ pair.\n4. In $\\text{O}_2$ and $\\text{F}_2$, the nuclear charge is higher, the $2s-2p$ energy gap is large, $s-p$ mixing is negligible, and $\\sigma_{2p_z}$ remains lower in energy than $\\pi_{2p_x}/\\pi_{2p_y}$."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following species is DIAMAGNETIC?",
+          "image": "",
+          "options": [
+            "$\\text{O}_2^{2-}$",
+            "$\\text{O}_2$",
+            "$\\text{O}_2^-$",
+            "$\\text{B}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "Evaluate the electron configuration of each species:\n1. $\\text{O}_2^{2-}$ ($18\\text{ electrons}$):\n   $$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, \\sigma_{2p_z}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, (\\pi^*_{2p_x}^2 = \\pi^*_{2p_y}^2)$$\n   All electrons are fully paired ($0$ unpaired electrons) $\\implies$ **Diamagnetic**.\n2. $\\text{O}_2$ ($16e^-$): Has $2$ unpaired electrons in $(\\pi^*_{2p_x}^1 = \\pi^*_{2p_y}^1)$ $\\implies$ Paramagnetic.\n3. $\\text{O}_2^-$ ($17e^-$): Has $1$ unpaired electron in $(\\pi^*_{2p_x}^2 = \\pi^*_{2p_y}^1)$ $\\implies$ Paramagnetic.\n4. $\\text{B}_2$ ($10e^-$): Has $2$ unpaired electrons in $(\\pi_{2p_x}^1 = \\pi_{2p_y}^1)$ $\\implies$ Paramagnetic."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An antibonding molecular orbital formed by the destructive overlap of two $2p_z$ atomic orbitals along the internuclear z-axis ($\\sigma^*_{2p_z}$) has how many nodal planes?",
+          "image": "",
+          "options": [
+            "Three nodal planes",
+            "One nodal plane",
+            "Two nodal planes",
+            "Zero nodal planes"
+          ],
+          "correctOption": 0,
+          "solution": "1. Each pure $2p_z$ atomic orbital already contains one natural nodal plane passing through its atomic nucleus perpendicular to the $z$-axis (giving $2$ nodal planes at the nuclei).\n2. When two $2p_z$ orbitals combine destructively with opposite phases ($+-$ and $-+$), complete wave cancellation occurs at the center between the two nuclei.\n3. This creates an additional internuclear nodal plane perpendicular to the internuclear axis.\n4. In total, the $\\sigma^*_{2p_z}$ antibonding orbital has **three nodal planes** (two through the nuclei and one bisecting the internuclear axis)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What are the bond order and magnetic behavior of the boron molecule ($\\text{B}_2$) in the gas phase?",
+          "image": "",
+          "options": [
+            "$\\text{Bond Order} = 1$, Paramagnetic",
+            "$\\text{Bond Order} = 1$, Diamagnetic",
+            "$\\text{Bond Order} = 2$, Paramagnetic",
+            "$\\text{Bond Order} = 2$, Diamagnetic"
+          ],
+          "correctOption": 0,
+          "solution": "1. Boron molecule ($\\text{B}_2$) has a total of $10$ electrons.\n2. Because $\\text{B}_2$ has fewer than $14$ electrons, $s-p$ mixing is active, placing $\\pi_{2p}$ lower than $\\sigma_{2p_z}$:\n   $$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, (\\pi_{2p_x}^1 = \\pi_{2p_y}^1)$$\n3. Calculate bond order:\n   $$\\text{BO} = \\frac{N_b - N_a}{2} = \\frac{6 - 4}{2} = 1$$\n4. The last two valence electrons occupy the degenerate $\\pi_{2p_x}$ and $\\pi_{2p_y}$ orbitals singly with parallel spins, giving **two unpaired electrons**.\n5. Therefore, $\\text{B}_2$ has a **bond order of $1$ and is paramagnetic**."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] When an electron is removed from molecular nitrogen ($\\text{N}_2 \\rightarrow \\text{N}_2^+ + e^-$) and from molecular oxygen ($\\text{O}_2 \\rightarrow \\text{O}_2^+ + e^-$), what happens to their respective bond orders?",
+          "image": "",
+          "options": [
+            "Bond order of $\\text{N}_2$ decreases, while bond order of $\\text{O}_2$ increases",
+            "Bond order of $\\text{N}_2$ increases, while bond order of $\\text{O}_2$ decreases",
+            "Bond orders of both $\\text{N}_2$ and $\\text{O}_2$ increase",
+            "Bond orders of both $\\text{N}_2$ and $\\text{O}_2$ decrease"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $\\text{N}_2$ ($14e^-$): The highest occupied molecular orbital (HOMO) is the **bonding** orbital $\\sigma_{2p_z}$. Removing an electron reduces $N_b$ by $1$:\n   $$\\text{BO}(\\text{N}_2) = 3.0 \\longrightarrow \\text{BO}(\\text{N}_2^+) = 2.5 \\quad (\\text{decreases})$$\n2. For $\\text{O}_2$ ($16e^-$): The HOMO is the **antibonding** orbital $\\pi^*_{2p_x}/\\pi^*_{2p_y}$. Removing an electron reduces $N_a$ by $1$:\n   $$\\text{BO}(\\text{O}_2) = 2.0 \\longrightarrow \\text{BO}(\\text{O}_2^+) = 2.5 \\quad (\\text{increases})$$\nTherefore, the bond order of $\\text{N}_2$ decreases, while that of $\\text{O}_2$ increases."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following pairs of diatomic species are both ISOELECTRONIC and have a BOND ORDER of $3.0$?",
+          "image": "",
+          "options": [
+            "$\\text{CO}$ and $\\text{NO}^+$",
+            "$\\text{CN}^-$ and $\\text{O}_2^+$",
+            "$\\text{N}_2$ and $\\text{O}_2$",
+            "$\\text{NO}$ and $\\text{CO}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate total electrons for $\\text{CO}$ and $\\text{NO}^+$:\n   - $\\text{CO}$: $6\\text{ (C)} + 8\\text{ (O)} = 14$ electrons.\n   - $\\text{NO}^+$: $7\\text{ (N)} + 8\\text{ (O)} - 1 = 14$ electrons.\n2. Both are isoelectronic with $\\text{N}_2$ ($14$ electrons).\n3. Any $14$-electron diatomic species has the configuration:\n   $$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, \\sigma_{2p_z}^2$$\n   $$\\text{BO} = \\frac{10 - 4}{2} = 3.0$$\nTherefore, both $\\text{CO}$ and $\\text{NO}^+$ are isoelectronic with a bond order of $3.0$."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Arrange the following species in order of INCREASING thermodynamic stability: $\\text{N}_2, \\text{N}_2^+, \\text{N}_2^-, \\text{N}_2^{2-}$.",
+          "image": "",
+          "options": [
+            "$\\text{N}_2^{2-} < \\text{N}_2^- < \\text{N}_2^+ < \\text{N}_2$",
+            "$\\text{N}_2^{2-} < \\text{N}_2^+ < \\text{N}_2^- < \\text{N}_2$",
+            "$\\text{N}_2 < \\text{N}_2^+ < \\text{N}_2^- < \\text{N}_2^{2-}$",
+            "$\\text{N}_2^- < \\text{N}_2^+ < \\text{N}_2^{2-} < \\text{N}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate bond orders:\n   - $\\text{N}_2$ ($14e^-$): $\\text{BO} = 3.0$\n   - $\\text{N}_2^+$ ($13e^-$): $\\text{BO} = \\frac{9 - 4}{2} = 2.5$\n   - $\\text{N}_2^-$ ($15e^-$): $\\text{BO} = \\frac{10 - 5}{2} = 2.5$\n   - $\\text{N}_2^{2-}$ ($16e^-$): $\\text{BO} = \\frac{10 - 6}{2} = 2.0$\n2. Comparing species with identical bond orders ($\\text{N}_2^+$ vs $\\text{N}_2^-$):\n   - $\\text{N}_2^+$ has $4$ antibonding electrons ($\\sigma^*_{1s}^2\\, \\sigma^*_{2s}^2$).\n   - $\\text{N}_2^-$ has $5$ antibonding electrons, including one electron in a destabilizing $\\pi^*$ orbital.\n   - Greater antibonding electron population decreases stability, so $\\text{N}_2^+$ is more stable than $\\text{N}_2^-$.\n3. Therefore, increasing stability follows: $\\text{N}_2^{2-} < \\text{N}_2^- < \\text{N}_2^+ < \\text{N}_2$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the formation of $\\pi$-bonding and $\\pi$-antibonding molecular orbitals by the lateral overlap of two $2p_x$ atomic orbitals, which of the following is correct?",
+          "image": "",
+          "options": [
+            "$\\pi_{2p_x}$ has one nodal plane containing the internuclear axis, while $\\pi^*_{2p_x}$ has two nodal planes",
+            "$\\pi_{2p_x}$ has zero nodal planes, while $\\pi^*_{2p_x}$ has one nodal plane",
+            "Both have zero nodal planes",
+            "$\\pi_{2p_x}$ has two nodal planes, while $\\pi^*_{2p_x}$ has three nodal planes"
+          ],
+          "correctOption": 0,
+          "solution": "1. For the **$\\pi_{2p_x}$ bonding orbital**: Formed by constructive in-phase overlap ($++$ above, $--$ below). The internuclear $yz$-plane contains zero electron density, giving **one nodal plane** (the internuclear plane).\n2. For the **$\\pi^*_{2p_x}$ antibonding orbital**: Formed by destructive out-of-phase overlap. In addition to the horizontal internuclear nodal plane, an additional vertical nodal plane bisects the internuclear axis between the nuclei, giving **two nodal planes**."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The magnetic moment (spin-only) of the superoxide ion ($\\text{O}_2^-$) is:",
+          "image": "",
+          "options": [
+            "$1.73\\text{ BM}$",
+            "$2.83\\text{ BM}$",
+            "$0.00\\text{ BM}$",
+            "$3.87\\text{ BM}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Superoxide ion ($\\text{O}_2^-$) has $17$ electrons.\n2. Its valence electron configuration is:\n   $$\\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, \\sigma_{2p_z}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, (\\pi^*_{2p_x}^2 = \\pi^*_{2p_y}^1)$$\n3. It contains **one unpaired electron** ($n = 1$) in the $\\pi^*$ subshell.\n4. The spin-only magnetic moment is given by:\n   $$\\mu_s = \\sqrt{n(n + 2)}\\text{ BM} = \\sqrt{1(1 + 2)} = \\sqrt{3} \\approx 1.732\\text{ BM} \\approx 1.73\\text{ BM}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following conditions is NOT required for the effective linear combination of atomic orbitals (LCAO) to form molecular orbitals?",
+          "image": "",
+          "options": [
+            "The combining atomic orbitals must have vastly different energies",
+            "The combining atomic orbitals must have nearly identical energies",
+            "The combining atomic orbitals must have proper spatial symmetry relative to the internuclear axis",
+            "The combining atomic orbitals must overlap to the maximum possible extent"
+          ],
+          "correctOption": 0,
+          "solution": "According to the fundamental principles of the LCAO method:\n1. The combining atomic orbitals must have **comparable/nearly equal energies** (e.g., $1s$ can combine with $1s$, but not effectively with $2s$).\n2. The orbitals must have the **same symmetry** about the internuclear axis (e.g., $2p_z$ can combine with $2p_z$ along the $z$-axis, but cannot combine with $2p_x$ because positive and negative overlaps cancel to zero).\n3. The orbitals must achieve **maximum overlap** to lower energy and form a stable bond.\nTherefore, Statement A is an incorrect condition (a violation of LCAO requirements)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The bond order of the helium dimer ion ($\\text{He}_2^+$) is:",
+          "image": "",
+          "options": [
+            "$0.5$",
+            "$1.0$",
+            "$0.0$",
+            "$1.5$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{He}_2^+$ has a total of $3$ electrons ($2$ from neutral $\\text{He}$ and $1$ from $\\text{He}^+$).\n2. Its ground-state molecular orbital configuration is:\n   $$\\sigma_{1s}^2\\, \\sigma^*_{1s}^1$$\n3. Calculate the bond order:\n   $$\\text{BO} = \\frac{N_b - N_a}{2} = \\frac{2 - 1}{2} = 0.5$$\n(Because $\\text{BO} > 0$, $\\text{He}_2^+$ has transient physical existence in gas-phase electric discharges)."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following diatomic molecules has the HIGHEST bond dissociation enthalpy?",
+          "image": "",
+          "options": [
+            "$\\text{N}_2$",
+            "$\\text{O}_2$",
+            "$\\text{F}_2$",
+            "$\\text{C}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Bond dissociation enthalpy is directly proportional to bond order.\n- $\\text{N}_2$: $\\text{BO} = 3.0$ (triple bond, $945.8\\text{ kJ mol}^{-1}$)\n- $\\text{O}_2$: $\\text{BO} = 2.0$ ($498\\text{ kJ mol}^{-1}$)\n- $\\text{C}_2$: $\\text{BO} = 2.0$ ($599\\text{ kJ mol}^{-1}$)\n- $\\text{F}_2$: $\\text{BO} = 1.0$ ($158.8\\text{ kJ mol}^{-1}$)\n2. Dinitrogen ($\\text{N}_2$) has the highest bond order ($3.0$) and the shortest internuclear distance, giving it the **highest bond dissociation enthalpy** among all homonuclear diatomics."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the molecular orbital energy level diagram of $\\text{O}_2$, the sequence of energy levels for valence shell molecular orbitals is:",
+          "image": "",
+          "options": [
+            "$\\sigma_{2s} < \\sigma^*_{2s} < \\sigma_{2p_z} < (\\pi_{2p_x} = \\pi_{2p_y}) < (\\pi^*_{2p_x} = \\pi^*_{2p_y}) < \\sigma^*_{2p_z}$",
+            "$\\sigma_{2s} < \\sigma^*_{2s} < (\\pi_{2p_x} = \\pi_{2p_y}) < \\sigma_{2p_z} < (\\pi^*_{2p_x} = \\pi^*_{2p_y}) < \\sigma^*_{2p_z}$",
+            "$\\sigma_{2s} < \\sigma_{2p_z} < \\sigma^*_{2s} < (\\pi_{2p_x} = \\pi_{2p_y}) < (\\pi^*_{2p_x} = \\pi^*_{2p_y}) < \\sigma^*_{2p_z}$",
+            "$\\sigma_{2s} < \\sigma^*_{2s} < \\sigma_{2p_z} < (\\pi^*_{2p_x} = \\pi^*_{2p_y}) < (\\pi_{2p_x} = \\pi_{2p_y}) < \\sigma^*_{2p_z}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In oxygen ($\\text{O}_2$) and fluorine ($\\text{F}_2$), the $2s-2p$ energy gap is large enough that $s-p$ mixing is negligible.\n2. Consequently, the standard non-mixed energy order applies:\n   - $\\sigma_{2p_z}$ has more effective axial overlap and is lower in energy than the lateral $\\pi_{2p_x}$ and $\\pi_{2p_y}$ orbitals.\n3. The sequence is:\n   $$\\sigma_{2s} < \\sigma^*_{2s} < \\sigma_{2p_z} < (\\pi_{2p_x} = \\pi_{2p_y}) < (\\pi^*_{2p_x} = \\pi^*_{2p_y}) < \\sigma^*_{2p_z}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The peroxide ion ($\\text{O}_2^{2-}$) has a bond order of:",
+          "image": "",
+          "options": [
+            "$1.0$",
+            "$1.5$",
+            "$2.0$",
+            "$0.5$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Peroxide ion ($\\text{O}_2^{2-}$) contains $18$ electrons ($16 + 2$).\n2. Its valence electron configuration is:\n   $$\\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, \\sigma_{2p_z}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, (\\pi^*_{2p_x}^2 = \\pi^*_{2p_y}^2)$$\n3. Count electrons:\n   - Bonding electrons: $N_b = 2(\\sigma_{2s}) + 2(\\sigma_{2p_z}) + 4(\\pi_{2p}) = 8$\n   - Antibonding electrons: $N_a = 2(\\sigma^*_{2s}) + 4(\\pi^*_{2p}) = 6$\n4. Calculate bond order:\n   $$\\text{BO} = \\frac{8 - 6}{2} = \\frac{2}{2} = 1.0$$\n(This corresponds to a single covalent $\\text{O}-\\text{O}$ bond, as in $\\text{H}_2\\text{O}_2$ and $\\text{Na}_2\\text{O}_2$)."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements about an antibonding molecular orbital is TRUE?",
+          "image": "",
+          "options": [
+            "It has higher energy and less stability than the parent combining atomic orbitals",
+            "It is formed by the in-phase constructive interference of atomic wave functions",
+            "The electron probability density between the nuclei is greater than in a bonding orbital",
+            "Electrons in an antibonding orbital attract both nuclei toward each other"
+          ],
+          "correctOption": 0,
+          "solution": "1. An antibonding molecular orbital (ABMO) is formed by the **destructive out-of-phase combination** of atomic wave functions ($\\psi_A - \\psi_B$).\n2. The probability density between the nuclei is drastically reduced to zero at a nodal plane ($\\psi^2 = \\psi_A^2 + \\psi_B^2 - 2\\psi_A\\psi_B$).\n3. Because the nuclei are no longer shielded by inter-nuclear electron density, mutual positive nuclear repulsion pushes them apart.\n4. Consequently, an ABMO has **higher potential energy and lower stability** than the isolated parent atomic orbitals."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] What is the bond order of the acetylide ion ($\\text{C}_2^{2-}$)?",
+          "image": "",
+          "options": [
+            "$3.0$",
+            "$2.0$",
+            "$2.5$",
+            "$1.5$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Acetylide ion ($\\text{C}_2^{2-}$) has $12 + 2 = 14$ electrons (isoelectronic with $\\text{N}_2$ and $\\text{CO}$).\n2. For $14$ electrons, the configuration is:\n   $$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, \\sigma_{2p_z}^2$$\n3. Calculate bond order:\n   $$\\text{BO} = \\frac{N_b - N_a}{2} = \\frac{10 - 4}{2} = 3.0$$\n(This corresponds to a carbon-carbon triple bond, as found in calcium carbide, $\\text{CaC}_2$)."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following species has a fractional bond order?",
+          "image": "",
+          "options": [
+            "$\\text{O}_2^-$",
+            "$\\text{N}_2$",
+            "$\\text{C}_2$",
+            "$\\text{O}_2^{2-}$"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate bond orders:\n1. $\\text{O}_2^-$ ($17e^-$): $\\text{BO} = \\frac{10 - 7}{2} = 1.5$ (fractional bond order).\n2. $\\text{N}_2$ ($14e^-$): $\\text{BO} = 3.0$ (integral).\n3. $\\text{C}_2$ ($12e^-$): $\\text{BO} = 2.0$ (integral).\n4. $\\text{O}_2^{2-}$ ($18e^-$): $\\text{BO} = 1.0$ (integral).\nTherefore, the superoxide ion ($\\text{O}_2^-$) has a fractional bond order ($1.5$)."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In the molecular orbital configuration of the nitrogen molecule ($\\text{N}_2$), the total number of bonding electrons is:",
+          "image": "",
+          "options": [
+            "$10$",
+            "$8$",
+            "$6$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Molecular orbital configuration of $\\text{N}_2$ ($14$ electrons):\n   $$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, \\sigma_{2p_z}^2$$\n2. Sum up electrons in bonding orbitals (orbitals without an asterisk):\n   $$N_b = 2(\\sigma_{1s}) + 2(\\sigma_{2s}) + 4(\\pi_{2p}) + 2(\\sigma_{2p_z}) = 10\\text{ bonding electrons}$$\n3. (The antibonding electrons are $N_a = 2(\\sigma^*_{1s}) + 2(\\sigma^*_{2s}) = 4$)."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following species has the SHORTEST bond length?",
+          "image": "",
+          "options": [
+            "$\\text{NO}^+$",
+            "$\\text{NO}$",
+            "$\\text{NO}^-$",
+            "$\\text{O}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Shortest bond length corresponds to the **highest bond order**.\n2. Calculate bond order for each species:\n   - $\\text{NO}^+$ ($14e^-$): $\\text{BO} = \\frac{10 - 4}{2} = 3.0$\n   - $\\text{NO}$ ($15e^-$): $\\text{BO} = \\frac{10 - 5}{2} = 2.5$\n   - $\\text{NO}^-$ ($16e^-$): $\\text{BO} = \\frac{10 - 6}{2} = 2.0$\n   - $\\text{O}_2$ ($16e^-$): $\\text{BO} = \\frac{10 - 6}{2} = 2.0$\n3. Because $\\text{NO}^+$ has the highest bond order ($3.0$), it has the strongest bond and the **shortest bond length**."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The number of unpaired electrons in a molecule of dilithium ($\\text{Li}_2$) in the gas phase is:",
+          "image": "",
+          "options": [
+            "$0$ (diamagnetic)",
+            "$1$ (paramagnetic)",
+            "$2$ (paramagnetic)",
+            "$3$ (paramagnetic)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Dilithium ($\\text{Li}_2$) has a total of $6$ electrons ($2 \\times 3$).\n2. Ground-state MO configuration:\n   $$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2$$\n3. All six electrons are completely paired in closed shells.\n4. Therefore, $\\text{Li}_2$ has **$0$ unpaired electrons** and is **diamagnetic** with a bond order of $\\frac{4 - 2}{2} = 1$."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] If the internuclear axis is taken along the z-axis, which atomic orbital overlap results in a NON-BONDING situation (zero net overlap)?",
+          "image": "",
+          "options": [
+            "Overlap between an $s$-orbital and a $p_x$ orbital",
+            "Overlap between an $s$-orbital and a $p_z$ orbital",
+            "Overlap between a $p_z$ orbital and another $p_z$ orbital",
+            "Overlap between a $p_x$ orbital and another $p_x$ orbital"
+          ],
+          "correctOption": 0,
+          "solution": "1. Take the internuclear axis as the $z$-axis.\n2. The $s$-orbital is spherically symmetrical and centered along the $z$-axis.\n3. The $p_x$ orbital has a positive lobe above the $z$-axis and a negative lobe below the $z$-axis.\n4. When an $s$-orbital approaches a $p_x$ orbital sideways, it overlaps equally with the positive and negative lobes.\n5. The constructive ($++$) overlap is exactly canceled by the destructive ($+-$) overlap, resulting in **zero net overlap** (non-bonding interaction)."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the bond order and magnetic behavior of the dicyanogen ion ($\\text{C}_2^-$)?",
+          "image": "",
+          "options": [
+            "$\\text{BO} = 2.5$, Paramagnetic",
+            "$\\text{BO} = 2.0$, Diamagnetic",
+            "$\\text{BO} = 1.5$, Paramagnetic",
+            "$\\text{BO} = 2.5$, Diamagnetic"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{C}_2^-$ has $12 + 1 = 13$ electrons.\n2. Its MO configuration (with $s-p$ mixing) is:\n   $$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, \\sigma_{2p_z}^1$$\n3. Calculate bond order:\n   $$\\text{BO} = \\frac{N_b - N_a}{2} = \\frac{9 - 4}{2} = 2.5$$\n4. Because there is **one unpaired electron** in the $\\sigma_{2p_z}$ orbital, $\\text{C}_2^-$ is **paramagnetic**."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Two homonuclear diatomic species have the same bond order of $2.5$: $\\text{O}_2^+$ and $\\text{N}_2^+$. Which of the following comparisons is TRUE?",
+          "image": "",
+          "options": [
+            "Both species are paramagnetic with one unpaired electron each",
+            "$\\text{O}_2^+$ is diamagnetic, while $\\text{N}_2^+$ is paramagnetic",
+            "$\\text{N}_2^+$ is diamagnetic, while $\\text{O}_2^+$ is paramagnetic",
+            "Both species are diamagnetic"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $\\text{O}_2^+$ ($15e^-$):\n   Configuration: $\\text{KK}\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, \\sigma_{2p_z}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, (\\pi^*_{2p_x}^1)$\n   It contains **one unpaired electron** in an antibonding orbital $\\implies$ **Paramagnetic**.\n2. For $\\text{N}_2^+$ ($13e^-$):\n   Configuration: $\\text{KK}\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, \\sigma_{2p_z}^1$\n   It contains **one unpaired electron** in a bonding orbital $\\implies$ **Paramagnetic**.\nTherefore, both species have $1$ unpaired electron and are paramagnetic."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In which of the following molecular orbitals is the electron density centered directly along the internuclear axis?",
+          "image": "",
+          "options": [
+            "$\\sigma_{2p_z}$",
+            "$\\pi_{2p_x}$",
+            "$\\pi_{2p_y}$",
+            "$\\pi^*_{2p_x}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. A $\\sigma$ (sigma) molecular orbital is formed by coaxial (head-on) overlap of orbitals along the internuclear axis (conventionally the $z$-axis).\n2. The resulting electron cloud possesses cylindrical rotational symmetry about the internuclear axis, and maximum electron probability density is **concentrated directly along the internuclear axis**.\n3. In contrast, $\\pi$ molecular orbitals have a nodal plane along the internuclear axis, with electron density concentrated above and below the axis."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The bond orders of $\\text{O}_2, \\text{O}_2^-,$ and $\\text{O}_2^{2-}$ are $2.0, 1.5,$ and $1.0$ respectively. The correct order of their bond dissociation enthalpies is:",
+          "image": "",
+          "options": [
+            "$\\text{O}_2 > \\text{O}_2^- > \\text{O}_2^{2-}$",
+            "$\\text{O}_2^{2-} > \\text{O}_2^- > \\text{O}_2$",
+            "$\\text{O}_2^- > \\text{O}_2 > \\text{O}_2^{2-}$",
+            "$\\text{O}_2 > \\text{O}_2^{2-} > \\text{O}_2^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Bond dissociation enthalpy is directly proportional to bond order ($\\text{Bond Enthalpy} \\propto \\text{Bond Order}$).\n2. Comparing the bond orders:\n   $$\\text{BO}(\\text{O}_2) = 2.0 > \\text{BO}(\\text{O}_2^-) = 1.5 > \\text{BO}(\\text{O}_2^{2-}) = 1.0$$\n3. Consequently, the energy required to break the bond decreases as the bond order decreases:\n   $$\\text{O}_2 (498\\text{ kJ/mol}) > \\text{O}_2^- (395\\text{ kJ/mol}) > \\text{O}_2^{2-} (200\\text{ kJ/mol})$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following statements about the hydrogen molecule ion ($\\text{H}_2^+$) is correct?",
+          "image": "",
+          "options": [
+            "It has a bond order of $0.5$ and is paramagnetic",
+            "It has a bond order of $1.0$ and is diamagnetic",
+            "It cannot exist because it has only one electron",
+            "It has a bond order of zero"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{H}_2^+$ has a single electron in its bonding molecular orbital:\n   $$\\sigma_{1s}^1$$\n2. Calculate the bond order:\n   $$\\text{BO} = \\frac{N_b - N_a}{2} = \\frac{1 - 0}{2} = 0.5$$\n3. Because it contains **one unpaired electron**, $\\text{H}_2^+$ is **paramagnetic**.\n4. It exists stably in the gas phase with a bond dissociation energy of $269\\text{ kJ mol}^{-1}$."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A homonuclear diatomic molecule has $14$ electrons. If two electrons are added to form the divalent anion, the electrons will enter which molecular orbital?",
+          "image": "",
+          "options": [
+            "$\\pi^*_{2p_x}$ and $\\pi^*_{2p_y}$",
+            "$\\sigma^*_{2p_z}$",
+            "$\\sigma_{2p_z}$",
+            "$\\pi_{2p_x}$ and $\\pi_{2p_y}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. A $14$-electron species (e.g., $\\text{N}_2$) has completely filled all bonding orbitals up to $\\sigma_{2p_z}$:\n   $$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, \\sigma_{2p_z}^2$$\n2. The lowest unoccupied molecular orbitals (LUMO) are the degenerate antibonding pair **$\\pi^*_{2p_x}$ and $\\pi^*_{2p_y}$**.\n3. Adding two electrons (as in $\\text{N}_2^{2-}$ or $\\text{O}_2$) places the $15^{\\text{th}}$ and $16^{\\text{th}}$ electrons into **$\\pi^*_{2p_x}$ and $\\pi^*_{2p_y}$**."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In which of the following diatomic species does the bond order DECREASE upon adding an electron?",
+          "image": "",
+          "options": [
+            "$\\text{N}_2$",
+            "$\\text{B}_2$",
+            "$\\text{C}_2$",
+            "$\\text{O}_2^+$"
+          ],
+          "correctOption": 0,
+          "solution": "1. When an incoming electron enters a **bonding MO**, the bond order increases by $0.5$.\n2. When an incoming electron enters an **antibonding MO**, the bond order decreases by $0.5$.\n3. In $\\text{N}_2$ ($14e^-$), all bonding orbitals are filled; the incoming electron enters an **antibonding orbital** ($\\pi^*_{2p}$), decreasing the bond order from $3.0$ to $2.5$ (in $\\text{N}_2^-$).\n4. For $\\text{B}_2$ ($10e^-$) and $\\text{C}_2$ ($12e^-$), the incoming electron enters a bonding orbital, increasing the bond order."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the total number of antibonding electrons in a molecule of fluorine ($\\text{F}_2$)?",
+          "image": "",
+          "options": [
+            "$8$",
+            "$6$",
+            "$10$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Fluorine molecule ($\\text{F}_2$) has a total of $18$ electrons.\n2. Ground-state MO configuration:\n   $$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, \\sigma_{2p_z}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, (\\pi^*_{2p_x}^2 = \\pi^*_{2p_y}^2)$$\n3. Count electrons in antibonding orbitals (indicated by an asterisk):\n   $$N_a = 2(\\sigma^*_{1s}) + 2(\\sigma^*_{2s}) + 2(\\pi^*_{2p_x}) + 2(\\pi^*_{2p_y}) = 8\\text{ antibonding electrons}$$\n4. (With $N_b = 10$, $\\text{BO} = \\frac{10 - 8}{2} = 1.0$)."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The stabilization energy of a bonding molecular orbital ($\\Delta E_{\\text{bonding}}$) compared to isolated atomic orbitals is slightly LESS than the destabilization energy of the corresponding antibonding molecular orbital ($\\Delta E_{\\text{antibonding}}$). This is primarily due to:",
+          "image": "",
+          "options": [
+            "Electrostatic repulsion between the two positively charged atomic nuclei",
+            "Nuclear magnetic resonance interactions",
+            "Spin-orbit coupling of valence electrons",
+            "Relativistic mass correction of electrons"
+          ],
+          "correctOption": 0,
+          "solution": "1. When two atomic orbitals combine, in addition to electronic energy changes, the two positively charged atomic nuclei experience mutual electrostatic repulsion.\n2. In a bonding orbital, the high internuclear electron density partially screens this nuclear-nuclear repulsion, but does not eliminate it.\n3. In an antibonding orbital, the depletion of internuclear electron density leaves the nuclei unscreened, amplifying the positive nuclear-nuclear repulsion.\n4. Consequently, **antibonding orbitals are destabilized more than bonding orbitals are stabilized**:\n   $$\\Delta E_{\\text{destabilization}} > \\Delta E_{\\text{stabilization}}$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following species has a bond order of $2.5$ and is DIAMAGNETIC?",
+          "image": "",
+          "options": [
+            "No diatomic species with a fractional bond order can be diamagnetic",
+            "$\\text{N}_2^+$",
+            "$\\text{O}_2^+$",
+            "$\\text{C}_2^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Bond order is given by $\\text{BO} = \\frac{N_b - N_a}{2}$.\n2. For $\\text{BO}$ to be a half-integer ($0.5, 1.5, 2.5$), the difference $(N_b - N_a)$ must be an **odd integer**.\n3. Since the total number of electrons is $N_t = N_b + N_a$, an odd difference $(N_b - N_a)$ requires that the total electron count $N_t$ is also an **odd number**.\n4. Any species with an odd number of electrons must contain at least one unpaired electron, making it **paramagnetic**.\n5. Therefore, it is fundamentally impossible for a diatomic species with a fractional bond order to be diamagnetic."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the cyanide ion ($\\text{CN}^-$), the highest occupied molecular orbital (HOMO) is:",
+          "image": "",
+          "options": [
+            "$\\sigma_{2p_z}$",
+            "$\\pi_{2p_x}$",
+            "$\\pi^*_{2p_x}$",
+            "$\\sigma^*_{2s}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The cyanide ion ($\\text{CN}^-$) has $6\\text{ (C)} + 7\\text{ (N)} + 1 = 14$ electrons (isoelectronic with $\\text{N}_2$).\n2. For a $14$-electron species with $s-p$ mixing, the molecular orbital energy ordering is:\n   $$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, \\sigma_{2p_z}^2$$\n3. The orbital filled last with the highest energy is **$\\sigma_{2p_z}$**.\n4. Therefore, the highest occupied molecular orbital (HOMO) is **$\\sigma_{2p_z}$**."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following represents the correct electronic configuration of the neon dimer ($\\text{Ne}_2$) if it were formed?",
+          "image": "",
+          "options": [
+            "$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, \\sigma_{2p_z}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, (\\pi^*_{2p_x}^2 = \\pi^*_{2p_y}^2)\\, \\sigma^*_{2p_z}^2$",
+            "$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, \\sigma_{2p_z}^2\\, (\\pi^*_{2p_x}^2 = \\pi^*_{2p_y}^2)$",
+            "$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, \\sigma_{2p_z}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)$",
+            "$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, (\\pi^*_{2p_x}^2 = \\pi^*_{2p_y}^2)\\, \\sigma^*_{2p_z}^2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Neon has atomic number $10$, so a hypothetical $\\text{Ne}_2$ molecule would contain $20$ electrons.\n2. In $\\text{Ne}_2$, the $2s-2p$ energy gap is large, so the non-mixed ordering applies with $\\sigma_{2p_z}$ below $\\pi_{2p}$.\n3. All bonding and antibonding molecular orbitals formed from the $n = 1$ and $n = 2$ shells are completely filled:\n   $$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, \\sigma_{2p_z}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, (\\pi^*_{2p_x}^2 = \\pi^*_{2p_y}^2)\\, \\sigma^*_{2p_z}^2$$\n4. Here $N_b = 10$ and $N_a = 10$, giving $\\text{BO} = \\frac{10 - 10}{2} = 0$, confirming that $\\text{Ne}_2$ does not exist."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The bond order of the helium molecule ($\\text{He}_2$) is zero. This explains why:",
+          "image": "",
+          "options": [
+            "Helium exists exclusively as monoatomic gas and does not form diatomic molecules",
+            "Helium is a radioactive element",
+            "Helium forms ionic lattices at room temperature",
+            "Helium has an incomplete octet"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $\\text{He}_2$ ($4$ electrons):\n   $$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2$$\n   $$\\text{BO} = \\frac{2 - 2}{2} = 0$$\n2. A bond order of zero indicates that no net chemical bonding or stabilization occurs between two colliding helium atoms.\n3. Furthermore, because antibonding destabilization slightly exceeds bonding stabilization, two separated helium atoms are lower in energy than a bound $\\text{He}_2$ molecule.\n4. Therefore, **helium exists strictly as an isolated monoatomic gas**."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following species has the SAME bond order as that of $\\text{CO}$?",
+          "image": "",
+          "options": [
+            "$\\text{CN}^-$",
+            "$\\text{O}_2$",
+            "$\\text{NO}$",
+            "$\\text{O}_2^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The carbon monoxide molecule ($\\text{CO}$) contains $6 + 8 = 14$ electrons, with a bond order of $3.0$.\n2. For $\\text{CN}^-$: $6\\text{ (C)} + 7\\text{ (N)} + 1 = 14$ electrons.\n3. Because $\\text{CN}^-$ is isoelectronic with $\\text{CO}$ ($14e^-$), its bond order is also identically **$3.0$**.\n4. (By comparison: $\\text{NO} = 2.5, \\text{O}_2 = 2.0, \\text{O}_2^- = 1.5$)."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the formation of molecular orbitals, atomic orbitals with quantum numbers $(n, l, m)$ can combine only with other atomic orbitals having:",
+          "image": "",
+          "options": [
+            "Similar energy and identical symmetry with respect to the molecular axis",
+            "Opposite spin quantum numbers exclusively",
+            "Different principal quantum numbers $n$",
+            "Different angular momentum quantum numbers $l$"
+          ],
+          "correctOption": 0,
+          "solution": "According to the symmetry principles of Molecular Orbital Theory:\n1. Non-zero spatial overlap requires the combining atomic orbitals to possess **identical symmetry with respect to the internuclear axis**.\n2. For example, taking the $z$-axis as internuclear, a $p_z$ orbital has $m = 0$ (cylindrical symmetry) and can combine with an $s$-orbital ($m = 0$) or another $p_z$ orbital ($m = 0$).\n3. In contrast, $p_x$ ($m = \\pm 1$) and $p_z$ ($m = 0$) have orthogonal symmetries, giving net zero overlap."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the conversion $\\text{O}_2 \\rightarrow \\text{O}_2^{2-}$, the added electrons enter into:",
+          "image": "",
+          "options": [
+            "$\\pi^*$ molecular orbitals",
+            "$\\sigma^*$ molecular orbitals",
+            "$\\pi$ molecular orbitals",
+            "$\\sigma$ molecular orbitals"
+          ],
+          "correctOption": 0,
+          "solution": "1. Ground-state configuration of neutral $\\text{O}_2$ ($16e^-$):\n   $$\\sigma_{1s}^2\\, \\sigma^*_{1s}^2\\, \\sigma_{2s}^2\\, \\sigma^*_{2s}^2\\, \\sigma_{2p_z}^2\\, (\\pi_{2p_x}^2 = \\pi_{2p_y}^2)\\, (\\pi^*_{2p_x}^1 = \\pi^*_{2p_y}^1)$$\n2. To form the peroxide ion ($\\text{O}_2^{2-}$, $18e^-$), two electrons are added.\n3. These two incoming electrons pair up with the single electrons already in the **$\\pi^*_{2p_x}$ and $\\pi^*_{2p_y}$ antibonding orbitals**, completing their subshell to $(\\pi^*_{2p_x}^2 = \\pi^*_{2p_y}^2)$."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following orders of bond energy is correct for nitrogen and its ions?",
+          "image": "",
+          "options": [
+            "$\\text{N}_2 > \\text{N}_2^+ \\approx \\text{N}_2^- > \\text{N}_2^{2-}$",
+            "$\\text{N}_2^{2-} > \\text{N}_2^- > \\text{N}_2^+ > \\text{N}_2$",
+            "$\\text{N}_2^+ > \\text{N}_2 > \\text{N}_2^- > \\text{N}_2^{2-}$",
+            "$\\text{N}_2 > \\text{N}_2^{2-} > \\text{N}_2^+ > \\text{N}_2^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Bond energy directly correlates with bond order:\n   - $\\text{N}_2$: $\\text{BO} = 3.0$ (highest bond energy)\n   - $\\text{N}_2^+$: $\\text{BO} = 2.5$\n   - $\\text{N}_2^-$: $\\text{BO} = 2.5$\n   - $\\text{N}_2^{2-}$: $\\text{BO} = 2.0$ (lowest bond energy)\n2. Comparing $\\text{N}_2^+$ and $\\text{N}_2^-$: both have $\\text{BO} = 2.5$, but $\\text{N}_2^-$ has an extra electron in an antibonding $\\pi^*$ orbital, making its bond slightly weaker than $\\text{N}_2^+$.\n3. Therefore, the decreasing order of bond energy is:\n   $$\\text{N}_2 > \\text{N}_2^+ > \\text{N}_2^- > \\text{N}_2^{2-}$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In the formation of a homonuclear diatomic molecule, if $6$ atomic orbitals from each atom participate in combination, the total number of molecular orbitals formed is:",
+          "image": "",
+          "options": [
+            "$12$ ($6$ bonding and $6$ antibonding)",
+            "$6$ ($3$ bonding and $3$ antibonding)",
+            "$18$ ($9$ bonding and $9$ antibonding)",
+            "$24$ ($12$ bonding and $12$ antibonding)"
+          ],
+          "correctOption": 0,
+          "solution": "1. A fundamental law of Molecular Orbital Theory states that the **number of molecular orbitals formed is strictly equal to the total number of atomic orbitals that combine**:\n   $$\\text{Number of MOs} = N_A + N_B$$\n2. If each atom contributes $6$ atomic orbitals:\n   $$\\text{Total combining atomic orbitals} = 6 + 6 = 12$$\n3. These $12$ atomic orbitals combine to form exactly **$12$ molecular orbitals**, consisting of **$6$ bonding molecular orbitals and $6$ antibonding molecular orbitals**."
+        }
+      ]
+    }
+  ]
+}

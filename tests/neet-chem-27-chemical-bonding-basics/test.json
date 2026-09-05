@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-27-chemical-bonding-basics",
+  "title": "Chemical Bonding Basics (Kossel-Lewis Approach, Ionic & Covalent Bonds, Bond Parameters, & Fajan's Rules)",
+  "syllabus": "Kossel-Lewis approach to chemical bonding, octet rule and its limitations (incomplete octet, odd-electron molecules, expanded octet); Lewis dot structures and formal charge calculation; Ionic / electrovalent bond: factors favoring formation (low ionization enthalpy, high electron gain enthalpy, high lattice enthalpy), lattice energy and Born-Haber cycle; Covalent bond: single, double, and triple bonds, coordinate / dative bond; Bond parameters: bond length, bond angle, bond enthalpy, bond order and their interrelationships; Fajan's rules: polarizing power of cation, polarizability of anion, pseudo-noble gas configuration ((n-1)d^10 ns^0 vs noble gas s^2 p^6), covalent character in ionic compounds and its effects on melting points, thermal stability, solubility, and color intensity; Resonance structures and resonance energy; Partial ionic character in covalent bonds (dipole moment μ = q × d, percent ionic character via Hannay-Smith equation)",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] According to Fajan's rules, which of the following halides has the HIGHEST covalent character and hence the lowest melting point?",
+          "image": "",
+          "options": [
+            "$\\text{AlCl}_3$",
+            "$\\text{MgCl}_2$",
+            "$\\text{NaCl}$",
+            "$\\text{CaCl}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "According to Fajan's rules, covalent character in an ionic compound is maximized when:\n1. The cation has a high positive charge and small ionic radius (high polarizing power $\\phi = \\frac{\\text{charge}}{\\text{radius}}$).\n2. The anion is large and easily polarizable.\nComparing the cations:\n- $\\text{Al}^{3+}$: Charge $= +3$, smallest ionic radius $\\implies$ highest polarizing power.\n- $\\text{Mg}^{2+}$: Charge $= +2$.\n- $\\text{Na}^+$: Charge $= +1$.\n- $\\text{Ca}^{2+}$: Charge $= +2$, larger than $\\text{Mg}^{2+}$.\nBecause $\\text{Al}^{3+}$ has the highest charge density, it polarizes the chloride electron cloud most effectively, giving $\\text{AlCl}_3$ the highest covalent character (and lowest melting point; it sublimes at $180^\\circ\\text{C}$)."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the formal charge on the central oxygen atom in an ozone molecule ($\\text{O}_3$)?",
+          "image": "",
+          "options": [
+            "$+1$",
+            "$0$",
+            "$-1$",
+            "$+2$"
+          ],
+          "correctOption": 0,
+          "solution": "The formula for formal charge ($\\text{FC}$) is:\n$$\\text{FC} = V - L - \\frac{1}{2}S$$\nwhere $V$ is valence electrons of free atom, $L$ is number of non-bonding lone pair electrons, and $S$ is number of shared bonding electrons.\nIn the Lewis structure of ozone: $\\overset{..}{\\text{O}}_1 = \\overset{\\text{..}}{\\text{O}}_2 - \\overset{\\text{:::}}{\\text{O}}_3$\n1. For the central oxygen atom ($\\text{O}_2$):\n- $V = 6$\n- It has one lone pair: $L = 2$\n- It forms one double bond and one single (coordinate) bond ($3$ bonds total, $6$ shared electrons): $S = 6$\n$$\\text{FC} = 6 - 2 - \\frac{1}{2}(6) = 6 - 2 - 3 = +1$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following molecules represents an EXCEPTION to the octet rule due to the presence of an EXPANDED OCTET (super-octet)?",
+          "image": "",
+          "options": [
+            "$\\text{SF}_6$",
+            "$\\text{BF}_3$",
+            "$\\text{CH}_4$",
+            "$\\text{NO}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In sulfur hexafluoride ($\\text{SF}_6$), the central sulfur atom forms six single covalent bonds with fluorine atoms, surrounded by $12$ valence electrons ($6$ bond pairs).\n2. Because it accommodates more than $8$ valence electrons by utilizing vacant $3d$ orbitals, it is an **expanded octet** (hypervalent molecule).\n3. $\\text{BF}_3$ has an incomplete octet ($6$ electrons around boron).\n4. $\\text{NO}$ is an odd-electron molecule ($11$ valence electrons).\n5. $\\text{CH}_4$ strictly obeys the octet rule ($8$ electrons around carbon)."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Cuprous chloride ($\\text{CuCl}$) has a melting point of $430^\\circ\\text{C}$ and is sparingly soluble in water, whereas sodium chloride ($\\text{NaCl}$) has a melting point of $801^\\circ\\text{C}$ and is highly soluble in water, even though $\\text{Cu}^+$ ($96\\text{ pm}$) and $\\text{Na}^+$ ($102\\text{ pm}$) have almost identical ionic radii. This difference is explained by:",
+          "image": "",
+          "options": [
+            "$\\text{Cu}^+$ has a pseudo-noble gas configuration ($3d^{10}$) with poor nuclear shielding, exerting greater polarizing power than $\\text{Na}^+$ with a noble gas configuration ($2s^2 2p^6$)",
+            "$\\text{Na}^+$ has a higher charge than $\\text{Cu}^+$",
+            "Chlorine forms coordinate bonds with copper but not with sodium",
+            "$\\text{CuCl}$ is an interstitial alloy rather than an ionic compound"
+          ],
+          "correctOption": 0,
+          "solution": "According to Fajan's rules regarding electronic configuration:\n1. A cation with a **pseudo-noble gas configuration** (eighteen electrons in the outermost shell, $(n-1)d^{10} ns^0$, such as $\\text{Cu}^+: [\\text{Ar}] 3d^{10}$) has a significantly higher polarizing power than a cation of similar size and charge with a noble gas configuration ($(n-1)s^2 (n-1)p^6$, such as $\\text{Na}^+: [\\text{Ne}]$).\n2. The ten $d$-electrons shield the nuclear charge very poorly, allowing the effective nuclear charge of $\\text{Cu}^+$ to penetrate and strongly distort (polarize) the electron cloud of the $\\text{Cl}^-$ anion.\n3. This introduces substantial covalent character into $\\text{CuCl}$, lowering its melting point and aqueous solubility relative to ionic $\\text{NaCl}$."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following conditions favors the formation of an IONIC bond between two atoms $A$ and $B$?",
+          "image": "",
+          "options": [
+            "Low ionization enthalpy of $A$, high negative electron gain enthalpy of $B$, and high lattice enthalpy of the crystal",
+            "High ionization enthalpy of $A$, low electron gain enthalpy of $B$, and low lattice enthalpy",
+            "Low ionization enthalpy of $A$, positive electron gain enthalpy of $B$, and low lattice enthalpy",
+            "High ionization enthalpy of $A$, high electron gain enthalpy of $B$, and low lattice enthalpy"
+          ],
+          "correctOption": 0,
+          "solution": "The formation of a stable ionic compound $A^+ B^-$ is favored by three energetic criteria:\n1. **Low ionization enthalpy** of the metallic element $A$: requires minimal energy input to remove the valence electron to form $A^+(g)$.\n2. **High negative electron gain enthalpy** of the non-metallic element $B$: releases a large quantity of energy upon capturing the electron to form $B^-(g)$.\n3. **High lattice enthalpy**: releases maximum electrostatic energy when the gaseous ions condense into the three-dimensional ionic crystal lattice ($A^+(g) + B^-(g) \\rightarrow AB(s)$)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The bond order and magnetic behavior of the carbon monoxide molecule ($\\text{CO}$) are respectively:",
+          "image": "",
+          "options": [
+            "$3$ and diamagnetic",
+            "$2$ and paramagnetic",
+            "$2.5$ and diamagnetic",
+            "$3$ and paramagnetic"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the Lewis/MO representation of $\\text{CO}$ ($14$ electrons total, isoelectronic with $\\text{N}_2$):\n$$:C \\equiv O:$$\nIt consists of two covalent bonds and one coordinate/dative bond from oxygen to carbon, giving a **bond order of $3$**.\n2. According to molecular orbital theory, all $14$ electrons are paired: $(\\sigma_{1s})^2 (\\sigma^*_{1s})^2 (\\sigma_{2s})^2 (\\sigma^*_{2s})^2 (\\pi_{2p_x}^2 = \\pi_{2p_y}^2) (\\sigma_{2p_z})^2$.\n3. Since there are zero unpaired electrons, $\\text{CO}$ is **diamagnetic**."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The correct order of bond dissociation enthalpy for the halogen molecules $\\text{Cl}_2, \\text{Br}_2, \\text{F}_2,$ and $\\text{I}_2$ is:",
+          "image": "",
+          "options": [
+            "$\\text{Cl}_2 > \\text{Br}_2 > \\text{F}_2 > \\text{I}_2$",
+            "$\\text{F}_2 > \\text{Cl}_2 > \\text{Br}_2 > \\text{I}_2$",
+            "$\\text{Cl}_2 > \\text{F}_2 > \\text{Br}_2 > \\text{I}_2$",
+            "$\\text{Cl}_2 > \\text{Br}_2 > \\text{I}_2 > \\text{F}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Normally, bond dissociation enthalpy decreases down a group as atomic size increases and orbital overlap becomes less effective.\n2. However, **$\\text{F}_2$ has an anomalously low bond dissociation enthalpy** ($158.8\\text{ kJ/mol}$) compared to $\\text{Cl}_2$ ($242.6\\text{ kJ/mol}$) and $\\text{Br}_2$ ($192.8\\text{ kJ/mol}$).\n3. In the compact $\\text{F}_2$ molecule, the $\\text{F}-\\text{F}$ bond length is very short ($142\\text{ pm}$), bringing the three non-bonding lone pairs on each fluorine atom very close together, causing strong lone pair-lone pair electrostatic repulsions that weaken the single bond.\n4. Therefore, the actual order of bond enthalpy is:\n$$\\text{Cl}_2 (242.6) > \\text{Br}_2 (192.8) > \\text{F}_2 (158.8) > \\text{I}_2 (151.1\\text{ kJ/mol})$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following compounds has the LOWEST solubility in water according to Fajan's rules?",
+          "image": "",
+          "options": [
+            "$\\text{AgI}$",
+            "$\\text{AgCl}$",
+            "$\\text{AgBr}$",
+            "$\\text{AgF}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. All four silver halides contain the same cation $\\text{Ag}^+$ (which has a pseudo-noble gas configuration $4d^{10}$ with high polarizing power).\n2. Down the halide group, anion size increases: $\\text{F}^- < \\text{Cl}^- < \\text{Br}^- < \\text{I}^-$.\n3. According to Fajan's rules, a larger anion has a more diffuse, loosely held electron cloud that is more easily distorted (higher polarizability).\n4. The iodide ion ($\\text{I}^-$) undergoes maximum polarization by $\\text{Ag}^+$, imparting maximum covalent character to $\\text{AgI}$.\n5. Higher covalent character reduces hydration and lowers ionic dissociation, making **$\\text{AgI}$ the least soluble** in water ($K_{sp} \\sim 10^{-17}$, while $\\text{AgF}$ is completely soluble)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the nitrite ion ($\\text{NO}_2^-$), the formal charges on the nitrogen atom and the two oxygen atoms are respectively:",
+          "image": "",
+          "options": [
+            "$0, 0,$ and $-1$",
+            "$+1, 0,$ and $-2$",
+            "$0, -1,$ and $-1$",
+            "$-1, 0,$ and $0$"
+          ],
+          "correctOption": 0,
+          "solution": "Write the dominant Lewis structure for nitrite ion: $[:\\ddot{\\text{O}}_1 = \\ddot{\\text{N}} - \\ddot{\\text{O}}_2:]^-$\n1. For Nitrogen ($\\text{N}$): $V = 5$, $L = 2$ (one lone pair), $S = 6$ ($3$ bonds):\n$$\\text{FC}(\\text{N}) = 5 - 2 - \\frac{1}{2}(6) = 0$$\n2. For double-bonded Oxygen ($\\text{O}_1$): $V = 6$, $L = 4$ ($2$ lone pairs), $S = 4$ ($2$ bonds):\n$$\\text{FC}(\\text{O}_1) = 6 - 4 - \\frac{1}{2}(4) = 0$$\n3. For single-bonded Oxygen ($\\text{O}_2$): $V = 6$, $L = 6$ ($3$ lone pairs), $S = 2$ ($1$ bond):\n$$\\text{FC}(\\text{O}_2) = 6 - 6 - \\frac{1}{2}(2) = -1$$\nThus, the formal charges are $0, 0,$ and $-1$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following molecules has an ODD number of valence electrons and therefore cannot satisfy the octet rule?",
+          "image": "",
+          "options": [
+            "$\\text{NO}_2$",
+            "$\\text{N}_2\\text{O}$",
+            "$\\text{CO}_2$",
+            "$\\text{SO}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate the total number of valence electrons in each molecule:\n1. $\\text{NO}_2$: Nitrogen has $5$ valence electrons, and each oxygen has $6$ valence electrons: $5 + 2(6) = 17$ valence electrons (odd-electron molecule, paramagnetic).\n2. $\\text{N}_2\\text{O}$: $2(5) + 6 = 16$ (even).\n3. $\\text{CO}_2$: $4 + 2(6) = 16$ (even).\n4. $\\text{SO}_2$: $6 + 2(6) = 18$ (even).\nTherefore, $\\text{NO}_2$ is an odd-electron molecule that violates the octet rule."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The dipole moment of $\\text{BeF}_2$ is ZERO, whereas that of $\\text{H}_2\\text{O}$ is $1.85\\text{ D}$. This is because:",
+          "image": "",
+          "options": [
+            "$\\text{BeF}_2$ has a linear geometry where two equal and opposite bond dipoles cancel out, whereas $\\text{H}_2\\text{O}$ has a bent geometry",
+            "Beryllium has zero electronegativity",
+            "The $\\text{Be}-\\text{F}$ bond is non-polar",
+            "Water forms intermolecular hydrogen bonds"
+          ],
+          "correctOption": 0,
+          "solution": "1. In $\\text{BeF}_2$, the central beryllium atom is $sp$-hybridized with zero lone pairs, producing a linear symmetrical geometry ($\\text{F}-\\text{Be}-\\text{F}$, bond angle $= 180^\\circ$).\n2. The two individual bond dipole moments ($\\mu_{\\text{Be}-\\text{F}}$) are equal in magnitude but point in exactly opposite directions, canceling out vectorially to yield a net dipole moment of $\\mu = 0$.\n3. In $\\text{H}_2\\text{O}$, the central oxygen atom is $sp^3$-hybridized with two lone pairs, producing an angular/bent geometry (bond angle $\\approx 104.5^\\circ$).\n4. The two $\\text{O}-\\text{H}$ bond dipole moments and lone pair moments do not cancel, giving a net dipole moment of $1.85\\text{ D}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "The dipole moment of hydrogen chloride ($\\text{HCl}$) is $1.03\\text{ D}$, and its bond length is $1.275\\text{ \\AA}$ ($1.275 \\times 10^{-8}\\text{ cm}$). The percentage ionic character of the $\\text{HCl}$ bond is: (Take $e = 4.8 \\times 10^{-10}\\text{ esu}$)",
+          "image": "",
+          "options": [
+            "$16.83\\%$",
+            "$33.66\\%$",
+            "$8.41\\%$",
+            "$50.00\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate theoretical dipole moment ($\\mu_{\\text{ionic}}$) for $100\\%$ ionic character ($q = e = 4.8 \\times 10^{-10}\\text{ esu}$ and $d = 1.275 \\times 10^{-8}\\text{ cm}$):\n$$\\mu_{\\text{ionic}} = q \\times d = (4.8 \\times 10^{-10}\\text{ esu}) \\times (1.275 \\times 10^{-8}\\text{ cm}) = 6.12 \\times 10^{-18}\\text{ esu cm} = 6.12\\text{ D}$$\n2. Observed dipole moment: $\\mu_{\\text{obs}} = 1.03\\text{ D}$.\n3. Percentage ionic character:\n$$\\% \\text{ ionic character} = \\frac{\\mu_{\\text{obs}}}{\\mu_{\\text{ionic}}} \\times 100 = \\frac{1.03\\text{ D}}{6.12\\text{ D}} \\times 100 \\approx 16.83\\%$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following compounds has the HIGHEST lattice enthalpy?",
+          "image": "",
+          "options": [
+            "$\\text{MgO}$",
+            "$\\text{NaCl}$",
+            "$\\text{NaF}$",
+            "$\\text{CaO}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Lattice enthalpy ($U$) is governed by Coulomb's law:\n$$U \\propto \\frac{|z_+ \\cdot z_-|}{r_+ + r_-}$$\nwhere $z_+$ and $z_-$ are ionic charges, and $(r_+ + r_-)$ is the internuclear distance.\n2. Product of ionic charges ($|z_+ \\cdot z_-|$):\n- $\\text{NaCl}$ and $\\text{NaF}$: $|(+1)(-1)| = 1$\n- $\\text{MgO}$ and $\\text{CaO}$: $|(+2)(-2)| = 4$ (four times greater electrostatic force!)\n3. Comparing $\\text{MgO}$ and $\\text{CaO}$:\n- $\\text{Mg}^{2+}$ is in Period 3 and is significantly smaller than $\\text{Ca}^{2+}$ (Period 4).\n- The internuclear distance in $\\text{MgO}$ is much shorter than in $\\text{CaO}$.\nTherefore, **$\\text{MgO}$** has the highest lattice enthalpy ($\\approx 3791\\text{ kJ/mol}$)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the carbonate ion ($\\text{CO}_3^{2-}$), all three carbon-oxygen bonds are experimentally found to be IDENTICAL in length ($128\\text{ pm}$), intermediate between a $\\text{C}-\\text{O}$ single bond ($143\\text{ pm}$) and a $\\text{C}=\\text{O}$ double bond ($120\\text{ pm}$). What is the bond order of each $\\text{C}-\\text{O}$ bond?",
+          "image": "",
+          "options": [
+            "$1.33$",
+            "$1.50$",
+            "$1.00$",
+            "$2.00$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The carbonate ion ($\\text{CO}_3^{2-}$) has three equivalent contributing resonance structures:\n$$\\text{Total number of bonds shared across canonical forms} = 2 + 1 + 1 = 4$$\n2. These $4$ bonds are delocalized equally over $3$ carbon-oxygen bond locations:\n$$\\text{Bond Order} = \\frac{\\text{Total number of bonds between two atoms in all resonating structures}}{\\text{Total number of resonating structures}} = \\frac{4}{3} \\approx 1.33$$\n3. Delocalization results in equal bond lengths intermediate between single and double bonds."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following alkaline earth metal carbonates is the LEAST thermally stable?",
+          "image": "",
+          "options": [
+            "$\\text{BeCO}_3$",
+            "$\\text{MgCO}_3$",
+            "$\\text{CaCO}_3$",
+            "$\\text{BaCO}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "According to Fajan's rules:\n1. The thermal decomposition of metal carbonates proceeds via: $\\text{MCO}_3(s) \\rightarrow \\text{MO}(s) + \\text{CO}_2(g)$.\n2. Smaller cations have a very high positive charge density and strong polarizing power.\n3. The tiny $\\text{Be}^{2+}$ cation exerts intense polarizing distortion on the large carbonate electron cloud ($\\text{CO}_3^{2-}$), pulling an oxygen atom toward itself to form the very stable $\\text{BeO}$ lattice and releasing $\\text{CO}_2$.\n4. Down Group 2, cation size increases ($\\text{Be}^{2+} < \\text{Mg}^{2+} < \\text{Ca}^{2+} < \\text{Ba}^{2+}$), polarizing power decreases, and thermal stability increases.\nTherefore, **$\\text{BeCO}_3$ is the least stable** (decomposes even in an atmosphere of $\\text{CO}_2$ at room temperature)."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A coordinate (dative) covalent bond is present in which of the following species?",
+          "image": "",
+          "options": [
+            "$\\text{NH}_4^+$",
+            "$\\text{CH}_4$",
+            "$\\text{H}_2\\text{O}$",
+            "$\\text{NaCl}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the ammonium ion ($\\text{NH}_4^+$), ammonia ($\\text{NH}_3$) has an unshared lone pair on the nitrogen atom.\n2. When a proton ($\\text{H}^+$, which has a vacant $1s$ orbital) approaches, nitrogen donates its lone pair to form a **coordinate covalent (dative) bond**:\n$$\\text{H}_3\\text{N}: + \\text{H}^+ \\rightarrow [\\text{H}_3\\text{N} \\rightarrow \\text{H}]^+ \\equiv \\text{NH}_4^+$$\n3. Once formed, this coordinate bond is indistinguishable from the other three $\\text{N}-\\text{H}$ covalent bonds due to resonance/hybridization."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following pairs of molecules has a net DIPOLE MOMENT of ZERO?",
+          "image": "",
+          "options": [
+            "$\\text{CO}_2$ and $\\text{BF}_3$",
+            "$\\text{H}_2\\text{O}$ and $\\text{SO}_2$",
+            "$\\text{NH}_3$ and $\\text{NF}_3$",
+            "$\\text{CH}_2\\text{Cl}_2$ and $\\text{CHCl}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. **$\\text{CO}_2$:** Linear geometry ($O=C=O$, bond angle $= 180^\\circ$). The two opposite bond dipoles cancel out completely $\\implies \\mu = 0$.\n2. **$\\text{BF}_3$:** Trigonal planar geometry with three equal $\\text{B}-\\text{F}$ dipoles oriented at $120^\\circ$. The vector sum of three coplanar dipoles at $120^\\circ$ is zero $\\implies \\mu = 0$.\n3. In all other pairs, unsymmetrical geometries (bent, pyramidal, or distorted tetrahedral) result in non-zero net dipole moments."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The correct order of increasing thermal stability of the hydrogen halides is:",
+          "image": "",
+          "options": [
+            "$\\text{HI} < \\text{HBr} < \\text{HCl} < \\text{HF}$",
+            "$\\text{HF} < \\text{HCl} < \\text{HBr} < \\text{HI}$",
+            "$\\text{HCl} < \\text{HBr} < \\text{HI} < \\text{HF}$",
+            "$\\text{HI} < \\text{HF} < \\text{HBr} < \\text{HCl}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Thermal stability is directly proportional to bond dissociation enthalpy.\n2. Down Group 17, the size of the halogen atom increases substantially ($\\text{F} < \\text{Cl} < \\text{Br} < \\text{I}$).\n3. Consequently, the $\\text{H}-\\text{X}$ bond length increases and the degree of orbital overlap decreases, causing bond dissociation enthalpy to drop sharply:\n- $\\text{H}-\\text{F}: 567\\text{ kJ/mol}$\n- $\\text{H}-\\text{Cl}: 431\\text{ kJ/mol}$\n- $\\text{H}-\\text{Br}: 366\\text{ kJ/mol}$\n- $\\text{H}-\\text{I}: 299\\text{ kJ/mol}$\n4. Therefore, thermal stability increases as: $\\text{HI} < \\text{HBr} < \\text{HCl} < \\text{HF}$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following compounds exhibits INTENSE COLOR due to polarization of the anion, as explained by Fajan's rules?",
+          "image": "",
+          "options": [
+            "$\\text{AgI}$ (yellow)",
+            "$\\text{AgF}$ (colorless)",
+            "$\\text{NaCl}$ (white)",
+            "$\\text{KCl}$ (white)"
+          ],
+          "correctOption": 0,
+          "solution": "1. According to Fajan's rules, when a polarizable anion is distorted by a cation, its valence electrons are partially transferred toward the cation.\n2. This distortion reduces the energy gap between electronic energy levels, allowing absorption of light in the visible spectrum.\n3. The large, easily polarizable iodide ion ($\\text{I}^-$) undergoes extensive polarization by $\\text{Ag}^+$ (pseudo-noble gas $4d^{10}$), resulting in light absorption and a bright **yellow color in $\\text{AgI}$**.\n4. (Similarly, $\\text{AgBr}$ is pale yellow, $\\text{AgCl}$ is white, and $\\text{AgF}$ is colorless)."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In which of the following molecules is the octet rule VIOLATED due to an INCOMPLETE octet around the central atom?",
+          "image": "",
+          "options": [
+            "$\\text{BeCl}_2$",
+            "$\\text{CCl}_4$",
+            "$\\text{PCl}_3$",
+            "$\\text{NCl}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In gaseous beryllium chloride ($\\text{BeCl}_2$), the central beryllium atom shares two pairs of electrons with chlorine atoms: $\\text{Cl}-\\text{Be}-\\text{Cl}$.\n2. The valence shell of beryllium contains only $4$ electrons ($2$ bond pairs), which is fewer than $8$ electrons (**incomplete octet / hypovalent**).\n3. In $\\text{CCl}_4, \\text{PCl}_3,$ and $\\text{NCl}_3$, all central atoms possess an octet of electrons."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The correct order of bond angle for the hydrides $\\text{CH}_4, \\text{NH}_3,$ and $\\text{H}_2\\text{O}$ is:",
+          "image": "",
+          "options": [
+            "$\\text{CH}_4 (109.5^\\circ) > \\text{NH}_3 (107^\\circ) > \\text{H}_2\\text{O} (104.5^\\circ)$",
+            "$\\text{H}_2\\text{O} > \\text{NH}_3 > \\text{CH}_4$",
+            "$\\text{NH}_3 > \\text{CH}_4 > \\text{H}_2\\text{O}$",
+            "$\\text{CH}_4 = \\text{NH}_3 = \\text{H}_2\\text{O}$"
+          ],
+          "correctOption": 0,
+          "solution": "All three molecules possess $sp^3$-hybridized central atoms:\n1. $\\text{CH}_4$: $4$ bond pairs, $0$ lone pairs $\\implies$ ideal tetrahedral geometry with bond angle $= 109.5^\\circ$.\n2. $\\text{NH}_3$: $3$ bond pairs, $1$ lone pair $\\implies$ lone pair-bond pair repulsion pushes $\\text{N}-\\text{H}$ bonds closer, reducing the bond angle to $107^\\circ$.\n3. $\\text{H}_2\\text{O}$: $2$ bond pairs, $2$ lone pairs $\\implies$ strong lone pair-lone pair repulsion compresses the bond angle down to $104.5^\\circ$.\nTherefore: $\\text{CH}_4 > \\text{NH}_3 > \\text{H}_2\\text{O}$."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Why is the dipole moment of ammonia ($\\text{NH}_3$, $1.47\\text{ D}$) significantly GREATER than that of nitrogen trifluoride ($\\text{NF}_3$, $0.24\\text{ D}$), even though fluorine is far more electronegative than hydrogen?",
+          "image": "",
+          "options": [
+            "In $\\text{NH}_3$, the orbital dipole of the nitrogen lone pair reinforces the resultant dipole of the three $\\text{N}-\\text{H}$ bonds, whereas in $\\text{NF}_3$, the lone pair dipole opposes the resultant dipole of the three $\\text{N}-\\text{F}$ bonds",
+            "$\\text{NF}_3$ has a planar geometry while $\\text{NH}_3$ is pyramidal",
+            "Nitrogen has a higher electronegativity in $\\text{NH}_3$ than in $\\text{NF}_3$",
+            "Fluorine forms coordinate bonds with nitrogen"
+          ],
+          "correctOption": 0,
+          "solution": "1. Both $\\text{NH}_3$ and $\\text{NF}_3$ have trigonal pyramidal geometries with one lone pair on nitrogen.\n2. In $\\text{NH}_3$, nitrogen is more electronegative than hydrogen ($3.0 > 2.1$). The three $\\text{N}-\\text{H}$ bond dipoles point toward nitrogen in the same direction as the lone pair dipole, reinforcing each other vectorially to produce a large net dipole moment ($1.47\\text{ D}$).\n3. In $\\text{NF}_3$, fluorine is more electronegative than nitrogen ($4.0 > 3.0$). The three $\\text{N}-\\text{F}$ bond dipoles point away from nitrogen, opposing the lone pair dipole and resulting in a very small net dipole moment ($0.24\\text{ D}$)."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following cations has the STRONGEST polarizing power according to Fajan's rules?",
+          "image": "",
+          "options": [
+            "$\\text{Al}^{3+}$",
+            "$\\text{Mg}^{2+}$",
+            "$\\text{Na}^+$",
+            "$\\text{K}^+$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Polarizing power ($\\phi$) of a cation is defined by its ionic potential:\n$$\\phi = \\frac{\\text{Charge of cation}}{\\text{Radius of cation}}$$\n2. Higher charge and smaller ionic size maximize polarizing power.\n3. Among $\\text{Al}^{3+}, \\text{Mg}^{2+}, \\text{Na}^+,$ and $\\text{K}^+$:\n- $\\text{Al}^{3+}$ carries the highest positive charge ($+3$) and has the smallest radius ($53.5\\text{ pm}$).\n- Thus, $\\text{Al}^{3+}$ has the greatest polarizing power."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The resonance energy of a molecule is defined as the difference between:",
+          "image": "",
+          "options": [
+            "The actual experimental energy of the resonance hybrid and the calculated energy of the most stable canonical contributing structure",
+            "The energy of the reactants and products",
+            "The ionization energy and electron affinity",
+            "The energy of the highest and lowest resonance structures"
+          ],
+          "correctOption": 0,
+          "solution": "1. A resonance hybrid is always more stable (has lower potential energy) than any individual theoretical Lewis canonical structure.\n2. **Resonance energy** is the difference between the actual observed thermodynamic energy of the real resonance hybrid and that of the lowest-energy (most stable) canonical contributing structure:\n$$\\text{Resonance Energy} = E_{\\text{hybrid}} - E_{\\text{most stable canonical structure}}$$\n3. Greater resonance energy corresponds to higher molecular stability (e.g., benzene has a resonance stabilization energy of $\\approx 152\\text{ kJ/mol}$)."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following halides is predominantly COVALENT in nature?",
+          "image": "",
+          "options": [
+            "$\\text{SnCl}_4$",
+            "$\\text{SnCl}_2$",
+            "$\\text{PbCl}_2$",
+            "$\\text{CaCl}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "According to Fajan's rules:\n1. A cation with a **higher oxidation state** has a higher positive charge and smaller size, giving it significantly higher polarizing power.\n2. In $\\text{SnCl}_4$, tin is in the $+4$ oxidation state ($\\text{Sn}^{4+}$), whereas in $\\text{SnCl}_2$ it is in the $+2$ state ($\\text{Sn}^{2+}$).\n3. Because $\\text{Sn}^{4+}$ strongly polarizes the chloride ions, **$\\text{SnCl}_4$ is predominantly covalent** (a volatile fuming liquid, b.p. $114^\\circ\\text{C}$), whereas $\\text{SnCl}_2$ is an ionic solid (m.p. $247^\\circ\\text{C}$)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] As the bond order between two bonded atoms increases, what happens to the bond length and bond dissociation enthalpy?",
+          "image": "",
+          "options": [
+            "Bond length decreases, while bond dissociation enthalpy increases",
+            "Both bond length and bond dissociation enthalpy increase",
+            "Both bond length and bond dissociation enthalpy decrease",
+            "Bond length increases, while bond dissociation enthalpy decreases"
+          ],
+          "correctOption": 0,
+          "solution": "1. Higher bond order means a greater number of shared electron pairs between the nuclei (e.g., $\\text{C}-\\text{C} < \\text{C}=\\text{C} < \\text{C}\\equiv\\text{C}$).\n2. Increased shared electron density draws the two nuclei closer together, causing **bond length to decrease** ($154\\text{ pm} \\rightarrow 134\\text{ pm} \\rightarrow 120\\text{ pm}$).\n3. More shared bonds require greater energy to break, causing **bond dissociation enthalpy to increase** ($348\\text{ kJ/mol} \\rightarrow 614\\text{ kJ/mol} \\rightarrow 839\\text{ kJ/mol}$)."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The total number of lone pairs of electrons present in a molecule of chlorine trifluoride ($\\text{ClF}_3$) is:",
+          "image": "",
+          "options": [
+            "$11$",
+            "$2$",
+            "$9$",
+            "$8$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate total valence electrons in $\\text{ClF}_3$:\n- $1$ Chlorine atom: $7$ electrons\n- $3$ Fluorine atoms: $3 \\times 7 = 21$ electrons\n- Total valence electrons $= 7 + 21 = 28$ electrons ($14$ electron pairs).\n2. Count shared pairs:\n- $3$ single $\\text{Cl}-\\text{F}$ covalent bonds $= 3$ bonding pairs ($6$ electrons).\n3. Remaining non-bonding electrons $= 28 - 6 = 22$ electrons $= 11$ lone pairs:\n- Central chlorine atom carries $2$ lone pairs.\n- Each of the three fluorine atoms carries $3$ lone pairs ($3 \\times 3 = 9$ lone pairs).\n$$\\text{Total lone pairs} = 2 + 9 = 11$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For which of the following pairs of ionic compounds is the melting point of the FIRST compound higher than that of the second?",
+          "image": "",
+          "options": [
+            "$\\text{NaCl} > \\text{CuCl}$",
+            "$\\text{LiCl} > \\text{NaCl}$",
+            "$\\text{BeCl}_2 > \\text{BaCl}_2$",
+            "$\\text{SnCl}_4 > \\text{SnCl}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{NaCl}$ has a higher melting point ($801^\\circ\\text{C}$) than $\\text{CuCl}$ ($430^\\circ\\text{C}$) because $\\text{Cu}^+$ ($3d^{10}$) has a pseudo-noble gas configuration with high polarizing power, making $\\text{CuCl}$ covalent, while $\\text{NaCl}$ is strongly ionic.\n2. In $\\text{LiCl}$ vs $\\text{NaCl}$, the tiny $\\text{Li}^+$ polarizes $\\text{Cl}^-$, giving $\\text{LiCl}$ covalent character and a lower melting point ($605^\\circ\\text{C} < 801^\\circ\\text{C}$).\n3. $\\text{BeCl}_2$ is covalent (sublimes at $405^\\circ\\text{C}$), while $\\text{BaCl}_2$ is ionic (m.p. $962^\\circ\\text{C}$).\n4. $\\text{SnCl}_4$ is covalent liquid (b.p. $114^\\circ\\text{C}$), while $\\text{SnCl}_2$ is solid (m.p. $247^\\circ\\text{C}$).\nTherefore, $\\text{NaCl} > \\text{CuCl}$ is correct."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The unit of dipole moment commonly used in chemistry is the Debye ($\\text{D}$). One Debye is equal to:",
+          "image": "",
+          "options": [
+            "$3.33564 \\times 10^{-30}\\text{ C m}$",
+            "$1.602 \\times 10^{-19}\\text{ C m}$",
+            "$4.8 \\times 10^{-10}\\text{ C m}$",
+            "$1.0 \\times 10^{-18}\\text{ C m}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Historically, $1\\text{ Debye (D)} = 10^{-18}\\text{ esu cm}$.\n2. Converting to SI units:\n- $1\\text{ esu} = \\frac{1}{3 \\times 10^9}\\text{ C} = 3.33564 \\times 10^{-10}\\text{ C}$\n- $1\\text{ cm} = 10^{-2}\\text{ m}$\n$$1\\text{ D} = 10^{-18} \\times (3.33564 \\times 10^{-10}\\text{ C}) \\times (10^{-2}\\text{ m}) = 3.33564 \\times 10^{-30}\\text{ C m}$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following arrangements represents the correct order of bond angle?",
+          "image": "",
+          "options": [
+            "$\\text{NO}_2^+ > \\text{NO}_2 > \\text{NO}_2^-$",
+            "$\\text{NO}_2^- > \\text{NO}_2 > \\text{NO}_2^+$",
+            "$\\text{NO}_2 > \\text{NO}_2^+ > \\text{NO}_2^-$",
+            "$\\text{NO}_2^+ > \\text{NO}_2^- > \\text{NO}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. **$\\text{NO}_2^+$ (nitronium ion):** Central nitrogen has $2$ bond domains and zero lone electrons ($sp$ hybrid) $\\implies$ linear with bond angle $= 180^\\circ$.\n2. **$\\text{NO}_2$ (nitrogen dioxide):** Central nitrogen has a single unpaired odd electron ($sp^2$ hybrid). The single electron exerts less repulsion than a full lone pair $\\implies$ bond angle $\\approx 134^\\circ$.\n3. **$\\text{NO}_2^-$ (nitrite ion):** Central nitrogen has a full lone pair ($sp^2$ hybrid), which exerts strong repulsion, compressing the bond angle to $\\approx 115^\\circ$.\nTherefore: $\\text{NO}_2^+ (180^\\circ) > \\text{NO}_2 (134^\\circ) > \\text{NO}_2^- (115^\\circ)$."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the Born-Haber cycle for the synthesis of sodium chloride, which of the following thermodynamic terms is EXOTHERMIC ($\\Delta H < 0$)?",
+          "image": "",
+          "options": [
+            "Electron gain enthalpy of chlorine ($\\Delta_{\\text{eg}}H$)",
+            "Sublimation enthalpy of sodium ($\\Delta_{\\text{sub}}H$)",
+            "Ionization enthalpy of sodium ($\\Delta_i H$)",
+            "Bond dissociation enthalpy of chlorine ($\\Delta_{\\text{bond}}H$)"
+          ],
+          "correctOption": 0,
+          "solution": "In the Born-Haber cycle for $\\text{NaCl}(s)$:\n- Sublimation of sodium: $\\text{Na}(s) \\rightarrow \\text{Na}(g)$ (endothermic, $\\Delta H > 0$)\n- Ionization of sodium: $\\text{Na}(g) \\rightarrow \\text{Na}^+(g) + e^-$ (endothermic, $\\Delta H > 0$)\n- Dissociation of chlorine: $\\frac{1}{2}\\text{Cl}_2(g) \\rightarrow \\text{Cl}(g)$ (endothermic, $\\Delta H > 0$)\n- **Electron gain by chlorine:** $\\text{Cl}(g) + e^- \\rightarrow \\text{Cl}^-(g)$ (exothermic, $\\Delta_{\\text{eg}}H = -349\\text{ kJ/mol}$)\n- Lattice energy release: $\\text{Na}^+(g) + \\text{Cl}^-(g) \\rightarrow \\text{NaCl}(s)$ (exothermic, $\\Delta H < 0$)\nThus, Option A is the correct endothermic vs exothermic classification."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] According to Fajan's rules, the polarizability of an anion increases with:",
+          "image": "",
+          "options": [
+            "Increase in size and increase in negative charge",
+            "Decrease in size and increase in negative charge",
+            "Increase in size and decrease in negative charge",
+            "Decrease in size and decrease in negative charge"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Polarizability** is the ease with which an anion's electron cloud can be distorted by a nearby cation.\n2. A **larger anion** has valence electrons located further from its nucleus and less tightly held, making them more easily polarized.\n3. A **higher negative charge** increases electron-electron repulsions and expands the electron cloud.\nTherefore, polarizability increases with **larger size and higher negative charge** (e.g., $\\text{I}^- > \\text{Br}^- > \\text{Cl}^- > \\text{F}^-$ and $\\text{N}^{3-} > \\text{O}^{2-} > \\text{F}^-$)."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following molecules has the HIGHEST bond dissociation enthalpy?",
+          "image": "",
+          "options": [
+            "$\\text{N}_2$",
+            "$\\text{O}_2$",
+            "$\\text{H}_2$",
+            "$\\text{Cl}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In dinitrogen ($\\text{N}_2$), the two nitrogen atoms are held together by a strong **triple bond** ($:N \\equiv N:$, bond order $= 3$).\n2. The bond length is exceptionally short ($109.8\\text{ pm}$).\n3. It has the highest bond dissociation enthalpy ($945.8\\text{ kJ/mol}$) among all homonuclear diatomic molecules.\n4. (By comparison: $\\text{O}_2 = 498\\text{ kJ/mol}, \\text{H}_2 = 435.8\\text{ kJ/mol}, \\text{Cl}_2 = 242.6\\text{ kJ/mol}$)."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The correct Lewis structure of nitric acid ($\\text{HNO}_3$) shows how many single, double, and coordinate bonds respectively?",
+          "image": "",
+          "options": [
+            "$2$ single bonds, $1$ double bond, and $1$ coordinate bond",
+            "$3$ single bonds and $1$ double bond",
+            "$1$ single bond and $2$ double bonds",
+            "$4$ single bonds"
+          ],
+          "correctOption": 0,
+          "solution": "In the classical Lewis structure of $\\text{HNO}_3$:\n- The $\\text{H}-\\text{O}$ bond is a single covalent bond ($1$ single bond).\n- The central nitrogen forms a single bond to the $\\text{OH}$ group ($1$ single bond).\n- Nitrogen forms one double bond to an oxygen atom ($1$ double bond: $\\text{N}=\\text{O}$).\n- Nitrogen donates its lone pair to the third oxygen atom to form a coordinate bond ($1$ coordinate bond: $\\text{N} \\rightarrow \\text{O}$).\nTotal: $2$ single bonds, $1$ double bond, and $1$ coordinate bond."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following orders represents the correct increasing order of covalent character for lithium halides?",
+          "image": "",
+          "options": [
+            "$\\text{LiF} < \\text{LiCl} < \\text{LiBr} < \\text{LiI}$",
+            "$\\text{LiI} < \\text{LiBr} < \\text{LiCl} < \\text{LiF}$",
+            "$\\text{LiCl} < \\text{LiF} < \\text{LiBr} < \\text{LiI}$",
+            "$\\text{LiF} < \\text{LiBr} < \\text{LiCl} < \\text{LiI}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. All four compounds contain the same small, polarizing cation $\\text{Li}^+$.\n2. The size of the halide anion increases down the group: $\\text{F}^- < \\text{Cl}^- < \\text{Br}^- < \\text{I}^-$.\n3. Larger anions have higher polarizability, so the distortion of the electron cloud increases from $\\text{F}^-$ to $\\text{I}^-$.\n4. Therefore, covalent character increases as:\n$$\\text{LiF} < \\text{LiCl} < \\text{LiBr} < \\text{LiI}$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The dipole moments of ortho-, meta-, and para-dichlorobenzene follow the order:",
+          "image": "",
+          "options": [
+            "$\\text{ortho} > \\text{meta} > \\text{para} = 0$",
+            "$\\text{para} > \\text{meta} > \\text{ortho}$",
+            "$\\text{ortho} = \\text{meta} = \\text{para}$",
+            "$\\text{meta} > \\text{ortho} > \\text{para}$"
+          ],
+          "correctOption": 0,
+          "solution": "The net dipole moment of disubstituted benzene derivatives is given by vector addition:\n$$\\mu_{\\text{net}} = \\sqrt{\\mu_1^2 + \\mu_2^2 + 2\\mu_1\\mu_2\\cos\\theta}$$\n1. **para-dichlorobenzene:** $\\theta = 180^\\circ \\implies \\cos(180^\\circ) = -1 \\implies \\mu_{\\text{net}} = \\mu_1 - \\mu_2 = 0\\text{ D}$.\n2. **meta-dichlorobenzene:** $\\theta = 120^\\circ \\implies \\cos(120^\\circ) = -0.5 \\implies \\mu_{\\text{net}} = \\mu \\approx 1.72\\text{ D}$.\n3. **ortho-dichlorobenzene:** $\\theta = 60^\\circ \\implies \\cos(60^\\circ) = +0.5 \\implies \\mu_{\\text{net}} = \\sqrt{3}\\mu \\approx 2.54\\text{ D}$.\nTherefore: $\\text{ortho} > \\text{meta} > \\text{para} = 0$."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In which of the following molecules does the central atom obey the octet rule strictly?",
+          "image": "",
+          "options": [
+            "$\\text{H}_2\\text{O}$",
+            "$\\text{PCl}_5$",
+            "$\\text{BCl}_3$",
+            "$\\text{ClO}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In water ($\\text{H}_2\\text{O}$), oxygen shares two electrons with two hydrogen atoms ($2$ bond pairs) and has $2$ lone pairs: total $= 2(2) + 2(2) = 8$ valence electrons (complete octet).\n2. In $\\text{PCl}_5$, phosphorus has $10$ valence electrons (expanded octet).\n3. In $\\text{BCl}_3$, boron has only $6$ valence electrons (incomplete octet).\n4. In $\\text{ClO}_2$, chlorine has an odd-electron configuration."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following statements about Fajan's rules is INCORRECT?",
+          "image": "",
+          "options": [
+            "A large cation polarizes an anion more effectively than a small cation",
+            "A small cation favors high covalent character",
+            "A large anion with high negative charge is easily polarized",
+            "Cations with $(n-1)d^{10} ns^0$ configurations have greater polarizing power than those with $(n-1)s^2 (n-1)p^6$ configurations"
+          ],
+          "correctOption": 0,
+          "solution": "1. Polarizing power is charge density ($\\frac{\\text{charge}}{\\text{radius}}$).\n2. A **small cation** has concentrated positive charge density and pulls valence electron clouds inward much more strongly than a large cation.\n3. Therefore, small cations favor covalent character, while large cations favor ionic character.\nStatement A is false because large cations polarize anions *less* effectively."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The difference in electronegativity between two bonded atoms $A$ and $B$ is $\\Delta \\chi = 1.9$. According to the Hannay-Smith empirical relation, the percentage ionic character of the bond is approximately:",
+          "image": "",
+          "options": [
+            "$43\\%$",
+            "$19\\%$",
+            "$80\\%$",
+            "$55\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "The Hannay-Smith empirical equation for calculating percentage ionic character is:\n$$\\% \\text{ ionic character} = 16(\\Delta \\chi) + 3.5(\\Delta \\chi)^2$$\nSubstitute $\\Delta \\chi = 1.9$:\n$$\\% \\text{ ionic character} = 16(1.9) + 3.5(1.9)^2$$\n$$\\% \\text{ ionic character} = 30.4 + 3.5(3.61) = 30.4 + 12.635 = 43.035\\% \\approx 43\\%$$\n(When $\\Delta \\chi \\approx 2.1$, a bond is roughly $50\\%$ ionic and $50\\%$ covalent)."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In which of the following pairs do BOTH species violate the octet rule?",
+          "image": "",
+          "options": [
+            "$\\text{BeCl}_2$ and $\\text{PCl}_5$",
+            "$\\text{CH}_4$ and $\\text{NH}_3$",
+            "$\\text{H}_2\\text{O}$ and $\\text{CCl}_4$",
+            "$\\text{CO}_2$ and $\\text{NF}_3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In $\\text{BeCl}_2$, beryllium has only $4$ electrons around it (incomplete octet).\n2. In $\\text{PCl}_5$, phosphorus has $10$ electrons around it (expanded octet).\nBoth species violate the octet rule.\nIn all other pairs, every species strictly satisfies the octet rule."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The formal charge on the sulfur atom in the sulfate ion ($\\text{SO}_4^{2-}$), considering the Lewis structure with minimal formal charges (expanded octet with two double bonds and two single bonds), is:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$+2$",
+            "$+1$",
+            "$-2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the most stable resonance structure of sulfate ion ($\\text{SO}_4^{2-}$), sulfur forms two $\\text{S}=\\text{O}$ double bonds and two $\\text{S}-\\text{O}^-$ single bonds (total $6$ bonds, $12$ shared electrons) with zero lone pairs ($L = 0$).\n2. For sulfur: valence electrons $V = 6$, $L = 0$, $S = 12$:\n$$\\text{FC} = V - L - \\frac{1}{2}S = 6 - 0 - \\frac{1}{2}(12) = 6 - 6 = 0$$\n(This expanded octet minimizes formal charges compared to the single-bonded structure where sulfur has $\\text{FC} = +2$)."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following compounds has the HIGHEST melting point?",
+          "image": "",
+          "options": [
+            "$\\text{NaF}$",
+            "$\\text{NaCl}$",
+            "$\\text{NaBr}$",
+            "$\\text{NaI}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. All sodium halides are ionic salts with the same cation $\\text{Na}^+$.\n2. Down the halogen group from fluorine to iodine, anion radius increases: $\\text{F}^- < \\text{Cl}^- < \\text{Br}^- < \\text{I}^-$.\n3. Lattice enthalpy is inversely proportional to internuclear distance ($U \\propto \\frac{1}{r_+ + r_-}$):\n$$\\text{Lattice enthalpy: } \\text{NaF} > \\text{NaCl} > \\text{NaBr} > \\text{NaI}$$\n4. Furthermore, according to Fajan's rules, $\\text{NaF}$ has the least polarizable anion and the most ionic character.\nTherefore, **$\\text{NaF}$ has the highest melting point** ($993^\\circ\\text{C}$)."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the bond order of the carbon-oxygen bond in the formate ion ($\\text{HCOO}^-$)?",
+          "image": "",
+          "options": [
+            "$1.5$",
+            "$1.0$",
+            "$2.0$",
+            "$1.33$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The formate ion ($\\text{HCOO}^-$) has two equivalent contributing resonance structures:\n$$\\text{H}-\\text{C}(=\\text{O})-\\text{O}^- \\longleftrightarrow \\text{H}-\\text{C}(-\\text{O}^-)=\\text{O}$$\n2. Across the two resonance forms, there are $3$ carbon-oxygen bonds ($1$ double bond $+ 1$ single bond) shared between $2$ positions:\n$$\\text{Bond Order} = \\frac{2 + 1}{2} = \\frac{3}{2} = 1.5$$\nBoth $\\text{C}-\\text{O}$ bonds are equal in length with a bond order of $1.5$."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following molecules has a NON-ZERO dipole moment?",
+          "image": "",
+          "options": [
+            "$\\text{SO}_2$",
+            "$\\text{CCl}_4$",
+            "$\\text{CO}_2$",
+            "$\\text{CH}_4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. **$\\text{SO}_2$:** The central sulfur atom has $2$ bonding domains and $1$ lone pair ($sp^2$ hybrid), producing an asymmetric angular/bent geometry (bond angle $\\approx 119^\\circ$). The two polar $\\text{S}-\\text{O}$ bonds and the lone pair dipole do not cancel, giving a net **non-zero dipole moment** ($\\\\mu = 1.63\\text{ D}$).\n2. $\\text{CCl}_4$ and $\\text{CH}_4$: Regular tetrahedral geometry with four equal bond dipoles cancelling vectorially ($\\mu = 0$).\n3. $\\text{CO}_2$: Linear symmetrical geometry ($\\mu = 0$)."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following is the correct decreasing order of solubility in organic non-polar solvents (like ethanol or ether)?",
+          "image": "",
+          "options": [
+            "$\\text{LiI} > \\text{LiBr} > \\text{LiCl} > \\text{LiF}$",
+            "$\\text{LiF} > \\text{LiCl} > \\text{LiBr} > \\text{LiI}$",
+            "$\\text{LiCl} > \\text{LiF} > \\text{LiBr} > \\text{LiI}$",
+            "$\\text{LiBr} > \\text{LiI} > \\text{LiCl} > \\text{LiF}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. According to the 'like dissolves like' principle, covalent substances dissolve readily in non-polar organic solvents, whereas ionic substances dissolve preferentially in polar water.\n2. By Fajan's rules, covalent character increases as the anion becomes larger and more polarizable:\n$$\\text{Covalent character: } \\text{LiF} < \\text{LiCl} < \\text{LiBr} < \\text{LiI}$$\n3. Because $\\text{LiI}$ has the highest covalent character, it is the most soluble in organic solvents (alcohol/ether), while ionic $\\text{LiF}$ is practically insoluble:\n$$\\text{Solubility in organic solvents: } \\text{LiI} > \\text{LiBr} > \\text{LiCl} > \\text{LiF}$$"
+        }
+      ]
+    }
+  ]
+}
