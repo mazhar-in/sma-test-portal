@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-23-integrated-rate-equations",
+  "title": "Integrated Rate Equations (Zero & First-Order Rate Laws, Half-Life Periods)",
+  "syllabus": "Integrated rate equations for zero-order reactions ([A] = [A]0 - kt, x = kt); Half-life period of a zero-order reaction (t1/2 = [A]0 / 2k); Graphical representations for zero-order kinetics ([A] vs t, rate vs [A], t1/2 vs [A]0); Integrated rate equations for first-order reactions (k = (2.303/t) log([A]0/[A]), [A] = [A]0 e^(-kt)); Half-life of first-order reactions (t1/2 = 0.693/k, independence of initial concentration); Graphical representations for first-order kinetics (log[A] vs t, ln[A] vs t, [A] vs t, t1/2 vs [A]0); Fractional life periods (t75%, t87.5%, t99%, t99.9% relationships); First-order gas-phase reactions in a closed vessel (k = (2.303/t) log(Pi / (2Pi - Pt))); Radioactive decay as a first-order kinetic process (decay constant, average life τ = 1/k = 1.44 t1/2); General formula for nth order half-life (t1/2 ∝ 1 / [A]0^(n-1)); Numerical problem-solving and graphical interpretation tailored to NEET",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A first-order reaction has a rate constant $k = 4.606 \\times 10^{-3}\\text{ s}^{-1}$. The time required for $2.0\\text{ g}$ of the reactant to be reduced to $0.2\\text{ g}$ is:",
+          "image": "",
+          "options": [
+            "$500\\text{ s}$",
+            "$1000\\text{ s}$",
+            "$250\\text{ s}$",
+            "$200\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Using the integrated first-order rate equation:\n$$t = \\frac{2.303}{k} \\log_{10}\\left(\\frac{[A]_0}{[A]}\\right)$$\n2. Substitute the given values:\n- $[A]_0 = 2.0\\text{ g}$\n- $[A] = 0.2\\text{ g}$\n- $k = 4.606 \\times 10^{-3}\\text{ s}^{-1}$\n$$t = \\frac{2.303}{4.606 \\times 10^{-3}} \\log_{10}\\left(\\frac{2.0}{0.2}\\right)$$\n$$t = \\frac{10^3}{2} \\log_{10}(10) = 500 \\times 1 = 500\\text{ s}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a first-order reaction, the ratio of the time required to complete $99.9\\%$ of the reaction ($t_{99.9\\%}$) to its half-life period ($t_{1/2}$) is approximately:",
+          "image": "",
+          "options": [
+            "$10$",
+            "$8$",
+            "$4$",
+            "$2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $99.9\\%$ completion of a first-order reaction:\n$$[A] = [A]_0 - 0.999 [A]_0 = 0.001 [A]_0 = 10^{-3} [A]_0$$\n$$t_{99.9\\%} = \\frac{2.303}{k} \\log_{10}\\left(\\frac{[A]_0}{10^{-3} [A]_0}\\right) = \\frac{2.303}{k} \\log_{10}(10^3) = \\frac{2.303 \\times 3}{k} = \\frac{6.909}{k}$$\n2. Half-life period ($t_{1/2}$):\n$$t_{1/2} = \\frac{0.693}{k}$$\n3. Taking the ratio:\n$$\\frac{t_{99.9\\%}}{t_{1/2}} = \\frac{6.909 / k}{0.693 / k} \\approx 9.97 \\approx 10$$\nThus, $t_{99.9\\%} \\approx 10 \\times t_{1/2}$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A zero-order reaction has an initial concentration of reactant equal to $0.2\\text{ M}$ and a rate constant $k = 0.002\\text{ mol L}^{-1}\\text{ s}^{-1}$. The half-life period ($t_{1/2}$) of this reaction is:",
+          "image": "",
+          "options": [
+            "$50\\text{ s}$",
+            "$100\\text{ s}$",
+            "$200\\text{ s}$",
+            "$25\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For a zero-order reaction, the half-life period is given by:\n$$t_{1/2} = \\frac{[A]_0}{2k}$$\n2. Substitute $[A]_0 = 0.2\\text{ M}$ and $k = 0.002\\text{ mol L}^{-1}\\text{ s}^{-1}$:\n$$t_{1/2} = \\frac{0.2}{2 \\times 0.002} = \\frac{0.2}{0.004} = 50\\text{ s}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following graphs correctly represents a FIRST-ORDER reaction?",
+          "image": "",
+          "options": [
+            "A plot of $\\ln[A]$ versus time $t$ showing a straight line with negative slope ($-k$) and y-intercept $\\ln[A]_0$",
+            "A plot of $[A]$ versus time $t$ showing a straight line with negative slope ($-k$)",
+            "A plot of $t_{1/2}$ versus initial concentration $[A]_0$ showing a straight line passing through the origin",
+            "A plot of $\\frac{1}{[A]}$ versus time $t$ showing a straight line with negative slope"
+          ],
+          "correctOption": 0,
+          "solution": "1. The integrated rate law for a first-order reaction is:\n$$\\ln[A] = \\ln[A]_0 - kt$$\nComparing with $y = mx + c$:\n- $y = \\ln[A]$\n- $x = t$\n- $\\text{Slope } m = -k$ (negative slope)\n- $\\text{Intercept } c = \\ln[A]_0$\nThus, a plot of $\\ln[A]$ versus $t$ gives a straight line with negative slope $-k$.\n2. Option B corresponds to zero-order kinetics ($[A] = [A]_0 - kt$).\n3. Option C corresponds to zero-order kinetics ($t_{1/2} = \\frac{[A]_0}{2k}$). For a first-order reaction, $t_{1/2} = \\frac{0.693}{k}$, which is independent of $[A]_0$ (horizontal line)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The half-life period of a first-order reaction is $60\\text{ minutes}$. What percentage of the reactant will remain unreacted after $240\\text{ minutes}$?",
+          "image": "",
+          "options": [
+            "$6.25\\%$",
+            "$12.5\\%$",
+            "$3.125\\%$",
+            "$25.0\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Determine the number of half-lives ($n$) elapsed:\n$$n = \\frac{\\text{Total time } (t)}{t_{1/2}} = \\frac{240\\text{ min}}{60\\text{ min}} = 4$$\n2. The fraction of reactant remaining after $n$ half-lives is:\n$$\\frac{[A]}{[A]_0} = \\left(\\frac{1}{2}\\right)^n = \\left(\\frac{1}{2}\\right)^4 = \\frac{1}{16}$$\n3. Convert to percentage remaining:\n$$\\% \\text{ remaining} = \\frac{1}{16} \\times 100 = 6.25\\%$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a zero-order reaction $A \\rightarrow \\text{Products}$, if the initial concentration is doubled, its half-life period will:",
+          "image": "",
+          "options": [
+            "Be doubled",
+            "Remain unchanged",
+            "Be halved",
+            "Increase by four times"
+          ],
+          "correctOption": 0,
+          "solution": "1. The half-life period of a zero-order reaction is:\n$$t_{1/2} = \\frac{[A]_0}{2k}$$\n2. Since $t_{1/2} \\propto [A]_0$, the half-life is directly proportional to the initial concentration.\n3. Therefore, doubling the initial concentration of the reactant doubles the half-life period."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A first-order reaction is $75\\%$ complete in $32\\text{ minutes}$. The time required for $50\\%$ completion ($t_{1/2}$) of the same reaction is:",
+          "image": "",
+          "options": [
+            "$16\\text{ minutes}$",
+            "$8\\text{ minutes}$",
+            "$24\\text{ minutes}$",
+            "$32\\text{ minutes}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For a first-order reaction, completing $75\\%$ means $25\\%$ remains ($[A] = \\frac{[A]_0}{4} = \\frac{[A]_0}{2^2}$).\n2. This corresponds exactly to two consecutive half-lives:\n$$t_{75\\%} = 2 \\times t_{1/2}$$\n3. Given $t_{75\\%} = 32\\text{ minutes}$:\n$$t_{1/2} = \\frac{t_{75\\%}}{2} = \\frac{32}{2} = 16\\text{ minutes}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] For a gas-phase first-order reaction:\n$$A(g) \\rightarrow 2B(g) + C(g)$$\nInitial pressure of $A$ was $P_i$. If the total pressure of the gas mixture at time $t$ is $P_t$, the integrated rate expression for the rate constant $k$ is:",
+          "image": "",
+          "options": [
+            "$k = \\frac{2.303}{t}\\log_{10}\\left(\\frac{2P_i}{3P_i - P_t}\\right)$",
+            "$k = \\frac{2.303}{t}\\log_{10}\\left(\\frac{P_i}{2P_i - P_t}\\right)$",
+            "$k = \\frac{2.303}{t}\\log_{10}\\left(\\frac{P_i}{P_i - P_t}\\right)$",
+            "$k = \\frac{2.303}{t}\\log_{10}\\left(\\frac{3P_i}{2P_i - P_t}\\right)$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Set up partial pressures at time $t$:\n$$\\begin{array}{lccc} & A(g) & \\rightarrow 2B(g) & + & C(g) \\\\ \\text{Initial} & P_i & 0 & 0 \\\\ \\text{At time } t & P_i - p & 2p & p \\end{array}$$\n2. Total pressure at time $t$:\n$$P_t = (P_i - p) + 2p + p = P_i + 2p$$\n$$2p = P_t - P_i \\implies p = \\frac{P_t - P_i}{2}$$\n3. Remaining partial pressure of reactant $A$ ($P_A$):\n$$P_A = P_i - p = P_i - \\left(\\frac{P_t - P_i}{2}\\right) = \\frac{2P_i - P_t + P_i}{2} = \\frac{3P_i - P_t}{2}$$\n4. Using the first-order rate formula:\n$$k = \\frac{2.303}{t}\\log_{10}\\left(\\frac{P_i}{P_A}\\right) = \\frac{2.303}{t}\\log_{10}\\left(\\frac{P_i}{\\frac{3P_i - P_t}{2}}\\right) = \\frac{2.303}{t}\\log_{10}\\left(\\frac{2P_i}{3P_i - P_t}\\right)$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The rate constant of a first-order reaction is $k = 6.93 \\times 10^{-3}\\text{ min}^{-1}$. The time taken for the reactant concentration to fall from $1.0\\text{ M}$ to $0.125\\text{ M}$ is:",
+          "image": "",
+          "options": [
+            "$300\\text{ minutes}$",
+            "$100\\text{ minutes}$",
+            "$200\\text{ minutes}$",
+            "$400\\text{ minutes}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Half-life of the reaction:\n$$t_{1/2} = \\frac{0.693}{k} = \\frac{0.693}{6.93 \\times 10^{-3}\\text{ min}^{-1}} = 100\\text{ min}$$\n2. The concentration decreases from $1.0\\text{ M}$ to $0.125\\text{ M}$:\n$$\\frac{[A]}{[A]_0} = \\frac{0.125}{1.0} = \\frac{1}{8} = \\left(\\frac{1}{2}\\right)^3$$\n3. This represents exactly $3$ half-lives:\n$$t = 3 \\times t_{1/2} = 3 \\times 100\\text{ min} = 300\\text{ min}$$"
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a general $n^{\\text{th}}$-order chemical reaction ($n \\ne 1$), the half-life period ($t_{1/2}$) is related to the initial concentration of reactant ($[A]_0$) by:",
+          "image": "",
+          "options": [
+            "$t_{1/2} \\propto \\frac{1}{[A]_0^{n - 1}}$",
+            "$t_{1/2} \\propto [A]_0^{n - 1}$",
+            "$t_{1/2} \\propto \\frac{1}{[A]_0^n}$",
+            "$t_{1/2} \\propto [A]_0^n$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For an $n^{\\text{th}}$-order reaction, integrating the rate law $-\\frac{d[A]}{dt} = k [A]^n$ gives:\n$$\\frac{1}{[A]^{n-1}} - \\frac{1}{[A]_0^{n-1}} = (n - 1)kt$$\n2. Setting $[A] = \\frac{[A]_0}{2}$ at $t = t_{1/2}$:\n$$\\frac{2^{n-1} - 1}{[A]_0^{n-1}} = (n - 1)kt_{1/2}$$\n$$t_{1/2} = \\frac{2^{n-1} - 1}{(n - 1)k [A]_0^{n-1}} \\implies t_{1/2} \\propto \\frac{1}{[A]_0^{n-1}}$$\n- For $n = 0$: $t_{1/2} \\propto [A]_0$\n- For $n = 1$: $t_{1/2} \\propto [A]_0^0$ (independent)\n- For $n = 2$: $t_{1/2} \\propto \\frac{1}{[A]_0}$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Radioactive decay of carbon-$14$ ($^{14}\\text{C}$) has a half-life of $5730\\text{ years}$. An archaeological wooden sample contains only $25\\%$ of the $^{14}\\text{C}$ found in fresh living trees. The age of the wooden relic is:",
+          "image": "",
+          "options": [
+            "$11460\\text{ years}$",
+            "$5730\\text{ years}$",
+            "$17190\\text{ years}$",
+            "$22920\\text{ years}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. All radioactive decay processes strictly follow first-order kinetics.\n2. The sample contains $25\\%$ of original $^{14}\\text{C}$:\n$$\\frac{[N]}{[N]_0} = 25\\% = \\frac{1}{4} = \\left(\\frac{1}{2}\\right)^2$$\n3. This corresponds to $n = 2$ half-lives.\n4. Age of the relic:\n$$\\text{Age} = n \\times t_{1/2} = 2 \\times 5730\\text{ years} = 11460\\text{ years}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For a zero-order reaction $A \\rightarrow \\text{Products}$, the time required for complete consumption of the reactant ($100\\%$ completion) is:",
+          "image": "",
+          "options": [
+            "$\\frac{[A]_0}{k}$",
+            "$\\frac{[A]_0}{2k}$",
+            "$\\frac{2[A]_0}{k}$",
+            "Infinite ($\\infty$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. The integrated zero-order equation is:\n$$[A] = [A]_0 - kt$$\n2. For complete consumption ($100\\%$ completion), $[A] = 0$:\n$$0 = [A]_0 - k t_{100\\%} \\implies k t_{100\\%} = [A]_0 \\implies t_{100\\%} = \\frac{[A]_0}{k}$$\n(Notice that $t_{100\\%} = 2 \\times t_{1/2}$, meaning a zero-order reaction finishes in finite time, whereas a first-order reaction requires infinite time to reach completion)."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A first-order reaction is $50\\%$ complete in $20\\text{ minutes}$. How much time will it take to reach $87.5\\%$ completion?",
+          "image": "",
+          "options": [
+            "$60\\text{ minutes}$",
+            "$40\\text{ minutes}$",
+            "$80\\text{ minutes}$",
+            "$100\\text{ minutes}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. When $87.5\\%$ of the reactant is consumed, the fraction remaining is:\n$$[A] = 100\\% - 87.5\\% = 12.5\\% = \\frac{1}{8} [A]_0 = \\left(\\frac{1}{2}\\right)^3 [A]_0$$\n2. Decreasing to $\\frac{1}{8}$ of the initial amount takes exactly $3$ half-lives:\n$$t_{87.5\\%} = 3 \\times t_{1/2}$$\n3. Given $t_{1/2} = 20\\text{ minutes}$:\n$$t_{87.5\\%} = 3 \\times 20\\text{ min} = 60\\text{ minutes}$$"
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In a reaction, the concentration of the reactant is reduced from $0.8\\text{ M}$ to $0.4\\text{ M}$ in $15\\text{ minutes}$, and from $0.1\\text{ M}$ to $0.05\\text{ M}$ in $15\\text{ minutes}$. What is the order of the reaction?",
+          "image": "",
+          "options": [
+            "First order",
+            "Zero order",
+            "Second order",
+            "Fractional order"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the first instance, concentration drops to half (from $0.8\\text{ M}$ to $0.4\\text{ M}$) in $15\\text{ minutes}$. Hence, $t_{1/2} = 15\\text{ min}$.\n2. In the second instance, with a different initial concentration ($0.1\\text{ M}$), concentration again drops to half ($0.05\\text{ M}$) in the exact same time ($15\\text{ minutes}$).\n3. Because the half-life is constant and completely independent of initial concentration, the reaction must be **first order** ($t_{1/2} = \\frac{0.693}{k}$)."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the slope of the linear plot of $\\log_{10}[A]$ versus time $t$ for a first-order reaction?",
+          "image": "",
+          "options": [
+            "$-\\frac{k}{2.303}$",
+            "$-k$",
+            "$+\\frac{k}{2.303}$",
+            "$-\\frac{2.303}{k}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The integrated rate equation in common logarithms (base 10) is:\n$$\\log_{10}[A] = \\log_{10}[A]_0 - \\frac{k}{2.303} t$$\n2. Comparing with the straight-line equation $y = mx + c$:\n- $y = \\log_{10}[A]$\n- $x = t$\n- $\\text{Intercept } c = \\log_{10}[A]_0$\n- $\\text{Slope } m = -\\frac{k}{2.303}$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For a first-order reaction $A \\rightarrow B$, the rate constant is $k = 0.693\\text{ min}^{-1}$. What is the rate of the reaction when $[A] = 0.2\\text{ M}$?",
+          "image": "",
+          "options": [
+            "$0.1386\\text{ mol L}^{-1}\\text{ min}^{-1}$",
+            "$0.6930\\text{ mol L}^{-1}\\text{ min}^{-1}$",
+            "$0.3465\\text{ mol L}^{-1}\\text{ min}^{-1}$",
+            "$0.0693\\text{ mol L}^{-1}\\text{ min}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the differential rate law for a first-order reaction:\n$$\\text{Rate} = k [A]^1$$\nSubstitute $k = 0.693\\text{ min}^{-1}$ and $[A] = 0.2\\text{ M}$:\n$$\\text{Rate} = 0.693\\text{ min}^{-1} \\times 0.2\\text{ mol L}^{-1} = 0.1386\\text{ mol L}^{-1}\\text{ min}^{-1}$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] If a first-order reaction takes $40\\text{ minutes}$ to achieve $90\\%$ completion, its half-life period ($t_{1/2}$) is: (Take $\\log_{10} 2 = 0.301$)",
+          "image": "",
+          "options": [
+            "$12.04\\text{ minutes}$",
+            "$20.00\\text{ minutes}$",
+            "$15.50\\text{ minutes}$",
+            "$8.00\\text{ minutes}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $90\\%$ completion, $[A] = 10\\% [A]_0 = 0.10 [A]_0$:\n$$t_{90\\%} = \\frac{2.303}{k}\\log_{10}\\left(\\frac{[A]_0}{0.10 [A]_0}\\right) = \\frac{2.303}{k}\\log_{10}(10) = \\frac{2.303}{k}$$\nGiven $t_{90\\%} = 40\\text{ minutes}$:\n$$k = \\frac{2.303}{40}\\text{ min}^{-1}$$\n2. Calculate half-life:\n$$t_{1/2} = \\frac{0.693}{k} = \\frac{2.303 \\times \\log_{10} 2}{k} = \\frac{2.303 \\times 0.301}{2.303 / 40}$$\n$$t_{1/2} = 0.301 \\times 40 = 12.04\\text{ minutes}$$\n(Notice the general relation: $t_{90\\%} \\approx 3.32 \\times t_{1/2}$)."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The average life (mean life, $\\tau$) of a first-order reaction is related to its half-life ($t_{1/2}$) by:",
+          "image": "",
+          "options": [
+            "$\\tau = \\frac{t_{1/2}}{0.693} = 1.443\\, t_{1/2}$",
+            "$\\tau = 0.693\\, t_{1/2}$",
+            "$\\tau = \\frac{t_{1/2}}{2}$",
+            "$\\tau = 2\\, t_{1/2}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Average life ($\\tau$) is defined as the reciprocal of the rate constant (or decay constant):\n$$\\tau = \\frac{1}{k}$$\n2. Since $t_{1/2} = \\frac{\\ln 2}{k} = \\frac{0.693}{k}$, we have $k = \\frac{0.693}{t_{1/2}}$.\n3. Substitute $k$ into the expression for $\\tau$:\n$$\\tau = \\frac{1}{0.693 / t_{1/2}} = \\frac{t_{1/2}}{0.693} \\approx 1.443\\, t_{1/2}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a zero-order reaction, the slope of the plot of reactant concentration $[A]$ versus time $t$ is equal to:",
+          "image": "",
+          "options": [
+            "$-k$",
+            "$+k$",
+            "$-\\frac{k}{2.303}$",
+            "$-2k$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The integrated rate equation for zero-order kinetics is:\n$$[A] = [A]_0 - kt$$\n2. Comparing with $y = mx + c$:\n- $y = [A]$\n- $x = t$\n- $c = [A]_0$\n- $\\text{Slope } m = -k$\nTherefore, the slope is $-k$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In a first-order reaction $A \\rightarrow \\text{Products}$, $[A]_0 = 0.1\\text{ M}$. After $40\\text{ minutes}$, the concentration is $0.025\\text{ M}$. The rate of reaction when $[A] = 0.01\\text{ M}$ is:",
+          "image": "",
+          "options": [
+            "$3.465 \\times 10^{-4}\\text{ M min}^{-1}$",
+            "$6.930 \\times 10^{-4}\\text{ M min}^{-1}$",
+            "$1.732 \\times 10^{-3}\\text{ M min}^{-1}$",
+            "$3.465 \\times 10^{-3}\\text{ M min}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Notice that $[A]$ drops from $0.1\\text{ M}$ to $0.025\\text{ M}$:\n$$\\frac{[A]}{[A]_0} = \\frac{0.025}{0.1} = \\frac{1}{4} = \\left(\\frac{1}{2}\\right)^2$$\nThis corresponds to $2$ half-lives in $40\\text{ minutes}$:\n$$2 \\times t_{1/2} = 40\\text{ min} \\implies t_{1/2} = 20\\text{ min}$$\n2. Find rate constant $k$:\n$$k = \\frac{0.693}{t_{1/2}} = \\frac{0.693}{20\\text{ min}} = 0.03465\\text{ min}^{-1}$$\n3. Calculate rate when $[A] = 0.01\\text{ M}$:\n$$\\text{Rate} = k [A] = 0.03465\\text{ min}^{-1} \\times 0.01\\text{ M} = 3.465 \\times 10^{-4}\\text{ M min}^{-1}$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A vessel contains a gas-phase first-order reaction $A(g) \\rightarrow B(g) + C(g)$. The initial pressure was $80\\text{ mm Hg}$. After $10\\text{ minutes}$, the total pressure rose to $120\\text{ mm Hg}$. What is the rate constant $k$ of the reaction? (Take $\\ln 2 = 0.693$)",
+          "image": "",
+          "options": [
+            "$0.0693\\text{ min}^{-1}$",
+            "$0.0346\\text{ min}^{-1}$",
+            "$0.1386\\text{ min}^{-1}$",
+            "$0.6930\\text{ min}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Let partial pressure decrease by $p$:\n- $P_A = 80 - p$\n- $P_B = p$\n- $P_C = p$\n$$P_{\\text{total}} = 80 - p + p + p = 80 + p = 120\\text{ mm Hg} \\implies p = 40\\text{ mm Hg}$$\n2. Remaining pressure of $A$:\n$$P_A = 80 - 40 = 40\\text{ mm Hg}$$\n3. Since $P_A$ fell from $80\\text{ mm Hg}$ to $40\\text{ mm Hg}$ (half of initial) in $10\\text{ minutes}$, the half-life is $t_{1/2} = 10\\text{ min}$.\n4. Calculate $k$:\n$$k = \\frac{0.693}{t_{1/2}} = \\frac{0.693}{10\\text{ min}} = 0.0693\\text{ min}^{-1}$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] For a reaction, the half-life period was measured for different initial concentrations:\n\n- When $[A]_0 = 0.1\\text{ M}$, $t_{1/2} = 200\\text{ s}$\n- When $[A]_0 = 0.4\\text{ M}$, $t_{1/2} = 50\\text{ s}$\n\nThe order of the reaction is:",
+          "image": "",
+          "options": [
+            "$2$",
+            "$1$",
+            "$0$",
+            "$3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Use the proportional relationship for half-life:\n$$t_{1/2} \\propto \\frac{1}{[A]_0^{n - 1}}$$\n$$\\frac{(t_{1/2})_1}{(t_{1/2})_2} = \\left(\\frac{[A]_{0,2}}{[A]_{0,1}}\\right)^{n - 1}$$\n2. Substitute the values:\n$$\\frac{200}{50} = \\left(\\frac{0.4}{0.1}\\right)^{n - 1}$$\n$$4 = 4^{n - 1} \\implies 4^1 = 4^{n - 1}$$\n$$n - 1 = 1 \\implies n = 2$$\nTherefore, the reaction is of **second order**."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] A substance decomposes following first-order kinetics with $k = 1.386 \\times 10^{-2}\\text{ s}^{-1}$. How long will it take for the concentration to fall to $1/16^{\\text{th}}$ of its initial value?",
+          "image": "",
+          "options": [
+            "$200\\text{ s}$",
+            "$100\\text{ s}$",
+            "$50\\text{ s}$",
+            "$400\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Half-life:\n$$t_{1/2} = \\frac{0.693}{k} = \\frac{0.693}{1.386 \\times 10^{-2}} = \\frac{0.693}{0.01386} = 50\\text{ s}$$\n2. Falling to $\\frac{1}{16} = \\left(\\frac{1}{2}\\right)^4$ takes $4$ half-lives:\n$$t = 4 \\times t_{1/2} = 4 \\times 50\\text{ s} = 200\\text{ s}$$"
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For a first-order reaction, the time required to complete $99\\%$ of the reaction ($t_{99\\%}$) is related to the time required to complete $90\\%$ of the reaction ($t_{90\\%}$) by:",
+          "image": "",
+          "options": [
+            "$t_{99\\%} = 2 \\times t_{90\\%}$",
+            "$t_{99\\%} = 3 \\times t_{90\\%}$",
+            "$t_{99\\%} = 1.5 \\times t_{90\\%}$",
+            "$t_{99\\%} = 4 \\times t_{90\\%}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $90\\%$ completion: $[A] = 10\\% [A]_0 = 0.1 [A]_0$\n$$t_{90\\%} = \\frac{2.303}{k}\\log_{10}\\left(\\frac{1}{0.1}\\right) = \\frac{2.303}{k}\\log_{10}(10) = \\frac{2.303}{k}$$\n2. For $99\\%$ completion: $[A] = 1\\% [A]_0 = 0.01 [A]_0$\n$$t_{99\\%} = \\frac{2.303}{k}\\log_{10}\\left(\\frac{1}{0.01}\\right) = \\frac{2.303}{k}\\log_{10}(100) = \\frac{2.303 \\times 2}{k} = 2 \\times \\left(\\frac{2.303}{k}\\right)$$\n3. Therefore:\n$$t_{99\\%} = 2 \\times t_{90\\%}$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A zero-order reaction is $20\\%$ complete in $20\\text{ seconds}$. How long will it take to reach $80\\%$ completion?",
+          "image": "",
+          "options": [
+            "$80\\text{ seconds}$",
+            "$60\\text{ seconds}$",
+            "$100\\text{ seconds}$",
+            "$40\\text{ seconds}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In zero-order kinetics, the amount of reactant converted ($x$) is directly proportional to time:\n$$x = kt \\implies t \\propto x$$\n2. Set up the proportion:\n$$\\frac{t_2}{t_1} = \\frac{x_2}{x_1}$$\nGiven $x_1 = 20\\%$, $t_1 = 20\\text{ s}$, and $x_2 = 80\\%$:\n$$\\frac{t_2}{20} = \\frac{80}{20} = 4$$\n$$t_2 = 4 \\times 20 = 80\\text{ seconds}$$"
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following statements about a first-order reaction is INCORRECT?",
+          "image": "",
+          "options": [
+            "The time required for $100\\%$ completion is equal to $2 \\times t_{1/2}$",
+            "The half-life period is independent of initial concentration",
+            "The rate constant has units of $\\text{time}^{-1}$",
+            "A plot of $[A]$ versus time shows an exponential decay curve"
+          ],
+          "correctOption": 0,
+          "solution": "1. For a first-order reaction, the concentration decreases exponentially according to $[A] = [A]_0 e^{-kt}$.\n2. The concentration approaches zero only as time approaches infinity ($t \\rightarrow \\infty$). Therefore, a first-order reaction **never goes to $100\\%$ completion in finite time**.\n3. ($t_{100\\%} = 2 \\times t_{1/2}$ is true for a *zero-order* reaction, not a first-order reaction).\nHence, Statement A is incorrect."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In a first-order reaction, the reactant concentration drops from $0.6\\text{ M}$ to $0.3\\text{ M}$ in $20\\text{ minutes}$, and from $0.3\\text{ M}$ to $0.15\\text{ M}$ in another $20\\text{ minutes}$. What is the value of the rate constant $k$?",
+          "image": "",
+          "options": [
+            "$0.03465\\text{ min}^{-1}$",
+            "$0.06930\\text{ min}^{-1}$",
+            "$0.01732\\text{ min}^{-1}$",
+            "$0.34650\\text{ min}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In both intervals, the concentration is halved in $20\\text{ minutes}$, so the half-life is $t_{1/2} = 20\\text{ min}$.\n2. For first-order kinetics:\n$$k = \\frac{0.693}{t_{1/2}} = \\frac{0.693}{20\\text{ min}} = 0.03465\\text{ min}^{-1}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What fraction of a radioactive substance remains undecayed after a time interval equal to $5$ half-lives?",
+          "image": "",
+          "options": [
+            "$\\frac{1}{32}$",
+            "$\\frac{1}{16}$",
+            "$\\frac{1}{64}$",
+            "$\\frac{1}{10}$"
+          ],
+          "correctOption": 0,
+          "solution": "After $n$ half-lives, the fraction remaining is:\n$$\\frac{N}{N_0} = \\left(\\frac{1}{2}\\right)^n$$\nFor $n = 5$:\n$$\\frac{N}{N_0} = \\left(\\frac{1}{2}\\right)^5 = \\frac{1}{32}$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In an experiment on the decomposition of $A$, a straight-line plot was obtained when $[A]$ was plotted against time $t$. The rate constant of this reaction is equal to:",
+          "image": "",
+          "options": [
+            "$-\\text{slope}$ of the straight line",
+            "$+\\text{slope}$ of the straight line",
+            "$\\text{intercept on y-axis}$",
+            "$2.303 \\times \\text{slope}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. A linear plot of $[A]$ versus $t$ is the hallmark of a **zero-order reaction**:\n$$[A] = [A]_0 - kt$$\n2. Comparing with $y = mx + c$:\n$$\\text{Slope } m = -k \\implies k = -m = -(\\text{slope})$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] A first-order reaction has a rate constant $k = 1.0 \\times 10^{-3}\\text{ s}^{-1}$ with an initial reactant concentration of $0.5\\text{ M}$. What is the half-life period of the reaction?",
+          "image": "",
+          "options": [
+            "$693\\text{ s}$",
+            "$250\\text{ s}$",
+            "$500\\text{ s}$",
+            "$1386\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For a first-order reaction, the half-life is independent of the initial concentration ($[A]_0 = 0.5\\text{ M}$ is extra information):\n$$t_{1/2} = \\frac{0.693}{k}$$\n2. Substitute $k = 1.0 \\times 10^{-3}\\text{ s}^{-1}$:\n$$t_{1/2} = \\frac{0.693}{1.0 \\times 10^{-3}} = 693\\text{ s}$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a zero-order reaction, if the rate constant is $k = 0.05\\text{ mol L}^{-1}\\text{ s}^{-1}$ and $[A]_0 = 1.0\\text{ M}$, what is the concentration of $A$ remaining after $15\\text{ seconds}$?",
+          "image": "",
+          "options": [
+            "$0.25\\text{ M}$",
+            "$0.75\\text{ M}$",
+            "$0.50\\text{ M}$",
+            "$0.10\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the zero-order integrated equation:\n$$[A] = [A]_0 - kt$$\nSubstitute $[A]_0 = 1.0\\text{ M}$, $k = 0.05\\text{ mol L}^{-1}\\text{ s}^{-1}$, and $t = 15\\text{ s}$:\n$$[A] = 1.0 - (0.05 \\times 15) = 1.0 - 0.75 = 0.25\\text{ M}$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A first-order reaction has $t_{1/2} = 10\\text{ minutes}$. What is the time required to complete $99.6\\%$ of the reaction? (Take $\\log_{10} 2 = 0.301$)",
+          "image": "",
+          "options": [
+            "$80\\text{ minutes}$",
+            "$40\\text{ minutes}$",
+            "$60\\text{ minutes}$",
+            "$100\\text{ minutes}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. When $99.6\\%$ is complete, the remaining fraction is:\n$$[A] = 100\\% - 99.6\\% = 0.4\\% = 0.004 [A]_0 = \\frac{4}{1000} [A]_0 = \\frac{1}{250} [A]_0$$\nNotice that $\\left(\\frac{1}{2}\\right)^8 = \\frac{1}{256} \\approx \\frac{1}{250}$ (or $0.39\\%$ remaining $\\approx 99.6\\%$ completion).\n2. This represents approximately $8$ half-lives:\n$$t = 8 \\times t_{1/2} = 8 \\times 10\\text{ min} = 80\\text{ minutes}$$\n3. (Exact formula: $t = \\frac{2.303 \\times 10}{0.693} \\log_{10}(250) = 33.23 \\times 2.398 \\approx 79.7\\text{ min} \\approx 80\\text{ min}$)."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements is TRUE regarding the half-life period of a chemical reaction?",
+          "image": "",
+          "options": [
+            "For a zero-order reaction, $t_{1/2}$ is directly proportional to initial concentration; for a first-order reaction, $t_{1/2}$ is independent of initial concentration",
+            "For a zero-order reaction, $t_{1/2}$ is inversely proportional to initial concentration",
+            "For a first-order reaction, $t_{1/2}$ is directly proportional to initial concentration",
+            "For all reactions, $t_{1/2}$ is independent of initial concentration"
+          ],
+          "correctOption": 0,
+          "solution": "1. For zero-order: $t_{1/2} = \\frac{[A]_0}{2k} \\implies t_{1/2} \\propto [A]_0$ (directly proportional).\n2. For first-order: $t_{1/2} = \\frac{0.693}{k} \\implies t_{1/2} \\propto [A]_0^0$ (strictly independent of $[A]_0$).\n3. For second-order: $t_{1/2} = \\frac{1}{k[A]_0} \\implies t_{1/2} \\propto \\frac{1}{[A]_0}$ (inversely proportional).\nTherefore, Statement A is correct."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] A first-order reaction is $50\\%$ complete in $1.26 \\times 10^{14}\\text{ s}$. How much time will it take to reach $100\\%$ completion?",
+          "image": "",
+          "options": [
+            "Infinite time",
+            "$2.52 \\times 10^{14}\\text{ s}$",
+            "$5.04 \\times 10^{14}\\text{ s}$",
+            "$1.26 \\times 10^{15}\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The integrated rate law for first-order kinetics is:\n$$t = \\frac{2.303}{k} \\log_{10}\\left(\\frac{[A]_0}{[A]}\\right)$$\n2. For $100\\%$ completion, $[A] = 0$:\n$$t_{100\\%} = \\frac{2.303}{k} \\log_{10}\\left(\\frac{[A]_0}{0}\\right) = \\frac{2.303}{k} \\log_{10}(\\infty) = \\infty$$\n3. A first-order reaction decays exponentially and theoretically takes an infinite amount of time to reach zero concentration."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a zero-order reaction, the time required for the initial concentration $[A]_0$ to reduce to one-fourth ($25\\%$) of its initial value is:",
+          "image": "",
+          "options": [
+            "$\\frac{3[A]_0}{4k}$",
+            "$\\frac{[A]_0}{4k}$",
+            "$\\frac{[A]_0}{2k}$",
+            "$\\frac{3[A]_0}{2k}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Zero-order rate law:\n$$[A] = [A]_0 - kt$$\n2. When $[A] = \\frac{[A]_0}{4}$:\n$$\\frac{[A]_0}{4} = [A]_0 - kt$$\n$$kt = [A]_0 - \\frac{[A]_0}{4} = \\frac{3[A]_0}{4}$$\n$$t = \\frac{3[A]_0}{4k}$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Two first-order reactions have rate constants $k_1$ and $k_2$. If $k_1 = 2 k_2$, the ratio of their half-life periods $(t_{1/2})_1 / (t_{1/2})_2$ is:",
+          "image": "",
+          "options": [
+            "$1 : 2$",
+            "$2 : 1$",
+            "$1 : 4$",
+            "$4 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For a first-order reaction:\n$$t_{1/2} = \\frac{0.693}{k} \\implies t_{1/2} \\propto \\frac{1}{k}$$\n2. Taking the ratio:\n$$\\frac{(t_{1/2})_1}{(t_{1/2})_2} = \\frac{k_2}{k_1}$$\n3. Given $k_1 = 2 k_2$:\n$$\\frac{(t_{1/2})_1}{(t_{1/2})_2} = \\frac{k_2}{2 k_2} = \\frac{1}{2} = 1 : 2$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In a first-order reaction, the time required to complete $75\\%$ of the reaction is $t_1$, and the time required to complete $50\\%$ is $t_2$. The relation between $t_1$ and $t_2$ is:",
+          "image": "",
+          "options": [
+            "$t_1 = 2 t_2$",
+            "$t_1 = 1.5 t_2$",
+            "$t_1 = 3 t_2$",
+            "$t_1 = 4 t_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $t_2$ is the half-life ($t_{1/2}$), the time for $50\\%$ completion:\n$$t_2 = \\frac{2.303}{k}\\log_{10}(2)$$\n2. $t_1$ is the time for $75\\%$ completion (leaving $25\\% = 1/4$):\n$$t_1 = \\frac{2.303}{k}\\log_{10}(4) = \\frac{2.303}{k}\\log_{10}(2^2) = 2 \\times \\frac{2.303}{k}\\log_{10}(2) = 2 t_2$$\nThus, $t_1 = 2 t_2$."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] A sample of radioactive isotope undergoes decay. If the activity of the sample decreases to $10\\%$ of its initial activity in $23.03\\text{ days}$, the decay constant ($\\lambda$) is:",
+          "image": "",
+          "options": [
+            "$0.10\\text{ day}^{-1}$",
+            "$0.05\\text{ day}^{-1}$",
+            "$0.23\\text{ day}^{-1}$",
+            "$0.01\\text{ day}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Radioactive decay obeys first-order kinetics:\n$$\\lambda = \\frac{2.303}{t} \\log_{10}\\left(\\frac{A_0}{A}\\right)$$\n2. Given $\\frac{A}{A_0} = 10\\% = 0.10 \\implies \\frac{A_0}{A} = 10$, and $t = 23.03\\text{ days}$:\n$$\\lambda = \\frac{2.303}{23.03} \\log_{10}(10) = 0.10 \\times 1 = 0.10\\text{ day}^{-1}$$"
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a zero-order reaction, which of the following expressions correctly relates the half-life ($t_{1/2}$) to the rate constant ($k$)?",
+          "image": "",
+          "options": [
+            "$k = \\frac{[A]_0}{2 t_{1/2}}$",
+            "$k = \\frac{0.693}{t_{1/2}}$",
+            "$k = \\frac{2[A]_0}{t_{1/2}}$",
+            "$k = \\frac{1}{t_{1/2} [A]_0}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For a zero-order reaction: $t_{1/2} = \\frac{[A]_0}{2k}$.\n2. Rearranging for $k$:\n$$k = \\frac{[A]_0}{2 t_{1/2}}$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A first-order reaction has a rate constant $k = 2.303 \\times 10^{-2}\\text{ s}^{-1}$. How long will it take for the concentration of the reactant to reduce to $1/10^{\\text{th}}$ of its initial value?",
+          "image": "",
+          "options": [
+            "$100\\text{ s}$",
+            "$230\\text{ s}$",
+            "$50\\text{ s}$",
+            "$10\\text{ s}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Using the integrated first-order rate law:\n$$t = \\frac{2.303}{k}\\log_{10}\\left(\\frac{[A]_0}{[A]}\\right)$$\n2. Substitute $[A] = \\frac{[A]_0}{10} \\implies \\frac{[A]_0}{[A]} = 10$, and $k = 2.303 \\times 10^{-2}\\text{ s}^{-1}$:\n$$t = \\frac{2.303}{2.303 \\times 10^{-2}} \\log_{10}(10) = 10^2 \\times 1 = 100\\text{ s}$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] If the rate constant of a reaction has the numerical value $k = 3.0 \\times 10^{-3}\\text{ s}^{-1}$, what is the order of the reaction?",
+          "image": "",
+          "options": [
+            "First order",
+            "Zero order",
+            "Second order",
+            "Third order"
+          ],
+          "correctOption": 0,
+          "solution": "1. The unit of the rate constant is given as $\\text{s}^{-1}$ (or $\\text{time}^{-1}$).\n2. From the dimensional formula $\\text{mol}^{1-n}\\text{ L}^{n-1}\\text{ s}^{-1}$, the concentration terms disappear only when:\n$$1 - n = 0 \\implies n = 1$$\nTherefore, any rate constant with the unit of reciprocal time ($\\text{s}^{-1}, \\text{min}^{-1}, \\text{hr}^{-1}$) corresponds exclusively to a **first-order reaction**."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] For a first-order reaction $A \\rightarrow B$, the plot of $\\log_{10}[A]$ against time $t$ gives a straight line with a slope of $-0.03\\text{ s}^{-1}$. The rate constant ($k$) of the reaction is: (Take $2.303 \\times 0.03 \\approx 0.069\\text{ s}^{-1}$)",
+          "image": "",
+          "options": [
+            "$0.069\\text{ s}^{-1}$",
+            "$0.030\\text{ s}^{-1}$",
+            "$0.013\\text{ s}^{-1}$",
+            "$0.138\\text{ s}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The slope of the $\\log_{10}[A]$ vs $t$ plot is:\n$$\\text{Slope} = -\\frac{k}{2.303}$$\n2. Given $\\text{slope} = -0.03\\text{ s}^{-1}$:\n$$-\\frac{k}{2.303} = -0.03$$\n$$k = 0.03 \\times 2.303 = 0.06909\\text{ s}^{-1} \\approx 0.069\\text{ s}^{-1}$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a first-order reaction, the ratio of $t_{75\\%}$ to $t_{50\\%}$ is $2$. What is the ratio of $t_{87.5\\%}$ to $t_{50\\%}$?",
+          "image": "",
+          "options": [
+            "$3$",
+            "$4$",
+            "$2.5$",
+            "$1.5$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $t_{50\\%} = 1\\text{ half-life} = t_{1/2}$.\n2. $t_{75\\%}$ corresponds to $25\\%$ remaining $= (1/2)^2 [A]_0 = 2\\text{ half-lives} = 2 t_{1/2}$.\n3. $t_{87.5\\%}$ corresponds to $12.5\\%$ remaining $= (1/2)^3 [A]_0 = 3\\text{ half-lives} = 3 t_{1/2}$.\n4. Ratio:\n$$\\frac{t_{87.5\\%}}{t_{50\\%}} = \\frac{3 t_{1/2}}{t_{1/2}} = 3$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A zero-order reaction has a rate constant $k = 0.1\\text{ M min}^{-1}$. If the initial concentration of reactant is $2.0\\text{ M}$, what is its half-life period?",
+          "image": "",
+          "options": [
+            "$10\\text{ minutes}$",
+            "$20\\text{ minutes}$",
+            "$5\\text{ minutes}$",
+            "$15\\text{ minutes}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the zero-order half-life equation:\n$$t_{1/2} = \\frac{[A]_0}{2k} = \\frac{2.0\\text{ M}}{2 \\times 0.1\\text{ M min}^{-1}} = \\frac{2.0}{0.2} = 10\\text{ minutes}$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An organic compound decomposes by first-order kinetics. In an experiment, it was observed that $60\\%$ of the compound decomposes in $60\\text{ minutes}$. What percentage of the compound remains unreacted after $120\\text{ minutes}$?",
+          "image": "",
+          "options": [
+            "$16\\%$",
+            "$20\\%$",
+            "$40\\%$",
+            "$8\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the first $60\\text{ minutes}$, $60\\%$ decomposed, meaning $40\\%$ remained unreacted:\n$$\\frac{[A]_{60}}{[A]_0} = 1 - 0.60 = 0.40$$\n2. In first-order kinetics, the fraction of reactant remaining in any constant time interval is identical.\n3. In the second $60\\text{ minute}$ interval (from $60$ to $120\\text{ minutes}$), $40\\%$ of the concentration present at $60\\text{ minutes}$ remains:\n$$[A]_{120} = 0.40 \\times [A]_{60} = 0.40 \\times (0.40 [A]_0) = 0.16 [A]_0$$\n4. Percentage remaining after $120\\text{ minutes}$:\n$$\\% \\text{ remaining} = 0.16 \\times 100 = 16\\%$$"
+        }
+      ]
+    }
+  ]
+}

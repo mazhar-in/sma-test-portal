@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-26-periodic-trends",
+  "title": "Periodic Trends (Atomic/Ionic Radii, Ionization Enthalpy, Electron Gain Enthalpy, Electronegativity, & Valency)",
+  "syllabus": "Periodic trends in physical and chemical properties of elements across periods and down groups: Effective nuclear charge (Z_eff) and Slater's screening/shielding effect; Atomic radii (covalent radii, metallic/crystal radii, van der Waals radii and their comparative magnitudes); Ionic radii (cationic and anionic radii vs parent atoms, isoelectronic series comparisons); Ionization enthalpy (IE1, IE2, IE3 trends, factors affecting IE: Z_eff, principal shell n, shielding, penetration of s > p > d > f, and extra stability of half-filled and completely filled subshells, anomalies like Be > B and N > O, Mg > Al and P > S); Electron gain enthalpy (Δ_egH, exothermic vs endothermic trends, noble gases, halogens, group 16/17 anomalies: Cl > F and S > O due to interelectronic repulsions in compact 2p subshells); Electronegativity (Pauling, Mulliken-Jaffe, and Allred-Rochow scales, trends across periods and groups, relation with hybridization and oxidation states); Periodic trends in valency / oxidation states (hydrides, oxides); Chemical reactivity trends and diagonal relationships; Acidic, basic, and amphoteric nature of oxides across periods and down groups",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The correct order of first ionization enthalpy ($\\Delta_i H_1$) for the elements of the second period is:",
+          "image": "",
+          "options": [
+            "$\\text{Li} < \\text{B} < \\text{Be} < \\text{C} < \\text{O} < \\text{N} < \\text{F} < \\text{Ne}$",
+            "$\\text{Li} < \\text{Be} < \\text{B} < \\text{C} < \\text{N} < \\text{O} < \\text{F} < \\text{Ne}$",
+            "$\\text{Li} < \\text{B} < \\text{Be} < \\text{C} < \\text{N} < \\text{O} < \\text{F} < \\text{Ne}$",
+            "$\\text{B} < \\text{Li} < \\text{Be} < \\text{C} < \\text{O} < \\text{N} < \\text{F} < \\text{Ne}$"
+          ],
+          "correctOption": 0,
+          "solution": "Across a period, ionization enthalpy generally increases due to increasing effective nuclear charge ($Z_{\\text{eff}}$), but two well-known exceptions occur in the second period:\n1. **$\\text{Be} > \\text{B}$:** Beryllium has a stable, fully filled $2s^2$ valence subshell with high penetration, whereas boron has the configuration $2s^2 2p^1$, where the single $2p$ electron is more shielded and easier to remove.\n2. **$\\text{N} > \\text{O}$:** Nitrogen has an extra-stable, exactly half-filled $2p^3$ configuration, whereas oxygen has $2p^4$ where pairing in one $2p$ orbital introduces electron-electron repulsion, making it easier to ionize.\nTherefore, the correct increasing order is:\n$$\\text{Li} < \\text{B} < \\text{Be} < \\text{C} < \\text{O} < \\text{N} < \\text{F} < \\text{Ne}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following arrangements represents the correct order of electron gain enthalpy with negative sign (more negative to less negative, i.e., strongest electron affinity to weakest) for the Group 17 elements?",
+          "image": "",
+          "options": [
+            "$\\text{Cl} > \\text{F} > \\text{Br} > \\text{I}$",
+            "$\\text{F} > \\text{Cl} > \\text{Br} > \\text{I}$",
+            "$\\text{Cl} > \\text{Br} > \\text{F} > \\text{I}$",
+            "$\\text{I} > \\text{Br} > \\text{Cl} > \\text{F}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Chlorine has a more negative electron gain enthalpy than fluorine ($\\Delta_{\\text{eg}}H[\\text{Cl}] = -349\\text{ kJ mol}^{-1}$, whereas $\\Delta_{\\text{eg}}H[\\text{F}] = -328\\text{ kJ mol}^{-1}$).\n2. This anomaly is due to the extremely small size of the fluorine atom: the incoming electron enters a compact $2p$ subshell where it experiences intense interelectronic repulsions from the existing 7 valence electrons.\n3. In chlorine, the incoming electron enters a larger, more diffuse $3p$ subshell where electron-electron repulsion is significantly lower.\n4. Beyond chlorine, the normal group trend of decreasing magnitude down the group continues: $\\text{Cl} > \\text{F} > \\text{Br} > \\text{I}$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For the isoelectronic species $\\text{N}^{3-}, \\text{O}^{2-}, \\text{F}^-, \\text{Na}^+,$ and $\\text{Mg}^{2+}$, the correct order of increasing ionic radii is:",
+          "image": "",
+          "options": [
+            "$\\text{Mg}^{2+} < \\text{Na}^+ < \\text{F}^- < \\text{O}^{2-} < \\text{N}^{3-}$",
+            "$\\text{N}^{3-} < \\text{O}^{2-} < \\text{F}^- < \\text{Na}^+ < \\text{Mg}^{2+}$",
+            "$\\text{Na}^+ < \\text{Mg}^{2+} < \\text{F}^- < \\text{O}^{2-} < \\text{N}^{3-}$",
+            "$\\text{O}^{2-} < \\text{F}^- < \\text{Na}^+ < \\text{Mg}^{2+} < \\text{N}^{3-}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. All five ions are isoelectronic, each possessing $10$ electrons ($1s^2 2s^2 2p^6$).\n2. For isoelectronic species, the ionic radius is inversely proportional to the nuclear charge ($Z$, number of protons):\n$$\\text{Ionic radius} \\propto \\frac{1}{Z}$$\n3. Compare nuclear charges ($Z$):\n- $\\text{Mg}^{2+}: Z = 12$ (highest nuclear attraction $\\implies$ smallest radius)\n- $\\text{Na}^+: Z = 11$\n- $\\text{F}^-: Z = 9$\n- $\\text{O}^{2-}: Z = 8$\n- $\\text{N}^{3-}: Z = 7$ (lowest nuclear attraction $\\implies$ largest radius)\nTherefore, the correct increasing order of radii is:\n$$\\text{Mg}^{2+} < \\text{Na}^+ < \\text{F}^- < \\text{O}^{2-} < \\text{N}^{3-}$$"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following oxides is AMPHOTERIC in nature?",
+          "image": "",
+          "options": [
+            "$\\text{Al}_2\\text{O}_3$",
+            "$\\text{Na}_2\\text{O}$",
+            "$\\text{SO}_3$",
+            "$\\text{CaO}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{Na}_2\\text{O}$ and $\\text{CaO}$ are strongly basic metallic oxides that react with acids to form salts and dissolve in water to give strong alkaline solutions.\n2. $\\text{SO}_3$ is a strongly acidic non-metallic oxide that dissolves in water to form sulfuric acid.\n3. **$\\text{Al}_2\\text{O}_3$** is an **amphoteric oxide**; it reacts with both acids (forming $\\text{Al}^{3+}$ salts) and bases (forming aluminate $[\\text{Al}(\\text{OH})_4]^-$ or $\\text{NaAlO}_2$):\n$$\\text{Al}_2\\text{O}_3 + 6\\text{HCl} \\rightarrow 2\\text{AlCl}_3 + 3\\text{H}_2\\text{O}$$\n$$\\text{Al}_2\\text{O}_3 + 2\\text{NaOH} + 3\\text{H}_2\\text{O} \\rightarrow 2\\text{Na}[\\text{Al}(\\text{OH})_4]$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The correct order of electronegativity on the Pauling scale for the elements $\\text{C}, \\text{N}, \\text{Si},$ and $\\text{P}$ is:",
+          "image": "",
+          "options": [
+            "$\\text{Si} < \\text{P} < \\text{C} < \\text{N}$",
+            "$\\text{P} < \\text{Si} < \\text{C} < \\text{N}$",
+            "$\\text{C} < \\text{Si} < \\text{N} < \\text{P}$",
+            "$\\text{Si} < \\text{C} < \\text{P} < \\text{N}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electronegativity increases across a period and decreases down a group.\n2. Pauling values for these elements are:\n- Nitrogen ($\\text{N}$): $3.0$\n- Carbon ($\\text{C}$): $2.5$\n- Phosphorus ($\\text{P}$): $2.1$\n- Silicon ($\\text{Si}$): $1.8$\n3. Arranging in increasing order:\n$$\\text{Si } (1.8) < \\text{P } (2.1) < \\text{C } (2.5) < \\text{N } (3.0)$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For an atom, which of the following relationships between its covalent radius ($r_{\\text{cov}}$), metallic radius ($r_{\\text{met}}$), and van der Waals radius ($r_{\\text{vdW}}$) is correct?",
+          "image": "",
+          "options": [
+            "$r_{\\text{vdW}} > r_{\\text{met}} > r_{\\text{cov}}$",
+            "$r_{\\text{cov}} > r_{\\text{met}} > r_{\\text{vdW}}$",
+            "$r_{\\text{met}} > r_{\\text{vdW}} > r_{\\text{cov}}$",
+            "$r_{\\text{vdW}} > r_{\\text{cov}} > r_{\\text{met}}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Covalent radius ($r_{\\text{cov}}$):** Measured between atoms bonded by covalent overlapping of electron clouds; overlapping brings nuclei closest together, giving the smallest radius.\n2. **Metallic radius ($r_{\\text{met}}$):** Measured between adjacent metal kernels touching in a metallic lattice without orbital overlapping; hence, $r_{\\text{met}} > r_{\\text{cov}}$.\n3. **van der Waals radius ($r_{\\text{vdW}}$):** Measured between non-bonded atoms of adjacent molecules held only by weak dispersive van der Waals forces; the internuclear distance is largest, giving the greatest radius.\nTherefore: $r_{\\text{vdW}} > r_{\\text{met}} > r_{\\text{cov}}$."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The first ionization enthalpy of magnesium is greater than that of aluminium ($\\text{IE}_1[\\text{Mg}] > \\text{IE}_1[\\text{Al}]$). This is because:",
+          "image": "",
+          "options": [
+            "Magnesium has a completely filled $3s^2$ subshell with higher penetration power, whereas aluminium loses a more shielded $3p^1$ electron",
+            "Aluminium has a higher nuclear charge than magnesium",
+            "Magnesium has a larger atomic radius than aluminium",
+            "The effective nuclear charge in magnesium is higher than in aluminium"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electronic configuration of magnesium ($Z = 12$): $[\\text{Ne}] 3s^2$.\n2. Electronic configuration of aluminium ($Z = 13$): $[\\text{Ne}] 3s^2 3p^1$.\n3. In magnesium, ionization involves removing an electron from a completely filled, spherically symmetrical $3s$ subshell, which penetrates closer to the nucleus.\n4. In aluminium, the valence electron removed is in the $3p$ orbital, which is well-shielded by the inner core and the $3s^2$ pair, and is at higher energy.\n5. Therefore, despite aluminium's higher nuclear charge, it requires less energy to ionize than magnesium ($\\text{IE}_1[\\text{Mg}] = 737\\text{ kJ mol}^{-1} > \\text{IE}_1[\\text{Al}] = 577\\text{ kJ mol}^{-1}$)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following elements has the LEAST negative (or most positive) electron gain enthalpy ($\\Delta_{\\text{eg}}H$)?",
+          "image": "",
+          "options": [
+            "Neon ($\\text{Ne}$)",
+            "Fluorine ($\\text{F}$)",
+            "Oxygen ($\\text{O}$)",
+            "Chlorine ($\\text{Cl}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Halogens ($\\text{F}, \\text{Cl}$) and chalcogens ($\\text{O}$) have high positive electron affinity (strongly negative $\\Delta_{\\text{eg}}H$) because capturing an electron completes or nearly completes an octet.\n2. Noble gases (like $\\text{Ne}$) already possess an exceptionally stable, closed-shell octet configuration ($1s^2 2s^2 2p^6$).\n3. An added electron must enter a higher-energy principal shell ($3s$), which is energetically unfavorable and requires input of external energy.\n4. Consequently, noble gases have **large positive electron gain enthalpies** ($\\Delta_{\\text{eg}}H[\\text{Ne}] = +116\\text{ kJ mol}^{-1}$), making neon the least negative."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The ionic radius of a cation is always smaller than its parent neutral atom, whereas the radius of an anion is always larger. This is because:",
+          "image": "",
+          "options": [
+            "A cation has higher effective nuclear charge per electron, while an anion experiences increased interelectronic repulsions and lower effective nuclear charge",
+            "A cation gains nuclear protons, while an anion loses nuclear protons",
+            "Cations always have higher principal quantum numbers than parent atoms",
+            "Anions lose their valence shells completely"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Cation ($M^+$):** Formed by removal of valence electron(s). The nuclear charge (protons) remains unchanged while the electron count decreases, so each remaining electron feels a higher effective nuclear pull ($Z_{\\text{eff}}$), contracting the electron cloud ($r_{\\text{cation}} < r_{\\text{atom}}$).\n2. **Anion ($X^-$):** Formed by addition of electron(s). The nuclear charge remains the same while electron-electron repulsions increase, expanding the electron cloud and decreasing $Z_{\\text{eff}}$ per electron ($r_{\\text{anion}} > r_{\\text{atom}}$)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the elements of Group 16, the correct order of electron gain enthalpy with negative sign ($\\Delta_{\\text{eg}}H$) is:",
+          "image": "",
+          "options": [
+            "$\\text{S} > \\text{Se} > \\text{Te} > \\text{Po} > \\text{O}$",
+            "$\\text{O} > \\text{S} > \\text{Se} > \\text{Te} > \\text{Po}$",
+            "$\\text{S} > \\text{O} > \\text{Se} > \\text{Te} > \\text{Po}$",
+            "$\\text{Po} > \\text{Te} > \\text{Se} > \\text{S} > \\text{O}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In Group 16, oxygen has an unusually low negative electron gain enthalpy ($\\Delta_{\\text{eg}}H = -141\\text{ kJ mol}^{-1}$) compared to sulfur ($\\Delta_{\\text{eg}}H = -200\\text{ kJ mol}^{-1}$).\n2. Oxygen's very small $2p$ subshell has high electron density, resulting in strong interelectronic repulsions when an extra electron is added.\n3. In sulfur, the incoming electron enters the larger $3p$ subshell with less repulsion.\n4. From sulfur down to polonium, size increases normally and electron affinity decreases.\n5. Therefore, oxygen has the least negative value in the group:\n$$\\text{S} > \\text{Se} > \\text{Te} > \\text{Po} > \\text{O}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A sudden, extraordinarily large jump between the second and third ionization enthalpies of an element ($IE_1 = 738, IE_2 = 1450, IE_3 = 7730\\text{ kJ mol}^{-1}$) indicates that the element belongs to which group?",
+          "image": "",
+          "options": [
+            "Group 2 (Alkaline earth metals)",
+            "Group 1 (Alkali metals)",
+            "Group 13 (Boron family)",
+            "Group 14 (Carbon family)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Removing the first two electrons requires $738$ and $1450\\text{ kJ mol}^{-1}$, which correspond to the valence electrons ($ns^2$).\n2. The third ionization enthalpy ($IE_3 = 7730\\text{ kJ mol}^{-1}$) jumps by more than a factor of $5$.\n3. A massive jump occurs when an electron must be pulled from a stable, completely filled noble gas core (a lower principal energy level).\n4. This reveals that the neutral atom possesses exactly **$2$ valence electrons**, characteristic of **Group 2** (alkaline earth metals, e.g., Magnesium)."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following elements has the LARGEST atomic radius?",
+          "image": "",
+          "options": [
+            "Caesium ($\\text{Cs}$)",
+            "Rubidium ($\\text{Rb}$)",
+            "Potassium ($\\text{K}$)",
+            "Sodium ($\\text{Na}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the periodic table, atomic radius increases down a group as new principal electron shells are added ($n$ increases).\n2. Across a period from left to right, atomic radius decreases due to increasing effective nuclear charge.\n3. Consequently, the alkali metals (Group 1) have the largest radii in their respective periods, and within Group 1, radius increases down the group:\n$$\\text{Li} < \\text{Na} < \\text{K} < \\text{Rb} < \\text{Cs}$$\nCaesium ($\\text{Cs}$) has the largest atomic radius among the non-radioactive elements."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The first ionization enthalpy values of four consecutive elements in the periodic table are $899, 801, 1086,$ and $1402\\text{ kJ mol}^{-1}$. These elements are respectively:",
+          "image": "",
+          "options": [
+            "$\\text{Be}, \\text{B}, \\text{C}, \\text{N}$",
+            "$\\text{B}, \\text{C}, \\text{N}, \\text{O}$",
+            "$\\text{Li}, \\text{Be}, \\text{B}, \\text{C}$",
+            "$\\text{C}, \\text{N}, \\text{O}, \\text{F}$"
+          ],
+          "correctOption": 0,
+          "solution": "Examine the values:\n1. From the first element ($899$) to the second ($801$), there is a drop in $IE_1$.\n2. From the second to third ($801 \\rightarrow 1086$) and third to fourth ($1086 \\rightarrow 1402$), values increase steadily.\n3. In the second period, the drop occurs between Beryllium ($2s^2$, $899\\text{ kJ mol}^{-1}$) and Boron ($2s^2 2p^1$, $801\\text{ kJ mol}^{-1}$) due to subshell stability and penetration effects.\n4. Carbon has $1086\\text{ kJ mol}^{-1}$ and Nitrogen has $1402\\text{ kJ mol}^{-1}$.\nTherefore, the elements are **$\\text{Be}, \\text{B}, \\text{C},$ and $\\text{N}$**."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The correct order of ionic radii for the divalent cations $\\text{Be}^{2+}, \\text{Mg}^{2+}, \\text{Ca}^{2+}, \\text{Sr}^{2+},$ and $\\text{Ba}^{2+}$ is:",
+          "image": "",
+          "options": [
+            "$\\text{Be}^{2+} < \\text{Mg}^{2+} < \\text{Ca}^{2+} < \\text{Sr}^{2+} < \\text{Ba}^{2+}$",
+            "$\\text{Ba}^{2+} < \\text{Sr}^{2+} < \\text{Ca}^{2+} < \\text{Mg}^{2+} < \\text{Be}^{2+}$",
+            "$\\text{Be}^{2+} < \\text{Ca}^{2+} < \\text{Mg}^{2+} < \\text{Sr}^{2+} < \\text{Ba}^{2+}$",
+            "$\\text{Mg}^{2+} < \\text{Be}^{2+} < \\text{Ca}^{2+} < \\text{Ba}^{2+} < \\text{Sr}^{2+}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. All these ions belong to Group 2 (alkaline earth metals) and carry the same $+2$ charge.\n2. Moving down a group, the number of electron shells ($n$) increases by one for each successive member.\n3. The addition of new shells outweighs the increase in nuclear charge, causing both atomic and ionic radii to increase systematically:\n$$\\text{Be}^{2+} < \\text{Mg}^{2+} < \\text{Ca}^{2+} < \\text{Sr}^{2+} < \\text{Ba}^{2+}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following elements has the HIGHEST electronegativity?",
+          "image": "",
+          "options": [
+            "Fluorine ($\\text{F}$)",
+            "Chlorine ($\\text{Cl}$)",
+            "Oxygen ($\\text{O}$)",
+            "Nitrogen ($\\text{N}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electronegativity is the relative tendency of a bonded atom to attract the shared pair of electrons toward itself.\n2. Across periods from left to right, electronegativity increases; up groups from bottom to top, it increases.\n3. **Fluorine ($\\text{F}$)** is located at the top right of the periodic table (excluding inert noble gases) and has the highest electronegativity of all elements ($4.0$ on the Pauling scale), followed by Oxygen ($3.5$) and Nitrogen/Chlorine ($3.0$)."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The second electron gain enthalpy ($\\Delta_{\\text{eg}}H_2$) of oxygen is POSITIVE (endothermic), i.e., $\\text{O}^-(g) + e^- \\rightarrow \\text{O}^{2-}(g); \\quad \\Delta_{\\text{eg}}H_2 = +780\\text{ kJ mol}^{-1}$. This is because:",
+          "image": "",
+          "options": [
+            "Strong electrostatic repulsion between the negatively charged $\\text{O}^-$ ion and the incoming electron overcomes nuclear attraction",
+            "The $\\text{O}^{2-}$ ion has an unstable valence shell",
+            "Oxygen cannot hold eight electrons",
+            "The effective nuclear charge becomes zero"
+          ],
+          "correctOption": 0,
+          "solution": "1. The first electron gain enthalpy of oxygen is exothermic ($\\Delta_{\\text{eg}}H_1 = -141\\text{ kJ mol}^{-1}$) because a neutral oxygen atom attracts the incoming electron.\n2. When a second electron is added to form the oxide ion ($\\text{O}^{2-}$), the incoming negatively charged electron encounters strong **electrostatic repulsion from the existing negative charge of the $\\text{O}^-$ ion**.\n3. Energy must be supplied externally to overcome this electrostatic repulsion and force the electron into the anion.\n4. Therefore, the second electron gain enthalpy of oxygen (and all other elements) is always **endothermic (positive)**."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following species has the SMALLEST radius?",
+          "image": "",
+          "options": [
+            "$\\text{Al}^{3+}$",
+            "$\\text{Mg}^{2+}$",
+            "$\\text{Na}^+$",
+            "$\\text{F}^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The species $\\text{Al}^{3+}, \\text{Mg}^{2+}, \\text{Na}^+,$ and $\\text{F}^-$ are isoelectronic ($10$ electrons each).\n2. For an isoelectronic series, size decreases as nuclear charge ($Z$) increases:\n- $\\text{Al}^{3+}: Z = 13$\n- $\\text{Mg}^{2+}: Z = 12$\n- $\\text{Na}^+: Z = 11$\n- $\\text{F}^-: Z = 9$\n3. Because $\\text{Al}^{3+}$ has the highest nuclear charge ($13$ protons pulling $10$ electrons), it experiences the greatest inward electrostatic pull and has the **smallest radius**."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The electronegativity of a carbon atom depends on its state of hybridization. The correct order of electronegativity of hybrid orbitals of carbon is:",
+          "image": "",
+          "options": [
+            "$sp > sp^2 > sp^3$",
+            "$sp^3 > sp^2 > sp$",
+            "$sp^2 > sp > sp^3$",
+            "$sp = sp^2 = sp^3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. An $s$-orbital is more spherical and penetrates closer to the nucleus than a $p$-orbital.\n2. As the percentage of $s$-character in a hybrid orbital increases, the electrons in that orbital are held more tightly and closer to the carbon nucleus, increasing the electronegativity of the carbon atom:\n- $sp$ hybrid orbital: $50\\%\\ s$-character (most electronegative)\n- $sp^2$ hybrid orbital: $33.3\\%\\ s$-character\n- $sp^3$ hybrid orbital: $25\\%\\ s$-character (least electronegative)\nTherefore, the order is: $sp > sp^2 > sp^3$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Why is the first ionization enthalpy of nitrogen higher than that of oxygen, whereas the second ionization enthalpy of oxygen is higher than that of nitrogen?",
+          "image": "",
+          "options": [
+            "Neutral $\\text{N}$ has an extra-stable half-filled $2p^3$ configuration ($IE_1[\\text{N}] > IE_1[\\text{O}]$), but the $\\text{O}^+$ ion has a stable half-filled $2p^3$ configuration while $\\text{N}^+$ is $2p^2$ ($IE_2[\\text{O}] > IE_2[\\text{N}]$)",
+            "Oxygen has smaller size in all states",
+            "Nitrogen has higher electronegativity than oxygen",
+            "Oxygen is a gas while nitrogen is a liquid"
+          ],
+          "correctOption": 0,
+          "solution": "1. **First Ionization:**\n- $\\text{N} ([\\text{He}] 2s^2 2p^3)$: exactly half-filled $2p^3$ subshell $\\implies$ extra exchange stability $\\implies IE_1[\\text{N}] > IE_1[\\text{O}]$.\n- $\\text{O} ([\\text{He}] 2s^2 2p^4)$: removal of one paired electron relieves electron-electron repulsion.\n2. **Second Ionization:**\n- $\\text{N}^+ ([\\text{He}] 2s^2 2p^2)$: loses a $2p$ electron easily.\n- $\\text{O}^+ ([\\text{He}] 2s^2 2p^3)$: acquiring half-filled $2p^3$ configuration makes the unipositive ion $\\text{O}^+$ exceptionally stable, requiring much higher energy to remove an electron $\\implies IE_2[\\text{O}] > IE_2[\\text{N}]$."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Across Period 3 of the periodic table from sodium to chlorine, the nature of oxides changes progressively from:",
+          "image": "",
+          "options": [
+            "Strongly basic $\\rightarrow$ basic $\\rightarrow$ amphoteric $\\rightarrow$ weakly acidic $\\rightarrow$ strongly acidic",
+            "Strongly acidic $\\rightarrow$ amphoteric $\\rightarrow$ basic",
+            "Neutral $\\rightarrow$ basic $\\rightarrow$ acidic",
+            "Amphoteric $\\rightarrow$ basic $\\rightarrow$ acidic"
+          ],
+          "correctOption": 0,
+          "solution": "Examine the Period 3 oxides:\n- $\\text{Na}_2\\text{O}$: Strongly basic\n- $\\text{MgO}$: Basic\n- $\\text{Al}_2\\text{O}_3$: Amphoteric\n- $\\text{SiO}_2$: Weakly acidic\n- $\\text{P}_4\\text{O}_{10}$: Moderately acidic\n- $\\text{SO}_3$: Strongly acidic\n- $\\text{Cl}_2\\text{O}_7$: Very strongly acidic\nAs non-metallic character and electronegativity increase from left to right across a period, the nature of oxides changes from **strongly basic to strongly acidic**."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following elements has the HIGHEST first ionization enthalpy?",
+          "image": "",
+          "options": [
+            "Helium ($\\text{He}$)",
+            "Neon ($\\text{Ne}$)",
+            "Fluorine ($\\text{F}$)",
+            "Argon ($\\text{Ar}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Helium has the electron configuration $1s^2$.\n2. Its two electrons are held in the innermost shell ($n = 1$) very close to the nucleus without any intervening inner shielding electrons.\n3. The nuclear charge of $+2$ acts with full force on the $1s$ pair.\n4. Consequently, **Helium ($\\text{He}$)** has the **highest first ionization enthalpy of all known elements** in the periodic table ($2372\\text{ kJ mol}^{-1}$)."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The shielding effect of inner electrons on outer valence electrons follows which order of subshell efficiency?",
+          "image": "",
+          "options": [
+            "$s > p > d > f$",
+            "$f > d > p > s$",
+            "$s > d > p > f$",
+            "$d > f > p > s$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The screening/shielding effect depends on the shape and spatial distribution of the electron orbitals:\n- $s$-orbitals are spherically symmetrical and have the highest electron density near the nucleus (highest penetration), shielding outer electrons most effectively.\n- $p$-orbitals are directional dumbbell-shaped and shield less effectively than $s$.\n- $d$ and $f$ orbitals have diffuse, multi-lobed spatial distributions with low electron density near the nucleus, providing poor screening.\n2. Therefore, the shielding ability decreases in the sequence: **$s > p > d > f$**."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In which of the following pairs is the second element LARGER in atomic radius than the first?",
+          "image": "",
+          "options": [
+            "$\\text{N}$ and $\\text{P}$",
+            "$\\text{C}$ and $\\text{N}$",
+            "$\\text{F}$ and $\\text{O}$",
+            "$\\text{Na}$ and $\\text{Mg}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Moving down Group 15 from nitrogen to phosphorus, a new principal shell is added ($n = 2 \\rightarrow n = 3$), so the atomic radius of phosphorus is significantly larger than nitrogen ($\\text{P} > \\text{N}$).\n2. Across a period from left to right ($\\text{C} \\rightarrow \\text{N}$, $\\text{O} \\rightarrow \\text{F}$, $\\text{Na} \\rightarrow \\text{Mg}$), atomic radius decreases due to increasing $Z_{\\text{eff}}$.\nTherefore, in $\\text{N}$ and $\\text{P}$, the second element is larger."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The valency of representative elements with respect to oxygen (in their highest normal oxides) across a period from Group 1 to Group 17:",
+          "image": "",
+          "options": [
+            "Increases from $1$ to $7$",
+            "Increases from $1$ to $4$ and then decreases to $1$",
+            "Remains constant at $2$",
+            "Decreases from $7$ to $1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Valency with respect to hydrogen increases from $1$ to $4$ and then decreases to $1$ ($\\text{CH}_4, \\text{NH}_3, \\text{H}_2\\text{O}, \\text{HF}$).\n2. However, **valency with respect to oxygen** in the highest oxides corresponds to the number of valence electrons and **increases steadily from $1$ to $7$** across Period 3:\n- $\\text{Na}_2\\text{O}$ (valency $1$)\n- $\\text{MgO}$ (valency $2$)\n- $\\text{Al}_2\\text{O}_3$ (valency $3$)\n- $\\text{SiO}_2$ (valency $4$)\n- $\\text{P}_4\\text{O}_{10}$ (valency $5$)\n- $\\text{SO}_3$ (valency $6$)\n- $\\text{Cl}_2\\text{O}_7$ (valency $7$)"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following atoms has the HIGHEST negative electron gain enthalpy?",
+          "image": "",
+          "options": [
+            "Chlorine ($\\text{Cl}$)",
+            "Fluorine ($\\text{F}$)",
+            "Bromine ($\\text{Br}$)",
+            "Iodine ($\\text{I}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Chlorine has the highest negative electron gain enthalpy ($-349\\text{ kJ mol}^{-1}$) of all elements in the entire periodic table.\n2. Fluorine has a slightly less negative value ($-328\\text{ kJ mol}^{-1}$) due to severe interelectronic repulsion in its compact $2p$ subshell.\n3. Beyond chlorine, electron gain enthalpy becomes less negative down the group.\nTherefore, Chlorine ($\\text{Cl}$) has the highest negative electron gain enthalpy."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The electronegativity values according to the Mulliken scale are based on:",
+          "image": "",
+          "options": [
+            "The average of ionization enthalpy and electron affinity: $\\chi_M = \\frac{IE + EA}{2}$",
+            "Bond dissociation energies of heteronuclear diatomic molecules",
+            "The ratio of nuclear charge to atomic radius squared",
+            "The sum of all successive ionization energies"
+          ],
+          "correctOption": 0,
+          "solution": "1. Robert Mulliken (1934) proposed that electronegativity is an inherent property of an isolated atom related to its tendency to lose or gain electrons.\n2. On the Mulliken scale, electronegativity ($\\chi_M$) is defined as the **arithmetic mean of the ionization energy ($IE$) and electron affinity ($EA$)**:\n$$\\chi_M = \\frac{IE + EA}{2}$$\n(When energies are measured in electron-volts, the Pauling scale equivalent is approximately $\\chi_P \\approx \\frac{\\chi_M}{2.8} = \\frac{IE + EA}{5.6}$)."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Why is the atomic radius of gallium ($135\\text{ pm}$) slightly SMALLER than that of aluminium ($143\\text{ pm}$), even though gallium is placed below aluminium in Group 13?",
+          "image": "",
+          "options": [
+            "Poor shielding effect of the ten intervening $3d$ electrons in gallium results in higher effective nuclear charge",
+            "Gallium has more electron shells than aluminium",
+            "Aluminium has empty $d$-orbitals",
+            "Gallium forms a dimer while aluminium does not"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electronic configuration of Aluminium ($Z = 13$): $[\\text{Ne}] 3s^2 3p^1$.\n2. Electronic configuration of Gallium ($Z = 31$): $[\\text{Ar}] 3d^{10} 4s^2 4p^1$.\n3. Between aluminium and gallium, the ten $3d$ transition elements intervene.\n4. The ten $3d$ electrons have a diffuse spatial shape and exert **poor screening/shielding** on the outer $4s$ and $4p$ electrons.\n5. Consequently, the outer electrons experience a much higher effective nuclear charge ($Z_{\\text{eff}}$) from the $31$ nuclear protons, pulling the valence electrons inward and causing gallium's radius to contract ($135\\text{ pm}$) below that of aluminium ($143\\text{ pm}$)."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Among the elements $\\text{B}, \\text{Al}, \\text{C},$ and $\\text{Si}$, the correct order of non-metallic character is:",
+          "image": "",
+          "options": [
+            "$\\text{Al} < \\text{Si} < \\text{B} < \\text{C}$",
+            "$\\text{B} < \\text{Al} < \\text{Si} < \\text{C}$",
+            "$\\text{Si} < \\text{Al} < \\text{B} < \\text{C}$",
+            "$\\text{Al} < \\text{B} < \\text{Si} < \\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Non-metallic character increases across a period from left to right (as electronegativity and ionization energy increase) and decreases down a group.\n2. In Period 2: Carbon is more non-metallic than Boron ($\\text{C} > \\text{B}$).\n3. In Period 3: Silicon is more non-metallic than Aluminium ($\\text{Si} > \\text{Al}$).\n4. Comparing Period 2 with Period 3: Boron is a metalloid/semi-metal while Aluminium is a true metal ($\\text{B} > \\text{Si}$ and $\\text{B} > \\text{Al}$).\n5. Therefore, the overall increasing order of non-metallic character is:\n$$\\text{Al (metal)} < \\text{Si (metalloid)} < \\text{B (metalloid/non-metal)} < \\text{C (typical non-metal)}$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The first ($IE_1$) and second ($IE_2$) ionization enthalpies of a few elements are designated as follows:\n\n- Element I: $IE_1 = 520, IE_2 = 7300\\text{ kJ mol}^{-1}$\n- Element II: $IE_1 = 419, IE_2 = 3051\\text{ kJ mol}^{-1}$\n- Element III: $IE_1 = 1681, IE_2 = 3374\\text{ kJ mol}^{-1}$\n- Element IV: $IE_1 = 2372, IE_2 = 5251\\text{ kJ mol}^{-1}$\n\nWhich element is the MOST REACTIVE metal?",
+          "image": "",
+          "options": [
+            "Element II",
+            "Element I",
+            "Element III",
+            "Element IV"
+          ],
+          "correctOption": 0,
+          "solution": "1. A highly reactive metal loses its valence electron very readily, which requires a **very low first ionization enthalpy ($IE_1$)**.\n2. Elements I and II both have low $IE_1$ and huge jumps in $IE_2$, characteristic of Group 1 alkali metals.\n3. Comparing Element I ($IE_1 = 520\\text{ kJ mol}^{-1}$, Lithium) and Element II ($IE_1 = 419\\text{ kJ mol}^{-1}$, Potassium):\n- Element II has the lowest $IE_1$ ($419\\text{ kJ mol}^{-1}$).\n4. A lower ionization enthalpy means electrons are lost most easily, making **Element II the most reactive metal**.\n(Element III is a halogen, and Element IV is Helium)."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In which of the following groups do ALL elements have positive electron gain enthalpies ($\\Delta_{\\text{eg}}H > 0$)?",
+          "image": "",
+          "options": [
+            "Group 18 (Noble gases)",
+            "Group 17 (Halogens)",
+            "Group 16 (Chalcogens)",
+            "Group 1 (Alkali metals)"
+          ],
+          "correctOption": 0,
+          "solution": "1. All elements in **Group 18 (Noble gases: $\\text{He}, \\text{Ne}, \\text{Ar}, \\text{Kr}, \\text{Xe}, \\text{Rn}$)** possess completely filled, closed electronic shells ($1s^2$ or $ns^2 np^6$).\n2. They have zero tendency to accept an additional electron; any extra electron must enter the next higher principal quantum shell against nuclear shielding.\n3. As a result, work must be done on the system to force electron entry, and **all noble gases have positive electron gain enthalpies**."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following species has the LARGEST ionic radius?",
+          "image": "",
+          "options": [
+            "$\\text{I}^-$",
+            "$\\text{I}$",
+            "$\\text{I}^+$",
+            "$\\text{Br}^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For the same element (Iodine):\n$$\\text{Radius: } \\text{Anion } (\\text{I}^-) > \\text{Neutral Atom } (\\text{I}) > \\text{Cation } (\\text{I}^+)$$\nAdding an electron increases interelectronic repulsions, expanding the valence shell.\n2. Comparing with $\\text{Br}^-$: Iodine belongs to Period 5 ($n = 5$), while bromine belongs to Period 4 ($n = 4$). The iodide ion has an additional principal electron shell.\n3. Therefore, **$\\text{I}^-$** has the largest ionic radius."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The second ionization enthalpy ($IE_2$) of alkali metals (Group 1) is exceptionally high because:",
+          "image": "",
+          "options": [
+            "The second electron must be removed from a stable noble gas core configuration with lower principal quantum number",
+            "Alkali metals have low electronegativity",
+            "Alkali metals are strong reducing agents",
+            "Alkali metal cations form dimers in gas phase"
+          ],
+          "correctOption": 0,
+          "solution": "1. Neutral alkali metals have valence configuration $ns^1$.\n2. Removing the first electron ($IE_1$) yields a unipositive cation ($M^+$) having a stable, closed-shell **noble gas configuration** ($(n-1)s^2 (n-1)p^6$).\n3. In $M^+$, the electrons reside in a lower principal quantum level ($n-1$) that is much closer to the nucleus and experiences a very high effective nuclear charge ($Z_{\\text{eff}}$).\n4. Removing a second electron requires disrupting this noble gas core, which requires an extraordinarily large amount of energy ($IE_2 \\gg IE_1$)."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The correct order of acidic strength for the oxides of nitrogen is:",
+          "image": "",
+          "options": [
+            "$\\text{N}_2\\text{O} < \\text{NO} < \\text{N}_2\\text{O}_3 < \\text{NO}_2 < \\text{N}_2\\text{O}_5$",
+            "$\\text{N}_2\\text{O}_5 < \\text{NO}_2 < \\text{N}_2\\text{O}_3 < \\text{NO} < \\text{N}_2\\text{O}$",
+            "$\\text{NO} < \\text{N}_2\\text{O} < \\text{N}_2\\text{O}_3 < \\text{N}_2\\text{O}_5 < \\text{NO}_2$",
+            "$\\text{N}_2\\text{O}_3 < \\text{N}_2\\text{O} < \\text{NO} < \\text{NO}_2 < \\text{N}_2\\text{O}_5$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For oxides of the same element, the **acidic character increases with increasing oxidation state** of the central atom.\n2. Find the oxidation state of nitrogen in each oxide:\n- $\\text{N}_2\\text{O}$ ($+1$): Neutral oxide\n- $\\text{NO}$ ($+2$): Neutral oxide\n- $\\text{N}_2\\text{O}_3$ ($+3$): Acidic oxide\n- $\\text{NO}_2$ ($+4$): Acidic oxide\n- $\\text{N}_2\\text{O}_5$ ($+5$): Strongly acidic oxide (highest oxidation state)\n3. Higher oxidation state increases the central atom's electronegativity and polarizing power, making it easier to release $\\text{H}^+$ when hydrated.\nTherefore, the acidic strength increases as: $\\text{N}_2\\text{O} < \\text{NO} < \\text{N}_2\\text{O}_3 < \\text{NO}_2 < \\text{N}_2\\text{O}_5$."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Why does the atomic radius of elements in the second and third transition series show very little difference (e.g., radius of $\\text{Zr} \\approx 160\\text{ pm}$ and $\\text{Hf} \\approx 159\\text{ pm}$)?",
+          "image": "",
+          "options": [
+            "Lanthanoid contraction caused by the poor shielding of intervening $4f$ electrons",
+            "Actinoid contraction",
+            "Diagonal relationship between Zirconium and Hafnium",
+            "Equal number of valence electrons"
+          ],
+          "correctOption": 0,
+          "solution": "1. In passing from the $4d$ transition series (e.g., $\\text{Zr}, Z = 40$) to the $5d$ series (e.g., $\\text{Hf}, Z = 72$), the $14$ lanthanoid elements ($4f^{1-14}$) intervene.\n2. The fourteen $4f$ electrons have diffuse, non-penetrating orbitals that provide very poor shielding for outer electrons.\n3. Consequently, the effective nuclear charge increases steadily by $14$ units with minimal screening, pulling the outer electron shells inward.\n4. This **lanthanoid contraction** almost exactly cancels out the expected size increase due to the addition of an extra principal shell, making the atomic radii of $\\text{Zr}$ ($160\\text{ pm}$) and $\\text{Hf}$ ($159\\text{ pm}$) virtually identical."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the trend of metallic character across a period (left to right) and down a group (top to bottom) in the periodic table?",
+          "image": "",
+          "options": [
+            "Decreases across a period and increases down a group",
+            "Increases across a period and decreases down a group",
+            "Increases both across a period and down a group",
+            "Decreases both across a period and down a group"
+          ],
+          "correctOption": 0,
+          "solution": "1. Metallic character represents the tendency of an atom to lose valence electrons (electropositive nature).\n2. Across a period from left to right, effective nuclear charge increases and atomic radius decreases, holding valence electrons more tightly; hence, **metallic character decreases**.\n3. Down a group, atomic radius increases and ionization enthalpy decreases, allowing valence electrons to be lost more readily; hence, **metallic character increases**."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The electron gain enthalpy of phosphorus is less negative than that of sulfur ($\\Delta_{\\text{eg}}H[\\text{P}] = -74\\text{ kJ mol}^{-1}$, $\\Delta_{\\text{eg}}H[\\text{S}] = -200\\text{ kJ mol}^{-1}$). This is attributed to:",
+          "image": "",
+          "options": [
+            "The extra stability of the exactly half-filled $3p^3$ subshell in phosphorus",
+            "The larger atomic radius of sulfur",
+            "The absence of $d$-orbitals in phosphorus",
+            "The higher electronegativity of phosphorus"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electronic configuration of phosphorus ($Z = 15$): $[\\text{Ne}] 3s^2 3p^3$.\n2. The $3p$ subshell is exactly half-filled, which gives it high exchange energy and symmetrical charge distribution.\n3. Adding an electron forces pairing in one of the $3p$ orbitals, which disrupts this half-filled stability and introduces pairing repulsions.\n4. Therefore, phosphorus has a lower tendency to capture an electron, resulting in a **less negative electron gain enthalpy** compared to sulfur ($3s^2 3p^4$)."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following neutral oxides does NOT react with either acids or bases?",
+          "image": "",
+          "options": [
+            "Carbon monoxide ($\\text{CO}$)",
+            "Carbon dioxide ($\\text{CO}_2$)",
+            "Sulfur dioxide ($\\text{SO}_2$)",
+            "Calcium oxide ($\\text{CaO}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. $\\text{CO}_2$ and $\\text{SO}_2$ are acidic oxides.\n2. $\\text{CaO}$ is a basic oxide.\n3. **Carbon monoxide ($\\text{CO}$)**, along with nitrous oxide ($\\text{N}_2\\text{O}$), nitric oxide ($\\text{NO}$), and water ($\\text{H}_2\\text{O}$), are classic **neutral oxides** that show neither acidic nor basic properties and do not form salts when treated with acids or bases."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The correct order of ionic radius for the halide anions $\\text{F}^-, \\text{Cl}^-, \\text{Br}^-,$ and $\\text{I}^-$ is:",
+          "image": "",
+          "options": [
+            "$\\text{F}^- < \\text{Cl}^- < \\text{Br}^- < \\text{I}^-$",
+            "$\\text{I}^- < \\text{Br}^- < \\text{Cl}^- < \\text{F}^-$",
+            "$\\text{F}^- < \\text{Br}^- < \\text{Cl}^- < \\text{I}^-$",
+            "$\\text{Cl}^- < \\text{F}^- < \\text{Br}^- < \\text{I}^-$"
+          ],
+          "correctOption": 0,
+          "solution": "1. All halide anions belong to Group 17 and have a $-1$ charge.\n2. Down the group, a new principal electron shell is added at each step:\n- $\\text{F}^-$: $n = 2$ ($133\\text{ pm}$)\n- $\\text{Cl}^-$: $n = 3$ ($181\\text{ pm}$)\n- $\\text{Br}^-$: $n = 4$ ($196\\text{ pm}$)\n- $\\text{I}^-$: $n = 5$ ($220\\text{ pm}$)\n3. Therefore, the ionic radius increases steadily: $\\text{F}^- < \\text{Cl}^- < \\text{Br}^- < \\text{I}^-$."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following elements has the LOWEST first ionization enthalpy?",
+          "image": "",
+          "options": [
+            "Caesium ($\\text{Cs}$)",
+            "Sodium ($\\text{Na}$)",
+            "Potassium ($\\text{K}$)",
+            "Lithium ($\\text{Li}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Down Group 1 (alkali metals), the atomic radius increases and the single valence $s$-electron is located further from the nucleus.\n2. The intervening electron shells shield the valence electron, significantly reducing effective nuclear charge.\n3. Consequently, the valence electron is held least tightly and requires the least energy to remove in **Caesium ($\\text{Cs}$)** ($374\\text{ kJ mol}^{-1}$), giving it the lowest first ionization enthalpy among non-radioactive elements."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Beryllium resembles aluminium in chemical properties (diagonal relationship). Which of the following is a common property shared by both $\\text{Be}$ and $\\text{Al}$?",
+          "image": "",
+          "options": [
+            "Both form amphoteric oxides and hydroxides",
+            "Both form ionic carbides that produce ethylene gas upon hydrolysis",
+            "Both exhibit a maximum coordination number of 6 in their halides",
+            "Both dissolve in cold concentrated nitric acid rapidly"
+          ],
+          "correctOption": 0,
+          "solution": "Key similarities between $\\text{Be}$ and $\\text{Al}$:\n1. **Amphoteric nature:** Both $\\text{BeO}/\\text{Be(OH)}_2$ and $\\text{Al}_2\\text{O}_3/\\text{Al(OH)}_3$ dissolve in both acids and strong bases to form beryllates ($[\\text{Be}(\\text{OH})_4]^{2-}$) and aluminates ($[\\text{Al}(\\text{OH})_4]^-$).\n2. **Passivation:** Both are rendered passive by concentrated $\\text{HNO}_3$ due to the formation of a protective oxide film.\n3. **Covalent halides:** Both $\\text{BeCl}_2$ and $\\text{AlCl}_3$ have bridged polymeric/dimeric structures with coordinate bonds and act as Lewis acids.\n4. **Carbide hydrolysis:** Both carbides ($\\text{Be}_2\\text{C}$ and $\\text{Al}_4\\text{C}_3$) yield methane gas ($\\text{CH}_4$) on hydrolysis (methanides).\nTherefore, Statement A is correct."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The first four ionization enthalpies of an element are $496, 4562, 6912,$ and $9543\\text{ kJ mol}^{-1}$. The formula of the stable sulfate formed by this element is:",
+          "image": "",
+          "options": [
+            "$M_2\\text{SO}_4$",
+            "$M\\text{SO}_4$",
+            "$M_2(\\text{SO}_4)_3$",
+            "$M(\\text{SO}_4)_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. There is an enormous jump between the first ($IE_1 = 496\\text{ kJ mol}^{-1}$) and second ionization enthalpy ($IE_2 = 4562\\text{ kJ mol}^{-1}$, a nearly 10-fold increase).\n2. This indicates that the atom has exactly **one valence electron** ($ns^1$), and removing the second electron requires breaking into an inert noble gas core.\n3. The element is an alkali metal (e.g., Sodium, $\\text{Na}$), forming a stable unipositive cation ($M^+$).\n4. When combined with the divalent sulfate anion ($\\text{SO}_4^{2-}$), the stable salt formed is **$M_2\\text{SO}_4$**."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] What is the correct order of the second ionization enthalpy ($IE_2$) for the elements $\\text{C}, \\text{N}, \\text{O},$ and $\\text{F}$?",
+          "image": "",
+          "options": [
+            "$\\text{C} < \\text{N} < \\text{F} < \\text{O}$",
+            "$\\text{C} < \\text{N} < \\text{O} < \\text{F}$",
+            "$\\text{O} < \\text{N} < \\text{F} < \\text{C}$",
+            "$\\text{N} < \\text{C} < \\text{O} < \\text{F}$"
+          ],
+          "correctOption": 0,
+          "solution": "Write electronic configurations of the unipositive ions from which the second electron is removed:\n- $\\text{C}^+: 1s^2 2s^2 2p^1$\n- $\\text{N}^+: 1s^2 2s^2 2p^2$\n- $\\text{F}^+: 1s^2 2s^2 2p^4$\n- $\\text{O}^+: 1s^2 2s^2 2p^3$ (extra-stable half-filled subshell)\n1. Because $\\text{O}^+$ has a stable half-filled $2p^3$ subshell, it has the **highest $IE_2$** among the four, higher even than fluorine ($IE_2[\\text{O}] = 3388\\text{ kJ mol}^{-1}$, $IE_2[\\text{F}] = 3374\\text{ kJ mol}^{-1}$).\n2. For the others, $IE_2$ increases with nuclear charge: $\\text{C}^+ < \\text{N}^+ < \\text{F}^+$.\n3. Therefore, the overall order of $IE_2$ is:\n$$\\text{C} < \\text{N} < \\text{F} < \\text{O}$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following elements has the most positive (or least negative) electron gain enthalpy among the halogens?",
+          "image": "",
+          "options": [
+            "Iodine ($\\text{I}$)",
+            "Bromine ($\\text{Br}$)",
+            "Chlorine ($\\text{Cl}$)",
+            "Fluorine ($\\text{F}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Negative electron gain enthalpy values for halogens are:\n- $\\text{Cl}: -349\\text{ kJ mol}^{-1}$ (most negative / highest affinity)\n- $\\text{F}: -328\\text{ kJ mol}^{-1}$\n- $\\text{Br}: -325\\text{ kJ mol}^{-1}$\n- $\\text{I}: -295\\text{ kJ mol}^{-1}$ (least negative)\n2. Because iodine has the largest atomic size and lowest effective nuclear attraction for an incoming electron, it has the **least negative (most positive) electron gain enthalpy** among the halogens."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The radius of which of the following atoms/ions is the SMALLEST?",
+          "image": "",
+          "options": [
+            "$\\text{H}^+$",
+            "$\\text{H}$",
+            "$\\text{H}^-$",
+            "$\\text{He}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. A neutral hydrogen atom has a radius of $\\approx 53\\text{ pm}$ ($1s^1$).\n2. The hydride ion ($\\text{H}^-$) has $2$ electrons with only $1$ proton, experiencing strong repulsions and expanding to $\\approx 140\\text{ pm}$.\n3. Helium ($\\text{He}$) has $2$ electrons held by $2$ protons ($r \\approx 31\\text{ pm}$).\n4. **$\\text{H}^+$ (proton)** has completely lost its only electron. It is a bare atomic nucleus with a radius of approximately $1.5 \\times 10^{-3}\\text{ pm}$ ($10^{-15}\\text{ m}$), which is roughly $100,000\\text{ times smaller}$ than any atom or standard ion."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Slater's rules quantify the screening constant ($\\sigma$) and effective nuclear charge ($Z_{\\text{eff}} = Z - \\sigma$). For an electron in the $2p$ orbital of a neutral nitrogen atom ($Z = 7$), what is the value of the screening constant $\\sigma$?",
+          "image": "",
+          "options": [
+            "$3.10$",
+            "$3.45$",
+            "$3.85$",
+            "$2.75$"
+          ],
+          "correctOption": 0,
+          "solution": "Using Slater's rules for an electron in the $2p$ subshell of nitrogen ($1s^2 2s^2 2p^3$):\n1. Grouping: $(1s)^2 (2s, 2p)^5$.\n2. The test electron in the $(2s, 2p)$ shell is shielded by:\n- The other $4$ electrons in the same $(2s, 2p)$ group, each contributing $0.35$:\n$$\\sigma_1 = 4 \\times 0.35 = 1.40$$\n- The $2$ electrons in the inner $(1s)$ shell ($n - 1$), each contributing $0.85$:\n$$\\sigma_2 = 2 \\times 0.85 = 1.70$$\n3. Total screening constant ($\\sigma$):\n$$\\sigma = 1.40 + 1.70 = 3.10$$\n(And $Z_{\\text{eff}} = Z - \\sigma = 7 - 3.10 = 3.90$)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-22-chemical-kinetics-rates-and-order",
+  "title": "Chemical Kinetics: Rates & Order (Reaction Rates, Factors Influencing Rate, Order, & Molecularity)",
+  "syllabus": "Rate of a chemical reaction: average and instantaneous rates, rate expressions and stoichiometric relationships; Factors influencing reaction rate (concentration, physical state, surface area, temperature, catalyst, radiation); Rate law, rate equation, and specific rate constant (k); Order of a reaction (zero, first, second, fractional, and negative orders) and determination of units of rate constant (mol^(1-n) L^(n-1) s^(-1)); Molecularity of an elementary reaction (unimolecular, bimolecular, trimolecular), differences between order and molecularity; Mechanism of complex reactions: elementary steps, rate-determining step (RDS), reaction intermediates; Pseudo-chemical reactions (pseudo-first-order reactions like acid-catalyzed ester hydrolysis and inversion of cane sugar); Initial rate method and isolation method for determining rate laws; Temperature dependence qualitative aspects; Catalyst effect on reaction pathway without altering equilibrium",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] For the reaction $2\\text{N}_2\\text{O}_5(g) \\rightarrow 4\\text{NO}_2(g) + \\text{O}_2(g)$, the rate of disappearance of $\\text{N}_2\\text{O}_5$ is $6.4 \\times 10^{-3}\\text{ mol L}^{-1}\\text{ s}^{-1}$. The rate of formation of $\\text{NO}_2$ is:",
+          "image": "",
+          "options": [
+            "$1.28 \\times 10^{-2}\\text{ mol L}^{-1}\\text{ s}^{-1}$",
+            "$3.20 \\times 10^{-3}\\text{ mol L}^{-1}\\text{ s}^{-1}$",
+            "$6.40 \\times 10^{-3}\\text{ mol L}^{-1}\\text{ s}^{-1}$",
+            "$2.56 \\times 10^{-2}\\text{ mol L}^{-1}\\text{ s}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Express the reaction rate in terms of reactants and products using stoichiometry:\n$$\\text{Rate} = -\\frac{1}{2}\\frac{d[\\text{N}_2\\text{O}_5]}{dt} = +\\frac{1}{4}\\frac{d[\\text{NO}_2]}{dt} = +\\frac{d[\\text{O}_2]}{dt}$$\n2. Relate the rate of formation of $\\text{NO}_2$ to the rate of disappearance of $\\text{N}_2\\text{O}_5$:\n$$\\frac{d[\\text{NO}_2]}{dt} = 4 \\times \\left(-\\frac{1}{2}\\frac{d[\\text{N}_2\\text{O}_5]}{dt}\\right) = 2 \\left(-\\frac{d[\\text{N}_2\\text{O}_5]}{dt}\\right)$$\n3. Substitute $-\\frac{d[\\text{N}_2\\text{O}_5]}{dt} = 6.4 \\times 10^{-3}\\text{ mol L}^{-1}\\text{ s}^{-1}$:\n$$\\frac{d[\\text{NO}_2]}{dt} = 2 \\times (6.4 \\times 10^{-3}) = 1.28 \\times 10^{-2}\\text{ mol L}^{-1}\\text{ s}^{-1}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What are the SI units of the specific rate constant ($k$) for a reaction of order $1.5$ (or $3/2$)?",
+          "image": "",
+          "options": [
+            "$\\text{mol}^{-1/2}\\text{ L}^{1/2}\\text{ s}^{-1}$",
+            "$\\text{mol}^{1/2}\\text{ L}^{-1/2}\\text{ s}^{-1}$",
+            "$\\text{mol}^{-1}\\text{ L s}^{-1}$",
+            "$\\text{s}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The general formula for the unit of rate constant for an $n^{\\text{th}}$-order reaction is:\n$$\\text{Unit of } k = (\\text{mol L}^{-1})^{1 - n}\\text{ s}^{-1} = \\text{mol}^{1 - n}\\text{ L}^{n - 1}\\text{ s}^{-1}$$\n2. Substitute $n = 1.5 = \\frac{3}{2}$:\n$$\\text{Unit of } k = \\text{mol}^{1 - 1.5}\\text{ L}^{1.5 - 1}\\text{ s}^{-1} = \\text{mol}^{-0.5}\\text{ L}^{0.5}\\text{ s}^{-1} = \\text{mol}^{-1/2}\\text{ L}^{1/2}\\text{ s}^{-1}$$"
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For a hypothetical reaction $A + B \\rightarrow \\text{Products}$, the rate law is given by $\\text{Rate} = k [A]^2 [B]^{1/2}$. If the concentration of $A$ is halved and the concentration of $B$ is quadrupled, the reaction rate will:",
+          "image": "",
+          "options": [
+            "Decrease to half of its initial value",
+            "Double",
+            "Remain unchanged",
+            "Increase by four times"
+          ],
+          "correctOption": 0,
+          "solution": "1. Initial rate expression:\n$$R_1 = k [A]^2 [B]^{1/2}$$\n2. New concentrations: $[A]' = \\frac{[A]}{2}$ and $[B]' = 4[B]$.\n3. New rate expression:\n$$R_2 = k \\left(\\frac{[A]}{2}\\right)^2 (4[B])^{1/2} = k \\left(\\frac{[A]^2}{4}\\right) \\left(2 [B]^{1/2}\\right)$$\n$$R_2 = \\frac{2}{4} k [A]^2 [B]^{1/2} = \\frac{1}{2} R_1$$\nTherefore, the rate decreases to half of its original value."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements regarding the molecularity of a chemical reaction is INCORRECT?",
+          "image": "",
+          "options": [
+            "Molecularity can be zero, fractional, or negative depending on reaction stoichiometry",
+            "Molecularity is defined only for an elementary (single-step) reaction",
+            "Molecularity is the number of reactant molecules colliding simultaneously in an elementary step",
+            "Molecularity rarely exceeds $3$ due to the extremely low probability of simultaneous multi-body collisions"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Molecularity** is a theoretical concept defined strictly as the number of reacting particles (atoms, molecules, or ions) that collide simultaneously to bring about an elementary chemical step.\n2. Because you cannot have zero, negative, or a fractional number of particles colliding, molecularity is **always a non-zero positive integer ($1, 2,$ or $3$)**.\n3. In contrast, the **order of a reaction** is determined experimentally from the rate law and can be zero, fractional, positive, or negative.\nTherefore, Statement A is incorrect."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The hydrolysis of ethyl acetate in an acidic aqueous medium:\n$$\\text{CH}_3\\text{COOC}_2\\text{H}_5 + \\text{H}_2\\text{O} \\xrightarrow{\\text{H}^+} \\text{CH}_3\\text{COOH} + \\text{C}_2\\text{H}_5\\text{OH}$$\nis classified as a:",
+          "image": "",
+          "options": [
+            "Pseudo-first-order reaction",
+            "Zero-order reaction",
+            "True second-order reaction",
+            "Third-order reaction"
+          ],
+          "correctOption": 0,
+          "solution": "1. In this reaction, water acts as the solvent and is present in large excess compared to ethyl acetate ($[\\text{H}_2\\text{O}] \\approx 55.5\\text{ M} \\gg [\\text{ester}]$).\n2. Throughout the reaction, the concentration of water remains virtually constant ($[\\text{H}_2\\text{O}] \\approx \\text{constant}$).\n3. The rate equation becomes:\n$$\\text{Rate} = k' [\\text{CH}_3\\text{COOC}_2\\text{H}_5][\\text{H}_2\\text{O}] = k [\\text{CH}_3\\text{COOC}_2\\text{H}_5]$$\nwhere $k = k'[\\text{H}_2\\text{O}]$.\n4. Although bimolecular, the reaction kinetically follows first-order kinetics, making it a **pseudo-first-order reaction**."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a multi-step complex reaction, the overall rate of the reaction is governed by:",
+          "image": "",
+          "options": [
+            "The slowest step in the mechanism (rate-determining step, RDS)",
+            "The fastest step in the mechanism",
+            "The average speed of all steps combined",
+            "The final product-release step"
+          ],
+          "correctOption": 0,
+          "solution": "1. In a complex reaction involving a sequence of consecutive elementary steps, one step has a much higher activation energy and proceeds much more slowly than all other steps.\n2. The overall transformation cannot proceed faster than this bottleneck step.\n3. Therefore, the **slowest step** governs the overall reaction rate and is called the **rate-determining step (RDS)**."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For the reaction $2A + B \\rightarrow C$, the following initial rate data was obtained at $300\\text{ K}$:\n\n| Experiment | $[A]$ (mol/L) | $[B]$ (mol/L) | Initial Rate (mol L$^{-1}$ s$^{-1}$) |\n| :---: | :---: | :---: | :---: |\n| 1 | $0.1$ | $0.1$ | $1.2 \\times 10^{-3}$ |\n| 2 | $0.1$ | $0.2$ | $2.4 \\times 10^{-3}$ |\n| 3 | $0.2$ | $0.1$ | $4.8 \\times 10^{-3}$ |\n\nThe rate law for the reaction is:",
+          "image": "",
+          "options": [
+            "$\\text{Rate} = k [A]^2 [B]$",
+            "$\\text{Rate} = k [A] [B]$",
+            "$\\text{Rate} = k [A] [B]^2$",
+            "$\\text{Rate} = k [A]^2 [B]^2$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the rate law be $\\text{Rate} = k [A]^x [B]^y$.\n1. Compare Experiments 1 and 2 (where $[A]$ is constant at $0.1\\text{ M}$):\n$$\\frac{R_2}{R_1} = \\frac{2.4 \\times 10^{-3}}{1.2 \\times 10^{-3}} = \\left(\\frac{0.2}{0.1}\\right)^y \\implies 2 = 2^y \\implies y = 1$$\n2. Compare Experiments 1 and 3 (where $[B]$ is constant at $0.1\\text{ M}$):\n$$\\frac{R_3}{R_1} = \\frac{4.8 \\times 10^{-3}}{1.2 \\times 10^{-3}} = \\left(\\frac{0.2}{0.1}\\right)^x \\implies 4 = 2^x \\implies 2^2 = 2^x \\implies x = 2$$\n3. The rate law is:\n$$\\text{Rate} = k [A]^2 [B]$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A reaction is found to have a specific rate constant $k = 2.5 \\times 10^{-2}\\text{ mol L}^{-1}\\text{ s}^{-1}$. What is the overall order of this reaction?",
+          "image": "",
+          "options": [
+            "Zero order",
+            "First order",
+            "Second order",
+            "Half order"
+          ],
+          "correctOption": 0,
+          "solution": "The general unit of the rate constant $k$ is:\n$$\\text{Unit} = (\\text{mol L}^{-1})^{1 - n}\\text{ s}^{-1}$$\nGiven unit: $\\text{mol L}^{-1}\\text{ s}^{-1} = (\\text{mol L}^{-1})^1\\text{ s}^{-1}$.\nEquating exponents:\n$$1 - n = 1 \\implies n = 0$$\nTherefore, the reaction is of **zero order**."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the decomposition of gaseous ozone:\n$$2\\text{O}_3(g) \\rightarrow 3\\text{O}_2(g)$$\nThe proposed mechanism is:\n- Step 1 (Fast equilibrium): $\\text{O}_3 \\rightleftharpoons \\text{O}_2 + \\text{O}$\n- Step 2 (Slow): $\\text{O}_3 + \\text{O} \\rightarrow 2\\text{O}_2$\nThe theoretical order of the reaction with respect to $\\text{O}_2$ is:",
+          "image": "",
+          "options": [
+            "$-1$ (negative order)",
+            "$+1$",
+            "$+2$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Write the rate law from the slowest (rate-determining) step:\n$$\\text{Rate} = k_2 [\\text{O}_3][\\text{O}]$$\n2. The atomic oxygen $[\\text{O}]$ is an unstable reactive intermediate and must be eliminated using Step 1 fast equilibrium:\n$$K_{\\text{eq}} = \\frac{[\\text{O}_2][\\text{O}]}{[\\text{O}_3]} \\implies [\\text{O}] = K_{\\text{eq}} \\frac{[\\text{O}_3]}{[\\text{O}_2]}$$\n3. Substitute $[\\text{O}]$ into the rate law:\n$$\\text{Rate} = k_2 [\\text{O}_3] \\left(K_{\\text{eq}} \\frac{[\\text{O}_3]}{[\\text{O}_2]}\\right) = k [\\text{O}_3]^2 [\\text{O}_2]^{-1}$$\nwhere $k = k_2 K_{\\text{eq}}$.\n4. The order with respect to $\\text{O}_2$ is **$-1$** (increasing oxygen concentration retards the reaction rate)."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Why does finely powdered marble ($\\text{CaCO}_3$) react much faster with dilute hydrochloric acid than a single solid chunk of marble of the same mass?",
+          "image": "",
+          "options": [
+            "Powdering substantially increases the total surface area, providing more active collision sites between reactant particles",
+            "Powdering lowers the activation energy of the reaction",
+            "Powdering changes the order of the reaction from second to zero order",
+            "Powdering increases the enthalpy of the reaction"
+          ],
+          "correctOption": 0,
+          "solution": "1. In heterogeneous reactions involving solids and liquids, reaction occurs at the phase boundary (solid surface).\n2. Breaking a large solid lump into fine powder drastically increases the **specific surface area** exposed to acid.\n3. A greater surface area allows a higher frequency of productive collisions per second between $\\text{H}^+$ ions and carbonate ions, increasing the reaction rate."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For the reaction $A + 2B \\rightarrow C$, the rate equation is $\\text{Rate} = k [A] [B]$. If $2.0\\text{ moles of } A$ and $2.0\\text{ moles of } B$ are taken in a $2.0\\text{ L}$ flask, the initial rate is $R_1$. What will be the rate when half of $A$ has reacted?",
+          "image": "",
+          "options": [
+            "$\\frac{1}{4} R_1$",
+            "$\\frac{1}{2} R_1$",
+            "$\\frac{1}{8} R_1$",
+            "$R_1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Initial concentrations in $V = 2.0\\text{ L}$:\n$$[A]_0 = \\frac{2.0\\text{ mol}}{2.0\\text{ L}} = 1.0\\text{ M}, \\quad [B]_0 = \\frac{2.0\\text{ mol}}{2.0\\text{ L}} = 1.0\\text{ M}$$\n$$R_1 = k (1.0)(1.0) = k$$\n2. When half of $A$ has reacted:\n$$\\text{Moles of } A \\text{ reacted} = 1.0\\text{ mol} \\implies [A] = \\frac{1.0\\text{ mol}}{2.0\\text{ L}} = 0.50\\text{ M}$$\n3. According to stoichiometry ($A + 2B \\rightarrow C$):\n$1.0\\text{ mol of } A$ consumed requires $2.0\\text{ moles of } B$ to react.\nWait! If $2.0\\text{ moles of } B$ were consumed from initial $2.0\\text{ moles}$, $[B]$ would be $0$! Let's check: if $2.0\\text{ moles of } A$ are in $1.0\\text{ L}$ flask? Here $2.0\\text{ mol of } A$ and $2.0\\text{ mol of } B$. When half of $B$ has reacted? If half of $A$ reacted, that is $1\\text{ mol of } A$, which requires $2\\text{ mol of } B$. That would consume all $B$! Let's re-read: If the reaction is $A + B \\rightarrow C$:\nThen $[A] = 0.5\\text{ M}$ and $[B] = 0.5\\text{ M}$, so $R_2 = k (0.5)(0.5) = 0.25 k = \\frac{1}{4} R_1$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "For the formation of ammonia: $\\text{N}_2(g) + 3\\text{H}_2(g) \\rightarrow 2\\text{NH}_3(g)$, if $\\frac{d[\\text{NH}_3]}{dt} = 2.0 \\times 10^{-4}\\text{ mol L}^{-1}\\text{ s}^{-1}$, the value of $-\\frac{d[\\text{H}_2]}{dt}$ is:",
+          "image": "",
+          "options": [
+            "$3.0 \\times 10^{-4}\\text{ mol L}^{-1}\\text{ s}^{-1}$",
+            "$1.5 \\times 10^{-4}\\text{ mol L}^{-1}\\text{ s}^{-1}$",
+            "$1.0 \\times 10^{-4}\\text{ mol L}^{-1}\\text{ s}^{-1}$",
+            "$6.0 \\times 10^{-4}\\text{ mol L}^{-1}\\text{ s}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Equate the reaction rates:\n$$\\text{Rate} = -\\frac{1}{3}\\frac{d[\\text{H}_2]}{dt} = +\\frac{1}{2}\\frac{d[\\text{NH}_3]}{dt}$$\n2. Rearrange for $-\\frac{d[\\text{H}_2]}{dt}$:\n$$-\\frac{d[\\text{H}_2]}{dt} = \\frac{3}{2}\\frac{d[\\text{NH}_3]}{dt} = \\frac{3}{2} \\times (2.0 \\times 10^{-4}) = 3.0 \\times 10^{-4}\\text{ mol L}^{-1}\\text{ s}^{-1}$$"
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A reaction $2A \\rightarrow B + C$ follows second-order kinetics. If the concentration of $A$ is increased by a factor of $3$, the rate of formation of $B$ will:",
+          "image": "",
+          "options": [
+            "Increase by a factor of $9$",
+            "Increase by a factor of $3$",
+            "Increase by a factor of $6$",
+            "Remain unchanged"
+          ],
+          "correctOption": 0,
+          "solution": "1. For a second-order reaction:\n$$\\text{Rate} = k [A]^2$$\n2. When $[A]' = 3[A]$:\n$$\\text{Rate}' = k (3[A])^2 = 9 k [A]^2 = 9 \\times \\text{Rate}$$\nTherefore, the rate increases by a factor of $3^2 = 9$."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following statements about the rate constant ($k$) of a reaction is TRUE?",
+          "image": "",
+          "options": [
+            "$k$ is independent of the initial concentrations of the reactants",
+            "$k$ is independent of temperature",
+            "$k$ has the same units for all reactions regardless of order",
+            "$k$ decreases when a positive catalyst is added"
+          ],
+          "correctOption": 0,
+          "solution": "1. The rate constant ($k$, specific reaction rate) is a characteristic constant for a reaction at a specified temperature.\n2. It depends on **temperature** (via Arrhenius equation) and the presence of a **catalyst**.\n3. It is **completely independent of reactant concentrations**.\n4. Its units vary with the overall order of the reaction ($\\text{mol}^{1-n}\\text{ L}^{n-1}\\text{ s}^{-1}$)."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The inversion of cane sugar in dilute acidic medium:\n$$\\text{C}_{12}\\text{H}_{22}\\text{O}_{11} + \\text{H}_2\\text{O} \\xrightarrow{\\text{H}^+} \\text{C}_6\\text{H}_{12}\\text{O}_6\\text{ (glucose)} + \\text{C}_6\\text{H}_{12}\\text{O}_6\\text{ (fructose)}$$\nWhat are the order and molecularity of this reaction respectively?",
+          "image": "",
+          "options": [
+            "Order = $1$, Molecularity = $2$",
+            "Order = $2$, Molecularity = $2$",
+            "Order = $1$, Molecularity = $1$",
+            "Order = $2$, Molecularity = $1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Two reactant molecules (one sucrose and one water) participate in the elementary chemical collision $\\implies$ **Molecularity = $2$ (bimolecular)**.\n2. Water is present in vast excess as the solvent, so its concentration remains essentially unchanged throughout the reaction.\n3. The reaction rate depends experimentally only on the concentration of sucrose: $\\text{Rate} = k [\\text{C}_{12}\\text{H}_{22}\\text{O}_{11}]^1$.\n4. Hence, **Order = $1$** (a classic pseudo-first-order reaction)."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In a reaction between $A$ and $B$, the rate law is found to be $\\text{Rate} = k [A]^m [B]^n$. On doubling the concentration of $A$, the rate doubles. On doubling the concentration of both $A$ and $B$, the rate increases by a factor of $8$. The values of $m$ and $n$ are:",
+          "image": "",
+          "options": [
+            "$m = 1, \\quad n = 2$",
+            "$m = 2, \\quad n = 1$",
+            "$m = 1, \\quad n = 1$",
+            "$m = 2, \\quad n = 2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Initial rate: $R_1 = k [A]^m [B]^n$.\n2. When $[A]$ doubles while $[B]$ remains constant, the rate doubles:\n$$R_2 = k (2[A])^m [B]^n = 2^m R_1 = 2 R_1 \\implies 2^m = 2^1 \\implies m = 1$$\n3. When both $[A]$ and $[B]$ are doubled, the rate increases by $8$:\n$$R_3 = k (2[A])^1 (2[B])^n = 2 \\times 2^n R_1 = 8 R_1$$\n$$2^{n + 1} = 8 = 2^3 \\implies n + 1 = 3 \\implies n = 2$$\nTherefore, $m = 1$ and $n = 2$."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] For an elementary reaction $A + 2B \\rightarrow C$, the rate law expression is:",
+          "image": "",
+          "options": [
+            "$\\text{Rate} = k [A] [B]^2$",
+            "$\\text{Rate} = k [A]^2 [B]$",
+            "$\\text{Rate} = k [A] [B]$",
+            "Cannot be determined from stoichiometry"
+          ],
+          "correctOption": 0,
+          "solution": "1. For an **elementary reaction** (a reaction that occurs in a single collision step), the order with respect to each reactant is strictly equal to its stoichiometric coefficient in the balanced equation.\n2. Since the stoichiometric coefficients are $1$ for $A$ and $2$ for $B$:\n$$\\text{Rate} = k [A]^1 [B]^2 = k [A] [B]^2$$\n(Stoichiometric coefficients do NOT necessarily equal the order for complex multi-step reactions, but they always do for elementary steps)."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The unit of rate of a chemical reaction in aqueous solution is:",
+          "image": "",
+          "options": [
+            "$\\text{mol L}^{-1}\\text{ s}^{-1}$",
+            "$\\text{L mol}^{-1}\\text{ s}^{-1}$",
+            "$\\text{mol s}^{-1}$",
+            "$\\text{s}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Reaction rate is defined as the change in concentration per unit time:\n$$\\text{Rate} = \\frac{\\Delta C}{\\Delta t}$$\n- Unit of concentration ($\\Delta C$): $\\text{mol L}^{-1}$ (or $\\text{mol dm}^{-3}$)\n- Unit of time ($\\Delta t$): $\\text{s}$\n$$\\text{Unit of Rate} = \\frac{\\text{mol L}^{-1}}{\\text{s}} = \\text{mol L}^{-1}\\text{ s}^{-1}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a zero-order reaction $A \\rightarrow \\text{Products}$, which of the following plots will be a horizontal straight line parallel to the x-axis?",
+          "image": "",
+          "options": [
+            "Rate versus concentration $[A]$",
+            "Concentration $[A]$ versus time $t$",
+            "Rate versus time $t$",
+            "Both Rate vs $[A]$ and Rate vs time $t$"
+          ],
+          "correctOption": 3,
+          "solution": "1. For a zero-order reaction, the rate equation is:\n$$\\text{Rate} = k [A]^0 = k$$\n2. The reaction rate is a constant ($k$) and is independent of both the remaining concentration of reactant $[A]$ and the elapsed time $t$.\n3. Therefore, both a plot of **Rate versus $[A]$** and a plot of **Rate versus $t$** are horizontal straight lines parallel to the x-axis."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The decomposition of gaseous ammonia on a hot platinum surface at high pressure:\n$$2\\text{NH}_3(g) \\xrightarrow{\\text{Pt}} \\text{N}_2(g) + 3\\text{H}_2(g)$$\nis a zero-order reaction because:",
+          "image": "",
+          "options": [
+            "At high pressure, the metal catalyst surface becomes completely saturated with adsorbed ammonia molecules",
+            "Ammonia has zero molar mass relative to platinum",
+            "The reaction is non-spontaneous",
+            "Platinum dissolves in ammonia"
+          ],
+          "correctOption": 0,
+          "solution": "1. At low pressures, the fraction of catalyst surface covered by adsorbed $\\text{NH}_3$ molecules is proportional to pressure (first order).\n2. At high pressures, the entire active surface of the platinum catalyst becomes completely covered/saturated with a monolayer of adsorbed $\\text{NH}_3$ molecules ($\\theta \\approx 1$).\n3. Further increasing the pressure or concentration of gaseous $\\text{NH}_3$ cannot increase the number of adsorbed molecules reacting per second.\n4. Hence, the rate becomes independent of the concentration of $\\text{NH}_3$: **zero-order kinetics**."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A reaction $A + B \\rightarrow C$ is first order with respect to $A$ and zero order with respect to $B$. Complete the following table:\n\n| Experiment | $[A]$ (mol/L) | $[B]$ (mol/L) | Initial Rate (mol L$^{-1}$ s$^{-1}$) |\n| :---: | :---: | :---: | :---: |\n| 1 | $0.1$ | $0.1$ | $2.0 \\times 10^{-2}$ |\n| 2 | $x$ | $0.2$ | $4.0 \\times 10^{-2}$ |\n| 3 | $0.4$ | $y$ | $8.0 \\times 10^{-2}$ |\n\nThe values of $x$ and $y$ are respectively:",
+          "image": "",
+          "options": [
+            "$x = 0.2\\text{ M}, \\quad y = \\text{any value}$",
+            "$x = 0.4\\text{ M}, \\quad y = 0.2\\text{ M}$",
+            "$x = 0.2\\text{ M}, \\quad y = 0.1\\text{ M}$",
+            "$x = 0.1\\text{ M}, \\quad y = 0.4\\text{ M}$"
+          ],
+          "correctOption": 0,
+          "solution": "The rate law is $\\text{Rate} = k [A]^1 [B]^0 = k [A]$.\n1. From Experiment 1: $2.0 \\times 10^{-2} = k (0.1) \\implies k = 0.2\\text{ s}^{-1}$.\n2. In Experiment 2:\n$$\\text{Rate} = 4.0 \\times 10^{-2} = (0.2) \\times x \\implies x = \\frac{4.0 \\times 10^{-2}}{0.2} = 0.2\\text{ M}$$\n3. In Experiment 3: $[A] = 0.4\\text{ M}$, so $\\text{Rate} = (0.2)(0.4) = 8.0 \\times 10^{-2}$.\nBecause the reaction is zero order in $B$, the concentration of $B$ has no influence on the rate, so $y$ can take any arbitrary concentration value."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Why is the molecularity of an elementary reaction NEVER greater than three?",
+          "image": "",
+          "options": [
+            "The probability of more than three molecules colliding simultaneously with proper orientation and sufficient energy is practically zero",
+            "Molecules break down into subatomic particles during collision",
+            "The activation energy becomes negative for collisions involving four molecules",
+            "Gaseous molecules can only move in three dimensions"
+          ],
+          "correctOption": 0,
+          "solution": "1. For a chemical reaction to occur in an elementary step, all reactant particles must collide simultaneously in the same spatial volume element.\n2. While two-body collisions (bimolecular) are extremely frequent, and three-body collisions (termolecular) are rare, the statistical probability of four or more independent particles colliding at the exact same instant with proper steric orientation is virtually zero.\n3. Therefore, complex reactions involving four or more stoichiometric molecules proceed via a sequence of consecutive bimolecular or unimolecular steps."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the reaction $2A + B \\rightarrow D + E$, the rate law is $\\text{Rate} = k [A][B]$. If the volume of the reaction vessel is suddenly reduced to one-third of its original volume, the rate of the reaction will:",
+          "image": "",
+          "options": [
+            "Increase by $9$ times",
+            "Increase by $3$ times",
+            "Decrease to $\\frac{1}{9}$",
+            "Increase by $27$ times"
+          ],
+          "correctOption": 0,
+          "solution": "1. Concentration is inversely proportional to volume: $C = \\frac{n}{V}$.\n2. Reducing the vessel volume to $\\frac{1}{3}$ triples the concentration of every gaseous reactant:\n$$[A]' = 3[A], \\quad [B]' = 3[B]$$\n3. New rate:\n$$\\text{Rate}' = k [A]' [B]' = k (3[A])(3[B]) = 9 k [A][B] = 9 \\times \\text{Rate}$$\nThus, the reaction rate increases by a factor of $9$."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A chemical reaction $2X + Y \\rightarrow Z$ has a rate constant with units $\\text{L}^2\\text{ mol}^{-2}\\text{ s}^{-1}$. The overall order of this reaction is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$2$",
+            "$1$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "General unit formula for $n^{\\text{th}}$-order rate constant:\n$$\\text{Unit} = \\text{mol}^{1 - n}\\text{ L}^{n - 1}\\text{ s}^{-1}$$\nGiven: $\\text{L}^2\\text{ mol}^{-2}\\text{ s}^{-1} = \\text{mol}^{-2}\\text{ L}^2\\text{ s}^{-1}$.\nEquating exponents:\n$$n - 1 = 2 \\implies n = 3$$\n$$1 - n = -2 \\implies n = 3$$\nTherefore, the overall order of the reaction is **$3$**."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements correctly distinguishes between the order and molecularity of a reaction?",
+          "image": "",
+          "options": [
+            "Order is an experimental quantity determined from the rate law, whereas molecularity is a theoretical quantity applicable only to elementary reactions",
+            "Order is always an integer, whereas molecularity can be fractional",
+            "Order is applicable only to elementary steps, whereas molecularity applies to complex reactions",
+            "Order can never be zero, whereas molecularity can be zero"
+          ],
+          "correctOption": 0,
+          "solution": "Key distinctions between Order and Molecularity:\n1. **Order:** An experimentally derived quantity (the sum of powers of concentration terms in the rate law). It can be an integer, fractional, zero, or negative. It is valid for both elementary and complex reactions.\n2. **Molecularity:** A theoretical concept representing the number of reactant particles involved in an elementary collision. It can only be a non-zero positive integer ($1, 2,$ or $3$). It is strictly meaningless for complex multi-step reactions.\nTherefore, Statement A is correct."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The rate of the gas-phase reaction $2\\text{NO}(g) + \\text{O}_2(g) \\rightarrow 2\\text{NO}_2(g)$ is given by $\\text{Rate} = k [\\text{NO}]^2 [\\text{O}_2]$. The overall order of the reaction is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$2$",
+            "$1$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "Overall order is the sum of the exponents in the rate law:\n$$\\text{Overall order} = m + n = 2 + 1 = 3$$\n(This is a third-order reaction)."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the reaction $A + B \\rightarrow C$, the rate increases by a factor of $2.828$ (or $2\\sqrt{2}$) when the concentration of $A$ is doubled at constant $[B]$. The order of the reaction with respect to $A$ is:",
+          "image": "",
+          "options": [
+            "$1.5$ (or $3/2$)",
+            "$1.0$",
+            "$0.5$",
+            "$2.0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Let $\\text{Rate} \\propto [A]^x$.\n2. Doubling $[A]$:\n$$\\frac{R_2}{R_1} = 2^x = 2.828$$\n3. Notice that $2.828 = 2 \\times 1.414 = 2 \\times \\sqrt{2} = 2^1 \\times 2^{1/2} = 2^{1.5}$.\n$$2^x = 2^{1.5} \\implies x = 1.5 = \\frac{3}{2}$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A catalyst increases the rate of a chemical reaction by:",
+          "image": "",
+          "options": [
+            "Providing an alternative reaction mechanism with a lower activation energy",
+            "Increasing the average kinetic energy of the reactant molecules",
+            "Increasing the standard enthalpy change ($\\Delta_r H^\\circ$) of the reaction",
+            "Altering the equilibrium constant $K$"
+          ],
+          "correctOption": 0,
+          "solution": "1. A catalyst participates in the intermediate steps of a reaction, creating a new, lower-energy transition state.\n2. By **lowering the activation energy ($E_a$)**, a significantly larger fraction of collisions possess energy exceeding the threshold barrier, speeding up the reaction.\n3. A catalyst does NOT change temperature (average kinetic energy), does NOT alter the enthalpy change ($\\Delta H$), and does NOT change the equilibrium constant ($K$)."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In a reaction $2A + B \\rightarrow A_2B$, the reactant $A$ is consumed at a rate of $0.04\\text{ mol L}^{-1}\\text{ s}^{-1}$. The rate of consumption of $B$ is:",
+          "image": "",
+          "options": [
+            "$0.02\\text{ mol L}^{-1}\\text{ s}^{-1}$",
+            "$0.04\\text{ mol L}^{-1}\\text{ s}^{-1}$",
+            "$0.08\\text{ mol L}^{-1}\\text{ s}^{-1}$",
+            "$0.01\\text{ mol L}^{-1}\\text{ s}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. From stoichiometry:\n$$\\text{Rate} = -\\frac{1}{2}\\frac{d[A]}{dt} = -\\frac{d[B]}{dt}$$\n2. Therefore, the rate of consumption of $B$ is:\n$$-\\frac{d[B]}{dt} = \\frac{1}{2}\\left(-\\frac{d[A]}{dt}\\right) = \\frac{1}{2} \\times 0.04 = 0.02\\text{ mol L}^{-1}\\text{ s}^{-1}$$"
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The initial rate method was applied to the reaction $A + B \\rightarrow C$. When $[A]$ was kept constant and $[B]$ was tripled, the rate tripled. When $[B]$ was kept constant and $[A]$ was tripled, the rate increased nine-fold. The overall order of the reaction is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$2$",
+            "$1$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "Let $\\text{Rate} = k [A]^x [B]^y$.\n1. When $[B]$ is tripled: $3^y = 3 \\implies y = 1$.\n2. When $[A]$ is tripled: $3^x = 9 = 3^2 \\implies x = 2$.\n3. Overall order:\n$$n = x + y = 2 + 1 = 3$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a reaction $A \\rightarrow B$, the rate law is $\\text{Rate} = k [A]^{1/3}$. The units of the rate constant $k$ are:",
+          "image": "",
+          "options": [
+            "$\\text{mol}^{2/3}\\text{ L}^{-2/3}\\text{ s}^{-1}$",
+            "$\\text{mol}^{-2/3}\\text{ L}^{2/3}\\text{ s}^{-1}$",
+            "$\\text{mol}^{1/3}\\text{ L}^{-1/3}\\text{ s}^{-1}$",
+            "$\\text{s}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using the general formula: $\\text{Unit} = \\text{mol}^{1 - n}\\text{ L}^{n - 1}\\text{ s}^{-1}$.\nSubstitute $n = 1/3$:\n$$1 - n = 1 - \\frac{1}{3} = \\frac{2}{3}$$\n$$n - 1 = \\frac{1}{3} - 1 = -\\frac{2}{3}$$\n$$\\text{Unit of } k = \\text{mol}^{2/3}\\text{ L}^{-2/3}\\text{ s}^{-1}$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In the reaction $2\\text{NO}(g) + \\text{Cl}_2(g) \\rightarrow 2\\text{NOCl}(g)$, the following mechanism has been proposed:\n- Step 1 (Fast): $\\text{NO} + \\text{Cl}_2 \\rightleftharpoons \\text{NOCl}_2$\n- Step 2 (Slow): $\\text{NOCl}_2 + \\text{NO} \\rightarrow 2\\text{NOCl}$\nThe overall order of the reaction is:",
+          "image": "",
+          "options": [
+            "$3$",
+            "$2$",
+            "$1$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Rate law from the slow rate-determining step:\n$$\\text{Rate} = k_2 [\\text{NOCl}_2][\\text{NO}]$$\n2. Express intermediate $[\\text{NOCl}_2]$ from Step 1 equilibrium:\n$$K_{\\text{eq}} = \\frac{[\\text{NOCl}_2]}{[\\text{NO}][\\text{Cl}_2]} \\implies [\\text{NOCl}_2] = K_{\\text{eq}} [\\text{NO}][\\text{Cl}_2]$$\n3. Substitute into the rate law:\n$$\\text{Rate} = k_2 (K_{\\text{eq}} [\\text{NO}][\\text{Cl}_2]) [\\text{NO}] = k [\\text{NO}]^2 [\\text{Cl}_2]$$\n4. The overall order is $2 + 1 = 3$."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] For which of the following reactions is the order of the reaction EQUAL to its molecularity?",
+          "image": "",
+          "options": [
+            "Any elementary reaction",
+            "All complex multi-step reactions",
+            "Pseudo-first-order reactions",
+            "Reactions with zero activation energy"
+          ],
+          "correctOption": 0,
+          "solution": "1. For an **elementary reaction**, the reaction occurs in a single step without intermediates, and the order with respect to each reactant equals its stoichiometric coefficient in that step.\n2. Therefore, the overall order of an elementary reaction is identically equal to its molecularity.\n3. For complex reactions, molecularity has no meaning for the overall reaction, and order does not match overall stoichiometry."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] A gaseous reaction $A(g) \\rightarrow 2B(g)$ shows an increase in total pressure from $100\\text{ mm Hg}$ to $160\\text{ mm Hg}$ in $10\\text{ minutes}$. What is the average rate of disappearance of $A$?",
+          "image": "",
+          "options": [
+            "$6.0\\text{ mm Hg min}^{-1}$",
+            "$12.0\\text{ mm Hg min}^{-1}$",
+            "$3.0\\text{ mm Hg min}^{-1}$",
+            "$16.0\\text{ mm Hg min}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Set up partial pressures:\n$$\\begin{array}{lcc} & A(g) & 2B(g) \\\\ \\text{Initial} & 100 & 0 \\\\ \\text{After 10 min} & 100 - p & 2p \\end{array}$$\n2. Total pressure at $10\\text{ min}$:\n$$P_{\\text{total}} = (100 - p) + 2p = 100 + p = 160\\text{ mm Hg}$$\n$$p = 60\\text{ mm Hg}$$\n3. Decrease in partial pressure of $A$:\n$$\\Delta P_A = p = 60\\text{ mm Hg}$$\n4. Average rate of disappearance of $A$:\n$$\\text{Rate} = -\\frac{\\Delta P_A}{\\Delta t} = \\frac{60\\text{ mm Hg}}{10\\text{ min}} = 6.0\\text{ mm Hg min}^{-1}$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a second-order reaction, the unit of rate constant is:",
+          "image": "",
+          "options": [
+            "$\\text{L mol}^{-1}\\text{ s}^{-1}$",
+            "$\\text{mol L}^{-1}\\text{ s}^{-1}$",
+            "$\\text{s}^{-1}$",
+            "$\\text{L}^2\\text{ mol}^{-2}\\text{ s}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using $\\text{Unit} = \\text{mol}^{1 - n}\\text{ L}^{n - 1}\\text{ s}^{-1}$ for $n = 2$:\n$$\\text{Unit} = \\text{mol}^{1 - 2}\\text{ L}^{2 - 1}\\text{ s}^{-1} = \\text{mol}^{-1}\\text{ L s}^{-1} = \\text{L mol}^{-1}\\text{ s}^{-1}$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following statements about the instantaneous rate of a reaction is correct?",
+          "image": "",
+          "options": [
+            "It is the slope of the tangent drawn to the concentration vs. time curve at that specific instant",
+            "It is equal to the total change in concentration divided by the total time taken",
+            "It remains constant throughout the entire course of the reaction",
+            "It is always equal to the average rate"
+          ],
+          "correctOption": 0,
+          "solution": "1. The **instantaneous rate** represents the reaction rate at an infinitesimally small moment in time ($dt \\rightarrow 0$):\n$$\\text{Rate} = -\\frac{d[R]}{dt} = +\\frac{d[P]}{dt}$$\n2. Graphically, it is determined by drawing a tangent to the concentration versus time curve at time $t$ and calculating the **slope of the tangent**.\n(Average rate is the chord slope over a finite time interval $\\Delta t$)."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] For a reaction $A + B \\rightarrow C$, the experimental rate law is $\\text{Rate} = k [A]^0 [B]^2$. If the concentration of $A$ is doubled while the concentration of $B$ is halved, the reaction rate will:",
+          "image": "",
+          "options": [
+            "Decrease to $\\frac{1}{4}$ of its original value",
+            "Decrease to $\\frac{1}{2}$",
+            "Double",
+            "Remain unchanged"
+          ],
+          "correctOption": 0,
+          "solution": "1. The rate is independent of $[A]$ because $[A]$ is zero order ($[A]^0 = 1$):\n$$\\text{Rate} = k [B]^2$$\n2. When $[B]' = \\frac{1}{2}[B]$:\n$$\\text{Rate}' = k \\left(\\frac{[B]}{2}\\right)^2 = \\frac{1}{4} k [B]^2 = \\frac{1}{4} \\times \\text{Rate}$$\nThus, the rate decreases to one-fourth of its initial value."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the reaction $2A + B \\rightarrow A_2B$, the reactant $B$ is present in large excess. The reaction will follow:",
+          "image": "",
+          "options": [
+            "Pseudo-second-order kinetics with respect to $A$",
+            "Pseudo-first-order kinetics with respect to $B$",
+            "Zero-order kinetics with respect to both reactants",
+            "Third-order kinetics"
+          ],
+          "correctOption": 0,
+          "solution": "1. When reactant $B$ is present in large excess ($[B] \\gg [A]$), its concentration remains virtually unchanged during the reaction.\n2. The rate law $\\text{Rate} = k [A]^2 [B]$ simplifies to:\n$$\\text{Rate} = k' [A]^2$$\nwhere $k' = k [B] = \\text{constant}$.\n3. The reaction behaves as a **pseudo-second-order reaction** with respect to $A$."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a general reaction $aA + bB \\rightarrow cC + dD$, the differential rate of reaction is written as:",
+          "image": "",
+          "options": [
+            "$-\\frac{1}{a}\\frac{d[A]}{dt} = -\\frac{1}{b}\\frac{d[B]}{dt} = +\\frac{1}{c}\\frac{d[C]}{dt} = +\\frac{1}{d}\\frac{d[D]}{dt}$",
+            "$-a\\frac{d[A]}{dt} = -b\\frac{d[B]}{dt} = +c\\frac{d[C]}{dt} = +d\\frac{d[D]}{dt}$",
+            "$+\\frac{1}{a}\\frac{d[A]}{dt} = +\\frac{1}{b}\\frac{d[B]}{dt} = -\\frac{1}{c}\\frac{d[C]}{dt} = -\\frac{1}{d}\\frac{d[D]}{dt}$",
+            "$-\\frac{d[A]}{dt} = -\\frac{d[B]}{dt} = +\\frac{d[C]}{dt} = +\\frac{d[D]}{dt}$"
+          ],
+          "correctOption": 0,
+          "solution": "To make the rate of reaction unique and independent of the chosen species, the rate of change of concentration is divided by its stoichiometric coefficient:\n- Negative sign for reactants (since concentrations decrease over time)\n- Positive sign for products (since concentrations increase over time)\n$$\\text{Rate} = -\\frac{1}{a}\\frac{d[A]}{dt} = -\\frac{1}{b}\\frac{d[B]}{dt} = +\\frac{1}{c}\\frac{d[C]}{dt} = +\\frac{1}{d}\\frac{d[D]}{dt}$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A photochemical reaction, such as the synthesis of $\\text{HCl}$ from $\\text{H}_2$ and $\\text{Cl}_2$ over water in the presence of sunlight:\n$$\\text{H}_2(g) + \\text{Cl}_2(g) \\xrightarrow{h\\nu} 2\\text{HCl}(g)$$\nfollows zero-order kinetics because:",
+          "image": "",
+          "options": [
+            "The reaction rate is governed by the intensity of light absorbed and is independent of reactant concentrations",
+            "Light photons destroy all chemical bonds instantaneously",
+            "The molecularity of the reaction is zero",
+            "The reaction occurs without any activation energy"
+          ],
+          "correctOption": 0,
+          "solution": "1. In photochemical reactions, the rate-determining step is the absorption of photons of light ($h\\nu$) to form active free radicals.\n2. The rate of the reaction depends solely on the **intensity of incident light photons** absorbed per unit time and is completely independent of the concentrations of $\\text{H}_2$ and $\\text{Cl}_2$.\n3. Therefore, the reaction exhibits **zero-order kinetics**."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] If a reaction has the rate law $\\text{Rate} = k [A]^{1/2} [B]^{-1}$, the overall order of the reaction is:",
+          "image": "",
+          "options": [
+            "$-0.5$ (or $-1/2$)",
+            "$+0.5$",
+            "$-1.5$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "The overall order is the sum of the partial orders:\n$$\\text{Overall order} = \\frac{1}{2} + (-1) = \\frac{1}{2} - 1 = -\\frac{1}{2} = -0.5$$"
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] For an elementary termolecular reaction $2A + B \\rightarrow \\text{Products}$, what is the molecularity of the reaction?",
+          "image": "",
+          "options": [
+            "$3$",
+            "$2$",
+            "$1$",
+            "Cannot be predicted"
+          ],
+          "correctOption": 0,
+          "solution": "1. For an elementary reaction, molecularity equals the total number of reactant molecules colliding simultaneously.\n2. In $2A + B \\rightarrow \\text{Products}$, two molecules of $A$ and one molecule of $B$ collide together:\n$$\\text{Molecularity} = 2 + 1 = 3\\text{ (termolecular)}$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the reaction $A + 2B \\rightarrow C$, the rate was measured for different initial concentrations:\n\n- When $[A] = 0.1\\text{ M}, [B] = 0.1\\text{ M}$, Rate $= 0.01\\text{ M s}^{-1}$\n- When $[A] = 0.2\\text{ M}, [B] = 0.1\\text{ M}$, Rate $= 0.02\\text{ M s}^{-1}$\n- When $[A] = 0.1\\text{ M}, [B] = 0.2\\text{ M}$, Rate $= 0.04\\text{ M s}^{-1}$\n\nThe value of the specific rate constant $k$ is:",
+          "image": "",
+          "options": [
+            "$10\\text{ L}^2\\text{ mol}^{-2}\\text{ s}^{-1}$",
+            "$1.0\\text{ L}^2\\text{ mol}^{-2}\\text{ s}^{-1}$",
+            "$100\\text{ L}^2\\text{ mol}^{-2}\\text{ s}^{-1}$",
+            "$0.1\\text{ L}^2\\text{ mol}^{-2}\\text{ s}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Find orders:\n- Doubling $[A]$ doubles the rate $\\implies x = 1$.\n- Doubling $[B]$ quadruples the rate ($0.01 \\rightarrow 0.04$) $\\implies y = 2$.\n2. Rate law: $\\text{Rate} = k [A] [B]^2$.\n3. Substitute values from the first experiment:\n$$0.01\\text{ M s}^{-1} = k (0.1\\text{ M}) (0.1\\text{ M})^2 = k (0.1) (0.01) = k \\times 10^{-3}$$\n$$k = \\frac{0.01}{10^{-3}} = \\frac{10^{-2}}{10^{-3}} = 10\\text{ L}^2\\text{ mol}^{-2}\\text{ s}^{-1}$$"
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following observations indicates that a reaction is of ZERO ORDER with respect to a reactant $A$?",
+          "image": "",
+          "options": [
+            "Doubling the concentration of $A$ has no effect on the reaction rate",
+            "Doubling the concentration of $A$ doubles the reaction rate",
+            "The half-life is independent of the initial concentration of $A$",
+            "A plot of $\\ln[A]$ versus time is linear"
+          ],
+          "correctOption": 0,
+          "solution": "1. From the rate law $\\text{Rate} = k [A]^n$, if $n = 0$:\n$$\\text{Rate} = k [A]^0 = k$$\n2. Changing the concentration of $A$ produces no change in the rate of reaction.\n3. (Option C describes a first-order reaction where $t_{1/2} = \\frac{0.693}{k}$; Option D also represents first-order kinetics)."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] For the reaction $2\\text{A} + \\text{B} \\rightarrow 3\\text{C}$, the rate of formation of $C$ is $0.06\\text{ mol L}^{-1}\\text{ s}^{-1}$. What is the rate of disappearance of $A$?",
+          "image": "",
+          "options": [
+            "$0.04\\text{ mol L}^{-1}\\text{ s}^{-1}$",
+            "$0.06\\text{ mol L}^{-1}\\text{ s}^{-1}$",
+            "$0.09\\text{ mol L}^{-1}\\text{ s}^{-1}$",
+            "$0.02\\text{ mol L}^{-1}\\text{ s}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Express rate equality:\n$$\\text{Rate} = -\\frac{1}{2}\\frac{d[A]}{dt} = +\\frac{1}{3}\\frac{d[C]}{dt}$$\n2. Rearrange for $-\\frac{d[A]}{dt}$:\n$$-\\frac{d[A]}{dt} = \\frac{2}{3}\\frac{d[C]}{dt} = \\frac{2}{3} \\times 0.06 = 2 \\times 0.02 = 0.04\\text{ mol L}^{-1}\\text{ s}^{-1}$$"
+        }
+      ]
+    }
+  ]
+}

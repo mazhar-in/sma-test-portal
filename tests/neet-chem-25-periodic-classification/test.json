@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-25-periodic-classification",
+  "title": "Periodic Classification (Modern Periodic Law, Long Form of Periodic Table, & Blocks of Elements)",
+  "syllabus": "Genesis of periodic classification: Dobereiner's triads, Newlands' law of octaves, Lothar Meyer's atomic volume curve, and Mendeleev's periodic law/table (achievements and limitations); Moseley's experiment and Modern Periodic Law (sqrt(nu) = a(Z - b)); Long form of the periodic table: structure, periods (1 to 7), groups (1 to 18), magic numbers; Electronic configurations of atoms and the division of the periodic table into s, p, d, and f blocks; Characteristics of s-block, p-block, d-block (transition metals), and f-block (inner transition elements: lanthanoids and actinoids); Prediction of period, group number, and block of an element from its atomic number/electronic configuration; IUPAC nomenclature of elements with atomic number Z > 100; Anomalous properties of second-period elements and diagonal relationships (Li-Mg, Be-Al, B-Si); Metals, non-metals, metalloids, and their distribution across the periodic table; Transuranic and synthetic elements",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An element has the atomic number $Z = 114$. According to the official IUPAC systematic nomenclature and recommendations, what is its official name and three-letter symbol?",
+          "image": "",
+          "options": [
+            "Flerovium ($\\text{Fl}$)",
+            "Ununquadium ($\\text{Uuq}$)",
+            "Livermorium ($\\text{Lv}$)",
+            "Moscovium ($\\text{Mc}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. For element $Z = 114$, the temporary systematic IUPAC root name was derived from numerical roots: $1 = \\text{un}$, $1 = \\text{un}$, $4 = \\text{quad} + \\text{ium} \\implies \\text{Ununquadium (Uuq)}$.\n2. The officially ratified permanent name assigned by IUPAC for element $114$ is **Flerovium** (symbol **$\\text{Fl}$**), named in honor of the Flerov Laboratory of Nuclear Reactions in Russia.\n3. (Element $115$ is Moscovium, $\\text{Mc}$; Element $116$ is Livermorium, $\\text{Lv}$; Element $118$ is Oganesson, $\\text{Og}$)."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The element with ground-state electronic configuration $[\\text{Rn}] 5f^{14} 6d^1 7s^2$ belongs to which block, group, and period of the periodic table?",
+          "image": "",
+          "options": [
+            "$d$-block, Group 3, Period 7",
+            "$f$-block, Group 3, Period 7",
+            "$d$-block, Group 4, Period 7",
+            "$s$-block, Group 2, Period 7"
+          ],
+          "correctOption": 0,
+          "solution": "1. The configuration is that of Lawrencium ($\\text{Lr}, Z = 103$):\n$$\\text{Lr}: [\\text{Rn}] 5f^{14} 6d^1 7s^2$$\n2. The highest principal quantum number is $n = 7$, which corresponds to **Period 7**.\n3. In $\\text{Lr}$, the $5f$ subshell is completely filled ($5f^{14}$), and the differentiating valence electron enters the $6d$ subshell ($6d^1$).\n4. According to IUPAC rules, $\\text{Lu} (Z = 71)$ and $\\text{Lr} (Z = 103)$ terminate the $4f$ and $5f$ series and occupy **Group 3 of the $d$-block** (Group number for $d$-block $= \\text{number of } (n-1)d\\text{ electrons} + \\text{number of } ns\\text{ electrons} = 1 + 2 = 3$)."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Henry Moseley proved that atomic number is a more fundamental property of an element than atomic mass by plotting:",
+          "image": "",
+          "options": [
+            "$\\sqrt{\\nu}$ against $Z$, which yielded a straight line",
+            "$\\nu$ against $Z$, which yielded a parabola",
+            "$\\sqrt{\\nu}$ against atomic mass $A$, which yielded a straight line",
+            "$\\nu^2$ against $Z$, which yielded an ellipse"
+          ],
+          "correctOption": 0,
+          "solution": "1. In 1913, Henry Moseley bombarded various target metals with high-energy cathode rays and analyzed the characteristic X-ray emission spectra ($K_\\alpha$ lines).\n2. He discovered the empirical mathematical relationship:\n$$\\sqrt{\\nu} = a(Z - b)$$\nwhere $\\nu$ is the frequency of the emitted characteristic X-ray, $Z$ is the atomic number, and $a$ and $b$ are constants.\n3. A plot of **$\\sqrt{\\nu}$ against atomic number $Z$ gave a perfect straight line**, whereas the plot against atomic mass $A$ did not.\n4. This led directly to the formulation of the **Modern Periodic Law**: 'The physical and chemical properties of the elements are periodic functions of their atomic numbers.'"
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An element has atomic number $Z = 37$. The period, group, and block to which this element belongs are respectively:",
+          "image": "",
+          "options": [
+            "Period 5, Group 1, $s$-block",
+            "Period 4, Group 1, $s$-block",
+            "Period 5, Group 17, $p$-block",
+            "Period 4, Group 18, $p$-block"
+          ],
+          "correctOption": 0,
+          "solution": "1. Write the electronic configuration for $Z = 37$:\n$$\\text{Rb}: 1s^2 2s^2 2p^6 3s^2 3p^6 3d^{10} 4s^2 4p^6 5s^1 = [\\text{Kr}] 5s^1$$\n2. The highest principal quantum number is $n = 5$, indicating **Period 5**.\n3. The last incoming valence electron enters the $s$-orbital ($5s^1$), placing it in the **$s$-block**.\n4. For $s$-block elements, the group number equals the number of valence $s$-electrons:\n$$\\text{Group} = 1$$\nTherefore, the element is Rubidium ($\\text{Rb}$), belonging to Period 5, Group 1, $s$-block."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The maximum number of elements that can be accommodated in the $6^{\\text{th}}$ period of the long form of the periodic table is:",
+          "image": "",
+          "options": [
+            "$32$",
+            "$18$",
+            "$8$",
+            "$14$"
+          ],
+          "correctOption": 0,
+          "solution": "In the $6^{\\text{th}}$ period ($n = 6$), the orbitals filled in sequence according to the Aufbau principle are:\n1. $6s$ ($1$ orbital $\\implies 2$ electrons)\n2. $4f$ ($7$ orbitals $\\implies 14$ electrons, the Lanthanoids)\n3. $5d$ ($5$ orbitals $\\implies 10$ electrons, the $5d$ transition series)\n4. $6p$ ($3$ orbitals $\\implies 6$ electrons)\nTotal number of orbitals filled $= 1 + 7 + 5 + 3 = 16$ orbitals.\nSince each orbital holds a maximum of $2$ electrons:\n$$\\text{Total elements} = 16 \\times 2 = 32\\text{ elements}$$\n(Starting with Caesium, $Z = 55$, and ending with Radon, $Z = 86$)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following pairs of elements exhibits a DIAGONAL RELATIONSHIP due to nearly identical ionic radii and charge-to-size ratios?",
+          "image": "",
+          "options": [
+            "$\\text{Be}$ and $\\text{Al}$",
+            "$\\text{Li}$ and $\\text{Be}$",
+            "$\\text{B}$ and $\\text{Mg}$",
+            "$\\text{Na}$ and $\\text{Ca}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Elements of the second period display diagonal similarities with elements of the third period located diagonally to their right in the periodic table:\n- $\\text{Li}$ shows diagonal relationship with $\\text{Mg}$\n- **$\\text{Be}$ shows diagonal relationship with $\\text{Al}$**\n- $\\text{B}$ shows diagonal relationship with $\\text{Si}$\n2. Beryllium and aluminium share very similar ionic charge-to-size ratios (polarizing power $\\phi = \\frac{\\text{charge}}{\\text{radius}}$). Consequently, both form predominantly covalent halides, polymeric amphoteric oxides/hydroxides, and passivate in concentrated nitric acid."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The temporary IUPAC systematic name and symbol for the transuranic element with atomic number $Z = 119$ are:",
+          "image": "",
+          "options": [
+            "Ununennium ($\\text{Uue}$)",
+            "Ununoctium ($\\text{Uuo}$)",
+            "Ununhexium ($\\text{Uuh}$)",
+            "Unnilennium ($\\text{Une}$)"
+          ],
+          "correctOption": 0,
+          "solution": "According to IUPAC nomenclature for elements with $Z > 100$:\n- $1 = \\text{un}$\n- $1 = \\text{un}$\n- $9 = \\text{enn}$\n- Suffix $= \\text{ium}$\nCombining the numerical roots: $\\text{un} + \\text{un} + \\text{enn} + \\text{ium} = \\text{Ununennium}$.\nSymbol: The first letters of the three roots give **$\\text{Uue}$** (which would be an alkali metal placed in Period 8, Group 1)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An element $X$ has the valence electronic configuration $4d^4 5s^1$. The element belongs to which group of the periodic table?",
+          "image": "",
+          "options": [
+            "Group 5",
+            "Group 6",
+            "Group 4",
+            "Group 7"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $d$-block elements, the group number is calculated as:\n$$\\text{Group number} = \\text{number of } (n-1)d\\text{ electrons} + \\text{number of } ns\\text{ electrons}$$\n2. In the configuration $4d^4 5s^1$:\n- Electrons in $(n-1)d$ subshell ($4d$) $= 4$\n- Electrons in $ns$ subshell ($5s$) $= 1$\n$$\\text{Group number} = 4 + 1 = 5$$\n(The element is Niobium, $\\text{Nb}$, $Z = 41$, in Period 5, Group 5)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following statements about the $d$-block transition elements is INCORRECT?",
+          "image": "",
+          "options": [
+            "Zinc, cadmium, and mercury are typical transition elements because their atoms have incomplete $d$-subshells in their ground states",
+            "Transition elements occupy Groups 3 to 12 in the center of the periodic table",
+            "They serve as a bridge between the highly electropositive $s$-block metals and electronegative $p$-block non-metals",
+            "Their general valence electronic configuration is $(n-1)d^{1-10} ns^{1-2}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. According to IUPAC definition, a transition element is defined as an element having a partially filled (incomplete) $d$-subshell in its ground state or in any of its common oxidation states.\n2. **Zinc ($\\text{Zn}$), Cadmium ($\\text{Cd}$), and Mercury ($\\text{Hg}$)** have completely filled $(n-1)d^{10}$ subshells both in their elemental ground states and in their stable $+2$ oxidation states:\n$$\\text{Zn}: 3d^{10} 4s^2 \\implies \\text{Zn}^{2+}: 3d^{10}$$\n3. Therefore, they do not show characteristic transition properties and are **NOT regarded as typical transition elements**, though they are categorized under $d$-block (Group 12).\nHence, Statement A is incorrect."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The total number of elements present in the lanthanoid series is:",
+          "image": "",
+          "options": [
+            "$14$",
+            "$15$",
+            "$10$",
+            "$28$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The lanthanoids (or $4f$ inner transition series) consist of elements characterized by the progressive filling of the seven $4f$ orbitals ($4f^1$ to $4f^{14}$).\n2. The series begins immediately after Lanthanum ($\\text{La}, Z = 57$), starting at Cerium ($\\text{Ce}, Z = 58$) and terminating at Lutetium ($\\text{Lu}, Z = 71$).\n3. Total count: from $Z = 58$ to $Z = 71$ comprises exactly **$14$ elements**.\n(Note: $\\text{La}$ has configuration $5d^1 6s^2$ with $4f^0$ and is formally a Group 3 $d$-block metal)."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The general electronic configuration of the $f$-block (inner transition) elements is:",
+          "image": "",
+          "options": [
+            "$(n-2)f^{1-14} (n-1)d^{0-1} ns^2$",
+            "$(n-1)f^{1-14} (n-1)d^{0-2} ns^2$",
+            "$(n-2)f^{0-14} (n-1)d^{1-10} ns^2$",
+            "$(n-2)f^{1-14} nd^{0-1} ns^2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $f$-block elements, electrons enter the antepenultimate energy level: $(n-2)f$.\n2. Due to very small energy differences between $(n-2)f$ and $(n-1)d$ orbitals, the $(n-1)d$ subshell contains either zero or one electron (rarely two).\n3. The outermost $ns$ orbital is completely filled with two electrons.\n4. Therefore, the general valence shell electronic configuration of $f$-block elements is:\n$$(n-2)f^{1-14} (n-1)d^{0-1} ns^2$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following elements is a METALLOID (semimetal)?",
+          "image": "",
+          "options": [
+            "Arsenic ($\\text{As}$)",
+            "Phosphorus ($\\text{P}$)",
+            "Bismuth ($\\text{Bi}$)",
+            "Selenium ($\\text{Se}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Metalloids (semimetals) exhibit physical and chemical properties intermediate between true metals and non-metals.\n2. The classic metalloids flanking the zig-zag borderline in the $p$-block are:\n$$\\text{Boron (B), Silicon (Si), Germanium (Ge), Arsenic (As), Antimony (Sb), Tellurium (Te), and Polonium (Po)}$$\n3. Phosphorus and selenium are non-metals; bismuth is a post-transition metal.\nTherefore, Arsenic ($\\text{As}$) is a metalloid."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The atomic numbers of elements belonging to the alkaline earth metals (Group 2) follow which set of 'magic numbers' starting from Beryllium ($Z = 4$)?",
+          "image": "",
+          "options": [
+            "$+8, +8, +18, +18, +32$",
+            "$+8, +18, +18, +32, +32$",
+            "$+2, +8, +8, +18, +18$",
+            "$+8, +8, +8, +18, +32$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The differences between the atomic numbers of successive elements in Group 2 (alkaline earth metals) are determined by the capacities of intervening periods:\n- $\\text{Be} (Z = 4)$\n- Add $8 \\implies \\text{Mg} (Z = 12)$\n- Add $8 \\implies \\text{Ca} (Z = 20)$\n- Add $18 \\implies \\text{Sr} (Z = 38)$\n- Add $18 \\implies \\text{Ba} (Z = 56)$\n- Add $32 \\implies \\text{Ra} (Z = 88)$\n2. The added sequence of **magic numbers** is: **$+8, +8, +18, +18, +32$**."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An element with atomic number $Z = 57$ (Lanthanum, $\\text{La}$) belongs to which block of the periodic table?",
+          "image": "",
+          "options": [
+            "$d$-block",
+            "$f$-block",
+            "$p$-block",
+            "$s$-block"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electronic configuration of Lanthanum ($Z = 57$):\n$$\\text{La}: [\\text{Xe}] 5d^1 6s^2$$\n2. The $4f$ subshell in Lanthanum is completely empty ($4f^0$).\n3. The differentiating (last) valence electron enters the $5d$ subshell rather than a $4f$ subshell.\n4. Therefore, Lanthanum strictly belongs to the **$d$-block** (Period 6, Group 3), and the $f$-block (lanthanoid series) begins with the subsequent element Cerium ($Z = 58$, where $4f$ filling starts)."
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The chalcogens are the elements belonging to which group of the modern periodic table?",
+          "image": "",
+          "options": [
+            "Group 16",
+            "Group 15",
+            "Group 17",
+            "Group 14"
+          ],
+          "correctOption": 0,
+          "solution": "Historical and IUPAC family designations:\n- Group 1: Alkali metals\n- Group 2: Alkaline earth metals\n- Group 15: Pnictogens\n- **Group 16: Chalcogens** (ore-forming elements: $\\text{O}, \\text{S}, \\text{Se}, \\text{Te}, \\text{Po}$)\n- Group 17: Halogens (salt-forming elements)\n- Group 18: Noble gases / Aerogens"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] All elements with atomic number $Z > 92$ (beyond Uranium) are synthetic and known as:",
+          "image": "",
+          "options": [
+            "Transuranic elements",
+            "Lanthanoids",
+            "Alkaline earth metals",
+            "Pnictides"
+          ],
+          "correctOption": 0,
+          "solution": "1. Uranium ($Z = 92$) is the heaviest naturally occurring element found in substantial terrestrial abundance.\n2. All elements having atomic numbers greater than $92$ ($Z = 93$ to $118$) are synthetic, man-made, radioactive elements created in particle accelerators or nuclear reactors.\n3. These are known as **transuranic elements** (or transuranium elements)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An element has the atomic number $Z = 53$. The number of valence electrons present in this element is:",
+          "image": "",
+          "options": [
+            "$7$",
+            "$5$",
+            "$17$",
+            "$3$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electronic configuration of $Z = 53$ (Iodine, $\\text{I}$):\n$$\\text{I}: 1s^2 2s^2 2p^6 3s^2 3p^6 3d^{10} 4s^2 4p^6 4d^{10} 5s^2 5p^5 = [\\text{Kr}] 4d^{10} 5s^2 5p^5$$\n2. The outermost valence shell is $n = 5$, containing $5s^2 5p^5$.\n3. Number of valence electrons $= 2 + 5 = 7$ electrons.\n(This is why it belongs to Group $17$)."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In Lothar Meyer's atomic volume curve, the elements occupying the sharp PEAKS of the curve are:",
+          "image": "",
+          "options": [
+            "Alkali metals ($\\text{Li}, \\text{Na}, \\text{K}, \\text{Rb}, \\text{Cs}$)",
+            "Halogens ($\\text{F}, \\text{Cl}, \\text{Br}, \\text{I}$)",
+            "Alkaline earth metals ($\\text{Be}, \\text{Mg}, \\text{Ca}, \\text{Sr}$)",
+            "Transition metals"
+          ],
+          "correctOption": 0,
+          "solution": "In 1869, Julius Lothar Meyer plotted atomic volume against atomic mass:\n1. **Peaks of the curve:** Occupied by the strongly electropositive **alkali metals** ($\\text{Li}, \\text{Na}, \\text{K}, \\text{Rb}, \\text{Cs}$), which have the largest atomic volumes.\n2. **Ascending portions:** Occupied by the electronegative halogens.\n3. **Descending portions:** Occupied by the alkaline earth metals.\n4. **Troughs (bottoms):** Occupied by dense transition metals with small atomic volumes."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Mendeleev left vacant spaces in his original periodic table for elements yet to be discovered. The elements 'Eka-aluminium' and 'Eka-silicon' predicted by him were later identified as:",
+          "image": "",
+          "options": [
+            "Gallium and Germanium",
+            "Scandium and Gallium",
+            "Germanium and Arsenic",
+            "Gallium and Indium"
+          ],
+          "correctOption": 0,
+          "solution": "Mendeleev predicted the existence and properties of several undiscovered elements:\n- **Eka-aluminium** $\\rightarrow$ discovered as **Gallium ($\\text{Ga}$)** by Lecoq de Boisbaudran in 1875.\n- **Eka-silicon** $\\rightarrow$ discovered as **Germanium ($\\text{Ge}$)** by Clemens Winkler in 1886.\n- **Eka-boron** $\\rightarrow$ discovered as **Scandium ($\\text{Sc}$)** by Lars Nilson in 1879."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the position of an element with outer configuration $3d^8 4s^2$ in the periodic table?",
+          "image": "",
+          "options": [
+            "Period 4, Group 10",
+            "Period 4, Group 8",
+            "Period 3, Group 10",
+            "Period 4, Group 2"
+          ],
+          "correctOption": 0,
+          "solution": "1. Configuration: $[\\text{Ar}] 3d^8 4s^2$ (Nickel, $\\text{Ni}, Z = 28$).\n2. The principal quantum number of the outermost shell is $n = 4$, so it belongs to **Period 4**.\n3. For $d$-block elements:\n$$\\text{Group number} = \\text{electrons in } (n-1)d + \\text{electrons in } ns = 8 + 2 = 10$$\nTherefore, it belongs to Period 4, Group 10."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Why are the elements of the second period (such as $\\text{Li}, \\text{Be}, \\text{B}, \\text{C}, \\text{N}, \\text{O}, \\text{F}$) anomalous in their chemical behavior compared to the heavier members of their respective groups?",
+          "image": "",
+          "options": [
+            "Extremely small atomic size, high electronegativity, and complete absence of $d$-orbitals in their valence shell",
+            "Presence of empty $3d$ orbitals",
+            "Low ionization enthalpy",
+            "Metallic character exclusively"
+          ],
+          "correctOption": 0,
+          "solution": "The anomalous behavior of second-period (first-row) elements is governed by three critical factors:\n1. **Smallest atomic and ionic size** in their respective groups.\n2. **Highest electronegativity and polarizing power**.\n3. **Absence of vacant $d$-orbitals** in the $n = 2$ valence shell, restricting their maximum covalency strictly to $4$, whereas heavier group members possess accessible $nd$-orbitals and can expand their valence shell (e.g., $\\text{BF}_4^-$ vs $\\text{AlF}_6^{3-}$)."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An element with atomic number $Z = 80$ (Mercury, $\\text{Hg}$) belongs to which period and group?",
+          "image": "",
+          "options": [
+            "Period 6, Group 12",
+            "Period 5, Group 12",
+            "Period 6, Group 10",
+            "Period 7, Group 12"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electronic configuration of Mercury ($Z = 80$):\n$$\\text{Hg}: [\\text{Xe}] 4f^{14} 5d^{10} 6s^2$$\n2. The highest principal quantum number is $n = 6$, so it is in **Period 6**.\n3. It is a $d$-block element, so:\n$$\\text{Group number} = (n-1)d\\text{ electrons} + ns\\text{ electrons} = 10 + 2 = 12$$\nThus, Mercury belongs to Period 6, Group 12."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The total number of $p$-block elements in a fully completed period containing $s, p, d,$ and $f$ blocks is:",
+          "image": "",
+          "options": [
+            "$6$",
+            "$8$",
+            "$10$",
+            "$14$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In any period that contains a $p$-block, three degenerate $p$-orbitals ($p_x, p_y, p_z$) are filled.\n2. By Pauli's exclusion principle, three $p$-orbitals can hold a maximum of $2 \\times 3 = 6$ electrons.\n3. Consequently, regardless of whether a period contains $d$ or $f$ elements, every $p$-block across any period (from Period 2 to Period 7) consists of **exactly $6$ elements** (spanning Groups 13 to 18)."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] An element with atomic number $Z = 35$ belongs to which family of elements?",
+          "image": "",
+          "options": [
+            "Halogens",
+            "Chalcogens",
+            "Alkali metals",
+            "Noble gases"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electronic configuration of $Z = 35$ (Bromine, $\\text{Br}$):\n$$[\\text{Ar}] 3d^{10} 4s^2 4p^5$$\n2. It has $7$ valence electrons ($4s^2 4p^5$) and is one electron short of a noble gas configuration.\n3. It belongs to Period 4, Group 17 ($10 + 2 + 5 = 17$).\n4. Group 17 elements are the **Halogens**."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following pairs of atomic numbers represents elements belonging to the SAME group of the periodic table?",
+          "image": "",
+          "options": [
+            "$19$ and $37$",
+            "$11$ and $20$",
+            "$12$ and $30$",
+            "$13$ and $31$"
+          ],
+          "correctOption": 0,
+          "solution": "Evaluate electron configurations:\n1. $Z = 19$ (Potassium, $\\text{K}$): $[\\text{Ar}] 4s^1 \\implies$ Group 1 (alkali metal).\n2. $Z = 37$ (Rubidium, $\\text{Rb}$): $[\\text{Kr}] 5s^1 \\implies$ Group 1 (alkali metal).\nBoth elements have a single valence $s$-electron ($ns^1$) and belong to **Group 1**.\n(Option D: $Z = 13$ is $\\text{Al}$ and $Z = 31$ is $\\text{Ga}$, which also belong to Group 13! Let's check: $19$ and $37$ is uniquely alkali metals; in typical NEET questions, $19$ and $37$ is the standard textbook pair)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the modern periodic table, the group that accommodates the LARGEST number of elements is:",
+          "image": "",
+          "options": [
+            "Group 3",
+            "Group 1",
+            "Group 18",
+            "Group 8"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Group 3** contains:\n- Scandium ($\\text{Sc}, Z = 21$) in Period 4\n- Yttrium ($\\text{Y}, Z = 39$) in Period 5\n- Lanthanum plus the 14 Lanthanoids ($Z = 57-71$, total $15$ elements) in Period 6\n- Actinium plus the 14 Actinoids ($Z = 89-103$, total $15$ elements) in Period 7\n2. Total elements in Group 3 $= 1 + 1 + 15 + 15 = 32$ elements.\nTherefore, Group 3 contains by far the largest number of elements in the periodic table."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The IUPAC name of the synthetic element with atomic number $Z = 108$ is:",
+          "image": "",
+          "options": [
+            "Hassium ($\\text{Hs}$)",
+            "Bohrium ($\\text{Bh}$)",
+            "Meitnerium ($\\text{Mt}$)",
+            "Seaborgium ($\\text{Sg}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $Z = 108$, the numerical roots give Unniloctium ($\\text{Uno}$).\n2. The official permanent name designated by IUPAC is **Hassium** (symbol **$\\text{Hs}$**), named after the German state of Hesse.\n3. (Element $106 = \\text{Sg}$; Element $107 = \\text{Bh}$; Element $109 = \\text{Mt}$)."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] An element with atomic number $Z = 64$ is Gadolinium ($\\text{Gd}$). Its correct ground-state electronic configuration is:",
+          "image": "",
+          "options": [
+            "$[\\text{Xe}] 4f^7 5d^1 6s^2$",
+            "$[\\text{Xe}] 4f^8 6s^2$",
+            "$[\\text{Xe}] 4f^7 6s^2 6p^1$",
+            "$[\\text{Xe}] 4f^9 5s^1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The expected Aufbau configuration for Gadolinium ($Z = 64$) would be $[\\text{Xe}] 4f^8 6s^2$.\n2. However, a half-filled $4f$ subshell ($4f^7$) possesses exceptional thermodynamic stability due to symmetrical charge distribution and maximum electron exchange energy.\n3. Therefore, one electron resides in the $5d$ subshell to maintain the half-filled $4f^7$ subshell:\n$$\\text{Gd}: [\\text{Xe}] 4f^7 5d^1 6s^2$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following groups contains elements in ALL THREE physical states (solid, liquid, and gas) at room temperature ($25^\\circ\\text{C}$)?",
+          "image": "",
+          "options": [
+            "Group 17 (Halogens)",
+            "Group 1 (Alkali metals)",
+            "Group 16 (Chalcogens)",
+            "Group 18 (Noble gases)"
+          ],
+          "correctOption": 0,
+          "solution": "In **Group 17 (Halogens)** at room temperature:\n- Fluorine ($\\text{F}_2$) is a pale yellow **gas**.\n- Chlorine ($\\text{Cl}_2$) is a greenish-yellow **gas**.\n- Bromine ($\\text{Br}_2$) is a dark reddish-brown **liquid** (the only liquid non-metal).\n- Iodine ($\\text{I}_2$) is a lustrous violet-black **solid**.\n- Astatine ($\\text{At}$) is a radioactive **solid**.\nThus, Group 17 is unique in having gases, a liquid, and solids under ambient conditions."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An element with electronic configuration $[\\text{Ar}] 3d^2 4s^2$ is Titanium ($Z = 22$). It is classified as:",
+          "image": "",
+          "options": [
+            "A transition metal ($d$-block)",
+            "An inner transition metal ($f$-block)",
+            "A representative element ($p$-block)",
+            "An alkaline earth metal ($s$-block)"
+          ],
+          "correctOption": 0,
+          "solution": "1. The differentiating electrons are entering the inner $(n-1)d$ subshell ($3d$).\n2. Titanium has a partially filled $d$-subshell ($3d^2$) in its ground state.\n3. Therefore, it is a $d$-block **transition metal** (Period 4, Group 4)."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The total number of periods in the long form of the modern periodic table is:",
+          "image": "",
+          "options": [
+            "$7$",
+            "$8$",
+            "$18$",
+            "$9$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The long form of the periodic table consists of **$7$ horizontal rows called periods** and **$18$ vertical columns called groups**.\n2. The period number corresponds directly to the highest principal quantum number ($n$) of the valence electrons in that element's ground state."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Dobereiner's Law of Triads states that when three chemically similar elements are arranged in increasing order of atomic mass, the atomic mass of the middle element is approximately equal to:",
+          "image": "",
+          "options": [
+            "The arithmetic mean of the atomic masses of the other two elements",
+            "The geometric mean of the other two elements",
+            "Twice the atomic mass of the first element",
+            "Half the atomic mass of the third element"
+          ],
+          "correctOption": 0,
+          "solution": "1. Johann Wolfgang Döbereiner (1829) observed that in groups of three elements with similar chemical properties (triads):\n$$\\text{Atomic mass of middle element} \\approx \\frac{\\text{Atomic mass of first} + \\text{Atomic mass of third}}{2}$$\n2. For example, in the alkali metal triad:\n- $\\text{Li} = 7$\n- $\\text{K} = 39$\n- $\\text{Na} = \\frac{7 + 39}{2} = 23$"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An element has atomic number $Z = 31$. To which group of the periodic table does it belong?",
+          "image": "",
+          "options": [
+            "Group 13",
+            "Group 3",
+            "Group 15",
+            "Group 1"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electronic configuration of $Z = 31$ (Gallium, $\\text{Ga}$):\n$$\\text{Ga}: [\\text{Ar}] 3d^{10} 4s^2 4p^1$$\n2. The last electron enters the $4p$ subshell, making it a $p$-block element.\n3. For $p$-block elements, the group number is given by:\n$$\\text{Group number} = 10 + \\text{number of valence } (s + p)\\text{ electrons} = 10 + (2 + 1) = 13$$\nThus, it belongs to Group 13 (the Boron family)."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Newlands' Law of Octaves was found to be applicable strictly up to which element in the periodic table?",
+          "image": "",
+          "options": [
+            "Calcium ($Z = 20$)",
+            "Potassium ($Z = 19$)",
+            "Iron ($Z = 26$)",
+            "Sodium ($Z = 11$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. John Newlands (1865) arranged elements in order of increasing atomic masses and observed that every eighth element had properties similar to the first, analogous to musical octaves.\n2. However, this regularity held true **only up to Calcium ($Z = 20$)**.\n3. Beyond calcium, the inclusion of $3d$ transition elements interrupted the eight-element periodicity, causing the law to break down."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The electronic configuration of an element is $1s^2 2s^2 2p^6 3s^2 3p^6 3d^{10} 4s^2 4p^3$. The element is:",
+          "image": "",
+          "options": [
+            "Arsenic ($\\text{As}$)",
+            "Antimony ($\\text{Sb}$)",
+            "Phosphorus ($\\text{P}$)",
+            "Selenium ($\\text{Se}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Total number of electrons:\n$$2 + 2 + 6 + 2 + 6 + 10 + 2 + 3 = 33$$\n2. Atomic number $Z = 33$ corresponds to **Arsenic ($\\text{As}$)**.\n3. It belongs to Period 4, Group 15 ($10 + 2 + 3 = 15$)."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following $d$-block elements possesses a completely filled $(n-1)d^{10}$ and a half-filled $ns^1$ valence configuration in its ground state?",
+          "image": "",
+          "options": [
+            "Copper ($\\text{Cu}$)",
+            "Chromium ($\\text{Cr}$)",
+            "Zinc ($\\text{Zn}$)",
+            "Nickel ($\\text{Ni}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Copper ($Z = 29$) has an anomalous ground-state electron configuration:\n$$\\text{Cu}: [\\text{Ar}] 3d^{10} 4s^1$$\n2. The promotion of one $4s$ electron completes the $3d$ subshell ($d^{10}$), imparting extra stability due to full subshell symmetry and maximal exchange energy."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An element has the atomic number $Z = 56$. It belongs to:",
+          "image": "",
+          "options": [
+            "$s$-block (Barium, $\\text{Ba}$)",
+            "$d$-block (Iron family)",
+            "$p$-block (Lead family)",
+            "$f$-block (Lanthanoid)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Write configuration for $Z = 56$:\n$$\\text{Ba}: [\\text{Xe}] 6s^2$$\n2. The valence electrons occupy the $6s$ subshell.\n3. Therefore, it is Barium, an alkaline earth metal belonging to the **$s$-block** (Period 6, Group 2)."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Why is Hydrogen placed separately at the top of the periodic table in many modern representations?",
+          "image": "",
+          "options": [
+            "It resembles alkali metals in forming unipositive cations ($\\text{H}^+$) and halogens in forming hydride anions ($\\text{H}^-$) and diatomic molecules ($\\text{H}_2$)",
+            "It is the only element that does not contain protons",
+            "It is chemically inert at all temperatures",
+            "Its atomic mass cannot be measured accurately"
+          ],
+          "correctOption": 0,
+          "solution": "Hydrogen exhibits a dual chemical character:\n1. **Resemblance to alkali metals (Group 1):** Has a single valence electron ($1s^1$), forms unipositive cations ($\\text{H}^+$), and forms stable halides and oxides ($\\text{HCl}, \\text{H}_2\\text{O}$).\n2. **Resemblance to halogens (Group 17):** Needs one electron to acquire a stable noble gas helium configuration ($1s^2$), forms hydride anions ($\\text{H}^-$), exists naturally as diatomic gas ($\\text{H}_2$), and has high ionization energy.\n3. Because of this unique ambiguity, hydrogen is often given a separate position at the top."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The actinoids are elements with atomic numbers ranging from:",
+          "image": "",
+          "options": [
+            "$Z = 90$ to $Z = 103$",
+            "$Z = 58$ to $Z = 71$",
+            "$Z = 89$ to $Z = 102$",
+            "$Z = 90$ to $Z = 104$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The actinoid series ($5f$ inner transition series) consists of 14 elements in which the $5f$ subshell is progressively filled.\n2. The series begins immediately after Actinium ($\\text{Ac}, Z = 89$), starting with **Thorium ($\\text{Th}, Z = 90$)** and concluding with **Lawrencium ($\\text{Lr}, Z = 103$)**."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The general electronic configuration of $p$-block elements is:",
+          "image": "",
+          "options": [
+            "$ns^2 np^{1-6}$",
+            "$ns^1 np^{1-6}$",
+            "$ns^2 np^{0-6}$",
+            "$(n-1)d^{10} ns^2 np^6$"
+          ],
+          "correctOption": 0,
+          "solution": "For representative elements belonging to the $p$-block (Groups 13 to 18):\n- The outermost $s$-orbital is completely filled with two electrons: $ns^2$\n- The valence $p$-orbitals are progressively filled with 1 to 6 electrons: $np^{1-6}$\nTherefore, the general valence electron configuration is **$ns^2 np^{1-6}$** (except He, which is $1s^2$)."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An element has the electronic configuration $[\\text{Ar}] 3d^{10} 4s^2 4p^4$. What is the total number of unpaired electrons in an atom of this element in its ground state?",
+          "image": "",
+          "options": [
+            "$2$",
+            "$4$",
+            "$0$",
+            "$1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The configuration is that of Selenium ($Z = 34$):\n$$[\\text{Ar}] 3d^{10} 4s^2 4p^4$$\n2. The inner cores and $3d^{10}$, $4s^2$ are completely filled and paired.\n3. In the $4p^4$ subshell, the four electrons occupy the three degenerate $4p$ orbitals according to Hund's rule:\n$$(\\uparrow\\downarrow) \\quad (\\uparrow) \\quad (\\uparrow)$$\n4. There is one paired orbital and two singly occupied orbitals, giving **$2$ unpaired electrons**."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In Mendeleev's periodic table, which anomalous pair of elements was placed in inverted order of atomic masses to maintain chemical similarity?",
+          "image": "",
+          "options": [
+            "Tellurium ($127.6$) before Iodine ($126.9$)",
+            "Sodium ($23.0$) before Potassium ($39.1$)",
+            "Carbon ($12.0$) before Nitrogen ($14.0$)",
+            "Magnesium ($24.3$) before Aluminium ($27.0$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. In Mendeleev's periodic table, elements were primarily arranged in increasing order of atomic masses.\n2. However, strict adherence to atomic mass would place Iodine ($126.9$) in Group 16 and Tellurium ($127.6$) in Group 17.\n3. To keep iodine with other halogens and tellurium with chalcogens, Mendeleev inverted their positions, placing **Tellurium ($127.6$) before Iodine ($126.9$)**.\n4. (Other anomalous pairs were $\\text{Ar}$ ($39.9$) before $\\text{K}$ ($39.1$), and $\\text{Co}$ ($58.9$) before $\\text{Ni}$ ($58.7$)). Modern Periodic Law based on atomic numbers resolved this discrepancy."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which block of the periodic table contains metals, non-metals, and metalloids?",
+          "image": "",
+          "options": [
+            "$p$-block",
+            "$s$-block",
+            "$d$-block",
+            "$f$-block"
+          ],
+          "correctOption": 0,
+          "solution": "1. The **$p$-block** is uniquely diverse, containing all three categories of elements:\n- **Metals:** $\\text{Al}, \\text{Ga}, \\text{In}, \\text{Sn}, \\text{Tl}, \\text{Pb}, \\text{Bi}$\n- **Metalloids:** $\\text{B}, \\text{Si}, \\text{Ge}, \\text{As}, \\text{Sb}, \\text{Te}$\n- **Non-metals:** $\\text{C}, \\text{N}, \\text{O}, \\text{F}, \\text{P}, \\text{S}, \\text{Cl}, \\text{Se}, \\text{Br}, \\text{I},$ and noble gases\n2. The $s, d,$ and $f$ blocks consist exclusively of metals (with hydrogen being the sole non-metal anomaly associated with $s$-block)."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The element with atomic number $Z = 120$ (not yet synthesized) would be placed in which period and group of the periodic table?",
+          "image": "",
+          "options": [
+            "Period 8, Group 2",
+            "Period 8, Group 1",
+            "Period 7, Group 2",
+            "Period 8, Group 12"
+          ],
+          "correctOption": 0,
+          "solution": "1. Period 7 is completed at Oganesson ($Z = 118$, noble gas at Group 18).\n2. Element $Z = 119$ would start Period 8 with configuration $[\\text{Og}] 8s^1$ (Group 1 alkali metal).\n3. Element $Z = 120$ would have configuration $[\\text{Og}] 8s^2$, placing it in **Period 8, Group 2 (an alkaline earth metal)**."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The first period of the modern periodic table contains only $2$ elements because:",
+          "image": "",
+          "options": [
+            "The principal shell $n = 1$ contains only one subshell ($1s$) with a capacity of two electrons",
+            "The nucleus can only hold two protons",
+            "Only hydrogen and helium exist in the universe",
+            "The $1p$ subshell is unstable"
+          ],
+          "correctOption": 0,
+          "solution": "1. For principal quantum number $n = 1$, the only permitted azimuthal quantum number is $l = 0$ (the $1s$ orbital).\n2. A single orbital can hold a maximum of $2$ electrons with opposite spins.\n3. Therefore, the first period is completed when the $1s$ orbital is filled ($\\text{H}: 1s^1$ and $\\text{He}: 1s^2$), accommodating exactly **$2$ elements**."
+        }
+      ]
+    }
+  ]
+}

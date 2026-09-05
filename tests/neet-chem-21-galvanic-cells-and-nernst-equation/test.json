@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-21-galvanic-cells-and-nernst-equation",
+  "title": "Galvanic Cells & Nernst Equation (Electrochemical Cells, EMF, Standard Potentials, & Nernst Equation)",
+  "syllabus": "Galvanic / Voltaic cells (Daniell cell as a prototype); Functions of salt bridge (liquid junction potential, electrical neutrality, inert electrolytes like KCl, KNO3 in agar-agar); Cell representation conventions (anode | anode electrolyte || cathode electrolyte | cathode); Standard hydrogen electrode (SHE, reversible hydrogen electrode, assigned E° = 0.00 V); Standard electrode potential (IUPAC convention: standard reduction potential E°); Electrochemical series and applications (predicting feasibility of redox reactions, oxidizing/reducing strength, displacement of hydrogen from dilute acids); Cell electromotive force (EMF) and cell potential (E_cell = E_cathode - E_anode); Nernst equation for single electrode potential (E = E° - (2.303 RT / nF) log Q) and for electrochemical cells at 298 K (E_cell = E°_cell - (0.0591 / n) log Q); Concentration cells (electrode and electrolyte concentration cells); Relationship between cell potential and thermodynamic parameters: Gibbs free energy change (ΔrG = -nFE_cell, ΔrG° = -nFE°_cell); Relation between E°_cell and equilibrium constant K (E°_cell = (0.0591 / n) log K at 298 K); Temperature coefficient of cell EMF ((∂E/∂T)_p) and enthalpy calculation; Quantitative problem solving tailored to NEET level",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] For the cell reaction:\n$$\\text{Zn}(s) + \\text{Cu}^{2+}(0.1\\text{ M}) \\rightarrow \\text{Zn}^{2+}(0.01\\text{ M}) + \\text{Cu}(s)$$\nGiven standard reduction potentials $E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}} = +0.34\\text{ V}$ and $E^\\circ_{\\text{Zn}^{2+}/\\text{Zn}} = -0.76\\text{ V}$, the cell potential ($E_{\\text{cell}}$) at $298\\text{ K}$ is: (Take $\\frac{2.303 RT}{F} = 0.059\\text{ V}$)",
+          "image": "",
+          "options": [
+            "$1.13\\text{ V}$",
+            "$1.10\\text{ V}$",
+            "$1.07\\text{ V}$",
+            "$0.80\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Standard cell potential:\n$$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}} = +0.34\\text{ V} - (-0.76\\text{ V}) = +1.10\\text{ V}$$\n2. The cell reaction involves transfer of $n = 2$ electrons:\n$$Q = \\frac{[\\text{Zn}^{2+}]}{[\\text{Cu}^{2+}]} = \\frac{0.01}{0.1} = 0.1 = 10^{-1}$$\n3. Using the Nernst equation at $298\\text{ K}$:\n$$E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\frac{0.059}{n}\\log_{10} Q$$\n$$E_{\\text{cell}} = 1.10 - \\frac{0.059}{2}\\log_{10}(10^{-1}) = 1.10 - (0.0295)(-1) = 1.10 + 0.0295 \\approx 1.13\\text{ V}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In a standard galvanic cell, which of the following is NOT a primary function of the salt bridge?",
+          "image": "",
+          "options": [
+            "Participating chemically in the redox reactions taking place at the electrodes",
+            "Completing the electrical circuit by permitting migration of ions between half-cells",
+            "Maintaining electrical neutrality in both half-cell compartments",
+            "Minimizing the liquid junction potential"
+          ],
+          "correctOption": 0,
+          "solution": "1. The salt bridge contains an inert electrolyte (such as $\\text{KCl}, \\text{KNO}_3,$ or $\\text{NH}_4\\text{NO}_3$) in agar-agar gel.\n2. Its functions are: (i) maintaining electrical neutrality by supplying counter-ions, (ii) completing the internal circuit by allowing ionic flow, and (iii) preventing liquid junction potential.\n3. The electrolyte in the salt bridge must be chemically inert and must NOT react with the electrode materials or electrolytes involved in the redox reactions.\nTherefore, Option A is NOT a function of the salt bridge."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The standard reduction potentials of three metallic cations $X, Y,$ and $Z$ are $-1.66\\text{ V}$, $+0.80\\text{ V}$, and $-0.74\\text{ V}$ respectively. The correct order of their reducing power (ability to act as reducing agents) is:",
+          "image": "",
+          "options": [
+            "$X > Z > Y$",
+            "$Y > Z > X$",
+            "$Z > X > Y$",
+            "$X > Y > Z$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Reducing power measures the tendency of an element to undergo oxidation (lose electrons).\n2. Lower (more negative) standard reduction potential ($E^\\circ$) indicates greater tendency to get oxidized and therefore stronger reducing power:\n$$\\text{Reducing power} \\propto \\frac{1}{E^\\circ_{\\text{red}}}$$\n3. Given $E^\\circ$ values:\n- $X: -1.66\\text{ V}$ (most negative $\\implies$ strongest reducing agent)\n- $Z: -0.74\\text{ V}$\n- $Y: +0.80\\text{ V}$ (most positive $\\implies$ weakest reducing agent)\nTherefore, the correct decreasing order of reducing power is $X > Z > Y$."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] For a reversible electrochemical cell reaction, the standard cell potential ($E^\\circ_{\\text{cell}}$) is $+0.591\\text{ V}$ at $298\\text{ K}$. If the reaction involves $n = 1$ electron, the equilibrium constant $K$ of the reaction is: (Take $\\frac{2.303 RT}{F} = 0.0591\\text{ V}$)",
+          "image": "",
+          "options": [
+            "$1.0 \\times 10^{10}$",
+            "$1.0 \\times 10^{5}$",
+            "$1.0 \\times 10^{20}$",
+            "$1.0 \\times 10^{-10}$"
+          ],
+          "correctOption": 0,
+          "solution": "The relation between standard cell potential and equilibrium constant at $298\\text{ K}$ is:\n$$E^\\circ_{\\text{cell}} = \\frac{0.0591}{n} \\log_{10} K$$\nSubstitute $E^\\circ_{\\text{cell}} = 0.591\\text{ V}$ and $n = 1$:\n$$0.591 = \\frac{0.0591}{1} \\log_{10} K$$\n$$\\log_{10} K = \\frac{0.591}{0.0591} = 10$$\n$$K = 10^{10} = 1.0 \\times 10^{10}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The standard reduction potential of the hydrogen electrode ($E^\\circ_{\\text{H}^+/\\text{H}_2}$) is arbitrarily taken as zero at all temperatures. What is the potential of a hydrogen electrode placed in a solution with $\\text{pH} = 10$ at $298\\text{ K}$ under $1\\text{ bar}$ pressure of $\\text{H}_2$ gas?",
+          "image": "",
+          "options": [
+            "$-0.591\\text{ V}$",
+            "$+0.591\\text{ V}$",
+            "$-0.0591\\text{ V}$",
+            "$0.000\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Reduction half-reaction for the hydrogen electrode:\n$$\\text{H}^+(aq) + e^- \\rightarrow \\frac{1}{2}\\text{H}_2(g)$$\n2. Nernst equation for the single electrode at $298\\text{ K}$ ($P_{\\text{H}_2} = 1\\text{ bar}$):\n$$E_{\\text{H}^+/\\text{H}_2} = E^\\circ_{\\text{H}^+/\\text{H}_2} - \\frac{0.0591}{1} \\log_{10}\\left(\\frac{P_{\\text{H}_2}^{1/2}}{[\\text{H}^+]}\\right)$$\n$$E_{\\text{H}^+/\\text{H}_2} = 0 - 0.0591 \\log_{10}\\left(\\frac{1}{[\\text{H}^+]}\\right) = -0.0591(-\\log_{10}[\\text{H}^+])$$\n$$E_{\\text{H}^+/\\text{H}_2} = -0.0591 \\times \\text{pH}$$\n3. Given $\\text{pH} = 10$:\n$$E_{\\text{H}^+/\\text{H}_2} = -0.0591 \\times 10 = -0.591\\text{ V}$$"
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For a cell reaction to be thermodynamically spontaneous under standard conditions, which set of signs for $\\Delta_r G^\\circ$ and $E^\\circ_{\\text{cell}}$ is required?",
+          "image": "",
+          "options": [
+            "$\\Delta_r G^\\circ < 0 \\quad \\text{and} \\quad E^\\circ_{\\text{cell}} > 0$",
+            "$\\Delta_r G^\\circ > 0 \\quad \\text{and} \\quad E^\\circ_{\\text{cell}} < 0$",
+            "$\\Delta_r G^\\circ < 0 \\quad \\text{and} \\quad E^\\circ_{\\text{cell}} < 0$",
+            "$\\Delta_r G^\\circ = 0 \\quad \\text{and} \\quad E^\\circ_{\\text{cell}} = 0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The electrical work extracted from a galvanic cell is equal to the decrease in Gibbs free energy:\n$$\\Delta_r G^\\circ = -nFE^\\circ_{\\text{cell}}$$\n2. For any spontaneous process at constant temperature and pressure, the Gibbs free energy change must be negative ($\\Delta_r G^\\circ < 0$).\n3. Since Faraday's constant $F > 0$ and number of moles of electrons $n > 0$, $\\Delta_r G^\\circ < 0$ strictly requires:\n$$E^\\circ_{\\text{cell}} > 0$$\nThus, $\\Delta_r G^\\circ < 0$ and $E^\\circ_{\\text{cell}} > 0$ correspond to spontaneity."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A concentration cell consists of two identical copper electrodes dipping into $\\text{CuSO}_4$ solutions of different concentrations $C_1$ and $C_2$:\n$$\\text{Cu}(s) | \\text{Cu}^{2+}(C_1) || \\text{Cu}^{2+}(C_2) | \\text{Cu}(s)$$\nFor the cell potential to be positive ($E_{\\text{cell}} > 0$) at $298\\text{ K}$, the condition required is:",
+          "image": "",
+          "options": [
+            "$C_2 > C_1$",
+            "$C_1 > C_2$",
+            "$C_1 = C_2$",
+            "$C_1 \\cdot C_2 = 1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In an electrolyte concentration cell, both electrodes are identical, so standard potential is zero:\n$$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}} - E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}} = 0$$\n2. Anode reaction: $\\text{Cu}(s) \\rightarrow \\text{Cu}^{2+}(C_1) + 2e^-$\nCathode reaction: $\\text{Cu}^{2+}(C_2) + 2e^- \\rightarrow \\text{Cu}(s)$\nNet reaction: $\\text{Cu}^{2+}(C_2) \\rightarrow \\text{Cu}^{2+}(C_1)$\n3. Apply Nernst equation ($n = 2$):\n$$E_{\\text{cell}} = 0 - \\frac{0.0591}{2}\\log_{10}\\left(\\frac{C_1}{C_2}\\right) = \\frac{0.0591}{2}\\log_{10}\\left(\\frac{C_2}{C_1}\\right)$$\n4. For $E_{\\text{cell}} > 0$, we must have $\\log_{10}\\left(\\frac{C_2}{C_1}\\right) > 0$, which requires:\n$$C_2 > C_1$$\n(Electrons flow spontaneously until concentrations in both half-cells equalize)."
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Given the standard reduction potentials:\n- $E^\\circ_{\\text{Fe}^{3+}/\\text{Fe}^{2+}} = +0.77\\text{ V}$\n- $E^\\circ_{\\text{I}_2/\\text{I}^-} = +0.54\\text{ V}$\nThe standard cell potential ($E^\\circ_{\\text{cell}}$) for the reaction $2\\text{Fe}^{3+}(aq) + 2\\text{I}^-(aq) \\rightarrow 2\\text{Fe}^{2+}(aq) + \\text{I}_2(s)$ is:",
+          "image": "",
+          "options": [
+            "$+0.23\\text{ V}$",
+            "$-0.23\\text{ V}$",
+            "$+1.31\\text{ V}$",
+            "$-1.31\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Identify the half-reactions:\n- Reduction (Cathode): $\\text{Fe}^{3+} + e^- \\rightarrow \\text{Fe}^{2+} \\quad (E^\\circ_{\\text{cathode}} = +0.77\\text{ V})$\n- Oxidation (Anode): $2\\text{I}^- \\rightarrow \\text{I}_2 + 2e^- \\quad (E^\\circ_{\\text{anode}} = +0.54\\text{ V})$\n2. Calculate standard cell potential:\n$$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}} = +0.77\\text{ V} - (+0.54\\text{ V}) = +0.23\\text{ V}$$\n(Because $E^\\circ_{\\text{cell}} > 0$, the reaction is spontaneous under standard state conditions)."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Potassium chloride ($\\text{KCl}$) is commonly preferred over other salts in constructing salt bridges because:",
+          "image": "",
+          "options": [
+            "The ionic mobilities and transport numbers of $\\text{K}^+$ and $\\text{Cl}^-$ ions are nearly identical",
+            "$\\text{KCl}$ reacts with all metallic electrodes to form protective complexes",
+            "$\\text{KCl}$ is a weak electrolyte that ionizes negligibly",
+            "The solubility of $\\text{KCl}$ decreases with increasing temperature"
+          ],
+          "correctOption": 0,
+          "solution": "1. When current flows, ions migrate out of the salt bridge into the respective half-cell solutions.\n2. If cations and anions moved at different speeds, an unequal spatial distribution of charges would develop at the junction between the salt bridge and the electrolyte solutions, creating a significant stray **liquid junction potential**.\n3. In $\\text{KCl}$, the ionic mobilities of $\\text{K}^+$ ($73.5\\text{ S cm}^2\\text{ mol}^{-1}$) and $\\text{Cl}^-$ ($76.3\\text{ S cm}^2\\text{ mol}^{-1}$) are nearly identical.\n4. Consequently, both ions diffuse into the half-cells at virtually equal rates, minimizing the liquid junction potential to near zero."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the Daniell cell:\n$$\\text{Zn}(s) | \\text{Zn}^{2+}(aq) || \\text{Cu}^{2+}(aq) | \\text{Cu}(s)$$\nWhat happens when an external opposing electrical potential ($E_{\\text{ext}}$) greater than $1.10\\text{ V}$ is applied across the terminals?",
+          "image": "",
+          "options": [
+            "The cell operates in reverse as an electrolytic cell; electrons flow from copper to zinc and zinc deposits on the zinc electrode",
+            "Current stops flowing completely and the cell remains at equilibrium",
+            "The cell continues to discharge normally but at a faster rate",
+            "The copper electrode dissolves completely into the solution"
+          ],
+          "correctOption": 0,
+          "solution": "1. When $E_{\\text{ext}} < 1.10\\text{ V}$: The galvanic cell functions normally, electrons flow from $\\text{Zn}$ to $\\text{Cu}$, and current flows from $\\text{Cu}$ to $\\text{Zn}$.\n2. When $E_{\\text{ext}} = 1.10\\text{ V}$: The opposing potential exactly balances the cell EMF; net current is zero and no chemical reaction takes place.\n3. When $E_{\\text{ext}} > 1.10\\text{ V}$: The external source overpowers the cell, forcing the non-spontaneous reverse reaction. The system now functions as an **electrolytic cell**:\n$$\\text{Zn}^{2+} + \\text{Cu}(s) \\rightarrow \\text{Zn}(s) + \\text{Cu}^{2+}$$\nElectrons flow from $\\text{Cu}$ to $\\text{Zn}$, copper dissolves at the anode, and zinc deposits at the cathode."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The standard Gibbs free energy change ($\\Delta_r G^\\circ$) for the cell reaction:\n$$\\text{Zn}(s) + 2\\text{Ag}^+(aq) \\rightarrow \\text{Zn}^{2+}(aq) + 2\\text{Ag}(s)$$\nwith $E^\\circ_{\\text{cell}} = 1.56\\text{ V}$ at $298\\text{ K}$ is approximately: (Take $F = 96500\\text{ C mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$-301.08\\text{ kJ/mol}$",
+            "$+301.08\\text{ kJ/mol}$",
+            "$-150.54\\text{ kJ/mol}$",
+            "$-602.16\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In this balanced cell reaction, $n = 2$ electrons are transferred:\n$$\\text{Zn} \\rightarrow \\text{Zn}^{2+} + 2e^-, \\quad 2\\text{Ag}^+ + 2e^- \\rightarrow 2\\text{Ag}$$\n2. Use the relation:\n$$\\Delta_r G^\\circ = -nFE^\\circ_{\\text{cell}}$$\n$$\\Delta_r G^\\circ = -2 \\times (96500\\text{ C mol}^{-1}) \\times (1.56\\text{ V})$$\n$$\\Delta_r G^\\circ = -301080\\text{ J/mol} = -301.08\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The standard reduction potentials for the following electrodes are:\n- $E^\\circ_{\\text{Mg}^{2+}/\\text{Mg}} = -2.37\\text{ V}$\n- $E^\\circ_{\\text{Fe}^{2+}/\\text{Fe}} = -0.44\\text{ V}$\n- $E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}} = +0.34\\text{ V}$\n- $E^\\circ_{\\text{Ag}^+/\\text{Ag}} = +0.80\\text{ V}$\nWhich of the following chemical reactions is NON-SPONTANEOUS under standard conditions?",
+          "image": "",
+          "options": [
+            "$\\text{Fe}(s) + \\text{Mg}^{2+}(aq) \\rightarrow \\text{Fe}^{2+}(aq) + \\text{Mg}(s)$",
+            "$\\text{Mg}(s) + \\text{Fe}^{2+}(aq) \\rightarrow \\text{Mg}^{2+}(aq) + \\text{Fe}(s)$",
+            "$\\text{Fe}(s) + \\text{Cu}^{2+}(aq) \\rightarrow \\text{Fe}^{2+}(aq) + \\text{Cu}(s)$",
+            "$\\text{Cu}(s) + 2\\text{Ag}^+(aq) \\rightarrow \\text{Cu}^{2+}(aq) + 2\\text{Ag}(s)$"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate $E^\\circ_{\\text{cell}} = E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}}$ for each reaction:\n1. For $\\text{Fe}(s) + \\text{Mg}^{2+}(aq) \\rightarrow \\text{Fe}^{2+}(aq) + \\text{Mg}(s)$:\n$$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{Mg}^{2+}/\\text{Mg}} - E^\\circ_{\\text{Fe}^{2+}/\\text{Fe}} = -2.37\\text{ V} - (-0.44\\text{ V}) = -1.93\\text{ V}$$\nBecause $E^\\circ_{\\text{cell}} < 0$, this reaction is **non-spontaneous**.\n2. In all other options, $E^\\circ_{\\text{cell}} > 0$ and the reactions are spontaneous."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] A salt bridge containing $\\text{KCl}$ cannot be used in a galvanic cell containing which of the following electrodes?",
+          "image": "",
+          "options": [
+            "Silver ($\\text{Ag}$) dipping in $\\text{AgNO}_3$ solution",
+            "Zinc ($\\text{Zn}$) dipping in $\\text{ZnSO}_4$ solution",
+            "Copper ($\\text{Cu}$) dipping in $\\text{CuSO}_4$ solution",
+            "Nickel ($\\text{Ni}$) dipping in $\\text{NiSO}_4$ solution"
+          ],
+          "correctOption": 0,
+          "solution": "1. When $\\text{KCl}$ is present in the salt bridge of a cell with an $\\text{Ag} | \\text{AgNO}_3$ electrode, $\\text{Cl}^-$ ions migrating into the silver half-cell react instantly with $\\text{Ag}^+$ ions to precipitate insoluble silver chloride:\n$$\\text{Ag}^+(aq) + \\text{Cl}^-(aq) \\rightarrow \\text{AgCl}(s) \\downarrow$$\n2. The formation of a solid precipitate clogs the porous plug of the salt bridge, introduces a massive junction resistance, and disrupts cell operation.\n3. For cells containing $\\text{Ag}^+, \\text{Pb}^{2+},$ or $\\text{Hg}_2^{2+}$ ions, a salt bridge containing $\\text{KNO}_3$ or $\\text{NH}_4\\text{NO}_3$ must be used instead."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The Nernst equation for the single electrode reduction potential of a metal ion $\\text{M}^{n+}(aq) + n e^- \\rightarrow \\text{M}(s)$ at $298\\text{ K}$ is:",
+          "image": "",
+          "options": [
+            "$E = E^\\circ + \\frac{0.0591}{n} \\log_{10}[\\text{M}^{n+}]$",
+            "$E = E^\\circ - \\frac{0.0591}{n} \\log_{10}[\\text{M}^{n+}]$",
+            "$E = E^\\circ + \\frac{0.0591}{n} \\ln[\\text{M}^{n+}]$",
+            "$E = E^\\circ - \\frac{n}{0.0591} \\log_{10}[\\text{M}^{n+}]$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The general Nernst equation for reduction is:\n$$E = E^\\circ - \\frac{2.303 RT}{nF}\\log_{10}\\left(\\frac{[\\text{M}(s)]}{[\\text{M}^{n+}]}\\right)$$\n2. The activity of pure solid metal is taken as unity ($[\\text{M}(s)] = 1$):\n$$E = E^\\circ - \\frac{0.0591}{n}\\log_{10}\\left(\\frac{1}{[\\text{M}^{n+}]}\\right)$$\n3. Since $\\log_{10}(1/[\\text{M}^{n+}]) = -\\log_{10}[\\text{M}^{n+}]$, this simplifies to:\n$$E = E^\\circ + \\frac{0.0591}{n}\\log_{10}[\\text{M}^{n+}]$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Consider the cell:\n$$\\text{Pt} | \\text{H}_2(p_1\\text{ atm}) | \\text{H}^+(1\\text{ M}) || \\text{H}^+(1\\text{ M}) | \\text{H}_2(p_2\\text{ atm}) | \\text{Pt}$$\nThe cell potential ($E_{\\text{cell}}$) at $298\\text{ K}$ will be positive and the cell reaction spontaneous when:",
+          "image": "",
+          "options": [
+            "$p_1 > p_2$",
+            "$p_2 > p_1$",
+            "$p_1 = p_2$",
+            "$p_1 \\cdot p_2 = 1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. This is a gas-electrode concentration cell:\n- Anode: $\\frac{1}{2}\\text{H}_2(p_1) \\rightarrow \\text{H}^+ + e^-$\n- Cathode: $\\text{H}^+ + e^- \\rightarrow \\frac{1}{2}\\text{H}_2(p_2)$\n- Net reaction: $\\frac{1}{2}\\text{H}_2(p_1) \\rightarrow \\frac{1}{2}\\text{H}_2(p_2)$\n2. Both half-cells use standard hydrogen electrodes, so $E^\\circ_{\\text{cell}} = 0$.\n3. Using the Nernst equation ($n = 1$):\n$$E_{\\text{cell}} = 0 - \\frac{0.0591}{1} \\log_{10}\\left(\\frac{p_2^{1/2}}{p_1^{1/2}}\\right) = \\frac{0.0591}{2} \\log_{10}\\left(\\frac{p_1}{p_2}\\right)$$\n4. For $E_{\\text{cell}} > 0$, we require $\\log_{10}\\left(\\frac{p_1}{p_2}\\right) > 0$, which means:\n$$p_1 > p_2$$\n(Gas flows spontaneously from higher pressure to lower pressure)."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The temperature coefficient of the electromotive force of a cell is defined as $\\left(\\frac{\\partial E}{\\partial T}\\right)_p$. The relationship between this temperature coefficient and the entropy change ($\\Delta_r S$) of the cell reaction is:",
+          "image": "",
+          "options": [
+            "$\\Delta_r S = nF \\left(\\frac{\\partial E}{\\partial T}\\right)_p$",
+            "$\\Delta_r S = -nF \\left(\\frac{\\partial E}{\\partial T}\\right)_p$",
+            "$\\Delta_r S = \\frac{nF}{T} \\left(\\frac{\\partial E}{\\partial T}\\right)_p$",
+            "$\\Delta_r S = nFE$"
+          ],
+          "correctOption": 0,
+          "solution": "1. From thermodynamics, $\\Delta_r G = -nFE_{\\text{cell}}$.\n2. Differentiating with respect to temperature at constant pressure:\n$$\\left(\\frac{\\partial \\Delta_r G}{\\partial T}\\right)_p = -nF \\left(\\frac{\\partial E}{\\partial T}\\right)_p$$\n3. From the fundamental Maxwell relation, $\\left(\\frac{\\partial \\Delta_r G}{\\partial T}\\right)_p = -\\Delta_r S$.\n4. Equating both expressions:\n$$-\\Delta_r S = -nF \\left(\\frac{\\partial E}{\\partial T}\\right)_p \\implies \\Delta_r S = nF \\left(\\frac{\\partial E}{\\partial T}\\right)_p$$"
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] For the half-cell reaction $\\text{MnO}_4^-(aq) + 8\\text{H}^+(aq) + 5e^- \\rightarrow \\text{Mn}^{2+}(aq) + 4\\text{H}_2\\text{O}(l)$, what is the effect on the reduction potential ($E$) if the concentration of $\\text{H}^+$ ions is decreased (i.e., $\\text{pH}$ is increased)?",
+          "image": "",
+          "options": [
+            "The reduction potential decreases, making $\\text{MnO}_4^-$ a weaker oxidizing agent",
+            "The reduction potential increases, making $\\text{MnO}_4^-$ a stronger oxidizing agent",
+            "The reduction potential remains unchanged",
+            "The standard potential $E^\\circ$ becomes negative"
+          ],
+          "correctOption": 0,
+          "solution": "1. Write the Nernst equation for the half-cell:\n$$E = E^\\circ - \\frac{0.0591}{5} \\log_{10}\\left(\\frac{[\\text{Mn}^{2+}]}{[\\text{MnO}_4^-][\\text{H}^+]^8}\\right)$$\n$$E = E^\\circ - \\frac{0.0591}{5}\\log_{10}\\left(\\frac{[\\text{Mn}^{2+}]}{[\\text{MnO}_4^-]}\\right) - \\frac{0.0591 \\times 8}{5} \\text{pH}$$\n2. As $[\\text{H}^+]$ decreases (higher $\\text{pH}$), the concentration of reactant in the reduction half-cell decreases.\n3. By Le Chatelier's principle and the Nernst equation, the reduction potential $E$ **decreases significantly**.\n4. Hence, potassium permanganate is a much more powerful oxidizing agent in acidic solutions than in neutral or basic media."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The standard reduction potentials for the half-reactions are:\n- $\\text{Fe}^{3+} + 3e^- \\rightarrow \\text{Fe}; \\quad E^\\circ_1 = -0.036\\text{ V}$\n- $\\text{Fe}^{2+} + 2e^- \\rightarrow \\text{Fe}; \\quad E^\\circ_2 = -0.440\\text{ V}$\nWhat is the standard reduction potential for the couple $\\text{Fe}^{3+} + e^- \\rightarrow \\text{Fe}^{2+}$ ($E^\\circ_3$)?",
+          "image": "",
+          "options": [
+            "$+0.772\\text{ V}$",
+            "$-0.404\\text{ V}$",
+            "$+0.404\\text{ V}$",
+            "$-0.476\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "Electrode potentials are intensive properties and CANNOT be added directly. Standard Gibbs free energies must be used:\n1. $\\text{Fe}^{3+} + 3e^- \\rightarrow \\text{Fe}: \\quad \\Delta G_1^\\circ = -3 F E^\\circ_1 = -3 F (-0.036) = +0.108 F$\n2. $\\text{Fe}^{2+} + 2e^- \\rightarrow \\text{Fe}: \\quad \\Delta G_2^\\circ = -2 F E^\\circ_2 = -2 F (-0.440) = +0.880 F$\n3. For target reaction $\\text{Fe}^{3+} + e^- \\rightarrow \\text{Fe}^{2+}$:\n$$\\text{Target} = \\text{Reaction (1)} - \\text{Reaction (2)}$$\n$$\\Delta G_3^\\circ = \\Delta G_1^\\circ - \\Delta G_2^\\circ = +0.108 F - (+0.880 F) = -0.772 F$$\n4. Since $\\Delta G_3^\\circ = -n_3 F E^\\circ_3$ with $n_3 = 1$:\n$$-1 F E^\\circ_3 = -0.772 F \\implies E^\\circ_3 = +0.772\\text{ V}$$"
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In a Daniell cell, when the circuit is closed, which of the following events occurs during operation?",
+          "image": "",
+          "options": [
+            "Zinc dissolves at the anode, copper deposits at the cathode, and electrons flow through the external wire from zinc to copper",
+            "Copper dissolves at the anode and zinc deposits at the cathode",
+            "Electrons flow internally through the salt bridge from anode to cathode",
+            "The mass of the zinc rod increases while the mass of the copper rod decreases"
+          ],
+          "correctOption": 0,
+          "solution": "1. At the anode (negative terminal): Zinc has a lower reduction potential ($-0.76\\text{ V}$) and undergoes oxidation:\n$$\\text{Zn}(s) \\rightarrow \\text{Zn}^{2+}(aq) + 2e^-$$\nZinc rod dissolves, losing mass.\n2. Electrons released at the zinc anode flow through the external wire toward the copper cathode.\n3. At the cathode (positive terminal): Cupric ions from solution are reduced on the copper electrode:\n$$\\text{Cu}^{2+}(aq) + 2e^- \\rightarrow \\text{Cu}(s)$$\nCopper deposits, increasing the mass of the copper rod.\n4. Conventional electrical current flows in the opposite direction (from copper to zinc)."
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Calculate the cell potential ($E_{\\text{cell}}$) for the following electrochemical cell at $298\\text{ K}$:\n$$\\text{Ni}(s) | \\text{Ni}^{2+}(0.01\\text{ M}) || \\text{Ag}^+(0.1\\text{ M}) | \\text{Ag}(s)$$\nGiven: $E^\\circ_{\\text{Ni}^{2+}/\\text{Ni}} = -0.25\\text{ V}$ and $E^\\circ_{\\text{Ag}^+/\\text{Ag}} = +0.80\\text{ V}$. (Take $\\frac{2.303 RT}{F} = 0.059\\text{ V}$)",
+          "image": "",
+          "options": [
+            "$1.05\\text{ V}$",
+            "$1.08\\text{ V}$",
+            "$1.02\\text{ V}$",
+            "$0.55\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Cell reaction:\n$$\\text{Ni}(s) + 2\\text{Ag}^+(aq) \\rightleftharpoons \\text{Ni}^{2+}(aq) + 2\\text{Ag}(s) \\quad (n = 2)$$\n2. Standard cell potential:\n$$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{Ag}^+/\\text{Ag}} - E^\\circ_{\\text{Ni}^{2+}/\\text{Ni}} = +0.80\\text{ V} - (-0.25\\text{ V}) = +1.05\\text{ V}$$\n3. Reaction quotient $Q$:\n$$Q = \\frac{[\\text{Ni}^{2+}]}{[\\text{Ag}^+]^2} = \\frac{0.01}{(0.1)^2} = \\frac{0.01}{0.01} = 1$$\n4. Nernst equation:\n$$E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\frac{0.059}{n}\\log_{10} Q = 1.05 - \\frac{0.059}{2}\\log_{10}(1)$$\nSince $\\log_{10}(1) = 0$:\n$$E_{\\text{cell}} = 1.05 - 0 = 1.05\\text{ V}$$"
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In a galvanic cell, which convention is universally applied according to the IUPAC rules?",
+          "image": "",
+          "options": [
+            "The anode is placed on the left, where oxidation occurs and carries a negative sign; the cathode is on the right, where reduction occurs and carries a positive sign",
+            "The cathode is placed on the left with a negative sign",
+            "Oxidation occurs at the positive terminal",
+            "The salt bridge is represented by a single vertical bar"
+          ],
+          "correctOption": 0,
+          "solution": "Remember the mnemonic **LOAN**:\n- **L**: Left hand side\n- **O**: Oxidation occurs here\n- **A**: Anode\n- **N**: Negative terminal\nCorrespondingly, the cathode is represented on the right hand side (reduction occurs, positive terminal).\nThe salt bridge is represented by double vertical bars ($||$)."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the standard reduction potential ($E^\\circ$) for the half-reaction:\n$$\\text{Cu}^{2+} + e^- \\rightarrow \\text{Cu}^+$$ \nGiven: $E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}} = +0.34\\text{ V}$ and $E^\\circ_{\\text{Cu}^+/\\text{Cu}} = +0.52\\text{ V}$?",
+          "image": "",
+          "options": [
+            "$+0.16\\text{ V}$",
+            "$+0.86\\text{ V}$",
+            "$-0.16\\text{ V}$",
+            "$+0.68\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "Use Gibbs free energy changes:\n1. $\\text{Cu}^{2+} + 2e^- \\rightarrow \\text{Cu}: \\quad \\Delta G_1^\\circ = -2 F (+0.34) = -0.68 F$\n2. $\\text{Cu}^+ + e^- \\rightarrow \\text{Cu}: \\quad \\Delta G_2^\\circ = -1 F (+0.52) = -0.52 F$\n3. For target reaction $\\text{Cu}^{2+} + e^- \\rightarrow \\text{Cu}^+$:\n$$\\text{Target} = \\text{Reaction (1)} - \\text{Reaction (2)}$$\n$$\\Delta G_3^\\circ = \\Delta G_1^\\circ - \\Delta G_2^\\circ = -0.68 F - (-0.52 F) = -0.16 F$$\n4. Since $\\Delta G_3^\\circ = -1 F E^\\circ_3$:\n$$-1 F E^\\circ_3 = -0.16 F \\implies E^\\circ_3 = +0.16\\text{ V}$$"
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] If the standard reduction potential of an electrode is positive ($E^\\circ > 0$), it implies that:",
+          "image": "",
+          "options": [
+            "The redox couple is a stronger oxidizing agent than the $\\text{H}^+/\\text{H}_2$ couple",
+            "The reduced form of the couple is more stable than hydrogen gas",
+            "The metal displaces hydrogen gas from dilute acids",
+            "The electrode acts as an anode when connected to the standard hydrogen electrode (SHE)"
+          ],
+          "correctOption": 0,
+          "solution": "1. By international convention, the standard hydrogen electrode is assigned $E^\\circ = 0.00\\text{ V}$.\n2. A positive standard reduction potential ($E^\\circ > 0$, like $\\text{Cu}^{2+}/\\text{Cu} = +0.34\\text{ V}$) indicates that the oxidized form has a greater affinity for electrons than $\\text{H}^+$ ions.\n3. Therefore, it is more easily reduced and acts as a **stronger oxidizing agent than $\\text{H}^+$**.\n4. When paired with SHE, this electrode undergoes reduction (acts as the cathode), and its metal cannot displace $\\text{H}_2$ gas from dilute mineral acids."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] For the cell reaction $2\\text{Fe}^{3+}(aq) + 2\\text{I}^-(aq) \\rightleftharpoons 2\\text{Fe}^{2+}(aq) + \\text{I}_2(s)$, the standard cell potential is $E^\\circ_{\\text{cell}} = 0.236\\text{ V}$ at $298\\text{ K}$. The standard Gibbs energy change ($\\Delta_r G^\\circ$) is: (Take $F = 96500\\text{ C mol}^{-1}$)",
+          "image": "",
+          "options": [
+            "$-45.55\\text{ kJ/mol}$",
+            "$+45.55\\text{ kJ/mol}$",
+            "$-22.77\\text{ kJ/mol}$",
+            "$-91.10\\text{ kJ/mol}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The cell reaction involves $n = 2$ electrons:\n$$\\Delta_r G^\\circ = -nFE^\\circ_{\\text{cell}}$$\n2. Substitute the values:\n$$\\Delta_r G^\\circ = -2 \\times (96500\\text{ C mol}^{-1}) \\times (0.236\\text{ V})$$\n$$\\Delta_r G^\\circ = -45548\\text{ J/mol} \\approx -45.55\\text{ kJ/mol}$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] When a zinc rod is placed into a solution of copper sulfate ($\\text{CuSO}_4$), a spontaneous reaction occurs and the solution warms up. Why CANNOT electrical energy be extracted from this direct chemical reaction?",
+          "image": "",
+          "options": [
+            "Direct electron transfer occurs immediately on the surface of the zinc rod, releasing the chemical energy entirely as heat rather than directing electrons through an external wire",
+            "The reaction produces non-conducting copper oxide",
+            "Zinc is less reactive than copper",
+            "The activation energy of the reaction is zero"
+          ],
+          "correctOption": 0,
+          "solution": "1. In a single container, $\\text{Zn}$ atoms collide directly with $\\text{Cu}^{2+}$ ions, transferring electrons instantaneously across the solid-liquid interface.\n2. The free energy of the reaction is converted completely into thermal energy (heat of reaction) dissipated into the solution.\n3. To harness this free energy as electrical work, the oxidation half-reaction (anode) and reduction half-reaction (cathode) must be physically separated into two distinct compartments connected externally by a metallic conductor (a galvanic cell)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The potential of a hydrogen electrode dipping in pure water at $298\\text{ K}$ under $1\\text{ bar}$ of hydrogen gas is:",
+          "image": "",
+          "options": [
+            "$-0.414\\text{ V}$",
+            "$0.000\\text{ V}$",
+            "$-0.591\\text{ V}$",
+            "$+0.414\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In pure neutral water at $298\\text{ K}$:\n$$[\\text{H}^+] = 10^{-7}\\text{ M} \\implies \\text{pH} = 7$$\n2. The potential of a hydrogen electrode is given by:\n$$E = -0.0591 \\times \\text{pH}$$\n$$E = -0.0591 \\times 7 = -0.4137\\text{ V} \\approx -0.414\\text{ V}$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A galvanic cell is constructed as:\n$$\\text{Sn}(s) | \\text{Sn}^{2+}(aq) || \\text{Pb}^{2+}(aq) | \\text{Pb}(s)$$\nGiven $E^\\circ_{\\text{Sn}^{2+}/\\text{Sn}} = -0.14\\text{ V}$ and $E^\\circ_{\\text{Pb}^{2+}/\\text{Pb}} = -0.13\\text{ V}$. What is the ratio $[\\text{Sn}^{2+}] / [\\text{Pb}^{2+}]$ at equilibrium at $298\\text{ K}$?",
+          "image": "",
+          "options": [
+            "$2.18$",
+            "$0.46$",
+            "$1.00$",
+            "$10.0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Standard cell potential:\n$$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{Pb}^{2+}/\\text{Pb}} - E^\\circ_{\\text{Sn}^{2+}/\\text{Sn}} = -0.13 - (-0.14) = +0.01\\text{ V}$$\n2. At equilibrium, the cell potential is zero ($E_{\\text{cell}} = 0$) and the reaction quotient equals the equilibrium constant $K$:\n$$E^\\circ_{\\text{cell}} = \\frac{0.0591}{n} \\log_{10} K$$\nFor this two-electron reaction ($n = 2$):\n$$0.01 = \\frac{0.0591}{2} \\log_{10} K = 0.02955 \\log_{10} K$$\n$$\\log_{10} K = \\frac{0.01}{0.02955} \\approx 0.3384$$\n$$K = \\frac{[\\text{Sn}^{2+}]}{[\\text{Pb}^{2+}]} = 10^{0.3384} \\approx 2.18$$"
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements about standard electrode potentials ($E^\\circ$) is INCORRECT?",
+          "image": "",
+          "options": [
+            "Multiplying the stoichiometric coefficients of a half-reaction by $2$ doubles the value of $E^\\circ$",
+            "Electrode potential is an intensive property",
+            "By convention, standard reduction potentials are used as standard electrode potentials",
+            "Reversing the direction of an electrode reaction reverses the sign of the electrode potential"
+          ],
+          "correctOption": 0,
+          "solution": "1. Standard electrode potential ($E^\\circ$) is an **intensive property** because it represents energy change per unit of charge ($E^\\circ = -\\frac{\\Delta G^\\circ}{nF}$).\n2. If the stoichiometric coefficients of a half-reaction are multiplied by any factor (e.g., $2$), both $\\Delta G^\\circ$ and $n$ double proportionally, leaving their ratio $E^\\circ$ unchanged.\nTherefore, multiplying coefficients does NOT change $E^\\circ$, making Statement A incorrect."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the electrochemical cell $\\text{Zn} | \\text{Zn}^{2+}(1\\text{ M}) || \\text{Cu}^{2+}(1\\text{ M}) | \\text{Cu}$, what happens to the cell potential if the concentration of $\\text{Cu}^{2+}$ is INCREASED at constant temperature?",
+          "image": "",
+          "options": [
+            "The cell potential increases",
+            "The cell potential decreases",
+            "The cell potential remains unchanged",
+            "The cell potential drops to zero"
+          ],
+          "correctOption": 0,
+          "solution": "From the Nernst equation for the Daniell cell:\n$$E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\frac{0.0591}{2}\\log_{10}\\left(\\frac{[\\text{Zn}^{2+}]}{[\\text{Cu}^{2+}]}\\right)$$\n$$E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\frac{0.0591}{2}\\log_{10}[\\text{Zn}^{2+}] + \\frac{0.0591}{2}\\log_{10}[\\text{Cu}^{2+}]$$\nAs $[\\text{Cu}^{2+}]$ increases (reactant concentration rises), the term being subtracted decreases, causing $E_{\\text{cell}}$ to **increase**."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the cell reaction $\\text{Ni}(s) + 2\\text{Ag}^+(aq) \\rightleftharpoons \\text{Ni}^{2+}(aq) + 2\\text{Ag}(s)$, the equilibrium constant at $298\\text{ K}$ is $K = 1.0 \\times 10^{35}$. The standard cell potential ($E^\\circ_{\\text{cell}}$) is approximately: (Take $\\frac{2.303 RT}{F} = 0.059\\text{ V}$)",
+          "image": "",
+          "options": [
+            "$1.03\\text{ V}$",
+            "$2.06\\text{ V}$",
+            "$0.51\\text{ V}$",
+            "$1.55\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In this reaction, $n = 2$ electrons are transferred.\n2. Using $E^\\circ_{\\text{cell}} = \\frac{0.059}{n}\\log_{10} K$:\n$$E^\\circ_{\\text{cell}} = \\frac{0.059}{2}\\log_{10}(1.0 \\times 10^{35})$$\n$$E^\\circ_{\\text{cell}} = 0.0295 \\times 35 = 1.0325\\text{ V} \\approx 1.03\\text{ V}$$"
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A hydrogen electrode is immersed in a solution containing a buffer of $\\text{pH} = 3$ and connected to a standard hydrogen electrode (SHE). The EMF of the resulting cell at $298\\text{ K}$ under $1\\text{ bar}$ pressure of $\\text{H}_2$ is:",
+          "image": "",
+          "options": [
+            "$0.177\\text{ V}$",
+            "$-0.177\\text{ V}$",
+            "$0.059\\text{ V}$",
+            "$0.000\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Anode half-cell (buffer solution with $\\text{pH} = 3$):\n$$E_{\\text{anode}} = -0.0591 \\times \\text{pH} = -0.0591 \\times 3 = -0.1773\\text{ V}$$\n2. Cathode half-cell (SHE with $\\text{pH} = 0$):\n$$E_{\\text{cathode}} = 0.000\\text{ V}$$\n3. Cell potential:\n$$E_{\\text{cell}} = E_{\\text{cathode}} - E_{\\text{anode}} = 0 - (-0.1773\\text{ V}) = +0.1773\\text{ V} \\approx 0.177\\text{ V}$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following metals can displace hydrogen gas from dilute hydrochloric acid?",
+          "image": "",
+          "options": [
+            "Iron ($\\text{Fe}$, $E^\\circ = -0.44\\text{ V}$)",
+            "Copper ($\\text{Cu}$, $E^\\circ = +0.34\\text{ V}$)",
+            "Silver ($\\text{Ag}$, $E^\\circ = +0.80\\text{ V}$)",
+            "Gold ($\\text{Au}$, $E^\\circ = +1.50\\text{ V}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. A metal can displace $\\text{H}_2$ gas from dilute acids if the reaction $\\text{M} + n\\text{H}^+ \\rightarrow \\text{M}^{n+} + \\frac{n}{2}\\text{H}_2$ is spontaneous.\n2. This requires $E^\\circ_{\\text{cell}} = E^\\circ_{\\text{H}^+/\\text{H}_2} - E^\\circ_{\\text{M}^{n+}/\\text{M}} = 0 - E^\\circ_{\\text{M}^{n+}/\\text{M}} > 0$.\n3. Therefore, only metals with a **negative standard reduction potential** ($E^\\circ < 0$) can reduce $\\text{H}^+$ to $\\text{H}_2$.\n4. Among the options, only iron has a negative reduction potential ($-0.44\\text{ V}$)."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The standard reduction potentials of $\\text{Zn}^{2+}/\\text{Zn}$, $\\text{Ni}^{2+}/\\text{Ni}$, and $\\text{Fe}^{2+}/\\text{Fe}$ are $-0.76\\text{ V}$, $-0.25\\text{ V}$, and $-0.44\\text{ V}$ respectively. Which of the following statements is correct regarding corrosion protection?",
+          "image": "",
+          "options": [
+            "Zinc can be used to protect iron galvanically (sacrificial anode), while nickel cannot",
+            "Nickel is a better sacrificial anode than zinc for protecting iron",
+            "Iron will corrode faster in contact with zinc than with nickel",
+            "All three metals corrode at identical rates"
+          ],
+          "correctOption": 0,
+          "solution": "1. A metal serves as a sacrificial anode to protect iron from corrosion if it oxidizes more readily than iron (more negative reduction potential).\n2. Comparing standard reduction potentials:\n$$E^\\circ_{\\text{Zn}^{2+}/\\text{Zn}} (-0.76\\text{ V}) < E^\\circ_{\\text{Fe}^{2+}/\\text{Fe}} (-0.44\\text{ V}) < E^\\circ_{\\text{Ni}^{2+}/\\text{Ni}} (-0.25\\text{ V})$$\n3. Because zinc has a more negative potential than iron, zinc oxidizes preferentially, protecting iron (galvanization).\n4. Nickel has a less negative potential than iron; if a nickel coating is scratched, iron corrodes preferentially."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the cell reaction $\\text{Mg}(s) + 2\\text{Ag}^+(aq) \\rightarrow \\text{Mg}^{2+}(aq) + 2\\text{Ag}(s)$, the value of $E^\\circ_{\\text{cell}}$ is $+3.17\\text{ V}$. If $[\\text{Ag}^+] = 10^{-4}\\text{ M}$ and $[\\text{Mg}^{2+}] = 10^{-1}\\text{ M}$, the cell potential ($E_{\\text{cell}}$) at $298\\text{ K}$ is: (Take $\\frac{2.303 RT}{F} = 0.059\\text{ V}$)",
+          "image": "",
+          "options": [
+            "$2.96\\text{ V}$",
+            "$3.17\\text{ V}$",
+            "$3.38\\text{ V}$",
+            "$2.75\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Cell reaction involves $n = 2$ electrons.\n2. Calculate reaction quotient $Q$:\n$$Q = \\frac{[\\text{Mg}^{2+}]}{[\\text{Ag}^+]^2} = \\frac{10^{-1}}{(10^{-4})^2} = \\frac{10^{-1}}{10^{-8}} = 10^7$$\n3. Use Nernst equation:\n$$E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\frac{0.059}{n}\\log_{10} Q$$\n$$E_{\\text{cell}} = 3.17 - \\frac{0.059}{2}\\log_{10}(10^7) = 3.17 - 0.0295(7)$$\n$$E_{\\text{cell}} = 3.17 - 0.2065 \\approx 2.9635\\text{ V} \\approx 2.96\\text{ V}$$"
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] When an electrochemical cell reaches dynamic equilibrium, which of the following conditions is satisfied?",
+          "image": "",
+          "options": [
+            "$E_{\\text{cell}} = 0 \\quad \\text{and} \\quad \\Delta_r G = 0$",
+            "$E^\\circ_{\\text{cell}} = 0 \\quad \\text{and} \\quad \\Delta_r G^\\circ = 0$",
+            "$E_{\\text{cell}} = E^\\circ_{\\text{cell}}$",
+            "Current reaches maximum value"
+          ],
+          "correctOption": 0,
+          "solution": "1. As a galvanic cell discharges, reactants are converted into products, causing the reaction quotient $Q$ to increase.\n2. The cell potential decreases according to the Nernst equation until $Q = K$.\n3. At dynamic equilibrium, the forward and reverse rates become equal, no electrical work can be extracted, and the actual cell potential drops to zero:\n$$E_{\\text{cell}} = 0 \\implies \\Delta_r G = -nFE_{\\text{cell}} = 0$$\n(Note: $E^\\circ_{\\text{cell}}$ remains non-zero as it is a standard state constant)."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The standard reduction potential of the standard hydrogen electrode (SHE) is zero because:",
+          "image": "",
+          "options": [
+            "It has been defined as zero by universal convention as a reference zero-point",
+            "Hydrogen has zero ionization enthalpy",
+            "Hydrogen gas has zero standard enthalpy of formation",
+            "Water cannot conduct electricity"
+          ],
+          "correctOption": 0,
+          "solution": "1. An absolute single electrode potential cannot be measured experimentally in isolation because a half-reaction cannot occur independently without a complementary counter-reaction.\n2. Therefore, IUPAC adopted the **Standard Hydrogen Electrode (SHE)** as the universal primary reference standard.\n3. Its standard reduction potential is **arbitrarily assigned as exactly $0.00\\text{ V}$** at all temperatures:\n$$\\text{H}^+(aq, 1\\text{ M}) + e^- \\rightleftharpoons \\frac{1}{2}\\text{H}_2(g, 1\\text{ bar}); \\quad E^\\circ = 0.00\\text{ V}$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Given standard potentials $E^\\circ_{\\text{Cl}_2/\\text{Cl}^-} = +1.36\\text{ V}$ and $E^\\circ_{\\text{Br}_2/\\text{Br}^-} = +1.09\\text{ V}$. What happens when chlorine gas is bubbled through an aqueous solution of sodium bromide ($\\text{NaBr}$)?",
+          "image": "",
+          "options": [
+            "Bromide is oxidized to bromine ($\\text{Br}_2$) and chlorine is reduced to chloride ($\\text{Cl}^-$)",
+            "Chloride is oxidized to chlorine gas",
+            "Bromine gas oxidizes chloride to perchlorate",
+            "No reaction takes place"
+          ],
+          "correctOption": 0,
+          "solution": "1. Potential for the reaction $\\text{Cl}_2 + 2\\text{Br}^- \\rightarrow 2\\text{Cl}^- + \\text{Br}_2$:\n$$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{Cl}_2/\\text{Cl}^-} - E^\\circ_{\\text{Br}_2/\\text{Br}^-} = +1.36\\text{ V} - (+1.09\\text{ V}) = +0.27\\text{ V}$$\n2. Since $E^\\circ_{\\text{cell}} > 0$, the reaction is spontaneous.\n3. Chlorine has a higher reduction potential, so it acts as a stronger oxidizing agent and displaces bromine from aqueous bromide solutions."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] For the cell reaction $\\text{A}(s) + \\text{B}^{2+}(aq) \\rightleftharpoons \\text{A}^{2+}(aq) + \\text{B}(s)$, the equilibrium constant is $K = 10^4$ at $298\\text{ K}$. What is the value of $E^\\circ_{\\text{cell}}$? (Take $\\frac{2.303 RT}{F} = 0.059\\text{ V}$)",
+          "image": "",
+          "options": [
+            "$0.118\\text{ V}$",
+            "$0.059\\text{ V}$",
+            "$0.236\\text{ V}$",
+            "$0.0295\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In this reaction, $n = 2$ electrons are transferred.\n2. Using $E^\\circ_{\\text{cell}} = \\frac{0.059}{n}\\log_{10} K$:\n$$E^\\circ_{\\text{cell}} = \\frac{0.059}{2}\\log_{10}(10^4) = 0.0295 \\times 4 = 0.118\\text{ V}$$"
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the potential of a cell constructed by coupling two zinc electrodes dipping in $\\text{ZnSO}_4$ solutions of concentrations $0.1\\text{ M}$ and $0.001\\text{ M}$ at $298\\text{ K}$? (Take $\\frac{2.303 RT}{F} = 0.059\\text{ V}$)",
+          "image": "",
+          "options": [
+            "$0.059\\text{ V}$",
+            "$0.118\\text{ V}$",
+            "$0.0295\\text{ V}$",
+            "$0.000\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. This is a concentration cell with $E^\\circ_{\\text{cell}} = 0$ and $n = 2$:\n- Anode concentration: $C_1 = 0.001\\text{ M} = 10^{-3}\\text{ M}$\n- Cathode concentration: $C_2 = 0.1\\text{ M} = 10^{-1}\\text{ M}$\n2. Nernst equation:\n$$E_{\\text{cell}} = \\frac{0.059}{2}\\log_{10}\\left(\\frac{C_2}{C_1}\\right) = \\frac{0.059}{2}\\log_{10}\\left(\\frac{10^{-1}}{10^{-3}}\\right)$$\n$$E_{\\text{cell}} = 0.0295\\log_{10}(10^2) = 0.0295 \\times 2 = 0.059\\text{ V}$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements about standard electrode potentials and free energy is correct?",
+          "image": "",
+          "options": [
+            "$\\Delta_r G^\\circ$ is an extensive property, while $E^\\circ_{\\text{cell}}$ is an intensive property",
+            "Both $\\Delta_r G^\\circ$ and $E^\\circ_{\\text{cell}}$ are intensive properties",
+            "Both $\\Delta_r G^\\circ$ and $E^\\circ_{\\text{cell}}$ are extensive properties",
+            "$\\Delta_r G^\\circ$ is an intensive property, while $E^\\circ_{\\text{cell}}$ is an extensive property"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Gibbs free energy change ($\\Delta_r G^\\circ$):** Represents total energy content in Joules and scales directly with the quantity of substance (extensive property).\n2. **Cell potential ($E^\\circ_{\\text{cell}}$):** Represents electrical work per unit charge (Volts = Joules/Coulomb) and is independent of the size or scale of the cell (intensive property).\nTherefore, $\\Delta_r G^\\circ$ is extensive, while $E^\\circ_{\\text{cell}}$ is intensive."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In an experiment, the standard potential of a cell is found to be zero ($E^\\circ_{\\text{cell}} = 0$). The equilibrium constant ($K$) for this cell reaction is:",
+          "image": "",
+          "options": [
+            "$K = 1$",
+            "$K = 0$",
+            "$K = \\infty$",
+            "$K = 10$"
+          ],
+          "correctOption": 0,
+          "solution": "From the thermodynamic relation:\n$$E^\\circ_{\\text{cell}} = \\frac{RT}{nF}\\ln K$$\nIf $E^\\circ_{\\text{cell}} = 0$, then:\n$$\\ln K = 0 \\implies K = e^0 = 1$$"
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The standard reduction potentials are:\n- $E^\\circ_{\\text{MnO}_4^-/\\text{Mn}^{2+}} = +1.51\\text{ V}$\n- $E^\\circ_{\\text{Cr}_2\\text{O}_7^{2-}/\\text{Cr}^{3+}} = +1.33\\text{ V}$\n- $E^\\circ_{\\text{Cl}_2/\\text{Cl}^-} = +1.36\\text{ V}$\nWhich of the following oxidants is capable of oxidizing $\\text{Cl}^-$ to $\\text{Cl}_2$ under standard conditions?",
+          "image": "",
+          "options": [
+            "$\\text{MnO}_4^-$ only",
+            "$\\text{Cr}_2\\text{O}_7^{2-}$ only",
+            "Both $\\text{MnO}_4^-$ and $\\text{Cr}_2\\text{O}_7^{2-}$",
+            "Neither $\\text{MnO}_4^-$ nor $\\text{Cr}_2\\text{O}_7^{2-}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For an oxidizing agent to oxidize $\\text{Cl}^-$ ($E^\\circ = +1.36\\text{ V}$), the cell potential must be positive: $E^\\circ_{\\text{cell}} = E^\\circ_{\\text{oxidant}} - 1.36\\text{ V} > 0$.\n2. This requires $E^\\circ_{\\text{oxidant}} > +1.36\\text{ V}$.\n- For $\\text{MnO}_4^-$: $E^\\circ = +1.51\\text{ V} > +1.36\\text{ V}$ (can oxidize $\\text{Cl}^-$).\n- For $\\text{Cr}_2\\text{O}_7^{2-}$: $E^\\circ = +1.33\\text{ V} < +1.36\\text{ V}$ (cannot oxidize $\\text{Cl}^-$ under standard conditions).\nTherefore, only $\\text{MnO}_4^-$ can oxidize $\\text{Cl}^-$."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] A cell reaction has a positive enthalpy change ($\\Delta_r H > 0$, endothermic). If $\\Delta_r S > 0$ such that the cell operates spontaneously, what happens to the temperature of the cell during discharge under adiabatic conditions?",
+          "image": "",
+          "options": [
+            "The temperature of the cell decreases",
+            "The temperature of the cell increases",
+            "The temperature of the cell remains unchanged",
+            "The temperature drops to absolute zero"
+          ],
+          "correctOption": 0,
+          "solution": "1. The cell reaction is endothermic ($\\Delta_r H > 0$).\n2. In an endothermic process, the system absorbs heat from its internal thermal energy when insulated (adiabatic conditions).\n3. Furthermore, the cell delivers electrical work to the external circuit ($-\\Delta_r G = nFE$).\n4. Consequently, internal thermal energy is consumed, causing the **temperature of the cell to decrease** during discharge."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] What is the slope of the linear plot of $E_{\\text{cell}}$ versus $\\log_{10} Q$ for a two-electron redox reaction at $298\\text{ K}$?",
+          "image": "",
+          "options": [
+            "$-0.0295\\text{ V}$",
+            "$-0.0591\\text{ V}$",
+            "$+0.0295\\text{ V}$",
+            "$-0.118\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the Nernst equation:\n$$E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\left(\\frac{0.0591}{n}\\right) \\log_{10} Q$$\nComparing with the equation of a straight line ($y = c + mx$):\n- $y = E_{\\text{cell}}$\n- $x = \\log_{10} Q$\n- Intercept $c = E^\\circ_{\\text{cell}}$\n- $\\text{Slope } m = -\\frac{0.0591}{n}$\nFor $n = 2$:\n$$\\text{Slope} = -\\frac{0.0591}{2} = -0.02955\\text{ V} \\approx -0.0295\\text{ V}$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] An electrochemical cell is constructed as:\n$$\\text{Zn}(s) | \\text{Zn}^{2+}(1\\text{ M}) || \\text{Ag}^+(1\\text{ M}) | \\text{Ag}(s)$$\nGiven $E^\\circ_{\\text{Zn}^{2+}/\\text{Zn}} = -0.76\\text{ V}$ and $E^\\circ_{\\text{Ag}^+/\\text{Ag}} = +0.80\\text{ V}$. If the concentration of $\\text{Zn}^{2+}$ is changed to $0.1\\text{ M}$ while $[\\text{Ag}^+]$ remains $1\\text{ M}$, the cell potential increases by: (Take $\\frac{2.303 RT}{F} = 0.059\\text{ V}$)",
+          "image": "",
+          "options": [
+            "$0.0295\\text{ V}$",
+            "$0.059\\text{ V}$",
+            "$0.118\\text{ V}$",
+            "$0.015\\text{ V}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Cell reaction: $\\text{Zn}(s) + 2\\text{Ag}^+(aq) \\rightarrow \\text{Zn}^{2+}(aq) + 2\\text{Ag}(s)$ ($n = 2$).\n2. Nernst equation:\n$$E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\frac{0.0591}{2}\\log_{10}\\left(\\frac{[\\text{Zn}^{2+}]}{[\\text{Ag}^+]^2}\\right)$$\n3. Initially, $[\\text{Zn}^{2+}] = 1\\text{ M}$ and $[\\text{Ag}^+] = 1\\text{ M} \\implies E_1 = E^\\circ_{\\text{cell}}$.\n4. When $[\\text{Zn}^{2+}] = 0.1\\text{ M} = 10^{-1}\\text{ M}$:\n$$E_2 = E^\\circ_{\\text{cell}} - \\frac{0.0591}{2}\\log_{10}(10^{-1}) = E^\\circ_{\\text{cell}} - (0.02955)(-1) = E^\\circ_{\\text{cell}} + 0.02955\\text{ V}$$\n5. Increase in potential:\n$$\\Delta E = E_2 - E_1 = +0.02955\\text{ V} \\approx 0.0295\\text{ V}$$"
+        }
+      ]
+    }
+  ]
+}
