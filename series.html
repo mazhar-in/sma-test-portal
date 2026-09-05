@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Subject-wise & Test Series | SMA Test Portal</title>
-  <meta name="description" content="Structured subject-wise and exam-wise test series for JEE Main, JEE Advanced, and NEET aspirants." />
+  <title>Practice Hub | Select Exam, Subject & Topic - SMA Portal</title>
+  <meta name="description" content="Select target exam, subject, and chapter topics to filter and attempt computer based practice tests and DPPs." />
   <link rel="canonical" href="https://tests.smaphysics.com/series.html" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
         <div class="w-9 h-9 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-black text-sm shadow-sm">SMA</div>
         <div class="leading-tight">
           <span class="font-extrabold text-sm sm:text-base tracking-tight block text-slate-900 dark:text-white">SMA Portal</span>
-          <span class="text-[9px] sm:text-[10px] text-indigo-600 dark:text-indigo-400 font-bold uppercase tracking-wider block">Series & Curriculum</span>
+          <span class="text-[9px] sm:text-[10px] text-indigo-600 dark:text-indigo-400 font-bold uppercase tracking-wider block">Topic & Module Finder</span>
         </div>
       </a>
 
@@ -41,7 +41,7 @@
         <a href="series.html" class="px-3 py-1.5 rounded-lg bg-indigo-50 dark:bg-indigo-950/70 text-indigo-600 dark:text-indigo-400 font-bold">Series Hub</a>
       </nav>
 
-      <!-- Mobile Compact Segmented Nav -->
+      <!-- Mobile Segmented Nav -->
       <nav class="flex md:hidden items-center bg-slate-100 dark:bg-slate-800 p-1 rounded-xl border border-slate-200/80 dark:border-slate-700/80 text-[11px] font-bold">
         <a href="index.html" class="px-2.5 py-1 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-700 transition-colors">Home</a>
         <a href="jee-main.html" class="px-2.5 py-1 rounded-lg text-indigo-600 dark:text-indigo-400 hover:bg-white dark:hover:bg-slate-700 transition-colors">Main</a>
@@ -51,38 +51,79 @@
     </div>
   </header>
 
-  <main class="max-w-6xl mx-auto px-4 py-8 md:py-12 flex-1 w-full space-y-8">
-    <section class="text-center space-y-3 max-w-2xl mx-auto">
-      <span class="px-3 py-1 text-xs font-extrabold rounded-full bg-indigo-50 dark:bg-indigo-950/70 text-indigo-600 dark:text-indigo-400 border border-indigo-200/60 dark:border-indigo-800/60 uppercase tracking-wider">
-        Structured Preparation
-      </span>
-      <h1 class="text-3xl md:text-4xl font-black tracking-tight text-slate-900 dark:text-white">
-        Test Series & Modules
+  <main class="max-w-6xl mx-auto px-4 py-8 md:py-10 flex-1 w-full space-y-6">
+    
+    <!-- Heading -->
+    <section class="space-y-1">
+      <h1 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
+        Curriculum & Topic Explorer
       </h1>
-      <p class="text-xs md:text-sm text-slate-500 dark:text-slate-400">
-        Browse curated practice series organized by subject and exam pattern.
+      <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+        Filter by exam stream, subject, and chapter topic to practice targeted problem sets.
       </p>
     </section>
 
-    <!-- Grouping Mode Switcher -->
-    <div class="flex flex-col sm:flex-row gap-3 items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-4">
-      <div class="flex gap-2">
-        <button id="btn-subject" onclick="setGroupingMode('subject')" class="px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-xs">
-          📘 Group by Subject
-        </button>
-        <button id="btn-exam" onclick="setGroupingMode('exam')" class="px-4 py-2 rounded-xl text-xs font-bold bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/60">
-          🎯 Group by Exam
-        </button>
+    <!-- 3-Tier Selector Panel -->
+    <section class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 md:p-6 shadow-xs space-y-5">
+      
+      <!-- Tier 1: Exam Selection -->
+      <div class="space-y-2">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block">1. Target Exam</span>
+        <div class="flex flex-wrap gap-2" id="exam-selectors">
+          <button onclick="selectExam('all', this)" class="exam-btn px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-xs">
+            All Exams
+          </button>
+          <button onclick="selectExam('jee-main', this)" class="exam-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 transition-colors">
+            JEE Main
+          </button>
+          <button onclick="selectExam('jee-adv', this)" class="exam-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-amber-50 dark:hover:bg-amber-950/40 transition-colors">
+            JEE Advanced
+          </button>
+          <button onclick="selectExam('neet', this)" class="exam-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 transition-colors">
+            NEET UG
+          </button>
+        </div>
       </div>
 
-      <div class="text-xs text-slate-500 dark:text-slate-400 font-medium" id="series-stats">
-        Loading collections...
+      <!-- Tier 2: Subject Selection -->
+      <div class="space-y-2 pt-3 border-t border-slate-100 dark:border-slate-800/80">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block">2. Subject</span>
+        <div class="flex flex-wrap gap-2" id="subject-selectors">
+          <button onclick="selectSubject('all', this)" class="subject-btn px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-xs">
+            All Subjects
+          </button>
+          <button onclick="selectSubject('physics', this)" class="subject-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+            ⚡ Physics
+          </button>
+          <button onclick="selectSubject('mathematics', this)" class="subject-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+            📐 Mathematics
+          </button>
+          <button onclick="selectSubject('chemistry', this)" class="subject-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+            🧪 Chemistry
+          </button>
+        </div>
       </div>
+
+      <!-- Tier 3: Topic / Chapter Selection (Dynamic) -->
+      <div class="space-y-2 pt-3 border-t border-slate-100 dark:border-slate-800/80">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block">3. Topic / Chapter</span>
+        <div class="flex flex-wrap gap-1.5 max-h-36 overflow-y-auto pr-1" id="topic-selectors">
+          <button onclick="selectTopic('all', this)" class="topic-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-indigo-600 text-white shadow-xs">
+            All Topics
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Summary Bar -->
+    <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 px-1">
+      <span id="filter-status-text">Showing all tests</span>
+      <span id="test-count-badge" class="font-mono font-bold bg-slate-200 dark:bg-slate-800 px-2 py-0.5 rounded text-[11px]">0 Tests</span>
     </div>
 
-    <!-- Dynamic Container for Series & Test Cards -->
-    <div id="series-container" class="space-y-8">
-      <div class="py-16 text-center text-slate-400 animate-pulse text-xs">Loading series collections...</div>
+    <!-- Test Cards Grid -->
+    <div id="tests-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="col-span-full py-16 text-center text-slate-400 animate-pulse text-xs">Loading tests catalog...</div>
     </div>
   </main>
 
@@ -92,147 +133,246 @@
 
   <script>
     let allTests = [];
-    let currentMode = 'subject'; // 'subject' or 'exam'
+    let selectedExam = 'all';
+    let selectedSubject = 'all';
+    let selectedTopic = 'all';
+
+    // Topic definition dictionary based on standard syllabus keywords
+    const TOPIC_REGISTRY = {
+      mathematics: [
+        { id: 'sequence-series', name: 'Sequence & Series', keywords: ['sequence', 'series', 'ap', 'gp', 'hp', 'progression'] },
+        { id: 'quadratic-equations', name: 'Quadratic Equations', keywords: ['quadratic', 'roots', 'polynomial'] },
+        { id: 'sets-relations-functions', name: 'Sets, Relations & Functions', keywords: ['sets', 'relation', 'function', 'domain', 'range'] },
+        { id: 'itf-sot', name: 'ITF & Properties of Triangle', keywords: ['itf', 'sot', 'inverse trig', 'solution of triangle', 'triangle'] },
+        { id: 'trigonometry', name: 'Trigonometry & FOM', keywords: ['trig', 'fom', 'fundamentals of math', 'ratios'] },
+        { id: 'calculus', name: 'Calculus & Derivatives', keywords: ['limit', 'continuity', 'differentiation', 'integration', 'derivative'] }
+      ],
+      physics: [
+        { id: 'kinematics', name: 'Kinematics & Motion', keywords: ['kinematics', 'motion', 'projectile', 'relative motion', 'speed', 'velocity'] },
+        { id: 'current-electricity', name: 'Current Electricity', keywords: ['current', 'electricity', 'circuits', 'resistance', 'galvanometer', 'heating'] },
+        { id: 'mechanics', name: 'Laws of Motion & Work', keywords: ['nlm', 'friction', 'work', 'energy', 'power', 'rotation'] },
+        { id: 'electromagnetism', name: 'Electromagnetism & Induction', keywords: ['magnetic', 'electro', 'capacitor', 'induction', 'emi', 'ac'] }
+      ],
+      chemistry: [
+        { id: 'physical-chemistry', name: 'Physical Chemistry', keywords: ['mole', 'atomic', 'thermodynamics', 'equilibrium', 'kinetics'] },
+        { id: 'organic-chemistry', name: 'Organic Chemistry', keywords: ['goc', 'hydrocarbon', 'organic', 'isomerism'] },
+        { id: 'inorganic-chemistry', name: 'Inorganic Chemistry', keywords: ['periodic', 'bonding', 'coordination', 'block'] }
+      ]
+    };
 
     function extractSubject(test) {
       const text = (test.title + ' ' + test.id + ' ' + (test.syllabus || '')).toLowerCase();
-      if (text.includes('math') || text.includes('trig') || text.includes('quadratic') || text.includes('itf') || text.includes('sequence')) return 'Mathematics';
-      if (text.includes('physics') || text.includes('kinematics') || text.includes('current') || text.includes('optics') || text.includes('electro')) return 'Physics';
-      if (text.includes('chem') || text.includes('organic') || text.includes('inorganic') || text.includes('physical chem')) return 'Chemistry';
-      if (text.includes('biology') || text.includes('botany') || text.includes('zoology')) return 'Biology';
-      return 'Full Syllabus / Multi-Subject';
+      if (text.includes('math') || text.includes('trig') || text.includes('quadratic') || text.includes('itf') || text.includes('sequence') || text.includes('sot')) return 'mathematics';
+      if (text.includes('physics') || text.includes('kinematics') || text.includes('current') || text.includes('optics') || text.includes('electro')) return 'physics';
+      if (text.includes('chem') || text.includes('organic') || text.includes('inorganic') || text.includes('physical chem')) return 'chemistry';
+      return 'physics';
     }
 
-    function extractExamName(test) {
+    function extractExam(test) {
       const badge = (test.badge || test.exam || '').toLowerCase();
-      if (badge.includes('adv')) return 'JEE Advanced';
-      if (badge.includes('neet')) return 'NEET UG';
-      return 'JEE Main';
+      if (badge.includes('adv')) return 'jee-adv';
+      if (badge.includes('neet')) return 'neet';
+      return 'jee-main';
     }
 
-    async function loadSeriesCatalog() {
+    function matchesTopic(test, topicId) {
+      if (topicId === 'all') return true;
+      const text = (test.title + ' ' + test.id + ' ' + (test.syllabus || '')).toLowerCase();
+
+      // Find keywords for topicId
+      for (const subj in TOPIC_REGISTRY) {
+        const found = TOPIC_REGISTRY[subj].find(t => t.id === topicId);
+        if (found) {
+          return found.keywords.some(kw => text.includes(kw));
+        }
+      }
+      return false;
+    }
+
+    function extractTestNum(title, id) {
+      const match = (title + ' ' + id).match(/(?:DPP|Test|No)[\s\-_]*(\d+)/i);
+      return match ? parseInt(match[1], 10) : 0;
+    }
+
+    async function initFinder() {
       try {
         const res = await fetch(`./assets/tests-manifest.json?t=${new Date().getTime()}`);
         if (!res.ok) throw new Error("Could not load tests-manifest.json");
-        allTests = await res.json();
-        renderSeriesGroups();
+        const raw = await res.json();
+
+        allTests = raw.sort((a, b) => {
+          const dateDiff = (b.date || '').localeCompare(a.date || '');
+          if (dateDiff !== 0) return dateDiff;
+          const numDiff = extractTestNum(b.title, b.id) - extractTestNum(a.title, a.id);
+          if (numDiff !== 0) return numDiff;
+          return (b.title || '').localeCompare(a.title || '');
+        });
+
+        populateTopicButtons();
+        applyFilters();
       } catch (err) {
         console.error(err);
-        document.getElementById('series-container').innerHTML = `
-          <div class="py-12 text-center text-rose-500 font-semibold text-xs">
-            ⚠️ Failed to load tests manifest. Please try refreshing.
+        document.getElementById('tests-grid').innerHTML = `
+          <div class="col-span-full py-12 text-center text-rose-500 font-semibold text-xs">
+            ⚠️ Failed to load tests catalog. Please try refreshing.
           </div>`;
       }
     }
 
-    function setGroupingMode(mode) {
-      currentMode = mode;
-      const btnSubject = document.getElementById('btn-subject');
-      const btnExam = document.getElementById('btn-exam');
-
-      if (mode === 'subject') {
-        btnSubject.className = 'px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-xs';
-        btnExam.className = 'px-4 py-2 rounded-xl text-xs font-bold bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/60';
-      } else {
-        btnExam.className = 'px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-xs';
-        btnSubject.className = 'px-4 py-2 rounded-xl text-xs font-bold bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/60';
-      }
-      renderSeriesGroups();
-    }
-
-    function renderSeriesGroups() {
-      const container = document.getElementById('series-container');
-      const statsEl = document.getElementById('series-stats');
+    function populateTopicButtons() {
+      const container = document.getElementById('topic-selectors');
       if (!container) return;
 
-      const groups = {};
+      let availableTopics = [];
+      if (selectedSubject === 'all') {
+        Object.values(TOPIC_REGISTRY).forEach(list => availableTopics.push(...list));
+      } else if (TOPIC_REGISTRY[selectedSubject]) {
+        availableTopics = TOPIC_REGISTRY[selectedSubject];
+      }
 
-      allTests.forEach(test => {
-        const key = currentMode === 'subject' ? extractSubject(test) : extractExamName(test);
-        if (!groups[key]) groups[key] = [];
-        groups[key].push(test);
+      container.innerHTML = `
+        <button onclick="selectTopic('all', this)" class="topic-btn px-3 py-1.5 rounded-lg text-xs font-bold ${selectedTopic === 'all' ? 'bg-indigo-600 text-white shadow-xs' : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors'}">
+          All Topics
+        </button>
+      ` + availableTopics.map(t => {
+        const isActive = selectedTopic === t.id;
+        const activeClass = isActive ? 'bg-indigo-600 text-white shadow-xs' : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors';
+        return `
+          <button onclick="selectTopic('${t.id}', this)" class="topic-btn px-3 py-1.5 rounded-lg text-xs font-bold ${activeClass}">
+            ${t.name}
+          </button>
+        `;
+      }).join('');
+    }
+
+    function selectExam(exam, btn) {
+      selectedExam = exam;
+      document.querySelectorAll('.exam-btn').forEach(b => {
+        b.className = 'exam-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors';
       });
 
-      const groupKeys = Object.keys(groups);
-      if (statsEl) statsEl.innerText = `${allTests.length} Total Tests across ${groupKeys.length} ${currentMode === 'subject' ? 'Subjects' : 'Exam Streams'}`;
+      let activeColor = 'bg-indigo-600 text-white shadow-xs';
+      if (exam === 'jee-adv') activeColor = 'bg-amber-600 text-white shadow-xs';
+      if (exam === 'neet') activeColor = 'bg-emerald-600 text-white shadow-xs';
+      btn.className = `exam-btn px-4 py-2 rounded-xl text-xs font-bold ${activeColor}`;
 
-      if (groupKeys.length === 0) {
-        container.innerHTML = `<div class="py-16 text-center text-xs text-slate-400">No tests available.</div>`;
+      applyFilters();
+    }
+
+    function selectSubject(subject, btn) {
+      selectedSubject = subject;
+      selectedTopic = 'all'; // Reset topic when subject changes
+
+      document.querySelectorAll('.subject-btn').forEach(b => {
+        b.className = 'subject-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors';
+      });
+
+      btn.className = 'subject-btn px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-xs';
+
+      populateTopicButtons();
+      applyFilters();
+    }
+
+    function selectTopic(topicId, btn) {
+      selectedTopic = topicId;
+      document.querySelectorAll('.topic-btn').forEach(b => {
+        b.className = 'topic-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors';
+      });
+
+      btn.className = 'topic-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-indigo-600 text-white shadow-xs';
+      applyFilters();
+    }
+
+    function applyFilters() {
+      const filtered = allTests.filter(t => {
+        const matchesExam = (selectedExam === 'all') || (extractExam(t) === selectedExam);
+        const matchesSubj = (selectedSubject === 'all') || (extractSubject(t) === selectedSubject);
+        const matchesTop = (selectedTopic === 'all') || matchesTopic(t, selectedTopic);
+        return matchesExam && matchesSubj && matchesTop;
+      });
+
+      const examLabel = selectedExam === 'all' ? 'All Exams' : selectedExam === 'jee-main' ? 'JEE Main' : selectedExam === 'jee-adv' ? 'JEE Advanced' : 'NEET UG';
+      const subjectLabel = selectedSubject === 'all' ? 'All Subjects' : selectedSubject.charAt(0).toUpperCase() + selectedSubject.slice(1);
+      
+      let topicLabel = 'All Topics';
+      if (selectedTopic !== 'all') {
+        for (const subj in TOPIC_REGISTRY) {
+          const found = TOPIC_REGISTRY[subj].find(t => t.id === selectedTopic);
+          if (found) { topicLabel = found.name; break; }
+        }
+      }
+
+      document.getElementById('filter-status-text').innerText = `${examLabel} • ${subjectLabel} • ${topicLabel}`;
+      document.getElementById('test-count-badge').innerText = `${filtered.length} Test${filtered.length === 1 ? '' : 's'}`;
+
+      renderGrid(filtered);
+    }
+
+    function renderGrid(tests) {
+      const grid = document.getElementById('tests-grid');
+      if (!grid) return;
+
+      if (tests.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full py-16 text-center bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 space-y-2">
+            <span class="text-2xl">📋</span>
+            <div class="font-bold text-sm">No tests found for this combination</div>
+            <p class="text-xs text-slate-400">Try selecting "All Topics" or switching subject/exam filters.</p>
+          </div>`;
         return;
       }
 
-      container.innerHTML = groupKeys.map((groupName, groupIdx) => {
-        const tests = groups[groupName];
+      grid.innerHTML = tests.map(t => {
+        const isAdv = t.exam === 'jee-adv' || (t.badge && t.badge.toLowerCase().includes('adv'));
+        const isNeet = t.exam === 'neet' || (t.badge && t.badge.toLowerCase().includes('neet'));
 
-        // Group Accent Styles
-        let groupColor = 'indigo';
-        if (groupName.includes('Advanced') || groupName.includes('Chemistry')) groupColor = 'amber';
-        if (groupName.includes('NEET') || groupName.includes('Biology')) groupColor = 'emerald';
+        let badgeColor = 'bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border-indigo-200 dark:border-indigo-800';
+        let cardHover = 'hover:border-indigo-500/50';
+        let titleHover = 'group-hover:text-indigo-600 dark:group-hover:text-indigo-400';
+        let startBtn = 'bg-indigo-600 hover:bg-indigo-500';
 
-        const testCards = tests.map((t, idx) => {
-          const isAdv = t.exam === 'jee-adv' || (t.badge && t.badge.toLowerCase().includes('adv'));
-          const isNeet = t.exam === 'neet' || (t.badge && t.badge.toLowerCase().includes('neet'));
-
-          let badgeClass = 'bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border-indigo-200 dark:border-indigo-800';
-          let btnClass = 'bg-indigo-600 hover:bg-indigo-500';
-          if (isAdv) {
-            badgeClass = 'bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 border-amber-200 dark:border-amber-800';
-            btnClass = 'bg-amber-600 hover:bg-amber-500';
-          } else if (isNeet) {
-            badgeClass = 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800';
-            btnClass = 'bg-emerald-600 hover:bg-emerald-500';
-          }
-
-          return `
-            <div class="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 rounded-xl p-4 flex flex-col justify-between hover:border-slate-400 dark:hover:border-slate-600 transition-colors">
-              <div class="space-y-2">
-                <div class="flex items-center justify-between">
-                  <span class="text-[9px] font-extrabold px-2 py-0.5 rounded border uppercase tracking-wider ${badgeClass}">${t.badge || t.exam}</span>
-                  <span class="text-[10px] text-slate-400 font-mono">${t.date || ''}</span>
-                </div>
-                <a href="${t.testUrl}" class="block group">
-                  <h4 class="font-bold text-xs sm:text-sm text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 line-clamp-2 transition-colors">
-                    ${t.title}
-                  </h4>
-                </a>
-                ${t.syllabus ? `<p class="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-2">📚 ${t.syllabus}</p>` : ''}
-              </div>
-
-              <div class="mt-4 pt-2.5 border-t border-slate-200/60 dark:border-slate-700/60 flex items-center justify-between">
-                <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">⏱ ${t.duration} • 📝 ${t.questionsCount} Qs</span>
-                <div class="flex gap-1.5">
-                  <a href="${t.resultUrl}" class="px-2 py-1 rounded-lg border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-700 font-bold text-[10px]">Key</a>
-                  <a href="${t.testUrl}" class="px-3 py-1 rounded-lg ${btnClass} text-white font-bold text-[10px] shadow-xs active:scale-95 transition-all">Start</a>
-                </div>
-              </div>
-            </div>
-          `;
-        }).join('');
+        if (isAdv) {
+          badgeColor = 'bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 border-amber-200 dark:border-amber-800';
+          cardHover = 'hover:border-amber-500/50';
+          titleHover = 'group-hover:text-amber-600 dark:group-hover:text-amber-400';
+          startBtn = 'bg-amber-600 hover:bg-amber-500';
+        } else if (isNeet) {
+          badgeColor = 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800';
+          cardHover = 'hover:border-emerald-500/50';
+          titleHover = 'group-hover:text-emerald-600 dark:group-hover:text-emerald-400';
+          startBtn = 'bg-emerald-600 hover:bg-emerald-500';
+        }
 
         return `
-          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 md:p-6 shadow-xs space-y-4">
-            <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
-              <div class="flex items-center space-x-2.5">
-                <div class="w-8 h-8 rounded-lg bg-${groupColor}-50 dark:bg-${groupColor}-950/60 text-${groupColor}-600 dark:text-${groupColor}-400 flex items-center justify-center font-bold text-xs border border-${groupColor}-200 dark:border-${groupColor}-800">
-                  ${groupIdx + 1}
-                </div>
-                <div>
-                  <h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">${groupName}</h2>
-                  <span class="text-[11px] text-slate-400 block">${tests.length} Assessment(s) Available</span>
-                </div>
+          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-xs ${cardHover} flex flex-col justify-between transition-colors">
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-extrabold px-2 py-0.5 rounded border uppercase tracking-wide ${badgeColor}">${t.badge || t.exam}</span>
+                <span class="text-[11px] text-slate-400 font-mono">${t.date || ''}</span>
+              </div>
+              <div>
+                <a href="${t.testUrl}" class="group block">
+                  <h3 class="font-bold text-sm md:text-base text-slate-900 dark:text-white ${titleHover} line-clamp-2 leading-snug transition-colors">
+                    ${t.title}
+                  </h3>
+                </a>
+                ${t.syllabus ? `<p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5 line-clamp-2 leading-relaxed">📚 <span class="font-semibold text-slate-700 dark:text-slate-300">Syllabus:</span> ${t.syllabus}</p>` : ''}
               </div>
             </div>
-
-            <!-- Nested Test Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-              ${testCards}
+            
+            <div class="mt-5 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+              <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">⏱ ${t.duration} • 📝 ${t.questionsCount} Qs</span>
+              <div class="flex gap-1.5">
+                <a href="${t.resultUrl}" class="px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold text-xs">Solutions</a>
+                <a href="${t.testUrl}" class="px-3.5 py-1.5 rounded-lg ${startBtn} active:scale-95 text-white font-bold text-xs shadow-xs">Start</a>
+              </div>
             </div>
           </div>
         `;
       }).join('');
     }
 
-    window.addEventListener('DOMContentLoaded', loadSeriesCatalog);
+    window.addEventListener('DOMContentLoaded', initFinder);
   </script>
 </body>
 </html>
