@@ -899,6 +899,12 @@ def generate_sitemap(base_dir, manifest):
     <priority>1.0</priority>
   </url>""",
         f"""  <url>
+    <loc>{DOMAIN}/series.html</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>""",
+        f"""  <url>
     <loc>{DOMAIN}/jee-main.html</loc>
     <lastmod>{today}</lastmod>
     <changefreq>daily</changefreq>
