@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-20-conductance-and-kohlrauschs-law",
+  "title": "Conductance & Kohlrausch's Law (Electrolytic Conductance, Molar Conductivity, & Ionic Mobility)",
+  "syllabus": "Electrolytic conductance, Ohm's law in ionic solutions, electrical resistance (R) and conductance (G); Resistivity (ρ) and conductivity / specific conductance (κ = G · l/A = (1/R) · G*); Cell constant (G* = l/A) and its experimental determination using standard KCl solutions; Molar conductivity (Λm = 1000 κ / M) and equivalent conductivity (Λeq = 1000 κ / N); Units and dimensional formulas of conductance parameters; Variation of conductivity and molar conductivity with concentration/dilution for strong and weak electrolytes; Debye-Hückel-Onsager equation for strong electrolytes (Λm = Λm° - A√C); Interionic attractions, electrophoretic effect, and relaxation effect; Kohlrausch's law of independent migration of ions and its formulation; Applications of Kohlrausch's law: determination of limiting molar conductivity (Λm°) of weak electrolytes, calculation of degree of dissociation (α = Λm / Λm°), dissociation constant of weak acids (Ka = Cα² / (1 - α)), ionic product of water (Kw), and solubility product (Ksp) of sparingly soluble salts; Conductometric titrations (qualitative curves for strong acid vs strong base, weak acid vs strong base, strong acid vs weak base, and precipitation reactions)",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The limiting molar conductivities ($\\Lambda_m^\\circ$) for $\\text{NaCl}$, $\\text{HCl}$, and $\\text{CH}_3\\text{COONa}$ at $298\\text{ K}$ are $126.4$, $425.9$, and $91.0\\text{ S cm}^2\\text{ mol}^{-1}$ respectively. The limiting molar conductivity for acetic acid ($\\text{CH}_3\\text{COOH}$) is:",
+          "image": "",
+          "options": [
+            "$390.5\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$425.9\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$516.9\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$290.5\\text{ S cm}^2\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "According to Kohlrausch's law of independent migration of ions:\n$$\\Lambda_m^\\circ(\\text{CH}_3\\text{COOH}) = \\lambda^\\circ(\\text{CH}_3\\text{COO}^-) + \\lambda^\\circ(\\text{H}^+)$$\nThis can be obtained by combining the given strong electrolytes:\n$$\\Lambda_m^\\circ(\\text{CH}_3\\text{COOH}) = \\Lambda_m^\\circ(\\text{CH}_3\\text{COONa}) + \\Lambda_m^\\circ(\\text{HCl}) - \\Lambda_m^\\circ(\\text{NaCl})$$\nSubstitute the numerical values:\n$$\\Lambda_m^\\circ(\\text{CH}_3\\text{COOH}) = 91.0 + 425.9 - 126.4 = 516.9 - 126.4 = 390.5\\text{ S cm}^2\\text{ mol}^{-1}$$"
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Upon continuous dilution of an aqueous electrolytic solution, which of the following variations occurs?",
+          "image": "",
+          "options": [
+            "Conductivity ($\\kappa$) decreases, while molar conductivity ($\\Lambda_m$) increases",
+            "Both conductivity ($\\kappa$) and molar conductivity ($\\Lambda_m$) increase",
+            "Both conductivity ($\\kappa$) and molar conductivity ($\\Lambda_m$) decrease",
+            "Conductivity ($\\kappa$) increases, while molar conductivity ($\\Lambda_m$) decreases"
+          ],
+          "correctOption": 0,
+          "solution": "1. **Conductivity ($\\kappa$):** Defined as the conductance of unit volume ($1\\text{ cm}^3$ or $1\\text{ m}^3$) of the electrolytic solution. Upon dilution, the number of current-carrying ions per unit volume decreases sharply. Consequently, conductivity ($\\kappa$) always decreases with dilution.\n2. **Molar conductivity ($\\Lambda_m = \\frac{\\kappa \\times 1000}{M}$):** Molar conductivity represents the conducting power of all ions produced from $1\\text{ mole}$ of electrolyte dissolved in volume $V$. As dilution increases, volume $V$ increases much more rapidly than the decrease in $\\kappa$. Furthermore, for weak electrolytes the degree of dissociation ($\\alpha$) increases, and for strong electrolytes interionic retarding forces diminish. Hence, $\\Lambda_m$ increases upon dilution."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The electrical resistance of a conductivity cell filled with $0.1\\text{ M } \\text{KCl}$ solution is $100\\,\\Omega$. If the conductivity of $0.1\\text{ M } \\text{KCl}$ solution is $1.29\\text{ S m}^{-1}$, the cell constant ($G^*$) of the cell is:",
+          "image": "",
+          "options": [
+            "$129\\text{ m}^{-1}$",
+            "$1.29\\text{ m}^{-1}$",
+            "$0.0129\\text{ m}^{-1}$",
+            "$12.9\\text{ m}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "The relation connecting resistance ($R$), conductivity ($\\kappa$), and cell constant ($G^* = \\frac{l}{A}$) is:\n$$\\kappa = \\frac{1}{R} \\times G^* \\implies G^* = \\kappa \\times R$$\nSubstitute $\\kappa = 1.29\\text{ S m}^{-1}$ and $R = 100\\,\\Omega$ (where $\\text{S} = \\Omega^{-1}$):\n$$G^* = 1.29\\text{ S m}^{-1} \\times 100\\,\\Omega = 129\\text{ m}^{-1}$$\n(In CGS units, $G^* = 1.29\\text{ cm}^{-1}$)."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The molar conductivity of a $0.025\\text{ mol L}^{-1}$ methanoic acid ($\\text{HCOOH}$) solution is $46.1\\text{ S cm}^2\\text{ mol}^{-1}$. If $\\Lambda_m^\\circ(\\text{HCOOH}) = 407.0\\text{ S cm}^2\\text{ mol}^{-1}$, the degree of dissociation ($\\alpha$) and dissociation constant ($K_a$) of the acid are respectively:",
+          "image": "",
+          "options": [
+            "$0.113$ and $3.67 \\times 10^{-4}\\text{ mol L}^{-1}$",
+            "$0.226$ and $1.42 \\times 10^{-4}\\text{ mol L}^{-1}$",
+            "$0.056$ and $7.34 \\times 10^{-5}\\text{ mol L}^{-1}$",
+            "$0.113$ and $1.83 \\times 10^{-4}\\text{ mol L}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Degree of dissociation ($\\alpha$):\n$$\\alpha = \\frac{\\Lambda_m}{\\Lambda_m^\\circ} = \\frac{46.1\\text{ S cm}^2\\text{ mol}^{-1}}{407.0\\text{ S cm}^2\\text{ mol}^{-1}} \\approx 0.11326 \\approx 0.113$$\n2. Dissociation constant ($K_a$):\n$$K_a = \\frac{C\\alpha^2}{1 - \\alpha}$$\nSubstitute $C = 0.025\\text{ M}$ and $\\alpha = 0.113$:\n$$K_a = \\frac{0.025 \\times (0.113)^2}{1 - 0.113} = \\frac{0.025 \\times 0.012769}{0.887} = \\frac{3.192 \\times 10^{-4}}{0.887} \\approx 3.67 \\times 10^{-4}\\text{ mol L}^{-1}$$"
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following equations correctly represents the Debye-Hückel-Onsager relation for a strong electrolyte at low concentrations?",
+          "image": "",
+          "options": [
+            "$\\Lambda_m = \\Lambda_m^\\circ - A\\sqrt{C}$",
+            "$\\Lambda_m = \\Lambda_m^\\circ + A\\sqrt{C}$",
+            "$\\Lambda_m = \\Lambda_m^\\circ - A C$",
+            "$\\Lambda_m^\\circ = \\Lambda_m - A\\sqrt{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "The Debye-Hückel-Onsager equation for completely dissociated strong electrolytes in dilute solutions is:\n$$\\Lambda_m = \\Lambda_m^\\circ - A\\sqrt{C}$$\nwhere:\n- $\\Lambda_m$ is the molar conductivity at concentration $C$\n- $\\Lambda_m^\\circ$ is the limiting molar conductivity at infinite dilution\n- $A$ is the Onsager constant (depending on temperature, dielectric constant, solvent viscosity, and electrolyte stoichiometry type, e.g., $1:1$ or $2:1$).\nA plot of $\\Lambda_m$ versus $\\sqrt{C}$ gives a straight line with $y$-intercept $\\Lambda_m^\\circ$ and negative slope $-A$."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The SI unit of molar conductivity ($\\Lambda_m$) is:",
+          "image": "",
+          "options": [
+            "$\\text{S m}^2\\text{ mol}^{-1}$",
+            "$\\text{S m}^{-1}\\text{ mol}^{-1}$",
+            "$\\text{S m}^2\\text{ mol}$",
+            "$\\Omega^{-1}\\text{ m}^{-2}\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "By definition:\n$$\\Lambda_m = \\frac{\\kappa}{C}$$\nIn SI base units:\n- Unit of conductivity ($\\kappa$): $\\text{S m}^{-1}$\n- Unit of concentration ($C$): $\\text{mol m}^{-3}$\n$$\\text{Unit of } \\Lambda_m = \\frac{\\text{S m}^{-1}}{\\text{mol m}^{-3}} = \\text{S m}^2\\text{ mol}^{-1}$$\n(In standard CGS/practical units, it is $\\text{S cm}^2\\text{ mol}^{-1}$ or $\\Omega^{-1}\\text{ cm}^2\\text{ mol}^{-1}$)."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] If the limiting molar conductivities of $\\text{Al}^{3+}$ and $\\text{SO}_4^{2-}$ ions are $189.0\\text{ S cm}^2\\text{ mol}^{-1}$ and $160.0\\text{ S cm}^2\\text{ mol}^{-1}$ respectively, the limiting molar conductivity of aluminium sulfate, $\\text{Al}_2(\\text{SO}_4)_3$, is:",
+          "image": "",
+          "options": [
+            "$858.0\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$349.0\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$698.0\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$538.0\\text{ S cm}^2\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "From Kohlrausch's law, the limiting molar conductivity of an electrolyte is the sum of the individual contributions of its constituent ions:\n$$\\Lambda_m^\\circ[\\text{Al}_2(\\text{SO}_4)_3] = 2\\,\\lambda^\\circ(\\text{Al}^{3+}) + 3\\,\\lambda^\\circ(\\text{SO}_4^{2-})$$\nSubstitute the given ion conductivities:\n$$\\Lambda_m^\\circ[\\text{Al}_2(\\text{SO}_4)_3] = 2(189.0) + 3(160.0) = 378.0 + 480.0 = 858.0\\text{ S cm}^2\\text{ mol}^{-1}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A conductivity cell filled with $0.02\\text{ M } \\text{AgNO}_3$ solution gives a resistance of $250\\,\\Omega$. If the cell constant is $0.50\\text{ cm}^{-1}$, the molar conductivity ($\\Lambda_m$) of the solution is:",
+          "image": "",
+          "options": [
+            "$100\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$200\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$50\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$25\\text{ S cm}^2\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate conductivity ($\\kappa$):\n$$\\kappa = \\frac{G^*}{R} = \\frac{0.50\\text{ cm}^{-1}}{250\\,\\Omega} = 2.0 \\times 10^{-3}\\text{ S cm}^{-1}$$\n2. Calculate molar conductivity ($\\Lambda_m$):\n$$\\Lambda_m = \\frac{\\kappa \\times 1000}{M}$$\n$$\\Lambda_m = \\frac{(2.0 \\times 10^{-3}\\text{ S cm}^{-1}) \\times 1000}{0.02\\text{ mol L}^{-1}} = \\frac{2.0}{0.02} = 100\\text{ S cm}^2\\text{ mol}^{-1}$$"
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Why can the limiting molar conductivity ($\\Lambda_m^\\circ$) of a weak electrolyte (like $\\text{CH}_3\\text{COOH}$) NOT be determined by direct graphical extrapolation of $\\Lambda_m$ versus $\\sqrt{C}$ to zero concentration?",
+          "image": "",
+          "options": [
+            "At high dilution, $\\Lambda_m$ increases very steeply and the plot becomes nearly parallel to the vertical axis, preventing reliable extrapolation to $C = 0$",
+            "Weak electrolytes completely decompose into elemental gases at infinite dilution",
+            "The cell constant changes continuously as concentration approaches zero",
+            "Ohm's law is not obeyed by weak electrolytes at low concentrations"
+          ],
+          "correctOption": 0,
+          "solution": "1. For strong electrolytes, $\\Lambda_m$ increases linearly with $\\sqrt{C}$ in dilute regimes because interionic retarding forces decrease smoothly, allowing easy extrapolation to the $y$-intercept ($C = 0$).\n2. For weak electrolytes, according to Ostwald's dilution law ($\\alpha = \\sqrt{K_a/C}$), ionization increases dramatically as concentration approaches zero ($C \\rightarrow 0$).\n3. Consequently, the $\\Lambda_m$ vs $\\sqrt{C}$ curve rises asymptotic/steeply near $C = 0$, running almost parallel to the molar conductivity axis.\n4. Hence, $\\Lambda_m^\\circ$ cannot be obtained by direct extrapolation and must be calculated indirectly via **Kohlrausch's law**."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The conductivity of a saturated aqueous solution of the sparingly soluble salt barium sulfate ($\\text{BaSO}_4$) at $298\\text{ K}$ is $3.06 \\times 10^{-6}\\text{ S cm}^{-1}$, and the conductivity of pure water is $0.60 \\times 10^{-6}\\text{ S cm}^{-1}$. If $\\Lambda_m^\\circ(\\text{BaSO}_4) = 287\\text{ S cm}^2\\text{ mol}^{-1}$, the solubility product ($K_{sp}$) of $\\text{BaSO}_4$ is approximately:",
+          "image": "",
+          "options": [
+            "$7.34 \\times 10^{-11}\\text{ mol}^2\\text{ L}^{-2}$",
+            "$8.57 \\times 10^{-6}\\text{ mol}^2\\text{ L}^{-2}$",
+            "$1.14 \\times 10^{-10}\\text{ mol}^2\\text{ L}^{-2}$",
+            "$4.90 \\times 10^{-11}\\text{ mol}^2\\text{ L}^{-2}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Correct the conductivity for the contribution of water:\n$$\\kappa_{\\text{salt}} = \\kappa_{\\text{solution}} - \\kappa_{\\text{water}} = (3.06 - 0.60) \\times 10^{-6} = 2.46 \\times 10^{-6}\\text{ S cm}^{-1}$$\n2. In a saturated solution of a sparingly soluble salt, concentration equals molar solubility ($C = s$). Because the solution is extremely dilute, $\\Lambda_m \\approx \\Lambda_m^\\circ$:\n$$\\Lambda_m^\\circ = \\frac{\\kappa_{\\text{salt}} \\times 1000}{s}$$\n$$s = \\frac{\\kappa_{\\text{salt}} \\times 1000}{\\Lambda_m^\\circ} = \\frac{2.46 \\times 10^{-6} \\times 1000}{287} = \\frac{2.46 \\times 10^{-3}}{287} \\approx 8.571 \\times 10^{-6}\\text{ mol L}^{-1}$$\n3. Calculate $K_{sp}$ for $\\text{BaSO}_4$ ($1:1$ salt):\n$$K_{sp} = s^2 = (8.571 \\times 10^{-6})^2 \\approx 7.346 \\times 10^{-11}\\text{ mol}^2\\text{ L}^{-2}$$"
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For an electrolyte $A_x B_y$, the relationship between its limiting equivalent conductivity ($\\Lambda_{\\text{eq}}^\\circ$) and limiting molar conductivity ($\\Lambda_m^\\circ$) is:",
+          "image": "",
+          "options": [
+            "$\\Lambda_{\\text{eq}}^\\circ = \\frac{\\Lambda_m^\\circ}{x \\cdot z_A} = \\frac{\\Lambda_m^\\circ}{y \\cdot z_B}$",
+            "$\\Lambda_{\\text{eq}}^\\circ = \\Lambda_m^\\circ \\times (x + y)$",
+            "$\\Lambda_{\\text{eq}}^\\circ = \\Lambda_m^\\circ \\times (x \\cdot y)$",
+            "$\\Lambda_{\\text{eq}}^\\circ = \\frac{\\Lambda_m^\\circ}{x + y}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Normality and Molarity are related by $N = M \\times n\\text{-factor}$.\n2. For a salt $A_x B_y$, the $n$-factor is the total positive or negative valence charge:\n$$n\\text{-factor} = x \\cdot z_A = y \\cdot z_B$$\nwhere $z_A$ is the charge of cation $A$ and $z_B$ is the charge of anion $B$.\n3. Since $\\Lambda_m = \\frac{1000\\kappa}{M}$ and $\\Lambda_{\\text{eq}} = \\frac{1000\\kappa}{N}$:\n$$\\Lambda_{\\text{eq}} = \\frac{\\Lambda_m}{n\\text{-factor}} = \\frac{\\Lambda_m}{x \\cdot z_A} = \\frac{\\Lambda_m}{y \\cdot z_B}$$\nFor example, for $\\text{Al}_2(\\text{SO}_4)_3$: $n\\text{-factor} = 2 \\times 3 = 6$, so $\\Lambda_{\\text{eq}}^\\circ = \\frac{\\Lambda_m^\\circ}{6}$."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "In a conductometric titration of a strong acid ($\\text{HCl}$) with a strong base ($\\text{NaOH}$), the conductance initially decreases steeply before the equivalence point and then increases steeply after the equivalence point. This characteristic V-shaped curve is due to:",
+          "image": "",
+          "options": [
+            "Fast-moving $\\text{H}^+$ ions ($349.6\\text{ S cm}^2\\text{ mol}^{-1}$) being replaced by slower-moving $\\text{Na}^+$ ions ($50.1\\text{ S cm}^2\\text{ mol}^{-1}$), followed by excess highly conducting $\\text{OH}^-$ ions ($198.0\\text{ S cm}^2\\text{ mol}^{-1}$)",
+            "Precipitation of sodium chloride at the equivalence point",
+            "Complete evaporation of water during neutralization",
+            "The cell constant doubling at the equivalence point"
+          ],
+          "correctOption": 0,
+          "solution": "1. Prior to the equivalence point: $\\text{H}^+(aq) + \\text{Cl}^-(aq) + \\text{Na}^+(aq) + \\text{OH}^-(aq) \\rightarrow \\text{H}_2\\text{O}(l) + \\text{Na}^+(aq) + \\text{Cl}^-(aq)$. Highly mobile hydronium ions ($\\lambda^\\circ \\approx 349.6\\text{ S cm}^2\\text{ mol}^{-1}$ via the Grotthuss proton-hopping mechanism) are progressively replaced by significantly slower sodium ions ($\\lambda^\\circ \\approx 50.1\\text{ S cm}^2\\text{ mol}^{-1}$). Hence, total electrical conductance falls sharply.\n2. At the equivalence point: Conductance reaches a distinct minimum (comprising only $\\text{Na}^+$ and $\\text{Cl}^-$ ions).\n3. Past the equivalence point: Added $\\text{NaOH}$ introduces excess fast-moving hydroxide ions ($\\lambda^\\circ \\approx 198.0\\text{ S cm}^2\\text{ mol}^{-1}$) alongside $\\text{Na}^+$, causing conductance to rise rapidly."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An alternating current (AC) source in the audio frequency range ($550-3000\\text{ Hz}$) is used instead of a direct current (DC) source in a Wheatstone bridge for measuring the resistance of an electrolytic solution because:",
+          "image": "",
+          "options": [
+            "DC causes electrolysis and electrode polarization, altering the composition and concentration of the solution",
+            "AC increases the resistance of the solution to infinity",
+            "Electrolytes only conduct alternating current and insulate direct current",
+            "DC burns the platinum black coating off the electrodes"
+          ],
+          "correctOption": 0,
+          "solution": "Two key experimental problems arise when measuring the resistance of electrolytic solutions:\n1. Passing direct current (DC) causes irreversible electrolysis and chemical changes at the electrode surfaces. This produces a layer of discharged gases or products, creating a counter electromotive force (**polarization effect**) that falsifies the resistance.\n2. Using an alternating current (AC) rapidly reverses the direction of current before any measurable polarization or concentration gradient can form, maintaining solution uniformity."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The limiting molar conductivity of $\\text{CaCl}_2$ is $271.6\\text{ S cm}^2\\text{ mol}^{-1}$. If $\\lambda^\\circ(\\text{Cl}^-) = 76.3\\text{ S cm}^2\\text{ mol}^{-1}$, the limiting molar conductivity of $\\text{Ca}^{2+}$ ion ($\\lambda^\\circ(\\text{Ca}^{2+})$) is:",
+          "image": "",
+          "options": [
+            "$119.0\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$195.3\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$59.5\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$152.6\\text{ S cm}^2\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "From Kohlrausch's law:\n$$\\Lambda_m^\\circ(\\text{CaCl}_2) = \\lambda^\\circ(\\text{Ca}^{2+}) + 2\\,\\lambda^\\circ(\\text{Cl}^-)$$\nSubstitute the given values:\n$$271.6 = \\lambda^\\circ(\\text{Ca}^{2+}) + 2(76.3)$$\n$$271.6 = \\lambda^\\circ(\\text{Ca}^{2+}) + 152.6$$\n$$\\lambda^\\circ(\\text{Ca}^{2+}) = 271.6 - 152.6 = 119.0\\text{ S cm}^2\\text{ mol}^{-1}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the relationship between the cell constant ($G^*$), resistance ($R$), and conductivity ($\\kappa$) for an electrolytic conductor?",
+          "image": "",
+          "options": [
+            "$G^* = R \\cdot \\kappa$",
+            "$G^* = \\frac{R}{\\kappa}$",
+            "$G^* = \\frac{\\kappa}{R}$",
+            "$G^* = \\frac{1}{R \\cdot \\kappa}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Resistance is defined as:\n$$R = \\rho \\frac{l}{A} = \\frac{1}{\\kappa} \\frac{l}{A}$$\n2. The ratio $\\frac{l}{A}$ is the cell constant ($G^*$):\n$$R = \\frac{G^*}{\\kappa} \\implies G^* = R \\cdot \\kappa$$\n$$\\text{Cell Constant} = \\text{Resistance} \\times \\text{Conductivity}$$"
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In the Debye-Hückel-Onsager theory, the retardation of ionic motion caused by the deformation of the symmetrical ionic atmosphere around a moving central ion is known as the:",
+          "image": "",
+          "options": [
+            "Relaxation effect (or asymmetry effect)",
+            "Electrophoretic effect",
+            "Viscous drag effect",
+            "Common ion effect"
+          ],
+          "correctOption": 0,
+          "solution": "1. In an electrolytic solution at rest, each ion is surrounded by a spherically symmetrical ionic atmosphere of opposite charge.\n2. Under an applied electric field, the central ion moves in one direction while its oppositely charged ionic atmosphere moves in the opposite direction.\n3. The ionic atmosphere behind the moving ion takes a finite time to dissipate and re-form ahead (**relaxation time**).\n4. Consequently, the ionic atmosphere becomes asymmetrical, with greater charge density lagging behind the moving ion, exerting an electrostatic backward drag. This is the **relaxation effect** (or asymmetry effect).\n(The drag resulting from counter-flowing solvent molecules bound to the atmosphere is the electrophoretic effect)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A conductivity cell has a resistance of $50\\,\\Omega$ when filled with $0.1\\text{ M } \\text{KCl}$ ($\\kappa = 1.3\\text{ S m}^{-1}$) and a resistance of $260\\,\\Omega$ when filled with $0.02\\text{ M } \\text{NaCl}$ solution. The molar conductivity of the $\\text{NaCl}$ solution is:",
+          "image": "",
+          "options": [
+            "$125.0 \\times 10^{-4}\\text{ S m}^2\\text{ mol}^{-1}$",
+            "$62.5 \\times 10^{-4}\\text{ S m}^2\\text{ mol}^{-1}$",
+            "$250.0 \\times 10^{-4}\\text{ S m}^2\\text{ mol}^{-1}$",
+            "$12.5 \\times 10^{-4}\\text{ S m}^2\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Find cell constant ($G^*$) using $\\text{KCl}$:\n$$G^* = \\kappa \\times R = 1.3\\text{ S m}^{-1} \\times 50\\,\\Omega = 65\\text{ m}^{-1}$$\n2. Find conductivity of $\\text{NaCl}$ solution ($\\kappa_{\\text{NaCl}}$):\n$$\\kappa_{\\text{NaCl}} = \\frac{G^*}{R_{\\text{NaCl}}} = \\frac{65\\text{ m}^{-1}}{260\\,\\Omega} = 0.25\\text{ S m}^{-1}$$\n3. Convert concentration to SI units:\n$$C = 0.02\\text{ mol L}^{-1} = 0.02 \\times 10^3\\text{ mol m}^{-3} = 20\\text{ mol m}^{-3}$$\n4. Calculate molar conductivity ($\\Lambda_m$):\n$$\\Lambda_m = \\frac{\\kappa}{C} = \\frac{0.25\\text{ S m}^{-1}}{20\\text{ mol m}^{-3}} = 0.0125\\text{ S m}^2\\text{ mol}^{-1} = 125.0 \\times 10^{-4}\\text{ S m}^2\\text{ mol}^{-1}$$"
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] Which of the following ions has the MAXIMUM limiting ionic conductivity ($\\lambda^\\circ$) in dilute aqueous solution at $298\\text{ K}$?",
+          "image": "",
+          "options": [
+            "$\\text{H}^+(aq)$",
+            "$\\text{OH}^-(aq)$",
+            "$\\text{K}^+(aq)$",
+            "$\\text{Na}^+(aq)$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In aqueous solutions, $\\text{H}^+(aq)$ (as $\\text{H}_3\\text{O}^+$) has by far the highest limiting ionic conductivity ($\\lambda^\\circ \\approx 349.6\\text{ S cm}^2\\text{ mol}^{-1}$).\n2. Hydroxide ion ($\\text{OH}^-$) has the second highest ($\\lambda^\\circ \\approx 198.0\\text{ S cm}^2\\text{ mol}^{-1}$).\n3. Standard metal ions like $\\text{K}^+$ and $\\text{Na}^+$ have much lower conductivities ($73.5$ and $50.1\\text{ S cm}^2\\text{ mol}^{-1}$).\n4. This exceptionally rapid proton transport occurs via the **Grotthuss relay mechanism** (proton-jumping across an extensive network of hydrogen bonds), rather than physical hydrodynamic migration of solvated ions through bulk water."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The limiting molar conductivity of sodium chloride, $\\text{NaCl}$, can be expressed according to Kohlrausch's law as:",
+          "image": "",
+          "options": [
+            "$\\Lambda_m^\\circ(\\text{NaCl}) = \\lambda^\\circ(\\text{Na}^+) + \\lambda^\\circ(\\text{Cl}^-)$",
+            "$\\Lambda_m^\\circ(\\text{NaCl}) = \\lambda^\\circ(\\text{Na}^+) - \\lambda^\\circ(\\text{Cl}^-)$",
+            "$\\Lambda_m^\\circ(\\text{NaCl}) = \\frac{\\lambda^\\circ(\\text{Na}^+) + \\lambda^\\circ(\\text{Cl}^-)}{2}$",
+            "$\\Lambda_m^\\circ(\\text{NaCl}) = \\lambda^\\circ(\\text{Na}^+) \\times \\lambda^\\circ(\\text{Cl}^-)$"
+          ],
+          "correctOption": 0,
+          "solution": "Kohlrausch's law of independent migration of ions states that at infinite dilution, where all interionic interactions become zero, each ion contributes independently to the total molar conductivity of an electrolyte according to its stoichiometric coefficient:\n$$\\Lambda_m^\\circ = \\nu_+ \\lambda_+^\\circ + \\nu_- \\lambda_-^\\circ$$\nFor $\\text{NaCl}$ ($\\nu_+ = 1, \\nu_- = 1$):\n$$\\Lambda_m^\\circ(\\text{NaCl}) = \\lambda^\\circ(\\text{Na}^+) + \\lambda^\\circ(\\text{Cl}^-)$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The resistance of a $0.01\\text{ M}$ weak acid $\\text{HA}$ in a cell with cell constant $G^* = 0.40\\text{ cm}^{-1}$ is $2000\\,\\Omega$. If $\\Lambda_m^\\circ(\\text{HA}) = 400\\text{ S cm}^2\\text{ mol}^{-1}$, the dissociation constant ($K_a$) of the acid is:",
+          "image": "",
+          "options": [
+            "$2.63 \\times 10^{-5}\\text{ mol L}^{-1}$",
+            "$5.00 \\times 10^{-4}\\text{ mol L}^{-1}$",
+            "$1.00 \\times 10^{-5}\\text{ mol L}^{-1}$",
+            "$2.50 \\times 10^{-6}\\text{ mol L}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate conductivity ($\\kappa$):\n$$\\kappa = \\frac{G^*}{R} = \\frac{0.40\\text{ cm}^{-1}}{2000\\,\\Omega} = 2.0 \\times 10^{-4}\\text{ S cm}^{-1}$$\n2. Calculate molar conductivity ($\\Lambda_m$):\n$$\\Lambda_m = \\frac{\\kappa \\times 1000}{M} = \\frac{(2.0 \\times 10^{-4}) \\times 1000}{0.01} = \\frac{0.20}{0.01} = 20.0\\text{ S cm}^2\\text{ mol}^{-1}$$\n3. Calculate degree of dissociation ($\\alpha$):\n$$\\alpha = \\frac{\\Lambda_m}{\\Lambda_m^\\circ} = \\frac{20.0}{400.0} = 0.05$$\n4. Calculate $K_a$:\n$$K_a = \\frac{C\\alpha^2}{1 - \\alpha} = \\frac{0.01 \\times (0.05)^2}{1 - 0.05} = \\frac{0.01 \\times 0.0025}{0.95} = \\frac{2.5 \\times 10^{-5}}{0.95} \\approx 2.63 \\times 10^{-5}\\text{ mol L}^{-1}$$\n(Using $C\\alpha^2 = 2.5 \\times 10^{-5}$)."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Platinized platinum electrodes (coated with platinum black) are utilized in conductivity cells to:",
+          "image": "",
+          "options": [
+            "Increase surface area dramatically and minimize polarization effects",
+            "Act as an insoluble chemical catalyst for solute synthesis",
+            "Insulate the cell from external magnetic interference",
+            "Prevent water from hydrolyzing into hydrogen"
+          ],
+          "correctOption": 0,
+          "solution": "1. Platinum electrodes used in conductivity cells are coated electrolytically with a velvety, finely divided layer of **platinum black** (platinization).\n2. This dramatically increases the effective microscopic surface area of the electrodes.\n3. The massive surface area facilitates rapid reversible adsorption and desorption of charge carriers, significantly suppressing current density and reducing capacitive **electrode polarization** to an undetectable minimum."
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In a conductometric titration of acetic acid ($\\text{CH}_3\\text{COOH}$) with sodium hydroxide ($\\text{NaOH}$), the conductance initially decreases slightly, then rises slowly, and finally rises steeply after the end point. The initial slight decrease is caused by:",
+          "image": "",
+          "options": [
+            "The common ion effect of formed acetate ions ($\\text{CH}_3\\text{COO}^-$) suppressing the ionization of unreacted acetic acid",
+            "Complete neutralization of all acetate ions",
+            "Precipitation of sodium acetate",
+            "Temperature dropping to $0^\\circ\\text{C}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. When $\\text{NaOH}$ is added to weak $\\text{CH}_3\\text{COOH}$, highly conducting $\\text{H}^+$ ions are neutralized to form water, while sodium acetate ($\\text{CH}_3\\text{COONa}$) is generated.\n2. The newly formed acetate ions ($\\text{CH}_3\\text{COO}^-$) exert a strong **common ion effect**, suppressing the slight dissociation of remaining unreacted acetic acid.\n3. This causes an initial slight drop in conductance.\n4. As titration proceeds, conductance gradually rises because the concentration of $\\text{Na}^+$ and $\\text{CH}_3\\text{COO}^-$ ions increases.\n5. Past the equivalence point, excess fast-moving $\\text{OH}^-$ ions cause conductance to shoot up sharply."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The ionic conductivities of alkali metal cations at infinite dilution in water follow the order $\\text{Li}^+ < \\text{Na}^+ < \\text{K}^+ < \\text{Rb}^+ < \\text{Cs}^+$. The reason for $\\text{Li}^+$ having the LOWEST ionic conductance is:",
+          "image": "",
+          "options": [
+            "$\\text{Li}^+$ has the highest charge density and forms the largest hydrated ionic radius, resulting in the lowest mobility through water",
+            "$\\text{Li}^+$ has the largest bare ionic radius",
+            "$\\text{Li}^+$ does not possess valence electrons",
+            "$\\text{Li}^+$ forms an insoluble precipitate with water"
+          ],
+          "correctOption": 0,
+          "solution": "1. In the gas phase or crystalline lattice, $\\text{Li}^+$ has the smallest bare ionic radius among alkali metals.\n2. Due to its tiny size, $\\text{Li}^+$ possesses an exceptionally high positive surface charge density, exerting a powerful electrostatic attraction on polar water molecules.\n3. Consequently, $\\text{Li}^+$ undergoes extensive hydration and carries a massive, tightly bound hydration shell ($[\\text{Li}(\\text{H}_2\\text{O})_x]^+$).\n4. Its effective **hydrated ionic radius** in solution is the largest:  \n$$\\text{Hydrated Radius: } \\text{Li}^+ > \\text{Na}^+ > \\text{K}^+ > \\text{Rb}^+ > \\text{Cs}^+$$\n5. The bulkier hydrated ion experiences greater viscous drag moving through solvent water, giving $\\text{Li}^+$ the lowest ionic mobility and lowest conductivity."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Given the limiting molar conductivities:\n- $\\Lambda_m^\\circ[\\text{Ba(OH)}_2] = 457.6\\text{ S cm}^2\\text{ mol}^{-1}$\n- $\\Lambda_m^\\circ(\\text{BaCl}_2) = 240.6\\text{ S cm}^2\\text{ mol}^{-1}$\n- $\\Lambda_m^\\circ(\\text{NH}_4\\text{Cl}) = 129.8\\text{ S cm}^2\\text{ mol}^{-1}$\nThe limiting molar conductivity for ammonium hydroxide, $\\Lambda_m^\\circ(\\text{NH}_4\\text{OH})$, is:",
+          "image": "",
+          "options": [
+            "$238.3\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$508.4\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$346.8\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$119.2\\text{ S cm}^2\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "To obtain $\\Lambda_m^\\circ(\\text{NH}_4\\text{OH}) = \\lambda^\\circ(\\text{NH}_4^+) + \\lambda^\\circ(\\text{OH}^-)$:\n$$\\Lambda_m^\\circ(\\text{NH}_4\\text{OH}) = \\Lambda_m^\\circ(\\text{NH}_4\\text{Cl}) + \\frac{1}{2}\\Lambda_m^\\circ[\\text{Ba(OH)}_2] - \\frac{1}{2}\\Lambda_m^\\circ(\\text{BaCl}_2)$$\nSubstitute the given values:\n$$\\Lambda_m^\\circ(\\text{NH}_4\\text{OH}) = 129.8 + \\frac{457.6}{2} - \\frac{240.6}{2}$$\n$$\\Lambda_m^\\circ(\\text{NH}_4\\text{OH}) = 129.8 + 228.8 - 120.3 = 358.6 - 120.3 = 238.3\\text{ S cm}^2\\text{ mol}^{-1}$$"
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] When the concentration of a weak electrolyte solution approaches zero ($C \\rightarrow 0$), its degree of dissociation ($\\alpha$) approaches:",
+          "image": "",
+          "options": [
+            "$1$ (complete dissociation)",
+            "$0$",
+            "$0.5$",
+            "Infinity"
+          ],
+          "correctOption": 0,
+          "solution": "From Ostwald's dilution law for weak electrolytes:\n$$\\alpha = \\sqrt{\\frac{K}{C}}$$\nAs the solution is continuously diluted toward infinite dilution ($C \\rightarrow 0$):\n$$\\lim_{C \\to 0} \\alpha = 1$$\nAt infinite dilution, interionic separations become infinite, ion recombination ceases, and the weak electrolyte behaves as if it were $100\\%$ dissociated into independent ions ($\\Lambda_m \\rightarrow \\Lambda_m^\\circ$)."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The conductivity of $0.001\\text{ M } \\text{acetic acid}$ is $4.95 \\times 10^{-5}\\text{ S cm}^{-1}$. If $\\Lambda_m^\\circ(\\text{CH}_3\\text{COOH}) = 390.5\\text{ S cm}^2\\text{ mol}^{-1}$, the degree of dissociation ($\\alpha$) of the acid is:",
+          "image": "",
+          "options": [
+            "$0.1268$",
+            "$0.0126$",
+            "$0.2536$",
+            "$0.0634$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate molar conductivity ($\\Lambda_m$):\n$$\\Lambda_m = \\frac{\\kappa \\times 1000}{M} = \\frac{(4.95 \\times 10^{-5}\\text{ S cm}^{-1}) \\times 1000}{0.001\\text{ mol L}^{-1}} = \\frac{4.95 \\times 10^{-2}}{10^{-3}} = 49.5\\text{ S cm}^2\\text{ mol}^{-1}$$\n2. Calculate degree of dissociation ($\\alpha$):\n$$\\alpha = \\frac{\\Lambda_m}{\\Lambda_m^\\circ} = \\frac{49.5\\text{ S cm}^2\\text{ mol}^{-1}}{390.5\\text{ S cm}^2\\text{ mol}^{-1}} \\approx 0.12676 \\approx 0.1268$$\n(This corresponds to $12.68\\%$ ionization)."
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The conductance ($G$) of an electrolytic solution is directly proportional to its cross-sectional area ($A$) and inversely proportional to length ($l$). The proportionality constant is called:",
+          "image": "",
+          "options": [
+            "Conductivity ($\\kappa$)",
+            "Resistivity ($\\rho$)",
+            "Molar conductivity ($\\Lambda_m$)",
+            "Cell constant ($G^*$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Electrical resistance is given by $R = \\rho \\frac{l}{A}$.\n2. Conductance is the reciprocal of resistance:\n$$G = \\frac{1}{R} = \\frac{1}{\\rho} \\frac{A}{l} = \\kappa \\frac{A}{l}$$\n3. The proportionality constant $\\kappa$ (kappa) is the **specific conductance or conductivity**."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For the strong electrolytes $\\text{KCl}$, $\\text{KNO}_3$, and $\\text{HCl}$, the limiting molar conductivities are $149.9$, $145.0$, and $426.2\\text{ S cm}^2\\text{ mol}^{-1}$ respectively. What is $\\Lambda_m^\\circ$ for $\\text{HNO}_3$?",
+          "image": "",
+          "options": [
+            "$421.3\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$571.2\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$281.2\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$431.1\\text{ S cm}^2\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using Kohlrausch's law:\n$$\\Lambda_m^\\circ(\\text{HNO}_3) = \\Lambda_m^\\circ(\\text{HCl}) + \\Lambda_m^\\circ(\\text{KNO}_3) - \\Lambda_m^\\circ(\\text{KCl})$$\n$$\\Lambda_m^\\circ(\\text{HNO}_3) = 426.2 + 145.0 - 149.9 = 571.2 - 149.9 = 421.3\\text{ S cm}^2\\text{ mol}^{-1}$$"
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following factors does NOT increase the electrolytic conductivity of a solution?",
+          "image": "",
+          "options": [
+            "Increasing the viscosity of the solvent",
+            "Increasing the temperature of the solution",
+            "Increasing the degree of ionization of the electrolyte",
+            "Decreasing the size of the solvated ions"
+          ],
+          "correctOption": 0,
+          "solution": "1. Increasing the viscosity of the solvent exerts greater frictional resistance (viscous drag) on moving ions, lowering their mobility and **decreasing conductivity**.\n2. Raising the temperature decreases solvent viscosity and increases the kinetic energy/mobility of ions, increasing conductivity.\n3. Higher ionization yields more charge carriers, increasing conductivity.\n4. Smaller solvated radii move faster, increasing conductivity."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The limiting molar conductivities of $\\text{Na}^+$ and $\\text{Cl}^-$ are $50.1\\text{ S cm}^2\\text{ mol}^{-1}$ and $76.3\\text{ S cm}^2\\text{ mol}^{-1}$ respectively. What is the transport number (transference number, $t_+$) of $\\text{Na}^+$ in dilute $\\text{NaCl}$ solution?",
+          "image": "",
+          "options": [
+            "$0.396$",
+            "$0.604$",
+            "$0.500$",
+            "$0.657$"
+          ],
+          "correctOption": 0,
+          "solution": "The transport number of an ion is the fraction of the total current carried by that ion:\n$$t_+ = \\frac{\\lambda_+^\\circ}{\\Lambda_m^\\circ} = \\frac{\\lambda^\\circ(\\text{Na}^+)}{\\lambda^\\circ(\\text{Na}^+) + \\lambda^\\circ(\\text{Cl}^-)}$$\nSubstitute the values:\n$$t_+ = \\frac{50.1}{50.1 + 76.3} = \\frac{50.1}{126.4} \\approx 0.39636 \\approx 0.396$$\n(And $t_- = 1 - 0.396 = 0.604$ for $\\text{Cl}^-$)."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In conductometric titrations, the end point is determined graphically as:",
+          "image": "",
+          "options": [
+            "The intersection point of two linear branches showing distinctly different slopes",
+            "The point of maximum color intensity",
+            "The point where conductance reaches zero",
+            "The point where potential equals standard reduction potential"
+          ],
+          "correctOption": 0,
+          "solution": "1. In conductometric titrations, conductance is plotted against the volume of titrant added.\n2. Before and after the equivalence point, the solution undergoes changes in ionic composition, resulting in two distinct linear line segments with different slopes.\n3. The equivalence point (end point) is identified as the **point of intersection** of these two extrapolated straight lines."
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The limiting molar conductivity of a $1:1$ electrolyte is $\\Lambda_m^\\circ = 150\\text{ S cm}^2\\text{ mol}^{-1}$. In the Debye-Hückel-Onsager plot, the slope is $-60\\text{ S cm}^2\\text{ L}^{1/2}\\text{ mol}^{-3/2}$. The molar conductivity of the electrolyte at $C = 0.04\\text{ M}$ is:",
+          "image": "",
+          "options": [
+            "$138\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$144\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$126\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$150\\text{ S cm}^2\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "From the Debye-Hückel-Onsager equation:\n$$\\Lambda_m = \\Lambda_m^\\circ - A\\sqrt{C}$$\nGiven:\n- $\\Lambda_m^\\circ = 150\\text{ S cm}^2\\text{ mol}^{-1}$\n- $A = 60\\text{ S cm}^2\\text{ L}^{1/2}\\text{ mol}^{-3/2}$\n- $C = 0.04\\text{ M} \\implies \\sqrt{C} = \\sqrt{0.04} = 0.20\\text{ M}^{1/2}$\nSubstitute into the equation:\n$$\\Lambda_m = 150 - (60 \\times 0.20) = 150 - 12 = 138\\text{ S cm}^2\\text{ mol}^{-1}$$"
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] An aqueous solution of copper sulfate ($\\text{CuSO}_4$) has a resistance of $160\\,\\Omega$ in a cell of cell constant $0.80\\text{ cm}^{-1}$. The equivalent conductivity ($\\Lambda_{\\text{eq}}$) of $0.05\\text{ N } \\text{CuSO}_4$ solution is:",
+          "image": "",
+          "options": [
+            "$100\\text{ S cm}^2\\text{ eq}^{-1}$",
+            "$50\\text{ S cm}^2\\text{ eq}^{-1}$",
+            "$200\\text{ S cm}^2\\text{ eq}^{-1}$",
+            "$25\\text{ S cm}^2\\text{ eq}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate conductivity ($\\kappa$):\n$$\\kappa = \\frac{G^*}{R} = \\frac{0.80\\text{ cm}^{-1}}{160\\,\\Omega} = 0.005\\text{ S cm}^{-1} = 5.0 \\times 10^{-3}\\text{ S cm}^{-1}$$\n2. Calculate equivalent conductivity ($\\Lambda_{\\text{eq}}$):\n$$\\Lambda_{\\text{eq}} = \\frac{\\kappa \\times 1000}{N} = \\frac{(5.0 \\times 10^{-3}) \\times 1000}{0.05} = \\frac{5.0}{0.05} = 100\\text{ S cm}^2\\text{ eq}^{-1}$$"
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In which of the following cases does the electrical conductance of the solution increase when the temperature is raised?",
+          "image": "",
+          "options": [
+            "In electrolytic solutions, because ionic kinetic energy increases and solvent viscosity decreases",
+            "In metallic conductors like copper wire",
+            "In semiconductors only",
+            "Electrolytic conductance is independent of temperature"
+          ],
+          "correctOption": 0,
+          "solution": "1. In **electrolytic solutions**, electrical conduction is carried out by moving ions. Raising the temperature decreases solvent viscosity (lowering hydrodynamic drag) and increases ionic velocities ($K.E. \\propto T$). Furthermore, for weak electrolytes, endothermic dissociation increases. Hence, **electrolytic conductance increases with temperature**.\n2. In contrast, in **metallic conductors**, conduction is carried by free electrons. Raising temperature causes lattice metal kernels to vibrate more vigorously, scattering electrons and *increasing* resistance (conductance decreases)."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The limiting molar conductivity of pure water at $298\\text{ K}$ is $547.0\\text{ S cm}^2\\text{ mol}^{-1}$. If its measured conductivity is $5.47 \\times 10^{-8}\\text{ S cm}^{-1}$, the degree of ionization ($\\alpha$) and ionic product ($K_w$) of water are:",
+          "image": "",
+          "options": [
+            "$\\alpha = 1.8 \\times 10^{-9}$ and $K_w = 1.0 \\times 10^{-14}$",
+            "$\\alpha = 1.0 \\times 10^{-7}$ and $K_w = 1.0 \\times 10^{-14}$",
+            "$\\alpha = 1.8 \\times 10^{-7}$ and $K_w = 1.0 \\times 10^{-12}$",
+            "$\\alpha = 5.47 \\times 10^{-8}$ and $K_w = 1.0 \\times 10^{-16}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Molar concentration of pure water ($1000\\text{ g/L}$ / $18\\text{ g/mol}$): $C = 55.55\\text{ M}$.\n2. Molar conductivity of water:\n$$\\Lambda_m = \\frac{\\kappa \\times 1000}{C} = \\frac{(5.47 \\times 10^{-8}) \\times 1000}{55.55} = \\frac{5.47 \\times 10^{-5}}{55.55} \\approx 9.847 \\times 10^{-7}\\text{ S cm}^2\\text{ mol}^{-1}$$\n3. Degree of ionization ($\\alpha$):\n$$\\alpha = \\frac{\\Lambda_m}{\\Lambda_m^\\circ} = \\frac{9.847 \\times 10^{-7}}{547.0} = 1.80 \\times 10^{-9}$$\n4. Concentration of $\\text{H}^+$:\n$$[\\text{H}^+] = C\\alpha = 55.55 \\times (1.80 \\times 10^{-9}) = 1.0 \\times 10^{-7}\\text{ M}$$\n$$K_w = [\\text{H}^+][\\text{OH}^-] = (1.0 \\times 10^{-7})^2 = 1.0 \\times 10^{-14}$$"
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the dimension of electrical resistivity ($\\rho$) in terms of fundamental SI units ($M, L, T, A$)?",
+          "image": "",
+          "options": [
+            "$[M L^3 T^{-3} A^{-2}]$",
+            "$[M L^2 T^{-3} A^{-1}]$",
+            "$[M^{-1} L^{-3} T^3 A^2]$",
+            "$[M L^3 T^{-2} A^{-2}]$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Resistance $R = \\frac{V}{I} = \\frac{\\text{Work} / q}{I} = \\frac{[M L^2 T^{-2}]}{[A T][A]} = [M L^2 T^{-3} A^{-2}]$.\n2. Resistivity $\\rho = R \\frac{A}{l}$:\n$$[\\rho] = [R] \\cdot [L] = [M L^2 T^{-3} A^{-2}] \\cdot [L] = [M L^3 T^{-3} A^{-2}]$$"
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] For a solution of $\\text{MgSO}_4$, the limiting molar conductivity is $\\Lambda_m^\\circ = 266.0\\text{ S cm}^2\\text{ mol}^{-1}$. Its limiting equivalent conductivity ($\\Lambda_{\\text{eq}}^\\circ$) is:",
+          "image": "",
+          "options": [
+            "$133.0\\text{ S cm}^2\\text{ eq}^{-1}$",
+            "$532.0\\text{ S cm}^2\\text{ eq}^{-1}$",
+            "$266.0\\text{ S cm}^2\\text{ eq}^{-1}$",
+            "$66.5\\text{ S cm}^2\\text{ eq}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Magnesium sulfate dissociates as $\\text{MgSO}_4 \\rightarrow \\text{Mg}^{2+} + \\text{SO}_4^{2-}$.\n2. The total positive or negative charge ($n$-factor / valence factor) is $n = 2$.\n3. Relation between equivalent and molar conductivity:\n$$\\Lambda_{\\text{eq}}^\\circ = \\frac{\\Lambda_m^\\circ}{n\\text{-factor}} = \\frac{266.0\\text{ S cm}^2\\text{ mol}^{-1}}{2} = 133.0\\text{ S cm}^2\\text{ eq}^{-1}$$"
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In a conductometric titration of a weak acid ($\\text{CH}_3\\text{COOH}$) with a weak base ($\\text{NH}_4\\text{OH}$), the plot of conductance versus volume of titrant added shows:",
+          "image": "",
+          "options": [
+            "A gradual increase in conductance up to the equivalence point due to salt formation, after which conductance remains virtually constant",
+            "A continuous sharp decrease throughout the titration",
+            "A steep continuous increase from start to finish",
+            "A V-shaped curve identical to a strong acid-strong base titration"
+          ],
+          "correctOption": 0,
+          "solution": "1. Before the equivalence point: Weakly ionized $\\text{CH}_3\\text{COOH}$ is converted into moderately conducting salt $\\text{CH}_3\\text{COONH}_4$, so conductance slowly rises.\n2. Past the equivalence point: Added $\\text{NH}_4\\text{OH}$ is a weak base that undergoes suppressed ionization in the presence of common $\\text{NH}_4^+$ ions from the salt.\n3. Because excess un-ionized weak base contributes negligible additional ions, the conductance remains essentially flat and constant past the end point."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] The molar conductivities at infinite dilution of $\\text{NH}_4\\text{Cl}$, $\\text{NaOH}$, and $\\text{NaCl}$ are $130$, $248$, and $126\\text{ S cm}^2\\text{ mol}^{-1}$ respectively. The molar conductivity of a $0.01\\text{ M } \\text{NH}_4\\text{OH}$ solution is found to be $12.6\\text{ S cm}^2\\text{ mol}^{-1}$. The percentage ionization of $\\text{NH}_4\\text{OH}$ at this concentration is:",
+          "image": "",
+          "options": [
+            "$5.00\\%$",
+            "$2.50\\%$",
+            "$10.00\\%$",
+            "$1.26\\%$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate $\\Lambda_m^\\circ(\\text{NH}_4\\text{OH})$ by Kohlrausch's law:\n$$\\Lambda_m^\\circ(\\text{NH}_4\\text{OH}) = \\Lambda_m^\\circ(\\text{NH}_4\\text{Cl}) + \\Lambda_m^\\circ(\\text{NaOH}) - \\Lambda_m^\\circ(\\text{NaCl})$$\n$$\\Lambda_m^\\circ(\\text{NH}_4\\text{OH}) = 130 + 248 - 126 = 378 - 126 = 252\\text{ S cm}^2\\text{ mol}^{-1}$$\n2. Calculate degree of dissociation ($\\alpha$):\n$$\\alpha = \\frac{\\Lambda_m}{\\Lambda_m^\\circ} = \\frac{12.6}{252} = 0.05$$\n3. Percentage ionization:\n$$\\%\\text{ ionization} = \\alpha \\times 100 = 0.05 \\times 100 = 5.00\\%$$"
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] If the distance between two planar electrodes in a conductivity cell is $2.0\\text{ cm}$ and each electrode has a surface area of $4.0\\text{ cm}^2$, the cell constant ($G^*$) of the cell is:",
+          "image": "",
+          "options": [
+            "$0.50\\text{ cm}^{-1}$",
+            "$2.00\\text{ cm}^{-1}$",
+            "$8.00\\text{ cm}^{-1}$",
+            "$0.25\\text{ cm}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "By definition, the cell constant is the ratio of electrode separation distance ($l$) to electrode cross-sectional area ($A$):\n$$G^* = \\frac{l}{A} = \\frac{2.0\\text{ cm}}{4.0\\text{ cm}^2} = 0.50\\text{ cm}^{-1}$$"
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements about Kohlrausch's law is INCORRECT?",
+          "image": "",
+          "options": [
+            "It applies only to strong electrolytes and fails completely for weak organic acids",
+            "At infinite dilution, the contribution of any ion to molar conductivity is independent of the co-ion with which it is associated",
+            "It enables determination of the limiting molar conductivity of weak electrolytes",
+            "It can be used to determine the solubility of sparingly soluble salts"
+          ],
+          "correctOption": 0,
+          "solution": "1. Kohlrausch's law of independent migration of ions states that at infinite dilution, each ion migrates independently, and the limiting molar conductivity is strictly additive.\n2. This law is universal: it applies to **both strong and weak electrolytes**.\n3. Its major practical utility is calculating $\\Lambda_m^\\circ$ for weak electrolytes (e.g., $\\text{CH}_3\\text{COOH}, \\text{NH}_4\\text{OH}$) which cannot be determined by direct extrapolation.\nTherefore, Statement A is incorrect."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The conductivity of a $0.00241\\text{ M}$ acetic acid solution is $7.896 \\times 10^{-5}\\text{ S cm}^{-1}$. If $\\Lambda_m^\\circ = 390.5\\text{ S cm}^2\\text{ mol}^{-1}$, the molar conductivity of the solution is:",
+          "image": "",
+          "options": [
+            "$32.76\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$390.50\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$16.38\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$65.52\\text{ S cm}^2\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Using $\\Lambda_m = \\frac{\\kappa \\times 1000}{M}$:\n$$\\Lambda_m = \\frac{(7.896 \\times 10^{-5}\\text{ S cm}^{-1}) \\times 1000}{0.00241\\text{ mol L}^{-1}} = \\frac{0.07896}{0.00241} \\approx 32.763\\text{ S cm}^2\\text{ mol}^{-1} \\approx 32.76\\text{ S cm}^2\\text{ mol}^{-1}$$"
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In a conductometric precipitation titration of sodium chloride ($\\text{NaCl}$) against silver nitrate ($\\text{AgNO}_3$):\n$$\\text{NaCl}(aq) + \\text{AgNO}_3(aq) \\rightarrow \\text{AgCl}(s) \\downarrow + \\text{NaNO}_3(aq)$$\nThe electrical conductance prior to the equivalence point:",
+          "image": "",
+          "options": [
+            "Remains nearly constant because $\\text{Cl}^-$ ions are replaced by $\\text{NO}_3^-$ ions of nearly identical mobility",
+            "Drops to zero immediately",
+            "Increases rapidly due to precipitation",
+            "Decreases to half at every drop"
+          ],
+          "correctOption": 0,
+          "solution": "1. During the titration prior to the equivalence point, silver ions precipitate chloride ions as solid $\\text{AgCl}$:\n$$\\text{Cl}^-(aq) + \\text{Ag}^+(aq) + \\text{NO}_3^-(aq) \\rightarrow \\text{AgCl}(s) + \\text{NO}_3^-(aq)$$\n2. Sodium ions ($\\text{Na}^+$) remain unreacted spectator ions throughout.\n3. The consumed chloride ions ($\\lambda^\\circ = 76.3\\text{ S cm}^2\\text{ mol}^{-1}$) are replaced by incoming nitrate ions ($\\lambda^\\circ = 71.4\\text{ S cm}^2\\text{ mol}^{-1}$).\n4. Because both anions have nearly identical ionic mobilities, the conductance **remains almost horizontal and constant** until the equivalence point, after which excess $\\text{Ag}^+$ and $\\text{NO}_3^-$ cause it to rise."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The limiting molar conductivities of $\\text{KCl}$, $\\text{KBr}$, and $\\text{NaCl}$ are $149.9$, $151.8$, and $126.4\\text{ S cm}^2\\text{ mol}^{-1}$ respectively. The limiting molar conductivity of $\\text{NaBr}$ is:",
+          "image": "",
+          "options": [
+            "$128.3\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$175.3\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$101.0\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$138.3\\text{ S cm}^2\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "Applying Kohlrausch's law:\n$$\\Lambda_m^\\circ(\\text{NaBr}) = \\Lambda_m^\\circ(\\text{NaCl}) + \\Lambda_m^\\circ(\\text{KBr}) - \\Lambda_m^\\circ(\\text{KCl})$$\nSubstitute the values:\n$$\\Lambda_m^\\circ(\\text{NaBr}) = 126.4 + 151.8 - 149.9 = 278.2 - 149.9 = 128.3\\text{ S cm}^2\\text{ mol}^{-1}$$"
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] A conductivity cell filled with $0.05\\text{ M } \\text{NaOH}$ solution has a resistance of $31.6\\,\\Omega$. If the cell constant is $0.367\\text{ cm}^{-1}$, the molar conductivity ($\\Lambda_m$) of the sodium hydroxide solution is approximately:",
+          "image": "",
+          "options": [
+            "$232.3\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$116.1\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$464.6\\text{ S cm}^2\\text{ mol}^{-1}$",
+            "$58.0\\text{ S cm}^2\\text{ mol}^{-1}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Calculate conductivity ($\\kappa$):\n$$\\kappa = \\frac{G^*}{R} = \\frac{0.367\\text{ cm}^{-1}}{31.6\\,\\Omega} \\approx 0.011614\\text{ S cm}^{-1}$$\n2. Calculate molar conductivity ($\\Lambda_m$):\n$$\\Lambda_m = \\frac{\\kappa \\times 1000}{M} = \\frac{0.011614 \\times 1000}{0.05} = \\frac{11.614}{0.05} \\approx 232.28\\text{ S cm}^2\\text{ mol}^{-1} \\approx 232.3\\text{ S cm}^2\\text{ mol}^{-1}$$"
+        }
+      ]
+    }
+  ]
+}

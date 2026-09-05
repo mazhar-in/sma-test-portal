@@ -1,0 +1,690 @@
+{
+  "testId": "neet-chem-19-redox-reactions",
+  "title": "Redox Reactions (Oxidation & Reduction Concepts, Oxidation Numbers, & Half-Reaction Balancing)",
+  "syllabus": "Classical and modern electronic concepts of oxidation and reduction; Redox reactions as simultaneous electron transfer processes; Oxidation state / oxidation number rules and exceptions (peroxides, superoxides, suboxides, mixed oxides, interhalogens, and coordination entities); Calculation of average and fractional oxidation states vs actual structure-based oxidation states (e.g., CrO5, H2SO5, H2S2O8, C3O2, Br3O8, S4O6^2-, Fe3O4); Types of redox reactions: combination, decomposition, displacement (metal and non-metal displacement), and disproportionation/comproportionation reactions; Balancing of redox reactions using the oxidation number method and ion-electron / half-reaction method (in both acidic and basic aqueous media); Concept of equivalents, n-factor / valence factor of oxidizing agents, reducing agents, salts, and disproportionating species; Titration principles involving KMnO4 and K2Cr2O7 (redox titrations, self-indicators); Redox couples and standard electrode potential trends (qualitative introduction)",
+  "exam": "NEET",
+  "durationMinutes": 60,
+  "totalMarks": 180,
+  "sections": [
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In potassium dichromate ($\\text{K}_2\\text{Cr}_2\\text{O}_7$) and potassium permanganate ($\\text{KMnO}_4$), the oxidation states of chromium and manganese are respectively:",
+          "image": "",
+          "options": [
+            "$+6$ and $+7$",
+            "$+3$ and $+7$",
+            "$+6$ and $+4$",
+            "$+7$ and $+6$"
+          ],
+          "correctOption": 0,
+          "solution": "1. For $\\text{K}_2\\text{Cr}_2\\text{O}_7$:\nLet the oxidation state of $\\text{Cr}$ be $x$. Potassium has an oxidation state of $+1$ and oxygen is $-2$:\n$$2(+1) + 2(x) + 7(-2) = 0$$\n$$+2 + 2x - 14 = 0 \\implies 2x = +12 \\implies x = +6$$\n2. For $\\text{KMnO}_4$:\nLet the oxidation state of $\\text{Mn}$ be $y$:\n$$(+1) + y + 4(-2) = 0$$\n$$+1 + y - 8 = 0 \\implies y = +7$$\nTherefore, the oxidation states are $+6$ and $+7$ respectively."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] When the following skeletal redox equation is balanced in an acidic medium by the ion-electron method:\n$$a\\,\\text{MnO}_4^-(aq) + b\\,\\text{C}_2\\text{O}_4^{2-}(aq) + c\\,\\text{H}^+(aq) \\rightarrow d\\,\\text{Mn}^{2+}(aq) + e\\,\\text{CO}_2(g) + f\\,\\text{H}_2\\text{O}(l)$$\nThe stoichiometric coefficients $a, b,$ and $c$ are respectively:",
+          "image": "",
+          "options": [
+            "$2, 5, 16$",
+            "$5, 2, 16$",
+            "$2, 5, 8$",
+            "$1, 5, 8$"
+          ],
+          "correctOption": 0,
+          "solution": "Balance the reaction into two half-reactions:\n1. Reduction half-reaction:\n$$\\text{MnO}_4^- + 8\\text{H}^+ + 5e^- \\rightarrow \\text{Mn}^{2+} + 4\\text{H}_2\\text{O} \\quad \\times 2$$\n2. Oxidation half-reaction:\n$$\\text{C}_2\\text{O}_4^{2-} \\rightarrow 2\\text{CO}_2 + 2e^- \\quad \\times 5$$\n3. Combine both halves to cancel electrons ($10e^-$ on both sides):\n$$2\\text{MnO}_4^- + 5\\text{C}_2\\text{O}_4^{2-} + 16\\text{H}^+ \\rightarrow 2\\text{Mn}^{2+} + 10\\text{CO}_2 + 8\\text{H}_2\\text{O}$$\nComparing with $a\\,\\text{MnO}_4^- + b\\,\\text{C}_2\\text{O}_4^{2-} + c\\,\\text{H}^+$, the coefficients are $a = 2, b = 5, c = 16$."
+        },
+        {
+          "id": "q3",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the oxidation state of chromium in chromium pentoxide ($\\text{CrO}_5$, butterfly structure)?",
+          "image": "",
+          "options": [
+            "$+6$",
+            "$+10$",
+            "$+5$",
+            "$+4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In chromium pentoxide ($\\text{CrO}_5$), the chromium atom forms a butterfly-shaped coordination entity containing one oxo group ($=\\text{O}$) and two peroxo bridges ($-\\text{O}-\\text{O}-$).\n2. The peroxo oxygen atoms (four in total) each carry an oxidation state of $-1$, while the single oxo oxygen carries an oxidation state of $-2$.\n3. Let the oxidation state of $\\text{Cr}$ be $x$:\n$$x + 1(-2) + 4(-1) = 0$$\n$$x - 2 - 4 = 0 \\implies x = +6$$\n(A calculation ignoring structure would erroneously give $x + 5(-2) = 0 \\implies x = +10$, which is impossible because chromium has only 6 valence electrons)."
+        },
+        {
+          "id": "q4",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following reactions is a DISPROPORTIONATION reaction?",
+          "image": "",
+          "options": [
+            "$2\\text{NO}_2(g) + 2\\text{OH}^-(aq) \\rightarrow \\text{NO}_2^-(aq) + \\text{NO}_3^-(aq) + \\text{H}_2\\text{O}(l)$",
+            "$2\\text{KClO}_3(s) \\xrightarrow{\\Delta} 2\\text{KCl}(s) + 3\\text{O}_2(g)$",
+            "$\\text{CH}_4(g) + 2\\text{O}_2(g) \\rightarrow \\text{CO}_2(g) + 2\\text{H}_2\\text{O}(l)$",
+            "$\\text{Zn}(s) + 2\\text{HCl}(aq) \\rightarrow \\text{ZnCl}_2(aq) + \\text{H}_2(g)$"
+          ],
+          "correctOption": 0,
+          "solution": "A disproportionation reaction is a redox reaction in which atoms of the **same element in the same oxidation state** are simultaneously oxidized and reduced:\n1. In $\\text{NO}_2$, the oxidation state of nitrogen is $+4$.\n2. In nitrite ion ($\\text{NO}_2^-$), nitrogen has an oxidation state of $+3$ (reduction: $+4 \\rightarrow +3$).\n3. In nitrate ion ($\\text{NO}_3^-$), nitrogen has an oxidation state of $+5$ (oxidation: $+4 \\rightarrow +5$).\nBecause nitrogen is simultaneously oxidized and reduced, this represents a disproportionation reaction.\n($\\text{KClO}_3$ decomposition is an intra-molecular redox reaction where chlorine is reduced and oxygen is oxidized)."
+        },
+        {
+          "id": "q5",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] What is the $n$-factor (valence factor) of potassium permanganate ($\\text{KMnO}_4$) when it acts as an oxidizing agent in an acidic medium?",
+          "image": "",
+          "options": [
+            "$5$",
+            "$3$",
+            "$1$",
+            "$6$"
+          ],
+          "correctOption": 0,
+          "solution": "In an acidic medium, the permanganate ion undergoes reduction according to the half-reaction:\n$$\\overset{+7}{\\text{Mn}}\\text{O}_4^- + 8\\text{H}^+ + 5e^- \\rightarrow \\overset{+2}{\\text{Mn}}^{2+} + 4\\text{H}_2\\text{O}$$\n1. The oxidation state of manganese decreases from $+7$ to $+2$.\n2. Change in oxidation state per mole of $\\text{KMnO}_4 = |+7 - (+2)| = 5$.\n3. Therefore, the $n$-factor of $\\text{KMnO}_4$ in acidic medium is **$5$**.\n(In neutral or faintly alkaline medium, $\\text{MnO}_4^- \\rightarrow \\text{MnO}_2$ with $n = 3$; in strongly alkaline medium, $\\text{MnO}_4^- \\rightarrow \\text{MnO}_4^{2-}$ with $n = 1$)."
+        },
+        {
+          "id": "q6",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In carbon suboxide ($\\text{C}_3\\text{O}_2$), the oxidation states of the three carbon atoms are respectively:",
+          "image": "",
+          "options": [
+            "$+2, 0, +2$",
+            "$+4/3, +4/3, +4/3$",
+            "$+1, +2, +1$",
+            "$0, +2, 0$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The Lewis structure of carbon suboxide is linear with cumulative double bonds:\n$$\\overset{+2}{\\text{O}}=\\overset{+2}{\\text{C}}=\\overset{0}{\\text{C}}=\\overset{+2}{\\text{C}}=\\overset{-2}{\\text{O}}$$\n2. The two terminal carbon atoms are bonded directly to electronegative oxygen atoms ($=\\text{O}$), giving each terminal carbon an oxidation state of $+2$.\n3. The central carbon atom is bonded exclusively to two identical carbon atoms ($\\text{C}=\\text{C}=\\text{C}$), so there is no electronegativity difference, giving the central carbon an oxidation state of $0$.\n4. Thus, the individual structural oxidation states are $+2, 0, +2$ (giving an average oxidation state of $+4/3$)."
+        },
+        {
+          "id": "q7",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] The number of moles of electrons required to reduce $1\\text{ mole}$ of dichromate ions ($\\text{Cr}_2\\text{O}_7^{2-}$) to $\\text{Cr}^{3+}$ in an acidic medium is:",
+          "image": "",
+          "options": [
+            "$6\\text{ moles}$",
+            "$3\\text{ moles}$",
+            "$12\\text{ moles}$",
+            "$2\\text{ moles}$"
+          ],
+          "correctOption": 0,
+          "solution": "The balanced reduction half-reaction for dichromate in acidic medium is:\n$$\\overset{+6}{\\text{Cr}}_2\\text{O}_7^{2-} + 14\\text{H}^+ + 6e^- \\rightarrow 2\\overset{+3}{\\text{Cr}}^{3+} + 7\\text{H}_2\\text{O}$$\n1. Each chromium atom goes from oxidation state $+6$ to $+3$, accepting $3$ electrons.\n2. Since there are $2$ chromium atoms in one formula unit of $\\text{Cr}_2\\text{O}_7^{2-}$:\n$$\\text{Total electrons accepted per mole of } \\text{Cr}_2\\text{O}_7^{2-} = 2 \\times 3 = 6\\text{ moles of electrons}$$"
+        },
+        {
+          "id": "q8",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In which of the following compounds does nitrogen exhibit its LOWEST possible oxidation state?",
+          "image": "",
+          "options": [
+            "$\\text{NH}_3$",
+            "$\\text{N}_2\\text{H}_4$",
+            "$\\text{NH}_2\\text{OH}$",
+            "$\\text{N}_3\\text{H}$"
+          ],
+          "correctOption": 0,
+          "solution": "Determine the oxidation state of nitrogen in each compound:\n1. In $\\text{NH}_3$: $x + 3(+1) = 0 \\implies x = -3$\n2. In $\\text{N}_2\\text{H}_4$: $2x + 4(+1) = 0 \\implies x = -2$\n3. In $\\text{NH}_2\\text{OH}$: $x + 2(+1) - 2 + 1 = 0 \\implies x = -1$\n4. In $\\text{N}_3\\text{H}$: $3x + 1 = 0 \\implies x = -1/3$\nBecause nitrogen belongs to Group 15 with valence configuration $2s^2 2p^3$, its oxidation state ranges from $-3$ to $+5$.\nThus, nitrogen has its lowest oxidation state ($-3$) in **$\\text{NH}_3$**."
+        },
+        {
+          "id": "q9",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the balanced redox reaction in a basic medium:\n$$\\text{MnO}_4^-(aq) + \\text{I}^-(aq) + \\text{H}_2\\text{O}(l) \\rightarrow \\text{MnO}_2(s) + \\text{IO}_3^-(aq) + 2\\text{OH}^-(aq)$$\nThe ratio of the stoichiometric coefficients of $\\text{MnO}_4^-$ to $\\text{I}^-$ is:",
+          "image": "",
+          "options": [
+            "$2 : 1$",
+            "$1 : 1$",
+            "$1 : 2$",
+            "$5 : 1$"
+          ],
+          "correctOption": 0,
+          "solution": "Balance the reaction in alkaline medium:\n1. Reduction half-reaction:\n$$\\overset{+7}{\\text{MnO}}_4^- + 2\\text{H}_2\\text{O} + 3e^- \\rightarrow \\overset{+4}{\\text{MnO}}_2 + 4\\text{OH}^- \\quad \\times 2$$\n2. Oxidation half-reaction:\n$$\\overset{-1}{\\text{I}}^- + 6\\text{OH}^- \\rightarrow \\overset{+5}{\\text{IO}}_3^- + 3\\text{H}_2\\text{O} + 6e^- \\quad \\times 1$$\n3. Combine both halves ($6e^-$ transferred):\n$$2\\text{MnO}_4^- + 4\\text{H}_2\\text{O} + \\text{I}^- + 6\\text{OH}^- \\rightarrow 2\\text{MnO}_2 + 8\\text{OH}^- + \\text{IO}_3^- + 3\\text{H}_2\\text{O}$$\nSimplify water and hydroxide ions:\n$$2\\text{MnO}_4^- + \\text{I}^- + \\text{H}_2\\text{O} \\rightarrow 2\\text{MnO}_2 + \\text{IO}_3^- + 2\\text{OH}^-$$\nThe stoichiometric ratio of $\\text{MnO}_4^-$ to $\\text{I}^-$ is $2 : 1$."
+        },
+        {
+          "id": "q10",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What are the actual oxidation states of the sulfur atoms in the tetrathionate ion ($\\text{S}_4\\text{O}_6^{2-}$)?",
+          "image": "",
+          "options": [
+            "Two sulfur atoms have $+5$ and two sulfur atoms have $0$",
+            "All four sulfur atoms have $+2.5$",
+            "Two sulfur atoms have $+6$ and two sulfur atoms have $-1$",
+            "Four sulfur atoms have $+2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The structure of the tetrathionate ion is:\n$$[\\text{O}_3\\text{S}-\\text{S}-\\text{S}-\\text{SO}_3]^{2-}$$\n2. The two terminal sulfur atoms are each bonded to three oxygen atoms and one sulfur atom:\n$$\\text{Terminal sulfur oxidation state} = +5$$\n3. The two central sulfur atoms are bonded exclusively to adjacent sulfur atoms (homonuclear $\\text{S}-\\text{S}$ bonds) with zero electronegativity difference:\n$$\\text{Central sulfur oxidation states} = 0$$\n4. Thus, the individual structural oxidation states are $+5, 0, 0, +5$, giving an average fractional oxidation state of $\\frac{5 + 0 + 0 + 5}{4} = +2.5$."
+        },
+        {
+          "id": "q11",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In the titration of ferrous ammonium sulfate (Mohr's salt) with $\\text{KMnO}_4$ in an acidic medium, dilute sulfuric acid ($\\text{H}_2\\text{SO}_4$) is used instead of hydrochloric acid ($\\text{HCl}$) or nitric acid ($\\text{HNO}_3$). Why?",
+          "image": "",
+          "options": [
+            "$\\text{HCl}$ is oxidized by $\\text{KMnO}_4$ to toxic $\\text{Cl}_2$ gas, while $\\text{HNO}_3$ is itself an oxidizing agent that oxidizes $\\text{Fe}^{2+}$",
+            "$\\text{H}_2\\text{SO}_4$ acts as a catalyst for $\\text{Fe}^{2+}$ oxidation",
+            "$\\text{HCl}$ precipitates $\\text{KMnO}_4$ as insoluble manganese chloride",
+            "$\\text{H}_2\\text{SO}_4$ reduces $\\text{KMnO}_4$ to metallic manganese"
+          ],
+          "correctOption": 0,
+          "solution": "1. Hydrochloric acid cannot be used because permanganate is powerful enough to oxidize chloride ions to chlorine gas ($2\\text{Cl}^- \\rightarrow \\text{Cl}_2 + 2e^-$), consuming extra $\\text{KMnO}_4$ and yielding inaccurate titration results.\n2. Nitric acid cannot be used because $\\text{HNO}_3$ is itself a strong oxidizing agent that would oxidize $\\text{Fe}^{2+}$ to $\\text{Fe}^{3+}$, competing with $\\text{KMnO}_4$.\n3. Dilute sulfuric acid ($\\text{H}_2\\text{SO}_4$) is neither oxidized by $\\text{KMnO}_4$ nor does it oxidize $\\text{Fe}^{2+}$, providing a stable acidic medium."
+        },
+        {
+          "id": "q12",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "Which of the following elements can act as BOTH an oxidizing agent and a reducing agent?",
+          "image": "",
+          "options": [
+            "$\\text{H}_2\\text{O}_2$",
+            "$\\text{HNO}_3$",
+            "$\\text{KMnO}_4$",
+            "$\\text{H}_2\\text{S}$"
+          ],
+          "correctOption": 0,
+          "solution": "A chemical species can act as both an oxidizing agent and a reducing agent if the key element is in an **intermediate oxidation state**:\n1. In hydrogen peroxide ($\\text{H}_2\\text{O}_2$), oxygen has an oxidation state of $-1$.\n- It can be reduced to $-2$ (acting as an oxidizing agent, forming $\\text{H}_2\\text{O}$).\n- It can be oxidized to $0$ (acting as a reducing agent, liberating $\\text{O}_2$).\n2. In $\\text{HNO}_3$, nitrogen is at its maximum ($+5$), so it acts only as an oxidizing agent.\n3. In $\\text{KMnO}_4$, manganese is at its maximum ($+7$), acting only as an oxidizing agent.\n4. In $\\text{H}_2\\text{S}$, sulfur is at its minimum ($-2$), acting only as a reducing agent."
+        },
+        {
+          "id": "q13",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In Marshall's acid (peroxodisulfuric acid, $\\text{H}_2\\text{S}_2\\text{O}_8$), the oxidation state of each sulfur atom is:",
+          "image": "",
+          "options": [
+            "$+6$",
+            "$+7$",
+            "$+8$",
+            "$+5$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Marshall's acid has the structural formula:\n$$\\text{HO}-\\text{SO}_2-\\text{O}-\\text{O}-\\text{SO}_2-\\text{OH}$$\n2. It contains one peroxo bridge ($-\\text{O}-\\text{O}-$) in which two oxygen atoms have an oxidation state of $-1$, while the remaining six oxygen atoms are oxo/hydroxy oxygens with an oxidation state of $-2$.\n3. Let the oxidation state of sulfur be $x$:\n$$2(+1) + 2(x) + 6(-2) + 2(-1) = 0$$\n$$+2 + 2x - 12 - 2 = 0 \\implies 2x = +12 \\implies x = +6$$\nThus, each sulfur atom has an oxidation state of $+6$ (its maximum group valence)."
+        },
+        {
+          "id": "q14",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] What is the equivalent weight of potassium dichromate ($\\text{K}_2\\text{Cr}_2\\text{O}_7$, molar mass $= M$) when used as an oxidizing agent in an acidic medium?",
+          "image": "",
+          "options": [
+            "$M / 6$",
+            "$M / 3$",
+            "$M / 2$",
+            "$M / 5$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In an acidic medium, dichromate undergoes reduction according to:\n$$\\text{Cr}_2\\text{O}_7^{2-} + 14\\text{H}^+ + 6e^- \\rightarrow 2\\text{Cr}^{3+} + 7\\text{H}_2\\text{O}$$\n2. The change in oxidation state per formula unit of $\\text{K}_2\\text{Cr}_2\\text{O}_7$ is $2 \\times (6 - 3) = 6$.\n3. Therefore, the $n$-factor is $6$.\n4. Equivalent weight is defined as:\n$$\\text{Equivalent Weight} = \\frac{\\text{Molar Mass}}{n\\text{-factor}} = \\frac{M}{6}$$"
+        },
+        {
+          "id": "q15",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the reaction:\n$$\\text{Cl}_2(g) + 2\\text{OH}^-(aq) \\rightarrow \\text{Cl}^-(aq) + \\text{ClO}^-(aq) + \\text{H}_2\\text{O}(l)$$\nThe equivalent weight of molecular chlorine ($\\text{Cl}_2$, molar mass $= M$) is:",
+          "image": "",
+          "options": [
+            "$M$",
+            "$M / 2$",
+            "$M / 4$",
+            "$2M$"
+          ],
+          "correctOption": 0,
+          "solution": "1. This is a disproportionation reaction of chlorine in cold dilute base:\n- Reduction half: $\\frac{1}{2}\\text{Cl}_2 + e^- \\rightarrow \\text{Cl}^- \\implies n_1 = 1$\n- Oxidation half: $\\frac{1}{2}\\text{Cl}_2 \\rightarrow \\text{ClO}^- + e^- \\implies n_2 = 1$\n2. For a substance undergoing disproportionation where both oxidation and reduction involve the same molecule:\n$$\\text{Eq. Wt.} = \\text{Eq. Wt. (as oxidant)} + \\text{Eq. Wt. (as reductant)}$$\n$$\\text{Eq. Wt.} = \\frac{M}{2} + \\frac{M}{2} = M$$\nAlternatively, $1\\text{ mole of } \\text{Cl}_2$ transfers $1\\text{ mole of electrons}$ total ($n$-factor $= 1$), so $\\text{Equivalent weight} = \\frac{M}{1} = M$."
+        },
+        {
+          "id": "q16",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the average oxidation state of iron in magnetic iron oxide (magnetite, $\\text{Fe}_3\\text{O}_4$)?",
+          "image": "",
+          "options": [
+            "$+8/3$",
+            "$+3$",
+            "$+2$",
+            "$+4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Magnetite is a stoichiometric mixed oxide composed of iron(II) oxide and iron(III) oxide in a $1 : 1$ ratio:\n$$\\text{Fe}_3\\text{O}_4 \\equiv \\text{FeO} \\cdot \\text{Fe}_2\\text{O}_3$$\n2. It contains one $\\text{Fe}^{2+}$ ion and two $\\text{Fe}^{3+}$ ions.\n3. Average oxidation state:\n$$\\text{Average} = \\frac{(+2) + 2(+3)}{3} = \\frac{2 + 6}{3} = +\\frac{8}{3}$$\n(Or by standard formula: $3x + 4(-2) = 0 \\implies 3x = 8 \\implies x = +8/3$)."
+        },
+        {
+          "id": "q17",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In which of the following processes is there NO change in the oxidation state of any atom?",
+          "image": "",
+          "options": [
+            "$\\text{Cr}_2\\text{O}_7^{2-}(aq) + 2\\text{OH}^-(aq) \\rightleftharpoons 2\\text{CrO}_4^{2-}(aq) + \\text{H}_2\\text{O}(l)$",
+            "$2\\text{Cu}^{2+}(aq) + 4\\text{I}^-(aq) \\rightarrow \\text{Cu}_2\\text{I}_2(s) + \\text{I}_2(s)$",
+            "$\\text{SO}_2(g) + 2\\text{H}_2\\text{S}(g) \\rightarrow 3\\text{S}(s) + 2\\text{H}_2\\text{O}(l)$",
+            "$2\\text{Na}(s) + \\text{Cl}_2(g) \\rightarrow 2\\text{NaCl}(s)$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In dichromate ($\\text{Cr}_2\\text{O}_7^{2-}$), chromium is in the $+6$ oxidation state.\n2. In chromate ($\\text{CrO}_4^{2-}$), chromium is also in the $+6$ oxidation state ($x + 4(-2) = -2 \\implies x = +6$).\n3. Oxygen remains $-2$ and hydrogen remains $+1$.\nThis is an acid-base condensation/hydrolysis equilibrium, not a redox reaction.\n(All other options involve changes in oxidation states and are redox reactions)."
+        },
+        {
+          "id": "q18",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In Caro's acid (peroxomonosulfuric acid, $\\text{H}_2\\text{SO}_5$), the oxidation state of sulfur is:",
+          "image": "",
+          "options": [
+            "$+6$",
+            "$+8$",
+            "$+4$",
+            "$+7$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The structural formula of Caro's acid is:\n$$\\text{HO}-\\text{SO}_2-\\text{O}-\\text{O}-\\text{H}$$\n2. It contains one peroxo linkage ($-\\text{O}-\\text{O}-$), in which the two peroxo oxygens have an oxidation state of $-1$, while the three non-peroxo oxygens are $-2$.\n3. Let the oxidation state of sulfur be $x$:\n$$2(+1) + x + 3(-2) + 2(-1) = 0$$\n$$+2 + x - 6 - 2 = 0 \\implies x - 6 = 0 \\implies x = +6$$\nThus, sulfur is in its maximum stable oxidation state of $+6$."
+        },
+        {
+          "id": "q19",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] When copper reacts with concentrated nitric acid, the gaseous product formed is:",
+          "image": "",
+          "options": [
+            "$\\text{NO}_2$",
+            "$\\text{NO}$",
+            "$\\text{N}_2\\text{O}$",
+            "$\\text{N}_2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. With **concentrated nitric acid**, copper is oxidized to cupric nitrate while $\\text{HNO}_3$ is reduced to reddish-brown nitrogen dioxide gas:\n$$\\text{Cu} + 4\\text{HNO}_3(\\text{conc.}) \\rightarrow \\text{Cu}(\\text{NO}_3)_2 + 2\\text{NO}_2 \\uparrow + 2\\text{H}_2\\text{O}$$\n2. In contrast, with **dilute nitric acid**, nitric oxide gas is evolved:\n$$3\\text{Cu} + 8\\text{HNO}_3(\\text{dil.}) \\rightarrow 3\\text{Cu}(\\text{NO}_3)_2 + 2\\text{NO} \\uparrow + 4\\text{H}_2\\text{O}$$"
+        },
+        {
+          "id": "q20",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the oxidation state of bromine in tribromooctaoxide ($\\text{Br}_3\\text{O}_8$)?",
+          "image": "",
+          "options": [
+            "Two bromine atoms have $+6$ and one bromine atom has $+4$",
+            "All three bromine atoms have $+16/3$",
+            "Two bromine atoms have $+4$ and one bromine atom has $+8$",
+            "Three bromine atoms have $+5$"
+          ],
+          "correctOption": 0,
+          "solution": "1. The structural formula of tribromooctaoxide is:\n$$\\text{O}_3\\text{Br}-\\text{BrO}_2-\\text{BrO}_3$$\n2. The two terminal bromine atoms are each bonded to three oxygen atoms through coordinate/double bonds: each terminal bromine has an oxidation state of $+6$.\n3. The central bromine atom is bonded to two oxygen atoms and two adjacent bromine atoms: the central bromine has an oxidation state of $+4$.\n4. Structural oxidation states are $+6, +4, +6$ (giving an average oxidation state of $+16/3$)."
+        },
+        {
+          "id": "q21",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In the reaction:\n$$\\text{Cl}_2 + 2\\text{OH}^- \\rightarrow \\text{Cl}^- + \\text{ClO}^- + \\text{H}_2\\text{O}$$\nThe $n$-factor of $\\text{Cl}_2$ is:",
+          "image": "",
+          "options": [
+            "$1$",
+            "$2$",
+            "$0.5$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Oxidation step: $\\frac{1}{2}\\text{Cl}_2 \\rightarrow \\text{ClO}^- + e^-$\nChange in oxidation state per $\\text{Cl}_2$ molecule undergoing oxidation $= 2 \\times (1 - 0) = 2$.\n2. Reduction step: $\\frac{1}{2}\\text{Cl}_2 + e^- \\rightarrow \\text{Cl}^-$\nChange in oxidation state per $\\text{Cl}_2$ molecule undergoing reduction $= 2 \\times (0 - (-1)) = 2$.\n3. For disproportionation of $1\\text{ mole of } \\text{Cl}_2$, half undergoes oxidation ($n_1 = 2$) and half undergoes reduction ($n_2 = 2$):\n$$n_{\\text{factor}} = \\frac{n_1 \\times n_2}{n_1 + n_2} = \\frac{2 \\times 2}{2 + 2} = 1$$"
+        },
+        {
+          "id": "q22",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The oxidation states of phosphorus in hypophosphorous acid ($\\text{H}_3\\text{PO}_2$), orthophosphorous acid ($\\text{H}_3\\text{PO}_3$), and orthophosphoric acid ($\\text{H}_3\\text{PO}_4$) are respectively:",
+          "image": "",
+          "options": [
+            "$+1, +3, +5$",
+            "$+3, +5, +5$",
+            "$+1, +2, +3$",
+            "$+2, +3, +4$"
+          ],
+          "correctOption": 0,
+          "solution": "Calculate the oxidation state of phosphorus in each oxyacid:\n1. $\\text{H}_3\\text{PO}_2$: $3(+1) + x + 2(-2) = 0 \\implies 3 + x - 4 = 0 \\implies x = +1$\n2. $\\text{H}_3\\text{PO}_3$: $3(+1) + x + 3(-2) = 0 \\implies 3 + x - 6 = 0 \\implies x = +3$\n3. $\\text{H}_3\\text{PO}_4$: $3(+1) + x + 4(-2) = 0 \\implies 3 + x - 8 = 0 \\implies x = +5$\nTherefore, the oxidation states are $+1, +3,$ and $+5$ respectively."
+        },
+        {
+          "id": "q23",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the $n$-factor of ferrous oxalate ($\\text{FeC}_2\\text{O}_4$) when it is completely oxidized by $\\text{KMnO}_4$ in an acidic medium?",
+          "image": "",
+          "options": [
+            "$3$",
+            "$1$",
+            "$2$",
+            "$4$"
+          ],
+          "correctOption": 0,
+          "solution": "In an acidic medium, both the cation and anion of $\\text{FeC}_2\\text{O}_4$ are oxidized:\n1. Oxidation of iron(II):\n$$\\overset{+2}{\\text{Fe}}^{2+} \\rightarrow \\overset{+3}{\\text{Fe}}^{3+} + 1e^- \\quad (\\Delta\\text{O.N.} = 1)$$\n2. Oxidation of oxalate:\n$$\\overset{+3}{\\text{C}}_2\\text{O}_4^{2-} \\rightarrow 2\\overset{+4}{\\text{CO}}_2 + 2e^- \\quad (\\Delta\\text{O.N.} = 2 \\times 1 = 2)$$\n3. Total electrons lost per mole of $\\text{FeC}_2\\text{O}_4$:\n$$n = 1 + 2 = 3$$\nTherefore, the $n$-factor is **$3$** (and its equivalent weight is $M/3$)."
+        },
+        {
+          "id": "q24",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Which of the following is a COMPROPORTIONATION (synproportionation) reaction?",
+          "image": "",
+          "options": [
+            "$\\text{Ag}^{2+}(aq) + \\text{Ag}(s) \\rightarrow 2\\text{Ag}^+(aq)$",
+            "$2\\text{H}_2\\text{O}_2(aq) \\rightarrow 2\\text{H}_2\\text{O}(l) + \\text{O}_2(g)$",
+            "$\\text{Cl}_2(g) + 2\\text{OH}^-(aq) \\rightarrow \\text{Cl}^-(aq) + \\text{ClO}^-(aq) + \\text{H}_2\\text{O}(l)$",
+            "$2\\text{Cu}^+(aq) \\rightarrow \\text{Cu}^{2+}(aq) + \\text{Cu}(s)$"
+          ],
+          "correctOption": 0,
+          "solution": "1. A comproportionation reaction is the reverse of disproportionation: two reactants containing the **same element in two different oxidation states** react to yield a product in which the element is in an **intermediate oxidation state**.\n2. In $\\text{Ag}^{2+}(aq) + \\text{Ag}(s) \\rightarrow 2\\text{Ag}^+(aq)$:\n- Reactant silver states: $+2$ and $0$\n- Product silver state: $+1$ (intermediate between $0$ and $+2$)\nThis is a classic comproportionation reaction.\n(The other three options are disproportionation reactions)."
+        },
+        {
+          "id": "q25",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] The oxidation number of iodine in $\\text{H}_5\\text{IO}_6$ (periodic acid) is:",
+          "image": "",
+          "options": [
+            "$+7$",
+            "$+5$",
+            "$+6$",
+            "$+8$"
+          ],
+          "correctOption": 0,
+          "solution": "Let the oxidation state of iodine be $x$:\n$$5(+1) + x + 6(-2) = 0$$\n$$+5 + x - 12 = 0 \\implies x = +7$$\nThus, iodine is in its maximum oxidation state of $+7$."
+        },
+        {
+          "id": "q26",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In the balanced half-reaction in acidic medium:\n$$\\text{Cr}_2\\text{O}_7^{2-} + 14\\text{H}^+ + n e^- \\rightarrow 2\\text{Cr}^{3+} + 7\\text{H}_2\\text{O}$$\nThe value of $n$ is:",
+          "image": "",
+          "options": [
+            "$6$",
+            "$3$",
+            "$2$",
+            "$7$"
+          ],
+          "correctOption": 0,
+          "solution": "Check charge balance on both sides of the half-reaction:\n- Left side: $(-2) + 14(+1) - n = 12 - n$\n- Right side: $2(+3) = +6$\nEquating net charges:\n$$12 - n = 6 \\implies n = 6$$"
+        },
+        {
+          "id": "q27",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] Which of the following halogens does NOT show any positive oxidation state in its compounds?",
+          "image": "",
+          "options": [
+            "Fluorine ($\\text{F}$)",
+            "Chlorine ($\\text{Cl}$)",
+            "Bromine ($\\text{Br}$)",
+            "Iodine ($\\text{I}$)"
+          ],
+          "correctOption": 0,
+          "solution": "1. Fluorine is the most electronegative element in the periodic table (electronegativity $= 4.0$ on the Pauling scale).\n2. Fluorine has no accessible $d$-orbitals in its valence shell to expand its octet.\n3. Consequently, fluorine exhibits only an oxidation state of $-1$ in all of its chemical compounds (and $0$ in elemental $\\text{F}_2$). It never displays any positive oxidation state.\n(Other halogens possess vacant $d$-orbitals and lower electronegativities, exhibiting positive oxidation states of $+1, +3, +5, +7$)."
+        },
+        {
+          "id": "q28",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] What is the oxidation state of oxygen in oxygen difluoride ($\\text{OF}_2$)?",
+          "image": "",
+          "options": [
+            "$+2$",
+            "$-2$",
+            "$-1$",
+            "$+1$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Fluorine is more electronegative than oxygen and is always assigned an oxidation state of $-1$ in compounds.\n2. In $\\text{OF}_2$, let the oxidation state of oxygen be $x$:\n$$x + 2(-1) = 0 \\implies x = +2$$\n(In dioxygen difluoride, $\\text{O}_2\\text{F}_2$, oxygen has an oxidation state of $+1$)."
+        },
+        {
+          "id": "q29",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In the redox reaction:\n$$x\\,\\text{MnO}_4^- + y\\,\\text{Fe}^{2+} + z\\,\\text{H}^+ \\rightarrow x\\,\\text{Mn}^{2+} + y\\,\\text{Fe}^{3+} + w\\,\\text{H}_2\\text{O}$$\nThe values of $x, y,$ and $z$ are respectively:",
+          "image": "",
+          "options": [
+            "$1, 5, 8$",
+            "$2, 5, 16$",
+            "$1, 2, 4$",
+            "$2, 10, 8$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Reduction half: $\\text{MnO}_4^- + 8\\text{H}^+ + 5e^- \\rightarrow \\text{Mn}^{2+} + 4\\text{H}_2\\text{O}$\n2. Oxidation half: $\\text{Fe}^{2+} \\rightarrow \\text{Fe}^{3+} + e^-$\n3. Multiply oxidation half by 5 to equalize electrons:\n$$\\text{MnO}_4^- + 5\\text{Fe}^{2+} + 8\\text{H}^+ \\rightarrow \\text{Mn}^{2+} + 5\\text{Fe}^{3+} + 4\\text{H}_2\\text{O}$$\nComparing coefficients: $x = 1, y = 5, z = 8, w = 4$."
+        },
+        {
+          "id": "q30",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] The oxidation number of phosphorus in $\\text{Ba}(\\text{H}_2\\text{PO}_2)_2$ is:",
+          "image": "",
+          "options": [
+            "$+1$",
+            "$+3$",
+            "$+2$",
+            "$+5$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Barium is an alkaline earth metal with an oxidation state of $+2$.\n2. In the hypophosphite anion $\\text{H}_2\\text{PO}_2^-$:\n$$2(+1) + x + 2(-2) = -1$$\n$$+2 + x - 4 = -1 \\implies x - 2 = -1 \\implies x = +1$$\nThus, the oxidation state of phosphorus is $+1$."
+        },
+        {
+          "id": "q31",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the neutral or faintly alkaline medium (buffered with $\\text{NaHCO}_3$), potassium permanganate oxidizes iodide ($\\text{I}^-$) to:",
+          "image": "",
+          "options": [
+            "Iodate ion ($\\text{IO}_3^-$)",
+            "Iodine ($\\text{I}_2$)",
+            "Periodate ion ($\\text{IO}_4^-$)",
+            "Iodide is not oxidized"
+          ],
+          "correctOption": 0,
+          "solution": "1. In an **acidic medium**, $\\text{KMnO}_4$ oxidizes iodide to molecular iodine:\n$$2\\text{MnO}_4^- + 10\\text{I}^- + 16\\text{H}^+ \\rightarrow 2\\text{Mn}^{2+} + 5\\text{I}_2 + 8\\text{H}_2\\text{O}$$\n2. In a **faintly alkaline or neutral medium**, permanganate acts as a milder oxidant and oxidizes iodide directly to **iodate ion ($\\text{IO}_3^-$)**:\n$$2\\text{MnO}_4^- + \\text{I}^- + \\text{H}_2\\text{O} \\rightarrow 2\\text{MnO}_2 + \\text{IO}_3^- + 2\\text{OH}^-$$"
+        },
+        {
+          "id": "q32",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] For the reaction:\n$$\\text{Sn}^{2+} + 2\\text{Fe}^{3+} \\rightarrow \\text{Sn}^{4+} + 2\\text{Fe}^{2+}$$\nWhich of the following statements is correct?",
+          "image": "",
+          "options": [
+            "$\\text{Sn}^{2+}$ is the reducing agent and $\\text{Fe}^{3+}$ is the oxidizing agent",
+            "$\\text{Fe}^{3+}$ is oxidized and $\\text{Sn}^{2+}$ is reduced",
+            "$\\text{Sn}^{2+}$ gains electrons",
+            "$\\text{Fe}^{3+}$ loses electrons"
+          ],
+          "correctOption": 0,
+          "solution": "1. Tin goes from $+2$ to $+4$ (loses $2$ electrons, undergoes oxidation). Therefore, $\\text{Sn}^{2+}$ is the **reducing agent**.\n2. Iron goes from $+3$ to $+2$ (gains $1$ electron, undergoes reduction). Therefore, $\\text{Fe}^{3+}$ is the **oxidizing agent**."
+        },
+        {
+          "id": "q33",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] What is the oxidation number of carbon in hydrogen cyanide ($\\text{HCN}$)?",
+          "image": "",
+          "options": [
+            "$+2$",
+            "$+4$",
+            "$-2$",
+            "$0$"
+          ],
+          "correctOption": 0,
+          "solution": "In $\\text{HCN}$:\n- Hydrogen is $+1$\n- Nitrogen is more electronegative than carbon and forms a triple bond, so nitrogen is assigned an oxidation state of $-3$\n$$(+1) + x + (-3) = 0$$\n$$x - 2 = 0 \\implies x = +2$$\nThus, carbon has an oxidation state of $+2$."
+        },
+        {
+          "id": "q34",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] In which of the following reactions does hydrogen peroxide act as a REDUCING agent?",
+          "image": "",
+          "options": [
+            "$2\\text{KMnO}_4 + 3\\text{H}_2\\text{SO}_4 + 5\\text{H}_2\\text{O}_2 \\rightarrow \\text{K}_2\\text{SO}_4 + 2\\text{MnSO}_4 + 8\\text{H}_2\\text{O} + 5\\text{O}_2$",
+            "$2\\text{FeSO}_4 + \\text{H}_2\\text{SO}_4 + \\text{H}_2\\text{O}_2 \\rightarrow \\text{Fe}_2(\\text{SO}_4)_3 + 2\\text{H}_2\\text{O}$",
+            "$\\text{PbS} + 4\\text{H}_2\\text{O}_2 \\rightarrow \\text{PbSO}_4 + 4\\text{H}_2\\text{O}$",
+            "$\\text{Na}_2\\text{SO}_3 + \\text{H}_2\\text{O}_2 \\rightarrow \\text{Na}_2\\text{SO}_4 + \\text{H}_2\\text{O}$"
+          ],
+          "correctOption": 0,
+          "solution": "When $\\text{H}_2\\text{O}_2$ acts as a reducing agent, it is itself oxidized to molecular oxygen ($\\text{O}_2$), with oxygen going from $-1$ to $0$:\n$$\\text{H}_2\\overset{-1}{\\text{O}}_2 \\rightarrow \\overset{0}{\\text{O}}_2 + 2\\text{H}^+ + 2e^-$$\nIn Option A, $\\text{H}_2\\text{O}_2$ reduces purple $\\text{MnO}_4^-$ ($+7$) to colorless $\\text{Mn}^{2+}$ ($+2$) while being oxidized to $\\text{O}_2$.\nIn the other reactions, $\\text{H}_2\\text{O}_2$ acts as an oxidizing agent and is reduced to $\\text{H}_2\\text{O}$ ($-2$)."
+        },
+        {
+          "id": "q35",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] What is the oxidation state of nickel in nickel tetracarbonyl, $[\\text{Ni}(\\text{CO})_4]$?",
+          "image": "",
+          "options": [
+            "$0$",
+            "$+2$",
+            "$+4$",
+            "$-2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Carbon monoxide ($\\text{CO}$) is a neutral ligand with a net charge and oxidation state of zero.\n2. In $[\\text{Ni}(\\text{CO})_4]$:\n$$x + 4(0) = 0 \\implies x = 0$$\nTherefore, nickel has an oxidation state of zero."
+        },
+        {
+          "id": "q36",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] In the balanced equation:\n$$\\text{Cr}_2\\text{O}_7^{2-} + 3\\text{SO}_2 + 2\\text{H}^+ \\rightarrow 2\\text{Cr}^{3+} + 3\\text{SO}_4^{2-} + \\text{H}_2\\text{O}$$\nSulfur dioxide ($\\text{SO}_2$) acts as a:",
+          "image": "",
+          "options": [
+            "Reducing agent",
+            "Oxidizing agent",
+            "Catalyst",
+            "Dehydrating agent"
+          ],
+          "correctOption": 0,
+          "solution": "1. In sulfur dioxide, the oxidation state of sulfur is $+4$.\n2. In sulfate ion ($\\text{SO}_4^{2-}$), the oxidation state of sulfur is $+6$.\n3. Since sulfur loses $2$ electrons (undergoes oxidation), $\\text{SO}_2$ acts as a **reducing agent** (reducing orange dichromate to green $\\text{Cr}^{3+}$)."
+        },
+        {
+          "id": "q37",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following processes represents a disproportionation reaction of copper?",
+          "image": "",
+          "options": [
+            "$2\\text{Cu}^+(aq) \\rightarrow \\text{Cu}^{2+}(aq) + \\text{Cu}(s)$",
+            "$\\text{Cu}(s) + 2\\text{Ag}^+(aq) \\rightarrow \\text{Cu}^{2+}(aq) + 2\\text{Ag}(s)$",
+            "$\\text{CuO}(s) + \\text{H}_2(g) \\rightarrow \\text{Cu}(s) + \\text{H}_2\\text{O}(l)$",
+            "$2\\text{Cu}(s) + \\text{O}_2(g) \\rightarrow 2\\text{CuO}(s)$"
+          ],
+          "correctOption": 0,
+          "solution": "In aqueous solution, the cuprous ion ($\\text{Cu}^+$) is thermodynamically unstable due to the much higher hydration enthalpy of the divalent cupric ion ($\\text{Cu}^{2+}$):\n$$2\\overset{+1}{\\text{Cu}}^+(aq) \\rightarrow \\overset{+2}{\\text{Cu}}^{2+}(aq) + \\overset{0}{\\text{Cu}}(s)$$\n- One $\\text{Cu}^+$ ion is oxidized to $\\text{Cu}^{2+}$ ($+1 \\rightarrow +2$)\n- The other $\\text{Cu}^+$ ion is reduced to metallic copper ($+1 \\rightarrow 0$)\nThis is a classic disproportionation reaction."
+        },
+        {
+          "id": "q38",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] What is the oxidation state of platinum in cisplatin, $[\\text{Pt}(\\text{NH}_3)_2\\text{Cl}_2]$?",
+          "image": "",
+          "options": [
+            "$+2$",
+            "$+4$",
+            "$0$",
+            "$+1$"
+          ],
+          "correctOption": 0,
+          "solution": "In cisplatin:\n- Ammonia ($\\text{NH}_3$) is a neutral ligand (charge $= 0$)\n- Chloride ($\\text{Cl}^-$) carries a charge of $-1$\n$$x + 2(0) + 2(-1) = 0 \\implies x = +2$$\nPlatinum is in the $+2$ oxidation state."
+        },
+        {
+          "id": "q39",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In sodium amalgam ($\\text{Na}-\\text{Hg}$), the oxidation state of sodium is:",
+          "image": "",
+          "options": [
+            "$0$",
+            "$+1$",
+            "$-1$",
+            "$+2$"
+          ],
+          "correctOption": 0,
+          "solution": "Sodium amalgam is a metallic solution (alloy) of sodium dissolved in liquid mercury.\nBecause it is a physical metallic mixture and not a chemical compound with electron transfer, both sodium and mercury retain an oxidation state of **$0$**."
+        },
+        {
+          "id": "q40",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] When the half-reaction:\n$$\\text{NO}_3^-(aq) \\rightarrow \\text{NH}_4^+(aq)$$\nis balanced in an acidic medium, how many electrons and $\\text{H}^+$ ions are consumed on the reactant side?",
+          "image": "",
+          "options": [
+            "$8e^-$ and $10\\text{H}^+$",
+            "$6e^-$ and $8\\text{H}^+$",
+            "$8e^-$ and $8\\text{H}^+$",
+            "$5e^-$ and $6\\text{H}^+$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Change in oxidation state of nitrogen: from $+5$ (in $\\text{NO}_3^-$) to $-3$ (in $\\text{NH}_4^+$):\n$$5 - (-3) = 8e^- \\text{ gained}$$\n2. Balance oxygen using $\\text{H}_2\\text{O}$:\n$$\\text{NO}_3^- + 8e^- \\rightarrow \\text{NH}_4^+ + 3\\text{H}_2\\text{O}$$\n3. Balance hydrogen using $\\text{H}^+$:\n- Right side has $4 + 3(2) = 10\\text{ H atoms}$\n$$\\text{NO}_3^- + 10\\text{H}^+ + 8e^- \\rightarrow \\text{NH}_4^+ + 3\\text{H}_2\\text{O}$$\nThus, $8e^-$ and $10\\text{H}^+$ are consumed."
+        },
+        {
+          "id": "q41",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] In which of the following compounds does hydrogen exhibit a NEGATIVE oxidation state ($-1$)?",
+          "image": "",
+          "options": [
+            "$\\text{CaH}_2$",
+            "$\\text{CH}_4$",
+            "$\\text{NH}_3$",
+            "$\\text{H}_2\\text{O}$"
+          ],
+          "correctOption": 0,
+          "solution": "1. In binary metal hydrides of reactive electropositive alkali and alkaline earth metals (such as $\\text{NaH}, \\text{KH}, \\text{CaH}_2$), hydrogen is more electronegative than the metal.\n2. In calcium hydride ($\\text{CaH}_2$, hydrolith), calcium is $+2$, so hydrogen exists as the hydride ion ($\\text{H}^-$) with an oxidation state of **$-1$**.\n3. In $\\text{CH}_4, \\text{NH}_3,$ and $\\text{H}_2\\text{O}$, hydrogen is bonded to more electronegative non-metals and carries an oxidation state of $+1$."
+        },
+        {
+          "id": "q42",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2020] What is the oxidation number of sulfur in sodium thiosulfate ($\\text{Na}_2\\text{S}_2\\text{O}_3$)?",
+          "image": "",
+          "options": [
+            "Average oxidation state is $+2$, with structural states of $+5$ (central sulfur) and $-1$ (terminal sulfur)",
+            "Both sulfur atoms have $+2$",
+            "Both sulfur atoms have $+3$",
+            "One sulfur is $+6$ and one is $-2$"
+          ],
+          "correctOption": 0,
+          "solution": "1. Formula-based average oxidation state:\n$$2(+1) + 2x + 3(-2) = 0 \\implies 2 + 2x - 6 = 0 \\implies 2x = 4 \\implies x = +2$$\n2. In the thiosulfate structure, one sulfur atom replaces an oxygen atom in the sulfate tetrahedron:\n$$\\text{Structure: } [\\text{O}_3\\overset{+5}{\\text{S}}-\\overset{-1}{\\text{S}}]^- \\quad (\\text{or } [\\text{O}_3\\overset{+6}{\\text{S}}=\\overset{-2}{\\text{S}}]^{2-})$$\nBy the coordinate/dative convention, the central sulfur is $+5$ and the terminal sulfido sulfur is $-1$, averaging to $+2$."
+        },
+        {
+          "id": "q43",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2022] In the reaction $3\\text{Br}_2 + 6\\text{OH}^- \\rightarrow 5\\text{Br}^- + \\text{BrO}_3^- + 3\\text{H}_2\\text{O}$, the equivalent weight of $\\text{Br}_2$ is (where $M$ is molar mass of $\\text{Br}_2$):",
+          "image": "",
+          "options": [
+            "$\\frac{3}{5}M$",
+            "$\\frac{5}{3}M$",
+            "$\\frac{M}{2}$",
+            "$\\frac{5}{6}M$"
+          ],
+          "correctOption": 3,
+          "solution": "1. In this disproportionation reaction, $3\\text{ moles of } \\text{Br}_2$ are consumed:\n- Oxidation: $\\frac{1}{2}\\text{Br}_2 \\rightarrow \\text{BrO}_3^- + 5e^-$ ($5$ electrons lost per mole of $\\text{BrO}_3^-$ formed)\n- Reduction: $\\frac{5}{2}\\text{Br}_2 + 5e^- \\rightarrow 5\\text{Br}^-$\n2. Total electrons transferred $= 5$ for $3\\text{ moles of } \\text{Br}_2$.\n3. Number of electrons transferred per mole of $\\text{Br}_2$:\n$$n_{\\text{factor}} = \\frac{5}{3}$$\n4. Equivalent weight:\n$$\\text{Equivalent Weight} = \\frac{M}{n\\text{-factor}} = \\frac{M}{5/3} = \\frac{3}{5}M$$\nWait, let's re-read: Is $n$-factor $= 5/3$? Yes, $\\text{Eq. Wt.} = \\frac{M}{5/3} = \\frac{3}{5}M$. Alternatively, $\\text{Eq. Wt.} = \\frac{M}{2 \\times 5/(5+1)}$ wait: $\\text{Eq Wt as oxidant} = M/2$; $\\text{Eq Wt as reductant} = M/10$. Total equivalent weight $= \\frac{M}{2} \\times \\frac{5}{6} + \\dots$ For a single reaction, $\\text{Eq Wt} = \\frac{\\text{Total mass reacting}}{\\text{Total electrons transferred}} = \\frac{3M}{5} = \\frac{3}{5}M$ or $\\frac{5}{6}M$? Let's check: $3\\text{ moles of } \\text{Br}_2$ transfer $5\\text{ moles of electrons}$. Total weight $= 3M$. Gram equivalents $= 5$. Therefore, mass per equivalent $= \\frac{3M}{5} = 0.6M$. Option A is $\\frac{3}{5}M$."
+        },
+        {
+          "id": "q44",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2021] Potassium permanganate acts as a 'self-indicator' in redox titrations because:",
+          "image": "",
+          "options": [
+            "The intensely deep purple $\\text{MnO}_4^-$ ion is reduced to virtually colorless $\\text{Mn}^{2+}$, and the first drop of excess unreacted $\\text{MnO}_4^-$ imparts a permanent faint pink tint",
+            "It turns bright yellow upon completion of the reaction",
+            "It forms a fluorescent complex with ferrous ions",
+            "It changes color only in the presence of starch"
+          ],
+          "correctOption": 0,
+          "solution": "1. Potassium permanganate has an intense dark purple color due to ligand-to-metal charge transfer.\n2. In an acidic titration, as long as reducing agent (such as $\\text{Fe}^{2+}$ or oxalate) is present, purple $\\text{MnO}_4^-$ is completely reduced to nearly colorless $\\text{Mn}^{2+}$ ions.\n3. At the exact stoichiometric equivalence point, all reducing agent is consumed.\n4. The very next single drop of added $\\text{KMnO}_4$ solution remains unreacted in the flask, imparting a permanent **faint pink color** to the solution.\nHence, $\\text{KMnO}_4$ acts as its own indicator (**self-indicator**)."
+        },
+        {
+          "id": "q45",
+          "type": "single_choice",
+          "marking": { "correct": 4, "incorrect": -1 },
+          "question": "[NEET 2023] Which of the following statements about oxidation number rules is INCORRECT?",
+          "image": "",
+          "options": [
+            "In all peroxides and superoxides, oxygen has an oxidation number of $-2$",
+            "The oxidation number of an element in its free or uncombined elemental state is always zero",
+            "In all compounds of fluorine, its oxidation number is $-1$",
+            "The algebraic sum of the oxidation numbers of all atoms in a polyatomic ion equals the net charge on the ion"
+          ],
+          "correctOption": 0,
+          "solution": "1. In standard oxides, oxygen has an oxidation number of $-2$.\n2. However, in **peroxides** (such as $\\text{H}_2\\text{O}_2, \\text{Na}_2\\text{O}_2$), oxygen has an oxidation number of **$-1$**.\n3. In **superoxides** (such as $\\text{KO}_2$), oxygen has an oxidation number of **$-\\frac{1}{2}$**.\n4. In oxygen fluorides ($\\text{OF}_2$ and $\\text{O}_2\\text{F}_2$), oxygen exhibits positive oxidation numbers ($+2$ and $+1$).\nTherefore, Statement A is incorrect."
+        }
+      ]
+    }
+  ]
+}
